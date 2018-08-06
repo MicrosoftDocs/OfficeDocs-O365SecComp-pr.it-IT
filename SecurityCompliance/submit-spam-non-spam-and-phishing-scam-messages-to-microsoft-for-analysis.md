@@ -1,0 +1,124 @@
+---
+title: Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
+description: "È possibile inviare messaggi false negativo e falso positivo della posta indesiderata a Microsoft per l'analisi. "
+ms.openlocfilehash: 1ae33fc7208ab679b7eeb148007bb3b676533e55
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026423"
+---
+# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a><span data-ttu-id="18123-103">Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi</span><span class="sxs-lookup"><span data-stu-id="18123-103">Submit spam, non-spam, and phishing scam messages to Microsoft for analysis</span></span>
+
+<span data-ttu-id="18123-p101">Può essere frustrante quando gli utenti nell'organizzazione ricevono messaggi di posta indesiderata (spam) o messaggi di phishing phishing nella posta in arrivo o che non riceveranno un messaggio di posta elettronica legittimi dal momento che venga contrassegnato come posta indesiderata. È costantemente stiamo localizzatore il filtro da posta indesiderata per ottenere una maggiore precisione. Gli utenti possano consentono di questo processo per l'invio di messaggi false negativo e falso positivo della posta indesiderata a Microsoft per l'analisi. Un negativo"false" è un messaggio di posta indesiderata che avrebbe dovuto essere ma non è stato identificato come posta indesiderata. "Falso positivo" è un messaggio di posta elettronica legittimi erroneamente identificato come posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="18123-p101">It can be frustrating when users in your organization receive junk messages (spam) or phishing scam messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate. You and your users can help this process by submitting false negative and false positive spam messages to Microsoft for analysis. A "false negative" is a spam message that should have been but was not identified as spam. A "false positive" is a legitimate email message that was incorrectly identified as spam.</span></span> 
+  
+> [!NOTE]
+> <span data-ttu-id="18123-109">A causa del numero elevato di invio che viene visualizzato, si potrebbe non essere in grado di rispondere a tutte le richieste per l'analisi.</span><span class="sxs-lookup"><span data-stu-id="18123-109">Because of the high volume of submissions that we receive, we may not be able to answer all requests for analysis.</span></span> 
+  
+## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a><span data-ttu-id="18123-110">Inviare messaggi di posta indesiderata o tentativi di phishing che hanno superato i filtri posta indesiderata</span><span class="sxs-lookup"><span data-stu-id="18123-110">Submit junk or phishing messages that passed through the spam filters</span></span>
+<span data-ttu-id="18123-111"><a name="sectionSection0"> </a></span><span class="sxs-lookup"><span data-stu-id="18123-111"></span></span>
+
+<span data-ttu-id="18123-p102">Se si riceve un messaggio in cui è passato attraverso la posta indesiderata che applica un filtro e deve essere classificato come posta indesiderata o un messaggio di phishing, è possibile inviare il messaggio "false negativo" ai team di analisi della posta indesiderata di Microsoft e Microsoft Phishing Analysis, come appropriato. Analisti verranno esaminare il messaggio e aggiungere filtri a livello di servizio se soddisfa i criteri di classificazione.</span><span class="sxs-lookup"><span data-stu-id="18123-p102">If you receive a message that passed through the spam filters that and should be classified as junk or a phishing scam, you can submit the "false negative" message to the Microsoft Spam Analysis and Microsoft Phishing Analysis teams, as appropriate. The analysts will review the message and add it to the service-wide filters if it meets the classification criteria.</span></span> 
+  
+<span data-ttu-id="18123-p103">Per ulteriori impostazioni di posta indesiderata che si applicano a tutta l'organizzazione, vedere [bloccare lo spamming di posta elettronica con il filtro posta indesiderata di Office 365 per evitare problemi negativi false](https://go.microsoft.com/fwlink/p/?LinkId=534225). In questo articolo è contenuti suggerimenti per evitare falsi negativi.</span><span class="sxs-lookup"><span data-stu-id="18123-p103">For more spam settings that apply to the whole organization, see [Block email spam with the Office 365 spam filter to prevent false negative issues](https://go.microsoft.com/fwlink/p/?LinkId=534225). This article contains tips to help prevent false negatives.</span></span>
+  
+<span data-ttu-id="18123-116">È possibile inviare messaggi di posta indesiderata nei modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="18123-116">You can submit junk email messages in the following ways:</span></span>
+  
+- <span data-ttu-id="18123-p104">Per Outlook e Outlook per gli utenti il web, utilizzare il componente aggiuntivo di report per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [abilitare il componente aggiuntivo di report](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).</span><span class="sxs-lookup"><span data-stu-id="18123-p104">For Outlook and Outlook on the web users, use the Report Message Add-in for Microsoft Outlook. For information about how to install and use this tool, see [Enable the Report Message add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676).</span></span> 
+        
+- <span data-ttu-id="18123-119">È inoltre possibile utilizzare posta elettronica per inviare messaggi a Microsoft che deve essere classificato come posta indesiderata o tentativi di phishing, come descritto nella procedura seguente.</span><span class="sxs-lookup"><span data-stu-id="18123-119">You can also use email to submit messages to Microsoft that should be classified as junk or phishing scams, as described in the following procedure.</span></span>
+    
+### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a><span data-ttu-id="18123-120">Inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft</span><span class="sxs-lookup"><span data-stu-id="18123-120">Use email to submit junk (spam) or phishing scam messages to Microsoft</span></span>
+<span data-ttu-id="18123-121"><a name="Useemailtosubmitjunkspamorphishingscammessages"> </a></span><span class="sxs-lookup"><span data-stu-id="18123-121"></span></span>
+
+<span data-ttu-id="18123-122">Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:</span><span class="sxs-lookup"><span data-stu-id="18123-122">To submit a junk or phishing scam message to Microsoft:</span></span>
+  
+1. <span data-ttu-id="18123-123">Creare un messaggio di posta elettronica vuoto.</span><span class="sxs-lookup"><span data-stu-id="18123-123">Create a blank email message.</span></span>
+    
+2. <span data-ttu-id="18123-124">Indirizzare il messaggio al team Microsoft che esamina i messaggi, come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="18123-124">Address the message to the Microsoft team that reviews messages, as follows:</span></span> 
+    
+  - <span data-ttu-id="18123-125">Per i messaggi indesiderati: junk@office365.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="18123-125">For junk messages: junk@office365.microsoft.com</span></span>
+    
+  - <span data-ttu-id="18123-126">Per i messaggi di phishing phishing: phish@office365.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="18123-126">For phishing scam messages: phish@office365.microsoft.com</span></span>
+    
+3. <span data-ttu-id="18123-127">Copiare e incollare il messaggio di posta indesiderata o phishing phishing del nuovo messaggio come allegato.</span><span class="sxs-lookup"><span data-stu-id="18123-127">Copy and paste the junk or phishing scam message into the new message as an attachment.</span></span> 
+    
+    > [!NOTE]
+    > <span data-ttu-id="18123-p105">È possibile collegare più messaggi per il nuovo messaggio. Verificare che tutti i messaggi sono dello stesso tipo, ovvero i messaggi di phishing phishing o messaggi di posta elettronica. > Lasciare vuoto il corpo del nuovo messaggio.</span><span class="sxs-lookup"><span data-stu-id="18123-p105">You can attach multiple messages to the new message. Make sure that all the messages are the same type — either phishing scam messages or junk email messages. > Leave the body of the new message empty.</span></span> 
+  
+4. <span data-ttu-id="18123-131">Fare clic su **Invia**.</span><span class="sxs-lookup"><span data-stu-id="18123-131">Click **Send**.</span></span>
+    
+## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a><span data-ttu-id="18123-132">Inviare messaggi contrassegnati come posta indesiderata ma che dovrebbero essere autorizzati</span><span class="sxs-lookup"><span data-stu-id="18123-132">Submit messages that were tagged as junk but should have been allowed through</span></span>
+<span data-ttu-id="18123-133"><a name="sectionSection1"> </a></span><span class="sxs-lookup"><span data-stu-id="18123-133"></span></span>
+
+<span data-ttu-id="18123-p106">Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio "falso positivo" al Team di analisi della posta indesiderata di Microsoft. Analisti verranno valutare e analizzare il messaggio. In base ai risultati dell'analisi, le regole di filtro dei contenuti da posta indesiderata a livello di servizio possono essere regolate per consentire il messaggio attraverso.</span><span class="sxs-lookup"><span data-stu-id="18123-p106">If a message was incorrectly identified as junk, you can submit the "false positive" message to the Microsoft Spam Analysis Team. The analysts will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through.</span></span>
+  
+<span data-ttu-id="18123-p107">Gli amministratori possono esaminare ulteriori informazioni sulle impostazioni della posta indesiderata che si applica a un'intera organizzazione. Vedere [per contribuire a garantire che un messaggio non è contrassegnato come posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=534224). Queste informazioni sono utile se si dispone di controllo a livello di amministratore e si desidera impedire falsi positivi.</span><span class="sxs-lookup"><span data-stu-id="18123-p107">Administrators can review more spam setting information that applies to a whole organization. See [How to help ensure that a message isn't marked as spam](https://go.microsoft.com/fwlink/p/?LinkId=534224). This information is helpful if you have administrator-level control and you want to prevent false positives.</span></span>
+  
+<span data-ttu-id="18123-140">È possibile inviare messaggi non di posta indesiderata nei modi seguenti:</span><span class="sxs-lookup"><span data-stu-id="18123-140">You can submit non-spam messages in the following ways:</span></span>
+  
+- <span data-ttu-id="18123-141">Se si utilizza l'azione **spostare il messaggio nella cartella posta indesiderata** quando si configurano i filtri del contenuto (si tratta dell'azione predefinita), gli utenti possono rilasciare messaggi falsi positivi nella propria cartella Outlook OWA posta indesiderata o.</span><span class="sxs-lookup"><span data-stu-id="18123-141">If you use the **Move message to Junk Email folder** action when you configure your content filters (this is the default action), users can release false positive messages in their Outlook or OWA Junk Email folder.</span></span> 
+    
+  - <span data-ttu-id="18123-p108">Gli utenti di Outlook è possono rilasciare messaggi falsi positivi tramite l'opzione di menu **Non indesiderato** pulsante destro del mouse. Tuttavia, si deve inviare il messaggio a Microsoft tramite posta elettronica, come illustrato nella procedura in questo articolo.</span><span class="sxs-lookup"><span data-stu-id="18123-p108">Outlook users can release false positive messages by using the **Not Junk** right-click menu option. However, they must submit the message to Microsoft through email, as shown in the procedure in this article.</span></span> 
+    
+  - <span data-ttu-id="18123-p109">Gli utenti di OWA possono rilasciare messaggi falsi positivi e le invia a Microsoft per l'analisi dell'utilizzo dell'azione di **contrassegnare come non indesiderato** . Per ulteriori informazioni su come eseguire questa operazione, vedere [la posta indesiderata di Report e i tentativi di phishing in Outlook sul web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).</span><span class="sxs-lookup"><span data-stu-id="18123-p109">OWA users can release false positive messages and submit them to Microsoft for analysis using the **Mark as not junk** action. For more information about how to do this, see [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).</span></span>
+    
+- <span data-ttu-id="18123-146">Se si utilizza l'azione di **messaggi in quarantena** invece dell'azione **spostare il messaggio nella cartella posta indesiderata** quando si configurano i filtri del contenuto:</span><span class="sxs-lookup"><span data-stu-id="18123-146">If you use the **Quarantine message** action instead of the **Move message to Junk Email folder** action when you configure your content filters:</span></span> 
+    
+  - <span data-ttu-id="18123-p110">Gli amministratori possono rilasciare i messaggi di quarantena della posta indesiderata e segnalarli come falsi positivi dall'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md).</span><span class="sxs-lookup"><span data-stu-id="18123-p110">Administrators can release spam-quarantined messages and report them as false positives from the Exchange Admin Center. For more information, see [Find and release quarantined messages as an administrator](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
+    
+  - <span data-ttu-id="18123-149">Gli utenti possono rilasciare i propri messaggi nella quarantena della posta indesiderata e segnalarli come falsi positivi tramite i canali seguenti:</span><span class="sxs-lookup"><span data-stu-id="18123-149">Users can release their own spam-quarantined messages and report them as false positives through the following channels:</span></span> 
+    
+  - <span data-ttu-id="18123-p111">Interfaccia utente EAC. Per ulteriori informazioni, vedere [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).</span><span class="sxs-lookup"><span data-stu-id="18123-p111">The Exchange admin center (EAC) user interface. For more information, see [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).</span></span>
+    
+  - <span data-ttu-id="18123-152">Messaggi di notifica di posta indesiderata utente finale (se abilitati dall'amministratore).</span><span class="sxs-lookup"><span data-stu-id="18123-152">End-user spam notification messages (if they're enabled by your administrator).</span></span> 
+    
+- <span data-ttu-id="18123-p112">È inoltre possibile utilizzare posta elettronica per inviare messaggi a Microsoft che non devono essere classificate come posta indesiderata. A tale scopo, accertarsi di utilizzare i passaggi nella procedura seguente.</span><span class="sxs-lookup"><span data-stu-id="18123-p112">You can also use email to submit messages to Microsoft that should not be classified as spam. When you do this, make sure that you use the steps in the following procedure.</span></span>
+    
+### <a name="use-email-to-submit-false-positive-messages"></a><span data-ttu-id="18123-155">Utilizzo della posta elettronica per inviare messaggi falsi positivi</span><span class="sxs-lookup"><span data-stu-id="18123-155">Use email to submit false positive messages</span></span>
+
+<span data-ttu-id="18123-156">Utilizzare la stessa procedura come descritto in "[utilizzo della posta elettronica per inviare posta indesiderata (spam) o messaggi di phishing phishing a Microsoft ](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md#Useemailtosubmitjunkspamorphishingscammessages)", ma inviare il messaggio a not_junk@office365.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="18123-156">Use the same procedure as described in the "[Use email to submit junk (spam) or phishing scam messages to Microsoft ](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md#Useemailtosubmitjunkspamorphishingscammessages)," but send the message to not_junk@office365.microsoft.com.</span></span>
+  
+## <a name="spam-evaluation-and-rules-deployment"></a><span data-ttu-id="18123-157">Distribuzione di valutazione e le regole della posta indesiderata</span><span class="sxs-lookup"><span data-stu-id="18123-157">Spam evaluation and rules deployment</span></span>
+<span data-ttu-id="18123-158"><a name="sectionSection2"> </a></span><span class="sxs-lookup"><span data-stu-id="18123-158"></span></span>
+
+<span data-ttu-id="18123-p113">Il team di analisi della posta indesiderata vengono esaminati i messaggi di invio e modifica filtro da posta indesiderata per impedire futuri della posta indesiderata. Di conseguenza, posta indesiderata di Office 365 Filtra areconstantly notte. Tutti gli elementi inviati vengono valutati a livello di tutta la rete. Ricezioni falsi positivi vengono esaminate e valutate per la prima regolazione regola possibili consentire i messaggi futuri attraverso i filtri posta indesiderata. Di conseguenza, la notifica del servizio dei falsi positivi e falsi negativi (non filtrato spam) è utile e tutti i clienti che utilizzano la rete globale. Il team di posta indesiderata esamina gli indicatori all'interno di ogni messaggio inviato, ad esempio le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="18123-p113">The spam analysis team examines messages that you submit, and adjusts the spam filters to prevent future junk mail. As a result, Office 365 spam filters areconstantly refined. Any submitted items are evaluated at the network-wide level. False positive submissions are examined and assessed for possible rule adjustment to allow future messages through the spam filters. Therefore, notifying the service of false positives and also false negatives (unfiltered spam) is advantageous for you and all customers who use the global network. The spam team examines indicators within each submitted message, such as the following:</span></span>
+  
+- <span data-ttu-id="18123-165">Indirizzo mittente</span><span class="sxs-lookup"><span data-stu-id="18123-165">From address</span></span>
+    
+- <span data-ttu-id="18123-166">Indirizzo IP di invio</span><span class="sxs-lookup"><span data-stu-id="18123-166">Sending IP address</span></span>
+    
+- <span data-ttu-id="18123-167">Parole chiave</span><span class="sxs-lookup"><span data-stu-id="18123-167">Keywords</span></span>
+    
+- <span data-ttu-id="18123-168">Frasi</span><span class="sxs-lookup"><span data-stu-id="18123-168">Phrases</span></span>
+    
+- <span data-ttu-id="18123-169">Frequenza di trasmissione</span><span class="sxs-lookup"><span data-stu-id="18123-169">Frequency of transmission</span></span>
+    
+- <span data-ttu-id="18123-170">Altre tendenze e modelli</span><span class="sxs-lookup"><span data-stu-id="18123-170">Other trends and patterns</span></span>
+    
+<span data-ttu-id="18123-p114">Dopo la revisione queste informazioni, il team di posta indesiderata potrebbe apportare modifiche a livelli di filtraggio della posta indesiderata del servizio. Per ulteriori informazioni relative al team di posta indesiderata, è possibile guardare il video solo in inglese seguente:</span><span class="sxs-lookup"><span data-stu-id="18123-p114">After they review this information, the spam team might make changes to the service's spam filtering layers. For more information about the spam team, you can watch the following English-only video:</span></span>
+  
+[<span data-ttu-id="18123-173">Team di Microsoft Exchange Spam video</span><span class="sxs-lookup"><span data-stu-id="18123-173">Microsoft Exchange Spam team video</span></span>](https://youtu.be/-TpX_-GMC7o?hd=1)
+  
+<span data-ttu-id="18123-p115">La valutazione della posta indesiderata è un processo continuo applicabile a prescindere dal set di caratteri o della lingua di origine. Dal momento che un messaggio di posta indesiderata può essere vago o non contenere testo nell'oggetto o nel corpo, il team della posta indesiderata si basa su altre caratteristiche del messaggio per eseguire il filtraggio. Ciò significa che dopo che il team ha contrassegnato un determinato messaggio come posta indesiderata e ha apportato le necessarie modifiche alla base di regole, il messaggio viene bloccato finché le relative caratteristiche non hanno subito modifiche sufficienti ad evitare i filtri. Nuove regole per la posta indesiderata vengono sviluppate continuamente. I tempi necessari per lo sviluppo di nuove regole o l'analisi dei messaggi inviati possono variare a seconda della quantità e della qualità degli invii. Poiché le nuove regole della posta indesiderata vengono impostate globalmente per tutti gli utenti, non tutti i singoli invii di posta indesiderata determineranno la creazione di una nuova regola.</span><span class="sxs-lookup"><span data-stu-id="18123-p115">Spam evaluation is an ongoing process that applies regardless of the originating language or character set. Because a spam message can be vague or even lack text in the subject or message body, the spam team relies on other message characteristics to perform filtering. This means that after the spam team flags a given message as spam and makes the necessary changes to its rule base, that message will be blocked in the future until its characteristics have been modified enough to avoid our filters. New spam rules are deployed continuously. Time frames for rules on individual submissions vary depending on the quantity and quality of submissions. Because new spam rules are set globally for all customers, not all individual spam submissions will result in a new spam rule.</span></span>
+   
+## <a name="for-more-information"></a><span data-ttu-id="18123-180">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="18123-180">For more information</span></span>
+<span data-ttu-id="18123-181"><a name="sectionSection4"> </a></span><span class="sxs-lookup"><span data-stu-id="18123-181"></span></span>
+
+[<span data-ttu-id="18123-182">Protezione antispam e antimalware</span><span class="sxs-lookup"><span data-stu-id="18123-182">Anti-spam and anti-malware protection</span></span>](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+  
+[<span data-ttu-id="18123-183">Come assicurarsi che un messaggio non venga contrassegnato come indesiderato</span><span class="sxs-lookup"><span data-stu-id="18123-183">How to help ensure that a message isn't marked as spam</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+  
+[<span data-ttu-id="18123-184">Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi</span><span class="sxs-lookup"><span data-stu-id="18123-184">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+  
+
