@@ -1,0 +1,73 @@
+---
+title: Video per iniziare con EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 3/13/2015
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+description: La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
+ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22027643"
+---
+# <a name="videos-for-getting-started-with-eop"></a>Video per iniziare con EOP
+
+La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
+  
+> [!NOTE]
+> Prima di avviare le attività descritte nei video, si consiglia di configurare il flusso della posta. Per ulteriori informazioni, vedere l'argomento [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
+  
+Questi video riguardano la personalizzazione delle impostazioni del filtro della posta indesiderata al fine soddisfare le esigenze dell'organizzazione. Nel caso dei messaggi in ingresso che transitano dal servizio all'organizzazione, tale personalizzazione include la creazione di mittenti attendibili e di elenchi Mittenti bloccati in base agli indirizzi IP, nonché la configurazione relative al filtro dei contenuti. È inoltre disponibile un video che mostra come gli amministratori possono trovare e rilasciare i messaggi di posta indesiderata filtrati in base al contenuto oppure i messaggi corrispondenti a una regola di trasporto che sono stati sottoposti a quarantena. Inoltre, tale video indica anche come segnalare i messaggi di posta indesiderata per contribuire al miglioramento del servizio.
+  
+- Configurazione degli elenchi di indirizzi IP consentiti e bloccati in EOP
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
+  
+    Per ulteriori informazioni, vedere l'argomento [Configure il criterio di filtro di connessione](../configure-the-connection-filter-policy.md) . 
+    
+- Configurazione del filtro del contenuto di posta indesiderata in EOP
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
+  
+    Per ulteriori informazioni, vedi l'argomento [Configurare i criteri di filtro della posta indesiderata](../configure-your-spam-filter-policies.md). 
+    
+- Trovare e rilasciare i messaggi dalla quarantena
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
+  
+    Per ulteriori informazioni, vedi l'argomento [Individuazione e rilascio dei messaggi in quarantena come amministratore](../find-and-release-quarantined-messages-as-an-administrator.md). 
+    
+Sarà anche necessario configurare i criteri di protezione da posta indesiderata in uscita se si desidera controllare se la posta indesiderata viene inviata dall'organizzazione. Per informazioni su come eseguire questa operazione, guarda il video sulla posta indesiderata in uscita.
+  
+- Configurazione del criterio delle posta indesiderata in uscita
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
+  
+    Per ulteriori informazioni, vedere [configurare il criterio della posta indesiderata in uscita](../configure-the-outbound-spam-policy.md)
+    
+Exchange Online Protection include anche le impostazioni per gestire i malware rilevati dal servizio, descritte nel video relativo al filtro anti-malware.
+  
+- Configurazione dei criteri antimalware
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
+  
+    Per ulteriori informazioni, vedi l'argomento [Configurazione dei criteri anti-malware](../configure-anti-malware-policies.md). 
+    
+Per filtrare e instradare i messaggi in base a specifiche condizioni, a criteri o normative aziendali, guardare il video su come creare regole di trasporto.
+  
+- Configurare le regole di trasporto di Exchange in EOP
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
+  
+    Per ulteriori informazioni, vedere l'argomento [posta regole del flusso (regole di trasporto) di Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se si utilizza un EOP autonomo oppure vedere l'argomento [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se si utilizza Exchange Online. 
+    
+Se si è interessati alla configurazione del servizio eseguendo script dalla riga di comando, guardare il video introduttivo sull'utilizzo di PowerShell in remoto.
+  
+- Utilizzare Remote PowerShell in EOP
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
+  
+    Per ulteriori dettagli, vedere l'argomento [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) se si utilizza un EOP autonomo oppure vedere l'argomento [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) se si utilizza Exchange Online. 
+    
+

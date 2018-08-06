@@ -1,0 +1,229 @@
+---
+title: 'Interfaccia di amministrazione di Exchange in Exchange Online Protection '
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: overview
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
+description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
+ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026313"
+---
+# <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection 
+
+L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP). 
+  
+Per informazioni sulla versione di Exchange 2013 in questo argomento, vedere [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+  
+Per informazioni sulla versione di Exchange Online in questo argomento, vedere [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+  
+## <a name="accessing-the-eac"></a>Accesso a EAC
+
+Nella maggior parte dei casi, i clienti EOP accederanno a EAC tramite l'interfaccia di amministrazione di Office 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro **Amministratore** e selezionare **Exchange Online Protection** dal menu a discesa per l'esecuzione in EAC. 
+  
+È inoltre possibile accedere nella pagina direttamente tramite l'URL di accesso EAC: https://admin.protection.outlook.com/ecp/\<companydomain\>. Ad esempio https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Dopo aver specificato le credenziali dell'utente verrà visualizzata direttamente in EAC.
+  
+## <a name="common-user-interface-elements-in-the-eac"></a>Elementi comuni dell'interfaccia utente in EAC
+<a name="BKMK_CommonUserInterfaceElements"> </a>
+
+In questa sezione vengono illustrati gli elementi dell'interfaccia utente disponibili in EAC.
+  
+![EOP AdminCenter](media/EOP-AdminCenter.png)
+  
+### <a name="feature-pane"></a>Riquadro delle funzionalità
+
+È il primo livello di esplorazione per la maggior parte delle attività da eseguire in EAC. Il riquadro delle funzionalità è organizzato in aree funzionali.
+  
+1. **Destinatari** Consente di visualizzare gli utenti interni e i contatti esterni. 
+    
+2. **Autorizzazioni** Consente di gestire i ruoli di amministratore. 
+    
+3. **Gestione della conformità** Consente di individuare i registri di controllo e i rapporti, ad esempio il rapporto di un gruppo di ruoli amministratore. 
+    
+4. **Protezione** Consente di gestire la protezione anti-malware e dalla posta indesiderata per l'organizzazione e consente di gestire i messaggi in quarantena. 
+    
+5. **Flusso di posta** Consente di gestire regole, domini accettati e connettori e di eseguire l'analisi dei messaggi. 
+    
+### <a name="tabs"></a>Schede
+
+Le schede rappresentano il secondo livello di esplorazione. Ciascuna area funzionale contiene varie schede, ognuna delle quali rappresenta una funzionalità.
+  
+### <a name="toolbar"></a>Barra degli strumenti
+
+La selezione della maggior parte delle schede consente di visualizzare una barra degli strumenti. che include icone che eseguono un'azione specifica. Nella tabella seguente sono descritte le icone e le loro azioni.
+  
+|**Icona**|**Nome**|**Azione**|
+|:-----|:-----|:-----|
+|![Icona Aggiungi](media/ITPro-EAC-AddIcon.png)           <br/> |Aggiungi, Nuovo  <br/> |Utilizzare questa icona per creare un nuovo oggetto. Ad alcune icone è associata una freccia in giù sulla quale si può fare clic per mostrare ulteriori oggetti da creare.  <br/> |
+|![Icona Modifica](media/ITPro-EAC-EditIcon.png)           <br/> |Modifica  <br/> |Utilizzare questa icona per modificare un oggetto.  <br/> |
+|![Icona Elimina](media/ITPro-EAC-DeleteIcon.png)           <br/> |Elimina  <br/> |Utilizzare questa icona per eliminare un oggetto. Ad alcune icone Elimina è associata una freccia in giù su cui si può fare clic per mostrare altre opzioni.  <br/> |
+|![icona Cerca](media/ITPro-EAC-.png)           <br/> |Cerca  <br/> |Utilizzare questa icona per aprire una casella di ricerca in cui digitare la frase di ricerca per l'oggetto che si desidera trovare.  <br/> |
+|![Icona Aggiorna](media/ITPro-EAC-RefreshIcon.png)           <br/> |Aggiorna  <br/> |Utilizzare questa icona per aggiornare la visualizzazione elenco.  <br/> |
+|![Icona Ulteriori opzioni](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |Altre opzioni  <br/> |Utilizzare questa icona per visualizzare le altre azioni da eseguire per gli oggetti della scheda. Ad esempio in **Destinatari \> Utenti**, facendo clic sull'icona, viene visualizzata l'opzione per eseguire una **Ricerca avanzata**.  <br/> |
+|![Icona Freccia in su](media/ITPro-EAC-UpArrowIcon.png)![Icona Freccia in giù](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Freccia su e freccia giù  <br/> |Utilizzare queste icone per spostare la priorità di un oggetto verso l'alto o verso il basso.  <br/> |
+|![Icona Rimuovi](media/ITPro-EAC-RemoveIcon.png)           <br/> |Rimuovi  <br/> |Questa icona consente di rimuovere gli oggetti da un elenco.  <br/> |
+   
+### <a name="list-view"></a>Visualizzazione elenco
+
+Selezionando una scheda, nella maggior parte dei casi viene attivata una visualizzazione elenco. Il limite visualizzabile con l'elenco EAC è di circa 10.000 oggetti. È inoltre inclusa la funzione di paging che consente di scorrere fino ai risultati.
+  
+### <a name="details-pane"></a>Riquadro dei dettagli
+
+Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei dettagli vengono visualizzate le informazioni relative all'oggetto in questione. In alcuni casi il riquadro dei dettagli include attività di gestione.
+  
+### <a name="me-tile-and-help"></a>Riquadro Io e Guida
+
+Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu a discesa **Guida**![Icona Guida](media/ITPro-EAC-HelpIcon.png), è possibile eseguire le seguenti operazioni: 
+  
+1. **Guida** Fare clic su ![Icona Guida](media/ITPro-EAC-HelpIcon.png) per visualizzare il contenuto della Guida. 
+    
+2. **Disabilita finestra della Guida** La finestra della Guida visualizza una guida contestuale per i campi relativi alla creazione o alla modifica di un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata. 
+    
+3. **Copyright** Fare clic su questo collegamento per leggere le informazioni sul copyright per Exchange Online Protection. 
+    
+4. **Privacy** Fare clic per leggere l'informativa sulla privacy per Exchange Online Protection. 
+    
+## <a name="supported-browsers"></a>Browser supportati
+<a name="BKMK_SupportedBrowsers"> </a>
+
+Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e requisiti di sistema per il servizio, vedere [Requisiti di sistema per Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
+  
+## <a name="supported-languages-in-eop"></a>Lingue supportate in EOP
+<a name="BKMK_SupportedLanguages"> </a>
+
+Per Exchange Online Protection sono disponibili e supportate le seguenti lingue server:
+  
+- Amharico
+    
+- Arabo
+    
+- Basco (Province basche)
+    
+- Bengali (India)
+    
+- Bulgaro
+    
+- Catalano
+    
+- Cinese (semplificato)
+    
+- Cinese (tradizionale)
+    
+- Croato
+    
+- Ceco
+    
+- Danese
+    
+- Olandese
+    
+- Olandese
+    
+- Inglese
+    
+- Estone
+    
+- Filippino (Filippine)
+    
+- Finlandese
+    
+- Francese
+    
+- Gallego
+    
+- Tedesco
+    
+- Greco
+    
+- Gujarati
+    
+- Ebraico
+    
+- Hindi
+    
+- Ungherese
+    
+- Islandese
+    
+- Indonesiano
+    
+- Italiano
+    
+- Giapponese
+    
+- Kannada
+    
+- Kazaco
+    
+- Kiswahili
+    
+- Coreano
+    
+- Lettone
+    
+- Lituano
+    
+- Malese (Brunei Darussalam)
+    
+- Malese (Malesia)
+    
+- Malayalam
+    
+- Marathi
+    
+- Norvegese (Bokmål)
+    
+- Norvegese (Nynorsk)
+    
+- Oriya
+    
+- Persiano
+    
+- Polacco
+    
+- Portoghese (Brasile)
+    
+- Portoghese (Portogallo)
+    
+- Rumeno
+    
+- Russo
+    
+- Serbo (alfabeto cirillico)
+    
+- Serbo (alfabeto latino)
+    
+- Slovacco
+    
+- Sloveno
+    
+- Spagnolo
+    
+- Svedese
+    
+- Tamil
+    
+- Telugu
+    
+- Thai
+    
+- Turco
+    
+- Ucraino
+    
+- Urdu
+    
+- Vietnamita
+    
+- Gallese
+    
+
