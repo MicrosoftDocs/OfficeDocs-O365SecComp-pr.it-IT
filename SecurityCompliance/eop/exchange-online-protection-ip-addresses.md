@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: I seguenti indirizzi IP del data center Microsoft vengono utilizzati da Microsoft Exchange Online Protection (EOP) durante l'invio o la ricezione della posta elettronica o per i servizi amministrativi e del portale di Exchange Online Protection. Per inviare e ricevere i messaggi da EOP o utilizzare i servizi amministrativi, verificare che la rete accetti connessioni da questi indirizzi IP.
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026323"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230008"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Indirizzi IP di EOP (Exchange Online Protection)
 
@@ -26,8 +26,6 @@ I seguenti indirizzi IP del data center Microsoft vengono utilizzati da Microsof
 > Microsoft sta sviluppando un servizio web basato su REST per l'indirizzo IP e le voci FQDN in questa pagina. Questo nuovo servizio consentono di configurare e aggiornare i dispositivi di rete perimetrale, ad esempio firewall e server proxy. È possibile scaricare l'elenco di endpoint, la versione corrente dell'elenco o modifiche specifiche. Questo servizio in futuro sostituirà il documento XML, feed RSS e l'indirizzo IP e le voci FQDN in questa pagina. Per provare a utilizzare questo nuovo servizio, accedere al [servizio Web](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice). 
  
 ## <a name="eop-ip-address-ranges"></a>Intervalli di indirizzi IP di EOP
-
-Di seguito è riportato l'elenco completo degli intervalli di indirizzi IP di EOP a partire da **2/7/2018**. 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ Exchange Online Protection consente di instradare la posta nel modo più efficie
 | 216.32.180.0/23 |  | |
 | c 2a01:111:f400:7 00::/ / 54 |  | |
 ||||
+
