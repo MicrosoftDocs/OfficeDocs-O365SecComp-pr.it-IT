@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Attivare un blocco per controversia legale in una cassetta postale per conservare tutto il contenuto della cassetta postale, tra cui elementi eliminati e versioni originali degli elementi modificati. '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026443"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002845"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Conservazione in caso di dispute di una cassetta postale
  
@@ -51,7 +53,7 @@ Attivare un blocco per controversia legale in una cassetta postale per conservar
 
 1. Andare a **Destinatari** \> **Cassette postali**.
     
-2. Nell'elenco delle cassette postali utente, fare clic sulla cassetta postale per cui si desidera attivare il blocco per controversia legale, quindi fare clic su **Modifica**![Icona Modifica](media/ITPro-EAC-EditIcon.png).
+2. Nell'elenco delle cassette postali utente, fare clic su cassetta postale che si desidera inserire controversie legali e quindi fare clic su **Modifica** ![sull'icona Modifica](media/ITPro-EAC-EditIcon.gif).
     
 3. Dalla pagina delle proprietà della cassetta postale, fare clic su **Funzionalità cassette postali**.
     
@@ -124,7 +126,7 @@ Per verificare la corretta attivazione di un blocco per controversia legale in u
     
 1. Andare a **Destinatari** \> **Cassette postali**.
     
-2. Nell'elenco delle cassette postali utente, fare clic sulla cassetta postale di cui si desidera verificare le impostazioni del blocco per controversia legale, quindi fare clic su **Modifica**![Icona Modifica](media/ITPro-EAC-EditIcon.png).
+2. Nell'elenco delle cassette postali utente fare clic sulla cassetta postale che si desidera verificare le impostazioni di conservazione per controversia legale per e quindi fare clic su **Modifica** ![sull'icona Modifica](media/ITPro-EAC-EditIcon.gif).
     
 3. Dalla pagina delle proprietà della cassetta postale, fare clic su **Funzionalità cassette postali**.
     

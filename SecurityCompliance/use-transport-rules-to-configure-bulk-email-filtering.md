@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: È possibile impostare filtri contenuti a livello aziendale per la posta elettronica da posta indesiderata e blocco tramite i criteri di filtro contenuto posta indesiderata predefiniti. Estrarre configurare i criteri di filtro da posta indesiderata e Set-HostedContentFilterPolicy su come impostare i criteri di filtro dei contenuti.
-ms.openlocfilehash: f72fa5cc50ab6aa5447e3af9fabc365457c82973
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8fa4ba619b55ae12207f36b7625acfaa9838e696
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027683"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002479"
 ---
 # <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>Utilizzare le regole di trasporto per configurare il filtro di posta elettronica in blocco
 
@@ -34,7 +36,7 @@ Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile cre
 
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Flusso di posta** \> **Regole**.
     
-2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.png), quindi selezionare **Crea una nuova regola**.
+2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif), quindi selezionare **Crea una nuova regola**.
     
 3. Specificare un nome per la regola.
     
@@ -89,7 +91,7 @@ Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile cre
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
     
-2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.png), quindi selezionare **Crea una nuova regola**.
+2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif), quindi selezionare **Crea una nuova regola**.
     
 3. Specificare un nome per la regola.
     

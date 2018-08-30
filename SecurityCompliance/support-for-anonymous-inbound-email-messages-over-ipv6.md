@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 description: Exchange Online Protection (EOP) ed Exchange Online supporta la ricezione di messaggi di posta elettronica in ingresso anonimi su IPv6 comunicazioni provenienti da mittenti non inviino messaggi su Transport Layer Security (TLS). È possibile consenso esplicito in per ricevere messaggi su IPv6 richiedendo questa funzionalità, aprire l'interfaccia di amministrazione di Office 365 in UNRESOLVED_TOKEN_VAL(exMCSS) https://portal.office.com/adminportal/home, facendo clic sul supporto e quindi fare clic su nuova richiesta di assistenza). Se non consenso esplicito componente IPv6 si continueranno a ricevere i messaggi su IPv4.
-ms.openlocfilehash: a07e79732e9027d5848b787101be11066b5f0cb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 93575c57bb6eac5e0f92066dab3e6ed8b5f4b215
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026293"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003015"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Supporto per messaggi di posta elettronica in ingresso anonimi su IPv6
 
