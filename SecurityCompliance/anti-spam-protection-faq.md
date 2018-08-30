@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 21c399ed0ccf0f7a03c5396d8a594fccb0f133b8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026433"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003075"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione anti-spam
 
@@ -44,11 +46,11 @@ R. Dopo l'accesso al servizio e l'aggiunta del dominio, il filtro della posta in
   
 Per ulteriori informazioni sulla configurazione dei criteri di protezione dalla posta indesiderata, vedere i seguenti argomenti:
   
-[Configurare i criteri di filtro di connessione](configure-the-connection-filter-policy.md)
+[Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md)
   
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
   
-[Configurare i criteri di posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
  **D. Se viene modificato un criterio di posta indesiderata, quando tempo trascorre prima che modifiche vengano applicate?**
   

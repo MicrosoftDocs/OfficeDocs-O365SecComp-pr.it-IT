@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 description: Il filtro di protezione da posta indesiderata in uscita è sempre abilitato se si utilizza il servizio per l'invio di messaggi di posta elettronica in uscita, proteggendo così l'organizzazione utilizzando il servizio e i destinatari previsti.
-ms.openlocfilehash: 3a3e07731e16da148131ceb6f555e84ed94f7ae5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6185cfded28613cb5a512882aefb1a99db158db
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026303"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002414"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurare i criteri di posta indesiderata in uscita
 

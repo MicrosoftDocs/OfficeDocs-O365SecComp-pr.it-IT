@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 description: "Il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Microsoft Office Outlook offre all'utente diversi modi per segnalare messaggi indesiderati:"
-ms.openlocfilehash: 5d5c2fd75af5872176c2bfd73738ee81573337b2
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c32f66aee48eea6f7536680ba4e165776685f7ae
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027443"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002305"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
 
@@ -63,9 +65,9 @@ Il messaggio selezionato sarà inviato a Microsoft per l'analisi e spostato nell
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Abilitare il componente aggiuntivo di report](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Attivare il componente aggiuntivo Report Message](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
-[Informazioni di supporto e risoluzione dei problemi](troubleshooting-and-support-information.md)
+[Supporto tecnico e risoluzione dei problemi](troubleshooting-and-support-information.md)
   
 [Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   
