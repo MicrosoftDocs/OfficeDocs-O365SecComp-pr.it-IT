@@ -1,5 +1,5 @@
 ---
-title: Gestire gli elenchi di mittenti attendibili per Mailer di blocco
+title: Gestire gli elenchi di mittenti attendibili per spedizioni in blocco
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
 description: "Se si desidera utilizzare gli elenchi di mittenti attendibili, è necessario conoscere in cui Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio supporta i mittenti e domini controllando l'indirizzo 5321.MailFrom RFC e l'indirizzo 5322.From RFC, mentre Outlook consente di aggiungere l'indirizzo 5322.From RFC all'elenco Mittenti attendibili dell'utente. (Nota: il servizio controlla se sia l'indirizzo 5321.MailFrom e 5322.From per domini e mittenti bloccati.)"
-ms.openlocfilehash: e5d6f8440281d527e7ea1846416b785beda25f1c
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9442bb39e15b9db9a826472dd6110a8fa14130c6
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026543"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002995"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gestire gli elenchi di mittenti attendibili per Mailer di blocco
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gestire gli elenchi di mittenti attendibili per spedizioni in blocco
 
 Se si desidera utilizzare gli elenchi di mittenti attendibili, è necessario conoscere in cui Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio supporta i mittenti e domini controllando l'indirizzo 5321.MailFrom RFC e l'indirizzo 5322.From RFC, mentre Outlook consente di aggiungere l'indirizzo 5322.From RFC all'elenco Mittenti attendibili dell'utente. (Nota: il servizio controlla se sia l'indirizzo 5321.MailFrom e 5322.From per domini e mittenti bloccati.)
   

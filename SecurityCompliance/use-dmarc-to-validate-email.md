@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: "DMARC (Domain-based Message Authentication, Reporting, and Conformance) funziona con Sender Policy Framework (SPF) e DKIM (DomainKeys Identified Mail) per l'autenticazione dei mittenti di posta e garantire che i sistemi di posta elettronica di destinazione considerino attendibili i messaggi inviati dal dominio dell'utente. "
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026823"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003225"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utilizzare DMARC per convalidare la posta elettronica in Office 365
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-Tutta la posta elettronica, o gran parte, verrà prima indirizzata a mail.contoso.com poiché è l'MX principale e poi la posta verrà instradata a EOP. In alcuni casi, potrebbe non essere neanche necessario EOP come record MX, ma potrebbe essere semplicemente sufficiente collegare connettori per instradare la posta elettronica. EOP deve essere la prima voce dei record MX del dominio affinché gli errori DMARC vengano applicati nel dominio.
+Posta elettronica tutte o quasi, verrà instradata a mail.contoso.com innanzitutto poiché è MX primaria e quindi stampa verrà instradato a EOP. In alcuni casi, si potrebbe non ancora EOP è elencato come un record MX affatto e semplicemente il collegamento connettori per instradare la posta elettronica. EOP non deve essere la prima voce per la convalida DMARC da completare. Garantisce solo la convalida, come è possibile essere certi che tutti i server in-locale/non-Office 365 eseguite verifiche DMARC.  DMARC è idonea per il dominio del cliente (non server) da applicare quando è impostare il record TXT DMARC, ma in questo caso, il server ricevente effettivamente eseguire l'applicazione.  Se è impostata come il server ricevente EOP, EOP non imposizione DMARC.
+
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="sectionSection8"> </a>

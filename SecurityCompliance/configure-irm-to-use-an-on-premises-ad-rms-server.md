@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS.
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027373"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002789"
 ---
-# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurare IRM per utilizzare un locale nel server AD RMS
+# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurazione di IRM per l'utilizzo di un server AD RMS locale
   
 Per l'utilizzo con le distribuzioni locali, Information Rights Management (IRM) in Exchange Online utilizza Active Directory Rights Management Services (AD RMS), una tecnologia di protezione in Windows Server 2008 e versioni successive. La protezione IRM viene applicata alla posta elettronica tramite l'applicazione di un modello di criteri per i diritti AD RMS a un messaggio di posta elettronica. Diritti sono associati al messaggio direttamente in modo che si verifica protezione online e offline e all'interno e all'esterno del firewall dell'organizzazione.
   
@@ -163,6 +165,6 @@ Per verificare di aver importato il dominio di pubblicazione trusted e abilitato
   
 - Utilizzare il cmdlet **Test-IRMConfiguration** per verificare la funzionalità IRM. Per informazioni dettagliate, vedere "Esempio 1" in [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Comporre un nuovo messaggio in Outlook Web App protetto con IRM selezionando l'opzione **Imposta autorizzazioni** dal menu esteso ( ![Icona Ulteriori opzioni](media/ITPro-EAC-MoreOptionsIcon.png)).
+- Comporre un nuovo messaggio in Outlook Web App protetto con IRM selezionando l'opzione **Imposta autorizzazioni** dal menu esteso ( ![Icona Ulteriori opzioni](media/ITPro-EAC-MoreOptionsIcon.gif)).
     
 

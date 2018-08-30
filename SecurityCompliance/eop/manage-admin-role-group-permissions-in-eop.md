@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) per rendere un utente membro di un gruppo o di gruppi di ruoli per poter assegnargli autorizzazioni per effettuare attività amministrative specifiche. È inoltre possibile rimuovere un utente da un gruppo o da gruppi di ruoli utilizzando l'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 5d50c77c97f2c345aa3994e7fa3ecd2eea93a13a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026663"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002975"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gestione autorizzazioni gruppo di ruoli di amministratore in EOP
   
@@ -39,9 +39,9 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Aggiunta dei membri a gruppi di ruoli tramite EAC
 
-1. Nell'interfaccia di amministrazione di Exchange, andare a **Autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruoli a cui aggiungere l'utente o gli utenti, quindi fare clic su **Modifica**![Icona Modifica](../media/ITPro-EAC-EditIcon.png).
+1. In EAC, andare a **autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruolo che si desidera aggiungere l'utente o gli utenti e quindi fare clic su **Modifica** ![sull'icona Modifica](../media/ITPro-EAC-EditIcon.gif).
     
-2. In Membri, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.png). Viene visualizzata la finestra Seleziona membri.
+2. In Membri, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif). Viene visualizzata la finestra Seleziona membri.
     
 3. Cercare l'utente o gli utenti da aggiungere o selezionarli dall'elenco.
     
@@ -54,9 +54,9 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Rimozione di membri da un gruppo di ruoli di amministratore tramite EAC
 
-1. Nell'interfaccia di amministrazione di Exchange, andare a **Autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruoli da cui rimuovere l'utente o gli utenti, quindi fare clic su **Modifica**![Icona Modifica](../media/ITPro-EAC-EditIcon.png).
+1. In EAC, andare a **autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruolo che si desidera rimuovere un utente o gli utenti e quindi fare clic su **Modifica** ![sull'icona Modifica](../media/ITPro-EAC-EditIcon.gif).
     
-2. In Membri, selezionare l'utente o gli utenti che si desidera rimuovere, quindi fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.png).
+2. In Membri, selezionare l'utente o gli utenti che si desidera rimuovere, quindi fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. Fare clic su **Salva** per salvare la modifica al gruppo di ruoli e tornare alla pagina **Ruoli amministratore**. Per verificare di aver rimosso correttamente l'utente dal gruppo di ruoli amministratore, assicurarsi che il membro non venga più visualizzato in Membri nel riquadro dei dettagli del gruppo di ruoli selezionato. 
     

@@ -11,14 +11,16 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: "Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, l'invio di messaggi da tale utente verrà bloccato. "
-ms.openlocfilehash: ce52ddfd96b582911bb519c15bbfe90351946db8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026333"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002599"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata
 
@@ -70,7 +72,7 @@ Completare questa attività nell'interfaccia di amministrazione di Exchange (EAC
    
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Configurare i criteri di posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 

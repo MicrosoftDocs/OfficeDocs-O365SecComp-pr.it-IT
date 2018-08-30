@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: "Sintesi: In questo articolo viene descritto come Office 365 utilizza il record TXT Sender Policy Framework (SPF) in DNS per verificare che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato. Si applica alla posta in uscita inviata da Office 365. I messaggi inviati da Office 365 a un destinatario all'interno di Office 365 passano sempre SPF."
-ms.openlocfilehash: aea7f740a67ce282424efc409d25f3f135546ada
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026463"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003285"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing
 
@@ -124,7 +126,7 @@ Nel caso di distribuzione ibrida (ovvero nel caso di cassette postali in locale 
 
 Utilizzare le informazioni relative alla sintassi fornite in questo articolo per formare il record TXT SPF per il dominio personalizzato. Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente utilizzate. Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio.
   
-Per informazioni sui domini che sarà necessario includere per Office 365, vedere [Record DNS esterni per SPF](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Utilizzare le [istruzioni dettagliate ](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) per aggiornare i record (TXT) SPF per il registrar. Se il registrar non è nell'elenco, sarà necessario contattarlo separatamente per informazioni su come aggiornare il record. 
+Per informazioni sui domini che sarà necessario includere per Office 365, vedere [Record DNS esterni per SPF](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Utilizzare le [istruzioni dettagliate ](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) per aggiornare i record (TXT) SPF per il registrar. Se il registrar non è nell'elenco, sarà necessario contattarlo separatamente per informazioni su come aggiornare il record. 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Sintassi del record TXT SPF per Office 365
 <a name="SPFSyntaxO365"> </a>
@@ -149,7 +151,7 @@ dove:
     
 -  _IP address_ è l'indirizzo IP da aggiungere al record TXT SPF. In genere, questo è l'indirizzo IP del server di posta in uscita per l'organizzazione. È possibile elencare più server di posta in uscita. Per ulteriori informazioni, vedere [Esempio: record TXT SPF per più server di posta in uscita locali e Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
     
--  _domain name_ è il dominio da aggiungere come mittente legittimo. Per un elenco di nomi di dominio che sarà necessario includere per Office 365, vedere [Record DNS esterni per SPF](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
+-  _domain name_ è il dominio da aggiungere come mittente legittimo. Per un elenco di nomi di dominio che sarà necessario includere per Office 365, vedere [Record DNS esterni per SPF](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
     
 - La regola di imposizione in genere è una delle seguenti:
     

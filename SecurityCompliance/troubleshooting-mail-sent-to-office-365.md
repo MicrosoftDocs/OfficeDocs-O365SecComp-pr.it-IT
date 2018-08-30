@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di posta elettronica inviati a Office 365
+title: Risoluzione dei problemi della posta elettronica inviati a Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: In questo articolo vengono fornite informazioni sulla risoluzione dei problemi per i mittenti che hanno riscontrato problemi durante il tentativo di invio della posta elettronica in arrivo in Office 365 e procedure consigliate per la posta in blocco per i clienti di Office 365.
-ms.openlocfilehash: 29c30787f493c69eb7d42b8025b25c86acddfff9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026413"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003205"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi di posta elettronica inviati a Office 365
+# <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
 In questo articolo vengono fornite informazioni sulla risoluzione dei problemi per i mittenti che hanno riscontrato problemi durante il tentativo di invio della posta elettronica in arrivo in Office 365 e procedure consigliate per la posta in blocco per i clienti di Office 365.
   

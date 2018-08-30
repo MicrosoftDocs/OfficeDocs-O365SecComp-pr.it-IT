@@ -1,0 +1,96 @@
+---
+title: Proprietà dettagliate nel log di controllo di Office 365
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 12/8/2017
+ms.audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- BCS160
+- MET150
+ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
+description: Le descrizioni delle proprietà aggiuntive incluse in Office 365 record del Registro di controllo.
+ms.openlocfilehash: 69c5565ac71715ba2cb22d93d80f7e5dd12c6440
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22530846"
+---
+# <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
+
+Quando si esporta i risultati di una ricerca dei registri di controllo da Office 365 Security &amp; centro conformità, è possibile scaricare tutti i risultati che soddisfano i criteri di ricerca. Ottenere questo risultato selezionando **esportare i risultati** \> **scaricare tutti i risultati** della pagina **ricerca dei registri di controllo** della sicurezza &amp; centro conformità. Per ulteriori informazioni, vedere [nel Registro di controllo di ricerca in Office 365 Security &amp; centro conformità](search-the-audit-log-in-security-and-compliance.md).
+  
+ Durante l'esportazione di tutti i risultati per una ricerca dei registri di controllo, i dati non elaborati da Office 365 log di controllo unificata viene copiato in una virgola separati file CSV (valori) viene scaricata nel computer locale. Questo file contiene informazioni aggiuntive dalla voce del Registro di controllo in una colonna denominata **Dettagli**. Questa colonna contiene una proprietà multivalore per diverse proprietà dal record del Registro di controllo. Ognuna delle coppie **: valore della proprietà** nella proprietà multivalore sono separati da una virgola. 
+  
+Nella tabella seguente vengono descritte le proprietà che sono incluse, a seconda di Office 365 service in cui si verifica un evento, ovvero della colonna di **tutti i dettagli** della multi proprietà. Nella colonna **servizio Office 365 con questa proprietà** indica il servizio e il tipo di attività (utente o amministratore) che include la proprietà. Per ulteriori informazioni su queste proprietà o sulle proprietà che potrebbero non essere incluse in questo argomento, vedere [Schema API di Office 365 Gestione attività](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+  
+> [!TIP]
+> È possibile utilizzare la potenza di Query in Excel divisa questa colonna più colonne in modo che ogni proprietà è relativa colonna. Ciò consente di ordinare e filtrare su uno o più di queste proprietà. Per informazioni su come eseguire questa operazione, vedere la sezione "Dividere una colonna da delimitatore" in [una colonna di testo (Power Query) diviso](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
+  
+|**Proprietà**|**Descrizione**|**Servizio Office 365 con questa proprietà**|
+|:-----|:-----|:-----|
+|Attore  <br/> |L'account utente o del servizio che hanno effettuato l'operazione. |Azure Active Directory  <br/> |
+|AddOnName  <br/> |Il nome di un componente aggiuntivo che è stato aggiunto, rimosso o aggiornato in un team. Il tipo di componenti aggiuntivi di Microsoft Teams sono un robot, un connettore o una tabulazione.  <br/> |Microsoft Teams  <br/> |
+|AddOnType  <br/> |Il tipo di un componente aggiuntivo che è stato aggiunto, rimosso o aggiornato in un team. I valori seguenti indicano il tipo di componente aggiuntivo.<br/> **1** - indica un robot.<br/> **2** - indica un connettore.<br/> **3** - indica una tabulazione. |Microsoft Teams  <br/> |
+|AzureActiveDirectoryEventType  <br/> |Il tipo di evento di Azure Active Directory. I valori seguenti indicano il tipo di evento.<br/> **0** - indica un evento di account di accesso account.<br/> **1** - indica un evento di sicurezza dell'applicazione di Azure. |Azure Active Directory  <br/> |
+|ChannelGuid  <br/> |L'ID di un canale Teams Microsoft. Il team che si trova il canale in identificato dalle proprietà **TeamName** e **TeamGuid** .<br/> |Microsoft Teams  <br/> |
+|Nomecanale  <br/> |Nome di un canale Teams Microsoft. Il team che si trova il canale in identificato dalle proprietà **TeamName** e **TeamGuid** .<br/> |Microsoft Teams  <br/> |
+|Client  <br/> |Il dispositivo client, il sistema operativo del dispositivo e il browser del dispositivo utilizzato per l'evento di account di accesso (ad esempio, Nokia Lumia 920; Windows Phone 8; Internet Explorer Mobile 11).  <br/> |Azure Active Directory  <br/> |
+|ClientInfoString  <br/> |Informazioni sui client di posta elettronica utilizzato per eseguire l'operazione, ad esempio una versione del browser, versione di Outlook e informazioni sul dispositivo mobile  <br/> |Exchange (cassette postali attività)  <br/> |
+|ClientIP  <br/> |L'indirizzo IP del dispositivo utilizzato quando ha effettuato l'accesso all'attività. L'indirizzo IP viene visualizzato in formato di indirizzo di un indirizzo IPv4 o IPv6.  <br/> |Exchange e Azure Active Directory  <br/> |
+|ClientIPAddress  <br/> |Come ClientIP.  <br/> |SharePoint  <br/> |
+|CreationTime  <br/> |Data e ora in ora UTC (Coordinated) quando l'utente ha eseguito l'attività.  <br/> |Tutti  <br/> |
+|DestinationFileExtension  <br/> |Estensione di file di un file che viene copiato o spostato. Questa proprietà è disponibile solo per le attività utente FileCopied e FileMoved.  <br/> |SharePoint  <br/> |
+|NomeFileDestinazione  <br/> |Il nome del file viene copiato o spostato. Questa proprietà è disponibile solo per le azioni FileCopied e FileMoved.  <br/> |SharePoint  <br/> |
+|DestinationRelativeUrl  <br/> |L'URL della cartella di destinazione in un file viene copiato o spostato. La combinazione dei valori per la proprietà **NomeFileDestinazione** , **DestinationRelativeURL**e **SiteURL**è uguale al valore della proprietà **ObjectID** , ovvero il nome del percorso completo per il file copiato. Questa proprietà è disponibile solo per le attività utente FileCopied e FileMoved.<br/> |SharePoint  <br/> |
+|EventSource  <br/> |Identifica un evento che si è verificato in SharePoint. I valori possibili sono **SharePoint** e **ObjectModel**.<br/> |SharePoint  <br/> |
+|ExternalAccess  <br/> |Per l'attività di amministrazione di Exchange, consente di specificare se è stato eseguito il cmdlet da un utente nell'organizzazione, dal personale del datacenter Microsoft o un account di servizio datacenter o da un amministratore delegato. Il valore **False** indica che il cmdlet è stato eseguito da una persona presente nell'organizzazione. Il valore **True** indica che il cmdlet è stato eseguito dal personale del Data Center, un account di servizio di Data Center o un amministratore delegato.<br/> Per l'attività delle cassette postali di Exchange, consente di specificare se una cassetta postale ha effettuato l'accesso utente esterno all'organizzazione.  <br/> |Exchange  <br/> |
+|ExtendedProperties  <br/> |Le proprietà estese per un evento Azure Active Directory.  <br/> |Azure Active Directory  <br/> |
+|ID  <br/> |ID della voce del report. L'ID identifica in modo univoco la voce del report.  <br/> |Tutti  <br/> |
+|InternalLogonType  <br/> |Solo per uso interno.  <br/> |Exchange (cassette postali attività)  <br/> |
+|ItemType  <br/> |Il tipo di oggetto a cui si accede o modificato. I valori possibili includono **File**, **cartelle**, **Web**, **sito**, **Tenant**e **DocumentLibrary**.<br/> |SharePoint  <br/> |
+|LoginStatus  <br/> |Identificare gli errori di accesso sono stati generati.  <br/> |Azure Active Directory  <br/> |
+|Tipo di accesso  <br/> |Il tipo di accesso alle cassette postali. I valori seguenti indicano il tipo di utente che ha avuto accesso alla cassetta postale.<br/><br/> **0** - indica un proprietario della cassetta postale.<br/> **1** - indica un amministratore.<br/> **2** - indica un delegato. <br/>**3** - indica il servizio di trasporto nel datacenter Microsoft.<br/> **4** - indica un account di servizio del datacenter Microsoft. <br/>**6** - indica un amministratore delegato. |Exchange (cassette postali attività)  <br/> |
+|GUID cassetta postale  <br/> |GUID della cassetta postale che ha effettuato l'accesso di Exchange.  <br/> |Exchange (cassette postali attività)  <br/> |
+|MailboxOwnerUPN  <br/> |L'indirizzo di posta elettronica della persona proprietario della cassetta postale che ha effettuato l'accesso.  <br/> |Exchange (cassette postali attività)  <br/> |
+|Membri  <br/> |Elenca gli utenti che sono stati aggiunti o rimossi da un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente.<br/><br/> **1** - indica il ruolo di proprietario.<br/> **2** - indica il ruolo del membro.<br/> **3** - indica il ruolo Guest. <br/><br/>La proprietà Members include anche il nome dell'organizzazione e indirizzo di posta elettronica del membro.  <br/> |Microsoft Teams  <br/> |
+|ModifiedProperties (nome, NewValue, OldValue)  <br/> |La proprietà viene inclusa per gli eventi di amministrazione, ad esempio l'aggiunta di un utente come membro di un sito o un gruppo di amministratori raccolta siti. La proprietà include il nome della proprietà che è stato modificato (ad esempio, il gruppo di amministrazione del sito) il nuovo valore della proprietà modificate (ad esempio l'utente che è stato aggiunto come un amministratore del sito e il valore precedente dell'oggetto modificato.  <br/> |Tutti i (attività di amministrazione)  <br/> |
+|ObjectID  <br/> |Per Exchange admin la registrazione di controllo, il nome dell'oggetto che è stato modificato dal cmdlet.  <br/> Per l'attività di SharePoint, il nome del percorso URL completo del file o cartella a cui si accede da un utente.  <br/> Per l'attività di Azure Active Directory, il nome dell'account utente che è stato modificato.  <br/> |Tutti  <br/> |
+|Operazione  <br/> |Il nome dell'attività utente o l'amministratore. Il valore di questa proprietà corrisponde al valore selezionato nelle **attività** nell'elenco a discesa. Se è stata selezionata **Mostra risultati per tutte le attività** , il rapporto verrà incluso voci per tutte le attività degli utenti e amministratori di tutti i servizi. Per una descrizione delle operazioni/attività che vengono registrati nel Registro di controllo di Office 365, vedere la scheda **attività Audited** in [nel Registro di controllo di ricerca in Office 365 Security &amp; centro conformità](search-the-audit-log-in-security-and-compliance.md).<br/> Per l'attività di amministrazione di Exchange, questa proprietà identifica il nome del cmdlet che è stato eseguito.  <br/> |Tutti  <br/> |
+|OrganizationID  <br/> |Il GUID per l'organizzazione Office 365.  <br/> |Tutti  <br/> |
+|Percorso  <br/> |Nome della cartella delle cassette postali in cui il messaggio che ha effettuato l'accesso. Questa proprietà vengono indicati nella cartella una where creato in o copiare o spostare in un messaggio.  <br/> |Exchange (cassette postali attività)  <br/> |
+|Parametri  <br/> |Per attività di amministrazione di Exchange, nome e il valore per tutti i parametri utilizzati con il cmdlet definito nella proprietà Operation.  <br/> |Exchange (Amministrazione attività)  <br/> |
+|RecordType (ADO)  <br/> |Il tipo di operazione indicato dall'oggetto record. I valori seguenti indicano il tipo di record.<br/><br/> **1** - indica un record da nel Registro di controllo di amministrazione di Exchange. <br/>**2** - indica un record da nel Registro di controllo delle cassette postali di Exchange per un'operazione eseguita su un elemento specificatamente delle cassette postali. <br/>**3** - indica inoltre un record da nel Registro di controllo delle cassette postali di Exchange. Questo tipo di record indica che l'operazione è stata eseguita su più elementi nella cassetta postale di origine (ad esempio sposta più elementi nella cartella Posta eliminata o eliminazione definitiva più).<br/>**4** - indica un'operazione di amministrazione sito in SharePoint, ad esempio un amministratore o utente assegnazione delle autorizzazioni per un sito. <br/>**6** - indica un file o l'operazione relativa alla cartella in SharePoint, ad esempio un utente di visualizzare o modificare un file. <br/>**8** - indica un'operazione di amministrazione eseguita in Azure Active Directory. <br/>**9** - OrgId indica gli eventi di accesso di Azure Active Directory. Questo tipo di record deprecato.<br/>**10** - indica gli eventi di cmdlet di sicurezza che sono stati eseguiti da personale Microsoft nel centro dati. <br/>**11** - gli eventi di protezione dati (DLP) perdita di dati indica in SharePoint.<br/> **12** - indica Sway eventi. <br/>**14** - indica gli eventi di condivisione in SharePoint.<br/> **15** - indica sicura Token Service (STS) gli eventi di accesso di Azure Active Directory. <br/>**18** - sicurezza indica &amp; eventi centro conformità. <br/>**20** - eventi indica Power BI. <br/>**22** - eventi indica Yammer. <br/>**24** - indica gli eventi di eDiscovery. Questo tipo di record indica le attività che sono state eseguite mediante l'esecuzione di ricerche di contenuto e gestione dei casi di eDiscovery in sicurezza &amp; centro conformità. Per ulteriori informazioni, vedere la sezione ricerca per le attività di eDiscovery in Office 365 di registro di controllo.<br/>**25, 26 o 27** - team Microsoft che indica gli eventi. |Tutti  <br/> |
+|ResultStatus  <br/> |Indica se l'azione (specificato nella proprietà **Operation** ) è stata eseguita o non.  <br/> Per l'attività di amministrazione di Exchange, il valore è **True** (esito positivo) o **False** (non riuscito).  <br/> |Tutti  <br/> |
+|SecurityComplianceCenterEventType  <br/> |Indica che l'attività è un titolo &amp; evento centro conformità. Tutta la protezione &amp; attività del centro conformità dispone di un valore pari a **0** per questa proprietà.<br/> |Protezione di Office 365 &amp; centro conformità  <br/> |
+|SharingType  <br/> |Il tipo di autorizzazioni di condivisione che era stato assegnato all'utente che la risorsa è stato condiviso con. L'utente identificato nella proprietà **UserSharedWith** .<br/> |SharePoint  <br/> |
+|Sito  <br/> |GUID del sito in cui si trova il file o una cartella a cui si accede dall'utente.  <br/> |SharePoint  <br/> |
+|SiteUrl  <br/> |L'URL del sito in cui si trova il file o una cartella a cui si accede dall'utente.  <br/> |SharePoint  <br/> |
+|SourceFileExtension  <br/> |Estensione di file del file che ha effettuato l'accesso utente. Questa proprietà è vuota se l'oggetto che ha effettuato l'accesso è una cartella.  <br/> |SharePoint  <br/> |
+|SourceFileName  <br/> |Il nome del file o cartella a cui si accede dall'utente.  <br/> |SharePoint  <br/> |
+|SourceRelativeUrl  <br/> |L'URL della cartella che contiene il file a cui si accede dall'utente. La combinazione dei valori per la proprietà **SourceFileName** , **SourceRelativeURL**e **SiteURL**è uguale al valore della proprietà **ObjectID** , ovvero il nome del percorso completo del file a cui si accede dall'utente.<br/> |SharePoint  <br/> |
+|Argomento  <br/> |La riga dell'oggetto del messaggio che ha effettuato l'accesso.  <br/> |Exchange (cassette postali attività)  <br/> |
+|TabType  <br/> | Il tipo di tabulazione aggiunti, rimossi o aggiornati in un team. I possibili valori della proprietà sono:<br/><br/> **Excelpin** - scheda di Excel.  <br/> **Estensione** - tutte le App del produttore e di terze parti; ad esempio pianificazione, VSTS e moduli.  <br/> **Note** - scheda OneNote.  <br/> **Pdfpin** - scheda A PDF.  <br/> **Powerbi** - PowerBI A scheda.  <br/> **Powerpointpin** - scheda A PowerPoint.  <br/> **Sharepointfiles** - scheda A SharePoint.  <br/> **Pagina Web** - scheda un sito Web bloccato.  <br/> **Scheda Wiki** - una scheda wiki.  <br/> **Wordpin** - scheda di Word A.  <br/> |Microsoft Teams  <br/> |
+|Destinazione  <br/> |L'utente che è stata eseguita l'azione (identificato nella proprietà **Operation** ) su. Ad esempio, se un utente guest viene aggiunto a SharePoint o un Team di Microsoft, l'utente potrebbe elencato in questa proprietà.<br/> |Azure Active Directory  <br/> |
+|TeamGuid  <br/> |L'ID di un team di Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
+|TeamName  <br/> |Il nome di un team di Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
+|UserAgent  <br/> |Informazioni sui browser dell'utente. Queste informazioni vengono fornite dal browser.  <br/> |SharePoint  <br/> |
+|UserDomain  <br/> |Informazioni sull'organizzazione tenant dell'utente (attore) che ha eseguito l'azione.  <br/> |Azure Active Directory  <br/> |
+|ID utente  <br/> |L'utente che ha eseguito l'azione (specificato nella proprietà **Operation** ) che hanno generato il record registrato. Si noti che i record per l'attività eseguite per gli account di sistema (ad esempio SHAREPOINT\system o il sistema operativo NT) sono inoltre inclusi nel Registro di controllo.<br/> |Tutti  <br/> |
+|UserKey specificato  <br/> |Un ID alternativo per l'utente identificato nella proprietà **UserID** . Ad esempio, questa proprietà viene popolata con l'ID univoco passport (PUID) per gli eventi eseguite dagli utenti in SharePoint. Questa proprietà può anche specificare lo stesso valore della proprietà **UserID** per gli eventi che si verificano in altri servizi e gli eventi eseguiti per gli account di sistema.<br/> |Tutti  <br/> |
+|UserSharedWith  <br/> |L'utente è stato condiviso con una risorsa. Questa proprietà è inclusa, se il valore della proprietà **operazione** è **SharingSet**. L'utente viene inoltre elencato nella colonna **condiviso con** nel report.<br/> |SharePoint  <br/> |
+|UserType  <br/> |Il tipo di utente che ha eseguito l'operazione. I valori seguenti indicano il tipo di utente.<br/> <br/> **0** - un utente normale. <br/>**2** - un amministratore dell'organizzazione Office 365. <br/>**3** - account di sistema di Data Center o amministratore del data center Microsoft A. <br/>**4** - un account di sistema. <br/>**5** - un'applicazione. <br/>**6** - un'identità di servizio. |Tutti  <br/> |
+|Version  <br/> |Indica il numero di versione dell'attività (identificata dalla proprietà **Operation** ) che ha eseguito l'accesso.  <br/> |Tutti  <br/> |
+|Carico di lavoro  <br/> |Il servizio Office 365 in cui si è verificato l'attività. I possibili valori della proprietà sono:<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>conformità<br/>Sway<br/>SecurityComplianceCenter<br/>PowerBI<br/>MicrosoftTeams<br/> ThreatIntelligence**|Tutti  <br/> |
+   
+Si noti che le proprietà descritto in precedenza vengono inoltre visualizzate quando si fa clic su **ulteriori informazioni** quando si visualizzano i dettagli di un evento specifico. 
+  
+![Fare clic su ulteriori informazioni per visualizzare le informazioni dettagliate sulla proprietà il record del registro eventi di controllo](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+  
+

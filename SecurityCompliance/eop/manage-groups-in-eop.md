@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: È possibile utilizzare Exchange Online Protection (EOP) per creare gruppi abilitati alla posta elettronica per un'organizzazione di Exchange. È inoltre possibile utilizzare EOP per definire o aggiornare le proprietà di gruppo che specificano l'appartenenza, indirizzi di posta elettronica e altri aspetti dei gruppi.
-ms.openlocfilehash: 744a28d2003496650e7350108797cc5cc4eaad4f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026343"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003175"
 ---
 # <a name="manage-groups-in-eop"></a>Gestione di gruppi in EOP
 
@@ -41,7 +41,7 @@ ms.locfileid: "22026343"
     
 - Questo cmdlet utilizza un metodo di elaborazione batch che genera un ritardo di qualche minuto nella propagazione prima che i risultati del cmdlet siano visibili.
     
-- Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online Protection, vedere [Connessione a Exchange Online Protection tramite PowerShell remota](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+- Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online Protection, vedere [Connessione a Exchange Online Protection tramite PowerShell remota](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
     
 - Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Keyboard shortcuts in Exchange 2013**.
     
@@ -52,7 +52,7 @@ ms.locfileid: "22026343"
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Destinatari** \> **Gruppi**.
     
-2. Fare clic su **Nuovo**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.png), quindi fare clic su **Gruppo di distribuzione** o **Gruppo di sicurezza**, in base alle proprie esigenze. Vedere [Tipi di gruppi abilitati alla posta elettronica.](manage-groups-in-eop.md) per le differenze. 
+2. Fare clic su **Nuovo**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif), quindi fare clic su **Gruppo di distribuzione** o **Gruppo di sicurezza**, in base alle proprie esigenze. Vedere [Tipi di gruppi abilitati alla posta elettronica.](manage-groups-in-eop.md) per le differenze. 
     
 3. Nella pagina **Nuovo gruppo di distribuzione** o **Nuovo gruppo di sicurezza**, completare i seguenti campi: 
     
@@ -62,12 +62,12 @@ ms.locfileid: "22026343"
     
   - **Descrizione** Inserire una descrizione del gruppo in modo che le persone possano conoscere gli scopi del gruppo. 
     
-  - **Proprietari** Per impostazione predefinita, l'utente che crea il gruppo ne diventa proprietario. È possibile aggiungere un proprietario facendo clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.png). Ogni gruppo deve presentare almeno un proprietario.
+  - **Proprietari** Per impostazione predefinita, l'utente che crea il gruppo ne diventa proprietario. È possibile aggiungere un proprietario facendo clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif). Ogni gruppo deve presentare almeno un proprietario.
     
     > [!NOTE]
     > I proprietari non sono tenuti a essere membri del gruppo. 
   
-  - **Membri** Utilizzare questa sezione per aggiungere membri del gruppo e specificare se è necessaria l'approvazione per unirsi al gruppo o abbandonarlo. Per aggiungere membri al gruppo, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.png).
+  - **Membri** Utilizzare questa sezione per aggiungere membri del gruppo e specificare se è necessaria l'approvazione per unirsi al gruppo o abbandonarlo. Per aggiungere membri al gruppo, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif).
     
 4. Scegliere **OK** per tornare alla pagina originale. 
     
@@ -79,9 +79,9 @@ ms.locfileid: "22026343"
     
 2. Effettuare una delle operazioni seguenti:
     
-  - Per modificare un gruppo: Nell'elenco dei gruppi, fare clic sul gruppo di distribuzione o sicurezza da visualizzare o modificare, quindi fare clic su **Modifica**![Icona Modifica](../media/ITPro-EAC-EditIcon.png). È possibile aggiornare le impostazioni generali, aggiungere o rimuovere proprietari del gruppo e aggiungere o rimuovere membri del gruppo, secondo necessità.
+  - Per modificare un gruppo: nell'elenco dei gruppi, fare clic su distribuzione o gruppo di sicurezza che si desidera visualizzare o modificare e quindi fare clic su **Modifica** ![sull'icona Modifica](../media/ITPro-EAC-EditIcon.gif). È possibile aggiornare le impostazioni generali, aggiungere o rimuovere gruppo proprietari e aggiungere o rimuovere membri del gruppo, in base alle esigenze.
     
-  - Per rimuovere un gruppo: Selezionare il gruppo e fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.png).
+  - Per rimuovere un gruppo: Selezionare il gruppo e fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. Dopo avere apportato tutte le modifiche, fare clic su **Salva**.
     

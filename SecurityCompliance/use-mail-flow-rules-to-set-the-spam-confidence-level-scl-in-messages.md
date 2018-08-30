@@ -1,5 +1,5 @@
 ---
-title: Utilizzare le regole di flusso di posta elettronica per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
+title: Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: È possibile creare una regola di trasporto che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il valore SCL è una misura di probabilmente come un messaggio di posta indesiderata. Posta indesiderata è messaggi di posta elettronica indesiderati (e in genere indesiderato). Deve agire diversi per un messaggio in base al relativo la posta indesiderata. Ad esempio, è possibile ignorare la posta indesiderata filtro del contenuto per i messaggi inviati da persone all'interno dell'organizzazione in quanto si considera attendibile che un messaggio inviato internamente da un collega non è la posta indesiderata. Utilizza le regole di trasporto per impostare il valore SCL di un messaggio offre maggiore controllo nella gestione della posta indesiderata.
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026733"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002895"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilizzare le regole di flusso di posta elettronica per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
 
 È possibile creare una regola di trasporto che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il valore SCL è una misura di probabilmente come un messaggio di posta indesiderata. Posta indesiderata è messaggi di posta elettronica indesiderati (e in genere indesiderato). Deve agire diversi per un messaggio in base al relativo la posta indesiderata. Ad esempio, è possibile ignorare la posta indesiderata filtro del contenuto per i messaggi inviati da persone all'interno dell'organizzazione in quanto si considera attendibile che un messaggio inviato internamente da un collega non è la posta indesiderata. Utilizza le regole di trasporto per impostare il valore SCL di un messaggio offre maggiore controllo nella gestione della posta indesiderata. 
   
@@ -34,7 +36,7 @@ ms.locfileid: "22026733"
 
 1. Nell'interfaccia di amministrazione di Exchange (EAC), scegliere **flusso di posta** \> **regole**.
     
-2. Scegliere **New**![Aggiungi icona](media/ITPro-EAC-AddIcon.png), quindi selezionare **Crea una nuova regola**.
+2. Scegliere **New**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi selezionare **Crea una nuova regola**.
     
 3. Specificare un nome per la regola.
     

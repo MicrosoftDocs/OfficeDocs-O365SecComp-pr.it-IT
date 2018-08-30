@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: S/MIME consente di crittografare i messaggi di posta elettronica e firmare digitalmente loro. Quando si utilizza S/MIME con un messaggio di posta elettronica, vengono fornite informazioni utili le persone che ricevono messaggio per assicurarsi che nella posta in arrivo visualizzato il messaggio esatto che ha avviato con il mittente.
-ms.openlocfilehash: 3ce95132476417df8949cdc12f2d825047f6b76d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027593"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002768"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>S/MIME per la crittografia e firma dei messaggi
 
@@ -54,9 +56,9 @@ I passaggi da eseguire per configurare S/MIME con ogni endpoint differiscono lie
 
 Configurazione di S/MIME per Exchange 2013 SP1 o Exchange Online con Outlook Web App prevede le operazioni chiave seguenti:
   
-1. [Configurare le impostazioni di S/MIME per Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+1. [Configurazione delle impostazioni S/MIME per Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
     
-2. [Impostare l'insieme di certificati virtuali per convalidare S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+2. [Configurazione della raccolta di certificati virtuali per convalidare S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
     
 3. [Sincronizzare i certificati utente per Office 365 per S/MIME](sync-user-certificates-to-office-365-for-s-mime.md) Questo passaggio si applica solo a Exchange Online. 
     
