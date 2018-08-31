@@ -3,7 +3,6 @@ title: Rispondere a un account di posta elettronica compromesso in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -16,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531879"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782183"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
@@ -33,11 +32,11 @@ Accesso alle cassette postali di Office 365, dati e altri servizi, è controllat
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un Account di posta elettronica compromesso Office 365
 Gli utenti possono osservare e report attività non comune nelle cassette postali di Office 365. Di seguito sono indicati alcuni sintomi comuni:
 - Attività potenzialmente dannoso, ad esempio messaggi di posta elettronica mancanti o eliminati.
-- Altri utenti potrebbero ricevere messaggi di posta elettronica da account compromesso senza messaggio di posta elettronica corrispondente esistente nella cartella **Posta inviata** del mittente.
+- Altri utenti potrebbero ricevere messaggi di posta elettronica dall'account compromesso senza messaggio di posta elettronica corrispondente esistente nella cartella **Posta inviata** del mittente.
 - La presenza di regole posta in arrivo non sono stati creati dall'utente appropriati o dall'amministratore. Queste regole possono automaticamente inoltrare messaggi di posta elettronica a indirizzi sconosciuti o spostarli cartelle **note**, **Posta indesiderata**o **Le sottoscrizioni RSS** .
-- Il nome visualizzato agli utenti può essere modificato in elenco indirizzi globale.
+- Nome visualizzato dell'utente può essere modificato in elenco indirizzi globale.
 - Cassetta postale dell'utente viene impedita l'invio di posta elettronica.
-- Le cartelle inviato o elementi eliminati in Microsoft Outlook o in Microsoft Outlook Web App contengono comuni attaccato - messaggi di account, ad esempio "è bloccato Londra, invia denaro."
+- Le cartelle inviato o elementi eliminati in Microsoft Outlook o in Microsoft Outlook Web App contengono messaggi account attaccato comuni, ad esempio "è bloccato Londra, invia denaro."
 - Modifiche al profilo non comune, ad esempio il nome, il numero di telefono o il codice postale sono state aggiornate.
 - Sono necessarie modifiche insolito credenziali, ad esempio più modifiche delle password.
 - Inoltro di posta elettronica è stato aggiunto di recente.
