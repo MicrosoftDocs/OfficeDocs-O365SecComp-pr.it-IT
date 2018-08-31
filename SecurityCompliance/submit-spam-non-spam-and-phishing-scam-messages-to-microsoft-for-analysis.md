@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 description: "È possibile inviare messaggi false negativo e falso positivo della posta indesiderata a Microsoft per l'analisi. "
-ms.openlocfilehash: 1ae33fc7208ab679b7eeb148007bb3b676533e55
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8966dcb513c727527cc809bb2fde5b3181dc94a2
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026423"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002865"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
