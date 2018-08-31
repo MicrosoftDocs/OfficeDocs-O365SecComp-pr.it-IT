@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Informazioni su come creare un'archiviazione sul posto per una cassetta postale eliminata per rendere inattiva e mantenere il relativo contenuto. Quindi è possibile utilizzare gli strumenti di eDiscovery di Microsoft per la ricerca di cassette postali inattive.
-ms.openlocfilehash: 226929764fe39b99f526301029d4a41e2fa486cc
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: abc0aa625a5483141f25111dc1858a3d989f32d0
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027613"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003115"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Mettere an In-Place Hold in una cassetta postale eliminata in Exchange Online
 

@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027483"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003275"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Individuazione e rilascio dei messaggi in quarantena come amministratore
 
 In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Office 365 invia i messaggi in quarantena o perché sono stati identificati come posta indesiderata o perché corrispondevano a una regola di trasporto. 
   
-Utilizzare la protezione &amp; centro conformità anziché l'interfaccia di amministrazione di Exchange per eseguire una di queste attività, nonché visualizzare e gestire i messaggi che sono stati messi in quarantena in quanto contengono malware. Per ulteriori informazioni, vedere [i messaggi di posta elettronica quarantena in Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Utilizzare la protezione &amp; centro conformità anziché l'interfaccia di amministrazione di Exchange per eseguire una di queste attività, nonché visualizzare e gestire i messaggi che sono stati messi in quarantena in quanto contengono malware. Per ulteriori informazioni, vedere [i messaggi di posta elettronica quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 I messaggi in quarantena vengono elencati nella pagina **quarantena** di EAC. Per impostazione predefinita, i messaggi di posta indesiderata in quarantena vengono ordinati dal più recente al più vecchio nel campo **RICEVUTO**. Per ogni messaggio vengono visualizzati anche i valori di **MITTENTE**, **OGGETTO** e **SCADENZA**. È possibile ordinare in base a uno di tali valori facendo clic sull'intestazione corrispondente. Facendo clic su un'intestazione di colonna una seconda volta l'ordine viene invertito. Nella pagina **quarantena**, è possibile visualizzare al massimo 500 messaggi. 
   
@@ -158,7 +160,7 @@ Fare clic su **Rilascia il messaggio selezionato e consenti il mittente** dall'e
     
 4. Fare clic su **rilascia**. 
     
-Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](media/ITPro-EAC-RefreshIcon.png) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati. 
+Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](media/ITPro-EAC-RefreshIcon.gif) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati. 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Rilasciare uno o più messaggi in quarantena a tutti i destinatari
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](media/ITPro-EAC-RefreshIco
 > [!TIP]
 > Come assicurarsi che un messaggio non venga contrassegnato come indesiderato in [Come per contribuire a garantire che un messaggio non è contrassegnato come posta indesiderata](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md). 
   
-Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](media/ITPro-EAC-RefreshIcon.png) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati. 
+Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](media/ITPro-EAC-RefreshIcon.gif) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati. 
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="sectionSection4"> </a>

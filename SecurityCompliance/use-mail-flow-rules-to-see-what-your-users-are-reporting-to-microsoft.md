@@ -8,14 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: È possibile creare una regola di trasporto di Exchange per impedire agli utenti di inviare messaggi di posta elettronica a Microsoft per l'analisi e utilizzare nei propri processi di protezione
-ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
-ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
+ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "22122586"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002624"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utilizzare le regole del flusso di posta elettronica per vedere quali utenti inviano segnalazioni a Microsoft
 
@@ -33,16 +35,16 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
 
 1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**.
     
-2. Fare clic su ![Icona Aggiungi](media/ITPro-EAC-AddIcon.png) e selezionare **Creare una nuova regola**.
+2. Fare clic su ![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) e selezionare **Creare una nuova regola**.
     
 3. Assegnare un nome alla regola, quindi fare clic su **Altre opzioni**.
     
 4. In **Applica questa regola se**, selezionare **Il destinatario** e scegliere **l'indirizzo include una di queste parole**.
     
 5. Nella casella **Specificare parole o frasi**, eseguire le seguenti operazioni: 
-    - Tipo `abuse@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.png), quindi digitare `junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.png). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi negativi a Microsoft.
-    - Tipo `phish@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.png). Questo indirizzo di posta elettronica viene utilizzato per inviare messaggi di phishing senza risposta a Microsoft.
-    - Tipo `false_positive@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.png), quindi digitare `not_junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.png). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi positivi a Microsoft.
+    - Tipo `abuse@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi digitare `junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi negativi a Microsoft.
+    - Tipo `phish@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questo indirizzo di posta elettronica viene utilizzato per inviare messaggi di phishing senza risposta a Microsoft.
+    - Tipo `false_positive@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi digitare `not_junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi positivi a Microsoft.
     - Fare clic su **ok**.
     
 6. In **Eseguire le operazioni seguenti** selezionare **Invia il messaggio in Ccn a...**, quindi selezionare le cassette postali in cui si desidera ricevere i messaggi. 

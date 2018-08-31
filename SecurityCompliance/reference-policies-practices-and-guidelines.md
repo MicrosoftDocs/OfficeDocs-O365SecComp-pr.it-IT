@@ -9,16 +9,18 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure ottimali del settore per proteggere gli utenti di posta elettronica offensivo, non desiderato o dannoso.
-ms.openlocfilehash: 436f564f20d579c56197563c7bfac3ef903be750
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026273"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003085"
 ---
-# <a name="reference-policies-practices-and-guidelines"></a>Riferimento: I criteri, consigliate e linee guida
+# <a name="reference-policies-practices-and-guidelines"></a>Riferimento: criteri, procedure e linee guida
   
 Microsoft si impegna a contribuire a garantire un'esperienza utente più attendibile sul web. Di conseguenza, Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure ottimali del settore per proteggere gli utenti di posta elettronica offensivo, non desiderato o dannoso. Verificare i mittenti tenta di inviare posta elettronica agli utenti di Office 365 siano completamente comprendere e seguire le istruzioni contenute in questo articolo per facilitare questo sforzo e al fine di evitare possibili problemi di recapito.
   

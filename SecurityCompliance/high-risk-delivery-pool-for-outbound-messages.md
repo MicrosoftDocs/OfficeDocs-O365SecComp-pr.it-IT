@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 description: Quando il sistema di posta elettronica del destinatario è stato danneggiato tramite un attacco dannoso posta indesiderata o malware e di invio di posta indesiderata in uscita tramite il servizio di filtraggio ospitato, con conseguenti gli indirizzi IP dei server di centro dati di Office 365 viene elencato nel blocco di terze parti elenchi.
-ms.openlocfilehash: 856db53b105379ea3e606e39bf3c2612afa803c3
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026623"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003135"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool di recapito ad alto rischio per i messaggi in uscita
 
@@ -44,7 +46,7 @@ Tutti questi problemi può comportare un aumento del numero di messaggi DSN elab
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Configurare i criteri di posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
 [Domande frequenti sulla protezione anti-spam](anti-spam-protection-faq.md)
   

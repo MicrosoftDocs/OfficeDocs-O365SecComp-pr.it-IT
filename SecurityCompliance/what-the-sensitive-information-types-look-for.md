@@ -1,0 +1,6549 @@
+---
+title: Tipi di informazioni riservate disponibili da cercare
+ms.author: stephow
+author: stephow-MSFT
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: Admin
+ms.topic: reference
+f1_keywords:
+- ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
+description: Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include 80 tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo.
+ms.openlocfilehash: 064606085363ba9de972511642993277451c8ce3
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22531174"
+---
+# <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
+
+Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include molti tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo. Da un criterio che può essere identificato in base a un'espressione regolare o una funzione viene definito un tipo di informazioni riservate. Inoltre, elemento avvalorante, ad esempio parole chiave e checksum utilizzabile per identificare il tipo di informazioni riservate. Livello di probabilità e prossimità vengono inoltre utilizzati nel processo di valutazione.
+  
+## <a name="aba-routing-number"></a>Numero di registrazione ABA
+
+### <a name="format"></a>Formato
+
+9 cifre formattate o meno
+
+### <a name="pattern"></a>Modello
+
+Formattato:
+- Quattro cifre che iniziano con 0, 1, 2, 3, 6, 7 o 8
+- Una lineetta
+- Quattro cifre
+- Una lineetta
+- Una cifra
+
+Non formattata: 9 cifre consecutive a partire da 0, 1, 2, 3, 6, 7 o 8 
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_ABA_Routing.
+
+```
+<!-- ABA Routing Number -->
+<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_aba_routing" />
+        <Match idRef="Keyword_ABA_Routing" />
+      </Pattern>
+ </Entity>
+```
+
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordabarouting"></a>Keyword_ABA_Routing
+
+- aba
+- 
+aba #
+- 
+aba routing #
+- 
+aba routing number
+- 
+aba #
+- 
+abarouting#
+- 
+aba number
+- 
+abaroutingnumber
+- 
+american bank association routing #
+- 
+american bank association routing number
+- 
+americanbankassociationrouting#
+- 
+americanbankassociationroutingnumber
+- 
+bank routing number
+- 
+bankrouting#
+- 
+bankroutingnumber
+- 
+routing transit number
+- 
+RTN
+ 
+   
+## <a name="argentina-national-identity-dni-number"></a>Argentina - Numero di identità nazionale (DNI)
+
+### <a name="format"></a>Formato
+
+Otto cifre separate da spazi
+
+### <a name="pattern"></a>Motivo
+
+Otto cifre
+- Due cifre
+- Un punto 
+- Tre cifre
+- Un punto 
+- Tre cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_argentina_national_id consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_argentina_national_id.
+
+```
+<!-- Argentina National Identity (DNI) Number -->
+<Entity id="eefbb00e-8282-433c-8620-8f1da3bffdb2" recommendedConfidence="75" patternsProximity="300">
+   <Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_argentina_national_id"/>
+      <Match idRef="Keyword_argentina_national_id"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
+
+- Argentina - Numero di identità nazionale
+ 
+- Identità 
+- Identificazione della carta d'identità nazionale 
+- DNI
+ 
+- Scheda NIC registro nazionale delle persone 
+- Documento Nacional de Identidad
+ 
+- Registro Nacional de las Personas
+ 
+- Identidad
+ 
+- Identificación
+ 
+   
+## <a name="australia-bank-account-number"></a>Australia - Numero di conto bancario
+
+### <a name="format"></a>Formato
+
+6-10 cifre con o senza un numero BSB (Bank/State/Branch)
+
+### <a name="pattern"></a>Modello
+
+Numero di conto è 6-10 cifre. Numero della filiale stato bank Australia:
+- Tre cifre 
+- Una lineetta 
+- Tre cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_australia_bank_account_number.
+- L'espressione regolare Regex_australia_bank_account_number_bsb restituisce contenuti che corrispondono al modello.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_australia_bank_account_number.
+
+```
+<!-- Australia Bank Account Number -->
+<Entity id="74a54de9-2a30-4aa0-a8aa-3d9327fc07c7" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_australia_bank_account_number" />
+        <Match idRef="Keyword_australia_bank_account_number" />
+        <Match idRef="Regex_australia_bank_account_number_bsb" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_bank_account_number" />
+        <Match idRef="Keyword_australia_bank_account_number" />
+  </Pattern>
+ </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
+
+- swift bank code
+- 
+correspondent bank
+- 
+base currency
+- 
+usa account
+- 
+holder address
+- 
+bank address
+- 
+information account
+- 
+fund transfers
+- 
+bank charges
+- 
+bank details
+- 
+banking information
+- 
+full names
+- 
+
+iaea
+
+   
+## <a name="australia-drivers-license-number"></a>Australia - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Nove lettere e numeri
+
+### <a name="pattern"></a>Modello
+
+Nove lettere e numeri: 
+
+- Due cifre o lettere (senza distinzione tra maiuscole/minuscole) 
+- Due cifre 
+- Cinque cifre o lettere (senza distinzione tra maiuscole/minuscole)
+
+OPPURE
+
+- 1-2 lettere facoltative (senza distinzione tra maiuscole/minuscole) 
+- 4-9 cifre
+
+OPPURE
+
+- Nove cifre o lettere (senza distinzione tra maiuscole/minuscole)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_australia_drivers_license_number.
+- Non vengono trovate parole chiava da Keyword_australia_drivers_license_number_exclusions.
+
+```
+<!-- Australia Drivers License Number -->
+<Entity id="1cbbc8f5-9216-4392-9eb5-5ac2298d1356" patternsProximity="300" recommendedConfidence="75">
+   <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_drivers_license_number" />
+        <Match idRef="Keyword_australia_drivers_license_number" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_australia_drivers_license_number_exclusions" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
+
+- international driving permits
+- 
+australian automobile association
+- 
+sydney nsw
+- 
+international driving permit
+- DriverLicence
+- DriverLicences
+- Driver Lic
+- Driver Licence
+
+- Driver Licences
+
+- DriversLic
+- DriversLicence
+- DriversLicences
+- Driver Lic
+- Driver conglomerati
+- Driver della licenza
+- Driver titoli
+- Driver'Lic
+- Driver'Lics
+- Driver'Licence
+- Driver'Licences
+- Driver' Lic
+- Driver' conglomerati
+- Driver' licenza
+- Driver' titoli
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicence
+- Driver'sLicences
+- Lic della patente di Guida
+- Conglomerati della patente di Guida
+- Driver's Licence
+
+- Driver's Licences
+
+- DriverLic #
+- DriverLics #
+- DriverLicence #
+- DriverLicences #
+- Driver Lic#
+- 
+Driver Lics#
+
+- Driver licenza #
+- Driver titoli #
+- DriversLic #
+- DriversLics #
+- DriversLicence #
+- DriversLicences #
+- Driver Lic #
+- Driver conglomerati #
+- Driver della licenza #
+- Dipendenze dei titoli #
+- Driver' Lic#
+
+- Driver' Lics#
+
+- Driver'Licence#
+
+- Driver'Licences#
+
+- Driver' Lic#
+
+- Driver' Lics#
+
+- Driver' licenza #
+- Driver' titoli #
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicence #
+- Driver'sLicences #
+- Driver's Lic#
+
+- Driver's Lics#
+
+- Titolo # della patente di Guida
+- Il titolo # della patente di Guida 
+
+#### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
+
+- aaa
+- DriverLicense
+- DriverLicenses
+- Patente
+- Driver licenze
+- PatenteGuida
+- DriversLicenses
+- Patente di Guida
+- Driver licenze
+- Driver'License
+- Driver'Licenses
+- Driver' licenza
+- Driver' licenze
+- Driver'sLicense
+- Driver'sLicenses
+- Patente
+- Licenze della patente di Guida
+- DriverLicense #
+- DriverLicenses #
+- Driver licenza #
+- Driver licenze #
+- PatenteGuida #
+- DriversLicenses #
+- Driver della licenza #
+- Driver licenze #
+- Driver' License#
+
+- Driver' Licenses#
+
+- Driver' License#
+
+- Driver' Licenses#
+
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver's License#
+
+- 
+
+Driver's Licenses#
+   
+## <a name="australia-medical-account-number"></a>Australia - Numero di tessera sanitaria
+
+### <a name="format"></a>Formato
+
+10-11 cifre
+
+### <a name="pattern"></a>Modello
+
+10-11 cifre:
+- La prima cifra è compresa nell'intervallo 2-6
+- La nona cifra è una cifra di controllo
+- La decima cifra è la cifra del problema
+- L'undicesima cifra (facoltativa) è il numero singolo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+- La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_Australia_Medical_Account_Number.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+  <!-- Australia Medical Account Number -->
+<Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
+    <Pattern confidenceLevel="95">
+     <IdMatch idRef="Func_australian_medical_account_number"/>
+     <Any minMatches="1">
+     <Match idRef="Keyword_Australia_Medical_Account_Number"/>
+     </Any>
+  </Pattern>
+<Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_australian_medical_account_number"/>
+     <Any minMatches="0" maxMatches="0">
+  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
+     </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
+
+- bank account details
+- 
+medicare payments
+- 
+mortgage account
+- 
+bank payments
+- 
+information branch
+- 
+credit card loan
+- 
+department of human services
+- servizio locale
+- 
+
+medicare
+
+   
+## <a name="australia-passport-number"></a>Australia - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+Una lettera seguita da sette cifre
+
+### <a name="pattern"></a>Modello
+
+Una lettera (senza distinzione tra maiuscole/minuscole) seguita da sette cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_passport_number restituisce contenuti che corrispondono al modello.
+- È possibile trovare una parola chiave da Keyword_passport o Keyword_australia_passport_number.
+
+```
+<!-- Australia Passport Number -->
+<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_australia_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_passport" />
+          <Match idRef="Keyword_australia_passport_number" />
+        </Any>
+   </Pattern>
+</Entity>   
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpassport"></a>Keyword_passport
+
+- Passport Number
+- 
+Passport No
+- Passport#
+
+- Passport#
+
+- PassportID
+- Passportno
+
+- passportnumber
+
+- パスポート
+- パスポート番号
+
+- パスポートのNum
+
+- 
+パスポート ＃
+ 
+- Numéro de passeport
+- 
+Passeport n °
+- Passeport Non
+
+- Passeport#
+
+- Passeport#
+
+- PasseportNon
+- Passeportn °
+
+
+#### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
+
+- passport
+- 
+passport details
+- 
+immigration and citizenship
+- 
+commonwealth of australia
+- 
+department of immigration
+- 
+residential address
+- 
+department of immigration and citizenship
+- visa
+
+- 
+national identity card
+- numero di passaporto
+- 
+travel document
+- 
+
+issuing authority
+   
+## <a name="australia-tax-file-number"></a>Australia - Identificativo fiscale
+
+### <a name="format"></a>Formato
+
+8-9 cifre
+
+### <a name="pattern"></a>Modello
+
+8-9 cifre in genere presentate con spazi, come mostrato di seguito:
+- Tre cifre 
+- Uno spazio facoltativo 
+- Tre cifre 
+- Uno spazio facoltativo 
+- 2-3 cifre e l'ultima è una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_australian_tax_file_number restituisce contenuti che corrispondono al modello.
+- Non vengono trovate parole chiave da Keyword_Australia_Tax_File_Number o da Keyword_number_exclusions.
+- Il checksum ha esito positivo.
+
+```
+    <!-- Australia Tax File Number -->
+<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+    
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_australian_tax_file_number" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_Australia_Tax_File_Number" />
+          <Match idRef="Keyword_number_exclusions" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
+
+- australian business number
+- 
+marginal tax rate
+- 
+medicare levy
+- 
+portfolio number
+- 
+service veterans
+- 
+withholding tax
+- 
+individual tax return
+- 
+
+tax file number
+
+#### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
+
+- 00000000
+- 11111111
+- 22222222
+- 33333333
+- 44444444
+- 55555555
+- 66666666
+- 77777777
+- 88888888
+- 99999999
+- 000000000
+- 111111111
+- 222222222
+- 333333333
+- 444444444
+- 555555555
+- 666666666
+- 777777777
+- 888888888
+- 999999999
+- 0000000000
+- 1111111111
+- 2222222222
+- 3333333333
+- 4444444444
+- 5555555555
+- 6666666666
+- 7777777777
+- 8888888888
+- 9999999999
+   
+## <a name="belgium-national-number"></a>Belgio - Numero nazionale
+
+### <a name="format"></a>Formato
+
+11 cifre più delimitatori
+
+### <a name="pattern"></a>Motivo
+
+11 cifre più delimitatori:
+- Sei cifre e due punti nel formato AA.MM.GG per data di nascita  
+- Una lineetta 
+- Tre cifre sequenziali (dispari sia per uomini che per donne)  
+- Un punto  
+- Due cifre, ovvero una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_belgium_national_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_belgium_national_number.
+- Il checksum ha esito positivo.
+
+```
+<!-- Belgium National Number -->
+  <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
+   <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_belgium_national_number"/>
+     <Match idRef="Keyword_belgium_national_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
+
+- Identità
+- Registrazione
+- Identificazione 
+- ID 
+- Identiteitskaart
+- Registratie nummer 
+ 
+- Identificatie nummer
+ 
+- Identiteit
+- Registratie
+- Identificatie
+
+ 
+- Carte d’identité
+ 
+- numéro d'immatriculation
+- numéro d'identification
+- 
+identité
+ 
+- iscrizione
+ 
+- Identifikation
+- Identifizierung
+- Identifikationsnummer
+- Personalausweis
+- Registrierung
+- Registrationsnummer
+
+   
+## <a name="brazil-cpf-number"></a>Numero CPF Brasile
+
+### <a name="format"></a>Formato
+
+11 cifre che includono una cifra di controllo e possono essere formattate o non formattate
+
+### <a name="pattern"></a>Modello
+
+Formattato:
+- Tre cifre 
+- Un punto  
+- Tre cifre 
+- Un punto  
+- Tre cifre 
+- Una lineetta 
+- Due cifre, ovvero le cifre di controllo
+
+Non formattate:
+- 11 cifre dove le ultime due sono cifre di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_brazil_cpf consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_brazil_cpf.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_brazil_cpf consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Brazil CPF Number -->
+<Entity id="78e09124-f2c3-4656-b32a-c1a132cd2711" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_cpf"/>
+     <Match idRef="Keyword_brazil_cpf"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_cpf"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
+
+- CPF
+- Identificazione
+- Registrazione
+- Ricavi
+- Cadastro de Pessoas Físicas
+ 
+- Imposto
+ 
+- Identificação
+ 
+- Inscrição
+ 
+- Receita
+
+ 
+   
+## <a name="brazil-legal-entity-number-cnpj"></a>Brasile - Codice fiscale persone giuridiche (CNPJ)
+
+### <a name="format"></a>Formato
+
+14 cifre che includono il numero di registrazione, il codice della filiale, le cifre di controllo e i delimitatori
+
+### <a name="pattern"></a>Modello
+14 cifre più delimitatori:
+- Due cifre 
+- Un punto  
+- Tre cifre 
+- Un punto  
+- Tre cifre (le prime otto sono il numero di registrazione)  
+- Una barra 
+- Numero del ramo a quattro cifre  
+- Una lineetta 
+- Due cifre, ovvero le cifre di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_brazil_cnpj consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_brazil_cnpj.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_brazil_cnpj consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Brazil Legal Entity Number (CNPJ) -->
+<Entity id="9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4" recommendedConfidence="85" patternsProximity="300">
+   <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_cnpj"/>
+     <Match idRef="Keyword_brazil_cnpj"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_cnpj"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
+
+- CNPJ
+ 
+- NUMERO CNPJ/MF 
+- CNPJ-MF
+ 
+- Codice fiscale persone giuridiche
+ 
+- Registro contribuenti
+ 
+- Persona giuridica
+ 
+- Persone giuridiche
+ 
+- Stato della registrazione
+ 
+- Ufficio
+ 
+- Company
+- CNPJ
+ 
+- Cadastro Nacional da Pessoa Jurídica
+ 
+- Cadastro Geral de Contribuintes
+ 
+- CGC
+ 
+- Pessoa jurídica
+ 
+- Pessoas jurídicas
+ 
+- Situação cadastral
+ 
+- Inscrição
+ 
+- Empresa
+ 
+   
+## <a name="brazil-national-id-card-rg"></a>	Carta d'identità (Brasile) (RG)
+
+### <a name="format"></a>Formato
+
+Registro Geral (formato precedente): nove cifre
+
+Registro de Identidade (batch) (nuovo formato): 11 cifre
+
+### <a name="pattern"></a>Modello
+
+Registro Geral (formato precedente):
+- Due cifre 
+- Un punto  
+- Tre cifre 
+- Un punto  
+- Tre cifre 
+- Una lineetta 
+- Una cifra, ovvero una cifra di controllo
+
+Registro de Identidade (batch) (nuovo formato):
+- 10 cifre  
+- Una lineetta 
+- Una cifra, ovvero una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_brazil_rg consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_brazil_rg.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_brazil_rg consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Brazil National ID Card (RG) -->
+<Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_brazil_rg"/>
+     <Match idRef="Keyword_brazil_rg"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_brazil_rg"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
+
+Cédula de identidade carta d'identità nazionale id número de rregistro registro de Iidentidade registro geral RG (la parola chiave viene fatta distinzione tra maiuscole e minuscole) batch (la parola chiave viene fatta distinzione tra maiuscole e minuscole) 
+   
+## <a name="canada-bank-account-number"></a>Canada - Numero di conto bancario
+
+### <a name="format"></a>Formato
+
+7 o 12 cifre
+
+### <a name="pattern"></a>Modello
+
+Un numero di conto corrente canadese comprende 7 o 12 cifre.
+
+Un numero di transito bancario canadese comprende:
+- Cinque cifre 
+- Una lineetta 
+- Tre cifre o
+- Uno zero "0" 
+- Otto cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_canada_bank_account_number.
+- L'espressione regolare Regex_canada_bank_account_transit_number restituisce contenuti che corrispondono al modello.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_canada_bank_account_number.
+
+```
+<!-- Canada Bank Account Number -->
+<Entity id="552e814c-cb50-4d94-bbaa-bb1d1ffb34de" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_canada_bank_account_number" />
+        <Match idRef="Keyword_canada_bank_account_number" />
+        <Match idRef="Regex_canada_bank_account_transit_number" />
+   </Pattern>
+   <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_bank_account_number" />
+        <Match idRef="Keyword_canada_bank_account_number" />
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
+
+- canada savings bonds
+- 
+canada revenue agency
+- 
+canadian financial institution
+- 
+direct deposit form
+- 
+canadian citizen
+- 
+legal representative
+- 
+notary public
+- 
+commissioner for oaths
+- 
+child care benefit
+- 
+universal child care
+- 
+canada child tax benefit
+- 
+income tax benefit
+- 
+harmonized sales tax
+- social insurance number
+- 
+income tax refund
+- 
+child tax benefit
+- 
+territorial payments
+- 
+institution number
+- 
+deposit request
+- 
+banking information
+- 
+
+direct deposit
+   
+## <a name="canada-drivers-license-number"></a>Canada - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Varia in base alla provincia
+
+### <a name="pattern"></a>Modello
+
+Vari modelli per Alberta, Columbia Britannica, Manitoba, Nuovo Brunswick, Terranova e Labrador, Nuova Scozia, Ontario, Isola del Principe Edoardo, Quebec e Saskatchewan
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_[province_name]_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_[province_name]_drivers_license_name.
+- Viene trovata una parola chiave da Keyword_canada_drivers_license.
+
+```
+<!-- Canada Driver's License Number -->
+    <Entity id="37186abb-8e48-4800-ad3c-e3d1610b3db0" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_alberta_drivers_license_number" />
+        <Match idRef="Keyword_alberta_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_british_columbia_drivers_license_number" />
+        <Match idRef="Keyword_british_columbia_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_manitoba_drivers_license_number" />
+        <Match idRef="Keyword_manitoba_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_new_brunswick_drivers_license_number" />
+        <Match idRef="Keyword_new_brunswick_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_newfoundland_labrador_drivers_license_number" />
+        <Match idRef="Keyword_newfoundland_labrador_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_nova_scotia_drivers_license_number" />
+        <Match idRef="Keyword_nova_scotia_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_ontario_drivers_license_number" />
+        <Match idRef="Keyword_ontario_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_prince_edward_island_drivers_license_number" />
+        <Match idRef="Keyword_prince_edward_island_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_quebec_drivers_license_number" />
+        <Match idRef="Keyword_quebec_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_saskatchewan_drivers_license_number" />
+        <Match idRef="Keyword_saskatchewan_drivers_license_name" />
+        <Match idRef="Keyword_canada_drivers_license" />
+      </Pattern>
+    </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+
+- L'abbreviazione della provincia, ad esempio, AB
+- 
+Il nome della provincia, ad esempio, Alberta
+
+#### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
+
+- DL
+- DLS
+- CDL
+- CDLS
+- DriverLic
+- DriverLics
+- DriverLicense
+- DriverLicenses
+- DriverLicence
+- DriverLicences
+- Driver Lic
+- Driver conglomerati
+- Patente
+- Driver licenze
+- Driver Licence
+
+- Driver Licences
+
+- DriversLic
+- DriversLics
+- DriversLicence
+- DriversLicences
+- PatenteGuida
+- DriversLicenses
+- Driver Lic
+- Driver conglomerati
+- Patente di Guida
+- Driver licenze
+- Driver della licenza
+- Driver titoli
+- Driver'Lic
+- Driver'Lics
+- Driver'License
+- Driver'Licenses
+- Driver'Licence
+- Driver'Licences
+- Driver' Lic
+- Driver' conglomerati
+- Driver' licenza
+- Driver' licenze
+- Driver' licenza
+- Driver' titoli
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
+- Driver'sLicence
+- Driver'sLicences
+- Lic della patente di Guida
+- Conglomerati della patente di Guida
+- Patente
+- Licenze della patente di Guida
+- Driver's Licence
+
+- Driver's Licences
+
+- Permis de Conduire
+- id
+- ID
+- 
+idcard number
+- 
+idcard numbers
+- 
+idcard #
+- 
+idcard #s
+- scheda idcard
+- schede idcard
+- idcard
+- identification number
+
+- identification numbers
+
+- identification#
+
+- 
+identification #s
+- scheda di identificazione
+- identificazione schede
+- 
+identification
+ 
+- DL#
+- 
+DLS#
+ 
+- CDL#
+ 
+- CDLS#
+ 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
+- DriverLicence # 
+- DriverLicences # 
+- Driver Lic#
+- 
+Driver Lics#
+ 
+- Driver licenza # 
+- Driver licenze # 
+- Driver licenza # 
+- Driver titoli # 
+- DriversLic # 
+- DriversLics # 
+- PatenteGuida # 
+- DriversLicenses # 
+- DriversLicence # 
+- DriversLicences # 
+- Driver Lic # 
+- Driver conglomerati # 
+- Driver della licenza # 
+- Driver licenze # 
+- Driver della licenza # 
+- Dipendenze dei titoli # 
+- Driver' Lic#
+ 
+- Driver' Lics#
+ 
+- Driver' License#
+ 
+- Driver' Licenses#
+ 
+- Driver'Licence#
+ 
+- Driver'Licences#
+ 
+- Driver' Lic#
+ 
+- Driver' Lics#
+ 
+- Driver' License#
+ 
+- Driver' Licenses#
+ 
+- Driver' licenza # 
+- Driver' titoli # 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
+- Driver'sLicence # 
+- Driver'sLicences # 
+- Driver's Lic#
+ 
+- Driver's Lics#
+ 
+- Driver's License#
+ 
+- Driver's Licenses#
+ 
+- Titolo # della patente di Guida 
+- Il titolo # della patente di Guida 
+- Permis de Conduire # 
+- ID # 
+- ID # 
+- idcard card#
+ 
+- idcard cards#
+ 
+- idcard#
+ 
+- identification card#
+ 
+- identification cards#
+ 
+- identification#
+ 
+   
+## <a name="canada-health-service-number"></a>Canada - Codice del servizio sanitario
+
+### <a name="format"></a>Formato
+
+10 cifre
+
+### <a name="pattern"></a>Modello
+
+10 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_canada_health_service_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_canada_health_service_number.
+
+```
+<!-- Canada Health Service Number -->
+<Entity id="59c0bf39-7fab-482c-af25-00faa4384c94" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_health_service_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_canada_health_service_number" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
+
+- personal health number
+- 
+patient information
+- servizi di integrità
+- 
+speciality services
+- 
+automobile accident
+- 
+patient hospital
+- 
+psychiatrist
+- 
+workers compensation
+- 
+disability
+      
+## <a name="canada-passport-number"></a>Canada - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+Due lettere maiuscole seguite da 6 cifre
+
+### <a name="pattern"></a>Modello
+
+Due lettere maiuscole seguite da 6 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_canada_passport_number restituisce contenuti che corrispondono al modello.
+- È possibile trovare una parola chiave da Keyword_canada_passport_number o Keyword_passport.
+
+``` 
+<!-- Canada Passport Number -->
+<Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_canada_passport_number" />
+          <Match idRef="Keyword_passport" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
+
+- canadian citizenship
+- 
+canadian passport
+- 
+passport application
+- 
+passport photos
+- 
+certified translator
+- 
+canadian citizens
+- 
+processing times
+- 
+
+renewal application
+
+#### <a name="keywordpassport"></a>Keyword_passport
+
+- Passport Number
+- 
+Passport No
+- Passport#
+
+- Passport#
+
+- PassportID
+- Passportno
+
+- passportnumber
+
+- パスポート
+- パスポート番号
+
+- パスポートのNum
+
+- パスポート＃
+
+- Numéro de passeport
+- 
+Passeport n °
+- Passeport Non
+
+- Passeport#
+
+- Passeport#
+
+- PasseportNon
+- 
+
+Passeportn °
+   
+## <a name="canada-personal-health-identification-number-phin"></a>Canada - Numero di identificazione sanitaria personale (PHIN)
+
+### <a name="format"></a>Formato
+
+9 cifre
+
+### <a name="pattern"></a>Modello
+
+9 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: l'espressione regolare Regex_canada_phin individua contenuto corrispondente al formato. Sono disponibili almeno due parole chiave Keyword_canada_phin o Keyword_canada_provinces..
+
+```
+<!-- Canada PHIN -->
+<Entity id="722e12ac-c89a-4ec8-a1b7-fea3469f89db" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_canada_phin" />
+        <Any minMatches="2">
+          <Match idRef="Keyword_canada_phin" />
+          <Match idRef="Keyword_canada_provinces" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcanadaphin"></a>Keyword_canada_phin
+
+- social insurance number
+- 
+health information act
+- 
+income tax information
+- 
+manitoba health
+- 
+health registration
+- 
+prescription purchases
+- 
+benefit eligibility
+- 
+personal health
+- 
+power of attorney
+- 
+registration number
+- personal health number
+- 
+practitioner referral
+- 
+wellness professional
+- 
+patient referral
+- 
+
+health and wellness
+
+#### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
+
+- Nunavut
+- 
+Quebec
+- 
+Northwest Territories
+- 
+Ontario
+- 
+British Columbia
+- 
+Alberta
+- 
+Saskatchewan
+- 
+Manitoba
+- 
+Yukon
+- 
+Newfoundland and Labrador
+- 
+New Brunswick
+- 
+Nova Scotia
+- 
+Prince Edward Island
+- Canada
+   
+## <a name="canada-social-insurance-number"></a>Canada - Numero di assicurazione sociale
+
+### <a name="format"></a>Formato
+
+9 cifre con spazi o lineette facoltativi
+
+### <a name="pattern"></a>Modello
+
+Formattato:
+- Tre cifre 
+- Una lineetta o uno spazio 
+- Tre cifre 
+- Una lineetta o uno spazio 
+- Tre cifre
+
+Non formattata: Nove cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_canadian_sin restituisce contenuti che corrispondono al modello.
+- Almeno due delle seguenti combinazioni:
+    - Viene trovata una parola chiave da Keyword_sin.
+    - Viene trovata una parola chiave da Keyword_sin_collaborative.
+    - La funzione Func_eu_date rileva una data nel formato corretto.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_unformatted_canadian_sin restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_sin.
+- Il checksum ha esito positivo.
+
+```
+<!-- Canada Social Insurance Number -->
+<Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_canadian_sin" />
+        <Any minMatches="2">
+          <Match idRef="Keyword_sin" />
+          <Match idRef="Keyword_sin_collaborative" />
+          <Match idRef="Func_eu_date" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_canadian_sin" />
+        <Match idRef="Keyword_sin" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordsin"></a>Keyword_sin
+
+- sin 
+- social insurance
+ 
+- numero d'assurance sociale
+ 
+- sins
+ 
+- SSN 
+- ssns 
+- protezione di social networking 
+- numero d'assurance social
+ 
+- numero identificativo nazionale 
+- 
+national id 
+- sin#
+ 
+- soc ins
+ 
+- social ins
+ 
+
+#### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
+
+- patente 
+- patente di Guida 
+- titolo della patente di Guida 
+- drivers licence 
+- DOB
+ 
+- Data di nascita 
+- Compleanno  
+- Date of Birth
+ 
+   
+## <a name="chile-identity-card-number"></a>	Cile - Numero di carta di identità
+
+### <a name="format"></a>Formato
+
+7-8 cifre più delimitatori una cifra di controllo o lettera
+
+### <a name="pattern"></a>Modello
+
+7-8 cifre più delimitatori:
+- 1-2 cifre 
+- Un punto  
+- Tre cifre 
+- Un punto  
+- Tre cifre 
+- Un trattino 
+- Una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che corrisponde a una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_chile_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_chile_id_card.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_chile_id_card consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Chile Identity Card Number -->
+<Entity id="4e979794-49a0-407e-a0b9-2c536937b925" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_chile_id_card"/>
+     <Match idRef="Keyword_chile_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_chile_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordchileidcard"></a>Keyword_chile_id_card
+
+- Numero di carta d’identità
+ 
+- Carta di identità 
+- ID 
+- Identificazione 
+- Rol Único Nacional
+ 
+- Correre 
+- Rol Único Tributario
+ 
+- RUT
+ 
+- Cédula de Identidad
+ 
+- Número De Identificación Nacional
+ 
+- Tarjeta de identificación
+ 
+- Identificación
+ 
+   
+## <a name="china-resident-identity-card-prc-number"></a>	Numero carta di identità per residenti in Cina (RPC)
+
+### <a name="format"></a>Formato
+
+18 cifre
+
+### <a name="pattern"></a>Modello
+
+18 cifre:
+- Sei cifre, ovvero un codice indirizzo  
+- Otto cifre nel formato AAAAMMGG, ovvero la data di nascita  
+- Tre cifre, ovvero un codice di ordine  
+- Una cifra, ovvero una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_china_resident_id consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_china_resident_id.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_china_resident_id consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- China Resident Identity Card (PRC) Number -->
+<Entity id="c92daa86-2d16-4871-901f-816b3f554fc1" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_china_resident_id"/>
+     <Match idRef="Keyword_china_resident_id"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_china_resident_id"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
+
+- Carta d’identità per residenti
+ 
+- RPC
+ 
+- Carta d’identità
+ 
+- 身份证  
+- 居民 身份证  
+- 居民身份证
+ 
+- 鉴定
+
+ 
+- 身分證  
+- 居民 身份證
+- 鑑定  
+   
+## <a name="credit-card-number"></a>Credit Card Number
+
+### <a name="format"></a>Formato
+
+16 cifre che possono essere formattate o non formattato (dddddddddddddddd) e deve superare la verifica Luhn.
+
+### <a name="pattern"></a>Modello
+
+Modello molto complesso e solido che rileva carte di credito dei maggiori circuiti del mondo, ad esempio, Visa, MasterCard, Discover Card, JCB, American Express, nonché carte regalo e ticket restaurant.
+
+### <a name="checksum"></a>Checksum
+
+Yes, il checksum Luhn
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
+- Si verifica una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_cc_verification.
+    - Viene trovata una parola chiave da Keyword_cc_name.
+    - La funzione Func_expiration_date rileva una data nel formato corretto.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+<!-- Credit Card Number -->
+<Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_credit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_cc_verification" />
+          <Match idRef="Keyword_cc_name" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_credit_card" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordccverification"></a>Keyword_cc_verification
+
+- card verification
+- card identification number
+- cvn
+
+- cid
+
+- CVC2
+- CVV2
+- pin block
+
+- security code
+
+- security number
+
+- security no
+
+- issue number
+
+- issue no
+
+- cryptogramme
+
+- numéro de sécurité
+
+- numero de securite
+
+- kreditkartenprüfnummer
+
+- kreditkartenprufnummer
+
+- prüfziffer
+
+- prufziffer
+
+- sicherheits Kode
+- sicherheitscode
+
+- sicherheitsnummer
+
+- verfalldatum
+
+- codice di verifica
+
+- cod. sicurezza
+
+- sicurezza Cod
+- 
+n autorizzazione
+- código
+
+- codigo
+
+- cod. seg
+
+- seg Cod
+- código de segurança
+
+- codigo de seguranca
+
+- codigo de segurança
+
+- código de seguranca
+
+- cód. segurança
+
+- Cod. seguranca cod. Segurança
+- cód. seguranca
+
+- cód segurança
+- merluzzo bianco seguranca cod segurança
+- cód seguranca
+- número de verificação
+
+- numero de verificacao
+
+- ablauf
+
+- gültig bis
+
+- gültigkeitsdatum
+
+- gultig bis
+
+- gultigkeitsdatum
+
+- scadenza
+
+- data scad
+
+- fecha de expiracion
+
+- fecha de venc
+
+- vencimiento
+
+- válido hasta
+
+- valido hasta
+
+- vto
+
+- data de expiração
+
+- data de expiracao
+
+- data em que expira
+
+- validade
+
+- valor
+
+- vencimento
+
+- Venc 
+
+#### <a name="keywordccname"></a>Keyword_cc_name
+
+- amex
+- 
+american express
+- americanexpress
+
+- Visa
+- mastercard
+
+- master card
+
+- 
+mc
+ 
+- mastercards
+- 
+master cards
+- Associazione di Diner
+- diners club
+
+- dinersclub
+
+- discover card
+
+- discovercard
+
+- discover cards
+
+- JCB
+- japanese card bureau
+
+- carte blanche
+
+- carteblanche
+
+- credit card
+
+- cc #
+- cc #:
+- 
+expiration date
+- exp date
+
+- 
+expiry date
+- 
+date d’expiration
+- 
+date d'exp
+- 
+date expiration
+- bank card
+
+- 
+bankcard
+- card number
+
+- card num
+
+- cardnumber
+
+- cardnumbers
+
+- card numbers
+
+- creditcard
+
+- credit cards
+
+- creditcards
+
+- ccn
+
+- card holder
+
+- cardholder
+
+- card holders
+
+- cardholders
+
+- check card
+
+- checkcard
+
+- check cards
+
+- checkcards
+
+- debit card
+
+- debitcard
+
+- debit cards
+
+- debitcards
+
+- atm card
+
+- atmcard
+
+- atm cards
+
+- atmcards
+
+- 
+enroute
+- 
+en route
+- card type
+
+- carte bancaire
+
+- carte de crédit
+
+- carte de credit
+
+- numéro de carte
+
+- numero de carte
+
+- nº de la carte
+
+- nº de carte
+
+- kreditkarte
+
+- karte
+
+- karteninhaber
+
+- karteninhabers
+- kreditkarteninhaber
+
+- kreditkarteninstitut
+
+- kreditkartentyp
+
+- eigentümername
+
+- 
+kartennr
+ 
+- kartennummer
+- 
+kreditkartennummer
+- kreditkarten nummer
+- carta di credito
+
+- carta credito
+
+- carta
+- carta n
+- nr. carta
+
+- carta Nr
+- numero carta
+
+- numero della carta
+
+- numero di carta
+
+- tarjeta credito
+
+- tarjeta de credito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
+- tarjeta de atm
+
+- tarjeta atm
+
+- tarjeta debito
+
+- tarjeta de debito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
+- nº de tarjeta
+
+- no. de tarjeta
+
+- Nessun tarjeta de
+- numero de tarjeta
+
+- número de tarjeta
+
+- tarjeta no
+
+- tarjetahabiente
+
+- cartão de crédito
+
+- cartão de credito
+
+- cartao de crédito
+
+- cartao de credito
+
+- cartão de débito
+
+- ○cartao de débito
+
+- cartão de debito
+
+- cartao de debito
+
+- débito automático
+- debito automatico
+
+- 
+número do cartão
+- 
+numero do cartão
+ 
+- número do cartao
+- 
+numero do cartao
+- número de cartão
+
+- numero de cartão
+
+- número de cartao
+
+- numero de cartao
+
+- nº cartão
+- nº do cartao
+
+- nº. do cartão
+
+- Nessun cartão
+- Nessun cartao
+- no. do cartão
+
+- 
+no. do cartao
+ 
+   
+## <a name="croatia-identity-card-number"></a>	Numero di carta di identità della Croazia
+
+### <a name="format"></a>Formato
+
+9 cifre
+
+### <a name="pattern"></a>Modello
+
+9 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_croatia_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_croatia_id_card.
+
+```
+<!--Croatia Identity Card Number-->
+<Entity id="ff12f884-c20a-4189-b185-34c8e7258d47" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_croatia_id_card"/>
+     <Match idRef="Keyword_croatia_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcroatiaidcard"></a>Keyword_croatia_id_card
+
+- Carta d’identità croata
+- Osobna iskaznica
+
+   
+## <a name="croatia-personal-identification-oib-number"></a>	Numero di identificazione personale (OIB) - Croazia
+
+### <a name="format"></a>Formato
+
+10 cifre
+
+### <a name="pattern"></a>Modello
+
+10 cifre:
+- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- Quattro cifre, dove l'ultima è una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_croatia_oib_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_croatia_oib_number.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_croatia_oib_number consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Croatia Personal Identification (OIB) Number -->
+<Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_croatia_oib_number"/>
+     <Match idRef="Keyword_croatia_oib_number"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_croatia_oib_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
+
+- Codice PIN
+- Osobni identifikacijski broj
+ 
+- OIB
+ 
+
+   
+## <a name="czech-national-identity-card-number"></a>	Numero carta d’identità (Repubblica Ceca)
+
+### <a name="format"></a>Formato
+
+10 cifre contenenti una barra
+
+### <a name="pattern"></a>Modello
+
+10 cifre:
+- Sei cifre, ovvero la data di nascita 
+- Una barra 
+- Quattro cifre, dove l'ultima è una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_czech_id_card consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_czech_id_card. Passa il valore di checksum.
+
+```
+<!-- Czech National Identity Card Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_czech_id_card"/>
+     <Match idRef="Keyword_czech_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+
+### <a name="keywords"></a>Parole chiave
+
+- Keyword_czech_id_card
+- Carta d’identità (Repubblica ceca)
+- Občanský průka
+   
+## <a name="denmark-personal-identification-number"></a>	Codice PIN - Danimarca
+
+### <a name="format"></a>Formato
+
+10 cifre contenenti una lineetta
+
+### <a name="pattern"></a>Modello
+
+10 cifre:
+- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- Una lineetta 
+- Quattro cifre, dove l'ultima è una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: l'espressione regolare Regex_denmark_id individua contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_denmark_id. Passa il valore di checksum.
+
+```
+<!-- Denmark Personal Identification Number -->
+<Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_denmark_id"/>
+     <Match idRef="Keyword_denmark_id"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyworddenmarkid"></a>Keyword_denmark_id
+
+- Codice PIN
+- CPR
+- Det Centrale Personregister
+- Personnummer
+   
+## <a name="drug-enforcement-agency-dea-number"></a>Numero della Drug Enforcement Agency (DEA)
+
+### <a name="format"></a>Formato
+
+Due lettere seguite da 7 cifre
+
+### <a name="pattern"></a>Modello
+
+Il modello deve includere tutti gli elementi seguenti:
+- Una lettera (senza distinzione tra maiuscole/minuscole) da questo gruppo di lettere: abcdefghjklmnprstux, ovvero un codice registrante 
+- Una lettera (senza distinzione tra maiuscole/minuscole), ovvero la prima lettera del cognome del registrante 
+- 7 cifre e l'ultima è quella di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+<!-- DEA Number -->
+<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_dea_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+None
+
+   
+## <a name="eu-debit-card-number"></a>Unione Europea - Numero di carta di debito
+
+### <a name="format"></a>Formato
+
+16 cifre
+
+### <a name="pattern"></a>Modello
+
+Modello molto complesso e solido
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_eu_debit_card restituisce contenuti che corrispondono al modello.
+- Si verifica almeno una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_eu_debit_card.
+    - Viene trovata una parola chiave da Keyword_card_terms_dict.
+    - Viene trovata una parola chiave da Keyword_card_security_terms_dict.
+    - Viene trovata una parola chiave da Keyword_card_expiration_terms_dict.
+    - La funzione Func_expiration_date rileva una data nel formato corretto.
+- Il checksum ha esito positivo.
+
+```
+    <!-- EU Debit Card Number -->
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_eu_debit_card" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_eu_debit_card" />
+          <Match idRef="Keyword_card_terms_dict" />
+          <Match idRef="Keyword_card_security_terms_dict" />
+          <Match idRef="Keyword_card_expiration_terms_dict" />
+          <Match idRef="Func_expiration_date" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
+
+- numero di conto 
+- card number
+ 
+- card no.
+ 
+- security number
+ 
+- cc # 
+
+#### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
+
+- acct nbr
+ 
+- acct num
+ 
+- acct no
+ 
+- american express
+ 
+- americanexpress
+ 
+- americano espresso
+ 
+- amex 
+- atm card
+ 
+- atm cards
+ 
+- atm kaart
+ 
+- atmcard
+ 
+- atmcards
+ 
+- atmkaart
+ 
+- atmkaarten
+ 
+- bancontact
+ 
+- bank card
+ 
+- bankkaart
+ 
+- card holder
+ 
+- card holders
+ 
+- card num
+ 
+- card number
+ 
+- card numbers
+ 
+- card type
+ 
+- cardano numerico
+ 
+- cardholder
+ 
+- cardholders
+ 
+- cardnumber
+ 
+- cardnumbers
+ 
+- carta bianca
+ 
+- carta credito
+ 
+- carta di credito
+ 
+- cartao de credito
+ 
+- cartao de crédito
+ 
+- cartao de debito
+ 
+- ○cartao de débito
+ 
+- carte bancaire
+ 
+- carte blanche
+ 
+- carte bleue
+ 
+- carte de credit
+ 
+- carte de crédit
+ 
+- carte di credito
+ 
+- carteblanche
+ 
+- cartão de credito
+ 
+- cartão de crédito
+ 
+- cartão de debito
+ 
+- cartão de débito
+ 
+- cb
+ 
+- ccn
+ 
+- check card
+ 
+- check cards
+ 
+- checkcard
+
+- checkcards
+ 
+- chequekaart
+ 
+- cirrus
+ 
+- cirrus-edc-maestro
+ 
+- controlekaart
+ 
+- controlekaarten
+ 
+- credit card
+ 
+- credit cards
+ 
+- creditcard
+ 
+- creditcards
+ 
+- debetkaart
+ 
+- debetkaarten
+ 
+- debit card
+ 
+- debit cards
+ 
+- debitcard
+ 
+- debitcards
+ 
+- debito automatico
+ 
+- diners club
+ 
+- dinersclub
+ 
+- Scopri 
+- discover card
+ 
+- discover cards
+ 
+- discovercard
+ 
+- discovercards
+ 
+- débito automático
+- 
+edc
+ 
+- eigentümername
+ 
+- european debit card
+ 
+- hoofdkaart
+ 
+- hoofdkaarten
+ 
+- in viaggio
+ 
+- japanese card bureau
+ 
+- japanse kaartdienst
+ 
+- jcb
+ 
+- kaart
+ 
+- kaart num
+ 
+- kaartaantal
+ 
+- kaartaantallen
+ 
+- kaarthouder
+ 
+- kaarthouders
+ 
+- karte
+  
+- karteninhaber
+ 
+- karteninhabers
+- 
+kartennr
+ 
+- kartennummer 
+- kreditkarte
+ 
+- kreditkarten nummer 
+- kreditkarteninhaber
+ 
+- kreditkarteninstitut
+ 
+- kreditkartennummer
+ 
+- kreditkartentyp
+ 
+- maestro
+ 
+- master card
+ 
+- master cards
+ 
+- mastercard
+ 
+- mastercards 
+- MC 
+- mister cash
+ 
+- carta n 
+- carta 
+- Nessun tarjeta de 
+- Nessun cartao 
+- Nessun cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
+- carta Nr 
+- nr. carta
+ 
+- numeri di scheda
+ 
+- numero carta
+ 
+- numero de cartao
+ 
+- numero de carte
+ 
+- numero de cartão
+ 
+- numero de tarjeta
+
+- numero della carta
+ 
+- numero di carta
+ 
+- numero di scheda
+ 
+- numero do cartao
+ 
+- numero do cartão
+ 
+- numéro de carte
+ 
+- nº carta
+ 
+- nº de carte
+ 
+- nº de la carte
+ 
+- nº de tarjeta
+ 
+- nº do cartao
+ 
+- nº cartão 
+- nº. do cartão
+ 
+- número de cartao
+ 
+- número de cartão
+ 
+- número de tarjeta
+ 
+- número do cartao 
+- scheda dell'assegno
+ 
+- scheda dell'atmosfera
+ 
+- scheda dell'atmosfera
+ 
+- scheda della banca
+ 
+- scheda di controllo
+ 
+- scheda di debito
+ 
+- scheda matrice
+ 
+- schede dell'atmosfera
+ 
+- schede di controllo
+ 
+- schede di debito
+ 
+- schede matrici
+ 
+- scoprono la scheda
+ 
+- scoprono le schede
+ 
+- solo
+ 
+- supporti di scheda
+ 
+- supporto di scheda
+ 
+- parametro 
+- tarjeta atm
+ 
+- tarjeta credito
+ 
+- tarjeta de atm
+ 
+- tarjeta de credito
+ 
+- tarjeta de debito
+ 
+- tarjeta debito
+ 
+- tarjeta no
+
+- tarjetahabiente
+ 
+- tipo della scheda
+ 
+- ufficio giapponese della 
+- scheda
+ 
+- v pay
+ 
+- retribuzione v 
+- visa
+ 
+- visa plus
+ 
+- visa electron
+ 
+- visto
+ 
+- visum
+ 
+- vpay
+   
+
+#### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
+
+- card identification number
+- card verification 
+- cardi la verifica
+ 
+- cid
+ 
+- seg Cod 
+- seguranca Cod 
+- segurança Cod 
+- sicurezza Cod 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
+- codice di sicurezza
+ 
+- codice di verifica
+ 
+- codigo
+ 
+- codigo de seguranca
+ 
+- codigo de segurança
+ 
+- crittogramma
+ 
+- cryptogram
+ 
+- cryptogramme
+ 
+- cv2 
+- cvc
+ 
+- CVC2 
+- cvn
+ 
+- cvv
+ 
+- CVV2 
+- cód seguranca 
+- cód segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
+- código
+ 
+- código de seguranca
+ 
+- código de segurança
+ 
+- de kaart controle
+ 
+- geeft nr uit
+ 
+- issue no
+ 
+- issue number
+ 
+- kaartidentificatienummer
+ 
+- kreditkartenprufnummer
+ 
+- kreditkartenprüfnummer
+ 
+- kwestieaantal
+ 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
+- numero de securite
+ 
+- numero de verificacao
+ 
+- numero dell'edizione
+ 
+- numero di identificazione della 
+- scheda
+ 
+- numero di sicurezza
+ 
+- numero van veiligheid
+ 
+- numéro de sécurité
+ 
+- nº autorizzazione
+ 
+- número de verificação
+ 
+- perno il blocco
+ 
+- pin block
+ 
+- prufziffer
+ 
+- prüfziffer
+ 
+- security code
+ 
+- security no
+ 
+- security number
+ 
+- sicherheits kode
+ 
+- sicherheitscode
+ 
+- sicherheitsnummer
+ 
+- speldblok
+ 
+- veiligheid nr
+ 
+- veiligheidsaantal
+ 
+- veiligheidscode
+ 
+- veiligheidsnummer
+ 
+- verfalldatum
+ 
+
+#### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
+
+- ablauf
+ 
+- data de expiracao
+ 
+- data de expiração
+ 
+- data del exp
+ 
+- data di exp
+ 
+- data di scadenza
+ 
+- data em que expira
+ 
+- data scad
+ 
+- data scadenza
+ 
+- date de validité
+ 
+- datum afloop
+ 
+- datum van exp
+ 
+- de afloop
+ 
+- espira
+ 
+- espira
+ 
+- exp date
+ 
+- exp datum
+ 
+- scadenza 
+- expire
+ 
+- expires
+ 
+- expiry
+ 
+- fecha de expiracion
+ 
+- fecha de venc
+ 
+- gultig bis
+ 
+- gultigkeitsdatum
+ 
+- gültig bis
+ 
+- gültigkeitsdatum
+ 
+- la scadenza
+ 
+- scadenza
+ 
+- valable
+ 
+- validade
+ 
+- valido hasta
+ 
+- valor
+ 
+- venc
+ 
+- vencimento
+ 
+- vencimiento
+ 
+- verloopt
+ 
+- vervaldag
+ 
+- vervaldatum
+ 
+- vto
+ 
+- válido hasta
+ 
+   
+## <a name="eu-drivers-license-number"></a>Numero della patente di Guida di Unione europea
+
+Per ulteriori informazioni, vedere [tipo di informazione sensibile numero della patente di Guida di Unione europea](eu-driver-s-license-number.md).
+  
+## <a name="eu-national-identification-number"></a>Numero di identificazione dell'Unione europea nazionale
+
+Per ulteriori informazioni, vedere [il tipo di informazione sensibile nazionale numero di identificazione dell'Unione europea](eu-national-identification-number.md).
+  
+## <a name="eu-passport-number"></a>Numero di passaporto UE
+
+Per ulteriori informazioni, vedere [il numero di passaporto UE tipo di informazioni sensibili](eu-passport-number.md).
+  
+## <a name="eu-social-security-number-or-equivalent-id"></a>ID di numero di previdenza sociale UE o equivalente
+
+Per ulteriori informazioni, vedere [il numero di previdenza sociale UE o tipo di informazioni riservate ID equivalenti](eu-social-security-number-or-equivalent-id.md).
+  
+## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale UE
+
+Per ulteriori informazioni, vedere [il tipo di informazione sensibile UE imposte Identification Number](eu-tax-identification-number.md).
+  
+## <a name="finland-national-id"></a>Finland National ID
+
+### <a name="format"></a>Formato
+
+6 cifre, un carattere di indicazione del secolo, tre cifre più una cifra di controllo
+
+### <a name="pattern"></a>Modello
+
+Il modello deve includere tutti gli elementi seguenti:
+- Sei cifre nel formato DDMMYY che corrisponde alla data di nascita 
+- Indicatore del secolo ("-", "+" o "a") 
+- Codice PIN di 3 cifre 
+- Una cifra o una lettera (con distinzione tra maiuscole/minuscole) che corrisponde a una cifra di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_finnish_national_id restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_finnish_national_id.
+- Il checksum ha esito positivo.
+
+```
+<!-- Finnish National ID-->
+<Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_finnish_national_id" />
+          <Match idRef="Keyword_finnish_national_id" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+- Keyword_finnish_national_id
+- 
+
+Sosiaaliturvatunnus
+- SOTU Henkilötunnus HETU
+- Personbeteckning
+- Personnummer
+   
+## <a name="finland-passport-number"></a>Finlandia - Numero di passaporto
+
+Combinazione di nove lettere e cifre motivo combinazione dei nove lettere e numeri in formato: criteri di due lettere (non maiuscole/minuscole) sette cifre Checksum No definizione A DLP sono la certezza che è stato rilevato questo tipo di informazioni riservate se al 75%, compreso tra un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number individua contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_finland_passport_number. <!-- Finland Passport Number --> 
+ <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
+ </Entity> Passi Passport Keyword_finland_passport_number di parole chiave
+   
+## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+12 cifre
+
+### <a name="pattern"></a>Modello
+
+12 cifre con convalida per scontare modelli analoghi, ad esempio, quello dei numeri telefonici francesi
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_french_drivers_license restituisce contenuti che corrispondono al modello.
+- Si verifica almeno una delle situazioni seguenti:
+- Viene trovata una parola chiave da Keyword_french_drivers_license.
+- La funzione Func_eu_date rileva una data nel formato corretto.
+
+```
+<!-- France Driver's License Number -->
+<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_french_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_french_drivers_license" />
+          <Match idRef="Func_eu_date" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
+
+- drivers licence
+- 
+drivers license
+- driving licence
+
+- le licenze
+- 
+permis de conduire
+- 
+licence number
+- 
+license number
+- 
+licence numbers
+- 
+
+license numbers
+
+## <a name="france-national-id-card-cni"></a>Francia - Carta d'identità nazionale (CNI)
+
+### <a name="format"></a>Formato
+
+12 cifre
+
+### <a name="pattern"></a>Modello
+
+12 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- L'espressione regolare Regex_france_cni restituisce contenuti che corrispondono al modello.
+
+```
+<!-- France CNI -->
+<Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
+  <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_france_cni" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+None
+   
+## <a name="france-passport-number"></a>Francia - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+Nove cifre e lettere
+
+### <a name="pattern"></a>Modello
+
+Nove cifre e lettere:
+- Due cifre 
+- Due lettere (senza distinzione tra maiuscole/minuscole) 
+- Cinque cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_fr_passport restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_passport.
+
+```
+<!-- France Passport Number -->
+<Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_fr_passport" />
+        <Match idRef="Keyword_passport" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpassport"></a>Keyword_passport
+
+- Passport Number
+- 
+Passport No
+- Passport#
+
+- Passport#
+
+- PassportID
+- Passportno
+
+- passportnumber
+
+- パスポート
+- パスポート番号
+
+- パスポートのNum
+
+- 
+パスポート ＃
+ 
+- Numéro de passeport
+- 
+Passeport n °
+- Passeport Non
+
+- Passeport#
+
+- Passeport#
+
+- PasseportNon
+- 
+
+Passeportn °
+
+      
+## <a name="france-social-security-number-insee"></a>Francia - Numero di previdenza sociale (INSEE)
+
+### <a name="format"></a>Formato
+
+15 cifre
+
+### <a name="pattern"></a>Modello
+
+Deve corrispondere a uno di questi due modelli:
+- 13 cifre seguite da uno spazio seguito da due cifre</br>
+oppure
+- 15 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+- La funzione Func_french_insee o Func_fr_insee consente di trovare contenuto corrispondente al formato.
+- Viene trovata una parola chiave da Keyword_fr_insee.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_french_insee o Func_fr_insee consente di trovare contenuto corrispondente al formato.
+- Non vengono trovate parole chiave da Keyword_fr_insee.
+- Il checksum ha esito positivo.
+
+```
+<!-- France INSEE -->
+<Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="95">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_french_insee" />
+        <Match idRef="Func_fr_insee" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_fr_insee" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordfrinsee"></a>Keyword_fr_insee
+
+- insee
+- 
+securité sociale
+- 
+securite sociale
+- 
+national id
+- 
+national identification
+- 
+numéro d'identité
+- Nessun g ' identité
+- 
+no. d'identité
+- 
+numero d'identite
+- Nessun d'identite
+- 
+no. d'identite
+- social security number
+
+- 
+social security code
+- social insurance number
+- 
+le numéro d'identification nationale
+- 
+d'identité nationale
+- 
+numéro de sécurité sociale
+- 
+le code de la sécurité sociale
+- 
+numéro d'assurance sociale
+- 
+numéro de sécu
+- 
+code sécu
+ 
+   
+## <a name="german-drivers-license-number"></a>Germania - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Combinazione di 11 cifre e lettere
+
+### <a name="pattern"></a>Modello
+
+11 cifre e lettere (senza distinzione tra maiuscole/minuscole):
+- Una cifra o una lettera 
+- Due cifre 
+- Sei cifre o lettere 
+- Una cifra 
+- Una cifra o una lettera
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_german_drivers_license restituisce contenuti che corrispondono al modello.
+- Si verifica almeno una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_german_drivers_license_number.
+    - Viene trovata una parola chiave da Keyword_german_drivers_license_collaborative.
+    - Viene trovata una parola chiave da Keyword_german_drivers_license.
+- Il checksum ha esito positivo.
+
+```
+<!-- German Driver's License Number -->
+<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_drivers_license" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_drivers_license_number" />
+          <Match idRef="Keyword_german_drivers_license_collaborative" />
+          <Match idRef="Keyword_german_drivers_license" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
+
+- Führerschein
+- 
+Fuhrerschein
+- Fuehrerschein
+- 
+Führerscheinnummer
+- 
+Fuhrerscheinnummer
+- 
+Fuehrerscheinnummer
+- 
+Führerschein-
+ 
+- Fuhrerschein-
+ 
+- Fuehrerschein-
+ 
+- FührerscheinnummerNr
+- FuhrerscheinnummerNr
+- FuehrerscheinnummerNr
+- FührerscheinnummerKlasse
+- FuhrerscheinnummerKlasse
+- FuehrerscheinnummerKlasse
+- Führerschein- Nr
+
+- Fuhrerschein- Nr
+
+- Fuehrerschein- Nr
+ 
+- Führerschein- Klasse
+ 
+- Fuhrerschein- Klasse
+ 
+- Fuehrerschein- Klasse
+- FührerscheinnummerNr 
+- FuhrerscheinnummerNr 
+- FuehrerscheinnummerNr 
+- FührerscheinnummerKlasse 
+- FuhrerscheinnummerKlasse 
+- FuehrerscheinnummerKlasse 
+- Führerschein- Nr
+ 
+- Fuhrerschein- Nr
+ 
+- Fuehrerschein- Nr
+ 
+- Führerschein- Klasse
+ 
+- Fuhrerschein- Klasse
+ 
+- Fuehrerschein- Klasse 
+- DL 
+- DLS
+- 
+Driv Lic
+ 
+- Driv Licen
+ 
+- Driv License
+- 
+Driv Licenses
+ 
+- Driv Licence
+ 
+- Driv Licences
+ 
+- Driv Lic
+ 
+- Driver Licen
+ 
+- Patente 
+- Driver licenze 
+- Driver Licence
+ 
+- Driver Licences
+ 
+- Driver Lic 
+- Driver Licen 
+- Patente di Guida 
+- Driver licenze 
+- Driver della licenza 
+- Driver titoli 
+- Lic della patente di Guida 
+- Driver's Licen
+ 
+- Patente 
+- Licenze della patente di Guida 
+- Driver's Licence
+ 
+- Driver's Licences
+ 
+- Driving Lic
+ 
+- Driving Licen
+ 
+- Driving License
+ 
+- Driving Licenses
+ 
+- Driving Licence
+
+ 
+- Driving Licences
+
+#### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
+
+- 
+Nr-Führerschein
+ 
+- Nr-Fuhrerschein
+ 
+- Nr-Fuehrerschein
+ 
+- No-Führerschein
+ 
+- No-Fuhrerschein
+ 
+- No-Fuehrerschein
+ 
+- N-Führerschein
+ 
+- N-Fuhrerschein
+ 
+- N-Fuehrerschein
+- 
+Nr-Führerschein
+ 
+- Nr-Fuhrerschein
+ 
+- Nr-Fuehrerschein
+ 
+- No-Führerschein
+ 
+- No-Fuhrerschein
+ 
+- No-Fuehrerschein
+ 
+- N-Führerschein
+ 
+- N-Fuhrerschein
+ 
+- N-Fuehrerschein 
+
+#### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
+
+- ausstellungsdatum
+- 
+ausstellungsort
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+   
+## <a name="german-passport-number"></a>Germania - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+10 cifre o lettere
+
+### <a name="pattern"></a>Modello
+
+Il modello deve includere tutti gli elementi seguenti:
+- Il primo carattere è una cifra o una lettera del gruppo seguente: C, F, G, H, J, K 
+- Tre cifre 
+- Cinque cifre o lettere del gruppo seguente: C, -H, J-N, P, R, T, V-Z 
+- Una cifra
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_german_passport restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave fra le cinque elencate.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_german_passport_data restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave fra le cinque elencate.
+- Il checksum ha esito positivo.
+
+```
+<!-- German Passport Number -->
+<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_german_passport_data" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keyword_german_passport_collaborative" />
+          <Match idRef="Keyword_german_passport_number" />
+          <Match idRef="Keyword_german_passport1" />
+          <Match idRef="Keyword_german_passport2" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordgermanpassport"></a>Keyword_german_passport
+
+- reisepass
+- 
+reisepasse
+- 
+reisepassnummer
+- passport
+- 
+
+passports
+
+#### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
+
+- geburtsdatum
+- ausstellungsdatum
+- 
+ausstellungsort
+
+#### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
+
+Non-Reisepass Nr-Reisepass
+
+#### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
+
+Reisepass-Nr
+
+
+#### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
+
+bnationalit.t
+   
+## <a name="germany-identity-card-number"></a>Germania - Numero carta di identità
+
+### <a name="format"></a>Formato
+
+Dopo 1 novembre 2010: nove lettere e cifre
+
+Da 1 aprile 1987 fino a 31 cifre di 2010:10 ottobre
+
+### <a name="pattern"></a>Modello
+
+A partire dal 1° novembre 2010:
+- Una lettera (senza distinzione tra maiuscole/minuscole) 
+- Otto cifre
+
+Da 1 aprile 1987 fino a 31 ottobre 2010:
+- 10 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- L'espressione regolare Regex_germany_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_germany_id_card.
+
+```
+<!-- Germany Identity Card Number -->
+<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Regex_germany_id_card"/>
+     <Match idRef="Keyword_germany_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
+
+- Carta di identità
+- ID
+- Identificazione
+- Personalausweis
+- Identifizierungsnummer
+- Ausweis
+- Identifikation
+   
+## <a name="greece-national-id-card"></a>Carta d'identità (Grecia)
+
+### <a name="format"></a>Formato
+
+Combinazione di 7-8 lettere e numeri, oltre a un trattino
+
+### <a name="pattern"></a>Modello
+
+Sette lettere e numeri (formato precedente):
+- Una lettera (qualsiasi lettera dell'alfabeto greco)  
+- Un trattino 
+- Sei cifre
+
+Otto lettere e numeri (nuovo formato):
+- Due lettere in maiuscolo sia in alfabeto latino che greco (ABEZHIKMNOPTYX)  
+- Un trattino 
+- Sei cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_greece_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_greece_id_card.
+
+```
+<!-- Greece National ID Card -->
+<Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_greece_id_card"/>
+     <Match idRef="Keyword_greece_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
+
+- Carta d’identità greca
+- Tautotita
+- Δελτίο αστυνομικής ταυτότητας
+- Ταυτότητα
+   
+## <a name="hong-kong-identity-card-hkid-number"></a>Hong Kong - Numero di carta di identità (HKID)
+
+### <a name="format"></a>Formato
+
+Combinazione di 8-9 lettere e numeri. Facoltativamente, l’ultimo carattere può essere racchiuso tra parentesi
+
+### <a name="pattern"></a>Modello
+
+Combinazione di 8-9 lettere:
+- 1-2 lettere (senza distinzione tra maiuscole e minuscole) 
+- Sei cifre 
+- L'ultimo carattere (qualsiasi cifra o la lettera A), è rappresentato dal numero di controllo. Facoltativamente, può essere racchiuso tra parentesi.
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_hong_kong_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_hong_kong_id_card.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_hong_kong_id_card consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Hong Kong Identity Card (HKID) number -->
+<Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+     <Match idRef="Keyword_hong_kong_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_hong_kong_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
+
+- Carta d’identità (Hong Kong)
+- HKID
+- Carta di identità
+
+- 香港身份證
+ 
+- 香港永久性居民身份證
+ 
+   
+## <a name="india-permanent-account-number-pan"></a>India - Numero di conto permanente (PAN)
+
+### <a name="format"></a>Formato
+
+10 lettere o cifre
+
+### <a name="pattern"></a>Modello
+
+10 lettere o cifre:
+- Cinque lettere (senza distinzione tra maiuscole e minuscole) 
+- Quattro cifre 
+- Una lettera, ovvero una cifra di controllo alfabetica
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_india_permanent_account_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_india_permanent_account_number.
+- Il checksum ha esito positivo.
+
+```
+<!-- India Permanent Account Number -->
+<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_india_permanent_account_number"/>
+     <Match idRef="Keyword_india_permanent_account_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
+
+- Permanent Account Number
+ 
+- PAN
+ 
+   
+## <a name="india-unique-identification-aadhaar-number"></a>India - Numero di identificazione univoco (Aadhaar)
+
+### <a name="format"></a>Formato
+
+12 cifre contenenti spazi o trattini facoltativi 
+
+### <a name="pattern"></a>Modello
+
+12 cifre:
+- Quattro cifre 
+- Uno spazio o un trattino facoltativo  
+- Quattro cifre 
+- Uno spazio o un trattino facoltativo  
+- L'ultimo carattere, ovvero il numero di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_india_aadhaar consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_india_aadhar. Passa il valore di checksum. Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_india_aadhaar consente di trovare contenuto corrispondente al formato. Passa il valore di checksum. <!-- India Unique Identification (Aadhaar) number -->
+<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
+</Entity>
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordindiaaadhar"></a>Keyword_india_aadhar
+- Aadhar
+- Aadhaar
+- UID
+- आधार
+   
+## <a name="indonesia-identity-card-ktp-number"></a>Indonesia - Numero di carta di identità (KTP)
+
+### <a name="format"></a>Formato
+
+16 cifre contenenti punti facoltativi 
+
+### <a name="pattern"></a>Modello
+
+16 cifre:
+- Codice provincia a due cifre  
+- Un punto (facoltativo)  
+- Codice città o area a due cifre  
+- Codice sotto-distretto a due cifre  
+- Un punto (facoltativo)  
+- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- Un punto (facoltativo)  
+- Quattro cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_indonesia_id_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_indonesia_id_card.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_indonesia_id_card consente di trovare contenuto corrispondente al formato.
+
+```
+<!-- Indonesia Identity Card (KTP) Number -->
+<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+     <Match idRef="Keyword_indonesia_id_card"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_indonesia_id_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
+
+- KTP
+- Kartu Tanda Penduduk
+ 
+- Nomor Induk Kependudukan
+ 
+   
+## <a name="international-banking-account-number-iban"></a>Numero di conto bancario internazionale (IBAN)
+
+### <a name="format"></a>Formato
+
+Codice paese, due lettere, nonché controllare cifre (due cifre) plus bban numero (fino a 30 caratteri)
+
+### <a name="pattern"></a>Modello
+
+Il modello deve includere tutti gli elementi seguenti:
+
+- Codice di due lettere del paese
+- Due cifre di controllo (seguite da uno spazio facoltativo) 
+- 1 a 7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
+- 1-3 lettere o cifre
+
+Il formato per ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN vengono trattati questi 60 paesi:
+
+Active Directory, ae, all'az, ba, essere, bg, orario di ufficio, ch, cr, cy, cz, de, dk, eseguire, ee, es, fi, fo, fr, gb, ge, gi, contabilità generale, gr, risorse umane, hu, vale a dire il, è, viene, kw, kz, kg, li, lt, lu, lv mc, md, me, mk, mr, mt, mu , nl, no pl, pt, RU, rs, sa, se, si, sk, sm, tn, tr, vg
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_iban restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+<Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_iban" />
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+None
+
+   
+## <a name="ip-address"></a>Indirizzo IP
+
+### <a name="format"></a>Formato
+
+#### <a name="ipv4"></a>IPv4:
+Modello complesso che rappresenta le versioni formattate (punti) e quelle non formattate (senza punti) degli indirizzi IPv4
+
+#### <a name="ipv6"></a>IPv6:
+Modello complesso che rappresenta i numeri dell'indirizzo IPv6 non formattati (include i due punti)
+
+### <a name="pattern"></a>Modello
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_ipv6_address restituisce contenuti che corrispondono al modello.
+- Non vengono trovate parole chiave da Keyword_ipaddress.
+
+Nel caso di IPv4, un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+- L'espressione regolare Regex_ipv4_address restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_ipaddress.
+
+Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+- L'espressione regolare Regex_ipv6_address restituisce contenuti che corrispondono al modello.
+- Non vengono trovate parole chiave da Keyword_ipaddress.
+
+```
+    <!-- IP Address -->
+    <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv4_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="95">
+        <IdMatch idRef="Regex_ipv6_address" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ipaddress" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordipaddress"></a>Keyword_ipaddress
+
+- IP (per questa parola chiave viene fatta distinzione tra maiuscole e minuscole)
+- ip address
+ 
+- Indirizzi IP
+- internet protocol
+- 
+IP-כתובת ה
+ 
+   
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale di malattie (ICD-10-CM)
+
+### <a name="format"></a>Formato
+
+Dizionario
+
+### <a name="pattern"></a>Modello
+
+Parola chiave
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- È possibile trovare una parola chiave da Dictionary_icd_10_cm.
+
+```
+      <!-- ICD-10 CM -->
+      <Entity id="3356946c-6bb7-449b-b253-6ffa419c0ce7" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Dictionary_icd_10_cm" />
+        </Pattern>
+      </Entity>
+```
+
+Parole chiave
+
+Qualsiasi termini nel dizionario di parola chiave Dictionary_icd_10_cm, che si basa su [International classificazione di malattie, decimo revisione, modifica clinici (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Questo tipo di ricerca solo il termine, non i codici di assicurazioni.
+
+   
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale di malattie (ICD-9-CM)
+
+### <a name="format"></a>Formato
+
+Dizionario
+
+### <a name="pattern"></a>Modello
+
+Parola chiave
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- È possibile trovare una parola chiave da Dictionary_icd_9_cm.
+
+```
+      <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Dictionary_icd_9_cm" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+Qualsiasi termini nel dizionario di parola chiave Dictionary_icd_9_cm, che si basa su [International classificazione di malattie, nono revisione, modifica clinici (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Questo tipo di ricerca solo il termine, non i codici di assicurazioni.
+   
+## <a name="ireland-personal-public-service-pps-number"></a>Irlanda - Numero personale di servizio pubblico (PPS)
+
+### <a name="format"></a>Formato
+
+Formato precedente (fino al 31 dicembre 2012):
+- Sette cifre seguite da 1-2 lettere  
+
+Nuovo formato (1 gennaio 2013 e una volta eseguito):
+- Sette cifre seguite da due lettere
+
+### <a name="pattern"></a>Modello
+
+Formato precedente (fino al 31 dicembre 2012):
+- Sette cifre 
+- 1-2 lettere (senza distinzione tra maiuscole e minuscole) 
+
+Nuovo formato (1 gennaio 2013 e una volta eseguito):
+- Sette cifre 
+- Una lettera (senza distinzione tra maiuscole e minuscole) che corrisponde a una cifra di controllo alfabetica  
+- La lettera "A" o "H" (senza distinzione tra maiuscole e minuscole)
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_ireland_pps consente di trovare contenuto corrispondente al formato.
+- Si verifica una delle situazioni seguenti:
+    - È possibile trovare una parola chiave da Keyword_ireland_pps.
+    - La funzione Func_eu_date rileva una data nel formato corretto.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_ireland_pps consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Ireland Personal Public Service (PPS) Number -->
+<Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_ireland_pps"/>
+     <Any minMatches="1">
+  <Match idRef="Keyword_ireland_pps"/>
+  <Match idRef="Func_eu_date"/>
+     </Any>
+  </Pattern>
+  <Pattern confidenceLevel="65">
+     <IdMatch idRef="Func_ireland_pps"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordirelandpps"></a>Keyword_ireland_pps
+
+- Numero personale di servizio pubblico 
+ 
+- Numero PPS
+ 
+- Num. PPS
+ 
+- N° PPS
+ 
+- PPS #
+ 
+- PPS#
+ 
+- PPSN
+ 
+- Scheda servizi pubblici
+ 
+- Uimhir Phearsanta Seirbhíse Poiblí
+ 
+- Uimh. PSP
+ 
+- PSP
+ 
+   
+## <a name="israel-bank-account-number"></a>Israele - Numero di conto bancario
+
+### <a name="format"></a>Formato
+
+13 cifre
+
+### <a name="pattern"></a>Modello
+
+Formattato:
+- Due cifre 
+- Un trattino 
+- Tre cifre 
+- Un trattino 
+- Otto cifre
+
+Non formattato:
+- 13 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_israel_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_israel_bank_account_number.
+
+```
+<!-- Israel Bank Account Number -->
+<Entity id="7d08b2ff-a0b9-437f-957c-aeddbf9b2b25" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_israel_bank_account_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_israel_bank_account_number" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
+
+- Bank Account Number
+ 
+- Bank Account
+ 
+- Account Number
+ 
+- מספר חשבון בנק
+ 
+   
+## <a name="israel-national-id"></a>Carta di identità (Israele)
+
+### <a name="format"></a>Formato
+
+9 cifre
+
+### <a name="pattern"></a>Modello
+
+9 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_israeli_national_id_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_Israel_National_ID.
+- Il checksum ha esito positivo.
+
+```
+<!-- Israel National ID Number -->
+<Entity id="e05881f5-1db1-418c-89aa-a3ac5c5277ee" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_israeli_national_id_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_Israel_National_ID" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
+
+- מספר זהות
+ 
+- National ID Number
+   
+## <a name="italy-drivers-license-number"></a>Italia - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Una combinazione di 10 lettere e cifre
+
+### <a name="pattern"></a>Modello
+
+- Una combinazione di 10 lettere e cifre:
+- Una lettera (senza distinzione tra maiuscole/minuscole) 
+- La lettera "A" o "V" (senza distinzione tra maiuscole/minuscole) 
+- 7 lettere (senza distinzione tra maiuscole/minuscole), cifre o carattere di sottolineatura 
+- Una lettera (senza distinzione tra maiuscole/minuscole)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_italy_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_italy_drivers_license_number.
+
+```
+<!-- Italy Driver's license Number -->
+<Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_italy_drivers_license_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_italy_drivers_license_number" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
+
+- numero di patente di guida
+ 
+- patente di guida
+ 
+   
+## <a name="japan-bank-account-number"></a>Giappone - Numero di conto bancario
+
+### <a name="format"></a>Formato
+
+Sette o otto cifre
+
+### <a name="pattern"></a>Modello
+
+Numero di conto corrente:
+- Sette o otto cifre
+- Codice della filiale del conto corrente:
+- Quattro cifre 
+- Uno spazio o un trattino (facoltativo) 
+- Tre cifre
+
+Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_bank_account.
+- Si verifica una delle situazioni seguenti:
+- La funzione Func_jp_bank_account_branch_code restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_bank_branch_code.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_bank_account.
+
+```
+<!-- Japan Bank Account Number -->
+<Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
+  <Version minEngineVersion="15.01.0131.000">
+    <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_jp_bank_account" />
+          <Match idRef="Keyword_jp_bank_account" />
+          <Any minMatches="1">
+            <Match idRef="Func_jp_bank_account_branch_code" />
+            <Match idRef="Keyword_jp_bank_branch_code" />
+          </Any>
+      </Pattern>
+  </Version>    
+     <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_bank_account" />
+        <Match idRef="Keyword_jp_bank_account" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
+
+- Checking Account Number
+ 
+- Checking Account
+ 
+- Checking Account #
+ 
+- Checking Acct Number
+ 
+- Checking Acct #
+ 
+- Checking Acct No.
+ 
+- Checking Account No.
+ 
+- Bank Account Number
+ 
+- Bank Account
+ 
+- Bank Account #
+ 
+- Bank Acct Number
+ 
+- Bank Acct #
+ 
+- Bank Acct No.
+ 
+- Bank Account No.
+ 
+- Savings Account Number
+ 
+- Account di risparmio 
+- Savings Account #
+ 
+- Savings Acct Number
+ 
+- Savings Acct #
+ 
+- Savings Acct No.
+ 
+- Savings Account No.
+ 
+- Debit Account Number
+ 
+- Debit Account
+ 
+- Debit Account #
+ 
+- Debit Acct Number
+ 
+- Debit Acct #
+ 
+- Debit Acct No.
+ 
+- Debit Account No.
+ 
+- 口座番号を当座預金口座の確認
+ 
+- ＃アカウントの確認、勘定番号の確認
+ 
+- ＃勘定の確認
+ 
+- 勘定番号の確認
+ 
+- 口座番号の確認
+ 
+- 銀行口座番号 
+- 銀行口座 
+- 銀行口座＃
+ 
+- 銀行の勘定番号
+ 
+- 銀行のacct＃
+ 
+- 銀行の勘定いいえ
+ 
+- 銀行口座番号
+- 
+普通預金口座番号
+ 
+- 預金口座
+ 
+- 貯蓄口座＃
+ 
+- 貯蓄勘定の数
+ 
+- 貯蓄勘定＃
+ 
+- 貯蓄勘定番号
+ 
+- 普通預金口座番号
+ 
+- 引き落とし口座番号
+ 
+- 口座番号 
+- 口座番号＃
+ 
+- デビットのacct番号
+ 
+- デビット勘定＃
+ 
+- デビットACCTの番号
+ 
+- デビット口座番号
+ 
+
+#### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
+
+Otemachi
+
+## <a name="japan-drivers-license-number"></a>Giappone - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+12 cifre
+
+### <a name="pattern"></a>Modello
+
+12 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_jp_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_drivers_license_number.
+
+```
+<!-- Japan Driver's License Number -->
+<Entity id="c6011143-d087-451c-8313-7f6d4aed2270" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_drivers_license_number" />
+        <Match idRef ="Keyword_jp_drivers_license_number" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
+
+- dl#
+ 
+- DL # 
+- le liste di distribuzione # 
+- LE LISTE DI DISTRIBUZIONE # 
+- patente 
+- licenze di driver 
+- patente di Guida 
+- patente 
+- licenze di driver 
+- licenze della patente di Guida 
+- driving licence
+ 
+- LIC # 
+- LIC # 
+- lics#
+ 
+- id dello stato 
+- state identification
+ 
+- state identification number
+ 
+- 低所得国＃
+ 
+- 免許証
+ 
+- 状態ID
+- 
+状態の識別
+ 
+- 状態の識別番号
+ 
+- 運転免許
+ 
+- 運転免許証
+ 
+- 運転免許証番号
+ 
+   
+## <a name="japan-passport-number"></a>Giappone - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+Due lettere seguite da 7 cifre
+
+### <a name="pattern"></a>Modello
+
+Due lettere (senza distinzione tra maiuscole/minuscole) seguite da sette cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_jp_passport restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_passport.
+
+```
+<!-- Japan Passport Number -->
+<Entity id="75177310-1a09-4613-bf6d-833aae3743f8" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_passport" />
+        <Match idRef="Keyword_jp_passport" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjppassport"></a>Keyword_jp_passport
+
+- パスポート
+ 
+- パスポート番号
+ 
+- パスポートのNum
+ 
+- パスポート＃
+ 
+   
+## <a name="japan-resident-registration-number"></a>Giappone - Numero di registrazione dei residenti
+
+### <a name="format"></a>Formato
+
+11 cifre
+
+### <a name="pattern"></a>Modello
+
+11 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_jp_resident_registration_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_resident_registration_number.
+
+```
+<!-- Japan Resident Registration Number -->
+<Entity id="01c1209b-6389-4faf-a5f8-3f7e13899652" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_resident_registration_number" />
+        <Match idRef ="Keyword_jp_resident_registration_number" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
+
+- Resident Registration Number
+- Resident Register Number
+ 
+- Residents Basic Registry Number
+ 
+- Resident Registration No.
+ 
+- Resident Register No.
+ 
+- Residents Basic Registry No.
+ 
+- Basic Resident Register No.
+ 
+- 住民登録番号、登録番号をレジデント
+ 
+- 住民基本登録番号、登録番号
+ 
+- 住民基本レジストリ番号を常駐
+ 
+- 登録番号を常駐住民基本台帳登録番号
+ 
+
+   
+## <a name="japan-social-insurance-number-sin"></a>Giappone - Numero di assicurazione sociale (SIN)
+
+### <a name="format"></a>Formato
+
+7-12 cifre
+
+### <a name="pattern"></a>Modello
+
+7-12 cifre:
+- Quattro cifre 
+- Una lineetta (facoltativa) 
+- Sei cifre o
+- 7-12 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_jp_sin restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_sin.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_jp_sin_pre_1997 restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_jp_sin.
+
+```
+<!-- Japan Social Insurance Number -->
+<Entity id="c840e719-0896-45bb-84fd-1ed5c95e45ff" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_jp_sin" />
+        <Match idRef="Keyword_jp_sin" />
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_jp_sin_pre_1997" />
+        <Match idRef="Keyword_jp_sin" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjpsin"></a>Keyword_jp_sin
+
+- Social Insurance No.
+ 
+- Social Insurance Num
+ 
+- Social Insurance Number
+ 
+- 社会保険のテンキー
+ 
+- 社会保険番号
+ 
+   
+## <a name="malaysia-id-card-number"></a>Malesia - Numero di carta d’identità
+
+### <a name="format"></a>Formato
+
+12 cifre contenenti lineette facoltative
+
+### <a name="pattern"></a>Modello
+
+12 cifre:
+- Sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- Un trattino (facoltativo) 
+- Codice luogo di nascita a due lettere  
+- Un trattino (facoltativo) 
+- Tre cifre casuali  
+- Codice genere a una cifra singola
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_malaysia_id_card_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_malaysia_id_card_number.
+
+```
+<!-- Malaysia ID Card Number -->
+</Entity>
+      <Entity id="7f0e921c-9677-435b-aba2-bb8f1013c749" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_malaysia_id_card_number" />
+            <Match idRef="Keyword_malaysia_id_card_number" />
+        </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
+
+- MyKad 
+- Carta di identità 
+- Carta d'identità 
+- Scheda di identificazione 
+- Scheda applicazione digitale
+ 
+- Kad Akuan Diri
+ 
+- Kad Aplikasi Digital
+ 
+   
+## <a name="netherlands-citizens-service-bsn-number"></a>Paesi Bassi - Numero di servizio cittadino (BSN)
+
+### <a name="format"></a>Formato
+
+8-9 cifre contenenti spazi facoltativi 
+
+### <a name="pattern"></a>Modello
+
+8-9 cifre:
+- Tre cifre 
+- Uno spazio (facoltativo) 
+- Tre cifre 
+- Uno spazio (facoltativo) 
+- 2-3 cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_netherlands_bsn consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_netherlands_bsn.
+- La funzione Func_eu_date2 rileva una data nel formato corretto.
+- Il checksum ha esito positivo.
+
+```
+<!-- Netherlands Citizen's Service (BSN) Number -->
+<Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="Func_netherlands_bsn" /> 
+       <Match idRef="Keyword_netherlands_bsn" /> 
+       <Match idRef="Func_eu_date2" /> 
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
+
+- Numero di servizio cittadino
+ 
+- BSN
+
+ 
+- Burgerservicenummer
+ 
+- Sofinummer
+ 
+- Persoonsgebonden nummer
+ 
+- Persoonsnummer
+    
+
+   
+## <a name="new-zealand-ministry-of-health-number"></a>Nuova Zelanda - Numero del Ministero della Sanità
+
+### <a name="format"></a>Formato
+
+Tre lettere, uno spazio (facoltativo) e quattro cifre
+
+### <a name="pattern"></a>Modello
+
+Tre lettere quattro cifre (facoltativo) un spazio (non maiuscole/minuscole)
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_new_zealand_ministry_of_health_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_nz_terms.
+- Il checksum ha esito positivo.
+
+```
+<!-- New Zealand Health Number -->
+<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_nz_terms" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+Parole chiave
+
+Keyword_nz_terms
+
+- NHI
+ 
+- Nuova Zelanda 
+- Stato attività 
+- treatment
+ 
+   
+## <a name="norway-identification-number"></a>Norvegia - Numero di identificazione
+
+
+### <a name="format"></a>Formato
+
+11 cifre
+
+### <a name="pattern"></a>Modello
+
+11 cifre:
+- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- Numero individuale composto da tre cifre  
+- Due cifre di controllo
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_norway_id_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_norway_id_number.
+- Il checksum ha esito positivo.
+- Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_norway_id_numbe consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Norway Identification Number -->
+<Entity id="d4c8a798-e9f2-4bd3-9652-500d24080fc3" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_norway_id_number"/>
+     <Match idRef="Keyword_norway_id_number"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_norway_id_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
+
+- Codice PIN
+- Numero ID norvegese
+- Numero ID
+
+- Identificazione
+- Personnummer
+- Fødselsnummer
+
+   
+## <a name="philippines-unified-multi-purpose-id-number"></a>Filippine - Numero ID multifunzione unificato
+
+### <a name="format"></a>Formato
+
+12 cifre separate da dei segni meno
+
+### <a name="pattern"></a>Modello
+
+12 cifre:
+- Quattro cifre 
+- Una lineetta 
+- Sette cifre 
+- Una lineetta 
+- Una cifra
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_philippines_unified_id consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_philippines_id.
+
+```
+<!-- Philippines Unified Multi-Purpose ID number -->
+<Entity id="019b39dd-8c25-4765-91a3-d9c6baf3c3b3" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_philippines_unified_id"/>
+     <Match idRef="Keyword_philippines_id"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordphilippinesid"></a>Keyword_philippines_id
+
+- ID multifunzione unificato
+ 
+- UMID
+ 
+- Carta di identità 
+- Pinag-isang Multi-Layunin ID
+   
+## <a name="poland-identity-card"></a>Carta di identita - Polonia
+
+### <a name="format"></a>Formato
+
+Tre lettere e sei cifre
+
+### <a name="pattern"></a>Modello
+
+Tre lettere (senza distinzione tra maiuscole/minuscole) seguite da sei cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_polish_national_id consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_polish_national_id_passport_number. Passa il valore di checksum.
+
+```
+<!-- Poland Identity Card-->
+<Entity id="25E64989-ED5D-40CA-A939-6C14183BB7BF" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_national_id" />
+          <Match idRef="Keyword_polish_national_id_passport_number" />
+      </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+
+- Nazwa i nr dowodu tożsamości
+ 
+- Dowód Tożsamości
+ 
+- dow. os.
+ 
+
+   
+## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
+
+### <a name="format"></a>Formato
+
+11 cifre
+
+### <a name="pattern"></a>Modello
+
+11 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_pesel_identification_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_pesel_identification_number.
+- Il checksum ha esito positivo.
+
+```
+<!-- Poland National ID (PESEL) -->      
+<Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_pesel_identification_number" />
+          <Match idRef="Keyword_pesel_identification_number" />
+      </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
+
+- Nr PESEL
+- PESEL   
+
+   
+## <a name="poland-passport"></a>Passaporto Polonia
+
+### <a name="format"></a>Formato
+
+Due lettere e sette cifre
+
+### <a name="pattern"></a>Modello
+
+Due lettere (senza distinzione tra maiuscole/minuscole) seguite da sette cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_polish_passport_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_polish_national_id_passport_number.
+- Il checksum ha esito positivo.
+
+```
+<!-- Poland Passport Number -->
+<Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_passport_number" />
+          <Match idRef="Keyword_polish_national_id_passport_number" />
+      </Pattern>
+</Entity>
+</Version>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+
+- Nazwa i nr dowodu tożsamości
+ 
+- Dowód Tożsamości
+ 
+- dow. os.
+ 
+
+   
+## <a name="portugal-citizen-card-number"></a>Portogallo - Numero di carta del cittadino
+
+### <a name="format"></a>Formato
+
+Otto cifre
+
+### <a name="pattern"></a>Modello
+
+Otto cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_portugal_citizen_card consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_portugal_citizen_card.
+
+```
+<!-- Portugal Citizen Card Number -->
+<Entity id="91a7ece2-add4-4986-9a15-c84544d81ecd" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_portugal_citizen_card"/>
+     <Match idRef="Keyword_portugal_citizen_card"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordportugalcitizencard"></a>Keyword_portugal_citizen_card
+
+- Scheda cittadino
+- Carta ID
+- CC
+- Cartão de Cidadão
+- Bilhete de Identidade
+   
+## <a name="saudi-arabia-national-id"></a>Arabia Saudita - Identificativo nazionale
+
+### <a name="format"></a>Formato
+
+10 cifre
+
+### <a name="pattern"></a>Modello
+
+10 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_saudi_arabia_national_id restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_saudi_arabia_national_id.
+
+```
+<!-- Saudi Arabia National ID -->
+<Entity id="8c5a0ba8-404a-41a3-8871-746aa21ee6c0" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_saudi_arabia_national_id" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_saudi_arabia_national_id" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
+
+- Identification Card
+ 
+- I card number
+ 
+- numero ID 
+- الوطنية الهوية بطاقة رقم
+ 
+
+   
+## <a name="singapore-national-registration-identity-card-nric-number"></a>Singapore - Numero di carta di identità di registrazione nazionale (NRIC)
+
+### <a name="format"></a>Formato
+
+Nove lettere e numeri
+
+### <a name="pattern"></a>Modello
+
+- Nove lettere e numeri:
+- La lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole)  
+- Sette cifre 
+- Una cifra di controllo alfabetica
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_singapore_nric consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_singapore_nric.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_singapore_nric consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- Singapore National Registration Identity Card (NRIC) Number -->
+<Entity id="cead390a-dd83-4856-9751-fb6dc98c34da" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Regex_singapore_nric"/>
+     <Match idRef="Keyword_singapore_nric"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_singapore_nric"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
+
+- Carta di identità di registrazione nazionale
+ 
+- Numero di carta di identità
+ 
+- NRIC
+ 
+- IC
+ 
+- Numero di identificazione per stranieri
+
+ 
+- FIN
+ 
+- 身份证  
+- 身份證
+ 
+   
+## <a name="south-africa-identification-number"></a>Sudafrica - Numero di identificazione
+
+
+### <a name="format"></a>Formato
+
+13 cifre che possono contenere spazi
+
+### <a name="pattern"></a>Modello
+
+13 cifre:
+- Sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- Quattro cifre 
+- Un indicatore di cittadinanza a una cifra  
+- La cifra "8" o "9"  
+- Una cifra, ovvero una cifra di checksum
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_south_africa_identification_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_south_africa_identification_number.
+- Il checksum ha esito positivo.
+
+```
+<!-- South Africa Identification Number -->
+<Entity id="e2adf7cb-8ea6-4048-a2ed-d89eb65f2780" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_south_africa_identification_number"/>
+     <Match idRef="Keyword_south_africa_identification_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
+
+- Carta di identità
+- ID
+- Identificazione 
+   
+## <a name="south-korea-resident-registration-number"></a>Corea del Sud - Numero di registrazione dei residenti
+
+### <a name="format"></a>Formato
+
+13 cifre contenenti un segno meno
+
+### <a name="pattern"></a>Modello
+
+13 cifre:
+- Sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- Una lineetta 
+- Una cifra determinata dal secolo e dal sesso  
+- Codice di quattro cifre dell’area geografica di nascita  
+- Una cifra utilizzata per distinguere persone i cui numeri precedenti sono uguali  
+- Una cifra di controllo.
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_south_korea_resident_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_south_korea_resident_number.
+- Il checksum ha esito positivo.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_south_korea_resident_number consente di trovare contenuto corrispondente al formato.
+- Il checksum ha esito positivo.
+
+```
+<!-- South Korea Resident Registration Number -->
+<Entity id="5b802e18-ba80-44c4-bc83-bf2ad36ae36a" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_south_korea_resident_number"/>
+     <Match idRef="Keyword_south_korea_resident_number"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_south_korea_resident_number"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
+
+- Carta di identità
+ 
+- Numero di registrazione del cittadino
+ 
+- Jumin deungnok beonho
+ 
+- RRN
+ 
+- 주민등록번호
+   
+## <a name="spain-social-security-number-ssn"></a>Spagna - Numero di previdenza sociale (SSN)
+
+### <a name="format"></a>Formato
+
+11-12 cifre
+
+### <a name="pattern"></a>Modello
+
+12 11 cifre:
+- Due cifre 
+- Una barra (facoltativa) 
+- 7-8 cifre 
+- Una barra (facoltativa) 
+- Due cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+<!-- Spain SSN -->
+<Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_spanish_social_security_number" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+None
+   
+## <a name="sweden-national-id"></a>Svezia - Identificativo nazionale
+
+### <a name="format"></a>Formato
+
+10 o 12 cifre e un delimitatore facoltativo
+
+### <a name="pattern"></a>Modello
+
+10 o 12 cifre e un delimitatore facoltativo:
+- 2-4 cifre (facoltative) 
+- Sei cifre nel formato data AAMMGG 
+- Delimitatore di "-" o "+" (facoltativo) più
+- Quattro cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_swedish_national_identifier restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
+```
+<!-- Sweden National ID -->
+<Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_swedish_national_identifier" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+No
+   
+## <a name="sweden-passport-number"></a>Svezia - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+Otto cifre
+
+### <a name="pattern"></a>Modello
+
+Otto cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_sweden_passport_number restituisce contenuti che corrispondono al modello.
+- Si verifica una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_passport.
+    - Viene trovata una parola chiave da Keyword_sweden_passport.
+
+```
+<!-- Sweden Passport Number -->
+<Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_sweden_passport_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_passport" />
+          <Match idRef="Keyword_sweden_passport" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
+
+- visa requirements
+ 
+- Alien Registration Card
+ 
+- Schengen visas
+ 
+- Schengen visa
+ 
+- Visa Processing
+ 
+- Visa Type
+ 
+- Single Entry
+ 
+- Multiple Entry
+ 
+- G3 Processing Fees
+
+ 
+
+#### <a name="keywordpassport"></a>Keyword_passport
+
+- Passport Number 
+- 
+Passport No 
+- Passport#
+ 
+- Passport#
+ 
+- PassportID 
+- Passportno
+ 
+- passportnumber
+ 
+- パスポート 
+- パスポート番号
+ 
+- パスポートのNum
+ 
+- パスポート＃
+ 
+- Numéro de passeport 
+- 
+Passeport n ° 
+- Passeport Non
+ 
+- Passeport#
+ 
+- Passeport#
+ 
+- PasseportNon 
+- Passeportn °
+ 
+   
+## <a name="swift-code"></a>Codice SWIFT
+
+### <a name="format"></a>Formato
+
+Quattro lettere seguite da 5-31 lettere o cifre
+
+### <a name="pattern"></a>Modello
+
+Quattro lettere seguite da 5-31 lettere o cifre:
+- Codice ABI di quattro cifre (senza distinzione tra maiuscole/minuscole) 
+- Uno spazio facoltativo 
+- 4-28 lettere o cifre (BBAN) 
+- Uno spazio facoltativo 
+- 1-3 lettere o cifre (resto del BBAN)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_swift restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_swift.
+
+```
+<Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
+<Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_swift" />
+        <Match idRef="Keyword_swift" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keywordswift"></a>Keyword_swift
+
+- international organization for standardization 9362
+ 
+- iso 9362
+ 
+- iso9362 
+- codice SWIFT\# 
+- swiftcode
+ 
+- swiftnumber
+ 
+- swiftroutingnumber
+ 
+- swift code
+ 
+- swift number #
+ 
+- swift routing number
+ 
+- bic number
+ 
+- bic code
+ 
+- BIC\# 
+- BIC\# 
+- bank identifier code
+ 
+- 標準化9362 
+- 迅速＃
+ 
+- SWIFTコード
+ 
+- SWIFT番号
+ 
+- 迅速なルーティング番号
+ 
+- BIC番号
+ 
+- BICコード
+ 
+- 銀行識別コードのための国際組織
+ 
+- Organisation internationale de normalisation 9362
+ 
+- rapide\# 
+- code SWIFT
+ 
+- le numéro de swift
+ 
+- swift numéro d'acheminement
+ 
+- le numéro BIC
+ 
+- \#BIC 
+- code identificateur de banque
+ 
+   
+## <a name="taiwan-national-id"></a>Taiwan National ID
+
+### <a name="format"></a>Formato
+
+Una lettera (in lingua inglese) seguita da nove cifre
+
+### <a name="pattern"></a>Modello
+
+Una lettera (in lingua inglese) seguita da nove cifre:
+- Una lettera (in inglese, senza distinzione tra tra maiuscole/minuscole) 
+- La cifra "1" o "2" 
+- Otto cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_taiwanese_national_id.
+- Il checksum ha esito positivo.
+
+```
+<!-- Taiwanese National ID -->
+<Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_taiwanese_national_id" />
+          <Match idRef="Keyword_taiwanese_national_id" />
+      </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
+
+- 身份證字號
+ 
+- 身份證
+ 
+- 身份證號碼
+ 
+- 身份證號
+ 
+- 身分證字號
+ 
+- 身分證  
+- 身分證號碼
+ 
+- 身份證號
+ 
+- 身分證統一編號
+ 
+- 國民身分證統一編號
+ 
+- 簽名
+ 
+- 蓋章
+ 
+- 簽名或蓋章
+
+ 
+- 簽章   
+   
+## <a name="taiwan-passport-number"></a>	Taiwan - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+- Numero di passaporto biometrica: nove cifre
+- Numero di passaporto non biometrica: nove cifre
+
+### <a name="pattern"></a>Modello
+Numero di passaporto biometrica:
+- La cifra "3"  
+- Otto cifre
+
+Numero di passaporto biometrica non:
+- 9 cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_taiwan_passport consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_taiwan_passport.
+
+```
+<!-- Taiwan Passport Number -->
+<Entity id="e7251cb4-4c2c-41df-963e-924eb3dae04a" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_taiwan_passport"/>
+     <Match idRef="Keyword_taiwan_passport"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
+
+- Numero passaporto ROC
+
+ 
+- Numero di passaporto 
+- Passport non 
+- Num. passaporto
+ 
+- Passport#
+ 
+- 护照
+ 
+- 中華民國護照
+ 
+- Zhōnghuá Mínguó hùzhào
+   
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Taiwan - Numero certificato di residenza (ARC/TARC)
+
+### <a name="format"></a>Formato
+
+10 lettere e cifre
+
+### <a name="pattern"></a>Modello
+
+10 lettere e cifre:
+- Due lettere (senza distinzione tra maiuscole/minuscole) 
+- Otto cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_taiwan_resident_certificate consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_taiwan_resident_certificate.
+
+```
+<!-- Taiwan Resident Certificate (ARC/TARC) -->
+<Entity id="48269fec-05ea-46ea-b326-f5623a58c6e9" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_taiwan_resident_certificate"/>
+     <Match idRef="Keyword_taiwan_resident_certificate"/>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
+
+- Certificato di residenza
+ 
+- Cert residenti 
+- Cert. di resid.
+ 
+- Scheda di identificazione 
+- Certificato residente straniero
+ 
+- ARC
+ 
+- Certificato residente nell’area di Taiwan
+ 
+- TARC
+ 
+- 居留證
+ 
+- 外僑居留證
+ 
+- 台灣地區居留證
+ 
+   
+## <a name="uk-drivers-license-number"></a>Regno Unito - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Combinazione di 18 lettere e numeri nel formato specificato
+
+### <a name="pattern"></a>Modello
+
+18 lettere e cifre:
+- Cinque lettere (senza distinzione fra maiuscole/minuscole) o la cifra 9 al posto di una lettera 
+- Una cifra 
+- 5 cifre nel formato data GGMMA relativo alla data di nascita 
+- Due lettere (senza distinzione fra maiuscole/minuscole) o la cifra 9 al posto di una lettera 
+- Cinque cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_uk_drivers_license restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_uk_drivers_license.
+- Il checksum ha esito positivo.
+
+```
+<!-- U.K. Driver's License Number -->
+<Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_uk_drivers_license" />
+        <Match idRef="Keyword_uk_drivers_license" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
+
+- DVLA
+ 
+- light vans
+ 
+- quadbikes
+ 
+- motor cars
+ 
+- 125cc 
+- sidecar
+ 
+- tricycles
+ 
+- motorcycles
+ 
+- photocard licence
+ 
+- learner drivers
+ 
+- licence holder
+ 
+- licence holders
+ 
+- driving licences
+ 
+- driving licence
+ 
+- dual control car
+ 
+   
+## <a name="uk-electoral-roll-number"></a>Regno Unito - Numero di iscrizione alle liste elettorali
+
+### <a name="format"></a>Formato
+
+Due lettere seguite da 1-4 cifre
+
+### <a name="pattern"></a>Modello
+
+Due lettere (senza distinzione fra maiuscole/minuscole) seguite da 1-4 numeri
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_uk_electoral restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_uk_electoral.
+
+```
+<!-- U.K. Electoral Number -->
+<Entity id="a3eea206-dc0c-4f06-9e22-aa1be3059963" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_uk_electoral" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_electoral" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordukelectoral"></a>Keyword_uk_electoral
+
+- council nomination
+ 
+- nomination form
+ 
+- electoral register
+
+ 
+- electoral roll
+
+   
+## <a name="uk-national-health-service-number"></a>Regno Unito - Codice del servizio sanitario nazionale
+
+### <a name="format"></a>Formato
+
+10-17 cifre separate da spazi
+
+### <a name="pattern"></a>Modello
+
+10-17 cifre:
+- 3 o 10 cifre 
+- Uno spazio 
+- Tre cifre 
+- Uno spazio 
+- Quattro cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_uk_nhs_number restituisce contenuti che corrispondono al modello.
+- Si verifica una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_uk_nhs_number.
+    - Viene trovata una parola chiave da Keyword_uk_nhs_number1.
+    - Viene trovata una parola chiave da Keyword_uk_nhs_number_dob.
+- Il checksum ha esito positivo.
+
+```
+<!-- U.K. NHS Number -->
+<Entity id="3192014e-2a16-44e9-aa69-4b20375c9a78" patternsProximity="300" recommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_uk_nhs_number" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_nhs_number" />
+          <Match idRef="Keyword_uk_nhs_number1" />
+          <Match idRef="Keyword_uk_nhs_number_dob" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+   
+#### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
+
+- national health service
+ 
+- nhs
+ 
+- health services authority
+
+ 
+- health authority
+
+#### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
+
+- patient id
+ 
+- patient identification
+ 
+- patient no
+
+ 
+- patient number
+
+#### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
+
+- Criteri di gruppo 
+- DOB
+ 
+- D.O.B 
+- Date of Birth
+ 
+- Birth Date
+ 
+   
+## <a name="uk-national-insurance-number-nino"></a>Regno Unito - Numero di assicurazione nazionale (NINO)
+
+### <a name="format"></a>Formato
+
+7 cifre o 9 caratteri separati da spazi o trattini
+
+### <a name="pattern"></a>Modello
+
+Due possibili motivi:
+
+- Due lettere (NINOs valido utilizzare solo alcuni caratteri in questo prefisso, questo modello consente di convalidare; non maiuscole/minuscole)
+- Sei cifre
+- Entrambi '', "B", "C", oppure con ' (ad esempio il prefisso solo alcuni caratteri sono consentiti in suffisso; non distinzione tra maiuscole e minuscole)
+
+OPPURE
+
+- Due lettere
+- Uno spazio o un trattino
+- Due cifre
+- Uno spazio o un trattino
+- Due cifre
+- Uno spazio o un trattino
+- Due cifre
+- Uno spazio o un trattino
+- Entrambi 'A', "B", "C", oppure con '
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_uk_nino.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
+- Non vengono trovate parole chiave da Keyword_uk_nino.
+
+```
+<!-- U.K. NINO -->
+<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_uk_nino" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_uk_nino" />
+        </Any>
+    </Pattern>    
+     <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_uk_nino" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_uk_nino" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyworduknino"></a>Keyword_uk_nino
+
+- national insurance number
+ 
+- national insurance contributions
+ 
+- protection act
+ 
+- insurance
+ 
+- social security number
+ 
+- insurance application
+ 
+- medical application
+ 
+- social insurance
+ 
+- medical attention
+ 
+- protezione di social networking 
+- great britain
+ 
+- insurance
+    
+   
+## <a name="us--uk-passport-number"></a>Stati Uniti/Regno Unito - Numero di passaporto
+
+### <a name="format"></a>Formato
+
+9 cifre
+
+### <a name="pattern"></a>Modello
+
+9 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_usa_uk_passport restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_passport.
+
+```
+<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_usa_uk_passport" />
+        <Match idRef="Keyword_passport" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordpassport"></a>Keyword_passport
+
+- Passport Number 
+- 
+Passport No 
+- Passport#
+ 
+- Passport#
+ 
+- PassportID 
+- Passportno
+ 
+- passportnumber
+ 
+- パスポート 
+- パスポート番号
+ 
+- パスポートのNum
+ 
+- パスポート＃
+ 
+- Numéro de passeport 
+- 
+Passeport n ° 
+- Passeport Non
+ 
+- Passeport#
+ 
+- Passeport#
+ 
+- PasseportNon 
+- Passeportn °
+ 
+   
+## <a name="us-bank-account-number"></a>Stati Uniti - Numero di conto bancario
+
+### <a name="format"></a>Formato
+
+8-17 cifre
+
+### <a name="pattern"></a>Modello
+
+8-17 cifre consecutive
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_usa_bank_account_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_usa_Bank_Account.
+
+```
+<!-- U.S. Bank Account Number -->
+<Entity id="a2ce32a8-f935-4bb6-8e96-2a5157672e2c" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_usa_bank_account_number" />
+        <Match idRef="Keyword_usa_Bank_Account" />
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
+
+- Checking Account Number
+ 
+- Checking Account
+ 
+- Checking Account #
+ 
+- Checking Acct Number
+ 
+- Checking Acct #
+ 
+- Checking Acct No.
+ 
+- Checking Account No.
+ 
+- Bank Account Number
+ 
+- Bank Account #
+ 
+- Bank Acct Number
+ 
+- Bank Acct #
+ 
+- Bank Acct No.
+ 
+- Bank Account No.
+ 
+- Savings Account Number
+ 
+- Savings Account.
+ 
+- Savings Account #
+ 
+- Savings Acct Number
+ 
+- Savings Acct #
+ 
+- Savings Acct No.
+ 
+- Savings Account No.
+ 
+- Debit Account Number
+ 
+- Debit Account
+ 
+- Debit Account #
+ 
+- Debit Acct Number
+ 
+- Debit Acct #
+ 
+- Debit Acct No.
+ 
+- Debit Account No.
+ 
+   
+## <a name="us-drivers-license-number"></a>Stati Uniti - Numero della patente di guida
+
+### <a name="format"></a>Formato
+
+Varia in base allo stato
+
+### <a name="pattern"></a>Modello
+
+Varia in base allo stato. Ad esempio, per New York:
+- Nove cifre formattato come ggg ggg ggg corrispondenti.
+- Nove cifre come ddddddddd non corrispondono.
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
+- È possibile trovare una parola chiave da Keyword_us_drivers_license.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
+- Viene trovata una parola chiave da Keyword_us_drivers_license_abbreviations.
+- Non vengono trovate parole chiave da Keyword_us_drivers_license.
+
+```
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_new_york_drivers_license_number" />
+        <Match idRef="Keyword_new_york_drivers_license_name" />
+        <Match idRef="Keyword_us_drivers_license" />
+    </Pattern>
+    <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_new_york_drivers_license_number" />
+        <Match idRef="Keyword_new_york_drivers_license_name" />
+        <Match idRef="Keyword_us_drivers_license_abbreviations" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Keyword_us_drivers_license" />
+        </Any>
+    </Pattern>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
+
+- DL 
+- DLS 
+- CDL 
+- CDLS 
+- ID 
+- ID 
+- DL# 
+- 
+DLS#
+ 
+- CDL#
+ 
+- CDLS#
+ 
+- ID#
+- 
+IDs#
+ 
+- numero ID 
+- ID numbers
+ 
+- LIC 
+- LIC#
+ 
+
+#### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
+
+- DriverLic 
+- DriverLics 
+- DriverLicense 
+- DriverLicenses 
+- Driver Lic 
+- Driver conglomerati 
+- Patente 
+- Driver licenze 
+- DriversLic 
+- DriversLics 
+- PatenteGuida 
+- DriversLicenses 
+- Driver Lic 
+- Driver conglomerati 
+- Patente di Guida 
+- Driver licenze 
+- Driver'Lic 
+- Driver'Lics 
+- Driver'License 
+- Driver'Licenses 
+- Driver' Lic 
+- Driver' conglomerati 
+- Driver' licenza 
+- Driver' licenze
+- Driver'sLic 
+- Driver'sLics 
+- Driver'sLicense 
+- Driver'sLicenses 
+- Lic della patente di Guida 
+- Conglomerati della patente di Guida 
+- Patente 
+- Licenze della patente di Guida 
+- identification number
+ 
+- identification numbers
+ 
+- identification#
+ 
+- carta d'identità 
+- schede ID 
+- scheda di identificazione 
+- identificazione schede 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
+- Driver Lic# 
+- 
+Driver Lics#
+ 
+- Driver licenza # 
+- Driver licenze # 
+- DriversLic # 
+- DriversLics # 
+- PatenteGuida # 
+- DriversLicenses # 
+- Driver Lic # 
+- Driver conglomerati # 
+- Driver della licenza # 
+- Driver licenze # 
+- Driver' Lic#
+ 
+- Driver' Lics#
+ 
+- Driver' License#
+ 
+- Driver' Licenses#
+ 
+- Driver' Lic#
+ 
+- Driver' Lics#
+ 
+- Driver' License#
+ 
+- Driver' Licenses#
+ 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
+- Driver's Lic#
+ 
+- Driver's Lics#
+ 
+- Driver's License#
+ 
+- Driver's Licenses#
+ 
+- carta d'identità # 
+- id cards#
+ 
+- identification card#
+ 
+- identification cards#
+ 
+
+
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+
+- Abbreviazione dello stato (ad esempio, "NY")
+ 
+- Nome dello stato (ad esempio, "New York")
+    
+   
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Stati Uniti - Codice identificativo del contribuente individuale (ITIN)
+
+### <a name="format"></a>Formato
+
+Nove cifre che iniziano con "9" e contengono un "7" o un "8" come quarta cifra. Può essere formattato con spazi e trattini (facoltativo)
+
+### <a name="pattern"></a>Modello
+
+Formattato:
+- La cifra "9" 
+- Due cifre 
+- Uno spazio o un trattino 
+- Un "7" o un "8" 
+- Una cifra 
+- Uno spazio o un trattino 
+- Quattro cifre
+
+Non formattato:
+- La cifra "9" 
+- Due cifre 
+- Un "7" o un "8" 
+- Cinque cifre
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_formatted_itin restituisce contenuti che corrispondono al modello.
+- Si verifica almeno una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_itin.
+    - La funzione Func_us_address rileva un indirizzo nel formato di data corretto.
+    - La funzione Func_us_date rileva una data nel formato corretto.
+    - Viene trovata una parola chiave da Keyword_itin_collaborative.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_unformatted_itin restituisce contenuti che corrispondono al modello.
+- Si verifica almeno una delle situazioni seguenti:
+    - Viene trovata una parola chiave da Keyword_itin_collaborative.
+    - La funzione Func_us_address rileva un indirizzo nel formato di data corretto.
+    - La funzione Func_us_date rileva una data nel formato corretto.
+
+```
+<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_formatted_itin" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_itin" />
+          <Match idRef="Func_us_address" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Keyword_itin_collaborative" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_itin" />
+        <Match idRef="Keyword_itin" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_itin_collaborative" />
+          <Match idRef="Func_us_address" />
+          <Match idRef="Func_us_date" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keyworditin"></a>Keyword_itin
+
+- taxpayer
+ 
+- tax id
+ 
+- tax identification
+ 
+- itin
+ 
+- SSN 
+- tin
+ 
+- protezione di social networking 
+- tax payer
+ 
+- itins
+ 
+- taxid
+
+ 
+- individual taxpayer
+ 
+
+#### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
+
+- License 
+- DL 
+- DOB
+ 
+- Data di nascita 
+- Compleanno  
+- Date of Birth
+ 
+   
+## <a name="us-social-security-number-ssn"></a>Stati Uniti - Numero di previdenza sociale (SSN)
+
+### <a name="format"></a>Formato
+
+9 cifre formattate o meno
+
+> [!NOTE]
+> Se eseguita prima funzione mid 2011, un SSN è sicuro formattazione cui devono essere compreso alcuni intervalli è valido in alcune parti del numero (ma non esiste alcun checksum).
+
+### <a name="pattern"></a>Modello
+
+Quattro funzioni cercare SSNs in quattro formati diversi:
+- Func_ssn trova SSNs di pre-2011 sicuro formattazione formattati con trattini o spazi (ggg-gg-gggg OR ggg gg gggg)
+- Func_unformatted_ssn trova SSNs di pre-2011 sicuro la formattazione viene formattato come nove cifre consecutive (ddddddddd)
+- Func_randomized_formatted_ssn trova SSNs post 2011 formattati con trattini o spazi (ggg-gg-gggg OR ggg gg gggg)
+- Func_randomized_unformatted_ssn trova SSNs post 2011 che viene formattato come nove cifre consecutive (ddddddddd)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_ssn restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_ssn.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_unformatted_ssn consente di trovare contenuto corrispondente al formato.
+- Viene trovata una parola chiave da Keyword_ssn.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
+- La funzione Func_randomized_formatted_ssn restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_ssn.
+- La funzione Func_ssn non trovare contenuti che corrispondono al modello.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%, entro 300 caratteri, se:
+- La funzione Func_randomized_unformatted_ssn restituisce contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_ssn.
+- La funzione Func_unformatted_ssn non trovare contenuti che corrispondono al modello.
+
+```
+<!-- U.S. Social Security Number (SSN) -->
+    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
+        <IdMatch idRef="Func_ssn" />
+        <Match idRef="Keyword_ssn" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_unformatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_randomized_formatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_ssn" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="55">
+        <IdMatch idRef="Func_randomized_unformatted_ssn" />
+        <Match idRef="Keyword_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_unformatted_ssn" />
+        </Any>
+      </Pattern>
+    </Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordssn"></a>Keyword_ssn
+
+- Social Security
+ 
+- Social Security#
+ 
+- Soc Sec
+ 
+- SSN 
+- SSNS
+ 
+- SSN#
+ 
+- SS#
+ 
+- SSID
+ 
+   
+
