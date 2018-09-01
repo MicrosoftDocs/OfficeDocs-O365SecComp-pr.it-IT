@@ -3,7 +3,6 @@ title: Novità di Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Vedere What's new in sicurezza App Cloud di Office 365
-ms.openlocfilehash: 484d46e9fef56e76e2f27d27b38a261c4ad19cc1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530738"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796872"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Novità di Office 365 Cloud App Security
 
@@ -26,11 +25,24 @@ In questo articolo per ottenere una rapida panoramica delle nuove funzionalità 
   
 In questo articolo è stato aggiornato frequentemente, come funzionalità vengono aggiunte o migliorate. Circa due settimane dopo gli aggiornamenti di sicurezza di Microsoft Cloud App rilascio di aggiornamenti di sicurezza di applicazione Cloud di Office 365 e non tutti gli aggiornamenti di sicurezza di Microsoft Cloud App si applicano a Office 365 Cloud App sicurezza. Inoltre, le nuove funzionalità può richiedere una settimana o più dopo la data di rilascio possa essere visualizzata nell'ambiente di protezione di Office 365 Cloud App.
   
+## <a name="office-365-cloud-app-security-release-130"></a>Versione di Office 365 Cloud App sicurezza 130
+
+*Versioni 5 settembre 2018*
+
+**Rilascio con [Microsoft Cloud App Security versione 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
+
+- **Nuova barra dei menu** Per offrire un'esperienza di amministrazione più coerenza tra prodotti Microsoft 365 e consentono di eseguire il pivot più facilmente tra le soluzioni di protezione di Microsoft, la barra dei menu portale Cloud App protezione è spostato e il lato sinistro dello schermo. Questa struttura coerente esperienza utile per orientare familiarità quando si passa da un portale di protezione di Microsoft a un altro.
+
+- **Punteggio app OAuth impatto** È possibile inviare commenti e suggerimenti team la protezione applicazione Cloud per confermare se non esiste un'app OAuth individuata all'interno dell'organizzazione che sembra dannoso. Questa nuova funzionalità consente di far parte della community protezione e migliorare analisi e OAuth app rischio punteggio. Per ulteriori informazioni vedere [Manage app permissions](manage-app-permissions-in-ocas.md).
+
+- **Parser di individuazione di nuovi Cloud** Parser di individuazione Cloud supportano ora iboss Secure Cloud Gateway e Sophos XG.
+
+
 ## <a name="office-365-cloud-app-security-release-128"></a>Versione di Office 365 Cloud App sicurezza 128
 
- *Versioni 5 agosto 2018* 
+*Rilasciato il 5 agosto 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
+**Rilascio con [Microsoft Cloud App Security versione 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
   
 - **Autorizzazioni dell'App tra più applicazioni** Per le applicazioni che sono state concesse le autorizzazioni dell'app, è ora possibile escludere o approvare più applicazioni in una singola azione. Ad esempio, è possibile esaminare tutte le applicazioni che dispongono dell'autorizzazione per gli utenti dell'organizzazione, selezionare tutte le applicazioni che si desidera escludere e fare clic su app di esclusione per revocare il consenso tutti concesso e non è più che consente agli utenti di concedere l'autorizzazione per tali applicazioni. 
     
@@ -38,9 +50,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Versione di Office 365 Cloud App sicurezza 126
 
- *Rilasciato il 7 luglio 2018* 
+*Rilasciato il 7 luglio 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 126](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**: 
+**Rilascio con [Microsoft Cloud App Security versione 126](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**: 
   
 - **Correzione automatica per le attività di sospette** È ora possibile impostare azioni di correzione automatica per sessione sospetta attivata in base ai criteri di rilevamento anomalia. Questo miglioramento consente di ricevere un avviso in modo istantaneo quando si verifica una violazione della e applicare automaticamente le azioni di governance, ad esempio sospendere utente. Per ulteriori informazioni, vedere [criteri di rilevamento anomalia nella sicurezza App Cloud di Office 365](anomaly-detection-policies-in-ocas.md).
     
@@ -50,9 +62,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-124"></a>Versione di Office 365 Cloud App sicurezza 124
 
- *Rilasciati il 10 giugno 2018* 
+*Rilasciati il 10 giugno 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 124](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**: 
+**Rilascio con [Microsoft Cloud App Security versione 124](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**: 
   
 - **Distribuzioni nell'ambito** Le organizzazioni aziendali in modo granulare è possono determinare quali utenti per monitorare e proteggere in base all'appartenenza. Questa funzionalità consente di selezionare gli utenti le cui attività non verranno visualizzate per una qualsiasi delle applicazioni protette. Livello di ambito di monitoraggio è particolarmente utile per la conformità e licenze. Alcune regole di conformità necessitano di evitare il monitoring agli utenti di alcune nazioni a causa di normative locali. E, è possibile monitorare un numero di utenti la possibilità di mantenersi rientrano nei valori delle licenze sicurezza App Cloud di Office 365. 
     
@@ -60,9 +72,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-121"></a>Versione di Office 365 Cloud App sicurezza 121
 
- *Rilasciato 6 maggio 2018* 
+*Rilasciato 6 maggio 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 121](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**: 
+**Rilascio con [Microsoft Cloud App Security versione 121](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**: 
   
 - **Miglioramenti dei criteri per il rilevamento anomalia**. Criteri di rilevamento del titolo di Office 365 Cloud App anomalia sono stati migliorati per includere due nuovi tipi di individuazione che sono gradualmente distribuzione: 
     
@@ -74,9 +86,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-120"></a>Versione di Office 365 Cloud App sicurezza 120
 
- *Rilasciato il 22 aprile 2018* 
+*Rilasciato il 22 aprile 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 120](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**: 
+**Rilascio con [Microsoft Cloud App Security versione 120](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**: 
   
 - **Le applicazioni interne come attività dell'utente**. Per Office 365 e Azure Active Directory (Azure Active Directory), si viene ora gradualmente distribuzione la possibilità per rilevare le applicazioni interne come attività dell'account utente eseguite dalle applicazioni di Office 365 e Azure Active Directory (interne ed esterne). In questo modo è possibile creare criteri per avvisare l'utente se un'applicazione esegue attività imprevista e non autorizzata. 
     
@@ -84,9 +96,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Versione di Office 365 Cloud App sicurezza 119
 
- *Rilasciato 1 aprile 2018* 
+*Rilasciato 1 aprile 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**: 
+**Rilascio con [Microsoft Cloud App Security versione 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**: 
   
 - **Miglioramenti al Cloud individuazione**. L'individuazione del Cloud vengono fornite ulteriori informazioni sugli utenti principali e gli indirizzi IP, facilitando per visualizzare i dettagli di utilizzo relativi a Office 365 e altre applicazioni. Per ulteriori informazioni, vedere [risultati di individuazione dell'esame app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md).
     
@@ -94,25 +106,25 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
   
 ## <a name="office-365-cloud-app-security-release-118"></a>Versione di Office 365 Cloud App sicurezza 118
 
- *Rilasciato 18 marzo 2018* 
+*Rilasciato 18 marzo 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 118](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**: 
+**Rilascio con [Microsoft Cloud App Security versione 118](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**: 
   
 - **Supporto barracuda**. Individuazione cloud supporta serie F Barracuda firewall e del flusso di serie F Barracuda firewall web log. 
     
 ## <a name="office-365-cloud-app-security-release-117"></a>Versione di Office 365 Cloud App sicurezza 117
 
- *Rilasciato 6 marzo 2018* 
+*Rilasciato 6 marzo 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 117](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**: 
+**Rilascio con [Microsoft Cloud App Security versione 117](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**: 
   
 - **supporta i filtri**. Individuazione cloud supporta i filtri. 
     
 ## <a name="office-365-cloud-app-security-release-116"></a>Versione di Office 365 Cloud App sicurezza 116
 
- *Rilasciato 18 febbraio 2018* 
+*Rilasciato 18 febbraio 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 116](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**: 
+**Rilascio con [Microsoft Cloud App Security versione 116](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**: 
   
 - **Miglioramenti apportati a criteri di rilevamento anomalia**. Rilevamento di anomalie in Criteri di sicurezza di Office 365 Cloud App sono stati migliorati con nuovi rilevamenti basata sullo scenario inclusi impossibili viaggi, attività da un indirizzo IP sospetto e tenta di più account di accesso non riuscito. I nuovi criteri vengono attivati automaticamente, che fornisce il rilevamento della casella rischio tra l'ambiente basato su cloud. Inoltre, i nuovi criteri di espongono i dati più dal motore di rilevamento di sicurezza di Office 365 Cloud App, che contribuisce di velocizzare il processo di analisi e include le minacce in corso. Per ulteriori informazioni, vedere l'articolo Microsoft Cloud App Security, [ottenere istantaneo analitica comportamento e rilevamento anomalia](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).
     
@@ -120,9 +132,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-114"></a>Versione di Office 365 Cloud App sicurezza 114
 
- *Rilasciato 21 gennaio 2018* 
+*Rilasciato 21 gennaio 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**: 
+**Rilascio con [Microsoft Cloud App Security versione 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**: 
   
 - **Lo stato del servizio**. È ora possibile controllare lo stato del servizio Office 365 Cloud App sicurezza corrente passando alla **Guida** \> **lo stato del sistema**. 
     
@@ -132,17 +144,17 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-113"></a>Versione di Office 365 Cloud App sicurezza 113
 
- *Rilasciati l'8 gennaio 2018* 
+*Rilasciati l'8 gennaio 2018* 
   
- **Rilascio con [Microsoft Cloud App Security versione 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
+**Rilascio con [Microsoft Cloud App Security versione 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
   
 - **Supporto di log parser per formati generici**. Parser di registro Cloud individuazione supportano ora generici formati seguenti: LEEF, il formato CEF e W3C. 
     
 ## <a name="office-365-cloud-app-security-release-112"></a>Versione di Office 365 Cloud App sicurezza 112
 
- *Rilasciato il 24 dicembre 2017* 
+*Rilasciato il 24 dicembre 2017* 
   
- **Rilascio con [Microsoft Cloud App Security versione 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
+**Rilascio con [Microsoft Cloud App Security versione 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
   
 - **Cassetto delle conoscenze pertinenti**. Nel Registro di attività, è ora possibile accedere il cassetto delle conoscenze pertinenti facendo clic su un nome utente o l'indirizzo IP. 
     
@@ -156,9 +168,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-111"></a>Versione di Office 365 Cloud App sicurezza 111
 
- *Rilasciati il 10 dicembre 2017* 
+*Rilasciati il 10 dicembre 2017* 
   
- **Rilascio con [Microsoft Cloud App Security versione 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
+**Rilascio con [Microsoft Cloud App Security versione 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
   
 - **Miglioramenti relativi alla filtro fase**. Filtri temporali sono ora più semplici da utilizzare. Per accedere a un filtro di tempo, in una visualizzazione, ad esempio registro attività, i criteri, gli avvisi, utilizzando la visualizzazione avanzata, scegliere **Data** nell'elenco dei filtri. Scegliere un'opzione, ad esempio prima, dopo o in tra per applicare il filtro di tempo. 
     
@@ -166,9 +178,9 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
   
 ## <a name="office-365-cloud-app-security-release-110"></a>Versione di Office 365 Cloud App sicurezza 110
 
- *Rilasciato il 26 novembre 2017* 
+*Rilasciato il 26 novembre 2017* 
   
- **Rilascio con [Microsoft Cloud App Security versione 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
+**Rilascio con [Microsoft Cloud App Security versione 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
   
 - **Integrazione del server SIEM ora in genere disponibile**. Connessione a Office 365 Cloud App protezione di server SIEM. È possibile inviare gli avvisi e le attività automaticamente al server SIEM della scelta configurando gli agenti SIEM. Vedere [integrazione con Office 365 Cloud App Security sul server SIEM](integrate-your-siem-server-with-office-365-cas.md).
     
@@ -178,17 +190,17 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
     
 ## <a name="office-365-cloud-app-security-release-102"></a>Versione di Office 365 Cloud App sicurezza 102
 
- *Rilasciato il 13 agosto 2017* 
+*Rilasciato il 13 agosto 2017* 
   
- **Rilascio con [Microsoft Cloud App Security versione 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
+**Rilascio con [Microsoft Cloud App Security versione 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
   
 - **Nuove azioni indagini utente** abilitare un livello aggiuntivo di drill-down per indagini utente. In una pagina indagare, è possibile al passaggio del mouse su un'attività, all'utente o account e applicarlo come filtro e da quest'ultimo, è possibile visualizzare gli eventi o attività correlate. 
     
 ## <a name="office-365-cloud-app-security-release-100"></a>Versione di Office 365 Cloud App sicurezza 100
 
- *Rilasciato il 17 luglio 2017* 
+*Rilasciato il 17 luglio 2017* 
   
- **Rilascio con [Microsoft Cloud App Security versione 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
+**Rilascio con [Microsoft Cloud App Security versione 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
   
 - **Estensioni di protezione** è un nuovo dashboard a cui è possibile gestire centralmente tutte le estensioni di protezione per Office 365 Cloud App sicurezza, tra cui i token di API e gli agenti SIEM. Per visualizzare il dashboard di estensioni di protezione, procedere come segue: 
     
