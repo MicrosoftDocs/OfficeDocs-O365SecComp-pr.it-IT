@@ -3,7 +3,6 @@ title: Visualizzare i report per la protezione rischio avanzate di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530632"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782113"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -26,7 +25,7 @@ Se l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](offic
   
 ![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-I report degli strumenti di analisi includono [relazione sullo stato di protezione rischio](view-reports-for-atp.md#advancedthreats), il [rapporto di tipi di File degli strumenti di analisi](view-reports-for-atp.md#atpfiletypes)e il [rapporto di disposizione degli strumenti di analisi del messaggio](view-reports-for-atp.md#atpmessagedisp). In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a [ulteriori report da visualizzare](view-reports-for-atp.md#addl).
+Report degli strumenti di analisi includono la relazione sullo stato di protezione rischio, il rapporto di tipi di File degli strumenti di analisi e il report di disposizione degli strumenti di analisi del messaggio. In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a ulteriori report da visualizzare.
   
 ## <a name="threat-protection-status-report"></a>Relazione sullo stato di protezione rischio
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'espansione automatica archiviazione in Office 365, che consente agli utenti con archiviazione illimitata per le cassette postali di Exchange Online. È possibile abilitare l'espansione automatica di archiviazione per l'intera organizzazione o semplicemente per utenti specifici."
-ms.openlocfilehash: 6dd49433a1692d3a0ba23af57e7e2d9544f8a2b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530218"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782153"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Abilitare l'archiviazione illimitata in Office 365 - della Guida di amministrazione
 
@@ -56,9 +56,9 @@ Anziché consentire l'espansione automatica di archiviazione per tutti gli utent
   
 Quando si abilita l'espansione automatica di archiviazione per un utente specifico, vengono apportate anche le modifiche di due configurazioni seguenti:
   
-- La quota di archiviazione per la cassetta postale di archivio principale dell'utente viene aumentata a 10 GB (da 100 GB a 110 GB).
+- La quota di archiviazione per la cassetta postale di archivio principale dell'utente viene aumentata a 10 GB (da 100 GB a 110 GB). La quota di avviso anche è aumentata a 10 GB (da 90 GB a 100 GB).
     
-- La quota di archiviazione per la cartella elementi ripristinabili nella cassetta postale principale dell'utente viene aumentata a 10 GB (anche da 100 GB a 110 GB). Questa modifica è applicabile solo se la cassetta postale in attesa.
+- La quota di archiviazione per la cartella elementi ripristinabili nella cassetta postale principale dell'utente viene aumentata a 10 GB (anche da 100 GB a 110 GB). La quota di avviso degli elementi recuperabili viene aumentata anche da 10 GB (da 90 GB a 100 GB). Queste modifiche sono applicabili solo se la cassetta postale in attesa o assegnati a un criterio di conservazione di Office 365.
     
 In questo spazio aggiuntivo viene aggiunto per evitare problemi di archiviazione che possono verificarsi prima che viene eseguito il provisioning dell'archivio di espansione automatica. Si noti che ulteriore spazio di archiviazione spazio *non è* aggiunto quando si abilita l'espansione automatica archiviazione per l'intera organizzazione, come descritto nella sezione precedente. 
   

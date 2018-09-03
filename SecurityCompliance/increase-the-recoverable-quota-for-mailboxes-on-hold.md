@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione per aumentare le dimensioni della cartella elementi recuperabili per una cassetta postale in Office 365 l'espansione automatica. "
-ms.openlocfilehash: 2e7149ef10152a11dc638c04b61a261440b539b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530325"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782093"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi recuperabili per le cassette postali in attesa
 
@@ -35,11 +35,11 @@ Per ridurre le possibilità che superano questo limite, la quota di archiviazion
 |**Quota di archiviazione totale per la cartella Elementi ripristinabili** <br/> |Illimitata  <br/> |Illimitata  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>La quota di archiviazione iniziali per la cassetta postale di archiviazione è pari a 100 GB per gli utenti con una licenza di Exchange Online (piano 2). Tuttavia, quando è attivata l'espansione automatica di archiviazione, la quota di archiviazione per l'archivio dell'utente e la cartella elementi ripristinabili dell'archivio è illimitata. Per ulteriori informazioni sull'espansione automatica di archiviazione, vedere [Overview of archiviazione illimitato in Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>La quota di archiviazione iniziali per la cassetta postale di archiviazione è pari a 100 GB per gli utenti con una licenza di Exchange Online (piano 2). Tuttavia, quando l'espansione automatica di archiviazione viene attivato per cassette postali in attesa, la quota di archiviazione sia per la cassetta postale di archiviazione e la cartella elementi recuperabili viene aumentata a 110 GB. Verrà eseguito il provisioning lo spazio di archiviazione di archiviazione aggiuntivo quando è necessario che i risultati in una quantità di spazio di archiviazione di archiviazione illimitata. Per ulteriori informazioni sull'espansione automatica di archiviazione, vedere [Overview of archiviazione illimitato in Office 365](unlimited-archiving.md). 
   
 Quando la quota di archiviazione per la cartella Elementi ripristinabili nella cassetta postale principale di una cassetta postale in blocco sta per raggiungere il limite, è possibile eseguire le operazioni seguenti:
   
-- **Abilitare la cassetta postale di archiviazione e attivare l'archiviazione l'espansione automatica** - è possibile attivare una capacità di archiviazione illimitato per la cartella elementi ripristinabili semplicemente dall'abilitazione della cassetta postale di archiviazione e quindi riattivare la caratteristica archiviazione espansione automatica di Exchange In linea. Di conseguenza 100 GB per la cartella elementi ripristinabili nella cassetta postale principale e una numero illimitata quantità di capacità di archiviazione per la cartella elementi recuperabili nell'archivio dell'utente. Vedere Procedura: [Enable cassette postali di archiviazione in Office 365 Security &amp; centro conformità](enable-archive-mailboxes.md) e [abilitare l'archiviazione illimitata in Office 365](enable-unlimited-archiving.md).
+- **Abilitare la cassetta postale di archiviazione e attivare l'archiviazione l'espansione automatica** - è possibile attivare una capacità di archiviazione illimitato per la cartella elementi ripristinabili semplicemente dall'abilitazione della cassetta postale di archiviazione e quindi riattivare la caratteristica archiviazione espansione automatica di Exchange In linea. Di conseguenza 110 GB per la cartella elementi ripristinabili nella cassetta postale principale e una numero illimitata quantità di capacità di archiviazione per la cartella elementi recuperabili nell'archivio dell'utente. Vedere Procedura: [Enable cassette postali di archiviazione in Office 365 Security &amp; centro conformità](enable-archive-mailboxes.md) e [abilitare l'archiviazione illimitata in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Dopo aver abilitato l'archivio per una cassetta postale che si avvicina al superamento della quota di archiviazione per la cartella elementi ripristinabili, è possibile eseguire l'Assistente cartelle gestite per attivare manualmente l'Assistente per elaborare la cassetta postale in modo che gli elementi scaduti vengono spostati i Cartella degli elementi ripristinabili nella cassetta postale di archivio. Per istruzioni, vedere [il passaggio 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Si noti che la nuova cassetta postale di archiviazione possono quindi essere spostati altri elementi nella cassetta postale dell'utente. È consigliabile che indica all'utente che questa situazione può verificarsi dopo aver attivato la cassetta postale di archivio. 

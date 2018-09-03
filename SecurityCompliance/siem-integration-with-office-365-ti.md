@@ -1,9 +1,8 @@
 ---
-title: Integrazione di SIEM con Office 365 Threat Intelligence
+title: Integrazione di SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,31 +11,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
-description: Integrare il server dell'organizzazione SIEM con Office 365 rischio Intelligence utilizzando l'API di gestione di Office 365 attività.
-ms.openlocfilehash: 82aeeea53bf87f1555fa68b2784b8fe38a435e15
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Integrare server SIEM dell'organizzazione con Office 365 rischio Intelligence e avanzate di protezione Threat con l'API di Gestione attività di Office 365.
+ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531055"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782143"
 ---
-# <a name="siem-integration-with-office-365-threat-intelligence"></a>Integrazione di SIEM con Office 365 Threat Intelligence
+# <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integrazione di SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate
 
-Se l'organizzazione utilizza un server di gestione (SIEM) incidente e l'evento di protezione, è possibile integrare Intelligence rischio di Office 365 con il server SIEM. In questo modo è possibile visualizzare informazioni, ad esempio malware rilevato da Office 365 rischio Intelligence, i rapporti di server SIEM.
-  
-## <a name="use-the-office-365-activity-management-api"></a>Utilizzare l'API di Gestione attività Office 365
+Se l'organizzazione utilizza un server di gestione (SIEM) incidente e l'evento di protezione, è possibile integrare Business Intelligence di Office 365 rischio e protezione rischio avanzate con il server SIEM. Integrazione SIEM consente di visualizzare informazioni, ad esempio malware rilevato da protezione avanzata di Office 365 e Business Intelligence di rischio, i rapporti di server SIEM. Per impostare l'integrazione SIEM, utilizzare l' [API di gestione delle attività di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-Per integrare Intelligence rischio di Office 365 con il server SIEM, utilizzare l'API di Gestione attività di Office 365. Questa API consente di recuperare informazioni sull'utente, amministrazione, sistema e le azioni dei criteri e gli eventi di registri delle attività di Office 365 e Azure Active Directory dell'organizzazione. 
-  
-È necessario essere un amministratore globale di Office 365 o disporre del ruolo di amministratore di sicurezza assegnato nella protezione &amp; centro conformità.
-  
-Vedere [Guida di riferimento API di attività di gestione di Office 365](https://msdn.microsoft.com/en-us/office-365/office-365-management-activity-api-reference).
-  
+L'API di gestione di Office 365 attività consente di recuperare informazioni sull'utente, amministrazione, sistema e le azioni dei criteri e gli eventi di Office 365 e i registri attività di Azure Active Directory dell'organizzazione. [Protezione rischio avanzate di Office 365 e allo schema di Business Intelligence di rischio](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-intelligence-schema) opera Intelligence rischio e/o avanzate Threat Protection, pertanto se l'organizzazione dispone di protezione di rischio avanzate ma non Intelligence rischio (e viceversa), è possibile Utilizzare la stessa API per l'integrazione del server SIEM. 
+
+Il server SIEM o un altro sistema simile deve eseguire il polling del carico di lavoro **audit.general** degli eventi di rilevamento di access. Per ulteriori informazioni, vedere [Introduzione a Office 365 Management API](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
+
+> [!IMPORTANT]
+> È necessario essere un amministratore globale di Office 365 o disporre del ruolo di amministratore di sicurezza assegnato nel centro conformità sicurezza configurare l'integrazione SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate.</br>Deve essere attivata la registrazione di controllo per l'ambiente Office 365. Per ottenere assistenza per questo, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md).
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Office 365 Threat Intelligence](office-365-ti.md)
-  
-[Protezione contro le minacce in Office 365](protect-against-threats.md)
+
+[Office 365 Advanced Threat Protection](office-365-atp.md)
+
+[Smart report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md)
   
 [Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
   

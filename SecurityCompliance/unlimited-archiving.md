@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'espansione automatica archiviazione in Office 365, che fornisce un numero illimitato di archiviazione per le cassette postali di Exchange Online.
-ms.openlocfilehash: 4fc490871c1a0142ab0f68126cce6f2a51e0f7d0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530498"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782123"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Panoramica di archiviazione illimitato in Office 365
 
-In Office 365, cassette postali di archiviazione offrono agli utenti con lo spazio di archiviazione aggiuntivi delle cassette postali. Dopo la cassetta postale di archivio dell'utente è abilitata, fino a 100 GB di spazio di archiviazione aggiuntivo è disponibile. Quando viene raggiunto la quota di archiviazione di 100 GB, le organizzazioni hanno dovuto contatta Microsoft per richiesta ulteriore spazio di archiviazione per una cassetta postale di archivio. Che non è più il caso. La nuova funzionalità di archiviazione illimitata in Office 365 (denominato espansione automatica archiviazione) offre una quantità di spazio di archiviazione di cassette postali di archiviazione illimitata. A questo punto, quando viene raggiunto la quota di archiviazione nella cassetta postale di archiviazione, Office 365 automaticamente aumenta la dimensione dell'archivio, il che significa che gli utenti non si esaurisca lo spazio di archiviazione delle cassette postali e gli amministratori non sarà necessario richiedere ulteriore spazio di archiviazione per cassette postali di archiviazione .
+In Office 365, cassette postali di archiviazione offrono agli utenti con lo spazio di archiviazione aggiuntivi delle cassette postali. Dopo la cassetta postale di archivio dell'utente è abilitata, fino a 100 GB di spazio di archiviazione aggiuntivo è disponibile. Quando viene raggiunto la quota di archiviazione di 100 GB, le organizzazioni hanno dovuto contatta Microsoft per richiesta ulteriore spazio di archiviazione per una cassetta postale di archivio. Che non è più il caso. La nuova funzionalità di archiviazione illimitata in Office 365 (denominato *espansione automatica di archiviazione*) offre una quantità di spazio di archiviazione di cassette postali di archiviazione illimitata. A questo punto, quando viene raggiunto la quota di archiviazione nella cassetta postale di archiviazione, Office 365 automaticamente aumenta la dimensione dell'archivio, il che significa che gli utenti non si esaurisca lo spazio di archiviazione delle cassette postali e gli amministratori non sarà necessario richiedere ulteriore spazio di archiviazione per cassette postali di archiviazione .
   
 Per istruzioni dettagliate per l'attivazione di espansione automatica di archiviazione, vedere [abilitare l'archiviazione illimitata in Office 365](enable-unlimited-archiving.md).
   
@@ -38,12 +38,15 @@ Ecco una rapida panoramica del processo.
   
 ![Panoramica del processo di archiviazione espansione automatica](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
   
-1. L'archiviazione è abilitata per una cassetta postale utente o una cassetta postale condivisa. Viene creata una cassetta postale di archiviazione con 100 GB di spazio di archiviazione. 
+1. L'archiviazione è abilitata per una cassetta postale utente o una cassetta postale condivisa. Viene creata una cassetta postale di archiviazione con 100 GB di spazio di archiviazione e la quota di avviso per la cassetta postale di archiviazione è impostata su 90 GB.
     
 2. Un amministratore consente l'espansione automatica di archiviazione per la cassetta postale. Quindi, quando la cassetta postale di archiviazione (inclusi la cartella elementi ripristinabili) raggiunge 90 GB, viene convertito in un archivio per l'espansione automatica e Office 365 consente di aggiungere spazio di archiviazione nell'archivio. Si noti che potrebbero essere necessari fino a 30 giorni per lo spazio di archiviazione aggiuntiva effettuare il provisioning.
     
 3. Office 365 aggiunge automaticamente uno spazio di archiviazione nell'archivio quando necessario.
   
+> [!IMPORTANT]
+> Se una cassetta postale viene messa in attesa o assegnata a un criterio di conservazione di Office 365, la quota di archiviazione per le cassette postali di archiviazione viene aumentata a 110 GB quando è abilitata l'espansione automatica archiviazione. Analogamente, la quota di avviso viene aumentata a 100 GB.
+
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Che cosa viene spostato per lo spazio di archiviazione di archiviazione aggiuntivo?
 
 Per un utilizzo efficace di espansione automatica di archiviazione, potrebbero ottenere spostare le cartelle. Office 365 determina quali cartelle è state spostate quando si aggiunge ulteriore spazio di archiviazione nell'archivio. Quando una cartella viene spostata, viene automaticamente creata una sottocartella della cartella originale nella parte archive dell'elenco delle cartelle in Outlook. Questa nuova sottocartella punta a elementi che sono stati spostati. È la convenzione di denominazione utilizzati da Office 365 per specificare nome della cartella ** \<nome della cartella\>_yyyy (creati in mmm gg, aaaa h_mm)**, dove: 
@@ -98,3 +101,7 @@ In questa sezione viene illustrata la funzionalità tra l'espansione automatica 
 - **Messaging records management (MRM)** - se si utilizzano criteri di eliminazione di gestione record di messaggistica in Exchange Online per eliminare definitivamente gli elementi scaduti cassetta postale, disponibile nell'archivio espanse automaticamente gli elementi scaduti saranno eliminate.
     
 - **Importare servizio** - è possibile utilizzare il servizio Office 365 importare per importare i file PST archivio espanso automatica dell'utente. È possibile importare fino a 100 GB di dati dal file PST alla cassetta postale di archivio dell'utente. 
+
+## <a name="more-information"></a>Ulteriori informazioni
+
+Per ulteriori informazioni tecniche sull'espansione automatica archiviazione, vedere [Office 365: domande frequenti sugli archivi espansione automatica](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
