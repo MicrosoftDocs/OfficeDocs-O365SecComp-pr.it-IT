@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'espansione automatica archiviazione in Office 365, che consente agli utenti con archiviazione illimitata per le cassette postali di Exchange Online. È possibile abilitare l'espansione automatica di archiviazione per l'intera organizzazione o semplicemente per utenti specifici."
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782153"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809701"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Abilitare l'archiviazione illimitata in Office 365 - della Guida di amministrazione
 
@@ -54,7 +54,7 @@ ms.locfileid: "23782153"
 
 Anziché consentire l'espansione automatica di archiviazione per tutti gli utenti nell'organizzazione, è possibile solo abilitarla per utenti specifici. È possibile utilizzare questo perché solo ad alcuni utenti potrebbero essere necessario per un archivio di archiviazione di grandi dimensioni.
   
-Quando si abilita l'espansione automatica di archiviazione per un utente specifico, vengono apportate anche le modifiche di due configurazioni seguenti:
+Quando si abilita l'espansione automatica archiviazione per un utente specifico e cassetta postale dell'utente in attesa o assegnati a un criterio di conservazione di Office 365, vengono apportate le modifiche di due configurazioni seguenti:
   
 - La quota di archiviazione per la cassetta postale di archivio principale dell'utente viene aumentata a 10 GB (da 100 GB a 110 GB). La quota di avviso anche è aumentata a 10 GB (da 90 GB a 100 GB).
     
