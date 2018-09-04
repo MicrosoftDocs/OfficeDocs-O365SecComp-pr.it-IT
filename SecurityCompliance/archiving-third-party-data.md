@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Gli amministratori possono importare dati di terze parti da piattaforme di social networking, piattaforme di messaggistica immediate e le piattaforme di collaborazione documento alle cassette postali nell'organizzazione Office 365. Consente di archiviare dati provenienti da origini dati, Twitter e Facebook in Office 365. È possibile appply funzionalità di conformità di Office 365 (ad esempio, conservazione a fini giudiziari, ricerca contenuto e i criteri di conservazione) ai dati di terze parti.
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809711"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827090"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archiviazione dei dati di terze parti in Office 365
 
@@ -636,7 +636,7 @@ Ecco la procedura per accedere e accettare la richiesta per registrare il connet
 1. Accedere a [questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e accedere utilizzando le credenziali di un amministratore globale di Office 365.<br/><br/>Viene visualizzata la finestra di dialogo seguente. È possibile espandere accenti circonflessi per esaminare le autorizzazioni assegnate al connettore.<br/><br/>![Viene visualizzata la finestra di dialogo di richiesta di autorizzazioni](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. Fare clic su **Accept**.
 
-Dopo aver accettato la richiesta, viene visualizzato il [dashboard portale Azure](https://portal.azure.com) . Per visualizzare l'elenco delle applicazioni per l'organizzazione, fare clic su **Azure Active Directory** > **applicazioni aziendali**. Il connettore di dati di terze parti di Office 365 è elencato nella blade **applicazioni aziendali** .
+Dopo aver accettato la richiesta, viene visualizzato il [portale di Azure](https://portal.azure.com) . Per visualizzare l'elenco delle applicazioni per l'organizzazione, fare clic su **Azure Active Directory** > **applicazioni aziendali**. Il connettore di dati di terze parti di Office 365 è elencato nella blade **applicazioni aziendali** .
 
 > [!IMPORTANT]
 > Dopo 30 settembre 2018, dati di terze parti non sono più da importare nelle cassette postali nell'organizzazione non registrare un connettore di dati di terze parti in Azure Active Directory. Nota esistenti di connettori di terze parti dati, ovvero creato prima del 30 settembre 2018, deve essere registrata anche in Azure Active Directory tramite la procedura descritta nel passaggio 5.

@@ -3,21 +3,18 @@ title: Configurare i criteri anti-phishing ATP di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.prod: office-online-server
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protezione anti-phishing degli strumenti di analisi, parte di Office 365 avanzate Threat Protection, consentono di proteggere l'organizzazione da attacchi dannosi phishing basato su rappresentazione e altri attacchi di phishing. Se si è un amministratore di protezione o di Office 365 modello globale dell'organizzazione, è possibile impostare i criteri di anti-phishing degli strumenti di analisi. Il phishing di attacchi in una vasta gamma di moduli di attacchi basati su merce destinazione spear phishing o whaling. Con la complessità crescente è difficile per anche una formazione occhio identificare alcuni di questi attacchi sofisticati. Fortunatamente, può contribuire a Office 365 avanzate Threat Protection. È possibile impostare i criteri di anti-phishing degli strumenti di analisi per contribuire a garantire che l'organizzazione è protetto contro gli attacchi descritti.
-ms.openlocfilehash: 73bcc148f3bd4f0700020c147cfa9cbb2734bc34
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2f2258c4059d17410fd040782d7ee9dfca12576d
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531117"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827080"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP di Office 365
 
@@ -28,11 +25,11 @@ ms.locfileid: "22531117"
   
 cosa fare:
   
-1. [Verificare i prerequisiti](set-up-atp-anti-phishing-policies.md#phishprereq)
+1. [Verificare i prerequisiti](#review-the-prerequisites)
     
-2. [Informazioni sulle opzioni di criteri di anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md#phishpolicyoptions)
+2. [Informazioni sulle opzioni di criteri di anti-phishing degli strumenti di analisi](#learn-about-atp-anti-phishing-policy-options)
     
-3. [Configurare un criterio di protezione anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md#addphishpolicy)
+3. [Configurare un criterio di protezione anti-phishing degli strumenti di analisi](#set-up-an-atp-anti-phishing-policy)
     
 ## <a name="review-the-prerequisites"></a>Verificare i prerequisiti
 
@@ -47,7 +44,6 @@ cosa fare:
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.
     
 ## <a name="set-up-an-atp-anti-phishing-policy"></a>Configurare un criterio di protezione anti-phishing degli strumenti di analisi
-<a name="addphishpolicy"> </a>
 
 Aggiungere, modificare ed eliminare i criteri anti-phishing degli strumenti di analisi in Office 365 Security &amp; centro conformità.
   
@@ -65,30 +61,29 @@ Aggiungere, modificare ed eliminare i criteri anti-phishing degli strumenti di a
     
     Verrà avviata una procedura guidata che i passaggi per la definizione di criteri di anti-phishing.
     
-5. Specificare il nome, descrizione e le impostazioni per il criterio. Per ulteriori informazioni, vedere [informazioni sulle opzioni dei criteri anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) . 
+5. Specificare il nome, descrizione e le impostazioni per il criterio. Per ulteriori informazioni, vedere [informazioni sulle opzioni dei criteri anti-phishing degli strumenti di analisi](#learn-about-atp-anti-phishing-policy-options) . 
     
 6. Leggere le impostazioni, scegliere **Crea questo criterio** o **Salva** come appropriato. 
     
 ## <a name="learn-about-atp-anti-phishing-policy-options"></a>Informazioni sulle opzioni di criteri di anti-phishing degli strumenti di analisi
-<a name="phishpolicyoptions"> </a>
 
 Come si consente di impostare o modificare i criteri di anti-phishing degli strumenti di analisi, è possibile scegliere tra diverse opzioni, come descritto nella tabella riportata di seguito:
   
 |**Questa impostazione**|**Produce questo risultato**|**Utilizzare quando si desidera:**|
 |:-----|:-----|:-----|
-|**Aggiungere utenti per la protezione** <br/> |Definisce le quali gli indirizzi di posta elettronica saranno protetti dal criterio. È possibile aggiungere un massimo di 20 indirizzi interni ed esterni che si desidera impedire la rappresentazione.  <br/> |Quando si desidera verificare che la posta all'esterno dell'organizzazione non è una rappresentazione di uno degli utenti nell'elenco degli utenti che si desidera proteggere. Esempi di utenti che è possibile proteggere sono dirigenti di alto livello, titolari, esterni scheda membri e così via.<br/> In questo elenco di utenti protetti è diverso dall'elenco di utenti cui applica il criterio, oppure piuttosto, per cui viene applicato il criterio. Definire il si applica all'elenco nella sezione **applicata a** delle opzioni dei criteri.<br/> Ad esempio, se si aggiungono Mary Smith \<marys@contoso.com\> come utente per la protezione, quindi applicare i criteri per il gruppo "tutti gli utenti". In tal modo che un messaggio che veniva visualizzato per rappresentare "Mario Rossi" inviato a un utente al gruppo "Tutti gli utenti" sarebbe applicato dal criterio.<br/> |
+|**Aggiungere utenti per la protezione** <br/> |Definisce le quali gli indirizzi di posta elettronica saranno protetti dal criterio. È possibile aggiungere fino a 60 indirizzi interni ed esterni che si desidera impedire la rappresentazione.  <br/> |Quando si desidera verificare che la posta all'esterno dell'organizzazione non è una rappresentazione di uno degli utenti nell'elenco degli utenti che si desidera proteggere. Esempi di utenti che è possibile proteggere sono dirigenti di alto livello, titolari, esterni scheda membri e così via.<br/> In questo elenco di utenti protetti è diverso dall'elenco di utenti cui applica il criterio, oppure piuttosto, per cui viene applicato il criterio. Definire il si applica all'elenco nella sezione **applicata a** delle opzioni dei criteri.<br/> Ad esempio, se si aggiungono Mary Smith \<marys@contoso.com\> come utente per la protezione, quindi applicare i criteri per il gruppo "tutti gli utenti". In tal modo che un messaggio che veniva visualizzato per rappresentare "Mario Rossi" inviato a un utente al gruppo "Tutti gli utenti" sarebbe applicato dal criterio.<br/> |
 |**Aggiunta di domini per la protezione** <br/> |Consente di scegliere i domini che si desidera impedire la rappresentazione. È possibile specificare che il criterio sono inclusi tutti i domini personalizzati, un elenco separato da virgole dei domini o una combinazione delle due configurazioni. Se si sceglie di **includere automaticamente i domini che proprietari**e in seguito si aggiunge un dominio all'organizzazione di Office 365, questi criteri anti-phishing sarà sul posto per il nuovo dominio.<br/> |Ogni volta che si desidera verificare che la posta proveniente da all'esterno dell'organizzazione non è una rappresentazione di uno dei domini definiti nell'elenco dei domini verificati o di un dominio partner.  <br/> |
 |**Scegliere azioni** <br/> |Scegliere l'azione da eseguire quando Office 365 rileva un tentativo di rappresentazione per gli utenti e i domini che aggiunti al criterio. È possibile scegliere azioni diverse per gli utenti e i domini negli stessi criteri di anti-phishing. Queste operazioni si applicano a qualsiasi messaggio di posta elettronica in arrivo che è stato identificato da Office 365 come un account utente di rappresentazione o dominio con la protezione di questi criteri anti-phishing.<br/> **Messaggi in quarantena** Messaggio di posta elettronica verrà inviata alla quarantena di Office 365. Quando si sceglie questa opzione, il messaggio di posta elettronica non verrà inviato al destinatario originale.<br/> **Reindirizzare i messaggi a un altro indirizzo di posta elettronica** Messaggio di posta elettronica verrà inviato all'indirizzo specificato. È possibile specificare più indirizzi di posta elettronica. Quando si sceglie questa opzione, il messaggio di posta elettronica non verrà inviato al destinatario originale.<br/> **Spostare il messaggio nella cartella posta indesiderata per i destinatari** Messaggio di posta elettronica verrà inviato alla cartella posta indesiderata per i destinatari. Quando si sceglie questa opzione, il messaggio di posta elettronica ancora inviato al destinatario originale ma non viene inserito nella cartella Posta in arrivo del destinatario.<br/> **Recapitare il messaggio e aggiungere altri indirizzi per il campo Ccn** Messaggio di posta elettronica viene recapitato al destinatario originale. Inoltre, gli utenti che si identifica verranno aggiunto alla riga Ccn del messaggio prima del recapito. Quando si sceglie questa opzione, il messaggio di posta elettronica viene comunque inviato alla posta in arrivo del destinatario originario.<br/> **Non applica alcuna azione** Messaggio di posta elettronica devono essere recapitato posta in arrivo del destinatario originario. Verrà eseguita alcuna azione altre nel messaggio di posta elettronica.<br/> **Attivare i suggerimenti di protezione anti-phishing** Abilita suggerimenti sulla protezione anti-phishing sicurezza nel messaggio di posta elettronica.  <br/> |Se si desidera eseguire un'azione sui messaggi che Office 365 ha determinato da una rappresentazione di un utente o un dominio definito nel criterio.  <br/> |
 |**Abilitare intelligence delle cassette postali** <br/> |Abilita o disabilita business intelligence della cassetta postale per questo criterio. È possibile abilitare solo intelligence cassetta postale basata sul cloud per gli account di, vale a dire, gli account di cui è in hosting interamente in Office 365.  <br/> |Se si desidera migliorare i risultati di rappresentazione per utenti in base al mapping dei singoli mittenti di ogni utente. Business intelligence della cassetta postale è basata sugli utenti di inviare e ricevere la posta. Questo intelligence consente a Office 365 personalizzare i criteri di rappresentazione a livello di utente per gestire meglio falsi positivi risultati.  <br/> |
 |**Aggiungere domini e mittenti attendibili** <br/> |Definisce gli indirizzi di posta elettronica e i domini che non verranno considerati impersonations da questo criterio. I messaggi provenienti da indirizzi di posta elettronica e i domini aggiunti come mittenti attendibili e domini non verranno mai essere classificati come un attacco basato sulla rappresentazione. Di conseguenza, le azioni e le impostazioni di questo criterio non essere applicate ai messaggi da questi mittenti e domini.  <br/> |Quando gli utenti interagiscono con i domini o utenti che attivano la rappresentazione, ma sono considerati attendibili. Ad esempio, se un partner dispone stesso/simile visualizzare nome o il nome di dominio con un account utente definito nell'elenco.  <br/> |
 |**Applicato a** <br/> |Definisce i destinatari il cui messaggi di posta elettronica in arrivo saranno soggette alle regole del criterio. È possibile creare condizioni ed eccezioni per i destinatari associati al criterio.  <br/> Ad esempio, è possibile creare un criterio globale per l'organizzazione applicando la regola a tutti i destinatari nel dominio.  <br/> È inoltre possibile creare le regole di eccezione, ad esempio una regola che non analizza i messaggi di posta elettronica per un gruppo di destinatari specifico.  <br/> |Ogni criterio deve essere associato a un insieme di utenti, ad esempio, gli utenti in un dominio o gruppo specifico.  <br/> |
+|**Soglie phishing avanzate** <br/> |Definisce il livello delle impostazioni per la modalità di gestione dei messaggi di phishing.  <br/> **Standard** Messaggio di posta elettronica sospettata da per attività di phishing viene gestito in modo tradizionale.  <br/> **Aggressivo** Messaggio di posta elettronica sospetto a essere per attività di phishing con un'elevata o molto elevato livello di probabilità vengono gestite dal sistema nello stesso modo.  <br/> **Livello di protezione** Messaggio di posta elettronica sospetto a essere per attività di phishing con medio, alto, o molto elevato livello di probabilità vengono gestite dal sistema nello stesso modo.  <br/> **Più aggressivo** Messaggio di posta elettronica sospetto per attività di phishing con un basso, medio, elevato o molto elevato livello di probabilità di essere vengono gestite dal sistema nello stesso modo.  <br/> |Se si desidera utilizzare maggiormente trattamento dei messaggi di phishing potenzialmente in Office 365. Ad esempio, i messaggi con un elevato probabilità di essere per attività di phishing avranno le azioni più aggressive eseguite su di essi, mentre i messaggi con una probabilità bassa sono meno aggressive azioni intraprese su di essi. Questa impostazione influisce anche sulle altre parti del sistema di filtro che combinano i segnali tra loro. Aumenta la possibilità di spostamento dei messaggi di una buona il livello di aumentare le impostazioni.  <br/> |
    
 Dopo che l'organizzazione sono stati configurati criteri anti-phishing degli strumenti di analisi, è possibile visualizzare come il servizio sta visualizzando i [report per la protezione avanzata di rischio](view-reports-for-atp.md).
   
 ## <a name="example-anti-phishing-policy-to-protect-a-user-and-a-domain"></a>Esempio: Criteri di Anti-phishing per proteggere un utente e un dominio
-<a name="phishpolicyoptions"> </a>
 
-In questo esempio viene configurato un criterio denominato "Dominio e CEO" che fornisce l'utente e la protezione di dominio da rappresentazione e quindi viene applicato il criterio di tutta la posta elettronica ricevuta per gli utenti nel dominio contoso.com. L'amministratore della sicurezza ha rilevato che il criterio deve soddisfare questi requisiti aziendali:
+Questo esempio viene configurato un criterio denominato "Dominio e CEO" assicurata da rappresentazione dell'utente e dominio e quindi viene applicato il criterio per tutta la posta elettronica ricevuta da parte di utenti all'interno del dominio `contoso.com`. L'amministratore della sicurezza ha rilevato che il criterio deve soddisfare questi requisiti aziendali:
   
 - I criteri devono essere fornisce una protezione per l'amministratore delegato del dominio e account di posta elettronica.
     
@@ -105,13 +100,12 @@ L'amministratore di protezione di Contoso potrebbe utilizzare valori simile al s
 |Descrizione  <br/> |Verificare che il dominio e amministratore delegato non sono rappresentati.  <br/> |
 |Aggiungere utenti per la protezione  <br/> |Indirizzo di posta elettronica dell'amministratore delegato minimo.  <br/> |
 |Aggiunta di domini per la protezione  <br/> |Il dominio dell'organizzazione che include l'ufficio di amministratore delegato.  <br/> |
-|Scegliere azioni  <br/> |Se il messaggio di posta elettronica viene inviato da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica** e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza, ad esempio securityadmin@contoso.com.  <br/> Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere i **messaggi in quarantena**.  <br/> |
+|Scegliere azioni  <br/> |Se il messaggio di posta elettronica viene inviato da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica** e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza, ad esempio `securityadmin@contoso.com`.  <br/> Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere i **messaggi in quarantena**.  <br/> |
 |Business intelligence della cassetta postale  <br/> |Per impostazione predefinita, business intelligence della cassetta postale è selezionata quando si crea un nuovo criterio di protezione anti-phishing. Lasciare l'impostazione **su** per ottenere risultati ottimali.<br/> |
 |Aggiungere domini e mittenti attendibili  <br/> |In questo esempio, non definire le sostituzioni.  <br/> |
-|Applicato a  <br/> |Selezionare **il dominio del destinatario**. In **ognuno di questi elementi**, seleziona **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome di dominio, ad esempio contoso.com, nell'elenco e quindi scegliere **Aggiungi**. Selezionare **Fine**.<br/> |
+|Applicato a  <br/> |Selezionare **il dominio del destinatario**. In **ognuno di questi elementi**, seleziona **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome di dominio, ad esempio `contoso.com`, nell'elenco e quindi scegliere **Aggiungi**. Selezionare **Fine**.<br/> |
    
 ## <a name="delete-an-atp-anti-phishing-policy"></a>Eliminare un criterio di protezione anti-phishing degli strumenti di analisi
-<a name="phishpolicyoptions"> </a>
 
 È possibile aggiungere e modificare i criteri di sicurezza &amp; centro conformità. È consigliabile utilizzare la sicurezza &amp; centro conformità per visualizzare o modificare i criteri degli strumenti di analisi.
   
@@ -124,7 +118,6 @@ L'amministratore di protezione di Contoso potrebbe utilizzare valori simile al s
 4. Nella pagina **protezione Anti-phishing** , selezionare il nome del criterio nell'elenco visualizzato nella pagina **protezione Anti-phishing** . Nella pagina visualizzata scegliere **eliminare criteri**. Consentire fino a 30 minuti per le modifiche apportate da distribuire a tutti i centri dati di Office 365.
     
 ## <a name="related-topics"></a>Argomenti correlati
-<a name="phishpolicyoptions"> </a>
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
@@ -132,11 +125,7 @@ L'amministratore di protezione di Contoso potrebbe utilizzare valori simile al s
   
 [Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   
-[Collegamenti sicuri degli strumenti di analisi in Office 365](atp-safe-links.md)
-  
 [Impostare i criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Allegati sicuri degli strumenti di analisi in Office 365](atp-safe-attachments.md)
   
 [Impostare i criteri di sicurezza degli allegati degli strumenti di analisi in Office 365](set-up-atp-safe-attachments-policies.md)
   
