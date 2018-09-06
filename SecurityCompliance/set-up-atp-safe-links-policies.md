@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839976"
+ms.locfileid: "23848086"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -49,9 +49,11 @@ Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modi
 
 - Verificare che l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md).
     
-- Verificare di disporre i necessari [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+- Verificare di disporre delle autorizzazioni necessarie per definire o modificare i criteri degli strumenti di analisi. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
     
 - [Informazioni sulle opzioni dei criteri degli strumenti di analisi collegamenti sicuri](#learn-about-atp-safe-links-policy-options) (in questo articolo). 
+
+- Verificare che i client di Office siano configurati per utilizzare [L'autenticazione moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
     
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.
     

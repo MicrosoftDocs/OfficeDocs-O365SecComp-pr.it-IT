@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: 24960aa20d2870c7aea37a4b76f1792de21f6b5b
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 34e32038cd5718ca3399fc65aae11adfeb0f4ee0
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839946"
+ms.locfileid: "23848076"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri ATP di Office 365
 
@@ -96,7 +96,7 @@ Le caratteristiche degli strumenti di analisi collegamenti attendibili sono atti
   
 - **Vengono impostati i criteri degli strumenti di analisi collegamenti sicuri** per la posta elettronica e per i documenti di Word, Excel, PowerPoint e Visio. Vedere [impostazione dei criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md).
 
-- **Applicazioni client di office 365 sono configurate per utilizzare l'autenticazione moderno** con Azure Active Directory autenticazione Library. Per ulteriori informazioni, vedere [Moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016). 
+- **Applicazioni client di office 365 sono configurate per utilizzare l'autenticazione moderno**. Per ulteriori informazioni, vedere [Moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016). 
     
 - **Gli utenti hanno effettuato l'accesso a Office 365** utilizzando il proprio account di lavoro o della scuola. Vedere [accesso a Office o Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).
     
