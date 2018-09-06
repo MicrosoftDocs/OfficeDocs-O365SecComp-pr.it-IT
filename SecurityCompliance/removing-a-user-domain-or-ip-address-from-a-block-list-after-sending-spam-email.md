@@ -3,7 +3,7 @@ title: Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocc
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: "Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, l'invio di messaggi da tale utente verrà bloccato. "
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002599"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839110"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata
 
@@ -35,27 +35,19 @@ Non solo ai domini di servizio, ma i siti Web specifici, possono essere bloccati
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>Sbloccare un account di posta elettronica di Office 365
 
-Completare questa attività nell'interfaccia di amministrazione di Exchange (EAC). Vedere [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) per informazioni dettagliate sui EAC. 
-  
-> [!NOTE]
-> A meno che non si è all'interno di EAC per Exchange Online, non verrà visualizzato alcun centro notifiche. 
-  
-1. In EAC, accedere a **protezione** \> **Centro**.
+Completare questa attività nel centro conformità (SCC) protezione di Office 365. Per ulteriori informazioni su controllo del codice sorgente, [passare alla sicurezza di Office 365 centro conformità](go-to-the-securitycompliance-center.md) .
+
+1. Utilizzo di un ufficio o della scuola dell'account che disponga di privilegi di amministratore globale di Office 365, accedere a Centro connessioni di Office 365 sicurezza e conformità e nell'elenco a sinistra espandere **Threat Management**, scegliere **Rivedi**e quindi fare clic su **con restrizioni Gli utenti**.
     
-    ![Passare al centro notifiche nell'interfaccia di amministrazione di Exchange](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. Selezionare l'icona **Cerca** e immettere l'indirizzo SMTP dell'utente bloccato. 
-    
-    ![Ricerca di un utente bloccato nel centro notifiche](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. Fare clic su **Sblocca account** nel riquadro Descrizione. 
-    
-    ![Sblocco di un utente nel centro notifiche](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. Fare clic su **Sì** per confermare la modifica. 
+    > [!TIP]
+    > Per passare direttamente alla pagina **Utenti con restrizioni** per la protezione &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. In questa pagina sarà incluse nell'elenco di utenti che sono stati bloccati di inviare posta elettronica esterni all'organizzazione.  Sono disponibili uno o più utenti che si desidera rimuovere le restrizioni e quindi fare clic su **Sblocca**.
+
+3. Fare clic su **Sì** per confermare la modifica. 
     
 > [!NOTE]
-> Esiste un limite per il numero di volte in cui un account può essere sbloccato dall'amministratore del tenant. Se tale limite è stato superato per un utente, viene visualizzato un messaggio di errore. Contattare il supporto per sbloccare l'utente. 
+> Non vi è un limite al numero di volte in cui è possibile sbloccare un account per l'amministrazione tenant. Se è stato superato il limite per un utente, viene visualizzato un messaggio di errore. È quindi necessario contattare il supporto per sbloccare l'utente. 
   
 ## <a name="third-party-block-lists"></a>Elenchi di blocco di terze parti
 

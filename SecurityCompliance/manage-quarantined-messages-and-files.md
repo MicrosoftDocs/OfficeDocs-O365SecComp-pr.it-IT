@@ -3,7 +3,7 @@ title: Gestire i messaggi in quarantena e i file in qualità di amministratore i
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Come un amministratore può visualizzare, rilasciare e segnalare i messaggi in quarantena falsi positivi in Office 365. È possibile impostare i criteri in modo che filtra i messaggi di Office 365 e li invia in quarantena per diverse ragioni: perché che sono stati identificati come posta indesiderata, blocco, phishing, malware o perché sono corrispondenti a una regola di flusso di posta elettronica. '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530851"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839100"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365
 
@@ -34,7 +34,7 @@ Per impostazione predefinita, Office 365 invia messaggi di phishing e messaggi c
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Visualizzare i messaggi in quarantena dell'organizzazione
 
-1. Utilizzando un account di lavoro o della scuola con privilegi di amministratore globale in 365organization l'ufficio, accedere a Office 365 e [passare a Centro connessioni di sicurezza e conformità](go-to-the-securitycompliance-center.md).
+1. Utilizzo di un account di lavoro o della scuola con privilegi di amministratore globale dell'organizzazione Office 365, accedere a Office 365 e [passare a Centro connessioni di sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
 2. Nell'elenco a sinistra espandere **Threat Management**, scegliere **Rivedi**e quindi scegliere **quarantena**.
     

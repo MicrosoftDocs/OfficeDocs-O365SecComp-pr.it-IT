@@ -3,7 +3,7 @@ title: Panoramica della sicurezza di dashboard
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Utilizzare il nuovo Dashboard di sicurezza per esaminare lo stato di protezione rischio di Office 365, visualizzare e agire avvisi di protezione.
-ms.openlocfilehash: e6b8aaf23f4af707c1af3ad9b479a9ce119f4752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530267"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839080"
 ---
 # <a name="security-dashboard-overview"></a>Panoramica della sicurezza di dashboard
 
