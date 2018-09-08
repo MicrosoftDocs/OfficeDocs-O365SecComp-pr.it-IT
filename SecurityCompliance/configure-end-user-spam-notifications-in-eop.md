@@ -3,7 +3,6 @@ title: Configurazione delle notifiche di posta indesiderata dell'utente finale i
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: È possibile configurare le notifiche di posta indesiderata degli utenti finali per il criterio di filtro del contenuto a livello dell'azienda o per i criteri di filtro del contenuto personalizzati applicati ai domini.
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002925"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875798"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in EOP
   
@@ -29,7 +28,19 @@ ms.locfileid: "23002925"
   
 Le notifiche di posta indesiderata dell'utente finale contengono un elenco di tutti i messaggi di posta indesiderata messi in quarantena ricevuti dall'utente finale durante un periodo di tempo configurato. È possibile specificare un valore compreso tra 1 e 15 giorni. È inoltre possibile configurare la lingua in cui è scritto il messaggio di notifica.
   
-Dopo aver ricevuto un messaggio di notifica, gli utenti finali possono fare clic per spostare il messaggio di posta elettronica da posta indesiderata in posta in arrivo o la posta indesiderata di posta elettronica come non indesiderato, nel qual caso il rapporto verrà inviato al Team di analisi della posta indesiderata di Microsoft.
+Dopo aver ricevuto un messaggio di notifica, gli utenti finali possono scegliere tra le opzioni seguenti:
+
+**Anteprima** messaggio se si desidera visualizzare in anteprima il contenuto o l'intestazione prima dell'esecuzione di azioni.
+
+**Scaricare** il messaggio se si desidera esaminare i messaggi e allegati (se esistenti) del dispositivo prima dell'esecuzione di azioni.
+
+**Versione** se non è il messaggio di posta indesiderata e si vuole che Office 365 per inviare il messaggio alla cassetta postale.
+
+**Versione e consentire mittente** se non è il messaggio di posta indesiderata e si vuole che Office 365 per aggiungere il mittente per i mittenti attendibili e l'elenco di destinatari per messaggi di posta elettronica futuri. Tenere presente che l'amministratore può essere altre configurazioni di Consenti e blocca ampia organizzazione che sostituire l'elenco dei mittenti attendibili.
+
+**Versione & rapporto**, se non è il messaggio di posta indesiderata e si desidera inviare il messaggio alla cassetta postale e segnalare a Microsoft per l'analisi.
+
+**Blocco** se si desidera che Office 365 per aggiungere il mittente all'elenco Mittenti bloccati.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 <a name="sectionSection0"> </a>
