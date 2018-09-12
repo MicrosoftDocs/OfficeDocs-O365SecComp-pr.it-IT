@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: 2844be795eade9cfe29fbd50a5b3678680999171
-ms.sourcegitcommit: 5befdaad0f84112cb71a97fce1322579458d1622
+ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23867389"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955458"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri ATP di Office 365
 
@@ -85,6 +85,8 @@ Stiamo continuando ad aggiungere nuove caratteristiche degli strumenti di analis
 - A partire da ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL nel messaggio di posta elettronica, nonché gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint e Visio in Windows, nonché Office apps iOS e dispositivi Android. (Verificare che si sta utilizzando [l'Autenticazione moderno per Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
     
 - A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione.
+
+- A partire da giugno 2018, quando gli utenti utilizzano Outlook Web Application (OWA), degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali e visualizzare gli URL riscritto. Ciò consente agli utenti di visualizzare i collegamenti originali nel messaggio di posta elettronica. (Questa funzionalità non sono ancora disponibile per le applicazioni client di Outlook.)
     
 - A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac.
     

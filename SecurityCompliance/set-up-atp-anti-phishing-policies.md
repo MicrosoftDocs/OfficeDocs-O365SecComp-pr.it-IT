@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protezione anti-phishing degli strumenti di analisi, parte di Office 365 avanzate Threat Protection, consentono di proteggere l'organizzazione da attacchi dannosi phishing basato su rappresentazione e altri attacchi di phishing. Se si è un amministratore di protezione o di Office 365 modello globale dell'organizzazione, è possibile impostare i criteri di anti-phishing degli strumenti di analisi. Il phishing di attacchi in una vasta gamma di moduli di attacchi basati su merce destinazione spear phishing o whaling. Con la complessità crescente è difficile per anche una formazione occhio identificare alcuni di questi attacchi sofisticati. Fortunatamente, può contribuire a Office 365 avanzate Threat Protection. È possibile impostare i criteri di anti-phishing degli strumenti di analisi per contribuire a garantire che l'organizzazione è protetto contro gli attacchi descritti.
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839966"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955448"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP di Office 365
 
@@ -38,7 +38,7 @@ cosa fare:
 
 - Assicurarsi di essere membri del gruppo di ruoli **amministratori società** o **gli amministratori di sicurezza** . 
     
-- [Informazioni sulle opzioni dei criteri anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (in questo articolo). 
+- [Informazioni sulle opzioni dei criteri anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (in questo articolo). 
     
 - È probabile che verranno impostare più criteri anti-phishing degli strumenti di analisi per l'organizzazione. Office 365 consente di applicare questi criteri nell'ordine sono elencate nella pagina **degli strumenti di analisi anti-phishing** in sicurezza &amp; centro conformità. Dopo che è stato rivisto le opzioni dei criteri, richiedere tempo per determinare quanti criteri necessari e la priorità per ognuno. 
     
