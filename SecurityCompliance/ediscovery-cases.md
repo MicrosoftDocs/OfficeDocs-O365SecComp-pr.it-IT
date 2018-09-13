@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare la protezione di Office 365 &amp; centro conformità per creare e gestire casi di eDiscovery nell'organizzazione. È possibile assegnare i membri per il caso, inserire i contenuti posizioni in attesa, eseguire la ricerca del contenuto associato il caso e l'esportazione risultati di ricerca. È inoltre possibile preparare i dati maiuscole per un'ulteriore analisi di eDiscovery avanzate.
-ms.openlocfilehash: 6f81c4296ea7455a781b02a25d065304a2a3a087
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531137"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965273"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casi di eDiscovery in Office 365 Security &amp; centro conformità
 
@@ -76,7 +76,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
   
  **Per assegnare autorizzazioni di eDiscovery:**
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
     
@@ -94,7 +94,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
 
 Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere membri del gruppo di ruoli eDiscovery responsabili di creare casi di eDiscovery. Come precedentemente illustrato, dopo aver creato un nuovo caso nella protezione &amp; centro conformità, si (e gli altri membri maiuscole) saranno in grado di accesso che stesso caso di eDiscovery avanzate se si è organizzazione dispone di una sottoscrizione di Office 365 E5.
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
     
@@ -113,7 +113,7 @@ Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere 
 
 Dopo aver creato un nuovo caso, il passaggio successivo è per aggiungere membri al caso. Spiegato come precedente, solo gli utenti sono membri del revisore o gruppi di ruoli di gestione di eDiscovery possono essere aggiunti come membri del caso. Si noti che il Manager che ha creato il caso di eDiscovery viene aggiunto automaticamente come un membro.
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic sul nome del case che si desidera aggiungere i membri.
     
@@ -124,6 +124,9 @@ Dopo aver creato un nuovo caso, il passaggio successivo è per aggiungere membri
 3. In **Gestisci membri**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Add** per aggiungere membri al caso. 
     
     È anche possibile scegliere di aggiungere un gruppo di ruoli al caso. In **Gestisci gruppi di ruoli**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Add**.
+    
+    > [!NOTE]
+    > Controllo di gruppi di ruoli che è possibile assegnare i membri a un caso eDiscovery. Ciò significa che è possibile assegnare solo i gruppi di ruoli che si sono un membro di un caso.
     
 4. Nell'elenco dei gruppi di utenti o il ruolo che possono essere aggiunti come membri del caso, selezionare la casella di controllo accanto ai nomi dei gruppi di utenti o il ruolo che si desidera aggiungere.
     
@@ -151,7 +154,7 @@ Quando si crea un'esenzione, sono disponibili le opzioni seguenti per definire l
   
 Per creare un'esenzione per un caso eDiscovery:
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic su **Apri** accanto al caso in cui si desidera creare l'archiviazione in. 
     
@@ -227,7 +230,7 @@ Tenere presenti sulle statistiche di attesa i seguenti aspetti:
 
 Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso sono messi in attesa, è possibile creare ed eseguire una o più ricerche di contenuto associati a caso. Contenuto ricerche associate a un caso non siano elencate nella pagina di **ricerca** nella protezione &amp; centro conformità. Ciò significa che le ricerche del contenuto associate a un caso è accessibile solo da maiuscole membri che fanno parte del gruppo di ruoli di gestione di eDiscovery. 
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic su **Apri** accanto al caso in cui si desidera creare una ricerca nel contenuto. 
     
@@ -299,7 +302,7 @@ Dopo l'esecuzione di una ricerca, è possibile esportare i risultati della ricer
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Esportare i risultati di una singola ricerca associato a un caso
 
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic su **Apri** accanto al caso in cui si desidera esportare ricerca dal. 
     
@@ -333,7 +336,7 @@ Come alternativa per esportare i risultati di una singola ricerca del contenuto 
 > [!NOTE]
 > Non è possibile esportare i risultati delle ricerche più se uno di tali ricerche sia stato configurato per tutto il contenuto sociale di ricerca. esportare solo i risultati delle ricerche più per le ricerche associati a un caso eDiscovery. Non è possibile esportare i risultati delle ricerche più elencate nella pagina di **ricerca del contenuto** per la protezione &amp; centro conformità. 
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Accanto al caso in cui si desidera esportare i risultati di ricerca fare clic su **Apri** . 
     
@@ -395,7 +398,7 @@ Quando si prepara i risultati della ricerca eDiscovery avanzata, la funzionalit�
 > [!NOTE]
 > Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi di eDiscovery avanzate fare clic su **Apri** . 
     
@@ -425,9 +428,9 @@ Quando si prepara i risultati della ricerca eDiscovery avanzata, la funzionalit�
 
 Dopo aver creato un caso nella protezione &amp; centro conformità, è possibile accedere allo stesso caso di eDiscovery avanzate.
   
-Per passare a un caso di eDiscovery avanzate:
+Per accedere a un caso in Advanced eDiscovery:
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Accanto al caso in cui si desidera passare a eDiscovery avanzate fare clic su **Apri** . 
     
@@ -462,7 +465,7 @@ Una volta completata la persona o l'indagine supportate da un caso di eDiscovery
     
 Per chiudere un caso:
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic sul nome del case che si desidera chiudere.
     
@@ -486,7 +489,7 @@ Per chiudere un caso:
 
 Quando viene riaperto un caso, qualsiasi esenzioni che erano presenti al momento è stata chiusa il caso non vengono ripristinati automaticamente. Dopo il caso viene riaperto, sarà necessario passare alla pagina **conservazione** e attivare l'archiviazione precedente. Per attivare un'esenzione, selezionarlo e fare clic su **attivarlo** nel riquadro dei dettagli. 
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Fare clic sul nome del case che si desidera riaprire.
     

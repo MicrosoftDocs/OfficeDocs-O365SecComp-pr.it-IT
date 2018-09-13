@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando non più necessaria mantenere il contenuto di una cassetta postale inattiva di Office 365, è possibile eliminare definitivamente la cassetta postale inattiva rimuovendo l'attesa. Dopo aver rimosso il blocco, cassette postali inattive sono contrassegnata per l'eliminazione e viene eliminata definitivamente dopo l'elaborazione.
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530272"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965253"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminare una cassetta postale inattiva in Office 365
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. In EAC, andare a **Gestione conformità** \> **In-Place eDiscovery &amp; attesa**.
     
-<<<<<<< HEAD
 3. Selezionare l'archiviazione sul posto da eliminare e quindi fare clic su **Modifica** ![sull'icona Modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-=======
-3. Selezionare In-Place Hold che si desidera eliminare e quindi fare clic su **Modifica**. [Icona Modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
->>>>>>> conversione markjjo
     
 4. Nella **In-Place eDiscovery &amp; attesa** le proprietà di pagina, fare clic su **Archiviazione sul posto**, deselezionare la casella di controllo **contenuto locale che corrispondono alla query di ricerca di cassette postali selezionate in attesa** e quindi fare clic su **Salva**.
     

@@ -3,7 +3,6 @@ title: Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strum
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Quando si imposta i criteri di sicurezza degli allegati degli strumenti di analisi, si sceglie recapito dinamico per evitare ritardi messaggio e consentire agli utenti di visualizzare in anteprima degli allegati che vengono analizzati.
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530205"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965243"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strumenti di analisi di
 
@@ -65,6 +64,8 @@ Esistono alcuni scenari in cui non è supportato recapito dinamico. Questi sono 
 - Cartella di ricerca delle cassette postali dell'utente che si trova nello stato di errore
     
 - Ambienti in cui un amministratore di Exchange Online è abilitato Exclaimer. (Vedere [i messaggi con allegati non vengono recapitati quando vengono utilizzati degli strumenti di analisi dinamica recapito ed Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+
+- Messaggi crittografati con Secure/Multipurpose Internet Mail Extensions ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
 ## <a name="related-topics"></a>Argomenti correlati
 
