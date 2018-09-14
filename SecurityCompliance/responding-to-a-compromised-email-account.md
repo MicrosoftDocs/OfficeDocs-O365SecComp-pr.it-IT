@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782183"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977591"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
@@ -70,6 +70,9 @@ Anche dopo che è stato rapidamente l'accesso al proprio account, l'autore dell'
 - Verificare che la password è complessa e che sia presente almeno un carattere speciale lettere maiuscole o minuscole e almeno un numero. 
 - Non riutilizzare le password ultimi cinque. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è consigliabile selezionare un elemento che non possono suppone l'autore dell'attacco.
 - Se l'identità dell'utente locale è federato con Office 365, è necessario modificare le password in locale e quindi è necessario notificare l'amministratore della violazione.
+
+> [!TIP]
+> È consigliabile abilitare l'autenticazione a più fattori (MFA) per impedirne compromesso, in particolare per account con privilegi amministrativi.  Per ulteriori informazioni [di seguito](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2 indirizzi di inoltro di posta elettronica sospetti Remove
 1. Apri il **interfaccia di amministrazione di Office 365 > utenti attivi**.
