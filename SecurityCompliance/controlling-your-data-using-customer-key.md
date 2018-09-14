@@ -1,9 +1,9 @@
 ---
-title: Controllare i dati in Office 365 tramite la Chiave cliente
+title: Controllare i dati in Office 365 con Customer Key
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 8/1/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Informazioni su come configurare chiave cliente per Office 365 per Exchange Online, Skype per Business, SharePoint Online e OneDrive for Business. Con clienti chiave, controllare le chiavi di crittografia della propria organizzazione e quindi configurare Office 365 per utilizzarli per crittografare i dati statici nei Data Center di Microsoft.
-ms.openlocfilehash: f8d7c12c32ca74b842f676f4a2ccde4d1c758361
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
+ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559231"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965610"
 ---
-# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controllare i dati in Office 365 tramite la Chiave cliente
+# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controllare i dati in Office 365 con Customer Key
 
 Con clienti chiave, controllare le chiavi di crittografia della propria organizzazione e quindi configurare Office 365 per utilizzarli per crittografare i dati statici nei centri dati di Microsoft. Dati statici includono i dati da Exchange Online e Skype for Business archiviati nelle cassette postali e i file archiviati in SharePoint Online e OneDrive for Business.
   
