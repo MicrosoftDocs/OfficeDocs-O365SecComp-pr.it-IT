@@ -5,7 +5,7 @@
 ## [Introduzione a Office 365 Secure Score](office-365-secure-score.md)
 ## [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ## [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
-## [Panoramica della Dashboard sicurezza](security-dashboard.md)
+## [Panoramica del dashboard di sicurezza](security-dashboard.md)
 ## [Installare il componente aggiuntivo Supervisione per Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
@@ -14,7 +14,7 @@
 ## [Proteggere l’accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
 ## [Scegliere tra Gestione dispositivi mobili e Intune](choose-between-mdm-and-intune.md)
 # [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
-## [Video della panoramica completa di Prevenzione della perdita dei dati](https://go.microsoft.com/fwlink/?linkid=852300)
+## [Guarda una panoramica completa sulla prevenzione della perdita dei dati](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurare Prevenzione della perdita dei dati
 ### [Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati](get-started-with-dlp-policy-recommendations.md)
 ### [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)
@@ -31,7 +31,8 @@
 ### [Video della panoramica completa sulla personalizzazione di Prevenzione della perdita dei dati](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)
 ### [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
-### [Creare un dizionario di parole chiave ](create-a-keyword-dictionary.md)
+### [Creare un dizionario di parole chiave](create-a-keyword-dictionary.md)
+### [Creare un'impronta digitale documenti](document-fingerprinting.md) 
 # Gestire la governance dei dati        
 ## [Importare dati](importing-pst-files-to-office-365.md)
 ### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
