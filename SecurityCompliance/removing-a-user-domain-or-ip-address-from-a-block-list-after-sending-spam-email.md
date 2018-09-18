@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: "Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, l'invio di messaggi da tale utente verrà bloccato. "
-ms.openlocfilehash: 8dcd6c8f55d867e1c2e249ec71a3a5c6b78ac76a
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 6665c405c62f75b77e7898419ebcfbc1c8c20f4c
+ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "23998610"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata
 
-Se un utente in modo continuo invia messaggi di posta elettronica da Office 365 classificata come posta indesiderata, essi verranno bloccate di inviare messaggi più. L'utente verrà elencato nel servizio come mittente in uscita non valido e verrà visualizzato un rapporto di mancato recapito (NDR o non è riuscito a Invia messaggio di posta elettronica) che fornisce informazioni specifiche sulle operazioni che devono eseguire per sbloccare se stessi.
+Se un utente in modo continuo invia messaggi di posta elettronica da Office 365 classificata come posta indesiderata, essi verranno bloccate di inviare messaggi più. L'utente verrà elencato nel servizio come mittente in uscita non valido e verrà visualizzato un mancato recapito rapporto di mancato recapito indicante:
+
+- Non è stato recapitato il messaggio perché non sono state riconosciute come mittente valido. La causa più comune per l'oggetto è che l'indirizzo di posta elettronica sospetta l'invio di posta indesiderata e non ha non è più consentito inviare messaggi di fuori dell'organizzazione. Per assistenza, contattare l'amministratore di posta elettronica.  Server remoto ha restituito "550 5.1.8 accesso negato, mittente in uscita non valido"
 
 È possibile configurare le impostazioni di criteri di posta indesiderata in uscita in modo che si riceve una notifica quando un utente di Office 365 impedito l'invio di posta elettronica. Dopo aver risolto il problema con la cassetta postale dell'utente, è possibile rimuovere il blocco di tale mittente.
   
@@ -63,7 +65,7 @@ Exchange Online Protection utilizza anche gli elenchi di blocco di terze parti p
 
 [Rispondere a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md)
 
-[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
