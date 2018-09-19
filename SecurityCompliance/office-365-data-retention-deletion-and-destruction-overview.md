@@ -1,9 +1,8 @@
 ---
-title: Conservazione dei dati, eliminazione e distruzione in Office 365
+title: Conservazione, eliminazione e distruzione dei dati in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,14 +11,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Panoramica di criteri di Microsoft per Office 365 sulla conservazione dei dati, eliminazione e distruzione.
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530559"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999147"
 ---
-# <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservazione dei dati, eliminazione e distruzione in Office 365
+# <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservazione, eliminazione e distruzione dei dati in Office 365
 
 ## <a name="introduction"></a>Introduzione
 Microsoft ha un criterio di gestione dati Standard per Office 365 che specifica quanto tempo i dati dei clienti verranno mantenuti dopo l'eliminazione. In generale, in Office 365, esistono due scenari in cui viene eliminati i dati dei clienti:
@@ -68,8 +67,8 @@ Microsoft offre anche un criterio Standard di gestione dei dati in grado di riso
 AT ininterrotta durante il termine di una sottoscrizione di un sottoscrittore può contattare richiesta expedited sottoscrizione deprovisioning e supporto di Microsoft. In questo processo, tutti i dati utente, ad esempio dati di SharePoint in linea, Exchange Online che potrebbero essere in attesa o archiviati nelle cassette postali inattive, viene eliminati tre giorni dopo che l'amministratore dovrà immettere il codice del blocco fornito da Microsoft. Per ulteriori informazioni su deprovisioning accelerate, vedere [annullare Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Collegamenti correlati
-- [Eliminazione dei dati di Exchange Online](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [Eliminazione dei dati di SharePoint Online](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Eliminazione dei dati di Skype for Business](/office365/enterprise/office-365-skype-data-deletion)
-- [Non modificabilità in Office 365](/office365/enterprise/office-365-data-immutability)
-- [Distruzione dei dati](/office365/enterprise/office-365-data-destruction)
+- [Eliminazione dei dati di Exchange Online](office-365-exchange-online-data-deletion.md)
+- [Eliminazione dei dati di SharePoint Online](office-365-sharepoint-online-data-deletion.md)
+- [Eliminazione dei dati di Skype for Business](office-365-skype-data-deletion.md)
+- [Capacità di immutabilità in Office 365](office-365-data-immutability.md)
+- [Distruzione dei dati](office-365-data-destruction.md)
