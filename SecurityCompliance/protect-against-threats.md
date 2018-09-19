@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Informazioni su come Office 365 Enterprise consente di proteggere l'organizzazione da una serie di rischi, tra cui lo spoofing malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530670"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011268"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione contro le minacce in Office 365
 
@@ -56,9 +56,9 @@ Configurare i criteri per gestire lo spoofing, la protezione da attacchi di phis
     
 - [Impostazione dei criteri anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md)
     
-- [Configurare i criteri dei collegamenti sicuri ATP](set-up-atp-safe-links-policies.md)
+- [Configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
     
-- [Configurare i criteri degli allegati sicuri ATP](set-up-atp-safe-attachments-policies.md)
+- [Configurare i criteri degli allegati sicuri di ATP](set-up-atp-safe-attachments-policies.md)
     
 ## <a name="encryption"></a>Crittografia
 
@@ -68,7 +68,7 @@ Ottenere un'introduzione alla crittografia, impostare i criteri di gestione dei 
     
 - [Configurare la crittografia in Office 365 Enterprise](set-up-encryption.md)
     
-- [Crittografia dei messaggi di Office 365 (OME)](ome.md)
+- [Office 365 Message Encryption (OME)](ome.md)
     
 - [Implementare portare il proprio codice (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
@@ -78,7 +78,7 @@ Monitorare e controllare l'accesso di dispositivi mobili come i dati di Office 3
   
 - [Creazione e distribuzione dei criteri di sicurezza del dispositivo](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
-- [Gestire le autorizzazioni dell'app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+- [Gestire le autorizzazioni delle app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
 ## <a name="threat-intelligence"></a>Business intelligence di rischio
 
@@ -86,8 +86,16 @@ Identificare, monitorare e valutare gli attacchi di tipo, rapidamente indirizzo 
   
 - [Panoramica di Business Intelligence di rischio di Office 365](office-365-ti.md)
     
-- [Guida introduttiva di Office 365 Threat Intelligence](get-started-with-ti.md)
+- [Introduzione a Office 365 Threat Intelligence](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>Gestione accessi con privilegi
+
+Proteggere l'organizzazione da violazioni che possono utilizzare un account con privilegi di amministratore esistenti con la condizione accesso ai dati riservati o l'accesso alle impostazioni di configurazione critico. Dopo l'abilitazione della gestione dei privilegi di accesso, gli utenti dovranno richiedere l'accesso in tempo per eseguire attività con privilegi elevate e privilegiata attraverso un flusso di lavoro di approvazione altamente con ambito e specifici.
+  
+- [Viene fornita una panoramica dei privilegi accedere a gestione](privileged-access-management-overview.md)
+    
+- [Guida introduttiva a privilegi accedere a gestione](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>Opzioni aggiuntive
 
 È possibile ottenere ulteriori informazioni sui processi che aiutano a Office 365 protette contro le minacce e le tecnologie Microsoft correlate.

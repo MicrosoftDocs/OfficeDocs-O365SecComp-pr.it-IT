@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: pagina di destinazione per la protezione dell'accesso ai dati di Office 365 e servizi
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009102"
+ms.locfileid: "24011278"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Proteggere l’accesso a dati e servizi in Office 365
 
@@ -58,7 +58,7 @@ Se si utilizza MFA di Azure Active Directory, creare una regola di accesso condi
 
 Accesso privilegiato management consente di controllare l'accesso granulare attività di amministrazione con privilegi in Office 365.  È possibile proteggere dell'organizzazione da violazioni che possono utilizzare un account con privilegi di amministratore esistenti con la condizione accesso ai dati riservati o l'accesso alle impostazioni di configurazione critici.
 
-- [Panoramica dei privilegi accedere a gestione](privileged-access-managment-overview.md)
+- [Panoramica dei privilegi accedere a gestione](privileged-access-management-overview.md)
 - [Configurare la gestione dei privilegi di accesso](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>Passaggio 5: Configurare criteri di accesso di dispositivi di SharePoint
