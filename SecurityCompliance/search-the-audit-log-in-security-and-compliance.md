@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530450"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962972"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
 
@@ -122,7 +122,7 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
   
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: Eseguire una ricerca dei registri di controllo
 
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Utilizzare una sessione di esplorazione privata (non regolare sessione) per accedere a Office 365 Security &amp; Allinea al centro conformità perché questo modo si eviteranno le credenziali che è stato eseguito l'accesso con è vietato. Per aprire una sessione di esplorazione InPrivate in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (noti come una finestra incognito), premere CTRL + MAIUSC + N. 
@@ -671,3 +671,60 @@ Di seguito sono riportati alcuni suggerimenti per la ricerca per l'attività nel
     
 - È inoltre possibile visualizzare gli eventi nel Registro di controllo di amministrazione di Exchange tramite l'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [visualizzare l'amministratore di registro di controllo](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
+## <a name="frequently-asked-questions"></a>Domande frequenti
+
+**Dove è possibile trovare informazioni sulle funzionalità offerte dal servizio di controllo in Office 365?**
+
+Per ulteriori informazioni sulle funzionalità di controllo e creazione di rapporti disponibili in Office 365, vedere [controllo e report in Office 365](office-365-auditing-and-reporting-overview.md). 
+
+**Che cosa sono i diversi servizi 365 Office che vengono controllati attualmente?**
+
+Office 365 servizi usati come Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, avanzate Threat Protection e prevenzione della perdita di dati vengono controllate. Vedere la sezione [Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) in questo articolo per un elenco completo.
+
+**Quali attività vengono controllate tramite il controllo del servizio in Office 365?**
+
+Vedere la sezione [attività Audited](#audited-activities) in questo articolo per un elenco e una descrizione delle attività che vengono controllati in Office 365.
+
+**Quanto tempo è necessario per un controllo record sia disponibile dopo un evento?**
+
+La maggior parte dei dati di controllo sono disponibili all'interno di 30 minuti, ma potrebbe richiedere fino a 24 ore dopo che si verifica un evento per la voce del Registro di controllo corrispondente da visualizzare nei risultati della ricerca. Vedere la tabella nella sezione di questo articolo che mostra il tempo che necessario per gli eventi in diversi servizi di Office 365 sia disponibile [prima di iniziare](#before-you-begin) .
+
+**Per quanto tempo verranno conservati per i record DNS controllo?**
+
+Attualmente record del Registro di controllo vengono conservati per 90 giorni. Microsoft è impegnata attivamente un piano per incrementare il limite. 
+
+**È possibile accedere il controllo dei dati a livello di programmazione?**
+
+Sì. L'API di Office 365 Gestione attività consente di recuperare i registri di controllo a livello di programmazione.  Per iniziare, vedere [Introduzione a Office 365 Management API](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+**Esistono altri modi per ottenere il controllo registri diverso da suing la protezione di Office 365 & centro conformità o l'API attività di gestione di Office 365?**
+
+No. Queste sono solo due modi per ottenere dati dal servizio controllo di Office 365. 
+
+**È necessario attivare singolarmente il controllo in ogni servizio che desidera acquisire i registri di controllo per?**
+
+Nella maggior parte dei servizi di Office 365, è abilitato il controllo per impostazione predefinita dopo avere attivato il controllo per l'organizzazione Office 365, come descritto nella sezione [prima di iniziare](#before-you-begin) in questo articolo, inizialmente. Tuttavia, è necessario abilitare il controllo di Exchange Online per ciascuna cassetta postale che si desidera controllare.   Si sta lavorando sull'attivazione del controllo delle cassette postali per impostazione predefinita per tutte le cassette postali in un'organizzazione di Office 365. Per ulteriori informazioni, vedere "controllo delle cassette postali di Exchange verrà abilitato per impostazione predefinita" nel [blog di Microsoft Security, Privacy e conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
+
+**Il supporto del servizio controllo di Office 365 deduplicazione dei record.**
+
+No. La pipeline del servizio di controllo è quasi in tempo reale e pertanto non possono supportare deduplicazione.
+ 
+**Office 365 controllo dei dati del flusso in aree geografiche.**
+
+No. Non sono controllo distribuzioni pipeline NA (Nord America), EMEA (Europa, Medio Oriente e Africa) e le aree APAC (Asia Pacifico). Tuttavia, si possono flow i dati tra queste regioni di bilanciamento del carico e soltanto dal sito live problemi. Quando si esegue queste attività, i dati in transito sono crittografati.   
+ 
+**È il controllo dati crittografati?**
+
+Controllo dei dati viene archiviato in cassette postali di Exchange (dati statici) nella stessa area in cui viene distribuita il controllo della pipeline. Questi dati non vengono crittografati. Tuttavia, dati in transito sempre viene crittografati. 
+
+
+
+
+
+
+
+
+
+
+
+
