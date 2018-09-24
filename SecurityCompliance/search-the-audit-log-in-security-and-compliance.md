@@ -3,7 +3,7 @@ title: Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformi
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962972"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974686"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
 
@@ -47,7 +47,11 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 - Attività di amministrazione e utente in Power BI per Office 365
     
 - Attività amministratore e utente in Microsoft Teams
+
+- Attività di amministratore e utente in Dynamics 365
     
+- Attività di amministratore e utente in Microsoft Flow
+
 - Attività di amministrazione e utente in Yammer
     
 - Attività di amministratore e utente Stream Microsoft
@@ -57,7 +61,7 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Office 365 Registro di controllo.
   
-- Utente (o un'altra amministrazione) necessario attivare la registrazione di controllo prima di iniziare la ricerca nel Registro di controllo di Office 365. Per attivarlo, fare clic su * * avviare la registrazione delle attività di amministrazione e utente * * nella pagina **ricerca dei registri di controllo** della protezione &amp; centro conformità. (Se non viene visualizzato questo collegamento, il controllo è già stato attivato per la propria organizzazione.) Una volta abilitata, verrà visualizzato un messaggio che informa che il Registro di controllo per la preparazione e che è possibile eseguire una ricerca di due ore dopo aver completata la preparazione. È necessario eseguire questa operazione una sola volta. 
+- Utente (o un'altra amministrazione) necessario attivare la registrazione di controllo prima di iniziare la ricerca nel Registro di controllo di Office 365. Per attivarlo, fare clic su **Avvia registrazione utente e all'attività amministratore** nella pagina **ricerca dei registri di controllo** della protezione &amp; centro conformità. (Se non viene visualizzato questo collegamento, il controllo è già stato attivato per la propria organizzazione.) Una volta abilitata, verrà visualizzato un messaggio che informa che il Registro di controllo per la preparazione e che è possibile eseguire una ricerca di due ore dopo aver completata la preparazione. È necessario eseguire questa operazione una sola volta. 
     
     > [!NOTE]
     > È possibile aprire il processo di attivazione del controllo per impostazione predefinita. Nel frattempo, è possibile attivarlo come descritto in precedenza. 
@@ -91,11 +95,20 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     
 |**Servizio Office 365**|**30 minuti**|**24 ore**|
 |:-----|:-----|:-----|
-|Azure Active Directory (amministrazione eventi)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Protezione avanzata rischio e Business Intelligence di rischio  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (amministrazione eventi)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Prevenzione della perdita di dati  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|eDiscovery  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Protezione &amp; centro conformità  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online e OneDrive for Business  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
