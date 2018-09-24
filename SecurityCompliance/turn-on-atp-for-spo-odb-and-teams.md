@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Informazioni su come attivare degli strumenti di analisi di SharePoint, OneDrive e team, nonché su come impostare gli avvisi per file rilevati.
-ms.openlocfilehash: c29ed850257e04ba9b88745157f33a6e16948c2f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb99aee0887f15f065a47d691c59ce47639bdc32
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531339"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972238"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
 
@@ -45,7 +45,7 @@ ms.locfileid: "22531339"
     
 5. Esaminare (e, nel modo appropriato, modifica) [criteri gli allegati sicuri](set-up-atp-safe-attachments-policies.md) e [collegamenti sicuri criteri](set-up-atp-safe-links-policies.md)dell'organizzazione.
     
-6. (Scelta consigliata) Come un amministratore globale o un amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true* . </br></br>L'impostazione del parametro a blocchi *true* tutte le azioni (ad eccezione di Elimina) per rilevato file. Utenti non possono aprire, spostare, copiare o condividere file rilevati.</br></br>L'impostazione del parametro su *false* blocca tutte le azioni ad eccezione di eliminazione e Download. Persone possono scegliere di accettare il rischio e scaricare un file rilevato.</br></br>È consigliabile impostare il parametro su *true*. 
+6. (Scelta consigliata) Come un amministratore globale o un amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true* . <br/><br/>L'impostazione del parametro a blocchi *true* tutte le azioni (ad eccezione di Elimina) per rilevato file. Utenti non possono aprire, spostare, copiare o condividere file rilevati.<br/><br/>L'impostazione del parametro su *false* blocca tutte le azioni ad eccezione di eliminazione e Download. Persone possono scegliere di accettare il rischio e scaricare un file rilevato.<br/><br/>È consigliabile impostare il parametro su *true*. 
    
 7. Consentire fino a 30 minuti per le modifiche apportate da distribuire a tutti i centri dati di Office 365.
     

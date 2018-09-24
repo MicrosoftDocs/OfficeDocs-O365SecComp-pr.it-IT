@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Con Office 365, il contenuto viene crittografato statici e in transito, utilizzando la crittografia, i protocolli e le tecnologie disponibili più sicuro. Panoramica della crittografia in Office 365.
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530809"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972288"
 ---
 # <a name="encryption-in-office-365"></a>Crittografia in Office 365
 
@@ -47,9 +47,9 @@ Con Office 365, è possibile disporre di più livelli e i tipi di crittografia c
   
 |**Tipi di contenuto**|**Tecnologie di crittografia**|**Risorse per ulteriori informazioni**|
 |:-----|:-----|:-----|
-|File in un dispositivo. Può trattarsi di messaggi di posta elettronica salvati in una cartella, documenti di Office salvati in un computer, tablet o telefono o dati salvati nel cloud Microsoft.  <br/> |BitLocker nei data center Microsoft. BitLocker può essere utilizzato anche nei computer client, ad esempio computer Windows e Tablet  <br/> Distribuita chiave Manager (DKM) nei data center Microsoft  <br/> Chiave cliente per Office 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro protezione di Microsoft: la crittografia](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Protezione cloud controlla series: la crittografia dei dati statici](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Come viene garantita la protezione della posta elettronica in Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Controllare i dati in Office 365 tramite la Chiave cliente](controlling-your-data-using-customer-key.md) <br/> |
+|File in un dispositivo. Può trattarsi di messaggi di posta elettronica salvati in una cartella, documenti di Office salvati in un computer, tablet o telefono o dati salvati nel cloud Microsoft.  <br/> |BitLocker nei data center Microsoft. BitLocker può essere utilizzato anche nei computer client, ad esempio computer Windows e Tablet  <br/> Distribuita chiave Manager (DKM) nei data center Microsoft  <br/> Chiave cliente per Office 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro protezione di Microsoft: la crittografia](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Protezione cloud controlla series: la crittografia dei dati statici](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Come Exchange Online protegge le informazioni riservate della posta elettronica](exchange-online-secures-email-secrets.md) <br/> [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md) <br/> |
 |File in transito tra gli utenti. Può trattarsi di documenti di Office o elementi di elenchi SharePoint condivisi tra gli utenti.  <br/> |TLS per i file in transito  <br/> |[Crittografia dei dati in OneDrive for Business e SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype per le aziende Online: sicurezza e archiviazione](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
-|In transito tra i destinatari di posta elettronica. Sono incluse le e-mail ospitata da Exchange Online.  <br/> |Crittografia dei messaggi di Office 365 con Azure Rights Management, S/MIME e TLS per la posta elettronica in transito  <br/> |[Crittografia dei messaggi di Office 365 (OME)](ome.md) <br/> [Crittografia della posta elettronica in Office 365](email-encryption.md) <br/> [Come viene utilizzato il TLS (Transport Layer Security) per proteggere il traffico della posta elettronica in Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|In transito tra i destinatari di posta elettronica. Sono incluse le e-mail ospitata da Exchange Online.  <br/> |Crittografia dei messaggi di Office 365 con Azure Rights Management, S/MIME e TLS per la posta elettronica in transito  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Crittografia della posta elettronica in Office 365](email-encryption.md) <br/> [Come viene utilizzato TLS per proteggere il traffico della posta elettronica in Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
    
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Se è possibile necessari maggiore controllo sulle crittografia per soddisfare i requisiti di sicurezza e conformità?
 
@@ -70,7 +70,7 @@ Le risorse seguenti per ulteriori informazioni, vedere:
 |Configurare la crittografia per l'organizzazione  <br/> |[Configurare la crittografia in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Visualizzare informazioni dettagliate sui certificati, tecnologie e famiglie di prodotti crittografia TLS in Office 365  <br/> |[Dettagli tecnici sulla crittografia in Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Lavorare con i messaggi crittografati su un dispositivo mobile  <br/> |[Visualizzare messaggi crittografati nel dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Visualizzare messaggi crittografati all'iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Crittografa un documento con la protezione con password  <br/></br>  Attualmente, la protezione con password non è supportata in Office Online. Utilizzare le versioni del desktop di Word, Excel e PowerPoint per la protezione con password.           |[Protezione di aggiunta o la rimozione di un documento, una cartella di lavoro o presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Scegliere una sezione **protezione Aggiungi** e quindi vedere **Crittografa con Password** )  <br/> |
+|Crittografa un documento con la protezione con password  <br/><br/>  Attualmente, la protezione con password non è supportata in Office Online. Utilizzare le versioni del desktop di Word, Excel e PowerPoint per la protezione con password.           |[Protezione di aggiunta o la rimozione di un documento, una cartella di lavoro o presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Scegliere una sezione **protezione Aggiungi** e quindi vedere **Crittografa con Password** )  <br/> |
 |Rimuovere la crittografia da un documento  <br/> |[Protezione di aggiunta o la rimozione di un documento, una cartella di lavoro o presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Scegliere una sezione di **rimuovere la protezione** e quindi vedere **rimuovere la crittografia delle password** )  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati

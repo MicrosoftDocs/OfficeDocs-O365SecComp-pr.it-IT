@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848086"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972308"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -118,7 +118,7 @@ Come si consente di impostare o modificare un criterio degli strumenti di analis
 |**Per questo criterio**|**Questa opzione**|**Produce questo risultato**|
 |:-----|:-----|:-----|
 |Predefinito (dopo aver definito, il criterio predefinito si applica a tutti gli utenti dell'organizzazione)  <br/> |**Bloccare gli URL seguenti** <br/> |Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando l'utente sceglie un URL interno dell'elenco, sarà da eseguire a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato.<br/> Per ulteriori informazioni, ad esempio appena aggiunto il supporto per un massimo di tre asterischi con caratteri jolly, vedere [configurazione di un elenco degli URL bloccato personalizzato utilizzo degli strumenti di analisi dei collegamenti sicuro](set-up-a-custom-blocked-urls-list-wtih-atp.md) (\*).  <br/> |
-|Predefinita  <br/> |**Office 365 ProPlus, Office per iOS e Android** <br/> |Quando questa opzione è selezionata, degli strumenti di analisi collegamenti sicuro protezione viene applicata agli URL nei documenti presenti in Office 365 ProPlus (Word, Excel e PowerPoint in Windows o Mac OS), Office documenti aperti in iOS o dispositivi Android, 2016 di Visio in Windows e Office Online (Word Online, in linea di PowerPoint, Excel Online e OneNote Online), fornita che l'utente ha effettuato l'accesso a Office 365. </br></br>Se viene visualizzata solo **2016 di Office in Windows**, quindi gli aggiornamenti delle funzionalità non hanno raggiunto l'ambiente Office 365 ancora (e disponibile a breve). Nel frattempo, protezione degli strumenti di analisi collegamenti sicuro si applica a Word 2016, 2016 Excel, PowerPoint 2016 o 2016 di Visio in esecuzione su Windows.           |
+|Predefinita  <br/> |**Office 365 ProPlus, Office per iOS e Android** <br/> |Quando questa opzione è selezionata, degli strumenti di analisi collegamenti sicuro protezione viene applicata agli URL nei documenti presenti in Office 365 ProPlus (Word, Excel e PowerPoint in Windows o Mac OS), Office documenti aperti in iOS o dispositivi Android, 2016 di Visio in Windows e Office Online (Word Online, in linea di PowerPoint, Excel Online e OneNote Online), fornita che l'utente ha effettuato l'accesso a Office 365. <br/><br/>Se viene visualizzata solo **2016 di Office in Windows**, quindi gli aggiornamenti delle funzionalità non hanno raggiunto l'ambiente Office 365 ancora (e disponibile a breve). Nel frattempo, protezione degli strumenti di analisi collegamenti sicuro si applica a Word 2016, 2016 Excel, PowerPoint 2016 o 2016 di Visio in esecuzione su Windows.           |
 |Predefinita  <br/> |**Non registrare gli utenti di fare clic sui collegamenti sicuro degli strumenti di analisi** <br/> |Quando questa opzione è selezionata, fare clic su dati per gli URL nei documenti di Word, Excel, PowerPoint e Visio non viene archiviato.  <br/> |
 |Predefinita  <br/> |**Non consentire agli utenti di fare clic su tramite degli strumenti di analisi collegamenti sicuro all'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono procedere oltre un [messaggio di avviso](atp-safe-links-warning-pages.md) per un URL che deve essere dannoso.  <br/> |
 |Un criterio creato per i destinatari di posta elettronica specifico  <br/> |**Off** <br/> |Non analizza gli URL in messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL in messaggi di posta elettronica per un gruppo di destinatari specifico.  <br/> |

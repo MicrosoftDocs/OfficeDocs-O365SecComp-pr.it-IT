@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: È possibile creare una regola di trasporto che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il valore SCL è una misura di probabilmente come un messaggio di posta indesiderata. Posta indesiderata è messaggi di posta elettronica indesiderati (e in genere indesiderato). Deve agire diversi per un messaggio in base al relativo la posta indesiderata. Ad esempio, è possibile ignorare la posta indesiderata filtro del contenuto per i messaggi inviati da persone all'interno dell'organizzazione in quanto si considera attendibile che un messaggio inviato internamente da un collega non è la posta indesiderata. Utilizza le regole di trasporto per impostare il valore SCL di un messaggio offre maggiore controllo nella gestione della posta indesiderata.
-ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002895"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972278"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
 
@@ -42,7 +42,7 @@ ms.locfileid: "23002895"
     
 4. Scegliere **altre opzioni**e quindi in **Applica questa regola se**, specificare una condizione che determinerà l'azione che verrà impostato per questa regola (che consiste nell'impostare il valore SCL).
     
-    Ad esempio, è possibile impostare **il mittente** \> **è interno/esterno**e quindi nella finestra di dialogo **Selezionare mittente percorso** selezionare **all'interno dell'organizzazione**e scegliere **ok**.</br>
+    Ad esempio, è possibile impostare **il mittente** \> **è interno/esterno**e quindi nella finestra di dialogo **Selezionare mittente percorso** selezionare **all'interno dell'organizzazione**e scegliere **ok**.<br/>
     ![Seleziona la località del mittente](media/EOP-ETR-SetSCL-1.jpg)
   
 5. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.

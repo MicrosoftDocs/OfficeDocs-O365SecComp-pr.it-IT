@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook sugli utenti web è possibile segnalare tentativi di phishing e posta indesiderata (spam) utilizzando le opzioni di report di posta incorporato. È anche possibile consentire Microsoft sapere se un messaggio di posta elettronica in modo non corretto è stato identificato come posta indesiderata (spam).
-ms.openlocfilehash: daa63e3b68927d7c5684c588a79727ba5d08f480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002985"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972298"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare junk e-mail e tentativi di phishing in Outlook sul web 
 
@@ -44,7 +44,7 @@ Per inviare un messaggio di posta indesiderata a Microsoft:
 
 Per inviare un messaggio di phishing phishing a Microsoft:
   
-1. Fare clic sul messaggio phishing phishing, fare clic sulla freccia in giù accanto a **posta indesiderata**e quindi **Phishing** sulla barra degli strumenti. Office 365 non Blocca mittente dal momento che i mittenti dei messaggi di phishing phishing rappresenta in genere mittenti legittimi. Se si preferisce, aggiungere il mittente all'elenco Mittenti bloccati seguendo le istruzioni contenute nell'argomento [Blocca o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicare un messaggio di posta elettronica è il phishing in Outlook sul web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)</br>In alternativa, destro di un messaggio da visualizzare un menu e scegliere **Contrassegna come Phishing**.</br>È possibile segnalare un messaggio di phishing phishing dalla cartella posta **in arrivo**, **confusione**o **Eliminata** . 
+1. Fare clic sul messaggio phishing phishing, fare clic sulla freccia in giù accanto a **posta indesiderata**e quindi **Phishing** sulla barra degli strumenti. Office 365 non Blocca mittente dal momento che i mittenti dei messaggi di phishing phishing rappresenta in genere mittenti legittimi. Se si preferisce, aggiungere il mittente all'elenco Mittenti bloccati seguendo le istruzioni contenute nell'argomento [Blocca o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicare un messaggio di posta elettronica è il phishing in Outlook sul web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>In alternativa, destro di un messaggio da visualizzare un menu e scegliere **Contrassegna come Phishing**.<br/>È possibile segnalare un messaggio di phishing phishing dalla cartella posta **in arrivo**, **confusione**o **Eliminata** . 
   
 2. In alcune organizzazioni, verrà visualizzata una finestra di dialogo che richiede se si desidera inviare una copia del messaggio di posta elettronica phishing phishing a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al Team di analisi della posta indesiderata di Microsoft. Questa opzione report è attualmente disponibile per un numero limitato di organizzazioni; potrebbe non richiesto per segnalare il phishing a Microsoft. 
     
@@ -52,7 +52,7 @@ Per inviare un messaggio di phishing phishing a Microsoft:
 
 Quando un messaggio in modo non corretto viene identificato come posta indesiderata da Office 365, inviare un messaggio come "non indesiderato" a Microsoft:
   
-1. Nella cartella posta indesiderata, fare clic sul messaggio e quindi fare clic su **Non indesiderato** sulla barra degli strumenti. Si sposta il messaggio di **posta in arrivo** e aggiunge il mittente all'elenco Mittenti attendibili.</br>È possibile anche pulsante destro del mouse su un messaggio nella cartella posta indesiderata per visualizzare un menu e scegliere **Contrassegna come non indesiderato**. 
+1. Nella cartella posta indesiderata, fare clic sul messaggio e quindi fare clic su **Non indesiderato** sulla barra degli strumenti. Si sposta il messaggio di **posta in arrivo** e aggiunge il mittente all'elenco Mittenti attendibili.<br/>È possibile anche pulsante destro del mouse su un messaggio nella cartella posta indesiderata per visualizzare un menu e scegliere **Contrassegna come non indesiderato**. 
   
 2. Verrà visualizzata la finestra di dialogo che richiede se si desidera inviare una copia del messaggio di posta non indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al Team di analisi della posta indesiderata di Microsoft.. 
     

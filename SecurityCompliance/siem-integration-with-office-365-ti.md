@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Integrare server SIEM dell'organizzazione con Office 365 rischio Intelligence e avanzate di protezione Threat con l'API di Gestione attività di Office 365.
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782143"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972258"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integrazione di SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate
 
@@ -28,7 +28,7 @@ L'API di gestione di Office 365 attività consente di recuperare informazioni su
 Il server SIEM o un altro sistema simile deve eseguire il polling del carico di lavoro **audit.general** degli eventi di rilevamento di access. Per ulteriori informazioni, vedere [Introduzione a Office 365 Management API](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
 > [!IMPORTANT]
-> È necessario essere un amministratore globale di Office 365 o disporre del ruolo di amministratore di sicurezza assegnato nel centro conformità sicurezza configurare l'integrazione SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate.</br>Deve essere attivata la registrazione di controllo per l'ambiente Office 365. Per ottenere assistenza per questo, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md).
+> È necessario essere un amministratore globale di Office 365 o disporre del ruolo di amministratore di sicurezza assegnato nel centro conformità sicurezza configurare l'integrazione SIEM con Business Intelligence di Office 365 rischio e protezione da minacce avanzate.<br/>Deve essere attivata la registrazione di controllo per l'ambiente Office 365. Per ottenere assistenza per questo, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

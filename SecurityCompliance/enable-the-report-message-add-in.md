@@ -1,5 +1,5 @@
 ---
-title: Attivare il componente aggiuntivo Report Message
+title: Attivare il componente aggiuntivo Segnala messaggio
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Informazioni su come abilitare il componente aggiuntivo di report per Outlook e Outlook sul web, per i singoli utenti o l'intera organizzazione.
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229998"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972268"
 ---
-# <a name="enable-the-report-message-add-in"></a>Attivare il componente aggiuntivo Report Message
+# <a name="enable-the-report-message-add-in"></a>Attivare il componente aggiuntivo Segnala messaggio
 
 Il componente aggiuntivo di report per Outlook consente agli utenti di comunicare facilmente e-mail classificazioni non corrette, se attendibili o volontario, con Microsoft e consociate per l'analisi. Questi invii utilizzate da Microsoft per migliorare l'efficienza delle tecnologie di protezione della posta elettronica.
   
@@ -40,8 +40,8 @@ Se si è un amministratore di Exchange Online, è possibile abilitare il compone
     
 Dopo che il componente aggiuntivo è installato e attivato, si noterà icone riportate di seguito: 
 
-- In Outlook l'icona simile al seguente: </br> ![Icona messaggio componente aggiuntivo di report per Outlook](media/OutlookReportMessageIcon.png)</br>
-- In Outlook Web App l'icona simile al seguente:</br>![Icona messaggio Report Web componente aggiuntivo per Outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- In Outlook l'icona simile al seguente: <br/> ![Icona messaggio componente aggiuntivo di report per Outlook](media/OutlookReportMessageIcon.png)<br/>
+- In Outlook Web App l'icona simile al seguente:<br/>![Icona messaggio Report Web componente aggiuntivo per Outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 In una fase successiva, informazioni su come [utilizzare il componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).

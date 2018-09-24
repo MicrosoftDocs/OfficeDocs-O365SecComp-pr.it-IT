@@ -1,5 +1,5 @@
 ---
-title: Collegamenti sicuri ATP di Office 365
+title: Collegamenti sicuri di Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955458"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972348"
 ---
-# <a name="office-365-atp-safe-links"></a>Collegamenti sicuri ATP di Office 365
+# <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
 Collegamenti sicuro degli strumenti di analisi Office 365 (degli strumenti di analisi collegamenti sicuro) (insieme a [Office 365 degli strumenti di analisi provvisoria allegati](atp-safe-attachments.md)) è un set di caratteristiche di sicurezza distribuito come parte di [Protezione di Office 365 avanzate minaccia](office-365-atp.md) per le organizzazioni aziendali. Collegamenti sicuro degli strumenti di analisi consentono di proteggere l'organizzazione fornendo il momento del clic verifica degli indirizzi web (URL) in messaggi di posta elettronica e documenti di Office. Protezione viene definita tramite i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) impostate dal team di protezione di Office 365. 
   
@@ -60,9 +60,9 @@ In dettaglio, ecco collegamenti sicuro degli strumenti di analisi del funzioname
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Funzionamento degli strumenti di analisi collegamenti sicuro con i documenti di Office
 
-In dettaglio, ecco funzionamento della protezione degli strumenti di analisi collegamenti sicuri per gli URL nelle applicazioni di Office 365 ProPlus (versioni correnti di OneNote, Word, Excel e PowerPoint in Windows o Mac, applicazioni di Office su iOS o dispositivi Android, Visio su Windows e Office Online):
+In dettaglio, ecco funzionamento della protezione degli strumenti di analisi collegamenti sicuri per gli URL nelle applicazioni di Office 365 ProPlus (versioni correnti di Word, Excel e PowerPoint in Windows o Mac, applicazioni di Office su iOS o dispositivi Android, Visio su Windows, OneNote Online e Office Online):
   
-1. Utenti sono installati Office 365 ProPlus nel proprio computer, smartphone o Tablet PC.
+1. Utenti sono installati Office 365 ProPlus nel proprio computer, smartphone o Tablet PC. In alternativa, utilizzano Office Online nel browser.
     
 2. Un utente accede a Office 365 Enterprise utilizzando il proprio account di lavoro o della scuola viene aperto un Word, Excel, PowerPoint o Visio. Il documento contiene gli URL.
     
