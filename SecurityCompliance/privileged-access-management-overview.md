@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni su con privilegi accedere management in Office 365
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055261"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011862"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Accesso con privilegi management in Office 365
 
@@ -70,10 +70,14 @@ Per le richieste approvate, l'operazione viene elaborata per lo spazio di esecuz
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Quali SKU da utilizzare con privilegi di accesso in Office 365
-Accesso privilegiato management in Office 365 è attualmente disponibile solo per i clienti con E5 e avanzate SKU di conformità.
+Accesso privilegiato gestione è attualmente disponibile solo per i clienti con Office 365 E5 e avanzate SKU di conformità.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Quando sarà disponibile per Office 365 dei carichi di lavoro di là Exchange con privilegi di accesso?
 Si intende offrire breve questa caratteristica in altri carichi di lavoro di Office 365. Quando si è pronti per condividere una sequenza temporale, verrà reso disponibile tramite il piano di lavoro di Office 365.
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Le esigenze dell'organizzazione più di 30 accesso privilegiato criteri, viene aumentato questo limite?
+
+Supponiamo incrementare il limite corrente 30 privilegiato criteri di accesso al più presto organizzazione Office 365.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>È necessario essere un amministratore globale per gestire l'accesso con privilegiato in Office 365?
 È necessario disporre di privilegi di amministratore globale in grado di gestire l'accesso con privilegiato in Office 365. Gli utenti che sono inclusi nel gruppo dei responsabili non è necessario essere un amministratore globale per esaminare e approvare le richieste. 
