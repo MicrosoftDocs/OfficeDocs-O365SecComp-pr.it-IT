@@ -5,6 +5,7 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
+search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
@@ -13,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include 80 tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo.
-ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972358"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002689"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 

@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: L'organizzazione potrebbe essere necessario mantenere documenti per un periodo di tempo a causa di conformità legale, o altri requisiti aziendali. Tuttavia, se l'organizzazione consente di mantenere documenti più necessario, creare inutili rischi legali. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo rischio eliminando i documenti in un sito dopo un periodo di tempo specifico, ad esempio, è possibile eliminare documenti OneDrive degli utenti per Business siti cinque anni dopo che sono stati creati i documenti.
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013660"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002669"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 

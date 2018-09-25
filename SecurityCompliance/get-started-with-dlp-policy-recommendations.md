@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai suggerimenti per i criteri di prevenzione della perdita dei dati
+title: Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,19 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: Questo suggerimento basati su conoscenze consente all'organizzazione di proteggere contenuti sensibili quando sono archiviate e condivise in Office 365 da per informare l'utente quando esiste una distanza possibile in copertura il criterio DLP. Questo suggerimento verrà visualizzato nella Home page della sicurezza &amp; centro conformità, se i documenti contengano uno dei tipi principali cinque più comuni di informazioni riservate, ma non sono protetti da un criterio DLP.
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531345"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002629"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>Introduzione ai suggerimenti per i criteri di prevenzione della perdita dei dati
+# <a name="get-started-with-dlp-policy-recommendations"></a>Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati
 
 Questo suggerimento basati su conoscenze consente all'organizzazione di proteggere contenuti sensibili quando sono archiviate e condivise in Office 365 da per informare l'utente quando esiste una distanza possibile in copertura il criterio DLP. Questo suggerimento verrà visualizzato nella Home **page della sicurezza** &amp; centro conformità, se i documenti includono i tipi più comuni di cinque principali di informazioni riservate, ma non sono protetti da un criterio di criterio DLP perdita di dati. 
   
