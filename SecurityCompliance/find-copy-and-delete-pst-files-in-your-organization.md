@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilizzare lo strumento di raccolta PST Microsoft per la ricerca della rete dell'organizzazione per ottenere un inventario dei file PST sparsi in tutta l'organizzazione. Dopo aver individuato file PST, è possibile utilizzare lo strumento di raccolta di file PST da copiare in una posizione centrale in modo che è possibile importarli a Office 365.
-ms.openlocfilehash: 183ab968b894c824f2b23c08e98e671ef85316cc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530746"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038129"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utilizzare lo strumento PST raccolta per trovare, copiare ed eliminare i file PST all'interno dell'organizzazione
 

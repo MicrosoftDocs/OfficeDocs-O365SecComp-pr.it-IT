@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca del contenuto in Office 365 Security &amp; centro conformità eseguire raccolte di destinazione. Una raccolta di destinazione significa che si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID della cartella o il percorso per le cartelle delle cassette postali o un sito specifiche che si desidera eseguire la ricerca.
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530323"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038299"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca del contenuto in Office 365 per le raccolte di destinazione
 
@@ -210,7 +208,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID delle cartelle o pi
 > [!NOTE]
 > Utilizzo di `path` proprietà per la ricerca di OneDrive percorsi non restituiscono i file multimediali, ad esempio file PNG, TIFF o con estensione wav, nei risultati della ricerca. 
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account e le credenziali utilizzate per eseguire lo script nel passaggio 1.
     

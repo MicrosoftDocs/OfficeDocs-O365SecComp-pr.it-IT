@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Gli amministratori possono importare dati di terze parti da piattaforme di social networking, piattaforme di messaggistica immediate e le piattaforme di collaborazione documento alle cassette postali nell'organizzazione Office 365. Consente di archiviare dati provenienti da origini dati, Twitter e Facebook in Office 365. È possibile appply funzionalità di conformità di Office 365 (ad esempio, conservazione a fini giudiziari, ricerca contenuto e i criteri di conservazione) ai dati di terze parti.
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827090"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038109"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archiviazione dei dati di terze parti in Office 365
 
@@ -685,5 +683,5 @@ Per revocare il consenso dell'utente per un connettore di dati di terze parti, �
     
   - [Ricerca del contenuto in Office 365](content-search.md)
     
-  - [Query delle parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
+  - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
  

@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i rapporti di conformità alle normative Office 365, Azure e Dynamics 365 Online, per visualizzare i controlli di terze parti, scoprire come Microsoft consente di mantenere i dati dei clienti sicuri e come può essere compatibile con ISO, HIPAA, NIST, FINRA, PILR e FedRAMP quando si utilizzano questi servizi in linea.
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530642"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038219"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Guida introduttiva a Microsoft Service Trust Portal
 
@@ -119,28 +120,28 @@ Funzioni di amministrazione che sono disponibili solo per l'account dell'amminis
   
  **Impostazioni** consente di assegnare l'accesso basato sui ruoli a Gestione conformità. Per ulteriori informazioni, vedere la sezione "Autorizzazioni e controllo di accesso basato sui ruoli" in [Gestione conformità di utilizzo per soddisfare i requisiti normativi quando si utilizzano servizi cloud Microsoft e la protezione dei dati](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Ricerca
+### <a name="search"></a>Cerca
 
-![Servizio Trust Portal - campo Input di ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Service Trust Portal - Campo di inserimento della ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Fare clic su lente di ingrandimento nell'angolo superiore destro della pagina per espandere il campo di ricerca di input, immettere i termini di ricerca e premere INVIO. Verrà visualizzato il controllo Search, con il termine di ricerca nel campo di ricerca riquadro input e risultati della ricerca saranno visualizzati sotto.
+Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina per espandere il campo di inserimento della ricerca, inserire i termini di ricerca e premere Invio. Apparirà il controllo di ricerca, con il termine di ricerca nel campo di inserimento del riquadro di ricerca, quindi i risultati della ricerca appariranno sotto.
   
-Per impostazione predefinita, la ricerca restituisce risultati documento ed è possibile utilizzare gli elenchi di filtro dall'elenco a discesa per filtrare l'elenco di documenti visualizzate, per aggiungere o rimuovere i risultati di ricerca dalla visualizzazione. È possibile utilizzare più attributi di filtro contemporaneamente per limitare i documenti restituiti ai servizi cloud specifico, categorie di conformità o sicurezza consigliate, le aree del mondo o settori. Fare clic sul collegamento di nome documento per scaricare il documento.
+Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tramite l'opzione di filtro degli elenchi a discesa sarà possibile restringere l'elenco dei documenti visualizzati, aggiungere o rimuovere i risultati visualizzati. Per restringere i documenti restituiti in base a servizi cloud specifici, categorie di conformità o procedure di sicurezza, zone del mondo o settori, utilizzare più attributi del filtro contemporaneamente. Fare clic sul collegamento al nome del documento per scaricare il documento.
   
-![Servizio Trust Portal - ricerca di documenti con i filtri applicati](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Fare clic sul collegamento di responsabile della conformità per visualizzare i risultati di ricerca per i controlli di valutazione di responsabile della conformità. I risultati della ricerca elencati Mostra la data è stata creata la valutazione, il nome della valutazione di raggruppamento, il servizio cloud applicabile, o se i controlli sono Microsoft o cliente gestiti.
   
-![Servizio Trust Portal - ricerca controlli responsabile della conformità](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Portale di servizi attendibile report e i documenti sono disponibili per il download da almeno dodici mesi dopo la pubblicazione o fino a quando non diventa disponibile una nuova versione del documento. 
+> Report e documenti di Service Trust Portal possono essere scaricati per almeno 12 mesi dalla pubblicazione o finché non diventa disponibile una nuova versione del documento. 
   
-## <a name="localization-support"></a>Supporto per la localizzazione
+## <a name="localization-support"></a>Supporto alla localizzazione
 
-Portale di servizi di protezione consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, fare clic sull'icona a forma di globo nell'angolo inferiore sinistro della pagina e selezionare la lingua di propria scelta. 
+Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per cambiare la lingua della pagina, basta fare clic sull'icona del globo nell'angolo inferiore sinistro della pagina e selezionare la lingua scelta. 
   
-![Portale di servizi di protezione - localizzati le opzioni di contenuto](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Commenti e suggerimenti
 

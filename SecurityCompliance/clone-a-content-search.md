@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
-- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nella protezione &amp; ricerca Compliane Center. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà di ricerca originale. È possibile modificare la nuova ricerca (modificando la query con parole chiave o l'intervallo di date) e quindi eseguire.
-ms.openlocfilehash: a4f801e3de281e8caf8aeb7d1c2bd48f0facb77c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530672"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038049"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Clonare una ricerca di contenuto in Office 365 protezione &amp; centro conformità
 
@@ -141,6 +140,6 @@ Dopo di aver eseguito lo script per clonare una ricerca di contenuto esistente, 
   
 - [Ricerca del contenuto in Office 365](content-search.md)
     
-- [Query delle parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
+- [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
     
 - [casi di eDiscovery in Office 365 Security &amp; centro conformità](ediscovery-cases.md)

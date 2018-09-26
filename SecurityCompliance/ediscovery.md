@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 offre una serie di eDiscovery diversi strumenti che è possibile utilizzare per cercare e conservare contenuto trovato in sedi diverse, ad esempio cassette postali di Exchange, SharePoint e OneDrive for Business siti, gruppi di Office 365 e Skype per le conversazioni di Business.
-ms.openlocfilehash: 0e458e5b2ba83861e7b715ec66a30695045b2e57
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f137454291bcdcdae6f0c61e2639b223a3e310a8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531201"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038239"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
 
@@ -41,7 +40,7 @@ Nella tabella seguente è riportati i collegamenti agli argomenti che consentono
 |**Argomento**|**Descrizione**|
 |:-----|:-----|
 |[Eseguire una ricerca di contenuto in Office 365 protezione &amp; centro conformità](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |Informazioni su come utilizzare lo strumento di ricerca del contenuto per la ricerca di cassette postali, le cartelle pubbliche, gruppi di Office 365, Microsoft Teams, SharePoint Online dei siti, One Drive per i percorsi di Business e Skype per le conversazioni aziendali dell'organizzazione Office 365 in una singola ricerca.  <br/> |
-|[Query delle parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md) <br/> |Informazioni sulle proprietà di posta elettronica e file e le condizioni di ricerca che è possibile utilizzare per la ricerca per il contenuto nelle cassette postali e i siti dell'organizzazione Office 365.  <br/> |
+|[Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md) <br/> |Informazioni sulle proprietà di posta elettronica e file e le condizioni di ricerca che è possibile utilizzare per la ricerca per il contenuto nelle cassette postali e i siti dell'organizzazione Office 365.  <br/> |
 |[Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](view-keyword-statistics-for-content-search.md) <br/> |Informazioni su come utilizzare le statistiche della ricerca per visualizzare e confrontare le statistiche per uno o più ricerche di contenuto e configurare le ricerche di nuove ed esistenti per restituire le statistiche per ogni parola chiave nella query di ricerca.  <br/> |
 |[Modifica in blocco le ricerche di contenuto in Office 365 Security &amp; centro conformità](bulk-edit-content-searches.md) <br/> |Informazioni sulla modifica in blocco le query di ricerca e i percorsi di contenuti di uno o più ricerche di contenuto.  <br/> |
 |[Esportare i risultati della ricerca di Office 365 Security &amp; centro conformità](export-search-results.md) <br/> |Informazioni su come esportare i risultati di ricerca di contenuto.  <br/> |

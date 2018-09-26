@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: È possibile modificare le dimensioni predefinite dei file PST file scaricato nel computer quando si esportano i risultati della ricerca eDiscovery.
-ms.openlocfilehash: d38189c437154dbe27a084230d4d3fd4de418ece
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1479db72117729d2e5cfa6feec1d9a0d9a60ffb5
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530266"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037989"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modificare le dimensioni dei file PST durante l'esportazione dei risultati della ricerca di eDiscovery
 

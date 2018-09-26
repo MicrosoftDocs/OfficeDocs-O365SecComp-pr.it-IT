@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto in Office 365 Security &amp; centro conformità per un'ulteriore analisi con lo strumento eDiscovery avanzate.
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531470"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038309"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 
@@ -49,7 +47,7 @@ Dopo una ricerca associata a un caso eDiscovery in Office 365 Security &amp; cen
 
 È possibile preparare i risultati della ricerca associato a un caso eDiscovery. Quando si prepara i risultati della ricerca eDiscovery avanzate, i dati vengono caricati e temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft. È a questo punto che la funzionalità OCR estrae il testo da immagini nei risultati della ricerca. In [passaggio 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), il testo e altri ricerca dati risultanti viene caricati in caso di eDiscovery avanzate.
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi di eDiscovery avanzate fare clic su **Apri** . 
     
@@ -82,11 +80,11 @@ Al termine della preparazione, il passaggio successivo è passare a eDiscovery a
 > [!NOTE]
 > Il tempo necessario per i dati dal titolo &amp; centro conformità sia disponibile per aggiungere a un caso di eDiscovery avanzate varia, a seconda delle dimensioni dei risultati della ricerca eDiscovery. 
   
-1. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
 2. Accanto al caso in cui si desidera caricare i dati di eDiscovery avanzate fare clic su **Apri** . 
     
-3. Nella Home **page per il case,** fare clic su **Avanzate eDiscovery**. 
+3. Nella **Home** page del caso, fare clic su **Advanced eDiscovery**. 
     
     ![Fare clic su passa a eDiscovery avanzate per aprire il caso di eDiscovery avanzate](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Attivare un blocco per controversia legale in una cassetta postale per conservare tutto il contenuto della cassetta postale, tra cui elementi eliminati e versioni originali degli elementi modificati. '
-ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002845"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038039"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Conservazione in caso di dispute di una cassetta postale
  

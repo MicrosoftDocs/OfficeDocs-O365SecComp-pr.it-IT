@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilizzare lo strumento di eDiscovery di ricerca del contenuto per cercare gli elementi che sono stati importati alle cassette postali in Office 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query di ricerca di tipi di dati specifici di terze parti. In questo articolo sono elencati i valori che utilizzabili in una query con parole chiave ricerca i tipi di dati di terze parti che possono essere importati a Office 365.
-ms.openlocfilehash: 90d9dc52dcd9dba9bc273dfcf1c5f22e3913d6ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6829e894ba687fb09184c32201f76394e37bbbf8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531048"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037969"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Utilizzare la ricerca del contenuto per cercare i dati di terze parti che è stati importati a Office 365
 

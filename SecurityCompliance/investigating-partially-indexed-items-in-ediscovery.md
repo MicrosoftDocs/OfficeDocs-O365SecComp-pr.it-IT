@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Parzialmente voci indicizzate (anche gli elementi di chiamata non indicizzata) sono elementi della cassetta postale di Exchange e i documenti in SharePoint e ai siti OneDrive per qualche motivo non sono stati completamente indicizzato per la ricerca del contenuto. In questo articolo per informazioni sui motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi indicizzati parzialmente, identificare gli errori di ricerca di elementi indicizzati parzialmente e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione per la posta elettronica parzialmente indicizzato elementi.
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531347"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038079"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 

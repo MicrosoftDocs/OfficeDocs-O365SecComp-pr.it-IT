@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Dopo aver effettuata inattiva una cassetta postale di Office 365, è possibile modificare la durata dell'attesa o criteri di conservazione di Office 365 assegnati a cassette postali inattive. La durata dell'attesa definisce quanto tempo gli elementi nella cartella vengono mantenuti agli elementi ripristinabili.
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530836"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038059"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modificare la durata dell'attesa di una cassetta postale inattiva in Office 365
 
@@ -35,7 +33,7 @@ Una cassetta postale inattiva viene utilizzata per conservare la posta elettroni
     
   - [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Connettersi a Office 365 protezione &amp; PowerShell centro conformità](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - Tenere presenta che i blocchi associati ai casi di eDiscovery sono blocchi infiniti, il che significa non esiste una durata del blocco che può essere modificata. Gli elementi vengono conservati all'infinito o finché il blocco non viene rimosso e la cassetta postale non viene eliminata.
     

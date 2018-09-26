@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'Il Registro di controllo di Office 365 è un registro di controllo unificato. Perché un controllo unificato accedere? Poiché gli eventi che sta organizzazione la maggior parte dei servizi di Office 365 sottoscrive vengono registrati in un singolo registro di controllo che è possibile eseguire la ricerca. Di conseguenza, che è possibile cercare per le attività di amministrazione in tali servizi e utente:'
-ms.openlocfilehash: 7a6a552b1d2569c9e21fe20b39d474dafc026172
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530653"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038029"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Cercare il Registro di controllo per l'attività di amministrazione e utente in Office 365
 

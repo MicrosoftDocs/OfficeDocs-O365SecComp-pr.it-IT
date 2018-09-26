@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Informazioni su come configurare il Registro di sistema per aumentare la velocità effettiva di scaricare i risultati della ricerca e cercare i dati da Office 365 Security &amp; eDiscovery centro conformità e avanzate di Office 365.
-ms.openlocfilehash: 3f456f5ee0312d4d4d7b95f868520e6756a90fd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531459"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038119"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentare la velocità di download per l'esportazione dei risultati della ricerca eDiscovery da Office 365
 

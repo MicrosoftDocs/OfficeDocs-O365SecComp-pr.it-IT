@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: È possibile utilizzare il centro eDiscovery in SharePoint Online per la ricerca di OneDrive tutti per i siti all'interno dell'organizzazione per alcune parole chiave, informazioni riservate e altri criteri di ricerca. Ogni utente nell'organizzazione è il proprietario della loro OneDrive per sito aziendale, che si trova nella raccolta siti denominata https://domain-my.sharepoint.com. Per impostazione predefinita, un amministratore globale di Office 365 o responsabile della conformità non può utilizzare il centro eDiscovery in SharePoint Online per qualsiasi OneDrive per i siti di ricerca. Per eseguire la ricerca OneDrive per Business sito, gli amministratori o responsabili della conformità deve essere un amministratore della raccolta siti per tale OneDrive for sito aziendale.
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530822"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038089"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>Assegnazione di autorizzazioni eDiscovery a siti OneDrive for Business
 

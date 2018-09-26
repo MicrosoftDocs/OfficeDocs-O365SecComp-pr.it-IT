@@ -3,7 +3,6 @@ title: Registrazione interni di Office 365 per progettazione tecnica di Office 3
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Informazioni di registrazione come interna per Office 365 Engineering Team works.
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530508"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038189"
 ---
-# <a name="internal-logging-for-office-365-engineering"></a>La registrazione interna per Office 365 Engineering
-Oltre a eventi e registrare i dati disponibili per i clienti, è disponibile anche un sistema di raccolta dei dati del log interni è disponibile a tecnici di Office 365. Diversi tipi di dati dei registri vengono caricati dal server di Office 365 per un interno, big dati computing servizio denominato Cosmos. Ogni team servizio consente di caricare i registri di controllo dai rispettivi server nel database Cosmos per l'analisi e di aggregazione. Si verifica questo trasferimento di dati tramite una connessione TLS 140-2-convalidato FIPS su approvato in modo specifico porte e protocolli utilizzando uno strumento di automazione proprietarie denominato Office dati caricatore (IAD).
+# <a name="internal-logging-for-office-365-engineering"></a>Log interni per Office 365 Engineering
+Oltre a eventi e registrare i dati disponibili per i clienti, è disponibile anche un sistema di raccolta dei dati del log interni è disponibile a tecnici di Office 365. Diversi tipi di dati dei registri vengono caricati dal server di Office 365 per un interno, big dati computing servizio denominato Cosmos. Ogni team servizio consente di caricare i registri di controllo dai rispettivi server nel database Cosmos per l'analisi e di aggregazione. Si verifica questo trasferimento di dati tramite una connessione TLS 140-2-convalidato FIPS su approvato in modo specifico porte e protocolli utilizzando uno strumento di automazione proprietarie denominato Office dati caricatore (IAD). Gli strumenti utilizzati in Office 365 per raccogliere e record di processo di controllo non consentire permanente o di modifiche irreversibile originale controllo registrare contenuto o l'ordinamento di tempo.
 
 Servizio Team utilizzano Cosmos come un archivio centralizzato per eseguire un'analisi di utilizzo dell'applicazione per misurare le prestazioni del sistema e operative e di ricercare le alterazioni e modelli che potrebbero indicare problemi o problemi di sicurezza. Ogni team servizio carica una linea di base dei registri in Cosmos, a seconda sta cercando di analizzare, che spesso sono incluse:
 - Registri eventi

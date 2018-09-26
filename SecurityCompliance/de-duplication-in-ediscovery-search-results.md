@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile duplicare deprovisioning dei risultati della ricerca eDiscovery che vengono esportati in modo che solo una copia di un messaggio di posta elettronica verrà esportata anche se potrebbe essere più istanze dello stesso messaggio sono state trovate nelle diverse cassette postali.
-ms.openlocfilehash: 02a4f9f6db0fb8831d5e5cc13adaffbd0c4dcecc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531342"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038009"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicazione nei risultati della ricerca di eDiscovery
 

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come cercare il Registro di controllo di Office 365 per gli eventi registrati quando gli amministratori di conformità eseguono operazioni maiuscole ricerca contenuto ed eDiscovery in sicurezza &amp; centro conformità.
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530904"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038349"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di eDiscovery attività nel Registro di controllo di Office 365
 
@@ -43,7 +41,7 @@ Per ulteriori informazioni sulla ricerca nel Registro di controllo di Office 365
 
 Attualmente, è necessario eseguire alcune operazioni specifiche per visualizzare le attività di eDiscovery nel Registro di controllo di Office 365. Ecco come.
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
     

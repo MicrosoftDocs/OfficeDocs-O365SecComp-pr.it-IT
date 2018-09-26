@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Controllare le query con parole chiave per la ricerca del contenuto per gli errori e agli errori di digitazione, ad esempio caratteri non supportati e minuscoli operatori booleani, prima di eseguire la ricerca. Se viene trovato un errore, si verrà consiglia di effettuare una query modificata.
-ms.openlocfilehash: 0d2119ceef4ce3777d3967a56357551e235e426c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530790"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038289"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la query di Ricerca contenuto per gli errori
 
