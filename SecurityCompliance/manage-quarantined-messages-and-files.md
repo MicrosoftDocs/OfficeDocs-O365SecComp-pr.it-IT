@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Come un amministratore può visualizzare, rilasciare e segnalare i messaggi in quarantena falsi positivi in Office 365. È possibile impostare i criteri in modo che filtra i messaggi di Office 365 e li invia in quarantena per diverse ragioni: perché che sono stati identificati come posta indesiderata, blocco, phishing, malware o perché sono corrispondenti a una regola di flusso di posta elettronica. '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839100"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018880"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365
 
@@ -59,7 +59,7 @@ Inoltre, l'amministratore, è possibile scegliere di filtrare tutti i messaggi p
   
 È inoltre possibile filtrare i risultati per individuare i messaggi specifici. Per suggerimenti, vedere [per filtrare i risultati e individuare i file e i messaggi in quarantena](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in questo articolo. 
   
-Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messaggio per visualizzarne i dettagli ed eseguire azioni, ad esempio rilasciare il messaggio di posta in arrivo di una persona.
+Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messaggio per visualizzarne i dettagli ed eseguire azioni, ad esempio rilasciare il messaggio alla cassetta postale di un utente.
   
 ## <a name="view-your-organizations-quarantined-files"></a>Visualizzare i file in quarantena dell'organizzazione
 

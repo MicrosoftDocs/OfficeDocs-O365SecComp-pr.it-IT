@@ -13,12 +13,12 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 description: "Come un utente di Office 365, è possibile gestire i propri messaggi in quarantena in uno dei due modi: rispondendo per le notifiche inviate direttamente all'utente di posta indesiderata (se l'amministratore ha configurato questa funzionalità), oppure utilizzando la funzionalità di quarantena della posta indesiderata in sicurezza &amp; conformità Al centro."
-ms.openlocfilehash: 08a0c5c35edb6c0829a1c7cafd7eaf9a41fa22ae
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 728273838d9e592e17638638258f481830bc0bbe
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530201"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018890"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi in quarantena come utente in Office 365
 
@@ -44,7 +44,7 @@ Per impostazione predefinita, la sicurezza &amp; centro conformità consente di 
     
 - Posta identificata come posta inviata in blocco.
     
-Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messaggio per visualizzarne i dettagli ed eseguire azioni. È per rilasciare il messaggio nella posta in arrivo, visualizzare in anteprima il messaggio, scaricare il messaggio o eliminare i messaggi dalla quarantena immediatamente.
+Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messaggio per visualizzarne i dettagli ed eseguire azioni. È per rilasciare il messaggio alla cassetta postale, visualizzare in anteprima il messaggio, scaricare il messaggio o eliminare i messaggi dalla quarantena immediatamente.
   
 > [!NOTE]
 > È necessario disporre delle autorizzazioni di amministratore in Office 365 per l'utilizzo con i messaggi in quarantena inviate ad altri utenti. 
@@ -94,7 +94,7 @@ Dopo aver selezionato un messaggio, si verrà visualizzato un riepilogo delle pr
     
 - **Rilasciato a:** Tutti gli indirizzi di posta elettronica (se esistenti) a cui il messaggio è stato rilasciato. 
     
-- **Non ancora rilasciato a:** Tutti gli indirizzi di posta elettronica (se esistenti) a cui non è stato rilasciato il messaggio. È possibile **rilasciare** se si desidera rilasciare il messaggio nella posta in arrivo (ulteriori informazioni sui rilasciare i messaggi nella sezione successiva). 
+- **Non ancora rilasciato a:** Tutti gli indirizzi di posta elettronica (se esistenti) a cui non è stato rilasciato il messaggio. È possibile **rilasciare** se si desidera rilasciare il messaggio alla cassetta postale (ulteriori informazioni sui rilasciare i messaggi nella sezione successiva). 
     
 È possibile ottenere ulteriori dettagli relativi al messaggio scegliendo una delle opzioni seguenti:
   
@@ -108,12 +108,12 @@ Dopo aver selezionato un messaggio o un gruppo di messaggi, sono disponibili div
   
 - Non effettuare alcuna operazione. Se si sceglie di non eseguire alcuna operazione, il messaggio verrà eliminato da Office 365 automaticamente alla scadenza. Si tenga presente che quando Office 365 consente di eliminare un messaggio dalla quarantena, è Impossibile ottenere lo.
     
-- **Rilascia messaggio** Rilasciare un messaggio in quarantena (o un insieme di messaggi) in modo che il messaggio viene inviato alla posta in arrivo. Quando si rilascia un messaggio, è possibile segnalare il messaggio a Microsoft per l'analisi. 
+- **Rilascia messaggio** Rilasciare un messaggio in quarantena (o un insieme di messaggi) in modo che il messaggio viene inviato alla cassetta postale. Quando si rilascia un messaggio, è possibile segnalare il messaggio a Microsoft per l'analisi. 
     
     Quando si sceglie di inoltrare un messaggio, l'acronimo di report di un messaggio come falso positivo, il messaggio viene indicato al Team di analisi della posta indesiderata di Microsoft. Il team di valuta e l'analisi di messaggi falsi positivi e, in base ai risultati dell'analisi, le regole di filtro dei contenuti da posta indesiderata a livello di servizio possono essere regolate per consentire i messaggi tramite.
     
 - **Download dei messaggi** Consente di scaricare il messaggio come file EML. Dopo avere scaricato un messaggio, è possibile esaminare il file EML utilizzando il client di posta elettronica prima di distribuire il messaggio. 
     
-- **Rimuovere dalla quarantena** Elimina il messaggio immediatamente dalla quarantena senza rilasciare il messaggio di posta in arrivo. 
+- **Rimuovere dalla quarantena** Elimina il messaggio immediatamente dalla quarantena senza rilasciare il messaggio alla cassetta postale. 
     
 
