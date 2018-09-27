@@ -3,7 +3,7 @@ title: Domande frequenti sulla crittografia dei messaggi di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/28/2018
+ms.date: 09/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Ottenere informazioni su come utilizzare le nuove funzionalità di protezione dei messaggi in Office 365? Verificare di una risposta di seguito.
-ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839956"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341431"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi di Office 365
 
@@ -121,6 +121,10 @@ Sì. Utilizzo di regole del flusso di posta elettronica di Exchange Online per c
 
 Attualmente è possibile solo impostare le regole del flusso di posta elettronica di Exchange Online. Crittografia non è supportata in DLP attraverso la sicurezza &amp; centro conformità.
   
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire crittografati i messaggi inviati a una cassetta postale condivisa?
+
+I messaggi crittografati attualmente non sono supportati per una cassetta postale condivisa.
+
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>È possibile personalizzare i messaggi crittografati con il marchio della società?
 
 Sì! Per informazioni sulla personalizzazione dei messaggi di posta elettronica e il portale OME, vedere Aggiunta del marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere marchio dell'organizzazione per i messaggi crittografati.](add-your-organization-brand-to-encrypted-messages.md)
