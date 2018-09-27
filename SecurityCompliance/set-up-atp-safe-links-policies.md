@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972308"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092952"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
 [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md) , una funzionalità di [Protezione di Office 365 avanzate rischio](office-365-atp.md) degli (strumenti di analisi), consentono di proteggere l'organizzazione da dannosi collegamenti utilizzati in altri attacchi e phishing. Se si dispone di volte necessario [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md), è possibile impostare i criteri degli strumenti di analisi collegamenti attendibili per garantire che quando gli utenti fare clic su indirizzi web (URL), l'organizzazione è protetto. I criteri degli strumenti di analisi collegamenti attendibili possono essere configurati per analizzare gli URL nella posta elettronica ed nei documenti di Office.
   
-Nuove funzionalità vengono aggiunti continuamente ai collegamenti sicuro degli strumenti di analisi:
-  
-- In ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene esteso per applicare all'URL di posta elettronica e gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint in Windows, iOS e dispositivi Android e i file di Visio in Windows.
-    
-- A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa da applicare alla posta elettronica inviato tra utenti dell'organizzazione.
-    
-- A partire da ritardo 2018 marzo, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus in Mac OS.
-    
-- A partire da maggio 2018 [avviso pagine](atp-safe-links-warning-pages.md) vengono aggiornate con una nuova combinazione di colori, ulteriori informazioni e la possibilità di continuare a un sito nonostante i suggerimenti di carattere specificati. 
-
-Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri degli strumenti di analisi provvisoria collegamenti esistenti.
+[Nuove funzionalità vengono aggiunti continuamente ai collegamenti sicuro degli strumenti di analisi](atp-safe-links.md#new-features-added-to-atp-safe-links). Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri degli strumenti di analisi provvisoria collegamenti esistenti.
 
 ## <a name="what-to-do"></a>cosa fare 
   
@@ -41,11 +31,11 @@ Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modi
     
 2. [Revisione e modifica il criterio degli strumenti di analisi collegamenti sicuro predefinito che si applica a tutti gli utenti](#define-an-atp-safe-links-policy-that-applies-to-everyone). Ad esempio, è possibile [configurare l'elenco degli URL bloccato personalizzato per i collegamenti sicuro degli strumenti di analisi](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Aggiungi un criterio per i destinatari di posta elettronica specifico](#add-a-policy-for-specific-email-recipients), inclusa [l'impostazione di personalizzata "non di riscrittura" URL elenco per i collegamenti sicuro degli strumenti di analisi](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+3. [Aggiungere o modificare i criteri per i destinatari di posta elettronica specifico](#add-a-policy-for-specific-email-recipients), inclusa [l'impostazione di personalizzata "non di riscrittura" URL elenco per i collegamenti sicuro degli strumenti di analisi](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
 4. [Informazioni sulle opzioni dei criteri degli strumenti di analisi collegamenti sicuri](#learn-about-atp-safe-links-policy-options) (in questo articolo), incluse le impostazioni per le modifiche recenti
     
-## <a name="review-the-prerequisites"></a>Verificare i prerequisiti
+## <a name="step-1-review-the-prerequisites"></a>Passaggio 1: Verificare i prerequisiti
 
 - Verificare che l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md).
     
@@ -57,9 +47,12 @@ Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modi
     
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>Definire un criterio degli strumenti di analisi collegamenti attendibili che si applica a tutti gli utenti
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Passaggio 2: Definire (o per prendere visione) il criterio degli strumenti di analisi collegamenti attendibili che si applica a tutti gli utenti
 
-Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è necessario un criterio di collegamenti sicuro degli strumenti di analisi predefinito che si applica a tutti gli utenti nell'organizzazione. È possibile modificare i criteri in entrambi i Security &amp; centro conformità o l'interfaccia di amministrazione di Exchange. **è consigliabile utilizzare la sicurezza &amp; centro conformità per visualizzare o modificare i criteri degli strumenti di analisi**.
+Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è necessario un criterio di collegamenti sicuro degli strumenti di analisi predefinito che si applica a tutti gli utenti nell'organizzazione. 
+
+> [!TIP]
+> È possibile modificare i criteri in entrambi i Security &amp; centro conformità o l'interfaccia di amministrazione di Exchange. **è consigliabile utilizzare la sicurezza &amp; centro conformità per visualizzare o modificare i criteri degli strumenti di analisi**.
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
@@ -75,9 +68,12 @@ Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è
     
 6. Fare clic su **Salva**.
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>Aggiungere un criterio per i destinatari di posta elettronica specifico
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Passaggio 3: Aggiungere (o modifica) degli strumenti di analisi collegamenti sicuri i criteri applicati ai destinatari di posta elettronica specifici
 
-Dopo aver esaminato i criteri per tutti gli utenti, è consigliabile definire ulteriori criteri per determinati gruppi di destinatari di posta elettronica. In questo modo è possibile specificare le eccezioni per il criterio predefinito. È possibile aggiungere i criteri utilizzando uno la sicurezza &amp; centro conformità (scelta consigliata) o l'interfaccia di amministrazione di Exchange. **è consigliabile utilizzare la sicurezza &amp; centro conformità per visualizzare o modificare i criteri degli strumenti di analisi**.
+Dopo aver esaminato il criterio degli strumenti di analisi collegamenti sicuri per tutti gli utenti, è consigliabile definire ulteriori criteri per determinati gruppi di destinatari di posta elettronica. In questo modo è possibile specificare le eccezioni per il criterio predefinito. 
+
+> [!TIP]
+> È possibile aggiungere i criteri utilizzando uno la sicurezza &amp; centro conformità (scelta consigliata) o l'interfaccia di amministrazione di Exchange. **è consigliabile utilizzare la sicurezza &amp; centro conformità per visualizzare o modificare i criteri degli strumenti di analisi**.
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
@@ -111,9 +107,12 @@ Dopo aver esaminato i criteri per tutti gli utenti, è consigliabile definire ul
     
 6. Fare clic su **Salva**.
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>Informazioni sulle opzioni di criteri di collegamenti sicuro degli strumenti di analisi
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>Passaggio 5: Informazioni sulle opzioni di criteri di collegamenti sicuro degli strumenti di analisi
 
-Come si consente di impostare o modificare un criterio degli strumenti di analisi collegamenti sicuro, verrà visualizzato sono disponibili diverse opzioni. Nel caso in cui sono chiedendo tali opzioni, nella tabella seguente vengono descritti ciascuno di essi e degli effetti. Si noti che esistono due tipi principali di criteri per definire o modificare: un criterio predefinito che si applica a tutti gli utenti e altri criteri definiti per destinatari specifici.
+Come si consente di impostare o modificare i criteri degli strumenti di analisi collegamenti sicuro, verrà visualizzato sono disponibili diverse opzioni. Nel caso in cui sono chiedendo tali opzioni, nella tabella seguente vengono descritti ciascuno di essi e degli effetti. 
+
+> [!NOTE]
+> Esistono due tipi principali di criteri per definire o modificare: un criterio predefinito che si applica a tutti gli utenti e altri criteri definiti per destinatari specifici. Quelle indicate nella colonna "per questo criterio" nella tabella riportata di seguito.
   
 |**Per questo criterio**|**Questa opzione**|**Produce questo risultato**|
 |:-----|:-----|:-----|

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 03fb0b62d37dc628241a1108b4b256290c23509b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530708"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092942"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -32,7 +32,7 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
 3. [Informazioni sulle opzioni di criteri di allegati sicuri degli strumenti di analisi](#learn-about-atp-safe-attachments-policy-options)
     
-## <a name="review-the-prerequisites"></a>Verificare i prerequisiti
+## <a name="step-1-review-the-prerequisites"></a>Passaggio 1: Verificare i prerequisiti
 
 - Verificare che l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md).
     
@@ -42,9 +42,10 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.
     
-## <a name="set-up-an-atp-safe-attachments-policy"></a>Configurare un criterio di allegati sicuri degli strumenti di analisi
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Passaggio 2: Configurare un criterio di allegati sicuri degli strumenti di analisi (o modifica)
 
-È possibile impostare un criterio di allegati sicuri degli strumenti di analisi utilizzando la protezione di Office 365 &amp; centro conformità o l'interfaccia di amministrazione di Exchange (EAC). **è consigliabile utilizzare la protezione di Office 365 &amp; centro conformità**. 
+> [!TIP]
+> È possibile impostare un criterio di allegati sicuri degli strumenti di analisi utilizzando la protezione di Office 365 &amp; centro conformità o l'interfaccia di amministrazione di Exchange (EAC). **è consigliabile utilizzare la protezione di Office 365 &amp; centro conformità**. 
   
 1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
@@ -58,27 +59,27 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
     **Esempio:** Per configurare un criterio non denominato "ritardi" che consente di eseguire immediatamente i messaggi di tutti gli utenti e quindi ricollega allegati dopo che si sta analisi, è possibile specificare le impostazioni seguenti: 
     
-  - Nella casella **nome** non digitare alcun ritardi.
+      - Nella casella **nome** non digitare alcun ritardi.
     
-  - Nella casella **Descrizione** digitare una descrizione like e fornisce messaggi immediatamente e gli allegati Ricollega dopo la scansione.
+      - Nella casella **Descrizione** digitare una descrizione like e fornisce messaggi immediatamente e gli allegati Ricollega dopo la scansione.
     
-  - Nella sezione response scegliere l'opzione di **Recapito dinamico** . ([Informazioni relative alla consegna dinamica e l'anteprima allegati sicuri degli strumenti di analisi di](dynamic-delivery-and-previewing.md)).
+      - Nella sezione response scegliere l'opzione di **Recapito dinamico** . ([Informazioni relative alla consegna dinamica e l'anteprima allegati sicuri degli strumenti di analisi di](dynamic-delivery-and-previewing.md)).
     
-  - Nella sezione **reindirizzare degli allegati** , selezionare l'opzione per abilitare reindirizza e digitare l'indirizzo di posta elettronica di amministratore globale, amministratore della sicurezza o analista di protezione che verrà analizzare gli allegati dannosi Office 365. 
+      - Nella sezione **reindirizzare degli allegati** , selezionare l'opzione per abilitare reindirizza e digitare l'indirizzo di posta elettronica di amministratore globale, amministratore della sicurezza o analista di protezione che verrà analizzare gli allegati dannosi Office 365. 
     
-  - Nella sezione **Applicato a** scegliere **il dominio del destinatario è**e quindi selezionare il dominio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
+      - Nella sezione **Applicato a** scegliere **il dominio del destinatario è**e quindi selezionare il dominio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
 6. Fare clic su **Salva**.
     
 È possibile impostare più criteri gli allegati sicuri degli strumenti di analisi per l'organizzazione. Questi criteri da applicare in ordine che sono elencate nella pagina **Allegati sicuri degli strumenti di analisi** . Dopo un criterio è stato definito o modificato, attendere almeno 30 minuti per i criteri per rendere effettive nell'intera datacenter Microsoft. 
   
-## <a name="learn-about-atp-safe-attachments-policy-options"></a>Informazioni sulle opzioni di criteri di allegati sicuri degli strumenti di analisi
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Passaggio 3: Informazioni sulle opzioni di criteri di allegati sicuri degli strumenti di analisi
 
 Per la configurazione di criteri di allegati sicuri degli strumenti di analisi, scegliere tra varie opzioni, tra Monitor, blocca, Sostituisci, recapito dinamico e così via. Nel caso in cui si desidera sapere per sulle operazioni di queste opzioni, nella tabella seguente sono riepilogati tutti e degli effetti.
   
 |**Opzione**|**Effetto**|**Utilizzare quando si desidera:**|
 |:-----|:-----|:-----|
-|**Off** <br/> |Non analizza allegati di malware  <br/> Non ritardare il recapito dei messaggi  <br/> |Disattivare l'analisi per mittenti interni, programmi antivirus, fax o smart host che invierà solo gli allegati e funzionante  <br/> Evitare ritardi non necessari in routing della posta interna  <br/> > [!IMPORTANT]> Questa opzione non è consigliata per la maggior parte degli utenti. Consente di disattivare la scansione degli allegati sicuri degli strumenti di analisi per un piccolo gruppo di mittenti interni.           |
+|**Off** <br/> |Non analizza allegati di malware  <br/> Non ritardare il recapito dei messaggi  <br/> |Disattivare l'analisi per mittenti interni, programmi antivirus, fax o smart host che invierà solo gli allegati e funzionante  <br/> Evitare ritardi non necessari in routing della posta interna  <br/> **Questa opzione non è consigliata per la maggior parte degli utenti. Consente di disattivare la scansione degli allegati sicuri degli strumenti di analisi per un piccolo gruppo di mittenti interni.**           |
 |**Monitor** <br/> |Recapito dei messaggi con allegati e quindi tiene traccia cosa accade a malware rilevato  <br/> |Vedere dove malware rilevato passa all'interno dell'organizzazione  <br/> |
 |**Blocco** <br/> |Impedisce che i messaggi con allegati malware rilevato dal procedere  <br/> Invia i messaggi con malware rilevato alla [quarantena in Office 365](manage-quarantined-messages-and-files.md) cui un amministratore della sicurezza o analista può esaminare e rilasciare (o eliminare) i messaggi  <br/> Blocca i messaggi futuri e allegati automaticamente  <br/> |Proteggere l'organizzazione da attacchi ripetuti utilizzando lo stessa allegati malware  <br/> |
 |**Sostituisce** <br/> |Rimuove rilevato malware degli allegati  <br/> Avvisare destinatari che siano stati rimossi gli allegati  <br/> Invia i messaggi con malware rilevato alla [quarantena in Office 365](manage-quarantined-messages-and-files.md) cui un amministratore della sicurezza o analista può esaminare e rilasciare (o eliminare) i messaggi  <br/> |Aumentare la visibilità ai destinatari che gli allegati sono state rimosse a causa di malware rilevato  <br/> |
