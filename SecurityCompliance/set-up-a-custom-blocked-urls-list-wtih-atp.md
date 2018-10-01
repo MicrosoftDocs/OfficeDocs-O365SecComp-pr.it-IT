@@ -3,7 +3,6 @@ title: Impostare un elenco di URL bloccato personalizzato con Office 365 degli s
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: In questo articolo per informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizza la protezione di Office 365 avanzate rischio. Gli URL bloccati verranno applicate a messaggi di posta elettronica e documenti di Office in base ai criteri di collegamenti sicuro degli strumenti di analisi.
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530844"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353252"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -56,9 +55,9 @@ In questo articolo per informazioni su come configurare personalizzato URL elenc
     
 |**Voce di esempio**|**Funzione**|
 |:-----|:-----|
-|`contoso.com`o`\*contoso.com\*`  <br/> |Blocca il dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com`, `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
+|`contoso.com`o`*contoso.com*`  <br/> |Blocca il dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com`, `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Blocca un sito `http://contoso.com/a` ma, come percorsi secondari non aggiuntive`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Blocca un sito `http://contoso.com/a` e i percorsi secondari aggiuntive`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Blocca un sito `http://contoso.com/a` e i percorsi secondari aggiuntive`http://contoso.com/a/b`  <br/> |
    
 5. Dopo aver aggiunto gli URL, nell'angolo inferiore destro dello schermo, scegliere **Salva**.
     
