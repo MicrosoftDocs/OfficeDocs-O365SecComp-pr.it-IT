@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le etichette in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 6c47f48a773b3b3078a5d4c83b01b5300ce82eda
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
+ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002679"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25342814"
 ---
 # <a name="overview-of-labels"></a>Panoramica delle etichette
 
@@ -267,22 +267,28 @@ Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere
     
 ![Opzioni per l'identificazione dei tipi di informazioni riservate](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-specific-keywords-or-searchable-properties"></a>Applicare automaticamente etichette al contenuto con parole chiave specifiche o con proprietà disponibili per le ricerche
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Applicare automaticamente etichette al contenuto con parole chiave o con proprietà disponibili per le ricerche
 
-È possibile applicare automaticamente etichette al contenuto che soddisfa determinate condizioni. Le condizioni disponibili ora supportano l'applicazione di un'etichetta al contenuto che include parole, frasi o proprietà disponibili per le ricerche specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT. Per altre informazioni sugli operatori e sulla sintassi di ricerca, vedere:
+È possibile applicare automaticamente etichette al contenuto che soddisfa determinate condizioni. Le condizioni disponibili ora supportano l'applicazione di un'etichetta al contenuto che include parole, frasi, valori o proprietà disponibili per le ricerche specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT. 
+
+Per altre informazioni sulla sintassi della query, vedere:
+
+- [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+Le etichette basate su query usano l’indice di ricerca per identificare il contenuto. Per altre informazioni sulle proprietà disponibili per la ricerca valide, vedere:
 
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
-- [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/crawled-and-managed-properties-overview)
   
 Esempi di query:
 
 - Exchange
     - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+
 - SharePoint e OneDrive for Business
     - contenttype:contract
-    - sito:`https://contoso.sharepoint.com/sites/teams/procurement` AND contenttype:contract
-  
-Si noti che le etichette basate su query usano l'indice di ricerca per identificare il contenuto.
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
   
 ![Editor di query](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
