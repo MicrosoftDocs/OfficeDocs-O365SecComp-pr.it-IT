@@ -3,7 +3,7 @@ title: Abilitare il controllo delle cassette postali in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: In Office 365, è possibile attivare registrazione di controllo della cassetta postale per la registrazione accessi effettuati dai proprietari delle cassette postali, i delegati e amministratori. Per impostazione predefinita, il controllo delle cassette postali in Office 365 non è attivato. Dopo aver abilitato la registrazione per una cassetta postale di controllo delle cassette postali, è possibile cercare il Registro di controllo di Office 365 per le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530626"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358385"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Abilitare il controllo delle cassette postali in Office 365
   
@@ -129,14 +129,14 @@ Nella tabella seguente vengono riportate le azioni che possono essere registrate
 |:-----|:-----|:-----|:-----|:-----|
 |**Copia** <br/> |Messaggio copiato in un'altra cartella.  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
 |**Create** <br/> |Viene creato un elemento nella cartella Calendario, contatti, note o attività nella cassetta postale; ad esempio, viene creata una nuova convocazione riunione. Si noti che non è possibile controllare la creazione, inviare né ricevere un messaggio. Inoltre, non è controllata la creazione di una cartella delle cassette postali.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
-|**FolderBind** <br/> |Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.  <br/> |Sì\*  <br/> |Sì\*\*  <br/> |No  <br/> |
+|**FolderBind** <br/> |Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.  <br/> |Sì  <br/> |Sì\*\*  <br/> |No  <br/> |
 |**HardDelete** <br/> |Messaggio eliminato dalla cartella Elementi ripristinabili.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
 |**MailboxLogin** <br/> |Accesso effettuato dall'utente alla propria cassetta postale.  <br/> |No  <br/> |No  <br/> |Sì  <br/> |
 |**MessageBind** <br/> |Messaggio visualizzato nel riquadro di anteprima o aperto.  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
-|**Move** <br/> |Messaggio spostato in un'altra cartella.  <br/> |Sì\*  <br/> |Sì  <br/> |Sì  <br/> |
-|**MoveToDeletedItems** <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |Sì\*  <br/> |Sì  <br/> |Sì  <br/> |
+|**Move** <br/> |Messaggio spostato in un'altra cartella.  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|**MoveToDeletedItems** <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
 |**SendAs** <br/> |Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.  <br/> |Sì\*  <br/> |Sì\*  <br/> |No  <br/> |
-|**SendOnBehalf** <br/> |Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.  <br/> |Sì\*  <br/> |Sì  <br/> |No  <br/> |
+|**SendOnBehalf** <br/> |Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.  <br/> |Sì\*  <br/> |Sì\*  <br/> |No  <br/> |
 |**SoftDelete** <br/> |Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
 |**Aggiorna** <br/> |Modifiche apportate a un messaggio o alle relative proprietà.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
 |**UpdateCalendarDelegation** <br/> |Una delega per il calendario è stata assegnata a una cassetta postale. Delega per il calendario permette di utilizzare un utente nelle stesse autorizzazioni dell'organizzazione per gestire il calendario del proprietario della cassetta postale.  <br/> |Sì\*  <br/> |No  <br/> |Sì\*  <br/> |
@@ -144,7 +144,7 @@ Nella tabella seguente vengono riportate le azioni che possono essere registrate
 |**UpdateInboxRules** <br/> |È stato aggiunta, rimossa o modifica una regola di posta in arrivo. Regole posta in arrivo vengono utilizzate per elaborare i messaggi di posta in arrivo dell'utente in base alle condizioni specificate ed eseguire azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o eliminazione di un messaggio.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Per impostazione predefinita controllati se è abilitato il controllo di una cassetta postale. > <sup> \* </sup> Consolidate voci per le azioni di binding cartella eseguite dai delegati. Una voce di registro viene generata per l'accesso alle cartelle singole durante un periodo di 24 ore. > <sup> \* \* </sup> Amministratore è stata assegnata l'autorizzazione accesso completo alla cassetta postale dell'utente è considerato un utente delegato. 
+> <sup>\*</sup>Per impostazione predefinita controllati se è abilitato il controllo di una cassetta postale.<br/><br/>  <sup>\*\*</sup>Consolidate voci per le azioni di binding cartella eseguite dai delegati. Una voce di registro viene generata per l'accesso alle cartelle singole durante un periodo di 24 ore.<br/><br/><sup>\*\*\*</sup>Un amministratore è stata assegnata l'autorizzazione accesso completo alla cassetta postale dell'utente viene considerato un utente delegato. 
   
 Se non è più necessario determinati tipi di azioni della cassetta postale da controllare, è necessario modificare di configurazione della registrazione di controllo della cassetta postale per disabilitare le azioni. Voci di registro esistenti non vengono eliminate fino a raggiunta il limite di validità di 90 giorni per le voci del Registro di controllo.
   

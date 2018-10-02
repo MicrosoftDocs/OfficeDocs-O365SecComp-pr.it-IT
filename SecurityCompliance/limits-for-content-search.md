@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informazioni sui limiti valido per la funzionalità di ricerca del contenuto in Office 365 Security &amp; centro conformità, ad esempio il numero massimo di ricerche simultanee. '
-ms.openlocfilehash: 896d1fb5aafb7ae28f00c5e19af229415d800f36
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 917351f380c81ebfabfd4b3ff05a534c65c8f318
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530834"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358375"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Limiti per la ricerca del contenuto in Office 365 protezione &amp; centro conformità
 
@@ -45,7 +45,7 @@ Nella tabella seguente sono elencati i limiti di ricerca nella protezione &amp; 
 |:-----|:-----|
 |Il numero massimo di cassette postali o siti che possono essere ricercati in una singola ricerca contenuto  <br/> |Nessun limite  <br/> |
 |Il numero massimo di ricerche di contenuto che è possibile eseguire contemporaneamente all'interno dell'organizzazione.  <br/> |Nessun limite  <br/> |
-|Il numero massimo di ricerche di contenuto che un singolo utente possono essere avviati contemporaneamente. Si noti che questo limite viene raggiunto più comodo quando l'utente tenta di avviare più ricerche utilizzando il **Get-ComplianceSearch \| Start ComplianceSearch** comando PowerShell centro conformità e sicurezza.<br/> |10   <br/> |
+|Il numero massimo di ricerche di contenuto che un singolo utente possono essere avviati contemporaneamente. Si noti che questo limite viene raggiunto più comodo quando l'utente tenta di avviare più ricerche utilizzando il **Get-ComplianceSearch \| Start ComplianceSearch** comando PowerShell centro conformità e sicurezza.<br/> |10    <br/> |
 |Il numero massimo di elementi per ogni cassetta postale dell'utente che vengono visualizzati nella pagina di anteprima durante l'anteprima dei risultati di ricerca del contenuto.  <br/> |100  <br/> |
 |Numero massimo di elementi disponibili in tutte le cassette postali degli utenti che vengono visualizzati nella pagina di anteprima durante l'anteprima dei risultati di ricerca del contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |1,000  <br/> |
 |Il numero massimo di cassette postali degli utenti che possono essere visualizzati in anteprima dei risultati della ricerca. Se sono presenti più di 1000 cassette postali che includono contenuto corrispondente alla query di ricerca, solo le prime 1000 cassette postali con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |1,000  <br/> |
@@ -54,13 +54,13 @@ Nella tabella seguente sono elencati i limiti di ricerca nella protezione &amp; 
 |Il numero massimo di elementi per ogni cassetta postale di cartelle pubbliche che vengono visualizzati nella pagina di anteprima durante l'anteprima dei risultati di ricerca del contenuto.  <br/> |100  <br/> |
 |Numero massimo di elementi disponibili in tutte le cassette postali di cartelle pubbliche che vengono visualizzate nella pagina di anteprima durante l'anteprima dei risultati di ricerca del contenuto.  <br/> |200  <br/> |
 |Il numero massimo di cassette postali pubbliche possono visualizzare in anteprima dei risultati della ricerca. Se sono presenti più di 500 cassette postali delle cartelle pubbliche che includono contenuto corrispondente alla query di ricerca, solo le prime 500 cartelle pubbliche cassette postali con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |500  <br/> |
-|Numero massimo di caratteri per la query di ricerca (inclusi gli operatori e condizioni) per una ricerca di contenuto.  <br/> **Nota:** Questo limite avrà effetto dopo la query viene espansa, ovvero le che query verrà ottenere espansa per ognuna delle parole chiave. Ad esempio, se una query di ricerca è 15 parole chiave e parametri aggiuntivi e le condizioni, la query viene espanso 15 volte, ognuno con gli altri parametri e le condizioni nella query. Anche se il numero di caratteri inclusi nella query di ricerca può essere inferiore al limite, è la query espansa che può contribuire alla se si supera questo limite.<br/> |**Le cassette postali:** 10.000  <br/> **Siti:** 4.000 durante la ricerca di tutti i siti o 2.000 durante la ricerca un massimo di 20 siti <sup>1</sup> <br/> |
-|Numero massimo di valori Variant restituiti quando si utilizza un prefisso con caratteri jolly per cercare una frase specifica in una query di ricerca o quando si utilizza un carattere jolly prefisso e l'operatore booleano **NEAR** o **ONEAR** .  <br/> |10.000<sup>2</sup> <br/> |
-|Il numero minimo di caratteri alfabetici per i caratteri jolly prefisso; ad esempio `time*`, `one*`, o `set*`.  <br/> |3  <br/> |
+|Numero massimo di caratteri per la query di ricerca (inclusi gli operatori e condizioni) per una ricerca di contenuto.  <br/><br/> **Nota:** Questo limite avrà effetto dopo la query viene espansa, ovvero le che query verrà ottenere espansa per ognuna delle parole chiave. Ad esempio, se una query di ricerca è 15 parole chiave e parametri aggiuntivi e le condizioni, la query viene espanso 15 volte, ognuno con gli altri parametri e le condizioni nella query. Anche se il numero di caratteri inclusi nella query di ricerca può essere inferiore al limite, è la query espansa che può contribuire alla se si supera questo limite.<br/> |**Le cassette postali:** 10.000  <br/> **Siti:** 4.000 durante la ricerca di tutti i siti o 2.000 durante la ricerca un massimo di 20 siti <sup>1</sup> <br/> |
+|Numero massimo di valori Variant restituiti quando si utilizza un prefisso con caratteri jolly per cercare una frase specifica in una query di ricerca o quando si utilizza un carattere jolly prefisso e l'operatore booleano **NEAR** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
+|Il numero minimo di caratteri alfabetici per i caratteri jolly prefisso; ad esempio `time*`, `one*`, o `set*`.  <br/> |3   <br/> |
 |Il numero massimo di cassette postali in una ricerca di contenuto che è possibile eliminare gli elementi nel eseguendo un'azione "cercare ed eliminare" (utilizzando il **ComplianceSearchAction New-eliminare** comando). Se la ricerca del contenuto che si sta eseguendo un'azione di eliminazione per dispone di più cassette postali di origine questo limite, l'azione di eliminazione avrà esito negativo. Per ulteriori informazioni sulla ricerca ed eliminazione, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> |50.000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> durante la ricerca di SharePoint e OneDrive per i percorsi di Business, gli URL dei siti in cui cercare i caratteri vengono contati su questo limite. > <sup>2</sup> per le query non frase (un valore parola chiave che non utilizza le virgolette doppie) viene utilizzato un indice prefisso speciale. Ciò indica che si verifica una parola in un documento, ma non dove si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con le virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole nella frase. Ciò significa che è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, è internamente espandere le query con tutte le parole possibili che si espande il prefisso per; ad esempio `"time*"` possibile espandere a `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 è il numero massimo di valori Variant che può espandere la parola e non il numero di documenti che soddisfano la query. Non esiste alcun limite massimo di termini non frase. 
+> <sup>1</sup> durante la ricerca di SharePoint e OneDrive per i percorsi di Business, gli URL dei siti in cui cercare i caratteri vengono contati su questo limite.<br/> <sup>2</sup> per le query non frase (un valore parola chiave che non utilizza le virgolette doppie) viene utilizzato un indice prefisso speciale. Ciò indica che si verifica una parola in un documento, ma non dove si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con le virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole nella frase. Ciò significa che è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, è internamente espandere le query con tutte le parole possibili che si espande il prefisso per; ad esempio `"time*"` possibile espandere a `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 è il numero massimo di valori Variant che può espandere la parola e non il numero di documenti che soddisfano la query. Non esiste alcun limite massimo di termini non frase. 
   
 [Inizio pagina](limits-for-content-search.md#top)
   
@@ -71,7 +71,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che possono 
   
 |**Limite di indicizzazione**|**Note**|**Descrizione**|
 |:-----|:-----|:-----|
-|Dimensione massima degli allegati (esclusi i file di Excel)  <br/> |150 MB  <br/> |La dimensione massima di un allegato di posta elettronica che consente di analizzare per l'indicizzazione. Gli allegati che superano questo limite non vengono analizzati per l'indicizzazione e il messaggio con allegato viene contrassegnato come parzialmente indicizzato.<br/> > [!NOTE]> L'analisi è il processo di cui il servizio di indicizzazione estrae il testo dalla allegato, rimuove i caratteri non necessari, ad esempio i segni di punteggiatura e spazi e quindi lo divide il testo in parole (in un processo denominato la suddivisione in token), che vengono memorizzati in corrispondenza dell'indice.           |
+|Dimensione massima degli allegati (esclusi i file di Excel)  <br/> |150 MB  <br/> |La dimensione massima di un allegato di posta elettronica che consente di analizzare per l'indicizzazione. Gli allegati che superano questo limite non vengono analizzati per l'indicizzazione e il messaggio con allegato viene contrassegnato come parzialmente indicizzato.<br/> <br/>**Nota:** L'analisi è il processo di cui il servizio di indicizzazione estrae il testo dalla allegato, rimuove i caratteri non necessari, ad esempio i segni di punteggiatura e spazi e quindi lo divide il testo in parole (in un processo denominato la suddivisione in token), che vengono memorizzati in corrispondenza dell'indice.           |
 |Dimensione massima dei file di Excel  <br/> |4 MB  <br/> |La dimensione massima di un file di Excel presente in un sito o associato a un messaggio di posta elettronica che viene analizzato per l'indicizzazione. Eventuali file di Excel che è maggiore della non verrà analizzato questo limite e il file o messaggio di posta elettronica che il messaggio con allegato il file verrà contrassegnato come non indicizzate.  <br/> |
 |Numero massimo di allegati  <br/> |250  <br/> |Numero massimo di file allegato al messaggio di posta elettronica che viene analizzato per l'indicizzazione. Se un messaggio non ha più di 250 allegati, i primi 250 allegati vengono analizzati e indicizzati e il messaggio è contrassegnato come parzialmente indicizzato perché era allegati aggiuntivi che non sono stati analizzati.  <br/> |
 |Profondità massima degli allegati  <br/> |30  <br/> |Il numero massimo di allegati nidificati che vengono analizzati. Ad esempio, se un messaggio di posta elettronica con un altro messaggio associato e il messaggio allegato è un documento di Word, il documento di Word e il messaggio allegato verrà essere indicizzati. Questo comportamento continua per gli allegati annidati fino a 30.  <br/> |
@@ -101,7 +101,7 @@ Per informazioni sulle ricerche del contenuto, vedere:
   
 - [Ricerca del contenuto in Office 365](content-search.md)
     
-- [Query delle parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
+- [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
     
 [Inizio pagina](limits-for-content-search.md#top)
   
