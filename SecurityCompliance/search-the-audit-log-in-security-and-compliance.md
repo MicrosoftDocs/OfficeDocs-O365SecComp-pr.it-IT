@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974686"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363149"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
 
@@ -50,9 +50,9 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 
 - Attività di amministratore e utente in Dynamics 365
     
-- Attività di amministratore e utente in Microsoft Flow
-
 - Attività di amministrazione e utente in Yammer
+ 
+- Attività di amministratore e utente in Microsoft Flow
     
 - Attività di amministratore e utente Stream Microsoft
     
@@ -71,6 +71,15 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     > [!IMPORTANT]
     > Se si assegna un utente il ruolo registri di controllo View-Only o i registri di controllo nella pagina **autorizzazioni** di sicurezza &amp; centro conformità, non saranno in grado di eseguire ricerche nel Registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante utilizzato per cercare il Registro di controllo è un cmdlet di Exchange Online. 
   
+- Quando viene eseguita un'attività controllata da un utente o un amministratore, il record di un controllo viene generato e memorizzato nel Registro di controllo di Office 365 per l'organizzazione. Il periodo di tempo che il record di un controllo viene ritenuta (e disponibili per le ricerche nel Registro di controllo) dipende la sottoscrizione a Office 365.
+
+     - **Office 365 E3** - controllo record vengono conservati per 90 giorni. Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività che sono state eseguite negli ultimi 90 giorni.
+
+     - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività eseguite nell'ultimo anno. Conservazione dei record di verifica per un anno è disponibile anche per le organizzazioni che dispongono di una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di Office 365 avanzate conformità.
+
+        > [!NOTE]
+        > Il periodo di conservazione di un anno per i record di controllo è attualmente disponibile come parte di Office 365 Preview programmare ed è disponibile solo per le organizzazioni con una sottoscrizione E5 che partecipano al programma di anteprima. Inoltre, i record per le attività che sono stati eseguiti prima ottobre 2018 ancora essere conservati per 90 giorni solo controllo. A partire da ottobre 2018 nuovi record controllo verrà mantenuto per un anno per le organizzazioni con una sottoscrizione E5 o che hanno una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di conformità avanzate.
+
 - Se si desidera disattivare la ricerca dei registri di controllo in Office 365 per l'organizzazione, è possibile eseguire il seguente comando di PowerShell remoto connesso all'organizzazione Exchange Online:
     
   ```
@@ -88,8 +97,6 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
 - Come descritto in precedenza, il cmdlet sottostante utilizzato per cercare il Registro di controllo è un cmdlet di Exchange Online, ovvero **UnifiedAuditLog di ricerca**. Che indica che è possibile utilizzare questo cmdlet per la ricerca nel Registro di controllo di Office 365 anziché utilizzare la pagina di **ricerca dei registri di controllo** della protezione &amp; centro conformità. È necessario eseguire questo cmdlet di PowerShell remoto connesso all'organizzazione Exchange Online. Per ulteriori informazioni, vedere [UnifiedAuditLog di ricerca](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Se si desidera scaricare a livello di programmazione i dati dal Registro di controllo di Office 365, è consigliabile utilizzare l'API di Office 365 Gestione attività anziché utilizzare uno script di PowerShell. L'API di Office 365 Gestione attività è un servizio web REST che è possibile utilizzare per lo sviluppo di soluzioni di monitoraggio di conformità per l'organizzazione, sicurezza e operazioni. Per ulteriori informazioni, vedere [Guida di riferimento API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
-    
-- È possibile cercare il Registro di controllo di Office 365 per le attività che sono state eseguite negli ultimi 90 giorni.
     
 - Potrebbe richiedere fino a 30 minuti o up a 24 ore dopo l'evento si verifica per la voce del Registro di controllo corrispondente da visualizzare nei risultati della ricerca. Nella tabella seguente mostra il tempo che necessario per i diversi servizi in Office 365.
     
@@ -287,7 +294,8 @@ Fare clic su uno dei collegamenti seguenti per accedere a una tabella specifica.
 |[Sway delle attività](#sway-activities) <br/> |[Attività di amministrazione dell'utente](#user-administration-activities) <br/> |[Attività di amministrazione di Azure Active Directory gruppo](#azure-ad-group-administration-activities) <br/> |
 |[Attività di amministrazione di applicazione](#application-administration-activities) <br/> |[Attività di amministrazione ruoli](#role-administration-activities) <br/> |[Attività di amministrazione di directory](#directory-administration-activities) <br/> |
 |[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |[Attività Teams Microsoft](#microsoft-teams-activities) <br/> |
-|[Attività di Yammer](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Log di controllo di amministrazione di Exchange](#exchange-admin-audit-log) <br/> |
+|[Attività di Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Log di controllo di amministrazione di Exchange](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>Attività di file e pagina
@@ -664,6 +672,11 @@ Nella tabella seguente sono elencati l'utente e Registro di controllo attività 
 |Nome del file aggiornato  <br/> |FileUpdateName  <br/> |Utente modifica il nome di un file.  <br/> |
 |File visualizzati  <br/> |FileVisited  <br/> |Utente apre un file.  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+È possibile cercare il Registro di controllo per le attività in Microsoft Flow. Queste attività includono creazione, modifica e l'eliminazione di flussi e modifica delle autorizzazioni per il flusso. Per informazioni sulle impostazioni di controllo per le attività di flusso, vedere il blog [Flusso Microsoft controllare gli eventi ora disponibili nel centro conformità e sicurezza di Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 È possibile cercare il Registro di controllo per le attività di Microsoft Stream. Queste attività includono video attività eseguite dagli utenti, le attività del canale di gruppo e le attività di amministrazione, ad esempio gestione degli utenti, gestione delle impostazioni dell'organizzazione e l'esportazione di report. Per una descrizione di queste attività, vedere la sezione "Attività registrata nel Microsoft Stream" nei [Registri di controllo nel flusso Microsoft](https://docs.microsoft.com/stream/audit-logs).
@@ -702,9 +715,16 @@ Vedere la sezione [attività Audited](#audited-activities) in questo articolo pe
 
 La maggior parte dei dati di controllo sono disponibili all'interno di 30 minuti, ma potrebbe richiedere fino a 24 ore dopo che si verifica un evento per la voce del Registro di controllo corrispondente da visualizzare nei risultati della ricerca. Vedere la tabella nella sezione di questo articolo che mostra il tempo che necessario per gli eventi in diversi servizi di Office 365 sia disponibile [prima di iniziare](#before-you-begin) .
 
-**Per quanto tempo verranno conservati per i record DNS controllo?**
+**Quanto tempo vengono conservati i record di verifica per**
 
-Attualmente record del Registro di controllo vengono conservati per 90 giorni. Microsoft è impegnata attivamente un piano per incrementare il limite. 
+Come indicato in precedenza, il periodo di conservazione di record di verifica dipende dalla sottoscrizione a Office 365 dell'organizzazione.  
+
+- **Office 365 E3** - controllo record vengono conservati per 90 giorni.
+
+- **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Conservazione dei record di verifica per un anno è disponibile anche per le organizzazioni che dispongono di una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di Office 365 avanzate conformità.
+
+     > [!NOTE]
+     > Il periodo di conservazione di un anno per i record di controllo è attualmente disponibile solo per le organizzazioni che vengono iscritti al programma di Office 365 Preview.
 
 **È possibile accedere il controllo dei dati a livello di programmazione?**
 
