@@ -19,16 +19,16 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 9199c69d73a1585d76181c7a5feba79e465289db
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972348"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435113"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
-Collegamenti sicuro degli strumenti di analisi Office 365 (degli strumenti di analisi collegamenti sicuro) (insieme a [Office 365 degli strumenti di analisi provvisoria allegati](atp-safe-attachments.md)) è un set di caratteristiche di sicurezza distribuito come parte di [Protezione di Office 365 avanzate minaccia](office-365-atp.md) per le organizzazioni aziendali. Collegamenti sicuro degli strumenti di analisi consentono di proteggere l'organizzazione fornendo il momento del clic verifica degli indirizzi web (URL) in messaggi di posta elettronica e documenti di Office. Protezione viene definita tramite i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) impostate dal team di protezione di Office 365. 
+Collegamenti sicuro degli strumenti di analisi Office 365 (degli strumenti di analisi collegamenti sicuro) (insieme a [Office 365 degli strumenti di analisi provvisoria allegati](atp-safe-attachments.md)) è un set di caratteristiche di sicurezza distribuito come parte di [Protezione di Office 365 avanzate minaccia](office-365-atp.md) per le organizzazioni aziendali. Collegamenti sicuro degli strumenti di analisi consentono di proteggere l'organizzazione fornendo il momento del clic verifica degli indirizzi web (URL) in [Office documenti](#how-atp-safe-links-works-with-office-documents)e [messaggi di posta elettronica](#how-atp-safe-links-works-with-email) . Protezione viene definita tramite i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) impostate dal team di protezione di Office 365. 
   
 Dopo aver installato i criteri degli strumenti di analisi collegamenti sicuro sul posto, gli amministratori globali di Office 365, security administrators e lettori sicurezza possono [visualizzare i report per la protezione avanzata di rischio](view-reports-for-atp.md). Le informazioni contenute in questi rapporti consentono al team di protezione eseguire ulteriori passaggi per proteggere l'organizzazione o problemi di protezione di ricerca.
          
@@ -84,13 +84,15 @@ Stiamo continuando ad aggiungere nuove caratteristiche degli strumenti di analis
   
 - A partire da ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL nel messaggio di posta elettronica, nonché gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint e Visio in Windows, nonché Office apps iOS e dispositivi Android. (Verificare che si sta utilizzando [l'Autenticazione moderno per Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
     
-- A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione.
+- A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione. (Assicurarsi di [esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md).)
 
-- A partire da giugno 2018, quando gli utenti utilizzano Outlook Web Application (OWA), degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali e visualizzare gli URL riscritto. Ciò consente agli utenti di visualizzare i collegamenti originali nel messaggio di posta elettronica. (Questa funzionalità non sono ancora disponibile per le applicazioni client di Outlook.)
-    
-- A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac.
-    
+- A partire da giugno 2018, quando gli utenti utilizzano Outlook Web Application (OWA), degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali e visualizzare gli URL riscritto. Ciò consente agli utenti di visualizzare i collegamenti originali nel messaggio di posta elettronica. (Viene chiamato questo collegamento nativa visbility).
+
 - Inizio in settembre 2018, [pagine di avviso degli strumenti di analisi di Office 365](atp-safe-links-warning-pages.md) caratteristica una nuova combinazione di colori, ulteriori dettagli e la possibilità di continuare a un sito nonostante assegnate gli avvisi e suggerimenti. 
+  
+- A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac. (Assicurarsi di [esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md).)
+   
+- A partire da 2018 ritardo visibilità collegamento nativi è disponibile in Outlook. Gli utenti sono in grado di visualizzare l'URL originale (non riscritto URL) nella posta elettronica, sia che si utilizzi OWA o Outlook.
     
 ## <a name="how-to-get-atp-safe-links-protection"></a>Come ottenere protezione degli strumenti di analisi collegamenti sicuri
 
@@ -130,7 +132,7 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio in protezione
   
 [Allegati degli strumenti di analisi sicuro in Office 365](atp-safe-attachments.md)
   
-[Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
+[Funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   
 [Visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md)
   

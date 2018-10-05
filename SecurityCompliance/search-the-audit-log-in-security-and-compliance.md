@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
-ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
+ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25363149"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435123"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
 
@@ -71,14 +71,14 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     > [!IMPORTANT]
     > Se si assegna un utente il ruolo registri di controllo View-Only o i registri di controllo nella pagina **autorizzazioni** di sicurezza &amp; centro conformità, non saranno in grado di eseguire ricerche nel Registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante utilizzato per cercare il Registro di controllo è un cmdlet di Exchange Online. 
   
-- Quando viene eseguita un'attività controllata da un utente o un amministratore, il record di un controllo viene generato e memorizzato nel Registro di controllo di Office 365 per l'organizzazione. Il periodo di tempo che il record di un controllo viene ritenuta (e disponibili per le ricerche nel Registro di controllo) dipende la sottoscrizione a Office 365.
+- Quando viene eseguita un'attività controllata da un utente o un amministratore, il record di un controllo viene generato e memorizzato nel Registro di controllo di Office 365 per l'organizzazione. Il periodo di tempo che il record di un controllo viene ritenuta (e disponibili per le ricerche nel Registro di controllo) dipende la sottoscrizione a Office 365 e in particolare il tipo di licenza che viene assegnato a un utente specifico.
 
      - **Office 365 E3** - controllo record vengono conservati per 90 giorni. Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività che sono state eseguite negli ultimi 90 giorni.
 
-     - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività eseguite nell'ultimo anno. Conservazione dei record di verifica per un anno è disponibile anche per le organizzazioni che dispongono di una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di Office 365 avanzate conformità.
+     - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività eseguite nell'ultimo anno. Conservazione dei record di verifica per un anno è disponibile anche per gli utenti che sono assegnati a una licenza E3/Exchange Online piano 1 e dispongono di una licenza di componente aggiuntivo di Office 365 avanzate conformità.
 
         > [!NOTE]
-        > Il periodo di conservazione di un anno per i record di controllo è attualmente disponibile come parte di Office 365 Preview programmare ed è disponibile solo per le organizzazioni con una sottoscrizione E5 che partecipano al programma di anteprima. Inoltre, i record per le attività che sono stati eseguiti prima ottobre 2018 ancora essere conservati per 90 giorni solo controllo. A partire da ottobre 2018 nuovi record controllo verrà mantenuto per un anno per le organizzazioni con una sottoscrizione E5 o che hanno una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di conformità avanzate.
+        > Il periodo di conservazione di un anno per i record di controllo saranno disponibili non appena come parte di Office 365 Preview programmare e saranno disponibili solo per le organizzazioni iscritti al programma di anteprima. Durante il periodo di conservazione più lungo di record di verifica diventano disponibile in anteprima (e versioni successive per garantire la disponibilità generale), verrà mantenuto solo nuovi record audit (per le attività eseguite dopo il rilascio del periodo di conservazione più lungo) per un anno.
 
 - Se si desidera disattivare la ricerca dei registri di controllo in Office 365 per l'organizzazione, è possibile eseguire il seguente comando di PowerShell remoto connesso all'organizzazione Exchange Online:
     
@@ -724,7 +724,9 @@ Come indicato in precedenza, il periodo di conservazione di record di verifica d
 - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Conservazione dei record di verifica per un anno è disponibile anche per le organizzazioni che dispongono di una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di Office 365 avanzate conformità.
 
      > [!NOTE]
-     > Il periodo di conservazione di un anno per i record di controllo è attualmente disponibile solo per le organizzazioni che vengono iscritti al programma di Office 365 Preview.
+     > Il periodo di conservazione di un anno per il controllo record non appena saranno disponibili per le organizzazioni che vengono iscritti al programma di Office 365 Preview.
+
+Si noti inoltre che la durata del periodo di conservazione per i record di controllo è basata sulla gestione delle licenze per utente. Ad esempio, se un utente nell'organizzazione viene assegnato una licenza di Office 365 E3, i record di verifica per le attività eseguite dall'utente vengono conservati per 90 giorni. Se un altro utente viene assegnato una licenza di Office 365 E5, i record di controllo vengono conservati per un anno. 
 
 **È possibile accedere il controllo dei dati a livello di programmazione?**
 
