@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782113"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454303"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
-Se l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md) (degli strumenti di analisi) e si dispone delle autorizzazioni necessarie, è possibile utilizzare diversi report degli strumenti di analisi della protezione &amp; centro conformità. (Accedere ai **rapporti** \> **Dashboard**.)
+Se l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md) (degli strumenti di analisi) e si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile utilizzare diversi report degli strumenti di analisi della protezione &amp; centro conformità. (Accedere ai **rapporti** \> **Dashboard**.)
   
 ![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Report degli strumenti di analisi includono la relazione sullo stato di protezione rischio, il rapporto di tipi di File degli strumenti di analisi e il report di disposizione degli strumenti di analisi del messaggio. In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a ulteriori report da visualizzare.
+I report degli strumenti di analisi includono [relazione sullo stato di protezione rischio](#threat-protection-status-report), il [rapporto di tipi di File degli strumenti di analisi](#atp-file-types-report)e il [rapporto di disposizione degli strumenti di analisi del messaggio](#atp-message-disposition-report). In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a [ulteriori report da visualizzare](#additional-reports-to-view).
   
 ## <a name="threat-protection-status-report"></a>Relazione sullo stato di protezione rischio
 
@@ -77,9 +77,9 @@ Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, sono 
   
 E, se l'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md), è anche possibile [utilizzare Esplora nella protezione &amp; centro conformità](use-explorer-in-security-and-compliance.md).
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Autorizzazioni necessarie per visualizzare questi rapporti?
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Autorizzazioni necessarie per visualizzare i report degli strumenti di analisi?
 
-Per visualizzare e utilizzare i rapporti di protezione posta elettronica descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato nella protezione &amp; centro conformità e nell'interfaccia di amministrazione di Exchange.
+Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato nella protezione &amp; centro conformità e nell'interfaccia di amministrazione di Exchange.
   
 |**Gruppo di ruoli**|**Dove assegnato**|**Altre informazioni**|
 |:-----|:-----|:-----|

@@ -3,7 +3,6 @@ title: Impostare i criteri di sicurezza allegati di Office 365 degli strumenti d
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092942"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454283"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -43,9 +42,6 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Passaggio 2: Configurare un criterio di allegati sicuri degli strumenti di analisi (o modifica)
-
-> [!TIP]
-> È possibile impostare un criterio di allegati sicuri degli strumenti di analisi utilizzando la protezione di Office 365 &amp; centro conformità o l'interfaccia di amministrazione di Exchange (EAC). **è consigliabile utilizzare la protezione di Office 365 &amp; centro conformità**. 
   
 1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     

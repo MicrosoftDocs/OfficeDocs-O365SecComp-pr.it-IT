@@ -3,7 +3,6 @@ title: Visualizzare i report di protezione posta elettronica in sicurezza &amp; 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531471"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454343"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
-Protezione della posta elettronica diversi report sono disponibili per la protezione &amp; centro conformità che consentono di vedere modalità di protezione antispam e antimalware caratteristiche di Office 365 dell'organizzazione. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare questi rapporti in sicurezza &amp; centro conformità accedendo ai **rapporti** \> **Dashboard**.
+Protezione della posta elettronica diversi report sono disponibili per la protezione &amp; centro conformità che consentono di vedere modalità di protezione antispam e antimalware caratteristiche di Office 365 dell'organizzazione. Se si dispone [delle autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare questi rapporti in sicurezza &amp; centro conformità accedendo ai **rapporti** \> **Dashboard**.
   
 ![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
