@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496900"
+ms.locfileid: "25498112"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -55,7 +55,7 @@ I messaggi in secondo luogo, spoofing creare incertezze per gli utenti che conos
   
 Il messaggio è stato provengono da Microsoft, ma al contempo, gli utenti vengono utilizzati per il recupero di messaggi di phishing può indurre un utente a fare clic su un collegamento e che le credenziali, download malware o la risposta a un messaggio con contenuto riservato. Poiché è difficile stabilire la differenza tra una reimpostazione della password reali e un falso, molti utenti ignorano questi messaggi, segnalarli come posta indesiderata o inutilmente restituiscono i messaggi a Microsoft come persa tentativi di phishing.
     
-Per arrestare lo spoofing, il filtro settore della posta elettronica ha sviluppato i protocolli di autenticazione di posta elettronica, ad esempio [SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx), [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)e [DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx). DMARC impedisce lo spoofing analisi mittente del messaggio - quello che viene visualizzato nel proprio client di posta elettronica (negli esempi precedenti, si tratta service.outlook.com, outlook.com e accountprotection.microsoft.com) - con il dominio che passa SPF o DKIM. Vale a dire il dominio che viene visualizzato è stato autenticato e pertanto è non spoofing. Per un esame approfondito, vedere la sezione " *informazioni sui motivi per cui l'autenticazione di posta elettronica non è sempre sufficienti per arrestare lo spoofing"* più avanti in questo documento. 
+Per arrestare lo spoofing, il filtro settore della posta elettronica ha sviluppato i protocolli di autenticazione di posta elettronica, ad esempio [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impedisce lo spoofing analisi mittente del messaggio - quello che viene visualizzato nel proprio client di posta elettronica (negli esempi precedenti, si tratta service.outlook.com, outlook.com e accountprotection.microsoft.com) - con il dominio che passa SPF o DKIM. Vale a dire il dominio che viene visualizzato è stato autenticato e pertanto è non spoofing. Per un esame approfondito, vedere la sezione "*informazioni sui motivi per cui l'autenticazione di posta elettronica non è sempre sufficienti per arrestare lo spoofing"* più avanti in questo documento. 
   
 Tuttavia, il problema è che l'autenticazione di posta elettronica record sono facoltativi, non è necessario. Di conseguenza, mentre i domini con i criteri di autenticazione avanzata like microsoft.com e skype.com sono protetti da attacchi di spoofing, domini pubblicare in tutti i criteri di autenticazione più vulnerabili o nessun criterio, sono obiettivi di spoofing. A partire da marzo 2018, solo 9% dei domini di società in Fortune 500 pubblicare criteri di autenticazione tramite posta elettronica sicuro. Le restanti 91% potrebbe spoofing da parte di un specificati e a meno che non viene rilevato dal filtro per la posta utilizzando un altro criterio, può essere recapitato a un utente finale e inganno li:
   
@@ -65,7 +65,7 @@ La percentuale di piccole e medie dimensioni società che non sono in Fortune 50
   
 Si tratta di un grosso problema quanto mentre le organizzazioni potrebbero non essere consapevoli di funzionamento dell'autenticazione di posta elettronica, autori comprendere e sfruttare la mancanza di esso.
   
-Per informazioni sull'impostazione SPF, DKIM e DMARC, vedere la sezione " *ai clienti di Office 365"* più avanti in questo documento. 
+Per informazioni sull'impostazione SPF, DKIM e DMARC, vedere la sezione "*ai clienti di Office 365"* più avanti in questo documento. 
   
 ## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Arresto spoofing con l'autenticazione di posta elettronica implicita
 
@@ -619,11 +619,11 @@ Se non è un amministratore che attualmente invia messaggi a Microsoft, Office 3
 
 In caso di un cliente di Office 365 e si utilizza Office 365 per inviare la posta elettronica in uscita:
   
-- Per i domini, [configurare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)
+- Per i domini, [configurare SPF in Office 365 per evitare attacchi di spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- Per i domini principali, [Utilizzare la per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)
+- Per i domini principali, [Utilizzare la per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [È consigliabile configurare record DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx) per il dominio per determinare chi sono i mittenti legittimi 
+- [È consigliabile configurare record DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) per il dominio per determinare chi sono i mittenti legittimi 
     
 Microsoft non fornisce linee guida per informazioni dettagliate per ogni SPF, DKIM e DMARC. Tuttavia, non esiste una quantità elevata di informazioni pubblicate in linea. Esistono inoltre 3rd società di terze parti dedicato a che consente all'organizzazione di impostare i record di autenticazione di posta elettronica.
   

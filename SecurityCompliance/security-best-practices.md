@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Ridurre al minimo la possibilità di una violazione dei dati o un account compromesso seguendo le procedure consigliate.
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531362"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498092"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedure consigliate per la sicurezza per Office 365
 
@@ -46,7 +46,7 @@ MFA consente di aggiungere un ulteriore livello di protezione di una strategia d
   
 - [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Configurare l'autenticazione a più fattori per gli utenti di Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## <a name="use-office-365-cloud-app-security"></a>Utilizzare la protezione di Office 365 Cloud App
 
@@ -70,9 +70,9 @@ Implementare il formato RTF in Exchange Online Protection set di caratteristiche
     
 - Se si utilizza un dominio personalizzato per l'organizzazione in Office 365, impostare SPF, DKIM e DMARC per convalidare la posta inviata dall'organizzazione e per impedire attacchi di spoofing:
     
-  - [Impostare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Impostare SPF in Office 365 per evitare attacchi di spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
-  - [Utilizzare DKIM per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Utilizzare DKIM per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
   - [Utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
