@@ -1,5 +1,5 @@
 ---
-title: Le funzionalità di anti-phishing ATP in Office 365
+title: Funzionalità di anti-phishing ATP in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 description: Protezione anti-phishing degli strumenti di analisi è disponibile come parte di protezione di Office 365 avanzate rischio. Anti-phishing degli strumenti di analisi si applica un insieme di modelli di apprendimento automatica insieme ad algoritmi di rilevamento di rappresentazione per i messaggi in arrivo per fornire la protezione per gli attacchi di phishing merce e spear. Tutti i messaggi sono soggetti a un'ampia gamma di modelli di apprendimento addestrati per rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da attacchi di rappresentazione utente e domini diversi. Protezione anti-phishing degli strumenti di analisi consente di proteggere l'organizzazione in base a criteri che sono impostati dagli amministratori della protezione globali di Office 365.
-ms.openlocfilehash: cff25316f9a03bdfafd195eb408584ab8bca6343
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e7bb4c4a28109c40bf745a25c9c8366558cf2ac7
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530640"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496890"
 ---
-# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Le funzionalità di anti-phishing ATP in Office 365
+# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funzionalità di anti-phishing ATP in Office 365
 
 Protezione anti-phishing degli strumenti di analisi è disponibile come parte di [Protezione di Office 365 avanzate rischio](https://technet.microsoft.com/en-us/library/exchange-online-advanced-threat-protection-service-description.aspx). Anti-phishing degli strumenti di analisi si applica un insieme di modelli di apprendimento automatica insieme ad algoritmi di rilevamento di rappresentazione per i messaggi in arrivo per fornire la protezione per gli attacchi di phishing merce e spear. Tutti i messaggi sono soggetti a un'ampia gamma di modelli di apprendimento addestrati per rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da attacchi di rappresentazione utente e domini diversi. Protezione anti-phishing degli strumenti di analisi consente di proteggere l'organizzazione in base a criteri che sono impostati dagli amministratori della protezione globali di Office 365.
   
-Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing degli strumenti di analisi in Office 365](set-up-atp-anti-phishing-policies.md).
+Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
 > [!NOTE]
 > Protezione anti-phishing degli strumenti di analisi è disponibile solo in avanzate rischio protezione, disponibile con Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, avanzate Threat Protection può essere acquistato come componente aggiuntivo. (Come un amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni sulle opzioni di pianificazione, vedere [confrontare tutte Office 365 per piani aziendali](https://go.microsoft.com/fwlink/?linkid=844053). 
@@ -35,14 +35,14 @@ Protezione anti-phishing degli strumenti di analisi verifica messaggi in arrivo 
   
 Degli strumenti di analisi anti-phishing consente agli amministratori globali di Office 365 o gli amministratori di sicurezza definire i criteri che forniscono una protezione contro gli attacchi di phishing che includono la rappresentazione degli utenti o i domini. (o entrambi). Gli amministratori globali di Office 365 o gli amministratori di sicurezza definiscono all'interno del criterio utente e i domini deve essere protette da attacchi di rappresentazione utente utilizzando un elenco fisso di utenti o i domini o mediante l'utilizzo di business intelligence della cassetta postale. Business intelligence della cassetta postale è una conoscenza approfondita di specifiche esigenze di posta elettronica dell'utente e i contatti personali. Degli strumenti di analisi acquisita dalla modalità di ogni singolo utente comunica con altri utenti all'interno e all'esterno dell'organizzazione e vengono creati una mappa di queste relazioni. Questa mappa consente di acquisire familiarità con ulteriori informazioni su come verificare i messaggi destro vengono identificati come rappresentazione degli strumenti di analisi.
   
-Criteri anti-phishing degli strumenti di analisi può essere applicato a un insieme specifico di utenti o gruppi all'interno dell'organizzazione o a un intero dominio o a tutti i domini personalizzati. Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing degli strumenti di analisi in Office 365](set-up-atp-anti-phishing-policies.md).
+Criteri anti-phishing degli strumenti di analisi può essere applicato a un insieme specifico di utenti o gruppi all'interno dell'organizzazione o a un intero dominio o a tutti i domini personalizzati. Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
 ## <a name="how-to-get-atp-anti-phishing"></a>Come ottenere degli strumenti di analisi anti-phishing
 <a name="Howtogetantiphish"> </a>
 
 Protezione anti-phishing degli strumenti di analisi fa parte di avanzate di rischio protezione, è incluso in Office 365 Enterprise E5. Protezione avanzata di rischio inoltre può essere acquistata come componente aggiuntivo per Office 365 Enterprise E1 o E3 Enterprise di Office 365. Per ulteriori informazioni sulle opzioni di pianificazione, vedere [confrontare tutte Office 365 per piani aziendali](https://go.microsoft.com/fwlink/?linkid=844053).
   
-Protezione anti-phishing degli strumenti di analisi si applica quando un criterio di protezione anti-phishing, ad esempio siano configurati un criterio di rappresentazione. Vedere [impostazione dei criteri anti-phishing degli strumenti di analisi in Office 365](set-up-atp-anti-phishing-policies.md).
+Protezione anti-phishing degli strumenti di analisi si applica quando un criterio di protezione anti-phishing, ad esempio siano configurati un criterio di rappresentazione. Vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
 ## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Come sapere se anti-phishing degli strumenti di analisi è sul posto
 <a name="IsantiphishOn"> </a>
@@ -62,7 +62,7 @@ Criteri di anti-phishing degli strumenti di analisi devono essere definiti nell'
   
 [Protezione anti-phishing in Office 365](anti-phishing-protection.md)
   
-[Impostazione dei criteri anti-phishing degli strumenti di analisi in Office 365](set-up-atp-anti-phishing-policies.md)
+[Impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md)
   
 [Collegamenti sicuri degli strumenti di analisi in Office 365](atp-safe-links.md)
   

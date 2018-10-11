@@ -3,7 +3,7 @@ title: Protezione anti-spoofing in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559221"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496900"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -25,7 +25,7 @@ In questo articolo viene descritto come Office 365 attenua contro gli attacchi d
   
 In questo articolo viene inoltre perché questa modifica è in corso la creazione, come i clienti possono preparare la modifica, come visualizzare i messaggi che saranno interessati, come segnalare i messaggi, come per ridurre i falsi positivi, nonché come mittenti a Microsoft necessario predisporre modificare.
   
-Protezione anti-spoofing tecnologia Microsoft inizialmente viene distribuita Office 365 avanzate Threat Protection (degli strumenti di analisi) e la E5 clienti. Tuttavia, a causa della modalità di che tutti i filtri di informazioni tra loro, i clienti non di strumenti di analisi e anche utenti Outlook.com anche interessati.
+Protezione anti-spoofing tecnologia Microsoft è stata inizialmente distribuita per le organizzazioni che hanno una sottoscrizione a Office 365 Enterprise E5 o hanno acquistato il componente aggiuntivo di Office 365 avanzate Threat Protection (degli strumenti di analisi) per la sottoscrizione. A partire da ottobre, 2018 è stata estesa la protezione per le organizzazioni che hanno anche Exchange Online Protection (EOP). Inoltre, a causa della modalità di che tutti i filtri informazioni tra loro, gli utenti Outlook.com anche interessati.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Modalità lo spoofing di attacchi di phishing
 
@@ -94,7 +94,7 @@ Authentication-Results:
 |esito negativo|Messaggio non è riuscita autenticazione esplicite (dominio di invio pubblicati i record in modo esplicito in DNS) o autenticazione implicita (l'invio di dominio è stato non pubblica i record DNS, in modo che Office 365 interpolati il risultato come se fosse pubblicato record).|
 |passare|Messaggio passato autenticazione esplicite (messaggio passato DMARC o [Migliore suppone passato DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) o autenticazione implicita con confidenza elevata (l'invio di dominio non pubblica i record di autenticazione di posta elettronica, ma Office 365 ha segnali di back-end sicuro indicare il messaggio è probabilmente legittimi).|
 |softpass|Messaggio passato autenticazione implicita con confidenza medio-basso (invio dominio non pubblica l'autenticazione di posta elettronica, ma Office 365 ha segnali back-end per indicare il messaggio è valido, ma la potenza del segnale è più vulnerabile).|
-|Nessuno|Messaggio non è autenticato o l'autenticazione, ma non l'allineamento, ma composito autenticazione non è stato applicato a causa di reputazione mittente o altri fattori.|
+|nessuno|Messaggio non è autenticato o l'autenticazione, ma non l'allineamento, ma composito autenticazione non è stato applicato a causa di reputazione mittente o altri fattori.|
    
 |||
 |:-----|:-----|
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Dopo lo spoofing anti, in caso di un cliente di protezione da minacce avanzate o E5, il valore compauth contrassegnato (clienti non di strumenti di analisi e non E5 non sono influenzati):
+Dopo lo spoofing anti, se si dispone di Office 365 Enterprise E5, EOP o degli strumenti di analisi, viene indicato il valore compauth:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Questa funzionalità è attualmente in fase di sviluppo. Quando si definiscono u
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Informazioni sulle modalità di posta indesiderata, phishing e phishing avanzate vengono combinati i rilevamenti di
 
-Exchange Online - degli strumenti di analisi e non di strumenti di analisi - sono in grado di specificare le azioni da eseguire quando il servizio consente di identificare i messaggi come malware, posta indesiderata, posta indesiderata confidenza elevata, phishing e blocco. Tuttavia, con l'introduzione di nuovi criteri Anti-phishing per i clienti degli strumenti di analisi e il fatto che un messaggio potrebbe raggiunto più tipi di rilevamento (ad esempio, il malware, phishing e rappresentazione dell'utente), è possibile confusione per cui vengono applicati criteri. 
+Le organizzazioni che utilizzano Exchange Online, con o senza degli strumenti di analisi, è possono specificare le azioni da eseguire quando il servizio consente di identificare i messaggi come malware, posta indesiderata, posta indesiderata confidenza elevata, phishing e blocco. Con i criteri di Anti-phishing ATP per i clienti degli strumenti di analisi, i criteri di Anti-phishing per i clienti EOP e il fatto che un messaggio potrebbe raggiunto più tipi di rilevamento (ad esempio malware, phishing e rappresentazione dell'utente), potrebbe essere alcuni confusione in merito agli che criterio verrà applicato. 
   
 In generale, il criterio applicato a un messaggio viene identificato nell'intestazione X-Forefront-Antispam-Report nella proprietà CAT (categoria). 
   
 |**Priority**|**Criteri**|**Categoria**|**Dove gestite?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutti i clienti  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutti i clienti  <br/> |
-|3  <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutti i clienti  <br/> |
-|4  <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Solo degli strumenti di analisi  <br/> |
-|5  <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutti i clienti  <br/> |
-|6  <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutti i clienti  <br/> |
-|7  <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo degli strumenti di analisi  <br/> |
-|8  <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo degli strumenti di analisi  <br/> |
+|1   <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|3   <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|4   <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
+|5   <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|6   <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|7   <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
+|8   <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
    
 Se si dispone di più criteri Anti-phishing diversi, verrà applicato quello la priorità più alta. Ad esempio, se che si dispone di due criteri:
   
 |**Criteri**|**Priority**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |Attivato  <br/> |
+|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |Attivato  <br/> |
    
 Se è disponibile in un messaggio e viene identificato come rappresentazione di spoofing e utente e ambito è lo stesso insieme di utenti al criterio A e B criteri, quindi il messaggio viene considerato come un spoofing, ma non viene applicata alcuna azione dopo anti-spoofing è disattivato , e lo SPOOFING esegue una priorità superiore (4) di rappresentazione utente (8).
   
@@ -683,7 +683,7 @@ Microsoft ha adottato prima questa caratteristica diverse settimane prima della 
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft avrà un questa caratteristica per i clienti Outlook.com e non avanzate rischio di protezione di Office 365?
 
-Protezione anti-spoofing sarà inizialmente distribuita ai clienti degli strumenti di analisi/E5 e può essere comunicata in futuro per gli altri utenti. Tuttavia, in caso affermativo, potrebbero esserci alcune funzionalità che non vengono applicate ad esempio i report e ha la precedenza personalizzato.
+Protezione anti-spoofing tecnologia Microsoft è stata inizialmente distribuita per le organizzazioni che hanno una sottoscrizione a Office 365 Enterprise E5 o hanno acquistato il componente aggiuntivo di Office 365 avanzate Threat Protection (degli strumenti di analisi) per la sottoscrizione. A partire da ottobre, 2018 è stata estesa la protezione per le organizzazioni che hanno anche Exchange Online Protection (EOP). In futuro, si può rilasciare per Outlook.com. Tuttavia, in questo caso, potrebbero esserci alcune funzionalità che non vengono applicate ad esempio i report e ha la precedenza personalizzato.
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come posso segnalare i messaggi di posta indesiderata o posta non indesiderata torna a Microsoft?
 

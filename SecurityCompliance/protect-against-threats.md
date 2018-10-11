@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Informazioni su come Office 365 Enterprise consente di proteggere l'organizzazione da una serie di rischi, tra cui lo spoofing malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011268"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496850"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione contro le minacce in Office 365
 
@@ -54,7 +54,7 @@ Configurare i criteri per gestire lo spoofing, la protezione da attacchi di phis
     
 - [Informazioni su Business intelligence di spoofing](learn-about-spoof-intelligence.md)
     
-- [Impostazione dei criteri anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md)
+- [Impostazione dei criteri anti-phishing](set-up-anti-phishing-policies.md)
     
 - [Configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
     

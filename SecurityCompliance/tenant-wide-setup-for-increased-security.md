@@ -3,7 +3,7 @@ title: Configurare il tenant di Office 365 per una maggiore sicurezza
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza potrebbero richiedere più o meno della protezione. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013870"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496870"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -32,9 +32,9 @@ La protezione di Office 365 &amp; centro conformità include funzionalità che p
   
 |Area * * *|Include un criterio predefinito *|Suggerimento * * *|
 |:-----|:-----|:-----|
-|**Protezione anti-phishing degli strumenti di analisi** <br/> |No  <br/> | Se si dispone di un dominio personalizzato, creare un criterio di protezione anti-phishing per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio l'amministratore delegato e per la protezione del dominio. Esaminare [impostare un criterio di protezione anti-phishing degli strumenti di analisi](set-up-atp-anti-phishing-policies.md) e creare un criterio con l'esempio come guida: "esempio: criteri Anti-phishing per proteggere un utente e un dominio."|
+|**Protezione anti-phishing** <br/> |Sì  <br/> | Se si dispone di un dominio personalizzato, creare un criterio di protezione anti-phishing per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio l'amministratore delegato e per la protezione del dominio. Esaminare [impostare i criteri di anti-phishing](set-up-anti-phishing-policies.md) e creare un criterio con l'esempio come guida: "esempio: criteri Anti-phishing per proteggere un utente e un dominio."|
 |**Motore antimalware** <br/> |Sì  <br/> | Modificare il criterio predefinito:  <br/> • Comuni allegati tipi di filtro, selezionare  <br/><br>  È anche possibile creare criteri di filtro malware personalizzato e applicarle a utenti specificati, gruppi o i domini nell'organizzazione.  <br/> <br> Ulteriori informazioni:  <br/> • [Protezione anti-malware](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> • [Configure anti-malware policies](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
-|**Allegati sicuri ATP** <br/> |No  <br/> | Nella pagina principale per gli allegati sicuri, proteggere i file in SharePoint, OneDrive e Teams Microsoft selezionando questa casella:  <br/>  • Accensione degli strumenti di analisi di SharePoint, OneDrive e team di Microsoft  <br/> <br> Aggiungere un nuovo criterio di sicurezza degli allegati con le seguenti impostazioni:  <br/>  • Blocco, blocca i messaggi di posta elettronica attuali e future e gli allegati con malware rilevato (scegliere questa opzione)  <br/>  • Abilita reindirizzamento, (questa casella di controllo e immettere un indirizzo di posta elettronica, ad esempio un account di amministratore o quarantena)  <br/>  • Applica alla selezione precedente se timeout di analisi per gli allegati antimalware o errore (questa casella di controllo)  <br/>  • Applicato a, ovvero il dominio del destinatario è (selezionare il dominio)  <br/>  <br>Ulteriori informazioni: [impostare i criteri di sicurezza degli allegati degli strumenti di analisi di Office 365](set-up-atp-safe-attachments-policies.md) <br/> |
+|**Allegati sicuri di ATP** <br/> |No  <br/> | Nella pagina principale per gli allegati sicuri, proteggere i file in SharePoint, OneDrive e Teams Microsoft selezionando questa casella:  <br/>  • Accensione degli strumenti di analisi di SharePoint, OneDrive e team di Microsoft  <br/> <br> Aggiungere un nuovo criterio di sicurezza degli allegati con le seguenti impostazioni:  <br/>  • Blocco, blocca i messaggi di posta elettronica attuali e future e gli allegati con malware rilevato (scegliere questa opzione)  <br/>  • Abilita reindirizzamento, (questa casella di controllo e immettere un indirizzo di posta elettronica, ad esempio un account di amministratore o quarantena)  <br/>  • Applica alla selezione precedente se timeout di analisi per gli allegati antimalware o errore (questa casella di controllo)  <br/>  • Applicato a, ovvero il dominio del destinatario è (selezionare il dominio)  <br/>  <br>Ulteriori informazioni: [impostare i criteri di sicurezza degli allegati degli strumenti di analisi di Office 365](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Collegamenti Safe degli strumenti di analisi** <br/> |Sì  <br/> | Aggiungere questa impostazione per il criterio predefinito per l'intera organizzazione:  <br/> • Utilizzare sicuri collegamenti: Office 365 ProPlus, di Office per iOS e Android (Selezionare questa opzione).  <br/> <br>Criteri consigliati per i destinatari specifici:  <br/>  • URL verranno riscritti e confrontati con un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento (Selezionare questa opzione).  <br/>  • Utilizzare gli allegati sicuri per analizzare contenuto scaricabile (questa casella di controllo).  <br/>  • Applicato a, ovvero il dominio del destinatario è (selezionare il dominio).  <br/> <br> Ulteriori informazioni: [collegamenti sicuri degli strumenti di analisi di Office 365](atp-safe-links.md).  <br/> |
 |**Protezione da posta indesiderata (Mail filtering)** <br/> |Sì  <br/> | Gli elementi da visualizzare per:  <br/>  • Eccessivo di posta indesiderata, scegliere impostazioni personalizzate e modificare il criterio di filtro posta indesiderata predefinito.  <br/>  Business intelligence spoofing •, esaminare i mittenti che sono lo spoofing del dominio. Bloccare o consentire i mittenti.<br/>  <br>Ulteriori informazioni: [Office 365 posta Anti-Spam Protection](anti-spam-protection.md).  <br/> |
 |**DKIM (DomainKeys identificato posta)** <br/> |Sì  <br/> |DKIM è un processo di autenticazione che contribuisce di proteggere mittenti e destinatari da contraffatto (spoofing) e posta elettronica di phishing. Tenant include una firma predefinita per il dominio. Creare una firma DKIM aggiuntiva se si aggiungono domini personalizzati per il tenant.<br/> <br>Ulteriori informazioni: [La utilizza per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |

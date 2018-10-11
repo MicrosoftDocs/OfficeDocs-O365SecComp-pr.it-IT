@@ -3,7 +3,7 @@ title: Ulteriori informazioni su spoof intelligence
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/14/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Utilizzare lo spoofing significa intelligence nella protezione &amp; centro conformità della pagina Impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che lo spoofing entrambi i domini che fanno parte della propria organizzazione o lo spoofing i domini esterni. Business intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di protezione da minacce avanzate ed Exchange Online Protection.
-ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
-ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
+ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496557"
+ms.locfileid: "25496840"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Ulteriori informazioni su spoof intelligence
 
@@ -58,7 +58,7 @@ Il criterio di business intelligence spoofing che è impostare viene sempre appl
 |**Parametro**|**Descrizione**|
 |:-----|:-----|
 |Mittente  <br/> |Acronimo di mittente true. Si tratta in genere il dominio da cui proviene il messaggio di posta elettronica spoofing. Office 365 determina il dominio del puntatore del record DNS (PTR) dell'indirizzo IP del mittente che è lo spoofing dell'organizzazione. Se non viene trovato alcun dominio, il report viene invece visualizzato indirizzo IP del mittente.  <br/> |
-|Spoofing utente  <br/> |L'account utente che è spoofing dal mittente.  <br/> Solo per la scheda **interno** . Questo campo viene visualizzato un indirizzo di posta elettronica singolo o se il mittente è lo spoofing più account utente, contiene **uno o più**.<br/> Scheda **esterno** . Solo i domini esterni contengono un dominio di invio e non contengono un indirizzo di posta elettronica completo.<br/> > [!TIP]> **Per gli amministratori esperti.** L'utente spoofing è From indirizzo (5322.From) che è anche l'indirizzo visualizzato come indirizzo dal client di posta elettronica. Questo è detto anche indirizzo header.from. La validità di questo indirizzo non viene controllato da SPF.           |
+|Spoofing utente  <br/> |L'account utente che è spoofing dal mittente.  <br/> Solo per la scheda **interno** . Questo campo viene visualizzato un indirizzo di posta elettronica singolo o se il mittente è lo spoofing più account utente, contiene **uno o più**.<br/> Scheda **esterno** . Solo i domini esterni contengono un dominio di invio e non contengono un indirizzo di posta elettronica completo.<br/> Suggerimento **! Per gli amministratori esperti.** L'utente spoofing è From indirizzo (5322.From) che è anche l'indirizzo visualizzato come indirizzo dal client di posta elettronica. Questo è detto anche indirizzo header.from. La validità di questo indirizzo non viene controllata da SPF.           |
 |Numero di messaggi  <br/> |Il numero di messaggi di posta elettronica inviati dal mittente dell'organizzazione per conto del mittente spoofing identificati o mittenti negli ultimi 30 giorni.  <br/> |
 |Numero di reclami degli utenti  <br/> |Reclami archiviati per gli utenti di questo mittente dagli utenti negli ultimi 30 giorni. Reclami sono in genere sotto forma di invio di posta indesiderata a Microsoft.  <br/> |
 |Risultato dell'autenticazione  <br/> |Questo valore viene **passato** se il mittente passato mittente di Exchange Online Protection (EOP) controlli di autenticazione, ad esempio SPF o DKIM, **non è riuscita** se il mittente ha superato i controlli di autenticazione mittente EOP o **sconosciuto** se non è il risultato di questi controlli Nota.  <br/> |
@@ -73,31 +73,31 @@ Il criterio di business intelligence spoofing che è impostare viene sempre appl
     
 2. Accedere a Office 365 con l'account di lavoro o della scuola. L'account deve disporre delle credenziali di amministratore dell'organizzazione Office 365.
     
-3. In sicurezza &amp; centro conformità, espandere **Threat Management** \> **criteri** \> **protezione da posta indesiderata**.
+3. In sicurezza &amp; centro conformità, espandere **Threat Management** \> **criteri** \> **protezione da posta indesiderata**.  
   
-![](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Schermata che mostra l'accesso alla pagina di protezione da posta indesiderata](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
   
-4. Nella pagina **impostazioni di protezione da posta indesiderata** nel riquadro destro, selezionare la scheda **personalizzata** e quindi scorrere verso il basso ed espandere **criteri di business intelligence spoofing**. 
+4. Nella pagina **impostazioni di protezione da posta indesiderata** nel riquadro destro, selezionare la scheda **personalizzata** e quindi scorrere verso il basso ed espandere **criteri di business intelligence spoofing**.  
   
-![](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![Schermata che mostra l'accesso per le impostazioni personalizzate di protezione da posta indesiderate](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. Per visualizzare l'elenco dei mittenti lo spoofing del dominio, scegliere **i mittenti di nuovo la revisione** e selezionare il * * domini Your * * scheda. 
+5. Per visualizzare l'elenco dei mittenti lo spoofing del dominio, scegliere **i mittenti di nuovo la revisione** e selezionare la scheda **Domini Your** . 
     
-    Se già stato rivisto mittenti e si desidera modificare alcune delle scelte precedenti, è possibile scegliere **Mostra mittenti già esaminato** invece. In entrambi i casi, viene visualizzato il riquadro successivo. 
+    Se già stato rivisto mittenti e si desidera modificare alcune delle scelte precedenti, è possibile scegliere **Mostra mittenti già esaminato** invece. In entrambi i casi, viene visualizzato il riquadro successivo.  
   
-![](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Schermata che mostra l'accesso alla scheda mittenti spoofing](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
-Ogni utente spoofing viene visualizzato in una riga separata in modo che è possibile scegliere se consentire o bloccare il mittente di spoofing singolarmente ogni utente.
+    Ogni utente spoofing viene visualizzato in una riga separata in modo che è possibile scegliere se consentire o bloccare il mittente di spoofing singolarmente ogni utente.  
   
-Per aggiungere un mittente all'elenco Consenti di un utente, selezionare **Sì** nella colonna **consentito effettuare lo spoofing** . Per aggiungere un mittente all'elenco di blocco per un utente, scegliere **No**.
+    Per aggiungere un mittente all'elenco Consenti di un utente, selezionare **Sì** nella colonna **consentito effettuare lo spoofing** . Per aggiungere un mittente all'elenco di blocco per un utente, scegliere **No**.
+     
+    Per impostare i criteri per i domini non si è proprietari, selezionare la scheda **Domini esterni** modificare qualsiasi mittente su **Sì** nella colonna **è consentito effettuare lo spoofing significa** consentire che mittente di inviare la posta elettronica non autenticato nell'organizzazione. In alternativa, se si ritiene che Office 365 apportate da un errore in consente al mittente di inviare la posta elettronica falsificato, modificare la colonna **consentito effettuare lo spoofing** su **No**.  
   
-Per impostare i criteri per i domini non si è proprietari, selezionare la scheda **Domini esterni** modificare qualsiasi mittente su **Sì** nella colonna **è consentito effettuare lo spoofing significa** consentire che mittente di inviare la posta elettronica non autenticato nell'organizzazione. In alternativa, se si ritiene che Office 365 apportate da un errore in consente al mittente di inviare la posta elettronica falsificato, modificare la colonna **consentito effettuare lo spoofing** su **No**. 
-  
-![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Schermata che mostra se un mittente è autorizzato a effettuare lo spoofing](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. Scegliere **Salva** per salvare le modifiche. 
 
-Se si è un cliente E5 o degli strumenti di analisi, è inoltre possibile gestire i mittenti che lo spoofing di dominio tramite [Simulazione delle conoscenze di Business Intelligence](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)
+Se si dispone di una sottoscrizione di Office 365 Enterprise E5 o hanno acquistato separatamente avanzate Threat Protection come componente aggiuntivo, è inoltre possibile gestire i mittenti che lo spoofing di dominio tramite [Simulazione delle conoscenze di Business Intelligence](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configurazione dei criteri anti-spoofing
 <a name="Managespooflist"> </a>
@@ -122,15 +122,15 @@ Anche se il criterio di protezione anti-spoofing viene visualizzato in base ai c
     
 5. Nella pagina visualizzata nella riga **spoofing** , scegliere **Modifica**. 
     
-6. Configurare quindi le azioni da intraprendere quando un messaggio viene rilevato come una simulazione di altri domini. Il comportamento predefinito consiste nello spostare il messaggio nella cartella posta indesiderata del destinatario. L'opzione altro deve inviare il messaggio in quarantena. Per ulteriori informazioni sulla gestione dei messaggi messi in quarantena, vedere [i messaggi di posta elettronica quarantena in Office 365](quarantine-email-messages.md).
+6. Configurare quindi le azioni da intraprendere quando un messaggio viene rilevato come una simulazione di altri domini. Il comportamento predefinito consiste nello spostare il messaggio nella cartella posta indesiderata del destinatario. L'opzione altro deve inviare il messaggio in quarantena. Per ulteriori informazioni sulla gestione dei messaggi messi in quarantena, vedere [i messaggi di posta elettronica quarantena in Office 365](quarantine-email-messages.md).  
   
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
+    ![Schermata che mostra criteri anti-spoofing modifica le opzioni](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Scegliere se abilitare o disabilitare lo spoofing anti suggerimenti sulla sicurezza. Office 365 è consigliabile abilitare la punta di sicurezza **autenticazione ha esito negativo** per avvisare gli utenti quando si interagisce con un mittente non è possibile verificare la cui identità. Office 365 consiglia inoltre di abilitare la punta di sicurezza per un **passaggio di autenticazione reversibile** per piccoli gruppi di utenti, poiché questo suggerimento sicurezza può generare una quantità elevata di avvisi se l'utente riceve posta elettronica provenienti da origini legittimi, ma non autenticati. 
+7. Scegliere se abilitare o disabilitare lo spoofing anti suggerimenti sulla sicurezza. Office 365 è consigliabile abilitare la punta di sicurezza **autenticazione ha esito negativo** per avvisare gli utenti quando si interagisce con un mittente non è possibile verificare la cui identità. Office 365 consiglia inoltre di abilitare la punta di sicurezza per un **passaggio di autenticazione reversibile** per piccoli gruppi di utenti, poiché questo suggerimento sicurezza può generare una quantità elevata di avvisi se l'utente riceve posta elettronica provenienti da origini legittimi, ma non autenticati.  
   
-![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-  
-Effettuare la selezione e quindi selezionare **Salva**. 
+    ![Schermata che Mostra opzioni di suggerimento per la protezione anti-spoofing](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
+
+8. Effettuare la selezione e quindi fare clic su **Salva**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Altri modi per gestire lo spoofing e phishing con Office 365
 <a name="Managespooflist"> </a>
@@ -139,14 +139,14 @@ Essere attente sulla protezione di phishing e spoofing. Di seguito sono i metodi
   
 - Controllare il report di posta di Exchange Online Protection spoofing come parte di una routine. È possibile utilizzare questo rapporto spesso per visualizzare e gestire i mittenti spoofing. Per informazioni, vedere **report tramite posta elettronica di spoofing** in [rapporti di protezione di utilizzo della posta in Office 365 per visualizzare i dati su malware, posta indesiderata e rilevamenti delle regole](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
-- Per più avanzate: gli amministratori di Office 365
+Per gli amministratori di Office 365 più avanzati, è inoltre possibile completare questi controlli:
     
-  - Esaminare la configurazione del mittente Policy Framework (SPF). Per una breve introduzione a SPF e per ottenere una configurazione rapidamente, vedere [impostare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Per una più approfondita dei come Office 365 utilizza SPF o per le distribuzioni di risoluzione dei problemi o non standard, ad esempio le distribuzioni ibride, iniziare con [la modalità di Office 365 utilizza mittente Policy Framework (SPF) per impedire attacchi di spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
+- Esaminare la configurazione del mittente Policy Framework (SPF). Per una breve introduzione a SPF e per ottenere una configurazione rapidamente, vedere [impostare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Per una più approfondita dei come Office 365 utilizza SPF o per le distribuzioni di risoluzione dei problemi o non standard, ad esempio le distribuzioni ibride, iniziare con [la modalità di Office 365 utilizza mittente Policy Framework (SPF) per impedire attacchi di spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
-  - Esaminare la configurazione DomainKeys identificato posta (DKIM). È consigliabile utilizzare DKIM oltre SPF e DMARC al fine di evitare curiosi di inviare messaggi che sembrano provenire dal dominio. DKIM consente di aggiungere una firma digitale per i messaggi di posta elettronica nell'intestazione del messaggio. Per informazioni, vedere [Utilizzo DKIM per convalidare la posta elettronica inviata dal dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
+- Esaminare la configurazione DomainKeys identificato posta (DKIM). È consigliabile utilizzare DKIM oltre SPF e DMARC al fine di evitare curiosi di inviare messaggi che sembrano provenire dal dominio. DKIM consente di aggiungere una firma digitale per i messaggi di posta elettronica nell'intestazione del messaggio. Per informazioni, vedere [Utilizzo DKIM per convalidare la posta elettronica inviata dal dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
     
-  - Esaminare la configurazione di autenticazione dei messaggi, Reporting e conformità (DMARC) basati sul dominio. L'implementazione di DMARC con DKIM e SPF offre ulteriore protezione da posta elettronica di phishing e spoofing. Vengono fornite informazioni utili DMARC ricevente sistemi di posta elettronica determinano cosa fare con i messaggi inviati dal dominio che SPF fail o DKIM per i controlli. Per informazioni, vedere [Utilizzo DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- Esaminare la configurazione di autenticazione dei messaggi, Reporting e conformità (DMARC) basati sul dominio. L'implementazione di DMARC con DKIM e SPF offre ulteriore protezione da posta elettronica di phishing e spoofing. Vengono fornite informazioni utili DMARC ricevente sistemi di posta elettronica determinano cosa fare con i messaggi inviati dal dominio che SPF fail o DKIM per i controlli. Per informazioni, vedere [Utilizzo DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
-  - Utilizzare il cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell per raccogliere dati dettagliati sul mittenti spoofing, generare Consenti e blocca elenchi e consentono di determinare la modalità di generare più completo record SPF, DKIM e DMARC DNS senza difficoltà la posta elettronica legittimi venga incrementato filtro da posta indesiderata esterno. Per ulteriori informazioni, vedere [funzionamento antispoofing della protezione in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
+- Utilizzare il cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell per raccogliere dati dettagliati sul mittenti spoofing, generare Consenti e blocca elenchi e consentono di determinare la modalità di generare più completo record SPF, DKIM e DMARC DNS senza difficoltà la posta elettronica legittimi venga incrementato filtro da posta indesiderata esterno. Per ulteriori informazioni, vedere [funzionamento antispoofing della protezione in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
     
 
