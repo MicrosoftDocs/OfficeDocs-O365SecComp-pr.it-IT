@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/5/2018
+ms.date: 10/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protezione anti-phishing degli strumenti di analisi, parte di Office 365 avanzate Threat Protection, consentono di proteggere l'organizzazione da attacchi dannosi phishing basato su rappresentazione e altri attacchi di phishing. Se si è un amministratore di protezione o di Office 365 modello globale dell'organizzazione, è possibile impostare i criteri di anti-phishing degli strumenti di analisi. Il phishing di attacchi in una vasta gamma di moduli di attacchi basati su merce destinazione spear phishing o whaling. Con la complessità crescente è difficile per anche una formazione occhio identificare alcuni di questi attacchi sofisticati. Fortunatamente, può contribuire a Office 365 avanzate Threat Protection. È possibile impostare i criteri di anti-phishing degli strumenti di analisi per contribuire a garantire che l'organizzazione è protetto contro gli attacchi descritti.
-ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 37a38863296ab87feaade93b7939029b9306ec30
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955448"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496567"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP di Office 365
 
@@ -126,7 +126,7 @@ L'amministratore di protezione di Contoso potrebbe utilizzare valori simile al s
   
 [Protezione anti-phishing in Office 365](anti-phishing-protection.md)
   
-[Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
+[Funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   
 [Impostare i criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
   
