@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca di contenuto in Office 365 Security &amp; centro conformità a un computer locale. I risultati della posta elettronica Emaill vengono esportate come file PST. Contenuto di SharePoint e OneDrive per i siti vengono esportati come nativi documenti di Office. '
-ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962962"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494067"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Esportare i risultati di ricerca del contenuto da Office 365 Security &amp; centro conformità
 
@@ -280,7 +280,7 @@ Di seguito viene ulteriori informazioni sull'esportazione dei risultati di ricer
     
     Se si sceglie di esportare elementi indicizzati parzialmente, gli elementi della cassetta postale parzialmente indicizzati vengono esportati in un file PST separato indipendentemente dall'opzione scelta in **contenuto di Exchange di esportazione**.
 
-- Se vengono restituiti gli elementi indicizzati parzialmente nella ricerca risultati (dal momento che le altre proprietà di elementi indicizzati parzialmente corrispondono ai criteri di ricerca), tali parzialmente indicizzati vengono esportati con i risultati della ricerca regolari. Pertanto, se si sceglie di esportare elementi indicizzati ed elementi indicizzati parzialmente (selezionando l'opzione di esportazione di **tutti gli elementi, comprese quelle che hanno il formato non riconosciuto, vengono crittografati o non indicizzati per altri motivi** ), gli elementi indicizzati parzialmente esportato verranno elencati nel rapporto Results.csv con reslts regolare. Non essere elencati nel rapporto items.csv non indicizzate.
+- Se vengono restituiti gli elementi indicizzati parzialmente nella ricerca risultati (dal momento che le altre proprietà di elementi indicizzati parzialmente corrispondono ai criteri di ricerca), tali parzialmente indicizzati vengono esportati con i risultati della ricerca regolari. Pertanto, se si sceglie di esportare elementi indicizzati ed elementi indicizzati parzialmente (selezionando l'opzione di esportazione di **tutti gli elementi, comprese quelle che hanno il formato non riconosciuto, vengono crittografati o non indicizzati per altri motivi** ), gli elementi indicizzati parzialmente esportato con i risultati regolari verranno elencati nel rapporto Results.csv. Non essere elencati nel rapporto items.csv non indicizzate.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Esportazione dei singoli messaggi o i file PST
   
