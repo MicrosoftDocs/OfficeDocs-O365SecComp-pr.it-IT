@@ -3,7 +3,7 @@ title: Aumentare la quota degli elementi recuperabili per le cassette postali in
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione per aumentare le dimensioni della cartella elementi recuperabili per una cassetta postale in Office 365 l'espansione automatica. "
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522277"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi recuperabili per le cassette postali in attesa
 
@@ -35,7 +35,7 @@ Per ridurre le possibilità che superano questo limite, la quota di archiviazion
 |**Quota di archiviazione totale per la cartella Elementi ripristinabili** <br/> |Illimitata  <br/> |Illimitata  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>La quota di archiviazione iniziali per la cassetta postale di archiviazione è pari a 100 GB per gli utenti con una licenza di Exchange Online (piano 2). Tuttavia, quando l'espansione automatica di archiviazione viene attivato per cassette postali in attesa, la quota di archiviazione sia per la cassetta postale di archiviazione e la cartella elementi recuperabili viene aumentata a 110 GB. Verrà eseguito il provisioning lo spazio di archiviazione di archiviazione aggiuntivo quando è necessario che i risultati in una quantità di spazio di archiviazione di archiviazione illimitata. Per ulteriori informazioni sull'espansione automatica di archiviazione, vedere [Overview of archiviazione illimitato in Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>La quota di archiviazione iniziali per la cassetta postale di archiviazione è pari a 100 GB per gli utenti con una licenza di Exchange Online (piano 2). Tuttavia, quando l'espansione automatica di archiviazione è attivata per le cassette postali in attesa, la quota di archiviazione per la cassetta postale di archiviazione e la cartella elementi recuperabili viene aumentata a 110 GB. Verrà eseguito il provisioning lo spazio di archiviazione di archiviazione aggiuntivo quando è necessario che i risultati in una quantità di spazio di archiviazione di archiviazione illimitata. Per ulteriori informazioni sull'espansione automatica di archiviazione, vedere [Overview of archiviazione illimitato in Office 365](unlimited-archiving.md). 
   
 Quando la quota di archiviazione per la cartella Elementi ripristinabili nella cassetta postale principale di una cassetta postale in blocco sta per raggiungere il limite, è possibile eseguire le operazioni seguenti:
   
@@ -60,7 +60,7 @@ Il resto di questo argomento descrive procedure dettagliate per creare criteri d
 
 Il primo passaggio consiste nel creare un tag di conservazione personalizzata (detta tag criterio di conservazione o tag) per la cartella elementi recuperabili. Come indicato in precedenza, questo RPT Sposta gli elementi dalla cartella elementi ripristinabili nella cassetta postale principale dell'utente nella cartella elementi recuperabili di cassetta postale di archivio dell'utente. È necessario utilizzare PowerShell per creare un tag per la cartella elementi recuperabili. È possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC). 
   
-1. [Connessione a Exchange Online tramite remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Eseguire il seguente comando per creare un nuovo RPT nella cartella Elementi ripristinabili:  
     
@@ -220,7 +220,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Dopo aver abilitato cassetta postale di archivio dell'utente, è consigliabile che indica all'utente che altri elementi nella cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbe essere spostati la cassetta postale di archiviazione. Perché il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominato Default 2 anni spostamento nell'archivio) che sposta gli elementi nella cassetta postale di archivio di due anni dopo la data, l'elemento è stato recapitato alla cassetta postale o creato con il utente. Per ulteriori informazioni, vedere [Criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

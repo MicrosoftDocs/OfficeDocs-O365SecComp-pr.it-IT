@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione e l'eliminazione in Office 365 che sposta automaticamente gli elementi della cassetta postale di archivio dell'utente.
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522297"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione e l'eliminazione delle cassette postali nell'organizzazione Office 365
 
@@ -45,7 +45,7 @@ I passaggi descritti in questo argomento verranno impostare un criterio di conse
     
 È possibile eseguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di archiviazione e l'eliminazione delle cassette postali nell'organizzazione. È consigliabile testare il processo in alcune cassette postali prima di implementare in tutte le cassette postali nell'organizzazione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere un amministratore globale dell'organizzazione Office 365 per eseguire i passaggi descritti in questo argomento. 
     
@@ -104,7 +104,7 @@ Per creare nuovi tag di conservazione, si utilizzerà l'interfaccia di amministr
     
 2. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di Office 365, fare clic su **Admin Center**e quindi fare clic su **Exchange**.
     
-    ![Schermata che mostra che l'interfaccia di amministrazione di Office 365 con l'amministratore viene allineato al centro opzione espansa ed Exchange selezionata.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. In EAC, andare a **Gestione conformità** \> **i tag di conservazione**
     
@@ -238,7 +238,7 @@ Quando si crea una nuova cassetta postale, un criterio di conservazione denomina
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Facoltativo) Passaggio 5: Eseguire l'Assistente cartelle gestite per applicare le nuove impostazioni
 <a name="step3"> </a>
 
-Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel passaggio 4, potrebbero essere necessari fino a 7 giorni di Exchange Online per le nuove impostazioni di conservazione da applicare alle cassette postali. Ciò avviene perché un processo denominato cassette postali di processi Assistente cartelle gestite ogni 7 giorni. Anziché attendere l'Assistente cartelle gestite per l'esecuzione, è possibile imporre a tale scopo, eseguire il cmdlet **Start-ManagedFolderAssistant** in Exchange Online PowerShell. 
+Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel passaggio 4, potrebbero essere necessari fino a 7 giorni di Exchange Online per le nuove impostazioni di conservazione da applicare alle cassette postali. Ciò avviene perché un processo denominato cassette postali di processi Assistente cartelle gestite ogni 7 giorni. Anziché attendere l'Assistente cartelle gestite per l'esecuzione, è possibile imporre a tale scopo, eseguire il cmdlet **Start-ManagedFolderAssistant** di Exchange Online PowerShell. 
   
  **Cosa succede quando si esegue l'Assistente cartelle gestite?** Le impostazioni nel criterio di conservazione applicato, controllare gli elementi nella cassetta postale e determinare se è soggetto a conservazione. Quindi inserisce gli elementi soggetti a conservazione con il tag di conservazione appropriati e quindi viene eseguita l'azione di conservazione specificato negli elementi oltre il periodo di conservazione. 
   
@@ -292,7 +292,7 @@ Questo è tutto! Installazione di un criterio di archiviazione e l'eliminazione 
     
 - Nella tabella seguente vengono fornite ulteriori informazioni su ogni tag di conservazione viene aggiunto il criterio di conservazione personalizzata che è stato creato seguendo i passaggi descritti in questo argomento.
     
-    |**Tag di conservazione**|**Scopo di questo tag**|**Incorporata o personalizzata?**|**Tipo**|
+    |**Tag di conservazione**|**Scopo di questo tag**|**Incorporata o personalizzata?**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Accesso a terze parti neve 3 anni spostamento nell'archivio  <br/> |Sposta gli elementi da 1095 giorni (3 anni) la cassetta postale di archiviazione.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Tag criterio predefinito (archivio); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |
     |Accesso a terze parti neve anno 7 Elimina definitivamente  <br/> |Elimina definitivamente gli elementi nella cassetta postale di archiviazione o la cassetta postale principale quando sono 7 anni.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Tag criterio predefinito (eliminazione); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |

@@ -3,19 +3,19 @@ title: Gestione dei casi di eDiscovery in Office 365 Security &amp; centro confo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilizzare la protezione di Office 365 &amp; centro conformità di creazione di esenzioni eDiscovery e di accesso e la gestione dei casi eDiscovery nell'organizzazione.
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522307"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità
 
@@ -75,7 +75,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. In sicurezza &amp; centro conformità, fare clic su **autorizzazioni**e quindi eseguire una delle opzioni seguenti in base alle autorizzazioni eDiscovery che si desidera assegnare.
     
@@ -87,7 +87,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
     
 4. Dopo aver aggiunto tutti gli utenti, fare clic su **Chiudi**, fare clic su **Salva** per salvare le modifiche al gruppo di ruoli e quindi fare clic su **Chiudi**.
     
-[Inizio pagina](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>Passaggio 2: Creare un nuovo caso
 <a name="step2_1"> </a>
@@ -96,7 +96,7 @@ Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery**e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Crea un caso**.
     
@@ -108,8 +108,6 @@ Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere 
     
     > [!TIP]
     > Dopo aver creato un nuovo caso, è possibile rinominare in qualsiasi momento. Fare clic sul nome del caso nella pagina di **eDiscovery** . Nella pagina **Gestisci in questo caso** comparsa, cambiare il nome visualizzato nella casella in **nome**e quindi salvare le modifiche. 
-  
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>Passaggio 3: Aggiungere membri a un caso
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ Dopo aver creato un nuovo caso, il passaggio successivo è per aggiungere membri
     In **Gestisci in questo caso**, fare clic su **Salva** per salvare il nuovo elenco di membri maiuscole. 
     
 6. Fare clic su **Salva** per salvare il nuovo elenco di membri maiuscole. 
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Passaggio 4: Posto i percorsi di contenuti in attesa
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ Per creare un'esenzione per un caso eDiscovery:
   
 2. **Siti** Fare clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) specificare SharePoint e OneDrive per i siti per mettere in attesa. Digitare l'URL per ogni sito che si desidera mettere in attesa. È inoltre possibile aggiungere l'URL del sito di SharePoint per un Team di Microsoft o un gruppo di Office 365. 
     
-<<<<<<< Vedere testa il [gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) sezione per suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. === Vedere la sezione [informazioni](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) di suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. 
->>>>>>> conversione deniseb
+    Vedere la sezione [informazioni](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) di suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > Nel caso di nome principale una persona (UPN) viene modificato l'URL per il proprio account OneDrive verrà modificata anche per incorporare l'UPN di nuovo. In questo caso, sarà necessario modificare la conservazione nuovo OneDrive URL dell'utente di aggiungendo e rimuovendo il vecchio. 
   
 3. **Cartelle pubbliche** Fare clic su **archiviazione tutte le cartelle pubbliche** per tutte le cartelle pubbliche inserire nell'organizzazione in archiviazione Exchange Online. Si noti che non è possibile scegliere specifiche cartelle pubbliche per mettere in attesa. Lasciare selezionata se non si desidera creare un'esenzione per le cartelle pubbliche l'opzione **non tenere presenti cartelle pubbliche** . 
     
@@ -199,8 +194,6 @@ Per creare un'esenzione per un caso eDiscovery:
 2. In **condizioni**, fare clic su **Aggiungi condizione** per aggiungere una o più condizioni per limitare la query di ricerca per l'attesa. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si crea l'attesa. Ad esempio è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di un sito che sono stati creati all'interno della data intervallo vengono inseriti in attesa. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione di essere posizionate in attesa. 
     
 9. Dopo aver configurato un basata su query attesa, fare clic su **Fine** per creare l'esenzione. 
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>Conservazione delle statistiche
 
@@ -217,8 +210,6 @@ Tenere presenti sulle statistiche di attesa i seguenti aspetti:
 - È possibile ottenere le ultime novità attesa statistiche facendo clic su **Aggiorna le statistiche** per rieseguire una ricerca estimate che calcola il numero corrente di elementi in attesa. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) nella barra degli strumenti per aggiornare le statistiche di conservazione nel riquadro dei dettagli. 
     
 - La normale per il numero di elementi in attesa per aumentare il tempo perché agli utenti la cui cassetta postale o del sito sono in attesa sono in genere l'invio o ricezione nuovo messaggio di posta elettronica e la creazione di nuovi SharePoint e OneDrive per i documenti aziendali.
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Passaggio 5: Creare ed eseguire una ricerca del contenuto associato a un caso
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso
     
 7. Dopo aver selezionato i percorsi contenuti di ricerca, fare clic su **Avanti**.
     
-8. Nella pagina **Nuova ricerca**, è possibile aggiungere parole chiave e condizioni per creare la query di ricerca. 
-    
-    ![Condizioni e criteri di ricerca](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. Nella pagina **Nuova ricerca**, è possibile aggiungere parole chiave e condizioni per creare la query di ricerca. <br/>![Condizioni e criteri di ricerca](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. Nella casella in **scegliere un'opzione di cercare?**, digitare una query di ricerca nella casella. È possibile specificare le parole chiave, messaggio proprietà come inviati e ricevuti, date o proprietà del documento, ad esempio i nomi di file o la data dell'ultima modifica di un documento. È possibile utilizzare una query più complesse che utilizzano un operatore booleano, ad esempio **AND**, **o**, **non**, **NEAR**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di previdenza sociale) nei documenti o ricerca per i documenti condivisi esternamente. Se si lascia vuota la casella parole chiave, tutto il contenuto disponibile nei percorsi di contenuto specificati sarà incluse nei risultati della ricerca. 
+9. Nella casella in **scegliere un'opzione di cercare?**, digitare una query di ricerca nella casella. È possibile specificare le parole chiave, messaggio proprietà come inviati e ricevuti, date o proprietà del documento, ad esempio i nomi di file o la data dell'ultima modifica di un documento. È possibile utilizzare una query più complesse che utilizzano un operatore booleano, ad esempio **AND**, **o**, **non**, **NEAR**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di previdenza sociale) nei documenti o ricerca per i documenti condivisi esternamente. Se si lascia vuota la casella parole chiave, tutto il contenuto disponibile nei percorsi di contenuto specificati sarà incluse nei risultati della ricerca. 
     
-2. È possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite l'operatore **OR** nella query di ricerca che viene creata. 
+10. È possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite l'operatore **OR** nella query di ricerca che viene creata. 
     
     ![Parole chiave di ricerca](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso
     
     Per ulteriori informazioni sull'utilizzo dell'elenco di parole chiave, vedere [ulteriori informazioni](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-3. Fare clic su **query per gli errori di battitura di controllo** per verificare la query per i caratteri non supportati e per gli operatori booleani che potrebbero non essere in maiuscolo. Caratteri non supportati sono spesso nascoste in genere causano un errore di ricerca o restituiscano risultati imprevisti. Per ulteriori informazioni sui caratteri non supportati che vengono controllati, vedere [verificare la query di ricerca del contenuto per gli errori](check-your-content-search-query-for-errors.md).
+11. Fare clic su **query per gli errori di battitura di controllo** per verificare la query per i caratteri non supportati e per gli operatori booleani che potrebbero non essere in maiuscolo. Caratteri non supportati sono spesso nascoste in genere causano un errore di ricerca o restituiscano risultati imprevisti. Per ulteriori informazioni sui caratteri non supportati che vengono controllati, vedere [verificare la query di ricerca del contenuto per gli errori](check-your-content-search-query-for-errors.md).
     
-4. In **condizioni**, aggiungere le condizioni per una query di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione da includere nei risultati della. Si tratta come condizioni consentono di limitare i risultati. 
+12. In **condizioni**, aggiungere le condizioni per una query di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione da includere nei risultati della. Si tratta come condizioni consentono di limitare i risultati. 
     
     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-9. Fare clic su **Ricerca** per salvare le impostazioni e avviare la ricerca. 
+13. Fare clic su **Ricerca** per salvare le impostazioni e avviare la ricerca. 
     
     La ricerca viene avviata. Dopo un po' di tempo, una stima dei risultati della ricerca viene visualizzata nel riquadro dei dettagli. La stima include le dimensioni totali e il numero di elementi corrispondenti ai criteri di ricerca. La stima ricerca include anche il numero di elementi indicizzati nei percorsi di contenuto in cui sono stati una ricerca. Il numero di elementi indicizzati che non soddisfano i criteri di ricerca includerà le statistiche ricerca visualizzate nel riquadro dei dettagli. Se corrisponde a un elemento non indicizzate eseguire una query di ricerca (perché altre proprietà di un documento o messaggio soddisfa i criteri di ricerca), non sarà incluso il numero stimato di elementi indicizzati. Se un elemento non indicizzato viene escluso per i criteri di ricerca, anche non essere incluse nella stima di elementi indicizzati.
     
     Al termine della ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni nel riquadro dei dettagli. 
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Passaggio 6: Esportare i risultati di ricerca del contenuto associato a un caso
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ Come alternativa per esportare i risultati di una singola ricerca del contenuto 
 - Se si riavvia un'esportazione dalla pagina **Esporta** in un caso di eDiscovery, i risultati della ricerca che vengono trasferiti all'area di archiviazione Azure sovrascriverà i risultati del precedenti. i risultati precedenti non vi sono stati trasferiti non sarà disponibile per essere scaricato. 
     
 - Preparazione dei risultati delle ricerche più per l'analisi di eDiscovery avanzate non è disponibile. È possibile preparare solo i risultati di una singola ricerca per l'analisi di eDiscovery avanzate.
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 7: Preparazione risultati di ricerca per eDiscovery avanzate
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ Quando si prepara i risultati della ricerca eDiscovery avanzata, la funzionalit�
     I risultati della ricerca vengono preparati per l'analisi con eDiscovery avanzate.
     
 7. Nel riquadro dei dettagli fare clic su **verificare lo stato di preparazione** per visualizzare le informazioni sul processo di preparazione. Al termine del processo di preparazione, è possibile accedere al caso di eDiscovery avanzate per elaborare i dati per l'analisi. 
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Passaggio 8: Viene eseguito il caso di eDiscovery avanzate
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ Per accedere a un caso in Advanced eDiscovery:
     
 > [!TIP]
 > Fare clic su **passa a eDiscovery** per tornare allo stesso caso nella protezione &amp; centro conformità. 
-  
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>(Facoltativo) Passaggio 9: Chiudere un caso
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ Per chiudere un caso:
 7. Nella pagina **eDiscovery** fare clic su ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare lo stato del caso chiuso. Potrebbero richiedere fino a 60 minuti per il processo di chiusura per il completamento. 
     
     Una volta completato il processo, lo stato del caso viene modificato per **Chiudi** nella pagina di **eDiscovery** . Fare clic sul nome del caso nuovamente per visualizzare la pagina di comparsa **Gestisci in questo caso** , che contiene informazioni su quando il caso è stata chiusa e che ha chiuso. 
-    
-[Inizio pagina](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>(Facoltativo) Passaggio 10: Aprire nuovamente un caso chiuso
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ Quando si apre nuovamente un caso, qualsiasi esenzioni che erano presenti al mom
 6. Nella pagina **eDiscovery** fare clic su ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare lo stato del caso riaperto. Potrebbero richiedere fino a 60 minuti completare il processo nuovamente apertura. 
     
     Una volta completato il processo, lo stato del caso viene modificato in **attivo** nella pagina di **eDiscovery** . 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>Ulteriori informazioni
 <a name="moreinfo_1"> </a>
@@ -536,12 +513,9 @@ Quando si apre nuovamente un caso, qualsiasi esenzioni che erano presenti al mom
     
     Infine, precedente come spiegato, gli amministratori di eDiscovery in sicurezza &amp; centro conformità vengono aggiunte automaticamente come amministratori di eDiscovery avanzate. Ciò significa che la persona che un'amministratore di eDiscovery può eseguire attività amministrative di eDiscovery avanzate, ad esempio configurazione degli utenti, creare casi e aggiunta di dati ai casi.
     
-<<<<<<< HEAD
-- **Che cosa sono i requisiti di licenza per i percorsi di contenuti di mettere in attesa?** In generale, le organizzazioni richiedono una sottoscrizione a Office 365 E3 o superiore per posizionare i percorsi di contenuti in attesa. Per archiviare cassette postali, è necessaria una licenza di Exchange Online piano 2. Per ulteriori informazioni, vedere questo [domandi frequenti eDiscovery](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5). =======
 - **Che cosa sono i requisiti di licenza per i percorsi di contenuti di mettere in attesa?** In generale, le organizzazioni richiedono una sottoscrizione a Office 365 E3 o superiore per posizionare i percorsi di contenuti in attesa. Per archiviare cassette postali, è necessaria una licenza di Exchange Online piano 2. Per ulteriori informazioni, vedere [domande frequenti su](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5)questo.
->>>>>>> conversione deniseb
-    
-- **Altro conoscenze indispensabili per sulla ricerca in tutto il contenuto sociale nel passaggio 5?** Come indicato in precedenza, è possibile cercare i percorsi contenuti messe in attesa nel caso. A tale scopo, solo il contenuto che soddisfa i criteri di conservazione è ricerca. Se non esiste alcun criterio di conservazione, tutto il contenuto viene eseguita la ricerca. Se è basati su query contenuto attesa, solo il contenuto che corrisponde a entrambi contenuti criteri (dall'esenzione incluso nel passaggio 4) e i criteri di ricerca (dalla ricerca nel passaggio 5) viene restituito con i risultati della ricerca.
+
+- **Altro conoscenze indispensabili per sulla ricerca in tutto il contenuto sociale nel passaggio 5?** Come indicato in precedenza, è possibile cercare i percorsi di contenuti messe in attesa nel caso. A tale scopo, solo il contenuto che soddisfa i criteri di conservazione è ricerca. Se non esiste alcun criterio di conservazione, tutto il contenuto viene eseguita la ricerca. Se è basati su query contenuto attesa, solo il contenuto che corrisponde a entrambi contenuti criteri (dall'esenzione incluso nel passaggio 4) e i criteri di ricerca (dalla ricerca nel passaggio 5) viene restituito con i risultati della ricerca.
     
     Ecco alcuni altri aspetti da tenere presenti durante la ricerca di tutto il contenuto sociale:
     

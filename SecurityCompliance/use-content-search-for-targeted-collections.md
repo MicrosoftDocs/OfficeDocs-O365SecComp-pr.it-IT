@@ -3,7 +3,7 @@ title: Utilizzare la ricerca del contenuto in Office 365 per le raccolte di dest
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 12/19/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,18 +11,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca del contenuto in Office 365 Security &amp; centro conformità eseguire raccolte di destinazione. Una raccolta di destinazione significa che si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID della cartella o il percorso per le cartelle delle cassette postali o un sito specifiche che si desidera eseguire la ricerca.
-ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522287"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca del contenuto in Office 365 per le raccolte di destinazione
 
 La funzionalità di ricerca del contenuto in Office 365 Security &amp; centro conformità non fornisce un modo diretto nell'interfaccia utente per la ricerca di cartelle specifiche cassette postali di Exchange o SharePoint e OneDrive per i siti. Tuttavia, è possibile eseguire la ricerca di cartelle specifiche (noti come una raccolta di destinazione) specificando l'ID della cartella o il percorso nella sintassi di query ricerca effettiva. Utilizzo di ricerca del contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso per le cartelle in SharePoint e OneDrive per sito aziendale. Quindi è possibile utilizzare l'ID della cartella o il percorso di una query di ricerca per restituire elementi disponibile nella cartella.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere membri del gruppo di ruoli gestione eDiscovery in sicurezza &amp; centro conformità per eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
     
@@ -67,7 +67,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o i percorsi de
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
   #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appeneded to the folder ID or path ID to use in a Content Search.              #
+  #      appended to the folder ID or path ID to use in a Content Search.               #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -78,7 +78,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o i percorsi de
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Complaince Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -120,13 +120,13 @@ Per visualizzare un elenco delle cartelle delle cassette postali o i percorsi de
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Complaince Center
+      # Authenticate with the Security &amp; Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
           Import-PSSession $SccSession -AllowClobber -DisableNameChecking
       }
-      # Clean-up, if the the script was aborted, the search we created might not have been deleted.  Try to do so now.
+      # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
       # Create a Content Search against the SharePoint Site or OneDrive for Business site and only search for folders; wait for the search to complete
       $complianceSearch = New-ComplianceSearch -Name $searchName -ContentMatchQuery "contenttype:folder" -SharePointLocation $siteUrl
@@ -208,7 +208,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID delle cartelle o pi
 > [!NOTE]
 > Utilizzo di `path` proprietà per la ricerca di OneDrive percorsi non restituiscono i file multimediali, ad esempio file PNG, TIFF o con estensione wav, nei risultati della ricerca. 
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Accedere a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account e le credenziali utilizzate per eseguire lo script nel passaggio 1.
     
@@ -262,7 +262,7 @@ Di seguito sono riportati alcuni esempi dell'utilizzo di `folderid` e `path` pro
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Tenere presenti i seguenti aspetti quando si utilizza lo script in questo articolo ed esegue specifiche raccolte.
   
