@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con un criterio di criterio DLP perdita di dati in Office 365 Security &amp; centro conformità, è possibile identificare, monitorare e proteggere automaticamente le informazioni contenute in Office 365.
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540422"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -304,7 +304,7 @@ Per questi motivi, le indicazioni per la creazione di regole con corrispondenza 
     
 - Tutti i livelli di probabilità intermedi in genere compreso tra sopra il livello di probabilità inferiore subito sotto il livello di probabilità di superiore.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilizza un'etichetta come condizione in un criterio DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati
 
 È possibile creare un'etichetta e quindi:
   
@@ -312,7 +312,7 @@ Per questi motivi, le indicazioni per la creazione di regole con corrispondenza 
     
 - **Applicare automaticamente** il contenuto che soddisfa le condizioni che si sceglie. 
     
-Per ulteriori informazioni sulle etichette, vedere [Overview of etichette](labels.md).
+Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette](labels.md).
   
 Dopo aver creato un'etichetta, quindi utilizzare tale etichetta come condizione nei criteri DLP. È possibile ad esempio, in quanto:
   
@@ -332,7 +332,7 @@ In base alle etichette come condizione nelle regole DLP, può è in modo seletti
 
 Diverse funzionalità può essere applicata al contenuto che contiene informazioni riservate:
   
-- Un' [applicazione un'etichetta automaticamente in base a condizioni](labels.md#applying-a-label-automatically-based-on-conditions) e un [criterio di conservazione](retention-policies.md) può applicare entrambi azioni di **conservazione** del contenuto. 
+- Un' [etichetta di conservazione](labels.md#applying-a-retention-label-automatically-based-on-conditions)[applica un'etichetta automaticamente in base alle condizioni] e un [criterio di conservazione](retention-policies.md) può applicare entrambi azioni di **conservazione** del contenuto. 
     
 - Un criterio DLP può applicare azioni di **protezione** del contenuto. E prima applicate queste operazioni, un criterio DLP può richiedere altre condizioni per soddisfare oltre il contenuto che include un'etichetta. 
     
@@ -478,13 +478,13 @@ Queste autorizzazioni sono necessarie solo per la creazione e l'applicazione di 
 
 Utilizzare la maggior parte dei cmdlet per la sicurezza &amp; centro conformità, è necessario:
   
-1. [Connettersi a Office 365 Security &amp; centro conformità utilizzando PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
     
 2. Utilizzare una qualsiasi delle domande [protezione di Office 365 &amp; cmdlet centro conformità](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 Tuttavia, rapporti DLP necessario estrarre dati da tra Office 365, inclusi Exchange Online. Per questo motivo, i cmdlet per i rapporti DLP sono disponibili in Exchange Online Powershell, non in sicurezza &amp; Powershell centro conformità. Pertanto, per utilizzare i cmdlet per i rapporti DLP, è necessario:
   
-1. [Connessione a Exchange Online tramite remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Utilizzare uno di questi cmdlet per i rapporti DLP:
     
@@ -492,20 +492,20 @@ Tuttavia, rapporti DLP necessario estrarre dati da tra Office 365, inclusi Excha
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
-- [Creare un criterio DLP da un modello](create-a-dlp-policy-from-a-template.md)
+- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
 - [Inviare notifiche e visualizzare i suggerimenti per i criteri DLP](use-notifications-and-policy-tips.md)
     
-- [Creare un criterio DLP per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
 - [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
     
-- [Cosa individuano le funzioni DLP ](what-the-dlp-functions-look-for.md)
+- [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
-- [Creare un tipo di informazione riservata personalizzato](create-a-custom-sensitive-information-type.md)
+- [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
     
 
