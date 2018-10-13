@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454303"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552334"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -25,13 +25,16 @@ Se l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](offic
   
 ![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-I report degli strumenti di analisi includono [relazione sullo stato di protezione rischio](#threat-protection-status-report), il [rapporto di tipi di File degli strumenti di analisi](#atp-file-types-report)e il [rapporto di disposizione degli strumenti di analisi del messaggio](#atp-message-disposition-report). In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a [ulteriori report da visualizzare](#additional-reports-to-view).
+I report degli strumenti di analisi includono [relazione sullo stato di protezione di rischio](#threat-protection-status-report), il [rapporto di tipi di File degli strumenti di analisi](#atp-file-types-report)e il [report di disposizione degli strumenti di analisi del messaggio](#atp-message-disposition-report). In questo articolo vengono descritti i report degli strumenti di analisi e include collegamenti a [ulteriori report da visualizzare](#additional-reports-to-view).
   
-## <a name="threat-protection-status-report"></a>Relazione sullo stato di protezione rischio
+## <a name="threat-protection-status-report"></a>Relazione sullo stato di protezione di rischio
 
-La relazione **sullo stato di protezione di rischio** è una singola visualizzazione che combina informazioni dannoso contenuto dannoso posta elettronica e rilevato e bloccato da Exchange Online e protezione da minacce avanzate. Il rapporto fornisce un conteggio aggregato univoco dei messaggi di posta con contenuto dannoso (file o URL) bloccato il motore antimalware, [(ZAP) di eliminazione automatica zero ore](zero-hour-auto-purge.md)e caratteristiche di protezione da minacce avanzate, ad esempio [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md), [degli strumenti di analisi Gli allegati sicuri](atp-safe-attachments.md)e le [funzionalità di protezione anti-phishing degli strumenti di analisi in Office 365](atp-anti-phishing.md).
+La relazione **Sullo stato di protezione di rischio** è una singola visualizzazione che combina informazioni dannoso contenuto dannoso posta elettronica e rilevato e bloccato da [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP) e [Degli strumenti di analisi di Office 365](office-365-atp.md). Il rapporto fornisce un conteggio aggregato univoco dei messaggi di posta con contenuto dannoso (file o indirizzi di siti Web (URL)) bloccato il motore antimalware, [(ZAP) di eliminazione automatica zero ore](zero-hour-auto-purge.md)e caratteristiche degli strumenti di analisi, ad esempio [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md), [Safe degli strumenti di analisi Allegati](atp-safe-attachments.md)e le [funzionalità di protezione anti-phishing degli strumenti di analisi](atp-anti-phishing.md).
+
+> [!NOTE]
+> Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio, la relazione sullo stato di protezione di rischio per i clienti degli strumenti di analisi conterrà informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team di Microsoft](atp-for-spo-odb-and-teams.md). Tali informazioni sono specifiche di strumenti di analisi, in modo che i clienti che dispongono di EOP, ma non degli strumenti di analisi non visualizzerà i dettagli nel loro relazione sullo stato di protezione di rischio.
   
-Per visualizzare il report di stato protezione rischio, in sicurezza &amp; centro conformità, passare a **report** \> **Dashboard** \> **lo stato di protezione di rischio**.
+Per visualizzare il report di stato di protezione di rischio, in sicurezza &amp; centro conformità, passare a **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione rischio degli strumenti di analisi](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -39,7 +42,7 @@ Per ottenere informazioni dettagliate sullo stato di un giorno, al passaggio del
   
 ![Dati relativi allo stato di protezione rischio degli strumenti di analisi di un giorno](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Per impostazione predefinita, il rapporto di stato protezione rischio Mostra dati per gli ultimi sette giorni. Tuttavia, è possibile scegliere di **filtri** e modificare l'intervallo di date per visualizzare i dati per un massimo di 90 giorni. 
+Per impostazione predefinita, il rapporto di stato di protezione di rischio Mostra dati per gli ultimi sette giorni. Tuttavia, è possibile scegliere di **filtri** e modificare l'intervallo di date per visualizzare i dati per un massimo di 90 giorni. 
   
 ![Filtri di stato di protezione di rischio degli strumenti di analisi](media/4f703369-642b-402b-9758-b9c828283410.png)
   
@@ -73,9 +76,16 @@ Quando passa il mouse su una barra nel grafico, è possibile visualizzare le azi
   
 ## <a name="additional-reports-to-view"></a>Altri report per visualizzare
 
-Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, sono disponibili nel titolo [rapporti sulla protezione posta elettronica](view-email-security-reports.md) &amp; centro conformità. Rapporti sulla protezione posta elettronica includono un [rapporto di destinatari e mittenti principali](view-email-security-reports.md#top-senders-and-recipients-report), un [rapporto di spoofing posta](view-email-security-reports.md#spoof-mail-report), un [rapporto sui rilevamenti di posta indesiderata](view-email-security-reports.md#spam-detections-report)e altro ancora.
-  
-E, se l'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md), è anche possibile [utilizzare Esplora nella protezione &amp; centro conformità](use-explorer-in-security-and-compliance.md).
+Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diversi altri report disponibili, come descritto nella tabella riportata di seguito:
+
+
+|Tipo di rapporto  |Altre informazioni  |
+|---------|---------|
+|**Rapporti sulla protezione posta elettronica**, ad esempio primi mittenti e destinatari report, un report di posta elettronica di spoofing e un rapporto sui rilevamenti di posta indesiderata. | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](view-email-security-reports.md)        |
+|**Explorer** (detto anche Explorer rischio, questa è inclusa funzionalità di [Business Intelligence di Office 365 rischio](office-365-ti.md))     | [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md)        |
+|**EOP e degli strumenti di analisi dei risultati** (Questo è un report personalizzato che generare tramite PowerShell). In questo report contiene informazioni, ad esempio dominio, data, tipo di evento, Direction, azione e numero di messaggi.  | [Riferimento al cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
+|**Rilevamenti di EOP e degli strumenti di analisi** (Questo è un report personalizzato che generare tramite PowerShell). In questo report contiene informazioni dettagliate sui file dannosi o URL, tentativi di phishing, rappresentazione e altri potenziali pericoli nel messaggio di posta elettronica o i file.   | [Riferimento al cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Autorizzazioni necessarie per visualizzare i report degli strumenti di analisi?
 
@@ -83,12 +93,12 @@ Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necess
   
 |**Gruppo di ruoli**|**Dove assegnato**|**Altre informazioni**|
 |:-----|:-----|:-----|
-| Uno dei seguenti:  <br/>  Gestione organizzazione  <br/>  Amministratore della sicurezza  <br/>  Lettore di sicurezza  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno dei seguenti:  <br/>  Gestione organizzazione  <br/>  Gestione organizzazione sola visualizzazione  <br/>  Ruolo destinatari di sola visualizzazione  <br/>  Gestione della conformità  <br/> |Centro amministrativo di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-- Sicurezza amministratore  <br/>-- Protezione lettore  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-Gestione organizzazione sola visualizzazione  <br/>-Ruolo destinatari View-Only  <br/>: Gestione della conformità  <br/> |Interfaccia di amministrazione di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se il report non vengono visualizzate dati?
 
-Se non si possono visualizzare dati nei report, verificare che i criteri siano configurati correttamente. L'organizzazione deve disporre [degli strumenti di analisi collegamenti sicuro politiche](set-up-atp-safe-links-policies.md) e [gli allegati sicuri degli strumenti di analisi criteri](set-up-atp-safe-attachments-policies.md) definiti nell'ordine indicato per la protezione degli strumenti di analisi in locale. Vedere anche [protezione antispam e antimalware in Office 365](anti-spam-and-anti-malware-protection.md).
+Se non si possono visualizzare dati nei report degli strumenti di analisi, assicurarsi che i criteri siano configurati correttamente. L'organizzazione deve disporre [degli strumenti di analisi collegamenti sicuro politiche](set-up-atp-safe-links-policies.md) e [gli allegati sicuri degli strumenti di analisi criteri](set-up-atp-safe-attachments-policies.md) definiti nell'ordine indicato per la protezione degli strumenti di analisi in locale. Vedere anche [protezione antispam e antimalware in Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
 

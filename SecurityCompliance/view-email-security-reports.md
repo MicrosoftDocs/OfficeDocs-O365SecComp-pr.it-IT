@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454343"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552394"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
@@ -27,7 +27,7 @@ Protezione della posta elettronica diversi report sono disponibili per la protez
   
 I rapporti di protezione posta elettronica includono quanto segue:
   
-- [Relazione sullo stato di protezione rischio](view-email-security-reports.md#tps) (nuovo)! 
+- [Relazione sullo stato di protezione di rischio](view-email-security-reports.md#tps) (nuovo)! 
     
 - [Rapporto sui rilevamenti di malware](view-email-security-reports.md#maldet)
     
@@ -43,15 +43,18 @@ I rapporti di protezione posta elettronica includono quanto segue:
     
 - [Rapporto messaggi segnalati dagli utenti](view-email-security-reports.md#userreported) (nuovo)! 
     
-## <a name="threat-protection-status-report-new"></a>Rapporto di stato protezione rischio (nuovo)!
+## <a name="threat-protection-status-report-new"></a>Minacce relazione sullo stato di protezione (nuovo)!
 
-La nuova relazione **sullo stato di protezione di rischio** è un rapporto intelligente che mostra dannoso posta elettronica che è stato rilevato e bloccato da Exchange Online Protection. Questo rapporto vengono visualizzate informazioni sulla posta elettronica identificato come malware o un tentativo di phishing. 
+La nuova relazione **Sullo stato di protezione di rischio** è un rapporto intelligente che mostra dannoso posta elettronica che è stato rilevato e bloccato da Exchange Online Protection. Questo rapporto vengono visualizzate informazioni sulla posta elettronica identificato come malware o un tentativo di phishing. 
+
+> [!NOTE]
+> Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio clienti EOP possono visualizzare informazioni su malware rilevato nel messaggio di posta elettronica, ma non informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team Microsoft che](atp-for-spo-odb-and-teams.md), una funzionalità specifiche degli strumenti di analisi. ([Ulteriori informazioni sui report degli strumenti di analisi](view-reports-for-atp.md)).
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **lo stato di protezione di rischio**.
+Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione di rischio](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Quando si apre il rapporto di stato di protezione rischio, nel rapporto viene visualizzato dati per gli ultimi sette giorni per impostazione predefinita. Tuttavia, è possibile fare clic su **filtri** e modificare l'intervallo di date per un massimo di 90 giorni di dettaglio. In questo report è utile per visualizzare l'efficacia e l'impatto delle funzionalità di Exchange Online Protection dell'organizzazione e per l'analisi delle tendenze più lungo termine. 
+Quando si apre la relazione sullo stato di protezione di rischio, il report mostra i dati per gli ultimi sette giorni per impostazione predefinita. Tuttavia, è possibile fare clic su **filtri** e modificare l'intervallo di date per un massimo di 90 giorni di dettaglio. In questo report è utile per visualizzare l'efficacia e l'impatto delle funzionalità di Exchange Online Protection dell'organizzazione e per l'analisi delle tendenze più lungo termine. 
   
 ![Filtri del rapporto sullo stato di protezione rischio](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -67,7 +70,7 @@ Per visualizzare il report nella protezione &amp; centro conformità, passare a 
   
 ![Esempio di rapporto sui rilevamenti di malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-Simile ad altri report, ad esempio il rapporto di stato protezione rischio, i report vengono visualizzati dati per gli ultimi sette giorni per impostazione predefinita. Tuttavia, è possibile scegliere di **filtri** per modificare l'intervallo di date. 
+Simile ad altri report, ad esempio il rapporto di stato di protezione di rischio, i report vengono visualizzati dati per gli ultimi sette giorni per impostazione predefinita. Tuttavia, è possibile scegliere di **filtri** per modificare l'intervallo di date. 
   
 ## <a name="top-malware-report"></a>Rapporto Malware principale
 
@@ -176,8 +179,8 @@ Per visualizzare e utilizzare i rapporti di protezione posta elettronica descrit
   
 |**Gruppo di ruoli**|**Dove assegnato**|**Altre informazioni**|
 |:-----|:-----|:-----|
-| Uno dei seguenti:  <br/>  Gestione organizzazione  <br/>  Amministratore della sicurezza  <br/>  Lettore di sicurezza  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno dei seguenti:  <br/>  Gestione organizzazione  <br/>  Gestione organizzazione sola visualizzazione  <br/>  Ruolo destinatari di sola visualizzazione  <br/>  Gestione della conformità  <br/> |Centro amministrativo di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-- Sicurezza amministratore  <br/>-- Protezione lettore  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-Gestione organizzazione sola visualizzazione  <br/>-Ruolo destinatari View-Only  <br/>: Gestione della conformità  <br/> |Interfaccia di amministrazione di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se il report non vengono visualizzate dati?
 

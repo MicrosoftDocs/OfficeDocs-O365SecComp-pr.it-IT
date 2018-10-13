@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454333"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552344"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -49,7 +49,7 @@ ms.locfileid: "25454333"
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Passaggio 2: Definire (o per prendere visione) il criterio degli strumenti di analisi collegamenti attendibili che si applica a tutti gli utenti
 
-Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è necessario un criterio di collegamenti sicuro degli strumenti di analisi predefinito che si applica a tutti gli utenti nell'organizzazione. 
+Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è necessario un criterio di collegamenti sicuro degli strumenti di analisi predefinito che si applica a tutti gli utenti nell'organizzazione. Assicurarsi di esaminare e, se necessario, modificare il criterio predefinito.
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
@@ -63,11 +63,11 @@ Quando si dispone di protezione da minacce avanzate di Office 365 Enterprise, è
     
 5. Nella sezione **impostazioni che si applicano al contenuto, ad eccezione di posta elettronica** selezionare oppure deselezionare le opzioni che si desidera utilizzare. (È consigliabile selezionare tutte le opzioni). 
     
-6. Fare clic su **Salva**.
+6. Scegliere **Save**.
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Passaggio 3: Aggiungere (o modifica) degli strumenti di analisi collegamenti sicuri i criteri applicati ai destinatari di posta elettronica specifici
 
-Dopo aver esaminato il criterio degli strumenti di analisi collegamenti sicuri per tutti gli utenti, è consigliabile definire ulteriori criteri per determinati gruppi di destinatari di posta elettronica. In questo modo è possibile specificare le eccezioni per il criterio predefinito. 
+Dopo aver esaminato (o modificati) il criterio degli strumenti di analisi collegamenti sicuro predefinito che si applica a tutti gli utenti, il passaggio successivo consiste nel definire ulteriori criteri applicabili a destinatari specifici. Ad esempio, è possibile specificare eccezioni per il criterio predefinito mediante la definizione di un criterio aggiuntivo. 
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
@@ -95,7 +95,7 @@ Dopo aver esaminato il criterio degli strumenti di analisi collegamenti sicuri p
     
   - Nella sezione **Applicato a** scegliere **il destinatario è un membro del**e quindi fare clic su gruppi di cui che si desidera includere nel criterio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
-6. Fare clic su **Salva**.
+6. Scegliere **Save**.
     
 ## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>Passaggio 5: Informazioni sulle opzioni di criteri di collegamenti sicuro degli strumenti di analisi
 

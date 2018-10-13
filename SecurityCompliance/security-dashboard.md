@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-description: Utilizzare il nuovo Dashboard di sicurezza per esaminare lo stato di protezione rischio di Office 365, visualizzare e agire avvisi di protezione.
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+description: Utilizzare il nuovo Dashboard di protezione di Office 365 Threat Protection stato revisione e visualizzare e gestire gli avvisi di protezione.
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839080"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552364"
 ---
 # <a name="security-dashboard-overview"></a>Panoramica della sicurezza di dashboard
 
@@ -45,7 +45,7 @@ Per visualizzare il Dashboard di protezione, nelle [protezione di Office 365 &am
   
 ## <a name="threat-protection-status"></a>Stato di protezione di rischio
 
-Nell'angolo superiore sinistro del Dashboard di sicurezza è un widget stato protezione rischio che mostra l'efficacia di protezione di rischio. Questo widget viene illustrato uno sguardo le minacce quanti sono state bloccate da [Office 365 Exchange Online Protection](anti-spam-protection.md) e la [Protezione di Office 365 avanzate rischio](office-365-atp.md) , se configurata, negli ultimi sette giorni. Inoltre, questo widget visualizza il numero di messaggi di posta elettronica rilevato come classificazioni non corrette e segnalate tramite l' [utilizzo del componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Esaminare la protezione da posta indesiderata, anti-malware e i criteri di anti-phishing per migliorare la configurazione.
+Nell'angolo superiore sinistro del Dashboard di sicurezza è un widget lo stato di protezione di rischio che mostra l'efficacia di protezione di rischio. Questo widget viene illustrato uno sguardo le minacce quanti sono state bloccate da [Office 365 Exchange Online Protection](anti-spam-protection.md) e la [Protezione di Office 365 avanzate rischio](office-365-atp.md) , se configurata, negli ultimi sette giorni. Inoltre, questo widget visualizza il numero di messaggi di posta elettronica rilevato come classificazioni non corrette e segnalate tramite l' [utilizzo del componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Esaminare la protezione da posta indesiderata, anti-malware e i criteri di anti-phishing per migliorare la configurazione.
   
 ![Widget protezione rischio nella parte superiore del Dashboard di sicurezza](media/5c7c644e-6b01-4bf8-b991-f6ba0fdc5717.png)
   

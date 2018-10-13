@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Informazioni su come impostare una pianificazione per un report nella protezione &amp; centro conformità.
-ms.openlocfilehash: 38223d670622e602fbb145aed6b4dc0f6ecb36f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530197"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552354"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Creare una pianificazione per un report nella protezione &amp; centro conformità
 
@@ -31,7 +31,7 @@ In sicurezza &amp; centro conformità, diversi [report e informazioni](reports-a
   
 1. In sicurezza &amp; centro conformità, passare a **report** \> **Dashboard**.
     
-2. Scegliere un report. In questo esempio verrà scelto relazione sullo stato di protezione rischio.
+2. Scegliere un report. In questo esempio verrà scelto il rapporto di stato di protezione di rischio.
     
 3. Nell'angolo superiore sinistro del report, scegliere **Crea pianificazione +**.
     

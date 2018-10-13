@@ -1,5 +1,5 @@
 ---
-title: Gestione di Office 365 protezione delle minacce &amp; centro conformità
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Utilizzare Threat management consentono di controllare e gestire l'accesso dei dispositivi mobili per i dati dell'organizzazione, proteggere l'organizzazione da perdita di dati e migliorare la protezione dei messaggi in ingresso e in uscita da posta indesiderata e malware. È inoltre possibile utilizzare threat management per la protezione di reputazione del dominio e per determinare se i mittenti sono da utenti malintenzionati lo spoofing degli account di dominio.
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011832"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552404"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Gestione di Office 365 protezione delle minacce &amp; centro conformità
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 Utilizzare Threat management consentono di controllare e gestire l'accesso dei dispositivi mobili per i dati dell'organizzazione, proteggere l'organizzazione da perdita di dati e migliorare la protezione dei messaggi in ingresso e in uscita da posta indesiderata e malware. È inoltre possibile utilizzare threat management per la protezione di reputazione del dominio e per determinare se i mittenti sono da utenti malintenzionati lo spoofing degli account di dominio.
   
@@ -31,7 +31,7 @@ In Office 365, utilizzare la protezione &amp; centro conformità per la gestione
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro, selezionare **gestione rischio**.
     
@@ -39,7 +39,7 @@ In Office 365, utilizzare la protezione &amp; centro conformità per la gestione
   
  **Per passare alla protezione &amp; centro conformità con il servizio di avvio di applicazioni di Office 365:**
   
-1. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+1. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 2. Selezionare il servizio di avvio di app ![l'icona di avvio di app in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) nell'angolo in alto a sinistra angolo e quindi selezionare il **protezione &amp; conformità** affiancate. 
     
@@ -62,6 +62,6 @@ In alcuni casi, non esistono differenze tra l'interfaccia di amministrazione di 
 |**Allegati sicuri** <br/> |[Gli allegati sicuri](atp-safe-attachments.md) fa parte di protezione avanzata di rischio. Se abilitato, gli allegati di posta elettronica vengono aperti in un ambiente isolato speciale che è separato da Office 365 prima che vengano inviati a destinatari posta in arrivo. Gli allegati sicuri è progettato per il rilevamento presenza di allegati anche prima antivirus firme sono disponibili. Per ulteriori informazioni, vedere [Allegati attendibili in Office 365](atp-safe-attachments.md).<br/> |
 |**Collegamenti sicuri** <br/> |[Collegamenti sicura](atp-safe-links.md) fa parte di protezione avanzata di rischio. Collegamenti sicuri utili per impedire agli utenti di URL seguenti nel messaggio di posta elettronica o nei documenti di Office che puntano a siti web in cui vengono riconosciuti come dannose. Per ulteriori informazioni, vedere [Collegamenti attendibili in Office 365](atp-safe-links.md).<br/> |
 |**Quarantena** <br/> |Configurazione di [quarantena](http://go.microsoft.com/fwlink/p/?LinkID=809005) per i messaggi di posta elettronica in arrivo in Office 365 dove in blocco, i messaggi che sono stati filtrati come posta indesiderata, phishing, e malware posta può essere mantenuta per un utilizzo successivo. Gli utenti e gli amministratori possono lavorare con i messaggi in quarantena. Gli utenti possono utilizzare solo i propri messaggi filtrati in quarantena. Gli amministratori possono cercare e gestire i messaggi in quarantena per tutti gli utenti.<br/> |
-|**Minacce avanzate** <br/> |Visualizzare il [rapporto sullo stato di protezione rischio](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) per visualizzare informazioni sul contenuto dannoso individuato e bloccati per Exchange Online Protection e protezione da minacce avanzate.  <br/> |
+|**Minacce avanzate** <br/> |Visualizzare il [rapporto sullo stato di protezione di rischio](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) per visualizzare informazioni sul contenuto dannoso individuato e bloccati per Exchange Online Protection e protezione da minacce avanzate.  <br/> |
    
 
