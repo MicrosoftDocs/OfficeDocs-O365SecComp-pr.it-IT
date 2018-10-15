@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540402"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -259,7 +259,7 @@ I criteri di conservazione che si applicano a Teams possono usare la [protezione
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Esclusione di specifici tipi di elementi di Exchange dai criteri di conservazione
 È possibile usare PowerShell per escludere specifici tipi di elementi di Exchange dai criteri di conservazione. Ad esempio, è possibile escludere i messaggi vocali, le conversazioni di messaggistica istantanea e altri contenuti di Skype for Business Online nelle cassette postali. Si possono anche escludere elementi del calendario, note e attività. Questa funzionalità è disponibile solo tramite PowerShell, non è disponibile nell'interfaccia utente quando si crea un criterio di conservazione.
   
-A questo scopo, usare il parametro `ExcludedItemClasses` dei cmdlet `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](retention-policies.md#powershell) più avanti.
+A questo scopo, usare il parametro `ExcludedItemClasses` dei cmdlet `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](#find-the-powershell-cmdlets-for-retention-policies) più avanti.
   
 ## <a name="locking-a-retention-policy"></a>Blocco dei criteri di conservazione
 È possibile che alcune organizzazioni debbano conformarsi alle regole definite da enti normativi, come la regola 17a-4 della SEC (Securities and Exchange Commission), in base alla quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. Protezione dell'archiviazione consente di bloccare i criteri in modo che nessuno, incluso l'amministratore, possa disattivarli o renderli meno restrittivi.
@@ -268,11 +268,11 @@ Dopo il blocco dei criteri, nessuno può disattivarli, né rimuovere le posizion
   
 Prima di bloccare i criteri di conservazione è quindi **essenziale** conoscere i requisiti di conformità dell'organizzazione e **non bloccare i criteri** a meno che non sia strettamente necessario.
   
-È possibile bloccare i criteri di conservazione solo con PowerShell. Usare il parametro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](retention-policies.md#powershell) più avanti.
+È possibile bloccare i criteri di conservazione solo con PowerShell. Usare il parametro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](#find-the-powershell-cmdlets-for-retention-policies) più avanti.
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principi di conservazione o criteri di precedenza
 
-È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Cosa ha la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
+È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Quali sono i criteri che hanno la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
   
 ![Diagramma dei principi di conservazione](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
