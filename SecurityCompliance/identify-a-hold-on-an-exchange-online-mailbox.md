@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di attesa può essere messa in una cassetta postale di Office 365. Questi tipi di conservazioni includono i criteri di conservazione Office 365, esenzioni eDiscovery e conservazione per controversia legale. È inoltre possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965263"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577075"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -172,7 +172,7 @@ Per ulteriori informazioni sulle etichette, vedere [Panoramica di Office 365 eti
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestione delle cassette postali in ritardo attesa
 
-Dopo la rimozione di qualsiasi tipo di attesa da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **True**. Questo viene chiamato un *ritardo di conservazione* e significa che la rimozione effettiva dell'esenzione ha un ritardo per 30 giorni impedire che i dati vengano rimossi definitivamente dalla cassetta postale. In questo modo gli amministratori la possibilità di cercare o il ripristino di elementi delle cassette postali che verranno cancellati dopo la sospensione viene effettivamente rimosso. Quando un'esenzione ritardo viene effettuata nella cassetta postale, la cassetta postale è ancora considerata in attesa per un periodo illimitato come se la cassetta postale è stata controversie legali. Dopo 30 giorni, scade la conservazione di ritardo e Office 365 verrà automaticamente tenta di rimuovere la conservazione di ritardo (impostando la proprietà *DelayHoldApplied* su **False**) in modo che esenzione vengono effettivamente rimosse. Dopo la proprietà *DelayHoldApplied* su **False**, verranno eliminati gli elementi contrassegnati per la rimozione della cassetta postale viene elaborato dall'Assistente cartelle gestite.
+Dopo la rimozione di qualsiasi tipo di attesa da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **True**. Questa operazione viene eseguita la volta successiva l'Assistente cartelle gestite elaborata la cassetta postale e rileva che è stata rimossa un'esenzione. Questo viene chiamato un *ritardo di conservazione* e significa che la rimozione effettiva dell'esenzione ha un ritardo per 30 giorni impedire che i dati vengano rimossi definitivamente dalla cassetta postale. In questo modo gli amministratori la possibilità di cercare o il ripristino di elementi delle cassette postali che verranno cancellati dopo la sospensione viene effettivamente rimosso. Quando un'esenzione ritardo viene effettuata nella cassetta postale, la cassetta postale è ancora considerata in attesa per un periodo illimitato come se la cassetta postale è stata controversie legali. Dopo 30 giorni, scade la conservazione di ritardo e Office 365 verrà automaticamente tenta di rimuovere la conservazione di ritardo (impostando la proprietà *DelayHoldApplied* su **False**) in modo che esenzione vengono effettivamente rimosse. Dopo la proprietà *DelayHoldApplied* su **False**, verranno eliminati gli elementi contrassegnati per la rimozione della cassetta postale viene elaborato dall'Assistente cartelle gestite.
 
 Per visualizzare il valore della proprietà *DelayHoldApplied* per una cassetta postale, eseguire il seguente comando in Exchange Online PowerShell.
 

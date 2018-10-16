@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi recuperabili di un utente di una cassetta postale di Exchange Online, anche se tale cassetta postale viene messa in attesa legale. Si tratta in modo efficace per eliminare i dati che sono stata inavvertitamente passati in Office 365.'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566887"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577085"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi recuperabili di cassette postali basate su cloud in attesa - della Guida di amministrazione
 
@@ -245,22 +245,22 @@ Dopo aver identificato il nome del caso eDiscovery e conservazione, passare al *
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Passaggio 4: Rimuovere la conservazione di ritardo dalla cassetta postale
 
-Dopo la rimozione di qualsiasi tipo di attesa da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **True**. Questo viene chiamato un *ritardo di conservazione* e significa che la rimozione effettiva dell'esenzione ha un ritardo per 30 giorni impedire che i dati vengano rimossi definitivamente dalla cassetta postale.   Quando un'esenzione ritardo viene effettuata nella cassetta postale, la cassetta postale è ancora considerata in attesa per un periodo illimitato come se la cassetta postale è stata controversie legali. (Lo scopo di un'esenzione ritardo deve fornire gli amministratori la possibilità di cercare o il ripristino di elementi delle cassette postali che verranno cancellati dopo la rimozione di un'esenzione). Scadenza Noe che dopo 30 giorni, il ritardo contenuti e Office 365 tenta automaticamente di rimuovere la conservazione di ritardo (impostando la proprietà *DelayHoldApplied* su **False**) in modo che esenzione vengono effettivamente rimosse. 
+Dopo la rimozione di qualsiasi tipo di attesa da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **True**. Questa operazione viene eseguita la volta successiva l'Assistente cartelle gestite elaborata la cassetta postale e rileva che è stata rimossa un'esenzione. Questo viene chiamato un *ritardo di attesa* e si intende che la rimozione effettiva dell'esenzione è ritardata per 30 giorni impedire che i dati vengano rimossi definitivamente dalla cassetta postale. (Lo scopo di un'esenzione ritardo deve fornire gli amministratori la possibilità di cercare o il ripristino di elementi delle cassette postali che verranno cancellati dopo la rimozione di un'esenzione).  Quando un'esenzione ritardo viene effettuata nella cassetta postale, la cassetta postale è ancora considerata in attesa per un periodo illimitato come se la cassetta postale è stata controversie legali. Dopo 30 giorni, scade la conservazione di ritardo e Office 365 verrà automaticamente tenta di rimuovere la conservazione di ritardo (impostando la proprietà *DelayHoldApplied* su **False**) in modo che la conservazione viene effettivamente rimosso. 
 
-È possibile eliminare gli elementi nel passaggio 5, è necessario rimuovere la conservazione di ritardo dalla cassetta postale. Eseguire il comando seguente in Exchange Online PowerShell per rimuovere la conservazione di ritardo: 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-Si noti che è necessario appartenere al ruolo giudiziari di Exchange Online utilizzare il parametro *RemoveDelayHoldApplied* .
-
-Per verificare che sia stato rimosso ritardo esenzione, eseguire il comando seguente.
+È possibile eliminare gli elementi nel passaggio 5, è necessario rimuovere la conservazione di ritardo dalla cassetta postale. Determinare innanzitutto se la conservazione di ritardo viene applicata alla cassetta postale eseguendo il comando seguente in Exchange Online PowerShell:
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-Il valore **False** per la proprietà *DelayHoldApplied* indica che il ritardo è stato rimosso.
+Se il valore della proprietà *DelayHoldApplied* è impostato su **False**, un ritardo è non stato sospeso sulla cassetta postale. È possibile procedere al passaggio 5 ed eliminare elementi nella cartella elementi ripristinabili.
+
+Se il valore della proprietà *DelayHoldApplied* è impostato su **True**, eseguire il comando seguente per rimuovere la conservazione di ritardo:
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Si noti che è necessario appartenere al ruolo giudiziari di Exchange Online utilizzare il parametro *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Passaggio 5: Eliminare gli elementi nella cartella elementi ripristinabili
 
