@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare gli strumenti di eDiscovery e la ricerca di Office 365 per gestire e rispondere a un problema di perdita dati all'interno dell'organizzazione.
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530308"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566877"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzione di eDiscovery: scenario di perdita dei dati - ricerca ed eliminazione
 
@@ -159,6 +159,8 @@ Se il ripristino di singoli elementi è attivato o una cassetta postale viene me
 - Vedere "passaggio 2: preparare la cassetta postale" in [Elimina elementi nella cartella delle cassette postali basate su cloud in attesa agli elementi ripristinabili](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) per ulteriori informazioni sulla disattivazione del ripristino di singoli elementi. 
     
 - Vedere "passaggio 3: rimuovere tutte le esenzioni dalla cassetta postale" in [Elimina elementi nella cartella delle cassette postali basate su cloud in attesa agli elementi ripristinabili](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) per istruzioni su come rimuovere un criterio di conservazione o conservazione da una cassetta postale. 
+
+- Vedere "passaggio 4: rimuovere il ritardo attesa dalla cassetta postale" in [Elimina elementi nella cartella delle cassette postali basate su cloud in attesa agli elementi ripristinabili](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) per istruzioni sulla rimozione dell'esenzione ritardo che viene inserito nella cassetta postale dopo la rimozione di qualsiasi tipo di attesa.
     
  **Importante:** Verificare con la gestione dei record o reparti legali prima di rimuovere un criterio di conservazione o conservazione. L'organizzazione può disporre di un criterio che definisce se una cassetta postale in attesa o un problema di perdita dei dati ha la priorità. 
   
@@ -168,7 +170,7 @@ Assicurarsi di ripristinare la cassetta postale alle configurazioni precedenti d
 
 Utilizza i percorsi delle cassette postali che raccolti e preparato nel passaggio 6 e la query di ricerca è stata creata e affinamento nel passaggio 3 per individuare i messaggi di posta elettronica che contengono dati espanso, è possibile ora eliminare definitivamente i dati espanso. Come indicato in precedenza, è necessario essere assegnato il ruolo cassette postali importazione ed esportazione di Exchange Online per eliminare i messaggi utilizzando la procedura seguente.
   
-1. [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Eseguire il comando riportato di seguito:
     
@@ -198,7 +200,7 @@ Il passaggio finale del flusso di lavoro per la gestione di un evento imprevisto
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Il ripristino delle cassette postali allo stato precedente
 
-Se si modifica qualsiasi configurazione delle cassette postali nel passaggio 6 per preparare le cassette postali prima dell'eliminazione di dati espanso, è necessario riportarli allo stato precedente. Vedere "passaggio 5: ripristinare la cassetta postale allo stato precedente" in [Elimina elementi nella cartella delle cassette postali basate su cloud in attesa agli elementi ripristinabili](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
+Se si modifica qualsiasi configurazione delle cassette postali nel passaggio 6 per preparare le cassette postali prima dell'eliminazione di dati espanso, è necessario riportarli allo stato precedente. Vedere "passaggio 6: ripristinare la cassetta postale allo stato precedente" in [Elimina elementi nella cartella delle cassette postali basate su cloud in attesa agli elementi ripristinabili](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Eliminazione di query di ricerca
 

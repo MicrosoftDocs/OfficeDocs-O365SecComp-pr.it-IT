@@ -3,7 +3,7 @@ title: Eliminare gli elementi nella cartella elementi recuperabili di cassette p
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi recuperabili di un utente di una cassetta postale di Exchange Online, anche se tale cassetta postale viene messa in attesa legale. Si tratta in modo efficace per eliminare i dati che sono stata inavvertitamente passati in Office 365.'
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796882"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566887"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi recuperabili di cassette postali basate su cloud in attesa - della Guida di amministrazione
 
@@ -33,16 +33,18 @@ Per proteggere da eliminazioni accidentali o intenzionali è presente la cartell
 
 [Passaggio 3: Rimuovere tutte le esenzioni dalla cassetta postale](#step-3-remove-all-holds-from-the-mailbox)
 
-[Passaggio 4: Eliminare gli elementi nella cartella elementi ripristinabili](#step-4-delete-items-in-the-recoverable-items-folder)
+[Passaggio 4: Rimuovere la conservazione di ritardo dalla cassetta postale](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Passaggio 5: Ripristinare la cassetta postale allo stato precedente](#step-5-revert-the-mailbox-to-its-previous-state)
+[Passaggio 5: Eliminare gli elementi nella cartella elementi ripristinabili](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[Passaggio 6: Ripristinare la cassetta postale allo stato precedente](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > Le procedure descritte in questo articolo genera dati vengono eliminati definitivamente dalla cassetta postale di Exchange Online. Significa che i messaggi eliminati dalla cartella elementi ripristinabili non possono essere recuperati e non saranno disponibili per esibizione o per altri motivi di conformità. Se si desidera eliminare i messaggi da una cassetta postale che viene messa in attesa come parte di una conservazione per controversia legale, archiviazione sul posto, tenere premuto eDiscovery oppure il criterio di conservazione di Office 365 creato in Office 365 Security &amp; centro conformità, controllo con la gestione dei record o legale reparti prima della rimozione dell'esenzione. L'organizzazione potrebbe disporre di un criterio che definisce se una cassetta postale in attesa o un problema di perdita dei dati ha la priorità. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- È necessario assegnare entrambi i seguenti ruoli di gestione di Exchange Online per cercare ed eliminare messaggi dalla cartella elementi ripristinabili nel passaggio 4.
+- È necessario assegnare entrambi i seguenti ruoli di gestione di Exchange Online per cercare ed eliminare messaggi dalla cartella elementi ripristinabili nel passaggio 5.
     
   - **Cassetta postale di ricerca** - questo ruolo consente di cercare cassette postali nell'organizzazione. Gli amministratori di Exchange non sono assegnati al ruolo per impostazione predefinita. Per assegnare questo ruolo, aggiungere l'utente come membro del gruppo di ruoli gestione individuazione in Exchange Online. 
     
@@ -56,13 +58,13 @@ Per proteggere da eliminazioni accidentali o intenzionali è presente la cartell
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Passaggio 1: Raccolta delle informazioni sulla cassetta postale
 
-Il primo passaggio consiste nel raggruppare le proprietà selezionate dalla cassetta postale di destinazione che incide questa procedura. Assicurarsi di prendere nota di queste impostazioni o li si salva un file di testo poiché sarà modificare alcune di queste proprietà e quindi ripristinare i valori originali nel passaggio 5, dopo l'eliminazione degli elementi dalla cartella elementi ripristinabili. Ecco un elenco di proprietà della cassetta postale che è necessario raccogliere.
+Il primo passaggio consiste nel raggruppare le proprietà selezionate dalla cassetta postale di destinazione che incide questa procedura. Assicurarsi di prendere nota di queste impostazioni o li si salva un file di testo poiché sarà modificare alcune di queste proprietà e quindi ripristinare i valori originali nel passaggio 6 dopo l'eliminazione degli elementi dalla cartella elementi ripristinabili. Ecco un elenco di proprietà della cassetta postale che è necessario raccogliere.
   
 -  *SingleItemRecoveryEnabled* e *RetainDeletedItemsFor* ; Se necessario, si verrà disattivare il ripristino singolo e aumentare il periodo di conservazione degli elementi eliminati nel passaggio 3. 
     
 -  *LitigationHoldEnabled* e *InPlaceHolds* ; è necessario identificare tutte le esenzioni inserite nella cassetta postale in modo che è possibile rimuovere temporaneamente nel passaggio 3. Vedere la sezione [informazioni](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) per suggerimenti su come identificare la conservazione di tipo che può essere messa in una cassetta postale. 
     
-Inoltre, è necessario ottenere la cassetta postale di impostazioni di accesso client in modo che è possibile disattivare temporaneamente essi in modo che il proprietario (o altri utenti) non possono accedere alla cassetta postale durante la procedura. Infine, è possibile ottenere le dimensioni correnti e il numero di elementi nella cartella elementi ripristinabili. Dopo l'eliminazione degli elementi nella cartella elementi ripristinabili nel passaggio 4, si utilizzerà queste informazioni per verificare che gli elementi sono state effettivamente rimosse.
+Inoltre, è necessario ottenere la cassetta postale di impostazioni di accesso client in modo che è possibile disattivare temporaneamente essi in modo che il proprietario (o altri utenti) non possono accedere alla cassetta postale durante la procedura. Infine, è possibile ottenere le dimensioni correnti e il numero di elementi nella cartella elementi ripristinabili. Dopo l'eliminazione degli elementi nella cartella elementi ripristinabili nel passaggio 5, si utilizzerà queste informazioni per verificare che gli elementi sono state effettivamente rimosse.
   
 1. [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e password di un account amministratore che è stato assegnato i ruoli di gestione appropriati in Exchange Online. 
     
@@ -114,7 +116,7 @@ Inoltre, è necessario ottenere la cassetta postale di impostazioni di accesso c
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Quando si eliminano elementi nel passaggio 4, è possibile scegliere di eliminare o non eliminare elementi contenuti nella cartella elementi ripristinabili nella cassetta postale di archivio principale dell'utente. Si noti che se l'espansione automatica di archiviazione è abilitata per la cassetta postale, gli elementi in una cassetta postale di archivio ausiliaria non vengono eliminati.
+   Quando si eliminano elementi nel passaggio 5, è possibile scegliere di eliminare o non eliminare elementi contenuti nella cartella elementi ripristinabili nella cassetta postale di archivio principale dell'utente. Si noti che se l'espansione automatica di archiviazione è abilitata per la cassetta postale, gli elementi in una cassetta postale di archivio ausiliaria non vengono eliminati.
   
 ## <a name="step-2-prepare-the-mailbox"></a>Passaggio 2: Preparare la cassetta postale
 
@@ -122,11 +124,11 @@ Dopo aver raccolto e il salvataggio delle informazioni sulla cassetta postale, i
   
 - **Disabilitare l'accesso client alla cassetta postale** in modo che il proprietario della cassetta postale non può accedere alle cassette postali e apportare le modifiche ai dati delle cassette postali durante la procedura. 
     
-- **Aumentare il periodo di mantenimento elementi eliminati** a 30 giorni (il valore massimo in Exchange Online) in modo che gli elementi non vengono cancellati dalla cartella elementi recuperabili prima di eliminarli nel passaggio 4. 
+- **Aumentare il periodo di mantenimento elementi eliminati** a 30 giorni (il valore massimo in Exchange Online) in modo che gli elementi non vengono cancellati dalla cartella elementi recuperabili prima di eliminarli nel passaggio 5. 
     
-- **Disattivazione ripristino di un singolo elemento** in modo che gli elementi non verrà mantenuto (per la durata del periodo di mantenimento elementi eliminati) che sono state eliminate dalla cartella elementi ripristinabili nel passaggio 4. 
+- **Disattivazione ripristino di un singolo elemento** in modo che gli elementi non verrà mantenuto (per la durata del periodo di mantenimento elementi eliminati) che sono state eliminate dalla cartella elementi ripristinabili nel passaggio 5. 
     
-- **Disattivare l'Assistente cartelle gestite** in modo che non elaborare la cassetta postale e conservazione degli elementi eliminati nel passaggio 4. 
+- **Disattivare l'Assistente cartelle gestite** in modo che non elaborare la cassetta postale e conservazione degli elementi eliminati nel passaggio 5. 
     
 Eseguire la procedura seguente in Exchange Online PowerShell.
   
@@ -162,7 +164,7 @@ Eseguire la procedura seguente in Exchange Online PowerShell.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Passaggio 3: Rimuovere tutte le esenzioni dalla cassetta postale
 
-L'ultimo passaggio prima che è possibile eliminare gli elementi dalla cartella elementi ripristinabili è per rimuovere tutte le esenzioni (identificato nel passaggio 1) inserite nella cassetta postale. Tutte le esenzioni devono essere eliminate in modo che non verranno mantenuti gli elementi che sono state eliminate dalla cartella elementi ripristinabili. Nelle sezioni seguenti contengono informazioni sulla rimozione di diversi tipi di conservazioni su una cassetta postale. Vedere la sezione [informazioni](#more-information) per suggerimenti su come identificare la conservazione di tipo che può essere messa in una cassetta postale. 
+L'ultimo passaggio prima che è possibile eliminare gli elementi dalla cartella elementi ripristinabili è per rimuovere tutte le esenzioni (identificato nel passaggio 1) inserite nella cassetta postale. Tutte le esenzioni devono essere eliminate in modo che non verranno mantenuti gli elementi che sono state eliminate dalla cartella elementi ripristinabili. Nelle sezioni seguenti contengono informazioni sulla rimozione di diversi tipi di conservazioni su una cassetta postale. Vedere la sezione [informazioni](#more-information) per suggerimenti su come identificare la conservazione di tipo che può essere messa in una cassetta postale. Per ulteriori informazioni, vedere [come identificare il tipo di archiviazione inserito in una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > Come descritto in precedenza, verificare con la gestione dei record o reparti legali prima di rimuovere un'esenzione da una cassetta postale. 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 Dopo aver identificato i criteri di conservazione a livello di organizzazione Office 365, passare alla **governance data** \> pagina **conservazione** nel titolo &amp; centro conformità, modificare ogni criterio di conservazione in tutta l'organizzazione è definito il precedente passaggio e aggiungere la cassetta postale per l'elenco dei destinatari esclusi. In questo modo verrà rimosso cassetta postale dell'utente dal criterio di conservazione. 
-  
+
+### <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
+
+Ogni volta che un utente applica un'etichetta è configurata per conservare il contenuto o mantenere e quindi eliminare il contenuto di una cartella o un elemento nella propria cassetta postale, le proprietà della cassetta postale *ComplianceTagHoldApplied* è impostata su **True**. In questo caso, la cassetta postale è considerata da in attesa, come se è stata inserita nella conservazione per controversia legale o assegnato a un criterio di conservazione di Office 365.
+
+Per visualizzare il valore della proprietà *ComplianceTagHoldApplied* , eseguire il seguente comando in Exchange Online PowerShell:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Dopo aver identificato che una cassetta postale è in attesa perché un'etichetta di conservazione viene applicata a una cartella o un elemento, è possibile utilizzare lo strumento di ricerca del contenuto per la protezione e gli elementi con etichetta centro conformità effettuare una ricerca utilizzando la condizione di ricerca ComplianceTag. Per ulteriori informazioni, vedere la sezione "Criteri di ricerca" in [query con parole chiave e le condizioni di ricerca per la ricerca del contenuto](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+
+Per ulteriori informazioni sulle etichette, vedere [Panoramica di Office 365 etichette](labels.md).
+
  ### <a name="ediscovery-case-holds"></a>contiene i casi eDiscovery
   
 Eseguire i seguenti comandi [protezione &amp; PowerShell centro conformità](https://go.microsoft.com/fwlink/?linkid=627084) per identificare la conservazione associata a un caso eDiscovery applicato alla cassetta postale. Utilizzare il GUID (escluso il `UniH` prefisso) per eDiscovery attesa identificato nel passaggio 1. Si noti che il secondo comando viene visualizzato il nome del caso eDiscovery che esenzione associata; il terzo comando viene visualizzato il nome dell'esenzione. 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 Dopo aver identificato il nome del caso eDiscovery e conservazione, passare al **ricerca &amp; indagini** \> pagina **eDiscovery** la protezione &amp; centro conformità, aprire il caso e rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni, vedere [gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](manage-ediscovery-cases.md).
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>Passaggio 4: Eliminare gli elementi nella cartella elementi ripristinabili
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Passaggio 4: Rimuovere la conservazione di ritardo dalla cassetta postale
+
+Dopo la rimozione di qualsiasi tipo di attesa da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **True**. Questo viene chiamato un *ritardo di conservazione* e significa che la rimozione effettiva dell'esenzione ha un ritardo per 30 giorni impedire che i dati vengano rimossi definitivamente dalla cassetta postale.   Quando un'esenzione ritardo viene effettuata nella cassetta postale, la cassetta postale è ancora considerata in attesa per un periodo illimitato come se la cassetta postale è stata controversie legali. (Lo scopo di un'esenzione ritardo deve fornire gli amministratori la possibilità di cercare o il ripristino di elementi delle cassette postali che verranno cancellati dopo la rimozione di un'esenzione). Scadenza Noe che dopo 30 giorni, il ritardo contenuti e Office 365 tenta automaticamente di rimuovere la conservazione di ritardo (impostando la proprietà *DelayHoldApplied* su **False**) in modo che esenzione vengono effettivamente rimosse. 
+
+È possibile eliminare gli elementi nel passaggio 5, è necessario rimuovere la conservazione di ritardo dalla cassetta postale. Eseguire il comando seguente in Exchange Online PowerShell per rimuovere la conservazione di ritardo: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Si noti che è necessario appartenere al ruolo giudiziari di Exchange Online utilizzare il parametro *RemoveDelayHoldApplied* .
+
+Per verificare che sia stato rimosso ritardo esenzione, eseguire il comando seguente.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+Il valore **False** per la proprietà *DelayHoldApplied* indica che il ritardo è stato rimosso.
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Passaggio 5: Eliminare gli elementi nella cartella elementi ripristinabili
 
 A questo punto si è pronti per eliminare gli elementi nella cartella elementi ripristinabili effettivamente utilizzando il cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) in Exchange Online PowerShell. Sono disponibili tre opzioni quando si esegue il cmdlet **Search-Mailbox** . 
   
@@ -308,7 +343,7 @@ Eseguire il comando seguente per ottenere le dimensioni e il numero totale di el
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>Passaggio 5: Ripristinare la cassetta postale allo stato precedente
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Passaggio 6: Ripristinare la cassetta postale allo stato precedente
 
 Il passaggio finale consiste nel ripristinare la cassetta postale torna alla configurazione precedente. Ciò significa reimpostazione le proprietà modificate nel passaggio 2 e la riapplicazione esenzioni rimosso nel passaggio 3. Includono:
   
@@ -389,7 +424,9 @@ Eseguire la procedura seguente (nella sequenza specificata) in Exchange Online P
   
 ## <a name="more-information"></a>Ulteriori informazioni
 
-Di seguito è riportata una tabella in cui viene illustrato come identificare i diversi tipi di conservazioni in base ai valori nella proprietà *InPlaceHolds* quando si esegue il cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Come precedentemente illustrato, è necessario rimuovere tutte le esenzioni e criteri di conservazione di Office 365 da una cassetta postale prima correttamente possono eliminare gli elementi nella cartella elementi ripristinabili. 
+Di seguito è riportata una tabella in cui viene illustrato come identificare i diversi tipi di conservazioni in base ai valori nella proprietà *InPlaceHolds* quando si esegue il cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per ulteriori informazioni, vedere [come identificare il tipo di archiviazione inserito in una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+Come precedentemente illustrato, è necessario rimuovere tutte le esenzioni e criteri di conservazione di Office 365 da una cassetta postale prima correttamente possono eliminare gli elementi nella cartella elementi ripristinabili. 
   
 |**Tipo di blocco**|**Valore di esempio**|**Come identificare la conservazione**|
 |:-----|:-----|:-----|
