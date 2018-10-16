@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: Con le etichette in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento fa scattare l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso. La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record.
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540412"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -35,7 +35,7 @@ Ad esempio, è possibile usare etichette con conservazione basata su eventi per:
     
 La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record. Ciò significa che:
   
-- Anche le etichette basate sugli eventi solitamente classificano il contenuto come un record. Per ulteriori informazioni, vedere [Utilizzo di Ricerca contenuto per trovare tutto il contenuto con un'etichetta specifica applicata](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it).
+- Anche le etichette basate sugli eventi solitamente classificano il contenuto come un record. Per ulteriori informazioni, vedere [Utilizzo di Ricerca contenuto per trovare tutto il contenuto con un'etichetta di conservazione specifica applicata](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - Un documento che è stato dichiarato come record ma il cui trigger di evento non è ancora stato eseguito viene conservato a tempo indeterminato (i record non possono essere eliminati in modo permanente) finché un evento non attiva il periodo di conservazione di quel documento.
     
