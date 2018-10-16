@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni su con privilegi accedere management in Office 365
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011862"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575340"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Accesso con privilegi management in Office 365
 
@@ -31,7 +31,7 @@ Accesso privilegiato management consente di controllare l'accesso granulare atti
 
 Accesso privilegiato gestione è complementare rispetto alle altre protezioni funzionalità dati e l'accesso all'interno dell'architettura di sicurezza di Office 365. Abilitazione della gestione dei privilegi di accesso come parte di un approccio integrato di sicurezza e protezione dell'organizzazione, un modello di sicurezza a più livelli è utilizzabile per ottimizzare la protezione delle informazioni riservate e le impostazioni di configurazione di Office 365. Come mostrato nella figura sotto abilitazione con privilegi consente di gestione di access si basa sulla protezione fornita con la crittografia nativa di Office 365 dati e il modello di sicurezza controllo di accesso basato sui ruoli di servizi di Office 365. Se utilizzata in combinazione con [la gestione delle identità con privilegi di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), questi due funzionalità fornire il controllo di accesso con l'accesso ad ambiti diversi nel tempo.
 
-![Livelli di protezione di Office 365](media/pam-layered-protection.jpg)
+![Livelli di protezione di Office 365](media/pam-layered-protection.png)
 
 Accesso privilegiato management in Office 365 possono essere definite e limitare l'ambito a livello di **attività** , mentre la gestione delle identità con privilegi di Azure Active Directory si applica protezione a livello di **ruolo** con la possibilità di eseguire più attività.  Azure Active Directory con privilegi Identity Management principalmente consente la gestione dei tipi di accesso per gruppi di ruoli e ruoli di Active Directory, durante l'accesso con privilegi management in Office 365 viene applicato solo a livello di attività.
 

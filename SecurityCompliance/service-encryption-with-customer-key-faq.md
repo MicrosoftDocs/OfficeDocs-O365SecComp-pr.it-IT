@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sulla crittografia del servizio con Chiave cliente per Office 365
+title: Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Oltre a linea di base, la crittografia a livello di volume che è stata abilitata tramite BitLocker e distribuita chiave Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, ad esempio dati di Exchange In linea, Skype per Business, SharePoint Online e OneDrive for Business. Si tratta la crittografia del servizio.
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559241"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575330"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Chiave cliente per Office 365
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 
 Oltre a linea di base, la crittografia a livello di volume che è stata abilitata tramite BitLocker e distribuita chiave Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, ad esempio dati di Exchange In linea, Skype per Business, SharePoint Online e OneDrive for Business. Si tratta la crittografia del servizio.
   
@@ -29,8 +29,8 @@ Per inviare commenti e suggerimenti sulla chiave dei clienti, inclusa la documen
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>Che cos'è la crittografia del servizio con chiave di clienti?
 
-Chiave cliente è una funzionalità che consente di eseguire il provisioning e gestire i tasti utilizzati per crittografare i dati statici in Office 365. La caratteristica utilizza la crittografia del servizio, ovvero la crittografia che viene eseguita da Office 365 Exchange e SharePoint. La crittografia del servizio offre vantaggi oltre cosa BitLocker può offrire - vale a dire, maggiore di difesa dagli attacchi. La crittografia del servizio è contromisura sicura se un utente malintenzionato tenta di ignorare il sistema di controllo di accesso di Office 365 che viene utilizzato per elaborare tutte le richieste di accesso ai dati dei clienti. Ciò avviene perché la crittografia del servizio significa che un amministratore del server non dispone di controllo o persino l'accesso alla crittografia dei tasti e non può disattivare la crittografia, a differenza con BitLocker. Pertanto, un utente malintenzionato con accesso amministrativo a un server che ospita i dati dei clienti che è stati crittografati utilizzando la crittografia del servizio non sarà in grado di leggere i dati dei clienti e anche se i dati crittografati viene copiati dal server vengono inutile. 
-  
+Chiave cliente aumenta la capacità dell'organizzazione per soddisfare le esigenze dei requisiti di conformità che specificano chiave accordi con il provider di servizi cloud. Con la chiave di clienti, fornire e controllare le chiavi di crittografia per l'Office 365 dati al-rest a livello di applicazione. Di conseguenza, è possibile esercitare un controllo e revocare le chiavi della propria organizzazione, se si decide di chiudere il servizio. Per revocare le chiavi, i dati sono illeggibili al servizio. Revoca chiave è il primo passaggio sul percorso per raggiungere l'eliminazione dei dati.
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>I dati di Office 365 statici sono occupati da chiave cliente?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
@@ -222,7 +222,7 @@ No. Per definizione, sottoscrizioni di valutazione sono a breve termine. Le chia
 
 Oltre alle licenze necessarie per la chiave cliente, i clienti comporta un costo per l'utilizzo del tasto cassaforte. [Ulteriori informazioni sui prezzi di Azure chiave cassaforte](https://azure.microsoft.com/en-us/pricing/details/key-vault/) viene descritto il modello di costo e assistere stima. Non è possibile prevedere il costo esatto che causeranno ai clienti perché i modelli di utilizzo variano. Esperienza dimostra che il costo è molto ridotto e in genere si trova all'interno dell'intervallo di $0,002 a $0,005 per utente al mese e il costo dei tasti eseguito il modulo di sicurezza hardware. Il costo varia in base alla configurazione di registrazione scelta dal cliente e la quantità di spazio di archiviazione Azure utilizzato per i registri di Azure chiave cassaforte. 
   
-## <a name="for-more-information"></a>Ulteriori informazioni
+## <a name="for-more-information"></a>Per altre informazioni
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Per iniziare con clienti chiave, vedere [il controllo dei dati in Office 365 con chiave cliente](controlling-your-data-using-customer-key.md).
