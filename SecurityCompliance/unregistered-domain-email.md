@@ -3,7 +3,7 @@ title: Messaggio di posta elettronica dominio non registrati
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Se si invia un volume elevato di posta elettronica dominio annullare la registrazione, si corre il rischio della posta elettronica Guida bloccato. In questo articolo per ulteriori informazioni.
-ms.openlocfilehash: f2b60f492197bf0dadb702a1c3f184c2d7e56bf1
-ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
+ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998600"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596729"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Annullare la registrazione dominio di posta elettronica: Che cosa è necessario sapere
 
@@ -37,18 +37,23 @@ Esistono diversi aspetti da eseguire se ottenere bloccato per l'invio da domini 
 
 1. Assicurarsi di registrare tutti i domini nell'interfaccia di amministrazione di Office 365. Sono disponibili ulteriori informazioni [di seguito](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Bloccare i server locali e verificare che non vengano compromesse. Esistono molti fattori coinvolti in questo caso, in particolare se si tratta di server di terze parti, ma è necessario assicurarsi che tutti i messaggi lasciano tale server sia valido.
+2. Cercare i connettori non comune. Gli operatori dannosi spesso creano nuovi connettori in ingresso nel tenant Office 365 per inviare posta indesiderata. Sono disponibili ulteriori informazioni sull'archiviazione dei connettori di [seguito](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 
-Al termine, è necessario chiamare il supporto Microsoft e chiederà di ottenere il tenant sbloccato per inviare nuovamente da domini di annullare la registrazione.  Fornire il codice di errore è utile, ma è necessario verificare che l'ambiente è protetta e che la posta indesiderata non verrà inviata nuovamente. Sono disponibili ulteriori informazioni [di seguito](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
+3. Bloccare i server locali e verificare che non vengano compromesse.
+
+> [!TIP]
+> Esistono molti fattori coinvolti in questo caso, in particolare se si tratta di server di terze parti. In ogni caso, è necessario poter verificare che tutti i messaggi lasciano i server siano legittimi.
+
+4. Al termine, è necessario chiamare il supporto Microsoft e chiederà di ottenere il tenant sbloccato per inviare nuovamente da domini di annullare la registrazione.  Fornire il codice di errore è utile, ma è necessario verificare che l'ambiente è protetta e che la posta indesiderata non verrà inviata nuovamente. Sono disponibili ulteriori informazioni sull'apertura di un caso del supporto tecnico [di seguito](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Ulteriori informazioni
+## <a name="for-more-information"></a>Per altre informazioni
 
-[Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
+[Office 365 email anti-spam protection](anti-spam-protection.md)
 
-[Rapporti di mancato recapito di posta elettronica in Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Rapporti di mancato recapito della posta elettronica in Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
-[Configurazione dell'inoltro della posta elettronica per una cassetta postale](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+[Configurare l'inoltro della posta elettronica per una cassetta postale](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Come configurare un dispositivo multifunzionale o un'applicazione all'invio di posta elettronica tramite Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Come configurare un dispositivo multifunzione o un'applicazione per l'invio di posta elettronica con Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
 [Gestisci domini accettati in Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
