@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Ridurre al minimo la possibilità di una violazione dei dati o un account compromesso seguendo le procedure consigliate.
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498092"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638000"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedure consigliate per la sicurezza per Office 365
 
@@ -90,7 +90,7 @@ DLP consente di identificare i dati riservati e creare i criteri che consentono 
   
 ## <a name="use-customer-lockbox"></a>Utilizzare archivio protetto cliente
 
-Come un amministratore di Office 365, è possibile utilizzare archivio protetto cliente per controllare la modalità del supporto tecnico accede dei dati durante una sessione di supporto. In casi in cui il tecnico richiede l'accesso ai dati per risolvere un problema, archivio protetto cliente consente di approvare o rifiutare le richieste di accesso. Se lo si approva, il responsabile tecnico può accedere ai dati. Ogni richiesta è una data di scadenza e una volta che viene risolto, la richiesta viene chiusa e l'accesso è stato revocato. Analisi dell'archivio protetto è incluso nel piano di Office 365 Enterprise 5 oppure è possibile acquistare una sottoscrizione separata con qualsiasi altro piano di Office 365 enterprise. Per informazioni, vedere [Le richieste di archivio protetto clienti di Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+Come un amministratore di Office 365, è possibile utilizzare archivio protetto cliente per controllare la modalità del supporto tecnico accede dei dati durante una sessione di supporto. In casi in cui il tecnico richiede l'accesso ai dati per risolvere un problema, archivio protetto cliente consente di approvare o rifiutare le richieste di accesso. Se lo si approva, il responsabile tecnico può accedere ai dati. Ogni richiesta è una data di scadenza e una volta che viene risolto, la richiesta viene chiusa e l'accesso è stato revocato. Analisi dell'archivio protetto è incluso nel piano di Office 365 Enterprise E5 oppure è possibile acquistare una sottoscrizione separata con qualsiasi altro piano di Office 365 enterprise. Per informazioni, vedere [Le richieste di archivio protetto clienti di Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Prova personalmente
 <a name="SecureScore"> </a>

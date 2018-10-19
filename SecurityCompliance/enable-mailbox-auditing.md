@@ -14,22 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: In Office 365, è possibile attivare registrazione di controllo della cassetta postale per la registrazione accessi effettuati dai proprietari delle cassette postali, i delegati e amministratori. Per impostazione predefinita, il controllo delle cassette postali in Office 365 non è attivato. Dopo aver abilitato la registrazione per una cassetta postale di controllo delle cassette postali, è possibile cercare il Registro di controllo di Office 365 per le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358385"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639665"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Abilitare il controllo delle cassette postali in Office 365
   
 In Office 365, è possibile attivare registrazione di controllo della cassetta postale per la registrazione accessi effettuati dai proprietari delle cassette postali, i delegati e amministratori. Per impostazione predefinita, il controllo delle cassette postali in Office 365 non è attivato. Pertanto, gli eventi di controllo non viene visualizzato nei risultati quando si esegue una ricerca nel Registro di controllo di Office 365 per l'attività delle cassette postali. Ma dopo l'attivazione della cassetta postale registrazione di controllo per una cassetta postale utente, è possibile cercare il Registro di controllo per l'attività delle cassette postali. Inoltre, quando il controllo delle cassette postali la registrazione è attivata, alcune azioni eseguite dagli amministratori, delegati, e vengono registrati i proprietari per impostazione predefinita. Per eseguire l'accesso (e quindi cercare) azioni aggiuntive, vedere il passaggio 3.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
   
 - È necessario utilizzare Exchange Online PowerShell per abilitare la registrazione di controllo. Non è possibile utilizzare la protezione di Office 365 &amp; centro conformità o l'interfaccia di amministrazione di Exchange.
-    
-- Dopo aver abilitato la registrazione per una cassetta postale di controllo delle cassette postali, accesso per le azioni della cassetta postale e alcune admin e delegato vengono registrate per impostazione predefinita. Per registrare le azioni effettuate dal proprietario della cassetta postale, è necessario specificare quali azioni proprietario da controllare. Vedere la sezione "Ulteriori informazioni" per visualizzare un elenco delle operazioni che vengono registrati dopo la registrazione di controllo delle cassette postali è abilitato e le azioni sono disponibili per ogni tipo di accesso dell'utente.
     
 - Non è possibile abilitare la registrazione per la cassetta postale associata a un gruppo di Office 365 o un team di Microsoft Teams di controllo delle cassette postali.
     
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>Passaggio 3: Specificare le azioni da sottoporre a controllo
 
-Quando si abilita il controllo di una cassetta postale, è possibile controllare le una sola azione ( **UpdateFolderPermissions** ) eseguita dal proprietario della cassetta postale per impostazione predefinita. È necessario specificare altre azioni proprietario da controllare. Vedere la tabella nella sezione "Azioni delle cassette postali" per un elenco e una descrizione delle azioni di proprietario che possono essere controllate. 
+Quando si abilita il controllo di una cassetta postale, alcune azioni eseguite dal proprietario della cassetta postale vengono controllate per impostazione predefinita. È necessario specificare altre azioni proprietario da controllare. Vedere la tabella nella sezione [azioni di controllo della cassetta postale](#mailbox-auditing-actions) per un elenco e una descrizione delle azioni di proprietario connessi per impostazione predefinita e le altre azioni che possono essere controllate. 
   
 In questo esempio aggiunge le azioni di proprietario **MailboxLogin** e **HardDelete** alla cassetta postale di controllo per la cassetta postale Pilar Pinilla. In questo esempio si presuppone che il controllo delle cassette postali è già stato abilitato per la cassetta postale. 
 
@@ -123,9 +121,9 @@ Il valore **True** per la proprietà **AuditEnabled** consente di verificare il 
     
 ## <a name="mailbox-auditing-actions"></a>Azioni di controllo della cassetta postale
   
-Nella tabella seguente vengono riportate le azioni che possono essere registrate dalla cassetta postale di registrazione di controllo. La tabella include l'azione che può essere registrato per il tipo di accesso utente diverso. Nella tabella, **No** indica che non è possibile registrare un'azione per quel tipo di accesso. Un asterisco ( **\*** ) indica che l'azione viene registrata per impostazione predefinita durante la registrazione di controllo della cassetta postale è abilitata per la cassetta postale. Come descritto in precedenza, l'azione solo i proprietari controllato per impostazione predefinita, quando attivare il controllo delle cassette postali è UpdateFolderPermissions. Per eseguire l'accesso altre azioni effettuate dal proprietario della cassetta postale, è necessario specificare azioni aggiuntive proprietario da controllare. A tale scopo, vedere [il passaggio 3](#step-3-specify-owner-actions-to-audit) in questo argomento. 
+Nella tabella seguente vengono riportate le azioni che possono essere registrate dalla cassetta postale di registrazione di controllo. La tabella include l'azione che può essere registrato per il tipo di accesso utente diverso. Nella tabella, **No** indica che non è possibile registrare un'azione per quel tipo di accesso. Un asterisco ( **\*** ) indica che l'azione viene registrata per impostazione predefinita durante la registrazione di controllo della cassetta postale è abilitata per la cassetta postale. 
   
-|**Azione**|**Descrizione**|**Admin**|**Delegato\*\*\***|**Owner**|
+|**Azione**|**Descrizione**|**Amministratore**|**Delegato\*\*\***|**Owner**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copia** <br/> |Messaggio copiato in un'altra cartella.  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
 |**Create** <br/> |Viene creato un elemento nella cartella Calendario, contatti, note o attività nella cassetta postale; ad esempio, viene creata una nuova convocazione riunione. Si noti che non è possibile controllare la creazione, inviare né ricevere un messaggio. Inoltre, non è controllata la creazione di una cartella delle cassette postali.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
@@ -146,9 +144,9 @@ Nella tabella seguente vengono riportate le azioni che possono essere registrate
 > [!NOTE]
 > <sup>\*</sup>Per impostazione predefinita controllati se è abilitato il controllo di una cassetta postale.<br/><br/>  <sup>\*\*</sup>Consolidate voci per le azioni di binding cartella eseguite dai delegati. Una voce di registro viene generata per l'accesso alle cartelle singole durante un periodo di 24 ore.<br/><br/><sup>\*\*\*</sup>Un amministratore è stata assegnata l'autorizzazione accesso completo alla cassetta postale dell'utente viene considerato un utente delegato. 
   
-Se non è più necessario determinati tipi di azioni della cassetta postale da controllare, è necessario modificare di configurazione della registrazione di controllo della cassetta postale per disabilitare le azioni. Voci di registro esistenti non vengono eliminate fino a raggiunta il limite di validità di 90 giorni per le voci del Registro di controllo.
+Se non è più necessario determinati tipi di azioni della cassetta postale da controllare, è necessario modificare di configurazione della registrazione di controllo della cassetta postale per disabilitare le azioni. Voci di registro esistenti non vengono eliminate fino a raggiungere la validità della conservazione per le voci del Registro di controllo. Per ulteriori informazioni sul periodo di conservazione per le voci del Registro di controllo, vedere la sezione "informazioni preliminari" in [ricerca il controllo di accesso nel centro conformità protezione di Office 365](search-the-audit-log-in-security-and-compliance.md#before-you-begin).
   
-## <a name="more-infotab"></a>[Ulteriori informazioni sulla](#tab/)
+## <a name="more-infotab"></a>[Altre info](#tab/)
   
 - Utilizzare il Registro di controllo di Office 365 per la ricerca per l'attività delle cassette postali che sono stati registrati. È possibile cercare attività per una cassetta postale utente specifico. La schermata seguente mostra un elenco di attività di cassette postali che è possibile cercare nel Registro di controllo di Office 365. Notare che queste attività sono le stesse operazioni descritte nella sezione "Operazioni il controllo delle cassette postali" in questo argomento.
     

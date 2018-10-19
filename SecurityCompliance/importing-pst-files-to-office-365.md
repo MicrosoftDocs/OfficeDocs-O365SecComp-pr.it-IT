@@ -1,5 +1,5 @@
 ---
-title: Panoramica di importazione dei file PST organizzazione a Office 365
+title: Overview of importing your organization PST files to Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection: Strat_O365_IP
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'utilizzo del servizio di importazione in Office 365 Security &amp; centro conformità al blocco importazione dati di posta elettronica (con estensione PST) alle cassette postali in Exchange Online. In questo argomento vengono fornite le domande frequenti e viene spiegato come funziona il processo di importazione file PST."
-ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 3a6c3db966513be5c63588dac75643ffc1962323
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038019"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639675"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Panoramica di importazione dei file PST organizzazione a Office 365
+# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
 > [!NOTE]
 > In questo articolo sia per gli amministratori. Si sta tentando di importare i file PST alla propria cassetta postale? Vedere [posta elettronica di importazione, contatti e calendario da un file pst di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -100,7 +100,15 @@ Ecco una figura e una descrizione del processo di importazione completato PST. N
     
 ## <a name="importing-sharepoint-data-to-office-365"></a>Importazione di dati di SharePoint a Office 365
 
-È inoltre possibile importare file e documenti agli account OneDrive e siti di SharePoint nella propria organizzazione Office 365. Per ulteriori informazioni, vedere [il caricamento di contenuto locale in SharePoint Online mediante i cmdlet di PowerShell](https://docs.microsoft.com/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).
+È inoltre possibile importare file e documenti agli account OneDrive e siti di SharePoint nella propria organizzazione Office 365. Per ulteriori informazioni, vedere gli articoli seguenti:
+
+- [Eseguire la migrazione a SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+
+- [Introduzione allo Strumento di migrazione di SharePoint](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+
+- [Eseguire la migrazione a SharePoint Online utilizzando PowerShell](https://docs.microsoft.com/sharepointmigration/overview-spmt-ps-cmdlets)
+
+- [Eseguire la migrazione del contenuto di condivisione di file in SharePoint Online mediante la casella di dati di Azure](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
 
 ## <a name="frequently-asked-questions-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
