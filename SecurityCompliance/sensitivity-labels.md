@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: fae238e4c8409288175a3de305d12c76efcec5c2
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549755"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577095"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -35,15 +35,13 @@ Con le etichette di riservatezza in Office 365, è possibile classificare e prot
 
 - **Proteggere il contenuto nelle applicazioni di Office su piattaforme e dispositivi diversi. ** Le etichette di riservatezza funzionano nelle applicazioni di Office in Windows, Mac, iOS e Android. Il supporto per le applicazioni web di Office sarà disponibile a breve.
     
-- **Impedire che i contenuti riservati escano dall’organizzazione nei dispositivi che eseguono Windows**, grazie alla protezione endpoint in Microsoft Intune. Quando si applica un'etichetta di riservatezza a contenuti che si trovano in un dispositivo Windows, la protezione endpoint può impedire che vengano copiati in un'applicazione di terze parti, ad esempio Twitter o Gmail, o che vengano copiati in un archivio rimovibile, ad esempio un'unità USB.
+- **Impedire che i contenuti riservati escano dall'organizzazione nei dispositivi che eseguono Windows**, grazie a Endpoint Protection in Microsoft Intune. Quando si applica un'etichetta di riservatezza a contenuti che si trovano in un dispositivo Windows, la protezione endpoint può impedire che vengano copiati in un'applicazione di terze parti, ad esempio Twitter o Gmail, o che vengano copiati in un archivio rimovibile, ad esempio un'unità USB.
 
-- **Proteggere i contenuti in applicazioni e servizi di terze parti**, con Cloud App Security (CAS). Con CAS, è possibile rilevare, classificare, etichettare e proteggere i contenuti in servizi e applicazioni di terze parti, ad esempio SalesForce, Box o Dropbox, anche se l'applicazione o servizio di terze parti non legge o supporta le etichette di riservatezza.    
+- **Estendere le etichette di riservatezza ad applicazioni e servizi di terze parti.** Con l'SDK di Microsoft Information Protection, le applicazioni di terze parti in Windows, Mac e Linux possono leggere le etichette di riservatezza e applicare le impostazioni di protezione. Il supporto per le applicazioni in iOS e Android sarà disponibile a breve.
 
-- **Estendere le etichette di riservatezza ad applicazioni e servizi di terze parti.** Con SDK di Microsoft Information Protection, le applicazioni di terze parti in Windows, Mac e Linux possono leggere le etichette di riservatezza e applicare le impostazioni di protezione. Il supporto per le applicazioni in iOS e Android sarà disponibile a breve.
-
-- **Classificare i contenuti senza usare le impostazioni di protezione.** È inoltre possibile assegnare ai contenuti una semplice classificazione (ad esempio un adesivo) che persiste e si sposta con i contenuti mentre vengono utilizzati e condivisi. È possibile usare questa classificazione per generare report sull’uso e visualizzare i dati delle attività relativi ai contenuti riservati. In base a queste informazioni, è sempre possibile decidere in un secondo momento di configurare le impostazioni di protezione che possono essere applicate in base alla classificazione del documento.
+- **Classificare i contenuti senza usare le impostazioni di protezione.** È inoltre possibile assegnare ai contenuti una semplice classificazione (ad esempio un adesivo) che persiste e si sposta con i contenuti mentre vengono utilizzati e condivisi. È possibile usare questa classificazione per generare report sull'uso e visualizzare i dati delle attività relativi ai contenuti riservati. In base a queste informazioni, è sempre possibile decidere in un secondo momento di applicare le impostazioni di protezione.
     
-In tutti questi casi, le etichette di riservatezza in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette è possibile classificare i dati all'interno dell'organizzazione e applicare impostazioni di protezione in base alla classificazione.
+In tutti questi casi, le etichette di riservatezza in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di riservatezza è possibile classificare i dati all'interno dell'organizzazione e applicare impostazioni di protezione in base alla classificazione.
   
 Le etichette di riservatezza vengono create nel Centro sicurezza e conformità di Office 365. Il Centro sicurezza e conformità è ora l'unico luogo in cui configurare i criteri e le etichette di riservatezza in Azure Information Protection e Office 365. Queste etichette di riservatezza possono essere usate da Azure Information Protection, dalle applicazioni di Office e dai servizi di Office 365.
 
@@ -71,9 +69,9 @@ A ciascun contenuto può essere applicata una sola etichetta di riservatezza. Si
 
 Quando si applica un'etichetta di riservatezza a un messaggio di posta elettronica o a un documento, vengono applicate ai contenuti le impostazioni di protezione per quell'etichetta. Con un'etichetta di riservatezza, è possibile:
 
-- **Crittografare** solo il messaggio di posta elettronica o sia il messaggio di posta elettronica sia i documenti. È possibile scegliere quali utenti o gruppi sono autorizzati ad eseguire determinate operazioni e per quanto tempo. Ad esempio, è possibile autorizzare gli utenti di un dominio specifico all'esterno dell'organizzazione a esaminare i contenuti per soli 7 giorni a partire dall’applicazione dell’etichetta.
+- **Crittografare** solo il messaggio di posta elettronica o sia il messaggio di posta elettronica sia i documenti. È possibile scegliere quali utenti o gruppi sono autorizzati ad eseguire determinate operazioni e per quanto tempo. Ad esempio, è possibile autorizzare gli utenti di un dominio specifico all'esterno dell'organizzazione a esaminare i contenuti per soli 7 giorni a partire dall'applicazione dell'etichetta.
 
-- **Contrassegnare il contenuto** con l'aggiunta di filigrane personalizzate, intestazioni o piè di pagina a messaggi di posta elettronica o documenti cui è stata applicata l'etichetta (le filigrane sono applicate solo ai documenti e non ai messaggi di posta elettronica).
+- **Contrassegnare il contenuto** aggiungendo filigrane, intestazioni o piè di pagina ai messaggi di posta elettronica o ai documenti che hanno l'etichetta applicata. Le filigrane sono applicate solo ai documenti, non ai messaggi di posta elettronica, e hanno un limite di 255 caratteri. Inoltre, le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne in Excel, dove hanno un limite di 253 caratteri.
 
     ![Filigrana e intestazione applicate a un documento](media/Sensitivity_label_watermark_header.png)
 
@@ -142,15 +140,15 @@ Ecco il flusso di base delle operazioni eseguite da amministratore, utente e app
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Posizioni in cui è possibile visualizzare le etichette di riservatezza
 
-Le etichette di riservatezza vengono visualizzate nell’interfaccia utente delle app di Office. Per visualizzare la disponibilità corrente per piattaforme e applicazioni specifiche, vedere [Dove è disponibile oggi la funzionalità?](https://support.office.com/it-IT/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable).
+Le etichette di riservatezza vengono visualizzate nell'interfaccia utente delle app di Office. Per visualizzare la disponibilità corrente per piattaforme e applicazioni specifiche, vedere **[Oggi dov'è disponibile questa funzionalità?](https://support.office.com/it-IT/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
 
-### <a name="office-apps-on-windows"></a>Applicazioni di Office in Windows
+### <a name="office-apps-on-windows"></a>App di Office in Windows
 
-Nelle applicazioni di Office nei dispositivi che eseguono Windows, le etichette di riservatezza sono visualizzate nel pulsante **Riservatezza** nella scheda **Home** della barra multifunzione. L’etichetta applicata viene visualizzata anche nella barra di stato nella parte inferiore della finestra.
+Nelle app di Office nei dispositivi che eseguono Windows, le etichette di riservatezza sono visualizzate nel pulsante **Riservatezza** nella scheda **Home** della barra multifunzione. L'etichetta applicata viene visualizzata anche nella barra di stato nella parte inferiore della finestra.
 
-Il supporto nativo per le etichetta di riservatezza nelle applicazioni di Office in Windows sarà disponibile a breve.
+Il supporto nativo per le etichette di riservatezza nelle app di Office in Windows sarà disponibile a breve.
 
-Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza e che sarà disponibile a breve (visitare nuovamente questa pagina più avanti per un collegamento a informazioni su come distribuire il client). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle applicazioni di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificato di Azure Information Protection non più necessario.
+Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza e che sarà disponibile a breve (visitare nuovamente questa pagina più avanti per un collegamento a informazioni su come distribuire il client). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle app di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificato di Azure Information Protection non più necessario.
 
 ![Pulsante Riservatezza sulla barra multifunzione in Excel per Windows](media/Sensitivity_label_Sensitivity_button.png)
 
@@ -186,7 +184,7 @@ Gli utenti di Azure Information Protection possono attualmente classificare e as
 
 Se si usano le etichette di Azure Information Protection, per il momento è consigliabile evitare di creare nuove etichette nel Centro sicurezza e conformità finché non è stata completata la migrazione. L’[argomento migrazione Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/configure-policy-migrate-labels) contiene informazioni importanti e alcuni avvisi specifici. Se non si è ancora pronti per eseguire la migrazione dei tenant di produzione alle etichette di riservatezza, non è bisogna preoccuparsi: per il momento, gli utenti possono continuare a usare il client di Azure Information Protection e gli amministratori possono continuare a usare il portale di Azure per la gestione.
 
-## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Proteggere il contenuto nei dispositivi Windows con la protezione endpoint in Microsoft Intune
+## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Proteggere il contenuto nei dispositivi Windows con Endpoint Protection in Microsoft Intune
 
 Quando si crea un'etichetta di riservatezza, è possibile comunicare a Windows che i file con questa etichetta sono riservati e devono essere protetti dalla perdita di dati quando sono archiviati nei dispositivi Windows. L’opzione consente di garantire che il contenuto con questa etichetta sia condiviso o copiato solo in percorsi approvati, anche quando è archiviato in un punto finale. In sostanza, attivare questa opzione per un'etichetta di riservatezza indica che si tratta di dati molto importanti che richiedono vincoli di utilizzo aggiuntivi.
 
@@ -208,22 +206,9 @@ Affinché le etichette di riservatezza possano utilizzare WIP, è necessario ese
 
 - Assicurarsi di eseguire Windows 10 versione 1809 o successive.
 - [Impostare Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-atp/get-started), che analizza il contenuto di un'etichetta e applica la relativa protezione WIP. ATP esegue alcune operazioni in modo indipendente da WIP, ad esempio la creazione di report relativi ad anomalie.
-- Creare un criterio di Windows Information Protection (WIP) valido per i dispositivi endpoint:
+- Creare un criterio di Windows Information Protection (WIP) valido per i dispositivi endpoint. È possibile farlo in una di queste posizioni:
     - [Creare un criterio di Windows Information Protection (WIP) con MDM tramite il portale di Azure per Microsoft Intune](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Creare e distribuire un criterio di Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteggere i contenuti in applicazioni e servizi di terze parti con Microsoft Cloud App Security
-
-Proteggere i contenuti in applicazioni e servizi di terze parti, con Cloud App Security (CAS). Con CAS, è possibile rilevare, classificare, etichettare e proteggere i contenuti in servizi e applicazioni di terze parti, ad esempio SalesForce, Box o Dropbox. Ad esempio, Dropbox potrebbe non comprendere un’etichetta di riservatezza, ma CAS può entrare in contatto e proteggere il contenuto cui è applicata l’etichetta. 
-
-Per ulteriori informazioni, vedere [Applicare automaticamente etichette di classificazione di Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/use-case-information-protection).
-
-### <a name="important-prerequisites"></a>Prerequisiti importanti
-
-Prima che le etichette di riservatezza possano utilizzare CAS, è necessario eseguire i prerequisiti descritti di seguito: [Applicare automaticamente le etichette di classificazione di Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/use-case-information-protection). Questo argomento descrive i prerequisiti seguenti:
-
-- [Abilitare Cloud App Security e Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/azip-integration) per il tenant.
-- [Connettere l'app](https://docs.microsoft.com/it-IT/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) a Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Estendere le etichette di riservatezza ad applicazioni e servizi di terze parti con SDK di Microsoft Information Protection
 

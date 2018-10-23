@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Informazioni su come evitare che i messaggi effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002639"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596719"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnatati come indesiderati in Office 365
 
@@ -59,7 +59,7 @@ Per funzionare correttamente, Exchange Online Protection (EOP) chiede agli ammin
     
 - **Disabilitare il filtro SmartScreen in Outlook**: se gli utenti utilizzano il client desktop Outlook, dovrebbero disabilitare la funzionalità di filtro SmartScreen, che è stata sospesa. Se abilitato, può causare falsi positivi. Questo non dovrebbe essere necessario se si esegue un client Outlook desktop aggiornato. 
     
-- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
+- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti**: è consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
     
 - **Consentire immediatamente un mittente**: nel caso in cui è necessario consentire immediatamente un mittente, è consigliabile che **consentire SOLO l'indirizzo IP di un mittente specifico**. In alternativa, è possibile consentire un mittente e assicurarsi che il mittente superi un controllo di autenticazione, ad esempio SPF o DKIM, creando una regola di trasporto che cerchi **sia** il dominio del mittente sia un'intestazione di risultati di autenticazione con esito positivo. 
     
