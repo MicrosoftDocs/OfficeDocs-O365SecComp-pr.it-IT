@@ -3,7 +3,7 @@ title: Ulteriori informazioni su spoof intelligence
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Utilizzare lo spoofing significa intelligence nella protezione &amp; centro conformità della pagina Impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che lo spoofing entrambi i domini che fanno parte della propria organizzazione o lo spoofing i domini esterni. Business intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di protezione da minacce avanzate ed Exchange Online Protection.
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715912"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Ulteriori informazioni su spoof intelligence
 
@@ -102,7 +102,7 @@ Se si dispone di una sottoscrizione di Office 365 Enterprise E5 o hanno acquista
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configurazione dei criteri anti-spoofing
 <a name="Managespooflist"> </a>
 
-Oltre che per consentire o bloccare un determinato mittente di inviare posta elettronica falsificato nella propria organizzazione, è inoltre possibile configurare come strict si desidera filtrare per essere, l'azione da eseguire quando viene rilevato un messaggio di spoofing e per suggerimenti sulla sicurezza per consentire o meno protezione anti-spoofing.
+Oltre che per consentire o bloccare un determinato mittente di inviare posta elettronica falsificato nella propria organizzazione, è inoltre possibile configurare come strict si desidera che il filtro da e l'azione da eseguire quando viene rilevato un messaggio di spoofing.
   
 Protezione anti-spoofing viene applicata alla posta elettronica da mittenti da domini esterni all'organizzazione di Office 365. È possibile applicare i criteri ai destinatari le cui cassette postali vengono concessi in licenza per Office 365 Enterprise E5, avanzate Threat Protection e a partire da ottobre, nonché i clienti EOP 2018. Gestire i criteri anti-spoofing e le altre impostazioni di protezione anti-phishing. Per ulteriori informazioni sulle impostazioni di protezione anti-phishing, vedere [impostare i criteri di anti-phishing Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
   
@@ -126,11 +126,7 @@ Anche se il criterio di protezione anti-spoofing viene visualizzato in base ai c
   
     ![Schermata che mostra criteri anti-spoofing modifica le opzioni](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Scegliere se abilitare o disabilitare lo spoofing anti suggerimenti sulla sicurezza. Office 365 è consigliabile abilitare la punta di sicurezza **autenticazione ha esito negativo** per avvisare gli utenti quando si interagisce con un mittente non è possibile verificare la cui identità. Office 365 consiglia inoltre di abilitare la punta di sicurezza per un **passaggio di autenticazione reversibile** per piccoli gruppi di utenti, poiché questo suggerimento sicurezza può generare una quantità elevata di avvisi se l'utente riceve posta elettronica provenienti da origini legittimi, ma non autenticati.  
-  
-    ![Schermata che Mostra opzioni di suggerimento per la protezione anti-spoofing](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. Effettuare la selezione e quindi fare clic su **Salva**. 
+7. Effettuare la selezione e quindi fare clic su **Salva**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Altri modi per gestire lo spoofing e phishing con Office 365
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Essere attente sulla protezione di phishing e spoofing. Di seguito sono i metodi
 - Controllare il report di posta di Exchange Online Protection spoofing come parte di una routine. È possibile utilizzare questo rapporto spesso per visualizzare e gestire i mittenti spoofing. Per informazioni, vedere **report tramite posta elettronica di spoofing** in [rapporti di protezione di utilizzo della posta in Office 365 per visualizzare i dati su malware, posta indesiderata e rilevamenti delle regole](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
 Per gli amministratori di Office 365 più avanzati, è inoltre possibile completare questi controlli:
+    
     
 - Esaminare la configurazione del mittente Policy Framework (SPF). Per una breve introduzione a SPF e per ottenere una configurazione rapidamente, vedere [impostare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Per una più approfondita dei come Office 365 utilizza SPF o per le distribuzioni di risoluzione dei problemi o non standard, ad esempio le distribuzioni ibride, iniziare con [la modalità di Office 365 utilizza mittente Policy Framework (SPF) per impedire attacchi di spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
