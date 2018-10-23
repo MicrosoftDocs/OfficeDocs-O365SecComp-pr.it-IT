@@ -3,7 +3,7 @@ title: Gestire indagini legale in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilizzare casi di eDiscovery in Office 365 Security &amp; centro conformità per gestire indagini legale dell'organizzazione. Se si dispone di una sottoscrizione E5, è possibile analizzare ulteriormente maiuscole dati utilizzando l'analitica testo, l'apprendimento e funzionalità di codifica predittiva di eDiscovery avanzate.
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719050"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gestire indagini legale in Office 365
 
@@ -32,7 +32,7 @@ Le organizzazioni sono diversi i motivi per rispondere a un caso legale che coin
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gestire indagini legali con casi di eDiscovery
 
-eDiscovery casi consentono di controllare chi può creare, accedere e gestire casi di eDiscovery nell'organizzazione. Casi di utilizzo per aggiungere membri e controllo quali tipi di azioni può eseguire, impostare un blocco sui percorsi di contenuti rilevanti per una controversia legale e utilizzare lo strumento di ricerca di contenuto per i percorsi di ricerca in attesa per il contenuto che potrebbe essere risponde al caso. È quindi possibile esportare e scaricare i risultati per un'analisi più approfondita dai revisori esterni. Se nell'organizzazione di Office 365 e sottoscrizione E5, è inoltre possibile preparare i risultati della ricerca per l'analisi di eDiscovery avanzate.
+eDiscovery casi consentono di controllare chi può creare, accedere e gestire casi di eDiscovery nell'organizzazione. Casi di utilizzo per aggiungere membri e controllo quali tipi di azioni può eseguire, impostare un blocco sui percorsi di contenuti rilevanti per una controversia legale e utilizzare lo strumento di ricerca di contenuto per i percorsi di ricerca in attesa per il contenuto che potrebbe essere risponde al caso. È quindi possibile esportare e scaricare i risultati per un'analisi più approfondita dai revisori esterni. Se l'organizzazione Office 365 dispone di una sottoscrizione E5, è inoltre possibile preparare i risultati della ricerca per l'analisi di eDiscovery avanzate.
   
 - [Gestisci flusso di lavoro eDiscovery](ediscovery-cases.md) dalla creazione e utilizzo dei casi di eDiscovery per ogni persona indagini l'organizzazione dispone di intraprendere 
     
@@ -59,7 +59,7 @@ EDiscovery avanzate di Office 365 si basa sulle funzionalità di ricerca ed eDis
 > [!NOTE]
 > Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
   
-### <a name="get-started"></a>Informazioni di base
+### <a name="get-started"></a>Per iniziare
 
 Il modo più rapido per iniziare a utilizzare eDiscovery avanzate consiste nel creare un caso e preparare i risultati della ricerca in sicurezza &amp; centro conformità, caricare i risultati di eDiscovery avanzate e quindi eseguire analisi Express per l'analisi che caso dati ed esportare il risultati per la revisione esterna.
   
