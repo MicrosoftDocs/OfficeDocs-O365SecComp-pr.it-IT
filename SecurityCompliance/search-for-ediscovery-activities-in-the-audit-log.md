@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come cercare il Registro di controllo di Office 365 per gli eventi registrati quando gli amministratori di conformità eseguono operazioni maiuscole ricerca contenuto ed eDiscovery in sicurezza &amp; centro conformità.
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038349"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698032"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di eDiscovery attività nel Registro di controllo di Office 365
 
@@ -43,7 +43,7 @@ Attualmente, è necessario eseguire alcune operazioni specifiche per visualizzar
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro fare clic su **ricerca &amp; indagini**e quindi fare clic su **ricerca dei registri di controllo**.
     
@@ -94,7 +94,7 @@ Nella tabella seguente vengono descritti i ricerca contenuto e attività correla
 |Caso di eDiscovery eliminati  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |È stato eliminato un caso eDiscovery. Si noti che qualsiasi attesa associato al caso deve essere rimosso prima che il caso può essere eliminato.  <br/> |
 |Filtro di ricerca eliminati autorizzazioni  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |È stato eliminato un filtro di autorizzazioni di ricerca.  <br/> |
 |Query di ricerca eliminati per la conservazione casi eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Una conservazione basata su query associata a un caso eDiscovery è stato eliminato. Rimozione di query dall'esenzione è spesso il risultato dell'eliminazione di un'esenzione. Quando un'esenzione o una query di conservazione vengono eliminate, vengono rilasciati i percorsi di contenuti che era in attesa.  <br/> |
-|Esportazione scaricato di ricerca del contenuto  <br/> |SearchResultDownloaded  <br/> |N/D  <br/> |Un utente scaricati i risultati di ricerca di contenuto al proprio computer locale. Si noti che un'attività **avviato l'esportazione di ricerca del contenuto** deve essere avviata prima che i risultati della ricerca possono essere scaricati.<br/> |
+|Esportazione scaricato di ricerca del contenuto  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un utente scaricati i risultati di ricerca di contenuto al proprio computer locale. Si noti che un'attività **avviato l'esportazione di ricerca del contenuto** deve essere avviata prima che i risultati della ricerca possono essere scaricati.<br/> |
 |Visualizzati in anteprima i risultati di ricerca del contenuto  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un utente di visualizzare in anteprima i risultati di ricerca di contenuto.  <br/> |
 |Risultati di ricerca del contenuto  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utente eliminati i risultati di ricerca del contenuto mediante l'esecuzione di **ComplianceSearchAction New-eliminare** comando.  <br/> |
 |Rimosso analisi della ricerca contenuto  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Preparare la ricerca contenuto azione (per preparare i risultati della ricerca eDiscovery avanzate di Office 365) è stato eliminato. Se l'azione durante la preparazione è meno di due settimane, i risultati della ricerca sono stati preparati per eDiscovery avanzate sono stati eliminati dall'area di archiviazione Microsoft Azure. Se l'azione durante la preparazione è stato superato 2 settimane, questo evento indica che è stato eliminato solo l'azione preparazione corrispondente.  <br/> |

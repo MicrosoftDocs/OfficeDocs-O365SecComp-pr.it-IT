@@ -3,7 +3,7 @@ title: Avviso criteri in Office 365 Security &amp; centro conformità
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso in Office 365 Security &amp; centro conformità per monitorare le potenziali minacce, la perdita di dati e problema di autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono le attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530750"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698022"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Avviso criteri in Office 365 Security &amp; centro conformità
 
@@ -74,7 +74,9 @@ Un criterio di avviso è costituita da condizioni e le impostazioni seguenti.
     
   - Governance dei dati
     
-  - Prevenzione della perdita dei dati
+  - Prevenzione della perdita di dati
+
+  - Flusso di posta
     
   - Autorizzazioni
     
@@ -100,6 +102,7 @@ Nella tabella seguente sono elencati e vengono descritti i criteri di avviso pre
 |**Criterio di avviso predefinito**|**Descrizione**|**Sottoscrizione a Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Creazione di regole di inoltro/reindirizza** <br/> |Genera un avviso quando un utente all'interno dell'organizzazione consente di creare una regola di posta in arrivo per la cassetta postale che inoltra o reindirizza i messaggi a un altro account di posta elettronica. Questo criterio tiene traccia solo le regole posta in arrivo che vengono create utilizzando Outlook Web App o Exchange Online PowerShell. Questo criterio è un'impostazione di gravità **bassa** . Per ulteriori informazioni sull'utilizzo di regole posta in arrivo per l'inoltro e il reindirizzamento di posta elettronica in Outlook Web App, vedere [utilizzare le regole in Outlook Web App per inoltrare automaticamente messaggi a un altro account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |E1, E3 o E5  <br/> |
+|**ricerca di eDiscovery avviato o esportati** <br/> |Genera un avviso quando si utilizza lo strumento di ricerca del contenuto nel centro conformità sicurezza. Viene generato un avviso quando vengono eseguite le attività di ricerca di contenuto seguenti:<br/><br/>• Una ricerca di contenuto sia stato avviato<br/>• Vengono esportati i risultati di ricerca di contenuto<br/>• Esportazione di un report di ricerca del contenuto<br/><br/>Gli avvisi sono inoltre trigged quando vengono eseguite le attività di ricerca del contenuto precedente associata a un caso eDiscovery. Questo criterio è un'impostazione di gravità **Media** . Per ulteriori informazioni sulle attività di ricerca del contenuto, vedere la sezione [ricerca per le attività di eDiscovery in Office 365 Registro di controllo](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |E1, E3 o E5  <br/> |
 |**Elevazione dei privilegi di amministrazione di Exchange** <br/> |Genera un avviso quando un utente verrà assegnato autorizzazioni amministrative nell'organizzazione Exchange Online. ad esempio, se un utente viene aggiunto al ruolo Gestione organizzazione gruppo in Exchange Online. Questo criterio è un'impostazione di gravità **bassa** .<br/> |E1, E3 o E5  <br/> |
 |**I messaggi sono in ritardo** <br/> |Genera un avviso quando Office 365 non possono offrire messaggi di posta elettronica all'organizzazione locale o un partner di server utilizzando un connettore. Quando ciò verifica, il messaggio viene accodato in Office 365. Questo avviso viene generato quando sono presenti messaggi di 2.000 o più che sono stati accodati per più di un'ora. Questo criterio è impostato gravità **alta** .<br/> |E1, E3 o E5  <br/> |
 |**Campagne di malware rilevata dopo il recapito** <br/> |Genera un avviso quando un numero insolitamente elevato di messaggi contenenti malware viene recapitato alle cassette postali nell'organizzazione. Se si verifica questo evento, Office 365 consente di rimuovere i messaggi che contengono un virus dalle cassette postali di Exchange Online. Questo criterio è impostato gravità **alta** .<br/> |Sottoscrizione di componente aggiuntivo E5 o Business Intelligence di rischio di Office 365  <br/> |
