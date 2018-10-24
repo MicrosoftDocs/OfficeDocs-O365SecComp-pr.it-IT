@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva di Office 365 Threat Intelligence
+title: Introduzione a Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Informazioni su Business Intelligence di Office 365 rischio e su come iniziare a.
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531065"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769895"
 ---
-# <a name="get-started-with-office-365-threat-intelligence"></a>Guida introduttiva di Office 365 Threat Intelligence
+# <a name="get-started-with-office-365-threat-intelligence"></a>Introduzione a Office 365 Threat Intelligence
 
 Se si fa parte del team di protezione dell'organizzazione, è possibile utilizzare Business Intelligence di Office 365 minaccia per impedire agli utenti di attacchi di tipo. Consente agli analisti di protezione di Office 365 rischio Intelligence e gli amministratori di proteggere gli utenti da propagazione backup sui concetti e identificazione delle azioni in base a quanto avviene nel proprio ambiente Office 365. Queste informazioni sono basati su un archivio di dati business intelligence rischio e sistemi per campione criteri che corrispondono ad attacchi potenzialmente dannoso attività e comportamenti completo.
   
@@ -80,7 +80,7 @@ Business Intelligence di Office 365 rischio è incluso in Office 365 Enterprise 
     
     Se viene visualizzata una sottoscrizione diversa, ad esempio **Office 365 Enterprise E3** o **Office 365 Enterprise E1**, è possibile aggiungere Business Intelligence di Office 365 rischio. A tale scopo, scegliere **Aggiungi sottoscrizione +**.
     
-4. Nell'interfaccia di amministrazione di Office 365, scegli **utenti** \> **utenti attivi**.
+4. Nell'Interfaccia di amministrazione di Office 365 scegliere **Utenti** \> **Utenti attivi**.
     
 5. Assegnare licenze di Office 365 rischio Intelligence agli utenti. Per ulteriori informazioni sull'assegnazione delle licenze, vedere [assegnare licenze agli utenti di Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
@@ -92,7 +92,7 @@ Business Intelligence di Office 365 rischio è incluso in Office 365 Enterprise 
 |Utilizzare il dashboard di rischio (o il nuovo [dashboard sicurezza](security-dashboard.md))  <br/> Visualizza informazioni sulle minacce recente o corrente  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
 |Utilizzare l'elenco delle cartelle rischio (anche noto come Explorer)  <br/> Analisi delle minacce  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
 |Problemi di visualizzazione  <br/> Aggiungere messaggi di posta elettronica a un evento imprevisto  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
-|Attivare la posta elettronica azioni in un evento imprevisto  <br/> Cercare ed eliminare messaggi di posta elettronica sospetti  <br/> |Amministratore globale di Office 365  <br/> Cercare ed eliminare (assegnati per la protezione &amp; centro conformità)  <br/> |
+|Attivare la posta elettronica azioni in un evento imprevisto  <br/> Cercare ed eliminare messaggi di posta elettronica sospetti  <br/> |Amministratore globale di Office 365 o sicurezza  <br/> Cercare ed eliminare (assegnati per la protezione &amp; centro conformità)  <br/> |
 |Integrare Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection  <br/> Integrazione di Business Intelligence di rischio di Office 365 con un server SIEM  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Ruolo appropriato assegnata in altre applicazioni (ad esempio, la protezione di Windows Defender avanzate rischio portale o un server SIEM)  <br/> |
    
 Per informazioni sui ruoli, gruppi di ruoli e autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).

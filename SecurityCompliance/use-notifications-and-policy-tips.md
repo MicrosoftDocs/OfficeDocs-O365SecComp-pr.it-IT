@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "Un suggerimento per il criterio è una notifica o un avviso che viene visualizzato quando un utente funzioni correttamente con il contenuto in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e suggerimenti sui criteri per aumentare la consapevolezza e consentono di informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti l'opzione per ignorare il criterio, in modo che non è bloccati se dispongono di un'azienda valida necessario o se il criterio rilevamento di un falso positivo. "
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531408"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769915"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Invio di notifiche di posta elettronica e la visualizzazione di suggerimenti sui criteri per i criteri DLP
 
@@ -206,6 +206,25 @@ Se i suggerimenti sul criterio sono configurate per consentire l'override, è po
 ![Finestra di dialogo suggerimento criteri in cui è possibile ignorare il suggerimento sul criterio](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Si noti che quando si aggiungono informazioni riservate a un messaggio di posta elettronica, potrebbe esserci latenza tra cui le informazioni riservate viene aggiunto e quando viene visualizzato il suggerimento sul criterio.
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 e versioni successive supportano che Mostra suggerimenti per i criteri per solo alcune condizioni
+
+Attualmente, Outlook 2013 e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per queste condizioni:
+
+- Contiene il contenuto
+- Il contenuto condiviso
+
+Attualmente si impegna sul supporto per la visualizzazione di suggerimenti sui criteri di ulteriori condizioni. Tali strumenti comprendono:
+
+- Impossibile analizzare il contenuto dell'allegato alcun messaggio di posta elettronica
+- Messaggio di posta elettronica contenuto di qualsiasi allegato non ha completato la scansione
+- Estensione di file allegato
+- Gli allegati sono protetti da password
+- Proprietà del documento
+- Dominio del destinatario è
+- Indirizzo IP del mittente è
+
+Si noti che le seguenti condizioni funzionare in Outlook, in cui verrà adeguare il contenuto e applicare un'azione correttiva al contenuto. Ma che Mostra suggerimenti sui criteri per gli utenti non è ancora supportato.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Suggerimenti per il criterio nell'interfaccia di amministrazione di Exchange e la protezione di Office 365 &amp; centro conformità
 
@@ -218,8 +237,7 @@ Si noti che le notifiche di posta elettronica mentre suggerimenti sui criteri po
 ### <a name="default-text-for-policy-tips-in-email"></a>Testo predefinito per i suggerimenti sui criteri di posta elettronica
 
 Per impostazione predefinita, suggerimenti sui criteri di visualizzazione del testo simile al seguente per la posta elettronica.
-  
-| |
+
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
 |Invia una notifica, ma non consente di sostituzione  <br/> |Il messaggio di posta elettronica in conflitto con un criterio nell'organizzazione.  <br/> |
@@ -255,8 +273,7 @@ In ognuno di questi programmi desktop di Office 2016, gli utenti possono sceglie
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Testo predefinito per i suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
 
 Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo simile a quanto segue nella barra dei messaggi e nella visualizzazione Backstage di un documento aperto. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
-  
-| |
+
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
 |Invia una notifica, ma non consente di sostituzione  <br/> |In questo file in conflitto con un criterio nell'organizzazione. Vai dal menu **File** per ulteriori informazioni.<br/> |
@@ -271,12 +288,12 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
 
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
     
-- [Creare un criterio DLP da un modello](create-a-dlp-policy-from-a-template.md)
+- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
-- [Creare un criterio DLP per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
 - [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
     
 
