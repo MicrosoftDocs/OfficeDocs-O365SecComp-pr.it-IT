@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577095"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678125"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -71,7 +71,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
 
 - **Crittografare** solo il messaggio di posta elettronica o sia il messaggio di posta elettronica sia i documenti. È possibile scegliere quali utenti o gruppi sono autorizzati ad eseguire determinate operazioni e per quanto tempo. Ad esempio, è possibile autorizzare gli utenti di un dominio specifico all'esterno dell'organizzazione a esaminare i contenuti per soli 7 giorni a partire dall'applicazione dell'etichetta.
 
-- **Contrassegnare il contenuto** aggiungendo filigrane, intestazioni o piè di pagina ai messaggi di posta elettronica o ai documenti che hanno l'etichetta applicata. Le filigrane sono applicate solo ai documenti, non ai messaggi di posta elettronica, e hanno un limite di 255 caratteri. Inoltre, le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne in Excel, dove hanno un limite di 253 caratteri.
+- **Contrassegnare il contenuto** aggiungendo filigrane, intestazioni o piè di pagina ai messaggi di posta elettronica o ai documenti che hanno l'etichetta applicata. Le filigrane sono applicate solo ai documenti, non ai messaggi di posta elettronica, e hanno un limite di 255 caratteri. Inoltre, le intestazioni e i piè di pagina hanno un limite di 1024 caratteri ( tranne in Excel, dove hanno un limite di 255 caratteri o meno, a seconda che il documento contenga altre intestazioni o piè di pagina e altri fattori).
 
     ![Filigrana e intestazione applicate a un documento](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ Quando si creano le etichette di riservatezza nel Centro sicurezza e conformità
 
 ### <a name="sublabels-grouping-labels"></a>Sottoetichette (raggruppamento etichette)
 
-Con le sottoetichette, è possibile raggruppare una o più etichette sotto un'intestazione che viene visualizzata da un utente in un'applicazione di Office. Ad esempio, in Riservato, l'organizzazione potrebbe usare varie etichette diverse per tipi specifici di quella classificazione. In questo esempio, l'etichetta Riservato è una semplice etichetta di testo senza alcuna impostazione di protezione e non può quindi essere applicata al contenuto. Piuttosto, gli utenti devono scegliere Riservato per visualizzare le sottoetichette e quindi scegliere una sottoetichetta da applicare al contenuto.
+Con le sottoetichette, è possibile raggruppare una o più etichette sotto un'intestazione che viene visualizzata da un utente in un'applicazione di Office. Ad esempio, in Riservato, l'organizzazione potrebbe usare varie etichette diverse per tipi specifici di quella classificazione. In questo esempio, l'etichetta Riservato è una semplice etichetta di testo senza alcuna impostazione di protezione e, poiché contiene sottoetichette, non può quindi essere applicata al contenuto. Piuttosto, gli utenti devono scegliere Riservato per visualizzare le sottoetichette e quindi scegliere una sottoetichetta da applicare al contenuto.
 
 Le sottoetichette sono solo un modo per presentare le etichette agli utenti in gruppi logici. Le sottoetichette non ereditano le impostazioni dell’etichetta che le contiene.
 
@@ -148,7 +148,7 @@ Nelle app di Office nei dispositivi che eseguono Windows, le etichette di riserv
 
 Il supporto nativo per le etichette di riservatezza nelle app di Office in Windows sarà disponibile a breve.
 
-Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza e che sarà disponibile a breve (visitare nuovamente questa pagina più avanti per un collegamento a informazioni su come distribuire il client). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle app di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificato di Azure Information Protection non più necessario.
+Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza, Per ulteriori informazioni riguardanti il download del client, vedere [Client di etichettatura di Azure Information Protection: informazioni sul rilascio della versione](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle app di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificato di Azure Information Protection non più necessario.
 
 ![Pulsante Riservatezza sulla barra multifunzione in Excel per Windows](media/Sensitivity_label_Sensitivity_button.png)
 
