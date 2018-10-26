@@ -11,8 +11,10 @@
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
 # Proteggere l'accesso a dati e servizi
 ## [Proteggere l’accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
-## [Scegliere tra Gestione dispositivi mobili e Intune](choose-between-mdm-and-intune.md)
-# [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+## [Scegliere tra MDM e Intune](choose-between-mdm-and-intune.md)
+# Proteggere le informazioni
+## [Etichette di riservatezza](sensitivity-labels.md)
+## [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 ## [Guarda una panoramica completa sulla prevenzione della perdita dei dati](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurare Prevenzione della perdita dei dati
 ### [Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [Abilitare l’archiviazione illimitata](enable-unlimited-archiving.md)
 ### [Configurare i criteri di archiviazione ed eliminazione per le cassette postali](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## Conservare i dati
-### [Panoramica dei criteri di conservazione](retention-policies.md)
-### [Panoramica delle etichette](labels.md)
-### [Panoramica delle revisioni per l'eliminazione](disposition-reviews.md)
-### [Panoramica della conservazione basata su eventi](event-driven-retention.md)
-### [Panoramica della gestione del piano file](file-plan-manager.md)
+### [Criteri di conservazione](retention-policies.md)
+### [Etichette di conservazione](labels.md)
+### [Revisioni per l'eliminazione](disposition-reviews.md)
+### [Conservazione basata su eventi](event-driven-retention.md)
+### [Gestione del piano file](file-plan-manager.md)
 ## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
 ### [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)
 ### [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
