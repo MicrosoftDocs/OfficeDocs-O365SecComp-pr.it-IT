@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
-ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
+ms.openlocfilehash: d08f0e630aeec185ac36998e611fa11ba5c5e007
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "25678125"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769905"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -148,7 +148,7 @@ Nelle app di Office nei dispositivi che eseguono Windows, le etichette di riserv
 
 Il supporto nativo per le etichette di riservatezza nelle app di Office in Windows sarà disponibile a breve.
 
-Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza, Per ulteriori informazioni riguardanti il download del client, vedere [Client di etichettatura di Azure Information Protection: informazioni sul rilascio della versione](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle app di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificato di Azure Information Protection non più necessario.
+Se si è un cliente esistente di Azure Information Protection, è possibile distribuire il client di assegnazione delle etichette unificato di Azure Information Protection, che supporta le etichette di riservatezza, Per ulteriori informazioni riguardanti il download del client, vedere [Client di etichettatura unificata di Azure Information Protection: informazioni sul rilascio della versione](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Attualmente stiamo lavorando al supporto nativo per le etichette di riservatezza nelle app di Office in Windows, in modo da rendere il client di assegnazione delle etichette unificata di Azure Information Protection non più necessario.
 
 ![Pulsante Riservatezza sulla barra multifunzione in Excel per Windows](media/Sensitivity_label_Sensitivity_button.png)
 
