@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con un criterio di criterio DLP perdita di dati in Office 365 Security &amp; centro conformità, è possibile identificare, monitorare e proteggere automaticamente le informazioni contenute in Office 365.
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540422"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829197"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -312,7 +312,7 @@ Per questi motivi, le indicazioni per la creazione di regole con corrispondenza 
     
 - **Applicare automaticamente** il contenuto che soddisfa le condizioni che si sceglie. 
     
-Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette](labels.md).
+Per ulteriori informazioni sulle etichette, vedere [Overview of etichette di conservazione](labels.md).
   
 Dopo aver creato un'etichetta, quindi utilizzare tale etichetta come condizione nei criteri DLP. È possibile ad esempio, in quanto:
   
@@ -327,12 +327,16 @@ Dopo aver creato un'etichetta, quindi utilizzare tale etichetta come condizione 
 In base alle etichette come condizione nelle regole DLP, può è in modo selettivo applicare azioni di protezione su un set specifico di contenuto, le posizioni o gli utenti.
   
 ![Etichette come condizione](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Supporto per le etichette di riservatezza è disponibile a
+
+Si noti che è possibile utilizzare un'etichetta di conservazione attualmente come condizione, non è un' [etichetta di riservatezza](sensitivity-labels.md). Attualmente si impegna sul supporto per l'utilizzo di un'etichetta di riservatezza in questa condizione.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>La relazione tra questa funzionalità e altre caratteristiche
 
 Diverse funzionalità può essere applicata al contenuto che contiene informazioni riservate:
   
-- Un' [etichetta di conservazione](labels.md#applying-a-retention-label-automatically-based-on-conditions)[applica un'etichetta automaticamente in base alle condizioni] e un [criterio di conservazione](retention-policies.md) può applicare entrambi azioni di **conservazione** del contenuto. 
+- Un' [etichetta di conservazione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e [criteri di conservazione](retention-policies.md) può applicare entrambi azioni di **conservazione** del contenuto. 
     
 - Un criterio DLP può applicare azioni di **protezione** del contenuto. E prima applicate queste operazioni, un criterio DLP può richiedere altre condizioni per soddisfare oltre il contenuto che include un'etichetta. 
     
@@ -492,7 +496,7 @@ Tuttavia, rapporti DLP necessario estrarre dati da tra Office 365, inclusi Excha
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
