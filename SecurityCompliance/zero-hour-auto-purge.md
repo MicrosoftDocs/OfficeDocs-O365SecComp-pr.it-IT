@@ -1,5 +1,5 @@
 ---
-title: 'ZAP: protezione contro la posta indesiderata e malware'
+title: 'Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware'
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Eliminazione automatica zero ore (ZAP) è una funzionalità di protezione posta elettronica in grado di rilevare i messaggi con la posta indesiderata o malware che sono già stati consegnati alla posta in arrivo degli utenti e quindi viene eseguito il rendering del contenuto dannoso dannosa. Come ZAP esegue questa operazione dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857244"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ZAP: protezione contro la posta indesiderata e malware
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
 Eliminazione automatica zero ore (ZAP) è una funzionalità di protezione posta elettronica in grado di rilevare i messaggi con la posta indesiderata o malware che sono già stati consegnati alla posta in arrivo degli utenti e quindi viene eseguito il rendering del contenuto dannoso dannosa. Come ZAP esegue questa operazione dipende dal tipo di contenuto dannoso rilevato.
   
@@ -74,7 +74,7 @@ Gli amministratori inoltre possono [disabilitare ZAP](zero-hour-auto-purge.md#BK
     
     Se si sceglie **Salva** a questo punto, il criterio viene applicato al tenant di Office 365. 
     
-    ![Impostare la posta indesiderata e azioni a Mpve messaggio nella cartella posta indesiderata in blocco](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![Impostare la posta indesiderata e azioni per sposta il messaggio nella cartella posta indesiderata in blocco](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. Se è stato creato un nuovo criterio e si desidera applicare il criterio a solo un set di utenti, scorrimento nella finestra del filtro dei criteri e i controlli di menu nella sezione **Applicato a** scegliere i **destinatari**, **dominio**o **appartenenze a gruppi** è Se si desidera applicare il criterio. È inoltre possibile impostare eccezioni e le altre. 
     
