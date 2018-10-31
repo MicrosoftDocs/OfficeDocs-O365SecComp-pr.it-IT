@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454283"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850840"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -59,13 +59,13 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
       - Nella casella **Descrizione** digitare una descrizione like e fornisce messaggi immediatamente e gli allegati Ricollega dopo la scansione.
     
-      - Nella sezione response scegliere l'opzione di **Recapito dinamico** . ([Informazioni relative alla consegna dinamica e l'anteprima allegati sicuri degli strumenti di analisi di](dynamic-delivery-and-previewing.md)).
+      - Nella sezione response scegliere l'opzione di **Recapito dinamico** . ([Ulteriori informazioni sul recapito dinamico e l'anteprima allegati sicuri degli strumenti di analisi di](dynamic-delivery-and-previewing.md)).
     
       - Nella sezione **reindirizzare degli allegati** , selezionare l'opzione per abilitare reindirizza e digitare l'indirizzo di posta elettronica di amministratore globale, amministratore della sicurezza o analista di protezione che verrà analizzare gli allegati dannosi Office 365. 
     
       - Nella sezione **Applicato a** scegliere **il dominio del destinatario è**e quindi selezionare il dominio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
-6. Fare clic su **Salva**.
+6. Scegliere **Save**.
     
 È possibile impostare più criteri gli allegati sicuri degli strumenti di analisi per l'organizzazione. Questi criteri da applicare in ordine che sono elencate nella pagina **Allegati sicuri degli strumenti di analisi** . Dopo un criterio è stato definito o modificato, attendere almeno 30 minuti per i criteri per rendere effettive nell'intera datacenter Microsoft. 
   

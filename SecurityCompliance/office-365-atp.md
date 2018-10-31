@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protezione da minacce avanzate di Office 365 include intelligence spoofing, collegamenti sicuri, gli allegati sicuri e funzionalità avanzate di anti-phishing. Protezione avanzata di rischio viene inoltre esteso per i file in SharePoint Online, OneDrive for Business e Teams Microsoft.
-ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496860"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850830"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -55,7 +55,7 @@ Dopo avere creato degli strumenti di analisi, il passaggio successivo è per il 
 
 - **[Impostare i criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)** inclusa [personalizzato bloccati gli URL](set-up-a-custom-blocked-urls-list-wtih-atp.md) ed [elenco URL "non di riscrittura" personalizzato](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) dell'organizzazione
     
-- **[Configurare gli allegati sicuri degli strumenti di analisi criteri in Office 365](set-up-atp-safe-attachments-policies.md)** che può includere [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md)
+- **[Impostare i criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)** che può includere [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md)
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>Vedere funzionamento degli strumenti di analisi visualizzando i report
 
@@ -86,6 +86,6 @@ Dopo aver i criteri degli strumenti di analisi, sono disponibili per mostrare co
 
 [Visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md)
   
-[Gestione di Office 365 protezione delle minacce &amp; centro conformità](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

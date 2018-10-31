@@ -3,6 +3,7 @@ title: Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strum
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Quando si imposta i criteri di sicurezza degli allegati degli strumenti di analisi, si sceglie recapito dinamico per evitare ritardi messaggio e consentire agli utenti di visualizzare in anteprima degli allegati che vengono analizzati.
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965243"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850820"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strumenti di analisi di
 
-Recapito dinamico è un'opzione che è possibile selezionare per. In questo articolo per informazioni su Recapito dinamico e funzionalità di anteprima degli allegati in [Strumenti di analisi allegati attendibili in Office 365](atp-safe-attachments.md).
+**Riepilogo**: recapito dinamico è un'opzione che è possibile selezionare gli allegati [sicuri degli strumenti di analisi](atp-safe-attachments.md). In questo articolo per informazioni su recapito dinamici e funzionalità di anteprima degli allegati in [Strumenti di analisi allegati attendibili in Office 365](atp-safe-attachments.md).
   
-## <a name="how-dynamic-delivery-works"></a>Works recapito dinamico
+## <a name="how-dynamic-delivery-works"></a>Funzionamento del recapito dinamico
 
-Quando si [Imposta i criteri degli strumenti di analisi provvisoria allegati in Office 365](set-up-atp-safe-attachments-policies.md), è possibile scegliere tra diverse opzioni, ad esempio **blocco**, **sostituire**e **Recapito dinamico**. A seconda della modalità di configurazione dei criteri, i destinatari di posta elettronica possono verificarsi un ritardo secondario di recapito della posta elettronica quando gli allegati vengono analizzati. Per evitare ritardi messaggio, scegliere **Recapito dinamico**.
+Quando [vengono impostati i criteri degli strumenti di analisi gli allegati sicuri](set-up-atp-safe-attachments-policies.md) per l'organizzazione, sono disponibili diverse opzioni per la modalità di Gestione allegati di posta elettronica. Sono inclusi **blocco**, **sostituire**e **Recapito dinamico**. A seconda della configurazione delle criteri gli allegati sicuri degli strumenti di analisi, i destinatari di posta elettronica possono verificarsi un ritardo secondario di recapito della posta elettronica quando gli allegati vengono analizzati. Per evitare ritardi messaggio, scegliere **Recapito dinamico**.
   
-L'opzione di distribuzione dinamico Elimina i ritardi di posta elettronica mediante l'invio di corpo di un messaggio di posta elettronica con un segnaposto per tutti gli allegati di posta elettronica. Il segnaposto rimane fino a quando l'allegato è analizzato da [Strumenti di analisi allegati attendibili in Office 365](atp-safe-attachments.md). Destinatari di posta elettronica possono leggere e rispondere ai propri messaggi di posta elettronica subito, sapere che vengono analizzati gli allegati.
-  
-La maggior parte dei documenti PDF e l'ufficio documenti possono essere visualizzati in anteprima in modalità provvisoria durante l'analisi degli strumenti di analisi. Se un allegato non è compatibile con il Visualizzatore di recapito dinamico, segnaposto allegato viene visualizzato dai destinatari di posta elettronica fino a completa la scansione degli allegati sicuri degli strumenti di analisi.
-  
-Che tutti gli allegati sia selezionato, viene automaticamente ricollegato al messaggio di posta elettronica originale. Se un allegato è determinato da dannoso, viene inviata alla quarantena, in cui una persona nel team di protezione dell'organizzazione (ad esempio un amministratore di protezione o di amministratore globale di Office 365) possibile [gestire i messaggi in quarantena in Office 365](manage-quarantined-messages-and-files.md).
+Recapito dinamico Elimina i ritardi di posta elettronica mediante l'invio di corpo di un messaggio di posta elettronica al destinatario con un segnaposto per tutti gli allegati di posta elettronica. Segnaposto rimane fino a quando una copia dell'allegato viene analizzata ritenuta attendibili per [Gli allegati sicuri degli strumenti di analisi](atp-safe-attachments.md). La maggior parte dei documenti PDF e l'ufficio documenti possono essere visualizzati in anteprima in modalità provvisoria durante l'analisi degli strumenti di analisi. Se un allegato non è compatibile con il Visualizzatore di recapito dinamico, un segnaposto allegato viene visualizzato dai destinatari di posta elettronica fino a completa la scansione degli allegati sicuri degli strumenti di analisi.
+
+- Quando sono deselezionato tutti gli allegati, risulta disponibile per aprire o scaricare. 
+
+- Se un allegato è determinato da dannoso, viene inviata alla quarantena, in cui una persona nel team di protezione dell'organizzazione (ad esempio un amministratore di protezione o di amministratore globale di Office 365) possibile [gestire i messaggi in quarantena in Office 365](manage-quarantined-messages-and-files.md).
+
+Con recapito dinamico, i destinatari di posta elettronica possono leggere e rispondere ai propri messaggi di posta elettronica subito, sapere che vengono analizzati gli allegati. 
+
+Gli allegati sicuri degli strumenti di analisi analisi abbia effettuare nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulle aree di centro dati, vedere [dove sono i dati si trova?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Cosa succede quando un utente inoltra un messaggio di posta elettronica contenente un allegato.
 
@@ -41,7 +46,7 @@ Si supponga che un'organizzazione di recapito dinamico di utilizzare i [criteri 
     
 - Se un destinatario non è occupato da un criterio di allegati sicuri degli strumenti di analisi, quindi il messaggio di posta elettronica e allegati verranno passate, senza allegati sicuri degli strumenti di analisi analisi o placeholders allegato.
     
-## <a name="whats-required-for-dynamic-delivery-to-work"></a>Requisiti per il recapito dinamico funziona?
+## <a name="whats-required-for-dynamic-delivery-to-work"></a>Requisiti per il recapito dinamica funziona?
 
 - L'organizzazione deve disporre di [Protezione avanzate da minacce di Office 365](office-365-atp.md)
     
@@ -49,7 +54,7 @@ Si supponga che un'organizzazione di recapito dinamico di utilizzare i [criteri 
     
 - Messaggio di posta elettronica dell'organizzazione deve essere ospitato in Office 365
     
-## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>Esistono scenari per i quali non è disponibile il recapito dinamico?
+## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>Esistono scenari per i quali non è disponibile recapito dinamico?
 
 Esistono alcuni scenari in cui non è supportato recapito dinamico. Questi sono i seguenti:
   
