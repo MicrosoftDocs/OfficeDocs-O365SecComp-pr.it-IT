@@ -3,7 +3,7 @@ title: Definire regole del flusso di posta elettronica per crittografare i messa
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/30/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +13,26 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Amministratore globale di Office 365, è possibile creare le regole di flusso per attivare Office 365 messaggio crittografia dei posta. È possibile crittografare eventuali messaggi di posta elettronica in uscita e rimuovere la crittografia di messaggi interni o da risposte ai messaggi crittografati inviati dall'organizzazione.
-ms.openlocfilehash: 06668f29e69c885adb8c67d723efe42b4a4aa166
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853091"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365
 
-Amministratore globale di Office 365, è possibile creare regole del flusso di posta elettronica, noto anche come le regole di trasporto, per garantire la protezione dei messaggi di posta elettronica inviati e ricevuti. È possibile impostare le regole per crittografare eventuali messaggi di posta elettronica in uscita e rimuovere la crittografia di messaggi crittografati provenienti da all'interno dell'organizzazione o da risposte ai messaggi crittografati inviati dall'organizzazione. Creare queste regole, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o i cmdlet di Windows PowerShell per Exchange Online. Oltre alle regole di crittografia generale, è possibile abilitare o disabilitare le opzioni di crittografia dei messaggi per gli utenti finali.
+Amministratore globale di Office 365, è possibile creare regole del flusso di posta elettronica, noto anche come le regole di trasporto, per garantire la protezione dei messaggi di posta elettronica inviati e ricevuti. È possibile impostare le regole per crittografare eventuali messaggi di posta elettronica in uscita e rimuovere la crittografia di messaggi crittografati provenienti da all'interno dell'organizzazione o da risposte ai messaggi crittografati inviati dall'organizzazione. Creare queste regole, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o i cmdlet di Windows PowerShell per Exchange Online.  Oltre alle regole di crittografia generale, è possibile abilitare o disabilitare le opzioni di crittografia dei messaggi per gli utenti finali.
   
 Se la migrazione di recente da AD RMS per la protezione delle informazioni di Azure, è necessario controllare le regole di flusso di posta elettronica esistente per garantire che continuano a funzionare nel nuovo ambiente. Inoltre, se si desidera usufruire delle nuove funzionalità di Office 365 messaggio crittografia dei disponibili per l'utente attraverso la protezione delle informazioni di Azure, è necessario aggiornare le regole di flusso di posta elettronica esistente. In caso contrario, gli utenti continua a ricevere messaggi crittografati che utilizza il formato allegato HTML precedente anziché l'esperienza OME nuova e semplice. Se è stata impostata OME ancora, vedere [impostare le nuove funzionalità di Office 365 Message Encryption basate sul Azure Information Protection](set-up-new-message-encryption-capabilities.md) per informazioni. 
   
 Per informazioni sui componenti che costituiscono le regole del flusso di posta elettronica e come le regole di flusso di posta, vedere [(regole di trasporto) le regole di flusso di posta in Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Per ulteriori informazioni sul funzionano delle regole del flusso di posta elettronica con Azure Information Protection, vedere [configurazione di Exchange Online regole del flusso di posta elettronica per le etichette di protezione delle informazioni Azure](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
+## <a name="hybrid-exchange-environments-do-this-first"></a>Ambienti ibridi di Exchange: prima operazione
+On-premise gli utenti possono inviare messaggi crittografati utilizzando OME se instradare la posta elettronica tramite Exchange Online. Per eseguire questa operazione, è necessario configurare la posta flusso per il flusso dal server di posta elettronica a Office 365. Dopo aver configurato la posta per trasmessi in Office 365, è possibile effettuare le regole di flusso di posta elettronica per OME utilizzando in questo articolo.
+
+Per ulteriori informazioni, vedere [configurare i connettori per il routing della posta tra Office 365 e server di posta elettronica](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). In particolare, completare i passaggi descritti in "parte 2: configurare la posta per trasmettere dal server di posta elettronica a Office 365".
+
 ## <a name="create-a-mail-flow-rule-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>Creare una regola di flusso di posta elettronica per crittografare i messaggi di posta elettronica con le nuove funzionalità OME
 
 È possibile definire regole del flusso di posta elettronica per l'attivazione della crittografia dei messaggi con le nuove funzionalità OME utilizzando la shell.
@@ -84,7 +89,7 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
     
 7. Dall'elenco **eseguire le operazioni seguenti** , rimuovere tutte le azioni che sono assegnate al **Modifica la sicurezza del messaggio** \> **Applica alla versione precedente di OME**.
     
-8. Fare clic su **Salva**.
+8. Scegliere **Save**.
     
 ## <a name="creating-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Creazione di regole per la crittografia dei messaggi di Office 365 senza le nuove funzionalità
 
