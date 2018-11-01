@@ -3,7 +3,7 @@ title: Definire regole del flusso di posta elettronica per crittografare i messa
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Amministratore globale di Office 365, è possibile creare le regole di flusso per attivare Office 365 messaggio crittografia dei posta. È possibile crittografare eventuali messaggi di posta elettronica in uscita e rimuovere la crittografia di messaggi interni o da risposte ai messaggi crittografati inviati dall'organizzazione.
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853091"
+ms.locfileid: "25890034"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365
 
@@ -29,7 +29,7 @@ Se la migrazione di recente da AD RMS per la protezione delle informazioni di Az
 Per informazioni sui componenti che costituiscono le regole del flusso di posta elettronica e come le regole di flusso di posta, vedere [(regole di trasporto) le regole di flusso di posta in Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Per ulteriori informazioni sul funzionano delle regole del flusso di posta elettronica con Azure Information Protection, vedere [configurazione di Exchange Online regole del flusso di posta elettronica per le etichette di protezione delle informazioni Azure](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Ambienti ibridi di Exchange: prima operazione
-On-premise gli utenti possono inviare messaggi crittografati utilizzando OME se instradare la posta elettronica tramite Exchange Online. Per eseguire questa operazione, è necessario configurare la posta flusso per il flusso dal server di posta elettronica a Office 365. Dopo aver configurato la posta per trasmessi in Office 365, è possibile effettuare le regole di flusso di posta elettronica per OME utilizzando in questo articolo.
+On-premise gli utenti possono inviare messaggi crittografati utilizzando OME se instradare la posta elettronica tramite Exchange Online. Per eseguire questa operazione, è necessario configurare la posta per trasmettere dal server di posta elettronica a Office 365. Una volta è stato configurato la posta passi attraverso Office 365, è quindi possibile creare regole del flusso di posta elettronica per OME utilizzando in questo articolo.
 
 Per ulteriori informazioni, vedere [configurare i connettori per il routing della posta tra Office 365 e server di posta elettronica](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). In particolare, completare i passaggi descritti in "parte 2: configurare la posta per trasmettere dal server di posta elettronica a Office 365".
 
