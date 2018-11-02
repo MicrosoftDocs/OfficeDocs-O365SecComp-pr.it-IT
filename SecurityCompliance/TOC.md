@@ -14,6 +14,7 @@
 ## [Scegliere tra MDM e Intune](choose-between-mdm-and-intune.md)
 # Proteggere le informazioni
 ## [Etichette di riservatezza](sensitivity-labels.md)
+## [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](encryption-sensitivity-labels.md)
 ## [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 ## [Guarda una panoramica completa sulla prevenzione della perdita dei dati](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurare Prevenzione della perdita dei dati
@@ -149,7 +150,7 @@
 ## [Usare la Ricerca contenuto](content-search.md)
 ### [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
 ### [Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](view-keyword-statistics-for-content-search.md)
-### [Esportare i risultati della Ricerca contenuto](export-search-results.md)
+### [Esportare i risultati della Ricerca contenuto ](export-search-results.md)
 ### [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
 ### [Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messagesadmin-help.md)
 ### [Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,6 +259,7 @@
 ### [Distribuire un sito del team di SharePoint Online isolato](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [Gestire un sito del team di SharePoint Online isolato](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [integrazione server SIEM](siem-server-integration.md)
 
 # Soluzioni per la conformità
 ## [Utilizzare Compliance Manager per soddisfare i requisiti normativi e la protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
