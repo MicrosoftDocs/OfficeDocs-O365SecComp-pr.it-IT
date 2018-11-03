@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/02/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -19,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454373"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935563"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
@@ -88,7 +89,7 @@ Le caratteristiche degli strumenti di analisi collegamenti attendibili sono atti
   
 - **Vengono impostati i criteri degli strumenti di analisi collegamenti sicuri** per la posta elettronica e per i documenti di Word, Excel, PowerPoint e Visio. Vedere [impostazione dei criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md).
 
-- **Applicazioni client di office 365 sono configurate per utilizzare l'autenticazione moderno**. (Vedere [moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)). 
+- **Applicazioni client di Office 365 sono configurate per utilizzare l'autenticazione moderno** (si tratta per la protezione degli strumenti di analisi provvisoria collegamenti nei documenti di Office). (Vedere [moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)). 
     
 - **Gli utenti hanno effettuato l'accesso a Office 365** utilizzando il proprio account di lavoro o della scuola. Vedere [accesso a Office o Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).
     
@@ -133,7 +134,7 @@ Stiamo continuando ad aggiungere nuove caratteristiche degli strumenti di analis
   
 [Allegati degli strumenti di analisi sicuro in Office 365](atp-safe-attachments.md)
   
-[Funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
+[Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   
 [Visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md)
   

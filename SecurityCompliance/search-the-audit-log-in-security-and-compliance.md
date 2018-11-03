@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435123"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935593"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
 
@@ -57,7 +57,7 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 - Attività di amministratore e utente Stream Microsoft
     
    
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Office 365 Registro di controllo.
   
@@ -78,7 +78,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
      - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Ciò significa che è possibile eseguire ricerche nel Registro di controllo per le attività eseguite nell'ultimo anno. Conservazione dei record di verifica per un anno è disponibile anche per gli utenti che sono assegnati a una licenza E3/Exchange Online piano 1 e dispongono di una licenza di componente aggiuntivo di Office 365 avanzate conformità.
 
         > [!NOTE]
-        > Il periodo di conservazione di un anno per i record di controllo saranno disponibili non appena come parte di Office 365 Preview programmare e saranno disponibili solo per le organizzazioni iscritti al programma di anteprima. Durante il periodo di conservazione più lungo di record di verifica diventano disponibile in anteprima (e versioni successive per garantire la disponibilità generale), verrà mantenuto solo nuovi record audit (per le attività eseguite dopo il rilascio del periodo di conservazione più lungo) per un anno.
+        > Il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o E3 le organizzazioni che dispongono di licenze di componente aggiuntivo di conformità avanzato) è attualmente disponibile solo nell'ambito di un programma di anteprima privata. Per registrare questo programma preview, file di una richiesta con il [Supporto tecnico Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e includono quanto segue la descrizione del quale si bisogno di informazioni: "A lungo termine Office 365 audit log privata preview".
 
 - Se si desidera disattivare la ricerca dei registri di controllo in Office 365 per l'organizzazione, è possibile eseguire il seguente comando di PowerShell remoto connesso all'organizzazione Exchange Online:
     
@@ -100,7 +100,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     
 - Potrebbe richiedere fino a 30 minuti o up a 24 ore dopo l'evento si verifica per la voce del Registro di controllo corrispondente da visualizzare nei risultati della ricerca. Nella tabella seguente mostra il tempo che necessario per i diversi servizi in Office 365.
     
-|**Servizio Office 365**|**30 minuti**|**24 ore**|
+|**Servizio Office 365**|**30 minutes**|**24 ore**|
 |:-----|:-----|:-----|
 |Protezione avanzata rischio e Business Intelligence di rischio  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -142,12 +142,12 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
   
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: Eseguire una ricerca dei registri di controllo
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Accedere a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Utilizzare una sessione di esplorazione privata (non regolare sessione) per accedere a Office 365 Security &amp; Allinea al centro conformità perché questo modo si eviteranno le credenziali che è stato eseguito l'accesso con è vietato. Per aprire una sessione di esplorazione InPrivate in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (noti come una finestra incognito), premere CTRL + MAIUSC + N. 
   
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro della sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini**e quindi fare clic su **ricerca dei registri di controllo**.
     
@@ -509,8 +509,8 @@ Nella tabella seguente sono elencate le attività di amministrazione utente che 
 |Utente aggiunto  <br/> |Aggiungi utente  <br/> |È stato creato un account utente di Office 365.  <br/> |
 |Licenze utente modificato  <br/> |Licenze utente di modifica  <br/> |La licenza assegnata a un utente le novità. Per verificare le modifiche sono state le licenze, vedere l'attività **dell'utente è stato aggiornato** corrispondente.<br/> |
 |Password utente modificato  <br/> |Cambia password utente  <br/> |Amministratore modifica la password per un utente la password.  <br/> |
-|Utente eliminato  <br/> |Eliminare l'utente  <br/> |È stato eliminato un account utente di Office 365.  <br/> |
-|Reimpostare la password utente  <br/> |Reimpostare la password utente  <br/> |Amministratore di reimpostare la password per un utente.  <br/> |
+|Utenti eliminati  <br/> |Eliminare l'utente  <br/> |È stato eliminato un account utente di Office 365.  <br/> |
+|Reimpostare la password dell'utente  <br/> |Reimpostare la password dell'utente  <br/> |Amministratore di reimpostare la password per un utente.  <br/> |
 |Impostare proprietà che consente all'utente di cambiare la password  <br/> |Insieme force Cambia utente password  <br/> |Amministratore di impostarla la proprietà che impone all'utente di modificare la password al successivo accesso utente a Office 365.  <br/> |
 |Impostare le proprietà di licenza  <br/> |Impostare le proprietà di licenza  <br/> |Amministratore consente di modificare le proprietà di una licenza assegnata a un utente.  <br/> |
 |Utente aggiornata  <br/> |Utente di aggiornamento  <br/> |Amministratore modifica le proprietà di uno o più di un account utente. Per un elenco di proprietà dell'utente che possono essere aggiornate, vedere la sezione "Aggiornamento degli attributi utente" in [Eventi di Azure Active Directory di controllo Report](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
@@ -724,7 +724,7 @@ Come indicato in precedenza, il periodo di conservazione di record di verifica d
 - **Office 365 E5** - controllo conservazione dei record di 365 giorni (un anno). Conservazione dei record di verifica per un anno è disponibile anche per le organizzazioni che dispongono di una sottoscrizione E3 e una sottoscrizione di componente aggiuntivo di Office 365 avanzate conformità.
 
      > [!NOTE]
-     > Il periodo di conservazione di un anno per il controllo record non appena saranno disponibili per le organizzazioni che vengono iscritti al programma di Office 365 Preview.
+     > Come precedentemente illustrato, il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o E3 le organizzazioni che dispongono di licenze di componente aggiuntivo di conformità avanzato) è attualmente disponibile solo nell'ambito di un programma di anteprima privata. Per registrare questo programma preview, file di una richiesta con il [Supporto tecnico Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e includono quanto segue la descrizione del quale si bisogno di informazioni: "A lungo termine Office 365 audit log privata preview".
 
 Si noti inoltre che la durata del periodo di conservazione per i record di controllo è basata sulla gestione delle licenze per utente. Ad esempio, se un utente nell'organizzazione viene assegnato una licenza di Office 365 E3, i record di verifica per le attività eseguite dall'utente vengono conservati per 90 giorni. Se un altro utente viene assegnato una licenza di Office 365 E5, i record di controllo vengono conservati per un anno. 
 

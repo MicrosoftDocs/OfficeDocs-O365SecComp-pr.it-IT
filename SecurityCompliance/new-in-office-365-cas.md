@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Vedere What's new in sicurezza App Cloud di Office 365
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796872"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935573"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Novità di Office 365 Cloud App Security
 
@@ -27,11 +28,11 @@ In questo articolo è stato aggiornato frequentemente, come funzionalità vengon
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Versione di Office 365 Cloud App sicurezza 130
 
-*Versioni 5 settembre 2018*
+*Rilasciato il 5 settembre 2018*
 
 **Rilascio con [Microsoft Cloud App Security versione 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
 
-- **Nuova barra dei menu** Per offrire un'esperienza di amministrazione più coerenza tra prodotti Microsoft 365 e consentono di eseguire il pivot più facilmente tra le soluzioni di protezione di Microsoft, la barra dei menu portale Cloud App protezione è spostato e il lato sinistro dello schermo. Questa struttura coerente esperienza utile per orientare familiarità quando si passa da un portale di protezione di Microsoft a un altro.
+- **Nuova barra dei menu** Per offrire un'esperienza di amministrazione più coerenza tra prodotti Microsoft 365 e consentono di eseguire il pivot più facilmente tra le soluzioni di protezione di Microsoft, la barra dei menu portale Cloud App protezione è spostato e il lato sinistro dello schermo. Questa struttura coerente esperienza utile per orientare familiarità quando si passa da un portale di protezione di Microsoft a un altro.<br/>![Barra dei menu nella sicurezza App Cloud di Office](media/OCAS-MenuBar.png)<br/>
 
 - **Punteggio app OAuth impatto** È possibile inviare commenti e suggerimenti team la protezione applicazione Cloud per confermare se non esiste un'app OAuth individuata all'interno dell'organizzazione che sembra dannoso. Questa nuova funzionalità consente di far parte della community protezione e migliorare analisi e OAuth app rischio punteggio. Per ulteriori informazioni vedere [Manage app permissions](manage-app-permissions-in-ocas.md).
 
