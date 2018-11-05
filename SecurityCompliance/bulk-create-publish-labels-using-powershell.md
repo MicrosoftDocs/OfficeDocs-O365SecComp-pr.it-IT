@@ -1,5 +1,5 @@
 ---
-title: Creare e pubblicare in blocco le etichette tramite PowerShell
+title: Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: 1/17/2018
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: In Office 365, è possibile utilizzare le etichette per implementare una pianificazione di conservazione per l'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
-ms.openlocfilehash: 43e521d937a9589b522c608aca2e75fcfc2bf569
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530299"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899667"
 ---
-# <a name="bulk-create-and-publish-labels-by-using-powershell"></a>Creare e pubblicare in blocco le etichette tramite PowerShell
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 
 In Office 365, è possibile usare le etichette per implementare una pianificazione di conservazione dell'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità &amp;; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico.
   

@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro conformità e sicurezza di Office 365.
-ms.openlocfilehash: 46e3e0cc502eb6135e18c30df3d96ec2e083b54c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866052"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895275"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Creare un tipo di informazioni riservate personalizzato in PowerShell per Centro sicurezza e conformità di Office 365.
+# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365
 
-Prevenzione perdita dati (DLP) in Office 365 include molti [tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md) già pronte per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
+Prevenzione della perdita dei dati (DLP) in Office 365 include molti [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
   
-Tuttavia, se è necessario identificare e proteggere un tipo diverso di informazioni riservate (ad esempio il numero ID di un dipendente che usa un formato specifico dell'organizzazione), è possibile creare un tipo di informazioni riservate personalizzate. Un tipo di informazioni riservate viene definito in un file XML denominato _pacchetto di regole_.
+Tuttavia, se è necessario identificare e proteggere un tipo diverso di informazioni sensibili (ad esempio il numero ID di un dipendente che usa un formato specifico dell'organizzazione), è possibile creare un tipo di informazioni sensibili personalizzato. Un tipo di informazioni sensibili viene definito in un file XML denominato _pacchetto di regole_.
   
 Questo argomento mostra come creare un file XML che definisca il proprio tipo specifico di informazioni riservate. È necessario sapere come creare un'espressione regolare. Ad esempio, questo argomento crea un tipo di informazioni riservate personalizzate che identifica un ID dipendente. È possibile utilizzare questo XML di esempio come punto di partenza per il proprio file XML.
   
@@ -38,7 +38,7 @@ Dopo aver creato un file XML ben formato, è possibile caricarlo in Office 365 c
 
 A causa degli scostamenti negli ambienti dei clienti e dei requisiti di corrispondenza del contenuto, il supporto tecnico Microsoft non può dare assistenza nella fornitura di definizioni di corrispondenza del contenuto personalizzate, ad esempio definizione di classificazioni personalizzate o modelli di espressioni regolari (noti anche come RegEx). Per lo sviluppo personalizzato di corrispondenza del contenuto, test e debug, i clienti di Office 365 dovranno fare affidamento su risorse IT interne o utilizzare una risorsa di consulenza esterna come Microsoft Consulting Services (MCS). I tecnici del supporto possono fornire supporto limitato per la funzionalità, ma non possono garantire che qualsiasi sviluppo personalizzato di corrispondenza del contenuto soddisfi i requisiti o gli obblighi del cliente. Come esempio del tipo di supporto che può essere fornito, è possibile fornire esempi di modelli di espressioni regolari a scopo di test. In alternativa, il supporto può aiutare nella risoluzione dei problemi di un pattern RegEx esistente che non si attiva come previsto con un singolo esempio di contenuto specifico.
 
- Per ulteriori informazioni sul motore RegEx .NET utilizzato per l'elaborazione del testo, consultare la documentazione su [Espressioni regolari .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
+ Per ulteriori informazioni sul motore Boost.RegEx (in precedenza noto come RegEx++) utilizzato per l'elaborazione del testo, vedere [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
 ## <a name="sample-xml-of-a-rule-package"></a>Esempio di XML di un pacchetto di regole
 
