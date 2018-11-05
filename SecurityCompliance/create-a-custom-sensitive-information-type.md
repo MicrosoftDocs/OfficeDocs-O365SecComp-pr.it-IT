@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: cd7041ee9c20038fb7cb0c337f31d7cef7f7192d
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857294"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895285"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creare un tipo di informazioni sensibili personalizzato
 
-Prevenzione perdita dati (DLP) in Office 365 include molti [tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md) già pronte per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
+Prevenzione della perdita dei dati (DLP) in Office 365 include molti [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
 
 Tuttavia, se è necessario identificare e proteggere un tipo diverso di informazioni sensibili (ad esempio gli ID dipendente o i numeri di progetto che usano un formato specifico dell'organizzazione), è possibile creare un tipo di informazioni sensibili personalizzato.
 
@@ -54,20 +54,18 @@ Le differenze principali vengono descritte nella tabella seguente:
 |Tipi di informazioni sensibili personalizzati nell'interfaccia utente|Tipi di informazioni sensibili personalizzati in PowerShell|
 |:-----|:-----|
 |Nome e descrizione sono in una lingua.|Supporta più lingue per nome e descrizione.|
-|Supporta un criterio (il criterio principale).|Supporta più criteri oltre al criterio principale.|
+|Supporta un criterio.|Supporta più criteri.|
 |Le evidenze di supporto possono essere: <br/>• Espressioni regolari <br/>• Parole chiave <br/>• Parole chiave personalizzate|Le evidenze di supporto possono essere: <br/>• Espressioni regolari <br/>• Parole chiave <br/>• Parole chiave personalizzate <br/>• [Funzioni di prevenzione della perdita dei dati incorporate](what-the-dlp-functions-look-for.md)|
-|Il livello di probabilità è configurabile per il tipo di informazioni sensibili.|Il livello di probabilità è configurabile per il tipo di informazioni sensibili e per ogni singolo criterio all'interno.|
+|I tipi di informazioni sensibili personalizzati vengono aggiunti al pacchetto di regole denominato Microsoft.SCCManaged.CustomRulePack.|È possibile creare fino a 10 pacchetti di regole che contengono tipi di informazioni sensibili personalizzati.|
 |La corrispondenza al criterio richiede il rilevamento del criterio principale e di tutte le evidenze di supporto (viene usato l'operatore AND implicito).|La corrispondenza al criterio richiede il rilevamento del criterio principale e di una quantità configurabile di evidenze di supporto (vengono usati gli operatori AND e OR impliciti).|
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
 
 - Per aprire il Centro sicurezza e conformità, vedere [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md).
 
-- I tipi di informazioni sensibili personalizzati richiedono una certa familiarità con le espressioni regolari (RegEx). Per ulteriori informazioni sul motore RegEx .NET utilizzato per l'elaborazione del testo, vedere [Espressioni regolari .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
+- I tipi di informazioni sensibili personalizzati richiedono una certa familiarità con le espressioni regolari (RegEx). Per ulteriori informazioni sul motore Boost.RegEx (in precedenza noto come RegEx++) utilizzato per l'elaborazione del testo, vedere [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
   Il Supporto tecnico Microsoft non può dare assistenza nella fornitura di definizioni di corrispondenza del contenuto personalizzate (definizione di classificazioni personalizzate o criteri di espressioni regolari). I tecnici del supporto possono fornire supporto limitato per la funzionalità, ma non possono garantire che qualsiasi sviluppo personalizzato di corrispondenza del contenuto soddisfi i requisiti o gli obblighi del cliente. Come esempio del tipo di supporto che può essere fornito, è possibile fornire esempi di modelli di espressioni regolari a scopo di test. In alternativa, il supporto può aiutare nella risoluzione dei problemi di un criterio RegEx esistente che non si attiva come previsto.
-
-- Per ulteriori informazioni sul motore RegEx .NET utilizzato per l'elaborazione del testo, vedere [Espressioni regolari in .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
 
 - DLP usa il crawler di ricerca per identificare e classificare le informazioni sensibili nei siti di SharePoint Online e OneDrive for Business. Per identificare il nuovo tipo di informazioni sensibili personalizzato nel contenuto esistente, è necessario che venga effettuata una nuova ricerca per indicizzazione. Il contenuto viene sottoposto nuovamente alla ricerca in base a una programmazione, ma è possibile effettuare manualmente la ricerca per indicizzazione per una raccolta siti, un elenco o una raccolta. Per ulteriori informazioni, vedere [Richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione e la reindicizzazione di un sito, una raccolta o un elenco](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
