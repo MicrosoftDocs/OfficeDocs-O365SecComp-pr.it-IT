@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9a8e7bdbd176c5852c43b35c9c56cd8f0aae58fb
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: af40426f626920ccd2c247a671a57958044d0388
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002664"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999974"
 ---
 # <a name="office-365-security-and-compliance"></a>Conformità e sicurezza di office 365
 
@@ -35,7 +35,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                     </div>
                     <div class="cardText">
                         <h3>Guida introduttiva - primi 30 giorni</h3>
-                <p>Queste attività di conformità e la protezione di base in modo rapido e avere un impatto minimo per gli utenti: <br> - <a href="https://securescore.office.com" target="_blank">Controllare punteggio protetto</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Attivare la registrazione di controllo</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurare la sicurezza tenant</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connettere Cloud App sicurezza</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Abilitare la protezione con identità Azure Active Directory</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteggere i file e i siti di SharePoint</a> <br> - <a href="configure-supervision-policies.md">Abilitare i criteri di governance di dati</a> </p>
+                <p>Queste attività di conformità e la protezione di base in modo rapido e avere un impatto minimo per gli utenti: <br> - <a href="office-365-secure-score.md" target="_blank">Controllare punteggio protetto</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Attivare la registrazione di controllo</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurare la sicurezza tenant</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connettere Cloud App sicurezza</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Abilitare la protezione con identità Azure Active Directory</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteggere i file e i siti di SharePoint</a> <br> - <a href="configure-supervision-policies.md">Abilitare i criteri di governance di dati</a> </p>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Oltre a 90 giorni</h3>
+                        <h3>Dopo 90 giorni</h3>
                         <p>Queste sono le misure di sicurezza importanti che generano sul lavoro precedente:<br>
                         - <a href="https://securescore.office.com" target="_blank">Esaminare il punteggio protetto</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Protezione dell'accesso privilegiato implementare</a><br>
