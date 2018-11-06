@@ -3,7 +3,7 @@ title: 'Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malwa
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,111 +15,73 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Eliminazione automatica zero ore (ZAP) è una funzionalità di protezione posta elettronica in grado di rilevare i messaggi con la posta indesiderata o malware che sono già stati consegnati alla posta in arrivo degli utenti e quindi viene eseguito il rendering del contenuto dannoso dannosa. Come ZAP esegue questa operazione dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857244"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999977"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
+
+## <a name="overview"></a>Panoramica
 
 Eliminazione automatica zero ore (ZAP) è una funzionalità di protezione posta elettronica in grado di rilevare i messaggi con la posta indesiderata o malware che sono già stati consegnati alla posta in arrivo degli utenti e quindi viene eseguito il rendering del contenuto dannoso dannosa. Come ZAP esegue questa operazione dipende dal tipo di contenuto dannoso rilevato.
   
 ZAP è disponibile con l'impostazione predefinita, Exchange Online Protection incluso in qualsiasi sottoscrizione a Office 365 che contiene le cassette postali di Exchange Online.
+
+ZAP è attivata per impostazione predefinita, ma devono essere soddisfatte le condizioni seguenti:
+  
+- **Azione posta indesiderata** è impostata su **spostare il messaggio nella cartella posta indesiderata**. <br/>È inoltre possibile creare un nuovo criterio di filtro posta indesiderata che si applica solo a un insieme di utenti se non si desidera che tutte le cassette postali per essere analizzata da ZAP.
+
+- Gli utenti sono mantenuti valori predefiniti delle impostazioni della posta indesiderata e la protezione della posta elettronica indesiderata non sono disattivata. (Per informazioni dettagliate sulle opzioni utente in Outlook, vedere [modificare il livello di protezione di filtro per la posta indesiderata](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) ). 
   
 ## <a name="how-does-zap-work"></a>Funzionamento ZAP
 
-Aggiornamenti di Office 365 firme malware e motore di protezione da posta indesiderate in tempo reale a intervalli giornalieri. Gli utenti possono comunque dannoso messaggi vengano recapitati posta in arrivo per una serie di motivi, tra cui quando il contenuto è stato weaponized alla volta dopo che è stato innanzitutto inviato agli utenti. ZAP indirizzi questo monitorando continuamente viene aggiornata per le firme di posta indesiderata e malware Office 365, e pertanto individuare e rimuovere già contenuti ai messaggi di posta in arrivo. Per la posta che è già stata identificata come posta indesiderata, ZAP Sposta i messaggi non letti nella cartella posta indesiderata dell'utente. Per appena rilevato malware, ZAP rimuove gli allegati dal messaggio di posta elettronica, indipendentemente dal fatto che la posta elettronica è stato letto o non. È invece per i messaggi che sono stati classificati in modo non corretto come dannose.
+Aggiornamenti di Office 365 firme malware e motore di protezione da posta indesiderate in tempo reale a intervalli giornalieri. Gli utenti possono comunque dannoso messaggi vengano recapitati posta in arrivo per una serie di motivi, ad esempio se il contenuto è weaponized dopo il recapito agli utenti. ZAP evitare questo problema monitorando continuamente aggiornamenti per le firme di posta indesiderata e malware Office 365. ZAP possono individuare e rimuovere contenuti ai messaggi che sono già nella posta in arrivo degli utenti. 
+- Per la posta identificata come posta indesiderata, ZAP Sposta i messaggi non letti nella cartella posta indesiderata degli utenti. 
+- Per appena rilevato malware, ZAP rimuove gli allegati di messaggi di posta elettronica, indipendentemente dal fatto che il messaggio di posta elettronica è stato letto. 
   
-L'azione ZAP è semplice per la cassetta postale utente potrà non riceve una notifica che di posta elettronica è stato spostato.
+L'azione ZAP è semplice per l'utente della cassetta postale. essi non ricevere una notifica se un messaggio di posta elettronica viene spostato.
   
 Consenti regole degli utenti finali, [regole del flusso di posta elettronica](https://go.microsoft.com/fwlink/p/?LinkId=722755)e gli elenchi o altri filtri hanno la precedenza su ZAP.
   
- **Contenuto dell'articolo**
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Per verificare o configurare un criterio di filtro posta indesiderata
   
-> [Impostare i criteri di filtro posta indesiderata](zero-hour-auto-purge.md#BK_SetSpam)
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365.
+2. In **gestione rischio**, scegliere la **protezione da posta indesiderata**.
+3. Esaminare le impostazioni standard. 
+4. Se si desidera personalizzare le impostazioni, fare clic sulla scheda **personalizzato** e attivare **le impostazioni personalizzate**. Modificare le impostazioni e se si desidera, sceglierne **+ Crea un criterio** per aggiungere un nuovo criterio. 
     
-> [Vedere se ZAP spostato il messaggio](zero-hour-auto-purge.md#BK_DidZAPMove)
-    
-> [Disabilitare ZAP](zero-hour-auto-purge.md#BK_Posh)
-    
-> [Domande frequenti](zero-hour-auto-purge.md#BK_FAQ)
-    
-## <a name="working-with-zap"></a>Utilizzo di ZAP
+## <a name="to-see-if-zap-moved-your-message"></a>Per vedere se ZAP spostato il messaggio
 
-ZAP è attivata per impostazione predefinita, ma è necessario assicurarsi che siano soddisfatti due condizioni:
+Se si desidera visualizzare se ZAP spostato il messaggio, è possibile utilizzare sia la [relazione sullo stato di protezione di rischio](view-email-security-reports.md#threat-protection-status-report-new) (o [Esplora rischio](use-explorer-in-security-and-compliance.md)).
+    
+## <a name="to-disable-zap"></a>Per disabilitare ZAP
   
-- Criterio di filtro posta indesiderata è impostata su [spostare il messaggio nella cartella posta indesiderata](zero-hour-auto-purge.md#BK_SetSpam).
+Se si desidera disabilitare ZAP per il tenant di Office 365 o un insieme di utenti, utilizzare il parametro **ZapEnabled** del [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet EOP.
     
-    È inoltre possibile creare un nuovo criterio di filtro posta indesiderata che si applica solo a un insieme di utenti se non si desidera che tutte le cassette postali per essere analizzata da ZAP.
+Nell'esempio seguente, ZAP è disabilitata per un criterio di filtro dei contenuti denominato "Test".
     
-- L'utente [Opzioni \> posta indesiderata](https://support.office.com/article/068FA430-F8D7-4518-A8DA-8BC74958F05F).
-    
-Se si desidera [visualizzare se ZAP spostato il messaggio](zero-hour-auto-purge.md#BK_DidZAPMove), è possibile utilizzare lo strumento di traccia messaggio Exchange Online.
-  
-Gli amministratori inoltre possono [disabilitare ZAP](zero-hour-auto-purge.md#BK_Posh) tramite PowerShell. 
-  
- **Per impostare il criterio di filtro posta indesiderata**
-  
-1. Accedere al [percorso di accesso a Office 365 per aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) e fare clic su **protezione** \> **Filtro posta indesiderata**. 
-    
-    ![In EAC selezionare protezione e quindi Filtro posta indesiderata](media/0463c879-63fa-4a6c-9b03-e980d5ef3954.PNG)
-  
-2. Scegliere il criterio di filtro che si desidera modificare, oppure scegliere **Aggiungi**![sull'icona Aggiungi](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) per crearne uno nuovo. 
-    
-    Nella schermata precedente, il criterio è denominato "Default", ma se si creano spam ulteriori criteri di filtro è possibile fornire loro un nome diverso. È anche possibile applicare il criterio a un set limitato di utenti.
-    
-3. Nella finestra criteri, scegliere **azioni per la posta indesiderata e blocco**e verificare che **la posta indesiderata** è impostata su **Sposta il messaggio nella cartella posta indesiderata**. 
-    
-    Se si sceglie **Salva** a questo punto, il criterio viene applicato al tenant di Office 365. 
-    
-    ![Impostare la posta indesiderata e azioni per sposta il messaggio nella cartella posta indesiderata in blocco](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
-  
-4. Se è stato creato un nuovo criterio e si desidera applicare il criterio a solo un set di utenti, scorrimento nella finestra del filtro dei criteri e i controlli di menu nella sezione **Applicato a** scegliere i **destinatari**, **dominio**o **appartenenze a gruppi** è Se si desidera applicare il criterio. È inoltre possibile impostare eccezioni e le altre. 
-    
-    ![Nella sezione applicata per scegliere i destinatari](media/19ca10db-c0f4-432c-b3de-ad4101a23de6.PNG)
-  
-    Scegliere **Salva** per applicare il criterio agli utenti selezionati. 
-    
- **Per vedere se ZAP spostato il messaggio**
-  
-- È possibile utilizzare per determinare se il messaggio è stato spostato dal ZAP [individuare e risolvere i problemi di recapito di posta elettronica come un amministratore aziendale di Office 365](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) : 
-    
-    Cercare il testo "ora Zero automatico di eliminazione (ZAP)" le informazioni di traccia per identificare un messaggio in cui è stato spostato dal ZAP.
-    
- **Per disabilitare ZAP**
-  
-- Se si desidera disabilitare ZAP per il tenant di Office 365 o un insieme di utenti, utilizzare il parametro **ZapEnabled** del [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet EOP.
-    
-    Nell'esempio seguente, ZAP è disabilitata per un criterio di filtro dei contenuti denominato "Test".
-    
-||
-|:-----|
-|
 ```
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-|
-   
 ## <a name="faq"></a>Domande frequenti
-<a name="BK_FAQ"> </a>
 
- **Cosa succede se un messaggio viene spostato nella cartella posta indesiderata?**
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>Cosa succede se un messaggio viene spostato nella cartella posta indesiderata?
   
 È consigliabile eseguire il normale processo di creazione di rapporti per falsi positivi. È l'unico motivo il messaggio verrà spostato dalla posta in arrivo nella cartella posta indesiderata in quanto il servizio ha rilevato che il messaggio era posta indesiderata o dannosi.
   
- **Se è possibile utilizzare alla quarantena di Office 365 anziché nella cartella posta indesiderata?**
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>Se è possibile utilizzare alla quarantena di Office 365 anziché nella cartella posta indesiderata?
   
 ZAP non vengono spostati i messaggi in quarantena dalla posta in arrivo in questa fase.
   
- **Se dispone di una regola di flusso di posta personalizzato (bloccare o consentire regola)?**
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Se dispone di una regola di flusso di posta personalizzato (bloccare o consentire regola)?
   
 Le regole create da admins (regole del flusso di posta elettronica) o Consenti e blocca regole hanno la precedenza. Tali messaggi vengono esclusi dai criteri di funzionalità.
   
 ## <a name="related-topics"></a>Argomenti correlati
-<a name="BK_FAQ"> </a>
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
   

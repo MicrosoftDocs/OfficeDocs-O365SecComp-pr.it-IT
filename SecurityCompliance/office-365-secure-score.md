@@ -1,9 +1,9 @@
 ---
-title: Introduzione a Office 365 Secure Score
+title: Secure Score di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 11/05/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,60 +12,69 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
-description: "Come mai modalità di protezione dell'organizzazione Office 365 in realtà è? Tempo necessario per arrestare chiedendo: il punteggio sicura di Office 365 è pronta per. Punteggio sicura analizza la protezione dell'organizzazione Office 365 in base alle normali attività e le impostazioni di sicurezza e assegna un punteggio. Considerata come un punteggio di credito per la sicurezza."
-ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+description: Come mai il livello di protezione dell'organizzazione effettivamente presente in Office 365? Punteggio sicura è qui Guida in linea. Punteggio sicura analizza la protezione dell'organizzazione in base alle normali attività e le impostazioni di sicurezza in Office 365 e assegna un punteggio.
+ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450751"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999990"
 ---
-# <a name="introducing-the-office-365-secure-score"></a>Introduzione a Office 365 Secure Score
+# <a name="office-365-secure-score"></a>Secure Score di Office 365
 
-Come mai modalità di protezione dell'organizzazione Office 365 in realtà è? Tempo necessario per arrestare chiedendo: il punteggio sicura di Office 365 è pronta per. Punteggio sicura analizza la protezione dell'organizzazione Office 365 in base alle normali attività e le impostazioni di sicurezza e assegna un punteggio. Considerata come un punteggio di credito per la sicurezza.
+**Riepilogo** Come mai il livello di protezione dell'organizzazione effettivamente presente in Office 365? Punteggio sicura è qui Guida in linea. Punteggio sicura analizza la protezione dell'organizzazione in base alle normali attività e le impostazioni di sicurezza in Office 365 e assegna un punteggio. In questo articolo per una panoramica di punteggio sicura e su come è possibile utilizzarlo.
   
-## <a name="how-do-i-get-to-secure-score"></a>Come ottenere per proteggere punteggio?
+## <a name="how-to-get-to-secure-score"></a>Come ottenere sicura punteggio
 
-Chiunque disponga delle autorizzazioni di amministratore (amministratore globale o un ruolo di amministratore personalizzate) per una sottoscrizione a Office 365 Business Premium o Enterprise può accedere punteggio sicura al [https://securescore.office.com](https://securescore.office.com). Gli utenti non assegnati a un ruolo di amministratore non saranno in grado di accedere punteggio sicura. Tuttavia, gli amministratori possono utilizzare lo strumento per condividere i relativi risultati con altre persone nell'organizzazione.
-  
-## <a name="how-does-it-work"></a>Funzionamento.
+Se l'organizzazione dispone di una sottoscrizione che include [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)o Business Premium di Office 365 e si dispone delle autorizzazioni necessarie, è possibile visualizzare punteggio protette della propria organizzazione, visitare il sito [https://securescore.office.com](https://securescore.office.com). 
 
-Proteggere figure punteggio fuori i servizi di Office 365 utilizza (ad esempio, OneDrive, SharePoint ed Exchange), quindi legge le impostazioni e le attività e li confronta con una linea di base stabilita da Microsoft. Verrà visualizzato un punteggio basato sulla modalità allineato con le procedure consigliate di sicurezza.
+In alternativa, è possibile visitare il centro di conformità e sicurezza ([https://protection.office.com](https://protection.office.com)), dove troverai un widget punteggio sicuro che offre il punteggio corrente.
+
+![Secure widget punteggio](media/SecureScoreWidget-o365.png)
+
+Widget include un collegamento a Microsoft sicura punteggio, che consente di passare al dashboard punteggio sicura per Office 365.
+
+![Secure punteggio dashboard](media/SecureScore-WelcomeScreen.png)
+
+> [!NOTE]
+> È necessario essere un amministratore di Office 365, ad esempio un amministratore globale o di sicurezza, per accedere a punteggio sicura.
   
-![Riepilogo punteggio protetta che viene visualizzata nella Home page dello strumento di Office 365 sicura punteggio](media/151de499-259d-45e3-9706-7dae0bfb9f9c.png)
+## <a name="how-it-works"></a>Funzionamento
+
+Proteggere figure punteggio fuori quali servizi Office 365 in uso (ad esempio, OneDrive, SharePoint ed Exchange) quindi legge le impostazioni e le attività e li confronta con una linea di base stabilita da Microsoft. Verrà visualizzato un punteggio basato sulla modalità allineato con le procedure consigliate di sicurezza.
   
-Se si desidera migliorare il punteggio, controllare la coda di azione per verificare cosa si può fare che consentono di migliorare la protezione e ridurre i rischi.
+Verranno inoltre presentati suggerimenti sulla procedura da eseguire per migliorare il punteggio dell'organizzazione. 
   
-![Coda di azioni nello strumento di Office 365 sicura punteggio](media/23757303-274c-46c7-a7ee-b4e6f2f9eca0.png)
+![Coda di azioni nello strumento di Office 365 sicura punteggio](media/SecureScore-ActionsToTake.png)
   
-Espandere un'azione per conoscere le minacce saranno utili protezione da e come si otterranno il lavoro.
+Espandere un'azione per conoscere i passaggi da eseguire, le minacce che saranno utili protezione da e il numero di punti punteggio aumenterà dopo che è seguire i suggerimenti.
   
-![Azione espansa nello strumento di Office 365 sicura punteggio](media/515d45f1-c554-455f-b251-ab62f712bca3.png)
+![Azione espansa nello strumento di Office 365 sicura punteggio](media/SecureScore-DetailedActionToTake.png)
   
-Per visualizzare l'impatto delle proprie azioni in sicurezza della propria organizzazione, passare alla pagina **Punteggio Analyzer** e rivedere la cronologia delle. 
+Per visualizzare l'impatto delle proprie azioni in sicurezza della propria organizzazione, selezionare la scheda **Punteggio Analyzer** e rivedere la cronologia delle. 
   
-![Scheda Analyzer punteggio dello strumento di Office 365 sicura punteggio](media/f38f4f0c-fdf7-4004-8eb3-53e5064cd4f7.png)
+![Scheda Analyzer punteggio dello strumento di Office 365 sicura punteggio](media/SecureScore-ScoreAnalyzer-7days.png)
   
-Fare clic su un punto di dati per visualizzare una suddivisione del punteggio per quel giorno. È possibile scorrere verso il basso per vedere i controlli sono stati abilitati e quante rimanda del costo realizzato quel giorno per ogni controllo.
+Sotto il grafico, vedrai lsit di punteggi e azioni in base alla categoria.
   
-![Grafico della scheda Analyzer punteggio con un punto di dati selezionato](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
+![Grafico della scheda Analyzer punteggio con un punto di dati selezionato](media/SecureScore-Analyzer-breakdownbelowchart.png)
   
-## <a name="how-will-it-help-me"></a>Come verranno i vantaggi?
+## <a name="how-secure-score-helps"></a>Come aiuta a proteggere punteggio
 
 Utilizzo di Secure punteggio consente di aumentare la sicurezza dell'organizzazione che permettono di utilizzare le funzionalità di protezione incorporata in Office 365 (molte delle quali già acquistato, ma potrebbero non essere consapevoli di). Informazioni su queste funzionalità come utilizzare lo strumento di formazione contenute informazioni utili per offrire informazione ricordare che verrà affidata la procedura appropriata per proteggere l'organizzazione da minacce.
   
-Ma semplicemente provate per tale. Clienti che utilizzano sicura punteggio hanno registrato il punteggio aumentare 5 volte coinvolge i clienti che non sono utilizzarlo. Il l'aumento del punteggio corrisponde con le funzionalità di sicurezza in uso nelle loro organizzazioni.
+Ma semplicemente provate per tale. Clienti che utilizzano sicura punteggio hanno registrato il punteggio di aumentare i clienti che non utilizzano lo stato coinvolge cinque volte. Il l'aumento della loro punteggio corrisponde con le funzionalità di sicurezza in uso nelle loro organizzazioni.
   
 Vedere il [post di blog](https://go.microsoft.com/fwlink/?linkid=836898) per ulteriori informazioni. 
   
 > [!NOTE]
-> Il punteggio sicura non express una misura assoluta della probabilità che verranno ottenere superata. Consente di rappresentare l'estensione a cui si hanno adottato controlli che consentono di compensare il rischio che viene superata. Nessun servizio può garantire che non essere superata e punteggio sicura non deve essere interpretato come una garanzia in alcun modo. 
+> Punteggio sicura non express una misura assoluta della probabilità che verranno ottenere superata. Consente di rappresentare l'estensione a cui si hanno adottato controlli che consentono di compensare il rischio che viene superata. Nessun servizio può garantire che non essere superata e sicura punteggio non deve essere interpretato come una garanzia in alcun modo. 
   
 ## <a name="faqs"></a>Domande frequenti
 
 ### <a name="who-can-use-secure-score"></a>Chi può utilizzare Secure punteggio?
 
-Chiunque disponga delle autorizzazioni di amministratore (amministratore globale o un ruolo di amministratore personalizzate) per una sottoscrizione a Office 365 Business Premium o Enterprise può accedere punteggio sicura al [https://securescore.office.com](https://securescore.office.com). Gli utenti non assegnati a un ruolo di amministratore non saranno in grado di accedere punteggio sicura. Tuttavia, gli amministratori possono utilizzare lo strumento per condividere i relativi risultati con altre persone nell'organizzazione. Che stiamo cercando inclusi altri ruoli senza privilegi di amministratore nell'elenco delle autorizzazioni in futuro. Se sono presenti ruoli specifici essere contattati da prendere in considerazione, inviaci tramite la registrazione nel [Office alla protezione e Privacy &amp; community conformità](https://go.microsoft.com/fwlink/?linkid=836898).
+Chiunque disponga delle autorizzazioni di amministratore (amministratore globale o un ruolo di amministratore personalizzate) per una sottoscrizione a Office 365 Enterprise, Microsoft 365 Business o Business Premium di Office 365 può accedere sicura punteggio al [https://securescore.office.com](https://securescore.office.com). Gli utenti non assegnati a un ruolo di amministratore non saranno in grado di accedere punteggio sicura. Tuttavia, gli amministratori possono utilizzare lo strumento per condividere i relativi risultati con altre persone nell'organizzazione. Che stiamo cercando inclusi altri ruoli senza privilegi di amministratore nell'elenco delle autorizzazioni in futuro. Se sono presenti ruoli specifici essere contattati da prendere in considerazione, inviaci tramite la registrazione nel [Office alla protezione e Privacy &amp; community conformità](https://go.microsoft.com/fwlink/?linkid=836898).
   
 ### <a name="what-does-not-scored-mean"></a>Cosa determina [non catalogato] Media?
 
@@ -85,11 +94,11 @@ Nella pagina **Analizzatore di punteggio** , fare clic su un punto di dati per u
   
 ### <a name="does-the-secure-score-measure-my-risk-of-getting-breached"></a>Punteggio sicura valutare i rischi di attacchi di recupero superata?
 
-In breve, no. Il punteggio sicura non express una misura assoluta della probabilità che verranno ottenere superata. Consente di rappresentare l'estensione a cui si hanno adottato caratteristiche che consentono di compensare i rischi di viene superata. Nessun servizio può garantire che non essere superata e punteggio sicura non deve essere interpretato come una garanzia in alcun modo.
+In breve, no. Punteggio sicura non express una misura assoluta della probabilità che verranno ottenere superata. Consente di rappresentare l'estensione a cui si hanno adottato caratteristiche che consentono di compensare i rischi di viene superata. Nessun servizio può garantire che non essere superata e punteggio sicura non deve essere interpretato come una garanzia in alcun modo.
   
 ### <a name="how-should-i-interpret-my-score"></a>Come è opportuno interpretare punteggio?
 
-È possibile punti per la configurazione consigliata caratteristiche di protezione o eseguire attività correlate alla sicurezza (ad esempio, la lettura reports). Alcune azioni vengono segnati per il completamento parziale, ad esempio abilitare l'autenticazione a più fattori (MFA) per gli utenti. Il punteggio sicura è direttamente rappresentante dei servizi di protezione di Microsoft che utilizzare. Tenere presente che protezione sempre necessario equilibrare con semplicità di utilizzo. Tutti i controlli di sicurezza dispongono di un componente di impatto utente. I controlli con un impatto bassa utente non devono avere su un impatto minimo sulle operazioni quotidiane degli utenti.
+È possibile punti per la configurazione consigliata funzionalità di sicurezza o l'esecuzione di attività correlate alla sicurezza (ad esempio la visualizzazione dei report). Alcune azioni vengono segnati per il completamento parziale, ad esempio abilitare l'autenticazione a più fattori (MFA) per gli utenti. Il punteggio sicura è direttamente rappresentante dei servizi di protezione di Microsoft che utilizzare. Tenere presente che protezione sempre necessario equilibrare con semplicità di utilizzo. Tutti i controlli di sicurezza dispongono di un componente di impatto utente. I controlli con un impatto bassa utente non devono avere su un impatto minimo sulle operazioni quotidiane degli utenti.
   
 Per visualizzare la cronologia di punteggio, passare alla pagina **Punteggio Analyzer** . Scegliere una data specifica per visualizzare i controlli sono stati abilitati per che giorno e quali punti è ottenuti per ciascuno di essi. 
   
@@ -103,10 +112,12 @@ Se si dispone di eventuali problemi, inviaci i tuoi suggerimenti per la registra
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Organizzazione ha solo alcune caratteristiche di protezione. Questa operazione Modifica punteggio?
 
-Il punteggio sicura calcola il punteggio in base ai servizi che è stato acquistato. Se è stato acquistato solo un piano di Exchange Online, non sarà ad esempio, essere catalogato per la funzionalità di sicurezza di SharePoint Online. Denominatore del punteggio di è la somma di tutte le linee di base per i controlli che si applicano ai prodotti che è stato acquistato. Numeratore è la somma di tutti i controlli di cui è completata o completata parzialmente, le azioni per soddisfare tale controllo.
+Punteggio sicura calcola il punteggio in base ai servizi che è stato acquistato. Se è stato acquistato solo un piano di Exchange Online, non sarà ad esempio, essere catalogato per la funzionalità di sicurezza di SharePoint Online. Denominatore del punteggio di è la somma di tutte le linee di base per i controlli che si applicano ai prodotti che è stato acquistato. Numeratore è la somma di tutti i controlli di cui è completata o completata parzialmente, le azioni per soddisfare tale controllo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Panoramica della sicurezza di dashboard](security-dashboard.md)
+
+[Qual è l’abbonamento corrente?](https://docs.microsoft.com/office365/admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide)
   
 
