@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di attesa può essere messa in una cassetta postale di Office 365. Questi tipi di conservazioni includono i criteri di conservazione Office 365, esenzioni eDiscovery e conservazione per controversia legale. È inoltre possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577075"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026513"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -39,7 +39,7 @@ Office 365 sono disponibili diversi modi in cui l'organizzazione può impedire c
 
     - **I criteri di conservazione a livello di organizzazione** - si tratta di criteri che sono assegnati a tutti i percorsi di contenuti nell'organizzazione. Utilizzare il cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell per ottenere informazioni sui criteri di conservazione a livello di organizzazione. Per ulteriori informazioni, vedere la sezione "Applicazione criteri di conservazione per un'intera organizzazione o percorsi specifici" di [criteri di conservazione Panoramica di Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Etichette di office 365** - se un utente si applica un'etichetta di Office 365 (uno configurato per conservare il contenuto o mantenere ed eliminare contenuto) a *qualsiasi* cartella o un elemento nella cassetta postale, di un'esenzione viene effettuata nella cassetta postale come se la cassetta postale è stata inserita nella conservazione per controversia Archiviazione o assegnati a un criterio di conservazione di Office 365. Per ulteriori informazioni, vedere la sezione [identificazione cassette postali in attesa perché è stata applicata un'etichetta in una cartella o un elemento](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) in questo articolo.
+- **Le etichette di conservazione di office 365** - se un utente si applica un'etichetta di conservazione di Office 365 (uno configurato per conservare il contenuto o mantenere ed eliminare contenuto) a *qualsiasi* cartella o un elemento nella cassetta postale, di un'esenzione viene effettuata nella cassetta postale come se la cassetta postale è stata inserita nella conservazione per controversia legale o assegnati a un criterio di conservazione di Office 365. Per ulteriori informazioni, vedere la sezione [identificazione cassette postali in attesa perché un'etichetta di conservazione è stata applicata a una cartella o un elemento](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) in questo articolo.
 
 Per gestire le cassette postali in attesa, potrebbe essere necessario identificare il tipo di attesa viene messa in una cassetta postale in modo che sia possibile eseguire le attività, ad esempio se si modifica la durata di attesa, temporaneamente o permanentemente la rimozione dell'esenzione o ad eccezione di una cassetta postale da un criterio di conservazione di Office 365. In questi casi, il primo passaggio consiste per identificare il tipo di attesa effettuata nella cassetta postale. E, in quanto più esenzioni (e diversi tipi di conservazioni) possono essere inseriti in una singola cassetta postale, sarà necessario identificare tutte le esenzioni messa in una cassetta postale se si desidera rimuovere o modificare le esenzioni.
 
@@ -154,9 +154,9 @@ Eseguire il comando seguente in sicurezza e conformità centro PowerShell all'id
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identificazione delle cassette postali in attesa perché è stata applicata un'etichetta in una cartella o un elemento
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identificazione delle cassette postali in attesa perché un'etichetta di conservazione è stata applicata a una cartella o un elemento
 
-Ogni volta che un utente applica un'etichetta è configurata per conservare il contenuto o mantenere e quindi eliminare il contenuto di una cartella o un elemento nella propria cassetta postale, le proprietà della cassetta postale *ComplianceTagHoldApplied* è impostata su **True**. In questo caso, la cassetta postale è considerata da in attesa, come se è stata inserita nella conservazione per controversia legale o assegnato a un criterio di conservazione di Office 365. Quando la proprietà *ComplianceTagHoldApplied* è impostata su **True**, possono verificarsi le operazioni seguenti:
+Ogni volta che un utente applica un'etichetta di conservazione è configurata per conservare il contenuto o mantenere e quindi eliminare il contenuto di una cartella o un elemento nella propria cassetta postale, le proprietà della cassetta postale *ComplianceTagHoldApplied* è impostata su **True**. In questo caso, la cassetta postale è considerata da in attesa, come se è stata inserita nella conservazione per controversia legale o assegnato a un criterio di conservazione di Office 365. Quando la proprietà *ComplianceTagHoldApplied* è impostata su **True**, possono verificarsi le operazioni seguenti:
 
 - Se viene eliminata la cassetta postale o account utente di Office 365 dell'utente, la cassetta postale diventa una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md).
 - Non sarà in grado di disabilitare la cassetta postale (la cassetta postale principale o la cassetta postale di archiviazione, se abilitato).
@@ -168,7 +168,7 @@ Per visualizzare il valore della proprietà *ComplianceTagHoldApplied* , eseguir
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Per ulteriori informazioni sulle etichette, vedere [Panoramica di Office 365 etichette](labels.md).
+Per ulteriori informazioni su etichette di conservazione, vedere [Panoramica di Office 365 le etichette di conservazione](labels.md).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestione delle cassette postali in ritardo attesa
 

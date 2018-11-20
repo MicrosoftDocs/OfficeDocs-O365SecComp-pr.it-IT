@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Visualizzare i dettagli tecnici sulle crittografia in Office 365.
-ms.openlocfilehash: d86692119f7558d74e2083165b4eb6ab4a07da70
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531203"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026523"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Dettagli tecnici di riferimento sulla crittografia in Office 365
 
@@ -52,7 +52,11 @@ Transport Layer Security (TLS) e il precedente Secure Sockets Layer (SSL) sono p
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Sostituire il supporto per TLS 1.0, 1.1 e ciò significa automaticamente
 <a name="TLS11and12deprecation"> </a>
 
-Prossime importanti modifiche alle opzioni di crittografia supportata per Office 365. A partire da 31 ottobre 2018, Office 365 non supporterà più l'utilizzo di TLS 1.0 o 1.1 per la comunicazione con Office 365. Dopo che Office 365 condanna il supporto per i protocolli, saranno necessario utilizzare TLS 1.2 tutte le comunicazioni tra server di Office 365. Per informazioni su questo impatto è, vedere [Preparazione per l'utilizzo obbligatorio di TLS 1.2 in Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365). Server e client di comunicazione con Office 365 dopo tale data deve supportare 1.2 TLS.
+A partire da 31 ottobre 2018, Office 365 non supporta più TLS 1.0 e 1.1. Ciò significa che Microsoft non correggerà nuovi problemi presenti nel client, i dispositivi o servizi che si connettono a Office 365 tramite TLS 1.0 e 1.1.
+
+Si noti che non: Office 365 bloccherà TLS 1.0 e 1.1 connessioni. Non è una data ufficiale per la disabilitazione o rimozione di TLS 1.0 e 1.1 nel servizio di TLS per le connessioni dei clienti. La data finale è anche verrà determinata dal telemetria cliente e non è ancora definita. Dopo aver effettuata una decisione, ci sarà un annuncio sei mesi in anticipo a meno che non si possono conoscere un compromesso noto, nel qual caso è di agire in meno di sei mesi per proteggere i clienti che utilizzano i servizi.
+
+È consigliabile verificare che tutte le combinazioni client o server browser utilizzano TLS 1.2 (o versioni successive) per gestire connessioni ai servizi di Office 365. Potrebbe essere necessario aggiornare alcune combinazioni client o server browser. Per informazioni su questo impatto è, vedere [Preparazione per l'utilizzo obbligatorio di TLS 1.2 in Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
   
 ## <a name="deprecating-support-for-3des"></a>Sostituire il supporto per 3DES
 <a name="TLS11and12deprecation"> </a>

@@ -15,58 +15,62 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di impegno nella protezione &amp; centro conformità in modo da Office 365 verranno inviate notifiche email quando gli utenti eseguono attività specifiche in Office 365.
-ms.openlocfilehash: 409c1ff4c7fdd0d2d071bdb2eab08ec49357ed8a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2a579e850d16b730a777ce6c4e5c0446305a027d
+ms.sourcegitcommit: 3a376619dbae472495c29da7c061f5c5faeeaddb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531193"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "26282740"
 ---
 # <a name="create-activity-alerts-in-the-office-365-security-amp-compliance-center"></a>Consente di creare avvisi attività in Office 365 Security &amp; centro conformità
 
 È possibile creare un avviso di attività che invierà una notifica tramite posta elettronica quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili a ricerca per gli eventi nel Registro di controllo di Office 365, ad eccezione del fatto che è verrà inviato un messaggio di posta elettronica quando per un'attività che è stato creato un avviso per un evento si verifica. 
   
  **Perché utilizzare avvisi attività anziché la ricerca nel Registro di controllo?** Potrebbero verificarsi determinati tipi di attività o eseguite dagli utenti specifici che si desiderano conoscere. Invece di ricordare la ricerca nel Registro di controllo per tali attività, è possibile utilizzare gli avvisi di attività per inviare un messaggio di posta elettronica quando gli utenti eseguono le attività di Office 365. Ad esempio, è possibile creare un avviso di attività per ricevere una notifica quando un utente elimina i file di SharePoint oppure è possibile creare un avviso per ricevere una notifica quando un utente consente di eliminare definitivamente i messaggi dalla cassetta postale. La notifica di posta elettronica inviata a un utente sono incluse informazioni sulle attività che è stata eseguita e l'utente che ha eseguito lo. 
+
+> [!NOTE]
+> È consigliabile iniziare utilizzando criteri di avviso nel centro conformità protezione anziché creare nuovi avvisi attività. Criteri di avviso offrono funzionalità di aggiunta, ad esempio la possibilità di creare un criterio di avviso che viene generato un avviso quando un utente esegue un'attività specificata e la visualizzazione degli avvisi nella pagina **Visualizza avvisi** nel centro conformità sicurezza. Per ulteriori informazioni, vedere [avviso criteri in Office 365 Security &amp; centro conformità](alert-policies.md).
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Deve essere assegnato il ruolo di configurazione dell'organizzazione in sicurezza &amp; centro conformità per gestire gli avvisi di attività. Per impostazione predefinita, questo ruolo viene assegnato a gruppi di ruoli amministratore di conformità e la gestione dell'organizzazione. Per ulteriori informazioni sull'aggiunta di membri a gruppi di ruoli, vedere [fornire agli utenti di accedere a Office 365 Security &amp; centro conformità](grant-access-to-the-security-and-compliance-center.md).
     
 - Utente (o un'altra amministrazione) necessario attivare la registrazione di controllo per l'organizzazione prima di iniziare a utilizzare gli avvisi di attività. A tale scopo, fare clic su **Avvia registrazione utente e all'attività amministratore** nella pagina **avvisi attività** . (Se non viene visualizzato questo collegamento, il controllo è già stato attivato per la propria organizzazione.) Può inoltre attivare il controllo della pagina **ricerca dei registri di controllo** della sicurezza &amp; centro conformità (andare a **ricerca &amp; indagini** \> **ricerca dei registri di controllo**). È necessario eseguire questa operazione una sola volta per l'organizzazione.
+  
+- È possibile creare avvisi per le stesse attività che è possibile cercare nel Registro di controllo di Office 365. Visualizzare le [informazioni](#more-information) di sezione per un elenco di scenari comuni (attività specifiche per monitorare e) che è possibile creare avvisi per. 
     
-- È possibile utilizzare la pagina **avvisi** di sicurezza &amp; centro conformità per creare gli avvisi solo per le attività eseguite dagli utenti che sono elencati nella rubrica dell'organizzazione. È possibile utilizzare questa pagina per creare gli avvisi per le attività eseguite dagli utenti esterni. 
-    
-- Visualizzare le [informazioni](#more-information) di sezione per un elenco di scenari comuni (attività specifiche per monitorare e) che è possibile creare avvisi per. 
-    
-- È possibile creare avvisi per le stesse attività che è possibile cercare nel Registro di controllo di Office 365. 
+- È possibile utilizzare la pagina **avvisi impegno** nella protezione &amp; centro conformità per creare gli avvisi solo per le attività eseguite dagli utenti che sono elencati nella rubrica dell'organizzazione. È possibile utilizzare questa pagina per creare gli avvisi per le attività eseguite dagli utenti esterni che non siano elencati nella Rubrica. 
     
 ## <a name="create-an-activity-alert"></a>Creare un avviso di attività
 
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com/#/managealerts](https://protection.office.com/#/managealerts).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro fare clic su **avvisi**e quindi fare clic su **Gestisci avvisi**.
+3. Nella pagina **attività avvisi** , fare clic su ![sull'icona Aggiungi](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
+
+   Verrà visualizzata la pagina comparsa per creare un avviso di attività.
+
     
-4. Nella pagina **avvisi attività** fare clic su **Aggiungi un avviso**.
-    
-    ![Aggiungere un avviso di attività](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![Creare un avviso di attività](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
-5. Completare i campi seguenti per creare un avviso:
+4. Completare i campi seguenti per creare un avviso attività:
     
     r. **Name** - digitare un nome per l'avviso. I nomi degli avvisi deve essere univoci all'interno dell'organizzazione.
     
     b. **Descrizione** (facoltativo) - viene illustrata l'avviso, ad esempio le attività e gli utenti si tiene traccia, e gli utenti che le notifiche di posta elettronica inviati a. Descrizioni offrono un modo semplice e veloce per descrivere lo scopo dell'avviso per gli altri amministratori.
     
-    c. **inviare questo avviso quando** - fare clic su **Invia quando questo avviso** e quindi configurare questi due campi:
+    c. **tipo di avviso** : verificare che sia selezionata l'opzione **personalizzato** . 
+
+    d. **Invia questo avviso quando** - fare clic su **Invia quando questo avviso** e quindi configurare questi due campi:
     
     - **Attività** - fare clic sull'elenco a discesa elenco per visualizzare le attività che è possibile creare un avviso per. Questo è lo stesso elenco di attività che viene visualizzato quando si esegue una ricerca nel Registro di controllo di Office 365. È possibile selezionare uno o più attività specifiche oppure è possibile scegliere il nome del gruppo di attività per selezionare tutte le attività nel gruppo. Per una descrizione di queste attività, vedere la sezione "Possibile controllare le attività" della funzionalità di [ricerca il controllo di accesso nel centro conformità protezione di Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities). Quando un utente esegue una qualsiasi delle attività di aggiunta all'avviso, viene inviata una notifica tramite posta elettronica. 
     
      - **Gli utenti** , fare clic su questa casella e quindi selezionare uno o più utenti. Se gli utenti in questa casella di eseguire le attività che è stato aggiunto alla casella **delle attività** , verrà inviato un avviso. Lasciare vuoto per inviare un avviso quando tutti gli utenti nell'organizzazione esegue le attività specificate dall'avviso casella **utenti** . 
+
+    e. **inviare questo avviso per** - fare clic su **Invia avviso**, quindi fare clic sulla casella **destinatari** e digitare un nome per aggiungere un utenti che riceveranno una notifica tramite posta elettronica quando un utente (specificato nella casella **utenti** ) esegue un'attività (specificato nel Finestra di **attività** ). Si noti che si viene aggiunti all'elenco dei destinatari per impostazione predefinita. È possibile rimuovere il nome dall'elenco.
     
-    **Invia avviso a** - d. fare clic su **Invia avviso**, quindi fare clic sulla casella **destinatari** e digitare un nome per aggiungere un utenti che riceveranno una notifica tramite posta elettronica quando un utente (specificato nella casella **utenti** ) esegue un'attività (specificato nel Finestra di **attività** ). Si noti che si viene aggiunti all'elenco dei destinatari per impostazione predefinita. È possibile rimuovere il nome dall'elenco.
-    
-6. Fare clic su **Salva** per creare l'avviso. 
+5. Fare clic su **Salva** per creare l'avviso. 
     
     Il nuovo avviso viene visualizzato nell'elenco nella pagina **avvisi attività** . 
     
@@ -78,17 +82,15 @@ ms.locfileid: "22531193"
 
 È possibile disattivare un avviso di attività in modo che non viene inviata una notifica di posta elettronica. Dopo la disattivazione dell'avviso di attività, viene comunque visualizzato nell'elenco degli avvisi di attività per l'organizzazione ed è comunque possibile visualizzare le relative proprietà.
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com/#/managealerts](https://protection.office.com/#/managealerts).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro fare clic su **avvisi**e quindi fare clic su **Gestisci avvisi attività**.
+3. Nell'elenco degli avvisi di attività per l'organizzazione, fare clic sull'avviso che si desidera disattivare.
     
-4. Nell'elenco degli avvisi per la propria organizzazione, fare clic sull'avviso che si desidera disattivare.
+4. Nella pagina **Modifica avviso** fare clic su disattivazione **in** per modificare lo stato per **disattivare**e quindi fare clic su **Salva**.
     
-5. Nella pagina **Modifica avviso** fare clic su disattivazione **in** per modificare lo stato per **disattivare**e quindi fare clic su **Salva**.
-    
-    Lo stato dell'avviso nelle pagine di avvisi attività è impostato su **Off**. 
+    Lo stato dell'avviso nelle pagine di **avvisi attività** è impostato su **Off**. 
     
 Per attivare un avviso di attività, ripetere questi passaggi e fare clic su disattivazione **disattivato** per modificare lo stato di **attivato**.
   

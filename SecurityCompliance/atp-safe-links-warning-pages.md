@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Panoramica delle pagine di avviso che potrebbero essere visualizzati quando la protezione di Office 365 avanzate rischio è in ufficio.
-ms.openlocfilehash: eae893da6bb2692ae4fb9f934bc892d2058beecd
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782133"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238268"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pagine di avviso degli strumenti di analisi collegamenti attendibili di Office 365
 
@@ -107,14 +107,3 @@ Pagina avviso aggiornata:
 
 ![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
-## <a name="related-topics"></a>Argomenti correlati
-
-[Come Office consente di protezione da truffe](https://support.office.com/article/be0de46a-29cd-4c59-aaaf-136cf177d593)
-  
-[Collegamenti sicuri degli strumenti di analisi di Office 365](atp-safe-links.md)
-  
-[Allegati sicuri degli strumenti di analisi di Office 365](atp-safe-attachments.md)
-  
-[Protezione antispam e antimalware in Office 365](anti-spam-and-anti-malware-protection.md)
-  
-

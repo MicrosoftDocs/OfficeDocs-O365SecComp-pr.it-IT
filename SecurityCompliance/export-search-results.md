@@ -1,9 +1,9 @@
 ---
-title: Esportare i risultati di ricerca del contenuto da Office 365 Security &amp; centro conformità
+title: Esportare i risultati della ricerca contenuto nel centro conformità protezione di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca di contenuto in Office 365 Security &amp; centro conformità a un computer locale. I risultati della posta elettronica Emaill vengono esportate come file PST. Contenuto di SharePoint e OneDrive per i siti vengono esportati come nativi documenti di Office. '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494067"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539118"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Esportare i risultati di ricerca del contenuto da Office 365 Security &amp; centro conformità
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Esportare i risultati della ricerca contenuto nel centro conformità protezione di Office 365
 
 Dopo l'esecuzione di una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, viene scaricati al computer come file PST. Quando si esporta il contenuto di SharePoint e OneDrive per i siti di Business, vengono esportate le copie dei documenti di Office nativi. Sono disponibili ulteriori documenti e report inclusi con i risultati della ricerca esportato.
   
@@ -32,7 +32,7 @@ Inoltre, eventuali messaggi di posta elettronica crittografati con RMS inclusi n
   
 Esportare i risultati di ricerca di contenuto comporta la preparazione dei risultati e dopo aver scaricato in un computer locale.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per esportare i risultati della ricerca, è necessario disporre del ruolo di gestione di esportazione in Office 365 Security &amp; centro conformità. Questo ruolo viene assegnato al gruppo di ruoli di gestione incorporati eDiscovery. Non è assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
     
@@ -85,7 +85,7 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **Ricerca contenuto**.
     
@@ -174,23 +174,22 @@ Come indicato in precedenza, è possibile aumentare la velocità di download con
 
   
 ## <a name="more-information"></a>Ulteriori informazioni
-<a name="moreinfo"> </a>
 
 Di seguito viene ulteriori informazioni sull'esportazione dei risultati di ricerca.
   
-[Limiti di esportazione](export-search-results.md#export-limits)
+[Limiti di esportazione](#export-limits)
   
-[Esportazione dei rapporti](export-search-results.md#export-reports)
+[Esportazione dei rapporti](#export-reports)
   
 [Esportazione di elementi indicizzati parzialmente](#exporting-partially-indexed-items)
+
+[Esportazione dei singoli messaggi o i file PST](#exporting-individual-messages-or-pst-files)
   
-[Esportazione dei singoli messaggi o i file PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[Decrittografia dei messaggi crittografati con RMS](#decrypting-rms-encrypted-messages)
+
+[Nomi di file di elementi esportati](#filenames-of-exported-items)  
   
-[Decrittografia dei messaggi crittografati con RMS](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[Nomi di file di elementi esportati](export-search-results.md#Filenames-of-exported-items)
-  
-[Varie](export-search-results.md#miscellaneous)
+[Varie](#miscellaneous)
   
  ### <a name="export-limits"></a>Limiti di esportazione
   
@@ -206,7 +205,7 @@ Di seguito viene ulteriori informazioni sull'esportazione dei risultati di ricer
     
   - Esportazione dei report di ricerca del contenuto non viene conteggiata uno qualsiasi dei limiti di esportazione. 
     
-- Come affermato in precedenza, i risultati di ricerca di cassette postali e i siti vengono caricati nel percorso di archiviazione Azure (come descritto in [passaggio 1: preparazione per l'esportazione risultati di ricerca](export-search-results.md#step1)) una velocità massima di 2 GB all'ora.
+- Come affermato in precedenza, i risultati di ricerca di cassette postali e i siti vengono caricati nel percorso di archiviazione Azure (come descritto in [passaggio 1: preparazione per l'esportazione risultati di ricerca](#step-1-prepare-search-results-for-export)) una velocità massima di 2 GB all'ora.
     
 - Per impostazione predefinita, la dimensione massima di un file PST che può essere esportato è 10 GB. Ciò significa che se i risultati della ricerca dalla cassetta postale dell'utente sono superiori a 10 GB, verrà esportati i risultati della ricerca per la cassetta postale in file PST distinti due (o più). Inoltre, se si sceglie di esportare tutti i risultati della ricerca in un unico file PST, il file PST verrà essere consente di dividere in file PST aggiuntivi se le dimensioni totali dei risultati della ricerca sono superiori a 10 GB. Se si desidera modificare la dimensione predefinita, è possibile modificare il Registro di sistema nel computer utilizzato per esportare i risultati della ricerca. Vedere [Modifica le dimensioni dei file PST durante l'esportazione dei risultati della ricerca eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     

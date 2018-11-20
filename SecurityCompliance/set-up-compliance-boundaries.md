@@ -3,7 +3,6 @@ title: Impostare i limiti di conformità per le indagini eDiscovery in Office 36
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Per creare i confini logici all'interno dell'organizzazione Office 365 che controllano l'utente i percorsi di contenuti che può eseguire ricerche in un gestore di eDiscovery, utilizzare i limiti di conformità. Limiti di conformità utilizzano autorizzazioni ricerca filtro (anche denominato conformità sicurezza filtri) per controllare quali cassette postali, i siti di SharePoint e gli account OneDrive possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258634"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299240"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -179,9 +178,9 @@ Durante la gestione dei casi di eDiscovery e indagini che utilizzano dei confini
     
 - Filtri di ricerca per le autorizzazioni non vengono applicati alle cartelle pubbliche di Exchange.
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>Ricerca e l'esportazione del contenuto di SharePoint negli ambienti Multi-Geo
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Ricerca e l'esportazione di contenuto in ambienti Multi-Geo
 
-Filtri di ricerca per le autorizzazioni consentono inoltre di controllare in cui il contenuto viene instradato per l'esportazione e i centri dati possono essere eseguita la ricerca OneDrive account e i siti di SharePoint in un [ambiente Multi-Geo SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
+Filtri di ricerca per le autorizzazioni consentono inoltre di controllare cui contenuto viene instradato per l'esportazione e i datacenter possono essere ricercate durante la ricerca di OneDrive account e i siti di SharePoint in un [ambiente Multi-Geo SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
   
 - Esportare i risultati della ricerca da un centro dati specifici. Ciò significa che è possibile specificare che i dati al centro posizione che i risultati verranno esportati dalla ricerca.
     
@@ -211,7 +210,7 @@ Analogamente, è possibile utilizzare i seguenti valori per i valori dei paramet
 |RICERCA  <br/> |Asia Pacifico  <br/> |
 |LAM  <br/> |IT  <br/> |
    
- **Nota:** Se non si specifica il parametro Region per un filtro di autorizzazioni di ricerca, vengono esportati i risultati della ricerca dal centro dati più vicino. 
+ **Nota:** Se non si specifica il parametro Region per un filtro di autorizzazioni di ricerca, l'area di SharePoint predefinito organizzazioni verrà eseguita la ricerca e quindi i risultati della ricerca vengono esportati in più data center. 
   
 Di seguito sono riportati esempi dell'utilizzo di **-area** parametro durante la creazione di filtri di autorizzazione di ricerca per i limiti di conformità. Si presuppone che la filiale Fourth Coffee si trova in Nord America e che Coho Winery in Europa. 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-Tenere presenti durante la ricerca e l'esportazione di SharePoint e OneDrive i seguenti aspetti contenuto in ambienti multi-geo.
+Mantenere le operazioni seguenti in considerazione durante la ricerca e l'esportazione di contenuto in ambienti multi-geo.
   
 - Il parametro **Region** non controllare le ricerche delle cassette postali di Exchange; tutti i data Center verrà eseguita la ricerca quando si esegue la ricerca delle cassette postali. Per limitare l'ambito di Exchange che è possono eseguire la ricerca di cassette postali, utilizzare il parametro **filtri** quando si crea o modifica di un filtro di autorizzazioni di ricerca. 
     

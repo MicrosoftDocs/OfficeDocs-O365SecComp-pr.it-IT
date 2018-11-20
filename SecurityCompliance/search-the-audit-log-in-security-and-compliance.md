@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: "Utilizzare il centro di conformità e sicurezza di Office 365 per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935593"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522808"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo nel centro conformità protezione di Office 365
 
 Sai dove trovare se un utente di visualizzata un documento specifico o eliminato un elemento dalla cassetta postale? Se, utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. Perché un controllo unificato accedere? Dal momento che è possibile cercare i tipi di attività di amministrazione e utente in Office 365 seguenti:
   
@@ -100,26 +98,26 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     
 - Potrebbe richiedere fino a 30 minuti o up a 24 ore dopo l'evento si verifica per la voce del Registro di controllo corrispondente da visualizzare nei risultati della ricerca. Nella tabella seguente mostra il tempo che necessario per i diversi servizi in Office 365.
     
-|**Servizio Office 365**|**30 minutes**|**24 ore**|
-|:-----|:-----|:-----|
-|Protezione avanzata rischio e Business Intelligence di rischio  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory (amministrazione eventi)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Prevenzione della perdita di dati  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|eDiscovery  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Protezione &amp; centro conformità  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online e OneDrive for Business  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Servizio Office 365**|**30 minutes**|**24 ore**|
+    |:-----|:-----|:-----|
+    |Protezione avanzata rischio e Business Intelligence di rischio  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (amministrazione eventi)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory (gli eventi account di accesso dell'utente)  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Prevenzione della perdita di dati  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |eDiscovery  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Protezione &amp; centro conformità  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online e OneDrive for Business  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (Azure Active Directory) è il servizio directory per Office 365. Il Registro di controllo unificato contiene utente, gruppo, applicazione, dominio e directory attività eseguite nell'interfaccia di amministrazione di Office 365 o in Azure nel portale di gestione. Per un elenco completo degli eventi di Azure Active Directory, vedere [Eventi di Azure Active Directory di controllo Report](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
@@ -160,18 +158,18 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
   
 4. Configurare i criteri di ricerca seguenti:
     
-1. **Attività** Fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Attività degli utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile scegliere il nome del gruppo di attività per selezionare tutte le attività nel gruppo. È inoltre possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del Registro di controllo per le attività selezionate. Selezionare **Mostra i risultati per tutte le attività** visualizzerà i risultati per tutte le attività eseguite dall'utente selezionato o gruppo di utenti. 
+    r. **attività** fare clic su elenco a discesa per visualizzare le attività che è possibile cercare. Attività degli utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile scegliere il nome del gruppo di attività per selezionare tutte le attività nel gruppo. È inoltre possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del Registro di controllo per le attività selezionate. Selezionare **Mostra i risultati per tutte le attività** visualizzerà i risultati per tutte le attività eseguite dall'utente selezionato o gruppo di utenti. 
     
     Attività degli utenti e amministratori oltre 100 vengono registrate nel Registro di controllo di Office 365. Fare clic sulla scheda **attività Audited** all'argomento di questo articolo per vedere le descrizioni di ogni attività in ognuno dei diversi servizi di Office 365. 
     
-2. **Data di inizio** e **Data fine** ultimi sette giorni sono selezionati per impostazione predefinita. Selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati durante questo periodo. Data e ora sono disponibili in formato ora UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni. Viene visualizzato un errore se l'intervallo di date selezionato è maggiore di 90 giorni. 
+    b. **Data di inizio** e **Data fine** ultimi sette giorni sono selezionati per impostazione predefinita. Selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati durante questo periodo. Data e ora sono disponibili in formato ora UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni. Viene visualizzato un errore se l'intervallo di date selezionato è maggiore di 90 giorni. 
     
     > [!TIP]
     > Se si utilizza l'intervallo di date numero massimo di 90 giorni, selezionare l'ora corrente per la **Data di inizio**. In caso contrario, viene visualizzato un errore indicante che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può avviare prima della data che il controllo è stato attivato. 
   
-3. **Utenti** Fare clic su in questa casella e quindi selezionare uno o più utenti da visualizzare i risultati della ricerca. Le voci del Registro di controllo per l'attività selezionata eseguite dagli utenti che selezionare questa casella vengono visualizzate nell'elenco dei risultati. Lasciare vuoto questo per restituire le voci per tutti gli utenti (e gli account di servizio) nella propria organizzazione. 
+    c. per i risultati fare clic su **utenti** in questa casella e quindi selezionare uno o più utenti per visualizzare Criteri di ricerca. Le voci del Registro di controllo per l'attività selezionata eseguite dagli utenti che selezionare questa casella vengono visualizzate nell'elenco dei risultati. Lasciare vuoto questo per restituire le voci per tutti gli utenti (e gli account di servizio) nella propria organizzazione. 
     
-4. **File o una cartella** Digitare parte o un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. 
+    d. **File o una cartella** digitare alcuni o tutti un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. 
     
     Lasciare vuoto questo per restituire le voci per tutti i file e cartelle all'interno dell'organizzazione.
     

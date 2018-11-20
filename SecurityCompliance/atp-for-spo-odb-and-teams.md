@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/08/2018
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Estendere la protezione di Office 365 avanzate minaccia per i file in SharePoint Online, OneDrive for Business e Teams Microsoft per consentire la collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454323"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238448"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -25,7 +26,7 @@ ms.locfileid: "25454323"
 
 Utenti con regolarità condividere file e collaborare con SharePoint, OneDrive e Teams Microsoft. Con [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), l'organizzazione può collaborare in modo più sicuro. Degli strumenti di analisi consente di rilevare e bloccare i file che vengono identificati come dannose in siti del team e raccolte documenti.  
   
-### <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Funzionamento
 
 Quando un file in SharePoint Online, OneDrive for Business e Microsoft Teams è stato identificato come dannose, degli strumenti di analisi si integra direttamente con gli archivi di file per bloccare il file. Nell'immagine seguente viene illustrato un esempio di un file dannoso rilevato in una raccolta.
   
@@ -41,7 +42,7 @@ A seconda della configurazione di Office 365, gli utenti possono o potrebbero no
   
 Per ulteriori informazioni, vedere [attivare degli strumenti di analisi di Office 365 per SharePoint, OneDrive e team di Microsoft](turn-on-atp-for-spo-odb-and-teams.md).
   
-### <a name="keep-the-following-points-in-mind"></a>Tenere presente quanto segue
+## <a name="keep-these-points-in-mind"></a>Tenere presente
 
 - Degli strumenti di analisi non verrà verificata ogni singolo file in SharePoint Online, OneDrive per Business o Microsoft Teams. Questo è per impostazione predefinita. I file vengono analizzati in modo asincrono, un processo che utilizza gli eventi di attività di condivisione e guest insieme euristica smart e segnali minaccia per identificare i file dannosi.
 
@@ -69,16 +70,7 @@ Parte del team di protezione di Office 365 dell'organizzazione che hanno la nece
     
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi](turn-on-atp-for-spo-odb-and-teams.md)
+1. [Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi](turn-on-atp-for-spo-odb-and-teams.md)
     
-- [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
+2. [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
     
-## <a name="related-topics"></a>Argomenti correlati
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Visualizzare i report per la protezione rischio avanzate di Office 365](view-reports-for-atp.md)
-  
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
-  
-

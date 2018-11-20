@@ -1,7 +1,7 @@
 ---
 title: Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
-ms.author: derng
-author: derng
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Informazioni su come attivare degli strumenti di analisi di SharePoint, OneDrive e team, nonché su come impostare gli avvisi per file rilevati.
-ms.openlocfilehash: eb3687f6afd2e7f9a3698944019bcdb8dcbff5ae
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454293"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238418"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
 
@@ -31,19 +31,17 @@ Per eseguire le attività descritte in questo articolo, è necessario disporre d
   
 1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di lavoro o della scuola.
     
-2. In Office 365 Security &amp; centro conformità, nel riquadro di spostamento a sinistra, in **gestione rischio**, scegliere **criterio** \> **Gli allegati sicuri**.
-    
-    ![In sicurezza &amp; centro conformità, scegliere gestione rischio \> criteri](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. In Office 365 Security &amp; centro conformità, nel riquadro di spostamento a sinistra, in **gestione rischio**, scegliere **criterio** \> **Gli allegati sicuri**. <br/>![In sicurezza &amp; centro conformità, scegliere gestione rischio \> criteri](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. Selezionare **attiva degli strumenti di analisi di SharePoint, OneDrive e team di Microsoft**.
-    
-    ![Attivare la protezione avanzata minaccia per SharePoint Online, OneDrive for Business e team di Microsoft](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. Selezionare **attiva degli strumenti di analisi di SharePoint, OneDrive e team di Microsoft**.<br/>![Attivare la protezione avanzata minaccia per SharePoint Online, OneDrive for Business e team di Microsoft](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
 4. Fare clic su **Salva**.
     
 5. Esaminare (e, nel modo appropriato, modifica) [criteri gli allegati sicuri](set-up-atp-safe-attachments-policies.md) e [collegamenti sicuri criteri](set-up-atp-safe-links-policies.md)dell'organizzazione.
     
-6. (Scelta consigliata) Come un amministratore globale o un amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true* . <br/>L'impostazione del parametro a blocchi *true* tutte le azioni (ad eccezione di Elimina) per rilevato file. Utenti non possono aprire, spostare, copiare o condividere file rilevati.<br/>L'impostazione del parametro su *false* blocca tutte le azioni ad eccezione di eliminazione e Download. Persone possono scegliere di accettare il rischio e scaricare un file rilevato.<br/>È consigliabile impostare il parametro su *true*. 
+6. (Scelta consigliata) Come un amministratore globale o un amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true*. <br/>
+  - L'impostazione del parametro a blocchi *true* tutte le azioni (ad eccezione di Elimina) per rilevato file. Utenti non possono aprire, spostare, copiare o condividere file rilevati.
+  - L'impostazione del parametro su *false* blocca tutte le azioni ad eccezione di eliminazione e Download. Persone possono scegliere di accettare il rischio e scaricare un file rilevato.  
    
 7. Consentire fino a 30 minuti per le modifiche apportate da distribuire a tutti i centri dati di Office 365.
     
@@ -77,16 +75,10 @@ Per ulteriori informazioni sugli avvisi, vedere [consente di creare avvisi attiv
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
     
-- [Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365](manage-quarantined-messages-and-files.md)
+2. [Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365](manage-quarantined-messages-and-files.md)
     
-## <a name="related-topics"></a>Argomenti correlati
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Visualizzare i report per la protezione rischio avanzate di Office 365](view-reports-for-atp.md)
-  
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
   
 

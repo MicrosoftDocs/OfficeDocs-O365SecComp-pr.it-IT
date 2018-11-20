@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilizzare lo strumento di eDiscovery di ricerca del contenuto in Office 365 Security &amp; centro conformità per trovare rapidamente posta nelle cassette postali di Exchange, i documenti in siti di SharePoint e i percorsi di OneDrive e le conversazioni in Skype per le aziende di messaggistica immediata.
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038229"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238398"
 ---
 # <a name="search-for-content-in-office-365"></a>Ricerca di contenuto in Office 365
 
@@ -42,6 +42,8 @@ Il primo passaggio consiste nel avvio utilizzando lo strumento di ricerca di con
     
 - [Modifica in blocco](bulk-edit-content-searches.md) della query e i percorsi di contenuti per ricerche più 
     
+- [I destinatari Ccn conservare](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) in modo che è possibile cercarla 
+
 ## <a name="perform-actions-on-content-you-find"></a>Eseguire azioni su Trova il contenuto
 
 Dopo avere eseguito una ricerca e modificarlo in base alle esigenze, il passaggio successivo consiste di eseguire un'operazione con i risultati restituiti dalla ricerca. È possibile esportare e scaricare i risultati del computer locale o nel caso di un attacco di posta elettronica nella propria organizzazione, è possibile eliminare i risultati di ricerca di cassette postali degli utenti.

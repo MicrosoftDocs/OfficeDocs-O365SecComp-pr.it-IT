@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: In questo articolo per informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizza la protezione di Office 365 avanzate rischio. Gli URL bloccati verranno applicate a messaggi di posta elettronica e documenti di Office in base ai criteri di collegamenti sicuro degli strumenti di analisi.
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454363"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238368"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -64,17 +64,5 @@ In questo articolo per informazioni su come configurare personalizzato URL elenc
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Come definire le eccezioni per utenti specifici in un'organizzazione
 
 Se si desidera determinati gruppi siano in grado di visualizzare gli URL che potrebbe essere bloccati per altri utenti, è possibile specificare un criterio degli strumenti di analisi collegamenti sicuri da applicare a destinatari specifici. Vedere [impostare un "non di riscrittura" URL elenco personalizzato utilizzo degli strumenti di analisi dei collegamenti sicuri](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
-  
-## <a name="related-topics"></a>Argomenti correlati
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Collegamenti degli strumenti di analisi sicuro in Office 365](atp-safe-links.md)
-  
-[Impostare i criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Allegati degli strumenti di analisi sicuro in Office 365](atp-safe-attachments.md)
-
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
   
 

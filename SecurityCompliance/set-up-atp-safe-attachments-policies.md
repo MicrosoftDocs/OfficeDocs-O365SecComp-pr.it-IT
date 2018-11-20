@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850840"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238408"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -82,18 +82,9 @@ Per la configurazione di criteri di allegati sicuri degli strumenti di analisi, 
 |**Recapito dinamico** <br/> |Invia messaggi immediatamente  <br/> Sostituisce gli allegati con un file segnaposto fino a quando non analisi è stato completato e quindi ricollega gli allegati se non viene rilevato alcuna malware  <br/> Include l'anteprima di funzionalità per la maggior parte dei documenti PDF e Office allegato file durante l'analisi  <br/> Invia i messaggi con malware rilevato per cui un amministratore della sicurezza o analista può esaminare e rilasciare (o eliminare) i messaggi di quarantena  <br/> [Informazioni su Recapito dinamico e l'anteprima allegati sicuri degli strumenti di analisi di](dynamic-delivery-and-previewing.md) <br/> |Evitare ritardi messaggio proteggendo al contempo i destinatari dal file dannosi  <br/> Consentire ai destinatari di visualizzare in anteprima degli allegati in modalità provvisoria durante l'analisi è in corso  <br/> |
 |**Abilitare reindirizza** <br/> |Si applica quando si sceglie l'opzione Monitor, blocca o sostituzione  <br/> Invia gli allegati a un indirizzo di posta elettronica specificati in security administrators o analisti possono essere esaminate  <br/> |Consentire agli amministratori di sicurezza e agli analisti di allegati sospetti di ricerca  <br/> |
    
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="next-steps"></a>Passaggi successivi
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Allegati degli strumenti di analisi sicuro in Office 365](atp-safe-attachments.md)
-  
-[Collegamenti degli strumenti di analisi sicuro in Office 365](atp-safe-links.md)
-  
-[Impostare i criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md)
-
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
-  
-
+Una volta criteri di allegati sicuri degli strumenti di analisi, è possibile visualizzare la modalità di utilizzo degli strumenti di analisi per l'organizzazione visualizzando i report. Le risorse seguenti per ulteriori informazioni, vedere:
+- [Visualizzare i report per la protezione rischio avanzate di Office 365](view-reports-for-atp.md)
+- [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md)
+ 
