@@ -21,6 +21,7 @@
 ### [Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati](get-started-with-dlp-policy-recommendations.md)
 ### [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)
 ### [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
+### [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 ### [Usare le notifiche e i suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati](use-notifications-and-policy-tips.md)
 ### [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
 ### [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
