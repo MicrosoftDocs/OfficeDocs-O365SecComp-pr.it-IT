@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698042"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299250"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -52,9 +52,10 @@ Con le etichette di conservazione è possibile:
   - Non è necessario affidarsi solo agli utenti per la classificazione corretta di tutto il contenuto.
     
   - Gli utenti non hanno più bisogno di conoscere i criteri di governance dai dati e possono concentrarsi sul loro lavoro.
-    
-    Si noti che per l'applicazione automatica delle etichette è necessario un abbonamento a Office 365 Enterprise E5.
-    
+
+  > [!NOTE]
+  > La possibilità di applicare automaticamente etichette richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni per modificare il contenuto a cui è stata assegnata automaticamente un’etichetta in un sito o in una cassetta postale. Per gli utenti che dispongono di accesso di sola lettura non è necessaria una licenza.
+      
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti** nei siti di SharePoint e dei gruppi di Office 365, in modo che tutti i documenti nella raccolta ricevano l'etichetta di conservazione predefinita. 
     
 - **Implementare la gestione dei record in Office 365**, compresi posta elettronica e documenti. È possibile usare un'etichetta di conservazione per classificare il contenuto come record. In questo caso, non è possibile cambiare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. 

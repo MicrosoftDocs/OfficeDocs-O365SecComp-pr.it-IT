@@ -1,5 +1,5 @@
 ---
-title: Creare un tipo di informazione riservata personalizzato
+title: Creare un tipo di informazioni sensibili personalizzato
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
-ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
+ms.openlocfilehash: a9234b160d720a04ff6bfeac62899246500ec9b4
+ms.sourcegitcommit: e4291f751d6870d965dba191b4c8f10c5c4ce0b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25895285"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26534027"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creare un tipo di informazioni sensibili personalizzato
 
@@ -51,7 +51,7 @@ Per creare tipi di informazioni riservate personalizzati nel Centro sicurezza e 
 
 Le differenze principali vengono descritte nella tabella seguente:
 
-|Tipi di informazioni sensibili personalizzati nell'interfaccia utente|Tipi di informazioni sensibili personalizzati in PowerShell|
+|**Tipi di informazioni sensibili personalizzati nell'interfaccia utente**|**Tipi di informazioni sensibili personalizzati in PowerShell**|
 |:-----|:-----|
 |Nome e descrizione sono in una lingua.|Supporta più lingue per nome e descrizione.|
 |Supporta un criterio.|Supporta più criteri.|
@@ -91,39 +91,49 @@ Ecco uno scenario: si desidera un tipo di informazioni sensibili personalizzato 
 
 1. Nel Centro sicurezza e conformità, accedere a **Classificazioni** \> **Tipi di informazioni sensibili** e fare clic su **Crea**.
 
+    ![Posizione dei tipi di informazioni riservate e pulsante Crea](media/scc-cust-sens-info-type-new.png)
+
 2. Nella pagina **Scegliere un nome e una descrizione** che viene visualizzata, immettere i valori seguenti:
 
   - **Nome**: ID dipendente.
 
   - **Descrizione**: Rilevare i numeri ID dipendente di Contoso di 9 cifre.
 
-  Al termine dell'operazione, fare clic su **Avanti**.
+    ![Pagina con nome e descrizione](media/scc-cust-sens-info-type-new-name-desc.png)
+
+    Al termine dell'operazione, fare clic su **Avanti**.
 
 3. Nella pagina **Requisiti per la corrispondenza** che viene visualizzata, fare clic su **Aggiungi un elemento** e configurare le impostazioni seguenti:
 
-  - **Rilevare il contenuto che contiene**:
+    - **Rilevare il contenuto che contiene**:
  
-    a. Fare clic su **Una qualsiasi di queste condizioni** e selezionare **Espressione regolare**.
+      a. Fare clic su **Una qualsiasi di queste condizioni** e selezionare **Espressione regolare**.
 
-    b. Nella casella di espressione regolare, immettere `(\s)(\d{9})(\s)` (numeri di 9 cifre racchiusi da spazi).
+      b. Nella casella di espressione regolare, immettere `(\s)(\d{9})(\s)` (numeri di 9 cifre racchiusi da spazi).
   
-  - **Elementi di supporto**: fare clic su **Aggiungi gli elementi di supporto** e selezionare **Contiene questo elenco di parole chiave**.
+    - **Elementi di supporto**: fare clic su **Aggiungi gli elementi di supporto** e selezionare **Contiene questo elenco di parole chiave**.
 
-  - Nell'area **Contiene questo elenco di parole chiave** che viene visualizzata, configurare le impostazioni seguenti:
+    - Nell'area **Contiene questo elenco di parole chiave** che viene visualizzata, configurare le impostazioni seguenti:
 
-    - **Elenco di parole chiave**: immettere il valore seguente: dipendente,ID,badge.
+      - **Elenco di parole chiave**: immettere il valore seguente: dipendente,ID,badge.
 
-    - **Numero minimo**: lasciare il valore predefinito 1.
+      - **Numero minimo**: lasciare il valore predefinito 1.
 
-  - Lasciare il valore 60 del **Livello di probabilità** predefinito. 
+    - Lasciare il valore 60 del **Livello di probabilità** predefinito. 
 
-  - Lasciare il valore 300 della **Prossimità dei caratteri** predefinito.
+    - Lasciare il valore 300 della **Prossimità dei caratteri** predefinito.
 
-  Al termine dell'operazione, fare clic su **Avanti**.
+    ![Pagina Requisiti per la corrispondenza](media/scc-cust-sens-info-type-new-reqs.png)
+
+    Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Verifica e completamento** che viene visualizzata, controllare le impostazioni e fare clic su **Fine**.
 
-5. La pagina successiva invita a testare il nuovo tipo di informazioni sensibili personalizzato. Per ulteriori informazioni, vedere [Testare i tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità](#test-custom-sensitive-information-types-in-the-security--compliance-center). In alternativa, fare clic su **Annulla**.
+    ![Pagina Verifica e completamento](media/scc-cust-sens-info-type-new-review.png)
+
+5. La pagina successiva invita a testare il nuovo tipo di informazioni sensibili personalizzato facendo clic su **Sì**. Per ulteriori informazioni, vedere **Testare i tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità**. Per testare la regola in un secondo momento, fare clic su [No](#test-custom-sensitive-information-types-in-the-security--compliance-center).
+
+    ![Pagina Suggerimenti per il test](media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -135,9 +145,15 @@ Per verificare che sia stato creato correttamente un nuovo tipo di informazioni 
 
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>Modificare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità
 
-**Nota**: è possibile modificare solo i tipi di informazioni sensibili personalizzati; non è possibile modificare quelli predefiniti. Tuttavia, è possibile usare PowerShell per esportare i tipi di informazioni sensibili personalizzati predefiniti, personalizzarli e importarli come tipi di informazioni sensibili personalizzati. Per ulteriori informazioni, vedere [Personalizzare un tipo di informazioni sensibili predefinito](customize-a-built-in-sensitive-information-type.md).
+**Note**:
 
-Nel Centro sicurezza e conformità, accedere a **Classificazioni** \> **Tipi di informazioni sensibili** e selezionare il tipo di informazioni sensibili personalizzato da modificare.
+- È possibile modificare solo i tipi di informazioni sensibili personalizzati; non è possibile modificare quelli predefiniti. Tuttavia, è possibile usare PowerShell per esportare i tipi di informazioni sensibili personalizzati predefiniti, personalizzarli e importarli come tipi di informazioni sensibili personalizzati. Per ulteriori informazioni, vedere [Personalizzare un tipo di informazioni sensibili predefinito](customize-a-built-in-sensitive-information-type.md).
+
+- È possibile modificare solo i tipi di informazioni riservate personalizzati creati nell'interfaccia utente. Se è stata usata la [procedura di PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) per importare un pacchetto di regole di tipo di informazioni riservate personalizzato, si riceverà un messaggio di errore.
+
+Nel Centro sicurezza e conformità, accedere a **Classificazioni** \> **Tipi di informazioni sensibili**, selezionare il tipo di informazioni sensibili personalizzato da modificare e quindi fare clic su **Modifica**.
+
+  ![Posizione dei tipi di informazioni riservate e pulsante Modifica](media/scc-cust-sens-info-type-edit.png)
 
 Le stesse opzioni sono disponibili qui come quando è stato creato il tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -145,7 +161,7 @@ Le stesse opzioni sono disponibili qui come quando è stato creato il tipo di in
 
 Per verificare che sia stato modificato correttamente un tipo di informazioni sensibili, eseguire uno dei passaggi seguenti:
 
-  - Accedere a **Classificazioni** \> **Tipi di informazioni sensibili** per verificare le proprietà del tipo di informazioni sensibili personalizzato modificato.
+  - Accedere a **Classificazioni** \> **Tipi di informazioni sensibili** per verificare le proprietà del tipo di informazioni sensibili personalizzato modificato. 
 
   - Testare il tipo di informazioni sensibili personalizzato modificato. Per ulteriori informazioni, vedere [Testare i tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità](#test-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -161,12 +177,13 @@ Per verificare che sia stato modificato correttamente un tipo di informazioni se
 
 2. Nel menu a comparsa che viene visualizzato, fare clic su **Elimina** (o **Eliminare i tipi di informazioni sensibili** se ne sono stati selezionati più di uno).
 
+    ![Posizione dei tipi di informazioni riservate e pulsante Elimina](media/scc-cust-sens-info-type-delete.png)
+
 3. Nel messaggio di avviso che viene visualizzato, fare clic su **Sì**.
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
 Per accertarsi di aver rimosso correttamente un tipo di informazioni sensibili personalizzato, accedere a **Classificazioni** \> **Tipi di informazioni sensibili** per verificare che il tipo di informazioni sensibili personalizzato non sia più presente.
-
 
 ## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a>Testare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità
 
@@ -174,6 +191,14 @@ Per accertarsi di aver rimosso correttamente un tipo di informazioni sensibili p
 
 2. Selezionare uno o più tipi di informazioni sensibili personalizzati da testare. Nel menu a comparsa che viene visualizzato, fare clic su **Tipo di test** (o **Test dei tipi di informazioni sensibili** se ne sono stati selezionati più di uno).
 
-3. Nella pagina che viene visualizzata, caricare un documento per il test trascinando e rilasciando un file o facendo clic su **Sfoglia** e selezionando un file.
+    ![Posizione dei tipi di informazioni riservate e pulsante Tipo di test](media/scc-cust-sens-info-type-test.png)
+
+3. Nella pagina **Carica file da testare** che viene visualizzata, caricare un documento per il test trascinando e rilasciando un file o facendo clic su **Sfoglia** e selezionando un file.
+
+    ![Pagina Carica file da testare](media/scc-cust-sens-info-type-test-upload.png)
 
 4. Fare clic sul pulsante **Test** per testare il documento per individuare le corrispondenze al criterio nel file.
+
+5. Nella pagina **Risultati corrispondenza** fare clic su **Fine**.
+
+    ![Risultati corrispondenza](media/scc-cust-sens-info-type-test-results.png)
