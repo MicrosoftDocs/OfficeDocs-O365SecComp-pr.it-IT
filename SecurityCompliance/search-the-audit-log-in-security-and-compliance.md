@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il centro di conformità e sicurezza di Office 365 per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522808"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626152"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo nel centro conformità protezione di Office 365
 
@@ -40,9 +40,9 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
     
 - Attività di amministratore e utente oscillazione
     
-- attività di eDiscovery in Office 365 Security &amp; centro conformità
+- attività di eDiscovery nel centro conformità protezione di Office 365
     
-- Attività di amministrazione e utente in Power BI per Office 365
+- Attività di amministrazione e utente in Power BI
     
 - Attività amministratore e utente in Microsoft Teams
 
@@ -123,7 +123,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
     
 - I registri di controllo Exchange Online è costituita da due tipi di eventi: Exchange admin eventi (azioni eseguite dagli amministratori) e delle cassette postali (azioni eseguite dagli utenti di cassette postali). Si noti che il controllo delle cassette postali non è abilitato per impostazione predefinita. È necessario abilitare per ciascuna cassetta postale utente prima di eventi delle cassette postali da cercare nel Registro di controllo di Office 365. Per ulteriori informazioni sul controllo delle cassette postali e la cassetta postale il controllo delle azioni connessi, vedere [abilitare il controllo in Office 365](enable-mailbox-auditing.md).
     
-- Registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per eseguire la ricerca per le attività di Power BI nel Registro di controllo di Office 365, è necessario attivare il controllo nel portale di amministrazione di Power BI. Per ulteriori informazioni, vedere [Controllo Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per eseguire la ricerca per le attività di Power BI nel Registro di controllo di Office 365, è necessario attivare il controllo nel portale di amministrazione di Power BI. Per ulteriori informazioni, vedere la sezione "I registri di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
 ## <a name="search-the-audit-log"></a>Cercare i log di controllo
@@ -140,7 +140,7 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
   
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: Eseguire una ricerca dei registri di controllo
 
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Utilizzare una sessione di esplorazione privata (non regolare sessione) per accedere a Office 365 Security &amp; Allinea al centro conformità perché questo modo si eviteranno le credenziali che è stato eseguito l'accesso con è vietato. Per aprire una sessione di esplorazione InPrivate in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (noti come una finestra incognito), premere CTRL + MAIUSC + N. 
@@ -276,7 +276,6 @@ Per filtrare i risultati:
     
     Per una descrizione delle proprietà elencate nella colonna **AuditData** nel file CSV quando si scarica tutti i risultati e il servizio ogni si applica alla, vedere [informazioni dettagliate sulla proprietà in Office 365 Registro di controllo](detailed-properties-in-the-office-365-audit-log.md).
 
-  
 ## <a name="audited-activities"></a>Attività controllata
 
 Nelle tabelle di questa sezione vengono descritte le attività che vengono controllate in Office 365. È possibile eseguire la ricerca per eseguire l'accesso questi eventi cercando il controllo della sicurezza &amp; centro conformità. Fare clic sulla scheda **ricerca nel Registro di controllo** per istruzioni dettagliate. 
@@ -589,32 +588,9 @@ Per un elenco e una descrizione dettagliata delle attività di eDiscovery che ve
   
 ### <a name="power-bi-activities"></a>Attività di Power BI
   
-Nella tabella seguente sono elencati utente e le attività di amministrazione in Power BI che vengono registrate nel Registro di controllo di Office 365.
+È possibile cercare il Registro di controllo per le attività in Power BI. Per informazioni sulle attività di Power BI, vedere la sezione "Attività controllati da Power BI in Power BI" [utilizzando il controllo all'interno dell'organizzazione](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
- **Importante:** Registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per eseguire la ricerca per le attività di Power BI nel Registro di controllo di Office 365, è necessario attivare il controllo nel portale di amministrazione di Power BI. Per ulteriori informazioni, vedere [Controllo Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
-  
-|**Nome descrittivo**|**Operazione**|**Descrizione**|
-|:-----|:-----|:-----|
-|Sono stati aggiunti membri del gruppo Power BI  <br/> |AddGroupMembers  <br/> |Viene aggiunto un membro di un'area di lavoro di gruppo Power BI.  <br/> |
-|Set di dati di Power BI analizzati  <br/> |AnalyzedByExternalApplication  <br/> |Un set di dati viene analizzata tramite un'applicazione esterna.  <br/> |
-|Create dashboard Power BI  <br/> |CreateDashboard  <br/> |Viene creato un nuovo dashboard.  <br/> |
-|Gruppo creato Power BI  <br/> |CreateGroup  <br/> |Viene creato un gruppo.  <br/> |
-|Creazione dell'organizzazione pack contenuto Power BI  <br/> |CreateOrgApp  <br/> |Viene creato un pacchetto di contenuti dell'organizzazione.  <br/> |
-|Dashboard di Power BI eliminati  <br/> |DeleteDashboard  <br/> |Viene eliminato un dashboard.  <br/> |
-|Set di dati di Power BI eliminati  <br/> |DeleteDataset  <br/> |Viene eliminato un set di dati.  <br/> |
-|Eliminati report Power BI  <br/> |DeleteReport  <br/> |Un report viene eliminato.  <br/> |
-|Report Power BI scaricato  <br/> |DownloadReport  <br/> |Un utente scarica un report Power BI dal servizio al proprio computer.  <br/> |
-|Modificato dashboard Power BI  <br/> |EditDashboard  <br/> |Ridenominazione di un dashboard.  <br/> |
-|Esportato dati visual del report Power BI  <br/> |ExportReport  <br/> |Dati vengono esportati da una porzione di report.  <br/> |
-|Dati esportati porzione di Power BI  <br/> |ExportTile  <br/> |Dati vengono esportati da una porzione di dashboard.  <br/> |
-|Dashboard di Power BI stampate  <br/> |PrintDashboard  <br/> |Viene stampato un dashboard.  <br/> |
-|Pagina del report Power BI stampata  <br/> |PrintReport  <br/> |Stampare un report.  <br/> |
-|Pubblicato report Power BI web  <br/> |PublishToWebReport  <br/> |Un report viene pubblicato sul web.  <br/> |
-|Dashboard di Power BI condivisa  <br/> |ShareDashboard  <br/> |Un dashboard è condivisa.  <br/> |
-|Versione di valutazione di iniziata Power BI  <br/> |OptInForProTrial  <br/> |Un utente avvia una sottoscrizione di prova Power BI Pro.  <br/> |
-|Impostazioni di Power BI dell'organizzazione aggiornato  <br/> |UpdatedAdminFeatureSwitch  <br/> |Un amministratore modifica un'impostazione dell'organizzazione nel portale di amministrazione di Power BI.  <br/> |
-|Dashboard visualizzati Power BI  <br/> |ViewDashboard  <br/> |Viene visualizzato un dashboard.  <br/> |
-|Visualizzati report Power BI  <br/> |Visualizza report  <br/> |Visualizzare un report.  <br/> |
+Si noti che non è abilitata la registrazione di controllo per Power BI per impostazione predefinita. Per eseguire la ricerca per le attività di Power BI nel Registro di controllo di Office 365, è necessario attivare il controllo nel portale di amministrazione di Power BI. Per ulteriori informazioni, vedere la sezione "I registri di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
 ### <a name="microsoft-teams-activities"></a>Attività Teams Microsoft
   
