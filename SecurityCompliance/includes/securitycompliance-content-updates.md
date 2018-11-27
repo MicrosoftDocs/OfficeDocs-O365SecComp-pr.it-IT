@@ -100,7 +100,7 @@
 |------|------------|--------|
 | 23/10/2018 | [Installazione del servizio EOP](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | modificato |
 | 23/10/2018 | [Ulteriori informazioni su spoof intelligence](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | modificato |
-| 23/10/2018 | [Gestire indagini legale in Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | modificato |
+| 23/10/2018 | [Gestione di indagini legali in Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | modificato |
 | 24/10/2018 | [Introduzione a Office 365 Threat Intelligence](/Office365/SecurityCompliance/get-started-with-ti) | modificato |
 | 24/10/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
 | 24/10/2018 | [Invio di notifiche di posta elettronica e la visualizzazione di suggerimenti sui criteri per i criteri DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | modificato |
@@ -163,7 +163,7 @@
 | 6/11/2018 | [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | modificato |
 | 6/11/2018 | [Dettagli tecnici di riferimento sulla crittografia in Office 365](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | modificato |
 | 11/8/2018 | [Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificato |
-| 11/8/2018 | [Ricerca di contenuto in Office 365](/Office365/SecurityCompliance/search-for-content) | modificato |
+| 11/8/2018 | [Ricerca di contenuti in Office 365](/Office365/SecurityCompliance/search-for-content) | modificato |
 | 11/8/2018 | [Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | modificato |
 | 11/8/2018 | [Allegati Safe degli strumenti di analisi di Office 365](/Office365/SecurityCompliance/atp-safe-attachments) | modificato |
 | 11/8/2018 | [Pagine di avviso degli strumenti di analisi collegamenti attendibili di Office 365](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modificato |
@@ -215,3 +215,13 @@
 | 16/11/2018 | [Panoramica dei criteri di conservazione](/Office365/SecurityCompliance/retention-policies) | modificato |
 | 16/11/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
 | 16/11/2018 | [Utilizzare Esplora in sicurezza &amp; centro conformità](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modificato |
+
+
+## <a name="week-of-november-19-2018"></a>Settimana del 19 novembre 2018
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 19/11/2018 | [Utilizzare Compliance Manager per soddisfare i requisiti normativi e la protezione dei dati quando si utilizzano i servizi cloud Microsoft](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | modificato |
+| 19/11/2018 | [Attivare il componente aggiuntivo Segnala messaggio](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificato |
+| 20/11/2018 | [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificato |
