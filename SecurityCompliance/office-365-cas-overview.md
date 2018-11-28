@@ -3,7 +3,6 @@ title: Panoramica di Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: "Protezione di Office 365 Cloud App offre offre informazioni sul attività sospette in Office 365 in modo che è possibile ricercare situazioni in cui sono potenzialmente problematici e, se necessario, eseguire un'azione per risolvere i problemi di sicurezza. "
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530526"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706400"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Panoramica di Office 365 Cloud App Security
   
@@ -40,13 +39,9 @@ Protezione di Office 365 Cloud App vengono fornite informazioni sulle attività 
   
 Accedere al portale di protezione di applicazioni di Office 365 Cloud mediante la protezione di Office 365 è possibile &amp; centro conformità. Ecco un modo efficace per eseguire questa operazione:
   
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
     
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**. 
-    
-    ![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    (Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
+2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**. <br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
     
 3. Scegliere **Vai a Office 365 Cloud App protezione**. 
     
@@ -62,7 +57,7 @@ Per visualizzare/Usa modelli dei criteri, nel portale di Office 365 Cloud App pr
   
 Per ulteriori informazioni sui criteri, vedere le risorse seguenti:
   
-- [Criteri di attività e gli avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
+- [Criteri delle attività e avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Criteri di rilevamento delle anomalie in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
@@ -76,7 +71,7 @@ Come gli avvisi verranno attivati è possibile rivedere per ulteriori informazio
   
 Per ulteriori informazioni sugli avvisi, vedere le risorse seguenti:
   
-- [Criteri di attività e gli avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
+- [Criteri delle attività e avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Criteri di rilevamento delle anomalie in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
@@ -106,7 +101,7 @@ Per accedere a questa pagina, passare a **indagare** \> **le autorizzazioni dell
   
 ![Nel portale di accesso client di Office 365, selezionare indagare.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Gestire le autorizzazioni dell'app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+[Gestire le autorizzazioni delle app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Dashboard di individuazione cloud
 
@@ -118,7 +113,7 @@ Per ottenere questo dashboard nel portale Office 365 Cloud App sicurezza passare
   
 ![Nel portale di accesso client di Office 365, selezionare individuazione](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-[Esaminare i risultati di App Discovery in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+[Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
   
 ## <a name="next-steps"></a>Passaggi successivi
 

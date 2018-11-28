@@ -1,5 +1,5 @@
 ---
-title: 'Istruzioni dettagliate: da una dashboard ad un approfondimento'
+title: 'Procedura: da una dashboard alle informazioni dettagliate'
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: Informazioni su come è possibile passare da un dashboard a delle conoscenze con le azioni consigliate per la protezione &amp; centro conformità.
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531188"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706150"
 ---
-# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Istruzioni dettagliate: da una dashboard ad un approfondimento
+# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procedura: da una dashboard alle informazioni dettagliate
 
 Se non si conosce [report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md), possono essere utili per visualizzare come è possibile passare da un dashboard a delle conoscenze e azioni consigliate. 
   
@@ -30,7 +30,7 @@ Questa è una delle diverse procedure dettagliate per la sicurezza &amp; centro 
 
 Verrà ora esaminato il flusso da un dashboard a un report a delle conoscenze e l'azione. (È riportato un breve [intelligence spoofing](learn-about-spoof-intelligence.md) ). 
   
-1. Si inizia con il dashboard di sicurezza in sicurezza &amp; centro conformità. (Passare alla **gestione delle minacce** \> **Dashboard**.)
+1. Si inizia con il dashboard di sicurezza nel [protezione &amp; centro conformità](https://security.microsoft.com). (Passare alla **gestione delle minacce** \> **Dashboard**.)
     
     ![In sicurezza &amp; centro conformità, scegliere gestione rischio \> Dashboard](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

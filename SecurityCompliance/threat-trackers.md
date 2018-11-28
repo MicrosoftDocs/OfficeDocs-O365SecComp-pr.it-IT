@@ -1,9 +1,8 @@
 ---
-title: Registrazioni di minaccia, nuove e importanti
+title: 'Indicatori delle minacce: nuove e importanti'
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Informazioni sulle minacce Tracker, inclusi nuovi Tracker degne di nota, per consentire all'organizzazione di essere informati su problemi di protezione.
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530695"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706380"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Registrazioni di minaccia, nuove e importanti
+# <a name="threat-trackers---new-and-noteworthy"></a>Indicatori delle minacce: nuove e importanti
 
-[Business Intelligence di Office 365 rischio](office-365-ti.md) consente a team di protezione dell'organizzazione individuare ed eseguire l'azione contro le minacce alla sicurezza informatica necessaria. **Che iniziano in ritardo 2018 marzo e successivo varie settimane, Business Intelligence di Office 365 Threat include nuove funzionalità di rischio Tracker**, tra cui Tracker degne di nota. In questo articolo viene fornita una panoramica dei passaggi successivi e nuove caratteristiche. 
+[Business Intelligence di Office 365 rischio](office-365-ti.md) consente a team di protezione dell'organizzazione individuare ed eseguire l'azione contro le minacce alla sicurezza informatica necessaria. A partire in ritardo 2018 marzo e varie settimane successivo, Business Intelligence di Office 365 rischio includerà nuove funzionalità di rischio Tracker, tra cui Tracker degne di nota. In questo articolo viene fornita una panoramica dei passaggi successivi e nuove caratteristiche. 
   
 ## <a name="what-are-threat-trackers"></a>Che cosa sono i tracker minaccia?
 
@@ -36,7 +35,7 @@ Quasi tutte le pagine di arresto includono i numeri di tendenza che vengono aggi
   
 Tracker sono solo alcune delle principali funzionalità numero che viene visualizzato con [Office 365 rischio Intelligence](office-365-ti.md). Quando è disponibile, il nuovo Tracker rischio includerà [Tracker degne di nota](threat-trackers.md#notey), [tendenza Tracker](threat-trackers.md#trending), [query revisioni](threat-trackers.md#trackedq)e [query salvata](threat-trackers.md#savedq).
   
-Per visualizzare e utilizzare il Tracker rischio quando sono disponibili per l'organizzazione, passare alla protezione &amp; centro conformità ([https://protection.office.com](https://protection.office.com)) e scegliere **Threat management** \> **tracker rischio**.
+Per visualizzare e utilizzare il Tracker rischio quando sono disponibili per l'organizzazione, passare alla protezione &amp; centro conformità ([https://security.microsoft.com](https://security.microsoft.com)) e scegliere **Threat management** \> **tracker rischio**.
   
 > [!NOTE]
 > Per utilizzare Tracker rischio, è necessario essere un amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
@@ -75,7 +74,7 @@ Se si sta esaminando posta, contenuto o le attività di Office (disponibile a br
   
 Quando Tracker rischio è possibile utilizzare, provare a tali moduli - e ricordare che è possibile sempre fornire commenti su questo o altre funzionalità di protezione di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo inferiore destro della [Panoramica di Office 365 Protezione &amp; centro conformità](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Protezione di Office 365 &amp; centro conformità](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Centro sicurezza e &amp;conformità di Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Tracker e la protezione di Office 365 rischio avanzate
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Criteri di rilevamento anomalia in Office 365 Cloud App Security utilizzano algoritmi incorporati per individuare eventuali problemi potenziali. È consigliabile avere criterio rilevamento anomalie in almeno un, che è possibile ottimizzare (quando viene creato) utilizzando i filtri. '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531382"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706340"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Criteri di rilevamento delle anomalie in Office 365 Cloud App Security
 
@@ -39,7 +39,7 @@ Come [amministratore globale o sicurezza](permissions-in-the-security-and-compli
  > [!IMPORTANT]
 > Non esiste un periodo di formazione iniziale di sette (7) giorni non attivati durante il quale gli avvisi comportamenti anomali. Algoritmo di rilevamento anomalia è ottimizzato per ridurre il numero dei falsi allarmi. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Verificare quanto segue:
   
@@ -51,7 +51,7 @@ Verificare quanto segue:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Consente di visualizzare i criteri di rilevamento anomalia
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     
@@ -93,7 +93,7 @@ Nella tabella seguente vengono descritti i criteri di rilevamento anomalia prede
 
 Come gli avvisi sono disponibili in, è possibile esaminare gli avvisi in modo rapido e determinare quali gestire prima. Contesto per un avviso consente di verificare la visione e determinare se un elemento dannoso avviene in effetti. Per iniziare l'esplorazione di un avviso, utilizzare la procedura seguente:
   
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     
@@ -118,7 +118,6 @@ Come gli avvisi sono disponibili in, è possibile esaminare gli avvisi in modo r
 Un avviso in più account di accesso non riuscito effettivamente potrebbe essere potenzialmente dannoso e può indicare un potenziali attacchi di forza bruta. Tuttavia, ad esempio un avviso può inoltre essere una configurazione non corretta applicazione, causando l'avviso da un vero positivo benigno. Se viene visualizzato un avviso di accessi non è riuscita più con ulteriori attività sospetti, esiste una maggiore probabilità che un account viene compromesso. Ad esempio, si supponga che un avviso di accesso non riuscito multiplo è seguito da attività da un indirizzo IP TOR e attività impossibili viaggi, entrambi forti indicatori compromesso. Se viene visualizzata anche che lo stesso utente eseguita un'attività di massa download, spesso è un indicatore dell'autore dell'attacco esegue exfiltration dei dati. Di informazioni simili a quelle che potrebbero essere utili nella sicurezza di Office 365 Cloud App di visualizzare e valutare gli avvisi e intervenire in caso di necessità.
   
 ## <a name="next-steps"></a>Passaggi successivi
-<a name="nextsteps"> </a>
 
 - [Integrare il server SIEM](integrate-your-siem-server-with-office-365-cas.md)
     

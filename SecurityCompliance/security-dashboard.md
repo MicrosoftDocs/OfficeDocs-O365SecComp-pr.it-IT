@@ -3,7 +3,7 @@ title: Panoramica della sicurezza di dashboard
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Utilizzare il nuovo Dashboard di protezione di Office 365 Threat Protection stato revisione e visualizzare e gestire gli avvisi di protezione.
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552364"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706280"
 ---
 # <a name="security-dashboard-overview"></a>Panoramica della sicurezza di dashboard
 
-La sicurezza &amp; centro conformità consente all'organizzazione di gestire la protezione dei dati e conformità. Inizio in 2018 marzo, la sicurezza &amp; centro conformità delle funzionalità di un nuovo Dashboard sicurezza è possibile utilizzare per controllare lo stato di protezione di rischio, visualizzare e agire avvisi di protezione. 
+Il [protezione &amp; centro conformità](go-to-the-securitycompliance-center.md) consente all'organizzazione di gestire la protezione dei dati e conformità. Inizio in 2018 marzo, la sicurezza &amp; centro conformità delle funzionalità di un nuovo Dashboard sicurezza è possibile utilizzare per controllare lo stato di protezione di rischio, visualizzare e agire avvisi di protezione. 
   
 Guardare il video per una panoramica e leggere questo articolo per ulteriori informazioni.
   
@@ -41,7 +41,7 @@ In base alle quali include la sottoscrizione a Office 365 dell'organizzazione, i
 Per visualizzare il Dashboard di protezione, nelle [protezione di Office 365 &amp; centro conformità](go-to-the-securitycompliance-center.md), andare alla **gestione delle minacce** \> **Dashboard**.
   
 > [!NOTE]
-> È necessario essere un amministratore globale Office 365, l'amministratore della sicurezza o lettore di protezione per visualizzare il Dashboard di sicurezza. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
+> È necessario essere un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di protezione per visualizzare il Dashboard di sicurezza. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-protection-status"></a>Stato di protezione di rischio
 

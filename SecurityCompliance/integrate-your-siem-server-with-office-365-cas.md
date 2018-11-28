@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: È possibile integrare il server SIEM con Office 365 Cloud App protezione. In questo articolo per una panoramica del funzionamento e su come configurarla.
-ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450761"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706410"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrare il server SIEM con Office 365 Cloud App Security
   
@@ -67,7 +67,7 @@ Protezione di Office 365 Cloud App supporta attualmente server SIEM seguenti:
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Passaggio 1: Configurarlo in un agente SIEM nella sicurezza App Cloud di Office 365
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
     
 2. Accedere agli **avvisi** \> **Gestione avanzata degli avvisi**.
     
@@ -122,9 +122,13 @@ Dopo aver fare clic su Chiudi e uscire dalla procedura guidata, nella schermata 
     ```
 
 - Parametri [] tra parentesi quadre sono facoltativi e devono essere utilizzati solo se pertinenti. Utilizzare le variabili seguenti:
+
     - **DIRNAME** è il percorso della directory da utilizzare per i registri di debug agente locale.
+
     - **Indirizzo [: porta]** è l'indirizzo del server proxy e la porta utilizzati dal server per la connessione a Internet.
+
     - **TOKEN** è il token agente SIEM che sono stati copiati in routine prima.
+
     - Per visualizzare la Guida, digitare `-h`. 
   
 ## <a name="step-3-validate-that-the-siem-agent-is-working"></a>Passaggio 3: Verificare che l'agente SIEM funzioni correttamente

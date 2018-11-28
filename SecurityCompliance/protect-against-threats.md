@@ -3,7 +3,6 @@ title: Protezione contro le minacce in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Informazioni su come Office 365 Enterprise consente di proteggere l'organizzazione da una serie di rischi, tra cui lo spoofing malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
-ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496850"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706060"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione contro le minacce in Office 365
 
@@ -28,11 +27,11 @@ Con Office 365 Enterprise, è possibile proteggere l'organizzazione da una serie
 
 Se si utilizza un dominio personalizzato in Office 365, utili per arrestare truffe di false mittente dall'organizzazione, migliorare la protezione della posta elettronica e protezione reputazione del dominio.
   
-- [Impedire attacchi di spoofing con SPF](https://go.microsoft.com/fwlink/?linkid=851943)
+- [Impedire attacchi di spoofing con SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
     
-- [Convalidare la posta elettronica con DKIM](https://go.microsoft.com/fwlink/?linkid=851944)
+- [Convalidare la posta elettronica con DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
     
-- [Convalidare la posta elettronica con DMARC](https://go.microsoft.com/fwlink/?linkid=832951)
+- [Convalidare la posta elettronica con DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
     
 ## <a name="anti-spam-amp-anti-malware"></a>Protezione da posta indesiderata &amp; anti-malware
 
@@ -40,11 +39,11 @@ Informazioni sulle punteggio protezione da posta indesiderata di Office 365, il 
   
 - [Protezione da posta indesiderata &amp; protezione anti-malware](anti-spam-and-anti-malware-protection.md)
     
-- [Attivare la registrazione per la posta elettronica](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [Attivare la registrazione per la posta elettronica]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
     
 - [I messaggi di posta elettronica in quarantena in Office 365](quarantine-email-messages.md)
     
-- [Inviare contenuto potenzialmente dannoso a Microsoft](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [Inviare contenuto potenzialmente dannoso a Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
     
 ## <a name="advanced-threat-protection"></a>Protezione avanzata dalle minacce
 

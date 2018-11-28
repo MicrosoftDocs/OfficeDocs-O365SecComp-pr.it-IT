@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: Informazioni su come Office 365 rischio Intelligence consentono alle organizzazioni rilevare intrusioni e delle minacce e rapidamente ad attenuare il rischio e il ripristino da minacce.
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531356"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706100"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Proteggere gli utenti di Office 365 con Office 365 Threat Intelligence
 
- *Fai a sapere che gli utenti di Office 365 sono in attacco o peggiori - esposto a possibili violazioni? Imparare a ridurre e il ripristino dagli attacchi di destinazione gli utenti? Non tutti sanno a tale scopo esattamente le funzionalità di sicurezza che sono già disponibili in Office 365.* 
+## <a name="overview"></a>Panoramica
+
+Fai a sapere che gli utenti di Office 365 sono in attacco o peggiori - esposto a possibili violazioni? Imparare a ridurre e il ripristino dagli attacchi di destinazione gli utenti? Non tutti sanno a tale scopo esattamente le funzionalità di sicurezza che sono già disponibili in Office 365. 
   
 [Business Intelligence di Office 365 rischio](office-365-ti.md) è una famiglia di prodotti delle funzionalità incluse in abbonamento a Office 365 E5. Office 365 rischio Intelligence con Microsoft IT ha potuto ridurre tempo medio di risoluzione per il social engineering risolte 80% e aumentare la velocità effettiva maiuscole 37% al mese rispetto ai trimestri 2! 
   
@@ -30,9 +32,9 @@ Sono state aggiunte recentemente le nuove funzionalità che consentono di miglio
   
 ## <a name="detect-intrusions-and-threats"></a>Rilevare intrusioni e minacce
 
-**Office 365 rischio Explorer** consente gli amministratori di sicurezza e agli analisti identificano e comprendere i rischi attivi della tua azienda poiché anche le impostazioni di protezione più complesse possono essere venga eluso da configurazioni utente apparentemente semplice come whitelists mittenti attendibili. Rischio Explorer consente di Office 365 globale o gli amministratori di sicurezza rapidamente determinano se gli utenti siano state compromesse per le minacce, ad esempio malware o per attività di phishing. Ciò consente di impostare la priorità di cui gli utenti sono più il rischio di una minaccia e la risposta richiesta. 
+[Explorer](use-explorer-in-security-and-compliance.md) (anche noto come Explorer rischio) consente agli analisti identificare e comprendere le minacce che siano attive in ambito aziendale poiché anche le impostazioni di protezione più complesse possono essere venga eluso da configurazioni utente apparentemente semplice come sicure e gli amministratori di sicurezza whitelists mittente. Explorer aiuta a Office 365 globale o gli amministratori di protezione di determinare rapidamente se gli utenti siano state compromesse per le minacce, ad esempio malware o per attività di phishing. Ciò consente di impostare la priorità di cui gli utenti sono più il rischio di una minaccia e la risposta richiesta. 
   
-Rischio Explorer modo admins esplorare le relazioni tra gli utenti e posta elettronica. Conoscenza di un particolare messaggio è stato non valido. Effettuare una ricerca visualizzare gli utenti che ricevevano il messaggio di posta, seguire la serie di eventi e vedere cosa gli utenti a sua volta essere stata eseguita.
+Explorer consente inoltre gli amministratori di esplorare le relazioni tra utenti e della posta. Conoscenza di un particolare messaggio è stato non valido. Effettuare una ricerca visualizzare gli utenti che ricevevano il messaggio di posta, seguire la serie di eventi e vedere cosa gli utenti a sua volta essere stata eseguita.
 
 Se si dispone già di Business Intelligence di rischio, [Provalo ora](https://aka.ms/tryo365threatintel3)! E [informazioni su ulteriori informazioni su Business Intelligence di Office 365 rischio](https://aka.ms/readmoreabouto365threatintel).
   

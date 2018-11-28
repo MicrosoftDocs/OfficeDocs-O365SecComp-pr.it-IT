@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Informazioni su come attivare degli strumenti di analisi di SharePoint, OneDrive e team, nonché su come impostare gli avvisi per file rilevati.
-ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: e9df56da5d5f1a087d4e75e0122b51933ae7b315
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699939"
+ms.locfileid: "26706450"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
 
@@ -29,7 +29,7 @@ Per eseguire le attività descritte in questo articolo, è necessario disporre d
 
  **Prima di iniziare questa procedura, verificare che la registrazione di controllo è stata abilitata per l'ambiente Office 365**. Questo viene in genere eseguito da un utente che disponga del ruolo registri di controllo assegnato in Exchange Online. Per ulteriori informazioni, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md).
   
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di lavoro o della scuola.
+1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com)e accedere con l'account di lavoro o della scuola.
     
 2. In Office 365 Security &amp; centro conformità, nel riquadro di spostamento a sinistra, in **gestione rischio**, scegliere **criterio** \> **Gli allegati sicuri**. <br/>![In sicurezza &amp; centro conformità, scegliere gestione rischio \> criteri](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
@@ -55,7 +55,7 @@ Per ulteriori informazioni sull'esperienza utente quando viene rilevato un file 
 
 Per ricevere una notifica quando un file in SharePoint Online, OneDrive per Business o Microsoft Teams è stato identificato come moleste, è possibile impostare un avviso.
   
-1. In Office 365 Security &amp; centro conformità, selezionare **avvisi** \> **Gestisci avvisi**.
+1. Nella [protezione di Office 365 &amp; centro conformità](https://security.microsoft.com), scegliere **avvisi** \> **Gestisci avvisi**.
     
 2. Scegliere **nuovo criterio di avviso**.
     

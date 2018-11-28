@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: Integrare protezione rischio avanzate di Office 365 con Windows Defender avanzate rischio di protezione per visualizzare ulteriori informazioni sulla gestione di rischio.
-ms.openlocfilehash: 574594d5881853b268713e0bb74444ae80ffcf46
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530509"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706140"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrare Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection
 
@@ -34,7 +34,7 @@ In questo esempio, è possibile visualizzare che i destinatari del messaggio di 
 
 - L'organizzazione deve disporre degli strumenti di analisi di Windows Defender e Business Intelligence di Office 365 rischio.
     
-- È necessario essere un amministratore globale di Office 365 o disporre di un ruolo di amministratore della sicurezza assegnato nella protezione &amp; centro conformità. (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md))
+- È necessario essere un amministratore globale di Office 365 o disporre di un ruolo di amministratore di sicurezza assegnato nella versione di [protezione &amp; centro conformità](https://security.microsoft.com). (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md))
     
 - È necessario avere accesso a Office 365 rischio Intelligence e portale degli strumenti di analisi di Windows Defender.
     
@@ -42,7 +42,7 @@ In questo esempio, è possibile visualizzare che i destinatari del messaggio di 
 
 Integrazione di Business Intelligence di rischio di Office 365 con degli strumenti di analisi di Windows Defender è configurato in Office 365 e nel portale degli strumenti di analisi di Windows Defender.
   
-1. Office 365 globale o un amministratore della sicurezza, passare a [https://portal.office.com](https://portal.office.com) e accedere con l'account di lavoro o della scuola per Office 365. 
+1. Office 365 globale o un amministratore della sicurezza, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere con l'account di lavoro o della scuola per Office 365. 
     
 2. Scegliere **gestione rischio** \> **explorer rischio**.
     

@@ -1,9 +1,8 @@
 ---
-title: Esaminare i risultati di App Discovery in Office 365 Cloud App Security
+title: Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Esame dei report di individuazione app nella gestione della protezione avanzata consentono di ulteriori informazioni sull'utilizzano di applicazioni basate su cloud persone nell'organizzazione. Dopo aver creato i rapporti di individuazione app utilizzando i file di registro dai firewall e proxy, esaminare i risultati nel dashboard di individuazione applicazioni.
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530206"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706260"
 ---
-# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Esaminare i risultati di App Discovery in Office 365 Cloud App Security
+# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security
   
 |Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
 |:-----|:-----|:-----|:-----|
@@ -36,9 +35,7 @@ Il dashboard di individuazione Cloud utilizza i registri di traffico web dell'or
 
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
     
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
-    
-    (Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
+2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.<br/>(Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
     
 3. Scegliere **Vai a Office 365 Cloud App protezione**.
     
@@ -70,21 +67,11 @@ Il dashboard di individuazione Cloud viene fornita una panoramica in rapida di a
     
 2. Utilizzare la sezione filtri per visualizzare le App per nome, categoria, il livello di utilizzo o ultimo considerata data.
     
-3. Nell'elenco dei risultati al passaggio del mouse per un nome di applicazione per visualizzare il collegamento **Visualizza i sottodomini** . 
+3. Nell'elenco dei risultati al passaggio del mouse per un nome di applicazione per visualizzare il collegamento **Visualizza i sottodomini** .<br/> ![Al passaggio del mouse accanto a un'applicazione per visualizzare un collegamento per visualizzare i dettagli sottodominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Informazioni dettagliate sull'app selezionata verranno visualizzato.
     
-    ![Al passaggio del mouse accanto a un'applicazione per visualizzare un collegamento per visualizzare i dettagli sottodominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    Informazioni dettagliate sull'app selezionata verranno visualizzato.
+4. Per visualizzare informazioni dettagliate sugli indirizzi IP, fare clic sulla scheda **indirizzi IP** .<br/>![Individuazione cloud Visualizza informazioni dettagliate sugli indirizzi IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Nell'elenco dei risultati, selezionare un singolo indirizzo IP per visualizzare informazioni più dettagliate.
     
-4. Per visualizzare informazioni dettagliate sugli indirizzi IP, fare clic sulla scheda **indirizzi IP** . 
-    
-    ![Individuazione cloud Visualizza informazioni dettagliate sugli indirizzi IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    Nell'elenco dei risultati, selezionare un singolo indirizzo IP per visualizzare informazioni più dettagliate.
-    
-5. Per visualizzare informazioni dettagliate sugli utenti di Office 365 all'interno dell'organizzazione, fare clic sulla scheda **utenti** . 
-    
-    ![Individuazione cloud - informazioni gli utenti](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Per visualizzare informazioni dettagliate sugli utenti di Office 365 all'interno dell'organizzazione, fare clic sulla scheda **utenti** .<br/>![Individuazione cloud - informazioni gli utenti](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>Esclude le entità
 

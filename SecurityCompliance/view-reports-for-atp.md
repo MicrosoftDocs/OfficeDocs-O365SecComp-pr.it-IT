@@ -3,6 +3,7 @@ title: Visualizzare i report per la protezione rischio avanzate di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552334"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706320"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -34,7 +35,7 @@ La relazione **Sullo stato di protezione di rischio** è una singola visualizzaz
 > [!NOTE]
 > Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio, la relazione sullo stato di protezione di rischio per i clienti degli strumenti di analisi conterrà informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team di Microsoft](atp-for-spo-odb-and-teams.md). Tali informazioni sono specifiche di strumenti di analisi, in modo che i clienti che dispongono di EOP, ma non degli strumenti di analisi non visualizzerà i dettagli nel loro relazione sullo stato di protezione di rischio.
   
-Per visualizzare il report di stato di protezione di rischio, in sicurezza &amp; centro conformità, passare a **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+Per visualizzare il report di stato di protezione di rischio, nelle [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione rischio degli strumenti di analisi](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ Per impostazione predefinita, il rapporto di stato di protezione di rischio Most
 
 Nel rapporto di **Tipi di File degli strumenti di analisi** viene visualizzato il tipo di file rilevato come dannoso per [Gli allegati sicuri degli strumenti di analisi](atp-safe-attachments.md).
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Tipi di File degli strumenti di analisi**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Tipi di File degli strumenti di analisi**.
   
 ![Report di tipi di File degli strumenti di analisi](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ Quando si sposta su un giorno particolare, è possibile visualizzare la suddivis
 
 Il rapporto di **Disposizione degli strumenti di analisi del messaggio** Mostra le azioni eseguite per i messaggi di posta elettronica che sono stati rilevati con contenuto dannoso. 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Disposizione degli strumenti di analisi del messaggio**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Disposizione degli strumenti di analisi del messaggio**.
   
 ![Rapporto di eliminazione degli strumenti di analisi messaggi](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -79,7 +80,7 @@ Quando passa il mouse su una barra nel grafico, è possibile visualizzare le azi
 Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diversi altri report disponibili, come descritto nella tabella riportata di seguito:
 
 
-|Tipo di rapporto  |Altre informazioni  |
+|Tipo di rapporto  |Ulteriori informazioni  |
 |---------|---------|
 |**Rapporti sulla protezione posta elettronica**, ad esempio primi mittenti e destinatari report, un report di posta elettronica di spoofing e un rapporto sui rilevamenti di posta indesiderata. | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](view-email-security-reports.md)        |
 |**Explorer** (detto anche Explorer rischio, questa è inclusa funzionalità di [Business Intelligence di Office 365 rischio](office-365-ti.md))     | [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md)        |
@@ -89,12 +90,24 @@ Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diver
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Autorizzazioni necessarie per visualizzare i report degli strumenti di analisi?
 
-Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato nella protezione &amp; centro conformità e nell'interfaccia di amministrazione di Exchange.
-  
-|**Gruppo di ruoli**|**Dove assegnato**|**Altre informazioni**|
-|:-----|:-----|:-----|
-| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-- Sicurezza amministratore  <br/>-- Protezione lettore  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-Gestione organizzazione sola visualizzazione  <br/>-Ruolo destinatari View-Only  <br/>: Gestione della conformità  <br/> |Interfaccia di amministrazione di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange.
+
+- Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
+    - Gestione organizzazione
+    - Amministratore della sicurezza
+    - Lettore di sicurezza
+
+- Per Exchange Online deve essere uno dei seguenti ruoli assegnati:
+    - Gestione organizzazione
+    - Gestione organizzazione in sola visualizzazione
+    - Ruolo Destinatari di sola lettura
+    - Gestione della conformità
+
+Per ulteriori informazioni, vedere le risorse seguenti:
+
+- [Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
+
+- [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se il report non vengono visualizzate dati?
 

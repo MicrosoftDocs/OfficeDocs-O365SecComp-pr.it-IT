@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Amministratore globale di Office 365, è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e trovare gli utenti vulnerabili prima di un attacco reale accede a un'azienda.
-ms.openlocfilehash: ccef127c4ce4d806ef9af04673b8c68d82ce9ec6
-ms.sourcegitcommit: 7c55721b51b2f321537a0cdad6644abf91996710
+ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26256441"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706440"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -26,7 +26,7 @@ ms.locfileid: "26256441"
   
 ## <a name="the-attacks"></a>Gli attacchi
 
-Attualmente, sono disponibili tre tipi di simulazioni attacco:
+Tre tipi di simulazioni attacco sono attualmente disponibili:
   
 - [Attacco spear phishing nome di visualizzazione](attack-simulator.md#spearphish)
     
@@ -66,7 +66,7 @@ Questo attacco è incentrata su che consente di modificare che viene visualizzat
   
 È possibile creare l'editor HTML avanzata direttamente nel campo del **corpo del messaggio di posta elettronica** direttamente o lavorare con origine HTML. Esistono due campi importanti per l'inclusione in HTML: 
   
-1. In sicurezza &amp; centro conformità, scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nella [protezione &amp; centro conformità](https://security.microsoft.com), scegliere **gestione rischio** \> **simulatore di attacco**.
     
 2. Specificare un nome significativo campagna per l'attacco o selezionare un modello. <br/>![Pagina iniziale di phishing](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ Questo attacco è incentrata su che consente di specificare una password comune 
   
 ### <a name="to-simulate-a-password-spray-attack"></a>Per simulare un attacco spray password
 
-1. In sicurezza &amp; centro conformità, scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nella [protezione &amp; centro conformità](https://security.microsoft.com), scegliere **gestione rischio** \> **simulatore di attacco**.
     
 2. Specificare un nome significativo campagne un attacco.
     
@@ -112,7 +112,7 @@ Un attacco di forza bruta password in un'organizzazione viene utilizzato in gene
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Per simulare un attacco di forza bruta password
 
-1. In sicurezza &amp; centro conformità, scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nella [protezione &amp; centro conformità](https://security.microsoft.com), scegliere **gestione rischio** \> **simulatore di attacco**.
     
 2. Specificare un nome significativo campagne un attacco.
     

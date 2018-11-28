@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 description: Scoprire come Office 365 rischio Intelligence consentono le minacce contro l'organizzazione di ricerca, rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e ricerca per gli indicatori di rischio. Business Intelligence di rischio è incorporata in Office 365 E5 offerte di sistema di sicurezza e conformità.
-ms.openlocfilehash: bb6c254f90ba2d6ef5f7432b6fe1b44c80bcbfcf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fb273b7d8f71cecb04722dfd6ea4b69b103123f5
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531200"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26705850"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 Threat Intelligence
 
@@ -31,7 +31,7 @@ Consente agli analisti di protezione di Office 365 rischio Intelligence e gli am
 3. Fornitura di informazioni e conoscenze per evitare attacchi organizzazione
     
 > [!IMPORTANT]
-> Business Intelligence di Office 365 rischio è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, Business Intelligence di Office 365 rischio può essere acquistato come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Business Intelligence di Office 365 rischio è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, Business Intelligence di Office 365 rischio può essere acquistato come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 ## <a name="what-do-you-want-to-do"></a>Per saperne di più
 

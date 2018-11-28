@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Informazioni su dove è possibile per visualizzare informazioni sui file dannosi rilevato in SharePoint, OneDrive o team e come eseguire l'azione necessaria tali file.
-ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238508"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706200"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft
 
 [Degli strumenti di analisi di Office 365 per SharePoint, OneDrive e team Microsoft che](atp-for-spo-odb-and-teams.md) consente di proteggere l'organizzazione da file dannosi nelle raccolte documenti e siti del team. Quando un file dannoso viene rilevato, tale file è bloccato in modo che non possono aprire, copiare, spostare o condividerlo fino a quando non vengono intraprese azioni ulteriormente dal team di protezione dell'organizzazione. In questo articolo per informazioni su come visualizzare informazioni sui file rilevati e le azioni da intraprendere. 
 
-Per eseguire le attività descritte in questo articolo, è necessario disporre di volte necessario [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
+Per eseguire le attività descritte in questo articolo, è necessario disporre di volte necessario [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Visualizzare i report con informazioni sul file rilevati
 
 Per visualizzare lo stato e informazioni dettagliate sui file che sono stati rilevati da strumenti di analisi di Office 365, è possibile utilizzare la relazione sullo stato di protezione di rischio.
   
-1. In Office 365 Security &amp; centro conformità, selezionare **rapporti** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+1. Nella [protezione di Office 365 &amp; centro conformità](https://security.microsoft.com), scegliere **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
     
 2. Nell'angolo superiore destro del report, scegliere **Visualizza dettagli tabella**.
     

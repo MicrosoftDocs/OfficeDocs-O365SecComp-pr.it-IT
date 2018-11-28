@@ -3,6 +3,7 @@ title: Visualizzare i report di protezione posta elettronica in sicurezza &amp; 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552394"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706420"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
-Protezione della posta elettronica diversi report sono disponibili per la protezione &amp; centro conformità che consentono di vedere modalità di protezione antispam e antimalware caratteristiche di Office 365 dell'organizzazione. Se si dispone [delle autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare questi rapporti in sicurezza &amp; centro conformità accedendo ai **rapporti** \> **Dashboard**.
+Sono disponibili in vari rapporti sulla protezione posta elettronica il [protezione &amp; centro conformità](https://security.microsoft.com) che consentono di vedere modalità di protezione antispam e antimalware caratteristiche di Office 365 dell'organizzazione. Se si dispone [delle autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare questi rapporti in sicurezza &amp; centro conformità accedendo ai **rapporti** \> **Dashboard**.
   
 ![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -50,7 +51,7 @@ La nuova relazione **Sullo stato di protezione di rischio** è un rapporto intel
 > [!NOTE]
 > Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio clienti EOP possono visualizzare informazioni su malware rilevato nel messaggio di posta elettronica, ma non informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team Microsoft che](atp-for-spo-odb-and-teams.md), una funzionalità specifiche degli strumenti di analisi. ([Ulteriori informazioni sui report degli strumenti di analisi](view-reports-for-atp.md)).
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione di rischio](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -66,7 +67,7 @@ Quando si apre la relazione sullo stato di protezione di rischio, il report most
 
 Nel rapporto **Rilevamenti di Malware** viene visualizzato il numero di messaggi in ingresso e in uscita sono stato rilevato come contenente malware per l'organizzazione. 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Rilevamenti di Malware**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Rilevamenti di Malware**.
   
 ![Esempio di rapporto sui rilevamenti di malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -76,7 +77,7 @@ Simile ad altri report, ad esempio il rapporto di stato di protezione di rischio
 
 Il rapporto **Malware principali** Mostra i vari tipi di malware rilevato da Exchange Online. 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Malware principali**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Malware principali**.
   
 ![Controllo del codice sorgente - EOP Malware principali](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -92,7 +93,7 @@ Sotto il grafico verrà visualizzato un elenco di malware rilevato e il numero d
 
 Il report **primi mittenti e destinatari** è un grafico a torta che mostra i mittenti di posta elettronica principali. 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **primi mittenti e destinatari**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **primi mittenti e destinatari**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> primi mittenti e destinatari](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -110,7 +111,7 @@ Sotto il grafico, si vedrà che i mittenti di posta elettronica principale o i d
 
 Nel rapporto di **Posta elettronica di spoofing** viene visualizzato il numero dei messaggi di posta elettronica spoofing sono stato rilevato e di quelli, quelli che sono state esaminate "good" (SteadyState motivi aziendali legittimi mail spoofing). 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Spoofing posta**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Spoofing posta**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> spoofing posta](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -122,7 +123,7 @@ Fare clic su (o toccare) nel report viene aperto in una nuova finestra del brows
 
 Il rapporto **Sui rilevamenti di posta indesiderata** Visualizza tutto il contenuto di posta indesiderata bloccato da Exchange Online. 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **Rilevamenti di posta indesiderata**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Rilevamenti di posta indesiderata**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> EOP i rilevamenti di posta indesiderata](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -138,7 +139,7 @@ Sotto il grafico verrà visualizzato un elenco di elementi di posta indesiderata
 
 Il rapporto **Sent e posta elettronica ricevuta** è un referente smart che mostra informazioni sulla posta elettronica in arrivo e in uscita, tra cui i rilevamenti di posta indesiderata, malware e posta elettronica identificato come "buona". 
   
-Per visualizzare il report nella protezione &amp; centro conformità, passare a **report** \> **Dashboard** \> **inviati e ricevuto posta elettronica**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **inviati e ricevuto posta elettronica**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> Sent e posta elettronica ricevuta](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -162,7 +163,7 @@ Sono disponibili dettagli per ogni messaggio, inclusi il motivo di recapito, ad 
   
 ![Il rapporto di messaggi User-Reported Mostra agli utenti i messaggi contrassegnati come posta indesiderata, non indesiderata o phishing tentativi.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Per visualizzare il report nella protezione &amp; centro conformità, effettuare una delle operazioni seguenti:
+Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), effettuare una delle operazioni seguenti:
   
 - Passare a **gestione rischio** \> **Dashboard** \> **messaggi segnalati dagli utenti**.
     
@@ -175,12 +176,25 @@ Per visualizzare il report nella protezione &amp; centro conformità, effettuare
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Autorizzazioni necessarie per visualizzare questi rapporti?
 
-Per visualizzare e utilizzare i rapporti di protezione posta elettronica descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato nella protezione &amp; centro conformità e nell'interfaccia di amministrazione di Exchange.
-  
-|**Gruppo di ruoli**|**Dove assegnato**|**Altre informazioni**|
-|:-----|:-----|:-----|
-| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-- Sicurezza amministratore  <br/>-- Protezione lettore  <br/> |Protezione &amp; centro conformità  <br/> |[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno dei seguenti:  <br/><br/>-Gestione organizzazione  <br/>-Gestione organizzazione sola visualizzazione  <br/>-Ruolo destinatari View-Only  <br/>: Gestione della conformità  <br/> |Interfaccia di amministrazione di Exchange  <br/> |[Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange.
+
+- Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
+    - Gestione organizzazione
+    - Amministratore della sicurezza
+    - Lettore di sicurezza
+
+- Per Exchange Online deve essere uno dei seguenti ruoli assegnati:
+    - Gestione organizzazione
+    - Gestione organizzazione in sola visualizzazione
+    - Ruolo Destinatari di sola lettura
+    - Gestione della conformità
+
+Per ulteriori informazioni, vedere le risorse seguenti:
+
+- [Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
+
+- [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+   
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Se il report non vengono visualizzate dati?
 

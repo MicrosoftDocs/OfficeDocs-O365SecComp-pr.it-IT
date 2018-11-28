@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238408"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706070"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -35,7 +35,7 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
 
 - Verificare che l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md).
     
-- Verificare di disporre i necessari [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+- Verificare di disporre i necessari [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
     
 - [Informazioni sulle opzioni di criteri di allegati sicuri degli strumenti di analisi](#learn-about-atp-safe-attachments-policy-options) (in questo articolo). Alcune opzioni, ad esempio le opzioni di monitoraggio o sostituzione possono comportare un ritardo di posta elettronica secondario quando gli allegati vengono analizzati. Per evitare ritardi messaggio, è consigliabile utilizzare [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +43,7 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Passaggio 2: Configurare un criterio di allegati sicuri degli strumenti di analisi (o modifica)
   
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere con l'account di lavoro o della scuola. 
     
 2. In Office 365 Security &amp; centro conformità, nel riquadro di spostamento a sinistra, in **gestione rischio**, scegliere **criterio** \> **Gli allegati sicuri**.
     
@@ -51,9 +51,7 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     
 4. Scegliere **New** (nuovo pulsante è simile a un segno di addizione ( **+**)) per iniziare a creare i criteri.
     
-5. Specificare il nome, descrizione e le impostazioni per il criterio.
-    
-    **Esempio:** Per configurare un criterio non denominato "ritardi" che consente di eseguire immediatamente i messaggi di tutti gli utenti e quindi ricollega allegati dopo che si sta analisi, è possibile specificare le impostazioni seguenti: 
+5. Specificare il nome, descrizione e le impostazioni per il criterio.<br/><br/>**Esempio:** Per configurare un criterio non denominato "ritardi" che consente di eseguire immediatamente i messaggi di tutti gli utenti e quindi ricollega allegati dopo che si sta analisi, è possibile specificare le impostazioni seguenti: 
     
       - Nella casella **nome** non digitare alcun ritardi.
     

@@ -1,5 +1,5 @@
 ---
-title: Creare i rapporti di App Discovery con Office 365 Cloud App Security
+title: Creare i report dell’individuazione di app con Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Creare report con Office 365 Cloud App sicurezza che consentono di comprendere come vengono utilizzati gli utenti dell'organizzazione Office 365 e altre applicazioni.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530219"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706300"
 ---
-# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Creare i rapporti di App Discovery con Office 365 Cloud App Security
+# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Creare i report dell’individuazione di app con Office 365 Cloud App Security
 
 Gestione di sicurezza avanzata di Office 365 è sicurezza App Cloud di Office 365.
   
@@ -44,7 +44,7 @@ Per creare un report di individuazione applicazioni, si identifica l'origine dat
   
 1. Raccogliere i [registri di traffico web e le origini dati per la protezione di Office 365 Cloud App](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
+2. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 3. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     
@@ -71,7 +71,7 @@ Per creare un report di individuazione applicazioni, si identifica l'origine dat
 
 - [Leggere ed eseguire l'azione gli avvisi](review-office-365-cas-alerts.md)
     
-- [Esaminare i risultati di App Discovery in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+- [Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 - Esaminare le [attività di utilizzo per la protezione di Office 365 Cloud App](utilization-activities-for-ocas.md)
     
