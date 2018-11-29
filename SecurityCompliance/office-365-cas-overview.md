@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: "Protezione di Office 365 Cloud App offre offre informazioni sul attività sospette in Office 365 in modo che è possibile ricercare situazioni in cui sono potenzialmente problematici e, se necessario, eseguire un'azione per risolvere i problemi di sicurezza. "
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
+ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706400"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26864557"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Panoramica di Office 365 Cloud App Security
   
@@ -47,7 +47,7 @@ Accedere al portale di protezione di applicazioni di Office 365 Cloud mediante l
     
 ## <a name="policies"></a>Criteri
 
-Office 365 Cloud App sicurezza interagisce con i criteri definiti per l'organizzazione. Con Office 365 Cloud App protezione, l'organizzazione consente di recuperare 10 criteri di rilevamento anomalia predefiniti e diversi modelli di criteri di attività. Questi criteri sono progettati per rilevare alterazioni generale, identificare gli utenti di effettuare l'accesso da un indirizzo IP rischioso, rilevare ransomware attività, rileva le attività di amministratore non aziendale indirizzi IP e altro ancora.
+Office 365 Cloud App sicurezza interagisce con i criteri definiti per l'organizzazione. Con Office 365 Cloud App protezione, l'organizzazione Ottiene molti criteri di rilevamento anomalia predefiniti e diversi modelli di criteri di attività. Questi criteri sono progettati per rilevare alterazioni generale, identificare gli utenti di effettuare l'accesso da un indirizzo IP rischioso, rilevare ransomware attività, rileva le attività di amministratore non aziendale indirizzi IP e altro ancora.
   
 ![Nel portale delle autorità di certificazione, scegliere controllo \> modelli per visualizzare o creare modelli di criteri](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
