@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il centro di conformità e sicurezza di Office 365 per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
-ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
+ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26626152"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118142"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo nel centro conformità protezione di Office 365
 
@@ -169,7 +169,7 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
   
     c. per i risultati fare clic su **utenti** in questa casella e quindi selezionare uno o più utenti per visualizzare Criteri di ricerca. Le voci del Registro di controllo per l'attività selezionata eseguite dagli utenti che selezionare questa casella vengono visualizzate nell'elenco dei risultati. Lasciare vuoto questo per restituire le voci per tutti gli utenti (e gli account di servizio) nella propria organizzazione. 
     
-    d. **File o una cartella** digitare alcuni o tutti un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. 
+    d. **File, cartelle o del sito** digitare alcuni o tutti un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. 
     
     Lasciare vuoto questo per restituire le voci per tutti i file e cartelle all'interno dell'organizzazione.
     
