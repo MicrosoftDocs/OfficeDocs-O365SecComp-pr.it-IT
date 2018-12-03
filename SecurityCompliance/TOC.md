@@ -265,6 +265,7 @@
 ## [integrazione server SIEM](siem-server-integration.md)
 
 # Soluzioni per la conformità
+## [Introduzione a Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Utilizzare Compliance Manager per soddisfare i requisiti normativi e la protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Gestire le richieste degli interessati nell’ambito del GDPR con lo strumento DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection di Office 365 per GDPR](office-365-information-protection-for-gdpr.md)
