@@ -233,6 +233,7 @@
 ## [Abilitare o disabilitare la ricerca dei log di controllo](turn-audit-log-search-on-or-off.md)
 ## [Abilitare il controllo delle cassette postali](enable-mailbox-auditing.md)
 ## [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md)
+## [Usare il log di controllo per risolvere i problemi degli scenari comuni](auditing-troubleshooting-scenarios.md)
 ## [Usare il controllo di condivisione nel log di controllo](use-sharing-auditing.md)
 ## [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Monitorare la sicurezza e la conformità]()
