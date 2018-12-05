@@ -3,7 +3,7 @@ title: Utilizzare lo strumento PST raccolta per trovare, copiare ed eliminare i 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilizzare lo strumento di raccolta PST Microsoft per la ricerca della rete dell'organizzazione per ottenere un inventario dei file PST sparsi in tutta l'organizzazione. Dopo aver individuato file PST, è possibile utilizzare lo strumento di raccolta di file PST da copiare in una posizione centrale in modo che è possibile importarli a Office 365.
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038129"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154212"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utilizzare lo strumento PST raccolta per trovare, copiare ed eliminare i file PST all'interno dell'organizzazione
+
+> [!IMPORTANT]
+> Lo strumento PST insieme descritto in questo articolo non è supportato in qualsiasi programma Microsoft supporto standard o del servizio. Lo strumento viene fornito così com'è senza garanzie di alcun tipo. Microsoft ha non riconosce tutte le garanzie implicite, in via esemplificativa, una garanzia di commerciabilità o idoneità per uno scopo specifico. Tutti i rischi derivanti dall'utilizzo o delle prestazioni degli strumenti e documentazione rimangono con l'utente. In alcun caso Microsoft, relativi autori o altre posizioni necessarie per la creazione, produzione o lo strumento di tutti gli utenti saranno responsabili per danni (incluso, in via esemplificativa, danni per mancato guadagno, interruzione delle attività, la perdita di perdita le informazioni aziendali o altre perdite economiche) derivanti dall'utilizzo di o impossibilità di utilizzare lo strumento o documentazione, anche se Microsoft è stati informati della possibilità di tali danni.
 
 È possibile utilizzare lo strumento Microsoft PST raccolta per la ricerca della rete dell'organizzazione per i file PST. Lo strumento consente di ottenere un inventario dei file PST sparsi in tutta l'organizzazione. Dopo aver individuato file PST, è possibile utilizzare lo strumento PST insieme a copiarli in una posizione centrale. La presenza di file pst in un'unica posizione quindi consente di importare loro di cassette postali Exchange Online (o una singola cassetta postale di Exchange Online), dove è quindi possibile applicare l'ampia gamma di funzionalità di conformità in Office 365. Include l'importazione di file pst in archivio contiene le cassette postali, la ricerca dei messaggi specifici nei file PST che è stato importato utilizzando gli strumenti di ricerca di eDiscovery, conservazione dei messaggi tramite eDiscovery degli utenti e i criteri di conservazione Office 365 e la gestione di tutta la durata ciclo di questi messaggi tramite la messaggistica consente di registrare le funzionalità di gestione di Exchange Online. Se si è certi che i file PST che raccolti aver importato correttamente a Office 365, è possibile utilizzare lo strumento di eliminarli dai rispettivi percorsi originali nella rete. 
   
@@ -41,7 +44,7 @@ Ecco una rapida panoramica del processo di utilizzando lo strumento PST insieme 
     
 5. **[Passaggio 5: Elimina i file PST trovati nella rete](#step-5-delete-the-pst-files-found-on-your-network)** - dopo che i file PST di file che è stato individuato e raccolti sono stati importati alle cassette postali di Exchange Online in Office 365, è possibile utilizzare lo strumento PST raccolta per eliminare i file PST da posizioni originale in cui sono state trovate nel passaggio 1. 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Eseguire la procedura seguente per scaricare lo strumento PST raccolta nel computer locale. 
     
