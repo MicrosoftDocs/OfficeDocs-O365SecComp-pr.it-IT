@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Come un amministratore può visualizzare, rilasciare e segnalare i messaggi in quarantena falsi positivi in Office 365. È possibile impostare i criteri in modo che filtra i messaggi di Office 365 e li invia in quarantena per diverse ragioni: perché che sono stati identificati come posta indesiderata, blocco, phishing, malware o perché sono corrispondenti a una regola di flusso di posta elettronica. '
-ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
-ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
+ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018880"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180886"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365
 
@@ -65,8 +65,7 @@ Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messa
 
 1. Utilizzo di un account di lavoro o della scuola con privilegi di amministratore globale dell'organizzazione Office 365, accedere a Office 365 e [passare a Centro connessioni di sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
-2. A sinistra, espandere **Threat Management**, scegliere **Rivedi**e quindi scegliere **quarantena**. 
-    
+2. A sinistra, espandere **Threat Management**, scegliere **Rivedi**e quindi scegliere **quarantena**. <br/>
     > [!TIP]
     > Per passare direttamente alla pagina di **quarantena** per la protezione &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
@@ -83,36 +82,27 @@ A seconda delle impostazioni, potrebbe essere una quantità elevata di file e i 
   
 1. Nella pagina di **quarantena** , verificare che la riga superiore dei filtri è impostata su Visualizza messaggi o i file: 
     
-  - Per cercare i file, impostare i filtri per visualizzare i **file** in quarantena a causa di **malware**.
-    
+      - Per cercare i file, impostare i filtri per visualizzare i **file** in quarantena a causa di **malware**.<br/>
     Per i file in quarantena, nella pagina viene visualizzato in quarantena tutti i file, non solo il proprio, indipendentemente dal fatto che cosa indicano it da visualizzare.
     
-  - Per cercare i messaggi in quarantena, impostare i filtri per Mostra **tutto** o **solo personale** **posta elettronica**. Per l'ultimo filtro scegliere il tipo di messaggio in quarantena che si sta cercando. È possibile cercare i messaggi in quarantena identificati come **posta indesiderata**per i messaggi corrispondenti a un flusso di posta o **della regola di trasporto**, posta **inviata in blocco** , posta elettronica di **phishing** o posta che contiene **malware**.
+      - Per cercare i messaggi in quarantena, impostare i filtri per Mostra **tutto** o **solo personale** **posta elettronica**. Per l'ultimo filtro scegliere il tipo di messaggio in quarantena che si sta cercando. È possibile cercare i messaggi in quarantena identificati come **posta indesiderata**per i messaggi corrispondenti a un flusso di posta o **della regola di trasporto**, posta **inviata in blocco** , posta elettronica di **phishing** o posta che contiene **malware**.
     
-2. Nella sezione **Ordina per**, selezionare il filtro o i filtri da utilizzare per la ricerca negli elenchi a discesa. Le opzioni variano in base alle se si esegue la ricerca per i file o i messaggi. I caratteri jolly non sono supportati nei campi di ricerca in questa fase.
+2. Nella sezione **Ordina per**, selezionare il filtro o i filtri da utilizzare per la ricerca negli elenchi a discesa. Le opzioni variano in base alle se si esegue la ricerca per i file o i messaggi. I caratteri jolly non sono supportati nei campi di ricerca in questa fase.<br/><br/>Per i file e messaggi, è possibile scegliere di filtrare in base alla data del messaggio o file è stato messo in quarantena. È possibile specificare la data o un intervallo di date, incluso il tempo. È inoltre possibile filtrare i risultati della ricerca per la data di scadenza in cui il file o il messaggio verrà eliminato dalla quarantena oppure è possibile utilizzare una combinazione dei filtri. Per eseguire la ricerca dalla data di scadenza, scegliere **filtro avanzato**. In **scadenza**, è possibile selezionare i messaggi che verranno eliminati dalla quarantena entro le prossime 24 ore ( **ora**), entro le prossime 48 ore ( **successivo 2 giorni**), della settimana successiva ( **successivo 7 giorni**) o è possibile selezionare un intervallo di tempo personalizzato.<br/><br/>Per i messaggi, sono disponibili le opzioni aggiuntive seguenti:
     
-    Per i file e messaggi, è possibile scegliere di filtrare in base alla data del messaggio o file è stato messo in quarantena. È possibile specificare la data o un intervallo di date, incluso il tempo. È inoltre possibile filtrare i risultati della ricerca per la data di scadenza in cui il file o il messaggio verrà eliminato dalla quarantena oppure è possibile utilizzare una combinazione dei filtri. Per eseguire la ricerca dalla data di scadenza, scegliere **filtro avanzato**. In **scadenza**, è possibile selezionare i messaggi che verranno eliminati dalla quarantena entro le prossime 24 ore ( **ora**), entro le prossime 48 ore ( **successivo 2 giorni**), della settimana successiva ( **successivo 7 giorni**) o è possibile selezionare un intervallo di tempo personalizzato.
+      - **ID del messaggio**. Utilizzare questa opzione per identificare un messaggio specifico quando si conosce l'ID del messaggio.<br/><br/>Ad esempio, se inviato da un messaggio specifico o progettato per un utente all'interno dell'organizzazione, ma non raggiunto la destinazione, è possibile cercare il messaggio utilizzando una traccia dei messaggi (vedere [eseguire una traccia dei messaggi e visualizzare i risultati](https://go.microsoft.com/fwlink/?LinkId=799737)). Se si rileva che è stato inviato il messaggio in quarantena, ad esempio perché corrispondenti a una regola del flusso di posta elettronica o è stato identificato come posta indesiderata, è possibile trovare con facilità questo messaggio in quarantena, specificando il relativo ID del messaggio. È necessario includere la stringa di ID messaggio completo. Ciò potrebbe includere parentesi angolari (\<\>), ad esempio:<br/>
+    `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
-    Per i messaggi, sono disponibili le opzioni aggiuntive seguenti:
+      - **Indirizzo di posta elettronica del mittente**. Scegliere filtrare in base a un indirizzo di posta elettronica singolo mittente. 
     
-  - **ID del messaggio**. Utilizzare questa opzione per identificare un messaggio specifico quando si conosce l'ID del messaggio. 
+      - **Indirizzo di posta elettronica destinatario**. Scegliere filtrare in base a un indirizzo di posta elettronica del destinatario singolo. 
     
-    Ad esempio, se inviato da un messaggio specifico o progettato per un utente all'interno dell'organizzazione, ma non raggiunto la destinazione, è possibile cercare il messaggio utilizzando una traccia dei messaggi (vedere [eseguire una traccia dei messaggi e visualizzare i risultati](https://go.microsoft.com/fwlink/?LinkId=799737)). Se si rileva che è stato inviato il messaggio in quarantena, ad esempio perché corrispondenti a una regola del flusso di posta elettronica o è stato identificato come posta indesiderata, è possibile trovare con facilità questo messaggio in quarantena, specificando il relativo ID del messaggio. È necessario includere la stringa di ID messaggio completo. Ciò potrebbe includere parentesi angolari (\<\>), ad esempio:
-    
-    \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
-    
-  - **Indirizzo di posta elettronica del mittente**. Scegliere filtrare in base a un indirizzo di posta elettronica singolo mittente. 
-    
-  - **Indirizzo di posta elettronica destinatario**. Scegliere filtrare in base a un indirizzo di posta elettronica del destinatario singolo. 
-    
-  - **Oggetto**. Immettere l'oggetto di un indirizzo di posta elettronica che si desidera trovare. Dal momento che la ricerca con caratteri jolly non è supportata, è necessario utilizzare l'intero oggetto del messaggio nell'ordine indicato per la ricerca per restituire il messaggio nei risultati. La ricerca non è tra maiuscole e minuscole. 
+      - **Oggetto**. Immettere l'oggetto di un indirizzo di posta elettronica che si desidera trovare. Dal momento che la ricerca con caratteri jolly non è supportata, è necessario utilizzare l'intero oggetto del messaggio nell'ordine indicato per la ricerca per restituire il messaggio nei risultati. La ricerca non è tra maiuscole e minuscole. 
     
 ## <a name="view-details-about-quarantined-messages-and-files"></a>Visualizzare i dettagli relativi file e i messaggi in quarantena
-<a name="BKMK_ViewDetails"> </a>
 
 Quando si seleziona un elemento visualizzato nell'elenco di quarantena, verrà visualizzato un riepilogo delle proprietà nel riquadro **dei dettagli** sul lato destro della sicurezza &amp; centro conformità. 
   
- **Dettagli visualizzati per i messaggi in quarantena**
+**Dettagli visualizzati per i messaggi in quarantena**
   
 - **ID del messaggio**. Identificatore univoco per il messaggio. 
     
@@ -198,8 +188,7 @@ Se si sta rilasciare i messaggi, tenere presente quanto segue:
 
 1. Utilizzo di un account di lavoro o della scuola con privilegi di amministratore globale dell'organizzazione Office 365, accedere a Office 365 e [passare a Centro connessioni di sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
-2. A sinistra, espandere **Threat Management**, scegliere **criterio**e quindi fare clic su **protezione da posta indesiderata**. 
-    
+2. A sinistra, espandere **Threat Management**, scegliere **criterio**e quindi fare clic su **protezione da posta indesiderata**. <br/>
     > [!TIP]
     > Per passare direttamente alla pagina di **protezione da posta indesiderata** in sicurezza &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
@@ -213,6 +202,6 @@ Se si sta rilasciare i messaggi, tenere presente quanto segue:
     
 7. In **quarantena**, nella casella di testo **della posta indesiderata Mantieni per (giorni)** immettere la quantità di tempo che si desidera Office 365 per conservare i file e messaggi in quarantena. Il valore predefinito è 30 giorni. Questo è il valore massimo. 
     
-8. Fare clic su **Salva**.
+8. Scegliere **Save**.
     
 

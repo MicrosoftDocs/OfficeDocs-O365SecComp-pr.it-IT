@@ -3,7 +3,7 @@ title: Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Viene descritto come abilitare e disabilitare i suggerimenti sulla sicurezza in messaggi di posta elettronica gli amministratori di Office 365 ed EOP.
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530902"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180856"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
 
@@ -36,9 +36,9 @@ Contenuto dell'argomento:
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>Per attivare o disattivare i suggerimenti di sicurezza utilizzando la protezione di Office 365 &amp; centro conformità
 <a name="SandCCsafetytip"> </a>
 
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 con l'account di lavoro o della scuola.
+2. Accedere a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 3. Scegliere **Threat Management** \> **criteri**. 
     
@@ -60,7 +60,7 @@ Contenuto dell'argomento:
     
 9. Per abilitare suggerimenti sulla sicurezza, in **Suggerimenti sulla sicurezza**, selezionare la casella di controllo **su** . Per disattivare suggerimenti sulla sicurezza, deselezionare la casella di controllo **su** . 
     
-10. Fare clic su **Salva**.
+10. Scegliere **Save**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Per attivare o disattivare i suggerimenti di sicurezza tramite PowerShell
 <a name="pshellsafetytip"> </a>
@@ -75,7 +75,7 @@ Gli amministratori possono utilizzare Exchange Online PowerShell per abilitare o
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    Dove:
+Dove:
     
   -  *nome del criterio* è il nome del criterio che si desidera modificare, ad esempio **predefinita**.
     
@@ -89,9 +89,9 @@ Gli amministratori possono utilizzare Exchange Online PowerShell per abilitare o
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    Per ulteriori informazioni su questo cmdlet, vedere [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Per ulteriori informazioni su questo cmdlet, vedere [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
-## <a name="still-need-help"></a>Ulteriore assistenza?
+## <a name="still-need-help"></a>Serve ulteriore assistenza?
 <a name="pshellsafetytip"> </a>
 
 Se si disabilitato suggerimenti sulla sicurezza, ma vengono visualizzati comunque nei messaggi di posta elettronica, verificare queste operazioni:
