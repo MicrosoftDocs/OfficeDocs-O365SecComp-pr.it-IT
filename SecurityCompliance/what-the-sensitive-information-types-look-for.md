@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include 80 tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo.
-ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002689"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194737"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -286,8 +286,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - international driving permits
 - 
 australian automobile association
-- 
-sydney nsw
 - 
 international driving permit
 - DriverLicence
@@ -2215,13 +2213,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-10 cifre
+11 cifre
 
 ### <a name="pattern"></a>Modello
 
-10 cifre:
-- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
-- Quattro cifre, dove l'ultima è una cifra di controllo
+11 cifre:
+- 10 cifre 
+- Cifra finale è una cifra di controllo per gli scopi di data internazionali exchange, le lettere HR vengono aggiunte che precede undici cifre.
 
 ### <a name="checksum"></a>Checksum
 
@@ -2262,18 +2260,31 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  
 
    
-## <a name="czech-national-identity-card-number"></a>	Numero carta d’identità (Repubblica Ceca)
+## <a name="czech-personal-identity-number"></a>Numero di identificazione personale ceca
 
 ### <a name="format"></a>Formato
 
-10 cifre contenenti una barra
+Nove cifre con un segno di divisione (formato precedente) 10 cifre con un segno di divisione (nuovo formato)
 
 ### <a name="pattern"></a>Modello
 
-10 cifre:
-- Sei cifre, ovvero la data di nascita 
+Nove cifre (formato precedente):
+- 9 cifre
+
+OPPURE
+
+- Sei cifre che rappresentano la data di nascita
+- Una barra
+- Tre cifre
+
+10 cifre (nuovo formato):
+- 10 cifre
+
+OPPURE
+
+- Sei cifre che rappresentano la data di nascita
 - Una barra 
-- Quattro cifre, dove l'ultima è una cifra di controllo
+- Quattro cifre dove ultima cifra è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -2284,21 +2295,18 @@ Sì
 Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_czech_id_card consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_czech_id_card. Passa il valore di checksum.
 
 ```
-<!-- Czech National Identity Card Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_czech_id_card"/>
-     <Match idRef="Keyword_czech_id_card"/>
-  </Pattern>
+<!-- Czech Personal Identity Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
+   <Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_czech_id_card" />
+      <Match idRef="Keyword_czech_id_card" />
+   </Pattern>
 </Entity>
 ```
-
-
 ### <a name="keywords"></a>Parole chiave
 
-- Keyword_czech_id_card
-- Carta d’identità (Repubblica ceca)
-- Občanský průka
+- numero di identificazione personale ceca
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Codice PIN - Danimarca
 
@@ -3746,14 +3754,47 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Carta d’identità (Hong Kong)
-- HKID
-- Carta di identità
-
+- carta d'identità Hong kong
+- HKIDC
+- carta d'identità
+- carta di identità
+- carta d'identità HK
+- id di Hong kong
 - 香港身份證
- 
+
 - 香港永久性居民身份證
- 
+
+- 身份證
+
+- 身份証
+- 身分證 
+- 身分証
+- 香港身份証
+- 香港身分證
+- 香港身分証
+- 香港身份證
+
+- 香港居民身份證
+- 香港居民身份証
+- 香港居民身分證
+- 香港居民身分証
+- 香港永久性居民身份証
+- 香港永久性居民身分證
+- 香港永久性居民身分証
+- 香港永久性居民身份證
+
+- 香港非永久性居民身份證
+- 香港非永久性居民身份証
+- 香港非永久性居民身分證
+- 香港非永久性居民身分証
+- 香港特別行政區永久性居民身份證
+- 香港特別行政區永久性居民身份証
+- 香港特別行政區永久性居民身分證
+- 香港特別行政區永久性居民身分証
+- 香港特別行政區非永久性居民身份證
+- 香港特別行政區非永久性居民身份証
+- 香港特別行政區非永久性居民身分證
+- 香港特別行政區非永久性居民身分証
    
 ## <a name="india-permanent-account-number-pan"></a>India - Numero di conto permanente (PAN)
 
@@ -4672,6 +4713,48 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  
 - 社会保険番号
  
+
+## <a name="japanese-residence-card-number"></a>Numero di carta di residenza giapponese
+
+### <a name="format"></a>Formato
+
+12 lettere e cifre
+
+### <a name="pattern"></a>Modello
+
+12 lettere e cifre:
+- Due lettere (senza distinzione tra maiuscole/minuscole)
+- Otto cifre 
+- Due lettere (senza distinzione tra maiuscole/minuscole)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_jp_residence_card_number consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_jp_residence_card_number.
+
+```
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+
+- Numero di carta di residenza
+- Residenza scheda n
+- Residenza scheda #
+- 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Malesia - Numero di carta d’identità
 
@@ -4714,16 +4797,30 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- MyKad 
-- Carta di identità 
-- Carta d'identità 
-- Scheda di identificazione 
-- Scheda applicazione digitale
- 
-- Kad Akuan Diri
- 
-- Kad Aplikasi Digital
- 
+- scheda application digitale
+- è possibile / c
+- è possibile / c non
+- IC
+- IC non
+- carta d'identità
+- Scheda di identificazione
+- carta di identità
+- k/p
+- k/p non
+- kad akuan diri
+- aplikasi kad digitale
+- kad pengenalan malaysia
+- KP
+- KP non
+- mykad
+- mykas
+- mykid
+- mypr
+- mytentera
+- carta d'identità Malaysia
+- Malese carta d'identità
+- NRIC
+- scheda di identificazione personale
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Paesi Bassi - Numero di servizio cittadino (BSN)
 
@@ -4958,12 +5055,16 @@ Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informaz
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
+- Dowód osobisty
+- Numero dowodu osobistego
+- Nazwa i numero dowodu osobistego
+- Nazwa si nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
- 
+
 - Dowód Tożsamości
- 
+
 - dow. os.
- 
+
 
    
 ## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
@@ -5041,12 +5142,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Nazwa i nr dowodu tożsamości
- 
-- Dowód Tożsamości
- 
-- dow. os.
- 
+- Numero paszportu
+- Paszportu Nr.
+- Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>Portogallo - Numero di carta del cittadino
@@ -5737,7 +5835,102 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  
 - 台灣地區居留證
  
-   
+
+## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
+
+### <a name="format"></a>Formato
+
+13 cifre
+
+### <a name="pattern"></a>Modello
+
+13 cifre:
+- Prima cifra non è 0 o 9 
+- 12 cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_Thai_Citizen_Id consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_Thai_Citizen_Id.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_Thai_Citizen_Id consente di trovare contenuto corrispondente al formato.
+
+```
+<!-- Thai Citizen ID -->
+-<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+      <Match idRef="Keyword_Thai_Citizen_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+
+- Numero ID
+
+- Numero di identificazione
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+  
+## <a name="turkish-national-identification-number"></a>Numero identificativo nazionale turca
+
+### <a name="format"></a>Formato
+
+11 cifre
+
+### <a name="pattern"></a>Modello
+
+11 cifre
+
+### <a name="checksum"></a>Checksum
+
+Sì
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione Func_Turkish_National_Id consente di trovare contenuto corrispondente al formato.
+- È possibile trovare una parola chiave da Keyword_Turkish_National_Id.
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_Turkish_National_Id consente di trovare contenuto corrispondente al formato.
+
+```
+<!-- Turkish National Identity -->
+-<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+      <Match idRef="Keyword_Turkish_National_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+
+- TC Kimlik n
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık non
+
 ## <a name="uk-drivers-license-number"></a>Regno Unito - Numero della patente di guida
 
 ### <a name="format"></a>Formato

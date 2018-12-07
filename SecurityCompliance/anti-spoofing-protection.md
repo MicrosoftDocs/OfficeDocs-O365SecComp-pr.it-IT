@@ -3,7 +3,7 @@ title: Protezione anti-spoofing in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498112"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194717"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -302,17 +302,17 @@ A differenza di un criterio che si crea, è possibile eliminare il criterio pred
   
 ![Dettagli relativi al criterio predefinito antiphishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-In un secondo momento in 2018, impostare la protezione predefinito mediante PowerShell:
+Per impostare i motivi di sicurezza predefinito tramite PowerShell:
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 È consigliabile disabilitare la protezione anti-spoofing solo se si dispone di un altro server di posta elettronica o server davanti a Office 365 (vedere legittimi scenari per disabilitare lo spoofing anti per ulteriori informazioni). 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,7 +412,7 @@ Le organizzazioni che utilizzano Exchange Online, con o senza degli strumenti di
   
 In generale, il criterio applicato a un messaggio viene identificato nell'intestazione X-Forefront-Antispam-Report nella proprietà CAT (categoria). 
   
-|**Priority**|**Criteri**|**Categoria**|**Dove gestite?**|**Si applica a**|
+|**Priorità**|**Criterio**|**Categoria**|**Dove gestite?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|:-----|
 |1   <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
 |2   <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
@@ -425,7 +425,7 @@ In generale, il criterio applicato a un messaggio viene identificato nell'intest
    
 Se si dispone di più criteri Anti-phishing diversi, verrà applicato quello la priorità più alta. Ad esempio, se che si dispone di due criteri:
   
-|**Criteri**|**Priority**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
+|**Criterio**|**Priorità**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2   <br/> |Off  <br/> |Attivato  <br/> |
