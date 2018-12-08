@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Esportare i risultati della ricerca da una ricerca di contenuto in Office 365 Security &amp; centro conformità a un computer locale. I risultati della posta elettronica Emaill vengono esportate come file PST. Contenuto di SharePoint e OneDrive per i siti vengono esportati come nativi documenti di Office. '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità protezione di Office 365 in un computer locale. I risultati della posta elettronica vengono esportate come file PST. Contenuto di SharePoint e OneDrive per i siti vengono esportati come nativi documenti di Office. '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539118"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201580"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Esportare i risultati della ricerca contenuto nel centro conformità protezione di Office 365
 
@@ -330,3 +330,5 @@ Di seguito viene ulteriori informazioni sull'esportazione dei risultati di ricer
 - Tutti i risultati di ricerca e l'esportazione dei rapporti è incluse in una cartella con lo stesso nome di ricerca del contenuto. I messaggi di posta elettronica che sono stati esportati si trovano in una cartella denominata **Exchange**. Documenti si trovano in una cartella denominata **SharePoint**. 
     
 - I metadati del file system per i documenti in SharePoint e OneDrive per i siti viene mantenuto quando i documenti vengono esportati nel computer locale. Che indica che le proprietà del documento, ad esempio creato e le date dell'ultima modifica, non vengono modificate quando vengono esportati i documenti.
+
+- Se i risultati di ricerca includono una voce di elenco da SharePoint corrispondente alla query di ricerca, oltre che l'elemento corrispondente alla query di ricerca verranno esportate tutte le righe nell'elenco. Tutti gli allegati sono incluse nell'elenco. Il motivo di ciò è offrire un contesto per le voci restituite nei risultati della ricerca. Si noti inoltre che gli altri elementi elenco e gli allegati possono causare il conteggio degli elementi esportati per essere diverso da quello originale stima dei risultati della ricerca.
