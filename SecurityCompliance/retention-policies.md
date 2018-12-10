@@ -3,7 +3,7 @@ title: Panoramica dei criteri di conservazione
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540402"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194707"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -110,7 +110,7 @@ Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Funzionamento dei criteri di conservazione con le versioni del documento in un sito
 
-Il controllo delle versioni è una funzionalità di tutte le raccolte documenti in SharePoint Online e OneDrive for Business. Per impostazione predefinita, il controllo delle versioni conserva almeno un centinaio di versioni principali, sebbene sia possibile aumentare questo limite. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Il controllo delle versioni è una funzionalità di tutte le raccolte documenti in SharePoint Online e OneDrive for Business. Per impostazione predefinita, il controllo delle versioni conserva almeno cinquecento versioni principali, sebbene sia possibile aumentare questo limite. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
 I criteri di conservazione conservano tutte le versioni di un documento in un sito di SharePoint o in un account OneDrive. Ogni volta che un documento soggetto a criteri di conservazione viene modificato o eliminato, una versione viene copiata nella raccolta di archiviazione. Ogni versione di un documento nella raccolta di archiviazione esiste come elemento separato con il proprio periodo di conservazione:
   
@@ -197,17 +197,13 @@ Altre caratteristiche importanti di un criterio di conservazione a livello di or
 - Non sono previsti limiti al numero di cassette postali o di siti inclusi nel criterio.
     
 - Per Exchange, le nuove cassette postali create dopo l'applicazione del criterio ereditano automaticamente il criterio.
-    
-Esiste però un limite di 10 criteri a livello di organizzazione e criteri per intere posizioni, combinati (vedere la sezione seguente) per tenant.
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Criteri validi per intere posizioni
 
 Quando si scelgono le posizioni, è possibile includere o escludere facilmente un'intera posizione, ad esempio la posta elettronica di Exchange o gli account di OneDrive. A questo scopo, è sufficiente attivare o disattivare lo **Stato** di tale posizione. 
   
 Come per i criteri a livello di organizzazione, un criterio applicabile a una qualsiasi combinazione di posizioni complete può includere un numero illimitato di cassette postali o siti. Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutti i siti di SharePoint, verranno inclusi tutti i siti e tutte le cassette postali, indipendentemente dal numero. Inoltre, per Exchange, le nuove cassette postali create dopo l'applicazione del criterio ereditano automaticamente il criterio.
-  
-Esiste però un limite di 10 criteri a livello di organizzazione e criteri per intere posizioni, combinati per tenant.
-  
+ 
 ![Pagina Seleziona posizioni](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
