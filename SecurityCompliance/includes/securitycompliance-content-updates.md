@@ -3,155 +3,6 @@
 
 
 
-## <a name="week-of-october-8-2018"></a>Settimana del 8 ottobre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 10/8/2018 | [Segnalare junk e-mail e tentativi di phishing in Outlook sul web](/Office365/SecurityCompliance/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop) | modificato |
-| 10/8/2018 | [Roadmap di protezione di Office 365 - priorità superiore per i primi 30 giorni, 90 giorni e versioni successive](/Office365/SecurityCompliance/security-roadmap) | modificato |
-| 10/8/2018 | Coordinate GPS UE | rimuovere |
-| 10/8/2018 | Numero di cellulare UE | rimuovere |
-| 10/8/2018 | Numero di telefono dell'Unione europea | rimuovere |
-| 10/8/2018 | [Concedere agli utenti l'accesso a Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modificato |
-| 10/8/2018 | [Integrare il server SIEM con Office 365 Cloud App Security](/Office365/SecurityCompliance/integrate-your-siem-server-with-office-365-cas) | modificato |
-| 10/8/2018 | [Introduzione a Office 365 Secure Score](/Office365/SecurityCompliance/office-365-secure-score) | modificato |
-| 9/10/2018 | [Domande frequenti sull'importazione di file PST in Office 365](/Office365/SecurityCompliance/faqimporting-pst-files-to-office-365) | modificato |
-| 9/10/2018 | [Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | modificato |
-| 9/10/2018 | [Allegati Safe degli strumenti di analisi di Office 365](/Office365/SecurityCompliance/atp-safe-attachments) | modificato |
-| 9/10/2018 | [Collegamenti sicuri di Office 365 ATP](/Office365/SecurityCompliance/atp-safe-links) | modificato |
-| 9/10/2018 | [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | modificato |
-| 9/10/2018 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | modificato |
-| 9/10/2018 | [Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | modificato |
-| 9/10/2018 | [Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | modificato |
-| 9/10/2018 | [Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificato |
-| 9/10/2018 | [Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | modificato |
-| 9/10/2018 | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](/Office365/SecurityCompliance/view-email-security-reports) | modificato |
-| 9/10/2018 | [Visualizzare i report per la protezione rischio avanzate di Office 365](/Office365/SecurityCompliance/view-reports-for-atp) | modificato |
-| 10/10/2018 | [Esportare i risultati di ricerca del contenuto da Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/export-search-results) | modificato |
-| 10/10/2018 | [Intervento in caso di incidente di sicurezza di Office 365](/Office365/SecurityCompliance/office365-security-incident-response-overview) | modificato |
-| 10/10/2018 | [Domande frequenti su Office 365 Message Encryption](/Office365/SecurityCompliance/ome-faq) | modificato |
-| 11/10/2018 | [Ulteriori informazioni su spoof intelligence](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | modificato |
-| 11/10/2018 | [Configurare i criteri anti-phishing ATP di Office 365](/Office365/SecurityCompliance/set-up-atp-anti-phishing-policies) | modificato |
-| 11/10/2018 | [Protezione anti-phishing in Office 365](/Office365/SecurityCompliance/anti-phishing-protection) | modificato |
-| 11/10/2018 | [Protezione anti-spoofing in Office 365](/Office365/SecurityCompliance/anti-spoofing-protection) | modificato |
-| 11/10/2018 | [Le funzionalità di anti-phishing ATP in Office 365](/Office365/SecurityCompliance/atp-anti-phishing) | modificato |
-| 11/10/2018 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | modificato |
-| 11/10/2018 | [Protezione contro le minacce in Office 365](/Office365/SecurityCompliance/protect-against-threats) | modificato |
-| 11/10/2018 | [Configurare i criteri anti-phishing ATP di Office 365](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | rinominati |
-| 11/10/2018 | [Configurare il tenant di Office 365 per una maggiore sicurezza](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | modificato |
-| 11/10/2018 | [Procedure consigliate per la sicurezza per Office 365](/Office365/SecurityCompliance/security-best-practices) | modificato |
-| 10/12/2018 | [Allegati Safe degli strumenti di analisi di Office 365](/Office365/SecurityCompliance/atp-safe-attachments) | modificato |
-| 10/12/2018 | [Modificare le dimensioni dei file PST durante l'esportazione dei risultati della ricerca di eDiscovery](/Office365/SecurityCompliance/change-the-size-of-pst-files-when-exporting-results) | modificato |
-| 10/12/2018 | [Aumentare la quota degli Elementi recuperabili per le cassette postali con blocchi](/Office365/SecurityCompliance/increase-the-recoverable-quota-for-mailboxes-on-hold) | modificato |
-| 10/12/2018 | [Gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/manage-ediscovery-cases) | modificato |
-| 10/12/2018 | [Informativa sulla privacy per Office 365 Secure Email Portal](/Office365/SecurityCompliance/privacy-statement-for-office-365-secure-email-portal) | modificato |
-| 10/12/2018 | [Configurazione di gestione con privilegi di accesso in Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modificato |
-| 10/12/2018 | [Configurare un criterio di archiviazione e l'eliminazione delle cassette postali nell'organizzazione Office 365](/Office365/SecurityCompliance/set-up-an-archive-and-deletion-policy-for-mailboxes) | modificato |
-| 10/12/2018 | [Utilizzare la ricerca del contenuto in Office 365 per le raccolte di destinazione](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | modificato |
-| 10/12/2018 | [Panoramica delle etichette](/Office365/SecurityCompliance/labels) | modificato |
-| 10/12/2018 | [Panoramica dei criteri di conservazione](/Office365/SecurityCompliance/retention-policies) | modificato |
-| 10/12/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | aggiunta |
-| 10/12/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
-| 10/12/2018 | [Panoramica relativa ai criteri di prevenzione della perdita di dati](/Office365/SecurityCompliance/data-loss-prevention-policies) | modificato |
-| 10/12/2018 | [Panoramica della conservazione basata su eventi](/Office365/SecurityCompliance/event-driven-retention) | modificato |
-| 10/12/2018 | [Visualizzare le attività delle etichette dei documenti](/Office365/SecurityCompliance/view-label-activity-for-documents) | modificato |
-| 10/12/2018 | [Catena di certificati di Office 365](/Office365/SecurityCompliance/office-365-certificate-chains-preview) | rinominati |
-| 13/10/2018 | [Creare una pianificazione per un report nella protezione &amp; centro conformità](/Office365/SecurityCompliance/create-a-schedule-for-a-report) | modificato |
-| 13/10/2018 | [Procedura: da un report dettagliato alle informazioni dettagliate](/Office365/SecurityCompliance/from-a-detailed-report-to-an-insight) | modificato |
-| 13/10/2018 | [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | modificato |
-| 13/10/2018 | [Panoramica della sicurezza di dashboard](/Office365/SecurityCompliance/security-dashboard) | modificato |
-| 13/10/2018 | [Threat management in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/threat-management) | modificato |
-| 13/10/2018 | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](/Office365/SecurityCompliance/view-email-security-reports) | modificato |
-| 13/10/2018 | [Visualizzare i report per la protezione rischio avanzate di Office 365](/Office365/SecurityCompliance/view-reports-for-atp) | modificato |
-| 13/10/2018 | [Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificato |
-
-
-## <a name="week-of-october-15-2018"></a>Settimana del 15 ottobre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 15/10/2018 | [soluzione serie dati perdita scenario eDiscovery - ricerca ed eliminazione](/Office365/SecurityCompliance/data-spillage-scenariosearch-and-purge) | modificato |
-| 15/10/2018 | [Eliminare gli elementi nella cartella elementi recuperabili di cassette postali basate su cloud in attesa - della Guida di amministrazione](/Office365/SecurityCompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold) | modificato |
-| 16/10/2018 | [soluzione serie dati perdita scenario eDiscovery - ricerca ed eliminazione](/Office365/SecurityCompliance/data-spillage-scenariosearch-and-purge) | modificato |
-| 16/10/2018 | [Catena di certificati di Office 365](/Office365/SecurityCompliance/office-365-certificate-chains-preview) | modificato |
-| 16/10/2018 | [Accesso con privilegi management in Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificato |
-| 16/10/2018 | [Domande frequenti sulla crittografia del servizio con Customer Key per Office 365](/Office365/SecurityCompliance/service-encryption-with-customer-key-faq) | modificato |
-| 16/10/2018 | [Eliminare gli elementi nella cartella elementi recuperabili di cassette postali basate su cloud in attesa - della Guida di amministrazione](/Office365/SecurityCompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold) | modificato |
-| 16/10/2018 | [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | modificato |
-| 16/10/2018 | [Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | modificato |
-| 16/10/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
-| 17/10/2018 | [Come evitare che i messaggi effettivi vengano contrassegnatati come indesiderati in Office 365 ](/Office365/SecurityCompliance/prevent-email-from-being-marked-as-spam) | modificato |
-| 17/10/2018 | [Messaggio di posta elettronica dominio non registrati](/Office365/SecurityCompliance/unregistered-domain-email) | modificato |
-| 18/10/2018 | [Attivare il componente aggiuntivo Segnala messaggio](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificato |
-| 18/10/2018 | [Panoramica delle etichette](/Office365/SecurityCompliance/labels) | modificato |
-| 18/10/2018 | [Procedure consigliate per la sicurezza per Office 365](/Office365/SecurityCompliance/security-best-practices) | modificato |
-| 18/10/2018 | [Abilitare il controllo delle cassette postali in Office 365](/Office365/SecurityCompliance/enable-mailbox-auditing) | modificato |
-| 18/10/2018 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | modificato |
-| 19/10/2018 | [Panoramica delle etichette di conservazione](/Office365/SecurityCompliance/labels) | modificato |
-| 19/10/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
-
-
-## <a name="week-of-october-22-2018"></a>Settimana del 22 ottobre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 23/10/2018 | [Installazione del servizio EOP](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | modificato |
-| 23/10/2018 | [Ulteriori informazioni su spoof intelligence](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | modificato |
-| 23/10/2018 | [Gestione di indagini legali in Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | modificato |
-| 24/10/2018 | [Introduzione a Office 365 Threat Intelligence](/Office365/SecurityCompliance/get-started-with-ti) | modificato |
-| 24/10/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
-| 24/10/2018 | [Invio di notifiche di posta elettronica e la visualizzazione di suggerimenti sui criteri per i criteri DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | modificato |
-| 25/10/2018 | [Avviso criteri in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/alert-policies) | modificato |
-| 25/10/2018 | [Configurare i criteri di filtro delle connessioni](/Office365/SecurityCompliance/configure-the-connection-filter-policy) | modificato |
-| 25/10/2018 | [Accesso con privilegi management in Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificato |
-| 26/10/2018 | [Avviso criteri in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/alert-policies) | modificato |
-| 26/10/2018 | [Invio di notifiche di posta elettronica e la visualizzazione di suggerimenti sui criteri per i criteri DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | modificato |
-| 26/10/2018 | [Configurare un criterio di archiviazione e l'eliminazione delle cassette postali nell'organizzazione Office 365](/Office365/SecurityCompliance/set-up-an-archive-and-deletion-policy-for-mailboxes) | modificato |
-| 26/10/2018 | [Panoramica relativa ai criteri di prevenzione della perdita di dati](/Office365/SecurityCompliance/data-loss-prevention-policies) | modificato |
-| 26/10/2018 | [Creare una query per individuare i dati riservati conservati nei siti](/Office365/SecurityCompliance/form-a-query-to-find-sensitive-data-stored-on-sites) | modificato |
-
-
-## <a name="week-of-october-29-2018"></a>Settimana del 29 ottobre 2018
-
-
-| Data di pubblicazione |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 29/10/2018 | [Numero di passaporto UE](/Office365/SecurityCompliance/eu-passport-number) | modificato |
-| 29/10/2018 | [Assegnare le autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/assign-ediscovery-permissions) | modificato |
-| 29/10/2018 | [casi di eDiscovery in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/ediscovery-cases) | modificato |
-| 29/10/2018 | [Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | modificato |
-| 29/10/2018 | [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](/Office365/SecurityCompliance/encryption-sensitivity-labels) | aggiunta |
-| 29/10/2018 | [Integrazione del server SIEM con Microsoft 365](/Office365/SecurityCompliance/siem-server-integration) | aggiunta |
-| 29/10/2018 | [Panoramica delle etichette di riservatezza](/Office365/SecurityCompliance/sensitivity-labels) | modificato |
-| 29/10/2018 | [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modificato |
-| 29/10/2018 | [Integrazione del server SIEM con Microsoft 365](/Office365/SecurityCompliance/siem-server-integration) | modificato |
-| 30/10/2018 | [Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strumenti di analisi di](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | modificato |
-| 30/10/2018 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | modificato |
-| 30/10/2018 | [Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | modificato |
-| 30/10/2018 | [Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificato |
-| 30/10/2018 | [Crittografia della posta elettronica in Office 365](/Office365/SecurityCompliance/email-encryption) | modificato |
-| 30/10/2018 | [Configurare Azure Rights Management per Office 365 Message Encryption](/Office365/SecurityCompliance/set-up-azure-rm-for-message-encryption) | modificato |
-| 31/10/2018 | [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | aggiunta |
-| 31/10/2018 | [Creare un tipo di informazioni sensibili personalizzato](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificato |
-| 31/10/2018 | [Creare un dizionario di parole chiave](/Office365/SecurityCompliance/create-a-keyword-dictionary) | modificato |
-| 31/10/2018 | [Personalizzare una tipologia integrata di informazioni sensibili](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | modificato |
-| 31/10/2018 | [Personalizzare o creare un nuovo tipo di informazione riservata](/Office365/SecurityCompliance/customize-or-create-a-new-sensitive-information-type) | modificato |
-| 31/10/2018 | [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](/Office365/SecurityCompliance/zero-hour-auto-purge) | modificato |
-| 31/10/2018 | [Attivare il componente aggiuntivo Segnala messaggio](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificato |
-| 31/10/2018 | [Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificato |
-| 1/11/2018 | [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modificato |
-| 1/11/2018 | [Creare un tipo di informazioni sensibili personalizzato](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificato |
-| 1/11/2018 | [Creare e pubblicare in blocco etichette di conservazione tramite PowerShell](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | modificato |
-| 1/11/2018 | [Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | modificato |
-| 2/11/2018 | [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificato |
-| 2/11/2018 | [Collegamenti sicuri di Office 365 ATP](/Office365/SecurityCompliance/atp-safe-links) | modificato |
-| 2/11/2018 | [Novità di Office 365 Cloud App Security](/Office365/SecurityCompliance/new-in-office-365-cas) | modificato |
-| 2/11/2018 | [Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificato |
-
-
 ## <a name="week-of-november-05-2018"></a>Settimana del 5 novembre 2018
 
 
@@ -225,3 +76,108 @@
 | 19/11/2018 | [Utilizzare Compliance Manager per soddisfare i requisiti normativi e la protezione dei dati quando si utilizzano i servizi cloud Microsoft](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | modificato |
 | 19/11/2018 | [Attivare il componente aggiuntivo Segnala messaggio](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificato |
 | 20/11/2018 | [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificato |
+
+
+## <a name="week-of-november-26-2018"></a>Settimana del 26 novembre 2018
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 26/11/2018 | [Utilizzare Esplora in sicurezza &amp; centro conformità](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modificato |
+| 26/11/2018 | [Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | modificato |
+| 27/11/2018 | [Panoramica della sicurezza di dashboard](/Office365/SecurityCompliance/security-dashboard) | modificato |
+| 27/11/2018 | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](/Office365/SecurityCompliance/view-email-security-reports) | modificato |
+| 27/11/2018 | [Visualizzare i report per la protezione rischio avanzate di Office 365](/Office365/SecurityCompliance/view-reports-for-atp) | modificato |
+| 27/11/2018 | [Criteri delle attività e avvisi in Office 365 Cloud App Security](/Office365/SecurityCompliance/activity-policies-and-alerts) | modificato |
+| 27/11/2018 | [Criteri delle attività e avvisi in Office 365 Cloud App Security](/Office365/SecurityCompliance/activity-policies-and-alertsc) | modificato |
+| 27/11/2018 | [Criteri di rilevamento delle anomalie in Office 365 Cloud App Security](/Office365/SecurityCompliance/anomaly-detection-policies-in-ocas) | modificato |
+| 27/11/2018 | [Simulatore di attacchi in Office 365](/Office365/SecurityCompliance/attack-simulator) | modificato |
+| 27/11/2018 | [Choose between MDM for Office 365 and Microsoft Intune](/Office365/SecurityCompliance/choose-between-mdm-and-intune) | modificato |
+| 27/11/2018 | [Creare una pianificazione per un report nella protezione &amp; centro conformità](/Office365/SecurityCompliance/create-a-schedule-for-a-report) | modificato |
+| 27/11/2018 | [Creare i report dell’individuazione di app con Office 365 Cloud App Security](/Office365/SecurityCompliance/create-app-discovery-reports-in-ocas) | modificato |
+| 27/11/2018 | [Scarica report esistenti nella protezione &amp; centro conformità](/Office365/SecurityCompliance/download-existing-reports) | modificato |
+| 27/11/2018 | [Attivare il componente aggiuntivo Segnala messaggio](/Office365/SecurityCompliance/enable-the-report-message-add-in) | modificato |
+| 27/11/2018 | Abilitare il componente aggiuntivo per la visualizzazione di sicurezza | rimuovere |
+| 27/11/2018 | [Registrare il dispositivo mobile in Office 365](/Office365/SecurityCompliance/enroll-your-mobile-device) | modificato |
+| 27/11/2018 | [Procedura: da una dashboard alle informazioni dettagliate](/Office365/SecurityCompliance/from-a-dashboard-to-an-insight) | modificato |
+| 27/11/2018 | [Procedura: da un report dettagliato alle informazioni dettagliate](/Office365/SecurityCompliance/from-a-detailed-report-to-an-insight) | modificato |
+| 27/11/2018 | [Procedura: dalle informazioni dettagliate a un report dettagliato](/Office365/SecurityCompliance/from-an-insight-to-a-detailed-report) | modificato |
+| 27/11/2018 | [Integrare Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | modificato |
+| 27/11/2018 | [Integrare il server SIEM con Office 365 Cloud App Security](/Office365/SecurityCompliance/integrate-your-siem-server-with-office-365-cas) | modificato |
+| 27/11/2018 | Provare a utilizzare un account utente che si verifichino problemi in Office 365 | rimuovere |
+| 27/11/2018 | [Analizzare un'attività in Office 365 Cloud App Security](/Office365/SecurityCompliance/investigate-an-activity-in-office-365-cas) | modificato |
+| 27/11/2018 | [Trovare e analizzare dannoso posta elettronica che è stato recapitato (Business Intelligence rischio di Office 365)](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modificato |
+| 27/11/2018 | [Proteggere gli utenti di Office 365 con Office 365 Threat Intelligence](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | modificato |
+| 27/11/2018 | Informazioni sulle minacce contro l'organizzazione a Office 365 rischio Intelligence | rimuovere |
+| 27/11/2018 | [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | modificato |
+| 27/11/2018 | Gestire i dispositivi iscritti a gestione dei dispositivi mobili in Office 365 | rimuovere |
+| 27/11/2018 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | modificato |
+| 27/11/2018 | [Office 365 Cloud App sicurezza Guida e procedure](/Office365/SecurityCompliance/office-365-cas-help) | modificato |
+| 27/11/2018 | [Panoramica di Office 365 Cloud App Security](/Office365/SecurityCompliance/office-365-cas-overview) | modificato |
+| 27/11/2018 | [Secure Score di Office 365](/Office365/SecurityCompliance/office-365-secure-score) | modificato |
+| 27/11/2018 | [Office 365 Threat Intelligence](/Office365/SecurityCompliance/office-365-ti) | modificato |
+| 27/11/2018 | Overview of Mobile Device Management (MDM) for Office 365 | rimuovere |
+| 27/11/2018 | [Protezione contro le minacce in Office 365](/Office365/SecurityCompliance/protect-against-threats) | modificato |
+| 27/11/2018 | [Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](/Office365/SecurityCompliance/review-app-discovery-findings-in-ocas) | modificato |
+| 27/11/2018 | [Esaminare gli avvisi per intervenire in Office 365 Cloud App Security](/Office365/SecurityCompliance/review-office-365-cas-alerts) | modificato |
+| 27/11/2018 | Home page SecComp | rimuovere |
+| 27/11/2018 | [Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | modificato |
+| 27/11/2018 | [Impostare un elenco personalizzato di URL rewrite di non eseguire tramite collegamenti attendibili di Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | modificato |
+| 27/11/2018 | [Impostare e scaricare un report personalizzato per la protezione &amp; centro conformità](/Office365/SecurityCompliance/set-up-and-download-a-custom-report) | modificato |
+| 27/11/2018 | [Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | modificato |
+| 27/11/2018 | [Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificato |
+| 27/11/2018 | [Threat management in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/threat-management) | modificato |
+| 27/11/2018 | [Indicatori delle minacce: nuove e importanti](/Office365/SecurityCompliance/threat-trackers) | modificato |
+| 27/11/2018 | Tenere traccia di un attacco con Office 365 rischio Intelligence | rimuovere |
+| 27/11/2018 | Risoluzione dei problemi di registrazione dei dispositivi con MDM per Office 365 | rimuovere |
+| 27/11/2018 | [Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | modificato |
+| 27/11/2018 | [Attivare Office 365 Cloud App Security](/Office365/SecurityCompliance/turn-on-office-365-cas) | modificato |
+| 27/11/2018 | Ottenere informazioni dettagliate sui dispositivi gestiti da Mobile Device Management (MDM) per Office 365 | rimuovere |
+| 28/11/2018 | [Novità di Office 365 Cloud App Security](/Office365/SecurityCompliance/new-in-office-365-cas) | modificato |
+| 28/11/2018 | [Secure Score di Office 365](/Office365/SecurityCompliance/office-365-secure-score) | modificato |
+| 28/11/2018 | [Panoramica di Office 365 Cloud App Security](/Office365/SecurityCompliance/office-365-cas-overview) | modificato |
+| 28/11/2018 | [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | modificato |
+| 29/11/2018 | [Avviso criteri in Office 365 Security &amp; centro conformità](/Office365/SecurityCompliance/alert-policies) | modificato |
+| 30/11/2018 | [Configurare i criteri di supervisione per l’organizzazione](/Office365/SecurityCompliance/configure-supervision-policies) | modificato |
+| 30/11/2018 | [Installare il componente aggiuntivo Supervisione per Outlook desktop](/Office365/SecurityCompliance/install-the-supervision-add-in-for-outlook-desktop) | modificato |
+| 30/11/2018 | [Rapporti di supervisione](/Office365/SecurityCompliance/supervision-reports) | modificato |
+| 30/11/2018 | [Il Registro di controllo di Office 365 per risolvere i problemi di scenari comuni di ricerca](/Office365/SecurityCompliance/auditing-troubleshooting-scenarios) | aggiunta |
+| 30/11/2018 | [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificato |
+| 30/11/2018 | [Configurare il tenant di Office 365 per una maggiore sicurezza](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | modificato |
+
+
+## <a name="week-of-december-03-2018"></a>Settimana del 03 dicembre 2018
+
+
+| Data di pubblicazione |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 3/12/2018 | [Aggiornamenti di sicurezza di applicazione Cloud di Office 365 durante 2017](/Office365/SecurityCompliance/new-in-office-365-cas-2017) | aggiunta |
+| 3/12/2018 | [Novità di Office 365 Cloud App Security](/Office365/SecurityCompliance/new-in-office-365-cas) | modificato |
+| 3/12/2018 | [Ricerca del contenuto in Office 365](/Office365/SecurityCompliance/content-search) | modificato |
+| 3/12/2018 | [Rilevare e rimediare a concessioni di consenso illecite in Office 365](/Office365/SecurityCompliance/detect-and-remediate-illicit-consent-grants) | modificato |
+| 3/12/2018 | [Preparare l'ambiente per Office 365 Cloud App Security](/Office365/SecurityCompliance/get-ready-for-office-365-cas) | modificato |
+| 3/12/2018 | [Gestire le app di OAuth con Office 365 Cloud App Security](/Office365/SecurityCompliance/manage-app-permissions-in-ocas) | modificato |
+| 3/12/2018 | [Controllo e creazione di report in Office 365](/Office365/SecurityCompliance/office-365-auditing-and-reporting-overview) | modificato |
+| 3/12/2018 | [Office 365 Cloud App sicurezza Guida e procedure](/Office365/SecurityCompliance/office-365-cas-help) | modificato |
+| 3/12/2018 | [Panoramica di Office 365 Cloud App Security](/Office365/SecurityCompliance/office-365-cas-overview) | modificato |
+| 3/12/2018 | [Sospendere o ripristinare un account utente in Office 365 Cloud App Security](/Office365/SecurityCompliance/suspend-or-restore-an-account-in-ocas) | modificato |
+| 3/12/2018 | [Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security](/Office365/SecurityCompliance/utilization-activities-for-ocas) | modificato |
+| 3/12/2018 | [Configurazione di notifiche di posta indesiderata in Exchange Online](/Office365/SecurityCompliance/configure-end-user-spam-notifications-in-exchange-online) | modificato |
+| 4/12/2018 | [Utilizzare lo strumento PST raccolta per trovare, copiare ed eliminare i file PST all'interno dell'organizzazione](/Office365/SecurityCompliance/find-copy-and-delete-pst-files-in-your-organization) | modificato |
+| 5/12/2018 | [Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](/Office365/SecurityCompliance/enable-or-disable-safety-tips) | modificato |
+| 5/12/2018 | [Installare il componente aggiuntivo Supervisione per Outlook desktop](/Office365/SecurityCompliance/install-the-supervision-add-in-for-outlook-desktop) | modificato |
+| 5/12/2018 | [Configurare i criteri di filtro della posta indesiderata](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | modificato |
+| 5/12/2018 | [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](/Office365/SecurityCompliance/zero-hour-auto-purge) | modificato |
+| 5/12/2018 | [Opzioni avanzate per il filtraggio della posta indesiderata](/Office365/SecurityCompliance/advanced-spam-filtering-asf-options) | modificato |
+| 5/12/2018 | [Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | modificato |
+| 6/12/2018 | [Opzioni avanzate per il filtraggio della posta indesiderata](/Office365/SecurityCompliance/advanced-spam-filtering-asf-options) | modificato |
+| 6/12/2018 | [Protezione anti-spoofing in Office 365](/Office365/SecurityCompliance/anti-spoofing-protection) | modificato |
+| 6/12/2018 | [Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificato |
+| 6/12/2018 | [Cosa individuano le tipologie di informazioni sensibili](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | modificato |
+| 6/12/2018 | [Panoramica dei criteri di conservazione](/Office365/SecurityCompliance/retention-policies) | modificato |
+| 12/7/2018 | [Esportare i risultati della ricerca contenuto nel centro conformità protezione di Office 365](/Office365/SecurityCompliance/export-search-results) | modificato |
+| 12/7/2018 | [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | modificato |
+| 12/7/2018 | [Ricerca del contenuto in Office 365](/Office365/SecurityCompliance/content-search) | modificato |
+| 12/7/2018 | [Riprovare la ricerca di contenuto non riuscite per risolvere un errore di percorso contenuto](/Office365/SecurityCompliance/retry-failed-content-search) | aggiunta |
+| 12/7/2018 | [Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](/Office365/SecurityCompliance/view-keyword-statistics-for-content-search) | modificato |
+| 12/7/2018 | [Riprovare la ricerca di contenuti per risolvere un errore di percorso contenuto](/Office365/SecurityCompliance/retry-failed-content-search) | modificato |
