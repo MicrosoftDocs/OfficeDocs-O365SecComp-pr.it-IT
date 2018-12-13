@@ -3,7 +3,7 @@ title: Utilizzare la ricerca del contenuto in Office 365 per le raccolte di dest
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca del contenuto in Office 365 Security &amp; centro conformità eseguire raccolte di destinazione. Una raccolta di destinazione significa che si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID della cartella o il percorso per le cartelle delle cassette postali o un sito specifiche che si desidera eseguire la ricerca.
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522287"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245063"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca del contenuto in Office 365 per le raccolte di destinazione
 
-La funzionalità di ricerca del contenuto in Office 365 Security &amp; centro conformità non fornisce un modo diretto nell'interfaccia utente per la ricerca di cartelle specifiche cassette postali di Exchange o SharePoint e OneDrive per i siti. Tuttavia, è possibile eseguire la ricerca di cartelle specifiche (noti come una raccolta di destinazione) specificando l'ID della cartella o il percorso nella sintassi di query ricerca effettiva. Utilizzo di ricerca del contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso per le cartelle in SharePoint e OneDrive per sito aziendale. Quindi è possibile utilizzare l'ID della cartella o il percorso di una query di ricerca per restituire elementi disponibile nella cartella.
+La funzionalità di ricerca del contenuto in Office 365 Security &amp; centro conformità non fornisce un modo diretto nell'interfaccia utente per la ricerca di cartelle specifiche cassette postali di Exchange o SharePoint e OneDrive per i siti. Tuttavia, è possibile eseguire la ricerca di cartelle specifiche (noti come una *raccolta di destinazione*) specificando l'ID della cartella o il percorso nella sintassi di query ricerca effettiva. Utilizzo di ricerca del contenuto per eseguire una raccolta di destinazione è utile quando si è certi che gli elementi risponde a un caso o elementi con privilegi si trovano in una cartella delle cassette postali o un sito specifica. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso per le cartelle in SharePoint e OneDrive per sito aziendale. Quindi è possibile utilizzare l'ID della cartella o il percorso di una query di ricerca per restituire elementi disponibile nella cartella.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -44,7 +44,7 @@ La funzionalità di ricerca del contenuto in Office 365 Security &amp; centro co
 
 Lo script che viene eseguita in questo passaggio primo verrà restituito un elenco delle cartelle delle cassette postali o SharePoint o OneDrive per le cartelle di Business e l'ID cartella corrispondente o percorso per ogni cartella. Quando si esegue questo script, verrà chiesto per le informazioni seguenti.
   
-- **URL del sito o indirizzo di posta elettronica** Digitare un indirizzo di posta elettronica di depositaria per restituire un elenco delle cartelle delle cassette postali di Exchange e piega gli ID. O digitare l'URL per un sito di SharePoint o OneDrive per sito aziendale per restituire un elenco di percorsi per il sito specificato. Di seguito sono riportati alcuni esempi: 
+- **URL del sito o indirizzo di posta elettronica** Digitare un indirizzo di posta elettronica di depositaria per restituire un elenco di cartelle delle cassette postali di Exchange e ID di cartella. O digitare l'URL per un sito di SharePoint o OneDrive per sito aziendale per restituire un elenco di percorsi per il sito specificato. Di seguito sono riportati alcuni esempi: 
     
   - **Exchange** - stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o i percorsi de
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -208,7 +208,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID delle cartelle o pi
 > [!NOTE]
 > Utilizzo di `path` proprietà per la ricerca di OneDrive percorsi non restituiscono i file multimediali, ad esempio file PNG, TIFF o con estensione wav, nei risultati della ricerca. 
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account e le credenziali utilizzate per eseguire lo script nel passaggio 1.
     
@@ -216,7 +216,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID delle cartelle o pi
     
 4. Nella pagina **Nuova ricerca**, digitare un nome relativo alla ricerca contenuto. Questo nome deve essere univoco nell'organizzazione. 
     
-5. In **cui si desidera di aspetto**, effettuare una delle seguenti, a seconda che la ricerca di una cartella delle cassette postali o un sito:
+5. In **cui si desidera di aspetto**, effettuare una delle seguenti, in base a se si esegue la ricerca una cartella delle cassette postali o un sito:
     
     - Fare clic su **Scegli cassette postali specifiche per la ricerca** e quindi aggiungere la stessa cassetta postale specificato durante l'esecuzione dello script nel passaggio 1. 
     
@@ -262,16 +262,18 @@ Di seguito sono riportati alcuni esempi dell'utilizzo di `folderid` e `path` pro
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-Tenere presenti i seguenti aspetti quando si utilizza lo script in questo articolo ed esegue specifiche raccolte.
+Tenere presenti i seguenti aspetti quando si utilizza lo script in questo articolo per eseguire le raccolte di destinazione.
   
 - Lo script non viene rimossa alcuna cartella dai risultati. In modo che alcune cartelle elencate nei risultati potrebbero essere non ricercabili (o restituire zero elementi) in quanto contengono contenuto generato dal sistema.
     
 - Questo script restituisce solo le informazioni sulle cartelle per la cassetta postale principale dell'utente. Non restituisce informazioni sulle cartelle nella cassetta postale di archivio dell'utente.
     
-- Durante la ricerca di cartelle delle cassette postali, solo la cartella specificata (identificato dal relativo `folderid` proprietà) verrà eseguita la ricerca. Non verranno eseguita nelle sottocartelle. Per eseguire la ricerca sottocartelle, è necessario utilizzare il `folderid` per la cartella secondaria che si desidera eseguire la ricerca. 
+- Durante la ricerca di cartelle delle cassette postali, solo la cartella specificata (identificato dal relativo `folderid` proprietà) verrà eseguita la ricerca. Non verranno eseguita nelle sottocartelle. Per eseguire la ricerca sottocartelle, è necessario utilizzare l'ID della cartella per la cartella secondaria che si desidera eseguire la ricerca. 
     
 - Durante la ricerca di cartelle del sito, nella cartella (identificato dal relativo `path` proprietà) e tutte le sottocartelle verranno eseguita la ricerca. 
     
 - Come descritto in precedenza, non è possibile utilizzare `path` proprietà per la ricerca per i file multimediali, ad esempio PNG, TIFF o i file con estensione wav, disponibile nei percorsi OneDrive. Utilizzare una diversa [proprietà site](keyword-queries-and-search-conditions.md#searchable-site-properties) per cercare i file multimediali nelle cartelle OneDrive. 
+
+- Quando si esportano i risultati della ricerca in cui è specificato solo il `folderid` proprietà nella query di ricerca, è possibile scegliere Esporta primo opzione "tutti gli elementi, ad eccezione di quelli con un formato non riconosciuto, vengono crittografati o non indicizzati per altri motivi." Tutti gli elementi nella cartella verranno esportati sempre indipendentemente dallo stato indicizzazione perché l'ID della cartella viene sempre indicizzato.

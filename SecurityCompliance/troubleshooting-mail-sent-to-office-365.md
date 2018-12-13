@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: In questo articolo vengono fornite informazioni sulla risoluzione dei problemi per i mittenti che hanno riscontrato problemi durante il tentativo di invio della posta elettronica in arrivo in Office 365 e procedure consigliate per la posta in blocco per i clienti di Office 365.
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003205"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240559"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
@@ -115,7 +115,7 @@ Se si riceve un rapporto di mancato recapito da EOP che indica che l'indirizzo I
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Non è possibile ricevere posta elettronica da mittenti in Office 365
 <a name="AllowEOPIPs"> </a>
 
- Per ricevere messaggi da utenti, verificare che la rete consente connessioni verso gli indirizzi IP utilizzato nel nostro datacenter EOP. Per ulteriori informazioni, vedere [gli indirizzi IP di Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). Per un record dell'indirizzo IP di tutti gli indirizzi che sono stati aggiunti, modificati o obsoleti lo scorso anno, vedere [Modifica delle notifiche per gli indirizzi IP di EOP](eop/change-notification-for-eop-ip-addresses.md).
+ Per ricevere messaggi da utenti, verificare che la rete consente connessioni verso gli indirizzi IP utilizzato nel nostro datacenter EOP. Per ulteriori informazioni, vedere [gli indirizzi IP di Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Procedure consigliate per l'invio tramite posta elettronica in blocco per gli utenti di Office 365
 <a name="BulkMailer"> </a>

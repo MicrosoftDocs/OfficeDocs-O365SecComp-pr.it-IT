@@ -3,7 +3,7 @@ title: Configurare un criterio di archiviazione e l'eliminazione delle cassette 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,20 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione e l'eliminazione in Office 365 che sposta automaticamente gli elementi della cassetta postale di archivio dell'utente.
-ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522297"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240579"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione e l'eliminazione delle cassette postali nell'organizzazione Office 365
 
- **In questo articolo sia per gli amministratori. Aggiungere criteri di conservazione e archiviazione di elementi della cassetta postale? Vedere [assegnare i criteri di conservazione per i messaggi di posta elettronica](https://support.office.com/article/3e5fd2dc-633f-4a38-b313-b31b81f7cf7a) | [criteri di conservazione e archiviazione in Outlook sul web per le aziende](https://support.office.com/article/465372e4-e16b-47db-bee0-aba44799085e)**
+ In Office 365, gli amministratori possono creare un criterio di archiviazione e l'eliminazione automaticamente Sposta gli elementi della cassetta postale di archivio dell'utente, che elimina automaticamente gli elementi dalla cassetta postale. A tale scopo, l'amministratore crea un criterio di conservazione che è stato assegnato le cassette postali e sposta gli elementi cassetta postale di un utente di archiviazione dopo un determinato periodo di tempo e che elimina anche gli elementi dalla cassetta postale dopo un determinato periodo di validità. Le regole effettive determinano quali elementi sono spostati o eliminati e in questo caso i tag di conservazione chiamato. I tag di conservazione collegati a un criterio di conservazione, a sua volta assegnato alla cassetta postale dell'utente. Un tag di conservazione applicato le impostazioni di conservazione a singoli messaggi e cartelle nella cassetta postale dell'utente. Consente di definire quanto tempo un messaggio rimane nella cassetta postale e l'azione che viene eseguita quando il messaggio raggiunge il periodo di conservazione specificato. Quando un messaggio raggiunge il periodo di conservazione, viene spostato alla cassetta postale di archivio dell'utente o che venga eliminato. 
   
-In Office 365, è possibile creare un criterio di archiviazione e l'eliminazione automaticamente Sposta gli elementi della cassetta postale di archivio dell'utente, che elimina automaticamente gli elementi dalla cassetta postale. Tale scopo, è possibile creare un criterio di conservazione ' s assegnati alle cassette postali e gli elementi di spostamenti cassetta postale dell'utente di archiviazione dopo un determinato periodo di tempo e che anche Elimina gli elementi dalla cassetta postale dopo un determinato periodo di validità. Le regole effettive determinano quali elementi sono spostati o eliminati e in questo caso i tag di conservazione chiamato. I tag di conservazione collegati a un criterio di conservazione, a sua volta assegnato alla cassetta postale dell'utente. Un tag di conservazione applicato le impostazioni di conservazione a singoli messaggi e cartelle nella cassetta postale dell'utente. Consente di definire quanto tempo un messaggio rimane nella cassetta postale e l'azione che viene eseguita quando il messaggio raggiunge il periodo di conservazione specificato. Quando un messaggio raggiunge il periodo di conservazione, viene spostato alla cassetta postale di archivio dell'utente o che venga eliminato. 
-  
-I passaggi descritti in questo argomento verranno impostare un criterio di conservazione e archiviazione per un'organizzazione fittizia denominata neve accesso a terze parti. Impostazione di questo criterio include le attività seguenti:
+I passaggi descritti in questo articolo verranno impostare un criterio di conservazione e archiviazione per un'organizzazione fittizia denominata neve accesso a terze parti. Impostazione di questo criterio include le attività seguenti:
   
 - Abilitazione di una cassetta postale di archiviazione per tutti gli utenti nell'organizzazione. Consente agli utenti di archiviazione delle cassette postali di aggiunta ed è necessario in modo che un criterio di conservazione può spostare gli elementi di cassetta postale di archivio. È inoltre possibile un informazioni archiviazione dell'archivio utente per lo spostamento degli elementi loro cassetta postale di archiviazione. 
     
@@ -37,7 +35,7 @@ I passaggi descritti in questo argomento verranno impostare un criterio di conse
     
   - Si sposta automaticamente gli elementi 3 anni precedenti alla cassetta postale di archivio dell'utente. Spostamento di elementi per la cassetta postale di archiviazione consente di liberare spazio nella cassetta postale principale dell'utente.
     
-  - Elimina automaticamente gli elementi 5 anni dalla cartella Posta eliminata. Questo inoltre consente di liberare spazio nella cassetta postale principale dell'utente. Dell'utente avrà la possibilità di ripristinare questi elementi, se necessario. Il piè di pagina nella sezione [informazioni](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) per ulteriori informazioni, vedere. 
+  - Elimina automaticamente gli elementi 5 anni dalla cartella Posta eliminata. Questo inoltre consente di liberare spazio nella cassetta postale principale dell'utente. Dell'utente avrà la possibilità di ripristinare questi elementi, se necessario. Il piè di pagina nella sezione [informazioni](#more-information) per ulteriori informazioni, vedere. 
     
   - (E automaticamente in modo permanente) consente di eliminare gli elementi 7 anni da entrambi il primario e cassetta postale di archivio. A causa di regole di conformità, per mantenere posta elettronica per un determinato periodo di tempo è necessari alcuni dell'organizzazione. Dopo la scadenza del periodo, un'organizzazione possibile rimuovere definitivamente questi elementi cassette postali degli utenti. 
     
@@ -60,7 +58,7 @@ Il primo passaggio consiste per abilitare la cassetta postale di archiviazione p
 > [!NOTE]
 > È possibile abilitare cassette postali di archiviazione qualsiasi momento durante questo processo, esattamente come sono abilitati a un certo punto prima di completare il processo. Se una cassetta postale di archiviazione non è abilitata, viene eseguita alcuna azione in tutti gli elementi con un criterio di archiviazione a esso assegnato. 
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account amministratore globale.
     
@@ -232,11 +230,8 @@ Quando si crea una nuova cassetta postale, un criterio di conservazione denomina
 2. Nella pagina proprietà delle cassette postali per l'utente selezionato, fare clic su **funzionalità delle cassette postali**.
     
     Il nome del nuovo criterio assegnato alla cassetta postale viene visualizzato nell'elenco a discesa **criterio di conservazione** . 
-    
 
-  
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Facoltativo) Passaggio 5: Eseguire l'Assistente cartelle gestite per applicare le nuove impostazioni
-<a name="step3"> </a>
 
 Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel passaggio 4, potrebbero essere necessari fino a 7 giorni di Exchange Online per le nuove impostazioni di conservazione da applicare alle cassette postali. Ciò avviene perché un processo denominato cassette postali di processi Assistente cartelle gestite ogni 7 giorni. Anziché attendere l'Assistente cartelle gestite per l'esecuzione, è possibile imporre a tale scopo, eseguire il cmdlet **Start-ManagedFolderAssistant** di Exchange Online PowerShell. 
   
@@ -271,7 +266,7 @@ Di seguito sono i passaggi per la connessione a Exchange Online PowerShell e qui
     ```
 
     > [!NOTE]
-    > Per ulteriori informazioni o se si riscontrano problemi di connessione per l'organizzazione Exchange Online, vedere [Connessione a Exchange Online tramite remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
+    > Per ulteriori informazioni o nel caso di problemi di connessione all'organizzazione Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
   
 5. Eseguire i seguenti comandi per avviare l'Assistente cartelle gestite per tutte le cassette postali nell'organizzazione.
     
@@ -285,18 +280,37 @@ Di seguito sono i passaggi per la connessione a Exchange Online PowerShell e qui
 
 Questo è tutto! Installazione di un criterio di archiviazione e l'eliminazione per l'organizzazione di neve accesso a terze parti.
   
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Facoltativo) Passaggio 6: Verificare il nuovo criterio di conservazione predefinito per l'organizzazione
+
+Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle cassette postali esistenti. Ma è possibile configurare Exchange Online in modo che il nuovo criterio di conservazione viene assegnato a nuove cassette postali che vengono create in futuro. Ottenere questo risultato tramite Exchange Online PowerShell per aggiornare piano della cassetta postale predefinito dell'organizzazione. Un *piano della cassetta postale* è un modello di configura automaticamente le proprietà per le nuove cassette postali.  In questo passaggio facoltativo, è possibile sostituire il criterio di conservazione corrente assegnato al piano della cassetta postale (per impostazione predefinita, il criterio di gestione record di messaggistica predefinito) con il criterio di conservazione creato nel passaggio 3. Dopo aver aggiornato il piano della cassetta postale, verrà assegnato il nuovo criterio di conservazione per le nuove cassette postali.
+
+1. [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) oppure vedere passaggio 5.
+
+2. Eseguire il comando seguente per visualizzare le informazioni sui piani delle cassette postali nell'organizzazione.
+
+    ```
+    Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
+    ```
+    Si noti il piano della cassetta postale che viene impostato come predefinita.
+
+3. Eseguire il seguente comando per assegnare il nuovo criterio di conservazione creato nel passaggio 3 (ad esempio, **i criteri di conservazione e archiviazione di accesso a terze parti neve**) per il piano della cassetta postale predefinito. In questo esempio si presuppone che il nome del piano della cassetta postale predefinito è **ExchangeOnlineEnterprise**.
+
+    ```
+    Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
+    ```
+4. È possibile eseguire di nuovo il comando nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito è stato modificato.
+
 ## <a name="more-information"></a>Ulteriori informazioni
-<a name="moreinfo"> </a>
 
 - La modalità di calcolo periodo di conservazione? Il periodo di conservazione degli elementi della cassetta postale viene calcolato dalla data di consegna o data di creazione di elementi, ad esempio i messaggi bozza che non vengono inviati, ma vengono creati dall'utente. Quando l'Assistente cartelle gestite elabora elementi in una cassetta postale, contrassegna una data di inizio e data di scadenza di tutti gli elementi contenenti i tag di conservazione con l'azione di conservazione Elimina e Consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una move date. 
     
 - Nella tabella seguente vengono fornite ulteriori informazioni su ogni tag di conservazione viene aggiunto il criterio di conservazione personalizzata che è stato creato seguendo i passaggi descritti in questo argomento.
     
-    |**Tag di conservazione**|**Scopo di questo tag**|**Incorporata o personalizzata?**|**Type**|
+    |**Tag di conservazione**|**Scopo di questo tag**|**Incorporata o personalizzata?**|**Tipo**|
     |:-----|:-----|:-----|:-----|
-    |Accesso a terze parti neve 3 anni spostamento nell'archivio  <br/> |Sposta gli elementi da 1095 giorni (3 anni) la cassetta postale di archiviazione.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Tag criterio predefinito (archivio); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |
-    |Accesso a terze parti neve anno 7 Elimina definitivamente  <br/> |Elimina definitivamente gli elementi nella cassetta postale di archiviazione o la cassetta postale principale quando sono 7 anni.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Tag criterio predefinito (eliminazione); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |
-    |Accesso a terze parti neve eliminazione elementi 5 anni Elimina e Consenti ripristino  <br/> |Elimina gli elementi dalla cartella Posta eliminata vengono 5 anni. Gli utenti possono recuperare questi elementi di backup di 14 giorni dopo che viene eliminati.<sup>\*</sup> <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Tag criterio di conservazione (elementi eliminati); Questo tag viene automaticamente applicato agli elementi nella cartella elementi eliminati.  <br/> |
+    |Accesso a terze parti neve 3 anni spostamento nell'archivio  <br/> |Sposta gli elementi da 1095 giorni (3 anni) la cassetta postale di archiviazione.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Tag criterio predefinito (archivio); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |
+    |Accesso a terze parti neve anno 7 Elimina definitivamente  <br/> |Elimina definitivamente gli elementi nella cassetta postale di archiviazione o la cassetta postale principale quando sono 7 anni.  <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Tag criterio predefinito (eliminazione); Questo tag viene automaticamente applicato a dell'intera cassetta postale.  <br/> |
+    |Accesso a terze parti neve eliminazione elementi 5 anni Elimina e Consenti ripristino  <br/> |Elimina gli elementi dalla cartella Posta eliminata vengono 5 anni. Gli utenti possono recuperare questi elementi di backup di 14 giorni dopo che viene eliminati.<sup>\*</sup> <br/> |Personalizzato (vedere [passaggio 2: creare nuovi tag di conservazione per i criteri di archiviazione e l'eliminazione](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Tag criterio di conservazione (elementi eliminati); Questo tag viene automaticamente applicato agli elementi nella cartella elementi eliminati.  <br/> |
     |Giorni 14 elementi recuperabili Sposta nell'archivio  <br/> |Sposta gli elementi che sono stati nella cartella elementi ripristinabili 14 giorni nella cartella elementi recuperabili di cassetta postale di archivio.  <br/> |Incorporato  <br/> |Tag criterio di conservazione (elementi recuperabili); Questo tag viene automaticamente applicato agli elementi nella cartella elementi recuperabili.  <br/> |
     |Posta indesiderata  <br/> |Consente di eliminare definitivamente gli elementi che sono stati nella cartella posta indesiderata per 30 giorni. Gli utenti possono recuperare questi elementi di backup di 14 giorni dopo che viene eliminati.<sup>\*</sup> <br/> |Incorporato  <br/> |Tag criterio di conservazione (posta indesiderata); Questo tag viene automaticamente applicato agli elementi nella cartella posta indesiderata.  <br/> |
     |Elimina dopo 1 mese  <br/> |Consente di eliminare definitivamente gli elementi da 30 giorni. Gli utenti possono recuperare questi elementi di backup di 14 giorni dopo che viene eliminati.<sup>\*</sup> <br/> |Incorporato  <br/> |Personali; Questo tag può essere applicato dagli utenti.  <br/> |
