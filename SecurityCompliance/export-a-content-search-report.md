@@ -3,7 +3,7 @@ title: Esportare il rapporto della Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Invece di esportare i risultati effettivi della ricerca contenuto in Office 365 Security &amp; centro conformità, è possibile esportare solo un rapporto di risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrà esportata.
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530207"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283142"
 ---
 # <a name="export-a-content-search-report"></a>Esportare il rapporto della Ricerca contenuto
 
@@ -31,7 +31,7 @@ Invece di esportare il set completo di ricerca di risultati di una ricerca di co
   
 Quando si esporta un report, viene scaricato in una cartella che ha lo stesso nome di ricerca del contenuto, ma che viene aggiunto con *_ReportsOnly* . Ad esempio, se la ricerca del contenuto denominata *ContosoCase0815* , il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly* . Per un elenco di documenti che sono inclusi nella relazione, vedere [che cos'è incluso nel report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per esportare un report di ricerca del contenuto, è necessario disporre del ruolo di gestione ricerca conformità in Office 365 Security &amp; centro conformità. Questo ruolo viene assegnato ai gruppi di ruolo Manager e la gestione dell'organizzazione eDiscovery incorporati. Non è assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
     
@@ -52,7 +52,9 @@ Quando si esporta un report, viene scaricato in una cartella che ha lo stesso no
     - Microsoft Internet Explorer 10 e versioni successive
     
     **Nota:** Microsoft non produce delle estensioni di terze parti o componenti aggiuntivi per le applicazioni ClickOnce. Esportazione dei risultati della ricerca mediante un browser non supportato con le estensioni di terze parti o componenti aggiuntivi non è supportato. 
-    
+
+- Se le dimensioni stimate totale dei risultati restituiti dalla ricerca di contenuti è maggiore di 20&nbsp;TB, esportazione del report avrà esito negativo. Per eseguire l'esportazione del report, provare a restringere l'ambito e rieseguire la ricerca in modo che le dimensioni stimate dei risultati sono inferiore a 20&nbsp;TB.
+
 ## <a name="generate-and-download-a-content-search-report"></a>Generare e scaricare un report di ricerca del contenuto
 
 I passaggi per generare e scaricare un report di ricerca del contenuto sono molto simili ai effettivamente esportazione dei risultati della ricerca.
@@ -61,9 +63,9 @@ I passaggi per generare e scaricare un report di ricerca del contenuto sono molt
 
 Il primo passaggio consiste nel preparare il report per il download per l'esportazione di computer. Quando si il report il rapporto di documenti vengono caricati in un'area di archiviazione Azure in Microsoft cloud.
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **Ricerca contenuto**.
     
