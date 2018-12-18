@@ -3,7 +3,7 @@ title: casi di eDiscovery in Office 365 Security &amp; centro conformità
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare la protezione di Office 365 &amp; centro conformità per creare e gestire casi di eDiscovery nell'organizzazione. È possibile assegnare i membri per il caso, inserire i contenuti posizioni in attesa, eseguire la ricerca del contenuto associato il caso e l'esportazione risultati di ricerca. È inoltre possibile preparare i dati maiuscole per un'ulteriore analisi di eDiscovery avanzate.
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299362"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casi di eDiscovery in Office 365 Security &amp; centro conformità
 
@@ -53,9 +53,9 @@ Utilizzare il flusso di lavoro seguente per configurare e utilizzare casi di eDi
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
-Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscovery relative agli utenti in modo che è possibile aggiungerli a un caso eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnato il ruolo di gestione dei ruoli) in Office 365 Security &amp; centro conformità per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati eDiscovery in sicurezza &amp; centro conformità.
+Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscovery relative agli utenti in modo che è possibile aggiungerli a un caso eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnato il ruolo di gestione dei ruoli) in Office 365 Security &amp; centro conformità per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati eDiscovery in sicurezza &amp; centro conformità. 
   
-- **Revisore** - questo gruppo di ruoli disponga delle autorizzazioni più restrittive eDiscovery correlati. Membri di questo gruppo possono vedersi e aprire l'elenco dei casi nella pagina di **eDiscovery** in sicurezza solo &amp; centro conformità che sono membri di. Non possono creare casi, aggiungere membri a un caso, creazione di esenzioni, creare ricerche, esportare i risultati della ricerca o preparare i risultati di eDiscovery avanzate. Tuttavia, i membri possono accedere casi di eDiscovery avanzate per eseguire attività di analisi. 
+- **Revisore** - questo gruppo di ruoli disponga delle autorizzazioni più restrittive eDiscovery correlati. Lo scopo principale di questo gruppo consiste nel consentire ai membri di visualizzazione e l'accesso caso i dati in Office 365 avanzate eDiscovery. Membri di questo gruppo possono vedersi e aprire l'elenco dei casi nella pagina di **eDiscovery** in sicurezza solo &amp; centro conformità che sono membri di. Dopo che l'utente accede a un caso nel centro conformità protezione, possibile fare clic su **passa a eDiscovery avanzate** per accedere e analisi dei dati casi di eDiscovery avanzate. Non possono creare casi, aggiungere membri a un caso, creazione di esenzioni, creare ricerche, visualizzare in anteprima i risultati della ricerca, esportare i risultati della ricerca o preparare i risultati di eDiscovery avanzate. 
     
 - **eDiscovery Manager** - membri di questo gruppo possono creare e gestire casi di eDiscovery. Vengono aggiungere e rimuovere membri, posizionare il contenuto percorsi conservazione, creare e modificare ricerche del contenuto associato a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi di eDiscovery avanzate. Esistono due sottogruppi di questo gruppo di ruoli. La differenza tra questi sottogruppi si basa sull'ambito.
     
@@ -65,20 +65,22 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
     
     - Visualizzare tutti i casi elencati nella pagina **eDiscovery**. 
     
-    - Gestire un caso di eDiscovery nell'organizzazione dopo aggiungersi come membro del case.
+    - Gestire tutti i casi nell'organizzazione dopo aggiungersi come membro del case.
     
-    - Eseguire attività amministrative di eDiscovery avanzate, ad esempio elaborazione dei dati maiuscole per l'analisi, caso le impostazioni di configurazione ed esportazione di dati da eDiscovery avanzate. Perché la persona che un'amministratore per la protezione di eDiscovery &amp; centro conformità viene aggiunto automaticamente come un amministratore di eDiscovery avanzate.
+    - Accedere ai dati casi di eDiscovery avanzate per qualsiasi caso nell'organizzazione.
     
-    Vedere la sezione [More information](ediscovery-cases.md#moreinfo_1) per conoscere i motivi per cui si potrebbe voler diventare un amministratore di eDiscovery nell'organizzazione. 
+    Vedere la sezione [More information](#more-information) per conoscere i motivi per cui si potrebbe voler diventare un amministratore di eDiscovery nell'organizzazione. 
     
 > [!IMPORTANT]
 > Se una persona non è un membro di uno di questi gruppi di ruoli correlati eDiscovery o non è un membro del gruppo di ruoli che è assegnato il ruolo revisore, è possibile aggiungere come membro di un caso eDiscovery. 
+
+Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
   
  **Per assegnare autorizzazioni di eDiscovery:**
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. In sicurezza &amp; centro conformità, fare clic su **autorizzazioni**e quindi eseguire una delle opzioni seguenti in base alle autorizzazioni eDiscovery che si desidera assegnare.
     
@@ -96,7 +98,7 @@ Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery**e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Crea un caso**.
     
@@ -142,7 +144,10 @@ Dopo aver creato un nuovo caso, il passaggio successivo è per aggiungere membri
 ## <a name="step-4-place-content-locations-on-hold"></a>Passaggio 4: Posto i percorsi di contenuti in attesa
 
 È possibile utilizzare un caso eDiscovery alla creazione di esenzioni per conservare il contenuto che potrebbe essere rilevante al caso. È possibile inserire un'esenzione cassette postali e OneDrive per i siti di persone che sono depositari nel caso. Si può inoltre effettuare un'esenzione cassetta postale di gruppo, siti di SharePoint e OneDrive per sito Business per un gruppo di Office 365. Analogamente, è possibile inserire un'esenzione nella cassetta postale e sito in cui sono associati a Microsoft Teams. Quando si effettua i percorsi di contenuti in attesa, il contenuto viene mantenuto finché non si rimuove l'esenzione dal percorso di contenuto o finché non viene eliminato l'attesa.
-  
+
+> [!NOTE]
+> Dopo aver inserito un percorso di contenuto in attesa, necessario 24 ore per l'attesa rendere effettive. 
+>   
 Quando si crea un'esenzione, sono disponibili le opzioni seguenti per definire l'ambito del contenuto viene mantenuto nei percorsi di contenuto specificati:
   
 - Creare un'attesa infinita in tutto il contenuto viene messa in attesa. In alternativa, è possibile creare un'esenzione basata su query dove solo il contenuto che corrisponde a una query di ricerca viene messa in attesa.
@@ -183,7 +188,7 @@ Per creare un'esenzione per un caso eDiscovery:
   
    **Siti di SharePoint** - b. fare clic su **Scegli siti** e quindi **Scegliere siti** nuovamente per specificare SharePoint e OneDrive per i siti per mettere in attesa. Digitare l'URL per ogni sito che si desidera mettere in attesa. È inoltre possibile aggiungere l'URL del sito di SharePoint per un Team di Microsoft o un gruppo di Office 365. Fare clic su **Scegli**e quindi fare clic su **Fine**.
     
-    Vedere la sezione [informazioni](ediscovery-cases.md#moreinfo_1) di suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. 
+    Vedere la sezione [informazioni](#more-information) di suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. 
     
     > [!NOTE]
     > Nel caso di nome principale una persona (UPN) viene modificato l'URL per il proprio account OneDrive verrà modificata anche per incorporare l'UPN di nuovo. In questo caso, sarà necessario modificare la conservazione nuovo OneDrive URL dell'utente di aggiungendo e rimuovendo il vecchio. 
@@ -391,7 +396,7 @@ Come alternativa per esportare i risultati di una singola ricerca del contenuto 
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 7: Preparazione risultati di ricerca per eDiscovery avanzate
 
-Se l'organizzazione dispone di una sottoscrizione a Office 365 E5, è possibile preparare i risultati delle ricerche del contenuto associato a un caso per l'analisi di eDiscovery avanzate. Dopo aver preparato risultati della ricerca, è possibile accedere ai eDiscovery avanzate (vedere [passaggio 8: viene eseguito il caso di eDiscovery avanzate](ediscovery-cases.md#gotoAeD_1)) ed elaborare i dati dei risultati di ricerca per un'ulteriore analisi di eDiscovery avanzate.
+Se l'organizzazione dispone di una sottoscrizione a Office 365 E5, è possibile preparare i risultati delle ricerche del contenuto associato a un caso per l'analisi di eDiscovery avanzate. Dopo aver preparato risultati della ricerca, è possibile accedere ai eDiscovery avanzate (vedere [passaggio 8: viene eseguito il caso di eDiscovery avanzate](#step-8-go-to-the-case-in-advanced-ediscovery)) ed elaborare i dati dei risultati di ricerca per un'ulteriore analisi di eDiscovery avanzate.
   
 Quando si prepara i risultati della ricerca eDiscovery avanzata, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae automaticamente il testo da immagini. OCR è supportato per file separati, gli allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche testo di eDiscovery avanzate (quasi duplicati, posta elettronica threading, temi e la scrittura di codice predittiva) al testo contenuto nel file di immagine.
   
@@ -530,7 +535,7 @@ Quando viene riaperto un caso, qualsiasi esenzioni che erano presenti al momento
     
     Infine, precedente come spiegato, gli amministratori di eDiscovery in sicurezza &amp; centro conformità vengono aggiunte automaticamente come amministratori di eDiscovery avanzate. Ciò significa che la persona che un'amministratore di eDiscovery può eseguire attività amministrative di eDiscovery avanzate, ad esempio configurazione degli utenti, creare casi e aggiunta di dati ai casi.
     
-- **Che cosa sono i requisiti di licenza per i percorsi di contenuti di mettere in attesa?** In generale, le organizzazioni richiedono una sottoscrizione a Office 365 E3 o superiore per posizionare i percorsi di contenuti in attesa. Per archiviare cassette postali, è necessaria una licenza di Exchange Online piano 2.
+- **Che cosa sono i requisiti di licenza per i percorsi di contenuti di mettere in attesa?** In generale, le organizzazioni richiedono una sottoscrizione a Office 365 E3 o superiore per posizionare i percorsi di contenuti in attesa. Per archiviare cassette postali, una licenza di Exchange Online piano 2 è necessaria per la cassetta postale che si desidera mettere in attesa.
     
 - **Altro conoscenze indispensabili per sulla ricerca in tutto il contenuto sociale nel passaggio 5?** Come indicato in precedenza, è possibile cercare i percorsi di contenuti messe in attesa nel caso. A tale scopo, solo il contenuto che soddisfa i criteri di conservazione è ricerca. Se non esiste alcun criterio di conservazione, tutto il contenuto viene eseguita la ricerca. Se è basati su query contenuto attesa, solo il contenuto che corrisponde a entrambi contenuti criteri (dall'esenzione incluso nel passaggio 4) e i criteri di ricerca (dalla ricerca nel passaggio 5) viene restituito con i risultati della ricerca.
     
