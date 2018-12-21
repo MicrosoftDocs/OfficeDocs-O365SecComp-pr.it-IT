@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194707"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380616"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -214,7 +214,7 @@ Si noti però che sono previsti i limiti seguenti per i criteri di conservazione
   
 - I criteri di conservazione di questo tipo non possono contenere più di 1.000 cassette postali e 100 siti.
     
-- Un tenant non può contenere più di 1.000 criteri di conservazione di questo tipo.
+- Un tenant non può contenere più di 10.000 criteri di conservazione.
     
 Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o criteri validi per intere posizioni.
   
