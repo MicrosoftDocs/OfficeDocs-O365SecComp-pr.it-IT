@@ -186,7 +186,6 @@
 ## [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](set-up-compliance-boundaries.md)
 ## [Soluzione eDiscovery: scenario di compromissione di dati riservati, ricerca ed eliminazione definitiva](data-spillage-scenariosearch-and-purge.md)
 ## [Preparare i risultati di ricerca per Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
-## [Assegnare le autorizzazioni eDiscovery ai siti OneDrive for Business](assign-permissions-to-onedrive-for-business-sites.md)
 ## [Usare uno script per aggiungere gli utenti a un blocco in un caso di eDiscovery](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Creare un rapporto sui casi di blocco in eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Gestire i blocchi
