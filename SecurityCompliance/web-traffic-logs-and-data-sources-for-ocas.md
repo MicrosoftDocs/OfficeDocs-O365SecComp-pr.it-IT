@@ -1,9 +1,9 @@
 ---
-title: Il log del traffico web e origini dati per Office 365 Cloud App Security
+title: Log del traffico Web e origini dati per Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: Office 365 Cloud App sicurezza utilizza i registri di traffico web da una vasta gamma di provider. Leggere questo articolo per ulteriori informazioni su registri di traffico web e le origini dati è supportata per la protezione di Office 365 Cloud App.
-ms.openlocfilehash: 09b0358e0d8b9a6ed59393d8771237f7eaf8bb98
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530895"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447054"
 ---
-# <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Il log del traffico web e origini dati per Office 365 Cloud App Security
+# <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Log del traffico Web e origini dati per Office 365 Cloud App Security
   
 |Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
 |:-----|:-----|:-----|:-----|
@@ -35,96 +35,96 @@ ms.locfileid: "22530895"
 
 Utilizzano Office 365 Cloud App sicurezza utilizzi dati nei file registro il traffico web utili per comprendere quali App utenti nell'organizzazione. Ulteriori informazioni incluse nei file di registro, il miglioramento della visibilità, è necessario attività dell'utente.
   
-Nella tabella seguente sono elencati i requisiti e gli attributi necessari per i registri di traffico web funzioni correttamente con Office 365 Cloud App protezione:
-  
-|**Attributi**|**Requisiti aggiuntivi **|
-|:-----|:-----|
-| Data della transazione  <br/>  IP origine  <br/>  Utente di origine (scelta consigliata)  <br/>  Indirizzo IP di destinazione  <br/>  URL di destinazione (scelta consigliata: URL offrono maggiore precisione per il rilevamento delle app cloud di indirizzi IP)  <br/>  Quantità totale di dati (scelta consigliati)  <br/>  Tempo di caricamento o il download dei dati (scelta consigliata: vengono fornite informazioni su cloud modelli di utilizzo app)  <br/>  Azione eseguita (consentite o bloccate)  <br/> | L'origine dati per i file di registro deve essere supportata.  <br/>  Il formato di che utilizzano i file di registro deve corrispondere al formato standard. Quando viene caricato il file, l'individuazione app verifica seguente.  <br/>  Gli eventi nel registro necessario hanno avuto luogo non più di 90 giorni.  <br/>  Il file di registro deve includere informazioni sul traffico in uscita che può essere analizzate per attività di rete.  <br/> |
-   
-Se gli attributi non sono disponibili nei registri che vengono caricati, sicurezza App Cloud di Office 365 non possono visualizzare o analizzare le informazioni per l'utente. Formato del Registro standard del Firewall ASA Cisco, ad esempio, non include la quantità di byte caricati per transazioni, il nome utente o un URL di destinazione (solo un indirizzo IP destinazione). Poiché quest'ultimo non nei file di registro Cisco, sicurezza App Cloud di Office 365 non includerlo durante l'analisi del traffico di rete dell'organizzazione.
-  
-> [!NOTE]
-> Per alcuni tipi di firewall, è necessario impostare un livello di informazioni per i registri di traffico web da includere gli attributi obbligatori. Ad esempio, Cisco ASA firewall è necessario impostare il livello di informazioni su 6. Verificare che verificare che i firewall siano impostati per fornire le informazioni corrette nei registri traffico web. 
+Nelle sezioni seguenti vengono elencati gli attributi e necessari ulteriori requisiti per i registri di traffico web funzioni correttamente con Office 365 Cloud App sicurezza.
+
+### <a name="attributes"></a>Attributi
+
+Office 365 Cloud App protezione non possono visualizzare o analizzare gli attributi che non vengono inclusi nei registri traffico web. Formato del Registro standard del Firewall ASA Cisco non dispone ad esempio, il numero di byte caricati per ogni transazione, il nome utente o un URL di destinazione (solo un indirizzo IP destinazione). Di conseguenza, questi attributi non vengono visualizzati nei dati di individuazione Cloud e della visibilità applicazioni basate su cloud è limitata. Per i firewall ASA Cisco, è necessario impostare il livello di informazioni su 6. 
+
+I registri di traffico web devono includere i seguenti attributi:
+
+- Data della transazione
+- IP origine
+- Utente di origine (scelta consigliata)
+- Indirizzo IP di destinazione
+- URL di destinazione (impostazione consigliata; URL offrono maggiore precisione per il rilevamento delle app cloud di indirizzi IP)
+- Quantità totale di dati (scelta consigliata; informazioni sui dati è molto utile)
+- Tempo di caricamento o il download dei dati (scelta consigliata; vengono fornite informazioni su cloud modelli di utilizzo app)
+- Azione eseguita (consentite o bloccate)
+
+### <a name="additional-requirements"></a>Requisiti aggiuntivi 
+
+Oltre agli attributi elencati in precedenza in questo articolo, i registri di traffico web devono soddisfare i requisiti seguenti:
+
+- L'origine dati per i file di registro deve essere supportata.
+- Il formato di che utilizzano i file di registro deve corrispondere al formato standard. Quando viene caricato il file, l'individuazione app verifica seguente.
+- Gli eventi nel registro necessario hanno avuto luogo non più di 90 giorni.
+- Il file di registro deve includere informazioni sul traffico in uscita che può essere analizzate per attività di rete.
   
 ## <a name="data-attributes-for-different-vendors"></a>Attributi di dati per i fornitori diversi
-<a name="BKMK_LogAndData"> </a>
 
 Nella tabella seguente sono riepilogate le informazioni nel log di traffico web da vari fornitori. **è necessario contattare il fornitore per le informazioni più aggiornate.**
-  
-|**Origine dati**|**URL di app di destinazione**|**IP app di destinazione**|**Username**|**Origine IP**|**Totale del traffico**|**Byte caricati**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Barracuda  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Coprire blu  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Punto di controllo  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Cisco ASA  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |
-|Cisco FWSM  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |
-|Cisco Ironport WSA  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Cisco Meraki  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Clavister NGFW (Registro di sistema)  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|SonicWall Dell  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|FortiGate  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Juniper SRX  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Juniper SSG  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|McAfee SWG  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Meraki (Cisco)  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Microsoft Threat Management Gateway  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Reti Palo Alto  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Sophos  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |
-|Calamaro (comune)  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |
-|Calamaro (nativa)  <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |**Sì** <br/> |
-|Websense - rapporto dettagli indagine (con estensione CSV)  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Websense - registro attività Internet (il formato CEF)  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
-|Zscaler  <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |**Sì** <br/> |
+
+
+|                 Origine dati                  |    URL di App di destinazione    |    IP App di destinazione     |       Nome utente       |      Origine IP       |    Totale del traffico     |    Byte caricati    |
+|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+|                  Barracuda                   | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |          No          |          No          |
+|                  Coprire blu                   | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                  Punto di controllo                  |          No          | <strong>Sì</strong> |          No          | <strong>Sì</strong> |          No          |          No          |
+|              Cisco ASA (Registro di sistema)              |          No          | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> |          No          |
+|           Cisco ASA con FirePOWER           | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                  Cisco FWSM                  |          No          | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> |          No          |
+|              Cisco Ironport WSA              | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                 Cisco Meraki                 | <strong>Sì</strong> | <strong>Sì</strong> |          No          | <strong>Sì</strong> |          No          |          No          |
+|           Clavister NGFW (Registro di sistema)            | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                SonicWall (precedentemente Dell)                | <strong>Sì</strong> | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|            I filtri arte digitale             | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                  FortiGate                   |          No          | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                 Juniper SRX                  |          No          | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                 Juniper SSG                  |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                  McAfee SWG                  | <strong>Sì</strong> |          No          |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                    TMG MS                    | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|              Reti Palo Alto              |          No          | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                    Sophos                    | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |          No          |
+|                Calamaro (comune)                | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> |          No          | <strong>Sì</strong> |
+|                Calamaro (nativa)                | <strong>Sì</strong> |          No          | <strong>Sì</strong> | <strong>Sì</strong> |          No          | <strong>Sì</strong> |
+| Websense - rapporto dettagli indagine (con estensione CSV) | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|    Websense - registro attività Internet (il formato CEF)    | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
+|                   Zscaler                    | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> | <strong>Sì</strong> |
    
 ## <a name="supported-vendor-firewalls-and-proxies"></a>Fornitore supportati firewall e proxy
-<a name="BKMK_Supported"> </a>
 
 Protezione di Office 365 Cloud App supporta i proxy e i firewall seguenti.
   
-- Barracuda - Firewall di applicazioni Web (W3C)
-    
+- Barracuda - Firewall di applicazioni Web (W3C)  
 - Blu coprire Proxy dei gruppi di archiviazione - log di Access (W3C)
-    
 - Punto di controllo
-    
-- Cisco ASA Firewall (si noti che è necessario impostare il livello di informazioni su 6)
-    
+- Cisco ASA Firewall (verificare impostare il livello di informazioni su 6)
+- Cisco ASA con FirePOWER   
 - Cisco IronPort WSA
-    
 - Cisco ScanSafe
-    
 - Eseguire l'accesso Cisco Merkai - URL
-    
-- Sonicwall Dell
-    
+- Clavister NGFW (Registro di sistema)
+- I filtri arte digitale
 - Fortinet Fortigate
-    
+- iboss Secure Cloud Gateway
 - Juniper SRX
-    
 - Juniper SSG
-    
 - Gateway Web sicuro McAfee
-    
 - Microsoft Forefront Threat Management Gateway (W3C)
-    
 - Serie Palo Alto Firewall
-    
+- SonicWALL (precedentemente Dell)   
 - Sophos dei gruppi di archiviazione
-    
+- Sophos XG
 - Sophos Cyberoam
-    
 - Calamaro (comune)
-    
 - Calamaro (nativa)
-    
 - Rapporto dettagli indagine Websense - soluzioni di protezione Web - (con estensione CSV)
-    
 - Registro attività tramite Internet Websense - soluzioni di protezione Web - (il formato CEF)
-    
 - Zscaler
     
 > [!NOTE]
-> Se non è inclusa un'origine dati che si desidera utilizzare, è possibile richiedere che aggiunto al individuazione app. A tale scopo, durante la creazione di un report, selezionare **altre** per **origine dati**. Quindi digitare il nome dell'origine dati che si sta tentando di caricare. Si verrà esaminare il registro e consentono di verificare se viene aggiunto il supporto per quel tipo di registro. 
+> Se non è inclusa un'origine dati che si desidera utilizzare, è possibile richiedere che aggiunto al individuazione app. A tale scopo, durante la creazione di un report, selezionare **altre** per **origine dati**. Quindi digitare il nome dell'origine dati che si sta tentando di caricare. Si verrà esaminare il registro e consentono di verificare se viene aggiunto il supporto per quel tipo di registro. In alternativa, è possibile [definire un parser personalizzato](https://docs.microsoft.com/cloud-app-security/custom-log-parser) che genera una corrispondenza per il formato. 
   
 ## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>Risoluzione degli errori di caricamento di file di registro
 
