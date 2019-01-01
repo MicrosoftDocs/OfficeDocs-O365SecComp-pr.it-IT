@@ -1,9 +1,8 @@
 ---
-title: Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365
+title: Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Gli amministratori possono viene illustrato come creare posta flusso regole (noto anche come regole di trasporto) per la crittografia e decrittografia con Office 365 messaggio crittografia dei messaggi.
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194677"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466925"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 
 Amministratore globale di Office 365, è possibile creare posta regole del flusso (noto anche come regole di trasporto) per garantire la protezione dei messaggi di posta elettronica inviati e ricevuti. È possibile impostare le regole per crittografare eventuali messaggi di posta elettronica in uscita e rimuovere la crittografia di messaggi crittografati provenienti da all'interno dell'organizzazione o da risposte ai messaggi crittografati inviati dall'organizzazione. È possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell per creare queste regole. Oltre alle regole di crittografia generale, è possibile abilitare o disabilitare le opzioni di crittografia dei messaggi per gli utenti finali.
 
