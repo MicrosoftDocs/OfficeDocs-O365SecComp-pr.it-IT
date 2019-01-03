@@ -3,7 +3,7 @@ title: Simulatore di attacchi in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Amministratore globale di Office 365, è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e trovare gli utenti vulnerabili prima di un attacco reale accede a un'azienda.
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471999"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -49,7 +49,7 @@ Verificare che la propria organizzazione soddisfino i requisiti seguenti per sim
     
 - Essere un amministratore globale di Office 365
     
-- L'organizzazione utilizza [l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- L'organizzazione utilizza [l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - L'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md)con attacco simulatore visibili nella protezione &amp; centro conformità (Vai alla **gestione delle minacce** \> **simulatore di attacco**)<br/>![Gestione di rischio - simulatore di attacco](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ Questo attacco è incentrata su che consente di modificare che viene visualizzat
 
 ![Comporre corpo del messaggio di posta elettronica](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-È possibile creare l'editor HTML avanzata direttamente nel campo del **corpo del messaggio di posta elettronica** direttamente o lavorare con origine HTML. Esistono due campi importanti per l'inclusione in HTML: 
+È possibile creare l'editor HTML avanzata direttamente nel campo del **corpo del messaggio di posta elettronica** direttamente o lavorare con origine HTML.
   
 1. Nella [protezione &amp; centro conformità](https://security.microsoft.com), scegliere **gestione rischio** \> **simulatore di attacco**.
     
@@ -118,7 +118,7 @@ Un attacco di forza bruta password in un'organizzazione viene utilizzato in gene
     
 3. Consente di specificare il destinatario. Un destinatario destinazione deve essere Online cassetta postale di Exchange in modo che l'attacco abbia esito positivo.
     
-4. Specificare una password da utilizzare per l'attacco. È possibile utilizzare un file di testo (con estensione txt) per l'elenco delle password. Il file di testo non può superare i 10 MB dimensioni file. Utilizzare una password per riga e assicurarsi di includere un ritorno dopo l'ultima password nell'elenco.
+4. Specificare una password da utilizzare per l'attacco. A tale scopo, è possibile utilizzare un file di testo (con estensione txt) per l'elenco delle password. Il file di testo non può superare i 10 MB dimensioni file. Utilizzare una password per riga e assicurarsi di includere un ritorno dopo l'ultima password nell'elenco.
     
 5. Scegliere **Fine** per avviare l'attacco. 
     
