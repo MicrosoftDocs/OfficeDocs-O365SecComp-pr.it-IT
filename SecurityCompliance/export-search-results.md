@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità protezione di Office 365 in un computer locale. I risultati della posta elettronica vengono esportate come file PST. Contenuto di SharePoint e OneDrive per i siti vengono esportati come nativi documenti di Office. '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201580"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544117"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Esportare i risultati della ricerca contenuto nel centro conformità protezione di Office 365
 
@@ -32,7 +32,7 @@ Inoltre, eventuali messaggi di posta elettronica crittografati con RMS inclusi n
   
 Esportare i risultati di ricerca di contenuto comporta la preparazione dei risultati e dopo aver scaricato in un computer locale.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per esportare i risultati della ricerca, è necessario disporre del ruolo di gestione di esportazione in Office 365 Security &amp; centro conformità. Questo ruolo viene assegnato al gruppo di ruoli di gestione incorporati eDiscovery. Non è assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
     
@@ -74,10 +74,6 @@ Esportare i risultati di ricerca di contenuto comporta la preparazione dei risul
        </defaultProxy>
     </system.net>
     ```
-
-- Vedere la sezione per una descrizione dei limiti per esportare i risultati della ricerca. 
-    
-- La dimensione massima di un file PST che può essere esportato è 10 GB. Se si desidera modificare la dimensione predefinita, è possibile modificare il Registro di sistema nel computer utilizzato per esportare i risultati della ricerca. Vedere [Modifica le dimensioni dei file PST durante l'esportazione dei risultati della ricerca eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Passaggio 1: Preparare i risultati della ricerca per l'esportazione
 
@@ -96,13 +92,13 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
     > [!NOTE]
     > Se i risultati di una ricerca hanno più di 7 giorni, viene chiesto di aggiornare i risultati di ricerca. In tal caso, annullare l'esportazione, fare clic su **Aggiorna i risultati della ricerca** nel riquadro dei dettagli per la ricerca selezionata, quindi avviare l'esportazione dopo l’aggiornamento dei risultati.  
   
-6. Nella pagina **esportazione dei risultati della ricerca** , in **includere questi elementi dalla ricerca**, selezionare una delle opzioni seguenti:
+6. Nella pagina **esportazione dei risultati della ricerca** , in **Opzioni di Output**, selezionare una delle opzioni seguenti:
     
-    - Esportare solo gli elementi indicizzati
+    - Tutti gli elementi, ad eccezione di quelli che hanno il formato non riconosciuto, vengono crittografati o non indicizzati per altri motivi
     
-    - Esportazione di elementi indicizzati e parzialmente indicizzati
+    - Tutti gli elementi, comprese quelle con un formato non riconosciuto, vengono crittografati o non indicizzati per altri motivi
     
-    - Esportare solo gli elementi indicizzati parzialmente
+    - Solo gli elementi con un formato non riconosciuto, vengono crittografate o non indicizzate per altri motivi
     
     Vedere la sezione [informazioni](#more-information) per una descrizione sugli elementi come parzialmente indicizzati vengono esportati. Per ulteriori informazioni sugli elementi indicizzati parzialmente, vedere [parzialmente indicizzato gli elementi della funzionalità di ricerca del contenuto](partially-indexed-items-in-content-search.md).
     
@@ -202,8 +198,9 @@ Di seguito viene ulteriori informazioni sull'esportazione dei risultati di ricer
   - È possibile eseguire un massimo di 10 esportazioni contemporaneamente all'interno dell'organizzazione.
     
   - Un singolo utente può eseguire un massimo di tre esportazioni contemporaneamente.
-    
-  - Esportazione dei report di ricerca del contenuto non viene conteggiata uno qualsiasi dei limiti di esportazione. 
+
+  > [!NOTE]
+  > Esportazione solo i report da una ricerca contenuto conta anche nei confronti del numero di esportazioni in esecuzione con la stessa ora e il numero di esportazioni che è possibile eseguire un singolo utente.
     
 - Come affermato in precedenza, i risultati di ricerca di cassette postali e i siti vengono caricati nel percorso di archiviazione Azure (come descritto in [passaggio 1: preparazione per l'esportazione risultati di ricerca](#step-1-prepare-search-results-for-export)) una velocità massima di 2 GB all'ora.
     

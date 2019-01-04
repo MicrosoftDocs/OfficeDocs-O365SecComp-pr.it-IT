@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Invece di esportare i risultati effettivi della ricerca contenuto in Office 365 Security &amp; centro conformità, è possibile esportare solo un rapporto di risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrà esportata.
-ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
-ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
+ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283142"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544127"
 ---
 # <a name="export-a-content-search-report"></a>Esportare il rapporto della Ricerca contenuto
 
@@ -31,7 +31,7 @@ Invece di esportare il set completo di ricerca di risultati di una ricerca di co
   
 Quando si esporta un report, viene scaricato in una cartella che ha lo stesso nome di ricerca del contenuto, ma che viene aggiunto con *_ReportsOnly* . Ad esempio, se la ricerca del contenuto denominata *ContosoCase0815* , il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly* . Per un elenco di documenti che sono inclusi nella relazione, vedere [che cos'è incluso nel report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per esportare un report di ricerca del contenuto, è necessario disporre del ruolo di gestione ricerca conformità in Office 365 Security &amp; centro conformità. Questo ruolo viene assegnato ai gruppi di ruolo Manager e la gestione dell'organizzazione eDiscovery incorporati. Non è assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
     
@@ -54,6 +54,8 @@ Quando si esporta un report, viene scaricato in una cartella che ha lo stesso no
     **Nota:** Microsoft non produce delle estensioni di terze parti o componenti aggiuntivi per le applicazioni ClickOnce. Esportazione dei risultati della ricerca mediante un browser non supportato con le estensioni di terze parti o componenti aggiuntivi non è supportato. 
 
 - Se le dimensioni stimate totale dei risultati restituiti dalla ricerca di contenuti è maggiore di 20&nbsp;TB, esportazione del report avrà esito negativo. Per eseguire l'esportazione del report, provare a restringere l'ambito e rieseguire la ricerca in modo che le dimensioni stimate dei risultati sono inferiore a 20&nbsp;TB.
+
+- Esportazione di ricerca del contenuto è indicato il numero con il numero massimo di Esporta in esecuzione con la stessa ora e il numero massimo di esportazione che è possibile eseguire un singolo utente. Per ulteriori informazioni sui limiti di esportazione, vedere [risultati di ricerca di contenuto di esportare il centro di conformità e sicurezza di Office 365](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generare e scaricare un report di ricerca del contenuto
 
