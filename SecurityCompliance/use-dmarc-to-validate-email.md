@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: Informazioni su come configurare l'autenticazione dei messaggi basati sul dominio, Reporting e conformità (DMARC) per convalidare i messaggi inviati dall'organizzazione Office 365.
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255871"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750045"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utilizzare DMARC per convalidare la posta elettronica in Office 365
 
@@ -136,16 +136,16 @@ Per istruzioni sulla configurazione di DKIM del dominio e su come configurare DK
 Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente utilizzate per Office 365. Formare il record TXT DMARC per il dominio nel formato:
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 dove:
   
 - *si tratta del dominio che si desidera proteggere.* Per impostazione predefinita, il record impedisce che la posta elettronica del dominio e tutti i sottodomini. Ad esempio, se si specifica \_dmarc.contoso.com, quindi DMARC impedisce che la posta elettronica del dominio e tutti i sottodomini, ad esempio housewares.contoso.com o plumbing.contoso.com. 
     
-- *TTL* deve essere sempre l'equivalente di un'ora. L'unità utilizzata per TTL, ore (1 ora), minuti (60 minuti) o secondi (3600 secondi) varia a seconda del registrar del dominio. 
+- *TTL* deve essere sempre l'equivalente di un'ora. L'unità utilizzata per TTL, entrambi ore (1 ora), minuti (60 minuti) o secondi (3600 secondi) variano a seconda della funzione di registrazione per il dominio. 
     
-- pct=100 indica che questa regola deve essere utilizzata per il 100% della posta elettronica.
+- *pct = 100* indica che la regola deve essere utilizzata per 100% della posta elettronica.
     
 - *criteri di* specificare i criteri da seguire in caso di errore DMARC il server. È possibile impostare il criterio su Nessuno, la quarantena, o rifiutare. 
     
