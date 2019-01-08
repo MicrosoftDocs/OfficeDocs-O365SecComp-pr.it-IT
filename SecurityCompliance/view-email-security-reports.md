@@ -3,7 +3,7 @@ title: Visualizzare i report di protezione posta elettronica in sicurezza &amp; 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706420"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749330"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
@@ -28,7 +28,7 @@ Sono disponibili in vari rapporti sulla protezione posta elettronica il [protezi
   
 I rapporti di protezione posta elettronica includono quanto segue:
   
-- [Relazione sullo stato di protezione di rischio](view-email-security-reports.md#tps) (nuovo)! 
+- [Relazione sullo stato di protezione di rischio](view-email-security-reports.md#tps) 
     
 - [Rapporto sui rilevamenti di malware](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ I rapporti di protezione posta elettronica includono quanto segue:
     
 - [Rapporto messaggi segnalati dagli utenti](view-email-security-reports.md#userreported) (nuovo)! 
     
-## <a name="threat-protection-status-report-new"></a>Minacce relazione sullo stato di protezione (nuovo)!
+## <a name="threat-protection-status-report"></a>Relazione sullo stato di protezione di rischio
 
 La nuova relazione **Sullo stato di protezione di rischio** è un rapporto intelligente che mostra dannoso posta elettronica che è stato rilevato e bloccato da Exchange Online Protection. Questo rapporto vengono visualizzate informazioni sulla posta elettronica identificato come malware o un tentativo di phishing. 
 
@@ -176,7 +176,7 @@ Per visualizzare il report nel [protezione &amp; centro conformità](https://sec
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Autorizzazioni necessarie per visualizzare questi rapporti?
 
-Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange.
+Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
 
 - Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
     - Gestione organizzazione

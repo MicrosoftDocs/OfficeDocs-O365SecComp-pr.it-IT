@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Parzialmente voci indicizzate (anche gli elementi di chiamata non indicizzata) sono elementi della cassetta postale di Exchange e i documenti in SharePoint e ai siti OneDrive per qualche motivo non sono stati completamente indicizzato per la ricerca del contenuto. In questo articolo per informazioni sui motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi indicizzati parzialmente, identificare gli errori di ricerca di elementi indicizzati parzialmente e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione per la posta elettronica parzialmente indicizzato elementi.
-ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c1003f9907fffa37042ba62d01e4d938250cf570
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038079"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749340"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 
-Una ricerca di contenuto che viene eseguita da Office 365 Security &amp; centro conformità include automaticamente elementi indicizzati parzialmente nei risultati della ricerca stimati quando si esegue una ricerca. Elementi indicizzati parzialmente sono elementi della cassetta postale di Exchange e documenti in SharePoint e OneDrive per i siti che, per qualche motivo, non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e documenti del sito vengono indicizzati correttamente perché sono inclusi entro il [limite per il servizio di indicizzazione di messaggi di posta elettronica](limits-for-content-search.md#indexinglimits). Tuttavia, alcuni elementi possono superare i limiti di indicizzazione e sarà possibile indicizzare parzialmente. Di seguito sono altri motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi indicizzati parzialmente quando si esegue una ricerca di contenuto:
+Una ricerca di contenuto che viene eseguita da Office 365 Security &amp; centro conformità include automaticamente elementi indicizzati parzialmente nei risultati della ricerca stimati quando si esegue una ricerca. Elementi indicizzati parzialmente sono elementi della cassetta postale di Exchange e documenti in SharePoint e OneDrive per i siti che, per qualche motivo, non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e documenti del sito vengono indicizzati correttamente perché sono inclusi entro il [limite per il servizio di indicizzazione di messaggi di posta elettronica](limits-for-content-search.md#indexing-limits-for-email-messages). Tuttavia, alcuni elementi possono superare i limiti di indicizzazione e sarà possibile indicizzare parzialmente. Di seguito sono altri motivi per cui gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi indicizzati parzialmente quando si esegue una ricerca di contenuto:
   
 - Messaggi di posta elettronica dispongono di un file allegato di un tipo di file che non possono essere indicizzato; Nella maggior parte dei casi, il tipo di file è [sconosciuta o non è supportato per l'indicizzazione](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Eliminazione automatica zero ore (ZAP) è una funzionalità di protezione posta elettronica in grado di rilevare i messaggi con la posta indesiderata o malware che sono già stati consegnati alla posta in arrivo degli utenti e quindi viene eseguito il rendering del contenuto dannoso dannosa. Come ZAP esegue questa operazione dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180846"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749320"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -62,7 +62,7 @@ Consenti regole degli utenti finali, [regole del flusso di posta elettronica](ht
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Per vedere se ZAP spostato il messaggio
 
-Se si desidera visualizzare se ZAP spostato il messaggio, è possibile utilizzare sia la [relazione sullo stato di protezione di rischio](view-email-security-reports.md#threat-protection-status-report-new) (o [Esplora rischio](use-explorer-in-security-and-compliance.md)).
+Se si desidera visualizzare se ZAP spostato il messaggio, è possibile utilizzare sia la [relazione sullo stato di protezione di rischio](view-email-security-reports.md#threat-protection-status-report) (o [Esplora rischio](use-explorer-in-security-and-compliance.md)).
     
 ## <a name="to-disable-zap"></a>Per disabilitare ZAP
   

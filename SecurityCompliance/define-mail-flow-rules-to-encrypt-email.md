@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Gli amministratori possono viene illustrato come creare posta flusso regole (noto anche come regole di trasporto) per la crittografia e decrittografia con Office 365 messaggio crittografia dei messaggi.
-ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
-ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
+ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466925"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749360"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 
@@ -61,10 +61,10 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
    Ad esempio, per applicare la regola solo se il destinatario si trova all'esterno dell'organizzazione, selezionare **Aggiungi condizione** e quindi selezionare **il destinatario è interno/esterno** \> **all'esterno dell'organizzazione** \> **OK**.
 
 8. Per abilitare la crittografia utilizzando le nuove funzionalità OME, da **eseguire le operazioni seguenti**, selezionare **Modifica la sicurezza del messaggio** e quindi scegliere **Applica crittografia messaggi Office 365 e protezione dei diritti**. Selezionare un modello RMS dall'elenco, scegliere **Salva**e quindi fare clic su **OK**.
+  
+  L'elenco dei modelli include tutti i modelli predefiniti e le opzioni e i modelli personalizzati creati per utilizzano Office 365. Se l'elenco è vuoto, verificare che sono state impostate la crittografia dei messaggi di Office 365 con le nuove funzionalità come descritto in [impostare le nuove funzionalità di Office 365 Message Encryption incorporata nella parte superiore della protezione delle informazioni Azure](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere [configurazione e gestione dei modelli per la protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione **Non inoltrare** , vedere [opzione non inoltrare per messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **crittografare solo** , vedere [opzione crittografare solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-   L'elenco dei modelli include tutti i modelli predefiniti e le opzioni e i modelli personalizzati creati per utilizzano Office 365. Se l'elenco è vuoto, verificare che sono state impostate la crittografia dei messaggi di Office 365 con le nuove funzionalità come descritto in [impostare le nuove funzionalità di Office 365 Message Encryption incorporata nella parte superiore della protezione delle informazioni Azure](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere [configurazione e gestione dei modelli per la protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione **Non inoltrare** , vedere [opzione non inoltrare per messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **crittografare solo** , vedere [opzione crittografare solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-
-   È possibile scegliere **Aggiungi azione** se si desidera specificare un'altra azione.
+  È possibile scegliere **Aggiungi azione** se si desidera specificare un'altra azione.
 
 ### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>Utilizzare EAC per aggiornare una regola di flusso di posta esistente per utilizzare le nuove funzionalità OME
 
@@ -118,11 +118,11 @@ Se non è ancora passati organizzazione Office 365 per le nuove funzionalità OM
 
    Ad esempio, per applicare la regola solo se il destinatario si trova all'esterno dell'organizzazione, selezionare **Aggiungi condizione** e quindi selezionare **il destinatario è interno/esterno** \> **all'esterno dell'organizzazione** \> **OK**.
 
-  8. Per abilitare la crittografia senza utilizzare le nuove funzionalità OME in **effettuare le seguenti operazioni**, selezionare **Modifica la sicurezza del messaggio** \> **Applica alla versione precedente di OME**e quindi fare clic su **Salva**.
+8. Per abilitare la crittografia senza utilizzare le nuove funzionalità OME in **effettuare le seguenti operazioni**, selezionare **Modifica la sicurezza del messaggio** \> **Applica alla versione precedente di OME**e quindi fare clic su **Salva**.
 
-    Se viene visualizzato un errore di licenza IRM non è abilitato e quindi è stata impostata per l'organizzazione ancora OME. Se si desidera impostare OME a questo punto, è necessario impostare da utilizzare le nuove funzionalità OME. Per informazioni, vedere [impostare le nuove funzionalità di Office 365 Message Encryption basate sulla protezione delle informazioni di Azure](set-up-new-message-encryption-capabilities.md). Microsoft non è più supportata la configurazione di nuove distribuzioni di OME senza le nuove funzionalità.
+  Se viene visualizzato un errore di licenza IRM non è abilitato e quindi è stata impostata per l'organizzazione ancora OME. Se si desidera impostare OME a questo punto, è necessario impostare da utilizzare le nuove funzionalità OME. Per informazioni, vedere [impostare le nuove funzionalità di Office 365 Message Encryption basate sulla protezione delle informazioni di Azure](set-up-new-message-encryption-capabilities.md). Microsoft non è più supportata la configurazione di nuove distribuzioni di OME senza le nuove funzionalità.
 
-    È possibile scegliere **Aggiungi azione** se si desidera specificare un'altra azione.
+  È possibile scegliere **Aggiungi azione** se si desidera specificare un'altra azione.
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utilizzare Exchange Online PowerShell per creare una regola di flusso di posta elettronica per la crittografia dei messaggi di posta elettronica senza le nuove funzionalità OME
 

@@ -3,7 +3,7 @@ title: Visualizzare i report per la protezione rischio avanzate di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706320"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749350"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -90,7 +90,7 @@ Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diver
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Autorizzazioni necessarie per visualizzare i report degli strumenti di analisi?
 
-Per visualizzare e utilizzare i rapporti descritti in questo articolo, è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange.
+Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
 
 - Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
     - Gestione organizzazione
