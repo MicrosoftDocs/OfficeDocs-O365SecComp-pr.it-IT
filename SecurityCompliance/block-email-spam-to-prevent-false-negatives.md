@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: Suggerimenti per configurare il filtro protezione da posta indesiderata di Office 365 per bloccare la posta indesiderata ed evitare messaggi di falsi negativi. Un amministratore usa il filtro protezione da posta indesiderata di Office 365 per impedire l'invio di posta indesiderata alla posta in arrivo degli utenti.
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530692"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769870"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Bloccare la posta indesiderata utilizzando il filtro di Office 365 per evitare problemi di falsi negativi
 
@@ -97,7 +97,6 @@ Il servizio Exchange Online Protection è progettato per applicare i mittenti at
 > Se si usa una regola del flusso di posta elettronica per impostare il valore SCL su 0 (o un valore diverso da -1), allora tutte le opzioni di posta indesiderata di Outlook verranno applicate al messaggio. Questo significa che verranno applicati gli elenchi di elementi attendibili e bloccati, ma anche che i messaggi i cui indirizzi non fanno parte di tali elenchi potrebbero essere contrassegnati come posta indesiderata dal filtro protezione da posta indesiderata sul lato client. Se si desidera che Outlook elabori gli elenchi di elementi attendibili e bloccati, ma non usi il filtro protezione da posta indesiderata sul lato client, è necessario impostare l'opzione "Filtro automatico disattivato" nelle opzioni della posta indesiderata di Outlook. "Filtro automatico disattivato" è l'opzione predefinita nelle ultime versioni di Outlook, ma è necessario verificare che tale impostazione sia attiva per garantire che il filtro protezione da posta indesiderata sul lato client non venga applicato ai messaggi. Gli amministratori possono imporre la disattivazione del filtro protezione da posta indesiderata di Outlook seguendo le istruzioni in [Outlook: impostazione dei criteri per disabilitare l'interfaccia utente della posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/it-IT/kb/2180568).
   
 ## <a name="see-also"></a>Vedere anche
-<a name="BKMK_please_comment"> </a>
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
   
