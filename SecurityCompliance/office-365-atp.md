@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/08/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protezione da minacce avanzate di Office 365 include intelligence spoofing, collegamenti sicuri, gli allegati sicuri e funzionalità avanzate di anti-phishing. Protezione avanzata di rischio viene inoltre esteso per i file in SharePoint Online, OneDrive for Business e Teams Microsoft.
-ms.openlocfilehash: c147fde4e470b998a66a2cb456be71f635db25d7
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6cdbdde2c91f8a9a77eb688ae27d509163da42a1
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706310"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769800"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -36,45 +36,36 @@ Office 365 avanzate Threat Protection (degli strumenti di analisi) consente di p
     
 - Rilevamento quando un utente tenta di rappresentare gli utenti e dei domini personalizzati dell'organizzazione le [funzionalità di protezione anti-phishing degli strumenti di analisi in Office 365](atp-anti-phishing.md)
     
-**Protezione e degli strumenti di analisi di Office 365 dipende dai criteri che definisce il team di protezione dell'organizzazione per collegamenti sicuro, gli allegati sicuri e Anti-Phishing**. È importante esaminare periodicamente e modificare i criteri per mantenerle aggiornato e possono avvalersi delle nuove funzionalità che vengono aggiunti al servizio. [Sono disponibili i report](view-reports-for-atp.md) per visualizzare la modalità di funzionamento degli strumenti di analisi per l'organizzazione. Questi rapporti anche possono visualizzare le aree cui potrebbe essere necessario esaminare e aggiornare i criteri. E, se si dispongono di file che vengono contrassegnati come malware che non deve essere o file si desidera che Microsoft per esaminare, è possibile [inviare un file a Microsoft per l'analisi](#submit-a-suspicious-file-to-microsoft-for-analysis).
+**Protezione e degli strumenti di analisi di Office 365 dipende dai criteri che definisce il team di protezione dell'organizzazione per collegamenti sicuro, gli allegati sicuri e Anti-Phishing**. È importante esaminare periodicamente e modificare i criteri per mantenerle aggiornato e possono avvalersi delle nuove funzionalità che vengono aggiunti al servizio. 
+
+[Sono disponibili i report](view-reports-for-atp.md) per visualizzare la modalità di funzionamento degli strumenti di analisi per l'organizzazione. Questi rapporti anche possono visualizzare le aree cui potrebbe essere necessario esaminare e aggiornare i criteri. E, se si dispongono di file che vengono contrassegnati come malware che non deve essere o file si desidera che Microsoft per esaminare, è possibile [inviare un file a Microsoft per l'analisi](#submit-a-suspicious-file-to-microsoft-for-analysis).
 
 ## <a name="new-features-are-continually-being-added-to-atp"></a>Nuove funzionalità vengono aggiunti continuamente a strumenti di analisi
 
 Stiamo continuando ad aggiungere nuove funzionalità a Office 365 e che include degli strumenti di analisi. Di seguito è riportato un elenco di diverse nuove funzionalità, alcune delle quali chiamate per un criterio degli strumenti di analisi deve essere esaminato e aggiornato. Per ulteriori informazioni sulle nuove funzionalità di punta degli strumenti di analisi (o Microsoft 365 in generale), visitare il [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).
-  
-- A partire da ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL nel messaggio di posta elettronica, nonché gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint e Visio in Windows, nonché Office apps iOS e dispositivi Android. (Verificare che si sta utilizzando [l'Autenticazione moderno per Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
-    
-- A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione. (Assicurarsi di [esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md).)
 
-- A partire da ritardo maggio 2018, funzionalità di [quarantena](quarantine-email-messages.md) in sicurezza &amp; centro conformità vengono estese per [Strumenti di analisi di SharePoint Online, OneDrive for Business e i team di Microsoft](atp-for-spo-odb-and-teams.md).
- 
-- A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac. (Assicurarsi di [esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md).)
 
-- Inizio in settembre 2018, [pagine di avviso degli strumenti di analisi di Office 365](atp-safe-links-warning-pages.md) caratteristica una nuova combinazione di colori, ulteriori dettagli e la possibilità di continuare a un sito nonostante assegnate gli avvisi e suggerimenti. 
- 
-- A partire da ottobre 2018 e distribuzione sui prossimi mesi, quando gli utenti utilizzano Outlook Web Application (OWA) o Outlook, degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali, non riscritto URL. (Viene chiamato questo visibilità collegamento nativa).
+|Aggiornamenti delle funzionalità  |Le azioni  |
+|---------|---------|
+|A partire da ottobre 2018 e distribuzione sui prossimi mesi, quando gli utenti utilizzano Outlook Web Application (OWA) o Outlook, degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali, non riscritto URL. (Viene chiamato questo visibilità collegamento nativa).|Nessuno         |
+|Inizio in settembre 2018, [pagine di avviso degli strumenti di analisi di Office 365](atp-safe-links-warning-pages.md) caratteristica una nuova combinazione di colori, ulteriori dettagli e la possibilità di continuare a un sito nonostante assegnate gli avvisi e suggerimenti. |Nessuno         |
+|A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac.   |[Esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md)  |
+|A partire da ritardo maggio 2018, funzionalità di [quarantena](quarantine-email-messages.md) in sicurezza &amp; centro conformità vengono estese per [Strumenti di analisi di SharePoint Online, OneDrive for Business e i team di Microsoft](atp-for-spo-odb-and-teams.md). |[Esaminare e modificare i criteri di allegati sicuri degli strumenti di analisi](set-up-atp-safe-attachments-policies.md) |
+|A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione. |[Esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) |
+|A partire da ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL nel messaggio di posta elettronica, nonché gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint e Visio in Windows, nonché Office apps iOS e dispositivi Android.  |Verificare che si sta utilizzando [l'Autenticazione moderno per Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
 
       
 ## <a name="get-office-365-atp"></a>Ottenere degli strumenti di analisi di Office 365
 
-> [!IMPORTANT]
-> Office 365 degli strumenti di analisi è incluso in sottoscrizioni, ad esempio Microsoft 365 Enterprise, Office 365 Enterprise E5, A5 Education di Office 365 e [Microsoft 365 Business](https://docs.microsoft.com/en-us/microsoft-365/business/security-features). Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Office 365 degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365 e Office 365 Education A5. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
-1. Come amministratore globale o di sicurezza, passare a [https://portal.office.com](https://portal.office.com) e accedere con l'account di lavoro o della scuola per Office 365. 
-    
-2. Scegliere **amministratore** \> **fatturazione** per verificare cosa include in abbonamento corrente. <br/>![Come un amministratore globale acceda a portal.office.com e passare a amministrazione \> fatturazione](media/18a3546c-bd1f-4f49-82ec-0184909b42c2.png)
-  
-3. Se viene visualizzata **E5 Enterprise di Office 365**, **Office 365 Education A5**o **Microsoft 365 Business**, l'organizzazione dispone degli strumenti di analisi. <br/>Se viene visualizzata una sottoscrizione diversa, ad esempio **Office 365 Enterprise E3** o **Office 365 Enterprise E1**, è possibile aggiungere degli strumenti di analisi. A tale scopo, scegliere **Aggiungi sottoscrizione +**.
-    
-Dopo avere creato degli strumenti di analisi, il passaggio successivo è per il team di protezione definire i criteri. 
-  
 ## <a name="define-policies-for-atp"></a>Definire i criteri per strumenti di analisi
 
 - **[Impostazione dei criteri anti-phishing degli strumenti di analisi in Office 365](set-up-anti-phishing-policies.md)** inclusa attacchi basati sulla rappresentazione per la protezione dagli attacchi che inviano messaggi di posta elettronica sembrano provenire da mittenti attendibili o domini 
 
 - **[Impostare i criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)** inclusa [personalizzato bloccati gli URL](set-up-a-custom-blocked-urls-list-wtih-atp.md) ed [elenco URL "non di riscrittura" personalizzato](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) dell'organizzazione
     
-- **[Impostare i criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)** che può includere [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md)
+- **[Impostare i criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)** e scegliere una delle opzioni diverse, ad esempio [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md)
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>Vedere funzionamento degli strumenti di analisi visualizzando i report
 
@@ -87,12 +78,9 @@ Dopo aver i criteri degli strumenti di analisi, sono disponibili per mostrare co
 2. [Visualizzare i report per la protezione avanzata di rischio](view-reports-for-atp.md).
     
 3. Se necessario, apportare modifiche per i criteri di protezione. Vedere le risorse seguenti:
-
-  - [Criteri di anti-phishing degli strumenti di analisi in Office 365](set-up-anti-phishing-policies.md)
-    
-  - [Criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
-    
-  - [Criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)
+      - [Criteri di anti-phishing degli strumenti di analisi in Office 365](set-up-anti-phishing-policies.md)
+      - [Criteri degli strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
+      - [Criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)
     
     
 ## <a name="submit-a-suspicious-file-to-microsoft-for-analysis"></a>Inviare un file potenzialmente dannoso a Microsoft per l'analisi

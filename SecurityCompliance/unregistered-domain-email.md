@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Se si invia un volume elevato di posta elettronica dominio annullare la registrazione, si corre il rischio della posta elettronica Guida bloccato. In questo articolo per ulteriori informazioni.
-ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596729"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769784"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Annullare la registrazione dominio di posta elettronica: Che cosa è necessario sapere
 
-Office 365 consente di tenant inoltrare alcuni messaggi tramite Exchange Online Protection (EOP). Un esempio supportato è quando gli utenti dispongono di una cassetta postale di Office 365 e un utente esterno Invia messaggio di posta elettronica ma inoltro della posta è configurato in modo che torna alla cassetta postale esterno dell'utente. Si tratta più comune in ambienti education cui studenti desiderano sfruttare l'interfaccia di posta elettronica personale da dispongono comunque messaggi di posta elettronica relativi a scuola. Un altro esempio è quando i clienti sono in uno scenario ibrido e sono presenti server locali che inviano posta elettronica da EOP.
+Office 365 consente di tenant inoltrare alcuni messaggi tramite Exchange Online Protection (EOP). Un esempio supportato è quando gli utenti dispongono di una cassetta postale di Office 365 e un utente esterno Invia messaggio di posta elettronica ma inoltro della posta è configurato in modo che torna alla cassetta postale esterno dell'utente. Si tratta più comune in ambienti education cui studenti desiderano sfruttare l'interfaccia di posta elettronica personale da dispongono comunque messaggi di posta elettronica relativi a scuola. Un altro esempio è quando i clienti sono in uno scenario ibrido e sono presenti server locale per l'invio di posta elettronica da EOP.
 
 ## <a name="problems-with-unregistered-domains"></a>Problemi con i domini non registrati
 
@@ -46,14 +46,14 @@ Esistono diversi aspetti da eseguire se ottenere bloccato per l'invio da domini 
 
 4. Al termine, è necessario chiamare il supporto Microsoft e chiederà di ottenere il tenant sbloccato per inviare nuovamente da domini di annullare la registrazione.  Fornire il codice di errore è utile, ma è necessario verificare che l'ambiente è protetta e che la posta indesiderata non verrà inviata nuovamente. Sono disponibili ulteriori informazioni sull'apertura di un caso del supporto tecnico [di seguito](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Per altre informazioni
+## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Office 365 email anti-spam protection](anti-spam-protection.md)
+[Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
 [Rapporti di mancato recapito della posta elettronica in Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
 [Configurare l'inoltro della posta elettronica per una cassetta postale](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Come configurare un dispositivo multifunzione o un'applicazione per l'invio di posta elettronica con Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Come configurare un dispositivo multifunzionale o un'applicazione all'invio di posta elettronica tramite Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
 [Gestisci domini accettati in Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

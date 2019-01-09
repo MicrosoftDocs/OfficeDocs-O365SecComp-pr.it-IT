@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Se l'organizzazione invia una quantità elevata di posta inviata in blocco contrassegnato come posta indesiderata, è possibile ottenere impedito l'invio di posta elettronica con Office 365. In questo articolo per ulteriori informazioni su del problema e operazioni su di esso.
-ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2d198bc1b61da429f45f0d1f54c63876d59d890f
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972248"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769810"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controllo della posta indesiderata in uscita in Office 365
 
@@ -47,7 +47,7 @@ Da intraprendere gestione prendere in seria posta indesiderata in uscita dal mom
 
 È difficile stabilire un equilibrio tra i clienti che desiderano inviare un volume elevato di posta elettronica e protezione del servizio da account compromesso ed emailers di massa con alle pratiche di acquisizione di una scarsa elenco. Anche il costo totale di destinazione in un blocco di terze parti 3rd indirizzi IP in uscita è superiore al blocco di un cliente di inviare posta elettronica in uscita. Come descritto in [Exchange Online Service Description](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits), utilizzo EOP per l'invio di posta elettronica in blocco non è un utilizzo del servizio ed è consentita solo singole "massimo sforzo". Per i clienti che si desidera inviare posta elettronica in blocco, si consiglia quanto segue:
 
-1. **Inviare la posta elettronica in blocco tramite il proprio server di posta locali**. Ciò significa che il cliente avrà gestire il proprio dell'infrastruttura di posta elettronica per questo tipo di messaggio di posta elettronica.
+1. **Inviare la posta elettronica in blocco tramite i proprio locale nel server di posta elettronica**. Ciò significa che il cliente avrà gestire il proprio dell'infrastruttura di posta elettronica per questo tipo di messaggio di posta elettronica.
 
 2. **Utilizzare un 3rd parti emailer blocco per inviare la comunicazione di massa**. Esistono diversi emailers di massa di terze parti la cui attività unicamente può inviare posta elettronica in blocco 3. Lavorano con clienti per garantire che dispongono di invio consigliate e dispongono di risorse dedicate per l'applicazione viene. 
 

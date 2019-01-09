@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194717"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769860"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -414,21 +414,21 @@ In generale, il criterio applicato a un messaggio viene identificato nell'intest
   
 |**Priorità**|**Criterio**|**Categoria**|**Dove gestite?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|3   <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|4   <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
-|5   <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|6   <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|7   <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
-|8   <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
+|1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|3  <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|4  <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
+|5  <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|6  <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|7  <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
+|8  <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
    
 Se si dispone di più criteri Anti-phishing diversi, verrà applicato quello la priorità più alta. Ad esempio, se che si dispone di due criteri:
   
 |**Criterio**|**Priorità**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |Attivato  <br/> |
+|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |Attivato  <br/> |
    
 Se è disponibile in un messaggio e viene identificato come rappresentazione di spoofing e utente e ambito è lo stesso insieme di utenti al criterio A e B criteri, quindi il messaggio viene considerato come un spoofing, ma non viene applicata alcuna azione dopo anti-spoofing è disattivato , e lo SPOOFING esegue una priorità superiore (4) di rappresentazione utente (8).
   
@@ -444,7 +444,7 @@ Esiste tuttavia uno scenario legittimo dove lo spoofing anti deve essere disabil
   
 ![Il record MX cliente non si riferisce a Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-L'altro server può essere un server di posta locali di Exchange, un filtro di dispositivi, ad esempio Ironport, di posta o servizio ospitato dal cloud diversa.
+L'altro server può essere un Exchange server di posta, un filtro di dispositivi, ad esempio Ironport, posta elettronica in locale o servizio ospitato dal cloud diversa.
   
 Se il record MX del dominio del destinatario non si riferisce a Office 365, non è necessario disabilitare lo spoofing anti perché Office 365 ricerca record MX del dominio di destinazione e viene eliminato lo spoofing anti punta a un altro servizio. Se non si conosce se il dominio con un altro server in primo piano, è possibile utilizzare un sito Web come MX della casella degli strumenti di cercare il record MX. Potrebbe indicare qualcosa di simile alla seguente:
   
@@ -635,7 +635,7 @@ Se l'utente è un amministratore di dominio ma non è un cliente di Office 365:
     
 - Se si dispone di mittenti in blocco la trasmissione di posta elettronica per conto dell'utente, dovrebbe funzionare con cui inviare la posta elettronica in modo tale che il dominio di invio nella From: indirizzi (se appartiene a un utente) viene allineato con il dominio che passa SPF o DMARC.
     
-- Se si dispone in locale server di posta o inviare da un provider di Software come servizio o da un servizio di hosting cloud come Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services o allo stesso modo, è necessario verificare che vengono aggiunti a un record SPF.
+- Se si dispongono in locale server di posta o inviare da un provider di Software come servizio o da un servizio di hosting cloud come Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services o allo stesso modo, è necessario verificare che vengono aggiunti a un record SPF.
     
 - Se si è un dominio di piccole dimensioni ospitato da un provider di servizi Internet, è necessario impostare il record SPF in base alle istruzioni che viene fornito dal provider di servizi Internet. La maggior parte dei provider di servizi Internet forniscono questi tipi di istruzioni e sono disponibili nelle pagine di supporto della società.
     
