@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Quando si imposta i criteri di sicurezza degli allegati degli strumenti di analisi, si sceglie recapito dinamico per evitare ritardi messaggio e consentire agli utenti di visualizzare in anteprima degli allegati che vengono analizzati.
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769830"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789464"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Recapito dinamico e l'anteprima allegati sicuri di Office 365 degli strumenti di analisi di
 
@@ -35,6 +35,9 @@ Recapito dinamico Elimina i ritardi di posta elettronica mediante l'invio di cor
 - Se un allegato è determinato da dannoso, viene inviata alla quarantena, in cui una persona nel team di protezione dell'organizzazione (ad esempio un amministratore di protezione o di amministratore globale di Office 365) possibile [gestire i messaggi in quarantena in Office 365](manage-quarantined-messages-and-files.md).
 
 La maggior parte dei documenti PDF e l'ufficio documenti possono essere visualizzati in anteprima in modalità provvisoria durante l'analisi degli strumenti di analisi. Se un allegato non è compatibile con il Visualizzatore di recapito dinamico, un segnaposto allegato viene visualizzato dai destinatari di posta elettronica fino a completa la scansione degli allegati sicuri degli strumenti di analisi.
+
+> [!TIP]
+> Se si utilizza un dispositivo mobile e file PDF non eseguono il rendering nell'anteprima dinamica recapito inizialmente, tentare l'accesso a Office 365 con browser per dispositivi mobili.
 
 Con recapito dinamico, persone possono leggere e rispondere ai propri messaggi di posta elettronica immediatamente, mentre gli allegati vengono analizzati. 
 
@@ -73,4 +76,4 @@ Esistono alcuni scenari in cui non è supportato recapito dinamico. Questi sono 
 - Ambienti in cui un amministratore di Exchange Online è abilitato Exclaimer. Per risolvere questo problema, vedere [i messaggi con allegati non vengono recapitati quando vengono utilizzati degli strumenti di analisi dinamica recapito ed Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - Messaggi crittografati con [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
-    
+

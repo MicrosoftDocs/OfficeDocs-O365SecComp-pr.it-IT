@@ -3,7 +3,7 @@ title: Nuovo criterio di crittografia dei messaggi di Office 365 per le informaz
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: Applicato automaticamente il criterio di Office 365 Message Encryption per la distribuzione ai tenant tutti i tipi di informazioni riservate.'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752088"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789454"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Criteri di crittografia dei messaggi di Office 365 per le informazioni riservate
 
@@ -30,7 +30,7 @@ L'organizzazione riceverà una notifica nel centro di messaggi Office 365 notifi
 
 ## <a name="sensitive-information-type-policy-details"></a>Dettagli dei criteri tipo di informazioni riservate
 
-Verrà creata una regola di flusso di posta di Exchange nell'organizzazione che verrà automaticamente crittografare i messaggi di posta elettronica di fuori dell'organizzazione con il *Solo crittografa* criteri che contengono i tipi di informazioni riservate seguenti:
+Verrà creata una regola di flusso di posta di Exchange nell'organizzazione che verrà automaticamente crittografare i messaggi di posta elettronica di fuori dell'organizzazione con il *Solo crittografa* criteri se i messaggi di posta elettronica o gli allegati sono i seguenti tipi di informazioni riservate:
 
 - Numero di registrazione ABA
 - Numero di carta di credito
@@ -70,6 +70,6 @@ Se si desidera dissociare modifica, eseguire la procedura seguente:
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>Come è possibile disattivare il criterio automatico?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>Come disabilitare o personalizzare il criterio automatico?
 
-Se non escludere modifica e la regola di posta elettronica di Exchange sia stata già creata, è possibile [disabilitare la regola](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) passando a **flusso di posta** > **regole** in Exchange admin center (EAC) e disabilitare la regola "*Crittografa in uscita messaggi di posta elettronica riservati (fuori regola casella)*".
+Se non escludere modifica e la regola di flusso di posta di Exchange sia stata già creata, è possibile [disattivare o modificare la regola](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) passando a **flusso di posta** > **regole** in Exchange admin center (EAC) e disabilitare la regola "*Crittografa in uscita tramite posta elettronica riservati (fuori regola casella)*".
