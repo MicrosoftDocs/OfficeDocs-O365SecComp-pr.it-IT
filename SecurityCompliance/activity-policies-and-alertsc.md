@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definire i criteri di attività con Office 365 Cloud App protezione per impostare gli avvisi per attivare indicanti l'attività specifiche eseguite avvenire troppo spesso. Tramite l'impostazione dei criteri per attivare gli avvisi, possono essere informati e monitorare le attività specifiche.
-ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706470"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014938"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Criteri delle attività e avvisi in Office 365 Cloud App Security
 
@@ -35,7 +35,7 @@ Se si è un [amministratore globale o amministratore di protezione](permissions-
 > [!NOTE]
 > Criteri di protezione di applicazione Cloud di Office 365 sono diversi dai [avviso criteri in Office 365 Security &amp; centro conformità](alert-policies.md). L'attività criteri descritti in questo articolo vengono definiti nel portale di Office 365 Cloud App protezione e consentono di migliorare la gestione ambiente basato su cloud dell'organizzazione. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Verificare quanto segue:
   
@@ -47,7 +47,7 @@ Verificare quanto segue:
     
 ## <a name="create-a-new-activity-policy"></a>Creare un nuovo criterio di attività
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     

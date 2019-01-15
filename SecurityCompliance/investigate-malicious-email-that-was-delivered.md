@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Informazioni su come utilizzare Intelligence minaccia per trovare e provare a utilizzare e-mail dannoso.
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706040"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014918"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Trovare e analizzare dannoso posta elettronica che è stato recapitato (Business Intelligence rischio di Office 365)
 
@@ -48,7 +48,7 @@ Malintenzionati potrebbe essere l'invio dei messaggi a utenti di prova e per att
 > [!TIP]
 > [Soluzioni di rischio](get-started-with-ti.md#threat-explorer) (anche noto come Explorer), è un referente potente che può avere diversi scopi, ad esempio ricerca e l'eliminazione dei messaggi, che identifica l'indirizzo IP del mittente messaggio di posta elettronica dannoso o avvio di un evento imprevisto per un'analisi più approfondita. La procedura seguente viene illustrato l'utilizzo di soluzioni per trovare ed eliminare dannoso posta elettronica dalle cassette postali di destinatari. 
   
-1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. Verrà visualizzata la sicurezza &amp; centro conformità. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. Verrà visualizzata la sicurezza &amp; centro conformità. 
     
 2. Nel riquadro di spostamento sinistro, scegliere **gestione rischio** \> **Explorer**.
     

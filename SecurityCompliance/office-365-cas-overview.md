@@ -3,6 +3,7 @@ title: Panoramica di Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: "Protezione di Office 365 Cloud App offre offre informazioni sul attività sospette in Office 365 in modo che è possibile ricercare situazioni in cui sono potenzialmente problematici e, se necessario, eseguire un'azione per risolvere i problemi di sicurezza. "
-ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
-ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26864557"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014928"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Panoramica di Office 365 Cloud App Security
   
@@ -39,7 +40,7 @@ Protezione di Office 365 Cloud App vengono fornite informazioni sulle attività 
   
 Accedere al portale di protezione di applicazioni di Office 365 Cloud mediante la protezione di Office 365 è possibile &amp; centro conformità. Ecco un modo efficace per eseguire questa operazione:
   
-1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**. <br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
     
@@ -91,17 +92,17 @@ Per accedere a questa pagina, nel portale Office 365 Cloud App sicurezza passare
   
 [Informazioni sulle origini dati e registri di traffico web per la protezione di Office 365 Cloud App](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>Autorizzazioni dell'App
+## <a name="oauth-apps"></a>App OAuth
 
 Con Office 365 Cloud App protezione, è possibile consentire o impedire agli utenti dell'organizzazione di utilizzare applicazioni di terze parti che accedono ai dati in Office 365.
   
-![In accesso client di Office 365, è possibile accedere alla pagina gestire le autorizzazioni dell'App dal menu indagare.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![In accesso client di Office 365, è possibile accedere alla pagina di App gestire OAuth dal menu indagare.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-Per accedere a questa pagina, passare a **indagare** \> **le autorizzazioni dell'App**. 
+Per accedere a questa pagina, passare a **indagare** \> **apps OAuth**. 
   
 ![Nel portale di accesso client di Office 365, selezionare indagare.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Gestire le autorizzazioni delle app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+[Gestire le app di OAuth con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Dashboard di individuazione cloud
 
@@ -119,6 +120,6 @@ Per ottenere questo dashboard nel portale Office 365 Cloud App sicurezza passare
 
 - Ottenere i [casi di utilizzo della protezione di Office 365 Cloud App e manuale dell'utente](https://aka.ms/O365CASGuide)
     
-- [Preparazione di Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
+- [Preparare l'ambiente per Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
     
 

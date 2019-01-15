@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Come mai il livello di protezione dell'organizzazione effettivamente presente in Office 365? Punteggio sicura è qui Guida in linea. Punteggio sicura analizza la protezione dell'organizzazione in base alle normali attività e le impostazioni di sicurezza in Office 365 e assegna un punteggio.
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706180"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015069"
 ---
 # <a name="office-365-secure-score"></a>Secure Score di Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706180"
 
 Se l'organizzazione dispone di una sottoscrizione che include [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)o Business Premium di Office 365 e si dispone delle autorizzazioni necessarie, è possibile visualizzare punteggio protette della propria organizzazione, visitare il sito [https://securescore.office.com](https://securescore.office.com). 
 
-In alternativa, è possibile visitare il centro di conformità e sicurezza ([https://security.microsoft.com](https://security.microsoft.com)), dove troverai un widget punteggio sicuro che offre il punteggio corrente.
+In alternativa, è possibile visitare il centro di conformità e sicurezza ([https://protection.office.com](https://protection.office.com)), dove troverai un widget punteggio sicuro che offre il punteggio corrente.
 
 ![Secure widget punteggio](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ Per visualizzare l'impatto delle proprie azioni in sicurezza della propria organ
   
 ![Scheda Analyzer punteggio dello strumento di Office 365 sicura punteggio](media/SecureScore-ScoreAnalyzer-7days.png)
   
-Sotto il grafico, vedrai lsit di punteggi e azioni in base alla categoria.
+Sotto il grafico verrà visualizzato un elenco di punteggi e azioni in base alla categoria.
   
 ![Grafico della scheda Analyzer punteggio con un punto di dati selezionato](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

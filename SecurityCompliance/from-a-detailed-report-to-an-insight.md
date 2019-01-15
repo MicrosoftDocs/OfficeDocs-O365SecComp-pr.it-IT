@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Informazioni su come è possibile spostare da un rapporto dettagliato per delle conoscenze con le azioni consigliate per la protezione &amp; centro conformità.
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706250"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014978"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procedura: da un report dettagliato alle informazioni dettagliate
 
@@ -30,7 +30,7 @@ Questa è una delle diverse procedure dettagliate per la sicurezza &amp; centro 
 
 Verrà ora esaminato il flusso da un rapporto dettagliato per delle conoscenze e azioni. (Questo è un esempio di [protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md) breve). 
   
-1. Innanzitutto con [protezione &amp; centro conformità](https://security.microsoft.com) report. (Accedere ai **rapporti** \> **Dashboard**.)<br/>![In sicurezza &amp; centro conformità, passare a report \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Innanzitutto con [protezione &amp; centro conformità](https://protection.office.com) report. (Accedere ai **rapporti** \> **Dashboard**.)<br/>![In sicurezza &amp; centro conformità, passare a report \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. È scegliere un report per ottenere informazioni più dettagliate. (Scegliere un report, ad esempio il rapporto di **Stato di protezione di rischio** ).<br/>![Rapporto di stato di protezione rischio con insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Criteri di rilevamento anomalia in Office 365 Cloud App Security utilizzano algoritmi incorporati per individuare eventuali problemi potenziali. È consigliabile avere criterio rilevamento anomalie in almeno un, che è possibile ottimizzare (quando viene creato) utilizzando i filtri. '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706340"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015078"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Criteri di rilevamento delle anomalie in Office 365 Cloud App Security
 
@@ -39,7 +39,7 @@ Come [amministratore globale o sicurezza](permissions-in-the-security-and-compli
  > [!IMPORTANT]
 > Non esiste un periodo di formazione iniziale di sette (7) giorni non attivati durante il quale gli avvisi comportamenti anomali. Algoritmo di rilevamento anomalia è ottimizzato per ridurre il numero dei falsi allarmi. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Verificare quanto segue:
   
@@ -51,7 +51,7 @@ Verificare quanto segue:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Consente di visualizzare i criteri di rilevamento anomalia
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     
@@ -89,11 +89,10 @@ Nella tabella seguente vengono descritti i criteri di rilevamento anomalia prede
 |Più tentativi di accesso non riuscito  <br/> |Identificare gli utenti che non è più tentativi di accesso in una singola sessione per quanto riguarda la previsione maturata, che potrebbe indicare un tentativo di violazione.  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>Avvisi di rilevamento anomalia diagnosi
-<a name="triage"> </a>
 
 Come gli avvisi sono disponibili in, è possibile esaminare gli avvisi in modo rapido e determinare quali gestire prima. Contesto per un avviso consente di verificare la visione e determinare se un elemento dannoso avviene in effetti. Per iniziare l'esplorazione di un avviso, utilizzare la procedura seguente:
   
-1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     

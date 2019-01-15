@@ -1,5 +1,5 @@
 ---
-title: Rilevare un'attività in Office 365 Cloud App Security
+title: Analizzare un'attività in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: "Con Office 365 Cloud App protezione, è possibile visualizzare quanto avviene nell'ambiente Office 365 per informazioni istruttoria attività e gli account. "
-ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706460"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014898"
 ---
-# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Rilevare un'attività in Office 365 Cloud App Security
+# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Analizzare un'attività in Office 365 Cloud App Security
   
 |Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
 |:-----|:-----|:-----|:-----|
@@ -30,7 +30,7 @@ Office 365 Cloud App sicurezza e l'utilizzo del [Registro di controllo di Office
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Come ottenere la pagina di registro delle attività
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola. (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).)
+1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).)
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749330"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014988"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
@@ -51,7 +51,7 @@ La nuova relazione **Sullo stato di protezione di rischio** è un rapporto intel
 > [!NOTE]
 > Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio clienti EOP possono visualizzare informazioni su malware rilevato nel messaggio di posta elettronica, ma non informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team Microsoft che](atp-for-spo-odb-and-teams.md), una funzionalità specifiche degli strumenti di analisi. ([Ulteriori informazioni sui report degli strumenti di analisi](view-reports-for-atp.md)).
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione di rischio](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -67,7 +67,7 @@ Quando si apre la relazione sullo stato di protezione di rischio, il report most
 
 Nel rapporto **Rilevamenti di Malware** viene visualizzato il numero di messaggi in ingresso e in uscita sono stato rilevato come contenente malware per l'organizzazione. 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Rilevamenti di Malware**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Rilevamenti di Malware**.
   
 ![Esempio di rapporto sui rilevamenti di malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -77,7 +77,7 @@ Simile ad altri report, ad esempio il rapporto di stato di protezione di rischio
 
 Il rapporto **Malware principali** Mostra i vari tipi di malware rilevato da Exchange Online. 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Malware principali**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Malware principali**.
   
 ![Controllo del codice sorgente - EOP Malware principali](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -93,7 +93,7 @@ Sotto il grafico verrà visualizzato un elenco di malware rilevato e il numero d
 
 Il report **primi mittenti e destinatari** è un grafico a torta che mostra i mittenti di posta elettronica principali. 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **primi mittenti e destinatari**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **primi mittenti e destinatari**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> primi mittenti e destinatari](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -111,7 +111,7 @@ Sotto il grafico, si vedrà che i mittenti di posta elettronica principale o i d
 
 Nel rapporto di **Posta elettronica di spoofing** viene visualizzato il numero dei messaggi di posta elettronica spoofing sono stato rilevato e di quelli, quelli che sono state esaminate "good" (SteadyState motivi aziendali legittimi mail spoofing). 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Spoofing posta**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Spoofing posta**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> spoofing posta](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -123,7 +123,7 @@ Fare clic su (o toccare) nel report viene aperto in una nuova finestra del brows
 
 Il rapporto **Sui rilevamenti di posta indesiderata** Visualizza tutto il contenuto di posta indesiderata bloccato da Exchange Online. 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Rilevamenti di posta indesiderata**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Rilevamenti di posta indesiderata**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> EOP i rilevamenti di posta indesiderata](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -139,7 +139,7 @@ Sotto il grafico verrà visualizzato un elenco di elementi di posta indesiderata
 
 Il rapporto **Sent e posta elettronica ricevuta** è un referente smart che mostra informazioni sulla posta elettronica in arrivo e in uscita, tra cui i rilevamenti di posta indesiderata, malware e posta elettronica identificato come "buona". 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **inviati e ricevuto posta elettronica**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **inviati e ricevuto posta elettronica**.
   
 ![Per visualizzare il report nella protezione &amp; centro conformità, passare a report \> Dashboard \> Sent e posta elettronica ricevuta](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -163,7 +163,7 @@ Sono disponibili dettagli per ogni messaggio, inclusi il motivo di recapito, ad 
   
 ![Il rapporto di messaggi User-Reported Mostra agli utenti i messaggi contrassegnati come posta indesiderata, non indesiderata o phishing tentativi.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), effettuare una delle operazioni seguenti:
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), effettuare una delle operazioni seguenti:
   
 - Passare a **gestione rischio** \> **Dashboard** \> **messaggi segnalati dagli utenti**.
     

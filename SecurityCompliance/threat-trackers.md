@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Informazioni sulle minacce Tracker, inclusi nuovi Tracker degne di nota, per consentire all'organizzazione di essere informati su problemi di protezione.
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706380"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014998"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Indicatori delle minacce: nuove e importanti
 
@@ -35,7 +35,7 @@ Quasi tutte le pagine di arresto includono i numeri di tendenza che vengono aggi
   
 Tracker sono solo alcune delle principali funzionalità numero che viene visualizzato con [Office 365 rischio Intelligence](office-365-ti.md). Quando è disponibile, il nuovo Tracker rischio includerà [Tracker degne di nota](threat-trackers.md#notey), [tendenza Tracker](threat-trackers.md#trending), [query revisioni](threat-trackers.md#trackedq)e [query salvata](threat-trackers.md#savedq).
   
-Per visualizzare e utilizzare il Tracker rischio quando sono disponibili per l'organizzazione, passare alla protezione &amp; centro conformità ([https://security.microsoft.com](https://security.microsoft.com)) e scegliere **Threat management** \> **tracker rischio**.
+Per visualizzare e utilizzare il Tracker rischio quando sono disponibili per l'organizzazione, passare alla protezione &amp; centro conformità ([https://protection.office.com](https://protection.office.com)) e scegliere **Threat management** \> **tracker rischio**.
   
 > [!NOTE]
 > Per utilizzare Tracker rischio, è necessario essere un amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 

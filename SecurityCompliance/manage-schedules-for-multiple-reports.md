@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Informazioni su come visualizzare, modificare e gestisce le pianificazioni per i rapporti di sicurezza &amp; centro conformità.
-ms.openlocfilehash: 3dfe7c2f596078112150b944d45b43de8508cdca
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530524"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014908"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gestisce le pianificazioni per più report nella protezione &amp; centro conformità
 
@@ -30,14 +30,16 @@ In sicurezza &amp; centro conformità, diversi [report e informazioni](reports-a
 > Verificare di disporre i necessari [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, security administrators e lettori protezione possono accedere ai rapporti in sicurezza &amp; centro conformità. 
   
 ![In sicurezza &amp; centro conformità, selezionare rapporti \> gestisce le pianificazioni](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
-  
-1. In sicurezza &amp; centro conformità, passare a **report** \> **Gestisci pianificazioni**.
+
+1. Accedere a [https://protection.office.com](https://protection.office.com) ed effettuare l'accesso. Verrà visualizzata per il centro di conformità e sicurezza.
+
+2. In sicurezza &amp; centro conformità, passare a **report** \> **Gestisci pianificazioni**.
     
-2. Selezionare un elemento nell'elenco.
+3. Selezionare un elemento nell'elenco.
     
-3. Esaminare le informazioni per la pianificazione del report.
+4. Esaminare le informazioni per la pianificazione del report.
     
-4. Nel modo appropriato, modificare o eliminare la pianificazione e quindi fare clic su **Chiudi**.
+5. Nel modo appropriato, modificare o eliminare la pianificazione e quindi fare clic su **Chiudi**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 

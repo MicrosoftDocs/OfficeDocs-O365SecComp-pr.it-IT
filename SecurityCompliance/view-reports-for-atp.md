@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749350"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014948"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -35,7 +35,7 @@ La relazione **Sullo stato di protezione di rischio** è una singola visualizzaz
 > [!NOTE]
 > Una relazione sullo stato di protezione di rischio è disponibile per i clienti che dispongono di [Strumenti di analisi di Office 365](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto di stato di protezione di rischio per i clienti degli strumenti di analisi probabile che conterrà dati diversi rispetto a ciò che potrebbe essere visualizzato EOP customers. Ad esempio, la relazione sullo stato di protezione di rischio per i clienti degli strumenti di analisi conterrà informazioni sui [file dannosi rilevato in SharePoint Online, OneDrive o team di Microsoft](atp-for-spo-odb-and-teams.md). Tali informazioni sono specifiche di strumenti di analisi, in modo che i clienti che dispongono di EOP, ma non degli strumenti di analisi non visualizzerà i dettagli nel loro relazione sullo stato di protezione di rischio.
   
-Per visualizzare il report di stato di protezione di rischio, nelle [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+Per visualizzare il report di stato di protezione di rischio, nelle [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
   
 ![Relazione sullo stato di protezione rischio degli strumenti di analisi](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ Per impostazione predefinita, il rapporto di stato di protezione di rischio Most
 
 Nel rapporto di **Tipi di File degli strumenti di analisi** viene visualizzato il tipo di file rilevato come dannoso per [Gli allegati sicuri degli strumenti di analisi](atp-safe-attachments.md).
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Tipi di File degli strumenti di analisi**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Tipi di File degli strumenti di analisi**.
   
 ![Report di tipi di File degli strumenti di analisi](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ Quando si sposta su un giorno particolare, è possibile visualizzare la suddivis
 
 Il rapporto di **Disposizione degli strumenti di analisi del messaggio** Mostra le azioni eseguite per i messaggi di posta elettronica che sono stati rilevati con contenuto dannoso. 
   
-Per visualizzare il report nel [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard** \> **Disposizione degli strumenti di analisi del messaggio**.
+Per visualizzare il report nel [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard** \> **Disposizione degli strumenti di analisi del messaggio**.
   
 ![Rapporto di eliminazione degli strumenti di analisi messaggi](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

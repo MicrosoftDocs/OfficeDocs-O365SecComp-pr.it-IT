@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706090"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015058"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706090"
 
 Quando si dispone di [Office 365 avanzate Threat Protection](office-365-atp.md), sarà necessario un criterio di collegamenti sicuro degli strumenti di analisi predefinito che si applica a tutti gli utenti nell'organizzazione. Assicurarsi di esaminare e, se necessario, modificare il criterio predefinito.
   
-1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere con l'account di lavoro o della scuola. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
 2. Nel riquadro di spostamento sinistro, in **gestione rischio**, scegliere **criteri \> ** **Collegamenti sicuri**.
     
@@ -67,7 +67,7 @@ Quando si dispone di [Office 365 avanzate Threat Protection](office-365-atp.md),
 
 Dopo aver esaminato (o modificati) il criterio degli strumenti di analisi collegamenti sicuro predefinito che si applica a tutti gli utenti, il passaggio successivo consiste nel definire ulteriori criteri applicabili a destinatari specifici. Ad esempio, è possibile specificare eccezioni per il criterio predefinito mediante la definizione di un criterio aggiuntivo. 
   
-1. Accedere a [https://security.microsoft.com](https://security.microsoft.com) e accedere con l'account di lavoro o della scuola. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
 2. Nel riquadro di spostamento sinistro, in **gestione rischio**, selezionare **criterio**.
     
