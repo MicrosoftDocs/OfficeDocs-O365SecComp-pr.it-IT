@@ -3,7 +3,7 @@ title: Sospendere o ripristinare un account utente in Office 365 Cloud App Secur
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Con Office 365 Cloud App protezione, è possibile eseguire le operazioni di governance sono di sospendere o riprendere un account utente. '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530393"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014848"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Sospendere o ripristinare un account utente in Office 365 Cloud App Security
 
@@ -44,9 +44,7 @@ Quando si sospende un account utente, si impedisce all'utente di effettuare nuov
     
 2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
     
-3. Scegliere **Vai a Office 365 Cloud App protezione**.
-    
-    ![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Scegliere **Vai a Office 365 Cloud App protezione**.<br>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. Nella barra di spostamento nella parte superiore dello schermo, scegliere **avvisi**.
     
@@ -60,9 +58,9 @@ Vedere [ripristino di un utente in Office 365](https://support.office.com/articl
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Esaminare e intervenire sugli avvisi in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+- [Esaminare gli avvisi per intervenire in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     
-- [Gestire le autorizzazioni dell'app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+- [Gestire le app di OAuth con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
 - Esaminare le [attività di utilizzo per la protezione di Office 365 Cloud App](utilization-activities-for-ocas.md)
     

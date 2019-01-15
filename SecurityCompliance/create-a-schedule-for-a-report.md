@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Informazioni su come impostare una pianificazione per un report nella protezione &amp; centro conformità.
-ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706020"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014778"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Creare una pianificazione per un report nella protezione &amp; centro conformità
 
@@ -29,7 +29,7 @@ In sicurezza &amp; centro conformità, diversi [report e informazioni](reports-a
 > [!IMPORTANT]
 > Verificare di disporre delle autorizzazioni necessarie per eseguire questa attività. In generale, gli amministratori globali di Office 365, security administrators e lettori protezione possono accedere ai rapporti in sicurezza &amp; centro conformità. Per ulteriori informazioni sulle autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
   
-1. Nella [protezione &amp; centro conformità](https://security.microsoft.com), andare al **report** \> **Dashboard**.
+1. Nella [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard**.
     
 2. Scegliere un report. In questo esempio verrà scelto il rapporto di stato di protezione di rischio.
     

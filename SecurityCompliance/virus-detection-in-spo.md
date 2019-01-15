@@ -3,7 +3,7 @@ title: Rilevamento di virus in SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/17/2018
+ms.date: 01/14/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: Office 365 può proteggere l'ambiente da malware per l'individuazione dei virus nei file che gli utenti caricano con SharePoint Online. File di ricerca di virus dopo che vengono caricati. Se un file viene trovato un virus, una proprietà viene impostata in modo che gli utenti non possono scaricare o sincronizzare il file.
-ms.openlocfilehash: 22e983d35283ff96e1469fdf913e25b8d1d1c485
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab02d2d4e82e9427ec6b512490f94ccc9c14b54e
+ms.sourcegitcommit: 5ccc3dd0d1c087bffd3a8fc807d5d1750f046eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531056"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "28009592"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Rilevamento di virus in SharePoint Online
 
@@ -48,7 +48,10 @@ Ecco che cosa accade:
   
 1. L'utente apre un web browser e tenta di scaricare un file che contengono un virus da SharePoint Online.
     
-2. L'utente ha un avviso indicante che è stato rilevato un virus e ha la possibilità di scaricare il file e tenta la pulizia mediante un software antivirus.
+2. L'utente ha un avviso indicante che è stato rilevato un virus. L'utente ha la possibilità di scaricare il file e tentare la pulizia mediante un software antivirus.
+
+> [!NOTE]
+> È possibile utilizzare il cmdlet Set-SPOTenant con il parametro **DisallowInfectedFileDownload** non consentire agli utenti di scaricare un file rilevato, anche nella finestra di avviso antivirus. Vedere [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Cosa succede quando il client di sincronizzazione OneDrive tenta di sincronizzare un file che contengono un virus?
 

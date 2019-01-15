@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Informazioni su dove è possibile per visualizzare informazioni sui file dannosi rilevato in SharePoint, OneDrive o team e come eseguire l'azione necessaria tali file.
-ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706200"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014798"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft
 
@@ -29,7 +29,7 @@ Per eseguire le attività descritte in questo articolo, è necessario disporre d
 
 Per visualizzare lo stato e informazioni dettagliate sui file che sono stati rilevati da strumenti di analisi di Office 365, è possibile utilizzare la relazione sullo stato di protezione di rischio.
   
-1. Nella [protezione di Office 365 &amp; centro conformità](https://security.microsoft.com), scegliere **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
+1. Nella [protezione di Office 365 &amp; centro conformità](https://protection.office.com), scegliere **report** \> **Dashboard** \> **Lo stato di protezione di rischio**.
     
 2. Nell'angolo superiore destro del report, scegliere **Visualizza dettagli tabella**.
     

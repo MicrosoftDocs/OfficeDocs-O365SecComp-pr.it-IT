@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: In questo articolo per informazioni su come attivare Office 365 Advanced Security Management, con tecnologia Cloud App sicurezza in Microsoft Azure.
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706290"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014788"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Attivare Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706290"
 > [!IMPORTANT]
 > È necessario essere un amministratore globale o sicurezza per eseguire l'attività seguente. Per ulteriori informazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). Perché Office 365 Cloud App sicurezza per il funzionamento correggere, **deve essere attivata la registrazione di controllo** per l'ambiente Office 365. Per ulteriori informazioni, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md). 
   
-1. Un amministratore globale o un amministratore di protezione, passare a [https://security.microsoft.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://security.microsoft.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
     
 2. Accedere agli **avvisi** \> **Gestione avanzata degli avvisi**.
     
