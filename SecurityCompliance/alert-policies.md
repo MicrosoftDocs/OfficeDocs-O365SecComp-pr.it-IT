@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso in Office 365 Security &amp; centro conformità per monitorare le potenziali minacce, la perdita di dati e problema di autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono le attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
-ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
+ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "26988435"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328142"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Avviso criteri in Office 365 Security &amp; centro conformità
 
@@ -84,7 +84,7 @@ Un criterio di avviso è costituita da condizioni e le impostazioni seguenti.
     
   - Altri
     
-    Quando si verifica un'attività che soddisfa le condizioni del criterio di avviso, l'avviso viene generato è contrassegnato con la categoria definita in questa impostazione. In questo modo è possibile gestire gli avvisi che hanno la stessa impostazione di categoria nella pagina **Visualizza avvisi** di sicurezza e tenere traccia &amp; Allinea al centro conformità perché è possibile ordinare e avvisi filtri in base alla categoria. 
+  Quando si verifica un'attività che soddisfa le condizioni del criterio di avviso, l'avviso viene generato è contrassegnato con la categoria definita in questa impostazione. Ciò consente di tenere traccia e gestire gli avvisi che hanno la stessa categoria impostate nella pagina **visualizzare gli avvisi** di protezione & centro conformità dal momento che è possibile ordinare e avvisi filtri in base alla categoria. 
     
 - **Gravità** - simile per la categoria di avviso, assegnare a un attributo del livello di gravità ( **bassa**, **Media**o **alta**) criteri di avviso. Ad esempio la categoria di avviso, quando si verifica un'attività che soddisfa le condizioni del criterio di avviso, l'avviso viene generato contrassegnato con lo stesso livello di gravità impostato per il criterio di avviso. Nuovamente, consente di tenere traccia e gestire gli avvisi che hanno la stessa impostazione di gravità nella pagina **Visualizza avvisi** . Ad esempio, è possibile filtrare l'elenco degli avvisi in modo che vengano visualizzati solo gli avvisi con livello di gravità **alta** . 
     
@@ -102,7 +102,7 @@ Nella tabella seguente sono elencati e vengono descritti i criteri di avviso pre
 |**Criterio di avviso predefinito**|**Descrizione**|**Sottoscrizione a Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Creazione di regole di inoltro/reindirizza** <br/> |Genera un avviso quando un utente all'interno dell'organizzazione consente di creare una regola di posta in arrivo per la cassetta postale che inoltra o reindirizza i messaggi a un altro account di posta elettronica. Questo criterio tiene traccia solo le regole posta in arrivo che vengono create utilizzando Outlook Web App o Exchange Online PowerShell. Questo criterio è un'impostazione di gravità **bassa** . Per ulteriori informazioni sull'utilizzo di regole posta in arrivo per l'inoltro e il reindirizzamento di posta elettronica in Outlook Web App, vedere [utilizzare le regole in Outlook Web App per inoltrare automaticamente messaggi a un altro account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
-|**ricerca di eDiscovery avviato o esportati** <br/> |Genera un avviso quando si utilizza lo strumento di ricerca del contenuto nel centro conformità sicurezza. Viene generato un avviso quando vengono eseguite le attività di ricerca di contenuto seguenti:<br/><br/>• Una ricerca di contenuto sia stato avviato<br/>• Vengono esportati i risultati di ricerca di contenuto<br/>• Esportazione di un report di ricerca del contenuto<br/><br/>Gli avvisi sono inoltre trigged quando vengono eseguite le attività di ricerca del contenuto precedente associata a un caso eDiscovery. Questo criterio è un'impostazione di gravità **Media** . Per ulteriori informazioni sulle attività di ricerca del contenuto, vedere la sezione [ricerca per le attività di eDiscovery in Office 365 Registro di controllo](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
+|**ricerca di eDiscovery avviato o esportati** <br/> |Genera un avviso quando si utilizza lo strumento di ricerca del contenuto in & la sicurezza centro conformità. Viene generato un avviso quando vengono eseguite le attività di ricerca di contenuto seguenti:<br/><br/>• Una ricerca di contenuto sia stato avviato<br/>• Vengono esportati i risultati di ricerca di contenuto<br/>• Esportazione di un report di ricerca del contenuto<br/><br/>Gli avvisi sono inoltre trigged quando vengono eseguite le attività di ricerca del contenuto precedente associata a un caso eDiscovery. Questo criterio è un'impostazione di gravità **Media** . Per ulteriori informazioni sulle attività di ricerca del contenuto, vedere la sezione [ricerca per le attività di eDiscovery in Office 365 Registro di controllo](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**Elevazione dei privilegi di amministrazione di Exchange** <br/> |Genera un avviso quando un utente verrà assegnato autorizzazioni amministrative nell'organizzazione Exchange Online. ad esempio, se un utente viene aggiunto al ruolo Gestione organizzazione gruppo in Exchange Online. Questo criterio è un'impostazione di gravità **bassa** .<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**I messaggi sono in ritardo** <br/> |Genera un avviso quando Office 365 non possono offrire messaggi di posta elettronica all'organizzazione locale o un partner di server utilizzando un connettore. Quando ciò verifica, il messaggio viene accodato in Office 365. Questo avviso viene generato quando sono presenti messaggi di 2.000 o più che sono stati accodati per più di un'ora. Questo criterio è impostato gravità **alta** .<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**Campagne di malware rilevata dopo il recapito** <br/> |Genera un avviso quando un numero insolitamente elevato di messaggi contenenti malware viene recapitato alle cassette postali nell'organizzazione. Se si verifica questo evento, Office 365 consente di rimuovere i messaggi che contengono un virus dalle cassette postali di Exchange Online. Questo criterio è impostato gravità **alta** .<br/> |Sottoscrizione di componente aggiuntivo E5/G5 o Business Intelligence di rischio di Office 365  <br/> |
@@ -135,9 +135,66 @@ Per visualizzare gli avvisi, passare a **avvisi** \> **Visualizza avvisi** di si
     
 - **Categoria** - utilizzare questo filtro per visualizzare gli avvisi da una o più categorie di avviso.
 
-- **Origine** - utilizzare questo filtro per visualizzare gli avvisi generati dall'avvisi criteri per la protezione & centro conformità o avvisi attivati da criteri di protezione di Office 365 Cloud App o entrambi. Per ulteriori informazioni sugli avvisi di protezione di applicazioni di Office 365 Cloud, vedere la sezione [avviso di sicurezza di applicazione Cloud visualizzazione](#viewing-cloud-app-security-alerts) .
+- **Origine** - utilizzare questo filtro per visualizzare gli avvisi generati dall'avvisi criteri in & la sicurezza centro conformità o gli avvisi generati dal criteri di protezione di Office 365 Cloud App o entrambi. Per ulteriori informazioni sugli avvisi di protezione di applicazioni di Office 365 Cloud, vedere la sezione [avviso di sicurezza di applicazione Cloud visualizzazione](#viewing-cloud-app-security-alerts) .
 
-  
+### <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
+
+> [!NOTE]
+> Le funzionalità descritte in questa sezione verranno applicati a partire dal 20 febbraio 2019, le organizzazioni e verranno eseguite in tutto il mondo al termine della 2019 marzo.
+
+Le autorizzazioni di controllo di accesso basi ruoli (RBAC) assegnate agli utenti dell'organizzazione determina quali avvisi gli utenti possono visualizzare la pagina di **visualizzare gli avvisi** . Come eseguire questa operazione? I ruoli di gestione assegnati agli utenti (in base all'appartenenza a gruppi di ruoli in & la sicurezza centro conformità) determinano quali categorie di avvisi possono essere visualizzate nella pagina di **visualizzare gli avvisi** . Di seguito sono riportati alcuni esempi:
+
+- I membri del gruppo di ruoli di gestione dei record possono visualizzare solo gli avvisi generati dall'avvisi criteri che sono assegnati la categoria di **governance di dati** .
+- Membri del gruppo di ruoli amministratore conformità non possono visualizzare gli avvisi generati dall'avvisi criteri che sono assegnati la categoria di **gestione delle minacce** . 
+- Membri del gruppo di ruoli gestione eDiscovery non possono visualizzare avvisi dal momento che nessuno dei ruoli assegnati forniscono l'autorizzazione per visualizzare gli avvisi provenienti da qualsiasi categoria di avviso.
+
+Questa struttura (in base alle autorizzazioni RBAC) consente di determinare quali gli avvisi possono essere visualizzati (e gestiti) dagli utenti in ruoli specifici dell'organizzazione. 
+
+Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvisi di 6 diverse categorie di avviso. La prima colonna nelle tabelle sono elencati tutti i ruoli di protezione & centro conformità.  Un segno di spunta indica che un utente cui è stato assegnato il ruolo può visualizzare avvisi dalla categoria avviso corrispondente elencato nella riga superiore.
+
+|<br/>|Governance dei dati|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri | 
+|:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|Registri di controllo <br/> |         ||         |         |         |         |
+|Gestione dei casi <br/>|         |         |         |         |         |         |
+|Amministratore di conformità<br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Ricerca di conformità<br/>|         |         |         |         |         |         |
+|Gestione dei dispositivi<br/>|         |         |         |         |         |         |
+|Gestione di eliminazione<br/>|         |         |         |         |         |         |
+|Gestione della conformità DLP<br/>|         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Esportazione<br/>|         |         |         |         |         |         |
+|Archiviazione<br/>|         |         |         |         |         |         |
+|Gestione avvisi<br/>|         |         |         |         |         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configurazione dell'organizzazione|         |         |         |         |         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Anteprima <br/>|         |         |         |         |         |         |
+|Gestione dei record <br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gestione di conservazione <br/>| ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Revisione  <br/>|         |         |         |         |         |         |
+|Decrittografia RMS<br/>|         |         |         |         |         |         |
+|Gestione dei ruoli<br/>|         |         |         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
+|Ricerca ed eliminazione<br/>|         |         |         |         |         |         |
+|Amministratore della sicurezza<br/>||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Lettore di sicurezza<br/>|         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Servizio controllo visualizzazione<br/>|         |         |         |         |         |         |
+|Amministratore di revisione supervisione<br/>|         |         |         |         |         |         |
+|Registri di controllo sola visualizzazione<br/>|         |         |         |         |         |         |
+|Gestione dei dispositivi di sola visualizzazione<br/>|         |         |         |         |         |         |
+|Gestione della conformità DLP sola visualizzazione<br/>|         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Sola visualizzazione Gestione avvisi<br/>|         |         |         |         |         |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Destinatari solo visualizzazione<br/>|         |         |  ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
+|Gestione Record di sola visualizzazione<br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gestione conservazione sola visualizzazione<br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|         |         |         |         |         |         |
+
+**Suggerimento:** Per visualizzare i ruoli assegnati a ognuno dei gruppi di ruoli predefinito, eseguire i seguenti comandi in sicurezza & PowerShell centro conformità: 
+
+```
+$RoleGroups = Get-RoleGroup
+
+$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+```
+È inoltre possibile visualizzare i ruoli assegnati a un gruppo di ruoli di protezione & centro conformità. Passare alla pagina **autorizzazioni** e fare clic su un gruppo di ruoli. Nella pagina comparsa sono elencati i ruoli.
+
+
 ## <a name="managing-alerts"></a>Gestione degli avvisi
 
 Dopo che gli avvisi sono stati generati e visualizzati nella pagina **Visualizza avvisi** di protezione &amp; centro conformità, è possibile esaminare, analizzare e risolverli. Ecco alcune attività eseguibili per gestire gli avvisi. 
@@ -164,17 +221,17 @@ Dopo che gli avvisi sono stati generati e visualizzati nella pagina **Visualizza
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualizzazione degli avvisi di protezione di applicazione Cloud
   
-Avvisi che vengono attivati i criteri di sicurezza di Office 365 Cloud App sono visualizzati nella pagina **Visualizza avvisi** nel centro conformità sicurezza. Include gli avvisi che vengono attivati i criteri di attività e gli avvisi che vengono attivati i criteri di rilevamento anomalia nella sicurezza App Cloud di Office 365. Ciò significa che è possibile visualizzare tutti gli avvisi nel centro conformità sicurezza. Si noti che Office 365 Cloud App protezione è disponibile solo per le organizzazioni con una sottoscrizione a Office 365 Enterprise E5 o Office 365 US Government G5. Per ulteriori informazioni, vedere [Overview of Office 365 Cloud App Security](office-365-cas-overview.md).
+Avvisi che vengono attivati i criteri di sicurezza di Office 365 Cloud App vengono ora visualizzati nella pagina **Visualizza avvisi** di protezione & centro conformità. Include gli avvisi che vengono attivati i criteri di attività e gli avvisi che vengono attivati i criteri di rilevamento anomalia nella sicurezza App Cloud di Office 365. Ciò significa che è possibile visualizzare tutti gli avvisi in & la sicurezza centro conformità. Si noti che Office 365 Cloud App protezione è disponibile solo per le organizzazioni con una sottoscrizione a Office 365 Enterprise E5 o Office 365 US Government G5. Per ulteriori informazioni, vedere [Overview of Office 365 Cloud App Security](office-365-cas-overview.md).
 
-Inoltre, le organizzazioni con Microsoft Cloud App Security come parte di un mobilità aziendale + sicurezza E5 sottoscrizione o come servizio autonomo anche possibile visualizzare avvisi di protezione App Cloud che sono correlate alle applicazioni di Office 365 e servizi di sicurezza & Centro conformità.
+Inoltre, le organizzazioni con Microsoft Cloud App Security come parte di un mobilità aziendale + sicurezza E5 sottoscrizione o come servizio autonomo inoltre possono visualizzare gli avvisi di protezione di applicazione Cloud correlati alle applicazioni di Office 365 e servizi in & protezione Centro conformità.
 
-Per visualizzare solo gli avvisi di protezione di applicazione Cloud nel centro conformità sicurezza, utilizzare il filtro di **origine** e selezionare **Sicurezza App Cloud**.
+Per visualizzare solo gli avvisi di protezione di applicazione Cloud & la sicurezza centro conformità, utilizzare il filtro di **origine** e selezionare **Sicurezza App Cloud**.
 
 ![Utilizzare il filtro di origine per visualizzare solo gli avvisi di protezione di applicazione Cloud](media/FilterCASAlerts.png)
 
-Analogamente a un avviso generato da un criterio di avviso di protezione & centro conformità, è possibile fare clic su un avviso di protezione di applicazione Cloud per visualizzare una pagina di comparsa con informazioni dettagliate sull'avviso. L'avviso è incluso un collegamento per visualizzare i dettagli e gestire l'avviso nel portale di protezione di applicazione Cloud e un collegamento al criterio di protezione di applicazione Cloud corrispondente che ha attivato l'avviso. Vedere [revisione ed esegue azioni avvisi di protezione di Office 365 Cloud App](review-office-365-cas-alerts.md).
+Analogamente a un avviso generato da una protezione & criteri avviso centro conformità, è possibile fare clic su un avviso di protezione di applicazione Cloud per visualizzare una pagina di comparsa con informazioni dettagliate sull'avviso. L'avviso è incluso un collegamento per visualizzare i dettagli e gestire l'avviso nel portale di protezione di applicazione Cloud e un collegamento al criterio di protezione di applicazione Cloud corrispondente che ha attivato l'avviso. Vedere [revisione ed esegue azioni avvisi di protezione di Office 365 Cloud App](review-office-365-cas-alerts.md).
 
 ![Dettagli dell'avviso contengono collegamenti al portale di protezione di applicazione Cloud](media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Modifica dello stato di un avviso di protezione di applicazione Cloud nel centro conformità sicurezza non aggiorna lo stato di risoluzione per lo stesso avviso nel portale di protezione di applicazione Cloud. Ad esempio, se lo stato dell'avviso si contrassegna come **risolto** nel centro conformità protezione, lo stato dell'avviso nel portale di protezione di applicazione Cloud viene modificato. Per risolvere o eliminare un avviso di protezione di applicazione Cloud, gestire l'avviso nel portale di protezione di applicazione Cloud.
+> Modifica dello stato di un avviso di protezione di applicazione Cloud in & la sicurezza centro conformità non aggiorna lo stato di risoluzione per l'avviso stesso nel portale di protezione di applicazione Cloud. Ad esempio, se lo stato dell'avviso si contrassegna come **risolto** in & la sicurezza centro conformità, lo stato dell'avviso nel portale di protezione di applicazione Cloud viene modificato. Per risolvere o eliminare un avviso di protezione di applicazione Cloud, gestire l'avviso nel portale di protezione di applicazione Cloud.
