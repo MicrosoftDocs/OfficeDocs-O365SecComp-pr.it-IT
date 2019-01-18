@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (dette anche regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione di Office 365.
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026613"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723243"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regole del flusso di posta (regole di trasporto in Exchange Online Protection
 
@@ -54,7 +54,7 @@ Una regola del flusso di posta è composta da condizioni, eccezioni, azioni e pr
   
 - **Condizioni** Identificare i messaggi ai quali applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi. 
     
-    Per ulteriori informazioni sulla posta elettronica di condizioni delle regole del flusso di Exchange Online Protection, vedere [posta flusso regola condizioni ed eccezioni (predicati) di Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+    Per ulteriori informazioni sulle condizioni delle regole del flusso della posta in Exchange Online Protection, vedere [eccezioni (predicati) e condizioni delle regole del flusso di posta in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Eccezioni** In modo facoltativo, identificare i messaggi sui quali non vanno applicate le azioni. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate. 
     

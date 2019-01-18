@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Informazioni su come configurare chiave cliente per Office 365 per Exchange Online, Skype per Business, SharePoint Online e OneDrive for Business. Con clienti chiave, controllare le chiavi di crittografia della propria organizzazione e quindi configurare Office 365 per utilizzarli per crittografare i dati statici nei Data Center di Microsoft.
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965610"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723253"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controllare i dati in Office 365 con Customer Key
 
@@ -54,7 +54,7 @@ Completare la maggior parte di queste attività tramite la connessione in remoto
     
 - [Inviare una richiesta per attivare codice cliente per Office 365](controlling-your-data-using-customer-key.md#FastTrack)
     
-    Dopo aver creato le due nuove sottoscrizioni Azure, è necessario inviare la richiesta di offerta cliente chiave appropriata per il completamento di un modulo web è ospitato nel portale dei Microsoft FastTrack. Il team FastTrack non fornisce assistenza clienti chiave. Office utilizza semplicemente il portale FastTrack per consentono di inviare il modulo e consentiranno di tenere traccia delle offerte pertinenti per clienti chiave.
+    Dopo aver creato le due nuove sottoscrizioni Azure, è necessario inviare la richiesta di offerta cliente chiave appropriata per il completamento di un modulo web è ospitato nel portale dei Microsoft FastTrack. **FastTrack il team non fornire assistenza clienti chiave. Office utilizza semplicemente il portale FastTrack per consentono di inviare il modulo e consentiranno di tenere traccia delle offerte pertinenti per clienti chiave**.
   
 Dopo l'invio di una proposta di chiave cliente, Microsoft esamina la richiesta e invia una notifica quando è possibile procedere con il resto le attività di configurazione. Questo processo può richiedere fino a cinque giorni lavorativi.
     
