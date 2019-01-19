@@ -3,7 +3,7 @@ title: Attivare il componente aggiuntivo Segnala messaggio
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/19/2018
+ms.date: 01/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,27 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Informazioni su come abilitare il componente aggiuntivo di report per Outlook e Outlook sul web, per i singoli utenti o l'intera organizzazione.
-ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 013145813e8feb3e7389f6248ee26195c1df3d08
+ms.sourcegitcommit: 1169a5759b9c2336fbc89d4651daf29e556f62fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706370"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28727870"
 ---
 # <a name="enable-the-report-message-add-in"></a>Attivare il componente aggiuntivo Segnala messaggio
 
 ## <a name="overview"></a>Panoramica
 
-Il componente aggiuntivo di report per Outlook e Outlook sul Web consente agli utenti di comunicare facilmente e-mail classificazioni non corrette, se attendibili o volontario, con Microsoft e consociate per l'analisi. Questi invii utilizzate da Microsoft per migliorare l'efficienza delle tecnologie di protezione della posta elettronica. Inoltre, se l'organizzazione utilizza [Protezione rischio avanzate di Office 365](office-365-atp.md) o [Business Intelligence di Office 365 rischio](office-365-ti.md), il componente aggiuntivo di report fornisce il team di protezione dell'organizzazione con informazioni utili, che è possibile utilizzare per esaminare e aggiornare criteri di protezione. 
+Il componente aggiuntivo di report per Outlook e Outlook sul web consente agli utenti di comunicare facilmente e-mail classificazioni non corrette, se attendibili o volontario, con Microsoft e consociate per l'analisi. Questi invii utilizzate da Microsoft per migliorare l'efficienza delle tecnologie di protezione della posta elettronica. Inoltre, se l'organizzazione utilizza [Protezione rischio avanzate di Office 365](office-365-atp.md) o [Business Intelligence di Office 365 rischio](office-365-ti.md), il componente aggiuntivo di report fornisce il team di protezione dell'organizzazione con informazioni utili, che è possibile utilizzare per esaminare e aggiornare criteri di protezione. 
 
 Ad esempio, si supponga che le persone riportano una quantità elevata di messaggi di phishing. Nel [Dashboard di sicurezza](security-dashboard.md) e altri report le superfici di informazioni. Team di protezione dell'organizzazione possono utilizzare queste informazioni come indicazione che criteri anti-phishing potrebbero non essere aggiornate. In alternativa, se gli utenti sono report una quantità elevata di messaggi contrassegnati come posta indesiderata come posta non indesiderata tramite il componente aggiuntivo di report, team di protezione dell'organizzazione potrebbe essere necessario modificare [i criteri di protezione da posta indesiderati](configure-the-anti-spam-policies.md). 
 
 Il componente aggiuntivo di report può essere utilizzato con la sottoscrizione a Office 365 e i prodotti seguenti:
- - Outlook sul Web
+ - Outlook sul web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 per Mac
  - Outlook inclusi in Office 365 ProPlus
+
+> [!NOTE]
+> Il componente aggiuntivo di report per Outlook e Outlook sul web è non esattamente la stessa funzione del [Filtro posta indesiderata di Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), sebbene entrambe può essere utilizzati per contrassegnare posta indesiderata, non indesiderata o un tentativo di phishing. Il componente aggiuntivo di report per Outlook e Outlook sul web invia una notifica Microsoft informazioni sulla posta elettronica classificazioni non corrette, mentre il filtro posta indesiderata di Outlook viene utilizzato per organizzare i messaggi di posta elettronica nella cassetta postale dell'utente. 
   
 Se si è un singolo utente, è possibile [abilitare il componente aggiuntivo di report per se stessi](#get-the-report-message-add-in-for-yourself). 
   
@@ -47,43 +50,47 @@ Se si è un amministratore globale di Office 365 o un amministratore di Exchange
     
 3. Leggere le condizioni di utilizzo e sulla privacy. Quindi fare clic su **Continua**. 
     
-4. Accedere alla posta elettronica di Office 365 utilizzando il proprio lavoro o scuola account (per l'utilizzo business) o l'account Microsoft (per utilizzo personale).
+4. Accedere a Office 365 utilizzando il proprio lavoro o scuola account (per l'utilizzo business) o l'account Microsoft (per utilizzo personale).
     
 Dopo che il componente aggiuntivo è installato e attivato, si noterà icone riportate di seguito: 
 
-- In Outlook l'icona simile al seguente: <br/> ![Icona messaggio componente aggiuntivo di report per Outlook](media/OutlookReportMessageIcon.png)<br/>
-- In Outlook Web App l'icona simile al seguente:<br/>![Icona messaggio Report Web componente aggiuntivo per Outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- In Outlook, l'icona simile al seguente: <br/> ![Report sull'icona messaggio componente aggiuntivo per Outlook](media/OutlookReportMessageIcon.png)<br/>
+- In Outlook Web App o Outlook sul web, l'icona simile al seguente:<br/>![Outlook su componente aggiuntivo di report icona](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-In una fase successiva, informazioni su come [utilizzare il componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+> [!TIP]
+> In una fase successiva, informazioni su come [utilizzare il componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Ottenere e abilitare il componente aggiuntivo di report per l'organizzazione
 
 > [!IMPORTANT]
 > È necessario essere un amministratore globale di Office 365 o un amministratore di Exchange Online per completare questa attività. Inoltre, Exchange deve essere configurato per l'utilizzo dell'autenticazione OAuth per ulteriori informazioni, vedere [requisiti di Exchange (Centralized distribuzione dei componenti aggiuntivi)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
 
-1. Passare alla [pagina di componenti aggiuntivi e servizi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) nella nuova interfaccia di amministrazione di Microsoft 365.<br/>![Pagina servizi e componenti aggiuntivi nella nuova interfaccia di amministrazione di Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. Passare alla [pagina di componenti aggiuntivi & servizi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) nell'interfaccia di amministrazione di Microsoft 365.<br/>![Pagina servizi e componenti aggiuntivi nella nuova interfaccia di amministrazione di Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
 2. Scegliere **+ distribuzione componente aggiuntivo**.<br/>![Scegliere distribuzione di componenti aggiuntivi](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. Nella schermata nuovo componente aggiuntivo, esaminare le informazioni e quindi fare clic su **Avanti**.<br/>![Nuovi componenti dettagli](media/NewAddInScreen1.png)<br/>
+3. Nella schermata **Nuovo componente aggiuntivo** , esaminare le informazioni e quindi fare clic su **Avanti**.<br/>![Nuovi componenti dettagli](media/NewAddInScreen1.png)<br/>
     
 4. Selezionare **desidera aggiungere un componente aggiuntivo da Office Store**e quindi fare clic su **Avanti**.<br/>![Desidera aggiungere un nuovo componente aggiuntivo](media/NewAddInScreen2.png)<br/> 
     
-5. Messaggio di Report e nell'elenco dei risultati, accanto al Report messaggio componente aggiuntivo di ricerca, scegliere Aggiungi.<br/>![Ricerca di report e quindi fare clic su Aggiungi](media/NewAddInScreen3.png)<br/>
+5. La ricerca per **Il messaggio di Report**e nell'elenco dei risultati, accanto al **Componente aggiuntivo di Report messaggio**, scegliere **Aggiungi**.<br/>![Ricerca di report e quindi fare clic su Aggiungi](media/NewAddInScreen3.png)<br/>
     
-6. Nella schermata del messaggio di Report, esaminare le informazioni e quindi fare clic su **Avanti**.<br/>![Rapporto dettagli del messaggio](media/ReportMessageAdd-InNewScreen4.png)<br/>
+6. Nella schermata del **Messaggio di Report** , esaminare le informazioni e quindi fare clic su **Avanti**.<br/>![Rapporto dettagli del messaggio](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
 7. Specificare le impostazioni predefinite di utente per Outlook e quindi fare clic su **Avanti**.<br/>![Segnalare le impostazioni predefinite di messaggio per Outlook](media/ReportMessageOptionsScreen5.png)<br/>
 
 8. Specificare che ottiene il componente aggiuntivo di report e quindi fare clic su **Salva**. <br/>![Componente aggiuntivo che ottiene il messaggio di Report](media/ReportMessageOptionsScreen6.png)<br/>
 
 > [!TIP]
-> Si consiglia di [impostazione di una regola per ottenere una copia dei messaggi di posta elettronica segnalati dagli utenti](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
+> Si consiglia di [impostazione di una regola per ottenere una copia dei messaggi di posta elettronica segnalati dagli utenti](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).
 
-In base al quale è selezionata utilizzando la procedura guidata, gli utenti dell'organizzazione avranno il [componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) disponibili. Gli utenti dell'organizzazione verranno visualizzato le icone seguenti: 
+A seconda dell'opzione selezionata quando si configura il componente aggiuntivo (passaggi 7-8 sopra), gli utenti dell'organizzazione avranno il [componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) disponibili. Gli utenti dell'organizzazione verranno visualizzato le icone seguenti: 
 
-- In Outlook l'icona simile al seguente: <br/> ![Icona messaggio componente aggiuntivo di report per Outlook](media/OutlookReportMessageIcon.png)<br/>
-- In Outlook Web App l'icona simile al seguente:<br/>![Icona messaggio Report Web componente aggiuntivo per Outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- In Outlook, l'icona simile al seguente: <br/> ![Icona messaggio componente aggiuntivo di report per Outlook](media/OutlookReportMessageIcon.png)<br/>
+- In Outlook Web App o Outlook sul web, l'icona simile al seguente:<br/>![Icona messaggio Report Web componente aggiuntivo per Outlook](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+
+> [!TIP]
+> Quando si avvisare gli utenti del componente aggiuntivo di report, includere un collegamento a [utilizzare il componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>Impostare una regola per ottenere una copia dei messaggi di posta elettronica segnalati dagli utenti
 
@@ -112,24 +119,24 @@ In base al quale è selezionata utilizzando la procedura guidata, gli utenti del
   
 10. Scegliere **Save**. 
     
-Con questa regola, ogni volta che qualcuno all'interno dell'organizzazione segnala un messaggio di posta elettronica utilizzando il componente aggiuntivo di report, l'amministratore globale, amministratore della sicurezza e/o lettore di sicurezza riceverà una copia del messaggio. Queste informazioni possono consentono di configurare o modificare criteri, ad esempio i criteri di [Office 365 degli strumenti di analisi provvisoria collegamenti](atp-safe-links.md) . 
-
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Verificare o modificare le impostazioni per il componente aggiuntivo di report
-
-È possibile esaminare e modificare le impostazioni predefinite per il rapporto messaggio componente aggiuntivo nella [pagina servizi e componenti aggiuntivi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
-
-> [!IMPORTANT]
-> È necessario essere un amministratore globale di Office 365 o un amministratore di Exchange Online per completare questa attività.
-    
-1. Passare alla [pagina di componenti aggiuntivi e servizi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) nella nuova interfaccia di amministrazione di Microsoft 365.<br/>![Pagina servizi e componenti aggiuntivi nella nuova interfaccia di amministrazione di Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
-
-2. Individuare e selezionare il componente aggiuntivo nel messaggio di Report.<br/>![Individuare e selezionare il componente aggiuntivo di report](media/FindReportMessageAddIn.png)<br/> 
-    
-3. Nella schermata del messaggio di Report, esaminare e modificare le impostazioni nel modo appropriato per l'organizzazione.<br/>![Impostazioni per il componente aggiuntivo di report](media/EditReportMessageAddIn.png)<br/> 
+Con questa regola, ogni volta che qualcuno all'interno dell'organizzazione segnala un messaggio di posta elettronica utilizzando il componente aggiuntivo di report, l'amministratore globale, amministratore della sicurezza e/o lettore di sicurezza riceverà una copia del messaggio. Queste informazioni consentono di configurare o modificare i criteri, ad esempio i criteri di [Office 365 degli strumenti di analisi provvisoria collegamenti](atp-safe-links.md) o le impostazioni di [protezione da posta indesiderata](anti-spam-protection.md) . 
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Informazioni su come utilizzare il componente aggiuntivo di report
 
 Vedere [utilizzo del componente aggiuntivo di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Verificare o modificare le impostazioni per il componente aggiuntivo di report
+
+È possibile esaminare e modificare le impostazioni predefinite per il componente aggiuntivo di report nella [pagina Add-Ins & servizi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
+
+> [!IMPORTANT]
+> È necessario essere un amministratore globale di Office 365 o un amministratore di Exchange Online per completare questa attività.
+    
+1. Passare alla [pagina di componenti aggiuntivi & servizi](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) nell'interfaccia di amministrazione di Microsoft 365.<br/>![Pagina servizi e componenti aggiuntivi nella nuova interfaccia di amministrazione di Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+
+2. Individuare e selezionare il componente aggiuntivo di report.<br/>![Individuare e selezionare il componente aggiuntivo di report](media/FindReportMessageAddIn.png)<br/> 
+    
+3. Nella schermata del messaggio di Report, esaminare e modificare le impostazioni nel modo appropriato per l'organizzazione.<br/>![Impostazioni per il componente aggiuntivo di report](media/EditReportMessageAddIn.png)<br/> 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
