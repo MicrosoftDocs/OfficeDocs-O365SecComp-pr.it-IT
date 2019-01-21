@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328132"
+---
 # [Introduzione]()
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
@@ -156,7 +164,7 @@
 ### [Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](view-keyword-statistics-for-content-search.md)
 ### [Esportare i risultati della Ricerca contenuto ](export-search-results.md)
 ### [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
-### [Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messagesadmin-help.md)
+### [Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messages-in-your-organization.md)
 ### [Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [Modificare in blocco più Ricerche contenuto](bulk-edit-content-searches.md)
 ### [Preparare un file CSV per un elenco ID di Ricerca contenuto](csv-file-for-an-id-list-content-search.md)
@@ -249,12 +257,21 @@
 #### [Scaricare i report esistenti](download-existing-reports.md)
 ## [Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](enable-or-disable-safety-tips.md)
 ## [Attivare il componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)
+# Flusso di posta
+## [Traccia dei messaggi nel Centro sicurezza e conformità](message-trace-scc.md)
+## [Approfondimenti sul flusso di posta nel Centro sicurezza e conformità](mail-flow-insights.md)
+### [Report dei messaggi inoltrati automaticamente](mfi-auto-forwarded-messages-report.md)
+### [Approfondimenti sul ciclo di posta](mfi-mail-loop-insight.md)
+### [Flusso di posta in ingresso e in uscita](mfi-outbound-and-inbound-mail-flow.md)
+### [Avvisi di coda e code](mfi-queue-alerts-and-queues.md)
+### [Approfondimenti sulle regole del flusso di posta lento](mfi-slow-mail-flow-rules-insight.md)
 # Soluzioni di sicurezza
 ## [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ### [Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ### [Creare siti del team in un ambiente di sviluppo/test per la campagna politica](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
 ### [Distribuire siti di SharePoint Online per tre livelli di protezione](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
+### [Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Proteggere i file di SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
 ### [Progettare un sito del team di SharePoint Online isolato](design-an-isolated-sharepoint-online-team-site.md)
@@ -262,12 +279,11 @@
 ### [Gestire un sito del team di SharePoint Online isolato](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [integrazione server SIEM](siem-server-integration.md)
-
 # Soluzioni per la conformità
-## [Introduzione a Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Utilizzare Compliance Manager per soddisfare i requisiti normativi e la protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Gestire le richieste degli interessati nell’ambito del GDPR con lo strumento DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Information Protection di Office 365 per GDPR](office-365-information-protection-for-gdpr.md)
+## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
+## [Compliance Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Strumento di richiesta dell'interessato nell'ambito del GDPR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Information Protection di Office 365 per il GDPR](office-365-information-protection-for-gdpr.md)
 ### [Panoramica: protezione di Office 365 per GDPR](office-365-info-protection-for-gdpr-overview.md)
 ### [Cercare e trovare dati personali](search-for-and-find-personal-data.md)
 ### [Personalizzare o creare nuovi tipi di informazione riservate per GDPR](customize-or-create-a-new-sensitive-information-type.md)
