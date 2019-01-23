@@ -3,7 +3,7 @@ title: Introduzione a Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/7/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Informazioni su Business Intelligence di Office 365 rischio e su come iniziare a.
-ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426041"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Introduzione a Office 365 Threat Intelligence
 
@@ -46,7 +46,7 @@ Per visualizzare e utilizzare il dashboard per la protezione &amp; centro confor
   
 ### <a name="threat-explorer"></a>Soluzioni di rischio
 
-Utilizzare l'elenco delle cartelle minaccia per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati per le famiglie di rischio, infrastruttura autore dell'attacco e altro ancora. Elenco delle cartelle di rischio è il punto di partenza per flusso di lavoro indagini del analyst qualsiasi protezione.
+Utilizzare Esplora rischio (detta anche Explorer) per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati per le famiglie di rischio, infrastruttura autore dell'attacco e altro ancora. Explorer di rischio è il punto di partenza per flusso di lavoro indagini del analyst qualsiasi protezione.
   
 ![Soluzioni di rischio](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -54,7 +54,7 @@ Per visualizzare e utilizzare questo report per la protezione &amp; centro confo
   
  ### <a name="incidents"></a>Risolte
 
-Utilizzare l'elenco risolte per visualizzare un elenco di in problemi di protezione volo. Interventi vengono utilizzati per tenere traccia dei rischi, ad esempio messaggi di posta elettronica sospetti ed eseguire ulteriori analisi e risoluzione dei problemi.
+Utilizzare l'elenco risolte (detta anche indagini) per visualizzare un elenco di in problemi di protezione volo. Interventi vengono utilizzati per tenere traccia dei rischi, ad esempio messaggi di posta elettronica sospetti ed eseguire ulteriori analisi e risoluzione dei problemi.
   
 ![Elenco dei problemi di corrente di Business Intelligence di rischio di Office 365](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
@@ -70,19 +70,21 @@ Durante l'offerta di Business Intelligence di Office 365 rischio, analisti di si
   
 ## <a name="how-do-we-get-office-365-threat-intelligence"></a>Come si ottengono Intelligence rischio di Office 365?
 
-Business Intelligence di Office 365 rischio è incluso in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione di Office 365 Enterprise, ad esempio Office 365 Enterprise E3 Business Intelligence di Office 365 rischio può essere acquistato come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni sulle opzioni di pianificazione, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Business Intelligence di Office 365 rischio è incluso in Office 365 Enterprise E5. 
+
+> [!TIP]
+> Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include Intelligence rischio di Office 365, è possibile acquistare potenzialmente rischio Intelligence come componente aggiuntivo. Per ulteriori informazioni sulle opzioni di pianificazione, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. Amministratore globale di Office 365, passare a [https://portal.office.com](https://portal.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. 
     
 2. Scegliere **amministratore** \> **fatturazione** per verificare cosa include in abbonamento corrente. 
+
+    - Se viene visualizzata **E5 Enterprise di Office 365**, l'organizzazione dispone di Business Intelligence di Office 365 rischio. 
+    - Se viene visualizzata una sottoscrizione diversa, ad esempio **Office 365 Enterprise E3** o **Office 365 Enterprise E1**, è possibile aggiungere Intelligence rischio. (A tale scopo, scegliere **Aggiungi sottoscrizione +**).
     
-3. Se viene visualizzata **E5 Enterprise di Office 365**, l'organizzazione dispone di Business Intelligence di Office 365 rischio.
+3. Nell'Interfaccia di amministrazione di Office 365 scegliere **Utenti** \> **Utenti attivi**.
     
-    Se viene visualizzata una sottoscrizione diversa, ad esempio **Office 365 Enterprise E3** o **Office 365 Enterprise E1**, è possibile aggiungere Business Intelligence di Office 365 rischio. A tale scopo, scegliere **Aggiungi sottoscrizione +**.
-    
-4. Nell'Interfaccia di amministrazione di Office 365 scegliere **Utenti** \> **Utenti attivi**.
-    
-5. Assegnare licenze di Office 365 rischio Intelligence agli utenti. Per ulteriori informazioni sull'assegnazione delle licenze, vedere [assegnare licenze agli utenti di Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+5. Assegnare licenze di Office 365 rischio Intelligence a tutti gli utenti attivi. (Solo gli utenti che dispongono di una licenza di Business Intelligence di rischio verranno visualizzata nel report, ad esempio Explorer.)
     
 6. Assegnare ruoli agli utenti dell'organizzazione che verranno utilizzata la Business Intelligence rischio di Office 365. Vedere [fornire agli utenti di accedere a Office 365 Security &amp; centro conformità](grant-access-to-the-security-and-compliance-center.md)e fare riferimento alla tabella riportata di seguito:
     
@@ -90,9 +92,9 @@ Business Intelligence di Office 365 rischio è incluso in Office 365 Enterprise 
 |:-----|:-----|
 |**Per eseguire questa attività...** <br/> |**È necessario disporre di questi ruoli** <br/> |
 |Utilizzare il dashboard di rischio (o il nuovo [dashboard sicurezza](security-dashboard.md))  <br/> Visualizza informazioni sulle minacce recente o corrente  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
-|Utilizzare l'elenco delle cartelle rischio (anche noto come Explorer)  <br/> Analisi delle minacce  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
-|Problemi di visualizzazione  <br/> Aggiungere messaggi di posta elettronica a un evento imprevisto  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
-|Attivare la posta elettronica azioni in un evento imprevisto  <br/> Cercare ed eliminare messaggi di posta elettronica sospetti  <br/> |Amministratore globale di Office 365 o sicurezza  <br/> Cercare ed eliminare (assegnati per la protezione &amp; centro conformità)  <br/> |
+|Utilizzare Esplora rischio (anche noto come Explorer)  <br/> Analisi delle minacce  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
+|Problemi di visualizzazione (anche noto come indagini) <br/> Aggiungere messaggi di posta elettronica a un evento imprevisto  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Lettore di sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> |
+|Attivare la posta elettronica azioni in un evento imprevisto  <br/> Cercare ed eliminare messaggi di posta elettronica sospetti  <br/> |Amministratore globale di Office 365 o sicurezza  <br/> Uno dei ruoli sopra e ricerca ed eliminazione (assegnati per la protezione &amp; centro conformità)  <br/> |
 |Integrare Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection  <br/> Integrazione di Business Intelligence di rischio di Office 365 con un server SIEM  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnati per la protezione &amp; centro conformità)  <br/> Ruolo appropriato assegnata in altre applicazioni (ad esempio, la protezione di Windows Defender avanzate rischio portale o un server SIEM)  <br/> |
    
 Per informazioni sui ruoli, gruppi di ruoli e autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).

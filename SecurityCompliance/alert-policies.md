@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso in Office 365 Security &amp; centro conformità per monitorare le potenziali minacce, la perdita di dati e problema di autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono le attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426031"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Avviso criteri in Office 365 Security &amp; centro conformità
 
@@ -34,11 +34,11 @@ Ecco una rapida panoramica di come avviso lavoro criteri e gli avvisi che rappre
   
 ![Panoramica di come avviso lavoro criteri](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Un amministratore dell'organizzazione consente di creare, configurare e consente di attivare un criterio di avviso utilizzando la pagina **criteri di avviso** per la protezione &amp; centro conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet **New-ProtectionAlert** in PowerShell. 
+1. Un amministratore dell'organizzazione consente di creare, configura e consente di attivare un criterio di avviso utilizzando la pagina **criteri di avviso** in & la sicurezza centro conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet **New-ProtectionAlert** in PowerShell. Per creare criteri di avviso, è necessario assegnare il ruolo di configurazione dell'organizzazione o il ruolo di gestione avvisi in & la sicurezza centro conformità.
     
 2. Un utente esegue un'attività che soddisfa le condizioni di un criterio di avviso. Nel caso di attacchi malware, messaggi di posta elettronica che contengono un virus inviati agli utenti dell'organizzazione verranno generato un avviso.
     
-3. Office 365 genera un avviso che viene visualizzato nella pagina **Visualizza avvisi** di protezione &amp; centro conformità. Inoltre, se le notifiche di posta elettronica sono abilitate per il criterio di avviso, Office 365 invia una notifica ai destinatari elenco. 
+3. Office 365 genera un avviso che viene visualizzato nella pagina **Visualizza avvisi** di protezione &amp; centro conformità. Inoltre, se le notifiche di posta elettronica sono abilitate per il criterio di avviso, Office 365 invia una notifica ai destinatari elenco. Gli avvisi che un amministratore o altri utenti possono visualizzare la pagina **Visualizza avvisi** dipende dai ruoli assegnati all'utente. Per ulteriori informazioni, vedere la sezione [RBAC autorizzazioni necessarie per visualizzare gli avvisi](#rbac-permissions-required-to-view-alerts) .
     
 4. Gli amministratori consente di gestire gli avvisi di sicurezza &amp; centro conformità. Gestione degli avvisi è costituita assegnazione di stato per tenere traccia e gestire tutte le indagini.
     
