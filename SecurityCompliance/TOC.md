@@ -1,16 +1,9 @@
----
-ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328132"
----
 # [Introduzione]()
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
-## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
-## [Secure Score di Office 365](office-365-secure-score.md)
+## [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md)
+## [Preparare l'ambiente per i nuovi Centro sicurezza Microsoft 365 e Centro conformità Microsoft 365](microsoft-security-and-compliance.md)
+## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ## [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
 ## [Panoramica del dashboard di sicurezza](security-dashboard.md)
