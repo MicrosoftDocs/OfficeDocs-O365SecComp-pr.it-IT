@@ -5,16 +5,16 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 12/03/2018
+ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: Vedere cosa rilascia 2017 per la protezione di Office 365 Cloud App
-ms.openlocfilehash: f30df4313b40007440aa37c9cc9aa17e16e5208f
-ms.sourcegitcommit: ce61b1ea9df1a69c6eef06a4de1f644ecb9b941d
+description: Vedere cosa rilasciati nel 2017 per la protezione di Office 365 Cloud App
+ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
+ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "27135081"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570182"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Aggiornamenti di sicurezza di applicazione Cloud di Office 365 durante 2017
     
@@ -91,9 +91,8 @@ ms.locfileid: "27135081"
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Contenuto della Guida alla protezione App Cloud di Office 365](office-365-cas-help.md)
+
+[Novità di Office 365 Cloud App Security](new-in-office-365-cas.md)
   
 [Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security](utilization-activities-for-ocas.md)
-  
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
-  
 
