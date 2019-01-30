@@ -1,4 +1,4 @@
-# Attività iniziali
+# [Introduzione]
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
 ## [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md)
@@ -6,8 +6,7 @@
 ## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ## [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
-## [Panoramica del dashboard di sicurezza](security-dashboard.md)
-## [Installare il componente aggiuntivo Supervisione per Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
+## [Panoramica del Dashboard sulla sicurezza](security-dashboard.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
 # Proteggere l'accesso a dati e servizi
@@ -58,7 +57,9 @@
 ### [Creare e pubblicare in blocco etichette di conservazione tramite PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Revisioni per l'eliminazione](disposition-reviews.md)
 ### [Conservazione basata su eventi](event-driven-retention.md)
-### [Gestione del piano file](file-plan-manager.md)
+### [Gestione del piano di archiviazione](file-plan-manager.md)
+## [Supervisionare le comunicazioni](supervision-policies.md)
+### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
 ### [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)
 ### [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -68,10 +69,7 @@
 ## Monitorare la governance dei dati
 ### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
 ### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
-### [Configurare i criteri di supervisione per l’organizzazione](configure-supervision-policies.md)
-### [Installare il componente aggiuntivo Supervisione per Outlook desktop](install-the-supervision-add-in-for-outlook-desktop.md)
-### [Rapporti di supervisione](supervision-reports.md)
-## Ulteriori informazioni sulla governance dei dati.
+## Altre informazioni sulla governance dei dati
 ### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
 # [Protezione contro le minacce](protect-against-threats.md)
 ## [Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
@@ -196,6 +194,67 @@
 ### [Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Aumentare la quota degli Elementi recuperabili per le cassette postali con blocchi](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+
+## [Advanced eDiscovery (anteprima) in Microsoft 365](compliance20/overview-ediscovery-20.md)
+### [Note sulla versione](compliance20/release-notes-ediscovery20.md)
+### [Creare un nuovo caso](compliance20/create-new-ediscovery-case.md)
+
+### [Utilizzo dei responsabili](compliance20/managing-custodians.md)
+#### [Aggiungere responsabili a un caso](compliance20/add-custodians-to-case.md)
+#### [Gestione dei responsabili](compliance20/manage-new-custodians.md)
+#### [Visualizzazione dell'attività dei responsabili](compliance20/view-custodian-activity.md)
+
+### [Utilizzo delle comunicazioni](compliance20/managing-custodian-communications.md)
+#### [Creare una notifica di blocco](compliance20/create-hold-notification.md)
+#### [Uso dell'editor delle comunicazioni](compliance20/using-communications-editor.md)
+#### [Gestire le notifiche di blocco](compliance20/manage-hold-notification.md)
+#### [Modificare una notifica di blocco](compliance20/edit-hold-notification.md)
+#### [Accettazione delle notifiche di blocco](compliance20/acknowledge-hold-notification.md)
+
+### [Gestione dei blocchi](compliance20/managing-holds.md)
+
+### [Correzione degli errori di elaborazione](compliance20/processing-data-for-case.md)
+#### [Indicizzazione avanzata dei dati dei responsabili](compliance20/indexing-custodian-data.md)
+#### [Correzione degli errori durante l'elaborazione dei dati](compliance20/error-remediation.md)
+
+### [Raccolta dei dati per un caso](compliance20/collecting-data-for-ediscovery.md)
+#### [Creare una ricerca per raccogliere dati](compliance20/create-search-to-collect-data.md)
+#### [Creazione di query di ricerca](compliance20/building-search-queries.md)
+#### [Statistiche della ricerca](compliance20/search-statistics.md)
+#### [Aggiungere i risultati della ricerca a un set di lavoro](compliance20/add-data-to-working-set.md)
+
+### [Esame dei dati del caso](compliance20/reviewing-data-in-working-set.md)
+#### [Gestione dei set di lavoro](compliance20/managing-working-sets.md)
+#### [Gestire i set caricati](compliance20/manage-load-sets.md)
+#### [Caricare dati non Office 365 in un set di lavoro](compliance20/load-non-office365-data.md)
+#### [Esecuzione di query sui dati in un set di lavoro](compliance20/working-set-search.md)
+#### [Visualizzazione dei documenti in un set di lavoro](compliance20/annotating-and-redacting-documents.md)
+#### [Aggiunta di tag ai documenti in un set di lavoro](compliance20/tagging-documents.md)
+
+### [Analisi dei dati del caso](compliance20/analyzing-data-in-working-set.md)
+#### [Rilevamento dei documenti simili](compliance20/near-duplicates.md)
+#### [Threading posta elettronica](compliance20/email-threading.md)
+#### [Temi](compliance20/themes.md)
+#### [Uso del modulo Rilevanza per l'analisi dei dati](compliance20/using-relevance.md)
+
+### [Esportazione dei dati del caso](compliance20/exporting-data-ediscover20.md)
+#### [Esportare documenti da un set di lavoro](compliance20/export-documents-from-working-set.md)
+#### [Scaricare processi di esportazione](compliance20/download-export-jobs.md)
+
+### [Gestione dei processi](compliance20/managing-jobs-ediscovery20.md)
+
+### [Configurazione delle impostazioni dei casi](compliance20/configuring-case-settings-ediscovery20.md)
+#### [Chiudere o eliminare un caso](compliance20/close-or-delete-case.md)
+#### [Aggiungere o rimuovere membri da un caso](compliance20/add-remove-members.md)
+#### [Configurare le impostazioni di ricerca e analisi](compliance20/configure-search-analytics-settings.md)
+
+### Informazioni di riferimento su Advanced eDiscovery (anteprima)
+#### [Limiti relativi alla ricerca](compliance20/search-limits-ediscovery20.md)
+#### [Limiti relativi all'indicizzazione](compliance20/indexing-limits-ediscovery20.md)
+#### [Limiti relativi all'esportazione](compliance20/export-limits-ediscovery20.md)
+#### [Limiti relativi al download](compliance20/download-limits-ediscovery20.md)
+#### [Tipi di file supportati](compliance20/supported-filetypes-ediscovery20.md)
+#### [Campi dei metadati del documento](compliance20/document-metadata-fields.md)
 
 ## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Introduzione ad Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
