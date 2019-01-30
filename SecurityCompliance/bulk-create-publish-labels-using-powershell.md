@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: In Office 365, è possibile utilizzare le etichette per implementare una pianificazione di conservazione per l'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
-ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
-ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
+ms.openlocfilehash: d05246dacd71ee59a795121e60a2a4202cfef69f
+ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25899667"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29629048"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 
@@ -77,7 +77,7 @@ Note:
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
-Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,,,,,,,,,,,
+Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
 ## <a name="step-3-create-the-powershell-script"></a>Passaggio 3: creare lo script di PowerShell
