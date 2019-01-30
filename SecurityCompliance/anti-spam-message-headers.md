@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio.
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255891"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614460"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -54,7 +54,7 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |SFV:NSPM|Il messaggio è stato contrassegnato come non indesiderato ed è stato inviato al destinatario.|
 |H: [helostring]|La stringa HELO or EHLO del server di posta elettronica di connessione.|
 |PTR: [ReverseDNS]|Il record PTR o record "Pointer" dell'indirizzo IP del mittente, noto anche come indirizzo DNS inverso.|
-|SFTY|Il messaggio è stato identificato come phishing e inoltre essere contrassegnato con uno dei valori seguenti: <br/>• 9.1: il valore predefinito. Il messaggio contiene un URL di phishing, può contenere altri contenuti phishing o contrassegnato come phishing da un altro filtro di posta elettronica, ad esempio una versione locale di Exchange Server prima di inoltrare il messaggio a Office 365. <br/>• 9.11: anti-spoofing controlli non riusciti di messaggio dove il dominio di invio nella From: intestazione equivale, risulti allineato con o fa parte della stessa organizzazione al dominio di destinazione. <br/>• 9.21: non è stato messaggio anti-spoofing controlli e il dominio di invio nella From: intestazione non esegue l'autenticazione. Utilizzare in combinazione con CompAuth (vedere i risultati di autenticazione). <br/>• 9.22: simile a 9.21, ad eccezione del fatto che l'utente dispone di un mittente protetto è stato sottoposto a override. <br/>• 9.23: simile a 9.22, ad eccezione del fatto che l'organizzazione dispone di un mittente consentiti o un dominio a cui è stato sottoposto a override. <br/>• 9,24: identico 9.23, ad eccezione del fatto che l'utente dispone di una regola di flusso della posta di Exchange che è stato sottoposto a override.|
+|SFTY|Il messaggio è stato identificato come phishing e inoltre essere contrassegnato con uno dei valori seguenti: <br/>• 9.1: il valore predefinito. Il messaggio contiene un URL di phishing, può contenere altri contenuti phishing o contrassegnato come phishing da un altro filtro di posta elettronica, ad esempio una versione locale di Exchange Server prima di inoltrare il messaggio a Office 365. <br/>• 9.11: anti-spoofing controlli non riusciti di messaggio dove il dominio di invio nella From: intestazione equivale, risulti allineato con o fa parte della stessa organizzazione al dominio di destinazione. Indica che un suggerimento di sicurezza tra organizzazioni org spoofing verrà aggiunto al messaggio. <br/>• 9.19: messaggio non è riuscita controlli rappresentazione domini in cui il dominio di invio tenta di rappresentare un dominio e di proprietà del ricevitore o un dominio personalizzato protetto tramite i criteri di Anti-Phishing. Indica che un suggerimento di sicurezza di rappresentazione verrà aggiunto al messaggio, se abilitato tramite criteri di Anti-Phishig. <br/>• 9,20: messaggio non è riuscita verifiche di rappresentazione utente cui mittente sta tentando di rappresentare un utente all'interno dell'organizzazione di ricevitori o un utente personalizzato protetto tramite i criteri di Anti-Phishing. Indica che un suggerimento di sicurezza di rappresentazione verrà aggiunto al messaggio, se abilitato tramite criteri di Anti-Phishig. <br/>• 9.21: non è stato messaggio anti-spoofing controlli e il dominio di invio nella From: intestazione non esegue l'autenticazione e proviene da un dominio esterno. Utilizzare in combinazione con CompAuth (vedere i risultati di autenticazione). <br/>• 9.22: simile a 9.21, ad eccezione del fatto che l'utente dispone di un mittente protetto è stato sottoposto a override. <br/>• 9.23: simile a 9.22, ad eccezione del fatto che l'organizzazione dispone di un mittente consentiti o un dominio a cui è stato sottoposto a override. <br/>• 9,24: identico 9.23, ad eccezione del fatto che l'utente dispone di una regola di flusso della posta di Exchange che è stato sottoposto a override.|
 |X-CustomSpam: [ASFOption]|I messaggi corrispondono a una filtro della posta indesiderata opzione. Ad esempio, **X-CustomSpam: collegamenti a siti remoti dell'immagine** indica che l'opzione **collegamenti immagini a siti remoti** ASF corrispondente. Per testo X-header viene aggiunto per ogni opzione ASF specifici, vedere [Opzioni di filtro posta indesiderata](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campi di intestazione del messaggio X-Microsoft-Antispam

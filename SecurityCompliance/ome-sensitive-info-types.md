@@ -3,7 +3,7 @@ title: Nuovo criterio di crittografia dei messaggi di Office 365 per le informaz
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: Applicato automaticamente il criterio di Office 365 Message Encryption per la distribuzione ai tenant tutti i tipi di informazioni riservate.'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789454"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614380"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Criteri di crittografia dei messaggi di Office 365 per le informazioni riservate
 
-In Office 365 tenant che verrà applicata la crittografia dei messaggi di Office 365 per tutti i messaggi di posta elettronica che contengono informazioni riservate e che vengono inviate all'esterno dell'organizzazione che verrà creata un nuovo criterio automatico. Questa nuova regola di flusso di posta elettronica di Exchange verrà creata automaticamente nel tenant Office 365 in modo che l'organizzazione verrà protetti per impostazione predefinita.
+Per un gruppo selezionato di tenant, in base alle dimensioni dell'organizzazione e la complessità del flusso di posta, ciò un lente introduzione di nuovi criteri automatici in Office 365 tenant che verrà applicata la crittografia dei messaggi di Office 365 per i messaggi di posta elettronica che contengono determinati tipi di riservati informazioni. Sottoposti a test seguente con un piccolo gruppo di tenant. Questo criterio non inizierà a tutte le organizzazioni e considerazioni, ad esempio dimensioni dell'organizzazione e la complessità del flusso di posta verrà utilizzata per determinare l'idoneità per questo (in inglese) in uscita. Se l'organizzazione è selezionato per questo (in inglese) in uscita, si riceverà una notifica nel centro di messaggi Office 365 notifica che indica la data in cui verrà creato il criterio automatico e sono disponibili almeno un avviso di 30 giorni e l'opzione per non ricevere messaggi. Se non si desidera attendere Microsoft creare questo criterio e si desidera effettuare questa operazione se stessi, è possibile creare questo criterio automatico utilizzando le regole di flusso di posta di Exchange.
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>Momento in cui si prevede che l'aggiornamento per il tenant
 
@@ -52,7 +52,7 @@ Non è necessario aggiornare o modificare le impostazioni di configurazione di O
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>Questa modifica rappresentare nel Registro di controllo?
 
-Questa attività è possibile controllare ed è disponibile per i clienti.  L'operazione è 'New-TransportRule' e un frammento di una voce di controllo di esempio di ricerca del Registro di controllo nel centro conformità e sicurezza è seguito:
+Questa attività è possibile controllare ed è disponibile per i clienti.  L'operazione è 'New-TransportRule' e un frammento di una voce di controllo di esempio di ricerca del Registro di controllo di sicurezza & centro conformità è seguito:
 
 |     |
 | --- |
