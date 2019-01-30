@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380616"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607168"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -258,15 +258,39 @@ I criteri di conservazione che si applicano a Teams possono usare la [protezione
 A questo scopo, usare il parametro `ExcludedItemClasses` dei cmdlet `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](#find-the-powershell-cmdlets-for-retention-policies) più avanti.
   
 ## <a name="locking-a-retention-policy"></a>Blocco dei criteri di conservazione
-È possibile che alcune organizzazioni debbano conformarsi alle regole definite da enti normativi, come la regola 17a-4 della SEC (Securities and Exchange Commission), in base alla quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. Protezione dell'archiviazione consente di bloccare i criteri in modo che nessuno, incluso l'amministratore, possa disattivarli o renderli meno restrittivi.
+È possibile che alcune organizzazioni debbano attenersi ai regolamenti definiti da enti normativi, come il regolamento 17a-4 della SEC (Securities and Exchange Commission), in base al quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. La funzionalità di protezione dell'archiviazione consente di bloccare i criteri in modo che nessuno, incluso l'amministratore, possa disattivarli o renderli meno restrittivi.
   
 Dopo il blocco dei criteri, nessuno può disattivarli, né rimuovere le posizioni dai criteri. Inoltre, non è possibile modificare o eliminare contenuti soggetti ai criteri durante il periodo di conservazione. Se i criteri sono stati bloccati, l'unico modo per modificarli è aggiungere posizioni oppure prolungarne la durata. I criteri bloccati possono essere aumentati o prolungati, ma non ridotti o disattivati.
   
 Prima di bloccare i criteri di conservazione è quindi **essenziale** conoscere i requisiti di conformità dell'organizzazione e **non bloccare i criteri** a meno che non sia strettamente necessario.
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>Bloccare i criteri di conservazione con PowerShell
   
-È possibile bloccare i criteri di conservazione solo con PowerShell. Usare il parametro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](#find-the-powershell-cmdlets-for-retention-policies) più avanti.
+È possibile bloccare i criteri di conservazione solo con PowerShell.
+
+Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+In secondo luogo, per visualizzare un elenco dei criteri di conservazione e trovare il nome dei criteri che si intende bloccare, eseguire `Get-RetentionCompliancePolicy`.
+
+![Elenco dei criteri di conservazione in PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+Infine, per applicare la protezione dell'archiviazione sui criteri di conservazione, eseguire `Set-RetentionCompliancePolicy` con il parametro `RestrictiveRetention` impostato su true, ad esempio:
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![Parametro RestrictiveRetention in PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+Dopo aver eseguito questo cmdlet, viene visualizzata una richiesta di conferma. Scegliere **Sì a tutti**.
+
+![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+Sui criteri di conservazione è ora applicata la protezione dell'archiviazione. Se si esegue `Get-RetentionCompliancePolicy`, il parametro `RestrictiveRetention` è impostato su true, ad esempio:
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![Criteri bloccati con tutti i parametri visualizzati in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
-## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principi di conservazione o criteri di precedenza
+## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Precedenza nei principi di conservazione
 
 È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Quali sono i criteri che hanno la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
   

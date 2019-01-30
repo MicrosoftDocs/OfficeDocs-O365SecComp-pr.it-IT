@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: ad6137ad00fa2e7eb83a405e429d6c7826cf6a90
-ms.sourcegitcommit: d7e87ce4b1579ac47af2e853ef59ef058c40191f
+ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547218"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607158"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -76,7 +76,12 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     ![Filigrana e intestazione applicate a un documento](media/Sensitivity_label_watermark_header.png)
 
 - 
-  **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Affinché le etichette di riservatezza possano utilizzare Windows Information Protection (WIP), è necessario creare prima un criterio di protezione delle app nel portale di Azure. Per ulteriori informazioni, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+  **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Per consentire l'uso di Windows Information Protection (WIP) nelle le etichette di riservatezza, è necessario creare prima un criterio di protezione delle app nel portale di Azure. Per altre informazioni, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+
+- **Applicare automaticamente l'etichetta a contenuto che contiene informazioni sensibili.** È possibile selezionare i tipi di informazioni sensibili che si intende etichettare e scegliere se applicare l'etichetta automaticamente oppure chiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, il messaggio di richiesta visualizza qualsiasi testo selezionato. Per altre informazioni, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply_sensitivity_label_automatically.md).
+
+    ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](media/Sensitivity_label_Prompt_for_required_label.png)
+
 
 Tutte queste opzioni sono disponibili quando si crea un'etichetta in Centro sicurezza e conformità.
 
@@ -116,9 +121,13 @@ Con un criterio di etichetta, è possibile:
 
 - **Richiedere una motivazione per modificare un'etichetta.** Se il contenuto è contrassegnato come Riservato e un utente desidera rimuovere l'etichetta o sostituirla con una classificazione inferiore, ad esempio un'etichetta denominata Pubblico, è possibile richiedere che l'utente fornisca una motivazione quando esegue questa operazione. Le motivazioni saranno sottoposte a esame dell’amministratore. Attualmente stiamo lavorando a un report in cui gli amministratori potranno visualizzare le motivazioni dell'utente.
 
-    ![Finestra in cui gli utenti immettono una motivazione](media/Sensitivity_label_justification_required.png)
+    ![Messaggio in cui si richiede agli utenti di immettere una motivazione](media/Sensitivity_label_justification_required.png)
 
-- **Fornire collegamento a una pagina della Guida personalizzata.** Se gli utenti non conoscono il significato delle etichette di riservatezza o non sanno come usarle, è possibile indicare un URL con maggiori informazioni, visualizzato nella parte inferiore del menu etichetta di riservatezza nelle applicazioni di Office.
+- **Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti.** Se si vuole che tutto il contenuto di un utente sia etichettato, è possibile richiedere l'applicazione di un'etichetta a tutti i documenti salvati e i messaggi di posta elettronica inviati. L'etichetta può essere assegnata manualmente dall'utente, automaticamente come risultato di una condizione oppure assegnata per impostazione predefinita (opzione per etichetta predefinita descritta in precedenza). Ecco il messaggio di richiesta visualizzato in Outlook quando un utente deve assegnare un'etichetta.
+
+    ![Messaggio visualizzato in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
+
+- **Fornire il collegamento a una pagina della Guida personalizzata.** Se gli utenti non conoscono il significato delle etichette di riservatezza o non sanno come usarle, è possibile fornire un URL che consente di accedere a maggiori informazioni, visualizzato nella parte inferiore del menu dell'etichetta di riservatezza nelle app di Office.
 
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](media/Sensitivity_label_learn_more.png)
 
