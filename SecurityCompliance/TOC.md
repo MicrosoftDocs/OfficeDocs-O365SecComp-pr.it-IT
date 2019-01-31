@@ -1,4 +1,4 @@
-# [Introduzione]
+# Attività iniziali
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
 ## [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md)
@@ -15,6 +15,7 @@
 # Proteggere le informazioni
 ## [Etichette di riservatezza](sensitivity-labels.md)
 ### [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](encryption-sensitivity-labels.md)
+### [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply_sensitivity_label_automatically.md)
 ## [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 ### [Guarda una panoramica completa sulla prevenzione della perdita dei dati](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurare Prevenzione della perdita dei dati
@@ -37,6 +38,15 @@
 ### [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Creare un dizionario di parole chiave](create-a-keyword-dictionary.md)
 ### [Creare un'impronta digitale documenti](document-fingerprinting.md) 
+# Gestione dei record
+## [Criteri di conservazione](retention-policies.md)
+## [Etichette di conservazione](labels.md)
+## [Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Revisioni per l'eliminazione](disposition-reviews.md)
+## [Conservazione basata su eventi](event-driven-retention.md)
+## [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
+## [Gestione del piano di archiviazione](file-plan-manager.md)
+## [Creare e pubblicare in blocco etichette di conservazione tramite PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # Gestire la governance dei dati        
 ## [Importare dati](importing-pst-files-to-office-365.md)
 ### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
@@ -54,10 +64,12 @@
 ## Conservare i dati
 ### [Criteri di conservazione](retention-policies.md)
 ### [Etichette di conservazione](labels.md)
-### [Creare e pubblicare in blocco etichette di conservazione tramite PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
 ### [Revisioni per l'eliminazione](disposition-reviews.md)
 ### [Conservazione basata su eventi](event-driven-retention.md)
+### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
+### [Creare e pubblicare in blocco etichette di conservazione tramite PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ## [Supervisionare le comunicazioni](supervision-policies.md)
 ### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
