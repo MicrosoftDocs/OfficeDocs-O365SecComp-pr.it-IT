@@ -13,18 +13,20 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: 6f423ba29540bdc498c2725b9741dece2557e4be
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618932"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666176"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
 
  *Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.* 
   
-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro in Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), che consente di monitorare, assegnare e verificare le attività di conformità dell'organizzazione correlate ai Microsoft Professional Services e a servizi cloud come Microsoft Office 365, Microsoft Dynamics 365 e Microsoft Azure. Compliance Manager:
+Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro in Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), che consente di tenere traccia, assegnare e verificare le attività di conformità dell'organizzazione correlate a Microsoft Professional Services e a servizi cloud Microsoft, come Microsoft Office 365, Microsoft Dynamics 365 e Microsoft Azure. 
+
+Compliance Manager:
   
 - Combina le informazioni dettagliate fornite da Microsoft ai revisori e ai regolatori come parte di vari audit di terze parti dei servizi cloud Microsoft in relazione a vari standard (ad esempio, ISO 27001, ISO 27018 e NIST) e le informazioni che Microsoft elabora internamente per la conformità alle normative (come HIPAA e il Regolamento generale sulla protezione dei dati dell'UE o GDPR) con la propria autovalutazione della conformità dell'organizzazione a questi standard e normative.
     
@@ -35,36 +37,17 @@ Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso 
 - Fornisce un archivio sicuro per poter caricare e gestire le evidenze e altri elementi correlati per le attività di conformità.
     
 - Produce report dettagliati in Microsoft Excel che documentano le attività di conformità eseguite da Microsoft e dall'organizzazione, da fornire ai revisori, alle autorità di regolamentazione e ad altre parti interessate della conformità.
+
+Per una breve demo di Compliance Manager, guardare questo video su [Compliance Manager](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
+
     
 > [!IMPORTANT]
 > Compliance Manager è un dashboard che fornisce un riepilogo della protezione e della conformità dei dati, suggerendo come migliorarli. Le azioni dei clienti fornite nel Compliance Manager sono elementi consigliati; spetta a ciascuna organizzazione valutarne l'efficacia nel rispettivo contesto normativo prima dell'implementazione. Gli elementi consigliati disponibili nel Compliance Manager non devono essere interpretati come una garanzia di conformità.
+
     
 ## <a name="what-is-compliance-manager"></a>Che cos'è il Compliance Manager?
 
 Compliance Manager è uno strumento di valutazione dei rischi in base al flusso di lavoro, concepito per gestire la conformità alle normative nel modello di responsabilità condivisa del cloud. Offre una visualizzazione su dashboard di standard, normative e valutazioni che contengono i risultati dei test e i dettagli sull'implementazione del controllo Microsoft e il monitoraggio e le linee guida all'implementazione del controllo del cliente che l'organizzazione può inserire. Compliance Manager garantisce definizioni sul controllo di valutazione delle certificazioni, indicazioni sull'implementazione e test dei controlli, con classificazione dei controlli in base al rischio, gestione di accesso in base al ruolo e flusso di lavoro di assegnazione delle azioni di controllo sul posto per monitorare l'implementazione del controllo e testare la gestione delle evidenze. Compliance Manager ottimizza il carico di lavoro di conformità consentendo ai clienti di raggruppare le valutazioni in modo logico e applicare test di controllo di valutazione a controlli identici o correlati, riducendo la moltiplicazione degli sforzi necessaria per eseguire controlli identici tra certificazioni diverse.
-  
-## <a name="using-search"></a>Uso della ricerca
-
-![Service Trust Portal - Campo di inserimento della ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
-  
-Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina per espandere il campo di inserimento della ricerca, inserire i termini di ricerca e premere Invio. Apparirà il controllo di ricerca, con il termine di ricerca nel campo di inserimento del riquadro di ricerca, quindi i risultati della ricerca appariranno sotto.
-  
-Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tramite l'opzione di filtro degli elenchi a discesa sarà possibile restringere l'elenco dei documenti visualizzati, aggiungere o rimuovere i risultati visualizzati. Per restringere i documenti restituiti in base a servizi cloud specifici, categorie di conformità o procedure di sicurezza, zone del mondo o settori, utilizzare più attributi del filtro contemporaneamente. Fare clic sul collegamento al nome del documento per scaricare il documento.
-  
-![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-  
-Fare clic sul collegamento Compliance Manager per visualizzare i risultati della ricerca per i controlli di valutazione Compliance Manager. I risultati della ricerca nell'elenco mostrano la data di creazione della valutazione, il nome di raggruppamento delle valutazioni, il servizio cloud applicabile e se si tratta di controlli gestiti da Microsoft o dai clienti.
-  
-![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
-> [!NOTE]
-> Report e documenti di Service Trust Portal possono essere scaricati per almeno 12 mesi dalla pubblicazione o finché non diventa disponibile una nuova versione del documento. 
- 
-## <a name="localization-support"></a>Supporto alla localizzazione
-
-Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per cambiare la lingua della pagina, basta fare clic sull'icona del globo nell'angolo inferiore sinistro della pagina e selezionare la lingua scelta. 
-  
-![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="assessments-in-compliance-manager"></a>Valutazioni in Compliance Manager
 
@@ -690,6 +673,30 @@ Per visualizzare le valutazioni archiviate:
 3. Fare clic sul nome della valutazione che si desidera visualizzare.
     
 Durante la visualizzazione di una valutazione archiviata, nessuno dei controlli normalmente modificabili (ad esempio l'implementazione, i risultati del test) sarà attivo e il pulsante **Documenti gestiti** non sarà disponibile.
+
+## <a name="using-search"></a>Uso della ricerca
+
+![Service Trust Portal - Campo di inserimento della ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+  
+Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina per espandere il campo di inserimento della ricerca, inserire i termini di ricerca e premere Invio. Apparirà il controllo di ricerca, con il termine di ricerca nel campo di inserimento del riquadro di ricerca, quindi i risultati della ricerca appariranno sotto.
+  
+Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tramite l'opzione di filtro degli elenchi a discesa sarà possibile restringere l'elenco dei documenti visualizzati, aggiungere o rimuovere i risultati visualizzati. Per restringere i documenti restituiti in base a servizi cloud specifici, categorie di conformità o procedure di sicurezza, zone del mondo o settori, utilizzare più attributi del filtro contemporaneamente. Fare clic sul collegamento al nome del documento per scaricare il documento.
+  
+![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+  
+Fare clic sul collegamento Compliance Manager per visualizzare i risultati della ricerca per i controlli di valutazione Compliance Manager. I risultati della ricerca nell'elenco mostrano la data di creazione della valutazione, il nome di raggruppamento delle valutazioni, il servizio cloud applicabile e se si tratta di controlli gestiti da Microsoft o dai clienti.
+  
+![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+  
+> [!NOTE]
+> Report e documenti di Service Trust Portal possono essere scaricati per almeno 12 mesi dalla pubblicazione o finché non diventa disponibile una nuova versione del documento. 
+ 
+## <a name="localization-support"></a>Supporto alla localizzazione
+
+Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per cambiare la lingua della pagina, basta fare clic sull'icona del globo nell'angolo inferiore sinistro della pagina e selezionare la lingua scelta. 
+  
+![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+
 
 ## <a name="change-log-for-customer-managed-controls"></a>Log delle modifiche per i controlli gestiti dai clienti
 
