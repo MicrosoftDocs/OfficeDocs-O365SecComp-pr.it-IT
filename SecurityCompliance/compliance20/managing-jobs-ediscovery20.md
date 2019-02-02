@@ -1,5 +1,5 @@
 ---
-title: Gestione dei processi di eDiscovery avanzate (Preview)
+title: Gestire i processi di eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 39ec0323b122bcfdf57234bfc14003e8525d9abd
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607877"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694802"
 ---
-# <a name="managing-jobs-in-advanced-ediscovery-preview"></a>Gestione dei processi di eDiscovery avanzate (Preview)
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gestire i processi di eDiscovery avanzate (Preview)
 
 Ecco un elenco di processi che si desidera tenere traccia della scheda **processi** di un caso di eDiscovery avanzate (Preview).
 
