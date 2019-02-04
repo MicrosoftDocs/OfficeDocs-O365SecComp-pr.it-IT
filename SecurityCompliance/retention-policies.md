@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
+ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607168"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690417"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -60,7 +60,7 @@ I criteri di conservazione vengono creati e gestiti nella pagina **Conservazione
 
 Quando si include una posizione, ad esempio un sito o una cassetta postale, nei criteri di conservazione, il contenuto rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nei criteri, viene conservata una copia del contenuto al momento dell'applicazione dei criteri.
   
-Per i siti, una copia del contenuto originale viene conservata nella raccolta di archiviazione quando gli utenti modificano o eliminano il contenuto. Per la posta elettronica e le cartelle pubbliche, la copia viene conservata nella cartella Elementi ripristinabili. Queste posizioni sicure e il contenuto conservato non sono visibili alla maggior parte degli utenti. Con i criteri di conservazione, non è neanche necessario che gli utenti sappiano che il contenuto è soggetto a criteri.
+Per le raccolte siti di SharePoint una copia del contenuto originale viene conservata nella raccolta di archiviazione quando gli utenti modificano o eliminano il contenuto. Per la posta elettronica e le cartelle pubbliche la copia viene conservata nella cartella Elementi ripristinabili. Queste posizioni sicure e il contenuto conservato non sono visibili alla maggior parte degli utenti. Con i criteri di conservazione non è neanche necessario che gli utenti sappiano che il contenuto è soggetto a criteri.
   
 Note:
   
@@ -70,15 +70,15 @@ Note:
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenuto negli account di OneDrive e nei siti di SharePoint
 
-I criteri di conservazione vengono applicati a livello di sito. Quando si include un sito di SharePoint o un account di OneDrive nei criteri di conservazione, viene creata una raccolta di archiviazione, se non ne esiste già una. Questa raccolta non è visibile a tutti gli utenti, ma solo agli amministratori della raccolta siti.
+I criteri di conservazione vengono applicati a livello di raccolta siti. Quando si include una raccolta siti di SharePoint o un account di OneDrive nei criteri di conservazione, viene creata una raccolta di archiviazione, se non ne esiste già una. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** del sito di primo livello della raccolta siti. La raccolta di archiviazione non è visibile a tutti gli utenti, ma solo agli amministratori della raccolta siti.
   
-Se un utente prova a modificare o eliminare il contenuto in un sito soggetto a criteri di conservazione, prima di tutto viene verificato se il contenuto è stato modificato dal momento dell'applicazione dei criteri. Se si tratta della prima modifica dall'applicazione dei criteri di conservazione, il contenuto viene copiato nella raccolta di archiviazione prima di consentire all'utente di modificare o eliminare il contenuto originale. Tutto il contenuto del sito può essere copiato nella raccolta di archiviazione, anche se non corrisponde alla query usata dai criteri di conservazione.
+Se un utente prova a modificare o eliminare il contenuto in un sito soggetto a criteri di conservazione, prima di tutto viene verificato se il contenuto è stato modificato dal momento dell'applicazione dei criteri. Se si tratta della prima modifica dall'applicazione dei criteri di conservazione, il contenuto viene copiato nella raccolta di archiviazione prima di consentire all'utente di modificare o eliminare il contenuto originale. Tutto il contenuto della raccolta siti può essere copiato nella raccolta di archiviazione, anche se non corrisponde alla query usata dai criteri di conservazione.
   
 Un processo timer pulisce quindi la raccolta di archiviazione. Questo processo viene eseguito periodicamente e confronta tutto il contenuto della raccolta di archiviazione con le query usate dai criteri di conservazione nel sito. A meno che il contenuto non corrisponda ad almeno una delle query, il processo timer elimina definitivamente il contenuto dalla raccolta di archiviazione.
   
-Quanto descritto in precedenza vale per il contenuto esistente al momento dell'applicazione dei criteri di conservazione. Inoltre, tutto il nuovo contenuto creato o aggiunto al sito dopo che è stato incluso nei criteri verrà conservato dopo l'eliminazione. Il nuovo contenuto non viene copiato nella raccolta di archiviazione alla prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il controllo delle versioni, come descritto nella relativa sezione.
+Quanto descritto in precedenza vale per il contenuto esistente al momento dell'applicazione dei criteri di conservazione. Inoltre, tutto il nuovo contenuto creato o aggiunto alla raccolta siti dopo che è stato incluso nei criteri verrà conservato dopo l'eliminazione. Il nuovo contenuto non viene copiato nella raccolta di archiviazione alla prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il controllo delle versioni, come descritto nella sezione seguente.
   
-Si osservi che, se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetto a criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina gli eventuali file nella cartella soggetta ai criteri.
+Tenere presente che, se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetto a criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina tutti i file presenti nella cartella soggetta ai criteri. Tenere presente anche che la raccolta di archiviazione viene creata solo quando è necessario creare il primo elemento nella raccolta e non quando si creano i criteri di conservazione. Per testare i criteri, è quindi necessario modificare o eliminare un documento in un sito soggetto ai criteri e quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
   
 ![Diagramma del flusso di conservazione in SharePoint e OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
   
@@ -108,11 +108,11 @@ Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a
     
 2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione, lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
     
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Funzionamento dei criteri di conservazione con le versioni del documento in un sito
+## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Funzionamento dei criteri di conservazione con le versioni del documento in una raccolta siti
 
 Il controllo delle versioni è una funzionalità di tutte le raccolte documenti in SharePoint Online e OneDrive for Business. Per impostazione predefinita, il controllo delle versioni conserva almeno cinquecento versioni principali, sebbene sia possibile aumentare questo limite. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-I criteri di conservazione conservano tutte le versioni di un documento in un sito di SharePoint o in un account OneDrive. Ogni volta che un documento soggetto a criteri di conservazione viene modificato o eliminato, una versione viene copiata nella raccolta di archiviazione. Ogni versione di un documento nella raccolta di archiviazione esiste come elemento separato con il proprio periodo di conservazione:
+I criteri di conservazione consentono di conservare tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Ogni volta che un documento soggetto a criteri di conservazione viene modificato o eliminato, una versione viene copiata nella raccolta di archiviazione. Ogni versione di un documento nella raccolta di archiviazione esiste come elemento separato con il proprio periodo di conservazione:
   
 - Se i criteri di conservazione si basano sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale. Il documento originale e le sue versioni scadono tutti allo stesso tempo.
     
@@ -122,7 +122,7 @@ I criteri di conservazione conservano tutte le versioni di un documento in un si
 
 Grazie ai criteri di conservazione è possibile conservare il contenuto per un periodo di tempo indefinito o per un numero specifico di giorni, mesi o anni. Il calcolo relativo al periodo di conservazione del contenuto è basato sulla data di modifica del contenuto e non sulla data di applicazione dei criteri di conservazione. È possibile scegliere se calcolare questo periodo a partire dalla creazione del contenuto o, per OneDrive e SharePoint, dalla data dell'ultima modifica.
   
-Se, ad esempio, si desidera conservare il contenuto di un sito per sette anni dall'ultima modifica e un documento presente in questo sito non è stato modificato per sei anni, il documento verrà conservato solo per un altro anno, se non viene modificato. Se il documento viene nuovamente modificato, il periodo di conservazione verrà ricalcolato in base alla nuova data di modifica e il documento verrà conservato per altri sette anni.
+Se, ad esempio, si vuole conservare il contenuto di una raccolta siti per sette anni dall'ultima modifica e un documento presente in questa raccolta siti non è stato modificato per sei anni, il documento verrà conservato solo per un altro anno, se non viene modificato. Se il documento viene nuovamente modificato, il periodo di conservazione verrà ricalcolato in base alla nuova data di modifica e il documento verrà conservato per altri sette anni.
   
 Analogamente, se si desidera conservare il contenuto di una cassetta postale per sette anni e un messaggio è stato inviato sei anni fa, il messaggio verrà conservato solo per un altro anno. Per il contenuto di Exchange, il periodo si basa sempre sulla data di ricezione o di invio, che corrispondono. La conservazione del contenuto in base all'ultima modifica si applica solo al contenuto del sito di OneDrive e SharePoint.
   
@@ -140,7 +140,7 @@ Se i criteri di conservazione eliminano il contenuto, è importante tenere prese
   
 Ad esempio, si supponga di creare criteri di conservazione che eliminano il contenuto dopo tre anni e quindi di assegnarli a tutti gli account di OneDrive, che includono grandi quantità di contenuti creati quattro o cinque anni fa. In questo caso, molti contenuti verranno eliminati subito dopo la prima assegnazione dei criteri di conservazione. Per questo motivo, **i criteri di conservazione che eliminano il contenuto possono avere un impatto notevole**. 
   
-Prima di assegnare criteri di conservazione a un sito per la prima volta, è consigliabile considerare il tempo trascorso dalla creazione del contenuto esistente e l'impatto dei criteri sul contenuto. È anche opportuno comunicare l'introduzione dei nuovi criteri agli utenti prima di assegnarli, in modo che possano valutarne l'impatto. Questo avviso viene visualizzato quando si esaminano le impostazioni per i criteri di conservazione prima di crearli.
+Prima di assegnare criteri di conservazione a una raccolta siti per la prima volta, è quindi consigliabile considerare il tempo trascorso dalla creazione del contenuto esistente e l'impatto dei criteri sul contenuto. È anche opportuno comunicare l'introduzione dei nuovi criteri agli utenti prima di assegnarli, in modo che possano valutarne l'impatto. Questo avviso viene visualizzato quando si esaminano le impostazioni per i criteri di conservazione prima di crearli.
   
 ![Avviso riguardante l'eliminazione del contenuto](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -182,7 +182,7 @@ Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la
   
 - Posta elettronica di Exchange
     
-- Siti di SharePoint
+- Raccolte siti di SharePoint
     
 - Account di OneDrive
     
@@ -212,7 +212,7 @@ Come per i criteri a livello di organizzazione, un criterio applicabile a una qu
   
 Si noti però che sono previsti i limiti seguenti per i criteri di conservazione che includono o escludono più di 1.000 utenti specifici:
   
-- I criteri di conservazione di questo tipo non possono contenere più di 1.000 cassette postali e 100 siti.
+- I criteri di conservazione di questo tipo non possono contenere più di 1.000 cassette postali e 100 raccolte siti.
     
 - Un tenant non può contenere più di 10.000 criteri di conservazione.
     
