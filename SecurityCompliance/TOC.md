@@ -270,9 +270,8 @@
 
 ### [Uso delle comunicazioni](compliance20/managing-custodian-communications.md)
 #### [Creare una notifica di blocco](compliance20/create-hold-notification.md)
-#### [Uso dell'editor delle comunicazioni](compliance20/using-communications-editor.md)
+#### [Usare l'editor delle comunicazioni](compliance20/using-communications-editor.md)
 #### [Gestire le notifiche di blocco](compliance20/manage-hold-notification.md)
-#### [Modificare una notifica di blocco](compliance20/edit-hold-notification.md)
 #### [Confermare la ricezione di una notifica di blocco](compliance20/acknowledge-hold-notification.md)
 
 ### [Gestire i blocchi](compliance20/managing-holds.md)
