@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Utilizzare il centro di conformità e sicurezza di Office 365 per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: "Utilizzare la protezione di Office 365 & centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118142"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735468"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo nel centro conformità protezione di Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo in & la protezione di Office 365 centro conformità
 
 Sai dove trovare se un utente di visualizzata un documento specifico o eliminato un elemento dalla cassetta postale? Se, utilizzare la protezione di Office 365 &amp; centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. Perché un controllo unificato accedere? Dal momento che è possibile cercare i tipi di attività di amministrazione e utente in Office 365 seguenti:
   
@@ -40,7 +40,7 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
     
 - Attività di amministratore e utente oscillazione
     
-- attività di eDiscovery nel centro conformità protezione di Office 365
+- attività di eDiscovery in & la protezione di Office 365 centro conformità
     
 - Attività di amministrazione e utente in Power BI
     
@@ -55,7 +55,7 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 - Attività di amministratore e utente Stream Microsoft
     
    
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Office 365 Registro di controllo.
   
@@ -126,7 +126,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Off
 - Registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per eseguire la ricerca per le attività di Power BI nel Registro di controllo di Office 365, è necessario attivare il controllo nel portale di amministrazione di Power BI. Per ulteriori informazioni, vedere la sezione "I registri di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
-## <a name="search-the-audit-log"></a>Cercare i log di controllo
+## <a name="search-the-audit-log"></a>Eseguire ricerche nel log di controllo
 
 Di seguito è il processo per la ricerca nel Registro di controllo in Office 365.
   
@@ -172,6 +172,9 @@ Di seguito è il processo per la ricerca nel Registro di controllo in Office 365
     d. **File, cartelle o del sito** digitare alcuni o tutti un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. 
     
     Lasciare vuoto questo per restituire le voci per tutti i file e cartelle all'interno dell'organizzazione.
+    
+    > [!TIP]
+    > Se si sta cercando tutte le attività relative a un **sito**, aggiungere il carattere jolly asterisco (\*) dopo l'URL per restituire tutte le voci per tale sito. ad esempio, **"https://contoso-my.sharepoint.com/personal/*"**.
     
 5. Fare clic su **ricerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
     
@@ -408,7 +411,8 @@ Nella tabella seguente sono elencati gli eventi risultanti da attività di ammin
 |Aggiunta di agenti utente di esenzione  <br/> |ExemptUserAgentSet
   <br/> |Un amministratore globale o SharePoint consente di aggiungere un agente utente all'elenco degli agenti utente di esenzione nell'interfaccia di amministrazione di SharePoint.  <br/> |
 |Amministratori di raccolte siti sono stati aggiunti  <br/> |SiteCollectionAdminAdded
-  <br/> |Amministratore della raccolta siti o proprietario consente di aggiungere una persona come amministratore della raccolta siti per un sito. Gli amministratori delle raccolte siti dispongono delle autorizzazioni controllo completo per la raccolta siti e tutti i siti secondari.  <br/> |
+  <br/> |Amministratore della raccolta siti o proprietario consente di aggiungere una persona come amministratore della raccolta siti per un sito. Gli amministratori delle raccolte siti dispongono delle autorizzazioni controllo completo per la raccolta siti e tutti i siti secondari. Questa attività viene registrata anche quando un amministratore consente di se stessi accedere a un account utente in OneDrive (modificando i profili utente nell'interfaccia di amministrazione di SharePoint o [mediante l'interfaccia di amministrazione di Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).<br/> |
+|(nessuno)  <br/> |SiteCollectionAdminRemoved <br/> |Amministratore della raccolta siti o proprietario consente di rimuovere un utente come amministratore della raccolta siti per un sito. Questa attività viene registrata anche quando un amministratore consente di rimuovere se stessi dall'elenco degli amministratori della raccolta siti per un account utente in OneDrive (modificando i profili utente nell'interfaccia di amministrazione di SharePoint).  Si noti che per restituire i risultati di ricerca di log di controllo questa attività, è necessario per tutte le attività di ricerca. <br/> |
 |Sono stati aggiunti utente o gruppo al gruppo di SharePoint  <br/> |AddedToGroup  <br/> |Utente aggiunto un membro o guest a un gruppo di SharePoint. Potrebbe essere sono stati un'azione intenzionale o il risultato di un'altra attività, ad esempio un evento di condivisione.  <br/> |
 |Per creare gruppi di utenti è consentito  <br/> |AllowGroupCreationSet
   <br/> |Amministratore del sito o proprietario consente di aggiungere un livello di autorizzazione per un sito che consente di assegnata l'autorizzazione per creare un gruppo per il sito.  <br/> |
@@ -441,7 +445,7 @@ Nella tabella seguente sono elencati gli eventi risultanti da attività di ammin
 |Richieste di accesso modificata l'impostazione  <br/> |WebRequestAccessModified  <br/> |Le impostazioni di richieste di accesso sono state modificate in un sito.  <br/> |
 |Modifica i membri possono Condividi impostazione  <br/> |WebMembersCanShareModified  <br/> |L'impostazione di **Membri possono condivisione** è stato modificato in un sito.  <br/> |
 |Autorizzazioni sito modificato  <br/> |SitePermissionsModified
-  <br/> |Amministratore del sito o proprietario (o account di sistema) viene modificato il livello di autorizzazione assegnati a un gruppo in un sito. Questa attività viene registrata anche se tutte le autorizzazioni vengono rimossi da un gruppo.<br/> > [!NOTE]> Questa operazione è diventato obsoleto in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività relative alla autorizzazione come **amministratore della raccolta siti è stata aggiunta**, **sono stati aggiunti utente o gruppo al gruppo di SharePoint**, **consentito all'utente di creare gruppi**, **gruppo creato**e **Deleted gruppo di.**         |
+  <br/> |Amministratore del sito o proprietario (o account di sistema) viene modificato il livello di autorizzazione assegnati a un gruppo in un sito. Questa attività viene registrata anche se tutte le autorizzazioni vengono rimossi da un gruppo.<br/> > [!NOTE]gt _ questa operazione è diventato obsoleto in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività relative alla autorizzazione come **amministratore della raccolta siti è stata aggiunta**, **sono stati aggiunti utente o gruppo al gruppo di SharePoint**, **consentito all'utente di creare gruppi**, **gruppo creato**e **Deleted gruppo di.**         |
 |Rimuovere l'utente o gruppo dal gruppo di SharePoint  <br/> |RemovedFromGroup  <br/> |Utente rimosso un membro o guest da un gruppo di SharePoint. Potrebbe essere sono stati un'azione intenzionale o il risultato di un'altra attività, ad esempio un evento di annullamento della condivisione.  <br/> |
 |Sito rinominato  <br/> |SiteRenamed
   <br/> |Amministratore del sito o proprietario Rinomina un sito  <br/> |
@@ -648,7 +652,7 @@ Nella tabella seguente sono elencati l'utente e Registro di controllo attività 
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-È possibile cercare il Registro di controllo per le attività in Microsoft Flow. Queste attività includono creazione, modifica e l'eliminazione di flussi e modifica delle autorizzazioni per il flusso. Per informazioni sulle impostazioni di controllo per le attività di flusso, vedere il blog [Flusso Microsoft controllare gli eventi ora disponibili nel centro conformità e sicurezza di Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+È possibile cercare il Registro di controllo per le attività in Microsoft Flow. Queste attività includono creazione, modifica e l'eliminazione di flussi e modifica delle autorizzazioni per il flusso. Per informazioni sulle impostazioni di controllo per le attività di flusso, vedere il blog [Flusso Microsoft controllare gli eventi ora disponibili in Office 365 Security & centro conformità](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
@@ -706,7 +710,7 @@ Si noti inoltre che la durata del periodo di conservazione per i record di contr
 
 Sì. L'API di Office 365 Gestione attività consente di recuperare i registri di controllo a livello di programmazione.  Per iniziare, vedere [Introduzione a Office 365 Management API](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Esistono altri modi per ottenere il controllo registri diverso da suing la protezione di Office 365 & centro conformità o l'API attività di gestione di Office 365?**
+**Esistono altri modi per ottenere il controllo registri oltre a utilizzare Centro protezione di Office 365 & conformità o l'API attività di gestione di Office 365?**
 
 No. Queste sono solo due modi per ottenere dati dal servizio controllo di Office 365. 
 
