@@ -3,7 +3,7 @@ title: Assegnare le autorizzazioni di eDiscovery in Office 365 Security &amp; ce
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire attività correlate alla eDiscovery utilizzando la sicurezza &amp; centro conformità.
-ms.openlocfilehash: 96434655dbb7bc9145406ccb6e2c70d36c448928
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 95f0ed171c37ec84ca8bb8f00e69ab0318cd31cd
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530690"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741159"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Assegnare le autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità
 
@@ -27,22 +27,22 @@ Se si desidera che gli utenti utilizzino uno qualsiasi degli strumenti di eDisco
   
 Il gruppo di ruoli correlati eDiscovery principale in sicurezza &amp; centro conformità viene chiamato **eDiscovery Manager**. Esistono due sottogruppi all'interno di questo gruppo di ruoli. 
   
-- **eDiscovery Manager** - una ricerca eDiscovery Manager possibile utilizzare lo strumento di ricerca di contenuto per la protezione &amp; centro conformità di cercare i percorsi di contenuti nell'organizzazione ed eseguire varie operazioni correlati alla ricerca, ad esempio preview ed esportare ricerca risultati. Membri possono inoltre creare e gestire casi di eDiscovery, aggiungere e rimuovere membri a un caso, creazione di esenzioni maiuscole ed eseguire ricerche del contenuto associato a un caso. Una ricerca eDiscovery Manager possono accedere solo ai e gestire le modalità di creazione. Non possono accedere o la gestione dei casi per creare altri responsabili di eDiscovery. 
+- **eDiscovery Manager** - una ricerca eDiscovery Manager possibile utilizzare lo strumento di ricerca di contenuto per la protezione &amp; centro conformità di cercare i percorsi di contenuti nell'organizzazione ed eseguire varie operazioni correlati alla ricerca, ad esempio preview ed esportare ricerca risultati. Membri possono inoltre creare e gestire casi di eDiscovery, aggiungere e rimuovere membri a un caso, creazione di esenzioni maiuscole ed eseguire ricerche del contenuto associato a un caso e accedere ai dati casi di eDiscovery avanzate di Office 365.  Una ricerca eDiscovery Manager possono accedere solo ai e gestire le modalità di creazione. Non possono accedere o gestione dei casi dagli altri responsabili di eDiscovery. 
     
 - **eDiscovery amministratori** - un'amministratore di eDiscovery è un membro del gruppo di ruoli di gestione di eDiscovery e può eseguire le stesse ricerca contenuto sociale correlate alla gestione attività e che può eseguire una ricerca eDiscovery Manager. Inoltre, un'amministratore di eDiscovery può: 
     
   - Accedere a tutti i casi elencate nella pagina **casi di eDiscovery** in sicurezza &amp; centro conformità. 
+
+  - Accedere ai dati casi di eDiscovery avanzate per qualsiasi caso nell'organizzazione.
     
   - Gestire i casi di eDiscovery dopo essersi aggiunto come membro del caso.
-    
-  - Eseguire attività amministrative di eDiscovery avanzate, ad esempio configurazione degli utenti, creare casi e importazione dei dati. Perché la persona che un'amministratore per la protezione di eDiscovery &amp; centro conformità viene aggiunto automaticamente come un amministratore di eDiscovery avanzate.
-    
-  > [!NOTE]
-    > Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
   
-    Per motivi per cui si decide eDiscovery amministratori dell'organizzazione, vedere la sezione [informazioni](#more-information) . 
-    
-## <a name="before-you-begin"></a>Informazioni preliminari
+  Per motivi per cui si decide eDiscovery amministratori dell'organizzazione, vedere la sezione [informazioni](#more-information) . 
+
+> [!NOTE]
+> Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5.  
+  
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnato il ruolo di gestione dei ruoli) per assegnare le autorizzazioni di eDiscovery in sicurezza &amp; centro conformità.
     
@@ -50,9 +50,9 @@ Il gruppo di ruoli correlati eDiscovery principale in sicurezza &amp; centro con
     
 ## <a name="assign-ediscovery-permissions-in-the-security-amp-compliance-center"></a>Assegnare le autorizzazioni di eDiscovery in sicurezza &amp; centro conformità
 
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro della sicurezza &amp; centro conformità, fare clic su **autorizzazioni**e quindi la casella di controllo accanto a **eDiscovery Manager**.
     
@@ -65,23 +65,74 @@ Il gruppo di ruoli correlati eDiscovery principale in sicurezza &amp; centro con
 > [!NOTE]
 > È inoltre possibile utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** per effettuare una ricerca eDiscovery amministratore di un utente. Tuttavia, l'utente deve essere assegnato il ruolo di gestione Case prima di poter utilizzare questo cmdlet in modo da renderli un'amministratore di eDiscovery. Per ulteriori informazioni, vedere [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-Nella pagina **autorizzazioni** di sicurezza &amp; centro conformità, è inoltre possibile assegnare agli utenti le autorizzazioni relative a eDiscovery, aggiungendoli a gruppi di ruoli amministratore di conformità, la gestione dell'organizzazione e revisore. Per un elenco dei ruoli correlati eDiscovery assegnate a ognuno di questi gruppi di ruoli, vedere la sezione [informazioni](#more-information) . 
+Nella pagina **autorizzazioni** di sicurezza &amp; centro conformità, è inoltre possibile assegnare agli utenti le autorizzazioni relative a eDiscovery, aggiungendoli a gruppi di ruoli amministratore di conformità, la gestione dell'organizzazione e revisore. Per una descrizione dei ruoli RBAC correlati eDiscovery assegnati a ognuno di questi gruppi di ruoli, vedere la sezione [ruoli RBAC relative a eDiscovery](#rbac-roles-related-to-ediscovery) . 
+
+## <a name="rbac-roles-related-to-ediscovery"></a>Ruoli RBAC relativi a eDiscovery
+
+Nella tabella seguente sono elencati i ruoli RBAC relative a eDiscovery in & la sicurezza centro conformità e indica i gruppi di ruoli incorporati che ogni ruolo viene assegnato per impostazione predefinita. 
+    
+|**Ruolo**|**Amministratore di conformità**|**Amministratore gestione & eDiscovery**|**Gestione organizzazione**|**Reviewer**|
+|:-----|:-----:|:-----:|:-----:|:-----:|
+|Gestione dei casi <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Ricerca di conformità <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Esportazione <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Archiviazione <br/>  |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Anteprima <br/>  | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Revisione  <br/>  | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Decrittografia RMS <br/>  ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Ricerca ed eliminazione <br/> | <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+||||
   
+Nelle sezioni seguenti vengono illustrati i ruoli RBAC correlati eDiscovery elencati nella tabella precedente.
+
+### <a name="case-management"></a>Gestione dei casi
+
+Questo ruolo consente agli utenti di creare, modificare, eliminare e controllare l'accesso ai casi di eDiscovery in & la sicurezza centro conformità. Per ulteriori informazioni, vedere [gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](manage-ediscovery-cases.md). Come indicato in precedenza, un utente deve essere assegnato il ruolo di gestione Case prima di poter utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** in modo da renderli un'amministratore di eDiscovery. 
+
+### <a name="compliance-search"></a>Ricerca di conformità
+
+Questo ruolo consente agli utenti di eseguire lo strumento di ricerca del contenuto in & la sicurezza centro conformità per la ricerca di cassette postali e cartelle pubbliche, siti di SharePoint Online, OneDrive per i siti di Business Skype per le conversazioni, gruppi di Office 365 e Teams Microsoft Business. Questo ruolo consente di ottenere una stima dei risultati della ricerca e creazione di report di esportazione, ma ruoli aggiuntivi necessari per avviare le azioni di ricerca del contenuto, ad esempio l'anteprima, esportazione o l'eliminazione dei risultati di ricerca.
+
+Si noti che gli utenti assegnati al ruolo di conformità ricerca ma non è installato il ruolo di anteprima possono visualizzare in anteprima i risultati della ricerca in cui è stata avviata l'azione preview da un utente che ha assegnato il ruolo di anteprima. L'utente senza il ruolo di anteprima è possibile visualizzare un'anteprima dei risultati per fino a due settimane dopo che l'azione iniziale preview è stato creato.
+
+Analogamente, gli utenti assegnati al ruolo di conformità ricerca ma non l'esportazione di ruolo può scaricare i risultati della ricerca in cui è stata avviata l'azione di esportazione da un utente che ha assegnato il ruolo di esportazione. L'utente senza il ruolo di esportazione può scaricare i risultati di ricerca di fino a due settimane dopo che è stato creato l'azione Esporta iniziale. Dopo che non saranno in grado di scaricare i risultati a meno che un utente con il ruolo di esportazione viene riavviato l'esportazione.
+
+Per ulteriori informazioni, vedere [Ricerca contenuto in Office 365](content-search.md). 
+
+### <a name="export"></a>Esportazione
+
+Il ruolo consente agli utenti di esportare i risultati di una ricerca di contenuto in un computer locale. Consente inoltre li preparare i risultati della ricerca per l'analisi di eDiscovery avanzate. 
+
+Per ulteriori informazioni sull'esportazione dei risultati della ricerca, vedere [esportazione risultati della ricerca da & la protezione di Office 365 centro conformità](export-search-results.md).
+
+### <a name="hold"></a>Archiviazione
+
+Questo ruolo consente agli utenti di inserire i contenuti delle cassette postali, le cartelle pubbliche, Skype per le conversazioni aziendali, siti e gruppi di Office 365 in attesa. Quando il contenuto è in attesa, i proprietari dei contenuti saranno ancora in grado di modificare o eliminare il contenuto originale, ma il contenuto verrà mantenuto finché non viene rimossa la conservazione o fino a quando scade la durata dell'attesa. 
+
+Per ulteriori informazioni sulle esenzioni, vedere:
+
+- [casi di eDiscovery in & la protezione di Office 365 centro conformità](ediscovery-cases.md) 
+- [Panoramica dei criteri di conservazione](retention-policies.md)
+
+### <a name="preview"></a>Anteprima
+
+Questo ruolo consente agli utenti di visualizzare un elenco di elementi che sono stati restituiti dalla ricerca di contenuto. Essi verranno inoltre in grado di aprire e visualizzare ogni elemento nell'elenco per visualizzarne il contenuto.
+
+### <a name="review"></a>Revisione 
+
+Questo ruolo consente agli utenti di accedere ai dati casi di eDiscovery avanzate di Office 365. Lo scopo principale di questo ruolo deve fornire agli utenti l'accesso a eDiscovery avanzate. Gli utenti assegnati al ruolo possono vedere e aprire l'elenco dei casi nella pagina di eDiscovery in & la sicurezza centro conformità che sono membri di. Dopo che l'utente accede a un caso di & la sicurezza centro conformità, è possibile fare clic su **passa a eDiscovery avanzate** per accedere e analisi dei dati casi di eDiscovery avanzate. Questo ruolo non consentirà all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto che è associato il caso o di eseguire altri ricerca contenuto o l'attività di gestione dei casi.
+
+### <a name="rms-decrypt"></a>Decrittografia RMS
+
+In questo ruolo consente agli utenti decrittografa crittografati RMS messaggi di posta elettronica durante l'esportazione dei risultati della ricerca o la preparazione dei risultati di ricerca per l'analisi di eDiscovery avanzate. Per ulteriori informazioni sulla decrittografia di risultati della ricerca durante l'esportazione, vedere [esportazione risultati della ricerca da & la protezione di Office 365 centro conformità](export-search-results.md).
+
+### <a name="search-and-purge"></a>Ricerca ed eliminazione
+
+Questo ruolo consente agli utenti di eseguire la rimozione di blocco di dati corrispondenti ai criteri di ricerca di contenuto. Per ulteriori informazioni, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione Office 365](search-for-and-delete-messages-in-your-organization.md). 
+
+
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- **Che cosa sono i ruoli relativi eDiscovery in sicurezza &amp; centro conformità?** Nella tabella seguente vengono descritti i ruoli relativi eDiscovery in sicurezza &amp; centro conformità, che indica i gruppi di ruoli incorporati che ogni ruolo viene assegnato a, per impostazione predefinita. 
-    
-|**Ruolo**|**Amministratore di conformità**|**eDiscovery Manager &amp; amministratore**|**Gestione organizzazione**|**Reviewer**|
-|:-----|:-----|:-----|:-----|:-----|
-|**Gestione dei casi** <br/> Consente agli utenti di creare, modificare, eliminare e controllare l'accesso ai casi di eDiscovery in sicurezza &amp; centro conformità. Per ulteriori informazioni, vedere [gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](manage-ediscovery-cases.md).<br/> Come indicato in precedenza, un utente deve essere assegnato il ruolo di gestione Case prima di poter utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** in modo da renderli un'amministratore di eDiscovery.  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Ricerca di conformità** <br/> Consente agli utenti di eseguire lo strumento di ricerca del contenuto per la protezione &amp; centro conformità per la ricerca di cassette postali e cartelle pubbliche, siti di SharePoint Online, Skype per le conversazioni, gruppi di Office 365 e Teams Microsoft Business, OneDrive per i siti. Questo ruolo consente di ottenere una stima dei risultati della ricerca e creazione di report di esportazione, ma ruoli aggiuntivi necessari per avviare le azioni di ricerca del contenuto, ad esempio l'anteprima, esportazione o l'eliminazione dei risultati di ricerca.<br/><br/>Si noti che gli utenti assegnati al ruolo di conformità ricerca ma non è installato il ruolo di anteprima possono visualizzare in anteprima i risultati della ricerca in cui è stata avviata l'azione preview da un utente che ha assegnato il ruolo di anteprima. L'utente senza il ruolo di anteprima è possibile visualizzare un'anteprima dei risultati per fino a due settimane dopo che l'azione iniziale preview è stato creato.<br/><br/> Analogamente, gli utenti assegnati al ruolo di conformità ricerca ma non l'esportazione di ruolo può scaricare i risultati della ricerca in cui è stata avviata l'azione di esportazione da un utente che ha assegnato il ruolo di esportazione. L'utente senza il ruolo di esportazione può scaricare i risultati di ricerca di fino a due settimane dopo che è stato creato l'azione Esporta iniziale. Dopo che non saranno in grado di scaricare i risultati a meno che un utente con il ruolo di esportazione viene riavviato l'esportazione.<br/><br/>Per ulteriori informazioni, vedere [Ricerca contenuto in Office 365](content-search.md).  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Esportazione** <br/> Consente di esportare i risultati di una ricerca di contenuto in un computer locale. Consente inoltre li preparare i risultati della ricerca per l'analisi di eDiscovery avanzate.<br/> Per ulteriori informazioni sull'esportazione dei risultati della ricerca, vedere [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md).  <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
-|**Archiviazione** <br/>  Consente agli utenti di inserire i contenuti delle cassette postali, le cartelle pubbliche, siti, Skype per le conversazioni di Business e i gruppi di Office 365 in attesa. Quando il contenuto è in attesa, i proprietari dei contenuti saranno ancora in grado di modificare o eliminare il contenuto originale, ma il contenuto verrà mantenuto finché non viene rimossa la conservazione o fino a quando scade la durata dell'attesa.<br/>  Per ulteriori informazioni sulle esenzioni, vedere:  <br/> [Gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](manage-ediscovery-cases.md) <br/> [Panoramica dei criteri di conservazione](retention-policies.md) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Anteprima** <br/> Consente agli utenti di visualizzare un elenco di elementi che sono stati restituiti dalla ricerca di contenuto. Essi verranno inoltre in grado di aprire e visualizzare ogni elemento nell'elenco per visualizzarne il contenuto.<br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
-|**Verifica** <br/> Consente agli utenti di visualizzare e aprire l'elenco dei casi nella pagina di eDiscovery in sicurezza &amp; centro conformità che sono membri di. Non possono eseguire altre attività di gestione dei casi.<br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Decrittografia RMS** <br/> Consente agli utenti di decrittografare i messaggi di posta elettronica crittografati con RMS quando esportazione dei risultati della ricerca o la preparazione dei risultati di ricerca per l'analisi di eDiscovery avanzate. Per ulteriori informazioni sulla decrittografia dei risultati di ricerca durante l'esportazione, vedere [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md).<br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |||
-|**Ricerca ed eliminazione** <br/> Consente agli utenti di eseguire la rimozione di blocco di dati corrispondenti ai criteri di ricerca di contenuto. Per ulteriori informazioni, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> | <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-   
 - **Informazioni sulla creazione di un'amministratore di eDiscovery?** Come precedentemente illustrato, una ricerca eDiscovery amministratore è membro del gruppo di ruoli gestione eDiscovery in grado di visualizzare e accedere a tutti i casi di eDiscovery nell'organizzazione. Questa possibilità di accedere a tutti i casi di eDiscovery ha due importanti scopi: 
     
   - Se una persona è l'unico membro di un caso eDiscovery lascia l'organizzazione, inclusi i membri del gruppo di ruoli Gestione organizzazione o un altro membro del gruppo di ruoli di gestione di eDiscovery, per accedere tale caso di eDiscovery poiché non sono membri di un caso. In questo caso, non potrebbe essere possibile in alcun modo per accedere ai dati nel caso. Ma dal momento che un'amministratore di eDiscovery può accedere a tutti i casi di eDiscovery nell'organizzazione, possano visualizzare il caso nella protezione &amp; centro conformità e aggiungere se stessi o un altro eDiscovery manager come membro del case.

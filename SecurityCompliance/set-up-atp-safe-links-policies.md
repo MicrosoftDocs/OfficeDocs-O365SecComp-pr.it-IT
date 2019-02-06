@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 714b3df825272ab182443b31e0b2cf90b64b71b7
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015058"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741089"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
 
-[Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md) , una funzionalità di [Protezione di Office 365 avanzate rischio](office-365-atp.md) degli (strumenti di analisi), consentono di proteggere l'organizzazione da dannosi collegamenti utilizzati in altri attacchi e phishing. Se si dispone di volte necessario [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md), è possibile impostare i criteri degli strumenti di analisi collegamenti attendibili per garantire che quando gli utenti fare clic su indirizzi web (URL), l'organizzazione è protetto. I criteri degli strumenti di analisi collegamenti attendibili possono essere configurati per analizzare gli URL nella posta elettronica ed nei documenti di Office.
+[Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md), una funzionalità di [Protezione di Office 365 avanzate rischio](office-365-atp.md) degli (strumenti di analisi), consentono di proteggere l'organizzazione da dannosi collegamenti utilizzati in altri attacchi e phishing. Se si dispone di volte necessario [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md), è possibile impostare i criteri degli strumenti di analisi collegamenti attendibili per garantire che quando gli utenti fare clic su indirizzi web (URL), l'organizzazione è protetto. I criteri degli strumenti di analisi collegamenti attendibili possono essere configurati per analizzare gli URL nella posta elettronica ed nei documenti di Office.
   
 [Nuove funzionalità vengono aggiunti continuamente a strumenti di analisi](office-365-atp.md#new-features-are-continually-being-added-to-atp). Con l'aggiunta di nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri degli strumenti di analisi provvisoria collegamenti esistenti.
 
@@ -33,13 +34,19 @@ ms.locfileid: "28015058"
     
 3. [Aggiungere o modificare i criteri per i destinatari di posta elettronica specifico](#add-a-policy-for-specific-email-recipients), inclusa [l'impostazione di personalizzata "non di riscrittura" URL elenco per i collegamenti sicuro degli strumenti di analisi](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. [Informazioni sulle opzioni dei criteri degli strumenti di analisi collegamenti sicuri](#learn-about-atp-safe-links-policy-options) (in questo articolo), incluse le impostazioni per le modifiche recenti
+4. [Informazioni sulle opzioni dei criteri degli strumenti di analisi collegamenti sicuri](#learn-about-atp-safe-links-policy-options) (in questo articolo), incluse le impostazioni per le modifiche recenti.
     
 ## <a name="step-1-review-the-prerequisites"></a>Passaggio 1: Verificare i prerequisiti
 
 - Verificare che l'organizzazione dispone di [Protezione di Office 365 avanzate rischio](office-365-atp.md).
     
-- Verificare di disporre delle autorizzazioni necessarie per definire o modificare i criteri degli strumenti di analisi. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+- Verificare di disporre delle autorizzazioni necessarie. Per definire o modificare i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito: <br>
+
+    |Ruolo  |Modalità assegnato  |
+    |---------|---------|
+    |Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
+    |Amministratore di protezione di Office 365 |Interfaccia di amministrazione ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 - Verificare che i client di Office sono configurati per utilizzare [L'autenticazione moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (sia per la protezione degli strumenti di analisi provvisoria collegamenti nei documenti di Office).
     
@@ -130,4 +137,6 @@ Una volta i criteri degli strumenti di analisi collegamenti sicuri, è possibile
 
 - [Visualizzare i report per la protezione rischio avanzate di Office 365](view-reports-for-atp.md)
 
-- [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md) 
+- [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md)
+
+Mantenersi in primo piano rispetto a nuove funzionalità di punta degli strumenti di analisi. visita il sito Web [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) e informazioni sulle [nuove funzionalità che vengono aggiunti degli strumenti di analisi](office-365-atp.md#new-features-are-continually-being-added-to-atp).

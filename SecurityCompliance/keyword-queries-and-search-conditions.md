@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulle proprietà di posta elettronica e file che è possibile cercare nelle cassette postali di Exchange Online e in SharePoint o OneDrive per i siti di Business utilizzando lo strumento di ricerca del contenuto in Office 365 Security &amp; centro conformità.  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328162"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741169"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query delle parole chiave e condizioni di ricerca per ricerca contenuto
 
@@ -206,8 +206,8 @@ Creare una condizione utilizzando le proprietà del documento durante la ricerca
 |:-----|:-----|
 |Autore  <br/> |Nel campo autore da documenti di Office, che rimane permanente se un documento viene copiato. Ad esempio, se un utente crea un documento e i messaggi di posta elettronica a una persona quindi carica in SharePoint, il documento ancora manterrà autore originale.  <br/> |
 |Titolo  <br/> |Il titolo del documento. La proprietà Title è metadati specificata in documenti di Office. È diverso dal nome di file del documento.  <br/> |
-|Created  <br/> |La data di creazione di un documento.  <br/> |
-|Ultima modifica  <br/> |La data dell'ultima modifica di un documento.  <br/> |
+|Creato  <br/> |La data di creazione di un documento.  <br/> |
+|Data ultima modifica  <br/> |La data dell'ultima modifica di un documento.  <br/> |
 |Tipo file  <br/> |L'estensione di file. ad esempio, docx, uno, pptx o xlsx. Questa è la stessa proprietà la proprietà site FileExtension.  <br/> |
   
 ### <a name="operators-used-with-conditions"></a>Operatori utilizzati con condizioni
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Durante la ricerca di una proprietà, utilizzare le virgolette doppie ("") se il valore è costituita da più parole. Ad esempio `subject:budget Q1` restituisce i messaggi che contengono **budget** nella riga dell'oggetto e che contengono **T1** in un punto qualsiasi del messaggio o in una delle proprietà dei messaggi. Utilizzo di `subject:"budget Q1"` restituisce tutti i messaggi che contengono **budget T1** qualsiasi posizione nella riga dell'oggetto. 
     
 - Per escludere il contenuto contrassegnato con un determinato valore della proprietà dai risultati della ricerca, inserire un segno meno (-) prima del nome della proprietà. Ad esempio `-from:"Sara Davis"` escluderà i messaggi inviati da Sara Davis.
-- È possibile esportare gli elementi in base al tipo di elemento. Ad esempio, per esportare Skype IM recived messaggi da un utente, utilizzare la sintassi 'Tipo: messaggistica Istantanea'. Per la ricerca query returen tutti i messaggi di messaggistica immediata. 
+
+- È possibile esportare gli elementi in base al tipo di messaggio. Ad esempio, per esportare Skype conversazioni e le chat di Microsoft Teams, utilizzare la sintassi `kind:im`. Per restituire solo i messaggi di posta elettronica, è necessario utilizzare `kind:email`. Per restituire le chat, riunioni e le chiamate all'interno di Microsoft Teams, utilizzare `kind:microsoftteams`.

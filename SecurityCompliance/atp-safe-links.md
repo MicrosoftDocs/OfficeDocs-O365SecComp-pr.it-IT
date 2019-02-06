@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 02/05/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,22 +20,25 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: bb9996f5761817fa80f0dd3dfd56e42c015bd751
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7e610d23534dcd4c9ea20608bab6fca536f877cb
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238498"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741109"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Panoramica di Office 365 Safe degli strumenti di analisi collegamenti
 
-Collegamenti sicuro degli strumenti di analisi Office 365 (degli strumenti di analisi collegamenti sicuro) (insieme a [Office 365 degli strumenti di analisi provvisoria allegati](atp-safe-attachments.md)) è un set di caratteristiche di sicurezza distribuito come parte di [Protezione di Office 365 avanzate minaccia](office-365-atp.md) per le organizzazioni aziendali. Collegamenti sicuro degli strumenti di analisi consentono di proteggere l'organizzazione fornendo il momento del clic verifica degli indirizzi web (URL) in [Office documenti](#how-atp-safe-links-works-with-office-documents)e [messaggi di posta elettronica](#how-atp-safe-links-works-with-email) . Protezione viene definita tramite i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) impostate dal team di protezione di Office 365. 
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+
+Collegamenti sicuro degli strumenti di analisi di Office 365 (parte di [Protezione avanzata di rischio](office-365-atp.md)) consentono di proteggere l'organizzazione fornendo il momento del clic verifica degli indirizzi web (URL) in [Office documenti](#how-atp-safe-links-works-with-office-documents)e [messaggi di posta elettronica](#how-atp-safe-links-works-with-email) . Protezione viene definita tramite i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) impostate dal team di protezione di Office 365. 
   
 Dopo aver installato i criteri degli strumenti di analisi collegamenti sicuro sul posto, gli amministratori globali di Office 365, security administrators e lettori sicurezza possono [visualizzare i report per la protezione avanzata di rischio](view-reports-for-atp.md). Le informazioni contenute in questi rapporti consentono al team di protezione eseguire ulteriori passaggi per proteggere l'organizzazione o problemi di protezione di ricerca.
 
-Come [vengono aggiunte nuove funzionalità per strumenti di analisi](office-365-atp.md#new-features-are-continually-being-added-to-atp), il team di protezione di Office 365 aggiungere o modificare i criteri dell'organizzazione degli strumenti di analisi collegamenti sicuri. Inoltre, è possibile notare miglioramenti, ad esempio le [pagine di avviso](atp-safe-links-warning-pages.md)appena rivisto e le modifiche.
+Come [vengono aggiunte nuove funzionalità per strumenti di analisi](office-365-atp.md#new-features-are-continually-being-added-to-atp), il team di protezione di Office 365 aggiungere o modificare i criteri dell'organizzazione degli strumenti di analisi collegamenti sicuri. Inoltre, è possibile notare miglioramenti, ad esempio il nostro appena rivisto [pagine di avviso](atp-safe-links-warning-pages.md) e collegamento nativo per il rendering in Outlook e le modifiche.
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Funzionamento degli strumenti di analisi collegamenti sicuro con URL nel messaggio di posta elettronica
 
@@ -85,9 +88,9 @@ In dettaglio, ecco funzionamento della protezione degli strumenti di analisi col
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Come ottenere protezione degli strumenti di analisi collegamenti sicuri
 
-Caratteristiche degli strumenti di analisi collegamenti sicuri fanno parte di [Protezione da minacce avanzate](office-365-atp.md), incluso in Office 365 Enterprise E5, Microsoft Business 365 e Microsoft 365 Enterprise. 
+Per prima cosa, verificare che la sottoscrizione include [Avanzate Threat Protection](office-365-atp.md). Degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 Education A5 e così via. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
   
-Le caratteristiche degli strumenti di analisi collegamenti attendibili sono attivi quando:
+Quindi, verificare che i criteri degli strumenti di analisi collegamenti attendibili sono definiti. Vedere [impostazione dei criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](set-up-atp-safe-links-policies.md). Caratteristiche degli strumenti di analisi collegamenti sicuri siano attive quando:
   
 - **Vengono impostati i criteri degli strumenti di analisi collegamenti sicuri** per la posta elettronica e per i documenti di Word, Excel, PowerPoint e Visio. Vedere [impostazione dei criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md).
 
@@ -95,13 +98,23 @@ Le caratteristiche degli strumenti di analisi collegamenti attendibili sono atti
     
 - **Gli utenti hanno effettuato l'accesso a Office 365** utilizzando il proprio account di lavoro o della scuola. Vedere [accesso a Office o Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).
     
-- **Che messaggio di posta elettronica dell'organizzazione è ospitata in Office 365**, non in un server locale. 
+- **Messaggio di posta elettronica dell'organizzazione è ospitata in Office 365**. 
+
+Per definire o modificare i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
+
+|Ruolo  |Modalità assegnato  |
+|---------|---------|
+|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
+|Amministratore di protezione di Office 365 |Interfaccia di amministrazione ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Come rendere protezione degli strumenti di analisi collegamenti provvisoria che è sul posto
 
-Un modo efficace per vedere modalità di utilizzo di protezione degli strumenti di analisi collegamenti sicuri per l'organizzazione è visualizzando i [report per la protezione avanzata di rischio](view-reports-for-atp.md). Inoltre, un amministratore globale o un amministratore di protezione, assicurarsi di esaminare i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md). Collegamenti sicuro degli strumenti di analisi criteri determinano se protezione si applica a collegamenti ipertestuali nei messaggi di posta elettronica solo o agli URL in anche i documenti di Office.
+Un amministratore globale o un amministratore di protezione, assicurarsi di esaminare i [criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md). Collegamenti sicuro degli strumenti di analisi criteri determinano se protezione si applica a collegamenti ipertestuali nei messaggi di posta elettronica solo o agli URL in anche i documenti di Office.
 
-## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Scenari di esempio cui protezione degli strumenti di analisi collegamenti sicuro potrebbe o potrebbe non essere sul posto
+Dopo aver criteri degli strumenti di analisi collegamenti sicuro, team di protezione dell'organizzazione possono visualizzare vedere come funziona protezione degli strumenti di analisi collegamenti sicuri per l'organizzazione è dalla [visualizzazione di report per la protezione avanzata di rischio](view-reports-for-atp.md). 
+
+## <a name="example-scenarios"></a>Scenari di esempio
   
 Nella tabella seguente vengono descritti alcuni scenari di esempio in protezione degli strumenti di analisi collegamenti attendibili potrebbero o potrebbe non essere presenti. (In tutti i casi, si presuppone che l'organizzazione dispone di Office 365 Enterprise E5.)
   

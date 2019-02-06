@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Quando si imposta i criteri di collegamenti sicuro degli strumenti di analisi, è possibile includere una riscrittura di non eseguire ' elenco degli URL per abilitare alcune persone all'interno dell'organizzazione visitare i siti che includono nell'elenco.
-ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: f97abdb0f4e20ed968b4f71761a60cda79658d18
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015048"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741069"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco personalizzato di URL rewrite di non eseguire tramite collegamenti attendibili di Office 365 degli strumenti di analisi
 
@@ -28,6 +29,14 @@ In questo articolo viene descritto come specificare un elenco di URL che esclusa
 ## <a name="set-up-a-do-not-rewrite-list"></a>Impostare un elenco "non di riscrittura"
 
 Protezione degli strumenti di analisi collegamenti sicuri utilizza più elenchi, inclusi nell'elenco degli URL bloccato dell'organizzazione e gli elenchi "non di riscrittura" per le eccezioni. Se si dispone delle autorizzazioni necessarie, è possibile impostare gli elenchi personalizzati "non di riscrittura". A tale scopo quando si aggiunge o modifica criteri sicuro collegamenti che si applicano a destinatari specifici dell'organizzazione. 
+
+Per modificare o definire i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
+
+|Ruolo  |Modalità assegnato  |
+|---------|---------|
+|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
+|Amministratore di protezione di Office 365 |Interfaccia di amministrazione ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
     
