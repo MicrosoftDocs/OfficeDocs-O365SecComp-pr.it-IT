@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741119"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755217"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 
@@ -41,9 +41,11 @@ Persone regolarmente inviano, ricevere e condividere allegati, ad esempio docume
     |Ruolo  |Modalità assegnato  |
     |---------|---------|
     |Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
-    |Amministratore di protezione di Office 365 |Interfaccia di amministrazione ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    Per ulteriori informazioni sui ruoli e autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+
 - [Informazioni sulle opzioni di criteri di allegati sicuri degli strumenti di analisi](#learn-about-atp-safe-attachments-policy-options) (in questo articolo). Alcune opzioni, ad esempio le opzioni di monitoraggio o sostituzione possono comportare un ritardo di posta elettronica secondario quando gli allegati vengono analizzati. Per evitare ritardi messaggio, è consigliabile utilizzare [Recapito dinamico e visualizzazione in anteprima](dynamic-delivery-and-previewing.md).
     
 - Consentire fino a 30 minuti per il criterio di nuovo o aggiornato da distribuire a tutti i centri dati di Office 365.

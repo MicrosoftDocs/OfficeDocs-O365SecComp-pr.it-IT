@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603526"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760078"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -69,12 +69,7 @@ Per semplificare l'installazione, creare gruppi per gli utenti che dovranno le c
 
 Con i criteri di supervisione, è possibile scegliere di controllare i messaggi in uno o più delle seguenti piattaforme di comunicazione:
 
-- **Messaggio di posta elettronica di exchange:** Le cassette postali ospitate in Exchange Online come parte della sottoscrizione a Office 365 sono tutte le possibilità di supervisione messaggio. Messaggi di posta elettronica e allegati corrispondenti alle condizioni di criteri di supervisione sono immediatamente disponibili per il monitoraggio e nei report di supervisione. Tipi di allegati supportati sono:
-
-    - Microsoft Word (docx)
-    - Microsoft Excel (xlsx)
-    - Microsoft PowerPoint (. pptx)
-
+- **Messaggio di posta elettronica di exchange:** Le cassette postali ospitate in Exchange Online come parte della sottoscrizione a Office 365 sono tutte le possibilità di supervisione messaggio. Messaggi di posta elettronica e allegati corrispondenti alle condizioni di criteri di supervisione sono immediatamente disponibili per il monitoraggio e nei report di supervisione. Tipi di allegati supportati per la supervisione sono gli stessi [tipi di file supportati per i controlli contenuti regola Exchange mail flow](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 - **Team Microsoft:** Comunicazioni di chat e gli allegati associati in canali Teams Microsoft pubblici e privati e singole chat possono essere controllati. Chat team corrispondenti alle condizioni di criteri di supervisione vengono elaborate ogni 24 ore e quindi sono disponibili per il monitoraggio e nei report di supervisione.
 - **Terze parti:** Se hai importato i dati nelle cassette postali di Office 365 nella propria organizzazione, è possibile controllare le comunicazioni da terze parti (come da Facebook o raccolta). [Informazioni su come importare i dati 3rd parti in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610583"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760767"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -36,7 +36,7 @@ La possibilità di applicare automaticamente etichette di riservatezza al conten
 
 ![Opzioni di assegnazione automatica delle etichette di riservatezza](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Applicare automaticamente un'etichetta di riservatezza in base alle condizioni
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Applicare automaticamente un'etichetta di riservatezza in base alle condizioni
 
 Una delle funzionalità più efficaci delle etichette di riservatezza è la possibilità di applicarle automaticamente al contenuto che soddisfa determinate condizioni. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di riservatezza, perché Office 365 lo farà al loro posto.
    
@@ -52,7 +52,7 @@ Quando viene applicata automaticamente un'etichetta di riservatezza, l'utente ri
 
 ![Notifica di applicazione automatica di un'etichetta a un documento](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
 
 Se si preferisce, invece di applicare automaticamente un'etichetta di riservatezza al contenuto, si può consigliare agli utenti di applicarla. Questa opzione offre agli utenti la flessibilità di accettare la classificazione e l'eventuale protezione associata o di chiudere il suggerimento, se l'etichetta non è adatta al documento o al messaggio di posta elettronica.
 
@@ -64,7 +64,7 @@ Ecco un esempio di un avviso quando si configura una condizione per applicare un
 
 ![Richiesta di applicazione di un'etichetta consigliata](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>Come vengono applicate le etichette automatiche o consigliate
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>Come vengono applicate le etichette automatiche o consigliate
 
 - L'assegnazione automatica delle etichette si applica a Word, Excel e PowerPoint al salvataggio dei documenti e in Outlook all'invio di messaggi di posta elettronica. Queste condizioni rilevano le informazioni riservate nel corpo del testo nei documenti e nei messaggi di posta elettronica e nelle intestazioni e piè di pagina, ma non nella riga dell'oggetto o negli allegati di posta elettronica.
 
@@ -74,6 +74,6 @@ Ecco un esempio di un avviso quando si configura una condizione per applicare un
 
 - Non è possibile usare la classificazione consigliata per i documenti etichettati in precedenza con una classificazione superiore. In questo caso, quando il contenuto è già stato etichettato con una classificazione superiore, l'utente non visualizzerà l'avviso con il consiglio e il suggerimento per i criteri.
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Modalità di valutazione di più condizioni quando si applicano a più etichette
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Modalità di valutazione di più condizioni quando si applicano a più etichette
 
 Le etichette sono ordinate per la valutazione in base alla posizione specificata nei criteri: la prima etichetta ha la posizione più bassa (meno riservata) mentre l'ultima etichetta ha la posizione più alta (più riservata). Per altre informazioni sulla priorità, vedere [Priorità dell’etichetta (l’ordine è importante)](sensitivity-labels.md#label-priority-order-matters).

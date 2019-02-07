@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere l'attacco concede il consenso dell'utente in Office 365.
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531456"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755237"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -34,7 +34,7 @@ In un consenso illecito concedere attacco, che l'autore dell'attacco creata un'a
 È necessario eseguire la ricerca di Office 365 di **Registro di controllo** per trovare segni, denominati anche gli indicatori di compromesso (IOC) di questo tipo di attacco. Per le organizzazioni con una base di utenti di grandi dimensioni e numero di applicazioni registrate Azure, la procedura consigliata è per esaminare la concede il consenso organizzazioni su base settimanale.
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per la ricerca di segni di questo tipo di attacco
 1. Aprire il **centro conformità e sicurezza** in Office 365 tenant.
-2. Passare al nodo **ricerca & indagini** e selezionare ricerca **Registro di controllo** .
+2. Passare al nodo **indagini & ricerca** e selezionare ricerca **Registro di controllo** .
 3. Creare una ricerca (tutte le attività e tutti gli utenti) e filtrare i risultati il consenso all'applicazione e aggiungere OAuth2PermissionGrant.
 4. Esaminare le proprietà estese per verificare se IsAdminContent è impostata su True.
 
@@ -55,7 +55,7 @@ Se si dispone di uno o più istanze del IOCs elencati sopra, è necessario esegu
 È possibile cercare le applicazioni in cui un singolo utente è concesse le autorizzazioni tramite il [Portale di Azure Active Directory](https://portal.azure.com/). 
 1. Accedere al portale di Azure con diritti amministrativi.
 2. Selezionare blade Azure Active Directory.
-3. Selezionare **gli utenti**.
+3. Selezionare **Utenti**.
 4. Selezionare l'utente che si desidera controllare.
 5. Selezionare **le applicazioni**.
 
@@ -65,7 +65,7 @@ Verranno visualizzate le applicazioni che vengono assegnate all'utente e quali a
 Chiedi agli utenti di accedere a https://myapps.microsoft.com e controllare i propri accesso alle applicazioni disponibili. Si deve essere in grado di visualizzare tutte le app con access, visualizzare i dettagli (incluso l'ambito di accesso) e in grado di revocare i privilegi per le applicazioni potenzialmente dannoso o illecite.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Passaggi per eseguire questa operazione con PowerShell
-Il modo più semplice per verificare l'attacco illecito Grant consenso consiste nell'eseguire [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che fornirà i dettagli di tutte le concede il consenso OAuth e le autorizzazioni di app per tutti gli utenti nella tenancy in un unico file con estensione csv. 
+Il modo più semplice per verificare l'attacco illecito Grant consenso consiste nell'eseguire [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che fornirà i dettagli di tutte le concede il consenso OAuth e App OAuth per tutti gli utenti nella tenancy in un unico file con estensione csv. 
 
 #### <a name="pre-requisites"></a>Prerequisiti
 - Libreria di PowerShell di Azure Active Directory installata.
@@ -79,7 +79,7 @@ Il modo più semplice per verificare l'attacco illecito Grant consenso consiste 
 2. Scaricare o copiare lo script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella da cui verrà eseguito il scruipt.  Questo valore sarà la stessa cartella in cui verrà scritto il file di output "permissions.csv".
 3. Aprire un'istanza di PowerShell come amministratore e aprire la cartella che è stato salvato lo script.
 4. Connetti alla directory utilizzando il cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) .
-5. Eseguire la riga di comando PowerShell come indicato di seguito:`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. Eseguire la riga di comando PowerShell come indicato di seguito:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 Lo script produce un file denominato Permissions.csv. Eseguire la procedura seguente per individuare la concessione di autorizzazioni illecito applicazione: 
 1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti gli utenti nella tenancy. Le applicazioni di Office 365 native necessitano questa autorizzazione per il corretto funzionamento. Tutte le applicazioni di Microsoft non dispongono di questa autorizzazione è consigliabile leggere con attenzione.

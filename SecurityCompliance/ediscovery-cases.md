@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare la protezione di Office 365 &amp; centro conformità per creare e gestire casi di eDiscovery nell'organizzazione. È possibile assegnare i membri per il caso, inserire i contenuti posizioni in attesa, eseguire la ricerca del contenuto associato il caso e l'esportazione risultati di ricerca. È inoltre possibile preparare i dati maiuscole per un'ulteriore analisi di eDiscovery avanzate.
-ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
-ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
+ms.openlocfilehash: d03ed0a16b74f1b073c2528fa2160ed182840ede
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27299362"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755247"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casi di eDiscovery in Office 365 Security &amp; centro conformità
 
@@ -55,7 +55,7 @@ Utilizzare il flusso di lavoro seguente per configurare e utilizzare casi di eDi
 
 Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscovery relative agli utenti in modo che è possibile aggiungerli a un caso eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnato il ruolo di gestione dei ruoli) in Office 365 Security &amp; centro conformità per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati eDiscovery in sicurezza &amp; centro conformità. 
   
-- **Revisore** - questo gruppo di ruoli disponga delle autorizzazioni più restrittive eDiscovery correlati. Lo scopo principale di questo gruppo consiste nel consentire ai membri di visualizzazione e l'accesso caso i dati in Office 365 avanzate eDiscovery. Membri di questo gruppo possono vedersi e aprire l'elenco dei casi nella pagina di **eDiscovery** in sicurezza solo &amp; centro conformità che sono membri di. Dopo che l'utente accede a un caso nel centro conformità protezione, possibile fare clic su **passa a eDiscovery avanzate** per accedere e analisi dei dati casi di eDiscovery avanzate. Non possono creare casi, aggiungere membri a un caso, creazione di esenzioni, creare ricerche, visualizzare in anteprima i risultati della ricerca, esportare i risultati della ricerca o preparare i risultati di eDiscovery avanzate. 
+- **Revisore** - questo gruppo di ruoli disponga delle autorizzazioni più restrittive eDiscovery correlati. Lo scopo principale di questo gruppo consiste nel consentire ai membri di visualizzazione e l'accesso caso i dati in Office 365 avanzate eDiscovery. Membri di questo gruppo possono vedersi e aprire l'elenco dei casi nella pagina di **eDiscovery** in sicurezza solo &amp; centro conformità che sono membri di. Dopo che l'utente accede a un caso di & la sicurezza centro conformità, è possibile fare clic su **passa a eDiscovery avanzate** per accedere e analisi dei dati casi di eDiscovery avanzate. Non possono creare casi, aggiungere membri a un caso, creazione di esenzioni, creare ricerche, visualizzare in anteprima i risultati della ricerca, esportare i risultati della ricerca o preparare i risultati di eDiscovery avanzate. 
     
 - **eDiscovery Manager** - membri di questo gruppo possono creare e gestire casi di eDiscovery. Vengono aggiungere e rimuovere membri, posizionare il contenuto percorsi conservazione, creare e modificare ricerche del contenuto associato a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi di eDiscovery avanzate. Esistono due sottogruppi di questo gruppo di ruoli. La differenza tra questi sottogruppi si basa sull'ambito.
     
@@ -249,9 +249,9 @@ Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso
     
     ![Nuova ricerca](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-1. È possibile specificare le parole chiave, messaggio, proprietà, ad esempio inviati e ricevuti, date o proprietà del documento, ad esempio i nomi di file o la data dell'ultima modifica di un documento. È possibile utilizzare più complesse query che utilizzano un operatore booleano, ad esempio **AND**, **o**, **non**, **NEAR**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di previdenza sociale) nei documenti o ricerca per i documenti condivisi esternamente. Se si lascia vuota la casella parole chiave, tutto il contenuto disponibile nei percorsi di contenuto specificati sarà incluse nei risultati della ricerca. 
+6. È possibile specificare le parole chiave, messaggio, proprietà, ad esempio inviati e ricevuti, date o proprietà del documento, ad esempio i nomi di file o la data dell'ultima modifica di un documento. È possibile utilizzare più complesse query che utilizzano un operatore booleano, ad esempio **AND**, **o**, **non**, **NEAR**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di previdenza sociale) nei documenti o ricerca per i documenti condivisi esternamente. Se si lascia vuota la casella parole chiave, tutto il contenuto disponibile nei percorsi di contenuto specificati sarà incluse nei risultati della ricerca. 
     
-2. È possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite l'operatore **OR** nella query di ricerca che viene creata. 
+7. È possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite l'operatore **OR** nella query di ricerca che viene creata. 
     
     ![Elenco delle parole chiave](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
@@ -259,45 +259,45 @@ Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso
     
     Per ulteriori informazioni sull'utilizzo dell'elenco di parole chiave, vedere [creazione di una query di ricerca](content-search.md#building-a-search-query).
     
-3. In **condizioni**, aggiungere le condizioni per una query di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione da includere nei risultati della. Si tratta come condizioni consentono di limitare i risultati. 
+8. In **condizioni**, aggiungere le condizioni per una query di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione da includere nei risultati della. Si tratta come condizioni consentono di limitare i risultati. 
     
     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-6. In **percorsi: percorsi in attesa**, scegliere i percorsi di contenuti che si desidera eseguire la ricerca. È possibile cercare cassette postali, i siti e le cartelle pubbliche nella ricerca stessa.
+9. In **percorsi: percorsi in attesa**, scegliere i percorsi di contenuti che si desidera eseguire la ricerca. È possibile cercare cassette postali, i siti e le cartelle pubbliche nella ricerca stessa.
     
     ![Percorsi e i percorsi in attesa](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-  - **Tutti i percorsi** : selezionare questa opzione per cercare tutti i percorsi di contenuti nell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di ricerca tutte le cassette postali di Exchange (cassette postali che include tutti i gruppi di Office 365 e Microsoft Teams), tutte le SharePoint e OneDrive per i siti (che include i siti per tutti i gruppi di Office 365 e Microsoft Team) e tutte le cartelle pubbliche.
+    - **Tutti i percorsi** : selezionare questa opzione per cercare tutti i percorsi di contenuti nell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di ricerca tutte le cassette postali di Exchange (cassette postali che include tutti i gruppi di Office 365 e Microsoft Teams), tutte le SharePoint e OneDrive per i siti (che include i siti per tutti i gruppi di Office 365 e Microsoft Team) e tutte le cartelle pubbliche.
     
-  - **Che tutti i percorsi in attesa** - selezionare questa opzione per cercare tutti i percorsi contenuti messe in attesa nel caso. Se il caso contiene più contiene, il contenuto verranno eseguita la ricerca percorsi da tutte le esenzioni quando si seleziona questa opzione. Inoltre, se è stato inserito un percorso di contenuto di un'esenzione basata su query, solo gli elementi che sono in attesa verranno eseguita la ricerca quando si esegue la ricerca del contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato messo in attesa di maiuscole basata su query che consente di mantenere gli elementi che sono stati inviati o creati prima di una data specifica, solo gli elementi sarebbero viene eseguita la ricerca utilizzando i criteri di ricerca di ricerca del contenuto. Questa operazione viene eseguita tramite la connessione di query maiuscole attesa e la query di ricerca del contenuto da un operatore **AND** . Vedere la sezione [informazioni](ediscovery-cases.md#moreinfo_1) alla fine di questo articolo per informazioni dettagliate sulla ricerca di contenuto sociale. 
+    - **Che tutti i percorsi in attesa** - selezionare questa opzione per cercare tutti i percorsi contenuti messe in attesa nel caso. Se il caso contiene più contiene, il contenuto verranno eseguita la ricerca percorsi da tutte le esenzioni quando si seleziona questa opzione. Inoltre, se è stato inserito un percorso di contenuto di un'esenzione basata su query, solo gli elementi che sono in attesa verranno eseguita la ricerca quando si esegue la ricerca del contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato messo in attesa di maiuscole basata su query che consente di mantenere gli elementi che sono stati inviati o creati prima di una data specifica, solo gli elementi sarebbero viene eseguita la ricerca utilizzando i criteri di ricerca di ricerca del contenuto. Questa operazione viene eseguita tramite la connessione di query maiuscole attesa e la query di ricerca del contenuto da un operatore **AND** . Vedere la sezione [informazioni](ediscovery-cases.md#moreinfo_1) alla fine di questo articolo per informazioni dettagliate sulla ricerca di contenuto sociale. 
     
-  - **Percorsi specifici** : selezionare questa opzione per selezionare le cassette postali e i siti che si desidera eseguire la ricerca. Quando si seleziona questa opzione e fare clic su **Modifica**, viene visualizzato un elenco di posizioni. È possibile scegliere di alcuni o tutti gli utenti, gruppi, team o posizioni di siti di ricerca.
+    - **Percorsi specifici** : selezionare questa opzione per selezionare le cassette postali e i siti che si desidera eseguire la ricerca. Quando si seleziona questa opzione e fare clic su **Modifica**, viene visualizzato un elenco di posizioni. È possibile scegliere di alcuni o tutti gli utenti, gruppi, team o posizioni di siti di ricerca.
     
-    ![Selezionare percorsi specifici](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Selezionare percorsi specifici](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
-    È anche possibile scegliere di ricerca tutte le cartelle pubbliche nell'organizzazione, ma se si seleziona questa opzione e ricerca qualsiasi percorso contenuto in attesa, le query da un'esenzione maiuscole basata su query non verranno applicate alla query di ricerca. In altre parole, viene eseguita la ricerca tutto il contenuto in una posizione, non solo il contenuto viene mantenuto da un'esenzione maiuscole basata su query.
+      È anche possibile scegliere di ricerca tutte le cartelle pubbliche nell'organizzazione, ma se si seleziona questa opzione e ricerca qualsiasi percorso contenuto in attesa, le query da un'esenzione maiuscole basata su query non verranno applicate alla query di ricerca. In altre parole, viene eseguita la ricerca tutto il contenuto in una posizione, non solo il contenuto viene mantenuto da un'esenzione maiuscole basata su query.
     
-    È possibile rimuovere i percorsi contenuti sociale prepopolati o aggiungerne altri. Se si sceglie questa opzione, è inoltre possibile flessibilità per cercare tutti i percorsi di contenuti per un servizio specifico (ad esempio ricerca tutte le cassette postali di Exchange) oppure è possibile cercare i percorsi di contenuti specifici per un servizio. È anche possibile scegliere se utilizzare o meno le cartelle pubbliche di ricerca nell'organizzazione.
+      È possibile rimuovere i percorsi contenuti sociale prepopolati o aggiungerne altri. Se si sceglie questa opzione, è inoltre possibile flessibilità per cercare tutti i percorsi di contenuti per un servizio specifico (ad esempio ricerca tutte le cassette postali di Exchange) oppure è possibile cercare i percorsi di contenuti specifici per un servizio. È anche possibile scegliere se utilizzare o meno le cartelle pubbliche di ricerca nell'organizzazione.
     
-    Tenere presente quando si aggiungono percorsi di contenuti per la ricerca:
+      Tenere presente quando si aggiungono percorsi di contenuti per la ricerca:
     
-  - Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali per la ricerca, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere i destinatari a questo elenco, fare clic su **Scegli utenti, gruppi o team**, digitare un nome (almeno 3 caratteri) nella casella di ricerca, selezionare la casella di controllo accanto al nome e quindi fare clic su **Scegli**. 
+      - Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali per la ricerca, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere i destinatari a questo elenco, fare clic su **Scegli utenti, gruppi o team**, digitare un nome (almeno 3 caratteri) nella casella di ricerca, selezionare la casella di controllo accanto al nome e quindi fare clic su **Scegli**. 
     
-  - È possibile aggiungere all'elenco delle cassette postali per la ricerca delle cassette postali inattive, gruppi di Office 365, Microsoft Teams e i gruppi di distribuzione. Non sono supportati i gruppi di distribuzione dinamico. Se si aggiungono gruppi di Office 365 o Microsoft Teams, viene eseguita la ricerca cassetta postale di gruppo o un team; non vengono effettuate le cassette postali dei membri del gruppo.
+      - È possibile aggiungere all'elenco delle cassette postali per la ricerca delle cassette postali inattive, gruppi di Office 365, Microsoft Teams e i gruppi di distribuzione. Non sono supportati i gruppi di distribuzione dinamico. Se si aggiungono gruppi di Office 365 o Microsoft Teams, viene eseguita la ricerca cassetta postale di gruppo o un team; non vengono effettuate le cassette postali dei membri del gruppo.
     
-  - Per aggiungere siti fare clic su **Scegli siti**, scegliere nuovamente **clic su siti** e quindi digitare l'URL per ogni sito che si desidera eseguire la ricerca. È inoltre possibile aggiungere l'URL del sito di SharePoint per gruppi di Office 365 e Microsoft Teams. 
+      - Per aggiungere siti fare clic su **Scegli siti**, scegliere nuovamente **clic su siti** e quindi digitare l'URL per ogni sito che si desidera eseguire la ricerca. È inoltre possibile aggiungere l'URL del sito di SharePoint per gruppi di Office 365 e Microsoft Teams. 
     
-7. Dopo aver selezionato i percorsi contenuti di ricerca, fare clic su **Chiudi** e quindi fare clic su **Salva**.
+10. Dopo aver selezionato i percorsi contenuti di ricerca, fare clic su **Chiudi** e quindi fare clic su **Salva**.
     
-8. Nella pagina **nuova ricerca** , fare clic su **Salva** e quindi digitare un nome per la ricerca. Nomi siano univoci all'interno dell'organizzazione Office 365 devono essere associate a un caso di ricerche di contenuto. 
+11. Nella pagina **nuova ricerca** , fare clic su **Salva** e quindi digitare un nome per la ricerca. Nomi siano univoci all'interno dell'organizzazione Office 365 devono essere associate a un caso di ricerche di contenuto. 
     
-9. Fare clic su **salvare &amp; eseguire** per salvare le impostazioni di ricerca. 
+12. Fare clic su **salvare &amp; eseguire** per salvare le impostazioni di ricerca. 
     
-10. Immettere un nome univoco per la ricerca e fare clic su **Salva** per avviare la ricerca. 
+13. Immettere un nome univoco per la ricerca e fare clic su **Salva** per avviare la ricerca. 
     
     La ricerca viene avviata. Dopo un po' di tempo, una stima dei risultati della ricerca viene visualizzata nel riquadro dei dettagli. La stima include le dimensioni totali e il numero di elementi corrispondenti ai criteri di ricerca. La stima ricerca include anche il numero di elementi indicizzati nei percorsi di contenuto in cui sono stati una ricerca. Il numero di elementi indicizzati che non soddisfano i criteri di ricerca includerà le statistiche ricerca visualizzate nel riquadro dei dettagli. Se corrisponde a un elemento non indicizzate eseguire una query di ricerca (perché altre proprietà di un documento o messaggio soddisfa i criteri di ricerca), non sarà incluso il numero stimato di elementi indicizzati. Se un elemento non indicizzato viene escluso per i criteri di ricerca, anche non essere incluse nella stima di elementi indicizzati.
     
-    Al termine della ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni nel riquadro dei dettagli. 
+  Al termine della ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni nel riquadro dei dettagli. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Passaggio 6: Esportare i risultati di ricerca del contenuto associato a un caso
 
