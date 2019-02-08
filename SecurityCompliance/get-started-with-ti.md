@@ -3,7 +3,7 @@ title: Introduzione a Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Informazioni su Business Intelligence di Office 365 rischio e su come iniziare a.
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426041"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770791"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Introduzione a Office 365 Threat Intelligence
 
 Se si fa parte del team di protezione dell'organizzazione, è possibile utilizzare Business Intelligence di Office 365 minaccia per impedire agli utenti di attacchi di tipo. Consente agli analisti di protezione di Office 365 rischio Intelligence e gli amministratori di proteggere gli utenti da propagazione backup sui concetti e identificazione delle azioni in base a quanto avviene nel proprio ambiente Office 365. Queste informazioni sono basati su un archivio di dati business intelligence rischio e sistemi per campione criteri che corrispondono ad attacchi potenzialmente dannoso attività e comportamenti completo.
-  
-![Business intelligence di rischio consente di comprendere gli attacchi di tipo destinate a nell'organizzazione](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 In questo articolo per ulteriori informazioni su cosa includere in Office 365 rischio Intelligence e su come iniziare a.
   
