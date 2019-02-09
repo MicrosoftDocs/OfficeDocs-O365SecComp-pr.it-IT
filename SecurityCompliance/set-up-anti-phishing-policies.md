@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protezione anti-phishing, con una protezione globale come parte di Office 365 avanzate rischio protezione e protezione di base in Office 365 Exchange Online Protection consentono di proteggere l'organizzazione da attacchi dannosi phishing basato su rappresentazione e altri phishing.
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755267"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792281"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostazione dei criteri anti-phishing e anti-phishing degli strumenti di analisi di Office 365
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755267"
 Il phishing di attacchi in una vasta gamma di moduli di attacchi basati su merce destinazione spear phishing o whaling. Con la complessità crescente è difficile per anche una formazione occhio identificare alcuni di questi attacchi sofisticati. Fortunatamente, può contribuire a Office 365 avanzate Threat Protection. È possibile impostare i criteri di anti-phishing degli strumenti di analisi per contribuire a garantire che l'organizzazione è protetto contro gli attacchi descritti.
   
 > [!NOTE]
-> Protezione anti-phishing degli strumenti di analisi disponibile solo in avanzate Threat Protection (degli strumenti di analisi). Degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 Education A5 e così via. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Verificare che l'organizzazione utilizza la versione più recente di Office 365 ProPlus su Windows per sfruttare al meglio la protezione anti-phishing degli strumenti di analisi. 
+> Protezione anti-phishing degli strumenti di analisi disponibile solo in avanzate Threat Protection (degli strumenti di analisi). Degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 Education A5 e così via. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Verificare che l'organizzazione utilizza la versione più recente di Office 365 ProPlus su Windows per sfruttare al meglio la protezione anti-phishing degli strumenti di analisi. 
 
 Un criterio di protezione anti-phishing è disponibile anche per Office 365 Exchange Online Protection, con un numero limitato di protezione anti-spoofing che ha lo scopo di protezione contro gli attacchi basati su descrizione e l'autenticazione.
   

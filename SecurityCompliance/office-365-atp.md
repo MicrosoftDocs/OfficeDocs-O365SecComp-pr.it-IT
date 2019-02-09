@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/04/2019
+ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
-description: Protezione da minacce avanzate di Office 365 include intelligence spoofing, collegamenti sicuri, gli allegati sicuri e funzionalità avanzate di anti-phishing. Protezione avanzata di rischio viene inoltre esteso per i file in SharePoint Online, OneDrive for Business e Teams Microsoft.
-ms.openlocfilehash: b483ceb0da53b2f1c216f60d5271781072ebcf17
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+description: Protezione da minacce avanzate di Office 365 include intelligence spoofing, collegamenti sicuri, gli allegati sicuri, avanzate funzionalità anti-phishing e business intelligence di rischio.
+ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755227"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792251"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -47,16 +47,19 @@ Stiamo continuando ad aggiungere nuove funzionalità a Office 365 e che include 
 
 |Aggiornamenti delle funzionalità  |Le azioni  |
 |---------|---------|
+|A partire da febbraio 2019 e distribuzione sui prossimi mesi, funzionalità di Business Intelligence di rischio vengono aggiunti degli strumenti di analisi. Inoltre, se l'organizzazione non dispone attualmente degli strumenti di analisi, sarà necessario nuove opzioni da prendere in considerazione, tra cui degli strumenti di analisi piano 1 e degli strumenti di analisi piano 2. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). |Esaminare la sottoscrizione dell'organizzazione e se è necessario [acquistare o modificare un componente aggiuntivo](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).  |
 |A partire da ottobre 2018 e distribuzione sui prossimi mesi, quando gli utenti utilizzano Outlook o Outlook Web Application (OWA), degli strumenti di analisi collegamenti sicuro viene eseguito il rendering degli URL originali, non riscritto URL. (Viene chiamato il rendering di questo collegamento nativa).<br>Quando il rendering di collegamento nativi è disponibile per l'organizzazione, questa funzionalità funziona in OWA e Outlook 365 (Click-to-Run).|Nessuno         |
 |Inizio in settembre 2018, [pagine di avviso degli strumenti di analisi di Office 365](atp-safe-links-warning-pages.md) caratteristica una nuova combinazione di colori, ulteriori dettagli e la possibilità di continuare a un sito nonostante assegnate gli avvisi e suggerimenti. |Nessuno         |
 |A partire dalla seconda parte del 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL in Office Online (Online di Word, Excel Online, in linea di PowerPoint e OneNote Online) e Office 365 ProPlus su Mac.   |[Esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md)  |
 |A partire da ritardo maggio 2018, funzionalità di [quarantena](quarantine-email-messages.md) in sicurezza &amp; centro conformità vengono estese per [Strumenti di analisi di SharePoint Online, OneDrive for Business e i team di Microsoft](atp-for-spo-odb-and-teams.md). |[Esaminare e modificare i criteri di allegati sicuri degli strumenti di analisi](set-up-atp-safe-attachments-policies.md) |
 |A partire da marzo 2018 protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare alla posta elettronica inviato tra utenti all'interno dell'organizzazione. |[Esaminare e modificare i criteri degli strumenti di analisi collegamenti sicuri](set-up-atp-safe-links-policies.md) |
 |A partire da ritardo ottobre 2017, protezione degli strumenti di analisi collegamenti sicuro viene estesa per applicare agli URL nel messaggio di posta elettronica, nonché gli URL nei documenti di Office 365 ProPlus, ad esempio Word, Excel, PowerPoint e Visio in Windows, nonché Office apps iOS e dispositivi Android.  |Verificare che si sta utilizzando [l'Autenticazione moderno per Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
-  
+
+
+      
 ## <a name="get-office-365-atp"></a>Ottenere degli strumenti di analisi di Office 365
 
-Office 365 degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365 e Office 365 Education A5. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Office 365 degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365 e Office 365 Education A5. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
 ## <a name="define-policies-for-atp"></a>Definire i criteri per strumenti di analisi
 
@@ -85,7 +88,7 @@ Dopo aver i criteri degli strumenti di analisi, sono disponibili per mostrare co
 
 [![La sicurezza &amp; dashboard centro conformità risulta utile per determinare dove funzioni avanzate Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   
-1. Come amministratore globale di Office 365, amministratore della sicurezza o lettore di protezione, passare a [https://protection.office.com](https://protection.office.com) ed effettuare l'accesso.
+1. Come un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di protezione, passare a [https://protection.office.com](https://protection.office.com) ed effettuare l'accesso.
     
 2. Accedere a **rapporti** > **Dashboard**. Per ottenere assistenza per questi rapporti, vedere [visualizzare i report per la protezione avanzata di rischio](view-reports-for-atp.md).
     
