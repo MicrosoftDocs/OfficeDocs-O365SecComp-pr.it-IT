@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting.
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003195"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792497"
 ---
 # <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
@@ -50,7 +50,7 @@ R. Possono essere inviati alla quarantena dell'amministratore anche i messaggi c
   
  **Q. Per quanto tempo i messaggi vengono tenuti in quarantena?**
   
-R. Per impostazione predefinita, i messaggi in quarantena della posta indesiderata rimangono lì per 15 giorni, mentre i messaggi in quarantena a cui corrispondano regole di trasporto rimangono per 7 giorni. Dopo questo periodo di tempo i messaggi sono eliminati e non recuperabili. Il periodo di conservazione per i messaggi in quarantena a cui corrispondono regole di trasporto non è configurabile. Tuttavia, il periodo di conservazione può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
+R. per impostazione predefinita, i messaggi in quarantena vengono conservati in quarantena per 30 giorni, mentre i messaggi in quarantena corrispondenti a una regola di trasporto vengono conservati in quarantena per 7 giorni. Dopo questo periodo di tempo i messaggi verranno eliminati e non sono recuperabili. Il periodo di conservazione per i messaggi in quarantena corrispondenti a una regola di trasporto non è configurabile. Tuttavia, è possibile ridurre il periodo di conservazione per i messaggi di quarantena della posta indesiderata tramite l'impostazione **della posta indesiderata Mantieni per (giorni)** in Criteri di filtro dei contenuti. Per ulteriori informazioni, vedere [configurazione dei criteri di filtro posta indesiderata](configure-your-spam-filter-policies.md).
   
  **D. È possibile rilasciare o segnalare più di un messaggio in quarantena alla volta?**
   

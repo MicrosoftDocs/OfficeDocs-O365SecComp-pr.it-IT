@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Come un amministratore può visualizzare, rilasciare e segnalare i messaggi in quarantena falsi positivi in Office 365. È possibile impostare i criteri in modo che filtra i messaggi di Office 365 e li invia in quarantena per diverse ragioni: perché che sono stati identificati come posta indesiderata, blocco, phishing, malware o perché sono corrispondenti a una regola di flusso di posta elettronica. '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180886"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792507"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365
 
@@ -27,10 +27,10 @@ Come amministratore, si può visualizzare, versione ed eliminare i messaggi in q
   
 Per impostazione predefinita, Office 365 invia messaggi di phishing e messaggi che contengono malware direttamente in quarantena. Altri messaggi filtrati vengono inviati alla cartella posta indesiderata degli utenti se non si imposta un criterio di inviarle in quarantena.
   
-È necessario disporre delle autorizzazioni di amministratore in Office 365 per l'utilizzo con i messaggi in quarantena inviate ad altri utenti e operare con i file in quarantena.
+È necessario disporre delle autorizzazioni di amministratore globale (GA) in Office 365 per l'utilizzo con i messaggi in quarantena inviate ad altri utenti e operare con i file in quarantena.
   
 > [!IMPORTANT]
-> Per impostazione predefinita, la posta indesiderata, blocco, malware, phishing e messaggi messi in quarantena perché sono corrispondenti a una regola di flusso di posta elettronica vengono mantenuti in quarantena per 30 giorni. È possibile personalizzare il tempo di quarantena in impostazioni di protezione da posta indesiderate in sicurezza &amp; centro conformità. Quando Office 365 consente di eliminare un messaggio in quarantena, è Impossibile annullare l'operazione. Se si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena in Criteri di filtro di protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione il periodo di conservazione quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in questo articolo. 
+>Per impostazione predefinita, i messaggi di posta indesiderata, blocco e phishing vengono mantenuti in quarantena per 30 giorni. I messaggi vengono messi in quarantena perché sono corrispondenti a una regola di flusso di posta elettronica vengono mantenuti in quarantena per 7 giorni. Malware messaggi vengono conservati in quarantena per 15 giorni. È possibile personalizzare il tempo di quarantena della posta indesiderata nelle impostazioni di protezione da posta indesiderate in sicurezza &amp; centro conformità. Quando Office 365 consente di eliminare un messaggio in quarantena, è Impossibile annullare l'operazione. Se si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena in Criteri di filtro di protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione il periodo di conservazione quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in questo articolo. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Visualizzare i messaggi in quarantena dell'organizzazione
 
@@ -39,7 +39,7 @@ Per impostazione predefinita, Office 365 invia messaggi di phishing e messaggi c
 2. Nell'elenco a sinistra espandere **Threat Management**, scegliere **Rivedi**e quindi scegliere **quarantena**.
     
     > [!TIP]
-    > Per passare direttamente alla pagina di **quarantena** per la protezione &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Per passare direttamente alla pagina di **quarantena** per la protezione &amp; centro conformità, utilizzare questo URL: gt _[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
     Per impostazione predefinita, la sicurezza &amp; centro conformità consente di visualizzare tutti i messaggi di posta elettronica in quarantena come posta indesiderata. I messaggi vengono ordinati in ordine cronologico in base alla **Data** stato ricevuto il messaggio. **Mittente**, **oggetto**e la data di scadenza (in **scadenza** ) vengono inoltre visualizzate per ogni messaggio. È possibile ordinare in un campo facendo clic su intestazione di colonna corrispondente; Fare clic su un'intestazione di colonna per annullare l'ordinamento. 
     
@@ -67,7 +67,7 @@ Dopo aver individuato uno specifico messaggio in quarantena, fare clic sul messa
     
 2. A sinistra, espandere **Threat Management**, scegliere **Rivedi**e quindi scegliere **quarantena**. <br/>
     > [!TIP]
-    > Per passare direttamente alla pagina di **quarantena** per la protezione &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Per passare direttamente alla pagina di **quarantena** per la protezione &amp; centro conformità, utilizzare questo URL: gt _[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 3. Per impostazione predefinita, la pagina Visualizza messaggi di posta elettronica in quarantena. Per visualizzare i file in quarantena, impostare i filtri nella parte superiore della pagina da visualizzare i **file**, in quarantena a causa di **malware**. È necessario disporre delle autorizzazioni di amministratore in Office 365 per l'utilizzo con i file in quarantena. 
     
@@ -190,7 +190,7 @@ Se si sta rilasciare i messaggi, tenere presente quanto segue:
     
 2. A sinistra, espandere **Threat Management**, scegliere **criterio**e quindi fare clic su **protezione da posta indesiderata**. <br/>
     > [!TIP]
-    > Per passare direttamente alla pagina di **protezione da posta indesiderata** in sicurezza &amp; centro conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > Per passare direttamente alla pagina di **protezione da posta indesiderata** in sicurezza &amp; centro conformità, utilizzare questo URL: gt _[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
 3. Scegliere **personalizzato** per visualizzare la scheda **impostazioni personalizzate** . 
     
