@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690417"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770821"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -53,8 +53,6 @@ I criteri di conservazione vengono creati e gestiti nella pagina **Conservazione
   
 ![Pagina Conservazione del Centro sicurezza e conformità](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> Per includere una cassetta postale di Exchange Online nei criteri di conservazione, alla cassetta postale deve essere assegnata una licenza di Exchange Online Piano 2. Se a una cassetta postale è assegnata una licenza di Exchange Online Piano 1, è necessario assegnare un'altra licenza di Archiviazione Exchange Online per includerla nei criteri di conservazione. 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funzionamento dei criteri di conservazione con il contenuto presente
 
