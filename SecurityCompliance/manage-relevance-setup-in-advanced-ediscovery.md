@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: 'Alcuni consigli per configurare il training della rilevanza in Office 365 Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.  '
-ms.openlocfilehash: b2f1f848d14bdf77444c2026cbc675042c792542
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Alcuni consigli per configurare il training della rilevanza in Office 365 Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.
+ms.openlocfilehash: 189c81bd415f94d4ded06fd13eaf5aea861b283d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530391"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27446347"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestire la configurazione della rilevanza in Office 365 Advanced eDiscovery
 
