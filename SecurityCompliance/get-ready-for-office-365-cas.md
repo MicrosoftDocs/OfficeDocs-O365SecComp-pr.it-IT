@@ -1,5 +1,5 @@
 ---
-title: Preparazione di Office 365 Cloud App Security
+title: Preparare l'ambiente per Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introduzione all'utilizzo della protezione App Cloud di Office 365
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229988"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603697"
 ---
-# <a name="get-ready-for-office-365-cloud-app-security"></a>Preparazione di Office 365 Cloud App Security
+# <a name="get-ready-for-office-365-cloud-app-security"></a>Preparare l'ambiente per Office 365 Cloud App Security
   
 |Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
 |:-----|:-----|:-----|:-----|
@@ -41,17 +41,15 @@ Perché Office 365 Cloud App sicurezza per il funzionamento corretto, la registr
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Passaggio 3: Accedere al portale di Office 365 Cloud App Security
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+Per accedere al portale di Office 365 Cloud App Security [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e accesso. 
+
+È inoltre possibile ottenere disponibili da Office 365 Security &amp; centro conformità. Ecco un modo efficace per eseguire questa operazione:
+
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accesso. (verrà visualizzata la sicurezza &amp; centro conformità.)
     
 2. Accedere agli **avvisi** \> **Gestione avanzata degli avvisi**.
     
-3. Scegliere **Vai alla protezione di Office 365 Cloud App** per accedere al portale di Office 365 Cloud App sicurezza. 
-    
-    ![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    Quando si passa al portale di Office 365 Cloud App sicurezza, la prima pagina che viene visualizzato è la pagina criteri, che è simile all'immagine seguente:
-    
-    ![Quando si passa al portale di protezione di applicazioni di Office 365 Cloud, si inizia con la pagina criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. Scegliere **Vai alla protezione di Office 365 Cloud App** per accedere al portale di Office 365 Cloud App sicurezza.<br> ![Scegliere Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Quando si passa al portale di Office 365 Cloud App sicurezza, la prima pagina che viene visualizzato è la pagina criteri, che è simile all'immagine seguente:<br>![Quando si passa al portale di protezione di applicazioni di Office 365 Cloud, si inizia con la pagina criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>Passaggio 4: Definire i criteri e impostare avvisi &amp; azioni
 
@@ -61,7 +59,7 @@ Esistono due tipi di avvisi di protezione di applicazioni di Office 365 Cloud: a
   
 Le risorse seguenti per ulteriori informazioni, vedere:
   
-- [Criteri di attività e gli avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
+- [Criteri delle attività e avvisi in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Criteri di rilevamento delle anomalie in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
@@ -81,11 +79,11 @@ Per popolare relazioni con le informazioni che necessarie, caricare i file di re
   
 - [Creare i rapporti di individuazione applicazioni in Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
     
-- [Esaminare i risultati di App Discovery in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+- [Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>Passaggio 6: Gestire le app nell'organizzazione vengono utilizzati per accedere a Office 365
 
-Un amministratore globale o un amministratore di sicurezza, è possibile gestire le applicazioni, ad esempio App personalizzate o applicazioni di terze parti, che gli utenti dell'organizzazione vengono utilizzato nei dispositivi con Office 365. Ad esempio, si supponga che un utente ha scaricato un'app personalizzata che si desidera utilizzare con Office 365. È possibile esaminare le applicazioni utilizzano persone, escludere applicazioni non attendibili o contrassegnare le applicazioni come approvati alle proprie esigenze di verifica. [Gestire le autorizzazioni di app con Office 365 Cloud App sicurezza](manage-app-permissions-in-ocas.md).
+Un amministratore globale o un amministratore di sicurezza, è possibile gestire le applicazioni, ad esempio App personalizzate o applicazioni di terze parti, che gli utenti dell'organizzazione vengono utilizzato nei dispositivi con Office 365. Ad esempio, si supponga che un utente ha scaricato un'app personalizzata che si desidera utilizzare con Office 365. È possibile esaminare le applicazioni utilizzano persone, escludere applicazioni non attendibili o contrassegnare le applicazioni come approvati alle proprie esigenze di verifica. [Gestire OAuth App tramite Office 365 Cloud App sicurezza](manage-app-permissions-in-ocas.md).
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>Passaggio 7: Utilizzare il server SIEM con Office 365 Cloud App protezione
 

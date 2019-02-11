@@ -3,7 +3,7 @@ title: Analizzare un'attività in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: "Con Office 365 Cloud App protezione, è possibile visualizzare quanto avviene nell'ambiente Office 365 per informazioni istruttoria attività e gli account. "
-ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014898"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603657"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Analizzare un'attività in Office 365 Cloud App Security
   
@@ -30,13 +30,9 @@ Office 365 Cloud App sicurezza e l'utilizzo del [Registro di controllo di Office
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Come ottenere la pagina di registro delle attività
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).)
-    
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
-    
-3. Scegliere **Vai a Office 365 Cloud App protezione**.<br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Accedere al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso.
   
-4. Nella barra di spostamento nella parte superiore dello schermo, scegliere **indagare** \> **registro attività**.<br/>![Nel portale di accesso client di Office 365, selezionare indagare.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. Nella barra di spostamento nella parte superiore dello schermo, scegliere **indagare** \> **registro attività**.<br/>![Nel portale di accesso client di Office 365, selezionare indagare.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>Rivedere e analizzare le attività
 

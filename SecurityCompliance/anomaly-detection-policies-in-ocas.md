@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Criteri di rilevamento anomalia in Office 365 Cloud App Security utilizzano algoritmi incorporati per individuare eventuali problemi potenziali. È consigliabile avere criterio rilevamento anomalie in almeno un, che è possibile ottimizzare (quando viene creato) utilizzando i filtri. '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604417"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612709"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Criteri di rilevamento delle anomalie in Office 365 Cloud App Security
 
@@ -28,7 +28,7 @@ Gestione di sicurezza avanzata di Office 365 è sicurezza App Cloud di Office 36
 |:-----|:-----|:-----|:-----|
 |[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggio successivo](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Avviare utilizzando](utilization-activities-for-ocas.md) <br/> |
    
-A partire da [Microsoft Cloud App Security versione 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), sicurezza App Cloud di Office 365 include diverse anomalia predefiniti rilevamento criteri ("predefinito") che includono utenti e analitica comportamento entità (UEBA) e apprendimento automatico (ML).
+A partire da [Microsoft Cloud App Security versione 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), sicurezza App Cloud di Office 365 include diverse anomalia predefiniti rilevamento criteri ("predefinito") che includono utenti e analitica comportamento entità (UEBA) e apprendimento automatico (ML).
   
 ![Per visualizzare i criteri di rilevamento anomalia, scegliere controllo \> criteri.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
@@ -39,7 +39,7 @@ Come un amministratore globale di Office 365 o sicurezza, è possibile esaminare
  > [!IMPORTANT]
 > Non esiste un periodo di formazione iniziale di sette (7) giorni non attivati durante il quale gli avvisi comportamenti anomali. Algoritmo di rilevamento anomalia è ottimizzato per ridurre il numero dei falsi allarmi. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Verificare quanto segue:
   

@@ -13,19 +13,21 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni su con privilegi accedere management in Office 365
-ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 85141ae885132095692683b766d5550cc538e2e8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723233"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652261"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Accesso con privilegi management in Office 365
 
 > [!IMPORTANT]
 > In questo argomento vengono illustrate la distribuzione e configurazione indicazioni per la funzionalità attualmente disponibili solo in Office 365 E5 e avanzate SKU di conformità.
 
-Accesso privilegiato management consente di controllare l'accesso granulare attività di amministrazione con privilegi in Office 365. È possibile proteggere dell'organizzazione da violazioni che possono utilizzare un account con privilegi di amministratore esistenti con la condizione accesso ai dati riservati o l'accesso alle impostazioni di configurazione critici. Dopo l'abilitazione della gestione dei privilegi di accesso, gli utenti dovranno richiedere l'accesso in tempo per eseguire attività con privilegi elevate e privilegiata attraverso un flusso di lavoro di approvazione altamente con ambito e specifici. In questo modo gli utenti appena sufficientemente accesso a eseguire attività in corso, senza mettere a rischio esposizione di dati riservati o le impostazioni di configurazione critico. Abilitazione della gestione dei privilegi di accesso in Office 365 all'organizzazione i mezzi operare con i privilegi zero la condizione e forniscono un livello di sistema di difesa contro le vulnerabilità derivanti a causa di questo tipo di accesso amministrativo la condizione. 
+Accesso privilegiato management consente di controllare l'accesso granulare attività di amministrazione con privilegi in Office 365. È possibile proteggere dell'organizzazione da violazioni che possono utilizzare un account con privilegi di amministratore esistenti con la condizione accesso ai dati riservati o l'accesso alle impostazioni di configurazione critici. Dopo l'abilitazione della gestione dei privilegi di accesso, gli utenti dovranno richiedere l'accesso in tempo per eseguire attività con privilegi elevate e privilegiata attraverso un flusso di lavoro di approvazione altamente con ambito e specifici. In questo modo gli utenti appena sufficientemente accesso a eseguire attività in corso, senza mettere a rischio esposizione di dati riservati o le impostazioni di configurazione critico. Abilitazione della gestione dei privilegi di accesso in Office 365 all'organizzazione i mezzi operare con i privilegi zero la condizione e forniscono un livello di sistema di difesa contro le vulnerabilità derivanti a causa di questo tipo di accesso amministrativo la condizione.
+
+Per una rapida panoramica delle integrata archivio protetto cliente e flusso di lavoro end-to-end con privilegi di accesso gestione, vedere l' [archivio protetto cliente e la gestione di privilegi di accesso in Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
 ## <a name="layers-of-protection"></a>Livelli di protezione
 

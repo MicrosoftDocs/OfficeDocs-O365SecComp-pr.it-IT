@@ -3,7 +3,7 @@ title: Abilitare cassette postali di archiviazione in Office 365 Security &amp; 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilizzare la protezione di Office 365 &amp; centro conformità per abilitare cassette postali di archiviazione per il supporto di conservazione dei messaggi della propria organizzazione, eDiscovery e i requisiti di archiviazione.
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530891"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327098"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Abilitare cassette postali di archiviazione in Office 365 Security &amp; centro conformità
   
@@ -30,15 +30,15 @@ Archiviazione in Office 365 (denominato anche l'archiviazione sul posto) fornisc
 > [!TIP]
 > Office 365 fornisce una quantità di spazio di archiviazione di archiviazione con la caratteristica archiviazione espansione automatica illimitata. Quando è attivata l'espansione automatica di archiviazione e quindi viene raggiunto la quota di archiviazione iniziali nella cassetta postale di archivio dell'utente, Office 365 automaticamente aggiunge ulteriore spazio di archiviazione. Ciò significa che gli utenti non si esaurisca lo spazio di archiviazione delle cassette postali e non sarà necessario gestire lasciare dopo aver inizialmente abilitare la cassetta postale di archiviazione e attivare l'archiviazione per l'organizzazione l'espansione automatica. Per ulteriori informazioni, vedere [Overview of archiviazione illimitato in Office 365](unlimited-archiving.md). 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 È necessario essere assegnato il ruolo destinatari di posta elettronica di Exchange Online per abilitare o disabilitare cassette postali di archiviazione. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruolo Recipient Management e la gestione dell'organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Se non è visualizzata la pagina di **archivio** nel titolo &amp; del centro conformità, chiedere all'amministratore di assegnare le autorizzazioni necessarie. 
   
 ## <a name="enable-an-archive-mailbox"></a>Abilitazione di una cassetta postale di archiviazione
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro della sicurezza &amp; centro conformità, fare clic su **governance dati** \> **Archive**.
     
@@ -67,9 +67,9 @@ Si noti che il criterio di archiviazione predefinito assegnato alle cassette pos
   
 Per disabilitare una cassetta postale di archiviazione:
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nel riquadro sinistro della sicurezza &amp; centro conformità, fare clic su **governance dati** \> **Archive**.
     
@@ -88,6 +88,42 @@ Per disabilitare una cassetta postale di archiviazione:
 > [!TIP]
 > È anche possibile disabilitare in blocco le cassette postali di archiviazione selezionando più utenti con cassette postali di archiviazione abilitate (con i tasti Maiusc o Ctrl). Dopo aver selezionato più cassette postali, fare clic su **Disabilita** nel riquadro dei dettagli.  
   
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Utilizzare Exchange Online PowerShell per abilitare o disabilitare l'archiviazione delle cassette postali
+
+È inoltre possibile utilizzare Exchange Online PowerShell per abilitare cassette postali di archiviazione. Il motivo principale per l'utilizzo di PowerShell è che è possibile attivare rapidamente la cassetta postale di archiviazione per tutti gli utenti nell'organizzazione.
+
+Il primo passaggio consiste nel connettere a Exchange Online PowerShell. Per ulteriori informazioni, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+Dopo che si è connessi a Exchange Online, è possibile eseguire i comandi nelle sezioni seguenti per abilitare o disabilitare cassette postali di archiviazione.
+
+### <a name="enable-archive-mailboxes"></a>Abilitare le cassette postali di archiviazione
+
+Eseguire il comando seguente per abilitare la cassetta postale di archiviazione per un singolo utente.
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+Eseguire il comando seguente per abilitare la cassetta postale di archiviazione per tutti gli utenti all'interno dell'organizzazione (la cui cassetta postale di archiviazione non abilitato).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>Disabilitare le cassette postali di archiviazione
+
+Eseguire il seguente comando per disabilitare la cassetta postale di archiviazione per un singolo utente.
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+Eseguire il seguente comando per disabilitare la cassetta postale di archiviazione per tutti gli utenti all'interno dell'organizzazione (la cui cassetta postale di archiviazione è attualmente abilitato).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
 ## <a name="more-information"></a>Ulteriori informazioni
   
 - Cassette postali di archiviazione consentono all'utente e gli utenti per soddisfare conservazione dell'organizzazione, eDiscovery e i requisiti di archiviazione. Ad esempio, è possibile utilizzare criteri di conservazione dell'organizzazione Exchange per spostare il contenuto delle cassette postali cassetta postale degli utenti di archiviazione. Quando si utilizza lo strumento di ricerca di contenuto per la protezione &amp; centro conformità per la ricerca di postale una cassetta per il contenuto specifico, cassetta postale di archivio dell'utente è anche possibile ricercare. E, quando si effettua una conservazione per controversia legale o applicare un criterio di conservazione di Office 365 per postale una cassetta, vengono mantenuti anche gli elementi nella cassetta postale di archivio.
@@ -102,7 +138,6 @@ Per disabilitare una cassetta postale di archiviazione:
     
 - Per ulteriori informazioni sulle cassette postali di archiviazione e dei criteri di conservazione di Exchange, vedere:
   
-  - [Cassette postali di archiviazione in Exchange Online](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?LinkId=404424)
     

@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: "Indicazioni principali alla sicurezza informatica team di Microsoft per l'implementazione della funzionalità di protezione per proteggere l'ambiente Office 365. "
 ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
+ms.lasthandoff: 02/11/2019
 ms.locfileid: "25450081"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Roadmap di protezione di Office 365 - priorità superiore per i primi 30 giorni, 90 giorni e versioni successive
 
 In questo articolo sono incluse indicazioni principali alla sicurezza informatica team di Microsoft per l'implementazione della funzionalità di protezione per proteggere l'ambiente Office 365. In questo articolo è stato adattato da una sessione di Ignite per Microsoft, ovvero [sicura Office 365 come alla sicurezza informatica pro: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://www.youtube.com/watch?v=luignzNyR-o). In questa sessione è stata sviluppata e presentata da Mark Simos e Matt Kemelhar, alla sicurezza informatica architetti.
   
-Contenuto dell'articolo:
+In questo articolo:
   
 - [Risultati roadmap](security-roadmap.md#Roadmap)
     
@@ -43,7 +43,7 @@ Questi suggerimenti della Guida di orientamento sono in fasi in tre fasi in ordi
 
 |||
 |:-----|:-----|
-| |Risultati
+| |Obiettivi
 |30 giorni|Configurazione semplice e rapida:  <br/> • Protezione di amministrazione di base  <br/> Analitica e registrazione •  <br/> • Protezione di identità di base  <br/> Configurazione tenant  <br/>  Preparare le parti interessate  <br/> |
 |90 giorni|Protezioni avanzate:  <br/> • Account di amministrazione  <br/>  • Dati &amp; gli account utente  <br/>  Visibilità delle esigenze di conformità, rischio e utente  <br/>  Adattare e implementare la protezione e criteri predefiniti  <br/> |
 |Oltre a|Regolare e ottimizzare i controlli e criteri chiave  <br/> Estendere protezioni alle dipendenze locale  <br/> Integrazione con i processi aziendali e di sicurezza (legali, minaccia interna e così via)  <br/> |

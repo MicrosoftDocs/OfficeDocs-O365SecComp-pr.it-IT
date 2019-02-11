@@ -3,7 +3,7 @@ title: Criteri delle attività e avvisi in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definire i criteri di attività con Office 365 Cloud App protezione per impostare gli avvisi per attivare indicanti l'attività specifiche eseguite avvenire troppo spesso. Tramite l'impostazione dei criteri per attivare gli avvisi, possono essere informati e monitorare le attività specifiche.
-ms.openlocfilehash: 6f5039d09dea98de970ab4bd28e95a6cfad73db4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015008"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29604093"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Criteri delle attività e avvisi in Office 365 Cloud App Security
 
@@ -35,7 +35,7 @@ Se si è un [amministratore globale o amministratore di protezione](permissions-
 > [!NOTE]
 > Criteri di protezione di applicazione Cloud di Office 365 sono diversi dai [avviso criteri in Office 365 Security &amp; centro conformità](alert-policies.md). L'attività criteri descritti in questo articolo vengono definiti nel portale di Office 365 Cloud App protezione e consentono di migliorare la gestione ambiente basato su cloud dell'organizzazione. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Verificare quanto segue:
   
@@ -47,42 +47,25 @@ Verificare quanto segue:
     
 ## <a name="create-a-new-activity-policy"></a>Creare un nuovo criterio di attività
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
-    
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
-    
-3. Scegliere **Vai a Office 365 Cloud App protezione**.
-    
-    Verrà visualizzata la pagina Criteri di protezione di Office 365 Cloud App.
-    
-    ![Quando si passa al portale di protezione di applicazioni di Office 365 Cloud, si inizia con la pagina criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. Un amministratore globale o un amministratore di protezione, passare al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso. <br>Verrà visualizzata la pagina Criteri di protezione di Office 365 Cloud App.<br>![Quando si passa al portale di protezione di applicazioni di Office 365 Cloud, si inizia con la pagina criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-4. Fare clic su **Crea un criterio**e quindi selezionare **il criterio di attività**.
-    
-    ![Quando si crea un criterio di accesso client di Office 365, è possibile scegliere tra i criteri di attività e rilevamento anomalia.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Fare clic su **Crea un criterio**e quindi selezionare **il criterio di attività**.<br>![Quando si crea un criterio di accesso client di Office 365, è possibile scegliere tra i criteri di attività e rilevamento anomalia.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-5. Nella pagina **Crea un criterio attività** consente di specificare il **nome del criterio** e la **Descrizione**. Per definire un criterio di base su un modello predefinito, scegliere uno nell'elenco **modello dei criteri** o creare i criteri senza utilizzare un modello. 
-    
-    ![È possibile creare criteri di attività con Office 365 Cloud App protezione.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Nella pagina **Crea un criterio attività** consente di specificare il **nome del criterio** e la **Descrizione**. Per definire un criterio di base su un modello predefinito, scegliere uno nell'elenco **modello dei criteri** o creare i criteri senza utilizzare un modello.<br>![È possibile creare criteri di attività con Office 365 Cloud App protezione.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-6. Selezionare un **livello di gravità criteri** (bassa, Media o alta) che misura come gravi è all'utente se questo criterio viene generato un avviso. Sarà quindi possibile filtrare gli avvisi quando è esame più avanti. 
+4. Selezionare un **livello di gravità criteri** (bassa, Media o alta) che misura come gravi è all'utente se questo criterio viene generato un avviso. Sarà quindi possibile filtrare gli avvisi quando è esame più avanti. 
     
-7. Scegliere una **categoria** per questo criterio. Ciò consente di filtrare e ordinare gli avvisi che sono stati attivati o criteri di gruppo quando viene esaminata al loro di apportare modifiche. 
+5. Scegliere una **categoria** per questo criterio. Ciò consente di filtrare e ordinare gli avvisi che sono stati attivati o criteri di gruppo quando viene esaminata al loro di apportare modifiche. 
     
-8. Scegliere **filtri attività** di configurazione di altre azioni o metriche che verranno generato un avviso in base a questo criterio. 
+6. Scegliere **filtri attività** di configurazione di altre azioni o metriche che verranno generato un avviso in base a questo criterio. 
     
-9. In **attività corrispondenza con i parametri**, specificare se la violazione dei criteri viene attivata quando una singola attività genera una corrispondenza per i filtri, o se è necessario un numero specificato di attività ripetute prima di trigger avviso.
+7. In **attività corrispondenza con i parametri**, specificare se la violazione dei criteri viene attivata quando una singola attività genera una corrispondenza per i filtri, o se è necessario un numero specificato di attività ripetute prima di trigger avviso.<br>Se si seleziona **Repeated attività**, specificare il numero di attività, l'intervallo di tempo, e indica se una violazione verrà inclusi nel conteggio di un utente all'interno di un'app specifica o per lo stesso utente con le app.
     
-    Se si seleziona **Repeated attività**, specificare il numero di attività, l'intervallo di tempo, e indica se una violazione verrà inclusi nel conteggio di un utente all'interno di un'app specifica o per lo stesso utente con le app.
-    
-10. Facoltativamente, è possibile selezionare **avviso crea** per creare ulteriori avvisi per la ricezione di notifiche da questo criterio (tramite posta elettronica, SMS o entrambi). 
-    
-    > [!IMPORTANT]
-    > Assicurarsi che il provider di posta elettronica non Blocca messaggi di posta elettronica inviati da no-reply@cloudappsecurity.com. 
+8. Facoltativamente, è possibile selezionare **avviso crea** per creare ulteriori avvisi per la ricezione di notifiche da questo criterio (tramite posta elettronica, SMS o entrambi).<br>**Assicurarsi che il provider di posta elettronica non Blocca messaggi di posta elettronica inviati da `no-reply@cloudappsecurity.com` **. 
   
-11. Scegliere le **Azioni** da eseguire quando viene generato un avviso per sospendere l'utente o richiedere all'utente di effettuare nuovamente l'accesso alle app di Office 365. 
+9. Scegliere le **Azioni** da eseguire quando viene generato un avviso per sospendere l'utente o richiedere all'utente di effettuare nuovamente l'accesso alle app di Office 365. 
     
-12. Scegliere **Crea** per completare la creazione del criterio. 
+10. Scegliere **Crea** per completare la creazione del criterio. 
     
 ## <a name="next-steps"></a>Passaggi successivi
 

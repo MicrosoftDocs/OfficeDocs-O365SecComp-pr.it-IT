@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b0d1bcd8ddb1e29853a633a386becfd1688b9cd1
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607873"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706127"
 ---
 # <a name="themes"></a>Temi
+
 Quando un utente crea un documento, non desiderano parole in modo casuale; si sta tentando di trasferire alcune idee o concetti e le parole vengono scelti conseguenza. Moduli di temi cluster di documenti che esaminano simile questioni soggetto in modo che i revisori possono essere più efficienti in intermediazione documenti.
 
 ## <a name="how-does-themes-work"></a>Funzionano temi

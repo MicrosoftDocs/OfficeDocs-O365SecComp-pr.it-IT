@@ -3,7 +3,7 @@ title: Panoramica di Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: "Protezione di Office 365 Cloud App offre offre informazioni sul attività sospette in Office 365 in modo che è possibile ricercare situazioni in cui sono potenzialmente problematici e, se necessario, eseguire un'azione per risolvere i problemi di sicurezza. "
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014928"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382549"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Panoramica di Office 365 Cloud App Security
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014928"
 |Si è seguito!  <br/> [Passaggio successivo](get-ready-for-office-365-cas.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |[Avviare utilizzando](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Protezione di Office 365 Cloud App è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, protezione di Office 365 Cloud App può essere acquistata come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Protezione di Office 365 Cloud App è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, protezione di Office 365 Cloud App può essere acquistata come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
   
 Protezione di Office 365 Cloud App vengono fornite informazioni sulle attività sospette in Office 365 in modo che è possibile ricercare situazioni in cui sono potenzialmente problematici e, se necessario, eseguire un'azione per risolvere i problemi di sicurezza. Con Office 365 Cloud App protezione, è possibile ricevere notifiche di trigger avvisi per attività atipiche o potenzialmente dannoso, vedere modalità di accesso e utilizzati, i dati dell'organizzazione in Office 365 sospendere gli account utente che attività sospette e richiedono agli utenti di eseguire nuovamente l'accesso alle app di Office 365 dopo un avviso se è stato attivato. In questo articolo per una panoramica delle funzionalità e caratteristiche di protezione di Office 365 Cloud App.
   
@@ -36,13 +36,15 @@ Protezione di Office 365 Cloud App vengono fornite informazioni sulle attività 
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>Come trovare il portale di Office 365 Cloud App Security
 
 > [!NOTE]
-> Per accedere al portale di Office 365 Cloud App sicurezza, è necessario essere un amministratore globale, amministratore della sicurezza o lettore di sicurezza. Per ulteriori informazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
+> Per accedere al portale di Office 365 Cloud App sicurezza, è necessario essere un amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza. Per ulteriori informazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
   
-Accedere al portale di protezione di applicazioni di Office 365 Cloud mediante la protezione di Office 365 è possibile &amp; centro conformità. Ecco un modo efficace per eseguire questa operazione:
+Per accedere al portale di Office 365 Cloud App Security [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e accesso. 
+
+È inoltre possibile ottenere disponibili da Office 365 Security &amp; centro conformità. Ecco un modo efficace per eseguire questa operazione:
   
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola per Office 365. (Si passa alla sicurezza &amp; centro conformità.)
     
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**. <br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
+2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**. <br/>![Scegliere Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Se Office 365 Cloud App sicurezza non è ancora abilitato e si è un amministratore globale, di [attivare la protezione di Office 365 Cloud App](turn-on-office-365-cas.md).)
     
 3. Scegliere **Vai a Office 365 Cloud App protezione**. 
     

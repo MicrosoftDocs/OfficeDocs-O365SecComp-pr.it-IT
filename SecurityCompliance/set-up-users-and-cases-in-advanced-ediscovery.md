@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi di eDiscovery avanzate di Office 365.  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531057"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559059"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurare gli utenti e i casi in Office 365 Advanced eDiscovery
 
 In questo argomento viene descritto come configurare gli utenti e dei casi eDiscovery avanzate di Office 365.
   
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -62,6 +62,4 @@ Dopo aver creato un caso eDiscovery e aggiungere membri, si (o qualsiasi membro 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
 [Preparazione dei dati](prepare-data-for-advanced-ediscovery.md)
-  
-[Accesso e i ruoli utente](user-roles-and-access-in-advanced-ediscovery.md)
-
+ 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614450"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696333"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
 
@@ -88,9 +88,7 @@ Per ogni dominio al quale si intende aggiungere una firma DKIM in DNS è necessa
 Utilizzare il formato seguente per i record CNAME.
 
 > [!IMPORTANT]
-> Se si è uno dei nostri clienti le elevata, i calcoli _domainGuid_ in modo diverso! Anziché la ricerca di record MX per il _initialDomain_ calcolare _domainGuid_, in realtà è calcolare lo direttamente dal dominio personalizzato. Ad esempio, se il dominio personalizzato è "contoso.com" il domainGuid diventa "contoso com", qualsiasi periodi sono stati sostituiti con un trattino.
-
-Indipendentemente dalle quali record MX i punti initialDomain, si verrà sempre utilizzare il metodo precedente per calcolare domainGuid utilizzare i record CNAME.
+> Se si è uno dei nostri clienti le elevata, i calcoli _domainGuid_ in modo diverso! Anziché la ricerca di record MX per il _initialDomain_ calcolare _domainGuid_, in realtà è calcolare lo direttamente dal dominio personalizzato. Ad esempio, se il dominio personalizzato è "contoso.com" il domainGuid diventa "contoso com", qualsiasi periodi sono stati sostituiti con un trattino. Indipendentemente dalle quali record MX i punti initialDomain, si verrà sempre utilizzare il metodo precedente per calcolare domainGuid utilizzare i record CNAME.
 
   
 ```

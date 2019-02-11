@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: In questo argomento vengono fornite le risposte alle domande frequenti sui messaggi restituiti al mittente, differiti e in coda durante la procedura di filtraggio in Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 17e5955195c4e38299712fb9161822984b2a643a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026223"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686426"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP
 
@@ -32,7 +32,7 @@ R. I messaggi vengono mantenuti quando non è possibile eseguire una connessione
   
  **D. Per quanto tempo un messaggio rimane in coda e qual è l'intervallo tra tentativi?**
   
-R. I messaggi il cui recapito è ritardato rimangono nelle code per 2 giorni. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti.
+R. messaggi accodati resteranno nel nostro code per 2 giorni. Messaggio di tentativi sono basati su errore che è possibile ottenere dal sistema di posta elettronica del destinatario. Il dilazioni alcuni prima sono 15 minuti o minore di successivi tentativi di connessione (tramite il successiva decine metà o meno) aumentare l'intervallo su più tentativi per un massimo di 60 minuti. L'espansione di durata intervallo è dinamico, tenendo in considerazione più variabili come dimensioni coda e la priorità del messaggio interno. In base, è 15 minuti (o minore di) per avviare, quindi l'espansione da quest'ultimo su alcune ore successiva al massimo di 60 minuti.
   
  **D. Dopo il ripristino del server di posta elettronica, come vengono distribuiti i messaggi in coda?**
   

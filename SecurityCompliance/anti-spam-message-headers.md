@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio.
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614460"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686446"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -38,7 +38,7 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |CTRY|Il paese dal quale il messaggio è stato connesso al servizio. Questo è determinato dall'indirizzo IP di connessione, il quale potrebbe non essere uguale all'indirizzo IP di invio di origine.|
 |LANG|LANG: la lingua in cui è scritto il messaggio, come specificato dal codice paese (ad esempio, ru_RU per la Russia).|
 |SCL|Il valore del livello di probabilità di posta indesiderata (SCL) del messaggio. Per ulteriori informazioni sull'interpretazione di questi valori, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).  |
-|PCL|Il valore del livello di confidenza di Phishing (PCL) del messaggio. Vedere [PCL](anti-spam-message-headers.md#PCL) per ulteriori informazioni sui valori PCL.  |
+|PCL|Il valore del livello di confidenza di Phishing (PCL) del messaggio. |
 |SRV:BULK|Il messaggio è stato identificato come un messaggio di posta elettronica in blocco. Se l' **opzione avanzata di filtro della posta indesiderata Blocca tutti i messaggi di posta in blocco** è abilitata, il messaggio verrà contrassegnato come posta indesiderata. Se l'opzione è disabilitata, il messaggio verrà contrassegnato come posta indesiderata solo se il resto delle regole del filtro stabiliscono che è indesiderato.  |
 |SFV:SFE|Il filtro è stato ignorato e il messaggio è stato lasciato passare perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti attendibili.|
 |SFV:BLK|Il filtro è stato ignorato e il messaggio è stato bloccato perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti bloccati.  <br/> **Suggerimento**: per ulteriori informazioni su come gli utenti finali possono creare elenchi di mittenti attendibili e bloccati, vedere [Blocca o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook sul web) e [Panoramica del filtro per la posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|

@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di eDiscovery avanzate (Preview) in Microsoft 365.
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636625"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695062"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione di dati indagini (Preview) in Microsoft 365
 
-È possibile utilizzare il nuovo strumento dati indagini (Preview) in Microsoft 365 esaminare, analizzare e correggere i dati correlati risolte, ad esempio un problema di perdita di dati o un'indagine interna. Indagini pubblica anteprima dei dati viene fornita anticipati accesso alle caratteristiche e degli aggiornamenti futuri. Per ottenere accesso anticipato per le funzionalità più recenti, creare un nuovo indagini in indagini dati (Preview) in & la protezione di Office 365 centro conformità. Per ulteriori informazioni, vedere [gestione di un evento imprevisto perdita di dati in Microsoft 365](manage-data-spillage-incidents.md).
+È possibile utilizzare il nuovo strumento dati indagini (Preview) in Microsoft 365 esaminare, analizzare e correggere i dati correlati risolte, ad esempio un problema di perdita di dati o un'indagine interna. Indagini pubblica anteprima dei dati viene fornita anticipati accesso alle caratteristiche e degli aggiornamenti futuri. Per ottenere accesso anticipato per le funzionalità più recenti, creare un nuovo indagini in indagini dati (Preview) in & la protezione di Office 365 centro conformità. Per ulteriori informazioni, vedere [Manage un evento imprevisto perdita di dati in Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novità 
 

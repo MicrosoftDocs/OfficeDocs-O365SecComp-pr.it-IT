@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607919"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706107"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Aggiungere una ricerca eDiscovery avanzate (Preview) depositari Case
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Aggiungere depositari a un caso eDiscovery avanzate (Preview)
 
 Utilizzo di eDiscovery avanzate (anteprima), è possibile utilizzare lo strumento di gestione incorporati depositaria per coordinare i flussi di lavoro intorno a gestione depositari e identificare le origini dati rilevanti, detentive all'interno di un caso. Quando si aggiunge un depositaria, il sistema può automaticamente identificare e archiviazioni sul posto alle loro cassette postali di Exchange primaria e OneDrive per sito aziendale. Come di procedere con l'individuazione, si potrebbe Scopri e mappare le cassette postali di altri o siti che un depositaria a cui si accede al passato o team che un depositaria appartenga alla data odierna.
 

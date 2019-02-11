@@ -1,5 +1,5 @@
 ---
-title: Gestire le comunicazioni
+title: Gestire le notifiche di blocco
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607975"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706047"
 ---
-# <a name="manage-communications"></a>Gestire le comunicazioni
+# <a name="manage-hold-notifications"></a>Gestire le notifiche di blocco
 
 Dopo aver iniziato l'ufficio legale attesa del flusso di lavoro di notifica, è possibile utilizzare eDiscovery avanzate (Preview) per tenere traccia dello stato delle comunicazioni. Scheda comunicazioni Mostra tutte le notifiche di attesa nel caso di eDiscovery avanzate (Preview). In questo caso, è possibile visualizzare ulteriori informazioni, ad esempio il numero di depositari che sono stati assegnati o hanno riconosciuto l'avviso.
 
@@ -71,6 +71,8 @@ Quando si aggiorna il contenuto o le impostazioni di notifica di pubblicazione, 
 
 ## <a name="related-information"></a>Informazioni correlate 
 
-    - [Crea una notifica di conservazione a fini giudiziari] (~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [Riconoscere una notifica di conservazione a fini giudiziari] (~/acknowledge-hold-notification.md)
-    - [Depositari aggiunta a un caso]
+- [Creare una notifica di conservazione a fini giudiziari](create-hold-notification.md)
+    
+- [Confermare la ricezione di una notifica di blocco](acknowledge-hold-notification.md)
+    
+- [Aggiungere responsabili a un caso](add-custodians-to-case.md)

@@ -3,7 +3,6 @@ title: Gestire Office 365 Message Encryption
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +11,25 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: Dopo la configurazione di Office 365 messaggio crittografia dei è terminata, è possibile personalizzare la configurazione della distribuzione in vari modi. Ad esempio, è possibile configurare se si desidera abilitare occasionale passcode, visualizzare il pulsante di protezione in Outlook sul web e altro ancora. In questo articolo viene descritta la modalità.
-ms.openlocfilehash: 460ac0bba4d10fe8bef896a23a20f74527f031b2
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750055"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696230"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 
-Dopo la configurazione di Office 365 messaggio crittografia dei è terminata, è possibile personalizzare la configurazione della distribuzione in vari modi. Ad esempio, è possibile configurare se si desidera abilitare occasionale passcode, visualizzare il pulsante di **protezione** in Outlook sul web e altro ancora. In questo articolo viene descritta la modalità. 
+Dopo la configurazione di Office 365 messaggio crittografia dei è terminata, è possibile personalizzare la configurazione della distribuzione in vari modi. Ad esempio, è possibile configurare se si desidera abilitare occasionale passcode, visualizzare il pulsante di **protezione** in Outlook sul web e altro ancora. In questo articolo viene descritta la modalità.
   
 ||
 |:-----|
-|In questo articolo fa parte di una serie di dimensioni maggiore di articoli su Office 365 Message Encryption. In questo articolo è destinato ai professionisti IT e amministratori. Se si è appena per informazioni su inviare né ricevere un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 messaggio crittografia dei](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
+|In questo articolo fa parte di una serie di dimensioni maggiore di articoli su Office 365 Message Encryption. In questo articolo è destinato agli amministratori e ai professionisti IT. Se si è appena per informazioni su inviare né ricevere un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 messaggio crittografia dei](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
+||
 
 ## <a name="managing-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Gestione se Google, Yahoo e Account Microsoft i destinatari possono utilizzare questi account per l'accesso al portale di Office 365 Message Encryption
 
-Per impostazione predefinita, quando si imposta le nuove funzionalità di Office 365 Message Encryption, gli utenti dell'organizzazione possono inviare messaggi per i destinatari sono esterni all'organizzazione Office 365. Se il destinatario utilizza un *ID di social networking* , ad esempio un account di Google, Yahoo account o account Microsoft, il destinatario può effettuare l'accesso al portale OME utilizzando l'ID del social networking. Se si desidera, è possibile scegliere di non consentire ai destinatari di utilizzare gli ID di social networking per accedere al portale OME. 
+Per impostazione predefinita, quando si imposta le nuove funzionalità di Office 365 Message Encryption, gli utenti dell'organizzazione possono inviare messaggi per i destinatari sono esterni all'organizzazione Office 365. Se il destinatario utilizza un *ID di social networking* , ad esempio un account di Google, Yahoo account o account Microsoft, il destinatario può effettuare l'accesso al portale OME utilizzando l'ID del social networking. Se si desidera, è possibile scegliere di non consentire ai destinatari di utilizzare gli ID di social networking per accedere al portale OME.
   
 ### <a name="to-manage-whether-or-not-to-allow-recipients-to-use-social-ids-to-sign-in-to-the-ome-portal"></a>Per gestire o meno consentire ai destinatari di utilizzare gli ID di social networking per accedere al portale OME
   
@@ -37,21 +37,21 @@ Per impostazione predefinita, quando si imposta le nuove funzionalità di Office
 
 2. Eseguire il cmdlet Set-OMEConfiguration con il parametro SocialIdSignIn come indicato di seguito:
 
-  ```
-  Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
-  ```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
+   ```
 
-  Ad esempio, per disattivare gli ID di social networking:
-  
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
-  ```
+   Ad esempio, per disattivare gli ID di social networking:
 
-  Per abilitare gli ID di social networking:
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
+   ```
 
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
-  ```
+   Per abilitare gli ID di social networking:
+
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
+   ```
 
 ## <a name="managing-the-use-of-one-time-pass-codes-for-signing-in-to-the-office-365-message-encryption-portal"></a>Gestione dell'utilizzo dei codici unico passaggio per l'accesso al portale di Office 365 Message Encryption
 
@@ -63,19 +63,25 @@ Per impostazione predefinita, se il destinatario del messaggio crittografato per
 
 2. Eseguire il cmdlet Set-OMEConfiguration con il parametro OTPEnabled:
 
-   ```Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   ```
 
    Ad esempio, per disattivare i codici unico passaggio:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false
+   ```
 
    Per attivare i codici unico passaggio:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
+   ```
 
 ## <a name="managing-the-display-of-the-protect-button-in-outlook-on-the-web"></a>La gestione della visualizzazione del pulsante Protect in Outlook sul web
 
-Per impostazione predefinita, il pulsante di **protezione** in Outlook sul web non è abilitato quando si imposta OME. In qualità di amministratore, è possibile gestire o meno visualizzare questo pulsante per gli utenti finali. 
+Per impostazione predefinita, il pulsante di **protezione** in Outlook sul web non è abilitato quando si imposta OME. In qualità di amministratore, è possibile gestire o meno visualizzare questo pulsante per gli utenti finali.
   
 ### <a name="to-manage-whether-or-not-the-protect-button-appears-in-outlook-on-the-web"></a>Per gestire o meno Protect viene visualizzato il pulsante in Outlook sul web
   
@@ -83,15 +89,21 @@ Per impostazione predefinita, il pulsante di **protezione** in Outlook sul web n
 
 2. Eseguire il cmdlet Set-IRMConfiguration con il parametro - SimplifiedClientAccessEnabled:
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
+   ```
 
    Ad esempio, per disattivare il pulsante **Protect** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
    Per abilitare il pulsante **Protect** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $true```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Abilitare la decrittografia lato del servizio di messaggi di posta elettronica per gli utenti di app di iOS posta
 
@@ -99,7 +111,7 @@ App di posta elettronica iOS non possono decrittografare i messaggi protetti con
   
 Se si sceglie di non consentire i messaggi decrittografati vengano inviate a iOS gli utenti di app di posta, gli utenti ricevono un messaggio che indica che non dispongono dei diritti per visualizzare il messaggio. Per impostazione predefinita, non è abilitata sul lato servizio la decrittografia dei messaggi di posta elettronica.
   
-Per ulteriori informazioni e per una visualizzazione dell'esperienza client, vedere la sezione "[visualizzare messaggi crittografati all'iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf#iOSEncryptedMail)" in [visualizzare messaggi crittografati all'iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Per ulteriori informazioni e per una visualizzazione dell'esperienza client, vedere [visualizzazione di messaggi all'iPhone o iPad crittografati](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### <a name="to-manage-whether-or-not-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Per gestire gli utenti di app di posta iOS o meno possibile visualizzare i messaggi protetti da Office 365 Message Encryption
   
@@ -107,19 +119,25 @@ Per ulteriori informazioni e per una visualizzazione dell'esperienza client, ved
 
 2. Eseguire il cmdlet Set-ActiveSyncOrganizations con il parametro AllowRMSSupportForUnenlightenedApps:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
+   ```
 
    Ad esempio, per configurare il servizio per decrittografare i messaggi prima che vengano inviati a App unenlightened come il iOS posta app:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
+   ```
 
    In alternativa, per configurare il servizio non consente di inviare i messaggi decrittografati per le applicazioni unenlightened:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Abilitare la decrittografia lato del servizio di allegati di posta elettronica per i client di posta elettronica web browser
 
-In genere, quando si utilizza la crittografia dei messaggi di Office 365, gli allegati vengono automaticamente crittografati. Amministratore di Office 365, è possibile applicare la decrittografia lato del servizio per gli allegati di posta elettronica che gli utenti il download da un web browser. 
+In genere, quando si utilizza la crittografia dei messaggi di Office 365, gli allegati vengono automaticamente crittografati. Amministratore di Office 365, è possibile applicare la decrittografia lato del servizio per gli allegati di posta elettronica che gli utenti il download da un web browser.
   
 Quando si sceglie di eseguire questa operazione, il servizio invia una copia del file decrittografata al dispositivo. Il messaggio è ancora crittografato. Allegato di posta elettronica mantiene anche informazioni sui diritti di utilizzo, anche se il browser non si applica diritti di utilizzo sul lato client per utente. Ciò significa che l'utente può copiare o stampare l'allegato di posta elettronica, anche se non è stato originariamente dispongono dei diritti per eseguire questa operazione. Tuttavia, se l'utente tenta di eseguire un'azione che richiede il server di posta di Office 365, ad esempio l'allegato di inoltro il server non consente l'azione se l'utente non è stato originariamente dispone del diritto di utilizzo non venga richiesto.
   
@@ -135,15 +153,21 @@ Per ulteriori informazioni su come viene implementata la crittografia dei messag
 
 2. Eseguire il cmdlet Set-IRMConfiguration con il parametro DecryptAttachmentFromPortal:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   ```
 
    Ad esempio, per configurare il servizio per decrittografare gli allegati di posta elettronica quando l'utente li scarica da un web browser:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $true```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   ```
 
    Per configurare il servizio per lasciare invariati gli allegati di posta elettronica crittografati durante il download:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $false```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   ```
 
 ## <a name="customizing-the-appearance-of-email-messages-and-the-ome-portal"></a>Personalizzazione dell'aspetto dei messaggi di posta elettronica e il portale OME
 
@@ -159,8 +183,12 @@ Per informazioni dettagliate su come personalizzare OME per l'organizzazione, ve
 
 2. Se è abilitato il pulsante di **protezione** in Outlook sul web, disabilitarla eseguendo il cmdlet Set-IRMConfiguration con il parametro SimplifiedClientAccessEnabled. In caso contrario, ignorare questo passaggio.
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
 3. Disattivare le nuove funzionalità per OME eseguendo il cmdlet Set-IRMConfiguration con il parametro AzureRMSLicensingEnabled impostato su false:
 
-   ```Set-IRMConfiguration -AzureRMSLicensingEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -AzureRMSLicensingEnabled $false
+   ```

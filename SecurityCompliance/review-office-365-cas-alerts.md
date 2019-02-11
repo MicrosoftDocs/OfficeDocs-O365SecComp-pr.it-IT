@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilizzare la pagina avvisi di protezione di applicazioni di Office 365 Cloud per visualizzare i potenziali problemi ed eseguire azioni. È possibile ignorare o risolvere gli avvisi e se necessario, sospendere un account utente.
-ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014828"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603677"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Esaminare gli avvisi per intervenire in Office 365 Cloud App Security
   
@@ -32,13 +32,9 @@ ms.locfileid: "28014828"
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Come ottenere la pagina avvisi
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. 
-    
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
-    
-3. Scegliere **Vai a Office 365 Cloud App protezione**.<br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Accedere al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso.
   
-4. Nella barra di spostamento nella parte superiore dello schermo, scegliere **avvisi**.<br/>![Nella pagina avvisi, è possibile visualizzare gli avvisi sono state attivate e le azioni eseguite.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. Nella barra di spostamento nella parte superiore dello schermo, scegliere **avvisi**.<br/>![Nella pagina avvisi, è possibile visualizzare gli avvisi sono state attivate e le azioni eseguite.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Revisione e gestire gli avvisi
 

@@ -3,7 +3,7 @@ title: Dettagli tecnici di riferimento sulla crittografia in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Visualizzare i dettagli tecnici sulle crittografia in Office 365.
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026523"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326937"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Dettagli tecnici di riferimento sulla crittografia in Office 365
 
 Fare riferimento a questo articolo per informazioni sui certificati, tecnologie e TLS famiglie di prodotti di crittografia utilizzati per [la crittografia in Office 365](encryption.md). In questo articolo sono inoltre disponibili informazioni dettagliate sui deprecate pianificati.
   
 - Se si sta cercando panoramica delle informazioni, vedere [crittografia in Office 365](encryption.md).
-    
 - Se si sta cercando informazioni sull'installazione, vedere [configurazione di crittografia in Office 365 Enterprise](set-up-encryption.md).
+- Per informazioni sui gruppi di crittografia supportato da versioni specifiche di Windows, vedere [Famiglie di prodotti di crittografia in TLS/SSL (provider di servizi condivisi Schannel)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gestione e proprietà dei certificati di Microsoft Office 365
 
@@ -35,7 +35,10 @@ Dal momento che Microsoft utilizza il proprio certificato, non è necessario acq
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Standard di crittografia corrente e deprecate pianificati
 
-Per continuare a fornire la crittografia ottimale in classe per Office 365, Microsoft vengono esaminati regolarmente standard di crittografia supportato. In alcuni casi, è necessario rendere obsoleti i vecchi standard man mano che diventano aggiornato ed è pertanto meno sicuro. In questo argomento viene pacchetto di crittografia attualmente supportato e altri standard, nonché informazioni dettagliate sulle deprecate pianificati.
+Per continuare a fornire la crittografia ottimale in classe per Office 365, Microsoft vengono esaminati regolarmente standard di crittografia supportato. In alcuni casi, è necessario rendere obsoleti i vecchi standard man mano che diventano aggiornato ed è pertanto meno sicuro. In questo argomento viene pacchetto di crittografia attualmente supportato e altri standard, nonché informazioni dettagliate sulle deprecate pianificati. 
+
+## <a name="fips-compliance-for-office-365"></a>Conformità FIPS per Office 365
+Tutti i gruppi di crittografia supportati da Office 365 utilizzano algoritmi accettabili in FIPS 140-2. Office 365 eredita le convalide FIPS da Windows (fino a Schannel). Per informazioni su Schannel, vedere [Famiglie di prodotti di crittografia in TLS/SSL (provider di servizi condivisi Schannel)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versioni di TLS supportati da Office 365
 
@@ -89,6 +92,8 @@ Un pacchetto di crittografia è una raccolta di algoritmi di crittografia utiliz
   
 |**Protocolli**|**Nome del pacchetto di crittografia**|**Algoritmo di scambio di chiave**|**Supporto di Perfect Forward Secrecy**|**Algoritmo di autenticazione/forza**|**Crittografia/Forza**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Sì  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Sì  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Sì  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Sì  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Sì  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ Un pacchetto di crittografia è una raccolta di algoritmi di crittografia utiliz
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-<a name="TLSCipherSuites"> </a>
+[Famiglie di prodotti crittografia TLS in Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Crittografia in Office 365](encryption.md)
   

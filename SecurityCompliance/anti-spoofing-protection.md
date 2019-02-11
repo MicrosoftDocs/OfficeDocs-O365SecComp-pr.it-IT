@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769860"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614510"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Motivo**|**Descrizione**|
-|0XX|Messaggio di autenticazione composito non riuscita.<br/>**000** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio.                    -001 indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita. Ciò significa che il dominio di invio non dispone di record di autenticazione di posta elettronica pubblicati o in caso affermativo, aveva un criterio di errori più vulnerabile (fail soft SPF o indipendente dalla DMARC, il criterio di p = none).<br/>**002** indica che l'organizzazione dispone di un criterio per la coppia di mittente o il dominio in modo esplicito è consentito l'invio di posta elettronica falsificato, questa impostazione viene impostata manualmente dall'amministratore.  <br/>**010** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio e il dominio di invio è uno dei domini dell'organizzazione accettati (fanno parte della self a sé o intra-org, lo spoofing).  <br/>**011** indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita e il dominio di invio è uno dei domini accettati dell'organizzazione (fanno parte della self a sé o intra-org, lo spoofing).|
+|0XX|Messaggio di autenticazione composito non riuscita.<br/>**000** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio.  <br/>**001** indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita. Ciò significa che il dominio di invio non dispone di record di autenticazione di posta elettronica pubblicati o in caso affermativo, aveva un criterio di errori più vulnerabile (fail soft SPF o indipendente dalla DMARC, il criterio di p = none).<br/>**002** indica che l'organizzazione dispone di un criterio per la coppia di mittente o il dominio in modo esplicito è consentito l'invio di posta elettronica falsificato, questa impostazione viene impostata manualmente dall'amministratore.  <br/>**010** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio e il dominio di invio è uno dei domini dell'organizzazione accettati (fanno parte della self a sé o intra-org, lo spoofing).  <br/>**011** indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita e il dominio di invio è uno dei domini accettati dell'organizzazione (fanno parte della self a sé o intra-org, lo spoofing).|
 |Tutti gli altri codici (1xx, 2xx, 3xx, 4xx, 5xx)|Corrisponde a diversi codici interni per il motivo per cui un messaggio passato autenticazione implicita oppure non dispone di alcun tipo di autenticazione, ma è stata applicata alcuna azione.|
    
 Esaminando le intestazioni del messaggio, un amministratore o persino un utente finale può determinare come Office 365 arriva alla conclusione che il mittente può essere eseguito lo spoofing.
@@ -415,20 +415,20 @@ In generale, il criterio applicato a un messaggio viene identificato nell'intest
 |**Priorità**|**Criterio**|**Categoria**|**Dove gestite?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|3  <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|4  <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
-|5  <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|6  <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|7  <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
-|8  <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
+|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|3   <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|4   <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
+|5   <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|6   <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|7   <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
+|8   <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
    
 Se si dispone di più criteri Anti-phishing diversi, verrà applicato quello la priorità più alta. Ad esempio, se che si dispone di due criteri:
   
 |**Criterio**|**Priorità**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |Attivato  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |Attivato  <br/> |
    
 Se è disponibile in un messaggio e viene identificato come rappresentazione di spoofing e utente e ambito è lo stesso insieme di utenti al criterio A e B criteri, quindi il messaggio viene considerato come un spoofing, ma non viene applicata alcuna azione dopo anti-spoofing è disattivato , e lo SPOOFING esegue una priorità superiore (4) di rappresentazione utente (8).
   

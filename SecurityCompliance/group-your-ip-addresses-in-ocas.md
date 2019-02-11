@@ -3,7 +3,7 @@ title: Raggruppare gli indirizzi IP per semplificare la gestione in Office 365 C
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/22/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Per identificare facilmente i set di indirizzi IP che verrà utilizzato nella sicurezza di App per Office 365 Cloud, ad esempio gli indirizzi IP ufficio fisico, è possibile impostare i gruppi di intervalli di indirizzi IP.
-ms.openlocfilehash: 76cb9625a46d1f5eceaab696de5dcbb72f4d2b47
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 42a62d2dd9771fb7d3ac992f4e0f8b5f6826efe3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530221"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603737"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Raggruppare gli indirizzi IP per semplificare la gestione in Office 365 Cloud App Security
   
@@ -35,21 +35,13 @@ Ogni gruppo di intervalli IP può essere contrassegnata con i nomi dei tag che s
   
 ## <a name="to-set-up-an-ip-address-range-in-office-365-cloud-app-security"></a>Per impostare un intervallo di indirizzi IP in sicurezza App Cloud di Office 365
 
-1. Un amministratore globale o un amministratore di protezione, passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'account di lavoro o della scuola. (Si passa alla sicurezza &amp; centro conformità.) 
+1. Un amministratore globale o un amministratore di protezione, passare al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso.
     
-2. In sicurezza &amp; centro conformità, selezionare **avvisi** \> **Gestione avanzata degli avvisi**.
-    
-3. Scegliere **Vai a Office 365 Cloud App protezione**.
-    
-    ![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+2. Nell'angolo in basso a destra della pagina, fare clic su **Impostazioni** \> **intervalli di indirizzi IP**.<br>![In Office 365 Cloud App sicurezza scegliere le impostazioni di accedere alle impostazioni di sistema e dei dati](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)<br>
   
-4. Nell'angolo in basso a destra della pagina, fare clic su **Impostazioni** \> **intervalli di indirizzi IP**.
+3. Fare clic sul pulsante nuovo, che è simile a un segno di addizione ( **+**).
     
-    ![In Office 365 Cloud App sicurezza scegliere le impostazioni di accedere alle impostazioni di sistema e dei dati](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)
-  
-5. Fare clic sul pulsante nuovo, che è simile a un segno di addizione ( **+**).
-    
-6. Nella finestra **nuovo indirizzo IP** , specificare i valori seguenti: 
+4. Nella finestra **nuovo indirizzo IP** , specificare i valori seguenti: 
     
 |**Campo o un elenco**|**cosa fare**|
 |:-----|:-----|
@@ -59,7 +51,7 @@ Ogni gruppo di intervalli IP può essere contrassegnata con i nomi dei tag che s
 |**Tag** <br/> |Utilizzare i tag per denominare i gruppi di indirizzi IP. (A differenza di campo nome verranno visualizzati i tag di registri attività.) Digitare una parola o frase che si desidera utilizzare per un tag. È possibile aggiungere tutti i tag desiderati per ogni intervallo di indirizzi IP. E se è già stato configurato un tag e si desidera aggiungere questo intervallo di indirizzi IP, selezionare dall'elenco dei tag corrente vengono visualizzate quando si inizia a digitare.  <br/> |
 |**Categoria** <br/> | Assegnare le categorie per il tag per facilitare la riconosce le attività che provengono da determinati indirizzi IP. Scegliere una delle opzioni seguenti:<br/> **Amministrazione** Tutti gli indirizzi IP del gruppo di amministratori.  <br/> **Provider cloud** L'indirizzo IP del proxy nel cloud.  <br/> **Aziendale** Tutti gli IP indirizzi nella rete interna, le filiali e gli indirizzi di roaming Wi-Fi.  <br/> **Rischioso** Tutti gli indirizzi IP che si considera rischioso, ad esempio gli indirizzi IP sospetti è siano indicato in precedenza, gli indirizzi IP nelle reti concorrenti e così via. Per impostazione predefinita, le categorie rischiose include due tag IP: **proxy anonimo** e **TR** <br/> **VPN** Tutti gli indirizzi IP che utilizzano i dipendenti remoti.  <br/> |
    
-7. Fare clic su **Salva**.
+7. Scegliere **Save**.
     
 Dopo aver impostato le intervalli di indirizzi IP, tenere presente che solo futuri eventi sono interessati da queste modifiche.
   
@@ -71,6 +63,6 @@ Dopo aver impostato le intervalli di indirizzi IP, tenere presente che solo futu
     
 - [Integrare il server SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Esaminare e intervenire sugli avvisi in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
+- [Esaminare gli avvisi per intervenire in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     
 

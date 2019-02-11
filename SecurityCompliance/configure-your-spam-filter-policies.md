@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Impostazioni del filtro posta indesiderata base includono selezionando l'azione da eseguire sui messaggi che vengono identificati come posta indesiderata e scegliendo se si desidera filtrare i messaggi scritti in determinate lingue o inviati da determinati paesi o aree.
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180896"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614480"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
   
@@ -51,7 +51,7 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
     
       - **Elimina messaggio** Elimina l'intero messaggio, inclusi gli allegati. 
         
-      - **Messaggio in quarantena** Il messaggio non viene inviato ai destinatari, ma viene messo in quarantena. Selezionando questa opzione nella casella di controllo **Mantieni posta indesiderata per (giorni)**, si specifica per quanti giorni i messaggi indesiderati vengono messi in quarantena (il messaggio viene eliminato automaticamente al termine del tempo trascorso. Il valore predefinito massimo è 15 giorni. Il valore minimo è 1 giorno).<br/><br/>Suggerimento: Per informazioni su come gli amministratori possono gestire i messaggi di posta elettronica che risiedono nella quarantena in EAC, vedere [Quarantine](quarantine.md) e [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md). > Per informazioni su come configurare i messaggi di notifica di posta indesiderata da inviare agli utenti, vedere [Configure dell'utente finale in EOP le notifiche di posta indesiderata](configure-end-user-spam-notifications-in-eop.md) o [Configure End-User spam notifiche di Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+      - **Messaggio in quarantena** Il messaggio non viene inviato ai destinatari, ma viene messo in quarantena. Selezionando questa opzione nella casella di controllo **Mantieni posta indesiderata per (giorni)**, si specifica per quanti giorni i messaggi indesiderati vengono messi in quarantena (il messaggio viene eliminato automaticamente al termine del tempo trascorso. Il valore predefinito massimo è 15 giorni. Il valore minimo è 1 giorno).<br/><br/>Suggerimento: Per informazioni su come gli amministratori possono gestire i messaggi di posta elettronica che risiedono nella quarantena in EAC, vedere [Quarantine](quarantine.md) e [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md). gt _ per informazioni su come configurare i messaggi di notifica di posta indesiderata da inviare agli utenti, vedere [Configure dell'utente finale in EOP le notifiche di posta indesiderata](configure-end-user-spam-notifications-in-eop.md) o [Configure End-User spam notifiche di Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
       - **Sposta messaggio nella cartella Posta indesiderata** Sposta i messaggi di destinatari specifici nella cartella Posta indesiderata. Questa è un'azione predefinita per entrambi i livelli di probabilità di posta indesiderata.<br/><br/>**Importante: Per i clienti di Exchange Online Protection (EOP): perché questa azione per l'utilizzo con cassette postali locali, è necessario configurare due regole di trasporto di Exchange sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [verificare che la posta indesiderata sia instradata nella cartella posta indesiderata di ogni utente](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
   
@@ -62,6 +62,8 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
       - Se si includono spazi all'interno del testo dell'intestazione personalizzata o se ci si aggiunge due punti (ad esempio "X si tratta di intestazione personalizzata" o "X-This-is-my-custom-header:"), il testo X-header ripristinata l'impostazione predefinita come "X questa-viene-posta indesiderata: viene visualizzato questo messaggio di posta indesiderata."
     
       - Non è possibile specificare il testo dell'intestazione nel formato \< *intestazione*  \>:\<  *valore*  \>. In questo caso, entrambi i valori prima e dopo che i due punti verranno ignorato e viene visualizzato il testo X-header predefinito: "X questa-viene-posta indesiderata: viene visualizzato questo messaggio di posta indesiderata." 
+      
+      - Tenere presente che messaggi con questo X-header possono quindi essere comunque spostati nella cartella posta indesiderata della cassetta postale a causa di configurazione di posta indesiderata della cassetta postale. È possibile modificare questa impostazione disabilitare questa funzionalità con Set-MailboxJunkEmailConfiguration.
         
       - **Prepend oggetto del messaggio con testo** Invia il messaggio al destinatario ma antepone riga dell'oggetto con il testo specificato nella casella **prefisso** all'oggetto del messaggio con il testo input. Utilizzando il testo come identificatore, se lo si desidera creare le regole per filtrare o instradare i messaggi in base alle necessità. 
         
@@ -112,7 +114,7 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
 16. Fare clic su **salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri.
 
 > [!TIP]
->  È possibile selezionare o deselezionare le caselle di controllo nella colonna **attivato** per attivare o disattivare i criteri personalizzati. Per impostazione predefinita, tutti i criteri sono abilitati. Il criterio predefinito non può essere disattivato. > Per eliminare un criterio personalizzato, selezionare il criterio, fare clic sul ![sull'icona cestino](media/ITPro-EAC-DeleteIcon.gif) icona **eliminare** , quindi confermare che si desidera eliminare il criterio. Impossibile eliminare il criterio predefinito. > Criteri personalizzati hanno sempre la precedenza sul criterio predefinito. Criteri personalizzati eseguiti nell'ordine inverso in cui è stato creato li (da meno recente al più recente), ma è possibile modificare la priorità (in esecuzione ordine) dei criteri personalizzati facendo clic sul ![sull'icona di freccia su](media/ITPro-EAC-UpArrowIcon.gif) freccia su e ![icona di freccia verso il basso](media/ITPro-EAC-DownArrowIcon.gif) verso il basso freccia. Il criterio con **priorità** **0** eseguirà primo, seguita da **1**, quindi **2**e così via. 
+>  È possibile selezionare o deselezionare le caselle di controllo nella colonna **attivato** per attivare o disattivare i criteri personalizzati. Per impostazione predefinita, tutti i criteri sono abilitati. Il criterio predefinito non può essere disattivato. gt _ per eliminare un criterio personalizzato, selezionare il criterio, fare clic sul ![sull'icona cestino](media/ITPro-EAC-DeleteIcon.gif) icona **eliminare** , quindi confermare che si desidera eliminare il criterio. Impossibile eliminare il criterio predefinito. i criteri personalizzato gt _ hanno sempre la precedenza sul criterio predefinito. Criteri personalizzati eseguiti nell'ordine inverso in cui è stato creato li (da meno recente al più recente), ma è possibile modificare la priorità (in esecuzione ordine) dei criteri personalizzati facendo clic sul ![sull'icona di freccia su](media/ITPro-EAC-UpArrowIcon.gif) freccia su e ![icona di freccia verso il basso](media/ITPro-EAC-DownArrowIcon.gif) verso il basso freccia. Il criterio con **priorità** **0** eseguirà primo, seguita da **1**, quindi **2**e così via. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Utilizzo di PowerShell per la configurazione dei criteri di filtro di protezione dalla posta indesiderata
 

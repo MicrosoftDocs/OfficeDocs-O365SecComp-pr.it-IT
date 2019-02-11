@@ -12,14 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Panoramica delle pagine di avviso che potrebbero essere visualizzati quando la protezione di Office 365 avanzate rischio è in ufficio.
-ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238268"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686355"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pagine di avviso degli strumenti di analisi collegamenti attendibili di Office 365
+
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Protezione di Office 365 rischio avanzate](office-365-atp.md) (Degli strumenti di analisi) contribuisce a proteggere l'organizzazione di tentativi di phishing e malware tramite le funzionalità, ad esempio [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md), [Gli allegati sicuri degli strumenti di analisi](atp-safe-attachments.md)e [protezione anti - phishing](anti-phishing-protection.md). Una volta protezione sul posto, vengono verificati i collegamenti (URL) in Office documenti e messaggi di posta elettronica. Se un URL viene identificato come potenzialmente dannoso o volontario, potrebbe essere bloccati di aprire l'URL quando si fa clic sopra. Anziché accedere direttamente del sito, è possibile visualizzare una pagina di avviso. 
   

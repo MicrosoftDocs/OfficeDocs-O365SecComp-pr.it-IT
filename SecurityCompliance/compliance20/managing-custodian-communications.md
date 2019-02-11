@@ -1,5 +1,5 @@
 ---
-title: Utilizzo delle comunicazioni di eDiscovery avanzate (Preview)
+title: Lavorare con le comunicazioni di eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607953"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695042"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>Utilizzo delle comunicazioni di eDiscovery avanzate (Preview)
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Lavorare con le comunicazioni di eDiscovery avanzate (Preview)
 
 EDiscovery avanzate (Preview) consente al reparto legale di semplificare i processi intorno a gestione e la distribuzione delle notifiche di conservazione a fini giudiziari. La caratteristica di comunicazioni depositaria consente al reparto legale di gestire e automatizzare i processi di conservazione a fini giudiziari intera - da notifiche e promemoria escalation - tutti in un unico sito.
 

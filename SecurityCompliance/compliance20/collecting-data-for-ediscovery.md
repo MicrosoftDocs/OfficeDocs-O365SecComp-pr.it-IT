@@ -1,5 +1,5 @@
 ---
-title: La raccolta dei dati per un caso di eDiscovery avanzate (Preview)
+title: Raccogliere i dati per un caso di eDiscovery avanzate (Preview)
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607922"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695052"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>La raccolta dei dati per un caso di eDiscovery avanzate (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Raccogliere i dati per un caso di eDiscovery avanzate (Preview)
 
 Dopo aver identificato depositari e origini dati di interesse per i casi, è necessario identificare il set di documenti da approfondire. È possibile utilizzare lo strumento di ricerca di eDiscovery avanzate (Preview) per individuare tali da posizioni detentive e non detentive in Office 365.
 

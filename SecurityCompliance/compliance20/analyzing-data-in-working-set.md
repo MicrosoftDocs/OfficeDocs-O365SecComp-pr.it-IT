@@ -1,5 +1,5 @@
 ---
-title: Analisi dei dati in un working set di eDiscovery avanzate (Preview)
+title: Analizzare i dati in un working set di eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607879"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695142"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analisi dei dati in un working set di eDiscovery avanzate (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analizzare i dati in un working set di eDiscovery avanzate (Preview)
 
 Quando il numero di raccolti documenti di grandi dimensioni, può essere molto difficile esaminare tutte. EDiscovery avanzate (Preview) offre una serie di strumenti per analizzare i documenti in modo da ridurre il volume di documenti per la revisione senza perdita di informazioni e che consentono di organizzare i documenti in modo coerente. Per ulteriori informazioni su queste funzionalità, vedere:
 
-- [Quasi duplicati](near-duplicates.md)
-- [Messaggio di posta elettronica threading](email-threading.md)
+- [Rilevamento dei documenti simili](near-duplicates.md)
+- [Threading posta elettronica](email-threading.md)
 - [Temi](themes.md)
 
 Per analizzare i dati in un gruppo di lavoro:

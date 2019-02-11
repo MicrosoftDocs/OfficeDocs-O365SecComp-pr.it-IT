@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "Un suggerimento per il criterio è una notifica o un avviso che viene visualizzato quando un utente funzioni correttamente con il contenuto in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e suggerimenti sui criteri per aumentare la consapevolezza e consentono di informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti l'opzione per ignorare il criterio, in modo che non è bloccati se dispongono di un'azienda valida necessario o se il criterio rilevamento di un falso positivo. "
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769915"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25803997"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Invio di notifiche di posta elettronica e la visualizzazione di suggerimenti sui criteri per i criteri DLP
 
@@ -49,7 +49,7 @@ In Office 365 Security &amp; centro conformità, quando si crea un criterio DLP,
 
 Quando si crea un criterio DLP, le notifiche tramite posta elettronica e suggerimenti sui criteri fanno parte della sezione **notifiche utente** . 
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando l'account di lavoro o della scuola. L'utente è ora in Office 365 protezione &amp; centro conformità.
     
@@ -90,7 +90,7 @@ Per ogni regola in un criterio DLP, è possibile:
 - Personalizzare il testo incluso nella notifica tramite HTML o i token. Vedere la sezione seguente per ulteriori informazioni.
     
 > [!NOTE]
->  Notifiche tramite posta elettronica possono essere inviati soltanto a singoli destinatari, ovvero non gruppi o le liste di distribuzione. > Nuovo contenuto solo attiverà una notifica tramite posta elettronica. Modifica del contenuto esistente attiverà suggerimenti sui criteri, ma non una notifica tramite posta elettronica. 
+>  Notifiche tramite posta elettronica possono essere inviati soltanto a singoli destinatari, ovvero non gruppi o le liste di distribuzione. gt _ solo il contenuto nuovo attiverà una notifica tramite posta elettronica. Modifica del contenuto esistente attiverà suggerimenti sui criteri, ma non una notifica tramite posta elettronica. 
   
 ![Opzioni di notifica di posta elettronica](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Le notifiche hanno una riga dell'oggetto che inizia con l'azione eseguita, ad es
 ![Messaggio di notifica](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 Per impostazione predefinita, le notifiche consentono di visualizzare testo simile a quanto segue per un elemento in un sito. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
-  
-| |
+
 |**Se la regola del criterio DLP…**|**Quindi notifica predefinito di SharePoint o OneDrive per i documenti aziendali che informa che si...**|**Quindi notifica predefinito per i messaggi di Outlook che informa che si...**|
 |:-----|:-----|:-----|
 |Invia una notifica, ma non consente di sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |Il messaggio di posta elettronica messaggio è in conflitto con un criterio nell'organizzazione.  <br/> |
@@ -114,8 +113,7 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 È possibile creare una notifica tramite posta elettronica personalizzato invece di inviare la notifica di posta elettronica predefinito per i utenti finali o gli amministratori. La notifica di posta elettronica personalizzato supporta HTML e ha un limite di 5.000 caratteri. È possibile utilizzare HTML per includere le immagini, la formattazione e altri marchi nella notifica.
   
 È inoltre possibile utilizzare i token seguenti per personalizzare la notifica di posta elettronica. Questi token sono variabili che sono state sostituite da informazioni specifiche nella notifica inviata.
-  
-| |
+
 |**Token**|**Descrizione**|
 |:-----|:-----|
 |% % AppliedActions % %  <br/> |Le azioni applicate al contenuto.  <br/> |
@@ -177,8 +175,7 @@ I criteri DLP sono sincronizzati con i siti e il contenuto viene valutato period
 ### <a name="default-text-for-policy-tips-on-sites"></a>Testo predefinito per i suggerimenti dei criteri nei siti
 
 Per impostazione predefinita, i suggerimenti per i criteri consentono di visualizzare testo simile a quanto segue per un elemento in un sito. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
-  
-| |
+
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
 |Invia una notifica, ma non consente di sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |

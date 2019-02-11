@@ -1,9 +1,9 @@
 ---
 title: Panoramica su Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026693"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686365"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -44,11 +44,16 @@ EOP viene eseguito in una rete globale di centri dati progettati per offrire la 
   
 EOP esegue il bilanciamento del carico tra i datacenter ma solo all'intero di un'area geografica. In caso di provisioning in un'unica area geografica, tutti i messaggi saranno elaborati utilizzando il routing della posta per tale area geografica. L'elenco seguente mostra il modo in cui funziona il routing della posta regionale per i datacenter EOP:
   
-- America del, Online Exchange tutte le cassette postali si trovano in datacenter negli Stati Uniti, ad eccezione dei Sud America in cui vengono utilizzati datacenter in Brasile e Cile e in Canada in cui vengono utilizzati i Data Center in Canada. Tutti i messaggi di posta elettronica, inclusi i messaggi per i clienti Sud America e in Canada, vengono instradati tramite Data Center statunitense per il filtraggio EOP; Tuttavia la posta visualizzare viene memorizzata nel centro dati in cui si trova il tenant..
     
 - In Europa, Medio Oriente e Africa (EMEA), tutte le cassette postali di Exchange Online si trovano in datacenter situati in EMEA e tutti i messaggi vengono instradati tramite datacenter in EMEA per il filtraggio EOP.
     
-- In Asia Pacifico (APAC), tutte le cassette postali di Exchange Online si trovano in datacenter in APAC, ma i messaggi vengono attualmente instradati tramite datacenter in EMEA per il filtraggio EOP. Questo sistema cambierà nel quarto trimestre del 2014, quando i messaggi saranno instradati tramite datacenter in APAC per il filtraggio EOP.
+- In Asia Pacifico (centro dati), tutte le cassette postali di Exchange Online si trovano in datacenter APAC, ma messaggi attualmente vengono instradati tramite datacenter APAC per il filtraggio EOP.
+=======
+- In America, tutte le cassette postali di Exchange Online si trovano in datacenter negli Stati Uniti, ad eccezione in cui vengono utilizzati i Data Center in Brasile e Cile Sud America e in Canada in cui vengono utilizzati i Data Center in Canada. Tutti i messaggi di posta elettronica, inclusi i messaggi per i clienti Sud America e in Canada, vengono instradati tramite datacenter locale per il filtraggio EOP; visualizzare la posta viene memorizzata nel datacenter del tenant in cui si trova.
+    
+- In Europa, Medio Oriente e Africa (EMEA), tutte le cassette postali di Exchange Online si trovano in datacenter situati in EMEA e tutti i messaggi vengono instradati tramite datacenter in EMEA per il filtraggio EOP.
+    
+- In Asia Pacifico (centro dati), tutte le cassette postali di Exchange Online si trovano in datacenter APAC e messaggi attualmente vengono instradati tramite datacenter APAC per il filtraggio EOP.
     
 - Per GCC (Government Community Cloud) tutte le cassette postali di Exchange Online si trovano in datacenter degli Stati Uniti e tutti i messaggi vengono instradati tramite datacenter statunitensi per il filtraggio EOP.
     

@@ -3,7 +3,7 @@ title: Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Secur
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Dopo che sono state impostate e di implementazione della protezione App Cloud di Office 365, è consigliabile eseguire alcune attività per verificare la configurazione sia corretta e che sta preparato per confrontarsi a intervalli regolari.
-ms.openlocfilehash: bc8cfad8eb9d9444066c3193ec2978e9ffd9f56a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530569"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603707"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security
   
@@ -27,7 +27,7 @@ ms.locfileid: "22530569"
 |[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggio successivo](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Protezione di Office 365 Cloud App è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, protezione di Office 365 Cloud App può essere acquistata come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Protezione di Office 365 Cloud App è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, protezione di Office 365 Cloud App può essere acquistata come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Dopo avere impostato e configurato sicurezza App Cloud di Office 365, sarà si desidera eseguire alcune attività di utilizzo come un amministratore globale di Office 365 o un amministratore della sicurezza per l'organizzazione. 
 
@@ -92,9 +92,9 @@ Se un prolungata periodo di tempo trascorso è inizialmente configurato o manten
     
 - [Sospendere o il ripristino di un account utente](suspend-or-restore-an-account-in-ocas.md)
     
-- [Gestire le autorizzazioni dell'app](manage-app-permissions-in-ocas.md)
+- [Gestire le app OAuth](manage-app-permissions-in-ocas.md)
     
-- [Esaminare i risultati di App Discovery in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+- [Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 - Visualizzare un elenco di [origini dati e registri di traffico Web](web-traffic-logs-and-data-sources-for-ocas.md)
     

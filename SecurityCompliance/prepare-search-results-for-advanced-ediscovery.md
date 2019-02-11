@@ -3,7 +3,7 @@ title: Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto in Office 365 Security &amp; centro conformità per un'ulteriore analisi con lo strumento eDiscovery avanzate.
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038309"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280169"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 
 Dopo una ricerca associata a un caso eDiscovery in Office 365 Security &amp; centro conformità viene eseguito correttamente, è possibile preparare i risultati della ricerca per un'ulteriore analisi con Office 365 avanzate eDiscovery, che consente di analizzare grandi dimensioni, dati non strutturati impostato e ridurre la quantità di dati pertinenti per una controversia legale. Le funzionalità avanzate di eDiscovery includono:
   
-- **Riconoscimento ottico dei caratteri** - quando si preparano automaticamente i risultati di ricerca per eDiscovery avanzata, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae il testo da immagini e ciò include con i risultati della ricerca che vengono caricati in a Avanzate eDiscovery per l'analisi. OCR è supportato per file separati, gli allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche testo di eDiscovery avanzate (quasi duplicati, posta elettronica threading, temi e la scrittura di codice predittiva) per il contenuto del testo nei file di immagine. 
+- **Riconoscimento ottico dei caratteri** - quando si preparano automaticamente i risultati di ricerca per eDiscovery avanzata, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae il testo da immagini e ciò include con i risultati della ricerca che vengono caricati in a Avanzate eDiscovery per l'analisi. OCR è supportato per file separati, gli allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche testo di eDiscovery avanzate (quasi duplicati, posta elettronica threading, temi e la scrittura di codice predittiva) per il contenuto del testo nei file di immagine. Per i file di immagine, eDiscovery avanzate OCR supporta i formati seguenti:
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **Rilevamento quasi duplicati** - è possibile strutturare esaminare dati in modo più efficiente, in modo che una persona viene esaminato un gruppo di documenti simili. Si evita che più revisori la necessità di visualizzare le diverse versioni dello stesso documento. 
     
@@ -37,11 +43,11 @@ Dopo una ricerca associata a un caso eDiscovery in Office 365 Security &amp; cen
     
 - **Esportazione dei dati per esaminare le applicazioni** - è possibile esportare dati da eDiscovery avanzate e Office 365 dopo aver completato l'analisi e ridurre il set di dati. Il pacchetto di esportazione include un file CSV che contiene le proprietà dal contenuto esportato e metadati analitica. Il pacchetto di esportazione può quindi essere importato per un'applicazione di revisione eDiscovery. 
     
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
     
-- È necessario essere una eDiscovery Manager o un'amministratore di Office 365 protezione eDiscovery &amp; centro conformità per preparare i risultati della ricerca eDiscovery avanzate. Una ricerca eDiscovery Manager è un membro del gruppo di ruoli di gestione di eDiscovery. Una ricerca eDiscovery amministratore è anche membro del gruppo di ruoli di gestione di eDiscovery, ma è stato assegnato privilegi aggiuntivi eDiscovery. Per istruzioni sull'assegnazione delle autorizzazioni di amministratore di eDiscovery, vedere il passaggio 1 in [casi di eDiscovery nel centro conformità protezione di Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- È necessario essere una eDiscovery Manager o un'amministratore di Office 365 protezione eDiscovery &amp; centro conformità per preparare i risultati della ricerca eDiscovery avanzate. Una ricerca eDiscovery Manager è un membro del gruppo di ruoli di gestione di eDiscovery. Una ricerca eDiscovery amministratore è anche membro del gruppo di ruoli di gestione di eDiscovery, ma è stato assegnato privilegi aggiuntivi eDiscovery. Per istruzioni sull'assegnazione delle autorizzazioni di amministratore di eDiscovery, vedere il passaggio 1 nella [casi di eDiscovery per la protezione di Office 365 & centro conformità](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 1: Preparare risultati di ricerca per eDiscovery avanzate
 

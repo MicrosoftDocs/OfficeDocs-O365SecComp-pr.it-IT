@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: In questo articolo per informazioni su come attivare Office 365 Advanced Security Management, con tecnologia Cloud App sicurezza in Microsoft Azure.
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014788"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603777"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Attivare Office 365 Cloud App Security
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014788"
 3. Selezionare **attivare la protezione di Office 365 Cloud App**.
     
 4. Scegliere **Vai a Office 365 Cloud App protezione**.<br/>![In sicurezza &amp; centro conformità, selezionare Gestisci avvisi avanzate per accedere alla sicurezza di Office 365 Cloud App](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Verrà visualizzata al portale di protezione di applicazioni di Office 365 Cloud, dove è possibile visualizzare i report e creare o modificare i criteri.
+
+Dopo aver attivato sulla protezione di applicazioni di Office 365 Cloud, è possibile accedere ai portale Cloud App Security, visitare il sito [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e accesso.
     
 > [!NOTE]
 > Quando attiva la protezione di applicazioni di Office 365 Cloud, informazioni sul controllo sull'account utente di Office 365 e le attività dell'utente viene trasferite alla [Protezione di Microsoft Cloud App](https://aka.ms/whatiscas). In questo modo Office 365 fornire avvisi avanzati, filtro e altre caratteristiche che consentono di ottenere informazioni e agire sulle attività potenzialmente dannoso. 

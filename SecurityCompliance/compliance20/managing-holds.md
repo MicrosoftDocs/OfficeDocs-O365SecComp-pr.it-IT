@@ -1,5 +1,5 @@
 ---
-title: Gestione delle esenzioni di eDiscovery avanzate (Preview)
+title: Gestisci archiviazioni di eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607931"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695182"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>Gestione delle esenzioni di eDiscovery avanzate (Preview)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gestisci archiviazioni di eDiscovery avanzate (Preview)
 
 È possibile utilizzare un caso eDiscovery avanzate (Preview) per creare esenzioni per conservare il contenuto che potrebbe essere rilevante al caso. Utilizzo di eDiscovery avanzate (Preview) tenere funzionalità, è possibile effettuare esenzioni depositari e le relative origini dati. Inoltre, è possibile inserire un'esenzione non detentive nelle cassette postali e OneDrive per i siti. Si può inoltre effettuare un'esenzione cassetta postale di gruppo, siti di SharePoint e OneDrive per sito Business per un gruppo di Office 365. Analogamente, è possibile inserire un'esenzione nella cassetta postale e sito in cui sono associati a Microsoft Teams. Quando si effettua i percorsi di contenuti in attesa, il contenuto viene mantenuto finché non si rilascia il depositaria, rimuovere un percorso di dati specifici o eliminare completamente il criterio di conservazione.
 

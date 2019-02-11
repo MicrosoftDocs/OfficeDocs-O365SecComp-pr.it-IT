@@ -1,5 +1,5 @@
 ---
-title: Gestione depositari in un caso eDiscovery avanzate (Preview)
+title: Gestire depositari in un caso eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607945"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706097"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestione depositari in un caso eDiscovery avanzate (Preview)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestire depositari in un caso eDiscovery avanzate (Preview)
 
 La scheda depositari contiene un elenco di tutti i depositari nel caso può essere ordinato. Dopo aver aggiunto depositari a un caso, verranno raccolti automaticamente informazioni dettagliate su ogni depositaria da Azure Active Directory.
 
@@ -70,7 +70,7 @@ Per aggiornare un depositaria e le origini dati selezionati:
   
 4. Aggiornare le selezioni per i percorsi di Exchange e OneDrive facendo clic su **origini dati scegliere**.
   
-5. Aggiungere o rimuovere i team, SharePoint o Exchange le cassette postali mappato all'utente fare clic per **selezionare origini dati aggiuntive**. Per ulteriori informazioni su come è possibile mappare i dati origini a un depositaria, vedere [aggiungere depositari a una ricerca eDiscovery avanzate (Preview) Case](add-custodians-to-case.md).
+5. Aggiungere o rimuovere i team, SharePoint o Exchange le cassette postali mappato all'utente fare clic per **selezionare origini dati aggiuntive**. Per ulteriori informazioni su come è possibile mappare i dati origini a un depositaria, vedere [Add depositari a un caso](add-custodians-to-case.md).
   
 6. Per aggiornare lo stato di conservazione depositaria, fare clic su **archiviazioni sul posto detentive**e abilitare o disabilitare l'archiviazione per depositari.
 
@@ -95,7 +95,7 @@ Per attivare un processo di indicizzazione nuovamente all'indirizzo parzialmente
 
 5. Tenere traccia dello stato per il processo di indicizzazione nuovamente anche nella scheda **processi** .
 
-Per ulteriori informazioni sugli elementi indicizzati parzialmente monitorando e la nuova indicizzazione, vedere [correzione elaborazione degli errori di eDiscovery avanzate (Preview)](processing-data-for-case.md).
+Per ulteriori informazioni sugli elementi indicizzati parzialmente monitorando e la nuova indicizzazione, vedere [correggere gli errori di elaborazione](processing-data-for-case.md).
 
 ## <a name="releasing-a-custodian-from-a-case"></a>Rilasciare un depositaria dal caso
 
@@ -118,6 +118,5 @@ Per rilasciare un depositaria:
 
 ## <a name="related-information"></a>Informazioni correlate
 
- - Attributi dell'utente in Active Directory 
- - [Risoluzione dei problemi di errore durante l'elaborazione dei dati](error-remediation.md) 
- - [Utilizzo delle comunicazioni](managing-custodian-communications.md)
+ - [Correzione degli errori durante l'elaborazione dei dati](error-remediation.md) 
+- [Uso delle comunicazioni](managing-custodian-communications.md)

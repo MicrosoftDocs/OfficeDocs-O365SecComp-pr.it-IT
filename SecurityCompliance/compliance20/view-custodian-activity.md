@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607888"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706147"
 ---
-# <a name="viewing-custodian-audit-activity"></a>Visualizzazione depositaria controllare l'attività
+# <a name="view-custodian-audit-activity"></a>Visualizza depositaria controllo attività
 
 Sai dove trovare se un utente di visualizzata un documento specifico o eliminato un elemento dalla cassetta postale? EDiscovery avanzate (Preview) è ora integrato con lo strumento di controllo Registro ricerca esistente in & la sicurezza centro conformità. Tramite questa esperienza incorporata, è possibile utilizzare lo strumento di gestione depositaria eDiscovery avanzate (Preview) allo scopo di facilitare le indagini facilmente accedendo e cercare l'attività depositari all'interno del case.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 È necessario disporre del ruolo registri di controllo View-Only o i registri di controllo di Exchange Online per la ricerca nel Registro di controllo di Office 365. Per impostazione predefinita, questi ruoli vengono assegnati per la gestione della conformità e i gruppi di ruoli Gestione organizzazione nella pagina autorizzazioni nell'interfaccia di amministrazione di Exchange. Per assegnare a un utente la possibilità di eseguire ricerche nel Registro di controllo eDiscovery avanzate (Preview) con il livello minimo di privilegi, si può creare un gruppo di ruoli personalizzati in Exchange Online, aggiungere il ruolo registri di controllo View-Only o i registri di controllo e quindi aggiungere l'utente come membri del nuovo gr di ruolo Includi gruppo. Per ulteriori informazioni, vedere Manage role groups in Exchange Online.
 
@@ -101,8 +101,4 @@ Per filtrare i risultati:
 
 3. Dopo aver selezionato un'opzione di esportazione, nella parte inferiore della finestra in cui viene chiesto di aprire il file CSV, salvarlo nella cartella download o salvarlo in una determinata cartella viene visualizzato un messaggio
 
-[!NOTE] 
- Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca di log di controllo, vedere:
-   - Visualizza l'elenco di attività controllata 
-   - Prima di iniziare: I registri di controllo unificato
- 
+Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione risultati di ricerca di log di controllo, vedere [ricerca il controllo accesso & la protezione di Office 365 centro conformità](../search-the-audit-log-in-security-and-compliance.md).

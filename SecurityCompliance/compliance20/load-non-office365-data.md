@@ -1,5 +1,5 @@
 ---
-title: Caricare i dati non Office 365 in un working set
+title: Caricare dati non Office 365 in un set di lavoro
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,30 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607916"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706087"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>Caricare i dati non Office 365 in un working set
+# <a name="load-non-office-365-data-into-a-working-set"></a>Caricare dati non Office 365 in un set di lavoro
 
 Non tutti i documenti che potrebbe essere necessario per l'analisi con Office 365 avanzate eDiscovery risiederanno in Office 365. Con il contenuto Non Office 365 importare funzionalità di eDiscovery avanzate che è possibile caricare documenti che non si trovano in Office 365 in un set di lavoro in modo che viene analizzato con eDiscovery avanzate. Questa procedura viene illustrato come portare i documenti non Office 365 in eDiscovery avanzate per l'analisi.
 
 >[!Note]
 >Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile richiedere una valutazione di Office 365 Enterprise E5.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 Utilizzando la caratteristica di caricamento Non Office 365, come descritto in questa procedura è necessario disporre:
-* Un Office 365 E3 con sottoscrizione E5 o componente aggiuntivo di conformità avanzate
-* Tutti i depositari viene caricato il cui contenuto non Office 365 devono disporre E3 con licenze E5 o componente aggiuntivo di conformità avanzate
-* Un caso eDiscovery esistente
-* Tutti i file per caricamento raccolte in cartelle in cui vi è una cartella per depositaria e le cartelle è denominato in questo formato *alias@domainname* . *Alias@domainname* deve essere dominio e l'alias di utenti di Office 365. È possibile raccogliere tutte le cartelle *alias@domainname* in una cartella radice. La cartella radice può contenere solo le cartelle *alias@domainname* , non deve esistere alcun file separati nella cartella radice
-* Un account che rappresenta una ricerca eDiscovery Manager o eDiscovery amministratore Microsoft Azure Storage installati gli strumenti in un computer che dispone dell'accesso per la struttura di cartelle del contenuto non Office 365.
-* Installare AzCopy, è possibile ottenere questo risultato da qui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- Un Office 365 E3 con sottoscrizione E5 o componente aggiuntivo di conformità avanzate.
+
+- Tutti i depositari viene caricato il cui contenuto non Office 365 devono disporre E3 con licenze E5 o componente aggiuntivo di conformità avanzate.
+
+- Un caso eDiscovery esistente.
+
+- Tutti i file per caricamento raccolte in cartelle in cui vi è una cartella per depositaria e le cartelle è denominato in questo formato *alias@domainname* . *Alias@domainname* deve essere dominio e l'alias di utenti di Office 365. È possibile raccogliere tutte le cartelle *alias@domainname* in una cartella radice. La cartella radice può contenere solo le cartelle *alias@domainname* , non deve esistere alcun file separati nella cartella radice.
+
+- Un account che rappresenta una ricerca eDiscovery Manager o eDiscovery amministratore Microsoft Azure Storage installati gli strumenti in un computer che dispone dell'accesso per la struttura di cartelle del contenuto non Office 365.
+
+- Installare AzCopy, è possibile eseguire da qui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in eDiscovery avanzate
+
 1. Come eDiscovery Manager o eDiscovery amministratore, aprire eDiscovery avanzate e quindi caso in cui verranno caricati i dati non Office 365.  Fare clic sulla scheda **utilizzo di insiemi** e quindi selezionare il set di lavoro che si desidera caricare i dati Non Office 365.  Se non è già stato creato un gruppo di lavoro, è possibile farlo a questo punto.  Infine, fare clic su **Gestisci meccanismi impostata** il **caricamento Visualizza** nella sezione dati Non Office 365
 
 2. Fare clic sul pulsante **Carica file** per avviare l'importazione guidata dati Non Office 365.

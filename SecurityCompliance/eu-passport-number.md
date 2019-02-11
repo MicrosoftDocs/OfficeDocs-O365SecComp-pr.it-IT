@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca qualora venga rilevato un tipo di informazione sensibile il numero di passaporto UE. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
-ms.openlocfilehash: 71acc39b885c057e1771ec13b2f3c25017ac1bb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530884"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25840325"
 ---
 # <a name="eu-passport-number"></a>Numero di passaporto UE
 
@@ -939,5 +939,5 @@ Per ulteriori informazioni, vedere la sezione "US / numero di passaporto Regno U
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 

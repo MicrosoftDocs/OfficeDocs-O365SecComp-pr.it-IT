@@ -3,7 +3,7 @@ title: Panoramica di archiviazione illimitato in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'espansione automatica archiviazione in Office 365, che fornisce un numero illimitato di archiviazione per le cassette postali di Exchange Online.
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782123"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740818"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Panoramica di archiviazione illimitato in Office 365
 
@@ -69,11 +69,11 @@ Catture di schermata seguente mostra un elenco delle cartelle prima e dopo che i
 
 Per accedere ai messaggi che vengono archiviati in un archivio espanse automaticamente, gli utenti devono utilizzare uno dei seguenti client di Outlook:
   
-- Outlook 2016 per Windows
+- 2016 Outlook o Outlook 2019 per Windows
     
-- Outlook sul Web 
+- Outlook sul web 
     
-- Outlook 2016 per Mac 
+- Outlook 2016 o 2019 Outlook per Mac 
     
 > [!NOTE]
 > Gli utenti di Outlook 2013 possono accedere solo agli elementi che sono stati memorizzati in origine nella cassetta postale di archivio. Non saranno in grado di accedere agli elementi che viene spostate in archiviazione aggiuntive. 
@@ -96,7 +96,7 @@ In questa sezione viene illustrata la funzionalità tra l'espansione automatica 
   
 - vengono cercati anche **eDiscovery** - quando si utilizza uno strumento di eDiscovery di Office 365, ad esempio ricerca contenuto o In-Place eDiscovery, le aree di ulteriore spazio di archiviazione in un archivio espanse automaticamente.
     
-- **Conservazione** - quando una cassetta postale mettere in attesa utilizzando gli strumenti, ad esempio conservazione per controversia legale in Exchange Online o contiene caso di eDiscovery e criteri di conservazione in Office 365 Security &amp; centro conformità, è anche il contenuto disponibile in un archivio espanse automaticamente messa in attesa.
+- **Conservazione** - quando si posiziona una cassetta postale di archiviazione utilizzando gli strumenti, ad esempio conservazione per controversia legale in Exchange Online o eDiscovery case contiene e criteri di conservazione in & la protezione di Office 365 centro conformità, contenuto presente in un archivio espanso automatico è anche messa in attesa.
     
 - **Messaging records management (MRM)** - se si utilizzano criteri di eliminazione di gestione record di messaggistica in Exchange Online per eliminare definitivamente gli elementi scaduti cassetta postale, disponibile nell'archivio espanse automaticamente gli elementi scaduti saranno eliminate.
     

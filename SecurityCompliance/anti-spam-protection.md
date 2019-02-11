@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Informazioni sulle impostazioni di protezione da posta indesiderate e i filtri che sono contenute informazioni utili che impedire la posta indesiderata in Exchange Online e Office 365. Ricevere troppo posta indesiderata in Office 365? È possibile personalizzare il filtro da posta indesiderata e le impostazioni di criteri di protezione da posta indesiderata.
-ms.openlocfilehash: 5547904633a0be9ad57fa7431aeddf1267871662
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0a23ddd0610599bbd6478781c61e5e32b06726bc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530833"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652271"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
 
@@ -43,31 +43,29 @@ Nel seguente video viene fornita una panoramica della configurazione della posta
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
   
-Per ulteriori informazioni, vedere l'argomento [Configure criteri di filtro della posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=617147) . 
+Per ulteriori informazioni, vedere l'argomento [Configure criteri di filtro della posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
   
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Controllare i messaggi in uscita per evitare la posta indesiderata in Office 365
 
  **Un filtro in uscita.** Office 365 consente inoltre di verificare che gli utenti non inviino posta indesiderata. Ad esempio computer dell'utente può ottenere contenere malware che ne determina la inviare messaggi di posta indesiderata, in modo creiamo difesa contro che ha chiamato *un filtro in uscita* . Non è possibile disattivare il filtro in uscita, ma è possibile configurare le impostazioni descritte in [configurare i criteri di posta indesiderata in uscita](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx). Se si è preoccupati troppo posta indesiderata in Office 365, utilizzare il filtro in uscita per evitare la posta indesiderata in Exchange Online.
   
 ## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>Oltre a informazioni di base: ulteriori modi per evitare la posta indesiderata in Office 365
-<a name="BeyondBasics"> </a>
 
- **Regole del flusso di posta.** Se si desidera andare oltre il filtro posta indesiderata integrato e creare regole personalizzate che si basano sui criteri aziendali, le *[regole del flusso di posta elettronica](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)* , denominati anche *le regole di trasporto* , sono un altro filtro che consentono di evitare la posta indesiderata in Office 365. Ad esempio, è possibile utilizzare le regole di flusso di posta elettronica per impostare il valore di (SCL) livello spam confidence per i messaggi che soddisfano le condizioni specifiche, come descritto in [utilizzare le regole di flusso di posta elettronica per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx). 
+ **Regole del flusso di posta.** Se si desidera andare oltre il filtro posta indesiderata integrato e creare regole personalizzate che si basano sui criteri aziendali, le *[regole del flusso di posta elettronica](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)*, denominati anche *le regole di trasporto*, sono un altro filtro che consentono di evitare la posta indesiderata in Office 365. Ad esempio, è possibile utilizzare le regole di flusso di posta elettronica per impostare il valore di (SCL) livello spam confidence per i messaggi che soddisfano le condizioni specifiche, come descritto in [utilizzare le regole di flusso di posta elettronica per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx).
   
- **L'autenticazione di posta elettronica.** Le tecniche che utilizzano il sistema DNS (Domain Name) per aggiungere informazioni verificabili a messaggi di posta elettronica relative al mittente di un messaggio di posta elettronica vengono chiamate l'autenticazione di posta elettronica. Gli amministratori possono rendere più avanzate di Office 365 utilizzare questi metodi di autenticazione di posta elettronica: 
+ **L'autenticazione di posta elettronica.** Le tecniche che utilizzano il sistema DNS (Domain Name) per aggiungere informazioni verificabili a messaggi di posta elettronica relative al mittente di un messaggio di posta elettronica vengono chiamate l'autenticazione di posta elettronica. Gli amministratori possono rendere più avanzate di Office 365 utilizzare questi metodi di autenticazione di posta elettronica:
   
 - **Sender Policy Framework (SPF).** SPF consente di convalidare l'origine dei messaggi di posta elettronica per verificare l'indirizzo IP del mittente per il proprietario presunto del dominio di invio. Per una breve introduzione a SPF e per ottenere una configurazione rapidamente, vedere [impostare SPF in Office 365 per evitare attacchi di spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Per una più approfondita dei come Office 365 utilizza SPF o per le distribuzioni di risoluzione dei problemi o non standard, ad esempio le distribuzioni ibride, iniziare con [la modalità di Office 365 utilizza mittente Policy Framework (SPF) per impedire attacchi di spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
-    
+
 - **DomainKeys identificato posta (DKIM).** DKIM consente di collegare una firma digitale a messaggi di posta elettronica nell'intestazione del messaggio di posta elettronica da inviare. Sistemi di posta elettronica ricevano della posta elettronica dal dominio utilizzano la firma digitale per determinare se posta elettronica in arrivo che ricevono è valido. Per informazioni su DKIM e Office 365, vedere [Utilizzo DKIM per convalidare la posta elettronica inviata dal dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
-    
+
 - **Autenticazione dei messaggi basati sul dominio, Reporting e conformità (DMARC).** Vengono fornite informazioni utili DMARC la ricezione di sistemi di posta elettronica determinano cosa fare con messaggi di errore verifiche SPF o DKIM e fornendo un altro livello di attendibilità per i partner di posta elettronica. Per informazioni sull'impostazione DMARC, vedere [Utilizzo DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 Se si è interessati su posta indesiderata, phishing e spoofing in Office 365, utilizzare SPF, DKIM e DMARC insieme al fine di evitare la posta indesiderata e lo spoofing indesiderati.
   
  **Impostazioni gestito per l'utente finale.** Si sta cercando informazioni su come gli utenti finali possono gestire le proprie impostazioni della posta indesiderata, vedere [Panoramica del filtro per la posta indesiderata](https://go.microsoft.com/fwlink/?LinkId=270065) (per gli utenti di Microsoft Outlook) o [fare riferimento alle informazioni sulla posta indesiderata e phishing](https://go.microsoft.com/fwlink/?LinkId=270068) (per Outlook sugli utenti web). Se si sta utilizzando EOP per proteggere le cassette postali locali, assicurarsi di utilizzare la sincronizzazione delle directory per assicurarsi che queste impostazioni vengono sincronizzate con il servizio. Per ulteriori informazioni sull'impostazione di sincronizzazione della directory, vedere "Utilizzare la sincronizzazione delle directory per gestire gli utenti di posta" in [Gestione utenti di posta in EOP](https://technet.microsoft.com/library/dn636911%28v=exchg.150%29.aspx).
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
-<a name="BeyondBasics"> </a>
 
 [Blog: Perché di posta indesiderata e phishing visualizzato tramite Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
   
@@ -82,14 +80,11 @@ Se si è interessati su posta indesiderata, phishing e spoofing in Office 365, u
 [Intestazioni messaggi della protezione da posta indesiderata](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)
   
 [Backscatter recapito ed EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
-  
-## <a name="still-need-help"></a>Ulteriore assistenza?
-<a name="BeyondBasics"> </a>
 
-[![Ottenere assistenza dai forum della community di Office 365](media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![Amministratori: Accedere e creare una richiesta di assistenza](media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![Amministratori: Chiama il supporto](media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
+## <a name="more-resources"></a>Altre risorse
 
+[Ottenere assistenza dai forum della community di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+  
+[Amministratori: Accedere e creare una richiesta di servizio](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+  
+[Amministratori: Contattare il supporto](https://go.microsoft.com/fwlink/p/?LinkID=518322)

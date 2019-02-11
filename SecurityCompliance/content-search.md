@@ -3,7 +3,7 @@ title: Ricerca del contenuto in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare la ricerca di contenuto in Office 365 Security &amp; centro conformità per la ricerca per il contenuto delle cassette postali, siti di SharePoint Online, gli account di OneDrive, Teams Microsoft, gruppi di Office 365 e Skype per le conversazioni di Business. È possibile utilizzare le query di ricerca di parola chiave e criteri di ricerca per limitare i risultati di ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. Ricerca del contenuto è anche uno strumento efficace per ricercare contenuto correlati a una richiesta di oggetto PILR dati.
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782083"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686117"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca del contenuto in Office 365
 
@@ -43,7 +43,7 @@ Dopo aver eseguito una ricerca di contenuto, il numero di percorsi di contenuti 
 
 Per accedere alla pagina **ricerca contenuto** per eseguire ricerche e preview ed esportare i risultati della ricerca, un amministratore, responsabile della conformità o manager eDiscovery deve essere un membro del gruppo di ruoli gestione eDiscovery in sicurezza &amp; centro conformità. Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
   
-1. Accedere a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere utilizzando l'indirizzo di posta elettronica di Office 365 e la password. 
     
@@ -74,6 +74,8 @@ Per accedere alla pagina **ricerca contenuto** per eseguire ricerche e preview e
     In alternativa, è possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite un operatore logico ( **c:s**) che è simile all'operatore **OR** nella query di ricerca che viene creata. 
     
     Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostra il numero di elementi corrispondenti a ogni parola chiave. Ciò consente di identificare rapidamente i quali le parole chiave sono il massimo (e almeno) efficaci. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche delle parole chiave per i risultati di ricerca del contenuto](view-keyword-statistics-for-content-search.md).
+
+    [!NOTE] Per contribuire alla riduzione problemi causati da elenchi di grandi dimensioni parole chiave, l'utente è ora solo per un massimo di 20 righe nell'elenco delle parole chiave.
     
 - **Condizioni** - è possibile aggiungere le condizioni di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) da un operatore logico ( **c:c**) funzionalità analogo all'operatore **AND** . Ciò significa che gli elementi presentano soddisfare le query con parole chiave sia una o più condizioni da includere nei risultati. Si tratta come condizioni consentono di limitare i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "Criteri di ricerca" in [condizioni di ricerca per la ricerca del contenuto e query con parole chiave](keyword-queries-and-search-conditions.md#search-conditions).
     
@@ -268,7 +270,7 @@ Tenere presenti i seguenti aspetti durante la ricerca di contenuto in Microsoft 
 - In alternativa, le conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams sono archiviate nella cassetta postale di Exchange Online degli utenti che partecipano alla chat. E i file che un utente condivide conversazioni Chat vengono archiviati in OneDrive per account aziendale dell'utente che condivide il file. Di conseguenza, è necessario aggiungere tutte le cassette postali degli utenti singoli OneDrive per gli account aziendali come i percorsi di contenuti per la ricerca di conversazioni e i file nell'elenco Chat.
     
     > [!NOTE]
-    > Utenti di partecipare a conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams devono avere una Exchange Online (basata su cloud) della cassetta postale in modo che per la ricerca di conversazioni chat. Ciò avviene perché le conversazioni che fanno parte dell'elenco di Chat vengono archiviate nelle cassette postali basate su cloud partecipanti alla chat. Se un partecipante di chat non è una cassetta postale di Exchange Online, non sarà in grado di cercare le conversazioni chat. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams. Tuttavia in questo caso, il contenuto da queste conversazione non sono disponibili per le ricerche perché gli utenti non dispongono di cassette postali basate sul cloud. 
+    > In una distribuzione ibrida di Exchange, gli utenti con una cassetta postale locale possono partecipare a conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams. In questo caso, il contenuto da queste conversazioni inoltre è possibile eseguire ricerca perché questo viene salvato in un'area di archiviazione basata su cloud (noti come una *cassetta postale basata sul cloud per gli utenti locali*) per gli utenti che dispongono di una cassetta postale locale. Per ulteriori informazioni, vedere [ricerca basate su cloud delle cassette postali per gli utenti di Office 365 in locale](search-cloud-based-mailboxes-for-on-premises-users.md).
   
 - Ogni canale Team di Microsoft o un team contiene un Wiki per la collaborazione e gestione delle note. Il contenuto Wiki viene automaticamente salvato in un file in formato con estensione mht. In questo file è archiviato nella raccolta documenti di team Wiki dati nel sito di SharePoint del team. È possibile utilizzare lo strumento di ricerca di contenuto per eseguire la ricerca Wiki specificando del sito del team SharePoint come posizione di contenuto per la ricerca. 
     

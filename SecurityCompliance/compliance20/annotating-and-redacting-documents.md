@@ -1,5 +1,5 @@
 ---
-title: La visualizzazione dei documenti in un working set
+title: Visualizzare i documenti in un set di lavoro
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bed86f17ce8027da85eefc2a4c39ac4e25523016
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 800bc1f0e8ac9a736ea676519d0e995767a82dcb
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607921"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695112"
 ---
-# <a name="viewing-documents-in-a-working-set"></a>La visualizzazione dei documenti in un working set
+# <a name="view-documents-in-a-working-set"></a>Visualizzare i documenti in un set di lavoro
 
 Il contenuto sarà disponibile a breve.

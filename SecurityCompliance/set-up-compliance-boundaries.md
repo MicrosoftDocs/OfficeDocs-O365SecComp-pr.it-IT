@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Per creare i confini logici all'interno dell'organizzazione Office 365 che controllano l'utente i percorsi di contenuti che può eseguire ricerche in un gestore di eDiscovery, utilizzare i limiti di conformità. Limiti di conformità utilizzano autorizzazioni ricerca filtro (anche denominato conformità sicurezza filtri) per controllare quali cassette postali, i siti di SharePoint e gli account OneDrive possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299240"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768017"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -55,8 +55,6 @@ Il primo passaggio consiste per scegliere un attributo di Azure Active Directory
 Ecco un elenco di attributi utente Azure Active Directory che è possibile utilizzare per i limiti di conformità:
   
 - Company
-    
-- CountryCode
     
 - CustomAttribute1 - CustomAttribute15
     
@@ -123,7 +121,7 @@ Ecco una descrizione di ciascun parametro nel comando:
     
   -  `Site`-Consente di specificare gli account OneDrive i gruppi di ruoli definiti nel `Users` parametro può eseguire ricerche. Per il filtro di OneDrive, utilizzare la stringa effettiva `ComplianceAttribute`; questo verrà eseguito il mapping allo stesso attributo identificato nel passaggio 1 e che viene sincronizzato con account OneDrive a causa della richiesta di supporto che inviato nel passaggio 2;  *AttributeValue* consente di specificare l'Agenzia. Questo filtro consente ai membri del gruppo di ruoli in cui cercare solo gli account OneDrive agenzia specifica; ad esempio `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`-Consente di specificare i siti di SharePoint che i gruppi di ruoli definiti nel `Users` parametro può eseguire ricerche. *SharePointURL* consente di specificare i siti ente membri del gruppo di ruolo possono eseguire ricerche; Per esempio`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-Consente di specificare i siti di SharePoint che i gruppi di ruoli definiti nel `Users` parametro può eseguire ricerche. *SharePointURL* consente di specificare i siti ente membri del gruppo di ruolo possono eseguire ricerche; Per esempio`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-Specifica il tipo di azione Compliance ricerca che il filtro viene applicato a. Ad esempio `-Action Search` il filtro si applica solo quando i membri dei gruppi di ruolo definito nel `Users` parametro consente di eseguire una ricerca di contenuto. In questo caso, non sarebbe applicato il filtro per l'esportazione dei risultati della ricerca. Per i bordi della conformità, utilizzare `-Action All` in modo che il filtro viene applicato a tutte le azioni di ricerca. 
     
@@ -207,7 +205,7 @@ Analogamente, è possibile utilizzare i seguenti valori per i valori dei paramet
 |KOR  <br/> |Centro dati predefinito dell'organizzazione  <br/> |
 |GBR  <br/> |Europa  <br/> |
 |JPN  <br/> |Asia Pacifico  <br/> |
-|RICERCA  <br/> |Asia Pacifico  <br/> |
+|IND  <br/> |Asia Pacifico  <br/> |
 |LAM  <br/> |IT  <br/> |
    
  **Nota:** Se non si specifica il parametro Region per un filtro di autorizzazioni di ricerca, l'area di SharePoint predefinito organizzazioni verrà eseguita la ricerca e quindi i risultati della ricerca vengono esportati in più data center. 

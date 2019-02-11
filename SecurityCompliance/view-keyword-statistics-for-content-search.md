@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilizzare la funzionalità di ricerca le statistiche per visualizzare e confrontare le statistiche per le ricerche di contenuto più di sicurezza di Office 365 &amp; centro conformità. È inoltre possibile configurare l'elenco delle parole chiave quando si crea o modifica di una query di ricerca per ottenere le statistiche avanzate che mostra il numero di elementi corrispondenti a ogni parola chiave o una frase parola chiave.
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530864"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209807"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto
 
@@ -100,6 +100,10 @@ Per visualizzare le statistiche per le ricerche di contenuto:
 ## <a name="get-keyword-statistics-for-content-searches"></a>Ottenere statistiche sulle parole chiave per le ricerche di contenuto
 
 Precedente come spiegato, nella pagina **delle query** vengono visualizzati la query di ricerca e il numero e dimensione degli elementi che corrispondono alla query. Se si utilizza un elenco delle parole chiave quando si crea o modifica di una query di ricerca, è possibile ottenere le statistiche avanzate che mostra il numero di elementi corrispondenti a ogni parola chiave o una frase parola chiave. Ciò consente di identificare rapidamente le parti della query sono il massimo (e almeno) efficaci. Ad esempio, se una parola chiave restituisce un numero elevato di elementi, è possibile restringere la query con parole chiave per restringere i risultati della ricerca. Quando si crea o modifica di una ricerca di contenuto, è possibile impostare un elenco delle parole chiave. 
+
+
+
+
   
 Per creare un elenco delle parole chiave e visualizzare statistiche sulle parole chiave per la ricerca del contenuto:
   
@@ -130,3 +134,6 @@ Per creare un elenco delle parole chiave e visualizzare statistiche sulle parole
     - Query di ricerca effettivo per ogni parola chiave, che include tutte le condizioni di query di ricerca. 
     
     - La query di ricerca completi (identificati come **primario** nella colonna **parte** ) e le statistiche per la query completa. Si noti che queste sono le stesse statistiche visualizzate nella pagina **Riepilogo** . 
+
+> [!NOTE]
+> Per contribuire alla riduzione problemi causati da elenchi di grandi dimensioni parole chiave, l'utente è ora solo per un massimo di 20 righe nell'elenco delle parole chiave di una query di ricerca.

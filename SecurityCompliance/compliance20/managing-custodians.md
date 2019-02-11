@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di depositari di eDiscovery avanzate (Preview)
+title: Lavorare con depositari di eDiscovery avanzate (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607932"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706017"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>Utilizzo di depositari di eDiscovery avanzate (Preview)
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Lavorare con depositari di eDiscovery avanzate (Preview)
 
 Spesso, quando un'organizzazione risponde a una persona indagini, si basa il flusso di lavoro utilizzando il contenuto pertinente potenzialmente identificazione, conservazione e la raccolta off depositari persone o dati all'interno dell'organizzazione. Di eDiscovery, questi utenti sono denominati depositari dati e vengono definiti come "le persone che hanno controllo amministrativo di un documento o un file elettronico". Depositaria dati di un messaggio di posta elettronica, ad esempio, potrebbe essere il proprietario della cassetta postale che contiene il messaggio pertinente.  
 
@@ -31,11 +31,11 @@ All'interno di un caso eDiscovery avanzate (anteprima), legale team possono aggi
 
 Per ulteriori informazioni sull'utilizzo di depositari, vedere gli articoli seguenti: 
 
-- [Aggiungere depositari a un caso](add-custodians-to-case.md)
+- [Aggiungere responsabili a un caso](add-custodians-to-case.md)
 
-- [Depositari in caso di gestione](manage-new-custodians.md)
+- [Gestire depositari in caso](manage-new-custodians.md)
 
-- [Visualizzazione dell'attività depositaria](view-custodian-activity.md)
+- [Visualizzare l'attività dei responsabili](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 

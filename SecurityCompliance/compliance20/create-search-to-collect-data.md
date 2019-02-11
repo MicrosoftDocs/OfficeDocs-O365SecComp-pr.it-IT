@@ -1,5 +1,5 @@
 ---
-title: Creazione di una ricerca per raccogliere dati
+title: Creare una ricerca per raccogliere dati
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607947"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706137"
 ---
-# <a name="create-a-search-to-collect-data"></a>Creazione di una ricerca per raccogliere dati
+# <a name="create-a-search-to-collect-data"></a>Creare una ricerca per raccogliere dati
 
 Nella scheda **ricerche** nel caso, è possibile creare una nuova ricerca facendo clic su **New search** e seguendo la procedura guidata.
 
@@ -35,7 +35,7 @@ Ogni ricerca con un caso deve avere un nome univoco. È facoltativamente possibi
 
 ## <a name="choose-the-custodians-to-search-from"></a>Scegliere depositari eseguire la ricerca
 
-Dopo aver definito le condizioni, è necessario scegliere quali percorsi da cercare. Per eseguire questa operazione è specificando quali depositari è già stato aggiunto al caso si desidera eseguire la ricerca. Selezionando un depositaria, si eseguirà la ricerca con tutte le origini dati mappate al depositaria. Per ulteriori informazioni su come aggiungere depositari al case e gestire le origini dati, vedere [Working with depositari](managing-custodians.md) .
+Dopo aver definito le condizioni, è necessario scegliere quali percorsi da cercare. Per eseguire questa operazione è specificando quali depositari è già stato aggiunto al caso si desidera eseguire la ricerca. Selezionando un depositaria, si eseguirà la ricerca con tutte le origini dati mappate al depositaria. Per ulteriori informazioni su come aggiungere depositari al case e gestire le origini dati, vedere [Work with depositari](managing-custodians.md) .
 
 ## <a name="choose-non-custodial-locations"></a>Scegliere le posizioni non detentive
 

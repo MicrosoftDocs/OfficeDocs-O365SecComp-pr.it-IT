@@ -13,17 +13,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi di attacchi di tipo injection moduli personalizzati in Office 365
-ms.openlocfilehash: 893ade67976d7e6d1442a23f1f61948cea591dad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1067d7c791217c146fedea839754e45f76ef5d8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530476"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603757"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e correggere le regole di Outlook e injections nei moduli personalizzati in Office 365
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
 
 **Riepilogo** Informazioni su come riconoscere e correggere le regole di Outlook e attacchi di attacchi di tipo injection moduli personalizzati in Office 365.
 

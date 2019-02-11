@@ -1,5 +1,5 @@
 ---
-title: Gestione di un evento imprevisto perdita di dati in Microsoft 365
+title: Gestire un evento imprevisto perdita di dati in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come nuovo dati indagini (Preview) in strumento di sicurezza di Office 365 & centro conformità per gestire un evento imprevisto perdita di dati.
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636626"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706177"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Gestione di un evento imprevisto perdita di dati in Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un evento imprevisto perdita di dati in Microsoft 365 
 
 Perdita di dati è rilascio di un documento riservato in un ambiente non attendibile. Quando viene rilevato un problema di perdita di dati, è importante valutare rapidamente le dimensioni e le posizioni della perdita, esaminare le attività dell'utente attorno ad esso e quindi eliminare definitivamente i dati espanso dal sistema.
 
@@ -51,7 +51,7 @@ Ecco il flusso di lavoro per l'utilizzo di dati indagini (Preview) per gestire u
 5.  Chiudere o eliminare le indagini.
 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Si verrà utilizzare lo strumento dati indagini (Preview) in & la protezione di Office 365 centro conformità per creare un'analisi, cercare i dati espanso, esaminare e analizzarli. Utilizzerà quindi sicurezza & PowerShell centro conformità per eliminare definitivamente i dati espanso da Office 365. 
 
@@ -111,8 +111,8 @@ In indagini, passare alla scheda **risolte** e fare clic su evento imprevisto cr
 
 Per raggruppare i documenti e ottenere ulteriore assistenza per la revisione, fare clic su **Gestisci incidente**. Nella porzione **Analitica** , fare clic su **Analyze**. Verrà eseguito analitica avanzate, ad esempio il rilevamento duplicati, posta elettronica threading e analisi di tema. Per ulteriori informazioni, vedere:
 
-- [Quasi duplicati](near-duplicates.md)
-- [Messaggio di posta elettronica threading](email-threading.md)
+- [Rilevamento dei documenti simili](near-duplicates.md)
+- [Threading posta elettronica](email-threading.md)
 - [Temi](themes.md)
 
 Per determinare gli utenti che partecipano alla perdita dei dati, è possibile creare una nuova query in incidente e quindi utilizzare il mittente/autore e le condizioni di destinatari. Si creerà un elenco di tutti i mittenti attendibili, destinatari e autori di dati raccolti che è stato aggiunto per l'evento imprevisto. Assicurarsi di esaminare l'elenco per determinare se vi sono utenti esterni nell'elenco. Per ulteriori informazioni, vedere [criteri di ricerca](../keyword-queries-and-search-conditions.md#search-conditions).
@@ -130,7 +130,7 @@ Si noti che se il ripristino di singoli elementi è abilitato per le cassette po
 
 ### <a name="deleting-site-items"></a>Eliminazione di elementi di siti
 
-Per eliminare definitivamente un documento da un sito di SharePoint o OneDrive per conto di Business, è necessario eliminare e quindi è necessario eliminare dal sito e quindi eliminarla dal Cestino della raccolta siti. Per ulteriori informazioni, vedere [eliminazione documenti in SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Per eliminare definitivamente un documento da un sito di SharePoint o OneDrive per conto di Business, è necessario eliminare e quindi è necessario eliminare dal sito e quindi eliminarla dal Cestino della raccolta siti. Per ulteriori informazioni, vedere [eliminazione di documenti in SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
 In alternativa, è possibile eliminare un'intera raccolta siti che potrebbero contenuti dati espanso. Per ulteriori informazioni, vedere [eliminare una raccolta siti](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
@@ -141,6 +141,7 @@ Dopo l'eliminazione di documenti nei percorsi di contenuto di origine (siti o ca
 Per eliminare un'analisi:
 
 1. Nella scheda **Impostazioni** , fare clic su **informazioni di indagini**.
+
 2. Fare clic su **Elimina case**. 
 
 Se non è necessario eliminare le indagini o se si desidera salvare le informazioni raccolte durante le indagini, è possibile fare clic su **chiudere un caso**. In un secondo momento, è possibile aprire nuovamente indagini chiuse.
