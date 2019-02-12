@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 48d66a93c82a7430bc34373975d385ebc7bfbf9a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607158"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706167"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -124,6 +124,9 @@ Con un criterio di etichetta, è possibile:
     ![Messaggio in cui si richiede agli utenti di immettere una motivazione](media/Sensitivity_label_justification_required.png)
 
 - **Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti.** Se si vuole che tutto il contenuto di un utente sia etichettato, è possibile richiedere l'applicazione di un'etichetta a tutti i documenti salvati e i messaggi di posta elettronica inviati. L'etichetta può essere assegnata manualmente dall'utente, automaticamente come risultato di una condizione oppure assegnata per impostazione predefinita (opzione per etichetta predefinita descritta in precedenza). Ecco il messaggio di richiesta visualizzato in Outlook quando un utente deve assegnare un'etichetta.
+
+    > [!NOTE]
+    > L'etichettatura obbligatoria richiede un abbonamento ad Azure Information Protection. A tale scopo, è necessario scaricare e installare il [client Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) o il [client di assegnazione delle etichette unificato Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Microsoft sta lavorando al supporto nativo per questa funzionalità nelle applicazioni di Office, in modo che il client Azure Information Protection non sia necessario. Inoltre, poiché il client viene eseguito solo in Windows, questa funzionalità non è ancora supportata in Mac, iOS e Android.
 
     ![Messaggio visualizzato in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
 
