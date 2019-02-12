@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La caratteristica di collegamenti sicuro offre verifica momento del clic dei collegamenti ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare i collegamenti sicuri per proteggere l'organizzazione di phishing e altri attacchi.
-ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
+ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792241"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29888032"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
@@ -98,7 +98,7 @@ Quindi, verificare che i criteri degli strumenti di analisi collegamenti attendi
     
 - **Gli utenti hanno effettuato l'accesso a Office 365** utilizzando il proprio account di lavoro o della scuola. Vedere [accesso a Office o Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).
     
-- **Messaggio di posta elettronica dell'organizzazione è ospitata in Office 365**. 
+- **Messaggio di posta elettronica dell'organizzazione passa tramite Exchange Online Protection**.  
 
 Per definire o modificare i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
 

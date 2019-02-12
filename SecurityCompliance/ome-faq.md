@@ -3,7 +3,7 @@ title: Domande frequenti sulla crittografia dei messaggi di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Ottenere informazioni su come utilizzare le nuove funzionalità di protezione dei messaggi in Office 365? Verificare di una risposta di seguito.
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696270"
+ms.locfileid: "29890037"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi di Office 365
 
@@ -48,7 +48,7 @@ OME combina le funzionalità di gestione dei diritti e la crittografia di posta 
 
 Per utilizzare le nuove funzionalità OME, è necessario uno dei seguenti piani:
   
-- Office 365 Message Encryption è disponibile come parte di Office 365 E3 ed E5, E3 Microsoft ed E5, Office 365 A1, A3 e A5 e Office 365 G3 e G5. I clienti non sono necessario disporre di una licenza per ricevere le nuove funzionalità di protezione con tecnologia per la protezione delle informazioni di Azure. 
+- Office 365 Message Encryption è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 Business, Office 365 A1, A3 e A5 e Office 365 Government G3 e G5. I clienti non sono necessario disporre di una licenza per ricevere le nuove funzionalità di protezione con tecnologia per la protezione delle informazioni di Azure. 
     
 - È inoltre possibile aggiungere Azure Information Protection piano 1 agli elementi seguenti piani a ricevere le nuove funzionalità di Office 365 Message Encryption: Exchange Online piano 1, Exchange Online piano 2, Office 365 F1, Essentials Business di Office 365, Office 365 Business Premium o Office 365 Enterprise E1.
     
