@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Visualizzare i dettagli tecnici sulle crittografia in Office 365.
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326937"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966190"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Dettagli tecnici di riferimento sulla crittografia in Office 365
 
@@ -89,6 +89,9 @@ Avvio di 1 dicembre 2014 Office 365 ha iniziato disabilitando il supporto per SS
 <a name="TLSCipherSuites"> </a>
 
 Un pacchetto di crittografia è una raccolta di algoritmi di crittografia utilizzati da TLS per stabilire connessioni protette. Nella tabella seguente sono riportati i pacchetti di crittografia supportati da Office 365 in ordine di priorità, a partire dai pacchetti di crittografia dotati di forza maggiore. Quando Office 365 riceve una richiesta di connessione, innanzitutto tenta di stabilire una connessione utilizzando il primo pacchetto di crittografia nell'elenco; in caso di esito negativo, tenta utilizzando il secondo pacchetto di crittografia nell'elenco e così via. Quando Office 365 invia una richiesta di connessione a un altro server o a un client, la scelta del pacchetto di crittografia da utilizzare o della possibilità o meno di utilizzare TLS dipende dal server o dal client ricevente.
+
+> [!IMPORTANT]
+> Tenere presente che rendere obsoleti i versioni TLS e che obsoleto versioni *non deve essere utilizzata* in cui sono disponibili versioni più recenti. In altre parole, via Internet in cui è elencati che TLS 1.0, 1.1 e 1.2 sono supportati, scegliere la versione *più recente* (TLS 1.2).
   
 |**Protocolli**|**Nome del pacchetto di crittografia**|**Algoritmo di scambio di chiave**|**Supporto di Perfect Forward Secrecy**|**Algoritmo di autenticazione/forza**|**Crittografia/Forza**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
