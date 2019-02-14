@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449880"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995177"
 ---
 # <a name="office-365-security-and-compliance"></a>Conformità e sicurezza di office 365
 
@@ -51,7 +52,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                     </div>
                     <div class="cardText">
                         <h3>Passaggi successivi all'interno di 90 giorni</h3>
-                        <p>Queste attività un po' di tempo maggiore pianificare e implementare ma aumentare notevolmente le condizioni di sicurezza generali: <br> - <a href="attack-simulator.md">Condurre simulazioni attacco</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Responsabile della conformità di revisione</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurare la gestione delle identità privilegiato Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurare la gestione dei privilegi di accesso</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Abilitare l'autenticazione a più fattori</a> <br> - <a href="protect-against-threats.md">Revisione e aggiornamento criteri di protezione</a> </p>
+                        <p>Queste attività un po' di tempo maggiore pianificare e implementare ma aumentare notevolmente le condizioni di sicurezza generali: <br> - <a href="attack-simulator.md">Condurre simulazioni attacco</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Responsabile della conformità di revisione</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurare la gestione delle identità privilegiato Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurare la gestione dei privilegi di accesso</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Abilitare l'autenticazione a più fattori</a> <br> - <a href="protect-against-threats.md">Esaminare i criteri di protezione aggiornamento &</a> </p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                     <div class="cardText">
                         <h3>Garantire la conformità</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Centro protezione Microsoft</a></p>
-                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Portale di servizi di Microsoft di protezione</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service Trust Portal</a></p>
                     </div>
                 </div>
             </div>
