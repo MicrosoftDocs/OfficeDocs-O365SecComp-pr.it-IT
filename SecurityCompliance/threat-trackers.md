@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: Informazioni sulle minacce Tracker, inclusi nuovi Tracker degne di nota, per consentire all'organizzazione di essere informati su problemi di protezione.
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014998"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995307"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Indicatori delle minacce: nuove e importanti
 
 [Business Intelligence di Office 365 rischio](office-365-ti.md) consente a team di protezione dell'organizzazione individuare ed eseguire l'azione contro le minacce alla sicurezza informatica necessaria. A partire in ritardo 2018 marzo e varie settimane successivo, Business Intelligence di Office 365 rischio includerà nuove funzionalità di rischio Tracker, tra cui Tracker degne di nota. In questo articolo viene fornita una panoramica dei passaggi successivi e nuove caratteristiche. 
+
+> [!IMPORTANT]
+> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Che cosa sono i tracker minaccia?
 

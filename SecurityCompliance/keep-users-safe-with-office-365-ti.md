@@ -3,7 +3,7 @@ title: Proteggere gli utenti di Office 365 con Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: Informazioni su come Office 365 rischio Intelligence consentono alle organizzazioni rilevare intrusioni e delle minacce e rapidamente ad attenuare il rischio e il ripristino da minacce.
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706100"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995367"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Proteggere gli utenti di Office 365 con Office 365 Threat Intelligence
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706100"
 Fai a sapere che gli utenti di Office 365 sono in attacco o peggiori - esposto a possibili violazioni? Imparare a ridurre e il ripristino dagli attacchi di destinazione gli utenti? Non tutti sanno a tale scopo esattamente le funzionalità di sicurezza che sono già disponibili in Office 365. 
   
 [Business Intelligence di Office 365 rischio](office-365-ti.md) è una famiglia di prodotti delle funzionalità incluse in abbonamento a Office 365 E5. Office 365 rischio Intelligence con Microsoft IT ha potuto ridurre tempo medio di risoluzione per il social engineering risolte 80% e aumentare la velocità effettiva maiuscole 37% al mese rispetto ai trimestri 2! 
+
+> [!IMPORTANT]
+> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Sono state aggiunte recentemente le nuove funzionalità che consentono di migliorare come rilevare e recuperare da minacce! Di seguito viene fornisce una rapida panoramica e di come il servizio di Business Intelligence di rischio aggiornato può rendere ancora più efficiente.
   

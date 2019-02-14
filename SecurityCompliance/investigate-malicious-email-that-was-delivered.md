@@ -3,7 +3,7 @@ title: Trovare e analizzare dannoso posta elettronica che è stato recapitato (B
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: Informazioni su come utilizzare Intelligence minaccia per trovare e provare a utilizzare e-mail dannoso.
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014918"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995187"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Trovare e analizzare dannoso posta elettronica che è stato recapitato (Business Intelligence rischio di Office 365)
 
 [Business Intelligence di Office 365 rischio](office-365-ti.md) consente di analizzare le attività che inserire gli utenti a rischio ed eseguire un'azione per proteggere l'organizzazione. Ad esempio, se si fa parte del team di protezione dell'organizzazione, è possibile trovare e analizzare i messaggi di posta elettronica sospetti che sono stati recapitati agli utenti. È possibile eseguire questo tramite [Esplora rischio](get-started-with-ti.md#threat-explorer).
   
-> [!NOTE]
-> Business Intelligence di Office 365 rischio è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, Business Intelligence di Office 365 rischio può essere acquistato come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://technet.microsoft.com/en-us/library/dn933793.aspx) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> [!IMPORTANT]
+> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Prima di iniziare...
 

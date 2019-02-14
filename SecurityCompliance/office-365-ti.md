@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
+ms.collection: M365-security-compliance
 description: Scoprire come funzionalità di business intelligence minaccia in avanzate Threat Protection consentono le minacce contro l'organizzazione di ricerca, rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e ricerca per gli indicatori di rischio.
-ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792261"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995097"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 Threat Intelligence
 

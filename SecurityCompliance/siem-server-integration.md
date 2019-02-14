@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
+- M365-security-compliance
 description: "Riepilogo: Leggere questo articolo per una panoramica dell'integrazione di SIEM server con Microsoft 365."
-ms.openlocfilehash: bd512ca6d75928712e3444581a78610a0869123d
-ms.sourcegitcommit: 63ed467fc3e1ab1ab9ee122df97c64737169834e
+ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25842683"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995197"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SIEM con le applicazioni e servizi Microsoft 365
 
@@ -44,7 +45,7 @@ SIEM dal server per ricevere dati da un'ampia gamma di applicazioni e servizi Mi
 
 Verificare che viene attivata la registrazione di controllo prima di configurare l'integrazione del server SIEM. 
 
-- SharePoint Online, OneDrive for Business e Azure Active Directory, [la registrazione di controllo è attivata nel centro conformità sicurezza](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- SharePoint Online, OneDrive for Business e Azure Active Directory, [la registrazione di controllo è attivata nel & sicurezza centro conformità](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
 
 - Per Exchange Online, [viene attivata la registrazione di controllo con Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare la protezione di Office 365 & centro conformità per cercare il Registro di controllo unificato per visualizzare l'attività di utenti e amministratori nella propria organizzazione Office 365. "
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890057"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995407"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Cercare il Registro di controllo in & la protezione di Office 365 centro conformità
 
@@ -53,9 +53,11 @@ Sai dove trovare se un utente di visualizzata un documento specifico o eliminato
 - Attività di amministratore e utente in Microsoft Flow
     
 - Attività di amministratore e utente Stream Microsoft
+
+- Attività degli analisti e amministrazione in Analitica luogo di lavoro di Microsoft
     
    
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca di Office 365 Registro di controllo.
   
@@ -586,7 +588,7 @@ Tabella seguente sono Azure Active directory e dominio relativi le attività che
    
 ### <a name="ediscovery-activities"></a>attività di eDiscovery
   
-Ricerca e attività correlate ai eDiscovery che vengono eseguite in Office 365 protezione del contenuto &amp; centro conformità o eseguendo il corrispondente di Windows PowerShell cmdlet registrati nel Registro di controllo di Office 365. Sono incluse le attività seguenti:
+Ricerca del contenuto e attività correlate ai eDiscovery che vengono eseguite in Office 365 Security & centro conformità o eseguendo il cmdlet di Windows PowerShell corrispondenti vengono registrate nel Registro di controllo di Office 365. Sono incluse le attività seguenti:
   
 - Creazione e gestione dei casi eDiscovery
     
@@ -611,7 +613,7 @@ Si noti che non è abilitata la registrazione di controllo per Power BI per impo
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Attività Analitica luogo di lavoro di Microsoft
 
-Nella tabella seguente sono elencati l'amministrazione e Registro di controllo attività analista Analitica luogo di lavoro di Microsoft che vengono registrati in Office 365. Area di lavoro Analitica fornisce approfondimenti sulla gruppi collaborazione all'interno dell'organizzazione Office 365. Per ulteriori informazioni, vedere [Analitica luogo di lavoro](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Area di lavoro Analitica fornisce approfondimenti sulla gruppi collaborazione all'interno dell'organizzazione Office 365. Nella tabella seguente sono elencate le attività eseguite dagli utenti vengono assegnati il ruolo di amministratore o i ruoli di analista in Analitica luogo di lavoro. Gli utenti assegnati al ruolo analista disporre dell'accesso completo a tutte le funzionalità del servizio e di utilizzo del prodotto eseguire analisi. Gli utenti assegnati al ruolo di amministratore possono configurare le impostazioni di privacy e valori predefiniti del sistema e può preparare, caricare e verificare i dati dell'organizzazione in Analitica luogo di lavoro. Per ulteriori informazioni, vedere [Analitica luogo di lavoro](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|

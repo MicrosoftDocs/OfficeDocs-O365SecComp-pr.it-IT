@@ -3,7 +3,7 @@ title: Simulatore di attacchi in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/02/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,17 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.collection:
+- M365-security-compliance
 description: Amministratore globale di Office 365, è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e trovare gli utenti vulnerabili prima di un attacco reale accede a un'azienda.
-ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 77de6af6546ae584e3bd25c0d1a59d9f26928f33
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015038"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995167"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
 **Riepilogo** Se si è un amministratore globale di Office 365 e l'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md), è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e individuare gli utenti vulnerabili prima di un attacco reale un impatto significativo sulla parte inferiore. In questo articolo per ulteriori informazioni.
+
+> [!IMPORTANT]
+> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Gli attacchi
 

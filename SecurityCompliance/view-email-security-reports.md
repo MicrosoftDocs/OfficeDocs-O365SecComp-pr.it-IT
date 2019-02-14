@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: Informazioni su come trovare e utilizzare i rapporti di protezione posta elettronica per l'organizzazione con Office 365 Enterprise. Rapporti sulla protezione posta elettronica sono disponibili nel titolo &amp; centro conformità.
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014988"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995297"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità
 
@@ -176,14 +177,14 @@ Per visualizzare il report nel [protezione &amp; centro conformità](https://pro
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Autorizzazioni necessarie per visualizzare questi rapporti?
 
-Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
+Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato per la protezione sia &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
 
 - Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
     - Gestione organizzazione
-    - Amministratore della sicurezza
+    - Amministratore della sicurezza (possono essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Lettore di sicurezza
 
-- Per Exchange Online deve essere uno dei seguenti ruoli assegnati:
+- Per Exchange Online, è necessario disporre dei seguenti ruoli assegnati nell'interfaccia di amministrazione Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o i cmdlet PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Gestione organizzazione
     - Gestione organizzazione in sola visualizzazione
     - Ruolo Destinatari di sola lettura

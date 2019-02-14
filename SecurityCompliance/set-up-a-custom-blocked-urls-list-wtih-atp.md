@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
+ms.collection: M365-security-compliance
 description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizza la protezione di Office 365 avanzate rischio. Gli URL bloccati verranno applicate a messaggi di posta elettronica e documenti di Office in base ai criteri di collegamenti sicuro degli strumenti di analisi.
-ms.openlocfilehash: 4d8c9c669310137d3f491f5a79c93f4d6af71ac5
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 261d85ce72de3a19ed4c2327d56fe1f32107781b
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755317"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995317"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti
+
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), l'organizzazione può avere un elenco personalizzato di indirizzi di siti Web (URL) che vengono bloccati. Quando viene bloccato un URL, persone, fare clic sui collegamenti all'URL bloccati vengono indirizzate a una [pagina di avviso](atp-safe-links-warning-pages.md) simile all'immagine seguente: 
   

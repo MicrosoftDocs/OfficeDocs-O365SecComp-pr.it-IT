@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
+ms.collection: M365-security-compliance
 description: Impostare i criteri di collegamenti sicuro per proteggere l'organizzazione da dannosi collegamenti nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 69cef41e3e2dc9b01bf1b001ca63f8202c4c6017
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 834b83efe505a399fd3744e97533b92f2fc156f4
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755307"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995257"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti
+
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md), una funzionalità di [Protezione di Office 365 avanzate rischio](office-365-atp.md) degli (strumenti di analisi), consentono di proteggere l'organizzazione da dannosi collegamenti utilizzati in altri attacchi e phishing. Se si dispone di volte necessario [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md), è possibile impostare i criteri degli strumenti di analisi collegamenti attendibili per garantire che quando gli utenti fare clic su indirizzi web (URL), l'organizzazione è protetto. I criteri degli strumenti di analisi collegamenti attendibili possono essere configurati per analizzare gli URL nella posta elettronica ed nei documenti di Office.
   

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Con Office 365, il contenuto viene crittografato statici e in transito, utilizzando la crittografia, i protocolli e le tecnologie disponibili più sicuro. Panoramica della crittografia in Office 365.
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972288"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995107"
 ---
 # <a name="encryption-in-office-365"></a>Crittografia in Office 365
 
@@ -61,7 +61,7 @@ Le risorse seguenti per ulteriori informazioni, vedere:
     
 - [Attivare Rights Management nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [Set up Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
     
 ## <a name="how-do-i"></a>Procedura
 

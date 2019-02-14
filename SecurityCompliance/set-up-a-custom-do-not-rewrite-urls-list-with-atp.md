@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
+ms.collection: M365-security-compliance
 description: Quando si imposta i criteri di collegamenti sicuro degli strumenti di analisi, è possibile includere una riscrittura di non eseguire ' elenco degli URL per abilitare alcune persone all'interno dell'organizzazione visitare i siti che includono nell'elenco.
-ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755287"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995377"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco personalizzato di URL rewrite di non eseguire tramite collegamenti attendibili di Office 365 degli strumenti di analisi
+
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), l'organizzazione può avere un [URL bloccati personalizzato](set-up-a-custom-blocked-urls-list-wtih-atp.md), in modo che quando utenti fare clic su web indirizzi (URL) in messaggi di posta elettronica o alcuni documenti di Office, viene impediti a questi URL. L'organizzazione può essere elenchi personalizzati "non di riscrittura" per gruppi specifici dell'organizzazione. Un elenco "non di riscrittura" consente alcune persone a visitare gli URL che vengono bloccati in caso contrario tramite [Degli strumenti di analisi collegamenti attendibili in Office 365](atp-safe-links.md). 
   

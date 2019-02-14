@@ -12,15 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+- M365-security-compliance
 description: Protezione da minacce avanzate di Office 365 include intelligence spoofing, collegamenti sicuri, gli allegati sicuri, avanzate funzionalità anti-phishing e business intelligence di rischio.
-ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792251"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995217"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
+
+> [!IMPORTANT]
+> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview-of-office-365-advanced-threat-protection"></a>Panoramica della protezione di Office 365 rischio avanzate
 

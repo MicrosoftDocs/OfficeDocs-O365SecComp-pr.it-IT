@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
+ms.collection: M365-security-compliance
 description: Definire i criteri di sicurezza degli allegati per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: c089d46da2070f32f2452bab1fd2f7c15a39861c
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755217"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995387"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri di sicurezza allegati di Office 365 degli strumenti di analisi
 

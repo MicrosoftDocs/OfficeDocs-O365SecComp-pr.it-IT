@@ -3,7 +3,7 @@ title: Utilizzare Esplora in sicurezza &amp; centro conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: Informazioni sulle soluzioni (denominato anche Explorer rischio) la sicurezza &amp; centro conformità.
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699929"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995117"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Utilizzare Esplora in sicurezza &amp; centro conformità
 
@@ -27,6 +28,9 @@ Se l'organizzazione dispone di [Business Intelligence di Office 365 rischio](off
 ![Passare a gestione rischio \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Utilizzare Esplora, in sicurezza &amp; centro conformità, passare a **gestione delle minacce** \> **Explorer**.
+
+> [!IMPORTANT]
+> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Panoramica delle soluzioni
 

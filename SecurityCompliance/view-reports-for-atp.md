@@ -3,7 +3,7 @@ title: Visualizzare i report per la protezione rischio avanzate di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: Informazioni su come trovare e utilizzare rapporti per Office 365 avanzate protezione da minacce per la protezione &amp; centro conformità.
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014948"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995227"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per la protezione rischio avanzate di Office 365
 
@@ -79,8 +80,7 @@ Quando passa il mouse su una barra nel grafico, è possibile visualizzare le azi
 
 Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diversi altri report disponibili, come descritto nella tabella riportata di seguito:
 
-
-|Tipo di rapporto  |Ulteriori informazioni  |
+|Tipo di rapporto  |Altre informazioni  |
 |---------|---------|
 |**Rapporti sulla protezione posta elettronica**, ad esempio primi mittenti e destinatari report, un report di posta elettronica di spoofing e un rapporto sui rilevamenti di posta indesiderata. | [Visualizzare i report di protezione posta elettronica in sicurezza &amp; centro conformità](view-email-security-reports.md)        |
 |**Explorer** (detto anche Explorer rischio, questa è inclusa funzionalità di [Business Intelligence di Office 365 rischio](office-365-ti.md))     | [Utilizzare Esplora in sicurezza &amp; centro conformità](use-explorer-in-security-and-compliance.md)        |
@@ -90,14 +90,14 @@ Oltre ai rapporti degli strumenti di analisi descritti in questo articolo, diver
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Autorizzazioni necessarie per visualizzare i report degli strumenti di analisi?
 
-Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato sia la sicurezza &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
+Per poter visualizzare e utilizzare i rapporti descritti in questo articolo, **è necessario disporre di un ruolo appropriato assegnato per la protezione sia &amp; centro conformità e l'interfaccia di amministrazione di Exchange**.
 
 - Per la sicurezza &amp; centro conformità, è necessario disporre dei seguenti ruoli assegnati:
     - Gestione organizzazione
-    - Amministratore della sicurezza
+    - Amministratore della sicurezza (possono essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Lettore di sicurezza
 
-- Per Exchange Online deve essere uno dei seguenti ruoli assegnati:
+- Per Exchange Online, è necessario disporre dei seguenti ruoli assegnati nell'interfaccia di amministrazione Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o i cmdlet PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Gestione organizzazione
     - Gestione organizzazione in sola visualizzazione
     - Ruolo Destinatari di sola lettura
