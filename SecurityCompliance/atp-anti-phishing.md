@@ -10,50 +10,50 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
-description: Anti-phishing degli strumenti di analisi fa parte di protezione di Office 365 avanzate rischio. Anti-phishing degli strumenti di analisi si applica un insieme di modelli di apprendimento automatica insieme ad algoritmi di rilevamento di rappresentazione per i messaggi in arrivo per fornire la protezione per gli attacchi di phishing merce e spear. Tutti i messaggi sono soggetti a un'ampia gamma di modelli di apprendimento addestrati per rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da attacchi di rappresentazione utente e domini diversi.
-ms.openlocfilehash: c3e44a313bf9c823fbfda138fc5a10294993d509
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+description: ATP anti-phishing è parte di Office 365 Advanced Threat Protection. ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. Tutti i messaggi sono soggetti a una vasta gamma di modelli di apprendimento automatico addestrati a rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da vari attacchi di rappresentazione di dominio e utente.
+ms.openlocfilehash: 3cd786de403bd2fe4fcdd5d53f3f825c6e4e8a40
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792271"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29889249"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Le funzionalità di anti-phishing ATP in Office 365
 
-Anti-phishing degli strumenti di analisi fa parte di [Protezione di Office 365 avanzate rischio](office-365-atp.md). Anti-phishing degli strumenti di analisi si applica un insieme di modelli di apprendimento automatica insieme ad algoritmi di rilevamento di rappresentazione per i messaggi in arrivo per fornire la protezione per gli attacchi di phishing merce e spear. Tutti i messaggi sono soggetti a un'ampia gamma di modelli di apprendimento addestrati per rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da attacchi di rappresentazione utente e domini diversi. Protezione anti-phishing degli strumenti di analisi consente di proteggere l'organizzazione in base a criteri che sono impostati dagli amministratori della protezione globali di Office 365.
+ATP anti-phishing è parte di [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. Tutti i messaggi sono soggetti a una vasta gamma di modelli di apprendimento automatico addestrati a rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da vari attacchi di rappresentazione di dominio e utente. ATP anti-phishing protegge l'organizzazione in base a criteri di polizia impostati dagli amministratori globali o di sicurezza di Office 365.
   
-Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
+Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
 > [!NOTE]
-> Protezione anti-phishing degli strumenti di analisi è disponibile solo in avanzate Threat Protection, incluso nel sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 Education A5 e così via. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Il sistema anti-phishing ATP è disponibile solo in Advanced Threat Protection, incluso nelle sottoscrizioni, ad esempio [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education a5 e così via. Se nell'organizzazione è presente un abbonamento a Office 365 che non include Office 365 ATP, è possibile acquistare ATP come componente aggiuntivo. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-## <a name="how-atp-anti-phishing-works"></a>Funzionamento degli strumenti di analisi anti-phishing
+## <a name="how-atp-anti-phishing-works"></a>Come funziona il anti-phishing ATP
 
-Protezione anti-phishing degli strumenti di analisi verifica messaggi in arrivo per gli indicatori che il messaggio può essere phishing. Ogni volta che un utente è occupato da un criterio degli strumenti di analisi (gli allegati sicuri, collegamenti attendibili o anti-phishing) il messaggio in arrivo viene valutato in base al computer più modelli per l'analisi per determinare se i criteri si applicano al messaggio e l'azione appropriata per il messaggio di apprendimento eseguire, in base ai criteri configurati.
+Il anti-phishing ATP verifica i messaggi in arrivo per gli indicatori che il messaggio può essere phishing. Ogni volta che un utente è soggetto a un criterio ATP (allegati sicuri, collegamenti sicuri o anti-phishing), il messaggio in arrivo viene valutato da più modelli di apprendimento automatico che analizzano il messaggio per determinare se il criterio si applica al messaggio e l'azione appropriata è eseguita, in base ai criteri configurati.
   
-Degli strumenti di analisi anti-phishing consente agli amministratori globali di Office 365 o gli amministratori di sicurezza definire i criteri che forniscono una protezione contro gli attacchi di phishing che includono la rappresentazione degli utenti o i domini. (o entrambi). Gli amministratori globali di Office 365 o gli amministratori di sicurezza definiscono all'interno del criterio utente e i domini deve essere protette da attacchi di rappresentazione utente utilizzando un elenco fisso di utenti o i domini o mediante l'utilizzo di business intelligence della cassetta postale. Business intelligence della cassetta postale è una conoscenza approfondita di specifiche esigenze di posta elettronica dell'utente e i contatti personali. Degli strumenti di analisi acquisita dalla modalità di ogni singolo utente comunica con altri utenti all'interno e all'esterno dell'organizzazione e vengono creati una mappa di queste relazioni. Questa mappa consente di acquisire familiarità con ulteriori informazioni su come verificare i messaggi destro vengono identificati come rappresentazione degli strumenti di analisi.
+ATP anti-phishing consente agli amministratori globali di Office 365 o agli amministratori della sicurezza di definire criteri che forniscono protezione contro gli attacchi di phishing che includono la rappresentazione di utenti o domini. (o entrambi). Gli amministratori globali di Office 365 o gli amministratori della sicurezza definiscono all'interno del criterio quali utenti e domini devono essere protetti dagli attacchi di rappresentazione tramite un elenco fisso di utenti o domini oppure tramite l'utilizzo di servizi di intelligence delle cassette postali. Intelligence delle cassette postali è una conoscenza avanzata delle abitudini di posta elettronica e dei contatti personali di un utente. ATP apprende come ogni singolo utente comunica con altri utenti all'interno e all'esterno dell'organizzazione e crea una mappa di queste relazioni. Questa mappa consente a ATP di comprendere maggiori dettagli su come verificare che i messaggi corretti vengano identificati come rappresentazione.
   
-Criteri anti-phishing degli strumenti di analisi può essere applicato a un insieme specifico di utenti o gruppi all'interno dell'organizzazione o a un intero dominio o a tutti i domini personalizzati. Per ulteriori informazioni, vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
+Le polizie anti-phishing ATP possono essere applicate a un insieme specifico di persone o gruppi nell'organizzazione o a un intero dominio o a tutti i domini personalizzati. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
-## <a name="how-to-get-atp-anti-phishing"></a>Come ottenere degli strumenti di analisi anti-phishing
+## <a name="how-to-get-atp-anti-phishing"></a>Come ottenere il anti-phishing ATP
 
-Funzionalità ATP Anti-Phishing fanno parte della [Protezione da minacce avanzate](office-365-atp.md); protezione anti-phishing degli strumenti di analisi, tuttavia, si applica quando vengono definiti i criteri anti-phishing. (Un esempio è un criterio di rappresentazione). Vedere [impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md).
+Le funzionalità di anti-phishing ATP fanno parte di [Advanced Threat Protection](office-365-atp.md); Tuttavia, la protezione anti-phishing ATP si applica quando vengono definiti i criteri di anti-phishing. Un esempio è un criterio basato sulla rappresentazione. Per ulteriori informazioni [, vedere Configurare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
-## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Come sapere se anti-phishing degli strumenti di analisi è sul posto
+## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Come sapere se è in esecuzione l'anti-phishing ATP
 
-Criteri di anti-phishing degli strumenti di analisi devono essere definiti nell'ordine indicato per applicare la protezione. Verificare innanzitutto per verificare la protezione sia sul posto.
+I criteri di anti-phishing ATP devono essere definiti in modo che la protezione sia attiva. Prima di tutto, verificare che la protezione sia sul posto.
 
-Inoltre, rapporti sono disponibili per mostrare come il servizio funzioni per l'organizzazione. Per ulteriori informazioni, vedere [visualizzare i report per la protezione rischio avanzate di Office 365](view-reports-for-atp.md).
+Inoltre, i report sono disponibili per illustrare il funzionamento del servizio per l'organizzazione. Per ulteriori informazioni, vedere [View Reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).
 
-Per strumenti di analisi anti-phishing di apprendimento modelli per essere attiva per un determinato utente, l'utente deve essere parte di un criterio definito [Allegati sicuri degli strumenti di analisi](atp-safe-attachments.md), [Degli strumenti di analisi collegamenti attendibili](atp-safe-links.md)o ATP Anti-Phishing. 
+Per essere attivi per un utente specifico, è necessario che l'utente faccia parte di un [allegato sicuro ATP](atp-safe-attachments.md)definito, [collegamenti sicuri ATP](atp-safe-links.md)o criteri di anti-phishing ATP. 
 
-Nella tabella seguente vengono descritti alcuni scenari di esempio. In ognuno di questi esempi, l'organizzazione utilizza Office 365 Enterprise E5, che include una protezione avanzata di rischio.
+Nella tabella seguente vengono descritti alcuni scenari di esempio. In ognuno di questi esempi l'organizzazione utilizza Office 365 Enterprise E5, che include la protezione avanzata dalle minacce.
   
-|**Scenario di esempio**|**Protezione anti-phishing degli strumenti di analisi si applica in questo caso?**|
+|**Scenario di esempio**|**In questo caso, è applicabile l'anti-phishing ATP?**|
 |:-----|:-----|
-|Organizzazione di PAT ha E5 Enterprise di Office 365, ma non è definita tutti i criteri per gli allegati sicuri di strumenti di analisi, degli strumenti di analisi collegamenti attendibili o degli strumenti di analisi avanzate phishing ancora.|No. Sebbene la funzionalità è disponibile, almeno un criterio degli strumenti di analisi deve essere definito nell'ordine indicato per i modelli di apprendimento degli strumenti di analisi per l'utilizzo. Per la rappresentazione un criterio di protezione anti-phishing degli strumenti di analisi deve inoltre essere sul posto.|
-|Lee è un dipendente del reparto vendite presso Contoso. Organizzazione di Lee dispone di un criterio di protezione anti-phishing degli strumenti di analisi cui si applica solo ai dipendenti finance.|No. In questo caso, degli strumenti di analisi anti-phishing (modelli computer e la tutela della rappresentazione) si applicano a finance dipendenti, mentre altri dipendenti, tra cui il reparto vendite non.|
-|Nel giorno precedente, un amministratore di Office 365 all'organizzazione di Jean configurare un criterio di protezione anti-phishing degli strumenti di analisi che si applica a tutti i dipendenti. In precedenza oggi Jean ricevuto un messaggio di posta elettronica che include una rappresentazione a cui il criterio.|Sì. In questo esempio Jean dispone di una licenza per la protezione avanzata di rischio e un criterio di protezione anti-phishing degli strumenti di analisi che include Jean è stato definito. In genere necessario circa 30 minuti per un nuovo criterio rendere effettive tra datacenter; Poiché un giorno trascorsa in questo caso, il criterio deve essere attivo.|
+|L'organizzazione di Pat ha Office 365 Enterprise E5, ma nessuno ha definito i criteri per gli allegati sicuri di ATP, i collegamenti sicuri di ATP o il phishing avanzato del trifosfato di adenosina ancora.|No. Anche se la funzionalità è disponibile, è necessario che sia definito almeno un criterio ATP affinché i modelli di apprendimento automatico del sistema ATP funzionino. Per la rappresentazione è necessario che sia presente anche un criterio di anti-phishing ATP.|
+|Lee è un dipendente del reparto vendite di contoso. L'organizzazione di Lee ha un criterio anti-phishing ATP sul posto che si applica solo ai dipendenti finanziari.|No. In questo caso, l'anti-phishing ATP (modelli di computer e protezione da Impersonation) verrebbe applicato ai dipendenti, ma altri dipendenti, tra cui il reparto vendite, non lo sarebbero.|
+|Ieri, un amministratore di Office 365 dell'organizzazione Jean ha configurato un criterio di anti-phishing ATP che si applica a tutti i dipendenti. Prima di oggi, Jean ha ricevuto un messaggio di posta elettronica che include una rappresentazione descritta dal criterio.|Sì. In questo esempio, Jean dispone di una licenza per Advanced Threat Protection e viene definito un criterio anti-phishing ATP che include Jean. In genere, sono necessari circa 30 minuti affinché un nuovo criterio abbia effetto su tutti i datacenter. Poiché un giorno è passato in questo caso, il criterio dovrebbe essere attivo.|
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -61,14 +61,14 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio. In ognuno di
   
 [Protezione anti-phishing in Office 365](anti-phishing-protection.md)
   
-[Impostazione dei criteri anti-phishing in Office 365](set-up-anti-phishing-policies.md)
+[Impostare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md)
   
-[Collegamenti sicuri degli strumenti di analisi in Office 365](atp-safe-links.md)
+[Collegamenti sicuri di ATP in Office 365](atp-safe-links.md)
   
-[Impostare i criteri di strumenti di analisi collegamenti attendibili in Office 365](set-up-atp-safe-links-policies.md)
+[Configurare i criteri dei collegamenti sicuri di ATP in Office 365](set-up-atp-safe-links-policies.md)
   
-[Allegati sicuri degli strumenti di analisi in Office 365](atp-safe-attachments.md)
+[Allegati sicuri di ATP in Office 365](atp-safe-attachments.md)
   
-[Impostare i criteri di sicurezza degli allegati degli strumenti di analisi in Office 365](set-up-atp-safe-attachments-policies.md)
+[Impostare i criteri degli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md)
   
 [Visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md)

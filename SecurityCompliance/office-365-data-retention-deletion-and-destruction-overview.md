@@ -10,65 +10,45 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: Panoramica di criteri di Microsoft per Office 365 sulla conservazione dei dati, eliminazione e distruzione.
-ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
-ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
+description: Una panoramica dei criteri di Microsoft per Office 365 relativamente alla conservazione, all'eliminazione e alla distruzione dei dati.
+ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "23999147"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "24961572"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservazione, eliminazione e distruzione dei dati in Office 365
 
-## <a name="introduction"></a>Introduzione
-Microsoft ha un criterio di gestione dati Standard per Office 365 che specifica quanto tempo i dati dei clienti verranno mantenuti dopo l'eliminazione. In generale, in Office 365, esistono due scenari in cui viene eliminati i dati dei clienti:
-- **Attiva l'eliminazione** - un utente consente di eliminare dati o dati privati a un utente viene eliminati dopo che l'utente viene eliminato dall'amministratore di un tenant attivo.
-- **Eliminazione passiva** - sottoscrizione tenant termina.
+Microsoft dispone di un criterio di gestione dei dati standard per Office 365 che specifica la durata di conservazione dei dati del cliente dopo essere stata eliminata. In genere, esistono due scenari in cui vengono eliminati i dati dei clienti:
 
-Criteri di Data gestione Standard di Microsoft per Office 365 specificano quanto tempo i dati verranno mantenuti in ognuno di questi scenari. Nelle sezioni seguenti vengono descritte le categorie di dati (basati Office 365 risorse classificazione Standard di Microsoft) e i periodi di conservazione per gli scenari di eliminazione attive e passive.
+- **Eliminazione attiva** : il tenant ha un abbonamento attivo e un utente elimina i dati o i dati forniti da un utente vengono eliminati dall'amministratore.
+- **Eliminazione passiva** -termina la sottoscrizione tenant.
 
-## <a name="active-deletion-retention"></a>Conservazione eliminazione attivo
+## <a name="data-retention"></a>Conservazione dei dati
 
-| Categoria di dati | Mantenere almeno | Mantenere al massimo |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| Dati di controllo di accesso | N/D | N/D |
-| Contenuto dei clienti | 7 giorni | 30 giorni |
-| Informazioni personali dell'utente finale | 90 giorni | 180 giorni |
-| Dati relativi agli account | 1 anno | 3 anni |
-| Organizzazione informazioni personali | 90 giorni | 180 giorni |
-| Metadati di sistema | Vedere i registri di protezione | Vedere i registri di protezione |
-| Registri di sicurezza | Min 1 anno | Max 1 anno |
-| Registri archiviazione di Exchange Online | Min 3 anni | Max 3 anni |
+Per ognuno di questi scenari di eliminazione, nella tabella seguente viene mostrato il periodo di conservazione dei dati massimo, per categoria e classificazione dei dati:
 
-## <a name="passive-deletion-retention"></a>Conservazione eliminazione passiva
+| Categoria di dati | Classificazione dei dati | Descrizione | Esempi | Periodo di conservazione |
+|-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
+| Dati cliente
+ | Contenuto del cliente| Contenuto direttamente fornito/creato da amministratori e utenti <br><br> Questo include tutto il testo, audio, video, file di immagine e software creati e archiviati nei data center di Microsoft quando si utilizzano i servizi in Office 365 | Esempi delle applicazioni di Office 365 più comunemente utilizzate che consentono agli utenti di creare dati tra cui Word, Excel, PowerPoint, Outlook e OneNote <br><br> Il contenuto del cliente include anche i segreti di proprietà dei clienti/forniti (password, certificati, chiavi di crittografia, chiavi di archiviazione) | **Scenario di eliminazione attiva:** al massimo 30 giorni <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
+| Dati cliente
+ | Informazioni identificabili dall'utente finale (EUII) | Dati che identificano o possono essere utilizzati per identificare l'utente di un servizio Microsoft. EUII non contiene contenuto del cliente | Nome utente o nome visualizzato (dominio\nomeutente) <br><br> Nome dell'entità utente (nome @ dominio) <br><br>  Indirizzi IP specifici dell'utente | **Scenario di eliminazione attiva:** al massimo 180 giorni (solo un'azione di amministratore tenant) <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
+| Dati personali <br> (dati non inclusi nei dati del cliente) | Identificatori pseudonimi dell'utente finale (EUPI) | Identificatore creato da Microsoft associato all'utente di un servizio Microsoft. Quando EUPI viene combinato con altre informazioni, ad esempio una tabella di mapping, identifica l'utente finale <br><br> EUPI non contiene informazioni caricate o create dal cliente | GUID utente, PUID o SID <br><br> ID di sessione | **Scenario di eliminazione attiva:** al massimo 30 giorni <br><br> **Scenario di eliminazione passiva:** al massimo 180 giorni |
 
-| Categoria di dati | Mantenere almeno | Mantenere al massimo |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| Dati di controllo di accesso | 90 giorni (per il ripristino di contenuto) | 180 giorni (per il ripristino di contenuto) |
-| Contenuto dei clienti | 90 giorni (funzione limited account) | 180 giorni |
-| Informazioni personali dell'utente finale | 90 giorni | 180 giorni |
-| Dati relativi agli account | 1 anno | 3 anni |
-| Organizzazione informazioni personali | 90 giorni | 180 giorni |
-| Metadati di sistema | Vedere i registri di protezione | Vedere i registri di protezione |
-| Registri di sicurezza | Min 1 anno | Max 1 anno |
-| Registri archiviazione di Exchange Online | Min 3 anni | Max 3 anni |
+## <a name="subscription-retention"></a>Conservazione della sottoscrizione
 
-## <a name="subscription-rentention"></a>Rentention sottoscrizione
+In qualsiasi momento, durante il periodo di un abbonamento attivo, un Sottoscrittore può accedere, estrarre o eliminare i dati dei clienti archiviati in Office 365. Se una sottoscrizione a pagamento termina o è terminata, Microsoft manterrà i dati dei clienti archiviati in Office 365 in un account con funzione limitata per 90 giorni per consentire al Sottoscrittore di estrarre i dati. Al termine del periodo di conservazione di 90 giorni, Microsoft disattiverà l'account ed eliminerà i dati del cliente. Non più di 180 giorni dopo la scadenza o la terminazione di un abbonamento a Office 365, Microsoft disattiverà l'account ed eliminerà tutti i dati dei clienti dall'account. Una volta trascorso il periodo di conservazione massimo per tutti i dati, i dati vengono resi commercialmente irrecuperabili.
 
-Il contenuto dei clienti è definito come il contenuto delle cassette postali di Exchange Online (body, voci del calendario e il contenuto degli allegati di posta elettronica, di posta elettronica e, se applicabile, Skype per il contenuto di Business), contenuto del sito SharePoint Online e i file archiviati all'interno dei siti e i file caricati in OneDrive per Business o Skype per le aziende.
+Nel caso di una versione di valutazione gratuita, il tuo account passerà a uno stato di grazia per 30 giorni nella maggior parte dei paesi e delle aree geografiche. Durante questo periodo di prova, si ha la possibilità di acquistare Office 365. Se si decide di non acquistare Office 365, è possibile annullare la versione di valutazione o lasciare scadere il periodo di prova e le informazioni e i dati dell'account di valutazione verranno eliminati.
 
-AT ininterrotta durante il termine di una sottoscrizione di un sottoscrittore può accedere ed estrarre i dati dei clienti archiviati in Office 365. Ad eccezione di valutazione gratuita e servizi di LinkedIn, Microsoft consente di conservare dati archiviati in Office 365 in un account limitato funzione per 90 giorni dopo la scadenza o cessazione della sottoscrizione per attivare il server di sottoscrizione per estrarre i dati relativi ai clienti. (Nel caso di una versione di valutazione gratuita quando scade la versione di valutazione, si sposta in un periodo di prova, avendo 30 giorni (per la maggior parte delle versioni di valutazione, nella maggior parte dei paesi,) acquistare Office 365. Se si decide di non acquistare Office 365, è possibile consentire la scadenza di prova o annullarla. Subito dopo il periodo di prova di 30 giorni, le informazioni sull'account di prova e dati viene definitivamente cancellata.)
-
-Al termine del periodo di conservazione di 90 giorni, consente di disabilitare l'account Microsoft e consente di eliminare i dati dei clienti. Non più di 180 giorni dopo la scadenza o alla chiusura di una sottoscrizione a Office 365, Microsoft sarà disabilitare l'account ed eliminare tutti i dati relativi ai clienti dall'account. Una volta trascorso il periodo di conservazione massima per tutti i dati, i dati vengono visualizzati sul mercato irreversibili.
-
-Microsoft offre anche un criterio Standard di gestione dei dati in grado di risolvere il riciclo e l'eliminazione del server non riuscito o ritirare e unità disco. Prima di utilizzare nuovamente le unità disco in Office 365, Microsoft esegue un processo il filtraggio fisici che sia compatibile con SP NIST 800 88. Unità disco che non possono essere riutilizzate eliminate utilizzando un processo di eliminazione fisica che viene eseguito sul posto all'interno del datacenter che contiene i dischi in corso l'eliminazione. Queste procedure vengono eseguite dall'infrastruttura Microsoft Cloud e operazioni (MCIO). Per ulteriori informazioni, vedere il MCIO report in [Anteprima di attendibilità del servizio](https://aka.ms/STP)di controllo.
-
-## <a name="expedited-deletion"></a>Eliminazione accelerata
-AT ininterrotta durante il termine di una sottoscrizione di un sottoscrittore può contattare richiesta expedited sottoscrizione deprovisioning e supporto di Microsoft. In questo processo, tutti i dati utente, ad esempio dati di SharePoint in linea, Exchange Online che potrebbero essere in attesa o archiviati nelle cassette postali inattive, viene eliminati tre giorni dopo che l'amministratore dovrà immettere il codice del blocco fornito da Microsoft. Per ulteriori informazioni su deprovisioning accelerate, vedere [annullare Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+## <a name="expedited-deletion"></a>Eliminazione rapida
+In qualsiasi momento, durante il periodo di qualsiasi sottoscrizione, un Sottoscrittore può contattare il supporto tecnico Microsoft e richiedere il deprovisioning degli abbonamenti celeri. In questo processo, tutti i dati degli utenti, inclusi i dati in SharePoint Online, Exchange Online che possono essere archiviati in cassette postali inattive, vengono eliminati tre giorni dopo che l'amministratore ha inserito il codice di blocco fornito da Microsoft. Per ulteriori informazioni sul deprovisioning rapido, vedere [Annulla Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Collegamenti correlati
+- [Distruzione dei dati](office-365-data-destruction.md)
+- [Capacità di immutabilità in Office 365](office-365-data-immutability.md)
 - [Eliminazione dei dati di Exchange Online](office-365-exchange-online-data-deletion.md)
 - [Eliminazione dei dati di SharePoint Online](office-365-sharepoint-online-data-deletion.md)
 - [Eliminazione dei dati di Skype for Business](office-365-skype-data-deletion.md)
-- [Capacità di immutabilità in Office 365](office-365-data-immutability.md)
-- [Distruzione dei dati](office-365-data-destruction.md)

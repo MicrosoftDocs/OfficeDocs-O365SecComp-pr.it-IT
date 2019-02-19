@@ -1,9 +1,8 @@
 ---
 title: Crittografia di Office 365 in Microsoft Dynamics 365
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 5/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,24 +10,24 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Riepilogo: Informazioni su crittografia in Microsoft Dynamics 365.'
-ms.openlocfilehash: 181db1724f140c86fb1ac1dbf4a4bfb7063d25a3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Riepilogo: informazioni sulla crittografia in Microsoft Dynamics 365.'
+ms.openlocfilehash: faf9df09b8dcd8a76a38671e4f5d5145094eec88
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530200"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664072"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Crittografia di Office 365 in Microsoft Dynamics 365
 
-Microsoft utilizza la tecnologia di crittografia per proteggere i dati dei clienti in Dynamics 365 al resto in un database di Microsoft e mentre è in corso tra dispositivi utente e i centri dati. Le connessioni tra i clienti e datacenter Microsoft sono crittografate e tutti gli endpoint pubblici sono protette tramite TLS standard del settore. TLS in modo efficace stabilisce una connessione di browser al server protezione avanzata per garantire la riservatezza dei dati e l'integrità tra computer desktop e centri dati. Dopo aver attivato la crittografia dei dati, non può essere disattivata. Per ulteriori informazioni, vedere [la crittografia dei dati a livello di campo](https://msdn.microsoft.com/en-us/library/dn481562.aspx).
+Microsoft utilizza la tecnologia di crittografia per proteggere i dati dei clienti in Dynamics 365 mentre è in fase di riposo in un database Microsoft e durante il transito tra i dispositivi utente e i datacenter. Le connessioni stabilite tra i clienti e i centri dati Microsoft vengono crittografate e tutti gli endpoint pubblici sono protetti con TLS standard del settore. TLS stabilisce efficacemente una connessione da browser a server con protezione avanzata per garantire la riservatezza e l'integrità dei dati tra desktop e Datacenter. Dopo che la crittografia dei dati è attivata, non può essere disattivata. Per ulteriori informazioni, vedere [crittografia dei dati a livello di campo](https://msdn.microsoft.com/en-us/library/dn481562.aspx).
 
-Dynamics 365 utilizza standard crittografia a livello di cella Microsoft SQL Server per un set predefinito degli attributi delle entità che contengono informazioni riservate, ad esempio i nomi utente e password di posta elettronica. Questa funzionalità consente alle organizzazioni di soddisfare i requisiti di conformità associati FIPS 140-2. La crittografia dei dati a livello di campo è particolarmente importante negli scenari che sfruttano il [Router di posta elettronica di Microsoft Dynamics CRM](https://technet.microsoft.com/en-us/library/hh699800.aspx), che è necessario archiviare i nomi utente e password per consentire l'integrazione tra un'istanza di Dynamics 365 e un servizio di posta elettronica. 
+Dynamics 365 utilizza la crittografia a livello di cella Microsoft SQL Server standard per un set di attributi di entità predefiniti che contengono informazioni riservate, ad esempio i nomi utente e le password di posta elettronica. Questa funzionalità può consentire alle organizzazioni di soddisfare i requisiti di conformità associati a FIPS 140-2. La crittografia dei dati a livello di campo è particolarmente importante in scenari che sfruttano il [router di posta elettronica di Microsoft Dynamics CRM](https://technet.microsoft.com/en-us/library/hh699800.aspx), che deve archiviare i nomi utente e le password per consentire l'integrazione tra un'istanza di Dynamics 365 e un servizio di posta elettronica. 
 
-Per eseguire in tempo reale della crittografia dei dati durante la scrittura su disco (al resto), tutte le istanze di Dynamics 365 utilizzano [Microsoft SQL Server Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) (TDE). TDE consente di crittografare i file di dati di SQL Server, Database di SQL Azure e Azure SQL Data Warehouse. Per impostazione predefinita, Microsoft memorizza e gestisce le chiavi di crittografia del database per le istanze di Dynamics 365. (I tasti utilizzati da Dynamics 365 per Financials generati da API di protezione dei dati di .NET Framework). 
+Tutte le istanze di Dynamics 365 utilizzano la crittografia (transParent [Data Encryption) di Microsoft SQL Server](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) per eseguire la crittografia in tempo reale dei dati quando vengono scritti su disco (a riposo). Transcript crittografa SQL Server, database SQL di Azure e file di dati di Azure SQL data warehouse. Per impostazione predefinita, Microsoft archivia e gestisce le chiavi di crittografia del database per le istanze di Dynamics 365. Le chiavi utilizzate da Dynamics 365 per gli strumenti finanziari sono generate dall'API di protezione dei dati di .NET Framework. 
 
-La funzionalità di gestione delle chiavi nell'interfaccia di amministrazione di Dynamics 365 consente agli amministratori di gestire autonomamente le chiavi di crittografia di database associati a istanze di Dynamics 365. (Chiavi di crittografia di database autonomo gestiti sono disponibili solo nell'aggiornamento 2017 gennaio di Microsoft Dynamics 365 e potrebbero non essere disponibili per le versioni successive. Per ulteriori informazioni, vedere [gestione delle chiavi di crittografia per l'istanza (online) Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-instance)). La funzionalità di gestione delle chiavi sono supportati sia PFX BYOK crittografia file chiave, ad esempio quelle archiviate in un modulo di sicurezza hardware. (Per ulteriori informazioni sulla generazione e trasferimento di una chiave di modulo di sicurezza hardware protetta tramite Internet, vedere [come generare e trasferire protetti da modulo di sicurezza hardware chiavi per Azure chiave cassaforte](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys)). 
+La funzionalità Gestisci tasti nell'interfaccia di amministrazione di Dynamics 365 fornisce agli amministratori la possibilità di gestire autonomamente le chiavi di crittografia del database associate alle istanze di Dynamics 365. Le chiavi di crittografia self-Managed database sono disponibili solo nell'aggiornamento di gennaio 2017 per Microsoft Dynamics 365 e potrebbero non essere rese disponibili per le versioni successive. Per ulteriori informazioni, vedere [gestire le chiavi di crittografia per l'istanza di Dynamics 365 (online)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-instance). La funzionalità di gestione delle chiavi supporta sia i file delle chiavi di crittografia PFX che BYOK, ad esempio quelli archiviati in un HSM. Per ulteriori informazioni sulla generazione e sul trasferimento di una chiave con protezione HSM su Internet, vedere [How to generate and transfer HSM-protected Keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys). 
 
-Per utilizzare l'opzione chiave di crittografia per il caricamento, è necessario sia la chiave di crittografia pubblici e privati.
+Per utilizzare l'opzione carica crittografia chiave, è necessaria sia la chiave di crittografia pubblica che quella privata.
 
-La funzionalità di gestione delle chiavi accetta la complessità da gestire la chiave di crittografia con Azure chiave cassaforte per l'archiviazione in modo sicuro le chiavi di crittografia. Azure cassaforte chiave aiuta a salvaguardare le chiavi di crittografia e segreti utilizzati dalle applicazioni cloud e servizi. La funzionalità di gestione delle chiavi non richiede che si dispone di una sottoscrizione di Azure chiave cassaforte e per la maggior parte delle situazioni non è necessario ad accedere alle chiavi di crittografia utilizzate per Dynamics 365 nell'archivio.
+La funzionalità di gestione delle chiavi estrae la complessità dalla gestione delle chiavi di crittografia tramite il Vault Key di Azure per archiviare in modo sicuro i codici di crittografia. Il Vault Key di Azure consente di salvaguardare le chiavi di crittografia e i segreti utilizzati dalle applicazioni e dai servizi cloud. La funzionalità di gestione delle chiavi non richiede l'utilizzo di una sottoscrizione a Vault Key di Azure e per la maggior parte delle situazioni non è necessario accedere alle chiavi di crittografia utilizzate per Dynamics 365 all'interno del Vault.
