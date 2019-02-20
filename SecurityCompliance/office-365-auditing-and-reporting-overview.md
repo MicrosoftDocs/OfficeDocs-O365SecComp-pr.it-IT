@@ -10,14 +10,17 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- M365-analytics
 description: Panoramica delle funzionalità di controllo e Reporting all'interno di Office 365 e garanzia del servizio.
-ms.openlocfilehash: 54cc4d353545396084c0206abe1bbb1035b3a78f
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "27131886"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091038"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Controllo e creazione di report in Office 365
 
@@ -28,7 +31,7 @@ I servizi cloud Microsoft includono diverse funzionalità di controllo e Reporti
 [Office 365 Security _AMP_ Compliance Center](https://support.office.com/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8) è un portale One-Stop per la protezione dei dati in Office 365 e include numerose funzionalità di controllo e creazione di report. Si tratta di un'evoluzione del centro conformità di Office 365. Il Centro sicurezza e conformità di & è stato creato per le organizzazioni con esigenze di protezione dei dati o conformità o che desiderano controllare l'attività di utenti e amministratori. È possibile utilizzare il Centro sicurezza & Compliance per gestire la conformità per tutti i dati di Office 365 dell'organizzazione. È possibile accedere al centro sicurezza & Compliance [http://protection.office.com](http://protection.office.com/) utilizzando l'account di amministratore di Office 365.
 
 Il Centro sicurezza e conformità di & include i riquadri di spostamento che consentono di accedere a diverse funzionalità:
-- **Avvisi** : consente di gestire gli avvisi, visualizzare gli avvisi relativi alla sicurezza e gestire gli avvisi avanzati tramite la [Gestione avanzata della sicurezza](https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475). 
+- **Avvisi** : consente di gestire gli avvisi, visualizzare gli avvisi relativi alla sicurezza e gestire gli avvisi avanzati tramite [Office 365 cloud app Security](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/office-365-cas-overview). 
 - **** Permissions: consente di [assegnare autorizzazioni](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76) quali amministratore della conformità, eDiscovery Manager e altre persone dell'organizzazione in modo che possano eseguire attività nel centro sicurezza & Compliance. È possibile assegnare le autorizzazioni per la maggior parte delle funzionalità nel centro sicurezza & Compliance, ma è necessario configurare altre autorizzazioni utilizzando l'interfaccia di amministrazione di Exchange e l'interfaccia di amministrazione di SharePoint.
 - **Gestione delle minacce** : consente di creare e applicare criteri di gestione dei dispositivi tramite la [gestione dei dispositivi mobili di Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)per configurare i criteri di [prevenzione della perdita di dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e) (DLP) per la propria organizzazione, per la configurazione del filtro della posta elettronica anti-malware, DomainKeys (DKIM), allegati sicuri, collegamenti sicuri e app OAuth.
 - **GovernaNce dei dati** : consente [di importare i dati di posta elettronica o di SharePoint da altri sistemi in Office 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84), [configurare le cassette postali di archiviazione](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)e impostare i criteri di [conservazione](https://support.office.com/article/Retention-in-the-Office-365-Security-Compliance-Center-2a0fc432-f18c-45aa-a539-30ab035c608c) per la posta elettronica e altri contenuti all'interno dell'organizzazione.

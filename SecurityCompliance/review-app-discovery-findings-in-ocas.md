@@ -11,84 +11,84 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
-description: Esame dei report di individuazione app nella gestione della protezione avanzata consentono di ulteriori informazioni sull'utilizzano di applicazioni basate su cloud persone nell'organizzazione. Dopo aver creato i rapporti di individuazione app utilizzando i file di registro dai firewall e proxy, esaminare i risultati nel dashboard di individuazione applicazioni.
-ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: La revisione dei rapporti di individuazione delle app in Office 365 cloud app Security consente di ottenere ulteriori informazioni sul modo in cui gli utenti dell'organizzazione utilizzano le app cloud. Dopo aver creato i report di individuazione delle app utilizzando i file di log dai firewall e dai proxy, esaminare i risultati nel dashboard di individuazione delle app.
+ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603747"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087335"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security
   
-|Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
+|Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
-|[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggi successivi](#next-steps) <br/> |
+|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggi successivi](#next-steps) <br/> |
    
-Il dashboard di individuazione Cloud utilizza i registri di traffico web dell'organizzazione per fornire informazioni dettagliate sull'utilizzo delle app cloud. Se si invia un amministratore globale, l'amministratore della sicurezza o lettore di sicurezza e l'organizzazione ha [creato app individuazione rapporti di protezione di applicazioni di Office 365 Cloud](create-app-discovery-reports-in-ocas.md), è possibile utilizzare il dashboard di individuazione Cloud per comprendere come utenti nel organizzazione utilizza Office 365 e altre applicazioni basate su cloud. (Il dashboard di individuazione Cloud è noto anche come è produttività App Discovery).
+Il dashboard di individuazione cloud è compatibile con i log del traffico web dell'organizzazione per fornire informazioni dettagliate sull'utilizzo delle app cloud. Se si è un amministratore globale, un amministratore della sicurezza o un lettore di sicurezza e l'organizzazione ha [creato rapporti di individuazione delle app in Office 365 cloud app Security](create-app-discovery-reports-in-ocas.md), è possibile utilizzare il dashboard di individuazione cloud per acquisire informazioni sul modo in cui le persone nella propria l'organizzazione utilizza Office 365 e altre app cloud. (Il dashboard di individuazione cloud è noto anche come individuazione delle app per la produttività).
   
- Il dashboard di individuazione Cloud consente di visualizzare informazioni dettagliate sulle modalità di utilizzo personale della tua organizzazione Office 365 e altre applicazioni. 
+ Il dashboard di individuazione cloud consente di visualizzare informazioni dettagliate sul modo in cui gli utenti dell'organizzazione utilizzano Office 365 e altre app. 
   
-![È stato aggiornato il dashboard di individuazione Cloud](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
+![The Cloud Discovery dashboard è stato aggiornato](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
-## <a name="go-to-the-cloud-discovery-dashboard"></a>Accedere al dashboard individuazione Cloud
+## <a name="go-to-the-cloud-discovery-dashboard"></a>Accedere al dashboard di individuazione cloud
 
-1. Accedere al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso.
+1. Accedere al portale[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)di sicurezza delle app cloud e accedere.
     
-2. Accedere a **individuazione** \> **individuazione Cloud dashboard**.
+2. Andare a **Discover** \> **cloud Discovery dashboard**.
     
-## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Vedere utenti principali, gli indirizzi IP, App e livelli di rischio
+## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Visualizzare gli utenti principali, gli indirizzi IP, le app e i livelli di rischio
 
-Il dashboard di individuazione Cloud viene fornita una panoramica in rapida di applicazioni che vengono utilizzati con Office 365 nell'organizzazione, tutti gli avvisi aperti, utenti principali e livelli di rischio.
+The Cloud Discovery dashboard offre una panoramica delle app che vengono utilizzate con Office 365 nell'organizzazione, eventuali avvisi aperti, utenti principali e livelli di rischio.
   
-![Cloud individuazione dashboaard](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
+![Dashboaard Discovery cloud](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
   
-1. Nella scheda **Dashboard** esaminare l'utilizzo di app cloud globale dell'organizzazione nella sezione Panoramica nella parte superiore dello schermo. 
+1. Nella scheda **Dashboard** , esaminare l'utilizzo globale delle app Cloud nell'organizzazione nella sezione Panoramica nella parte superiore dello schermo. 
     
-2. Vedere le **categorie di Office 365** per le applicazioni che vengono utilizzati nell'organizzazione. 
+2. Vedere le **categorie di Office 365** per le app che vengono utilizzate nell'organizzazione. 
     
-3. Esaminare widget **Discovered App** di visualizzare i dati di utilizzo di Office 365 e altre App in questa visualizzazione. 
+3. Consultare il widget **Apps individuati** per visualizzare l'utilizzo di Office 365 e di altre app in questa visualizzazione. 
     
-4. Esaminare il widget **utenti principali** e **gli indirizzi IP principali** per identificare gli utenti che utilizzano Office 365 e cloud App maggiormente all'interno dell'organizzazione. 
+4. Esaminare gli **utenti principali** e il widget **indirizzi IP principali** per identificare coloro che utilizzano le app di Office 365 e cloud più all'interno dell'organizzazione. 
     
-5. Visualizzazione della posizione App utilizzano persone dalla posizione geografica utilizzando il mapping **sede App** . 
+5. Vedere dove le app persone stanno usando sono per località geografica usando la mappa del **percorso delle app** . 
     
-6. Sopra l'area di mappe, esaminare il punteggio di rischio delle App rilevati in Panoramica **livelli di rischio** . È possibile esaminare i rischi per i gruppi e categorie utilizzato nell'area **Discovered App** stesso. Ad esempio, è possibile visualizzare la quantità di traffico in ogni raggruppamento è da apps elevato, medio o basso rischio. 
+6. Sopra l'area mappe, esaminare il Punteggio di rischio delle app individuate nella panoramica dei **livelli di rischio** . È possibile esaminare i rischi per gli stessi gruppi e le stesse categorie utilizzati nell'area **app scoperte** . Ad esempio, è possibile visualizzare la quantità di traffico in ogni raggruppamento proveniente da applicazioni di alto, medio o basso rischio. 
     
-## <a name="dive-deeper-into-the-information"></a>Approfondisci le informazioni
+## <a name="dive-deeper-into-the-information"></a>Immergersi più in profondità nelle informazioni
 
-È possibile utilizzare l'individuazione Cloud per rendere una più approfondita App, i sottodomini, indirizzi IP e gli utenti.
+È possibile utilizzare il cloud Discovery per approfondire le app, i sottodomini, gli indirizzi IP e gli utenti.
   
-1. Nel dashboard di individuazione Cloud, fare clic sulla scheda **Discovered App** . 
+1. Nel dashboard individuazione cloud, scegliere la scheda **app individuate** . 
     
-2. Utilizzare la sezione filtri per visualizzare le App per nome, categoria, il livello di utilizzo o ultimo considerata data.
+2. Utilizzare la sezione filtri per visualizzare le app in base al nome, alla categoria, al livello di utilizzo o alla data dell'ultima visualizzazione.
     
-3. Nell'elenco dei risultati al passaggio del mouse per un nome di applicazione per visualizzare il collegamento **Visualizza i sottodomini** .<br/> ![Al passaggio del mouse accanto a un'applicazione per visualizzare un collegamento per visualizzare i dettagli sottodominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Informazioni dettagliate sull'app selezionata verranno visualizzato.
+3. Nell'elenco dei risultati, posizionare il puntatore del mouse su un nome di app per rivelare il collegamento **Visualizza** i sottodomini.<br/> ![Posizionare il puntatore del mouse accanto a un'app per rivelare un collegamento per visualizzare i dettagli del sottodominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Verranno visualizzate informazioni dettagliate sull'app selezionata.
     
-4. Per visualizzare informazioni dettagliate sugli indirizzi IP, fare clic sulla scheda **indirizzi IP** .<br/>![Individuazione cloud Visualizza informazioni dettagliate sugli indirizzi IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Nell'elenco dei risultati, selezionare un singolo indirizzo IP per visualizzare informazioni più dettagliate.
+4. Per visualizzare i dettagli sugli indirizzi IP, scegliere la scheda **indirizzi IP** .<br/>![Individuazione cloud Visualizza informazioni dettagliate sugli indirizzi IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Nell'elenco dei risultati, selezionare un singolo indirizzo IP per visualizzare informazioni più dettagliate.
     
-5. Per visualizzare informazioni dettagliate sugli utenti di Office 365 all'interno dell'organizzazione, fare clic sulla scheda **utenti** .<br/>![Individuazione cloud - informazioni gli utenti](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Per visualizzare i dettagli relativi agli utenti di Office 365 all'interno dell'organizzazione, scegliere la scheda **utenti** .<br/>![Discovery Cloud-informazioni sugli utenti](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
-## <a name="exclude-entities"></a>Esclude le entità
+## <a name="exclude-entities"></a>Escludi entità
 
-È possibile escludere alcune gli utenti o gli indirizzi IP per individuare le informazioni più specifiche.
+È possibile escludere alcuni utenti di sistema o indirizzi IP per concentrarsi su informazioni più specifiche.
   
-1. Fare clic su **Impostazioni** \> **le impostazioni di individuazione Cloud**.
+1. Scegliere Settings **cloud Discovery Settings**. **** \>
     
-2. Scegliere **escludere le entità**.
+2. Scegliere **Escludi entità**.
     
 3. Scegliere **gli utenti esclusi** o **gli indirizzi IP esclusi**.
     
-4. Specificare gli utenti o gli indirizzi IP e nella casella **commenti** digitare informazioni sui motivi per cui si sono esclusi quegli utenti o gli indirizzi IP. 
+4. Specificare gli utenti o gli indirizzi IP e, nella casella **Commenti** , digitare le informazioni sui motivi per cui si escludono gli utenti o gli indirizzi IP. 
     
 5. Scegliere **Aggiungi**.
     
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Leggere ed eseguire l'azione gli avvisi](review-office-365-cas-alerts.md)
+- [Esaminare e intervenire sugli avvisi](review-office-365-cas-alerts.md)
     
-- [Creare i rapporti di individuazione applicazioni](create-app-discovery-reports-in-ocas.md)
+- [Creare report di individuazione delle app](create-app-discovery-reports-in-ocas.md)
     
-- Esaminare le [attività di utilizzo per la protezione di Office 365 Cloud App](utilization-activities-for-ocas.md)
+- Esaminare le [attività di utilizzo per Office 365 cloud app Security](utilization-activities-for-ocas.md)
     
 

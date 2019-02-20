@@ -1,5 +1,5 @@
 ---
-title: Office 365 a che fare con il danneggiamento dei dati
+title: Office 365 che si occupano di danneggiamento dei dati
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,29 +10,31 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Spiegazione del danneggiamento dei dati in Office 365 e le attività di Microsoft di prevenzione e ripristino.
-ms.openlocfilehash: 087be23ce5dad1daf62357cb08e27c0a15962792
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Una spiegazione del danneggiamento dei dati in Office 365 e gli sforzi di prevenzione e ripristino di Microsoft.
+ms.openlocfilehash: 54c7c69856f02d44d5c434badb30ababaa32ba1e
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530892"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090698"
 ---
-# <a name="dealing-with-data-corruption-in-office-365"></a>Gestire il danneggiamento dei dati in Office 365
+# <a name="dealing-with-data-corruption-in-office-365"></a>Gestione del danneggiamento dei dati in Office 365
 
-Uno degli aspetti complessi dell'esecuzione di un servizio cloud su larga scala viene illustrato come gestire il danneggiamento dei dati, dato il volume elevato di dati e sistemi indipendenti. Il danneggiamento dei dati può essere causato da:
-- Infrastruttura di applicazioni o di bug, corrompere alcune o tutte lo stato dell'applicazione 
-- Hardware che consentono di perdita di dati o l'impossibilità di leggere i dati dei problemi 
-- Errori operativi risorse umani 
-- Malintenzionati e dipendenti malintenzionati 
-- Problemi di servizi esterni che causare una perdita di dati 
+Uno degli aspetti impegnativi dell'esecuzione di un servizio cloud su vasta scala consiste nel gestire il danneggiamento dei dati, in base all'elevato volume di dati e ai sistemi indipendenti. Il danneggiamento dei dati può essere causato da:
+- Bug dell'infrastruttura o dell'applicazione che danneggiano alcuni o tutti lo stato dell'applicazione 
+- Problemi relativi all'hardware che determinano la perdita di dati o l'impossibilità di leggere i dati 
+- Errori operativi umani 
+- Hacker maligni e dipendenti scontenti 
+- Eventi imPrevisti nei servizi esterni che causano una perdita di dati 
 
-Poiché maggiore resilienza sull'integrità dei dati significa meno interventi di danneggiamento dei dati, Microsoft ha creato in meccanismi di protezione di Office 365 per evitare il danneggiamento da avvenga, nonché sistemi e processi che consentono di ripristinare i dati in caso contrario. Controlli e i processi esistono all'interno di varie fasi del processo di rilascio engineering per aumentare la resilienza dal danneggiamento dei dati, tra cui:
-- Struttura del sistema
-- Le organizzazioni di codice e struttura 
+Poiché una maggiore resilienza nell'integrità dei dati comporta meno incidenti di danneggiamento dei dati, Microsoft ha incorporato i meccanismi di protezione di Office 365 per evitare che si verifichino danneggiamenti, nonché sistemi e processi che consentono di recuperare i dati in caso di problemi. I controlli e i processi sono presenti nelle varie fasi del processo di rilascio ingegneristico per aumentare la resilienza rispetto al danneggiamento dei dati, tra cui:
+- Progettazione del sistema
+- Organizzazione e struttura del codice 
 - Revisione del codice 
 - Unit test, test di integrazione e test di sistema
-- Viaggio cavi/controlli di test 
+- Test/cancelli per cavi di viaggio 
 
-In ambienti di produzione di Office 365, la replica peer tra Data Center garantisce che non vi siano sempre più copie live di tutti i dati. Script e immagini standard consentono di ripristinare perse server e i dati replicati viene utilizzati per ripristinare i dati dei clienti. A causa di dati incorporati resilienza dei controlli e i processi, con cui Microsoft gestisce i backup solo della documentazione di Office 365 information system (inclusa la documentazione di protezione), utilizzando la replica incorporata in SharePoint Online e il codice interno strumento di archivio, deposito di origine. Documentazione relativa al sistema verrà archiviato in SharePoint Online e deposito di origine contiene le immagini di sistema e delle applicazioni. SharePoint Online e deposito di origine di utilizzare il controllo delle versioni e replicato in quasi in tempo reale. 
+Negli ambienti di produzione di Office 365, la replica peer tra i datacenter garantisce che siano sempre presenti più copie live di tutti i dati. Le immagini e gli script standard vengono utilizzati per recuperare i server persi e i dati replicati vengono utilizzati per ripristinare i dati dei clienti. Grazie ai controlli e ai processi di resilienza dei dati incorporati, Microsoft mantiene solo i backup della documentazione del sistema di informazioni di Office 365 (inclusa la documentazione relativa alla sicurezza), utilizzando la replica incorporata in SharePoint Online e il codice interno strumento di repository, Source Depot. La documentazione del sistema è archiviata in SharePoint Online e Source Depot contiene immagini di sistema e applicazioni. Sia SharePoint Online che Source Depot utilizzano il controllo delle versioni e vengono replicati in tempo quasi reale. 

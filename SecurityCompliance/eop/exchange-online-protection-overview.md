@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686365"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087345"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) è un servizio di filtraggio della po
   
 Di seguito sono riportati i modi principali in cui è possibile utilizzare EOP per la protezione dei messaggi:
   
-- **In uno scenario autonomo** EOP offre protezione della posta elettronica basata sul cloud per l'ambiente di Microsoft Exchange Server 2013 locale, versioni di Exchange Server legacy o per qualsiasi altro locale soluzione di posta elettronica SMTP. 
+- **In uno scenario autonomo** EOP fornisce la protezione della posta elettronica basata sul cloud per l'ambiente di Microsoft Exchange Server 2013 locale, le versioni legacy di Exchange Server o per qualsiasi altra soluzione di posta elettronica SMTP locale. 
     
 - **Come parte di Microsoft Exchange Online** Per impostazioni predefinita, EOP protegge le cassette postali di Microsoft Exchange Online ospitate nel cloud. 
     
@@ -34,9 +34,9 @@ Di seguito sono riportati i modi principali in cui è possibile utilizzare EOP p
 
 Per capire come funziona EOP, aiuta osservare il modo in cui elabora la posta in arrivo:
   
-![Elaborazione di posta elettronica di EOP](../media/EOP-email-processing.png)
+![EOP-elaborazione della posta elettronica](../media/EOP-email-processing.png)
   
-Un messaggio in arrivo inizialmente attraversa il filtro connessioni, che controlla reputazione del mittente e controlla se il messaggio di malware. La maggior parte delle posta indesiderata è stata arrestata a questo punto da EOP. I messaggi proseguono per il filtraggio dei criteri, dove i messaggi vengono valutati rispetto alle regole di trasporto personalizzato che si crea o applicare un modello. Ad esempio, esiste una regola che invia una notifica a un manager quando si riceve posta elettronica da un mittente specifico. (Controlli di prevenzione della perdita di dati inoltre verificano a questo punto, se si dispone di funzionalità, per informazioni sulla disponibilità delle funzionalità, vedere [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Successivamente, messaggi superare il filtro contenuto, dove il contenuto viene verificato la terminologia e le proprietà comuni della posta indesiderata. Un messaggio identificato come posta indesiderata dal filtro contenuto può essere inviata alla cartella posta indesiderata dell'utente o per la quarantena, tra le altre opzioni, in base alle impostazioni. Dopo che un messaggio passa correttamente tutti i livelli di protezione, viene recapitato al destinatario.
+Un messaggio in arrivo passa inizialmente tramite il filtro connessioni, che controlla la reputazione del mittente e controlla il messaggio per il malware. La maggior parte della posta indesiderata viene interrotta a questo punto e viene eliminata da EOP. I messaggi continuano tramite il filtro dei criteri, in cui i messaggi vengono valutati in base alle regole di trasporto personalizzate create o applicate da un modello. Ad esempio, è possibile disporre di una regola che invia una notifica a un responsabile quando la posta arriva da un mittente specifico. (I controlli di prevenzione della perdita di dati si verificano anche a questo punto, se si dispone di tale caratteristica, vedere la [Descrizione del servizio Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619)). Successivamente, i messaggi passano attraverso il filtro contenuto, in cui il contenuto viene controllato per la terminologia o le proprietà comuni alla posta indesiderata. Un messaggio determinato come posta indesiderata dal filtro contenuto può essere inviato alla cartella posta inDesiderata di un utente o alla quarantena, tra le altre opzioni, in base alle impostazioni. Dopo che un messaggio ha superato tutti questi livelli di protezione, viene recapitato al destinatario.
   
 ### <a name="eop-datacenters"></a>Datacenter EOP
 
@@ -47,13 +47,13 @@ EOP esegue il bilanciamento del carico tra i datacenter ma solo all'intero di un
     
 - In Europa, Medio Oriente e Africa (EMEA), tutte le cassette postali di Exchange Online si trovano in datacenter situati in EMEA e tutti i messaggi vengono instradati tramite datacenter in EMEA per il filtraggio EOP.
     
-- In Asia Pacifico (centro dati), tutte le cassette postali di Exchange Online si trovano in datacenter APAC, ma messaggi attualmente vengono instradati tramite datacenter APAC per il filtraggio EOP.
-=======
-- In America, tutte le cassette postali di Exchange Online si trovano in datacenter negli Stati Uniti, ad eccezione in cui vengono utilizzati i Data Center in Brasile e Cile Sud America e in Canada in cui vengono utilizzati i Data Center in Canada. Tutti i messaggi di posta elettronica, inclusi i messaggi per i clienti Sud America e in Canada, vengono instradati tramite datacenter locale per il filtraggio EOP; visualizzare la posta viene memorizzata nel datacenter del tenant in cui si trova.
+- In Asia-Pacifico (APAC), tutte le cassette postali di Exchange Online si trovano in datacenter APAC, ma i messaggi sono attualmente instradati attraverso i datacenter di APAC per il filtro EOP.
+
+- Nelle Americhe, tutte le cassette postali di Exchange Online si trovano nei data center degli Stati Uniti, ad eccezione del Sud America, in cui vengono utilizzati i datacenter in Brasile e Cile e in Canada, in cui vengono utilizzati i datacenter in Canada. Tutti i messaggi di posta elettronica, inclusi i messaggi per i clienti del Sud America e del Canada, vengono instradati tramite datacenter locali per il filtro EOP; la posta elettronica di Quaratined viene archiviata nel centro dati in cui si trova il tenant.
     
 - In Europa, Medio Oriente e Africa (EMEA), tutte le cassette postali di Exchange Online si trovano in datacenter situati in EMEA e tutti i messaggi vengono instradati tramite datacenter in EMEA per il filtraggio EOP.
     
-- In Asia Pacifico (centro dati), tutte le cassette postali di Exchange Online si trovano in datacenter APAC e messaggi attualmente vengono instradati tramite datacenter APAC per il filtraggio EOP.
+- In Asia-Pacifico (APAC), tutte le cassette postali di Exchange Online si trovano in datacenter APAC e i messaggi sono attualmente instradati attraverso i datacenter di APAC per il filtro EOP.
     
 - Per GCC (Government Community Cloud) tutte le cassette postali di Exchange Online si trovano in datacenter degli Stati Uniti e tutti i messaggi vengono instradati tramite datacenter statunitensi per il filtraggio EOP.
     

@@ -1,5 +1,5 @@
 ---
-title: Novità di Office 365 Cloud App Security
+title: Novità di Office 365 cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,33 +12,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
-description: Vedere What's new in sicurezza App Cloud di Office 365
-ms.openlocfilehash: ad16a215332e183c2bf821095610f6379a88be01
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+description: Vedere What ' s New in Office 365 cloud app Security
+ms.openlocfilehash: 9c0a93a29efb71704cf4ed0f9219018b5dd79d88
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570192"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087355"
 ---
-# <a name="what-is-new-in-office-365-cloud-app-security"></a>Novità di Office 365 Cloud App Security
+# <a name="what-is-new-in-office-365-cloud-app-security"></a>Novità di Office 365 cloud app Security
 
-**Riepilogo** In questo articolo per ottenere una rapida panoramica delle nuove funzionalità e gli aggiornamenti in Office 365 Cloud App Security (precedentemente noto come Gestione sicurezza avanzata di Office 365), che è una tecnologia [Microsoft Cloud App Security](https://aka.ms/whatiscas).
+**Riepilogo** Leggere questo articolo per ottenere una breve panoramica degli aggiornamenti e delle nuove funzionalità di Office 365 cloud app Security, che è alimentato da [Microsoft cloud app Security](https://aka.ms/whatiscas).
   
 > [!TIP]
-> In questo articolo è stato aggiornato frequentemente, come funzionalità vengono aggiunte o migliorate. Circa due settimane dopo gli aggiornamenti di sicurezza di Microsoft Cloud App rilascio di aggiornamenti di sicurezza di applicazione Cloud di Office 365 e non tutti gli aggiornamenti di sicurezza di Microsoft Cloud App si applicano a Office 365 Cloud App sicurezza. Inoltre, le nuove funzionalità può richiedere una settimana o più dopo la data di rilascio possa essere visualizzata nell'ambiente di protezione di Office 365 Cloud App.
+> Questo articolo viene aggiornato di frequente, in quanto le funzionalità vengono aggiunte o migliorate. Gli aggiornamenti della sicurezza delle app cloud di Office 365 vengono rilasciati circa due settimane dopo gli aggiornamenti della sicurezza delle app di Microsoft Cloud e non tutti gli aggiornamenti della sicurezza delle app di Microsoft Cloud sono applicabili a Office 365 cloud app Security. Inoltre, le nuove funzionalità potrebbero richiedere una o più settimane dopo la data di rilascio per la visualizzazione nell'ambiente di protezione di Office 365 cloud app.
 
-## <a name="office-365-cloud-app-security-releases-139-140"></a>Office 365 Cloud App sicurezza versioni 139, 140
+## <a name="office-365-cloud-app-security-releases-139-140"></a>Office 365 cloud app Security rilascia 139, 140
 
-*Rilasciato il 22 gennaio 2019*
+*RiLasciati il 22 gennaio 2019*
 
-**In seguito [Microsoft Cloud App sicurezza rilasciati, 139, 140](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-139-140)**:
+**Seguenti [Microsoft cloud app Security rilascia 139, 140](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-139-140)**:
 
-- **Impostazioni avanzate per i criteri di rilevamento anomalia l'ottimizzazione** A questo punto è possibile modificare il motore di rilevamento anomalia per sopprimere o identificare gli avvisi in base alle specifiche preferenze. Nel criterio impossibili viaggi, è possibile impostare il dispositivo di scorrimento di riservatezza per determinare il livello di comportamento anomalo necessario prima che venga generato un avviso. È inoltre possibile configurare se gli avvisi per attività da paese poco frequenti, indirizzi IP anonimi, indirizzi IP sospetti e viaggi impossibili necessario analizzare gli account di accesso non riuscito e ha esito positivo o gli account di accesso appena completata. 
+- **Ottimizzazione avanzata per i criteri di rilevamento delle anomalie** È ora possibile influire sul motore di rilevamento delle anomalie per sopprimere o esporre gli avvisi in base alle proprie preferenze. Nel criterio di viaggio impossibile, è possibile impostare il dispositivo di scorrimento della sensibilità per determinare il livello di comportamento anomalo necessario prima che venga attivato un avviso. È inoltre possibile specificare se gli avvisi per le attività provenienti da paesi non comuni, indirizzi IP anonimi, indirizzi IP sospetti e viaggi impossibili devono analizzare gli accessi non riusciti e riusciti o solo gli account di accesso riusciti. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Vedere gli aggiornamenti 2018 per la protezione di Office 365 Cloud App](new-in-office-365-cas-2018.md)
+[Vedere gli aggiornamenti 2018 per Office 365 cloud app Security](new-in-office-365-cas-2018.md)
 
-[Per Office 365 Cloud App sicurezza, vedere gli aggiornamenti 2017](new-in-office-365-cas-2017.md)
+[Vedere gli aggiornamenti 2017 per Office 365 cloud app Security](new-in-office-365-cas-2017.md)
     
 [Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security](utilization-activities-for-ocas.md)

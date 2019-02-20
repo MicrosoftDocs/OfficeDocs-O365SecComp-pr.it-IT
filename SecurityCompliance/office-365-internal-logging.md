@@ -1,5 +1,5 @@
 ---
-title: Registrazione interni di Office 365 per progettazione tecnica di Office 365
+title: Registrazione interna di Office 365 per Office 365 Engineering
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,32 +9,34 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Informazioni di registrazione come interna per Office 365 Engineering Team works.
-ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Spiegazione di come funziona la registrazione interna per i team di ingegneri di Office 365.
+ms.openlocfilehash: cf11a52541f6434a580435688db0f986f670bd31
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038189"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090758"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Log interni per Office 365 Engineering
-Oltre a eventi e registrare i dati disponibili per i clienti, è disponibile anche un sistema di raccolta dei dati del log interni è disponibile a tecnici di Office 365. Diversi tipi di dati dei registri vengono caricati dal server di Office 365 per un interno, big dati computing servizio denominato Cosmos. Ogni team servizio consente di caricare i registri di controllo dai rispettivi server nel database Cosmos per l'analisi e di aggregazione. Si verifica questo trasferimento di dati tramite una connessione TLS 140-2-convalidato FIPS su approvato in modo specifico porte e protocolli utilizzando uno strumento di automazione proprietarie denominato Office dati caricatore (IAD). Gli strumenti utilizzati in Office 365 per raccogliere e record di processo di controllo non consentire permanente o di modifiche irreversibile originale controllo registrare contenuto o l'ordinamento di tempo.
+Oltre agli eventi e ai dati dei registri disponibili per i clienti, è presente anche un sistema di raccolta dati interno disponibile per gli ingegneri di Office 365. Molti tipi diversi di dati di log vengono caricati dai server di Office 365 a un servizio di elaborazione dati di grandi dimensioni interno denominato Cosmos. Ogni team di servizio carica i registri di controllo dai rispettivi server nel database Cosmos per l'aggregazione e l'analisi. Questo trasferimento dei dati si verifica su una connessione TLS convalidata FIPS 140-2 su porte e protocolli approvati utilizzando uno strumento di automazione proprietaria denominato Office Data Loader (FAD). Gli strumenti utilizzati in Office 365 per la raccolta e l'elaborazione dei record di controllo non consentono modifiche permanenti o irreversibili al contenuto del record di controllo originale o all'ordine di tempo.
 
-Servizio Team utilizzano Cosmos come un archivio centralizzato per eseguire un'analisi di utilizzo dell'applicazione per misurare le prestazioni del sistema e operative e di ricercare le alterazioni e modelli che potrebbero indicare problemi o problemi di sicurezza. Ogni team servizio carica una linea di base dei registri in Cosmos, a seconda sta cercando di analizzare, che spesso sono incluse:
+I team di servizio utilizzano Cosmos come repository centralizzato per eseguire un'analisi dell'utilizzo delle applicazioni, per misurare le prestazioni operative e del sistema e per cercare anomalie e modelli che potrebbero indicare problemi o problemi di sicurezza. Ogni team di servizio carica una linea di base dei log in Cosmos, a seconda di ciò che stanno cercando di analizzare, che spesso includono:
 - Registri eventi
-- Registri AppLocker
+- Registri di AppLocker
 - Dati sulle prestazioni
 - Dati di System Center
-- Registrazione dettagli chiamata
-- Qualità dei dati di utilizzo
-- Registri del Server Web IIS
+- Record dettagli chiamata
+- Dati sulla qualità delle esperienze
+- Registri del server Web IIS
 - Registri di SQL Server
-- Dati di registro di sistema
-- Registri di controllo di sicurezza
+- Dati syslog
+- Registri di controllo della sicurezza
 
-Prima di caricamento dei dati in Cosmos, l'applicazione ODL utilizza un servizio ripulitura offuscare tutti i campi che contengono i dati dei clienti, ad esempio informazioni tenant e informazioni personali dell'utente finale, e sostituire i campi con un valore hash. I registri resi anonimi e hash vengono riscritti e quindi caricati in Cosmos. I team del servizio eseguono query con ambito per i dati in Cosmos per correlazione, avvisi e report. Il periodo di conservazione dei dati del Registro di controllo in Cosmos dipende dal team servizi; la maggior parte dei dati del Registro di controllo viene mantenuti per 90 giorni o più per supportare indagini ai problemi di sicurezza e per soddisfare i requisiti di conservazione alle normative.
+Prima di caricare i dati in Cosmos, l'applicazione per l'utilizzo dell'assistenza viene utilizzata per nascondere i campi che contengono i dati dei clienti, ad esempio le informazioni sui tenant e le informazioni di identificazione degli utenti finali, e sostituire tali campi con un valore hash. I registri con hash e anonimi vengono riscritti e quindi caricati nel cosmo. I team di servizio eseguono query con ambito sui dati in Cosmos per la correlazione, l'avviso e la creazione di report. Il periodo di conservazione dei dati del log di controllo in Cosmos è determinato dai team di servizio. la maggior parte dei dati del registro di controllo viene conservata per 90 giorni o più per supportare le indagini sugli incidenti di sicurezza e soddisfare i requisiti di conservazione normativi.
 
-Accesso ai dati di Office 365 archiviati in Cosmos è limitato a personale autorizzato. Microsoft limita la gestione delle funzionalità di controllo per la versione ridotta di membri del team responsabili della funzionalità di controllo del servizio. I membri del team non è in grado di modificare o eliminare dati da Cosmos e tutte le modifiche apportate ai meccanismi di registrazione per Cosmos vengono registrate e controllate.
+L'accesso ai dati di Office 365 archiviati in Cosmos è limitato al personale autorizzato. Microsoft limita la gestione della funzionalità di controllo al sottoinsieme limitato di membri del team di servizio responsabili della funzionalità di controllo. Questi membri del team non hanno la possibilità di modificare o eliminare i dati dal cosmo e tutte le modifiche apportate ai meccanismi di registrazione per Cosmos vengono registrate e controllate.
 
-Ogni team servizio accede relativi dati di registro per l'analisi da parte di alcune applicazioni di condurre analisi specifica. Ad esempio, il team di protezione di Office 365 utilizza i dati da Cosmos attraverso un parser proprietarie registro eventi per correlare, avviso e generare report pronti per interventi sui possibili attività sospette nell'ambiente di produzione di Office 365. I report di questi dati vengono utilizzati per correggere le vulnerabilità e per migliorare le prestazioni complessive del servizio. Se un determinato avviso o un report richiede un'ulteriore indagini, personale di assistenza possono richiedere che i dati da importare precedente nel servizio Office 365. Dopo l'accesso specifico da importare da Cosmos è crittografato e personale di assistenza non hanno accesso alle chiavi decrittografia, nel Registro di destinazione viene passato a livello di programmazione tramite un servizio decrittografia che restituisca risultati con ambiti per il personale autorizzato. Le vulnerabilità trovate da questo esercizio segnalate ed effettuata l'escalation all'utilizzo dei canali di gestione degli eventi imprevisti protezione standard di Microsoft.
+Ogni team di servizio accede ai dati di log per l'analisi autorizzando determinate applicazioni a eseguire analisi specifiche. Ad esempio, il team di sicurezza di Office 365 utilizza i dati provenienti da Cosmos tramite un parser di registri eventi proprietari per correlare, allertare e generare report azionabili su possibili attività sospette nell'ambiente di produzione di Office 365. I report di questi dati vengono utilizzati per correggere le vulnerabilità e per migliorare le prestazioni complessive del servizio. Se un determinato avviso o rapporto richiede ulteriori indagini, il personale di servizio può richiedere che i dati vengano importati nuovamente nel servizio Office 365. Poiché il log specifico importato da Cosmos è crittografato e il personale di servizio non ha accesso alle chiavi di decrittografia, il log di destinazione viene passato a livello di programmazione tramite un servizio di decrittografia che restituisce i risultati con ambito al personale di servizio autorizzato. Tutte le vulnerabilità rilevate da questo esercizio sono segnalate ed Escalate utilizzando i canali di gestione degli incidenti di sicurezza standard di Microsoft.

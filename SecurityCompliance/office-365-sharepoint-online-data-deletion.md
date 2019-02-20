@@ -1,5 +1,5 @@
 ---
-title: Eliminazione dei dati in linea di SharePoint di Office 365
+title: Eliminazione dei dati di Office 365 SharePoint Online
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,29 +9,31 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Una spiegazione dell'eliminazione dei dati in SharePoint Online.
-ms.openlocfilehash: 8a84859ce170a4c3ca713c751aef2b6d5b911c55
-ms.sourcegitcommit: 29ba4c36af8e90ddc8d885863ef25bac2cffbe94
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Spiegazione dell'eliminazione dei dati in SharePoint Online.
+ms.openlocfilehash: 48b108637e53b8ca4ab18b7b37e2fad7fbbd779c
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27411162"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090858"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminazione di dati in linea di SharePoint in Office 365
+# <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminazione dei dati di SharePoint online in Office 365
 
-SharePoint Online, gli oggetti vengono memorizzate come astratto codice nel database dell'applicazione. Quando un utente carica un file in SharePoint Online, tale file disassemblato e convertito nel codice dell'applicazione e archiviati in più tabelle su più database. In SharePoint Online, tutto il contenuto che carica un cliente viene suddiviso in parti crittografate (potenzialmente con più chiavi di crittografia AES 256 bit) e distribuito nel datacenter. Per informazioni dettagliate sul processo di suddivisione in blocchi di crittografia, vedere [crittografia nel Cloud Microsoft](office-365-encryption-in-the-microsoft-cloud-overview.md). 
+SharePoint Online archivia gli oggetti come codice astratto all'interno dei database dell'applicazione. Quando un utente carica un file in SharePoint Online, tale file viene disassemblato e convertito in codice dell'applicazione e archiviato in più tabelle tra più database. In SharePoint Online, tutto il contenuto utilizzato dai caricamenti dei clienti è suddiviso in blocchi, crittografato (potenzialmente con più chiavi AES 256 bit) e distribuito in tutto il datacenter. Per informazioni dettagliate sul processo di blocco e la crittografia, vedere [crittografia nel cloud Microsoft](office-365-encryption-in-the-microsoft-cloud-overview.md). 
 
-In SharePoint Online, gli elementi vengono mantenuti per 93 giorni dal momento in cui che sono state eliminate dalla posizione originale. Rimanere nel Cestino del sito tutto il tempo, a meno che non li elimina da quest'ultimo o un utente Svuota il Cestino secondario. In tal caso, gli elementi di passare alla raccolta siti del Cestino, dove rimanere per il resto di 93 giorni. Per informazioni sul ripristino degli elementi eliminati, vedere [ripristino di elementi nel Cestino di un sito di SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
-) e [il ripristino degli elementi dal Cestino raccolta siti eliminati](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). Il periodo di mantenimento Cestino non può essere configurato in SharePoint Online.
+In SharePoint Online, gli elementi vengono conservati per 93 giorni dal momento in cui vengono eliminati dal percorso originale. Rimangono nel cestino del sito per tutto il tempo, a meno che qualcuno non li elimini o svuoti quel cestino. In tal caso, gli elementi passano al cestino della raccolta siti, in cui restano per il resto dei 93 giorni. Per informazioni su come ripristinare gli elementi eliminati, vedere [ripristinare gli elementi nel cestino di un sito di SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+) e [ripristinare gli elementi eliminati dal cestino della raccolta siti](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). Il tempo di conservazione del cestino non è configurabile in SharePoint Online.
 
-Quando si elimina una raccolta siti, che si desidera eliminare anche la gerarchia dei siti nell'insieme e tutto il contenuto al loro interno:
+Quando si elimina una raccolta siti, si elimina anche la gerarchia dei siti nell'insieme e tutto il contenuto all'interno di essi:
 - Documenti e raccolte documenti
-- Elenchi e dati
+- Elenchi e dati di elenco
 - Impostazioni di configurazione del sito
-- Ruoli e informazioni sulla sicurezza relativi al sito o i relativi siti secondari
-- Siti secondari di informazioni di sito Web, il contenuto e utente principale
+- Informazioni sul ruolo e sulla sicurezza correlate al sito o ai relativi siti secondari
+- Siti secondari del sito Web principale, del relativo contenuto e delle informazioni utente
 
-Se accidentalmente si elimina una raccolta siti, può essere ripristinato da un globale o SharePoint admin utilizzando l'interfaccia di amministrazione di SharePoint. 
+Se si elimina accidentalmente una raccolta siti, è possibile ripristinarla da un amministratore globale o di SharePoint utilizzando l'interfaccia di amministrazione di SharePoint. 
 
-Disco rigido eliminazione si verifica quando un utente elimina gli elementi eliminati dal Cestino, della raccolta siti quando scadono i periodi di conservazione e di backup oppure quando l'amministratore elimina definitivamente una raccolta siti utilizzando il [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quando un utente rigido Elimina (Elimina in modo permanente o Elimina) contenuto di SharePoint Online, tutte le chiavi di crittografia per i blocchi eliminati vengono eliminate. I blocchi su dischi che precedentemente memorizzate blocchi eliminati vengono contrassegnati come non utilizzati e disponibili per riutilizzare.
+L'eliminazione non consentita si verifica quando un utente elimina gli elementi eliminati dal cestino della raccolta siti, quando scade il periodo di conservazione e di backup oppure quando un amministratore Elimina definitivamente una raccolta siti utilizzando il [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quando un utente Elimina (Elimina definitivamente o Elimina in modo definitivo) contenuto da SharePoint Online, vengono eliminate anche tutte le chiavi di crittografia per i blocchi eliminati. I blocchi nei dischi che in precedenza sono stati memorizzati nei blocchi eliminati vengono contrassegnati come inutilizzati e disponibili per il riutilizzo.

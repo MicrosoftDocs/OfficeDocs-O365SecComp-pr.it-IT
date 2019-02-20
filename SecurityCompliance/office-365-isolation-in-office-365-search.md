@@ -1,5 +1,5 @@
 ---
-title: Isolamento dei Tenant Office 365 nella ricerca di Office 365
+title: Isolamento tenant di Office 365 in Office 365 search
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,45 +10,47 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Riepilogo: Informazioni di isolamento tenant nella ricerca di Office 365.'
-ms.openlocfilehash: cc73f3c157ffd20b3891a6b7c58e7d0b2adf4e55
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: "Riepilogo: Descrizione dell'isolamento del tenant in Office 365 search."
+ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530198"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090808"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Ricerca dell’isolamento del tenant in Office 365
-Ricerca di SharePoint Online utilizza un modello di separazione tenant che offre un buon livello l'efficienza delle strutture di dati condivise con protezione contro la perdita tra tenant informazioni. Con questo modello è impedire le funzionalità di ricerca da:
-- Restituisce i risultati delle query contenenti documenti provenienti da altri tenant
-- Esposizione di informazioni sufficienti nei risultati della query che un utente esperto può derivare informazioni su altri tenant
-- Visualizzazione dello schema o le impostazioni da un altro tenant
-- Combinazione di elaborazione delle informazioni tra tenant o memorizzare i risultati nel tenant errato analitica
-- Mediante le voci di dizionario da un altro tenant
+# <a name="tenant-isolation-in-office-365-search"></a>Isolamento del tenant per la funzionalità di ricerca di Office 365
+La ricerca di SharePoint Online utilizza un modello di separazione tenant che bilancia l'efficienza delle strutture di dati condivise con una protezione dalle informazioni che fuoriescono tra i tenant. Con questo modello, vengono impedite le funzionalità di ricerca:
+- ReStituzione dei risultati delle query che contengono documenti provenienti da altri tenant
+- Esposizione di informazioni sufficienti nei risultati delle query che un utente esperto può dedurre informazioni su altri tenant
+- Visualizzazione dello schema o delle impostazioni di un altro tenant
+- Missaggio delle informazioni di elaborazione dell'analisi tra i tenant o i risultati dell'archiviazione nel tenant errato
+- Utilizzo di voci di dizionario da un altro tenant
 
-Per ogni tipo di dati relativi al tenant, viene utilizzato uno o più livelli di protezione nel codice per impedire la perdita accidentale dei dati. I dati più importanti contengono la maggior parte dei livelli di protezione per verificare che un solo difetto non provoca la perdita di informazioni effettivamente o percepite come.
+Per ogni tipo di dati del tenant, è possibile utilizzare uno o più livelli di protezione nel codice per evitare che si verifichino perdite accidentali di informazioni. I dati più critici hanno la maggior parte dei livelli di protezione per assicurarsi che un singolo difetto non provochi perdite di informazioni effettive o percepite.
 
-## <a name="tenant-separation-for-the-search-index"></a>Separazione del tenant per l'indice di ricerca
-L'indice di ricerca viene memorizzato su disco nel server che ospitano i componenti di indicizzazione e il tenant di condividere i file di indice. Documenti indicizzati del tenant sono visibili solo per le query per il tenant. Tre meccanismi indipendenti impedire la perdita di informazioni:
-- Filtro dell'ID tenant
-- Prefisso termini ID tenant
+## <a name="tenant-separation-for-the-search-index"></a>Separazione tenant per l'indice di ricerca
+L'indice di ricerca è archiviato su disco nei server che ospitano i componenti di indicizzazione e i tenant condividono i file di indice. I documenti indicizzati di un tenant sono visibili solo per le query per il tenant. Tre meccanismi indipendenti impediscono la perdita di informazioni:
+- Filtro ID tenant
+- Prefisso dei termini dell'ID tenant
 - Controlli ACL
 
-Tutti e tre i meccanismi sarebbe costretto a esito negativo per la ricerca restituire i documenti per il tenant errato.
+Tutti e tre i meccanismi devono avere esito negativo affinché la ricerca restituisca i documenti al tenant errato.
 
-## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Filtro dell'ID tenant e termini ID Tenant aggiunta come prefisso
-Prefissi ricerca ogni termine che viene indicizzato nell'indice full-text con l'ID tenant. Ad esempio, quando il termine "*foo*" è indicizzato per un tenant con ID "*123*", la voce di indice full-text è "*123foo.*"
+## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Filtro ID tenant e prefisso dei termini dell'ID tenant
+Prefissi di ricerca ogni termine indicizzato nell'indice full-text con l'ID del tenant. Ad esempio, quando il termine "*foo*" è indicizzato per un tenant con ID "*123*", la voce nell'indice full-text è "*123foo".*
 
-Tutte le query viene convertita in modo da includere l'ID tenant utilizzando un processo noto come filtro dell'ID tenant. Ad esempio, la query "*foo*" viene convertita in "<*guid*>. *Foo* E *ID tenant*: <*guid*> ", dove <*guid*> rappresenta i tenant che esegue la query. Questa conversione di query viene eseguita all'interno di ciascun nodo indice ed elaborazione delle query e il contenuto non può influire. Poiché l'ID viene aggiunto a tutte le query, la frequenza di un termine in altri tenant non è desunta cercando migliore corrispondenza di classificazione in un tenant.
+Ogni query viene convertita in modo da includere l'ID tenant utilizzando un processo denominato filtro ID tenant. Ad esempio, la query "*foo*" viene convertita in "<*GUID*>. *foo* E *tenantID*: <*GUID*_GT_ ", dove <*GUID*> rappresenta il tenant che esegue la query. Questa conversione di query si verifica all'interno di ogni nodo di indice e né query né elaborazione del contenuto possono influire su di essa. Poiché l'ID tenant viene aggiunto a ogni query, la frequenza di un termine in altri tenant non può essere desunta guardando la migliore classificazione di corrispondenza in un tenant.
 
-Prefisso termini ID tenant si verifica solo nell'indice full-text. Le ricerche già distribuito sul campo, ad esempio "*title: foo*", passare a un indice di ricerca sintetica cui termini non sono prefisso ID tenant. In realtà, le ricerche già distribuito sul campo includono il prefisso con il nome del campo. Ad esempio, la query "*title: foo*" viene convertita in "*fields.title:foo fields.tenantID AND*: <*guid*>." Poiché la frequenza di un termine non influire sulla classificazione dei risultati dell'indice di ricerca sintetica, non è necessario per la separazione dei tenant dal prefisso per termini. Per la ricerca già distribuito sul campo come "*titolo: foo*", separazione del contenuto tenant dipende dal filtro per la conversione di query ID tenant.
+Il prefisso dei termini dell'ID tenant si verifica solo nell'indice full-text. Le ricerche in campo, ad esempio "*title: foo*", passano a un indice di ricerca sintetico in cui i termini non sono preceduti dall'ID tenant. Al contrario, le ricerche in campo sono prefissate con il nome del campo. Ad esempio, la query "*title: foo*" viene convertita in "*Fields. title: foo and Fields. tenantID*: <*GUID*>". Poiché la frequenza di un termine non influenza la classificazione degli hit nell'indice di ricerca sintetico, non è necessario che la separazione dei tenant venga prefissata per termine. Per una ricerca in campo come "*title: foo*", la separazione del contenuto del tenant dipende dal filtro dell'ID tenant tramite la conversione delle query.
 
-## <a name="document-access-control-list-checks"></a>Controlli elenco degli accessi di documenti
-Ricerca controlla l'accesso ai documenti tramite ACL salvati nell'indice di ricerca. Sono indicizzato a tutti gli elementi con un set di termini in un campo ACL speciale. Il campo ACL contiene un termine per ogni gruppo o un utente che è possibile visualizzare il documento. Tutte le query è arricchita con un elenco di termini voce di elenco di controllo di accesso uno per ogni gruppo a cui appartiene l'utente autenticato.
+## <a name="document-access-control-list-checks"></a>Controlli dell'elenco di controllo di accesso ai documenti
+La ricerca controlla l'accesso ai documenti tramite gli elenchi ACL salvati nell'indice di ricerca. Ogni elemento viene indicizzato con un set di termini in un campo ACL speciale. Il campo ACL contiene un termine per gruppo o utente che può visualizzare il documento. Ogni query viene aumentata con un elenco di termini ACE (Access Control Entry), uno per ogni gruppo a cui appartiene l'utente autenticato.
 
-Ad esempio, una query come "<*guid*>. *foo ID tenant AND*: <*guid*> "diventa:" <*guid*>. *foo ID tenant AND*: <*guid*> *AND* (*docACL:*<*ace1*> *OR docACL*: <*ace2*> *OR docACL*: <*ace3*> *... *)"
+Ad esempio, una query come "<*GUID*>. *foo e tenantID*: <*GUID*> "diventa:" <*GUID*>. *foo e tenantID*: <*GUID*> *e* (*docACL:*<*ace1*> *o docACL*: <*ace2*> *o docACL*: <*ACE3*> *... *)"
 
-Poiché utente e gli identificatori di gruppo e pertanto le voci sono univoche, in tal modo un ulteriore livello di sicurezza tra tenant per i documenti sono visibili solo per alcuni utenti. Lo stesso avviene per il speciale "tutti tranne agli utenti esterni" ACE che concede l'accesso agli utenti regolari nel tenant. Ma poiché le voci per "Tutti" sono identiche per tutti i tenant, la separazione dei tenant per i documenti pubblici dipende dal filtro dell'ID tenant. Nega che sono inoltre supportate le voci. Augmentation query aggiunge una clausola che consente di rimuovere un documento dal risultato quando viene rilevata una corrispondenza con negata.
+Poiché gli identificatori di utenti e gruppi e quindi gli ACE sono univoci, questo fornisce un livello di sicurezza supplementare tra i tenant per i documenti visibili solo ad alcuni utenti. Lo stesso vale per l'ACE speciale "tutti tranne gli utenti esterni" che concede l'accesso agli utenti abituali del tenant. Tuttavia, poiché gli ACE per "tutti" sono uguali per tutti i tenant, la separazione dei tenant per i documenti pubblici dipende dal filtro dell'ID tenant. Anche le voci ACE Deny sono supportate. L'incremento di query aggiunge una clausola che consente di rimuovere un documento dal risultato quando è presente una corrispondenza con una ACE di negazione.
 
-Nella ricerca di Exchange Online, l'indice viene partizionata ID della cassetta postale per le cassette postali dell'utente singoli anziché tenant a ID sottoscrizione come SharePoint Online. Il meccanismo di partizionamento corrisponde a SharePoint Online, ma non esiste alcun ACL filtro.
+In ricerca di Exchange Online, l'indice è partizionato sull'ID cassetta postale per le cassette postali dell'utente anziché sull'ID tenant (ID sottoscrizione) come in SharePoint Online. Il meccanismo di partizionamento è identico a quello di SharePoint Online, ma non è presente alcun filtro ACL.

@@ -1,5 +1,5 @@
 ---
-title: Office 365 principi di base del sistema di difesa contro gli attacchi Denial of Service
+title: Principi fondamentali di Office 365 per la difesa dagli attacchi Denial of Service
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,33 +9,35 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Come Microsoft utilizza i principi di base di assorbire, individuazione e attenuazione della difesa contro gli attacchi di tipo denial of service (DoS).
-ms.openlocfilehash: e313d5514e9bc493db78bebffca24a0fae4cbca7
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: In che modo Microsoft utilizza i principi fondamentali dell'assorbimento, del rilevamento e dell'attenuazione in difesa degli attacchi DoS (Denial of Service).
+ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741099"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091008"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>I principi fondamentali di protezione contro gli attacchi Denial of Service
 
-Le tre principali principi dopo la difesa contro gli attacchi DoS rete assorbire, individuazione e attenuazione. Assorbire si verifica prima del rilevamento e rilevamento si verifica prima attenuazione. Assorbire è la miglior difesa contro un attacchi Denial of Service. Se non è rilevato l'attacco, non possono essere ridotti. Ma se non è assorbire attacco DoS più piccolo, servizi non sono continui di sopravvivenza tempo sufficiente per l'attacco da rilevare.
+I tre principi fondamentali per la difesa dagli attacchi DoS basati sulla rete sono assorbimento, rilevamento e attenuazione. L'assorbimento avviene prima del rilevamento e il rilevamento avviene prima dell'attenuazione. L'assorbimento è la migliore difesa contro gli attacchi DoS. Se non è possibile rilevare l'attacco, non può essere attenuato. Tuttavia, se non è possibile assorbire anche il più piccolo attacco DoS, i servizi non sopravvivranno abbastanza a lungo per rilevare l'attacco.
 
-Ovviamente, in genere non è realizzabile economicamente per la maggior parte delle organizzazioni acquistare della capacità in eccesso necessaria per assorbire attacchi Denial of Service, in quanto richiede un ingente investimento in tecnologie e competenze tecniche. Evidenzia uno dei vantaggi dell'utilizzo dei servizi cloud Microsoft, per la protezione la scala una enorme ai servizi ci consente di fornire protezione della rete sicuro ai nostri clienti cloud in modo economico. Ma anche alla scala, tuttavia, è necessario ancora che un equilibrio tra assorbire, individuazione e attenuazione. Per individuare tale bilanciamento, è lo Studio tasso di crescita dell'attacco per calcolare la quantità dobbiamo accettabile.
+Naturalmente, in generale, non è possibile per la maggior parte delle organizzazioni acquistare la capacità in eccesso necessaria per assorbire gli attacchi DoS, poiché ciò richiede un investimento considerevole in tecnologia e competenze tecniche. Questo evidenzia uno dei vantaggi per la sicurezza dell'utilizzo dei servizi cloud Microsoft; la scalabilità dei nostri servizi consente di offrire una protezione della rete elevata ai clienti cloud in modo economico. Tuttavia, anche a livello di scala, tuttavia, è necessario un bilanciamento tra assorbimento, rilevamento e attenuazione. Per trovare questo bilanciamento, è possibile studiare il tasso di crescita di un attacco per stimare quanto è necessario assorbire.
 
-Rilevamento è una sfida. È necessario cercare costantemente per utenti nuovi modi sono che si attacca o che tentano di annullare i sistemi. Rilevare - gt _ attenuare - rileva - gt _ gt _ attenuare i e così via, è uno stato perpetua, persistent continua per un tempo indefinito.
+Il rilevamento è un gioco Cat-and-mouse. È necessario cercare continuamente i nuovi modi in cui gli utenti si attaccano o cercano di sconfiggere i sistemi. Detect-> mitigate-> Detect-> mitigate, ecc., è uno stato perpetuo e persistente che continuerà all'infinito.
 
-## <a name="defending-against-dos-attacks"></a>La difesa contro gli attacchi DoS
+## <a name="defending-against-dos-attacks"></a>Difesa dagli attacchi DoS
 
-Per migliorare correttamente la difesa contro un attacco Denial of Service, il rilevamento anticipato è essenziale. Per rilevare un attacco prima che il sistema è sovraccarico, difensori possono eseguire un piano di risposta.
+Per difendersi correttamente da un attacco DoS, è essenziale il rilevamento precoce. Se si rileva un attacco prima che il sistema venga sovraccaricato, i difensori possono eseguire un piano di risposta.
 
-La formula seguente consentiranno di circa il tempo necessario per l'impatto di un attacco Denial of Service:
+La formula seguente consentirà di approssimare il tempo necessario per l'impatto di un attacco DoS:
 
-   **Capacità massima (in byte/sec) / tasso di crescita (in byte/sec) = tempo all'impatto (in byte/sec)**
+   **Capacità massima (in byte/sec)/frequenza di crescita (in byte/sec) = tempo di impatto (in byte/sec)**
 
-Se il tempo di rilevamento si verifica dopo l'ora a impatto, è probabile che l'attacco Denial of Service avrà esito positivo. Se il tempo di rilevamento si verifica prima del tempo di impatto, i servizi di attacchi devono rimanere in linea e accessibile se vengono utilizzate le strategie di attenuazione. In questo modo, sono disponibili solo due operazioni che possono essere intraprese per migliorare la difesa contro gli attacchi DoS:
-- Incrementare la capacità di passare ceiling di capacità massima (che a sua volta fornisce più tempo per rilevare un attacco); o
-- Ridurre il tempo necessario per rilevare.
+Se il time-to-Detection si verifica dopo il time-to-Impact, è probabile che l'attacco DoS avrà esito positivo. Se il tempo di rilevamento si verifica prima del tempo di impatto, i servizi da attaccare devono rimanere online e accessibili, se si utilizzano le strategie di attenuazione. Pertanto, esistono solo due operazioni che è possibile eseguire per difendersi dagli attacchi DoS:
+- Aumentare la capacità di innalzamento del limite massimo di capacità (che a sua volta fornisce più tempo per rilevare un attacco); o
+- Consente di ridurre il tempo necessario per il rilevamento.
 
-Aumentare la capacità ha un impatto diretto fiscale. È consigliabile che i clienti sviluppano assorbire almeno base capacità, per assicurarsi che è possibile restano valide anche un certo livello di attacco Denial of Service. La capacità di assorbire effettivo varierà a clienti, come ogni cliente con i propri soglie per esposizione, i rischi e spese finanziari. In sintesi, per motivi economici, a livello di ricerca e l'ora in modi per ridurre il tempo di rilevamento è in genere il sistema di difesa più economico.
+Aumentare la capacità ha un impatto fiscale diretto. Microsoft consiglia ai clienti di sviluppare almeno la capacità di assorbimento di base, per garantire che possano sopravvivere a un certo livello di attacco DoS. La capacità effettiva di assorbimento varia da cliente a cliente, in quanto ogni cliente ha le proprie soglie per l'esposizione, il rischio e l'esborso finanziario. In definitiva, per motivi economici, gli investimenti della ricerca e del tempo in termini di riduzione del tempo di rilevamento sono di solito la difesa più conveniente.

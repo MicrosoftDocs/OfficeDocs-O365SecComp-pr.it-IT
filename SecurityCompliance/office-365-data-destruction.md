@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Una panoramica dei criteri di Microsoft relativi al riciclo, allo smaltimento o alla distruzione di unità disco e server del datacenter di Office 365.
-ms.openlocfilehash: d273640dc12370386f08d16fe3f254800ede47b3
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 638f1964be0573f5f053a95b1dfa475776dd7b25
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29696323"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091088"
 ---
 # <a name="office-365-data-destruction"></a>Distruzione dei dati di Office 365
 

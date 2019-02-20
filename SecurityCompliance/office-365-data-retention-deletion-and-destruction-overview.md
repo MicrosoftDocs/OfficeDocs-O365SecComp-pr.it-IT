@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Una panoramica dei criteri di Microsoft per Office 365 relativamente alla conservazione, all'eliminazione e alla distruzione dei dati.
-ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: c6c5e1f28ee9d2d4dc8ac85a8af47bdd18037fb0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "24961572"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090848"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservazione, eliminazione e distruzione dei dati in Office 365
 

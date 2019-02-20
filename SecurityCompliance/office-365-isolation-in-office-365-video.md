@@ -1,5 +1,5 @@
 ---
-title: Isolamento dei Tenant Office 365 in Video di Office 365
+title: Isolamento del tenant di Office 365 in Office 365 video
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,32 +10,34 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Riepilogo: Informazioni di isolamento tenant di Office 365 Video.'
-ms.openlocfilehash: 9476047d56161ec2589fdf743d7ee837ea558865
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: "Sintesi: una spiegazione dell'isolamento del tenant in Office 365 video."
+ms.openlocfilehash: e153605a0e8d938ab7bddb92e46d7d54a94f612a
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531064"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091048"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
 
 > [!NOTE]
-> Video di Office 365 verrà sostituito da Microsoft Stream. Per ulteriori informazioni sul nuovo servizio di video di organizzazione per l'aggiunta di business intelligence per la collaborazione video e informazioni sui piani di transizione per i clienti di Office 365 Video correnti, vedere [eseguire la migrazione al flusso di Office 365 Video](https://docs.microsoft.com/stream/).
+> Il video di Office 365 verrà sostituito da Microsoft Stream. Per ulteriori informazioni sul nuovo servizio video aziendale che aggiunge servizi di intelligence alla collaborazione video e informazioni sui piani di transizione per i clienti di Office 365 video correnti, vedere [migrate to Stream from office 365 video](https://docs.microsoft.com/stream/).
 
 ## <a name="introduction"></a>Introduzione
-Archiviazione Azure viene utilizzato per archiviare i dati di più servizi di Office 365, tra cui Video di Office 365 e oscillazione. Archiviazione Azure include archiviazione Blob, che corrisponde a un archivio di oggetti altamente scalabile, basato su REST cloud che viene utilizzato per l'archiviazione dei dati non strutturati. Archiviazione Azure utilizza un modello di controllo di accesso semplice. ogni sottoscrizione di Azure è possibile creare uno o più account di archiviazione. Ogni Account di archiviazione con una singola chiave segreta che consente di controllare l'accesso a tutti i dati in tale Account di archiviazione. Questo oggetto supporta lo scenario tipico in cui l'archiviazione è associata alle applicazioni e le applicazioni dispongono del controllo completo dei dati associati; ad esempio Sway archiviando il contenuto in archiviazione Azure. Tutto il contenuto dei clienti per oscillazione viene archiviato in account di un'archiviazione condivisa Azure. Contenuto di ogni utente è in una struttura di directory separata di BLOB in archiviazione Azure.
+Lo spazio di archiviazione di Azure viene utilizzato per archiviare i dati di più servizi di Office 365, tra cui Office 365 video e Sway. Nello spazio di archiviazione di Azure è incluso l'archiviazione BLOB, ovvero un archivio oggetti cloud estremamente scalabile e basato sul REST utilizzato per l'archiviazione dei dati non strutturati. Lo spazio di archiviazione di Azure utilizza un semplice modello di controllo di accesso; ogni sottoscrizione di Azure è in grado di creare uno o più account di archiviazione. Ogni account di archiviazione dispone di una sola chiave segreta utilizzata per controllare l'accesso a tutti i dati dell'account di archiviazione. Questo supporta lo scenario tipico in cui l'archiviazione è associata alle applicazioni e tali applicazioni dispongono del controllo completo sui dati associati; ad esempio, Sway archivia il contenuto nello spazio di archiviazione di Azure. Tutti i contenuti dei clienti per Sway sono archiviati in account di archiviazione di Azure condivisi. Il contenuto di ogni utente si trova in una struttura di directory distinta di BLOB nell'archiviazione di Azure.
 
-I sistemi di gestione dell'accesso per gli ambienti clienti (ad esempio, il portale di Azure, SMAPI e così via) sono isolati all'interno di un'applicazione Azure gestita da Microsoft. Ciò logicamente separa l'infrastruttura di accesso clienti dal livello di archiviazione e nelle applicazioni personalizzate.
+I sistemi che gestiscono l'accesso agli ambienti dei clienti (ad esempio, il portale di Azure, SMAPI e così via) sono isolati all'interno di un'applicazione di Azure gestita da Microsoft. Questo separa logicamente l'infrastruttura di accesso dei clienti dal livello di archiviazione e applicazioni del cliente.
 
 ## <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
-[Video di Office 365](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) è un portale aziendale che fornisce alle organizzazioni con una destinazione esigenze di sicurezza, a livello di organizzazione per la registrazione, condivisione e scoperta del contenuto video. In Office 365 Video video di ogni tenant viene mantenuti isolato e crittografati in tutti i percorsi e sono disponibile solo per gli utenti autenticati che dispongono di accesso e le autorizzazioni per il video dell'organizzazione. Video di Office 365 utilizza una combinazione di tecnologie per ottenere questo risultato:
-- SharePoint Online viene utilizzato per l'archiviazione dei metadati (video titolo, descrizione, ecc.) e il file video. Fornisce inoltre il livello di sicurezza e conformità (tra cui autenticazione) e le funzionalità di ricerca.
-- Servizi multimediali Azure fornisce transcodifica, flussi adattivi, recapito sicuro (utilizzando la crittografia AES) e funzionalità di anteprima.
+[Office 365 video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) è un portale aziendale che fornisce alle organizzazioni una destinazione estremamente sicura, a livello di organizzazione, per la pubblicazione, la condivisione e la scoperta di contenuti video. In Office 365 video, i video di ogni tenant vengono mantenuti isolati e crittografati in tutti i percorsi e sono disponibili solo per gli utenti autenticati che dispongono dell'accesso e delle autorizzazioni per i video dell'organizzazione. Office 365 video utilizza una combinazione di tecnologie per eseguire le operazioni seguenti:
+- SharePoint Online viene utilizzato per archiviare i file video e i metadati (titolo video, descrizione e così via). Fornisce inoltre il livello di sicurezza e conformità (inclusa l'autenticazione) e le funzionalità di ricerca.
+- Servizi di Azure Media fornisce la transcodifica, il flusso adattivo, il recapito sicuro (utilizzando la crittografia AES) e le funzionalità di anteprima.
 
-[Servizi di Azure Media](https://azure.microsoft.com/services/media-services/) è una piattaforma-as-a-service che offre per l'abilitazione dei flussi di lavoro end-to-end media nel cloud. La piattaforma fornisce un'API REST per il caricamento, codifica, la crittografia (con PlayReady) e il recapito di dati multimediali tramite Data Center Azure tutto il mondo.
+[Azure Media Services](https://azure.microsoft.com/services/media-services/) è un'offerta Platform-as-a-Service per l'abilitazione dei flussi di lavoro multimediali end-to-end nel cloud. La piattaforma fornisce un'API REST per il caricamento, la codifica, la crittografia (con PlayReady) e il recapito dei contenuti multimediali tramite i datacenter di Azure in tutto il mondo.
 
-Tutti i caricamenti per il Video di Office 365 si verificano tramite HTTPS. Quando viene caricato un file video, viene archiviato in SharePoint Online e una copia del file viene inviata tramite un canale crittografato Azure Media Services. Azure servizi Media transcodifica i dati del video in diversi formati ottimizzati per la visualizzazione di utilizzo (ad esempio, per dispositivi mobili, larghezza di banda ridotta, ampia larghezza di banda e così via). Questi file, insieme ai file originale acquisite durante il caricamento, vengono archiviati in archiviazione Blob di Azure. I file vengono crittografati tramite AES 128 per l'algoritmo di crittografia comuni MPEG della creazione del pacchetto (o una versione precedente di PlayReady) per la riproduzione e crittografate tramite AES 256 crittografia di archiviazione prima di essere memorizzato in archiviazione Blob di Azure. (Utilizzando Azure Media Services Client SDK, i clienti possono controllare quali la crittografia è utilizzata. Ad esempio, un cliente potrebbe applicare Azure Media Services archiviazione la crittografia (AES 256) a una risorsa preziosa media prima del caricamento archiviazione Blob di Azure.)
+Tutti i caricamenti per il video di Office 365 si verificano tramite HTTPS. Quando viene caricato un file video, viene archiviato in SharePoint Online e una copia del file viene inviata tramite un canale crittografato ai servizi di Azure Media. Azure Media Services esegue la transcodifica del video in più formati ottimizzati per la visualizzazione dell'esperienza (ad esempio, per dispositivi mobili, larghezza di banda ridotta, larghezza di banda elevata e così via). Questi file, insieme al file originale acquisito durante il caricamento, vengono archiviati nell'archiviazione BLOB di Azure. I file vengono crittografati con AES 128 per l'algoritmo di compressione di crittografia comune MPEG (o versione precedente di PlayReady) per la riproduzione e crittografati utilizzando la crittografia di archiviazione AES 256 prima di essere archiviati in archiviazione BLOB di Azure. Utilizzando l'SDK client di Azure Media Services, i clienti possono controllare la crittografia utilizzata. Ad esempio, un cliente potrebbe applicare la crittografia di archiviazione di Azure Media Services (AES 256) a un asset multimediale di alto valore prima di caricare lo spazio di archiviazione BLOB di Azure.)
 
-Servizi di Azure multimediale genera inoltre un'anteprima del video, che trasmette insieme anteprima metadati in SharePoint Online tramite un canale crittografato.
+Azure Media Services genera anche un'anteprima del video, che trasmette insieme ai metadati delle anteprime a SharePoint Online tramite un canale crittografato.

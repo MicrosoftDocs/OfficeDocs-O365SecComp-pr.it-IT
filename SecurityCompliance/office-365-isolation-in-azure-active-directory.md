@@ -1,5 +1,5 @@
 ---
-title: Isolamento di Office 365 e controllo di accesso di Azure Active Directory
+title: Isolamento e controllo di accesso di Office 365 in Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,38 +10,40 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: "Riepilogo: Come utilizzare l'isolamento e controllo di accesso di Azure Active Directory."
-ms.openlocfilehash: db4fa0d026c6c608f09252c65bf1e0de5354f68c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: "Riepilogo: funzionamento del controllo dell'isolamento e dell'accesso all'interno di Azure Active Directory."
+ms.openlocfilehash: 01103361a084d50adbc6c0a8351d9af8311a39fd
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531328"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090508"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolamento e controllo di accesso in Azure Active Directory
 
-Azure Active Directory sono stati progettati per ospitare più tenant in modo esigenze di sicurezza e isolamento logico dei dati. Accesso di Azure Active Directory viene gestita da un livello di autorizzazione. Azure Active Directory consente di isolare i clienti che utilizzano i contenitori tenant come limiti di protezione per proteggere il contenuto del cliente in modo che il contenuto non è accessibile o compromesso da CO-tenant. Tre controlli vengono eseguiti dal livello di autorizzazione di Azure Active Directory:
-- L'entità è abilitato per l'accesso al tenant di Azure Active Directory?
-- L'entità è abilitato per l'accesso ai dati di questo tenant?
-- È il ruolo dell'entità in questa tenant dispone dell'autorizzazione per il tipo di accesso ai dati richiesto?
+Azure Active Directory è stato creato per ospitare più tenant in modo estremamente sicuro tramite l'isolamento dei dati logici. L'accesso a Azure Active Directory è associato a un livello di autorizzazione. Azure Active Directory consente di isolare i clienti utilizzando i contenitori tenant come limiti di sicurezza per salvaguardare il contenuto di un cliente, in modo che non sia possibile accedere ai contenuti o essere compromessi dai coinquilini. Tre controlli vengono eseguiti dal livello di autorizzazione di Azure Active Directory:
+- L'entità è abilitata per l'accesso al tenant di Azure Active Directory?
+- L'entità è abilitata per l'accesso ai dati nel tenant?
+- Il ruolo dell'entità in questo tenant è autorizzato per il tipo di accesso ai dati richiesto?
 
-Nessuna applicazione, utente, server o servizio può accedere Azure Active Directory senza autenticazione appropriato e token o del certificato. Le richieste vengono rifiutate se non sono accompagnate dalla credenziali appropriate.
+Nessuna applicazione, utente, server o servizio può accedere ad Azure Active Directory senza l'autenticazione e il token o il certificato appropriati. Le richieste vengono rifiutate se non sono accompagnate da credenziali appropriate.
 
-Azure Active Directory in modo efficace, ospita ogni tenant nel relativo contenitore protetto, con i criteri e le autorizzazioni per e all'interno del contenitore unicamente e di proprietà e gestite da tenant.
+In modo efficace, Azure Active Directory ospita ogni tenant nel proprio contenitore protetto, con i criteri e le autorizzazioni per e all'interno del contenitore posseduto e gestito solo dal tenant.
  
 ![Contenitore di Azure](media/office-365-isolation-azure-container.png)
 
-Il concetto di contenitori tenant in profondità è radicato nel servizio directory a tutti i livelli di portali verso un'archiviazione persistente. Anche quando più metadati tenant di Azure Active Directory vengono archiviati nello stesso disco fisico, non esiste alcuna relazione tra i contenitori diverso da quello definito dal servizio directory, che a sua volta è determinato dall'amministratore del tenant. Non può essere Nessuna connessione diretta di archiviazione di Azure Active Directory da qualsiasi applicazione o un servizio senza prima utilizzare il livello di autorizzazione richiesta.
+Il concetto di contenitori tenant è profondamente radicato nel servizio directory a tutti i livelli, dai portali fino all'archiviazione persistente. Anche se più metadati tenant di Azure Active Directory sono archiviati nello stesso disco fisico, non esiste alcuna relazione tra i contenitori diversi da quelli definiti dal servizio directory, che a sua volta è dettata dall'amministratore del tenant. Non vi possono essere connessioni dirette all'archiviazione di Azure Active Directory da qualsiasi applicazione o servizio richiedente senza prima passare attraverso il livello di autorizzazione.
 
-Nell'esempio seguente, Contoso e Fabrikam hanno contenitori dedicata e anche se tali contenitori possono condividere alcune della stessa infrastruttura sottostante, ad esempio server e archiviazione, che restano separati e isolate tra loro e gestita dalla livelli di autorizzazione e controllo di accesso.
+Nell'esempio riportato di seguito, Contoso e Fabrikam dispongono entrambi di contenitori separati e dedicati e, sebbene tali contenitori possano condividere parte della stessa infrastruttura sottostante, ad esempio i server e l'archiviazione, rimangono separati e isolati gli uni dagli altri e sono gated da livelli di autorizzazione e controllo di accesso.
  
-![Azure contenitori dedicati](media/office-365-isolation-azure-dedicated-containers.png)
+![Contenitori dedicati di Azure](media/office-365-isolation-azure-dedicated-containers.png)
 
-Inoltre, non sono componenti dell'applicazione che possono essere eseguiti all'interno di Azure Active Directory e non è possibile per un tenant forzatamente violare l'integrità di un altro tenant, per accedere a chiavi di crittografia di un altro tenant o leggere i dati non elaborati dal server.
+Inoltre, non sono presenti componenti dell'applicazione che possono essere eseguiti dall'interno di Azure Active Directory e non è possibile che un tenant violi forzatamente l'integrità di un altro tenant, acceda alle chiavi di crittografia di un altro tenant o legga dati non elaborati dal server.
 
-Per impostazione predefinita, Azure Active Directory non ammette tutte le operazioni emesso dalle identità in altri tenant. Ogni tenant è logicamente isolato all'interno di Azure Active Directory tramite i controlli di accesso basata sulle attestazioni. Letture e scritture della directory dei dati sono come ambiti tenant contenitori e gestiti da un livello di astrazione interno e un livello di controllo di accesso basato sui ruoli, che insieme applicare il tenant come il limite di sicurezza. Tutte le richieste di accesso dati directory viene elaborata da questi livelli e tutte le richieste di accesso in Office 365 sono policed dalla logica sopra elencata.
+Per impostazione predefinita, Azure Active Directory non consente tutte le operazioni emesse dalle identità in altri tenant. Ogni tenant è logicamente isolato all'interno di Azure Active Directory tramite i controlli di accesso basati sulle attestazioni. Le letture e le scritture dei dati della directory sono limitate ai contenitori tenant e sono deportate da un livello di astrazione interno e da un livello di controllo di accesso basato sui ruoli (RBAC), che insieme impongono il tenant come limite di sicurezza. Ogni richiesta di accesso ai dati di directory viene elaborata da questi layer e ogni richiesta di accesso in Office 365 è sorvegliata dalla logica precedente.
 
-Azure Active Directory presenta partizioni Nord America, governo degli Stati Uniti, Unione europea, in Germania e World Wide. È presente un tenant in un'unica partizione e partizioni possono contenere più tenant. Informazioni sulla partizione estratti dagli utenti. Una partizione specificata (inclusi tutti i tenant in essa contenuti) verrà replicata in più centri dati. La partizione per un tenant viene scelto in base alle proprietà del tenant (ad esempio, il codice paese). Segreti e altre informazioni riservate in ogni partizione è crittografato con una chiave dedicata. Le chiavi vengono generate automaticamente quando viene creata una nuova partizione.
+Azure Active Directory dispone del Nord America, del governo degli Stati Uniti, dell'Unione europea, della Germania e delle partizioni mondiali. Un tenant esiste in una singola partizione e le partizioni possono contenere più tenant. Le informazioni sulla partizione vengono sottratte agli utenti. Una determinata partizione (inclusi tutti i tenant all'interno) viene replicata in più datacenter. La partizione per un tenant viene scelta in base alle proprietà del tenant (ad esempio, il codice paese). I segreti e altre informazioni riservate in ogni partizione vengono crittografati con una chiave dedicata. Le chiavi vengono generate automaticamente quando viene creata una nuova partizione.
 
-Funzionalità di sistema Azure Active Directory è un'istanza univoca di ogni sessione utente. Inoltre, Azure Active Directory utilizza tecnologie di crittografia per fornire l'isolamento delle risorse di sistema condivise a livello di rete per impedire il trasferimento non autorizzato non intenzionale di informazioni.
+Le funzionalità di Azure Active Directory System sono un'istanza univoca per ogni sessione utente. Azure Active Directory utilizza inoltre le tecnologie di crittografia per garantire l'isolamento delle risorse di sistema condivise a livello di rete per impedire il trasferimento non autorizzato e involontario di informazioni.
