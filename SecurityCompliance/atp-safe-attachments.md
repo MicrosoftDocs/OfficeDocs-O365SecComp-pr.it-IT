@@ -1,5 +1,5 @@
 ---
-title: Allegati Safe degli strumenti di analisi di Office 365
+title: Allegati sicuri di Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,71 +14,71 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
-description: La caratteristica allegati sicuri consente di verificare momento del clic allegati di posta elettronica. Utilizzare gli allegati sicuri per proteggere l'organizzazione da utenti malintenzionati file inviare o ricevere posta elettronica.
-ms.openlocfilehash: 48beec9b581055c0f4928434eaa8378ae2812e2c
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: La funzionalità allegati sicuri fornisce il tempo di fare clic sulla verifica degli allegati di posta elettronica. Utilizzo degli allegati sicuri per proteggere l'organizzazione da file dannosi che gli utenti inviano o ricevono tramite posta elettronica.
+ms.openlocfilehash: f8cdfe8027804eaa06784502f72110173f8fa61f
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995327"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123907"
 ---
-# <a name="office-365-atp-safe-attachments"></a>Allegati Safe degli strumenti di analisi di Office 365
+# <a name="office-365-atp-safe-attachments"></a>Allegati sicuri di Office 365 ATP
 
-## <a name="overview-of-office-365-atp-safe-attachments"></a>Panoramica di Office 365 degli strumenti di analisi Safe allegati
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Panoramica degli allegati sicuri di Office 365 ATP
 
-Gli allegati sicuri degli strumenti di analisi (con [Collegamenti sicuro degli strumenti di analisi](atp-safe-links.md)) fa parte di [Protezione di Office 365 avanzate rischio](office-365-atp.md) (degli strumenti di analisi). La caratteristica allegati sicuri degli strumenti di analisi consente di verificare se gli allegati di posta elettronica sono dannosi e quindi esegue un'operazione per proteggere l'organizzazione. La caratteristica allegati sicuri degli strumenti di analisi consente di proteggere l'organizzazione in base ai [criteri gli allegati sicuri degli strumenti di analisi](set-up-atp-safe-attachments-policies.md) impostati dagli amministratori della protezione globali di Office 365. 
+Gli allegati sicuri di ATP (insieme ai [collegamenti sicuri di ATP](atp-safe-links.md)) fanno parte di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP). La funzionalità degli allegati sicuri di ATP verifica se gli allegati di posta elettronica sono dannosi e quindi interviene per proteggere l'organizzazione. La funzionalità degli allegati sicuri ATP protegge l'organizzazione in base ai [criteri degli allegati sicuri di ATP](set-up-atp-safe-attachments-policies.md) che sono impostati dagli amministratori globali o di sicurezza di Office 365. 
   
-Protezione degli strumenti di analisi può anche esteso per i file in SharePoint Online, OneDrive for Business e Teams Microsoft. Per ulteriori informazioni, vedere [Office 365 avanzate Threat Protection for SharePoint, OneDrive e team di Microsoft](atp-for-spo-odb-and-teams.md).
+La protezione ATP può anche essere estesa ai file in SharePoint Online, OneDrive for business e Microsoft teams. Per ulteriori informazioni, vedere [Office 365 Advanced Threat Protection for SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md).
        
 ## <a name="how-it-works"></a>Funzionamento
 
-La caratteristica allegati sicuri degli strumenti di analisi controlla gli allegati di posta elettronica per gli utenti nell'organizzazione. Quando un criterio di allegati sicuri degli strumenti di analisi è sul posto e un utente a cui che criteri Visualizza il messaggio di posta elettronica in Office 365, vengono controllati gli allegati di posta elettronica e vengono intraprese azioni appropriate, basato su criteri di allegati sicuri degli strumenti di analisi. A seconda di come vengono definiti i criteri, le persone possono continuare a lavorare senza mai conoscere che sono stati inviati file dannosi.
+La funzionalità degli allegati sicuri di ATP controlla gli allegati di posta elettronica per gli utenti dell'organizzazione. Quando un criterio per gli allegati sicuri ATP è sul posto e un utente coperto da tale criterio Visualizza la posta elettronica in Office 365, gli allegati di posta elettronica vengono controllati e vengono eseguite azioni appropriate, in base ai criteri degli allegati sicuri di ATP. A seconda del modo in cui vengono definiti i criteri, gli utenti possono continuare a lavorare senza aver mai saputo che sono stati inviati file dannosi.
   
-Di seguito sono due esempi di allegati sicuri degli strumenti di analisi in ufficio.
+Di seguito sono riportati due esempi di allegati sicuri di ATP sul posto di lavoro.
   
-- **Esempio 1: allegato di posta elettronica** Si supponga che Lee riceve un messaggio di posta elettronica contenente un allegato. Non è ovvio Lee fatto che allegato attendibili o effettivamente contiene malware progettato per sottrarre le credenziali utente di Lee. Organizzazione di Lee, un amministratore della sicurezza definito un criterio di allegati sicuri degli strumenti di analisi pochi giorni. Con la caratteristica allegati sicuri degli strumenti di analisi, allegato di posta elettronica viene aperto e test rigorosi in un ambiente virtuale prima che li riceve Lee. Se l'allegato è determinata da dannoso, verranno rimossi automaticamente. Se l'allegato è sicuro, verrà aperto nel modo previsto quando Lee fa clic su di esso. 
+- **Esempio 1: allegato di posta elettronica** Si supponga che Lee riceva un messaggio di posta elettronica con un allegato. Non è ovvio che l'allegato sia sicuro o che contenga effettivamente un malware creato per rubare le credenziali utente di Lee. Nell'organizzazione di Lee, un amministratore della sicurezza ha definito un criterio degli allegati sicuri ATP qualche giorno fa. Con la funzionalità degli allegati sicuri di ATP, l'allegato di posta elettronica viene aperto e testato in un ambiente virtuale prima che Lee lo riceva. Se l'allegato è determinato come dannoso, verrà rimosso automaticamente. Se l'allegato è sicuro, verrà aperto come previsto quando Lee fa clic su di esso. 
     
-- **Con l'esempio 2: File in SharePoint Online** Si supponga di Jean ricevuto un file caricato in una raccolta di SharePoint Online. Jean condivide il collegamento al file con altri membri del team, senza sapere che il file è effettivamente dannoso. Fortunatamente, [degli strumenti di analisi di SharePoint, OneDrive e team Microsoft che](atp-for-spo-odb-and-teams.md) rileva il file dannoso e si blocca. Pochi giorni dopo, Chris passa per aprire il documento. Sebbene Chris possono visualizzare che il file esiste, non possono aprire o condividerlo, impedendo computer Chris e altri file dannoso Chris. 
+- **Esempio 2: file in SharePoint Online** Si supponga che Jean abbia ricevuto un file e lo abbia caricato in una raccolta in SharePoint Online. Jean condivide il collegamento al file con il resto del team, non sapendo che il file è effettivamente dannoso. Fortunatamente, [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) rileva il file dannoso e lo blocca. Dopo alcuni giorni, Chris si reca all'apertura del documento. Anche se Chris è in grado di visualizzare il file è presente, Chris non può aprirlo o condividerlo, impedendo al computer di Chris e ad altri utenti di eseguire il file dannoso. 
     
-Gli allegati sicuri degli strumenti di analisi analisi abbia effettuare nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulle aree di centro dati, vedere [dove sono i dati si trova?](https://products.office.com/where-is-your-data-located?geo=All) 
+L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
 
-Gli allegati sicuri degli strumenti di analisi criteri possono essere applicati a specifici utenti o gruppi all'interno dell'organizzazione o per l'intero dominio. Inoltre, gli allegati sicuri degli strumenti di analisi criteri possono essere configurati per utilizzare gli allegati segnaposto mentre vengono analizzati allegati effettivi. Per ulteriori informazioni, vedere **[impostazione dei criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md)**. 
+I criteri per gli allegati sicuri di ATP possono essere applicati a persone o gruppi specifici dell'organizzazione o all'intero dominio. Inoltre, è possibile configurare i criteri degli allegati sicuri di ATP per utilizzare gli allegati segnaposto mentre vengono analizzati gli allegati effettivi. Per ulteriori informazioni, vedere **[configurare i criteri per gli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md)**. 
   
-## <a name="how-to-get-atp-safe-attachments"></a>Come ottenere gli allegati sicuri degli strumenti di analisi
+## <a name="how-to-get-atp-safe-attachments"></a>Come ottenere gli allegati sicuri di ATP
 
-Per prima cosa, verificare che la sottoscrizione include [Avanzate Threat Protection](office-365-atp.md). Degli strumenti di analisi è incluso in sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 Education A5 e così via. Se l'organizzazione dispone di una sottoscrizione a Office 365 che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Prima di tutto, assicurarsi che l'abbonamento includa [protezione avanzata dalle minacce](office-365-atp.md). ATP è incluso nelle sottoscrizioni, ad esempio [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education a5 e così via. Se nell'organizzazione è presente un abbonamento a Office 365 che non include Office 365 ATP, è possibile acquistare ATP come componente aggiuntivo. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
-Successivamente, verificare che i criteri degli strumenti di analisi gli allegati sicuri sono definiti. (Vedere [impostazione dei criteri di sicurezza allegati di Office 365 degli strumenti di analisi](set-up-atp-safe-attachments-policies.md)) Gli allegati sicuri degli strumenti di analisi caratteristiche siano attive quando:
+Successivamente, verificare che i criteri per gli allegati sicuri di ATP siano definiti. (Vedere [configurare i criteri per gli allegati sicuri di Office 365 ATP](set-up-atp-safe-attachments-policies.md)) Le funzionalità degli allegati sicuri ATP sono attive quando:
   
-- Vengono impostati i criteri gli allegati sicuri degli strumenti di analisi. Vedere [impostazione dei criteri degli strumenti di analisi allegati attendibili in Office 365](set-up-atp-safe-attachments-policies.md).
+- I criteri per gli allegati sicuri ATP sono configurati. Per ulteriori informazioni, vedere [configurare i criteri degli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md).
     
-- Gli utenti hanno effettuato l'accesso a Office 365 utilizzando il proprio account di lavoro o della scuola. Vedere [accesso a Office o Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).
+- Gli utenti hanno effettuato l'accesso a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. (Vedere [accedere a Office o office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
 
-Per definire o modificare i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
+Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Alcuni esempi sono descritti nella tabella seguente:
 
-|Ruolo  |Modalità assegnato  |
+|Ruolo  |Dove/come assegnato  |
 |---------|---------|
-|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
-|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
+|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
+|Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Come sapere se protezione gli allegati sicuri degli strumenti di analisi è sul posto
+## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Come sapere se è attiva la protezione per gli allegati sicuri di ATP
 
-Dopo avere [definito (o esaminato) i criteri di allegati sicuri degli strumenti di analisi](set-up-atp-safe-attachments-policies.md), visualizzando i [report per la protezione avanzata di rischio](view-reports-for-atp.md)è un modo efficace per vedere come funziona il servizio.
+Dopo aver [definito (o esaminato) i criteri per gli allegati sicuri di ATP](set-up-atp-safe-attachments-policies.md), un buon modo per vedere come funziona il servizio consiste nel visualizzare i [report per Advanced Threat Protection](view-reports-for-atp.md).
   
-Nella tabella seguente vengono descritti alcuni scenari di esempio. In tutti i casi, si presuppone che l'organizzazione dispone di una sottoscrizione a Office 365 che include una protezione avanzata di rischio.
+Nella tabella seguente vengono descritti alcuni scenari di esempio. In tutti questi casi, si presuppone che l'organizzazione disponga di un abbonamento a Office 365 che includa la protezione avanzata dalle minacce.
   
-|**Scenario di esempio**|**Protezione gli allegati sicuri degli strumenti di analisi si applica in questo caso?**|
+|**Scenario di esempio**|**In questo caso, si applica la protezione per gli allegati sicuri ATP?**|
 |:-----|:-----|
-|Organizzazione di PAT ha E5 Enterprise di Office 365, ma non è definita ancora tutti i criteri per gli allegati sicuri degli strumenti di analisi.  <br/> |No. Sebbene la funzionalità è disponibile, almeno un criterio di allegati sicuri degli strumenti di analisi deve essere definito nell'ordine indicato per la protezione degli allegati sicuri degli strumenti di analisi in locale.  <br/> |
-|Lee è un dipendente del reparto vendite presso Contoso. Organizzazione di Lee contiene un criterio di allegati sicuri degli strumenti di analisi sul posto a cui si applica solo ai dipendenti finance.  <br/> |No. In questo caso, i dipendenti finance avrebbe protezione gli allegati sicuri degli strumenti di analisi, ma altri dipendenti, tra cui il reparto vendito, potrebbe non fino a quando non vengono definiti i criteri che includono tali gruppi.  <br/> |
-|Nel giorno precedente, un amministratore di Office 365 all'organizzazione di Jean configurare un criterio di allegati sicuri degli strumenti di analisi che si applica a tutti i dipendenti. In precedenza oggi Jean ricevuto un messaggio di posta elettronica contenente un allegato.  <br/> |Sì. In questo esempio Jean dispone di una licenza per la protezione avanzata di rischio e un criterio di allegati sicuri degli strumenti di analisi che include Jean è stato definito. In genere necessario circa 30 minuti per un nuovo criterio rendere effettive tra datacenter; Poiché un giorno trascorsa in questo caso, il criterio deve essere attivo.  <br/> |
-|Organizzazione di Chris contiene E5 Enterprise di Office 365 con i criteri degli strumenti di analisi provvisoria allegati sul posto per tutti gli utenti nell'organizzazione. Chris riceve un messaggio di posta elettronica che ha un allegato e inoltra il messaggio ad altri utenti che si trovano all'esterno dell'organizzazione.  <br/> |Protezione gli allegati sicuri degli strumenti di analisi è sul posto per i messaggi che riceve Chris. Nel caso le organizzazioni i destinatari anche i criteri degli strumenti di analisi provvisoria allegati sul posto, il messaggio viene inoltrata Chris sarà soggetta a quei criteri quando si riceve il messaggio inoltrato.  <br/> |
-|Organizzazione Elena ha i criteri degli strumenti di analisi provvisoria allegati sul posto [degli strumenti di analisi di SharePoint, OneDrive e team Microsoft che](atp-for-spo-odb-and-teams.md) è stata attivata. Chiara si presuppone che ogni file in SharePoint Online è stati analizzati e sia aprire o scaricare.<br/> |Protezione gli allegati sicuri degli strumenti di analisi è sul posto in base ai criteri definiti; Tuttavia, ciò significa che viene eseguita l'analisi di ogni singolo file in SharePoint Online, OneDrive for Business o Teams Microsoft. (Per ulteriori informazioni, vedere [degli strumenti di analisi di SharePoint, OneDrive e team Microsoft che](atp-for-spo-odb-and-teams.md)).<br/> |
+|L'organizzazione di Pat ha Office 365 Enterprise E5, ma nessuno ha ancora definito i criteri per gli allegati sicuri di ATP.  <br/> |No. Anche se la funzionalità è disponibile, è necessario definire almeno un criterio per gli allegati sicuri ATP per garantire che la protezione degli allegati sicuri di ATP sia sul posto.  <br/> |
+|Lee è un dipendente del reparto vendite di contoso. L'organizzazione di Lee ha un criterio di allegati sicuri ATP sul posto che si applica solo ai dipendenti finanziari.  <br/> |No. In questo caso, i dipendenti finanziari avrebbero una protezione per gli allegati sicuri di ATP, ma altri dipendenti, incluso il reparto vendite, non consentiranno di definire i criteri che includono tali gruppi.  <br/> |
+|Ieri, un amministratore di Office 365 nell'organizzazione di Jean ha configurato un criterio di allegati sicuri ATP che si applica a tutti i dipendenti. Prima di oggi, Jean ha ricevuto un messaggio di posta elettronica che include un allegato.  <br/> |Sì. In questo esempio, Jean ha una licenza per Advanced Threat Protection e un criterio per gli allegati sicuri ATP che include Jean è stato definito. In genere, sono necessari circa 30 minuti affinché un nuovo criterio abbia effetto su tutti i datacenter. Poiché un giorno è passato in questo caso, il criterio dovrebbe essere attivo.  <br/> |
+|L'organizzazione di Chris ha Office 365 Enterprise E5 con i criteri per gli allegati sicuri di ATP sul posto per tutti gli utenti dell'organizzazione. Chris riceve un messaggio di posta elettronica con un allegato e lo inoltra ad altri utenti esterni all'organizzazione.  <br/> |La protezione per gli allegati sicuri ATP è attiva per i messaggi ricevuti da Chris. Se le organizzazioni dei destinatari dispongono anche di criteri per gli allegati sicuri di ATP sul posto, il messaggio che Chris inoltra è soggetto a tali criteri quando arriva il messaggio inoltrato.  <br/> |
+|L'organizzazione di Jamie dispone di criteri per gli allegati sicuri ATP sul posto e [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) è stato attivato. Jamie presuppone che ogni file in SharePoint Online sia stato analizzato ed è sicuro per l'apertura o il download.<br/> |La protezione per gli allegati sicuri ATP è in vigore secondo i criteri definiti. Tuttavia, ciò non significa che ogni singolo file in SharePoint Online, OneDrive for business o Microsoft teams venga analizzato. Per ulteriori informazioni, vedere [ATP for SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md).<br/> |
    
 ## <a name="submitting-files-for-malware-analysis"></a>Invio di file per l'analisi antimalware
 
-- Se si riceve un file che si desidera richiedere a Microsoft di analizzare, visitare il sito [per invio a un file per l'analisi di malware](https://aka.ms/wdsi/submit).
+- Se si riceve un file da analizzare da Microsoft, visitare [inviare un file per l'analisi antimalware](https://aka.ms/wdsi/submit).
 
-- Se viene visualizzato un messaggio di posta elettronica, con o senza un allegato, che si desidera inviare a Microsoft per l'analisi, utilizzare [componente aggiuntivo di report](enable-the-report-message-add-in.md).
+- Se si riceve un messaggio di posta elettronica (con o senza allegato) che si desidera inviare a Microsoft per l'analisi, utilizzare il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md).
   

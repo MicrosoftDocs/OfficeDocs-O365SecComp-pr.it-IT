@@ -1,9 +1,8 @@
 ---
-title: Utilizzare le regole di flusso di posta elettronica per configurare la posta elettronica in blocco il filtro in Exchange Online Protection
+title: Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco in Exchange Online Protection
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,67 +11,60 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
-description: Gli amministratori possono imparare a utilizzare le regole di flusso di posta in Exchange Online Protection per il filtro di posta elettronica in blocco.
-ms.openlocfilehash: ce95872d3d80436dce4c62037caea9a5f735726d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Gli amministratori possono scoprire come utilizzare le regole del flusso di posta in Exchange Online Protection per il filtro della posta elettronica in blocco.
+ms.openlocfilehash: d308439b5c26569f85eb62ddee6f01786d2998b9
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27382807"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123917"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utilizzare le regole di flusso di posta elettronica per configurare la posta elettronica in blocco il filtro in Exchange Online Protection
+# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco in Exchange Online Protection
 
-È possibile impostare filtri contenuti a livello aziendale per la posta elettronica da posta indesiderata e blocco tramite i criteri di filtro contenuto posta indesiderata predefiniti. Vedere [configurazione dei criteri di filtro posta indesiderata](configure-your-spam-filter-policies.md) e [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) su come impostare i criteri di filtro dei contenuti. 
+È possibile impostare filtri di contenuto a livello aziendale per la posta indesiderata e i messaggi in blocco utilizzando i criteri di filtro contenuto spam predefiniti. Vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md) indesiderata e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) su come impostare i criteri di filtro dei contenuti. 
   
-Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile creare le regole di flusso di posta elettronica (noto anche come regole di trasporto) per cercare i modelli di testo o frasi domande presenti in messaggi di posta elettronica in blocco. Qualsiasi messaggio che include le seguenti caratteristiche verrà contrassegnato come posta indesiderata. Utilizzo di queste regole consentono di ridurre la quantità di posta elettronica in blocco che riceve l'organizzazione.
-  
-**Note**:
+Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per cercare modelli di testo o frasi che si trovano di frequente nei messaggi di posta elettronica in blocco. Tutti i messaggi che contengono queste caratteristiche verranno contrassegnati come posta indesiderata. L'utilizzo di queste regole può contribuire a ridurre la quantità di messaggi di posta elettronica indesiderata ricevuti dall'organizzazione.
 
-- Prima di creazione di regole di flusso della posta descritte in questo argomento, è consigliabile leggere innanzitutto [Qual è la differenza tra posta indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md) e [i valori di massa reclamo livello](bulk-complaint-level-values.md). 
+> [!IMPORTANT]
+> Prima di creare le regole del flusso di posta documentate questo argomento, si consiglia di leggere innanzitutto [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valori a livello](bulk-complaint-level-values.md)di reclamo in blocco.<br>Le procedure seguenti contrassegnano un messaggio come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per applicare queste regole solo a destinatari specifici dell'organizzazione. In questo modo, le impostazioni di filtro della posta elettronica in blocco aggressive possono essere applicate a pochi utenti fortemente mirati, mentre gli altri utenti (che per lo più ricevono la posta elettronica di massa a cui hanno effettuato l'iscrizione) non sono interessati. 
   
-- Le procedure seguenti messaggio è contrassegnato come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per queste regole si applicano solo a destinatari specifici dell'organizzazione. In questo modo, il posta elettronica in blocco aggressivo possono applicare le impostazioni del filtro per alcuni utenti altamente mirate, mentre il resto degli utenti (gli utenti che per la maggior parte ricevono il posta elettronica in blocco che vengono iscritti) non sono interessate. 
-  
-### <a name="create-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Creare una regola del flusso di posta elettronica per filtrare i messaggi di posta elettronica in blocco in base agli schemi di testo
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Creare una regola del flusso di posta per filtrare i messaggi di posta elettronica in blocco in base ai modelli di testo
 
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Flusso di posta** \> **Regole**.
     
-2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif), quindi selezionare **Crea una nuova regola**.
+2. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
     
 3. Specificare un nome per la regola.
     
-4. Fare clic su **altre opzioni**. In **Applica questa regola se**, selezionare **l'oggetto o nel corpo** \> **oggetto o nel corpo corrisponde a questi modelli di testo**.
+4. Fare clic su **altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo o l'oggetto corpo **corrisponde a questi modelli di testo**.
     
 5. Nella finestra di dialogo **specificare parole o frasi**, aggiungere le seguenti espressioni regolari che si trovano di solito nei messaggi di posta elettronica in blocco, una per volta, e fare clic su **OK** al termine: 
     
-   - Se non è possibile visualizzare il contenuto di questo messaggio di posta elettronica\,
+   - `If you are unable to view the content of this email\, please`
     
-   - \\>(safe )?unsubscribe( here)?\\</a\\>
+   - `\>(safe )?unsubscribe( here)?\</a\>`
     
-   - Se non si desidera ricevere ulteriori comunicazioni di questo tipo\,
+   - `If you do not wish to receive further communications like this\, please`
     
-   - \\<img height\="?1"? width\="?1"? src\=.?http\://
+   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
     
-   - Per non ricevere più questi\s+messaggi di posta elettronica\:http\://
+   - `To stop receiving these+emails\:http\://`
     
-   - Per annullare la sottoscrizione a \w+ (e\-?letter|e?-?mail|newsletter)
+   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
     
-   - no longer (wish )?(to )?(be sent|receive) \w+ email
+   - `no longer (wish )?(to )?(be sent|receive) w+ email`
     
-   - Se non è possibile visualizzare il contenuto di questo messaggio di posta elettronica\, fare clic qui
+   - `If you are unable to view the content of this email\, please click here`
     
-   - Per essere sicuri di ricevere (your daily deals|our e-?mails)\, aggiungere
+   - `To ensure you receive (your daily deals|our e-?mails)\, add`
     
-   - Se non si desidera più ricevere questi messaggi di posta elettronica
+   - `If you no longer wish to receive these emails`
     
-   - per modificare le (subscription preferences|preferences or unsubscribe)
+   - `to change your (subscription preferences|preferences or unsubscribe)`
     
-   - fare clic (here to|the) annullare la sottoscrizione
+   - `click (here to|the) unsubscribe`
     
-   **Note**:
-
-   - Tale elenco non è un set completo di espressioni regolari di messaggi di posta elettronica in blocco, informazioni possono essere aggiunti o rimossi in base alle esigenze. È tuttavia un punto di partenza ottimale.
-    
-   - Cercare parole o modelli di testo nell'oggetto o gli altri campi dell'intestazione nel messaggio viene generato *dopo che* il messaggio è stato decodificato dal trasferimento di contenuto MIME codifica del metodo utilizzato per trasmettere il messaggio binario tra i server SMTP in testo ASCII. È possibile utilizzare le condizioni o eccezioni per cercare il raw (in genere Base64) codificato i valori dell'oggetto o gli altri campi dell'intestazione nei messaggi. 
+   L'elenco di cui sopra non è un insieme esaustivo di espressioni regolari presenti nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, è un buon punto di partenza.<br>La ricerca di parole o di modelli di testo nell'oggetto o in altri campi di intestazione del messaggio si verifica *dopo* la decodifica del messaggio dal metodo MIME Content Transfer Encoding utilizzato per la trasmissione del messaggio binario tra i server SMTP in testo ASCII. Non è possibile utilizzare le condizioni o le eccezioni per cercare i valori non elaborati (in genere, Base64) codificati dell'oggetto o di altri campi di intestazione nei messaggi. 
     
 6. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.
     
@@ -80,52 +72,51 @@ Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile cre
     
    L'impostazione di SCL su 5 o 6 consente di eseguire l'azione **Posta indesiderata**, mentre l'impostazione di SCL su 9 consente di effettuare l'azione **Alta probabilità di posta indesiderata**, come configurato nel criterio di filtro dei contenuti. Il servizio esegue l'azione impostata nel criterio di filtro dei contenuti. L'azione predefinita è quella di recapitare il messaggio nella cartella Posta indesiderata del destinatario, ma è possibile configurare azioni differenti, come descritto in [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
     
-   > [!NOTE]
-   > Se l'azione configurato il messaggio di quarantena anziché di inviarlo alla cartella posta indesiderata i destinatari, il messaggio verrà inviato per la quarantena amministratore come la corrispondenza di una regola di flusso di posta elettronica e non sarà disponibile nella quarantena della posta indesiderata utente finale o tramite per l'utente finale notifiche di posta indesiderata. 
+   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta inDesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
   
    Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
     
 8. Salvare la regola.
     
-### <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>Creare una regola del flusso di posta elettronica per filtrare i messaggi di posta elettronica in blocco in base alle frasi
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>Creare una regola del flusso di posta per filtrare i messaggi di posta elettronica in blocco in base alle frasi
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
     
-2. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif), quindi selezionare **Crea una nuova regola**.
+2. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
     
 3. Specificare un nome per la regola.
     
-4. Fare clic su **altre opzioni**. In **Applica questa regola se**, selezionare **l'oggetto o nel corpo** \> **oggetto o nel corpo include una di queste parole**.
+4. Fare clic su **altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo del soggetto o **del corpo include una o più delle seguenti parole**.
     
 5. Nella finestra di dialogo **specificare parole o frasi**, aggiungere le seguenti frasi che si trovano di solito nei messaggi di posta elettronica in blocco, una per volta, e fare clic su **OK** al termine: 
     
-   - per modificare le preferenze o annullare la sottoscrizione
+   - `to change your preferences or unsubscribe`
     
-   - Modificare le preferenze di posta elettronica o annullare la sottoscrizione
+   - `Modify email preferences or unsubscribe`
     
-   - Questo è un messaggio di posta elettronica promozionale
+   - `This is a promotional email`
     
-   - Hai ricevuto questo messaggio di posta elettronica perché hai richiesto una sottoscrizione
+   - `You are receiving this email because you requested a subscription`
     
-   - fare clic qui per annullare la sottoscrizione
+   - `click here to unsubscribe`
     
-   - Hai ricevuto questo messaggio di posta elettronica perché hai effettuato la sottoscrizione
+   - `You have received this email because you are subscribed`
     
-   - Se non si desidera più ricevere la nostra newsletter
+   - `If you no longer wish to receive our email newsletter`
     
-   - per annullare la sottoscrizione a questa newsletter
+   - `to unsubscribe from this newsletter`
     
-   - Se si verificano dei problemi nella visualizzazione di questo messaggio di posta elettronica
+   - `If you have trouble viewing this email`
     
-   - Questo è un annuncio pubblicitario
+   - `This is an advertisement`
     
-   - si desidera annullare la sottoscrizione o modificare
+   - `you would like to unsubscribe or change your`
     
-   - visualizzare questo messaggio di posta elettronica come pagina Web
+   - `view this email as a webpage`
     
-   - Hai ricevuto questo messaggio di posta elettronica perché hai effettuato la sottoscrizione
+   - `You are receiving this email because you are subscribed`
     
-   **Nota**: ancora una volta, l'elenco non è un set completo di frasi di messaggi di posta elettronica in blocco, informazioni possono essere aggiunti o rimossi in base alle esigenze. È tuttavia un punto di partenza ottimale.
+   Questo elenco non è un insieme esaustivo di frasi trovate nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, è un buon punto di partenza.
     
 6. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.
     
@@ -133,8 +124,7 @@ Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile cre
     
    L'impostazione di SCL su 5 o 6 consente di eseguire l'azione **Posta indesiderata**, mentre l'impostazione di SCL su 9 consente di effettuare l'azione **Alta probabilità di posta indesiderata**, come configurato nel criterio di filtro dei contenuti. Il servizio esegue l'azione impostata nel criterio di filtro dei contenuti. L'azione predefinita è quella di recapitare il messaggio nella cartella Posta indesiderata del destinatario, ma è possibile configurare azioni differenti, come descritto in [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
     
-   > [!NOTE]
-   > Se l'azione configurato il messaggio di quarantena anziché di inviarlo alla cartella posta indesiderata i destinatari, il messaggio verrà inviato per la quarantena amministratore come la corrispondenza di una regola di flusso di posta elettronica e non sarà disponibile nella quarantena della posta indesiderata utente finale o tramite per l'utente finale notifiche di posta indesiderata. 
+   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta inDesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
   
    Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
 
@@ -144,8 +134,8 @@ Se si desidera altre opzioni per filtrare i messaggi in blocco, è possibile cre
 
 [Differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-[Valori al livello reclamo massa](bulk-complaint-level-values.md)
+[Valori di livello di reclamo in blocco](bulk-complaint-level-values.md)
 
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
 
-[Opzioni di filtro della posta indesiderata](advanced-spam-filtering-asf-options.md)
+[Opzioni di filtro della posta indesiderata avanzate](advanced-spam-filtering-asf-options.md)

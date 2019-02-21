@@ -1,5 +1,5 @@
 ---
-title: Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
+title: Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,81 +13,81 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection: M365-security-compliance
-description: Informazioni su come attivare degli strumenti di analisi di SharePoint, OneDrive e team, nonché su come impostare gli avvisi per file rilevati.
-ms.openlocfilehash: 8c63110baf391fd727e296f34361047b4b67b0cb
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Informazioni su come abilitare ATP per SharePoint, OneDrive e teams, inclusa la procedura per impostare gli avvisi per i file rilevati.
+ms.openlocfilehash: 8ba82a812881b53636f2fbc941ee04bc5dacdac1
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995337"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123897"
 ---
-# <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attiva per SharePoint, OneDrive e team di Microsoft Office 365 degli strumenti di analisi
+# <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
-[Degli strumenti di analisi di Office 365 per SharePoint, OneDrive e team di Microsoft](atp-for-spo-odb-and-teams.md) consente di proteggere l'organizzazione da inavvertitamente condivisione file dannosi. Quando un file dannoso viene rilevato, tale file è bloccato in modo che non possono aprire, copiare, spostare o condividerlo fino a quando non vengono intraprese azioni ulteriormente dal team di protezione dell'organizzazione. Leggere questo articolo per attivare degli strumenti di analisi di SharePoint, OneDrive e team, impostare gli avvisi per essere informati file rilevati e intraprendere le azioni successive. 
+[Office 365 ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) protegge l'organizzazione dalla condivisione involontaria di file dannosi. Quando viene rilevato un file dannoso, il file viene bloccato in modo che nessuno possa aprirlo, copiarlo, spostarlo o condividerlo fino a quando non vengono intraprese altre azioni da parte del team di sicurezza dell'organizzazione. Leggere questo articolo per abilitare ATP per SharePoint, OneDrive e teams, impostare gli avvisi per ricevere una notifica sui file rilevati e seguire i passaggi successivi. 
   
-Per definire o modificare i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
+Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Alcuni esempi sono descritti nella tabella seguente:
 
-|Ruolo  |Modalità assegnato  |
+|Ruolo  |Dove/come assegnato  |
 |---------|---------|
-|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
-|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
+|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
+|Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare ATP per SharePoint, OneDrive e Microsoft Teams
 
-**Prima di iniziare questa procedura, verificare che la registrazione di controllo è stata abilitata per l'ambiente Office 365**. Questo viene in genere eseguito da un utente che disponga del ruolo registri di controllo assegnato in Exchange Online. Per ulteriori informazioni, vedere [attivare Office 365 ricerca dei registri di controllo attivato o disattivato](turn-audit-log-search-on-or-off.md).
+**Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Office 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivaZione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
   
-1. Accedere a [https://protection.office.com](https://protection.office.com)e accedere con l'account di lavoro o della scuola.
+1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account aziendale o dell'Istituto di istruzione.
     
-2. In Office 365 Security &amp; centro conformità, nel riquadro di spostamento a sinistra, in **gestione rischio**, scegliere **criterio** \> **Gli allegati sicuri**. <br/>![In sicurezza &amp; centro conformità, scegliere gestione rischio \> criteri](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **allegati sicuri**per i **criteri** \> . <br/>![Nel centro sicurezza &amp; e conformità scegliere criteri di gestione \> delle minacce](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. Selezionare **attiva degli strumenti di analisi di SharePoint, OneDrive e team di Microsoft**.<br/>![Attivare la protezione avanzata minaccia per SharePoint Online, OneDrive for Business e team di Microsoft](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. Selezionare **attiva ATP per SharePoint, OneDrive e Microsoft teams**.<br/>![Abilitare Advanced Threat Protection per SharePoint Online, OneDrive for business e Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
 4. Fare clic su **Salva**.
     
-5. Esaminare (e, nel modo appropriato, modifica) [criteri gli allegati sicuri](set-up-atp-safe-attachments-policies.md) e [collegamenti sicuri criteri](set-up-atp-safe-links-policies.md)dell'organizzazione.
+5. Rivedere (e, a seconda dei casi, modificare) i [criteri per gli allegati sicuri](set-up-atp-safe-attachments-policies.md) dell'organizzazione e i [criteri collegamenti sicuri](set-up-atp-safe-links-policies.md).
     
-6. (Scelta consigliata) Come un amministratore globale o un amministratore di SharePoint Online, eseguire il cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true*. <br/>
-      - L'impostazione del parametro a blocchi *true* tutte le azioni (ad eccezione di Elimina) per rilevato file. Utenti non possono aprire, spostare, copiare o condividere file rilevati.
-      - L'impostazione del parametro su *false* blocca tutte le azioni ad eccezione di eliminazione e Download. Persone possono scegliere di accettare il rischio e scaricare un file rilevato.  
+6. Consigliato In qualità di amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true*. <br/>
+      - L'impostazione del parametro su *true* blocca tutte le azioni (eccetto Delete) per i file rilevati. Gli utenti non possono aprire, spostare, copiare o condividere i file rilevati.
+      - Se si imposta il parametro su *false* , vengono bloccate tutte le azioni ad eccezione di Delete e download. Gli utenti possono scegliere di accettare il rischio e scaricare un file rilevato.  
    
-7. Consentire fino a 30 minuti per le modifiche apportate da distribuire a tutti i centri dati di Office 365.
+7. Consentono fino a 30 minuti affinché le modifiche vengano estese a tutti i datacenter di Office 365.
     
-8. (Scelta consigliata) Procedere per impostare gli avvisi per file rilevati.
+8. Consigliato Procedere alla configurazione degli avvisi per i file rilevati.
     
-Per ulteriori informazioni sull'utilizzo di PowerShell con Office 365, vedere [gestire Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). 
+Per ulteriori informazioni sull'utilizzo di PowerShell con Office 365, vedere [gestione di office 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). 
 
-Per ulteriori informazioni sull'esperienza utente quando viene rilevato un file come dannose, vedere [cosa fare quando un file dannoso viene rilevato in SharePoint Online, OneDrive o team di Microsoft](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
+Per ulteriori informazioni sull'esperienza utente quando un file è stato rilevato come dannoso, vedere [cosa fare quando si trova un file dannoso in SharePoint Online, OneDrive o Microsoft teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
   
-## <a name="set-up-alerts-for-detected-files"></a>Configurare gli avvisi per file rilevati
+## <a name="set-up-alerts-for-detected-files"></a>Configurare gli avvisi per i file rilevati
 
-Per ricevere una notifica quando un file in SharePoint Online, OneDrive per Business o Microsoft Teams è stato identificato come moleste, è possibile impostare un avviso.
+Per ricevere una notifica quando un file in SharePoint Online, OneDrive for business o Microsoft teams è stato identificato come dannoso, è possibile impostare un avviso.
   
-1. Nella [protezione di Office 365 &amp; centro conformità](https://protection.office.com), scegliere **avvisi** \> **Gestisci avvisi**.
+1. nel [centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **avvisi** \> **gestione avvisi**.
     
-2. Scegliere **nuovo criterio di avviso**.
+2. Scegliere **nuovi criteri di avviso**.
     
 3. Specificare un nome per l'avviso. Ad esempio, è possibile digitare file dannosi nelle raccolte.
     
-4. Digitare una descrizione dell'avviso. Ad esempio, è possibile digitare notifica all'admins quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Teams Microsoft.
+4. Digitare una descrizione per l'avviso. Ad esempio, è possibile digitare notifiche agli amministratori quando vengono rilevati file dannosi in SharePoint Online, OneDrive o Microsoft teams.
     
-5. Nella sezione **Invia avviso se...** , eseguire le operazioni seguenti: 
+5. Nella sezione **Invia questo avviso quando...** eseguire le operazioni seguenti: 
     
-    r. nell'elenco **delle attività** scegliere **malware rilevate nel file**.
+    a. nell'elenco **attività** scegliere **rilevato malware nel file**.
     
-    b. lasciare vuoto il campo **gli utenti** . 
+    b. lasciare vuoto **** il campo Users. 
     
-6. Nella sezione **Invia avviso a...** selezionare uno o più gli amministratori globali, gli amministratori di protezione o lettori di sicurezza che devono ricevere una notifica quando viene rilevato un file dannoso. 
+6. Nella sezione **Invia questo avviso a...** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che dovrebbero ricevere una notifica quando viene rilevato un file dannoso. 
     
 7. Fare clic su **Salva**.
     
-Per ulteriori informazioni sugli avvisi, vedere [consente di creare avvisi attività in Office 365 Security &amp; centro conformità](create-activity-alerts.md). 
+Per ulteriori informazioni sugli avvisi, vedere [creare avvisi di attività nel centro sicurezza &amp; e conformità di Office 365](create-activity-alerts.md). 
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. [Informazioni sul file dannosi rilevato in SharePoint, OneDrive o Teams Microsoft](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
     
-2. [Gestire i messaggi in quarantena e i file in qualità di amministratore in Office 365](manage-quarantined-messages-and-files.md)
+2. [Gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md)
     
 
   
