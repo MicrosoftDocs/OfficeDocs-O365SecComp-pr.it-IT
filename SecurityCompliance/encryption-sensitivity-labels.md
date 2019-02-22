@@ -23,18 +23,18 @@ ms.locfileid: "26547318"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
-Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Ad esempio, con le impostazioni di crittografia di un'etichetta di riservatezza, è possibile proteggere i contenuti. In questo modo:
+Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Ad esempio, con le impostazioni di crittografia di un'etichetta di riservatezza, è possibile proteggere i contenuti per determinare le condizioni seguenti:
 
 - Solo gli utenti all'interno dell'organizzazione possono aprire un documento riservato o un messaggio di posta elettronica.
 - Solo gli utenti del reparto marketing possono modificare e stampare il documento di annuncio promozione o i messaggi di posta elettronica; tutti gli altri utenti dell'organizzazione possono solo leggerli.
 - Gli utenti non possono inoltrare un messaggio di posta elettronica o copiare informazioni da esso contenenti notizie riguardo una riorganizzazione interna.
 - Il listino prezzi corrente inviato ai partner commerciali non può essere aperto in seguito a una data specificata.
 
-Quando un documento o un messaggio di posta elettronica è crittografato, l'accesso al contenuto è limitato. In questo caso:
+Quando un documento o un messaggio di posta elettronica è crittografato, l'accesso al contenuto è limitato per fare in modo che si verifichino le condizioni seguenti:
 
-- Può essere decrittografato solo dagli utenti autorizzati dalle impostazioni di crittografia dell'etichetta.
-- Rimane crittografato indipendentemente da dove risiede, all'interno o all'esterno dell'organizzazione, anche nel caso il file venisse rinominato.
-- Resta crittografato sia se archiviato (ad esempio, in un account OneDrive) sia se in transito (ad esempio, un messaggio di posta elettronica inviato).
+- Il contenuto può essere decrittografato solo dagli utenti autorizzati dalle impostazioni di crittografia dell'etichetta.
+- Il contenuto rimane crittografato indipendentemente da dove risiede il file, all'interno o all'esterno dell'organizzazione, anche nel caso in cui il file venisse rinominato.
+- Il contenuto resta crittografato sia se il file è archiviato (ad esempio, in un account OneDrive) sia se è in transito (ad esempio, un messaggio di posta elettronica inviato).
 
 Le impostazioni di crittografia sono disponibili nel Centro sicurezza e conformità di Office 365 > pagina **Etichette** > scheda **Riservatezza** > **Crea un'etichetta**.
 
@@ -47,7 +47,7 @@ La crittografia utilizza Azure Rights Management (Azure RMS). Azure RMS usa i cr
 Per iniziare, è sufficiente impostare **Crittografia** su **Attiva**, quindi utilizzare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
 
 1. **Applicare la crittografia sia ai messaggi di posta elettronica che ai documenti oppure solo alla posta elettronica.** Se si sceglie solo la posta elettronica, i messaggi con l'etichetta saranno crittografati in Outlook, ma i documenti con l'etichetta non saranno crittografati nelle altre app, come Word o PowerPoint. 
-2. **Consentire l'accesso al contenuto etichettato in scadenza**, in una data specifica o dopo un determinato numero di giorni dall'applicazione dell'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. 
+2. **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. 
 3. **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
 
 ![Impostazioni di crittografia per etichette di riservatezza](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
@@ -58,7 +58,7 @@ Quando un utente apre un documento o un messaggio di posta elettronica protetto 
 
 Se non è stata impostata alcuna data di scadenza, il periodo di validità predefinito del contratto di licenza con l'utente finale per un tenant è di 30 giorni. Per la durata della licenza d'uso, all'utente non viene richiesto di ripetere l'autenticazione o specificare una nuova autorizzazione per il contenuto. Ciò consente all'utente di continuare ad aprire il documento o il messaggio di posta elettronica protetto senza una connessione Internet. Quando scade il periodo di validità della licenza d'uso, al successivo accesso al documento o al messaggio di posta elettronica protetto, l'utente deve ripetere l'autenticazione o specificare una nuova autorizzazione.
 
-Oltre alla riautenticazione, vengono valutati nuovamente l'appartenenza al gruppo utenti e i criteri. Questo significa che gli utenti potrebbero verificare diversi risultati di accesso per lo stesso documento o messaggio di posta elettronica se sono state apportate modifiche ai criteri o all'appartenenza al gruppo dall'ultimo accesso al contenuto.
+Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e i relativi criteri. Questo significa che, se dopo l'ultimo accesso, sono cambiati i criteri o il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
 
 Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](https://docs.microsoft.com/it-IT/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
