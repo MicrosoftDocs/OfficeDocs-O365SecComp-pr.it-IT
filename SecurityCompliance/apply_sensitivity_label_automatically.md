@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
-ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
+ms.openlocfilehash: a65b0848d6fb875366d35a0130ccc45cbe7adc75
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760767"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202787"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -56,7 +56,7 @@ Quando viene applicata automaticamente un'etichetta di riservatezza, l'utente ri
 
 Se si preferisce, invece di applicare automaticamente un'etichetta di riservatezza al contenuto, si può consigliare agli utenti di applicarla. Questa opzione offre agli utenti la flessibilità di accettare la classificazione e l'eventuale protezione associata o di chiudere il suggerimento, se l'etichetta non è adatta al documento o al messaggio di posta elettronica.
 
-Le etichette consigliate sono supportate in Word, PowerPoint ed Excel e richiedono l'installazione del client di assegnazione delle etichette unificato Azure Information Protection. Microsoft sta lavorando al supporto per le etichette consigliate in Outlook.
+Le etichette consigliate sono supportate in Word, PowerPoint ed Excel e richiedono l'installazione del client di etichettatura unificata di Azure Information Protection. Microsoft sta lavorando al supporto per le etichette consigliate in Outlook.
 
 ![Opzione per consigliare un'etichetta di riservatezza agli utenti](media/Sensitivity_labels_Recommended_label_option.png)
 

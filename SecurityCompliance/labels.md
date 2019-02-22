@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614500"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202767"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -229,6 +229,10 @@ Dopo l'applicazione di un'etichetta di conservazione a un elemento, è possibile
 ### <a name="office-365-groups"></a>Gruppi di Office 365
 
 Quando si pubblicano etichette di conservazione in un gruppo di Office 365, le etichette di conservazione vengono visualizzate sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web. L'esperienza di applicazione di un'etichetta di conservazione al contenuto è identica a quella illustrata in precedenza per posta elettronica e documenti.
+
+Per conservare il contenuto di un gruppo di Office 365 è necessario usare la posizione dei gruppi di Office 365. Anche se un gruppo di Office 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso di Exchange non includerà il contenuto nelle cassette postali del gruppo di Office 365.
+
+Inoltre, non è possibile usare il percorso di Exchange per includere o escludere una specifica cassetta postale del gruppo. Anche se il percorso di Exchange consente inizialmente di selezionare una cassetta postale del gruppo, quando si prova a salvare il criterio di conservazione, si riceverà un messaggio di errore che segnala che "RemoteGroupMailbox" non è una selezione valida per il percorso di Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Applicazione automatica di un'etichetta di conservazione in base alle condizioni
 
