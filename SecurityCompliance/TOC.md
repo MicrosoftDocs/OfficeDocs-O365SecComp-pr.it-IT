@@ -4,6 +4,7 @@
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ## [Preparare l'ambiente per i nuovi Centro sicurezza Microsoft 365 e Centro conformità Microsoft 365](microsoft-security-and-compliance.md)
 ## [Office 365 Secure Score](office-365-secure-score.md)
+## [Microsoft Secure Score](microsoft-secure-score.md)
 ## [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ## [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
 ## [Panoramica del Dashboard sulla sicurezza](security-dashboard.md)
