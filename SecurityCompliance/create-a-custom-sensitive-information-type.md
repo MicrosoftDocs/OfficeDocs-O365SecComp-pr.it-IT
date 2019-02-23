@@ -3,10 +3,9 @@ title: Creare un tipo di informazioni sensibili personalizzato
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: a9234b160d720a04ff6bfeac62899246500ec9b4
-ms.sourcegitcommit: e4291f751d6870d965dba191b4c8f10c5c4ce0b5
+ms.openlocfilehash: 4a94ae8c5fd2f4aed9df0d481fecaaaef8b08074
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26534027"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213856"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creare un tipo di informazioni sensibili personalizzato
 
