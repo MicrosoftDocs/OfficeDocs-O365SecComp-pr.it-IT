@@ -1,12 +1,12 @@
 ---
-title: Esportare i documenti da un gruppo di lavoro
+title: Esportare documenti da un set di lavoro
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c33d4ca6104cdcddf7c8dfaf0bedabb565f986cb
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d578dcd3d2c8c2eca6f39a9e36912d2f202ded8c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607939"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217596"
 ---
-# <a name="export-documents-from-a-working-set"></a><span data-ttu-id="803f3-102">Esportare i documenti da un gruppo di lavoro</span><span class="sxs-lookup"><span data-stu-id="803f3-102">Export documents from a working set</span></span>
+# <a name="export-documents-from-a-working-set"></a><span data-ttu-id="4b455-102">Esportare documenti da un set di lavoro</span><span class="sxs-lookup"><span data-stu-id="4b455-102">Export documents from a working set</span></span>
 
-<span data-ttu-id="803f3-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="803f3-103">Content coming soon.</span></span>
+<span data-ttu-id="4b455-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="4b455-103">Content coming soon.</span></span>
