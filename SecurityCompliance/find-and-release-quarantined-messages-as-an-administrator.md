@@ -1,7 +1,7 @@
 ---
 title: Individuazione e rilascio dei messaggi in quarantena come amministratore
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
+ms.collection:
+- M365-security-compliance
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003275"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219036"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Individuazione e rilascio dei messaggi in quarantena come amministratore
 
 In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Office 365 invia i messaggi in quarantena o perché sono stati identificati come posta indesiderata o perché corrispondevano a una regola di trasporto. 
   
-Utilizzare la protezione &amp; centro conformità anziché l'interfaccia di amministrazione di Exchange per eseguire una di queste attività, nonché visualizzare e gestire i messaggi che sono stati messi in quarantena in quanto contengono malware. Per ulteriori informazioni, vedere [i messaggi di posta elettronica quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Utilizzare il centro &amp; sicurezza e conformità invece dell'interfaccia di amministrazione di Exchange per completare una di queste attività, nonché visualizzare e utilizzare i messaggi inviati alla quarantena perché contengono malware. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 I messaggi in quarantena vengono elencati nella pagina **quarantena** di EAC. Per impostazione predefinita, i messaggi di posta indesiderata in quarantena vengono ordinati dal più recente al più vecchio nel campo **RICEVUTO**. Per ogni messaggio vengono visualizzati anche i valori di **MITTENTE**, **OGGETTO** e **SCADENZA**. È possibile ordinare in base a uno di tali valori facendo clic sull'intestazione corrispondente. Facendo clic su un'intestazione di colonna una seconda volta l'ordine viene invertito. Nella pagina **quarantena**, è possibile visualizzare al massimo 500 messaggi. 
   
@@ -37,7 +39,7 @@ I messaggi in quarantena vengono elencati nella pagina **quarantena** di EAC. Pe
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 <a name="sectionSection0"> </a>
 
-- È necessario disporre delle autorizzazioni prima che è possibile eseguire queste procedure. Per verificare le autorizzazioni necessarie, vedere la voce "Quarantena" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "Quarantine" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - È possibile rilasciare o segnalare più messaggi contemporaneamente nella pagina **quarantena**. In alternativa, è possibile creare uno script di Windows PowerShell remoto per eseguire questa operazione. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per cercare i messaggi e il cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per rilasciarli. 
     

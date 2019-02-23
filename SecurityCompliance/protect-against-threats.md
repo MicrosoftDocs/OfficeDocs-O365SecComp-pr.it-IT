@@ -5,28 +5,28 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: M365-security-compliance
-description: Informazioni su come Office 365 Enterprise consente di proteggere l'organizzazione da una serie di rischi, tra cui lo spoofing malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
-ms.openlocfilehash: 6caf891acb8c96d17a3aa1b4ffc222380ed9341b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Informazioni su come Office 365 Enterprise può aiutare a proteggere l'organizzazione da una serie di minacce, tra cui spoofing, malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
+ms.openlocfilehash: ca2bfda0403a1f482989977f7bc018bbd94afeb5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995137"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220486"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione contro le minacce in Office 365
 
-Con Office 365 Enterprise, è possibile proteggere l'organizzazione da una serie di rischi, tra cui lo spoofing malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati. Utilizzare le risorse in questa pagina per informazioni sulla protezione da minacce e operazioni da eseguire.
+Con Office 365 Enterprise, è possibile proteggere l'organizzazione da una serie di minacce, tra cui spoofing, malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati. Utilizzare le risorse in questa pagina per informazioni sulla protezione dalle minacce e sulle azioni che è possibile eseguire.
   
-## <a name="anti-spoofing"></a>Protezione anti-spoofing
+## <a name="anti-spoofing"></a>Anti-spoofing
 
-Se si utilizza un dominio personalizzato in Office 365, utili per arrestare truffe di false mittente dall'organizzazione, migliorare la protezione della posta elettronica e protezione reputazione del dominio.
+Se si utilizza un dominio personalizzato in Office 365, impedire la frode del mittente dall'organizzazione, migliorare la sicurezza della posta elettronica e proteggere la reputazione del dominio.
   
 - [Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
@@ -34,11 +34,11 @@ Se si utilizza un dominio personalizzato in Office 365, utili per arrestare truf
     
 - [Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
     
-## <a name="anti-spam-amp-anti-malware"></a>Protezione da posta indesiderata &amp; anti-malware
+## <a name="anti-spam-amp-anti-malware"></a>Protezione antimalware &amp; per la posta indesiderata
 
-Informazioni sulle punteggio protezione da posta indesiderata di Office 365, il filtro connessioni e acquisizione malware, incluse le impostazioni predefinite e la modalità di segnalazione messaggio di posta elettronica dannoso.
+Informazioni sul punteggio di protezione dalla posta indesiderata di Office 365, sul filtro delle connessioni e sull'acquisizione di malware, incluse le impostazioni predefinite e sul report di posta elettronica dannosa.
   
-- [Protezione da posta indesiderata &amp; protezione anti-malware](anti-spam-and-anti-malware-protection.md)
+- [Protezione anti- &amp; malware per la posta indesiderata](anti-spam-and-anti-malware-protection.md)
     
 - [Abilitare il controllo delle cassette postali in Office 365](enable-mailbox-auditing.md)
     
@@ -48,13 +48,13 @@ Informazioni sulle punteggio protezione da posta indesiderata di Office 365, il 
     
 ## <a name="advanced-threat-protection"></a>Protezione avanzata dalle minacce
 
-Configurare i criteri per gestire lo spoofing, la protezione da attacchi di phishing e rilevare URL dannosi o dei file di messaggi di posta elettronica con avanzate Threat Protection (degli strumenti di analisi).
+Configurazione dei criteri per la gestione dello spoofing, la protezione da attacchi di phishing e la cattura di URL o file dannosi nei messaggi di posta elettronica con Advanced Threat Protection (ATP).
   
-- [Informazioni su Office 365 degli strumenti di analisi](office-365-atp.md)
+- [Informazioni su Office 365 ATP](office-365-atp.md)
     
-- [Informazioni su Business intelligence di spoofing](learn-about-spoof-intelligence.md)
+- [Informazioni su spoofing Intelligence](learn-about-spoof-intelligence.md)
     
-- [Impostazione dei criteri anti-phishing](set-up-anti-phishing-policies.md)
+- [Impostare i criteri di anti-phishing](set-up-anti-phishing-policies.md)
     
 - [Configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
     
@@ -62,7 +62,7 @@ Configurare i criteri per gestire lo spoofing, la protezione da attacchi di phis
     
 ## <a name="encryption"></a>Crittografia
 
-Ottenere un'introduzione alla crittografia, impostare i criteri di gestione dei diritti e la crittografia di posta elettronica e configurare le impostazioni di crittografia aggiuntive. Ottenere informazioni dettagliate sul certificato radice utilizzato per i server di posta per Office 365.
+Ottenere un innesco alla crittografia, impostare i criteri di gestione dei diritti e la crittografia della posta elettronica e configurare altre impostazioni di crittografia. Ottenere informazioni dettagliate sul certificato radice utilizzato dai server di posta elettronica per Office 365.
   
 - [Informazioni sulla crittografia in Office 365](encryption.md)
     
@@ -70,40 +70,40 @@ Ottenere un'introduzione alla crittografia, impostare i criteri di gestione dei 
     
 - [Office 365 Message Encryption (OME)](ome.md)
     
-- [Implementare portare il proprio codice (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
+- [Implementare Bring your own key (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
-## <a name="managing-devices-amp-apps"></a>Gestione di dispositivi &amp; App
+## <a name="managing-devices-amp-apps"></a>Gestione delle &amp; app per dispositivi
 
-Monitorare e controllare l'accesso di dispositivi mobili come i dati di Office 365, escludere o approvare App per dispositivi mobili in uso nell'organizzazione.
+Monitorare e controllare in che modo i dispositivi mobili accedono ai dati di Office 365 e Ban o approva le app per dispositivi mobili in uso nella propria organizzazione.
   
 - [Creazione e distribuzione dei criteri di sicurezza del dispositivo](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
 - [Gestire le autorizzazioni delle app con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
-## <a name="threat-intelligence"></a>Business intelligence di rischio
+## <a name="threat-intelligence"></a>Intelligence per le minacce
 
-Identificare, monitorare e valutare gli attacchi di tipo, rapidamente indirizzo le minacce e utilizzando le informazioni e le conoscenze disponibili per impedire attacchi di tipo.
+Identificare, monitorare e comprendere gli attacchi e rispondere rapidamente alle minacce utilizzando le informazioni e le conoscenze disponibili per prevenire gli attacchi.
   
-- [Panoramica di Business Intelligence di rischio di Office 365](office-365-ti.md)
+- [Ottenere una panoramica di Office 365 Threat Intelligence](office-365-ti.md)
     
 - [Introduzione a Office 365 Threat Intelligence](get-started-with-ti.md)
     
 ## <a name="privileged-access-management"></a>Gestione accessi con privilegi
 
-Proteggere l'organizzazione da violazioni che possono utilizzare un account con privilegi di amministratore esistenti con la condizione accesso ai dati riservati o l'accesso alle impostazioni di configurazione critico. Dopo l'abilitazione della gestione dei privilegi di accesso, gli utenti dovranno richiedere l'accesso in tempo per eseguire attività con privilegi elevate e privilegiata attraverso un flusso di lavoro di approvazione altamente con ambito e specifici.
+Proteggere l'organizzazione da violazioni che possono utilizzare account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. Dopo aver abilitato la gestione degli accessi con privilegi, gli utenti dovranno richiedere l'accesso just-in-time per completare le attività elevate e privilegiate tramite un flusso di lavoro di approvazione estremamente ambito e con un limite di tempo.
   
-- [Viene fornita una panoramica dei privilegi accedere a gestione](privileged-access-management-overview.md)
+- [Ottenere una panoramica della gestione degli accessi con privilegi](privileged-access-management-overview.md)
     
-- [Guida introduttiva a privilegi accedere a gestione](privileged-access-management-configuration.md)
+- [Introduzione alla gestione degli accessi con privilegi](privileged-access-management-configuration.md)
 
 ## <a name="additional-options"></a>Opzioni aggiuntive
 
-È possibile ottenere ulteriori informazioni sui processi che aiutano a Office 365 protette contro le minacce e le tecnologie Microsoft correlate.
+Ottenere ulteriori informazioni sulle tecnologie e i processi Microsoft correlati che consentono di proteggere Office 365 dalle minacce.
   
 - [Informazioni su Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [Informazioni su Azure cassaforte chiave](https://docs.microsoft.com/azure/key-vault/)
+- [Informazioni su Vault Key di Azure](https://docs.microsoft.com/azure/key-vault/)
     
-- [Informazioni sull'isolamento tenant](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
+- [Informazioni sull'isolamento dei tenant](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
     
 

@@ -1,39 +1,39 @@
 ---
-title: Numero di identificazione dell'Unione europea nazionale
+title: Numero di identificazione nazionale dell'Unione europea
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: Questo argomento viene illustrato quali un criterio di criterio DLP perdita di dati Cerca qualora venga rilevato un tipo di informazione sensibile numero identificativo nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
-ms.openlocfilehash: 29d2126b937ff46039284a74eb2a84f2ebbacb41
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
+ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530741"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220636"
 ---
-# <a name="eu-national-identification-number"></a>Numero di identificazione dell'Unione europea nazionale
+# <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
-Questo argomento viene illustrato quali un criterio di criterio DLP perdita di dati Cerca qualora venga rilevato un tipo di informazione sensibile numero identificativo nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
+In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
   
 ## <a name="austria"></a>Austria
 
 ### <a name="format"></a>Formato
 
-Una combinazione di lettere, cifre e caratteri speciali 24
+Combinazione A 24 caratteri di lettere, cifre e caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
 24 caratteri:
   
--  22 lettere (maiuscole o minuscole), cifre, barre rovesciate, barre o segni più 
+-  22 lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre o segni più 
     
-- Due lettere (maiuscole o minuscole), cifre, barre rovesciate, barre, segni più o segni di uguale
+- Due lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre, segni più o segni uguali
     
 ### <a name="checksum"></a>Checksum
 
@@ -43,9 +43,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_austria_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_austria_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_austria_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_austria_eu_national_id_card` parola chiave from. 
     
 ```
  
@@ -61,7 +61,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
-numero di identificazione austriaco
+numero d'identità austriaco
   
 numero di identità nazionale
   
@@ -70,29 +70,29 @@ numero di identità
 
 national id
   
-personalausweis italiana österreich
+Personalausweis Republik Österreich
   
 ## <a name="belgium"></a>Belgio
 
-Per ulteriori informazioni, vedere la sezione "Belgio nazionale Number" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero nazionale belga" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgaria
 
 ### <a name="format"></a>Formato
 
-Dieci cifre senza spazi e i delimitatori
+Dieci cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre senza spazi e i delimitatori
+Dieci cifre senza spazi e delimitatori
   
 -  Sei cifre che corrispondono alla data di nascita (AAMMGG) 
     
-- Due cifre che corrispondano all'ordine di nascita
+- Due cifre che corrispondono all'ordine di nascita
     
-- Una cifra che corrisponde al sesso: un numero pari di maschile e una cifra dispari per femmina
+- Una cifra che corrisponde al sesso: una cifra pari per il maschio e una cifra dispari per la femmina
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -102,13 +102,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_national_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_bulgaria_national_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_bulgaria_national_number` viene trovato. 
+- Viene trovata una `Keywords_bulgaria_national_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_national_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_bulgaria_national_number` trova contenuto che corrisponde al modello. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -126,11 +126,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
-egn
+EGN
   
-egn #
+EGN
   
-Bulgaro numero nazionale
+numero nazionale bulgaro
   
 numero nazionale
   
@@ -139,37 +139,37 @@ social security number
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 nationalnumber
   
-bnn #
+BNN
   
-bnn
+BNN
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
-ЕДИНЕН ГРАЖДАНСКИ НОМЕР
+единен граждански Номер
   
-edinen grazhdanski nomer
+grazhdanski nomer
   
-ЕГН
+егн
   
-ЕГН #
+егн #
   
 ## <a name="croatia"></a>Croazia
 
-Per ulteriori informazioni, vedere la sezione "Croazia identità Number" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di identità della Croazia" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Cipro
 
 ### <a name="format"></a>Formato
 
-Dieci cifre senza spazi e i delimitatori
+Dieci cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -183,9 +183,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_cyprus_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_cyprus_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_cyprus_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_cyprus_eu_national_id_card` parola chiave from. 
     
 ```
  
@@ -201,41 +201,41 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
-numero di carta d'identità
+numero di carta di identità
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
-numero id personale
+numero ID personale
   
-numero di carta d'identità
+numero di carta di identità
   
-ΤΑΥΤΟΤΗΤΑΣ
+ταυτοτητασ
   
 ## <a name="czech-republic"></a>Repubblica Ceca
 
-Per ulteriori informazioni, vedere la sezione "Numero identità nazionale ceco" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di identità nazionale ceco" in [quello che i tipi di informazioni riservate cercano](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Danimarca
 
-Per ulteriori informazioni, vedere la sezione "Danimarca Personal Identification Number" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di identificazione personale danese" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estonia
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
 11 cifre:
   
-- Una cifra che corrisponde al sesso e century di nascita (maschile numero dispari, numero pari femmina; 1-2: 19 century; 3 e 4: 20 century; 5-6: century ventunesimo)
+- Una cifra che corrisponde al sesso e al secolo di nascita (numero dispari maschio, anche numero femmina; 1-2: XIX secolo; 3-4: XX secolo; 5-6: XXI secolo)
     
 - Sei cifre che corrispondono alla data di nascita (AAMMGG)
     
-- Tre cifre che corrispondono a un numero di serie che separa le persone nati nella stessa data
+- Tre cifre che corrispondono a un numero di serie che separa le persone nate nella stessa data
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -245,13 +245,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_estonia_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_estonia_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -274,11 +274,11 @@ codice di identificazione personale
   
 numero di identificazione personale
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero nazionale
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
@@ -286,23 +286,23 @@ IK
   
 isikukood
   
-ID kaart
+ID-kaart
   
 ## <a name="finland"></a>Finlandia
 
-Per ulteriori informazioni, vedere la sezione "ID nazionale Finlandia" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Finlandia National ID" in [quello che i tipi di informazioni riservate cercano](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>Francia
 
-Per ulteriori informazioni, vedere la sezione "Francia nazionale carta d'identità (CNI)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Francia National ID Card (CNI)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Germania
 
-Per ulteriori informazioni, vedere la sezione "Numero di carta d'identità Germania" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Germania identità numero di carta" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
-Per ulteriori informazioni, vedere la sezione "Grecia carta d'identità nazionale" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Grecia National ID Card" in [quello che cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Ungheria
 
@@ -314,13 +314,13 @@ Per ulteriori informazioni, vedere la sezione "Grecia carta d'identità nazional
 
 11 cifre:
   
--  Una cifra che corrisponde al sesso (maschile 1, 2 femmina, altri numeri sono inoltre disponibili per i cittadini nati prima di 1900 o cittadini con cittadinanza double) 
+-  Una cifra che corrisponde al sesso (1-maschio, 2-Femmina, altri numeri sono possibili anche per i cittadini nati prima del 1900 o cittadini con doppia cittadinanza) 
     
 - Sei cifre che corrispondono alla data di nascita (AAMMGG)
     
 - Tre cifre che corrispondono a un numero di serie
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -330,13 +330,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_hungary_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_hungary_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -359,7 +359,7 @@ numero di identificazione personale
 identification number
 
   
-numero id personale
+numero ID personale
   
 személyazonosító igazolvány
   
@@ -373,21 +373,21 @@ Una combinazione di nove caratteri di lettere, cifre e uno spazio nel modello sp
 
 Una combinazione di nove caratteri di lettere, cifre e uno spazio nel modello specificato
   
-Dal 01 gennaio 2013 per il momento:
+Dal 01 gennaio 2013 a oggi:
   
 -  Sette cifre 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 - Uno spazio o la lettera maiuscola "W" (distinzione tra maiuscole e minuscole)
     
-Prima di 01 gennaio 2013:
+Prima del 1 ° gennaio 2013:
   
 -  Sette cifre 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
-- Uno spazio o una lettera maiuscola (maiuscole/minuscole)
+- Uno spazio o una lettera maiuscola (distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -397,13 +397,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione Trova contenuto corrispondente al formato.
+- La funzione trova contenuto che corrisponde al modello.
     
-- È possibile trovare una parola chiave da.
+- Viene trovata una parola chiave from.
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione Trova contenuto corrispondente al formato.
+- La funzione trova contenuto che corrisponde al modello.
     
 ```
  
@@ -422,22 +422,22 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
-numero di servizio della pubblica personali
+numero di servizio pubblico personale
   
-PPS non
+PPS No
   
-numero di assicurazione sociale e dei ricavi
+reddito e numero di previdenza sociale
   
-RSI non
+RSI No
   
 numero di identificazione personale
   
 identification number
 
   
-numero id personale
+numero ID personale
   
-uimhir phearsanta seirbhíse poiblí
+uimhir phearsanta Seirbhíse poiblí
   
 uimh. PSP
   
@@ -445,25 +445,25 @@ uimh. PSP
 
 ### <a name="format"></a>Formato
 
-Una combinazione di 16 caratteri di lettere e cifre nel formato specificato
+Una combinazione di 16 caratteri di lettere e cifre nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Una combinazione di 16 caratteri di lettere e cifre:
+Combinazione di lettere e cifre di 16 caratteri:
   
-- Tre lettere che corrispondono ai primi tre consonanti nel nome del gruppo
+- Tre lettere che corrispondono alle prime tre consonanti del nome di famiglia
     
-- Tre lettere che corrispondono al primo, terza e quarta consonanti in nome
+- Tre lettere che corrispondono alla prima, terza e quarta consonante del primo nome
     
-- Due cifre che corrispondono all'ultimo cifre dell'anno di nascita
+- Due cifre che corrispondono alle ultime cifre dell'anno di nascita
     
-- Una lettera corrispondente per la lettera per il mese di nascita, ovvero lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo lettere da A F, H, L, M, P, R per T (in questo modo, gennaio corrisponde a un e ottobre è R)
+- Una lettera che corrisponde alla lettera per il mese di nascita: le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da a a E, H, L, M, P, R e T (pertanto, gennaio è A e ottobre è R)
     
-- Due cifre che corrispondono al giorno del mese di nascita, per poter distinguere tra i due sessi, 40 viene aggiunto al giorno di nascita donne
+- Due cifre che corrispondono al giorno del mese di nascita, al fine di distinguere tra i sessi, 40 viene aggiunto al giorno di nascita per le donne
     
-- Quattro cifre che corrisponde all'indicativo di località specifico comune dove nascita della persona (livello nazionale codici vengono utilizzati per i paesi esterni)
+- Quattro cifre che corrispondono al codice di area specifico per il comune in cui è nata la persona (i codici a livello nazionale vengono utilizzati per i paesi esteri)
     
-- Una cifra parità
+- Una cifra di parità
     
 ### <a name="checksum"></a>Checksum
 
@@ -473,13 +473,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_italy_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_italy_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -501,15 +501,15 @@ codice personale
   
 numero di codice personale
   
-numero dei certificati personali
+numero di certificato personale
   
 codice fiscale
   
 personalcodeno #
   
-numero id personale
+numero ID personale
   
-codice id personale
+codice ID personale
   
 codice personale
   
@@ -517,9 +517,9 @@ Numero certificato personale
   
 numero personale
   
-numero id personale
+numero ID personale
   
-codice id personale
+codice ID personale
   
 codice fiscale
   
@@ -527,19 +527,19 @@ codice fiscale
 
 ### <a name="format"></a>Formato
 
-11 cifre e un segno meno nel formato specificato
+11 cifre e un trattino nel formato specificato
   
 ### <a name="pattern"></a>Modello
 
-11 cifre e un segno meno:
+11 cifre e un trattino:
   
--  Sei cifre che corrispondono alla data di nascita (DDMMYY) 
+-  Sei cifre che corrispondono alla data di nascita (GGMMAA) 
     
 - Una lineetta
     
-- Una cifra che corrisponde al century di nascita ("0" per century diciannovesimo, per century ventesimo "1" e "2" per century ventunesimo)
+- Una cifra che corrisponde al secolo di nascita ("0" per il XIX secolo, "1" per il XX secolo e "2" per il XXI secolo)
     
-- Quattro cifre, generati in modo casuale
+- Quattro cifre, generate in modo casuale
     
 ### <a name="checksum"></a>Checksum
 
@@ -549,13 +549,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_latvia_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_latvia_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -577,33 +577,33 @@ codice personale
   
 numero di codice personale
   
-numero dei certificati personali
+numero di certificato personale
   
 personalcodeno #
   
-numero id personale
+numero ID personale
   
-codice id personale
+codice ID personale
   
-persone kods
+personas Kods
   
 ## <a name="lithuania"></a>Lituania
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-11 cifre senza spazi e i delimitatori:
+11 cifre senza spazi e delimitatori:
   
-- Una cifra che corrisponde al sesso della persona e century di nascita
+- Una cifra corrispondente al sesso e al secolo della nascita della persona
     
 -  Sei cifre che corrispondono alla data di nascita (AAMMGG) 
     
 - Tre cifre che corrispondono al numero di serie della data di nascita
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -613,13 +613,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_lithuania_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_lithuania_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -638,19 +638,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
-codice numerico personali
+codice numerico personale
   
 numero di identificazione univoco
   
-numero del servizio cittadini
+numero di servizio Citizen
   
-numero di identificazione univoco
+numero di identità univoco
   
 uniqueidentityno #
   
 codice personale.
   
-asmeninis skaitmeninis kodas
+Asmeninis skaitmeninis kodas
   
 unikalus identifikavimo numeris
   
@@ -658,25 +658,25 @@ piliečio paslaugos numeris
   
 unikalus identifikavimo kodas
   
-kodas asmens.
+Asmens kodas.
   
 ## <a name="luxemburg"></a>Lussemburgo
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
 11 cifre
   
-- Una cifra che corrisponde al sesso della persona e century di nascita
+- Una cifra corrispondente al sesso e al secolo della nascita della persona
     
 -  Sei cifre che corrispondono alla data di nascita (AAMMGG) 
     
 - Tre cifre che corrispondono al numero di serie della data di nascita
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -686,9 +686,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_luxemburg_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_luxemburg_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_luxemburg_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_luxemburg_eu_national_id_card` parola chiave from. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -703,37 +703,37 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
-id personale
+ID personale
   
-numero id personale
+numero ID personale
   
 personalidno #
   
-numero id univoco
+numero ID univoco
   
 personalidnumber #
   
-chiave id univoci
+chiave ID univoco
   
-codice id personale
+codice ID personale
   
 uniqueidkey #
   
-singolo codice
+codice singolo
   
-id singoli
+ID individuale
   
-id eindeutige-nummer
+ID eindeutige-Nummer
   
-id eindeutige
+ID eindeutige
   
 ID personnelle
   
-numéro identificazione personale
+personale di Numéro d'identification
   
 idpersonnelle #
   
-persönliche identifikationsnummer
+persönliche Identifikationsnummer
   
 eindeutigeid #
   
@@ -759,13 +759,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_malta_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_malta_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -784,23 +784,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
-codice numerico personali
+codice numerico personale
   
 numero di identificazione univoco
   
-numero del servizio cittadini
+numero di servizio Citizen
   
-numero di identificazione univoco
+numero di identità univoco
   
 uniqueidentityno #
   
-kodiċi numerali personali
+Kodiċi numerai personali
   
 numru ta ' identifikazzjoni uniku
   
-numru attività servizz taċ-ċittadin
+numru TAS-Servizz taċ-ċittadin
   
-numru ta' identità uniku
+numru ta ' identità uniku
   
 ## <a name="netherlands"></a>Paesi Bassi
 
@@ -820,13 +820,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- È possibile trovare una parola chiave da.
+- Viene trovata una parola chiave from.
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -845,21 +845,21 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
-codice numerico personali
+codice numerico personale
   
 numero di identificazione univoco
   
-numero del servizio cittadini
+numero di servizio Citizen
   
-numero di identificazione univoco
+numero di identità univoco
   
 uniqueidentityno #
   
-bsn
+BSN
   
-bsn #
+BSN
   
-codice numerieke persoonlijke
+codice Numerieke di persoonlijke
   
 uniek identificatienummer
   
@@ -869,17 +869,17 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>Polonia
 
-Per ulteriori informazioni, vedere la sezione "Polonia nazionale ID (PESEL)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Poland National ID (PESEL)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portogallo
 
-Per ulteriori informazioni, vedere la sezione "Portogallo cittadini scheda numero" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Portugal Citizen Card Number" in [quello che i tipi di informazioni riservate cercano](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Romania
 
 ### <a name="format"></a>Formato
 
-13 cifre senza spazi e i delimitatori
+13 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -893,13 +893,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_romania_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_romania_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_romania_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_romania_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -918,37 +918,37 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
-codice numerico personali
+codice numerico personale
   
 numero di identificazione univoco
   
-cnp
+CNP
   
-cnp #
+CNP
   
 aggiungere
   
-PIN #
+pin
   
-numero di assicurazione
+numero assicurativo
   
 insurancenumber #
   
-numero di identificazione univoco
+numero di identità univoco
   
 uniqueidentityno #
   
 Cod numerico personale
   
-Cod identificare personali
+Cod identificare Personal
   
-identificare unic Cod
+Cod Unic identificare
   
-număr unic personali
+Număr personale Unic
   
-număr identitate
+Număr identitate
   
-identificare număr personali
+Număr identificare Personal
   
 număridentitate #
   
@@ -960,11 +960,11 @@ numărpersonalunic #
 
 ### <a name="format"></a>Formato
 
-Dieci cifre che contiene una barra rovesciata
+Dieci cifre contenenti una barra rovesciata
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre che contiene una barra rovesciata:
+Dieci cifre che contengono una barra rovesciata:
   
 ### <a name="checksum"></a>Checksum
 
@@ -974,13 +974,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovakia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovakia_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_slovakia_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovakia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -1001,7 +1001,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di nascita
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero di identificazione personale
   
@@ -1010,13 +1010,13 @@ social security number
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 numero nazionale
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
@@ -1034,15 +1034,15 @@ rodne cislo
   
 ### <a name="pattern"></a>Modello
 
-13 cifre nel formato specificato:
+13 cifre nel modello specificato:
   
--  Sette cifre che corrispondono alla data di nascita (DDMMLLL) dove "LLL" corrisponde all'ultima tre cifre dell'anno di nascita 
+-  Sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita 
     
 - Due cifre che corrispondono all'area di nascita
     
-- Tre cifre che corrispondono a una combinazione di sesso e il numero di serie per le persone nati nello stesso giorno (000-499 per maschile) e 500 e 999 per femmina
+- Tre cifre che corrispondono a una combinazione di genere e numero di serie per le persone nate nello stesso giorno (000-499 per il maschio e 500-999 per le femmine)
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -1052,13 +1052,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovenia_eu_national_id_card` viene trovato. 
+- Viene trovata una `Keywords_slovenia_eu_national_id_card` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```
  
@@ -1077,17 +1077,17 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
-codice numerico personali
+codice numerico personale
   
 numero di identificazione univoco
   
-numero univoco di registrazione
+numero di registrazione univoco
   
-numero di identificazione univoco
+numero di identità univoco
   
 uniqueidentityno #
   
-numero univoco cittadini master
+numero di cittadino Master univoco
   
 edinstvena identifikacijska številka
   
@@ -1109,7 +1109,7 @@ Sette cifre seguite da un carattere
   
 - Sette cifre
     
-- Una cifra o lettere (maiuscole o minuscole)
+- Una cifra o una lettera (senza distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -1119,9 +1119,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_spain_eu_national_id_card` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_spain_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_spain_eu_national_id_card"` viene trovato. 
+- Viene trovata una `Keywords_spain_eu_national_id_card"` parola chiave from. 
     
 ```
  
@@ -1139,41 +1139,41 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 DNI
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero di identità nazionale
   
-numero di assicurazione
+numero assicurativo
   
 numero di identificazione personale
   
 identità nazionale
   
-identità personale non
+identità personale No
   
-numero di identificazione univoco
+numero di identità univoco
   
 nationalidno #
   
-UniqueID #
+UniqueId
   
-DNI #
+DNI
   
 nationalid #
   
-NIE #
+nie
   
-NIE
+nie
   
 nienúmero #
   
-número NIE
+nie número
   
-documento nacional de identidad
+documento Nacional de Identidad
   
-identidad único
+Identidad único
   
-número nacional identidad
+número Nacional Identidad
   
 DNI número
   
@@ -1183,9 +1183,9 @@ identidadúnico #
   
 ## <a name="sweden"></a>Svezia
 
-Per ulteriori informazioni, vedere la sezione "Svezia-identificativo nazionale" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Sweden National ID" per [individuare i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 

@@ -1,75 +1,75 @@
 ---
-title: Gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità
+title: Gestire i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
-description: Utilizzare la protezione di Office 365 &amp; centro conformità di creazione di esenzioni eDiscovery e di accesso e la gestione dei casi eDiscovery nell'organizzazione.
-ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: Utilizzare il Centro sicurezza &amp; e conformità di Office 365 per creare le esenzioni di eDiscovery e per accedere e gestire i casi di eDiscovery nell'organizzazione.
+ms.openlocfilehash: a3149110a39fb28bf7fa2f4fe5e4f09b2461cce1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522307"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214506"
 ---
-# <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità
+# <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gestire i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365
 
-È possibile utilizzare casi di eDiscovery in Office 365 Security &amp; centro conformità per controllare chi può creare, accedere e gestire casi di eDiscovery nell'organizzazione. Se l'organizzazione dispone di una sottoscrizione a Office 365 E5, è possibile utilizzare anche casi di eDiscovery per analizzare i risultati di ricerca tramite Office 365 avanzate eDiscovery.
+È possibile utilizzare i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365 per controllare gli utenti autorizzati a creare, accedere e gestire i casi di eDiscovery nell'organizzazione. Se l'organizzazione dispone di un abbonamento a Office 365 E5, è anche possibile utilizzare i casi di eDiscovery per analizzare i risultati della ricerca tramite Office 365 Advanced eDiscovery.
   
-Un caso eDiscovery consente di aggiungere membri a un caso, controllare i tipi di azioni che membri maiuscole specifici possono eseguire, impostare un blocco sui percorsi di contenuti rilevanti per una controversia legale e associare più ricerche di contenuto a un singolo case. È anche possibile esportare i risultati di qualsiasi ricerca del contenuto associato a un caso o preparare i risultati della ricerca per l'analisi di eDiscovery avanzate. casi di eDiscovery sono un modo efficace per limitare chi ha accesso a ricerche di contenuto e i risultati di ricerca per una causa legale dell'organizzazione.
+Un caso di eDiscovery consente di aggiungere membri a un caso, di controllare quali tipi di azioni possono essere eseguiti dai membri di un caso specifico, di applicare un blocco ai percorsi di contenuto rilevanti per un caso legale e di associare più ricerche di contenuto a un singolo caso. È inoltre possibile esportare i risultati di una ricerca di contenuto associata a un caso oppure preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. i casi di eDiscovery sono un ottimo metodo per limitare chi ha accesso alle ricerche di contenuto e ai risultati della ricerca per uno specifico caso legale nell'organizzazione.
   
-Utilizzare il flusso di lavoro seguente per configurare e utilizzare casi di eDiscovery in sicurezza &amp; eDiscovery centro conformità e avanzate.
+Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDiscovery &amp; nel centro sicurezza e eDiscovery avanzato.
   
 [Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso](manage-ediscovery-cases.md#step1_1)
   
-[Passaggio 2: Creare un nuovo caso](manage-ediscovery-cases.md#step2_1)
+[Passaggio 2: creare un nuovo caso](manage-ediscovery-cases.md#step2_1)
   
-[Passaggio 3: Aggiungere membri a un caso](manage-ediscovery-cases.md#step2a_1)
+[Passaggio 3: aggiungere membri a un caso](manage-ediscovery-cases.md#step2a_1)
   
-[Passaggio 4: Posto i percorsi di contenuti in attesa](manage-ediscovery-cases.md#step3_1)
+[Passaggio 4: posizionare i percorsi di contenuto in attesa](manage-ediscovery-cases.md#step3_1)
   
-[Passaggio 5: Creare ed eseguire una ricerca del contenuto associato a un caso](manage-ediscovery-cases.md#step4_1)
+[Passaggio 5: creare ed eseguire una ricerca di contenuto associata a un caso](manage-ediscovery-cases.md#step4_1)
   
-[Passaggio 6: Esportare i risultati di ricerca del contenuto associato a un caso](manage-ediscovery-cases.md#step5_1)
+[Passaggio 6: esportare i risultati di una ricerca di contenuto associata a un caso](manage-ediscovery-cases.md#step5_1)
   
-[Passaggio 7: Preparazione risultati di ricerca per eDiscovery avanzate](manage-ediscovery-cases.md#step7_1)
+[Passaggio 7: preparare i risultati della ricerca per Advanced eDiscovery](manage-ediscovery-cases.md#step7_1)
   
-[Passaggio 8: Viene eseguito il caso di eDiscovery avanzate](manage-ediscovery-cases.md#gotoAeD_1)
+[Passaggio 8: passare alla causa in Advanced eDiscovery](manage-ediscovery-cases.md#gotoAeD_1)
   
-[(Facoltativo) Passaggio 9: Chiudere un caso](manage-ediscovery-cases.md#closecase_1)
+[Optional Passaggio 9: chiudere un caso](manage-ediscovery-cases.md#closecase_1)
   
-[(Facoltativo) Passaggio 10: Aprire nuovamente un caso chiuso](manage-ediscovery-cases.md#reopencase_1)
+[Optional Passaggio 10: riaprire un caso chiuso](manage-ediscovery-cases.md#reopencase_1)
   
 [Ulteriori informazioni](manage-ediscovery-cases.md#moreinfo_1)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 <a name="step1_1"> </a>
 
-Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscovery relative agli utenti in modo che è possibile aggiungerli a un caso eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnato il ruolo di gestione dei ruoli) in Office 365 Security &amp; centro conformità per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati eDiscovery in sicurezza &amp; centro conformità.
+Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate relative a eDiscovery alle persone, in modo da poterle aggiungere a un caso di eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnati al ruolo di gestione dei ruoli) nel centro sicurezza &amp; e conformità di Office 365 per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati a eDiscovery nel &amp; Centro sicurezza e conformità.
   
-- **Revisore** Questo gruppo di ruoli disponga delle autorizzazioni più restrittive eDiscovery correlati. Membri di questo gruppo possono vedersi e aprire l'elenco dei casi nella pagina di **eDiscovery** in sicurezza solo &amp; centro conformità che sono membri di. Non possono creare casi, aggiungere membri a un caso, creazione di esenzioni, creare ricerche, esportare i risultati della ricerca o preparare i risultati di eDiscovery avanzate. Tuttavia, i membri possono accedere casi di eDiscovery avanzate per eseguire attività di analisi. 
+- **Revisione** di un revisore Questo gruppo di ruoli ha le autorizzazioni più restrittive relative a eDiscovery. I membri di questo gruppo possono visualizzare e aprire solo l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza &amp; e conformità di cui sono membri. Non è possibile creare casi, aggiungere membri a un caso, creare esenzioni, creare ricerche, esportare i risultati della ricerca o preparare i risultati per Advanced eDiscovery. Tuttavia, i membri possono accedere ai casi in Advanced eDiscovery per eseguire attività di analisi. 
     
-- **gestione di eDiscovery** Membri di questo gruppo possono creare e gestire casi di eDiscovery. Vengono aggiungere e rimuovere membri, posizionare il contenuto percorsi conservazione, creare e modificare ricerche del contenuto associato a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi di eDiscovery avanzate. Esistono due sottogruppi di questo gruppo di ruoli. La differenza tra questi sottogruppi si basa sull'ambito.
+- **eDiscovery Manager** I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery. Possono aggiungere e rimuovere membri, inserire posizioni di contenuto in attesa, creare e modificare le ricerche di contenuto associate a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. Sono presenti due gruppi secondari in questo gruppo di ruoli. La differenza tra questi sottogruppi è basata sull'ambito.
     
-  - **gestione di eDiscovery** Visualizzare e gestire casi di eDiscovery creano o membri di. Se un altro eDiscovery Manager crea un caso ma non aggiungere un secondo eDiscovery Manager come membro di tale caso, eDiscovery secondo Manager non sarà in grado di visualizzare o aprire il caso nella pagina di **eDiscovery** in sicurezza &amp; centro conformità. eDiscovery Manager possono accedere anche i casi di eDiscovery avanzate per eseguire attività di analisi. 
+  - **eDiscovery Manager** È possibile visualizzare e gestire i casi di eDiscovery in cui creano o sono membri di. Se un altro Manager di eDiscovery crea un caso ma non aggiunge un secondo Manager di eDiscovery come membro del caso, il secondo responsabile di eDiscovery non sarà in grado di visualizzare o aprire il caso nella pagina **eDiscovery** nel &amp; Centro sicurezza e conformità. i responsabili di eDiscovery possono inoltre accedere ai propri casi in Advanced eDiscovery per eseguire attività di analisi. 
     
-  - **amministratore di eDiscovery** Eseguire tutte le attività di gestione dei casi che può eseguire una ricerca eDiscovery Manager. Inoltre, un'amministratore di eDiscovery può:
+  - **amministratore di eDiscovery** È in grado di eseguire tutte le attività di gestione dei casi che un Manager di eDiscovery può eseguire. Inoltre, un amministratore di eDiscovery può:
     
   - Visualizzare tutti i casi elencati nella pagina **eDiscovery**. 
     
-  - Gestire un caso di eDiscovery nell'organizzazione dopo aggiungersi come membro del case.
+  - Gestire qualsiasi caso di eDiscovery nell'organizzazione dopo che si è aggiunto come membro del caso.
     
-  - Eseguire attività amministrative di eDiscovery avanzate, ad esempio elaborazione dei dati maiuscole per l'analisi, caso le impostazioni di configurazione ed esportazione di dati da eDiscovery avanzate. Perché la persona che un'amministratore per la protezione di eDiscovery &amp; centro conformità viene aggiunto automaticamente come un amministratore di eDiscovery avanzate.
+  - Eseguire le attività amministrative in Advanced eDiscovery, ad esempio i dati dei casi di elaborazione per l'analisi, la configurazione delle impostazioni dei casi e l'esportazione di dati da Advanced eDiscovery. Ciò è dovuto al fatto che una persona che è un amministratore di &amp; eDiscovery nel centro sicurezza e conformità viene aggiunta automaticamente come amministratore in Advanced eDiscovery.
     
     Vedere la sezione [More information](manage-ediscovery-cases.md#moreinfo_1) per conoscere i motivi per cui si potrebbe voler diventare un amministratore di eDiscovery nell'organizzazione. 
     
 > [!IMPORTANT]
-> Se una persona non è un membro di uno di questi gruppi di ruoli correlati eDiscovery o non è un membro del gruppo di ruoli che è assegnato il ruolo revisore, è possibile aggiungere come membro di un caso eDiscovery. 
+> Se una persona non è un membro di uno di questi gruppi di ruoli correlati a eDiscovery o non è un membro di un gruppo di ruoli a cui è assegnato il ruolo Reviewer, non è possibile aggiungerli come membri di un caso di eDiscovery. 
   
  **Per assegnare autorizzazioni di eDiscovery:**
   
@@ -77,463 +77,463 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate eDiscov
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. In sicurezza &amp; centro conformità, fare clic su **autorizzazioni**e quindi eseguire una delle opzioni seguenti in base alle autorizzazioni eDiscovery che si desidera assegnare.
+3. Nel centro sicurezza &amp; e conformità fare clic su **autorizzazioni**e quindi eseguire una delle operazioni seguenti in base alle autorizzazioni di eDiscovery che si desidera assegnare.
     
-  - Per assegnare autorizzazioni revisore, selezionare il gruppo di ruolo **revisore** e quindi fare clic su **Edit**accanto a **membri** . Fare clic su **Seleziona membri**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Add** selezionare l'utente che si desidera aggiungere al gruppo di ruoli revisore e quindi fare clic su **Aggiungi**.
+  - Per assegnare le autorizzazioni per il revisore **** , selezionare il gruppo di ruoli reviewer e quindi fare clic su **modifica**accanto a **membri** . Fare clic su **Scegli membri**, fare](media/ITPro-EAC-AddIcon.gif) **** clic su ![Aggiungi icona Aggiungi selezionare l'utente che si desidera aggiungere al gruppo di ruoli reviewer e quindi fare clic su **Aggiungi**.
     
-  - Per assegnare le autorizzazioni di gestione di eDiscovery, selezionare il gruppo di ruoli di **gestione di eDiscovery** e quindi accanto a **eDiscovery Manager**, fare clic su **Modifica**. Fare clic su **Scegli eDiscovery Manager**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) * * Add * *, selezionare l'utente che si desidera aggiungere come una ricerca eDiscovery Manager e quindi fare clic su **Aggiungi**.
+  - Per assegnare le autorizzazioni di eDiscovery Manager, selezionare il gruppo di ruoli **gestione eDiscovery** , quindi fare clic su **modifica**accanto a **eDiscovery Manager**. Fare clic su **Scegli eDiscovery Manager**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) * * Aggiungi * *, selezionare l'utente che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**.
     
-  - Per assegnare le autorizzazioni di amministratore di eDiscovery, selezionare il gruppo di ruoli di **gestione di eDiscovery** e quindi accanto a **eDiscovery amministratore**, fare clic su **Modifica**. Fare clic su **Scegli eDiscovery amministratore**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Aggiungi**, selezionare l'utente che si desidera aggiungere come un'amministratore di eDiscovery e quindi fare clic su **Aggiungi**.
+  - Per assegnare le autorizzazioni di amministratore di eDiscovery, selezionare il gruppo di ruoli **gestione di eDiscovery** e quindi fare clic su **modifica**accanto a **amministratore di eDiscovery**. Fare clic su **Scegli amministratore**di ![eDiscovery,](media/ITPro-EAC-AddIcon.gif) **** fare clic su Aggiungi icona Aggiungi, selezionare l'utente che si desidera aggiungere come amministratore di eDiscovery e quindi fare clic su **Aggiungi**.
     
-4. Dopo aver aggiunto tutti gli utenti, fare clic su **Chiudi**, fare clic su **Salva** per salvare le modifiche al gruppo di ruoli e quindi fare clic su **Chiudi**.
+4. Dopo aver aggiunto tutti gli utenti, fare clic su **fine**, fare clic su **Salva** per salvare le modifiche apportate al gruppo di ruoli e quindi fare clic su **Chiudi**.
     
 
   
-## <a name="step-2-create-a-new-case"></a>Passaggio 2: Creare un nuovo caso
+## <a name="step-2-create-a-new-case"></a>Passaggio 2: creare un nuovo caso
 <a name="step2_1"> </a>
 
-Il passaggio successivo consiste nel creare un nuovo caso. È necessario essere membri del gruppo di ruoli eDiscovery responsabili di creare casi di eDiscovery. Come precedentemente illustrato, dopo aver creato un nuovo caso nella protezione &amp; centro conformità, si (e gli altri membri maiuscole) saranno in grado di accesso che stesso caso di eDiscovery avanzate se si è organizzazione dispone di una sottoscrizione di Office 365 E5.
+Il passaggio successivo consiste nel creare un nuovo caso di eDiscovery. Per creare i casi di eDiscovery, è necessario essere membri del gruppo di ruoli eDiscovery managers. Come spiegato in precedenza, dopo aver creato un nuovo caso nel centro &amp; sicurezza e conformità, l'utente (e altri membri del caso) sarà in grado di accedere allo stesso caso in Advanced eDiscovery se l'organizzazione ha un abbonamento a Office 365 E5.
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. In sicurezza &amp; centro conformità, fare clic su **ricerca &amp; indagini** \> **eDiscovery**e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Crea un caso**.
+3. Nel centro sicurezza &amp; e conformità, fare clic su ** &amp; ricerca** \> **eDiscovery**, quindi fare ![clic su](media/ITPro-EAC-AddIcon.gif) Aggiungi icona **creare un caso**.
     
-4. Nella pagina **Nuovo caso** , assegnare il caso un nome, digitare una descrizione facoltativa e quindi fare clic su **Salva**. Si noti che il nome del caso deve essere univoco all'interno dell'organizzazione.
+4. Nella pagina **nuovo caso** , assegnare un nome al caso, digitare una descrizione facoltativa, quindi fare clic su **Salva**. Tenere presente che il nome del caso deve essere univoco nell'organizzazione.
     
-    ![Nuova pagina maiuscole](media/538f66b8-eb6e-4c4c-83d8-7154fd85883a.png)
+    ![Pagina nuovo caso](media/538f66b8-eb6e-4c4c-83d8-7154fd85883a.png)
   
-    Il nuovo caso viene visualizzato nell'elenco dei casi nella pagina di **eDiscovery** . Si noti che è possibile posizionare il cursore sul nome di un caso per visualizzare le informazioni relative al caso, tra cui lo stato del caso **attivo** o **chiuso**, la descrizione del caso (che è stato creato nel passaggio precedente), e se è stato modificato ultimo caso e degli autori delle modifiche.
+    Il nuovo caso viene visualizzato nell'elenco dei casi nella pagina **eDiscovery** . Si noti che è possibile posizionare il puntatore del mouse su un nome di case per visualizzare le informazioni sul caso, incluso lo stato del caso ( **attivo** o **chiuso**), la descrizione del caso (creato nel passaggio precedente) e quando il caso è stato modificato per ultimo e che lo ha modificato.
     
     > [!TIP]
-    > Dopo aver creato un nuovo caso, è possibile rinominare in qualsiasi momento. Fare clic sul nome del caso nella pagina di **eDiscovery** . Nella pagina **Gestisci in questo caso** comparsa, cambiare il nome visualizzato nella casella in **nome**e quindi salvare le modifiche. 
+    > Dopo aver creato un nuovo caso, è possibile rinominarlo in qualsiasi momento. Basta fare clic sul nome del caso nella pagina **eDiscovery** . Nella pagina Gestisci il riquadro a comparsa di **questo caso** , modificare il nome visualizzato nella casella in **nome**e quindi salvare la modifica. 
   
-## <a name="step-3-add-members-to-a-case"></a>Passaggio 3: Aggiungere membri a un caso
+## <a name="step-3-add-members-to-a-case"></a>Passaggio 3: aggiungere membri a un caso
 <a name="step2a_1"> </a>
 
-Dopo aver creato un nuovo caso, il passaggio successivo è per aggiungere membri al caso. Spiegato come precedente, solo gli utenti che sono membri del revisore o gruppi di ruoli di gestione di eDiscovery possono essere aggiunto come membro del case. Si noti che il Manager che ha creato il caso di eDiscovery viene aggiunto automaticamente come un membro.
+Dopo aver creato un nuovo caso, il passaggio successivo consiste nell'aggiungere membri al caso. Come spiegato in precedenza, solo gli utenti membri dei gruppi di ruoli revisore o Manager di eDiscovery possono essere aggiunti come membri del caso. Si noti che il responsabile di eDiscovery che ha creato il caso viene aggiunto automaticamente come membro.
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic sul nome del case che si desidera aggiungere i membri.
+2. Fare clic sul nome del caso in cui si desidera aggiungere i membri.
     
-    Viene visualizzata la pagina **Gestisci in questo caso** i comparsa. 
+    Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
     
-    ![Fare clic sul nome maiuscole per visualizzare in questo caso della pagina Gestisci](media/2364dc08-a3dc-4724-acf4-7a68c8588e6f.png)
+    ![Fare clic sul nome del caso per visualizzare la pagina Gestisci questo caso](media/2364dc08-a3dc-4724-acf4-7a68c8588e6f.png)
   
-3. In **Gestisci membri**, fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Add** per aggiungere membri al caso. 
+3. In **Gestisci membri**fare ![clic su](media/ITPro-EAC-AddIcon.gif) **** Aggiungi icona Aggiungi per aggiungere membri al caso. 
     
-4. Nell'elenco di persone che possono essere aggiunti come membri del case, fare clic sulla casella accanto al nome degli utenti che si desidera aggiungere al caso.
+4. Nell'elenco di utenti che possono essere aggiunti come membri del caso, fare clic sulla casella di controllo accanto al nome degli utenti che si desidera aggiungere al caso.
     
     > [!TIP]
-    > Se si dispone di un ampio elenco di persone che possono aggiunti come membri, utilizzare la casella **Cerca** per cercare una persona specifica nell'elenco. 
+    > Se si dispone di un elenco elevato di utenti che possono essere aggiunti come membri, utilizzare la casella di **ricerca** per cercare una persona specifica nell'elenco. 
   
-5. Dopo aver selezionato le persone da aggiungere come membri del gruppo, fare clic su **Aggiungi**.
+5. Dopo aver selezionato gli utenti da aggiungere come membri del gruppo, fare clic su **Aggiungi**.
     
-    In **Gestisci in questo caso**, fare clic su **Salva** per salvare il nuovo elenco di membri maiuscole. 
+    In **Gestisci questo caso**, fare clic su **Salva** per salvare il nuovo elenco dei membri del caso. 
     
-6. Fare clic su **Salva** per salvare il nuovo elenco di membri maiuscole. 
+6. Fare clic su **Salva** per salvare il nuovo elenco dei membri del caso. 
   
-## <a name="step-4-place-content-locations-on-hold"></a>Passaggio 4: Posto i percorsi di contenuti in attesa
+## <a name="step-4-place-content-locations-on-hold"></a>Passaggio 4: posizionare i percorsi di contenuto in attesa
 <a name="step3_1"> </a>
 
-È possibile utilizzare un caso eDiscovery alla creazione di esenzioni per conservare il contenuto che potrebbe essere rilevante al caso. È possibile inserire un'esenzione cassette postali e OneDrive per i siti di persone che sono depositari nel caso. Si può inoltre effettuare un'esenzione cassetta postale di gruppo, siti di SharePoint e OneDrive per sito Business per un gruppo di Office 365. Analogamente, è possibile inserire un'esenzione nella cassetta postale e sito in cui sono associati a Microsoft Teams. Quando si effettua i percorsi di contenuti in attesa, il contenuto viene mantenuto finché non si rimuove l'esenzione dal percorso di contenuto o finché non viene eliminato l'attesa.
+È possibile utilizzare un caso di eDiscovery per creare le esenzioni per conservare il contenuto che potrebbe essere pertinente per il caso. È possibile applicare un blocco alle cassette postali e ai siti di OneDrive for business di persone che sono depositarie nel caso. È inoltre possibile inserire un blocco nel sito di gruppo cassetta postale, sito di SharePoint e OneDrive for business per un gruppo di Office 365. Analogamente, è possibile applicare un'esenzione alla cassetta postale e al sito associati a Microsoft teams. Quando si posizionano le posizioni di contenuto in attesa, il contenuto viene mantenuto fino a quando non viene rimosso il blocco dal percorso del contenuto o fino a quando non viene eliminato il blocco.
   
-Quando si crea un'esenzione, sono disponibili le opzioni seguenti per definire l'ambito del contenuto viene mantenuto nei percorsi di contenuto specificati:
+Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito del contenuto conservato nei percorsi di contenuto specificati:
   
-- Creare un'attesa infinita in tutto il contenuto viene messa in attesa. In alternativa, è possibile creare un'esenzione basata su query dove solo il contenuto che corrisponde a una query di ricerca viene messa in attesa.
+- È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query che contenga solo il contenuto che corrisponde a una query di ricerca.
     
-- È possibile specificare un intervallo di date per includere solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile tenere tutto il contenuto indipendentemente dal fatto se è stato inviato, ricevuto o creato.
+- È possibile specificare un intervallo di date che contenga solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
     
 > [!NOTE]
-> È possibile avere un massimo di 10.000 i criteri di conservazione in tutti i casi di eDiscovery nell'organizzazione. 
+> È possibile disporre di un massimo di 10.000 criteri di blocco in tutti i casi di eDiscovery nell'organizzazione. 
   
-Per creare un'esenzione per un caso eDiscovery:
+Per creare un'esenzione per un caso di eDiscovery:
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic su **Apri** accanto al caso in cui si desidera creare l'archiviazione in. 
+2. Fare clic su **Apri** accanto al caso in cui si desidera creare le esenzioni. 
     
-3. Nella Home **page per il case,** fare clic su **Pausa**.
+3. Nella **Home** page del caso, fare clic su **Hold**.
     
-    ![Fare clic su Pausa per visualizzare la pagina esenzioni maiuscole.](media/25c0300a-bd33-4443-a121-d595b1a3e00f.png)
+    ![Fare clic su esenzione per visualizzare la pagina delle esenzioni del caso.](media/25c0300a-bd33-4443-a121-d595b1a3e00f.png)
   
-4. Nella pagina **conservazione** fare clic su **Nuovo**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif).
+4. Nella pagina **blocco** fare clic su **nuova**![icona](media/ITPro-EAC-AddIcon.gif)Aggiungi.
     
 5. Nella pagina **Crea un nuovo blocco**, assegnare un nome al blocco. Il nome del blocco deve essere univoco nell'organizzazione.  
     
-6. Scegliere i percorsi di contenuti che si desidera mettere in attesa. È possibile effettuare le cassette postali, i siti e le cartelle pubbliche in attesa.
+6. Scegliere i percorsi di contenuto che si desidera inserire in attesa. È possibile inserire le cassette postali, i siti e le cartelle pubbliche in attesa.
     
     ![Scegliere i percorsi dei contenuti da mettere in attesa](media/a00c952c-f91f-4708-b5a4-6213e4c413c7.png)
   
-1. **Cassette postali** Fare clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) per specificare le cassette postali per mettere in attesa. Utilizzare la casella di ricerca per trovare cassette postali degli utenti e gruppi di distribuzione (per effettuare un'esenzione per le cassette postali dei membri del gruppo) per mettere in attesa. Può inoltre effettuare un'esenzione nella cassetta postale associata per un Team di Microsoft o un gruppo di Office 365. 
+1. **Cassette postali** Fare ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Office 365 o un team di Microsoft. 
     
     > [!NOTE]
-    > Quando si fa clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) per specificare le cassette postali per mettere in attesa, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere persone all'elenco, digitare un nome (almeno 3 caratteri) nella casella Cerca e fare clic su **Cerca**![sull'icona di ricerca](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif). 
+    > Quando si fa ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome (almeno 3 caratteri) nella casella di ricerca e fare clic su ****![icona](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)ricerca ricerca. 
   
-2. **Siti** Fare clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) specificare SharePoint e OneDrive per i siti per mettere in attesa. Digitare l'URL per ogni sito che si desidera mettere in attesa. È inoltre possibile aggiungere l'URL del sito di SharePoint per un Team di Microsoft o un gruppo di Office 365. 
+2. **Siti** Fare ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare i siti di SharePoint e OneDrive for business da inserire in attesa. Digitare l'URL per ogni sito che si desidera inserire in attesa. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. 
     
-    Vedere la sezione [informazioni](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) di suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa. 
+    Vedere la sezione [ulteriori informazioni](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) per suggerimenti su come mettere in attesa i gruppi di Office 365 e Microsoft teams. 
     
     > [!NOTE]
-    > Nel caso di nome principale una persona (UPN) viene modificato l'URL per il proprio account OneDrive verrà modificata anche per incorporare l'UPN di nuovo. In questo caso, sarà necessario modificare la conservazione nuovo OneDrive URL dell'utente di aggiungendo e rimuovendo il vecchio. 
+    > Nel caso raro che il nome dell'entità utente (UPN, User Principal Name) di una persona venga modificato, l'URL per il relativo account OneDrive verrà modificato anche per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. 
   
-3. **Cartelle pubbliche** Fare clic su **archiviazione tutte le cartelle pubbliche** per tutte le cartelle pubbliche inserire nell'organizzazione in archiviazione Exchange Online. Si noti che non è possibile scegliere specifiche cartelle pubbliche per mettere in attesa. Lasciare selezionata se non si desidera creare un'esenzione per le cartelle pubbliche l'opzione **non tenere presenti cartelle pubbliche** . 
+3. **Cartelle pubbliche** Fare clic su **blocca tutte le cartelle pubbliche** per conservare tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere le cartelle pubbliche specifiche da mettere in attesa. Lasciare selezionata l'opzione **non mantenere le cartelle pubbliche** se non si desidera inserire un blocco nelle cartelle pubbliche. 
     
-7. Al termine i percorsi di contenuti aggiunta all'esenzione, fare clic su **Avanti**.
+7. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
     
-8. Per creare un'esenzione basata su query con condizioni, eseguire le operazioni seguenti. In caso contrario, semplicemente fare clic su **Fine** per conservare tutto il contenuto. 
+8. Per creare un blocco basato su query con condizioni, completare quanto segue. In caso contrario, è sufficiente fare clic su **fine** per contenere tutto il contenuto. 
     
-    ![Creare un'esenzione basata su query specificando le condizioni e le parole chiave](media/a5bb802e-2e96-4f12-8b33-1ddd671638e4.png)
+    ![Creare un blocco basato su query specificando le parole chiave e le condizioni](media/a5bb802e-2e96-4f12-8b33-1ddd671638e4.png)
   
-    Per ulteriori informazioni sulla creazione di una query di ricerca e utilizzo delle condizioni, vedere [query con parole chiave e le condizioni di ricerca per la ricerca del contenuto](keyword-queries-and-search-conditions.md).
+    Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).
     
-1. Nella casella in **scegliere un'opzione di cercare?**, digitare una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca viene messa in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare più complesse query che utilizzano un operatore booleano, ad esempio **AND**, **OR**o **NOT**. Se si lascia la casella di parola chiave vuota, tutto il contenuto disponibile nei percorsi specificati contenuti verrà messa in attesa. 
+1. Nella casella in **che cosa si desidera cercare?**, digitare una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca venga messo in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e**, **o**o **meno**. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà messo in attesa. 
     
-2. In **condizioni**, fare clic su **Aggiungi condizione** per aggiungere una o più condizioni per limitare la query di ricerca per l'attesa. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si crea l'attesa. Ad esempio è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di un sito che sono stati creati all'interno della data intervallo vengono inseriti in attesa. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione di essere posizionate in attesa. 
+2. In **condizioni**fare clic su **Aggiungi condizione** per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, dall'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa. 
     
-9. Dopo aver configurato un basata su query attesa, fare clic su **Fine** per creare l'esenzione. 
+9. Dopo aver configurato un blocco basato su query, fare clic su **fine** per creare il blocco. 
   
-### <a name="hold-statistics"></a>Conservazione delle statistiche
+### <a name="hold-statistics"></a>Statistiche di blocco
 
-Dopo un po' di tempo, informazioni sulla nuova esenzione viene visualizzate nel riquadro dei dettagli della pagina **contiene** per l'attesa selezionato. Queste informazioni includono il numero di cassette postali e siti in attesa e le statistiche relative al contenuto che è stato messo in attesa, ad esempio il numero totale e le dimensioni degli elementi messa in attesa e l'ultima ora in attesa sono state calcolate le statistiche. Queste attesa consentono di statistiche identificare la quantità di contenuto correlato al caso di eDiscovery è correntemente. 
+Dopo un po' di tempo, le informazioni relative al nuovo blocco vengono visualizzate nel riquadro dei **** dettagli nella pagina esenzioni per il blocco selezionato. Queste informazioni includono il numero di cassette postali e i siti in attesa e le statistiche sul contenuto che è stato messo in attesa, ad esempio il numero totale e le dimensioni degli elementi che sono stati messi in attesa e l'ultima volta che sono state calcolate le statistiche di blocco. Queste statistiche di blocco consentono di identificare la quantità di contenuto correlata al caso di eDiscovery. 
   
-![Conservazione statistiche vengono visualizzate nel riquadro dei dettagli dell'esenzione selezionata](media/e46359a3-cba1-4771-bbf5-bc53b4a2cb14.png)
+![Le statistiche di blocco vengono visualizzate nel riquadro dei dettagli per il blocco selezionato](media/e46359a3-cba1-4771-bbf5-bc53b4a2cb14.png)
   
-Tenere presenti sulle statistiche di attesa i seguenti aspetti:
+Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
   
-- Il numero totale di elementi in attesa indica il numero di elementi da tutte le origini di contenuto che restano in attesa. Se sono state create una basata su query attesa, questo indica il numero di elementi che corrispondono alla query.
+- Il numero totale di elementi in attesa indica il numero di elementi provenienti da tutte le origini di contenuto che vengono bloccate. Se è stata creata una conservazione basata su query, questa statistica indica il numero di elementi che corrispondono alla query.
     
-- Il numero di elementi in attesa include anche gli elementi non indicizzati presenti nei percorsi contenuti. Si noti che se si crea una conservazione basata su query, tutti gli elementi non indicizzati nelle posizioni del contenuto sono messi in attesa. Sono inclusi gli elementi non indicizzati che non soddisfano i criteri di ricerca di un'esenzione basata su query e non indicizzate che potrebbe essere si trovano all'esterno di una condizione di intervallo di date. Questa è diversa da cosa succede quando si esegue una ricerca di contenuto, in cui gli elementi non indicizzati che non corrispondono alla query di ricerca o esclusi da una condizione di intervallo di date non vengono inclusi nei risultati della ricerca. Per ulteriori informazioni sugli elementi non indicizzate, vedere [elementi indicizzati nella ricerca del contenuto in Office 365](partially-indexed-items-in-content-search.md).
+- Il numero di elementi in attesa include anche gli elementi non indicizzati trovati nei percorsi di contenuto. Si noti che se si crea un blocco basato su query, tutti gli elementi non indicizzati nei percorsi di contenuto vengono inseriti in attesa. Sono inclusi gli elementi non indicizzati che non corrispondono ai criteri di ricerca di un blocco basato su query e di elementi non indicizzati che potrebbero non essere compresi in una condizione dell'intervallo di date. Questo è diverso da quello che succede quando si esegue una ricerca di contenuto, in cui gli elementi non indicizzati che non corrispondono alla query di ricerca o sono esclusi da una condizione dell'intervallo di date non sono inclusi nei risultati della ricerca. Per ulteriori informazioni sugli elementi non indicizzati, vedere [elementi non indicizzati in ricerca contenuto in Office 365](partially-indexed-items-in-content-search.md).
     
-- È possibile ottenere le ultime novità attesa statistiche facendo clic su **Aggiorna le statistiche** per rieseguire una ricerca estimate che calcola il numero corrente di elementi in attesa. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) nella barra degli strumenti per aggiornare le statistiche di conservazione nel riquadro dei dettagli. 
+- È possibile ottenere le statistiche di blocco più recenti facendo clic su **Aggiorna statistiche** per rieseguire una stima di ricerca che calcola il numero corrente di elementi in attesa. Se necessario, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) icona di aggiornamento sulla barra degli strumenti per aggiornare le statistiche di blocco nel riquadro dei dettagli. 
     
-- La normale per il numero di elementi in attesa per aumentare il tempo perché agli utenti la cui cassetta postale o del sito sono in attesa sono in genere l'invio o ricezione nuovo messaggio di posta elettronica e la creazione di nuovi SharePoint e OneDrive per i documenti aziendali.
+- È normale che il numero di elementi in attesa aumenti nel tempo, in quanto gli utenti la cui cassetta postale o sito è in attesa vengono in genere inviati o ricevuti da un nuovo messaggio di posta elettronica e dalla creazione di nuovi documenti di SharePoint e OneDrive for business.
   
-## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Passaggio 5: Creare ed eseguire una ricerca del contenuto associato a un caso
+## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Passaggio 5: creare ed eseguire una ricerca di contenuto associata a un caso
 <a name="step4_1"> </a>
 
-Dopo la creazione di un caso eDiscovery e qualsiasi depositari correlate al caso sono messi in attesa, è possibile creare ed eseguire una o più ricerche di contenuto associati a caso. Contenuto ricerche associate a un caso non siano elencate nella pagina di **ricerca** nella protezione &amp; centro conformità. Ciò significa che le ricerche del contenuto associate a un caso è accessibile solo da maiuscole membri che fanno parte del gruppo di ruoli di gestione di eDiscovery. 
+Dopo la creazione di un caso di eDiscovery e gli eventuali depositari correlati al caso, è possibile creare ed eseguire una o più ricerche di contenuto associate alla distinzione tra maiuscole e minuscole. Le ricerche di contenuto associate a un caso non sono **** elencate nella pagina di ricerca &amp; nel centro sicurezza e conformità. Ciò significa che le ricerche di contenuto associate a un caso possono essere accessibili solo dai membri del caso che sono anche membri del gruppo di ruoli eDiscovery Manager. 
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic su **Apri** accanto al caso in cui si desidera creare una ricerca nel contenuto. 
+2. Fare clic su **Apri** accanto al caso in cui si desidera creare una ricerca di contenuto. 
     
-3. Nella Home **page per il case,** fare clic su **Cerca**.
+3. Nella **Home** page del caso, fare clic su **Cerca**.
     
-    ![Nella Home page del case, fare clic su Cerca](media/bd358eb3-12d4-4f0c-8317-d192286813d0.png)
+    ![Nella Home page del caso, fare clic su Cerca](media/bd358eb3-12d4-4f0c-8317-d192286813d0.png)
   
-4. Nella pagina **ricerca** fare clic su **Nuovo**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif).
+4. Nella pagina **ricerca** fare clic su **nuova**![icona](media/ITPro-EAC-AddIcon.gif)Aggiungi.
     
-5. Nella pagina **nuova ricerca** digitare un nome per la ricerca. Nomi siano univoci all'interno dell'organizzazione Office 365 devono essere associate a un caso di ricerche di contenuto. 
+5. Nella pagina **nuova ricerca** , digitare un nome per la ricerca. Le ricerche di contenuto associate a un caso devono avere nomi univoci all'interno dell'organizzazione di Office 365. 
     
-6. Scegliere i percorsi di contenuti che si desidera eseguire la ricerca. È possibile cercare cassette postali, i siti e le cartelle pubbliche nella ricerca stessa.
+6. Scegliere i percorsi di contenuto di cui si desidera eseguire la ricerca. È possibile cercare le cassette postali, i siti e le cartelle pubbliche nella stessa ricerca.
     
-    ![Ricerca maiuscole i percorsi di contenuti, tutti i percorsi di contenuti, oppure selezionare i percorsi di contenuti specifici](media/08c523dc-cba8-4fce-aee6-f86251204393.png)
+    ![Percorsi di contenuto di ricerca, tutti i percorsi di contenuto o seleziona percorsi di contenuto specifici](media/08c523dc-cba8-4fce-aee6-f86251204393.png)
   
-1. **Tutto il contenuto sociale** Selezionare questa opzione per tutti i percorsi contenuti messe in attesa nel caso di ricerca. Se il caso contiene più contiene, il contenuto verranno eseguita la ricerca percorsi da tutte le esenzioni quando si seleziona questa opzione. Inoltre, se è stato inserito un percorso di contenuto di un'esenzione basata su query, solo gli elementi che sono in attesa verranno eseguita la ricerca quando si esegue la ricerca del contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato messo in attesa di maiuscole basata su query che consente di mantenere gli elementi che sono stati inviati o creati prima di una data specifica, solo gli elementi sarebbero viene eseguita la ricerca utilizzando i criteri di ricerca di ricerca del contenuto. Questa operazione viene eseguita tramite la connessione di query maiuscole attesa e la query di ricerca del contenuto da un operatore **AND** . Vedere la sezione [informazioni](manage-ediscovery-cases.md#moreinfo_1) alla fine di questo articolo per informazioni dettagliate sulla ricerca di contenuto sociale. 
+1. **Tutti i contenuti del caso** Selezionare questa opzione per cercare tutti i percorsi di contenuto che sono stati inseriti in attesa nel caso. Se il caso contiene più esenzioni, i percorsi di contenuto di tutte le esenzioni verranno ricercati quando si seleziona questa opzione. Inoltre, se un percorso di contenuto è stato posizionato in un blocco basato su query, vengono ricercati solo gli elementi che sono in attesa quando si esegue la ricerca di contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato inserito in una conservazione basata su query che conserva gli elementi inviati o creati prima di una data specifica, solo gli elementi verranno ricercati utilizzando i criteri di ricerca della ricerca contenuto. Questa operazione viene eseguita collegando la query di blocco del caso e la query di ricerca del contenuto da parte di un operatore **and** . Vedere la sezione [ulteriori informazioni](manage-ediscovery-cases.md#moreinfo_1) alla fine di questo articolo per ulteriori informazioni sulla ricerca di contenuto del caso. 
     
-2. **Ricerca ovunque** Selezionare questa opzione per cercare tutti i percorsi di contenuti nell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di ricerca tutte le cassette postali di Exchange (cassette postali che include tutti i gruppi di Office 365 e Microsoft Teams), tutte le SharePoint e OneDrive per i siti (che include i siti per tutti i gruppi di Office 365 e Microsoft Team) e tutte le cartelle pubbliche.
+2. **Cerca ovunque** Selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i gruppi di Office 365 e Microsoft Teams), tutti i siti di SharePoint e OneDrive for business (che include i siti per tutti i gruppi di Office 365 e Microsoft Teams) e tutte le cartelle pubbliche.
     
-3. **Selezione di posizione personalizzata** Selezionare questa opzione per selezionare le cassette postali e i siti che si desidera eseguire la ricerca. Quando si seleziona questa opzione, l'elenco delle cassette postali e i siti è prepopolato con il contenuto percorsi messa in attesa all'interno del case. È anche possibile scegliere di ricerca tutte le cartelle pubbliche nell'organizzazione.
+3. **Selezione percorso personalizzato** Selezionare questa opzione per selezionare le cassette postali e i siti in cui si desidera eseguire la ricerca. Quando si seleziona questa opzione, l'elenco delle cassette postali e dei siti viene prepopolato con i percorsi di contenuto che sono stati inseriti nel caso. È inoltre possibile scegliere di effettuare una ricerca in tutte le cartelle pubbliche dell'organizzazione.
     
-    ![Cerca nel contenuto in tutti i caso, tutti i percorsi di ricerca o un percorso personalizzato di ricerca](media/7ca97ab4-52d5-46a5-9e24-e3a4d1001595.png)
+    ![Cerca in tutti i contenuti del caso, Cerca in tutte le posizioni o Cerca un percorso personalizzato](media/7ca97ab4-52d5-46a5-9e24-e3a4d1001595.png)
   
-    Ma se si seleziona questa opzione e ricerca qualsiasi percorso contenuto in attesa, le query da un'esenzione maiuscole basata su query non verranno applicate alla query di ricerca. In altre parole, viene eseguita la ricerca tutto il contenuto in una posizione, non solo il contenuto viene mantenuto da un'esenzione maiuscole basata su query.
+    Tuttavia, se si seleziona questa opzione e si esegue una ricerca in qualsiasi posizione di contenuto che è in attesa, qualsiasi query proveniente da un blocco di caso basato su query non verrà applicata alla query di ricerca. In altre parole, viene cercato tutto il contenuto di una posizione, non solo il contenuto che viene conservato da un blocco di caso basato su query.
     
-    È possibile rimuovere i percorsi contenuti sociale prepopolati o aggiungerne altri. Se si sceglie questa opzione, è inoltre possibile flessibilità per cercare tutti i percorsi di contenuti per un servizio specifico (ad esempio ricerca tutte le cassette postali di Exchange) oppure è possibile cercare i percorsi di contenuti specifici per un servizio. È anche possibile scegliere se utilizzare o meno le cartelle pubbliche di ricerca nell'organizzazione.
+    È possibile rimuovere i percorsi di contenuto precompilati oppure aggiungerne di nuovi. Se si sceglie questa opzione, è inoltre possibile eseguire la ricerca in tutti i percorsi di contenuto per un servizio specifico, ad esempio la ricerca in tutte le cassette postali di Exchange, oppure cercare percorsi di contenuto specifici per un servizio. È anche possibile scegliere se eseguire la ricerca nelle cartelle pubbliche dell'organizzazione.
     
-    Tenere presente quando si aggiungono percorsi di contenuti per la ricerca:
+    Tenere presente queste considerazioni quando si aggiungono percorsi di contenuto alla ricerca:
     
-  - Quando si fa clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) per specificare le cassette postali per la ricerca, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere i destinatari a questo elenco, digitare un nome (almeno 3 caratteri) nella casella Cerca e fare clic su **Cerca**![sull'icona di ricerca](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif).
+  - Quando si fa ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare le cassette postali da cercare, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere destinatari all'elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca e fare clic su ****![icona](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)ricerca ricerca.
     
-  - È possibile aggiungere all'elenco delle cassette postali per la ricerca delle cassette postali inattive, gruppi di Office 365, Microsoft Teams e i gruppi di distribuzione. Non sono supportati i gruppi di distribuzione dinamico. Se si aggiungono gruppi di Office 365 o Microsoft Teams, viene eseguita la ricerca cassetta postale di gruppo o un team; non vengono effettuate le cassette postali dei membri del gruppo.
+  - È possibile aggiungere le cassette postali inattive, i gruppi di Office 365, Microsoft teams e i gruppi di distribuzione all'elenco delle cassette postali da cercare. I gruppi di distribuzione dinamici non sono supportati. Se si aggiungono gruppi di Office 365 o Microsoft teams, viene eseguita la ricerca nella cassetta postale del gruppo o del team. le cassette postali dei membri del gruppo non vengono cercate.
     
-  - Se non si desidera includere alcuna cassetta postale o i siti in una ricerca, selezionare **scegliere cassette postali specifiche per la ricerca** o **Scegliere siti specifici per la ricerca**, ma non aggiungere siti o cassette postali all'elenco.
+  - Se non si desidera includere cassette postali o siti in una ricerca, selezionare **scegliere le cassette postali specifiche per** la ricerca oppure **scegliere siti specifici per la ricerca**, ma non aggiungere cassette postali o siti all'elenco.
     
-  - Per aggiungere siti fare clic su **Aggiungi**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) e quindi digitare l'URL per ogni sito che si desidera eseguire la ricerca. È inoltre possibile aggiungere l'URL del sito di SharePoint per gruppi di Office 365 e Microsoft Teams. 
+  - Per aggiungere siti, ****![fare clic su](media/ITPro-EAC-AddIcon.gif) Aggiungi icona e quindi digitare l'URL per ogni sito di cui si desidera eseguire la ricerca. È inoltre possibile aggiungere l'URL per il sito di SharePoint per i gruppi di Office 365 e Microsoft teams. 
     
-7. Dopo aver selezionato i percorsi contenuti di ricerca, fare clic su **Avanti**.
+7. Dopo aver selezionato i percorsi di contenuto in cui eseguire la ricerca, fare clic su **Avanti**.
     
-8. Nella pagina **Nuova ricerca**, è possibile aggiungere parole chiave e condizioni per creare la query di ricerca. <br/>![Condizioni e criteri di ricerca](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. Nella pagina **Nuova ricerca**, è possibile aggiungere parole chiave e condizioni per creare la query di ricerca. <br/>![Criteri e condizioni di ricerca](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-9. Nella casella in **scegliere un'opzione di cercare?**, digitare una query di ricerca nella casella. È possibile specificare le parole chiave, messaggio proprietà come inviati e ricevuti, date o proprietà del documento, ad esempio i nomi di file o la data dell'ultima modifica di un documento. È possibile utilizzare una query più complesse che utilizzano un operatore booleano, ad esempio **AND**, **o**, **non**, **NEAR**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di previdenza sociale) nei documenti o ricerca per i documenti condivisi esternamente. Se si lascia vuota la casella parole chiave, tutto il contenuto disponibile nei percorsi di contenuto specificati sarà incluse nei risultati della ricerca. 
+9. Nella casella in **che cosa si desidera cercare?**, digitare una query di ricerca nella casella. È possibile specificare le parole chiave, le proprietà del messaggio, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**, **vicino**o **ONEAR**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca. 
     
-10. È possibile selezionare la casella di controllo **Mostra elenco di parole chiave** e il tipo di una parola chiave in ogni riga. In questo caso, le parole chiave in ogni riga sono connessi tramite l'operatore **OR** nella query di ricerca che viene creata. 
+10. È possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse dall'operatore **or** nella query di ricerca creata. 
     
     ![Parole chiave di ricerca](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
-    Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostra il numero di elementi corrispondenti a ogni parola chiave. Ciò consente di identificare rapidamente i quali le parole chiave sono il massimo (e almeno) efficaci. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche delle parole chiave per i risultati di ricerca del contenuto](view-keyword-statistics-for-content-search.md).
+    Perché usare l'elenco delle parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. In questo modo è possibile identificare rapidamente quali parole chiave sono le più (e meno) effettive. È inoltre possibile utilizzare una frase di parole chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche sulle parole chiave per i risultati della ricerca contenuto](view-keyword-statistics-for-content-search.md).
     
-    Per ulteriori informazioni sull'utilizzo dell'elenco di parole chiave, vedere [ulteriori informazioni](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
+    Per ulteriori informazioni sull'utilizzo dell'elenco delle parole chiave, vedere [ulteriori informazioni](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-11. Fare clic su **query per gli errori di battitura di controllo** per verificare la query per i caratteri non supportati e per gli operatori booleani che potrebbero non essere in maiuscolo. Caratteri non supportati sono spesso nascoste in genere causano un errore di ricerca o restituiscano risultati imprevisti. Per ulteriori informazioni sui caratteri non supportati che vengono controllati, vedere [verificare la query di ricerca del contenuto per gli errori](check-your-content-search-query-for-errors.md).
+11. Fare clic su **Controlla query per errori** di battitura per controllare la query per i caratteri non supportati e per gli operatori booleani che potrebbero non essere capitalizzati. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati indesiderati. Per ulteriori informazioni sui caratteri non supportati, vedere [Check your content search query for Errors](check-your-content-search-query-for-errors.md).
     
-12. In **condizioni**, aggiungere le condizioni per una query di ricerca per restringere la ricerca e restituire un set di risultati più dettagliato. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si avvia la ricerca. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) dall'operatore di telefonia **e** . Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione da includere nei risultati della. Si tratta come condizioni consentono di limitare i risultati. 
+12. In **condizioni**, aggiungere condizioni a una query di ricerca per restringere una ricerca e restituire un set di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca di KQL creata ed eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, dall'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da includere nei risultati. Questo è il modo in cui le condizioni aiutano a limitare i risultati. 
     
     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 13. Fare clic su **Ricerca** per salvare le impostazioni e avviare la ricerca. 
     
-    La ricerca viene avviata. Dopo un po' di tempo, una stima dei risultati della ricerca viene visualizzata nel riquadro dei dettagli. La stima include le dimensioni totali e il numero di elementi corrispondenti ai criteri di ricerca. La stima ricerca include anche il numero di elementi indicizzati nei percorsi di contenuto in cui sono stati una ricerca. Il numero di elementi indicizzati che non soddisfano i criteri di ricerca includerà le statistiche ricerca visualizzate nel riquadro dei dettagli. Se corrisponde a un elemento non indicizzate eseguire una query di ricerca (perché altre proprietà di un documento o messaggio soddisfa i criteri di ricerca), non sarà incluso il numero stimato di elementi indicizzati. Se un elemento non indicizzato viene escluso per i criteri di ricerca, anche non essere incluse nella stima di elementi indicizzati.
+    La ricerca viene avviata. Dopo un po' di tempo, una stima dei risultati della ricerca viene visualizzata nel riquadro dei dettagli. La stima include la dimensione totale e il numero di elementi che corrispondono ai criteri di ricerca. La stima della ricerca include anche il numero di elementi non indicizzati nei percorsi di contenuto di cui è stata eseguita la ricerca. Il numero di elementi non indicizzati che non soddisfano i criteri di ricerca verrà incluso nelle statistiche di ricerca visualizzate nel riquadro dei dettagli. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nella stima degli elementi non indicizzati.
     
-    Al termine della ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario, fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni nel riquadro dei dettagli. 
+    Una volta completata la ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare le informazioni nel riquadro dei dettagli. 
   
-## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Passaggio 6: Esportare i risultati di ricerca del contenuto associato a un caso
+## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Passaggio 6: esportare i risultati di una ricerca di contenuto associata a un caso
 <a name="step5_1"> </a>
 
-Dopo l'esecuzione di una ricerca, è possibile esportare i risultati della ricerca. Quando si Esporta risultati della ricerca, gli elementi della cassetta postale vengono scaricati in file PST o come singoli messaggi. Quando si esporta il contenuto di SharePoint e OneDrive per i siti di Business, vengono esportate le copie dei documenti di Office nativi e altri documenti. Inoltre viene esportato un file manifesto (in formato XML) che contiene informazioni su ogni risultato di ricerca.
+Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati della ricerca. Quando si esportano i risultati della ricerca, gli elementi della cassetta postale vengono scaricati nei file PST o come singoli messaggi. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office native e di altri documenti. Viene esportato anche un file manifesto (in formato XML) che contiene informazioni su tutti i risultati della ricerca.
   
-È possibile esportare i risultati di [esportare i risultati di una singola ricerca associato a un caso](manage-ediscovery-cases.md#singlesearch_1) un oppure è possibile esportare i risultati di [esportare i risultati delle ricerche più associate a un caso](manage-ediscovery-cases.md#multiplesearches_1).
+È possibile esportare i risultati di un' [esportazione dei risultati di una singola ricerca associata a un caso](manage-ediscovery-cases.md#singlesearch_1) oppure è possibile esportare i risultati dell' [esportazione dei risultati di più ricerche associate a un caso](manage-ediscovery-cases.md#multiplesearches_1).
   
-### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Esportare i risultati di una singola ricerca associato a un caso
+### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Esportare i risultati di una singola ricerca associata a un caso
 <a name="singlesearch_1"> </a>
 
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic su **Apri** accanto al caso in cui si desidera esportare ricerca dal. 
+2. Fare clic su **Apri** accanto al caso da cui si desidera esportare la ricerca. 
     
-3. Nella Home **page per il case,** fare clic su **Cerca**.
+3. Nella **Home** page del caso, fare clic su **Cerca**.
     
-4. Nell'elenco delle ricerche per il case, fare clic su ricerca che si desidera esportare i risultati di ricerca, fare clic su **Esporta**![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png), quindi fare clic su **esportare i risultati**.
+4. Nell'elenco delle ricerche per il caso, fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca, ****![fare clic su Esporta esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)dei risultati della ricerca, quindi fare clic su **Esporta i risultati**.
     
-    Verrà visualizzata la pagina di **esportazione risultati di ricerca** . Il flusso di lavoro per esportare i risultati di ricerca di contenuto associati a un caso corrisponde a esportare i risultati di ricerca per una ricerca nella pagina di **ricerca del contenuto** . Per istruzioni dettagliate, vedere [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md).
+    Viene visualizzata la pagina **Esporta i risultati della ricerca** . Il flusso di lavoro per esportare i risultati da una ricerca di contenuto associata a un caso è uguale all'esportazione dei risultati della ricerca per una ricerca nella pagina **Ricerca contenuto** . Per istruzioni dettagliate, vedere Esportare i risultati di [ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
     
     > [!NOTE]
-    > Quando si Esporta risultati della ricerca, è possibile abilitare deduplicazione in modo che solo una copia di un messaggio di posta elettronica verrà esportata anche se potrebbe essere più istanze dello stesso messaggio sono state trovate nelle cassette postali in cui sono stati una ricerca. Per ulteriori informazioni sulla deduplicazione e gli elementi come duplicati vengono identificati, vedere [deduplicazione nei risultati della ricerca eDiscovery](de-duplication-in-ediscovery-search-results.md). 
+    > Quando si esportano i risultati della ricerca, è possibile abilitare la deduplicazione in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali di cui è stata eseguita la ricerca. Per ulteriori informazioni sulla deduplicazione e sulla modalità di identificazione degli elementi duplicati, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md). 
   
-5. Dopo aver avviato l'esportazione, fare clic su **Esporta** per visualizzare l'elenco di processi di esportazione esistenti per tale caso. 
+5. Dopo aver avviato l'esportazione, fare clic su **Esporta** per visualizzare l'elenco dei processi di esportazione esistenti per questo caso. 
     
-    ![Fare clic su Esporta per visualizzare un elenco di processi di esportazione](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
+    ![Fare clic su Esporta per visualizzare un elenco dei processi di esportazione](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
   
-    Potrebbe essere necessario fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare l'elenco di processi di esportazione per visualizzare il processo di esportazione appena creata. Si noti che i processi di esportazione avere lo stesso nome contenuto corrispondente esegue una ricerca con **Export** aggiunto alla fine del nome di ricerca. 
+    Potrebbe essere necessario fare clic ****![su Aggiorna l'](media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione per visualizzare il processo di esportazione appena creato. Si noti che i processi di esportazione hanno lo stesso nome della ricerca di contenuto corrispondente con **_Export** accodati alla fine del nome della ricerca. 
     
-6. Fare clic sul processo di esportazione appena creata per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti a un'area di archiviazione Azure nel cloud Microsoft.
+6. Fare clic sul processo di esportazione appena creato per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti in un'area di archiviazione di Azure nel cloud Microsoft.
     
-    Dopo che tutti gli elementi sono stati trasferiti, fare clic su **Download esportare i risultati** per scaricare i risultati della ricerca sul computer locale. Per ulteriori informazioni, vedere Step 2 in [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md)
+    Dopo aver trasferito tutti gli elementi, fare clic su **Scarica risultati** esportati per scaricare i risultati della ricerca nel computer locale. Per ulteriori informazioni, vedere il passaggio 2 in [Export Search Results from the Office &amp; 365 Security Compliance Center](export-search-results.md)
     
-### <a name="export-the-results-of-multiple-searches-associated-with-a-case"></a>Esportare i risultati delle ricerche più associate a un caso
+### <a name="export-the-results-of-multiple-searches-associated-with-a-case"></a>Esportare i risultati di più ricerche associate a un caso
 <a name="multiplesearches_1"> </a>
 
-Come alternativa per esportare i risultati di una singola ricerca del contenuto associato a un caso, è possibile esportare i risultati delle ricerche più dallo stesso caso di una singola esportazione. Esportare i risultati delle ricerche più è più esportare i risultati di uno ricerca alla volta rapido e semplice.
+Come alternativa all'esportazione dei risultati di una singola ricerca di contenuto associata a un caso, è possibile esportare i risultati di più ricerche dallo stesso caso in una singola esportazione. L'esportazione dei risultati di più ricerche è più semplice e veloce rispetto all'esportazione dei risultati di una ricerca alla volta.
   
 > [!NOTE]
-> Non è possibile esportare i risultati delle ricerche più se uno di tali ricerche sia stato configurato per tutto il contenuto sociale di ricerca. esportare solo i risultati delle ricerche più per le ricerche associati a un caso eDiscovery. Non è possibile esportare i risultati delle ricerche più elencate nella pagina di **ricerca del contenuto** per la protezione &amp; centro conformità. 
+> Non è possibile esportare i risultati di più ricerche se una di queste ricerche è stata configurata per la ricerca in tutti i contenuti del caso. esportare solo i risultati di più ricerche per le ricerche associate a un caso di eDiscovery. Non è possibile esportare i risultati di più ricerche elencate nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità. 
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic su **Apri** accanto al caso in cui si desidera esportare ricerca dal. 
+2. Fare clic su **Apri** accanto al caso da cui si desidera esportare la ricerca. 
     
-3. Nella Home **page per il case,** fare clic su **Cerca**.
+3. Nella **Home** page del caso, fare clic su **Cerca**.
     
-4. Nell'elenco delle ricerche per il case, selezionare due o più ricerche che si desidera esportare i risultati di ricerca.
-    
-    > [!NOTE]
-    > Per selezionare più ricerche, tenere **premuto Ctrl** mentre si fa clic su ogni ricerca. Oppure è possibile selezionare più ricerche adiacenti facendo clic su prima ricerca, tenere premuto il tasto **MAIUSC** e quindi fare clic su ultima ricerca. 
-  
-5. Dopo aver selezionato le ricerche, fare clic su **Esporta**![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png), quindi fare clic su **esportare i risultati**.
-    
-6. Il * * esportare i risultati della ricerca per le ricerche *n* * * viene visualizzata la pagina, dove *n* è il numero di ricerche per l'esportazione dei risultati per. Si noti che è necessario assegnare un nome al processo di esportazione. 
-    
-    Il flusso di lavoro per esportare i risultati delle ricerche di contenuto più associate a un caso è lo stesso come esportare i risultati di ricerca per una singola ricerca. Per istruzioni dettagliate, vedere [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md).
+4. Nell'elenco delle ricerche per il caso, selezionare due o più ricerche da cui si desidera esportare i risultati della ricerca.
     
     > [!NOTE]
-    > Quando si esportano i risultati della ricerca da più ricerche associate a un caso, è inoltre l'opzione Abilita deduplicazione in modo che solo una copia di un messaggio di posta elettronica verrà esportata anche se più istanze dello stesso messaggio potrebbero essere state trovate nel cassette postali in cui sono state ricercate in uno o più delle ricerche. Per ulteriori informazioni sulla deduplicazione e gli elementi come duplicati vengono identificati, vedere [deduplicazione nei risultati della ricerca eDiscovery](de-duplication-in-ediscovery-search-results.md). 
+    > Per selezionare più ricerche, premere **CTRL** quando si fa clic su ogni ricerca. In alternativa, è possibile selezionare più ricerche adiacenti facendo clic sulla prima ricerca, tenendo premuto il tasto **MAIUSC** e quindi facendo clic sull'ultima ricerca. 
   
-7. Dopo aver avviato l'esportazione, fare clic su **Esporta** per visualizzare l'elenco di esportazione processi che per tale caso. 
+5. Dopo aver selezionato le ricerche, fare clic su **Esporta**![esportazione dei](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)risultati della ricerca, quindi fare clic su **Esporta i risultati**.
     
-    ![Fare clic su Esporta per visualizzare un elenco di processi di esportazione](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
+6. Viene visualizzata la pagina * * Export results for *n* searches * *, dove *n* è il numero di ricerche per cui si stanno esportando i risultati. Si noti che è necessario assegnare un nome al processo di esportazione. 
+    
+    Il flusso di lavoro per esportare i risultati da più ricerche di contenuto associate a un caso equivale all'esportazione dei risultati della ricerca per una singola ricerca. Per istruzioni dettagliate, vedere Esportare i risultati di [ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
+    
+    > [!NOTE]
+    > Quando si esportano i risultati della ricerca da più ricerche associate a un caso, è anche possibile abilitare la deduplicazione in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nel cassette postali di cui è stata eseguita la ricerca in una o più ricerche. Per ulteriori informazioni sulla deduplicazione e sulla modalità di identificazione degli elementi duplicati, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md). 
   
-    Potrebbe essere necessario fare clic su **Aggiorna**![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare l'elenco di processi di esportazione per visualizzare il processo di esportazione appena creata. Si noti che le ricerche che sono stati inclusi nel processo di esportazione sono elencate nella colonna **ricerche** . 
+7. Dopo aver avviato l'esportazione, fare clic su **Esporta** per visualizzare l'elenco dei processi di esportazione che per questo caso. 
     
-8. Fare clic sul processo di esportazione appena creata per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti a un'area di archiviazione Azure nel cloud Microsoft.
+    ![Fare clic su Esporta per visualizzare un elenco dei processi di esportazione](media/b7b95bf7-134e-471e-961e-f86c1bb633eb.png)
+  
+    Potrebbe essere necessario fare clic ****![su Aggiorna l'](media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione per visualizzare il processo di esportazione appena creato. Si noti che le ricerche incluse nel processo di esportazione sono elencate nella colonna **ricerche** . 
     
-9. Dopo che tutti gli elementi sono stati trasferiti, fare clic su **Download esportare i risultati** per scaricare i risultati della ricerca sul computer locale. Per ulteriori informazioni, vedere Step 2 in [risultati di ricerca di esportazione di Office 365 Security &amp; centro conformità](export-search-results.md)
+8. Fare clic sul processo di esportazione appena creato per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti in un'area di archiviazione di Azure nel cloud Microsoft.
     
-#### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Ulteriori informazioni sull'esportazione dei risultati delle ricerche più
+9. Dopo aver trasferito tutti gli elementi, fare clic su **Scarica risultati** esportati per scaricare i risultati della ricerca nel computer locale. Per ulteriori informazioni, vedere il passaggio 2 in [Export Search Results from the Office &amp; 365 Security Compliance Center](export-search-results.md)
+    
+#### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Ulteriori informazioni sull'esportazione dei risultati di più ricerche
 
-- Quando si esportano i risultati delle ricerche più, le query di ricerca da tutte le ricerche vengono combinate utilizzando **o** gli operatori e quindi viene avviata la ricerca combinata. I risultati della ricerca combinato stimati vengono visualizzati nel riquadro dei dettagli del processo di esportazione selezionato. I risultati della ricerca vengono trasferiti quindi nell'area di archiviazione Azure nel cloud Microsoft. Lo stato del trasferimento viene visualizzato anche nel riquadro dei dettagli. Come descritto in precedenza, dopo che sono stati trasferiti tutti i risultati della ricerca, è possibile scaricare tali computer locale. 
+- Quando si esportano i risultati di più ricerche, le query di ricerca provenienti da tutte le **** ricerche vengono combinate tramite gli operatori e quindi viene avviata la ricerca combinata. I risultati stimati della ricerca combinata vengono visualizzati nel riquadro dei dettagli del processo di esportazione selezionato. I risultati della ricerca vengono quindi trasferiti nell'area di archiviazione di Azure nel cloud Microsoft. Anche lo stato del trasferimento viene visualizzato nel riquadro dei dettagli. Come indicato in precedenza, dopo che tutti i risultati della ricerca sono stati trasferiti, è possibile scaricarli nel computer locale. 
     
-- Il numero massimo di parole chiave di query di ricerca per tutte le ricerche che si desidera esportare è 500. (si tratta dello stesso limite per una singola ricerca contenuto). Ciò avviene perché il processo di esportazione combina tutte le query di ricerca utilizzando l'operatore **OR** . Se si supera questo limite, verrà restituito un errore. In questo caso, sarà necessario esportare i risultati delle ricerche meno o semplificare le query di ricerca delle ricerche che si desidera esportare. 
+- Il numero massimo di parole chiave delle query di ricerca per tutte le ricerche che si desidera esportare è 500. (questo è lo stesso limite per una singola ricerca contenuto). Ciò è dovuto al fatto che il processo di esportazione combina tutte le query di ricerca utilizzando l'operatore **or** . Se si supera questo limite, verrà restituito un errore. In questo caso, sarà necessario esportare i risultati da meno ricerche o semplificare le query di ricerca delle ricerche che si desidera esportare. 
     
-- I risultati della ricerca che vengono esportati sono organizzati per l'origine di contenuto che è stato trovato nell'elemento. Ciò significa che un'origine di contenuto nei risultati di esportazione potrebbe avere gli elementi restituiti dalla ricerca diversa. Ad esempio, se si è scelto di esportare i messaggi di posta elettronica in un file PST per ciascuna cassetta postale, il file PST potrebbe essere i risultati delle ricerche più.
+- I risultati della ricerca esportati sono organizzati dall'origine di contenuto in cui è stato trovato l'elemento. Questo significa che un'origine di contenuto nei risultati di esportazione potrebbe avere elementi restituiti da ricerche diverse. Ad esempio, se si è scelto di esportare i messaggi di posta elettronica in un unico file PST per ogni cassetta postale, il file PST potrebbe avere risultati da più ricerche.
     
-- Se il stesso elemento di posta elettronica o il documento dalla stessa posizione contenuta viene restituito da più di una ricerca da esportare, verrà esportata solo una copia dell'elemento.
+- Se lo stesso elemento di posta elettronica o documento proveniente dallo stesso percorso di contenuto viene restituito da più di una delle ricerche esportate, verrà esportata solo una copia dell'elemento.
     
-- È possibile modificare un'esportazione per ricerche più dopo averlo creato. È ad esempio, non possono aggiungere o rimuovere ricerche dall'esportazione. È necessario creare un nuovo processo di esportazione per modificare i risultati della ricerca vengono esportati. Dopo la creazione di un processo di esportazione, è solo possibile scaricare i risultati in un computer, riavviare l'esportazione o eliminare il processo di esportazione.
+- Non è possibile modificare un'esportazione per più ricerche dopo averlo creato. Ad esempio, non è possibile aggiungere o rimuovere le ricerche dall'esportazione. Sarà necessario creare un nuovo processo di esportazione per modificare i risultati di ricerca esportati. Dopo la creazione di un processo di esportazione, è possibile scaricare i risultati solo in un computer, riavviare l'esportazione o eliminare il processo di esportazione.
     
-- Se si riavvia l'esportazione, le modifiche apportate alle query di ricerca che compongono il processo di esportazione non influisce sui risultati della ricerca da recuperare. Quando si riavvia un'esportazione, verrà eseguito nuovamente il processo di query ricerca combinato stessa che era in esecuzione quando è stato creato il processo di esportazione.
+- Se si riavvia l'esportazione, tutte le modifiche apportate alle query delle ricerche che compongono il processo di esportazione non influiscono sui risultati della ricerca che verranno recuperati. Quando si riavvia un'esportazione, viene eseguito di nuovo lo stesso processo di query di ricerca combinato eseguito al momento della creazione del processo di esportazione.
     
-- Se si riavvia un'esportazione dalla pagina **Esporta** in un caso di eDiscovery, i risultati della ricerca che vengono trasferiti all'area di archiviazione Azure sovrascriverà i risultati del precedenti. i risultati precedenti non vi sono stati trasferiti non sarà disponibile per essere scaricato. 
+- Se si riavvia una esportazione dalla pagina **** esportazioni in un caso di eDiscovery, i risultati della ricerca trasferiti nell'area di archiviazione di Azure sovrascrivono i risultati precedenti. i risultati precedenti sono stati trasferiti non saranno disponibili per il download. 
     
-- Preparazione dei risultati delle ricerche più per l'analisi di eDiscovery avanzate non è disponibile. È possibile preparare solo i risultati di una singola ricerca per l'analisi di eDiscovery avanzate.
+- La preparazione dei risultati di più ricerche per l'analisi in Advanced eDiscovery non è disponibile. È possibile preparare solo i risultati di una singola ricerca per l'analisi in Advanced eDiscovery.
   
-## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 7: Preparazione risultati di ricerca per eDiscovery avanzate
+## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 7: preparare i risultati della ricerca per Advanced eDiscovery
 <a name="step7_1"> </a>
 
-Se l'organizzazione dispone di una sottoscrizione a Office 365 E5, è possibile preparare i risultati delle ricerche del contenuto associato a un caso per l'analisi di eDiscovery avanzate. Dopo aver preparato risultati della ricerca, è possibile accedere ai eDiscovery avanzate (vedere [passaggio 8: viene eseguito il caso di eDiscovery avanzate](manage-ediscovery-cases.md#gotoAeD_1)) ed elaborare i dati dei risultati di ricerca per un'ulteriore analisi di eDiscovery avanzate.
+Se l'organizzazione dispone di un abbonamento a Office 365 E5, è possibile preparare i risultati delle ricerche di contenuto associate a un caso di analisi in Advanced eDiscovery. Dopo aver preparato i risultati della ricerca, è possibile passare a Advanced eDiscovery (vedere [Step 8: go to the case in Advanced eDiscovery](manage-ediscovery-cases.md#gotoAeD_1)) ed elaborare i dati dei risultati di ricerca per un'ulteriore analisi in Advanced eDiscovery.
   
-Quando si prepara i risultati della ricerca eDiscovery avanzata, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae automaticamente il testo da immagini. OCR è supportato per file separati, gli allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche testo di eDiscovery avanzate (quasi duplicati, posta elettronica threading, temi e la scrittura di codice predittiva) al testo contenuto nel file di immagine.
+Quando si preparano i risultati della ricerca per Advanced eDiscovery, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae automaticamente il testo dalle immagini. OCR è supportato per file sciolti, allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche del testo avanzate di eDiscovery (quasi duplicati, Threading di posta elettronica, temi e codifica predittiva) a qualsiasi testo nei file di immagine.
   
 > [!NOTE]
-> Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
+> Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5. 
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi di eDiscovery avanzate fare clic su **Apri** . 
+2. Fare clic su **Apri** accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. 
     
-3. Nella Home **page per il case,** fare clic su **Cerca**e quindi selezionare la ricerca.
+3. Nella **Home** page del caso, fare clic su **ricerca**, quindi selezionare la ricerca.
     
-4. Nel riquadro dei dettagli **dei risultati di analisi con eDiscovery avanzate**, fare clic su **Risultati preparazione per l'analisi**.
+4. Nel riquadro dei dettagli, in **Analyze results with Advanced eDiscovery**, fare clic su **prepara i risultati per l'analisi**.
     
 5. Nella pagina **Prepara i risultati per l'analisi**, eseguire le operazioni seguenti:  
     
-  - Scegliere di preparazione per l'analisi di eDiscovery avanzate elementi indicizzati, gli elementi indicizzati e non indicizzati o solo gli elementi indicizzati.
+  - Scegliere di preparare gli elementi indicizzati, gli elementi indicizzati e non indicizzati oppure solo gli elementi non indicizzati per l'analisi in Advanced eDiscovery.
     
-  - Scegliere se includere tutte le versioni dei documenti disponibili in SharePoint che soddisfano i criteri di ricerca. Questa opzione è disponibile solo se le origini di contenuto per la ricerca include siti.
+  - Scegliere se includere tutte le versioni dei documenti trovati in SharePoint che soddisfano i criteri di ricerca. Questa opzione viene visualizzata solo se le origini di contenuto per la ricerca includono siti.
     
-  - Consente di specificare se si desidera che un messaggio di notifica inviato o copiata una persona quando viene completato il processo di preparazione e i dati sono pronti per l'elaborazione di eDiscovery avanzate.
+  - Specificare se si desidera che un messaggio di notifica venga inviato (o copiato) a una persona al termine del processo di preparazione e che i dati siano pronti per essere elaborati in Advanced eDiscovery.
     
 6. Fare clic su **Prepara**.
     
-    I risultati della ricerca vengono preparati per l'analisi con eDiscovery avanzate.
+    I risultati della ricerca sono pronti per l'analisi con Advanced eDiscovery.
     
-7. Nel riquadro dei dettagli fare clic su **verificare lo stato di preparazione** per visualizzare le informazioni sul processo di preparazione. Al termine del processo di preparazione, è possibile accedere al caso di eDiscovery avanzate per elaborare i dati per l'analisi. 
+7. Nel riquadro dei dettagli, fare clic su **Controlla stato preparazione** per visualizzare le informazioni sul processo di preparazione. Al termine del processo di preparazione, è possibile passare al caso in Advanced eDiscovery per elaborare i dati per l'analisi. 
   
-## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Passaggio 8: Viene eseguito il caso di eDiscovery avanzate
+## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Passaggio 8: passare alla causa in Advanced eDiscovery
 <a name="gotoAeD_1"> </a>
 
-Dopo aver creato un caso nella protezione &amp; centro conformità, è possibile accedere allo stesso caso di eDiscovery avanzate.
+Dopo aver creato un caso nel centro sicurezza &amp; e conformità, è possibile passare allo stesso caso in Advanced eDiscovery.
   
 Per accedere a un caso in Advanced eDiscovery:
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Accanto al caso in cui si desidera passare a eDiscovery avanzate fare clic su **Apri** . 
+2. Fare clic su **Apri** accanto al caso in cui si desidera accedere in Advanced eDiscovery. 
     
-3. Nella Home **page per il case,** fare clic su **passa a eDiscovery avanzate**.
+3. Nella **Home** page del caso, fare clic su **passa a Advanced eDiscovery**.
     
-    ![Fare clic su passa a eDiscovery avanzate per aprire il caso di eDiscovery avanzate](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Fare clic su passa a Advanced eDiscovery per aprire il caso in Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    Viene visualizzato l'indicatore di stato di **connessione avanzate eDiscovery** . Quando si è connessi a eDiscovery avanzate, nella pagina viene visualizzato un elenco dei contenitori. 
+    Viene visualizzata la barra **di avanzamento per la connessione a Advanced eDiscovery** . Quando si è connessi a Advanced eDiscovery, nella pagina viene visualizzato un elenco di contenitori. 
     
-    ![Viene visualizzato il caso di eDiscovery avanzate](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Il caso viene visualizzato in Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-    Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi di eDiscovery avanzata nel passaggio 7. Si noti che il nome del contenitore ha lo stesso nome di ricerca del contenuto nel caso della protezione &amp; centro conformità. I contenitori nell'elenco sono quelli preparato. Se un utente diverso preparato risultati della ricerca eDiscovery avanzate, i contenitori corrispondenti non vengono inclusi nell'elenco.
+    Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi in Advanced eDiscovery nel passaggio 7. Si noti che il nome del contenitore ha lo stesso nome della ricerca di contenuto nel caso nel centro sicurezza &amp; e conformità. I contenitori presenti nell'elenco sono quelli che sono stati preparati. Se un utente diverso ha preparato i risultati della ricerca per Advanced eDiscovery, i contenitori corrispondenti non verranno inclusi nell'elenco.
     
-4. Per caricare i dati dei risultati di ricerca da un contenitore per il caso di eDiscovery avanzate, selezionare un contenitore e fare clic su **processo**.
+4. Per caricare i dati dei risultati di ricerca da un contenitore a un caso in Advanced eDiscovery, selezionare un contenitore e fare clic su **processo**.
     
-    Per informazioni su come contenitori processo, vedere [eseguita la funzionalità di processo e caricamento dei dati in Office 365 avanzate eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
+    Per informazioni su come elaborare i contenitori, vedere [eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
     
 > [!TIP]
-> Fare clic su **passa a eDiscovery** per tornare allo stesso caso nella protezione &amp; centro conformità. 
+> Fare clic su **passa a eDiscovery** per tornare allo stesso caso nel centro sicurezza &amp; e conformità. 
   
-## <a name="optional-step-9-close-a-case"></a>(Facoltativo) Passaggio 9: Chiudere un caso
+## <a name="optional-step-9-close-a-case"></a>Optional Passaggio 9: chiudere un caso
 <a name="closecase_1"> </a>
 
-Una volta completata la persona o l'indagine supportate da un caso di eDiscovery, è possibile chiudere il caso. Ecco cosa succede quando si chiude un caso:
+Quando viene completata la causa legale o l'indagine supportata da un caso di eDiscovery, è possibile chiudere il caso. Ecco cosa succede quando si chiude un caso:
   
-- Se il caso contiene tutti i percorsi di contenuti in attesa, le esenzioni verranno disattivate. Ciò potrebbe determinare contenuto viene eliminato definitivamente o eliminati dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.
+- Se il caso contiene eventuali posizioni di contenuto in attesa, tali esenzioni saranno disattivate. Potrebbe risultare che il contenuto venga eliminato o rimosso definitivamente, dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.
     
-- Solo un caso di chiusura viene disattivata l'archiviazione associati a tale caso. Se altri tipi di conservazioni vengono effettuate su un percorso di contenuto (ad esempio una controversia esenzione. criteri di conservazione o per un conservazione da un caso eDiscovery diversi) verranno mantenute ancora tali esenzioni.
+- La chiusura di un caso disattiva solo le esenzioni associate a quel caso. Se altre esenzioni sono posizionate in una posizione di contenuto, ad esempio un blocco per controversia legale. un criterio di conservazione o un'esenzione da un altro caso di eDiscovery, tali esenzioni verranno mantenute.
     
-- Nel caso ancora è elencato nella pagina di eDiscovery in sicurezza &amp; centro conformità. Vengono mantenuti le informazioni dettagliate, esenzioni, ricerche e i membri di un caso chiuso.
+- Il caso è ancora elencato nella pagina eDiscovery nel centro sicurezza &amp; e conformità. Vengono mantenuti i dettagli, le esenzioni, le ricerche e i membri di un caso chiuso.
     
-- È possibile modificare un caso dopo la chiusura. Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche, esportare i risultati della ricerca e preparare risultato di ricerca per l'analisi di eDiscovery avanzate. La differenza principale tra attivi e di chiusi dei casi è esenzioni la disattivazione di chiusura di un caso.
+- È possibile modificare un caso dopo che è stato chiuso. Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche, esportare i risultati della ricerca e preparare il risultato della ricerca per l'analisi in Advanced eDiscovery. La differenza principale tra casi attivi e chiusi consiste nel fatto che le esenzioni sono disattivate quando un caso viene chiuso.
     
 Per chiudere un caso:
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic sul nome del case che si desidera chiudere.
+2. Fare clic sul nome del caso che si desidera chiudere.
     
-    Viene visualizzata la pagina **Gestisci in questo caso** i comparsa. 
+    Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
     
-3. In **stato del caso Gestisci**, fare clic su ![rimuovere il pulsante Anteprima](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **chiudere un caso**.
+3. In **Manage case status**fare ![clic su Rimuovi il](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **caso di chiusura**del pulsante di visualizzazione.
     
-4. Nella pagina **dei dettagli** fare clic su **Chiudi case**.
+4. Nella pagina **Dettagli** fare clic su **Chiudi maiuscole**e minuscole.
     
-    Viene visualizzato un avviso indicante che le conservazioni associate al caso verranno disattivate.
+    Viene visualizzato un messaggio di avviso in cui viene indicato che le esenzioni associate al caso saranno disattivate.
     
 5. Fare clic su **Sì** per chiudere il caso. 
     
-    Lo stato nella pagina **Gestisci in questo caso** comparsa viene modificato da **attivo** per **la chiusura**.
+    Lo stato della pagina Gestisci il riquadro a comparsa di **questo caso** è stato modificato da **attivo** a **chiusura**.
     
-6. Chiudere **gestione in questo caso**.
+6. Chiudere **gestire questo caso**.
     
-7. Nella pagina **eDiscovery** fare clic su ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare lo stato del caso chiuso. Potrebbero richiedere fino a 60 minuti per il processo di chiusura per il completamento. 
+7. Nella pagina **eDiscovery** fare clic ![su Aggiorna icona](media/O365-MDM-Policy-RefreshIcon.gif) **** Aggiorna per aggiornare lo stato del caso chiuso. Il completamento del processo di chiusura potrebbe richiedere fino a 60 minuti. 
     
-    Una volta completato il processo, lo stato del caso viene modificato per **Chiudi** nella pagina di **eDiscovery** . Fare clic sul nome del caso nuovamente per visualizzare la pagina di comparsa **Gestisci in questo caso** , che contiene informazioni su quando il caso è stata chiusa e che ha chiuso. 
+    Al termine del processo, lo stato della distinzione tra maiuscole e minuscole viene modificato in **Chiudi** nella pagina **eDiscovery** . Fare di nuovo clic sul nome del caso per visualizzare la pagina Gestisci il riquadro a comparsa di **questo caso** , che contiene informazioni su quando il caso è stato chiuso e chi l'ha chiusa. 
   
-## <a name="optional-step-10-re-open-a-closed-case"></a>(Facoltativo) Passaggio 10: Aprire nuovamente un caso chiuso
+## <a name="optional-step-10-re-open-a-closed-case"></a>Optional Passaggio 10: riaprire un caso chiuso
 <a name="reopencase_1"> </a>
 
-Quando si apre nuovamente un caso, qualsiasi esenzioni che erano presenti al momento è stata chiusa il caso non vengono ripristinati automaticamente. Dopo aver aperto nuovamente il caso, sarà necessario passare alla pagina **conservazione** e attivare l'archiviazione precedente. Per attivare un'esenzione, selezionarlo e fare clic su **attivarlo** nel riquadro dei dettagli. 
+Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato chiuso non verranno ripristinate automaticamente. Dopo che il caso è stato riaperto, è necessario andare alla pagina di **blocco** e accendere le esenzioni precedenti. Per abilitare un'esenzione, selezionarla e fare clic **su attiva** nel riquadro dei dettagli. 
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Fare clic sul nome del case che si desidera aprire nuovamente.
+2. Fare clic sul nome del caso che si desidera riaprire.
     
-    Viene visualizzata la pagina **Gestisci in questo caso** i comparsa. 
+    Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
     
-3. In **Gestione stato del caso**, fare clic su **riaprire case**.
+3. In **Manage case status**fare clic su **riapri caso**.
     
-    Viene visualizzato un avviso indicante che le conservazioni che era associate al caso quando era close non essere attivate automaticamente.
+    Viene visualizzato un messaggio di avviso in cui viene indicato che le esenzioni associate alla distinzione tra maiuscole e minuscole non verranno attivate automaticamente.
     
-4. Fare clic su **Sì** per aprire nuovamente il caso. 
+4. Fare clic su **Sì** per riaprire il caso. 
     
-    Lo stato nella pagina **Gestisci in questo caso** comparsa viene modificato da **chiuso** ad **attivo**.
+    Lo stato della pagina Gestisci il riquadro a comparsa di **questo caso** è stato modificato da **chiuso** a **attivo**.
     
-5. Chiudere **gestione in questo caso**.
+5. Chiudere **gestire questo caso**.
     
-6. Nella pagina **eDiscovery** fare clic su ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare lo stato del caso riaperto. Potrebbero richiedere fino a 60 minuti completare il processo nuovamente apertura. 
+6. Nella pagina **eDiscovery** fare clic ![su Aggiorna icona](media/O365-MDM-Policy-RefreshIcon.gif) **** Aggiorna per aggiornare lo stato del caso riaperto. Per il completamento del processo di riapertura, potrebbero essere necessari fino a 60 minuti. 
     
-    Una volta completato il processo, lo stato del caso viene modificato in **attivo** nella pagina di **eDiscovery** . 
+    Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
 ## <a name="more-information"></a>Ulteriori informazioni
 <a name="moreinfo_1"> </a>
 
-- **Sono presenti i limiti per casi di eDiscovery o esenzioni associate a un caso eDiscovery?** Nella tabella seguente sono elencati i limiti per casi di eDiscovery e conservazioni maiuscole.
+- Esistono **limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     
 |**Descrizione del limite**|**Tipo di limite**|
 |:-----|:-----|
-|Numero massimo di case per un'organizzazione  <br/> |Nessun limite  <br/> |
-|Numero massimo di case contiene di un'organizzazione  <br/> |10,000  <br/> |
-|Numero massimo di cassette postali in un unico involucro di conservazione  <br/> |1,000  <br/> |
-|Numero massimo di SharePoint e OneDrive per i siti in un'esenzione maiuscole singolo  <br/> |100  <br/> |
+|Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
+|Numero massimo di case conservate per un'organizzazione  <br/> |10,000  <br/> |
+|Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1,000  <br/> |
+|Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco del caso  <br/> |100  <br/> |
    
-- **Cosa sui casi in cui sono stati creati nella pagina Gestione dei casi di eDiscovery avanzata?** È possibile accedere a un elenco di meno recenti casi di eDiscovery avanzate facendo clic sul collegamento nella parte inferiore della pagina di **eDiscovery** per la protezione &amp; centro conformità. Tuttavia, che eseguono le operazioni in un caso precedente, è necessario contattare il supporto di Office 365 e richiede che venga spostato nel caso di un nuovo caso nella protezione &amp; centro conformità. 
+- **Che dire dei casi creati nella pagina di gestione dei casi in Advanced eDiscovery?** È possibile accedere a un elenco dei casi di eDiscovery avanzati precedenti facendo clic sul collegamento nella parte inferiore della pagina **eDiscovery** nel centro &amp; sicurezza e conformità. Tuttavia, per eseguire qualsiasi operazione in un caso meno recente, è necessario contattare il supporto di Office 365 e richiedere che il caso venga spostato in un nuovo caso di eDiscovery &amp; nel centro sicurezza e conformità. 
     
-- **Informazioni sulla creazione di un'amministratore di eDiscovery?** Come precedentemente illustrato, una ricerca eDiscovery amministratore è membro del gruppo di ruoli gestione eDiscovery in grado di visualizzare e accedere a tutti i casi di eDiscovery nell'organizzazione. Questa possibilità di accedere a tutti i casi di eDiscovery ha due importanti scopi:
+- **Perché creare un amministratore di eDiscovery?** Come spiegato in precedenza, un amministratore di eDiscovery è membro del gruppo di ruoli Gestione eDiscovery che può visualizzare e accedere a tutti i casi di eDiscovery nell'organizzazione. Questa possibilità di accedere a tutti i casi di eDiscovery ha due scopi importanti:
     
-  - Se una persona è l'unico membro di un caso eDiscovery lascia l'organizzazione, inclusi i membri del gruppo di ruoli Gestione organizzazione o un altro membro del gruppo di ruoli di gestione di eDiscovery, per accedere tale caso di eDiscovery poiché non sono membri di un caso. In questo caso, non potrebbe essere possibile in alcun modo per accedere ai dati nel caso. Ma dal momento che un'amministratore di eDiscovery può accedere a tutti i casi di eDiscovery nell'organizzazione, possano visualizzare il caso nella protezione &amp; centro conformità e aggiungere se stessi o un altro eDiscovery manager come membro del case.
+  - Se una persona che è l'unico membro di un caso di eDiscovery lascia l'organizzazione, nessuno (compresi i membri del gruppo di ruoli Gestione organizzazione o un altro membro del gruppo di ruolo gestione eDiscovery) può accedere a tale caso eDiscovery perché non è un membro di un caso. In questa situazione, non esiste alcun modo per accedere ai dati nel caso. Tuttavia, poiché un amministratore di eDiscovery può accedere a tutti i casi di eDiscovery nell'organizzazione, è in grado di &amp; visualizzare il caso nel centro sicurezza e di aggiungere se stessi o un altro responsabile di eDiscovery come membro del caso.
     
-  - Dal momento che un'amministratore di eDiscovery può visualizzare e accedere a tutti i casi di eDiscovery, si può controllare e controllare tutti i casi e le ricerche di contenuto associati. Ciò consente di impedire qualsiasi utilizzo non corretto di ricerche di contenuto o casi di eDiscovery. E poiché eDiscovery gli amministratori possono accedere a informazioni riservate nei risultati della ricerca di contenuto, è consigliabile limitare il numero di persone che sono amministratori eDiscovery.
+  - Poiché un amministratore di eDiscovery può visualizzare e accedere a tutti i casi di eDiscovery, è in grado di controllare e controllare tutti i casi e le ricerche di contenuto associate. Ciò può contribuire a impedire qualsiasi utilizzo improprio delle ricerche di contenuto o dei casi di eDiscovery. Poiché gli amministratori di eDiscovery possono accedere alle informazioni potenzialmente riservate nei risultati di una ricerca di contenuto, è necessario limitare il numero di utenti che sono amministratori di eDiscovery.
     
-    Infine, precedente come spiegato, gli amministratori di eDiscovery in sicurezza &amp; centro conformità vengono aggiunte automaticamente come amministratori di eDiscovery avanzate. Ciò significa che la persona che un'amministratore di eDiscovery può eseguire attività amministrative di eDiscovery avanzate, ad esempio configurazione degli utenti, creare casi e aggiunta di dati ai casi.
+    Infine, come spiegato in precedenza, gli amministratori di eDiscovery &amp; nel centro sicurezza e conformità vengono aggiunti automaticamente come amministratori in Advanced eDiscovery. Questo significa che una persona che è un amministratore di eDiscovery può eseguire attività amministrative in eDiscovery avanzata, ad esempio la configurazione degli utenti, la creazione di case e l'aggiunta di dati ai casi.
     
-- **Che cosa sono i requisiti di licenza per i percorsi di contenuti di mettere in attesa?** In generale, le organizzazioni richiedono una sottoscrizione a Office 365 E3 o superiore per posizionare i percorsi di contenuti in attesa. Per archiviare cassette postali, è necessaria una licenza di Exchange Online piano 2. Per ulteriori informazioni, vedere [domande frequenti su](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5)questo.
+- **Quali sono i requisiti per la gestione delle licenze per il blocco dei percorsi di contenuto?** In generale, le organizzazioni richiedono un abbonamento a Office 365 E3 o versioni successive per inserire posizioni di contenuto in attesa. Per inserire le cassette postali in attesa, è necessaria una licenza di Exchange Online piano 2. Per ulteriori informazioni, vedere le [domande frequenti](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5).
 
-- **Altro conoscenze indispensabili per sulla ricerca in tutto il contenuto sociale nel passaggio 5?** Come indicato in precedenza, è possibile cercare i percorsi di contenuti messe in attesa nel caso. A tale scopo, solo il contenuto che soddisfa i criteri di conservazione è ricerca. Se non esiste alcun criterio di conservazione, tutto il contenuto viene eseguita la ricerca. Se è basati su query contenuto attesa, solo il contenuto che corrisponde a entrambi contenuti criteri (dall'esenzione incluso nel passaggio 4) e i criteri di ricerca (dalla ricerca nel passaggio 5) viene restituito con i risultati della ricerca.
+- **Cos'altro è necessario sapere sulla ricerca di tutti i contenuti del caso nel passaggio 5?** Come spiegato in precedenza, è possibile eseguire una ricerca nei percorsi di contenuto che sono stati inseriti in attesa nel caso. Quando si esegue questa operazione, solo il contenuto che corrisponde ai criteri di blocco è search. Se non è presente alcun criterio di conservazione, viene cercato tutto il contenuto. Se il contenuto è in un blocco basato su query, viene restituito solo il contenuto che corrisponde a entrambi i criteri di conservazione (dal blocco posto nel passaggio 4) e i criteri di ricerca (dalla ricerca nel passaggio 5).
     
-    Ecco alcuni altri aspetti da tenere presenti durante la ricerca di tutto il contenuto sociale:
+    Di seguito sono riportate alcune considerazioni da tenere presenti quando si esegue la ricerca di tutti i contenuti del caso:
     
-  - Se un percorso di contenuto fa parte di più conservazioni all'interno del case stesso, le query di conservazione vengono combinate da un operatore **o** quando si esegue la ricerca percorso contenuto utilizzando l'opzione contenuto sociale tutti. Analogamente, se un percorso di contenuto fa parte di due diversi contiene, dove 1 è basata su query e l'altra è un'attesa infinita (in tutto il contenuto viene messa in attesa), tutto il contenuto sarà ricerca a causa di attesa infinita. 
+  - Se una posizione di contenuto fa parte di più riserve nello stesso caso, le query di blocco vengono combinate da un operatore **or** quando si esegue una ricerca nel percorso del contenuto utilizzando l'opzione tutti i contenuti di caso. Analogamente, se una posizione di contenuto fa parte di due diverse esenzioni, in cui una è basata su query e l'altra è una conservazione infinita (in cui tutto il contenuto viene messo in attesa), tutto il contenuto sarà ricerca a causa del blocco infinito. 
     
-  - Se è una ricerca di contenuto per un caso ed è configurato per tutto il contenuto sociale di ricerca e quindi si modifica un'esenzione (mediante l'aggiunta o rimozione di un percorso di contenuto o modificare la query di attesa), la configurazione della ricerca viene aggiornata con le modifiche. Tuttavia, è necessario eseguire di nuovo la ricerca dopo la modifica di esenzione per aggiornare i risultati della ricerca.
+  - Se si tratta di una ricerca di contenuto per un caso ed è stata configurata per la ricerca in tutti i contenuti del caso e quindi si modifica un blocco (aggiungendo o rimuovendo una posizione di contenuto o cambiando la query di blocco), la configurazione di ricerca verrà aggiornata con tali modifiche. Tuttavia, è necessario eseguire di nuovo la ricerca dopo che il blocco è stato modificato per aggiornare i risultati della ricerca.
     
-  - Se più conservazioni maiuscole vengono inseriti in un percorso di contenuto in un caso eDiscovery e si seleziona ricerca tutto il contenuto sociale, il numero massimo di parole chiave per la query di ricerca è 500. Ciò avviene perché la ricerca del contenuto combina tutte le esenzioni basata su query utilizzando l'operatore **OR** . Se sono presenti che più di 500 parole chiave nell'oggetto combinati attesa query e la query di ricerca del contenuto, quindi viene eseguita la ricerca tutto il contenuto della cassetta postale, non solo che il contenuto che corrisponde a una delle case basata su query contiene. 
+  - Se più case sono posizionate in un percorso di contenuto in un caso di eDiscovery e si seleziona per eseguire la ricerca in tutti i contenuti del caso, il numero massimo di parole chiave per la query di ricerca è 500. Ciò è dovuto al fatto che la ricerca di contenuto combina tutte le esenzioni basate su query utilizzando l'operatore **or** . Se sono presenti più di 500 parole chiave nelle query di archiviazione combinata e nella query di ricerca del contenuto, viene cercato tutto il contenuto della cassetta postale, non solo il contenuto che corrisponde a qualsiasi caso basato su query. 
     
-  - Se un'esenzione maiuscole lo stato di **attivazione**, è comunque possibile cercare i percorsi di contenuti maiuscole mentre è attivato l'esenzione.
+  - Se il blocco di un caso ha lo stato di **attivazione**, è comunque possibile eseguire la ricerca nei percorsi del contenuto del caso mentre il blocco è attivo.
     
-  - Come affermato in precedenza, se una ricerca è configurata per tutto il contenuto sociale di ricerca non è possibile includere tale ricerca se si desidera esportare i risultati delle ricerche più. Se una ricerca è configurata per tutto il contenuto sociale di ricerca, è necessario esportare i risultati della ricerca singolo.
+  - Come indicato in precedenza, se una ricerca è configurata per la ricerca in tutti i contenuti del caso, non è possibile includere tale ricerca se si desidera esportare i risultati di più ricerche. Se una ricerca è configurata per la ricerca in tutti i contenuti del caso, sarà necessario esportare i risultati di tale singola ricerca.
     
-- **Informazioni sul posizionamento un'esenzione in gruppi di Office 365 e Microsoft Teams?** Microsoft Teams si basano sui gruppi di Office 365. Pertanto, in cui vengono posizionati in attesa di un caso eDiscovery è molto simile. Tenere presenti i seguenti aspetti quando posizionamento gruppi di Office 365 e Microsoft Teams in attesa. 
+- **Informazioni su come archiviare i gruppi di Office 365 e Microsoft teams.** Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams. 
     
-  - Per mettere il contenuto disponibile in Office 365 gruppi e Microsoft Teams in attesa, è necessario specificare la cassetta postale e del sito che associate a un gruppo o un team di SharePoint.
+  - Per inserire il contenuto presente nei gruppi di Office 365 e Microsoft teams in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
     
-  - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà per un Team di Microsoft o un gruppo di Office 365. Si tratta di un modo efficace per ottenere l'URL per il sito di cui è associato un Team di Microsoft o un gruppo di Office 365. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Team leader Senior: 
+  - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un gruppo di Office 365 o di un team di Microsoft. Questo è un ottimo metodo per ottenere l'URL del sito associato a un gruppo di Office 365 o a un team di Microsoft. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team: 
     
   ```
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -545,29 +545,29 @@ Quando si apre nuovamente un caso, qualsiasi esenzioni che erano presenti al mom
   ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet **Get-UnifiedGroup** , è necessario essere assegnato il ruolo di amministratore destinatari di Exchange Online o essere un membro del gruppo di ruoli che è assegnato il ruolo destinatari di sola visualizzazione. 
+    > Per eseguire il cmdlet **Get-UnifiedGroup** , è necessario assegnare il ruolo destinatari di sola visualizzazione in Exchange Online o essere membri di un gruppo di ruoli a cui è assegnato il ruolo destinatari di sola visualizzazione. 
   
-  - Quando viene eseguita la ricerca cassetta postale dell'utente, qualsiasi gruppo di Office 365 o Team Microsoft che l'utente è membro di non eseguire la ricerca. Analogamente, quando si effettua un gruppo di Office 365 o al Team di Microsoft di attesa, solo la cassetta postale di gruppo e i siti gruppo vengono inseriti nel attesa; le cassette postali e OneDrive per i siti dei membri del gruppo non sono messa in attesa, a meno che non è in modo esplicito aggiungerli all'esenzione. Di conseguenza, se è la necessità di inserire un gruppo di Office 365 o un Team di Microsoft in attesa per motivi legali, si consiglia di aggiungere le cassette postali e OneDrive per i siti per i membri di gruppi e team sullo stesso attesa.
+  - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi gruppo di Office 365 o Microsoft Team di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un gruppo di Office 365 o un blocco di Microsoft Team, solo la cassetta postale di gruppo e il sito del gruppo vengono conservati in blocco; le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito all'esenzione. Pertanto, se si ha la necessità di disporre di un gruppo di Office 365 o di un team di Microsoft per un motivo legale, è consigliabile aggiungere le cassette postali e i siti di OneDrive for business per i membri del gruppo e del team nello stesso blocco.
     
-  - Per ottenere un elenco dei membri di un gruppo di Office 365 o un Team di Microsoft, è possibile visualizzare le proprietà nel **Home \> gruppi** pagina nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il seguente comando in Exchange Online PowerShell: 
+  - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina **Home \> groups** nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet **Get-UnifiedGroupLinks** , è necessario essere assegnato il ruolo di amministratore destinatari di Exchange Online o essere un membro del gruppo di ruoli che è assegnato il ruolo destinatari di sola visualizzazione. 
+    > Per eseguire il cmdlet **Get-UnifiedGroupLinks** , è necessario assegnare il ruolo destinatari di sola visualizzazione in Exchange Online o essere membri di un gruppo di ruoli a cui è assegnato il ruolo destinatari di sola visualizzazione. 
   
-  - Le conversazioni che fanno parte di un canale Teams Microsoft sono archiviate nella cassetta postale di cui è associato il Team di Microsoft. Analogamente, i file che i membri del team di condividere un canale vengono archiviati nel sito di SharePoint del team. Di conseguenza, è necessario inserire la cassetta postale del Team di Microsoft e siti di SharePoint in attesa per mantenere le conversazioni e i file in un canale.
+  - Le conversazioni che fanno parte di un canale Microsoft teams vengono memorizzate nella cassetta postale associata al team di Microsoft. Analogamente, i file che condividono i membri del team in un canale sono archiviati nel sito di SharePoint del team. Pertanto, è necessario inserire la cassetta postale di Microsoft Team e il sito di SharePoint in attesa per conservare le conversazioni e i file in un canale.
     
-    In alternativa, le conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams sono archiviate nella cassetta postale dell'utente che partecipano alla chat. E i file che un utente condivide conversazioni Chat vengono archiviati in OneDrive per sito aziendale dell'utente che condivide il file. Di conseguenza, è necessario inserire le cassette postali degli utenti singoli e OneDrive per i siti di Business in attesa per mantenere le conversazioni e i file nell'elenco Chat. Per questa ragione è buona norma per effettuare un'esenzione per le cassette postali dei membri di un Team di Microsoft oltre a effettuare la cassetta postale del team (e il sito) in attesa.
+    In alternativa, le conversazioni che fanno parte dell'elenco chat in Microsoft teams vengono memorizzate nella cassetta postale dell'utente che partecipa alla chat. E i file che un utente condivide nelle conversazioni chat sono archiviati nel sito di OneDrive for business dell'utente che condivide il file. Pertanto, è necessario posizionare i singoli utenti e le cassette postali di OneDrive for business in attesa per conservare le conversazioni e i file nell'elenco chat. Questo è il motivo per cui è consigliabile applicare un blocco alle cassette postali dei membri di un team di Microsoft oltre a mettere in attesa la cassetta postale del team (e il sito).
     
     > [!IMPORTANT]
-    > Utenti di partecipare a conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams devono disporre di una cassetta postale Exchange Online (basata su cloud) per mantenere le conversazioni chat quando la cassetta postale si trova in un'esenzione di eDiscovery. Ciò avviene perché le conversazioni che fanno parte dell'elenco di Chat vengono archiviate nelle cassette postali basate su cloud partecipanti alla chat. Se un partecipante di chat non è una cassetta postale di Exchange Online, non sarà in grado di mantenere le conversazioni chat. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams. Tuttavia in questo caso, il contenuto da queste conversazione non è mantenuto dal momento che gli utenti non dispongono di cassette postali basate sul cloud. 
+    > Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Microsoft teams devono disporre di una cassetta postale di Exchange Online (basata su cloud) per mantenere le conversazioni chat quando la cassetta postale viene inserita in un blocco di eDiscovery. Questo perché le conversazioni che fanno parte dell'elenco chat sono memorizzate nelle cassette postali basate sul cloud dei partecipanti alla chat. Se un partecipante alla chat non dispone di una cassetta postale di Exchange Online, non sarà in grado di mantenere le conversazioni chat. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti che dispongono di una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Microsoft teams. Tuttavia, in questo caso, il contenuto di queste conversazioni non può essere mantenuto perché gli utenti non dispongono di cassette postali basate sul cloud. 
   
-  - Ogni canale Team di Microsoft o un team contiene un Wiki per la collaborazione e gestione delle note. Il contenuto Wiki viene automaticamente salvato in un file in formato con estensione mht. In questo file è archiviato nella raccolta documenti di team Wiki dati nel sito di SharePoint del team. È possibile inserire il contenuto nel Wiki in attesa inserendo il sito di SharePoint del team in attesa.
+  - Ogni canale di Microsoft Team o team contiene un wiki per la partecipazione alle note e la collaborazione. Il contenuto wiki viene salvato automaticamente in un file con formato. mht. Questo file è archiviato nella raccolta documenti dei dati wiki del team nel sito di SharePoint del gruppo. È possibile inserire il contenuto nel wiki in attesa inserendo il sito di SharePoint del team in attesa.
     
     > [!NOTE]
-    > La possibilità di conservare contenuto Wiki per un Team di Microsoft o un team di canale (quando si effettua il sito di SharePoint del team in sospeso) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, Wiki contenuto verrà mantenuto partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto Wiki è stato eliminato prima del 22 giugno 2017, il contenuto Wiki non è stato mantenuto. 
+    > La possibilità di conservare il contenuto wiki per un canale Microsoft Team o team (quando si posiziona il sito di SharePoint del team in attesa) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, il contenuto del wiki verrà mantenuto a partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto del wiki è stato eliminato entro il 22 giugno 2017, il contenuto del wiki non è stato mantenuto. 
   
-- **Come è possibile trovare l'URL di OneDrive per i siti?** Per la raccolta di un elenco degli URL per il OneDrive per i siti all'interno dell'organizzazione in modo che è possibile aggiungerli a un'esenzione o di ricerca associata a un caso di eDiscovery, vedere [creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Questo script in questo articolo consente di creare un file di testo contenente un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e utilizzare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL per il dominio dell'organizzazione sito personale per ogni sito OneDrive che si desidera eseguire la ricerca. Si tratta del dominio che contiene tutti i OneDrive; ad esempio `https://contoso-my.sharepoint.com`. Di seguito è riportato un esempio di un URL per il sito di OneDrive dell'utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- **Come trovare l'URL per i siti di OneDrive for business?** Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione, in modo da poterli aggiungere a un'esenzione o a una ricerca associata a un caso di eDiscovery, vedere [creare un elenco di tutte le posizioni di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Questo script in questo articolo consente di creare un file di testo contenente un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e utilizzare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio del sito Web dell'organizzazione a ogni sito di OneDrive che si desidera ricercare. Questo è il dominio che contiene tutti i OneDrive; ad esempio, `https://contoso-my.sharepoint.com`. Di seguito è riportato un esempio di un URL per il sito di OneDrive `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`di un utente:.

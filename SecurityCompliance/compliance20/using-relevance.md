@@ -1,12 +1,12 @@
 ---
-title: Utilizzare la funzionalità di pertinenza per analizzare i dati di eDiscovery avanzate (Preview)
+title: Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,130 +14,130 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 53f1906b28c6c6b467e147951e7c55aa7358a4a7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695172"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215436"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilizzare la funzionalità di pertinenza per analizzare i dati di eDiscovery avanzate (Preview)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery (Preview)
 
-In eDiscovery avanzate (anteprima), la funzionalità di pertinenza include i pertinenza e verifica dei file correlati a un caso. Il flusso di lavoro di pertinenza è illustrato e descritto di seguito:
+In Advanced eDiscovery (Preview), il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   
 ![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- **Cicli di valutazione e monitoraggio**:
+- **Cicli di valutazione e tracciabilità**:
     
-  - **Valutazione**: Abilita assessment anticipati in base a un campione casuale di file e viene utilizzata questa valutazione per applicare le decisioni per determinare le prestazioni del processo di codifica predittiva. 
+  - **Valutazione**: consente la valutazione precoce basata su un campione casuale di file e utilizza questa valutazione per applicare le decisioni per determinare le prestazioni del processo di codifica predittiva. 
     
-  - **Tenere traccia degli**: calcolare e visualizzare i risultati della valutazione durante il monitoraggio statistiche validità del processo di. 
+  - **Track**: calcolare e visualizzare i risultati intermedi della valutazione monitorando la validità statistica del processo. 
     
-- **Cicli di verifica e corsi di formazione**
+- **Cicli di training e Tracking**
     
-  - **Tag**: criteri di pertinenza specifici per ogni problema sulla base iterativo verifica dell'esperto e tagging dei singoli file acquisita dalla eDiscovery avanzate (Preview).
+  - **Tag**: Advanced eDiscovery (Preview) vengono fornite informazioni sui criteri di pertinenza specifici per ogni problema in base alla revisione iterativa dell'esperto e al tagging di singoli file.
     
-  - **Tenere traccia degli**: calcolare e visualizzare i risultati della formazione pertinenza durante il monitoraggio statistiche validità del processo. 
+  - **Track**: calcola e Visualizza i risultati intermedi della formazione relativa alla pertinenza monitorando la validità statistica del processo. 
     
-- **Calcolo batch**: I criteri di pertinenza accumulati e acquisiti viene applicato all'intero insieme di file e per ogni file viene generato un punteggio di pertinenza.
+- **Calcolo batch**: i criteri di pertinenza accumulati e appresi vengono applicati all'intera raccolta file e viene generato un punteggio di pertinenza per ogni file.
     
-- **Stabilire**: I risultati dell'analisi applicata al caso intera viene visualizzata dopo il calcolo Batch e dati utilizzati per prendere decisioni revisione documento vengono visualizzati.
+- **Decidere**: i risultati dell'analisi applicata all'intero caso vengono visualizzati dopo il calcolo del batch e vengono visualizzati i dati utilizzati per definire le decisioni relative alla revisione dei documenti.
     
-- **Test**: risultati devono essere provati per verificare la validità e l'efficacia dell'elaborazione eDiscovery avanzate (Preview).
+- **Test**: i risultati possono essere testati per verificare la validità e l'efficacia dell'elaborazione avanzata di eDiscovery (Preview).
 
-- **Ricerca**: una volta completato il flusso di lavoro di pertinenza, è possibile utilizzare l'output, ad esempio percentile lettura di un documento per il problema quando si esegue una query all'interno del set di lavoro.
+- **Ricerca**: dopo aver completato il flusso di lavoro della pertinenza, è possibile utilizzare l'output, ad esempio il percentile di un documento, per il problema, quando si esegue una query all'interno del working set.
     
-## <a name="guidelines-for-relevance-training-and-review"></a>Linee guida per la revisione e formazione di pertinenza
+## <a name="guidelines-for-relevance-training-and-review"></a>Linee guida per la formazione e la revisione della pertinenza
 
-Di seguito è fornita una panoramica delle linee guida per la revisione e formazione di pertinenza:
+Di seguito è riportata una panoramica delle linee guida per la formazione e la revisione della pertinenza:
   
-- **Errori ed incoerenze**: se errori tagging vengono apportati durante la formazione, tornare alla precedente esempi di file per correggerli. Se sono presenti troppi errori da correggere o non esiste un nuovo punto di vista del case o problema, i criteri di pertinenza devono essere ridefiniti dall'amministratore e riavviata la formazione di pertinenza.
+- **Errori e incoerenze**: se durante l'allenamento vengono eseguiti gli errori di tagging, tornare agli esempi di file precedenti per correggerli. Se si verifica un numero eccessivo di errori da correggere oppure è presente una nuova prospettiva del caso o del problema, i criteri di pertinenza devono essere ridefiniti dall'amministratore e riavviato il Training relativo alla pertinenza.
     
-- **Formazione e utilizzo dei tag**: 
+- **Tagging e formazione**: 
     
-  - File devono essere contrassegnati in base al contenuto solo. È consigliabile non metadati, ad esempio depositaria, date o percorso del file. 
+  - I file devono essere contrassegnati in base solo al contenuto. Non considerare i metadati, ad esempio il custode, la data o il percorso del file. 
     
-  - Non prende in considerazione data indicazioni intervallo nel testo tagging file.
+  - Non prendere in considerazione le indicazioni dell'intervallo di date nel testo durante il tagging dei file.
     
-  - Non prende in considerazione incorporate immagini grafiche tagging file.
+  - Non considerare le immagini grafiche incorporate durante il tagging dei file.
      
-  - Ignora testo applicato a seconda della pertinenza verrà rimosso al contenuto del file visualizzato nella visualizzazione di testo di pertinenza. Se sono stati definiti i valori per il testo Ignora dopo la pertinenza già formazione introduttiva, il nuovo testo ignorato verrà applicato al file di esempio creati dal punto in cui è stata definita. La caratteristica di ignorare il testo deve essere utilizzata attenzione, poiché il suo utilizzo può consentire una riduzione delle prestazioni di analisi dei file
+  - Ignorare il testo applicato alla pertinenza verrà rimosso nel contenuto del file visualizzato nella visualizzazione di testo in pertinenza. Se i valori per il testo Ignora sono stati definiti dopo la formazione di pertinenza già avviata, il nuovo testo ignorato verrà applicato ai file di esempio creati dal punto in cui è stata definita. La funzionalità Ignora testo deve essere utilizzata con cautela, in quanto il relativo utilizzo può ridurre le prestazioni dell'analisi dei file
     
-  - Utilizzare l'opzione **Ignora tagging** solo quando necessario. EDiscovery avanzate (Preview) istruire non basato su file ignorati. Nella valutazione, se è difficile stabilire se un file è rilevante, è preferibile tag come Relevant (R) o non rilevanti (NR) ogni volta che è possibile invece selezionando **Ignora**. Quando eDiscovery avanzate (Preview) valuta formazione, può quindi essere visualizzato adeguatezza questi tipi di file sono stati elaborati.
+  - Utilizzare l'opzione **Ignora Tag** solo se necessario. Advanced eDiscovery (Preview) non si allena in base ai file ignorati. In valutazione, se è difficile stabilire se un file è pertinente, è consigliabile contrassegnarlo come pertinente (R) o non pertinente (NR) quando possibile anziché selezionando **Ignora**. Quando Advanced eDiscovery (Preview) valuta la formazione, è possibile vedere come sono stati elaborati questi tipi di file.
     
-  - Anche i file con dimensioni molto piccole quantità di testo estratto essere contrassegnati di formazione come R/NR anziché come "Ignora", se possibile. 
+  - Anche i file con una quantità minima di testo estratto devono essere contrassegnati in formazione come R/NR, anziché come "Skip", quando possibile. 
     
-  - Assegnazione dei tag che possono influire sugli classificatore, purché il file può essere letta e può essere contrassegnato come R/NR.
+  - Il tagging può influire sul classificatore fino a quando il file è leggibile e può essere contrassegnato come R/NR.
     
-  - Il numero di sequenza file presente nell'elenco di file di esempio visualizzato nella scheda **Tag** consente all'utente restituire l'ordine di visualizzazione originale dei file. 
+  - Il numero di sequenza dei file nell'elenco di file di esempio visualizzato nella scheda **tag** consente all'utente di tornare all'ordine di file originale visualizzato. 
     
-  - È possibile tornare a un campione e modificare il contrassegno della valutazione e formazione imposta i file. Le modifiche verranno applicate quando si crea il codice di esempio successivo.
+  - È possibile tornare a qualsiasi campione e modificare il tagging dei file di set di valutazione e formazione. Le modifiche verranno applicate quando si crea l'esempio successivo.
     
-  - Analizzate Excel i file in formato PDF devono essere considerato come file di Excel nativi quando i file di tagging.
+  - I file di Excel analizzati in formato PDF devono essere considerati come file di Excel nativo durante il tagging dei file.
     
-  - In caso di dubbi sulle tagging pertinenza di un file, rivolgersi a un esperto. Tagging non corretto durante la formazione pertinenza possono causare perdite di tempo durante il processo e può inoltre avere un impatto negativo sulla qualità dei risultati complessivi.
+  - In caso di dubbi sul tagging della pertinenza di un file, consultare un esperto. L'utilizzo di tag non corretti durante la formazione di pertinenza può comportare una perdita di tempo nel corso del processo e potrebbe anche avere un impatto negativo sulla qualità dei risultati complessivi.
     
-  - Parole chiave che sono state definite nella parola chiave elenchi verranno visualizzati in colori per consentire all'utente di identificare i file rilevanti durante l'assegnazione dei tag.
+  - Le parole chiave definite negli elenchi di parole chiave verranno visualizzate nei colori per consentire all'utente di identificare i file rilevanti durante il tagging.
     
-- **Calcolo batch**: i file che sono stati contrassegnati come R/NR da un esperto ricevono un punteggio pari a 0 o 100. Ciò vale per prendere prima calcolo Batch per il tagging. Se l'esperto trasferito il problema su inattivo dopo il calcolo Batch e continuato tagging questo problema, i punteggi appena contrassegnati non saranno 100/0, ma piuttosto il punteggio originale.
+- **Calcolo batch**: i file contrassegnati come R/Nr dall'esperto riceveranno un punteggio pari a 0 o 100. Questo si applica al tagging eseguito prima del calcolo del batch. Se l'esperto ha passato il problema a inattività dopo il calcolo del batch e ha continuato a contrassegnare questo problema, i punteggi appena contrassegnati non saranno 100/0 ma piuttosto la partitura originale.
     
-- **Problemi e campionamento delle modalità**: problemi sono in genere disattivate al termine lavoro su esse formazione di pertinenza è stabile e calcolo Batch è stato eseguito, quando vengono annullati i problemi o in un altro utente è impegnato nei problemi.
+- **Problemi e modalità**di campionamento: i problemi vengono in genere disattivati durante il completamento del lavoro (la formazione di pertinenza è stabilizzata e il calcolo in batch è stato eseguito), quando i problemi vengono annullati o quando un altro utente sta lavorando sui problemi.
     
-## <a name="steps-in-relevance-training"></a>Procedure di formazione di pertinenza
+## <a name="steps-in-relevance-training"></a>Passaggi per la formazione sulla pertinenza
 
-Nella **pertinenza \> traccia** scheda Avanzate eDiscovery vengono forniti suggerimenti su come procedere per l'elaborazione, con i seguenti passaggi successivi. Le implicazioni sono descritti di seguito per ognuna delle procedure seguenti è consigliabile nel processo di formazione di pertinenza. 
+Nella scheda ** \> rilevamento** di pertinenza Advanced eDiscovery fornisce consigli su come procedere nell'elaborazione, con i passaggi successivi seguenti. Le implicazioni sono descritte di seguito quando si consiglia di eseguire ciascuna delle operazioni seguenti nel processo di formazione per pertinenza. 
   
-- Contrassegno /continue. tagging: verifica File e pertinenza tagging eseguita da un esperto per ogni file, quindi inviare all'interno di un campione.
+- Tagging/continua tagging: revisione dei file e tagging della pertinenza eseguito da un esperto per ogni file e problema all'interno di un esempio.
     
-  - Implicazioni: Un esempio esistente deve essere contrassegnato.
+  - Implicazione: è necessario contrassegnare un esempio esistente.
     
-- Valutazione /continue. assessment: consente la convalida anticipata del problema maiuscole pertinenza e una visualizzazione preliminare di pertinenza della popolazione file importati per il case corrente.
+- Assessment/continue assessment: consente la convalida precoce della pertinenza del problema del caso e una visualizzazione preliminare della pertinenza del popolamento dei file importato per il caso corrente.
     
-  - Implicazioni: Assessment ulteriori è necessario o consigliato.
+  - Implicazioni: è richiesta o consigliata una maggiore valutazione.
     
-- Formazione /continue. formazione: processo durante i Advanced eDiscovery apprendimento da esperto che è il file di tagging esempi e acquisisce la possibilità di identificare i criteri di rilevanza pertinenti per ogni problema nel contesto di ogni caso.
+- Training/continue Training: processo durante il quale Advanced eDiscovery apprende dall'esperto che è in grado di contrassegnare gli esempi di file e acquisisce la capacità di identificare i criteri di pertinenza rilevanti per ogni problema nel contesto di ogni caso.
     
-  - Implicazioni: Il problema è necessario ulteriore formazione; Nell'esempio successivo deve essere creato e contrassegnato. 
+  - Implicazione: il problema richiede una formazione maggiore; è necessario creare e contrassegnare l'esempio successivo. 
     
-- Blocco calcolo: processo di pertinenza in quali avanzate eDiscovery accetta le conoscenze acquisite durante la fase di formazione e viene applicato alla popolazione intero file. Tutti i file nel gruppo di file pertinenti vengono valutati per pertinenza e assegnati un punteggio di pertinenza.
+- Calcolo batch: processo di pertinenza in cui Advanced eDiscovery acquisisce le conoscenze acquisite durante la fase di formazione e lo applica all'intera popolazione dei file. Tutti i file del gruppo di file pertinente sono valutati per pertinenza e assegnato un punteggio di pertinenza.
     
-  - Implicazioni: Il problema è diventato stabile e calcolo Batch può essere eseguito.
+  - Implicazione: il problema si è stabilizzato e il calcolo in batch può essere eseguito.
     
-- Aggiornamento: Pertinenza indica quando un esperto vengono esaminati tag e un esempio di file selezionati da un carico aggiuntivo file durante uno scenario di distribuzione viene caricato.
+- Catch-up: pertinenza indica quando un esperto esamina e contrassegna un campione di file selezionati da un ulteriore caricamento di file durante uno scenario di carichi di rotolamento.
     
-  - Implicazioni: È stato aggiunto un nuovo caricamento e aggiornamento è necessario per continuare a funzionare.
+  - Implicazione: è stato aggiunto un nuovo carico e il recupero è necessario per continuare a funzionare.
     
-- Contrassegnare le incoerenze: processo consente di identificare, tramite un algoritmo di eDiscovery avanzate incoerenze nel file di tagging del processo che può influire negativamente sull'analisi.
+- Incoerenze dei tag: Process identifica, tramite un algoritmo avanzato di eDiscovery, incoerenze nel processo di tagging dei file che potrebbe influire negativamente sull'analisi.
     
-  - Implicazioni: Nell'esempio successivo includerà i file che sono stati applicati i tag negli esempi precedenti e il contrassegno deve essere ripetute.
+  - Implicazioni: nell'esempio seguente vengono inclusi i file contrassegnati in esempi precedenti e il loro tagging deve essere rifatto.
     
-- Aggiornare classificatore: consente di applicare tagging o le modifiche di seeding.
+- Aggiorna classificatore: consente all'utente di applicare le modifiche di tagging o seeding.
     
-  - Implicazioni: Tagging e il seeding modifiche possono essere applicate senza dover eseguire manualmente un ulteriore esempio di pertinenza.
+  - Implicazioni: è possibile applicare le modifiche di tagging e seeding senza dover eseguire manualmente un altro esempio di pertinenza.
     
-- In attesa: completamento del processo formazione la pertinenza.
+- In attesa: il processo di formazione sulla pertinenza è stato completato.
     
-  - Implicazioni: Nessun formazione di pertinenza è necessaria a questo punto.
+  - Implicazione: non è necessaria alcuna formazione di pertinenza a questo punto.
     
-Sebbene eDiscovery avanzate viene descritto il processo con altri passaggi consigliati nelle diverse fasi, consente inoltre per esplorare le pagine e schede e per effettuare le scelte a situazioni indirizzo che possono essere pertinenti al caso singolo problema, o processo di revisione documento. 
+Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passaggi successivi consigliati nelle diverse fasi, consente anche di spostarsi tra le schede e le pagine e di fare scelte per risolvere le situazioni che potrebbero essere rilevanti per il singolo caso, problema o processo di revisione del documento. 
   
-È possibile accettare o ignorare opportune eDiscovery avanzate scelte di elaborazione. Se si desidera eseguire un passaggio oltre il passaggio successivo consigliato, fare clic sul **passaggio successivo** elencate nella visualizzazione problema espansa nella finestra di dialogo, fare clic sul pulsante **Modifica** accanto al passaggio successivo e selezionare un'altra opzione passaggio successiva. 
+È possibile accettare o sostituire le scelte avanzate di elaborazione dei passaggi successivi di eDiscovery. Se si desidera eseguire una procedura diversa da quella consigliata, fare clic sul **passaggio successivo** elencato nella visualizzazione del problema espanso nella finestra di dialogo, fare clic sul pulsante **modifica** accanto al passaggio successivo e selezionare un'altra opzione per il passaggio successivo. 
   
 > [!NOTE]
-> Alcune opzioni continuino a restituire disabilitati dopo lo sblocco come non supportati per l'utilizzo a questo punto del processo. 
+> Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
 ## <a name="more-information"></a>Ulteriori informazioni
 
-[Informazioni sulla valutazione di pertinenza](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in riLevanza](../assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](../tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging e formazione di pertinenza](../tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Formazione di tagging e pertinenza](../tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analisi di pertinenza di verifica](../track-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](../track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Stabilire in base ai risultati](../decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decidere in base ai risultati](../decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test di analisi di pertinenza](../test-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Eseguire una query all'interno di working set](working-set-search.md)
+[Query all'interno del working set](working-set-search.md)

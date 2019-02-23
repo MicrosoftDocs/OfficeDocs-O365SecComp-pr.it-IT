@@ -1,7 +1,7 @@
 ---
-title: Configurazione di notifiche di posta indesiderata in Exchange Online
-ms.author: krowley
-author: kccross
+title: Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -11,42 +11,44 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro da posta indesiderata a livello aziendale predefinito o per i criteri di filtro posta indesiderata personalizzati che vengono applicati ai domini.
-ms.openlocfilehash: 77ca32224cecaca2f558119db909ad74fdb6e858
-ms.sourcegitcommit: cc8550452d099b4c5852c6559f6ca94a77f1d93b
+ms.collection:
+- M365-security-compliance
+description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
+ms.openlocfilehash: ea2994a3f772b407a35be2d64e8afcc639d24f31
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134770"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214496"
 ---
-# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurazione di notifiche di posta indesiderata in Exchange Online
+# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
 
 > [!IMPORTANT]
-> In questo argomento è per i clienti di Exchange Online che desidera proteggere le cassette postali ospitate nel cloud. I clienti autonomo di Exchange Online Protection (EOP) che sono protezione cassette postali locali è consigliabile leggere l'argomento seguente invece: [Configura notifiche di posta indesiderata in EOP](configure-end-user-spam-notifications-in-eop.md). 
+> Questo argomento è relativo ai clienti di Exchange Online che proteggono le cassette postali ospitate nel cloud. I clienti autonomi di Exchange Online Protection (EOP) che proteggono le cassette postali locali dovrebbero invece leggere l'argomento seguente: [configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md). 
   
-È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro da posta indesiderata a livello aziendale predefinito o per i criteri di filtro posta indesiderata personalizzati che vengono applicati ai domini. Abilitazione di messaggi di notifica di posta indesiderata dell'utente finale consente agli utenti finali di gestire autonomamente i propri messaggi nella quarantena della posta indesiderata. Notifiche di posta indesiderata non possono essere utilizzate con i criteri applicati a utenti o gruppi o a un criterio con le eccezioni.
+È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini. L'abilitazione dei messaggi di notifica di posta indesiderata dell'utente finale consente agli utenti finali di gestire autonomamente i messaggi di posta indesiderata. Non è possibile utilizzare le notifiche di posta indesiderata degli utenti finali con i criteri applicati agli utenti o ai gruppi o a un criterio con eccezioni.
   
 Le notifiche di posta indesiderata dell'utente finale contengono un elenco di tutti i messaggi di posta indesiderata messi in quarantena ricevuti dall'utente finale durante un periodo di tempo configurato. È possibile specificare un valore compreso tra 1 e 15 giorni. È inoltre possibile configurare la lingua in cui è scritto il messaggio di notifica.
   
-Dopo aver ricevuto un messaggio di notifica, gli utenti finali possono scegliere tra le opzioni seguenti:
+Dopo la ricezione di un messaggio di notifica, gli utenti finali possono scegliere tra le seguenti opzioni:
 
-**Anteprima** messaggio se si desidera visualizzare in anteprima il contenuto o l'intestazione prima dell'esecuzione di azioni.
+**Visualizzare in anteprima** il messaggio se si desidera visualizzare in anteprima il contenuto o l'intestazione prima di eseguire l'azione.
 
-**Scaricare** il messaggio se si desidera esaminare i messaggi e allegati (se esistenti) del dispositivo prima dell'esecuzione di azioni.
+**Scaricare** il messaggio se si desidera esaminare il messaggio e gli allegati (se presenti) del dispositivo prima di eseguire l'azione.
 
-**Versione** se non è il messaggio di posta indesiderata e si vuole che Office 365 per inviare il messaggio alla cassetta postale.
+**Rilascia** se il messaggio non è posta indesiderata e si desidera che Office 365 invii il messaggio alla cassetta postale.
 
-**Versione e consentire mittente** se non è il messaggio di posta indesiderata e si vuole che Office 365 per aggiungere il mittente per i mittenti attendibili e l'elenco di destinatari per messaggi di posta elettronica futuri. Tenere presente che l'amministratore può essere altre configurazioni di Consenti e blocca ampia organizzazione che sostituire l'elenco dei mittenti attendibili.
+**Release _AMP_ Allow sender** se il messaggio non è posta indesiderata e si desidera che Office 365 aggiunga il mittente all'elenco Mittenti attendibili e destinatari per i messaggi di posta elettronica futuri. Tenere presente che l'amministratore può disporre di altre configurazioni Consenti/blocca a livello di organizzazione che sostituiscono l'elenco dei mittenti attendibili.
 
-**Versione & rapporto**, se non è il messaggio di posta indesiderata e si desidera inviare il messaggio alla cassetta postale e segnalare a Microsoft per l'analisi.
+**Rilasciare il report di &**, se il messaggio non è spam e si desidera inviare il messaggio alla cassetta postale e segnalarlo a Microsoft per l'analisi.
 
-**Blocco** se si desidera che Office 365 per aggiungere il mittente all'elenco Mittenti bloccati.
+**Blocca** se si desidera che in Office 365 venga aggiunto il mittente all'elenco dei mittenti bloccati.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 Tempo stimato per il completamento: 2 minuti
   
-È necessario disporre delle autorizzazioni prima che è possibile eseguire queste procedure. Per verificare le autorizzazioni necessarie, vedere la voce "Protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
 Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Keyboard shortcuts in Exchange 2013**.
   
@@ -54,7 +56,7 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
 
 1. In Interfaccia di amministrazione di Exchange, accedere a **Protezione** \> **Filtro posta indesiderata**.
     
-2. Selezionare il criterio di filtro posta indesiderata per il quale si desidera abilitare le notifiche di posta indesiderata dell'utente finale (che sono disabilitate per impostazione predefinita).
+2. Selezionare il criterio di filtro della posta indesiderata per il quale si desidera abilitare le notifiche di posta indesiderata dell'utente finale (disabilitato per impostazione predefinita).
     
 3. Nel riquadro di destra, in cui sono contenute informazioni di riepilogo sul criterio, fare clic sul collegamento **Configura notifiche spam utente finale**. 
     
@@ -66,12 +68,12 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
     
 3. **Lingua delle notifiche** Utilizzando l'elenco a discesa, selezionare la lingua in cui scrivere le notifiche di posta indesiderata dell'utente finale per il criterio in questione. 
     
-5. Fare clic su **Salva**. Riepilogo delle impostazioni di criteri filtro posta indesiderata, incluse le impostazioni di notifica di posta indesiderata dell'utente finale, viene visualizzato nel riquadro destro.
+5. Fare clic su **Salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri di filtro della posta indesiderata, incluse le impostazioni di notifica di posta indesiderata dell'utente finale.
     
 > [!NOTE]
->  Notifiche di posta indesiderata dell'utente finale saranno applicate solo per i criteri di filtro posta indesiderata sono abilitati. > Notifiche di posta indesiderata vengono inviate solo una volta al giorno. I tempi di consegna della notifica non possono essere garantito per un cliente specifico e non sono configurabili. 
+>  Le notifiche di posta indesiderata dell'utente finale saranno funzionali solo per i criteri di filtro della posta indesiderata abilitati. le notifiche di posta indesiderata dell'utente finale di > vengono inviate solo una volta al giorno. Il tempo di consegna della notifica non può essere garantito per un cliente specifico e non è configurabile. 
   
- **Suggerimento:** Se si desidera testare notifiche di posta indesiderata mediante l'invio di un set limitato di utenti prima di implementarle completamente, creare un criterio di filtro posta indesiderata personalizzati che consente di notifiche di posta indesiderata per i domini in cui risiedono gli utenti. Quindi, in EAC, in **flusso di posta \> regole**, creare una regola di trasporto per bloccare i messaggi da quarantine@messaging.microsoft.com, l'indirizzo di posta elettronica che invia le notifiche, con le eccezioni per gli utenti che si desidera ricevere la notifica. Nell'immagine seguente è riportato un esempio di creazione di un'eccezione di due utenti (SaraD e AlexD) dal dominio Contoso.com: 
+ **Suggerimento:** Se si desidera testare le notifiche di posta indesiderata dell'utente finale inviando un gruppo limitato di utenti prima di implementarle completamente, creare un criterio di filtro di posta indesiderata personalizzato che consenta le notifiche di posta indesiderata dell'utente finale per i domini in cui risiedono gli utenti. Successivamente, nell'interfaccia di amministrazione di Exchange, in **regole del flusso \> di posta**, creare una regola di trasporto per bloccare i messaggi da Quarantine@messaging.microsoft.com (l'indirizzo di posta elettronica che invia le notifiche) con le eccezioni per gli utenti che si desiderano ricevere le notifiche. L'immagine seguente è un esempio di creazione di un'eccezione per due utenti (Sarad e AlexD) da Domain Contoso.com: 
   
 ![Regola di trasporto per verificare le notifiche di posta indesiderata dell'utente finale](media/EOP-ESN-testspecificusers.jpg)
   

@@ -6,85 +6,85 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Per conoscere le etichette, modulo trasversale e le impostazioni del tenant che è possibile definire a livello di casi di eDiscovery avanzate di Office 365.  '
-ms.openlocfilehash: 2230be8365e74ab21a0525bc2accc8469b22c9ed
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informazioni sulle impostazioni delle etichette, del modulo incrociato e del tenant che è possibile definire a livello di caso in Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: e27f33f15d133d502e01a780d6f05ca85cce41a5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531461"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219366"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definire le impostazioni del tenant e il caso in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Le impostazioni di maiuscole e minuscole e tenant eDiscovery avanzate sono descritte in questo argomento.
+In questo argomento sono descritte le impostazioni avanzate del case e del tenant di eDiscovery.
   
-## <a name="case-settings"></a>Caso le impostazioni
+## <a name="case-settings"></a>Impostazioni case
 
-In questa sezione vengono descritte le impostazioni che possono essere definite a livello di maiuscole.
+In questa sezione vengono descritte le impostazioni che possono essere definite a livello di caso.
   
 > [!NOTE]
-> Se attualmente non selezionato alcun caso di eDiscovery avanzata, la scheda **Impostazioni maiuscole** è inattiva. 
+> Se nessun caso è attualmente selezionato in Advanced eDiscovery, la scheda **Impostazioni case** non è attiva. 
   
-### <a name="cross-module"></a>Cross-modulo
+### <a name="cross-module"></a>Modulo inCrociato
 
-Di seguito tra le impostazioni del modulo sono maiuscole opzioni che si applicano ai moduli avanzati eDiscovery.
+Le seguenti impostazioni del modulo inCrociato sono opzioni di caso applicabili ai moduli avanzati di eDiscovery.
   
-- Pagina predefinita dopo l'accesso: imposta la pagina predefinita da visualizzare all'avvio eDiscovery avanzate.
+- Pagina predefinita dopo l'accesso: imposta la pagina predefinita da visualizzare al momento dell'avvio di Advanced eDiscovery.
     
-- Nome visualizzato del file: identificatore di File che verrà visualizzato nell'intera eDiscovery avanzate per identificare il file come alternativa per il nome visualizzato eDiscovery avanzata dell'oggetto titolo/percorso o di posta elettronica di file.
+- Nome visualizzato file: identificatore di file che verrà visualizzato in tutto il eDiscovery avanzato per identificare il file, in alternativa al nome visualizzato avanzato di eDiscovery del titolo/percorso del file o dell'oggetto di posta elettronica.
     
-1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **Cogwheel** . Apri **impostazioni e le utilità \> caso le impostazioni** scheda \> **Cross-modulo**. 
+1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . Aprire il **modulo**delle impostazioni e delle \> impostazioni del **caso di utilità \> ** . 
     
-2. Selezionare le opzioni di **pagina dopo l'account di accesso predefinita** : 
+2. Selezionare dalla **pagina predefinita dopo** le opzioni di accesso: 
     
-  - **Ultima pagina della precedente accesso**
+  - **Ultima pagina dell'account di accesso precedente**
     
   - **Pagina casi**
     
 3. Fare clic su **Salva**.
     
-## <a name="tenant-settings"></a>Impostazioni del tenant
+## <a name="tenant-settings"></a>Impostazioni tenant
 
-Le impostazioni di Tenant eDiscovery avanzate sono descritte in questa sezione.
+Le impostazioni avanzate del tenant di eDiscovery sono descritte in questa sezione.
   
 ### <a name="user-administration"></a>Amministrazione utenti
 
-Le opzioni di amministrazione degli utenti sono descritti in [impostare gli utenti e dei casi](set-up-users-and-cases-in-advanced-ediscovery.md).
+Le opzioni di amministrazione dell'utente sono descritte in [configurazione di utenti e case](set-up-users-and-cases-in-advanced-ediscovery.md).
   
 ### <a name="event-log"></a>Registro eventi
 
-Nel registro eventi fornisce i metadati relativa eDiscovery avanzate elaborazione in qualsiasi momento durante l'operazione di eDiscovery avanzate. Ad esempio, include l'ora di inizio dei processi di eDiscovery avanzate principale (importazione, Analyze, pertinenza e l'esportazione) e l'ora di fine e lo stato. In questo registro può essere utilizzato per la gestione e risoluzione dei problemi delle attività di elaborazione dei dati e per la risoluzione di errori e avvisi.
+Il registro eventi fornisce metadati relativi all'elaborazione avanzata di eDiscovery in qualsiasi momento durante l'operazione eDiscovery avanzata. Ad esempio, include l'ora di inizio dei principali processi di eDiscovery avanzata (Import, Analyze, pertinenza ed export), nonché l'ora e lo stato di fine. Questo registro può essere utilizzato per la verifica e la risoluzione dei problemi relativi alle attività di elaborazione dei dati e per l'indirizzamento di errori e avvisi.
   
-1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **Cogwheel** . 
+1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . 
     
-2. Nella **impostazioni e le utilità \> Tenant impostazioni** selezionare **registro eventi**. Dati del registro eventi viene visualizzati.
+2. Nella scheda Impostazioni **tenant impostazioni \> e utilità** Selezionare **registro eventi**. Vengono visualizzati i dati del registro eventi.
     
-  - Per filtrare l'output del registro per un caso, selezionare il caso dall'elenco **dei casi** . 
+  - Per filtrare l'output dei log in base a un caso, selezionarlo dall'elenco **casi** . 
     
-  - Per ordinare il registro in base a colonne, fare clic su un'intestazione di colonna. 
+  - Per ordinare il log in base alle colonne, fare clic su un'intestazione di colonna. 
     
   - Per modificare l'ordine delle colonne, fare clic e trascinare l'intestazione di colonna.
     
-  - Per spostarsi tra le pagine di registro, fare clic su **\>** e **\<** icone. 
+  - Per spostarsi tra le pagine di registro **\>** , **\<** fare clic su e icone. 
     
-### <a name="system-information"></a>Informazioni di sistema
+### <a name="system-information"></a>Informazioni sul sistema
 
-Informazioni di sistema versione avanzata eDiscovery e attività in corso vengono visualizzate nella scheda Impostazioni Tenant.
+Nella scheda Impostazioni tenant sono visualizzate le informazioni avanzate del sistema di versioni di eDiscovery e le attività attive.
   
-1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **Cogwheel** . 
+1. Aprire **le impostazioni e le utilità** facendo clic sull'icona **cremagliera** . 
     
-2. Nella **impostazioni e le utilità \> Tenant impostazioni** selezionare **informazioni di sistema**. Le informazioni sulla versione viene visualizzati.
+2. Nella scheda Impostazioni **tenant impostazioni \> e utilità** Selezionare **System Information**. Vengono visualizzate le informazioni sulla versione.
     
-La visualizzazione può essere aggiornata facendo clic sull'icona **Aggiorna** le informazioni relative alla Tenant. 
+La visualizzazione può essere aggiornata facendo clic sull'icona **Aggiorna** sotto le informazioni del tenant. 
   
 ## <a name="see-also"></a>Vedere anche
 

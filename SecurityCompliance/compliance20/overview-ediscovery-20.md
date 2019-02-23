@@ -1,98 +1,98 @@
 ---
-title: Panoramica di eDiscovery avanzate (Preview) in Microsoft 365
+title: Panoramica di Advanced eDiscovery (Preview) in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In questo articolo viene descritta la nuova versione di eDiscovery avanzate (Preview) in Microsoft 365.
-ms.openlocfilehash: cb82541037983ca21cefbefb7f72fffa3b054373
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery (Preview) in Microsoft 365.
+ms.openlocfilehash: a7b134cb527ae98b9df659a9377903f8fcdb3e9f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706157"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219576"
 ---
-# <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Panoramica di eDiscovery avanzate (Preview) in Microsoft 365
+# <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Panoramica di Advanced eDiscovery (Preview) in Microsoft 365
 
-Microsoft ha appena rilasciato una versione di anteprima dello strumento eDiscovery avanzate aggiornati che si basa sulle funzionalità eDiscovery esistente in Office 365. Questa versione di anteprima, denominata *eDiscovery avanzate (anteprima)*, offre un flusso di lavoro end-to-end per mantenere, raccogliere, esaminare, analizzare ed esportare il contenuto che risponde a indagini interni ed esterni dell'organizzazione. 
+Microsoft ha appena rilasciato una versione di anteprima dello strumento Advanced eDiscovery aggiornato che si basa sulle funzionalità di eDiscovery esistenti in Office 365. Questa versione di anteprima, denominata *Advanced eDiscovery (Preview)*, offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare il contenuto rispondente alle indagini interne ed esterne dell'organizzazione. 
 
 ## <a name="alignment-with-edrm"></a>Allineamento con EDRM
 
-Il flusso di lavoro predefinito di eDiscovery avanzate (Preview) viene allineato con il processo di eDiscovery descritto dal modello di riferimento Electronic Discovery (EDRM). 
+Il flusso di lavoro incorporato di Advanced eDiscovery (Preview) è allineato al processo eDiscovery delineato dal modello di riferimento di Electronic Discovery (EDRM). 
 
-![Il modello di riferimento di Electronic Discovery (EDRM)](../media/EDRMv1.png)
+![EDRM (Electronic Discovery Reference Model)](../media/EDRMv1.png)
 
-(Origine dell'immagine per edrm.net. Immagine di origine è stata effettuata disponibile con Creative comuni Attribution 3.0 licenza Unported.)
+(Fonte di immagini per gentile concessione di edrm.net. L'immagine di origine è stata resa disponibile nella licenza Creative Commons Attribution 3,0 Unported.
 
-A un livello superiore, eDiscovery modalità avanzata Ecco (Preview) supporta il flusso di lavoro EDRM:
+A livello elevato, ecco come Advanced eDiscovery (Preview) supporta il flusso di lavoro di EDRM:
 
-- **Identificazione** - dopo aver identificato potenziali persone di interesse indagini, è possibile aggiungerli come depositari (denominati anche *depositari dati*, poiché potrebbe dispongono delle informazioni rilevanti per le indagini) a un avanzata caso di eDiscovery (Preview). Dopo che gli utenti vengono aggiunti come depositari, è facile da conservare, raccogliere e controllare i documenti depositaria.
+- **Identificazione** -dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerli come depositari (denominati anche *depositari dei dati*, in quanto possono essere in possesso di informazioni rilevanti per l'inchiesta) a un avanzato eDiscovery (anteprima) caso. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
 
-- **Conservazione** - per conservare e proteggere i dati rilevanti per un indagini avanzate eDiscovery (Preview) è che possibile posizionare una conservazione a fini giudiziari in origini dati che sono associate depositari in caso. È inoltre possibile inserire i dati non detentive in attesa. Inoltre, eDiscovery avanzate (Preview) ha un flusso di lavoro incorporati communications in modo che è possibile inviare una conservazione a fini giudiziari notifiche ai depositari e tenere traccia delle loro riconoscimenti.
+- **Preservation** -per preservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery (Preview) consente di inserire una conservazione legale sulle origini dati associate ai depositari in un caso. È inoltre possibile inserire i dati non detentivi in attesa. Inoltre, Advanced eDiscovery (Preview) è dotato di un flusso di lavoro di comunicazione incorporato in modo da poter inviare notifiche di archiviazione legale ai depositari e tenere conto dei loro ringraziamenti.
 
-- **Insieme** - dopo aver identificato (e mantenute) le origini dati rilevanti per le indagini, è possibile utilizzare lo strumento di ricerca incorporate in ricerca eDiscovery avanzate (Preview) e Raccogli dati in tempo reale dalle origini dati detentive (e non detentive origini dati, se applicabile) che possono essere pertinenti per il case.
+- **Raccolta** -dopo aver identificato (e conservato) le origini dati rilevanti per l'indagine, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery (Preview) per cercare e raccogliere dati in tempo reale dalle origini dati detentive (e non detentive le origini dati, se applicabile, potrebbero essere rilevanti per il caso.
 
-- **Elaborazione** - dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo è processo di analisi e un'ulteriore verifica. In eDiscovery avanzate (anteprima), indica che i dati sul posto definito in fase di raccolta vengono copiati nel percorso di archiviazione Azure denominato un *insieme di lavoro*, che consente di ottenere una visualizzazione statica dei dati maiuscole. 
+- **Elaborazione** : dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nell'elaborarla per ulteriori analisi. In Advanced eDiscovery (Preview), questo significa che i dati sul posto identificati nella fase di raccolta vengono copiati nel percorso di archiviazione di Azure (denominato *working set*), in cui viene fornita una visualizzazione statica dei dati del caso. 
  
-- Impostare **la revisione** - dopo l'aggiunta di dati per un utilizzo, è possibile visualizzare documenti specifici ed eseguire query aggiuntive per  
+- **Revisione** -dopo che i dati sono stati aggiunti a un working set, è possibile visualizzare documenti specifici ed eseguire query aggiuntive per  
  
-- **Analisi** - avanzate eDiscovery (Preview) sono disponibili strumenti analitica integrata che consente di riforma dati dal set di lavoro che vengono considerate non rilevanti per le indagini. Oltre a ridurre il volume di dati pertinenti, eDiscovery anticipo (Preview) consente di salvare i costi di revisione legale grazie alla possibilità di organizzare il contenuto per semplificare il processo di revisione e più efficiente.
+- **Analysis** -Advanced eDiscovery (Preview) fornisce strumenti di analisi integrata che consentono di eliminare i dati dal working set che si determina non è pertinente per l'indagine. Oltre a ridurre il volume dei dati rilevanti, Advance eDiscovery (Preview) aiuta anche a salvare i costi di revisione legale, consentendo di organizzare il contenuto per rendere più semplice ed efficiente il processo di revisione.
 
-- **Produzione** e **presentazione** , una volta pronti, è possibile esportare documenti da un gruppo di lavoro per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato EDRM specificato in modo che possono essere importati nelle applicazioni di terze parti revisione.
+- **Produzione** e **presentazione** -quando si è pronti, è possibile esportare i documenti da un working set per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato specificato per EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
 
-## <a name="advanced-ediscovery-preview-workflow"></a>Flusso di lavoro eDiscovery avanzate (Preview)
+## <a name="advanced-ediscovery-preview-workflow"></a>Flusso di lavoro avanzato di eDiscovery (anteprima)
 
-Nelle sezioni seguenti viene descritto ogni passaggio del flusso di lavoro predefiniti di eDiscovery avanzate (Preview). La schermata seguente mostra la scheda **home page** di un caso denominato *2019002 responsabilità del prodotto*. Si noti che il flusso di lavoro nella parte superiore della pagina vengono eseguiti nella sequenza per allineare il processo EDRM. 
+Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro incorporato in Advanced eDiscovery (Preview). Nella schermata seguente viene illustrata la scheda **Home** di un caso denominato *Product passivity 2019002*. Nota le schede del flusso di lavoro nella parte superiore della pagina vengono sequenziate per essere allineate al processo EDRM. 
 
-Per ulteriori informazioni sul flusso di lavoro end-to-end di eDiscovery avanzate (anteprima), vedere questo [Meccanismi Microsoft video](https://go.microsoft.com/fwlink/?linkid=2066133). 
+Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery (Preview), vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Schede di eDiscovery avanzate (Preview) seguono il flusso di lavoro EDRM](../media/aedisco-homepage-1.png)
+![Tabs in Advanced eDiscovery (Preview) seguire il flusso di lavoro di EDRM](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>Gestione dei responsabili
 
-Utilizzare la scheda **depositari** per aggiungere e gestire le persone che è stato identificato come persone di interesse nel caso. Quando si aggiungono depositari, è possibile eseguire le azioni relative depositaria ad esempio l'aggiunta di una persona come nelle origini dati depositaria, ad esempio la cassetta postale e l'account di OneDrive rapidamente la comunicazione con depositari e le origini dati depositaria per la raccolta di contenuto di ricerca che si applicano a caso. Come avanzamento dei casi, risulta molto semplice aggiungere nuovi depositari o la versione depositari dal caso. Per ulteriori informazioni, vedere [Work with depositari di eDiscovery avanzate (Preview)](managing-custodians.md).
+Utilizzare la scheda **depositari** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso. Quando si aggiungono depositari, è possibile eseguire rapidamente azioni relative a un custode, ad esempio l'inserimento di informazioni legali su come le origini dati di un custode, ad esempio la cassetta postale e l'account OneDrive, la comunicazione con i depositari e la ricerca di origini dati depositarie per la raccolta del contenuto Questo è pertinente per il caso. Come nel caso di progressi, è facile aggiungere nuovi depositari o rilasciare depositari dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery (Preview)](managing-custodians.md).
 
-## <a name="managing-legal-hold-notifications"></a>Gestione delle notifiche di conservazione a fini giudiziari
+## <a name="managing-legal-hold-notifications"></a>Gestione delle notifiche di blocco legale
 
-Utilizzare la scheda **comunicazioni** per gestire il processo di comunicazione con depositari nel caso. Un avviso di conservazione a fini giudiziari indica depositari devono essere mantenuti qualsiasi contenuto che può essere pertinente per il case. I team legali devono essere in grado di verificare che gli avvisi sono stati ricevuti, leggi e riconosciuti dalla depositari. Il flusso di lavoro di comunicazioni di eDiscovery avanzate (Preview) consente di creare e inviare notifiche iniziali, promemoria, versione avvisi e le misure correttive se depositari non riesce a riconoscere una notifica di attesa. Per ulteriori informazioni, vedere [utilizzare le comunicazioni di eDiscovery avanzate (Preview)](managing-custodian-communications.md).
+Utilizzare la scheda **comunicazioni** per gestire il processo di comunicazione con i depositari nel caso. Un avviso per la conservazione legale indica ai depositari di conservare qualsiasi contenuto che potrebbe essere pertinente alla causa. I team legali devono essere in grado di tenere conto del fatto che le notifiche sono state ricevute, lette e riconosciute dai depositari. Il flusso di lavoro per le comunicazioni in Advanced eDiscovery (Preview) consente di creare e inviare notifiche iniziali, promemoria, comunicazioni di rilascio e escalation se i depositari non riconoscono una notifica di blocco. Per ulteriori informazioni, vedere [work with Communications in Advanced eDiscovery (Preview)](managing-custodian-communications.md).
 
-## <a name="managing-content-preservation"></a>Gestione di archiviazione del contenuto
+## <a name="managing-content-preservation"></a>Gestione della conservazione dei contenuti
 
-Quando si aggiunge un depositaria a un caso, è possibile inserire un'esenzione detentive dati. Utilizzare la scheda **archiviazione** per la gestione dell'esenzione creato quando si aggiungono depositari e gestione legale aggiuntive contiene associata al caso; ad esempio, si possono identificare e mettere un'esenzione in origini dati non detentive. È possibile modificare qualsiasi conservazione nel caso e rendere una conservazione basata su query in modo che solo il contenuto corrispondente alla query viene messa in attesa; ad esempio, è possibile aggiungere un intervallo di date per la conservazione in modo che solo il contenuto che è stato creato all'interno di una data specifica intervallo mantenute. È inoltre ottenere le statistiche sul contenuto che è in attesa, rimuovere la conservazione dopo quando non è più rilevante per il caso o eliminarlo. Per ulteriori informazioni, vedere [Manage contiene di eDiscovery avanzate (Preview)](managing-holds.md).
+Quando si aggiunge un custode a un caso, si ha la possibilità di applicare un blocco ai dati della custodia. Utilizzare la **** scheda esenzioni per gestire il blocco creato quando si aggiungono depositari e si gestiscono altre detenute legali associate al caso. ad esempio, è possibile identificare e applicare un'esenzione su origini dati non detentive. È inoltre possibile modificare qualsiasi conservazione nel caso e renderla una conservazione basata su query in modo che venga messo in attesa solo il contenuto che corrisponde alla query. ad esempio, è possibile aggiungere un intervallo di date alla conservazione, in modo che solo il contenuto creato all'interno di una data specifica sia stato mantenuto. È anche possibile ottenere statistiche sul contenuto che è in attesa, rimuovere il blocco dopo quando non è più pertinente al caso o eliminarlo. Per ulteriori informazioni, vedere [Manage holds in Advanced eDiscovery (Preview)](managing-holds.md).
 
-## <a name="indexing-custodian-data"></a>Indicizzazione di dati depositaria
+## <a name="indexing-custodian-data"></a>InDicizzazione dei dati del custode
 
-Quando si aggiunge un depositaria e le origini dati detentive corrispondente a un caso, qualsiasi elemento parzialmente indicizzato da un'origine dati depositaria è reindicizzazione (per processo denominato *indicizzazione avanzata*). In questo modo detentive contenuto, ad esempio immagini, tipi di file non supportati e altro contenuto potenzialmente non indicizzato per le ricerche completamente durante l'esecuzione di ricerche per raccogliere i dati rilevanti al caso. Utilizzare la scheda **di elaborazione** per monitorare lo stato di indicizzazione avanzate e correzione elaborazione errori (utilizzando un calle processo *correzione errore*). Per ulteriori informazioni, vedere [correggere gli errori di elaborazione di eDiscovery avanzate (Preview)](processing-data-for-case.md).
+Quando si aggiunge un custode e le origini dati di custodia corrispondenti a un caso, qualsiasi elemento parzialmente indicizzato da un'origine dati di un oggetto depositaria viene reindicizzato (tramite un processo denominato *Advanced Indexing*). In questo modo, i contenuti di custodia quali immagini, tipi di file non supportati e altri contenuti potenzialmente non indicizzati devono essere completamente ricercabili quando si eseguono ricerche per raccogliere dati rilevanti per il caso. Utilizzare la scheda **elaborazione** per monitorare lo stato dell'indicizzazione avanzata e correggere gli errori di elaborazione (utilizzando un processo di correzione di *errore*Calle.) Per ulteriori informazioni, vedere [correggere gli errori di elaborazione in Advanced eDiscovery (Preview)](processing-data-for-case.md).
 
 ## <a name="collecting-case-data"></a>Raccolta dei dati del caso
 
-Utilizzare la scheda **ricerche** per creare le ricerche per cercare i in loco detentive e origini dati non detentive in Office 365 per il contenuto pertinente al caso. È possibile creare ed eseguire ricerche basate su query (utilizzando le parole chiave e condizioni) per identificare un set i messaggi di posta elettronica e documenti rilevanti per il case e si desidera ampliare la revisione e analizzare nei passaggi successivi del flusso di lavoro di eDiscovery. È possibile creare uno o più ricerche associate al caso. Inoltre, è possibile utilizzare lo strumento di ricerca per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche ricerca possono risultare utili per definire e migliorare i risultati della ricerca. Una volta si è stati soddisfatti che i risultati della ricerca contiene tutti i dati rilevanti per il caso, si aggiungere i risultati della ricerca a un set di lavoro per un ulteriore esame, analisi e se necessario, l'eliminazione selettiva. Per ulteriori informazioni, vedere [raccogliere i dati per un caso di eDiscovery avanzate (Preview)](collecting-data-for-ediscovery.md).
+Utilizzare la scheda **ricerche** per creare ricerche per cercare le origini dati in locale e non detentive in Office 365 per i contenuti rilevanti per il caso. È possibile creare ed eseguire ricerche basate su query (con parole chiave e condizioni) per identificare un set di messaggi di posta elettronica e documenti rilevanti per il caso e che si desidera esaminare e analizzare ulteriormente nei passaggi successivi del flusso di lavoro di eDiscovery. È possibile creare una o più ricerche associate al caso. Inoltre, è possibile utilizzare lo strumento di ricerca per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche di ricerca che possono aiutare a affinare e migliorare i risultati della ricerca. Dopo aver verificato che i risultati della ricerca contengono tutti i dati rilevanti per il caso, è possibile aggiungere i risultati della ricerca a un working set per ulteriori riesami, analisi e, se necessario, eliminazione. Per ulteriori informazioni, vedere [raccolta di dati per un caso in Advanced eDiscovery (Preview)](collecting-data-for-ediscovery.md).
 
-## <a name="reviewing-and-analyzing-case-data"></a>Revisione e analisi dei dati maiuscole
+## <a name="reviewing-and-analyzing-case-data"></a>Revisione e analisi dei dati del caso
 
-Utilizzare la scheda **utilizzo set** o esaminare e analizzare il contenuto raccolti dal sistema live e aggiunto a un gruppo di lavoro. Un *insieme di lavoro* è un insieme statico (in altre parole, una copia non in linea di dat) di dati detentive (e, se applicabile, dati non detentive) raccolti nella fase precedente del flusso di lavoro eDiscovery. Quando si aggiunge i risultati di ricerca a un gruppo di lavoro, viene attivato un processo che consente di estrarre i file dai contenitori, estrae i metadati ed estrae il testo. Una volta completato il processo, il sistema si basa un nuovo indice di tutti i dati raccolti da depositari ed è stata aggiunta al set di lavoro. Dopo aver aggiunto i dati nell'insieme di lavoro, è possibile eseguire query aggiuntive per limitare i dati sui casi, visualizzare i dati sotto forma di testo o nel formato di file nativo e aggiungere note, redigi e contrassegnare i documenti in working set. Inoltre, è possibile eseguire analitica avanzate, ad esempio identificare la duplicazione di documenti, posta elettronica threading e dei temi. Dopo aver facce i dati alle quali è rilevante solo al caso è possibile scaricare i documenti download direttamente o esportarli insieme a qualsiasi tag, le annotazioni e metadati dei file. Per ulteriori informazioni, vedere:
+Utilizzare la scheda **working sets** o rivedere e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un working set. Un *working set* è una raccolta statica (in altre parole, una copia offline di dat) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un working set, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema genera un nuovo indice di tutti i dati raccolti dai depositari e aggiunto al working set. Dopo aver aggiunto i dati al working set, è possibile eseguire query aggiuntive per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel working set. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente al caso, è possibile scaricare direttamente i documenti di download o esportarli insieme ai metadati, alle annotazioni e ai tag di file. Per ulteriori informazioni, vedere:
 
-  - [Rivedere i dati di casi di eDiscovery avanzate (Preview)](reviewing-data-in-working-set.md)
-  - [Analizzare i dati in un working set di eDiscovery avanzate (Preview)](analyzing-data-in-working-set.md)
+  - [Esaminare i dati dei casi in Advanced eDiscovery (Preview)](reviewing-data-in-working-set.md)
+  - [Analizzare i dati in un working set in Advanced eDiscovery (Preview)](analyzing-data-in-working-set.md)
 
-## <a name="exporting-data-for-review-and-presentation"></a>Esportazione dei dati per la revisione e presentazione
+## <a name="exporting-data-for-review-and-presentation"></a>Esportazione di dati per la revisione e la presentazione
 
-Dopo aver esportato i dati da un gruppo di lavoro, utilizzare la scheda **esportazioni** per gestire un processo di esportazione e scaricare i dati da un gruppo di lavoro. Quando si esporta un working set, i dati caricati in una posizione di archiviazione Azure e quindi sono disponibili per il download in un computer locale. È possibile ottenere la posizione e archiviazione valutare la chiave necessaria per scaricare i dati esportati nella scheda **Esporta** . Per ulteriori informazioni, vedere [esportare dati sui casi di eDiscovery avanzate (Preview)](exporting-data-ediscover20.md).
+Dopo aver esportato i dati da un working set, **** utilizzare la scheda exports per gestire un processo di esportazione e scaricare i dati da un working set. Quando si esporta un working set, i dati vengono caricati in un percorso di archiviazione di Azure e quindi sono disponibili per essere scaricati in un computer locale. È possibile ottenere la chiave di valutazione percorso e archiviazione necessaria per scaricare i dati esportati nella scheda esPortazioni. **** Per ulteriori informazioni, vedere [Export case data in Advanced eDiscovery (Preview)](exporting-data-ediscover20.md).
 
 ## <a name="managing-jobs"></a>Gestione dei processi
 
-Utilizzare la scheda **processi** per monitorare i processi di lunga durata per operazioni riguardanti il caso che è stato avviato, le ricerche come la reindicizzazione, ricerche ed esportazioni. Ad esempio, è possibile creare una nuova ricerca nella scheda **ricerche** che include un numero elevato di origini dati. Lo stato del processo di ricerca viene visualizzato nella scheda **processi** . Per ulteriori informazioni, vedere [i processi di gestione di eDiscovery avanzate (Preview)](managing-jobs-ediscovery20.md).
+Utilizzare la scheda **processi** per monitorare i processi a esecuzione prolungata per le attività correlate al caso avviate, ricerche come reindicizzazione, ricerche ed esportazioni. Ad esempio, è possibile creare una nuova ricerca nella scheda **ricerche** che include un numero elevato di origini dati. Lo stato di questo processo di ricerca viene visualizzato nella scheda **processi** . Per ulteriori informazioni, vedere [gestire i processi in Advanced eDiscovery (Preview)](managing-jobs-ediscovery20.md).
 
 ## <a name="configuring-case-settings"></a>Configurazione delle impostazioni dei casi
 
-Utilizzare la scheda **Impostazioni** per configurare le impostazioni a livello di case. Include l'aggiunta di membri a un caso, parentesi o eliminazione di un caso e la configurazione del comportamento di ricerca e analitica. Per ulteriori informazioni, vedere [Configure settings casi di eDiscovery avanzate (Preview)](configuring-case-settings-ediscovery20.md).
+Utilizzare la scheda **Impostazioni** per configurare le impostazioni a livello di maiuscole e minuscole. Questo include l'aggiunta di membri a un caso, la chiusura o l'eliminazione di un caso e la configurazione del comportamento di ricerca e analisi. Per ulteriori informazioni, vedere [Configure case Settings in Advanced eDiscovery (Preview)](configuring-case-settings-ediscovery20.md).
 

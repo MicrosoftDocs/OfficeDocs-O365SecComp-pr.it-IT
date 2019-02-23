@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/15/2019
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'I criteri di rilevamento delle anomalie in Office 365 cloud app Security utilizzano algoritmi incorporati per consentire di individuare potenziali problemi. È necessario disporre di almeno un criterio di rilevamento delle anomalie, che è possibile sintonizzare (quando lo si crea) tramite filtri. '
-ms.openlocfilehash: a3c7fb16ab10b0bcfaca444093e4e1f52468f0c8
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087365"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220676"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Criteri di rilevamento delle anomalie in Office 365 Cloud App Security
 
@@ -98,7 +98,7 @@ Un avviso su più accessi non riusciti potrebbe essere effettivamente sospettoso
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Distribuire il controllo delle app di accesso condizionale per le app di Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Distribuire Controllo app per l'accesso condizionale per le app di Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [Raggruppare gli indirizzi IP per semplificare la gestione](group-your-ip-addresses-in-ocas.md)
 

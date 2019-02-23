@@ -1,45 +1,45 @@
 ---
-title: Informativa sulla privacy per Office 365 Secure Email Portal
+title: InFormativa sulla privacy per Office 365 Secure E-mail Portal
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: End User
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
-description: 'Ultimo aggiornamento: Maggio 2017'
-ms.openlocfilehash: 75714c097690b222ebd3b8d25ab2e0eca8fe8d91
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: 'Ultimo aggiornamento: 2017 maggio'
+ms.openlocfilehash: bd49b496685b94ed4555e6d8b0ff82c0aff5a202
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522237"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219156"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Informativa sulla privacy per Office 365 Secure Email Portal
+# <a name="privacy-statement-for-office-365-secure-email-portal"></a>InFormativa sulla privacy per Office 365 Secure E-mail Portal
 
-Ultimo aggiornamento: Maggio 2017
+Ultimo aggiornamento: 2017 maggio
   
-Presente informativa sulla privacy consente di gestire Office 365 le nuove funzionalità OME portale (il "nuove OME funzionalità Portal"). Le versioni precedenti erano denominate di Office 365 messaggio crittografia (OME) e "OME Portal". La presente informativa non si applica a altri siti, prodotti o servizi Microsoft online oppure offline. Altre istruzioni relative alla privacy può essere usato anche ai dati di che elaborazione attraverso le nuove funzionalità OME portale, ad esempio l'informativa sulla privacy per account Microsoft (se è utilizzato per l'autenticazione) o l'informativa sulla privacy associate al dispositivo.
+La presente informativa sulla privacy determina la gestione di Office 365 del nuovo portale delle funzionalità OME ("il nuovo portale delle funzionalità OME"). Le versioni precedenti erano note come Office 365 Message Encryption (OME) e "OME Portal". Questa informativa sulla privacy non si applica ad altri siti, prodotti o servizi Microsoft online o offline. Altre informative sulla privacy possono anche essere applicate ai dati elaborati tramite il nuovo portale delle funzionalità OME, ad esempio l'informativa sulla privacy per l'account Microsoft (se utilizzato per l'autenticazione) o l'informativa sulla privacy associata al dispositivo.
   
-## <a name="collection-processing-and-use-of-your-information"></a>Insieme, trasformazione e trattamento dei dati
+## <a name="collection-processing-and-use-of-your-information"></a>Raccolta, elaborazione e utilizzo delle informazioni
 
-Le nuove funzionalità OME Portal consente di visualizzare posta elettronica crittografato con Office 365 da una serie di punti finali, ad esempio computer desktop o i dispositivi mobili. Messaggio di posta elettronica crittografato arriva nella cassetta postale come allegato HTML di un messaggio di posta regolare. Se il messaggio viene inviato per l'account Microsoft, ufficio o account scuola o account Gmail, verrà richiesto di accedere a basata sul web le nuove funzionalità OME portale con tale account. Se il messaggio crittografato viene inviato a un account diverso dall'Account Microsoft, il lavoro o scuola account o un account Gmail, verrà richiesto per creare un account Microsoft e associarlo a account a cui è stato inviato il messaggio crittografato; In alternativa, è possibile scegliere di richiedere un passcode occasionale per l'autenticazione che verrà inviato lo stesso indirizzo di posta elettronica a cui è stato inviato il messaggio crittografato. Dopo l'autenticazione, il messaggio verrà decrittografato e visualizzato tramite le nuove funzionalità OME Portal.
+Il nuovo portale funzionalità OME consente di visualizzare la posta elettronica crittografata con Office 365 da una serie di punti finali, ad esempio i computer desktop o i dispositivi mobili. Il messaggio di posta elettronica crittografato arriva nella cassetta postale come allegato HTML a un normale messaggio di posta elettronica. Se il messaggio viene inviato all'account Microsoft, all'account aziendale o dell'Istituto di istruzione o all'account Gmail, verrà richiesto di accedere al nuovo portale delle funzionalità OME basato sul Web con tale account. Se la posta crittografata viene inviata a un account diverso dall'account Microsoft, dall'account di lavoro o dell'Istituto di istruzione o da un account Gmail, verrà richiesto di creare un account Microsoft e di associarlo all'account a cui è stato inviato il messaggio crittografato. in alternativa, è possibile scegliere di richiedere un codice di accesso monouso per l'autenticazione che verrà inviata allo stesso indirizzo di posta elettronica a cui è stato inviato il messaggio crittografato. Dopo aver eseguito l'autenticazione, il messaggio verrà decrittografato e visualizzato tramite il nuovo portale delle funzionalità OME.
   
-Le informazioni relative alle credenziali per l'account Microsoft, il lavoro o account scuola, o l'account Gmail, nonché il passcode occasionale, verranno utilizzate unicamente allo scopo di autenticazione. non verrà archiviato nelle nuove funzionalità OME portale, o utilizzato per le nuove funzionalità OME per altri scopi.
+Le informazioni sulle credenziali dell'account Microsoft, dell'account aziendale o dell'Istituto di istruzione o dell'account Gmail, nonché del codice di accesso monouso, verranno utilizzate unicamente per l'autenticazione. non verrà memorizzato nel nuovo portale delle funzionalità OME o utilizzato dalle nuove funzionalità OME per qualsiasi altro scopo.
   
-Durante il processo di decrittografia del messaggio crittografato che viene visualizzato non verranno archiviato per le nuove funzionalità OME portale; non sarà trasmesso esterno le nuove funzionalità OME portale in qualsiasi momento.
+Durante il processo di decrittografia, i messaggi crittografati ricevuti non verranno archiviati dal nuovo portale delle funzionalità OME. non verrà trasmesso al di fuori del nuovo portale delle funzionalità OME in qualsiasi momento.
   
-Le nuove funzionalità OME che portale può, in alcuni casi, raccogliere le coordinate sull'utilizzo e le prestazioni delle nuove funzionalità OME (ad esempio, la frequenza con cui vengono visualizzati i messaggi crittografati, il browser o app utilizzato e gli eventuali errori riscontrati), che possono essere analizzati in funzione di aggregazione per scopi di migliorare la qualità, sicurezza e l'integrità di questo e altri Microsoft App, prodotti o servizi. Queste informazioni non vengono utilizzate per identificare, contatto o pubblicità all'utente di destinazione.
+Il nuovo portale delle funzionalità OME può, in alcuni casi, raccogliere punti dati sull'uso e sulle prestazioni delle nuove funzionalità OME (ad esempio, la frequenza con cui vengono visualizzati i messaggi crittografati, il browser o l'app utilizzata e gli eventuali errori riscontrati), che possono essere analizzati in aggregazione allo scopo di migliorare la qualità, la sicurezza e l'integrità di questo e di altre app, prodotti o servizi Microsoft. Queste informazioni non vengono utilizzate per identificare, contattare o indirizzare la pubblicità all'utente.
   
 ## <a name="for-more-information"></a>Per ulteriori informazioni
 
-Indirizza privacy correlate richieste di informazioni a Microsoft tramite [omepriv@microsoft.com](mailto:omepriv@microsoft.com)o da un messaggio, all'indirizzo seguente:
+Consultare le richieste di informazioni relative alla privacy dirette a Microsoft tramite [omepriv@microsoft.com](mailto:omepriv@microsoft.com)o tramite posta elettronica al seguente indirizzo:
   
-Microsoft Privacy - la protezione delle informazioni
+Privacy Microsoft-protezione delle informazioni
   
 Microsoft Corporation
   
@@ -49,6 +49,6 @@ Redmond, Washington 98052 USA
   
 ## <a name="changes"></a>Modifiche
 
-Se variazioni alla presente informativa, verrà modificata la data di "ultimo aggiornamento" nella parte superiore dell'istruzione. Consultare dell'organizzazione che fornisce che accesso ai servizi per ulteriori informazioni sulle modifiche apportate alle procedure relative alla privacy.
+Se si inviano modifiche all'istruzione, verranno revisionati i dati "Ultimo aggiornamento" all'inizio dell'istruzione. Consultare l'organizzazione che fornisce l'accesso ai propri servizi per ottenere ulteriori informazioni sulle modifiche apportate alle procedure di privacy.
   
 

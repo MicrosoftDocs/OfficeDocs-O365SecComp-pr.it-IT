@@ -6,75 +6,73 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
-description: Definire i criteri di attività con Office 365 Cloud App protezione per impostare gli avvisi per attivare indicanti l'attività specifiche eseguite avvenire troppo spesso. Tramite l'impostazione dei criteri per attivare gli avvisi, possono essere informati e monitorare le attività specifiche.
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Definire i criteri di attività con Office 365 cloud app Security per impostare gli avvisi da attivare quando si verificano o si verificano attività specifiche. Se si configurano i criteri per attivare gli avvisi, è possibile ricevere una notifica e monitorare le attività specifiche.
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604093"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219766"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Criteri delle attività e avvisi in Office 365 Cloud App Security
 
-Gestione di sicurezza avanzata di Office 365 è sicurezza App Cloud di Office 365.
-  
-|Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
+|Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
-|[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggio successivo](anomaly-detection-policies-in-ocas.md) <br/> |[Avviare utilizzando](utilization-activities-for-ocas.md) <br/> |
+|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggio successivo](anomaly-detection-policies-in-ocas.md) <br/> |[Iniziare a utilizzare](utilization-activities-for-ocas.md) <br/> |
    
-Con Office 365 Cloud App protezione, i criteri di gestione avanzata cloud attivano gli avvisi per attività specifiche eseguite o avvenire troppo spesso. Si supponga, ad esempio, un utente tenta di accedere a Office 365 e si verifica un errore volte 70 in un minuto. Si supponga che consente di scaricare 7.000 file un altro utente o sembra essere effettuato l'accesso dal Canada, quando l'utente deve per essere in un'altra posizione. O peggiori, si supponga che di un utente account è stata danneggiata e un utente malintenzionato utilizza tale account per l'accesso applicazioni basate su cloud dell'organizzazione e i dati riservati.
+Con Office 365 cloud app Security, i criteri di gestione cloud avanzati attivano gli avvisi per attività specifiche che si verificano o si verificano troppo spesso. Ad esempio, se un utente tenta di accedere a Office 365 e ha esito negativo di 70 volte in un minuto. Si supponga che un altro utente scaricherà 7.000 file o che sembri sia stato firmato dal Canada, quando l'utente dovrebbe trovarsi in un'altra posizione. O peggio, supponiamo che l'account di un utente sia stato compromesso e che un utente malintenzionato usi quell'account per accedere alle app cloud dell'organizzazione e ai dati sensibili.
   
-Se si è un [amministratore globale o amministratore di protezione](permissions-in-the-security-and-compliance-center.md), gli avvisi attività notificare è quando questi eventi si verificano. È quindi possibile eseguire azioni specifiche, ad esempio la sospensione di un account utente fino a quando non è possibile provare a utilizzare Dov'.
+Se sei un amministratore [globale o un amministratore della sicurezza](permissions-in-the-security-and-compliance-center.md), gli avvisi attività notificano quando si verificano eventi come questi. È quindi possibile intraprendere azioni specifiche, ad esempio la sospensione di un account utente fino a quando non è possibile esaminare cosa è successo.
   
 > [!NOTE]
-> Criteri di protezione di applicazione Cloud di Office 365 sono diversi dai [avviso criteri in Office 365 Security &amp; centro conformità](alert-policies.md). L'attività criteri descritti in questo articolo vengono definiti nel portale di Office 365 Cloud App protezione e consentono di migliorare la gestione ambiente basato su cloud dell'organizzazione. 
+> I criteri di protezione delle app di Office 365 cloud sono diversi dai [criteri di avviso &amp; nel centro sicurezza e conformità di Office 365](alert-policies.md). I criteri di attività descritti in questo articolo sono definiti nel portale di Office 365 cloud app Security e consentono di gestire al meglio l'ambiente cloud dell'organizzazione. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Verificare quanto segue:
   
-- L'organizzazione dispone di [Protezione di Office 365 Cloud App](office-365-cas-overview.md)e il servizio è [attivata](turn-on-office-365-cas.md).
+- L'organizzazione dispone di [Office 365 cloud app Security](office-365-cas-overview.md)e il servizio è [attivato](turn-on-office-365-cas.md).
     
-- [Registrazione di controllo](turn-audit-log-search-on-or-off.md) è attivata per l'ambiente Office 365. 
+- La [registrazione di controllo](turn-audit-log-search-on-or-off.md) è attivata per l'ambiente Office 365. 
     
-- Si è un amministratore globale o un amministratore di protezione per Office 365.
+- Si è un amministratore globale o un amministratore della sicurezza per Office 365.
     
 ## <a name="create-a-new-activity-policy"></a>Creare un nuovo criterio di attività
 
-1. Un amministratore globale o un amministratore di protezione, passare al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso. <br>Verrà visualizzata la pagina Criteri di protezione di Office 365 Cloud App.<br>![Quando si passa al portale di protezione di applicazioni di Office 365 Cloud, si inizia con la pagina criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. In qualità di amministratore globale o amministratore della sicurezza, passare al cloud app Security Portal[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() ed eseguire l'accesso. <br>Verrà eseguita la pagina Criteri di protezione delle app di Office 365 cloud.<br>![Quando si passa al portale di protezione delle app di Office 365 cloud, si inizia con la pagina Criteri](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-2. Fare clic su **Crea un criterio**e quindi selezionare **il criterio di attività**.<br>![Quando si crea un criterio di accesso client di Office 365, è possibile scegliere tra i criteri di attività e rilevamento anomalia.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Fare clic su **Crea criterio**, quindi selezionare **criteri attività**.<br>![Quando si crea un criterio in O365 CA, è possibile scegliere tra i criteri di attività e i criteri di rilevamento delle anomalie.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-3. Nella pagina **Crea un criterio attività** consente di specificare il **nome del criterio** e la **Descrizione**. Per definire un criterio di base su un modello predefinito, scegliere uno nell'elenco **modello dei criteri** o creare i criteri senza utilizzare un modello.<br>![È possibile creare criteri di attività con Office 365 Cloud App protezione.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Nella pagina **Crea criteri attività** specificare il nome e la **Descrizione**dei **criteri** . Per basare il criterio su un modello predefinito, sceglierne uno nell'elenco dei **modelli di criteri** o creare criteri personalizzati senza utilizzare un modello.<br>![È possibile creare criteri di attività con Office 365 cloud app Security.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-4. Selezionare un **livello di gravità criteri** (bassa, Media o alta) che misura come gravi è all'utente se questo criterio viene generato un avviso. Sarà quindi possibile filtrare gli avvisi quando è esame più avanti. 
+4. Scegliere un **criterio di gravità** (basso, medio o alto) che misuri la gravità del problema se questo criterio attiva un avviso. In questo modo è possibile filtrare gli avvisi durante la revisione in un secondo momento. 
     
-5. Scegliere una **categoria** per questo criterio. Ciò consente di filtrare e ordinare gli avvisi che sono stati attivati o criteri di gruppo quando viene esaminata al loro di apportare modifiche. 
+5. Scegliere una **categoria** per questo criterio. Questo consente di filtrare e ordinare gli avvisi che sono stati attivati o di raggruppare i criteri quando vengono esaminati per apportare modifiche. 
     
-6. Scegliere **filtri attività** di configurazione di altre azioni o metriche che verranno generato un avviso in base a questo criterio. 
+6. Scegliere **filtri attività** per impostare altre azioni o metriche che attiveranno un avviso in base a questo criterio. 
     
-7. In **attività corrispondenza con i parametri**, specificare se la violazione dei criteri viene attivata quando una singola attività genera una corrispondenza per i filtri, o se è necessario un numero specificato di attività ripetute prima di trigger avviso.<br>Se si seleziona **Repeated attività**, specificare il numero di attività, l'intervallo di tempo, e indica se una violazione verrà inclusi nel conteggio di un utente all'interno di un'app specifica o per lo stesso utente con le app.
+7. In **parametri di corrispondenza attività**specificare se una violazione dei criteri verrà attivata quando una singola attività corrisponde ai filtri o se è necessario un numero specifico di attività ripetute prima che l'avviso venga attivato.<br>Se si seleziona **attività ripetute**, specificare il numero di attività, la tempistica e se una violazione conterà un utente all'interno di un'app specifica o per lo stesso utente con qualsiasi app.
     
-8. Facoltativamente, è possibile selezionare **avviso crea** per creare ulteriori avvisi per la ricezione di notifiche da questo criterio (tramite posta elettronica, SMS o entrambi).<br>**Assicurarsi che il provider di posta elettronica non Blocca messaggi di posta elettronica inviati da `no-reply@cloudappsecurity.com` **. 
+8. Facoltativamente, è possibile selezionare **Crea avviso** per creare avvisi aggiuntivi per ricevere notifiche da questo criterio (tramite posta elettronica, messaggio di testo o entrambi).<br>Assicurarsi **che il provider di `no-reply@cloudappsecurity.com`posta elettronica non blocchi le e-mail inviate **. 
   
-9. Scegliere le **Azioni** da eseguire quando viene generato un avviso per sospendere l'utente o richiedere all'utente di effettuare nuovamente l'accesso alle app di Office 365. 
+9. Scegliere le **azioni** da eseguire quando si attiva un avviso per sospendere l'utente o richiedere all'utente di accedere di nuovo alle app di Office 365. 
     
 10. Scegliere **Crea** per completare la creazione del criterio. 
     
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Criteri di rilevamento anomalia](anomaly-detection-policies-in-ocas.md)
+- [Criteri di rilevamento delle anomalie](anomaly-detection-policies-in-ocas.md)
     
 - [Integrare il server SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Leggere ed eseguire l'azione gli avvisi](review-office-365-cas-alerts.md)
+- [Esaminare e intervenire sugli avvisi](review-office-365-cas-alerts.md)
     
-- [Gli indirizzi IP per semplificare la gestione di gruppo](group-your-ip-addresses-in-ocas.md)
+- [Raggruppare gli indirizzi IP per semplificare la gestione](group-your-ip-addresses-in-ocas.md)
     
 

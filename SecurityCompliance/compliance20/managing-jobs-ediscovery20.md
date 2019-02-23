@@ -1,12 +1,12 @@
 ---
-title: Gestire i processi di eDiscovery avanzate (Preview)
+title: Gestire i processi in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694802"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214986"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gestire i processi di eDiscovery avanzate (Preview)
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gestire i processi in Advanced eDiscovery (Preview)
 
-Ecco un elenco di processi che si desidera tenere traccia della scheda **processi** di un caso di eDiscovery avanzate (Preview).
+Di seguito è indicato un elenco dei processi che vengono registrati nella scheda **processi** di un caso in Advanced eDiscovery (Preview).
 
-- La reindicizzazione dati depositaria
-- Stima dei risultati di ricerca
-- Preparazione di anteprima della ricerca
-- Dati aggiunta a un gruppo di lavoro
-- Dati aggiunta a un altro working set
-- Aggiunta di dati non Office 365 a un gruppo di lavoro
-- Preparazione per la risoluzione di errori
-- Dati le aggiunta a un gruppo di lavoro
-- Confronto tra carico imposta
-- Tag ai documenti
-- Analitica in esecuzione
+- Reindicizzazione dei dati del custode
+- Stima dei risultati della ricerca
+- Preparazione dell'anteprima di ricerca
+- Aggiunta di dati a un working set
+- Aggiunta di dati a un altro working set
+- Aggiunta di dati non di Office 365 a un working set
+- Preparazione per la risoluzione degli errori
+- Aggiunta di dati corretti a un working set
+- Confronto tra set di carico
+- Contrassegnare i documenti
+- Esecuzione di analisi
 - Preparazione dei dati per l'esportazione

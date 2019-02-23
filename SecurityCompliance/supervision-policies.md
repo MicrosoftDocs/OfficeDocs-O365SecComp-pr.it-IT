@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090978"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214116"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -215,7 +215,7 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
   
 ### <a name="how-to-use-the-report"></a>Come utilizzare il report
 
-Quando un criterio di supervisione identifica un messaggio di comunicazione per la revisione, la posta elettronica viene recapitata alla cartella di superVisione del revisore in Outlook e Outlook Web App. Questo rapporto elenca il nome di ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione.
+Quando un criterio di supervisione identifica un messaggio di comunicazione per la revisione, la posta elettronica viene recapitata alla cartella di superVisione del revisore in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Questo rapporto elenca il nome di ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione.
   
 Utilizzare il report per:
   
@@ -228,7 +228,7 @@ Di seguito viene indicato un guasto dei valori che è possibile visualizzare nel
   
 |**Tipo di tag**|**Cosa significa**|
 |:-----|:-----|
-| Non Recensito | Il numero di messaggi di posta elettronica che non sono stati ancora recensiti. Questi messaggi di posta elettronica attendono una revisione nel dashboard di supervisione di Office 365 o nella cartella di supervisione del revisore in Outlook/Outlook Web App.|
+| Non Recensito | Il numero di messaggi di posta elettronica che non sono stati ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365 o nella cartella di supervisione del revisore in Outlook/Outlook sul Web
 | Conformi | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi devono essere ancora risolti. |
 | Ambigui | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Questo funge da contrassegno. altri revisori possono aiutare a controllare se un messaggio di posta elettronica deve essere controllato per la conformità. Questi messaggi devono essere ancora risolti. |
 | Non conforme (attivo) | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |

@@ -6,46 +6,46 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
-description: Informazioni su come è possibile passare da un dashboard a delle conoscenze con le azioni consigliate per la protezione &amp; centro conformità.
-ms.openlocfilehash: cbea4dadefa498ac164773718ef8a4dbad351fb7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Informazioni su come passare da un dashboard a un'intuizione con azioni consigliate nel centro &amp; sicurezza e conformità.
+ms.openlocfilehash: 1c43d529d02872563bf6e1c9643b542ab6b8db9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014728"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220526"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procedura: da una dashboard alle informazioni dettagliate
 
-Se non si conosce [report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md), possono essere utili per visualizzare come è possibile passare da un dashboard a delle conoscenze e azioni consigliate. 
+Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da un dashboard a un'intuizione e alle azioni consigliate. 
   
-Questa è una delle diverse procedure dettagliate per la sicurezza &amp; centro conformità. Per visualizzare altre procedure dettagliate, vedere la sezione [su argomenti correlati](#related-topics) . 
+Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza e conformità. Per visualizzare ulteriori procedure dettagliate, vedere la sezione [argomenti correlati](#related-topics) . 
   
-## <a name="walkthrough-from-a-dashboard-to-an-insight"></a>Procedura dettagliata: da un dashboard in delle conoscenze
+## <a name="walkthrough-from-a-dashboard-to-an-insight"></a>Procedura dettagliata: da un dashboard a un'intuizione
 
-Verrà ora esaminato il flusso da un dashboard a un report a delle conoscenze e l'azione. (È riportato un breve [intelligence spoofing](learn-about-spoof-intelligence.md) ). 
+Let ' s walk through the flow from a Dashboard to a report to a Insight and Action. (Si tratta di un breve esempio di [Intelligence contraffatta](learn-about-spoof-intelligence.md) ). 
   
-1. Si inizia con il dashboard di sicurezza nel [protezione &amp; centro conformità](https://protection.office.com). (Passare alla **gestione delle minacce** \> **Dashboard**.)<br>![In sicurezza &amp; centro conformità, scegliere gestione rischio \> Dashboard](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
+1. Si inizia con il dashboard di sicurezza nel [centro &amp; sicurezza e conformità](https://protection.office.com). (Andare al \> **Dashboard**di **gestione delle minacce** ).<br>![Nel centro sicurezza &amp; e conformità scegliere Threat Management \> dashboard.](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. Nella riga **sui concetti** , ci si alcune informazioni che indicano che dovrà essere esaminato alcuni domini che potrebbero essere potenzialmente dannoso. (Nella riga **sui concetti** , fare clic su **coppie di dominio**).<br>![La riga sui concetti menzioni potenziali problemi di spoofing](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
+2. Nella riga **** Insights, si noterà che è necessario esaminare alcuni domini che potrebbero essere sospetti. Nella riga **Insights** fare clic su coppie di **domini**.<br>![La riga Insights segnala potenziali problemi di spoofing](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. È possibile ottenere un elenco di attività correlate a effettuare lo spoofing business intelligence. Si tratta di istanze di cui sono stati inviati messaggi di posta elettronica che sembrano proviene da dell'organizzazione, ma, infatti, inviati da un'altra organizzazione. L'obiettivo è di determinare se i messaggi di spoofing sono autorizzati o non.<br>![Spoofing sui concetti di business intelligence](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>In questo elenco è possibile ordinare le informazioni per il conteggio dei messaggi, data che ultimo è stato rilevato il spoofing e altro ancora. (Fare clic sulle intestazioni di colonna, ad esempio **messaggio contare** o **ultima indicato** per visualizzare la modalità di ordinamento works). 
+3. Viene visualizzato un elenco di attività correlate all'intelligence di spoofing. Questi sono i casi in cui sono stati inviati messaggi di posta elettronica che sembrano provenire dalla nostra organizzazione, ma sono stati, infatti, inviati da un'altra organizzazione. L'obiettivo è determinare se i messaggi falsificati sono autorizzati o meno.<br>![Insights Intelligence spoofing](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>In questo elenco, è possibile ordinare le informazioni in base al numero di messaggi, alla data in cui è stato rilevato l'ultimo spoofing e altro ancora. Fare clic su intestazioni di colonna, ad esempio il **numero di messaggi** o **l'ultima volta** , per vedere come funziona l'ordinamento. 
     
-4. Selezione di un elemento nell'elenco, viene aperto un riquadro dei dettagli dove è possibile visualizzare ulteriori informazioni, inclusi i messaggi di posta elettronica simile che sono stati rilevati. (Fare clic su un elemento nell'elenco ed esaminare le informazioni e consigli.)<br>![Se si seleziona un elemento viene aperto un riquadro dei dettagli](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
+4. Se si seleziona un elemento nell'elenco, verrà aperto un riquadro dei dettagli in cui è possibile visualizzare ulteriori informazioni, inclusi i messaggi di posta elettronica simili rilevati. Fare clic su un elemento nell'elenco ed esaminare le informazioni e i suggerimenti.<br>![La selezione di un elemento apre un riquadro dei dettagli](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Si noti che nella parte superiore del riquadro è disponibile l'opzione per aggiungere il mittente all'elenco dei mittenti consentiti dell'organizzazione. (Non si seleziona **Aggiungi al mittente 'AllowedtoSpoof' elenco Consenti** fino a quando non si è certi che si desidera eseguire questa operazione. [Ulteriori informazioni su Business intelligence di spoofing](learn-about-spoof-intelligence.md).)<br>![È possibile autorizzare un mittente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Si noti che nella parte superiore del riquadro, è disponibile l'opzione per aggiungere il mittente all'elenco dei mittenti consentiti dell'organizzazione. (Non selezionare **Aggiungi all'elenco di mittenti consentiti di AllowedtoSpoof** fino a quando non si è certi di voler eseguire questa operazione. [Per ulteriori informazioni, vedere spoofing Intelligence](learn-about-spoof-intelligence.md).<br>![È possibile autorizzare un mittente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
-In questo modo, è possibile spostare un dashboard in sui concetti di azioni consigliate.
+In questo modo, è possibile passare da un dashboard a intuizioni e azioni consigliate.
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Procedura dettagliata: da delle conoscenze per un rapporto dettagliato](from-an-insight-to-a-detailed-report.md)
+[Procedura dettagliata: da un'intuizione a un report dettagliato](from-an-insight-to-a-detailed-report.md)
   
-[Procedura dettagliata: da un rapporto dettagliato per delle conoscenze](from-a-detailed-report-to-an-insight.md)
+[Procedura dettagliata: da un report dettagliato a un'intuizione](from-a-detailed-report-to-an-insight.md)
   
 

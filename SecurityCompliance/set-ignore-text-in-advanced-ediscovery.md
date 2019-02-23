@@ -6,48 +6,48 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Informazioni su come definire la regola per ignorare il testo specificato quando si utilizzano i moduli di processo e analisi di Office 365 avanzate eDiscovery.  '
-ms.openlocfilehash: eb7e7052979087b7dba98aac3b0c9ab75ec0d02a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informazioni su come definire la regola per ignorare il testo specifico quando si utilizzano i moduli Analyze and process in Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530843"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214246"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Impostare l’opzione Ignora messaggio per Analizza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-La caratteristica Ignora testo può essere applicata a tutto o uno dei seguenti moduli avanzati eDiscovery: analizzare (quasi duplicati thread di posta elettronica, temi) e la pertinenza. Testo ignorato non verrà visualizzato nel file visualizzati in pertinenza e analisi/calcoli eliminerà il testo ignorato.
+La funzionalità Ignora testo può essere applicata a tutti o a uno dei seguenti moduli avanzati di eDiscovery: Analyze (near-Duplicates, email Threads, Themes) e pertinenza. Il testo ignorato non verrà visualizzato nei file visualizzati in pertinenza e l'analisi/calcoli ignorerà il testo ignorato.
   
-Se la caratteristica di ignorare il testo è stata definita in precedenza per i moduli che sono già stato eseguito, l'impostazione Ignora testo ora essere protetto dalle modifiche apportate. La caratteristica di ignorare il testo per il modulo di pertinenza può comunque essere modificata in qualsiasi momento.
+Se la caratteristica Ignora testo era stata definita in precedenza per i moduli già in esecuzione, l'impostazione Ignora testo sarà ora protetta dalla modifica. Tuttavia, la caratteristica Ignora testo per il modulo pertinenza può comunque essere modificata in qualsiasi momento.
   
-## <a name="how-ignore-text-filters-are-applied"></a>Modalità di applicazione di filtri Ignora testo
+## <a name="how-ignore-text-filters-are-applied"></a>Modalità di applicazione dei filtri di testo Ignora
 
-Più filtri Ignora testo vengono applicati nell'ordine che sono stati immessi. Per modificare l'ordine in cui vengono applicati, devono essere eliminati e rientrati nell'ordine desiderato.
+Più filtri di testo Ignora vengono applicati nell'ordine in cui sono stati immessi. Per modificare l'ordine in cui vengono applicati, è necessario eliminarlo e riimmetterlo nell'ordine desiderato.
   
-Se il contenuto del testo è ad esempio: "DAVE BOB ALICE CAROL Giudici", esempi di voci di Ignora testo e i risultati vengono riportati di seguito:
+Ad esempio, se il contenuto del testo è: "DAVE BOB ALICE CAROL EVE", di seguito sono riportati alcuni esempi di voci di testo Ignora e i risultati:
   
 ||||
 |:-----|:-----|:-----|
-|**Ignora le voci di testo** <br/> |**==\>** <br/> |**Risultati** <br/> |
-|"ALICE", "BOB ADRIANA"  <br/> |==\>  <br/> |"DAVE GIUDICI"  <br/> |
-|"ALICE", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"DAVE BOB CAROL GIUDICI"  <br/> |
+|**Ignora voci di testo** <br/> |**==\>** <br/> |**Risultati** <br/> |
+|"ALICE", "BOB CAROL"  <br/> |==\>  <br/> |"DAVE EVE"  <br/> |
+|"ALICE", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"DAVE BOB CAROL EVE"  <br/> |
    
-La seconda voce Ignora testo non è implementata perché la stringa non viene trovata in quanto tale dopo il testo di ignorare la prima applicazione.
+La seconda voce Ignora testo non viene implementata perché la stringa non viene trovata come tale dopo l'applicazione del primo testo Ignora.
   
-## <a name="use-regular-expressions-when-defining-ignore-text"></a>Utilizzare le espressioni regolari durante la definizione Ignora testo
+## <a name="use-regular-expressions-when-defining-ignore-text"></a>Utilizzo di espressioni regolari quando si definisce Ignora testo
 
-Espressioni regolari sono supportate per l'utilizzo durante la definizione Ignora testo. Di seguito sono riportati esempi di utilizzo e la sintassi di espressione regolare:
+Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignora testo. Di seguito sono riportati alcuni esempi di sintassi e utilizzo di espressioni regolari:
   
-- Per rimuovere (ignorare) testo iniziale fino alla fine di una riga:
+- Per rimuovere (ignorare) il testo da inizio fino alla fine di una riga:
     
      `Begin(.*)$`
     
@@ -55,69 +55,69 @@ Espressioni regolari sono supportate per l'utilizzo durante la definizione Ignor
     
     Ad esempio, per il testo seguente:
     
-    **"This is prima frase e prima riga**
+    **"Questa è la prima frase e la prima riga**
     
-    **Si tratta seconda frase e seconda riga"**
+    **Questa è la seconda frase e la seconda riga "**
     
-    l'espressione regolare first(.\*) $ determinerà:
+    prima espressione regolare (.\*) $ provocherà:
     
-    **"Questa è**
+    **"Questo è**
     
-    **Si tratta seconda frase e seconda riga"**
+    **Questa è la seconda frase e la seconda riga "**
     
-- Per rimuovere automaticamente inseriti alla fine di thread di posta elettronica informazioni legali e dichiarazioni di non responsabilità:
+- Per rimuovere le dichiarazioni di non responsabilità e le istruzioni legali inserite automaticamente alla fine dei thread di posta elettronica:
     
      `Begin(.|\s)*End`
     
-    dove "Begin" e "End" sono stringhe univoche all'inizio e fine di un paragrafo di ritorno a capo automatico. 
+    dove "Begin" e "end" sono stringhe univoche all'inizio e alla fine di un paragrafo di testo avvolto. 
     
-    Ad esempio, l'espressione regolare rimuoverà dichiarazioni di non responsabilità e informazioni legali che sono stati in thread di posta elettronica tra le stringhe Begin ed End:
+    Ad esempio, l'espressione regolare seguente eliminerà le dichiarazioni di non responsabilità e le istruzioni legali che si trovavano nel thread di posta elettronica tra le stringhe Begin e end:
     
-    **Il messaggio contiene informazioni riservate (. | \s)\*verifica è necessaria richiedere una versione cartacei**
+    **Questo messaggio contiene informazioni riservate (. | \s)\*se è richiesta la verifica, richiedere una versione cartacea**
     
-- Per rimuovere una dichiarazione di non responsabilità (inclusi i caratteri speciali): 
+- Per rimuovere una dichiarazione di non responsabilità (compresi i caratteri speciali): 
     
-    Ad esempio, per il testo seguente (con la dichiarazione di non responsabilità rappresentata da x): 
+    Ad esempio, per il testo seguente (con la dichiarazione di non responsabilità rappresentata qui da x): 
     
-    **/\*\ Il messaggio contiene informazioni riservate. xxxx xxxx**
+    **/\*\ Questo messaggio contiene informazioni riservate. xxxx xxxx**
     
     **xxxx xxxx xxxx xxxx xxxx xxxx xxxx**
     
-    **xxxx xxxx se è necessario, la verifica Richiedi una versione di stampato. /\*\**
+    **xxxx xxxx se è richiesta la verifica, richiedere una versione cartacea. /\*\**
     
-    l'espressione regolare per rimuovere la dichiarazione di non responsabilità precedente deve essere: 
+    l'espressione regolare per rimuovere la dichiarazione di non responsabilità di cui sopra dovrebbe essere la seguente: 
     
-    **\/\\*\\Il messaggio contiene informazioni riservate\.(. | \s)\* verifica è necessaria richiedere una versione cartacei\.\/\\*\\**
+    **\/\\*\\Questo messaggio contiene informazioni\.riservate (. | \s)\* se è richiesta la verifica, richiedere una versione\. cartacea\/\\*\\**
     
 - Regole di espressione regolare:
     
-  - Tutti i caratteri che non fanno parte dell'alfabeto ad eccezione di spazi da parte, "_" e "-" deve essere preceduto da "\".
+  - Tutti i caratteri che non fanno parte dell'alfabeto eccetto per gli spazi, "_" e "-" devono essere preceduti da "\".
     
-  - Il campo eExpression regolare può essere un numero illimitato di lunghezza.
+  - Il campo eExpression regolare può essere di lunghezza illimitata.
     
 > [!TIP]
-> Per una spiegazione e informazioni dettagliate sulla sintassi delle espressioni regolari, vedere: [Linguaggio di espressioni regolari - Guida di riferimento rapido](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
+> Per una spiegazione e una sintassi dettagliata delle espressioni regolari, vedere: [Regular Expression Language-Quick Reference](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
   
 ## <a name="define-ignore-text-rule"></a>Definire la regola ignora testo
 
-1. Nella **Gestisci \> Analizza \> analizzare le opzioni** fare clic su scheda, nella sezione **Ignora testo** il **+** icona per aggiungere una regola. 
+1. Nella sezione **Ignora testo** della scheda **Gestisci \> opzioni di \> analisi Analyze** fare clic sull' **+** icona per aggiungere una regola. 
     
-2. Nella finestra di dialogo **Aggiungi Ignora testo** nel campo **nome** digitare un nome per la regola ignora testo. 
+2. Nella finestra di dialogo **Aggiungi testo Ignora** , nel campo **nome** , digitare un nome per la regola di testo Ignora. 
     
     ![Aggiungi testo ignorato](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
-3. Nella casella di **testo** , digitare il testo verrà ignorato. Il campo testo consente a un numero illimitato di caratteri. 
+3. Nella casella di **testo** Digitare il testo da ignorare. Il campo di testo consente un numero illimitato di caratteri. 
     
     > [!TIP]
-    > Come indicato nella precedente finestra, fare clic su **lampadina** per visualizzare le linee guida sintassi comuni per la regola ignora testo. 
+    > Come mostrato nella finestra sopra, fare clic su **lampadina** per visualizzare le linee guida per la sintassi comune per la regola di testo Ignora. 
   
-4. Se lo si desidera, selezionare la casella di controllo **maiuscole/minuscole** . 
+4. Selezionare la casella di controllo **distinzione** tra maiuscole e minuscole, se necessario. 
     
-5. Nell'elenco **Applica a** selezionare moduli avanzati eDiscovery in cui si desidera applicare la definizione. 
+5. Nell'elenco **applica a** selezionare i moduli avanzati di eDiscovery in cui applicare la definizione. 
     
-6. Se si desidera che un'esecuzione di test in testo di esempio, digitare il testo di esempio nella casella di testo **Input** e fare clic su **Test**. I risultati vengono visualizzati nella casella di testo **Output** . 
+6. Se si desidera eseguire l'esecuzione di un test nel testo di esempio, digitare il testo di esempio nella casella di testo **input** e fare clic su **test**. I risultati vengono visualizzati nella casella di testo **output** . 
     
-7. Fare clic su **OK** per salvare la regola ignora testo. Viene visualizzata la regola ignora testo definita. 
+7. Fare clic su **OK** per salvare la regola di testo Ignora. Viene visualizzata la regola di testo Ignora definita. 
     
     ![Impostare nome del testo ignorato](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
@@ -125,11 +125,11 @@ Espressioni regolari sono supportate per l'utilizzo durante la definizione Ignor
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sui similarità documento](understand-document-similarity-in-advanced-ediscovery.md)
+[Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   
 [Impostazione delle opzioni di analisi](set-analyze-options-in-advanced-ediscovery.md)
   
-[Impostazioni avanzate di analisi di impostazione](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Impostazione analisi impostazioni avanzate](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Visualizzazione dei risultati di analisi](view-analyze-results-in-advanced-ediscovery.md)
+[Visualizzazione dei risultati dell'analisi](view-analyze-results-in-advanced-ediscovery.md)
 

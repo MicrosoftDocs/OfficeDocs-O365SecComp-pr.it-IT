@@ -1,5 +1,5 @@
 ---
-title: Criteri di accesso in Office 365 cloud app Security
+title: Criteri di accesso in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: I criteri di accesso alla sicurezza di Office 365 cloud app consentono il monitoraggio e il controllo in tempo reale sull'accesso alle app cloud basate su utente, posizione, dispositivo e app. È possibile creare criteri di accesso per qualsiasi dispositivo, inclusi i dispositivi che non sono stati aggiunti al dominio e non gestiti da Windows Intune mediante l'implementazione di certificati client su dispositivi gestiti o utilizzando certificati esistenti, ad esempio i certificati MDM di terze parti. Ad esempio, è possibile distribuire i certificati client ai dispositivi gestiti e quindi bloccare l'accesso da dispositivi privi di un certificato.
-ms.openlocfilehash: bb4404793647c65ab8addc148e6efe24242f3079
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103311"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219776"
 ---
-# <a name="access-policies-in-office-365-cloud-app-security"></a>Criteri di accesso in Office 365 cloud app Security
+# <a name="access-policies-in-office-365-cloud-app-security"></a>Criteri di accesso in Office 365 Cloud App Security
 
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|

@@ -5,101 +5,101 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
-description: È possibile integrare il server SIEM con Office 365 Cloud App protezione. In questo articolo per una panoramica del funzionamento e su come configurarla.
-ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: È possibile integrare il server SIEM con Office 365 cloud app Security. Leggere questo articolo per ottenere una panoramica di come funziona e come configurarlo.
+ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603767"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215876"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrare il server SIEM con Office 365 Cloud App Security
   
-|Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
+|Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
-|[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggio successivo](utilization-activities-for-ocas.md) <br/> |[Avviare utilizzando](utilization-activities-for-ocas.md) <br/> |
+|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggio successivo](utilization-activities-for-ocas.md) <br/> |[Iniziare a utilizzare](utilization-activities-for-ocas.md) <br/> |
    
-## <a name="overview-and-prerequisites"></a>Panoramica e i prerequisiti
+## <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
 
-È possibile integrare [Protezione di Office 365 Cloud App](get-ready-for-office-365-cas.md) con il server di gestione (SIEM) eventi e informazioni sicurezza per abilitare il monitoraggio centralizzato degli avvisi. Ciò è particolarmente utile per le organizzazioni che utilizzano servizi cloud e le applicazioni server locale. Integrazione con un server SIEM consente al team di protezione migliorare la protezione delle applicazioni di Office 365 mantenendo il flusso di lavoro normale protezione automazione alcune procedure di sicurezza e la correlazione tra basata su cloud e locali degli eventi.  
+È possibile integrare [Office 365 cloud app Security](get-ready-for-office-365-cas.md) con il server di gestione eventi e informazioni di sicurezza (Siem) per abilitare il monitoraggio centralizzato degli avvisi. Questo è particolarmente vantaggioso per le organizzazioni che utilizzano i servizi cloud e le applicazioni server locali. L'integrazione con un server SIEM consente al team di sicurezza di proteggere al meglio le applicazioni di Office 365 mantenendo il flusso di lavoro di sicurezza usuale, automatizzando determinate procedure di sicurezza e correlando tra gli eventi basati su cloud e in locale.  
   
-Quando si integra innanzitutto il server SIEM con Office 365 Cloud App protezione, gli avvisi dagli ultimi due giorni vengono inoltrati al server SIEM e tutti gli avvisi da quindi su (basato su alcun filtro selezionato). Inoltre, se si disattiva questa caratteristica per un periodo prolungato, quando si riattivarlo, inoltrerà ultimi due giorni di avvisi e quindi tutti gli avvisi in poi.
+Quando si integra per la prima volta il server SIEM con Office 365 cloud app Security, gli avvisi degli ultimi due giorni vengono inoltrati al server SIEM, nonché tutti gli avvisi da quel momento in poi (in base ai filtri selezionati). Inoltre, se si disabilita questa funzionalità per un periodo di tempo prolungato, quando si abilita di nuovo, verranno inoltrati gli ultimi due giorni di avvisi e quindi tutti gli avvisi da quel momento in poi.
 
-### <a name="siem-integration-architecture"></a>Architettura dell'integrazione SIEM
+### <a name="siem-integration-architecture"></a>Architettura di integrazione di SIEM
 
-Un agente SIEM è impostato nella rete dell'organizzazione. Se distribuito e configurato, l'agente SIEM tutti i tipi di dati che sono stati configurati (avvisi) utilizzando l'API REST di Office 365 Cloud App sicurezza. Il traffico viene quindi inviato attraverso un canale HTTPS crittografato sulla porta 443.
+Un agente di SIEM è configurato nella rete dell'organizzazione. Quando viene distribuita e configurata, l'agente di SIEM estrae i tipi di dati configurati (avvisi) con Office 365 cloud app Security RESTful APIs. Il traffico viene quindi inviato su un canale HTTPS crittografato sulla porta 443.
   
-Quando un agente SIEM recupera i dati di sicurezza di Office 365 Cloud App, invia i messaggi del Registro di sistema per server SIEM locale utilizzando le configurazioni di rete che sono disponibili durante l'installazione (TCP o UDP con una porta personalizzata).
+Quando un agente SIEM recupera i dati da Office 365 cloud app Security, invia i messaggi syslog al server SIEM locale utilizzando le configurazioni di rete fornite durante l'installazione (TCP o UDP con una porta personalizzata).
 
-![Architettura SIEM e sicurezza App Cloud](media/siem-architecture.png)
+![Architettura di sicurezza di SIEM e cloud app](media/siem-architecture.png)
 
 ### <a name="supported-siem-servers"></a>Server SIEM supportati
 
-Protezione di Office 365 Cloud App supporta attualmente server SIEM seguenti:
-- Lo stato attivo Micro ArcSight
-- Formato CEF generico
+Office 365 cloud app Security attualmente supporta i seguenti server SIEM:
+- Micro Focus ArcSight
+- CEF generico
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-- È necessario essere un amministratore globale o sicurezza per eseguire le attività descritte in questo articolo. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
+- È necessario essere un amministratore globale o un amministratore della sicurezza per eseguire le attività descritte in questo articolo. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
-- È necessario che [Office 365 Cloud App protetto](turn-on-office-365-cas.md) per l'organizzazione.
+- È necessario che [Office 365 cloud app Security sia abilitato](turn-on-office-365-cas.md) per la propria organizzazione.
 
-- [Registrazione di controllo](turn-audit-log-search-on-or-off.md) deve essere attivata per Office 365
+- La [registrazione di controllo](turn-audit-log-search-on-or-off.md) deve essere attivata per Office 365
 
-- Deve disporre di un server standard che soddisfi i requisiti seguenti per configurare l'integrazione del server SIEM:
-    - Sistema operativo: Windows o Linux (può essere una macchina virtuale)
+- Per configurare l'integrazione del server SIEM è necessario disporre di un server standard che soddisfi i requisiti seguenti:
+    - SISTEMA operativo: Windows o Linux (può essere una macchina virtuale)
     - CPU: 2
     - Spazio su disco: 20 GB
     - RAM: 2 GB
     - [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installato
-    - Firewall configurati come descritto in [requisiti di rete](https://docs.microsoft.com/cloud-app-security/network-requirements)
+    - Firewall configurato come descritto in [requisiti di rete](https://docs.microsoft.com/cloud-app-security/network-requirements)
 
-- È necessario disporre di dettagli del **Registro di sistema remoto host** e **numero di porta Syslot**. Un amministratore di rete o un amministratore di sicurezza deve essere in grado di individuare tali informazioni. 
+- È necessario disporre di informazioni dettagliate sull' **host syslog remoto** e sul **numero di porta di Syslot**. Un amministratore di rete o un amministratore di sicurezza dovrebbe essere in grado di individuare tali informazioni. 
 
-- È necessario accettare le [condizioni di licenza software](https://go.microsoft.com/fwlink/?linkid=862491) scaricare il [file JAR](https://go.microsoft.com/fwlink/?linkid=838596) è necessario effettuare l'integrazione del server SIEM.
+- È necessario accettare le [condizioni di licenza software](https://go.microsoft.com/fwlink/?linkid=862491) per scaricare il [file jar](https://go.microsoft.com/fwlink/?linkid=838596) che è necessario integrare il server Siem.
  
-## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Passaggio 1: Configurarlo in un agente SIEM nella sicurezza App Cloud di Office 365
+## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Passaggio 1: conFigurarlo come agente di SIEM in Office 365 cloud app Security
 
-1. Accedere al portale di protezione di applicazione Cloud ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) ed eseguire l'accesso.
+1. Accedere al portale[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)di sicurezza delle app cloud e accedere.
   
-2. Fare clic su **Impostazioni** \> **estensioni di protezione**e quindi fare clic su agenti SIEM.<br/>
-![Scegliere Impostazioni gt _ estensioni di protezione](media/Settings-SecurityExtensions.png)
+2. Fare clic su impostazioni di **protezione**di **Settings** \> e quindi scegliere agenti Siem.<br/>
+![Scegliere Settings > Security Extensions](media/Settings-SecurityExtensions.png)
 
-3. Scegliere **Aggiungi SIEM agente**.<br/>![Selezionare Aggiungi SIEM agente.](media/SIEMAgents.png)
+3. Scegliere **Aggiungi agente Siem**.<br/>![Scegliere Aggiungi agente SIEM.](media/SIEMAgents.png)
     
-4. Scegliere **Avvia procedura guidata**.<br/>![Ottieni assistenza o avviare la procedura guidata](media/HelpOrWizard.png) 
+4. Scegliere **Avvia procedura guidata**.<br/>![Ottenere assistenza o avviare la procedura guidata](media/HelpOrWizard.png) 
     
-5. Nel passaggio **Generale** , specificare un nome e **Selezionare il formato SIEM** e impostare le **Impostazioni avanzate** di interesse per tale formato. Quindi scegliere **Avanti**.<br/>![Specificare un nome e tipo](media/ChooseAgentTypeAndName.png)
+5. Nel passaggio **generale** , specificare un nome, quindi **selezionare il formato Siem** e impostare le **Impostazioni avanzate** rilevanti per tale formato. Fare quindi clic su **Avanti**.<br/>![Specificare un nome e un tipo](media/ChooseAgentTypeAndName.png)
     
-6. Al passaggio del **Registro di sistema remoto** , specificare l'indirizzo IP o nome host dell' **host del Registro di sistema remoto** e il **numero di porta del Registro di sistema**. Selezionare TCP o UDP come protocollo di registro di sistema remoto. (È possibile utilizzare con l'amministratore di rete o un amministratore della sicurezza per ottenere queste informazioni dettagliate, se non disponi.) Quindi scegliere **Avanti**.<br/>![Specificare i dettagli di registro di sistema remoto](media/ArcSightS1Syslog.png)
+6. Nel passaggio **syslog Remote** , specificare l'indirizzo IP o il nome host dell' **host syslog remoto** e il **numero di porta syslog**. Selezionare TCP o UDP come protocollo syslog remoto. Se non si dispone di tali informazioni, è possibile collaborare con l'amministratore di rete o con l'amministratore della sicurezza. Fare quindi clic su **Avanti**.<br/>![Specificare i dettagli di syslog remoti](media/ArcSightS1Syslog.png)
   
-7. Nel passaggio **Tipi di dati** , effettuare una delle opzioni seguenti e quindi fare clic su **Avanti**:
-    - Mantenere l'impostazione predefinita di **Tutti gli avvisi**<br/>OPPURE
-    - Fare clic su **tutti gli avvisi**e quindi fare clic su **filtri specifici**. Definire i filtri per selezionare i tipi di avvisi che si desidera inviare al server SIEM.<br/>![Passaggio di tipi di dati della procedura guidata](media/ArcSightS1ExportOptions.png)
+7. Nel passaggio **tipi di dati** effettuare una delle operazioni seguenti e quindi fare clic su **Avanti**:
+    - Mantieni l'impostazione predefinita di **tutti gli avvisi**<br/>OPPURE
+    - Fare clic su **tutti gli avvisi**e quindi scegliere **filtri specifici**. Definire i filtri per selezionare i tipi di avvisi che si desidera inviare al server SIEM.<br/>![Passaggio dei tipi di dati della procedura guidata](media/ArcSightS1ExportOptions.png)
   
-8. Nella schermata Congratulazioni, copiare il token e salvarlo per utilizzi successivi.<br/>![Schermata agente creato SIEM](media/SIEMAgentFinished.png) 
+8. Nella schermata Congratulazioni, copiare il token e salvarlo in un secondo momento.<br/>![Schermata dell'agente di SIEM creato](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
-> A questo punto è stato impostato un agente SIEM nella sicurezza App Cloud di Office 365, ma l'integrazione del server SIEM non è ancora completato. Procedere al passaggio successivo per continuare l'integrazione del server SIEM.
+> A questo punto, è stato configurato un agente SIEM in Office 365 cloud app Security, ma l'integrazione del server SIEM non è ancora stata completata. Procedere con il passaggio successivo per continuare l'integrazione del server SIEM.
 
-Dopo aver fare clic su Chiudi e uscire dalla procedura guidata, nella schermata di estensioni di protezione, è possibile visualizzare l'agente SIEM che è stato aggiunto nella tabella. Viene visualizzato lo stato **creato** fino a quando non si connette più avanti.
+Dopo aver fatto clic su Chiudi e lasciare la procedura guidata, nella schermata estensioni di sicurezza, è possibile visualizzare l'agente SIEM aggiunto nella tabella. Verrà visualizzato lo stato **creato** finché non viene connesso in un secondo momento.
 
-![Agente SIEM creato](media/SIEMAgentCreated.png)
+![Agente di SIEM creato](media/SIEMAgentCreated.png)
     
-## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>Passaggio 2: Scaricare un file con estensione JAR ed eseguirlo nel server SIEM
+## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>Passaggio 2: scaricare un file JAR ed eseguirlo sul server SIEM
 
-1. Scaricare [Microsoft Cloud App sicurezza SIEM Agent](https://go.microsoft.com/fwlink/?linkid=838596) e decomprimere la cartella. (È necessario accettare le [condizioni di licenza software](https://go.microsoft.com/fwlink/?linkid=862491) per continuare.) 
+1. Scaricare l' [agente di Microsoft cloud app Security Siem](https://go.microsoft.com/fwlink/?linkid=838596) e decomprimere la cartella. Per continuare, è necessario accettare le [condizioni di licenza software](https://go.microsoft.com/fwlink/?linkid=862491) . 
     
-2. Estrarre il file JAR dalla cartella compressa ed eseguirlo nel server SIEM.
+2. Estrarre il file. jar dalla cartella zippata ed eseguirlo sul server SIEM.
     
-3. Dopo aver eseguito il file, eseguire le operazioni seguenti: comando:<br/>
+3. Dopo aver eseguito il file, eseguire il comando riportato di seguito:<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -107,34 +107,34 @@ Dopo aver fare clic su Chiudi e uscire dalla procedura guidata, nella schermata 
 
 - Il nome del file può variare a seconda della versione dell'agente SIEM. 
 
-- È consigliabile eseguire il file JAR nel server SIEM durante l'installazione di server.
+- Si consiglia di eseguire il file JAR sul server SIEM durante l'installazione del server.
 
-    - **Windows**: eseguito come attività pianificata, assicurandosi di configurare l'attività da **eseguire se l'utente è connesso o meno** e deselezionare l'opzione **interrompere l'operazione se non si verifica più di** .
+    - **Windows**: eseguire come attività pianificata, assicurandosi di configurare l'attività per l' **esecuzione se l'utente è connesso o meno** e si deseleziona l'opzione **Interrompi l'attività se viene eseguito più a lungo di** Option.
 
-    - **Linux**: aggiungere il comando Esegui con un **&** per il `rc.local` file. <br/>Esempio:<br/> 
+    - **Linux**: aggiungere il comando Esegui con un **&** al `rc.local` file. <br/>Esempio:<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
 
-- Parametri [] tra parentesi quadre sono facoltativi e devono essere utilizzati solo se pertinenti. Utilizzare le variabili seguenti:
+- I parametri tra parentesi quadre [] sono facoltativi e devono essere utilizzati solo se rilevanti. Utilizzare le seguenti variabili:
 
-    - **DIRNAME** è il percorso della directory da utilizzare per i registri di debug agente locale.
+    - **Dirname** è il percorso della directory che si desidera utilizzare per i log di debug degli agenti locali.
 
-    - **Indirizzo [: porta]** è l'indirizzo del server proxy e la porta utilizzati dal server per la connessione a Internet.
+    - **Address [:P Ort]** è l'indirizzo del server proxy e la porta utilizzata dal server per la connessione a Internet.
 
-    - **TOKEN** è il token agente SIEM che sono stati copiati in routine prima.
+    - **Token** è il token dell'agente Siem copiato nella prima procedura.
 
-    - Per visualizzare la Guida, digitare `-h`. 
+    - Per ottenere assistenza, digitare `-h`. 
   
-## <a name="step-3-validate-that-the-siem-agent-is-working"></a>Passaggio 3: Verificare che l'agente SIEM funzioni correttamente
+## <a name="step-3-validate-that-the-siem-agent-is-working"></a>Passaggio 3: verificare che l'agente SIEM funzioni
 
-1. Verificare che lo stato dell'agente SIEM nel portale di Office 365 Cloud App protezione non viene visualizzato come **errore di connessione** o **disconnesso** e che non sono presenti notifiche agente.<br/>Ad esempio, qui è possibile visualizzare che è connesso il server SIEM:<br/>![Server SIEM connesso](media/siem-connected.png)<br/>E visualizzare in questo caso, che il server SIEM viene disconnesso:<br/>![Server SIEM non connesso](media/siem-not-connected.png) 
+1. Verificare che lo stato dell'agente SIEM nel portale di sicurezza delle app cloud di Office 365 non venga visualizzato come **errore di connessione** o disconnesso e che non vi siano notifiche di agente. ****<br/>Ad esempio, qui è possibile vedere che il server SIEM è connesso:<br/>![Server SIEM connesso](media/siem-connected.png)<br/>E qui, è possibile vedere il server SIEM è disconnesso:<br/>![Server SIEM non connesso](media/siem-not-connected.png) 
   
-2. Nel server di registro di sistema/SIEM, verificare che sia incluso che avvisi ricevuti da sicurezza App Cloud di Office 365.
+2. Nel server syslog/SIEM, verificare che gli avvisi siano arrivati da Office 365 cloud app Security.
   
-## <a name="what-the-logfiles-look-like"></a>Che aspetto i file di registro
+## <a name="what-the-logfiles-look-like"></a>Aspetto dei file di log
 
-Ecco un esempio di file di registro degli avvisi che può essere inviato a un server SIEM:
+Di seguito è riportato un esempio di file di log avvisi che potrebbe essere inviato a un server SIEM:
 
 ```
 2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7
@@ -150,57 +150,57 @@ Ecco un esempio di file di registro degli avvisi che può essere inviato a un se
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
 
-Inoltre, ecco un altro esempio, questa volta nel formato il formato CEF:
+Ed ecco un altro esempio, questa volta in formato CEF:
 
 
-|Nome del campo il formato CEF  | Descrizione  |
+|Nome del campo CEF  | Description  |
 |---------|---------|
-|avviare     | Data/ora degli avvisi        |
-|fine     | Data/ora degli avvisi        |
-|round trip     | Data/ora degli avvisi        |
-|msg     | descrizione di avviso, come illustrato nel portale di Office 365 Cloud App Security        |
-|suser     | utente soggetto degli avvisi        |
-|destinationServiceName     | avviso originari app, ad esempio Office 365, SharePoint o OneDrive        |
-|csLabel     | Varia (etichette avere significati diversi). In genere, le etichette sono di chiara interpretazione, ad esempio targetObjects.        |
-|cs     | Informazioni corrispondente a un'etichetta (ad esempio, l'utente di destinazione di un avviso come riportato nell'esempio di etichetta)        |
+|iniziare     | timestamp di avviso        |
+|End     | timestamp di avviso        |
+|RT     | timestamp di avviso        |
+|msg     | Descrizione dell'avviso come mostrato nel portale di Office 365 cloud app Security        |
+|sUser     | utente del soggetto di avviso        |
+|destinationServiceName     | app di origine degli avvisi, ad esempio Office 365, SharePoint o OneDrive        |
+|csLabel     | Varia (le etichette hanno significati diversi). In genere, le etichette sono autoesplicative, ad esempio targetObjects.        |
+|cs     | Informazioni corrispondenti a un'etichetta, ad esempio l'utente di destinazione di un avviso secondo l'esempio di etichetta.        |
 
-## <a name="additional-tasks-as-needed"></a>Attività aggiuntive (se necessario)
+## <a name="additional-tasks-as-needed"></a>Altre attività (se necessario)
 
-Dopo aver configurato il server SIEM e hanno integrato con protezione App Cloud di Office 365, potrebbe essere necessario rigenerare un token, modificare un agente SIEM o eliminare un agente SIEM. Nelle sezioni seguenti viene descritto come eseguire queste attività.
+Dopo aver configurato il server SIEM e averlo integrato con Office 365 cloud app Security, potrebbe essere necessario rigenerare un token, modificare un agente SIEM o eliminare un agente SIEM. Nelle sezioni seguenti viene descritto come eseguire queste attività.
 
-### <a name="regenerate-a-token"></a>Rigenerare un token
+### <a name="regenerate-a-token"></a>Rigenerazione di un token
 
-Se si perde il token, sarà possibile rigenerare una. 
+Se si perde il token, è possibile rigenerarne uno. 
 
-1. Nel portale di Office 365 Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), fare clic su **Impostazioni** > **estensioni di protezione**.
+1. In Office 365 Cloud App security[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)portal (), scegliere **Settings** > **security extensions**.
 
-2. Nella tabella, individuare la riga per l'agente SIEM. 
+2. Nella tabella individuare la riga per l'agente SIEM. 
 
-3. Fare clic sui puntini di sospensione e quindi fare clic su **rigenerare token**.<br/>![Rigenerare un token facendo clic sui puntini di sospensione per l'agente SIEM](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
+3. Fare clic sui puntini di ellisse e quindi scegliere **Rigenera token**.<br/>![Rigenerare un token facendo clic sui puntini di sospensione per l'agente SIEM](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
   
 ### <a name="edit-a-siem-agent"></a>Modificare un agente SIEM
 
-1. Nel portale di Office 365 Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), fare clic su **Impostazioni** > **estensioni di protezione**.
+1. In Office 365 Cloud App security[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)portal (), scegliere **Settings** > **security extensions**.
 
 2. Individuare la riga per l'agente SIEM. 
 
-3. Fare clic sui puntini di sospensione e quindi fare clic su **Modifica**. (Se si modifica l'agente SIEM, non necessaria eseguire di nuovo il file JAR, aggiorna automaticamente).<br/>![Per modificare l'agente SIEM, fare clic sui puntini di sospensione e quindi scegliere Modifica.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Fare clic sui puntini di ellisse e quindi scegliere **modifica**. Se si modifica l'agente SIEM, non è necessario rieseguire il file. jar; si aggiorna automaticamente.<br/>![Per modificare l'agente SIEM, scegliere i puntini di ellisse e quindi fare clic su modifica.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Eliminare un agente SIEM
 
-1. Nel portale di Office 365 Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), fare clic su **Impostazioni** > **estensioni di protezione**.
+1. In Office 365 Cloud App security[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)portal (), scegliere **Settings** > **security extensions**.
 
 2. Individuare la riga per l'agente SIEM. 
 
-3. Fare clic sui puntini di sospensione e quindi fare clic su **Elimina**.<br/>![Per eliminare un agente SIEM, fare clic sui puntini di sospensione e quindi fare clic su Elimina.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
+3. Fare clic sui puntini di ellisse e quindi scegliere **Elimina**.<br/>![Per eliminare un agente SIEM, scegliere i puntini di ellissi e quindi scegliere Elimina.](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
 
   
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
-- [Leggere ed eseguire l'azione gli avvisi](review-office-365-cas-alerts.md)
+- [Esaminare e intervenire sugli avvisi](review-office-365-cas-alerts.md)
     
-- [Gli indirizzi IP per semplificare la gestione di gruppo](group-your-ip-addresses-in-ocas.md)
+- [Raggruppare gli indirizzi IP per semplificare la gestione](group-your-ip-addresses-in-ocas.md)
     
 

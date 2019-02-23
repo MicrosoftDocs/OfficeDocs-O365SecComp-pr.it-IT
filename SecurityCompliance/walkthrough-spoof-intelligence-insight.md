@@ -1,89 +1,89 @@
 ---
-title: Delle conoscenze di business intelligence spoofing procedura dettagliata
+title: Informazioni dettagliate su spoofing Intelligence Insight
 ms.author: krowley
 author: kccross
 ms.date: 7/30/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
-description: Vedere come funziona delle conoscenze nuovo intelligence spoofing.
-ms.openlocfilehash: ca9c4ae6f2d65ef2700a2e02acd5b4f1dfbfe903
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Vedere come funziona il nuovo spoofing Intelligence Insight.
+ms.openlocfilehash: 83fa1580a0e7c4717581cc5f23b8f525d6b918e0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22596095"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220326"
 ---
-# <a name="walkthrough-spoof-intelligence-insight"></a>Procedura dettagliata: spoofing intelligence informative
+# <a name="walkthrough-spoof-intelligence-insight"></a>Procedura dettagliata: spoofing Intelligence Insight
 
-Utilizzando informative spoofing Intelligence, è possibile determinare rapidamente i mittenti legittimo inviano che non autenticati di posta elettronica. Che possono inviare messaggi di spoofing, è possibile ridurre il rischio di eventuali falsi positivi continui agli utenti.
+Usando lo spoofing Intelligence Insight, è possibile determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati. Consentendo loro di inviare messaggi falsificati, è possibile ridurre il rischio di eventuali falsi positivi per gli utenti.
   
-Inoltre, è possibile utilizzare monitor di Business Intelligence di spoofing e gestione di coppie di dominio consentite per fornire un ulteriore livello di sicurezza e impedire che i messaggi non sicuri che arrivano nella propria organizzazione.
+Inoltre, è possibile utilizzare lo spoofing Intelligence monitor e gestire le coppie di domini consentite per fornire un ulteriore livello di sicurezza e impedire l'arrivo di messaggi non sicuri nell'organizzazione.
   
-È possibile utilizzare delle conoscenze di business intelligence spoofing in sicurezza &amp; centro conformità se è stato assegnato l'account di lavoro o della scuola amministratore globale di Office 365, amministratore della sicurezza o le autorizzazioni di lettura di sicurezza. Per ulteriori informazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+È possibile utilizzare l'Insight Intelligence spoofing nel centro sicurezza &amp; e conformità se l'account aziendale o dell'Istituto di istruzione è stato assegnato a Office 365 Global Administrator, Security Administrator o Security Reader Permissions. Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
-Se non si conosce [report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md), possono essere utili per visualizzare come è possibile passare da un dashboard a delle conoscenze e azioni consigliate.
+Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da un dashboard a un'intuizione e alle azioni consigliate.
   
-È possibile visualizzare delle conoscenze intelligence spoofing da più di un dashboard in sicurezza &amp; centro conformità. Indipendentemente dal dashboard di cui sta osservando delle conoscenze fornisce i dettagli stessi e consente di eseguire rapidamente le stesse attività.
+È possibile visualizzare l'Insight di intelligence di spoofing da più dashboard nel centro sicurezza &amp; e conformità. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
   
-Questa è una delle diverse procedure dettagliate per la sicurezza &amp; centro conformità. Per informazioni sull'esplorazione di report e sui concetti, vedere le procedure dettagliate nella sezione su argomenti correlati.
+Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza e conformità. Per informazioni sull'esplorazione di report e approfondimenti, vedere le procedure dettagliate nella sezione Argomenti correlati.
   
-## <a name="getting-to-the-spoof-intelligence-insight-in-the-security-amp-compliance-center"></a>Guida per delle conoscenze intelligence spoofing nella protezione &amp; centro conformità
+## <a name="getting-to-the-spoof-intelligence-insight-in-the-security-amp-compliance-center"></a>Come ottenere l'Insight Intelligence di spoofing nel centro &amp; sicurezza e conformità
 
-1. Per iniziare, è necessario [passare a sicurezza &amp; centro conformità](go-to-the-securitycompliance-center.md).
+1. Per iniziare, è necessario [andare al centro &amp; sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
-2. In sicurezza &amp; centro conformità, Vai alla **Gestione delle minacce** \> **Dashboard.**
+2. Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Dashboard.**
     
-3. Nella riga **sui concetti** , cercare delle conoscenze di business intelligence spoofing. Se è stata abilitata intelligence spoofing, sarà il diritto di informative **Spoofed domini che non è riuscita l'autenticazione degli ultimi 30 giorni**. Se non sono abilitate spoofing protezione, quindi delle conoscenze richiederà a tale scopo, utilizzare il titolo **Abilita protezione spoofing**. 
+3. Nella riga **** Insights cercare la funzionalità di analisi di intelligence di spoofing. Se è stata abilitata l'intelligenza contraffatta, l'Insight ha diritto **a domini falsificati che non hanno eseguito l'autenticazione degli ultimi 30 giorni**. Se non è stata abilitata la protezione da spoofing, l'Insight vi chiederà di farlo usando il titolo **Enable spoofing Protection**. 
     
-## <a name="about-the-insight-on-the-dashboard"></a>Su conoscenze nel dashboard di
+## <a name="about-the-insight-on-the-dashboard"></a>Informazioni sull'Insight nel dashboard
 
-Delle conoscenze nel dashboard di vengono visualizzate informazioni simile al seguente.
+L'Insight sul dashboard Visualizza informazioni di questo tipo.
   
-![Cattura di schermata di analisi di simulazione business intelligence](media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Schermata di Insight Intelligence spoofing](media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
-Tali informazioni approfondite prevede due modalità:
+Questa intuizione ha due modalità:
   
- **Modalità delle conoscenze**. Se si dispone di tutti i criteri spoofing abilitato, quindi delle conoscenze Mostra messaggi quanti hanno subiti la funzionalità di business intelligence spoofing negli ultimi 30 giorni. 
+ **Modalità Insight**. Se si dispone di un criterio di spoofing abilitato, l'Insight mostrerà il numero di messaggi che sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni. 
   
- **Se modalità**. Se non è abilitato alcun criterio spoofing, quindi delle conoscenze mostra quanti messaggi *sarebbe* sono stati influenzati dalla funzionalità di business intelligence spoofing negli ultimi 30 giorni. 
+ **Che cosa succede se Mode**. Se non si dispone di alcun criterio di spoofing abilitato, l'Insight mostrerà il numero di messaggi ** che sono stati influenzati dalle funzionalità di intelligence spoof negli ultimi 30 giorni. 
   
-In entrambi i casi, i domini falsificati visualizzati le informazioni sono suddivisi in due categorie. le coppie di dominio sospetti e coppie di dominio non sospetti. Queste categorie sono ulteriormente suddivise in tre diversi bucket per consentirne la verifica. 
+In entrambi i casi, i domini falsificati visualizzati nell'Insight sono separati in due categorie. coppie di domini sospetti e coppie di domini non sospetti. Queste categorie sono ulteriormente suddivise in tre diversi bucket che è possibile esaminare. 
   
-Una *coppia di dominio* è una combinazione del "da:" indirizzo e l'infrastruttura di invio. 
+Una *coppia di domini* è una combinazione dell'indirizzo "from:" e dell'infrastruttura di invio. 
   
-- L'indirizzo "Da" è l'indirizzo visualizzato come indirizzo da per l'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Vale a dire la cassetta postale della persona o del sistema responsabile della scrittura del messaggio. Questo è detto anche indirizzo 5322.From.
+- L'indirizzo "da" è l'indirizzo visualizzato come indirizzo da dall'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Ovvero, la cassetta postale della persona o del sistema responsabile della scrittura del messaggio. A volte viene chiamato indirizzo 5322. from.
     
-- L'invio dell'infrastruttura, o del mittente, è il dominio dell'organizzazione del record PTR dell'indirizzo IP del mittente. Se l'indirizzo IP del mittente Nessun record PTR, allora il mittente è identificato dall'indirizzo IP del mittente con il 255.255.255.0 subnet mask nella notazione CIDR (/ 24). Ad esempio, se l'indirizzo IP 192.168.100.100 l'indirizzo IP completo del mittente è 192.168.100.100/24.
+- L'infrastruttura di invio, o mittente, è il dominio dell'organizzazione del record PTR dell'indirizzo IP di invio. Se l'indirizzo IP di invio non ha un record PTR, il mittente viene identificato dall'IP di invio con la subnet mask 255.255.255.0 nella notazione CIDR (/24). Ad esempio, se l'indirizzo IP è 192.168.100.100, l'indirizzo IP completo del mittente è 192.168.100.100/24.
     
- **Le coppie di dominio sospetti** includono: 
+ Le **coppie di domini sospetti** includono: 
   
-- **Spoofing confidenza elevata**. Office 365 ricevuto sicuro segnala che questi domini sono potenzialmente dannoso, basati su modelli di invio cronologici e punteggio reputazione di domini. Office 365 è estremamente sicuri spoofing di domini e che i messaggi inviati da questi domini sono meno probabilità di essere valido. 
+- **Spoof con attendibilItà elevata**. Office 365 ha ricevuto segnali forti che questi domini sono sospetti, in base agli schemi di invio cronologici e al Punteggio di reputazione dei domini. Office 365 è estremamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano meno probabili. 
     
-- **Spoofing confidenza intermedie**. Office 365 ricevuto moderato segnala che questi domini sono potenzialmente dannoso, basati su modelli di invio cronologiche e il punteggio di reputazione di domini. Office 365 è medio la certezza che i domini vengono spoofing e che i messaggi inviati da questi domini sono legittimi. In questo bucket ha maggiori opportunità di contenente falsi positivi (FPs) di intervallo di confidenza elevata spoofing. 
+- **Falsificazione**della confidenza moderata. Office 365 ha ricevuto segnali moderati che questi domini sono sospetti, in base ai modelli di invio cronologici e al Punteggio di reputazione dei domini. Office 365 è moderatamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano legittimi. Questo bucket ha maggiori probabilità di contenere falsi positivi (FPs) rispetto al bucket spoof con confidenza elevata. 
     
- **Le coppie di dominio sospetti non** includere **soccorsi spoofing**. Spoofing recuperato sono i domini che hanno non è riuscita le verifiche di autenticazione esplicite ( [SPF](https://docs.microsoft.com/office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)) ma superato i controlli di autenticazione estesa. Di conseguenza, Office 365 ha recuperato telefonica per conto dell'utente e alla posta è stata eseguita alcuna azione anti-spoofing. 
+ Le **coppie di domini non sospetti** includono la **parodia salvata**. Lo spoofing salvato è un dominio che non ha superato i controlli di autenticazione espliciti ( [SPF](https://docs.microsoft.com/office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)) ma ha passato i controlli di autenticazione estese. Di conseguenza, Office 365 ha salvato la posta elettronica per conto dell'utente e non è stata eseguita alcuna azione antispoofing sulla posta. 
   
-## <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visualizzare informazioni dettagliate sulle coppie di dominio sospetti da conoscenze di business intelligence spoofing
+## <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visualizzare informazioni dettagliate sulle coppie di domini sospetti da spoofing Intelligence Insight
 
-1. Nella comprensione di business intelligence spoofing, fare clic su una delle coppie di dominio (elevate, medio o recuperate).
+1. Nell'Insight Intelligence spoofing, fare clic su una qualsiasi delle coppie di domini (alto, moderato o salvato).
   
-Verrà visualizzata la pagina **Delle conoscenze di Business Intelligence di simulazione** con un elenco di mittenti attendibili che sono l'invio dei messaggi non autenticati nell'organizzazione. Le informazioni contenute in questa pagina consentono di determinare se i messaggi di spoofing sono autorizzati o non o se è necessario eseguire ulteriori azioni. È possibile ordinare le informazioni dal numero dei messaggi, la data che di spoofing ultimo è stato rilevato, e altro ancora. Fare clic le intestazioni di colonna, ad esempio **messaggio contare** o **ultima indicato**, ad esempio. 
+Viene visualizzata la pagina di **Insight Intelligence spoof** che mostra un elenco di mittenti che inviano messaggi non autenticati all'organizzazione. Le informazioni contenute in questa pagina consentono di determinare se i messaggi falsificati sono autorizzati o meno o se è necessario intraprendere ulteriori azioni. È possibile ordinare le informazioni in base al numero di messaggi, alla data in cui è stata rilevata l'ultima volta la parodia e altro ancora. (Ad esempio, fare clic su intestazioni di colonna, come il **numero di messaggi** o **l'ultima volta**). 
     
-2. Selezionare un elemento nella tabella per aprire un riquadro dei dettagli che contiene informazioni dettagliate sulla coppia di dominio, inclusi il motivo per cui viene intercettata questo, cosa è necessario eseguire, un riepilogo di dominio, i dati WhoIs sul mittente e messaggi di posta elettronica simile finora nel tenant dello stesso mittente. Da qui è possibile aggiungere o rimuovere la coppia di dominio dall'elenco Mittenti attendibili **AllowedToSpoof** . 
+2. Selezionare un elemento nella tabella per aprire un riquadro dei dettagli che contiene informazioni complete sulla coppia di domini, incluso il motivo per cui è stato rilevato ciò che è necessario fare, un riepilogo di dominio, i dati WhoIs relativi al mittente e i messaggi di posta elettronica simili che sono stati visualizzati nel tenant dallo stesso mittente. Da qui, è anche possibile scegliere di aggiungere o rimuovere la coppia di dominio dall'elenco dei mittenti attendibili di **AllowedToSpoof** . 
   
-![Cattura di schermata del dominio nel riquadro dei dettagli delle conoscenze intelligence spoofing](media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Schermata di un dominio nel riquadro dei dettagli dell'analisi di intelligence di spoofing](media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
-## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Aggiungere o rimuovere un dominio dall'elenco Mittenti attendibili AllowedToSpoof
+## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Aggiungere o rimuovere un dominio dall'elenco dei mittenti attendibili di AllowedToSpoof
 
-Aggiungere o rimuovere un dominio dall'elenco Mittenti attendibili AllowedToSpoof durante la revisione due il dominio nel riquadro dei dettagli delle conoscenze di business intelligence spoofing. È sufficiente impostare di conseguenza attiva o disattiva.
+È possibile aggiungere o rimuovere un dominio dall'elenco di mittenti attendibili di AllowedToSpoof durante la revisione della coppia di dominio nel riquadro dei dettagli dell'Insight di intelligence di spoofing. È sufficiente impostare l'interruttore di conseguenza.
   
-Ciò consente di modificare la combinazione di coppia di dominio univoco del dominio spoofing e l'infrastruttura di invio e non fornisce la copertura per l'intero dominio spoofing o l'infrastruttura di invio in isolamento. Ad esempio, se si aggiunge la seguente coppia di dominio per il mittente 'AllowedToSpoof' elenco Consenti: *Spoofing dominio* "gmail.com" e *L'invio di infrastruttura* "tms *. mx.com",* quindi solo la posta dalla coppia tale dominio sarà consentita effettuare lo spoofing. Altri mittenti si tenta di effettuare lo spoofing "gmail.com" e altri domini che tentano di "tms.mx.com" lo spoofing continuerà a essere protetti dalle intelligence spoofing. 
+In questo modo viene modificata la combinazione univoca di coppie di domini del dominio contraffatto e l'infrastruttura di invio e non viene fornita alcuna copertura per l'intero dominio contraffatto o per l'infrastruttura di invio in isolamento. Ad esempio, se si aggiunge la seguente coppia di dominio all'elenco dei mittenti consentiti ' AllowedToSpoof ': il *dominio contraffatto* "Gmail.com" e *l'infrastruttura di invio* "TMS *. MX.com",* sarà possibile eseguire la falsificazione solo della posta dalla coppia di dominio. Altri mittenti che tentano di falsificare "gmail.com" e altri domini che "tms.mx.com" tentano di falsificare continueranno a essere protetti dall'intelligence contraffatta. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -91,10 +91,10 @@ Ciò consente di modificare la combinazione di coppia di dominio univoco del dom
   
 [Protezione anti-spoofing in Office 365](anti-spoofing-protection.md)
   
-[Istruzioni dettagliate: da una dashboard ad un approfondimento](from-a-dashboard-to-an-insight.md)
+[Procedura: da una dashboard alle informazioni dettagliate](from-a-dashboard-to-an-insight.md)
   
-[Istruzioni dettagliate: da un report dettagliato ad un approfondimento](from-a-detailed-report-to-an-insight.md)
+[Procedura: da un report dettagliato alle informazioni dettagliate](from-a-detailed-report-to-an-insight.md)
   
-[Istruzioni dettagliate: da un approfondimento ad un report dettagliato](from-an-insight-to-a-detailed-report.md)
+[Procedura: dalle informazioni dettagliate a un report dettagliato](from-an-insight-to-a-detailed-report.md)
   
 

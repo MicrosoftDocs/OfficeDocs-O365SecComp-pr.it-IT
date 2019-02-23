@@ -1,12 +1,12 @@
 ---
-title: Lavorare con le comunicazioni di eDiscovery avanzate (Preview)
+title: Utilizzare le comunicazioni in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,53 +14,53 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 92ad9179d5d62fdf25c1ae78e9c367f509bf6ccf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695042"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214256"
 ---
-# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Lavorare con le comunicazioni di eDiscovery avanzate (Preview)
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Utilizzare le comunicazioni in Advanced eDiscovery (Preview)
 
-EDiscovery avanzate (Preview) consente al reparto legale di semplificare i processi intorno a gestione e la distribuzione delle notifiche di conservazione a fini giudiziari. La caratteristica di comunicazioni depositaria consente al reparto legale di gestire e automatizzare i processi di conservazione a fini giudiziari intera - da notifiche e promemoria escalation - tutti in un unico sito.
+Advanced eDiscovery (Preview) consente ai servizi legali di semplificare i propri processi per il monitoraggio e la distribuzione delle notifiche di blocco legale. La funzionalità di comunicazione dei depositari consente ai servizi legali di gestire e automatizzare l'intero processo di conservazione legale: dalle notifiche, dai promemoria e dalle escalation, tutti in un'unica posizione.
 
-## <a name="what-is-a-legal-hold-notification"></a>Che cos'è una notifica di conservazione a fini giudiziari?
+## <a name="what-is-a-legal-hold-notification"></a>Che cos'è una notifica di conservazione legale?
 
-Un avviso di conservazione a fini giudiziari (noto anche come una *controversia attesa*) è una notifica inviata dall'ufficio legale dell'organizzazione per i dipendenti, personale temporaneo o depositari altri dati. Queste notifiche chiedere depositari per mantenere le informazioni archiviate in formato elettronico (ESI), nonché qualsiasi materiale che potrebbe essere rilevanti per un attivo o imminente del settore legale. I team legali importanti che ogni depositaria ha ricevuto, lettura, compresi e accettato di rispettare le istruzioni specificate.
+Avviso di conservazione (noto anche come *blocco*per controversia legale) è una notifica inviata dal reparto legale di un'organizzazione ai dipendenti, al personale contingente o ad altri depositari di dati. Tali notifiche indicano ai depositari di conservare le informazioni archiviate elettronicamente (ESI), nonché i materiali che possono essere rilevanti per una questione legale attiva o imminente. I team legali devono sapere che ogni custode ha ricevuto, letto e compreso e ha accettato di conformarsi alle istruzioni fornite.
 
-## <a name="the-legal-hold-notification-process"></a>Processo di notifica di attesa legali
+## <a name="the-legal-hold-notification-process"></a>Processo di notifica per il blocco legale
 
-Un'organizzazione ha il compito di mantenere le informazioni rilevanti quando informato della presenza di un imminenti controversie o indagini normativi. Per rispettare i requisiti di archiviazione, l'organizzazione deve immediatamente informare depositari potenziali loro missione per mantenere le informazioni pertinenti. 
+Un'organizzazione ha il dovere di conservare le informazioni rilevanti quando viene a conoscenza di una controversia legale imminente o di un'indagine di regolamentazione. Per soddisfare i requisiti di conservazione, l'organizzazione deve informare immediatamente i potenziali depositari del proprio dovere di preservare le informazioni rilevanti. 
 
-Con eDiscovery avanzate (anteprima), legale team possono creare e personalizzare il flusso di lavoro di notifica di conservazione a fini giudiziari. La caratteristica depositaria Communications consente ai team legali configurare le seguenti note e i flussi di lavoro:
+Con Advanced eDiscovery (Preview), i team legali possono creare e personalizzare il flusso di lavoro di notifica per la conservazione legale. La funzionalità di comunicazione depositaria consente ai team legali di configurare le notifiche e i flussi di lavoro seguenti:
 
-1. **Avviso di rilascio**: un avviso di conservazione a fini giudiziari emissione (o avviato) da una notifica dall'ufficio legale di depositari che potrebbero avere informazioni relative ai caso materia. Questo avviso indica a tali depositari a mantengono le informazioni potrebbero essere necessari per l'individuazione. 
+1. **Avviso di rilascio**: un avviso di conservazione legale viene emesso (o avviato) da una notifica del reparto legale ai depositari che potrebbero avere informazioni rilevanti sulla questione del caso. Questo avviso indica ai depositari di conservare tutte le informazioni che potrebbero essere necessarie per l'individuazione. 
    
-2.  **R-pubblicazione osservare**: durante un caso depositari potrebbero essere necessario conservare aggiuntive o meno informazioni di stati indicati in precedenza. Per questo scenario, è possibile aggiornare l'avviso di attesa esistente e nuova pubblicazione per la depositari.
+2.  **Avviso**di riemissione: nel corso di un caso, è possibile che i depositari siano tenuti a conservare informazioni aggiuntive o meno rispetto a quelle precedentemente incaricate. Per questo scenario, è possibile aggiornare l'avviso di conservazione esistente e ripubblicarlo nei propri depositari.
 
-3.  **Avviso di rilascio**: una volta scelta viene risolto e il depositaria non è più soggetta a un servizio di archiviazione, è possibile rilasciare il depositaria in modo che informazioni non è più viene mantenute se non necessarie. Inoltre, il depositaria riceverà una notifica che non sono più in servizio di archiviazione e le istruzioni in sospeso su come riprendere la propria attività.
+3.  **Avviso di rilascio**: una volta risolto il problema e il custode non è più soggetto a un dazio di conservazione, il custode può essere rilasciato in modo che le informazioni non vengano più conservate se non necessario. Inoltre, il custode riceverà una notifica che non sono più in dovere di conservazione e con istruzioni su come riprendere la propria attività.
 
-4. **Le misure correttive e promemoria**: In alcuni casi, appena emissione di una notifica non è sufficiente per soddisfare esibizione legale. Con ogni notifica team legale consente di pianificare una serie di promemoria e riassegnazione flussi di lavoro automaticamente il completamento con depositari che non rispondono.
+4. **Promemoria e**escalation: in alcuni casi, solo l'emissione di un avviso non è sufficiente per soddisfare i requisiti di individuazione legale. Con ogni notifica, i team legali possono programmare una serie di flussi di lavoro di promemoria e di escalation per il follow-up automatico con custodi insensibili.
 
-    - **Promemoria**: dopo un avviso di conservazione a fini giudiziari è stato emesso o nuovamente rilasciato a un insieme di depositari, un'organizzazione può impostare promemoria per notificare depositari che non rispondono. 
+    - **Promemoria**: dopo aver emesso o riemesso un avviso per la conservazione legale, un'organizzazione può impostare i promemoria per avvisare gli amministratori che non rispondono. 
 
-    - **Le misure correttive**: In alcuni casi, se un depositaria rimane che non rispondono anche dopo una serie di promemoria, il team legale possibile impostare un flusso di lavoro escalation per segnalare la depositaria e il suo manager.
+    - **** Escalation: in alcuni casi, se un custode rimane inattivo anche dopo una serie di promemoria, il team legale può impostare un flusso di lavoro di escalation per notificare al custode e al suo responsabile.
 
-## <a name="role-groups-and-permissions"></a>Le autorizzazioni e gruppi di ruoli 
+## <a name="role-groups-and-permissions"></a>Gruppi di ruoli e autorizzazioni 
 
-Controllare e segmentare le attività caso utilizzando gruppi di ruoli correlati eDiscovery e le autorizzazioni in & la sicurezza centro conformità legale team. 
+I team legali possono controllare e segmentare la propria attività di caso usando gruppi di ruoli e autorizzazioni di eDiscovery nel centro sicurezza & Compliance. 
 
-Per creare e gestire le notifiche di conservazione a fini giudiziari, un utente deve appartenere i gruppi di ruoli seguenti:
+Per creare e gestire notifiche di blocco legale, un utente deve far parte dei gruppi di ruoli seguenti:
 
-- **eDiscovery Manager** - membri di questo gruppo possono creare e gestire casi di eDiscovery. Può aggiungere e rimuovere membri, posizionare depositari e i percorsi di contenuti in attesa, gestire le notifiche di conservazione a fini giudiziari, creare e modificare ricerche del contenuto associato a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi nella scheda Avanzate eDiscovery (Preview). Esistono due sottogruppi di questo gruppo di ruoli. La differenza tra questi sottogruppi si basa sull'ambito.
+- **eDiscovery Manager** : i membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche di archiviazione legale, creare e modificare le ricerche di contenuto associate a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery (Preview). Sono presenti due gruppi secondari in questo gruppo di ruoli. La differenza tra questi sottogruppi è basata sull'ambito.
 
-  - visualizzare e gestire casi di eDiscovery creano o membri di **eDiscovery Manager** . Se un altro eDiscovery Manager crea un caso ma non aggiungere un secondo eDiscovery Manager come membro di tale caso, il secondo eDiscovery Manager saranno in grado di visualizzare o aprire il caso nella pagina di eDiscovery in & la sicurezza centro conformità. eDiscovery Manager possono accedere anche i casi di eDiscovery avanzate (Preview) per eseguire attività di analisi.
+  - **eDiscovery Manager** -è in grado di visualizzare e gestire i casi di eDiscovery che creano o sono membri di. Se un altro Manager di eDiscovery crea un caso ma non aggiunge un secondo Manager di eDiscovery come membro del caso, il secondo responsabile di eDiscovery non sarà in grado di visualizzare o aprire il caso nella pagina eDiscovery nel centro sicurezza & Compliance. i responsabili di eDiscovery possono inoltre accedere ai propri casi in Advanced eDiscovery (Preview) per eseguire attività di analisi.
 
-  - **eDiscovery amministratore** - è possibile eseguire tutte le attività di gestione dei casi che può eseguire una ricerca eDiscovery Manager. Inoltre, un'amministratore di eDiscovery può:
+  - **amministratore di eDiscovery** : consente di eseguire tutte le attività di gestione dei casi che un Manager di eDiscovery può eseguire. Inoltre, un amministratore di eDiscovery può:
     
     - Visualizzare tutti i casi elencati nella pagina eDiscovery.
-    - Gestire tutti i casi nell'organizzazione dopo aggiungersi come membro del case.
-    - Accedere ai dati casi di eDiscovery avanzate (Preview) per qualsiasi caso nell'organizzazione.
+    - Gestire qualsiasi caso nell'organizzazione dopo che si è aggiunto come membro del caso.
+    - Accedere ai dati del caso in Advanced eDiscovery (Preview) per tutti i casi nell'organizzazione.
 
-Per ulteriori informazioni, vedere [assegnare autorizzazioni di eDiscovery in & la protezione di Office 365 centro conformità](../assign-ediscovery-permissions.md).
+Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro conformità _AMP_ sicurezza di Office 365](../assign-ediscovery-permissions.md).

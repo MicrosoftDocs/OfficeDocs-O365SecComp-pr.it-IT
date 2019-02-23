@@ -1,85 +1,85 @@
 ---
-title: Impostare un elenco personalizzato di URL rewrite di non eseguire tramite collegamenti attendibili di Office 365 degli strumenti di analisi
+title: Configurare un elenco di URL non di riscrittura personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection: M365-security-compliance
-description: Quando si imposta i criteri di collegamenti sicuro degli strumenti di analisi, è possibile includere una riscrittura di non eseguire ' elenco degli URL per abilitare alcune persone all'interno dell'organizzazione visitare i siti che includono nell'elenco.
-ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Quando si configurano i criteri per i collegamenti sicuri di ATP, è possibile includere un elenco di URL da non riscrivere per consentire ad alcuni utenti dell'organizzazione di visitare i siti inclusi nell'elenco.
+ms.openlocfilehash: 7fbc7d0d0caec79dcdbb3dc5b1b5a8a4e085dc09
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995377"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215026"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco personalizzato di URL rewrite di non eseguire tramite collegamenti attendibili di Office 365 degli strumenti di analisi
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali. Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Con [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), l'organizzazione può avere un [URL bloccati personalizzato](set-up-a-custom-blocked-urls-list-wtih-atp.md), in modo che quando utenti fare clic su web indirizzi (URL) in messaggi di posta elettronica o alcuni documenti di Office, viene impediti a questi URL. L'organizzazione può essere elenchi personalizzati "non di riscrittura" per gruppi specifici dell'organizzazione. Un elenco "non di riscrittura" consente alcune persone a visitare gli URL che vengono bloccati in caso contrario tramite [Degli strumenti di analisi collegamenti attendibili in Office 365](atp-safe-links.md). 
+Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un [URL bloccato personalizzato](set-up-a-custom-blocked-urls-list-wtih-atp.md), in modo che quando gli utenti fanno clic su indirizzi Web (URL) nei messaggi di posta elettronica o in determinati documenti di Office, vengono impediti di passare a tali URL. L'organizzazione può anche disporre di elenchi personalizzati di "non riscrivere" per gruppi specifici dell'organizzazione. Un elenco "non riscrivere" consente ad alcuni utenti di visitare gli URL che sono altrimenti bloccati da [collegamenti sicuri di ATP in Office 365](atp-safe-links.md). 
   
-In questo articolo viene descritto come specificare un elenco di URL che esclusa dall'analisi dei collegamenti sicuro degli strumenti di analisi e alcune importanti considerazioni da tenere presenti.
+In questo articolo viene descritto come specificare un elenco di URL esclusi dall'analisi dei collegamenti sicuri ATP e alcuni punti importanti da tenere presenti.
 
-## <a name="set-up-a-do-not-rewrite-list"></a>Impostare un elenco "non di riscrittura"
+## <a name="set-up-a-do-not-rewrite-list"></a>Configurare un elenco di "non riscrivere"
 
-Protezione degli strumenti di analisi collegamenti sicuri utilizza più elenchi, inclusi nell'elenco degli URL bloccato dell'organizzazione e gli elenchi "non di riscrittura" per le eccezioni. Se si dispone delle autorizzazioni necessarie, è possibile impostare gli elenchi personalizzati "non di riscrittura". A tale scopo quando si aggiunge o modifica criteri sicuro collegamenti che si applicano a destinatari specifici dell'organizzazione. 
+La protezione dei collegamenti sicuri di ATP utilizza diversi elenchi, tra cui l'elenco degli URL bloccati dell'organizzazione e gli elenchi di "non riscrivere" per le eccezioni. Se si dispone delle autorizzazioni necessarie, è possibile configurare gli elenchi personalizzati "non riscrivere". Questa operazione viene eseguita quando si aggiungono o si modificano i criteri per i collegamenti sicuri che si applicano a destinatari specifici dell'organizzazione. 
 
-Per modificare o definire i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito:
+Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno dei ruoli descritti nella tabella seguente:
 
-|Ruolo  |Modalità assegnato  |
+|Ruolo  |Dove/come assegnato  |
 |---------|---------|
-|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
-|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
+|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
+|Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Per ulteriori informazioni sui ruoli e autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+> Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Per visualizzare o modificare un elenco degli URL "non di riscrittura" personalizzato
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Per visualizzare o modificare un elenco di URL personalizzato "non riscrivere"
   
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione. 
     
-2. Nel riquadro di spostamento sinistro, in **gestione rischio** \> **criteri** \> **Collegamenti sicuri**.
+2. Nel riquadro di spostamento a sinistra, in **collegamenti sicuri**per i **criteri** \> di **gestione** \> delle minacce.
     
-3. Nella sezione **criteri che si applicano a destinatari specifici** fare clic su **Nuovo** (pulsante nuovo simile a un segno di addizione ( **+**)) per creare un nuovo criterio. (In alternativa, è possibile modificare un criterio esistente.)<br/>![Selezionare nuovo per aggiungere un criterio di collegamenti sicuro per i destinatari di posta elettronica specifico](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Nella sezione **criteri che si applicano a destinatari specifici** scegliere **nuovo** (il pulsante nuovo è simile a un segno di addizione ( **+**)) per creare un nuovo criterio. In alternativa, è possibile modificare un criterio esistente.<br/>![Scegliere nuovo per aggiungere un criterio per i collegamenti sicuri per i destinatari di posta elettronica specifici](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-4. Consente di specificare un nome e una descrizione per il criterio.
+4. Specificare un nome e una descrizione per i criteri.
     
-5. Nella sezione **non riscrivere gli URL seguenti** , selezionare la casella **Immettere un URL valido** e quindi digitare un URL e quindi fare clic sul segno più (+). 
+5. Nella sezione non **riscrivere gli URL seguenti** selezionare la casella **immettere un URL valido** e quindi digitare un URL e quindi scegliere il segno più (+). 
     
-6. Nella sezione **Applicato a** scegliere **il destinatario è un membro del**e quindi fare clic su gruppi di cui che si desidera includere nel criterio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
+6. Nella sezione **applicato a** , scegliere **il destinatario è un membro di**, quindi scegliere il gruppo o i gruppi che si desidera includere nel criterio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
-7. Dopo aver aggiunto gli URL, nell'angolo inferiore destro dello schermo, scegliere **Salva**.
+7. Dopo aver aggiunto gli URL, fare clic su **Salva**nell'angolo in basso a destra dello schermo.
     
 > [!NOTE]
-> Assicurarsi di esaminare l'elenco personalizzato dell'organizzazione di URL bloccati. Vedere [impostare un elenco degli URL bloccato personalizzato utilizzo degli strumenti di analisi dei collegamenti sicuri](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
+> Assicurarsi di esaminare l'elenco personalizzato dell'organizzazione degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
   
-## <a name="important-points-to-keep-in-mind"></a>Aspetti importanti da tenere presenti
+## <a name="important-points-to-keep-in-mind"></a>Punti importanti da tenere presenti
 
-- Tutti gli URL specificati nell'elenco "non di riscrittura" sono esclusi dai collegamenti sicuro degli strumenti di analisi di virus per i destinatari specificati.
+- Gli URL specificati nell'elenco "non riscrivere" sono esclusi dall'analisi dei collegamenti sicuri ATP per i destinatari specificati.
  
-- Quando si specifica un elenco "non di riscrittura" per un criterio degli strumenti di analisi collegamenti sicuri, è possibile includere fino a tre caratteri jolly asterischi (\*). I caratteri jolly (\*) vengono considerati come voci `contoso.com`, che non si in modo esplicito include i prefissi o sottodomini, ad esempio `http://` o `https://`. In questo modo una voce, ad esempio `contoso.com` è simile a `*contoso.com*` per l'elenco "non di riscrittura".
+- Quando si specifica un elenco "non riscrivere" per un criterio di collegamenti sicuri ATP, è possibile includere fino a tre asterischi jolly (\*). I caratteri jolly\*() vengono considerati per le voci `contoso.com`, ad esempio, che non includono in modo esplicito prefissi o sottodomini, come `http://` o `https://`. Questo significa che una voce, ad `contoso.com` esempio, è `*contoso.com*` simile a quella dell'elenco "non riscrivere".
 
-- Se si dispone già di un elenco di URL nell'elenco "non di riscrittura", assicurarsi di esaminare l'elenco e aggiungere i caratteri jolly nel modo appropriato. Ad esempio, se l'elenco esistente è una voce come `http://contoso.com/a` e si desidera includere percorsi secondari come `http://contoso.com/a/b` nei criteri di aggiungere un carattere jolly per la voce in modo che sia simile `http://contoso.com/a*`.
+- Se nell'elenco "non riscrivere" è già presente un elenco di URL, assicurarsi di esaminare l'elenco e aggiungere i caratteri jolly in base alle esigenze. Ad esempio, se l'elenco esistente dispone di una voce `http://contoso.com/a` come e si desidera includere i sottopercorsi come `http://contoso.com/a/b` nel criterio, aggiungere un carattere jolly alla voce in modo che appaia come `http://contoso.com/a*`.
     
-- Non includere una barra (/) nell'URL specificato nell'elenco "non di riscrittura". Ad esempio, invece di immettere `contoso.com/` nell'elenco "non di riscrittura", immettere `contoso.com`.
+- Non includere una barra (/) negli URL specificati nell'elenco "non riscrivere". Ad esempio, invece di immettere `contoso.com/` l'elenco "non riscrivere", immettere `contoso.com`.
     
-Gli esempi di è possibile immettere e quali effect tali voci di elenchi di tabella seguenti sono.
+Nella tabella seguente sono elencati esempi di elementi che è possibile immettere e quali effetti hanno tali voci.
     
-|**Voce di esempio**|**Funzione**|
+|**Voce di esempio**|**Cosa fa**|
 |:-----|:-----|
-|`*contoso.com*`  <br/> |Consente ai destinatari specifici di visitare un dominio, sottodomini e percorsi, ad esempio `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Consente ai destinatari specifici a visitare un sito come `http://contoso.com/a`, ma non percorsi secondari`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Consente ai destinatari specifici a visitare un sito come `http://contoso.com/a` e i percorsi secondari`http://contoso.com/a/b`  <br/> |
+|`*contoso.com*`  <br/> |Consente a destinatari specifici di visitare un dominio, sottodomini e percorsi, ad esempio `http://www.contoso.com`, o `https://www.contoso.com` `https://maps.contoso.com``http://www.contoso.com/a`  <br/> |
+|`http://contoso.com/a`  <br/> |Consente ai destinatari specifici di visitare un sito `http://contoso.com/a`, ad esempio, ma non i sottopercorsi come`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Consente ai destinatari specifici di visitare un sito `http://contoso.com/a` come e i sottopercorsi come`http://contoso.com/a/b`  <br/> |
    
  

@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: 09ba8408176627c3aa9833bb59dde8be86aefd51
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 4e9dd52adbeada92d14db369b386ff1ca7e42fc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664082"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220346"
 ---
 # <a name="office-365-service-encryption"></a>Servizio di crittografia di Office 365
 

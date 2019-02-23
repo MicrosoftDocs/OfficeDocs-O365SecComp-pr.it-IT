@@ -1,12 +1,12 @@
 ---
-title: Creare un nuovo caso di eDiscovery avanzate (Preview)
+title: Creare un nuovo caso in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 038d4b83fc547713e537c29592e1dcf96e1cc4a7
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d01a0c8951ff1ae203bca54c4e196b747a79c378
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29629038"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220336"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Creare un nuovo caso di eDiscovery avanzate (Preview)    
+# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Creare un nuovo caso in Advanced eDiscovery (Preview)    
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. In sicurezza & centro conformità, fare clic su **eDiscovery gt _ avanzate eDiscovery**.
+3. Nel centro sicurezza & Compliance, fare clic su **eDiscovery _GT_ Advanced eDiscovery**.
  
-4. Nella pagina **eDiscovery avanzate (anteprima)** , fare clic su **Crea un caso**.
+4. Nella pagina **Advanced eDiscovery (Preview)** fare clic su **Crea un caso**.
     
-5. Nella pagina **nuovo caso** comparsa, assegnare il caso un nome (obbligatorio) e quindi digitare un numero maiuscole facoltativo e una descrizione. Si noti che il nome del caso deve essere univoco all'interno dell'organizzazione.
+5. Nella pagina **nuovo** riquadro a comparsa del caso di eDiscovery, assegnare un nome al caso (obbligatorio) e quindi digitare un numero di caso facoltativo e una descrizione. Tenere presente che il nome del caso deve essere univoco nell'organizzazione.
 
-6. In **si desidera configurare impostazioni aggiuntive dopo aver creato in questo caso?**, effettuare una delle operazioni seguenti:
+6. In **se si desidera configurare altre impostazioni dopo aver creato questo caso**, eseguire una delle operazioni seguenti:
 
-    - Fare clic su **Sì** per creare il caso e visualizzare la pagina **Impostazioni** nel caso di nuovo. In questo modo è possibile aggiungere membri al caso.
+    - Fare clic su **Sì** per creare il caso e visualizzare la pagina **Impostazioni** nel nuovo caso. In questo modo è possibile aggiungere membri al caso.
     
-    - Fare clic su **No** per creare il caso immediatamente e visualizzare nell'elenco dei casi nella pagina **eDiscovery avanzate (Preview)** . Se si sceglie questa opzione, verrà aggiunto come unico membro del caso e le impostazioni di ricerca e analitica predefinita verrà utilizzato. È possibile aggiungere membri o cambiare le impostazioni in qualsiasi momento dopo aver creato il caso.
+    - Fare clic su **No** per creare solo il caso e visualizzarlo nell'elenco dei casi della pagina **Advanced eDiscovery (Preview)** . Se si sceglie questa opzione, verrà aggiunto come unico membro del caso e verranno utilizzate le impostazioni di ricerca e analisi predefinite. È possibile aggiungere membri o modificare le impostazioni in qualsiasi momento dopo la creazione del caso.
 
 7. Fare clic su **Salva** per creare il caso.
 
-    Il nuovo caso viene visualizzato nell'elenco dei casi nella pagina **eDiscovery avanzate (Preview)** . 
+    Il nuovo caso viene visualizzato nell'elenco dei casi della pagina **Advanced eDiscovery (Preview)** . 
 
-8. Per aprire una controversia, fare clic sul nome del caso. 
+8. Per aprire un caso, fare clic sul nome del caso. 
 
-    Viene visualizzata la scheda **Home** per il case. Ad esempio, di seguito è un nuovo caso denominato *Contoso indagini*.
+    Viene visualizzata la scheda **Home** per il caso. Ad esempio, di seguito è riportato un nuovo caso denominato *Contoso Investigation*.
 
-    ![Scheda Home per un nuovo caso di eDiscovery avanzate](../media/newAeDcase.png)
+    ![La scheda Home per un nuovo caso in Advanced eDiscovery](../media/newAeDcase.png)

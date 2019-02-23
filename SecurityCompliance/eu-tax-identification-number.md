@@ -1,35 +1,35 @@
 ---
-title: Numero di identificazione fiscale UE
+title: Numero di identificazione fiscale dell'Unione europea
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca quando viene rilevato il tipo di informazioni riservate dell'Unione europea imposte Identification Number. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530774"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213826"
 ---
-# <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale UE
+# <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
-In questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca quando viene rilevato il tipo di informazioni riservate dell'Unione europea imposte identificazione numero (ID). Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
+In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione fiscale (TIN) dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
   
 ## <a name="austria"></a>Austria
 
 ### <a name="format"></a>Formato
 
-Nove cifre con segno meno facoltativo e barra (/)
+Nove cifre con trattino e barra di inoltro opzionali
   
 ### <a name="pattern"></a>Modello
 
-Nove cifre con segno meno facoltativo e barra (/):
+Nove cifre con trattino e barra di inoltro facoltativi:
   
 -  Due cifre 
     
@@ -49,13 +49,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_austria_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_austria_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -74,24 +74,24 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
 numero
   
-identificativo fiscale
+numero di registrazione fiscale
   
 tax id
 
   
-ST.Nr.
+St.Nr.
   
-steuernummer
+Steuernummer
   
 ## <a name="belgium"></a>Belgio
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -115,9 +115,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_belgium_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_belgium_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_belgium_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_belgium_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -133,28 +133,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
 numero di registrazione nazionale
   
-identificativo fiscale
+numero di registrazione fiscale
   
 tax id
 
   
 NIF
   
-NIF #
+NIF
   
-registre de numéro nazionale
+numéro de Registre National
   
-numéro identificazione fiscale
+numéro d'identification fiscale
   
 ## <a name="bulgaria"></a>Bulgaria
 
 ### <a name="format"></a>Formato
 
-Dieci cifre senza spazi e i delimitatori
+Dieci cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -168,13 +168,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_bulgaria_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_bulgaria_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -195,31 +195,31 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 bucn
   
-Uniform numero civile
+numero civile uniforme
   
 bucn #
   
 uniformcivilnumber #
   
-Uniform id civile
+ID civile uniforme
   
-Uniform no civile
+uniforme civile No
   
-egn
+EGN
   
-Bulgaro uniform numero civile
+numero civile uniforme bulgaro
   
 uniformcivilno #
   
-egn #
+EGN
   
-УНИФОРМ ГРАЖДАНСКИ НОМЕР
+униформ граждански Номер
   
-Id униформ
+ID униформ
   
-Id граждански униформ
+ID граждански униформ
   
-УНИФОРМ ГРАЖДАНСКИ НЕ
+униформ граждански не
   
 ## <a name="croatia"></a>Croazia
 
@@ -231,9 +231,9 @@ Id граждански униформ
 
 11 cifre:
   
-- Dieci cifre, scelte in modo casuale
+- Dieci cifre, scelte casualmente
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -243,13 +243,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_croatia_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_croatia_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -268,34 +268,34 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-Imposta
+imposte
   
 tax id
 
   
 OID
   
-OID #
+OID
   
-porezni broj
+Porezni broj
   
 ## <a name="cyprus"></a>Cipro
 
 ### <a name="format"></a>Formato
 
-Otto cifre e una lettera nella serie specificata
+Otto cifre e una lettera nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
 Otto cifre e una lettera:
   
--  "0" 
+-  Un "0" 
     
 - Sette cifre
     
-- Una lettera (maiuscole o minuscole)
+- Una lettera (senza distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -305,13 +305,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_cyprus_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_cyprus_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_cyprus_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_cyprus_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -330,24 +330,24 @@ Pattern confidenceLevel="75">
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-Imposta
+imposte
   
 tax id
 
   
-codice identificativo fiscale
+codice di identificazione fiscale
   
 TIC
   
-TIC #
+TIC
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Αριθμός φορολογικού Μητρώου
   
-ΦΟΡΟΛΟΓΙΚΉ ΤΑΥΤΌΤΗΤΑ
+φορολογική ταυτότητα
   
-ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Κωδικός φορολογικού Μητρώου
   
 ## <a name="czech-republic"></a>Repubblica Ceca
 
@@ -357,7 +357,7 @@ Nove o dieci cifre con una barra rovesciata facoltativa
   
 ### <a name="pattern"></a>Modello
 
-Nove o dieci cifre con un backslashl facoltativi:
+Nove o dieci cifre con un backslash facoltativo:
   
 - Sei cifre 
     
@@ -373,9 +373,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_czech_republic_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_czech_republic_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_czech_republic_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_czech_republic_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -391,9 +391,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-Imposta
+imposte
   
 tax id
 
@@ -408,17 +408,17 @@ osobní číslo
 
 ### <a name="format"></a>Formato
 
-Dieci cifre che contiene un segno meno
+Dieci cifre contenenti un segno meno
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre che contiene un hyphenl:
+Dieci cifre contenenti un segno meno:
   
--  Sei cifre che corrispondono alla data di nascita (DDMMYY) 
+-  Sei cifre che corrispondono alla data di nascita (GGMMAA) 
     
 - Una lineetta
     
-- Quattro cifre che corrispondono a un numero di sequenza in cui la prima cifra corrisponde a century di nascita e l'ultima cifra corrisponde in genere dell'individuo (dispari per maschile e anche per femmina)
+- Quattro cifre che corrispondono a un numero di sequenza in cui la prima cifra corrisponde al secolo di nascita e l'ultima cifra corrisponde al sesso dell'individuo (dispari per il maschio e anche per le femmine)
     
 ### <a name="checksum"></a>Checksum
 
@@ -428,13 +428,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_denmark_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_denmark_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -453,20 +453,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-Imposta
+imposte
   
 tax id
 
   
 numero CPR
   
-CPR #
+CPR
   
-skat nummer
+Nummer di pattinaggio
   
-id skat
+ID pattina
   
 ## <a name="estonia"></a>Estonia
 
@@ -478,13 +478,13 @@ id skat
 
 11 cifre:
   
--  Una cifra che corrisponde al sesso e century di nascita in un numero dispari indica maschile e il numero pari femmina nel modo seguente: 1, 2 per century diciannovesimo; 3, 4 per century ventesimo; e 5, 6 per century ventunesimo 
+-  Una cifra che corrisponde al sesso e al secolo del parto, in cui un numero dispari indica il maschio e il numero pari indica la femmina come segue: 1,2 per il XIX secolo; 3,4 per il XX secolo; e 5,6 per il XXI secolo 
     
 - Sei cifre che corrispondono alla data di nascita (AAMMGG)
     
-- Tre cifre che corrispondono a un numero di serie che separa le persone nati nella stessa data
+- Tre cifre che corrispondono a un numero di serie che separa le persone nate nella stessa data
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -494,13 +494,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_estonia_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_estonia_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -519,9 +519,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-Imposta
+imposte
   
 tax id
 
@@ -530,7 +530,7 @@ codice personale
   
 maksunumber
   
-id maksu
+ID maksu
   
 isikukood
   
@@ -538,15 +538,15 @@ isikukood
 
 ### <a name="format"></a>Formato
 
-Una combinazione di caratteri 11 cifre, lettere, e plus e segno meno
+Una combinazione di 11 caratteri di cifre, lettere e segno più e meno
   
 ### <a name="pattern"></a>Modello
 
-Una combinazione di caratteri 11 cifre, lettere, e plus e segno meno:
+Una combinazione di 11 caratteri di cifre, lettere e segno più e meno:
   
 - Sei cifre
     
-- Uno dei seguenti: un segno di addizione, un segno di sottrazione o la lettera "A" (non maiuscole/minuscole) dove si intende il segno di addizione nati tra 1800 1899 meno accedere mezzi nati tra 1900-1999 e "A" indica nati 2000 e dopo
+- Uno dei seguenti: un segno più, un segno di sottrazione o la lettera "A" (senza distinzione tra maiuscole/minuscole), in cui il segno più significa Nato tra 1800-1899, il segno meno significa Nato tra 1900-1999 e "A" significa Nato 2000 e dopo
     
 - Tre cifre
     
@@ -560,13 +560,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_finland_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_finland_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -588,23 +588,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 identification number
 
   
-id personale
+ID personale
   
 numero di identità
   
-numero id nazionale Finlandia
+numero di identificazione nazionale finlandese
   
 personalidnumber #
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero ID
   
-id nazionale non.
+ID nazionale No.
   
-numero identificativo nazionale
+numero ID nazionale
   
-ID non
+ID No
   
 tunnistenumero
   
@@ -616,7 +616,7 @@ ainutlaatuinen henkilökohtainen tunnus
   
 numero identiteetti
   
-suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
@@ -624,17 +624,17 @@ kansallisen tunnistenumero
   
 tunnusnumero
   
-numero di tunnus kansallinen
+Kansallinen tunnus numero
   
 ## <a name="france"></a>Francia
 
 ### <a name="format"></a>Formato
 
-13 cifre per singoli utenti e i numeri di nove per le entità
+13 cifre per gli utenti e nove cifre per le entità
   
 ### <a name="pattern"></a>Modello
 
-13 cifre per singoli utenti:
+13 cifre per gli utenti:
   
 - Una cifra che deve essere 0, 1, 2 o 3
     
@@ -650,13 +650,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_france_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_france_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_france_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_france_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -675,20 +675,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Imposta numero
+codice fiscale
   
 tax id
 
   
-numéro identificazione fiscale
+numéro d'identification fiscale
   
 ## <a name="germany"></a>Germania
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -696,7 +696,7 @@ numéro identificazione fiscale
   
 -  Dieci cifre 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -706,13 +706,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_germany_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_germany_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_germany_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_germany_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -731,28 +731,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
   
 taxid #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
-steuernummer
+Steuernummer
   
-id steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -760,7 +760,7 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Formato
 
-Nove cifre senza spazi e i delimitatori
+Nove cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -774,9 +774,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_greece_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_greece_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_greece_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_greece_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -792,38 +792,38 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsgreeceeutaxfilenumber"></a>Keywords_greece_eu_tax_file_number
 
-afm
+AFM
   
 tin
 
   
-id imposta non.
+ID IVA No.
   
-id imposta non
+ID IVA No
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-numero del Registro di sistema fiscale
+numero del registro di sistema fiscale
   
-imposte non del Registro di sistema.
+Registro fiscale No.
   
-afm #
+AFM
   
-ID #
+latta
   
 taxidno #
   
 taxregistryno #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Αριθμός φορολογικού Μητρώου
   
 aφμ
   
-aφμ αριθμός
+aφμ Αριθμός
   
-ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ ΝΟ.
+φορολογικού Μητρώου Νο.
   
-ΤΟΝ ΑΡΙΘΜΌ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+τον αριθμό φορολογικού Μητρώου
   
 ## <a name="hungary"></a>Ungheria
 
@@ -837,11 +837,11 @@ Dieci cifre:
   
 -  Una cifra che deve essere "8" 
     
-- Cinque cifre che corrispondono al numero di giorni compresi tra la data 01/01/1867 e la data di nascita dei singoli
+- Cinque cifre che corrispondono al numero di giorni compresi tra la data 01/01/1867 e la data di nascita dell'individuo
     
-- Tre cifre che corrispondono al numero generato casualmente per distinguere i singoli utenti nati nello stesso giorno
+- Tre cifre che corrispondono al numero generato dalla possibilità di distinguere gli individui nati nello stesso giorno
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -851,13 +851,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_hungary_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_hungary_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -878,29 +878,29 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di identificazione fiscale ungherese
   
-ID ungherese
+Tin ungherese
   
-codice fiscale
+numero di ID fiscale
   
-numero IVA
+numero di partita IVA
   
-Imposta autorità non
+autorità tributaria No
   
-codice fiscale identità fiscale
+numero dell'identità fiscale dell'ID fiscale
   
 taxidnumber #
   
-ID #
+latta
   
 hungatiantin #
   
-Identificazione delle imposte non
+identificazione fiscale No
   
 taxidno #
   
 adóazonosító szám
   
-adószám
+Adószám
   
 adóhatóság szám
   
@@ -916,7 +916,7 @@ Sette cifre seguite da una lettera:
   
 -  Sette cifre 
     
-- Una lettera (maiuscole o minuscole)
+- Una lettera (senza distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -926,13 +926,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_ireland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_ireland_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_ireland_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_ireland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -951,27 +951,27 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-servizio della pubblica alcun
+servizio pubblico no
   
-servizio della pubblica personale non
+servizio pubblico personale No
   
-PPS non
+PPS No
   
-personale service n
+servizio personale No
   
-PPS service n
+servizio PPS No
   
 ppsno #
   
-irlandese pps non
+Irish PPS No
   
 publicserviceno #
   
-numero di servizio della pubblica personali
+numero di servizio pubblico personale
   
-uimhir phearsanta seirbhíse poiblí
+uimhir phearsanta Seirbhíse poiblí
   
-uimh PPS
+PPS uimh
   
 uimhir aitheantais phearsanta
   
@@ -979,25 +979,25 @@ uimhir aitheantais phearsanta
 
 ### <a name="format"></a>Formato
 
-16 lettere e cifre nel formato specificato
+16 lettere e cifre nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
 16 lettere e cifre:
   
--  Tre lettere che corrispondono ai primi tre consonanti nel nome del gruppo 
+-  Tre lettere che corrispondono alle prime tre consonanti del nome di famiglia 
     
-- Tre lettere che corrispondono al primo, terza e quarta consonanti in nome
+- Tre lettere che corrispondono alla prima, terza e quarta consonante del primo nome
     
-- Due cifre che corrispondono all'ultimo cifre dell'anno di nascita
+- Due cifre che corrispondono alle ultime cifre dell'anno di nascita
     
-- Una cifra che corrisponde al mese di nascita, ovvero lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo lettere da A F, H, L, M, P, R per T (in questo modo, gennaio corrisponde a un e ottobre è R)
+- Una cifra corrispondente al mese di nascita: le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da a a E, H, L, M, P, R e T (pertanto, gennaio è A e ottobre è R)
     
-- Due cifre che corrispondono al giorno del mese di nascita dove 40 viene aggiunto al giorno di nascita per capi distinguere dai maschi
+- Due cifre che corrispondono al giorno del mese di nascita in cui 40 viene aggiunto al giorno di nascita per le femmine per differenziare dai maschi
     
-- Quattro cifre che corrispondono all'indicativo di località specifico comune dove nascita della persona, a livello nazionale codici vengono utilizzati per i paesi esterni
+- Quattro cifre che corrispondono a un codice di area specifico per il comune in cui è nata la persona: vengono utilizzati codici a livello nazionale per i paesi esteri
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -1007,13 +1007,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_italy_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_italy_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1032,15 +1032,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
@@ -1059,11 +1059,11 @@ codice fiscale
   
 ### <a name="pattern"></a>Modello
 
-11 cifre nel formato specificato
+11 cifre nel modello specificato
   
--  Sei cifre che corrispondono alla data di nascita (DDMMYY) 
+-  Sei cifre che corrispondono alla data di nascita (GGMMAA) 
     
-- Una cifra che corrisponde al century di nascita dove "0" corrisponde al diciannovesimo century "1" corrisponde al ventesimo century e "2" corrisponde al ventunesimo century
+- Una cifra che corrisponde al secolo di nascita dove "0" corrisponde al XIX secolo, "1" corrisponde al 20 ° secolo e "2" corrisponde al XXI secolo
     
 - Quattro cifre
     
@@ -1075,13 +1075,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_latvia_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_latvia_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1100,24 +1100,24 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
   
 taxid #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
 nodokļa numurs
   
@@ -1143,13 +1143,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_lithuania_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_lithuania_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1168,28 +1168,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
-Imposta no #
+tax no #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
   
 taxid #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
-id mokesčių
+ID mokesčių
   
-mokesčių numeris
+numeri mokesčių
   
 mokesčių identifikavimas numeris
   
@@ -1215,13 +1215,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_luxemburg_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_luxemburg_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_luxemburg_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_luxemburg_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1240,28 +1240,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
   
 taxid #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
-steuernummer
+Steuernummer
   
-id steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -1269,19 +1269,19 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Formato
 
-Per i cittadini Maltese: 7 cifre e una lettera nella serie specificata
+Per cittadini malTesi: 7 cifre e una lettera nel modello specificato
   
-Maltese non cittadini ed entità Maltese: 9 cifre
+Nazionali non malTesi e soggetti maltesi: 9 cifre
   
 ### <a name="pattern"></a>Modello
 
-Sterlina maltese cittadini: 7 cifre e una lettera
+Cittadini malTesi: 7 cifre e una lettera
   
 -  Sette cifre 
     
-- Una lettera (maiuscole o minuscole)
+- Una lettera (senza distinzione tra maiuscole e minuscole)
     
-Maltese non cittadini ed entità Maltese: 9 cifre
+Nazionali non malTesi e soggetti maltesi: 9 cifre
   
 -  9 cifre 
     
@@ -1293,13 +1293,13 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_malta_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_malta_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_malta_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
   
-- La funzione `Func_malta_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1318,30 +1318,30 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 tax id
 
   
 taxid #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
-numru tat-taxxa
+numru Tat-Taxxa
   
-ID tat-taxxa
+ID Tat-Taxxa
   
-numru ta ' identifikazzjoni tat-taxxa
+numru ta ' identifikazzjoni Tat-Taxxa
   
 ## <a name="netherlands"></a>Paesi Bassi
 
@@ -1361,13 +1361,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_netherlands_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_netherlands_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1386,55 +1386,55 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-numero di identificazione fiscale Paesi Bassi
+numero di identificazione fiscale per i Paesi Bassi
   
-identificazione imposte Paesi Bassi
+identificazione fiscale per i Paesi Bassi
   
-numero di identificazione fiscale Olanda
+numero di identificazione fiscale per i Paesi Bassi
   
-identificazione imposte Olanda
+identificazione fiscale per i Paesi Bassi
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-id imposta olandese
+ID delle tasse olandesi
   
-numero di identificazione olandese
+numero di identificazione fiscale olandese
   
 tax id
 
   
-Imposta id #
+ID fiscale #
   
-Imposta numero
+codice fiscale
   
-Imposta no #
+tax no #
   
-Imposta #
+imposte
   
 tin
 
   
-ID #
+latta
   
-ID Paesi Bassi
+Tin olandesi
   
-ID Olanda
+stagno degli olandesi
   
-Paesi Bassi belasting identificatienummer
+Nederlands identificatienummer di recente
   
-identificatienummer van belasting
+identificatienummer van delasting
   
-belasting identificatienummer
+identificatienummer che dura
   
-Paesi Bassi belasting identificatie
+Nederlands identificatie di recente
   
-Paesi Bassi belasting id nummer
+l'ID di Nummer del Nederlands
   
-Paesi Bassi belastingnummer
+Nederlands belastingnummer
   
 BTW nummer
   
-Nederlandse belasting identificatie
+Nederlandse che durerà identificatie
   
 ## <a name="poland"></a>Polonia
 
@@ -1454,13 +1454,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_poland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_poland_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_poland_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_poland_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1479,46 +1479,46 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
-nip
+NIP
   
-da nip #
+NIP
   
 tax id
 
   
-Imposta id #
+ID fiscale #
   
-id da nip
+ID NIP
   
-da nip id #
+ID NIP #
   
-numero di identificazione fiscale
+codice di identificazione fiscale
   
-Identificazione delle imposte non.
+codice fiscale n.
   
-numero IVA
+numero di partita IVA
   
-IVA no.
+IVA No.
   
 vatno #
   
-id IVA
+ID partita IVA
   
-id IVA #
+ID partita IVA #
   
-numero identyfikacji podatkowej
+numero Identyfikacji Podatkowej
   
-polski numero identyfikacji podatkowej
+Polski numero Identyfikacji Podatkowej
   
 numeridentyfikacjipodatkowej #
   
@@ -1540,13 +1540,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_portugal_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_portugal_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_portugal_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_portugal_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1565,23 +1565,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
-Imposta numero
+codice fiscale
   
-imposte no.
+tassa no.
   
 taxno #
   
-Numero imposta #
+taxnumber #
   
-Numero imposta
+taxnumber
   
 NIF
   
-NIF #
+NIF
   
 numero fiscale
   
-número de identificação fiscale
+número de identificação Fiscal
   
 ## <a name="romania"></a>Romania
 
@@ -1601,9 +1601,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_romania_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_romania_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_romania_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_romania_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1622,23 +1622,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-codice fiscale
+numero di ID fiscale
   
-Imposta i file non
+Tax File No
   
 
 
 tax file number
   
-Imposta n
+tax no
   
-Imposta numero
+codice fiscale
   
 taxid #
   
 taxno #
   
-ID ul taxei
+ID-ul taxei
   
 numărul de identificare fiscală
   
@@ -1660,9 +1660,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovakia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_slovakia_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovakia_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_slovakia_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1681,26 +1681,26 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-codice fiscale
+numero di ID fiscale
   
-id stagno
+ID Tin
   
-no stagno
+Tin No
   
-id stagno slovacco
+ID Tin slovacco
   
 tin
 
   
-Imposta i file non
+Tax File No
   
 
 
 tax file number
   
-Imposta n
+tax no
   
-Imposta numero
+codice fiscale
   
 taxid #
   
@@ -1730,13 +1730,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovenia_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_slovenia_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1758,26 +1758,26 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-codice fiscale
+numero di ID fiscale
   
-id stagno
+ID Tin
   
-no stagno
+Tin No
   
-id stagno sloveno
+ID Tin sloveno
   
 tin
 
   
-Imposta i file non
+Tax File No
   
 
 
 tax file number
   
-Imposta n
+tax no
   
-Imposta numero
+codice fiscale
   
 taxid #
   
@@ -1785,55 +1785,55 @@ taxno #
   
 identifikacijska številka davka
   
-davčna številka
+Davčna številka
   
-Številka davčne datoteke
+številka davčne datoteke
   
 ## <a name="spain"></a>Spagna
 
 ### <a name="format"></a>Formato
 
-Otto o sette cifre e uno o due lettere nella serie specificata
+Sette o otto cifre e una o due lettere nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Spagnolo persone con una carta d'identità nazionale Spagna:
+Persone fisiche spagnole con carta d'identità nazionale spagnola:
   
 -  Otto cifre 
     
-- Una lettera maiuscola (maiuscole/minuscole) 
+- Una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
     
-Non residenti Spaniards senza un carta d'identità nazionale Spagna
+Spagnoli non residenti senza una carta d'identità nazionale spagnola
   
-- Una lettera maiuscola "L" (maiuscole/minuscole)
+- Una lettera maiuscola "L" (con distinzione tra maiuscole e minuscole)
     
 - Sette cifre
     
-- Una lettera maiuscola (maiuscole/minuscole) 
+- Una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
     
-Spaniards residenti minori di 14 anni senza un Spagna nazionale carta d'identità:
+Spagnoli residenti di età inferiore ai 14 anni senza una carta d'identità nazionale spagnola:
   
-- Una lettera maiuscola "K" (maiuscole/minuscole)
+- Una lettera maiuscola "K" (con distinzione tra maiuscole e minuscole)
     
 -  Sette cifre 
     
-- Una lettera maiuscola (maiuscole/minuscole)
+- Una lettera maiuscola (con distinzione tra maiuscole e minuscole)
     
-Stranieri con numero di identificazione del Foreigner
+Stranieri con il numero di identificazione di un forestiero
   
-- Vale a dire maiuscoli una lettera "X", "Y" o "Z" (maiuscole/minuscole) 
+- Una lettera maiuscola che è "X", "Y" o "Z" (con distinzione tra maiuscole e minuscole) 
     
 - Sette cifre
     
-- Una lettera maiuscola (maiuscole/minuscole) 
+- Una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
     
-Stranieri senza numero di identificazione del Foreigner
+Stranieri senza il numero di identificazione di un forestiero
   
-- Una lettera maiuscola che è "M" (maiuscole/minuscole) 
+- Una lettera maiuscola che è "M" (con distinzione tra maiuscole e minuscole) 
     
 - Sette cifre
     
-- Una lettera maiuscola (maiuscole/minuscole) 
+- Una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
     
 ### <a name="checksum"></a>Checksum
 
@@ -1843,13 +1843,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_spain_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_spain_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1871,29 +1871,29 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-codice fiscale
+numero di ID fiscale
   
-id cif
+ID CIF
   
-cif non
+CIF No
   
-id lingua spagnola cif
+ID CIF spagnolo
   
-cif
+CIF
   
-Imposta i file non
+Tax File No
   
-numero cif spagnolo
+numero CIF spagnolo
   
 
 
 tax file number
   
-Spagnolo cif non
+Spagnolo CIF No
   
-Imposta n
+tax no
   
-Imposta numero
+codice fiscale
   
 taxid #
   
@@ -1907,11 +1907,11 @@ spanishcifno #
   
 número de contribuyente
   
-número de impuesto corporativo
+número de Impuesto corporativo
   
-número de identificación fiscali
+número de Identificación Fiscal
   
-cif número
+número CIF
   
 cifnúmero #
   
@@ -1919,7 +1919,7 @@ cifnúmero #
 
 ### <a name="format"></a>Formato
 
-Dieci cifre e un simbolo nella serie specificata
+Dieci cifre e un simbolo nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
@@ -1927,15 +1927,15 @@ Dieci cifre e un simbolo:
   
 -  Sei cifre che corrispondono alla data di nascita (AAMMGG) 
     
-- Un segno di addizione, segno di sottrazione o barra rovesciata
+- Segno di addizione, segno meno o barra rovesciata
     
-- Tre cifre che rendono l'identificazione dei numeri univoco where: 
+- Tre cifre che rendono il numero di identificazione univoco dove: 
     
-  - Per i numeri rilasciati prima 1990, la cifra settima e ottava identificare la provincia di nascita o utenti foreign-born
+  - Per i numeri emessi prima del 1990, la settima e la terza cifra identificano la Contea di nascita o gli stranieri nati
     
-  - La cifra nella posizione nona indica sesso per entrambi dispari per maschile o persino femmina
+  - La cifra nella nona posizione indica il sesso per il maschio o per la femmina.
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -1945,13 +1945,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_sweden_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_sweden_eu_tax_file_number` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1973,46 +1973,46 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-id imposta non.
+ID IVA No.
   
-codice fiscale
+numero di ID fiscale
   
 tax identification
 
   
-Imposta identificazione #
+identificazione fiscale #
   
-imposte no.
+tassa no.
   
-Imposta #
+imposte
   
 taxid #
   
-file fiscali
+file fiscale
   
-imposte non file.
+Tax File No.
   
-numero id personale
+numero ID personale
   
-skatt id nummer
+ID pattinat Nummer
   
-skatt identifikation
+Identifikation skatet
   
 personnummer
   
-## <a name="uk"></a>REGNO UNITO
+## <a name="uk"></a>Regno Unito
 
 ### <a name="format"></a>Formato
 
-Riferimento fiscale univoco (UTR): 10 cifre senza spazi e i delimitatori
+Riferimento per i contribuenti unici (UTR): 10 cifre senza spazi e delimitatori
   
-Numero di assicurazione nazionale (NINO): Per ulteriori informazioni, vedere la sezione "Regno Unito di numero di assicurazione nazionale (NINO)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito National Insurance Number (NINO)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Modello
 
-Riferimento fiscale univoco (UTR): 10 cifre
+Riferimento per i contribuenti unici (UTR): 10 cifre
   
-Numero di assicurazione nazionale (NINO): Per ulteriori informazioni, vedere la sezione "Regno Unito di numero di assicurazione nazionale (NINO)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito National Insurance Number (NINO)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Checksum
 
@@ -2022,9 +2022,9 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_uk_eu_tax_file_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_uk_eu_tax_file_number` viene trovato. 
+- Viene trovata una `Keywords_uk_eu_tax_file_number` parola chiave from. 
     
 ```
  <!-- EU Tax File Number -->
@@ -2043,26 +2043,26 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 tax id
 
   
-id imposta non.
+ID IVA No.
   
-codice fiscale
+numero di ID fiscale
   
 tax identification
 
   
-Imposta identificazione #
+identificazione fiscale #
   
-imposte no.
+tassa no.
   
-Imposta #
+imposte
   
 taxid #
   
-file fiscali
+file fiscale
   
-imposte non file.
+Tax File No.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 

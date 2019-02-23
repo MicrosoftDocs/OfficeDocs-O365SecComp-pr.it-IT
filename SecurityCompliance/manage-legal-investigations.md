@@ -1,140 +1,139 @@
 ---
-title: Gestire indagini legale in Office 365
+title: Gestione di indagini legali in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Utilizzare casi di eDiscovery in Office 365 Security &amp; centro conformità per gestire indagini legale dell'organizzazione. Se si dispone di una sottoscrizione E5, è possibile analizzare ulteriormente maiuscole dati utilizzando l'analitica testo, l'apprendimento e funzionalità di codifica predittiva di eDiscovery avanzate.
-ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
-ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
+description: Utilizzare i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365 per gestire le indagini legali dell'organizzazione. Se si dispone di un abbonamento E5, è possibile analizzare ulteriormente i dati del caso utilizzando l'analisi del testo, l'apprendimento automatico e le funzionalità di codifica predittiva di Advanced eDiscovery.
+ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719050"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214396"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Gestire indagini legale in Office 365
+# <a name="manage-legal-investigations-in-office-365"></a>Gestione di indagini legali in Office 365
 
-Le organizzazioni sono diversi i motivi per rispondere a un caso legale che coinvolgono determinati dirigenti o altri dipendenti dell'organizzazione. Ciò potrebbe comportare rapidamente la ricerca e la conservazione per un'ulteriore indagini informazioni specifiche nella posta elettronica, documenti, conversazioni di messaggistica immediata e altri percorsi di contenuti utilizzati dagli utenti nelle attività quotidiane. È possibile eseguire queste e molte altre attività simili utilizzando gli strumenti casi di eDiscovery in Office 365 Security &amp; centro conformità.
+Le organizzazioni hanno molti motivi per rispondere a un caso legale che coinvolge alcuni dirigenti o altri dipendenti dell'organizzazione. Ciò può comportare la ricerca e la conservazione rapida di ulteriori informazioni specifiche relative alla posta elettronica, ai documenti, alle conversazioni di messaggistica istantanea e ad altri percorsi di contenuto utilizzati dalle persone nelle attività quotidiane. È possibile eseguire queste e molte altre attività simili utilizzando gli strumenti case di eDiscovery nel centro sicurezza &amp; e conformità di Office 365.
   
-[Gestire indagini legali con casi di eDiscovery](#manage-legal-investigations-with-ediscovery-cases)
+[Gestire le indagini legali con i casi di eDiscovery](#manage-legal-investigations-with-ediscovery-cases)
   
-[Analisi dei dati maiuscole con Office 365 avanzate eDiscovery](#analyze-case-data-using-office-365-advanced-ediscovery)
+[Analizzare i dati dei casi tramite Office 365 Advanced eDiscovery](#analyze-case-data-using-office-365-advanced-ediscovery)
   
-**Desidera conoscere il modo in cui Microsoft gestisce le ricerche eDiscovery?** Ecco un [white paper tecnico](https://go.microsoft.com/fwlink/?linkid=852161) che è possibile scaricare in cui viene illustrato come è utilizzare gli stessi strumenti di ricerca e analisi di Office 365 per gestire i flussi di lavoro di eDiscovery interno.
+**Volete sapere in che modo Microsoft gestisce le indagini di eDiscovery?** Ecco un [white paper tecnico](https://go.microsoft.com/fwlink/?linkid=852161) che è possibile scaricare che spiega come utilizzare gli stessi strumenti di ricerca e analisi di Office 365 per gestire il flusso di lavoro interno di eDiscovery.
    
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gestire indagini legali con casi di eDiscovery
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gestire le indagini legali con i casi di eDiscovery
 
-eDiscovery casi consentono di controllare chi può creare, accedere e gestire casi di eDiscovery nell'organizzazione. Casi di utilizzo per aggiungere membri e controllo quali tipi di azioni può eseguire, impostare un blocco sui percorsi di contenuti rilevanti per una controversia legale e utilizzare lo strumento di ricerca di contenuto per i percorsi di ricerca in attesa per il contenuto che potrebbe essere risponde al caso. È quindi possibile esportare e scaricare i risultati per un'analisi più approfondita dai revisori esterni. Se l'organizzazione Office 365 dispone di una sottoscrizione E5, è inoltre possibile preparare i risultati della ricerca per l'analisi di eDiscovery avanzate.
+i casi di eDiscovery consentono di controllare gli utenti autorizzati a creare, accedere e gestire i casi di eDiscovery nell'organizzazione. Utilizzare i casi per aggiungere membri e controllare i tipi di azioni che possono eseguire, inserire un'esenzione nei percorsi di contenuto rilevanti per un caso legale e utilizzare lo strumento di ricerca contenuto per cercare i contenuti che potrebbero rispondere al caso. È inoltre possibile esportare e scaricare i risultati per ulteriori indagini da parte di revisori esterni. Se l'organizzazione di Office 365 ha un abbonamento E5, è anche possibile preparare i risultati della ricerca per l'analisi in Advanced eDiscovery.
   
-- [Gestisci flusso di lavoro eDiscovery](ediscovery-cases.md) dalla creazione e utilizzo dei casi di eDiscovery per ogni persona indagini l'organizzazione dispone di intraprendere 
+- [Gestire il flusso di lavoro di eDiscovery](ediscovery-cases.md) mediante la creazione e l'utilizzo di casi di eDiscovery per ogni indagine legale che l'organizzazione deve intraprendere 
     
-- [Assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md) per controllare chi può creare e gestire casi di eDiscovery nell'organizzazione 
+- [Assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md) per controllare chi può creare e gestire i casi di eDiscovery nell'organizzazione 
     
-- [Separazione di conformità](set-up-compliance-boundaries.md) per controllare l'utente i percorsi di contenuti che possono eseguire ricerche eDiscovery Manager 
+- [Impostare i limiti di conformità](set-up-compliance-boundaries.md) per controllare i percorsi di contenuto utente che i responsabili di eDiscovery possono eseguire ricerche 
     
-- [Ricerca di contenuto](search-for-content.md) all'interno dell'organizzazione 
+- [Ricerca di contenuti](search-for-content.md) nell'organizzazione 
     
-- [Prepara il contenuto sociale eDiscovery avanzate](prepare-search-results-for-advanced-ediscovery.md) non è possibile eseguire analisi dell'utilizzo potenti analitico strumenti di eDiscovery avanzati, ad esempio riconoscimento ottico dei caratteri, threading posta elettronica e la scrittura di codice predittiva 
+- [Preparare il contenuto del caso per Advanced eDiscovery in](prepare-search-results-for-advanced-ediscovery.md) modo da poter eseguire l'analisi utilizzando potenti strumenti analitici avanzati di eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva 
     
-### <a name="use-scripts-for-advanced-scenarios"></a>Utilizzare gli script per scenari avanzati
+### <a name="use-scripts-for-advanced-scenarios"></a>Utilizzare gli script per gli scenari avanzati
 
-Come la sezione precedente elencati gli script per gli scenari di ricerca del contenuto, abbiamo inoltre creato alcuni sicurezza &amp; script di PowerShell centro conformità per la gestione dei casi eDiscovery.
+Analogamente alla sezione precedente in cui sono elencati gli script per gli scenari di ricerca del contenuto &amp; , sono stati creati alcuni script di PowerShell per il Centro sicurezza e conformità che consentono di gestire i casi di eDiscovery.
   
-- [Crea un eDiscovery report esenzioni](create-a-report-on-holds-in-ediscovery-cases.md) che contiene informazioni su tutti i contiene associato ai casi di eDiscovery nell'organizzazione 
+- [Creare un rapporto di blocco di eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nell'organizzazione 
     
-- [Aggiunta delle cassette postali e percorsi di OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) per un elenco di utenti di una ricerca eDiscovery archiviazione 
+- [Aggiungere cassette postali e posizioni OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) per un elenco di utenti a un blocco eDiscovery 
   
-## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analisi dei dati maiuscole con Office 365 avanzate eDiscovery
+## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analizzare i dati dei casi tramite Office 365 Advanced eDiscovery
 
-EDiscovery avanzate di Office 365 si basa sulle funzionalità di ricerca ed eDiscovery contenuta descritta nelle sezioni precedenti. Dopo aver creato un caso di eDiscovery, posto depositaria in attesa e raccogliere dati che potrebbero essere risponde al caso, è quindi possibile ulteriormente analizzare i dati utilizzando analitica testo, la macchina di apprendimento e le funzionalità di codifica predittive di avanzate eDiscovery. Ciò consente all'organizzazione elaborare rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per trovare solo gli elementi che sono probabilmente più rilevanti per un caso specifico. Ed è stata unificata avanzata eDiscovery e la gestione dei casi in modo che è possibile gestire facilmente lo stesso caso all'interno della protezione &amp; centro conformità.
+Office 365 Advanced eDiscovery si basa sulle funzionalità di ricerca contenuto e eDiscovery descritte nelle sezioni precedenti. Dopo la creazione di un caso di eDiscovery, l'archiviazione delle posizioni del custode e la raccolta dei dati che potrebbero essere sensibili al caso, è possibile analizzare ulteriormente i dati utilizzando l'analisi del testo, l'apprendimento automatico e le funzionalità di codifica predittiva di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per un caso specifico. E, abbiamo Unified Case Management e Advanced eDiscovery in modo da poter gestire senza problemi lo stesso caso all'interno del centro &amp; sicurezza e conformità.
   
 > [!NOTE]
-> Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
+> Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5. 
   
-### <a name="get-started"></a>Per iniziare
+### <a name="get-started"></a>Attività iniziali
 
-Il modo più rapido per iniziare a utilizzare eDiscovery avanzate consiste nel creare un caso e preparare i risultati della ricerca in sicurezza &amp; centro conformità, caricare i risultati di eDiscovery avanzate e quindi eseguire analisi Express per l'analisi che caso dati ed esportare il risultati per la revisione esterna.
+Il modo più rapido per iniziare a utilizzare Advanced eDiscovery consiste nel creare un caso e preparare i risultati della ricerca &amp; nel centro sicurezza e conformità, caricare i risultati in Advanced eDiscovery, quindi eseguire l'analisi Express per analizzare i dati del caso e quindi esportare il Risultati per la revisione esterna.
   
-- [Viene fornita una rapida panoramica](quick-setup-for-advanced-ediscovery.md) del flusso di lavoro eDiscovery avanzate 
+- [Ottenere una breve panoramica](quick-setup-for-advanced-ediscovery.md) del flusso di lavoro avanzato di eDiscovery 
     
-- [Impostare gli utenti e dei casi](set-up-users-and-cases-in-advanced-ediscovery.md) eDiscovery avanzate mediante la creazione di un caso, l'assegnazione di autorizzazioni di eDiscovery e aggiungendo caso membri, tutte le utilizzando la protezione &amp; centro conformità 
+- [Configurare gli utenti e i casi](set-up-users-and-cases-in-advanced-ediscovery.md) per Advanced eDiscovery mediante la creazione di un caso, l'assegnazione di autorizzazioni di eDiscovery e l'aggiunta di membri del &amp; caso, il tutto tramite il Centro sicurezza e conformità 
     
-- [Preparazione e carico cercare i dati](prepare-data-for-advanced-ediscovery.md) in caso di eDiscovery avanzate 
+- [Preparare e caricare i dati di ricerca](prepare-data-for-advanced-ediscovery.md) per il caso in Advanced eDiscovery 
     
-- [Caricare i dati non Office 365](import-non-office-365-data-into-advanced-ediscovery.md) in un caso per l'analisi di eDiscovery avanzate 
+- [Caricare i dati non di Office 365](import-non-office-365-data-into-advanced-ediscovery.md) in un caso per analizzarli in Advanced eDiscovery 
     
-- [Analisi dell'uso Express](use-express-analysis-in-advanced-ediscovery.md) per analizzare rapidamente i dati in un caso ed esportare facilmente i risultati 
+- [Utilizzare l'analisi Express](use-express-analysis-in-advanced-ediscovery.md) per analizzare rapidamente i dati in un caso e quindi esportare facilmente i risultati. 
     
-### <a name="analyze-data"></a>Analisi dei dati
+### <a name="analyze-data"></a>Analizzare i dati
 
-Dopo il caricamento di dati di ricerca in caso di eDiscovery avanzate, si utilizzerà la funzionalità di analisi per avviare l'analisi. La prima parte del processo di analisi è costituita organizzazione dei file in gruppi di file univoci, duplicati e quasi duplicati (noto anche come similarità documento). Quindi verrà organizzare nuovamente i dati in gruppi struttura gerarchica dei thread di posta elettronica e temi e, facoltativamente, set ignorare filtri di testo da escludere determinato testo dall'analisi. Si verrà quindi eseguire l'analisi e visualizzare i risultati.
+Dopo aver caricato i dati di ricerca nel caso in Advanced eDiscovery, si utilizzerà il modulo Analyze per iniziare a analizzarlo. La prima parte del processo di analisi consiste nell'organizzazione di file in gruppi di file univoci, duplicati e quasi duplicati (noti anche come somiglianza di documento). I dati verranno quindi organizzati di nuovo in gruppi gerarchicamente strutturati di thread e temi di posta elettronica e, facoltativamente, i filtri di testo vengono impostati in modo da escludere un determinato testo dall'analisi. Verrà quindi eseguita l'analisi e verranno visualizzati i risultati.
   
-- [Informazioni sui similarità documento](understand-document-similarity-in-advanced-ediscovery.md) per prepararsi per l'analisi dei dati di eDiscovery avanzate 
+- Informazioni [sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md) per preparare l'analisi dei dati in Advanced eDiscovery 
     
-- [Impostare le opzioni](set-analyze-options-in-advanced-ediscovery.md) per quasi duplicati, temi e posta elettronica threading e quindi eseguire la funzionalità di analisi 
+- [Configurare le opzioni](set-analyze-options-in-advanced-ediscovery.md) per i quasi duplicati, i temi e il threading della posta elettronica, quindi eseguire il modulo Analyze 
     
-- [Impostare i filtri Ignora testo](set-ignore-text-in-advanced-ediscovery.md) per escludere il testo e stringhe di testo da analizzata; Questi filtri ignorerà testo anche quando si esegue l'analisi di pertinenza 
+- [Set up ignora filtri testo](set-ignore-text-in-advanced-ediscovery.md) per escludere il testo e le stringhe di testo da analizzare. Questi filtri ignoreranno anche il testo quando si esegue l'analisi della pertinenza 
     
 - [Visualizzare i risultati](view-analyze-results-in-advanced-ediscovery.md) del processo di analisi 
     
-- [Configurare le impostazioni avanzate](set-analyze-advanced-settings-in-advanced-ediscovery.md) per l'elaborazione dell'analisi 
+- [Configurare le impostazioni avanzate](set-analyze-advanced-settings-in-advanced-ediscovery.md) per il processo di analisi 
     
-### <a name="set-up-relevance-training"></a>Configurazione di formazione di pertinenza
+### <a name="set-up-relevance-training"></a>Configurare il training per la rilevanza
 
-Stima la scrittura di codice (denominata pertinenza) nella scheda Avanzate eDiscovery consente di formare il sistema su ciò che sta cercando grazie alla possibilità di per decidere (se un elemento è rilevante o non) su un numero ridotto di documenti.
+La codifica predittiva (denominata pertinenza) in Advanced eDiscovery consente di formare il sistema su ciò che si sta cercando, permettendo di prendere decisioni (se qualcosa è pertinente o meno) su un piccolo insieme di documenti.
   
-- [Informazioni sull'impostazione di formazione di pertinenza](manage-relevance-setup-in-advanced-ediscovery.md) , file di interesse per un caso di tagging e la definizione case dei problemi 
+- Informazioni [su come configurare la formazione](manage-relevance-setup-in-advanced-ediscovery.md) di pertinenza, contrassegnare i file rilevanti per un caso e definire i problemi di caso 
     
-- [Definire case problemi](define-issues-and-assign-users.md) e assegnare ogni problema a un utente che di formare i file 
+- [Definire eventuali problemi](define-issues-and-assign-users.md) e assegnare ogni problema a un utente che addestrerà i file 
     
-- [Aggiungere i file importati a carico corrente o nuovo](set-up-loads-to-add-imported-files.md) che verrà aggiunto alla formazione pertinenza; un carico è un nuovo batch di file che vengono aggiunti a un caso e quindi utilizzati per la formazione di pertinenza 
+- [Aggiungere i file importati al carico corrente o nuovo](set-up-loads-to-add-imported-files.md) che verrà aggiunto alla formazione relativa alla pertinenza. un carico è un nuovo batch di file che vengono aggiunti a un caso e quindi utilizzati per la formazione di pertinenza 
     
-- [Definire evidenziate le parole chiave](define-highlighted-keywords-and-advanced-options.md) che è possibile aggiungere alla formazione pertinenza; Consente di identificare meglio i file di interesse per un caso 
+- [Definire le parole chiave evidenziate](define-highlighted-keywords-and-advanced-options.md) che è possibile aggiungere all'allenamento di pertinenza; in questo modo è possibile identificare meglio i file rilevanti per un caso 
     
-### <a name="run-the-relevance-module"></a>Eseguire la funzionalità di pertinenza
+### <a name="run-the-relevance-module"></a>Eseguire il modulo pertinenza
 
-Dopo aver set di backup di formazione, si è pronti per eseguire la funzionalità di pertinenza e valutare l'efficacia delle impostazioni di formazione il risultato è una classificazione per pertinenza che consente di stabilire se è necessario eseguire formazione aggiuntiva oppure se si è pronti per avviare tagging come file rilevanti al caso.
+Dopo aver configurato la formazione, si è pronti per eseguire il modulo pertinenza e valutare l'efficacia delle impostazioni di formazione questo comporta una classificazione di pertinenza che consente di decidere se è necessario eseguire una formazione aggiuntiva o se si è pronti per iniziare a contrassegnare i file come rilevanti per il caso.
   
-- [Informazioni sul processo di pertinenza](use-relevance-in-advanced-ediscovery.md) e il processo di valutazione iterativo, tagging, analisi e formazione nuovamente in base insieme di file di esempio 
+- Informazioni sul [processo](use-relevance-in-advanced-ediscovery.md) di rilevanza e sul processo iterativo di valutazione, tagging, monitoraggio e riqualificazione in base al set di file di esempio 
     
-- [Informazioni sulla valutazione](assessment-in-relevance-in-advanced-ediscovery.md) , dove esperto con il caso viene esaminata una serie di file sociale e determina l'efficacia della formazione pertinenza 
+- Informazioni [sulla valutazione](assessment-in-relevance-in-advanced-ediscovery.md) , in cui un esperto che ha familiarità con il caso esamina una serie di file di casi e determina l'efficacia della formazione di pertinenza 
     
-- [Valutare i file maiuscole](tagging-and-assessment-in-advanced-ediscovery.md) per calcolare l'efficacia (denominato *complessità* ) di impostazioni di formazione e file tag come rilevanti o non rilevanti per il case; Consente di determinare se la formazione corrente è sufficiente oppure se è necessario regolare le impostazioni di formazione. 
+- [Valutare i file dei casi](tagging-and-assessment-in-advanced-ediscovery.md) per calcolare l'efficacia (denominata *ricchezza* ) delle impostazioni di formazione e quindi contrassegnare i file come rilevanti o non rilevanti per il caso in questione. in questo modo è possibile determinare se l'allenamento corrente è sufficiente o se è necessario modificare le impostazioni di training. 
     
-- [Esegui la formazione pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md) dopo la valutazione è stato completato e quindi ancora una volta tag file come rilevanti o non rilevanti per i problemi che è stato definito per il case 
+- [Eseguire la formazione](tagging-and-relevance-training-in-advanced-ediscovery.md) di pertinenza dopo aver completato la valutazione e quindi ancora una volta i file Tag rilevanti o non rilevanti per i problemi definiti per il caso 
     
-- Processo di [tenere traccia dell'analisi di pertinenza](track-relevance-analysis-in-advanced-ediscovery.md) per determinare se formazione pertinenza ha raggiunto la destinazione assessment (noto come è *stato stabile addestramento* ) o se è necessaria ulteriore formazione; è inoltre possibile visualizzare i risultati di pertinenza per ogni problema di maiuscole 
+- [Monitorare il processo di analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md) per determinare se la formazione di pertinenza ha raggiunto l'obiettivo di valutazione (noto come *stato di formazione stabile* ) o se sono necessari ulteriori corsi di formazione; è inoltre possibile visualizzare i risultati relativi alla pertinenza per ogni problema di caso 
     
-- [Prendere decisioni basate sull'analisi di pertinenza](decision-based-on-the-results-in-advanced-ediscovery.md) per determinare che le dimensioni del set di risultante del case file che possono essere esportati per la revisione 
+- [Prendere decisioni in base all'analisi](decision-based-on-the-results-in-advanced-ediscovery.md) della pertinenza per determinare le dimensioni dell'insieme risultante di file case che possono essere esportati per la revisione 
     
-- [La qualità dell'analisi della pertinenza di test](test-relevance-analysis-in-advanced-ediscovery.md) per convalidare l'eliminazione selettiva decisioni prese durante il processo di pertinenza 
+- [Testare la qualità dell'analisi](test-relevance-analysis-in-advanced-ediscovery.md) della pertinenza per convalidare le decisioni relative all'eliminazione dei prodotti durante il processo di pertinenza 
     
 ### <a name="export-results"></a>Esportare i risultati
 
-Il passaggio finale di analisi dei dati sui casi di eDiscovery avanzate è per esportare i risultati dell'analisi per la revisione esterna.
+L'ultimo passaggio per analizzare i dati dei casi in Advanced eDiscovery consiste nell'esportare i risultati dell'analisi per la revisione esterna.
   
-- [Informazioni sull'esportazione di dati maiuscole](export-case-data-in-advanced-ediscovery.md)
+- [Informazioni su come esportare i dati del caso](export-case-data-in-advanced-ediscovery.md)
     
-- [Esportare dati maiuscole](export-results-in-advanced-ediscovery.md)
+- [Esportare i dati del caso](export-results-in-advanced-ediscovery.md)
     
-- [Visualizzare la cronologia di blocco e l'esportazione dei risultati passati](view-batch-history-and-export-past-results.md)
+- [Visualizzare la cronologia dei batch ed esportare i risultati precedenti](view-batch-history-and-export-past-results.md)
     
 - [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
     
-### <a name="other-advanced-ediscovery-tools"></a>Altri strumenti di eDiscovery avanzate
+### <a name="other-advanced-ediscovery-tools"></a>Altri strumenti avanzati di eDiscovery
 
-EDiscovery avanzate sono disponibili ulteriori strumenti e le funzionalità più analisi dei dati maiuscole, analisi di pertinenza ed esportazione di dati.
+Advanced eDiscovery fornisce ulteriori strumenti e funzionalità oltre a analizzare i dati dei casi, l'analisi della pertinenza e l'esportazione dei dati.
   
-- [I rapporti di eDiscovery avanzate](run-reports-in-advanced-ediscovery.md)
+- [Esecuzione di report avanzati di eDiscovery](run-reports-in-advanced-ediscovery.md)
     
-- [Definire le impostazioni di maiuscole e minuscole e tenant](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+- [Definire le impostazioni del case e del tenant](define-case-and-tenant-settings-in-advanced-ediscovery.md)
     
-- [Utilità di eDiscovery avanzate](use-advanced-ediscovery-utilities.md)
+- [Utilità avanzate di eDiscovery](use-advanced-ediscovery-utilities.md)

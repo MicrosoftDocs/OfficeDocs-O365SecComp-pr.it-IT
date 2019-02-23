@@ -1,12 +1,12 @@
 ---
-title: Scaricare i processi di esportazione
+title: Scaricare processi di esportazione
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 96a62b108534b27e4a5ea74e45fc4a73c1e6ccbb
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: aef32ad1e1b5d92cfbcd0de064f4c0934e89fc49
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607895"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214936"
 ---
-# <a name="download-export-jobs"></a>Scaricare i processi di esportazione
+# <a name="download-export-jobs"></a>Scaricare processi di esportazione
 
 Il contenuto sarà disponibile a breve.

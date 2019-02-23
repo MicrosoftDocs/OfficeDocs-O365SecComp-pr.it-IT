@@ -6,20 +6,20 @@ manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: I tipi di informazioni riservate cercare un modello specifico e il grado di confermare accertandosi corretto formattazione applicate checksum e cercando pertinenti parole chiave o altre informazioni. Alcune di queste funzionalità viene eseguita da funzioni interne. In questo argomento viene illustrato che queste funzioni aspetto, che consentono di comprendere il funzionano i tipi di informazioni riservate predefiniti.
-ms.openlocfilehash: 510f98e2b4e1d2480550f11026cf445be6ffc931
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite dalle funzioni interne. In questo argomento vengono illustrate le funzionalità che devono essere cercate per comprendere il funzionamento dei tipi di informazioni riservate predefinite.
+ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013760"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219356"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Cosa individuano le funzioni DLP
 
@@ -29,21 +29,21 @@ In questo argomento viene descritto cosa viene cercato da queste funzioni per co
   
 ## <a name="funcusdate"></a>Func_us_date
 
-Questa funzione Cerca una data in formato comunemente utilizzata negli Stati Uniti Sono inclusi i formati "giorno/mese/anno", "mese-giorno-anno" e "mese il giorno anno". I nomi o abbreviazioni mesi non sono distinzione tra maiuscole e minuscole. 
+Questa funzione Cerca una data nel formato comunemente utilizzato negli Stati Uniti. Sono inclusi i formati "month/day/year", "month-day-year" e "month day year". I nomi o le abbreviazioni dei mesi non sono distinzione tra maiuscole e minuscole. 
   
 Esempi:
   
 - 2 dicembre 2016
     
-- 2 DEC 2016
+- 2 dicembre 2016
     
-- DEC 2016 02
+- Dec 02 2016
     
-- 2/12/2016
+- 12/2/2016
     
 - 12/02/16
     
-- DEC-2-2016
+- Dec-2-2016
     
 - 12-2-16
     
@@ -53,7 +53,7 @@ Nomi dei mesi accettati:
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - Gennaio febbraio Mar. Apr. maggio giugno luglio agosto settembre ottobre Dec novembre.
+  - Gen febbraio Feb Mar. apr maggio giugno luglio agosto sett. ott. nov. Dec.
     
 ## <a name="funceudate"></a>Func_eu_date
 
@@ -61,17 +61,17 @@ Questa funzione consente di cercare una data nel formato comunemente usato nell'
   
 Esempi:
   
-- 2 Dec 2016
+- 2 dicembre 2016
     
-- dec 02 2016
+- 02 dicembre 2016
     
-- 2 Dec 16
+- 2 dicembre 16
     
 - 2/12/2016
     
-- 12/02/16
+- 02/12/16
     
-- 2-dic-2016
+- 2-Dec-2016
     
 - 2-12-16
     
@@ -81,64 +81,64 @@ Nomi dei mesi accettati:
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - Gennaio febbraio Mar. Apr. maggio giugno luglio agosto settembre ottobre Dec novembre.
+  - Gen febbraio Feb Mar. apr maggio giugno luglio agosto sett. ott. nov. Dec.
     
 - Olandese
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan CTP di febbraio maart apr mei giugno luglio agosto set settembre ottobre okt novembre dicembre
+  - Jan Feb maart apr Mei giu lug Aug Sep set ott Okt Nov Dec
     
 - Francese
     
-  - janvier, février, mars, avril, mai, juillet ADR, août, septembre, octobre, novembre, décembre
+  - Janvier, février, Mars, avril, mai, Juin Juillet, août, septembre, Octobre, novembre, décembre
     
-  - janv. févr. Mar avril mai ADR juil. août settembre. ott novembre. déc.
+  - janv. févr. Mars Avril mai juin juil. août sett. ott. nov. déc.
     
 - Tedesco
     
-  - jänuar, februar, märz, aprile, mai, juni juli, agosto, settembre, oktober, novembre, dezember
+  - jänuar, febbraio, März, April, mai, Juni Juli, August, September, Oktober, November, Dezember
     
-  - Gen. / Jän. Febbraio März Apr. Mai Juni Juli agosto settembre Okt. Dez novembre.
+  - Gen./Jän. Feb. März apr. mai Juni luglio Okt. Nov. dic.
     
 - Italiano
     
   - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - Genn. febbr. Mar. APR. magg. giugno luglio ag. sett. ott. novembre. dic.
+  - Genn. febbr. mar. apr. magg. giugno luglio AG. ovvero. ott. novembre. dic.
     
 - Portoghese
     
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
     
-  - Jan fev mar router di confine area mai giugno, luglio fa stabiliti novembre dez
+  - Jan FEV Mar ABR mai Jun Jul ago set out nov dic
     
 - Spagnolo
     
-  - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
+  - enero, febrero, marzo, Abril, Mayo, Junio, Julio, agosto, Septiembre, Octubre, Noviembre, Diciembre
     
-  - enero CTP di febbraio. marzo abr. mayo Giu luglio. insieme/agosto settembre. ott novembre. dic.
+  - enero feb. marzo ABR. Mayo Jun. Jul. agosto Sept/set. ott. nov. dic.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (obsoleto)
 
 > [!NOTE]
-> Questa funzione è deprecata perché supporta solo portoghese i nomi dei mesi, che ora sono inclusi nel `Func_eu_date` funzione sopra. 
+> Questa funzione è obsoleta perché supporta solo i nomi dei mesi portoghesi, che ora sono inclusi nella `Func_eu_date` funzione precedente. 
   
-Questa funzione Cerca una data in formato comunemente utilizzata nelle portoghese. Il formato per questa funzione è uguale `Func_eu_date`, diverse solo nella lingua utilizzata.
+Questa funzione consente di ricercare una data nel formato comunemente utilizzato in portoghese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
   
 Esempi:
   
-- 2 Dez 2016
+- 2 (2016).
     
-- 02 dez 2016
+- 02 (2016).
     
-- 2 Dez 16
+- 2 con il 16
     
 - 2/12/2016
     
-- 12/02/16
+- 02/12/16
     
-- 2-Dez-2016
+- 2-------2016
     
 - 2-12-16
     
@@ -148,26 +148,26 @@ Nomi dei mesi accettati:
     
   - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
     
-  - Jan fev mar router di confine area mai giugno, luglio fa stabiliti novembre dez
+  - Jan FEV Mar ABR mai Jun Jul ago set out nov dic
     
 ## <a name="funceudate2-deprecated"></a>Func_eu_date2 (obsoleto)
 
 > [!NOTE]
-> Questa funzione è deprecata perché supporta solo olandese i nomi dei mesi, che ora sono inclusi nel `Func_eu_date` funzione sopra. 
+> Questa funzione è obsoleta perché supporta solo i nomi dei mesi olandesi, che ora sono inclusi `Func_eu_date` nella funzione precedente. 
   
-Questa funzione Cerca una data in formato comunemente utilizzata in olandese. Il formato per questa funzione è uguale `Func_eu_date`, diverse solo nella lingua utilizzata.
+Questa funzione consente di ricercare una data nel formato comunemente utilizzato in Fiammingo. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
   
 Esempi:
   
 - 2 Mei 2016
     
-- 02 mei 2016
+- 02 Mei 2016
     
 - 2 Mei 16
     
 - 2/12/2016
     
-- 12/02/16
+- 02/12/16
     
 - 2-Mei-2016
     
@@ -179,11 +179,11 @@ Nomi dei mesi accettati:
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan CTP di febbraio maart apr mei giugno luglio agosto set settembre ottobre okt novembre dicembre
+  - Jan Feb maart apr Mei giu lug Aug Sep set ott Okt Nov Dec
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-Questa funzione Cerca una data in formati comunemente utilizzata dalle schede di dare e in cui escludere giorni favore dei mesi. Questa funzione corrispondenti date in formato "mese/anno", "mese-anno", "[nome del mese] anno" e "anno [abbreviazione mese]". I nomi o abbreviazioni mesi non sono distinzione tra maiuscole e minuscole.
+Questa funzione Cerca una data nei formati comunemente usati dalle carte di credito e di debito, che escludono i giorni a favore dei mesi. Questa funzione corrisponderà alle date nel formato "month/year", "month-year", "[Month Name] Year" e "[month abbreviation] Year". I nomi o le abbreviazioni dei mesi non sono distinzione tra maiuscole e minuscole.
   
 Esempi
   
@@ -203,7 +203,7 @@ I formati seguenti supportano AA o AAAA:
     
 - MeseAAAA -- ad esempio, "gennaio2010" o "Gen2010" o "gennaio10" o "Gen10"
     
-- Mese/YYYY, ad esempio, "gennaio/2010" o "Gen/2010" o ' gennaio/10' o ' Jan/10'
+- Mese/AAAA--ad esempio, "gennaio/2010" o "gen/2010" o "gennaio/10" o "gen/10"
     
 Nomi dei mesi accettati:
   
@@ -211,7 +211,7 @@ Nomi dei mesi accettati:
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - CTP di febbraio gen Mar Apr maggio giugno luglio agosto settembre Oct Dec novembre
+  - Gen feb mar apr maggio giugno luglio Aug settembre Ott Nov Dec
     
 ## <a name="funcusaddress"></a>Func_us_address
 

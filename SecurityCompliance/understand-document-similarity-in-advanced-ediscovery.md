@@ -6,51 +6,51 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Vedere funzionamento documento similarità valore, il livello minimo di somiglianza per due file da prendere in considerazione quasi duplicati in Office 365 avanzate eDiscovery. '
-ms.openlocfilehash: 39cd8c31204f0164f6b52c71fa707253cb22758a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530630"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220426"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Informazioni sulla similarità dei documenti di Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In eDiscovery avanzate, similarità documento è il livello minimo di somiglianza necessario per i due documenti devono essere considerati quasi duplicati.
+In Advanced eDiscovery, la somiglianza dei documenti è il livello minimo di somiglianza necessario per due documenti che devono essere considerati quasi duplicati.
   
 > [!TIP]
-> Per la maggior parte delle applicazioni di business, è consigliabile utilizzare un valore similarità di 60-75%. Per i materiali, il riconoscimento ottico caratteri (OCR) molto scarso di qualità inferiore similarità valori possono essere applicati. 
+> Per la maggior parte delle applicazioni aziendali, è consigliabile utilizzare un valore di somiglianza pari a 60%-75%. Per il materiale OCR (Optical Character Recognition) di qualità molto scadente, è possibile applicare valori di similitudine inferiori. 
   
 > [!NOTE]
-> Dopo che è impostata e l'esecuzione di un determinato case, il valore similarità non può essere modificato. 
+> Dopo che è stato impostato ed eseguito per un determinato caso, il valore di somiglianza non può essere modificato. 
   
-All'interno di un set di duplicati Near (ND), potrebbe essere documenti con un livello di somiglianza di sotto della soglia similarità. Per un documento a un set di ND, deve essere presente almeno un documento in ND impostare con un livello di somiglianza che superano la similarità. 
+All'interno di un insieme quasi duplicato, possono essere presenti documenti con un livello di somiglianza inferiore alla soglia di somiglianza. Affinché un documento venga unito a un set ND, è necessario che sia presente almeno un documento nel set ND con un livello di somiglianza superiore alla somiglianza. 
   
-Si supponga ad esempio la similarità è impostata su 80%, documento F1 analogo al documento F2 a livello di 85% e documenti F2 utilizza il formato documento F3 a livello del 90%. 
+Si supponga, ad esempio, che la somiglianza sia impostata su 80%, che Document F1 sia simile al documento F2 al livello 85% e che il documento F2 sia analogo al documento F3 al livello del 90%. 
   
-Tuttavia, documento F1 potrebbe essere simile documento F3 a livello di solo il 70%, di sotto della soglia. Tuttavia, in questo esempio i documenti F1, F2 e F3 uno ND vengono visualizzati tutti impostati. Analogamente, utilizzando un valore similarità 80%, si può avere creato due set, EquiSet-1 e 2 EquiSet. EquiSet 1 contiene documenti E1 ed E2. Equiset 2 contiene documenti F1, F2 e F3. 
+Tuttavia, il documento F1 può essere simile a quello F3 al livello di soli 70%, che è al di sotto della soglia. Tuttavia, in questo esempio, i documenti F1, F2 e F3 vengono visualizzati tutti nel set ND. Analogamente, se si utilizza un valore di somiglianza pari a 80%, è possibile che siano stati creati due insiemi, EquiSet-1 e EquiSet-2. EquiSet-1 contiene i documenti E1 ed E2. Equiset-2 contiene i documenti F1, F2 e F3. 
   
-Come indicato di seguito sono illustrati i livelli di somiglianza:
+I livelli di somiglianza sono illustrati nel modo seguente:
   
 ![Somiglianza documento](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-Si presuppone che un altro documento, X1, viene inserito. Somiglianza tra X1 ed E3 è 87%. Analogamente, la somiglianza tra X1 e F1 è 92%. Di conseguenza, EquiSet -1, EquiSet -2 e X1 sono stati unificati nello un ND set.
+Si supponga che un altro documento, x1, sia stato inserito. La somiglianza tra x1 e E3 è 87%. Analogamente, la somiglianza tra x1 e F1 è 92%. Di conseguenza, EquiSet-1, EquiSet-2 e X1 vengono ora combinati in un solo set ND.
   
 ![Somiglianza documento](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
-> Se i due documenti vengono assegnate a un gruppo ND, rimangono contemporaneamente nello stesso set di ND, anche se altri documenti vengono aggiunte all'insieme o se gli insiemi vengono uniti. 
+> Se i due documenti vengono assegnati a un set ND, rimarranno insieme nello stesso set ND, anche se sono stati aggiunti altri documenti al set o se i set sono Stati Uniti. 
   
-Dopo l'unione di insiemi, è possibile modificare il documento Pivot quando vengono aggiunti nuovi documenti a un set di. 
+Dopo la fusione dei set, il documento pivot può variare quando vengono aggiunti nuovi documenti a un set. 
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -60,7 +60,7 @@ Dopo l'unione di insiemi, è possibile modificare il documento Pivot quando veng
   
 [Impostazione Ignora testo](set-ignore-text-in-advanced-ediscovery.md)
   
-[Impostazioni avanzate di analisi di impostazione](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Impostazione analisi impostazioni avanzate](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Visualizzazione dei risultati di analisi](view-analyze-results-in-advanced-ediscovery.md)
+[Visualizzazione dei risultati dell'analisi](view-analyze-results-in-advanced-ediscovery.md)
 

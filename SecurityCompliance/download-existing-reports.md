@@ -1,48 +1,48 @@
 ---
-title: Scarica report esistenti nella protezione &amp; centro conformità
+title: Scaricare i report esistenti nel centro &amp; sicurezza e conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: Informazioni su come scaricare uno o più report esistenti nella protezione &amp; centro conformità.
-ms.openlocfilehash: b4231a29fd9c3282bd36bed6197f811de36de092
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Informazioni su come scaricare uno o più report esistenti nel centro sicurezza &amp; e conformità.
+ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014838"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219126"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Scarica report esistenti nella protezione &amp; centro conformità
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Scaricare i report esistenti nel centro &amp; sicurezza e conformità
 
-Nella [protezione &amp; centro conformità](https://protection.office.com), sono disponibili per assistere i team di protezione dell'organizzazione ad attenuare il rischio e dell'organizzazione da minacce diversi [report e sui concetti](reports-and-insights-in-security-and-compliance.md) . Se si è un membro del team di protezione dell'organizzazione, è possibile scaricare uno o più rapporti esistenti. 
+Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono disponibili diversi [report e](reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione. Se si è membri del team di sicurezza dell'organizzazione, è possibile scaricare uno o più report esistenti. 
   
 ## <a name="download-existing-reports"></a>Scaricare i report esistenti
 
 > [!IMPORTANT]
-> Verificare di disporre i necessari [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, security administrators e lettori protezione possono accedere ai rapporti in sicurezza &amp; centro conformità. 
+> Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
   
-1. Nella [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **rapporti per il download**.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **** \> report report **per il download**.
     
 2. Selezionare uno o più elementi nell'elenco.
     
-3. Fare clic su **Scarica report**e quindi fare clic su **Chiudi**.
+3. Fare clic su **download report**e quindi su **Chiudi**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Creare una pianificazione per un report nella protezione &amp; centro conformità](create-a-schedule-for-a-report.md)
+[Creare una pianificazione per un report nel centro sicurezza &amp; e conformità](create-a-schedule-for-a-report.md)
   
-[Gestisce le pianificazioni per i rapporti di sicurezza &amp; centro conformità](manage-schedules-for-multiple-reports.md)
+[Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità](manage-schedules-for-multiple-reports.md)
   
-[Scaricare un report personalizzato per la protezione &amp; centro conformità](set-up-and-download-a-custom-report.md)
+[Scaricare un report personalizzato nel centro sicurezza &amp; e conformità](set-up-and-download-a-custom-report.md)
   
 

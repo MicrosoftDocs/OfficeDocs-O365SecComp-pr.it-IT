@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
-description: Informazioni su come è possibile spostare da un rapporto dettagliato per delle conoscenze con le azioni consigliate per la protezione &amp; centro conformità.
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Informazioni su come passare da un report dettagliato a un'intuizione con azioni consigliate nel centro &amp; sicurezza e conformità.
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014978"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219086"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procedura: da un report dettagliato alle informazioni dettagliate
 
-Se non si conosce [report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md), possono essere utili per visualizzare come è possibile passare da un rapporto dettagliato per delle conoscenze e azioni consigliate. 
+Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da un report dettagliato a un'intuizione e alle azioni consigliate. 
   
-Questa è una delle diverse procedure dettagliate per la sicurezza &amp; centro conformità. Per visualizzare altre procedure dettagliate, vedere la sezione [su argomenti correlati](#related-topics) . 
+Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza e conformità. Per visualizzare ulteriori procedure dettagliate, vedere la sezione [argomenti correlati](#related-topics) . 
   
-## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Procedura dettagliata: da un rapporto dettagliato per delle conoscenze
+## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Procedura dettagliata: da un report dettagliato a un'intuizione
 
-Verrà ora esaminato il flusso da un rapporto dettagliato per delle conoscenze e azioni. (Questo è un esempio di [protezione da posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md) breve). 
+Let ' s walk through the flow from a dettagliato report to a Insight and actions. (Si tratta di un breve esempio di protezione da [posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Innanzitutto con [protezione &amp; centro conformità](https://protection.office.com) report. (Accedere ai **rapporti** \> **Dashboard**.)<br/>![In sicurezza &amp; centro conformità, passare a report \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Iniziamo con i report del [Centro sicurezza &amp; e conformità](https://protection.office.com) . (Andare al **** \> **Dashboard**di report).<br/>![Nel centro sicurezza &amp; e conformità, andare al dashboard \> dei report](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. È scegliere un report per ottenere informazioni più dettagliate. (Scegliere un report, ad esempio il rapporto di **Stato di protezione di rischio** ).<br/>![Rapporto di stato di protezione rischio con insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. È possibile scegliere un report per ottenere una visualizzazione più dettagliata. Scegliere un report, ad esempio il rapporto **sullo stato di protezione dalle minacce** .<br/>![Rapporto sullo stato di protezione dalle minacce che mostra informazioni dettagliate](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
-3. Ci si un indicatore sui concetti del grafico e di sotto del rapporto. Posizionare il puntatore del mouse su indicatore informativa offre informazioni aggiuntive. (Al passaggio del mouse su indicatore sui concetti di visualizzare dettagli aggiuntivi relativi al.)
+3. Viene visualizzato un indicatore Insights nel grafico e al di sotto del rapporto. Se si posiziona il puntatore del mouse sul marcatore Insights, vengono forniti alcuni dettagli aggiuntivi. Passare il puntatore del mouse sul marcatore Insights per visualizzare ulteriori dettagli.
     
-4. Fare clic su indicatore informativa nel grafico o widget sui concetti relativi a malware sotto il grafico viene aperto un riquadro dei dettagli. (Sotto il grafico, selezionare widget informativa).<br/>![Dettagli per sui concetti relativi a malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Riquadro dei dettagli vengono fornite informazioni e suggerimenti da prendere in considerazione, tra cui esaminare i criteri, condurre ulteriormente nell'esplorazione e lo stato di modifica. ([Ulteriori informazioni su protezione antispam e antimalware in Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Se si fa clic sul marcatore Insights nel grafico o nel widget Insights about malware al di sotto del grafico, verrà aperto un riquadro dei dettagli. (Al di sotto del grafico, selezionare il widget Insights).<br/>![Dettagli per informazioni dettagliate su malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Nel riquadro dei dettagli vengono fornite informazioni e consigli da prendere in considerazione, tra cui la revisione di criteri, l'esecuzione di ulteriori esplorazioni e lo stato di modifica. Per[ulteriori informazioni sulla protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md).
     
-In questo modo, è possibile spostare da un rapporto dettagliato a delle conoscenze e azioni consigliate. 
+In questo modo, è possibile passare da un report dettagliato a un'intuizione e alle azioni consigliate. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Procedura dettagliata: da delle conoscenze per un rapporto dettagliato](from-an-insight-to-a-detailed-report.md)
+[Procedura dettagliata: da un'intuizione a un report dettagliato](from-an-insight-to-a-detailed-report.md)
   
-[Procedura dettagliata: da un dashboard in delle conoscenze](from-a-dashboard-to-an-insight.md)
+[Procedura dettagliata: da un dashboard a un'intuizione](from-a-dashboard-to-an-insight.md)
   
 

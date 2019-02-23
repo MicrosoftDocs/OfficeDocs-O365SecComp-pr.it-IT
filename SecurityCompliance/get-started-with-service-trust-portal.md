@@ -3,31 +3,30 @@ title: Introduzione a Microsoft Service Trust Portal
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Per i rapporti di conformità alle normative Office 365, Azure e Dynamics 365 Online, per visualizzare i controlli di terze parti, scoprire come Microsoft consente di mantenere i dati dei clienti sicuri e come può essere compatibile con ISO, HIPAA, NIST, FINRA, PILR e FedRAMP quando si utilizzano questi servizi in linea.
-ms.openlocfilehash: 0eb2281307812a7c190eda734c8a462a15d81ce9
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
+ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29786323"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220256"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
-Il portale di attendibilità del servizio Microsoft offre diversi di contenuto, strumenti e altre risorse sulle procedure di sicurezza, privacy e la conformità di Microsoft.
+Microsoft Service Trust Portal offre una vasta gamma di contenuti, strumenti e altre risorse relative alle procedure di sicurezza, privacy e conformità di Microsoft.
   
-## <a name="accessing-the-service-trust-portal"></a>L'accesso al portale di protezione di servizi
+## <a name="accessing-the-service-trust-portal"></a>Accesso al Service Trust Portal
 
-Il portale di servizi attendibile contiene informazioni dettagliate sull'implementazione Microsoft di controlli e i processi di protezione al suo interno dei servizi cloud e i dati dei clienti. Per accedere ad alcune delle risorse nel portale di attendibilità del servizio, è necessario accedere come utente autenticato con account dei servizi cloud Microsoft (un account di Azure Active Directory dell'organizzazione o un Account Microsoft) e leggere e accettare il Microsoft Accordo di riservatezza per materiale per la conformità.
+Il Service Trust Portal contiene informazioni dettagliate sull'implementazione di controlli e processi di Microsoft che proteggono i servizi cloud e i dati dei clienti in esso contenuti. Per accedere ad alcune delle risorse nel Service Trust Portal, è necessario eseguire l'accesso come utente autenticato con l'account di Microsoft Cloud Services (un account dell'organizzazione di Azure Active Directory o un account Microsoft) ed esaminare e accettare Microsoft Contratto di non divulgazione per i materiali di conformità.
   
-**I clienti esistenti possono accedere al portale di servizi attendibile** in [https://aka.ms/STP](https://aka.ms/STP) con uno dei seguenti sottoscrizioni online (versione di valutazione o pagamento): 
+I **clienti esistenti possono accedere al Service Trust Portal** [https://aka.ms/STP](https://aka.ms/STP) con una delle sottoscrizioni online seguenti (Trial or paid): 
   
 - Office 365
 
@@ -36,137 +35,137 @@ Il portale di servizi attendibile contiene informazioni dettagliate sull'impleme
 - Azure
     
  > [!NOTE]
- > Azure degli account di Active Directory associati alle organizzazioni hanno accesso per l'intera gamma di funzionalità come responsabile della conformità e documenti. Account Microsoft creati per utilizzo personale dispone di accesso al contenuto del portale di servizi attendibile limitate. 
+ > Gli account di Azure Active Directory associati alle organizzazioni dispongono dell'accesso all'intera gamma di documenti e funzionalità, come Compliance Manager. Gli account Microsoft creati per uso personale hanno accesso limitato al contenuto del portale del servizio di attendibilità dei servizi. 
   
-**Nuovi clienti e i clienti che valutano Microsoft online services**
+**Nuovi clienti e clienti che valutano i Microsoft Online Services**
   
-Per creare un nuovo account o per creare un account di prova, utilizzare uno dei formati seguenti per l'abbonamento (utilizzati anche per gli account di prova) per ottenere l'accesso per il STP.
+Per creare un nuovo account o creare un account di valutazione, utilizzare uno dei seguenti moduli di iscrizione (utilizzati anche per gli account di valutazione) per accedere all'STP.
   
-- Esegui l'iscrizione per un nuovo [account di prova Office 365 Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o un nuovo [account di valutazione di Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Iscriversi a un nuovo [account di valutazione aziendale di office 365](https://go.microsoft.com/fwlink/p/?LinkID=507653) o a un nuovo [account di valutazione di Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-- Esegui l'iscrizione per un nuovo [account di prova Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
+- Iscriversi a un nuovo [account di valutazione di Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- Esegui l'iscrizione per un nuovo [account di prova Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
+- Iscriversi a un nuovo [account di valutazione di Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
     
-Durante la registrazione per una versione di valutazione gratuita o una sottoscrizione, è necessario attivare Azure Active Directory supportare l'accesso al STP.
+Quando si esegue l'iscrizione a una versione di valutazione gratuita o a un abbonamento, è necessario abilitare Azure Active Directory per supportare l'accesso all'STP.
   
-## <a name="using-the-service-trust-portal"></a>Tramite il portale di servizi di protezione
+## <a name="using-the-service-trust-portal"></a>Utilizzo del Service Trust Portal
 
-Il contenuto e caratteristiche di servizio attendibile portale sono accessibili dal menu principale.
+Le funzionalità e il contenuto del portale di attendibilità del servizio sono accessibili dal menu principale.
   
-![Menu di portale di servizi attendibile](media/STPMenus1.png)
+![Menu Service Trust Portal](media/STPMenus1.png)
 
-Nelle sezioni seguenti viene descritto ogni voce del menu principale.
+Nelle sezioni seguenti viene descritto ogni elemento del menu principale.
   
 ### <a name="service-trust-portal"></a>Service Trust Portal
 
-Il collegamento **Portale di servizi di protezione** Visualizza home page. Fornisce un modo rapido per tornare alla home page.
+Il collegamento **Service Trust Portal** Visualizza la Home page. Fornisce un modo rapido per tornare alla Home page.
 
 ### <a name="compliance"></a>Conformità
 
-Include i seguenti strumenti di conformità e le risorse:
+Fornisce gli strumenti e le risorse correlati alla conformità seguenti:
 
-- **Rapporti di controllo** - un elenco dei report di controllo e la valutazione indipendente sui servizi Cloud Microsoft viene visualizzata. Questi rapporti forniscono informazioni sulla conformità servizi Cloud Microsoft con standard di protezione dei dati e i requisiti normativi, ad esempio:
+- **Rapporti di controllo** : viene visualizzato un elenco dei rapporti di verifica e valutazione indipendenti sui servizi cloud di Microsoft. Questi rapporti forniscono informazioni sui servizi cloud Microsoft rispetto agli standard di protezione dei dati e ai requisiti normativi, ad esempio:
   
-    - International Organization for Standardization (ISO)
-    - Servizio organizzazione controlli (SOC)
-    - National Institute of Standards and Technology (NIST)
-    - Rischio Federal e programma di gestione delle autorizzazioni (FedRAMP)
-    - Protezione dati generali nella regolazione (PILR)
+    - Organizzazione internazionale per la standardizzazione (ISO)
+    - Controlli organizzazione del servizio (SOC)
+    - Istituto nazionale di Standards and Technology (NIST)
+    - Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
+    - Regolamento generale sulla protezione dei dati (GDPR)
 
-  Informazioni sui report di controllo e un collegamento alla pagina di **report di controllo** viene visualizzate anche nella home page di portale di servizi attendibile. 
+  Le informazioni sui rapporti di controllo e un collegamento alla pagina dei **rapporti di controllo** vengono visualizzate anche nella Home page del portale del servizio di attendibilItà dei servizi. 
   
-- **Responsabile della conformità** - responsabile della conformità è uno strumento di valutazione dei rischi basata su flusso di lavoro che consente di tenere traccia, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi Cloud Microsoft, ad esempio Office 365, Dynamics 365, e Azure. Gestione conformità consente di gestire la conformità alle normative all'interno del modello di responsabilità condivisa del cloud. Per ulteriori informazioni, vedere [Utilizzare Gestione conformità per soddisfare i requisiti normativi quando si utilizzano servizi cloud Microsoft e la protezione dei dati](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Compliance** Manager-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Office 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. Per ulteriori informazioni, vedere [utilizzare Compliance Manager per soddisfare i requisiti normativi e di protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
-### <a name="industries--regions"></a>Settori & aree
+### <a name="industries--regions"></a>Aree di & Industries
 
-Vengono fornite informazioni di conformità di settore e specifiche sui servizi Cloud Microsoft.
+Fornisce informazioni di conformità specifiche per l'industria e le aree geografiche sui servizi cloud Microsoft.
 
-- **Settori** - offre pagine di destinazione specifici del settore per informazioni e su come servizi Cloud Microsoft agevolare l'organizzazione sia conforme agli standard e le regole per questi settori:
+- **Industries** -fornisce pagine di destinazione specifiche del settore per informazioni e su come i servizi cloud di Microsoft aiutano l'organizzazione a essere conformi agli standard e alle normative per queste industrie:
 
     - Istruzione
     - Servizi finanziari
-    - Government
+    - Governo
     - Stato attività
     - Produzione
     - Dettaglio
 
-- **Aree** - fornisce opinioni legale in conformità servizi Cloud Microsoft con diverse leggi di diversi paesi. Determinati paesi includono Australia, Repubblica ceca, Germania, Polonia, Romania, Spagna e nel Regno Unito.
+- **Regions** -fornisce pareri legali su Microsoft Cloud Services conformità con varie leggi di vari paesi. Alcuni paesi sono Australia, Repubblica Ceca, Germania, Polonia, Romania, Spagna e Regno Unito.
   
-### <a name="documents--resources"></a>Documenti & risorse
+### <a name="documents--resources"></a>Documenti risorse di &
 
-Offre un'ampia gamma di implementazione della protezione e le informazioni di progettazione con lo scopo di facilitare soddisfare gli obiettivi di conformità alle normative per informazioni su come servizi Cloud Microsoft proteggere i dati. Per esaminare il contenuto, selezionare una delle opzioni nella pagina **documenti & risorse** .
+Offre una vasta gamma di informazioni sulla progettazione e l'implementazione della sicurezza con l'obiettivo di rendere più facile soddisfare gli obiettivi di conformità normativa mediante la comprensione del modo in cui i servizi cloud di Microsoft consentono di proteggere i dati. Per esaminare il contenuto, selezionare una delle opzioni nella pagina **documenti risorse &** .
 
-- White paper, domande frequenti e to articoli di procedure
-- Guide di conformità
-- Test della penna e valutazioni di sicurezza
-- Punteggio protetto
-- Linee guida per la conformità e sicurezza di Azure
+- White paper, domande frequenti e How-to-articles
+- Guide per la conformità
+- Test di penna e valutazioni di sicurezza
+- Punteggio sicuro
+- Cianografie di sicurezza e conformità di Azure
 - Controlli controllati
   
 ### <a name="trust-center"></a>Centro protezione
 
-Collegamenti a [Centro protezione di Microsoft](https://www.microsoft.com/trustcenter), che fornisce ulteriori informazioni sulla sicurezza, la conformità e sulla privacy di Microsoft Cloud. Sono incluse le informazioni sulle funzionalità di servizi Cloud Microsoft che è possibile utilizzare per soddisfare i requisiti specifici di PILR, documentazione utile per la responsabilità PILR e per la comprensione di misure tecniche e dell'organizzazione Microsoft ha preso per supportare il PILR.
+Collegamenti al [Centro protezione Microsoft](https://www.microsoft.com/trustcenter), in cui sono disponibili ulteriori informazioni sulla sicurezza, la conformità e la privacy nel cloud Microsoft. Sono incluse informazioni sulle funzionalità dei servizi cloud di Microsoft che è possibile utilizzare per soddisfare i requisiti specifici di GDPR, la documentazione utile per la propria responsabilità GDPR e la comprensione delle misure tecniche e organizzative. Microsoft ha acquisito il supporto di GDPR.
   
-### <a name="my-library"></a>Multimediale
+### <a name="my-library"></a>Raccolta personale
 
-In questo nuovo consente di caratteristica che salvataggio (o il *pin*) i documenti in modo che è possibile accedere rapidamente nella pagina raccolta personale. È inoltre possibile impostare le notifiche in modo che Microsoft riceve un messaggio di posta elettronica quando vengono aggiornati i documenti nella libreria personali. Per ulteriori informazioni, vedere la sezione [My Library](#my-library-1) in questo articolo.
+Questa nuova funzionalità consente di salvare (o *aggiungere*) i documenti in modo che sia possibile accedervi rapidamente nella pagina raccolta personale. È inoltre possibile configurare le notifiche in modo che Microsoft invii un messaggio di posta elettronica quando i documenti nella raccolta personale vengono aggiornati. Per ulteriori informazioni, vedere la sezione [My Library](#my-library-1) in questo articolo.
 
 ### <a name="admin"></a>Amministratore
 
-Funzioni di amministrazione che sono disponibili solo per l'account amministratore globale. Questa opzione è visibile solo quando è stato effettuato l'accesso come amministratore globale.
+Funzioni amministrative disponibili solo per l'account di amministratore globale. Questa opzione è visibile solo quando l'utente ha eseguito l'accesso come amministratore globale.
   
- La pagina **Impostazioni** consente di assegnare l'accesso basato sui ruoli a Gestione conformità. Per ulteriori informazioni, vedere la sezione "Autorizzazioni e controllo di accesso basato sui ruoli" in [Gestione conformità di utilizzo per soddisfare i requisiti normativi quando si utilizzano servizi cloud Microsoft e la protezione dei dati](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
+ La pagina **Impostazioni** consente di assegnare l'accesso basato sui ruoli a Compliance Manager. Per ulteriori informazioni, vedere la sezione "autorizzazioni e controllo di accesso basato sui ruoli" in [use Compliance Manager per soddisfare i requisiti normativi e di protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
 ### <a name="search"></a>Cerca
 
-Fare clic su lente di ingrandimento nell'angolo superiore destro della pagina Service Portal Trust per espandere la finestra di dialogo, immettere i termini di ricerca e premere **INVIO**.
+Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina Service Trust Portal per espandere la casella, immettere i termini di ricerca e premere **invio**.
 
 ![Service Trust Portal - Campo di inserimento della ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
- Verrà visualizzata la pagina di **ricerca** , con il termine di ricerca visualizzato nella casella di ricerca e i risultati della ricerca elencati di seguito.
+ Viene **** visualizzata la pagina di ricerca, con il termine di ricerca visualizzato nella casella di ricerca e i risultati di ricerca riportati di seguito.
   
 ![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Per impostazione predefinita, ricerca restituisce risultati documento. È possibile i risultati utilizzando gli elenchi a discesa per definire l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. Filtri includono i servizi cloud specifico, categorie di conformità o sicurezza consigliate, aree e settori. Fare clic sul collegamento di nome documento per scaricare il documento.
+Per impostazione predefinita, la ricerca restituisce i risultati dei documenti. È possibile utilizzare gli elenchi a discesa per affinare l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. I filtri includono i servizi cloud specifici, le categorie di conformità o le procedure di sicurezza, le aree geografiche e le industrie. Fare clic sul collegamento nome documento per scaricare il documento.
   
-All'elenco dei controlli da valutazioni in Gestione conformità correlato i termini di ricerca, fare clic su **Gestione conformità**. I risultati della ricerca Mostra la data è stata creata la valutazione, il nome della valutazione di raggruppamento, il servizio Microsoft Cloud applicabile, e se il controllo è Microsoft o cliente gestiti. Fare clic sul nome del controllo per visualizzare il controllo di valutazione di responsabile della conformità.
+Per elencare i controlli dalle valutazioni in Compliance Manager correlate ai termini di ricerca, fare clic su **Compliance Manager**. I risultati della ricerca mostrano la data in cui è stata creata la valutazione, il nome del gruppo di valutazione, il servizio cloud Microsoft applicabile e se il controllo è Microsoft o gestito dal cliente. Fare clic sul nome del controllo per visualizzare il controllo nella valutazione in Compliance Manager.
   
 ![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Portale di servizi attendibile report e i documenti sono disponibili per il download per almeno 12 mesi dopo la pubblicazione o fino a quando non diventa disponibile una nuova versione del documento.
+> I report e i documenti del portale di attendibilità del servizio sono disponibili per il download da almeno 12 mesi dopo la pubblicazione o fino a quando non diventa disponibile una nuova versione del documento.
   
-## <a name="my-library"></a>Multimediale
+## <a name="my-library"></a>Raccolta personale
 
-Utilizzare la funzionalità My Library per aggiungere documenti e le risorse nel portale di attendibilità del servizio alla pagina My Library. Ciò consente di accedere a documenti rilevanti per l'utente in un'unica posizione.  Per aggiungere un documento alla raccolta personale, fare clic sul menu **...** a destra di un documento e quindi scegliere **Aggiungi a raccolta**. È possibile aggiungere più documenti alla raccolta personali facendo clic sulla casella di controllo accanto a uno o più documenti e quindi fare clic su **Salva in Raccolta** nella parte superiore della pagina.
+Utilizzare la funzionalità raccolta personale per aggiungere documenti e risorse nel Service Trust Portal alla pagina raccolta personale. In questo modo è possibile accedere ai documenti rilevanti in un'unica posizione.  Per aggiungere un documento alla raccolta personale, fare clic sul menu **...** a destra di un documento e quindi selezionare **Aggiungi a raccolta**. È possibile aggiungere più documenti alla raccolta personale facendo clic sulla casella di controllo accanto a uno o più documenti e quindi facendo clic su **Salva in raccolta** nella parte superiore della pagina.
 
-La caratteristica delle notifiche consente inoltre di configurare la raccolta risorse in modo che verrà inviato un messaggio di posta elettronica a un utente ogni volta che un documento che si è aggiunti alla raccolta personale in cui Microsoft aggiorna. Per configurare le notifiche, passare alla raccolta personale e fare clic su **Impostazioni di notifica**. È possibile scegliere la frequenza delle notifiche e specificare un indirizzo di posta elettronica all'interno dell'organizzazione a cui inviare notifiche. Notifiche tramite posta elettronica includono collegamenti a documenti in cui sono stati aggiornati e una breve descrizione dell'aggiornamento.
+Inoltre, la caratteristica notifiche consente di configurare la raccolta personale in modo che un messaggio di posta elettronica venga inviato all'utente ogni volta che Microsoft aggiorna un documento che è stato aggiunto alla raccolta personale. Per configurare le notifiche, passare alla raccolta personale e fare clic su **impostazioni di notifica**. È possibile scegliere la frequenza delle notifiche e specificare un indirizzo di posta elettronica all'interno dell'organizzazione a cui inviare le notifiche. Le notifiche tramite posta elettronica includono collegamenti ai documenti che sono stati aggiornati e una breve descrizione dell'aggiornamento.
 
-Si noti inoltre che è identificare tutti i documenti nella libreria personali che sono stati aggiornati negli ultimi 30 giorni, indipendentemente dal fatto che si accende notifiche. Una breve descrizione dell'aggiornamento viene visualizzata anche nella descrizione comando. 
+Si noti inoltre che sono stati identificati tutti i documenti nella raccolta personale che sono stati aggiornati negli ultimi 30 giorni, indipendentemente dal fatto che si attivano o meno le notifiche. Una breve descrizione dell'aggiornamento viene visualizzata anche in un suggerimento per gli strumenti. 
 
 ## <a name="starter-packs"></a>Starter Pack
 
-Starter Pack sono un insieme curated Microsoft della documentazione sui servizi Cloud Microsoft per settori specifici. Attualmente, il portale di servizi attendibile offre le seguenti tre starter Pack per le organizzazioni di servizi finanziari. Questi Pack starter consentono alle organizzazioni di valutare e valutare la sicurezza, la conformità e sulla privacy di Microsoft Cloud e vengono fornite informazioni che consentono di implementare i servizi Cloud Microsoft il settore altamente regolamentato servizi finanziari.
+Gli Starter Pack sono un insieme di documentazione a cura di Microsoft sui servizi cloud Microsoft per industrie specifiche. Attualmente, il Service Trust Portal offre i tre Starter Pack seguenti per le organizzazioni di servizi finanziari. Questi Starter Pack aiutano le organizzazioni a valutare e valutare la sicurezza, la conformità e la privacy nel cloud Microsoft e a fornire indicazioni utili per implementare i servizi cloud Microsoft nel settore dei servizi finanziari altamente regolamentato.
 
-- **Valutazione Starter pacchetto** - utilizza per la prima versione di valutazione di Microsoft cloud per le organizzazioni di servizi finanziari.
+- **Evaluation Starter Pack** -utilizzare per la valutazione precoce delle organizzazioni di Microsoft Cloud per i servizi finanziari.
 
-- **Valutazione Starter Pack** - dopo la valutazione, utilizzare gli elenchi di controllo e altre informazioni di questo pacchetto per consentire alle organizzazioni di valutare i rischi correlati alla sicurezza, la conformità e della privacy.
+- **Assessment Starter Pack** -dopo la valutazione, utilizzare gli elenchi di controllo e altre linee guida di questo Starter Pack per aiutare l'organizzazione a valutare i rischi legati alla sicurezza, alla conformità e alla privacy.
 
-- **Controllo Starter Pack** - utente questo pacchetto per istruzioni sull'utilizzo di controlli controllo e altri strumenti per guidare l'implementazione di Microsoft Cloud services in modo che consente di ridurre l'esposizione dell'organizzazione a rischi.
+- **Audit Starter Pack** -User this Starter Pack per informazioni sull'utilizzo dei controlli di controllo e di altro strumento che consentono di guidare l'implementazione di Microsoft Cloud Services in modo da ridurre l'esposizione ai rischi dell'organizzazione.
 
-Per accedere a questi Pack starter, passare al **portale di servizi di attendibilità gt _ settori & aree gt _ soluzioni settore gt _ servizi finanziari**. È possibile aprire o un download di documenti da un starter pack o salvarli alla raccolta personale.
+Per accedere a questi Starter Pack, accedere a **Service Trust Portal _GT_ Industries _AMP_ Regions _GT_ Industry Solutions _GT_ Financial Services**. È possibile aprire o scaricare documenti da un pacchetto di avvio o salvarli nella raccolta personale.
 
 ## <a name="localization-support"></a>Supporto alla localizzazione
 
-Il portale di servizi attendibile consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, fare clic sull'icona a forma di globo nell'angolo inferiore sinistro della pagina e selezionare la lingua di propria scelta. 
+Il Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, è sufficiente fare clic sull'icona Globe nell'angolo in basso a sinistra della pagina e selezionare la lingua desiderata. 
   
 ![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Commenti e suggerimenti
 
-Possiamo aiutarti con domande su portale di servizi di protezione o errori che si verificano quando si utilizza il portale. È inoltre possibile Contattaci con domande e commenti e suggerimenti sui rapporti di conformità Service Portal Trust e relazione di trust risorse utilizzando il collegamento di commenti e suggerimenti nella parte inferiore delle pagine STP.
+È possibile ottenere ulteriori informazioni sul Service Trust Portal oppure sugli errori che si verificano quando si utilizza il portale. È inoltre possibile contattarci con domande e commenti e suggerimenti relativi ai report di conformità e alle risorse di attendibilità dei servizi attendibili utilizzando il collegamento commenti e suggerimenti nella parte inferiore delle pagine STP.
   
-Commenti e suggerimenti sono molto importante. Fare clic sul pulsante commenti e suggerimenti nella parte inferiore della pagina per inviare commenti suggerimenti sui quali è stato o non era soddisfatto o suggerimenti potrebbe essere per migliorare i prodotti o delle caratteristiche del prodotto.
+Il feedback è molto importante per noi. Fare clic sul pulsante feedback nella parte inferiore della pagina per inviarci commenti su cosa hai fatto o non ti piace, oppure suggerimenti per migliorare i prodotti o le caratteristiche del prodotto.
   
 ![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

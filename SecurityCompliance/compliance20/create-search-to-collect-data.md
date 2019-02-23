@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 09af09c4a538bb43fed5fce044eb1be60c235aaa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706137"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212646"
 ---
 # <a name="create-a-search-to-collect-data"></a>Creare una ricerca per raccogliere dati
 
-Nella scheda **ricerche** nel caso, è possibile creare una nuova ricerca facendo clic su **New search** e seguendo la procedura guidata.
+Nella scheda **ricerche** del caso, è possibile creare una nuova ricerca facendo clic su **nuova ricerca** e seguendo la procedura guidata.
 
-## <a name="name-your-search-and-give-description"></a>Nome della ricerca e fornire descrizione
+## <a name="name-your-search-and-give-description"></a>DeNominare la ricerca e fornire una descrizione
 
-Ogni ricerca con un caso deve avere un nome univoco. È facoltativamente possibile fornire una descrizione per la ricerca. 
+Ogni ricerca con un caso deve avere un nome univoco. Facoltativamente, è possibile fornire una descrizione per la ricerca. 
 
-## <a name="define-your-conditions"></a>Definire le condizioni
+## <a name="define-your-conditions"></a>Definire le proprie condizioni
 
-È possibile definire le condizioni per la ricerca utilizzando le schede condizione preesistente o utilizzando Keyword Query Language (KQL). Per ulteriori informazioni, vedere [creare query di ricerca](building-search-queries.md).
+È possibile definire le condizioni per la ricerca utilizzando le schede delle condizioni predefinite o utilizzando KQL (Keyword Query Language). Per ulteriori informazioni, vedere [creazione di query di ricerca](building-search-queries.md).
 
-## <a name="choose-the-custodians-to-search-from"></a>Scegliere depositari eseguire la ricerca
+## <a name="choose-the-custodians-to-search-from"></a>Scegliere i depositari da cui eseguire la ricerca
 
-Dopo aver definito le condizioni, è necessario scegliere quali percorsi da cercare. Per eseguire questa operazione è specificando quali depositari è già stato aggiunto al caso si desidera eseguire la ricerca. Selezionando un depositaria, si eseguirà la ricerca con tutte le origini dati mappate al depositaria. Per ulteriori informazioni su come aggiungere depositari al case e gestire le origini dati, vedere [Work with depositari](managing-custodians.md) .
+Dopo aver definito le condizioni, è necessario scegliere quali posizioni si desidera ricercare. Un modo per farlo è specificare quali depositari sono già stati aggiunti al caso in cui si desidera eseguire la ricerca. Selezionando un custode, verrà eseguita la ricerca in tutte le origini dati mappate al custode. Per ulteriori informazioni su come aggiungere depositari al caso e gestire le origini dati, vedere [collaborare con i depositari](managing-custodians.md) .
 
 ## <a name="choose-non-custodial-locations"></a>Scegliere le posizioni non detentive
 
-In alcuni casi, si desidera cercare nelle origini dati che non vengono mappate a un depositaria. In questo caso, è possibile specificare i percorsi che si desidera eseguire la ricerca o scegliere di cercare tutti i percorsi di contenuti per un servizio specifico di Office 365 (ad esempio ricerca SharePoint e OneDrive di tutte le cassette postali di Exchange o tutti i siti di Business).
+In alcuni casi, è possibile cercare le origini dati che non vengono mappate a un custode. In questo caso, è possibile specificare i percorsi che si desidera ricercare oppure scegliere di cercare tutti i percorsi di contenuto per uno specifico servizio di Office 365, ad esempio la ricerca in tutte le cassette postali di Exchange o in tutti i siti di SharePoint e OneDrive for business.

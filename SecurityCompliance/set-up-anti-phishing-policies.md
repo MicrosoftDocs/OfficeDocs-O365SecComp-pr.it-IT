@@ -6,16 +6,16 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: La protezione anti-phishing, con una protezione globale come parte di Office 365 Advanced Threat Protection e la protezione di base in Office 365 Exchange Online Protection, può contribuire a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing.
-ms.openlocfilehash: 94aa4ca6339ee0e0c250e96b9d8a499c83e964f7
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123967"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213706"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostare i criteri di anti-phishing e anti-phishing di Office 365 ATP
 

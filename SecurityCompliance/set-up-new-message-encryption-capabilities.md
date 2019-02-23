@@ -5,66 +5,66 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
-description: Nuovo Office 365 Message Encryption funzionalità basate sul Azure Information Protection dell'organizzazione possono utilizzare protetti comunicazioni di posta elettronica con persone interne o esterne all'organizzazione. Le nuove funzionalità OME funziona con altre organizzazioni di Office 365, Outlook.com, Gmail e altri servizi di posta elettronica.
-ms.openlocfilehash: a30054bf7b03a3e4fadf9a0e34537c682c10e217
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection, l'organizzazione può utilizzare le comunicazioni di posta elettronica protette con persone all'interno e all'esterno dell'organizzazione. Le nuove funzionalità OME sono compatibili con altre organizzazioni di Office 365, Outlook.com, Gmail e altri servizi di posta elettronica.
+ms.openlocfilehash: eddafca15fa4efdd3f929145e7933a3b7dfb5f27
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696250"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220646"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Office 365 Message Encryption
 
-Con le nuove funzionalità di Office 365 messaggio crittografia (OME), che utilizza la funzionalità di protezione in Azure Information Protection, l'organizzazione può condividere facilmente posta protetto con tutti gli utenti con qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Office 365, nonché i clienti non Office 365 che utilizzano Outlook.com, Gmail e altri servizi di posta elettronica.
+Con le nuove funzionalità di crittografia dei messaggi di Office 365, che sfruttano le funzionalità di protezione di Azure Information Protection, l'organizzazione può facilmente condividere la posta elettronica protetta con chiunque su qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Office 365, nonché clienti non di Office 365 che utilizzano Outlook.com, Gmail e altri servizi di posta elettronica.
 
 ||
 |:-----|
-|In questo articolo fa parte di una serie di dimensioni maggiore di articoli su Office 365 Message Encryption. In questo articolo è destinato agli amministratori e ai professionisti IT. Se si è appena per informazioni su inviare né ricevere un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 messaggio crittografia dei](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
+|Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
 ||
 
-## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Guida introduttiva a OME attivando Azure Rights Management, parte della protezione delle informazioni di Azure
+## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Informazioni introduttive su OME tramite l'attivazione di Azure Rights Management, parte di Azure Information Protection
 
-È ora più semplice acquisire familiarità con le nuove funzionalità OME. A partire da febbraio 2018, Office 365 attiva automaticamente le nuove funzionalità OME per le organizzazioni idonei entro i centri dati. L'organizzazione è idonea se si tratta di un nuovo tenant di Office 365 e l'organizzazione ha le sottoscrizioni appropriate. **Se è stata abilitata Azure Rights Management (RMS) Azure, parte di Azure Information Protection, quindi è attiva automaticamente Office 365 Message Encryption automaticamente.** Non è necessario eseguire alcuna operazione per abilitare OME. Per attivare Azure Rights Management, vedere [Attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Per informazioni sulle sottoscrizioni, vedere "le sottoscrizioni è necessario utilizzare il nuovo capabilities? OME" in [Domande frequenti su crittografia dei messaggi di Office 365](ome-faq.md). Per informazioni sull'acquisto di una sottoscrizione per la protezione delle informazioni di Azure, vedere [La protezione delle informazioni di Azure](https://azure.microsoft.com/services/information-protection/).
+È ora facile iniziare a utilizzare le nuove funzionalità OME. Dal febbraio 2018, Office 365 attiva automaticamente le nuove funzionalità OME per le organizzazioni idonee all'interno dei data center. L'organizzazione è idonea se si tratta di un nuovo tenant di Office 365 e l'organizzazione dispone delle sottoscrizioni appropriate. **Se è stata abilitaTa Azure Rights Management (Azure RMS), parte di Azure Information Protection, viene abilitata automaticamente la crittografia dei messaggi di Office 365.** Non è necessario eseguire altre operazione per abilitare OME. Per attivare Azure Rights Management, vedere [attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Per informazioni sulle sottoscrizioni, vedere "quali abbonamenti sono necessari per utilizzare il nuovo OME capabilities?" nelle [domande frequenti sulla crittografia dei messaggi di Office 365](ome-faq.md). Per informazioni sull'acquisto di una sottoscrizione a Azure Information Protection, vedere [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
   
-Se si utilizza Exchange Online con il servizio Active Directory Rights Management (AD RMS), sarà possibile abilitare queste nuove funzionalità immediatamente. In realtà, è necessario eseguire innanzitutto la migrazione da AD RMS per la protezione delle informazioni di Azure. Una volta completata la migrazione, è possibile eseguire correttamente la procedura seguente.
+Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario eseguire la migrazione da AD RMS a Azure Information Protection per primo. Dopo aver completato la migrazione, è possibile eseguire correttamente questa procedura.
   
-Se si sceglie di continuare a utilizzare locale AD RMS con Exchange Online anziché la migrazione per la protezione delle informazioni di Azure, non sarà in grado di utilizzare queste nuove funzionalità.
+Se si sceglie di continuare a utilizzare AD RMS locale con Exchange Online invece di eseguire la migrazione a Azure Information Protection, non sarà possibile utilizzare queste nuove funzionalità.
   
-## <a name="how-the-new-capabilities-for-ome-work"></a>Funzionamento delle nuove funzionalità per OME
+## <a name="how-the-new-capabilities-for-ome-work"></a>Come funzionano le nuove funzionalità di OME
 
-Le nuove funzionalità di Office 365 Message Encryption utilizzare funzionalità di protezione, denominata anche Azure Rights Management (RMS) Azure, dalla protezione delle informazioni di Azure. Sono inclusi i criteri di crittografia, identity e l'autorizzazione per proteggere la posta elettronica. È possibile crittografare i messaggi con i modelli di gestione dei diritti di utilizzo, l' [opzione non inoltrare](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)e l' [opzione solo crittografare](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails). Gli utenti possono quindi crittografare i messaggi di posta elettronica e un'ampia gamma di allegati di Office 365, utilizzando le opzioni. Per un elenco completo dei tipi di allegati supportati, vedere ["tipi di File a cui i criteri IRM quando sono allegate ai messaggi" in Introduzione a IRM per i messaggi di posta elettronica](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM). In qualità di amministratore, è inoltre possibile definire regole del flusso di posta elettronica per applicare la protezione. Ad esempio, è possibile definire una regola in tutti i messaggi non protetti che si basano a un destinatario specifico o contenenti parole specifiche nella riga dell'oggetto sono protetti dall'accesso non autorizzato, e i destinatari non possono copiare o stampare il contenuto del messaggio.
+Le nuove funzionalità di crittografia dei messaggi di Office 365 utilizzano le funzionalità di protezione, denominate anche Azure Rights Management (Azure RMS), da Azure Information Protection. Sono inclusi i criteri di crittografia, identità e autorizzazione che consentono di proteggere il messaggio di posta elettronica. È possibile crittografare i messaggi utilizzando i modelli Rights Management, l' [opzione](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)non inoltrare e l' [opzione solo crittografia](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails). Gli utenti possono quindi crittografare i messaggi di posta elettronica e una vasta gamma di allegati di Office 365 utilizzando queste opzioni. Per un elenco completo dei tipi di allegati supportati, vedere ["tipi di file coperti da criteri IRM quando sono allegati ai messaggi" in Introduzione a IRM per i messaggi di posta elettronica](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM). In qualità di amministratore, è anche possibile definire le regole del flusso di posta per applicare la protezione. Ad esempio, è possibile definire una regola in cui tutti i messaggi non protetti indirizzati a un destinatario specifico o che contengono parole specifiche nella riga dell'oggetto sono protetti da accessi non autorizzati e i destinatari non possono copiare o stampare il contenuto del messaggio.
   
-A differenza della versione precedente di OME, queste nuove funzionalità offrono un'esperienza unificata mittente se si invia posta all'interno dell'organizzazione o ai destinatari all'esterno di Office 365. Destinatari del messaggio di posta elettronica protetta inviati a un account di Office 365 2016 Outlook o Outlook sul web, inoltre, non è necessario eseguire alcuna azione aggiuntiva per visualizzare il messaggio. Funziona perfettamente. I destinatari utilizzando altri client di posta elettronica e provider di servizi di posta elettronica inoltre dispongono di un'esperienza migliorata. Per informazioni, vedere [informazioni sui messaggi protetti in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) e [come aprire un messaggio protetto](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
+A differenza della versione precedente di OME, queste nuove funzionalità forniscono un'esperienza di mittente unificata se si sta inviando posta all'interno dell'organizzazione o ai destinatari esterni a Office 365. Inoltre, i destinatari che ricevono un messaggio di posta elettronica protetto inviato a un account di Office 365 in Outlook 2016 o Outlook sul Web, non è necessario eseguire ulteriori operazioni per visualizzare il messaggio. Funziona perfettamente. Anche i destinatari che utilizzano client di posta elettronica e provider di servizi di posta elettronica dispongono di un'esperienza migliorata. Per informazioni, vedere [Learn about protected messages in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) e [come aprire un messaggio protetto](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
 
-Per un elenco dettagliato delle differenze tra le versioni precedenti di OME e le nuove funzionalità OME, vedere [confronto tra le versioni di OME](ome-version-comparison.md).
+Per un elenco dettagliato delle differenze tra la versione precedente di OME e le nuove funzionalità OME, vedere [compare versions of ome](ome-version-comparison.md).
   
-## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>Passaggi per impostare manualmente le nuove funzionalità per OME
+## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>Procedura per configurare manualmente le nuove funzionalità di OME
 
-Le nuove funzionalità OME vengono automaticamente abilitate per la maggior parte delle organizzazioni di Office 365. Se l'organizzazione non dispone automaticamente OME abilitata o se sono state attivate le nuove funzionalità OME disattivata, eseguire la procedura seguente per impostare manualmente le nuove funzionalità per OME.
+Le nuove funzionalità OME sono abilitate automaticamente per la maggior parte delle organizzazioni di Office 365. Se l'organizzazione non ha automaticamente abilitato OME, o se è stata attivata la nuova funzionalità OME, eseguire la procedura seguente per configurare manualmente le nuove funzionalità di OME.
   
-### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>Per impostare manualmente le nuove funzionalità per OME
+### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>Per impostare manualmente le nuove funzionalità di OME
 
-1. Verificare che la sottoscrizione appropriata per l'organizzazione. Per informazioni sulle sottoscrizioni, vedere "le sottoscrizioni è necessario utilizzare il nuovo capabilities? OME" nel [domande frequenti su crittografia dei messaggi di Office 365.](ome-faq.md). Per informazioni sull'acquisto di una sottoscrizione per la protezione delle informazioni di Azure, vedere [La protezione delle informazioni di Azure](https://azure.microsoft.com/services/information-protection/).
+1. Verificare di disporre dell'abbonamento appropriato per la propria organizzazione. Per informazioni sulle sottoscrizioni, vedere "quali abbonamenti sono necessari per utilizzare il nuovo OME capabilities?" nelle [domande frequenti sulla crittografia dei messaggi di Office 365.](ome-faq.md) Per informazioni sull'acquisto di una sottoscrizione a Azure Information Protection, vedere [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
 
-2. Decidere se Microsoft per gestire la chiave principale per la protezione delle informazioni di Azure (predefinito), o generare e gestire questa chiave familiarità (noto come portare in primo piano personalizzati chiave o BYOK). Se si desidera generare e la gestione di questa chiave manualmente, è necessario eseguire alcune operazioni prima di impostare le nuove funzionalità per OME. Per ulteriori informazioni, vedere [pianificazione e l'implementazione la chiave del tenant la protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Si consiglia di eseguire la procedura seguente prima di impostare OME.
+2. Decidere se si desidera gestire la chiave radice per Azure Information Protection (impostazione predefinita) o generare e gestire manualmente questa chiave (ovvero portare la propria chiave o BYOK). Se si desidera generare e gestire manualmente questa chiave, è necessario completare alcuni passaggi prima di configurare le nuove funzionalità di OME. Per ulteriori informazioni, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft consiglia di eseguire questa procedura prima di configurare OME.
 
-3. Abilitare le nuove funzionalità per OME attivando Azure Rights Management. Per ulteriori informazioni, vedere [Attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). A tale scopo, Office 365 attiva automaticamente le nuove funzionalità OME automaticamente.
+3. Abilitare le nuove funzionalità di OME attivando Azure Rights Management. Per istruzioni, vedere [attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Quando si esegue questa operazione, Office 365 attiva automaticamente le nuove funzionalità OME.
 
     > [!TIP]
-    > Outlook sul Web memorizza nella cache relativa interfaccia utente, in modo da essere opportuno attendere un giorno prima di tentare di applicare le nuove funzionalità per OME ai messaggi di posta elettronica utilizzando questo client. Prima che l'interfaccia utente aggiornata per riflettere la nuova configurazione, le nuove funzionalità per OME non sarà disponibile. Dopo l'aggiornamento dell'interfaccia utente, gli utenti possono proteggere messaggi di posta elettronica utilizzando le nuove funzionalità per OME.
+    > Outlook sul Web memorizza nella cache la propria interfaccia utente, quindi è consigliabile attendere un giorno prima di provare a applicare le nuove funzionalità di OME ai messaggi di posta elettronica utilizzando il client. Prima che gli aggiornamenti dell'interfaccia utente riflettano la nuova configurazione, le nuove funzionalità di OME non saranno disponibili. Dopo l'aggiornamento dell'interfaccia utente, gli utenti possono proteggere i messaggi di posta elettronica utilizzando le nuove funzionalità di OME.
   
-4. (Facoltativo) Impostare le nuove regole di flusso di posta elettronica o aggiornare regole del flusso di posta elettronica esistente che definiscono come e quando si vuole che Office 365 per crittografare i messaggi inviati dall'organizzazione.
+4. Optional Impostare nuove regole del flusso di posta o aggiornare le regole del flusso di posta esistenti che definiscono come e quando si desidera che Office 365 crittografa i messaggi inviati dall'organizzazione.
 
-## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Verificare che le nuove funzionalità per OME siano configurate correttamente tramite Windows PowerShell
+## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Verificare che le nuove funzionalità di OME siano configurate correttamente utilizzando Windows PowerShell
 
-Eseguire la procedura seguente per verificare che il tenant sia configurato correttamente per l'utilizzo delle nuove funzionalità per OME tramite Exchange Online PowerShell.
+Eseguire la procedura seguente per verificare che il tenant sia configurato correttamente per l'utilizzo delle nuove funzionalità di OME tramite Exchange Online PowerShell.
   
-1. Utilizzo di un ufficio o della scuola dell'account che disponga delle autorizzazioni di amministratore globale dell'organizzazione Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per ulteriori informazioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Eseguire il cmdlet Test-IRMConfiguration utilizzando la sintassi seguente:
 
@@ -78,7 +78,7 @@ Eseguire la procedura seguente per verificare che il tenant sia configurato corr
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-    Indirizzo di posta elettronica dove è l'indirizzo di posta elettronica di un utente nell'organizzazione Office 365. Mentre facoltativo, l'indirizzo di posta elettronica del mittente forza il sistema deve eseguire ulteriori verifiche. I risultati dovrebbero risultare come queste:
+    Dove indirizzo di posta elettronica è l'indirizzo di posta elettronica di un utente nell'organizzazione di Office 365. Se facoltativo, l'indirizzo di posta elettronica del mittente consente di forzare il sistema a eseguire ulteriori controlli. I risultati devono essere simili ai seguenti:
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -94,29 +94,29 @@ Eseguire la procedura seguente per verificare che il tenant sia configurato corr
             OVERALL RESULT: PASS
     ```
 
-    Dove *Contoso* è stato sostituito con il nome dell'organizzazione Office 365.
+    Dove *Contoso* viene sostituito con il nome dell'organizzazione di Office 365.
 
-    I nomi dei modelli predefiniti nei risultati restituiti potrebbero essere diversi da quello visualizzato nei risultati della precedenti.
+    I nomi dei modelli predefiniti restituiti nei risultati possono essere diversi da quelli visualizzati nei risultati sopra riportati.
 
-    Per avere un'introduzione ai modelli e informazioni sui modelli predefiniti, vedere [configurazione e gestione dei modelli per la protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni su non inoltrare l'opzione, crittografare sola opzione e come creare ulteriori modelli o Scopri tutto titolarità dei diritti sono inclusi in un modello esistente, vedere [configurazione di diritti di utilizzo per Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
+    Per un'introduzione ai modelli e alle informazioni sui modelli predefiniti, vedere [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione non inoltrare, l'opzione solo crittografia e su come creare modelli aggiuntivi o individuare quali diritti sono inclusi in un modello esistente, vedere Configuring [Usage Rights for Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
 
-3. Eseguire il cmdlet Remove-PSSession per disconnettersi da Rights Management service.
+3. Eseguire il cmdlet Remove-PSSession per disconnettersi dal servizio Rights Management.
     
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Passaggi successivi: definire nuove regole di flusso di posta elettronica che utilizzano le nuove funzionalità OME
+## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Passaggi successivi: definire nuove regole del flusso di posta che utilizzano le nuove funzionalità OME
 
-Questo passaggio è facoltativo per le nuove distribuzioni OME, tuttavia, questo passaggio è obbligatorio per le distribuzioni OME esistenti che dispone già di regole del flusso di posta elettronica è impostate per crittografare la posta elettronica in uscita. Se si desidera usufruire delle nuove funzionalità OME, è necessario aggiornare le regole di flusso di posta elettronica esistente. In caso contrario, gli utenti continua a ricevere messaggi crittografati che utilizza il formato allegato HTML precedente anziché l'esperienza OME nuova e semplice.
+Questo passaggio è facoltativo per le nuove distribuzioni OME, tuttavia, questo passaggio è necessario per le distribuzioni OME esistenti che già dispongono di regole del flusso di posta impostate per crittografare la posta in uscita. Se si desidera sfruttare le nuove funzionalità OME, è necessario aggiornare le regole del flusso di posta esistenti. In caso contrario, gli utenti continueranno a ricevere messaggi di posta elettronica crittografati che utilizzano il formato di allegato HTML precedente anziché la nuova esperienza OME senza problemi.
   
-Regole del flusso di posta elettronica determinano sotto il messaggio di posta elettronica le condizioni devono essere crittografati i messaggi, nonché alle condizioni per la rimozione di crittografia. Quando si imposta un'azione per una regola, i messaggi che soddisfano le condizioni regola vengono crittografati quando sei inviati.
+Le regole del flusso di posta determinano in quali condizioni devono essere crittografati i messaggi di posta elettronica, nonché le condizioni per la rimozione della crittografia. Quando si imposta un'azione per una regola, tutti i messaggi che soddisfano le condizioni della regola vengono crittografati quando vengono inviati.
   
-Per ulteriori informazioni sulle regole di flusso di posta elettronica, vedere [definire le regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Per ulteriori informazioni sulle regole del flusso di posta, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Invia, Visualizza e Rispondi ai messaggi crittografati in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
+[Inviare, visualizzare e rispondere a messaggi crittografati in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
 [Enable-Aadrm](https://docs.microsoft.com/powershell/module/aadrm/enable-aadrm?view=azureipps)
   

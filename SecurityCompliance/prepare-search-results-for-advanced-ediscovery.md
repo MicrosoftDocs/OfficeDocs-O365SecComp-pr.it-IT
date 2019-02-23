@@ -8,24 +8,24 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: Informazioni su come preparare i risultati di una ricerca di contenuto in Office 365 Security &amp; centro conformità per un'ulteriore analisi con lo strumento eDiscovery avanzate.
-ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Informazioni su come preparare i risultati di una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365 per un'ulteriore analisi con lo strumento eDiscovery avanzato.
+ms.openlocfilehash: 52573169692c2457e51898f9f36d2c586c7e7a4b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27280169"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212676"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 
-Dopo una ricerca associata a un caso eDiscovery in Office 365 Security &amp; centro conformità viene eseguito correttamente, è possibile preparare i risultati della ricerca per un'ulteriore analisi con Office 365 avanzate eDiscovery, che consente di analizzare grandi dimensioni, dati non strutturati impostato e ridurre la quantità di dati pertinenti per una controversia legale. Le funzionalità avanzate di eDiscovery includono:
+Dopo aver eseguito correttamente una ricerca associata a un caso di eDiscovery nel centro sicurezza &amp; e conformità di Office 365, è possibile preparare i risultati della ricerca per un'ulteriore analisi con Office 365 Advanced eDiscovery, che consente di analizzare i dati di grandi dimensioni set di dati non strutturati e riduzione della quantità di dati rilevanti per un caso legale. Le funzionalità avanzate di eDiscovery includono:
   
-- **Riconoscimento ottico dei caratteri** - quando si preparano automaticamente i risultati di ricerca per eDiscovery avanzata, la funzionalità di riconoscimento ottico dei caratteri (OCR) estrae il testo da immagini e ciò include con i risultati della ricerca che vengono caricati in a Avanzate eDiscovery per l'analisi. OCR è supportato per file separati, gli allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche testo di eDiscovery avanzate (quasi duplicati, posta elettronica threading, temi e la scrittura di codice predittiva) per il contenuto del testo nei file di immagine. Per i file di immagine, eDiscovery avanzate OCR supporta i formati seguenti:
+- **Riconoscimento ottico dei caratteri** -quando si preparano i risultati della ricerca per Advanced eDiscovery, la funzionalità OCR (Optical Character Recognition) estrae automaticamente il testo dalle immagini e lo include con i risultati di ricerca caricati in Advanced eDiscovery per l'analisi. OCR è supportato per file sciolti, allegati di posta elettronica e immagini incorporate. In questo modo è possibile applicare le funzionalità analitiche del testo avanzate di eDiscovery (quasi duplicati, Threading di posta elettronica, temi e codifica predittiva) al contenuto di testo nei file di immagine. Advanced eDiscovery OCR supporta i formati seguenti per i file di immagine:
 
     - GIF
     - JPEG
@@ -33,85 +33,85 @@ Dopo una ricerca associata a un caso eDiscovery in Office 365 Security &amp; cen
     - PNG
     - TIFF
     
-- **Rilevamento quasi duplicati** - è possibile strutturare esaminare dati in modo più efficiente, in modo che una persona viene esaminato un gruppo di documenti simili. Si evita che più revisori la necessità di visualizzare le diverse versioni dello stesso documento. 
+- **Rilevamento quasi duplicato** : consente di strutturare la revisione dei dati in modo più efficiente, quindi una persona esamina un gruppo di documenti simili. In questo modo è possibile impedire a più revisori di visualizzare versioni diverse dello stesso documento. 
     
-- **Messaggio di posta elettronica threading** - consente di identificare i messaggi univoci in un thread di posta elettronica in modo che è possibile concentrare l'attenzione sulle nuove informazioni in ogni messaggio. In un thread di posta elettronica, il secondo messaggio contiene il primo messaggio. Allo stesso modo, i messaggi successivi contengono tutti i messaggi precedenti. Messaggio di posta elettronica threading consente di rimuovere la necessità di esaminare ogni messaggio nella sua interezza in un thread di posta elettronica. 
+- **Threading della posta elettronica** -consente di identificare i messaggi univoci in un thread di posta elettronica in modo da poter concentrarsi solo sulle nuove informazioni in ogni messaggio. In un thread di posta elettronica, il secondo messaggio contiene il primo messaggio. Analogamente, i messaggi successivi contengono tutti i messaggi precedenti. Il threading della posta elettronica rimuove la necessità di esaminare tutti i messaggi nella sua interezza in un thread di posta elettronica. 
     
-- **Temi** - informazioni utili per comprendere i dati di là solo statistiche sulle parole chiave ricerca. Temi Guida indagini raggruppando i documenti correlati in modo che è possibile esaminare i documenti nel contesto. Quando si utilizzano i temi, visualizzare i temi correlati per un set di documenti, determinare qualsiasi sovrapposizione e quindi identificare le sezioni trasversali di dati correlati. 
+- **Temi** -informazioni utili per ottenere informazioni importanti sui dati oltre alle statistiche di ricerca di parole chiave. I temi sono utili per l'analisi del raggruppamento di documenti correlati, in modo che sia possibile esaminare i documenti in un contesto. Quando si utilizzano i temi, è possibile visualizzare i temi correlati per un set di documenti, determinare qualsiasi sovrapposizione e quindi identificare sezioni incrociate di dati correlati. 
     
-- **Scrittura di codice predittiva** - consente di formare il sistema su ciò che sta cercando, consentendo di decidere (se un elemento è rilevante o non) su un numero ridotto di documenti. EDiscovery avanzata quindi viene applicato tale apprendimento, basato sulla Guida sui, durante l'analisi di tutti i documenti nel set di dati. Basata su tale apprendimento, eDiscovery avanzate fornisce una classificazione della pertinenza in modo che è possibile decidere quali documenti per la revisione in base a quale documento sono probabilmente pertinente al caso. 
+- **Codifica predittiva** : consente di formare il sistema su quello che si sta cercando, consentendo di prendere decisioni (se qualcosa è pertinente o meno) su un set di documenti di piccole dimensioni. Advanced eDiscovery applica quindi l'apprendimento (in base alle linee guida) quando si analizzano tutti i documenti del set di dati. In base a tale apprendimento, Advanced eDiscovery fornisce una classificazione di pertinenza in modo da poter decidere quali documenti esaminare in base a quale documento sono più probabili rilevanti per il caso. 
     
-- **Esportazione dei dati per esaminare le applicazioni** - è possibile esportare dati da eDiscovery avanzate e Office 365 dopo aver completato l'analisi e ridurre il set di dati. Il pacchetto di esportazione include un file CSV che contiene le proprietà dal contenuto esportato e metadati analitica. Il pacchetto di esportazione può quindi essere importato per un'applicazione di revisione eDiscovery. 
+- **Esportazione dei dati per le applicazioni di revisione** : è possibile esportare i dati da Advanced eDiscovery e Office 365 dopo aver completato l'analisi e aver ridotto il set di dati. Il pacchetto di esportazione include un file CSV che contiene le proprietà del contenuto esportato e dei metadati di analisi. Questo pacchetto di esportazione può quindi essere importato in un'applicazione di revisione di eDiscovery. 
     
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per analizzare i dati dell'utente tramite eDiscovery avanzate, l'utente (depositaria dei dati) deve essere assegnato una licenza di Office 365 E5. In alternativa, gli utenti con una licenza di Office 365 E1 o E3 è possibile assegnare una licenza autonoma eDiscovery avanzate. Gli amministratori e responsabili della conformità assegnati ai casi e utilizzare eDiscovery avanzate per analizzare i dati non è necessario una licenza E5. 
+- Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5. 
     
-- È necessario essere una eDiscovery Manager o un'amministratore di Office 365 protezione eDiscovery &amp; centro conformità per preparare i risultati della ricerca eDiscovery avanzate. Una ricerca eDiscovery Manager è un membro del gruppo di ruoli di gestione di eDiscovery. Una ricerca eDiscovery amministratore è anche membro del gruppo di ruoli di gestione di eDiscovery, ma è stato assegnato privilegi aggiuntivi eDiscovery. Per istruzioni sull'assegnazione delle autorizzazioni di amministratore di eDiscovery, vedere il passaggio 1 nella [casi di eDiscovery per la protezione di Office 365 & centro conformità](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- È necessario essere un Manager di eDiscovery o un amministratore di eDiscovery nel centro sicurezza &amp; e conformità di Office 365 per preparare i risultati della ricerca per Advanced eDiscovery. Un Manager di eDiscovery è un membro del gruppo di ruoli Gestione eDiscovery. Un amministratore di eDiscovery è anche membro del gruppo di ruoli di eDiscovery Manager, ma sono stati assegnati ulteriori privilegi di eDiscovery. Per istruzioni sull'assegnazione delle autorizzazioni di amministratore di eDiscovery, vedere il passaggio 1 in [eDiscovery Cases in the Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
-## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 1: Preparare risultati di ricerca per eDiscovery avanzate
+## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Passaggio 1: preparare i risultati della ricerca per Advanced eDiscovery
 
-È possibile preparare i risultati della ricerca associato a un caso eDiscovery. Quando si prepara i risultati della ricerca eDiscovery avanzate, i dati vengono caricati e temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft. È a questo punto che la funzionalità OCR estrae il testo da immagini nei risultati della ricerca. In [passaggio 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), il testo e altri ricerca dati risultanti viene caricati in caso di eDiscovery avanzate.
+È possibile preparare i risultati di una ricerca associata a un caso di eDiscovery. Quando si preparano i risultati della ricerca per Advanced eDiscovery, i dati vengono caricati e archiviati temporaneamente in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft. È a questo punto che la funzionalità OCR estrae il testo dalle immagini nei risultati della ricerca. Nel [passaggio 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), il testo e gli altri dati dei risultati di ricerca vengono caricati nel caso di Advanced eDiscovery.
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi di eDiscovery avanzate fare clic su **Apri** . 
+2. Fare clic su **Apri** accanto al caso in cui si desidera preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. 
     
-3. Nella Home **page per il case,** fare clic su **Cerca**e quindi selezionare la ricerca.
+3. Nella **Home** page del caso, fare clic su **ricerca**, quindi selezionare la ricerca.
     
-4. Nel riquadro dei dettagli **dei risultati di analisi con eDiscovery avanzate**, fare clic su **Risultati preparazione per l'analisi**.
+4. Nel riquadro dei dettagli, in **Analyze results with Advanced eDiscovery**, fare clic su **prepara i risultati per l'analisi**.
     
     > [!NOTE]
     > Se i risultati di una ricerca hanno più di 7 giorni, viene chiesto di aggiornarli. 
   
 5. Nella pagina **Prepara i risultati per l'analisi**, eseguire le operazioni seguenti:  
     
-    - Scegliere di preparazione per l'analisi di eDiscovery avanzate elementi indicizzati, gli elementi indicizzati e non indicizzati o solo gli elementi indicizzati.
+    - Scegliere di preparare gli elementi indicizzati, gli elementi indicizzati e non indicizzati oppure solo gli elementi non indicizzati per l'analisi in Advanced eDiscovery.
     
-    - Scegliere se includere tutte le versioni dei documenti disponibili in SharePoint che soddisfano i criteri di ricerca. Questa opzione è disponibile solo se le origini di contenuto per la ricerca include siti.
+    - Scegliere se includere tutte le versioni dei documenti trovati in SharePoint che soddisfano i criteri di ricerca. Questa opzione viene visualizzata solo se le origini di contenuto per la ricerca includono siti.
     
-    - Consente di specificare se si desidera che un messaggio di notifica inviato o copiata una persona quando viene completato il processo di preparazione e i dati sono pronti per l'elaborazione di eDiscovery avanzate.
+    - Specificare se si desidera che un messaggio di notifica venga inviato (o copiato) a una persona al termine del processo di preparazione e che i dati siano pronti per essere elaborati in Advanced eDiscovery.
     
 6. Fare clic su **Prepara**.
     
-    I risultati della ricerca vengono preparati per l'analisi con eDiscovery avanzate.
+    I risultati della ricerca sono pronti per l'analisi con Advanced eDiscovery.
     
-7. Nel riquadro dei dettagli fare clic su **verificare lo stato di preparazione** per visualizzare le informazioni sul processo di preparazione. Al termine del processo di preparazione, è possibile accedere al caso di eDiscovery avanzate per elaborare i dati per l'analisi. 
+7. Nel riquadro dei dettagli, fare clic su **Controlla stato preparazione** per visualizzare le informazioni sul processo di preparazione. Al termine del processo di preparazione, è possibile passare al caso in Advanced eDiscovery per elaborare i dati per l'analisi. 
     
-## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Passaggio 2: Aggiungere i dati dei risultati della ricerca per il caso di eDiscovery avanzate
+## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Passaggio 2: aggiungere i dati dei risultati della ricerca al caso in Advanced eDiscovery
 <a name="step2"> </a>
 
-Al termine della preparazione, il passaggio successivo è passare a eDiscovery avanzate e caricare i dati dei risultati di ricerca (che sono stati caricati in un'area di archiviazione Azure nel cloud Microsoft) per il caso di eDiscovery avanzate. Come precedentemente illustrato, per accedere a eDiscovery avanzata è necessario essere un'amministratore per la protezione di eDiscovery &amp; centro conformità o da un amministratore di eDiscovery avanzate.
+Al termine della preparazione, il passaggio successivo consiste nell'accedere a Advanced eDiscovery e caricare i dati dei risultati della ricerca (che sono stati caricati in un'area di archiviazione di Azure nel cloud Microsoft) nel caso in Advanced eDiscovery. Come spiegato in precedenza, per accedere a Advanced eDiscovery è necessario essere un amministratore di eDiscovery nel &amp; centro conformità sicurezza o un amministratore in Advanced eDiscovery.
   
 > [!NOTE]
-> Il tempo necessario per i dati dal titolo &amp; centro conformità sia disponibile per aggiungere a un caso di eDiscovery avanzate varia, a seconda delle dimensioni dei risultati della ricerca eDiscovery. 
+> Il tempo necessario per la disponibilità dei dati del centro &amp; conformità di sicurezza per l'aggiunta a un caso in Advanced eDiscovery varia a seconda delle dimensioni dei risultati della ricerca di eDiscovery. 
   
 1. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
-2. Accanto al caso in cui si desidera caricare i dati di eDiscovery avanzate fare clic su **Apri** . 
+2. Fare clic su **Apri** accanto al caso in cui si desidera caricare i dati in Advanced eDiscovery. 
     
 3. Nella **Home** page del caso, fare clic su **Advanced eDiscovery**. 
     
-    ![Fare clic su passa a eDiscovery avanzate per aprire il caso di eDiscovery avanzate](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Fare clic su passa a Advanced eDiscovery per aprire il caso in Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    Viene visualizzato l'indicatore di stato di **connessione avanzate eDiscovery** . Quando si è connessi a eDiscovery avanzate, viene visualizzato un elenco dei contenitori nella pagina installazione per il case. 
+    Viene visualizzata la barra **di avanzamento per la connessione a Advanced eDiscovery** . Quando si è connessi a Advanced eDiscovery, viene visualizzato un elenco di contenitori nella pagina di installazione del caso. 
     
-    ![Viene visualizzato il caso di eDiscovery avanzate](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Il caso viene visualizzato in Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi di eDiscovery avanzata nel passaggio 1. Si noti che il nome del contenitore ha lo stesso nome di ricerca nel caso della protezione &amp; centro conformità. I contenitori nell'elenco sono quelli preparato. Se un utente diverso preparato risultati della ricerca eDiscovery avanzate, i contenitori corrispondenti non vengono inclusi nell'elenco. 
+     Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi in Advanced eDiscovery nel passaggio 1. Si noti che il nome del contenitore ha lo stesso nome della ricerca nel caso nel centro sicurezza &amp; e conformità. I contenitori presenti nell'elenco sono quelli che sono stati preparati. Se un utente diverso ha preparato i risultati della ricerca per Advanced eDiscovery, i contenitori corrispondenti non verranno inclusi nell'elenco. 
     
-4. Per caricare i dati dei risultati di ricerca da un contenitore in caso di eDiscovery avanzate, selezionare un contenitore e quindi fare clic su **processo**.
+4. Per caricare i dati dei risultati di ricerca da un contenitore al caso in Advanced eDiscovery, selezionare un contenitore e quindi fare clic su **processo**.
     
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo avere i risultati di una ricerca eDiscovery ricerca vengono aggiunti a un caso, il passaggio successivo consiste nell'utilizzare gli strumenti di eDiscovery avanzate per analizzare i dati e identificare il contenuto che risponde a una causa legale. Per informazioni sull'utilizzo di eDiscovery avanzate, vedere [eDiscovery avanzate di Office 365](office-365-advanced-ediscovery.md).
+Dopo aver aggiunto i risultati di una ricerca di eDiscovery a un caso, il passaggio successivo consiste nell'utilizzare gli strumenti avanzati di eDiscovery per analizzare i dati e identificare i contenuti rispondenti a un caso legale specifico. Per informazioni sull'utilizzo di Advanced eDiscovery, vedere [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
   
 ## <a name="more-information"></a>Ulteriori informazioni
 
-Eventuali messaggi di posta elettronica crittografati con RMS inclusi nei risultati della ricerca verranno decrittografati durante la preparazione per l'analisi di eDiscovery avanzate. Questa funzionalità decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli di gestione di eDiscovery. Ciò avviene perché il ruolo di gestione di decrittografia RMS viene assegnato a questo gruppo di ruoli. Tenere presenti sulla decrittografia dei messaggi di posta elettronica i seguenti aspetti:
+Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati della ricerca verranno decrittografati durante la preparazione per l'analisi in Advanced eDiscovery. Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione deCrypt RMS è assegnato a questo gruppo di ruoli. Tenere presenti le considerazioni seguenti sulla decrittografia dei messaggi di posta elettronica:
   
-- Attualmente, questa funzionalità decrittografia non include crittografato contenuto di SharePoint e OneDrive per i siti. Solo i messaggi di posta elettronica crittografati con RMS verranno decrittografati durante l'esportazione.
+- Attualmente, questa funzionalità di decrittografia non include il contenuto crittografato dei siti di SharePoint e OneDrive for business. Quando vengono esportati, solo i messaggi di posta elettronica crittografati con RMS verranno decrittografati.
     
-- Se un messaggio di posta elettronica crittografati con RMS è un allegato (ad esempio, un documento o un altro messaggio di posta elettronica) che viene inoltre crittografato, verrà decrittografato solo il messaggio di posta elettronica principale.
+- Se un messaggio di posta elettronica crittografato con RMS ha un allegato, ad esempio un documento o un altro messaggio di posta elettronica crittografato, viene decrittografato solo il messaggio di posta elettronica di primo livello.
     
-- Se è necessario per impedire la decrittografia dei messaggi crittografati con RMS durante la preparazione di risultati della ricerca per l'analisi di eDiscovery avanzate, è necessario creare un gruppo di ruoli personalizzati (copiando eDiscovery gruppo di ruoli di gestione incorporati) e quindi rimuovere il RMS Decrittografare il ruolo di gestione dal gruppo di ruolo personalizzato. Aggiungere la persona che non si desidera decrittografare i messaggi con un account membro del gruppo di ruoli personalizzati.
+- Se è necessario impedire a un utente di decrittografare i messaggi crittografati con RMS durante la preparazione dei risultati di ricerca per l'analisi in Advanced eDiscovery, sarà necessario creare un gruppo di ruoli personalizzato (copiando il gruppo di ruoli di eDiscovery Manager incorporato) e quindi rimuovere il server RMS DeCrittografare il ruolo di gestione dal gruppo di ruoli personalizzato. Aggiungere quindi la persona che non si desidera decrittografare i messaggi come membro del gruppo di ruoli personalizzato.

@@ -1,62 +1,62 @@
 ---
-title: Suggerimenti sulla sicurezza in messaggi di posta elettronica in Office 365
+title: Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
 ms.author: krowley
 author: kccross
 manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
-description: Vengono presentati suggerimenti sulla sicurezza per i messaggi di posta elettronica filtrati tramite il filtro posta indesiderata EOP e Office 365.
-ms.openlocfilehash: 206141fd516f6273a145f4f954c0994be39da26a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Introduce suggerimenti di sicurezza per i messaggi di posta elettronica filtrati dal filtro di posta indesiderata EOP e Office 365.
+ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530192"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214306"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Suggerimenti sulla sicurezza in messaggi di posta elettronica in Office 365
+# <a name="safety-tips-in-email-messages-in-office-365"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
 
-Exchange Online Protection (EOP) e Office 365 protezione da posta indesiderata, phishing e malware prevenzione. Oggi, pertanto anche alcuni di questi attacchi sono predisposti che sembrano legittimi. Invio di messaggi di posta indesiderata cartella non è sufficientemente sempre. A questo punto, quando si controlla la posta elettronica di Outlook o Outlook sul web, EOP verifica automaticamente il mittente e aggiunge un suggerimento di sicurezza all'inizio del messaggio di posta elettronica. 
+Exchange Online Protection (EOP) e Office 365 proteggono i messaggi di posta indesiderata, phishing e prevenzione antimalware. Oggi, alcuni di questi attacchi sono così ben congegnati che sembrano legittimi. L'invio di messaggi alla cartella posta inDesiderata non è sempre sufficiente. A questo punto, quando si controlla la posta elettronica in Outlook o Outlook sul Web, EOP controlla automaticamente il mittente e aggiunge una punta di sicurezza all'inizio della posta elettronica. 
   
-Il suggerimento di sicurezza, ovvero un messaggio caratterizzato, ovvero viene segnalata messaggi potenzialmente dannosi. La maggior parte dei messaggi di posta in arrivo non disporrà di un suggerimento di sicurezza. Solo vedremo li quando EOP e Office 365 dispone di informazioni necessarie per evitare posta indesiderata e phishing attacchi malware. Se suggerimenti sulla sicurezza visualizzato nella cartella Posta in arrivo, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento di sicurezza.
+Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avviserà i messaggi potenzialmente dannosi. La maggior parte dei messaggi nella posta in arrivo non avrà un suggerimento per la sicurezza. Sarà possibile visualizzarli solo quando EOP e Office 365 dispongono di informazioni necessarie per impedire attacchi di posta indesiderata, phishing e malware. Se nella cartella posta in arrivo sono presenti suggerimenti per la sicurezza, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento per la sicurezza.
   
-- Messaggi sospetti (safety rosso tip).
+- Posta elettronica sospetta (punta di sicurezza rossa).
     
-    ![Schermata che mostra un suggerimento sicurezza rosso.](media/5078a0be-e556-44a1-b169-09d780d26898.png)
+    ![Schermata che visualizza un suggerimento per la sicurezza rossa.](media/5078a0be-e556-44a1-b169-09d780d26898.png)
   
-    Un suggerimento sicurezza rosso in un messaggio di posta elettronica indica che il messaggio che è stato ricevuto contiene un elemento potenzialmente dannoso, ad esempio il phishing. È consigliabile eliminare questo tipo di messaggio di posta elettronica dalla posta in arrivo senza aprirlo.
+    Un suggerimento per la sicurezza rossa in un messaggio di posta elettronica indica che l'utente ricevuto contiene elementi sospetti, ad esempio una truffa di phishing. È consigliabile eliminare questo tipo di messaggio di posta elettronica dalla posta in arrivo senza aprirlo.
     
-- Posta indesiderata (safety giallo tip).
+- Posta inDesiderata (suggerimento di sicurezza giallo).
     
-    ![Schermata che mostra un suggerimento sicurezza giallo.](media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
+    ![Schermata che visualizza un suggerimento per la sicurezza giallo.](media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
   
-    Un suggerimento sicurezza giallo in un messaggio di posta elettronica significa che il messaggio è stato contrassegnato come posta indesiderata. Se non riconosce e considerare attendibile il mittente del messaggio, non scaricare le immagini o allegati e non fare clic su tutti i collegamenti nel messaggio. In Outlook sul web, è possibile fare clic **è posta non indesiderata** sulla barra di colore gialla di un elemento di posta indesiderata per spostare il messaggio di posta in arrivo. Se viene visualizzata la descrizione di sicurezza giallo in un messaggio in cui è stato recapitato alla cartella Posta in arrivo, è probabile che non esiste perché è stato disattivato lo spostamento da posta indesiderata nella cartella posta indesiderata. 
+    Un suggerimento giallo per la sicurezza in un messaggio di posta elettronica indica che è stato contrassegnato come posta indesiderata. Se non si riconosce e si considera attendibile il mittente del messaggio, non è possibile scaricare allegati o immagini e non fare clic su nessun collegamento nel messaggio. In Outlook sul Web, è possibile fare clic su **non è posta** indesiderata nella barra gialla di un elemento di posta indesiderata per spostare il messaggio nella posta in arrivo. Se il suggerimento di sicurezza giallo viene visualizzato in un messaggio che è stato recapitato nella posta in arrivo, è probabile che sia presente perché è stato disabilitato lo spostamento della posta indesiderata nella cartella posta inDesiderata 
     
-- Posta elettronica sicuro (safety verde tip).
+- Posta elettronica sicura (suggerimento per la sicurezza verde).
     
-    ![Schermata che mostra un suggerimento sicurezza verde.](media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
+    ![Schermata che visualizza un suggerimento per la sicurezza verde.](media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
   
-    Oltre ai messaggi non sicuri, è inoltre illustrata la sui messaggi validi da mittenti che è trust con un suggerimento sicurezza verde. Un suggerimento sicurezza verde in un messaggio di posta elettronica significa che viene controllato il mittente del messaggio e verificato che è possibile. Questo elenco di mittenti attendibili che include le organizzazioni finanziari e altre persone o più di frequente spoofing rappresentato gestito da Microsoft.
+    Oltre ai messaggi non sicuri, verranno inoltre illustrati i messaggi validi provenienti da mittenti attendibili con un suggerimento per la sicurezza verde. Un suggerimento per la sicurezza verde in un messaggio di posta elettronica indica che il mittente è stato controllato e verificato che sia sicuro. Microsoft gestisce questo elenco di mittenti attendibili che include organizzazioni finanziarie e altri spesso contraffatti o rappresentati.
     
-- Posta elettronica non filtrato (safety grigio tip).
+- Posta non filtrata (suggerimento per la sicurezza grigia).
     
-    ![Schermata che mostra un suggerimento sicurezza grigio.](media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
+    ![Schermata che visualizza un suggerimento per la sicurezza grigia.](media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
   
-    Viene inoltre illustrata la quando viene ignorato il controllo di un messaggio di posta perché è provenienti da mittenti che attendibili presente nell'elenco Mittenti attendibili o se esiste una regola di flusso di posta elettronica per ignorare il filtro. 
+    Quando si ignora il controllo di un messaggio di posta elettronica, verrà inoltre visualizzato un mittente attendibile nell'elenco dei mittenti attendibili o se esiste una regola del flusso di posta per ignorare il filtro. 
     
-    Il suggerimento sicurezza grigio viene visualizzato anche quando vengono bloccate immagini esterne, vale a dire il messaggio nella cartella Posta in arrivo e non viene visualizzata come posta indesiderata, ma contiene le immagini esterne che non hanno scelto per scaricare.
+    La punta di sicurezza grigia viene visualizzata anche quando le immagini esterne sono bloccate, ovvero il messaggio è nella posta in arrivo e non sembra essere posta indesiderata, ma contiene immagini esterne che non si è scelto di scaricare.
     
-## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti sulla sicurezza
+## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti per la sicurezza
 
-Suggerimenti per la sicurezza sono sempre abilitati per Outlook sul web, anche se non ogni messaggio verrà visualizzato uno. Gli amministratori di Office 365 possono disattivare suggerimenti sulla sicurezza per altri client di posta elettronica, ad esempio Outlook. Per ulteriori informazioni, vedere [attivare o disattivare i suggerimenti di sicurezza in Office 365](enable-or-disable-safety-tips.md).
+I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori di Office 365 possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per ulteriori informazioni, vedere [abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](enable-or-disable-safety-tips.md).
   
-Se non si approva il come Office 365 ed EOP categorizzati un messaggio (vale a dire, non è la posta indesiderata o non è valido), è possibile inviare messaggi per l'analisi migliorare l'esperienza dell'utente. Per ulteriori informazioni, vedere [posta indesiderata di Report e i tentativi di phishing in Outlook sul web](https://technet.microsoft.com/library/dn594557.aspx). È inoltre possibile fare clic sul collegamento commenti e suggerimenti nella punta di sicurezza per l'invio di commenti direttamente a Microsoft per migliorare le.
+Se non si è d'accordo con il modo in cui Office 365 e EOP hanno categorizzato un messaggio (ovvero non è posta indesiderata o non è lecito), è possibile inviare i messaggi per l'analisi per migliorare l'esperienza. Per ulteriori informazioni, vedere [segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web](https://technet.microsoft.com/library/dn594557.aspx). È anche possibile fare clic sul collegamento commenti e suggerimenti sulla sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.
   
 ## <a name="see-also"></a>Vedere anche
 
