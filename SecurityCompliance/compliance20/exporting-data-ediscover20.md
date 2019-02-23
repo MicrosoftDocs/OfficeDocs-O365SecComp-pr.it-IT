@@ -1,12 +1,12 @@
 ---
-title: Esportare dati sui casi di eDiscovery avanzate (Preview)
+title: Esportare i dati del caso in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02eccac2ecd1ee50597ddcaa8fcf0c35e724893e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 58e64b89330ce52dead7ce00bfefac5c01c0a04b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695022"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218276"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a>Esportare dati sui casi di eDiscovery avanzate (Preview)
+# <a name="export-case-data-in-advanced-ediscovery-preview"></a>Esportare i dati del caso in Advanced eDiscovery (Preview)
 
 Il contenuto sarà disponibile a breve.

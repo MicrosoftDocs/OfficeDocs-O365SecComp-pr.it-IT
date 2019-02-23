@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informazioni sulle funzionalità di monitoraggio e correzione automatica di Office 365.
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090518"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217546"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Monitoraggio e autoGuarigione di Office 365
 Data la scala di Office 365, sarebbe impossibile mantenere i dati dei clienti resilienti e sicuri da malware senza il monitoraggio integrato che è completo, avvisando che è intelligente e auto-guarigione che è veloce e affidabile. Il monitoraggio di un insieme di servizi alla scala di Office 365 è molto impegnativo. Sono state introdotte nuove mentalità e metodologie che sono state necessarie per creare e gestire il servizio in un ambiente globale connesso. L'approccio di monitoraggio tradizionale della raccolta e del filtro dei dati è stato rimosso per creare avvisi per un approccio basato sull'analisi dei dati. prendere segnali e creare fiducia nei dati e quindi utilizzare l'automazione per recuperare o risolvere il problema. Questo approccio consente di eliminare gli umani dall'equazione di ripristino, che rende le operazioni meno onerose, veloci e meno soggette a errori. 

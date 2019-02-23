@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla crittografia in Microsoft Dynamics 365.'
-ms.openlocfilehash: faf9df09b8dcd8a76a38671e4f5d5145094eec88
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 7c2a352dd712b0db9d2ad623745f854b863dd2e0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664072"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219316"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Crittografia di Office 365 in Microsoft Dynamics 365
 

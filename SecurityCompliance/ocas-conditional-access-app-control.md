@@ -1,5 +1,5 @@
 ---
-title: Proteggere le app con Office 365 cloud app Security Conditional Access App Control
+title: Proteggere le app con Controllo app per l'accesso condizionale di Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Interrompere le violazioni e le perdite in tempo reale con Office 365 cloud app Security Conditional Access App Control.
-ms.openlocfilehash: 8656bf9d3e028bf6b44731c397b74d9c883db707
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103361"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217086"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteggere le app con Office 365 cloud app Security Conditional Access App Control
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteggere le app con Controllo app per l'accesso condizionale di Office 365 Cloud App Security
 
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
@@ -104,7 +104,7 @@ Altre app vengono continuamente attivate per il controllo delle sessioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Distribuire il controllo delle app di accesso condizionale per le app di Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Distribuire Controllo app per l'accesso condizionale per le app di Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [Informazioni sui criteri di sessione in Office 365 cloud app Security](ocas-session-policies.md)
 

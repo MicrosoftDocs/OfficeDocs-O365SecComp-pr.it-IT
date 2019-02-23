@@ -1,12 +1,12 @@
 ---
-title: Analizzare i dati in un working set di eDiscovery avanzate (Preview)
+title: Analizzare i dati in un working set in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,46 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ae024f423ac9b4ab9210ddfab519093a9fee3e42
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695142"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216796"
 ---
-# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analizzare i dati in un working set di eDiscovery avanzate (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analizzare i dati in un working set in Advanced eDiscovery (Preview)
 
-Quando il numero di raccolti documenti di grandi dimensioni, può essere molto difficile esaminare tutte. EDiscovery avanzate (Preview) offre una serie di strumenti per analizzare i documenti in modo da ridurre il volume di documenti per la revisione senza perdita di informazioni e che consentono di organizzare i documenti in modo coerente. Per ulteriori informazioni su queste funzionalità, vedere:
+Quando il numero di documenti raccolti è di grandi dimensioni, può essere molto difficile rivederli tutti. Advanced eDiscovery (Preview) fornisce una serie di strumenti per analizzare i documenti per ridurre il volume dei documenti da rivedere senza perdite di informazioni e per facilitare l'organizzazione dei documenti in modo coerente. Per ulteriori informazioni su queste funzionalità, vedere:
 
 - [Rilevamento dei documenti simili](near-duplicates.md)
 - [Threading posta elettronica](email-threading.md)
 - [Temi](themes.md)
 
-Per analizzare i dati in un gruppo di lavoro:
+Per analizzare i dati in un working set:
 
-1. Configurare le impostazioni di analitica per il case. Per ulteriori informazioni, vedere [configurare le impostazioni di ricerca e analitica](configure-search-analytics-settings.md).
-2. Aprire il set di lavoro che si desidera analizzare.
-3. Passare a "Gestisci working set".
-4. Fare clic su "Analizzare".
+1. Configurare le impostazioni di analisi per il caso. Per ulteriori informazioni, vedere [configurare le impostazioni di ricerca e analisi](configure-search-analytics-settings.md).
+2. Aprire il working set che si desidera analizzare.
+3. Andare a "Gestisci working set".
+4. Fare clic su "analyze".
 
-È possibile controllare lo stato di avanzamento dell'analisi della scheda processi nel caso specifico.
+È possibile controllare lo stato di avanzamento dell'analisi nella scheda processi del caso.
 
- Al termine dell'analisi, è possibile visualizzare report analitica, le query eseguite all'interno di lavoro è impostata su output dell'analisi (per ulteriori informazioni, vedere [Query all'interno del working set](working-set-search.md)) e visualizzare i documenti correlati di un determinato documento (per ulteriori informazioni, vedere [ Analisi dei dati nel working set](reviewing-data-in-working-set.md)).
+ Dopo aver completato l'analisi, è possibile visualizzare il report di analisi, eseguire query all'interno del working set su output dell'analisi (per ulteriori informazioni, vedere [query all'interno del working set](working-set-search.md)) e vedere documenti correlati di un documento specifico (per ulteriori informazioni, vedere [ Revisione dei dati in working set](reviewing-data-in-working-set.md)).
 
-## <a name="analytics-report"></a>Rapporto Analitica
+## <a name="analytics-report"></a>Report di analisi
 
-Per visualizzare un report analitica per set in uso:
+Per visualizzare un report di analisi per il working set:
 
 1. Aprire il working set.
-2. Passare a "Gestisci working set".
-3. Fare clic su "Report".
+2. Andare a "Gestisci working set".
+3. Fare clic su "report".
 
-Il report include quattro componenti di analisi:
+Il report ha quattro componenti dall'analisi:
 
-- **Suddivisione** - quanti messaggi di posta elettronica, gli allegati e documenti espansa sono state trovate nel set di lavoro.
+- **Breakdown** : numero di messaggi di posta elettronica, allegati e documenti sciolti presenti nel working set.
 
-- **Documenti (escluso allegati)** - numero di documenti espansa sono stati pivot univoco quasi duplicati di rotazione o un duplicato esatto di un altro documento.
+- **Documenti (esclusi gli allegati)** -quanti documenti sfusi sono stati pivot, unici in prossimità di duplicati di un pivot o duplicati esatti di un altro documento.
 
-- **Messaggi di posta elettronica** - quanti messaggi di posta elettronica sono state inclusives, inclusi copie, inclusi svantaggi o nessuna delle precedenti.
+- **Messaggi** di posta elettronica-numero di messaggi di posta elettronica inclusi, copie inclusive, svantaggi inclusi o nessuno di questi.
 
-- **Allegati** - quante gli allegati di posta elettronica sono state univoci o duplicati di un allegato di posta elettronica diverso all'interno del working set.
+- **Allegati** : quanti allegati di posta elettronica sono stati univoci o duplicati di un allegato di posta elettronica diverso all'interno del working set.

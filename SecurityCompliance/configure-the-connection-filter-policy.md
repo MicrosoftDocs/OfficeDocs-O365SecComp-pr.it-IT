@@ -1,7 +1,7 @@
 ---
-title: Configurare i criteri di filtro di connessione
-ms.author: krowley
-author: kccross
+title: Configurare il criterio di filtro delle connessioni
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
 ms.audience: ITPro
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-description: Per assicurarsi che non è bloccato posta elettronica inviato da mittenti che attendibili, è possibile utilizzare i criteri di filtro di connessione per creare un elenco Consenti, noto anche come un elenco di mittenti attendibili, gli indirizzi IP attendibili. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: 2f8ec3d01de4358d7394c68d0efae9222db08282
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.collection:
+- M365-security-compliance
+description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi conSentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
+ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793561"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216906"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
  
-La maggior parte degli Stati Uniti hanno amici e partner commerciali che è attendibile. Può essere frustrante trovare della posta elettronica da loro nella cartella posta indesiderata, o persino bloccato interamente da un filtro posta indesiderata. Se si desidera verificare che non è bloccato posta elettronica inviato da mittenti che attendibili, è possibile utilizzare i criteri di filtro di connessione per creare un elenco Consenti, noto anche come un elenco dei mittenti attendibili, dell'indirizzo IP indirizzi che si desidera considerare attendibile. È inoltre possibile creare un elenco dei mittenti bloccati, che corrisponde a un elenco di indirizzi IP, in genere da noti mittenti di posta indesiderata, che non si desidera ricevere messaggi di posta elettronica, mai.
+La maggior parte di noi ha amici e partner commerciali di cui siamo fiduciosi. Può essere frustrante trovare messaggi di posta elettronica dalla cartella posta indesiderata o addirittura essere completamente bloccati da un filtro di posta indesiderata. Se si desidera verificare che la posta elettronica inviata da persone attendibili non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi conSentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati, che è un elenco di indirizzi IP, in genere da spammer noti, di cui non si desidera mai ricevere messaggi di posta elettronica.
   
- Per ulteriori impostazioni di posta indesiderata che si applicano a tutta l'organizzazione, esaminare [per contribuire a garantire che un messaggio non è contrassegnato come posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=534224) o di [posta elettronica di blocco della posta indesiderata con il filtro posta indesiderata di Office 365 per evitare problemi negativi false](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi sono utili se si dispone di controllo a livello di amministratore e si desidera impedire falsi positivi o falsi negativi.
+ Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come garantire che un messaggio non venga contrassegnato come posta](https://go.microsoft.com/fwlink/p/?LinkId=534224) indesiderata o [blocca la posta indesiderata con il filtro di posta indesiderata di Office 365 per evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi sono utili se si dispone di un controllo a livello di amministratore e si desidera impedire falsi positivi o falsi negativi.
   
 Il seguente video mostra i passaggi di configurazione per i criteri del filtro di connessione:
   
@@ -35,13 +37,13 @@ Il seguente video mostra i passaggi di configurazione per i criteri del filtro d
 
 - Tempo stimato per completare la procedura: 15 minuti
     
-- È necessario disporre delle autorizzazioni prima che è possibile eseguire queste procedure. Per verificare le autorizzazioni necessarie, vedere la voce "Protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
-- Per ottenere l'indirizzo IP del mittente di cui si desidera consentire o bloccare, è possibile controllare l'intestazione del messaggio Internet. Cercare l'intestazione CIP come descritto nelle [intestazioni dei messaggi di protezione da posta indesiderata](anti-spam-message-headers.md). Per informazioni su come visualizzare un'intestazione di messaggio in vari client di posta elettronica, vedere [Dell'analizzatore dell'intestazione di messaggio](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
+- Per ottenere l'indirizzo IP del mittente di cui si desidera consentire o bloccare i messaggi, è possibile controllare l'intestazione Internet del messaggio. Cercare l'intestazione CIP come descritto nelle [intestazioni dei messaggi](anti-spam-message-headers.md)di protezione dalla posta indesiderata. Per informazioni su come visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [message header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
     
-- Verranno rifiutati i messaggi di posta elettronica inviati da un indirizzo IP nell'elenco indirizzi IP bloccati, non è contrassegnato come posta indesiderata, e si verifica alcun altre opzioni di filtro.
+- I messaggi di posta elettronica inviati da un indirizzo IP dell'elenco indirizzi IP bloccati vengono rifiutati, non contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo.
     
-- La procedura di filtro di connessione seguente può anche essere eseguita tramite remote PowerShell. Utilizzare il cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) per controllare le impostazioni e [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) per modificare le impostazioni di criteri di filtro di connessione. Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- La seguente procedura del filtro di connessione può essere eseguita anche tramite Remote PowerShell. Utilizzare il cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) per rivedere le impostazioni e [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) per modificare le impostazioni dei criteri di filtro delle connessioni. Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online Protection, vedere [connessione a Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Utilizzare EAC per modificare il criterio del filtro connessioni predefinito
 <a name="sectionSection1"> </a>
@@ -55,13 +57,13 @@ Creare un elenco indirizzi IP consentiti o un elenco indirizzi IP bloccati modif
     Per creare questi elenchi, fare clic su ![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif). Nella finestra di dialogo successiva, specificare l'indirizzo IP o l'intervallo di indirizzi IP, quindi fare clic su **ok**. Ripetere il processo per aggiungere indirizzi aggiuntivi. È anche possibile modificare o rimuovere gli indirizzi IP dopo averli aggiunti.
     
     > [!NOTE]
-    >  Se si aggiunge un indirizzo IP per entrambi gli elenchi, posta elettronica inviato dall'indirizzo IP è consentito. 
+    >  Se si aggiunge un indirizzo IP ad entrambi gli elenchi, i messaggi di posta elettronica inviati da tale indirizzo IP sono consentiti. 
 
-    Specificare gli indirizzi IP IPV4 in nnn formato dove nnn è un numero compreso tra 0 e 255. È inoltre possibile specificare intervalli IP Classless Inter-Domain Routing (CIDR) in nnn.nnn.nnn.nnn/rr formato dove rr è un numero compreso tra 24 e 32. Per specificare gli intervalli di fuori dell'intervallo di 24-32, vedere [Considerazioni aggiuntive per la configurazione di indirizzi IP consentiti elenchi](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). 
+    Specificare gli indirizzi IP IPV4 nel formato nnn. nnn. nnn. nnn dove nnn è un numero compreso tra 0 e 255. È inoltre possibile specificare gli intervalli CIDR (Inter-Domain Routing) nel formato nnn. nnn. nnn. nnn/RR dove RR è un numero compreso tra 24 e 32. Per specificare gli intervalli all'esterno dell'intervallo da 24 a 32, vedere [ulteriori considerazioni quando](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)si configurano gli elenchi di indirizzi IP consentiti. 
 
-    È possibile specificare un massimo di 1273 voci, in cui una voce è un singolo indirizzo IP o un CIDR intervallo di indirizzi IP compreso tra/24 e/32. > Se si inviano messaggi crittografati con TLS, gli intervalli di indirizzi e gli indirizzi IPv6 non sono supportati. 
+    È possibile specificare un massimo di 1273 voci, in cui una voce è un singolo indirizzo IP o un intervallo CIDR di indirizzi IP compreso tra/24 e/32. > se si inviano messaggi crittografati con TLS, gli indirizzi e gli intervalli di indirizzi IPv6 non sono supportati. 
   
-3. Facoltativamente, selezionare la casella di controllo **Abilita elenco sicuro** per impedire mancanti della posta elettronica da determinati mittenti noti. In che modo? Microsoft si abbona a terze parti di mittenti attendibili. Utilizzare questo elenco sicuro significa che queste attendibili i mittenti erroneamente non vengono contrassegnati come posta indesiderata. È consigliabile se si seleziona questa opzione perché consigliabile ridurre il numero di falsi positivi (posta legittima classificata come posta indesiderata) che viene visualizzato. 
+3. Facoltativamente, selezionare la casella di controllo **Abilita elenco sicuro** per evitare che la posta elettronica mancante venga inviata da alcuni mittenti noti. Come? Microsoft sottoscrive le origini di terze parti di mittenti attendibili. L'utilizzo di questo elenco sicuro indica che questi mittenti attendibili non sono stati contrassegnati per la posta indesiderata. Si consiglia di selezionare questa opzione perché dovrebbe ridurre il numero di falsi positivi (una buona posta che è classificata come posta indesiderata) che si riceve. 
     
 4. Fare clic su **salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri predefiniti.
     
@@ -72,9 +74,9 @@ Di seguito sono riportate ulteriori considerazioni cui fare attenzione durante l
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Specificazione di un intervallo CIDR al di fuori dell'intervallo consigliato
 
-Per specificare un intervallo di indirizzi IP CIDR da /1 a /23, è necessario creare una regola di flusso di posta che viene applicato l'intervallo di indirizzi IP che imposta il livello di probabilità di posta indesiderata (SCL) al **filtro della posta indesiderata Bypass** (vale a dire che tutti i messaggi ricevuti all'interno di questo intervallo di indirizzi IP sono impostato su "non di posta indesiderata") e applicare filtri aggiuntivi non viene eseguito dal servizio). Tuttavia, se uno di questi indirizzi IP visualizzato in qualsiasi del blocco proprietaria di Microsoft sono elencati o in qualsiasi il blocco di terze parti sono elencati, questi messaggi ancora da bloccare. È pertanto consigliabile utilizzare l'intervallo di indirizzi IP /24 a /32. 
+Per specificare un intervallo di indirizzi IP CIDR da/1 a/23, è necessario creare una regola del flusso di posta che opera nell'intervallo di indirizzi IP che imposta il livello di probabilità di posta indesiderata per **ignorare il filtro posta** indesiderata (ovvero che tutti i messaggi ricevuti all'interno di questo intervallo di indirizzi IP sono impostato su "non posta indesiderata" e nessun filtro aggiuntivo viene eseguito dal servizio). Tuttavia, se uno qualsiasi di questi indirizzi IP è presente in uno degli elenchi di blocco di proprietà di Microsoft o in uno qualsiasi degli elenchi di blocco di terze parti, questi messaggi verranno comunque bloccati. È pertanto consigliabile utilizzare l'intervallo di indirizzi IP da/24 a/32. 
   
-Per creare la regola di flusso di posta elettronica, eseguire la procedura seguente.
+Per creare la regola del flusso di posta, eseguire la procedura seguente.
   
 1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**.
     
@@ -84,15 +86,15 @@ Per creare la regola di flusso di posta elettronica, eseguire la procedura segue
     
 4. In **Applica la regola se**, selezionare **Il mittente**, quindi scegliere **L'indirizzo IP è in tutti gli intervalli o corrisponde esattamente**.
     
-5. In **specificare indirizzi IP**, specificare l'intervallo di indirizzi IP, fare clic su **Aggiungi** ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi fare clic su **ok**.
+5. In **specificare gli indirizzi IP**, specificare l'intervallo di indirizzi IP, fare clic su](media/ITPro-EAC-AddIcon.gif) **Aggiungi** ![icona, quindi fare clic su **OK**.
     
 6. Nella casella **Effettuare le seguenti operazioni**, impostare l'azione scegliendo **Modificare le proprietà dei messaggi**, quindi **imposta il livello di probabilità di posta indesiderata (SCL)**. Nella casella **specifica SCL**, selezionare **Ignora il filtro di protezione da posta indesiderata**, quindi fare clic su **ok**.
     
-7. Se si desidera, è possibile effettuare le selezioni per la regola di controllo, testare la regola, abilitare la regola di un periodo di tempo specifico e le altre selezioni. Si consiglia di verificare la regola per un periodo prima di imporre. [Le procedure per il flusso di posta elettronica le regole di Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene ulteriori informazioni su queste opzioni. 
+7. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni. 
     
-8. Fare clic su **Salva** per salvare la regola. La regola viene visualizzato nell'elenco delle regole. 
+8. Fare clic su **Salva** per salvare la regola. La regola viene visualizzata nell'elenco delle regole. 
     
-Dopo aver creato e applicato la regola, il servizio Ignora filtro posta indesiderata per l'intervallo di indirizzi IP specificato.
+Dopo aver creato e applicato la regola, il servizio ignora il filtro di posta indesiderata per l'intervallo di indirizzi IP specificato.
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Ambito delle eccezioni dell'elenco di indirizzi IP consentiti per un dominio specifico
 
@@ -110,17 +112,17 @@ A tale scopo, eseguire la procedura seguente:
     
 4. In **Applica la regola se**, selezionare **Il mittente**, quindi scegliere **L'indirizzo IP è in tutti gli intervalli o corrisponde esattamente**.
     
-5. Nella casella **specificare indirizzi IP** , specificare l'indirizzo IP o l'intervallo di indirizzi IP immesso nell'elenco indirizzi IP consentiti, fare clic su **Aggiungi** ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi fare clic su **ok**.
+5. Nella casella **specificare gli indirizzi** IP specificare l'indirizzo IP o l'intervallo di indirizzi IP immesso nell'elenco IP consentiti, fare clic](media/ITPro-EAC-AddIcon.gif)su **Aggiungi** ![icona e quindi fare clic su **OK**.
     
 6. In **Effettuare le seguenti operazioni**, impostare l'azione scegliendo **Modificare le proprietà dei messaggi**, quindi **imposta il livello di probabilità di posta indesiderata (SCL)**. Nella casella **specifica SCL**, selezionare **0**, quindi fare clic su **ok**.
     
 7. Fare clic su **aggiungi eccezione** e in **Tranne se**, selezionare **Il mittente** e scegliere **il dominio è**. 
     
-8. Nella casella **specificare dominio** immettere il dominio per cui si desidera ignorare il filtro posta indesiderata, ad esempio **contosob.com**. Fare clic su **Aggiungi** ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) per spostarsi all'elenco di frasi. Se si desidera aggiungere ulteriori domini come eccezioni e fare clic su **ok** al termine, ripetere l'operazione. 
+8. Nella casella **specificare** il dominio, immettere il dominio per il quale si desidera ignorare il filtro di posta indesiderata, ad esempio **contosob.com**. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere questo passaggio se si desidera aggiungere ulteriori domini come eccezioni e fare clic su **OK** al termine. 
     
-9. Se si desidera, è possibile effettuare le selezioni per la regola di controllo, testare la regola, abilitare la regola di un periodo di tempo specifico e le altre selezioni. Si consiglia di verificare la regola per un periodo prima di imporre. [Le procedure per il flusso di posta elettronica le regole di Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene ulteriori informazioni su queste opzioni. 
+9. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni. 
     
-10. Fare clic su **Salva** per salvare la regola. La regola viene visualizzato nell'elenco delle regole. 
+10. Fare clic su **Salva** per salvare la regola. La regola viene visualizzata nell'elenco delle regole. 
     
 Dopo aver creato e applicato la regola, il filtro posta indesiderata per l'indirizzo o l'intervallo di indirizzi IP specificato viene ignorato solo per l'eccezione di dominio immessa.
   
@@ -131,7 +133,7 @@ Dopo aver creato e applicato la regola, il filtro posta indesiderata per l'indir
 |:-----|
 |![Piccola icona per LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?**         Sono disponibili esercitazioni video gratuite per **Office 365 admins and IT pros** grazie a LinkedIn Learning. |
    
-## <a name="for-more-information"></a>Per altre informazioni
+## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="sectionSection4"> </a>
 
 [Elenchi di mittenti attendibili e bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

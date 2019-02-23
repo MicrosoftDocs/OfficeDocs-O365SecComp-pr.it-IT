@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,14 +15,14 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Office 365 Threat Intelligence e su come iniziare.
-ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
-ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
+ms.openlocfilehash: f116b7a01ab3b27760b597527cc1e5a4440a6586
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051167"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217856"
 ---
-# <a name="get-started-with-threat-intelligence"></a>Informazioni introduttive su Threat Intelligence
+# <a name="get-started-with-threat-intelligence"></a>Introduzione a Threat Intelligence
 
 Se si fa parte del team di sicurezza dell'organizzazione, è possibile utilizzare le funzionalità di Threat Intelligence per proteggere gli utenti dagli attacchi. Office 365 Advanced Threat Protection Plan 2 (in precedenza Office 365 Threat Intelligence) consente agli analisti e agli amministratori di sicurezza di mantenere gli utenti sicuri rilasciando spunti e identificando le azioni in base alle operazioni eseguite nell'ambiente Office 365. Queste informazioni si basano su un repository completo di dati e sistemi di intelligence di minacce per individuare modelli che corrispondono a comportamenti di attacco e attività sospette.
   

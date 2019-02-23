@@ -6,69 +6,69 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Acquisire familiarità con la posizione in cui visualizzare i risultati del processo di analisi di eDiscovery Office 365 avanzate, tra cui le definizioni delle opzioni attività visualizzata.  '
-ms.openlocfilehash: 8f1de53e5548c8721f8fbfdb83374edb18379114
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informazioni su come visualizzare i risultati del processo di analisi in Office 365 Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.  '
+ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531186"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218826"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Visualizzare Analizza i risultati in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In eDiscovery avanzate, stato e i risultati per il processo di analisi possono essere visualizzati in una vasta gamma di vengono visualizzate come descritto di seguito.
+In Advanced eDiscovery, Progress and results for the Analyze Process può essere visualizzato in una vasta gamma di visualizzazioni come descritto di seguito.
   
-## <a name="view-analyze-task-status"></a>Visualizzare lo stato dell'attività di analisi
+## <a name="view-analyze-task-status"></a>Visualizzazione dello stato dell'attività Analyze
 
-In **Prepare \> Analizza \> risultati \> stato delle attività**, lo stato viene visualizzato durante e dopo l'esecuzione del processo di analisi. 
+In **prepara \> analisi \> stato \> attività risultati**, lo stato viene visualizzato durante e dopo l'analisi dell'esecuzione del processo. 
   
 ![Analizzare lo stato delle attività](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
-Le attività visualizzate possono variare in base alle opzioni selezionate. 
+Le attività visualizzate possono variare a seconda delle opzioni selezionate. 
   
-- **ND/ET: il programma di installazione**: consente di preparare per l'esecuzione, ad esempio, imposta i parametri di esecuzione e maiuscole.
+- **ND/et: Setup**: prepara per l'esecuzione, ad esempio set di parametri Run e case.
     
-- **ND/ET: calcolo ND**: analisi quasi duplicati dei processi dei file.
+- **ND/et: calcolo ND**: processi di analisi quasi duplicati dei file.
     
-- **ND/ET: calcolo ET**: analisi dei Thread di posta elettronica esegue sul set di posta elettronica intero.
+- **ND/et: et calculation**: esegue l'analisi del thread di posta elettronica sull'intero set di messaggi di posta elettronica.
     
-- **ND/ET: tabelle pivot e le analogie**: esegue pivot ed elaborazione similarità file.
+- **ND/et: pivot e similitudini**: esegue l'elaborazione di pivot e file di somiglianza.
     
-- **ND/ET: aggiornamento dei metadati**: consente di finalizzare i nuovi dati raccolti nei file di database.
+- **ND/et: aggiornamento dei metadati**: finalizza i nuovi dati raccolti nei file del database.
     
-- **Temi: calcolo temi**: esegue l'analisi dei temi. (Visualizzata solo se è selezionata)
+- **Temi: calcolo**dei temi: esecuzione dell'analisi dei temi. (Visualizzato solo se selezionato).
     
-- **Stato attività**: questa riga viene visualizzata dopo il completamento dell'attività. Durante l'esecuzione di attività, viene visualizzata la durata di esecuzione.
+- **Stato attività**: questa riga viene visualizzata dopo il completamento dell'attività. Mentre le attività sono in esecuzione, viene visualizzata la durata di esecuzione.
     
 > [!NOTE]
-> I risultati di analisi di quasi duplicati e thread di posta elettronica (ND ed ED) si applica al numero di documenti da elaborare. Non include i file duplicati esatti. 
+> I risultati dell'analisi di quasi duplicati e di thread di posta elettronica (ND ed ED) si applicano al numero di documenti da elaborare. Non include file duplicati esatti. 
   
-## <a name="view-near-duplicates-and-email-threads-status"></a>Visualizzare lo stato quasi duplicati e thread di posta elettronica
+## <a name="view-near-duplicates-and-email-threads-status"></a>Visualizzazione near-Duplicates and mail Threads status
 
-I risultati di **destinazione** della popolazione visualizzano il numero di documenti, messaggi di posta elettronica, gli allegati e gli errori della popolazione di destinazione. 
+I risultati della popolazione di **destinazione** visualizzano il numero di documenti, messaggi di posta elettronica, allegati ed errori nella popolazione di destinazione. 
   
-I risultati di **documenti di** visualizzano il numero di tabelle pivot, univoci quasi duplicati e i file duplicati esatti. 
+Nei risultati dei **documenti** vengono visualizzati il numero di pivot, i duplicati univoci e i file duplicati esatti. 
   
-I risultati **tramite posta elettronica** di visualizzare il numero di inclusi, inclusi meno copie inclusi univoche e il resto dei messaggi di posta elettronica. Diversi tipi di risultati di posta elettronica sono: 
+I **** risultati dei messaggi di posta elettronica visualizzano il numero di copie inclusive, inclusive, uniche e inclusive e il resto del messaggio. I diversi tipi di risultati del messaggio di posta elettronica sono: 
   
-- **Inclusivo**: un messaggio di posta elettronica inclusivo è il nodo finale in un thread di posta elettronica e contiene tutta la cronologia precedente di thread. Di conseguenza, il revisore in modo sicuro può concentrarsi sulla posta elettronica inclusivo, senza la necessità di leggere i messaggi precedenti nel thread. 
+- **Inclusive**: un messaggio di posta elettronica incluso è il nodo di terminazione in un thread di posta elettronica e contiene tutta la cronologia precedente di quel thread. Di conseguenza, il revisore può concentrarsi in modo sicuro sul messaggio di posta elettronica incluso, senza la necessità di leggere i messaggi precedenti nel thread. 
     
-- **Inclusivo meno**: un messaggio di posta elettronica inclusivo viene designato come sottrazione inclusi se esistono uno o più allegati diversi associati a elementi padre del messaggio inclusivo. In questo contesto, il termine che padre viene utilizzato per i messaggi posizionati verso l'alto nel thread di posta elettronica o conversazioni incluso in tale posta elettronica inclusivo specifico. Il revisore può utilizzare inclusi meno indicazione come un segnale che anche se potrebbero non essere necessaria controllare il contenuto di elementi padre di posta elettronica inclusi, potrebbe essere utile esaminare gli allegati associati i padri percorso inclusi. 
+- **Inclusione meno**: un messaggio di posta elettronica incluso è definito come incluso meno se sono presenti uno o più allegati diversi associati ai padri dei messaggi inclusivi. In questo contesto, il termine padre viene utilizzato per i messaggi che si trovano verso l'alto sul thread di posta elettronica o le conversazioni incluse in tale messaggio di posta elettronica incluso specifico. Un revisore può utilizzare l'indicazione meno inclusiva come un segnale che, sebbene potrebbe non essere necessario esaminare il contenuto dei genitori inclusi nella posta elettronica, potrebbe essere utile esaminare gli allegati associati ai padri del percorso inclusivo. 
     
-- **Copia inclusivo**: un messaggio di posta elettronica inclusivo viene designato come copia inclusivo in questo caso la copia di un altro messaggio contrassegnato come inclusi o inclusi meno. In altre parole, il messaggio ha lo stesso oggetto e il corpo sotto forma di un altro messaggio inclusivo e, in quanto tale, condivisa si trova nello stesso nodo. Dal momento che i messaggi inclusi copia contengono lo stesso contenuto, è possibile saltare in genere nel processo di revisione. 
+- **Copia inclusiva**: un messaggio di posta elettronica incluso è designato come copia inclusiva se si tratta della copia di un altro messaggi contrassegnato come inclusivo o inclusivo meno. In altre parole, questo messaggio ha lo stesso oggetto e corpo di un altro messaggio inclusivo e, come tale, risiede nello stesso nodo. Poiché i messaggi di copia inclusivi contengono lo stesso contenuto, è possibile che in genere vengano ignorati nel processo di revisione. 
     
-- **Nella parte restante**: indica posta elettronica che non contiene alcun contenuto univoco e pertanto non possono essere suddivisi in uno dei tre categorie precedenti. Questi messaggi di posta elettronica non necessario per la revisione. Se il messaggio contiene un allegato che non è in una versione successiva inclusivo messaggio di posta elettronica, l'allegato potrebbe essere necessario per la revisione. In questo caso viene l'esistenza di un inclusi meno posta elettronica all'interno del thread.
+- **The Rest**: indica la posta elettronica che non contiene contenuti univoci e pertanto non rientra in nessuna delle tre categorie precedenti. Questi messaggi di posta elettronica non devono essere esaminati. Se un messaggio contiene un allegato che non è incluso in una posta elettronica inclusa in un secondo momento, potrebbe essere necessario esaminare l'allegato. Ciò è indicato dall'esistenza di un messaggio di posta elettronica meno incluso all'interno del thread.
     
-I risultati di **allegati** Mostra il numero di allegati, in base a tale tipo come univoci e duplicati. 
+I risultati degli **allegati** visualizzano il numero di allegati, in base al tipo di elementi unici e duplicati. 
   
 ![Risultati quasi duplicati e thread di posta elettronica](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
@@ -76,11 +76,11 @@ I risultati di **allegati** Mostra il numero di allegati, in base a tale tipo co
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sui similarità documento](understand-document-similarity-in-advanced-ediscovery.md)
+[Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   
 [Impostazione delle opzioni di analisi](set-analyze-options-in-advanced-ediscovery.md)
   
 [Impostazione Ignora testo](set-ignore-text-in-advanced-ediscovery.md)
   
-[Impostazioni avanzate di analisi di impostazione](view-analyze-results-in-advanced-ediscovery.md)
+[Impostazione analisi impostazioni avanzate](view-analyze-results-in-advanced-ediscovery.md)
 

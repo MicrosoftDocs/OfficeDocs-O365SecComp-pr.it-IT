@@ -6,85 +6,85 @@ manager: laurawi
 ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - OEC150
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
-description: Come blob in modo che può essere analizzata con AeD alla procedura seguente per importare il contenuto che non vengono archiviato in Office 365 un Azure
-ms.openlocfilehash: ab6c7ac76a159603a34719aa8edb51de3a4fabbb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Come eseguire la procedura per importare il contenuto che non viene archiviato in O365 in un BLOB di Azure in modo che possa essere analizzato con AeD
+ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531464"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217066"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importare i contenuti non Office 365 per l'analisi di Advanced eDiscovery
 
-Non tutti i documenti che potrebbe essere necessario per l'analisi con Office 365 avanzate eDiscovery risiederanno in Office 365. Con il contenuto Non Office 365 importare funzionalità di eDiscovery avanzate che è possibile caricare documenti che non live in Office 365 (ad eccezione dei file PST) in un oggetto blob storage maiuscole collegati e Azure e analizzarli con eDiscovery avanzate. Questa procedura viene illustrato come portare i documenti non Office 365 in eDiscovery avanzate per l'analisi.
+Non tutti i documenti che potrebbe essere necessario analizzare con Office 365 Advanced eDiscovery vivranno in Office 365. Con la caratteristica di importazione di contenuto non Office 365 in Advanced eDiscovery è possibile caricare documenti che non sono presenti in Office 365 (ad eccezione dei file PST) in un caso collegato, BLOB di archiviazione di Azure e analizzarli con Advanced eDiscovery. In questa procedura viene illustrato come portare i documenti non Office 365 in Advanced eDiscovery per l'analisi.
   
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
-> È possibile acquistare una sottoscrizione di componente aggiuntivo di Office 365 avanzate eDiscovery dati spazio di archiviazione per il contenuto non Office 365. Ciò è disponibile solo per il contenuto da analizzare con eDiscovery avanzate. Seguire i passaggi descritti in [acquisto o edit e componenti aggiuntivi per Office 365 per aziende](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) e il componente aggiuntivo di Office 365 avanzate archiviazione eDiscovery di acquisto. 
+> È possibile acquistare un abbonamento a un componente aggiuntivo per l'archiviazione dei dati di Office 365 Advanced eDiscovery per il contenuto non Office 365. Questo è disponibile solo per il contenuto che deve essere analizzato con Advanced eDiscovery. Seguire i passaggi descritti in [buy or Edit and add-on per office 365 for business](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) e acquistare il componente aggiuntivo di archiviazione di Office 365 Advanced eDiscovery. 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-Utilizzando la caratteristica di caricamento Non Office 365, come descritto in questa procedura è necessario disporre:
+Se si utilizza la funzionalità carica non Office 365 come descritto in questa procedura, è necessario disporre di:
   
-- Un Office 365 E3 con sottoscrizione E5 o componente aggiuntivo di conformità avanzate
+- Un Office 365 E3 con un componente aggiuntivo di conformità avanzato o un abbonamento E5
     
-- Tutti i depositari viene caricato il cui contenuto non Office 365 devono disporre E3 con licenze E5 o componente aggiuntivo di conformità avanzate
+- Tutti i depositari il cui contenuto non Office 365 verrà caricato devono avere E3 con licenze di componenti aggiuntivi o E5 con Advanced Compliance
     
-- Un caso eDiscovery esistente
+- Un caso di eDiscovery esistente
     
-- Tutti i file per caricamento raccolte in cartelle in cui vi è una cartella per depositaria e le cartelle è denominato in questo formato *alias@domainname* . *Alias@domainname* deve essere dominio e l'alias di utenti di Office 365. È possibile raccogliere tutte le cartelle *alias@domainname* in una cartella radice. La cartella radice può contenere solo le cartelle *alias@domainname* , non deve esistere alcun file separati nella cartella radice 
+- Tutti i file per il caricamento raccolti in cartelle in cui è presente una cartella per ogni custode e il nome delle cartelle è in questo formato *alias @ NomeDominio* . L' *alias @ DomainName* deve essere Users Office 365 alias and Domain. È possibile raccogliere tutte le cartelle *alias @ DomainName* in una cartella radice. La cartella radice può contenere solo le cartelle *alias @ DomainName* , non devono essere presenti file liberi nella cartella radice. 
     
-- Un account che è un eDiscovery Manager o un amministratore di eDiscovery
+- Un account che sia un Manager di eDiscovery o un amministratore di eDiscovery
     
-- [Microsoft Azure archiviazione strumenti](https://aka.ms/downloadazcopy) installati in un computer che dispone dell'accesso alla struttura di cartelle del contenuto non Office 365. 
+- [Strumenti di archiviazione di Microsoft Azure](https://aka.ms/downloadazcopy) installati in un computer che ha accesso alla struttura di cartelle di contenuto non di Office 365. 
     
-## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in eDiscovery avanzate
+## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in Advanced eDiscovery
 
-1. Come eDiscovery Manager o eDiscovery amministratore, aprire **eDiscovery**e aprire quello che verranno caricati i dati non Office 365 in. Se è necessario creare un caso, vedere [gestione dei casi di eDiscovery in Office 365 Security &amp; centro conformità](manage-ediscovery-cases.md)
+1. In qualità di Manager di eDiscovery o amministratore di eDiscovery, aprire **eDiscovery**e aprire il caso in cui verranno caricati i dati non di Office 365. Se è necessario creare un caso, vedere [gestire i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](manage-ediscovery-cases.md)
     
-2. Fare clic su **passa a eDiscovery avanzate**
+2. Fare clic su **cambia in Advanced eDiscovery**
     
-3. In **tipo di origine** selezionare **dati Non Office 365**.
+3. In **tipo di origine** selezionare **dati non Office 365**.
     
-4. Fare clic su **Aggiungi contenitore**. Nome del contenitore e aggiungere una descrizione.
+4. Fare clic su **Aggiungi contenitore**. DeNominare il contenitore e aggiungere una descrizione.
     
-5. Selezionare il contenitore appena aggiunto dall'elenco del contenitore e copiare l'URL che verrà visualizzato nel riquadro dei dettagli contenitore e quindi chiusura il riquadro
+5. Selezionare il contenitore appena aggiunto dall'elenco contenitore e copiare l'URL visualizzato nel riquadro dei dettagli del contenitore e quindi chiudere il riquadro.
     
-6. Aprire un prompt dei comandi come amministratore e passare alla cartella in cui si dispone AzCopy installato...
+6. Aprire un prompt dei comandi come amministratore e cambiare directory nella cartella in cui è installato AzCopy.
     
-7. Creare la riga di comando AzCopy per caricare i file simile alla seguente:
+7. Creare la riga di comando di AzCopy per caricare i file in questo modo:
     
-    /Origine AzCopy: " *percorso completo della cartella radice sul computer locale* " /Dest: " *URL contenitore fino a ma non è incluso il?* " /DestSAS: " *resto dell'url contenitore dal? alla fine* "/ S. 
+    AzCopy/Source: " *percorso completo della cartella radice nel computer locale* "/dest: " *URL del contenitore fino a ma non incluso il?* "/DestSAS: " *resto dell'URL del contenitore dall'? fino alla fine* "/S. 
     
-    Ad esempio, utilizzo di questi valori: 
+    Ad esempio, utilizzando questi valori: 
     
-  - cartella radice - C:\Collected dati 
+  - cartella radice-dati C:\Collected 
     
-  - url contenitore - https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;si = NonOfficeData15 %7 C 0&amp;sig = % Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA 3D
+  - URL del contenitore https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp-; SR =&amp;c si = NonOfficeData15%&amp;7C0 sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3D
     
-    la sintassi della riga di comando AzCopy è:
+    la sintassi della riga di comando di AzCopy è:
     
      `AzCopy /Source:"C:\CollectedData" /Dest:"https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17" /DestSAS:"?sv=2015-04-05&amp;sr=c&amp;si=NonOfficeData15%7C0&amp;sig=Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA%3D" /S`
     
-    Per ulteriori informazioni su Azcopy sintassi, vedere [il trasferimento dei dati con AzCopy su Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
+    Per ulteriori informazioni sulla sintassi di Azcopy, vedere [trasferire dati con la Azcopy in Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
-    > Deve essere presente una cartella principale per utente e il nome della cartella deve essere nel formato *alias@domainname* . 
+    > Deve essere presente una cartella radice per utente e il nome della cartella deve essere nel formato *alias @ NomeDominio* . 
   
-8. Dopo aver completato le cartelle del caricamento, tornare a eDiscovery avanzate. Il contenuto delle cartelle che è stata caricata è ora pronto per l'elaborazione di eDiscovery avanzate. Selezionare il contenitore e fare clic sul pulsante di processo. Per ulteriori informazioni su eDiscovery avanzate vedere elaborazione, [eseguita la funzionalità di processo e caricamento dei dati in Office 365 avanzate eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+8. Dopo aver completato il caricamento delle cartelle, tornare a Advanced eDiscovery. Il contenuto delle cartelle che è stato caricato è ora pronto per essere elaborato in Advanced eDiscovery. Selezionare il contenitore e fare clic sul pulsante elabora. Per ulteriori informazioni sull'elaborazione avanzata di eDiscovery, vedere, [eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
     > [!IMPORTANT]
-    > Dopo il contenitore viene elaborato correttamente di eDiscovery avanzate, non sarà in grado di aggiungere nuovo contenuto per l'archiviazione SAS in Azure. Se si raccolta contenuto aggiuntivo e si desidera aggiungere al caso di analisi avanzate eDiscovery, è necessario creare un nuovo contenitore di **dati Non Office 365** e ripetere questa procedura. 
+    > Dopo che il contenitore è stato elaborato correttamente in Advanced eDiscovery, non sarà più possibile aggiungere nuovo contenuto allo spazio di archiviazione SAS in Azure. Se si raccolgono contenuto aggiuntivo e si desidera aggiungerlo al caso per l'analisi avanzata di eDiscovery, è necessario creare un nuovo contenitore di **dati non Office 365** e ripetere questa procedura. 
   
     > [!NOTE]
-    > Se il contenitore *non elabora correttamente a causa di problemi dei nomi di cartella* e quindi risolvere i problemi, è comunque necessario creare un nuovo contenitore e la riconnessione e caricare nuovamente utilizzando le procedure descritte in questo articolo. 
+    > Se il contenitore non *elabora correttamente a causa di problemi di denominazione delle cartelle* e quindi si corregge i problemi, sarà comunque necessario creare un nuovo contenitore e riconnetterlo e caricarlo nuovamente utilizzando le procedure illustrate in questo articolo. 
   
 

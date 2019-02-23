@@ -6,27 +6,27 @@ manager: laurawi
 ms.date: 6/12/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
-description: L'organizzazione potrebbe essere necessario mantenere documenti per un periodo di tempo a causa di conformità legale, o altri requisiti aziendali. Tuttavia, se l'organizzazione consente di mantenere documenti più necessario, creare inutili rischi legali. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo rischio eliminando i documenti in un sito dopo un periodo di tempo specifico, ad esempio, è possibile eliminare documenti OneDrive degli utenti per Business siti cinque anni dopo che sono stati creati i documenti.
-ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: All'organizzazione potrebbe essere richiesto di conservare i documenti per un determinato periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva documenti più lunghi di quelli necessari, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
+ms.openlocfilehash: 9f1355e8a522900aa47ef20ef580918ab5584b99
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002669"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218436"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 
 > [!IMPORTANT]
-> Spostarsi avanti, è consigliabile utilizzare un criterio di conservazione o etichette create per la protezione &amp; centro conformità anziché un criterio di eliminazione del documento. Criteri di eliminazione dei documenti continuerà a funzionare Affianca i criteri di conservazione, ma se è necessario mantenere o eliminare contenuto via Internet in Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [utilizzare un criterio di conservazione invece di queste funzionalità](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> Se si procede in avanti, si consiglia di utilizzare un criterio di conservazione o etichette create &amp; nel centro conformità di sicurezza anziché un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
-L'organizzazione potrebbe essere necessario mantenere documenti per un periodo di tempo a causa di conformità legale, o altri requisiti aziendali. Tuttavia, se l'organizzazione consente di mantenere documenti più necessario, creare inutili rischi legali. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo rischio eliminando i documenti in un sito dopo un periodo di tempo specifico, ad esempio, è possibile eliminare documenti OneDrive degli utenti per Business siti cinque anni dopo che sono stati creati i documenti.
+All'organizzazione potrebbe essere richiesto di conservare i documenti per un determinato periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva documenti più lunghi di quelli necessari, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
   
-Criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, è possibile:
+I criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, è possibile:
   
 - Consentire ai proprietari del sito di scegliere tra i criteri che crei e gestisci centralmente. Puoi anche consentire ai proprietari del sito di rifiutare il criterio se decidono che non è adatto ai propri contenuti.
     
@@ -36,7 +36,7 @@ Criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, è
     
 - Creare un criterio che include numerose regole di eliminazione tra cui un proprietario del sito può scegliere.
     
-Creare e gestire i criteri di eliminazione dei documenti tramite l'interfaccia di criteri di eliminazione di documenti, è possibile trovare un criterio di **conservazione** in Office 365 Security &amp; centro conformità. In alternativa, è possibile creare il centro criteri manualmente mediante [la creazione della raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scegliere **Centro conformità criteri** nella scheda **organizzazione** . Ogni tenant può avere un solo centro di criteri di eliminazione documenti e verrà creato automaticamente quando si avvia la sicurezza &amp; centro conformità. 
+È possibile creare e gestire i criteri di eliminazione dei documenti utilizzando il centro criteri di eliminazione del documento, **** che può essere trovato in conservazione &amp; nel centro sicurezza e conformità di Office 365. In alternativa, è possibile creare il centro criteri manualmente [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scEgliendo **centro criteri di conformità** nella scheda **organizzazione** . Ogni tenant può disporre di un solo centro criteri di eliminazione dei documenti e verrà creato automaticamente se si inizia dal centro sicurezza &amp; e conformità. 
   
 ![Home page del Centro criteri per l'eliminazione dei documenti](media/IP-Document-Deletion-Policy-Center-home-page.png)
   
@@ -52,7 +52,7 @@ Oltre ai criteri di eliminazione dei documenti, Office 365 fornisce questi crite
     
 Ogni tipo di criterio è adatto per un tipo specifico di dati o di siti. Ad esempio, la tua organizzazione potrebbe avere un sito altamente strutturato che usa tipi di contenuti, come ad esempio un sito finanziario di contratti o una knowledge base di articoli. In questo caso, puoi utilizzare i criteri del tipo di contenuto. Oppure, la tua organizzazione potrebbe dover conservare documenti legali. In tal caso, potresti usare i tipi di contenuti e un Centro record per implementare un piano di file.
   
-Criteri di eliminazione dei documenti non sostituiscano i record informazioni o Gestione criteri di gestione, che funzionino al meglio con tipi di contenuto e dati strutturati. In realtà, è consigliabile utilizzare criteri di eliminazione dei documenti quando è necessario gestire globalmente l'eliminazione automatica di dati non strutturati, ad esempio OneDrive per i siti e siti del team.
+I criteri di eliminazione dei documenti non sostituiscono i criteri di gestione dei record o di gestione delle informazioni, che funzionano meglio con i tipi di contenuto strutturati. In alternativa, è consigliabile utilizzare i criteri di eliminazione dei documenti quando è necessario gestire in modo generale l'eliminazione automatica di dati non strutturati, ad esempio i siti di OneDrive for business e i siti del team.
   
 ![Diagramma con opzione di conservazione per contenuto siti](media/IP-Retention-policies-for-site-content.png)
   
@@ -76,7 +76,7 @@ Se un criterio contiene più di una regola, i proprietari del sito possono selez
   
 ## <a name="policies-and-assignments"></a>Criteri e assegnazioni
 
-Dopo aver creato un criterio di eliminazione dei documenti, è possibile assegnare a un modello di raccolta siti, ad esempio, è possibile assegnare un criterio a OneDrive for modello aziendale in modo che includa tutte OneDrive sito utente. Quando si assegna un criterio a un modello di raccolta siti, si applica a tutte le raccolte siti già create da tale modello, oltre a qualsiasi raccolta di siti creati in futuro da tale modello.
+Dopo aver creato un criterio di eliminazione dei documenti, è possibile assegnarlo a un modello di raccolta siti, ad esempio, è possibile assegnare un criterio al modello di OneDrive for business in modo che includa il sito di OneDrive di ogni utente. Quando si assegna un criterio a un modello di raccolta siti, questo si applica a tutte le raccolte siti già create da tale modello, oltre alle raccolte siti create da tale modello in futuro.
   
 ![Pagina di scelta di un modello con opzione OneDrive](media/IP-Choose-a-template.png)
   
@@ -90,19 +90,19 @@ Invece di rendere un solo criterio obbligatorio, puoi anche assegnare diversi cr
   
 ### <a name="one-rule-or-several-rules-to-choose-from"></a>Una o più regole diverse tra cui scegliere
 
-A sua volta, ogni criterio può contenere molte regole, ad esempio, un criterio di eliminazione per documenti aziendali generici può contenere due regole:
+A sua volta, ogni criterio può contenere molte regole, ad esempio un criterio di eliminazione per i documenti aziendali generali può avere due regole:
   
-- I documenti che non è necessario conservazione basati su obblighi legali o esigenze aziendali non devono essere conservati per più di un anno dalla creazione.
+- I documenti che non necessitano di una conservazione basata su obblighi giuridici o in corso devono essere conservati per più di un anno dalla creazione.
     
 - I documenti necessari per l'uso aziendale continuo e attivo che sono necessari per più di un anno, non devono essere conservati per più di tre anni dalla creazione.
     
-Un proprietario del sito può determinare che il sito contiene aziendali generici documenti, selezionare il criterio di eliminazione e quindi selezionare la regola appropriata dal criterio. È possibile selezionare solo una regola dal criterio attualmente applicato al sito (non da qualsiasi criterio) e la regola verrà applicata a tutte le raccolte documenti nel sito.
+Un proprietario del sito può determinare che il proprio sito contenga documenti aziendali generali, selezionare questo criterio di eliminazione e quindi selezionare la regola appropriata dal criterio. È possibile selezionare una regola solo dai criteri attualmente applicati al sito (non da qualsiasi criterio) e la regola viene applicata a tutte le raccolte documenti del sito.
   
 ## <a name="the-relationship-of-site-collections-policies-and-rules"></a>La relazione tra raccolte siti, criteri e regole
 
 La relazione di base è la seguente:
   
-Una raccolta siti o un modello di raccolta siti può disporre di uno o più criteri a esso assegnati e ognuno di questi criteri può avere uno o più regole. Tuttavia, può esistere solo un criterio che è attivo per ogni sito e può esistere una sola regola di eliminazione è attiva in qualsiasi momento per le raccolte all'interno del sito.
+Una raccolta siti o un modello di raccolta siti può disporre di uno o più criteri assegnati e ognuno di questi criteri può disporre di una o più regole. Tuttavia, può essere presente un solo criterio attivo per sito e può essere presente una sola regola di eliminazione attiva in qualsiasi momento per le raccolte all'interno del sito.
   
 ![Diagramma con relazione tra criteri](media/IP-Two-policies-four-rules.png)
   
@@ -112,7 +112,7 @@ Come le autorizzazioni, la navigazione e altre funzionalità del sito, i criteri
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Assegnare per la prima volta criteri di eliminazione dei documenti
 
-È importante tenere presente che il periodo di tempo specificato per un documento di un criterio di eliminazione indica il tempo in quanto il documento è stato creato o modificato, non l'ora in quanto è stato assegnato il criterio. Si potrebbe, ad esempio, creare un criterio di eliminazione di documenti che elimina definitivamente documenti due anni dopo che sono stati creati e quindi assegnare il criterio a un modello di raccolta siti da cui diverse raccolte siti sono state create quattro o cinque anni. In questo caso, è probabile che le raccolte siti esistenti contengano molti documenti che già hanno superati i due anni specificato mediante il criterio di eliminazione, pertanto una grande quantità di contenuto verranno eliminate subito dopo aver assegnato il criterio di eliminazione dei documenti per il primo Data e ora.
+È importante comprendere che il periodo di tempo specificato per un criterio di eliminazione dei documenti significa che il tempo dopo la creazione o la modifica del documento non è il momento in cui è stato assegnato il criterio. È possibile, ad esempio, creare un criterio di eliminazione dei documenti che elimini definitivamente il documento due anni dopo la creazione e quindi assegnare tale criterio a un modello di raccolta siti da cui sono state create diverse raccolte siti quattro o cinque anni fa. In questo caso, è probabile che le raccolte siti esistenti contengano molti documenti che sono già precedenti ai due anni specificati dai criteri di eliminazione, il che significa che molti contenuti verranno eliminati subito dopo aver assegnato il criterio di eliminazione dei documenti per il primo tempo.
   
 Quando assegni il criterio per la prima volta, tutti i documenti nel sito vengono valutati e, se soddisfano il criterio, verranno eliminati. Questo vale per tutti i documenti esistenti, non solo per quelli creati dal momento dell'assegnazione del criterio. Ricorda inoltre che il periodo di tempo fa riferimento all'età di ogni documento, non al periodo dalla prima assegnazione del criterio.
   
@@ -122,15 +122,15 @@ Pertanto, prima di assegnare un criterio a un sito per la prima volta, dovresti 
 
 Dopo aver assegnato i criteri a una raccolta di siti, i proprietari del sito usano il link **Criteri di eliminazione dei documenti** nella pagina **Impostazioni del sito** per visualizzare e applicare i criteri disponibili per il sito. 
   
-Il collegamento di **Criteri di eliminazione dei documenti** non viene visualizzato a meno che non sono stati assegnati i criteri per la raccolta siti. Inoltre, il collegamento non viene visualizzata immediatamente dopo che i criteri assegnati al sito, può richiedere fino a 24 ore da quando i criteri vengono assegnati a quando viene visualizzato il collegamento di **Criteri di eliminazione dei documenti** . 
+Il collegamento **criteri di eliminazione dei documenti** non verrà visualizzato a meno che non siano stati assegnati criteri alla raccolta siti. Inoltre, il collegamento non viene visualizzato subito dopo che i criteri sono stati assegnati al sito, ma può richiedere fino a 24 ore da quando i criteri vengono assegnati quando viene visualizzato il collegamento **criteri di eliminazione dei documenti** . 
   
 ## <a name="permissions"></a>Autorizzazioni
 
 I membri del team di conformità che useranno il Centro criteri per l'eliminazione dei documenti necessitano delle autorizzazioni per il centro criteri e per le raccolte dei siti alle quali verranno applicati i criteri. Ti consigliamo di:
   
-1. Creare un gruppo di sicurezza contenente tutti gli utenti del centro di criteri di eliminazione documenti, è molto probabile che il team di gestione criteri di conformità. Per ulteriori informazioni, vedere [Gruppi di sicurezza Manage Mail-Enabled](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
+1. Creare un gruppo di sicurezza che contenga tutti gli utenti del centro criteri di eliminazione dei documenti, molto probabilmente il team di gestione di criteri di conformità. Per ulteriori informazioni, vedere [gestire i gruppi di sicurezza abilitati alla posta elettronica](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
     
-2. Nell'interfaccia di criteri di eliminazione di documenti, assegnare raccolta siti di diritti di proprietario per il gruppo di sicurezza. Per ulteriori informazioni, vedere [le autorizzazioni per gli amministratori della raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404346) . 
+2. Nel centro criteri di eliminazione dei documenti assegnare le autorizzazioni per il proprietario della raccolta siti al gruppo di sicurezza. Per ulteriori informazioni, vedere [autorizzazioni per gli amministratori di raccolte siti](https://go.microsoft.com/fwlink/p/?LinkID=404346) . 
     
 3. In ogni raccolta di siti alla quale devi assegnare criteri di eliminazione dei documenti, assegna le autorizzazioni per i proprietari delle raccolte di siti al gruppo di sicurezza.
     

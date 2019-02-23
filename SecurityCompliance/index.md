@@ -1,27 +1,20 @@
 ---
-title: Conformità e sicurezza di office 365
-description: Se l'organizzazione deve proteggere i dati o essere conforme agli standard legale o normativo, è possibile aprire nella giusta posizione. Di seguito sono contenute informazioni sicurezza e conformità in Office 365
+title: Sicurezza e conformità di Office 365
+description: 'Se l''organizzazione ha la necessità di proteggere i dati o di rispettare gli standard legali o normativi, si è nel posto giusto. In questa sezione è possibile conoscere la sicurezza e la conformità in Office 365'
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.service: office-365
-ms.collection: M365-security-compliance
+ms.service: O365-seccomp
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995177"
 ---
-# <a name="office-365-security-and-compliance"></a>Conformità e sicurezza di office 365
+# <a name="office-365-security-and-compliance"></a>Sicurezza e conformità di Office 365
 
-Se l'organizzazione deve proteggere i dati o essere conforme agli standard legale o normativo, è possibile aprire nella giusta posizione. Le aree seguenti sono il primo punto per acquisire familiarità con sicurezza e conformità in Office 365.
+Se l'organizzazione ha la necessità di proteggere i dati o di rispettare gli standard legali o normativi, si è nel posto giusto. Le aree seguenti sono la prima tappa per conoscere la sicurezza e la conformità in Office 365.
 
 <ul class="cardsF panelContent">
     <li>
@@ -34,8 +27,8 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Guida introduttiva - primi 30 giorni</h3>
-                <p>Queste attività di conformità e la protezione di base in modo rapido e avere un impatto minimo per gli utenti: <br> - <a href="office-365-secure-score.md" target="_blank">Controllare punteggio protetto</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Attivare la registrazione di controllo</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurare la sicurezza tenant</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connettere Cloud App sicurezza</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Abilitare la protezione con identità Azure Active Directory</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteggere i file e i siti di SharePoint</a> <br> - <a href="configure-supervision-policies.md">Abilitare i criteri di governance di dati</a> </p>
+                        <h3>Introduzione-primi 30 giorni</h3>
+                <p>Queste attività di base per la sicurezza e la conformità possono essere eseguite rapidamente e hanno un impatto minimo sugli utenti: <br> - <a href="office-365-secure-score.md" target="_blank">Verifica Punteggio sicuro</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Abilitare la registrazione di controllo</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurare la protezione tenant</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Connettere cloud app Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Abilitazione di Azure AD Identity Protection</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteggere siti e file di SharePoint</a> <br> - <a href="configure-supervision-policies.md">Abilitazione di un criterio di governance dei dati</a> </p>
                     </div>
                 </div>
             </div>
@@ -51,8 +44,8 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Passaggi successivi all'interno di 90 giorni</h3>
-                        <p>Queste attività un po' di tempo maggiore pianificare e implementare ma aumentare notevolmente le condizioni di sicurezza generali: <br> - <a href="attack-simulator.md">Condurre simulazioni attacco</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Responsabile della conformità di revisione</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurare la gestione delle identità privilegiato Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurare la gestione dei privilegi di accesso</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Abilitare l'autenticazione a più fattori</a> <br> - <a href="protect-against-threats.md">Esaminare i criteri di protezione aggiornamento &</a> </p>
+                        <h3>Passaggi successivi entro 90 giorni</h3>
+                        <p>Queste attività richiedono un po' più di tempo per pianificare e implementare, ma aumentano notevolmente la posizione di sicurezza: <br> - <a href="attack-simulator.md">Eseguire simulazioni di attacco</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Revisione di Compliance Manager</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurare la gestione delle identità con privilegi di Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurare la gestione degli accessi con privilegi</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Abilitare l'autenticazione a più fattori</a> <br> - <a href="protect-against-threats.md">Esaminare i criteri di protezione dell'aggiornamento di &</a> </p>
                     </div>
                 </div>
             </div>
@@ -69,11 +62,11 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                     </div>
                     <div class="cardText">
                         <h3>Dopo 90 giorni</h3>
-                        <p>Queste sono le misure di sicurezza importanti che generano sul lavoro precedente:<br>
-                        - <a href="office-365-secure-score.md" target="_blank">Esaminare il punteggio protetto</a><br>
-                        - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Protezione dell'accesso privilegiato implementare</a><br>
-                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Utilizzare la protezione dell'identità di Azure Active Directory</a><br>
-                        - <a href="protect-against-threats.md">Filtrare i criteri di protezione</a><br></p>
+                        <p>Di seguito sono riportate importanti misure di sicurezza che si basano su lavori precedenti:<br>
+                        - <a href="office-365-secure-score.md" target="_blank">Esaminare il Punteggio sicuro</a><br>
+                        - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implementare un accesso con privilegi sicuri</a><br>
+                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Utilizzo di Azure AD Identity Protection</a><br>
+                        - <a href="protect-against-threats.md">Criteri di protezione affinamento</a><br></p>
                     </div>
                 </div>
             </div>
@@ -82,7 +75,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
 </ul>
 
 <hr>
-<h2>Sicurezza e conformità risorse</h2>
+<h2>Risorse per la sicurezza e la conformità</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -95,9 +88,9 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Gestione della sicurezza</h3>
-                        <p><a href="security-roadmap.md">Roadmap di protezione di Office 365</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft sicura punteggio</a></p>
+                        <h3>Protezione del soggiorno</h3>
+                        <p><a href="security-roadmap.md">Guida di orientamento alla sicurezza di Office 365</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft Secure Score</a></p>
                         <p><a href="https://protection.office.com" target="_blank">Centro sicurezza e conformità di Office 365</a></p>
                     </div>
                 </div>
@@ -114,7 +107,7 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Garantire la conformità</h3>
+                        <h3>Rimanere conforme</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Centro protezione Microsoft</a></p>
                         <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service Trust Portal</a></p>
                     </div>
@@ -132,9 +125,9 @@ Se l'organizzazione deve proteggere i dati o essere conforme agli standard legal
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Restare sempre aggiornati</h3>
+                        <h3>Rimanere aggiornati</h3>
                         <p><a href="https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library" target="_blank">Descrizioni dei servizi di Office 365</a></p>
-                        <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Blog del Team di protezione di Office 365</a></p>
+                        <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Blog del team di sicurezza di Office 365</a></p>
                         <p><a href="https://www.microsoft.com/msrc" target="_blank">Microsoft Security Response Center</a></p>
                     </div>
                 </div>

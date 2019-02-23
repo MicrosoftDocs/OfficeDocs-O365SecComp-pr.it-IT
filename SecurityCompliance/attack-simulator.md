@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,126 +14,126 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Amministratore globale di Office 365, è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e trovare gli utenti vulnerabili prima di un attacco reale accede a un'azienda.
-ms.openlocfilehash: 77de6af6546ae584e3bd25c0d1a59d9f26928f33
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
+ms.openlocfilehash: ba5658dfa9075b5779f8ca09ccad3547dbddcbb5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995167"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216276"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
-**Riepilogo** Se si è un amministratore globale di Office 365 e l'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md), è possibile utilizzare simulatore di attacco per l'esecuzione di scenari di attacco realistico all'interno dell'organizzazione. Ciò consente di identificare e individuare gli utenti vulnerabili prima di un attacco reale un impatto significativo sulla parte inferiore. In questo articolo per ulteriori informazioni.
+**Riepilogo** Se si è un amministratore globale di Office 365 e l'organizzazione dispone di [office 365 Threat Intelligence](office-365-ti.md), è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
 
 > [!IMPORTANT]
-> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partire da febbraio 2019 e distribuita nei prossimi mesi, Office 365 Threat Intelligence sta diventando Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Gli attacchi
 
-Tre tipi di simulazioni attacco sono attualmente disponibili:
+Sono attualmente disponibili tre tipi di simulazioni di attacco:
   
-- [Attacco spear phishing nome di visualizzazione](attack-simulator.md#spearphish)
+- [Nome visualizzato Spear-attacco di phishing](attack-simulator.md#spearphish)
     
-- [Attacco di tipo spray password](attack-simulator.md#passwordspray)
+- [Attacco spray per la password](attack-simulator.md#passwordspray)
     
-- [Attacchi di forza bruta attacco password](attack-simulator.md#bruteforce)
+- [Attacco per la password con forza bruta](attack-simulator.md#bruteforce)
     
-Per un attacco in cui deve essere avviato correttamente, si utilizza l'autenticazione a più fattori l'account utilizzato per eseguire gli attacchi di tipo simulati. Inoltre, è necessario essere un amministratore globale di Office 365.
+Per l'avvio di un attacco, è possibile utilizzare l'autenticazione a più fattori nell'account che si sta utilizzando per eseguire attacchi simulati. Inoltre, è necessario essere un amministratore globale di Office 365.
   
 > [!NOTE]
-> Supporto per l'accesso condizionale saranno presto disponibili. 
+> Il supporto per l'accesso condizionale è disponibile a breve. 
   
-Per accedere a simulatore di attacco, in sicurezza &amp; centro conformità, scegliere **gestione rischio** \> **simulatore di attacco**.
+Per accedere a simulatore di attacco, &amp; nel centro sicurezza e conformità scegliere **Threat Management** \> **Attack Simulator**.
   
 ## <a name="before-you-begin"></a>Prima di iniziare...
 
-Verificare che la propria organizzazione soddisfino i requisiti seguenti per simulatore di attacco di tipo:
+Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per il simulatore di attacco:
       
-- Messaggio di posta elettronica dell'organizzazione è ospitata in Exchange Online. (Simulatore di attacco di tipo non disponibile per i server di posta elettronica locale).
+- La posta elettronica dell'organizzazione è ospitata in Exchange Online. (Attack Simulator non è disponibile per i server di posta elettronica locali.)
     
-- Essere un amministratore globale di Office 365
+- Si è un amministratore globale di Office 365
     
 - L'organizzazione utilizza [l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
-- L'organizzazione dispone di [Business Intelligence di rischio di Office 365](office-365-ti.md)con attacco simulatore visibili nella protezione &amp; centro conformità (Vai alla **gestione delle minacce** \> **simulatore di attacco**)<br/>![Gestione di rischio - simulatore di attacco](media/ThreatMgmt-AttackSimulator.png)
+- l'organizzazione dispone [di Office 365 threat Intelligence](office-365-ti.md), con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat management** \> **Attack simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
 
     
-## <a name="display-name-spear-phishing-attack"></a>Attacco spear phishing nome di visualizzazione
+## <a name="display-name-spear-phishing-attack"></a>Nome visualizzato Spear-attacco di phishing
 
-Il phishing è un termine generico per un ampio gruppo di attacchi classificato come stile attacchi. Questo attacco viene trattata principalmente spear phishing, un attacco più mirato è destinato a un gruppo specifico di singoli utenti o un'organizzazione. In genere, eseguire un attacco personalizzato con alcuni esplorazione delle e utilizzando un nome visualizzato che genera relazione di trust in destinatario, ad esempio un messaggio di posta elettronica è simile a quello proviene da un dirigente all'interno dell'organizzazione.
+Il phishing è un termine generico per una vasta serie di attacchi classificati come un attacco stile di social engineering. Questo attacco è concentrato sul phishing Spear, un attacco più mirato che si rivolge a un gruppo specifico di persone o di un'organizzazione. In genere, un attacco personalizzato con alcuni ricognizione eseguito e utilizzando un nome visualizzato che genererà la fiducia nel destinatario, ad esempio un messaggio di posta elettronica che sembra provenire da un dirigente all'interno dell'organizzazione.
   
-Questo attacco è incentrata su che consente di modificare che viene visualizzato il messaggio di origine per la modifica dell'indirizzo di origine e nome visualizzato. Quando gli attacchi di phishing spear esito positivo, cybercriminali accedere alle credenziali degli utenti.
+Questo attacco è incentrato sull'eventualità di modificare il messaggio a cui sembra abbia avuto origine cambiando il nome visualizzato e l'indirizzo di origine. Quando gli attacchi Spear-phishing hanno esito positivo, i criminali informatici accedono alle credenziali degli utenti.
   
-### <a name="to-simulate-a-spear-phishing-attack"></a>Per simulare un attacco di spear phishing
+### <a name="to-simulate-a-spear-phishing-attack"></a>Per simulare un attacco di Spear-phishing
 
-![Comporre corpo del messaggio di posta elettronica](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![Comporre il corpo della posta elettronica](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-È possibile creare l'editor HTML avanzata direttamente nel campo del **corpo del messaggio di posta elettronica** direttamente o lavorare con origine HTML.
+È possibile creare l'editor HTML RTF direttamente nel campo **corpo del messaggio di posta elettronica** o collaborare con l'origine HTML.
   
-1. Nella [protezione &amp; centro conformità](https://protection.office.com), scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)scegliere **Threat Management** \> **Attack Simulator**.
     
-2. Specificare un nome significativo campagna per l'attacco o selezionare un modello. <br/>![Pagina iniziale di phishing](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+2. Specificare un nome di campagna significativo per l'attacco o selezionare un modello. <br/>![Pagina iniziale di phishing](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
-3. Consente di specificare i destinatari di destinazione. Può trattarsi di singoli utenti o gruppi all'interno dell'organizzazione. Ogni destinatario di destinazione deve essere Online cassetta postale di Exchange in modo che l'attacco abbia esito positivo. <br/>![Selezione dei destinatari](media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+3. Specificare i destinatari di destinazione. Può trattarsi di singoli o gruppi nell'organizzazione. Ogni destinatario di destinazione deve disporre di una cassetta postale di Exchange online in modo che l'attacco abbia esito positivo. <br/>![Selezione destinatario](media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
   
-4. Configurare i dettagli di posta elettronica di Phishing. <br/>![Configurare i dettagli di posta elettronica](media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)<br/>La formattazione HTML può essere complessa o base quando la campagna le esigenze. Come formato di posta elettronica HTML, è possibile inserire immagini e testo per il miglioramento believability. È possibile specificare in quali il messaggio ricevuto come appare nel client di posta elettronica destinatario.
+4. Configurare i dettagli di posta elettronica di phishing. <br/>![Configurare i dettagli della posta elettronica](media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)<br/>La formattazione HTML può essere complessa o di base come necessario per la campagna. Poiché il formato del messaggio di posta elettronica è HTML, è possibile inserire immagini e testo per migliorare la credibilità. È possibile controllare l'aspetto del messaggio ricevuto nel client di posta elettronica di ricezione.
     
-5. Specificare il testo del campo **da (Name)** . Questo è il campo che indica il **Nome visualizzato** nel client di posta elettronica destinatario. 
+5. Specificare il testo per il campo **from (Name)** . Si tratta del campo che viene visualizzato nel **nome visualizzato** nel client di posta elettronica di ricezione. 
     
-6. Consente di specificare il testo o il campo **da** . Questo è il campo che indica l'indirizzo di posta elettronica del mittente nel client di posta elettronica destinatario.<br/>È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo consentirà l'indirizzo di posta elettronica effettivamente risolvere nel client ricevente semplificazione un modello di protezione estremamente elevata), oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere, ma è necessario dopo il formato di un indirizzo SMTP valido, ad esempio user@domainname.extension. 
+6. Specificare il testo o il campo **da** . Si tratta del campo che viene visualizzato come indirizzo di posta elettronica del mittente nel client di posta elettronica di ricezione.<br/>È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo l'indirizzo di posta elettronica viene effettivamente risolto nel client di ricezione, facilitando un modello di attendibilità molto elevato) oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere effettivamente, ma ha bisogno di seguire il formato di un indirizzo SMTP valido, ad esempio User @ NomeDominio. Extension. 
   
-7. Utilizzando il selettore di riepilogo a discesa, selezionare un URL di server di accesso di Phishing che indica il tipo di contenuto che è necessario nell'attacco. URL con temi diversi, vengono forniti da scegliere, ad esempio documenti recapito tecnici, paghe e stipendi e così via. Si tratta in modo efficace l'URL assegnato agli utenti vengono chiesto di fare clic su.
+7. Usando il selettore a discesa, selezionare un URL del server di accesso di phishing che rispecchi il tipo di contenuto che si avrà all'interno dell'attacco. È possibile scegliere tra diversi URL a tema, ad esempio recapito dei documenti, tecnico, retribuzione e così via. Questo è effettivamente l'URL a cui gli utenti designati devono fare clic.
     
-8. Consente di specificare un URL della pagina di destinazione personalizzato. Utilizzando questo verrà reindirizzare gli utenti a un URL specificato alla fine di un attacco. Se si dispone di formazione interni, ad esempio, è possibile specificare che qui.
+8. Specificare un URL della pagina di destinazione personalizzata. In questo modo gli utenti verranno reindirizzati a un URL specificato al termine di un attacco con esito positivo. Se si dispone di un training di sensibilizzazione interno, ad esempio, è possibile specificarlo qui.
     
-9. Specificare il testo per il campo **oggetto** . Questo è il campo che indica che il **Nome soggetto** nel client di posta elettronica destinatario. 
+9. Specificare il testo per il campo **Subject** . Si tratta del campo che viene visualizzato come **nome del soggetto** nel client di posta elettronica di ricezione. 
     
-10. Comporre il **corpo del messaggio di posta elettronica** che riceverà la destinazione. <br/>`${username}`Inserisce il nome di destinazioni nel corpo del messaggio di posta elettronica. <br/>`${loginserverurl}`Inserisce l'URL che si desidera che gli utenti di destinazione fare clic su 
+10. Comporre il **corpo del messaggio di posta elettronica** che riceverà il destinatario. <br/>`${username}`inserisce il nome della destinazione nel corpo della posta elettronica. <br/>`${loginserverurl}`inserisce l'URL in cui si desidera che gli utenti di destinazione clicchino 
     
-11. Scegliere **Avanti,** quindi **completare** per avviare l'attacco. Messaggio di posta elettronica spear phishing viene recapitato a cassette postali dei destinatari di destinazione. 
+11. Fare clic su **Avanti,** quindi su **fine** per avviare l'attacco. Il messaggio di posta elettronica di phishing Spear viene recapitato alle cassette postali dei destinatari. 
     
-## <a name="password-spray-attack"></a>Attacco di tipo spray password
+## <a name="password-spray-attack"></a>Attacco spray per la password
 
-Un attacco di spray password in un'organizzazione viene utilizzato in genere dopo un attore bad ha acquisito un elenco di utenti validi dal tenant. Attore bad a conoscenza di password comuni che utenti utilizzo. Si tratta di un attacco ampiamente utilizzato come è un attacco di tipo economico esecuzione e più difficili da rilevare di forza bruta approcci.
+Un attacco di spruzzatura della password in un'organizzazione viene in genere utilizzato dopo che un attore cattivo ha acquisito un elenco di utenti validi dal tenant. L'attore cattivo conosce le password comuni utilizzate dalle persone. Si tratta di un attacco ampiamente utilizzato, poiché si tratta di un attacco a basso costo da eseguire e più difficile da rilevare rispetto alla forza bruta.
   
-Questo attacco è incentrata su che consente di specificare una password comune con una base di grandi dimensioni di destinazione di utenti.
+Questo attacco consente di specificare una password comune rispetto a una base di utenti di grandi dimensioni.
   
-### <a name="to-simulate-a-password-spray-attack"></a>Per simulare un attacco spray password
+### <a name="to-simulate-a-password-spray-attack"></a>Per simulare un attacco spray per la password
 
-1. Nella [protezione &amp; centro conformità](https://protection.office.com), scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)scegliere **Threat Management** \> **Attack Simulator**.
     
-2. Specificare un nome significativo campagne un attacco.
+2. Specificare il nome di una campagna significativa per l'attacco.
     
-3. Consente di specificare i destinatari di destinazione. Può trattarsi di singoli utenti o gruppi all'interno dell'organizzazione. Un destinatario destinazione deve essere Online cassetta postale di Exchange in modo che l'attacco abbia esito positivo.
+3. Specificare i destinatari di destinazione. Può trattarsi di singoli o gruppi nell'organizzazione. Un destinatario di destinazione deve disporre di una cassetta postale di Exchange online in modo che l'attacco abbia esito positivo.
     
-4. Consente di specificare una password da utilizzare per l'attacco. Ad esempio, è una password comune, pertinenti è possibile provare `Fall2017`. Un altro potrebbe essere `Spring2018`, o `Password1`.
+4. Specificare una password da utilizzare per l'attacco. Ad esempio, una password comune e pertinente che è possibile `Fall2017`provare è. Un altro potrebbe `Spring2018`essere, `Password1`o.
     
-5. Scegliere **Fine** per avviare l'attacco. 
+5. Scegliere **fine** per avviare l'attacco. 
     
-## <a name="brute-force-password-attack"></a>Attacchi di forza bruta attacco password
+## <a name="brute-force-password-attack"></a>Attacco per la password con forza bruta
 
-Un attacco di forza bruta password in un'organizzazione viene utilizzato in genere dopo un attore bad ha acquisito un elenco di utenti chiavi da tenant. Questo attacco è incentrata su cercando un set di password in un singolo account utente.
+Un attacco di password con forza bruta nei confronti di un'organizzazione viene in genere utilizzato dopo che un attore non valido ha acquisito un elenco di utenti chiave dal tenant. Questo attacco si concentra sul tentativo di un set di password su un singolo account utente.
   
-### <a name="to-simulate-a-brute-force-password-attack"></a>Per simulare un attacco di forza bruta password
+### <a name="to-simulate-a-brute-force-password-attack"></a>Per simulare un attacco di password con forza bruta
 
-1. Nella [protezione &amp; centro conformità](https://protection.office.com), scegliere **gestione rischio** \> **simulatore di attacco**.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)scegliere **Threat Management** \> **Attack Simulator**.
     
-2. Specificare un nome significativo campagne un attacco.
+2. Specificare il nome di una campagna significativa per l'attacco.
     
-3. Consente di specificare il destinatario. Un destinatario destinazione deve essere Online cassetta postale di Exchange in modo che l'attacco abbia esito positivo.
+3. Specificare il destinatario di destinazione. Un destinatario di destinazione deve disporre di una cassetta postale di Exchange online in modo che l'attacco abbia esito positivo.
     
-4. Specificare una password da utilizzare per l'attacco. A tale scopo, è possibile utilizzare un file di testo (con estensione txt) per l'elenco delle password. Il file di testo non può superare i 10 MB dimensioni file. Utilizzare una password per riga e assicurarsi di includere un ritorno dopo l'ultima password nell'elenco.
+4. Specificare un set di password da utilizzare per l'attacco. A tale scopo, è possibile utilizzare un file di testo (con estensione txt) per l'elenco delle password. Il file di testo non può superare i 10 MB nelle dimensioni dei file. Utilizzare una password per riga e assicurarsi di includere un ritorno a capo dopo l'ultima password dell'elenco.
     
-5. Scegliere **Fine** per avviare l'attacco. 
+5. Scegliere **fine** per avviare l'attacco. 
     
-## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità di simulatore di attacco
+## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità in Attack Simulator
 
-Nuove funzionalità vengono aggiunti simulatore di attacco. Tali strumenti comprendono:
-- **Creazione di rapporti avanzate**. Sarà in grado di visualizzare i dati, ad esempio l'ora più veloce (o più lento) per aprire un messaggio di posta elettronica simulazione di attacco, l'ora più veloce (o più lento) fare clic su un collegamento nel messaggio e altro ancora.
-- **Editor dei modelli di posta elettronica**. È possibile creare un modello di posta elettronica personalizzati e riutilizzabili che è possibile utilizzare per simulazioni attacchi futuri.
+Sono state aggiunte nuove funzionalità al simulatore di attacco. Sono inclusi i seguenti:
+- **Funzionalità di creazione di report avanzate**. È possibile visualizzare i dati, ad esempio il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, ovvero il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altro ancora.
+- **Editor modelli di posta elettronica**. È possibile creare un modello di posta elettronica personalizzato e riutilizzabile che è possibile utilizzare per simulazioni di attacco future.
 
-Visita il sito Web [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) per osservare le novità dello sviluppo di, che cos'è distribuzione e che cos'è già avviato.
+Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cosa c'è in sviluppo, cosa è in uscita e cosa è già stato avviato.
 
 
 

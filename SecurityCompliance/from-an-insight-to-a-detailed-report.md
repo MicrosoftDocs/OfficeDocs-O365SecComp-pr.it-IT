@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
-description: Come è possibile spostarsi da delle conoscenze un rapporto dettagliato per la protezione &amp; centro conformità attraverso un esempio di prevenzione della perdita di dati.
-ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Per un esempio di prevenzione della perdita di dati, è possibile passare da una &amp; panoramica a una relazione dettagliata nel centro sicurezza e conformità.
+ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014858"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217326"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procedura: dalle informazioni dettagliate a un report dettagliato
 
-Se non si conosce [report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile capire per vedere come è possibile passare da delle conoscenze per un rapporto dettagliato. 
+Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile scoprire come è possibile spostarsi facilmente da una panoramica a una relazione dettagliata. 
   
-Questa è una delle diverse procedure dettagliate per la [protezione &amp; centro conformità](https://protection.office.com). Per visualizzare altre procedure dettagliate, vedere la sezione [su argomenti correlati](#related-topics) . 
+Questa è una delle numerose procedure dettagliate per il [centro &amp; sicurezza e conformità](https://protection.office.com). Per visualizzare ulteriori procedure dettagliate, vedere la sezione [argomenti correlati](#related-topics) . 
   
-## <a name="from-an-insight-to-a-detailed-report"></a>Da delle conoscenze per un rapporto dettagliato
+## <a name="from-an-insight-to-a-detailed-report"></a>Da un Insight a un report dettagliato
 
-Utile esaminare il flusso dal dashboard a delle conoscenze per un rapporto dettagliato di esplorazione dei dati. (È riportato un breve [prevenzione della perdita di dati](data-loss-prevention-policies.md) ). 
+Let ' s walk through the flow from the Dashboard to a Insight to a report dettagliato per l'esplorazione dei dati. (Si tratta di un breve esempio di [prevenzione della perdita di dati](data-loss-prevention-policies.md) ). 
   
-1. Iniziare con un dashboard nel [protezione &amp; centro conformità](https://protection.office.com). (Accedere ai **rapporti** \> **Dashboard**.)<br/>![In sicurezza &amp; centro conformità, selezionare rapporti \> Dashboard](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Iniziare con un dashboard nel [Centro sicurezza &amp; e conformità](https://protection.office.com). (Andare al **** \> **Dashboard**di report).<br/>![Nel centro sicurezza &amp; e conformità, fare clic \> su dashboard report](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. Nell'angolo superiore sinistro del dashboard, accanto a **sui concetti principali &amp; suggerimenti**, si dispone di un collegamento. (Fare clic su **Visualizza tutto**).<br/>![In sicurezza &amp; centro conformità, selezionare rapporti \> Dashboard per visualizzare l'informativa principali](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>In questo modo ci un elenco di informazioni dell'organizzazione.<br/>![In sicurezza &amp; centro conformità, è possibile visualizzare tutte le informazioni in un elenco](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. Nell'angolo in alto a sinistra del dashboard, accanto a ** &amp; suggerimenti principali**, è presente un collegamento. (Fare clic su **Visualizza tutto**).<br/>![Nel centro sicurezza &amp; e conformità, scegliere Dashboard \> report per visualizzare le informazioni principali](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Questo porta a un elenco di approfondimenti per la nostra organizzazione.<br/>![Nel centro sicurezza &amp; e conformità, è possibile visualizzare tutte le informazioni dettagliate in un elenco](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. Selezione di un elemento nell'elenco, viene aperto un riquadro in cui è possibile visualizzare ulteriori informazioni sull'elemento. (Fare clic su un elemento).<br/>![Dettagli relativi a delle conoscenze selezionato](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Vedremo si dovrebbe tenere in considerazione, ad esempio la revisione criteri le azioni consigliate. ([Ulteriori informazioni sui criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)).
+3. Se si seleziona un elemento nell'elenco, verrà aperto un riquadro in cui è possibile visualizzare ulteriori dettagli su quell'elemento. Fare clic su un elemento.<br/>![Dettagli per una panoramica selezionata](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Vengono visualizzate le azioni consigliate da prendere in considerazione, ad esempio la revisione dei criteri. [Per ulteriori informazioni, vedere Criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md).
     
-4. È inoltre disponibile un collegamento per visualizzare ulteriori dettagli. (Fare clic su **attività correlate nell'elenco cartelle**.)<br/>In questo modo ci un tipo di rapporto denominato [Explorer](use-explorer-in-security-and-compliance.md) (anche noto come explorer rischio), dove è possibile applicare filtri nonché penetrare nei dettagli specifici.<br/>![Visualizzazione Esplora risorse con ulteriori dettagli su delle conoscenze selezionata](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. È inoltre presente un collegamento per visualizzare ulteriori dettagli. (Fare clic su **Vedi attività correlate in Esplora**).<br/>In questo modo viene utilizzato un tipo di rapporto denominato [Explorer](use-explorer-in-security-and-compliance.md) (denominato anche Esplora minacce), in cui è possibile applicare i filtri e forarli in dettagli specifici.<br/>![Visualizzazione Esplora risorse con maggiori dettagli su un'intuizione selezionata](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
-In questo modo, è possibile spostare facilmente da delle conoscenze ai dettagli sottostanti e prendere decisioni più consapevoli sulla prevenzione della perdita di dati per un'organizzazione.
+In questo modo, è possibile spostarsi facilmente da una panoramica dei dettagli sottostanti e prendere decisioni più informate sulla prevenzione della perdita di dati per un'organizzazione.
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Procedura dettagliata: da un rapporto dettagliato per delle conoscenze](from-a-detailed-report-to-an-insight.md)
+[Procedura dettagliata: da un report dettagliato a un'intuizione](from-a-detailed-report-to-an-insight.md)
   
-[Procedura dettagliata: da un dashboard in delle conoscenze](from-a-dashboard-to-an-insight.md)
+[Procedura dettagliata: da un dashboard a un'intuizione](from-a-dashboard-to-an-insight.md)
   
 

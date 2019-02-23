@@ -1,25 +1,25 @@
 ---
-title: ID di numero di previdenza sociale UE o equivalente
+title: Codice di preVidenza sociale dell'Unione europea o ID equivalente
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca qualora venga rilevato un tipo di informazione sensibile numero di previdenza sociale UE o l'ID equivalenti. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando rileva il numero di preVidenza sociale dell'Unione europea o il tipo di informazioni riservate ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530681"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216526"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>ID di numero di previdenza sociale UE o equivalente
+# <a name="eu-social-security-number-or-equivalent-id"></a>Codice di preVidenza sociale dell'Unione europea o ID equivalente
 
-Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca qualora venga rilevato un tipo di informazione sensibile UE numero di previdenza sociale (SSN) o l'ID equivalenti. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
+In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP, Data Loss Prevention), quando viene rilevato il codice fiscale dell'Unione europea (SSN) o il tipo di informazioni sensibili ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
   
 ## <a name="austria"></a>Austria
 
@@ -33,9 +33,9 @@ Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati
   
 -  Tre cifre che corrispondono a un numero di serie 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
-- Sei cifre che corrispondono alla data di nascita (DDMMYY)
+- Sei cifre che corrispondono alla data di nascita (GGMMAA)
     
 ### <a name="checksum"></a>Checksum
 
@@ -45,13 +45,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_austria_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_austria_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -70,7 +70,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-sicurezza sociale non
+previdenza sociale No
   
 social security number
 
@@ -78,25 +78,25 @@ social security number
 
 social security code
   
-numero di assicurazione
+numero assicurativo
   
-ssn austriaco
-  
-SSN #
+SSN austriaco
   
 SSN
   
-codice di assicurazione
+SSN
   
-codice di assicurazione #
+codice assicurativo
+  
+codice assicurativo #
   
 socialsecurityno #
   
 sozialversicherungsnummer
   
-soziale sicherheit kein
+soziale Sicherheit kein
   
-versicherungsnummer
+Versicherungsnummer
   
 ## <a name="belgium"></a>Belgio
 
@@ -116,13 +116,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_belgium_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_belgium_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_belgium_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_belgium_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -150,17 +150,17 @@ social security number
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 nationalnumber
   
-bnn #
+BNN
   
-bnn
+BNN
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
@@ -169,9 +169,9 @@ numéro nazionale
 numéro de sécurité
 
   
-g numéro'assuré
+numéro d'assuré
   
-identifiant nazionale
+identificazione nazionale
   
 identifiantnational #
   
@@ -181,7 +181,7 @@ numéronational #
 
 ### <a name="format"></a>Formato
 
-11 cifre senza spazi e i delimitatori
+11 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -189,7 +189,7 @@ numéronational #
   
 -  Dieci cifre 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -199,13 +199,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_croatia_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_croatia_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -226,38 +226,38 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di identificazione personale
   
-numero di cittadini master
+numero di cittadino Master
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 social security number
 
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 nationalnumber
   
-bnn #
+BNN
   
-bnn
+BNN
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
-oib
+OIB
   
-osobni identifikacijski broj
+Osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>Repubblica Ceca
 
 ### <a name="format"></a>Formato
 
-Dieci cifre e una barra rovesciata nella serie specificata
+Dieci cifre e una barra rovesciata nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
@@ -267,9 +267,9 @@ Dieci cifre e una barra rovesciata:
     
 - Una barra rovesciata
     
-- Tre cifre che corrispondono a un numero di serie che separa le persone nati nella stessa data
+- Tre cifre che corrispondono a un numero di serie che separa le persone nate nella stessa data
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -279,13 +279,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_czech_republic_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_czech_republic_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_czech_republic_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_czech_republic_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -306,7 +306,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di nascita
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero di identificazione personale
   
@@ -315,13 +315,13 @@ social security number
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 numero nazionale
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
@@ -335,13 +335,13 @@ rodne cislo
 
 ### <a name="format"></a>Formato
 
-Dieci cifre e un segno meno nella serie specificata
+Dieci cifre e un trattino nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre e un segno meno:
+Dieci cifre e un trattino:
   
-- Sei cifre che corrispondono alla data di nascita (DDMMYY) 
+- Sei cifre che corrispondono alla data di nascita (GGMMAA) 
     
 - Una lineetta
     
@@ -355,13 +355,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_denmark_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_denmark_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -382,24 +382,24 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di identificazione personale
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 social security number
 
   
 nationalnumber #
   
-SSN #
+SSN
   
 SSN
   
 numero nazionale
   
-numero id personale
+numero ID personale
   
 personalidnumber #
   
-CPR nummer
+CPR-Nummer
   
 personnummer
   
@@ -407,21 +407,21 @@ personnummer
 
 ### <a name="format"></a>Formato
 
-Una combinazione di 11 cifre nel formato specificato
+Una combinazione di 11 caratteri nel formato specificato
   
 ### <a name="pattern"></a>Modello
 
-Una combinazione di 11 cifre nel formato specificato:
+Una combinazione di 11 caratteri nel formato specificato:
   
 -  Sei cifre 
     
-- Un'istanza di uno dei seguenti:
+- Un'istanza di una delle opzioni seguenti:
     
-  - Simbolo Plus
+  - Segno più
     
-  - Meno simbolo
+  - Segno meno
     
-  - La lettera "A" (maiuscole o minuscole)
+  - La lettera "A" (senza distinzione tra maiuscole e minuscole)
     
 - Tre cifre
     
@@ -435,13 +435,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_finland_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_finland_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -463,23 +463,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 identification number
 
   
-id personale
+ID personale
   
 numero di identità
   
-numero id nazionale Finlandia
+numero di identificazione nazionale finlandese
   
 personalidnumber #
   
-numero identificativo nazionale
+numero di identificazione nazionale
   
 numero ID
   
-id nazionale non.
+ID nazionale No.
   
-numero identificativo nazionale
+numero ID nazionale
   
-ID non
+ID No
   
 tunnistenumero
   
@@ -491,7 +491,7 @@ ainutlaatuinen henkilökohtainen tunnus
   
 numero identiteetti
   
-suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
@@ -499,27 +499,27 @@ kansallisen tunnistenumero
   
 tunnusnumero
   
-numero di tunnus kansallinen
+Kansallinen tunnus numero
   
 hetu
   
 ## <a name="france"></a>Francia
 
-Per ulteriori informazioni, vedere la sezione "Francia numero di previdenza sociale (INSEE)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Francia social preVidenza (INSEE)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Germania
 
-Per ulteriori informazioni, vedere la sezione "Numero di carta d'identità Germania" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Germania identità numero di carta" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
-Per ulteriori informazioni, vedere la sezione "Grecia carta d'identità nazionale" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Grecia National ID Card" in [quello che cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Ungheria
 
 ### <a name="format"></a>Formato
 
-Nove cifre senza spazi e i delimitatori
+Nove cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -533,13 +533,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_hungary_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_hungary_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -558,7 +558,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-numero di previdenza sociale ungherese
+codice di previdenza sociale ungherese
   
 social security number
 
@@ -571,55 +571,55 @@ socialsecuritynno
   
 hssn
   
-taj
+Taj
   
-taj #
+Taj
   
 SSN
   
-SSN #
+SSN
   
-sicurezza sociale non
+previdenza sociale No
   
-áfa
+ÁFA
   
 közösségi adószám
   
-általános forgalmi adó szám
+Általános forgalmi Adó szám
   
-hozzáadottérték adó
+hozzáadottérték Adó
   
-áfa szám
+ÁFA szám
   
-áfa magyar szám
+Magyar ÁFA szám
   
 ## <a name="portugal"></a>Portogallo
 
-Per ulteriori informazioni, vedere la sezione "Portogallo cittadini scheda numero" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Portugal Citizen Card Number" in [quello che i tipi di informazioni riservate cercano](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="spain"></a>Spagna
 
-Per ulteriori informazioni, vedere la sezione "Spagna numero di previdenza sociale (SSN)" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Spagna Social preVidenza sociale (SSN)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="sweden"></a>Svezia
 
 ### <a name="format"></a>Formato
 
-12 cifre senza spazi e i delimitatori
+12 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
 12 cifre:
   
--  Otto cifre che corrispondono alla data di nascita (AAAAMMGGG) 
+-  Otto cifre che corrispondono alla data di nascita (AAAAMMGG) 
     
-- Tre cifre che corrispondono a un numero di serie dove: 
+- Tre cifre che corrispondono a un numero di serie in cui: 
     
-  - L'ultima cifra del numero di serie indica sesso per l'assegnazione di un numero dispari di maschile e un numero pari di femmina
+  - L'ultima cifra del numero di serie indica il sesso per l'assegnazione di un numero dispari per il maschio e per un numero pari per la femmina
     
-  - Fino a 1990, l'assegnazione del numero di serie corrispondeva alla provincia in cui portanti del numero di nascita o (se nati prima 1947) cui ha effettuato con stato vive, in base ai record di imposta su 1 gennaio 1947, con un codice speciale (in genere 9 come 7 cifre) per immigranti 
+  - Fino a 1990, l'assegnazione del numero di serie corrispondeva alla contea in cui è Nato il portatore del numero o (se è nato prima del 1947) dove viveva, secondo i registri delle tasse, il 1 ° gennaio 1947, con un codice speciale (solitamente 9 come settima cifra) per immigrati 
     
-- Cifra di un controllo
+- Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
 
@@ -629,13 +629,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_sweden_eu_ssn_or_equivalent` viene trovato. 
+- Viene trovata una `Keywords_sweden_eu_ssn_or_equivalent` parola chiave from. 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_ssn_or_equivalent` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -654,34 +654,34 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-numero id personale
+numero ID personale
   
 identification number
 
   
-id personale non
+ID personale No
   
-identità non
+identità No
   
-identificazione non
+identificazione no
   
-identificazione personale non
+identificazione personale No
   
-id personnummer
+ID personnummer
   
-id personligt-nummer
+ID personligt-Nummer
   
-id unikt-nummer
+ID unikt-Nummer
   
 personnummer
   
 identifikationsnumret
   
-personnummer #
+personnummer
   
 identifikationsnumret #
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 

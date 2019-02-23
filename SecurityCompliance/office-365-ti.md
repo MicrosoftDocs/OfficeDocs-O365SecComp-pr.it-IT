@@ -6,63 +6,63 @@ manager: laurawi
 ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: M365-security-compliance
-description: Scoprire come funzionalità di business intelligence minaccia in avanzate Threat Protection consentono le minacce contro l'organizzazione di ricerca, rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e ricerca per gli indicatori di rischio.
-ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Scoprire in che modo le funzionalità di intelligence di minacce in Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi rilevati da Office 365 per conto dell'utente e di cercare indicatori di minaccia.
+ms.openlocfilehash: a55a17bae141c394ba01e1526615c5c1687340a2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995097"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216556"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 Threat Intelligence
 
-Funzionalità di business intelligence minaccia in Office 365 avanzate Threat Protection consentono agli analisti di sicurezza e gli amministratori di proteggere gli utenti di Office 365 dell'organizzazione da:
+Le funzionalità di intelligence per le minacce in Office 365 Advanced Threat Protection aiutano gli analisti e gli amministratori della sicurezza a proteggere gli utenti di Office 365 dell'organizzazione per:
   
-1. Esecuzione di identificare, monitorare e acquisire familiarità con gli attacchi di tipo
+1. Semplificare l'identificazione, il monitoraggio e la comprensione degli attacchi
     
-2. Per affrontare rapidamente le minacce in Exchange Online e SharePoint Online
+2. Assistenza per l'indirizzamento rapido delle minacce in Exchange Online e SharePoint Online
     
-3. Fornitura di informazioni e conoscenze per evitare attacchi organizzazione
+3. Fornire informazioni e approfondimenti utili per prevenire gli attacchi alla propria organizzazione
     
 > [!IMPORTANT]
-> **Business Intelligence rischio è ora fa parte di in Office 365 avanzate Threat Protection piano 2**, che è incluso in alcune sottoscrizioni, ad esempio [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), E5 Enterprise di Office 365, Office 365 A5 Education e così via. Se l'organizzazione dispone di una sottoscrizione che non include degli strumenti di analisi di Office 365, è possibile acquistare potenzialmente degli strumenti di analisi come componente aggiuntivo. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
+> **Threat Intelligence fa ora parte di office 365 Advanced Threat Protection Plan 2**, incluso in alcuni abbonamenti, ad esempio [Microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 business](https://www.microsoft.com/microsoft-365/business), office 365 Enterprise E5, Office 365 Istruzione a5, ecc. Se l'organizzazione dispone di un abbonamento che non include Office 365 ATP, è possibile acquistare ATP come componente aggiuntivo. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
   
-## <a name="whats-changing"></a>Modifica di?
+## <a name="whats-changing"></a>Cosa cambia?
 
-Business Intelligence di Office 365 rischio è stato precedentemente, incluso nel sottoscrizioni, ad esempio Office 365 Enterprise E5. Ciò avviene comunque, anche se caratteristiche di Business Intelligence di rischio ora sono parte di Office 365 avanzate Threat Protection piano 2 (ed è incluso in Office 365 Enterprise E5). 
+In precedenza, Office 365 Threat Intelligence è stato incluso in abbonamenti, ad esempio Office 365 Enterprise E5. Questo è ancora il caso, anche se le funzionalità di intelligence per le minacce fanno ora parte di Office 365 Advanced Threat Protection Plan 2 (e questo è incluso in Office 365 Enterprise E5). 
 
-Inoltre, Business Intelligence di Office 365 rischio è stato precedentemente disponibili per l'acquisto come componente aggiuntivo per Office 365 per imprese. A questo punto, Business Intelligence di rischio è incluso in Office 365 avanzate Threat Protection piano 2. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection).
+Inoltre, Office 365 Threat Intelligence era precedentemente disponibile per l'acquisto come componente aggiuntivo per i clienti di Office 365 per le aziende. Ora, Threat Intelligence è incluso in Office 365 Advanced Threat Protection piano 2. Per ulteriori informazioni, vedere [piani e prezzi per la protezione avanzata dalle minacce di Office 365](https://products.office.com/exchange/advance-threat-protection).
 
-Di seguito è tutto ciò significa che:
+Ecco cosa significa tutto questo:
 
-- **Se l'organizzazione ha già E5 Enterprise di Office 365**, quindi è già stato avanzate Threat Protection piano 2 e include funzionalità di Business Intelligence di rischio.
+- **Se l'organizzazione dispone già di Office 365 Enterprise E5**, si dispone già di Advanced Threat Protection Plan 2 e include funzionalità di intelligence per le minacce.
 
-- **Se l'organizzazione precedentemente presentava Intelligence rischio di Office 365 (ma non Office 365 avanzate protezione da minacce) come componente aggiuntivo** a un'altra sottoscrizione a Office 365 e quindi si disporrà di Office 365 avanzate Threat Protection piano 2. Sono incluse le funzionalità avanzate Threat Protection e Business Intelligence di rischio. 
+- **Se l'organizzazione aveva precedentemente office 365 Threat Intelligence (ma non office 365 Advanced Threat Protection) come componente aggiuntivo** di un altro abbonamento a Office 365, sarà necessario disporre di Office 365 Advanced Threat Protection Plan 2. Questo include le funzionalità avanzate di protezione dalle minacce e minacce di intelligence. 
 
-- **Se l'organizzazione precedentemente presentava protezione rischio avanzate di Office 365, ma non Office 365 rischio Business Intelligence, come componente aggiuntivo** a un'altra sottoscrizione a Office 365 e quindi si disporrà di Office 365 avanzate Threat Protection piano 1. Sono incluse le avanzate Threat Protection (ma non le funzionalità di Business Intelligence di rischio).
+- **Se l'organizzazione aveva precedentemente office 365 Advanced Threat Protection (ma non office 365 Threat Intelligence) come componente aggiuntivo** di un altro abbonamento a Office 365, sarà necessario disporre di Office 365 Advanced Threat Protection Plan 1. Questo include la protezione avanzata dalle minacce (ma non le funzionalità di intelligence per le minacce).
 
-Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
+Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-intelligence-capabilities"></a>Introduzione a funzionalità di business intelligence rischio
+## <a name="get-started-with-threat-intelligence-capabilities"></a>Informazioni introduttive sulle funzionalità di Threat Intelligence
 
-Utilizzare le risorse seguenti per ulteriori informazioni su Business intelligence di rischio e su come è possibile utilizzarlo per mantenere gli utenti nell'organizzazione più sicuro.
+Utilizzare le risorse seguenti per ulteriori informazioni su Threat Intelligence e su come utilizzarlo per rendere più sicure le persone nell'organizzazione.
   
-- [Guida introduttiva a Business Intelligence di rischio](get-started-with-ti.md) (sono incluse le informazioni sui ruoli richiesti) 
+- [Informazioni introduttive su Threat Intelligence](get-started-with-ti.md) (include informazioni sui ruoli necessari) 
     
-- [Informazioni sulle minacce Tracker - nuovi e degne di nota](threat-trackers.md)
+- [Informazioni sui tracker di minacce: nuove e degne di nota](threat-trackers.md)
     
-- [Trovare e provare a utilizzare e-mail dannoso che è stato recapitato](investigate-malicious-email-that-was-delivered.md)
+- [Ricerca e analisi di messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
     
-- [Utilizzare simulatore di attacco](attack-simulator.md)
+- [Usare simulatore di attacco](attack-simulator.md)
     
-- [Integrare Intelligence rischio con Windows Defender rischio protezione avanzata](integrate-office-365-ti-with-wdatp.md)
+- [Integrare Threat Intelligence con Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -70,6 +70,6 @@ Utilizzare le risorse seguenti per ulteriori informazioni su Business intelligen
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md)
+[Autorizzazioni nel centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md)
   
 

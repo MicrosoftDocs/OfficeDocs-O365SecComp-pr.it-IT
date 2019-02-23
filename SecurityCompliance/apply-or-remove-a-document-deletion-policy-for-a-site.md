@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normative legali o di altro tipo, che richiedono di mantenere i documenti per un certo periodo di tempo. Tuttavia, mantenere i documenti più a lungo del necessario può esporre l'organizzazione a rischi legali. Per questo motivo, la tua organizzazione potrebbe aver creato un criterio di eliminazione del documento per il tuo sito; per esempio, potrebbe essere necessario eliminare i documenti dell'attività generale cinque anni dopo la loro creazione.
-ms.openlocfilehash: abee0da7adfba6f653743d503f8b30770ee93c40
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531211"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219166"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Applicare o rimuovere un criterio di eliminazione del documento per un sito
 
@@ -27,7 +27,7 @@ Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normat
   
 A seconda dell'organizzazione, un criterio di eliminazione del documento può essere:
   
-- **Obbligatorio** Un proprietario del sito non può disattivare un criterio obbligatorio, viene automaticamente applicato al sito. 
+- **Obbligatorio** Il proprietario di un sito non può escludere un criterio obbligatorio, che viene automaticamente applicato al sito. 
     
 - **Predefinito** Un criterio predefinito è applicato al sito automaticamente, ma il proprietario del sito può: 
     
@@ -45,12 +45,12 @@ Infine, i criteri di eliminazione del documento vengono ereditati. Quando selezi
 
 La tua organizzazione può assegnare criteri diversi a raccolte siti diverse. A livello della raccolta siti, il proprietario di una raccolta siti può visualizzare tutti i criteri di eliminazione del documento disponibili per tale raccolta siti. I criteri possono essere stati resi disponibili per il modello della raccolta siti (e di conseguenza per tutte le raccolte siti create da quel modello) oppure per quella specifica raccolta siti.
   
-1. Nel sito principale della raccolta siti, nell'angolo superiore destro, scegliere **Impostazioni** [icona ingranaggio] \> **Impostazioni sito**.
+1. Nel sito principale della raccolta siti, nell'angolo in alto a destra, scegliere **Impostazioni** [icona Gear] \> **Impostazioni sito**.
     
-2. Nella sezione **Amministrazione raccolta siti** \> **criteri di eliminazione dei documenti**.
+2. In **criteri di eliminazione dei documenti**di **Amministrazione** \> raccolta siti.
     
     > [!NOTE]
-    > Il collegamento di **Criteri di eliminazione dei documenti** non viene visualizzato a meno che non sono stati assegnati i criteri per la raccolta siti. Inoltre, il collegamento non viene visualizzata immediatamente dopo che i criteri assegnati al sito, può richiedere fino a 24 ore da quando i criteri vengono assegnati a quando viene visualizzato il collegamento di **Criteri di eliminazione dei documenti** . 
+    > Il collegamento **criteri di eliminazione dei documenti** non verrà visualizzato a meno che non siano stati assegnati criteri alla raccolta siti. Inoltre, il collegamento non viene visualizzato subito dopo che i criteri sono stati assegnati al sito, ma può richiedere fino a 24 ore da quando i criteri vengono assegnati quando viene visualizzato il collegamento **criteri di eliminazione dei documenti** . 
   
 3. In questa pagina puoi trovare:
     
@@ -68,26 +68,26 @@ Questo elenco è solo in modalità visualizzazione e consente al proprietario de
 
 È possibile che la tua organizzazione abbia creato dei criteri che, in qualità di proprietario di un sito o di una raccolta siti, puoi sia applicare al tuo sito sia disattivare completamente.
   
-1. Nell'angolo superiore destro, scegliere **Impostazioni** [icona ingranaggio] \> **Impostazioni sito**.
+1. Nell'angolo in alto a destra, scegliere **Impostazioni** [icona ingranaggi] \> **Impostazioni sito**.
     
-2. Nella sezione **Amministrazione sito** \> **criteri di eliminazione dei documenti**.
+2. In **criteri di eliminazione dei documenti**di amministrazione \> del **sito** .
     
     > [!NOTE]
-    > Il collegamento di **Criteri di eliminazione dei documenti** non viene visualizzato a meno che non sono stati assegnati i criteri per la raccolta siti. Inoltre, il collegamento non viene visualizzata immediatamente dopo che i criteri assegnati al sito, può richiedere fino a 24 ore da quando i criteri vengono assegnati a quando viene visualizzato il collegamento di **Criteri di eliminazione dei documenti** . 
+    > Il collegamento **criteri di eliminazione dei documenti** non verrà visualizzato a meno che non siano stati assegnati criteri alla raccolta siti. Inoltre, il collegamento non viene visualizzato subito dopo che i criteri sono stati assegnati al sito, ma può richiedere fino a 24 ore da quando i criteri vengono assegnati quando viene visualizzato il collegamento **criteri di eliminazione dei documenti** . 
   
-3. Eseguire una delle operazioni seguenti:
+3. Eseguire una di queste operazioni:
     
-  - **Per applicare un criterio** Selezionare un criterio \> selezionare una regola in quel criterio \> **salvare**.
+  - **Per applicare un criterio** Selezionare un criterio \> selezionare una regola per il \> **salvataggio**di un criterio.
     
     Solo un criterio e una regola alla volta possono essere attivi in un sito. L'organizzazione può fornire più criteri e regole tra cui scegliere oppure metterne a disposizione solo uno.
     
-    ![Selezionare l'opzione criteri](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Selezionare l'opzione criterio](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
-  - **Per disattivare un criterio** Scegliere **con consenso esplicito: Nota Elimina** \> **salvare**.
+  - **Per rifiutare l'esclusione di un criterio** Scegliere **opt-out: do note Delete** \> **Save**.
     
     In qualità di proprietario del sito, puoi disattivare un criterio di eliminazione del documento se decidi che quel criterio non è applicabile al contenuto del sito. Tuttavia, non puoi disattivare un criterio che è stato contrassegnato come **obbligatorio**.
     
-    ![Opzione di consenso esplicito fuori](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Opzione opt-out](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>I criteri di eliminazione del documento ignorano altri criteri
 
@@ -97,7 +97,7 @@ Un sito può utilizzare altri criteri per il mantenimento e l'eliminazione dei c
     
 - Criteri di gestione delle informazioni per un elenco o una libreria.
     
-Se si applica un criterio di eliminazione del documento a un sito che utilizza già criteri tipo di contenuto o criteri di gestione delle informazioni per un elenco o raccolta, i criteri vengono ignorati durante il criterio di eliminazione del documento attivo. Se vengono ignorate le altri criteri, verrà visualizzato il messaggio "Criteri di eliminazione documento il contenuto di questo sito viene utilizzato".
+Se si applica un criterio di eliminazione dei documenti a un sito che già utilizza criteri del tipo di contenuto o criteri di gestione delle informazioni per un elenco o una raccolta, tali criteri vengono ignorati mentre il criterio di eliminazione del documento è attivo. Se altri criteri vengono ignorati, verrà visualizzato il messaggio "contenuto in questo sito utilizza i criteri di eliminazione dei documenti".
   
 Questo significa che dovresti pianificare un sito che utilizzi solo criteri destinati a contenuti strutturati (criteri di gestione delle informazioni e criteri tipo di contenuto) o contenuti non strutturati (criteri di eliminazione del documento) e non ad entrambi. Se disattivi il criterio di eliminazione del documento, l'errore segnalato dall'avviso non verrà visualizzato e continueranno a funzionare altri tipi di criteri.
   
@@ -105,21 +105,21 @@ I criteri di eliminazione del documento non hanno alcun effetto sui criteri sito
   
 ### <a name="determine-if-content-type-policies-are-being-ignored"></a>Determinare se i criteri tipo di contenuto vengono ignorati
 
-Se lo stava utilizzando il sito criteri tipo di contenuto ed è ora visualizzato il messaggio, i criteri non sono più attivo. Per ripristinare i criteri tipo di contenuto, è possibile rimuovere il criterio di eliminazione del documento dal sito, come descritto in precedenza, se è disponibile un'opzione di esclusione. Se non è disponibile alcuna opzione in modo esplicito, il criterio di eliminazione del documento è obbligatorio e si desidera contattare il responsabile della conformità all'interno dell'organizzazione.
+Se il sito utilizza criteri del tipo di contenuto e questo messaggio viene visualizzato, questi criteri non sono più in vigore. Per ripristinare i criteri dei tipi di contenuto, è possibile rimuovere il criterio di eliminazione dei documenti dal sito, come descritto in precedenza, se è disponibile un'opzione di disattivazione. Se non è possibile escludere l'opzione, i criteri di eliminazione dei documenti sono obbligatori ed è necessario contattare il responsabile della conformità nell'organizzazione.
   
-1. Nell'angolo superiore destro, scegliere **Impostazioni** [icona ingranaggio] \> **Impostazioni sito**.
+1. Nell'angolo in alto a destra, scegliere **Impostazioni** [icona ingranaggi] \> **Impostazioni sito**.
     
-2. Nella sezione **Amministrazione sito** \> **modelli di criteri per il tipo di contenuto**.
+2. In \> **modelli di criteri tipo di contenuto** **Amministrazione sito** .
     
-    ![Avviso nel sito che vengono utilizzati criteri di eliminazione dei documenti](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Determinare se i criteri di gestione delle informazioni vengono ignorati
 
-Se il sito è stato mediante criteri di gestione delle informazioni e viene ora visualizzato questo messaggio, i criteri non sono più attivo. Per ripristinare i criteri di gestione delle informazioni, è possibile rimuovere il criterio di eliminazione del documento dal sito, come descritto in precedenza, se è disponibile un'opzione di esclusione. Se non è disponibile alcuna opzione in modo esplicito, il criterio di eliminazione del documento è obbligatorio e si desidera contattare il responsabile della conformità all'interno dell'organizzazione.
+Se il sito utilizza i criteri di gestione delle informazioni e il messaggio viene visualizzato, questi criteri non sono più in vigore. Per ripristinare i criteri di gestione delle informazioni, è possibile rimuovere il criterio di eliminazione dei documenti dal sito, come descritto in precedenza, se è disponibile un'opzione di disattivazione. Se non è possibile escludere l'opzione, i criteri di eliminazione dei documenti sono obbligatori ed è necessario contattare il responsabile della conformità nell'organizzazione.
   
-- Per un elenco o raccolta, nella barra multifunzione \> scheda **raccolta** \> **Impostazioni raccolta** \> in **autorizzazioni e gestione** \> **Impostazioni criteri di gestione delle informazioni**.
+- Per un elenco o una raccolta, nelle impostazioni \> **** della \> **raccolta** \> schede della raccolta della barra multifunzione in **autorizzazioni e gestione** \> delle informazioni di gestione **delle impostazioni dei criteri**.
     
-    ![Avviso nel sito che vengono utilizzati criteri di eliminazione dei documenti](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>Vedere anche
 

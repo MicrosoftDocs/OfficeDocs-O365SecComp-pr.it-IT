@@ -1,63 +1,63 @@
 ---
-title: Creare una conservazione per controversia legale in Office 365
+title: Creazione di un blocco per controversia legale in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/13/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: aa78d12046108aa1f1b974f01c02ff923b99b97b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037959"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218656"
 ---
-# <a name="create-a-litigation-hold-in-office-365"></a>Creare una conservazione per controversia legale in Office 365
+# <a name="create-a-litigation-hold-in-office-365"></a>Creazione di un blocco per controversia legale in Office 365
 
-È possibile effettuare una cassetta postale di conservazione per controversia legale per mantenere tutto il contenuto delle cassette postali, inclusi gli elementi eliminati e le versioni originali degli elementi modificati. Quando si effettua una cassetta postale utente conservazione per controversia legale, contenuto nella cassetta postale di archivio dell'utente (se abilitato) viene inoltre mantenuto. Quando si crea un'esenzione, è possibile specificare un intervallo di tempo di attesa (denominato anche un' *archiviazione con scadenza*) in modo da eliminare ed elementi modificati vengono mantenuti per un periodo specificato e quindi eliminati definitivamente dalla cassetta postale. Oppure è possibile mantenere solo il contenuto per un tempo indefinito (noti come un' *attesa infinita*) fino a quando non viene rimossa la conservazione per controversia legale. Se si specifica una periodo di durata della conservazione, viene calcolata dalla data di ricezione di un messaggio o viene creato un elemento della cassetta postale. 
+È possibile inserire una cassetta postale sul blocco per controversia legale per mantenere tutto il contenuto delle cassette postali, inclusi gli elementi eliminati e le versioni originali degli elementi modificati. Quando si posiziona una cassetta postale utente in conservazione per controversia legale, viene conservato anche il contenuto della cassetta postale di archiviazione dell'utente (se abilitata). Quando si crea un'esenzione, è possibile specificare una durata del blocco, denominata anche *blocco basato sul tempo*, in modo che gli elementi eliminati e modificati vengano conservati per un periodo specificato e quindi eliminati definitivamente dalla cassetta postale. In alternativa, è possibile conservare il contenuto a tempo indeterminato (denominato *blocco infinito*) oppure fino a quando non viene rimosso il blocco per controversia legale. Se si specifica un periodo di durata del blocco, viene calcolato a partire dalla data di ricezione di un messaggio o dalla creazione di un elemento della cassetta postale. 
   
-Ecco cosa succede quando si crea una conservazione per controversia legale.
+Ecco cosa succede quando si crea un blocco per controversia legale.
   
-- Gli elementi eliminati in modo permanente dall'utente vengono mantenuti nella cartella elementi ripristinabili nella cassetta postale dell'utente per la durata dell'esenzione.
+- Gli elementi eliminati in modo definitivo dall'utente vengono conservati nella cartella elementi ripristinabili nella cassetta postale dell'utente per tutta la durata del blocco.
     
-- Gli elementi eliminati dalla cartella elementi ripristinabili dall'utente vengono mantenuti per tutta la durata dell'esenzione.
+- Gli elementi eliminati dalla cartella elementi ripristinabili da parte dell'utente vengono conservati per la durata del blocco.
     
-- La quota di archiviazione per la cartella elementi recuperabili viene aumentata da 30 GB a 110 GB.
+- La quota di archiviazione per la cartella elementi ripristinabili è aumentata da 30 GB a 110 GB.
     
-- Vengono conservati gli elementi in principale dell'utente e le cassette postali di archiviazione
+- Gli elementi nelle cassette postali primarie e di archiviazione dell'utente vengono conservati
     
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per inserire una cassetta postale di Exchange Online sulla conservazione per controversia legale, deve essere assegnato una licenza di Exchange Online piano 2. Se una cassetta postale viene assegnata una licenza di Exchange Online piano 1, è necessario assegnarlo una licenza separata archiviazione Exchange Online per mettere in attesa.
+- Per attivare il blocco per controversia legale in una cassetta postale di Exchange Online, deve essere assegnata una licenza di Exchange Online piano 2. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1, è necessario assegnarle una licenza di archiviazione Exchange Online separata per inserirla in blocco.
     
 
-## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>Inserire una cassetta postale conservazione per controversia legale nell'interfaccia di amministrazione di Office 365
+## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>Inserire una cassetta postale in un blocco per controversia legale nell'interfaccia di amministrazione di Office 365
 
-Ecco la procedura per bloccare un iniziata la conservazione per controversia legale utilizzando l'interfaccia di amministrazione di Office 365.
+Di seguito sono riportati i passaggi per inserire un Maibox sul blocco per controversia legale utilizzando l'interfaccia di amministrazione di Office 365.
 
-1. Accedere a https://portal.office.com/adminportal/home e accedere utilizzando l'account amministratore globale.
-2. Fare clic su **utenti** > **utenti attivi** nel riquadro di spostamento a sinistra.
-3. Selezionare l'utente la cui cassetta postale desiderata per bloccare la conservazione per controversia legale.
-4. Nella pagina di accesso rapido, fare clic su **Impostazioni posta elettronica**e quindi fare clic su **Edit** accanto alla **conservazione per controversia legale**.
-5. Scegliere Attiva o disattiva per attivare la conservazione per controversia legale e completare le seguenti opzioni facoltative che vengono visualizzate nella pagina **conservazione per controversia legale** :
+1. Accedere a https://portal.office.com/adminportal/home e accedere utilizzando l'account di amministratore globale.
+2. Fare clic su utenti**attivi** nel riquadro di spostamento sinistro. **** > 
+3. Selezionare l'utente di cui si desidera inserire la cassetta postale per il blocco per controversia legale.
+4. Nella pagina del volo, fare clic su **impostazioni di posta**, quindi fare clic su **modifica** accanto a blocco per **controversia legale**.
+5. Nella pagina **blocco per controversIa legale** fare clic sull'interruttore per attivare il blocco per controversia legale e completare le seguenti impostazioni facoltative che vengono visualizzate:
  
-    ![O365_LitigationHold1.PNG](media/O365-LitigationHold1.png)
+    ![O365_LitigationHold1. png](media/O365-LitigationHold1.png)
 
-    r. **durata della conservazione (giorni)** -utilizzare questa casella per creare un'esenzione basate sul tempo e specificare il tempo di mantenimento degli elementi della cassetta postale quando viene effettuata la cassetta postale di conservazione per controversia legale. La durata viene calcolata dalla data di ricezione o creato un elemento della cassetta postale. Se si lascia vuota questa casella, di mantenimento degli elementi per un tempo indefinito o fino alla rimozione. Utilizzare i giorni lavorativi per specificare la durata.
+    a. **durata del blocco (giorni)** : utilizzare questa casella per creare un blocco basato sul tempo e specificare il periodo di conservazione degli elementi della cassetta postale quando la cassetta postale viene inserita nella conservazione per controversia legale. La durata viene calcolata a partire dalla data di ricezione o creazione di un elemento della cassetta postale. Se si lascia vuota questa casella, gli elementi vengono conservati a tempo indeterminato o fino a quando non viene rimosso il blocco. Utilizzare giorni per specificare la durata.
     
-    b. **Nota** : utilizzare questa casella per informare l'utente delle relative cassette postali sono controversie legali. La nota viene visualizzata nella pagina informazioni Account nella cassetta postale dell'utente se utilizzano Outlook 2010 o versioni successive. Per accedere a questa pagina, gli utenti possono fare clic su **File** di Outlook.
+    b. **Note** : utilizzare questa casella per informare l'utente che la cassetta postale è in blocco per controversia legale. La nota verrà visualizzata nella pagina informazioni account nella cassetta postale dell'utente se utilizza Outlook 2010 o versione successiva. Per accedere a questa pagina, gli utenti possono fare clic su **file** in Outlook.
      
-    **pagina Web** - c. utilizzare questa casella per indirizzare l'utente a un sito Web per ulteriori informazioni sulla conservazione per controversia legale. Questo URL verrà visualizzato nella pagina informazioni Account nella cassetta postale dell'utente che utilizzano Outlook 2010 o versioni successive. Per accedere a questa pagina, gli utenti possono fare clic su **File** di Outlook.
+    c. **pagina Web** : utilizzare questa casella per indirizzare l'utente a un sito Web per ulteriori informazioni sul blocco per controversia legale. Questo URL viene visualizzato nella pagina informazioni account nella cassetta postale dell'utente se utilizza Outlook 2010 o versione successiva. Per accedere a questa pagina, gli utenti possono fare clic su **file** in Outlook.
  
-6. Fare clic su **Salva** per creare la conservazione per controversia legale.
+6. Fare clic su **Salva** per creare il blocco per controversia legale.
 
-Dopo aver creato la conservazione, le impostazioni di posta elettronica nella pagina di accesso rapido Mostra di conservazione per controversia legale è attivata per l'utente selezionato.
+Dopo aver creato il blocco, le impostazioni di posta elettronica nella pagina di volo indicano che il blocco per controversia legale è attivato per l'utente selezionato.
 
-![O365_LitigationHold2.PNG](media/O365-LitigationHold2.png)
+![O365_LitigationHold2. png](media/O365-LitigationHold2.png)
 
-Per ulteriori informazioni sulla creazione e gestione delle esenzioni controversie legali e utilizzo di Exchange Online PowerShell per creare controversia contiene, vedere [Place una cassetta postale di conservazione per controversia legale](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).
+Per ulteriori informazioni sulla creazione e sulla gestione di controversia legale e sull'utilizzo di Exchange Online PowerShell per creare in blocco la controversia legale, vedere [posizionare una cassetta postale sul blocco per controversIa legale](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).

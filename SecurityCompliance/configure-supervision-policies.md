@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare un criterio di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090958"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216736"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare i criteri di supervisione per l'organizzazione
 
@@ -53,7 +53,7 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
     Test dei criteri di supervisione per assicurarsi che funzioni come desiderato è una parte importante per garantire che la strategia di conformità soddisfi gli standard.
 
-- **Passaggio 6-(facoltativo)** [Configurare il componente aggiuntivo di Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o OWA per esaminare le comunicazioni sorvegliate](configure-supervision-policies.md#UseOutlook)
+- **Passaggio 6-(facoltativo)** [Configurare il componente aggiuntivo di Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni sorvegliate](configure-supervision-policies.md#UseOutlook)
 
     Il componente aggiuntivo di superVisione per Outlook consente ai revisori di accedere alla funzionalità di supervisione direttamente all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
 

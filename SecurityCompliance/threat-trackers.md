@@ -5,99 +5,99 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection: M365-security-compliance
-description: Informazioni sulle minacce Tracker, inclusi nuovi Tracker degne di nota, per consentire all'organizzazione di essere informati su problemi di protezione.
-ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
+ms.openlocfilehash: ace0aab3131385f03c4be9287d860a1d29137f9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995307"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218456"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Indicatori delle minacce: nuove e importanti
 
-[Business Intelligence di Office 365 rischio](office-365-ti.md) consente a team di protezione dell'organizzazione individuare ed eseguire l'azione contro le minacce alla sicurezza informatica necessaria. A partire in ritardo 2018 marzo e varie settimane successivo, Business Intelligence di Office 365 rischio includerà nuove funzionalità di rischio Tracker, tra cui Tracker degne di nota. In questo articolo viene fornita una panoramica dei passaggi successivi e nuove caratteristiche. 
+[Office 365 Threat Intelligence](office-365-ti.md) consente al team di sicurezza dell'organizzazione di individuare ed eseguire azioni contro le minacce di Cybersecurity. A partire dalla fine di marzo 2018 e nelle prossime settimane, Office 365 Threat Intelligence includerà nuove funzionalità di monitoraggio minacce, tra cui gli inseguitori degni di nota. Leggere questo articolo per ottenere una panoramica delle nuove funzionalità e dei passaggi successivi. 
 
 > [!IMPORTANT]
-> A partire da febbraio 2019 e distribuzione sui prossimi mesi, Business Intelligence di Office 365 rischio sta diventando Office 365 avanzate Threat Protection piano 2, le funzionalità di protezione aggiuntive rischio. Per ulteriori informazioni, vedere [i piani Office 365 avanzate Threat Protection e i prezzi](https://products.office.com/exchange/advance-threat-protection) e [Office 365 avanzate Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partire da febbraio 2019 e distribuita nei prossimi mesi, Office 365 Threat Intelligence sta diventando Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-## <a name="what-are-threat-trackers"></a>Che cosa sono i tracker minaccia?
+## <a name="what-are-threat-trackers"></a>Cosa sono gli inPistatori di minacce?
 
-Rischio Tracker sono widget informativi e visualizzazioni contenenti che con Business intelligence in diversi alla sicurezza informatica risolvere problemi che potrebbero influire all'azienda. Ad esempio, è possibile visualizzare informazioni sulle tendenze campagne di malware tramite Tracker rischio.
+I Tracker di minacce sono widget e visualizzazioni informativi che forniscono servizi di intelligence su diversi problemi di Cybersecurity che possono influire sulla società. Ad esempio, è possibile visualizzare le informazioni sull'andamento delle campagne antimalware utilizzando il monitoraggio delle minacce.
   
-![Esempio di rischio Tracker visualizzazione campagne di malware](media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Esempio di monitoraggio di minacce che mostra le campagne antimalware](media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-Quasi tutte le pagine di arresto includono i numeri di tendenza che vengono aggiornati periodicamente, widget utili per comprendere quali problemi sono la più importante o sono diventate il massimo e un rapido collegamento nella colonna **Azioni** che consente di passare a Esplora, in cui è possibile visualizzare più dettagliato informazioni. 
+La maggior parte delle pagine del Tracker include i numeri di tendenza che vengono aggiornati periodicamente, widget che consentono di comprendere quali sono i problemi più grandi o sono cresciuti di più e un collegamento rapido nella colonna **azioni** che consente di visualizzare le informazioni più dettagliate in Esplora risorse. informazioni. 
   
-![Esempio delle informazioni sulla campagna nell'elenco cartelle](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Esempio di informazioni sulla campagna in Esplora risorse](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Tracker sono solo alcune delle principali funzionalità numero che viene visualizzato con [Office 365 rischio Intelligence](office-365-ti.md). Quando è disponibile, il nuovo Tracker rischio includerà [Tracker degne di nota](threat-trackers.md#notey), [tendenza Tracker](threat-trackers.md#trending), [query revisioni](threat-trackers.md#trackedq)e [query salvata](threat-trackers.md#savedq).
+I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Threat Intelligence](office-365-ti.md). Se disponibile, i nuovi inSeguitori di minacce includono inseguitori [degni](threat-trackers.md#notey)di nota, inseguitori di [tendenza](threat-trackers.md#trending), [query registrate](threat-trackers.md#trackedq)e [query salvate](threat-trackers.md#savedq).
   
-Per visualizzare e utilizzare il Tracker rischio quando sono disponibili per l'organizzazione, passare alla protezione &amp; centro conformità ([https://protection.office.com](https://protection.office.com)) e scegliere **Threat management** \> **tracker rischio**.
+Per visualizzare e usare gli informatori di minacce quando sono disponibili per l'organizzazione, passare al centro &amp; sicurezza e conformità[https://protection.office.com](https://protection.office.com)() e scegliere Threat **Management** \> **Threat Tracker**.
   
 > [!NOTE]
-> Per utilizzare Tracker rischio, è necessario essere un amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
+> Per utilizzare i Tracker di minacce, è necessario essere un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-### <a name="noteworthy-trackers"></a>Tracker degne di nota
+### <a name="noteworthy-trackers"></a>Inseguimenti degni di nota
 
-Tracker degne di nota sono consente di individuare le minacce più piccole e grande e rischi che si ritiene che è necessario tenere conto. Tracker degne di nota consentono di individuare se questi problemi presenti nell'ambiente Office 365, nonché collegamenti ad articoli che offrono ulteriori informazioni sugli elementi (ad esempio) avviene e sull'impatto l'utilizzo dell'organizzazione di Office 365. Se è una nuova minaccia big (ad esempio Wannacry, Petya) o una minaccia esistente che potrebbe creare alcune nuove richiede (ad esempio i nostri altri primo degne di nota elemento - Nemucod), questo viene consente di individuare importanti nuove voci e deve controllare ed esaminare il team di protezione periodicamente.
+Gli inseguitori degni di nota sono il luogo in cui si trovano minacce e rischi di dimensioni ridotte e di minore rilevanza. Gli inseguitori degni di nota consentono di individuare se questi problemi sono presenti nell'ambiente Office 365, oltre a un collegamento ad articoli (come questo) che forniscono maggiori dettagli su ciò che sta accadendo e su come avranno effetto sull'utilizzo da parte dell'organizzazione di Office 365. Se si tratta di una nuova minaccia (ad esempio, Wannacry, Petya) o di una minaccia esistente che potrebbe creare nuove sfide (come la nostra altra nota inaugurale-Nemucod), questo è il luogo in cui si trovano importanti nuovi elementi che il team di sicurezza deve rivedere ed esaminare periodicamente.
   
-In genere Tracker degne di nota verranno registrate per solo un paio di settimane quando è identificare nuove minacce e potrebbe essere necessario visibilità aggiuntiva che consente questa funzionalità. Una volta superato il rischio più importante per una minaccia, si verrà rimossa quell'elemento degne di nota. In questo modo, è possibile mantenere l'elenco nuovo e aggiornato con altri nuovi elementi pertinenti.
+Gli incaricati in genere verranno pubblicati solo per un paio di settimane quando si identificano nuove minacce e si pensa che potrebbe essere necessaria una maggiore visibilità fornita da questa funzionalità. Una volta superato il rischio maggiore per una minaccia, verrà rimosso l'elemento degno di nota. In questo modo, è possibile mantenere l'elenco aggiornato e aggiornato con gli altri nuovi elementi rilevanti.
   
-### <a name="trending-trackers"></a>Tendenza Tracker
+### <a name="trending-trackers"></a>Inseguimenti di tendenza
 
-Tendenza Tracker (precedentemente denominato campagne) evidenziare nuove minacce che non sono state indicate nel messaggio di posta elettronica dell'organizzazione della scorsa settimana.
+I tracking dei trend (in precedenza chiamati campagne) evidenziano nuove minacce che non sono state visualizzate nella posta elettronica dell'organizzazione nella settimana passata.
   
-![Esempio di analisi delle tendenze widget campagne malware](media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Esempio di widget per le campagne antimalware in trend](media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
-Tendenza Tracker avere un'idea di nuove minacce che è consigliabile consultare per verificare che l'ambiente aziendale più ampio è preparata contro gli attacchi.
+Gli informatori di tendenza offrono un'idea delle nuove minacce che è necessario esaminare per garantire che l'ambiente aziendale più esteso sia preparato contro gli attacchi.
   
-### <a name="tracked-queries"></a>Query revisioni
+### <a name="tracked-queries"></a>Query registrate
 
-Query revisioni sfruttare le query salvate per valutare periodicamente l'attività di Office 365 all'interno dell'organizzazione. In questo modo evento analisi delle tendenze, con più provenire nei prossimi mesi. Revisioni query eseguite automaticamente, fornendo informazioni aggiornate senza che sia necessario ricordarsi di eseguire nuovamente la query.
+Le query rilevate sfruttano le query salvate per valutare periodicamente l'attività di Office 365 nell'organizzazione. In questo modo si ottiene l'andamento degli eventi, con ulteriori risultati nei prossimi mesi. Le query riLevate vengono eseguite automaticamente, fornendo informazioni aggiornate senza dover ricordarsi di rieseguire le query.
   
-![Esempio di query registrate con un selezionato](media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Esempio di query registrate con una selezionata](media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Query salvate
 
-Query salvate sono disponibili anche nella sezione Tracker. È possibile utilizzare le query salvata per archiviare le ricerche Explorer comuni che si desiderano ottenere back più rapida e più volte, senza dover ricreare ogni volta che la ricerca.
+Le query salvate vengono trovate anche nella sezione trackers. È possibile utilizzare le query salvate per archiviare le ricerche di Esplora risorse comuni che si desidera tornare a più rapidamente e più volte, senza dover ricreare ogni volta la ricerca.
   
-![Esempio di query salvate con uno selezionato](media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Esempio di query salvate con una selezionata](media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
-È sempre possibile salvare una query degne di nota di arresto o uno dei propri query Explorer con il pulsante **Salva query** nella parte superiore della pagina Explorer. Lasciare salvati in tale verrà visualizzata nell'elenco **delle query salvata** nella pagina verifiche. 
+È sempre possibile salvare una query di rilevamento notevole o una qualsiasi delle query di Esplora risorse utilizzando il pulsante **Salva query** nella parte superiore della pagina Esplora. Qualsiasi elemento salvato verrà visualizzato nell'elenco delle **query salvate** nella pagina di monitoraggio. 
   
-## <a name="trackers-and-explorer"></a>Tracker ed Esplora
+## <a name="trackers-and-explorer"></a>InSeguimenti ed Esplora risorse
 
-Se si sta esaminando posta, contenuto o le attività di Office (disponibile a breve), soluzioni e Tracker interagiscono per semplificare la ricerca e tenere traccia dei rischi di protezione. Affatto, tracker forniscono informazioni utili per proteggere gli utenti di Office 365 evidenziandone i problemi relativi a nuovi, principali e di frequente - verifica della che propria azienda migliore protezione durante lo spostamento nel cloud.
+Sia che si stia esaminando la posta elettronica, il contenuto o le attività di Office (disponibile a breve), Explorer e tracker interagiscono per esaminare e monitorare i rischi e le minacce per la sicurezza. Tutti insieme, i recapitatori forniscono informazioni per proteggere gli utenti di Office 365 evidenziando problemi nuovi, rilevanti e spesso ricercati: garantire che la propria azienda sia più protetta quando si sposta sul cloud.
   
-Quando Tracker rischio è possibile utilizzare, provare a tali moduli - e ricordare che è possibile sempre fornire commenti su questo o altre funzionalità di protezione di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo inferiore destro della [Panoramica di Office 365 Protezione &amp; centro conformità](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Quando gli informatori di minacce sono a vostra disposizione, provarli e ricordarsi che è sempre possibile fornire commenti e suggerimenti su questo o su altre funzionalità di sicurezza di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo in basso a destra della [panoramica di Office 365. Centro &amp; sicurezza e conformità](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
 ![Centro sicurezza e &amp;conformità di Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>Tracker e la protezione di Office 365 rischio avanzate
+## <a name="trackers-and-office-365-advanced-threat-protection"></a>InSeguimenti e protezione avanzata dalle minacce di Office 365
 
-Con il primo rischio degne di nota, si stiamo evidenziazione minacce malware avanzate rilevate [Gli allegati sicuri di Office 365 degli strumenti di analisi](atp-safe-attachments.md). Se si è un cliente di Office 365 Enterprise E5 e non si utilizza [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), è necessario: è incluso in abbonamento. Degli strumenti di analisi fornisce valore anche se si dispone di altri strumenti di sicurezza per il filtro del flusso di posta elettronica con i servizi di Office 365. Tuttavia, posta indesiderata e caratteristiche [degli strumenti di analisi di Office 365 sicuri collegamenti](atp-safe-links.md) funzionino al meglio quando la soluzione di protezione posta elettronica principale è tramite Office 365. 
+Con la nostra minaccia degna di nota inaugurale, vengono evidenziate le minacce di malware avanzate rilevate dagli [allegati sicuri di Office 365 ATP](atp-safe-attachments.md). Se si è un cliente di Office 365 Enterprise E5 e non si utilizza [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), è necessario che sia incluso nell'abbonamento. ATP fornisce valore anche se si dispone di altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi di Office 365. Tuttavia, le funzionalità di protezione da posta indesiderata e di [office 365 ATP Safe](atp-safe-links.md) funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è tramite Office 365. 
   
-![Degli strumenti di analisi della protezione &amp; centro conformità](media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP nel centro sicurezza &amp; e conformità](media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-Pieno di rischio oggi, che eseguono solo tradizionale anti-malware analizza indica che non è protetto sufficiente contro gli attacchi. Chi effettua l'attacco più sofisticata odierna utilizza gli strumenti disponibili in genere per creare un nuovo offuscate o ritardato gli attacchi di tipo non riconosciuti dal tradizionale basata su firma motori antimalware. La caratteristica allegati sicuri degli strumenti di analisi accetta gli allegati di posta elettronica e li detonates in un ambiente virtuale per determinare se sono attendibili o dannoso. Questo processo detonazione ogni file viene aperto in un ambiente virtuale computer e quindi controlla dopo l'apertura del file. Se si tratta di un file PDF e file compresso o un documento di Office, malware può essere nascosta in un file, attivazione di una sola volta vittima verrà aperto nel proprio computer. Detonante e analizzando il file nel flusso di posta elettronica, funzionalità degli strumenti di analisi di Office 365 rileva che questi rischi basati su un numero di regole euristiche comportamenti e reputazione del file.
+In questo mondo a rischio di minacce, l'esecuzione di solo scansioni antimalware tradizionali significa che non si è sufficientemente protetti dagli attacchi. Gli aggressori più sofisticati di oggi utilizzano gli strumenti comunemente disponibili per creare attacchi nuovi, offuscati o ritardati che non verranno riconosciuti dai motori antimalware tradizionali basati sulla firma. La funzionalità degli allegati sicuri ATP accetta gli allegati di posta elettronica e li detona in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente computer virtuale, quindi Guarda cosa succede dopo l'apertura del file. Che si tratti di un file PDF e compresso o di un documento di Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima l'ha aperta nel computer. Facendo detonare e analizzando il file nel flusso di posta elettronica, le funzionalità ATP di Office 365 trovano tali minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
   
-Il nuovo filtro di rischio degne di nota sono evidenziati gli elementi che sono stati rilevati di recente tramite gli allegati sicuri degli strumenti di analisi. Questi rilevamenti rappresentano gli elementi che sono nuovi file dannosi, precedentemente non trovati da Office 365 nel flusso di posta elettronica o messaggio di posta elettronica altri clienti. Prestare attenzione agli elementi nel Tracker rischio degne di nota, vedere chi è stata assegnata da essi ed esaminare i dettagli di detonazione riportati nella scheda analisi avanzate (trovata facendo clic sull'oggetto del messaggio di posta elettronica nell'elenco cartelle). Si noti saranno disponibili solo in questa scheda in messaggi di posta elettronica rilevati dalla funzionalità gli allegati sicuri degli strumenti di analisi: questa funzionalità di individuazione degne di nota include filtro, ma è inoltre possibile utilizzare questo filtro per le altre ricerche nell'elenco cartelle.
+Il nuovo filtro minacce notevole evidenzia gli elementi che sono stati rilevati di recente tramite gli allegati sicuri di ATP. Tali rilevamenti rappresentano gli elementi che sono nuovi file dannosi, non precedentemente rilevati da Office 365 nel flusso di posta elettronica o nel messaggio di posta elettronica di altri clienti. Fare attenzione agli elementi contenuti nell'informatore di minacce considerevole, vedere chi è stato designato da loro e esaminare i dettagli di detonazione mostrati nella scheda analisi avanzata (trovato facendo clic sull'oggetto del messaggio di posta elettronica in Esplora). Nota Questa scheda è disponibile solo per i messaggi di posta elettronica rilevati dalla funzionalità degli allegati sicuri di ATP: questo inseguitore notevole include tale filtro, ma è anche possibile utilizzare tale filtro per altre ricerche in Esplora.
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Se l'organizzazione non dispone già di Business Intelligence di rischio di Office 365, vedere [come si ottengono Intelligence rischio di Office 365?](get-started-with-ti.md).
+- Se l'organizzazione non dispone già di Office 365 Threat Intelligence, vedere [come è possibile ottenere office 365 Threat Intelligence?](get-started-with-ti.md).
     
-- Verificare che il team di protezione con i ruoli corretti e le autorizzazioni assegnate. È necessario essere un amministratore globale di Office 365 o disporre del ruolo di amministratore della sicurezza o ricerca e Purge assegnato nella protezione &amp; centro conformità. Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+- Assicurarsi che il team di sicurezza disponga dei ruoli e delle autorizzazioni corretti assegnati. È necessario essere un amministratore globale di Office 365 oppure fare in modo che l'amministratore della sicurezza o il ruolo di ricerca ed &amp; eliminazione siano stati assegnati nel centro conformità sicurezza. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
-- Controllare le nuove Tracker possa essere visualizzata nell'ambiente Office 365. Quando è disponibile, saranno disponibili le Tracker [qui](https://protection.office.com/). Passare a **gestione rischio** \> **Tracker rischio**.
+- Tenere presente che i nuovi Tracker vengono visualizzati nell'ambiente Office 365. Se disponibile, è possibile trovare i propri inSeguitori. [](https://protection.office.com/) Accedere a inseguimenti di \> **minacce**per la **gestione delle minacce** .
     
-- Se non vi ancora provveduto, per ulteriori informazioni e configurare la [Protezione di Office 365 avanzate rischio](office-365-atp.md) per l'organizzazione, inclusi [collegamenti sicuri degli strumenti di analisi di Office 365](atp-safe-links.md) e [Gli allegati sicuri di Office 365 degli strumenti di analisi](atp-safe-attachments.md).
+- Se non è stato ancora fatto, è possibile ottenere ulteriori informazioni e configurare [office 365 Advanced Threat Protection](office-365-atp.md) per la propria organizzazione, inclusi i [collegamenti sicuri di Office 365 ATP](atp-safe-links.md) e gli [allegati sicuri ATP di Office 365](atp-safe-attachments.md).
   
 

@@ -1,74 +1,74 @@
 ---
-title: Set up Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint
+title: Set up Information Rights Management (IRM) in SharePoint admin center
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
-description: Informazioni su come utilizzare SharePoint Online IRM tramite Microsoft Azure Active Directory Rights Management Services (RMS) per proteggere raccolte documenti ed elenchi di SharePoint.
-ms.openlocfilehash: dea8c71ce67207b3c40a1f934f90e63740f70f29
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Informazioni su come utilizzare IRM di SharePoint Online tramite Microsoft Azure Active Directory Rights Management Services (RMS) per proteggere gli elenchi e le raccolte documenti di SharePoint.
+ms.openlocfilehash: a5ac2cf5f33f3957e4cf17660461ad2d719d7c83
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530802"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217706"
 ---
-# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint
+# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
-In SharePoint Online, la protezione IRM viene applicata ai file a livello di elenco e libreria. Prima dell'organizzazione può utilizzare la protezione IRM, è necessario configurare Rights Management. IRM si basa su Azure Rights Management service da Azure la protezione delle informazioni per la crittografia e assegnare limitazioni di utilizzo. Alcuni piani di Office 365 includono Azure Rights Management, ma non tutte. Per ulteriori informazioni, leggere [servizi e applicazioni di Office come supportano Azure Rights Management](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
+All'interno di SharePoint Online, la protezione IRM viene applicata ai file a livello di elenco e raccolta. Prima che l'organizzazione possa utilizzare la protezione IRM, è necessario innanzitutto impostare Rights Management. IRM si basa sul servizio Azure Rights Management da Azure Information Protection per crittografare e assegnare restrizioni di utilizzo. Alcuni piani di Office 365 includono Azure Rights Management, ma non tutti. Per ulteriori informazioni, vedere in [che modo le applicazioni e i servizi di Office supportano Azure Rights Management](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
   
-## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Attivare il servizio IRM tramite interfaccia di amministrazione di SharePoint
+## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Abilitare il servizio IRM utilizzando l'interfaccia di amministrazione di SharePoint
 
-Prima che l'organizzazione può raccolte ed elenchi SharePoint protetto con IRM, è necessario attivare il servizio di gestione dei diritti per l'organizzazione. Per informazioni su come visualizzare [Attivare Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). È necessario utilizzare un account di lavoro o della scuola con privilegi di amministratore globale di Office 365 per abilitare il servizio di gestione dei diritti. In caso contrario, non sarà in grado di utilizzare le funzionalità IRM con SharePoint Online.
+Prima che l'organizzazione possa proteggere con IRM gli elenchi e le raccolte di SharePoint, è necessario prima attivare il servizio Rights Management per l'organizzazione. Per ulteriori informazioni, vedere [attivazione di Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). È necessario utilizzare un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale di Office 365 per abilitare il servizio Rights Management. In caso contrario, non sarà possibile utilizzare le funzionalità IRM con SharePoint Online.
   
-Dopo aver attivato il servizio di gestione dei diritti, accedere all'interfaccia di amministrazione di SharePoint per attivare IRM.
+Dopo aver attivato il servizio Rights Management, accedere all'interfaccia di amministrazione di SharePoint per attivare IRM.
   
 1. Accedere a Office 365 come amministratore globale o amministratore di SharePoint.
     
 2. Selezionare l'icona di avvio delle app ![Icona di avvio delle app in Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in alto a sinistra e scegliere **Amministratore** per aprire l'interfaccia di amministrazione di Office 365 (se il riquadro Amministratore non è visibile, non si dispone delle autorizzazioni di amministratore di Office 365 all'interno dell'organizzazione). 
     
-3. Nel riquadro sinistro selezionare **Admin Center** \> **SharePoint**.
+3. Nel riquadro sinistro scegliere interfaccia di **Amministrazione** \> di **SharePoint**.
     
-4. Nel riquadro sinistro, scegliere **Impostazioni**.
+4. Nel riquadro sinistro scegliere **Impostazioni**.
     
-5. Nella sezione **Information Rights Management (IRM)** , scegliere di **utilizzare il servizio IRM specificato nella configurazione**e quindi scegliere **Aggiorna le impostazioni di IRM**. Dopo aver aggiornato le impostazioni IRM, gli utenti dell'organizzazione possono iniziare a utilizzare IRM nelle raccolte documenti ed elenchi di SharePoint. Tuttavia, le opzioni di farlo potrebbero richiedere un'ora appaiano nella raccolta di impostazioni e le impostazioni dell'elenco.
+5. Nella sezione **Information Rights Management (IRM)** scegliere **utilizza il servizio IRM specificato nella configurazione**, quindi scegliere **Aggiorna impostazioni IRM**. Dopo aver eseguito l'aggiornamento delle impostazioni di IRM, gli utenti dell'organizzazione possono iniziare a utilizzare IRM negli elenchi di SharePoint e nelle raccolte documenti. Tuttavia, le opzioni per eseguire questa operazione possono richiedere fino a un'ora per essere visualizzate nelle impostazioni della raccolta e nelle impostazioni degli elenchi.
     
-## <a name="irm-enable-sharepoint-document-libraries-and-lists"></a>Elenchi e raccolte documenti di SharePoint abilitare IRM
+## <a name="irm-enable-sharepoint-document-libraries-and-lists"></a>Abilitare gli elenchi e le raccolte documenti di SharePoint per IRM
 <a name="__toc220831191"> </a>
 
-Dopo l'aggiornamento delle impostazioni di IRM, i proprietari dei siti possono protetto con IRM loro elenchi di SharePoint e raccolte documenti. Per ulteriori informazioni, vedere [Applicare Information Rights Management a un elenco o raccolta](apply-irm-to-a-list-or-library.md).
+Dopo aver eseguito l'aggiornamento delle impostazioni di IRM, i proprietari dei siti possono proteggere con IRM gli elenchi e le raccolte documenti di SharePoint. Per ulteriori informazioni, vedere [Applicare Information Rights Management a un elenco o una raccolta](apply-irm-to-a-list-or-library.md).
   
-Quando i proprietari dei siti abilitare IRM per un elenco o raccolta, è possibile proteggere qualsiasi tipo di file supportati in tale elenco o raccolta. Se IRM è abilitato per una raccolta, gestione dei diritti si applica a tutti i file in tale raccolta. Quando si attiva IRM per un elenco, gestione dei diritti si applica solo ai file associati alle voci di elenco, non le voci dell'elenco effettivo.
+Quando i proprietari dei siti attivano IRM per un elenco o una raccolta, possono proteggere tutti i tipi di file supportati nell'elenco o nella raccolta. Quando IRM è abilitato per una raccolta, Rights Management si applica a tutti i file della raccolta. Quando si abilita IRM per un elenco, Rights Management si applica solo ai file associati a voci di elenco e non alle voci di elenco effettive.
   
-Al momento del download di file in un elenco abilitato IRM o la raccolta, i file sono crittografati in modo che solo gli utenti autorizzati possono visualizzarli. Ogni file protetto contiene inoltre una licenza di pubblicazione che impone restrizioni sugli utenti che visualizzano il file. Le restrizioni includono in esecuzione un file di sola lettura, la disattivazione della copia del testo, impedendo agli utenti di salvare una copia locale e impedire la stampa del file di persone. Programmi client in grado di leggere i tipi di file supportati IRM utilizzano la licenza di pubblicazione all'interno del file protetto per applicare queste restrizioni. È come un file protetto mantiene la protezione anche dopo il download. Per abilitare IRM per un elenco o raccolta, vedere [Applicare Information Rights Management a un elenco o raccolta](apply-irm-to-a-list-or-library.md).
+Quando gli utenti scaricano i file in un elenco o in una raccolta abilitata per IRM, i file vengono crittografati in modo che solo le persone autorizzate possano visualizzarle. Ogni file con diritti gestiti contiene anche una licenza di pubblicazione che impone restrizioni agli utenti che visualizzano il file. Le restrizioni tipiche includono l'esecuzione di un file di sola lettura, la disattivazione della copia del testo, impedire agli utenti di salvare una copia locale e impedire agli utenti di stampare il file. I programmi client in grado di leggere i tipi di file supportati da IRM utilizzano la licenza di pubblicazione all'interno del file Rights-Managed per applicare queste restrizioni. Questo è il modo in cui un file con diritti gestiti mantiene la propria protezione anche dopo il download. Per abilitare IRM su un elenco o una raccolta, vedere [Applicare Information Rights Management a un elenco o una raccolta](apply-irm-to-a-list-or-library.md).
   
-È possibile creare o modificare documenti in una raccolta di IRM abilitato utilizzando Office Online. In realtà, una persona per volta può scaricare e modificare i file crittografati con IRM. Utilizzare archiviazione e l'estrazione per gestire *la creazione condivisa* o creazione e modifica tra più utenti. 
+Non è possibile creare o modificare documenti in una raccolta abilitata per IRM tramite Office Online. Invece, una persona alla volta può scaricare e modificare i file crittografati con IRM. Utilizzare l'archiviazione e l'estrazione per gestire la creazione *condivisa* o la creazione di una modifica in più utenti. 
   
-Quando si scarica un file PDF da una libreria protetti tramite IRM, Office 365 consente di creare un file PDF protetto. Non modificherà l'estensione del file, ma il file è protetto. Per visualizzare il file è necessario il Visualizzatore di Azure Information Protection, il client Azure Information Protection completo, o un'altra applicazione che supporta la visualizzazione protetta file PDF. 
+Quando si scarica un file PDF da una raccolta protetta da IRM, Office 365 crea un file PDF protetto. L'estensione del file non cambia, ma il file è protetto. Per visualizzare questo file, è necessario Azure Information Protection Viewer, il client di Azure Information Protection completo o un'altra applicazione che supporta la visualizzazione di file PDF protetti. 
   
-SharePoint Online supporta la crittografia dei tipi di file seguenti:
+SharePoint Online supporta la crittografia dei seguenti tipi di file:
   
 - PDF
     
-- I formati di file 97-2003 per i programmi di Microsoft Office seguenti: Word, Excel e PowerPoint
+- Formati di file di 97-2003 per le seguenti applicazioni di Microsoft Office: Word, Excel e PowerPoint
     
-- Formati Office Open XML per i programmi di Microsoft Office seguenti: Word, Excel e PowerPoint
+- Formati di Office Open XML per le seguenti applicazioni di Microsoft Office: Word, Excel e PowerPoint
     
-- Il formato XML Paper Specification (XPS)
+- Formato XML Paper Specification (XPS)
     
 ## <a name="next-steps"></a>Passaggi successivi
 <a name="__toc220831191"> </a>
 
-Dopo aver abilitato IRM per SharePoint Online, è possibile avviare l'applicazione di gestione dei diritti per elenchi e raccolte. Per informazioni, vedere [Applicare Information Rights Management a un elenco o raccolta](apply-irm-to-a-list-or-library.md).
+Dopo aver abilitato IRM per SharePoint Online, è possibile iniziare a applicare Rights Management agli elenchi e alle raccolte. Per informazioni, vedere [Applicare Information Rights Management a un elenco o una raccolta](apply-irm-to-a-list-or-library.md).
   
-Il nuovo client di sincronizzazione OneDrive per Windows supporta la sincronizzazione delle raccolte documenti di SharePoint protetti tramite IRM e percorsi di OneDrive (purché l'impostazione di IRM per la raccolta non è stata impostata per scadere diritti di accesso documento). Per ulteriori informazioni o per iniziare a distribuire il nuovo client di sincronizzazione, vedere [distribuire il nuovo client di sincronizzazione OneDrive per Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
+Il nuovo client di sincronizzazione di OneDrive per Windows supporta la sincronizzazione delle raccolte documenti di SharePoint e delle posizioni OneDrive protette da IRM (purché l'impostazione IRM per la raccolta non sia impostata sulla scadenza dei diritti di accesso ai documenti). Per ulteriori informazioni o per iniziare a distribuire il nuovo client di sincronizzazione, vedere [distribuire il nuovo client di sincronizzazione di OneDrive per Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Inizio pagina](set-up-irm-in-sp-admin-center.md#__top)
   

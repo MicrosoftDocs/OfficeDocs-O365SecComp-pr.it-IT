@@ -1,54 +1,54 @@
 ---
-title: Gestisce le pianificazioni per più report nella protezione &amp; centro conformità
+title: Gestire le pianificazioni per più report nel centro &amp; sicurezza e conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
-description: Informazioni su come visualizzare, modificare e gestisce le pianificazioni per i rapporti di sicurezza &amp; centro conformità.
-ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Informazioni su come visualizzare, modificare e gestire le pianificazioni per i report nel centro &amp; sicurezza e conformità.
+ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014908"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218836"
 ---
-# <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gestisce le pianificazioni per più report nella protezione &amp; centro conformità
+# <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gestire le pianificazioni per più report nel centro &amp; sicurezza e conformità
 
-In sicurezza &amp; centro conformità, diversi [report e informazioni](reports-and-insights-in-security-and-compliance.md) sono disponibili per assistere i team di protezione dell'organizzazione ad attenuare il rischio e dell'organizzazione da minacce. Se si è un membro del team di protezione dell'organizzazione, è possibile gestire le pianificazioni per uno o più report. 
+Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione. Se si è membri del team di sicurezza dell'organizzazione, è possibile gestire le pianificazioni per uno o più report. 
   
-## <a name="manage-schedules-for-reports"></a>Gestisce le pianificazioni per i report
+## <a name="manage-schedules-for-reports"></a>Gestire le pianificazioni per i report
 
 > [!IMPORTANT]
-> Verificare di disporre i necessari [autorizzazioni assegnate in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, security administrators e lettori protezione possono accedere ai rapporti in sicurezza &amp; centro conformità. 
+> Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
   
-![In sicurezza &amp; centro conformità, selezionare rapporti \> gestisce le pianificazioni](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
+![Nel centro sicurezza &amp; e conformità, scegliere rapporti \> Gestione pianificazioni](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) ed effettuare l'accesso. Verrà visualizzata per il centro di conformità e sicurezza.
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza & Compliance.
 
-2. In sicurezza &amp; centro conformità, passare a **report** \> **Gestisci pianificazioni**.
+2. Nel centro sicurezza &amp; e conformità, accedere a **report** \> di **Gestione pianificazioni**.
     
 3. Selezionare un elemento nell'elenco.
     
-4. Esaminare le informazioni per la pianificazione del report.
+4. Rivedere le informazioni relative alla pianificazione del report.
     
-5. Nel modo appropriato, modificare o eliminare la pianificazione e quindi fare clic su **Chiudi**.
+5. Se necessario, modificare o eliminare la pianificazione, quindi fare clic su **Chiudi**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Creare una pianificazione per un report nella protezione &amp; centro conformità](create-a-schedule-for-a-report.md)
+[Creare una pianificazione per un report nel centro sicurezza &amp; e conformità](create-a-schedule-for-a-report.md)
   
-[Scaricare un report personalizzato per la protezione &amp; centro conformità](set-up-and-download-a-custom-report.md)
+[Scaricare un report personalizzato nel centro sicurezza &amp; e conformità](set-up-and-download-a-custom-report.md)
   
-[Scarica report esistenti nella protezione &amp; centro conformità](download-existing-reports.md)
+[Scaricare i report esistenti nel centro &amp; sicurezza e conformità](download-existing-reports.md)
   
 

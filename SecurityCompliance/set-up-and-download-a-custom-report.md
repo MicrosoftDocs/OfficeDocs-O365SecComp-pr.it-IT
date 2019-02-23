@@ -1,53 +1,53 @@
 ---
-title: Impostare e scaricare un report personalizzato per la protezione &amp; centro conformità
+title: Configurare e scaricare un report personalizzato nel centro sicurezza &amp; e conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
-description: Informazioni su come configurare e scaricare report con un intervallo di date personalizzato e filtri di sicurezza &amp; centro conformità.
-ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Informazioni su come configurare e scaricare un report con un intervallo di date personalizzato e filtri nel centro sicurezza &amp; e conformità.
+ms.openlocfilehash: 7e4d152509a6e904c7df5ea7c8ccddf9503a35da
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014748"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219706"
 ---
-# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Impostare e scaricare un report personalizzato per la protezione &amp; centro conformità
+# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurare e scaricare un report personalizzato nel centro sicurezza &amp; e conformità
 
-Nella [protezione &amp; centro conformità](https://protection.office.com), sono disponibili per assistere i team di protezione dell'organizzazione ad attenuare il rischio e dell'organizzazione da minacce diversi [report e sui concetti](reports-and-insights-in-security-and-compliance.md) . Se si è un membro del team di protezione dell'organizzazione, è possibile configurare un report con i filtri e gli intervalli di dati personalizzato e quindi scaricare il report personalizzato. 
+Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono disponibili diversi [report e](reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione. Se si è membri del team di sicurezza dell'organizzazione, è possibile configurare un report con intervalli di date e filtri personalizzati, quindi scaricare il report personalizzato. 
   
 ## <a name="download-a-custom-report"></a>Scaricare un report personalizzato
 
 > [!IMPORTANT]
-> Verificare di disporre i necessari [le autorizzazioni per la protezione di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, security administrators e lettori protezione possono accedere ai rapporti in sicurezza &amp; centro conformità. 
+> Verificare di disporre delle [autorizzazioni necessarie per il Centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
   
-1. Nella [protezione &amp; centro conformità](https://protection.office.com), andare al **report** \> **Dashboard**.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **** \> **Dashboard**dei report.
     
-2. Scegliere un report. (Per questo esempio, utilizzeremo il rapporto di eliminazione del messaggio.)<br/>![Scegliere Report richieste per scaricare un report](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Scegliere un report. (In questo esempio, verrà utilizzato il rapporto disposizione messaggio).<br/>![Scegliere il rapporto richieste per il download di un report](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
-3. Nell'angolo superiore sinistro del report, scegliere **report richiesta**.
+3. Nell'angolo in alto a sinistra del report, scegliere **rapporto richieste**.
     
-4. Nella finestra di dialogo **Richiedi relazione** specificare un nome, data di inizio e data di fine del report. Quindi scegliere **Avanti**.<br/>![In sicurezza &amp; centro conformità, selezionare rapporti \> rapporti per il download](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. Nella finestra di dialogo **rapporto richieste** specificare un nome, una data di inizio e una data di fine per il report. Fare quindi clic su **Avanti**.<br/>![Nel centro sicurezza &amp; e conformità, scegliere \> report rapporti per il download](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
-5. Specificare i filtri da utilizzare per il report. (Ad esempio, si potrebbe specificare un indirizzo IP del client per il rapporto di eliminazione del messaggio.) Quindi scegliere **Avanti**.
+5. Specificare tutti i filtri che si desidera utilizzare per il report. (Ad esempio, è possibile specificare un indirizzo IP del client per il rapporto di disposizione dei messaggi). Fare quindi clic su **Avanti**.
     
-6. Specificare i destinatari di posta elettronica per il report e quindi fare clic su **Salva**.
+6. Specificare i destinatari di posta elettronica per il report e quindi scegliere **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e sui concetti di Office 365 Security &amp; centro conformità](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Creare una pianificazione per un report nella protezione &amp; centro conformità](create-a-schedule-for-a-report.md)
+[Creare una pianificazione per un report nel centro sicurezza &amp; e conformità](create-a-schedule-for-a-report.md)
   
-[Gestisce le pianificazioni per i rapporti di sicurezza &amp; centro conformità](manage-schedules-for-multiple-reports.md)
+[Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità](manage-schedules-for-multiple-reports.md)
   
-[Scarica report esistenti nella protezione &amp; centro conformità](download-existing-reports.md)
+[Scaricare i report esistenti nel centro &amp; sicurezza e conformità](download-existing-reports.md)
   
 

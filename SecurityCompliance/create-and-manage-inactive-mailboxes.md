@@ -6,41 +6,41 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: È possibile creare una cassetta postale inattiva in Office 365 applicando una conservazione o criteri di conservazione di Office 365 per la cassetta postale e quindi eliminare l'account utente di Office 365 corrispondente. Gli elementi in una cassetta postale inattiva vengono mantenuti per tutta la durata del criterio di conservazione o conservazione che è stato applicato prima che venga effettuata inattivo. Per eliminare definitivamente una cassetta postale inattiva, rimuove solo i criteri di conservazione o conservazione.
-ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: È possibile creare una cassetta postale inattiva in Office 365 applicando un criterio di conservazione o un blocco di Office 365 alla cassetta postale, quindi eliminando l'account utente di Office 365 corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
+ms.openlocfilehash: 8f798873da7d787b54932438e81aebf2dfe85181
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740838"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217776"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Creare e gestire le cassette postali inattive in Office 365
 
-Office 365 consente di mantenere il contenuto delle cassette postali eliminate. Questa funzionalità è denominata [delle cassette postali inattive](inactive-mailboxes-in-office-365.md). Cassette postali inattive consentono di mantenere posta elettronica ex dipendenti una volta terminata l'organizzazione. Una cassetta postale diventa inattiva quando una conservazione per controversia legale o un criterio di conservazione di Office 365 (creato in Office 365 Security &amp; centro conformità) viene applicato alla cassetta postale prima che venga eliminato l'account utente di Office 365 corrispondente. Il contenuto di una cassetta postale inattiva viene mantenuto per la durata dell'attesa effettuata nella cassetta postale prima che venga effettuata inattivo. In questo modo gli amministratori e responsabili della conformità record Manager utilizzare la ricerca del contenuto per la protezione &amp; centro conformità per cercare ed esportare il contenuto di una cassetta postale inattiva. Cassette postali inattive non possono ricevere posta elettronica e non vengono visualizzate nella Rubrica condivisa dell'organizzazione o altri elenchi.
+Office 365 rende possibile conservare il contenuto delle cassette postali eliminate. Questa funzionalità è denominata [cassette postali inattive](inactive-mailboxes-in-office-365.md). Le cassette postali inattive consentono di conservare la posta elettronica degli ex dipendenti dopo l'uscita dall'organizzazione. Una cassetta postale diventa inattiva quando un blocco per controversia legale o un criterio di conservazione di Office 365 (creato &amp; nel centro sicurezza e conformità di Office 365) viene applicato alla cassetta postale prima che venga eliminato l'account utente di Office 365 corrispondente. I contenuti di una cassetta postale inattiva vengono conservati per la durata del blocco che è stato immesso sulla cassetta postale prima che fosse reso inattivo. Questo consente agli amministratori, ai responsabili della conformità e ai manager dei record di utilizzare la &amp; ricerca contenuto nel centro sicurezza e conformità per cercare ed esportare il contenuto di una cassetta postale inattiva. Le cassette postali inattive non possono ricevere messaggi di posta elettronica e non vengono visualizzate nella rubrica condivisa dell'organizzazione o in altri elenchi.
   
 > [!NOTE]
 > Abbiamo posticipato la scadenza del 1° luglio 2017 relativa alla creazione di un nuovo blocco sul posto per rendere inattiva una cassetta postale. Tuttavia, più avanti nel corso di questo anno o all'inizio del prossimo, non sarà più possibile creare blocchi sul posto in Exchange Online. Da quel momento, sarà possibile utilizzare soltanto blocchi per controversia legale e criteri di conservazione di Office 365 per creare una cassetta postale inattiva. Tuttavia, le cassette postali inattive esistenti disponibili nel blocco sul posto continueranno a essere supportate ed è possibile continuare a gestire i blocchi per controversia legale sulle cassette postali inattive. Ciò include le operazioni di modifica della durata di un blocco sul posto e di eliminazione definitiva di una cassetta postale inattiva mediante la rimozione del blocco sul posto. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per rendere inattiva una cassetta postale, è necessario assegnare una licenza di Exchange Online piano 2 in modo che una conservazione per controversia legale o un criterio di conservazione di Office 365 è possibile applicare alla cassetta postale prima che venga eliminato. Le licenze di Exchange Online piano 2 fanno parte di un sottoscrizioni Office 365 Enterprise E3 ed E5. Se una cassetta postale viene assegnata una licenza di Exchange Online piano 1 (che fa parte di una sottoscrizione a Office 365 Enterprise E1), è necessario assegnare una licenza separata archiviazione Exchange Online in modo da un'esenzione può essere applicata alla cassetta postale prima che venga eliminato. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2, in modo che sia possibile applicare una conservazione per controversia legale o un criterio di ritenzione di Office 365 alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 (che fa parte di un abbonamento a Office 365 Enterprise E1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
-- La licenza associata alla cassetta postale di Exchange Online eliminata saranno disponibile dopo l'eliminazione di account utente di Office 365 corrispondente. È quindi possibile [assegnare licenze agli utenti di Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a un altro utente. 
+- La licenza associata alla cassetta postale di Exchange Online eliminata sarà disponibile dopo aver eliminato l'account utente di Office 365 corrispondente. È quindi possibile [assegnare licenze agli utenti di Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a un altro utente. 
     
 - Se non si applica un blocco per controversia legale o un criterio di conservazione di Office 365 a una cassetta postale prima della sua eliminazione, il contenuto non verrà conservato e non potrà essere trovato. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
     
-- Per ulteriori informazioni sulla conservazione per controversia legale, vedere [archiviazione sul posto e conservazione per controversia legale](https://go.microsoft.com/fwlink/p/?LinkId=846124). Per ulteriori informazioni sui criteri di conservazione di Office 365 in sicurezza &amp; centro conformità, vedere [Panoramica di criteri di conservazione in Office 365](retention-policies.md).
+- Per ulteriori informazioni sul blocco per controversia legale, vedere blocco [sul posto e conservazione per controversIa legale](https://go.microsoft.com/fwlink/p/?LinkId=846124). Per ulteriori informazioni sui criteri di conservazione di Office 365 nel &amp; Centro sicurezza e conformità, vedere [Overview of retention policies in Office 365](retention-policies.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Creare una cassetta postale inattiva
 
-Esecuzione di una cassetta postale inattiva prevede due fasi: 1) effettuare la cassetta postale su conservazione per controversia legale o applicare un criterio di conservazione di Office 365 e 2) eliminazione della cassetta postale o account utente di Office 365 corrispondente. Dopo che la cassetta postale è inattiva, il relativo contenuto viene mantenuto fino a quando non viene rimosso il criterio di conservazione o conservazione.
+La realizzazione di una cassetta postale inattiva comporta due passaggi: 1) l'inserimento della cassetta postale in blocco per controversia legale o l'applicazione di un criterio di conservazione di Office 365 a esso e 2) l'eliminazione della cassetta postale o dell'account utente di Office 365 corrispondente. Dopo che la cassetta postale è inattiva, il contenuto viene mantenuto finché non viene rimosso il blocco o il criterio di conservazione.
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Passaggio 1: applicare il blocco per controversia legale a una cassetta postale o applicare un criterio di conservazione di Office 365
 
@@ -59,74 +59,74 @@ Per le procedure dettagliate sull'applicazione del blocco per controversia legal
   
 ### <a name="step-2-delete-the-mailbox"></a>Passaggio 2: Eliminare la cassetta postale
 
-Dopo la cassetta postale viene messa in attesa o viene applicato un criterio di conservazione di Office 365, il passaggio successivo consiste nell'eliminare la cassetta postale. Il modo migliore per eliminare una cassetta postale consiste nell'eliminare l'account utente di Office 365 corrispondente nell'interfaccia di amministrazione di Office 365. Per informazioni sull'eliminazione di account utente di Office 365, vedere [eliminazione di un utente dall'organizzazione](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Dopo che la cassetta postale è stata messa in attesa o che è stato applicato un criterio di conservazione di Office 365, il passaggio successivo consiste nell'eliminare la cassetta postale. Il modo migliore per eliminare una cassetta postale consiste nell'eliminare l'account utente di Office 365 corrispondente nell'interfaccia di amministrazione di Office 365. Per informazioni sull'eliminazione degli account utente di Office 365, vedere [eliminare un utente dall'organizzazione](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
   
 > [!NOTE]
 > È inoltre possibile eliminare la cassetta postale utilizzando il cmdlet **Remove-Mailbox** in PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Eliminare o ripristinare le cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
   
 
-## <a name="view-a-list-of-inactive-mailboxes"></a>Visualizzare un elenco delle cassette postali inattive
+## <a name="view-a-list-of-inactive-mailboxes"></a>Visualizzazione di un elenco di cassette postali inattive
 
 
-Per visualizzare un elenco delle cassette postali inattive all'interno dell'organizzazione:
+Per visualizzare un elenco delle cassette postali inattive nell'organizzazione:
   
-1. Accedere a [https://protection.office.com/](https://protection.office.com/) e accedere utilizzando le credenziali di un account di amministratore dell'organizzazione Office 365. 
+1. Passare a [https://protection.office.com/](https://protection.office.com/) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro della sicurezza &amp; centro conformità, fare clic su **governance dati** \> * * conservazione * *.
+2. Nel riquadro sinistro del Centro sicurezza &amp; e conformità fare clic su **Data Governance** \> * * retention * *.
     
-3. Nella pagina **conservazione** fare clic su **altro**![puntini di sospensione barra di spostamento](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif), quindi fare clic su **cassette postali inattive**.
+3. Nella pagina **conservazione** fare clic su **altre**![ellissi](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)della barra di spostamento e quindi fare clic su **cassette postali inattive**.
     
-    ![Nella pagina conservazione fare clic su altro e quindi fare clic su cassette postali inattive per visualizzare un elenco di cassette postali inattive](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
+    ![Nella pagina conservazione fare clic su altro e quindi su cassette postali inattive per visualizzare un elenco di cassette postali inattive](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
-    Verrà visualizzata la pagina **delle cassette postali inattive** . Nota che viene visualizzato il numero totale di cassette postali inattive all'interno dell'organizzazione. 
+    Viene visualizzata la pagina delle **cassette postali inattive** . Nota viene visualizzato il numero totale di cassette postali inattive nell'organizzazione. 
     
-    ![Viene visualizzato un elenco di tutte le cassette postali inattive all'interno dell'organizzazione](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
+    ![Viene visualizzato un elenco di tutte le cassette postali inattive nell'organizzazione.](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
   
-In alternativa, è possibile eseguire il seguente comando in Exchange Online PowerShell per visualizzare l'elenco delle cassette postali inattive.
+In alternativa, è possibile eseguire il comando seguente in Exchange Online PowerShell per visualizzare l'elenco delle cassette postali inattive.
 
 ```
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-È possibile fare clic su ![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **esportare** per visualizzare o scaricare un file CSV che contiene informazioni aggiuntive sulle cassette postali inattive all'interno dell'organizzazione. 
+È possibile fare ![clic su Esporta esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **** delle icone dei risultati della ricerca per visualizzare o scaricare un file CSV che contiene informazioni aggiuntive sulle cassette postali inattive nell'organizzazione. 
   
-È inoltre possibile eseguire il comando seguente per esportare l'elenco delle cassette postali inattive e altre informazioni su un file CSV. In questo esempio viene creato il file CSV nella directory corrente.
+È inoltre possibile eseguire il comando seguente per esportare l'elenco delle cassette postali inattive e altre informazioni in un file CSV. In questo esempio, il file CSV viene creato nella directory corrente.
 
 ```
 Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
 ```
    
 > [!NOTE]
-> È possibile che una cassetta postale inattiva può avere lo stesso indirizzo SMTP come una cassetta postale utente attivo. In questo caso, il valore della proprietà **ExchangeGuid** o **DistinguishedName** utilizzabile per identificare in modo univoco una cassetta postale inattiva. 
+> È possibile che una cassetta postale inattiva possa avere lo stesso indirizzo SMTP di una cassetta postale utente attiva. In questo caso, è possibile utilizzare il **** valore della proprietà Distinguished o **ExchangeGuid** per identificare in modo univoco una cassetta postale inattiva. 
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Ricerca ed esportazione del contenuto di una cassetta postale inattiva
 
-È possibile accedere il contenuto delle cassette postali inattive mediante lo strumento di ricerca del contenuto per la protezione &amp; centro conformità. Quando si esegue la ricerca di una cassetta postale inattiva, è possibile creare la query di ricerca per cercare gli elementi specifici oppure è possibile restituire l'intero contenuto della cassetta postale inattiva. È possibile visualizzare in anteprima i risultati della ricerca o esportare i risultati della ricerca in un file di dati di Outlook (PST) o come messaggi di posta elettronica singolo. Per le procedure dettagliate per la ricerca di cassette postali e l'esportazione dei risultati della ricerca, vedere gli argomenti seguenti:
+È possibile accedere al contenuto della cassetta postale inattiva utilizzando lo strumento di ricerca contenuto nel centro sicurezza &amp; e conformità. Quando si esegue una ricerca in una cassetta postale inattiva, è possibile creare una query di ricerca con parole chiave per cercare elementi specifici oppure è possibile restituire l'intero contenuto della cassetta postale inattiva. È possibile visualizzare in anteprima i risultati della ricerca o esportare i risultati della ricerca in un file di dati di Outlook (PST) o come singoli messaggi di posta elettronica. Per le procedure dettagliate per la ricerca delle cassette postali e l'esportazione dei risultati della ricerca, vedere i seguenti argomenti:
   
-- [Ricerca del contenuto in Office 365](content-search.md)
+- [Ricerca contenuto in Office 365](content-search.md)
     
-- [Esportare i risultati di ricerca del contenuto da Office 365 Security &amp; centro conformità](export-search-results.md)
+- [Esportare i risultati della ricerca del contenuto dal centro &amp; sicurezza e conformità di Office 365](export-search-results.md)
     
-Ecco alcuni aspetti da tenere presenti durante la ricerca delle cassette postali inattive.
+Di seguito sono riportate alcune considerazioni da tenere presenti durante la ricerca di cassette postali inattive.
   
-- Se una ricerca di contenuto include una cassetta postale utente e cassetta postale viene quindi rese inattive, ricerca contenuto continua per la ricerca di cassette postali inattive quando si esegue nuovamente la ricerca dopo diventa inattivo.
+- Se una ricerca di contenuto include una cassetta postale utente e la cassetta postale viene resa inattiva, la ricerca di contenuto continuerà a eseguire una ricerca nella cassetta postale inattiva quando si rieseguirà la ricerca dopo che sarà inattiva.
     
-- In alcuni casi, un utente può disporre di una cassetta postale attiva e una cassetta postale inattiva che hanno lo stesso indirizzo SMTP. In questo caso, verrà cercata solo la cassetta postale specifica che si seleziona un percorso per una ricerca di contenuto. In altre parole, se si aggiunge una ricerca cassetta postale dell'utente, non è possibile presupporre che verranno eseguita la ricerca cassette postali attive e inattive, solo la cassetta postale aggiunto in modo esplicito per la ricerca verrà eseguita la ricerca.
+- In alcuni casi, un utente può disporre di una cassetta postale attiva e di una cassetta postale inattiva con lo stesso indirizzo SMTP. In questo caso, verrà cercata solo la cassetta postale specifica selezionata come percorso per una ricerca di contenuto. In altre parole, se si aggiunge una cassetta postale di un utente a una ricerca, non è possibile presumere che vengano cercate entrambe le cassette postali attive e inattive. verrà cercata solo la cassetta postale che si aggiunge esplicitamente alla ricerca.
     
-- È consigliabile evitare di dover delle cassette postali attivi e inattive cassette postali con lo stesso indirizzo SMTP. Se si desidera riutilizzare l'indirizzo SMTP attualmente assegnato a una cassetta postale inattiva, è consigliabile ripristinare la cassetta postale inattiva o ripristinare il contenuto di una cassetta postale inattiva a una cassetta postale attiva (o l'archivio di una cassetta postale attiva) e quindi eliminare il cassette postali inattive.
+- È consigliabile evitare di disporre di una cassetta postale attiva e di una cassetta postale inattiva con lo stesso indirizzo SMTP. Se è necessario riutilizzare l'indirizzo SMTP attualmente assegnato a una cassetta postale inattiva, è consigliabile recuperare la cassetta postale inattiva o ripristinare il contenuto di una cassetta postale inattiva in una cassetta postale attiva (o l'archivio di una cassetta postale attiva), quindi eliminare il cassetta postale inattiva.
     
 ## <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modificare la durata del blocco per una cassetta postale inattiva
 
-Dopo aver effettuata una cassetta postale inattiva, è possibile modificare la durata della conservazione o il criterio di conservazione di Office 365 applicate a cassette postali inattive. Per le procedure dettagliate, vedere [modificare la durata della conservazione per una cassetta postale inattiva in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md).
+Dopo aver reso inattiva una cassetta postale, è possibile modificare la durata del blocco o il criterio di conservazione di Office 365 applicato alla cassetta postale inattiva. Per le procedure dettagliate, vedere [modificare la durata del blocco per una cassetta postale inattiva in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md).
   
 ## <a name="recover-an-inactive-mailbox"></a>Recuperare una cassetta postale inattiva
 
-Se un dipendente precedente restituisce all'organizzazione o un nuovo dipendente è stato assunto deve essere eseguita su professionali del dipendente chiusa, è possibile ripristinare il contenuto delle cassette postali inattive. Quando si ripristina una cassetta postale inattiva, la cassetta postale viene convertita in una nuova cassetta postale, vengono mantenuti il contenuto e struttura di cartelle delle cassette postali inattive e la cassetta postale è collegata a un nuovo account utente. Dopo avere recuperato, cassette postali inattive non esiste più. Per ulteriori informazioni e procedure dettagliate avviene quando si ripristina una cassetta postale inattiva, vedere [ripristino di una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
+Se un ex dipendente ritorna all'organizzazione o se un nuovo dipendente viene assunto per assumere le responsabilità del dipendente del lavoratore defunto, è possibile recuperare il contenuto della cassetta postale inattiva. Quando si ripristina una cassetta postale inattiva, la cassetta postale viene convertita in una nuova cassetta postale, il contenuto e la struttura delle cartelle della cassetta postale inattiva vengono mantenuti e la cassetta postale è collegata a un nuovo account utente. Dopo il ripristino, la cassetta postale inattiva non esiste più. Per le procedure dettagliate e ulteriori informazioni sui casi in cui si ripristina una cassetta postale inattiva, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Ripristinare il contenuto di una cassetta postale inattiva in un'altra cassetta postale
 
-Se l'altro impiegato assume la responsabilità di un dipendente precedente o un'altra persona deve accedere al contenuto della cassetta postale inattiva, è possibile ripristinare (o unire) il contenuto della cassetta postale inattiva per una cassetta postale esistente. Quando si ripristina una cassetta postale inattiva, il contenuto viene copiato in un'altra cassetta postale. Cassette postali inattive viene mantenuta e manterrà una cassetta postale inattiva. Cassette postali inattive possono comunque essere ricerca quando si utilizza eDiscovery, è possibile ripristinare il contenuto a un'altra cassetta postale o può essere recuperato o eliminato in un secondo momento. Per le procedure dettagliate, vedere [ripristino di una cassetta postale inattiva in Office 365](restore-an-inactive-mailbox.md).
+Se un altro dipendente assume le responsabilità del lavoro di un ex dipendente o se un'altra persona ha bisogno dell'accesso al contenuto della cassetta postale inattiva, è possibile ripristinare (o unire) il contenuto della cassetta postale inattiva a una cassetta postale esistente. Quando si ripristina una cassetta postale inattiva, il contenuto viene copiato in un'altra cassetta postale. La cassetta postale inattiva viene conservata e rimane una cassetta postale inattiva. La cassetta postale inattiva può comunque essere cercata utilizzando eDiscovery, i suoi contenuti possono essere ripristinati in un'altra cassetta postale oppure può essere recuperata o eliminata in un secondo momento. Per le procedure dettagliate, vedere [ripristinare una cassetta postale inattiva in Office 365](restore-an-inactive-mailbox.md).
   
 ## <a name="delete-an-inactive-mailbox"></a>Eliminare una cassetta postale inattiva
 
-Se non più necessaria mantenere il contenuto di una cassetta postale inattiva, è possibile eliminare definitivamente la cassetta postale inattiva la rimozione dell'esenzione o rimuovendo il criterio di conservazione di Office 365 applicato a cassette postali inattive. Se la cassetta postale è stata eliminata più di 30 giorni, la cassetta postale verrà contrassegnata per l'eliminazione definitiva dopo si rimuove il blocco e la cassetta postale diventeranno non ripristinabile. Se è stata eliminata la cassetta postale negli ultimi 30 giorni, è comunque possibile ripristinare la cassetta postale dopo aver rimosso il criterio di conservazione o conservazione. Per le procedure dettagliate per la rimozione di un'esenzione o un criterio di conservazione di Office 365 per eliminare definitivamente una cassetta postale inattiva, vedere [eliminazione di una cassetta postale inattiva in Office 365](delete-an-inactive-mailbox.md).
+Se non è più necessario conservare il contenuto di una cassetta postale inattiva, è possibile eliminare definitivamente la cassetta postale inattiva rimuovendo il blocco o rimuovendo il criterio di conservazione di Office 365 applicato alla cassetta postale inattiva. Se la cassetta postale è stata eliminata più di 30 giorni fa, la cassetta postale verrà contrassegnata per l'eliminazione definitiva dopo aver rimosso il blocco e la cassetta postale diventerà non recuperabile. Se la cassetta postale è stata eliminata negli ultimi 30 giorni, è comunque possibile recuperare la cassetta postale dopo aver rimosso il blocco o il criterio di conservazione. Per le procedure dettagliate per la rimozione di un blocco o di un criterio di conservazione di Office 365 per eliminare definitivamente una cassetta postale inattiva, vedere [eliminare una cassetta postale inattiva in Office 365](delete-an-inactive-mailbox.md).

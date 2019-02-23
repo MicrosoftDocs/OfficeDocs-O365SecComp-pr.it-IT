@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection: M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: ee60b8fa5824b5e7ff478370216b52d17a6dc94f
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: db7da9d6ce2d2f2503585c0cde89f2b2626e2afa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123957"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220166"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 

@@ -6,87 +6,87 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
-description: Prevenzione di perdita di dati (DLP) in SharePoint Online, consente di individuare i documenti che contengono dati sensibili in tutto il tenant. Dopo l'individuazione dei documenti, è possibile utilizzare i proprietari di documento per proteggere i dati. In questo argomento consentono di una query di ricerca di dati riservati del modulo.
-ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
-ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
+description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver scoperto i documenti, è possibile collaborare con i proprietari dei documenti per proteggere i dati. Questo argomento consente di creare una query per la ricerca di dati riservati.
+ms.openlocfilehash: 3dc1081d4627f1a26c50eed84f733c31a3f6c194
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2018
-ms.locfileid: "25829187"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217236"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per individuare dati riservati memorizzati nei siti
 
-Gli utenti spesso archiviano dati riservati, ad esempio numeri di carta di credito, previdenza sociale, o personale, nei propri siti e nel tempo si può esporre un'organizzazione di grave rischio di perdite di dati. Documenti archiviati nei siti, inclusi OneDrive per i siti, potrebbe essere condivisi con utenti esterni all'organizzazione che non dispongono dell'accesso alle informazioni. Prevenzione di perdita di dati (DLP) in SharePoint Online, consente di individuare i documenti che contengono dati sensibili in tutto il tenant. Dopo l'individuazione dei documenti, è possibile utilizzare i proprietari di documento per proteggere i dati. In questo argomento consentono di una query di ricerca di dati riservati del modulo.
+Gli utenti spesso archiviano dati riservati, ad esempio numeri di carta di credito, numeri di previdenza sociale o personali, nei rispettivi siti e, nel tempo, possono esporre un'organizzazione a rischi significativi di perdita di dati. I documenti archiviati nei siti, inclusi i siti di OneDrive for business, possono essere condivisi con utenti esterni all'organizzazione che non devono avere accesso alle informazioni. Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver scoperto i documenti, è possibile collaborare con i proprietari dei documenti per proteggere i dati. Questo argomento consente di creare una query per la ricerca di dati riservati.
   
 > [!NOTE]
-> Electronic discovery, o eDiscovery e DLP sono caratteristiche che richiedono [SharePoint Online piano 2](https://go.microsoft.com/fwlink/?LinkId=510080). 
+> Electronic Discovery, o eDiscovery e DLP sono funzionalità Premium che richiedono [SharePoint Online piano 2](https://go.microsoft.com/fwlink/?LinkId=510080). 
   
 ## <a name="forming-a-basic-dlp-query"></a>Creazione di una query DLP di base
 
-Esistono tre parti che compongono una base query DLP: SensitiveType, contare intervallo e l'intervallo di confidenza. Come illustrato nel grafico seguente **SensitiveType: "\<tipo\>"** non è necessaria ed entrambe**|\<contare intervallo\> ** e**|\<intervallo di confidenza\> ** sono facoltativi. 
+Sono disponibili tre parti che costituiscono una query DLP di base: SensitiveType, Range count e intervallo di confidenza. Come illustrato nella figura seguente, **SensitiveType: "\<\>tipo"** è obbligatorio e entrambi**|\<\> ** gli intervalli di conteggio e di**|\<\> confidenza** sono facoltativi. 
   
 ![Query di esempio divisa in necessaria e facoltativa](media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>SensitiveType - obbligatorio
 
-Qual è ogni parte? Le query di SharePoint DLP in genere iniziano con la proprietà `SensitiveType:"` e un tipo di informazioni denominare da [tipi di informazioni riservate inventario](https://go.microsoft.com/fwlink/?LinkID=509999)e terminare con un `"`. È inoltre possibile utilizzare il nome del [tipo di informazione sensibile personalizzato](create-a-custom-sensitive-information-type.md) creato per l'organizzazione. Ad esempio, che si stia cercando per i documenti che contengono numeri di carta di credito. In un'istanza, utilizzare il seguente formato: `SensitiveType:"Credit Card Number"`. Dal momento che non vengono conteggio intervallo o un intervallo di confidenza, sarà la query restituisce tutti i documenti in cui viene rilevato un numero di carta di credito. Si tratta della query più semplice che è possibile eseguire e restituisce la maggior parte dei risultati. Tenere presente che condivide il controllo ortografico e spaziatura del tipo di riservati. 
+Che cos'è ogni parte? La proprietà `SensitiveType:"` e il nome di un tipo di informazioni vengono in genere iniziati con le query di SharePoint DLP dall'inventario dei `"`tipi di [informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999)e terminano con un. È inoltre possibile utilizzare il nome di un [tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md) creato per l'organizzazione. Ad esempio, è possibile cercare documenti contenenti numeri di carta di credito. In tal caso, è necessario utilizzare il formato seguente: `SensitiveType:"Credit Card Number"`. Poiché non è stato incluso l'intervallo di conteggio o la riservatezza, la query restituisce tutti i documenti in cui viene rilevato un numero di carta di credito. Questa è la query più semplice che è possibile eseguire e restituisce la maggior parte dei risultati. Tenere presente che l'ortografia e la spaziatura del tipo sensibile sono importanti. 
   
 ### <a name="ranges---optional"></a>Intervalli - facoltativo
 
-Entrambe le due parti sono intervalli, possiamo esaminare rapidamente l'aspetto di un intervallo. Nelle query di SharePoint DLP, un intervallo di base è rappresentato da due numeri separati da due punti, che è simile al seguente: `[number]..[number]`. Ad esempio, se `10..20` viene utilizzato, numeri compresi tra 10 e 20 consente di catturare quell'intervallo. Esistono molte combinazioni di intervallo diverso e alcuni sono descritte in questo argomento. 
+Entrambe le due parti successive sono intervalli, quindi esaminiamo rapidamente l'aspetto di un intervallo. Nelle query di SharePoint DLP, un intervallo di base è rappresentato da due numeri separati da due periodi, che sono analoghi a quanto segue: `[number]..[number]`. Ad esempio, se `10..20` viene utilizzato, quell'intervallo catturerà i numeri da 10 a 20. Sono disponibili molte diverse combinazioni di intervalli e diverse sono descritte in questo argomento. 
   
-Possibile aggiungere un intervallo di conteggio alla query. È possibile utilizzare il conteggio intervallo per definire il numero di occorrenze di informazioni riservate che un documento deve contenere prima che venga incluso nei risultati della query. Ad esempio, se si desidera che la query per restituire solo i documenti che contengono numeri di carta di credito esattamente cinque, utilizzare questo: `SensitiveType:"Credit Card Number|5"`. Intervallo numero consentono inoltre di identificare i documenti che comportano elevate livelli di rischio. L'organizzazione potrebbe si consideri ad esempio i documenti con cinque o più numeri di carta di credito ad alto rischio. Per trovare documenti adattando questo criterio, è necessario utilizzare la query seguente: `SensitiveType:"Credit Card Number|5.."`. In alternativa, è possibile trovare i documenti con cinque o massimo i numeri di carta di credito utilizzando questa query: `SensitiveType:"Credit Card Number|..5"`. 
+Aggiungere un intervallo di count alla query. È possibile utilizzare l'intervallo di Count per definire il numero di occorrenze di informazioni riservate che un documento deve contenere prima che sia incluso nei risultati della query. Ad esempio, se si desidera che la query restituisca solo i documenti che contengono esattamente cinque numeri di carta di credito `SensitiveType:"Credit Card Number|5"`, utilizzare la seguente operazione:. L'intervallo di conteggio può anche facilitare l'identificazione dei documenti che presentano livelli elevati di rischio. Ad esempio, l'organizzazione potrebbe prendere in considerazione documenti con cinque o più numeri di carta di credito a rischio elevato. Per trovare i documenti che corrispondono a questo criterio, è necessario utilizzare `SensitiveType:"Credit Card Number|5.."`la query seguente:. In alternativa, è possibile trovare documenti con cinque o meno numeri di carta di credito utilizzando la query `SensitiveType:"Credit Card Number|..5"`seguente:. 
   
 #### <a name="confidence-range"></a>Intervallo di confidenza
 
-Infine, l'intervallo di confidenza è il livello di probabilità che il tipo di sensibile rilevato sia effettivamente una corrispondenza. I valori per l'intervallo di confidenza Analogamente a quanto avviene per contare intervallo. È possibile formare una query senza includere un intervallo di numero. Ad esempio, per la ricerca dei documenti con un numero qualsiasi di numeri di carta di credito, purché l'intervallo di confidenza 85% o superiore, è necessario utilizzare la query seguente: `SensitiveType:"Credit Card Number|*|85.."`. 
+Infine, l'intervallo di confidenza è il livello di probabilità che il tipo sensibile rilevato sia effettivamente una corrispondenza. I valori per l'intervallo di confidenza funzionano in modo analogo all'intervallo di Count. È possibile creare una query senza includere un intervallo di conteggio. Ad esempio, per cercare i documenti con un numero qualsiasi di numeri di carta di credito, purché l'intervallo di confidenza sia pari o superiore al 85%, è `SensitiveType:"Credit Card Number|*|85.."`necessario utilizzare la query seguente:. 
   
 > [!IMPORTANT]
-> L'asterisco ( `*`) è un carattere jolly significa works alcun valore. È possibile utilizzare il carattere jolly ( `*`) dell'intervallo numero o dell'intervallo di confidenza, ma non in un tipo di riservati. 
+> L'asterisco ( `*`) è un carattere jolly che indica che viene utilizzato qualsiasi valore. È possibile utilizzare il carattere jolly ( `*`) nell'intervallo di conteggio o nell'intervallo di confidenza, ma non in un tipo riservato. 
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Ulteriori proprietà della query e operatori di ricerca sono disponibili nel Centro eDiscovery
 
-DLP in SharePoint vengono inoltre presentati LastSensitiveContentScan proprietà, che consente di cercare i file di ricerca di virus all'interno di un periodo di tempo specificato. Per esempi di query con la `LastSensitiveContentScan` proprietà, vedere gli [esempi di query complesse](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) nella sezione successiva. 
+DLP in SharePoint introduce anche la proprietà LastSensitiveContentScan, che consente di cercare i file analizzati in un intervallo di tempo specifico. Per gli esempi di query `LastSensitiveContentScan` con la proprietà, vedere gli [esempi di query complesse](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) nella sezione successiva. 
   
-È possibile utilizzare non solo proprietà specifiche del DLP per creare una query, ma anche proprietà di ricerca di eDiscovery SharePoint standard, ad esempio `Author` o `FileExtension`. È possibile utilizzare operatori per creare query complesse. Per l'elenco degli operatori e proprietà disponibili, vedere post di blog [utilizzando le proprietà di ricerca e gli operatori con eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093) . 
+È possibile utilizzare non solo le proprietà specifiche di DLP per creare una query, ma anche le proprietà di ricerca di eDiscovery `Author` di `FileExtension`SharePoint standard, ad esempio o. È possibile utilizzare gli operatori per creare query complesse. Per l'elenco delle proprietà e degli operatori disponibili, vedere l'articolo [utilizzo di proprietà e operatori di ricerca con](https://go.microsoft.com/fwlink/?LinkId=510093) il post di Blog di eDiscovery. 
   
 ## <a name="examples-of-complex-queries"></a>Esempi
 
-Negli esempi seguenti utilizzano diversi tipi di riservate, proprietà e gli operatori per illustrare come è possibile filtrare le query per trovare esattamente ciò che sta cercando.
+Negli esempi seguenti vengono utilizzati diversi tipi, proprietà e operatori sensibili per illustrare in che modo è possibile affinare le query per trovare esattamente ciò che si sta cercando.
   
 |**Query**|**Spiegazione**|
 |:-----|:-----|
-| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |Il nome potrebbe sembrare strano perché è molto tempo, ma è il nome corretto per il tipo riservato. Assicurarsi di utilizzare i nomi esatti di [inventario dei tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999). È inoltre possibile utilizzare il nome del [tipo di informazione sensibile personalizzato](create-a-custom-sensitive-information-type.md) creato per l'organizzazione.<br/> |
-| ' SensitiveType: "numero di carta di credito|1..4294967295|1..100"' <br/> |Restituire i documenti con almeno una corrispondenza per il tipo di sensibile "Numero di carta di credito." I valori per ogni intervallo sono i rispettivi valori massimi e minimi. Un modo più semplice scrivere la query viene `SensitiveType:"Credit Card Number"`, ma in cui è divertimento in cui?<br/> |
-| ' SensitiveType: "numero di carta di credito| 5..25" e LastSensitiveContentScan:"8/11/2018..8/13/2018 "' <br/> |Restituisce i documenti con i numeri di carta di credito 5 25 che sono stati analizzati da 11 agosto 2018 13 agosto 2018.  <br/> |
-| ' SensitiveType: "numero di carta di credito| 5..25" e LastSensitiveContentScan:"8/11/2018..8/13/2018 "non FileExtension:XLSX' <br/> |Restituisce i documenti con i numeri di carta di credito 5 25 che sono stati analizzati da 11 agosto 2018 13 agosto 2018. I file con estensione XLSX non vengono inclusi nei risultati della query.  `FileExtension` è una delle numerose proprietà che è possibile includere in una query. Per ulteriori informazioni, vedere [utilizzo di proprietà di ricerca e gli operatori con eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).<br/> |
+| `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |Il nome potrebbe sembrare strano perché è così lungo, ma è il nome corretto per quel tipo di sensibili. Assicurarsi di utilizzare nomi esatti dall'inventario dei [tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999). È inoltre possibile utilizzare il nome di un [tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md) creato per l'organizzazione.<br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |In questo modo vengono restituiti documenti con almeno una corrispondenza al tipo sensibile "numero di carta di credito". I valori per ogni intervallo sono i rispettivi valori minimo e massimo. Un modo più semplice per scrivere questa query è `SensitiveType:"Credit Card Number"`, ma qual è il divertimento in questo?<br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |Restituisce documenti con 5-25 numeri di carta di credito che sono stati analizzati dall'11 agosto 2018 al 13 agosto 2018.  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |Restituisce documenti con 5-25 numeri di carta di credito che sono stati analizzati dall'11 agosto 2018 al 13 agosto 2018. I file con estensione XLSX non sono inclusi nei risultati della query.  `FileExtension` è una delle numerose proprietà che è possibile includere in una query. Per ulteriori informazioni, vedere [utilizzo di proprietà e operatori di ricerca con eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).<br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |In questo modo vengono restituiti i documenti che contengono sia un numero di carta di credito che un numero di previdenza sociale.  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>Esempi
 
-Non tutte le query sono uguali. Nella tabella seguente vengono forniti alcuni esempi di query che non funzionano con DLP in SharePoint e descrive il motivo del.
+Non tutte le query vengono create uguali. Nella tabella seguente vengono forniti esempi di query che non funzionano con DLP in SharePoint e viene descritto il motivo.
   
 |**Query non supportate**|**Motivo**|
 |:-----|:-----|
-| ' SensitiveType: "numero di carta di credito|.." ` <br/> |Aggiungere almeno un numero.  <br/> |
-| `SensitiveType:"NotARule"` <br/> |"NotARule" non è un nome di tipo riservati valido. Solo i nomi inclusi nell' [inventario dei tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999) funzionano nelle query DLP.<br/> |
-| ' SensitiveType: "numero di carta di credito|0"' <br/> |Zero non è valido come valore minimo o il valore massimo in un intervallo.  <br/> |
-| `SensitiveType:"Credit Card Number"` <br/> |Si potrebbe essere difficile vedere, ma è disponibile spazio vuoto tra "Credito" e "Scheda" che effettua la query non valida. Utilizzare i nomi dei tipi di sensibili esatto dell' [inventario dei tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999).<br/> |
-| ' SensitiveType: "numero di carta di credito|1.. 3"' <br/> |La parte di due periodi non deve essere separata da uno spazio.  <br/> |
-| ' SensitiveType: "numero di carta di credito| |1..|"80.." <br/> |Esistono troppi pipe delimitatori (|). Attenersi invece il seguente formato: "SensitiveType:"numero di carta di credito|1..|"80.." <br/> |
-| ' SensitiveType: "numero di carta di credito|1..|80..101"' <br/> |Poiché i valori di attendibilità rappresentano una percentuale, non possono superare 100. Al contrario, selezionare un numero compreso tra 1 e 100.  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |Aggiungere almeno un numero.  <br/> |
+| `SensitiveType:"NotARule"` <br/> |"NotARule" non è un nome di tipo sensibile valido. Solo i nomi dei [tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999) funzionano nell'inventario delle query DLP.<br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |Zero non è valido come valore minimo o valore massimo di un intervallo.  <br/> |
+| `SensitiveType:"Credit Card Number"` <br/> |Potrebbe essere difficile da vedere, ma c'è spazio vuoto supplementare tra "credito" e "carta" che rende la query non valida. Utilizzare nomi di tipo sensibili esatti dall' [inventario dei tipi di informazioni riservate](https://go.microsoft.com/fwlink/?LinkID=509999).<br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |La parte di due periodi non deve essere separata da uno spazio.  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |Sono presenti troppi delimitatori di pipe (|). Seguire questo formato invece:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Poiché i valori di sicurezza rappresentano una percentuale, non possono superare 100. Scegliere un numero compreso tra 1 e 100.  <br/> |
    
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
   
-[Eseguire una ricerca di contenuto in Office 365 protezione &amp; centro conformità](run-a-content-search-in-the-security-and-compliance-center.md)
+[Eseguire una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365](run-a-content-search-in-the-security-and-compliance-center.md)
   
 [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
   

@@ -1,31 +1,31 @@
 ---
-title: Numero della patente di Guida di Unione europea
+title: Numero della patente di guida dell'Unione europea
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
-description: Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca qualora venga rilevato un tipo di informazione sensibile numero della patente di Guida dell'Unione europea. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
-ms.openlocfilehash: 065684249f9766d567c63e6b8170d36f56692e45
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di licenza del driver dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
+ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530763"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217746"
 ---
-# <a name="eu-drivers-license-number"></a>Numero della patente di Guida di Unione europea
+# <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione europea
 
-Questo argomento viene illustrato quali criteri di criterio DLP perdita dei dati Cerca qualora venga rilevato un tipo di informazione sensibile numero della patente di Guida dell'Unione europea. Questo tipo di informazioni riservate definisce le diverse combinazioni, parole chiave e altri elementi di prova per ogni paese.
+In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di licenza del driver dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
   
 ## <a name="austria"></a>Austria
 
 ### <a name="format"></a>Formato
 
-Otto cifre senza spazi e i delimitatori
+Otto cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -39,9 +39,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_austria_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_austria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_austria_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_austria_eu_driver's_license_number` parola chiave from. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -59,13 +59,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> titolo della patente di Guida  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/>  che influisce sul numero di licenza  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein italiana osterreich  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> patente di guida  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/>  numero della patente di guida  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Belgio
 
 ### <a name="format"></a>Formato
 
-10 cifre senza spazi e i delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -79,9 +79,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_belgium_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_belgium_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_belgium_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_belgium_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -99,13 +99,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein nr  <br/> fuehrerschein Nr  <br/> fuehrerschein nr  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> dlno #  <br/> Rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
 ### <a name="format"></a>Formato
 
-Nove cifre senza spazi e i delimitatori
+Nove cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -119,9 +119,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_bulgaria_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_bulgaria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_bulgaria_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_bulgaria_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -139,13 +139,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МПС  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МОТОРНО ПРЕВОЗНО СРЕДСТВО  <br/> СУМПС  <br/> ШОФЬОРСКА КНИЖКА  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно d'средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Croazia
 
 ### <a name="format"></a>Formato
 
-Otto cifre senza spazi e i delimitatori
+Otto cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -159,9 +159,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_croatia_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_croatia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_croatia_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_croatia_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -179,13 +179,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> vozačka dozvola  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vozačka Dozvola  <br/> |
    
 ## <a name="cyprus"></a>Cipro
 
 ### <a name="format"></a>Formato
 
-12 cifre senza spazi e i delimitatori
+12 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -199,9 +199,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_cyprus_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_cyprus_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_cyprus_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_cyprus_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -218,7 +218,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> ΆΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>Repubblica Ceca
 
@@ -230,7 +230,7 @@ Due lettere seguite da sei cifre
 
 Otto lettere e cifre:
   
-- Due lettere (maiuscole o minuscole)
+- Due lettere (senza distinzione tra maiuscole e minuscole)
     
 - Uno spazio (facoltativo)
     
@@ -244,9 +244,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_czech_republic_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_czech_republic_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_czech_republic_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_czech_republic_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -264,13 +264,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> Řidičský prúkaz  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Danimarca
 
 ### <a name="format"></a>Formato
 
-Otto cifre senza spazi e i delimitatori
+Otto cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -284,9 +284,9 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_denmark_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_denmark_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_denmark_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_denmark_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -304,7 +304,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> kørekort  <br/> Kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estonia
 
@@ -316,7 +316,7 @@ Due lettere seguite da sei cifre
 
 Due lettere e sei cifre:
   
--  Le lettere "ET" (maiuscole o minuscole) 
+-  Lettere "ET" (senza distinzione tra maiuscole e minuscole) 
     
 - Sei cifre
     
@@ -328,9 +328,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_estonia_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_estonia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_estonia_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_estonia_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -347,7 +347,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> 
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> dlno #  <br/> 
 permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finlandia
@@ -358,7 +358,7 @@ permis de conduire  <br/> |
   
 ### <a name="pattern"></a>Modello
 
-10 cifre che contiene un segno meno:
+10 cifre contenenti un trattino:
   
 -  Sei cifre 
     
@@ -374,9 +374,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_finland_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_finland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_finland_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_finland_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -393,21 +393,21 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> ajokortti  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> AJOKORTTI  <br/> |
    
 ## <a name="france"></a>Francia
 
-Per ulteriori informazioni, vedere la sezione "Numero della patente di Guida di Francia" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero della patente di Francia" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Germania
 
-Per ulteriori informazioni, vedere la sezione "Numero della patente di Guida tedesca" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di patente di guida tedesco" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
 ### <a name="format"></a>Formato
 
-Nove cifre senza spazi e i delimitatori
+Nove cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -421,9 +421,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_greece_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_greece_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_greece_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_greece_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -440,7 +440,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|dlL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> ΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> Adeia odigisis  <br/> |
+|DlL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>Ungheria
 
@@ -452,7 +452,7 @@ Due lettere seguite da sei cifre
 
 Due lettere e sei cifre:
   
--  Due lettere (maiuscole o minuscole) 
+-  Due lettere (senza distinzione tra maiuscole e minuscole) 
     
 - Sei cifre
     
@@ -464,9 +464,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_hungary_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_hungary_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_hungary_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_hungary_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -483,7 +483,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
@@ -497,7 +497,7 @@ Sei cifre e quattro lettere:
   
 - Sei cifre
     
-- Quattro lettere (maiuscole o minuscole)
+- Quattro lettere (senza distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -507,9 +507,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_ireland_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_ireland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_ireland_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_ireland_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -526,11 +526,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
    
 ## <a name="italy"></a>Italia
 
-Per ulteriori informazioni, vedere la sezione "Numero della patente di Guida di Italia" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di licenza del conducente italiano" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="latvia"></a>Lettonia
 
@@ -542,7 +542,7 @@ Tre lettere seguite da sei cifre
 
 Tre lettere e sei cifre:
   
--  Tre lettere (maiuscole o minuscole) 
+-  Tre lettere (senza distinzione tra maiuscole e minuscole) 
     
 - Sei cifre
     
@@ -554,9 +554,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_latvia_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_latvia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_latvia_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_latvia_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -573,13 +573,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
 ### <a name="format"></a>Formato
 
-Otto cifre senza spazi e i delimitatori
+Otto cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -593,9 +593,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_lithuania_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_lithuania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_lithuania_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_lithuania_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -612,13 +612,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Lussemburgo
 
 ### <a name="format"></a>Formato
 
-Sei cifre senza spazi e i delimitatori
+Sei cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -632,9 +632,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_luxemburg_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_luxemburg_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_luxemburg_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_luxemburg_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -651,19 +651,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Formato
 
-Combinazione di due caratteri e sei cifre nella serie specificata
+Combinazione di due caratteri e di sei cifre nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Combinazione di due caratteri e sei cifre:
+Combinazione di due caratteri e di sei cifre:
   
-- Due caratteri (cifre o lettere maiuscole o minuscole)
+- Due caratteri (cifre o lettere, non con distinzione tra maiuscole e minuscole)
     
 - Uno spazio (facoltativo)
     
@@ -681,9 +681,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_malta_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_malta_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_malta_eu_driver's_license_number` parola chiave from. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -700,13 +700,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> attività liċenzja-sewqan  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Liċenzja TAS-sewqan  <br/> |
    
 ## <a name="netherlands"></a>Paesi Bassi
 
 ### <a name="format"></a>Formato
 
-10 cifre senza spazi e i delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -720,9 +720,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_netherlands_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_netherlands_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_netherlands_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_netherlands_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -739,14 +739,14 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> 
-permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> 
+permis de conduire  <br/> Rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
 ### <a name="format"></a>Formato
 
-14 cifre che contiene 2 barre
+14 cifre contenenti 2 barre
   
 ### <a name="pattern"></a>Modello
 
@@ -770,9 +770,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_poland_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_poland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_poland_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_poland_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -789,19 +789,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> prawo jazdy  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portogallo
 
 ### <a name="format"></a>Formato
 
-Due lettere seguite da un sette i numeri in formato specificato
+Due lettere seguite da un numero di sette numeri nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
 Due lettere seguite da sette numeri con caratteri speciali:
   
--  Due lettere (maiuscole o minuscole) 
+-  Due lettere (senza distinzione tra maiuscole e minuscole) 
     
 - Una lineetta
     
@@ -819,9 +819,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_portugal_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_portugal_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_portugal_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_portugal_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -838,19 +838,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> carteira de motorista  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Romania
 
 ### <a name="format"></a>Formato
 
-Un carattere seguito da 8 cifre
+Un carattere seguito da otto cifre
   
 ### <a name="pattern"></a>Modello
 
-Un carattere seguito da 8 cifre:
+Un carattere seguito da otto cifre:
   
--  Una lettera (maiuscole o minuscole) o cifre 
+-  Una lettera (senza distinzione tra maiuscole e minuscole) o cifra 
     
 - Otto cifre
     
@@ -862,9 +862,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_romania_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_romania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_romania_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_romania_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -881,7 +881,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> permis de conducere  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>Slovacchia
 
@@ -893,7 +893,7 @@ Un carattere seguito da sette cifre
 
 Un carattere seguito da sette cifre
   
-- Una lettera (maiuscole o minuscole) o cifre
+- Una lettera (senza distinzione tra maiuscole e minuscole) o cifra
     
 -  Sette cifre 
     
@@ -905,9 +905,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovakia_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_slovakia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovakia_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_slovakia_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -924,13 +924,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Slovenia
 
 ### <a name="format"></a>Formato
 
-Nove cifre senza spazi e i delimitatori
+Nove cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
@@ -944,9 +944,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovenia_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_slovenia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_slovenia_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_slovenia_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -963,7 +963,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>Spagna
 
@@ -977,7 +977,7 @@ Otto cifre seguite da un carattere:
   
 -  Otto cifre 
     
-- Una cifra o lettere (maiuscole o minuscole)
+- Una cifra o una lettera (senza distinzione tra maiuscole e minuscole)
     
 ### <a name="checksum"></a>Checksum
 
@@ -987,9 +987,9 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- La funzione `Func_spain_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_spain_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_spain_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1006,19 +1006,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> DL #  <br/> driver lic.  <br/> titolo driver  <br/> patente  <br/> drivers licence  <br/> 
-drivers license  <br/> titolo della patente di Guida  <br/> patente  <br/> driving licence
-  <br/> le licenze  <br/> numero della patente del driver  <br/> Numero patente di Guida  <br/> numero di driver di licenza  <br/> Numero patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> Numero patente di Guida  <br/> che influisce sul numero di licenza  <br/> Guida autorizza  <br/> che influisce sul numero permesso  <br/> permiso de conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> EL carnet de conducir  <br/> carnet conducir  <br/> |
+|dlno #  <br/> DL  <br/> driver Lic.  <br/> patente di guida  <br/> patente di guida  <br/> drivers licence  <br/> 
+drivers license  <br/> patente di guida  <br/> patente di guida  <br/> driving licence
+  <br/> patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente di guida  <br/> numero della patente di guida  <br/> permesso di guida  <br/> numero di licenza di guida  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de Permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> Permiso conducir  <br/> licencia de manejo  <br/> El carnet de conducir  <br/> carnet conducir  <br/> |
    
 ## <a name="sweden"></a>Svezia
 
 ### <a name="format"></a>Formato
 
-Dieci cifre che contiene un segno meno
+Dieci cifre contenenti un segno meno
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre che contiene un segno meno:
+Dieci cifre contenenti un trattino:
   
 -  Sei cifre 
     
@@ -1034,9 +1034,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_sweden_eu_driver's_license_number` consente di trovare contenuto corrispondente al formato. 
+- L'espressione `Regex_sweden_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
     
-- Una parola chiave da `Keywords_sweden_eu_driver's_license_number` viene trovato. 
+- Viene trovata una `Keywords_sweden_eu_driver's_license_number` parola chiave from. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1053,13 +1053,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|DL #  <br/> patente  <br/> Numero patente di Guida  <br/> titolo driver  <br/> driver lic.  <br/> patente di Guida  <br/> drivers licence  <br/> patente  <br/> numero della patente di Guida  <br/> numero della patente di Guida  <br/> che influisce sul numero di licenza  <br/> dlno #  <br/> körkort  <br/> |
+|DL  <br/> patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> patente di guida  <br/> drivers licence  <br/> patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> körkort  <br/> |
    
-## <a name="uk"></a>REGNO UNITO
+## <a name="uk"></a>Regno Unito
 
-Per ulteriori informazioni, vedere la sezione "Numero della patente di Guida di Regno Unito" in [cercare il quali i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "numero di patente di guida del Regno Unito" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 

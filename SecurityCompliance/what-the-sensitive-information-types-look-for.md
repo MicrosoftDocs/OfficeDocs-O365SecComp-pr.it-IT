@@ -9,21 +9,21 @@ search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include 80 tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo.
-ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti i tipi di informazioni riservate e viene illustrato l'aspetto di un criterio DLP quando viene rilevato ogni tipo.
+ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194737"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216356"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
-Prevenzione perdita dati (DLP) in Office 365 Security &amp; centro conformità include molti tipi di informazioni riservate che si desidera utilizzare i criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate di un criterio DLP aspetto quando viene rilevato ogni tipo. Da un criterio che può essere identificato in base a un'espressione regolare o una funzione viene definito un tipo di informazioni riservate. Inoltre, elemento avvalorante, ad esempio parole chiave e checksum utilizzabile per identificare il tipo di informazioni riservate. Livello di probabilità e prossimità vengono inoltre utilizzati nel processo di valutazione.
+La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include numerosi tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti i tipi di informazioni riservate e viene illustrato l'aspetto di un criterio DLP quando viene rilevato ogni tipo. Un tipo di informazioni riservate è definito da un modello che può essere identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori quali parole chiave e checksum per identificare un tipo di informazioni riservate. Il livello di confidenza e la prossimità sono utilizzati anche nel processo di valutazione.
   
 ## <a name="aba-routing-number"></a>Numero di registrazione ABA
 
@@ -40,7 +40,7 @@ Formattato:
 - Una lineetta
 - Una cifra
 
-Non formattata: 9 cifre consecutive a partire da 0, 1, 2, 3, 6, 7 o 8 
+Non formattato: 9 cifre consecutive che iniziano con 0, 1, 2, 3, 6, 7 o 8 
 
 ### <a name="checksum"></a>Checksum
 
@@ -124,8 +124,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_argentina_national_id consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_argentina_national_id.
+- L'espressione regolare Regex_argentina_national_id trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_argentina_national_id.
 
 ```
 <!-- Argentina National Identity (DNI) Number -->
@@ -144,10 +144,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Argentina - Numero di identità nazionale
  
 - Identità 
-- Identificazione della carta d'identità nazionale 
+- Carta di identità nazionale di identificazione 
 - DNI
  
-- Scheda NIC registro nazionale delle persone 
+- Registro nazionale delle persone di NIC 
 - Documento Nacional de Identidad
  
 - Registro Nacional de las Personas
@@ -165,7 +165,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="pattern"></a>Modello
 
-Numero di conto è 6-10 cifre. Numero della filiale stato bank Australia:
+Il numero dell'account è 6-10 cifre. Numero del ramo dello stato della banca Australia:
 - Tre cifre 
 - Una lineetta 
 - Tre cifre
@@ -290,7 +290,7 @@ australian automobile association
 international driving permit
 - DriverLicence
 - DriverLicences
-- Driver Lic
+- LIC del driver
 - Driver Licence
 
 - Driver Licences
@@ -299,23 +299,23 @@ international driving permit
 - DriversLicence
 - DriversLicences
 - Driver Lic
-- Driver conglomerati
-- Driver della licenza
-- Driver titoli
+- Driver Driver'lics
+- Patente di guida
+- Licenze per i conducenti
 - Driver'Lic
-- Driver'Lics
+- Driver ' LiCS
 - Driver'Licence
 - Driver'Licences
-- Driver' Lic
-- Driver' conglomerati
-- Driver' licenza
-- Driver' titoli
+- LIC del driver
+- Driver ' Driver'lics
+- Patente di guida
+- Patenti del conducente
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- Lic della patente di Guida
-- Conglomerati della patente di Guida
+- LIC del conducente
+- Driver'lics del conducente
 - Driver's Licence
 
 - Driver's Licences
@@ -328,16 +328,16 @@ international driving permit
 - 
 Driver Lics#
 
-- Driver licenza #
-- Driver titoli #
+- Patente di guida #
+- Licenze per i driver #
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
 - Driver Lic #
-- Driver conglomerati #
-- Driver della licenza #
-- Dipendenze dei titoli #
+- Driver Driver'lics #
+- Patente di guida #
+- Licenze per i driver #
 - Driver' Lic#
 
 - Driver' Lics#
@@ -350,8 +350,8 @@ Driver Lics#
 
 - Driver' Lics#
 
-- Driver' licenza #
-- Driver' titoli #
+- Patente di guida
+- Licenze per i driver #
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
@@ -360,36 +360,36 @@ Driver Lics#
 
 - Driver's Lics#
 
-- Titolo # della patente di Guida
-- Il titolo # della patente di Guida 
+- Patente di guida #
+- Patenti di guida # 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - aaa
 - DriverLicense
 - DriverLicenses
-- Patente
-- Driver licenze
-- PatenteGuida
+- Patente di guida
+- Licenze per i driver
+- DriversLicense
 - DriversLicenses
-- Patente di Guida
-- Driver licenze
-- Driver'License
-- Driver'Licenses
-- Driver' licenza
-- Driver' licenze
-- Driver'sLicense
+- Patente di guida
+- Licenze per i driver
+- Driver ' License
+- Driver ' licenses
+- Patente di guida
+- Licenze per i driver
+- Secondola
 - Driver'sLicenses
-- Patente
-- Licenze della patente di Guida
+- Patente di guida
+- Licenze del conducente
 - DriverLicense #
 - DriverLicenses #
-- Driver licenza #
-- Driver licenze #
-- PatenteGuida #
+- Patente di guida #
+- Licenze driver #
+- DriversLicense #
 - DriversLicenses #
-- Driver della licenza #
-- Driver licenze #
+- Patente di guida #
+- Licenze per i driver #
 - Driver' License#
 
 - Driver' Licenses#
@@ -398,7 +398,7 @@ Driver Lics#
 
 - Driver' Licenses#
 
-- Driver'sLicense #
+- Secondola
 - Driver'sLicenses #
 - Driver's License#
 
@@ -494,7 +494,7 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare Regex_australia_passport_number restituisce contenuti che corrispondono al modello.
-- È possibile trovare una parola chiave da Keyword_passport o Keyword_australia_passport_number.
+- Viene trovata una parola chiave da Keyword_passport o Keyword_australia_passport_number.
 
 ```
 <!-- Australia Passport Number -->
@@ -688,8 +688,8 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_belgium_national_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_belgium_national_number.
+- La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_belgium_national_number.
 - Il checksum ha esito positivo.
 
 ```
@@ -764,12 +764,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_cpf consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_brazil_cpf.
+- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_brazil_cpf.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_cpf consente di trovare contenuto corrispondente al formato.
+- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -814,7 +814,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="pattern"></a>Modello
 14 cifre più delimitatori:
 - Due cifre 
-- Un punto  
+- Un punto 
 - Tre cifre 
 - Un punto  
 - Tre cifre (le prime otto sono il numero di registrazione)  
@@ -830,12 +830,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_cnpj consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_brazil_cnpj.
+- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_brazil_cnpj.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_cnpj consente di trovare contenuto corrispondente al formato.
+- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -857,7 +857,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - CNPJ
  
-- NUMERO CNPJ/MF 
+- CNPJ/MF 
 - CNPJ-MF
  
 - Codice fiscale persone giuridiche
@@ -898,20 +898,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 Registro Geral (formato precedente): nove cifre
 
-Registro de Identidade (batch) (nuovo formato): 11 cifre
+Registro de Identidade (RIC) (nuovo formato): 11 cifre
 
 ### <a name="pattern"></a>Modello
 
 Registro Geral (formato precedente):
 - Due cifre 
-- Un punto  
+- Un punto 
 - Tre cifre 
-- Un punto  
+- Un punto 
 - Tre cifre 
 - Una lineetta 
 - Una cifra, ovvero una cifra di controllo
 
-Registro de Identidade (batch) (nuovo formato):
+Registro de Identidade (RIC) (nuovo formato):
 - 10 cifre  
 - Una lineetta 
 - Una cifra, ovvero una cifra di controllo
@@ -923,12 +923,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_rg consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_brazil_rg.
+- La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_brazil_rg.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_rg consente di trovare contenuto corrispondente al formato.
+- La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -948,7 +948,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
-Cédula de identidade carta d'identità nazionale id número de rregistro registro de Iidentidade registro geral RG (la parola chiave viene fatta distinzione tra maiuscole e minuscole) batch (la parola chiave viene fatta distinzione tra maiuscole e minuscole) 
+Cédula de Identidade identità Card National ID número de rregistro Registro de Iidentidade registro Geral RG (questa parola chiave è distinzione tra maiuscole e minuscole) RIC (questa parola chiave è distinzione tra maiuscole e minuscole) 
    
 ## <a name="canada-bank-account-number"></a>Canada - Numero di conto bancario
 
@@ -1140,10 +1140,10 @@ Il nome della provincia, ad esempio, Alberta
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Driver Lic
-- Driver conglomerati
-- Patente
-- Driver licenze
+- LIC del driver
+- Driver Driver'lics
+- Patente di guida
+- Licenze per i driver
 - Driver Licence
 
 - Driver Licences
@@ -1152,41 +1152,41 @@ Il nome della provincia, ad esempio, Alberta
 - DriversLics
 - DriversLicence
 - DriversLicences
-- PatenteGuida
+- DriversLicense
 - DriversLicenses
 - Driver Lic
-- Driver conglomerati
-- Patente di Guida
-- Driver licenze
-- Driver della licenza
-- Driver titoli
+- Driver Driver'lics
+- Patente di guida
+- Licenze per i driver
+- Patente di guida
+- Licenze per i conducenti
 - Driver'Lic
-- Driver'Lics
-- Driver'License
-- Driver'Licenses
+- Driver ' LiCS
+- Driver ' License
+- Driver ' licenses
 - Driver'Licence
 - Driver'Licences
-- Driver' Lic
-- Driver' conglomerati
-- Driver' licenza
-- Driver' licenze
-- Driver' licenza
-- Driver' titoli
+- LIC del driver
+- Driver ' Driver'lics
+- Patente di guida
+- Licenze per i driver
+- Patente di guida
+- Patenti del conducente
 - Driver'sLic
 - Driver'sLics
-- Driver'sLicense
+- Secondola
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- Lic della patente di Guida
-- Conglomerati della patente di Guida
-- Patente
-- Licenze della patente di Guida
+- LIC del conducente
+- Driver'lics del conducente
+- Patente di guida
+- Licenze del conducente
 - Driver's Licence
 
 - Driver's Licences
 
-- Permis de Conduire
+- Permis de conduire
 - id
 - ID
 - 
@@ -1197,9 +1197,9 @@ idcard numbers
 idcard #
 - 
 idcard #s
-- scheda idcard
-- schede idcard
-- idcard
+- scheda IDcard
+- schede IDcard
+- IDcard
 - identification number
 
 - identification numbers
@@ -1209,7 +1209,7 @@ idcard #s
 - 
 identification #s
 - scheda di identificazione
-- identificazione schede
+- Schede di identificazione
 - 
 identification
  
@@ -1231,22 +1231,22 @@ DLS#
 - 
 Driver Lics#
  
-- Driver licenza # 
-- Driver licenze # 
-- Driver licenza # 
-- Driver titoli # 
+- Patente di guida # 
+- Licenze driver # 
+- Patente di guida # 
+- Licenze per i driver # 
 - DriversLic # 
 - DriversLics # 
-- PatenteGuida # 
+- DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
 - Driver Lic # 
-- Driver conglomerati # 
-- Driver della licenza # 
-- Driver licenze # 
-- Driver della licenza # 
-- Dipendenze dei titoli # 
+- Driver Driver'lics # 
+- Patente di guida # 
+- Licenze per i driver # 
+- Patente di guida # 
+- Licenze per i driver # 
 - Driver' Lic#
  
 - Driver' Lics#
@@ -1267,11 +1267,11 @@ Driver Lics#
  
 - Driver' Licenses#
  
-- Driver' licenza # 
-- Driver' titoli # 
+- Patente di guida 
+- Licenze per i driver # 
 - Driver'sLic # 
 - Driver'sLics # 
-- Driver'sLicense # 
+- Secondola 
 - Driver'sLicenses # 
 - Driver'sLicence # 
 - Driver'sLicences # 
@@ -1283,11 +1283,11 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- Titolo # della patente di Guida 
-- Il titolo # della patente di Guida 
-- Permis de Conduire # 
-- ID # 
-- ID # 
+- Patente di guida # 
+- Patenti di guida # 
+- Permis de conduire # 
+- ID 
+- ID 
 - idcard card#
  
 - idcard cards#
@@ -1340,7 +1340,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - personal health number
 - 
 patient information
-- servizi di integrità
+- Servizi di integrità
 - 
 speciality services
 - 
@@ -1372,7 +1372,7 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - L'espressione regolare Regex_canada_passport_number restituisce contenuti che corrispondono al modello.
-- È possibile trovare una parola chiave da Keyword_canada_passport_number o Keyword_passport.
+- Viene trovata una parola chiave da Keyword_canada_passport_number o Keyword_passport.
 
 ``` 
 <!-- Canada Passport Number -->
@@ -1459,7 +1459,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: l'espressione regolare Regex_canada_phin individua contenuto corrispondente al formato. Sono disponibili almeno due parole chiave Keyword_canada_phin o Keyword_canada_provinces..
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_canada_phin trova contenuto che corrisponde al modello. Sono state trovate almeno due parole chiave di Keyword_canada_phin o Keyword_canada_provinces..
 
 ```
 <!-- Canada PHIN -->
@@ -1552,7 +1552,7 @@ Formattato:
 - Una lineetta o uno spazio 
 - Tre cifre
 
-Non formattata: Nove cifre
+Non formattato: nove cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -1603,11 +1603,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - sins
  
 - SSN 
-- ssns 
-- protezione di social networking 
+- SNSS 
+- previdenza sociale 
 - numero d'assurance social
  
-- numero identificativo nazionale 
+- numero di identificazione nazionale 
 - 
 national id 
 - sin#
@@ -1619,9 +1619,9 @@ national id
 
 #### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
 
-- patente 
-- patente di Guida 
-- titolo della patente di Guida 
+- patente di guida 
+- patente di guida 
+- patente di guida 
 - drivers licence 
 - DOB
  
@@ -1634,7 +1634,7 @@ national id
 
 ### <a name="format"></a>Formato
 
-7-8 cifre più delimitatori una cifra di controllo o lettera
+7-8 cifre più delimitatori una cifra di controllo o una lettera
 
 ### <a name="pattern"></a>Modello
 
@@ -1642,7 +1642,7 @@ national id
 - 1-2 cifre 
 - Un punto  
 - Tre cifre 
-- Un punto  
+- Un punto 
 - Tre cifre 
 - Un trattino 
 - Una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che corrisponde a una cifra di controllo
@@ -1654,12 +1654,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_chile_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_chile_id_card.
+- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_chile_id_card.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_chile_id_card consente di trovare contenuto corrispondente al formato.
+- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -1721,12 +1721,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_china_resident_id consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_china_resident_id.
+- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_china_resident_id.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_china_resident_id consente di trovare contenuto corrispondente al formato.
+- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -1748,8 +1748,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - Carta d’identità per residenti
  
-- RPC
- 
+- RPC 
 - Carta d’identità
  
 - 身份证  
@@ -1767,7 +1766,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-16 cifre che possono essere formattate o non formattato (dddddddddddddddd) e deve superare la verifica Luhn.
+16 cifre che possono essere formattate o non formattate (dddddddddddddddd) e devono superare il test di Luhn.
 
 ### <a name="pattern"></a>Modello
 
@@ -1846,7 +1845,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 - prufziffer
 
-- sicherheits Kode
+- Sicherheits kode
 - sicherheitscode
 
 - sicherheitsnummer
@@ -1857,7 +1856,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 - cod. sicurezza
 
-- sicurezza Cod
+- Cod sicurezza
 - 
 n autorizzazione
 - código
@@ -1866,7 +1865,7 @@ n autorizzazione
 
 - cod. seg
 
-- seg Cod
+- SEG cod
 - código de segurança
 
 - codigo de seguranca
@@ -1877,11 +1876,11 @@ n autorizzazione
 
 - cód. segurança
 
-- Cod. seguranca cod. Segurança
+- Cod. SEGURANCA Cod. Segurança
 - cód. seguranca
 
-- cód segurança
-- merluzzo bianco seguranca cod segurança
+- cód Segurança
+- Cod SEGURANCA Cod Segurança
 - cód seguranca
 - número de verificação
 
@@ -1934,7 +1933,7 @@ n autorizzazione
 american express
 - americanexpress
 
-- Visa
+- Esempio
 - mastercard
 
 - master card
@@ -1945,7 +1944,7 @@ mc
 - mastercards
 - 
 master cards
-- Associazione di Diner
+- Diner ' s Club
 - diners club
 
 - dinersclub
@@ -1965,8 +1964,8 @@ master cards
 
 - credit card
 
-- cc #
-- cc #:
+- CC
+- CC #:
 - 
 expiration date
 - exp date
@@ -2074,16 +2073,16 @@ kartennr
 - kartennummer
 - 
 kreditkartennummer
-- kreditkarten nummer
+- Kreditkarten-Nummer
 - carta di credito
 
 - carta credito
 
 - carta
-- carta n
+- n carta
 - nr. carta
 
-- carta Nr
+- Nr carta
 - numero carta
 
 - numero della carta
@@ -2114,7 +2113,7 @@ tarjeta de débito
 
 - no. de tarjeta
 
-- Nessun tarjeta de
+- No de Tarjeta
 - numero de tarjeta
 
 - número de tarjeta
@@ -2158,13 +2157,13 @@ numero do cartao
 
 - numero de cartao
 
-- nº cartão
+- n º do una cartão
 - nº do cartao
 
 - nº. do cartão
 
-- Nessun cartão
-- Nessun cartao
+- No do una cartão
+- No Do cartao
 - no. do cartão
 
 - 
@@ -2188,8 +2187,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_croatia_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_croatia_id_card.
+- La funzione Func_croatia_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_croatia_id_card.
 
 ```
 <!--Croatia Identity Card Number-->
@@ -2219,7 +2218,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 11 cifre:
 - 10 cifre 
-- Cifra finale è una cifra di controllo per gli scopi di data internazionali exchange, le lettere HR vengono aggiunte che precede undici cifre.
+- La cifra finale è una cifra di controllo ai fini dello scambio di dati internazionali, le lettere HR vengono aggiunte prima delle undici cifre.
 
 ### <a name="checksum"></a>Checksum
 
@@ -2228,12 +2227,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_croatia_oib_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_croatia_oib_number.
+- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_croatia_oib_number.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_croatia_oib_number consente di trovare contenuto corrispondente al formato.
+- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -2260,15 +2259,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  
 
    
-## <a name="czech-personal-identity-number"></a>Numero di identificazione personale ceca
+## <a name="czech-personal-identity-number"></a>Numero di identità personale ceco
 
 ### <a name="format"></a>Formato
 
-Nove cifre con un segno di divisione (formato precedente) 10 cifre con un segno di divisione (nuovo formato)
+Nove cifre con Slash opzionale (formato precedente) 10 cifre con barra di inoltro facoltativa (nuovo formato)
 
 ### <a name="pattern"></a>Modello
 
-Nove cifre (formato precedente):
+Nove cifre (formato obsoleto):
 - 9 cifre
 
 OPPURE
@@ -2284,7 +2283,7 @@ OPPURE
 
 - Sei cifre che rappresentano la data di nascita
 - Una barra 
-- Quattro cifre dove ultima cifra è una cifra di controllo
+- Quattro cifre in cui l'ultima cifra è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -2292,7 +2291,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_czech_id_card consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_czech_id_card. Passa il valore di checksum.
+Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_czech_id_card trova contenuto che corrisponde al modello. Viene trovata una parola chiave da Keyword_czech_id_card. Il checksum viene superato.
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2305,7 +2304,7 @@ Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informaz
 ```
 ### <a name="keywords"></a>Parole chiave
 
-- numero di identificazione personale ceca
+- numero di identità personale ceco
 - Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Codice PIN - Danimarca
@@ -2327,7 +2326,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: l'espressione regolare Regex_denmark_id individua contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_denmark_id. Passa il valore di checksum.
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_denmark_id trova contenuto che corrisponde al modello. Viene trovata una parola chiave da Keyword_denmark_id. Il checksum viene superato.
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2431,14 +2430,14 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- numero di conto 
+- numero account 
 - card number
  
 - card no.
  
 - security number
  
-- cc # 
+- CC 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
@@ -2581,7 +2580,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
  
 - dinersclub
  
-- Scopri 
+- individuare 
 - discover card
  
 - discover cards
@@ -2633,7 +2632,7 @@ kartennr
 - kartennummer 
 - kreditkarte
  
-- kreditkarten nummer 
+- Kreditkarten-Nummer 
 - kreditkarteninhaber
  
 - kreditkarteninstitut
@@ -2654,18 +2653,18 @@ kartennr
 - MC 
 - mister cash
  
-- carta n 
+- n carta 
 - carta 
-- Nessun tarjeta de 
-- Nessun cartao 
-- Nessun cartão 
+- No de Tarjeta 
+- No Do cartao 
+- No do una cartão 
 - no. de tarjeta
  
 - no. do cartao
  
 - no. do cartão
  
-- carta Nr 
+- Nr carta 
 - nr. carta
  
 - numeri di scheda
@@ -2702,7 +2701,7 @@ kartennr
  
 - nº do cartao
  
-- nº cartão 
+- n º do una cartão 
 - nº. do cartão
  
 - número de cartao
@@ -2768,7 +2767,7 @@ kartennr
  
 - v pay
  
-- retribuzione v 
+- v-pay 
 - visa
  
 - visa plus
@@ -2790,10 +2789,10 @@ kartennr
  
 - cid
  
-- seg Cod 
-- seguranca Cod 
-- segurança Cod 
-- sicurezza Cod 
+- SEG cod 
+- Cod seguranca 
+- Cod Segurança 
+- Cod sicurezza 
 - cod. seg
  
 - cod. seguranca
@@ -2818,7 +2817,7 @@ kartennr
  
 - cryptogramme
  
-- cv2 
+- CV2 
 - cvc
  
 - CVC2 
@@ -2828,7 +2827,7 @@ kartennr
  
 - CVV2 
 - cód seguranca 
-- cód segurança 
+- cód Segurança 
 - cód. seguranca
  
 - cód. segurança
@@ -2995,25 +2994,25 @@ kartennr
 - válido hasta
  
    
-## <a name="eu-drivers-license-number"></a>Numero della patente di Guida di Unione europea
+## <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione europea
 
-Per ulteriori informazioni, vedere [tipo di informazione sensibile numero della patente di Guida di Unione europea](eu-driver-s-license-number.md).
+Per ulteriori informazioni, vedere [tipo di informazione sensibile al numero di patente dell'Unione europea](eu-driver-s-license-number.md).
   
-## <a name="eu-national-identification-number"></a>Numero di identificazione dell'Unione europea nazionale
+## <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
-Per ulteriori informazioni, vedere [il tipo di informazione sensibile nazionale numero di identificazione dell'Unione europea](eu-national-identification-number.md).
+Per ulteriori informazioni, vedere [tipo di informazione riservata del numero di identificazione nazionale dell'Unione europea](eu-national-identification-number.md).
   
-## <a name="eu-passport-number"></a>Numero di passaporto UE
+## <a name="eu-passport-number"></a>Numero di passaporto EU
 
-Per ulteriori informazioni, vedere [il numero di passaporto UE tipo di informazioni sensibili](eu-passport-number.md).
+Per ulteriori informazioni, vedere [tipo di informazione sensibile al numero di passaporto dell'Unione europea](eu-passport-number.md).
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>ID di numero di previdenza sociale UE o equivalente
+## <a name="eu-social-security-number-or-equivalent-id"></a>Codice di preVidenza sociale dell'Unione europea o ID equivalente
 
-Per ulteriori informazioni, vedere [il numero di previdenza sociale UE o tipo di informazioni riservate ID equivalenti](eu-social-security-number-or-equivalent-id.md).
+Per ulteriori informazioni, vedere [codice di PrevideNza sociale dell'Unione europea o tipo di dati sensibili ID equivalente](eu-social-security-number-or-equivalent-id.md).
   
-## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale UE
+## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
-Per ulteriori informazioni, vedere [il tipo di informazione sensibile UE imposte Identification Number](eu-tax-identification-number.md).
+Per ulteriori informazioni, vedere [tipo di informazione riservata del numero di identificazione fiscale dell'Unione europea](eu-tax-identification-number.md).
   
 ## <a name="finland-national-id"></a>Finland National ID
 
@@ -3062,9 +3061,9 @@ Sosiaaliturvatunnus
    
 ## <a name="finland-passport-number"></a>Finlandia - Numero di passaporto
 
-Combinazione di nove lettere e cifre motivo combinazione dei nove lettere e numeri in formato: criteri di due lettere (non maiuscole/minuscole) sette cifre Checksum No definizione A DLP sono la certezza che è stato rilevato questo tipo di informazioni riservate se al 75%, compreso tra un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number individua contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_finland_passport_number. <!-- Finland Passport Number --> 
+Combinazione di formato di nove lettere e combinazioni di caratteri di nove lettere e cifre: due lettere (senza distinzione tra maiuscole/minuscole) sette cifre checksum nessuna definizione un criterio DLP è 75% sicuro che sia stato rilevato questo tipo di informazioni riservate se, all'interno di un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number trova il contenuto che corrisponde al modello. Viene trovata una parola chiave da Keyword_finland_passport_number. Parole chiave <!-- Finland Passport Number --> 
  <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
- </Entity> Passi Passport Keyword_finland_passport_number di parole chiave
+ </Entity>
    
 ## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
 
@@ -3110,7 +3109,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 drivers license
 - driving licence
 
-- le licenze
+- patente di guida
 - 
 permis de conduire
 - 
@@ -3247,12 +3246,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
-- La funzione Func_french_insee o Func_fr_insee consente di trovare contenuto corrispondente al formato.
+- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_french_insee o Func_fr_insee consente di trovare contenuto corrispondente al formato.
+- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
 - Non vengono trovate parole chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
@@ -3291,7 +3290,7 @@ national id
 national identification
 - 
 numéro d'identité
-- Nessun g ' identité
+- Nessun d'identité
 - 
 no. d'identité
 - 
@@ -3437,23 +3436,23 @@ Driv Licenses
  
 - Driver Licen
  
-- Patente 
-- Driver licenze 
+- Patente di guida 
+- Licenze per i driver 
 - Driver Licence
  
 - Driver Licences
  
 - Driver Lic 
-- Driver Licen 
-- Patente di Guida 
-- Driver licenze 
-- Driver della licenza 
-- Driver titoli 
-- Lic della patente di Guida 
+- Driver licen 
+- Patente di guida 
+- Licenze per i driver 
+- Patente di guida 
+- Licenze per i conducenti 
+- LIC del conducente 
 - Driver's Licen
  
-- Patente 
-- Licenze della patente di Guida 
+- Patente di guida 
+- Licenze del conducente 
 - Driver's Licence
  
 - Driver's Licences
@@ -3602,7 +3601,7 @@ ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
-Non-Reisepass Nr-Reisepass
+No-Reisepass Nr-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
@@ -3611,15 +3610,15 @@ Reisepass-Nr
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
-bnationalit.t
+bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Germania - Numero carta di identità
 
 ### <a name="format"></a>Formato
 
-Dopo 1 novembre 2010: nove lettere e cifre
+Dal 1 ° novembre 2010: nove lettere e cifre
 
-Da 1 aprile 1987 fino a 31 cifre di 2010:10 ottobre
+Dal 1 ° aprile 1987 al 31 ottobre 2010:10 cifre
 
 ### <a name="pattern"></a>Modello
 
@@ -3627,7 +3626,7 @@ A partire dal 1° novembre 2010:
 - Una lettera (senza distinzione tra maiuscole/minuscole) 
 - Otto cifre
 
-Da 1 aprile 1987 fino a 31 ottobre 2010:
+Dal 1 ° aprile 1987 al 31 ottobre 2010:
 - 10 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -3637,8 +3636,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- L'espressione regolare Regex_germany_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_germany_id_card.
+- L'espressione regolare Regex_germany_id_card trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_germany_id_card.
 
 ```
 <!-- Germany Identity Card Number -->
@@ -3687,8 +3686,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_greece_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_greece_id_card.
+- L'espressione regolare Regex_greece_id_card trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_greece_id_card.
 
 ```
 <!-- Greece National ID Card -->
@@ -3729,12 +3728,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_hong_kong_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_hong_kong_id_card.
+- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_hong_kong_id_card.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- La funzione Func_hong_kong_id_card consente di trovare contenuto corrispondente al formato.
+- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -3754,12 +3753,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- carta d'identità Hong kong
+- carta di identità di Hong Kong
 - HKIDC
-- carta d'identità
+- scheda ID
 - carta di identità
-- carta d'identità HK
-- id di Hong kong
+- carta di identità HK
+- ID Hong Kong
 - 香港身份證
 
 - 香港永久性居民身份證
@@ -3816,8 +3815,8 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_india_permanent_account_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_india_permanent_account_number.
+- L'espressione regolare Regex_india_permanent_account_number trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_india_permanent_account_number.
 - Il checksum ha esito positivo.
 
 ```
@@ -3860,7 +3859,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 85% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_india_aadhaar consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_india_aadhar. Passa il valore di checksum. Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_india_aadhaar consente di trovare contenuto corrispondente al formato. Passa il valore di checksum. <!-- India Unique Identification (Aadhaar) number -->
+Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto che corrisponde al modello. Viene trovata una parola chiave da Keyword_india_aadhar. Il checksum viene superato. Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto che corrisponde al modello. Il checksum viene superato. <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3897,11 +3896,11 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_indonesia_id_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_indonesia_id_card.
+- L'espressione regolare Regex_indonesia_id_card trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_indonesia_id_card.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_indonesia_id_card consente di trovare contenuto corrispondente al formato.
+- L'espressione regolare Regex_indonesia_id_card trova il contenuto che corrisponde al modello.
 
 ```
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -3930,20 +3929,20 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-Codice paese, due lettere, nonché controllare cifre (due cifre) plus bban numero (fino a 30 caratteri)
+Codice paese (due lettere) più cifre di controllo (due cifre) più numero BBAN (fino a 30 caratteri)
 
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
 
-- Codice di due lettere del paese
+- Codice paese a due lettere
 - Due cifre di controllo (seguite da uno spazio facoltativo) 
-- 1 a 7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
+- 1-7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
 - 1-3 lettere o cifre
 
-Il formato per ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN vengono trattati questi 60 paesi:
+Il formato di ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN copre questi 60 paesi:
 
-Active Directory, ae, all'az, ba, essere, bg, orario di ufficio, ch, cr, cy, cz, de, dk, eseguire, ee, es, fi, fo, fr, gb, ge, gi, contabilità generale, gr, risorse umane, hu, vale a dire il, è, viene, kw, kz, kg, li, lt, lu, lv mc, md, me, mk, mr, mt, mu , nl, no pl, pt, RU, rs, sa, se, si, sk, sm, tn, tr, vg
+ad, AE, al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, do, EE, es, Fi, fo, fr, GB, GE, Gi, GL, gr, HR, HU, IE, il, is, it, kW, KZ, lb, li, LT, Lu, LV, MC, MD, me, MK, Mr, MT, MU , NL, no, pl, PT, ro, RS, SA, se, si, SK, SM, TN, TR, VG
 
 ### <a name="checksum"></a>Checksum
 
@@ -4035,7 +4034,7 @@ Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una pro
 IP-כתובת ה
  
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale di malattie (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattie (ICD-10-CM)
 
 ### <a name="format"></a>Formato
 
@@ -4052,7 +4051,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- È possibile trovare una parola chiave da Dictionary_icd_10_cm.
+- Viene trovata una parola chiave da Dictionary_icd_10_cm.
 
 ```
       <!-- ICD-10 CM -->
@@ -4065,10 +4064,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 Parole chiave
 
-Qualsiasi termini nel dizionario di parola chiave Dictionary_icd_10_cm, che si basa su [International classificazione di malattie, decimo revisione, modifica clinici (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Questo tipo di ricerca solo il termine, non i codici di assicurazioni.
+Qualsiasi termine del dizionario di parole chiave Dictionary_icd_10_cm, basato sulla [classificazione internazionale delle malattie, la decima revisione, la modifica clinica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Questo tipo di ricerca viene visualizzato solo per il termine, non per i codici assicurativi.
 
    
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale di malattie (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattie (ICD-9-CM)
 
 ### <a name="format"></a>Formato
 
@@ -4085,7 +4084,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- È possibile trovare una parola chiave da Dictionary_icd_9_cm.
+- Viene trovata una parola chiave da Dictionary_icd_9_cm.
 
 ```
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -4097,7 +4096,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Qualsiasi termini nel dizionario di parola chiave Dictionary_icd_9_cm, che si basa su [International classificazione di malattie, nono revisione, modifica clinici (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Questo tipo di ricerca solo il termine, non i codici di assicurazioni.
+Qualsiasi termine del dizionario di parole chiave Dictionary_icd_9_cm, basato sulla [classificazione internazionale delle malattie, la nona revisione, la modifica clinica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Questo tipo di ricerca viene visualizzato solo per il termine, non per i codici assicurativi.
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Irlanda - Numero personale di servizio pubblico (PPS)
 
@@ -4106,7 +4105,7 @@ Qualsiasi termini nel dizionario di parola chiave Dictionary_icd_9_cm, che si ba
 Formato precedente (fino al 31 dicembre 2012):
 - Sette cifre seguite da 1-2 lettere  
 
-Nuovo formato (1 gennaio 2013 e una volta eseguito):
+Nuovo formato (1 gen 2013 e successive):
 - Sette cifre seguite da due lettere
 
 ### <a name="pattern"></a>Modello
@@ -4115,7 +4114,7 @@ Formato precedente (fino al 31 dicembre 2012):
 - Sette cifre 
 - 1-2 lettere (senza distinzione tra maiuscole e minuscole) 
 
-Nuovo formato (1 gennaio 2013 e una volta eseguito):
+Nuovo formato (1 gen 2013 e successive):
 - Sette cifre 
 - Una lettera (senza distinzione tra maiuscole e minuscole) che corrisponde a una cifra di controllo alfabetica  
 - La lettera "A" o "H" (senza distinzione tra maiuscole e minuscole)
@@ -4127,14 +4126,14 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_ireland_pps consente di trovare contenuto corrispondente al formato.
+- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
 - Si verifica una delle situazioni seguenti:
-    - È possibile trovare una parola chiave da Keyword_ireland_pps.
+    - Viene trovata una parola chiave da Keyword_ireland_pps.
     - La funzione Func_eu_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- La funzione Func_ireland_pps consente di trovare contenuto corrispondente al formato.
+- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -4520,22 +4519,22 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - dl#
  
-- DL # 
-- le liste di distribuzione # 
-- LE LISTE DI DISTRIBUZIONE # 
-- patente 
-- licenze di driver 
-- patente di Guida 
-- patente 
-- licenze di driver 
-- licenze della patente di Guida 
+- DL 
+- DLS 
+- DLS 
+- patente di guida 
+- licenze per i driver 
+- patente di guida 
+- patente di guida 
+- licenze per i driver 
+- licenze del conducente 
 - driving licence
  
-- LIC # 
-- LIC # 
+- driver'lic 
+- DRIVER'LIC 
 - lics#
  
-- id dello stato 
+- ID stato 
 - state identification
  
 - state identification number
@@ -4714,7 +4713,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - 社会保険番号
  
 
-## <a name="japanese-residence-card-number"></a>Numero di carta di residenza giapponese
+## <a name="japanese-residence-card-number"></a>Numero di carta di soggiorno giapponese
 
 ### <a name="format"></a>Formato
 
@@ -4734,8 +4733,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_jp_residence_card_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_jp_residence_card_number.
+- L'espressione regolare Regex_jp_residence_card_number trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_jp_residence_card_number.
 
 ```
 <!--Japan Residence Card Number-->
@@ -4751,9 +4750,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
 
-- Numero di carta di residenza
-- Residenza scheda n
-- Residenza scheda #
+- Numero di carta di soggiorno
+- Carta di soggiorno No
+- Carta di soggiorno #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Malesia - Numero di carta d’identità
@@ -4779,8 +4778,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_malaysia_id_card_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_malaysia_id_card_number.
+- L'espressione regolare Regex_malaysia_id_card_number trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_malaysia_id_card_number.
 
 ```
 <!-- Malaysia ID Card Number -->
@@ -4797,28 +4796,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- scheda application digitale
-- è possibile / c
-- è possibile / c non
+- scheda dell'applicazione digitale
+- i/c
+- i/c no
 - IC
-- IC non
-- carta d'identità
+- IC No
+- scheda ID
 - Scheda di identificazione
 - carta di identità
 - k/p
-- k/p non
-- kad akuan diri
-- aplikasi kad digitale
-- kad pengenalan malaysia
+- k/p no
+- diri akuan Kad
+- Kad Aplikasi digitale
+- Kad Pengenalan Malaysia
 - KP
-- KP non
-- mykad
-- mykas
+- KP No
+- MyKad
+- MYKAS
 - mykid
 - mypr
 - mytentera
-- carta d'identità Malaysia
-- Malese carta d'identità
+- carta di identità Malaysia
+- carta di identità malaysiana
 - NRIC
 - scheda di identificazione personale
    
@@ -4844,8 +4843,8 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_netherlands_bsn consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_netherlands_bsn.
+- La funzione Func_netherlands_bsn trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_netherlands_bsn.
 - La funzione Func_eu_date2 rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
@@ -4887,7 +4886,7 @@ Tre lettere, uno spazio (facoltativo) e quattro cifre
 
 ### <a name="pattern"></a>Modello
 
-Tre lettere quattro cifre (facoltativo) un spazio (non maiuscole/minuscole)
+Tre lettere (senza distinzione tra maiuscole/minuscole) uno spazio (facoltativo) quattro cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -4944,11 +4943,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_norway_id_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_norway_id_number.
+- La funzione Func_norway_id_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_norway_id_number.
 - Il checksum ha esito positivo.
 - Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_norway_id_numbe consente di trovare contenuto corrispondente al formato.
+- La funzione Func_norway_id_numbe trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -4999,8 +4998,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_philippines_unified_id consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_philippines_id.
+- L'espressione regolare Regex_philippines_unified_id trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_philippines_id.
 
 ```
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -5039,7 +5038,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informazioni riservate se all'interno di prossimità di 300 caratteri: la funzione Func_polish_national_id consente di trovare contenuto corrispondente al formato. È possibile trovare una parola chiave da Keyword_polish_national_id_passport_number. Passa il valore di checksum.
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_polish_national_id trova contenuto che corrisponde al modello. Viene trovata una parola chiave da Keyword_polish_national_id_passport_number. Il checksum viene superato.
 
 ```
 <!-- Poland Identity Card-->
@@ -5057,8 +5056,8 @@ Un criterio DLP è 75% la certezza che è stato rilevato questo tipo di informaz
 
 - Dowód osobisty
 - Numero dowodu osobistego
-- Nazwa i numero dowodu osobistego
-- Nazwa si nr dowodu osobistego
+- Nazwa i numeri dowodu osobistego
+- Nazwa i Nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 
 - Dowód Tożsamości
@@ -5142,8 +5141,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Numero paszportu
-- Paszportu Nr.
+- Numero Paszportu
+- Nr. Paszportu
 - Paszport
 
    
@@ -5164,8 +5163,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_portugal_citizen_card consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_portugal_citizen_card.
+- L'espressione regolare Regex_portugal_citizen_card trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_portugal_citizen_card.
 
 ```
 <!-- Portugal Citizen Card Number -->
@@ -5252,12 +5251,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_singapore_nric consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_singapore_nric.
+- L'espressione regolare Regex_singapore_nric trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_singapore_nric.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_singapore_nric consente di trovare contenuto corrispondente al formato.
+- L'espressione regolare Regex_singapore_nric trova il contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -5317,8 +5316,8 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_south_africa_identification_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_south_africa_identification_number.
+- La funzione Func_south_africa_identification_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_south_africa_identification_number.
 - Il checksum ha esito positivo.
 
 ```
@@ -5362,12 +5361,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_south_korea_resident_number consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_south_korea_resident_number.
+- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_south_korea_resident_number.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_south_korea_resident_number consente di trovare contenuto corrispondente al formato.
+- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```
@@ -5405,7 +5404,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="pattern"></a>Modello
 
-12 11 cifre:
+11-12 cifre:
 - Due cifre 
 - Una barra (facoltativa) 
 - 7-8 cifre 
@@ -5608,7 +5607,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - iso 9362
  
 - iso9362 
-- codice SWIFT\# 
+- Swift\# 
 - swiftcode
  
 - swiftnumber
@@ -5629,7 +5628,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - BIC\# 
 - bank identifier code
  
-- 標準化9362 
+- 標準化 9362 
 - 迅速＃
  
 - SWIFTコード
@@ -5729,15 +5728,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="format"></a>Formato
 
-- Numero di passaporto biometrica: nove cifre
-- Numero di passaporto non biometrica: nove cifre
+- Numero di passaporto biometrico: nove cifre
+- Numero di passaporto non biometrico: nove cifre
 
 ### <a name="pattern"></a>Modello
-Numero di passaporto biometrica:
+Numero di passaporto biometrico:
 - La cifra "3"  
 - Otto cifre
 
-Numero di passaporto biometrica non:
+Numero di passaporto non biometrico:
 - 9 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -5747,8 +5746,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_taiwan_passport consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_taiwan_passport.
+- L'espressione regolare Regex_taiwan_passport trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_taiwan_passport.
 
 ```
 <!-- Taiwan Passport Number -->
@@ -5768,7 +5767,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
  
 - Numero di passaporto 
-- Passport non 
+- Passport No 
 - Num. passaporto
  
 - Passport#
@@ -5798,8 +5797,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_taiwan_resident_certificate consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_taiwan_resident_certificate.
+- L'espressione regolare Regex_taiwan_resident_certificate trova il contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_taiwan_resident_certificate.
 
 ```
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -5817,14 +5816,13 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - Certificato di residenza
  
-- Cert residenti 
+- CERT residente 
 - Cert. di resid.
  
 - Scheda di identificazione 
 - Certificato residente straniero
  
-- ARC
- 
+- ARCO 
 - Certificato residente nell’area di Taiwan
  
 - TARC
@@ -5836,7 +5834,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - 台灣地區居留證
  
 
-## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
+## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione tailandese
 
 ### <a name="format"></a>Formato
 
@@ -5845,7 +5843,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- Prima cifra non è 0 o 9 
+- La prima cifra non è 0 o 9 
 - 12 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -5855,11 +5853,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_Thai_Citizen_Id consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_Thai_Citizen_Id.
+- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_Thai_Citizen_Id.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_Thai_Citizen_Id consente di trovare contenuto corrispondente al formato.
+- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
 
 ```
 <!-- Thai Citizen ID -->
@@ -5886,7 +5884,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>Numero identificativo nazionale turca
+## <a name="turkish-national-identification-number"></a>Numero di identificazione nazionale turco
 
 ### <a name="format"></a>Formato
 
@@ -5903,11 +5901,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_Turkish_National_Id consente di trovare contenuto corrispondente al formato.
-- È possibile trovare una parola chiave da Keyword_Turkish_National_Id.
+- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_Turkish_National_Id.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_Turkish_National_Id consente di trovare contenuto corrispondente al formato.
+- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
 
 ```
 <!-- Turkish National Identity -->
@@ -5926,10 +5924,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
 
-- TC Kimlik n
-- TC Kimlik numarası
+- TC Kimlik No
+- Numarası Kimlik TC
 - Vatandaşlık numarası
-- Vatandaşlık non
+- Vatandaşlık No
 
 ## <a name="uk-drivers-license-number"></a>Regno Unito - Numero della patente di guida
 
@@ -6119,7 +6117,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Criteri di gruppo 
 - DOB
  
-- D.O.B 
+- D. O. B 
 - Date of Birth
  
 - Birth Date
@@ -6129,15 +6127,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="format"></a>Formato
 
-7 cifre o 9 caratteri separati da spazi o trattini
+7 caratteri o 9 caratteri separati da spazi o trattini
 
 ### <a name="pattern"></a>Modello
 
-Due possibili motivi:
+Due modelli possibili:
 
-- Due lettere (NINOs valido utilizzare solo alcuni caratteri in questo prefisso, questo modello consente di convalidare; non maiuscole/minuscole)
+- Due lettere (NINOs valido utilizza solo alcuni caratteri in questo prefisso, che questo modello convalida; senza distinzione tra maiuscole e minuscole)
 - Sei cifre
-- Entrambi '', "B", "C", oppure con ' (ad esempio il prefisso solo alcuni caratteri sono consentiti in suffisso; non distinzione tra maiuscole e minuscole)
+- ' A ',' B ',' c'o ' d'(come il prefisso, solo alcuni caratteri sono consentiti nel suffisso, senza distinzione tra maiuscole e minuscole)
 
 OPPURE
 
@@ -6149,7 +6147,7 @@ OPPURE
 - Uno spazio o un trattino
 - Due cifre
 - Uno spazio o un trattino
-- Entrambi 'A', "B", "C", oppure con '
+- ' A ',' B ',' c'o ' d'
 
 ### <a name="checksum"></a>Checksum
 
@@ -6205,7 +6203,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
  
 - medical attention
  
-- protezione di social networking 
+- previdenza sociale 
 - great britain
  
 - insurance
@@ -6374,7 +6372,7 @@ Varia in base allo stato
 ### <a name="pattern"></a>Modello
 
 Varia in base allo stato. Ad esempio, per New York:
-- Nove cifre formattato come ggg ggg ggg corrispondenti.
+- Nove cifre formattate come ddd ddd ddd corrisponderanno.
 - Nove cifre come ddddddddd non corrispondono.
 
 ### <a name="checksum"></a>Checksum
@@ -6386,7 +6384,7 @@ No
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
-- È possibile trovare una parola chiave da Keyword_us_drivers_license.
+- Viene trovata una parola chiave da Keyword_us_drivers_license.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
@@ -6435,7 +6433,7 @@ IDs#
 - numero ID 
 - ID numbers
  
-- LIC 
+- DRIVER'LIC 
 - LIC#
  
 
@@ -6445,44 +6443,44 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- Driver Lic 
-- Driver conglomerati 
-- Patente 
-- Driver licenze 
+- LIC del driver 
+- Driver Driver'lics 
+- Patente di guida 
+- Licenze per i driver 
 - DriversLic 
 - DriversLics 
-- PatenteGuida 
+- DriversLicense 
 - DriversLicenses 
 - Driver Lic 
-- Driver conglomerati 
-- Patente di Guida 
-- Driver licenze 
+- Driver Driver'lics 
+- Patente di guida 
+- Licenze per i driver 
 - Driver'Lic 
-- Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
-- Driver' Lic 
-- Driver' conglomerati 
-- Driver' licenza 
-- Driver' licenze
+- Driver ' LiCS 
+- Driver ' License 
+- Driver ' licenses 
+- LIC del driver 
+- Driver ' Driver'lics 
+- Patente di guida 
+- Licenze per i driver
 - Driver'sLic 
 - Driver'sLics 
-- Driver'sLicense 
+- Secondola 
 - Driver'sLicenses 
-- Lic della patente di Guida 
-- Conglomerati della patente di Guida 
-- Patente 
-- Licenze della patente di Guida 
+- LIC del conducente 
+- Driver'lics del conducente 
+- Patente di guida 
+- Licenze del conducente 
 - identification number
  
 - identification numbers
  
 - identification#
  
-- carta d'identità 
+- scheda ID 
 - schede ID 
 - scheda di identificazione 
-- identificazione schede 
+- Schede di identificazione 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -6491,16 +6489,16 @@ IDs#
 - 
 Driver Lics#
  
-- Driver licenza # 
-- Driver licenze # 
+- Patente di guida # 
+- Licenze driver # 
 - DriversLic # 
 - DriversLics # 
-- PatenteGuida # 
+- DriversLicense # 
 - DriversLicenses # 
 - Driver Lic # 
-- Driver conglomerati # 
-- Driver della licenza # 
-- Driver licenze # 
+- Driver Driver'lics # 
+- Patente di guida # 
+- Licenze per i driver # 
 - Driver' Lic#
  
 - Driver' Lics#
@@ -6519,7 +6517,7 @@ Driver Lics#
  
 - Driver'sLic # 
 - Driver'sLics # 
-- Driver'sLicense # 
+- Secondola 
 - Driver'sLicenses # 
 - Driver's Lic#
  
@@ -6529,7 +6527,7 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- carta d'identità # 
+- scheda ID # 
 - id cards#
  
 - identification card#
@@ -6628,7 +6626,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - SSN 
 - tin
  
-- protezione di social networking 
+- previdenza sociale 
 - tax payer
  
 - itins
@@ -6657,15 +6655,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 9 cifre formattate o meno
 
 > [!NOTE]
-> Se eseguita prima funzione mid 2011, un SSN è sicuro formattazione cui devono essere compreso alcuni intervalli è valido in alcune parti del numero (ma non esiste alcun checksum).
+> Se emesso prima della metà del 2011, un SSN ha una formattazione complessa in cui alcune parti del numero devono rientrare in alcuni intervalli per essere valide (ma non c'è nessun checksum).
 
 ### <a name="pattern"></a>Modello
 
-Quattro funzioni cercare SSNs in quattro formati diversi:
-- Func_ssn trova SSNs di pre-2011 sicuro formattazione formattati con trattini o spazi (ggg-gg-gggg OR ggg gg gggg)
-- Func_unformatted_ssn trova SSNs di pre-2011 sicuro la formattazione viene formattato come nove cifre consecutive (ddddddddd)
-- Func_randomized_formatted_ssn trova SSNs post 2011 formattati con trattini o spazi (ggg-gg-gggg OR ggg gg gggg)
-- Func_randomized_unformatted_ssn trova SSNs post 2011 che viene formattato come nove cifre consecutive (ddddddddd)
+Quattro funzioni cercano SNSS in quattro modelli diversi:
+- Func_ssn trova SNSS con una formattazione complessa pre2011 che è formattata con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
+- Func_unformatted_ssn trova SNSS con una formattazione complessa pre2011 che non è formattata come nove cifre consecutive (ddddddddd)
+- Func_randomized_formatted_ssn trova post-2011 SNSS formattati con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
+- Func_randomized_unformatted_ssn trova post-2011 SNSS che non sono formattati come nove cifre consecutive (ddddddddd)
 
 ### <a name="checksum"></a>Checksum
 
@@ -6679,7 +6677,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Viene trovata una parola chiave da Keyword_ssn.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_unformatted_ssn consente di trovare contenuto corrispondente al formato.
+- La funzione Func_unformatted_ssn trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:

@@ -6,36 +6,36 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
-description: È possibile impostare un quarantena per i messaggi di posta elettronica in arrivo in Office 365 in messaggi di posta elettronica in arrivo sono stati filtrati come posta indesiderata in blocco, posta elettronica di phishing, e malware può essere conservato per un utilizzo successivo.
-ms.openlocfilehash: a336e1fed0bd9a3c1e347610f6a42b70f5c80b1b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: È possibile configurare una quarantena per i messaggi di posta elettronica in arrivo in Office 365 in cui i messaggi di posta elettronica in arrivo che sono stati filtrati come posta indesiderata, massa, phishing e malware possono essere conservati per la revisione successiva.
+ms.openlocfilehash: fe8e59718a6b7293821875d19ba2b98070396f0f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530652"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217766"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>I messaggi di posta elettronica in quarantena in Office 365
 
-È possibile impostare quarantena per i messaggi di posta elettronica in arrivo in Office 365 in cui è possono archiviare i messaggi che sono stati filtrati come posta indesiderata, posta inviata in blocco, posta elettronica di phishing, posta che contiene malware e posta corrispondenti a una regola del flusso di posta elettronica specificato per un utilizzo successivo.
+È possibile configurare la quarantena per i messaggi di posta elettronica in arrivo in Office 365 in cui i messaggi che sono stati filtrati come posta indesiderata, posta in blocco, posta elettronica di phishing, posta che contiene malware e posta che corrisponde a una regola del flusso di posta specificata possono essere conservati per la revisione successiva.
   
-Per impostazione predefinita, i messaggi filtrati vengono inviati alla cartella posta indesiderata i destinatari, ad eccezione di quelli che contiene malware che viene messo in quarantena per impostazione predefinita. Come amministratore, è possibile impostare i criteri di filtro dei contenuti per inviare filtrati tutti i messaggi in quarantena invece. Le diverse operazioni che è possibile eseguire per i messaggi contenuto filtrato dipendono [è stato definito criteri di filtro della posta indesiderata](https://go.microsoft.com/fwlink/?LinkId=799736).
+Per impostazione predefinita, i messaggi filtrati vengono inviati alla cartella posta inDesiderata dei destinatari, fatta eccezione per la posta che contiene malware inviato alla quarantena per impostazione predefinita. Come amministratore, è possibile configurare i criteri di filtro del contenuto per inviare in quarantena tutti i messaggi filtrati. Le diverse azioni che è possibile eseguire per i messaggi filtrati dal contenuto dipendono dai [criteri di filtro della posta indesiderata definiti](https://go.microsoft.com/fwlink/?LinkId=799736).
   
-Gli utenti e gli amministratori possono lavorare con i messaggi in quarantena. Gli utenti possono utilizzare solo i propri messaggi filtrati in quarantena. Gli amministratori possono cercare e gestire i messaggi in quarantena per tutti gli utenti.
+Sia gli utenti che gli amministratori possono utilizzare i messaggi in quarantena. Gli utenti possono utilizzare solo i propri messaggi filtrati in quarantena. Gli amministratori possono cercare e gestire i messaggi in quarantena per tutti gli utenti.
   
-Ulteriori informazioni sull'utilizzo dei messaggi in quarantena:
+Per ulteriori informazioni, vedere Utilizzo dei messaggi in quarantena:
   
 - [Gestire i messaggi in quarantena come amministratore](manage-quarantined-messages-and-files.md)
     
-- [Individuazione e rilascio dei messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md)
+- [Individuare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md)
     
-- [Utilizzare le notifiche di posta indesiderata utente per segnalare i messaggi in quarantena](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+- [Utilizzare le notifiche di posta indesiderata utente per rilasciare e segnalare messaggi di posta indesiderata](use-spam-notifications-to-release-and-report-quarantined-messages.md)
     
 - [Domande frequenti sulla quarantena](quarantine-faq.md)
     

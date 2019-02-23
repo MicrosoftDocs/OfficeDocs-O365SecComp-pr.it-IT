@@ -1,7 +1,7 @@
 ---
-title: Conflitti posta indesiderata inviata a Office 365
-ms.author: krowley
-author: kccross
+title: La lotta alla posta indesiderata inviata a Office 365
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,67 +12,69 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
-description: Guida di orientamento alla sicurezza posta elettronica di Microsoft prevede un approccio più prodotti non corrispondente. Si applica filtro tecnologia di Exchange Online Protection (EOP) protezione da posta indesiderata e anti-phishing piattaforme di posta elettronica di Microsoft per fornire agli utenti l'ultimo gli strumenti di protezione da posta indesiderati e anti-phishing e innovazioni nell'intera rete. L'obiettivo per EOP è offrire un servizio di posta elettronica completo e utilizzabile che consente di rilevare e proteggere gli utenti da posta indesiderata, posta elettronica falsi minacce (anti-phishing) e malware.
-ms.openlocfilehash: d4047e373b7808fe4b30dd23a1e7486ee7eb5a66
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
+ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002875"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216566"
 ---
-# <a name="fighting-junk-email-sent-to-office-365"></a>Conflitti posta indesiderata inviata a Office 365
+# <a name="fighting-junk-email-sent-to-office-365"></a>La lotta alla posta indesiderata inviata a Office 365
 
-Guida di orientamento alla sicurezza posta elettronica di Microsoft prevede un approccio più prodotti non corrispondente. Si applica filtro tecnologia di Exchange Online Protection (EOP) protezione da posta indesiderata e anti-phishing piattaforme di posta elettronica di Microsoft per fornire agli utenti l'ultimo gli strumenti di protezione da posta indesiderati e anti-phishing e innovazioni nell'intera rete. L'obiettivo per EOP è offrire un servizio di posta elettronica completo e utilizzabile che consente di rilevare e proteggere gli utenti da posta indesiderata, posta elettronica falsi minacce (anti-phishing) e malware.
+La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
   
 ## <a name="the-challenge"></a>Problema
 
-Messaggio di posta elettronica è diventato uno strumento di comunicazione importante non solo per gli utenti, ma anche per gli operatori di marketing, il personale del supporto, organizzazioni di vendita e aziende di tutte le dimensioni. Come si è espanso utilizzo di posta elettronica, in modo ha parte di un messaggio di posta elettronica. Posta indesiderata non monitorato può bloccare posta in arrivo e reti, soddisfazione impatto e interferire con l'efficacia delle comunicazioni di posta elettronica legittimi. Per tale motivo Microsoft continua a investire in tecnologie di protezione da posta indesiderate. In altre parole, innanzitutto contenente e filtro posta indesiderata. 
+La posta elettronica è diventata uno strumento di comunicazione importante non solo per i consumatori, ma anche per gli addetti marketing, il personale di supporto, le organizzazioni di vendita e le aziende di tutte le dimensioni. L'utilizzo della posta elettronica è cresciuto, quindi ha un abuso di posta elettronica. La posta indesiderata non monitorata può intasare le cassette postali e le reti, influire sulla soddisfazione degli utenti e ostacolare l'efficacia delle comunicazioni di posta elettronica. Ecco perché Microsoft continua a investire nelle tecnologie di protezione dalla posta indesiderata. In poche parole, viene avviato contenendo e filtrando la posta indesiderata. 
   
-## <a name="our-efforts"></a>Il prodotto
+## <a name="our-efforts"></a>I nostri sforzi
 
-EOP offre una serie di operazioni per ridurre al minimo l'impatto negativo posta indesiderata è sull'esperienza di posta elettronica degli utenti.
+EOP offre una serie di passaggi per ridurre al minimo l'impatto negativo della posta indesiderata sull'utilizzo della posta elettronica degli utenti.
   
-### <a name="exchange-online-protection-technology"></a>Tecnologia di Exchange Online Protection
+### <a name="exchange-online-protection-technology"></a>Tecnologia Exchange Online Protection
 
-Per contribuire alla riduzione posta indesiderata, EOP include una protezione posta indesiderata utilizzando EOP proprietarie tecnologie di filtraggio posta elettronica dello schermo per identificare e separare posta indesiderata di posta elettronica legittimi. Il filtro contenuto EOP apprendimento da nota posta indesiderata e phishing minacce e commenti degli utenti da piattaforma i consumer, Outlook.com. Questi tipi di dati la formazione tecnologie EOP in grado di riconoscere posta indesiderata e posta elettronica legittimi e sono chiave input in reputazione del mittente. Corso commenti degli utenti EOP al programma di posta indesiderata classificazione assicura che le tecnologie di EOP continuamente addestrate e migliorate.
+Per contribuire a ridurre la posta indesiderata, EOP include la protezione della posta indesiderata utilizzando tecnologie di filtro EOP proprietarie che schermano la posta elettronica per identificare e separare la posta indesiderata Il filtro contenuto di EOP apprende dalle minacce note e dalla posta indesiderata e dal feedback degli utenti dalla nostra piattaforma consumer, Outlook.com. Questi tipi di dati aiutano il treno EOP Technologies a riconoscere la posta elettronica legittima e la posta indesiderata e sono input chiave nella reputazione mittente. Il feedback in corso da parte degli utenti di EOP nel programma di classificazione della posta indesiderata contribuisce a garantire che le tecnologie EOP siano continuamente addestrate e migliorate.
   
 #### <a name="how-does-eop-work"></a>Come funziona EOP?
 
-Quando un utente esterno riceve un messaggio di posta elettronica a un utente di EOP, tecnologie di filtraggio EOP valutare il contenuto del messaggio e assegna una classificazione per il messaggio basato sul probabilità che il messaggio di posta indesiderata. Questa restrizione viene archiviata come proprietà di un messaggio viene chiamata un livello di probabilità della posta indesiderata (SCL) nei messaggi. La posta indesiderata rimane con il messaggio viene trasmesso ad altri livelli di protezione da posta indesiderata in EOP. 
+Quando un utente esterno invia un messaggio di posta elettronica a un utente di EOP, le tecnologie di filtro di EOP valutano il contenuto del messaggio e assegnano una classificazione al messaggio in base alla probabilità che il messaggio sia posta indesiderata. Questa valutazione viene memorizzata come una proprietà del messaggio denominata livello di probabilità di posta inDesiderata (SCL) all'interno del messaggio stesso. La valutazione SCL rimane con il messaggio così come viene inviata ad altri livelli di protezione dalla posta indesiderata all'interno di EOP. 
   
-Per gestire i messaggi di posta elettronica con diversi livelli SCL vengono impostate le regole in EOP. Dispone di un messaggio di posta indesiderata superiore a una determinata soglia, si ritiene posta indesiderata. Il messaggio viene messo in quarantena o recapitato nella cartella posta indesiderata dell'utente a seconda di come l'amministratore di sistema consente di configurare l'opzione di recapito della posta indesiderata.
+Le regole all'interno di EOP sono impostate per gestire i messaggi di posta elettronica con diverse valutazioni SCL. Se un messaggio ha una valutazione SCL superiore a una determinata soglia, viene considerato posta indesiderata. Il messaggio verrà messo in quarantena o recapitato nella cartella posta indesiderata dell'utente a seconda del modo in cui l'amministratore di sistema configura l'opzione di recapito della posta indesiderata
   
-#### <a name="eop-filters"></a>Filtri EOP
+#### <a name="eop-filters"></a>Filtri di EOP
 
-Oltre alle tecnologie di filtro di protezione da posta indesiderate, EOP inoltre consente l'amministratore di sistema per impostare i livelli di filtro per personalizzare ulteriormente il recapito di posta elettronica per gli account utente. Gli amministratori possono aggiungere facilmente un mittente o nome di dominio per i mittenti attendibili e l'elenco dei domini in modo che il messaggio di posta elettronica da tale mittente o dominio mai considerato come posta indesiderata indipendentemente dal contenuto del messaggio. Per informazioni, vedere [Mittenti attendibili e bloccati liste in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+Oltre alle tecnologie di filtraggio della protezione da posta indesiderata, EOP fornisce anche all'amministratore di sistema la possibilità di impostare livelli di filtro per personalizzare ulteriormente il recapito della posta elettronica ai propri account utente. Gli amministratori possono facilmente aggiungere un mittente o un nome di dominio all'elenco Mittenti attendibili e domini in modo che la posta elettronica proveniente da quel mittente o dominio non venga mai trattata come posta indesiderata indipendentemente dal contenuto del messaggio. Per informazioni, vedere [elenchi di mittenti attendibili e bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
   
 ### <a name="phishing-protection"></a>Protezione dal phishing
 
-Il phishing (pronunciato "pesca") è una maschera furto d'identità e una delle minacce crescite su Internet. È spesso possibile identificare un messaggio di phishing quando richiede informazioni personali o finanziarie o include un collegamento a un sito Web che richiede tali informazioni. EOP offre protezione dal phishing come parte delle tecnologie di filtraggio EOP proprietarie. Tecnologie di filtraggio EOP analizzare il messaggio di posta elettronica per il rilevamento di collegamenti contraffatti o domini falsificati per proteggere gli utenti da questi tipi di phishing in linea.
+Il phishing (pronunciato "Fishing") è una forma di furto di identità e una delle minacce in più rapida crescita su Internet. È spesso possibile identificare un messaggio di phishing quando richiede informazioni personali o finanziarie o include un collegamento a un sito Web che richiede tali informazioni. EOP offre la protezione anti-phishing come parte delle tecnologie di filtraggio EOP proprietarie. Le tecnologie di filtro di EOP analizzano la posta elettronica per individuare i collegamenti fraudolenti o i domini contraffatti per proteggere gli utenti da questi tipi di truffe online.
   
-#### <a name="how-does-phishing-protection-work"></a>Funzionamento protezione dal phishing
+#### <a name="how-does-phishing-protection-work"></a>Come funziona la protezione anti-phishing?
 
-Frequenza con cui un messaggio di posta elettronica phishing verrà inviata contenente un collegamento, una volta selezionato il collegamento come reindirizzare gli utenti a un sito web contraffatto visualizzato valido (ad esempio la banca o servizio in linea). In questo sito di phishing in genere viene richiesto di immettere informazioni personali, come i nomi utente, password e di previdenza sociale. Tutte le informazioni che immesse nel sito di phishing consentono specificati sottrarre l'identità dell'utente. Utilizzando conosciuti marchi attendibili e logo, autori siano in grado di apparire autorizzato. Tecnologia di filtro anti-phishing offerta nei controlli di EOP per le caratteristiche di phishing potenziali di posta elettronica. Se viene trovato, il messaggio di posta elettronica viene spostato nella cartella posta indesiderata.
+Spesso un messaggio di posta elettronica di phishing verrà inviato contenente un collegamento, una volta che si è fatto clic sul collegamento reindirizza gli utenti a un sito Web fraudolento che sembra valido (come l'istituto finanziario o il servizio online). In genere, questo sito di phishing richiede agli utenti di immettere informazioni personali come nomi utente, password e numeri di previdenza sociale. Tutte le informazioni immesse nel sito di phishing consentono all'truffatore di rubare la propria identità. Utilizzando i marchi e i loghi attendibili noti, phisher è in grado di essere legittimo. La tecnologia dei filtri antiPhishing offerti in EOP verifica la possibilità di potenziali caratteristiche di phishing nella posta elettronica. Se trovato, il messaggio di posta elettronica viene spostato nella cartella di posta inDesiderata.
   
-Microsoft è concentrato sforzi tecnologia anti-phishing in due risulterà: innanzitutto per impedire che i messaggi di posta elettronica di phishing sta per raggiungere gli utenti e in secondo luogo, contribuendo a eliminare la possibilità degli utenti da ingannato spoofing messaggi di posta elettronica e siti web. 
+Microsoft sta concentrando gli sforzi della tecnologia anti-phishing su due fronti: innanzitutto, contribuendo a impedire ai messaggi di posta elettronica di phishing di raggiungere gli utenti e in secondo luogo, contribuendo ad eliminare la possibilità per gli utenti di essere ingannati da messaggi di posta elettronica contraffatti e siti Web. 
   
 > [!TIP]
-> Internet Explorer versioni 7 e di sopra verrà bloccare o avvisare gli utenti quando visita noti o potenziali phishing dei siti in modo che non sono indotto fornire informazioni personali. [Assicurarsi di avere l'ultima versione di Internet Explorer](https://www.microsoft.com/windows/ie/default.mspx). 
+> Internet Explorer versione 7 e versioni successive bloccano o avvisano gli utenti quando visitano siti di phishing noti o potenziali, in modo che non vengano indotti a fornire informazioni personali. Verificare [di disporre della versione più recente di Internet Explorer](https://www.microsoft.com/windows/ie/default.mspx). 
   
 #### <a name="authentication"></a>Autenticazione
 
-Lo spoofing del dominio è un modo di imitazione un indirizzo di posta elettronica legittimi per rendere falsi posta elettronica legittimi. Lo spoofing viene utilizzato da utenti non autorizzati o organizzazioni di tentativi di phishing a indurre persone di rivelare informazioni personali. Divulgazione di informazioni quali può causare per identificare il furto e altri tipi di truffe di false.
+Lo spoofing del dominio è un modo per imitare un indirizzo di posta elettronica legittimo per rendere legittima la posta elettronica fraudolenta. Lo spoofing viene utilizzato da utenti malintenzionati o organizzazioni nelle truffe di phishing per attirare le persone a divulgare informazioni personali sensibili. La divulgazione di tali informazioni può comportare l'identificazione dei furti e di altri tipi di frodi.
   
-EOP utilizza mittente protezione Framework (SPF), DomainKeys identificato posta (DKIM) e Domain-based Message Authentication, report e conformità (DMARC) e altre autenticazioni implicite per verificare che i messaggi provengono dal dominio da che dichiarano di provengono . È consigliabile che tutti i mittenti utilizzano SPF e DKIM per proteggere i destinatari di posta indesiderate posta elettronica e tentativi di phishing. È consigliabile prendere in considerazione i mittenti DMARC per rifiutare o mettere in quarantena posta elettronica inviato da mittenti non autorizzati di pubblicazione.
+EOP utilizza sender Protection Framework (SPF), DomainKeys identificò la posta (DKIM) e l'autenticazione dei messaggi basata sul dominio, la creazione di report e la conformità (DMARC) e altre autenticazioni implicite per verificare che i messaggi provengono dal dominio da cui predicono di provenire . È consigliabile che tutti i mittenti utilizzino SPF e DKIM per proteggere i destinatari dalla posta indesiderata e dalle truffe di phishing. È consigliabile che i mittenti ritengano di pubblicare un DMARC per rifiutare o mettere in quarantena la posta inviata da mittenti non autorizzati.
   
-- Per ulteriori informazioni su SPF, vedere [RFC 7208](https://tools.ietf.org/html/rfc7208) e [Sender Policy Framework](http://www.openspf.org/).
+- Per ulteriori informazioni su SPF, vedere [RFC 7208](https://tools.ietf.org/html/rfc7208) and [Sender Policy Framework](http://www.openspf.org/).
     
 - Per ulteriori informazioni su DKIM, vedere [RFC 6376](https://tools.ietf.org/html/rfc6376) e [DKIM.org](http://dkim.org/).
     
 - Per ulteriori informazioni su DMARC, vedere [DMARC.org](https://dmarc.org/).
     
-### <a name="legislation"></a>Normativa
+### <a name="legislation"></a>Legislazione
 
-In Microsoft, si ritiene che lo sviluppo di tecnologie e nuove self-disposizioni richiede il supporto dei criteri effettivi government e giuridico. La proliferazione di posta indesiderata in tutto il mondo è migliorarne le numerose corpi legislativi per definire quali messaggi di posta commerciale. Molti paesi hanno ora leggi in materia di conflitti da posta indesiderata sul posto. Questo approccio complementare è come consentire di limitare la posta indesiderata consentendo legittimi commerce électronique a risultati economici degli Stati Uniti ha federal e sullo stato leggi in materia di governance di posta indesiderata. Atto CAN SPAM espande gli strumenti disponibili per i messaggi di posta elettronica falsi e ingannevoli curbing.
+Microsoft, riteniamo che lo sviluppo di nuove tecnologie e autoregolamentazione richieda il supporto di politiche governative effettive e di quadri giuridici. La proliferazione di posta indesiderata a livello mondiale ha spinto numerose organizzazioni legislative a regolare la posta elettronica commerciale. Molti paesi/aree geografiche dispongono ora di leggi sulla lotta contro la posta indesiderata. Gli Stati Uniti dispongono di leggi federali e statali che disciplinano lo spam e questo approccio complementare contribuisce a limitare la posta indesiderata, consentendo al commercio elettronico legittimo di prosperare. L'Act CAN-SPAM espande gli strumenti disponibili per limitare i messaggi di posta elettronica fraudolenti e ingannevoli.
   
 

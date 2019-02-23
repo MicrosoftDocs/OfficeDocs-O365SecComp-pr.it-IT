@@ -1,12 +1,12 @@
 ---
-title: Aggiungere depositari a un caso eDiscovery avanzate (Preview)
+title: Aggiungere i depositari a un caso avanzato di eDiscovery (anteprima)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,77 +14,78 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c36e0a2228db042d50361460e2e22f13556e8715
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706107"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218216"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Aggiungere depositari a un caso eDiscovery avanzate (Preview)
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery (anteprima)
 
-Utilizzo di eDiscovery avanzate (anteprima), è possibile utilizzare lo strumento di gestione incorporati depositaria per coordinare i flussi di lavoro intorno a gestione depositari e identificare le origini dati rilevanti, detentive all'interno di un caso. Quando si aggiunge un depositaria, il sistema può automaticamente identificare e archiviazioni sul posto alle loro cassette postali di Exchange primaria e OneDrive per sito aziendale. Come di procedere con l'individuazione, si potrebbe Scopri e mappare le cassette postali di altri o siti che un depositaria a cui si accede al passato o team che un depositaria appartenga alla data odierna.
+Utilizzando Advanced eDiscovery (Preview), è possibile sfruttare lo strumento di gestione del custode incorporato per coordinare i flussi di lavoro in merito alla gestione dei depositari e identificare le origini dati rilevanti e detentive all'interno di un caso. Quando si aggiunge un custode, il sistema è in grado di identificare automaticamente e inserire le esenzioni nella cassetta postale di Exchange principale e nel sito di OneDrive for business. Quando si esegue l'individuazione, è possibile anche scoprire e mappare altre cassette postali o siti a cui è stato effettuato l'accesso di un custode nel passato o i team a cui è membro un custode.
 
-Utilizzare il flusso di lavoro seguente per aggiungere e gestire depositari in casi di eDiscovery avanzate (Preview) all'interno di sicurezza & centro conformità. 
+Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari nei casi avanzati di eDiscovery (Preview) all'interno del Centro sicurezza & Compliance. 
 
-## <a name="step-1-identify-potential-custodians"></a>Passaggio 1: Identificare potenziali depositari
+## <a name="step-1-identify-potential-custodians"></a>Passaggio 1: identificare i potenziali depositari
 
-Il primo passaggio consiste nel identificare depositari appropriati per la materia. Per aggiungere depositari a un caso, è necessario essere un membro di eDiscovery Manager o un gruppo di ruoli di eDiscovery Admins.   
+Il primo passaggio consiste nell'identificare i depositari idonei per la propria materia. Per aggiungere depositari a un caso, è necessario essere membri del gruppo di ruoli eDiscovery managers o eDiscovery Admins.   
 
-Per aggiungere depositari a un caso eDiscovery avanzate (Preview) esistenti:
+Per aggiungere i depositari a un caso avanzato esistente di eDiscovery (anteprima):
 
-1. Nella pagina **eDiscovery avanzate (anteprima)** , andare al caso.
+1. Dalla pagina **Advanced eDiscovery (Preview)** , passare al caso.
  
-2. Dopo aver selezionato un caso, passare alla scheda **depositari** e fare clic su **Aggiungi depositaria +**. 
+2. Dopo aver selezionato un caso, passare alla scheda **depositari** e fare clic su **+ Aggiungi custode**. 
  
-3. Scegliere depositari che si desidera aggiungere al caso. È possibile avviare digitando per cercare e selezionare gli utenti Azure Active Directory dell'organizzazione.
+3. Scegliere i depositari che si desidera aggiungere al caso. È possibile iniziare digitando la ricerca e selezionando gli utenti dall'Azure Active Directory dell'organizzazione.
  
-4. Dopo avere scelto l'elenco dei depositari, fare clic su **Avanti** per iniziare a identificare possibili origini dati. 
+4. Dopo aver completato l'elenco dei depositari, fare clic su **Avanti** per iniziare a identificare potenziali origini dati. 
    
-## <a name="optional-step-2-select-custodian-data-sources"></a>(Facoltativo) Passaggio 2: Selezionare le origini dati depositaria
+## <a name="optional-step-2-select-custodian-data-sources"></a>Optional Passaggio 2: selezionare origini dati di un custode
 
-Dopo aver aggiunto depositari a un caso, è possibile utilizzare Office 365 che consentono di identificare e mantenere le origini dati depositaria principale. Il prossimo passaggio del flusso di lavoro consiste nel selezionare le origini dati e di proprietà di depositari specificati nel passaggio 1. 
+Dopo aver aggiunto i depositari a un caso, è possibile sfruttare Office 365 per identificare e preservare le origini dati del custode principale. Il passaggio successivo in questo flusso di lavoro consiste nel selezionare le origini dati di proprietà dei depositari specificati nel passaggio 1. 
 
-Per identificare le origini dati depositaria: 
+Per identificare le origini dati del custode: 
 
-1. Per ogni depositaria selezionare **Exchange** se si desidera che il sistema per identificare e aggiungere cassette postali di Exchange primaria del depositaria automaticamente. 
+1. Per ogni custode, selezionare **Exchange** se si desidera che il sistema identifichi automaticamente e aggiunga la cassetta postale di Exchange principale del custode. 
  
-2. Per ogni depositaria selezionare **OneDrive** se si desidera che il sistema per identificare e aggiungere URL OneDrive primario del depositaria automaticamente. 
+2. Per ogni custode, selezionare **OneDrive** se si desidera che il sistema identifichi automaticamente e aggiunga l'URL di OneDrive primario del custode. 
 
-    Dopo aver apportato le selezioni effettuate, essi sistema tenterà di identificare le origini dati e aggiungerli al caso automaticamente.
+    Dopo aver apportato le selezioni, il sistema tenterà automaticamente di identificare le origini dati e di aggiungerle al caso.
  
-4. Fare clic su **Avanti** per iniziare il mapping di origini dati aggiuntive per la depositaria.
+4. Fare clic su **Avanti** per iniziare a mappare le origini dati aggiuntive al custode.
 
-## <a name="optional-step-3-map-additional-data-sources"></a>(Facoltativo) Passaggio 3: Eseguire il mapping di origini dati aggiuntive
+## <a name="optional-step-3-map-additional-data-sources"></a>Optional Passaggio 3: mappare origini dati aggiuntive
 
-In base al caso, è anche possibile aggiungere cassette postali che un determinato depositaria potrebbe essere utilizzati in passato, gruppi di cui una depositaria attualmente è un membro o i siti che un depositaria hanno accesso a in passato. Oltre alle origini dati depositaria principale, è possibile aggiungere ulteriori origini di dati di Office 365 per un depositaria o utilizzare Office 365 per aiutare a identificare le origini dati potenzialmente pertinenti anche. 
+A seconda del caso, è possibile aggiungere anche cassette postali che un determinato custode può aver utilizzato in passato, gruppi in cui un custode è attualmente membro o siti a cui un custode ha avuto accesso in passato. Oltre alle origini dati del custode principale, è possibile aggiungere altre origini dati di Office 365 a un custode o sfruttare Office 365 per identificare anche le origini dati potenzialmente rilevanti. 
 
-Per mappare le cassette postali, siti o team a un depositaria specifico:
-1. Selezionare **aggiornamento** per assegnare i percorsi di contenuti, ad esempio le cassette postali, i siti e i team, a un depositaria specifico. 
+Per eseguire il mapping di cassette postali, siti o team a un determinato custode:
 
-2. Nell'elemento libero, specificare quanto segue:
+1. Selezionare **Aggiorna** per assegnare le posizioni di contenuto, come le cassette postali, i siti e i team a un determinato custode. 
+
+2. Nel riquadro a comparsa, specificare quanto segue:
    
-  -  **Cassette postali di Exchange** - fare clic su **Scegli utenti, gruppi o team** e quindi fare clic nuovamente su **Scegli utenti, gruppi o team** . Per specificare le cassette postali per assegnare a depositaria selezionato, utilizzare la casella Cerca per trovare cassette postali degli utenti e gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata per un Team di Microsoft o un gruppo di Office 365. Selezionare la casella di controllo team utente, gruppo, fare clic su **Scegli**e quindi fare clic su **Fine**.
+  -  **Cassette postali di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Per specificare le cassette postali da assegnare al custode selezionato, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata a un gruppo di Office 365 o a un team Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
 
       > [!NOTE]
-      > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere persone all'elenco, digitare un nome (almeno 3 caratteri) nella casella di ricerca.
+      > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
      
-   - **Siti di SharePoint** - fare clic su **Scegli siti** e quindi **Scegliere siti** per specificare ulteriori SharePoint e OneDrive per i siti che si desidera assegnare al depositaria selezionato. È inoltre possibile aggiungere l'URL del sito di SharePoint per un Team di Microsoft o un gruppo di Office 365. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi fare clic su **Fine**.
-   - **Team di Microsoft** – fare clic su **Scegliere i team** e quindi fare clic su **Team scegliere** nuovamente per visualizzare un elenco di gruppi di Team Microsoft che il depositaria appartenga alla data odierna. Selezionare il team che si desidera aggiungere il depositaria. Una volta selezionato, il sistema identificherà automaticamente & selezionare che il sito di SharePoint e cassetta postale di gruppo associato associate a tale Team di Microsoft. Fare clic su **Scegli**e quindi fare clic su **Fine**.
+   - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su choose **sites** again per specificare altri siti di SharePoint e OneDrive for business che si desidera assegnare al custode selezionato. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
+   - **Microsoft teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di gruppi di team Microsoft che il custode è un membro di oggi. Selezionare i team che si desidera aggiungere al custode. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
         
       > [!NOTE]
-      > Per aggiungere ulteriori Teams Microsoft, è necessario aggiungere separatamente le cassette postali e il sito di SharePoint come illustrato in precedenza.
+      > Per aggiungere ulteriori Microsoft teams, sarà necessario aggiungere separatamente la cassetta postale e il sito di SharePoint come illustrato in alto.
 
-Dopo avere origini di mapping, è possibile visualizzare il totale delle cassette postali, i siti e i team per depositari appena aggiunto. Quando aver completato le origini dati pertinenti per una specifica depositaria, questo mapping verrà gestito ed estesa alla raccolta di eDiscovery, l'elaborazione e i flussi di lavoro di revisione. 
+Dopo aver completato la mappatura delle origini, è possibile visualizzare le cassette postali, i siti e i team totali per i depositari appena aggiunti. Dopo aver finalizzato le origini dati rilevanti per uno specifico custode, questo mapping verrà mantenuto e esteso all'insieme eDiscovery, all'elaborazione e alla revisione dei flussi di lavoro. 
 
-## <a name="optional-step-4-place-custodians-on-hold"></a>(Facoltativo) Passaggio 4: Posto depositari in attesa
+## <a name="optional-step-4-place-custodians-on-hold"></a>Optional Passaggio 4: mettere in attesa i depositari
 
- Dopo avere scelto il depositari e origini dati che si desidera aggiungere al case, facoltativamente è possibile effettuare alcune o tutte le depositari in attesa. Quando si effettua una depositaria in attesa, il contenuto mappato a tale utente viene mantenuto finché non si rilascia depositaria dal case o finché non viene eliminato l'attesa. In alcuni casi, si desidera aggiungere depositari a un caso senza in cui vengono posizionati in attesa. 
+ Dopo aver finalizzato i depositari e le origini dati che si desidera aggiungere al caso, è possibile facoltativamente mettere in attesa alcuni o tutti i depositari. Quando si attiva il blocco di un custode, il contenuto mappato a tale utente viene mantenuto finché non si rilascia il custode dalla causa o finché non si elimina l'esenzione. In alcuni casi, potrebbe essere necessario aggiungere i depositari a un caso senza bloccarli. 
 
-Per mettere il selezionato depositari e le origini dati in attesa:
+Per posizionare i depositari e le origini dati selezionati in attesa:
 
-1. Verificare le selezioni effettuate depositaria e selezionare checkox posizionare ciascun depositaria in attesa. Una volta che un depositaria viene messa in attesa, verrà creato automaticamente un criterio di conservazione depositaria contenente detentive tutte le origini. Se l'opzione non è selezionata, le origini dati di depositaria & selezionata verranno aggiunto al caso ma non verrà mantenuto il contenuto.
+1. Verificare le selezioni del custode e selezionare la casella di controllo per il blocco di ogni custode. Una volta che un custode è stato messo in attesa, verrà creato automaticamente un criterio di conservazione del custode contenente tutte le fonti detentive. Se l'opzione non è selezionata, il custode & le origini dati selezionate verranno aggiunte al caso, ma il contenuto non verrà conservato.
 
-2. Passare alla scheda **contiene** e selezionare il **Criterio di conservazione depositaria**. 
+2. Passare alla scheda **esenzioni** e selezionare il **criterio**di conservazione dei depositari. 
 
-3. Fare clic su **Modifica** per visualizzare tutte le origini dati depositaria selezionato.
+3. Fare clic su **modifica** per visualizzare tutte le origini dati del custode selezionate.

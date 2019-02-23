@@ -1,12 +1,12 @@
 ---
-title: Configurare le impostazioni di ricerca e analitica
+title: Configurare le impostazioni di ricerca e analisi
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9528a4bcfaa77f2e232b25d03eda46cce42ebb9
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 253650bb9916da8260491870d1a0bc899d6245c8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607901"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217106"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analitica
+# <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
 
-## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e posta elettronica del threading
+## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e threading della posta elettronica
 
-In questa sezione, è possibile impostare i parametri per il rilevamento duplicati, quasi duplicati e posta elettronica threading.
+In questa sezione, è possibile impostare parametri per il rilevamento duplicati, vicino al rilevamento duplicati e al threading tramite posta elettronica.
 
-- Abilita/Disabilita: includa il rilevamento duplicato, quasi duplicati e posta elettronica threading come parte del flusso analitica se abilitato. Dal momento che si basano su tra loro, è necessario abilitare tutti gli elementi o disabilitare tutti gli utenti.
+- Attiva/disattiva: Includi rilevamento duplicato, vicino al rilevamento duplicato e threading della posta elettronica come parte del flusso di analisi se abilitato. Poiché si basano sull'uno dall'altro, è necessario abilitarli o disabilitarli tutti.
 
-- Soglia: se il livello similarità di due documenti è superiore alla soglia, verranno messe nello stesso quasi duplicati set.
+- Soglia: se il livello di somiglianza di due documenti si trova al di sopra della soglia, verranno inseriti nello stesso set di duplicati vicino.
 
-- Nascondere i duplicati per impostazione predefinita: se questa impostazione è attivata, sarà possibile applicare un filtro per nascondere documenti duplicati nella working set per impostazione predefinita. Il filtro è possibile rimuovere manualmente in working set se necessario.
+- Nascondi i duplicati per impostazione predefinita: se questa impostazione è attivata, per impostazione predefinita verrà applicato un filtro per nascondere i documenti duplicati nel working set. Il filtro può essere rimosso manualmente nel working set, se necessario.
 
-- Numero minimo/massimo di parole: quasi duplicati e posta elettronica threading verrà eseguito solo su documenti che contengono almeno il numero minimo di parole e al massimo il numero massimo di parole. Per ulteriori informazioni, vedere [quasi duplicati](near-duplicates.md) e [posta elettronica threading](email-threading.md).
+- Numero minimo/massimo di parole: quasi duplicati e il threading della posta elettronica verrà eseguito solo sui documenti che hanno almeno il numero minimo di parole e il numero massimo di parole. Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
 
 ## <a name="themes"></a>Temi
 
-In questa sezione, è possibile impostare i parametri per i temi.
+In questa sezione, è possibile impostare parametri per i temi.
 
-- Abilita/Disabilita: includere temi clustering come parte del flusso analitica se abilitato.
-- Modificare il numero massimo di temi in modo dinamico in modo dinamico: in alcuni casi, non vi sono documenti è insufficiente per produrre il numero di temi desiderato. Se questa impostazione è attivata, quindi anziché il tentativo di forzare il numero massimo desiderato dei temi, il sistema regola numero massimo di temi in modo dinamico.
-- Numero massimo di temi: numero di temi desiderato
-- Includere i numeri dei temi: se abilitato, includerà numeri durante la generazione di temi.  
+- Abilita/Disabilita: Includi temi il clustering come parte del flusso di analisi se abilitato.
+- Regolare il numero massimo di temi dinamicamente dinamicamente: in alcuni casi, non sono disponibili documenti sufficienti per produrre il numero di temi desiderato. Se questa impostazione è attivata, anziché tentare di forzare il numero massimo di temi desiderato, il sistema regola in modo dinamico il numero massimo di temi.
+- Numero massimo di temi: numero desiderato di temi
+- Includere numeri nei temi: quando è abilitata, includerà i numeri durante la generazione di temi.  
 
-## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico dei caratteri (OCR)
+## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
 
-Quando questa impostazione è attivata, OCR verrà eseguito su immagini che vengono caricate in working set in modo che possano essere disponibili per le ricerche.
+Quando questa impostazione è attivata, l'OCR verrà eseguito su immagini che vengono ingerite in gruppi di lavoro in modo che possano essere ricercate.
 
 ## <a name="ignore-text"></a>Ignora testo
 
-Vi sono istanze in determinate testi è destinata a diminuire la qualità dei analitica, ad esempio lunghi dichiarazioni di non responsabilità che vengono aggiunti alcuni messaggi di posta elettronica indipendentemente dal contenuto del messaggio di posta elettronica. Se si conoscono tali casi, è possibile escludere il testo da analitica specificando il testo (è supportata RegEx) e i moduli che dovrebbe essere escluse testo.
+Esistono casi in cui alcuni testi diminuiscono la qualità dell'analisi, ad esempio le dichiarazioni di non responsabilità lunghe che vengono aggiunte a determinati messaggi di posta elettronica, indipendentemente dal contenuto del messaggio. Se si è a conoscenza di tali casi, è possibile escludere questo testo da analisi specificando il testo (RegEx è supportato) e quali moduli devono essere esclusi per il testo.

@@ -6,199 +6,199 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 avanzate eDiscovery, compresa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
+ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559049"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218096"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Esportare i risultati in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In questo argomento vengono descritte le opzioni di installazione esportazione eDiscovery avanzate.
+In questo argomento vengono descritte le opzioni avanzate di installazione di eDiscovery Export.
   
  **Contenuto dell'argomento:**
   
-- [Definizione dei batch di esportazione e sessioni](export-results-in-advanced-ediscovery.md#BK_Define)
+- [Definizione di batch e sessioni di esportazione](export-results-in-advanced-ediscovery.md#BK_Define)
     
-- [Esporta incrementali e aggiuntive](export-results-in-advanced-ediscovery.md#BK_IncrementalReports)
+- [Esportazioni incrementali e aggiuntive](export-results-in-advanced-ediscovery.md#BK_IncrementalReports)
     
 - [Impostare i parametri di esportazione batch](export-results-in-advanced-ediscovery.md#BK_SetUpExport)
     
-- [Esportare i file di output di report](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
+- [Esportare i file di output dei report](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
     
-## <a name="defining-export-batches-and-sessions"></a>Definizione dei batch di esportazione e sessioni
+## <a name="defining-export-batches-and-sessions"></a>Definizione di batch e sessioni di esportazione
 <a name="BK_Define"> </a>
 
-Un batch di esportazione consente l'elaborazione di esportazione utilizzando un set di parametri definiti. EDiscovery avanzate consente di definire batch per personalizzare ogni esportazione.
+Un batch di esportazione consente l'esportazione dell'elaborazione utilizzando un set di parametri definiti. Advanced eDiscovery consente di definire i batch per personalizzare ogni esportazione.
   
-I parametri sono definiti per il batch di esportazione. Per impostazione predefinita per il primo batch di un caso, viene creato un batch denominato "Export batch 01". È inoltre possibile modificare il nome del batch e la descrizione.
+I parametri vengono definiti per ogni batch di esportazione. Per impostazione predefinita, viene creato un batch denominato "Export batch 01" per il primo batch di un caso. È inoltre possibile modificare il nome e la descrizione del batch.
   
-Una sessione di esportazione è un'esecuzione dell'esportazione di eDiscovery avanzate all'interno di un batch di esportazione.
+Una sessione di esportazione è un'esecuzione dell'esportazione avanzata di eDiscovery all'interno di un batch di esportazione.
   
-## <a name="incremental-and-additional-exports"></a>Esporta incrementali e aggiuntive
+## <a name="incremental-and-additional-exports"></a>Esportazioni incrementali e aggiuntive
 <a name="BK_IncrementalReports"> </a>
 
-È possibile eseguire più sessioni di esportazione all'interno di un batch di esportazione, per assicurare risultati coerenti basati sul modello di esportazione stesso e parametri. Per ogni sessione all'interno di un batch, è possibile esportare analitica per elaborare dati maiuscole appena ed elaborare ogni "in modo incrementale."
+È possibile eseguire più sessioni di esportazione all'interno di un batch di esportazione per garantire risultati coerenti in base allo stesso modello di esportazione e ai parametri. Per ogni sessione all'interno di un batch, è possibile esportare analisi per i dati del caso appena elaborati ed elaborarli in modo incrementale.
   
-Per esportare utilizzando un diverso set di parametri, è necessario innanzitutto creare un nuovo batch. La prima sessione il nuovo batch produrrà risultati per file elaborati nel caso finora, indipendentemente dal fatto questi file sono stati importati ed elaborati su una o più importazioni. Ogni blocco Ricalcola pivot, similarità, inclusives e così via. Sessioni di utilizzano i parametri definiti per il batch di e non vengono ricalcolate pivot, similarità, inclusives e così via per ogni esecuzione di sessione.
+Per esportare utilizzando un set di parametri diverso, è necessario innanzitutto creare un nuovo batch. La prima sessione del nuovo batch produrrà risultati per i file elaborati nel caso fino a quel momento, indipendentemente dal fatto che questi file siano stati importati ed elaborati in una o più imPortazioni. Ogni batch Ricalcola pivot, similitudini, inclusioni e così via. Le sessioni utilizzano i parametri definiti per il batch e non ricalcolano pivot, similitudini, inclusioni e così via per ogni esecuzione di sessione.
   
-Si supponga ad esempio un caso è stato importato e analizzare i relativi dati. Per poter recuperare quasi duplicati e i risultati Threading posta elettronica per i dati incrementali, fare clic su **Crea esportare sessione** nello stesso batch che è stato utilizzato per esportare i dati. 
+Ad esempio, si supponga che sia stato importato un caso e che i dati siano stati analizzati. Per recuperare i risultati dei messaggi di posta elettronica quasi duplicati e di threading per i dati incrementali, fare clic su **Crea sessione di esportazione** nello stesso batch precedentemente utilizzato per esportare i dati. 
   
 ## <a name="set-up-batch-export-parameters"></a>Impostare i parametri di esportazione batch
 <a name="BK_SetUpExport"> </a>
 
-EDiscovery esportare strumento viene utilizzato per esportare i risultati della ricerca di eDiscovery avanzata del computer locale. Per aumentare la velocità effettiva di trasferimento dati e velocizzare il processo di esportazione, è possibile configurare un'impostazione del Registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera aumentare la velocità di download, configurare l'impostazione del Registro di sistema prima di impostare i parametri di esportazione. Per ulteriori informazioni, vedere [aumentare la velocità di download per l'esportazione dei risultati della ricerca eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risultati della ricerca da Advanced eDiscovery al computer locale. Per aumentare la velocità effettiva di trasferimento dei dati e velocizzare il processo di esportazione, è possibile configurare un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera aumentare la velocità di download, configurare l'impostazione del registro di sistema prima di impostare i parametri di esportazione. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. In eDiscovery avanzate, selezionare un caso e fare clic su **Esporta** \> **il programma di installazione**.
+1. In Advanced eDiscovery, selezionare un caso e fare clic su **Esporta** \> **installazione**.
     
-    - Nell'elenco **Esporta batch** , selezionare il nome del batch o esportare i risultati in batch esportazione 01 (batch predefinito). 
+    - Nell'elenco **Esporta batch** selezionare il nome del batch o esportare i risultati in batch di esportazione 01 (il batch predefinito). 
     
-    - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea esportare sessione** è possibile utilizzare questa opzione per esportare gli stessi parametri come processo batch precedente, in modo incrementale. 
+    - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-    - Per esportare in un nuovo batch, fare clic su **Aggiungi** ![aggiungere icona](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)e immettere un nuovo nome nella **casella Nome Batch** (o accettare il valore predefinito) e una descrizione nella **casella Descrizione Batch**. Fare clic su **OK**.
+    - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
-    - Per modificare un nome di batch o la descrizione, selezionare il nome di **esportazione batch**, fare clic su **Modifica** ![sull'icona Modifica](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)e quindi modificare i campi.
+    - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
     
       > [!NOTE]
-      > Dopo aver eseguito le sessioni per un batch di esportazione, non possono essere eliminate. Inoltre, solo alcuni parametri possono essere modificati dopo la prima sessione viene eseguita. 
+      > Dopo aver eseguito le sessioni per un batch di esportazione, non è possibile eliminarle. Inoltre, solo alcuni parametri possono essere modificati dopo l'esecuzione della prima sessione. 
   
-    - Per creare un batch di esportazione duplicati, scegliere **Copia esportazione batch** ![creare un'icona di batch esportazione duplicati](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) e immettere un nome e una descrizione per il batch duplicato nel riquadro. 
+    - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
     
-    - Per eliminare un batch di esportazione, scegliere **Elimina** ![Elimina un'icona di batch esportazione](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
     
-    - Per visualizzare la cronologia di un batch, scegliere **cronologia Batch** ![sull'icona di visualizzazione cronologia](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+    - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
     
-2. In **popolazione**, selezionare **includere solo i file sopra punteggio di pertinenza demarcazione** e/o **batch esportazione Affina ricerca** se si desidera ottimizzare le impostazioni per il batch di esportazione. 
+2. In **popolamento**selezionare **Includi solo i file sopra il Punteggio** di rilevanza e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. 
     
-3. Se si seleziona **includere solo i file sopra punteggio di pertinenza interruzione**, il **problema** è abilitata. Se punteggio di pertinenza del file è superiore al punteggio di interruzione per il rilascio selezionato, a meno che non viene escluso dal filtro 'per la revisione' verrà esportato il file. 
+3. Se si seleziona **Includi solo i file sopra il Punteggio**di rilevanza, il **problema** è abilitato. Se il Punteggio di pertinenza del file è superiore al Punteggio di troncamento per il problema selezionato, il file verrà esportato a meno che non sia escluso dal filtro ' per la revisione '. 
   
-    Se si seleziona **Affina ricerca esportazione batch**, il **deprovisioning dupe** e filtrare per 'Per revisione' sono abilitati i pulsanti di campo. Se si sceglie **deprovisioning dupe**, quindi i file duplicati verranno filtrati in base ai criteri definiti [caso livello (impostazione predefinita): da ogni insieme di file duplicati nell'intero caso, sarà deprovisioning duped file tutti tranne uno. Livello depositaria: da ogni insieme di file duplicati della stessa depositaria, file tutti tranne uno sarà deprovisioning duped.] L'output export contiene un record di tutti i file duplicati. Se si sceglie campo **filtro in base a 'per la revisione'** , selezionare **Modifica in metadati** immettere le impostazioni di campo **'per la revisione'** . Selezionare **Includi file di input** per includere i file di origine di contenuto del pacchetto. È possibile deselezionare questa impostazione per accelerare il processo di esportazione. Si noti che i file nativi verranno esportati in qualsiasi caso. 
+    Se si seleziona **affina esportazione batch**, i pulsanti **** di opzione deduplicazione e filtro in base a' per la revisione ' sono abilitati. Se si sceglie **** deduplicazione, i file duplicati verranno filtrati in base al criterio definito [case Level (impostazione predefinita): da ogni set di file duplicati nell'intero caso, tutti tranne un file verranno deselezionati. Livello di custode: da ogni serie di file duplicati dello stesso custode, tutti tranne un file verranno deduplicati. L'output di esportazione contiene un record di tutti i file duplicati. Se si sceglie **Filtra per campo ' per la revisione '** , selezionare **modifica in metadati** per immettere le impostazioni del campo **' per la revisione '** . Selezionare **Includi file di input** per includere i file di origine nel contenuto del pacchetto. È possibile cancellare questa impostazione per velocizzare il processo di esportazione. Si noti che i file nativi verranno esportati in tutti i casi. 
     
-4. In **metadati**, selezionare le opzioni seguenti nell'elenco **Esporta modello** (una sola volta per sessione). 
+4. In **metadati**selezionare una delle opzioni seguenti nell'elenco **modello di esportazione** (una volta per sessione). 
     
-    - **Standard**: insieme di proprietà, metadati ed elementi di dati di base. Utilizzare questa opzione quando si importa dati è stato già elaborati di eDiscovery avanzate e caricamento di esportare dati a un sistema che già contiene i file. Per impostazione predefinita, esportare modelli colonne vengono create e piena.
+    - **Standard**: set di elementi di dati, metadati e proprietà di base. Utilizzare questa opzione quando i dati di importazione sono già stati elaborati in Advanced eDiscovery e i dati di esportazione vengono caricati in un sistema che già contiene i file. Per impostazione predefinita, le colonne dei modelli di esportazione vengono create e riempite.
     
-    - **Tutti**: insieme completo di metadati standard, inclusi tutti i dati di elaborazione, nonché punteggi Analyze e pertinenza. In questo modello è obbligatorio quando eDiscovery avanzate consente di eseguire l'elaborazione e caricamento di dati dei file a un sistema esterno per la prima volta.
+    - **All**: set completo di metadati standard, inclusi tutti i dati di elaborazione, nonché analisi e punteggi di pertinenza. Questo modello è necessario quando Advanced eDiscovery esegue l'elaborazione e i dati dei file vengono caricati su un sistema esterno per la prima volta.
     
-    - **Problemi**: consente di selezionare **Tutti i problemi** o selezionare un particolare problema è stato creato. 
+    - **Problemi**: selezionare **tutti i problemi** o selezionare un particolare problema creato. 
     
-5. Nella sezione **destinazione**:
+5. In **destinazione**:
     
     - **Scaricare nel computer locale**
     
-    - **Esporta in definita dall'utente blob Azure**: se questa opzione è selezionata, è possibile specificare un token di URL e SAS contenitore.
+    - **Esporta in Azure BLOB definito dall'utente**: se questa opzione è selezionata, è possibile specificare un URL del contenitore e un token SAS.
     
       > [!NOTE]
-      > Una volta che viene archiviato un pacchetto di esportazione per l'utente definito blob Azure, i dati non è più gestiti da avanzate eDiscovery; viene gestita da blob Azure. Di conseguenza, che se si elimina il caso, i file esportati rimangono ancora in Azure blob. 
+      > Dopo l'archiviazione di un pacchetto di esportazione nell'oggetto BLOB di Azure definito dall'utente, i dati non vengono più gestiti da Advanced eDiscovery; è gestito dal BLOB di Azure. Questo significa che, se si elimina il caso, i file esportati rimarranno sempre sul BLOB di Azure. 
   
-    - **Token SAS salvare per sessione di esportazione future**: se selezionato, il token SAS verrà crittografato nel database interno di eDiscovery avanzate per un utilizzo futuro.
+    - **Save SAS token for future Export Session**: se selezionata, il token SAS verrà crittografato nel database interno di Advanced eDiscovery per un utilizzo futuro.
     
       > [!NOTE]
-      > Il token SAS attualmente scade dopo un mese. Se si tenta di scaricare dopo avere più di un mese che è necessario annullare l'ultima sessione, quindi rieseguire l'esportazione. 
+      > Attualmente il token SAS scade dopo un mese. Se si tenta di eseguire il download dopo più di un mese, è necessario annullare l'ultima sessione e quindi riesportarla. 
   
-6. Fare clic su **Modifica** per configurare le impostazioni di campo 'per la revisione'. 
+6. Fare clic su **modifica** per impostare le impostazioni del campo ' per la revisione '. 
     
-    ![Configurazione per verificare le impostazioni di campo per un batch di esportazione](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurare le impostazioni dei campi di revisione per un batch di esportazione](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
-   - **Per verificare le impostazioni di campo**, nell'elenco a discesa **Selezionare scenario** selezionare lo scenario e ambito dell'analisi. Le impostazioni vengono visualizzate in base alla selezione.
+   - In **Impostazioni campo per la revisione**, in selezionare l'elenco a discesa dello **scenario** , selezionare lo scenario e l'ambito della revisione. Le impostazioni vengono visualizzate in base alla selezione.
     
-      - **Esaminare tutti** (impostazione predefinita): tutti i messaggi di posta elettronica, gli allegati e documenti sono selezionati per impostazione predefinita. 
+      - **Esaminare tutti i** (impostazione predefinita): tutti i messaggi di posta elettronica, gli allegati e i documenti sono selezionati per impostazione predefinita. 
     
-      - **Leggere tutto il contenuto di un set univoco**: Inclusives e copie inclusi univoche, univoci allegati di posta elettronica impostare livello rappresentativa di ogni gruppo di duplicati.
+      - **Esaminare tutti i contenuti univoci in un set**: inclusioni e copie univoche inclusive, allegati univoci nel livello di posta elettronica, rappresentativi da ogni serie di duplicati esatti.
     
-      - **Esaminare tutte univoco contenuto in un set - delle copie inclusi**: univoci allegati di posta elettronica Inclusives, impostare il livello, rappresentanza di ogni gruppo di duplicati.
+      - **Esaminare tutto il contenuto univoco in una copia di set-no inclusive**: Inclusive, allegati univoci nel livello di posta elettronica, rappresentante da ogni serie di duplicati esatti.
     
-      - **Esaminare i tutti univoci contenuti correlati della famiglia file e**: Inclusives, univoci allegati di posta elettronica impostare il livello, rappresentante di ogni gruppo di duplicati, espandere per includere i file della famiglia.
+      - **Esaminare tutti i contenuti univoci e i relativi file di famiglia**: inclusivi, allegati univoci nel livello di posta elettronica, rappresentativi da ogni serie di duplicati esatti, Espandi fino a includere file di famiglia.
     
-      - **Personalizzato** (consente di definire le opzioni nella finestra di dialogo): il valore predefinito è per mantenere le selezioni corrente e abilitare tutte le opzioni finestra di dialogo consentire la selezione. Se si seleziona questa opzione, è quindi possibile personalizzare le impostazioni per i messaggi di posta elettronica, documenti, allegati e varie.
+      - **Personalizzato** (consente di definire le opzioni nella finestra di dialogo): l'impostazione predefinita è quella di mantenere le selezioni correnti e attivare tutte le opzioni di dialogo, per consentire la selezione. Se si seleziona questa opzione, è possibile personalizzare le impostazioni per i messaggi di posta elettronica, i documenti, gli allegati e varie.
     
-    - In **messaggi di posta elettronica**, selezionare i messaggi di posta elettronica che si desidera esportare.
+    - In **messaggi di posta elettronica**selezionare i messaggi di posta elettronica che si desidera esportare.
     
-      - **Tutti i messaggi di posta elettronica**: (impostazione predefinita) vengono selezionati tutti i messaggi di posta elettronica.
+      - **Tutti i messaggi di posta elettronica**: (impostazione predefinita) tutti i messaggi sono selezionati.
     
-      - **Inclusives**: un messaggio di posta elettronica inclusivo è un messaggio di posta elettronica ultimo di un thread e contiene tutte le altre messaggi di posta elettronica dal thread.
+      - **Inclusive**: un messaggio di posta elettronica incluso è l'ultimo messaggio di posta elettronica di un thread e contiene tutti gli altri messaggi di posta elettronica provenienti dal thread.
     
-      - **Copia inclusi univoco e Inclusives**: copie inclusi e inclusives con lo stesso oggetto, corpo e gli allegati; copie inclusi univoche sono univoche copie di questi messaggi di posta elettronica.
+      - **Inclusioni e copie esclusive inclusive**: copie inclusive e inclusive con gli stessi soggetti, corpo e allegati; le copie uniche Inclusive sono copie univoche di questi messaggi di posta elettronica.
     
-    - In **documenti**, selezionare i documenti da esportare. 
+    - In **documenti**selezionare i documenti che si desidera esportare. 
     
-      - **Tutti i documenti**: (impostazione predefinita) vengono selezionati tutti i documenti.
+      - **Tutti i documenti**: (impostazione predefinita) sono selezionati tutti i documenti.
     
-      - **Tabelle pivot**: un file scelto come rappresentante del set di quasi duplicati, viene in genere utilizzata come linea di base durante la revisione l'insieme.
+      - **Pivot**: un file scelto come rappresentativo del set di quasi duplicati, che in genere viene utilizzato come linea di base per la revisione del set.
     
-      - **Rappresentative di ogni gruppo di duplicati**: file quasi duplicati univoci (incluso il pivot).
+      - **Rappresentante da ogni set di duplicati esatti**: file quasi duplicati univoci (incluso il pivot).
     
-    - In **allegati**, selezionare gli allegati da esportare. 
+    - In **allegati**selezionare gli allegati che si desidera esportare. 
     
-      - **Tutti gli allegati**: (impostazione predefinita) vengono selezionati tutti gli allegati.
+      - **Tutti gli allegati**: (impostazione predefinita) tutti gli allegati sono selezionati.
     
-      - **Univoco degli allegati di livello case**: file allegato univoco all'interno del case specificato.
+      - **Allegato univoco nel caso di livello**: file di allegati univoci all'interno del caso specificato.
     
-      - **Univoco allegato di posta elettronica imposta il livello**: file allegato univoco all'interno del case di posta elettronica specificato.
+      - **Allegato univoco nel set di messaggi di posta elettronica**: file di allegati univoci all'interno del caso di posta elettronica specificato.
     
-   - In**Micellaneous**, è possibile scegliere di **trattare allegati come documenti**, **considera i messaggi di posta elettronica come documenti**o **Espandi per includere i file della famiglia**. Quando si sceglie **Expand per includere i file della famiglia**, per ogni file è contrassegnato per la revisione, tutti i file della stessa famiglia inoltre essere contrassegnati.
+   - In**Micellaneous**, è possibile scegliere di **trattare gli allegati come documenti**, **considerare i messaggi di posta elettronica come documenti**o **espanderli in modo da includere i file della famiglia**. Quando si sceglie **Espandi per includere i file della famiglia**, per ogni file contrassegnato per la revisione, verranno contrassegnati anche tutti i file della stessa famiglia.
     
 7. Scegliere **Salva** per salvare le impostazioni. 
     
-8. Dopo avere specificato i parametri di esportazione, per avviare il batch di esportazione, fare clic su **Crea esportare sessione**.
+8. Dopo aver specificato i parametri di esportazione, per avviare l'esportazione batch, fare clic su **Crea sessione di esportazione**.
     
-    Durante l'esportazione, lo stato viene visualizzato lo stato delle **attività**. I risultati vengono visualizzati **nell'esportazione riepilogo**.
+    Durante l'esportazione, lo stato viene visualizzato in **stato attività**. I risultati vengono visualizzati nel **Riepilogo di esportazione**.
     
-9. Nella finestra **Download file** fare clic su **Copia negli Appunti** per copiare la chiave di esportazione. 
+9. Nella finestra **Download file** fare clic su **copia negli Appunti** per copiare la chiave di esportazione. 
     
-    ![Download dei file](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Scaricare file](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Fare clic su **Chiudi**. 
     
-    Strumento di esportazione di eDiscovery è stato avviato.
+    Lo strumento di esportazione di eDiscovery è stato avviato.
     
     ![Strumento di esportazione di eDiscovery](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-11. In **eDiscovery esportare strumento**:
+11. Nello **strumento di esportazione di eDiscovery**:
     
-    -  In **incollare la firma di accesso condiviso che verrà utilizzato per la connessione all'origine**, incollare la chiave di esportazione che youcopied negli Appunti nel passaggio 7.
+    -  In **Incolla la firma di accesso condiviso che verrà utilizzata per la connessione all'origine**, incollare la chiave di esportazione che youcopied negli Appunti nel passaggio 7.
     
-    - Fare clic su **Sfoglia** per selezionare il percorso di destinazione per archiviare i file di esportazione scaricato nel computer locale. 
+    - Fare clic su **Sfoglia** per selezionare il percorso di destinazione per l'archiviazione dei file di esportazione scaricati nel computer locale. 
     
-    - Fare clic su **Start**. Esportare i file vengono scaricati nel computer locale. Se si sceglie **Esporta in blob Azure definita dall'utente** nel passaggio 4, la sessione viene esportata in una destinazione di URL di archiviazione Blob di propria scelta.
+    - Fare clic su **Avvia**. I file di esportazione vengono scaricati nel computer locale. Se nel passaggio 4 è stata selezionata l'opzione **Esporta in Azure BLOB definiti dall'utente** , la sessione viene esportata in una destinazione URL di archiviazione BLOB scelta.
     
-Per una descrizione completa dei campi del rapporto di esportazione, vedere [esportare i campi del report](export-report-fields-in-advanced-ediscovery.md).
+Per una descrizione completa dei campi del rapporto di esportazione, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md).
   
-## <a name="export-report-output-files"></a>Esportare i file di output di report
+## <a name="export-report-output-files"></a>Esportare i file di output dei report
 <a name="BK_ExportOutputFIles"> </a>
 
-Nella tabella seguente sono elencati i file di output generati durante l'esecuzione di un batch di esportazione.
+Nella tabella seguente sono elencati i file di output generati quando si esegue un batch di esportazione.
   
 |**Usare l'attività di riepilogo del progetto per allegare o creare un collegamento ai documenti per la pianificazione**|**Tipo file**|**Descrizione**|
 |:-----|:-----|:-----|
-|Riepilogo di esportazione  <br/> |CSV  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
+|Riepilogo esportazione  <br/> |CSV  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
 |Traccia  <br/> |txt  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
-|File di testo estratto  <br/> |Cartella del file  <br/> |Cartella che contiene i file di testo estratto del file esportati.  <br/> |
-|File nativi o input  <br/> |Cartella del file  <br/> |Cartella che contiene i file nativi e di input del file esportati.  <br/> |
-|Esporta elenco  <br/> |xlsx  <br/> |Metadati file esportato in formato xlsx. Campi nei file vengono fornite in base al modello utente seleziona da esportare. Se necessario, vengono creati file diversi, ognuno contiene righe 100-150 KB. Se un determinato valore contiene più caratteri di una cella di Excel può contenere (attualmente il limite è 32.767 caratteri), quindi il valore viene ritagliato per la lunghezza massima consentita. Se un valore viene tagliato, il colore di sfondo della cella è rosso a indicare che si all'utente." I partecipanti di posta elettronica"sono un esempio di un campo che può superare il limite di lunghezza, se è stato inviato il messaggio di posta elettronica a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [esportare i campi del report](export-report-fields-in-advanced-ediscovery.md) .<br/> |
-|File di caricamento  <br/> |CSV  <br/> |Metadati file esportato in formato csv per il caricamento in un'altra applicazione. Campi nei file vengono fornite in base al modello utente seleziona da esportare.  <br/> |
-|Indicatore di operazione riuscita  <br/> |txt  <br/> |Create solo per l'esportazione per un 3rd parti blob Azure. Se l'esportazione completata correttamente, verrà creato il file. In caso di errore, o parziale esito positivo del file non verrà creato. Verrà creato il file nella cartella radice, consentendo di rilevamento automatico in diversi stati batch/sessioni di esportazione. Si tratta di un file vuoto. È il nome: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
+|File di testo estratti  <br/> |Cartella file  <br/> |Cartella che contiene i file di testo estratti dei file esportati.  <br/> |
+|Input o file nativi  <br/> |Cartella file  <br/> |Cartella che contiene i file nativi e di input dei file esportati.  <br/> |
+|Esporta elenco  <br/> |xlsx  <br/> |Metadati dei file esPortati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Carica file  <br/> |CSV  <br/> |Metadati dei file esPortati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
+|Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il suo nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Visualizzazione della cronologia batch e l'esportazione dei risultati passati](view-batch-history-and-export-past-results.md)
+[Visualizzazione della cronologia batch ed esportazione dei risultati precedenti](view-batch-history-and-export-past-results.md)
   
 [Impostazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
   
-[Aumentare la velocità di download per l'esportazione dei risultati della ricerca eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
+[Aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
 
