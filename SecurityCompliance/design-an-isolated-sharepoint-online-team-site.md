@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Sintesi: viene fornita la procedura dettagliata per la progettazione dei siti del team di SharePoint Online isolati.'
-ms.openlocfilehash: bd36044eb16b9f6ee3ee9bbb444fe8f4efe2fd63
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345808"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216156"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
 
@@ -31,11 +31,11 @@ In questo articolo viene fornita una descrizione dettagliata delle scelte fondam
 
 Per impostazione predefinita, ogni sito del team di SharePoint Online viene creato con i seguenti gruppi di SharePoint:
   
-- \<nome del sito > membri
+- \<Membri name> del sito
     
-- \<nome del sito > visitatori
+- \<Visitatori del sito name>
     
-- \<nome del sito > proprietari
+- \<Proprietari di name> del sito
     
 Questi gruppi sono separati dai gruppi di Office 365 e Azure Active Directory (AD) e costituiscono la base per l'assegnazione di autorizzazioni per le risorse del sito.
   
@@ -43,13 +43,13 @@ Il set di autorizzazioni specifiche che determina le operazioni disponibili per 
   
 |**Gruppo di SharePoint**|**Livello di autorizzazione**|
 |:-----|:-----|
-|\<nome del sito > membri  <br/> |Modifica  <br/> |
-|\<nome del sito > visitatori  <br/> |Lettura  <br/> |
-|\<nome del sito > proprietari  <br/> |Controllo completo  <br/> |
+|\<Membri name> del sito  <br/> |Modifica  <br/> |
+|\<Visitatori del sito name>  <br/> |Lettura  <br/> |
+|\<Proprietari di name> del sito  <br/> |Controllo completo  <br/> |
    
  **Procedura consigliata:** È possibile creare ulteriori gruppi di SharePoint e livelli di autorizzazione. Tuttavia, è consigliabile usare questi gruppi e livelli di autorizzazione di SharePoint predefiniti per il sito di SharePoint Online isolato.
   
-Di seguito sono i gruppi di SharePoint predefiniti e i livelli di autorizzazione.
+Di seguito sono disponibili i gruppi di SharePoint e i livelli di autorizzazione predefiniti.
   
 ![I gruppi e livelli di autorizzazione di SharePoint predefiniti per il sito di SharePoint Online.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
@@ -59,11 +59,11 @@ Di seguito sono i gruppi di SharePoint predefiniti e i livelli di autorizzazione
   
 Utilizzo di gruppi di SharePoint predefiniti, ad esempio:
   
-- Membri del ** \<nome del sito > membri** gruppo di SharePoint, che può includere sia gli account utente e gruppi, viene assegnato il livello di autorizzazione **Modifica**
+- I membri del gruppo di SharePoint ** \<membri del sito name>** , che può includere sia gli account utente che i gruppi, sono assegnati al livello di autorizzazione **modifica** .
     
-- Membri del ** \<nome del sito > visitatori** gruppo di SharePoint, che può includere sia gli account utente e gruppi, viene assegnato il livello di autorizzazione di **lettura**
+- I membri del gruppo di SharePoint ** \<visitatori del sito name>** , che può includere sia gli account utente che i gruppi, sono assegnati al livello di autorizzazione **lettura** .
     
-- Membri del ** \<nome del sito > proprietari** gruppo di SharePoint, che può includere sia gli account utente e gruppi, viene assegnato il livello di autorizzazione **controllo completo**
+- I membri del gruppo di SharePoint ** \<proprietari del sito name>** , che può includere sia gli account utente che i gruppi, sono assegnati al livello di autorizzazione **controllo completo** .
     
  **Procedura consigliata:** Anche se è possibile gestire le autorizzazioni per singoli account utente, è consigliabile utilizzare un singolo gruppo di Azure AD, noto come gruppo di accesso. In questo modo si semplifica la gestione delle autorizzazioni tramite l'appartenenza al gruppo di accesso, anziché gestire l'elenco di account utente per ogni gruppo di SharePoint.
   
@@ -83,29 +83,29 @@ Per i siti del team di SharePoint Online isolati, la struttura del gruppo consig
   
 |**Gruppo di SharePoint**|**Gruppo di accesso basato su Azure AD**|**Livello di autorizzazione**|
 |:-----|:-----|:-----|
-|\<nome del sito > membri  <br/> |\<nome del sito > membri  <br/> |Modifica  <br/> |
-|\<nome del sito > visitatori  <br/> |\<nome del sito > visualizzatori  <br/> |Lettura  <br/> |
-|\<nome del sito > proprietari  <br/> |\<nome del sito > Admins  <br/> |Controllo completo  <br/> |
+|\<Membri name> del sito  <br/> |\<Membri name> del sito  <br/> |Modifica  <br/> |
+|\<Visitatori del sito name>  <br/> |\<Visualizzatori name> sito  <br/> |Lettura  <br/> |
+|\<Proprietari di name> del sito  <br/> |\<Amministratori di name> del sito  <br/> |Controllo completo  <br/> |
    
  **Procedura consigliata:** Sebbene sia possibile utilizzare i gruppi di Office 365 o di Azure AD come membri dei gruppi di SharePoint, è consigliabile utilizzare i gruppi di Azure AD. I gruppi di Azure AD, gestiti tramite Windows Server AD o Office 365, offrono una maggiore flessibilità per usare i gruppi nidificati per assegnare le autorizzazioni.
   
-Di seguito è l'impostazione predefinita i gruppi di SharePoint configurati per l'utilizzo di gruppi di Azure Active Directory-based access.
+Di seguito sono disponibili i gruppi di SharePoint predefiniti configurati per l'utilizzo dei gruppi di accesso basati su Azure AD.
   
 ![Utilizzo dei gruppi di accesso come membri dei gruppi del sito di SharePoint Online predefinito.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Quando si progettano i tre gruppi di accesso, tenere presente quanto segue:
   
-- È necessario solo alcuni membri il ** \<nome del sito > Admins** gruppo di accesso, corrispondente a un numero limitato di SharePoint Online amministratori che gestiscono il sito del team.
+- Nel gruppo di accesso al ** \<sito name> Admins** devono essere presenti solo alcuni membri che corrispondono a un numero limitato di amministratori di SharePoint Online che gestiscono il sito del team.
     
-- La maggior parte dei membri del sito sono nel ** \<nome del sito > membri** o ** \<nome del sito > visualizzatori** accedere ai gruppi. Dal momento che i membri del sito di ** \<nome del sito > membri** gruppo di accesso hanno la possibilità di eliminare o modificare le risorse nel sito, valutare attentamente l'appartenenza al. In caso di dubbi, aggiungere il membro del sito per il ** \<nome del sito > visualizzatori** gruppo di accesso.
+- La maggior parte dei membri del sito si ** \<** trova nei gruppi di ** \<** accesso al sito name> o ai visualizzatori del sito name>. Poiché i membri del sito del gruppo di accesso dei ** \<membri del sito name>** hanno la possibilità di eliminare o modificare le risorse nel sito, considerare con attenzione la propria appartenenza. In caso di dubbi, aggiungere il membro del sito al gruppo di accesso dei ** \<visualizzatori del sito name>** .
     
-Di seguito è riportato un esempio dei gruppi di accesso per un sito isolato denominato ProjectX e i gruppi di SharePoint.
+Di seguito è riportato un esempio di gruppi di SharePoint e gruppi di accesso per un sito isolato denominato ProjectX.
   
 ![Un esempio di utilizzo dei gruppi di accesso per un sito di SharePoint Online denominato ProjectX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
-## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: Utilizzare nidificate gruppi di Azure Active Directory
+## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: utilizzare i gruppi di Azure AD nidificati
 
-Per un progetto limitato a un numero limitato di utenti, un singolo livello dei gruppi di Azure Active Directory-based access aggiunti ai gruppi del sito di SharePoint più adatto alla maggior parte degli scenari. Tuttavia, se si dispone di un numero elevato di utenti e agli utenti che già membri di definizione dei gruppi di Azure Active Directory, è possibile più facilmente assegnare le autorizzazioni di SharePoint tramite gruppi annidati o i gruppi che contengono altri gruppi come membri.
+Per un progetto confinato a un numero limitato di utenti, un singolo livello di gruppi di accesso basati su Azure AD aggiunti ai gruppi di SharePoint del sito si adatterà alla maggior parte degli scenari. Tuttavia, se si dispone di un numero elevato di persone e quelle persone sono già membri di gruppi di Azure AD stabiliti, è possibile assegnare più facilmente le autorizzazioni di SharePoint utilizzando gruppi nidificati o gruppi che contengono altri gruppi come membri.
   
 Ad esempio, si desidera creare un sito del team di SharePoint Online isolato per la collaborazione tra i dirigenti dei reparti delle vendite, marketing, ingegneria, legali e del supporto e tali reparti fanno parte di gruppi di account utente della direzione esecutiva. Anziché creare un nuovo gruppo per i nuovi membri del sito e inserirvi tutti i singoli account utente esecutivi, inserire i gruppi di dirigenti esistenti per ogni reparto nel nuovo gruppo.
   
@@ -122,11 +122,11 @@ Per utilizzare i gruppi di Azure AD nidificati:
 > [!NOTE]
 > Non è possibile utilizzare i gruppi di Office 365 nidificati. 
   
-Di seguito è riportato un esempio di Azure Active Directory annidati gruppi ProjectX membri gruppo di accesso.
+Di seguito è riportato un esempio di gruppi di Azure AD nidificati per il gruppo di accesso ai membri di ProjectX.
   
 ![Esempio di utilizzo dei gruppi di accesso per il gruppo di accesso come membri per il sito ProjectX.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
-Poiché tutti gli account utente di ricerca, Engineering e Project leads team hanno lo scopo di essere membri del sito, è più semplice aggiungere i gruppi di Azure Active Directory al gruppo accesso ProjectX membri.
+Poiché tutti gli account utente dei lead team di ricerca, ingegneria e progetto sono destinati a essere membri del sito, è più facile aggiungere i propri gruppi di Azure ad al gruppo di accesso dei membri di ProjectX.
   
 ## <a name="next-step"></a>Passaggio successivo
 

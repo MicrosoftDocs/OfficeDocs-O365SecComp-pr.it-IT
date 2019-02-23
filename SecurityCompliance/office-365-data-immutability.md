@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definisce e spiega l'immutabilità dei dati o i dati che devono essere individuabili e che non possono essere distrutti o modificati.
-ms.openlocfilehash: ab7bfc3795da761eacc9e9aa7d41e69e482fc411
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090878"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215566"
 ---
 # <a name="immutability-in-office-365"></a>Capacità di immutabilità in Office 365
 Per alcune organizzazioni, la conformità alle normative, i requisiti di governance interna o il rischio di controversia legale richiedono la conservazione della posta elettronica e dei dati associati in un modulo individuabile. Tutti i dati del sistema devono essere individuabili e nessuno di essi può essere distrutto o alterato. Il termine standard del settore per questo è "immutabilità". 

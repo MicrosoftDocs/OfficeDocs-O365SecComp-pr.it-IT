@@ -11,23 +11,23 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
-description: È possibile creare una regola di trasporto di Exchange per impedire agli utenti di inviare messaggi di posta elettronica a Microsoft per l'analisi e utilizzare nei propri processi di protezione
-ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: È possibile creare una regola di trasporto di Exchange per impedire agli utenti di inviare messaggi di posta elettronica a Microsoft per l'analisi e utilizzarli nei propri processi di sicurezza.
+ms.openlocfilehash: 7ee8fb2bca1071ccd4080379485c1670a5e66a73
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002624"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206409"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utilizzare le regole del flusso di posta elettronica per vedere quali utenti inviano segnalazioni a Microsoft
 
-Esistono diversi modi, è possibile inviare positivi e falsi messaggi falsi negativi a Microsoft per l'analisi. In qualità di amministratore, è possibile utilizzare le regole del flusso di posta per verificare quali sono segnalazione a Microsoft agli utenti come posta indesiderata e posta non indesiderata tentativi di phishing. Per ulteriori informazioni, vedere [invio della posta indesiderata, posta non indesiderata e i messaggi di phishing phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Al contrario, è possibile creare una regola di trasporto di Exchange per impedire agli utenti di inviare messaggi di posta elettronica a Microsoft per l'analisi e utilizzare nei propri processi di protezione.
+È possibile inviare messaggi falsi positivi e falsi negativi a Microsoft per l'analisi in diversi modi. Come amministratore, è possibile utilizzare le regole del flusso di posta per vedere cosa gli utenti riferiscono a Microsoft come posta indesiderata, non posta indesiderata e truffe di phishing. Per ulteriori informazioni, vedere [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Viceversa, è possibile creare una regola di trasporto di Exchange per impedire agli utenti di inviare messaggi di posta elettronica a Microsoft per l'analisi e utilizzarli nei propri processi di sicurezza.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 Tempo stimato per il completamento: 5 minuti
   
-La voce "Regole di trasporto" di Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere nell'argomento [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) e "Criteri delle cassette postali di Outlook Web App" nell'argomento [Clients and mobile devices permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx). 
+Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere la voce "regole di trasporto" nell'argomento [criteri di messaggistica e autorizzazioni di conformità](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) e "criteri cassetta postale di Outlook sul Web" nell'argomento Autorizzazioni per [client e dispositivi mobili](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) . 
   
 Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Keyboard shortcuts in Exchange 2013**.
   
@@ -42,14 +42,14 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
 4. In **Applica questa regola se**, selezionare **Il destinatario** e scegliere **l'indirizzo include una di queste parole**.
     
 5. Nella casella **Specificare parole o frasi**, eseguire le seguenti operazioni: 
-    - Tipo `abuse@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi digitare `junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi negativi a Microsoft.
-    - Tipo `phish@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questo indirizzo di posta elettronica viene utilizzato per inviare messaggi di phishing senza risposta a Microsoft.
-    - Tipo `false_positive@messaging.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif), quindi digitare `not_junk@office365.microsoft.com` e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif). Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi positivi a Microsoft.
+    - Digitare `abuse@messaging.microsoft.com` e quindi fare ![clic su](media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi `junk@office365.microsoft.com` digitare e quindi ![fare clic](media/ITPro-EAC-AddIcon.gif)su icona Aggiungi. Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi negativi a Microsoft.
+    - Digitare `phish@office365.microsoft.com` e quindi fare ![clic su](media/ITPro-EAC-AddIcon.gif)icona Aggiungi. Questo indirizzo di posta elettronica viene utilizzato per inviare messaggi di phishing mancanti a Microsoft.
+    - Digitare `false_positive@messaging.microsoft.com` e quindi fare ![clic su](media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi `not_junk@office365.microsoft.com` digitare e quindi ![fare clic](media/ITPro-EAC-AddIcon.gif)su icona Aggiungi. Questi indirizzi di posta elettronica vengono utilizzati per inviare messaggi falsi positivi a Microsoft.
     - Fare clic su **ok**.
     
 6. In **Eseguire le operazioni seguenti** selezionare **Invia il messaggio in Ccn a...**, quindi selezionare le cassette postali in cui si desidera ricevere i messaggi. 
     
-7. Se si desidera, è possibile effettuare le selezioni per la regola di controllo, testare la regola, abilitare la regola di un periodo di tempo specifico e le altre selezioni. Si consiglia di verificare la regola per un periodo prima di imporre. Vedere [le procedure per le regole del flusso di posta elettronica](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
+7. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. Vedere [procedure per le regole del flusso di posta](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
     
 8. Fare clic sul pulsante **salva** per salvare la regola. Viene visualizzata nell'elenco delle regole. 
     

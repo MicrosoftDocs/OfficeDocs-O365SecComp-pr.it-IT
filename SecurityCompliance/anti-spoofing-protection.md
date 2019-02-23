@@ -1,87 +1,72 @@
 ---
-title: Protezione anti-spoofing in Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/06/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
-description: In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e blocco quelle che possono essere autenticati neithe utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing sono esposte per organizzazioni di Office 365.
-ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614510"
+title: "protezione anti-spoofing in Office 365" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 12/06/2018 ms. audience: ITPro ms. Topic: article ms. Service: O365-seccomp localization_priority: Normal search. appverid:
+- MET150 ms. AssetID: d24bb387-C65D-486E-93E7-06a4f1a436c0 ms. Collection:
+    - M365-Security-Compliance Description: "in questo articolo viene descritto come Office 365 attenua gli attacchi di phishing che utilizzano domini di mittenti contraffatti, ovvero domini contraffatti. Questo risultato analizza i messaggi e blocca quelli che possono essere autenticati neithe utilizzando metodi di autenticazione della posta elettronica standard, né altre tecniche di reputazione mittente. Questa modifica viene implementata in modo da ridurre il numero di attacchi di phishing in cui sono esposte le organizzazioni di Office 365. "
 ---
+
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
-In questo articolo viene descritto come Office 365 attenua contro gli attacchi di phishing che utilizzi contraffatto mittente domini, vale a dire che viene eseguito lo spoofing. Per ottenere questo risultato analisi dei messaggi e quelli che non possono essere autenticati utilizzando i metodi di autenticazione standard di posta elettronica, né altri tecniche di reputazione mittente di blocco. Questa modifica viene viene implementata in modo da ridurre il numero di attacchi di phishing clienti vengono presentati.
+In questo articolo viene descritto il modo in cui Office 365 attenua gli attacchi di phishing che utilizzano domini di mittenti contraffatti, ovvero domini contraffatti. Questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati con i metodi di autenticazione della posta elettronica standard, né altre tecniche di reputazione mittente. Questa modifica viene implementata in modo da ridurre il numero di attacchi di phishing ai quali sono esposti i clienti.
   
-In questo articolo viene inoltre perché questa modifica è in corso la creazione, come i clienti possono preparare la modifica, come visualizzare i messaggi che saranno interessati, come segnalare i messaggi, come per ridurre i falsi positivi, nonché come mittenti a Microsoft necessario predisporre modificare.
+In questo articolo viene descritto anche il motivo per cui è stata apportata la modifica, il modo in cui i clienti possono prepararsi per questa modifica, la modalità di visualizzazione dei messaggi che saranno coinvolti, la modalità di relazione sui messaggi, la modalità di attenuazione dei falsi positivi e il modo in cui i mittenti di Microsoft dovrebbero prepararsi per questo modificare.
   
-Protezione anti-spoofing tecnologia Microsoft è stata inizialmente distribuita per le organizzazioni che hanno una sottoscrizione a Office 365 Enterprise E5 o hanno acquistato il componente aggiuntivo di Office 365 avanzate Threat Protection (degli strumenti di analisi) per la sottoscrizione. A partire da ottobre, 2018 è stata estesa la protezione per le organizzazioni che hanno anche Exchange Online Protection (EOP). Inoltre, a causa della modalità di che tutti i filtri informazioni tra loro, gli utenti Outlook.com anche interessati.
+La tecnologia antispoofing di Microsoft è stata inizialmente distribuita alle organizzazioni che avevano un abbonamento a Office 365 Enterprise E5 o avevano acquistato il componente aggiuntivo di Office 365 Advanced Threat Protection (ATP) per la sottoscrizione. A ottobre 2018 è stata estesa la protezione alle organizzazioni che dispongono anche di Exchange Online Protection (EOP). Inoltre, a causa del modo in cui tutti i filtri imparano l'uno dall'altro, possono essere coinvolti anche gli utenti di Outlook.com.
   
-## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Modalità lo spoofing di attacchi di phishing
+## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Modalità di utilizzo dello spoofing negli attacchi di phishing
 
-Quando si tratta di protezione degli utenti, Microsoft prese in considerazione il rischio di phishing. Tra le tecniche che in genere utilizzano mittenti di posta indesiderata e autori spoofing, ovvero quando viene effettuato al mittente e viene visualizzato un messaggio sembrano provenire da una persona o in un punto qualsiasi diverso da origine effettivo. Questa tecnica viene spesso utilizzata nelle campagne di phishing progettate per ottenere le credenziali utente. Anti-spoofing tecnologia Microsoft esamina in modo specifico FALSO del ' da: intestazione ' che sia quello che viene visualizzato un client di posta elettronica come Outlook. Quando Microsoft con confidenza elevata che From: intestazione viene eseguito lo spoofing, identifica il messaggio come un spoofing.
+Quando si tratta di proteggere i propri utenti, Microsoft assume sul serio la minaccia del phishing. Una delle tecniche di uso frequente degli spammer e phisher è la falsificazione, ovvero quando il mittente viene falsificato e viene visualizzato un messaggio che proviene da un utente o da una posizione diversa dall'origine effettiva. Questa tecnica è spesso utilizzata nelle campagne di phishing progettate per ottenere le credenziali utente. La tecnologia anti-spoofing di Microsoft esamina in modo specifico la falsificazione del ' da: header ' che è quella visualizzata in un client di posta elettronica come Outlook. Quando Microsoft ha elevata fiducia che l'intestazione From: è contraffatta, identifica il messaggio come spoofing.
   
-Messaggi di spoofing influire negativamente sulle due negativi per gli utenti reali:
+Lo spoofing dei messaggi ha due implicazioni negative per gli utenti della vita reale:
   
-### <a name="1-spoofed-messages-deceive-users"></a>1. messaggi di spoofing inganno gli utenti
+### <a name="1-spoofed-messages-deceive-users"></a>1. i messaggi falsificati ingannano gli utenti
   
-Per prima cosa, un messaggio di spoofing può indurre un utente a facendo clic su un collegamento e che le credenziali, download malware o la risposta a un messaggio con contenuto riservato (quest'ultima dei quali è noto come violazione della posta elettronica aziendale). Ad esempio, le operazioni seguenti è un messaggio di phishing con un mittente spoofing di msoutlook94@service.outlook.com:
+In primo luogo, un messaggio contraffatto potrebbe ingannare un utente facendo clic su un collegamento e rinunciando alle proprie credenziali, scaricando malware o rispondendo a un messaggio con contenuti sensibili (il secondo dei quali è noto come compromesso per la posta elettronica aziendale). Ad esempio, di seguito è riportato un messaggio di phishing con un mittente contraffatto di msoutlook94@service.outlook.com:
   
-![Messaggi di phishing service.outlook.com di rappresentazione](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Messaggio di phishing che rappresenta service.outlook.com](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
   
-Il precedente non effettivamente proviene dal service.outlook.com, ma in realtà è stata spoofing da specificati per migliorare l'aspetto di quello. Sta tentando di indurre un utente a fare clic sul collegamento all'interno del messaggio.
+Le precedenti non sono state effettivamente provenute da service.outlook.com, ma sono state falsificate dall'truffatore per farla sembrare così. Si sta tentando di ingannare un utente facendo clic sul collegamento all'interno del messaggio.
   
-Nell'esempio successivo è lo spoofing contoso.com:
+L'esempio seguente è spoofing contoso.com:
   
-![Messaggio di phishing - violazione della posta elettronica aziendale](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Messaggio di phishing-compromesso di posta elettronica aziendale](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
   
-Il messaggio cercato legittimo, ma è in effetti un spoofing. Questo messaggio di phishing è un tipo di violazione della posta elettronica aziendale che corrisponde a una sottocategoria di phishing.
+Il messaggio sembra legittimo, ma in realtà è una parodia. Questo messaggio di phishing è un tipo di compromesso di posta elettronica aziendale che è una sottocategoria di phishing.
     
-### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. utenti confondere messaggi reali per quelle falsi
+### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. gli utenti confondono i messaggi reali per quelli falsi
   
-I messaggi in secondo luogo, spoofing creare incertezze per gli utenti che conoscono sui messaggi di phishing ma non può distinguere tra un messaggio reale e uno falsificati. Ad esempio, di seguito è un esempio di un effettivo la reimpostazione della password dall'indirizzo di posta elettronica di Microsoft Security account:
+In secondo luogo, i messaggi falsificati creano incertezza per gli utenti che conoscono i messaggi di phishing, ma non sono in grado di distinguere tra un messaggio reale e uno contraffatto. Ad esempio, di seguito è riportato un esempio di reimpostazione della password effettiva dall'indirizzo di posta elettronica dell'account di sicurezza Microsoft:
   
-![Reimpostazione della password legittimi Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Reimpostazione della password legittima di Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
   
-Il messaggio è stato provengono da Microsoft, ma al contempo, gli utenti vengono utilizzati per il recupero di messaggi di phishing può indurre un utente a fare clic su un collegamento e che le credenziali, download malware o la risposta a un messaggio con contenuto riservato. Poiché è difficile stabilire la differenza tra una reimpostazione della password reali e un falso, molti utenti ignorano questi messaggi, segnalarli come posta indesiderata o inutilmente restituiscono i messaggi a Microsoft come persa tentativi di phishing.
+Il messaggio di cui sopra è venuto da Microsoft, ma allo stesso tempo, gli utenti vengono utilizzati per ottenere messaggi di phishing che possono ingannare un utente nel fare clic su un collegamento e rinunciare alle proprie credenziali, scaricare malware o rispondere a un messaggio con contenuti sensibili. Poiché è difficile distinguere tra la reimpostazione di una password reale e quella fasulla, molti utenti ignorano questi messaggi, li segnalano come posta indesiderata o inutilmente riferiscono i messaggi a Microsoft come tentativi di phishing non consentiti.
     
-Per arrestare lo spoofing, il filtro settore della posta elettronica ha sviluppato i protocolli di autenticazione di posta elettronica, ad esempio [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impedisce lo spoofing analisi mittente del messaggio - quello che viene visualizzato nel proprio client di posta elettronica (negli esempi precedenti, si tratta service.outlook.com, outlook.com e accountprotection.microsoft.com) - con il dominio che passa SPF o DKIM. Vale a dire il dominio che viene visualizzato è stato autenticato e pertanto è non spoofing. Per un esame approfondito, vedere la sezione "*informazioni sui motivi per cui l'autenticazione di posta elettronica non è sempre sufficienti per arrestare lo spoofing"* più avanti in questo documento. 
+Per interrompere lo spoofing, l'industria del filtro della posta elettronica ha sviluppato protocolli di autenticazione della posta elettronica quali [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impedisce lo spoofing che esamina il mittente di un messaggio-quello che l'utente vede nel proprio client di posta elettronica (negli esempi precedenti, si tratta di service.outlook.com, outlook.com e accountprotection.microsoft.com)-con il dominio che ha superato SPF o DKIM. Ovvero, il dominio visualizzato dall'utente è stato autenticato e pertanto non è falsificato. Per una discussione più completa, vedere la sezione "*capire perché l'autenticazione della posta elettronica non è sempre sufficiente per arrestare lo spoofing"* più avanti in questo documento. 
   
-Tuttavia, il problema è che l'autenticazione di posta elettronica record sono facoltativi, non è necessario. Di conseguenza, mentre i domini con i criteri di autenticazione avanzata like microsoft.com e skype.com sono protetti da attacchi di spoofing, domini pubblicare in tutti i criteri di autenticazione più vulnerabili o nessun criterio, sono obiettivi di spoofing. A partire da marzo 2018, solo 9% dei domini di società in Fortune 500 pubblicare criteri di autenticazione tramite posta elettronica sicuro. Le restanti 91% potrebbe spoofing da parte di un specificati e a meno che non viene rilevato dal filtro per la posta utilizzando un altro criterio, può essere recapitato a un utente finale e inganno li:
+Tuttavia, il problema è che i record di autenticazione della posta elettronica sono facoltativi, non necessari. Di conseguenza, mentre i domini con criteri di autenticazione forti come microsoft.com e skype.com sono protetti dallo spoofing, i domini che pubblicano criteri di autenticazione più deboli o nessun criterio sono obiettivi per essere falsificati. Al 2018 marzo, solo il 9% dei domini delle aziende della Fortune 500 pubblica criteri di autenticazione di posta elettronica forti. Il restante 91% può essere falsificato da un truffatore e, a meno che il filtro della posta elettronica non lo rilevi utilizzando un altro criterio, può essere recapitato a un utente finale e ingannarlo:
   
-![Criteri di gruppo Fortune 500 DMARC](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![DMARC Policies de Fortune 500 companies](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
   
-La percentuale di piccole e medie dimensioni società che non sono in Fortune 500 che pubblica i criteri di autenticazione tramite posta elettronica sicuro è più piccolo e più piccolo ancora per i domini che si trovano all'esterno dell'Europa occidentale e Nord America.
+La percentuale di aziende di piccole e medie dimensioni che non rientrano nella fortuna 500 che pubblicano criteri di autenticazione di posta elettronica forti è più piccola e ancora più piccola per i domini esterni al Nord America e all'Europa occidentale.
   
-Si tratta di un grosso problema quanto mentre le organizzazioni potrebbero non essere consapevoli di funzionamento dell'autenticazione di posta elettronica, autori comprendere e sfruttare la mancanza di esso.
+Si tratta di un problema importante perché, mentre le aziende potrebbero non essere a conoscenza di come funziona l'autenticazione della posta elettronica, phisher capisce e approfitta della sua mancanza.
   
-Per informazioni sull'impostazione SPF, DKIM e DMARC, vedere la sezione "*ai clienti di Office 365"* più avanti in questo documento. 
+Per informazioni sulla configurazione di SPF, DKIM e DMARC, vedere la sezione "*Customers of Office 365"* più avanti in questo documento. 
   
-## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Arresto spoofing con l'autenticazione di posta elettronica implicita
+## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Interruzione dello spoofing con l'autenticazione implicita della posta elettronica
 
-Poiché i tentativi di phishing e spear sono verificato un problema a causa dell'adozione limitato di criteri di autenticazione tramite posta elettronica sicuro, Microsoft continua a investire in funzionalità che consentono di proteggere i propri clienti. Di conseguenza, Microsoft sta spostando anticipo con *l'autenticazione di posta elettronica implicita* - se non autenticazione un dominio, Microsoft verrà considerato come se fosse pubblicato posta authentication record e considerarlo conseguenza se non passa. 
+Dal momento che il phishing e la posta indesiderata sono un problema e, a causa dell'adozione limitata di criteri di autenticazione di tipo e-mail, Microsoft continua a investire in funzionalità per la protezione dei clienti. Di conseguenza, Microsoft procede con *l'autenticazione implicita della posta elettronica* : se un dominio non esegue l'autenticazione, Microsoft lo tratterà come se avesse pubblicato i record di autenticazione della posta elettronica e lo trattasse di conseguenza se non passa. 
   
-Per ottenere questo risultato, Microsoft ha creato numerose estensioni per l'autenticazione di posta elettronica regolare inclusi reputazione del mittente, cronologia mittente/destinatario, analisi comportamento e altre tecniche avanzate. Messaggio inviato da un dominio non pubblica l'autenticazione di posta elettronica verrà contrassegnato come spoofing a meno che non contiene altre segnali indicare che sia valido.
+Per ottenere questo risultato, Microsoft ha creato numerose estensioni alla regolare autenticazione della posta elettronica, tra cui la reputazione mittente, la cronologia mittente/destinatario, l'analisi comportamentale e altre tecniche avanzate. Un messaggio inviato da un dominio che non pubblica l'autenticazione della posta elettronica verrà contrassegnato come spoof, a meno che non contenga altri segnali per indicare che è legittimo.
   
-In questo modo, possono avere gli utenti finali probabilità che un messaggio di posta elettronica inviato a tali non è stato spoofing, mittenti possono essere certi che nessuno è una rappresentazione del proprio dominio e ai clienti di Office 365 possono offrire anche della protezione, ad esempio protezione rappresentazione.
+In questo modo, gli utenti finali possono avere la certezza che un messaggio di posta elettronica inviato a loro non sia stato falsificato, i mittenti possono essere certi che nessuno impersona il proprio dominio e i clienti di Office 365 possono offrire una protezione ancora migliore, ad esempio la protezione della rappresentazione.
   
-Per verificare l'annuncio generale di Microsoft, vedere [A mare di Rilevatore attività parte 2 - Enhanced Anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+Per visualizzare l'annuncio generale di Microsoft, vedere [un mare di phishing parte 2-Enhanced anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
   
-## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identificazione di un messaggio è classificato come spoofing
+## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identificare che un messaggio è classificato come falsificato
 
-### <a name="composite-authentication"></a>Autenticazione composito
+### <a name="composite-authentication"></a>Autenticazione composita
 
-Sebbene SPF, DKIM e DMARC siano tutti utili per sé, non comunicano sufficiente lo stato di autenticazione nel caso in cui un messaggio non contiene alcun record autenticazione esplicite. Di conseguenza, Microsoft ha sviluppato un algoritmo che combina più segnali in un singolo valore denominato autenticazione composito o compauth in breve. I clienti in Office 365 hanno valori compauth con indicatore data e all'intestazione *Dei risultati di autenticazione* nelle intestazioni dei messaggi. 
+Anche se SPF, DKIM e DMARC sono tutti utili da soli, non comunicano sufficiente stato di autenticazione nel caso in cui un messaggio non disponga di record di autenticazione espliciti. Di conseguenza, Microsoft ha sviluppato un algoritmo che combina più segnali in un singolo valore denominato autenticazione composita o compauth in breve. I clienti di Office 365 dispongono di valori compauth contrassegnati nell'intestazione *Authentication-results* nelle intestazioni del messaggio. 
   
 ```
 Authentication-Results:
@@ -89,82 +74,82 @@ Authentication-Results:
 
 ```
 
-|**Risultati CompAuth**|**Descrizione**|
+|**Risultato CompAuth**|**Descrizione**|
 |:-----|:-----|
-|esito negativo|Messaggio non è riuscita autenticazione esplicite (dominio di invio pubblicati i record in modo esplicito in DNS) o autenticazione implicita (l'invio di dominio è stato non pubblica i record DNS, in modo che Office 365 interpolati il risultato come se fosse pubblicato record).|
-|passare|Messaggio passato autenticazione esplicite (messaggio passato DMARC o [Migliore suppone passato DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) o autenticazione implicita con confidenza elevata (l'invio di dominio non pubblica i record di autenticazione di posta elettronica, ma Office 365 ha segnali di back-end sicuro indicare il messaggio è probabilmente legittimi).|
-|softpass|Messaggio passato autenticazione implicita con confidenza medio-basso (invio dominio non pubblica l'autenticazione di posta elettronica, ma Office 365 ha segnali back-end per indicare il messaggio è valido, ma la potenza del segnale è più vulnerabile).|
-|nessuno|Messaggio non è autenticato o l'autenticazione, ma non l'allineamento, ma composito autenticazione non è stato applicato a causa di reputazione mittente o altri fattori.|
+|esito negativo|Messaggio non è stato eseguito l'autenticazione esplicita (invio esplicito dei record del dominio in DNS) o l'autenticazione implicita (il dominio di invio non ha pubblicato i record in DNS, quindi Office 365 ha interpolato il risultato come se avesse pubblicato i record).|
+|passare|Il messaggio ha superato l'autenticazione esplicita (messaggio passato DMARC, o [migliore ipotesi passata DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) o l'autenticazione implicita con elevata sicurezza (il dominio di invio non pubblica i record di autenticazione della posta elettronica, ma Office 365 ha segnali di back-end forti per indicare che il messaggio è probabilmente legittimo).|
+|softpass|Il messaggio ha superato l'autenticazione implicita con una confidenza bassa e media (il dominio di invio non pubblica l'autenticazione della posta elettronica, ma Office 365 ha segnali back-end per indicare che il messaggio è legittimo, ma la forza del segnale è più debole).|
+|nessuno|Il messaggio non ha eseguito l'autenticazione (o ha eseguito l'autenticazione ma non è stato allineato), ma l'autenticazione composita non è stata applicata a causa della reputazione mittente o di altri fattori.|
    
 |||
 |:-----|:-----|
 |**Motivo**|**Descrizione**|
-|0XX|Messaggio di autenticazione composito non riuscita.<br/>**000** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio.  <br/>**001** indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita. Ciò significa che il dominio di invio non dispone di record di autenticazione di posta elettronica pubblicati o in caso affermativo, aveva un criterio di errori più vulnerabile (fail soft SPF o indipendente dalla DMARC, il criterio di p = none).<br/>**002** indica che l'organizzazione dispone di un criterio per la coppia di mittente o il dominio in modo esplicito è consentito l'invio di posta elettronica falsificato, questa impostazione viene impostata manualmente dall'amministratore.  <br/>**010** indica che non è stato DMARC con un'azione di quarantena o rifiuta il messaggio e il dominio di invio è uno dei domini dell'organizzazione accettati (fanno parte della self a sé o intra-org, lo spoofing).  <br/>**011** indica che il messaggio non è riuscita l'autenticazione di posta elettronica implicita e il dominio di invio è uno dei domini accettati dell'organizzazione (fanno parte della self a sé o intra-org, lo spoofing).|
-|Tutti gli altri codici (1xx, 2xx, 3xx, 4xx, 5xx)|Corrisponde a diversi codici interni per il motivo per cui un messaggio passato autenticazione implicita oppure non dispone di alcun tipo di autenticazione, ma è stata applicata alcuna azione.|
+|0XX|Messaggio l'autenticazione composita non riuscita.<br/>**000** indica che il messaggio ha avuto esito negativo DMARC con un'azione di rifiuto o quarantena.  <br/>**001** indica che il messaggio non ha eseguito l'autenticazione implicita della posta elettronica. Questo significa che il dominio di invio non ha pubblicato i record di autenticazione della posta elettronica o, in caso contrario, ha un criterio di errore più debole (non riuscito o neutro, criteri di DMARC di un criterio di p = None).<br/>**002** indica che l'organizzazione dispone di un criterio per la coppia mittente/dominio esplicitamente vietato dall'invio di messaggi di posta elettronica falsificati, questa impostazione viene impostata manualmente da un amministratore.  <br/>**010** indica che il messaggio ha avuto esito negativo DMARC con un'azione di rifiuto o quarantena e che il dominio di invio è uno dei domini accettati dell'organizzazione (questa è la parte del self-to-self o dell'intra-org, spoofing).  <br/>**011** indica che il messaggio non ha eseguito l'autenticazione implicita della posta elettronica e che il dominio di invio è uno dei domini accettati dell'organizzazione, ovvero parte di un self-to-self, o di un sistema di spoofing interno (org).|
+|Tutti gli altri codici (1xx, 2xx, 3xx, 4xx, 5xx)|Corrisponde a vari codici interni per i motivi per cui un messaggio ha superato l'autenticazione implicita o non ha avuto l'autenticazione ma non è stata applicata alcuna azione.|
    
-Esaminando le intestazioni del messaggio, un amministratore o persino un utente finale può determinare come Office 365 arriva alla conclusione che il mittente può essere eseguito lo spoofing.
+Esaminando le intestazioni di un messaggio, un amministratore o persino un utente finale può determinare in che modo Office 365 arriva alla conclusione che il mittente potrebbe essere contraffatto.
   
-### <a name="differentiating-between-different-types-of-spoofing"></a>Per distinguere tra diversi tipi di spoofing
+### <a name="differentiating-between-different-types-of-spoofing"></a>Differenziazione tra diversi tipi di spoofing
 
-Microsoft viene fatta distinzione tra due diversi tipi di spoofing messaggi:
+Microsoft distingue due tipi diversi di messaggi di spoofing:
   
- **Spoofing dell'organizzazione tra organizzazioni**
+ **Spoofing intra-org**
   
-Nota anche come lo spoofing self a sé, questo problema si verifica quando il dominio da: indirizzo è uguale o risulti allineato con il dominio del destinatario (quando il dominio del destinatario è uno dei [Domini accettati](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)dell'organizzazione). In alternativa, se il dominio da: indirizzo fa parte della stessa organizzazione.
+Conosciuto anche come spoofing self-to-self, questo si verifica quando il dominio nell'indirizzo from: è lo stesso del dominio destinatario (quando il dominio del destinatario è uno dei [domini accettati](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)dell'organizzazione). in alternativa, quando il dominio nell'indirizzo da: fa parte della stessa organizzazione.
   
-Ad esempio, le operazioni seguenti ha mittente e destinatario dello stesso dominio (contoso.com). Vengono inseriti spazi nell'indirizzo di posta elettronica per impedire la raccolta spambot in questa pagina):
+Ad esempio, il mittente e il destinatario seguenti sono presenti nello stesso dominio (contoso.com). Gli spazi vengono inseriti nell'indirizzo di posta elettronica per impedire la raccolta di spambot in questa pagina):
   
-Da: mittente @ contoso.com
+From: sender @ contoso.com
   
-A: destinatario @ contoso.com
+A: Recipient @ contoso.com
   
-Le operazioni seguenti con i domini di mittente e destinatario allineamento con il dominio dell'organizzazione (fabrikam.com):
+Di seguito sono riportati i domini del mittente e del destinatario che si allineano al dominio dell'organizzazione (fabrikam.com):
   
-Da: mittente @ foo.fabrikam.com
+From: sender @ foo.fabrikam.com
   
-A: destinatario @ bar.fabrikam.com
+A: Recipient @ bar.fabrikam.com
   
-Domini di mittente e destinatario seguenti sono diversi (microsoft.com e bing.com), ma appartengono alla stessa organizzazione (vale a dire, entrambi sono parte di domini accettati dell'organizzazione):
+I domini del mittente e del destinatario seguenti sono diversi (microsoft.com e bing.com), ma appartengono alla stessa organizzazione (entrambi fanno parte dei domini accettati dell'organizzazione):
   
-Da: mittente @ microsoft.com
+From: sender @ microsoft.com
   
-A: destinatario @ bing.com
+A: Recipient @ bing.com
   
-Messaggi che non superano lo spoofing tra organizzazione contengono i valori seguenti nelle intestazioni:
+I messaggi che non riescono a eseguire lo spoofing intra-org contengono i valori seguenti nelle intestazioni:
   
-X-Forefront-Antispam-Report:... CAT:SPM/HSPM/PHSH;... SFTY:9.11
+X-Forefront-antispam-report:... CAT: SPM/HSPM/PHSH;... SFTY: 9.11
   
-Il gatto è la categoria del messaggio e in genere è contrassegnato come SPM (spam), ma occasionalmente potrebbero essere HSPM (spam confidenza elevata) o per attività di PHISHING (anti-phishing) seconda gli altri tipi di modelli di generato nel messaggio.
+Il gatto è la categoria del messaggio ed è normalmente contrassegnato come SPM (posta indesiderata), ma occasionalmente può essere HSPM (protezione da posta indesiderata elevata) o phishing (phishing) a seconda di quali altri tipi di modelli si verificano nel messaggio.
   
-Il SFTY è il livello di sicurezza del messaggio, la prima cifra (9) indica che il messaggio è phishing e secondo insieme di cifre dopo il punto (11) che significa che è lo spoofing dell'organizzazione tra organizzazioni.
+SFTY è il livello di sicurezza del messaggio, la prima cifra (9) indica che il messaggio è phishing e il secondo set di cifre dopo il punto (11) indica che si tratta di una spoofing tra organizzazioni.
   
-Non esiste alcun codice motivo specifico per l'autenticazione composito per intra-org lo spoofing, che verrà identificati più avanti in 2018 (timeline non ancora definito).
+Non esiste un codice motivo specifico per l'autenticazione composita per lo spoofing tra organizzazioni, che verrà stampato in un secondo momento in 2018 (Timeline non ancora definito).
   
- **Spoofing di altri domini**
+ **Spoofing tra domini**
   
-Questo problema si verifica quando il dominio di invio nella From: l'indirizzo è un dominio esterno all'organizzazione di destinazione. Messaggi di autenticazione composito esito negativo a causa di altri domini spoofing possono includere i seguenti valori nelle intestazioni:
+Questo problema si verifica quando il dominio di invio nell'indirizzo da: è un dominio esterno all'organizzazione di ricezione. I messaggi che non riescono ad eseguire l'autenticazione composita a causa dello spoofing tra domini contengono i seguenti valori nelle intestazioni:
   
-Risultati di autenticazione:... compauth = fail motivo = 000/001
+Autenticazione-risultati:... compauth = Fail Reason = 000/001
   
-X-Forefront-Antispam-Report:... CAT:SPOOF;... SFTY:9.22
+X-Forefront-antispam-report:... CAT: SPOOFING;... SFTY: 9.22
   
-In entrambi i casi, il suggerimento sicurezza rosso seguente viene indicato nel messaggio o equivalente personalizzato per la lingua della cassetta postale del destinatario:
+In entrambi i casi, il seguente suggerimento per la sicurezza rossa viene contrassegnato nel messaggio oppure un equivalente personalizzato per la lingua della cassetta postale del destinatario:
   
-![Suggerimento sicurezza rosso - rilevamento truffe di false](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Punta di sicurezza rossa-rilevamento frodi](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
   
-È solo esaminando From: indirizzi e sapere che cos'è la posta elettronica del destinatario o dal controllo intestazioni del messaggio di posta elettronica, che è possibile distinguere tra organizzazione e tra domini spoofing.
+È solo guardando l'indirizzo da: e sapendo che cosa è la posta elettronica del destinatario, o ispezionando le intestazioni di posta elettronica, che è possibile distinguere tra lo spoofing tra organizzazioni intra-org e Cross-Domain.
   
-## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Come i clienti di Office 365 possono prepararsi per la protezione anti-spoofing nuova
+## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>In che modo i clienti di Office 365 possono prepararsi per la nuova protezione anti-spoofing
 
 ### <a name="information-for-administrators"></a>Informazioni per gli amministratori
 
-Amministratore di un'organizzazione in Office 365, esistono fondamentali è necessario tenere conto delle informazioni.
+In qualità di amministratore di un'organizzazione di Office 365, è necessario tenere presenti diverse informazioni importanti.
   
-### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Informazioni sui motivi per cui l'autenticazione di posta elettronica non è sempre sufficienti per arrestare lo spoofing
+### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Informazioni sul motivo per cui l'autenticazione della posta elettronica non è sempre sufficiente per arrestare lo spoofing
 
-La nuova protezione anti-spoofing si basa sull'autenticazione di posta elettronica (SPF, DKIM e DMARC) non contrassegnare un messaggio come lo spoofing. Un esempio comune è quando un dominio di invio pubblicati i record SPF. Se nessun record SPF o queste sono state impostate in modo non corretto, di un messaggio verrà contrassegnato come spoofing a meno che non dispone di Microsoft Business intelligence di back-end che informa che il messaggio è valido.
+La nuova protezione anti-spoofing si basa sull'autenticazione della posta elettronica (SPF, DKIM e DMARC) per non contrassegnare un messaggio come spoofing. Un esempio comune è il momento in cui un dominio di invio non ha mai pubblicato i record SPF. Se non sono presenti record SPF o non sono stati configurati correttamente, un messaggio inviato verrà contrassegnato come falsificato, a meno che Microsoft non disponga di informazioni di back-end che dicono che il messaggio è legittimo.
   
-Ad esempio, prima di anti-spoofing da distribuire, un messaggio può essere simili seguenti con nessun record SPF, nessun record DKIM e nessun record DMARC: 
+Ad esempio, prima di eseguire la distribuzione di anti-spoofing, un messaggio potrebbe essere simile al seguente senza record SPF, nessun record di DKIM e nessun record di DMARC: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -174,7 +159,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Dopo lo spoofing anti, se si dispone di Office 365 Enterprise E5, EOP o degli strumenti di analisi, viene indicato il valore compauth:
+Dopo aver eseguito l'anti-spoofing, se si dispone di Office 365 Enterprise E5, EOP o ATP, il valore compauth viene contrassegnato come indicato di seguito:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -186,7 +171,7 @@ To: receiver @ contoso.com
 
 ```
 
-Se example.com fissi questo dall'impostazione di un record SPF ma non un record DKIM, passare autenticazione composito in quanto il dominio che passato SPF allineato al dominio in From: indirizzo: 
+Se example.com ha risolto questo valore impostando un record SPF ma non un record DKIM, l'autenticazione composita verrebbe passata perché il dominio che ha superato SPF è stato allineato al dominio nell'indirizzo from: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
@@ -197,7 +182,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-In alternativa, se è configurato un record DKIM, ma non un record SPF, autenticazione composito inoltre passare perché il dominio della firma DKIM passare allineato al dominio in From: indirizzo: 
+In alternativa, se si configura un record di DKIM ma non un record SPF, l'autenticazione composita verrà passata anche perché il dominio nella firma di DKIM che è stato passato allineato al dominio nell'indirizzo from:: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -209,7 +194,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Un specificati possono inoltre impostare SPF e DKIM e firmare il messaggio con i propri dominio, tuttavia, specificare un dominio diverso da: indirizzo. SPF né DKIM richiede il dominio per allineare il dominio nel From: indirizzo, in modo che a meno che non example.com pubblicati i record DMARC, questo non verrà contrassegnato come un spoofing utilizzando DMARC: 
+Tuttavia, un truffatore può anche configurare SPF e DKIM e firmare il messaggio con il proprio dominio, ma specificare un dominio diverso nell'indirizzo from:. Né SPF né DKIM richiede che il dominio sia allineato al dominio nell'indirizzo from:, quindi, a meno che example.com abbia pubblicato DMARC Records, questa operazione non verrebbe contrassegnata come spoof tramite DMARC: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
@@ -220,11 +205,11 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Nel client di posta elettronica (Outlook, Outlook sul web o qualsiasi altro client di posta elettronica), solo da: dominio viene visualizzato, non al dominio in SPF o DKIM e che può indurre l'utente a ritenere example.com cui proviene il messaggio, ma effettivamente proviene da maliciousDomain.com .
+Nel client di posta elettronica (Outlook, Outlook sul Web o in qualsiasi altro client di posta elettronica), viene visualizzato solo il dominio da:, non il dominio nell'SPF o DKIM, e questo può indurre l'utente a pensare che il messaggio provenisse da example.com, ma che in realtà provenisse da maliciousDomain.com .
   
-![Messaggio autenticato ma da: dominio non esegue l'allineamento con quali passati SPF o DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![Messaggio autenticato ma da: il dominio non è allineato con quello che ha superato SPF o DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
   
-Per questo motivo, è necessario Office 365 al dominio in From: indirizzo risulti allineato con il dominio della firma SPF o DKIM e se non, contiene alcuni altri segnali interni che indica che il messaggio è valido. In caso contrario, il messaggio sarà fail compauth. 
+Per questo motivo, Office 365 richiede che il dominio nell'indirizzo from: sia allineato al dominio nella firma SPF o DKIM e, in caso contrario, contenga alcuni altri segnali interni che indicano che il messaggio è legittimo. In caso contrario, il messaggio è un errore compauth. 
   
 ```
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
@@ -236,41 +221,41 @@ From: sender@contoso.com
 To: someone@example.com
 ```
 
-In questo modo, lo spoofing anti Office 365 protegge contro domini senza autenticazione e contro domini che ha configurato l'autenticazione ma mancata corrispondenza rispetto al dominio in From: indirizzo come in quello che l'utente visualizza e ritiene che sia il mittente del messaggio. Ciò è valido sia dei domini esterni all'organizzazione, nonché domini all'interno dell'organizzazione.
+Pertanto, Office 365 anti-spoofing protegge i domini senza autenticazione e contro i domini che configurano l'autenticazione ma non corrispondono al dominio nell'indirizzo from: come quello che l'utente vede e ritiene essere il mittente del messaggio. Questo è vero per entrambi i domini esterni all'organizzazione, nonché per i domini all'interno dell'organizzazione.
   
-Se si riceve un messaggio che non è riuscita composito autenticazione e viene contrassegnato come spoofing, anche se il messaggio passato SPF e DKIM, è pertanto perché il dominio che passato SPF e DKIM non vengono allineati con il dominio nella From: indirizzo.
+Pertanto, se si riceve un messaggio che non ha avuto esito positivo sull'autenticazione composita ed è contrassegnato come contraffatto, anche se il messaggio ha superato SPF e DKIM, è perché il dominio che ha superato SPF e DKIM non è allineato al dominio nell'indirizzo from:.
   
-### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Informazioni sulle modifiche in modo spoofing messaggi di posta elettronica vengono considerati
+### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Informazioni sulle modifiche apportate alla modalità di trattamento dei messaggi falsificati
 
-Attualmente, per tutte le organizzazioni di Office 365 - degli strumenti di analisi e non-degli strumenti di analisi - i messaggi che non superano i DMARC con un criterio di rifiuto o quarantena sono contrassegnati come posta indesiderata e in genere richiedere l'azione posta indesiderata con confidenza elevata, in alcuni casi l'azione posta indesiderata regolare (a seconda se altre posta indesiderata le regole prima identificano come posta indesiderata). Rilevamenti di spoofing intra org eseguire l'azione posta indesiderata regolari. Questo problema non è necessario abilitare né può essere disattivata.
+Attualmente, per tutte le organizzazioni di Office 365-ATP e non-ATP-messages che non riescono DMARC con un criterio di rifiuto o quarantena sono contrassegnati come posta indesiderata e di solito prendere l'azione di posta indesiderata ad alta sicurezza, o talvolta la normale azione di posta indesiderata (a seconda se altro spam le regole lo identificano come posta indesiderata. I rilevamenti di spoofing intra-org eseguono la normale azione di posta indesiderata. Non è necessario che questo comportamento sia abilitato o che sia disabilitato.
   
-Tuttavia, per i messaggi di spoofing tra domini, prima di questa modifica verrebbero tramite controlli regolari posta indesiderata, per attività di phishing e malware e se altre parti del filtro li identificato come sospetti, sarebbe contrassegnarli come posta indesiderata, per attività di phishing o malware rispettivamente. Con la nuova protezione spoofing tra domini, tutti i messaggi che non possono essere autenticati, per impostazione predefinita, eseguirà l'azione definito in Anti-phishing \> criteri anti-spoofing. Se non definita, verrà spostato in una cartella posta indesiderata degli utenti. In alcuni casi, i messaggi sospetti più disporrà inoltre la punta di sicurezza rosso aggiunta al messaggio.
+Tuttavia, per i messaggi di spoofing tra domini, prima di questa modifica passa attraverso la posta indesiderata, phishing e i controlli antimalware, e se le altre parti del filtro le identificano come sospette, le contrassegnerà rispettivamente come posta indesiderata, phishing o malware. Con la nuova protezione da spoofing tra domini, tutti i messaggi che non possono essere autenticati, per impostazione predefinita, eseguono l'azione definita nel criterio di anti \> -spoofing anti-phishing. Se uno non è definito, verrà spostato in una cartella posta inDesiderata degli utenti. In alcuni casi, i messaggi più sospetti avranno anche il suggerimento per la sicurezza rossa aggiunto al messaggio.
   
-Ciò potrebbe causare alcuni messaggi che sono state precedentemente contrassegnati come posta indesiderata ancora Guida contrassegnati come posta indesiderata ma avranno anche un suggerimento sicurezza rosso; in altri casi, i messaggi che sono state precedentemente contrassegnati come posta non indesiderata avvierà venga contrassegnato come posta indesiderata (CAT:SPOOF) con un suggerimento sicurezza rosso aggiunto. In altri casi ancora, i clienti che sono stati spostato tutti posta indesiderata e per attività di phishing in quarantena ora visualizzati entrata nella cartella posta indesiderata (questo problema può essere modificato, vedere [Modifica delle impostazioni di protezione anti-spoofing](#changing-your-anti-spoofing-settings)).
+Questo può comportare che alcuni messaggi che in precedenza erano contrassegnati come posta indesiderata continuano a essere contrassegnati come posta indesiderata ma avranno ora anche un suggerimento per la sicurezza rossa; in altri casi, i messaggi che sono stati precedentemente contrassegnati come non di posta indesiderata inizieranno a essere contrassegnati come posta indesiderata (CAT: SPOOF) con un suggerimento per la sicurezza rosso aggiunto. In altri casi, i clienti che stavano spostando tutti i messaggi di posta indesiderata e phishing alla quarantena, potrebbero ora visualizzarli nella cartella posta inDesiderata (questo comportamento può essere modificato, vedere [modifica delle impostazioni di anti-spoofing](#changing-your-anti-spoofing-settings)).
   
-Sono disponibili diversi modi diversi che un messaggio può essere eseguito lo spoofing (vedere [differenziazione tra diversi tipi di spoofing](#differentiating-between-different-types-of-spoofing) più indietro in questo articolo), ma a partire da marzo 2018 il modo in cui che Office 365 considera questi messaggi non è ancora unificato. Nella tabella seguente è riportato un riepilogo rapido, con protezione spoofing domini viene di nuovo comportamento: 
+Sono disponibili diversi modi in cui un messaggio può essere falsificato (vedere [differenziazione tra diversi tipi di spoofing](#differentiating-between-different-types-of-spoofing) precedenti in questo articolo) ma a marzo 2018 il modo in cui Office 365 tratta questi messaggi non è ancora stato unificato. La tabella seguente è un breve riepilogo, con una protezione dello spoofing tra domini che è un nuovo comportamento: 
   
-|**Tipo di spoofing**|**Categoria**|**Suggerimento sicurezza aggiunto?**|**Si applica a**|
+|**Tipo di spoofing**|**Categoria**|**Suggerimento sulla sicurezza aggiunto?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|
-|Fail DMARC (quarantena o rifiuto)  <br/> |HSPM (predefinito), potrebbe anche essere SPM o PHSH  <br/> |No (non ancora)  <br/> |Tutti i clienti di Office 365, Outlook.com  <br/> |
-|Self-self  <br/> |SPM  <br/> |Sì  <br/> |Tutte le organizzazioni di Office 365, Outlook.com  <br/> |
-|Altri domini  <br/> |SPOOFING  <br/> |Sì  <br/> |Clienti di Office 365 avanzate Threat Protection ed E5  <br/> |
+|DMARC Fail (Quarantine o Reject)  <br/> |HSPM (impostazione predefinita), può anche essere SPM o PHSH  <br/> |No (non ancora)  <br/> |Tutti i clienti di Office 365, Outlook.com  <br/> |
+|Self-to-self  <br/> |SPM  <br/> |Sì  <br/> |Tutte le organizzazioni di Office 365, Outlook.com  <br/> |
+|Cross-Domain  <br/> |SPOOF  <br/> |Sì  <br/> |Clienti di Office 365 Advanced Threat Protection e E5  <br/> |
    
-### <a name="changing-your-anti-spoofing-settings"></a>Modifica delle impostazioni di protezione anti-spoofing
+### <a name="changing-your-anti-spoofing-settings"></a>Modifica delle impostazioni di protezione da spoofing
 
-Per creare o aggiornare le impostazioni di protezione anti-spoofing (domini), accedere a protezione Anti-phishing \> Anti-spoofing impostazioni in gestione rischio \> scheda Criteri di sicurezza &amp; centro conformità. Se non si sono mai stata creata tutte le impostazioni di protezione anti-phishing, è necessario creare uno:
+Per creare o aggiornare le impostazioni di anti-spoofing (Cross-Domain), passare alle impostazioni anti-spoofing \> anti-phishing nella scheda criteri di gestione \> dei pericoli nel centro sicurezza &amp; e conformità. Se non sono state create impostazioni anti-phishing, sarà necessario crearne una:
   
-![Antiphishing - creare un nuovo criterio](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Antiphishing: creare un nuovo criterio](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
   
-Se è già stato creato uno, è possibile selezionare per modificarla:
+Se ne è già stato creato uno, è possibile selezionarlo per modificarlo:
   
-![Antiphishing - Modifica criterio esistente](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Antiphishing-modifica criteri esistenti](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-Selezionare il criterio appena creato, eseguire le procedure descritte come descritto in [ulteriori informazioni sulla Business Intelligence di spoofing.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
+Selezionare il criterio appena creato e procedere con i passaggi descritti in [Learn more about spoofing Intelligence.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
   
-![Abilitare o disabilitare antispoofing](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Abilitazione o disabilitazione dell'antispoofing](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
-![Attivare o disattivare i suggerimenti di sicurezza antispoofing](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Abilitare o disabilitare i suggerimenti per la sicurezza antispoofing](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
   
 Per creare un nuovo criterio tramite PowerShell: 
   
@@ -288,28 +273,28 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
 ```
 
-È quindi possibile modificare i parametri dei criteri anti-phishing tramite PowerShell, dopo la documentazione [all'Insieme AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). È possibile specificare il $name come parametro:
+È possibile modificare i parametri dei criteri di anti-phishing tramite PowerShell, seguendo la documentazione in [set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). È possibile specificare il $name come parametro:
   
 ```
 Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 ```
 
-Più avanti in 2018, anziché la necessità di creare un criterio predefinito, ne verrà creato automaticamente l'ambito a tutti i destinatari dell'organizzazione in modo che non è necessario specificare manualmente (nelle figure che sono soggetti a modifiche prima dell'implementazione finale).
+Più avanti in 2018, invece di dover creare un criterio predefinito, verrà creato un ambito per tutti i destinatari dell'organizzazione, in modo che non sia necessario specificarlo manualmente (gli screenshot riportati di seguito sono soggetti a modifiche prima dell'implementazione finale).
   
-![Criterio predefinito per Antiphishing](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Criterio predefinito per antiphishing](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
   
-A differenza di un criterio che si crea, è possibile eliminare il criterio predefinito, modificare la priorità o scegliere quali utenti, domini o gruppi come ambito per.
+A differenza di un criterio creato, non è possibile eliminare il criterio predefinito, modificarne la priorità oppure scegliere gli utenti, i domini o i gruppi a cui si desidera applicare l'ambito.
   
-![Dettagli relativi al criterio predefinito antiphishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Dettagli dei criteri predefiniti antiphishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Per impostare i motivi di sicurezza predefinito tramite PowerShell:
+Per configurare la protezione predefinita tramite PowerShell:
   
 ```
 $defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
-È consigliabile disabilitare la protezione anti-spoofing solo se si dispone di un altro server di posta elettronica o server davanti a Office 365 (vedere legittimi scenari per disabilitare lo spoofing anti per ulteriori informazioni). 
+È consigliabile disabilitare la protezione anti-spoofing solo se si dispone di un altro server di posta o di server di fronte a Office 365 (vedere gli scenari legittimi per disabilitare l'anti-spoofing per ulteriori dettagli). 
   
 ```
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
@@ -317,31 +302,31 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 
 ```
 > [!IMPORTANT]
-> Al primo hop del percorso di posta elettronica è Office 365, se si desidera ottenere i messaggi di posta elettronica legittimi troppi contrassegnati come spoofing, deve innanzitutto impostare i mittenti che possono inviare posta elettronica falsificato al dominio (vedere la sezione "gestione dei mittenti legittimi che inviano u * messaggio di posta elettronica nauthenticated"* ). Se si desidera ottenere comunque troppi falsi positivi (ad esempio, legittimo i messaggi contrassegnati come spoofing), non è consigliabile disabilitare completamente la protezione anti-spoofing. In realtà, è consigliabile scegliendo base invece di protezione elevata.                    È preferibile utilizzare tramite falsi positivi rispetto alla esporre un'organizzazione per la posta elettronica falsificato che potrebbe finire imporre costi significativamente superiori a lungo termine.
+> Se il primo hop nel percorso di posta elettronica è Office 365 e si ricevono troppi messaggi di posta elettronica legittimi contrassegnati come spoof, è consigliabile configurare i mittenti autorizzati a inviare messaggi di posta elettronica falsificati al proprio dominio (vedere la sezione *"gestione dei mittenti legittimi che stanno inviando u posta elettronica di nauthenticated "* ). Se si ricevono ancora troppi falsi positivi (ad esempio, messaggi legittimi contrassegnati come spoof), non è consigliabile disabilitare completamente la protezione anti-spoofing. Si consiglia invece di scegliere Basic anziché High Protection.                    È preferibile utilizzare i falsi positivi piuttosto che esporre la propria organizzazione a messaggi di posta elettronica falsificati che potrebbero imporre costi significativamente più alti a lungo termine.
 
-### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gestione dei mittenti legittimi l'invio di posta elettronica non autenticato
+### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gestione dei mittenti legittimi che inviano messaggi di posta elettronica non autenticati
 
-Office 365 si tiene traccia della che invia messaggio di posta elettronica non autenticato nell'organizzazione. Se il servizio ritiene che il mittente non è valido, verrà contrassegnato come un errore *compauth* . Verrà essere classificata come SPOOFING anche se tutto dipende i criteri anti-spoofing che è stato applicato al messaggio. 
+Office 365 tiene conto di chi sta inviando messaggi di posta elettronica non autenticati alla propria organizzazione. Se il servizio pensa che il mittente non sia legittimo, lo contrassegnerà come un errore *compauth* . Questo verrà classificato come SPOOF, anche se dipende dal criterio di anti-spoofing applicato al messaggio. 
   
-Tuttavia, come amministratore, è possibile specificare i mittenti sono consentiti inviare la posta elettronica falsificato, ignorare la decisione di Office 365.
+Tuttavia, come amministratore, è possibile specificare quali mittenti sono autorizzati a inviare messaggi di posta elettronica falsificati, ignorando la decisione di Office 365.
   
-**Metodo 1 - se l'organizzazione possiede il dominio, impostato l'autenticazione di posta elettronica**
+**Metodo 1: se l'organizzazione è proprietaria del dominio, configurare l'autenticazione della posta elettronica**
   
-Questo metodo può essere utilizzato per risolvere lo spoofing interne all'organizzazione e tra domini spoofing nei casi in cui proprietario o interagire con più tenant. Consente inoltre di risolvere lo spoofing tra domini in cui inviano a altri clienti in Office 365, nonché le terze parti che sono ospitate in altri provider.
+Questo metodo può essere utilizzato per risolvere lo spoofing tra organizzazioni e lo spoofing tra domini nei casi in cui si è proprietari o si interagisce con più tenant. Consente inoltre di risolvere lo spoofing tra domini in cui si inviano ad altri clienti all'interno di Office 365 e anche di terze parti ospitate in altri provider.
   
-Per ulteriori informazioni, vedere [i clienti di Office 365](#customers-of-office-365). 
+Per ulteriori informazioni, vedere [clienti di Office 365](#customers-of-office-365). 
  
-**Metodo 2 - intelligence spoofing utilizzare per configurare consentiti mittenti di posta elettronica non autenticato**
+**Metodo 2: utilizzare l'intelligence spoof per configurare i mittenti consentiti di posta elettronica non autenticata**
   
-È inoltre possibile utilizzare [Intelligence spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) per consentire i mittenti per trasmettere i messaggi non autenticati nell'organizzazione. 
+È inoltre possibile utilizzare l' [Intelligence spoof](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) per consentire ai mittenti di trasmettere messaggi non autenticati alla propria organizzazione. 
   
-Per i domini esterni, l'utente spoofing è il dominio nell'indirizzo del mittente, mentre l'infrastruttura di invio è l'indirizzo IP invio (suddivisa /24 intervalli CIDR), o nel dominio dell'organizzazione del record PTR (nella cattura di schermata seguente, l'indirizzo IP del mittente può da cui il record PTR è outbound.mail.protection.outlook.com 131.107.18.4 e viene visualizzato come outlook.com per l'infrastruttura di invio).
+Per i domini esterni, l'utente falsificato è il dominio nell'indirizzo mittente, mentre l'infrastruttura di invio è l'indirizzo IP di invio (suddiviso in/24 intervalli CIDR) o il dominio dell'organizzazione del record PTR (nella schermata seguente, l'IP di invio potrebbe essere 131.107.18.4 il cui record PTR è outbound.mail.protection.outlook.com e questo verrebbe visualizzato come outlook.com per l'infrastruttura di invio.
   
-Per consentire a questo mittente di inviare la posta elettronica non autenticato, modificare **No** , **Yes**.
+Per consentire al mittente di inviare messaggi di posta elettronica non autenticati, modificare il **numero** di un **Sì**.
   
-![Impostazione di antispoofing mittenti consentiti](media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Configurazione dei mittenti consentiti per l'antispoofing](media/d4334921-d820-4334-8217-788279701e94.jpg)
   
-È inoltre possibile utilizzare PowerShell per consentire mittente specifico lo spoofing del dominio: 
+È inoltre possibile utilizzare PowerShell per consentire a un mittente specifico di falsificare il dominio: 
   
 ```
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
@@ -351,13 +336,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Guida mittenti spoofing tramite Powershell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Ottenere mittenti contraffatti tramite PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
   
-Nella figura precedente, le interruzioni di riga aggiuntive sono state aggiunte per effettuare questa cattura di schermata basse, ma in realtà tutti i valori verrebbero visualizzate in un'unica riga.
+Nell'immagine precedente sono state aggiunte altre interruzioni di riga per adattare la schermatura, ma in realtà tutti i valori verrebbero visualizzati su una singola riga.
   
-Modificare il file e individuare la riga corrispondente a outlook.com e bing.com e modificare la voce AllowedToSpoof da No a Sì:
+Modificare il file e cercare la riga corrispondente a outlook.com e bing.com e modificare la voce AllowedToSpoof da no a Yes:
   
-![Consenti spoofing impostazione su Sì tramite Powershell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Impostazione di spoofing Consenti Sì tramite PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
   
 Salvare il file e quindi eseguire: 
   
@@ -366,105 +351,105 @@ $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
 Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
 ```
 
-In questo modo ora bing.com per l'invio della posta elettronica non autenticata da \*. outlook.com.
+Ciò consentirà ora a bing.com di inviare messaggi di posta \*elettronica non autenticati da. Outlook.com.
 
 **Metodo 3: creare una voce Consenti per la coppia mittente/destinatario**
   
-È anche possibile scegliere di ignorare tutti i filtri per un determinato mittente. Per ulteriori informazioni, vedere [procedura aggiungere in modo sicuro un mittente all'elenco Consenti in Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
+È inoltre possibile scegliere di ignorare tutti i filtri di posta indesiderata per un mittente specifico. Per ulteriori informazioni, vedere [come aggiungere un mittente in modo sicuro a un elenco di indirizzi consentiti in Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
   
-Se si utilizza questo metodo, non verrà eseguita la posta indesiderata e alcuni dei filtri per attività di phishing, ma non il filtro di malware.
+Se si utilizza questo metodo, si ignorerà la posta indesiderata e parte del filtro phishing, ma non il filtro antimalware.
   
-**Metodo 4 - contattare il mittente e chiedere di impostare l'autenticazione di posta elettronica**
+**Metodo 4-contattare il mittente e chiedere loro di configurare l'autenticazione della posta elettronica**
   
-A causa del problema di posta indesiderata e phishing, è consigliabile tutti i mittenti, impostare l'autenticazione di posta elettronica. Se si conosce un amministratore del dominio di invio, contattare li e richiedere che vengono impostati i record di autenticazione di posta elettronica in modo che non è necessario aggiungere le sostituzioni. Per ulteriori informazioni, vedere [gli amministratori dei domini che vengono non i clienti di Office 365](#administrators-of-domains-that-are-not-office-365-customers)"più avanti in questo articolo. 
+A causa del problema di posta indesiderata e phishing, Microsoft consiglia a tutti i mittenti di configurare l'autenticazione della posta elettronica. Se si conosce un amministratore del dominio di invio, contattarlo e richiedere che configurano i record di autenticazione della posta elettronica in modo che non sia necessario aggiungere eventuali sostituzioni. Per ulteriori informazioni, vedere [amministratori dei domini che non sono clienti di Office 365](#administrators-of-domains-that-are-not-office-365-customers)"più avanti in questo articolo. 
   
-Sebbene possa risultare difficile in innanzitutto ottenere l'invio di domini per l'autenticazione, nel tempo, come più filtri di posta elettronica avviare junking o il rifiuto anche loro posta elettronica, determinerà amministratori di configurare i record DNS appropriati per garantire il recapito migliore.
+Anche se in un primo momento può essere difficile ottenere l'invio di domini per l'autenticazione, nel corso del tempo, poiché sempre più filtri per la posta elettronica avviano la posta indesiderata o addirittura rifiutano il proprio indirizzo di posta elettronica, verranno configurati i record corretti per garantire un miglior recapito.
   
-### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Visualizzazione di rapporti di quanti messaggi sono stati contrassegnati come spoofing
+### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Visualizzazione di report su quanti messaggi sono stati contrassegnati come falsificati
 
-Dopo aver abilitato i criteri anti-spoofing, è possibile utilizzare Intelligence minaccia per i numeri di risolvere il numero di messaggi contrassegnato come per attività di phishing. A tale scopo, che influiscono sulla sicurezza &amp; centro conformità (SCC) in Threat Management \> Explorer, impostare la visualizzazione per attività di phishing e gruppo dal dominio mittente o della protezione:
+Dopo aver abilitato il criterio di spoofing, è possibile utilizzare l'intelligence di minacce per ottenere i numeri relativi al numero di messaggi contrassegnati come phishing. A tale scopo, accedere al centro sicurezza &amp; e conformità in \> Esplora minacce, impostare la visualizzazione phishing e il dominio del mittente o di protezione:
   
-![Visualizzare il numero di messaggi contrassegnato come per attività di phishing](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Visualizzazione del numero di messaggi contrassegnati come phishing](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-Interagire con i diversi tipi di report per visualizzare il numero sono stato contrassegnato come phishing, inclusi i messaggi contrassegnati come SPOOFING. Per ulteriori informazioni, vedere [Introduzione a Business Intelligence di Office 365 rischio](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
+È possibile interagire con i diversi rapporti per vedere quanti sono stati contrassegnati come phishing, inclusi i messaggi contrassegnati come SPOOF. Per ulteriori informazioni, vedere [Introduzione a Office 365 Threat Intelligence](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
   
-Non è ancora possibile dividere fuori che i messaggi contrassegnati a causa di spoofing e altri tipi di phishing (anti-phishing generale, dominio o utente rappresentazione e così via). Tuttavia, più avanti in 2018, sarà possibile eseguire questa operazione tramite la sicurezza &amp; centro conformità. Dopo l'installazione, è possibile utilizzare questo report come punto di partenza per identificare i domini di invio che potrebbero essere legittimi vengono contrassegnati come spoofing a causa di errore di autenticazione.
+Non è ancora possibile dividere quali messaggi sono stati contrassegnati a causa dello spoofing o di altri tipi di phishing (generale, rappresentazione del dominio o dell'utente e così via). Tuttavia, più avanti in 2018, sarà possibile eseguire questa operazione tramite il Centro sicurezza &amp; e conformità. Dopo averlo fatto, è possibile utilizzare questo rapporto come punto di partenza per identificare i domini di invio che possono essere legittimi contrassegnati come spoof a causa di un'autenticazione non riuscita.
   
-Nella schermata seguente è una proposta di come i dati avrà un aspetto, ma possono cambiare quando rilasciato:
+La schermata seguente è una proposta per la modalità di visualizzazione dei dati, ma può variare quando viene rilasciata:
   
-![La visualizzazione dei report di phishing dal tipo di rilevamento](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Visualizzazione di report di phishing per tipo di rilevamento](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
   
-Per non di strumenti di analisi e di clienti E5, questi rapporti saranno disponibili più avanti in 2018 in rapporti di rischio protezione stato indica, ma verranno posticipati di almeno 24 ore. In questa pagina verrà aggiornata come sono integrate in sicurezza &amp; centro conformità.
+Per i clienti non ATP e E5, questi rapporti saranno disponibili in un secondo momento in 2018 sotto i rapporti di stato di protezione dalle minacce (TPS), ma saranno ritardati di almeno 24 ore. Questa pagina verrà aggiornata perché è integrata nel centro sicurezza &amp; e conformità.
   
-### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Prevedere il numero di messaggi verrà contrassegnato come spoofing
+### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>PreDizione del numero di messaggi che verranno contrassegnati come spoof
 
-Più avanti in 2018, una volta Office 365 consente di aggiornare le impostazioni per consentono di disattivare l'applicazione della protezione anti-spoofing o su con l'applicazione di base o avanzata, si verrà assegnato al ruolo la possibilità di visualizzare in che modo cambieranno disposizione del messaggio in varie impostazioni. Vale a dire, se lo spoofing anti è disattivato, sarà in grado di visualizzare il numero di messaggi verrà rilevato come spoofing se si attiva a Basic. In alternativa, se si tratta di base, sarà possibile visualizzare il numero di messaggi più verrà rilevato come spoofing se si attiva su un valore elevato.
+Più avanti in 2018, una volta che Office 365 aggiorna le impostazioni in modo che l'applicazione di antispoofing venga disAttivata o attivata con l'applicazione di base o elevata, verrà data la possibilità di visualizzare la modalità di modifica della disposizione dei messaggi nelle varie impostazioni. In altre informazioni, se l'anti-spoofing è disattivato, sarà possibile visualizzare il numero di messaggi che verranno rilevati come spoof se si attiva la funzionalità di base. in alternativa, se si tratta di base, sarà possibile visualizzare il numero di messaggi che verranno rilevati come spoof se lo si attiva in alto.
   
-Questa funzionalità è attualmente in fase di sviluppo. Quando si definiscono ulteriori dettagli, in questa pagina verrà aggiornata con schermate del centro conformità e sicurezza e con esempi di PowerShell.
+Questa funzionalità è attualmente in fase di sviluppo. Man mano che vengono definiti ulteriori dettagli, questa pagina verrà aggiornata sia con schermate del Centro sicurezza e conformità, sia con esempi di PowerShell.
   
-!["Se" report per l'abilitazione antispoofing](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Report "che cosa succede se" per abilitare l'antispoofing](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
   
-![Esperienza possibile per consentire a un mittente spoofing](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![Possibile UX per consentire a un mittente falsificato](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Informazioni sulle modalità di posta indesiderata, phishing e phishing avanzate vengono combinati i rilevamenti di
+### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Informazioni sul modo in cui vengono combinati posta indesiderata, phishing e rilevamento avanzato di phishing
 
-Le organizzazioni che utilizzano Exchange Online, con o senza degli strumenti di analisi, è possono specificare le azioni da eseguire quando il servizio consente di identificare i messaggi come malware, posta indesiderata, posta indesiderata confidenza elevata, phishing e blocco. Con i criteri di Anti-phishing ATP per i clienti degli strumenti di analisi, i criteri di Anti-phishing per i clienti EOP e il fatto che un messaggio potrebbe raggiunto più tipi di rilevamento (ad esempio malware, phishing e rappresentazione dell'utente), potrebbe essere alcuni confusione in merito agli che criterio verrà applicato. 
+Le organizzazioni che utilizzano Exchange Online, con o senza ATP, possono specificare le azioni da intraprendere quando il servizio identifica i messaggi come malware, posta indesiderata, posta indesiderata elevata, phishing e massa. Con i criteri di anti-phishing ATP per i clienti ATP e i criteri di anti-phishing per i clienti di EOP e il fatto che un messaggio possa colpire più tipi di rilevamento (ad esempio, malware, phishing e User-Impersonation), può verificarsi una certa confusione su quale si applica il criterio. 
   
-In generale, il criterio applicato a un messaggio viene identificato nell'intestazione X-Forefront-Antispam-Report nella proprietà CAT (categoria). 
+In generale, il criterio applicato a un messaggio viene identificato nell'intestazione X-Forefront-antispam-report nella proprietà CAT (categoria). 
   
-|**Priorità**|**Criterio**|**Categoria**|**Dove gestite?**|**Si applica a**|
+|**Priorità**|**Criterio**|**Categoria**|**Dove gestito?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri antimalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|3   <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|4   <br/> |Lo spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Business intelligence di spoofing](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
-|5   <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|6   <br/> |Blocco  <br/> |BLOCCO  <br/> |[Criterio di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
-|7   <br/> |Rappresentazione di dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo  <br/> |
-|8   <br/> |Rappresentazione dell'utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con degli strumenti di analisi solo <br/> |
+|1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri antiMalware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Criteri di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|3  <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Criteri di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|4  <br/> |Spoofing  <br/> |SPOOF  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [spoofing Intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Tutte le organizzazioni  <br/> |
+|5  <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Criteri di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|6   <br/> |Bulk  <br/> |BULK  <br/> |[Criteri di filtro contenuto ospitato](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tutte le organizzazioni  <br/> |
+|7   <br/> |Rappresentazione del dominio  <br/> |DIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con solo ATP  <br/> |
+|8   <br/> |Rappresentazione utente  <br/> |UIMP  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizzazioni con solo ATP <br/> |
    
-Se si dispone di più criteri Anti-phishing diversi, verrà applicato quello la priorità più alta. Ad esempio, se che si dispone di due criteri:
+Se si dispone di più criteri di anti-phishing, verrà applicato quello con la priorità più alta. Si supponga, ad esempio, di disporre di due criteri:
   
-|**Criterio**|**Priorità**|**Rappresentazione dell'utente o il dominio**|**Protezione anti-spoofing**|
+|**Criterio**|**Priorità**|**Rappresentazione utente/dominio**|**Anti-spoofing**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |Attivato  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |Attivato  <br/> |
    
-Se è disponibile in un messaggio e viene identificato come rappresentazione di spoofing e utente e ambito è lo stesso insieme di utenti al criterio A e B criteri, quindi il messaggio viene considerato come un spoofing, ma non viene applicata alcuna azione dopo anti-spoofing è disattivato , e lo SPOOFING esegue una priorità superiore (4) di rappresentazione utente (8).
+Se un messaggio viene identificato come spoofing e rappresentazione utente e lo stesso insieme di utenti ha come ambito il criterio A e il criterio B, il messaggio viene considerato come spoof ma non viene applicata alcuna azione poiché l'anti-spoofing è disattivato e SPOOF viene eseguito con una priorità più alta (4) rispetto alla rappresentazione dell'utente (8).
   
-Per rendere altri tipi di phishing criterio applicato, sarà necessario modificare le impostazioni di utenti diversi criteri vengono applicati a.
+Per applicare altri tipi di criteri di phishing, è necessario modificare le impostazioni a cui sono applicati i diversi criteri.
   
-### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scenari legittimi per disabilitare lo spoofing anti
+### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scenari legittimi per disabilitare l'anti-spoofing
 
-Lo spoofing anti meglio protezione degli utenti da attacchi di phishing e pertanto disattivazione protezione anti-spoofing è sconsigliata. Per disabilitarlo, è possibile risolvere alcuni falsi positivi a breve termine, ma verranno presentate rischi più a lungo termine. Il costo per la configurazione dell'autenticazione sul lato mittente o con modifiche nei criteri anti-phishing sono in genere occasionali eventi o richiedono operazioni di manutenzione solo minimo, periodica. Il costo per ripristinare da un attacco di phishing in cui sono stato esposto dati o delle risorse sono state compromesse è tuttavia molto superiore.
+L'anti-spoofing protegge meglio i clienti dagli attacchi di phishing e quindi la disabilitazione della protezione antispoofing è fortemente scoraggiata. Disabilitarlo, è possibile risolvere alcuni falsi positivi a breve termine, ma a lungo termine si sarà esposti a più rischi. Il costo per la configurazione dell'autenticazione da parte del mittente o la modifica dei criteri di phishing, in genere sono eventi di una tantum o che richiedono solo una manutenzione periodica minima. Tuttavia, il costo per il ripristino da un attacco di phishing in cui i dati sono stati esposti o che le risorse sono state compromesse è molto più alto.
   
-Per questo motivo, è consigliabile utilizzare tramite lo spoofing anti falsi positivi rispetto alla disattiva la protezione anti-spoofing.
+Per questo motivo, è preferibile utilizzare i falsi positivi antispoofing anziché disabilitare la protezione anti-spoofing.
   
-Esiste tuttavia uno scenario legittimo dove lo spoofing anti deve essere disabilitato e che è quando sono disponibili ulteriori il filtro della posta prodotti Office 365 e il routing dei messaggi non è il primo hop nel percorso di posta elettronica:
+Tuttavia, esiste uno scenario legittimo in cui è necessario disabilitare l'antispoofing, ovvero quando sono presenti ulteriori prodotti per il filtro della posta elettronica nel routing dei messaggi e Office 365 non è il primo hop nel percorso di posta elettronica:
   
-![Il record MX cliente non si riferisce a Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![Il record MX del cliente non punta a Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-L'altro server può essere un Exchange server di posta, un filtro di dispositivi, ad esempio Ironport, posta elettronica in locale o servizio ospitato dal cloud diversa.
+L'altro server può essere un server di posta elettronica locale di Exchange, un dispositivo di filtro della posta, ad esempio IronPort, o un altro servizio ospitato su cloud.
   
-Se il record MX del dominio del destinatario non si riferisce a Office 365, non è necessario disabilitare lo spoofing anti perché Office 365 ricerca record MX del dominio di destinazione e viene eliminato lo spoofing anti punta a un altro servizio. Se non si conosce se il dominio con un altro server in primo piano, è possibile utilizzare un sito Web come MX della casella degli strumenti di cercare il record MX. Potrebbe indicare qualcosa di simile alla seguente:
+Se il record MX del dominio del destinatario non punta a Office 365, non è necessario disabilitare l'anti-spoofing perché Office 365 cerca il record MX del dominio di ricezione ed Elimina l'anti-spoofing se punta a un altro servizio. Se non si sa se il dominio è di fronte a un altro server, è possibile utilizzare un sito Web come la casella degli strumenti MX per cercare il record MX. Si potrebbe dire qualcosa di simile al seguente:
   
-![Record MX indica dominio non si riferisce a Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![Record MX indica che il dominio non punta a Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
   
-In questo dominio dispone di un record MX che non si riferisce a Office 365, in modo che non si applicano applicazione della protezione anti-spoofing Office 365.
+Questo dominio ha un record MX che non punta a Office 365, quindi Office 365 non applica l'applicazione anti-spoofing.
   
-Tuttavia, se il record MX del dominio del destinatario *è* sceglie Office 365, anche se non esiste un altro servizio davanti a Office 365, è possibile disattivare lo spoofing anti. L'esempio più comune è tramite l'utilizzo di un destinatario riscrittura degli indirizzi: 
+Tuttavia, se il record MX del dominio del destinatario ** punta a Office 365, anche se esiste un altro servizio di fronte a Office 365, è necessario disabilitare l'anti-spoofing. L'esempio più comune è l'utilizzo di una riscrittura dei destinatari: 
   
-![Diagramma del routing per la riscrittura degli indirizzi dei destinatari](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Diagramma di routing per la riscrittura dei destinatari](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-Record MX del dominio contoso.com punta al server locale, mentre i record MX del .net @office365.contoso dominio fa riferimento a Office 365 perché contiene \*. protection.outlook.com, o \*. eo.outlook.com il record MX:
+Il record MX del dominio contoso. com punta al server locale, mentre il dominio @office365. contoso. NET del record MX punta a Office 365 perché contiene \*. Protection.Outlook.com, o \*. eo.Outlook.com nel record MX:
   
-![Punti di record MX a Office 365, pertanto probabilmente destinatario riscrivere](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![Il record MX punta a Office 365, quindi probabilmente riscriverà il destinatario](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
-Assicurarsi di differenziare i record MX del dominio del destinatario non si riferisce a Office 365 e quando è stato sottoposto a un destinatario riscrittura degli indirizzi. È importante stabilire la differenza tra questi due casi.
+Assicurarsi di distinguere se il record MX di un dominio del destinatario non punta a Office 365 e quando ha subito una riscrittura del destinatario. È importante indicare la differenza tra questi due casi.
   
-Se si è certi se il dominio di destinazione ha subito un destinatario riscrittura degli indirizzi, in alcuni casi è possibile sapere esaminando le intestazioni del messaggio.
+Se non si è certi che il dominio di ricezione abbia subito un destinatario-riscrittura, a volte si può dire guardando le intestazioni del messaggio.
   
-a) per prima cosa, esaminare le intestazioni del messaggio per il dominio del destinatario nell'intestazione dei risultati di autenticazione: 
+a) per prima cosa, esaminare le intestazioni del messaggio per il dominio del destinatario nell'intestazione Authentication-Results: 
   
 ```
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
@@ -474,33 +459,33 @@ Authentication-Results: spf=fail (sender IP is 1.2.3.4)
   header.from=example.com; compauth=fail reason=001
 ```
 
-Il dominio del destinatario si trova nel testo in grassetto rosso in precedenza, in questo caso office365.contoso.net. Può essere diverso che il destinatario nel campo a: intestazione:
+Il dominio del destinatario si trova nel testo in grassetto rosso sopra, in questo caso office365.contoso.net. Questo può essere diverso dal destinatario nell'intestazione to::
   
-A: Esempio destinatario \<destinatario @ contoso.com\>
+A: esempio \<destinatario destinatario @ contoso.com\>
   
-Eseguire una ricerca di record MX del dominio del destinatario effettivo. Se contiene \*. protection.outlook.com, mail.messaging.microsoft.com, \*. eo.outlook.com o frontbridge.com, significa che la MX punta a Office 365.
+Eseguire una ricerca di record MX del dominio del destinatario effettivo. Se contiene \*. protection.outlook.com, mail.Messaging.Microsoft.com, \*. eo.Outlook.com o mail.Global.frontbridge.com, significa che la MX punta a Office 365.
   
-Se non contiene tali valori, ciò significa che la MX non punta a Office 365. Uno strumento che è possibile utilizzare per verificare questa impostazione è MX della casella degli strumenti.
+Se non contiene tali valori, significa che l'MX non punta a Office 365. Uno strumento che è possibile utilizzare per verificare questa è la casella degli strumenti MX.
   
-In questo esempio specifico seguenti che informa che tale contoso.com, il dominio simile al destinatario poiché era a: intestazione, ha record record MX punta a un server in % di beni:
+In questo esempio viene indicato che contoso.com, il dominio che assomiglia al destinatario, poiché è stato l'intestazione to:, ha un record MX punta a un server on-Prem:
   
-![Record MX punta al server % nel beni](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![Il record MX punta al server on-Prem](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
   
-Tuttavia, il destinatario effettivo è office365.contoso.net cui il record MX punta a Office 365:
+Tuttavia, il destinatario effettivo è office365.contoso.net il cui record MX punta a Office 365:
   
-![MX punta a Office 365, è necessario riscrittura degli indirizzi dei destinatari](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX punta a Office 365, deve essere riscrittura del destinatario](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
   
-Pertanto, questo messaggio di stato sottoposto probabile che un destinatario riscrittura degli indirizzi.
+Pertanto, è probabile che questo messaggio abbia subito un destinatario-riscrittura.
   
-b) in secondo luogo, assicurarsi di distinguere tra casi di utilizzo comuni di riscrittura del destinatario. Se si intende riscrivere il dominio del destinatario per \*. onmicrosoft.com, in realtà riscrivere venga \*. mail.onmicrosoft.com.
+b) in secondo luogo, accertarsi di distinguere tra i casi di utilizzo comuni delle riscritture dei destinatari. Se si intende riscrivere il dominio del destinatario in \*. onmicrosoft.com, riscriverlo in \*. mail.onmicrosoft.com.
   
-Dopo aver identificato il dominio del destinatario finale instradata controllati da un altro server e record MX del dominio del destinatario effettivamente punta a Office 365 (come pubblicato in propri record DNS), è possibile procedere con per disabilitare lo spoofing anti.
+Dopo aver identificato il dominio del destinatario finale instradato dietro un altro server e il record MX del dominio del destinatario punta effettivamente a Office 365 (come pubblicato nei suoi record DNS), è possibile procedere per disabilitare l'anti-spoofing.
   
-Si tenga presente che non si desidera disabilitare lo spoofing anti se hop prima del dominio nel percorso di routing è Office 365, solo quando è controllato da uno o più servizi.
+Tenere presente che non si desidera disabilitare la funzionalità di anti-spoofing se il primo hop del dominio nel percorso di routing è Office 365, solo quando si è dietro uno o più servizi.
   
-### <a name="how-to-disable-anti-spoofing"></a>Come disabilitare lo spoofing anti
+### <a name="how-to-disable-anti-spoofing"></a>Come disabilitare l'anti-spoofing
 
-Se si dispone già di un criterio di protezione Anti-phishing creato, impostare il parametro EnableAntispoofEnforcement su $false: 
+Se è già stato creato un criterio anti-phishing, impostare il parametro EnableAntispoofEnforcement su $false: 
   
 ```
 $name = "<name of policy>"
@@ -508,13 +493,13 @@ Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
 
 ```
 
-Se non si conosce il nome del criterio (o i criteri) per disattivare, è possibile visualizzare tali: 
+Se non si conosce il nome del criterio (o dei criteri) da disabilitare, è possibile visualizzarli: 
   
 ```
 Get-AntiphishPolicy | fl Name
 ```
 
-Se non si dispone di tutti i criteri anti-phishing esistenti, è possibile creare uno e quindi disattivarlo (anche se non si dispone di un criterio, lo spoofing anti è ancora applicato, più avanti in 2018, verrà creato automaticamente un criterio predefinito e che può quindi disabilitare anziché creare una) . È necessario eseguire questa operazione nei passaggi più: 
+Se non si dispone di criteri di anti-phishing esistenti, è possibile crearne uno e disabilitarlo (anche se non si dispone di un criterio, l'anti-spoofing è ancora applicato; più avanti in 2018, verrà creato un criterio predefinito e sarà quindi possibile disabilitarlo anziché crearne uno) . Sarà necessario eseguire questa operazione in più passaggi: 
   
 ```
 $org = Get-OrganizationConfig
@@ -535,182 +520,182 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 ```
 
-Disattivazione di anti-spoofing è disponibile solo tramite cmdlet (più avanti in T2 2018 sarà disponibile in sicurezza &amp; centro conformità). Se non si ha accesso a PowerShell, creare un ticket di supporto.
+La disAttivazione dell'antispoofing è disponibile solo tramite cmdlet (più avanti nel Q2 2018 sarà disponibile nel centro sicurezza &amp; e conformità). Se non si ha accesso a PowerShell, creare un ticket di supporto.
   
-Si tenga presente che deve essere applicata solo ai domini che subiscono indiretti routing quando inviati a Office 365. La parte relativa a disabilitare lo spoofing anti a causa di alcuni falsi positivi, sarà maggiore del tempo per il funzionamento attraverso tali.
+Tenere presente che questo dovrebbe essere applicato solo ai domini che subiscono instradamenti indiretti quando vengono inviati a Office 365. Resistere alla tentazione di disabilitare l'anti-spoofing a causa di alcuni falsi positivi, sarà meglio a lungo andare a lavorare attraverso di loro.
   
-### <a name="information-for-individual-users"></a>Informazioni per i singoli utenti
+### <a name="information-for-individual-users"></a>Informazioni per singoli utenti
 
-Modalità di interazione con la punta di protezione anti-spoofing limitati singoli utenti. Tuttavia, sono disponibili diverse operazioni da eseguire per risolvere gli scenari comuni.
+I singoli utenti sono limitati nel modo in cui possono interagire con il suggerimento per la sicurezza anti-spoofing. Tuttavia, esistono diverse operazioni che è possibile eseguire per risolvere gli scenari comuni.
   
-### <a name="common-scenario-1---mailbox-forwarding"></a>Scenario comune #1 - inoltro delle cassette postali
+### <a name="common-scenario-1---mailbox-forwarding"></a>Scenario comune #1-inoltro delle cassette postali
 
-Se si utilizza un altro servizio di posta elettronica e inoltra la posta elettronica a Office 365 o Outlook.com, la posta elettronica può essere contrassegnata come lo spoofing e ricevere un suggerimento sicurezza rosso. Office 365 e Outlook.com pianificare risolvere questo problema automaticamente quando il server di inoltro è uno dei Outlook.com, Office 365, Gmail o qualsiasi altro servizio che utilizza il [protocollo dell'arco](https://arc-spec.org). Tuttavia, fino a quando non viene distribuita tale correzione, gli utenti devono utilizzare la funzionalità di account connessi per importare i messaggi direttamente, anziché utilizzare l'opzione di inoltro.
+Se si utilizza un altro servizio di posta elettronica e si inoltra la posta elettronica a Office 365 o Outlook.com, è possibile che la posta elettronica sia contrassegnata come spoofing e riceva un suggerimento per la sicurezza rossa. Office 365 e Outlook.com pianificano l'indirizzamento automatico quando il mittente è uno di Outlook.com, Office 365, Gmail o qualsiasi altro servizio che utilizza il [protocollo Arc](https://arc-spec.org). Tuttavia, finché non viene distribuita la correzione, gli utenti devono utilizzare la funzionalità account connessi per importare i propri messaggi direttamente, anziché utilizzare l'opzione di inoltro.
   
-Per configurare account connessi in Office 365, selezionare l'icona ingranaggio in alto a destra dell'interfaccia web di Office 365 \> posta \> posta \> account \> account connessi.
+Per impostare gli account connessi in Office 365, selezionare l'icona a inGranaggio nell'angolo in alto a destra degli account \> di \> posta \> elettronica \> dell'interfaccia Web di Office 365.
   
-![Opzione account Office 365 - connessi](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
+![Opzione account connessi a Office 365](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
   
-In Outlook.com, il processo è sull'icona dell'ingranaggio \> opzioni \> posta \> account \> account connessi.
+In Outlook.com, il processo è \> l'icona dell'ingranaggio opzioni \> account di posta elettronica \> account \> connessi.
   
-### <a name="common-scenario-2---discussion-lists"></a>Gli elenchi di discussioni scenario comune #2:
+### <a name="common-scenario-2---discussion-lists"></a>Scenario comune #2-liste di discussione
 
-Gli elenchi di discussioni sono noti per problemi di anti-spoofing dipende dal modo in cui inoltrare il messaggio e modificarne il contenuto sono ancora stati mantenere l'originale dal: indirizzo.
+Gli elenchi di discussione hanno problemi con l'anti-spoofing a causa del modo in cui inoltrare il messaggio e modificarne il contenuto conservano l'indirizzo originale da:.
   
-Si supponga, ad esempio, l'indirizzo di posta elettronica utente @ contoso.com, ed è di osservazione uccelli e partecipare il birdwatchers elenco discussione @ example.com. Quando si invia un messaggio all'elenco di discussione, è possibile inviare in questo modo:
+Si supponga, ad esempio, che l'indirizzo di posta elettronica sia user @ contoso.com e che sia interessato a Bird watching e si unisca all'elenco di discussione birdwatching @ example.com. Quando si invia un messaggio all'elenco di discussioni, è possibile inviarlo in questo modo:
   
-**Da:** Luca Dellamore \<utente @ contoso.com\> 
+**Da:** Utente di \<John Doe @ contoso.com\> 
   
-**A:** Elenco di discussione di birdwatcher \<birdwatchers @ example.com\> 
+**Per:** Elenco \<delle discussioni del birdwatching birdwatching @ example.com\> 
   
-**Soggetto:** Visualizzazione grande di jays blu nella parte superiore di MT. Rainier questa settimana 
+**Oggetto:** Ottima visualizzazione di Blue Jays nella parte superiore del Mt. Rainier questa settimana 
   
-Tutti gli utenti desidera estrarre la visualizzazione questa settimana da MT. Rainier?
+Tutti gli utenti che desiderano visualizzare la visualizzazione di questa settimana da mt. Rainier?
   
-Quando l'elenco di posta elettronica riceve il messaggio, si formattare il messaggio, modificarne il contenuto e riesecuzione per il resto dei membri nell'elenco di discussione che è costituita da partecipanti da molti ricevitori di posta elettronica diverso.
+Quando l'elenco di posta elettronica riceve il messaggio, formatta il messaggio, ne modifica il contenuto e lo rivisualizza negli altri membri dell'elenco di discussione, costituito da partecipanti provenienti da numerosi ricevitori di posta elettronica diversi.
   
-**Da:** Luca Dellamore \<utente @ contoso.com\> 
+**Da:** Utente di \<John Doe @ contoso.com\> 
   
-**A:** Elenco di discussione di birdwatcher \<birdwatchers @ example.com\> 
+**Per:** Elenco \<delle discussioni del birdwatching birdwatching @ example.com\> 
   
-**Soggetto:** [BIRDWATCHERS] Visualizzazione grande di jays blu nella parte superiore di MT. Rainier questa settimana 
+**Oggetto:** BIRDWATCHING Ottima visualizzazione di Blue Jays nella parte superiore del Mt. Rainier questa settimana 
   
-Tutti gli utenti desidera estrarre la visualizzazione questa settimana da MT. Rainier?
+Tutti gli utenti che desiderano visualizzare la visualizzazione di questa settimana da mt. Rainier?
   
 ---
   
-Questo messaggio è stato inviato all'elenco di discussione Birdwatchers. È possibile annullare la sottoscrizione in qualsiasi momento.
+Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare la sottoscrizione in qualsiasi momento.
   
-In precedenza, il messaggio rieseguito ha lo stesso da: indirizzo (utente @ contoso.com), ma il messaggio originale è stato modificato aggiungendo un tag alla riga dell'oggetto e il piè di pagina nella parte inferiore del messaggio. Questo tipo di modifica del messaggio comune in liste di distribuzione e potrebbe dar falsi positivi.
+In questo modo, il messaggio riprodotto ha lo stesso indirizzo: Address (user @ contoso.com), ma il messaggio originale è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina nella parte inferiore del messaggio. Questo tipo di modifica dei messaggi è comune nelle liste di distribuzione e può generare falsi positivi.
   
-Se un utente all'interno dell'organizzazione sia un amministratore della lista di distribuzione, sarà possibile configurarlo per superare lo spoofing anti controlli.
+Se l'utente o un utente dell'organizzazione è un amministratore della mailing list, potrebbe essere possibile configurarlo in modo che superi i controlli di anti-spoofing.
   
-- Controllare le domande frequenti relative al DMARC.org: [è possibile utilizzare una lista di distribuzione e desidera interoperare con DMARC, è possibile procedere?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
+- Controllare le domande frequenti su DMARC.org: [gestisco una mailing list e desidero interoperare con DMARC, cosa devo fare?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
     
-- Leggere le istruzioni riportate in questo post di blog: [un suggerimento per gli operatori lista di distribuzione per l'interoperabilità con DMARC per evitare errori](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
+- Leggere le istruzioni riportate in questo post di Blog: [un suggerimento per gli operatori di mailing list che interagiscono con DMARC per evitare errori](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
     
-- È consigliabile installare gli aggiornamenti sul server lista di distribuzione per il supporto dell'arco, vedere[https://arc-spec.org](https://arc-spec.org/)
+- Prendere in considerazione l'installazione degli aggiornamenti nel server di mailing list per supportare ARC, vedere[https://arc-spec.org](https://arc-spec.org/)
     
-Se non si dispone delle proprietà della lista di distribuzione:
+Se non si dispone della proprietà della mailing list:
   
-- È possibile richiedere il gestore della lista di distribuzione per implementare una delle opzioni indicate sopra (devono disporre anche di impostare per il dominio che all'elenco di indirizzi è l'inoltro dall'autenticazione di posta elettronica)
+- È possibile richiedere al manutentore della mailing list di implementare una delle opzioni sopra riportate (devono essere configurate anche le impostazioni di autenticazione della posta elettronica per il dominio da cui viene inoltrata la mailing list)
     
-- È possibile creare regole delle cassette postali nei client di posta elettronica per spostare messaggi di posta in arrivo. È possibile richiedere agli amministratori dell'organizzazione per impostare le regole di autorizzazione o sostituzioni come descritto nella sezione gestione dei mittenti legittimi l'invio di posta elettronica non autenticato
+- È possibile creare le regole delle cassette postali nel client di posta elettronica per spostare i messaggi nella cartella posta in arrivo. È inoltre possibile richiedere agli amministratori dell'organizzazione di configurare le regole di autorizzazione o le sostituzioni come descritto nella sezione Managing legittima Senders che stanno inviando messaggi di posta elettronica non autenticati
     
-- È possibile creare un ticket di supporto con Office 365 per creare una sostituzione per la lista di considerarlo legittimi
+- È possibile creare un ticket di supporto con Office 365 per creare una sostituzione per la mailing list per trattarla come legittima
     
 ### <a name="other-scenarios"></a>Altri scenari
 
-1. Se nessuno degli scenari comuni precedenti è il caso, segnalare il messaggio come falso positivo a Microsoft. Per ulteriori informazioni, vedere la sezione [come posso segnalare i messaggi di posta indesiderata o posta non indesiderata torna a Microsoft?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) più avanti in questo articolo. 
+1. Se nessuno degli scenari comuni precedenti si applica alla situazione, riportare il messaggio come falso positivo a Microsoft. Per ulteriori informazioni, vedere la sezione [come è possibile segnalare messaggi di posta indesiderata o non di posta indesiderata a Microsoft?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) più avanti in questo articolo. 
     
-2. È anche possibile rivolgersi all'amministratore di posta elettronica che può generare come un ticket del supporto Microsoft. Il team di progettazione Microsoft esaminerà perché il messaggio è stato contrassegnato come un spoofing.
+2. È inoltre possibile contattare l'amministratore di posta elettronica che può sollevarlo come ticket di supporto con Microsoft. Il team di ingegneri Microsoft analizzerà il motivo per cui il messaggio è stato contrassegnato come spoof.
     
-3. Inoltre, se si esegue il mittente è e ha la certezza che non sono intenzionalmente spoofing, potrebbe rispondere al mittente che indica che si inviano i messaggi da un server di posta elettronica che non esegue l'autenticazione. In alcuni casi di conseguenza, contattare il proprio amministratore IT che configurerà i record di autenticazione necessari posta elettronica del mittente originale.
+3. Inoltre, se si conosce il mittente e si è sicuri che non vengano falsificati in modo malevolo, è possibile rispondere al mittente che indica che inviano messaggi da un server di posta che non esegue l'autenticazione. In questo modo, a volte, il mittente originale contatterà l'amministratore IT che consentirà di impostare i record di autenticazione della posta elettronica necessari.
   
-Quando sufficiente mittenti rispondano ai proprietari dei domini devono configurare record di autenticazione di posta elettronica, li spurs in esecuzione di azioni. Mentre Microsoft può essere utilizzato anche con i proprietari dei domini per pubblicare i record necessari, è utile ancora più quando gli utenti singoli richiedono.
+Quando un numero sufficiente di mittenti risponde ai proprietari dei domini che dovrebbero impostare i record di autenticazione della posta elettronica, li sprona a intervenire. Anche se Microsoft è compatibile con i proprietari di dominio per pubblicare i record necessari, è utile anche quando i singoli utenti lo richiedono.
     
-4. Facoltativamente, aggiungere il mittente all'elenco Mittenti attendibili. Tuttavia, tenere presente che se un specificati esegue lo spoofing tale account, si verrà consegnato alla cassetta postale. Pertanto, questa opzione deve essere utilizzata solo in casi particolari.
+4. Facoltativamente, aggiungere il mittente all'elenco Mittenti attendibili. Tuttavia, tenere presente che se un truffatore falsifica quell'account, verrà recapitato alla cassetta postale. Pertanto, questa opzione deve essere utilizzata con parsimonia.
     
-## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Come necessario preparare i mittenti a Microsoft per la protezione anti-spoofing
+## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Come i mittenti di Microsoft devono prepararsi per la protezione anti-spoofing
 
-Se non è un amministratore che attualmente invia messaggi a Microsoft, Office 365 o Outlook.com, è necessario assicurarsi che la posta elettronica viene autenticata correttamente in caso contrario può essere contrassegnato come posta indesiderata o per attività di phishing. 
+Se si è un amministratore che attualmente invia messaggi a Microsoft, Office 365 o Outlook.com, è necessario assicurarsi che la posta elettronica sia autenticata in modo appropriato altrimenti potrebbe essere contrassegnata come posta indesiderata o phishing. 
   
 ### <a name="customers-of-office-365"></a>Clienti di Office 365
 
-In caso di un cliente di Office 365 e si utilizza Office 365 per inviare la posta elettronica in uscita:
+Se si è un cliente di Office 365 e si usa Office 365 per inviare la posta elettronica in uscita:
   
-- Per i domini, [configurare SPF in Office 365 per evitare attacchi di spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- Per i domini, [impostare SPF in Office 365 per evitare lo spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- Per i domini principali, [Utilizzare la per convalidare la posta elettronica inviata dal dominio personalizzato in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- Per i domini primari, [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [È consigliabile configurare record DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) per il dominio per determinare chi sono i mittenti legittimi 
+- [Valutare la possibilità di configurare i record di DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) per il dominio per determinare chi sono i mittenti legittimi 
     
-Microsoft non fornisce linee guida per informazioni dettagliate per ogni SPF, DKIM e DMARC. Tuttavia, non esiste una quantità elevata di informazioni pubblicate in linea. Esistono inoltre 3rd società di terze parti dedicato a che consente all'organizzazione di impostare i record di autenticazione di posta elettronica.
+Microsoft non fornisce linee guida dettagliate sull'implementazione per ognuno di SPF, DKIM e DMARC. Tuttavia, sono presenti numerose informazioni pubblicate online. Ci sono anche società terze parti dedicate per aiutare l'organizzazione a configurare i record di autenticazione della posta elettronica.
   
-### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>Amministratori dei domini che non sono clienti di Office 365
+### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>Amministratori di domini che non sono clienti di Office 365
 
-Se l'utente è un amministratore di dominio ma non è un cliente di Office 365:
+Se si è un amministratore di dominio, ma non si tratta di un cliente di Office 365:
   
-- È consigliabile impostare SPF per pubblicare gli indirizzi IP di invio del dominio e inoltre impostare DKIM (se disponibile) per firmare digitalmente i messaggi. È consigliabile inoltre la configurazione di record DMARC.
+- È necessario configurare SPF per pubblicare gli indirizzi IP di invio del dominio e configurare DKIM (se disponibile) per la firma digitale dei messaggi. È inoltre possibile prendere in considerazione la configurazione dei record di DMARC.
     
-- Se si dispone di mittenti in blocco la trasmissione di posta elettronica per conto dell'utente, dovrebbe funzionare con cui inviare la posta elettronica in modo tale che il dominio di invio nella From: indirizzi (se appartiene a un utente) viene allineato con il dominio che passa SPF o DMARC.
+- Se si dispone di mittenti in blocco che trasmettono messaggi di posta elettronica per conto dell'utente, è necessario collaborare con essi per inviare messaggi di posta elettronica in modo tale che il dominio di invio nell'indirizzo from: (se appartiene all'utente) sia allineato al dominio che passa SPF o DMARC.
     
-- Se si dispongono in locale server di posta o inviare da un provider di Software come servizio o da un servizio di hosting cloud come Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services o allo stesso modo, è necessario verificare che vengono aggiunti a un record SPF.
+- Se si dispone di server di posta elettronica locali o si inviano da un provider di servizi come software o da un servizio di hosting cloud come Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services o similari, è necessario verificare che vengano aggiunti al record SPF.
     
-- Se si è un dominio di piccole dimensioni ospitato da un provider di servizi Internet, è necessario impostare il record SPF in base alle istruzioni che viene fornito dal provider di servizi Internet. La maggior parte dei provider di servizi Internet forniscono questi tipi di istruzioni e sono disponibili nelle pagine di supporto della società.
+- Se si è un dominio di piccole dimensioni ospitato da un ISP, è necessario configurare il record SPF in base alle istruzioni fornite dall'ISP. La maggior parte degli ISP fornisce questo tipo di istruzioni e può essere trovato nelle pagine di supporto della società.
     
-- Anche se non sono di posta elettronica authentication record prima di pubblicare e funzionamento correttamente, è comunque necessario pubblicare record di autenticazione di posta elettronica da inviare a Microsoft. In questo modo, si sono nella lotta dal phishing e ridurre la possibilità che si o organizzazioni che si invia a, consentirà di ottenere phished.
+- Anche se non è stato necessario pubblicare i record di autenticazione della posta elettronica prima e ha funzionato bene, è comunque necessario pubblicare i record di autenticazione della posta elettronica da inviare a Microsoft. In questo modo, si contribuisce alla lotta contro il phishing e si riduce la possibilità che l'utente o le organizzazioni a cui si inviano vengano phishing.
     
-### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Che cosa accade se non si conosce che invia messaggio di posta elettronica come dominio?
+### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Che cosa succede se non si conosce chi invia messaggi di posta elettronica come dominio?
 
-Molti domini non si pubblicano i record SPF perché non si conosce presenti tutti i mittenti. Questa impostazione è corretta, è necessario sapere chi tutte siano. In realtà, deve iniziare la pubblicazione di un record SPF per quelle che si conoscono, in particolare il traffico aziendale in cui si trova e pubblicare un criterio SPF neutro,? tutti:
+Molti domini non pubblicano i record SPF perché non sanno chi sono tutti i mittenti. Va bene, non è necessario sapere chi sono tutti. È consigliabile, invece, iniziare con la pubblicazione di un record SPF per quelli che si conoscono, soprattutto in cui si trova il traffico aziendale e pubblicare un criterio SPF neutro,? all:
   
-example.com TXT IN "v = spf1 include:spf.example.com? tutti"
+example.com IN TXT "v = spf1 include: SPF. example. com? All"
   
-Il neutro SPF questo significa che qualsiasi messaggio di posta elettronica provenienti dall'infrastruttura aziendale passa l'autenticazione di posta elettronica affatto altri destinatari di posta elettronica. Messaggio di posta elettronica provenienti da mittenti su che non si conosce esegue il fallback al neutral, che è simile al non pubblicazione Nessun record SPF affatto.
+Il criterio SPF neutro indica che qualsiasi messaggio di posta elettronica che fuoriesce dall'infrastruttura aziendale passerà l'autenticazione della posta elettronica a tutti gli altri ricevitori di posta elettronica. La posta elettronica proveniente da mittenti che non si conoscono ricadrà su neutro, che è quasi uguale alla pubblicazione di nessun record SPF.
   
-Quando si invia a Office 365, posta elettronica provenienti dal traffico aziendale viene considerato come utenti autenticati, ma il messaggio di posta elettronica provenienti da origini su che non si conosce ancora può essere contrassegnata come spoofing (a seconda se Office 365 in modo implicito possibile autenticare viene). Tuttavia, si è ancora un miglioramento di tutta la posta elettronica vengono contrassegnato come spoofing da Office 365.
+Quando si invia un messaggio a Office 365, la posta elettronica proveniente dal traffico aziendale verrà contrassegnata come autenticata, ma il messaggio di posta elettronica proveniente da fonti non riconosciute potrebbe essere ancora contrassegnato come spoof (a seconda che Office 365 possa autenticarlo implicitamente). Tuttavia, questo è ancora un miglioramento da tutti i messaggi di posta elettronica contrassegnati come spoof da Office 365.
   
-Dopo aver ricevuto avviato con un record SPF con un criterio di fallback di? tutti, è possibile includere gradualmente più invio dell'infrastruttura e quindi pubblicare un criterio più. 
+Dopo aver iniziato con un record SPF con un criterio di fallback di? All, è possibile includere gradualmente sempre più infrastruttura di invio e quindi pubblicare un criterio più rigoroso. 
   
-### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Se si è il proprietario della lista di distribuzione?
+### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Che cosa succede se si è il proprietario di una mailing list?
 
-Vedere la sezione [scenario comune 2 - discussione sono elencati](#common-scenario-2---discussion-lists). 
+Vedere la sezione [scenario comune #2-liste di discussione](#common-scenario-2---discussion-lists). 
   
-### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Se si è un provider dell'infrastruttura, ad esempio un Provider di servizi Internet (ISP), Provider di servizio di posta elettronica (ESP) o che ospita servizio cloud?
+### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Che cosa succede se si è un provider di infrastruttura, ad esempio un provider di servizi Internet (ISP), un provider di servizi di posta elettronica o un servizio di hosting cloud?
 
-Se si esegue l'hosting posta elettronica del dominio e Invia messaggio di posta elettronica o fornire l'infrastruttura di hosting che può inviare posta elettronica, è consigliabile eseguire le operazioni seguenti:
+Se si ospita il messaggio di posta elettronica di un dominio e si invia la posta elettronica o si fornisce un'infrastruttura di hosting in grado di inviare messaggi di posta elettronica, è consigliabile eseguire le operazioni seguenti:
   
-- Verificare che i clienti dispongono della documentazione che descrive gli elementi da pubblicare i record SPF
+- Verificare che i clienti dispongano di documentazione dettagliata su cosa pubblicare nei propri record SPF
     
-- Prendere in considerazione per la firma DKIM firme nella posta elettronica in uscita anche se il cliente non viene impostato in modo esplicito backup (accesso con un dominio predefinito). È possibile anche double sign-messaggio di posta elettronica con le firme DKIM (una sola volta con dominio del cliente se è stata configurata e una seconda volta con firma DKIM aziendale)
+- Valutare la possibilità di firmare le firme di DKIM nei messaggi di posta elettronica in uscita anche se il cliente non l'ha esplicitamente configurata (segno con un dominio predefinito). È anche possibile firmare due volte il messaggio di posta elettronica con le firme di DKIM (una volta con il dominio del cliente se sono state configurate e una seconda volta con la firma DKIM della società)
     
-Distribuzione di Microsoft non è garantita anche se si esegue l'autenticazione che hanno origine dalla piattaforma di posta elettronica, ma almeno assicura che Microsoft non indesiderato la posta elettronica perché non è autenticato. Per ulteriori dettagli sulla come Outlook.com filtri posta elettronica, vedere la [pagina Outlook.com Postmaster](https://postmaster.live.com/pm/postmaster.aspx).
+La reCapito a Microsoft non è garantita anche se si autentica la posta elettronica proveniente dalla piattaforma, ma almeno garantisce che Microsoft non inrifiuti la posta elettronica perché non è autenticata. Per ulteriori informazioni sul modo in cui Outlook.com filtra la posta elettronica, vedere la [pagina postmaster di Outlook.com](https://postmaster.live.com/pm/postmaster.aspx).
   
-Per ulteriori informazioni sulle procedure consigliate per i provider di servizi, vedere [M3AAWG Mobile messaggistica procedure consigliate per provider di servizi](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Per ulteriori informazioni sulle procedure consigliate dei provider di servizi, vedere procedure consigliate [per la messaggistica mobile di M3AAWG per i provider di servizi](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
   
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="why-is-microsoft-making-this-change"></a>Perché è Microsoft questa modifica?
+### <a name="why-is-microsoft-making-this-change"></a>Perché Microsoft sta facendo questa modifica?
 
-Causa di attacchi l'impatto di phishing e perché l'autenticazione di posta elettronica è stato attorno per oltre 15 anni, Microsoft ritiene che il rischio di continua a Consenti posta non autenticato sia superiore a rischio di perdita di posta elettronica legittimi.
+A causa dell'impatto degli attacchi di phishing e poiché l'autenticazione della posta elettronica è in circolazione da oltre 15 anni, Microsoft ritiene che il rischio di continuare a consentire la posta elettronica non autenticata sia superiore al rischio di perdere la posta elettronica legittima.
   
-### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Questa modifica determinerà posta elettronica legittimi deve essere contrassegnato come posta indesiderata?
+### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Se questa modifica causa la posta elettronica legittima per essere contrassegnata come posta indesiderata?
 
-Inizialmente, ci sarà alcuni messaggi contrassegnati come posta indesiderata. Tuttavia, nel tempo, modificheranno i mittenti e quindi la quantità di messaggi erroneamente contrassegnati come spoofing sarà trascurabile per la maggior parte dei percorsi di posta elettronica.
+All'inizio, vi saranno alcuni messaggi contrassegnati come posta indesiderata. Tuttavia, nel corso del tempo, i mittenti verranno adattati e quindi la quantità di messaggi erroneamente falsificati come contraffatti sarà trascurabile per la maggior parte dei percorsi di posta elettronica.
   
-Microsoft ha adottato prima questa caratteristica diverse settimane prima della distribuzione per il resto dei propri clienti. Mentre si è verificato interruzione inizialmente, rifiutata gradualmente.
+Microsoft stesso ha adottato questa funzionalità alcune settimane prima di distribuirlo al resto dei suoi clienti. Anche se all'inizio si è verificato un problema di disgregazione, è diminuito gradualmente.
   
-### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft avrà un questa caratteristica per i clienti Outlook.com e non avanzate rischio di protezione di Office 365?
+### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft offrirà questa funzionalità a Outlook.com e ai clienti non avanzati di protezione dalle minacce di Office 365?
 
-Protezione anti-spoofing tecnologia Microsoft è stata inizialmente distribuita per le organizzazioni che hanno una sottoscrizione a Office 365 Enterprise E5 o hanno acquistato il componente aggiuntivo di Office 365 avanzate Threat Protection (degli strumenti di analisi) per la sottoscrizione. A partire da ottobre, 2018 è stata estesa la protezione per le organizzazioni che hanno anche Exchange Online Protection (EOP). In futuro, si può rilasciare per Outlook.com. Tuttavia, in questo caso, potrebbero esserci alcune funzionalità che non vengono applicate ad esempio i report e ha la precedenza personalizzato.
+La tecnologia antispoofing di Microsoft è stata inizialmente distribuita alle organizzazioni che avevano un abbonamento a Office 365 Enterprise E5 o avevano acquistato il componente aggiuntivo di Office 365 Advanced Threat Protection (ATP) per la sottoscrizione. A ottobre 2018 è stata estesa la protezione alle organizzazioni che dispongono anche di Exchange Online Protection (EOP). In futuro, è possibile rilasciarlo per Outlook.com. Tuttavia, in questo caso, potrebbero essere presenti alcune funzionalità non applicate, ad esempio la creazione di report e le sostituzioni personalizzate.
   
-### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come posso segnalare i messaggi di posta indesiderata o posta non indesiderata torna a Microsoft?
+### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come si fa a segnalare messaggi di posta indesiderata o non di posta indesiderata a Microsoft?
 
-È possibile utilizzare il [componente aggiuntivo di report per Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), o se non è installato, [Invia la posta indesiderata, posta non indesiderata e i messaggi di phishing phishing a Microsoft per l'analisi](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
+È possibile utilizzare il [componente aggiuntivo per i messaggi di report per Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)oppure, se non è installato, [inviare messaggi di posta indesiderata, non di posta indesiderata e tentativi di phishing a Microsoft per l'analisi](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
-### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Perché un amministratore di dominio che non sa presenti tutti i mittenti!
+### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sono un amministratore di dominio che non sa chi sono tutti i mittenti.
 
-Vedere [gli amministratori dei domini che vengono non i clienti di Office 365](#administrators-of-domains-that-are-not-office-365-customers).
+Consultare gli [amministratori dei domini che non sono clienti di Office 365](#administrators-of-domains-that-are-not-office-365-customers).
   
-### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>Cosa succede se disattiva la protezione anti-spoofing per l'organizzazione, anche se Office 365 è il filtro principale?
+### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>Cosa succede se si disattiva la protezione anti-spoofing per la propria organizzazione, anche se Office 365 è il filtro principale?
 
-Non è consigliabile ciò perché è verrà reso disponibile per i messaggi di posta indesiderata e phishing più senza risposta. Spoofing di phishing non tutte le e verrà perse effettua lo spoofing non tutti. Tuttavia, i rischi è maggiore di un cliente che consente lo spoofing anti.
+Non è consigliabile perché si è esposti a messaggi di posta indesiderata e di phishing più mancanti. Non tutti i tentativi di phishing sono spoofing e non verranno perse tutte le spoofing. Tuttavia, il rischio sarà maggiore rispetto a un cliente che Abilita l'anti-spoofing.
   
-### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Abilitazione della protezione anti-spoofing significa che saranno protetti dal phishing tutti?
+### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>L'abilitazione della protezione anti-spoofing significa che sarò protetto da tutti i tentativi di phishing?
 
-Purtroppo no, perché verranno adattarsi per utilizzare altre tecniche, ad esempio autori danneggiata account o la configurazione di account dei servizi libero. Tuttavia, protezione anti-phishing funzioni molto meglio per rilevare questi altri tipi di metodi di phishing perché la protezione di Office 365 sono livelli progettate lavoro contemporaneamente e si basano su tra loro.
+Purtroppo no, perché phisher si adatterà a utilizzare altre tecniche come gli account compromessi o a configurare gli account dei servizi gratuiti. Tuttavia, la protezione anti-phishing funziona molto meglio per rilevare questi altri tipi di metodi di phishing, perché i livelli di protezione di Office 365 sono stati disegnati insieme e si creano uno sopra l'altro.
   
-### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>Altri ricevitori di posta elettronica di grandi dimensioni non bloccano non autenticati di posta elettronica?
+### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>Gli altri ricevitori di posta elettronica di grandi dimensioni bloccano la posta elettronica non autenticata?
 
-Quasi tutti i ricevitori di posta elettronica di grandi dimensioni implementano tradizionale SPF DKIM e DMARC. Alcuni ricevitori di dispongono di altri controlli che sono più restrittivi rispetto solo gli standard, ma pochi passare come non autenticati di Office 365 per bloccare di posta elettronica e gestirle come un spoofing. Tuttavia, la maggior parte del settore sta diventando più rigida relative al tipo specifico di posta elettronica, soprattutto a causa del problema di phishing.
+Quasi tutti i destinatari di posta elettronica di grandi dimensioni implementano i tradizionali SPF, DKIM e DMARC. Alcuni ricevitori dispongono di altri controlli che sono più severi rispetto a quelli standard, ma pochi sono disponibili fino a Office 365 per bloccare il messaggio di posta elettronica non autenticato e trattarli come una parodia. Tuttavia, la maggior parte del settore sta diventando sempre più rigorosa su questo tipo di messaggio di posta elettronica, in particolare a causa del problema del phishing.
   
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>È comunque necessario l'opzione Advanced Spam Filtering abilitato per "SPF rigido Fail" se abilitare lo spoofing anti?
+### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Se si Abilita l'anti-spoofing, è ancora necessaria l'opzione di filtro per la posta inDesiderata avanzata abilitata per il "fail duro SPF"?
 
-No, questa opzione non è più necessaria perché la caratteristica anti-spoofing considera non solo errore rigido SPF, ma una più ampia gamma di criteri. Se si dispone di spoofing anti abilitato e l'opzione esito negativo rigido SPF abilitata, è probabilmente verranno visualizzati più falsi positivi. È consigliabile disabilitare questa funzionalità, così come verrebbero non fornire quasi alcun catch aggiuntive per la posta indesiderata o per attività di phishing e invece generare principalmente falsi positivi.
+No, questa opzione non è più necessaria perché la funzionalità di anti-spoofing non considera solo l'esito negativo di SPF, ma un insieme di criteri molto più ampio. Se è abilitata la funzionalità di anti-spoofing e l'opzione di failover rigido SPF è abilitata, è probabile che vengano configurati più falsi positivi. Si consiglia di disabilitare questa funzionalità poiché non fornirà quasi nessun ulteriore catch per la posta indesiderata o phishing e invece genererà principalmente falsi positivi.
   
-### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>il mittente riscrittura combinazione (SRS) consente di risolvere posta elettronica inoltrati?
+### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Lo schema di riscrittura del mittente (SRS) consente di risolvere i messaggi di posta elettronica inoltrati?
 
-SRS solo parzialmente consente di risolvere il problema di posta elettronica inoltrati. Per riscrivere il SMTP MAIL FROM, SRS può verificare che i passaggi di messaggi inoltrati SPF nella destinazione successivo. Tuttavia, poiché anti-spoofing si basa su From: indirizzo in combinazione con il MAIL FROM o la firma DKIM dominio (o altri segnali), non è sufficiente impedire che venga contrassegnato come in caso di spoofing posta elettronica inoltrati.
+SRS risolve solo parzialmente il problema del messaggio di posta elettronica inoltrato. Riscrivendo la posta SMTP da, SRS può garantire che il messaggio inoltrato passi SPF alla prossima destinazione. Tuttavia, poiché l'antispoofing è basato sull'indirizzo da: in combinazione con il dominio di posta elettronica o DKIM (o altri segnali), non è sufficiente impedire che la posta elettronica inoltrata venga contrassegnata come contraffatta.
   
 

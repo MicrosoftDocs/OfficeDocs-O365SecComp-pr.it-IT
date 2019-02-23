@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,64 +14,64 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: b633e2522b1f3593f2c095a8f0cc74b4e8571f4a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706047"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213586"
 ---
 # <a name="manage-hold-notifications"></a>Gestire le notifiche di blocco
 
-Dopo aver iniziato l'ufficio legale attesa del flusso di lavoro di notifica, è possibile utilizzare eDiscovery avanzate (Preview) per tenere traccia dello stato delle comunicazioni. Scheda comunicazioni Mostra tutte le notifiche di attesa nel caso di eDiscovery avanzate (Preview). In questo caso, è possibile visualizzare ulteriori informazioni, ad esempio il numero di depositari che sono stati assegnati o hanno riconosciuto l'avviso.
+Dopo aver avviato il flusso di lavoro di notifica per la conservazione legale, è possibile sfruttare Advanced eDiscovery (Preview) per monitorare lo stato delle comunicazioni. La scheda comunicazioni Mostra tutte le notifiche di blocco all'interno del caso Advanced eDiscovery (Preview). In questa sezione, è possibile visualizzare i dettagli, ad esempio il numero di depositari che sono stati assegnati o che hanno riconosciuto l'avviso.
 
-## <a name="view-communication-details"></a>Visualizzare i dettagli di comunicazione
+## <a name="view-communication-details"></a>Visualizzare i dettagli della comunicazione
 
-### <a name="track-acknowledgements"></a>Tenere traccia di acknowledgement
+### <a name="track-acknowledgements"></a>Conferma del rilevamento
 
-Dopo avere selezionato una comunicazione dalle **comunicazioni**, scheda è possibile visualizzare un elenco di depositari che hanno riconosciuto un avviso di attesa. 
+Dopo aver selezionato una comunicazione dalla scheda **comunicazioni**, è possibile visualizzare un elenco di depositari che hanno riconosciuto un avviso di esenzione. 
 
-### <a name="preview-acknowledgements"></a>Riconoscimenti Preview
+### <a name="preview-acknowledgements"></a>Ringraziamenti per l'anteprima
 
-Nel riquadro a comparsa dettagli comunicazione, è possibile visualizzare i dettagli sulle comunicazioni di conservazione a fini giudiziari. Nel riquadro di **Anteprima** sarà in grado di visualizzare una panoramica immediata la conservazione a fini giudiziari osservare e le impostazioni e contenuto per le notifiche di flussi di lavoro. Il riquadro di anteprima verrà inoltre visualizzare informazioni dettagliate che depositari hanno già riconosciuto il segnalatore di.
+Nel riquadro a comparsa dettagli comunicazione, è possibile visualizzare in anteprima i dettagli relativi alla comunicazione per il blocco legale. Nel riquadro di **Anteprima** , sarà possibile visualizzare un'istantanea rapida della notifica di conservazione legale, nonché le impostazioni e il contenuto delle notifiche del flusso di lavoro. Nel riquadro di anteprima verranno inoltre riportate le informazioni relative ai depositari che hanno già riconosciuto la notifica.
 
-## <a name="taking-action-on-existing-communications"></a>Azione sulle comunicazioni esistente
+## <a name="taking-action-on-existing-communications"></a>Esecuzione di un'azione sulle comunicazioni esistenti
 
-### <a name="re-send-a-hold-notice"></a>Nuovo inviata una notifica di attesa
+### <a name="re-send-a-hold-notice"></a>Inviare di nuovo un avviso di esenzione
 
-In alcuni casi, depositari terrà traccia delle loro messaggi di posta elettronica nel proprio lavoro quotidiano. In alternativa, per una controversia a esecuzione prolungata, un depositaria potrebbe raggiungere e richiedere di nuovo inviata una notifica. Quando si gestisce il flusso di lavoro gli avvisi di conservazione a fini giudiziari, potrebbe essere necessario rieseguire inviata una notifica per portare a "superiore di postale una cassetta".
+Occasionalmente, i depositari perdono il controllo dei messaggi di posta elettronica nel lavoro quotidiano. In alternativa, per un contenzioso di lunga durata, un custode può raggiungere e chiedere di inviare di nuovo un avviso. Durante la gestione del flusso di lavoro per gli avvisi relativi alla conservazione legale, potrebbe essere necessario inviare di nuovo una notifica per riportarla nella "parte superiore della cassetta postale di un utente".
 
-Nuovamente, è possibile inviare una notifica di attesa per il depositaria da:
-1. Passare a un caso all'interno di **sicurezza e conformità gt _ avanzate eDiscovery (Preview)**.
+È possibile inviare di nuovo un avviso di conservazione al proprio custode:
+1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery (Preview)**.
 2. Dopo aver selezionato un caso, passare alla scheda **comunicazioni** .
-3. Per inviare nuovamente un avviso di conservazione a fini giudiziari per un depositaria, selezionare la comunicazione e fare clic sull'opzione **Nuovo invio** .
-4. Se un depositaria non ha già confermato la notifica di attesa, il flusso di promemoria e riassegnazione verrà riavviato. Se un depositaria ha già comunicato la notifica di attesa, il depositaria appena riceverà una copia della notifica di attesa iniziale.
+3. Per inviare di nuovo un avviso per la conservazione legale a un custode, selezionare la comunicazione e fare clic sull'opzione di **nuovo invio** .
+4. Se un custode non ha già riconosciuto la notifica di blocco, il flusso di sollecito e di escalation verrà riavviato. Se un custode ha già riconosciuto la notifica di conservazione, il custode riceverà solo una copia dell'avviso di conservazione iniziale.
 
 > [!NOTE]
-> Solo è possibile inviare nuovamente una notifica di conservazione a fini giudiziari per depositari assegnati per la comunicazione. 
+> È possibile inviare di nuovo solo una notifica di blocco legale ai depositari che sono assegnati alla comunicazione. 
 
 ### <a name="edit-a-communication"></a>Modificare una comunicazione
 
 #### <a name="update-preservation-requirements"></a>Aggiornare i requisiti di conservazione
   
-Nel corso della stessa maiuscole depositari potrebbero essere necessarie per conservare i dati aggiuntivi o meno di è stato indicato in precedenza. In termini di eDiscovery, è necessario eseguire nuovamente l'avviso di conservazione con contenuto aggiornato.
+Quando il caso progredisce, potrebbe essere necessario che i depositari possano conservare dati aggiuntivi o meno rispetto a quelli precedentemente istruiti. In termini di eDiscovery, è necessario riemettere la notifica di conservazione con il contenuto aggiornato.
 
-Per aggiornare il contenuto della notifica di attesa iniziale:
+Per aggiornare il contenuto dell'avviso di blocco iniziale:
 
-1. Passare a un caso all'interno di **sicurezza e conformità gt _ avanzate eDiscovery (Preview)**.
+1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery (Preview)**.
 2. Dopo aver selezionato un caso, passare alla scheda **comunicazioni** .
-3. Selezionare l'avviso di attesa che si desidera aggiornare e fare clic su **Modifica**.
-4. Al flusso di lavoro di modifica selezionare **Definire il contenuto portale** e aggiornare il contenuto della notifica. 
-5. Fare clic su **Salva**. Dopo aver salvato, la pubblicazione r verrà inviato a tutti i depositari attualmente assegnati alla notifica di conservazione a fini giudiziari. Inoltre, se sono abilitate le notifiche di promemoria/escalation, quindi i flussi di lavoro verrà riavviato anche. 
+3. Selezionare l'avviso di blocco che si desidera aggiornare e fare clic su **modifica**.
+4. Nel flusso di lavoro modifica, selezionare **Definisci contenuto portale** e aggiornare il contenuto della notifica. 
+5. Fare clic su **Salva**. Una volta salvata, l'avviso di riemissione verrà inviato a tutti i depositari attualmente assegnati alla notifica di conservazione legale. Inoltre, se gli avvisi di sollecito/escalation sono abilitati, anche questi flussi di lavoro verranno riavviati. 
 
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Aggiornamento legale attesa notifiche e impostazioni
+#### <a name="update-legal-hold-notifications-and-settings"></a>Aggiornare le notifiche e le impostazioni per il blocco legale
 
-Quando si aggiorna il contenuto o le impostazioni di notifica di pubblicazione, versione, nuovo rilascio, promemoria o Escalation, le modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
+Quando si aggiorna il contenuto o le impostazioni dell'avviso di emissione, rilascio, riStampa, proMemoria o esCalation, queste modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
 
 ## <a name="related-information"></a>Informazioni correlate 
 
-- [Creare una notifica di conservazione a fini giudiziari](create-hold-notification.md)
+- [Creare un avviso per la conservazione legale](create-hold-notification.md)
     
 - [Confermare la ricezione di una notifica di blocco](acknowledge-hold-notification.md)
     

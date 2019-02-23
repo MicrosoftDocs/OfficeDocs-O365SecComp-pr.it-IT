@@ -6,96 +6,96 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
-description: Dopo che sono state impostate e di implementazione della protezione App Cloud di Office 365, è consigliabile eseguire alcune attività per verificare la configurazione sia corretta e che sta preparato per confrontarsi a intervalli regolari.
-ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Dopo aver configurato e implementato Office 365 cloud app Security, è necessario eseguire alcune attività per assicurarsi che la configurazione sia corretta e che si sia preparato per le revisioni regolari.
+ms.openlocfilehash: 3afcfc307ea4a587287f3b71080bba89c715c908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603707"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215946"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security
   
-|Valutazione * *\>**|Pianificazione * *\>**|Distribuzione * *\>**|Utilizzo * * *|
+|Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
-|[Avviare la valutazione](office-365-cas-overview.md) <br/> |[Iniziare a pianificare](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Si è seguito!  <br/> [Passaggio successivo](review-office-365-cas-alerts.md) <br/> |
+|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggio successivo](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Protezione di Office 365 Cloud App è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un'altra sottoscrizione Office 365 Enterprise, protezione di Office 365 Cloud App può essere acquistata come componente aggiuntivo. (Come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **Aggiungi sottoscrizioni**.) Per ulteriori informazioni, vedere [Office 365 Platform Service Description: protezione di Office 365 &amp; centro conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 per aziende](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 cloud app Security è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un altro abbonamento a Office 365 Enterprise, Office 365 cloud app Security può essere acquistato come componente aggiuntivo. (come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **aggiungi abbonamenti**). Per ulteriori informazioni, vedere [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
-Dopo avere impostato e configurato sicurezza App Cloud di Office 365, sarà si desidera eseguire alcune attività di utilizzo come un amministratore globale di Office 365 o un amministratore della sicurezza per l'organizzazione. 
+Dopo aver installato e configurato Office 365 cloud app Security, è necessario eseguire alcune attività di utilizzo come amministratore globale di Office 365 o amministratore della protezione per l'organizzazione. 
 
-Eseguendo queste attività, si verrà garantire sicurezza di Office 365 Cloud App sia configurato correttamente, i criteri vengono aggiornati e l'organizzazione di realizzazione compreso tra Office 365. Utilizzare questo articolo come guida per la pianificazione per eseguire queste attività.
+Eseguendo queste attività, è possibile garantire che Office 365 cloud app Security sia configurato correttamente, che i criteri siano aggiornati e che l'organizzazione realizzi il valore da Office 365. Utilizzare questo articolo come guida per pianificare queste attività.
   
 > [!NOTE]
-> È necessario essere un amministratore globale o sicurezza per eseguire le attività descritte in questo articolo. Per ulteriori informazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md). 
+> È necessario essere un amministratore globale o un amministratore della sicurezza per eseguire le attività descritte in questo articolo. Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
     
-## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>Attività dopo l'implementazione della protezione di Office 365 Cloud App e la configurazione iniziale
+## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>Attività dopo la configurazione iniziale e la distribuzione di Office 365 cloud app Security
 
-Una volta configurata e di implementazione, come amministratori della protezione, o un amministratore globale di sicurezza di Office 365 Cloud App sono diversi aspetti da considerare:
+Dopo aver configurato e implementato Office 365 cloud app Security, come amministratore globale o amministratori della sicurezza, sono disponibili diverse considerazioni:
   
-- Quali attività è necessario aggiungere al calendario di reparto IT?
+- Quali attività devono essere aggiunte al calendario del reparto IT?
     
-- Come possono essere apportate che Office 365 Cloud App sicurezza sia configurato per utilizzare il set di criteri di destro nel tempo?
+- Come si può verificare che Office 365 cloud app Security sia configurato in modo da utilizzare il set di criteri corretto nel tempo?
     
-- Tipi di informazioni di riepilogo deve inviare la catena di gestione IT.
+- Quali tipi di informazioni di riepilogo è necessario inviare alla catena di gestione IT?
     
-Brevemente nella tabella seguente vengono riepilogate le attività in corso desiderata per eseguire attività periodica che è consigliabile aggiungerlo al calendario del reparto IT.
+Nella tabella seguente vengono riepilogate brevemente le attività da eseguire e le attività periodiche che è consigliabile aggiungere al calendario del reparto IT.
   
-|**Attività in corso**|**Attività periodica**|
+|**Attività in uscita**|**Attività periodiche**|
 |:-----|:-----|
-| Monitorare gli account di posta elettronica a cui si inviano messaggi di avviso  <br/>  Monitorare settore alla sicurezza informatica newsfeed per informazioni aggiornate sui nuovi attacchi cyber  <br/>  Agire avvisi di protezione per identificare e risolvere i rischi e problemi di protezione  <br/>  Riepilogare ogni problema di sicurezza e la risoluzione di un registro centrale  <br/> | Eseguire le revisioni mensili o trimestrali degli avvisi di protezione di applicazioni di Office 365 Cloud per alterazioni campione e analisi delle tendenze  <br/>  Eseguire mensili o trimestrali valutazioni dei criteri di protezione di applicazioni di Office 365 Cloud esistenti da includere miglioramenti nella sicurezza App Cloud di Office 365 e l'indirizzo cyberattacks nuove e le tendenze in alla sicurezza informatica  <br/> |
+| Monitorare gli account di posta elettronica a cui vengono inviati i messaggi di avviso  <br/>  Monitor Industry Cybersecurity News Feeds per le ultime informazioni sui nuovi attacchi informatici  <br/>  Agire sugli avvisi di sicurezza per identificare e risolvere gli incidenti di sicurezza e i rischi  <br/>  Riepilogare ogni evento di sicurezza e risoluzione in un registro centrale  <br/> | Eseguire revisioni mensili o trimestrali degli avvisi di sicurezza di Office 365 cloud app per individuare le anomalie e analizzare le tendenze  <br/>  Eseguire revisioni mensili o trimestrali dei criteri di sicurezza di Office 365 cloud app esistenti per includere miglioramenti in Office 365 cloud app Security e indirizzare nuove attacchi cibernetici e tendenze in Cybersecurity  <br/> |
    
-A seconda delle dimensioni e interessi di monitoraggio e manutenzione di un levatura di sicurezza dell'organizzazione, è possibile compilare un riepilogo mensile per la catena di gestione IT che include:
+A seconda della dimensione dell'organizzazione e dell'interesse per il monitoraggio e il mantenimento di una statura di sicurezza, è possibile compilare un riepilogo mensile per la catena di gestione IT che include:
   
-- Diversi tipi di problemi di protezione identificati con Office 365 Cloud App protezione
+- I diversi tipi di incidenti di sicurezza identificati con Office 365 cloud app Security
     
-- Riepilogo delle informazioni dal registro centrale dei problemi di protezione, ad esempio numero di problemi rilevati
+- Informazioni di riepilogo del registro centrale degli incidenti di sicurezza, ad esempio il numero di incidenti rilevati
     
-- Avviso tendenze e come sono stati risolti
+- Tendenze di avviso e modalità di indirizzamento
     
-- Le ultime tendenze alla sicurezza informatica
+- Le ultime tendenze di Cybersecurity
     
-- Suggerimenti per le modifiche dei criteri di sicurezza di Office 365 Cloud App e l'impatto sugli utenti finali
+- Suggerimenti per le modifiche ai criteri di sicurezza di Office 365 cloud app e il loro impatto sugli utenti finali
     
-## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Attività dopo ora dall'implementazione di sicurezza di Office 365 Cloud App
+## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Attività dopo il tempo trascorso dall'implementazione di Office 365 cloud app Security
 
-Se un prolungata periodo di tempo trascorso è inizialmente configurato o mantenere i criteri di protezione di Office 365 Cloud App, eseguire la procedura seguente per ottenere una configurazione che riflette la funzionalità corrente e gli obiettivi di protezione dell'organizzazione di protezione di applicazioni di Office 365 Cloud:
+Se è trascorso un periodo di tempo prolungato dopo aver configurato o mantenuto i criteri di sicurezza dell'app cloud di Office 365, eseguire la procedura seguente per tornare a una configurazione che rispecchi gli obiettivi di sicurezza dell'organizzazione e le funzionalità correnti. di Office 365 cloud app Security:
   
-1. Determinare la data dell'ultima modifica di configurazione per la protezione di Office 365 Cloud App.
+1. Determinare la data dell'Ultima modifica di configurazione per Office 365 cloud app Security.
     
-2. Acquisire familiarità con la configurazione di protezione di Office 365 Cloud App corrente e modificare i criteri in base alle esigenze. Ad esempio, assicurarsi di conoscere dove vengono inviati avvisi tramite posta elettronica.
+2. Comprendere la configurazione di sicurezza delle app di Office 365 Cloud corrente e regolare tali criteri in base alle esigenze. Ad esempio, accertarsi di sapere dove vengono inviati gli avvisi tramite posta elettronica.
     
-3. Poiché è stato configurato ultimo sicurezza App Cloud di Office 365, vedere [What's new in sicurezza App Cloud di Office 365](new-in-office-365-cas.md) per le modifiche di prodotto. 
+3. Vedere [What ' s New in office 365 cloud app Security](new-in-office-365-cas.md) per le modifiche al prodotto dopo l'ultima configurazione di Office 365 cloud app Security. 
     
-4. Eseguire un'analisi dei registri per alterazioni campione e gli avvisi di protezione di applicazioni di Office 365 Cloud e analizzare le tendenze.
+4. Eseguire un'analisi dei registri e degli avvisi di sicurezza di Office 365 cloud app per individuare anomalie e analizzare le tendenze.
     
-5. Controllare le tendenze alla sicurezza informatica del settore diventi tenere presenti le minacce alla sicurezza più recente.
+5. Controllare le tendenze del settore Cybersecurity per conoscere le ultime minacce alla sicurezza.
     
-6. Eseguire un'analisi delle modifiche che devono essere apportate all'insieme corrente di criteri di protezione di Office 365 Cloud App. Incorporare modifiche delle caratteristiche di protezione di applicazioni di Office 365 Cloud, alterazioni corrente e alla sicurezza informatica tendenze. Consigliabile modifiche ai criteri esistenti o la creazione di nuovi criteri.
+6. Eseguire un'analisi delle modifiche che devono essere apportate all'insieme corrente dei criteri di sicurezza delle app cloud di Office 365. Incorporare modifiche alla funzionalità di sicurezza delle app cloud di Office 365, anomalie correnti e tendenze di Cybersecurity. Consigliare le modifiche apportate ai criteri esistenti o la creazione di nuovi criteri.
     
-7. Creare un piano di implementazione delle modifiche dei criteri. Comunicare (socializzare) le conseguenze delle modifiche proposte con gli utenti finali in base alle esigenze.
+7. Preparare un piano per l'implementazione delle modifiche ai criteri. Comunicare (socializzare) le conseguenze delle modifiche proposte con gli utenti finali in base alle esigenze.
     
-8. Implementare le modifiche di criteri di sicurezza di Office 365 Cloud App.
+8. Implementare le modifiche apportate ai criteri di protezione delle app di Office 365 cloud.
     
-9. Monitorare i commenti e suggerimenti degli utenti finali e gli avvisi di protezione di applicazioni di Office 365 Cloud e modificare i criteri nel tempo.
+9. Monitorare gli avvisi sulla sicurezza degli utenti finali e di Office 365 cloud app Security e regolare i criteri nel tempo.
     
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Provare a utilizzare un'attività](investigate-an-activity-in-office-365-cas.md)
+- [Esaminare un'attività](investigate-an-activity-in-office-365-cas.md)
     
-- [Sospendere o il ripristino di un account utente](suspend-or-restore-an-account-in-ocas.md)
+- [Sospendere o ripristinare un account utente](suspend-or-restore-an-account-in-ocas.md)
     
 - [Gestire le app OAuth](manage-app-permissions-in-ocas.md)
     
 - [Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
-- Visualizzare un elenco di [origini dati e registri di traffico Web](web-traffic-logs-and-data-sources-for-ocas.md)
+- Visualizzare un elenco di [log del traffico Web e origini dati](web-traffic-logs-and-data-sources-for-ocas.md) supportate
     
 

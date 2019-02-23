@@ -1,88 +1,88 @@
 ---
-title: Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti
+title: Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection: M365-security-compliance
-description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizza la protezione di Office 365 avanzate rischio. Gli URL bloccati verranno applicate a messaggi di posta elettronica e documenti di Office in base ai criteri di collegamenti sicuro degli strumenti di analisi.
-ms.openlocfilehash: 261d85ce72de3a19ed4c2327d56fe1f32107781b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizzando Office 365 Advanced Threat Protection. Gli URL bloccati verranno applicati ai messaggi di posta elettronica e ai documenti di Office in base ai criteri dei collegamenti sicuri di ATP.
+ms.openlocfilehash: ad9c613221b94e61022b11541ee068e35e47cc70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995317"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213026"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Impostare un elenco di URL bloccato personalizzato con Office 365 degli strumenti di analisi provvisoria collegamenti
+# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> In questo articolo è destinato ai clienti aziendali. Se si è un utente principale per informazioni su collegamenti sicuro in Outlook, vedere [sicurezza avanzata Outlook.com](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali. Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Con [Office 365 avanzate Threat Protection](office-365-atp.md) (degli strumenti di analisi), l'organizzazione può avere un elenco personalizzato di indirizzi di siti Web (URL) che vengono bloccati. Quando viene bloccato un URL, persone, fare clic sui collegamenti all'URL bloccati vengono indirizzate a una [pagina di avviso](atp-safe-links-warning-pages.md) simile all'immagine seguente: 
+Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un elenco personalizzato di indirizzi Web (URL) bloccati. Quando viene bloccato un URL, gli utenti che fanno clic sui collegamenti all'URL bloccato vengono indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) simile all'immagine seguente: 
   
-![In questo sito è bloccato](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![Questo sito è bloccato](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-L'elenco degli URL bloccato è definito dal team di protezione di Office 365 dell'organizzazione e tale elenco si applica a tutti gli utenti dell'organizzazione che sono disponibili i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti. 
+L'elenco degli URL bloccati è definito dal team di sicurezza di Office 365 dell'organizzazione e questo elenco si applica a tutti gli utenti dell'organizzazione che sono soggetti ai criteri dei collegamenti sicuri di Office 365 ATP. 
   
-In questo articolo per informazioni su come configurare personalizzato URL elenco dei domini bloccati dell'organizzazione per [Strumenti di analisi collegamenti attendibili in Office 365](atp-safe-links.md).
+Leggere questo articolo per informazioni su come configurare l'elenco degli URL bloccati personalizzati dell'organizzazione per i [collegamenti sicuri di ATP in Office 365](atp-safe-links.md).
   
-## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Visualizzare o modificare un elenco personalizzato di URL bloccati
+## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Visualizzazione o modifica di un elenco personalizzato di URL bloccati
 
-[Degli strumenti di analisi collegamenti attendibili in Office 365](atp-safe-links.md) utilizza più elenchi, inclusi personalizzato URL elenco dei domini bloccati dell'organizzazione. Se si dispone delle autorizzazioni necessarie, è possibile impostare elenco personalizzato dell'organizzazione. Ottenere questo risultato modificando i criteri dell'organizzazione predefinito collegamenti sicuri.
+I [collegamenti sicuri di ATP in Office 365](atp-safe-links.md) utilizzano diversi elenchi, tra cui l'elenco URL bloccati personalizzato dell'organizzazione. Se si dispone delle autorizzazioni necessarie, è possibile configurare l'elenco personalizzato dell'organizzazione. A tale scopo, modificare il criterio collegamenti sicuri predefinito dell'organizzazione.
 
-Per modificare o definire i criteri degli strumenti di analisi, è necessario assegnare uno dei ruoli descritti nella tabella riportata di seguito: 
+Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno dei ruoli descritti nella tabella seguente: 
 
-|Ruolo  |Modalità assegnato  |
+|Ruolo  |Dove/come assegnato  |
 |---------|---------|
-|Amministratore globale di Office 365 |La persona che iscrizione acquistare Office 365 è un amministratore globale per impostazione predefinita. Vedere [ruoli di amministratore su Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per ulteriori informazioni.         |
-|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management |Interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
+|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
+|Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Per ulteriori informazioni sui ruoli e autorizzazioni, vedere [autorizzazioni in Office 365 Security &amp; centro conformità](permissions-in-the-security-and-compliance-center.md).
+> Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Per visualizzare o modificare un elenco degli URL bloccato personalizzato
+### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Per visualizzare o modificare un elenco di URL bloccati personalizzato
   
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione. 
     
-2. Nel riquadro di spostamento sinistro, in **gestione rischio**, scegliere **criterio** \> **Collegamenti sicuri**.
+2. Nella barra di spostamento a sinistra, in **gestione minacce**, scegliere **collegamenti sicuri**per i **criteri** \> .
     
-3. Nella sezione **criteri che si applicano all'intera organizzazione** , selezionare **predefinito**e quindi fare clic su **Modifica** (pulsante Edit a forma di una matita).<br/>![Fare clic su Modifica per modificare il criterio predefinito per la protezione collegamenti sicuri](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>In questo modo è possibile visualizzare l'elenco degli URL bloccati. Inizialmente, non si dispone di tutti gli URL elencati di seguito.<br/>![Elenco degli URL nel criterio predefinito sicuro collegamenti bloccati](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>In questo modo è possibile visualizzare l'elenco degli URL bloccati. All'inizio, potrebbe non essere presente alcun URL.<br/>![Elenco degli URL bloccati nel criterio collegamenti sicuri predefinito](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
-4. Selezionare la casella **Immettere un URL valido** , digitare un URL e quindi fare clic sul segno più (**+**). 
+4. Selezionare la casella **immettere un URL valido** , digitare un URL e quindi scegliere il segno di addizione**+**(). 
 
-5. Dopo aver aggiunto gli URL, nell'angolo inferiore destro dello schermo, scegliere **Salva**.
+5. Dopo aver aggiunto gli URL, fare clic su **Salva**nell'angolo in basso a destra dello schermo.
     
 ## <a name="a-few-things-to-keep-in-mind"></a>Alcuni aspetti da tenere presenti
 
-Quando si aggiunge gli URL all'elenco, tenere presente i punti seguenti: 
+Quando si aggiungono URL all'elenco, tenere presente quanto segue: 
 
-- Non includere una barra ( **/**) alla fine dell'URL. Ad esempio, invece di immettere `http://www.contoso.com/`, immettere `http://www.contoso.com`.
+- Non includere una barra ( **/**) alla fine dell'URL. Ad esempio, invece di immettere `http://www.contoso.com/`, immetti `http://www.contoso.com`.
     
-- È possibile specificare un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com`). Ciò Blocca clic in qualsiasi URL che contiene il dominio.
+- È possibile specificare un URL di solo dominio (come `contoso.com` or `tailspintoys.com`). Questo bloccherà gli scatti su qualsiasi URL che contiene il dominio.
 
-- È possibile specificare un sottodominio (ad esempio `toys.contoso.com*`) senza bloccare un dominio completo (ad esempio `contoso.com`). Questo viene blocco fa clic su un URL contenente il sottodominio, ma non si blocca clic su un URL che contiene il dominio completo.  
+- È possibile specificare un sottodominio (come `toys.contoso.com*`) senza bloccare un dominio completo (come `contoso.com`). Questo blocco farà clic su qualsiasi URL contenente il sottodominio, ma non bloccherà i clic su un URL che contiene il dominio completo.  
     
-- È possibile includere fino a tre caratteri jolly asterischi (\*) per ogni URL. Nella tabella seguente sono elencate sono riportati alcuni esempi di è possibile immettere e quali effect tali voci.
+- È possibile includere fino a tre asterischi jolly (\*) per URL. Nella tabella seguente sono elencati alcuni esempi di elementi che è possibile immettere e quali sono gli effetti di tali voci.
     
-|**Voce di esempio**|**Funzione**|
+|**Voce di esempio**|**Cosa fa**|
 |:-----|:-----|
-|`contoso.com`o`*contoso.com*`  <br/> |Blocca il dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com`, `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Blocca un sito `http://contoso.com/a` ma, come percorsi secondari non aggiuntive`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Blocca un sito `http://contoso.com/a` e i percorsi secondari aggiuntive`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Blocca un sottodominio ("toys" in questo caso) ma Consenti clic agli altri URL di dominio (ad esempio `http://contoso.com` o `http://home.contoso.com`).  <br/> |
+|`contoso.com`o`*contoso.com*`  <br/> |Blocca il dominio, i sottodomini e i percorsi, ad esempio `https://www.contoso.com` `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
+|`http://contoso.com/a`  <br/> |Blocca un sito `http://contoso.com/a` , ma non altri percorsi secondari come`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Blocca un sito `http://contoso.com/a` e altri percorsi secondari come`http://contoso.com/a/b`  <br/> |
+|`http://toys.contoso.com*`  <br/> |Blocca un sottodominio ("giocattoli" in questo caso), ma consente di fare clic su altri URL `http://contoso.com` di `http://home.contoso.com`dominio (come or).  <br/> |
    
 
-## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Come definire le eccezioni per utenti specifici in un'organizzazione
+## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Come definire le eccezioni per alcuni utenti di un'organizzazione
 
-Se si desidera determinati gruppi siano in grado di visualizzare gli URL che potrebbe essere bloccati per altri utenti, è possibile specificare un criterio degli strumenti di analisi collegamenti sicuri da applicare a destinatari specifici. Vedere [impostare un "non di riscrittura" URL elenco personalizzato utilizzo degli strumenti di analisi dei collegamenti sicuri](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+Se si desidera che alcuni gruppi siano in grado di visualizzare gli URL che potrebbero essere bloccati per gli altri utenti, è possibile specificare un criterio per i collegamenti sicuri ATP che si applica a destinatari specifici. Vedere [configurare un elenco di URL "non riscrivere" personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
   
 

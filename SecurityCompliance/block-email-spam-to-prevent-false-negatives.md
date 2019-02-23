@@ -1,25 +1,10 @@
 ---
-title: Bloccare la posta indesiderata utilizzando il filtro di Office 365 per evitare problemi di falsi negativi
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 7/2/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
-search.appverid:
+title: "blocca la posta indesiderata con il filtro di posta indesiderata di Office 365 per evitare problemi di falsi negativi" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 7/2/2018 ms. audience: admin ms. Topic: articolo ms. Service: O365-seccomp localization_priority: priorità search. appverid: 
 - MOE150
-- MET150
-ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
-description: Suggerimenti per configurare il filtro protezione da posta indesiderata di Office 365 per bloccare la posta indesiderata ed evitare messaggi di falsi negativi. Un amministratore usa il filtro protezione da posta indesiderata di Office 365 per impedire l'invio di posta indesiderata alla posta in arrivo degli utenti.
-ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769870"
+- MET150 ms. AssetID: da21c0b6-e8f0-4CC8-af2e-5029a9433d59 ms. Collection:
+    - M365-Security-Compliance Description: "suggerimenti per configurare il filtro di posta indesiderata di Office 365 per bloccare la posta indesiderata e impedire messaggi falsi negativi, un amministratore utilizza il filtro antispam di Office 365 per impedire l'invio di posta indesiderata alle cassette postali degli utenti".
 ---
+
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Bloccare la posta indesiderata utilizzando il filtro di Office 365 per evitare problemi di falsi negativi
 
 Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che contribuisce a proteggere l'organizzazione da posta indesiderata e malware. Se si dispone di cassette postali in Office 365, queste sono già protette per impostazione predefinita con Exchange Online Protection (EOP). 
@@ -34,38 +19,38 @@ Un amministratore può utilizzare diverse impostazioni del filtro protezione da 
 
 È possibile personalizzare il filtro protezione da posta indesiderata di Office 365 aggiungendo l'indirizzo IP del mittente all'elenco indirizzi IP bloccati del filtro connessioni:
   
-1. Ottenere le intestazioni del messaggio da bloccare nel client di posta come Outlook o Outlook Web App, come descritto in [Analizzatore intestazione messaggio](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+1. Ottenere le intestazioni del messaggio che si desidera bloccare nel client di posta elettronica, ad esempio Outlook o Outlook sul Web (in precedenza noto come Outlook Web App), come descritto nell'analizzatore dell' [intestazione dei messaggi](https://go.microsoft.com/fwlink/p/?LinkId=306583).
     
 2. Cercare l'indirizzo IP dopo il tag CIP nell'intestazione X-Forefront-Antispam-Report tramite l'[analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha) o manualmente. 
     
-3. Aggiungere l'indirizzo IP all'elenco indirizzi IP bloccati seguendo la procedura in "Utilizzare EAC per modificare il criterio del filtro connessioni predefinito" in [Configurare il criterio del filtro connessioni](https://technet.microsoft.com/it-IT/library/jj200718%28v=exchg.150%29.aspx).
+3. Aggiungere l'indirizzo IP all'elenco indirizzi IP bloccati seguendo la procedura in "Utilizzare EAC per modificare il criterio del filtro connessioni predefinito" in [Configurare il criterio del filtro connessioni](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
 ### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Bloccare i messaggi in blocco con regole di trasporto o con il filtro protezione da posta indesiderata
 
-La posta indesiderata è per lo più composta da posta inviata in massa, come ad esempio, newsletter o promozioni? È possibile personalizzare il filtro protezione da posta indesiderata in Office 365 se si [usano regole di trasporto per filtrare in modo aggressivo i messaggi di posta elettronica inviati in massa](https://technet.microsoft.com/it-IT/library/dn720438%28v=exchg.150%29.aspx) o attivare l'impostazione **Invio di posta in blocco** nelle [Opzioni ASF](https://technet.microsoft.com/it-IT/library/jj200750%28v=exchg.150%29.aspx) del filtro protezione da posta indesiderata. Nell'interfaccia di amministrazione di Exchange, iniziare facendo clic su **Protezione** \> **Filtro contenuto**, quindi fare doppio clic sul criterio del filtro da modificare. Fare clic su **Azioni posta inviata in massa e indesiderata** per modificare le impostazioni, come mostrato qui. 
+La posta indesiderata è per lo più composta da posta inviata in massa, come ad esempio, newsletter o promozioni? È possibile personalizzare il filtro protezione da posta indesiderata in Office 365 se si [usano regole di trasporto per filtrare in modo aggressivo i messaggi di posta elettronica inviati in massa](https://technet.microsoft.com/en-us/library/dn720438%28v=exchg.150%29.aspx) o attivare l'impostazione **Invio di posta in blocco** nelle [Opzioni ASF](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx) del filtro protezione da posta indesiderata. Nell'interfaccia di amministrazione di Exchange, iniziare facendo clic su **Protezione** \> **Filtro contenuto**, quindi fare doppio clic sul criterio del filtro da modificare. Fare clic su **Azioni posta inviata in massa e indesiderata** per modificare le impostazioni, come mostrato qui. 
   
 ![Impostazione del filtro di posta inviata in blocco in Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloccare la posta indesiderata tramite gli elenchi elementi bloccati del filtro protezione da posta indesiderata
 
-[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/it-IT/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
+[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
   
 ### <a name="advanced-spam-filtering-options"></a>Opzioni avanzate per il filtraggio della posta indesiderata
 
-[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/it-IT/library/jj200684%28v=exchg.150%29.aspx) e attivare ulteriori [opzioni ASF](https://technet.microsoft.com/it-IT/library/jj200750%28v=exchg.150%29.aspx).
+[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) e attivare ulteriori [opzioni ASF](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx).
   
 Per maggiori informazioni sulle impostazioni relative alla posta indesiderata per un'intera organizzazione, consultare [Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](prevent-email-from-being-marked-as-spam-0.md). Questo articolo è utile se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Anche gli utenti di posta elettronica possono contribuire a garantire che i falsi negativi e la posta indesiderata vengano bloccati con il filtro protezione da posta indesiderata di Office 365
 
-Può risultare utile per le iniziative di protezione dalla posta indesiderata di Office 365 volte a evitare falsi negativi e posta indesiderata, dire agli utenti di aggiungere l'indirizzo del mittente della posta indesiderata all'elenco dei mittenti bloccati in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) o [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=294862). In Outlook Web App, iniziare facendo clic su **impostazioni** \> **Opzioni** \> **Blocca o consenti**, quindi aggiungere l'indirizzo all'elenco **Mittenti bloccati**, come illustrato di seguito. 
+Aiuterà gli sforzi di protezione da posta indesiderata di Office 365 per impedire falsi negativi e posta indesiderata se gli utenti desiderano aggiungere l'indirizzo del mittente di posta indesiderata all'elenco di mittenti bloccati in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) o [Outlook sul Web](https://go.microsoft.com/fwlink/p/?LinkId=294862). In Outlook sul Web, iniziare facendo **** \> clic su **Opzioni** \> **blocca o Consenti**e quindi aggiungendo l'indirizzo all'elenco dei **Mittenti bloccati** , come illustrato di seguito. 
   
-![Blocco di un mittente in Outlook Web App](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Blocco di un mittente in Outlook sul Web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Per informazioni più dettagliate sugli elenchi di mittenti attendibili, vedere [Domande frequenti sugli elenchi di mittenti attendibili e mittenti bloccati](https://technet.microsoft.com/it-IT/library/dn133608%28v=exchg.150%29.aspx). 
+> Per informazioni più dettagliate sugli elenchi di mittenti attendibili, vedere [Domande frequenti sugli elenchi di mittenti attendibili e mittenti bloccati](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
-I paragrafi precedenti di questa sottosezione si applicano solo ai clienti che usano EOP come servizio per proteggere i sistemi di posta elettronica in locale o nell'ambito di una distribuzione di posta elettronica ibrida. Altre informazioni su EOP sono disponibili nella [home page di Exchange Online Protection](https://products.office.com/it-IT/exchange/exchange-email-security-spam-protection).
+I paragrafi precedenti di questa sottosezione si applicano solo ai clienti che usano EOP come servizio per proteggere i sistemi di posta elettronica in locale o nell'ambito di una distribuzione di posta elettronica ibrida. Altre informazioni su EOP sono disponibili nella [home page di Exchange Online Protection](https://products.office.com/en-us/exchange/exchange-email-security-spam-protection).
   
 ## <a name="eop-only-customers-set-up-the-office-365-spam-filter-to-block-email-spam"></a>I clienti solo di Exchange Online Protection: devono configurare il filtro protezione da posta indesiderata di Office 365 per bloccare la posta indesiderata
 
@@ -94,7 +79,7 @@ Il servizio Exchange Online Protection è progettato per applicare i mittenti at
     Poiché il livello di probabilità di posta indesiderata è 0 nel server Exchange locale, la posta non contrassegnata come posta indesiderata verrà comunque recapitata nella posta in arrivo degli utenti, ma l'elenco mittenti bloccati locale degli utenti potrà comunque inviarla nella posta indesiderata. Se si usa la quarantena della posta indesiderata in EOP, è comunque possibile che i mittenti presenti nell'elenco mittenti attendibili vengano identificati come posta indesiderata e inviati in quarantena. Tuttavia, se si usa la cartella Posta indesiderata nella cassetta postale locale, in questo modo sarà possibile il recapito nella posta in arrivo dei mittenti attendibili.
 
 > [!WARNING]
-> Se si usa una regola del flusso di posta elettronica per impostare il valore SCL su 0 (o un valore diverso da -1), allora tutte le opzioni di posta indesiderata di Outlook verranno applicate al messaggio. Questo significa che verranno applicati gli elenchi di elementi attendibili e bloccati, ma anche che i messaggi i cui indirizzi non fanno parte di tali elenchi potrebbero essere contrassegnati come posta indesiderata dal filtro protezione da posta indesiderata sul lato client. Se si desidera che Outlook elabori gli elenchi di elementi attendibili e bloccati, ma non usi il filtro protezione da posta indesiderata sul lato client, è necessario impostare l'opzione "Filtro automatico disattivato" nelle opzioni della posta indesiderata di Outlook. "Filtro automatico disattivato" è l'opzione predefinita nelle ultime versioni di Outlook, ma è necessario verificare che tale impostazione sia attiva per garantire che il filtro protezione da posta indesiderata sul lato client non venga applicato ai messaggi. Gli amministratori possono imporre la disattivazione del filtro protezione da posta indesiderata di Outlook seguendo le istruzioni in [Outlook: impostazione dei criteri per disabilitare l'interfaccia utente della posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/it-IT/kb/2180568).
+> Se si usa una regola del flusso di posta elettronica per impostare il valore SCL su 0 (o un valore diverso da -1), allora tutte le opzioni di posta indesiderata di Outlook verranno applicate al messaggio. Questo significa che verranno applicati gli elenchi di elementi attendibili e bloccati, ma anche che i messaggi i cui indirizzi non fanno parte di tali elenchi potrebbero essere contrassegnati come posta indesiderata dal filtro protezione da posta indesiderata sul lato client. Se si desidera che Outlook elabori gli elenchi di elementi attendibili e bloccati, ma non usi il filtro protezione da posta indesiderata sul lato client, è necessario impostare l'opzione "Filtro automatico disattivato" nelle opzioni della posta indesiderata di Outlook. "Filtro automatico disattivato" è l'opzione predefinita nelle ultime versioni di Outlook, ma è necessario verificare che tale impostazione sia attiva per garantire che il filtro protezione da posta indesiderata sul lato client non venga applicato ai messaggi. Gli amministratori possono imporre la disattivazione del filtro protezione da posta indesiderata di Outlook seguendo le istruzioni in [Outlook: impostazione dei criteri per disabilitare l'interfaccia utente della posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/en-us/kb/2180568).
   
 ## <a name="see-also"></a>Vedere anche
 

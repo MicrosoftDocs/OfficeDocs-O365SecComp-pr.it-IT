@@ -1,12 +1,12 @@
 ---
-title: Risoluzione dei problemi di errore durante l'elaborazione dei dati
+title: Correzione degli errori durante l'elaborazione dei dati
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,78 +14,78 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 82e6d44ded64d586611f429f9b3eebe4f47e9898
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 0224e6bf750af209eefd47902f1f4a78200d1db1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607946"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215996"
 ---
-# <a name="error-remediation-when-processing-data"></a>Risoluzione dei problemi di errore durante l'elaborazione dei dati
+# <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
-Risoluzione dei problemi errore consente agli amministratori di eDiscovery la possibilità di risolvere i problemi di dati che impediscono l'elaborazione correttamente il contenuto eDiscovery avanzate (Preview). Ad esempio, i file protetti da password non possono essere elaborati poiché i file sono bloccati o crittografati. Utilizzo di correzione di errori, gli amministratori di eDiscovery possono scaricare i file con tali errori, rimuovere la password di protezione e caricare i file le.
+La correzione degli errori consente agli amministratori di eDiscovery di correggere i problemi relativi ai dati che impediscono l'elaborazione corretta del contenuto da parte di Advanced eDiscovery (Preview). Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli amministratori di eDiscovery possono scaricare i file con tale errore, rimuovere la protezione dalla password e caricare i file corretti.
 
-Utilizzare il flusso di lavoro seguente per correggere i file con errori in casi di eDiscovery avanzate (Preview).
+Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi di Advanced eDiscovery (Preview).
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creazione di una sessione di risoluzione dei problemi di errore per correggere i file con errori di elaborazione
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creazione di una sessione di correzione degli errori per la correzione dei file con errore di elaborazione
 
 >[!NOTE]
->Se l'in qualsiasi momento durante la procedura seguente viene chiusa la procedura guidata correzione dei problemi di errore, è possibile restituire alla sessione di risoluzione dei problemi di errore nella scheda **elaborazione** selezionando **rimedi errore** nel menu a discesa **Visualizza** .
+>Se la procedura guidata per la correzione degli errori viene chiusa in qualsiasi momento durante la routine seguente, è possibile tornare alla sessione di correzione degli errori dalla scheda **elaborazione** selezionando **correzioni di errore** nel menu a discesa **Visualizza** .
 
-1. Selezionare **gli errori** nel menu a discesa **Visualizza** scheda **elaborazione** in un caso eDiscovery avanzate (Preview).
+1. Nella scheda **elaborazione** in un caso avanzato di eDiscovery (anteprima), selezionare **errori** nel menu a discesa **Visualizza** .
 
-2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o tipo di file.  Nell'esempio seguente viene stiamo monitorare e aggiornare un file protetto da password.
+2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o al tipo di file.  Nell'esempio seguente, viene rimediato un file protetto da password.
 
-3. Fare clic su **+ Nuovo correzione di errore**.
+3. Fare clic su **+ nuova correzione degli errori**.
 
-    ![Risoluzione dei problemi di errore](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Correzione degli errori](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La sessione di risoluzione dei problemi di errore inizierà a partire da un passaggio di preparazione dove i file di questo errore relativo ai vengono spostati in una posizione sicura Azure da scaricare.
+    La sessione di correzione degli errori inizierà iniziando con una fase di preparazione in cui i file che hanno subito errori vengono spostati in una posizione di Azure sicura da scaricare.
 
-    ![Preparazione di correzione di errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Una volta completata la preparazione, fare clic su **successivo: file di Download** per continuare con il download.
+4. Dopo aver completato la preparazione, fare clic su **Avanti: scaricare i file** per continuare con il download.
 
-    ![Download dei file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Scaricare file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Questo è il percorso in cui deve essere scaricato il file nel computer locale.  Il percorso predefinito, % USERPROFILE%\Downloads\errors, corrisponde alla cartella di download dell'utente connesso. può essere modificata in base alle esigenze.
+5. Per scaricare i file, specificare il **percorso di destinazione per il download**. si tratta di un percorso del computer locale in cui deve essere scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Questo può essere modificato in base alle esigenze.
 
     >[!NOTE]
-    >È consigliabile utilizzare un percorso di file locale anziché un percorso di rete remota per ottenere prestazioni ottimali.
+    >È consigliabile utilizzare un percorso di file locale anziché un percorso di rete remoto per ottenere prestazioni ottimali.
 
     > [!NOTE]
-    > Se non ancora installato AzCopy, è possibile installare da qui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Se non è stato installato AzCopy, è possibile installarlo da qui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
-6. Copiare il comando predefinito fare clic su **Copia negli Appunti**. Avviare un prompt dei comandi di windows, incollare il comando e quindi premere **INVIO**.  
+6. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Avviare un prompt dei comandi di Windows, incollare il comando e quindi premere **invio**.  
 
-    I file vengono scaricati.
+    I file verranno scaricati.
 
-    ![Preparazione di correzione di errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Nel caso di problemi durante l'esecuzione di questo comando, vedere https://go.microsoft.com/fwlink/?linkid=2038117 per la risoluzione dei suggerimenti.
+     > In caso di problemi con questo comando, vedere https://go.microsoft.com/fwlink/?linkid=2038117 per suggerimenti per la risoluzione dei problemi.
 
-7. Dopo avere scaricato i file, è possibile correggere tali con uno strumento appropriato. Per i file protetti da password, sono disponibili numerosi strumenti che consentono di violazione delle password. Se si conoscono le password per i file, è possibile aprire e rimuovere la password di protezione.
+7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     > [!NOTE]
-    > IT è importante mantenere i nomi di file e struttura di directory dei file le quando viene spostato.  Tutte le convenzioni di denominazione utilizzate nei file scaricati e le cartelle consentono di associare i file remdiated originale.
+    > È importante mantenere intatte la struttura di directory e i nomi di file dei file corretti.  Tutte le convenzioni di denominazione utilizzate nei file e nelle cartelle scaricati consentono di associare nuovamente i file di remdiated all'originale.
 
-8. A questo punto, tornare a eDiscovery avanzate (Preview) e fare clic su **successivo: caricare i file**.  Questo verrà spostato il passaggio successivo dove è ora possibile caricare i file.
+8. A questo punto, tornare a Advanced eDiscovery (Preview) e fare clic su **Next: upload files**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 
-    ![Caricamento dei file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Caricare file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Specificare il percorso dei file le nella casella di testo **percorso dei file** , quindi fare clic su **Copia su clibpboard**.
+9. Specificare il percorso dei file corretti nella casella di testo **percorso alla posizione dei file** , quindi fare clic su **copia in clibpboard**.
 
-10. Incollare il comando in un prompt dei comandi di Windows e premere **INVIO** per caricare i file.
+10. Incollare il comando in un prompt dei comandi di Windows e premere **invio** per caricare i file.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629F-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Infine, tornare a eDiscovery avanzate (Preview) e fare clic su **successivo: elaborazione dei file**.
+11. Infine, tornare a Advanced eDiscovery (Preview) e fare clic su **Next: Process files**.
 
-12. Elaborazione quando è stata completata.  È possibile tornare a working set e visualizzare il file le.
+12. Quando l'elaborazione è completata.  È possibile tornare al working set e vedere il file correttivo.
 
-## <a name="what-happens-when-files-are-remediated"></a>Cosa succede quando i file vengono applicati i rimedi
+## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
 
-Quando le file vengono caricati, i metadati originali viene mantenuto fatta eccezione per i campi seguenti: 
+Quando vengono caricati file corretti, i metadati originali vengono mantenuti con l'eccezione dei campi seguenti: 
 
 - DocumentExtractedUrl
 - ExtractedTextSize
@@ -95,9 +95,9 @@ Quando le file vengono caricati, i metadati originali viene mantenuto fatta ecce
 - ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
-- StatoElaborazione
+- ProcessingStatus
 - Testo
 - WordCount
 - WorkingsetId
 
-Per una definizione di tutti i campi di metadati di documenti di eDiscovery avanzate (Preview), vedere [campi di metadati del documento](document-metadata-fields.md).
+Per una definizione di tutti i campi dei metadati del documento in Advanced eDiscovery (Preview), vedere [Document Metadata Fields](document-metadata-fields.md).

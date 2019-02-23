@@ -1,62 +1,62 @@
 ---
-title: Clonare una ricerca di contenuto in Office 365 protezione &amp; centro conformità
+title: Clonare una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/26/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nella protezione &amp; ricerca Compliane Center. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà di ricerca originale. È possibile modificare la nuova ricerca (modificando la query con parole chiave o l'intervallo di date) e quindi eseguire.
-ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente &amp; nella ricerca di Compliane Center di sicurezza. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query di parole chiave o l'intervallo di date e quindi eseguirlo.
+ms.openlocfilehash: 15f1ca5d00f03f510745fef7ae8418192a9eb448
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038049"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213546"
 ---
-# <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Clonare una ricerca di contenuto in Office 365 protezione &amp; centro conformità
+# <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Clonare una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365
 
-Creazione di una ricerca di contenuto in Office 365 Security &amp; centro conformità per la ricerca di una quantità elevata di cassette postali o SharePoint e OneDrive per i siti possono richiedere qualche minuto. Specificare i siti di ricerca può inoltre essere soggetto a errori se si digita un URL. Per evitare tali problemi, è possibile utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca (con un nome diverso) che contiene le proprietà stesse, quali i percorsi di contenuti e la query di ricerca, ricerca originale di. È quindi possibile modificare la nuova ricerca (modificando la query con parole chiave o l'intervallo di date) ed eseguirlo.
+Creazione di una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 che consente di eseguire ricerche in molte cassette postali o siti di SharePoint e OneDrive for business può richiedere un po' di tempo. La specifica dei siti da cercare può anche essere soggetta a errori se si digita un URL in modo improprio. Per evitare questi problemi, è possibile utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca, con un nome diverso, che contiene le stesse proprietà, ad esempio i percorsi di contenuto e la query di ricerca, come la ricerca originale. È quindi possibile modificare la nuova ricerca (modificando la query di parole chiave o l'intervallo di date) ed eseguirla.
   
-Clonare perché ricerche di contenuto?
+Perché clonare le ricerche di contenuto?
   
-- Per confrontare i risultati di diversa parole chiave delle query di ricerca eseguito sui percorsi di contenuti stessi.
+- Per confrontare i risultati delle diverse query di ricerca con parole chiave eseguite negli stessi percorsi di contenuto.
     
-- Per evitare di dover immettere di nuovo un numero elevato di percorsi di contenuti quando si crea una nuova ricerca.
+- Per evitare di dover immettere nuovamente un numero elevato di posizioni di contenuto quando si crea una nuova ricerca.
     
-- Ridurre le dimensioni dei risultati di ricerca; ad esempio, se si dispone di una ricerca restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca basata su un intervallo di date per ridurre il numero di risultati di ricerca.
+- Per ridurre le dimensioni dei risultati della ricerca; Se ad esempio si dispone di una ricerca che restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca in base a un intervallo di date per ridurre il numero di risultati della ricerca.
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- È necessario essere membri del gruppo di ruoli gestione eDiscovery in sicurezza &amp; centro conformità per eseguire lo script descritto in questo argomento.
+- Per eseguire lo script descritto in questo argomento, è necessario essere membri del gruppo &amp; di ruoli eDiscovery Manager nel centro sicurezza e conformità.
     
-- Lo script include la gestione degli errori o molto ridotto. Lo scopo principale dello script deve rapidamente clonare una ricerca di contenuto.
+- Lo script include la gestione degli errori minima. Lo scopo principale dello script è di clonare velocemente una ricerca di contenuto.
     
-- Lo script consente di creare una nuova ricerca contenuto, ma non viene avviato.
+- Lo script crea una nuova ricerca del contenuto, ma non la avvia.
     
-- Questo script prende in considerazione se la ricerca del contenuto da clonare è associata a un caso eDiscovery. Se la ricerca è associata a un caso, la nuova ricerca anche sarà associata lo stesso caso. Se la ricerca non è associata a un caso, la nuova ricerca verrà elencata la pagina di **ricerca del contenuto** per la protezione &amp; centro conformità. 
+- Questo script tiene conto del fatto che la ricerca di contenuto che si sta clonando è associata a un caso di eDiscovery. Se la ricerca è associata a un caso, la nuova ricerca verrà associata anche allo stesso caso. Se la ricerca esistente non è associata a un caso, la nuova ricerca verrà elencata nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità. 
     
-- Lo script di esempio fornito in questo argomento non è supportato in qualsiasi programma Microsoft supporto standard o del servizio. Lo script di esempio viene fornito così com'è senza garanzie di alcun tipo. Microsoft ha non riconosce tutte le garanzie implicite, in via esemplificativa, una garanzia di commerciabilità o idoneità per uno scopo specifico. Tutti i rischi derivanti dall'utilizzo o di script di esempio e documentazione rimangono con l'utente. In alcun caso Microsoft, relativi autori o altre posizioni necessarie per la creazione, produzione o recapito degli script di tutti gli utenti saranno responsabili per danni (incluso, in via esemplificativa, danni per mancato guadagno, interruzione delle attività, la perdita di perdita le informazioni aziendali o altre perdite economiche) derivanti dall'utilizzo di o impossibilità di utilizzare script di esempio o documentazione, anche se Microsoft è stati informati della possibilità di tali danni.
+- Lo script di esempio fornito in questo argomento non è supportato in alcun servizio o programma di supporto Microsoft standard. Lo script di esempio viene fornito come senza garanzie di alcun tipo. Microsoft nega inoltre tutte le garanzie implicite, incluse, senza limitazioni, le garanzie implicite di commerciabilità o di idoneità per uno scopo specifico. L'intero rischio derivante dall'utilizzo o dalle prestazioni dello script di esempio e della documentazione resta all'interno dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script sarà responsabile per eventuali danni (compresi, senza limitazione, i danni per perdita degli utili aziendali, interruzioni aziendali, perdita di informazioni aziendali o altre perdite pecuniarie) derivanti dall'utilizzo o dall'impossibilità di utilizzare gli script di esempio o la documentazione, anche se Microsoft è stata avvisata della possibilità di tali danni.
   
-## <a name="step-1-run-the-script-to-clone-a-search"></a>Passaggio 1: Eseguire lo script per clonare una ricerca
+## <a name="step-1-run-the-script-to-clone-a-search"></a>Passaggio 1: eseguire lo script per clonare una ricerca
 
-Lo script in questo passaggio verrà creato una nuova ricerca del contenuto mediante la clonazione di una esistente. Quando si esegue questo script, verrà richiesto di immettere le informazioni seguenti:
+Nello script di questo passaggio viene creata una nuova ricerca di contenuto clonando un'altra esistente. Quando si esegue questo script, vengono richieste le informazioni seguenti:
   
-- **Le credenziali dell'utente** - lo script utilizzeranno le credenziali per connettersi alla protezione di &amp; centro conformità per l'organizzazione Office 365 con Windows PowerShell. Come affermato in precedenza, è necessario essere membri del gruppo di ruoli gestione eDiscovery in sicurezza &amp; centro conformità per eseguire lo script. 
+- **Credenziali utente** : lo script utilizzerà le credenziali per connettersi al centro sicurezza &amp; e conformità per l'organizzazione di Office 365 con Windows PowerShell. Come indicato in precedenza, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza &amp; e conformità per eseguire lo script. 
     
-- **Il nome di ricerca esistente** - contenuto di ricerca che si desidera clonare. 
+- **Il nome della ricerca esistente** , ovvero la ricerca di contenuto che si desidera clonare. 
     
-- **Il nome della nuova ricerca che verrà creata** - se si lascia vuoto questo valore, lo script creerà un nome per la nuova ricerca che si basa sul nome della ricerca da clonare. 
+- **Nome della nuova ricerca che verrà creata** : se si lascia vuoto questo valore, lo script creerà un nome per la nuova ricerca basata sul nome della ricerca che si sta clonando. 
     
 Per clonare una ricerca:
   
-1. Salvare il testo seguente in un file di script di Windows PowerShell con il suffisso filename. ps1; ad esempio `CloneSearch.ps1`.
+1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `CloneSearch.ps1`.
     
   ```
   # This PowerShell script clones an existing Content Search in the Office 365 Security &amp; Compliance Center
@@ -118,28 +118,28 @@ Per clonare una ricerca:
 
 2. Aprire Windows PowerShell e passare alla cartella in cui è stato salvato lo script.
     
-3. Eseguire lo script. Per esempio:
+3. Eseguire lo script; Per esempio:
     
     ```
     .\CloneSearch.ps1
     ```
 
-4. Quando richiesto per le proprie credenziali, immettere l'indirizzo di posta elettronica e la password e quindi fare clic su **OK**.
+4. Quando vengono richieste le credenziali, immettere l'indirizzo di posta elettronica e la password, quindi fare clic su **OK**.
     
-5. Immettere il seguente informazioni quando viene richiesto dallo script. Digitare ogni informazione e quindi premere **INVIO**.
+5. Immettere le informazioni seguenti quando richiesto dallo script. Digitare ogni informazione e quindi premere **invio**.
     
-    - Il nome di ricerca esistente.
+    - Nome della ricerca esistente.
     
-    - Il nome della nuova ricerca.
+    - Nome della nuova ricerca.
     
-    Lo script consente di creare la nuova ricerca contenuto, ma non viene avviato. Offre la possibilità di modificare ed eseguire la ricerca nel passaggio successivo. È possibile visualizzare le proprietà della nuova ricerca eseguendo il cmdlet **Get-ComplianceSearch** o passando alla pagina di **ricerca del contenuto** o **eDiscovery** in sicurezza &amp; centro conformità, a seconda che sia o meno la nuova ricerca associati a un caso. 
+    Lo script crea la nuova ricerca del contenuto, ma non la avvia. In questo modo è possibile modificare ed eseguire la ricerca nel passaggio successivo. Per visualizzare le proprietà della nuova ricerca, è possibile eseguire il cmdlet **Get-ComplianceSearch** o andare alla pagina **Ricerca contenuto** o **eDiscovery** nel centro sicurezza &amp; e conformità, a seconda che la nuova ricerca sia o meno associato a un caso. 
   
-## <a name="step-2-edit-and-run-the-cloned-search-in-the-security-amp-compliance-center"></a>Passaggio 2: Modificare ed eseguire la ricerca clonata nella protezione &amp; centro conformità
+## <a name="step-2-edit-and-run-the-cloned-search-in-the-security-amp-compliance-center"></a>Passaggio 2: modificare ed eseguire la ricerca clonata nel centro sicurezza &amp; e conformità
 
-Dopo di aver eseguito lo script per clonare una ricerca di contenuto esistente, il passaggio successivo consiste nel passare a sicurezza &amp; centro conformità modificare ed eseguire la ricerca di nuova. Come affermato in precedenza, è possibile modificare una ricerca modificando la query di ricerca e aggiunta o rimozione di criteri di ricerca. Per ulteriori informazioni, vedere:
+Dopo aver eseguito lo script per clonare una ricerca di contenuto esistente, il passaggio successivo consiste nel passare al centro sicurezza &amp; e conformità per modificare ed eseguire la nuova ricerca. Come indicato in precedenza, è possibile modificare una ricerca modificando la query di ricerca con parole chiave e aggiungendo o rimuovendo le condizioni di ricerca. Per ulteriori informazioni, vedere:
   
-- [Ricerca del contenuto in Office 365](content-search.md)
+- [Ricerca contenuto in Office 365](content-search.md)
     
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
     
-- [casi di eDiscovery in Office 365 Security &amp; centro conformità](ediscovery-cases.md)
+- [casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](ediscovery-cases.md)

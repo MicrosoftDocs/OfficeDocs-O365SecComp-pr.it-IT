@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,31 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d4328971a6b13c60c4d8b9f5b6db310d72a5b215
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a3c4f940c34a9c51bf58107d10e04d0ed60f28a8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29705997"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213426"
 ---
 # <a name="email-threading"></a>Threading posta elettronica
 
-È consigliabile una conversazione di posta elettronica succedendo per un po' di tempo. Nella maggior parte dei casi, il messaggio di posta elettronica ultimo sul thread includerà il contenuto di tutti i precedenti messaggi di posta elettronica; Per ottenere un contesto completo della conversazione che si sono verificati il thread, esaminare l'ultimo messaggio di posta elettronica. Messaggio di posta elettronica threading identifica tali messaggi di posta elettronica in modo che i revisori possono esaminare una frazione di raccolte documenti senza perdere alcun contesto.
+Si conSideri una conversazione di posta elettronica che si sta protrattando da un po' di tempo. Nella maggior parte dei casi, l'ultimo messaggio di posta elettronica sul thread includerà il contenuto di tutti i messaggi di posta elettronica precedenti. la revisione dell'ultimo messaggio di posta elettronica fornirà un contesto completo della conversazione che è stata eseguita nel thread. Il threading E-mail identifica tali messaggi di posta elettronica in modo che i revisori possano rivedere una frazione dei documenti raccolti senza perdere alcun contesto.
 
-## <a name="what-does-email-threading-do"></a>Che cosa threading posta elettronica?
+## <a name="what-does-email-threading-do"></a>Cosa fa il threading della posta elettronica?
 
-Messaggio di posta elettronica threading analizza ogni messaggio di posta elettronica e desconstructs per singoli messaggi. ogni messaggio di posta elettronica è una serie di singoli messaggi. Quindi, analizza tutti i messaggi di posta elettronica nel working set per determinare se un messaggio di posta elettronica con contenuto univoco o se la catena interamente contenuta in un messaggio di posta elettronica diverso. Alla fine messaggi di posta elettronica sono suddivise in quattro categorie:
+Il threading della posta elettronica analizza ogni messaggio di posta elettronica e lo desconstructs ai singoli messaggi; ogni messaggio di posta elettronica è una catena di singoli messaggi. Quindi, analizza tutti i messaggi di posta elettronica nel working set per determinare se un messaggio di posta elettronica ha contenuto univoco o se la catena è totalmente contenuta in un altro indirizzo di posta elettronica. Alla fine i messaggi di posta elettronica sono divisi in quattro categorie:
 
-- **Inclusivo**: dell'ultimo messaggio nella posta elettronica con contenuto univoco e il messaggio di posta elettronica dispone di tutti gli allegati che sono stati inclusi in altri messaggi di posta elettronica di cui il contenuto è completamente contenuto in questo messaggio di posta elettronica.
+- **Inclusive**: l'ultimo messaggio nella posta elettronica ha contenuto univoco e l'indirizzo di posta elettronica include tutti gli allegati inclusi in altri messaggi di posta elettronica di cui il contenuto è totalmente contenuto in questa e-mail.
 
 
-- **Inclusivo meno**: dell'ultimo messaggio nella posta elettronica con contenuto univoco, ma il messaggio di posta elettronica non contiene alcuni degli allegati che sono stati inclusi in altri messaggi di posta elettronica di cui il contenuto è completamente contenuto in questo messaggio di posta elettronica.
+- **Inclusive minus**: l'ultimo messaggio nella posta elettronica ha contenuto univoco, ma la posta elettronica non contiene alcuni degli allegati che sono stati inclusi in altri messaggi di posta elettronica di cui il contenuto è totalmente contenuto in questo indirizzo di posta elettronica.
 
-- **Copia inclusivo**: una copia esatta di un inclusi/inclusi meno posta elettronica
+- **Copia inclusiva**: una copia esatta di un messaggio di posta elettronica incluso/incluso
 
-- **None**: il contenuto di questo messaggio di posta elettronica interamente contenuto in almeno un messaggio di posta elettronica è contrassegnato come sottrazione inclusi/inclusi.
+- **None**: il contenuto di questo messaggio di posta elettronica è totalmente contenuto in almeno un messaggio di posta elettronica contrassegnato come incluso/inclusivo meno.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>Qual è la differenza dalle conversazioni di Outlook?
-In breve, questo suoni molto simile a raggruppamenti di conversazione in Outlook. Esistono tuttavia alcune differenze importanti. Prendere in considerazione una conversazione di posta elettronica che ha ricevuto inoltrata a due conversazione; ad esempio, un utente ha risposto a un messaggio di posta elettronica che non è più recente della conversazione in modo che le ultime due messaggi di posta elettronica nella conversazione entrambi con contenuto univoco.
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>In che modo è diversa dalle conversazioni in Outlook?
+A colpo d'occhio, questo sembra molto simile ai gruppi di conversazione in Outlook. Tuttavia, esistono alcune distinzioni importanti. Si conSideri una conversazione di posta elettronica che è stata biforcuta in due conversazioni; ad esempio, qualcuno ha risposto a un messaggio di posta elettronica che non è l'ultimo della conversazione in modo che gli ultimi due messaggi di posta elettronica nella conversazione abbiano entrambi contenuto univoco.
 
-Outlook ancora per raggruppare i messaggi di posta elettronica in una singola conversazione; leggere l'ultima email implica manca il contesto della posta elettronica al penultimo, che contiene anche contenuto univoco. Poiché posta threading analizza ogni messaggio di posta elettronica in singoli componenti e li confronta, posta elettronica threading contrassegna entrambe le ultime due messaggi di posta elettronica come inclusives, assicurarsi che non perdere alcun contesto come leggere contrassegnato come inclusi tutti i messaggi di posta elettronica.
+Outlook potrebbe comunque raggruppare i messaggi di posta elettronica in una singola conversazione; leggere solo l'ultimo messaggio di posta elettronica significherebbe mancare il contesto del penultimo messaggio di posta elettronica, che contiene anche contenuti univoci. Poiché il threading della posta elettronica analizza tutti i messaggi di posta elettronica in singoli componenti e li confronta, il threading della posta elettronica contrassegna entrambi gli ultimi due messaggi di posta elettronica come inclusivi, assicurando che non mancherà alcun contesto purché vengano lette tutte le e-mail contrassegnate come inclusive.

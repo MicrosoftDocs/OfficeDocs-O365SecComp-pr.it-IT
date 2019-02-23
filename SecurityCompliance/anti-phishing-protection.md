@@ -1,48 +1,33 @@
 ---
-title: Protezione anti-phishing in Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 10/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-description: Office 365 offre un'ampia gamma di protezione contro gli attacchi di phishing, per impostazione predefinita, nonché ulteriori offerte, ad esempio anti-phishing degli strumenti di analisi. In questo argomento vengono presentate le risorse online che è possibile utilizzare per conoscere e implementare strategie e le opzioni di protezione anti-phishing in Office 365.
-ms.openlocfilehash: 163d03ee49ccf18f7d50324e0ac13ac6d219a4ea
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496880"
+title: "protezione anti-phishing in Office 365" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 10/11/2018 ms. audience: ITPro ms. Topic: article ms. Service: O365-seccomp localization_priority: Normal search. appverid:
+- MET150 ms. AssetID: 75af74b2-c7ea-4556-A912-8c48e07271d3 ms. Collection:
+    - M365-Security-Compliance Description: "Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.
 ---
+
 # <a name="anti-phishing-protection-in-office-365"></a>Protezione anti-phishing in Office 365
 
-Office 365 offre un'ampia gamma di protezione contro gli attacchi di phishing, per impostazione predefinita, nonché ulteriori offerte, ad esempio anti-phishing degli strumenti di analisi. In questo argomento vengono presentate le risorse online che è possibile utilizzare per conoscere e implementare strategie e le opzioni di protezione anti-phishing in Office 365.
+Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte, come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.
   
 ## <a name="protect-your-organization-against-phishing-attacks-in-office-365"></a>Proteggere l'organizzazione da attacchi di phishing in Office 365
 
-Amministratore di Office 365, utilizza queste risorse per imparare a utilizzare Office 365 per la protezione da attacchi di phishing basato su rappresentazione e che consentono di informare gli utenti finali in modo che non rientrano sfruttano ad attacchi dannosi phishing.
+In qualità di amministratore di Office 365, utilizzare queste risorse per informazioni sull'utilizzo di Office 365 per la protezione da attacchi di phishing basati sulla rappresentazione e per facilitare l'istruzione degli utenti finali in modo che non cadano preda di attacchi di phishing dannosi.
   
-Prima di apportare le modifiche alla configurazione di Office 365, verificare che l'utente sia aggiornato sull'ultima disponibili in Office 365. [Visitare la sicurezza Microsoft &amp; Centro sicurezza PC](https://www.microsoft.com/security/default.aspx).
+Prima di apportare le modifiche apportate alla configurazione di Office 365, verificare di essere aggiornati sull'ultima versione di Office 365 che è in grado di offrire. [Visitare il centro &amp; sicurezza protezione Microsoft](https://www.microsoft.com/security/default.aspx).
   
-La parte più importante che è possibile eseguire per proteggere l'ambiente è formare gli utenti sui pericoli e i segni di avviso di attacchi di phishing. Per iniziare, acquisire gli utenti con le informazioni di [proteggersi dalla truffe e altre forme di truffe in rete](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+La cosa più importante che è possibile eseguire per proteggere l'ambiente consiste nell'educare gli utenti ai pericoli e ai segnali di avviso di attacchi di phishing. Per iniziare, familiarizzare gli utenti con le informazioni in [proteggersi da schemi di phishing e altre forme di frode online](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
   
-Per organizzazioni di Office 365 con Office Enterprise E5, è possibile utilizzare degli strumenti di analisi anti-phishing in sicurezza &amp; centro conformità. Anti-phishing degli strumenti di analisi si applica un insieme di modelli di apprendimento automatica insieme ad algoritmi di rilevamento di rappresentazione per i messaggi in arrivo per fornire la protezione per gli attacchi di phishing merce e spear. Protezione anti-phishing degli strumenti di analisi consente di proteggere l'organizzazione in base ai criteri impostati dagli amministratori della protezione globali di Office 365. Per ulteriori informazioni, vedere [funzionalità di protezione anti-phishing degli strumenti di analisi in Office 365](atp-anti-phishing.md) e [impostare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md).
+Per le organizzazioni di Office 365 con Office Enterprise E5, è possibile utilizzare il anti-phishing ATP &amp; nel centro sicurezza e conformità. ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. L'anti-phishing ATP protegge l'organizzazione in base ai criteri impostati dagli amministratori globali o di sicurezza di Office 365. Per ulteriori informazioni, vedere [funzionalità di anti-phishing ATP in office 365](atp-anti-phishing.md) e [configurare i criteri di anti-phishing in Office 365](set-up-anti-phishing-policies.md).
   
-Per ulteriori informazioni sulla configurazione di Office 365 per impostazione predefinita per la protezione da attacchi di phishing, vedere [come Office 365 convalida From: indirizzo per impedire phishing](how-office-365-validates-the-from-address.md).
+Per ulteriori informazioni sul modo in cui Office 365 è configurato per impostazione predefinita per proteggersi dagli attacchi di phishing, vedere [How office 365 convalidates the from: Address to Impedisci phishing](how-office-365-validates-the-from-address.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Come Office 365 convalida l’indirizzo del mittente per impedire il phishing](how-office-365-validates-the-from-address.md)
+[Come Office 365 verifica l'indirizzo del mittente per bloccare il phishing](how-office-365-validates-the-from-address.md)
   
-[Protezione da schemi di phishing e altre forme di truffe in rete](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
+[Proteggersi da schemi di phishing e altre forme di frode online](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
+[Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   
 

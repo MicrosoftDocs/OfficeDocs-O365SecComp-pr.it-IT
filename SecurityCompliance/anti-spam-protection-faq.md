@@ -1,31 +1,15 @@
 ---
-title: Domande frequenti sulla protezione anti-spam
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003075"
+title: "domande frequenti sulla protezione da posta indesiderata" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. audience: ITPro ms. Topic: article ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: Normal search. appverid:
+- MET150 ms. AssetID: c534a35d-B121-45da-9d0a-ce738ce51fce ms. Collection:
+    - M365-Security-Compliance Description: "in questo argomento vengono fornite domande e risposte frequenti sulla protezione da posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP). "
 ---
-# <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione anti-spam
+
+# <a name="anti-spam-protection-faq"></a>DOMANDE frequenti sulla protezione da posta indesiderata
 
 In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Per domande e risposte su elenchi attendibili e mittenti bloccati, vedere [Mittenti attendibili e bloccati liste in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Per domande e risposte sulla quarantena, vedere [Domande frequenti sulla quarantena](quarantine-faq.md). 
+> Per domande e risposte sugli elenchi di mittenti attendibili e bloccati, vedere [elenchi di mittenti attendibili e mittenti bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Per domande e risposte sulla quarantena, vedere domande [frequenti](quarantine-faq.md)sulla quarantena. 
   
  **D. Per impostazione predefinita, cosa accade a un messaggio identificato come posta indesiderata?**
   
@@ -36,9 +20,9 @@ R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata vie
   
  **Per i messaggi in uscita:** Il messaggio viene instradato tramite il pool di recapito ad alto rischio o restituito e non recapitato. Nel secondo caso il mittente riceve una messaggio di notifica dello stato del recapito indicante l'impossibilità di recapitare il messaggio. 
   
- **D: che cos'è un valore variant posta indesiderata zero-day e come viene gestita dal servizio?**
+ **D. che cos'è una variante di posta indesiderata di zero-day e come viene gestita dal servizio?**
   
-R. una variante di posta indesiderata zero-day è una prima generazione, in precedenza sconosciuto variante della posta indesiderata che è stato mai acquisita o analizzata, in modo che i filtri del contenuto posta indesiderata non abbiano ancora eventuali informazioni disponibili per il rilevamento viene. Dopo un spam zero-day esempio acquisizione e analizzata tramite il nostro analisti di posta indesiderata, se soddisfa i criteri di classificazione da posta indesiderata, la posta indesiderata di contenuto per rilevare vengono aggiornati i filtri e non è considerata "zero-day." ( **Nota:** se viene visualizzato un messaggio che può essere un valore variant zero-day posta indesiderata, per migliorare il servizio, inviare il messaggio utilizzando uno dei metodi descritti in [Invia la posta indesiderata, posta non indesiderata e phishing i messaggi di phishing a Microsoft per Microsoft analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+A. una variante di posta indesiderata di zero-day è una variante di posta indesiderata di prima generazione sconosciuta che non è mai stata acquisita o analizzata, quindi i filtri del contenuto della posta indesiderata non dispongono ancora di informazioni disponibili per il rilevamento. Dopo che un campione di posta indesiderata di zero giorni viene acquisito e analizzato dai nostri analisti di posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri del contenuto di posta indesiderata vengono aggiornati per rilevarlo e non è più considerato "zero-day" ( **Nota:** se si riceve un messaggio che potrebbe essere una variante di posta indesiderata di zero giorni, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per Analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
   
  **D. È necessario configurare il servizio per fornire la protezione dalla posta indesiderata?**
   
@@ -50,7 +34,7 @@ Per ulteriori informazioni sulla configurazione dei criteri di protezione dalla 
   
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
   
-[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
  **D. Se viene modificato un criterio di posta indesiderata, quando tempo trascorre prima che modifiche vengano applicate?**
   
@@ -58,7 +42,7 @@ A. Fino a 1 ora.
   
  **D. Il filtro della posta elettronica in blocco è abilitato per impostazione predefinita?**
   
-R. per impostazione predefinita, la **posta inviata in blocco** avanzate opzione di filtraggio della posta indesiderata è abilitata per i nuovi clienti. Per gli utenti migrati, questa impostazione deve corrispondere alla configurazione di FOPE. Per ulteriori informazioni sulla posta elettronica in blocco, vedere [Qual è la differenza tra posta indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+A. per impostazione predefinita, è abilitata l'opzione filtro **posta** indesiderata avanzata per i nuovi clienti. Per i clienti migrati, questa impostazione corrisponderà alla configurazione di FOPE. Per ulteriori informazioni sulla posta elettronica in blocco, vedere [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md)
   
  **D. Il servizio offre filtro URL?**
   
@@ -70,11 +54,11 @@ R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per
   
  **D. È possibile ricevere rapporti sulla posta indesiderata?**
   
-R. Sì, ad esempio per ottenere un rapporto di rilevamento posta indesiderata nell'interfaccia di amministrazione di Office 365. Questo rapporto viene visualizzato da posta indesiderata volume il numero di messaggi univoci. Per ulteriori informazioni sulla creazione di report, vedere i collegamenti seguenti:
+A. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Office 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla creazione di report, vedere i collegamenti seguenti:
   
-Utenti di Exchange Online: [Monitoring, Reporting e messaggio tracciamento in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clienti di Exchange Online: [monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-I clienti di Exchange Online Protection: [report e traccia dei messaggi in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Clienti di Exchange Online Protection: [Reporting e traccia dei messaggi in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **D. Qualcuno mi ha inviato un messaggio ma non lo trovo. Sospetto che sia stato identificato come posta indesiderata. Esiste uno strumento per scoprirlo?**
   
@@ -82,9 +66,9 @@ R. Sì, lo strumento di traccia dei messaggi consente di seguire i messaggi di p
   
  **D: Il servizio limiterà la posta (limite di frequenza) se gli utenti inviano posta indesiderata in uscita?**
   
-R. Se più della metà della posta elettronica inviata da un utente tramite il servizio entro un determinato periodo di tempo (ad esempio, all'ora), è determinata da posta indesiderata da Office 365, l'utente potrà essere invio dei messaggi. Nella maggior parte dei casi, se un messaggio in uscita è determinato da posta indesiderata, vengono indirizzata tramite il pool di recapito ad alto rischio, si riduce la probabilità che il pool in uscita IP normale viene aggiunto a un elenco di blocco.
+A. se più della metà della posta inviata da un utente tramite il servizio entro un determinato intervallo di tempo (ad esempio, per ora) è determinata come posta indesiderata da Office 365, l'utente verrà bloccato dall'invio dei messaggi. Nella maggior parte dei casi, se un messaggio in uscita è determinato come posta indesiderata, viene instradato attraverso il pool di recapito ad alto rischio, che riduce la probabilità che il pool di indirizzi IP in uscita normale venga aggiunto a un elenco di indirizzi bloccati.
   
-Quando un mittente viene bloccato l'invio di posta indesiderata in uscita, è possibile inviare una notifica a un indirizzo di posta elettronica specificato. Per ulteriori informazioni su questa impostazione, vedere [configurare il criterio della posta indesiderata in uscita](configure-the-outbound-spam-policy.md).
+È possibile inviare una notifica a un indirizzo di posta elettronica specificato quando un mittente è bloccato nell'invio di posta indesiderata in uscita. Per ulteriori informazioni su questa impostazione, vedere [Configure the outbound Spam Policy](configure-the-outbound-spam-policy.md).
   
  **D. È possibile utilizzare un provider antimalware e di protezione dalla posta indesiderata di terze parti insieme a Exchange Online?**
   
@@ -108,7 +92,7 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
   
 1. **Il dominio di invio della posta elettronica deve risolversi in DNS.**
     
-    Ad esempio, se il mittente è user@example.com, il dominio example.com viene risolto nell'indirizzo IP 192.0.43.10. Se un dominio di invio non ha nessun record A e nessun record MX in DNS, il servizio indirizza il messaggio tramite il relativo pool recapito ad alto rischio indipendentemente dal fatto che sia o meno il contenuto del messaggio di posta indesiderata. Per ulteriori informazioni sui pool recapito ad alto rischio, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md). 
+    Ad esempio, se il mittente è user@example.com, il dominio example.com viene risolto nell'indirizzo IP 192.0.43.10. Se un dominio di invio non dispone di un record A-record e no MX in DNS, il servizio instraderà il messaggio attraverso il pool di recapito ad alto rischio, indipendentemente dal fatto che il contenuto del messaggio sia o meno indesiderato. Per ulteriori informazioni sul pool di recapito a rischio elevato, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **L'indirizzo IP di invio del server di posta in uscita deve avere una voce DNS (PTR) inversa.**
     

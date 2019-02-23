@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Sintesi: una spiegazione del modo in cui Microsoft monitora e verifica i limiti del tenant per Office 365.'
-ms.openlocfilehash: 25b6f713d766b4b12e1c250b54421ad99dff8a1c
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090938"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221096"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Monitoraggio e verifica dei limiti del tenant
 Microsoft monitora continuamente e verifica in modo esplicito le debolezze e le vulnerabilità dei confini dei tenant, tra cui il monitoraggio per intrusioni, tentativi di violazione delle autorizzazioni e la mancanza di risorse. È inoltre possibile utilizzare più sistemi interni per monitorare continuamente l'utilizzo inappropriato delle risorse, che, se rilevato, attiva la limitazione integrata.

@@ -1,173 +1,173 @@
 ---
-title: Gestire le richieste di oggetto dati PILR con lo strumento maiuscole DSR in Office 365 Security &amp; centro conformità
+title: Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR &amp; nel centro sicurezza e conformità di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Strat_O365_IP
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: I PILR consente UE cittadini (denominati persone interessate) diritti specifici per i dati personali. tali diritti includono ottenere una copia di esso, che richiede modifiche apportate all'oggetto, se si restringe l'elaborazione di esso, comporta l'eliminazione o ricezione in formato elettronico. Una richiesta da un dati statistici take formale un'azione dei dati personali viene chiamata una richiesta di oggetto dati o la modalità DSR. È possibile utilizzare la modalità DSR casi in Office 365 Security &amp; centro conformità per gestire indagini DSR dell'organizzazione.
-ms.openlocfilehash: c8edee8d377865d46662ebbd7f18a5a6f3015192
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro sicurezza &amp; e conformità di Office 365 per gestire le indagini DSR dell'organizzazione.
+ms.openlocfilehash: 8338ca2eed4f5120571f642a1cbb4408ce36e2c3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530898"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213496"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gestire le richieste di oggetto dati PILR con lo strumento maiuscole DSR in Office 365 Security &amp; centro conformità
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR &amp; nel centro sicurezza e conformità di Office 365
 
-L'Unione europea generale dati protezione norme (PILR) è sulla protezione e attivazione di diritti di privacy dei singoli all'interno dell'Unione europea (UE). I singoli utenti consente PILR nell'Unione europea, noto come oggetti dati, il diritto di accedere, recuperare, correggere, cancellare o limitare l'elaborazione dei dati personali. In PILR, dati personali: tutte le informazioni relative a una persona fisica identificata o identificabile. Una richiesta formale da una persona alla propria organizzazione per eseguire un'azione dei dati personali viene chiamata una richiesta di oggetto dati o la modalità DSR. Per informazioni dettagliate su come rispondere a dettagliata per i dati in Office 365, vedere [Guida richiedere dati soggetto di Office 365](https://go.microsoft.com/fwlink/?linkid=871169 ).
+Il regolamento generale sulla protezione dei dati (GDPR) dell'UE riguarda la protezione e l'abilitazione dei diritti di privacy degli individui all'interno dell'Unione europea (UE). Il GDPR fornisce agli individui nell'Unione europea (noti come soggetti di dati) il diritto di accedere, recuperare, correggere, cancellare e limitare l'elaborazione dei dati personali. In GDPR, i dati personali significano tutte le informazioni relative a una persona fisica identificata o identificabile. Una richiesta formale da parte di una persona alla propria organizzazione di intraprendere un'azione sui propri dati personali è denominata richiesta del soggetto dei dati o DSR. Per informazioni dettagliate sulla risposta a richieste DSR per i dati in Office 365, vedere [office 365 data Subject Request guide](https://go.microsoft.com/fwlink/?linkid=871169 ).
   
-Per gestire le indagini in risposta a una DSR inviate da una persona all'interno dell'organizzazione, è possibile utilizzare lo strumento maiuscole DSR in Office 365 Security &amp; centro conformità per trovare contenuto archiviato in:
+Per gestire le indagini in risposta a un DSR inviato da una persona all'interno dell'organizzazione, è possibile utilizzare lo strumento di gestione dei casi DSR nel &amp; Centro sicurezza e conformità di Office 365 per individuare il contenuto archiviato in:
   
-- Qualsiasi cassetta postale utente nell'organizzazione. Sono incluse Skype per Business conversazioni e le chat dirette Teams Microsoft
+- Qualsiasi cassetta postale dell'utente nell'organizzazione. Questo include conversazioni di Skype for business e chat One-to-One in Microsoft Teams
     
-- Tutte le cassette postali associate a un gruppo di Office 365 e tutte le cassette postali team Teams Microsoft
+- Tutte le cassette postali associate a un gruppo di Office 365 e a tutte le cassette postali di Microsoft Teams
     
 - Tutti i siti di SharePoint Online e gli account di OneDrive for Business nell'organizzazione
     
-- Tutti i siti di team e siti di Office 365 gruppo all'interno dell'organizzazione
+- Tutti i siti dei team e i siti del gruppo di Office 365 nell'organizzazione
     
 - Tutte le cartelle pubbliche in Exchange Online
     
-Utilizzando lo strumento maiuscole DSR consente di:
+Se si utilizza lo strumento di caso DSR, è possibile:
   
 - Creare un caso distinto per ogni indagine DSR.
     
-- Controllare quali utenti hanno accesso a caso DSR aggiungendo persone come membri del caso; solo i membri possono accedere il caso e viene visualizzato solo i casi nell'elenco dei casi nella pagina **dei casi la modalità DSR** nella protezione &amp; centro conformità. Inoltre, è possibile assegnare autorizzazioni diverse a diversi membri dello stesso caso. Ad esempio, è possibile consentire alcuni membri visualizzare i risultati di ricerca e case solo e consentire ad altri membri creare ricerche ed esportare i risultati della ricerca. 
+- Controllare chi ha accesso al caso DSR aggiungendo persone come membri del caso. solo i membri possono accedere al caso e possono visualizzarne solo i casi nell'elenco dei casi nella pagina **casi DSR** nel centro sicurezza &amp; e conformità. È inoltre possibile assegnare autorizzazioni diverse a membri diversi dello stesso caso. Ad esempio, è possibile consentire ad alcuni membri di visualizzare solo il caso e i risultati della ricerca e consentire ad altri membri di creare ricerche ed esportare i risultati della ricerca. 
     
-- Utilizzare l'oggetto incorporato per cercare per tutto il contenuto creati o caricati da un oggetto dati specifico.
+- Utilizzare la ricerca incorporata per cercare tutto il contenuto creato o caricato da uno specifico soggetto dei dati.
     
-- Se lo si desidera modificare la query di ricerca predefinita ed eseguire nuovamente la ricerca per restringere i risultati della ricerca.
+- Facoltativamente, rivedere la query di ricerca incorporata e rieseguire la ricerca per restringere i risultati della ricerca.
     
-- Aggiungere ulteriori ricerche del contenuto associate al caso DSR. Esse comprendono la creazione di ricerche restituiscono elementi indicizzati parzialmente e i log generati dal sistema da Analitica personali e il servizio di Roaming di Office.
+- Aggiungere altre ricerche di contenuto associate al caso DSR. Ciò include la creazione di ricerche che restituiscono elementi parzialmente indicizzati e log generati dal sistema da My Analytics e dal servizio di roaming di Office.
     
-- Esportare i dati in risposta a un accesso DSR o richiesta di esportazione.
+- Esportare i dati in risposta a una richiesta di accesso o di esportazione DSR.
     
-- Eliminare i casi durante il processo di analisi DSR è completo. verranno rimosse tutte le ricerche e i processi associati al caso l'esportazione.
+- Eliminare i casi in cui il processo di analisi DSR è stato completato; in questo modo verranno rimosse tutte le ricerche e i processi di esportazione associati al caso.
     
-Di seguito è il processo di alto livello per l'utilizzo dello strumento di maiuscole DSR per gestire indagini DSR:
+Di seguito è indicato il processo di alto livello per l'utilizzo dello strumento di gestione dei casi DSR per gestire le indagini DSR:
   
 [Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
-[Passaggio 2: Creare un caso DSR e aggiungere membri](#step-2-create-a-dsr-case-and-add-members)
+[Passaggio 2: creare un caso DSR e aggiungere membri](#step-2-create-a-dsr-case-and-add-members)
 
-[Passaggio 3: Eseguire la query di ricerca](#step-3-run-the-search-query)
+[Passaggio 3: eseguire la query di ricerca](#step-3-run-the-search-query)
 
-[Passaggio 4: Esportare i dati](#step-4-export-the-data)
+[Passaggio 4: esportare i dati](#step-4-export-the-data)
 
-[(Facoltativo) Passaggio 5: Modificare la query di ricerca predefinita](#optional-step-5-revise-the-built-in-search-query)
+[Optional Passaggio 5: Revisione della query di ricerca incorporata](#optional-step-5-revise-the-built-in-search-query)
 
-[Ulteriori informazioni sull'utilizzo dello strumento di maiuscole DSR](#more-information-about-using-the-dsr-case-tool)
+[Ulteriori informazioni sull'utilizzo dello strumento di caso DSR](#more-information-about-using-the-dsr-case-tool)
   
 > [!IMPORTANT]
-> Gli strumenti consentono di eseguire l'accesso a DSR o richieste di esportazione per consentire loro di utilizzare la ricerca incorporata ed esportare funzionalità disponibile nello strumento di maiuscole DSR admins. Lo strumento consente di semplificare un metodo sforzo per esportare i dati rilevanti a una richiesta DSR inviata da un oggetto di dati. Tuttavia, è importante tenere presente che i risultati della ricerca possono variare in base al dati argomento o le azioni di amministrazione eseguite che possono influire sulle o meno un elemento potrebbe essere considerato "i dati personali" per scopi di esportazione. Ad esempio, se l'oggetto dati è l'ultima persona che consente di modificare un file è stato creato, il file potrebbe non verranno restituito nei risultati della ricerca. Analogamente, un amministratore può esportare i dati senza includere elementi indicizzati parzialmente o tutte le versioni dei documenti di SharePoint. Di conseguenza, gli strumenti forniti in grado di semplificare l'accesso e l'esportazione le richieste di dati. Tuttavia, i risultati sono soggetti a specifici di amministrazione e dati soggetto gli scenari di utilizzo. 
+> Gli strumenti consentono agli amministratori di eseguire le richieste di accesso o di esportazione DSR, consentendo loro di utilizzare la funzionalità di ricerca e esportazione incorporata trovata nello strumento di caso DSR. Lo strumento consente di semplificare un metodo di maggiore rilevanza per esportare i dati rilevanti per una richiesta DSR inviata da un soggetto dei dati. Tuttavia, è importante tenere presente che i risultati della ricerca possono variare in base all'interessato o alle azioni amministrative adottate che possono influire sul fatto che un elemento venga considerato o meno come "dati personali" ai fini dell'esportazione. Ad esempio, se l'interessato è stato l'ultimo a modificare un file che non è stato creato, il file potrebbe non essere restituito nei risultati della ricerca. Analogamente, un amministratore può esportare dati senza includere elementi parzialmente indicizzati o tutte le versioni dei documenti di SharePoint. Gli strumenti forniti consentono pertanto di semplificare l'accesso e l'esportazione delle richieste di dati. Tuttavia, i risultati sono soggetti a scenari di utilizzo specifici dell'amministratore e del soggetto dei dati. 
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
-Per impostazione predefinita, un amministratore globale di Office 365 può accedere allo strumento DSR maiuscole nella protezione &amp; centro conformità. Per progettare, gli altri utenti, ad esempio un responsabile della privacy di dati, un responsabile delle risorse umane, o altre persone coinvolte nella indagini DSR non dispongono dell'accesso allo strumento maiuscole DSR e saranno necessario disporre delle autorizzazioni appropriate per accedere allo strumento. Il modo più semplice per eseguire questa operazione viene per passare alla pagina **autorizzazioni** di sicurezza &amp; centro conformità e aggiungere utenti al gruppo di ruoli di gestione di eDiscovery. Si noti che è anche necessario assegnare le autorizzazioni in modo che è possibile aggiungerli come membri del caso DSR creato nel passaggio 2. 
+Per impostazione predefinita, un amministratore globale di Office 365 può accedere allo strumento dei casi DSR &amp; nel centro sicurezza e conformità. In base alla progettazione, altri utenti, ad esempio un responsabile della privacy dei dati, un manager delle risorse umane o altre persone coinvolte in indagini DSR, non hanno accesso allo strumento per i casi DSR e dovranno essere assegnate le autorizzazioni appropriate per accedere allo strumento. Il modo più semplice per eseguire questa operazione consiste nell'accedere alla pagina **autorizzazioni** nel centro &amp; conformità di sicurezza e aggiungere gli utenti al gruppo di ruoli eDiscovery Manager. Tenere presente che è inoltre necessario assegnare queste autorizzazioni in modo da poterle aggiungere come membri del caso DSR creato nel passaggio 2. 
   
-Per istruzioni dettagliate, vedere [assegnare autorizzazioni di eDiscovery in Office 365 Security &amp; centro conformità](assign-ediscovery-permissions.md).
+Per istruzioni dettagliate, vedere [assegnare le autorizzazioni di &amp; eDiscovery nel centro sicurezza e conformità di Office 365](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> Per impostazione predefinita, un amministratore globale di Office 365 (o gli altri membri del gruppo di ruoli Gestione organizzazione in sicurezza &amp; centro conformità non dispone delle autorizzazioni necessarie per esportare i risultati di ricerca del contenuto (in questo articolo, vedere il passaggio 4). Per risolvere questo problema, gli amministratori possono aggiungere se stessi come membro del gruppo di ruoli di gestione di eDiscovery. 
+> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel &amp; Centro sicurezza e conformità non dispongono delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto (vedere il passaggio 4 in questo articolo). Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
   
-## <a name="step-2-create-a-dsr-case-and-add-members"></a>Passaggio 2: Creare un caso DSR e aggiungere membri
+## <a name="step-2-create-a-dsr-case-and-add-members"></a>Passaggio 2: creare un caso DSR e aggiungere membri
 
-Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso, è possibile scegliere di avviare la ricerca incorporata o è possibile creare il caso senza avviare la ricerca. La procedura seguente viene richiesto di creare il caso senza avviare la ricerca e quindi viene illustrato come aggiungere membri al caso.
+Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso, è possibile scegliere di avviare la ricerca incorporata oppure è possibile creare il caso senza avviare la ricerca. La procedura seguente consente di creare il caso senza avviare la ricerca e quindi di mostrare come aggiungere membri al caso.
   
-1. Accedere a [https://protection.office.com](https://protection.office.com) ed effettuare l'accesso a Office 365 utilizzando l'account di lavoro o della scuola. 
+1. [https://protection.office.com](https://protection.office.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
     
-2. In sicurezza &amp; centro conformità, fare clic sulla **riservatezza dei dati** \> **dati soggetto richieste**e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **DSR nuovi case**.
+2. Nel centro sicurezza &amp; e conformità, fare clic su **richieste degli interessati**per ![la](media/ITPro-EAC-AddIcon.gif) **privacy** \> dei dati e quindi fare clic su Aggiungi **nuovo caso DSR**.
     
-3. Nella pagina **Nuovo DSR case** comparsa assegnare il caso un nome, digitare una descrizione facoltativa e quindi fare clic su **Avanti**. Si noti che il nome del caso deve essere univoco all'interno dell'organizzazione.
+3. Nella pagina **nuovo** riquadro a comparsa del modello DSR, assegnare un nome al caso, digitare una descrizione facoltativa e quindi fare clic su **Avanti**. Tenere presente che il nome del caso deve essere univoco nell'organizzazione.
     
     > [!TIP]
-    > È possibile aggiungere il nome della persona che ha inviato la richiesta DSR che sta esaminando il nome e/o descrizione del nuovo caso. Si noti che solo i membri di questo case (e agli amministratori di eDiscovery) saranno in grado di visualizzare il caso nell'elenco dei casi nella pagina **dati soggetto richieste** . 
+    > È consigliabile aggiungere il nome della persona che ha inviato la richiesta DSR che si sta esaminando nel nome e/o nella descrizione del nuovo caso. Tenere presente che solo i membri di questo caso (e gli amministratori di eDiscovery) saranno in grado di visualizzare il caso nell'elenco dei casi della pagina **richieste del soggetto dei dati** . 
   
-4. Nella pagina **Dettagli della richiesta** , in **oggetto dati (la persona che ha presentata la richiesta)**, selezionare la persona che si desidera trovare ed esportare i dati e quindi fare clic su **Avanti**.
+4. Nella pagina dei **Dettagli della richiesta** , in **oggetto dati (la persona che ha archiviato questa richiesta)**, selezionare la persona a cui si desidera trovare ed esportare i dati e quindi fare clic su **Avanti**.
     
-5. Nella pagina **verificare le impostazioni di maiuscole** è possibile modificare il nome del caso e la descrizione e selezionare un argomento dati diversi. In caso contrario, semplicemente fare clic su **Salva**.
+5. Nella pagina **conferma le impostazioni del caso** , è possibile modificare il nome e la descrizione del caso, quindi selezionare un soggetto dei dati differente. In caso contrario, è sufficiente fare clic su **Salva**.
     
-    Viene visualizzata una pagina di conferma che è stato creato il nuovo caso DSR.
+    Viene visualizzata una pagina che conferma che è stato creato il nuovo caso DSR.
     
-    ![Avviare la ricerca o semplicemente chiudere la pagina nuovo DSR maiuscole](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
+    ![Avviare la ricerca o chiudere semplicemente la pagina del nuovo caso DSR](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
   
-    A questo punto è possibile effettuare una delle seguenti operazioni:
+    A questo punto, è possibile eseguire una delle due operazioni seguenti:
     
-    r. facendo clic su **Mostra me i risultati di ricerca** inizia la ricerca. Questa è la selezione predefinita. Servizio di ricerca predefinita che verrà eseguita quando si seleziona questa opzione e i risultati vengono restituiti sono descritto nel passaggio 3.
+    a. facendo clic su **Mostra i risultati della ricerca** viene avviata la ricerca. Questa è la selezione predefinita. La ricerca incorporata eseguita quando si seleziona questa opzione e i risultati restituiti vengono descritti nel passaggio 3.
     
-    b. fare clic su **Finish** chiude il nuovo caso DSR senza avviare la ricerca incorporata. Quando si seleziona questa opzione, il nuovo caso DSR viene visualizzato nella pagina **dati soggetto richieste** .
+    b. facendo clic su **fine** , il nuovo caso DSR viene chiuso senza avviare la ricerca incorporata. Quando si seleziona questa opzione, il nuovo caso DSR viene visualizzato nella pagina **richieste del soggetto dei dati** .
     
-6. In modo che è possibile visualizzare il nuovo caso DSR e aggiungere membri, fare clic su **Fine** . 
+6. Fare clic su **fine** in modo che sia possibile accedere al nuovo caso DSR e aggiungervi i membri. 
     
-7. Nella pagina **dati soggetto richieste** fare clic sul nome del caso DSR appena creata. 
+7. Nella pagina **richieste del soggetto dei dati** fare clic sul nome del caso DSR appena creato. 
     
-8. Nella pagina **Gestisci in questo caso** comparsa **Gestisci membri**, fare clic su **Aggiungi**. 
+8. Nella pagina Gestisci il riquadro a comparsa di **questo caso** , in **Gestisci membri**fare clic su **Aggiungi**. 
     
-    In **utenti**, viene visualizzato un elenco di persone che sono state assegnate le autorizzazioni appropriate eDiscovery. Si noti che le persone che si assegnate autorizzazioni di eDiscovery per nel passaggio 1 verranno visualizzate nell'elenco. 
+    In **utenti**è visualizzato un elenco di persone a cui sono state assegnate le autorizzazioni di eDiscovery appropriate. Tenere presente che gli utenti a cui sono state assegnate le autorizzazioni di eDiscovery nel passaggio 1 verranno visualizzati in questo elenco. 
     
-9. Scegliere gli utenti aggiungere come membri del caso DSR, fare clic su **Aggiungi**e quindi salvare le modifiche.
+9. Selezionare gli utenti da aggiungere come membri del caso DSR, fare clic su **Aggiungi**e quindi salvare le modifiche apportate.
     
-    Si noti che è inoltre possibile aggiungere gruppi di ruoli come membri del case DSR facendo clic su **Aggiungi** nel gruppo **Gestisci gruppi di ruoli**. 
+    Si noti che è inoltre possibile aggiungere gruppi di ruoli come membri del caso DSR facendo clic su **Aggiungi** in **Gestisci gruppi di ruoli**. 
     
-## <a name="step-3-run-the-search-query"></a>Passaggio 3: Eseguire la query di ricerca
+## <a name="step-3-run-the-search-query"></a>Passaggio 3: eseguire la query di ricerca
 
-Dopo aver creato un caso DSR e aggiungere membri, il passaggio successivo consiste nell'eseguire la ricerca incorporata che è associato al caso. Questa query di ricerca predefinito esegue le operazioni seguenti:
+Dopo aver creato un caso DSR e aver aggiunto membri, il passaggio successivo consiste nell'eseguire la ricerca incorporata associata al caso. Questa query di ricerca predefinita esegue le operazioni seguenti:
   
-- Esegue la ricerca tutte le cassette postali nell'organizzazione per tutti gli elementi di posta elettronica inviati o ricevuti in base all'oggetto dati. Questa operazione viene eseguita tramite la proprietà di posta elettronica *ai partecipanti* , che consente di cercare l'oggetto dati in tutti i campi di persone in un messaggio di posta elettronica. Questa proprietà restituisce gli elementi in cui la persona si in **da**, **a**, **CC**e **Ccn** . Cartelle pubbliche in Exchange Online vengono cercate anche per i messaggi inviati o ricevuti in base all'oggetto dati. 
+- Esegue la ricerca in tutte le cassette postali dell'organizzazione per tutti gli elementi di posta elettronica inviati o ricevuti dall'interessato. Questa operazione viene eseguita utilizzando la proprietà di posta elettronica dei *partecipanti* , che esegue la ricerca dell'interessato in tutti i campi persone di un messaggio di posta elettronica. Questa proprietà restituisce gli elementi in cui il soggetto dei dati si trova nei campi **da**, **a**, **CC**e **Ccn** . Le cartelle pubbliche in Exchange Online vengono ricercate anche per i messaggi inviati o ricevuti dall'interessato. 
     
-- Esegue la ricerca tutti i siti all'interno dell'organizzazione per documenti ed elementi creati o caricati dall'oggetto dati. Questa operazione viene eseguita tramite le proprietà seguenti:
+- Cerca in tutti i siti dell'organizzazione documenti ed elementi creati o caricati dall'interessato. Questa operazione viene eseguita utilizzando le proprietà del sito seguenti:
     
-  - La proprietà *Author* restituisce gli elementi in cui l'oggetto dati è elencato nel campo autore nei documenti di Office. Questo valore viene mantenuto, anche se il documento viene copiato e caricato da un utente. 
+  - La proprietà *Author* restituisce gli elementi in cui il soggetto dei dati è elencato nel campo autore nei documenti di Office. Questo valore viene mantenuto, anche se il documento viene copiato e caricato da un altro utente. 
     
-  - La proprietà *CreatedBy* restituisce gli elementi che sono stati creati o caricati in base all'oggetto dati. 
+  - La proprietà *CreatedBy* restituisce gli elementi che sono stati creati o caricati dall'interessato. 
     
-Ecco aspetto le query con parole chiave per la ricerca incorporata che viene creata automaticamente quando si crea un caso DSR.
+Di seguito è riportato l'aspetto della query con parole chiave per la ricerca incorporata che viene creata automaticamente quando si crea un caso DSR.
   
 ```
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
-Ad esempio, se il nome del soggetto dati Ina Leonte, la query con parole chiave potrebbe essere simile al seguente:
+Ad esempio, se il nome del soggetto dei dati è ina Fanucci, la query di parole chiave avrà l'aspetto seguente:
   
 ```
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
- **Per eseguire la ricerca di un caso DSR incorporata:**
+ **Per eseguire la ricerca incorporata per un caso DSR:**
   
-1. In sicurezza &amp; centro conformità, fare clic sulla **riservatezza dei dati** \> **dati soggetto richieste**e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
+1. Nel centro sicurezza &amp; e conformità, fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
     
-    Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella accanto a Cerca incorporato che è stato creato quando è stato creato il nuovo caso DSR. Si noti che la ricerca ha lo stesso nome di case DSR. 
+    Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il nuovo caso DSR. Nota la ricerca ha lo stesso nome del caso DSR. 
     
-2. Nella pagina ricerca tendina fare clic su **Apri query**.
+2. Nella pagina riquadro a comparsa di ricerca fare clic su **Apri query**.
     
-    Quando si apre la query, la ricerca sia stata avviata e verrà completata in corso. 
+    Quando si apre la query, la ricerca viene avviata e verrà completata in pochi istanti. 
     
-3. Una volta completata la ricerca, fare clic su **Anteprima risultati** per visualizzare in anteprima i risultati della ricerca. Per ulteriori informazioni, vedere [Preview search results](content-search.md#preview-search-results).
+3. Al termine della ricerca, fare clic su **Anteprima risultati** per visualizzare in anteprima i risultati della ricerca. Per ulteriori informazioni, vedere [anteprima dei risultati della ricerca](content-search.md#preview-search-results).
     
     > [!TIP]
-    > È inoltre possibile visualizzare le statistiche di query di ricerca per visualizzare il numero di cassette postali e gli elementi di siti che vengono restituiti dalla ricerca e i percorsi contenuti principali che contengono gli elementi che corrispondono alla query di ricerca. Per ulteriori informazioni, vedere [visualizzare informazioni e statistiche sulla ricerca](content-search.md#view-information-and-statistics-about-a-search). 
+    > È inoltre possibile visualizzare le statistiche delle query di ricerca per visualizzare il numero di cassette postali e gli elementi del sito restituiti dalla ricerca e le posizioni di contenuto principali che contengono elementi che corrispondono alla query di ricerca. Per ulteriori informazioni, vedere [visualizzare informazioni e statistiche su una ricerca](content-search.md#view-information-and-statistics-about-a-search). 
   
-Si modifica la query di ricerca predefinita, modificare i percorsi di contenuti che vengono eseguita la ricerca e quindi eseguire di nuovo la ricerca. Per ulteriori informazioni, vedere [il passaggio 5](#optional-step-5-revise-the-built-in-search-query) . 
+È possibile modificare la query di ricerca incorporata, modificare i percorsi di contenuto ricercati e quindi eseguire di nuovo la ricerca. Per ulteriori informazioni, vedere [passaggio 5](#optional-step-5-revise-the-built-in-search-query) . 
   
-## <a name="step-4-export-the-data"></a>Passaggio 4: Esportare i dati
+## <a name="step-4-export-the-data"></a>Passaggio 4: esportare i dati
 
-Dopo aver eseguito la ricerca incorporata, è possibile esportare i risultati della ricerca. In alternativa, prima di esportare i dati, è possibile modificare la query per ridurre il numero di risultati di ricerca. Per ulteriori informazioni sulla limitazione dei risultati di ricerca, vedere il passaggio 5.
+Dopo aver eseguito la ricerca incorporata, è possibile esportare i risultati della ricerca. In alternativa, prima di esportare i dati, è possibile che si desideri rivedere la query per ridurre il numero di risultati di ricerca. Per ulteriori informazioni su come limitare i risultati della ricerca, vedere passaggio 5.
   
-Quando si Esporta risultati della ricerca, gli elementi della cassetta postale possono essere scaricati nei file PST o come singoli messaggi. Quando si esporta il contenuto di SharePoint e OneDrive account, vengono esportate le copie dei documenti di Office nativi e altri documenti. Un file di risultati che contiene informazioni su tutti gli elementi esportati inoltre viene fornito con i risultati della ricerca. Per ulteriori informazioni sull'esportazione, vedere [esportare contenuto di una ricerca di Office 365 protezione &amp; centro conformità](export-search-results.md).
+Quando si esportano i risultati della ricerca, è possibile scaricare gli elementi delle cassette postali nei file PST o come singoli messaggi. Quando si esporta contenuto dagli account di SharePoint e OneDrive, vengono esportate copie dei documenti di Office native e di altri documenti. Nei risultati della ricerca è incluso anche un file dei risultati che contiene informazioni su tutti gli elementi esportati. Per informazioni più dettagliate sull'esportazione, vedere [esportare i risultati della ricerca contenuto dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
   
 > [!NOTE]
-> Per impostazione predefinita, un amministratore globale di Office 365 (o gli altri membri del gruppo di ruoli Gestione organizzazione in sicurezza &amp; centro conformità) non dispone delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto. Per risolvere questo problema, gli amministratori possono aggiungere se stessi come membro del gruppo di ruoli di gestione di eDiscovery. 
+> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel &amp; Centro sicurezza e conformità) non dispone delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto. Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
   
-Il computer utilizzato per esportare i dati deve soddisfare i requisiti di sistema seguenti:
+Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti di sistema:
   
 - Windows 7 a 32 o 64 bit e versioni successive
     
@@ -182,245 +182,245 @@ Il computer utilizzato per esportare i dati deve soddisfare i requisiti di siste
   - Microsoft Internet Explorer 10 e versioni successive
     
     > [!NOTE]
-    > Microsoft non produce delle estensioni di terze parti o componenti aggiuntivi per le applicazioni ClickOnce. Esportazione dei dati di utilizzo di un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportato. 
+    > Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei dati utilizzando un browser non supportato con estensioni o componenti aggiuntivi di terze parti non è supportata. 
   
- **Per esportare i dati di ricerca predefinita in un caso DSR:**
+ **Per esportare i dati dalla ricerca incorporata in un caso DSR:**
   
-1. In sicurezza &amp; centro conformità, fare clic sulla **riservatezza dei dati** \> **dati soggetto richieste**e quindi fare clic su **Apri** accanto al caso DSR che si desidera esportare i dati. 
+1. Nel centro sicurezza &amp; e conformità fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR da cui si desidera esportare i dati. 
     
-2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella accanto a Cerca incorporato che è stato creato durante la creazione il caso DSR. Oppure fare clic su Cerca un altro per esportare i dati da che la ricerca. 
+2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il caso DSR. Oppure fare clic su un'altra ricerca per esportare i dati dalla ricerca. 
     
-3. Nella pagina ricerca tendina fare clic su ![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **ulteriori**e quindi seleziona **esportare i risultati** dall'elenco a discesa. 
+3. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
-4. Nella pagina **esportazione dei risultati** selezionare le seguenti opzioni consigliate per le richieste di esportazione DSR. 
+4. Nella pagina **Export results** selezionare le opzioni consigliate seguenti per le richieste di esportazione DSR. 
     
     ![Configurare le impostazioni di esportazione](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    r. in **Opzioni di Output**, selezionare l'opzione prima ( **tutti gli elementi, ad eccezione di quelli che sono quelle che dispongono di un formato non riconosciuto, vengono crittografate o non indicizzate per altri motivi**) per esportare solo gli elementi indicizzati. Il motivo che non si desidera esportare elementi parzialmente indicizzati da ricerca incorporate è che verranno esportati elementi parzialmente indicizzati da altri utenti. Per esportare solo gli elementi parzialmente indicizzati che la persona, è consigliabile creare una ricerca distinto. Per ulteriori informazioni, vedere [esportazione parzialmente voci indicizzate](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) nella sezione "Ulteriori informazioni sull'utilizzo dello strumento di maiuscole DSR".
+    a. in **Opzioni di output**selezionare la prima opzione ( **tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati. Il motivo per cui non si desidera esportare gli elementi parzialmente indicizzati dalla ricerca incorporata è dato che gli elementi parzialmente indicizzati provenienti da altri utenti verranno esportati. Per esportare solo gli elementi parzialmente indicizzati per il soggetto dei dati, si consiglia di creare una ricerca distinta. Per ulteriori informazioni, vedere [esportare gli elementi parzialmente indicizzati](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) nella sezione "ulteriori informazioni sull'utilizzo dello strumento del caso DSR".
     
-    b. in **contenuto di Exchange esportare**, selezionare la terza opzione, **i file di un file PST contenente tutti i messaggi in una singola cartella**. Poiché alcuni dei risultati possono essere gli elementi che ha dato origine nella cassetta postale di un altro utente, questa opzione solo elenchi l'elemento in una singola cartella senza che indica la cassetta postale effettiva ed è l'opzione più appropriata da utilizzare quando si duplica deprovisioning dei risultati come consigliato nell'elemento successivo . Questa opzione consente inoltre l'oggetto dati esaminare gli elementi in ordine cronologico (elementi vengono ordinati per data di invio) senza dover passare la struttura di cartelle delle cassette postali originale per ogni elemento.
+    b. in **Esporta contenuto di Exchange come**selezionare la terza opzione, **un file PST contenente tutti i messaggi in una singola cartella**. Poiché alcuni dei risultati possono essere per gli elementi originati dalla cassetta postale di un altro utente, questa opzione consente di elencare solo l'elemento in una singola cartella senza indicare la cassetta postale effettiva ed è l'opzione migliore da utilizzare per la deduplicazione dei risultati come consigliato nell'elemento successivo. . Questa opzione consente inoltre agli elementi di revisione del soggetto dei dati in ordine cronologico (gli elementi sono ordinati in base alla data di invio) senza dover esplorare la struttura delle cartelle della cassetta postale originale per ogni elemento.
     
-    c. selezionare **Abilita deduplicazione** opzione per esclude i messaggi di posta elettronica duplicati. Questa opzione è consigliata perché la ricerca incorporata ricerche in tutte le cassette postali nell'organizzazione. In modo che se più copie dello stesso messaggio presenti nelle cassette postali in cui sono state ricercate, questa opzione indica che verrà esportata solo una copia di un messaggio. Questa opzione, tra i messaggi esportazione in uno dei risultati di file PST in una singola cartella in un'esperienza utente ottimale per la modalità DSR esporterà richieste. Si noti che il report di esportazione Results.csv verranno elencati tutti i percorsi in cui sono stati trovati messaggi duplicati.
+    c. Selezionare **Abilita** opzione di deduplicazione per escludere i messaggi di posta elettronica duplicati. Questa opzione è consigliabile perché la ricerca incorporata esegue ricerche in tutte le cassette postali dell'organizzazione. Pertanto, se vengono trovate più copie dello stesso messaggio nelle cassette postali che sono state cercate, questa opzione significa che verrà esportata solo una copia di un messaggio. Questa opzione, insieme esporterà i messaggi in un unico file PST in una singola cartella, consentirà di ottenere la migliore esperienza utente per le richieste di esportazione DSR. Si noti che il report Export results. csv elenca tutte le posizioni in cui sono stati trovati messaggi duplicati.
     
-    Facoltativamente, è possibile selezionare l'opzione **Includi versioni per i documenti di SharePoint** per esportare tutte le versioni dei documenti di SharePoint e OneDrive. È necessario che il controllo delle versioni è attivato per le raccolte documenti. Questa opzione consente di garantire che vengono esportati tutti i dati pertinenti.
+    Facoltativamente, è possibile selezionare l'opzione **Includi versioni per documenti di SharePoint** per esportare tutte le versioni dei documenti di SharePoint e OneDrive. Questo richiede che il controllo delle versioni sia attivato per le raccolte documenti. Questa opzione consente di garantire che tutti i dati rilevanti vengano esportati.
     
 5. Dopo aver scelto le impostazioni di esportazione, fare clic su **Esporta**.
     
-    I risultati della ricerca sono pronti per il download, il che significa che viene caricati all'area di archiviazione Azure per l'organizzazione nel cloud Microsoft. I passaggi successivi mostrano come scaricare questi dati al computer locale.
+    I risultati della ricerca sono pronti per il download, il che significa che sono stati caricati nell'area di archiviazione di Azure per l'organizzazione nel cloud Microsoft. Nei passaggi successivi viene illustrato come scaricare questi dati nel computer locale.
     
-6. Fare clic sulla scheda **Esporta** per visualizzare il processo di esportazione che appena creata. Si noti che i processi di esportazione avere lo stesso nome corrispondente esegue una ricerca con **Export** aggiunto alla fine del nome di ricerca. 
+6. Fare clic sulla scheda **Esporta** per visualizzare il processo di esportazione appena creato. Si noti che i processi di esportazione hanno lo stesso nome della ricerca corrispondente con **_Export** accodati alla fine del nome della ricerca. 
     
-7. Fare clic sul processo di esportazione appena creata per visualizzare la pagina di comparsa di esportazione. In questa pagina vengono visualizzate informazioni sulla ricerca, ad esempio le dimensioni e il numero totale di elementi da esportare e la percentuale di elementi che sono stati trasferiti a un'area di archiviazione Azure. Fare clic su **Aggiorna** per aggiornare le informazioni sullo stato per il caricamento. 
+7. Fare clic sul processo di esportazione appena creato per visualizzare la pagina di esportazione del riquadro a comparsa. In questa pagina sono riportate informazioni sulla ricerca, ad esempio le dimensioni e il numero totale di elementi da esportare, e la percentuale degli elementi trasferiti in un'area di archiviazione di Azure. Fare clic su **Aggiorna** per aggiornare le informazioni sullo stato del caricamento. 
     
-8. In **Esporta chiave**, fare clic su **Copia negli Appunti**. Utilizzare questa chiave nel passaggio 11 per scaricare i risultati della ricerca.
+8. In **Esporta chiave**, fare clic su **copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 11.
     
-9. Fare clic su ![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **scaricare i risultati** nella parte superiore della pagina esportazione comparsa. 
+9. Fare ![clic su Esporta risultati](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
-10. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire **Microsoft Office 365 eDiscovery dello strumento di esportazione**. Verrà installato la prima volta che si scarica i risultati della ricerca **eDiscovery dello strumento di esportazione** . 
+10. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery di Microsoft Office 365**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     
-11. In **eDiscovery dello strumento di esportazione**, incollare la chiave di esportazione che è stato copiato nel passaggio 8 nella casella appropriata.
+11. Nello **strumento di esportazione di eDiscovery**incollare la chiave di esportazione copiata nel passaggio 8 nella casella appropriata.
     
 12. Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati della ricerca. 
     
     > [!NOTE]
-    > A causa della quantità elevata di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale, non scaricare tali un'unità di rete o altro percorso di rete. 
+    > A causa dell'elevato numero di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale. non scaricarli in un'unità di rete mappata o in un altro percorso di rete. 
   
 13. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
     
-    **EDiscovery dello strumento di esportazione** viene visualizzato il processo di esportazione, con una stima del numero e dimensione degli altri download di informazioni sullo stato. Una volta completato il processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. Per ulteriori informazioni sui rapporti disponibili quando si scarica i risultati di ricerca del contenuto, vedere la sezione [informazioni](export-search-results.md#more-information) di "risultati di ricerca di contenuto di esportazione della protezione di Office 365 &amp; centro conformità". 
+    Lo **strumento di esportazione di eDiscovery** Visualizza le informazioni sullo stato relative al processo di esportazione, inclusa una stima del numero e delle dimensioni degli elementi restanti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. Per ulteriori informazioni sui report che includono quando si scaricano i risultati della ricerca contenuto, vedere la sezione [altre informazioni](export-search-results.md#more-information) in "esportare i risultati della ricerca contenuto dal &amp; Centro sicurezza e conformità di Office 365". 
     
-Dopo che i dati vengono esportati, i risultati di ricerca e l'esportazione dei rapporti si trova in una cartella con lo stesso nome di case DSR. I file PST che contengono elementi delle cassette postali si trovano in una sottocartella denominata **Exchange**. Documenti e altri elementi di siti si trovano in una sottocartella denominata **SharePoint**. 
+Una volta esportati i dati, i risultati della ricerca e i report di esportazione si trovano in una cartella con lo stesso nome del caso DSR. I file PST che contengono gli elementi delle cassette postali si trovano in una sottocartella denominata **Exchange**. I documenti e gli altri elementi provenienti dai siti si trovano in una sottocartella denominata **SharePoint**. 
   
-## <a name="optional-step-5-revise-the-built-in-search-query"></a>(Facoltativo) Passaggio 5: Modificare la query di ricerca predefinita
+## <a name="optional-step-5-revise-the-built-in-search-query"></a>Optional Passaggio 5: Revisione della query di ricerca incorporata
 
-Dopo aver eseguito la ricerca incorporata, è possibile modificare in modo da limitare il numero per restituire un numero di risultati di ricerca. Tale scopo, si può aggiungere condizioni alla query. Una condizione è connesso logicamente per le query con parole chiave per l'operatore **AND** . È quindi opportuno restituiti nei risultati della ricerca, gli elementi devono soddisfare sia le query con parole chiave e tutte le condizioni si aggiungono. Si tratta come condizioni consentono di limitare i risultati. Se si aggiungono due o più condizioni univoche per una query di ricerca (condizioni che specificano proprietà diverse), le condizioni logicamente sono connessi tramite l'operatore **AND** . Pertanto, vengono restituiti solo gli elementi che soddisfano tutte le condizioni (oltre la query con parole chiave). Se si aggiungono più valori, separati da virgole o punti e virgola, di una singola condizione, questi valori sono connessi tramite l'operatore **OR** . Ciò significa che vengono restituiti gli elementi che contengono uno dei valori specificati per la proprietà nella condizione. 
+Dopo aver eseguito la ricerca incorporata, è possibile modificarla in modo da restringere l'ambito per restituire un numero minore di risultati della ricerca. È possibile eseguire questa operazione aggiungendo condizioni alla query. Una condizione è connessa logicamente alla query di parole chiave dall'operatore **and** . Questo significa che per essere restituiti nei risultati della ricerca, gli elementi devono soddisfare sia la query di parole chiave che tutte le condizioni aggiunte. Questo è il modo in cui le condizioni aiutano a limitare i risultati. Se si aggiungono due o più condizioni univoche a una query di ricerca (condizioni che specificano proprietà diverse), tali condizioni sono connesse logicamente dall'operatore **and** . Questo significa che vengono restituiti solo gli elementi che soddisfano tutte le condizioni (oltre alla query con parole chiave). Se si aggiungono più valori, separati da virgole o da due punti a una singola condizione, tali valori sono connessi dall'operatore **or** . Questo significa che gli elementi vengono restituiti se contengono uno dei valori specificati per la proprietà nella condizione. 
   
-Di seguito sono riportati alcuni esempi delle condizioni che è possibile aggiungere a query di ricerca predefinita di un caso DSR. Parentesi viene visualizzato il nome della proprietà effettiva utilizzata nella query di ricerca.
+Di seguito sono riportati alcuni esempi delle condizioni che è possibile aggiungere alla query di ricerca incorporata di un caso DSR. Il nome della proprietà effettiva utilizzata in una query di ricerca viene visualizzato tra parentesi.
   
-- **Il tipo di file ( `filetype`)** -specifica l'estensione di un documento o un file. Utilizzare questa condizione di ricerca di documenti e i file creati per specifiche applicazioni di Office, come Word, Excel e OneNote. 
+- **Tipo file ( `filetype`)** -specifica l'estensione di un documento o di un file. Utilizzare questa condizione per cercare i documenti e i file creati da specifiche applicazioni di Office, ad esempio Word, Excel e OneNote. 
     
-- **Tipo di messaggio ( `kind`)** -specifica il tipo di elemento di posta elettronica da cercare. Ad esempio, è possibile utilizzare la sintassi `kind:email OR kind:im` per restituire solo i messaggi di posta elettronica e Skype per Business conversazioni o uno chat in Microsoft Teams. 
+- **Tipo di messaggio `kind`()** -specifica il tipo di elemento di posta elettronica da cercare. Ad esempio, è possibile utilizzare la sintassi `kind:email OR kind:im` per restituire solo messaggi di posta elettronica e conversazioni di Skype for business o chat uno-a-uno in Microsoft teams. 
     
-- **Tag di conformità (`compliancetag`)** -consente di specificare un'etichetta assegnata a un messaggio di posta elettronica o di un documento. Questa condizione verrà restituiti gli elementi che sono classificati con un'etichetta specifica. Le etichette vengono utilizzate per classificare i documenti per la governance di dati e posta elettronica e applicare le regole di conservazione in base alla classificazione definita per l'etichetta. Si tratta di una condizione utile per indagini DSR quanto l'organizzazione potrebbe utilizzando le etichette per classificare il contenuto relativo alla privacy di dati o che contiene i dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome dell'etichetta completa o la prima parte del nome di etichetta con un carattere jolly. Per ulteriori informazioni, vedere [Overview of etichette in Office 365](labels.md).
+- **Tag Compliance`compliancetag`()** -specifica un'etichetta assegnata a un messaggio di posta elettronica o a un documento. Questa condizione restituirà gli elementi classificati con una specifica etichetta. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. Si tratta di una condizione utile per le indagini DSR perché l'organizzazione può utilizzare etichette per classificare il contenuto relativo alla privacy dei dati o che contiene dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome completo dell'etichetta o la prima parte del nome dell'etichetta con un carattere jolly. Per ulteriori informazioni, vedere [Overview of labels in Office 365](labels.md).
     
-Per un elenco e una descrizione di tutte le condizioni disponibili nello strumento di maiuscole DSR, vedere [criteri di ricerca](keyword-queries-and-search-conditions.md#search-conditions) nell'articolo "query con parole chiave e le condizioni di ricerca per la ricerca di contenuto". 
+Per un elenco e una descrizione di tutte le condizioni disponibili nello strumento dei casi DSR, [](keyword-queries-and-search-conditions.md#search-conditions) vedere l'articolo relativo alle condizioni di ricerca nella sezione "query con parole chiave e condizioni di ricerca per la ricerca di contenuto". 
   
-### <a name="changing-the-content-locations-that-are-searched"></a>Modifica della posizione del contenuto che vengono eseguita la ricerca
+### <a name="changing-the-content-locations-that-are-searched"></a>Modifica dei percorsi di contenuto in cui è stata eseguita la ricerca
 
-Oltre a revisione ricerca incorporate per un caso DSR, è inoltre possibile modificare i percorsi di contenuti che vengono eseguita la ricerca. Come indicato in precedenza, la ricerca incorporata ricerca alle cassette postali e i siti dell'organizzazione e le cartelle pubbliche di Exchange Online. Ad esempio, è possibile limitare l'ambito di ricerca per eseguire la ricerca solo l'oggetto dati delle cassette postali e account di OneDrive e selezionata siti di SharePoint. Se si esegue una ricerca di siti specifici, è necessario aggiungere ogni sito in cui si desidera eseguire la ricerca.
+Oltre a rivedere la ricerca incorporata per un caso DSR, è anche possibile modificare i percorsi di contenuto in cui è stata eseguita la ricerca. Come spiegato in precedenza, la ricerca integrata Cerca tutte le cassette postali e i siti dell'organizzazione e tutte le cartelle pubbliche di Exchange Online. Ad esempio, è possibile limitare la ricerca per cercare solo la cassetta postale dell'interessato e l'account OneDrive e i siti di SharePoint selezionati. Se si sceglie di cercare siti specifici, è necessario aggiungere ogni sito che si desidera ricercare.
   
-Per modificare i percorsi di contenuti per la ricerca:
+Per modificare i percorsi di contenuto per la ricerca:
   
-1. Aprire la ricerca incorporata che si desidera modificare i percorsi di contenuti per.
+1. Aprire la ricerca incorporata per la quale si desidera modificare le posizioni di contenuto.
     
-2. Nella query di ricerca in **percorsi**fare clic su **Modifica** accanto all'opzione **percorsi specifici** . 
+2. Nella query di ricerca, in **percorsi**, fare clic su **modifica** accanto all'opzione **percorsi specifici** . 
     
-    ![Fare clic su Modifica per modificare le posizioni del contenuto delle query di ricerca predefinita](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
+    ![Fare clic su modifica per modificare le posizioni di contenuto della query di ricerca incorporata](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
   
-    Verrà visualizzata la pagina di comparsa **Modifica percorsi** . Ecco una descrizione dei percorsi contenuti in ricerca incorporate e alcune informazioni su come modificare i percorsi che vengono eseguita la ricerca. 
+    Viene visualizzata la pagina **modifica** riquadro a comparsa. Di seguito sono riportate le descrizioni dei percorsi di contenuto nella ricerca incorporata e alcune informazioni sulla modifica delle posizioni ricercate. 
     
-    ![Modificare le posizioni comparsa pagina](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
+    ![Pagina Modifica riquadro a comparsa posizioni](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    r. l'interruttore in **Seleziona tutto** nella cassetta postale nella parte superiore della pagina comparsa è selezionata, che indica che vengono eseguita la ricerca di tutte le cassette postali. Per limitare l'ambito della ricerca, fare clic su Attiva o disattiva per annullare la selezione, quindi fare clic su **Scegli utenti, gruppi o team** e scegliere cassette postali specifiche per la ricerca.
+    a. è selezionata l'opzione toggle in **Seleziona tutto** in cassetta postale nella parte superiore della pagina del riquadro a comparsa, che indica che tutte le cassette postali vengono cercate. Per limitare l'ambito della ricerca, fare clic sull'interruttore per deselezionarlo e quindi fare clic su **Scegli utenti, gruppi o team** e scegliere cassette postali specifiche per la ricerca.
     
-    b. l'interruttore in **Seleziona tutto** nell'area siti al centro della pagina comparsa è selezionata, che indica che tutti i siti vengono eseguita la ricerca. Per restringere la ricerca per siti selezionati, si potrebbe deselezionare l'opzione attiva o disattiva e quindi **Scegliere siti**. È necessario aggiungere ogni sito specifico che si desidera eseguire la ricerca, inclusi account OneDrive della persona.
+    b. l'opzione toggle in **Seleziona tutto** nella sezione siti al centro della pagina a comparsa è selezionata, che indica che vengono ricercati tutti i siti. Per limitare la ricerca ai siti selezionati, deselezionare l'opzione toggle e quindi fare clic su **Scegli siti**. Sarà necessario aggiungere ogni sito specifico che si desidera cercare, incluso l'account OneDrive dell'interessato.
     
-    c. attiva o disattiva nella sezione delle cartelle pubbliche di Exchange è selezionata, vale a dire che tutte le cartelle pubbliche di Exchange vengono eseguita la ricerca. Si noti che è possibile cercare solo tutte le cartelle pubbliche di Exchange o nessuno di essi. Non è possibile scegliere quelle specifiche per la ricerca.
+    c. è selezionata l'opzione toggle nella sezione cartelle pubbliche di Exchange, che indica che sono state cercate tutte le cartelle pubbliche di Exchange. Si noti che è possibile eseguire la ricerca solo in tutte le cartelle pubbliche di Exchange o in nessuna di esse. Non è possibile scegliere quelle specifiche per la ricerca.
     
-3. Se si modificano i percorsi contenuti della funzionalità di ricerca predefinita, fare clic su **salvare &amp; eseguire** iniziare nuovamente la ricerca. 
+3. Se si modificano i percorsi di contenuto nella ricerca incorporata, fare clic su **Salva &amp; esecuzione** per riavviare la ricerca. 
   
-## <a name="more-information-about-using-the-dsr-case-tool"></a>Ulteriori informazioni sull'utilizzo dello strumento di maiuscole DSR
+## <a name="more-information-about-using-the-dsr-case-tool"></a>Ulteriori informazioni sull'utilizzo dello strumento di caso DSR
 
-Nelle sezioni seguenti contengono ulteriori informazioni sull'utilizzo dello strumento di maiuscole DSR per rispondere alle richieste di esportazione DSR.
+Nelle sezioni seguenti sono disponibili ulteriori informazioni sull'utilizzo dello strumento del caso DSR per rispondere alle richieste di esportazione DSR.
   
-[Esportazione di dati da MyAnalytics e il servizio di Roaming di Office](#exporting-data-from-myanalytics-and-the-office-roaming-service)
+[Esportazione di dati da analisi e servizio di roaming di Office](#exporting-data-from-myanalytics-and-the-office-roaming-service)
 
-[Esportazione di elementi indicizzati parzialmente](#exporting-partially-indexed-items)
+[Esportazione di elementi parzialmente indicizzati](#exporting-partially-indexed-items)
 
-[Ricerca e l'esportazione di dati da Microsoft Teams e gruppi di Office 365](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Ricerca ed esportazione di dati da Microsoft teams e gruppi di Office 365](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
 
 [Ricerca di cartelle pubbliche di Exchange](#searching-exchange-public-folders)
   
-### <a name="exporting-data-from-myanalytics-and-the-office-roaming-service"></a>Esportazione di dati da MyAnalytics e il servizio di Roaming di Office
+### <a name="exporting-data-from-myanalytics-and-the-office-roaming-service"></a>Esportazione di dati da analisi e servizio di roaming di Office
 
-È possibile utilizzare lo strumento maiuscole DSR per cercare ed esportare i dati di utilizzo viene generati da MyAnalytics e il servizio di Roaming di Office. Ecco una descrizione delle operazioni eseguite tali servizi:
+È possibile utilizzare lo strumento dei casi DSR per cercare ed esportare i dati di utilizzo generati da Analytics e dal servizio di roaming di Office. Ecco una descrizione di cosa fanno questi servizi:
   
-- **MyAnalytics** - fornisce agli utenti informazioni su come utilizzano il tempo dedicato in base ai dati di posta elettronica e calendario nella cassetta postale. Tutte le informazioni MyAnalytics derivano dalle intestazioni di posta elettronica e riunione nella cassetta postale dell'utente. Gli utenti che sono assegnati a una licenza MyAnalytics possono accedere a Office 365 e passare al dashboard MyAnalytics per visualizzare informazioni su come utilizzano il tempo dedicato. (Gli utenti possono schermate di queste informazioni in risposta alla richiesta di accesso DSR). Ricerca incorporate in caso DSR esportano i dati che viene utilizzati per generare MyAnalytics informativa. 
+- **Analisi** : fornisce agli utenti informazioni su come passano il proprio tempo in base ai dati del calendario e della posta nella loro cassetta postale. Tutte le informazioni di analisi sono derivate da intestazioni di posta elettronica e riunioni nella cassetta postale dell'utente. Gli utenti a cui è assegnata una licenza di analisi possono accedere a Office 365 e passare al dashboard di analisi per visualizzare le informazioni dettagliate su come passano il proprio tempo. Gli utenti possono schermare queste informazioni in risposta a una richiesta di accesso DSR. La ricerca incorporata in un caso DSR esporterà i dati utilizzati per generare informazioni di analisi. 
     
-- **Servizio di Roaming di office** - Roaming è un servizio che sono archiviate le impostazioni relative a Office, ad esempio tema di Office, dizionario personalizzato, le impostazioni della lingua, modalità di sviluppo e correzione automatica. 
+- **Office roamIng Service** -roaming è un servizio in cui vengono archiviate le impostazioni relative a Office, ad esempio il tema di Office, il dizionario personalizzato, le impostazioni della lingua, la modalità di sviluppo e la correzione automatica. 
     
-I dati da MyAnalytics e il servizio Office Roaming viene archiviati nella cassetta postale dell'oggetto dati contenuti nelle cartelle nascoste presente in una messaggio non interpersonali () sottostruttura di cassette postali di Exchange Online. In questo modo che i dati viene nascosta dalla visualizzazione dell'utente quando si utilizzano Outlook o altri client di posta elettronica per accedere alla cassetta postale. Per ulteriori informazioni sulle cartelle nascoste, vedere [Cartelle nascoste MAPI](https://go.microsoft.com/fwlink/?linkid=872758).
+I dati di Analytics e del servizio di roaming di Office sono archiviati in una cassetta postale di un soggetto dei dati nelle cartelle nascoste che si trovano in un sottoalbero non-interpersonale (non IPM) delle cassette postali di Exchange Online. Questo significa che i dati vengono nascosti dalla visualizzazione dell'utente quando utilizzano Outlook o altri client di posta elettronica per accedere alla propria cassetta postale. Per ulteriori informazioni sulle cartelle nascoste, vedere [MAPI hidden folders](https://go.microsoft.com/fwlink/?linkid=872758).
   
-È possibile creare una ricerca di contenuto separata (e associarlo a un caso DSR) che restituisce il MyAnalytics e i dati di utilizzo del servizio di Roaming Office nella cassetta postale di oggetti dei dati. Questi dati non sono incluso nelle statistiche di ricerca e non sono disponibile per l'anteprima. Ma è possibile esportare il certificato e quindi assegnare l'oggetto dati in risposta alla richiesta di esportazione DSR.
+È possibile creare una ricerca di contenuto distinta e associarla a un caso DSR che restituisce i dati di utilizzo del servizio di analisi e di gestione del roaming di Office nei soggetti dei dati. Questi dati non sono inclusi nelle statistiche di ricerca e non saranno disponibili per l'anteprima. Tuttavia, è possibile esportarlo e quindi darlo all'interessato in risposta a una richiesta di esportazione DSR.
   
-Quando si esportano dati da MyAnalytics e il servizio di Roaming di Office, vengono salvati i dati in una cartella separata per ogni applicazione che si trova nella cartella **ApplicationDataRoot** , ovvero in una cartella in cui è nome e indirizzo di posta elettronica della persona. Questi dati viene esportati come file JSON, ovvero i file di testo leggibile simili al file XML o TXT, che vengono associati ai messaggi di posta elettronica. Attualmente, queste cartelle sono denominate con un identificatore univoco globale (GUID) assegnato al MyAnalytics e il servizio Office Roaming sono elencati nella tabella seguente. Nelle versioni future dello strumento maiuscole DSR, il GUID verrà sostituito con il nome dell'applicazione effettivo. 
+Quando si esportano dati da Analytics e dal servizio di roaming di Office, i dati vengono salvati in una cartella distinta per ogni applicazione che si trova nella cartella **ApplicationDataRoot** , che si trova in una cartella con il nome dell'indirizzo di posta elettronica del soggetto dei dati. Questi dati vengono esportati come file JSON, che sono file di testo leggibili in modo umano simili ai file XML o TXT, allegati ai messaggi di posta elettronica. Attualmente, queste cartelle sono denominate con un identificatore univoco globale (GUID) assegnato a Analytics e il servizio di roaming di Office, elencati nella tabella seguente. Nelle versioni future dello strumento dei casi DSR, il GUID verrà sostituito con il nome dell'applicazione effettiva. 
   
-|**Applicazione**|**Nome GUID/cartella**|
+|**Applicazione**|**GUID/nome cartella**|
 |:-----|:-----|
-|MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
-|Servizio roaming di Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
+|MyAnalytics  <br/> |3c896ded-22c5-450F-91F6-3d1ef0848f6e  <br/> |
+|Servizio roaming di Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
    
- **Per cercare ed esportare dati MyAnalytics e servizio di Roaming di Office:**
+ **Per eseguire la ricerca e l'esportazione di dati di analisi e di servizio di roaming di Office:**
   
-1. In sicurezza &amp; centro conformità, fare clic sulla **riservatezza dei dati** \> **dati soggetto richieste**e quindi fare clic su **Apri** accanto al caso DSR che la persona che si desidera esportare i dati di utilizzo per. 
+1. Nel centro sicurezza &amp; e conformità, fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dei dati per il quale si desidera esportare i dati di utilizzo. 
     
-2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic su ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **guidato ricerca**.
+2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
     
 3. Fare clic su **Annulla** nella pagina **nome della ricerca** . 
     
-4. In **query di ricerca**, selezionare le caselle di controllo accanto a **Servizio Roaming di Office**e **MyAnalytics** nella condizione di **tipo** . 
+4. In **query di ricerca**, nella condizione di **tipo** , selezionare le caselle di controllo accanto a **analisi** e servizio di roaming di **Office**. 
     
-    ![Selezionare le caselle di controllo MyAnalytics e servizio di Roaming di Office per esportare i dati di utilizzo](media/3dacbc7a-c314-492c-828c-6757fda84963.png)
+    ![Selezionare le caselle di controllo analisi e servizio di roaming di Office per esportare i dati di utilizzo](media/3dacbc7a-c314-492c-828c-6757fda84963.png)
   
-    Si noti che la condizione di **tipo** , che sono classi messaggio di posta elettronica, deve essere l'unico elemento nella query di ricerca. È possibile eliminare casella **parole chiave** o lasciare vuoto. 
+    Si noti che la condizione di **tipo** (ovvero le classi dei messaggi di posta elettronica) dovrebbe essere l'unico elemento nella query di ricerca. È possibile eliminare la casella **parole chiave** o lasciarla vuota. 
     
-5. In **percorsi**, verificare che sia selezionata **percorsi specifici** e quindi fare clic su **Modifica**.
+5. In **percorsi**verificare che le **posizioni specifiche** siano selezionate e quindi fare clic su **modifica**.
     
-6. Nella parte superiore della pagina **Modifica posizioni** di comparsa (sezione delle cassette postali), fare clic su **Scegli utenti, gruppi o team**.
+6. Nella parte superiore della pagina **modifica** riquadro a comparsa posizioni (la sezione cassetta postale), fare clic su **Scegli utenti, gruppi o team**.
     
-7. Nella pagina **Modifica percorsi** fare clic su **Scegli utenti, gruppi o team**, fare clic sulla cassetta postale dell'oggetto dati e quindi salvare la selezione. 
+7. Nella pagina **modifica posizioni** fare clic su **Scegli utenti, gruppi o team**, scegliere la cassetta postale del soggetto dei dati e quindi salvare la selezione. 
     
-8. Fare clic su **salvare &amp; eseguire**, quindi denominare la ricerca e salvarlo.
+8. Fare clic su **Salva &amp; esecuzione**e quindi assegnare un nome alla ricerca e salvarla.
     
     La ricerca viene avviata.
     
- **Per esportare dati MyAnalytics e servizio di Roaming di Office:**
+ **Per esportare i dati di analisi e servizi di roaming di Office:**
   
-1. Una volta completata la ricerca creata nel passaggio precedente, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella accanto a Cerca. Potrebbe essere necessario fare clic su ![aggiornamento](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Aggiorna** per visualizzare i criteri di ricerca. 
+1. Quando la ricerca creata nel passaggio precedente è stata completata, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca. Potrebbe essere necessario fare clic ![su](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aggiorna **aggiornamento** per visualizzare la ricerca. 
     
-2. Nella pagina ricerca tendina fare clic su ![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **ulteriori**e quindi seleziona **esportare i risultati** dall'elenco a discesa. 
+2. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
-3. Nella pagina **esportazione dei risultati** selezionare le opzioni per esportare i dati di utilizzo consigliate. 
+3. Nella pagina **Export results** selezionare le opzioni consigliate per esportare i dati di utilizzo. 
     
-    ![Opzioni di esportazione per l'esportazione dei dati di utilizzo MyAnalytics e servizio di Roaming di Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
+    ![Opzioni di esportazione quando si esportano i dati di utilizzo del servizio roaming e servizi di Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-    r. in **Opzioni di Output**, selezionare l'opzione prima ( **tutti gli elementi, ad eccezione di quelli che sono quelle che dispongono di un formato non riconosciuto, vengono crittografate o non indicizzate per altri motivi**) per esportare solo gli elementi indicizzati.
+    a. in **Opzioni di output**selezionare la prima opzione ( **tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati.
     
-    b. in **contenuto di Exchange esportare**, selezionare la seconda opzione, **i file di un file PST contenente tutti i messaggi**.
+    b. in **Esporta contenuto di Exchange con nome**selezionare la seconda opzione, **un file PST contenente tutti i messaggi**.
     
-    c. lasciare deselezionate le opzioni di esportazione restanti.
+    c. lasciare deselezionate le opzioni di esportazione rimanenti.
     
 4. Dopo aver scelto le impostazioni di esportazione, fare clic su **Esporta**.
     
-    I risultati della ricerca sono pronti per il download, il che significa che viene caricati all'area di archiviazione Azure per l'organizzazione nel cloud Microsoft. I passaggi successivi mostrano come scaricare questi dati al computer locale.
+    I risultati della ricerca sono pronti per il download, il che significa che sono stati caricati nell'area di archiviazione di Azure per l'organizzazione nel cloud Microsoft. Nei passaggi successivi viene illustrato come scaricare questi dati nel computer locale.
     
-5. Fare clic sulla scheda **Esporta** per visualizzare il processo di esportazione che appena creata. Si noti che i processi di esportazione avere lo stesso nome corrispondente esegue una ricerca con **Export** aggiunto alla fine del nome di ricerca. 
+5. Fare clic sulla scheda **Esporta** per visualizzare il processo di esportazione appena creato. Si noti che i processi di esportazione hanno lo stesso nome della ricerca corrispondente con **_Export** accodati alla fine del nome della ricerca. 
     
-6. Fare clic sul processo di esportazione appena creata per visualizzare la pagina di comparsa di esportazione. 
+6. Fare clic sul processo di esportazione appena creato per visualizzare la pagina di esportazione del riquadro a comparsa. 
     
-7. In **Esporta chiave**, fare clic su **Copia negli Appunti**. Utilizzare questa chiave nel passaggio 10 per scaricare i risultati della ricerca.
+7. In **Esporta chiave**, fare clic su **copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 10.
     
-8. Fare clic su ![icona dei risultati di ricerca di esportazione](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **scaricare i risultati** nella parte superiore della pagina esportazione comparsa. 
+8. Fare ![clic su Esporta risultati](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
-9. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire **Microsoft Office 365 eDiscovery dello strumento di esportazione**. Verrà installato la prima volta che si scarica i risultati della ricerca **eDiscovery dello strumento di esportazione** . 
+9. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery di Microsoft Office 365**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     
 10. Nello **strumento di esportazione di eDiscovery** incollare nella casella appropriata la chiave di esportazione copiata nel passaggio 7.
     
 11. Fare clic su **Sfoglia** per specificare il percorso in cui si desidera scaricare i file dei risultati della ricerca. 
     
     > [!NOTE]
-    > A causa della quantità elevata di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale, non scaricare tali un'unità di rete o altro percorso di rete. 
+    > A causa dell'elevato numero di attività del disco (letture e scritture), è necessario scaricare i risultati della ricerca in un'unità disco locale. non scaricarli in un'unità di rete mappata o in un altro percorso di rete. 
   
 12. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
     
-    **EDiscovery dello strumento di esportazione** viene visualizzato il processo di esportazione, con una stima del numero e dimensione degli altri download di informazioni sullo stato. Una volta completato il processo di esportazione, è possibile aprire il file PST di Exchange in Outlook e quindi passare alla cartella **ApplicationDataRoot** per accedere alle sottocartelle al servizio MyAnalytics e di Roaming. 
+    Lo **strumento di esportazione di eDiscovery** Visualizza le informazioni sullo stato relative al processo di esportazione, inclusa una stima del numero e delle dimensioni degli elementi restanti da scaricare. Al termine del processo di esportazione, è possibile aprire il file PST di Exchange in Outlook e quindi passare alla cartella **ApplicationDataRoot** per accedere alle sottocartelle di Analytics e del servizio di roaming. 
     
-    Come indicato in precedenza, i file JSON che contiene i dati di utilizzo sono allegati ai messaggi. Per visualizzare un file JSON, fare clic su un messaggio e quindi aprire il file allegato JSON. 
+    Come spiegato in precedenza, i file JSON che contengono i dati di utilizzo sono allegati ai messaggi. Per visualizzare un file JSON, fare clic su un messaggio e quindi aprire il file JSON collegato. 
   
-### <a name="exporting-partially-indexed-items"></a>Esportazione di elementi indicizzati parzialmente
+### <a name="exporting-partially-indexed-items"></a>Esportazione di elementi parzialmente indicizzati
 
-È consigliabile non esportare elementi indicizzati parzialmente (denominati anche gli elementi non indicizzati) dalla ricerca incorporata che viene creata quando si crea un nuovo caso DSR. Ciò avviene perché la ricerca risultati più probabile che includerà parzialmente indicizzato elementi per altri utenti all'interno dell'organizzazione e non solo parzialmente indicizzato elementi per l'oggetto dati). In realtà, è consigliabile creare una ricerca di contenuto separata associato il caso DSR progettato in modo da esportare solo gli elementi indicizzati parzialmente correlati all'argomento dati. 
+Si consiglia di non esportare gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) dalla ricerca incorporata creata quando si crea un nuovo caso DSR. Questo perché i risultati della ricerca saranno più che probabili includere gli elementi parzialmente indicizzati per gli altri utenti dell'organizzazione e non solo gli elementi parzialmente indicizzati per il soggetto dei dati. Si consiglia invece di creare una ricerca di contenuto distinta associata al caso DSR che è stato creato per esportare solo gli elementi parzialmente indicizzati correlati all'interessato. 
   
-Di seguito è un processo di alto livello per esportare elementi parzialmente indicizzati. Dopo aver è export, è possibile rivedere per determinare se un elementi risponde a un accesso DSR o richiesta di esportazione.
+Di seguito viene indicato un processo di alto livello per esportare gli elementi parzialmente indicizzati. Una volta esportati, è possibile esaminarli per determinare se un elemento risponde a una richiesta di accesso o di esportazione DSR.
   
 1. Aprire il caso DSR e creare una nuova ricerca nella pagina di **ricerca** . 
     
-2. Utilizzare i criteri seguenti per configurare la query di ricerca e i percorsi di contenuti per la ricerca:
+2. Utilizzare i criteri seguenti per configurare la query di ricerca e i percorsi di contenuto per la ricerca:
     
-    - Utilizzare una query con parole chiave vuota/vuoto. Questo restituisce tutti gli elementi in percorsi contenuti vengono eseguita la ricerca.
+    - Utilizzare una query di parole chiave vuota/vuota. Verranno restituiti tutti gli elementi presenti nei percorsi di contenuto in cui viene eseguita la ricerca.
     
-    - Ricerca solo tale persona Exchange Online delle cassette postali e il proprio account OneDrive.
+    - Cercare solo la cassetta postale di Exchange Online del soggetto dei dati e il relativo account OneDrive.
     
-3. Dopo l'esecuzione della ricerca e completarlo, è possibile esportare e scaricare i risultati della ricerca (come descritto nel [passaggio 4](#step-4-export-the-data)). Utilizzare le impostazioni seguenti per esportare elementi parzialmente indicizzati. 
+3. Dopo aver eseguito la ricerca e il completamento, è possibile esportare e scaricare i risultati della ricerca, come descritto nel [passaggio 4](#step-4-export-the-data). Per esportare gli elementi parzialmente indicizzati, utilizzare le impostazioni seguenti. 
     
-    - In **Opzioni di Output**, selezionare la terza opzione ( **solo gli elementi di un formato non riconosciuto, vengono crittografate o non indicizzate per altri motivi**) per esportare solo elementi parzialmente indicizzati.
+    - In **Opzioni di output**selezionare la terza opzione ( **solo gli elementi che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi parzialmente indicizzati.
     
-    - In **Exchange esportare contenuto**, è possibile selezionare qualsiasi opzione in base alle proprie preferenze. 
+    - In **Esporta contenuto di Exchange come**, è possibile selezionare qualsiasi opzione in base alle preferenze. 
     
-    - Selezionare l'opzione **Includi versioni per i documenti di SharePoint** esporterà versioni dei documenti se una versione parzialmente è indicizzata. 
+    - Se si seleziona l'opzione **Includi versioni per documenti di SharePoint** , verranno esportate le versioni dei documenti se una versione è parzialmente indicizzata. 
     
-Per ulteriori informazioni sugli elementi indicizzati parzialmente, vedere: 
+Per ulteriori informazioni sugli elementi parzialmente indicizzati, vedere: 
   
 - [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md) (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 
-- [Esportazione di elementi indicizzati parzialmente](export-search-results.md#exporting-partially-indexed-items)
+- [Esportazione di elementi parzialmente indicizzati](export-search-results.md#exporting-partially-indexed-items)
     
-### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>Ricerca e l'esportazione di dati da Microsoft Teams e gruppi di Office 365
+### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>Ricerca ed esportazione di dati da Microsoft teams e gruppi di Office 365
 
-Le conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams (denominato chat Team o chat dirette) sono archiviate nella cassetta postale di Exchange Online degli utenti che partecipano la chat. Inoltre, sono archiviati i file che condivide una persona in una chat dirette account OneDrive dell'utente che condivide il file. Perché la ricerca incorporata ricerche in tutte le cassette postali e gli account OneDrive nell'organizzazione, documenti condivisi in una sessione di chat (ovvero l'oggetto di dati creati o caricati) e team chat verranno restituiti dalla ricerca predefinita in un caso DSR.
+Le conversazioni che fanno parte dell'elenco chat in Microsoft Teams (denominate chat del team o chat di uno-a-uno) sono archiviate nella cassetta postale di Exchange Online degli utenti che partecipano alle chat. Inoltre, i file che una persona condivide in una chat uno-a-uno sono archiviati nell'account OneDrive della persona che condivide il file. Poiché la ricerca incorporata Cerca tutte le cassette postali e gli account di OneDrive nell'organizzazione, le chat del team e i documenti condivisi in una sessione di chat (in cui il soggetto dei dati è stato creato o caricato) verranno restituiti dalla ricerca incorporata in un caso DSR.
   
-In alternativa, le conversazioni che fanno parte di un canale team (denominato anche i messaggi di canale) sono archiviate nella cassetta postale associata a un team. Questi tipi di conversazioni che ha partecipato l'oggetto dati vengono restituiti dalla ricerca incorporato anche perché tutte le cassette postali associate a Microsoft Teams vengono eseguita la ricerca. Inoltre, vengono archiviate le sezioni potrebbe condivisione di un oggetto dati in un canale team nel sito di SharePoint del team. I file creati o uploadedby verrà restituito l'oggetto dati dalla ricerca predefinita in un caso DSR perché siti associati a Microsoft Teams vengono incluse nella ricerca.
+In alternativa, le conversazioni che fanno parte di un canale di Teams (denominati anche messaggi di canale) vengono memorizzate nella cassetta postale associata a un team. Questi tipi di conversazioni a cui ha partecipato il soggetto dei dati vengono restituiti anche dalla ricerca incorporata perché vengono cercate tutte le cassette postali associate a Microsoft teams. Inoltre, le mattonelle che un soggetto dei dati potrebbe avere condiviso in un canale teams vengono archiviate nel sito di SharePoint del team. I file creati o uploadedby i dati verranno restituiti dalla ricerca incorporata in un caso DSR perché i siti associati a Microsoft teams sono inclusi nella ricerca.
   
-Analogamente, le cassette postali e i siti di SharePoint che corrispondono a un gruppo di Office 365 sono inclusi anche della funzionalità di ricerca predefinita. Ciò significa che messaggi di posta elettronica che dove inviati o ricevuti in base all'oggetto dati e i file creati o caricati in base all'oggetto dati verranno restituiti. 
+Analogamente, le cassette postali e i siti di SharePoint che corrispondono a un gruppo di Office 365 sono anch ' essi inclusi nella ricerca incorporata. Questo significa che verranno restituiti i messaggi di posta elettronica inviati o ricevuti dall'interessato e dai file creati o caricati dall'interessato. 
   
-Per ulteriori informazioni sull'utilizzo di ricerca del contenuto per la ricerca di elementi in Microsoft Teams e Office 365 gruppi o per informazioni su come ottenere un elenco di membri, vedere la sezione "Ricerca di Microsoft Team e Office 365 gruppi" in [Ricerca contenuto in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+Per ulteriori informazioni sull'utilizzo di ricerca contenuto per cercare gli elementi in Microsoft teams e i gruppi di Office 365 o per visualizzare un elenco di membri, vedere la sezione "ricerca di gruppi di Microsoft teams e Office 365" in [Ricerca contenuto in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
   
 ### <a name="searching-exchange-public-folders"></a>Ricerca di cartelle pubbliche di Exchange
 
-Ricerca incorporate in caso DSR verrà messaggi di posta elettronica di restituire solo che l'oggetto dati inviati a una cartella pubblica abilitata alla posta elettronica o messaggi qualcun altro inviati a una cartella pubblica e copiati anche l'oggetto di dati. Non restituirà messaggio in cui l'oggetto dati potrebbe essere pubblicate in una cartella pubblica. Per cercare gli elementi che l'oggetto dati pubblicato in una cartella pubblica, è possibile creare un oggetto separato eseguire una ricerca di contenuto distinti che esegue la ricerca per gli oggetti pubblicati in una cartella pubblica in base all'oggetto dati.
+La ricerca incorporata in un caso DSR restituirà solo i messaggi di posta elettronica che il soggetto dei dati ha inviato a una cartella pubblica abilitata alla posta elettronica o ai messaggi inviati da un altro utente a una cartella pubblica e ha copiato anche l'interessato. Non restituirà un messaggio che potrebbe essere stato inviato a una cartella pubblica. Per cercare gli elementi inseriti nell'oggetto dei dati in una cartella pubblica, è possibile creare una ricerca di contenuto di creare una distinta che consente di ricercare tutti gli elementi inseriti in una cartella pubblica dall'interessato.
   
-Di seguito è un processo di alto livello per cercare gli elementi che potrebbe essere pubblicate l'oggetto dati in una cartella pubblica. 
+Di seguito viene indicato un processo di alto livello per cercare gli elementi che il soggetto dei dati potrebbe aver postato in una cartella pubblica. 
   
 1. Aprire il caso DSR e creare una nuova ricerca nella pagina di **ricerca** . 
     
-2. Utilizzare i criteri seguenti per configurare la query di ricerca e i percorsi di contenuti per la ricerca:
+2. Utilizzare i criteri seguenti per configurare la query di ricerca e i percorsi di contenuto per la ricerca:
     
-  - Nella casella **parole chiave** , utilizzare la query di ricerca seguenti: 
+  - Nella casella **parole chiave** utilizzare la query di ricerca seguente: 
     
     ```
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 
-  - Ricerca tutte le cartelle pubbliche di Exchange
+  - Eseguire una ricerca in tutte le cartelle pubbliche di Exchange
     
-  - Dopo l'esecuzione della ricerca e completarlo, è possibile esportare e scaricare i risultati della ricerca (come descritto nel [passaggio 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Utilizzare le impostazioni seguenti per esportare elementi parzialmente indicizzati. 
+  - Dopo aver eseguito la ricerca e il completamento, è possibile esportare e scaricare i risultati della ricerca, come descritto nel [passaggio 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4). Per esportare gli elementi parzialmente indicizzati, utilizzare le impostazioni seguenti. 

@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla configurazione della gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 63780da59afb245b35916a1e7a5b2eb780d535a8
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090918"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221086"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configurazione della gestione degli accessi con privilegi in Office 365
 

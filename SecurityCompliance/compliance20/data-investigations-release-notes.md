@@ -1,48 +1,48 @@
 ---
-title: Note sulla versione di dati indagini (Preview) in Microsoft 365
+title: Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In questo articolo viene descritta la nuova versione di eDiscovery avanzate (Preview) in Microsoft 365.
-ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery (Preview) in Microsoft 365.
+ms.openlocfilehash: 851712d6eae876f4c74c4d3322de487d3ff14858
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695062"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212806"
 ---
-# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione di dati indagini (Preview) in Microsoft 365
+# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 
-È possibile utilizzare il nuovo strumento dati indagini (Preview) in Microsoft 365 esaminare, analizzare e correggere i dati correlati risolte, ad esempio un problema di perdita di dati o un'indagine interna. Indagini pubblica anteprima dei dati viene fornita anticipati accesso alle caratteristiche e degli aggiornamenti futuri. Per ottenere accesso anticipato per le funzionalità più recenti, creare un nuovo indagini in indagini dati (Preview) in & la protezione di Office 365 centro conformità. Per ulteriori informazioni, vedere [Manage un evento imprevisto perdita di dati in Microsoft 365](manage-data-spillage-incidents.md).
+È possibile utilizzare lo strumento nuovo data Investigation (Preview) in in Microsoft 365 per valutare, esaminare e correggere gli incidenti correlati ai dati, ad esempio un evento di fuoriuscita dei dati o un'indagine interna. L'anteprima pubblica delle indagini sui dati fornisce l'accesso tempestivo alle funzionalità e agli aggiornamenti imminenti. Per ottenere un accesso precoce alle funzionalità più recenti, creare una nuova indagine in indagini sui dati (Preview) nel centro conformità di Office 365 Security &. Per informazioni, vedere [gestire un problema di fuoriuscita dei dati in Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novità 
 
-- **Indagini** - è possibile raggruppare le ricerche e risolte mediante la creazione di un'analisi. Gestire le indagini chi può accedere tramite l'aggiunta o rimozione di membri.  È anche possibile selezionare e contrassegnare le indagini preferite. Tenere traccia e monitorare l'attività all'interno di indagini utilizzando nuovi dashboard. Dopo aver completato l'analisi, è possibile chiudere o eliminarlo.
+- **Indagini** : è possibile raggruppare le ricerche e gli eventi imprevisti creando un'indagine. Gestire gli utenti che possono accedere all'indagine aggiungendo o rimuovendo membri.  È inoltre possibile selezionare e contrassegnare le indagini preferite. Tenere conto e monitorare le attività all'interno e nelle indagini con i nuovi dashboard. Dopo aver completato le indagini, è possibile chiuderlo o eliminarlo.
 
-- **Utenti di interesse** -quando si aggiungono utenti a indagini come utenti di interesse, è possibile visualizzare le cassette postali, OneDrive for Business account e i siti Teams Microsoft. È possibile utilizzarli per definire l'ambito le ricerche di contenuto indagine. Per ulteriori informazioni su una persona di interesse, è inoltre possibile visualizzare i record correlati all'attività in Office 365 e altri servizi Microsoft di controllo.
+- **Persone di interesse** : quando si aggiungono gli utenti alle indagini come persone di interesse, è possibile visualizzare i siti di cassette postali, OneDrive for business e Microsoft teams. È possibile utilizzarli per l'ambito delle ricerche di contenuto investigativo. Per indagare ulteriormente su una persona interessata, è anche possibile visualizzare i record di controllo relativi alle attività in Office 365 e in altri servizi Microsoft.
 
-- **Ricerche** – crea una ricerca a livello di organizzazione tramite varie funzionalità di ricerca condizione. Se si conoscono gli utenti o i siti che si desidera eseguire la ricerca, è possibile eseguire questa operazione aggiunta degli utenti come utenti di interesse o posizioni di siti specificati nella creazione guidata di ricerca. 
+- **Ricerche** – creare una ricerca a livello di organizzazione utilizzando varie condizioni di ricerca. Se si conoscono gli utenti o i siti che si desidera cercare, è possibile farlo aggiungendoli come persone di interesse o specificando le posizioni del sito nella procedura guidata per la creazione della ricerca. 
 
-- **Risolte** -creare un nuovo incidente e aggiungere i risultati di ricerca che si desidera controllare. Può controllare i singoli documenti, annotare per lasciare note indagini ed esportare i risultati per spostare in un ambiente diverso. 
+- **Operazioni** non consentite: creare un nuovo evento imprevisto e aggiungere i risultati della ricerca che si desidera esaminare. È possibile esaminare singoli documenti, annotare per lasciare note di indagine ed esportare i risultati in modo che vengano spostati in un ambiente diverso. 
 
-- **Esaminare** – utilizzo a nativo, testo e quasi nativo visualizzazione per esaminare i documenti aggiunti a un problema. È inoltre possibile applicare analitica ai documenti di raggruppare gli elementi duplicati, thread di posta elettronica e temi, che consentono di semplificare la revisione del problema. 
+- **Recensione** : utilizzare una visualizzazione nativa, di testo e quasi nativa per esaminare i documenti aggiunti a un evento imprevisto. È inoltre possibile applicare analisi ai documenti per raggruppare gli elementi in base ai duplicati, ai thread di posta elettronica e ai temi, che possono essere utili per assistere la revisione dell'evento. 
 
-- **Redact contrassegna e aggiungere note** – redigi testo, applicare i tag e creare delle annotazioni come leggere i documenti.
+- **Redigere, tag e** annotazioni – testo di redigere, applicare i tag e creare annotazioni durante la revisione dei documenti.
   
-- **Indicizzazione complete** – se sono presenti elementi indicizzati parzialmente, saranno nuovamente indicizzati su richiesta in modo che tutti i dati saranno disponibili per la ricerca.
+- **IndiciZzazione profonda** : se sono presenti elementi parzialmente indicizzati, verranno reindicizzati su richiesta in modo che tutti i dati siano disponibili per la ricerca.
 
-- **Risoluzione dei problemi errore** – Remediate o download di elaborazione degli errori. È previsto il supporto di risoluzione dei problemi per i tipi di file di grandi dimensioni, i file e altri problemi relativi a errori di indicizzazione protetti da password. 
+- Correzione degli errori: correzione o download di un **errore** di elaborazione. Questo include il supporto per la correzione di tipi di file di grandi dimensioni, file protetti da password e altri problemi relativi agli errori di indicizzazione. 
 
-- **I processi** : lo stato di avanzamento di processi a esecuzione prolungata.
+- **Jobs** – verifica lo stato dei processi con esecuzione prolungata.
 
-- **Elementi delle cassette postali rigido-delete** - nelle situazioni urgenti, potrebbe essere necessario eliminare definitivamente gli elementi non posizionato correttamente. A tale scopo, è possibile eseguire il **ComplianceSearchAction New-eliminare - PurgeType HardDelete** command in sicurezza & PowerShell centro conformità per rimuovere definitivamente gli elementi dalle cassette postali. Per ulteriori informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Eliminare definitivamente gli elementi della cassetta postale** -in situazioni urgenti, potrebbe essere necessario eliminare in modo definitivo gli elementi non posizionati. A tale scopo, è possibile eseguire il comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** in PowerShell centro conformità di sicurezza & per rimuovere definitivamente gli elementi dalle cassette postali. Per ulteriori informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

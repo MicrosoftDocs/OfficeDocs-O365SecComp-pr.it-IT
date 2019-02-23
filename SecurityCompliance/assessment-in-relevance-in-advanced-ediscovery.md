@@ -1,54 +1,54 @@
 ---
-title: Informazioni sulla valutazione in Rilevanza di Office 365 Advanced eDiscovery
+title: La valutazione in Rilevanza di Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 'Panoramica della fase di valutazione e il ruolo per determinare la complessità dei problemi durante la formazione di pertinenza di Office 365 avanzate eDiscovery.  '
-ms.openlocfilehash: a54a4134609b16568586f3cb6b60ebdeba860bac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Office 365 Advanced eDiscovery.
+ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530810"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212976"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Informazioni sulla valutazione in Rilevanza di Office 365 Advanced eDiscovery
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>La valutazione in Rilevanza di Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-EDiscovery avanzate consente anticipata valutazione, ad esempio, per i problemi definiti e i dati importati per un caso. EDiscovery avanzate consente esperto per prendere decisioni relative a un approccio adottato e applicarle al progetto di revisione del documento.
+Advanced eDiscovery consente di valutare precocemente, ad esempio, i problemi definiti e i dati importati per un caso. Advanced eDiscovery consente all'esperto di prendere decisioni relative a un approccio adottato e di applicarle al progetto di revisione dei documenti.
   
-## <a name="understanding-assessment"></a>Valutazione di informazioni
+## <a name="understanding-assessment"></a>Informazioni sulla valutazione
 
-Nella valutazione, esperto viene esaminato un insieme casuale di almeno 500 file, che vengono utilizzati per determinare la complessità dei problemi e per generare statistiche che riflettono i risultati di formazione. Quando vengono rilevati file sufficienti pertinenti per raggiungere un livello statistico utili avanzate eDiscovery pertinenza per fornire statistiche accurate e determinare in modo efficace il punto stabilizzazione nel processo di formazione, valutazione ha esito positivo. 
+In valutazione, l'esperto esamina un insieme casuale di almeno 500 file, che vengono utilizzati per determinare la ricchezza dei problemi e produrre statistiche che riflettono i risultati della formazione. La valutazione ha esito positivo quando sono stati trovati file rilevanti sufficienti per raggiungere un livello statistico che consentirà di rendere più efficace la pertinenza di eDiscovery per fornire statistiche accurate e determinare efficacemente il punto di stabilizzazione nel processo di formazione. 
   
-Maggiore che del numero dei pertinenti file nel set di valutazione, più precise le statistiche e l'efficacia dell'algoritmo stabilità. Il numero di file pertinenti all'interno dei file di valutazione dipende dalla quantità del problema. Complessità è % stimate del file rilevanti nel set di interesse per un problema. Problemi con maggiore complessità verranno raggiunta più velocemente rispetto a problemi di un numero elevato di file rilevanti con complessità inferiore. Problemi di complessità estremamente basso (ad esempio, % 2 o meno) richiederà una valutazione molto grande set di raggiungere un numero significativo di file rilevanti.
+Maggiore è il numero di file rilevanti nel set di valutazione, maggiore è la precisione delle statistiche e l'efficacia dell'algoritmo di stabilità. Il numero di file rilevanti all'interno dei file di valutazione dipende dalla ricchezza del problema. La ricchezza è la percentuale stimata di file rilevanti nel set pertinente a un problema. I problemi con una ricchezza maggiore raggiungeranno un numero maggiore di file rilevanti più rapidamente rispetto ai problemi con una ricchezza più bassa. I problemi con una ricchezza estremamente bassa (ad esempio, il 2% o meno) richiedono un set di valutazioni molto esteso per raggiungere un numero significativo di file rilevanti.
   
-Le statistiche, sono disponibili nelle schede tenere traccia e stabilire durante la formazione e dopo il calcolo Batch, includono stime della richiamo per la revisione diversi set. In statistiche, stime basate su un campione impostato (in questo caso, i file di valutazione) includono il margine di errore e il livello di probabilità di tale margine di errore. Richiamo stimato di 80%, ad esempio, potrebbe essere un margine di errore più o meno il 5% del con un livello di probabilità di 95%. Ciò significa che il richiamo stimato effettivamente il 75-85% e questa stima con confidenza 95%. Maggiore sarà il set di valutazione, il margine di errore diventa più piccolo e le statistiche sono più precise. 
+Le statistiche, presentate nelle schede traccia e decidi durante l'allenamento e dopo il calcolo del batch, includono stime di richiamo per diversi insiemi di revisione. In statistica, le stime basate su un set di esempio (in questo caso, i file di valutazione) includono il margine di errore e il livello di confidenza del margine di errore. Ad esempio, il richiamo stimato del 80% potrebbe avere un margine di errore pari o meno al 5% con un livello di confidenza pari al 95%. Questo significa che il richiamo stimato è effettivamente 75%-85% e questa stima ha 95% di confidenza. Maggiore è il set di valutazione, il margine di errore diventa più piccolo e le statistiche sono più accurate. 
   
-Dopo l'esperto viene esaminato un insieme di valutazione iniziale dei file di 500, pertinenza è in grado di determinare il margine di errore dei valori richiamo corrente. Pertinenza inoltre viene impostato un margine di errore che consiglia di raggiungere per ottimizzare il set di valutazione predefinito. Di seguito sono riportati alcuni esempi:
+Dopo che l'esperto ha esaminato un gruppo di valutazione iniziale di 500 file, la pertinenza è in grado di determinare il margine di errore corrente dei valori di richiamo. La pertinenza consentirà anche di impostare un margine di errore predefinito che consiglia di raggiungere per ottimizzare il set di valutazione. Di seguito sono riportati alcuni esempi:
   
-- Se la valutazione già impostata hanno restituito un margine di errore più o meno pari al 10% del, pertinenza indicazioni per passare alla formazione (non è necessaria alcuna revisione valutazione complementare). 
+- Se il set di valutazione ha già restituito un margine di errore pari o meno al 10%, la pertinenza consiglierà di passare alla formazione (non è necessaria alcuna revisione di valutazione supplementare). 
     
-- Se il set di valutazione avesse portato a un margine di errore più o meno 13% del, pertinenza potrebbe essere consigliabile la revisione di un altro set di file di valutazione di raggiungere un margine inferiore. 
+- Se il set di valutazione ha restituito un margine di errore più o meno 13%, la pertinenza potrebbe consigliare la revisione di un altro gruppo di file di valutazione per raggiungere un margine inferiore. 
     
-- Se complessità è insufficiente, pertinenza potrebbe essere consigliabile arresto assessment anche se il margine di errore è di grandi dimensioni (effettua le statistiche realizzabile), in quanto il set di valutazione consentono di raggiungere un utile margine di errore è troppo grande.
+- Se la ricchezza è estremamente bassa, la pertinenza potrebbe consigliare l'interruzione della valutazione anche se il margine di errore è di grandi dimensioni (per rendere impraticabile la statistica), in quanto il set di valutazione necessario per raggiungere un margine di errore utile è troppo elevato.
     
-Ogni problema con il proprio complessità, corrente margine di errore e di conseguenza, il numero stimato dei file di valutazione aggiuntive. Valutazione della serie successiva viene creato in base al numero massimo di file (fino a 1.000 in un unico insieme).
+Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conseguenza, il numero stimato di file di valutazione aggiuntivi. Il set di valutazione successivo viene creato in base al numero massimo di file (fino a 1.000 in un solo set).
   
-È possibile accettare i suggerimenti di pertinenza o regolare il margine di errore corrente in base alle proprie esigenze. Il margine di errore corrente predefinito viene determinato per il richiamo è uguale o superiore al 75%.
+È possibile accettare le indicazioni relative alla pertinenza o regolare il margine di errore corrente in base alle proprie esigenze. Il margine di errore corrente predefinito è determinato per il richiamo pari o superiori a 75%.
   
 > [!NOTE]
-> La fase di valutazione può essere ignorata nel **pertinenza \> traccia** scheda nella visualizzazione espansa per un problema, deselezionare la casella di controllo di **valutazione** per ogni problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non ci sarà alcun le statistiche per questo problema. > Deselezionando la casella di controllo **Assessment** può essere eseguita solo prima dell'esecuzione di valutazione. Quando sono presenti più problemi in un caso, valutazione viene ignorato solo se la casella di controllo è deselezionata per ogni problema 
+> La fase di valutazione può essere ignorata, nella ** \> ** scheda Tracking pertinenza della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deSelezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -56,11 +56,11 @@ Ogni problema con il proprio complessità, corrente margine di errore e di conse
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging e formazione di pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analisi di pertinenza di verifica](track-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Stabilire in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test di analisi di pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
 

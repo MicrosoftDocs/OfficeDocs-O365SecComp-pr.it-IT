@@ -1,72 +1,71 @@
 ---
-title: Gli avvisi di coda e le code
+title: Avvisi di coda e code
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Gli amministratori possono venire a conoscenza degli avvisi di coda e le code nel dashboard di flusso della posta in & la protezione di Office 365 centro conformità.
-ms.openlocfilehash: fe750e32136af095bb0ccff8544306db76a7a667
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+description: Gli amministratori possono ottenere informazioni sugli avvisi e le code in coda nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
+ms.openlocfilehash: 45c03ae8d5f646c4514b19669ca83b3eac561f68
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685501"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220796"
 ---
-# <a name="queue-alerts-and-queues"></a>Gli avvisi di coda e le code
+# <a name="queue-alerts-and-queues"></a>Avvisi di coda e code
 
 ## <a name="queue-alerts"></a>Avvisi di coda
 
-Quando non è possibile inviare messaggi dall'organizzazione Office 365 per locale o server di posta elettronica partner utilizzando i connettori, i messaggi vengono accodati in Office 365. Esempi comuni che causano questa condizione sono:
+Quando i messaggi non possono essere inviati dall'organizzazione di Office 365 ai server di posta elettronica locali o partner utilizzando i connettori, i messaggi vengono accodati in Office 365. Esempi comuni che causano questa condizione sono:
 
-- Il connettore è configurato correttamente.
+- Il connettore non è configurato correttamente.
 
-- Sono state apportate modifiche di rete o del firewall nell'ambiente locale.
+- Sono state apportate modifiche alla rete o al firewall nell'ambiente locale.
 
-Office 365 continuerà a tentativi di recapito per 48 ore. Dopo 48 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noto anche come rapporti di mancato recapito o messaggi di rimbalzo).
+Office 365 continuerà a essere recapitato per 48 ore. Dopo 48 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo).
 
-Se il volume di posta elettronica in coda supera la soglia predefinita (il valore predefinito è messaggi 2000), gli avvisi è disponibili nel dashboard di flusso della posta a **avvisi recenti**e gli amministratori riceverà una notifica tramite posta elettronica (per l'indirizzo di posta elettronica alternativi) . Per configurare la soglia di avviso, limite giornaliero notifica e/o i destinatari dell'avviso, vedere la sezione **avvisi coda Personalizza** riportata di seguito.
+Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 2000 messaggi), gli avvisi saranno disponibili nel dashboard del flusso di posta in **avvisi recenti**e gli amministratori riceveranno una notifica tramite posta elettronica (per il loro indirizzo di posta elettronica alternativo) . Per configurare la soglia di avviso, il limite di notifica giornaliero e/o i destinatari dell'avviso, vedere la sezione **personalizzare gli avvisi di coda** riportati di seguito.
 
-![Avvisi di coda nell'area di avvisi recenti del dashboard di flusso della posta in & la protezione di Office 365 centro conformità](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![Avvisi di coda nell'area avvisi recenti del dashboard del flusso di posta elettronica nel centro conformità di sicurezza & di Office 365](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
-## <a name="customize-queue-alerts"></a>Personalizzare gli avvisi di coda
+## <a name="customize-queue-alerts"></a>Personalizzare gli avvisi delle code
 
-Sui concetti del flusso di posta elettronica creare un criterio di avviso denominata **messaggi sono in ritardo** (la casella di controllo **Invia notifiche di posta elettronica** nella schermata riportato di seguito di sotto) trovato negli **avvisi** \> **Criteri di avviso**. È possibile modificare i destinatari della soglia e avviso facendo clic sul criterio.
+Informazioni sul flusso di posta per creare un criterio di avviso denominato **messaggi sono stati ritardati** (la casella di controllo **Invia notifiche tramite posta elettronica** nella schermata di esempio seguente) rilevata nei **criteri di avviso** **avvisi** \> . È possibile modificare la soglia e i destinatari degli avvisi facendo clic sul criterio.
 
-![Spostamento degli avvisi](media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+![Spostamento avvisi](media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
 
-Verrà visualizzato un nuovo blade informazioni criterio, è ora possibile fare clic su **Modifica criterio**.
+Verrà visualizzato un nuovo Blade informazioni sui criteri, è ora possibile fare clic su **modifica criterio**.
 
 ![Criterio di modifica ](media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
 
-Blade informazioni verrà modificate in **Modifica criteri**. È ora possibile modificare i destinatari di avviso tramite posta elettronica, il limite al numero di notifiche inviate al giorno e la soglia minima per attivare l'avviso (200 o più).
+Il Blade delle informazioni verrà modificato nel **criterio di modifica**. Ora è possibile modificare i destinatari per la posta elettronica di avviso, il limite per il numero di notifiche inviate al giorno e la soglia minima per attivare l'avviso (200 o più).
 
-![Modificare criteri Blade](media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+![Modifica del Blade del criterio](media/c657cc74-7867-474c-b2c9-dc478449f990.png)
 
-## <a name="queue-alert-details"></a>Dettagli dell'avviso coda
+## <a name="queue-alert-details"></a>Dettagli avviso coda
 
-Quando si fa clic sull'avviso, in un riquadro comparsa vengono visualizzati i dettagli dell'avviso.
+Quando si fa clic sull'avviso, i dettagli degli avvisi vengono visualizzati in un riquadro a comparsa.
 
-![Selezionare un avviso relativo alla coda nell'area di avvisi recenti del dashboard di flusso della posta in & la protezione di Office 365 centro conformità](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![Selezionare un avviso di coda nell'area avvisi recenti del dashboard del flusso di posta elettronica nel centro sicurezza e conformità di Office 365 &](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![La coda avviso dettagli menu mobile & la protezione di Office 365 centro conformità](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![Il riquadro a comparsa Dettagli avviso coda nel centro conformità & sicurezza di Office 365](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
-È possibile fare clic su **Visualizza coda** nei dettagli dell'avviso per visualizzare i dettagli della coda, problemi e collegamenti alle correzioni disponibili in un nuovo riquadro comparsa.
+È possibile fare clic su **Visualizza coda** nei dettagli degli avvisi per visualizzare i dettagli della coda, i problemi e i collegamenti alle correzioni disponibili in un nuovo riquadro a comparsa.
 
-![La coda avviso dettagli menu mobile & la protezione di Office 365 centro conformità](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![Il riquadro a comparsa Dettagli avviso coda nel centro conformità & sicurezza di Office 365](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
-![Visualizza coda nei dettagli dell'avviso](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![Visualizza coda nei dettagli degli avvisi](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
 ## <a name="queues"></a>Code
 
-Anche se il volume di messaggi in coda non sia stata superata la soglia, è possibile utilizzare ancora l'area delle **code** del dashboard di flusso di posta elettronica per visualizzare i messaggi che sono stati accodati per più di un'ora. È possibile utilizzare l'area delle **code** per monitorare il numero di messaggi in coda (il valore 0 indica che il flusso della posta OK) ed eseguire azioni prima che il numero di messaggi in coda diventi troppo grande.
+Anche se il volume del messaggio in coda non ha superato la soglia, è comunque possibile utilizzare l'area **Code** del dashboard del flusso di posta per visualizzare i messaggi che sono stati accodati per più di un'ora. È possibile utilizzare l'area **Code** per monitorare il numero di messaggi in coda (il valore 0 indica che il flusso di posta è OK) ed eseguire un'azione prima che il numero di messaggi in coda diventi troppo elevato.
 
-![Code nel dashboard di flusso della posta in & la protezione di Office 365 centro conformità](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Code nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance Office 365](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
-Quando si sceglie il numero di messaggi nelle **code**, i dettagli di coda e istruzioni su come risolvere un problema saranno visualizzati in un riquadro tendina (tendina stesso visualizzata fare clic su **Visualizza coda** i dettagli di un avviso relativo alla coda).
+Quando si fa clic sul numero di messaggi in coda nelle **Code**, i dettagli della coda e le indicazioni su come risolvere il problema verranno visualizzati in un riquadro a comparsa (lo stesso riquadro a comparsa visualizzato dopo aver fatto clic su **Visualizza coda** nei dettagli di un avviso di coda).
 
 ![Dettagli coda](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)

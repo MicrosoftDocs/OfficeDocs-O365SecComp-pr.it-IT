@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: f5b7bef5d9f20c6425e8d4636c94ed59f72504d3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29694992"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212836"
 ---
 # <a name="query-the-data-in-a-working-set"></a>Eseguire query sui dati in un set di lavoro
 
-Nella maggior parte dei casi, sarà utile poter approfondire che cos'è presente in un gruppo di lavoro e organizzare i contatti per esaminare in modo più efficiente. Query all'interno di un gruppo di lavoro consente a tale scopo, consentendo è incentrata su un sottoinsieme di documenti che soddisfano i criteri definiti dall'utente alla volta.
+Nella maggior parte dei casi, sarà utile essere in grado di approfondire gli elementi presenti in un working set e organizzarli per la revisione in modo più efficiente. Le query all'interno di un working set consentono di eseguire questa operazione consentendo di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri definiti dall'utente in una sola volta.
 
-## <a name="creating-and-running-a-query-within-a-working-set"></a>Creazione ed esecuzione di una query all'interno di un working set
+## <a name="creating-and-running-a-query-within-a-working-set"></a>Creazione e esecuzione di una query all'interno di un working set
 
-Per creare ed eseguire una query all'interno del set di lavoro, fare clic su "Nuova query" in set in uso. Dopo che il nome della query e definisce le condizioni, fare clic su "Salva" per l'esecuzione della query. Per eseguire una query che è stata salvata in precedenza, sufficiente fare clic su query salvata.
+Per creare ed eseguire una query all'interno del working set, fare clic su "nuova query" nel working set. Dopo aver denominati la query e aver definito le condizioni, fare clic su "Salva" per eseguire la query. Per eseguire una query salvata in precedenza, è sufficiente fare clic sulla query salvata.
 
 ## <a name="conditions"></a>Condizioni
 
-È possibile utilizzare un numero di condizioni per definire la query. È compreso tra metadati inviati come data e i partecipanti ai risultati analitica, ad esempio inclusi tipi e i temi dominanti. Innanzitutto è necessario analizzare l'utilizzo impostare prima di utilizzare i risultati analitica come condizioni. Le condizioni possono essere sottoposti OR o applicato l'operatore AND; Per combinare i connettori, è possibile utilizzare gruppi di condizione.
+Per definire le query, è possibile utilizzare una serie di condizioni. Variano da metadati quali la data di invio e i partecipanti ai risultati dell'analisi, ad esempio i tipi inclusivi e i temi dominanti. Prima di utilizzare i risultati di analisi come condizioni, è innanzitutto necessario analizzare il working set. Le condizioni possono essere OR'ed o AND'ed; per mescolare i connettori, è possibile utilizzare i gruppi di condizioni.
 
 ## <a name="filters"></a>Filtri
-Filtri Agisci come l'esecuzione di query all'interno di una query. È possibile filtrare eccessivamente condizioni la condizione di ricerca.
+I filtri agiscono come query all'interno di una query. È possibile filtrare eccessivamente le condizioni per la condizione di ricerca.
 
 

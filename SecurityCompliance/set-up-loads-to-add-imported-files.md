@@ -6,138 +6,138 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Rivedere i passaggi per aggiungere i file importati all'ultimo caricamento definita o blocco dei file prima di eseguire formazione pertinenza di Office 365 avanzate eDiscovery.  "
-ms.openlocfilehash: 2c986578b969b671351930fd6939a90e3a821dc2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Office 365 Advanced eDiscovery.  "
+ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531323"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215986"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurare i gruppi di file per aggiungere i file importati in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In eDiscovery avanzate, un carico è un nuovo batch di file aggiunti a un caso. Per impostazione predefinita, viene definito un carico e tutti i file importati vengono aggiunti a esso. Prima di eseguire formazione pertinenza, file importati devono essere aggiunti al carico. 
+In Advanced eDiscovery, un carico è un nuovo batch di file aggiunto a un caso. Per impostazione predefinita, viene definito un carico e vengono aggiunti tutti i file importati. Prima di eseguire la formazione di pertinenza, i file importati devono essere aggiunti al carico. 
   
-Prendere in considerazione i seguenti scenari:
+Si conSideri gli scenari seguenti:
   
-- Nuovi file sono noti per essere simile al file precedenti caricati nel database maiuscole oppure il caricamento dei file precedente è incluso un insieme casuale dall'insieme di file. In questo caso, aggiungere i file importati per il caricamento del file corrente.
+- I nuovi file sono noti per essere simili ai file precedenti caricati nel database del caso oppure il carico precedente di file era un set casuale della raccolta file. In questa istanza, aggiungere i file importati al caricamento del file corrente.
     
-- Nuovi file sono diversi da quelli precedenti (ad esempio, da un'origine diversa) o non si conoscono precedenti che utilizzano simili o diversi carichi precedenti. In questo scenario, aggiungere i file importati a un nuovo caricamento di file. EDiscovery avanzate la riconosce come scenario carichi in sequenza, consente di richiamare un processo di aggiornamento, blocca calcoli Batch e formazione di pertinenza fino al completamento dell'aggiornamento e il carico nuovo è integrato e addestrato. 
+- I nuovi file sono diversi da quelli precedenti (ad esempio, da un'origine diversa) oppure non sono presenti informazioni precedenti che sono simili o diversi ai carichi precedenti. In questo scenario, aggiungere i file importati a un nuovo caricamento del file. Advanced eDiscovery riconosce questo come uno scenario dei carichi di rotolamento, richiama un processo di aggiornamento, blocca la formazione di pertinenza e i calcoli in batch fino al completamento del recupero e il nuovo carico è integrato e addestrato. 
     
-## <a name="adding-imported-files-to-the-current-load"></a>Aggiunta di file importati per il carico corrente
+## <a name="adding-imported-files-to-the-current-load"></a>Aggiunta di file importati al carico corrente
 
-Tutti i file importati devono essere aggiunti a un carico di elaborazione di eDiscovery avanzate. I file importati vengono aggiunte all'ultimo caricamento definito. Se successivamente si importano i file aggiuntivi, devono essere aggiunti anche al carico.
+Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanced eDiscovery. I file imPortati vengono aggiunti all'ultimo carico definito. Se si importano ulteriori file in un secondo momento, è necessario aggiungerli anche al carico.
   
-1. Nella **pertinenza \> il programma di installazione di pertinenza** selezionare **carichi**.
+1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
     
     ![Scheda dei caricamenti per la configurazione di pertinenza](media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
-2. **File di inclusione**: selezionare un'opzione per i file da includere. Per impostazione predefinita, l'aggiunta di file per il carico corrente si basa popolazione "Tutti i file".
+2. **Includi file**: selezionare un'opzione per i file da includere. Per impostazione predefinita, l'aggiunta di file al carico corrente si basa sulla popolazione "tutti i file".
     
     > [!TIP]
-    > Caricare tutti i file riformati disponibili in pertinenza. Se si prevede di caricare solo un sottoinsieme di file disponibili, innanzitutto consultare grazie al supporto, come il caricamento sottoinsiemi può influire negativamente sulle formazione di pertinenza. 
+    > Caricare tutti i file abbattuti disponibili in pertinenza. Se si prevede di caricare solo un sottoinsieme dei file disponibili, consultare prima di tutto il supporto, in quanto i sottoinsiemi di caricamento possono influire negativamente sulla formazione per pertinenza. 
   
-3. **Gestione dei carichi**, selezionare un carico.
+3. In **gestione carichi**selezionare un carico.
     
 4. Fare clic su **Aggiungi file**. I file vengono aggiunti al carico e viene visualizzato un messaggio di conferma. 
     
 5. Fare clic su **OK**.
     
-Ora, è possibile elaborare i file di eDiscovery avanzate pertinenza per i file di formazione.
+I file possono ora essere elaborati in una pertinenza eDiscovery avanzata per la formazione dei file.
   
-## <a name="editing-a-load-name-within-a-case"></a>Un nome di carico all'interno di un caso di modifica
+## <a name="editing-a-load-name-within-a-case"></a>Modifica di un nome di carico all'interno di un caso
 
-Se la modifica del nome del carico, è consigliabile utilizzare un nome significativo al caso.
+Se si modifica il nome del carico, è consigliabile utilizzare un nome significativo per il caso.
   
-1. Nella **pertinenza \> il programma di installazione di pertinenza** selezionare **carichi**.
+1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
     
-2. Dall'elenco di **gestione di carichi** , selezionare un carico e fare clic sull'icona **Modifica** . Viene visualizzata la finestra di modifica del carico. 
+2. Nell'elenco **gestione carichi** selezionare un carico e fare clic sull'icona **modifica** . Viene visualizzata la finestra modifica caricamento. 
     
 3. Immettere le modifiche e quindi fare clic su **OK**.
     
-## <a name="adding-imported-files-to-a-new-load"></a>Aggiunta di file importato a un nuovo caricamento
+## <a name="adding-imported-files-to-a-new-load"></a>Aggiunta di file importati a un nuovo carico
 
-Dopo aver avviato formazione pertinenza o la conduzione di calcolo di blocco, è possibile importare ed elaborare un insieme di file aggiuntivo. 
+Dopo aver avviato la formazione di pertinenza o aver eseguito il calcolo in batch, è possibile che si desideri importare ed elaborare un ulteriore set di file. 
   
-Durante l'aggiornamento, possono creare, tag e analizzare l'insieme di aggiornamento. EDiscovery avanzate confronta la valutazione dei file relativo e Non relativo il carico di nuovo a quelli di carichi precedenti. In base ai risultati, viene chiesto di prendere decisioni di aggiornamento, se necessario e avanzata eDiscovery vengono forniti suggerimenti sulla base delle informazioni di pertinenza maturate. 
+Durante il recupero, è possibile creare, contrassegnare e analizzare il set di catch-up. Advanced eDiscovery confronta la valutazione dei file rilevanti e non rilevanti nel nuovo carico con quelli presenti nei carichi precedenti. In base ai risultati, viene richiesto di prendere decisioni di catch-up, se necessario, e Advanced eDiscovery fornisce consigli in base alle informazioni sulla pertinenza accumulate. 
   
-Ripristino dello stato carichi e funzionalità di aggiornamento varia nel modo seguente: 
+I carichi di rotolamento e la funzionalità di catch-up variano come indicato di seguito: 
   
-- Quando si importa un nuovo caricamento file dopo il calcolo Batch, eDiscovery avanzate determina in quale misura i file rientrano in una delle categorie seguenti:
+- Quando si importa un nuovo caricamento di file dopo il calcolo del batch, Advanced eDiscovery determina in che misura i file rientrano in una delle categorie seguenti:
     
-  - Analogamente (omogenei): non è richiesto un arrotondamento personalizzata del corso di formazione pertinenza e la conoscenza di attribuzione dal carico precedente può essere applicata "così com'è" per il carico di nuovo. 
+  - Analogo (omogeneo): non è necessario un nuovo ciclo personalizzato di formazione per la pertinenza e le conoscenze accumulate dal carico precedente possono essere applicate "così com'è" al nuovo carico. 
     
-  - DISTINCT (eterogenee): è necessario un arrotondamento personalizzata del corso di formazione pertinenza e la conoscenza di attribuzione dal carico precedente non è possibile applicare. 
+  - Distinct (eterogeneo): è necessario un nuovo ciclo personalizzato di formazione per la pertinenza e non è possibile applicare le informazioni accumulate dal carico precedente. 
     
-    Queste condizioni, fare riferimento a livello di similarità dei file tra i carichi di e non all'interno del caricamento. 
+    Tali termini si riferiscono al livello di somiglianza dei file tra i carichi e non all'interno dei carichi. 
     
-- Quando si importa un nuovo caricamento di file durante la formazione di pertinenza (prima del calcolo Batch), aggiornamento consente di continuare formazione pertinenza sul set di file united. EDiscovery avanzate non vengono valutati se il carico nuovo è simile a o diverso dal carico precedente. Raccoglie informazioni sulla nuova carico semplicemente e consente la pertinenza di formazione continuare nella nuova e precedente imposta dei file. 
+- Quando si importa un nuovo carico di file durante la formazione di pertinenza (prima del calcolo del batch), il recupero consente di continuare la formazione sulla pertinenza del set di file Uniti. Advanced eDiscovery non calcola se il nuovo carico è simile o distinto rispetto al carico precedente. Raccoglie semplicemente informazioni sul nuovo carico e consente la formazione della pertinenza per continuare con i nuovi e precedenti insiemi di file. 
     
-- Quando sono presenti più problemi di formazione di pertinenza e problemi dopo il calcolo Batch, il processo di aggiornamento viene eseguito una volta per tutti i problemi e i risultati vengono calcolati e visualizzati per ogni problema.
+- Quando sono presenti più problemi relativi alla formazione sulla pertinenza e ai problemi dopo il calcolo del batch, il processo di recupero viene eseguito una volta per tutti i problemi e i risultati vengono calcolati e visualizzati per ogni problema.
     
 > [!NOTE]
-> La dimensione del campione aggiornamento può variare. Dipende dalle dimensioni dei nuovo carico rispetto al caricamento della precedente e al numero di campioni completati prima di aggiungere il nuovo carico. Nell'esempio di aggiornamento in genere è un insieme di file 200 a 2.000 il carico di nuovo. 
+> Le dimensioni dell'esempio di catch-up possono variare. Dipende dalle dimensioni del nuovo carico rispetto ai carichi precedenti e dal numero di esempi completati prima di aggiungere il nuovo carico. L'esempio di catch-up è in genere un set di 200 a 2.000 file dal nuovo carico. 
   
 > [!TIP]
-> Aggiornamento degli smette di altre attività e richiede singolo file tagging e revisione. Di conseguenza, è possibile ridurre il sovraccarico quando si aggiungono nuovi file in grandi batch. 
+> Catch-up interrompe tutte le altre attività e richiede il tagging e la revisione dei singoli file. Pertanto, è possibile ridurre il sovraccarico quando si aggiungono nuovi file in batch di grandi dimensioni. 
   
-## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Aggiunta di un nuovo caricamento di file tramite aggiornamento e in sequenza carica
+## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Aggiunta di un nuovo caricamento dei file con i carichi di catch-up e Rolling
 
-1. Nella **pertinenza \> il programma di installazione di pertinenza** selezionare **carichi**.
+1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
     
-2. **Gestione dei carichi**fare clic sul **+** icona per aggiungere un carico. Viene visualizzato un messaggio di conferma. 
+2. In **gestione carichi**fare clic sull' **+** icona per aggiungere un carico. Viene visualizzato un messaggio di conferma. 
     
-3. Fare clic su **Sì** per continuare. Viene visualizzata la finestra di dialogo **Aggiungi nuovo carico** . 
+3. Fare clic su **Sì** per continuare. Viene visualizzata la finestra di dialogo **Aggiungi nuovo caricamento** . 
     
     > [!NOTE]
-    > È possibile aggiungere un nuovo caricamento solo se le azioni eseguite al carico precedente. 
+    > È possibile aggiungere un nuovo carico solo se le azioni sono state eseguite al carico precedente. 
   
-4. Nella finestra di dialogo **Aggiungi nuovo carico** digitare l'informazione da **caricare il nome** e **Descrizione** e quindi fare clic su **OK**. EDiscovery avanzate consente di aggiungere un nuovo caricamento.
+4. Nella finestra di dialogo **Aggiungi nuovo carico** , digitare informazioni in nome e **Descrizione** del **caricamento** e quindi fare clic su **OK**. Advanced eDiscovery aggiunge un nuovo carico.
     
-5. Per importare il nuovo file di carico, fare clic su **Aggiungi file**. Tutti i nuovi file vengono aggiunti a questo carico. Dopo aver eDiscovery avanzate consente di importare i file, riconosce lo scenario di carichi in sequenza e indica aggiornamento come il passaggio successivo.
+5. Per importare il nuovo file di caricamento, fare clic su **Aggiungi file**. Tutti i nuovi file vengono aggiunti a questo carico. Dopo che Advanced eDiscovery importa i file, riconosce lo scenario dei carichi di rotolamento e indica il passaggio successivo.
     
-6. Fare clic su **aggiornamento** nella parte inferiore della finestra di dialogo per l'esecuzione dello scenario. 
+6. Fare clic su **catch-up** nella parte inferiore della finestra di dialogo per eseguire lo scenario. 
     
-    Un singolo insieme di aggiornamento, in genere che contiene il file di 200 a 2.000 dal carico nuovo, viene creato per tutti i problemi consentire file simultanee tagging.
+    Viene creato un singolo set di catch-up, che in genere contiene 200 a 2.000 file dal nuovo carico, per tutti i problemi per consentire il tagging dei file simultanei.
     
-    Vengono fornite informazioni dettagliate su se carichi sono simili o distinti, che eDiscovery avanzate unite o dividere automaticamente i carichi e informazioni per quanto riguarda l'elaborazione nel passaggio successivo.
+    Vengono forniti informazioni dettagliate sul fatto che i carichi siano simili o distinti, se Advanced eDiscovery ha unito o diviso i carichi automaticamente e le informazioni relative all'elaborazione nel passaggio successivo.
     
-    È possibile quindi contrassegnare i file ed eseguire un'operazione di calcolo. Il contrassegno consente di abilitare pertinenza determinare se i carichi sono simili o distinti e per continuare con il nuovo set di file.
+    È quindi possibile contrassegnare i file ed eseguire un'operazione di calcolo. Il tagging attiva la pertinenza per determinare se i carichi sono simili o distinti e consente di continuare a lavorare sul nuovo set di file.
     
-7. Una volta viene esaminato il set di aggiornamento, visualizzare **pertinenza \> traccia** per i risultati di aggiornamento. 
+7. Dopo la revisione del set di catch-up, ** \> ** visualizzare la verifica della pertinenza per i risultati di catch-up. 
     
-1. Se durante la formazione di pertinenza è stato aggiunto il nuovo caricamento del file, ovvero, il problema non è stato ancora inviato calcolo Batch, **formazione continua** è il passaggio successivo, indipendentemente dal fatto i risultati di aggiornamento. 
+1. Se il nuovo caricamento file è stato aggiunto durante la formazione di pertinenza (ovvero, il problema non è stato ancora superato tramite calcolo batch), **continuare l'allenamento** è il passaggio successivo, indipendentemente dai risultati di catch-up. 
     
-    I carichi di nuovi e precedenti vengono elaborati come un caricamento e formazione di pertinenza continua sul set di united. È stata completata con questa procedura e possono continuare formazione pertinenza. 
+    I carichi nuovi e precedenti vengono elaborati con un carico e una formazione di pertinenza continua sul set Unito. Dopo aver completato questa procedura, è possibile continuare la formazione sulla pertinenza. 
     
-2. Se il carico nuovo è stato aggiunto dopo il calcolo Batch, procedere con la procedura seguente.
+2. Se il nuovo carico è stato aggiunto dopo il calcolo batch, procedere con i passaggi seguenti.
     
-8. Per i caricamenti di nuovi aggiunti dopo il calcolo Batch, eDiscovery avanzate determina se il carico nuovo è simile a o diverso dal precedente viene caricato, come indicato di seguito:
+8. Per i nuovi carichi aggiunti dopo il calcolo in batch, Advanced eDiscovery determina se il nuovo carico è simile o diverso dai carichi precedenti, come indicato di seguito:
     
-1. Se sono stati trovati carichi simile: non è necessaria alcun formazione aggiuntiva di pertinenza. Viene illustrato il dashboard deve eseguire il passaggio successivo consigliato * * Batch calcolo * * per calcolare i punteggi pertinenza per il carico di nuovo. Carichi sono stati trovati per essere simile, in modo che l'analisi classificatore precedente può essere eseguito sui nuovi file. 
+1. Se i carichi sono stati trovati come simili: non è necessaria alcuna formazione supplementare sulla pertinenza. Il dashboard indica che il passaggio successivo consigliato consiste nell'eseguire * * il calcolo batch * * di nuovo per calcolare i punteggi di pertinenza per il nuovo carico. I carichi sono stati trovati come simili, quindi è possibile eseguire l'analisi di classificazione precedente nei nuovi file. 
     
-2. Se sono stati trovati carichi distinto: formazione di maggiore rilevanza è necessaria e il passaggio successivo consiste decisione di aggiornamento. Selezionare una decisione di aggiornamento nel modo seguente:
+2. Se i carichi sono stati individuati come distinti: è necessaria una formazione più pertinente e il passaggio successivo è la decisione di catch-up. Selezionare una decisione di catch-up come indicato di seguito:
     
-    Se si seleziona **unire carichi**, eDiscovery avanzate consente di unire i carichi precedenti e nuovi per il set di formazione. Anche se il primo caricamento è stato sottoposto a calcolo Batch, è necessario ulteriore formazione. Continuare formazione insieme carichi nuovi e precedenti. Calcolo batch verrà quindi eseguito nuovamente e devono essere ignorati i punteggi calcolo Batch precedenti. Selezionare questa opzione quando può ricalcolato punteggio di pertinenza del carichi esistenti, ad esempio, quando non è stata avviata esame dei caricamenti di file esistente.
+    Se si seleziona **Unisci carichi**, Advanced eDiscovery unisce i carichi precedenti e nuovi per il set di training. Anche se il primo carico ha superato il calcolo in batch, è necessario un numero maggiore di formazione. Continuare a formare carichi nuovi e precedenti insieme. Il calcolo batch verrà quindi eseguito di nuovo e i punteggi del calcolo batch precedenti devono essere ignorati. Scegliere questa selezione quando i punteggi di riLevanza per i carichi esistenti possono essere ricalcolati, ad esempio quando la revisione dei carichi di file esistenti non è stata avviata.
     
-    Se si seleziona **diviso carica**, procedere formazione pertinenza solo il carico di nuovo. In questo caso, i punteggi di calcolo Batch precedenti verrà modificata. Scegliere questa opzione quando esistente punteggio di pertinenza del carichi esistenti non possa essere ricalcolato, ad esempio, se è già iniziato esame dei carichi di esistenti. Punteggio di pertinenza viene gestiti separatamente da questo punto in poi e non può essere unite.
+    Se si seleziona **Suddividi carichi**, continuare la formazione sulla pertinenza solo sul nuovo carico. In questo caso, i punteggi del calcolo batch precedenti rimarranno così come sono. Scegliere questa opzione se non è possibile ricalcolare i punteggi di pertinenza esistenti per i carichi esistenti, ad esempio se è già stata avviata la revisione dei carichi esistenti. I punteggi relativi alla pertinenza sono gestiti separatamente da questo punto e non possono essere Uniti.
     
-3. Fare clic su **Continua formazione**.
+3. Fare clic su **continua formazione**.
     
 ## <a name="see-also"></a>Vedere anche
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Definizione dei problemi e assegnazione di utenti](define-issues-and-assign-users.md)
+[Definire i problemi e assegnare gli utenti](define-issues-and-assign-users.md)
   
-[Definizione evidenziate le parole chiave e avanzate opzioni](define-highlighted-keywords-and-advanced-options.md)
+[Definire parole chiave evidenziate e opzioni avanzate](define-highlighted-keywords-and-advanced-options.md)
 

@@ -1,51 +1,51 @@
 ---
-title: Contatti esterni di importazione in blocco a Exchange Online
+title: Importare in blocco i contatti esterni in Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: End User
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
-description: Informazioni su come gli amministratori possono utilizzare Exchange Online PowerShell e un file CSV per blocco importare contatti esterni all'elenco indirizzi globale.
-ms.openlocfilehash: 4bde56d49ccf94dc91993df90e1ae693e25c961a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
+ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530288"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215916"
 ---
-# <a name="bulk-import-external-contacts-to-exchange-online"></a>Contatti esterni di importazione in blocco a Exchange Online
+# <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
-**In questo articolo sia per gli amministratori. Si sta tentando di importare contatti alla propria cassetta postale? Vedere [importazione di contatti di Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+**Questo articolo è per gli amministratori. Si sta tentando di importare i contatti nella propria cassetta postale? Vedere [importare i contatti in Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-La società dispone di una quantità elevata di contatti aziendali esistenti che si desidera includere nella Rubrica condivisa (denominata anche l'elenco indirizzi globale) in Exchange Online? Si desidera aggiungere contatti esterni come membri dei gruppi di distribuzione, nello stesso modo in cui è possibile eseguire con gli utenti interni alla società? Se pertanto è possibile utilizzare Exchange Online PowerShell e un file CSV (delimitato da virgole) in blocco importare contatti esterni in Exchange Online. È un processo in tre fasi:
+L'azienda dispone di un numero elevato di contatti aziendali esistenti che si desidera includere nella rubrica condivisa (denominato anche elenco indirizzi globale) in Exchange Online? Si desidera aggiungere contatti esterni come membri dei gruppi di distribuzione, proprio come è possibile con gli utenti all'interno dell'azienda? In tal caso, è possibile utilizzare PowerShell di Exchange Online e un file CSV (con valori deLimitati da virgole) per importare in blocco i contatti esterni in Exchange Online. Si tratta di un processo in tre fasi:
   
-[Passaggio 1: Creare un file CSV contenente informazioni sui contatti esterni](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
+[Passaggio 1: creare un file CSV contenente informazioni sui contatti esterni](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
-[Passaggio 2: Creare contatti esterni PowerShell](#step-2-create-the-external-contacts-with-powershell) 
+[Passaggio 2: creare i contatti esterni con PowerShell](#step-2-create-the-external-contacts-with-powershell) 
 
-[Passaggio 3: Aggiungere informazioni alle proprietà dei contatti esterni](#step-3-add-information-to-the-properties-of-the-external-contacts)
+[Passaggio 3: aggiungere informazioni alle proprietà dei contatti esterni](#step-3-add-information-to-the-properties-of-the-external-contacts)
 
-Dopo aver completato la procedura seguente per importare contatti, è possibile eseguire le seguenti attività aggiuntive:
+Dopo aver completato questa procedura per importare i contatti, è possibile eseguire queste attività aggiuntive:
   
-- [Aggiungere i contatti più esterni](bulk-import-external-contacts.md#AddMore)
+- [Aggiungere altri contatti esterni](bulk-import-external-contacts.md#AddMore)
   
-- [Nascondere i contatti esterni nella Rubrica condivisa](bulk-import-external-contacts.md#Hide)
+- [Nascondere i contatti esterni dalla rubrica condivisa](bulk-import-external-contacts.md#Hide)
   
-## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Passaggio 1: Creare un file CSV contenente informazioni sui contatti esterni
+## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Passaggio 1: creare un file CSV contenente informazioni sui contatti esterni
 
-Il primo passaggio consiste nel creare un file CSV contenente informazioni su ogni contatto esterno che si desidera importare in Exchange Online. 
+Il primo passaggio consiste nel creare un file CSV che contiene informazioni su ogni contatto esterno che si desidera importare in Exchange Online. 
   
-1. Copiare il testo seguente in un file di testo nel blocco note e salvarlo sul desktop come un file CSV con il suffisso nome file. csv; ad esempio, ExternalContacts.csv.
+1. Copiare il testo seguente in un file di testo in blocco note e salvarlo sul desktop come file CSV utilizzando un suffisso del nome file CSV. ad esempio, ExternalContacts. csv.
     
     > [!TIP]
-    > Se la lingua dell'utente contiene caratteri speciali (ad esempio **å** **ä**e **ö** in svedese) Salva il file CSV con UTF-8 o altra codifica Unicode quando si salva il file nel blocco note. 
+    > Se la lingua contiene caratteri speciali, ad esempio **å**, **ä**e **ö** in svedese, salvare il file CSV con UTF-8 o altra codifica Unicode quando si salva il file nel blocco note. 
   
     ```
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
@@ -53,55 +53,55 @@ Il primo passaggio consiste nel creare un file CSV contenente informazioni su og
     pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
     ```
 
-    La prima riga o una riga di intestazione, del file CSV sono elencate le proprietà dei contatti che possono essere utilizzati durante l'importazione in Exchange Online. I nomi di proprietà sono separati da una virgola. Ogni riga sotto la riga di intestazione rappresenta i valori delle proprietà per l'importazione di un contatto esterno. 
+    La prima riga, o riga di intestazione, del file CSV elenca le proprietà dei contatti che è possibile utilizzare quando vengono importati in Exchange Online. Ogni nome di proprietà è separato da una virgola. Ogni riga sotto la riga di intestazione rappresenta i valori delle proprietà per l'importazione di un singolo contatto esterno. 
     
     > [!NOTE]
-    > Il testo incluso dati di esempio, è possibile eliminare. Ma non eliminare o modificare la prima riga (intestazione). Contiene tutte le proprietà per i contatti esterni. 
+    > Questo testo include dati di esempio, che è possibile eliminare. Ma non eliminare o modificare la prima riga (intestazione). Contiene tutte le proprietà dei contatti esterni. 
   
-2. Aprire il file CSV in Microsoft Excel per modificare il file CSV perché è molto più semplice utilizzare Excel per modificare il file CSV.
+2. Aprire il file CSV in Microsoft Excel per modificare il file CSV, perché è molto più facile usare Excel per modificare il file CSV.
     
-3. Creare una riga per ogni contatto che si desidera importare in Exchange Online. Popolare il numero di celle come possibili. Tali informazioni verranno visualizzate nella Rubrica condivisa per ogni contatto. 
+3. Creare una riga per ogni contatto che si desidera importare in Exchange Online. Inserire il numero di celle possibile. Queste informazioni vengono visualizzate nella rubrica condivisa per ogni contatto. 
     
     > [!IMPORTANT]
-    >  Le proprietà seguenti, che sono i primi quattro elementi nella riga di intestazione, sono necessari per creare un contatto esterno, è necessario specificare nel file CSV: **ExternalEmailAddress**, **nome**, **FirstName**, **LastName**. Il comando PowerShell che viene eseguita nel passaggio 2 utilizzerà i valori per le proprietà per creare i contatti. 
+    >  Le proprietà seguenti, che sono i primi quattro elementi della riga di intestazione, sono necessarie per creare un contatto esterno e devono essere inserite nel file CSV: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. Il comando di PowerShell eseguito nel passaggio 2 utilizzerà i valori per queste proprietà per creare i contatti. 
 
-## <a name="step-2-create-the-external-contacts-with-powershell"></a>Passaggio 2: Creare contatti esterni PowerShell
+## <a name="step-2-create-the-external-contacts-with-powershell"></a>Passaggio 2: creare i contatti esterni con PowerShell
 
-Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggio 1 e PowerShell al blocco importare contatti esterni elencati nel file CSV in Exchange Online. 
+Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggio 1 e PowerShell per importare in blocco i contatti esterni elencati nel file CSV in Exchange Online. 
   
-1.  Connettere PowerShell all'organizzazione Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Assicurarsi di utilizzare il nome utente e la password per l'account amministratore globale di Office 365 durante la connessione a Exchange Online PowerShell. 
+1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Assicurarsi di utilizzare il nome utente e la password per l'account di amministratore globale di Office 365 quando ci si connette a PowerShell di Exchange Online. 
     
-2. Dopo essersi connessi PowerShell in Exchange Online, passare alla cartella desktop di cui è stato salvato il file CSV nel passaggio 1; ad esempio `C:\Users\Administrator\desktop`.
+2. Dopo aver connesso PowerShell a Exchange Online, passare alla cartella desktop in cui è stato salvato il file CSV nel passaggio 1. ad esempio `C:\Users\Administrator\desktop`.
     
-3. Eseguire il comando seguente per creare contatti esterni:
+3. Per creare i contatti esterni, eseguire il comando riportato di seguito:
 
     ```
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
-    Potrebbero richiedere alcuni minuti per creare nuovi contatti, in base al numero che si sta importando. Al termine del comando PowerShell in esecuzione, visualizza un elenco di nuovi contatti che sono stati creati. 
+    Potrebbe essere necessario un po' di tempo per creare i nuovi contatti, a seconda del numero di importazione. Al termine dell'esecuzione del comando, PowerShell Visualizza un elenco dei nuovi contatti che sono stati creati. 
     
-4. Per visualizzare i nuovi contatti esterni, passare all'interfaccia di amministrazione di Exchange (EAC) e quindi fare clic su **destinatari** \> **contatti**. 
+4. Per visualizzare i nuovi contatti esterni, accedere all'interfaccia di amministrazione di Exchange (EAC) e quindi fare clic su **destinatari** \> **contatti**. 
     
     > [!TIP]
-    > Per istruzioni per la connessione a EAC, vedere [Exchange admin center in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
+    > Per istruzioni sulla connessione a EAC, vedere interfaccia di [amministrazione di Exchange in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
   
-5. Se necessario, fare clic su **Aggiorna** ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare l'elenco e visualizzare i contatti esterni che sono stati importati. 
+5. Se necessario, fare **** ![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare l'elenco e vedere i contatti esterni che sono stati importati. 
     
-    I contatti importati apparirà nella Rubrica condivisa in Outlook e Outlook sul web.
+    I contatti importati verranno visualizzati nella rubrica condivisa in Outlook e Outlook sul Web.
     
     > [!NOTE]
-    > È inoltre possibile visualizzare i contatti nell'interfaccia di amministrazione di Office 365 accedendo a **utenti** \> **contatti**. 
+    > è inoltre possibile visualizzare i contatti nell'interfaccia di amministrazione di Office 365 accedendo ai **contatti** **degli utenti** \> . 
 
-## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Passaggio 3: Aggiungere informazioni alle proprietà dei contatti esterni
+## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Passaggio 3: aggiungere informazioni alle proprietà dei contatti esterni
 
-Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni, ma non contengono le informazioni contatto o dell'organizzazione, ovvero le informazioni dalla maggior parte delle celle nel file CSV. Ciò avviene perché quando si creano nuovi contatti esterni, vengono popolate solo le proprietà necessarie. Non bisogna preoccuparsi se non si dispongano di tutte le informazioni popolate nel file CSV. Se non è presente, non verranno aggiunti.
+Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni, ma non contengono alcuna informazione del contatto o dell'organizzazione, ovvero le informazioni provenienti dalla maggior parte delle celle nel file CSV. Ciò è dovuto al fatto che, quando si creano nuovi contatti esterni, vengono inserite solo le proprietà obbligatorie. Non si preoccupi se non si dispone di tutte le informazioni inserite nel file CSV. Se non è presente, non verrà aggiunta.
   
-1.  Connettere PowerShell all'organizzazione Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Passare alla cartella desktop di cui è stato salvato il file CSV nel passaggio 1; ad esempio `C:\Users\Administrator\desktop`.
+2. Passare alla cartella desktop in cui è stato salvato il file CSV nel passaggio 1. ad esempio `C:\Users\Administrator\desktop`.
     
-3. Eseguire i due comandi seguenti per aggiungere le altre proprietà del file CSV per i contatti esterni creato nel passaggio 2.
+3. Eseguire i due comandi seguenti per aggiungere le altre proprietà dal file CSV ai contatti esterni creati nel passaggio 2.
     
     ```
     $Contacts = Import-CSV .\ExternalContacts.csv
@@ -113,47 +113,47 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
     ```
 
     > [!NOTE]
-    > Il parametro _Manager_ può essere problematico. Se la cella è vuota nel file CSV, si verificherà un errore e nessuna delle informazioni sulle proprietà verrà aggiunto al contatto. Se non è necessario specificare un proprietario, quindi eliminare ` -Manager $_.Manager ` del comando PowerShell precedente. 
+    > Il parametro _Manager_ potrebbe essere problematico. Se la cella è vuota nel file CSV, verrà visualizzato un messaggio di errore e nessuna delle informazioni sulle proprietà verrà aggiunta al contatto. Se non è necessario specificare un Manager, è sufficiente eliminare ` -Manager $_.Manager ` il comando PowerShell precedente. 
   
-    Nuovamente, potrebbe richiedere un po' di tempo per aggiornare i contatti in base al numero è stato importato nel passaggio 1. 
+    Anche in questo caso, potrebbe essere necessario un po' di tempo per aggiornare i contatti, a seconda del numero di importati nel passaggio 1. 
     
-4. Per verificare che le proprietà sono state aggiunte ai contatti: 
+4. Per verificare che le proprietà siano state aggiunte ai contatti: 
     
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**.
     
-2. Fare clic su un contatto e quindi fare clic su **Modifica** ![sull'icona Modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) per visualizzare le proprietà del contatto. 
+2. Fare clic su un contatto e **** ![quindi fare clic](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
     
-Questo è tutto! Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica di Outlook e Outlook sul web.
+Questo è tutto! Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica Outlook e Outlook sul Web.
   
-## <a name="add-more-external-contacts"></a>Aggiungere i contatti più esterni
+## <a name="add-more-external-contacts"></a>Aggiungere altri contatti esterni
 
-È possibile ripetere i passaggi da 1 a passaggio 3 per aggiungere nuovi contatti esterni di Exchange Online. Gli utenti dell'azienda appena possibile aggiungere una nuova riga nel file CSV per il nuovo contatto. È quindi possibile eseguire i comandi di PowerShell di passaggio 2 e passaggio 3 per creare e aggiungere informazioni ai nuovi contatti.
+È possibile ripetere i passaggi da 1 a passaggio 3 per aggiungere nuovi contatti esterni in Exchange Online. L'utente o gli utenti dell'azienda possono semplicemente aggiungere una nuova riga nel file CSV per il nuovo contatto. È quindi possibile eseguire i comandi di PowerShell del passaggio 2 e del passaggio 3 per creare e aggiungere informazioni ai nuovi contatti.
   
 > [!NOTE]
-> Quando si esegue il comando per creare nuovi contatti, potrebbe essere visualizzato un errore indicante che i contatti che sono stati creati in precedenza già esistano. Ma viene creato un nuovo contatto aggiunto il file CSV. 
+> Quando si esegue il comando per creare nuovi contatti, è possibile che venga visualizzato un messaggio di errore che indica che i contatti creati precedentemente sono già esistenti. Tuttavia, viene creato un nuovo contatto aggiunto al file CSV. 
   
-## <a name="hide-external-contacts-from-the-shared-address-book"></a>Nascondere i contatti esterni nella Rubrica condivisa >
+## <a name="hide-external-contacts-from-the-shared-address-book"></a>Nascondere i contatti esterni dall'indirizzo condiviso book>
 
-Alcune aziende possono utilizzare i contatti esterni solo in modo che possono essere aggiunti come membri dei gruppi di distribuzione. In questo scenario è possibile nascondere i contatti esterni nella Rubrica condivisa. Ecco come:
+Alcune aziende possono utilizzare i contatti esterni solo in modo che possano essere aggiunti come membri dei gruppi di distribuzione. In questo scenario, è possibile che si desideri nascondere i contatti esterni dalla rubrica condivisa. Ecco come:
   
-1.  Connettere PowerShell all'organizzazione Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Per nascondere un singolo contatto esterno, eseguire il comando seguente.
+2. Per nascondere un singolo contatto esterno, eseguire il comando riportato di seguito.
     
     ```
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
  
-    Ad esempio, per nascondere Pilar Pinilla dalla Rubrica condivisa, eseguire questo comando:
+    Ad esempio, per nascondere Pilar Pinilla dalla rubrica condivisa, eseguire il comando seguente:
 
     ```
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
    
-3. Per nascondere tutti i contatti esterni nella Rubrica condivisa, eseguire questo comando:
+3. Per nascondere tutti i contatti esterni dalla rubrica condivisa, eseguire il comando seguente:
 
     ```
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 
-Dopo aver nasconderle, contatti esterni non vengono visualizzati nella Rubrica condivisa, ma è comunque possibile aggiungerli come membri del gruppo di distribuzione.
+Dopo averli nascosti, i contatti esterni non vengono visualizzati nella rubrica condivisa, ma è comunque possibile aggiungerli come membri di un gruppo di distribuzione.

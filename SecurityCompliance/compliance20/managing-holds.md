@@ -1,12 +1,12 @@
 ---
-title: Gestisci archiviazioni di eDiscovery avanzate (Preview)
+title: Gestione delle esenzioni in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,109 +14,109 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8dbcc73dac14dddfeb8dd86bbf03d9e845dac510
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695182"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215846"
 ---
-# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gestisci archiviazioni di eDiscovery avanzate (Preview)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gestione delle esenzioni in Advanced eDiscovery (Preview)
 
-È possibile utilizzare un caso eDiscovery avanzate (Preview) per creare esenzioni per conservare il contenuto che potrebbe essere rilevante al caso. Utilizzo di eDiscovery avanzate (Preview) tenere funzionalità, è possibile effettuare esenzioni depositari e le relative origini dati. Inoltre, è possibile inserire un'esenzione non detentive nelle cassette postali e OneDrive per i siti. Si può inoltre effettuare un'esenzione cassetta postale di gruppo, siti di SharePoint e OneDrive per sito Business per un gruppo di Office 365. Analogamente, è possibile inserire un'esenzione nella cassetta postale e sito in cui sono associati a Microsoft Teams. Quando si effettua i percorsi di contenuti in attesa, il contenuto viene mantenuto finché non si rilascia il depositaria, rimuovere un percorso di dati specifici o eliminare completamente il criterio di conservazione.
+È possibile utilizzare un caso avanzato di eDiscovery (anteprima) per creare le esenzioni per conservare il contenuto che potrebbe essere pertinente per il caso. Utilizzando le funzionalità di archiviazione avanzate di eDiscovery (anteprima), è possibile inserire esenzioni nei depositari e nelle relative origini dati. Inoltre, è possibile applicare un blocco non detentivo alle cassette postali e ai siti di OneDrive for business. È inoltre possibile inserire un blocco nel sito di gruppo cassetta postale, sito di SharePoint e OneDrive for business per un gruppo di Office 365. Analogamente, è possibile applicare un'esenzione alla cassetta postale e al sito associati a Microsoft teams. Quando si posizionano le posizioni di contenuto in attesa, il contenuto viene mantenuto finché non si rilascia il custode, si rimuove una specifica posizione dati o si elimina completamente il criterio di conservazione.
 
-## <a name="manage-custodian-based-holds"></a>Gestisci esenzioni basate su depositaria
+## <a name="manage-custodian-based-holds"></a>Gestione delle esenzioni basate su depositari
 
-In alcuni casi, potrebbe essere un insieme di depositari dati che sono stati identificati e scelto devono essere mantenuti. In eDiscovery avanzate (anteprima), quando questi depositari sono messi in attesa, l'utente e i dati selezionati origini vengono aggiunte automaticamente a un depositaria attesa criteri. 
+In alcuni casi, è possibile disporre di un insieme di depositari dei dati che sono stati identificati e scelti per la conservazione. In Advanced eDiscovery (Preview), quando questi depositari sono in attesa, l'utente e le relative origini dati selezionate vengono aggiunte automaticamente a un criterio di conservazione dei depositari. 
 
-Per visualizzare il criterio di conservazione depositaria:
+Per visualizzare il criterio di conservazione dei depositari:
 
-1. In **sicurezza & centro conformità**, fare clic su **eDiscovery gt _ avanzate eDiscovery (Preview)** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel **Centro sicurezza _AMP_ Compliance**, fare clic su **eDiscovery > Advanced eDiscovery (Preview)** per visualizzare l'elenco dei casi nell'organizzazione.
    
-2. Passare alla scheda **depositari** aggiungere depositari all'interno del case. Per informazioni su come aggiungere e archiviare depositari postali all'interno di un caso eDiscovery avanzate (anteprima), vedere [depositari aggiungere a una ricerca eDiscovery avanzate (Preview) Case](add-custodians-to-case.md). Se si dispone già aggiunti depositari e li messa in attesa, andare al passaggio 3.
+2. Passare alla scheda **depositari** per aggiungere depositari all'interno del caso. Per informazioni su come è possibile aggiungere e collocare i depositari in un caso avanzato di eDiscovery (Preview), vedere [aggiungere i depositari a un caso di eDiscovery avanzato (Preview)](add-custodians-to-case.md). Se i depositari sono già stati aggiunti e li si tiene in attesa, andare al passaggio 3.
    
-3. Passare alla scheda **contiene** e selezionare il criterio di depositaria' '.
+3. Passare alla scheda **esenzioni** e selezionare il ' criterio custode '.
    
-4. Nella pagina comparsa, è possibile visualizzare le statistiche per il criterio di conservazione. È inoltre possibile eseguire azioni come applicare una query per l'archiviazione depositaria. Per ulteriori informazioni sulla creazione di una query di attesa e l'utilizzo di condizioni, vedere [query con parole chiave e le condizioni di ricerca per la ricerca del contenuto](../keyword-queries-and-search-conditions.md).
+4. Nella pagina riquadro a comparsa, è possibile visualizzare le statistiche di blocco per il criterio. È inoltre possibile eseguire azioni come applicare una query al blocco basato su custode. Per ulteriori informazioni sulla creazione di una query di blocco e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](../keyword-queries-and-search-conditions.md).
  
-## <a name="manage-non-custodial-holds"></a>Gestisci archiviazioni non detentive
+## <a name="manage-non-custodial-holds"></a>Gestione delle esenzioni non detentive
 
-Quando si crea un'esenzione, sono disponibili le opzioni seguenti per definire l'ambito del contenuto viene mantenuto nei percorsi di contenuto specificati:
+Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito del contenuto conservato nei percorsi di contenuto specificati:
 
-  - Creare un'attesa infinita in tutto il contenuto viene messa in attesa. In alternativa, è possibile creare un'esenzione basata su query dove solo il contenuto che corrisponde a una query di ricerca viene messa in attesa.
-  - È possibile specificare un intervallo di date per includere solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile tenere tutto il contenuto indipendentemente dal fatto se è stato inviato, ricevuto o creato.
+  - È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query che contenga solo il contenuto che corrisponde a una query di ricerca.
+  - È possibile specificare un intervallo di date che contenga solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
 
-Per creare un'esenzione per un caso eDiscovery avanzate (Preview):
+Per creare un'esenzione per un caso avanzato di eDiscovery (anteprima):
 
-1. In **sicurezza & centro conformità**, fare clic su **eDiscovery gt _ avanzate eDiscovery (Preview)** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel **Centro sicurezza _AMP_ Compliance**, fare clic su **eDiscovery > Advanced eDiscovery (Preview)** per visualizzare l'elenco dei casi nell'organizzazione.
   
-2. Fare clic su **Apri** accanto al caso in cui si desidera creare l'archiviazione in.
+2. Fare clic su **Apri** accanto al caso in cui si desidera creare le esenzioni.
   
-3. Nella home page per il case, fare clic sulla scheda **contiene** .
+3. Nella Home page del caso, fare clic sulla scheda **esenzioni** .
   
-4. Nella scheda **archiviazione** fare clic su **Crea**.
+4. Nella scheda **esenzioni** fare clic su **Crea**.
   
-5. Nella pagina **nome l'esenzione** , assegnare un nome dell'esenzione. Il nome dell'esenzione deve essere univoco all'interno dell'organizzazione.
+5. Nella pagina deNominare il **blocco** , assegnare un nome al blocco. Il nome dell'esenzione deve essere univoco nell'organizzazione.
  
-6. (Facoltativo) Nella casella **Descrizione** aggiungere una descrizione dell'esenzione.
+6. Optional Nella casella **Descrizione** aggiungere una descrizione dell'esenzione.
   
 7. Fare clic su **Avanti**.
   
-8. Scegliere i percorsi di contenuti che si desidera mettere in attesa. È possibile effettuare le cassette postali, i siti e le cartelle pubbliche in attesa.
+8. Scegliere i percorsi di contenuto che si desidera inserire in attesa. È possibile inserire le cassette postali, i siti e le cartelle pubbliche in attesa.
 
-   r. **posta elettronica di Exchange** , fare clic su **Scegli utenti, gruppi o team** e quindi fare clic su **Scegli utenti, gruppi o team** per specificare le cassette postali per mettere in attesa. Utilizzare la casella di ricerca per trovare cassette postali degli utenti e gruppi di distribuzione (per effettuare un'esenzione per le cassette postali dei membri del gruppo) per mettere in attesa. Può inoltre effettuare un'esenzione nella cassetta postale associata per un Team di Microsoft o un gruppo di Office 365. Selezionare la casella di controllo team utente, gruppo, fare clic su **Scegli**e quindi fare clic su **Fine**.
+   a. **posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Office 365 o un team di Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
  
     > [!NOTE]
-    > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali per mettere in attesa, la selezione delle cassette postali che viene visualizzata sia vuota. Questo è per impostazione predefinita per migliorare le prestazioni. Per aggiungere persone all'elenco, digitare un nome (almeno 3 caratteri) nella casella di ricerca.
+    > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
 
-    **Siti di SharePoint** - b. fare clic su **Scegli siti** e quindi **Scegliere siti** nuovamente per specificare SharePoint e OneDrive per i siti per mettere in attesa. Digitare l'URL per ogni sito che si desidera mettere in attesa. È inoltre possibile aggiungere l'URL del sito di SharePoint per un Team di Microsoft o un gruppo di Office 365. Fare clic su **Scegli**e quindi fare clic su **Fine**.
+    b. **siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su choose **sites** again per specificare SharePoint e OneDrive for business sites to Place on Hold. Digitare l'URL per ogni sito che si desidera inserire in attesa. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Fare clic su **Scegli**e quindi su **fine**.
     
-     Vedere la sezione **domande frequenti** per suggerimenti per inserire i gruppi di Office 365 e Microsoft Teams in attesa.
+     Vedere la sezione **FAQ** per suggerimenti su come mettere in attesa i gruppi di Office 365 e Microsoft teams.
 
     > [!NOTE]
-    > Nel caso in cui è stato modificato nome entità utente dell'utente (UPN), l'URL per il proprio account OneDrive verrà modificata anche per incorporare l'UPN di nuovo. In questo caso, sarà necessario modificare la conservazione nuovo OneDrive URL dell'utente di aggiungendo e rimuovendo il vecchio.
+    > Nel caso raro che il nome dell'entità utente (UPN) di una persona sia stato modificato, verrà modificato anche l'URL per il relativo account OneDrive per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente.
 
-     **cartelle pubbliche di Exchange** - c. spostare l'opzione Mostra/Nascondi nella posizione tutti per inserire tutte le cartelle pubbliche nei Exchange Online organizzazione su conservazione. Si noti che non è possibile scegliere specifiche cartelle pubbliche per mettere in attesa. Lasciare l'opzione Mostra/Nascondi impostata su **Nessuno** se non si desidera creare un'esenzione per le cartelle pubbliche.
+     c. **cartelle pubbliche di Exchange** -spostare l'interruttore toggle sulla posizione all per mettere in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere le cartelle pubbliche specifiche da mettere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
 
-9. Al termine i percorsi di contenuti aggiunta all'esenzione, fare clic su **Avanti**.
+9. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
   
-10. Per creare un'esenzione basata su query con condizioni, eseguire le operazioni seguenti. In caso contrario, fare clic su **Avanti**.
+10. Per creare un blocco basato su query con condizioni, completare quanto segue. In caso contrario, fare clic su **Avanti**.
     
-    - Nella casella **parole chiave**, tipo di una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca viene messa in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio AND, OR o non. Se si lascia la casella di parola chiave vuota, tutto il contenuto disponibile nei percorsi specificati contenuti verrà messa in attesa.
+    - Nella casella sotto **parole chiave**Digitare una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca venga messo in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio e, o o meno. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà messo in attesa.
 
-    - Fare clic su **Aggiungi** condizioni per aggiungere una o più condizioni per limitare la query di ricerca per l'attesa. Ogni condizione aggiunge una clausola di query di ricerca KQL che viene creata ed eseguita quando si crea l'attesa. Ad esempio è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di un sito che sono stati creati all'interno della data intervallo vengono inseriti in attesa. Una condizione è connesso logicamente per le query con parole chiave (specificata nella casella parole chiave) per l'operatore AND. Ciò significa che gli elementi devono soddisfare entrambe le query con parole chiave e la condizione di essere posizionate in attesa.
+    - Fare clic su **Aggiungi** condizioni per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, dall'operatore AND. Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa.
 
-     Per ulteriori informazioni sulla creazione di una query di ricerca e utilizzo delle condizioni, vedere [query con parole chiave e le condizioni di ricerca per la ricerca del contenuto](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
-12. Dopo aver configurato un basata su query attesa, fare clic su **Avanti**.
+12. Dopo aver configurato un blocco basato su query, fare clic su **Avanti**.
  
-13. Controllare le impostazioni e quindi fare clic su **Crea esenzione**.
+13. Rivedere le impostazioni e quindi fare clic su **Crea blocco**.
 
 
-## <a name="view-hold-statistics"></a>Visualizzare le statistiche di attesa
+## <a name="view-hold-statistics"></a>Visualizzazione delle statistiche di blocco
 
-In un secondo momento, informazioni sulla nuova esenzione viene visualizzate nel riquadro dei dettagli della scheda **contiene** dell'esenzione selezionata. Queste informazioni includono il numero di cassette postali e siti in attesa e le statistiche relative al contenuto che è stato messo in attesa, ad esempio il numero totale e le dimensioni degli elementi messa in attesa e l'ultima ora in attesa sono state calcolate le statistiche. Queste attesa consentono di statistiche identificare la quantità di contenuto correlato al caso di eDiscovery è correntemente.
+Dopo un po' di tempo, le informazioni relative al nuovo blocco vengono visualizzate nel riquadro dei **** dettagli della scheda esenzioni per il blocco selezionato. Queste informazioni includono il numero di cassette postali e i siti in attesa e le statistiche sul contenuto che è stato messo in attesa, ad esempio il numero totale e le dimensioni degli elementi che sono stati messi in attesa e l'ultima volta che sono state calcolate le statistiche di blocco. Queste statistiche di blocco consentono di identificare la quantità di contenuto correlata al caso di eDiscovery.
 
-Tenere presenti sulle statistiche di attesa i seguenti aspetti:
+Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
 
-- Il numero totale di elementi in attesa indica il numero di elementi da tutte le origini di contenuto che restano in attesa. Se sono state create una basata su query attesa, questo indica il numero di elementi che corrispondono alla query.
+- Il numero totale di elementi in attesa indica il numero di elementi provenienti da tutte le origini di contenuto che vengono bloccate. Se è stata creata una conservazione basata su query, questa statistica indica il numero di elementi che corrispondono alla query.
   
-- Il numero di elementi in attesa include anche gli elementi non indicizzati presenti nei percorsi contenuti. Si noti che se si crea una conservazione basata su query, tutti gli elementi non indicizzati nelle posizioni del contenuto sono messi in attesa. Sono inclusi gli elementi non indicizzati che non soddisfano i criteri di ricerca di un'esenzione basata su query e non indicizzate che potrebbe essere si trovano all'esterno di una condizione di intervallo di date. Questa è diversa da cosa succede quando si esegue una ricerca di contenuto, in cui gli elementi non indicizzati che non corrispondono alla query di ricerca o esclusi da una condizione di intervallo di date non vengono inclusi nei risultati della ricerca. Per ulteriori informazioni sugli elementi non indicizzate, vedere [parzialmente indicizzato gli elementi della funzionalità di ricerca del contenuto in Office 365](../partially-indexed-items-in-content-search.md). 
+- Il numero di elementi in attesa include anche gli elementi non indicizzati trovati nei percorsi di contenuto. Si noti che se si crea un blocco basato su query, tutti gli elementi non indicizzati nei percorsi di contenuto vengono inseriti in attesa. Sono inclusi gli elementi non indicizzati che non corrispondono ai criteri di ricerca di un blocco basato su query e di elementi non indicizzati che potrebbero non essere compresi in una condizione dell'intervallo di date. Questo è diverso da quello che succede quando si esegue una ricerca di contenuto, in cui gli elementi non indicizzati che non corrispondono alla query di ricerca o sono esclusi da una condizione dell'intervallo di date non sono inclusi nei risultati della ricerca. Per ulteriori informazioni sugli elementi non indicizzati, vedere [gli elementi parzialmente indicizzati in ricerca contenuto in Office 365](../partially-indexed-items-in-content-search.md). 
 
-- È possibile ottenere le statistiche di conservazione più recente facendo clic su aggiornamento delle statistiche per rieseguire una stima di ricerca che calcola il numero corrente di elementi in attesa.
+- È possibile ottenere le statistiche di blocco più recenti facendo clic su Aggiorna statistiche per rieseguire una stima di ricerca che calcola il numero corrente di elementi in attesa.
 
-- Se necessario, fare clic su Aggiorna sulla barra degli strumenti per aggiornare le statistiche di conservazione nel riquadro dei dettagli.
+- Se necessario, fare clic su Aggiorna sulla barra degli strumenti per aggiornare le statistiche di blocco nel riquadro dei dettagli.
 
-- La normale per il numero di elementi in attesa per aumentare il tempo perché agli utenti la cui cassetta postale o del sito sono in attesa sono in genere l'invio o ricezione nuovo messaggio di posta elettronica e la creazione di nuovi SharePoint e OneDrive per i documenti aziendali.
+- È normale che il numero di elementi in attesa aumenti nel tempo, in quanto gli utenti la cui cassetta postale o sito è in attesa vengono in genere inviati o ricevuti da un nuovo messaggio di posta elettronica e dalla creazione di nuovi documenti di SharePoint e OneDrive for business.
 
-- Se un sito di SharePoint o un account OneDrive viene spostato in una regione diversa in un ambiente multi-geo, le statistiche per il sito non inclusi nelle statistiche di attesa. Tuttavia, il contenuto del sito saranno ancora in attesa. Inoltre, se un sito viene spostato in una regione diversa l'URL che viene visualizzato nell'esenzione non verrà aggiornato. È necessario modificare la conservazione e aggiornare l'URL.
+- Se un sito di SharePoint o un account OneDrive viene spostato in un'area geografica diversa in un ambiente multi-geografico, le statistiche per il sito non verranno incluse nelle statistiche di esenzione. Tuttavia, il contenuto del sito rimarrà ancora in attesa. Inoltre, se un sito viene spostato in un'altra area, l'URL visualizzato nell'esenzione non verrà aggiornato. È necessario modificare il blocco e aggiornare l'URL.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-- **Come mappare un sito di Office 365 gruppi o Microsoft Teams aggiuntivo a un depositaria? E per quanto riguarda effettuare un non detentive conservazione in gruppi di Office 365 e Microsoft Teams?** Microsoft Teams si basano sui gruppi di Office 365. Pertanto, in cui vengono posizionati in attesa di un caso eDiscovery è molto simile. Tenere presenti i seguenti aspetti quando posizionamento gruppi di Office 365 e Microsoft Teams in attesa.
-  - Per mettere il contenuto disponibile in Office 365 gruppi e Microsoft Teams in attesa, è necessario specificare la cassetta postale e del sito che associate a un gruppo o un team di SharePoint.
+- **Come è possibile eseguire il mapping di un sito di Office 365 gruppi o Microsoft Teams a un custode? E che dire di disporre di un blocco non deTentivo sui gruppi di Office 365 e Microsoft teams?** Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams.
+  - Per inserire il contenuto presente nei gruppi di Office 365 e Microsoft teams in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
   
-  - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà per un Team di Microsoft o un gruppo di Office 365. Si tratta di un modo efficace per ottenere l'URL per il sito di cui è associato un Team di Microsoft o un gruppo di Office 365. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Team leader Senior:
+  - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un gruppo di Office 365 o di un team di Microsoft. Questo è un ottimo metodo per ottenere l'URL del sito associato a un gruppo di Office 365 o a un team di Microsoft. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:
 
 
     ```
@@ -128,24 +128,24 @@ Tenere presenti sulle statistiche di attesa i seguenti aspetti:
     ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet Get-UnifiedGroup, è necessario essere assegnato il ruolo di amministratore destinatari di Exchange Online o essere un membro del gruppo di ruoli che è assegnato il ruolo destinatari di sola visualizzazione.
+    > Per eseguire il cmdlet Get-UnifiedGroup, è necessario assegnare il ruolo destinatari di sola visualizzazione in Exchange Online o essere membri di un gruppo di ruoli a cui è assegnato il ruolo destinatari di sola visualizzazione.
 
- - Quando viene eseguita la ricerca cassetta postale dell'utente, qualsiasi gruppo di Office 365 o Team Microsoft che l'utente è membro di non eseguire la ricerca. Analogamente, quando si effettua un gruppo di Office 365 o al Team di Microsoft di attesa, solo la cassetta postale di gruppo e i siti gruppo vengono inseriti nel attesa; le cassette postali e OneDrive per i siti dei membri del gruppo non sono messa in attesa, a meno che non è in modo esplicito aggiungerle come depositari o effettuare attesa le origini dati. Pertanto, se è la necessità di inserire un gruppo di Office 365 o un Team di Microsoft in attesa per un depositaria specifico, si consiglia di mapping del gruppo sito e delle cassette postali di gruppo per depositaria (vedere Gestione depositari di eDiscovery avanzate (Preview)). Se il gruppo di Office 365 o un Team di Microsoft sia attribuito a un singolo depositaria, è possibile aggiungere l'origine di un non detentive attesa. 
+ - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi gruppo di Office 365 o Microsoft Team di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un gruppo di Office 365 o un blocco di Microsoft Team, solo la cassetta postale di gruppo e il sito del gruppo vengono conservati in blocco; le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito come depositari o che dispongano delle origini dati. Pertanto, se si ha la necessità di disporre di un gruppo di Office 365 o di un team Microsoft per uno specifico custode, valutare la possibilità di mappare la cassetta postale del sito e del gruppo del gruppo al custode (vedere Managing Depositaries in Advanced eDiscovery (Preview)). Se il gruppo di Office 365 o il team Microsoft non è attribuibile a un singolo custode, è consigliabile aggiungere l'origine a un blocco non detentivo. 
  
- - Per ottenere un elenco dei membri di un gruppo di Office 365 o un Team di Microsoft, è possibile visualizzare le proprietà della pagina iniziale gt _ gruppi nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il seguente comando in Exchange Online PowerShell:
+ - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina Home > gruppi nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
    ```
 
     > [!NOTE]
-    > Per eseguire il cmdlet **Get-UnifiedGroupLinks** , è necessario essere assegnato il ruolo di amministratore destinatari di Exchange Online o essere un membro del gruppo di ruoli che è assegnato il ruolo destinatari di sola visualizzazione.
+    > Per eseguire il cmdlet **Get-UnifiedGroupLinks** , è necessario assegnare il ruolo destinatari di sola visualizzazione in Exchange Online o essere membri di un gruppo di ruoli a cui è assegnato il ruolo destinatari di sola visualizzazione.
 
-- Conversazioni del canale che fanno parte di un canale Teams Microsoft sono archiviate nella cassetta postale associata al Team. Analogamente, i file che i membri del team di condividere un canale vengono archiviati nel sito di SharePoint del team. Di conseguenza, è necessario inserire la cassetta postale del Team di Microsoft e siti di SharePoint in attesa per mantenere le conversazioni e i file in un canale.
+- Le conversazioni di canale che fanno parte di un canale Microsoft teams vengono memorizzate nella cassetta postale associata al team. Analogamente, i file che condividono i membri del team in un canale sono archiviati nel sito di SharePoint del team. Pertanto, è necessario inserire la cassetta postale di Microsoft Team e il sito di SharePoint in attesa per conservare le conversazioni e i file in un canale.
   
-- In alternativa, le conversazioni che fanno parte dell'elenco di Chat di Microsoft Teams sono archiviate nella cassetta postale dell'utente che partecipano alla chat.  I file che un utente condivide conversazioni Chat vengono archiviati in OneDrive per sito aziendale dell'utente che condivide il file. Di conseguenza, è necessario inserire le cassette postali degli utenti singoli e OneDrive per i siti di Business in attesa per mantenere le conversazioni e i file nell'elenco Chat. 
+- In alternativa, le conversazioni che fanno parte dell'elenco chat in Microsoft teams vengono memorizzate nella cassetta postale dell'utente che partecipa alla chat.  I file che un utente condivide nelle conversazioni chat sono archiviati nel sito di OneDrive for business dell'utente che condivide il file. Pertanto, è necessario posizionare i singoli utenti e le cassette postali di OneDrive for business in attesa per conservare le conversazioni e i file nell'elenco chat. 
   
-- Ogni canale Team di Microsoft o un team contiene un Wiki per la collaborazione e gestione delle note. Il contenuto Wiki viene automaticamente salvato in un file in formato con estensione mht. In questo file è archiviato nella raccolta documenti di team Wiki dati nel sito di SharePoint del team. È possibile inserire il contenuto nel Wiki in attesa inserendo il sito di SharePoint del team in attesa.
+- Ogni canale di Microsoft Team o team contiene un wiki per la partecipazione alle note e la collaborazione. Il contenuto wiki viene salvato automaticamente in un file con formato. mht. Questo file è archiviato nella raccolta documenti dei dati wiki del team nel sito di SharePoint del gruppo. È possibile inserire il contenuto nel wiki in attesa inserendo il sito di SharePoint del team in attesa.
 
   > [!NOTE]
-  > La possibilità di conservare contenuto Wiki per un Team di Microsoft o un team di canale (quando si effettua il sito di SharePoint del team in sospeso) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, Wiki contenuto verrà mantenuto partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto Wiki è stato eliminato prima del 22 giugno 2017, il contenuto Wiki non è stato mantenuto.
+  > La possibilità di conservare il contenuto wiki per un canale Microsoft Team o team (quando si posiziona il sito di SharePoint del team in attesa) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, il contenuto del wiki verrà mantenuto a partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto del wiki è stato eliminato entro il 22 giugno 2017, il contenuto del wiki non è stato mantenuto.

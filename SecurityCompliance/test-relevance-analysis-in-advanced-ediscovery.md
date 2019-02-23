@@ -6,118 +6,118 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: "Informazioni su come utilizzare la scheda Test dopo il calcolo Batch in Office 365 avanzate eDiscovery per testare, confronto e convalidare della qualità globale dell'elaborazione.  "
-ms.openlocfilehash: 782859fe3b6bb3d00945c477928131cd1154446d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Office 365 Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
+ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530819"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215836"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Valutare l’analisi di Rilevanza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> EDiscovery avanzate richiede un Office 365 E3 con il componente aggiuntivo avanzate conformità o una sottoscrizione E5 per l'organizzazione. Se non sono dial plan e desidera provare eDiscovery avanzate, è possibile [iscrizione a una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Nella scheda Test di eDiscovery avanzate consente di testare, confronto e convalidare della qualità globale dell'elaborazione. Questi test vengono eseguiti dopo il calcolo Batch. Per contrassegno i file della raccolta, un esperto rende la decisione finale se tutti i file contrassegnati viene effettivamente rilevanti per il case. 
+La scheda test in Advanced eDiscovery consente di testare, confrontare e convalidare la qualità complessiva dell'elaborazione. Questi test vengono eseguiti dopo il calcolo in batch. Contrassegnando i file della raccolta, un esperto rende il giudizio finale sul fatto che ogni file contrassegnato è effettivamente pertinente per il caso. 
   
-Negli scenari con uno o più problemi test sono in genere eseguito per ogni problema. I risultati possono essere visualizzati dopo ogni test e i risultati dei test può essere adattati con i file di test di esempio specificato.
+In scenari con problemi singoli e multipli i test vengono in genere eseguiti per ogni problema. I risultati possono essere visualizzati dopo ogni test e i risultati dei test possono essere rielaborati con i file di test di esempio specificati.
   
-## <a name="testing-the-rest"></a>Nella parte restante di test
+## <a name="testing-the-rest"></a>Verifica del resto
 
-Il test "Testare il resto" viene utilizzato per convalidare le decisioni eliminazione selettiva, ad esempio, per esaminare solo file sopra un punteggio limito di pertinenza specifico in base ai risultati finali eDiscovery avanzate. Esperto illustra un esempio di file in un punteggio limito selezionato calcolare il numero di file pertinenti all'interno di tale set.
+Il test "test the rest" viene utilizzato per convalidare le decisioni di eliminazione, ad esempio per esaminare solo i file al di sopra di un punteggio di taglio di riLevanza specifico in base ai risultati avanzati di eDiscovery. L'esperto esamina un campione di file con un punteggio di taglio selezionato per valutare il numero di file rilevanti all'interno di tale set.
   
-Questo test vengono fornite le statistiche e un confronto tra il set di revisione e il Test della popolazione Rest. I risultati del set di revisione sono quelli calcolati per pertinenza durante la formazione. I risultati includono calcoli, in base alle impostazioni e i parametri di input, ad esempio:
+Questo test fornisce statistiche e un confronto tra il set di revisione e il test del popolamento Rest. I risultati del set di revisione sono quelli calcolati per pertinenza durante l'allenamento. I risultati includono calcoli, in base alle impostazioni e ai parametri di input, ad esempio:
   
-- Testare le statistiche di esempio il numero di file in un file pertinente di esempio e identificati. 
+- Testare le statistiche di esempio del numero di file in un esempio e identificare i file rilevanti. 
     
-- Confronto tra tabulare dei parametri popolazione del set di revisione e gli altri componenti, ad esempio, il numero di file, numero stimato di file rilevanti, complessità stimato e il costo medio di ricerca di un altro file pertinente. Costi parametro impostazioni possono essere configurate dall'amministratore.
+- Confronto tabulare dei parametri di popolazione del set di revisione e del resto, ad esempio, il numero di file, il numero stimato di file rilevanti, la ricchezza stimata e il costo medio per la ricerca di un altro file pertinente. Le impostazioni dei parametri di costo possono essere impostate dall'amministratore.
     
-1. Apri il **pertinenza \> Test** scheda. 
+1. Aprire la scheda ** \> test pertinenza** . 
     
-2. Nella scheda **Test** , fare clic su **Nuovo test**. Verrà visualizzata la finestra di dialogo **Crea di test** , come illustrato nell'esempio seguente. 
+2. Nella scheda **test** fare clic su **nuovo test**. Viene visualizzata la finestra di dialogo **Crea test** , come illustrato nell'esempio seguente. 
     
     ![Risultati del test sull'inattività di pertinenza](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. In **nome Test**e **Descrizione**digitare il nome e descrizione.
+3. In **nome test**e **Descrizione**digitare il nome e la descrizione.
     
-4. Nell'elenco **tipo di Test** , selezionare **Test il resto**
+4. Nell'elenco **tipo di test** , selezionare **test the rest**
     
-5. Nella **problema / categoria** , selezionare il nome del problema. 
+5. Nell'elenco **problema/categoria** selezionare il nome del problema. 
     
-6. Nell'elenco **caricare** selezionare il carico. 
+6. Nell'elenco **carico** selezionare il carico. 
     
-7. In **% lettura**, accettare il valore predefinito oppure selezionare un valore per il limite punteggio di pertinenza. 
+7. In **lettura%**, accettare il valore predefinito o selezionare un valore per il Punteggio di pertinenza del cutoff. 
     
-8. **Impostare dimensioni**, oppure accettare il valore predefinito. Si noti che le icone di ripristino è possibile ripristinare i valori predefiniti.
+8. In **Dimensioni set**oppure accettare il valore predefinito. Si noti che le icone di ripristino ripristineranno i valori predefiniti.
     
-9. Fare clic su **Start tagging**. Viene generato un campione.
+9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Rivedere e contrassegnare ciascuno dei file nel **pertinenza \> Tag** delle schede e al termine, fare clic su **calcolo**.
+10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> Tag pertinenza** e, al termine, fare clic su **Calcola**.
     
-11. Nella scheda Test è possibile scegliere di **visualizzare i risultati** per visualizzare i risultati del test. Nella figura seguente è illustrato un esempio. 
+11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. Un esempio è illustrato nella figura seguente. 
     
     ![Risultati del test sull'inattività](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-Nella figura precedente, la sezione **esempi di parametri** della tabella contiene informazioni dettagliate sul numero di file di esempio contrassegnato da un esperto e il numero di file rilevanti trovato nel modello di tale. 
+Nella figura precedente la sezione **parametri di esempio** della tabella contiene informazioni dettagliate sul numero di file nell'esempio contrassegnati dall'esperto e sul numero di file rilevanti presenti in tale esempio. 
   
-La sezione **parametri popolazione** della tabella contiene i risultati del test, inclusi la compilazione di set di verifica dei file con un punteggio sotto il limite selezionato e popolazione "Il resto" dei file con un punteggio sopra il limite selezionato. Per ogni popolazione, vengono visualizzati i risultati seguenti: 
+La sezione relativa ai **parametri di popolamento** della tabella contiene i risultati dei test, tra cui la popolazione del set di riesame di file con un punteggio al di sotto del cutoff selezionato e la popolazione di file con un punteggio sopra il taglio selezionato. Per ogni popolazione, vengono visualizzati i risultati seguenti: 
   
-- Include i file con % lettura - limite già indicati
+- Include i file con il cutoff lettura%-dichiarato
     
 - Il numero totale di file 
     
 - Il numero stimato di file rilevanti 
     
-- Complessità stimato 
+- La ricchezza stimata 
     
-- Il costo medio revisione della ricerca di un altro file rilevante
+- Il costo di revisione medio per la ricerca di un altro file pertinente
     
-## <a name="testing-the-slice"></a>La parte del test
+## <a name="testing-the-slice"></a>Test della sezione
 
-"Testare la sezione" test consente di eseguire test simili a "Testare il resto" test, ma a un segmento del file impostata secondo quanto specificato % lettura di pertinenza.
+Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmento del set di file specificato dalla pertinenza lettura%.
   
-1. Apri il **pertinenza \> Test** scheda. 
+1. Aprire la scheda ** \> test pertinenza** . 
     
-2. Nella scheda **Test** , fare clic su **Nuovo test**. Viene visualizzata la finestra di dialogo **Crea di test** . 
+2. Nella scheda **test** fare clic su **nuovo test**. Viene visualizzata la finestra di dialogo **Crea test** . 
     
-3. In **nome Test** e **Descrizione**digitare le informazioni.
+3. In **nome** e **Descrizione**del test, digitare le informazioni.
     
-4. Nell'elenco **tipo di Test** , selezionare **la parte del Test**.
+4. Nell'elenco **tipo di test** selezionare **Verifica la sezione**.
     
-5. Nell'elenco **problema** , selezionare il nome del problema. 
+5. Nell'elenco **problema** selezionare il nome del problema. 
     
-6. Nell'elenco **caricare** selezionare il carico. 
+6. Nell'elenco **carico** selezionare il carico. 
     
-7. Nella finestra **% lettura tra**, accettare i valori predefiniti intervallo massimo e minimo o selezionare i valori per i punteggi pertinenza limiti. 
+7. In **lettura% tra**, accettare i valori predefiniti di intervallo basso e alto o selezionare i valori per i punteggi di rilevanza del cutoff. 
     
-8. **Impostare dimensioni**, selezionare un valore o accettare il valore predefinito.
+8. In **Dimensioni set**selezionare un valore o accettare il valore predefinito.
     
-    Il valore predefinito è possibile ripristinare le icone di ripristino.
+    Le icone di ripristino ripristineranno il valore predefinito.
     
-9. Fare clic su **Start tagging**. Viene generato un campione.
+9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Rivedere e contrassegnare ciascuno dei file nel **pertinenza \> Tag** delle schede e al termine, fare clic su **calcolo**. 
+10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> Tag pertinenza** e, al termine, fare clic su **Calcola**. 
     
-11. Nella scheda Test è possibile scegliere di **visualizzare i risultati** per visualizzare i risultati del test. 
+11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. 
     
 ## <a name="see-also"></a>Vedere anche
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione di pertinenza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging e formazione di pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analisi di pertinenza di verifica](track-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Stabilire in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
 

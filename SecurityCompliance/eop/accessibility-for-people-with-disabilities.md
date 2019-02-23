@@ -12,22 +12,22 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft si impegna a rendere i propri prodotti e servizi di facile utilizzo per tutti.
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026213"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206379"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>Accessibilità per gli utenti disabili
+# <a name="accessibility-for-people-with-disabilities"></a>Accessibilità per persone con disabilità
 
 ## <a name="accessibility-features-of-exchange"></a>Funzionalità di accesso facilitato di Exchange
 
 Le seguenti funzionalità rendono Microsoft Exchange più accessibile per le persone con disabilità:
   
-- [Tasti di scelta rapida in Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Tasti di scelta rapida in Exchange Server](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Tasti di scelta rapida in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [Tasti di scelta rapida in Outlook sul Web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
 Inoltre, gli utenti di Windows con disabilità possono trarre beneficio anche da alcune utilità e funzionalità di accessibilità di Exchange. Inoltre, i cambiamenti di dimensione e di colore in Windows PowerShell offrono opzioni di accesso facilitato quando si utilizza Exchange Management Shell. Per ulteriori informazioni sulle opzioni di accessibilità di Windows PowerShell, vedere [Accessibilità in Windows PowerShell ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
@@ -62,7 +62,7 @@ Se si hanno delle difficoltà nella lettura o nella gestione dei materiali stamp
   
 ||
 |:-----|
-|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540  <br/> Numero di telefono dagli Stati Uniti: (800) 221-4792  <br/> Sito Web: [Alleato apprendimento](https://www.learningally.org/) <br/> |
+|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540  <br/> Numero di telefono dagli Stati Uniti: (800) 221-4792  <br/> Sito Web: [alleato di apprendimento](https://www.learningally.org/) <br/> |
    
 ### <a name="customer-service-for-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi di udito
 

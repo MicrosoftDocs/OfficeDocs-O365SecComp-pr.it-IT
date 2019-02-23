@@ -1,194 +1,194 @@
 ---
-title: Il Registro di controllo di Office 365 per risolvere i problemi di scenari comuni di ricerca
+title: Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 - MOE150
-description: È possibile utilizzare lo strumento di ricerca di Office 365 audit log che consentono di risolvere i problemi comuni, ad esempio un'analisi di un account compromesso o che configurare l'inoltro di posta elettronica per una cassetta postale di individuazione.
-ms.openlocfilehash: 930e311712e49214ca2a51e256c29e5f959deab8
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso o la ricerca dell'utente che ha configurato l'inoltro della posta elettronica per una cassetta postale.
+ms.openlocfilehash: 301c8a19c5e268b1c4e3ff0e9633c85a31fd3f4d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27123899"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220876"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Il Registro di controllo di Office 365 per risolvere i problemi di scenari comuni di ricerca
+# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
 
-In questo articolo viene descritto come utilizzare lo strumento di ricerca di Office 365 audit log per risolvere i problemi comuni scenari di supporto. Questa condizione utilizzando il Registro di controllo:
+In questo articolo viene descritto come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per la risoluzione dei problemi relativi agli scenari di supporto comuni. Ciò include l'utilizzo del log di controllo per:
 
-- Trovare l'indirizzo IP del computer utilizzato per accedere a un account compromesso
-- Determinare chi configurare l'inoltro di posta elettronica per una cassetta postale di
-- Determinare se un utente di eliminata gli elementi di posta elettronica nella cassetta postale
-- Determinare se un utente di creata una regola di posta in arrivo
+- Individuare l'indirizzo IP del computer utilizzato per accedere a un account compromesso
+- Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
+- Determinare se un utente ha eliminato gli elementi di posta elettronica nella propria cassetta postale
+- Determinare se un utente ha creato una regola di posta in arrivo
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>Utilizzando lo strumento di ricerca di Office 365 audit log
+## <a name="using-the-office-365-audit-log-search-tool"></a>Utilizzo dello strumento di ricerca del registro di controllo di Office 365
 
-Ognuno degli scenari di risoluzione dei problemi descritti in questo articolo si basano sui utilizzando lo strumento di ricerca del Registro di controllo nel centro conformità protezione di Office 365. In questa sezione sono elencate le autorizzazioni necessarie per la ricerca nel Registro di controllo e vengono descritti i passaggi necessari per accedere ed eseguire ricerche del Registro di controllo. Nella sezione ogni scenario vengono fornite indicazioni specifiche su come configurare una query di ricerca del Registro di controllo e sugli aspetti da considerare informazioni dettagliate nei record di verifica che soddisfano i criteri di ricerca.
+Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si basano sull'utilizzo dello strumento di ricerca del registro di controllo nel centro conformità di Office 365 Security &. In questa sezione sono elencate le autorizzazioni necessarie per eseguire una ricerca nel registro di controllo e vengono descritti i passaggi per accedere alle ricerche del registro di controllo e eseguirle. Ogni sezione scenario fornisce indicazioni specifiche su come configurare una query di ricerca del registro di controllo e su cosa cercare nelle informazioni dettagliate nei record di controllo corrispondenti ai criteri di ricerca.
 
-### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per utilizzare lo strumento di ricerca del Registro di controllo
+### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per l'utilizzo dello strumento di ricerca del registro di controllo
 
-È necessario disporre del ruolo registri di controllo View-Only o i registri di controllo di Exchange Online per la ricerca nel Registro di controllo di Office 365. Per impostazione predefinita, questi ruoli vengono assegnati a gruppi di ruolo Gestione della conformità e la gestione dell'organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [gruppi di ruoli di gestione in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
-### <a name="running-audit-log-searches"></a>Eseguire ricerche del Registro di controllo
+### <a name="running-audit-log-searches"></a>Esecuzione delle ricerche nei registri di controllo
 
-In questa sezione vengono descritti i concetti di base per creare ed eseguire ricerche del Registro di controllo. Utilizzare queste istruzioni come punto di partenza per ogni scenario di risoluzione dei problemi in questo articolo. Per ulteriori informazioni dettagliate, vedere [ricerca il controllo di accesso nel centro conformità protezione di Office 365 ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+In questa sezione vengono descritte le nozioni di base per la creazione e l'esecuzione di ricerche nei registri Utilizzare queste istruzioni come punto di partenza per ogni scenario di risoluzione dei problemi in questo articolo. Per istruzioni dettagliate, vedere [Search the audit log in the Office 365 Security _AMP_ Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
   
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
 
-3. Nel riquadro sinistro della sicurezza & centro conformità, fare clic su **ricerca e indagini** > **ricerca dei registri di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **Search & Investigation** > **log audit Search**.
     
-    Verrà visualizzata la pagina di **ricerca dei registri di controllo** . 
+    Viene visualizzata la pagina di **ricerca del registro di controllo** . 
     
-    ![Configurare criteri e quindi scegliere Cerca per eseguire la ricerca](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri e quindi fare clic su Cerca per eseguire la ricerca](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
-4. È possibile configurare i seguenti criteri di ricerca. Si noti che ogni scenario di risoluzione dei problemi in questo articolo verrà consigliabile istruzioni specifiche su come configurare questi campi.
+4. È possibile configurare i criteri di ricerca seguenti. Si noti che ogni scenario di risoluzione dei problemi in questo articolo consiglia informazioni specifiche per la configurazione di questi campi.
     
-    r. **delle attività** - scegliere l'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di verifica per le attività selezionate. Selezionare **Mostra i risultati per tutte le attività** visualizzerà i risultati per tutte le attività che soddisfano i criteri di ricerca. È inoltre necessario lasciare il campo vuoto in alcuni scenari di risoluzione dei problemi.
+    a. **Activities** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
     
-    b. **Data di inizio** e **Data fine** - selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati durante questo periodo. Ultimi sette giorni sono selezionati per impostazione predefinita. Data e ora sono disponibili in formato ora UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni.
+    b. Data di **inizio** e **Data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora vengono visualizzate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni.
 
-    c. **gli utenti** , fare clic in questa casella e quindi selezionare uno o più utenti per visualizzare Criteri di ricerca di risultati per. Nell'elenco dei risultati vengono visualizzati i record di controllo per l'attività selezionata eseguite dagli utenti che selezionare questa casella. Lasciare vuoto questo per restituire le voci per tutti gli utenti (e gli account di servizio) nella propria organizzazione.
+    c. **Users** -fare clic in questa casella e quindi selezionare uno o più utenti per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati. Lasciare vuota questa casella per restituire le voci per tutti gli utenti (e gli account di servizio) nell'organizzazione.
     
-    d. **File, cartelle o del sito** - digitare alcuni o tutti un nome file o una cartella per cercare le attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL, non includere spazi o caratteri speciali. Lasciare vuoto questo per restituire le voci per tutti i file e cartelle all'interno dell'organizzazione. Si noti che questo campo viene lasciato vuoto in tutti gli scenari di risoluzione dei problemi in questo articolo.
+    d. **file, cartella o sito** Digitare alcuni o tutti i nomi di file o cartelle per cercare attività relative al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o di una cartella. Se si utilizza un URL, accertarsi che il percorso URL completo sia digitato o se si digita solo una parte dell'URL, non includere caratteri o spazi speciali. Lasciare vuota questa casella per restituire le voci per tutti i file e le cartelle nell'organizzazione. Tenere presente che questo campo viene lasciato vuoto in tutti gli scenari di risoluzione dei problemi descritti in questo articolo.
     
-5. Fare clic su **ricerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
+5. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
     
-    I risultati della ricerca sono stati caricati e dopo pochi secondi vengono visualizzati nell'area **risultati** della pagina di **ricerca dei registri di controllo** . Ogni le sezioni seguenti verranno vengono fornite informazioni su aspetti da considerare per lo scenario di risoluzione dei problemi specifico.
+    I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **risultati** nella pagina **Ricerca log di controllo** . Ognuna delle sezioni seguenti fornisce indicazioni sulle operazioni da eseguire per individuare lo scenario di risoluzione dei problemi specifico.
 
-    Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca di log di controllo, vedere:
+    Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca del registro di controllo, vedere:
 
-    - [Visualizza risultati di ricerca](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
-    - [Filtrare i risultati di ricerca](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
+    - [Visualizzare i risultati della ricerca](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
+    - [Filtrare i risultati della ricerca](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
     - [Esportare i risultati della ricerca](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
 
-## <a name="finding-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Ricerca dell'indirizzo IP del computer utilizzato per accedere a un account compromesso
+## <a name="finding-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Trovare l'indirizzo IP del computer utilizzato per accedere a un account compromesso
 
-L'indirizzo IP corrispondente a un'attività eseguita da un utente è incluso nella maggior parte dei record di verifica. Informazioni sui client utilizzato sono anche incluso nel controllo record.
+L'indirizzo IP corrispondente a un'attività eseguita da qualsiasi utente è incluso nella maggior parte dei record di controllo. Le informazioni sul client utilizzato sono incluse anche nel record di controllo.
 
-Di seguito viene descritto come configurare una query di ricerca di registro di controllo per questo scenario:
+Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività** - se rilevanti per il case, selezionare un'attività specifica da cercare. Per la risoluzione dei problemi compromesso gli account utilizzati per valutare la scelta dell'attività **utente l'accesso alla cassetta postale** tra **le attività di cassette postali di Exchange**. Restituisce i record di controllo che mostra l'indirizzo IP che è stata utilizzare durante l'accesso alla cassetta postale. In caso contrario, lasciare vuota la per restituire i record di controllo per tutte le attività. 
+**Attività** -se pertinente per il caso, selezionare un'attività specifica da cercare. Per la risoluzione dei problemi relativi agli account compromessi, è consigliabile selezionare l' **utente connesso all'attività della cassetta postale** in **attività Cassetta postale di Exchange**. Questo restituirà i record di controllo che mostrano l'indirizzo IP che è stato utilizzato per l'accesso alla cassetta postale. In caso contrario, lasciare vuoto questo campo per restituire i record di controllo per tutte le attività. 
 
 > [!TIP]
-> Se si lascia vuoto questo campo restituirà **UserLoggedIn** attività, ovvero un'attività di Azure Active Directory che indica che un utente ha eseguito l'accesso a un account utente di Office 365. Utilizzare il filtro nei risultati della ricerca per visualizzare i record di verifica **UserLoggedIn** .
+> Se si lascia questo campo vuoto, verranno restituite le attività di **UserLoggedIn** , che è un'attività di Azure Active Directory che indica che un utente ha eseguito l'accesso a un account di Office 365. Utilizzare il filtro nei risultati della ricerca per visualizzare i record di controllo di **UserLoggedIn** .
 
-**Data di inizio** e **Data fine** - selezionare un intervallo di date valide per le indagini.
+Data di **inizio** e **Data di fine** : selezionare un intervallo di date applicabile all'indagine.
 
-**Gli utenti** - se si sta analisi di un account compromesso, selezionare l'utente il cui account è stata danneggiata. Restituisce i record di controllo per le attività eseguite dall'account utente.
+**Utenti** : se si sta indagando su un account compromesso, selezionare l'utente il cui account è stato compromesso. Questo restituirà i record di controllo per le attività eseguite dall'account utente.
 
-**File, cartelle o del sito** - lasciare vuoto questo campo.
+**File, cartella o sito** : lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, l'indirizzo IP per ogni attività viene visualizzato nella colonna **indirizzo IP** nei risultati della ricerca. Fare clic sul record nei risultati della ricerca per visualizzare informazioni più dettagliate sulla pagina comparsa.
+Dopo aver eseguito la ricerca, l'indirizzo IP di ogni attività viene visualizzato nella colonna **indirizzo IP** nei risultati della ricerca. Fare clic sul record nei risultati della ricerca per visualizzare informazioni più dettagliate sulla pagina a comparsa.
 
-## <a name="determining-who-set-up-email-forwarding-for-a-mailbox"></a>Determinare chi configurare l'inoltro di posta elettronica per una cassetta postale di
+## <a name="determining-who-set-up-email-forwarding-for-a-mailbox"></a>Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
 
-Quando l'inoltro della posta è configurato per una cassetta postale, messaggi di posta elettronica inviati alla cassetta postale vengono inviati a un'altra cassetta postale. I messaggi possono essere inoltrati agli utenti interni o esterni all'organizzazione. Quando l'inoltro della posta è impostato su una cassetta postale, il cmdlet di Exchange Online sottostante utilizzato è **Set-Mailbox**.
+Quando l'inoltro della posta elettronica è configurato per una cassetta postale, i messaggi di posta elettronica inviati alla cassetta postale vengono inoltrati a un'altra cassetta postale. I messaggi possono essere inoltrati agli utenti all'interno o all'esterno dell'organizzazione. Quando l'inoltro della posta elettronica è configurato in una cassetta postale, il cmdlet Exchange Online sottostante utilizzato è **Set-Mailbox**.
 
-Di seguito viene descritto come configurare una query di ricerca di registro di controllo per questo scenario:
+Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività** - lasciare vuoto in modo che la ricerca restituisce record di controllo per tutte le attività in questo campo. Questa operazione è necessaria per restituire una qualsiasi controllo record correlati al cmdlet **Set-Mailbox** .
+**Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire tutti i record di controllo relativi al cmdlet **Set-Mailbox** .
 
-**Data di inizio** e **Data fine** - selezionare un intervallo di date valide per le indagini.
+Data di **inizio** e **Data di fine** : selezionare un intervallo di date applicabile all'indagine.
 
-**Gli utenti** , a meno che non si sta analisi di un messaggio di posta elettronica inoltro problema per un utente specifico, lasciare vuoto questo campo. Ciò consentirà di identificare se inoltro della posta è stato configurato per alcun utente.
+**Utenti** , a meno che non si stia esaminando un problema di inoltro della posta elettronica per un utente specifico, lasciare vuoto questo campo. Questo ti aiuterà a identificare se l'inoltro della posta elettronica è stato configurato per qualsiasi utente.
 
-**File, cartelle o del sito** - lasciare vuoto questo campo.
+**File, cartella o sito** : lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, fare clic su **filtrare i risultati** nella pagina dei risultati della ricerca. Nella casella sotto l'intestazione di colonna **attività** digitare **Set-Mailbox** in modo che vengano visualizzati solo i record di controllo relativi al cmdlet **Set-Mailbox** .
+Dopo aver eseguito la ricerca, fare clic su **Filtra risultati** nella pagina dei risultati di ricerca. Nella casella in intestazione colonna **attività** digitare **Set-Mailbox** in modo che vengano visualizzati solo i record di controllo correlati al cmdlet **Set-Mailbox** .
 
-![Filtrando i risultati di una ricerca dei registri di controllo](media/emailforwarding1.png)
+![Filtraggio dei risultati di una ricerca nel registro di controllo](media/emailforwarding1.png)
 
-A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlato all'inoltro della posta elettronica. Fare clic sul record di controllo per visualizzare la pagina di comparsa **Dettagli** e quindi fare clic su **ulteriori informazioni**. I seguente cattura di schermata e descrizioni argomenti di rilievo di informazioni che indicano l'inoltro della posta è state impostate sulla cassetta postale.
+A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Fare clic sul record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi fare clic su **altre informazioni**. Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
 
 ![Informazioni dettagliate dal record di controllo](media/emailforwarding2.png)
 
-r. nel campo **ObjectId** , l'alias della cassetta postale di inoltro della posta elettronica è stata impostata su viene visualizzato. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati della ricerca.
+a. nel campo **ObjectID** , viene visualizzato l'alias della cassetta postale in cui è stato impostato l'inoltro della posta elettronica. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati di ricerca.
 
-b. nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che è stata impostata Inoltra posta elettronica della cassetta postale. In questo esempio, inoltro della posta per l'indirizzo di posta elettronica mike@contoso.com, che è all'esterno dell'organizzazione alpinehouse.onmicrosoft.com.
+b. nel campo **Parameters** , il valore *ForwardingSmtpAddress* indica che la posta elettronica inoltrata è stata impostata sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo di posta elettronica mike@contoso.com, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
 
-c. il valore *True* per il parametro *DeliverToMailboxAndForward* indica che una copia dei messaggi recapitati sarad@alpinehouse.onmicrosoft.com *e* viene inoltrata all'indirizzo specificato da *ForwardingSmtpAddress *parametro, che in questo esempio viene mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *False*, posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectId** .
+c. il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *e* viene inoltrata all'indirizzo di posta elettronica specificato dal *ForwardingSmtpAddress *parametro, che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
 
-d. il campo **ID utente** è indicato l'utente che ha imposta l'inoltro di posta elettronica della cassetta postale specificata nel campo campo **ObjectId** . L'utente viene visualizzato anche nella colonna **utente** nella pagina dei risultati della ricerca. In questo caso, si ritiene che il proprietario della cassetta postale di imposta l'inoltro di posta elettronica nella propria cassetta postale.
+d. il campo **userid** indica l'utente che ha impostato l'inoltro della posta elettronica sulla cassetta postale specificata nel campo del campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca. In questo caso, sembra che il proprietario della cassetta postale abbia impostato l'inoltro della posta elettronica sulla sua cassetta postale.
 
-Se ritiene che inoltro di posta elettronica non è necessario impostare la cassetta postale, è possibile rimuovere eseguendo il comando seguente in Exchange Online PowerShell:
+Se si determina che l'inoltro della posta elettronica non deve essere impostato sulla cassetta postale, è possibile rimuoverlo eseguendo il comando seguente in PowerShell di Exchange Online:
 
 ```
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Vedere l'articolo [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) per ulteriori informazioni sui parametri correlati all'inoltro della posta elettronica.
+Per ulteriori informazioni sui parametri relativi all'inoltro della posta elettronica, vedere l'articolo [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>Determinare se un utente ha eliminato gli elementi di posta elettronica
 
-Prima dell'eliminazione di record del Registro di controllo sugli elementi di posta elettronica vengono salvati nel Registro di controllo di Office 365, il controllo della cassetta postale deve essere abilitata per ciascuna cassetta postale utente nell'organizzazione. Inoltre, le azioni di cassette postali SoftDelete e HardDelete devono essere attivati per il controllo. Per ulteriori informazioni, vedere [abilitare il controllo in Office 365](enable-mailbox-auditing.md). Se il controllo delle cassette postali è già abilitato per gli utenti, utilizzare la procedura seguente per cercare il Registro di controllo per eventi relativi agli elementi di posta elettronica eliminati.
+Prima che i record del registro di controllo relativi agli elementi di posta elettronica eliminati vengano salvati nel log di controllo di Office 365, è necessario abilitare il controllo delle cassette postali per ogni cassetta postale dell'organizzazione. Inoltre, le azioni delle cassette postali di SoftDelete e HardDelete devono essere abilitate per il controllo. Per istruzioni, vedere [abilitare il controllo delle cassette postali in Office 365](enable-mailbox-auditing.md). Se il controllo delle cassette postali è già abilitato per gli utenti, eseguire la procedura seguente per eseguire una ricerca nel registro di controllo per gli eventi relativi agli elementi di posta elettronica eliminati.
 
-Di seguito viene descritto come configurare una query di ricerca di registro di controllo per questo scenario:
+Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività** - sotto **le attività di cassette postali di Exchange**, selezionare una o entrambe le attività seguenti:
+**Attività** -in **attività Cassetta postale di Exchange**, selezionare una o entrambe le seguenti attività:
 
-- **I messaggi eliminati dalla cartella Posta eliminata** - questa attività corrisponde alla cassetta postale **SoftDelete** controllo azione. Questa attività viene registrata anche quando viene eliminato definitivamente un elemento selezionandolo e premendo **MAIUSC + CANC**. Dopo che un elemento viene eliminato definitivamente, l'utente recuperarla fino alla scadenza del periodo di mantenimento elementi eliminati.
+- **Messaggi eliminati dalla cartella Posta eliminata** -questa attività corrisponde all'azione di controllo delle cassette postali di **SoftDelete** . Questa attività viene inoltre registrata quando un utente Elimina definitivamente un elemento selezionandolo e premendo **MAIUSC + CANC**. Dopo l'eliminazione definitiva di un elemento, l'utente può ripristinarlo fino alla scadenza del periodo di conservazione degli elementi eliminati.
 
-- **Purged messaggi dalla cassetta postale** - questa attività corrisponde alla cassetta postale **HardDelete** controllo azione. Viene registrata quando un utente elimina un elemento dalla cartella elementi ripristinabili. Gli amministratori possono usare lo strumento di ricerca del contenuto nel centro conformità protezione di Office 365 per cercare e gli elementi eliminato recupero fino alla scadenza del periodo di mantenimento elementi eliminati o se più cassette postali dell'utente sono in attesa.
+- **Messaggi eliminati dalla cassetta postale** -questa attività corrisponde all'azione di controllo delle cassette postali di **HardDelete** . Questa operazione viene registrata quando un utente elimina un elemento dalla cartella elementi ripristinabili. Gli amministratori possono utilizzare lo strumento di ricerca contenuto nel centro conformità di Office 365 Security & per cercare e recuperare gli elementi eliminati finché il periodo di conservazione degli elementi eliminati non scade o più a lungo se la cassetta postale dell'utente è in attesa.
 
-**Data di inizio** e **Data fine** - selezionare un intervallo di date valide per le indagini.
+Data di **inizio** e **Data di fine** : selezionare un intervallo di date applicabile all'indagine.
 
-**Gli utenti** - se si seleziona un utente in questo campo, lo strumento di controllo Registro ricerca verrà restituiti i record di controllo per gli elementi di posta elettronica che sono stati eliminati (SoftDeleted o HardDeleted) dall'utente specificato. In alcuni casi, l'utente che consente di eliminare un messaggio di posta elettronica potrebbe non essere proprietario della cassetta postale.
+**Utenti** : se si seleziona un utente in questo campo, lo strumento di ricerca del registro di controllo restituirà i record di controllo per gli elementi di posta elettronica eliminati (SoftDeleted o HardDeleted) dall'utente specificato. In alcuni casi, l'utente che elimina un messaggio di posta elettronica potrebbe non essere il proprietario della cassetta postale.
 
-**File, cartelle o del sito** - lasciare vuoto questo campo.
+**File, cartella o sito** : lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di verifica per gli elementi eliminate o per disco rigido eliminata. Fare clic sul record di controllo per visualizzare la pagina di comparsa **Dettagli** e quindi fare clic su **ulteriori informazioni**. Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, viene visualizzate nel campo **AffectedItems** . Le schermate seguente mostra un esempio del campo **AffectedItems** da un elemento eliminate e una voce eliminata definitivamente.
+Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di controllo per gli elementi eliminati temporaneamente o per gli elementi eliminati in modo rigido. Fare clic sul record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi fare clic su **altre informazioni**. Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, vengono visualizzate nel campo **AffectedItems** . Nelle schermate seguenti viene mostrato un esempio del campo **AffectedItems** da un elemento eliminato temporaneamente e da un elemento eliminato definitivamente.
 
-**Esempio del campo AffectedItems per elemento eliminate**
+**Esempio di campo AffectedItems per l'elemento eliminato temporaneamente**
 
-![Record di controllo per l'elemento eliminate](media/softdeleteditem.png)
+![Record di controllo per elementi eliminati temporaneamente](media/softdeleteditem.png)
 
-**Esempio del campo AffectedItems per elemento rigido eliminati**
+**Esempio di campo AffectedItems per gli elementi eliminati in modo rigido**
 
-![Record di controllo per l'elemento di posta elettronica eliminata definitivamente](media/harddeleteditem.png)
+![Record di controllo per l'elemento di posta elettronica eliminato definitivamente](media/harddeleteditem.png)
 
 ### <a name="recovering-deleted-email-items"></a>Ripristino degli elementi di posta elettronica eliminati
 
-Gli utenti possono recuperare elementi eliminati reversibile se non è scaduto il periodo di conservazione degli elementi eliminati. In Exchange Online, il periodo di conservazione degli elementi eliminato predefinito è 14 giorni, ma gli amministratori possono aumentare questa impostazione per un massimo di 30 giorni. Agli utenti di punto di [ripristino degli elementi eliminati o un messaggio di posta elettronica in Outlook Web App](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) articolo per istruzioni dettagliate sul ripristino degli elementi eliminati.
+Gli utenti possono recuperare gli elementi eliminati temporaneamente se il periodo di conservazione degli elementi eliminati non è scaduto. In Exchange Online, il periodo di conservazione degli elementi eliminati predefinito è di 14 giorni, ma gli amministratori possono aumentare questa impostazione fino a un massimo di 30 giorni. Indirizzare gli utenti a [recuperare elementi o messaggi di posta elettronica eliminati in Outlook sul Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) per istruzioni sul ripristino degli elementi eliminati.
 
-Come indicato in precedenza, gli amministratori potrebbero essere in grado di recuperare elementi eliminati rigido se non è scaduto il periodo di mantenimento elementi eliminati o se la cassetta postale è in attesa, nel qual caso gli elementi vengono mantenuti finché non scade la durata dell'attesa. Quando si esegue una ricerca di contenuto, eliminate ed eliminata definitivamente gli elementi nella cartella elementi ripristinabili vengono restituiti nei risultati della ricerca se corrispondono alla query di ricerca. Per ulteriori informazioni su come eseguire ricerche di contenuto, vedere [Il contenuto di ricerca in Office 365](content-search.md).
+Come spiegato in precedenza, gli amministratori potrebbero essere in grado di recuperare gli elementi eliminati definitivamente se il periodo di conservazione degli elementi eliminati non è scaduto o se la cassetta postale è in attesa, in questo caso gli elementi vengono conservati fino alla scadenza della durata del blocco. Quando si esegue una ricerca di contenuto, gli elementi eliminati temporaneamente e eliminati nella cartella elementi ripristinabili vengono restituiti nei risultati della ricerca se corrispondono alla query di ricerca. Per ulteriori informazioni sull'esecuzione di ricerche di contenuto, vedere [Content search in Office 365](content-search.md).
 
 > [!TIP]
-> Per cercare gli elementi di posta elettronica eliminati, cercare tutto o parte della riga dell'oggetto che viene visualizzata nel campo **AffectedItems** del record di controllo.
+> Per cercare gli elementi di posta elettronica eliminati, cercare tutto o parte della riga dell'oggetto visualizzata nel campo **AffectedItems** del record di controllo.
 
-## <a name="determining-if-a-user-created-an-inbox-rule"></a>Determinare se un utente creato una regola di posta in arrivo
+## <a name="determining-if-a-user-created-an-inbox-rule"></a>Determinare se un utente ha creato una regola di posta in arrivo
 
-Quando gli utenti di creare una regola di posta in arrivo per la cassetta postale di Exchange Online, un record di controllo corrispondente viene salvato nel Registro di controllo. Per ulteriori informazioni sulle regole della posta in arrivo, vedere:
+Quando gli utenti creano una regola di posta in arrivo per la cassetta postale di Exchange Online, il record di controllo corrispondente viene salvato nel log di controllo. Per ulteriori informazioni sulle regole di posta in arrivo, vedere:
 
-- [Utilizzare le regole posta in arrivo di Outlook sul web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
-- [Gestire i messaggi di posta elettronica in Outlook utilizzando regole](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
+- [Utilizzare le regole di posta in arrivo in Outlook sul Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [Gestione dei messaggi di posta elettronica in Outlook tramite le regole](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
-Di seguito viene descritto come configurare una query di ricerca di registro di controllo per questo scenario:
+Ecco come configurare una query di ricerca del registro di controllo per questo scenario:
 
-**Attività** - sotto **le attività di cassette postali di Exchange**, selezionare **Create a New-InboxRule/modificare/abilitare/disabilitare la regola posta in arrivo**.
+**Attività** -in **attività Cassetta postale di Exchange**, selezionare **New-InboxRule creare/modificare/abilitare/disabilitare la regola di posta in arrivo**.
 
-**Data di inizio** e **Data fine** - selezionare un intervallo di date valide per le indagini.
+Data di **inizio** e **Data di fine** : selezionare un intervallo di date applicabile all'indagine.
 
-**Gli utenti** , a meno che non si sta analisi di un utente specifico, lasciare vuoto questo campo. Ciò consentirà di identificare le nuove regole posta in arrivo impostare da qualsiasi utente.
+**Utenti** , a meno che non si stia esaminando un utente specifico, lasciare vuoto questo campo. Ciò consentirà di identificare le nuove regole di posta in arrivo configurate da qualsiasi utente.
 
-**File, cartelle o del sito** - lasciare vuoto questo campo.
+**File, cartella o sito** : lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Fare clic su un record di controllo per visualizzare la pagina di comparsa **Dettagli** e quindi fare clic su **ulteriori informazioni**. Informazioni sulle impostazioni della regola posta in arrivo vengono visualizzati nel campo di **parametri** . Cattura di schermata e descrizioni seguenti vengono evidenziate le informazioni sulle regole della posta in arrivo.
+Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Fare clic su un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi fare clic su **altre informazioni**. Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
 
 ![Record di controllo per la nuova regola di posta in arrivo](media/NewInboxRuleRecord.png)
 
-r. nel campo **ObjectId** , viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio SaraD) e il nome della regola di posta in arrivo (ad esempio, "spostare i messaggi da admin").
+a. nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
 
-b. nel campo **parametri** , viene visualizzata la condizione della regola di posta in arrivo. In questo esempio la condizione viene specificata dal parametro *da* . Il valore definito per il parametro *da* indica che la regola di posta in arrivo agisce sulla posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. nel campo **Parameters** , viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. il parametro *MoveToFolder* specifica l'azione per la regola di posta in arrivo. In questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Inoltre, vedere l'articolo di [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) per un elenco completo di parametri che è possibile utilizzare per definire l'azione di una regola di posta in arrivo.
+c. il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. in questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-d. il campo **ID utente** di indicare l'utente che ha creato la regola di posta in arrivo specificata nel campo **ObjectId** . L'utente viene visualizzato anche nella colonna **utente** nella pagina dei risultati della ricerca.
+d. il campo **userid** indica l'utente che ha creato la regola di posta in arrivo specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca.
