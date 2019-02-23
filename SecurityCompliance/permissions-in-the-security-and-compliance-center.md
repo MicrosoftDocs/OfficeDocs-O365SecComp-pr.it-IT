@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Il Centro sicurezza &amp; e conformità di Office 365 consente di concedere autorizzazioni a utenti che eseguono attività di conformità come la gestione dei dispositivi, la prevenzione della perdita di dati, eDiscovery, la conservazione e così via. Tali utenti possono eseguire solo le attività in cui si concede esplicitamente l'accesso. Per accedere al centro &amp; sicurezza e conformità, gli utenti devono essere un amministratore globale di Office 365 o un membro di uno o &amp; più gruppi di ruoli del Centro sicurezza e conformità.
-ms.openlocfilehash: cee6bc64b971ef99343d35df74415e80c087321e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214916"
+ms.locfileid: "30223505"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Autorizzazioni nel centro sicurezza &amp; e conformità di Office 365
 

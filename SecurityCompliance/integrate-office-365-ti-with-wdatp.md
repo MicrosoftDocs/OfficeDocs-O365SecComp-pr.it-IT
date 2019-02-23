@@ -6,52 +6,53 @@ manager: laurawi
 ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
-ms.collection: M365-security-compliance
-description: Integrare protezione rischio avanzate di Office 365 con Windows Defender avanzate rischio di protezione per visualizzare ulteriori informazioni sulla gestione di rischio.
-ms.openlocfilehash: f8f5f50af10fb668aa67b68604e95e8dd19c9e69
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+ms.collection:
+- M365-security-compliance
+description: Integrazione di Office 365 Advanced Threat Protection con Windows Defender Advanced Threat Protection per visualizzare informazioni più dettagliate sulla gestione delle minacce.
+ms.openlocfilehash: 892d04152d6029c48a52d37c6235d45a8ba67b81
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995207"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222815"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrare Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection
 
-Se si fa parte del team di protezione dell'organizzazione, è possibile integrare funzionalità di protezione di Office 365 avanzate rischio e Intelligence rischio con la protezione di Windows Defender avanzate rischio. Ciò consente di comprendere rapidamente se computer degli utenti sono a rischio durante l'analisi delle minacce in Office 365. Ad esempio, una volta integrazione è attivata, sarà in grado di visualizzare un elenco dei computer utilizzati dai destinatari di un messaggio di posta elettronica rilevato, nonché il modo in cui numero di avvisi recenti tali apparecchi dispongano di protezione di Windows Defender avanzate rischio.
+Se si è parte del team di sicurezza dell'organizzazione, è possibile integrare le funzionalità di Office 365 Advanced Threat Protection e Threat Intelligence con Windows Defender Advanced Threat Protection. In questo modo è possibile capire rapidamente se i computer degli utenti sono a rischio quando si esaminano le minacce in Office 365. Ad esempio, una volta abilitata l'integrazione, sarà possibile visualizzare un elenco di computer utilizzati dai destinatari di un messaggio di posta elettronica rilevato, nonché il numero di avvisi recenti che tali computer hanno in Windows Defender Advanced Threat Protection.
   
-Nell'immagine seguente è illustrata la scheda **dispositivi** che verrà visualizzato quando prevista l'integrazione con la protezione di Windows Defender avanzate rischio abilitato: 
+Nell'immagine seguente viene mostrata la scheda **dispositivi** che verrà visualizzata quando è abilitata l'integrazione di Windows Defender Advanced Threat Protection: 
   
-![Quando è abilitata degli strumenti di analisi di Windows Defender, è possibile visualizzare un elenco di computer con gli avvisi.](media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Quando Windows Defender ATP è abilitato, è possibile visualizzare un elenco di computer con avvisi.](media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
-In questo esempio, è possibile visualizzare che i destinatari del messaggio di posta elettronica dispongano di quattro dispositivi e uno con un avviso. Facendo clic sul collegamento di un dispositivo verrà visualizzata la relativa pagina del portale di protezione di Windows Defender avanzate rischio.
+In questo esempio, è possibile vedere che i destinatari del messaggio di posta elettronica dispongono di quattro dispositivi e uno ha un avviso. Se si fa clic sul collegamento di un dispositivo, viene aperta la relativa pagina nel portale Windows Defender Advanced Threat Protection.
   
 ## <a name="requirements"></a>Requisiti
 
-- L'organizzazione deve disporre degli strumenti di analisi di Windows Defender e Business Intelligence di Office 365 rischio.
+- L'organizzazione deve disporre di Office 365 Threat Intelligence e Windows Defender ATP.
     
-- È necessario essere un amministratore globale di Office 365 o disporre di un ruolo di amministratore di sicurezza (ad esempio sicurezza amministratore) assegnato nella versione di [protezione &amp; centro conformità](https://protection.office.com). (Vedere [le autorizzazioni di sicurezza di Office 365 &amp; centro conformità](permissions-in-the-security-and-compliance-center.md))
+- È necessario essere un amministratore globale di Office 365 o un ruolo di amministratore della sicurezza, ad esempio amministratore della sicurezza, assegnato nel [centro conformità sicurezza &amp; ](https://protection.office.com). (Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
-- È necessario avere accesso a Business Intelligence di Office 365 rischio e il portale di protezione di Windows Defender avanzate rischio.
+- È necessario avere accesso sia a Office 365 Threat Intelligence sia al portale Windows Defender Advanced Threat Protection.
     
-## <a name="to-integrate-office-365-threat-intelligence-with-windows-defender-atp"></a>Per l'integrazione di Business Intelligence di rischio di Office 365 con degli strumenti di analisi di Windows Defender
+## <a name="to-integrate-office-365-threat-intelligence-with-windows-defender-atp"></a>Per integrare Office 365 Threat Intelligence con Windows Defender ATP
 
-Integrazione di Business Intelligence di rischio di Office 365 con la protezione di Windows Defender avanzate rischio è configurato con entrambi i & di sicurezza di Office 365 centro conformità e il portale di protezione di Windows Defender avanzate rischio.
+Integrazione di Office 365 Threat Intelligence con Windows Defender Advanced Threat Protection è configurato utilizzando il centro conformità di Office 365 Security & e il portale Windows Defender Advanced Threat Protection.
   
-1. Un amministratore della sicurezza o un amministratore globale di Office 365, passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di lavoro o della scuola per Office 365. 
+1. In qualità di amministratore globale di Office 365 o amministratore della sicurezza, [https://protection.office.com](https://protection.office.com) accedere a e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. 
     
-2. Scegliere **gestione rischio** \> **Explorer**.<br>![Explorer menu Threat Management](media/ThreatMgmt-Explorer-nav.png)<br>
+2. Scegliere \> **Esplora** **gestione minacce** .<br>![Explorer nel menu Gestione minacce](media/ThreatMgmt-Explorer-nav.png)<br>
     
-3. Nell'angolo superiore destro dello schermo, scegliere **Impostazioni WDATP**.
+3. Nell'angolo in alto a destra dello schermo, scegliere **impostazioni di WDATP**.
     
-4. Nella casella degli strumenti di analisi di Windows Defender connessione della finestra attiva connessione a Windows degli strumenti di analisi.<br>![Connessione degli strumenti di analisi di Windows Defender](media/Explorer-WDATPConnection-dialog.png)<br>
+4. Nella finestra di dialogo connessione ATP di Windows Defender, abilitare la connessione a Windows ATP.<br>![Connessione ATP Windows Defender](media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. Abilitare la connessione di protezione di Windows Defender avanzate rischio. Vedere [utilizzo del portale di protezione di Windows Defender avanzate rischio](https://go.microsoft.com/fwlink/?linkid=859690).
+5. Abilitare la connessione in Windows Defender Advanced Threat Protection. Per ulteriori informazioni, vedere [use the Windows Defender Advanced Threat Protection Portal](https://go.microsoft.com/fwlink/?linkid=859690).
 
   
 ## <a name="related-topics"></a>Argomenti correlati

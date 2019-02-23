@@ -3,22 +3,21 @@ title: Automatizzare la conservazione basata su eventi
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 799f831e937d3f676bb05eb188b813b1ca23622c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740868"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223755"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 
@@ -485,4 +484,4 @@ Un sistema ERP (Enterprise Resource Planning) può utilizzare Microsoft 365 e Mi
 
 Questo argomento è stato rivisto da:
 
-Antonio Maio</br>MVP App e servizi di Microsoft Office</br> Antonio.Maio@Protiviti.com
+Antonio Maio<br/>MVP App e servizi di Microsoft Office<br/> Antonio.Maio@Protiviti.com

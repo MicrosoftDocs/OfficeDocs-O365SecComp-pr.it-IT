@@ -11,17 +11,15 @@ ms.collection:
 - Strat_O365_IP
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 18b57aa6151568920dcb72891f773db110d2bba6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219586"
+ms.locfileid: "30223355"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 

@@ -1,9 +1,26 @@
 ---
-title: "protezione anti-phishing in Office 365" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 10/11/2018 ms. audience: ITPro ms. Topic: article ms. Service: O365-seccomp localization_priority: Normal search. appverid:
-- MET150 ms. AssetID: 75af74b2-c7ea-4556-A912-8c48e07271d3 ms. Collection:
-    - M365-Security-Compliance Description: "Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.
+title: Protezione anti-phishing in Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.collection:
+- M365-security-compliance
+description: Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte, come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.
+ms.openlocfilehash: b930e4d41e96225e9b2685ebda02c74c5f8bb7d1
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222805"
 ---
-
 # <a name="anti-phishing-protection-in-office-365"></a>Protezione anti-phishing in Office 365
 
 Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte, come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.

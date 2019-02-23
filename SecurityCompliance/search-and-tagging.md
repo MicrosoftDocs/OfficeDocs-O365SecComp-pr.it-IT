@@ -1,89 +1,88 @@
 ---
-title: Ricerca e aggiunta di tag
+title: Ricerca e tagging
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
-description: In eDiscovery avanzate, la funzionalità di ricerca e utilizzo dei tag consente di ricercare, visualizzare in anteprima e organizzare i documenti nel case. In questo modulo è attualmente disponibile la versione beta.
-ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+description: In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta.
+ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666146"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222965"
 ---
-# <a name="search-and-tagging"></a>Ricerca e aggiunta di tag
+# <a name="search-and-tagging"></a>Ricerca e tagging
 
-In eDiscovery avanzate, la funzionalità di ricerca e utilizzo dei tag consente di ricercare, visualizzare in anteprima e organizzare i documenti nel case. In questo modulo è attualmente disponibile la versione beta. Per una dimostrazione breve di ricerca e l'assegnazione dei tag, vedere il video di [gestione dei dati con eDiscovery avanzate](https://www.youtube.com/watch?v=VaPYL3DHP6I) .
+In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta. Per una breve dimostrazione di ricerca e tagging, vedere la pagina [Gestisci i dati con Advanced eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) video.
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="search-the-documents-in-your-case"></a>Cercare i documenti nel case
+## <a name="search-the-documents-in-your-case"></a>Eseguire una ricerca nei documenti nel caso
 
-Dopo avere elaborate documenti in un caso eDiscovery avanzate (e se lo si desidera eseguire la funzionalità di analisi o pertinenza), è possibile utilizzare la ricerca e utilizzo dei tag per cercare i documenti e quindi organizzare i contatti tramite l'applicazione di tag specifico (denominato anche le etichette). È possibile definire una query di ricerca tramite schede fornito condizione o condizione scheda utilizzando un linguaggio di query KQL simili le parole chiave. Sintassi KQL comune, ad esempio AND, OR, NOT, e NEAR(n) sono supportati, nonché finale più caratteri jolly (*). 
+Dopo aver elaborato i documenti in un caso avanzato di eDiscovery (e, facoltativamente, eseguire il modulo Analyze o pertinenza), è possibile utilizzare la ricerca e il tagging per i documenti di ricerca e quindi organizzarli applicando tag case-specific (denominati anche etichette). È possibile definire una query di ricerca utilizzando le schede delle condizioni fornite o utilizzando un linguaggio di query di tipo KQL nella scheda condizione parole chiave. Sono supportate la sintassi KQL comune, ad esempio e, o, non e vicino (n), nonché il carattere jolly a più caratteri finale (*). 
 
-Nella tabella seguente sono elencate le proprietà che è possibile cercare per l'utilizzo di una query con parole chiave KQL. In alternativa, è possibile utilizzare una scheda condizione per di eDiscovery avanzate dello strumento di ricerca per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca.
+Nella tabella seguente sono elencate le proprietà che è possibile cercare utilizzando una query di parole chiave di KQL. In alternativa, è possibile utilizzare una scheda di condizione per lo strumento di ricerca di eDiscovery avanzato per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca.
 
 |**Proprietà**|**Descrizione**|
 |:-----|:-----|
-|**caselabel** <br/> | Il nome del tag creato/applicato quando viene contrassegnato come un documento. <br/> |
-|**depositaria** <br/> | Depositaria associata a un documento. soggetta a limitazioni. <br/> |
-|**Data** <br/> | Inviati data per la posta elettronica; Data di modifica di documenti del sito. <br/> |
-|**fileid** <br/> | ID di File all'interno del case. <br/> |
-|**tipo di file** <br/> | Estensione di file nativo. <br/> |
-|**fileclass** <br/> | Posta elettronica, documenti o degli allegati. <br/> |
-|**senderauthor** <br/> | Il mittente per la posta elettronica; creazione di documenti del sito. <br/> |
-|**dimensioni** <br/> | La dimensione del file in KB. <br/> |
-|**si** <br/> | L'oggetto per la posta elettronica; il titolo di documenti del sito. <br/> |
+|**caselabel** <br/> | Nome del tag creato/applicato quando un documento è contrassegnato. <br/> |
+|**custode** <br/> | Il custode associato a un documento. soggette a limitazioni. <br/> |
+|**Data** <br/> | Data di invio per la posta elettronica; la data di modifica per i documenti del sito. <br/> |
+|**fileid** <br/> | ID file all'interno del caso. <br/> |
+|**filetype** <br/> | L'estensione di file nativa. <br/> |
+|**fileclass** <br/> | Posta elettronica, documento o allegato. <br/> |
+|**senderauthor** <br/> | Il mittente per la posta elettronica; autore per i documenti del sito. <br/> |
+|**dimensione** <br/> | Le dimensioni del file in KB. <br/> |
+|**subjecttitle** <br/> | L'oggetto per la posta elettronica; il titolo per i documenti del sito. <br/> |
 |**bcc** <br/> | Il campo Ccn di un messaggio di posta elettronica. <br/> |
-|**cc** <br/> | Il campo Cc di un messaggio di posta elettronica. <br/> |
-|**partecipanti** <br/> | L'indirizzo di posta elettronica di tutti i partecipanti a un thread di posta elettronica, inclusi i collegamenti mancante. <br/> |
-|**ricevuta** <br/> | Data che è stato ricevuto un messaggio di posta elettronica. <br/> |
-|**destinatari** <br/> | Destinatari di un messaggio di posta elettronica, inclusi su a, Cc o Ccn campi. <br/> |
+|**cc** <br/> | Campo CC di un messaggio di posta elettronica. <br/> |
+|**partecipanti** <br/> | L'indirizzo di posta elettronica di tutti i partecipanti a un thread di posta elettronica, inclusi i collegamenti mancanti. <br/> |
+|**ricevuto** <br/> | La data di ricezione di un messaggio di posta elettronica. <br/> |
+|**destinatari** <br/> | Destinatari di un messaggio di posta elettronica, incluso nei campi a, CC o Ccn. <br/> |
 |**mittente** <br/> | Il mittente di un messaggio di posta elettronica. <br/> |
-|**LastModifiedDate** <br/> | L'ultima data di un documento di un sito. <br/> |
-|**inviati** <br/> | Data di invio di un messaggio di posta elettronica. <br/> |
+|**LastModifiedDate** <br/> | Data dell'Ultima modifica di un documento del sito. <br/> |
+|**inviati** <br/> | La data di invio di un messaggio di posta elettronica. <br/> |
 |**A** <br/> | Il destinatario elencato nel campo a di un messaggio di posta elettronica. <br/> |
-|**autore** <br/> | L'autore di un documento di un sito. <br/> |
-|**titolo** <br/> | Il titolo di un documento di un sito. <br/> |
+|**autore** <br/> | Autore di un documento del sito. <br/> |
+|**titolo** <br/> | Il titolo di un documento del sito. <br/> |
 |**dominanttheme**\* <br/> | Il tema dominante di un elemento. <br/> |
-|**themeslist**\* <br/> | Temi associati a un elemento. <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | Percentile lettura di un elemento per il rilascio definito da [issuenum]. <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | Il punteggio di pertinenza di un elemento per il rilascio definito da [issuenum]. <br/> |
-|**relevancetag_ [tagname]**\*\* <br/> | Se un elemento è stato contrassegnato manualmente la pertinenza, il tag definito dalla [tagname]. <br/> |
+|**tema**\* <br/> | Temi associati a un elemento. <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | Il percentile di lettura di un elemento, per il problema definito da [issuenum]. <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | Il Punteggio di pertinenza di un elemento, per il problema definito da [issuenum]. <br/> |
+|**relevancetag_ [TagName]**\*\* <br/> | Se un elemento è stato contrassegnato manualmente per la pertinenza, il tag definito da [TagName]. <br/> |
 |||
 
-\*È disponibile solo se è stato eseguito il modulo di temi.
+\*Disponibile solo se è stato eseguito il modulo temi.
 
-\*\*È disponibile solo se è stato eseguito il modulo di pertinenza.
+\*\*Disponibile solo se è stato eseguito il modulo pertinenza.
 
-In alternativa, è possibile utilizzare una scheda condizione di eDiscovery avanzate dello strumento di ricerca per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca. La schermata seguente mostra le condizioni che possono essere aggiunti a una query. Nella colonna **gruppo** indica se la proprietà si applica al messaggio di posta elettronica, documenti del sito o a entrambi (indicata dal valore *comune*). Questa colonna vengono indicati le proprietà supportano la ricerca sono disponibili dopo l'esecuzione del modulo di pertinenza.
+In alternativa, è possibile utilizzare una scheda di condizione nello strumento di ricerca di eDiscovery avanzato per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca. Nella schermata seguente vengono riportate le condizioni che è possibile aggiungere a una query. La colonna **gruppo** indica se la proprietà si applica ai messaggi di posta elettronica, ai documenti del sito o a entrambi (indicati dal valore *comune*). In questa colonna vengono inoltre identificate le proprietà disponibili per la ricerca che possono essere eseguite dopo l'esecuzione del modulo pertinenza.
 
-![I criteri di ricerca nello strumento di ricerca avanzata eDiscovery](media/AeDSearchConditions.png)
+![Condizioni di ricerca nello strumento di ricerca avanzato di eDiscovery](media/AeDSearchConditions.png)
 
-Per ulteriori informazioni sulle proprietà di ricerca, vedere [query con parole chiave e le condizioni di ricerca](keyword-queries-and-search-conditions.md).
+Per ulteriori informazioni sulle proprietà disponibili per la ricerca, vedere [keyword query and Search Conditions](keyword-queries-and-search-conditions.md).
   
 ## <a name="see-also"></a>Vedere anche
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione di pertinenza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging e formazione di pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analisi di pertinenza di verifica](track-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Stabilire in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decidere in base ai risultati](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test di analisi di pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
+[Verifica dell'analisi della pertinenza](test-relevance-analysis-in-advanced-ediscovery.md)
 

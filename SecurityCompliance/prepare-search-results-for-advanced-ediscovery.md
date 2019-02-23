@@ -3,7 +3,6 @@ title: Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,12 +13,12 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365 per un'ulteriore analisi con lo strumento eDiscovery avanzato.
-ms.openlocfilehash: 52573169692c2457e51898f9f36d2c586c7e7a4b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 04de96064f400f8055d0e477bf41ed1c7cb1b35f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212676"
+ms.locfileid: "30223845"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 

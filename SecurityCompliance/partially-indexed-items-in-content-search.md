@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informazioni sugli elementi non indicizzati in Exchange e SharePoint che è possibile includere in una ricerca di contenuto eseguita tramite il Centro sicurezza &amp; e conformità di Office 365. '
-ms.openlocfilehash: 028a0468e352121c64e12fbec209658dc32f9bbe
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f307f3ecff1bb63c30ff6ce1f792901475fe2c4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219496"
+ms.locfileid: "30223435"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Partially indexed items in Content Search in Office 365 (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 

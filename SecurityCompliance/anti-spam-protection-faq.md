@@ -1,9 +1,27 @@
 ---
-title: "domande frequenti sulla protezione da posta indesiderata" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. audience: ITPro ms. Topic: article ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: Normal search. appverid:
-- MET150 ms. AssetID: c534a35d-B121-45da-9d0a-ce738ce51fce ms. Collection:
-    - M365-Security-Compliance Description: "in questo argomento vengono fornite domande e risposte frequenti sulla protezione da posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP). "
+title: DOMANDE frequenti sulla protezione da posta indesiderata
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223055"
 ---
-
 # <a name="anti-spam-protection-faq"></a>DOMANDE frequenti sulla protezione da posta indesiderata
 
 In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP). 

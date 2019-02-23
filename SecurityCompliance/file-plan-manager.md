@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: 4feacf20444591f6da2d55a928a81e86b56c5d9a
-ms.sourcegitcommit: 9f34ace6bbe3d5e07e24ebaae96613750869cddf
+ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25019277"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221186"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 

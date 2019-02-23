@@ -15,62 +15,62 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: "Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, l'invio di messaggi da tale utente verrà bloccato. "
-ms.openlocfilehash: 6f6f4504a9c79463aadc21f2eaeadcd769e8b151
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614400"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223085"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Rimuovere un utente, un dominio oppure un indirizzo IP da un elenco Blocca, dopo aver inviato e-mail di posta indesiderata
 
-Se un utente in modo continuo invia messaggi di posta elettronica da Office 365 classificata come posta indesiderata, essi verranno bloccate di inviare messaggi più. L'utente verrà elencato nel servizio come mittente in uscita non valido e verrà visualizzato un mancato recapito rapporto di mancato recapito indicante:
+Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, verranno bloccati dall'invio di altri messaggi. L'utente verrà elencato nel servizio come mittente in uscita non valido e riceverà un rapporto di mancato reCapito (NDR) che dichiara:
 
-- Non è stato recapitato il messaggio perché non sono state riconosciute come mittente valido. La causa più comune per l'oggetto è che l'indirizzo di posta elettronica sospetta l'invio di posta indesiderata e non ha non è più consentito inviare messaggi di fuori dell'organizzazione. Per assistenza, contattare l'amministratore di posta elettronica.  Server remoto ha restituito "550 5.1.8 accesso negato, mittente in uscita non valido"
+- Non è stato possibile recapitare il messaggio perché non sono stati riconosciuti come mittenti validi. Il motivo più comune è che l'indirizzo di posta elettronica è sospettato di inviare posta indesiderata e non è più consentito l'invio di messaggi all'esterno dell'organizzazione. Contattare l'amministratore della posta elettronica per ricevere assistenza.  Il server remoto ha restituito ' 550 5.1.8 Access Denied, Bad Outbound sender '
 
-Gli amministratori tenant anche riceverà un avviso che indica che l'utente è state applicate restrizioni di inviare i messaggi in uscita più.
+Gli amministratori del tenant riceveranno anche un avviso che indica che l'utente è stato impedito di inviare altri messaggi in uscita.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 <a name="sectionSection0"> </a>
 
 Tempo stimato per il completamento: 5 minuti
   
-È necessario disporre delle autorizzazioni prima che è possibile eseguire queste procedure. Per visualizzare le autorizzazioni necessarie, vedere "protezione da posta indesiderata nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "voce di protezione da posta indesiderata nell'argomento [autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-La procedura seguente può anche essere eseguita tramite remote PowerShell. Utilizzare il cmdlet Get-BlockedSenderAddress per ottenere l'elenco di utenti con restrizioni e Remove-BlockedSenderAddress per rimuovere la restrizione. Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+La procedura seguente può essere eseguita anche tramite Remote PowerShell. Utilizzare il cmdlet Get-BlockedSenderAddress per ottenere l'elenco di utenti con restrizioni e Remove-BlockedSenderAddress per rimuovere la restrizione. Per informazioni su come utilizzare Windows PowerShell per la connessione a Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
-## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Rimuovere le restrizioni per un account di posta elettronica di Office 365 bloccato
+## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Rimuovere le restrizioni relative a un account di posta elettronica di Office 365 bloccato
 
-Completare questa attività in & la protezione di Office 365 centro conformità (SCC). Per ulteriori informazioni su controllo del codice sorgente, [passare a & la protezione di Office 365 centro conformità](go-to-the-securitycompliance-center.md) . È necessario includere nella **Gestione organizzazione** o il gruppo di ruoli di **Amministratore della sicurezza** per eseguire queste operazioni. Per ulteriori informazioni sui gruppi di ruolo di controllo del codice sorgente, [andare a autorizzazioni in & la protezione di Office 365 centro conformità](permissions-in-the-security-and-compliance-center.md) .
+Questa attività viene completata nel centro sicurezza & Compliance (SCC) di Office 365. Per ulteriori informazioni su SCC, [passare al centro conformità di Office 365 Security &](go-to-the-securitycompliance-center.md) . Per poter eseguire queste funzioni, è necessario essere nel gruppo di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli SCC, [accedere a autorizzazioni nel centro conformità di Office 365 Security &](permissions-in-the-security-and-compliance-center.md) .
 
-1. Utilizzo di un ufficio o della scuola dell'account che disponga di privilegi di amministratore globale di Office 365, accedere a Centro connessioni di Office 365 sicurezza e conformità e nell'elenco a sinistra espandere **Threat Management**, scegliere **Rivedi**e quindi fare clic su **con restrizioni Gli utenti**.
+1. Utilizzando un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale di Office 365, accedere al centro sicurezza e conformità di Office 365 e, nell'elenco a sinistra, espandere **gestione minacce**, scegliere **Revisione**e quindi fare clic su **limitato. Gli utenti**.
     
     > [!TIP]
-    > Per passare direttamente alla pagina **Utenti con restrizioni** (precedentemente nota come centro) la sicurezza &amp; centro conformità, utilizzare questo URL: gt _[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Per passare direttamente alla pagina **utenti con restrizioni** (in precedenza nota come centro operazioni) nel centro sicurezza &amp; e conformità, utilizzare questo URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
-2. In questa pagina sarà incluse nell'elenco di utenti che sono stati bloccati di inviare posta elettronica esterni all'organizzazione.  Trovare l'utente che si desidera rimuovere restrizioni e quindi fare clic su **Sblocca**.
+2. Questa pagina contiene l'elenco di utenti bloccati dall'invio di posta all'esterno dell'organizzazione.  Individuare l'utente per il quale si desidera rimuovere le restrizioni e quindi fare clic su **Sblocca**.
 
 3. Fare clic su **Sì** per confermare la modifica. 
     
 > [!NOTE]
-> Non vi è un limite al numero di volte in cui è possibile sbloccare un account per l'amministrazione tenant. Se è stato superato il limite per un utente, viene visualizzato un messaggio di errore. È quindi necessario contattare il supporto per sbloccare l'utente.</br></br> Potrebbe richiedere fino a 1 ora prima che l'utente è sbloccato.
+> Esiste un limite al numero di volte in cui un account può essere sbloccato dall'amministratore del tenant. Se il limite per un utente è stato superato, verrà visualizzato un messaggio di errore. Sarà quindi necessario contattare il supporto per sbloccare l'utente.<br/><br/> Potrebbe essere necessario fino a un'ora prima che l'utente venga sbloccato.
   
 ## <a name="third-party-block-lists"></a>Elenchi di blocco di terze parti
 
-Exchange Online Protection utilizza anche gli elenchi di blocco di terze parti per prendere decisioni nel filtro posta indesiderata. Gli utenti, siti, domini e gli indirizzi IP possono aggiunti da bloccare elenchi solo per la visualizzazione in un messaggio di posta indesiderata. Come amministratore di Office 365, è consigliabile ottenere questi oggetti rimossi i provider dell'elenco di terze parti se appartengono a un utente.
+Exchange Online Protection utilizza anche elenchi di blocco di terze parti per contribuire a prendere decisioni nel filtraggio della posta indesiderata. Gli utenti, i siti Web, i domini e gli indirizzi IP possono essere aggiunti agli elenchi di blocco solo per la visualizzazione in un messaggio di posta indesiderata. Come amministratore di Office 365, è consigliabile provare a rimuovere questi oggetti dai provider di elenchi di terze parti se appartengono all'utente.
 
 > [!NOTE]
-> Se qualcuno all'esterno di Office 365 non può inviare messaggi al proprio account di Office 365, potrebbe essere il proprio account nell'elenco Mittenti bloccati esterni. Gli utenti all'esterno di Office 365 è possono provare a rimuovere se stessi mediante il [portale self-service di rimozione](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
+> Se un utente esterno a Office 365 non è in grado di inviare messaggi all'account di Office 365, è possibile che l'account sia presente nell'elenco Mittenti bloccati esterni. Gli utenti esterni a Office 365 possono provare a rimuoversi usando il portale di delisting [self-service](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Rispondere a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md)
+[Risposta a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md)
 
 [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Autorizzazioni nel centro conformità & protezione Office 365](permissions-in-the-security-and-compliance-center.md)
+[Autorizzazioni nel centro conformità & sicurezza di Office 365](permissions-in-the-security-and-compliance-center.md)
 
   
 
