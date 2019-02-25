@@ -146,7 +146,7 @@
 #### [Configurazione di IRM per l'utilizzo di un server AD RMS locale](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [S/MIME per la crittografia e firma dei messaggi](s-mime-for-message-signing-and-encryption.md)
-#### [Configurare le impostazioni S/MIME per Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+#### [Configurare le impostazioni S/MIME per Outlook sul web](configure-s-mime-settings-for-outlook-web-app.md)
 #### [Invio e ricezione di messaggi crittografati e firmati tramite S/MIME](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [Sincronizzare i certificati dell'utente con Office 365 per S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [Configurare la raccolta di certificati virtuali per convalidare S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
@@ -282,7 +282,7 @@
 
 ### [Gestire i blocchi](compliance20/managing-holds.md)
 
-### [Correggere gli errori di elaborazione](compliance20/processing-data-for-case.md)
+### [Gestire gli errori di elaborazione](compliance20/processing-data-for-case.md)
 #### [Indicizzazione avanzata dei dati dei responsabili](compliance20/indexing-custodian-data.md)
 #### [Correzione degli errori durante l'elaborazione dei dati](compliance20/error-remediation.md)
 
