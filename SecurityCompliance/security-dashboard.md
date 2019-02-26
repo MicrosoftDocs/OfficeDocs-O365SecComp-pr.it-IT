@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 7fcf570887e5ed720e2e62d627b442597b824e84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215175"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241888"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 

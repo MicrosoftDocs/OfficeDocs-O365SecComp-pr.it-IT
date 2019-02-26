@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Informazioni su come configurare una pianificazione per un report nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216756"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241868"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Creare una pianificazione per un report nel centro sicurezza &amp; e conformità
 
@@ -45,7 +45,7 @@ Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](rep
   
     Se si sceglie di personalizzare la pianificazione del report, è possibile specificare la frequenza del report, l'indirizzo di posta elettronica del mittente e l'indirizzo di posta elettronica del destinatario. 
     
-Dopo aver creato una pianificazione per un report, tale rapporto verrà recapitato tramite posta elettronica agli indirizzi di emali dei destinatari automaticamente. 
+Dopo aver creato una pianificazione per un report, tale rapporto verrà recapitato tramite posta elettronica agli indirizzi di posta elettronica dei destinatari automaticamente. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
