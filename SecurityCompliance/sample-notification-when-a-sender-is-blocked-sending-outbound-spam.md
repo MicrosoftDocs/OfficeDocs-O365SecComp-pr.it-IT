@@ -1,7 +1,7 @@
 ---
 title: Notifica di esempio quando a un mittente viene impedito di inviare posta indesiderata in uscita.
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
@@ -12,17 +12,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
-description: "Quando un mittente è bloccato dal servizio per l'invio di posta indesiderata in uscita, l'amministratore di dominio specificato quando si configura il criterio della posta indesiderata in uscita riceverà un messaggio di notifica simile al seguente:"
-ms.openlocfilehash: b9fcdf9c2f44a4446a678ca4b22a0a12b24b6fd4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: "Quando un mittente viene bloccato dal servizio a causa dell'invio di posta indesiderata in uscita, l'amministratore del dominio specificato quando si configura il criterio di posta indesiderata in uscita riceverà un messaggio di posta elettronica di notifica simile al seguente:"
+ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003245"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275476"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Notifica di esempio quando a un mittente viene impedito di inviare posta indesiderata in uscita.
 
-Quando un mittente è impedito il servizio per l'invio in uscita posta indesiderata, l'amministratore di dominio specificato quando si [Configura il criterio della posta indesiderata in uscita](configure-the-outbound-spam-policy.md) verrà visualizzato un messaggio di notifica simile al seguente: 
+Quando un mittente viene bloccato dal servizio a causa dell'invio di posta indesiderata in uscita, l'amministratore del dominio specificato quando si [Configura il criterio di posta](configure-the-outbound-spam-policy.md) indesiderata in uscita riceverà un messaggio di posta elettronica di notifica simile al seguente: 
   
  **Indirizzo mittente:** spamalerts@microsoft.com 
   
@@ -61,6 +63,6 @@ Exchange Online Protection.
 \*\*NOTA - Non rispondere a questo messaggio, in quanto è stato inviato da un indirizzo di posta elettronica che non viene controllato.\*\*
   
 > [!TIP]
-> È inoltre possibile contattare il supporto tramite le opzioni descritte nella [Guida e supporto tecnico per EOP](eop/help-and-support-for-eop.md). 
+> È inoltre possibile contattare il supporto tramite le opzioni descritte in [Help and Support for EOP](eop/help-and-support-for-eop.md). 
   
 

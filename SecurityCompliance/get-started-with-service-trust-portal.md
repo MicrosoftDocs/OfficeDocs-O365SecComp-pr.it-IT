@@ -8,15 +8,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
+mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220256"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296689"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -117,7 +118,7 @@ Funzioni amministrative disponibili solo per l'account di amministratore globale
   
  La pagina **Impostazioni** consente di assegnare l'accesso basato sui ruoli a Compliance Manager. Per ulteriori informazioni, vedere la sezione "autorizzazioni e controllo di accesso basato sui ruoli" in [use Compliance Manager per soddisfare i requisiti normativi e di protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Cerca
+### <a name="search"></a>Ricerca
 
 Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina Service Trust Portal per espandere la casella, immettere i termini di ricerca e premere **invio**.
 

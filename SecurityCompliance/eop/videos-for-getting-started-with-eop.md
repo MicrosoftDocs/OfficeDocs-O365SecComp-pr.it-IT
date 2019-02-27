@@ -1,7 +1,7 @@
 ---
 title: Video per iniziare con EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276006"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Video per iniziare con EOP
 
@@ -30,7 +32,7 @@ Questi video riguardano la personalizzazione delle impostazioni del filtro della
 - Configurazione degli elenchi di indirizzi IP consentiti e bloccati in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-    Per ulteriori informazioni, vedere l'argomento [Configure il criterio di filtro di connessione](../configure-the-connection-filter-policy.md) . 
+    Per ulteriori informazioni, vedere l'argomento [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md) . 
     
 - Configurazione del filtro del contenuto di posta indesiderata in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
@@ -47,7 +49,7 @@ Sarà anche necessario configurare i criteri di protezione da posta indesiderata
 - Configurazione del criterio delle posta indesiderata in uscita
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
-    Per ulteriori informazioni, vedere [configurare il criterio della posta indesiderata in uscita](../configure-the-outbound-spam-policy.md)
+    Per ulteriori informazioni, vedere il [criterio di configurazione della posta](../configure-the-outbound-spam-policy.md) indesiderata in uscita
     
 Exchange Online Protection include anche le impostazioni per gestire i malware rilevati dal servizio, descritte nel video relativo al filtro anti-malware.
   
@@ -61,7 +63,7 @@ Per filtrare e instradare i messaggi in base a specifiche condizioni, a criteri 
 - Configurare le regole di trasporto di Exchange in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Per ulteriori informazioni, vedere l'argomento [posta regole del flusso (regole di trasporto) di Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se si utilizza un EOP autonomo oppure vedere l'argomento [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se si utilizza Exchange Online. 
+    Per ulteriori informazioni, vedere le [regole del flusso di posta (regole di trasporto) nell'argomento Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se si utilizza EOP autonomo oppure vedere l'argomento [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) se si utilizza Exchange Online. 
     
 Se si è interessati alla configurazione del servizio eseguendo script dalla riga di comando, guardare il video introduttivo sull'utilizzo di PowerShell in remoto.
   

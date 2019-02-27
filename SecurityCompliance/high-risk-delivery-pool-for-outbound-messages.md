@@ -1,7 +1,7 @@
 ---
 title: Pool di recapito ad alto rischio per i messaggi in uscita
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
 ms.audience: ITPro
@@ -12,25 +12,27 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
-description: Quando il sistema di posta elettronica del destinatario è stato danneggiato tramite un attacco dannoso posta indesiderata o malware e di invio di posta indesiderata in uscita tramite il servizio di filtraggio ospitato, con conseguenti gli indirizzi IP dei server di centro dati di Office 365 viene elencato nel blocco di terze parti elenchi.
-ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Se il sistema di posta elettronica di un cliente è stato compromesso da malware o da un attacco di posta indesiderata e Invia la posta indesiderata in uscita tramite il servizio di filtraggio ospitato, questo può comportare l'elenco degli indirizzi IP dei server di Data Center di Office 365 che sono elencati nel blocco di terze parti elenchi.
+ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003135"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275546"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool di recapito ad alto rischio per i messaggi in uscita
 
-Quando il sistema di posta elettronica del destinatario è stato danneggiato tramite un attacco dannoso posta indesiderata o malware e di invio di posta indesiderata in uscita tramite il servizio di filtraggio ospitato, con conseguenti gli indirizzi IP dei server di centro dati di Office 365 viene elencato nel blocco di terze parti elenchi. Server di destinazione è non utilizzare il servizio di filtraggio ospitato, ma utilizzare questi elenchi di blocco, rifiutare tutta la posta elettronica inviata da qualsiasi indirizzo IP filtraggio ospitato che è stati aggiunti a tali elenchi. Per evitare questo problema, tutti i messaggi in uscita che superano la soglia della posta indesiderata vengono inviati a un pool di recapito ad alto rischio. In questo pool secondario posta elettronica in uscita viene utilizzato solo per inviare i messaggi che possono essere di bassa qualità. Ciò consente di proteggere il resto della rete di inviare messaggi creati da più potrebbe provocare nell'indirizzo IP del mittente bloccato.
+Se il sistema di posta elettronica di un cliente è stato compromesso da malware o da un attacco di posta indesiderata e Invia la posta indesiderata in uscita tramite il servizio di filtraggio ospitato, questo può comportare l'elenco degli indirizzi IP dei server di Data Center di Office 365 che sono elencati nel blocco di terze parti elenchi. Server di destinazione che non utilizzano il servizio di filtraggio ospitato, ma utilizzano questi elenchi di blocco, rifiutare tutti i messaggi di posta elettronica inviati da tutti gli indirizzi IP del filtro host che sono stati aggiunti a tali elenchi. Per evitare questo, tutti i messaggi in uscita che superano la soglia di posta indesiderata vengono inviati tramite un pool di recapito ad alto rischio. Questo pool di posta elettronica in uscita secondario viene utilizzato solo per inviare messaggi che potrebbero essere di bassa qualità. In questo modo, è possibile proteggere il resto della rete dall'invio di messaggi che hanno maggiori probabilità di provocare il blocco dell'indirizzo IP di invio.
   
-L'utilizzo di un pool di recapito ad alto rischio dedicati assicura che il pool in uscita normale solo invia messaggi conosciute di alta qualità. Utilizzo di questo pool IP secondario consente di ridurre la probabilità che il pool in uscita IP normale viene aggiunto a un elenco dei domini bloccati. La possibilità di essere messa in un elenco dei domini bloccati del pool di recapito ad alto rischio rimane un rischio. Questo è per impostazione predefinita.
+L'utilizzo di un pool di recapito ad alto rischio dedicato contribuisce a garantire che il pool in uscita normale invii solo messaggi noti come di qualità elevata. L'utilizzo di questo pool IP secondario consente di ridurre la probabilità che il pool IP esterno normale venga aggiunto a un elenco bloccato. La possibilità che il pool di recapito ad alto rischio venga posizionato su un elenco bloccato resta un rischio. Questo è un progetto.
   
-I messaggi in cui il dominio di invio presenta alcun record indirizzo (record), che permette di utilizzare l'indirizzo IP del dominio, e nessun record MX, che consente ai server che devono ricevere posta elettronica per un dominio specifico nel sistema DNS posta diretta, vengono sempre indirizzati tramite il pool di recapito ad alto rischio indipendentemente dal fatto l'eliminazione della posta indesiderata.
+Messaggi in cui il dominio di invio non ha un record di indirizzo (un record), che fornisce l'indirizzo IP del dominio, e nessun record MX, che consente di indirizzare la posta ai server che devono ricevere la posta per un determinato dominio nel DNS, vengono sempre instradati attraverso il pool di recapito ad alto rischio a prescindere dalla disposizione di posta indesiderata.
   
-## <a name="understanding-delivery-status-notification-dsn-messages"></a>Informazioni sui messaggi di notifica stato recapito (DSN)
+## <a name="understanding-delivery-status-notification-dsn-messages"></a>Informazioni sui messaggi di notifica sullo stato del reCapito (DSN)
 
-Il pool di recapito ad alto rischio in uscita gestisce il recapito per tutti i messaggi (DSN) "animati" o "non riusciti".
+Il pool di recapito ad alto rischio in uscita gestisce il recapito per tutti i messaggi "rimbalzati" o "non riusciti" (DSN).
   
 Le cause possibili di un eccessivo numero di messaggi DSN sono:
   
@@ -42,12 +44,12 @@ Le cause possibili di un eccessivo numero di messaggi DSN sono:
     
 - Un server SMTP non autorizzato
     
-Tutti questi problemi può comportare un aumento del numero di messaggi DSN elaborati dal servizio improvviso. In molti casi, questi messaggi DSN visualizzati come posta indesiderata per altri servizi e server di posta elettronica.
+Tutti questi problemi possono portare a un improvviso aumento del numero di messaggi DSN elaborati dal servizio. Molte volte, questi messaggi DSN sembrano essere posta indesiderata ad altri server e servizi di posta elettronica.
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Configurazione del criterio delle posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
-[Domande frequenti sulla protezione anti-spam](anti-spam-protection-faq.md)
+[DOMANDE frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
   
 

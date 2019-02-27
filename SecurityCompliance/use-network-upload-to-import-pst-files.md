@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come utilizzare il caricamento di rete per importare in blocco più file PST nelle cassette postali degli utenti in Office 365.'
-ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 7de27e7dc15e823727544437ff79de6f72c61d5e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223605"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297149"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Utilizzare il caricamento di rete per importare i file PST dell'organizzazione in Office 365
 

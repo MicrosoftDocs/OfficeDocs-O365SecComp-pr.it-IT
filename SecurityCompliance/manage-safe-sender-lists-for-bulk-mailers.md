@@ -1,7 +1,7 @@
 ---
-title: Gestire gli elenchi di mittenti attendibili per spedizioni in blocco
-ms.author: krowley
-author: kccross
+title: Gestire gli elenchi di mittenti attendibili per messaggi inviati in massa
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,24 +12,26 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
-description: "Se si desidera utilizzare gli elenchi di mittenti attendibili, è necessario conoscere in cui Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio supporta i mittenti e domini controllando l'indirizzo 5321.MailFrom RFC e l'indirizzo 5322.From RFC, mentre Outlook consente di aggiungere l'indirizzo 5322.From RFC all'elenco Mittenti attendibili dell'utente. (Nota: il servizio controlla se sia l'indirizzo 5321.MailFrom e 5322.From per domini e mittenti bloccati.)"
-ms.openlocfilehash: 9442bb39e15b9db9a826472dd6110a8fa14130c6
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: "Se si desidera utilizzare elenchi di mittenti attendibili, è necessario sapere che Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio rispetta i mittenti e i domini attendibili esaminando l'indirizzo RFC 5321. MailFrom e l'indirizzo RFC 5322. from, mentre Outlook aggiunge l'indirizzo RFC 5322. from all'elenco dei mittenti attendibili di un utente. Nota: il servizio controlla sia l'indirizzo 5321. MailFrom sia l'indirizzo 5322. from per i mittenti e i domini bloccati."
+ms.openlocfilehash: 27d635ec93dd04df8ebf22d5d3d8f8ead4b7bcf8
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002995"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276136"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gestire gli elenchi di mittenti attendibili per spedizioni in blocco
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gestire gli elenchi di mittenti attendibili per messaggi inviati in massa
 
-Se si desidera utilizzare gli elenchi di mittenti attendibili, è necessario conoscere in cui Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio supporta i mittenti e domini controllando l'indirizzo 5321.MailFrom RFC e l'indirizzo 5322.From RFC, mentre Outlook consente di aggiungere l'indirizzo 5322.From RFC all'elenco Mittenti attendibili dell'utente. (Nota: il servizio controlla se sia l'indirizzo 5321.MailFrom e 5322.From per domini e mittenti bloccati.)
+Se si desidera utilizzare elenchi di mittenti attendibili, è necessario sapere che Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio rispetta i mittenti e i domini attendibili esaminando l'indirizzo RFC 5321. MailFrom e l'indirizzo RFC 5322. from, mentre Outlook aggiunge l'indirizzo RFC 5322. from all'elenco dei mittenti attendibili di un utente. Nota: il servizio controlla sia l'indirizzo 5321. MailFrom sia l'indirizzo 5322. from per i mittenti e i domini bloccati.
   
-L'indirizzo SMTP MAIL FROM, noto anche come indirizzo 5321.MailFrom RFC, è l'indirizzo di posta elettronica che viene utilizzato per eseguire le verifiche SPF, e se Impossibile recapitare la posta elettronica, il percorso in cui viene recapitato il messaggio animato. È l'indirizzo di posta elettronica che viene inserito nel percorso di ritorno nelle intestazioni dei messaggi per impostazione predefinita, anche se è possibile che il mittente designare un indirizzo di ritorno percorso diverso.
+L'indirizzo di posta elettronica SMTP, altrimenti noto come indirizzo RFC 5321. MailFrom, è l'indirizzo di posta elettronica utilizzato per eseguire i controlli SPF e, se non è possibile recapitare la posta, il percorso in cui viene recapitato il messaggio. Si tratta di questo indirizzo di posta elettronica che viene inserito nel percorso di ritorno nelle intestazioni del messaggio per impostazione predefinita, sebbene sia possibile che il mittente designi un indirizzo diverso per il percorso restituito.
   
-From: indirizzo nelle intestazioni del messaggio, noto anche come indirizzo 5322.From RFC, è l'indirizzo di posta elettronica che viene visualizzato nel client di posta elettronica, ad esempio Outlook.
+L'indirizzo da: nelle intestazioni del messaggio, altrimenti noto come indirizzo RFC 5322. from, è l'indirizzo di posta elettronica visualizzato nel client di posta elettronica, ad esempio Outlook.
   
-La maggior parte degli indirizzi ora 5321.MailFrom e 5322.From sono gli stessi. Si tratta di una tipica per la comunicazione tra due persone. Tuttavia, quando viene inviata posta elettronica per conto di qualcun altro, gli indirizzi sono diversi frequentemente. Si verifica in genere più frequentemente per i messaggi di posta elettronica in blocco.
+La maggior parte delle volte, gli indirizzi 5321. MailFrom e 5322. from sono gli stessi. Questa è la caratteristica tipica della comunicazione da persona a persona. Tuttavia, quando viene inviato un messaggio di posta elettronica per conto di qualcun altro, gli indirizzi sono spesso diversi. Questo accade solitamente più spesso per i messaggi di posta elettronica in blocco.
   
-Ad esempio, si supponga che la compagnia Blue Yonder Airlines ha stipulato fuori viaggi Margie per inviare il relativo annuncio di posta elettronica. Quindi viene visualizzato un messaggio nella posta in arrivo dal mittente blueyonder@news.blueyonderairlines.com. In questo caso, l'indirizzo 5321.MailFrom è blueyonder.airlines@margiestravel.com e blueyonder@news.blueyonderairlines.com corrisponde all'indirizzo 5322.From che corrisponde a quello che viene visualizzato in Outlook. Dal momento che il servizio rispetta l'indirizzo 5322.From RFC, per evitare che il messaggio filtrati, è possibile aggiungere l'indirizzo 5322.From RFC semplicemente come mittente sicuro in Outlook.
+Si supponga, ad esempio, che la compagnia aerea Blue laggiù abbia stipulato un contratto con Margie ' s Travel per inviare la propria pubblicità tramite posta elettronica. È quindi possibile ottenere un messaggio nella posta in arrivo dal mittente blueyonder@news.blueyonderairlines.com. In questo caso, l'indirizzo 5321. MailFrom è blueyonder.airlines@margiestravel.com e blueyonder@news.blueyonderairlines.com è l'indirizzo 5322. from che è quello visualizzato in Outlook. Poiché il servizio rispetta l'indirizzo RFC 5322. from, per evitare che questo messaggio venga filtrato, è sufficiente aggiungere l'indirizzo RFC 5322. from come mittente sicuro in Outlook.
   
 

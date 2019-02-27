@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza &amp; e conformità di Office 365 per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Advanced eDiscovery.
-ms.openlocfilehash: 92ef00bbdd8de5b1ba6bdae40bce96720ac46089
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214016"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296849"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365
 
@@ -48,7 +50,7 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Ulteriori informazioni](#more-information)
+[Altre informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 

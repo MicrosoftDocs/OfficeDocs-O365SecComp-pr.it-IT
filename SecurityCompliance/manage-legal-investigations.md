@@ -4,20 +4,21 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: hub-page
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilizzare i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365 per gestire le indagini legali dell'organizzazione. Se si dispone di un abbonamento E5, è possibile analizzare ulteriormente i dati del caso utilizzando l'analisi del testo, l'apprendimento automatico e le funzionalità di codifica predittiva di Advanced eDiscovery.
-ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214396"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296899"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gestione di indagini legali in Office 365
 

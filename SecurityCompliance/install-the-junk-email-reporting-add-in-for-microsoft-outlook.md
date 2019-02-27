@@ -1,7 +1,7 @@
 ---
 title: Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
-ms.author: krowley
-author: kccross
+ms.author: MSFTTracyP
+author: tracyp
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
+ms.collection:
+- M365-security-compliance
 description: In questa articleSupported LanguagesInstall la segnalazione della posta inDesiderata Add-inUninstall the junk email Reporting Add-inFor more information
-ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217026"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276306"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
   

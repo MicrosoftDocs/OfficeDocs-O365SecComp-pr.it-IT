@@ -9,16 +9,18 @@ f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365 per un'ulteriore analisi con lo strumento eDiscovery avanzato.
-ms.openlocfilehash: 04de96064f400f8055d0e477bf41ed1c7cb1b35f
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: de96e06dcbb5ae9a3cbf80b66f976e6ffdfd5b0e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223845"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296919"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 

@@ -1,14 +1,15 @@
 ---
 title: Procedure consigliate per la sicurezza per Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Ridurre al minimo le potenzialità di una violazione dei dati o un account compromesso attenendosi alle procedure consigliate riportate di seguito.
-ms.openlocfilehash: d40fa5e4534bef1bb8389989022c44967a162aee
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ff91721569aae5a4982e3f1dd054575d00c278d8
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212816"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276126"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedure consigliate per la sicurezza per Office 365
 

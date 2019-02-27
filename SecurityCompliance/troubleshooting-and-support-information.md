@@ -1,7 +1,7 @@
 ---
 title: Informazioni sul supporto tecnico e sulla risoluzione dei problemi
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+ms.collection:
+- M365-security-compliance
 description: In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
-ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003125"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275996"
 ---
 # <a name="troubleshooting-and-support-information"></a>Informazioni sul supporto tecnico e sulla risoluzione dei problemi
 
@@ -85,12 +87,12 @@ Un amministratore può incontrare problemi quando gli utenti utilizzano il compo
     
 ## <a name="support-information"></a>Informazioni sul supporto tecnico
 
-Se è necessario assistenza per l'installazione, configurazione o la disinstallazione del componente aggiuntivo, contattare il supporto tecnico utilizzando il nuovo collegamento richiesta di servizio nella pagina supporto nell'interfaccia di amministrazione di Office 365. Per ulteriori opzioni, tra cui inviare una richiesta di servizio tramite le opzioni di supporto in autonomia e telefono, vedere [Guida e supporto tecnico per EOP](eop/help-and-support-for-eop.md).
+Se si ha bisogno di assistenza per l'installazione, la configurazione o la disinstallazione del componente aggiuntivo, contattare il supporto tecnico utilizzando il nuovo collegamento richiesta di servizio nella pagina supporto nell'interfaccia di amministrazione di Office 365. Per ulteriori opzioni, tra cui l'invio di una richiesta di servizio tramite le opzioni telefono e supporto self-service, vedere [Help and Support for EOP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Attivare il componente aggiuntivo Report Message](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Attivare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
-[Segnalazione di messaggi di posta elettronica indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)
+[Segnalazione di messaggi indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)
   
 

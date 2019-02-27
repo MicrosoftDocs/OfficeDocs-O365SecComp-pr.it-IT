@@ -7,17 +7,18 @@ ms.date: 6/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 9c286ac6303a4d1f85e94e4ae6ca2163081e51b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219106"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296809"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -88,7 +89,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 Nella tabella seguente vengono descritti i diversi tipi di esenzioni a livello di organizzazione e viene descritto come identificare ogni tipo in base ai GUID contenuti nella proprietà *InPlaceHolds* quando si esegue il cmdlet **Get-OrganizationConfig** .
 
 
-|Tipo di blocco  |Valore di esempio  |Description  |
+|Tipo di blocco  |Valore di esempio  |Descrizione  |
 |---------|---------|---------|
 |Criteri di conservazione di Office 365 applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   I criteri di conservazione a livello di organizzazione applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di 1xN in Microsoft teams `mbx` sono identificati da GUID che iniziano con il prefisso. Si noti che le chat di 1xN vengono archiviate nella cassetta postale dei singoli partecipanti alla chat.      |
 |Criteri di conservazione di Office 365 applicati ai messaggi di gruppo di Office 365 e ai gruppi di Team     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    I criteri di conservazione a livello di organizzazione applicati ai gruppi di Office 365 e ai messaggi di canale in Microsoft teams sono identificati da GUID che iniziano con il `grp` prefisso. Si noti che i messaggi di canale vengono archiviati nella cassetta postale di gruppo associata a un team di Microsoft.     |

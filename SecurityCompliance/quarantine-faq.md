@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla quarantena
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,21 +12,23 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
+ms.collection:
+- M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting.
-ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792497"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276026"
 ---
 # <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
 In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting. Le risposte sono applicabili a clienti Microsoft Exchange Online e Exchange Online Protection.
   
- **D. come è possibile gestire i messaggi in quarantena malware in quarantena?**
+ **D. come è la gestione dei messaggi in quarantena per i malware?**
   
-È necessario utilizzare la sicurezza &amp; centro conformità per poter visualizzare e gestire i messaggi che sono stati messi in quarantena in quanto contengono malware. Per ulteriori informazioni, vedere [i messaggi di posta elettronica quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+È necessario utilizzare il Centro sicurezza &amp; e conformità per visualizzare e gestire i messaggi inviati alla quarantena perché contengono malware. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
  **D. Come configurare il servizio per inviare messaggi di posta indesiderata in quarantena?**
   
@@ -42,7 +44,7 @@ Gli utenti finali possono gestire i propri messaggi messi in quarantena tramite 
         
  **D. Come è possibile garantire l'accesso alla quarantena della posta indesiderata per gli utenti finali?**
   
-A. per poter accedere alla quarantena di posta indesiderata utente finale, utenti finali devono avere un ID utente di Office 365 valido e una password. I clienti EOP protezione cassette postali locali devono essere creati tramite la sincronizzazione delle directory o l'interfaccia di amministrazione di Exchange agli utenti di posta elettronica valido. Per ulteriori informazioni sulla gestione degli utenti, gli amministratori di EOP possono vedere [gestione di utenti di posta in EOP](eop/manage-mail-users-in-eop.md). Per i clienti autonomo EOP, si consiglia di sincronizzazione della directory e abilitazione della Directory Based Edge Blocking; Per ulteriori informazioni, vedere [Utilizzo Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+A. per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password di Office 365 validi. I clienti di EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi creati tramite la sincronizzazione della directory o EAC. Per ulteriori informazioni sulla gestione degli utenti, gli amministratori di EOP possono fare riferimento per [gestire gli utenti di posta elettronica in EOP](eop/manage-mail-users-in-eop.md). Per i clienti autonomi di EOP, si consiglia di utilizzare la sincronizzazione della directory e di abilitare il blocco Edge basato su directory. Per ulteriori informazioni, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
  **D. Un elemento diverso dalla posta indesiderata può essere inviato in quarantena?**
   
@@ -50,11 +52,11 @@ R. Possono essere inviati alla quarantena dell'amministratore anche i messaggi c
   
  **Q. Per quanto tempo i messaggi vengono tenuti in quarantena?**
   
-R. per impostazione predefinita, i messaggi in quarantena vengono conservati in quarantena per 30 giorni, mentre i messaggi in quarantena corrispondenti a una regola di trasporto vengono conservati in quarantena per 7 giorni. Dopo questo periodo di tempo i messaggi verranno eliminati e non sono recuperabili. Il periodo di conservazione per i messaggi in quarantena corrispondenti a una regola di trasporto non è configurabile. Tuttavia, è possibile ridurre il periodo di conservazione per i messaggi di quarantena della posta indesiderata tramite l'impostazione **della posta indesiderata Mantieni per (giorni)** in Criteri di filtro dei contenuti. Per ulteriori informazioni, vedere [configurazione dei criteri di filtro posta indesiderata](configure-your-spam-filter-policies.md).
+A. per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti in quarantena per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola di trasporto vengono mantenuti in quarantena per 7 giorni. Dopo questo periodo di tempo, i messaggi vengono eliminati e non possono essere recuperati. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola di trasporto non è configurabile. Tuttavia, il periodo di conservazione per i messaggi in quarantena della posta indesiderata può essere ridotto tramite l'impostazione **Mantieni posta indesiderata per (giorni)** nei criteri di filtro del contenuto. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
   
  **D. È possibile rilasciare o segnalare più di un messaggio in quarantena alla volta?**
   
-R. la possibilità di rilascio o il report contemporaneamente più messaggi non è attualmente disponibile in EAC o quarantena della posta indesiderata utente finale. Tuttavia, gli amministratori possono creare uno script di Windows PowerShell remoto per eseguire questa operazione. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per cercare i messaggi e il cmdlet [Versione-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per il rilascio di essi. 
+A. la possibilità di rilasciare o segnalare più messaggi contemporaneamente non è attualmente disponibile nell'interfaccia di amministrazione di Exchange o nella quarantena della posta indesiderata dell'utente finale. Tuttavia, gli amministratori possono creare uno script di Windows PowerShell remoto per eseguire questa attività. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per cercare i messaggi e il cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per rilasciarli. 
   
  **D. Sono supportati i caratteri jolly nella ricerca dei messaggi in quarantena? Posso cercare i messaggi in quarantena in base a un dominio specifico?**
   

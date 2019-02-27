@@ -8,16 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: 49399f11a71069059ffae2d03482ac7ffe03daf0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6091f6cca75bffbb05bcd59f70cfae0dbdcb9040
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219816"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297069"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrare i dati durante l'importazione di file PST in Office 365
 

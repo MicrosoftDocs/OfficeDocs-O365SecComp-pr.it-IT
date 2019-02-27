@@ -1,7 +1,7 @@
 ---
 title: Elenchi di mittenti attendibili e bloccati in Exchange Online
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
+ms.collection:
+- M365-security-compliance
 description: In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Un modo per farlo consiste nel creare elenchi di mittenti attendibili e di mittenti bloccati per gli utenti dell'organizzazione.
-ms.openlocfilehash: 923d71c4feeae16db538e381ee7c2ed7814cb8f8
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222945"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275656"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Elenchi di mittenti attendibili e bloccati in Exchange Online
 

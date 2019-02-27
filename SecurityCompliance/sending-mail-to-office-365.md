@@ -1,7 +1,7 @@
 ---
-title: L'invio di posta elettronica a Office 365
-ms.author: krowley
-author: kccross
+title: Inviare messaggi di posta elettronica a Office 365
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/9/2016
 ms.audience: ITPro
@@ -12,25 +12,27 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
-description: Questi articoli utili per i mittenti esterni migliorare la loro reputazione e aumentare la capacità di fornire il messaggio di posta elettronica agli utenti di Office 365. Offrono inoltre alcune informazioni su come è possibile segnalare posta indesiderata e phishing tenta anche se non si è un utente di Office 365 manualmente.
-ms.openlocfilehash: 21784ecfd9a4ffe1e70268de6cc1146167d566fe
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
+ms.openlocfilehash: a3988f6c6c5c8fca4b4f99df1d73df49175d853e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002537"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275836"
 ---
-# <a name="sending-mail-to-office-365"></a>L'invio di posta elettronica a Office 365
+# <a name="sending-mail-to-office-365"></a>Inviare messaggi di posta elettronica a Office 365
 
-Questi articoli utili per i mittenti esterni migliorare la loro reputazione e aumentare la capacità di fornire il messaggio di posta elettronica agli utenti di Office 365. Offrono inoltre alcune informazioni su come è possibile segnalare posta indesiderata e phishing tenta anche se non si è un utente di Office 365 manualmente.
+Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
   
-Se non è un cliente di Office 365, ma si tenta di inviare posta a un utente in cui è, si è nella giusta posizione. Se si è un amministratore di Office 365 e bisogno di assistenza per la posta indesiderata conflitti, non si tratta della sezione destra automaticamente. In realtà, andare a [protezione anti-spam and anti-malware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx).
+Se non si è un cliente di Office 365, ma si sta tentando di inviare messaggi di posta elettronica a un utente che si trova nel posto giusto. Se sei un amministratore di Office 365 e hai bisogno di aiuto per la lotta alla posta indesiderata, questa non è la sezione giusta per te. Passare invece alla [protezione da posta indesiderata e anti-malware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx).
   
 |**Per informazioni su...**|**Vedere...**|
 |:-----|:-----|
-|Servizi che Microsoft fornisce agli amministratori di sistemi di posta elettronica che inviano posta elettronica singolo e massa per i clienti di Office 365.  <br/> |[Servizi per i clienti-non l'invio di posta per Office 365](services-for-non-customers.md) <br/> |
-|Come risolvere i problemi sta per raggiungere clienti in Office 365 tramite posta elettronica. Procedure consigliate per l'invio di posta inviata in blocco ai destinatari di Office 365.  <br/> |[Risoluzione dei problemi della posta elettronica inviati a Office 365](troubleshooting-mail-sent-to-office-365.md) <br/> |
-|Office 365 impedire come posta indesiderata, tra cui phishing e spoofing di posta elettronica, non verrà inviato ai clienti.  <br/> |[Conflitti posta indesiderata inviata a Office 365](fighting-junk-email.md) <br/> |
-|Come si, un amministratore invio messaggio di posta elettronica per i clienti di Office 365, possibile evitare la posta elettronica bloccato da adesione per i criteri di protezione da posta indesiderati. Si tratta di materiale legale che è necessario conoscere.  <br/> |[Riferimento: criteri, procedure e linee guida](reference-policies-practices-and-guidelines.md) <br/> |
+|Servizi forniti agli amministratori dei sistemi di posta elettronica che inviano messaggi di posta elettronica individuali e in massa ai clienti di Office 365.  <br/> |[Servizi per i non clienti che inviano la posta a Office 365](services-for-non-customers.md) <br/> |
+|Come risolvere i problemi relativi ai clienti di Office 365 tramite posta elettronica. Procedure consigliate per l'invio di posta in blocco ai destinatari di Office 365.  <br/> |[Risoluzione dei problemi della posta elettronica inviati a Office 365](troubleshooting-mail-sent-to-office-365.md) <br/> |
+|Il modo in cui Office 365 impedisce la posta indesiderata, inclusa la posta elettronica di phishing e spoofing, viene inviata ai clienti.  <br/> |[La lotta alla posta indesiderata inviata a Office 365](fighting-junk-email.md) <br/> |
+|Il modo in cui un amministratore invia messaggi di posta elettronica ai clienti di Office 365 è in grado di evitare che la posta elettronica venga bloccata aderendo ai criteri di protezione da posta indesiderata. Questa è la cosa legale che devi sapere.  <br/> |[Riferimento: criteri, procedure e linee guida](reference-policies-practices-and-guidelines.md) <br/> |
    
 

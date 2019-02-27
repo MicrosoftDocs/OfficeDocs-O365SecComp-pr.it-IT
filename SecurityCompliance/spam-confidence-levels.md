@@ -1,7 +1,7 @@
 ---
 title: Livelli di sicurezza della protezione contro la posta indesiderata
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
+ms.collection:
+- M365-security-compliance
 description: Quando un messaggio di posta elettronica viene individuato dal filtro di protezione da posta indesiderata, viene assegnato un punteggio di posta indesiderata. Questo punteggio viene associato a un livello di probabilità di posta indesiderata (SCL, Spam Confidence Level) e contrasseganto nell'X-header. Il servizio agisce sui messaggi a seconda della valutazione SCL sul livello di probabilità di posta indesiderata. Nella tabella seguente viene mostrato come le diverse valutazioni SCL vengono interpretate dai filtri e come vengono intraprese le azioni sui messaggi in ingresso per ogni valutazione.
-ms.openlocfilehash: 4b8eea798bc46396e06da2c6ba0573c019d7a9b7
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1822fa50f9815397513fddf7a2024a99277cbb28
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002905"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275646"
 ---
 # <a name="spam-confidence-levels"></a>Livelli di sicurezza della protezione contro la posta indesiderata
 

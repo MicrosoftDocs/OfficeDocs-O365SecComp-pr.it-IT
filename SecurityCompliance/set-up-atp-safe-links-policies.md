@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
+ms.date: 02/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 0cf6c22be42f11fe52a1f43d0ebef48bd639675d
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245602"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296829"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -112,8 +112,8 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 
 Quando si configurano o si modificano i criteri dei collegamenti sicuri di ATP, saranno disponibili diverse opzioni. Nel caso in cui si stiano chiedendo quali sono queste opzioni, nella tabella seguente vengono descritte le caratteristiche di ciascuna di esse. Tenere presente che sono disponibili due tipi principali di criteri dei collegamenti sicuri ATP da definire o modificare:
-- un [criterio predefinito](#default-policy-options) che si applica a tutti 
-- [criteri aggiuntivi definiti per destinatari specifici](#policies-that-apply-to-specific-email-recipients) 
+- [criterio predefinito](#default-policy-options) che si applica a tutti gli utenti. e  
+- [criteri aggiuntivi per destinatari specifici](#policies-that-apply-to-specific-email-recipients) 
 
 ### <a name="default-policy-options"></a>Opzioni predefinite per i criteri
 
@@ -121,8 +121,8 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
-| **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato.<br/> Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP      |
-| **Office 365 ProPlus, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri di ATP viene applicata agli URL nei documenti aperti in Office 365 ProPlus (Word, Excel e PowerPoint in Windows o Mac OS), nei documenti di Office su iOS o nei dispositivi Android, in Visio 2016 su Windows e in Office Online (Word Online, PowerPoint online, Excel online e OneNote online), a condizione che l'utente abbia eseguito l'accesso a Office 365. <br/><br/>Se si vede solo **office 2016 su Windows**, gli aggiornamenti delle funzionalità non hanno ancora raggiunto l'ambiente Office 365 (e verranno presto). Fino ad allora, la protezione per i collegamenti sicuri di ATP si applica a Word 2016, Excel 2016, PowerPoint 2016 o Visio 2016 in esecuzione su Windows.            |
+| **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Office 365 ProPlus, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri di ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, sui documenti di Office su iOS o su dispositivi Android, Visio 2016 su Windows e Office Online (Word online, PowerPoint online, Excel online, e OneNote online), a condizione che l'utente abbia eseguito l'accesso a Office 365. |
 | **Non monitorare quando gli utenti fanno clic su collegamenti sicuri di ATP** <br/>  | Quando questa opzione è selezionata, fare clic su dati per gli URL in Word, Excel, PowerPoint e documenti di Visio non archiviati.  <br/> |
 |**Non consentire agli utenti di fare clic su collegamenti sicuri ATP all'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |
 

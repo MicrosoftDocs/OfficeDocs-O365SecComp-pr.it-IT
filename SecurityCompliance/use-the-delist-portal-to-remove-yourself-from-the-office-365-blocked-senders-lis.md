@@ -1,7 +1,7 @@
 ---
 title: Accedere al portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003255"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276184"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Accedere al portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365
 
@@ -30,7 +32,7 @@ Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri client
   
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
   
-550 5.7.606-649 accesso negato, vietata invio IP [_indirizzo IP_]; Per richiedere la rimozione dall'elenco, visitare https://sender.office.com/ e seguire le istruzioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito di posta elettronica in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, https://sender.office.com/ visitare e seguire le indicazioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito della posta elettronica in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta. 
   
@@ -42,7 +44,7 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     
 3. Fare clic su **Invia**.
     
-    Il portale invia un messaggio di posta elettronica all'indirizzo di posta elettronica che si fornisce. Messaggio di posta elettronica avrà un aspetto simile alla seguente: ![cattura di schermata del messaggio di posta elettronica ricevuto quando si invia una richiesta tramite il portale delist](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Il portale Invia un messaggio di posta elettronica all'indirizzo di posta elettronica fornito. Il messaggio di posta elettronica avrà un aspetto analogo al seguente: ![screenshot del messaggio di posta elettronica ricevuto quando si invia una richiesta tramite il portale di esclusione](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. Fare clic sul collegamento di conferma nel messaggio di posta elettronica inviato all'utente dal portale di esclusione.
     

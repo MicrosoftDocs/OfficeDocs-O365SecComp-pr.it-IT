@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento alle nuove funzionalità di Office 365 Message Encryption
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 1/4/2018
 ms.audience: ITPro
@@ -11,13 +11,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
+ms.collection:
+- M365-security-compliance
 description: Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection. Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere crittografia dei messaggi di Office 365. Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
-ms.openlocfilehash: 1f809ca996f072269f40bcb6c7ce6f7a420cccb1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219256"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276066"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Aggiornamento alle nuove funzionalità di Office 365 Message Encryption
 

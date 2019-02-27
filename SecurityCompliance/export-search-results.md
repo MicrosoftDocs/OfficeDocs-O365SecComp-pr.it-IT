@@ -9,19 +9,21 @@ f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Office 365 Security & in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 5ec1456c7d1a787a1ede70c15b109e7f0358f60a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219946"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296569"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Esportare i risultati della ricerca del contenuto dal centro conformità & sicurezza di Office 365
 

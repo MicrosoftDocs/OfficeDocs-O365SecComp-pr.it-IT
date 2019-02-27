@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
-ms.openlocfilehash: 37f5bf96c8176770f44d0681fa7046a904283f72
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215327"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296359"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 

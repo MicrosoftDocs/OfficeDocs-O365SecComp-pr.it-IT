@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: 4e9dd52adbeada92d14db369b386ff1ca7e42fc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220346"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275696"
 ---
 # <a name="office-365-service-encryption"></a>Servizio di crittografia di Office 365
 

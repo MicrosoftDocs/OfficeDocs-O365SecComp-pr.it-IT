@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione in espansione automatica in Office 365, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: 39098ffc78d0379436cafb20e5a484ec0e7aa283
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 96e9fdd4b645df9e52cf9e11c3a43a80ef029ffa
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215396"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296029"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Abilitare l'archiviazione illimitata in Office 365-Guida per gli amministratori
 

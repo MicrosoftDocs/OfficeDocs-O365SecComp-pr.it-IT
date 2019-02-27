@@ -1,8 +1,8 @@
 ---
-title: Configure S/MIME settings for Outlook on the web
-ms.author: krowley
-author: kccross
-manager: laurawi
+title: Configurare le impostazioni S/MIME in Exchange Online per Outlook sul Web
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,21 +14,23 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Una breve descrizione di cosa devono fare gli amministratori di Exchange Online per visualizzare e configurare le impostazioni S/MIME in Outlook sul Web in Exchange Online.
-ms.openlocfilehash: 95715fc8ae97ea47c8473a821de04a72cca39c66
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 74d2f37f0cabc0b49abdd78d2a10928b543fd615
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222785"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295359"
 ---
-# <a name="configure-smime-settings-for-outlook-on-the-web"></a>Configure S/MIME settings for Outlook on the web
+# <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurare le impostazioni S/MIME in Exchange Online per Outlook sul Web
 
 In qualità di amministratore di Exchange Online, è possibile configurare Outlook sul Web (in precedenza noto come Outlook Web App) per consentire l'invio e la ricezione di messaggi protetti con S/MIME. Utilizzare i cmdlet **Get-SmimeConfig** e **set-SmimeConfig** per visualizzare e gestire questa funzionalità in PowerShell di Exchange Online. Per connettersi a PowerShell di Exchange Online, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
-  
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx) e [set-SmimeConfig](http://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx). 
-  
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx) e [set-SmimeConfig](http://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx).
+
+## <a name="considerations-for-chrome"></a>Considerazioni su Chrome
+
+Per utilizzare S/MIME in Outlook sul Web nel browser Web di Google Chrome, è necessario che l'utente (o un altro amministratore) debba impostare e configurare il criterio di cromo denominato **ExtensionInstallForcelist** per installare l'estensione Microsoft S/MIME in Chrome. Il criterio deve utilizzare la sintassi: `<extension-id>;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` ad esempio: `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`. Questo passaggio è un prerequisito per l'utilizzo di Chrome. non sostituisce il controllo S/MIME installato dagli utenti. Per informazioni dettagliate sul criterio **ExtensionInstallForcelist** , vedere [ExtensionInstallForcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist).
+
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [S/MIME per la crittografia e firma dei messaggi](s-mime-for-message-signing-and-encryption.md)
-  
-

@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi della posta elettronica inviati a Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,89 +12,91 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
-description: In questo articolo vengono fornite informazioni sulla risoluzione dei problemi per i mittenti che hanno riscontrato problemi durante il tentativo di invio della posta elettronica in arrivo in Office 365 e procedure consigliate per la posta in blocco per i clienti di Office 365.
-ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.collection:
+- M365-security-compliance
+description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
+ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240559"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276296"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
-In questo articolo vengono fornite informazioni sulla risoluzione dei problemi per i mittenti che hanno riscontrato problemi durante il tentativo di invio della posta elettronica in arrivo in Office 365 e procedure consigliate per la posta in blocco per i clienti di Office 365.
+In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
   
-## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Risoluzione dei problemi comuni di recapito della posta a Office 365
+## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Risoluzione dei problemi comuni relativi al recapito della posta elettronica a Office 365
 
-Scegliere uno di questi problemi comuni.
+Scegliere uno dei problemi comunemente riscontrati.
   
-- [Invio di gestione dei IP e del dominio reputazione?](troubleshooting-mail-sent-to-office-365.md#ManageRep)
+- [Si sta gestendo la reputazione di invio di IP e domini?](troubleshooting-mail-sent-to-office-365.md#ManageRep)
     
-- [Sono posta invio da nuovi indirizzi IP?](troubleshooting-mail-sent-to-office-365.md#NewIPs)
+- [Si sta inviando messaggi di posta elettronica da nuovi indirizzi IP?](troubleshooting-mail-sent-to-office-365.md#NewIPs)
     
-- [Verificare che il DNS sia impostato correttamente](troubleshooting-mail-sent-to-office-365.md#ConfirmDNSsetup)
+- [Verificare che il DNS sia configurato correttamente](troubleshooting-mail-sent-to-office-365.md#ConfirmDNSsetup)
     
-- [Verificare che si non annuncia se stessi come un indirizzo IP non instradabile](troubleshooting-mail-sent-to-office-365.md#NoReverseDNS)
+- [Assicurarsi di non essere pubblicizzati come IP non instradabile](troubleshooting-mail-sent-to-office-365.md#NoReverseDNS)
     
-- [È stato ricevuto un rapporto di mancato recapito (NDR) per l'invio di posta elettronica a un utente in Office 365](troubleshooting-mail-sent-to-office-365.md#NDRInbound)
+- [Si è ricevuto un rapporto di mancato recapito (NDR) quando si invia un messaggio di posta elettronica a un utente in Office 365](troubleshooting-mail-sent-to-office-365.md#NDRInbound)
     
-- [Posta elettronica sbarcata nella cartella posta indesiderata del destinatario in EOP](troubleshooting-mail-sent-to-office-365.md#JunkMailBox)
+- [La posta elettronica è atterrata nella cartella di posta indesiderata del destinatario in EOP](troubleshooting-mail-sent-to-office-365.md#JunkMailBox)
     
-- [Il traffico dall'indirizzo IP è limitato da EOP](troubleshooting-mail-sent-to-office-365.md#AllowEOPIPs)
+- [Il traffico proveniente dall'indirizzo IP è limitato da EOP](troubleshooting-mail-sent-to-office-365.md#AllowEOPIPs)
     
-### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Invio di gestione dei IP e del dominio reputazione?
+### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Si sta gestendo la reputazione di invio di IP e domini?
 <a name="ManageRep"> </a>
 
-Tecnologie di filtraggio EOP sono progettate per fornire protezioni di protezione da posta indesiderate per Microsoft Office 365, nonché altri prodotti di Microsoft Exchange Server, Microsoft Office Outlook e Windows Live Mail. È inoltre possibile sfruttare SPF, DKIM e DMARC; posta elettronica le tecnologie di autenticazione che consentono di risolvere il problema di phishing e spoofing verificare che il dominio di invio della posta elettronica è autorizzato a tale scopo. Filtraggio EOP è influenzato da diversi fattori legati all'indirizzo IP del mittente, dominio, autenticazione, correttezza dell'elenco, percentuali di reclamo, contenuto e altro ancora. Una delle entità fattori determinano verso il basso reputazione del mittente e le capacità di fornire il messaggio di posta elettronica è tariffa reclamo posta indesiderata. 
+Le tecnologie di filtro di EOP sono progettate per fornire protezione da posta indesiderata per Microsoft Office 365, nonché altri prodotti Microsoft come Exchange Server, Microsoft Office Outlook e Windows Live Mail. È inoltre possibile utilizzare SPF, DKIM e DMARC; tecnologie di autenticazione della posta elettronica che consentono di risolvere il problema dello spoofing e del phishing verificando che il dominio che invia il messaggio di posta elettronica sia autorizzato a farlo. Il filtro EOP è influenzato da una serie di fattori correlati all'IP di invio, al dominio, all'autenticazione, all'accuratezza degli elenchi, alle tariffe dei reclami, al contenuto e altro ancora. Tra questi, uno dei fattori principali per abbassare la reputazione del mittente e la possibilità di inviare messaggi di posta elettronica è la frequenza dei reclami per la posta indesiderata. 
   
-### <a name="are-you-sending-email-from-new-ip-addresses"></a>Sono posta invio da nuovi indirizzi IP?
+### <a name="are-you-sending-email-from-new-ip-addresses"></a>Si sta inviando messaggi di posta elettronica da nuovi indirizzi IP?
 <a name="NewIPs"> </a>
 
-Indirizzi IP precedentemente non utilizzati per inviare posta elettronica in genere non dispongono di alcun reputazione costituita nel nostro sistemi. Di conseguenza, messaggi di posta elettronica dalla nuovo IP sono più probabile riscontrare problemi di recapito. Dopo che l'indirizzo IP è generato reputazione per non l'invio di posta indesiderata, EOP consente in genere per una migliore esperienza di recapito di posta elettronica.
+Gli indirizzi IP non utilizzati in precedenza per inviare messaggi di posta elettronica in genere non dispongono di una reputazione integrata nei sistemi. Di conseguenza, è più probabile che i messaggi di posta elettronica provenienti da nuovi IP sperimentino problemi di recapito. Una volta che l'IP ha creato una reputazione per l'invio di posta indesiderata, EOP consentirà una migliore esperienza di recapito della posta elettronica.
   
-Nuovo indirizzi IP che vengono aggiunte per i domini che vengono autenticati in record SPF esistenti in genere verificarsi il vantaggio di ereditarietà alcune della reputazione mittente del dominio. Se il dominio è una buona l'invio di reputazione IP nuovo potrebbe verificarsi un più rapido quanto tempo. Un nuovo PI prevedibili utilizzare il nome all'interno di un paio di settimane o prima a seconda di volume, correttezza dell'elenco e tariffe reclamo posta indesiderata.
+I nuovi indirizzi IP aggiunti per i domini autenticati con i record SPF esistenti in genere avvertono l'ulteriore vantaggio di ereditare una parte della reputazione di invio del dominio. Se il dominio ha una buona reputazione di invio, è possibile che i nuovi IP possano riscontrare tempi di rampa più veloci. Un nuovo IP può pretendere di essere completamente rampante entro un paio di settimane o prima a seconda del volume, dell'accuratezza degli elenchi e delle tariffe di reclamo per la posta indesiderata.
   
-### <a name="confirm-that-your-dns-is-set-up-correctly"></a>Verificare che il DNS sia impostato correttamente
+### <a name="confirm-that-your-dns-is-set-up-correctly"></a>Verificare che il DNS sia configurato correttamente
 <a name="ConfirmDNSsetup"> </a>
 
-Per istruzioni su come creare e gestire i record DNS, incluso il record MX necessario per il routing della posta, è necessario contattare il provider di hosting DNS.
+Per istruzioni su come creare e gestire i record DNS, incluso il record MX necessario per il routing della posta, sarà necessario contattare il provider di hosting DNS.
   
-### <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Verificare che si non annuncia se stessi come un indirizzo IP non instradabile
+### <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Assicurarsi di non essere pubblicizzati come IP non instradabile
 <a name="NoReverseDNS"> </a>
 
-È non può accettare la posta elettronica da mittenti che ha esito negativo di una ricerca DNS inverso. In alcuni casi, i mittenti legittimi annunciano erroneamente come un indirizzo IP instradabile internet non quando si tenta di aprire una connessione a EOP. Indirizzi IP riservati per le reti private (non instradabili) includono:
+Non è possibile accettare messaggi di posta elettronica provenienti da mittenti che non eseguono una ricerca DNS inversa. In alcuni casi, i mittenti legittimi si annunciano in modo errato come IP instradabile non Internet quando si tenta di aprire una connessione a EOP. Gli indirizzi IP riservati per la rete privata (non instradabile) includono:
   
-- 192.168.0.0/16 (o 192.168.0.0 - 192.168.255.255)
+- 192.168.0.0/16 (o 192.168.0.0-192.168.255.255)
     
-- 10.0.0.0/8 (o 10.0.0.0 - 10.255.255.255)
+- 10.0.0.0/8 (o 10.0.0.0-10.255.255.255)
     
-- 172.16.0.0/11 (o 172.16.0.0 - 172.31.255.255)
+- 172.16.0.0/11 (o 172.16.0.0-172.31.255.255)
     
-### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>È stato ricevuto un rapporto di mancato recapito (NDR) per l'invio di posta elettronica a un utente in Office 365
+### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Si è ricevuto un rapporto di mancato recapito (NDR) quando si invia un messaggio di posta elettronica a un utente in Office 365
 <a name="NDRInbound"> </a>
 
-Alcuni problemi di recapito sono il risultato dell'indirizzo IP del mittente viene bloccato da Microsoft o dal momento che l'account utente viene identificato come mittente da escludere a causa di attività da posta indesiderata precedente. Se si ritiene che si è ricevuto il rapporto di mancato recapito in errore, eseguire le istruzioni nel messaggio di rapporto di mancato recapito per risolvere il problema. 
+Alcuni problemi di recapito sono il risultato dell'indirizzo IP del mittente che è stato bloccato da Microsoft o perché l'account utente è stato identificato come mittente vietato a causa di precedenti attività di posta indesiderata. Se si ritiene di aver ricevuto il rapporto di MANCAto reCAPITO in caso di errore, seguire le istruzioni riportate nel messaggio di MANCAto reCAPITO per risolvere il problema. 
   
-Per ulteriori informazioni sull'errore è stato ricevuto, vedere l'elenco completo dei codici di errore SMTP [DSN e NDR in Exchange 2013 locale e Office 365](http://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
+Per ulteriori informazioni sull'errore ricevuto, vedere l'elenco completo dei codici di errore SMTP nelle [DSN e nei rapporti di mancato recapito in Exchange 2013 e Office 365 locali](http://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
   
- Ad esempio, se viene visualizzato il rapporto di mancato recapito seguente, significa che l'indirizzo IP del mittente è stato bloccato da Microsoft. 
+ Ad esempio, se si riceve il rapporto di MANCAto reCAPITO seguente, indica che l'indirizzo IP di invio è stato bloccato da Microsoft. 
   
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
   
-Per richiedere la rimozione dall'elenco, è possibile [utilizzare il portale delist per eliminare il proprio nome nell'elenco Mittenti bloccati di Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Per richiedere la rimozione da questo elenco, è possibile [utilizzare il portale di delist per rimuovere se stessi dall'elenco Mittenti bloccati di Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
   
-### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Posta elettronica sbarcata nella cartella posta indesiderata del destinatario in EOP
+### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>La posta elettronica è atterrata nella cartella di posta indesiderata del destinatario in EOP
 <a name="JunkMailBox"> </a>
 
-Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile utilizzare il destinatario a inviare questo messaggio falso positivo al Team di analisi della posta indesiderata Microsoft, che valutare e analizzare il messaggio. In base ai risultati dell'analisi, le regole di filtro dei contenuti da posta indesiderata a livello di servizio possono essere regolate per consentire il messaggio attraverso. Messaggio di posta elettronica consente di inviare messaggi a Microsoft che non devono essere classificate come posta indesiderata. In tal caso, assicurarsi di utilizzare i passaggi nella procedura seguente.
+Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile collaborare con il destinatario per inviare questo messaggio falso positivo al team di analisi di posta inDesiderata di Microsoft, che valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, è possibile modificare le regole di filtro del contenuto della posta indesiderata a livello di servizio per consentire il passaggio del messaggio. Si utilizza la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
   
-### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Utilizzare la posta elettronica per inviare messaggi falsi positivi al Team di analisi della posta indesiderata di Microsoft
+### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Per utilizzare la posta elettronica per inviare messaggi falsi positivi al team di analisi di posta inDesiderata di Microsoft
 
-1. Salvare il messaggio che si desidera inviare come posta non indesiderata.
+1. Salvare il messaggio che si desidera inviare come non di posta indesiderata.
     
 2. Creare un nuovo messaggio vuoto e allegarvi il messaggio di posta non indesiderata.
     
-    Se necessario, è possibile collegare più messaggi di posta non indesiderata.
+    Se necessario, è possibile allegare più messaggi non di posta indesiderata.
     
 3. Copiare e incollare la riga dell'oggetto del messaggio originale nella riga dell'oggetto del nuovo messaggio.
     
@@ -103,30 +105,30 @@ Se un messaggio è stato erroneamente identificato come posta indesiderata da EO
   
 4. Inviare il nuovo messaggio a [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com).
     
-### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Il traffico dall'indirizzo IP è limitato da EOP
+### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Il traffico proveniente dall'indirizzo IP è limitato da EOP
 <a name="AllowEOPIPs"> </a>
 
-Se si riceve un rapporto di mancato recapito da EOP che indica che l'indirizzo IP viene limitato da EOP, ad esempio:
+Se si riceve un rapporto di MANCAto reCAPITO da EOP che indica che l'indirizzo IP è sottoposto a limitazione da EOP, ad esempio:
   
  `host xxxx.outlook.com [x.x.x.x]: 451 4.7.550 Access denied, please try again later`
   
-È stato ricevuto il rapporto di mancato recapito perché sono stata rilevata attività sospette dall'indirizzo IP e sono state temporaneamente limitata durante un'ulteriore di valutazione. Se il sospetto è deselezionato attraverso la valutazione, questa limitazione verrà revocata a breve.
+È stato ricevuto il rapporto di MANCAto reCAPITO perché l'attività sospetta è stata rilevata dall'indirizzo IP ed è stata temporaneamente limitata durante la valutazione. Se il sospetto è deselezionato tramite valutazione, questa restrizione verrà revocata a breve.
   
-### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Non è possibile ricevere posta elettronica da mittenti in Office 365
+### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Non è possibile ricevere messaggi di posta elettronica da mittenti in Office 365
 <a name="AllowEOPIPs"> </a>
 
- Per ricevere messaggi da utenti, verificare che la rete consente connessioni verso gli indirizzi IP utilizzato nel nostro datacenter EOP. Per ulteriori informazioni, vedere [gli indirizzi IP di Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). 
+ Per ricevere i messaggi dagli utenti, verificare che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei data center. Per ulteriori informazioni, vedere [indirizzi IP di Exchange Online Protection](eop/exchange-online-protection-ip-addresses.md). 
   
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Procedure consigliate per l'invio tramite posta elettronica in blocco per gli utenti di Office 365
+## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Procedure consigliate per l'invio di posta elettronica in blocco agli utenti di Office 365
 <a name="BulkMailer"> </a>
 
-Se si spesso condurre campagne di posta elettronica in blocco per gli utenti di Office 365 e per garantire che i messaggi di posta elettronica verranno aggiunti in modo sicuro e tempestivo, seguire i suggerimenti forniti in questa sezione.
+Se si eseguono spesso campagne di posta elettronica in blocco per gli utenti di Office 365 e si vuole garantire la sicurezza e la tempestività dei messaggi, seguire le indicazioni riportate in questa sezione.
   
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Verificare che il mittente: nome riflette il mittente del messaggio
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Verificare che il nome: rispecchi chi sta inviando il messaggio
 
-L'oggetto deve essere un breve riepilogo delle quali il messaggio è dedicato e il corpo dei messaggi deve chiaramente e conciso indicano il ruolo l'offerta, servizi o prodotti su. Per esempio:
+L'oggetto dovrebbe essere un breve riepilogo del messaggio e il corpo del messaggio deve indicare in modo chiaro e conciso cosa significa l'offerta, il servizio o il prodotto. Per esempio:
   
-Correggere
+Corretto
   
  ` From: marketing@shoppershandbag.com `
   
@@ -138,37 +140,37 @@ Non corretto
   
  `Subject: Catalogs`
   
-Per i partecipanti a sapere chi è il più semplice apportate e meno difficoltà, le operazioni è necessario il recapito attraverso la maggior parte dei filtri posta indesiderata.
+Più è facile per gli utenti sapere chi è e cosa si sta facendo, minore sarà la difficoltà con la maggior parte dei filtri per la posta indesiderata.
   
-### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Sempre includono un'opzione unsubscribe in messaggi di posta elettronica campagna
+### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Includi sempre un'opzione di annullamento della sottoscrizione nei messaggi di posta elettronica della campagna
 
-Messaggi di posta elettronica di marketing, soprattutto notiziari, deve sempre includere un modo per annullare la sottoscrizione da futuri messaggi di posta elettronica. Per esempio:
+I messaggi di posta elettronica di marketing, in particolare le newsletter, dovrebbero includere sempre un modo di annullamento della sottoscrizione da messaggi di posta elettronica futuri. Per esempio:
   
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
   
  `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
   
-Alcuni mittenti includono questa opzione per richiedere i destinatari inviare un messaggio di posta elettronica a un determinato alias con "Unsubscribe" nell'oggetto. Questo non è preferibile utilizzare l'esempio di un solo clic. Se si sceglie di richiedono ai destinatari di inviare un messaggio di posta, assicurarsi che quando si fa clic sul collegamento, tutti i campi necessari siano prepopolati.
+Alcuni mittenti includono questa opzione richiedendo ai destinatari di inviare un messaggio di posta elettronica a un determinato alias con "Annulla sottoscrizione" nell'oggetto. Questo non è preferibile all'esempio di un clic sopra riportato. Se si sceglie di richiedere ai destinatari di inviare un messaggio di posta elettronica, verificare che quando si fa clic sul collegamento, tutti i campi richiesti siano precompilati.
   
-### <a name="use-the-double-opt-in-option-for-marketing-email-or-newsletter-registration"></a>Utilizzare l'opzione doppia consenso esplicito per la registrazione del messaggio di posta elettronica o newsletter di marketing
+### <a name="use-the-double-opt-in-option-for-marketing-email-or-newsletter-registration"></a>Utilizzare l'opzione double opt-in per la registrazione della posta elettronica o della newsletter di marketing
 
-Se l'azienda richiede o incoraggia agli utenti di registrare le informazioni di contatto per accedere ai prodotti o servizi, è consigliabile questo best practice del settore. Alcune aziende rendono consigliata per accedere automaticamente agli utenti di marketing messaggi di posta elettronica o newsletter durante il processo di registrazione, ma si è considerato un'ambigui consigliata marketing nel mondo del filtro di posta elettronica.
+Questa procedura consigliata per il settore è consigliabile se la propria azienda richiede o incoraggia gli utenti a registrare le proprie informazioni di contatto per accedere al prodotto o ai servizi. Alcune aziende hanno la consuetudine di iscrivere automaticamente gli utenti per i messaggi di posta elettronica di marketing o di e-newsletter durante il processo di registrazione, ma questa è considerata una pratica di marketing discutibile nel mondo del filtraggio della posta elettronica.
   
-Durante il processo di registrazione, se il "Sì, inviare me notiziario" o "Sì, inviare me offerte speciali" casella di controllo è selezionata per impostazione predefinita, gli utenti che non prestare particolare attenzione potrebbero inavvertitamente iscrizione a posta elettronica marketing o newsletter che non vengano Se si desidera ricevere.
+Durante il processo di registrazione, se la casella di controllo "Sì, Inviami la tua newsletter" o "Sì, Inviami offerte speciali" è selezionata per impostazione predefinita, gli utenti che non prestano molta attenzione possono involontariamente iscriversi per la posta elettronica di marketing o le newsletter che non desidera ricevere.
   
- È consigliabile l'opzione doppio di consenso esplicito in realtà, il che significa che la casella di controllo per i messaggi di marketing o newsletter sia selezionata per impostazione predefinita. Inoltre, dopo che il modulo di registrazione è stato inviato, all'utente con un URL che consente di verificare la propria decisione di ricevere messaggi di marketing viene inviato un messaggio di posta elettronica di verifica. 
+ È consigliabile invece l'opzione double opt-in, il che significa che la casella di controllo per i messaggi di posta elettronica di marketing o le newsletter è deselezionata per impostazione predefinita. Inoltre, una volta che il modulo di registrazione è stato inviato, un messaggio di posta elettronica di verifica viene inviato all'utente con un URL che consente di confermare la decisione di ricevere messaggi di posta elettronica di marketing. 
   
- In questo modo si garantisce che solo gli utenti che desiderano ricevere posta marketing effettuati la registrazione per i messaggi di posta elettronica, successivamente deselezionando la società invio di un messaggio di posta elettronica ambigui marketing consigliate. 
+ In questo modo si garantisce che solo gli utenti che desiderano ricevere la posta elettronica di marketing siano iscritti per la posta elettronica, successivamente deselezionando la società di invio di eventuali pratiche di marketing della posta elettronica discutibili. 
   
-### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Verificare che il contenuto di messaggi di posta elettronica trasparente e riconducibili
+### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Verificare che il contenuto del messaggio di posta elettronica sia trasparente e tracciabile
 
-Altrettanto importante come il contenuto che contengono il modo in cui che vengono inviati i messaggi di posta elettronica. Durante la creazione di contenuto di posta elettronica, utilizzare le procedure consigliate seguenti per verificare che i messaggi di posta elettronica non verrà essere contrassegnati da servizi di filtro della posta elettronica:
+Altrettanto importante del modo in cui vengono inviati i messaggi di posta elettronica è il contenuto che contengono. Quando si crea il contenuto della posta elettronica, utilizzare le procedure consigliate seguenti per garantire che i messaggi di posta elettronica non vengano contrassegnati tramite i servizi di filtraggio delle e-mail:
   
-- Quando il messaggio di posta elettronica richiede che i destinatari di aggiungere il mittente alla Rubrica, è necessario indicare che tale azione non è una garanzia di recapito.
+- Quando il messaggio di posta elettronica richiede che i destinatari aggiungono il mittente alla Rubrica, è necessario indicare chiaramente che tale azione non è una garanzia di recapito.
     
-- Devono essere inclusi nel corpo del messaggio i reindirizzamenti simile e coerenti e non più e variabili. Un reindirizzamento in questo contesto è tutto ciò che punta dal messaggio, ad esempio documenti e collegamenti. Se si dispone di una quantità elevata di tali campagne o annullare collegamenti o aggiornare i collegamenti di profilo, sono tutti i devono puntare allo stesso dominio. Per esempio:
+- I reindirizzamenti inclusi nel corpo del messaggio devono essere simili e coerenti e non multipli e diversificati. Un reindirizzamento in questo contesto è qualsiasi elemento che punti al di fuori del messaggio, ad esempio collegamenti e documenti. Se si dispone di numerosi collegamenti pubblicitari o di annullamento della sottoscrizione oppure si aggiornano i collegamenti dei profili, tutti gli utenti devono puntare allo stesso dominio. Per esempio:
     
-    Correggere
+    Corretto
     
      `unsubscribe.bulkmailer.com`
     
@@ -184,12 +186,12 @@ Altrettanto importante come il contenuto che contengono il modo in cui che vengo
     
      `options.yahoo.com`
     
-- Evitare di contenuto con immagini di grandi dimensioni e gli allegati o messaggi composti unicamente di un'immagine.
+- Evitare contenuti con immagini e allegati di grandi dimensioni o messaggi composti unicamente da un'immagine.
     
-- Impostazioni relative alla privacy pubblica o P3P devono indicare la presenza di verifica pixel (bug web o beacon).
+- La privacy pubblica o le impostazioni di P3P devono indicare chiaramente la presenza di pixel di rilevamento (bug Web o beacon).
     
-### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Rimuovere gli alias di posta elettronica non corretto dei database
+### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Rimuovere gli alias di posta elettronica non corretti dai database
 
-Un alias di posta elettronica del database che consente di creare un rimbalzo-back è necessario e inserisce i messaggi di posta elettronica in uscita a rischio per un ulteriore esame da servizi di filtro della posta elettronica. Verificare che il database di posta elettronica aggiornato.
+Qualsiasi alias di posta elettronica nel database che consente di creare un rimbalzo non è necessario e pone i messaggi di posta elettronica in uscita a rischio per un ulteriore controllo tramite i servizi di filtraggio della posta elettronica. Verificare che il database di posta elettronica sia aggiornato.
   
 

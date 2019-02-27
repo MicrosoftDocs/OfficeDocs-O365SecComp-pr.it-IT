@@ -7,16 +7,17 @@ ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo di Office 365 per gli eventi che vengono registrati quando gli amministratori di conformità eseguono le attività &amp; di ricerca contenuto e di eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: 1e364e1d82acb7ad72c4a6d3fb27421a9a89916c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4778fd2aab48d58b3104dd2466875ba53e2c0a0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220896"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296759"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di attività di eDiscovery nel registro di controllo di Office 365
 

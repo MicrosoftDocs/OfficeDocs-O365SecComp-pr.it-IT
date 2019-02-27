@@ -1,7 +1,7 @@
 ---
 title: Configurare i criteri anti-phishing ATP di Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -9,13 +9,15 @@ ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
+ms.collection:
+- M365-security-compliance
 description: La protezione anti-phishing, con una protezione globale come parte di Office 365 Advanced Threat Protection e la protezione di base in Office 365 Exchange Online Protection, può contribuire a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing.
-ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213706"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276276"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostare i criteri di anti-phishing e anti-phishing di Office 365 ATP
 
@@ -114,7 +116,7 @@ L'amministratore della sicurezza di Contoso può utilizzare valori analoghi al s
 |:-----|:-----|
 |**Impostazione o opzione** <br/> |**Esempio** <br/> |
 |Name  <br/> |Dominio e CEO  <br/> |
-|Description  <br/> |Verificare che il CEO e il dominio non vengano rappresentati.  <br/> |
+|Descrizione  <br/> |Verificare che il CEO e il dominio non vengano rappresentati.  <br/> |
 |Aggiungere gli utenti a Protect  <br/> |L'indirizzo di posta elettronica del CEO come minimo.  <br/> |
 |Aggiungere domini da proteggere  <br/> |Il dominio dell'organizzazione che include l'ufficio del CEO.  <br/> |
 |Scegliere azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica** e quindi digitare l'indirizzo di posta elettronica dell'amministratore `securityadmin@contoso.com`della protezione, ad esempio.  <br/> Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere **Quarantine Message**.  <br/> |

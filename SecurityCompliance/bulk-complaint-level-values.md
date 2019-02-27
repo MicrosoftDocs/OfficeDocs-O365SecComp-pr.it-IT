@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: I messaggi di posta elettronica in blocco variano nelle procedure di invio di tterns, creazione di contenuto e acquisizione di elenchi. Alcuni sono buoni mailer che inviano messaggi desiderati con contenuto pertinente ai propri abbonati. Questi messaggi generano alcuni reclami dai destinatari. Altri messaggi di posta elettronica in blocco inviano messaggio non richiesti che assomigliano molto alla posta indesiderata e generano numerosi reclami dai destinatari. Per distinguere questi tipi di messaggi di posta elettronica in blocco, viene assegnato un punteggio di livello di reclamo in blocco da parte di un messaggio di posta elettronica in blocco. Le valutazioni BCL variano da 1 a 9 a seconda di quanto è probabile che il mailer di posta in blocco debba generare reclami. Un mittente che ha un punteggio di BCL 9 può generare molti reclami dai destinatari, mentre non è probabile che un punteggio di BCL 3 generi molti reclami. Microsoft utilizza origini sia interne che di terze parti per identificare la posta in blocco e determinare la BCL appropriata. Questa valutazione è esposta nell'intestazione X-Microsoft-antispam di ogni messaggio. Per ulteriori informazioni su questa intestazione del messaggio, vedere intestazioni dei messaggi di protezione da posta indesiderata.
-ms.openlocfilehash: 9947c0f36681126748e8617d67116c6932209760
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: I messaggi di posta elettronica in blocco variano nei modelli di invio, nella creazione di contenuto e nelle procedure di acquisizione dell'elenco. Alcuni sono buoni mailer che inviano messaggi desiderati con contenuto pertinente ai propri abbonati. Questi messaggi generano alcuni reclami dai destinatari. Altri messaggi di posta elettronica in blocco inviano messaggio non richiesti che assomigliano molto alla posta indesiderata e generano numerosi reclami dai destinatari. Per distinguere questi tipi di messaggi di posta elettronica in blocco, viene assegnato un punteggio di livello di reclamo in blocco da parte di un messaggio di posta elettronica in blocco. Le valutazioni BCL variano da 1 a 9 a seconda di quanto è probabile che il mailer di posta in blocco debba generare reclami. Un mittente che ha un punteggio di BCL 9 può generare molti reclami dai destinatari, mentre non è probabile che un punteggio di BCL 3 generi molti reclami. Microsoft utilizza origini sia interne che di terze parti per identificare la posta in blocco e determinare la BCL appropriata. Questa valutazione è esposta nell'intestazione X-Microsoft-antispam di ogni messaggio. Per ulteriori informazioni su questa intestazione del messaggio, vedere intestazioni dei messaggi di protezione da posta indesiderata.
+ms.openlocfilehash: a948e90ba436dcfdb78df856e090983e6015bb0a
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276016"
 ---
 # <a name="bulk-complaint-level-values"></a>Valori di livello di reclamo in blocco
 

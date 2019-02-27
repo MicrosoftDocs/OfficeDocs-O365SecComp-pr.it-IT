@@ -1,7 +1,7 @@
 ---
-title: Evitare di utilizzare caratteri non validi in regole del filtro posta indesiderata e il criterio di filtro posta indesiderata
-ms.author: krowley
-author: kccross
+title: Evitare caratteri non validi nelle regole del filtro di posta indesiderata e nel criterio filtro posta indesiderata
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
 ms.audience: ITPro
@@ -10,40 +10,42 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Vengono fornite informazioni per gli amministratori che dispongono di caratteri non validi la configurazione di protezione da posta indesiderata e riscontrano problemi durante il tentativo di utilizzare la protezione &amp; centro conformità.
-ms.openlocfilehash: ca409b4daa7bec01417adb7cbfdfa2a128929e81
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.collection:
+- M365-security-compliance
+description: Viene fornita assistenza per gli amministratori che dispongono di caratteri non validi nella configurazione di protezione da posta indesiderata e vengono eseguiti in &amp; problemi quando si tenta di utilizzare il Centro sicurezza e conformità.
+ms.openlocfilehash: 90cf89d019a34658b676f02baa84c70f27200262
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018735"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276077"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitare di utilizzare caratteri non validi in regole del filtro posta indesiderata e criterio di filtro della posta indesiderata 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitare caratteri non validi nelle regole del filtro posta indesiderata e nei criteri di filtro della posta 
 
-In precedenza, gli amministratori di Office 365 impostato e configurato le regole di filtro posta indesiderata e il criterio di filtro posta indesiderata tramite l'interfaccia di amministrazione Exchange (EAC). È ora, utilizzare la sicurezza &amp; centro conformità per gestire la la configurazione di protezione da posta indesiderata. I caratteri seguenti sono supportati in EAC, ma non sono supportati per l'utilizzo della protezione &amp; centro conformità.  
+In precedenza, gli amministratori di Office 365 impostare e configurare le regole di filtro della posta indesiderata e i criteri di filtro della posta indesiderata tramite l'interfaccia di amministrazione di Exchange. A questo punto, è possibile &amp; utilizzare il Centro sicurezza e conformità per gestire la configurazione della protezione da posta indesiderata. I caratteri seguenti sono supportati nell'interfaccia di amministrazione di Exchange, ma non sono supportati per &amp; l'utilizzo nel centro sicurezza e conformità.  
 
 **Caratteri non validi:**
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-Se le regole di filtro posta indesiderata o i criteri di filtro posta indesiderata contiene uno dei caratteri non validi, potrebbero verificarsi uno o tutti questi problemi:
-- Può risultare impossibile trovare il criterio o le regole per la protezione &amp; centro conformità.
-- È possibile ricevere errori durante il tentativo di ottenere le regole o i criteri utilizzando Windows PowerShell.
-- È possibile che le impostazioni o criteri di non eseguire o eseguire nel modo previsto.
+Se le regole del filtro di posta indesiderata o il criterio di filtro della posta indesiderata contiene uno dei caratteri non validi, è possibile che si verifichi uno o tutti questi problemi:
+- Potrebbe essere Impossibile trovare il criterio o le regole nel centro sicurezza &amp; e conformità.
+- È possibile che si verifichino errori durante il tentativo di ottenere le regole o il criterio utilizzando Windows PowerShell.
+- Potrebbe risultare che il criterio o le impostazioni non vengano eseguite o eseguite come previsto.
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Rimuovere i caratteri non validi dal criterio di filtro posta indesiderata e regole
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Rimuovere i caratteri non validi dai criteri e dalle regole del filtro della posta indesiderata
 
-Dopo aver identificato i criteri e le regole contenenti caratteri non validi, è possibile modificare i nomi mediante i cmdlet di Windows PowerShell. 
+Dopo aver identificato i criteri e le regole che contengono caratteri non validi, è possibile modificare i nomi utilizzando i cmdlet di Windows PowerShell. 
 
-1. [Connessione a Exchange Online tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Connettersi a Exchange Online tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
-2. Per modificare il nome del criterio di filtro posta indesiderata, eseguire il cmdlet Set-HostedContentFilterPolicy come indicato di seguito:
+2. Per modificare il nome del criterio di filtro della posta indesiderata, eseguire il cmdlet Set-HostedContentFilterPolicy come indicato di seguito:
     
     ```
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. Per modificare il nome di una regola di filtro posta indesiderata, eseguire il cmdlet Set-HostedContentFilterRule come indicato di seguito:
+3. Per modificare il nome di una regola di filtro per la posta indesiderata, eseguire il cmdlet Set-HostedContentFilterRule come indicato di seguito:
     
     ```
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
@@ -52,7 +54,7 @@ Dopo aver identificato i criteri e le regole contenenti caratteri non validi, è
   
  ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Gestione della protezione delle minacce &amp; centro conformità](threat-management.md)
+[Gestione delle minacce nel centro &amp; sicurezza e conformità](threat-management.md)
   
 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 

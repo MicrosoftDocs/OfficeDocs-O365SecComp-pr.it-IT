@@ -1,7 +1,7 @@
 ---
 title: Controllo della posta indesiderata in uscita in Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: Admin
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
 description: Se l'organizzazione invia una gran quantità di posta in blocco contrassegnata come posta indesiderata, potrebbe essere bloccata dall'invio di messaggi di posta elettronica con Office 365. Leggere questo articolo per ulteriori informazioni sul motivo per cui questo accade e su cosa è possibile fare.
-ms.openlocfilehash: 1098d22dedf9fd2a40b6ad8320c61ecd86f66593
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218686"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275926"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controllo della posta indesiderata in uscita in Office 365
 
