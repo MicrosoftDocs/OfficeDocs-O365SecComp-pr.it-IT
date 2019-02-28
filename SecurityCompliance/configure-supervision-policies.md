@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare un criterio di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216736"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313172"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare i criteri di supervisione per l'organizzazione
 
@@ -53,9 +53,9 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
     Test dei criteri di supervisione per assicurarsi che funzioni come desiderato è una parte importante per garantire che la strategia di conformità soddisfi gli standard.
 
-- **Passaggio 6-(facoltativo)** [Configurare il componente aggiuntivo di Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni sorvegliate](configure-supervision-policies.md#UseOutlook)
+- **Passaggio 6-(facoltativo)** [Configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni sorvegliate](configure-supervision-policies.md#UseOutlook)
 
-    Il componente aggiuntivo di superVisione per Outlook consente ai revisori di accedere alla funzionalità di supervisione direttamente all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
+    Outlook può essere configurato per consentire agli utenti di accedere alla funzionalità di supervisione all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Dopo aver creato un criterio di supervisione, è consigliabile verificare che le
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>Passaggio 6: configurare il componente aggiuntivo di Outlook per i revisori (facoltativo)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Passaggio 6: configurare Outlook per i revisori (facoltativo)
 
-I revisori che desiderano utilizzare Outlook anziché utilizzare il dashboard di superVisione in Office 365 o Outlook sul Web per esaminare le comunicazioni devono installare il componente aggiuntivo di superVisione per il client di Outlook.
+I revisori che desiderano utilizzare Outlook anziché utilizzare il dashboard di superVisione in Office 365 per esaminare le comunicazioni devono configurare il client di Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Passaggio 1: copiare l'indirizzo della cassetta postale di supervisione
 
-Per installare il componente aggiuntivo per Outlook desktop, è necessario l'indirizzo della cassetta postale di supervisione che è stata creata come parte del programma di installazione dei criteri di supervisione.
+Per configurare la revisione per Outlook desktop o Outlook per il Web, è necessario l'indirizzo della cassetta postale di supervisione creata come parte del programma di installazione dei criteri di supervisione.
   
 > [!NOTE]
 > Se un altro utente ha creato il criterio, è necessario ottenere questo indirizzo da loro per installare il componente aggiuntivo.
@@ -210,7 +210,7 @@ Per installare il componente aggiuntivo per Outlook desktop, è necessario l'ind
 
 4. Nel riquadro a comparsa dei dettagli del criterio, in **cassetta postale**di supervisione, copiare l'indirizzo.<br/>![La sezione "cassetta postale di superVisione" del riquadro a comparsa dei dettagli del criterio di supervisione che mostra l'indirizzo della cassetta postale](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>Passaggio 2: configurare la cassetta postale di supervisione per Outlook desktop Access
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Passaggio 2: configurare la cassetta postale di supervisione per l'accesso di Outlook
 
 Successivamente, i revisori dovranno eseguire un paio di comandi di PowerShell di Exchange online in modo che possano connettere Outlook alla cassetta postale di supervisione.
   
