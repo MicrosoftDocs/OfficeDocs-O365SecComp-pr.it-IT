@@ -95,7 +95,7 @@
 ### [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)
 ### [Evitare che la posta elettronica venga contrassegnata come indesiderata in Exchange Online Protection e Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Controllo della posta indesiderata in uscita in Office 365](outbound-spam-controls.md)
-### [Bloccare la posta indesiderata utilizzando l'apposito filtro di Office 365 per evitare problemi di falsi negativi](block-email-spam-to-prevent-false-negatives.md)
+### [Bloccare la posta indesiderata utilizzando l'apposito filtro di Office 365 per evitare problemi di falsi negativi](reduce-spam-email.md)
 ### [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](zero-hour-auto-purge.md)
 ### [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [Segnalazione di messaggi indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [Gestire i set caricati](compliance20/manage-load-sets.md)
 #### [Caricare dati non Office 365 in un set di lavoro](compliance20/load-non-office365-data.md)
 #### [Eseguire query sui dati in un set di lavoro](compliance20/working-set-search.md)
-#### [Visualizzare i documenti in un set di lavoro](compliance20/annotating-and-redacting-documents.md)
+#### [Visualizzare i documenti in un set di lavoro](compliance20/view-documents-in-working-set.md)
 #### [Aggiungere tag ai documenti in un set di lavoro](compliance20/tagging-documents.md)
 
 ### [Analizzare i dati del caso](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [Configurare le impostazioni di ricerca e analisi](compliance20/configure-search-analytics-settings.md)
 
 ### Informazioni di riferimento su Advanced eDiscovery (anteprima)
-#### [Limiti relativi alla ricerca](compliance20/search-limits-ediscovery20.md)
-#### [Limiti relativi all'indicizzazione](compliance20/indexing-limits-ediscovery20.md)
-#### [Limiti relativi all'esportazione](compliance20/export-limits-ediscovery20.md)
-#### [Limiti relativi al download](compliance20/download-limits-ediscovery20.md)
+#### [Limiti di Advanced eDiscovery (anteprima)](compliance20/limits-ediscovery20.md)
 #### [Tipi di file supportati](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campi dei metadati del documento](compliance20/document-metadata-fields.md)
 
