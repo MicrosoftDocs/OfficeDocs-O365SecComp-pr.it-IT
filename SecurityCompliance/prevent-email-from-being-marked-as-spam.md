@@ -14,26 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Informazioni su come impedire falsi positivi ed evitare che messaggi di posta elettronica effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219416"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296889"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365
 
  **I messaggi effettivi vengono contrassegnata come posta indesiderata in Office 365? Ecco cosa fare.**
   
-Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica basato sul cloud che contribuisce a proteggere l'organizzazione da posta indesiderata e malware. Le cassette postali di Office 365 sono automaticamente protette da Exchange Online Protection come parte del servizio.
-
-EOP prova a filtrare la posta indesiderata, impedendo agli utenti di visualizzare nella Posta in arrivo contenuti non desiderati. Tuttavia, in alcuni casi, EOP filtra anche elementi che si intende visualizzare. Quando un messaggio viene erroneamente contrassegnato come posta indesiderata dal filtro posta indesiderata, viene definito falso positivo.
-
 Se si riceve un falso positivo, è opportuno segnalare il messaggio a Microsoft usando il [componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). È inoltre possibile inoltrare il messaggio *come allegato* all'indirizzo junk@office365.microsoft.com.
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**Importante** Se non si inoltrano i messaggi come allegato, mancheranno le intestazioni e non potremo migliorare il filtro protezione da posta indesiderata di Office 365.
     
-## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Stabilire il motivo per cui il messaggio è stato contrassegnato come posta indesiderata
+## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinare il motivo per cui il messaggio è stato contrassegnato come posta indesiderata
 
 Per risolvere molti problemi relativi alla posta indesiderata in Office 365, è possibile [visualizzare le intestazioni dei messaggi di posta elettronica](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) per determinare la causa del problema. L'intestazione da cercare è X-Forefront-Antispam-Report. Per altre informazioni sulle intestazioni dei messaggi della protezione da posta indesiderata, è possibile consultare [questo articolo](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
   
