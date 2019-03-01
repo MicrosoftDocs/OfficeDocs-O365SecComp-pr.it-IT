@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218976"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341768"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -456,7 +456,7 @@ DLP valuta qualsiasi contenuto che può essere indicizzato. Per ulteriori inform
 
 Quando si crea un criterio DLP che include Exchange Online come percorso, il criterio è sincronizzato dal centro sicurezza &amp; e conformità di Office 365 a Exchange Online e quindi da Exchange Online a Outlook sul Web e Outlook 2013 e versioni successive.
   
-Quando un messaggio viene composto in Outlook, l'utente può visualizzare i suggerimenti per i criteri quando il contenuto da creare viene valutato in base ai criteri DLP. Dopo aver inviato un messaggio, viene valutato in base ai criteri DLP come parte normale del flusso di posta, insieme alle regole di trasporto di Exchange e ai criteri DLP creati nell'interfaccia di amministrazione di Exchange (vedere la sezione successiva per altre informazioni). I criteri DLP analizzano sia il messaggio che gli allegati.
+Quando un messaggio viene composto in Outlook, l'utente può visualizzare i suggerimenti per i criteri quando il contenuto da creare viene valutato in base ai criteri DLP. Dopo aver inviato un messaggio, viene valutato in base ai criteri DLP come parte normale del flusso di posta, oltre alle regole del flusso di posta di Exchange (note anche come regole di trasporto) e ai criteri DLP creati nell'interfaccia di amministrazione di Exchange (vedere la sezione successiva per altre informazioni). I criteri DLP analizzano sia il messaggio che gli allegati.
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Valutazione dei criteri nei programmi desktop di Office 2016
 

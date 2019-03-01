@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il centro conformità & sicurezza di Office 365 per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296609"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341777"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro conformità di Office 365 Security &
 
@@ -295,12 +295,13 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |:-----|:-----|:-----|
 |[Attività di file e pagine](#file-and-page-activities)<br/> |[Attività cartella](#folder-activities)<br/> |[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |
 |[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività amministrative del sito](#site-administration-activities)<br/> |[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |
-|[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |
-|[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |[Attività di amministrazione della directory](#directory-administration-activities) <br/> |
-|[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|
-[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[App di Microsoft Power](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
-|||
+|[Criteri di conservazione e attività relative alle etichette](#retention-policy-and-label-activities) <br/>|[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> 
+|[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |
+|[Attività di amministrazione della directory](#directory-administration-activities) <br/> |[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |
+|[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |
+[Microsoft Flow](#microsoft-flow) <br/> |[App di Microsoft Power](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
+|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Attività di file e pagine
@@ -474,8 +475,10 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
 |Aggiunta delle autorizzazioni per le cassette postali delegate  <br/> |Add-MailboxPermission  <br/> |Un amministratore ha assegnato l'autorizzazione cassetta postale di FullAccess a un utente (noto come delegato) alla cassetta postale di un'altra persona. L'autorizzazione FullAccess consente al delegato di aprire la cassetta postale dell'altra persona e di leggere e gestire il contenuto della cassetta postale.  <br/> |
+|Messaggio classificato come record  <br/> |ApplyRecordLabel<br/> |Un messaggio è stato classificato come record. Questo problema si verifica quando un'etichetta di conservazione che classifica il contenuto come record viene applicata manualmente o automaticamente a un messaggio.<br/> |
 |Copia dei messaggi in un'altra cartella  <br/> |Copia  <br/> |Messaggio copiato in un'altra cartella.  <br/> |
 |Elemento della cassetta postale creato  <br/> |Creazione  <br/> |Un elemento viene creato nella cartella calendario, contatti, note o attività nella cassetta postale. ad esempio, viene creata una nuova convocazione di riunione. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.  <br/> |
+|Nuova regola di posta in arrivo creata in Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Messaggi eliminati dalla cartella Posta eliminata  <br/> |SoftDelete  <br/> |Un messaggio è stato eliminato definitivamente o eliminato dalla cartella Posta eliminata. Questi elementi vengono spostati nella cartella elementi ripristinabili. I messaggi vengono spostati nella cartella elementi ripristinabili anche quando un utente la seleziona e preme **MAIUSC + CANC**.<br/> |
 |Spostamento dei messaggi in un'altra cartella  <br/> |Move  <br/> |Messaggio spostato in un'altra cartella.  <br/> |
 |Spostamento dei messaggi nella cartella Posta eliminata  <br/> |MoveToDeletedItems  <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |
@@ -490,6 +493,28 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |nessuno  <br/> |UpdateInboxRules  <br/> |È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.<br/> Per restituire le voci per le attività della regola di posta in arrivo, è necessario selezionare **Mostra risultati per tutte** le attività nell'elenco **attività** . Utilizzare le caselle Intervallo di date e l'elenco **utenti** per restringere i risultati della ricerca.<br/> |
 ||||
   
+### <a name="retention-policy-and-label-activities"></a>Criteri di conservazione e attività relative alle etichette
+
+Nella tabella seguente vengono descritte le attività relative ai criteri di conservazione di Office 365 e alle etichette di conservazione di Office 365 per ulteriori informazioni, vedere:
+
+- [Panoramica dei criteri di conservazione](retention-policies.md)
+- [Panoramica delle etichette di conservazione](labels.md)
+<br/>
+
+|**Attività**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+| Configurazione di conservazione creata per un criterio di conservazione<br/> |NewRetentionComplianceRule<br/> |Administrator consente di configurare le impostazioni di conservazione per un nuovo criterio di conservazione. Le impostazioni di conservazione includono la durata di conservazione degli elementi e gli elementi che si verificano quando il periodo di mantenimento scade, ad esempio l'eliminazione di elementi, la conservazione degli elementi o la conservazione e la loro eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
+| Etichetta di conservazione creata <br/> |NewComplianceTag<br/>  |L'amministratore crea una nuova etichetta di conservazione.<br/> |
+| Criterio di conservazione creato<br/> |NewRetentionCompliancePolicy<br/> |L'amministratore crea un nuovo criterio di conservazione.<br/>  |
+| Configurazione di conservazione eliminata per un criterio di conservazione<br/> | RemoveRetentionComplianceRule<br/>| L'amministratore Elimina le impostazioni di configurazione di un criterio di conservazione. È probabile che questa attività venga registrata quando un amministratore Elimina un criterio di conservazione o esegue il cmdlet **Remove-RetentionComplianceRule** .<br/> |
+| Etichetta di conservazione eliminata <br/> |RemoveComplianceTag<br/>  | L'amministratore Elimina un'etichetta di conservazione.<br/>|
+| Criterio di conservazione eliminato<br/> |RemoveRetentionCompliancePolicy<br/> |L'amministratore Elimina un criterio di conservazione. <br/>  |
+| Abilitare le funzionalità di conformità alle normative<br/> |SetRestrictiveRetentionUI<br/> |L'amministratore consente di abilitare le funzionalità di conformità alle normative eseguendo il cmdlet **set-RegulatoryComplianceUI** . Dopo l'esecuzione di questo cmdlet, gli amministratori possono bloccare un criterio di conservazione e specificare un'etichetta di conservazione come record normativo utilizzando l'interfaccia utente del centro conformità di sicurezza &. Fino a quando un'organizzazione utilizza il cmdlet **set-RegulatoryComplianceUI** per abilitare queste funzionalità, il blocco di un criterio di conservazione e la creazione di un'etichetta di conservazione regolabile possono essere eseguiti solo tramite PowerShell.<br/>|
+| Configurazione di conservazione aggiornata per un criterio di conservazione<br/> | SetRetentionComplianceRule<br/>| L'amministratore modifica le impostazioni di conservazione per un criterio di conservazione esistente. Le impostazioni di conservazione includono la durata di conservazione degli elementi e gli elementi che si verificano quando il periodo di mantenimento scade, ad esempio l'eliminazione di elementi, la conservazione degli elementi o la conservazione e la loro eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) .<br/>|
+| Etichetta di conservazione aggiornata <br/> |SetComplianceTag<br/>  | L'amministratore aggiorna un'etichetta di conservazione esistente.<br/>|
+| Criterio di conservazione aggiornato<br/> |SetRetentionCompliancePolicy <br/>|L'amministratore aggiorna un criterio di conservazione esistente. Gli aggiornamenti che attivano questo evento includono l'aggiunta o l'esclusione di percorsi di contenuto a cui viene applicato il criterio di conservazione.<br/>|
+||||
+
 ### <a name="sway-activities"></a>Attività di Sway
   
 Nella tabella seguente sono elencate le attività di utenti e amministratori in Sway. Sway è un'app di Office 365 che consente agli utenti di raccogliere, formattare e condividere idee, storie e presentazioni in un'area di lavoro interattiva basata sul Web. Per ulteriori informazioni, vedere [Frequently Asked Questions about Sway-Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
@@ -687,7 +712,7 @@ Nella tabella seguente sono elencate le attività dell'utente e dell'amministrat
 |File visualizzato  <br/> |FileVisiting  <br/> |L'utente visualizza un file.  <br/> |
 ||||
    
-### <a name="microsoft-flow"></a>Microsoft Flow
+### <a name="microsoft-flow-activities"></a>Attività di flusso Microsoft
 
 È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Flow. Tali attività includono la creazione, la modifica e l'eliminazione dei flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo per le attività di flusso, vedere il Blog [Microsoft Flow Audit Events now available in Office 365 Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
@@ -695,10 +720,10 @@ Nella tabella seguente sono elencate le attività dell'utente e dell'amministrat
 
 È possibile eseguire una ricerca nel registro di controllo per le attività relative all'applicazione in PowerApps. Tali attività includono la creazione, l'avvio e la pubblicazione di un'app. l'assegnazione delle autorizzazioni per le app è anche controllata. Per una descrizione di tutte le attività di PowerApps, vedere [registrazione attività per PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
-### <a name="microsoft-stream"></a>Microsoft Stream
+### <a name="microsoft-stream-activities"></a>Attività di Microsoft Stream
   
 È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Stream. Tali attività includono attività video eseguite da utenti, attività di canale di gruppo e attività amministrative quali la gestione degli utenti, la gestione delle impostazioni dell'organizzazione e l'esportazione di report. Per una descrizione di queste attività, vedere la sezione "attività registrate in Microsoft Stream" nei [registri di controllo in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
-  
+
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
   
 La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, consente di registrare un evento nel registro di controllo di Office 365 quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica all'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o l'esecuzione di un cmdlet in Windows PowerShell vengono registrate nel registro di controllo di amministrazione di Exchange. Per informazioni più dettagliate sulla registrazione dei controlli di amministrazione in Exchange, vedere [registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).

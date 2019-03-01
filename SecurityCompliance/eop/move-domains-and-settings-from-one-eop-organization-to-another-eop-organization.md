@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002217"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341557"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di EOP a un'altra organizzazione di EOP
 
 Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta. 
   
 > [!NOTE]
->  Le impostazioni possono essere affidabile spostate solo da un EOP autonomo (Standard) organizzazione a un altro EOP Standard o un Exchange Enterprise CAL con l'organizzazione dei servizi (Premium EOP) o da un'organizzazione di EOP Premium a un'altra organizzazione EOP Premium. Dal momento che alcune funzioni avanzate non sono supportati nelle organizzazioni EOP Standard, si sposta da un'organizzazione Premium di EOP in un'organizzazione EOP Standard potrebbe non essere completata. > Queste istruzioni sono per organizzazioni basate solo il filtraggio EOP. Sono disponibili ulteriori considerazioni per lo spostamento da un'organizzazione di Exchange Online a un'altra organizzazione Exchange Online. Le organizzazioni Exchange Online rientrano nell'ambito di queste istruzioni. 
+>  Le impostazioni possono essere spostate in modo affidabile solo da un'organizzazione di EOP autonoma (standard) a un'altra EOP standard o a un'organizzazione di Exchange Enterprise CAL with Services (EOP Premium) o da un'organizzazione di EOP Premium a un'altra organizzazione di EOP Premium. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo. > queste istruzioni sono disponibili solo per le organizzazioni di solo filtro di EOP. Sono disponibili ulteriori considerazioni per passare da un'organizzazione di Exchange Online a un'altra dell'organizzazione di Exchange Online. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni. 
   
 Nell'esempio seguente, Contoso, Ltd. è stato unito a Contoso Suite. Nella figura seguente viene illustrato il processo di trasferimento di domini, utenti e gruppi di posta e impostazioni dall'organizzazione EOP di origine (contoso.onmicrosoft.com) all'organizzazione EOP di destinazione (contososuites.onmicrosoft.com):
   
@@ -47,10 +47,10 @@ Per ricreare l'organizzazione di origine nell'organizzazione di destinazione, as
     
 - Connettori
     
-- Regole di trasporto
+- Regole del flusso di posta (note anche come regole di trasporto)
     
     > [!NOTE]
-    > Il supporto sui cmdlet per l'esportazione e l'importazione della raccolta di regole di trasporto è supportato solo per i piani di sottoscrizione a EOP Premium al momento. 
+    > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP. 
   
 Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare Windows PowerShell remoto. Per connettersi a EOP utilizzando Windows PowerShell remoto, vedere [Connessione a Exchange Online Protection tramite PowerShell remota](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Lo script seguente consente di raccogliere tutti gli utenti e i gruppi di posta, le impostazioni di protezione dalla posta indesiderata, le impostazioni antimalware, i connettori e le regole di trasporto dell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come Source_EOP_Settings.ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
+Lo script seguente può essere utilizzato per raccogliere tutti gli utenti di posta elettronica, i gruppi, le impostazioni di protezione dalla posta indesiderata, le impostazioni antimalware, i connettori e le regole del flusso di posta nell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come blocco note, salvare il file come Source_EOP_Settings. ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 Eseguire i comandi seguenti dalla directory di esportazione per aggiornare i file XML con l'organizzazione di destinazione. Sostituire contoso.onmicrosoft.com e contososuites.onmicrosoft.com con i nomi delle organizzazioni di origine e di destinazione.

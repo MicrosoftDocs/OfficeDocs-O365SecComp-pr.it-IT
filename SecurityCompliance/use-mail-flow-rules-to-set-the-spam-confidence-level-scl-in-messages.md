@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: È possibile creare una regola di trasporto che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il livello SCL è una misura del modo in cui un messaggio deve essere la posta indesiderata. La posta indesiderata è messaggi di posta elettronica non richiesti (e in genere indesiderati). Il servizio esegue un'azione diversa su un messaggio in base alla classificazione SCL. Ad esempio, si potrebbe voler bypassare il filtro del contenuto di posta indesiderata per i messaggi inviati da persone all'interno dell'organizzazione perché è attendibile che un messaggio inviato internamente da un collega non sia posta indesiderata. L'utilizzo delle regole di trasporto per impostare il valore SCL di un messaggio garantisce un maggiore controllo della gestione della posta indesiderata.
-ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Gli amministratori possono imparare a impostare il SCL dei messaggi in Exchange Online Protection.
+ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275626"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341347"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
 
-È possibile creare una regola di trasporto che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il livello SCL è una misura del modo in cui un messaggio deve essere la posta indesiderata. La posta indesiderata è messaggi di posta elettronica non richiesti (e in genere indesiderati). Il servizio esegue un'azione diversa su un messaggio in base alla classificazione SCL. Ad esempio, si potrebbe voler bypassare il filtro del contenuto di posta indesiderata per i messaggi inviati da persone all'interno dell'organizzazione perché è attendibile che un messaggio inviato internamente da un collega non sia posta indesiderata. L'utilizzo delle regole di trasporto per impostare il valore SCL di un messaggio garantisce un maggiore controllo della gestione della posta indesiderata. 
+È possibile creare una regola del flusso di posta (nota anche come regola di trasporto) che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il livello SCL è una misura del modo in cui un messaggio deve essere la posta indesiderata. La posta indesiderata è messaggi di posta elettronica non richiesti (e in genere indesiderati). Il servizio esegue un'azione diversa su un messaggio in base alla classificazione SCL. Ad esempio, si potrebbe voler bypassare il filtro del contenuto di posta indesiderata per i messaggi inviati da persone all'interno dell'organizzazione perché è attendibile che un messaggio inviato internamente da un collega non sia posta indesiderata. L'utilizzo delle regole del flusso di posta per impostare il valore SCL di un messaggio garantisce un maggiore controllo della gestione della posta indesiderata. 
   
  **Che cosa è necessario sapere prima di iniziare**
   
 - Tempo stimato per il completamento di questa procedura: 10 minuti.
     
-- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "regole di trasporto" in [autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [funzionalità Permissions in EOP](eop/feature-permissions-in-eop.md). 
+- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "regole del flusso di posta" in [autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [funzionalità Permissions in EOP](eop/feature-permissions-in-eop.md). 
     
 - Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange**.
     
-### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>Per creare una regola di trasporto che consente di impostare il livello SCL di un messaggio
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Per creare una regola del flusso di posta che consente di impostare il livello SCL di un messaggio
 
 1. Nell'interfaccia di amministrazione di Exchange (EAC), scegliere **regole**del **flusso** \> di posta.
     
@@ -64,7 +64,7 @@ ms.locfileid: "30275626"
 7. Specificare le proprietà aggiuntive per la regola e scegliere **Salva**.
     
     > [!TIP]
-    > Per ulteriori informazioni sulle proprietà aggiuntive che è possibile selezionare o specificare per questa regola, vedere [utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola di trasporto](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx#CreateEAC). 
+    > Per ulteriori informazioni sulle proprietà aggiuntive che è possibile selezionare o specificare per questa regola, vedere [utilizzo dell'interfaccia di amministrazione di Exchange per creare regole del flusso di posta](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules). 
   
 ## <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 

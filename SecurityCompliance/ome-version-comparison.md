@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Vengono illustrate le differenze tra le funzionalità fornite con diverse versioni della crittografia dei messaggi di Office 365 e il modo in cui i due continuano a funzionare insieme.
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216676"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341437"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
@@ -31,7 +31,7 @@ In questo articolo viene confrontata la crittografia dei messaggi legacy di Offi
 |                                   |Caratteristiche obsolete       |                   |Nuove funzionalità              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Funzionalità**                     | **OME legacy**    | **IRM**           | **Nuove funzionalità OME** |
-|*Invio di un messaggio crittografato*        |Tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook desktop o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato dal desktop di Outlook, Outlook per Mac o Outlook sul Web. tramite le regole di trasporto di Exchange e la prevenzione della perdita di dati (DLP) di Office 365|
+|*Invio di un messaggio crittografato*        |Tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook desktop o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato dal desktop di Outlook, Outlook per Mac o Outlook sul Web. tramite le regole del flusso di posta di Exchange (note anche come regole di trasporto) e la prevenzione della perdita di dati (DLP) di Office 365|
 |*Modello Rights Management*       |   N/D      |Non inoltrare l'opzione e i modelli personalizzati|Non inoltrare l'opzione, l'opzione solo crittografia e i modelli personalizzati|
 |*Tipo di destinatario*                   |Destinatari interni ed esterni|Solo destinatari interni         |Destinatari interni ed esterni|
 |*Esperienza per il destinatario interno*|I destinatari ricevono un messaggio HTML che consente di scaricare e aprire in un Web browser o in un'app per dispositivi mobili|Utilizzo nativo in linea nei client Outlook|Utilizzo nativo in linea per i destinatari di Office 365. Tutti gli altri destinatari possono leggere il messaggio dal portale OME (non è necessario alcun download o app).|

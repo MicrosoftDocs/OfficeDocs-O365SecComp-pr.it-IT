@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti che visualizzano un messaggio di notifica di posta indesiderata dell'utente finale dall'amministratore relativo alla posta in quarantena possono eseguire queste azioni nei messaggi. "
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275216"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341237"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilizzare le notifiche di posta indesiderata dell'utente finale per segnalare i messaggi di posta indesiderata in quarantena
 
@@ -41,6 +41,6 @@ Se l'amministratore abilita le notifiche di posta indesiderata dell'utente final
 - **Segnala come non indesiderata** Facendo clic su questo collegamento viene inviata una copia del messaggio a Microsoft per l'analisi. Il team di analisi di posta indesiderata, valuta e analizza il messaggio e a seconda dei risultati dell'analisi, regola il filtro di protezione da posta indesiderata per consentire l'inoltro del messaggio. 
     
 > [!NOTE]
->  I messaggi messi in quarantena dalle regole di trasporto non vengono inclusi nei messaggi in quarantena di posta indesiderata dell'utente finale. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena. >  È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta. 
+>  I messaggi messi in quarantena a causa di una regola del flusso di posta (nota anche come a) non sono inclusi nei messaggi di posta indesiderata in quarantena dell'utente finale. Sono elencati solo i messaggi in quarantena della posta indesiderata. > è possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) una volta. 
   
 

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. Come amministratore, è possibile effettuare alcune attività di gestione all'interno dell'interfaccia di amministrazione di Exchange (EAC) o utilizzando Windows PowerShell remoto, quindi verificare altre attività di gestione eseguite nell'interfaccia di amministrazione di Microsoft Office 365.
-ms.openlocfilehash: 0159604eaa4e021d9ccef544306e8b274af11f18
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027573"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341657"
 ---
 # <a name="manage-recipients-in-eop"></a>Gestione di destinatari in EOP
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i dest
   
 EOP supporta i seguenti tipi di destinatari:
   
-- **Utenti di posta elettronica** Utenti di posta elettronica sono i destinatari in EOP le gestiti domini. Questi destinatari dispongono di credenziali di accesso nella propria organizzazione Office 365, ma dispongono di indirizzi di posta elettronica esterno, il che significa che le cassette postali del destinatario si trovano all'esterno dell'organizzazione cloud. È possibile aggiungere utenti di posta elettronica in modo da poter ricevere posta elettronica che è inoltre possibile creare le regole di trasporto per utenti specifici. È inoltre possibile assegnare ruoli agli utenti di posta elettronica nell'organizzazione. gli utenti con privilegi di gruppo di ruoli gestione possono accedere l'interfaccia di amministrazione di Exchange (EAC) ed eseguire alcune attività di gestione. Per ulteriori informazioni sui ruoli utente e sull'assegnazione di ruoli utente in EOP, vedere [Gestione autorizzazioni gruppo ruolo di amministratore in EOP](manage-admin-role-group-permissions-in-eop.md).
+- **Utenti di posta elettronica** Gli utenti di posta elettronica sono destinatari nei domini gestiti di EOP. Questi destinatari dispongono di credenziali di accesso nella propria organizzazione di Office 365, ma dispongono di indirizzi di posta elettronica esterni, ovvero le cassette postali dei destinatari sono situate all'esterno dell'organizzazione cloud. È possibile aggiungere utenti di posta elettronica in modo che possano ricevere messaggi di posta elettronica ed è anche possibile creare regole del flusso di posta (note anche come regole di trasporto) per utenti specifici. È inoltre possibile assegnare ruoli agli utenti di posta elettronica nell'organizzazione. Gli utenti con privilegi del gruppo di ruoli di gestione possono accedere all'interfaccia di amministrazione di Exchange (EAC) ed eseguire determinate attività di gestione. Per ulteriori informazioni sui ruoli utente e sulla modalità di assegnazione dei ruoli utente in EOP, vedere [Manage admin Group Role Permissions in EOP](manage-admin-role-group-permissions-in-eop.md).
     
     Per ulteriori informazioni sulla gestione degli utenti di posta elettronica in EOP, vedere [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).
     

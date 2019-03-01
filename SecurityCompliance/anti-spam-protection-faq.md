@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223055"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341677"
 ---
 # <a name="anti-spam-protection-faq"></a>DOMANDE frequenti sulla protezione da posta indesiderata
 
@@ -34,7 +34,7 @@ In questo argomento vengono riportate le domande frequenti e le risposte sulla p
 R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata viene eliminata tramite il filtro delle connessioni, che si basa sull'indirizzo IP del mittente. Il servizio quindi analizza il contenuto del messaggio. Per impostazione predefinita, la posta indesiderata sottoposta a filtro contenuto viene inviata alla cartella Posta indesiderata del destinatario. Questa azione può essere modificata. Ad esempio, è possibile scegliere di inviare i messaggi di posta indesiderata alla quarantena configurando il criterio di filtro contenuto. 
   
 > [!IMPORTANT]
-> Per i clienti EOP indipendenti: Per accertarsi che l'azione **Sposta messaggi nella cartella Posta indesiderata** funzioni con le cassette postali locali, è necessario configurare due regole di Trasporto Exchange nei server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Per i clienti autonomi di EOP: per verificare che l'azione **Sposta messaggio all'indesiderata cartella di posta elettronica** funzioni con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere Verificare che la posta indesiderata [venga instradata alla cartella posta indesiderata di ogni utente](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Per i messaggi in uscita:** Il messaggio viene instradato tramite il pool di recapito ad alto rischio o restituito e non recapitato. Nel secondo caso il mittente riceve una messaggio di notifica dello stato del recapito indicante l'impossibilità di recapitare il messaggio. 
   

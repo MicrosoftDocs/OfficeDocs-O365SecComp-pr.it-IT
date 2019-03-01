@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276096"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341527"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
@@ -79,7 +79,7 @@ Gli amministratori possono esaminare altre informazioni sulle impostazioni di po
     
 - Se si utilizza l'azione del **messaggio** in quarantena invece dell'azione **Sposta messaggio nell'indesiderata della cartella posta elettronica** quando si configurano i filtri del contenuto: 
     
-  - Gli amministratori possono rilasciare messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi dall'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md).
+  - Gli amministratori possono rilasciare i messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi dall'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Individuazione e rilascio dei messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md).
     
   - Gli utenti possono rilasciare i propri messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi tramite i seguenti canali: 
     

@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting.
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276026"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341177"
 ---
 # <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
@@ -48,11 +48,11 @@ A. per accedere alla quarantena della posta indesiderata dell'utente finale, gli
   
  **D. Un elemento diverso dalla posta indesiderata può essere inviato in quarantena?**
   
-R. Possono essere inviati alla quarantena dell'amministratore anche i messaggi che corrispondono a una regola di trasporto, se questa è l'azione configurata. La quarantena dell'utente finale è riservata esclusivamente alla posta indesiderata.
+A. i messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) possono anche essere inviati alla quarantena dell'amministratore, se questa è l'azione configurata. La quarantena dell'utente finale è solo per la posta indesiderata.
   
  **Q. Per quanto tempo i messaggi vengono tenuti in quarantena?**
   
-A. per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti in quarantena per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola di trasporto vengono mantenuti in quarantena per 7 giorni. Dopo questo periodo di tempo, i messaggi vengono eliminati e non possono essere recuperati. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola di trasporto non è configurabile. Tuttavia, il periodo di conservazione per i messaggi in quarantena della posta indesiderata può essere ridotto tramite l'impostazione **Mantieni posta indesiderata per (giorni)** nei criteri di filtro del contenuto. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
+A. per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti in quarantena per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. Dopo questo periodo di tempo, i messaggi vengono eliminati e non possono essere recuperati. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione per i messaggi in quarantena della posta indesiderata può essere ridotto tramite l'impostazione **Mantieni posta indesiderata per (giorni)** nei criteri di filtro del contenuto. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
   
  **D. È possibile rilasciare o segnalare più di un messaggio in quarantena alla volta?**
   

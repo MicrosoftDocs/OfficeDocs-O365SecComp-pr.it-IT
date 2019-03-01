@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Di seguito sono riportate alcune considerazioni da tenere presenti prima di iniziare a lavorare con EOP.
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206559"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341747"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ Il contenuto della Guida di EOP per gli amministratori comprende le seguenti cat
     
 - [Procedure consigliate per la configurazione di EOP](best-practices-for-configuring-eop.md) Descrive le considerazioni e le impostazioni di configurazione consigliate in seguito all'impostazione e al provisioning del servizio. 
     
-- [Criteri di messaggistica e conformità in EOP](messaging-policy-and-compliance-in-eop.md) In questo articolo viene descritto come utilizzare le regole di trasporto di Exchange (regole di filtro personalizzate) per applicare normative e criteri aziendali specifici e come utilizzare i rapporti di controllo per verificare le modifiche apportate alla configurazione del servizio. 
+- [Criteri di messaggistica e conformità in EOP](messaging-policy-and-compliance-in-eop.md) Descrive come utilizzare le regole del flusso di posta di Exchange (note anche come regole di trasporto) per applicare regolamenti e criteri aziendali specifici e come utilizzare i rapporti di controllo per tenere conto delle modifiche apportate alla configurazione del servizio. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Descrive il filtro di protezione da posta indesiderata e malware e mostra come personalizzare tali filtri per soddisfare al meglio le esigenze dell'organizzazione. Descrive inoltre le attività che gli amministratori e gli utenti finali possono eseguire sui messaggi in quarantena. 
     

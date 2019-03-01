@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: È possibile utilizzare le regole del flusso di posta (dette anche regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione di Office 365.
-ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365.
+ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723243"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341207"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regole del flusso di posta (regole di trasporto in Exchange Online Protection
 
@@ -24,7 +24,7 @@ ms.locfileid: "28723243"
   
 In questo articolo sono illustrati i componenti delle regole del flusso di posta e il loro funzionamento.
   
-Per istruzioni su come creare, copiano e gestire le regole di flusso di posta elettronica, vedere **Gestisci regole di flusso di posta elettronica**. Per ogni regola, è necessario l'opzione di applicazione, test, o test e notifica al mittente. Per ulteriori informazioni sulle opzioni di test, vedere **Test una regola del flusso di posta elettronica** e **Suggerimenti sui criteri**.
+Per i passaggi per creare, copiare e gestire le regole del flusso di posta, vedere **Manage Mail Flow Rules**. Per ogni regola, si ha la possibilità di applicarlo, testarlo o testarlo e notificarlo al mittente. Per ulteriori informazioni sulle opzioni di testing, vedere **testare una regola del flusso di posta** e suggerimenti per i **criteri**.
   
 Per rapporti dettagliati e di riepilogo sui messaggi corrispondenti alle regole relative al flusso di posta, vedere **Use mail protection reports in Office 365 to view data about malware, spam, and rule detections**.
   
@@ -54,13 +54,13 @@ Una regola del flusso di posta è composta da condizioni, eccezioni, azioni e pr
   
 - **Condizioni** Identificare i messaggi ai quali applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi. 
     
-    Per ulteriori informazioni sulle condizioni delle regole del flusso della posta in Exchange Online Protection, vedere [eccezioni (predicati) e condizioni delle regole del flusso di posta in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+    Per ulteriori informazioni sulle condizioni delle regole del flusso di posta in Exchange Online Protection, vedere [Mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Eccezioni** In modo facoltativo, identificare i messaggi sui quali non vanno applicate le azioni. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate. 
     
 - **Azioni** Specificare cosa fare con i messaggi che soddisfano tutte le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio. 
     
-    Per ulteriori informazioni sulla posta flusso le azioni delle regole disponibili in Exchange Online Protection, vedere [posta azioni delle regole del flusso di Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+    Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponibili in Exchange Online Protection, vedere [Mail Flow Rule Actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
     
 - **Proprietà** Specificare altre impostazioni delle regole che sono diverse da condizioni, eccezioni o azioni. Ad esempio, quando è necessario applicare la regola oppure se applicare o verificare la regola, il periodo in cui la regola è attiva. 
     
@@ -123,19 +123,9 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 - Dopo aver creato o modificato una regola del flusso di posta, possono essere necessari fino a 30 minuti affinché la regola nuova o aggiornata venga applicata ai messaggi.
     
 ## <a name="for-more-information"></a>Ulteriori informazioni
-
-[Gestione delle regole di trasporto](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
-[Transport Rule Predicates](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-  
-[Azioni delle regole di trasporto](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
-  
-[Utilizzo delle regole di trasporto per esaminare messaggi con allegati](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[Utilizzare le regole del flusso di posta per esaminare gli allegati di messaggi in Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [Crittografia della posta elettronica in Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[Procedure di regola di trasporto](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
-  
-[Limiti delle regole di trasporto e per Posta in arrivo](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-  
-
+[Limiti delle regole di Journal, trasporto e posta in arrivo](https://go.microsoft.com/fwlink/p/?LinkId=324584)

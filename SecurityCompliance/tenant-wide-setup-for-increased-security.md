@@ -1,6 +1,6 @@
 ---
 title: Configurare il tenant di Office 365 per una maggiore sicurezza
-ms.author: tracyp
+ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223165"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341507"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -61,8 +61,8 @@ Molti dei controlli per la sicurezza e la protezione nell'interfaccia di amminis
   
 |Area * * * *|Include un criterio predefinito * * * *|Raccomandazione * * * *|
 |:-----|:-----|:-----|
-|**Flusso di posta** (Regole di trasporto)  <br/> |No  <br/> | Aggiungere una regola del flusso di posta per garantire la protezione da ransomware. Vedere "come utilizzare le regole di trasporto di Exchange per registrare o bloccare i messaggi di posta elettronica con le estensioni di file utilizzate da ransomware" in questo articolo del Blog: informazioni [su come gestire ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Creare una regola di trasporto per impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni. Per ulteriori informazioni, vedere [attenuaZione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/> <br>Ulteriori informazioni: [regole del flusso di posta (regole di trasporto) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**Abilitare l'autenticazione moderna** <br/> |No  <br/> | L'autenticazione moderna in Office 365 è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica.<br/>  <br>Vedere gli argomenti seguenti:  <br/> • [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> • [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business.  <br/>  <br>Ulteriori informazioni: [utilizzo dell'autenticazione moderna di office 365 con i client di Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**Flusso di posta** (regole del flusso di posta, note anche come regole di trasporto)|No|Aggiungere una regola del flusso di posta per garantire la protezione da ransomware. Vedere "come utilizzare le regole di trasporto di Exchange per registrare o bloccare i messaggi di posta elettronica con le estensioni di file utilizzate da ransomware" in questo articolo del Blog: informazioni [su come gestire ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Creare una regola del flusso di posta per impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni. Per ulteriori informazioni, vedere [attenuaZione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/><br/> Ulteriori informazioni: [regole del flusso di posta (regole di trasporto) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Abilitare l'autenticazione moderna**|No|L'autenticazione moderna in Office 365 è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica.<br/><br/> Vedere gli argomenti seguenti:  <br/>• [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. <br/><br/> Ulteriori informazioni: [utilizzo dell'autenticazione moderna di office 365 con i client di Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurare i criteri di condivisione a livello di tenant nell'interfaccia di amministrazione di SharePoint
 
@@ -74,7 +74,7 @@ Per supportare gli obiettivi per la protezione di base, configurare i criteri di
   
 |Area * * * *|Include un criterio predefinito * * * *|Raccomandazione * * * *|
 |:-----|:-----|:-----|
-|**Condivisione** (SharePoint Online e OneDrive for business)  <br/> |Sì  <br/> | La condivisione esterna è abilitata per impostazione predefinita. Queste impostazioni sono consigliate:<br/>  • Consenti la condivisione per gli utenti esterni autenticati e l'utilizzo di collegamenti di accesso anonimo (impostazione predefinita).  <br/>  • I collegamenti di accesso anonimo scadono in questo numero di giorni. Immettere un numero, se lo si desidera, ad esempio 30 giorni.<br/>  • Tipo di collegamento predefinito: selezionare interno (solo persone nell'organizzazione). Gli utenti che desiderano condividere l'utilizzo dei collegamenti anonimi devono scegliere questa opzione dal menu condivisione.<br/>  <br>Ulteriori informazioni: [Panoramica della condivisione esterna](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
+|**Condivisione** (SharePoint Online e OneDrive for business)|Sì|La condivisione esterna è abilitata per impostazione predefinita. Queste impostazioni sono consigliate:<br/>• Consenti la condivisione per gli utenti esterni autenticati e l'utilizzo di collegamenti di accesso anonimo (impostazione predefinita). <br/>  • I collegamenti di accesso anonimo scadono in questo numero di giorni. Immettere un numero, se lo si desidera, ad esempio 30 giorni.<br/>• Tipo di collegamento predefinito: selezionare interno (solo persone nell'organizzazione). Gli utenti che desiderano condividere l'utilizzo dei collegamenti anonimi devono scegliere questa opzione dal menu condivisione.<br/><br/> Ulteriori informazioni: [Panoramica della condivisione esterna](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85)|
    
 L'interfaccia di amministrazione di SharePoint e l'interfaccia di amministrazione di OneDrive for business includono le stesse impostazioni. Le impostazioni dell'interfaccia di amministrazione sono valide per entrambi.
   
@@ -118,7 +118,7 @@ Ulteriori informazioni:
     
 ![Dashboard di Cloud App Security](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 
 Questi articoli e guide forniscono ulteriori informazioni prescrittivi per la protezione dell'ambiente Office 365:
   

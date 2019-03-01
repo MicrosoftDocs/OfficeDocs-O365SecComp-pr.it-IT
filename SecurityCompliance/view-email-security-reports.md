@@ -3,7 +3,7 @@ title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel c
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione con Office 365 Enterprise. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241998"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341447"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
-Una serie di rapporti sulla sicurezza della posta elettronica sono disponibili nel [Centro sicurezza &amp; e conformità](https://security.microsoft.com) per vedere come le funzionalità di protezione da posta indesiderata e antimalware in Office 365 proteggono l'organizzazione. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare questi report nel centro sicurezza &amp; e conformità accedendo al **** \> **Dashboard**dei report.
+Nel [Centro sicurezza &amp; e conformità](https://protection.office.com) sono disponibili una serie di report che consentono di visualizzare le funzionalità di sicurezza della posta elettronica, ad esempio la protezione da posta indesiderata, l'antimalware e la crittografia in Office 365, che proteggono l'organizzazione. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare questi report nel centro sicurezza &amp; e conformità accedendo al **** \> **Dashboard**dei report.
   
-![Il dashboard &amp; del Centro sicurezza e conformità consente di individuare la modalità di funzionamento di Advanced Threat Protection](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Dashboard in cui viene visualizzato il livello di protezione avanzata dalle minacce](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 I rapporti di sicurezza della posta elettronica includono quanto segue:
+
+- [Rapporto di crittografia](#encryption-report) (Nuovo!)
   
 - [Rapporto sullo stato della protezione dalle minacce](view-email-security-reports.md#tps) 
     
@@ -43,12 +45,36 @@ I rapporti di sicurezza della posta elettronica includono quanto segue:
 - [Rapporto rilevamento posta inDesiderata](#spam-detections-report)
     
 - [Report di posta elettronica inviati e ricevuti](view-email-security-reports.md#sentreceivedemail)
+
+- [Report dei messaggi segnalati dall'utente](view-email-security-reports.md#userreported)
     
-- [Report dei messaggi segnalaTi dall'utente](view-email-security-reports.md#userreported) (nuovo!) 
-    
+## <a name="encryption-report"></a>Rapporto di crittografia
+
+(**Nuovo!**) Il **rapporto di crittografia** consente di visualizzare informazioni sui messaggi di posta elettronica crittografati tramite i criteri o i controlli dell'utente finale. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per identificare modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili.
+
+Per **** \> visualizzare questo report, nel centro sicurezza & Compliance accedere a report **crittografia**del **Dashboard** \> .
+
+![Rapporto di crittografia](media/encryptionreport-defaultview.png) 
+
+Quando il report viene aperto per la prima volta, verranno visualizzati i dati relativi ai metodi di crittografia utilizzati nei messaggi di posta elettronica per gli ultimi sette (7) giorni. È possibile modificare l'intervallo di date e i dettagli nel rapporto facendo clic su filtri nell'angolo in alto a destra dello schermo.
+
+![Filtri del rapporto di crittografia](media/encryptionreport-filters.png)   
+
+È inoltre possibile utilizzare il menu Suddividi per visualizzare i dati in base al modello di crittografia (o al metodo).
+
+![Metodo o modello di crittografia](media/encryptionreport-breakdownby.png)
+
+È possibile utilizzare il menu Visualizza dati in base a per modificare la visualizzazione per visualizzare i conteggi dei messaggi crittografati nei primi cinque domini del destinatario.
+
+![Dati della visualizzazione del rapporto di crittografia per menu](media/encryptionreport-viewdataby.png)
+
+Grazie alla flessibilità del nuovo rapporto di crittografia, è possibile visualizzare le tendenze e intraprendere le azioni appropriate. Ad esempio, se viene visualizzato un numero elevato di messaggi di posta elettronica crittografati dagli utenti, potrebbe essere necessario aggiungere un criterio di crittografia per automatizzare la crittografia per alcuni casi di utilizzo. Se si dispone di un numero di modelli di crittografia disponibili ma nessuno li utilizza, potrebbe essere necessario valutare se gli utenti devono essere allenati per tale caratteristica. 
+
+Questo rapporto consente al team di conformità e sicurezza dell'organizzazione di monitorare in che modo viene utilizzata la crittografia dei messaggi e se sono necessarie ulteriori azioni.
+
 ## <a name="threat-protection-status-report"></a>Rapporto sullo stato della protezione dalle minacce
 
-Il nuovo rapporto **sullo stato di protezione dalle minacce** è uno smart report che indica che la posta elettronica dannosa è stata rilevata e bloccata da Exchange Online Protection. Questo report Visualizza informazioni su messaggi di posta elettronica identificati come malware o su un tentativo di phishing. 
+Il rapporto **sullo stato della protezione dalle minacce** è uno smart report che indica che la posta elettronica dannosa è stata rilevata e bloccata da Exchange Online Protection. Questo report Visualizza informazioni su messaggi di posta elettronica identificati come malware o su un tentativo di phishing. 
 
 > [!NOTE]
 > Un rapporto sullo stato della protezione dalle minacce è disponibile per i clienti che dispongono di [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto sullo stato di protezione di minacce per i clienti ATP probabilmente conterranno dati diversi da quelli che potrebbero essere visualizzati dai clienti di EOP. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](atp-for-spo-odb-and-teams.md), una funzionalità specifica del trifosfato di adenosina. (Ulteriori[informazioni sui rapporti ATP](view-reports-for-atp.md)).
@@ -109,13 +135,13 @@ Utilizzare l'elenco **Mostra dati per** scegliere se visualizzare i dati per i m
   
 Al di sotto del grafico, si vedrà chi sono i mittenti di posta elettronica o i destinatari principali, insieme a un numero di messaggi inviati o ricevuti per il periodo di tempo specificato.
   
-## <a name="spoof-mail-report"></a>Report di posta contraffatta
+## <a name="spoof-detections-report"></a>Rapporto riLevamenti spoof
 
-Il report di **posta spoof** Visualizza quanti messaggi di posta elettronica contraffatti sono stati rilevati e di quelli, quali sono stati considerati "buoni" (la posta contraffatta è stata realizzata per motivi aziendali legittimi). 
+Il rapporto sui rilevamenti **spoof** indica il numero di messaggi di posta elettronica contraffatti individuati e di quelli che sono stati considerati "buoni" (la posta contraffatta è stata realizzata per motivi aziendali legittimi). 
   
 Per visualizzare questo report, nel [centro conformità &amp; sicurezza](https://protection.office.com)accedere a **report** \> di **posta**indesiderata del **Dashboard** \> .
   
-![Per visualizzare questo report, nel centro sicurezza &amp; e conformità, accedere a report \> di \> posta indesiderata del dashboard](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![Nel centro sicurezza &amp; e conformità, accedere a report \> di \> posta indesiderata del dashboard](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 Quando si posiziona il puntatore del mouse su un giorno nel grafico, è possibile visualizzare il numero di messaggi di posta elettronica contraffatti.
   
@@ -157,7 +183,7 @@ Al di sotto del grafico verrà visualizzato un elenco di categorie di posta elet
   
 ![Questo rapporto fornisce informazioni sull'antimalware, la protezione da posta indesiderata e altri rilevamenti dei messaggi](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>Report dei messaggi segnalati dall'utente (nuovo!)
+## <a name="user-reported-messages-report"></a>Report dei messaggi segnalati dall'utente
 
 Il rapporto **messaggi segnalaTi dall'utente** Visualizza informazioni sui messaggi di posta elettronica segnalati dagli utenti come posta indesiderata, tentativi di phishing o una buona corrispondenza tramite il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md).
   

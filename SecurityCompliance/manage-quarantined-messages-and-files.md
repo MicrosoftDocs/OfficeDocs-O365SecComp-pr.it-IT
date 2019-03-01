@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276266"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341727"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
@@ -49,7 +49,7 @@ Per utilizzare i messaggi in quarantena inviati ad altri utenti e per lavorare c
     
   - Posta elettronica identificata come posta indesiderata
     
-  - Posta in quarantena perché corrispondeva a un criterio impostato da una regola del flusso di posta (detta anche regola di trasporto)
+  - Posta in quarantena perché corrisponde a un criterio impostato da una regola del flusso di posta (nota anche come regola di trasporto)
     
   - Posta elettronica identificata come posta in blocco
     
@@ -87,7 +87,7 @@ A seconda delle impostazioni, è possibile che vi siano molti messaggi e file in
       - Per cercare i file, impostare i filtri per visualizzare **i file** in quarantena a causa di **malware**.<br/>
     Per i file in quarantena, nella pagina vengono visualizzati tutti i file in quarantena, non solo quelli personali, indipendentemente dal tipo di informazioni che si desidera visualizzare.
     
-      - Per cercare i messaggi in quarantena, impostare filtri per visualizzare **tutto** o **solo il mio** **messaggio di posta elettronica**. Per l'ultimo filtro scegliere il tipo di messaggio in quarantena che si sta cercando. È possibile cercare i messaggi in quarantena identificati come **** posta indesiderata, per i messaggi che corrispondono a un flusso di posta o a una **regola di trasporto**, alla posta in **blocco** , alla posta elettronica di **phishing** o alla posta che contiene **malware**.
+      - Per cercare i messaggi in quarantena, impostare filtri per visualizzare **tutto** o **solo il mio** **messaggio di posta elettronica**. Per l'ultimo filtro scegliere il tipo di messaggio in quarantena che si sta cercando. È possibile cercare i messaggi in quarantena identificati come **posta**indesiderata, per i messaggi che corrispondono a una regola del flusso di posta (**regola di trasporto**), alla posta in **blocco** , alla posta elettronica di **phishing** o alla posta che contiene **malware**.
     
 2. In **Ordina risultati**fare clic sul filtro o sui filtri che si desidera utilizzare per la ricerca negli elenchi a discesa. Le opzioni variano in base al fatto che si cerchino file o messaggi. I caratteri jolly non sono supportati nei campi di ricerca in questo momento.<br/><br/>Sia per i file che per i messaggi, è possibile scegliere di filtrare in base alla data in cui il messaggio o il file è stato inviato alla quarantena. È possibile specificare la data o un intervallo di date, inclusa l'ora. È inoltre possibile filtrare i risultati della ricerca in base alla data di scadenza in cui il file o il messaggio verrà eliminato dalla quarantena oppure è possibile utilizzare una combinazione di filtri. Per eseguire la ricerca in base alla data di scadenza, scegliere **filtro avanzato**. In **scadenza**, è possibile selezionare i messaggi che verranno eliminati dalla quarantena entro le 24 ore successive ( **oggi**), entro le 48 ore successive ( **prossimi 2 giorni**), entro la settimana successiva ( **prossimi 7 giorni**) oppure è possibile selezionare un intervallo di tempo personalizzato.<br/><br/>Per i messaggi, sono disponibili le seguenti opzioni aggiuntive:
     
@@ -114,7 +114,7 @@ Quando si seleziona un elemento visualizzato nell'elenco quarantena, verrà visu
     
 - **Oggetto**. Il testo della riga dell'oggetto del messaggio. 
     
-- **Tipo**. Indica se un messaggio è stato identificato come **posta**indesiderata, in **blocco**, in **phishing**, in base alla regola del flusso di posta ( **regola di trasporto**) oppure è stato identificato come contenente **malware**.
+- **Tipo**. Indica se un messaggio è stato identificato come **posta**indesiderata, in **blocco**, in **phishing**, in base alla regola del flusso di posta (**regola di trasporto**) oppure è stato identificato come contenente **malware**.
     
 - **Scade**. La data e l'ora in cui il messaggio verrà eliminato automaticamente dalla quarantena. 
     

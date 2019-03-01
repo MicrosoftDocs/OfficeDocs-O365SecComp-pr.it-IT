@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection. Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere crittografia dei messaggi di Office 365. Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276066"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341497"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Aggiornamento alle nuove funzionalità di Office 365 Message Encryption
 
@@ -167,7 +167,7 @@ RMS fornisce le funzionalità di protezione dei diritti di informazioni per i me
   
  **D. in che modo la crittografia dei messaggi di Office 365 è diversa da S/MIME?**
   
-S/MIME rappresenta una tecnologia di crittografia sul lato client e necessita di una complessa gestione del certificato e di pubblicazione dell'infrastruttura. La crittografia dei messaggi di Office 365 utilizza le regole di trasporto e non dipende dalla pubblicazione del certificato.
+S/MIME è essenzialmente una tecnologia di crittografia sul retro del client e richiede un'infrastruttura di pubblicazione e gestione dei certificati complessa. La crittografia dei messaggi di Office 365 utilizza le regole del flusso di posta (note anche come regole di trasporto) e non dipende dalla pubblicazione dei certificati.
   
  **D. È possibile leggere i messaggi crittografati su dispositivi mobili?**
   
@@ -213,7 +213,7 @@ No. Non è possibile revocare un messaggio a una persona specifica dopo che è s
   
  **D. Posso visualizzare un report dei messaggi crittografati che sono stati ricevuti e letti?**
   
-Non è presente un rapporto che indica se è stato visualizzato un messaggio crittografato, ma sono disponibili rapporti di Office 365 che è possibile utilizzare per determinare il numero di messaggi che corrispondono a una regola di trasporto specifica, ad esempio.
+Non è presente un rapporto che indica se è stato visualizzato un messaggio crittografato, ma sono disponibili rapporti di Office 365 che è possibile utilizzare per determinare il numero di messaggi che corrispondono a una regola del flusso di posta specifica (nota anche come regola di trasporto), ad esempio.
   
  **D. Come vengono utilizzate da Microsoft le informazioni fornite tramite il Portale OME e l'app visualizzatore OME?**
   

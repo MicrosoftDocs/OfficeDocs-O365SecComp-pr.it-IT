@@ -9,12 +9,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 843d6032faad69895c49b9c10976b26626dc3812
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 95682b02f50996594650ac5d3aebf18f795efd65
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213959"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341567"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia dei messaggi nel centro sicurezza & Compliance
 

@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
-description: La crittografia dei messaggi di Office 365 consente agli utenti di inviare messaggi crittografati alle persone all'interno dell'organizzazione esterna. In qualità di amministratore, è possibile abilitare la crittografia dei messaggi di Office 365 creando regole del flusso di posta (note anche come regole di trasporto) che impostano le condizioni per la crittografia.
-ms.openlocfilehash: 32d363b350cb9dfcfc4f8ac5d47b345075ead45a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: La crittografia dei messaggi di Office 365 consente agli utenti di inviare messaggi crittografati alle persone all'interno dell'organizzazione esterna. In qualità di amministratore, è possibile abilitare la crittografia dei messaggi di Office 365 creando regole del flusso di posta (regole di trasporto) che impostano le condizioni per la crittografia.
+ms.openlocfilehash: 54d095c6b3b647dc092a8cd92a008aa9bb0ed8ea
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215606"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340957"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Abilitare la crittografia e la decrittografia [EOP]
 

@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219036"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341787"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Individuazione e rilascio dei messaggi in quarantena come amministratore
 
-In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Office 365 invia i messaggi in quarantena o perché sono stati identificati come posta indesiderata o perché corrispondevano a una regola di trasporto. 
+In questo argomento viene descritto come gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Office 365 indirizza i messaggi alla quarantena perché sono stati identificati come posta indesiderata o hanno trovato una regola del flusso di posta (nota anche come regola di trasporto). 
   
 Utilizzare il centro &amp; sicurezza e conformità invece dell'interfaccia di amministrazione di Exchange per completare una di queste attività, nonché visualizzare e utilizzare i messaggi inviati alla quarantena perché contengono malware. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -70,9 +70,9 @@ Nell'interfaccia di amministrazione di Exchange, è possibile filtrare gli eleme
 6. **Scadenza** È possibile indicare che il messaggio sarà eliminato dalla quarantena entro le 24 ore successive ( **Oggi**), le 48 ore successive ( **Prossimi 2 giorni**), la settimana successiva ( **Prossimi 7 giorni**) oppure specificare un intervallo di tempo personalizzato entro il quale il messaggio sarà eliminato dalla quarantena.
     
     > [!IMPORTANT]
-    > Per impostazione predefinita, i messaggi di posta indesiderata/in quarantena vengono tenuti in quarantena per 15 giorni, mentre i messaggi messi in quarantena che corrispondono a una regola di trasporto vengono tenuti in quarantena per 7 giorni. Al termine di questo periodo di tempo Office 365 elimina i messaggi e non sono recuperabili. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola di trasporto non è configurabile. Tuttavia, il periodo di conservazione per i messaggi di posta indesiderata/in quarantena può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). 
+    > Per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti per 15 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. Dopo questo periodo di tempo, Office 365 Elimina i messaggi e non possono essere recuperati. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione per i messaggi in quarantena della posta indesiderata può essere ridotto tramite l'impostazione **Mantieni posta indesiderata per (giorni)** nei criteri di filtro del contenuto. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata. 
   
-7. **Tipo** È possibile specificare se cercare messaggi in quarantena identificati come **Posta indesiderata** o se cercare i messaggi corrispondenti a una **Regola di trasporto**.
+7. **Tipo** di È possibile specificare se cercare i messaggi in quarantena identificati come **posta**indesiderata o se cercare i messaggi corrispondenti a una regola del flusso di posta (**regola di trasporto**).
     
 3. Fare clic su **OK** per avviare l'esecuzione della ricerca avanzata. 
     
@@ -90,7 +90,7 @@ Dopo aver individuato uno specifico messaggio in quarantena, è possibile visual
     
     I valori disponibili per **Stato messaggio** sono i seguenti: 
     
-  - **Tipo** Indica se il messaggio è stato identificato come **Posta indesiderata** o corrispondeva a una **Regola di trasporto**.
+  - **Tipo** di Indica se il messaggio è stato identificato come **posta** indesiderata o ha trovato una regola del flusso di posta (**regola di trasporto**).
     
   - **Scadenza** La data in cui il messaggio sarà eliminato dalla quarantena. 
     
@@ -145,7 +145,7 @@ Se si desidera rilasciare messaggi ai destinatari, le opzioni disponibili sono:
   
 Fare clic su **Rilascia il messaggio selezionato e consenti il mittente** dall'elenco a discesa. 
     
-3. Viene visualizzata la finestra di dialogo **Rilascia il messaggio e consenti il mittente**. Facoltativamente, è possibile scegliere di segnalare il messaggio a Microsoft e quindi fare clic su **Rilascia e consenti**. Il messaggio verrà rilasciato a tutti i destinatari a cui è indirizzato e tutti i futuri messaggio di questo stesso mittente saranno consentiti. Tuttavia, se il messaggio è stato messo in quarantena a causa di una regola di trasporto o di un mittente bloccato, il mittente continuerà a essere bloccato per i messaggi futuri. 
+3. Verrà visualizzata la finestra **di dialogo rilascia messaggio e Consenti mittente** . Facoltativamente, è possibile scegliere di segnalare il messaggio a Microsoft, quindi fare clic su **rilascia e Consenti**. Il messaggio verrà rilasciato a tutti i destinatari a cui è indirizzato e tutti i messaggi futuri provenienti da questo mittente saranno consentiti. Tuttavia, se il messaggio è stato messo in quarantena a causa di una regola del flusso di posta o di un mittente bloccato, il mittente continuerà a essere bloccato per i messaggi futuri. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Rilasciare un messaggio in quarantena a destinatari specifici senza segnalarlo come falso positivo
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

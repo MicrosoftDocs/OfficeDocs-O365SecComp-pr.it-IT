@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Microsoft Exchange Online Protection fornisce funzionalità relative a conformità e criteri di messaggistica che consentono di gestire i dati della posta elettronica.
-ms.openlocfilehash: 1072656ee34b2745c86ec55353278ef878e0f0eb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1a084418cc6d66cd1ad8280b510bde5e630c7298
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026183"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341717"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Criteri e conformità della messaggistica in EOP
 
@@ -26,7 +26,5 @@ Microsoft Exchange Online Protection fornisce funzionalità relative a conformit
 
 |**Argomento**|**Descrizione**|
 |:-----|:-----|
-|[Report di controllo in EOP](auditing-reports-in-eop.md) <br/> |I rapporti di controllo indicano come eseguire il rapporto del gruppo di ruoli amministratore, che mostra le modifiche apportate ai gruppi di ruoli di gestione nell'organizzazione in un particolare periodo di tempo, e il registro di controllo dell'amministratore, in cui viene tenuto un record di tutte le modifiche della configurazione effettuate nell'organizzazione.  <br/> |
-|[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) <br/> |Fornisce informazioni sulle regole di trasporto, che offrono la flessibilità di applicare alla posta elettronica i criteri specifici della propria azienda.  <br/> |
-   
-
+|[Report di controllo in EOP](auditing-reports-in-eop.md)|I rapporti di controllo indicano come eseguire il rapporto del gruppo di ruoli amministratore, che mostra le modifiche apportate ai gruppi di ruoli di gestione nell'organizzazione in un particolare periodo di tempo, e il registro di controllo dell'amministratore, in cui viene tenuto un record di tutte le modifiche della configurazione effettuate nell'organizzazione.|
+|[Regole del flusso di posta (regole di trasporto in Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|Vengono fornite informazioni sulle regole del flusso di posta (note anche come regole di trasporto), che forniscono la flessibilità necessaria per applicare i criteri specifici dell'azienda alla posta elettronica.|

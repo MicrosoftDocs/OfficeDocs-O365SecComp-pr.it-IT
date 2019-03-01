@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi conSentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216906"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341607"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
  
@@ -98,9 +98,9 @@ Dopo aver creato e applicato la regola, il servizio ignora il filtro di posta in
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Ambito delle eccezioni dell'elenco di indirizzi IP consentiti per un dominio specifico
 
-In generale, si consiglia di aggiungere gli indirizzi IP (o intervalli di indirizzi IP) per tutti i domini considerati sicuri nell'elenco degli indirizzi IP consentiti. Tuttavia, per non applicare la voce Elenco indirizzi IP consentiti a tutti i domini, è possibile creare una regola di trasporto che escluda domini specifici. 
+In generale, si consiglia di aggiungere gli indirizzi IP (o gli intervalli di indirizzi IP) per tutti i domini che si considerano sicuri per l'elenco IP conSentiti. Tuttavia, se non si desidera che la voce dell'elenco indirizzi IP conSentiti sia applicabile a tutti i domini, è possibile creare una regola del flusso di posta (nota anche come regola di trasporto) che esclude domini specifici. 
   
-Ad esempio, si supponga che vi siano tre domini: ContosoA.com, ContosoB.com e ContosoC.com, e si desideri aggiungere l'indirizzo IP (per semplicità utilizzeremo 1.2.3.4) e ignorare il filtro solo per il dominio ContosoB.com. In questo caso si crea un elenco di indirizzi IP consentiti per 1.2.3.4, che imposta il livello di probabilità di posta indesiderata (SCL) su -1 (indicante che non si tratta di posta indesiderata) per tutti i domini. È possibile quindi creare una regola di trasporto che imposta il livello SCL per tutti i domini eccetto ContosoB.com su 0. In tal modo il messaggio viene riesaminato per tutti i domini associati all'indirizzo IP eccetto che per ContosoB.com, ossia il dominio elencato come eccezione nella regola. ContosoB.com ha un SCL impostato su -1, quindi il filtro viene ignorato, mentre ContosoA.com e ContosoC.com hanno un SCL impostato su 0, quindi per essi viene applicato il filtro contenuto.
+Ad esempio, si supponga di disporre di tre domini: ContosoA.com, ContosoB.com e ContosoC.com e si desidera aggiungere l'indirizzo IP (per motivi di semplicità, utilizzare 1.2.3.4) e ignorare il filtro solo per ContosoB.com di dominio. È necessario creare un elenco indirizzi IP conSentiti per 1.2.3.4, che imposta il livello di probabilità di posta indesiderata (SCL) su-1 (il che significa che è classificato come non indesiderato) per tutti i domini. È quindi possibile creare una regola del flusso di posta che imposta il livello SCL per tutti i domini ad eccezione di ContosoB.com su 0. In questo modo il messaggio viene rianalizzato per tutti i domini associati all'indirizzo IP, ad eccezione di ContosoB.com, che è il dominio elencato come eccezione nella regola. ContosoB.com ha ancora un SCL di-1, il che significa che il filtro è saltato, mentre ContosoA.com e ContosoC.com dispongono di SCLs pari a 0, il che significa che verranno analizzati dal filtro contenuto.
   
 A tale scopo, eseguire la procedura seguente:
   

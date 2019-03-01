@@ -14,12 +14,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
-ms.openlocfilehash: ea2994a3f772b407a35be2d64e8afcc639d24f31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e3e5ce044879318dab55f5d08ec2ee0e3379dfb2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214496"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341367"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
 
@@ -73,7 +73,7 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
 > [!NOTE]
 >  Le notifiche di posta indesiderata dell'utente finale saranno funzionali solo per i criteri di filtro della posta indesiderata abilitati. le notifiche di posta indesiderata dell'utente finale di > vengono inviate solo una volta al giorno. Il tempo di consegna della notifica non può essere garantito per un cliente specifico e non è configurabile. 
   
- **Suggerimento:** Se si desidera testare le notifiche di posta indesiderata dell'utente finale inviando un gruppo limitato di utenti prima di implementarle completamente, creare un criterio di filtro di posta indesiderata personalizzato che consenta le notifiche di posta indesiderata dell'utente finale per i domini in cui risiedono gli utenti. Successivamente, nell'interfaccia di amministrazione di Exchange, in **regole del flusso \> di posta**, creare una regola di trasporto per bloccare i messaggi da Quarantine@messaging.microsoft.com (l'indirizzo di posta elettronica che invia le notifiche) con le eccezioni per gli utenti che si desiderano ricevere le notifiche. L'immagine seguente è un esempio di creazione di un'eccezione per due utenti (Sarad e AlexD) da Domain Contoso.com: 
+ **Suggerimento:** Se si desidera testare le notifiche di posta indesiderata dell'utente finale inviando un gruppo limitato di utenti prima di implementarle completamente, creare un criterio di filtro di posta indesiderata personalizzato che consenta le notifiche di posta indesiderata dell'utente finale per i domini in cui risiedono gli utenti. Quindi, nell'interfaccia di amministrazione di Exchange, in **regole del flusso \> di posta**, creare una regola del flusso di posta (nota anche come regola di trasporto) per bloccare i messaggi da Quarantine@messaging.microsoft.com (l'indirizzo di posta elettronica che invia le notifiche) con le eccezioni per gli utenti che si desidera per ricevere le notifiche. L'immagine seguente è un esempio di creazione di un'eccezione per due utenti (Sarad e AlexD) da Domain Contoso.com: 
   
 ![Regola di trasporto per verificare le notifiche di posta indesiderata dell'utente finale](media/EOP-ESN-testspecificusers.jpg)
   

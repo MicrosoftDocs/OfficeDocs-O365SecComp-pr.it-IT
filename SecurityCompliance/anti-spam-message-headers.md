@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio.
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276196"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341737"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -46,10 +46,10 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |IPV:CAL|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
 |IPV:NLI|L'indirizzo IP non è stato elencato in nessuno degli elenchi di reputazione IP.|
 |SFV:SPM|Il messaggio è stato contrassegnato come posta indesiderata dal filtro contenuto.|
-|SFV:SKS|Il messaggio è stato contrassegnato come posta indesiderata prima di essere elaborato dal filtro contenuto. Questo include i messaggi che corrispondono alle regole di trasporto, che lo contrassegnano automaticamente come indesiderato e che ignorano tutte le regole del filtro aggiuntive.|
+|SFV:SKS|Il messaggio è stato contrassegnato come posta indesiderata prima di essere elaborato dal filtro contenuto. Sono inclusi i messaggi in cui il messaggio corrisponde a una regola del flusso di posta (nota anche come regola di trasporto) per contrassegnare automaticamente la posta indesiderata e ignorare tutti i filtri aggiuntivi.|
 |SFV:SKA|Il messaggio ha ignorato il filtro ed è stato recapitato nella posta in arrivo perché è stata trovata una corrispondenza con un elenco Consenti nei criteri di filtro posta indesiderata, come l' **Elenco mittenti consentiti**.|
 |SFV:SKB|Il messaggio è stato contrassegnato come posta indesiderata perché è stata trovata una corrispondenza con un elenco Blocca nei criteri di filtro posta indesiderata, come l' **Elenco mittenti bloccati**.|
-|SFV:SKN|Il messaggio è stato contrassegnato come posta non indesiderata prima di essere elaborato dal filtro contenuto. Questo include i messaggi che corrispondono alle regole di trasporto, che lo contrassegnano automaticamente come non indesiderato e che ignorano tutte le regole del filtro aggiuntive.|
+|SFV:SKN|Il messaggio è stato contrassegnato come non di posta indesiderata prima di essere elaborato dal filtro contenuto. Sono inclusi i messaggi in cui il messaggio corrisponde a una regola del flusso di posta per contrassegnarlo automaticamente come non indesiderato e ignorare tutti i filtri aggiuntivi.|
 |SFV:SKN|Come per SFV:SKN, il messaggio ha ignorato il filtro per un altro motivo, ad esempio perché si tratta di posta elettronica tra organizzazioni all'interno di un tenant.|
 |SFV:SKQ|Il messaggio è stato rilasciato dalla quarantena ed è stato inviato al destinatario.|
 |SFV:NSPM|Il messaggio è stato contrassegnato come non indesiderato ed è stato inviato al destinatario.|

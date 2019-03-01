@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: L'azione predefinita per la protezione da posta indesiderata per i clienti di EOP è quella di spostare i messaggi di posta indesiderata nella cartella dei destinatari. Affinché questa azione funzioni con le cassette postali locali, è necessario configurare le regole di trasporto di Exchange sui server perimetrali o hub locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Queste regole di trasporto consentono di impostare il livello di probabilità di posta indesiderata utilizzato dalla proprietà SclJunkThreshold del cmdlet Set-OrganizationConfig per spostare la posta indesiderata in ogni cassetta postale.
-ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle di posta inDesiderata degli utenti in Exchange Online Protection.
+ms.openlocfilehash: 80c3e3cab1bdaf85e815ab1acc790cc907ebbb91
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222885"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341377"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
 
 > [!IMPORTANT]
 > Questo argomento si applica solo ai clienti di Exchange Online Protection (EOP) che ospitano le cassette postali in locale in una distribuzione ibrida. I clienti di Exchange Online le cui cassette postali sono completamente ospitate in Office 365 non devono eseguire questi comandi. 
   
-L'azione predefinita per la protezione da posta indesiderata per i clienti di EOP è quella di spostare i messaggi di posta indesiderata nella cartella dei destinatari. Affinché questa azione funzioni con le cassette postali locali, è necessario configurare le regole di trasporto di Exchange sui server perimetrali o hub locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Queste regole di trasporto consentono di impostare il livello di probabilità di posta indesiderata utilizzato dalla proprietà SclJunkThreshold del cmdlet Set-OrganizationConfig per spostare la posta indesiderata in ogni cassetta postale. 
+L'azione predefinita per la protezione da posta indesiderata per i clienti di EOP è quella di spostare i messaggi di posta indesiderata nella cartella dei destinatari. Affinché questa azione funzioni con le cassette postali locali, è necessario configurare le regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server perimetrali o hub locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Queste regole del flusso di posta consentono di impostare il livello di probabilità di protezione da posta indesiderata utilizzato dalla proprietà SclJunkThreshold del cmdlet Set-OrganizationConfig per spostare lo spam nella cartella posta inDesiderata di ogni cassetta postale. 
   
-### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Per aggiungere regole di trasporto per garantire che la posta indesiderata venga spostata nella cartella posta inDesiderata utilizzando Windows PowerShell
+### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Per aggiungere regole del flusso di posta per garantire che la posta indesiderata venga spostata nella cartella posta inDesiderata utilizzando Windows PowerShell
 
 1. Accedere a Exchange Management Shell per il server Exchange locale. Per informazioni su come aprire Exchange Management Shell nell'organizzazione di Exchange locale, vedere **Open the Shell**.
     

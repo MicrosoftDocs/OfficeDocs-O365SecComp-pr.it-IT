@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilizzare il Centro sicurezza &amp; e conformità di Office 365 per abilitare le cassette postali di archiviazione per supportare i requisiti di conservazione, eDiscovery e blocco dei messaggi dell'organizzazione.
-ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296059"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341797"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Abilitare le cassette postali di archiviazione nel &amp; Centro sicurezza e conformità di Office 365
   
@@ -138,7 +138,6 @@ Eseguire il seguente comando per disabilitare la cassetta postale di archiviazio
     - Sposta gli elementi di almeno 14 giorni dalla cartella Elementi ripristinabili nella cassetta postale principale dell'utente alla cartella Elementi ripristinabili nella cassetta postale di archiviazione.
     
 - Per ulteriori informazioni sulle cassette postali di archiviazione e sui criteri di conservazione di Exchange, vedere:
-  
     
   - [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?LinkId=404424)
     

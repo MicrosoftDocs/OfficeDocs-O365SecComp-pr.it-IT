@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Il Centro sicurezza &amp; e conformità di Office 365 consente di concedere autorizzazioni a utenti che eseguono attività di conformità come la gestione dei dispositivi, la prevenzione della perdita di dati, eDiscovery, la conservazione e così via. Tali utenti possono eseguire solo le attività in cui si concede esplicitamente l'accesso. Per accedere al centro &amp; sicurezza e conformità, gli utenti devono essere un amministratore globale di Office 365 o un membro di uno o &amp; più gruppi di ruoli del Centro sicurezza e conformità.
-ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: e935c71f9324dbce8e0b359bfe723b93ff500b0a
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223505"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341357"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Autorizzazioni nel centro sicurezza &amp; e conformità di Office 365
 
@@ -47,7 +47,7 @@ Il centro &amp; sicurezza e conformità include i gruppi di ruoli predefiniti pe
 
 Nella tabella seguente sono elencati i gruppi di ruoli predefiniti disponibili nel centro sicurezza &amp; e conformità. Per concedere le autorizzazioni a un utente per l'esecuzione di un'attività di conformità, aggiungerle &amp; al gruppo di ruoli centro conformità di sicurezza appropriato.
   
-La gestione delle autorizzazioni nel &amp; Centro sicurezza e conformità fornisce solo agli utenti l'accesso alle funzionalità di conformità disponibili all' &amp; interno del Centro sicurezza e conformità stesso. Se si desidera concedere le autorizzazioni ad altre funzionalità di conformità che non sono nel &amp; Centro sicurezza e conformità, ad esempio le regole di trasporto di Exchange, è necessario utilizzare l'interfaccia di amministrazione di Exchange.
+La gestione delle autorizzazioni nel &amp; Centro sicurezza e conformità fornisce solo agli utenti l'accesso alle funzionalità di conformità disponibili all' &amp; interno del Centro sicurezza e conformità stesso. Se si desidera concedere le autorizzazioni ad altre funzionalità di conformità che non sono nel &amp; Centro sicurezza e conformità, ad esempio le regole del flusso di posta di Exchange (note anche come regole di trasporto), è necessario utilizzare l'interfaccia di amministrazione di Exchange.
   
 Per informazioni su come concedere l'accesso al centro &amp; sicurezza e conformità, vedere [concedere agli utenti l'accesso all'interfaccia di amministrazione di Office 365 Compliance](grant-access-to-the-security-and-compliance-center.md).
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 1e161aa1b8de48cea32718f2c04b05436b25c0ff
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216446"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341697"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
 
@@ -227,7 +227,7 @@ Tenere presente che tutte queste condizioni funzionano in Outlook, in cui corris
 
 I suggerimenti per i criteri possono essere compatibili con i criteri DLP e le regole del flusso di posta creati nell'interfaccia di amministrazione di Exchange oppure con i &amp; criteri DLP creati nel centro sicurezza e conformità di Office 365, ma non in entrambi. Ciò è dovuto al fatto che questi criteri sono archiviati in posizioni diverse, ma i suggerimenti per i criteri possono essere disegnati solo da una singola posizione.
   
-Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, eventuali suggerimenti per i criteri configurati nel centro sicurezza &amp; e conformità di Office 365 non verranno visualizzati per gli utenti in Outlook sul Web e Outlook 2013 e versioni successive finché non si disattivano i suggerimenti in Exchange Interfaccia di amministrazione. Questo garantisce che le regole di trasporto di Exchange correnti continueranno a funzionare fino a quando non si sceglie di passare al &amp; Centro sicurezza e conformità di Office 365.
+Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, eventuali suggerimenti per i criteri configurati nel centro sicurezza &amp; e conformità di Office 365 non verranno visualizzati per gli utenti in Outlook sul Web e Outlook 2013 e versioni successive finché non si disattivano i suggerimenti in Exchange interfaccia di amministrazione. In questo modo, le regole del flusso di posta di Exchange correnti (note anche come regole di trasporto) continueranno a funzionare fino a quando non si sceglie &amp; di passare al centro sicurezza e conformità di Office 365.
   
 Si noti che, mentre i suggerimenti per i criteri possono essere disegnati solo da una singola posizione, le notifiche di posta elettronica vengono sempre inviate, anche se si &amp; utilizzano i criteri DLP sia nel centro conformità sicurezza di Office 365 sia nell'interfaccia di amministrazione di Exchange.
   
