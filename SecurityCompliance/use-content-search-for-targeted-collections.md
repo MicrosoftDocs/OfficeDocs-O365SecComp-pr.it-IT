@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per eseguire le raccolte mirate. Un insieme mirato indica che gli elementi che rispondono a un caso o a elementi privilegiati si trovano in una cassetta postale o in una cartella del sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296929"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354688"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca contenuto in Office 365 per le raccolte mirate
 
 La funzionalità di ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 non fornisce un modo diretto nell'interfaccia utente per la ricerca di cartelle specifiche nelle cassette postAli di Exchange o nei siti di SharePoint e OneDrive for business. Tuttavia, è possibile eseguire ricerche in cartelle specifiche (denominate *insieme mirato*) specificando l'ID o il percorso della cartella nella sintassi della query di ricerca effettiva. L'utilizzo di ricerca contenuto per l'esecuzione di una raccolta mirata è utile quando si è certi che gli elementi sensibili a un caso o a elementi privilegiati si trovino in una specifica cassetta postale o cartella del sito. È possibile utilizzare lo script in questo articolo per ottenere l'ID della cartella per le cartelle delle cassette postali o il percorso delle cartelle in un sito di SharePoint e OneDrive for business. Successivamente, è possibile utilizzare l'ID o il percorso della cartella in una query di ricerca per restituire gli elementi che si trovano nella cartella.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di &amp; ruoli eDiscovery Manager nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
     
@@ -55,7 +55,7 @@ Lo script eseguito in questo primo passaggio restituisce un elenco di cartelle d
     
 - **Credenziali utente** : lo script utilizzerà le credenziali per la connessione a Exchange Online e il centro &amp; sicurezza e conformità con Remote PowerShell. Come spiegato in precedenza, è necessario assegnare le autorizzazioni appropriate per eseguire correttamente lo script.
     
-Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi dei percorsi del sito:
+Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del sito documentlink (percorso):
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `GetFolderSearchParameters.ps1`.
     
@@ -66,9 +66,10 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi dei 
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi dei 
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ Nell'esempio del passaggio 2 viene illustrata la query utilizzata per eseguire l
   
 ### <a name="script-output-for-site-folders"></a>Output dello script per le cartelle del sito
 
-Se si ottengono percorsi da siti di SharePoint o OneDrive for business, lo script si connette al centro &amp; sicurezza e conformità tramite Remote PowerShell, crea una nuova ricerca di contenuto in cui vengono eseguite ricerche nel sito per le cartelle e quindi viene visualizzato un elenco delle cartelle. che si trova nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso del **percorso** (che è il nome della proprietà del sito) all'URL della cartella. Poiché la proprietà **path** è una proprietà ricercabile, è possibile utilizzare `path:<path>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. 
+Se si sta ottenendo documentlinks da siti di SharePoint o OneDrive for business, lo script si connette al &amp; Centro sicurezza e conformità tramite Remote PowerShell, crea una nuova ricerca di contenuto in cui vengono eseguite ricerche nel sito per le cartelle e quindi viene visualizzato un elenco dei cartelle che si trovano nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso del **percorso** (che è il nome della proprietà del sito) all'URL della cartella. Poiché la proprietà **path** è una proprietà ricercabile, è possibile utilizzare `path:<path>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. 
   
 Di seguito è riportato un esempio dell'output restituito dallo script per le cartelle del sito.
   
-![Esempio dell'elenco di nomi di percorso delle cartelle del sito restituite dallo script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Esempio dell'elenco di nomi di documentlink per le cartelle del sito restituite dallo script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>Passaggio 2: utilizzare un ID cartella o un percorso per eseguire una raccolta di destinazione
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: utilizzare un ID cartella o documentlink per eseguire una raccolta di destinazione
 
-Dopo aver eseguito lo script per raccogliere un elenco di ID o percorsi di cartelle per un utente specifico, il passaggio successivo per accedere al centro sicurezza &amp; e creare una nuova ricerca contenuto per eseguire la ricerca in una cartella specifica. È possibile utilizzare la `folderid:<folderid>` proprietà `path:<path>` or nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro *ContentMatchQuery* se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la `folderid` proprietà `path` or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa `folderid` solo `path` la proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata. 
-  
-> [!NOTE]
-> L'utilizzo `path` della proprietà per la ricerca nei percorsi di OneDrive non restituirà file multimediali, ad esempio file con estensione png, TIFF o WAV, nei risultati della ricerca. 
+Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o documentlinks per un utente specifico, il passaggio successivo per accedere al centro sicurezza &amp; e creare una nuova ricerca contenuto per eseguire una ricerca in una cartella specifica. È possibile utilizzare la `folderid:<folderid>` proprietà `documentlink:<path>` or nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro *ContentMatchQuery* se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la `folderid` proprietà `documentlink` or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa `folderid` solo `documentlink` la proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata. 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
@@ -227,17 +225,17 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID o percorsi di carte
     
 6. Fare clic su **Avanti**.
     
-7. Nella casella parola chiave della pagina **che cosa si desidera cercare per** la pagina, incollare il `folderid:<folderid>` valore o `path:<path>` restituito dallo script nel passaggio 1. 
+7. Nella casella parola chiave della pagina **che cosa si desidera cercare per** la pagina, incollare il `folderid:<folderid>` valore o `documentlink:<path>` restituito dallo script nel passaggio 1. 
     
     Ad esempio, la query nello screenshot seguente cercherà tutti gli elementi nella sottocartella Purges nella cartella elementi ripristinabili dell'utente (il valore della `folderid` proprietà per la sottocartella Purges viene visualizzato nello screenshot del passaggio 1):
     
-    ![Incollare il FolderId o il percorso nella casella parola chiave della query di ricerca](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Incollare il FolderId o documentlink nella casella parola chiave della query di ricerca](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Fare clic su **Cerca** per avviare la ricerca di raccolta di destinazione. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Esempi di query di ricerca per gli insiemi di destinazione
 
-Di seguito sono riportati alcuni esempi di `folderid` utilizzo `path` delle proprietà e in una query di ricerca per l'esecuzione di una raccolta di destinazione. Si noti che i segnaposto vengono `folderid:<folderid>` utilizzati `path:<path>` per e per risparmiare spazio. 
+Di seguito sono riportati alcuni esempi di `folderid` utilizzo `documentlink` delle proprietà e in una query di ricerca per l'esecuzione di una raccolta di destinazione. Si noti che i segnaposto vengono `folderid:<folderid>` utilizzati `documentlink:<path>` per e per risparmiare spazio. 
   
 - In questo esempio vengono cercate tre cartelle di cassette postali diverse. È possibile utilizzare una sintassi di query simile per cercare le cartelle nascoste nella cartella elementi ripristinabili di un utente.
     
@@ -254,13 +252,13 @@ Di seguito sono riportati alcuni esempi di `folderid` utilizzo `path` delle prop
 - In questo esempio viene eseguita una ricerca in una cartella del sito e in tutte le sottocartelle per i documenti che contengono le lettere "NDA" nel titolo.
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - In questo esempio viene eseguita una ricerca in una cartella del sito e in qualsiasi sottocartella per i documenti che sono stati modificati all'interno di un intervallo di date.
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>Ulteriori informazioni
@@ -273,8 +271,6 @@ Quando si utilizza lo script in questo articolo, è necessario tenere presente q
     
 - Quando si eseguono ricerche nelle cartelle delle cassette postali, verrà eseguita `folderid` la ricerca solo nella cartella specificata (identificata dalla relativa proprietà). Le sottocartelle non verranno cercate. Per eseguire la ricerca in cartelle secondarie, è necessario utilizzare l'ID cartella per la sottocartella che si desidera ricercare. 
     
-- Quando si esegue la ricerca nelle cartelle del sito, la `path` cartella (identificata dalla relativa proprietà) e tutte le sottocartelle verranno ricercate. 
+- Quando si esegue la ricerca nelle cartelle del sito, la `documentlink` cartella (identificata dalla relativa proprietà) e tutte le sottocartelle verranno ricercate. 
     
-- Come indicato in precedenza, non è `path` possibile utilizzare la proprietà per cercare file multimediali, ad esempio file con estensione png, TIFF o WAV, che si trovano nei percorsi di OneDrive. Utilizzare una proprietà diversa del [sito](keyword-queries-and-search-conditions.md#searchable-site-properties) per cercare i file multimediali nelle cartelle di OneDrive. 
-
 - Quando si esportano i risultati di una ricerca in cui è `folderid` stata specificata solo la proprietà nella query di ricerca, è possibile scegliere la prima opzione di esportazione, "tutti gli elementi, esclusi quelli con formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi". Tutti gli elementi della cartella verranno sempre esportati indipendentemente dallo stato di indicizzazione, poiché l'ID della cartella è sempre indicizzato.

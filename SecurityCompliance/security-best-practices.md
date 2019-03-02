@@ -8,8 +8,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,13 +15,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: Ridurre al minimo le potenzialità di una violazione dei dati o un account compromesso attenendosi alle procedure consigliate riportate di seguito.
-ms.openlocfilehash: ff91721569aae5a4982e3f1dd054575d00c278d8
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276126"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357527"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedure consigliate per la sicurezza per Office 365
 
@@ -46,37 +48,37 @@ Accedere al Punteggio sicuro [https://SecureScore.office.com](https://SecureScor
 L'AMF aggiunge un ulteriore livello di protezione a una strategia di password complessa richiedendo agli utenti di riconoscere una telefonata, un messaggio di testo o una notifica di app sul proprio smartphone dopo aver inserito correttamente la propria password. Con AMF sul posto, gli account utente di Office 365 sono ancora protetti da accessi non autorizzati anche se la password di un utente viene compromessa. Gli account sono protetti perché non viene concesso l'accesso a un account fino a quando non è stata soddisfatta la sfida aggiuntiva. Una password compromessa o rubata non è sufficiente.
   
 - [Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
-    
+
 - [Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
-    
+
 ## <a name="use-office-365-cloud-app-security"></a>Utilizzo di Office 365 cloud app Security
 
 Impostare i criteri in base alle esigenze aziendali per monitorare le attività anomale e agire su di esso. Configurare gli avvisi con Office 365 cloud app Security in modo che gli amministratori possano esaminare attività utente inusuali o rischiose, ad esempio il download di grandi quantità di dati, più tentativi di accesso non riusciti o accessi da un indirizzo IP sconosciuto o pericoloso. Per le organizzazioni con un piano Office 365 Enterprise E5, è possibile iniziare a usare Office 365 cloud app Security subito. Se si dispone di un piano aziendale diverso, è possibile acquistare Office 365 cloud app Security come componente aggiuntivo.
   
 - [Panoramica di O365 cloud app Security](office-365-cas-overview.md)
-    
+
 - [Attivare Office 365 Cloud App Security](turn-on-office-365-cas.md)
-    
+
 ## <a name="secure-mail-flow"></a>Protezione del flusso di posta
 
 Implementare il set di funzionalità avanzate in Exchange Online Protection e ottenere maggiore sicurezza sull'identità del mittente di ogni messaggio di posta elettronica e proteggere da malware, virus e URL dannosi sconosciuti trasmessi tramite messaggi di posta elettronica.
   
-- Configurare i criteri di protezione dalla posta inDesiderata di [Office 365](anti-spam-protection.md) per l'organizzazione. 
-    
+- Configurare i criteri di protezione dalla posta inDesiderata di [Office 365](anti-spam-protection.md) per l'organizzazione.
+
 - Informazioni sull'utilizzo di [Advanced Threat Protection per gli allegati sicuri e i collegamenti sicuri](https://technet.microsoft.com/library/mt148491.aspx).
-    
+
 - [Aggiungere protezione anti-malware all'organizzazione](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx).
-    
-- Informazioni su come abilitare i suggerimenti per la [sicurezza nei messaggi di posta elettronica in Office 365](safety-tips-in-office-365.md) per gli utenti. 
-    
+
+- Informazioni su come abilitare i suggerimenti per la [sicurezza nei messaggi di posta elettronica in Office 365](safety-tips-in-office-365.md) per gli utenti.
+
 - Se si usa un dominio personalizzato per l'organizzazione in Office 365, impostare SPF, DKIM e quindi DMARC per convalidare la posta inviata dall'organizzazione e contribuire a prevenire lo spoofing:
-    
+
   - [Configurare SPF in Office 365 per impedire lo spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 ## <a name="enable-mailbox-audit-logging"></a>Abilitare la registrazione di controllo della cassetta postale
 
 Una registrazione di controllo viene automaticamente abilitata per l'utente in Office 365; Tuttavia, la registrazione di controllo delle cassette postali non è attivata per impostazione predefinita. Si attiva la registrazione di controllo per tutte le cassette postali degli utenti in Office 365 utilizzando PowerShell di Exchange Online. Per informazioni, vedere [abilitare il controllo delle cassette postali in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
@@ -99,13 +101,11 @@ In qualità di amministratore di Office 365, è possibile utilizzare l'archivio 
 Vedere queste funzionalità di sicurezza che operano in una sottoscrizione di valutazione di Office 365 prima di adottarli in produzione.
   
 - [Creare una sottoscrizione di valutazione di Office 365](https://technet.microsoft.com/library/mt736406.aspx)
-    
-- [Configurare e testare l'autenticazione master per un account utente](https://technet.microsoft.com/library/mt492459.aspx)
-    
-- [Configurare e testare Office 365 cloud app Security per notificare l'attività di amministratore globale](https://technet.microsoft.com/library/mt757250.aspx)
-    
-- [Configurare e testare ATP per messaggi di posta elettronica sospetti](https://technet.microsoft.com/library/mt490479.aspx)
-    
-- Controllare il [Punteggio di Office 365 Secure](https://securescore.office.com/) per la sottoscrizione di valutazione per ognuno dei passaggi precedenti. 
-    
 
+- [Configurare e testare l'autenticazione master per un account utente](https://technet.microsoft.com/library/mt492459.aspx)
+
+- [Configurare e testare Office 365 cloud app Security per notificare l'attività di amministratore globale](https://technet.microsoft.com/library/mt757250.aspx)
+
+- [Configurare e testare ATP per messaggi di posta elettronica sospetti](https://technet.microsoft.com/library/mt490479.aspx)
+
+- Controllare il [Punteggio di Office 365 Secure](https://securescore.office.com/) per la sottoscrizione di valutazione per ognuno dei passaggi precedenti.
