@@ -89,7 +89,7 @@
 
 # [Protezione contro le minacce](protect-against-threats.md)
 ## [Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
-### [Video per iniziare a proteggere la posta elettronica](videos-for-getting-started-with-protecting-your-email.md)
+### [Panoramica di EOP](videos-for-getting-started-with-protecting-your-email.md)
 ### [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 ### [Come evitare che i messaggi effettivi vengano contrassegnatati come indesiderati in Office 365 ](prevent-email-from-being-marked-as-spam.md)
 ### [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)
