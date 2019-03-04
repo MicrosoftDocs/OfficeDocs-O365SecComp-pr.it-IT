@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una regola. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito.
-ms.openlocfilehash: 9014a2270947fb97edc1ce834985fbd084bc19e6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215446"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341457"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
@@ -212,14 +212,14 @@ Di seguito sono riportati i termini incontrati durante la procedura.
   
 |**Termine**|**Definizione**|
 |:-----|:-----|
-|Entità  <br/> |Le entità sono le tipologie di informazioni sensibili, come i numeri della carta di credito. Ciascuna entità ha un GUID univoco come ID. Copiando un GUID e cercandolo nell'XML, si troverà la definizione della regola XML e tutte le traduzioni localizzate di tale regola XML. Inoltre, la definizione può essere trovata individuando il GUID per la traduzione ed effettuando una ricerca.  <br/> |
-|Funzioni  <br/> |Il file XML fa riferimento a `Func_credit_card`, una funzione nel codice compilato. Le funzioni vengono utilizzate per eseguire regex complessi e verificare la corrispondenza del checksum alle regole predefinite. Poiché è ciò che accade nel codice, alcune variabili non vengono visualizzate nel file XML.  <br/> |
-|IdMatch  <br/> |L'identificatore cui il modello cerca corrispondenza, ad esempio, un numero di carta di credito. Sono disponibili altre informazioni a riguardo e relativamente ai tag `Match` nelle [Entità regole](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).  <br/> |
-|Elenchi di parole chiave  <br/> |Il file XML fa anche riferimento a `keyword_cc_verification` e `keyword_cc_name`, elenchi di parole chiave, in cui si ricercano corrispondenze per l'entità all'interno di `patternsProximity`. Questi attualmente non vengono visualizzati nell'XML.  <br/> |
-|Modello  <br/> |Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Ciò include parole chiave, regex e funzioni interne (che eseguono attività come la verifica checksum). Le tipologie di informazioni sensibili possono avere più modelli con affidabilità univoche. Ciò è utile quando si crea una tipologia di informazioni sensibili che restituisce affidabilità elevata se sono disponibili prove corroborative e affidabilità minore se sono disponibili prove corroborative minime o nulle.  <br/> |
-|Modello confidenceLevel  <br/> |Il livello di affidabilità che il motore DLP individui una corrispondenza. Tale livello di affidabilità è associato a una corrispondenza con i modelli se vengono soddisfatti i requisiti del modello. Questa misura di affidabilità è da prendere in considerazione quando si utilizzano regole di trasporto di Exchange (ETR).  <br/> |
-|patternsProximity  <br/> |Quando viene individuato qualcosa di simile al modello di un numero di carta di credito, `patternsProximity` è la prossimità al numero in cui verranno ricercate prove corroborative.  <br/> |
-|recommendedConfidence  <br/> |Il livello di affidabilità consigliato per la regola. Si applica a entità e affinità. Per le entità, il numero non viene mai valutato rispetto al valore `confidenceLevel` dei modelli. È semplicemente un suggerimento che consente di scegliere un livello di affidabilità se si desidera applicarne uno. Per le affinità, il valore `confidenceLevel` del modello deve essere maggiore del numero `recommendedConfidence` per richiamare un'azione ETR. Il valore `recommendedConfidence` è il livello di affidabilità predefinito utilizzato in ETR che richiama un'azione. Se si desidera, è anche possibile modificare manualmente l'ETR da richiamare in base al livello di affidabilità del modello.  <br/> |
+|Entità|Le entità sono le tipologie di informazioni sensibili, come i numeri della carta di credito. Ciascuna entità ha un GUID univoco come ID. Copiando un GUID e cercandolo nell'XML, si troverà la definizione della regola XML e tutte le traduzioni localizzate di tale regola XML. Inoltre, la definizione può essere trovata individuando il GUID per la traduzione ed effettuando una ricerca.|
+|Funzioni|Il file XML fa riferimento a `Func_credit_card`, una funzione nel codice compilato. Le funzioni vengono utilizzate per eseguire regex complessi e verificare la corrispondenza del checksum alle regole predefinite. Poiché è ciò che accade nel codice, alcune variabili non vengono visualizzate nel file XML.|
+|IdMatch|L'identificatore cui il modello cerca corrispondenza, ad esempio, un numero di carta di credito. Sono disponibili altre informazioni a riguardo e relativamente ai tag `Match` nelle [Entità regole](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).|
+|Elenchi di parole chiave|Il file XML fa anche riferimento a `keyword_cc_verification` e `keyword_cc_name`, elenchi di parole chiave, in cui si ricercano corrispondenze per l'entità all'interno di `patternsProximity`. Questi attualmente non vengono visualizzati nell'XML.|
+|Modello|Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Ciò include parole chiave, regex e funzioni interne (che eseguono attività come la verifica checksum). Le tipologie di informazioni sensibili possono avere più modelli con affidabilità univoche. Ciò è utile quando si crea una tipologia di informazioni sensibili che restituisce affidabilità elevata se sono disponibili prove corroborative e affidabilità minore se sono disponibili prove corroborative minime o nulle.|
+|Modello confidenceLevel|Il livello di affidabilità che il motore DLP individui una corrispondenza. Tale livello di affidabilità è associato a una corrispondenza con i modelli se vengono soddisfatti i requisiti del modello. Questa misura di affidabilità è da prendere in considerazione quando si usano regole di flusso di posta (note anche come regole di trasporto) di Exchange.|
+|patternsProximity|Quando viene individuato qualcosa di simile al modello di un numero di carta di credito, `patternsProximity` è la prossimità al numero in cui verranno ricercate prove corroborative.|
+|recommendedConfidence|Il livello di affidabilità consigliato per la regola. Si applica a entità e affinità. Per le entità, il numero non viene mai valutato rispetto al valore `confidenceLevel` dei modelli. È semplicemente un suggerimento che consente di scegliere un livello di affidabilità se si desidera applicarne uno. Per le affinità, il valore `confidenceLevel` del modello deve essere maggiore del numero `recommendedConfidence` per richiamare un'azione di regola di flusso di posta. Il valore `recommendedConfidence` è il livello di affidabilità predefinito usato nella regola di flusso di posta che richiama un'azione. Se si desidera, è anche possibile modificare manualmente la regola di flusso di posta da richiamare in base al livello di affidabilità del modello.|
    
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

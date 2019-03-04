@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro conformità e sicurezza di Office 365.
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223305"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341517"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365
 
@@ -319,9 +319,9 @@ Una volta completato, l'elemento RulePack dovrebbe avere l'aspetto seguente.
   
 ## <a name="changes-for-exchange-online"></a>Modifiche per Exchange Online
 
-Nelle versioni precedenti era possibile usare PowerShell di Exchange Online per importare i tipi di informazioni riservate personalizzati per DLP. Ora i tipi di informazioni riservate personalizzati possono essere utilizzati sia in nell'interfaccia di amministrazione di Exchange, nel Centro di sicurezza e conformità. Nell'ambito di questo miglioramento, è consigliabile usare il Centro di sicurezza e conformità PowerShell per importare i tipi di informazioni riservate personalizzati; non è più possibile importare tali informazioni da Exchange PowerShell. I tipi di informazioni riservate personalizzati continueranno a funzionare come prima; tuttavia, per visualizzare le modifiche apportate ai tipi di informazioni riservate personalizzati in Centro di sicurezza e conformità all'interno dell'interfaccia di amministrazione di Exchange sarà necessaria fino a un'ora.
+Nelle versioni precedenti era possibile usare PowerShell di Exchange Online per importare i tipi di informazioni riservate personalizzati per DLP. Ora i tipi di informazioni riservate personalizzati possono essere usati sia in nell'interfaccia di amministrazione di Exchange, nel Centro di sicurezza e conformità. Nell'ambito di questo miglioramento, è consigliabile usare il Centro di sicurezza e conformità PowerShell per importare i tipi di informazioni riservate personalizzati; non è più possibile importare tali informazioni da Exchange PowerShell. I tipi di informazioni riservate personalizzati continueranno a funzionare come prima; tuttavia, per visualizzare le modifiche apportate ai tipi di informazioni riservate personalizzati in Centro di sicurezza e conformità all'interno dell'interfaccia di amministrazione di Exchange è necessario attendere fino a un'ora.
   
-In Centro di sicurezza e conformità, per caricare un pacchetto di regole si utilizza il cmdlet  `DlpSensitiveInformationTypeRulePackage`. In precedenza, nell'interfaccia di amministrazione di Exchange di utilizzava il cmdlet  `ClassificationRuleCollection`. 
+In Centro di sicurezza e conformità, per caricare un pacchetto di regole si usa il cmdlet `DlpSensitiveInformationTypeRulePackage`. In precedenza, nell'interfaccia di amministrazione di Exchange si usava il cmdlet `ClassificationRuleCollection`. 
   
 ## <a name="upload-your-rule-package"></a>Caricare il pacchetto di regole
 

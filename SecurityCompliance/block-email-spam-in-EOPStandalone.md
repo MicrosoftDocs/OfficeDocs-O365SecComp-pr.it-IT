@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306545"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341817"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
@@ -37,9 +37,9 @@ Un amministratore può utilizzare diverse impostazioni del filtro protezione da 
     
 3. Aggiungere l'indirizzo IP all'elenco indirizzi IP bloccati seguendo la procedura in "Utilizzare EAC per modificare il criterio del filtro connessioni predefinito" in [Configurare il criterio del filtro connessioni](https://technet.microsoft.com/it-IT/library/jj200718%28v=exchg.150%29.aspx).
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Bloccare i messaggi in blocco con regole di trasporto o con il filtro protezione da posta indesiderata
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloccare i messaggi in blocco con regole di flusso di posta (regole di trasporto) o con il filtro protezione da posta indesiderata
 
-La posta indesiderata è per lo più composta da posta inviata in massa, come ad esempio, newsletter o promozioni? È possibile personalizzare il filtro protezione da posta indesiderata in Office 365 se si [usano regole di trasporto per filtrare in modo aggressivo i messaggi di posta elettronica inviati in massa](https://technet.microsoft.com/it-IT/library/dn720438%28v=exchg.150%29.aspx) o attivare l'impostazione **Invio di posta in blocco** nelle [Opzioni ASF](https://technet.microsoft.com/it-IT/library/jj200750%28v=exchg.150%29.aspx) del filtro protezione da posta indesiderata. Nell'interfaccia di amministrazione di Exchange, iniziare facendo clic su **Protezione** \> **Filtro contenuto**, quindi fare doppio clic sul criterio del filtro da modificare. Fare clic su **Azioni posta inviata in massa e indesiderata** per modificare le impostazioni, come mostrato qui. 
+La posta indesiderata è per lo più composta da posta inviata in blocco, come newsletter o promozioni? È possibile personalizzare il filtro protezione da posta indesiderata in Office 365 se si [usano regole di flusso di posta per configurare il filtro della posta elettronica inviata in blocco](use-transport-rules-to-configure-bulk-email-filtering.md) o si attiva l'impostazione **Invio di posta in blocco** in [Opzioni ASF](advanced-spam-filtering-asf-options.md) del filtro protezione da posta indesiderata. Nell'interfaccia di amministrazione di Exchange fare clic su **Protezione** \> **Filtro contenuto** per iniziare e quindi fare doppio clic sul criterio del filtro da modificare. Fare clic su **Azioni posta indesiderata e inviata in blocco** per modificare le impostazioni, come mostrato qui. 
   
 ![Impostazione del filtro di posta inviata in blocco in Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   

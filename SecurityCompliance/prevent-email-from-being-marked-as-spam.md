@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Informazioni su come impedire falsi positivi ed evitare che messaggi di posta elettronica effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296889"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341477"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365
 
@@ -41,7 +41,7 @@ Nell'intestazione cercare le intestazioni e i valori seguenti.
 
 - **SFV:BLK**: indica che il messaggio è stato contrassegnato come posta indesiderata perché l'indirizzo del mittente è incluso nell'elenco mittenti bloccati del destinatario. 
     
-- **SFV:SKS**: indica che il messaggio è stato contrassegnato come posta indesiderata anteriormente al filtro del contenuto. Ad esempio una regola di trasporto ha segnato il messaggio come posta indesiderata. Eseguire una traccia dei messaggi per scoprire se è stata generata una regola di trasporto che ha impostato un elevato livello di probabilità di posta indesiderata (SCL). 
+- **SFV:SKS**: indica che il messaggio è stato contrassegnato come posta indesiderata anteriormente al filtro del contenuto. Ad esempio una regola di flusso di posta(nota anche come regola di trasporto) ha segnato il messaggio come posta indesiderata. Eseguire una traccia dei messaggi per scoprire se è stata generata una regola di flusso di posta che ha impostato un elevato livello di probabilità di posta indesiderata (SCL). 
     
 - **SFV:SKB**: indica che il messaggio è stato contrassegnato come posta indesiderata perché è stata trovata una corrispondenza con un elenco Blocca nei criteri di filtro posta indesiderata. 
     
@@ -59,7 +59,7 @@ Per funzionare correttamente, Exchange Online Protection (EOP) chiede agli ammin
   
 ### <a name="for-admins"></a>Per gli amministratori
 
-- **Selezionare i record DNS di Office 365**. Per consentire a EOP di fornire protezione, i record DNS di Mail Exchanger (MX) per tutti i domini devono essere indirizzati a Office 365 e solo a Office 365. Se MX non punta a Office 365, EOP non può fornire filtri antispam per gli utenti. Se si desidera utilizzare un altro servizio o appliance per fornire filtri antispam al proprio dominio, prendere in considerazione la possibilità di disabilitare la protezione antispam in EOP. È possibile farlo creando una regola di trasporto che imposta il valore SCL su -1. Se in seguito si decide di utilizzare EOP, assicurarsi di rimuovere questa regola di trasporto. 
+- **Selezionare i record DNS di Office 365**. Per consentire a EOP di fornire protezione, i record DNS di Mail Exchanger (MX) per tutti i domini devono essere indirizzati a Office 365 e solo a Office 365. Se MX non punta a Office 365, EOP non può fornire filtri antispam per gli utenti. Se si vuole usare un altro servizio o appliance per fornire filtri antispam al proprio dominio, prendere in considerazione la possibilità di disabilitare la protezione antispam in EOP. È possibile farlo creando una regola di flusso di posta che imposta il valore SCL su -1. Se in seguito si decide di usare EOP, assicurarsi di rimuovere questa regola di flusso di posta. 
     
 - **Attivare il componente aggiuntivo Segnala messaggio per gli utenti**: è consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
     
