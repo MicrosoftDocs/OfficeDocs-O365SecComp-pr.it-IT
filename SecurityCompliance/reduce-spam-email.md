@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295509"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340887"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295509"
   
 È consigliabile segnalare i messaggi falsi negativi [usando il componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) per aiutarci a migliorare i filtri. È anche possibile inoltrare il messaggio *come allegato* a junk@office365.microsoft.com o a phish@office365.microsoft.com (se si tratta di phishing).
 
->[Avviso] Se si ritiene che il messaggio è indesiderato e si trova nella cartella Posta indesiderata, questo non costituisce un problema. Se non si vuole visualizzarlo nella cassetta postale, è consigliabile modificare i criteri di filtro posta indesiderata per mettere in quarantena il messaggio. Per altre informazioni su come mettere in quarantena un messaggio, vedere [Mettere in quarantena i messaggi di posta elettronica in Office 365](quarantine-email-messages.md).
+> [!TIP]
+> Se si ritiene che il messaggio è indesiderato e si trova nella cartella Posta indesiderata, questo non costituisce un problema. Se non si vuole visualizzarlo nella cassetta postale, è consigliabile modificare i criteri di filtro posta indesiderata per mettere in quarantena il messaggio. Per altre informazioni su come mettere in quarantena un messaggio, vedere [Mettere in quarantena i messaggi di posta elettronica in Office 365](quarantine-email-messages.md).
 
 ## <a name="fixing-allowed-spam"></a>Correzione della posta indesiderata consentita
 
-Capita spesso che i clienti ricevano posta indesiderata nella Posta in arrivo a causa di configurazioni errate. Le configurazioni errate più comuni riguardano la configurazione dei domini in una regola di trasporto per ignorare i filtri oppure l'inserimento di domini nell'elenco di mittenti consentiti/attendibili. Questa configurazione non è valida perché questi messaggi non sono soggetti al filtro posta indesiderata e diversamente avrebbero potuto essere rilevati.  
+Capita spesso che i clienti ricevano posta indesiderata nella Posta in arrivo a causa di configurazioni errate. Le configurazioni errate più comuni riguardano la configurazione dei domini in una regola di flusso di posta (nota anche come regola di trasporto) per ignorare i filtri oppure l'inserimento di domini nell'elenco di mittenti consentiti/attendibili. Questa configurazione non è valida perché questi messaggi non sono soggetti al filtro posta indesiderata e diversamente avrebbero potuto essere rilevati.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Soluzioni ad altre cause comuni della quantità elevata di posta indesiderata
 
@@ -50,7 +51,7 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
     
 - **Contrassegnare la posta elettronica inviata in massa come posta indesiderata** La posta elettronica inviata in massa è costituita da messaggi di posta elettronica per cui gli utenti hanno effettuato la registrazione, ma che potrebbero essere comunque indesiderati. Nell'intestazione del messaggio individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore di BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica inviata in massa come posta indesiderata. Le tolleranze e le preferenze relative alla gestione della [posta elettronica inviata in massa](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values) variano da utente a utente. È possibile creare regole o criteri diversi in base alle preferenze degli utenti. 
     
-- **Bloccare immediatamente un mittente** Nel caso sia necessario bloccare immediatamente un mittente, è possibile bloccarlo tramite l'indirizzo di posta elettronica, il dominio o l'indirizzo IP. Vedere [Bloccare la posta indesiderata con il filtro protezione da posta indesiderata di Office 365 per evitare problemi di falsi negativi](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user). Una voce in un elenco di elementi attendibili dell'utente finale può sostituire un blocco impostato dall'amministratore.
+- **Bloccare immediatamente un mittente** Se occorre bloccare immediatamente un mittente, è possibile applicare il blocco in base all'indirizzo di posta elettronica, al dominio o all'indirizzo IP. Vedere [Usare l'interfaccia di amministrazione di Exchange per creare una regola di flusso di posta che blocchi i messaggi inviati da un dominio](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Tenere presente che una voce nell'elenco di indirizzi consentiti di un utente finale può impedire l'applicazione di un blocco impostato dall'amministratore.
     
 - **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
     
