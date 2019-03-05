@@ -29,7 +29,7 @@
 ### [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
 ### [Visualizzare i rapporti di prevenzione della perdita dei dati](view-the-dlp-reports.md)
 ### [Creare una query per individuare i dati riservati conservati nei siti](form-a-query-to-find-sensitive-data-stored-on-sites.md)
-### [Come funziona la prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l’interfaccia di amministrazione di Exchange](how-dlp-works-between-admin-centers.md)
+### [Come funziona la prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange](how-dlp-works-between-admin-centers.md)
 ## Usare le tipologie di informazioni riservate
 ### [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
 ### [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
@@ -501,7 +501,7 @@
 ## [Flusso di posta in EOP](eop/mail-flow-in-eop.md)
 ### [Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [Regole del flusso di posta (regole di trasporto)](eop/mail-flow-rules-transport-rules-0.md)
-### [Utilizzare le regole di trasporto per configurare il filtro per i messaggi inviati in massa](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [Usare le regole del flusso di posta per configurare il filtro per i messaggi inviati in blocco](use-transport-rules-to-configure-bulk-email-filtering.md)
 ### [Utilizzare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [Ridurre i pericoli del malware bloccando i file allegati](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [Reportistica e traccia dei messaggi](eop/reporting-and-message-trace-in-exchange-online-protection.md)
