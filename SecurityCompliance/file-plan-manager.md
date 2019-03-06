@@ -5,31 +5,27 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 328b8f1aeed3e25fb0ab5eb651fb3846b123747c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221186"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410521"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
 La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
 
 ![Pagina del piano file](media/file-plan-page.png)
-
-## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a>Importante: questa funzionalità è attualmente disponibile solo come parte del programma Office 365 Preview
-
-Questa caratteristica sarà disponibile nel tenant solo se l'organizzazione è iscritta al programma Office 365 Preview.
 
 ## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
 
