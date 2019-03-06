@@ -5,26 +5,25 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341768"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410871"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
-Per conformarsi agli standard aziendali e alle normative industriali, le organizzazioni devono proteggere le informazioni riservate e impedire la divulgazione involontaria. Esempi di informazioni riservate che potrebbero essere necessarie per impedire la fuoriuscita all'esterno dell'organizzazione includono dati finanziari o informazioni di identificazione personale (PII), ad esempio numeri di carta di credito, numeri di previdenza sociale o record di integrità. Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
+Per ottenere la conformità agli standard aziendali e alle normative di settore, le organizzazioni devono proteggere le informazioni riservate e impedirne la divulgazione accidentale. Le informazioni riservate che si desidera proteggere dalla divulgazione all'esterno dell'organizzazione possono essere, ad esempio, dati finanziari o informazioni di identificazione personale (PII) come numeri di carta di credito, numeri di previdenza sociale o cartelle cliniche. Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
   
 Utilizzando un criterio DLP, è possibile:
   
@@ -38,15 +37,15 @@ Utilizzando un criterio DLP, è possibile:
     
 - **Monitorare e proteggere le informazioni riservate nelle versioni desktop di Excel 2016, PowerPoint 2016 e Word 2016.**
     
-    Proprio come in Exchange Online, SharePoint Online e OneDrive for business, questi programmi desktop di Office 2016 includono le stesse funzionalità per identificare le informazioni riservate e applicare i criteri DLP. DLP fornisce un monitoraggio continuo quando le persone condividono contenuto in questi programmi di Office 2016.
+    Proprio come in Exchange Online, SharePoint Online e OneDrive for business, questi programmi desktop di Office 2016 includono le stesse funzionalità per identificare le informazioni riservate e applicare i criteri DLP. La prevenzione della perdita dei dati (DLP) fornisce un monitoraggio continuo quando gli utenti condividono contenuti in questi programmi Office 2016.
     
 - **Fornire agli utenti informazioni su come garantire la conformità senza interrompere il flusso di lavoro.**
     
-    È possibile informare gli utenti sui criteri DLP e aiutarli a rimanere conformi senza bloccarne il lavoro. Ad esempio, se un utente tenta di condividere un documento contenente informazioni riservate, un criterio DLP può inviare una notifica tramite posta elettronica e visualizzargli un suggerimento per i criteri nel contesto della raccolta documenti che consente di ignorare i criteri se dispongono di un'azienda. giustificazione. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook 2013 e versioni successive, Excel 2016, PowerPoint 2016 e Word 2016.
+    È possibile fornire agli utenti informazioni sui criteri DLP e aiutarli a garantire la conformità senza interrompere il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio DLP invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook 2013 e versioni successive, Excel 2016, PowerPoint 2016 e Word 2016.
     
 - **Visualizzare i report DLP che mostrano il contenuto che corrisponde ai criteri DLP dell'organizzazione.**
     
-    Per valutare il modo in cui l'organizzazione rispetta un criterio DLP, è possibile visualizzare il numero di corrispondenze di ogni criterio e regola nel tempo. Se un criterio DLP consente agli utenti di ignorare un suggerimento per i criteri e di segnalare un falso positivo, è anche possibile visualizzare gli utenti segnalati.
+    Per valutare il livello di conformità di un'organizzazione al criterio DLP, è possibile visualizzare il numero relativo alle corrispondenze di criteri e regole nel tempo. Se un criterio DLP consente agli utenti di ignorare un suggerimento per i criteri e di segnalare un falso positivo, è anche possibile visualizzare gli utenti segnalati.
     
 È possibile creare e gestire i criteri DLP nella pagina prevenzione della perdita di dati nel centro &amp; sicurezza e conformità di Office 365.
   
@@ -64,9 +63,9 @@ In un criterio DLP sono disponibili alcuni elementi di base:
     
   - **Azioni** che la regola deve effettuare automaticamente quando vengono rilevati contenuti corrispondenti alle condizioni: ad esempio, è possibile bloccare l'accesso al documento e inviare una notifica tramite posta elettronica sia all'utente che al responsabile della conformità. 
     
-È possibile utilizzare una regola per soddisfare un requisito di protezione specifico e quindi utilizzare un criterio DLP per raggruppare i requisiti di protezione comuni, ad esempio tutte le regole necessarie per conformarsi a una regolamentazione specifica.
+È possibile utilizzare una regola per rispondere a uno specifico requisito di conformità, per poi utilizzare un criterio DLP per raggruppare i requisiti di sicurezza più comuni, ad esempio, tutte le regole necessarie per ottenere la conformità a una normativa specifica.
   
-Ad esempio, potrebbe essere presente un criterio DLP che consente di rilevare la presenza di informazioni soggette alla portabilità e alla responsabilità per l'assicurazione malattia (HIPAA). Questo criterio DLP potrebbe contribuire alla protezione dei dati HIPAA (cosa) in tutti i siti di SharePoint Online e in tutti i siti di OneDrive for business (dove), individuando qualsiasi documento contenente queste informazioni riservate condivise con persone esterne all'organizzazione (la condizioni) e quindi il blocco dell'accesso al documento e l'invio di una notifica (le azioni). Questi requisiti sono archiviati come regole individuali e raggruppati come criteri DLP per semplificare la gestione e la creazione di report.
+È possibile che si disponga di un criterio DLP che consente di rilevare la presenza di informazioni soggette ai moduli di conformità Health Insurance Portability and Accountability Act (HIPAA). Questo criterio DLP potrebbe contribuire alla protezione dei dati HIPAA (cosa) in tutti i siti di SharePoint Online e in tutti i siti di OneDrive for business (dove), individuando qualsiasi documento contenente queste informazioni riservate condivise con persone esterne all'organizzazione (la condizioni) e quindi il blocco dell'accesso al documento e l'invio di una notifica (le azioni). I requisiti vengono archiviati come regole individuali e raggruppati come criterio DLP per semplificare la gestione e la creazione di report.
   
 ![Diagramma che mostra il criterio DLP contenente posizioni e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
@@ -80,7 +79,7 @@ Si noti che se si sceglie di includere o escludere specifici siti di SharePoint 
   
 ### <a name="rules"></a>Regole
 
-Le regole sono ciò che impone i requisiti aziendali per il contenuto dell'organizzazione. Un criterio contiene una o più regole e ogni regola è costituita da condizioni e azioni. Per ogni regola, quando le condizioni sono soddisfatte, le azioni vengono eseguite automaticamente. Le regole vengono eseguite sequenzialmente, a partire dalla regola con priorità più alta in ogni criterio.
+Le regole sono ciò che impone i requisiti aziendali per il contenuto dell'organizzazione. Un criterio include una o più regole e ciascuna di queste è composta da condizioni e azioni. Per ogni regola, le azioni vengono eseguite automaticamente, non appena vengono soddisfatte le condizioni. Le regole vengono eseguite sequenzialmente, a partire dalla regola con priorità più alta in ogni criterio.
   
 Una regola fornisce anche opzioni per informare gli utenti (con suggerimenti per i criteri e le notifiche tramite posta elettronica) e gli amministratori (con i rapporti sugli incidenti di posta elettronica) che il contenuto ha confrontato la regola.
   
@@ -92,7 +91,7 @@ Ecco i componenti di una regola, ognuno illustrato di seguito.
 
 Le condizioni sono importanti perché determinano i tipi di informazioni che si stanno cercando e quando intraprendere un'azione. Ad esempio, è possibile scegliere di ignorare il contenuto contenente numeri di passaporto, a meno che il contenuto non contenga più di dieci numeri e sia condiviso con persone esterne all'organizzazione.
   
-Le condizioni si concentrano sul **contenuto**, ad esempio sui tipi di informazioni riservate che si sta cercando e sul **contesto**, ad esempio il documento con cui è condiviso. È possibile utilizzare le condizioni per assegnare azioni diverse a livelli di rischio diversi, ad esempio il contenuto riservato condiviso internamente potrebbe essere più basso e richiedere meno azioni rispetto ai contenuti sensibili condivisi con utenti esterni all'organizzazione. 
+Le condizioni si concentrano sul **contenuto**, ad esempio sui tipi di informazioni riservate che si sta cercando e sul **contesto**, ad esempio il documento con cui è condiviso. È possibile utilizzare le condizioni per assegnare azioni diverse a livelli di rischio diversi; ad esempio, i contenuti riservati condivisi all'interno dell'organizzazione potrebbero essere caratterizzati da un rischio inferiore rispetto ai contenuti riservati condivisi con utenti esterni all'organizzazione. 
   
 ![Elenco che mostra le condizioni DLP disponibili](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -110,7 +109,7 @@ Un criterio DLP consente di proteggere le informazioni riservate, definite come 
   
 ![Elenco dei tipi di informazioni riservate disponibili](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
-Quando un criterio DLP Cerca un tipo di informazioni riservate, ad esempio un numero di carta di credito, non cerca semplicemente un numero di 16 cifre. Ogni tipo di informazioni riservate viene definito e rilevato tramite una combinazione di:
+Quando un criterio DLP Cerca un tipo di informazioni riservate, ad esempio un numero di carta di credito, non cerca semplicemente un numero di 16 cifre. Ogni tipo di informazioni riservate viene definito e rilevato utilizzando una combinazione dei seguenti elementi:
   
 - Parole chiave
     
@@ -130,7 +129,7 @@ Quando il contenuto corrisponde a una condizione in una regola, è possibile app
   
 Con le azioni ora disponibili, è possibile:
   
-- **Limitare l'accesso al contenuto** Per il contenuto del sito, ciò significa che le autorizzazioni per il documento sono limitate per tutti, tranne l'amministratore principale della raccolta siti, il proprietario del documento e la persona che ha modificato il documento. Tali utenti possono rimuovere le informazioni riservate dal documento o eseguire altre operazioni correttive. Quando il documento è conforme, le autorizzazioni originali verranno ripristinate automaticamente. Quando l'accesso a un documento è bloccato, il documento viene visualizzato con un'icona speciale del suggerimento per i criteri nella raccolta del sito. 
+- **Limitare l'accesso al contenuto** Per il contenuto del sito, ciò significa che le autorizzazioni per il documento sono limitate per tutti, tranne l'amministratore principale della raccolta siti, il proprietario del documento e la persona che ha modificato il documento. Questi utenti possono rimuovere le informazioni riservate dal documento o intraprendere altre azioni di correzione. Quando il documento è conforme, vengono automaticamente ripristinate le autorizzazioni originali. Quando l'accesso a un documento è bloccato, il documento viene visualizzato con un'icona particolare di suggerimento per i criteri nella raccolta sul sito. 
     
     ![Suggerimento per i criteri con accesso al documento bloccato](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
@@ -140,7 +139,7 @@ Con le azioni ora disponibili, è possibile:
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifiche degli utenti e sostituzioni degli utenti
 
-È possibile utilizzare le notifiche e le sostituzioni per istruire gli utenti sui criteri DLP e aiutarli a rimanere conformi senza bloccarne il lavoro. Ad esempio, se un utente tenta di condividere un documento contenente informazioni riservate, un criterio DLP può inviare una notifica tramite posta elettronica e visualizzargli un suggerimento per i criteri nel contesto della raccolta documenti che consente di ignorare i criteri se dispongono di un'azienda. giustificazione.
+È possibile utilizzare le notifiche e le sostituzioni per istruire gli utenti sui criteri DLP e aiutarli a rimanere conformi senza bloccarne il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio DLP invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali.
   
 ![Notifiche utente e override delle sezioni dell'editor delle regole DLP](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
@@ -154,7 +153,7 @@ Oltre a inviare una notifica tramite posta elettronica, una notifica utente visu
     
 - In Excel 2016, PowerPoint 2016 e Word 2016, quando il documento viene archiviato in un sito incluso in un criterio DLP.
     
-La notifica di posta elettronica e il suggerimento per i criteri spiegano perché i conflitti di contenuto con un criterio DLP. Se si sceglie, la notifica di posta elettronica e il suggerimento per i criteri possono consentire agli utenti di ignorare una regola segnalando un falso positivo o fornendo una giustificazione aziendale. In questo modo è possibile informare gli utenti sui criteri DLP e applicarli senza impedire alle persone di svolgere il proprio lavoro. Le informazioni relative alle sostituzioni e ai falsi positivi sono registrate anche per la creazione di report (vedere di seguito sui report DLP) e incluse nei rapporti sugli incidenti (sezione successiva), in modo che il responsabile della conformità possa rivedere periodicamente queste informazioni.
+La notifica di posta elettronica e il suggerimento per i criteri spiegano perché i conflitti di contenuto con un criterio DLP. Se desiderato, la notifica di posta elettronica e il suggerimento per i criteri possono consentire agli utenti di ignorare una regola segnalando un falso positivo o fornendo una motivazione aziendale. In questo modo, è possibile illustrare agli utenti le caratteristiche dei criteri DLP e la loro modalità di applicazione senza impedire alle persone di eseguire le proprie attività. Le informazioni sulle sostituzioni e sui falsi positivi sono abilitate anche per la creazione di report (vedere le informazioni sui report DLP riportate in basso) e incluse nei rapporti sulle operazioni non consentite (sezione seguente), in modo che il responsabile della conformità possa consultarle regolarmente.
   
 Di seguito è riportato l'aspetto di un suggerimento per i criteri in un account di OneDrive for business.
   
@@ -234,7 +233,7 @@ In questo esempio, si noti che le corrispondenze per tutte le regole vengono reg
   
 In relazione ai suggerimenti per i criteri, tenere presente che:
   
-- Verrà visualizzato solo il suggerimento per i criteri dalla priorità più alta e la regola restrittiva. Ad esempio, un suggerimento per i criteri di una regola che blocca l'accesso al contenuto verrà visualizzato su un suggerimento per i criteri da una regola che invia semplicemente una notifica. In questo modo viene impedito agli utenti di visualizzare una cascata di suggerimenti per i criteri.
+- Verrà visualizzato solo il suggerimento per i criteri dalla priorità più alta e la regola restrittiva. Ad esempio, un suggerimento per i criteri di una regola che impedisce l'accesso al contenuto viene sovrapposto a un suggerimento per i criteri di una regola che invia semplicemente una notifica. Ciò impedisce che l'utente visualizzi una cascata di suggerimenti per i criteri.
     
 - Se i suggerimenti per i criteri nella regola più restrittiva consentono all'utente di ignorare la regola, in questo modo vengono ignorate anche le altre regole per le quali è stata rilevata una corrispondenza del contenuto.
     
@@ -250,7 +249,7 @@ Per risolvere questi problemi, è possibile ottimizzare le regole regolando il n
   
 ### <a name="instance-count"></a>Numero di istanze
 
-Il numero di istanze indica semplicemente il numero di occorrenze di un tipo specifico di informazioni riservate che devono essere presenti per il contenuto in modo che corrisponda alla regola. Ad esempio, il contenuto corrisponderà alla regola indicata di seguito se tra 1 e 9 numeri di passaporto univoci Stati Uniti o Regno Unito sono identificati.
+Il numero di istanze indica semplicemente il numero di occorrenze di un tipo specifico di informazioni riservate che devono essere presenti per il contenuto in modo che corrisponda alla regola. Ad esempio, il contenuto corrisponderà alla regola indicata di seguito se tra 1 e 9 unici Stati Uniti o Regno Unito sono identificati i numeri di passaporto.
   
 Si noti che il numero di istanze **** include solo corrispondenze univoche per tipi di informazioni riservate e parole chiave. Ad esempio, se un messaggio di posta elettronica contiene 10 occorrenze dello stesso numero di carta di credito, queste 10 occorrenze contano come una singola istanza di un numero di carta di credito. 
   
@@ -304,7 +303,7 @@ Per questi motivi, le linee guida per la creazione di regole con precisione di c
     
 - Qualsiasi livello di confidenza tra i livelli di riservatezza in genere si trova appena al di sotto del livello di confidenza più alto.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilizzo di un'etichetta come condizione in un criterio DLP
 
 È possibile creare un'etichetta e quindi:
   
@@ -380,7 +379,7 @@ Per passare rapidamente a una sezione, fare clic su un elemento nella barra di s
 
 Il primo passaggio per la creazione di un criterio DLP è la scelta delle informazioni da proteggere. A partire da un modello DLP, è possibile salvare il lavoro di creazione di un nuovo set di regole da zero e capire quali tipi di informazioni devono essere incluse per impostazione predefinita. È quindi possibile aggiungere o modificare questi requisiti per ottimizzare la regola per soddisfare i requisiti specifici dell'organizzazione.
   
-Un modello di criteri DLP preconfigurato può essere utile per individuare tipi specifici di informazioni riservate, ad esempio i dati HIPAA, i dati PCI-DSS, Gramm-Leach-Bliley Act o persino informazioni di identificazione personale specifiche delle impostazioni locali (P.I.). Per semplificare l'individuazione e la protezione dei tipi comuni di informazioni riservate, i modelli di criteri inclusi in Office 365 contengono già i tipi di informazioni riservate più comuni necessari per iniziare.
+Un modello di criteri DLP preconfigurato può essere utile per individuare tipi specifici di informazioni riservate, ad esempio i dati HIPAA, i dati PCI-DSS, Gramm-Leach-Bliley Act o persino informazioni di identificazione personale specifiche delle impostazioni locali (P.I.). Per agevolare l'individuazione e la protezione dei tipi comuni di informazioni riservate, i modelli di criteri inclusi in Office 365 già contengono i tipi di informazioni riservate più comuni.
   
 ![Elenco dei modelli di criteri di prevenzione della perdita dei dati con lo stato attivo sul modello degli Stati Uniti Patriot Act](media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -388,25 +387,25 @@ L'organizzazione può anche avere i propri requisiti specifici, nel qual caso è
   
 ## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Distribuzione graduale dei criteri DLP attraverso la modalità test
 
-Quando si creano i criteri DLP, è consigliabile distribuirli gradualmente per valutarne l'impatto e verificarne l'efficacia prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti di cui gli utenti hanno bisogno di accedere per poter svolgere il proprio lavoro.
+Quando si creano i criteri DLP, è necessario distribuirli gradualmente per valutarne l'impatto e l'efficacia, prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti di cui gli utenti hanno bisogno di accedere per poter svolgere il proprio lavoro.
   
 Se si stanno creando criteri DLP con un impatto potenziale elevato, è consigliabile seguire questa sequenza:
   
-1. **Avviare la modalità di test senza suggerimenti** per i criteri e quindi utilizzare i report DLP e gli eventuali rapporti sugli incidenti per valutare l'impatto. È possibile utilizzare i report DLP per visualizzare il numero, la posizione, il tipo e la gravità delle corrispondenze di criteri. In base ai risultati, è possibile ottimizzare le regole secondo le esigenze. In modalità test, i criteri DLP non influiscono sulla produttività delle persone che lavorano nell'organizzazione. 
+1. **Avviare la modalità di test senza suggerimenti** per i criteri e quindi utilizzare i report DLP e gli eventuali rapporti sugli incidenti per valutare l'impatto. È possibile utilizzare i report DLP per visualizzare il numero, il percorso, il tipo e la gravità di corrispondenza del criterio. A seconda dei risultati, è possibile ottimizzare le regole in modo adeguato. In modalità test, i criteri DLP non avranno effetto sulla produttività degli utenti dell'organizzazione. 
     
-2. **Passare alla modalità di test con le notifiche e i suggerimenti** per i criteri in modo che sia possibile iniziare a insegnare agli utenti i criteri di conformità e prepararli per le regole che verranno applicate. In questa fase, è anche possibile chiedere agli utenti di segnalare falsi positivi, in modo da poter affinare ulteriormente le regole. 
+2. **Passare alla modalità test con notifiche e suggerimenti per i criteri** in modo da istruire gli utenti in merito ai criteri di conformità e prepararli all'applicazione delle regole. In questa fase, è inoltre possibile chiedere agli utenti di segnalare i falsi positivi per definire ulteriormente le regole. 
     
-3. **Avviare l'applicazione completa nei criteri** in modo che le azioni nelle regole vengano applicate e il contenuto sia protetto. Continuare a monitorare i report DLP e gli eventuali rapporti o notifiche sugli incidenti per assicurarsi che i risultati siano quelli desiderati. 
+3. **Avviare l'applicazione completa nei criteri** in modo che le azioni nelle regole vengano applicate e il contenuto sia protetto. Continuare a eseguire il monitoraggio dei report DLP e di eventuali eventi imprevisti oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
     
 ![Opzioni per l'utilizzo della modalità di test e dell'attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
-È possibile disattivare un criterio DLP in qualsiasi momento, che influisce su tutte le regole del criterio. Tuttavia, ogni regola può anche essere disattivata singolarmente commutando lo stato nell'editor delle regole.
+È possibile disattivare un criterio DLP in qualsiasi momento, disabilitando anche tutte le regole nel criterio. Tuttavia, ogni regola può anche essere disattivata singolarmente commutando lo stato nell'editor delle regole.
   
 ![Opzioni per disattivare una regola in un criterio](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
   
 ## <a name="dlp-reports"></a>Rapporti DLP
 
-Dopo aver creato e attivato i criteri DLP, è necessario verificare che funzionino come previsto e che vi aiutino a rimanere conformi. Con i report DLP, è possibile visualizzare rapidamente il numero di criteri DLP e le corrispondenze di regola nel tempo, nonché il numero di falsi positivi e sostituzioni. Per ogni report, è possibile filtrare tali corrispondenze in base alla posizione, alla tempistica e persino restringerla a un criterio, una regola o un'azione specifica.
+Dopo aver creato e attivato i criteri DLP, è necessario verificare che funzionino come previsto e che vi aiutino a rimanere conformi. Grazie ai report DLP, è possibile visualizzare rapidamente il numero relativo alle corrispondenze del criterio DLP e delle regole e il numero di falsi positivi e sostituzioni. Per ciascun report, è possibile filtrare tali corrispondenze in base al percorso o a un intervallo di tempo e circoscriverle in base a un criterio, una regola o un'azione specifici.
   
 Grazie ai report DLP, è possibile ottenere approfondimenti aziendali e:
   
@@ -440,7 +439,7 @@ Dopo che i criteri sono stati sincronizzati con i percorsi giusti, viene avviata
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Valutazione dei criteri nei siti OneDrive for Business e SharePoint Online
 
-In tutti i siti di SharePoint Online e OneDrive for business, i documenti cambiano continuamente, vengono continuamente creati, modificati, condivisi e così via. Questo significa che i documenti possono essere in conflitto o essere conformi a un criterio DLP in qualsiasi momento. Ad esempio, una persona può caricare un documento che non contiene informazioni riservate al proprio sito del team, ma in seguito, una persona diversa può modificare lo stesso documento e aggiungervi informazioni riservate.
+In tutti i siti di SharePoint Online e OneDrive for business, i documenti cambiano continuamente, vengono continuamente creati, modificati, condivisi e così via. Ciò significa che, in qualsiasi momento, i documenti possono violare oppure essere conformi a un criterio DLP. Ad esempio, un utente può caricare un documento privo di informazioni riservate sul sito del proprio team ma, in un secondo momento, un utente diverso può modificare lo stesso documento e aggiungervi informazioni riservate.
   
 Per questo motivo, i criteri DLP consentono di verificare la corrispondenza dei documenti ai criteri in background frequentemente. Tale operazione può essere considerata come una valutazione asincrona del criterio.
   
@@ -450,7 +449,7 @@ Ecco come funziona. Quando gli utenti aggiungono o cambiano documenti nei propri
   
 Infine, i documenti possono essere in conflitto con un criterio DLP ma possono anche diventare conformi a tale criterio. Ad esempio, se una persona aggiunge numeri di carta di credito a un documento, è possibile che un criterio DLP blocchi l'accesso a tale documento automaticamente. Tuttavia, se in un secondo momento l'utente elimina le informazioni riservate, l'azione (in questo caso, di blocco) viene automaticamente annullata durante la successiva valutazione del documento rispetto al criterio.
   
-DLP valuta qualsiasi contenuto che può essere indicizzato. Per ulteriori informazioni sui tipi di file sottoposti a ricerca per indicizzazione per impostazione predefinita, vedere default indicizzazione del [nome di file e tipi di file analizzati in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+La prevenzione della perdita dei dati (DLP) consente di valutare qualsiasi contenuto che è possibile indicizzare. Per ulteriori informazioni sui tipi di file sottoposti a ricerca per indicizzazione per impostazione predefinita, vedere default indicizzazione del [nome di file e tipi di file analizzati in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Valutazione dei criteri in Exchange Online, Outlook 2013 e versioni successive e Outlook sul Web
 
@@ -460,9 +459,9 @@ Quando un messaggio viene composto in Outlook, l'utente può visualizzare i sugg
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Valutazione dei criteri nei programmi desktop di Office 2016
 
-Excel 2016, PowerPoint 2016 e Word 2016 includono la stessa funzionalità per identificare le informazioni riservate e applicare i criteri DLP come SharePoint Online e OneDrive for business. Questi programmi di Office 2016 sincronizzano i criteri DLP direttamente dall'archivio dei criteri centrali e quindi valutano continuamente il contenuto in base ai criteri DLP quando le persone lavorano con documenti aperti da un sito incluso in un criterio DLP.
+Excel 2016, PowerPoint 2016 e Word 2016 dispongono della stessa funzionalità di SharePoint Online e OneDrive for Business che consente di identificare le informazioni riservate e applicare i criteri DLP. Questi programmi di Office 2016 sincronizzano i criteri DLP direttamente dall'archivio dei criteri centrali e quindi valutano continuamente il contenuto in base ai criteri DLP quando le persone lavorano con documenti aperti da un sito incluso in un criterio DLP.
   
-La valutazione del criterio DLP in Office 2016 è progettata per non influire sulle prestazioni dei programmi o sulla produttività degli utenti che lavorano al contenuto. Se si lavora su un documento di grandi dimensioni o se il computer dell'utente è occupato, potrebbero essere necessari alcuni secondi affinché venga visualizzato un suggerimento per i criteri.
+La valutazione dei criteri DLP in Office 2016 è progettata per non influire sulle prestazioni dei programmi o sulla produttività degli utenti. Se si lavora su un documento di grandi dimensioni o se il computer dell'utente è occupato, potrebbero essere necessari alcuni secondi affinché venga visualizzato un suggerimento per i criteri.
   
 ## <a name="permissions"></a>Autorizzazioni
 

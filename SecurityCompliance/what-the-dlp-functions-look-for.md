@@ -8,18 +8,17 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite dalle funzioni interne. In questo argomento vengono illustrate le funzionalità che devono essere cercate per comprendere il funzionamento dei tipi di informazioni riservate predefinite.
-ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti.
+ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219356"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410551"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Cosa individuano le funzioni DLP
 
@@ -29,7 +28,7 @@ In questo argomento viene descritto cosa viene cercato da queste funzioni per co
   
 ## <a name="funcusdate"></a>Func_us_date
 
-Questa funzione Cerca una data nel formato comunemente utilizzato negli Stati Uniti. Sono inclusi i formati "month/day/year", "month-day-year" e "month day year". I nomi o le abbreviazioni dei mesi non sono distinzione tra maiuscole e minuscole. 
+Questa funzione Cerca una data nel formato comunemente utilizzato negli Stati Uniti. Sono inclusi i formati "month/day/year", "month-day-year" e "month day year". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole. 
   
 Esempi:
   
@@ -93,7 +92,7 @@ Nomi dei mesi accettati:
     
   - Janvier, février, Mars, avril, mai, Juin Juillet, août, septembre, Octobre, novembre, décembre
     
-  - janv. févr. Mars Avril mai juin juil. août sett. ott. nov. déc.
+  - janv. févr. Mars Avril mai juin juil. août sett. personalizzazione. novembre. déc.
     
 - Tedesco
     
@@ -117,14 +116,14 @@ Nomi dei mesi accettati:
     
   - enero, febrero, marzo, Abril, Mayo, Junio, Julio, agosto, Septiembre, Octubre, Noviembre, Diciembre
     
-  - enero feb. marzo ABR. Mayo Jun. Jul. agosto Sept/set. ott. nov. dic.
+  - enero feb. marzo ABR. Mayo Jun. luglio. agosto Sept/set. personalizzazione. novembre. dic.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (obsoleto)
 
 > [!NOTE]
 > Questa funzione è obsoleta perché supporta solo i nomi dei mesi portoghesi, che ora sono inclusi nella `Func_eu_date` funzione precedente. 
   
-Questa funzione consente di ricercare una data nel formato comunemente utilizzato in portoghese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
+Questa funzione consente di cercare una data nel formato comunemente utilizzato in portoghese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
   
 Esempi:
   
@@ -155,7 +154,7 @@ Nomi dei mesi accettati:
 > [!NOTE]
 > Questa funzione è obsoleta perché supporta solo i nomi dei mesi olandesi, che ora sono inclusi `Func_eu_date` nella funzione precedente. 
   
-Questa funzione consente di ricercare una data nel formato comunemente utilizzato in Fiammingo. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
+Questa funzione consente di cercare una data nel formato comunemente utilizzato in olandese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
   
 Esempi:
   
@@ -183,9 +182,9 @@ Nomi dei mesi accettati:
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-Questa funzione Cerca una data nei formati comunemente usati dalle carte di credito e di debito, che escludono i giorni a favore dei mesi. Questa funzione corrisponderà alle date nel formato "month/year", "month-year", "[Month Name] Year" e "[month abbreviation] Year". I nomi o le abbreviazioni dei mesi non sono distinzione tra maiuscole e minuscole.
+Questa funzione consente di cercare una data nei formati comunemente utilizzati da carte di credito e di debito, sostituendo i giorni con i mesi. Questa funzione corrisponderà alle date nel formato "month/year", "month-year", "[Month Name] Year" e "[month abbreviation] Year". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
   
-Esempi
+Esempi:
   
 - MM/AA -- ad esempio, 01/11 o 1/11
     

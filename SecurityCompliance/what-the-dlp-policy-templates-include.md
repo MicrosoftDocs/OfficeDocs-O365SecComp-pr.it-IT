@@ -9,22 +9,22 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c2e588d3-8f4f-4937-a286-8c399f28953a
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
-ms.openlocfilehash: a8c39d2ee3f8bf2097c07386bc1f775d947950c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213836"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30411011"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli del criterio DLP
 
-La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite. In questo argomento non sono inclusi tutti i dettagli del modo in cui ogni modello di criteri è configurato. l'argomento contiene invece informazioni sufficienti utili per decidere quale modello è il punto di partenza migliore per lo scenario. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare i requisiti specifici.
+La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
   
 ## <a name="australia-financial-data"></a>Dati finanziari Australia
 
@@ -219,15 +219,15 @@ La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformi
 
 |**Nome regola**|**Condizioni <br/> (compresi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|AMRA Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio basso  <br/> | I contenuti includono informazioni riservate:  <br/>  Tessera sanitaria Regno Unito - conteggio minimo 1, conteggio massimo 9  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
-|AMRA Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio elevato  <br/> | I contenuti includono informazioni riservate:  <br/>  Tessera sanitaria Regno Unito - conteggio minimo 10, conteggio massimo illimitato  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 10, conteggio massimo illimitato  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Bloccare l'accesso ai contenuti  <br/>  Inviare una notifica  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporto operazioni non consentite  <br/> |
+|AMRA Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio basso  <br/> | I contenuti includono informazioni riservate:  <br/>  U.K. Numero del servizio sanitario nazionale-conteggio minimo 1, conteggio massimo 9  <br/>  U.K. Numero di assicurazione nazionale (NINO)-conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
+|AMRA Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio elevato  <br/> | I contenuti includono informazioni riservate:  <br/>  U.K. Numero del servizio sanitario nazionale-conteggio minimo 10, conteggio massimo illimitato  <br/>  U.K. Numero di assicurazione nazionale (NINO)-conteggio minimo 10, conteggio massimo illimitato  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Bloccare l'accesso ai contenuti  <br/>  Inviare una notifica  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporto operazioni non consentite  <br/> |
    
 ## <a name="uk-data-protection-act"></a>U.K. Data Protection Act
 
 |**Nome regola**|**Condizioni <br/> (compresi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|Legge sulla protezione dei dati Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio basso  <br/> | I contenuti includono informazioni riservate:  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto Regno Unito/Stati Uniti - conteggio minimo 1, conteggio massimo 9  <br/>  Codice SWIFT - Conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
-|Legge sulla protezione dei dati Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio elevato  <br/> | I contenuti includono informazioni riservate:  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 10, conteggio massimo illimitato  <br/>  Numero di passaporto Regno Unito/Stati Uniti - conteggio minimo 10, conteggio massimo illimitato  <br/>  Codice SWIFT - Conteggio minimo 10, conteggio massimo illimitato  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Bloccare l'accesso ai contenuti  <br/>  Inviare una notifica  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporto operazioni non consentite  <br/> |
+|Legge sulla protezione dei dati Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio basso  <br/> | I contenuti includono informazioni riservate:  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 1, conteggio massimo 9  <br/>  STATI UNITI/REGNO UNITO Numero di passaporto-conteggio minimo 1, conteggio massimo 9  <br/>  Codice SWIFT - Conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
+|Legge sulla protezione dei dati Regno Unito: analisi dei contenuti condivisi con l'esterno - conteggio elevato  <br/> | I contenuti includono informazioni riservate:  <br/>  Codice fiscale (NINO, Regno Unito) - conteggio minimo 10, conteggio massimo illimitato  <br/>  STATI UNITI/REGNO UNITO Numero di passaporto-conteggio minimo 10, conteggio massimo illimitato  <br/>  Codice SWIFT - Conteggio minimo 10, conteggio massimo illimitato  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Bloccare l'accesso ai contenuti  <br/>  Inviare una notifica  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporto operazioni non consentite  <br/> |
    
 ## <a name="uk-financial-data"></a>Dati finanziari Regno Unito
 

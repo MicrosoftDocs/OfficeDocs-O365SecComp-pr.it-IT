@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando rileva il numero di preVidenza sociale dell'Unione europea o il tipo di informazioni riservate ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216526"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410801"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Codice di preVidenza sociale dell'Unione europea o ID equivalente
 
@@ -73,9 +73,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 previdenza sociale No
   
 social security number
-
   
-
 social security code
   
 numero assicurativo
@@ -146,7 +144,6 @@ numero nazionale belga
 numero nazionale
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 numéro nazionale
   
 numéro de sécurité
-
   
 numéro d'assuré
   
@@ -228,10 +224,9 @@ numero di identificazione personale
   
 numero di cittadino Master
   
-numero di identificazione nazionale
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -306,12 +301,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di nascita
   
-numero di identificazione nazionale
+national identification number
   
 numero di identificazione personale
   
 social security number
-
   
 nationalnumber #
   
@@ -382,10 +376,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di identificazione personale
   
-numero di identificazione nazionale
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -461,7 +454,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
-
   
 ID personale
   
@@ -471,7 +463,7 @@ numero di identificazione nazionale finlandese
   
 personalidnumber #
   
-numero di identificazione nazionale
+national identification number
   
 numero ID
   
@@ -561,7 +553,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 codice di previdenza sociale ungherese
   
 social security number
-
   
 SocialSecurityNumber #
   
@@ -657,7 +648,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 numero ID personale
   
 identification number
-
   
 ID personale No
   

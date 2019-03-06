@@ -10,22 +10,20 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: "Il modo più semplice e comune per iniziare a utilizzare i criteri DLP consiste nell'usare uno dei modelli inclusi in Office 365. "
-ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219436"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410951"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
-Il modo più semplice e comune per iniziare a utilizzare i criteri DLP consiste nell'usare uno dei modelli inclusi in Office 365. È possibile utilizzare uno di questi modelli come è o personalizzare le regole per soddisfare i requisiti di conformità specifici dell'organizzazione.
+Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. È possibile utilizzare uno di questi modelli come è o personalizzare le regole per soddisfare i requisiti di conformità specifici dell'organizzazione.
   
 In Office 365 sono disponibili più di 40 modelli pronti all'uso che consentono di soddisfare una vasta gamma di comuni necessità normative e aziendali. Ad esempio, esistono modelli di criteri DLP per:
   
@@ -43,7 +41,7 @@ In Office 365 sono disponibili più di 40 modelli pronti all'uso che consentono 
   
 ## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Esempio: identificare informazioni riservate in tutti i siti di OneDrive for business e limitare l'accesso per gli utenti esterni all'organizzazione
 
-Gli account di OneDrive for business facilitano la collaborazione e la condivisione dei documenti da parte di utenti dell'organizzazione. Tuttavia, una preoccupazione comune per i responsabili della conformità è che le informazioni riservate archiviate negli account di OneDrive for business possono essere condivise inavvertitamente con persone esterne all'organizzazione. Un criterio DLP può contribuire A attenuare questo rischio.
+Gli account di OneDrive for business facilitano la collaborazione e la condivisione dei documenti da parte di utenti dell'organizzazione. Tuttavia, una preoccupazione comune per i responsabili della conformità è che le informazioni riservate archiviate negli account di OneDrive for business possono essere condivise inavvertitamente con persone esterne all'organizzazione. Un criterio DLP potrebbe ridurre questo rischio.
   
 In questo esempio, verrà creato un criterio DLP che identifica i dati delle informazioni personali degli Stati Uniti, che include i numeri di identificazione dei contribuenti individuali, i numeri di preVidenza sociale e i numeri di passaporto degli Stati Uniti. Per iniziare, è possibile utilizzare un modello e quindi modificare il modello per soddisfare i requisiti di conformità dell'organizzazione, in particolare:
   
@@ -51,13 +49,13 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 - Rendere il criterio più sensibile, in modo che una singola occorrenza di informazioni riservate sia sufficiente per limitare l'accesso per gli utenti esterni.
     
-- Consente agli utenti di ignorare le azioni fornendo una giustificazione aziendale o segnalando un falso positivo. In questo modo, i criteri DLP non impediscono agli utenti dell'organizzazione di svolgere il proprio lavoro, purché dispongano di un motivo aziendale valido per la condivisione delle informazioni riservate.
+- Si consentirà agli utenti di eseguire l'override delle azioni fornendo una motivazione aziendale o segnalando un falso positivo. In questo modo, i criteri DLP non impediscono agli utenti dell'organizzazione di svolgere il proprio lavoro, purché dispongano di un motivo aziendale valido per la condivisione delle informazioni riservate.
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità di Office 365.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità di Office 365.
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     
@@ -81,7 +79,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     Per includere o escludere un'intera posizione, ad esempio tutti i messaggi di posta elettronica di Exchange o tutti gli account di OneDrive, attivare o disattivare lo **stato** di tale percorso. 
     
-    Per includere solo i siti di SharePoint specifici o gli account di OneDrive for business, impostare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. Quando si applica un criterio a un sito, le regole configurate in tale criterio vengono applicate automaticamente a tutti i siti secondari di tale sito. 
+    Per includere solo i siti di SharePoint specifici o gli account di OneDrive for business, impostare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. Quando si applica un criterio a un sito, le regole configurate in tale criterio vengono applicate automaticamente a tutti i siti secondari del sito. 
     
     ![Opzioni per la posizione in cui è possibile applicare un criterio DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -89,7 +87,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 7. Scegliere **Usa impostazioni** \> avanzate **successive**.
     
-8. Un modello di criteri DLP contiene regole predefinite con condizioni e azioni che individuano e agiscono su tipi specifici di informazioni riservate. È possibile modificare, eliminare o disabilitare una o più delle regole esistenti oppure aggiungerne di nuove. Al termine, fare clic su **Avanti**.
+8. Un modello di criteri DLP contiene regole predefinite con condizioni e azioni che rilevano e agiscono su tipi specifici di informazioni riservate. È possibile modificare, eliminare o disabilitare una o più delle regole esistenti oppure aggiungerne di nuove. Al termine, fare clic su **Avanti**.
     
     ![Regole espanse nel modello di criteri di PII Stati Uniti](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
@@ -135,11 +133,11 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 15. Esaminare le condizioni e le azioni per la \> regola **successive**.
     
-    A destra, notare l'opzione di **stato** per la regola. Se si disattiva un intero criterio, tutte le regole incluse nel criterio sono disattivate. Tuttavia, è possibile disattivare una regola specifica senza disattivare l'intero criterio. Questo può essere utile quando è necessario studiare una regola che genera un numero elevato di falsi positivi. 
+    A destra, notare l'opzione di **stato** per la regola. Se si disattiva un intero criterio, tutte le regole incluse nel criterio sono disattivate. Tuttavia, è possibile disattivare una regola specifica senza disattivare l'intero criterio. Questo può essere utile nei casi in cui è necessario esaminare una regola che genera un gran numero di falsi positivi. 
     
 16. Nella pagina successiva leggere e comprendere quanto segue, quindi scegliere se accendere la regola o testarla prima \> ****.
     
-     Prima di creare i criteri DLP, è consigliabile distribuirli gradualmente per valutarne l'impatto e verificarne l'efficacia prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti necessari per ottenere il proprio lavoro. 
+     Prima di aver creato i criteri DLP, è necessario distribuirli gradualmente per valutarne l'impatto e l'efficacia, prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti necessari per ottenere il proprio lavoro. 
     
     Se si stanno creando criteri DLP con un impatto potenziale elevato, è consigliabile seguire questa sequenza:
     
@@ -147,7 +145,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 18. Passare alla modalità test con notifiche e suggerimenti per i criteri in modo da istruire gli utenti in merito ai criteri di conformità e prepararli all'applicazione delle regole. In questa fase, è inoltre possibile chiedere agli utenti di segnalare i falsi positivi per definire ulteriormente le regole.
     
-19. Attiva i criteri in modo che le regole vengano applicate e il contenuto sia protetto. Continuare a monitorare i report DLP e gli eventuali rapporti o notifiche sugli incidenti per assicurarsi che i risultati siano quelli desiderati. 
+19. Attiva i criteri in modo che le regole vengano applicate e il contenuto sia protetto. Continuare a eseguire il monitoraggio dei report DLP e di eventuali eventi imprevisti oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
     
     ![Opzioni per l'utilizzo della modalità di test e dell'attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -157,7 +155,7 @@ Dopo aver creato e attivato un criterio DLP, viene distribuito in tutte le origi
   
 ## <a name="view-the-status-of-a-dlp-policy"></a>Visualizzare lo stato di un criterio DLP
 
-In qualsiasi momento, è possibile visualizzare lo stato dei criteri DLP nella pagina **criteri** nella sezione **prevenzione perdita di dati** del Centro sicurezza &amp; e conformità. Di seguito sono riportate informazioni importanti, ad esempio se un criterio è stato abilitato o disabilitato correttamente oppure se il criterio è in modalità test. 
+In qualsiasi momento, è possibile visualizzare lo stato dei criteri DLP nella pagina **criteri** nella sezione **prevenzione perdita di dati** del Centro sicurezza &amp; e conformità. In questa pagina sono disponibili informazioni importanti, ad esempio se un criterio è stato correttamente attivato o disattivato oppure se il criterio è in modalità test. 
   
 Di seguito sono riportati i diversi stati e il loro significato.
   
@@ -166,10 +164,10 @@ Di seguito sono riportati i diversi stati e il loro significato.
 |**Attivazione in corso...** <br/> |Il criterio viene distribuito alle origini del contenuto che include. Il criterio non è ancora applicato su tutte le origini.  <br/> |
 |**Test, con notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio vengono inviate ai destinatari specificati.  <br/> |
 |**Test, senza notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio non vengono inviate ai destinatari specificati.  <br/> |
-|**Attivo** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
+|**Nella** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
 |**Disattivazione in corso...** <br/> |Il criterio viene rimosso dalle origini del contenuto che include. Il criterio potrebbe essere ancora attivo e applicato in alcune origini. La disattivazione di un criterio potrebbe richiedere fino a 45 minuti.  <br/> |
-|**Disattivo** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
-|**Eliminazione in corso...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato.  <br/> |
+|**Off** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
+|**Eliminazione di...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP
 

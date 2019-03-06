@@ -1,27 +1,26 @@
 ---
-title: Panoramica delle revisioni per l'eliminazione
+title: Panoramica delle recensioni sulla disposizione
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
 description: Quando si crea un'etichetta che conserva il contenuto di Office 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215006"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410761"
 ---
-# <a name="overview-of-disposition-reviews"></a>Panoramica delle revisioni per l'eliminazione
+# <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
 Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile che si desideri rivedere il contenuto per decidere se può essere eliminato in modo sicuro ("Disposed"). Ad esempio, potrebbe essere necessario:
   

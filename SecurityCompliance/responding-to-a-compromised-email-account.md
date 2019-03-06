@@ -9,23 +9,24 @@ ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: 326ec01c570ad97b5f1eaf06dcfe1ad4e6ad76f4
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3f64cd249a425cc098fc49f6e9bbbe1901c734de
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341097"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412944"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
 **Riepilogo** Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365.
 
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Che cos'è un account di posta elettronica compromesso in Office 365?
-L'accesso alle cassette postali, ai dati e ad altri servizi di Office 365 è controllato tramite l'utilizzo delle credenziali, ad esempio un nome utente e una password o un PIN. Quando una persona diversa dall'utente desiderato ruba tali credenziali, le credenziali rubate vengono considerate compromesse. Con gli utenti che effettuano l'attacco possono accedere come utente originale ed eseguire azioni illecite. Utilizzando le credenziali rubate, l'utente malintenzionato può accedere alla cassetta postale di Office 365, alle cartelle di SharePoint o ai file nell'OneDrive dell'utente. Un'azione comunemente vista è l'aggressore che invia messaggi di posta elettronica come utente originale ai destinatari sia all'interno che all'esterno dell'organizzazione. Quando l'utente malintenzionato invia messaggi di posta elettronica ai destinatari esterni, viene chiamato data exfiltration.
+L'accesso alle cassette postali, ai dati e ad altri servizi di Office 365 è controllato tramite l'utilizzo delle credenziali, ad esempio un nome utente e una password o un PIN. Quando una persona diversa dall'utente desiderato ruba tali credenziali, le credenziali rubate vengono considerate compromesse. Con gli utenti che effettuano l'attacco possono accedere come utente originale ed eseguire azioni illecite.
+Utilizzando le credenziali rubate, l'utente malintenzionato può accedere alla cassetta postale di Office 365, alle cartelle di SharePoint o ai file nell'OneDrive dell'utente. Un'azione comunemente vista è l'aggressore che invia messaggi di posta elettronica come utente originale ai destinatari sia all'interno che all'esterno dell'organizzazione. Quando l'utente malintenzionato invia messaggi di posta elettronica ai destinatari esterni, viene chiamato data exfiltration.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un account di posta elettronica di Office 365 compromesso
 Gli utenti possono notare e segnalare attività insolite nelle cassette postali di Office 365. Di seguito sono riportati alcuni sintomi comuni:
@@ -106,11 +107,13 @@ Se la cassetta postale sospetta è stata usata illegalmente per inviare messaggi
 1. Accedere all'interfaccia di amministrazione di Office 365 con un account di amministratore globale e aprire **utenti attivi**.
 2. Individuare l'account compromesso sospettato e controllare manualmente se sono presenti ruoli amministrativi assegnati all'account.
 3. Aprire il **Centro sicurezza _AMP_ Compliance**.
-4. Fare clic su **autorizzazioni**.
-5. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi.  Se è: a. fare clic sul gruppo di ruoli e fare clic su **modifica gruppo di ruoli**.  b. fare clic su **Scegli membri** e **modifica** per rimuovere l'utente dal gruppo di ruoli.
+4. Fare clic su **Autorizzazioni**.
+5. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi.  Se si tratta di: a. Fare clic sul gruppo di ruoli e fare clic su **modifica gruppo di ruoli**.
+    b. Fare clic su **Scegli membri** e **modifica** per rimuovere l'utente dal gruppo di ruoli.
 6. Aprire l'interfaccia di **amministrazione di Exchange**
-7. Fare clic su **autorizzazioni**.
-8. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi. Se è: a. fare clic sul gruppo di ruoli e fare clic su **modifica**.  b. utilizzare la **** sezione Members per rimuovere l'utente dal gruppo di ruoli.
+7. Fare clic su **Autorizzazioni**.
+8. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi. Se si tratta di: a. Fare clic sul gruppo di ruoli e fare clic su **modifica**.
+    b. Utilizzare la **** sezione Members per rimuovere l'utente dal gruppo di ruoli.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Passaggio 7 facoltativo: ulteriori passaggi precauzionali
 1. Verificare che gli elementi inviati siano stati verificati. Potrebbe essere necessario informare gli utenti dell'elenco dei contatti che l'account è stato compromesso. L'utente malintenzionato può aver chiesto soldi, spoofing, ad esempio, che sono stati bloccati in un paese diverso e necessari soldi, o l'aggressore potrebbe inviare un virus anche per dirottare i propri computer.

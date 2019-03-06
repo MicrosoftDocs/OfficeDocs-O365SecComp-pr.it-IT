@@ -3,7 +3,7 @@ title: Attivare il componente aggiuntivo Segnala messaggio
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341427"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410901"
 ---
 # <a name="enable-the-report-message-add-in"></a>Attivare il componente aggiuntivo Segnala messaggio
+
+> [!NOTE]
+> Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web non è esattamente lo stesso del filtro della [posta](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)indesideraTa di Outlook, sebbene entrambi possano essere utilizzati per contrassegnare la posta elettronica come indesiderata, non indesiderata o tentativo di phishing. La differenza è che il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web notifica a Microsoft la posta indesiderata, mentre il filtro posta inDesiderata di Outlook viene utilizzato per organizzare i messaggi di posta elettronica nella cassetta postale di un utente. 
 
 ## <a name="overview"></a>Panoramica
 
@@ -31,14 +34,13 @@ Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web c
 Si supponga, ad esempio, che le persone riferiscono un gran quantità di messaggi come phishing. Queste informazioni si riferiscono al [dashboard di sicurezza](security-dashboard.md) e ad altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri di protezione anti-phishing. In alternativa, se la gente segnala un gran quantità di messaggi che sono stati contrassegnati come posta indesiderata come non inDesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover adeguare i criteri di protezione da [posta](configure-the-anti-spam-policies.md)indesiderata. 
 
 Il componente aggiuntivo segnala messaggio è compatibile con l'abbonamento a Office 365 e i prodotti seguenti:
- - Outlook sul web
+ - Outlook sul Web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 per Mac
  - Outlook incluso con Office 365 ProPlus
 
-> [!NOTE]
-> Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web non è esattamente lo stesso del filtro della [posta](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)indesideraTa di Outlook, sebbene entrambi possano essere utilizzati per contrassegnare la posta elettronica come indesiderata, non indesiderata o tentativo di phishing. Il componente aggiuntivo segnala messaggio per Outlook e Outlook sul Web comunica a Microsoft la posta elettronica non classificata, mentre il filtro posta inDesiderata di Outlook viene utilizzato per organizzare i messaggi di posta elettronica nella cassetta postale di un utente. 
+Il Web browser esistente dovrebbe essere sufficiente per il componente aggiuntivo del messaggio di report in modo che funzioni; Tuttavia, se si nota che il componente aggiuntivo non è disponibile o non funziona come previsto, provare con un altro browser.
   
 Se si è un singolo utente, è possibile [abilitare il componente aggiuntivo per i messaggi di report](#get-the-report-message-add-in-for-yourself). 
   
@@ -50,7 +52,7 @@ Se si è un amministratore globale di Office 365 o un amministratore di Exchange
     
 2. Scegliere **Get it now**.<br/>![Segnala messaggio-ottienilo subito](media/ReportMessageGETITNOW.png)<br/> 
     
-3. Esaminare le condizioni di utilizzo e i criteri di privacy. Scegliere **continue**. 
+3. Esaminare le condizioni di utilizzo e i criteri di privacy. Scegliere **Continue**. 
     
 4. Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione (per uso commerciale) o il proprio account Microsoft (per uso personale).
     
@@ -119,7 +121,7 @@ A seconda di cosa è stato selezionato quando si configura il componente aggiunt
     
 9. In **Scegli una modalità per questa regola**, scegliere **applica**.<br/>![Impostare una regola per ottenere una copia di ogni messaggio segnalato](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Scegliere **Save**. 
+10. Fare clic su **Salva**. 
     
 Con questa regola sul posto, ogni volta che un utente dell'organizzazione segnala un messaggio di posta elettronica utilizzando il componente aggiuntivo segnala messaggio, l'amministratore globale, l'amministratore della sicurezza e/o il lettore di sicurezza riceverà una copia del messaggio. Queste informazioni consentono di impostare o modificare i criteri, ad esempio i criteri di [collegamenti sicuri ATP di Office 365](atp-safe-links.md) o le impostazioni di protezione da [posta](anti-spam-protection.md) indesiderata. 
 
@@ -139,10 +141,10 @@ Per ulteriori informazioni, vedere [use the report Message Add-in](https://suppo
 2. Individuare e selezionare il componente aggiuntivo per i messaggi di report.<br/>![Individuare e selezionare il componente aggiuntivo per i messaggi di report](media/FindReportMessageAddIn.png)<br/> 
     
 3. Nella schermata del messaggio di report, esaminare e modificare le impostazioni appropriate per l'organizzazione.<br/>![Impostazioni per il componente aggiuntivo per i messaggi di report](media/EditReportMessageAddIn.png)<br/> 
-  
+
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Usare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+[Utilizzare il componente aggiuntivo per i messaggi di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   
 [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md)
 

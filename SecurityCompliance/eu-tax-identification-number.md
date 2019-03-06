@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213826"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410911"
 ---
 # <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
@@ -81,7 +81,6 @@ numero
 numero di registrazione fiscale
   
 tax id
-
   
 St.Nr.
   
@@ -140,7 +139,6 @@ numero di registrazione nazionale
 numero di registrazione fiscale
   
 tax id
-
   
 NIF
   
@@ -273,7 +271,6 @@ codice fiscale
 imposte
   
 tax id
-
   
 OID
   
@@ -335,7 +332,6 @@ codice fiscale
 imposte
   
 tax id
-
   
 codice di identificazione fiscale
   
@@ -396,7 +392,6 @@ codice fiscale
 imposte
   
 tax id
-
   
 numero personale
   
@@ -458,7 +453,6 @@ codice fiscale
 imposte
   
 tax id
-
   
 numero CPR
   
@@ -524,7 +518,6 @@ codice fiscale
 imposte
   
 tax id
-
   
 codice personale
   
@@ -586,7 +579,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
-
   
 ID personale
   
@@ -596,7 +588,7 @@ numero di identificazione nazionale finlandese
   
 personalidnumber #
   
-numero di identificazione nazionale
+national identification number
   
 numero ID
   
@@ -680,7 +672,6 @@ codice di identificazione fiscale
 codice fiscale
   
 tax id
-
   
 numéro d'identification fiscale
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -794,8 +784,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 AFM
   
-tin
-
+latta
   
 ID IVA No.
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1401,7 +1385,6 @@ ID delle tasse olandesi
 numero di identificazione fiscale olandese
   
 tax id
-
   
 ID fiscale #
   
@@ -1411,8 +1394,7 @@ tax no #
   
 imposte
   
-tin
-
+latta
   
 latta
   
@@ -1494,7 +1476,6 @@ NIP
 NIP
   
 tax id
-
   
 ID fiscale #
   
@@ -1620,14 +1601,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
-
   
 numero di ID fiscale
   
 Tax File No
   
-
-
 tax file number
   
 tax no
@@ -1679,7 +1657,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
-
   
 numero di ID fiscale
   
@@ -1689,13 +1666,10 @@ Tin No
   
 ID Tin slovacco
   
-tin
-
+latta
   
 Tax File No
   
-
-
 tax file number
   
 tax no
@@ -1756,7 +1730,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
-
   
 numero di ID fiscale
   
@@ -1766,13 +1739,10 @@ Tin No
   
 ID Tin sloveno
   
-tin
-
+latta
   
 Tax File No
   
-
-
 tax file number
   
 tax no
@@ -1869,7 +1839,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
-
   
 numero di ID fiscale
   
@@ -1885,8 +1854,6 @@ Tax File No
   
 numero CIF spagnolo
   
-
-
 tax file number
   
 Spagnolo CIF No
@@ -1971,14 +1938,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
-
   
 ID IVA No.
   
 numero di ID fiscale
   
 tax identification
-
   
 identificazione fiscale #
   
@@ -2006,13 +1971,13 @@ personnummer
 
 Riferimento per i contribuenti unici (UTR): 10 cifre senza spazi e delimitatori
   
-Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito National Insurance Number (NINO)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito Numero di assicurazione nazionale (NINO) "in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Modello
 
 Riferimento per i contribuenti unici (UTR): 10 cifre
   
-Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito National Insurance Number (NINO)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Numero di assicurazione nazionale (NINO): per informazioni dettagliate, vedere la sezione "Regno Unito Numero di assicurazione nazionale (NINO) "in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Checksum
 
@@ -2041,14 +2006,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
-
   
 ID IVA No.
   
 numero di ID fiscale
   
 tax identification
-
   
 identificazione fiscale #
   

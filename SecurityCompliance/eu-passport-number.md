@@ -7,15 +7,15 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di passaporto dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218266"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410931"
 ---
 # <a name="eu-passport-number"></a>Numero di passaporto EU
 
@@ -64,7 +64,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto austriaco  <br/> Passport No  <br/> reisepass  <br/> Österreichisch Reisepass  <br/> |
+|passport number  <br/> numero di passaporto austriaco  <br/> Passport No  <br/> Reisepass  <br/> Österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgio
 
@@ -103,7 +103,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto belga  <br/> Passport No  <br/> PASPOORT  <br/> paspoortnummer  <br/> Reisepass kein  <br/> reisepass  <br/> |
+|passport number  <br/> numero di passaporto belga  <br/> Passport No  <br/> PASPOORT  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
@@ -142,7 +142,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto bulgaro  <br/> Passport No  <br/> Номер на паспорта  <br/> |
+|passport number  <br/> numero di passaporto bulgaro  <br/> Passport No  <br/> Номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Croazia
 
@@ -181,7 +181,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto croato  <br/> Passport No  <br/> broj putovnice  <br/> |
+|passport number  <br/> numero di passaporto croato  <br/> Passport No  <br/> broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Cipro
 
@@ -220,7 +220,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto di Cipro  <br/> Passport No  <br/> αριθμό διαβατηρίου  <br/> |
+|passport number  <br/> numero di passaporto di Cipro  <br/> Passport No  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>Repubblica Ceca
 
@@ -259,7 +259,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto ceco  <br/> Passport No  <br/> Cestovní pas  <br/> pas  <br/> |
+|passport number  <br/> numero di passaporto ceco  <br/> Passport No  <br/> Cestovní pas  <br/> pas  <br/> |
    
 ## <a name="denmark"></a>Danimarca
 
@@ -298,7 +298,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto danese  <br/> Passport No  <br/> pas  <br/> Pasnummer  <br/> |
+|passport number  <br/> numero di passaporto danese  <br/> Passport No  <br/> pas  <br/> Pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estonia
 
@@ -337,7 +337,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto estone  <br/> Passport No  <br/> passaggio kodaniku Eesti  <br/> |
+|passport number  <br/> numero di passaporto estone  <br/> Passport No  <br/> passaggio kodaniku Eesti  <br/> |
    
 ## <a name="finland"></a>Finlandia
 
@@ -388,7 +388,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto greco  <br/> Passport No  <br/> διαβατηριο  <br/> |
+|passport number  <br/> numero di passaporto greco  <br/> Passport No  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Ungheria
 
@@ -427,7 +427,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto ungherese  <br/> Passport No  <br/> útlevél száma  <br/> |
+|passport number  <br/> numero di passaporto ungherese  <br/> Passport No  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
@@ -470,7 +470,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto irlandese  <br/> Passport No  <br/> pas  <br/> passport  <br/> Passeport  <br/> numero Passeport  <br/> |
+|passport number  <br/> numero di passaporto irlandese  <br/> Passport No  <br/> pas  <br/> passaporto  <br/> Passeport  <br/> numero Passeport  <br/> |
    
 ## <a name="italy"></a>Italia
 
@@ -513,7 +513,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|numero di passaporto italiano  <br/> Repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> numero di passaporto  <br/> italiana passaporto numero  <br/> Numero passaporto  <br/> numéro Passeport Italien  <br/> numéro Passeport  <br/> |
+|numero di passaporto italiano  <br/> Repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> passport number  <br/> italiana passaporto numero  <br/> Numero passaporto  <br/> numéro Passeport Italien  <br/> numéro Passeport  <br/> |
    
 ## <a name="latvia"></a>Lettonia
 
@@ -556,7 +556,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto lettone  <br/> Passport No  <br/> pase numurs  <br/> |
+|passport number  <br/> numero di passaporto lettone  <br/> Passport No  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
@@ -595,7 +595,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto di lithunian  <br/> Passport No  <br/> numero di Paso  <br/> |
+|passport number  <br/> numero di passaporto di lithunian  <br/> Passport No  <br/> numero di Paso  <br/> |
    
 ## <a name="luxemburg"></a>Lussemburgo
 
@@ -634,7 +634,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto lettone  <br/> Passport No  <br/> passnummer  <br/> |
+|passport number  <br/> numero di passaporto lettone  <br/> Passport No  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -673,7 +673,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto maltese  <br/> Passport No  <br/> numru tal-passaport  <br/> |
+|passport number  <br/> numero di passaporto maltese  <br/> Passport No  <br/> numru tal-passaport  <br/> |
    
 ## <a name="netherlands"></a>Paesi Bassi
 
@@ -712,7 +712,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|numero di passaporto olandese  <br/> numero di passaporto  <br/> numero di passaporto per i Paesi Bassi  <br/> Nederlanden PASPOORT Nummer  <br/> PASPOORT  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|numero di passaporto olandese  <br/> passport number  <br/> numero di passaporto per i Paesi Bassi  <br/> Nederlanden PASPOORT Nummer  <br/> PASPOORT  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
@@ -759,7 +759,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto portoghese  <br/> Passport No  <br/> número do passaporte  <br/> |
+|passport number  <br/> numero di passaporto portoghese  <br/> Passport No  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>Romania
 
@@ -798,7 +798,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto rumeno  <br/> Passport No  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> numero di passaporto rumeno  <br/> Passport No  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Slovacchia
 
@@ -837,7 +837,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto slovacco  <br/> Passport No  <br/> číslo Pasu  <br/> |
+|passport number  <br/> numero di passaporto slovacco  <br/> Passport No  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slovenia
 
@@ -882,7 +882,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|numero di passaporto  <br/> numero di passaporto sloveno  <br/> Passport No  <br/> številka potnega lista  <br/> |
+|passport number  <br/> numero di passaporto sloveno  <br/> Passport No  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>Spagna
 
@@ -927,7 +927,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> passaporto della Spagna  <br/> libro del passaporto  <br/> numero di passaporto  <br/> Passport No  <br/> libreta pasaporte  <br/> número pasaporte  <br/> pasaporte España  <br/> pasaporte  <br/> |
+|passaporto  <br/> passaporto della Spagna  <br/> libro del passaporto  <br/> passport number  <br/> Passport No  <br/> libreta pasaporte  <br/> número pasaporte  <br/> pasaporte España  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Svezia
 
@@ -935,7 +935,7 @@ Per informazioni dettagliate, vedere la sezione "Sweden Passport Number" in [Wha
   
 ## <a name="uk"></a>Regno Unito
 
-Per informazioni dettagliate, vedere la sezione "numero di passaporto degli Stati Uniti/Regno Unito" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Stati Uniti/Regno Unito Numero di passaporto "in [quello che cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Vedere anche
 

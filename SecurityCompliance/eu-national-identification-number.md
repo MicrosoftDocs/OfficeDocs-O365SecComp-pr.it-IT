@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220636"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410971"
 ---
 # <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
@@ -67,7 +67,6 @@ numero di identità nazionale
   
 numero di identità
   
-
 national id
   
 Personalausweis Republik Österreich
@@ -135,7 +134,6 @@ numero nazionale bulgaro
 numero nazionale
   
 social security number
-
   
 nationalnumber #
   
@@ -203,7 +201,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di carta di identità
   
-numero di identificazione nazionale
+national identification number
   
 numero ID personale
   
@@ -274,7 +272,7 @@ codice di identificazione personale
   
 numero di identificazione personale
   
-numero di identificazione nazionale
+national identification number
   
 numero nazionale
   
@@ -357,7 +355,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 numero di identificazione personale
   
 identification number
-
   
 numero ID personale
   
@@ -433,7 +430,6 @@ RSI No
 numero di identificazione personale
   
 identification number
-
   
 numero ID personale
   
@@ -926,7 +922,7 @@ CNP
   
 CNP
   
-aggiungere
+pin
   
 pin
   
@@ -1001,12 +997,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 numero di nascita
   
-numero di identificazione nazionale
+national identification number
   
 numero di identificazione personale
   
 social security number
-
   
 nationalnumber #
   
@@ -1139,7 +1134,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 DNI
   
-numero di identificazione nazionale
+national identification number
   
 numero di identità nazionale
   

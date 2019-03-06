@@ -10,22 +10,21 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341697"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410921"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
 
-È possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, monitorare e proteggere le informazioni riservate in Office 365. Si desidera che gli utenti dell'organizzazione che lavorano con queste informazioni riservate vengano conformi ai criteri DLP, ma non si desidera bloccarli inutilmente dall'ottenere il proprio lavoro. Questa è la posizione in cui le notifiche di posta elettronica e i suggerimenti criteri possono essere utili
+È possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, controllare e proteggere le informazioni riservate in Office 365. Si desidera che gli utenti dell'organizzazione che lavorano con queste informazioni riservate vengano conformi ai criteri DLP, ma non si desidera bloccarli inutilmente dall'ottenere il proprio lavoro. In questo scenario possono risultare utili le notifiche tramite posta elettronica e i suggerimenti per i criteri.
   
 ![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
@@ -51,7 +50,7 @@ Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i s
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità di Office 365.
+2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità di Office 365.
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     
@@ -90,7 +89,7 @@ Per ogni regola in un criterio DLP, è possibile:
 - Personalizzare il testo incluso nella notifica tramite HTML o token. Per ulteriori informazioni, vedere la sezione riportata di seguito.
     
 > [!NOTE]
->  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. > solo il nuovo contenuto attiverà una notifica tramite posta elettronica. La modifica del contenuto esistente attiverà suggerimenti per i criteri, ma non una notifica tramite posta elettronica. 
+>  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. > solo il nuovo contenuto attiverà una notifica tramite posta elettronica. Le modifiche ai contenuti esistenti attivano i suggerimenti per i criteri, non una notifica di posta elettronica. 
   
 ![Opzioni di notifica tramite posta elettronica](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -105,7 +104,7 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 |**Se la regola del criterio DLP…**|**La notifica predefinita per i documenti di SharePoint o OneDrive for business dice che questo è...**|**La notifica predefinita per i messaggi di Outlook dice che questo è...**|
 |:-----|:-----|:-----|
 |Invia una notifica ma non consente la sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione.  <br/> |
-|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio nell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
+|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
 |Blocca l'accesso e invia una notifica  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. L'accesso a questo elemento è limitato al proprietario, all'autore dell'ultima modifica e all'amministratore della raccolta siti principale.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
    
 ### <a name="custom-email-notification"></a>Notifica di posta elettronica personalizzata
@@ -126,11 +125,11 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 
 Per ogni regola in un criterio DLP, è possibile configurare suggerimenti per i criteri per:
   
-- Notificare semplicemente alla persona che il contenuto è in conflitto con un criterio DLP, in modo che possano intervenire per risolvere il conflitto. È possibile utilizzare il testo predefinito (vedere le tabelle riPortate di seguito) oppure immettere testo personalizzato sui criteri specifici dell'organizzazione.
+- Informare l'utente che il contenuto è in conflitto con un criterio DLP, affinché possa intervenire per risolvere il conflitto. È possibile utilizzare il testo predefinito (vedere le tabelle riPortate di seguito) oppure immettere testo personalizzato sui criteri specifici dell'organizzazione.
     
 - Consentire all'utente di ignorare il criterio DLP. In alternativa, è possibile:
     
-  - Richiedere alla persona di immettere una giustificazione aziendale per l'override del criterio. Queste informazioni sono registrate ed è possibile visualizzarle nei report DLP nella sezione **report** del Centro sicurezza &amp; e conformità. 
+  - Richiedere all'utente di immettere una motivazione aziendale per ignorare il criterio. Queste informazioni sono registrate ed è possibile visualizzarle nei report DLP nella sezione **report** del Centro sicurezza &amp; e conformità. 
     
   - Consentire all'utente di segnalare un falso positivo e di ignorare il criterio DLP. Anche questa informazione viene registrata per il report affinché sia possibile utilizzare falsi positivi per ottimizzare le regole.
     
@@ -140,7 +139,7 @@ Ad esempio, si può avere un criterio DLP applicato ai siti di OneDrive for busi
   
 1. Prima regola: Se vengono rilevate meno di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti interni all'organizzazione, l'azione **Invia una notifica** mostra un suggerimento per i criteri. Non sono necessarie opzioni per ignorare i suggerimenti per i criteri perché la regola sta semplicemente informando l'utente senza bloccargli l'accesso. 
     
-2. Seconda regola: se in un documento sono rilevate più di cinque istanze di queste informazioni riservate e il documento viene condiviso con persone all'interno dell'organizzazione, l'azione **blocca l'accesso al contenuto** limita le autorizzazioni per il file e la ** Invia un'** azione di notifica consente agli utenti di ignorare le azioni in questa regola fornendo una giustificazione aziendale. L'attività dell'organizzazione a volte richiede agli utenti interni la condivisione dei dati delle informazioni personali e non si desidera che il criterio DLP blocchi questo lavoro. 
+2. Seconda regola: Se vengono rilevate più di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti interni all'organizzazione, l'azione **Blocca accesso al contenuto** limita le autorizzazioni per il file e l'azione **Invia una notifica** consente agli utenti di ignorare le azioni in questa regola fornendo una motivazione aziendale. L'attività dell'organizzazione a volte richiede agli utenti interni la condivisione dei dati delle informazioni personali e non si desidera che il criterio DLP blocchi questo lavoro. 
     
 3. Terza regola: Se vengono rilevate più di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti esterni all'organizzazione, l'azione **Blocca accesso al contenuto** limita le autorizzazioni per il file e l'azione **Invia una notifica** non consente agli utenti di ignorare le azioni in questa regola perché l'informazione è condivisa esternamente. In nessun caso gli utenti dell'organizzazione possono condividere dati PII all'esterno dell'organizzazione. 
     
@@ -148,7 +147,7 @@ Di seguito sono riportati alcuni punti per comprendere l'utilizzo di un suggerim
   
 - La possibilità di eseguire l'override è per ogni regola e sostituisce tutte le azioni della regola (ad eccezione dell'invio di una notifica, che non può essere sottoposta a override).
     
-- È possibile che il contenuto corrisponda a diverse regole in un criterio DLP, ma viene visualizzato solo il suggerimento per i criteri della regola più restrittiva e con priorità più alta. Ad esempio, un suggerimento per i criteri di una regola che blocca l'accesso al contenuto verrà visualizzato su un suggerimento per i criteri da una regola che invia semplicemente una notifica. In questo modo viene impedito agli utenti di visualizzare una cascata di suggerimenti per i criteri.
+- È possibile che il contenuto corrisponda a diverse regole in un criterio DLP, ma viene visualizzato solo il suggerimento per i criteri della regola più restrittiva e con priorità più alta. Ad esempio, un suggerimento per i criteri di una regola che impedisce l'accesso al contenuto viene sovrapposto a un suggerimento per i criteri di una regola che invia semplicemente una notifica. Ciò impedisce che l'utente visualizzi una cascata di suggerimenti per i criteri.
     
 - Se i suggerimenti per i criteri nella regola più restrittiva consentono all'utente di ignorare la regola, in questo modo vengono ignorate anche le altre regole per le quali è stata rilevata una corrispondenza del contenuto.
     
@@ -179,7 +178,7 @@ Per impostazione predefinita, i suggerimenti per i criteri consentono di visuali
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
 |Invia una notifica ma non consente la sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |
-|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio nell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |
+|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |
 |Blocca l'accesso e invia una notifica  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. L'accesso a questo elemento è limitato al proprietario, all'autore dell'ultima modifica e all'amministratore della raccolta siti principale.  <br/> |
    
 ### <a name="custom-text-for-policy-tips-on-sites"></a>Testo personalizzato per i suggerimenti sui criteri nei siti
@@ -211,7 +210,7 @@ Attualmente, Outlook 2013 e versioni successive supporta la visualizzazione dei 
 - Contenuto contiene
 - Contenuto condiviso
 
-Attualmente stiamo lavorando al supporto per mostrare suggerimenti per i criteri per altre condizioni. Sono inclusi i seguenti:
+Attualmente stiamo lavorando al supporto per mostrare suggerimenti per i criteri per altre condizioni. Queste funzionalità sono:
 
 - Non è stato possibile analizzare il contenuto di un allegato di posta elettronica
 - Il contenuto di un allegato di posta elettronica non ha completato l'analisi
@@ -273,9 +272,9 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
 
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
-|Invia una notifica ma non consente la sostituzione  <br/> |Questo file è in conflitto con un criterio nell'organizzazione. Per ulteriori informazioni, passare al menu **file** .<br/> |
-|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo file è in conflitto con un criterio nell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .<br/> |
-|Blocca l'accesso e invia una notifica  <br/> |Questo file è in conflitto con un criterio nell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .<br/> |
+|Invia una notifica ma non consente la sostituzione  <br/> |Il file è in conflitto con un criterio dell'organizzazione. Per ulteriori informazioni, passare al menu **file** .  <br/> |
+|Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Il file è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .  <br/> |
+|Blocca l'accesso e invia una notifica  <br/> |Il file è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .  <br/> |
    
 ### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Testo personalizzato per i suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
 

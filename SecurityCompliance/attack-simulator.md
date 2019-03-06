@@ -3,7 +3,7 @@ title: Simulatore di attacchi in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: ba5658dfa9075b5779f8ca09ccad3547dbddcbb5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 25686ce194deca8d1ca07fca40f8142492951574
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216276"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410831"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -50,13 +50,13 @@ Per accedere a simulatore di attacco, &amp; nel centro sicurezza e conformità s
 
 Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per il simulatore di attacco:
       
-- La posta elettronica dell'organizzazione è ospitata in Exchange Online. (Attack Simulator non è disponibile per i server di posta elettronica locali.)
+- **La posta elettronica dell'organizzazione è ospitata in Exchange Online**. (Attack Simulator non è disponibile per i server di posta elettronica locali.)
     
-- Si è un amministratore globale di Office 365
+- **Si è un amministratore globale di Office 365**
     
-- L'organizzazione utilizza [l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
+- L' ** [autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) a più fattori (AMF) è attivata, almeno per l'account amministratore globale di Office 365**. (Idealmente, l'AMF è attivata per tutti gli utenti dell'organizzazione.)
  
-- l'organizzazione dispone [di Office 365 threat Intelligence](office-365-ti.md), con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat management** \> **Attack simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
+- **l'organizzazione dispone [di Office 365 threat Intelligence](office-365-ti.md)**, con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat management** \> **Attack simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nome visualizzato Spear-attacco di phishing
@@ -81,7 +81,7 @@ Questo attacco è incentrato sull'eventualità di modificare il messaggio a cui 
     
 5. Specificare il testo per il campo **from (Name)** . Si tratta del campo che viene visualizzato nel **nome visualizzato** nel client di posta elettronica di ricezione. 
     
-6. Specificare il testo o il campo **da** . Si tratta del campo che viene visualizzato come indirizzo di posta elettronica del mittente nel client di posta elettronica di ricezione.<br/>È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo l'indirizzo di posta elettronica viene effettivamente risolto nel client di ricezione, facilitando un modello di attendibilità molto elevato) oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere effettivamente, ma ha bisogno di seguire il formato di un indirizzo SMTP valido, ad esempio User @ NomeDominio. Extension. 
+6. Specificare il testo o il campo **da** . Si tratta del campo che viene visualizzato come indirizzo di posta elettronica del mittente nel client di posta elettronica di ricezione. <br/>È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo l'indirizzo di posta elettronica viene effettivamente risolto nel client di ricezione, facilitando un modello di attendibilità molto elevato) oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere effettivamente, ma ha bisogno di seguire il formato di un indirizzo SMTP valido, ad esempio User @ NomeDominio. Extension. 
   
 7. Usando il selettore a discesa, selezionare un URL del server di accesso di phishing che rispecchi il tipo di contenuto che si avrà all'interno dell'attacco. È possibile scegliere tra diversi URL a tema, ad esempio recapito dei documenti, tecnico, retribuzione e così via. Questo è effettivamente l'URL a cui gli utenti designati devono fare clic.
     
@@ -129,11 +129,19 @@ Un attacco di password con forza bruta nei confronti di un'organizzazione viene 
     
 ## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità in Attack Simulator
 
-Sono state aggiunte nuove funzionalità al simulatore di attacco. Sono inclusi i seguenti:
+Sono state aggiunte nuove funzionalità al simulatore di attacco. Queste funzionalità sono:
+
 - **Funzionalità di creazione di report avanzate**. È possibile visualizzare i dati, ad esempio il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, ovvero il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altro ancora.
+
 - **Editor modelli di posta elettronica**. È possibile creare un modello di posta elettronica personalizzato e riutilizzabile che è possibile utilizzare per simulazioni di attacco future.
 
 Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cosa c'è in sviluppo, cosa è in uscita e cosa è già stato avviato.
+
+## <a name="see-also"></a>Vedere anche
+
+[Office 365 Advanced Threat Protection Service Descrizione](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Office 365 Advanced Threat Protection](office-365-atp.md)
 
 
 
