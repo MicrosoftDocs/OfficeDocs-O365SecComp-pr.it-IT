@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
-ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
+ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30412954"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455028"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
