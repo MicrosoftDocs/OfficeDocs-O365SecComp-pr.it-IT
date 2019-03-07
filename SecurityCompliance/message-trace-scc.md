@@ -5,20 +5,20 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 95682b02f50996594650ac5d3aebf18f795efd65
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341567"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455348"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia dei messaggi nel centro sicurezza & Compliance
 
-La traccia dei messaggi nel centro sicurezza & Compliance segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Vengono inoltre illustrate le azioni eseguite sul messaggio prima del raggiungimento dello stato finale.
+La traccia dei messaggi nel centro sicurezza & Compliance segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
 La traccia dei messaggi nel centro sicurezza & Compliance migliora dopo la traccia del messaggio disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
@@ -78,7 +78,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 ### <a name="more-search-options"></a>Altre opzioni di ricerca
 
-#### <a name="delivery-status"></a>Stato del reCapito
+#### <a name="delivery-status"></a>Stato del recapito
 
 È possibile lasciare il valore predefinito **tutti** selezionati oppure è possibile selezionare uno dei seguenti valori per filtrare i risultati:
 
@@ -90,7 +90,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - **Errore**: il messaggio non è stato recapitato.
 
-- **** In quarantena: il messaggio è stato messo in quarantena (come posta indesiderata, massa o phishing). Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- **** In quarantena: il messaggio è stato messo in quarantena (come posta indesiderata, massa o phishing). For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
 
 - **Filtrato come posta**indesiderata: il messaggio è stato identificato come posta indesiderata e rifiutato o bloccato (non in quarantena).
 
@@ -102,7 +102,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 Questo è l'ID del messaggio Internet (detto anche ID client) trovato nel campo di intestazione **Message-ID:** nell'intestazione del messaggio. Gli utenti possono fornire questo valore per esaminare i messaggi specifici.
 
-Questo valore è costante per tutta la durata del messaggio. Per i messaggi creati in Office 365 o Exchange, il valore è nel formato `<GUID@ServerFQDN>`, incluse le parentesi angolari\< \>(). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica possono utilizzare una sintassi o valori diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono scrupolosamente questo requisito. Se il campo di intestazione **Message-ID:** non esiste o è vuoto per i messaggi in arrivo provenienti da origini esterne, viene assegnato un valore arbitrario.
+Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Office 365 o Exchange, il valore è nel formato `<GUID@ServerFQDN>`, incluse le parentesi angolari\< \>(). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica possono utilizzare una sintassi o valori diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono scrupolosamente questo requisito. Se il campo di intestazione **Message-ID:** non esiste o è vuoto per i messaggi in arrivo provenienti da origini esterne, viene assegnato un valore arbitrario.
 
 Quando si utilizza l' **ID messaggio** per filtrare i risultati, assicurarsi di includere la stringa completa, incluse le parentesi angolari.
 
@@ -200,7 +200,7 @@ I dettagli della traccia dei messaggi contengono le informazioni aggiuntive segu
 
    - **Posticipare**: il recapito del messaggio è stato posticipato e potrebbe essere ritentato in un secondo momento.
 
-   - **Risolto**: il messaggio è stato reindirizzato a un nuovo indirizzo del destinatario basato su una ricerca di Active Directory. In questo caso, l'indirizzo del destinatario originale viene elencato in una riga separata nella traccia dei messaggi insieme allo stato di recapito finale del messaggio.
+   - **Risolto**: il messaggio è stato reindirizzato a un nuovo indirizzo del destinatario basato su una ricerca di Active Directory. In questo caso, l'indirizzo originale del destinatario verrà visualizzato in una riga separata nella traccia del messaggio insieme allo stato di consegna finale per il messaggio.
 
    Si noti che anche un messaggio non movimentato che è stato recapitato correttamente genererà più voci di **evento** nella traccia dei messaggi.
 
@@ -210,9 +210,9 @@ I dettagli della traccia dei messaggi contengono le informazioni aggiuntive segu
 
    - **Dimensione messaggio**
 
-   - **Da IP**: l'indirizzo IP del computer in cui è stato inviato il messaggio. Per i messaggi in uscita inviati da Exchange Online, questo valore è vuoto.
+   - **Da IP**: l'indirizzo IP del computer in cui è stato inviato il messaggio. Per i messaggi in uscita inviati da Exchange Online, il valore è vuoto.
 
-   - **To IP**: l'indirizzo IP o gli indirizzi in cui il servizio ha tentato di recapitare il messaggio. Se il messaggio contiene più destinatari, vengono visualizzati. Per i messaggi in ingresso inviati a Exchange Online, questo valore è vuoto.
+   - **To IP**: l'indirizzo IP o gli indirizzi in cui il servizio ha tentato di recapitare il messaggio. Se il messaggio contiene più destinatari, vengono visualizzati. Per i messaggi in ingresso inviati a Exchange Online, il valore è vuoto.
 
 ### <a name="enhanced-summary-reports"></a>Rapporti di riepilogo avanzati
 
@@ -222,7 +222,7 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **sender_address**: l'indirizzo di posta elettronica del mittente (*dominio**alias*@).
 
-- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*stato*\>dell' *Indirizzo*\>##\<di posta elettronica. Per esempio:
+- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*stato*\>dell' *Indirizzo*\>##\<di posta elettronica. Ad esempio:
 
    - **# #Receive, Send** indica che il messaggio è stato ricevuto dal servizio e che è stato inviato alla destinazione desiderata.
 
@@ -260,13 +260,13 @@ I report esTesi disponibili (completati) sono disponibili nella sezione **report
 
 - **server_hostname**: il nome host o FQDN del server di destinazione.
 
-- **source_context**: informazioni aggiuntive associate al campo di **origine** . Per esempio:
+- **source_context**: informazioni aggiuntive associate al campo di **origine** . Ad esempio:
 
    - `Protocol Filter Agent`
 
    - `3489061114359050000`
 
-- **origine**: componente di Exchange Online responsabile dell'evento. Per esempio:
+- **origine**: componente di Exchange Online responsabile dell'evento. Ad esempio:
 
    - `AGENT`
 
@@ -278,13 +278,13 @@ I report esTesi disponibili (completati) sono disponibili nella sezione **report
 
 - **internal_message_id**: identificatore del messaggio assegnato dal server Exchange Online che sta attualmente elaborando il messaggio.
 
-- **recipient_address**: gli indirizzi di posta elettronica dei destinatari del messaggio. Più indirizzi di posta elettronica sono separati dal carattere punto e virgola (;).
+- **recipient_address**: gli indirizzi di posta elettronica dei destinatari del messaggio. Gli indirizzi di posta elettronica multipli sono separati dal carattere punto e virgola (;).
 
 - **recipient_count**: il numero totale di destinatari nel messaggio.
 
 - **related_recipient_address**: utilizzato con `EXPAND`, `REDIRECT`ed `RESOLVE` eventi per visualizzare gli altri indirizzi di posta elettronica dei destinatari associati al messaggio.
 
-- **riferimento**: questo campo contiene informazioni aggiuntive per tipi specifici di eventi. Per esempio:
+- **riferimento**: questo campo contiene informazioni aggiuntive per tipi specifici di eventi. Ad esempio:
 
    - **DSN**: contiene il collegamento al rapporto, ovvero il valore **message_id** della notifica sullo stato del recapito associato (noto anche come DSN, rapporto di mancato recapito, NDR o messaggio di rimbalzo) se un DSN viene generato dopo questo evento. Se si tratta di un messaggio DSN, questo campo contiene il valore **message_id** del messaggio originale per il quale è stato generato il DSN.
 
@@ -298,13 +298,13 @@ I report esTesi disponibili (completati) sono disponibili nella sezione **report
 
    - **MAILBOXRULE**: contiene il valore **internal_message_id** del messaggio in ingresso che ha causato la regola di posta in arrivo per generare il messaggio in uscita.
 
-   Per tutti gli altri tipi di evento, questo campo in genere è vuoto.
+   Per altri tipi di eventi, questo campo in genere è vuoto.
 
 - **return_path**: l'indirizzo di posta elettronica restituito specificato dal comando **mail from** che ha inviato il messaggio. Anche se questo campo non è mai vuoto, può avere il valore dell'indirizzo mittente nullo rappresentato come `<>`.
 
-- **message_info**: ulteriori informazioni sul messaggio. Per esempio:
+- **message_info**: ulteriori informazioni sul messaggio. Ad esempio:
 
-   - Data-ora di origine del messaggio in formato UTC `DELIVER` per `SEND` gli eventi e. La data-ora di origination è l'ora in cui il messaggio è stato immesso per la prima volta nell'organizzazione di Exchange Online. La data/ora UTC è rappresentata nel formato data/ora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, Where `yyyy` = year, `mm` = month, `dd` = Day, `T` indica l'inizio del `hh` componente Time, = hour, `mm` = minute, `ss` = Second, `fff` = frazioni di secondo e `Z` significa `Zulu`, che è un altro modo per indicare l'ora UTC.
+   - Data-ora di origine del messaggio in formato UTC `DELIVER` per `SEND` gli eventi e. La data-ora di origination è l'ora in cui il messaggio è stato immesso per la prima volta nell'organizzazione di Exchange Online. La data/ora UTC è rappresentata nel formato data/ora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, Where `yyyy` = year, `mm` = month, `dd` = Day, `T` indica l'inizio del `hh` componente Time, = hour, `mm` = minute, `ss` = Second, = `fff` frazioni di secondo e `Z` significa `Zulu`, che è un altro modo per indicare l'ora UTC.
 
    - Errori di autenticazione. Ad esempio, è possibile visualizzare il valore `11a` e il tipo di autenticazione utilizzato quando si è verificato l'errore di autenticazione.
 
@@ -329,17 +329,17 @@ Un valore **custom_data** che inizia con `S:SFA` è dell'agente filtro posta ind
 |`SFV=BLK`|Le regole del filtro sono state ignorate e il messaggio è stato bloccato perché è stato originato da un mittente bloccato.|
 |`SFV=SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere elaborato dal filtro contenuto. Questo include i messaggi che corrispondono alle regole di trasporto, che lo contrassegnano automaticamente come indesiderato e che ignorano tutte le regole del filtro aggiuntive.|
 |`SCL=<number>`|Per ulteriori informazioni sui diversi valori SCL e sul loro significato, vedere [Spam Confidence levels](https://technet.microsoft.com/library/jj200686.aspx).|
-|`PCL=<number>`|Il valore del livello di probabilità di phishing (PCL) del messaggio. Questi possono essere interpretati nello stesso modo in cui i valori SCL sono documentati nei [livelli di probabilità di posta](https://technet.microsoft.com/library/jj200686.aspx)indesiderata.|
+|`PCL=<number>`|Il valore del livello di confidenza di Phishing (PCL) del messaggio. Questi possono essere interpretati nello stesso modo in cui i valori SCL sono documentati nei [livelli di probabilità di posta](https://technet.microsoft.com/library/jj200686.aspx)indesiderata.|
 |`DI=SB`|Il mittente del messaggio è stato bloccato.|
 |`DI=SQ`|Il messaggio è stato messo in quarantena.|
 |`DI=SD`|Il messaggio è stato eliminato.|
 |`DI=SJ`|Il messaggio è stato inviato alla cartella posta inDesiderata del destinatario.|
-|`DI=SN`|Il messaggio è stato instradato attraverso il pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](https://technet.microsoft.com/library/jj200746.aspx).|
+|`DI=SN`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
-|`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
+|' FS = [a]|SFS = [b]'|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
 |`H=<EHLOstring>`|La stringa HELO o EHLO del server di posta elettronica di connessione.|
-|`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP del mittente, noto anche come indirizzo DNS inverso.|
+|`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP di invio, anche noto come indirizzo DNS inverso.|
 
 Un esempio di valore di **custom_data** per un messaggio filtrato per la posta indesiderata in questo modo:
 
@@ -351,7 +351,7 @@ Un valore **custom_data** che inizia con `S:AMA` è dell'agente di filtro antima
 
 |**Valore**|**Descrizione**|
 |:-----|:-----|
-|`AMA=SUM|v=1|`o`AMA=EV|v=1`|Il messaggio è stato determinato per contenere malware. `SUM` indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV` indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato un malware da un motore, vengono attivate le azioni successive.|
+|' AMA = somma|v = 1|` or `AMA = EV|v = 1'|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
 |`Action=r`|Il messaggio è stato sostituito.|
 |`Action=p`|Il messaggio è stato ignorato.|
 |`Action=d`|Il messaggio è stato rinviato.|
@@ -374,10 +374,10 @@ Un valore **custom_data** che inizia con`S:TRA` è compreso nell'agente della re
 
 |**Valore**|**Descrizione**|
 |:-----|:-----|
-|`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
+|' ETR|ruleId =<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in formato UTC quando si è verificata la corrispondenza della regola.|
-|`Action=<ActionDefinition>`|Azione applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
-|`Mode=<Mode>`|Modalità della regola. I valori validi sono i seguenti:<br/>• **Enforce**: tutte le azioni della regola verranno applicate. <br/>• **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>• **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|
+|`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Mode=<Mode>`|La modalità della regola. I valori validi sono: <br/>• **Enforce**: tutte le azioni della regola verranno applicate. <br/>• **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>• **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|
 
 Un esempio di valore di **custom_data** per i messaggi che soddisfano le condizioni di una regola del flusso di posta è simile al seguente:
 

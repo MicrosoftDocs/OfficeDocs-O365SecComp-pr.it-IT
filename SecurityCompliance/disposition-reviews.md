@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta che conserva il contenuto di Office 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 5dac91368ff2aff6ca7e1a2c3591b50466b869ac
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410761"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455038"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 

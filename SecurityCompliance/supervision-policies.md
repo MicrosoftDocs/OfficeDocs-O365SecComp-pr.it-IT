@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
+ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214116"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30465473"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -106,7 +106,7 @@ Le condizioni che scegli per il criterio si applicano alle comunicazioni sia da 
 
 Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
-|**Condizione**|**Come utilizzare la condizione**|
+|**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
 |Il messaggio viene ricevuto da uno di questi domini  <br><br> Il messaggio non viene ricevuto da nessuno di questi domini | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio ricevuto, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso verrà applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
 |Il messaggio viene inviato a uno di questi domini  <br><br> Il messaggio non viene inviato a uno di questi domini | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio inviato, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso verrà applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
@@ -114,7 +114,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
 |Il messaggio contiene una o più delle seguenti parole  <br><br> Il messaggio contiene nessuna di queste parole | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse verrà applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
 |L'allegato contiene una o più delle seguenti parole  <br><br> L'allegato contiene nessuna di queste parole | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse verrà applicata separatamente (è necessario applicare solo una riga per il criterio da applicare all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
 |Attachment è uno qualsiasi di questi tipi di file  <br><br> Attachment è nessuno di questi tipi di file | Per controllare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file, ad esempio. exe o. pdf. Se si desidera includere o escludere più estensioni di file, immetterle su righe separate. Per applicare il criterio, è necessario che sia presente una sola estensione per gli allegati.|
-|La dimensione del messaggio è maggiore di  <br><br> La dimensione del messaggio non è maggiore di | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 mb**, tutti i messaggi che sono 1,01 MB e maggiori saranno soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
+|La dimensione del messaggio è superiore a  <br><br> La dimensione del messaggio non è maggiore di | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 mb**, tutti i messaggi che sono 1,01 MB e maggiori saranno soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
 |L'allegato è più grande di  <br><br> L'allegato non è più grande di | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. ad esempio, se si specifica **attachment è maggiore di** \> **2,0 mb**, tutti i messaggi con allegati 2,01 MB e oltre saranno soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
@@ -260,7 +260,7 @@ Ad esempio, nell'esempio seguente vengono restituite le attività per tutte le a
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
 ```
 
-Oltre alle informazioni fornite nei report e nei registri di supervisione, è anche possibile utilizzare il cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) di PowerShell per restituire un elenco dettagliato completo di tutte le attività dei criteri di supervisione.
+Oltre alle informazioni fornite nei report e nei registri di supervisione, è anche possibile utilizzare il cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) di PowerShell per restituire un elenco dettagliato completo di tutte le attività dei criteri di supervisione.
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 

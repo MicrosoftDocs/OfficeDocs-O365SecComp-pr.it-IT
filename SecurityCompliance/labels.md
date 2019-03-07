@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: b1ce2558c9e6031c21151650f84fc1cb1a8804b8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410961"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455308"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 

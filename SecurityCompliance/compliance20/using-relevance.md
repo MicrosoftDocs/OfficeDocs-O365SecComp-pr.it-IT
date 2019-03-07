@@ -14,16 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f08fe644bfd4eaae27e1ef8718c54166417e53ae
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295829"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454948"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery (Preview)
 
-In Advanced eDiscovery (Preview), il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
+In Advanced eDiscovery (Preview), il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Per utilizzare il flusso di lavoro pertinenza, passare a gestione working set all'interno di un working set e fare clic su Mostra pertinenza. Prima di avviare il flusso di lavoro, è necessario eseguire un paio di passaggi:
+- Processo: ogni set di carico aggiunto al working set verrà visualizzato come "contenitore" qui. È necessario elaborare questi documenti prima di poterli aggiungere al modulo pertinenza. Questo è anche il luogo in cui è possibile contrassegnarli come Seed o come precontrassegnati per un problema specifico.
+- Aggiungi a pertinenza: in \> carichi di pertinenza, è possibile aggiungere documenti elaborati alla pertinenza per renderli disponibili per la formazione.
+
+Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   
 ![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   

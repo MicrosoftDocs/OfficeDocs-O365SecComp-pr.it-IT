@@ -12,13 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
+ms.collection:
+- M365-security-compliance
 description: Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione.
-ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341317"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455368"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Cominciare con il criterio di prevenzione della perdita dei dati predefinito
 

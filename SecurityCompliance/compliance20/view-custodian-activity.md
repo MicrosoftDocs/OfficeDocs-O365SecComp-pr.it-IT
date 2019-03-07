@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295529"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455168"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
@@ -38,17 +38,19 @@ ms.locfileid: "30295529"
    
    2. Passare alla scheda **depositari** e selezionare un custode.
    
-   3. Dopo aver selezionato un custode, fare clic su **Visualizza attività custode** dal riquadro dei dettagli.
+   3. Dopo aver selezionato un custode, fare clic su  ![Visualizzazione dell'attività del custode](../media/ViewCustodianActivity.PNG)  dal riquadro dettagli.
    
    4. Configurare i seguenti criteri di ricerca:
       
-      a. **Activities** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca.
+      un. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca.
+
+      ![Elenco delle attività](../media/CustodianActivityAudit.PNG)
       
       b. Data di **inizio e data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora vengono visualizzate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è di un anno.
       
-      c. **depositari** -fare clic in questa casella e quindi selezionare un custode specifico per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati.
-    
-    1. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
+      c. **Depositari** -fare clic in questa casella e quindi selezionare un custode specifico per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati.
+      
+   5. Fare clic su   ![Pulsante Cerca](../media/SearchButton.PNG)  per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Passaggio 2: visualizzazione dei risultati di ricerca del registro di controllo
 

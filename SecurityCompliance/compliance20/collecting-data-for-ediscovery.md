@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297099"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455418"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Raccogliere i dati per un caso in Advanced eDiscovery (Preview)
 
@@ -27,7 +27,7 @@ Dopo aver identificato i depositari e le origini dati di interesse per il caso, 
 
 Dopo aver eseguito una ricerca, sarà possibile visualizzare le statistiche sugli elementi recuperati, ad esempio le posizioni con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Dopo aver identificato il set di documenti che si desidera esaminare ulteriormente, è possibile aggiungere i risultati di ricerca a un working set per la raccolta e l'elaborazione.
 
-## <a name="create-a-search"></a>Creare una ricerca
+## <a name="create-a-search"></a>Create a search
 
 Se si fa clic su **nuova ricerca** nella scheda **ricerche** , verrà avviata una procedura guidata che consentirà di creare una ricerca. Per informazioni dettagliate su come creare una ricerca, vedere [creare una ricerca per raccogliere i dati](create-search-to-collect-data.md).
 
@@ -41,7 +41,6 @@ Una volta completata la stima della ricerca, fare clic sulla pagina di ricerca p
 - Riepilogo
 - Posizioni principali
 - Query
-- Criteri di affinamento
 
 Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics.md).
 

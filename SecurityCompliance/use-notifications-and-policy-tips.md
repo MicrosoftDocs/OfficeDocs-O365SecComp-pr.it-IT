@@ -10,17 +10,18 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410921"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455188"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
 

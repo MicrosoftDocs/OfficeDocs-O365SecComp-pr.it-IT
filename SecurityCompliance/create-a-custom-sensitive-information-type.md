@@ -7,17 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: 16bc49f23de20479ed18ce56720fd70a05b986e3
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 5e20fac290a7d06c843a0043d95669d9c7f7cd05
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410811"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455138"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creare un tipo di informazioni sensibili personalizzato
 

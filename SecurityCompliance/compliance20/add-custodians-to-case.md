@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296719"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455298"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery (anteprima)
 
@@ -69,15 +69,13 @@ A seconda del caso, è possibile aggiungere anche cassette postali che un determ
 ![Mapping di origini dati aggiuntive](../media/AddCustodianStep3.PNG)
 
 Per eseguire il mapping di cassette postali, siti o team a un determinato custode:
+1. Selezionare **Aggiungi** per assegnare percorsi di contenuto, come cassette postali, siti e team, a un determinato custode. 
 
-1. Selezionare **Aggiorna** per assegnare le posizioni di contenuto, come le cassette postali, i siti e i team a un determinato custode. 
-
-2. Nel riquadro a comparsa, specificare quanto segue:
-   
-    -  **Cassette postali di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Per specificare le cassette postali da assegnare al custode selezionato, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata a un gruppo di Office 365 o a un team Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+2. Nel riquadro a comparsa, specificare quanto segue ![: mapping delle origini dati](../media/AddCustodianStep4.PNG)
+  -  **Cassette postali di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Per specificare le cassette postali da assegnare al custode selezionato, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata a un gruppo di Office 365 o a un team Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
 
         > [!NOTE]
-        > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
+        > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
      
      - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su choose **sites** again per specificare altri siti di SharePoint e OneDrive for business che si desidera assegnare al custode selezionato. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
      - **Microsoft teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di gruppi di team Microsoft che il custode è un membro di oggi. Selezionare i team che si desidera aggiungere al custode. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
@@ -89,6 +87,8 @@ Dopo aver completato la mappatura delle origini, è possibile visualizzare le ca
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Optional Passaggio 4: mettere in attesa i depositari
 
+![Esenzioni di posizione](../media/AddCustodianStep5.PNG)
+
 Dopo aver finalizzato i depositari e le origini dati che si desidera aggiungere al caso, è possibile facoltativamente mettere in attesa alcuni o tutti i depositari. Quando si attiva il blocco di un custode, il contenuto mappato a tale utente viene mantenuto finché non si rilascia il custode dalla causa o finché non si elimina l'esenzione. In alcuni casi, potrebbe essere necessario aggiungere i depositari a un caso senza bloccarli. 
 
 Per posizionare i depositari e le origini dati selezionati in attesa:
@@ -99,4 +99,4 @@ Per posizionare i depositari e le origini dati selezionati in attesa:
 
 3. Fare clic su **modifica** per visualizzare tutte le origini dati del custode selezionate.
 
-    ![Esenzioni di posizione](../media/AddCustodianStep4.PNG)
+   

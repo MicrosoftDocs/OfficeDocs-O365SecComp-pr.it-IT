@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono ottenere informazioni sugli avvisi e le code in coda nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
-ms.openlocfilehash: 45c03ae8d5f646c4514b19669ca83b3eac561f68
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220796"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454868"
 ---
 # <a name="queue-alerts-and-queues"></a>Avvisi di coda e code
 

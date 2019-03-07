@@ -12,14 +12,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se è il caso della propria organizzazione, è possibile creare un criterio DLP in Office 365 che riconosce le proprietà che sono state applicate ai documenti da FCI di Windows Server o da un altro sistema, in modo che il criterio DLP possa essere applicato a documenti di Office con FCI specifica o altri valori di proprietà.
-ms.openlocfilehash: d4468859781703012438a06ec782b75d1acce963
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: fc1d38f1bf648e02f0e86f7cc11e6dca9f88b540
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410531"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455178"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare un criterio DLP per proteggere i documenti con FCI o altre proprietà
 

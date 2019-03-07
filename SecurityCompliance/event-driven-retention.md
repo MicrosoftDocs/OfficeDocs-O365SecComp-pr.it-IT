@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Con le etichette in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento fa scattare l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso. La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record.
-ms.openlocfilehash: f6686fdbd5e453938d2db4e0eb9e53018ecbd79a
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410691"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455108"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 

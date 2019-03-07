@@ -7,18 +7,19 @@ ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: Con i report DLP in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi. controllare se si sta facendo una tendenza verso l'alto o verso il basso nel tempo; filtrare il report in modi diversi; e visualizzare ulteriori dettagli selezionando un punto su una linea del grafico.
-ms.openlocfilehash: 480ab99b2d84adfbb87288e1e0986441ef56ef99
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410701"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454848"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 

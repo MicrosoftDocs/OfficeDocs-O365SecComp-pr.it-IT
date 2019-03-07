@@ -14,16 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95a1bcbbc279ad4e476fc479e701b0f8a921c83b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295679"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454938"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestire i depositari in un caso avanzato di eDiscovery (anteprima)
 
 La scheda depositari contiene un elenco ordinabile di tutti i depositari nel caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode verranno raccolti automaticamente da Azure Active Directory.
+
+![Gestire i depositari](../media/CustodianDetails.PNG)
 
 ## <a name="viewing-custodian-details"></a>Visualizzazione dei dettagli del custode
 
@@ -56,7 +58,7 @@ Dopo aver aggiunto un custode a un caso e averli selezionati nell'elenco della s
   - **IndexIng Last updated Time**: indica la DateStamp di quando è stato attivato l'ultimo processo di indicizzazione Deep.
   - **Origini dati**: Visualizza il numero di cassette postali, siti e team selezionati per il custode.
 
-## <a name="updating-a-custodian"></a>Aggiornamento di un custode
+## <a name="editing-a-custodian"></a>Modifica di un custode
 
 Man mano che il caso progredisce, è possibile rilevare che potrebbero essere presenti ulteriori origini dati rilevanti per un determinato custode & il caso. In altri scenari potrebbe essere necessario rimuovere determinate origini dati che sono state esaminate e ritenute irrilevanti.
 
@@ -67,6 +69,8 @@ Per aggiornare un custode e le origini dati selezionate:
 2. Nel caso, fare clic sulla scheda **depositari** .
   
 3. Selezionare il custode o i depositari dall'elenco e fare clic su **modifica origini**.
+
+    ![Modificare origini dati](../media/EditCustodianDataSource.PNG)
   
 4. Consente di aggiornare le selezioni per i percorsi di Exchange e OneDrive facendo clic su **Scegli origini dati**.
   
@@ -89,7 +93,7 @@ Per attivare un processo di reindicizzazione per indirizzare gli elementi parzia
 
 2. Nel caso, fare clic su per la **scheda depositari**. 
 
-3. Selezionare il custode o i depositari che devono essere reindicizzati e quindi fare clic su **Aggiorna indice** nella pagina a comparsa.
+3. Selezionare il custode o i depositari che devono essere reindicizzati e quindi fare clic su ![Indice di aggiornamento](../media/UpdateIndex.PNG) nella pagina a comparsa.
 
 4. Controllare lo stato dell'indice del custode facendo clic sul collegamento nella colonna **stato processo** di indicizzazione nella scheda **depositari** .  
 
@@ -109,7 +113,7 @@ Per rilasciare un custode:
 
 1.  Passare alla scheda **depositari** .
 
-2.  Selezionare il custode dall'elenco e fare clic su **rilascia i depositari** nella pagina a comparsa.
+2.  Seleziona il custode dall'elenco e fai clic su ![Rilascia il custode](../media/ReleaseCustodian.PNG) nella pagina a comparsa.
 
     Lo stato del custode nella scheda **depositari** è impostato su **rilasciato** e lo **stato di blocco** sulla pagina del riquadro a comparsa viene modificato in **inattivo**. 
 
