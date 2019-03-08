@@ -14,13 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 972c6c6e8cd6ebe3a4f078b02f238642509b752a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 904bc5f8a6d6cef937d55336e8f383957713769a
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295019"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475696"
 ---
 # <a name="download-export-jobs"></a>Scaricare processi di esportazione
 
-Il contenuto sarà disponibile a breve.
+Tutti i dati esportati vengono aggiunti a un BLOB di Microsoft Azure. In questo modo vengono fornite più opzioni per gestire i dati downstream. Sono disponibili diversi modi per accedere a un BLOB di Azure. Un metodo consiste nell'utilizzare Esplora archivi di Azure. Questo metodo supporta la connessione semplice, l'esplorazione e il download. Per ulteriori informazioni, visitare<https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer>
+
+1.  Per scaricare il contenuto dopo il completamento di un processo di esportazione, passare alla scheda Esporta e selezionare un processo di esportazione.
+
+2.  Copiare il testo nella sezione "Locations" del riquadro a comparsa.
+
+![](../media/eDiscoExportJob.png)
+
+3.  Aprire Esplora archivi di Azure e fare clic sul pulsante "Connetti"
+
+![](../media/AzureStorageConnect.png)
+
+4.  Selezionare "usa un URI di firma di accesso condiviso" e fare clic su Avanti.
+
+![](../media/AzureStorageConnect2.png)
+
+5.  Incollare il testo percorso nella casella di testo URI e fare clic su Avanti.
+
+![](../media/AzureStorageConnect3.png)
+
+6.  Fare clic su Connetti
+
+![](../media/AzureStorageConnect4.png)
+
+In questo modo verrà aggiunta l'esportazione come oggetto nei contenitori di archiviazione/servizi associati SAS/BLOB. Sarà possibile esplorare l'esportazione e scaricare tutto o parti dell'esportazione.
+
+![](../media/AzureStorageConnect5.png)
