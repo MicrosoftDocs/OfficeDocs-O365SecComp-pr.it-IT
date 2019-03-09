@@ -1,7 +1,7 @@
 ---
 title: Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/12/2018
 ms.audience: Admin
@@ -13,13 +13,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
+ms.collection:
+- M365-security-compliance
 description: Se l'amministratore abilita le notifiche per gli utenti, riceverà un messaggio di notifica che elenca i messaggi inviati alla cassetta postale che sono stati identificati come posta indesiderata, in blocco o in messaggi di phishing. È possibile rilasciare o segnalare i messaggi dopo la notifica.
-ms.openlocfilehash: eb51d8f73ff00781b74cfba4e580668710ce7a76
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216396"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492725"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
 
@@ -42,11 +44,11 @@ Al momento, esistono due azioni che è possibile eseguire con un messaggio in qu
   
 - **Rilascia in posta in arrivo** Scegliere questa casella per inviare il messaggio alla posta in arrivo, in cui è possibile visualizzarla. 
     
-- **Segnala come non** indesiderato Scegliere questa pagina per inviare una copia del messaggio a Microsoft per l'analisi. Il team di posta indesiderata valuta e analizza il messaggio e, a seconda dei risultati dell'analisi, regola le regole del filtro di protezione da posta indesiderata in modo da consentire il passaggio del messaggio. 
+- **Segnala come non** indesiderato Scegliere questa pagina per inviare una copia del messaggio a Microsoft per l'analisi. Il team di analisi di posta indesiderata, valuta e analizza il messaggio e a seconda dei risultati dell'analisi, regola il filtro di protezione da posta indesiderata per consentire l'inoltro del messaggio. 
     
 Tenere presente quanto segue:
   
-- I messaggi in quarantena perché hanno trovato una regola del flusso di posta non sono inclusi nei messaggi in quarantena dell'utente. Sono elencati solo i messaggi in quarantena della posta indesiderata.
+- I messaggi in quarantena perché hanno trovato una regola del flusso di posta non sono inclusi nei messaggi in quarantena dell'utente. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena.
     
 - È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta.
     

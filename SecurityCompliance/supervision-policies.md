@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465473"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492855"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -57,7 +57,8 @@ Verranno creati i criteri di supervisione nel centro sicurezza & Compliance. Que
 Prima di iniziare a utilizzare la supervisione, è necessario determinare gli utenti che avranno la revisione delle comunicazioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica degli utenti per identificare gli utenti o i gruppi di persone da controllare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici da una vigilanza inclusa all'interno di un gruppo controllato o di un elenco di gruppi.
 
 > [!IMPORTANT]
-> Tutti gli utenti monitorati dai criteri di supervisione devono disporre di una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5.
+Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Revisori
 
@@ -153,9 +154,9 @@ La **Home** page del dashboard contiene diverse sezioni che consentono di interv
 - Visualizzare un elenco di revisori e team di revisione per il criterio selezionato
 - Vedere quali piattaforme di comunicazione dispongono di contenuto sotto controllo per il criterio.
 
-#### <a name="supervise-tab"></a>Scheda supervisiona
+#### <a name="review-tab"></a>Scheda Revisione
 
-La scheda **supervisiona** è la posizione in cui i revisori possono intervenire e risolvere gli elementi identificati dal criterio selezionato. Qui è possibile:
+La scheda **Revisione** è la posizione in cui i revisori possono intervenire e risolvere gli elementi identificati dal criterio selezionato. Qui è possibile:
 
 - Filtrare in base agli elementi in sospeso, conformi, non conformi e discutibili
 - Contrassegnare un singolo elemento come conforme, non conforme o discutibile. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.

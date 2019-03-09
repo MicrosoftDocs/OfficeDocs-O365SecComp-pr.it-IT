@@ -1,24 +1,9 @@
 ---
-title: Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/05/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
-description: Indica agli amministratori di Office 365 e EOP come abilitare e disabilitare i suggerimenti per la sicurezza nei messaggi di posta elettronica.
-ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215556"
+title: "abilitare o disabilitare i suggerimenti per la sicurezza in Office 365" ms. Author: Krowley Author: kccross Manager: laurawi ms. Date: 12/05/2018 ms. audience: admin ms. Topic: article ms. Service: O365-Administration localization_priority: Normal search. appverid: 
+- MET150 ms. AssetID: f09668bd-fe1a-4C01-89e3-e88c370e66c7 ms. Collection:
+    - M365-Security-Compliance Description: "indica agli amministratori di Office 365 e EOP come abilitare e disabilitare i suggerimenti per la sicurezza nei messaggi di posta elettronica".
 ---
+
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
 
 Exchange Online Protection (EOP) aggiunge o timbra un suggerimento per la sicurezza ai messaggi di posta elettronica che offre. Questi suggerimenti per la sicurezza forniscono ai destinatari un modo rapido e visivo per determinare se un messaggio è proveniente da un mittente sicuro e verificato, se il messaggio è stato contrassegnato come posta indesiderata da Office 365, se il messaggio contiene elementi sospetti, ad esempio una truffa di phishing, o se sono presenti immagini esterne stato bloccato. Gli amministratori di Office 365 e EOP-standalone possono modificare l'impostazione di un criterio di posta indesiderata per abilitare o disabilitare i suggerimenti di sicurezza visualizzati nella posta elettronica in Outlook e in altri client di posta elettronica desktop. 
@@ -38,7 +23,7 @@ Contenuto dell'argomento:
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 con l'account aziendale o dell'istituto di istruzione.
+2. Accedere a Office 365 con l'account di lavoro o della scuola.
     
 3. Scegliere \> **criteri**di **gestione delle minacce** . 
     
@@ -60,14 +45,14 @@ Contenuto dell'argomento:
     
 9. Per abilitare i suggerimenti di sicurezza, sotto suggerimenti per la **sicurezza**, selezionare la casella **di controllo su** . Per disabilitare i suggerimenti per la sicurezza, deselezionare la casella **di controllo su** . 
     
-10. Scegliere **Save**.
+10. Fare clic su **Salva**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Per abilitare o disabilitare i suggerimenti per la sicurezza tramite PowerShell
 <a name="pshellsafetytip"> </a>
 
 Gli amministratori possono utilizzare PowerShell di Exchange Online per abilitare o disabilitare i suggerimenti per la sicurezza. Utilizzare il cmdlet Set-HostedContentFilterPolicy per abilitare o disabilitare i suggerimenti per la sicurezza in un criterio di filtro della posta indesiderata.
   
-1. Connettersi a PowerShell di Exchange Online. Per informazioni, vedere [Connect to Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Connettersi a Exchange Online PowerShell. Per informazioni, vedere [Connect to Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
     
 2. Eseguire il cmdlet Set-HostedContentFilterPolicy per abilitare o disabilitare i suggerimenti per la sicurezza:
     

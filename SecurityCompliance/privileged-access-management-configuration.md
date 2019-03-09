@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla configurazione della gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221086"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492825"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configurazione della gestione degli accessi con privilegi in Office 365
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
     
     **Tipo di criterio**: attività, ruolo o gruppo di ruoli
 
-    **Ambito di criteri**: Exchange o Office 365
+    **Ambito di criteri**: Exchange
 
     **Nome criterio**: scegliere tra i criteri disponibili
 

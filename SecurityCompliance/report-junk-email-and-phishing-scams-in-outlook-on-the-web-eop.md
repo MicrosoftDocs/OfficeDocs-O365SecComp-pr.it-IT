@@ -1,7 +1,7 @@
 ---
-title: 'Segnalare junk e-mail e tentativi di phishing in Outlook sul web '
-ms.author: krowley
-author: kccross
+title: 'Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web '
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,55 +12,60 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
-description: Microsoft Outlook sugli utenti web è possibile segnalare tentativi di phishing e posta indesiderata (spam) utilizzando le opzioni di report di posta incorporato. È anche possibile consentire Microsoft sapere se un messaggio di posta elettronica in modo non corretto è stato identificato come posta indesiderata (spam).
-ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
-ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
+ms.collection:
+- M365-security-compliance
+description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
+ms.openlocfilehash: e40770d8ff7e2c24058674f25b9ee8eb72e2bf7c
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "25450071"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492815"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare junk e-mail e tentativi di phishing in Outlook sul web 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web 
 
-Può essere frustrante quando gli utenti dell'organizzazione ricevano posta indesiderata o perdere un messaggio di posta elettronica importante perché è stato erroneamente come posta indesiderata. È costantemente stiamo localizzatore i filtri posta indesiderata di Exchange Online Protection (EOP) per ottenere una maggiore precisione e si e gli utenti finali possono aiutare a questo processo. Microsoft Outlook sugli utenti web è possibile segnalare tentativi di phishing e posta indesiderata (spam) utilizzando le opzioni di report di posta incorporato. È anche possibile consentire Microsoft sapere se un messaggio di posta elettronica in modo non corretto è stato identificato come posta indesiderata (spam).
+Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata o manca un messaggio di posta elettronica importante perché è stato erroneamente identificato come posta indesiderata. La ottimizzazione dei filtri per la posta indesiderata di Exchange Online Protection (EOP) è sempre più accurata e gli utenti finali possono essere utili per questo processo. Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
   
-## <a name="submit-junk-messages-in-outlook-on-the-web"></a>Inviare messaggi di posta indesiderata in Outlook sul web
+## <a name="submit-junk-messages-in-outlook-on-the-web"></a>Invio di messaggi di posta indesiderata in Outlook sul Web
 
 Per inviare un messaggio di posta indesiderata a Microsoft:
   
-1. Fare clic sul messaggio di posta indesiderato e quindi fare clic su **posta indesiderata** nella barra degli strumenti. Si sposta il messaggio nella cartella posta indesiderata e aggiunge il mittente all'elenco Mittenti bloccati.  ![Indica posta è posta indesiderata di Outlook sul web](media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+1. Fare clic sul messaggio indesiderato e quindi fare clic su **posta** indesiderata sulla barra degli strumenti. Questo sposta il messaggio nella cartella posta inDesiderata e aggiunge il mittente all'elenco dei mittenti bloccati. 
+    ![Indicare che un messaggio di posta elettronica è posta indesiderata da Outlook sul Web](media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
   
     > [!NOTE]
-    > In alternativa, un messaggio da visualizzare un menu di mouse e scegliere **Contrassegna come posta indesiderata**. 
+    > In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come posta**indesiderata. 
   
-È possibile segnalare un messaggio di posta indesiderata dalla cartella posta **in arrivo**, **confusione**o **Eliminata** . 
+È possibile segnalare un messaggio di posta indesiderata dalla cartella **posta in arrivo**, **disordine**o **elementi eliminati** . 
   
-2. Verrà visualizzata la finestra di dialogo che richiede se si desidera inviare una copia del messaggio di posta indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al Team di analisi della posta indesiderata di Microsoft. Facoltativamente, selezionare la casella di controllo **non visualizzare più questo messaggio nuovamente** se si desidera inviare automaticamente i futuri messaggi di posta indesiderata a Microsoft senza che venga richiesto.  ![Segnala posta indesiderata a Microsoft da Outlook sul web](media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+2. Si aprirà una finestra di dialogo che chiede all'utente se desidera inviare una copia del messaggio di posta indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata Microsoft. In alternativa, selezionare la casella di controllo **Non visualizzare più questo messaggio** se si desidera inviare automaticamente a Microsoft messaggi di posta indesiderata futuri senza che venga prima chiesto. 
+    ![Report della posta indesiderata per Microsoft da Outlook sul Web](media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
   
     > [!TIP]
-    > Anche se si seleziona la casella di controllo **non visualizzare più questo messaggio in futuro** , è possibile modificare in seguito delle preferenze per i report di posta indesiderata accedendo le impostazioni di visualizzazione in Outlook sul web. (Si possono accedere a queste impostazioni tramite il menu ingranaggio accanto al nome di accesso.) 
+    > Anche se si seleziona la casella di controllo **non visualizzare più questo messaggio** , è possibile modificare le preferenze per la segnalazione della posta indesiderata tramite l'accesso alle impostazioni di visualizzazione in Outlook sul Web. È possibile accedere a queste impostazioni tramite il menu ingranaggio accanto al nome di accesso. 
   
-## <a name="submit-phishing-scam-messages-in-outlook-on-the-web"></a>Inviare messaggi di phishing phishing in Outlook sul web
+## <a name="submit-phishing-scam-messages-in-outlook-on-the-web"></a>Invio di messaggi di truffa di phishing in Outlook sul Web
 
-Per inviare un messaggio di phishing phishing a Microsoft:
+Per inviare un messaggio di truffa di phishing a Microsoft:
   
-1. Fare clic sul messaggio phishing phishing, fare clic sulla freccia in giù accanto a **posta indesiderata**e quindi **Phishing** sulla barra degli strumenti. Office 365 non Blocca mittente dal momento che i mittenti dei messaggi di phishing phishing rappresenta in genere mittenti legittimi. Se si preferisce, aggiungere il mittente all'elenco Mittenti bloccati seguendo le istruzioni contenute nell'argomento [Blocca o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicare un messaggio di posta elettronica è il phishing in Outlook sul web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>In alternativa, destro di un messaggio da visualizzare un menu e scegliere **Contrassegna come Phishing**.<br/>È possibile segnalare un messaggio di phishing phishing dalla cartella posta **in arrivo**, **confusione**o **Eliminata** . 
+1. Fare clic sul messaggio di truffa di phishing, fare clic sulla freccia in giù accanto a **posta**indesiderata, quindi fare clic su **phishing** sulla barra degli strumenti. Office 365 non blocca il mittente perché i mittenti dei messaggi di truffa di phishing in genere impersonano i mittenti legittimi. Se si preferisce, aggiungere il mittente all'elenco dei mittenti bloccati attenendosi alle istruzioni riportate nell'argomento [blocca o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/?LinkId=627572). 
+    ![Indicare che un messaggio di posta elettronica è un tentativo di phishing in Outlook sul Web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come phishing**.<br/>È possibile segnalare un messaggio di truffa di phishing dalla cartella **posta in arrivo**, **disordine**o **elementi eliminati** . 
   
-2. In alcune organizzazioni, verrà visualizzata una finestra di dialogo che richiede se si desidera inviare una copia del messaggio di posta elettronica phishing phishing a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al Team di analisi della posta indesiderata di Microsoft. Questa opzione report è attualmente disponibile per un numero limitato di organizzazioni; potrebbe non richiesto per segnalare il phishing a Microsoft. 
+2. Per alcune organizzazioni, viene visualizzata una finestra di dialogo in cui viene chiesto se si desidera inviare una copia del messaggio di posta elettronica di phishing a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata Microsoft. Questa opzione per la creazione di report è attualmente disponibile per un numero limitato di organizzazioni. potrebbe non essere richiesto di segnalare una truffa di phishing a Microsoft. 
     
-## <a name="submit-not-junk-messages-in-outlook-on-the-web"></a>Inviare messaggi "non indesiderati" in Outlook sul web
+## <a name="submit-not-junk-messages-in-outlook-on-the-web"></a>Invio di messaggi di posta indesiderata in Outlook sul Web
 
-Quando un messaggio in modo non corretto viene identificato come posta indesiderata da Office 365, inviare un messaggio come "non indesiderato" a Microsoft:
+Quando un messaggio viene identificato erroneamente come posta indesiderata da Office 365, inviare un messaggio come "non indesiderato" a Microsoft:
   
-1. Nella cartella posta indesiderata, fare clic sul messaggio e quindi fare clic su **Non indesiderato** sulla barra degli strumenti. Si sposta il messaggio di **posta in arrivo** e aggiunge il mittente all'elenco Mittenti attendibili.<br/>È possibile anche pulsante destro del mouse su un messaggio nella cartella posta indesiderata per visualizzare un menu e scegliere **Contrassegna come non indesiderato**. 
+1. Nella cartella posta inDesiderata, fare clic sul messaggio e quindi fare clic su **non** indesiderata sulla barra degli strumenti. Questo consente di spostare il messaggio nella **posta in arrivo** e di aggiungere il mittente all'elenco dei mittenti attendibili. <br/>È inoltre possibile fare clic con il pulsante destro del mouse su un messaggio nella cartella posta inDesiderata per visualizzare un menu e fare clic su **Segna come non**indesiderato. 
   
-2. Verrà visualizzata la finestra di dialogo che richiede se si desidera inviare una copia del messaggio di posta non indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al Team di analisi della posta indesiderata di Microsoft.. 
+2. Si aprirà una finestra di dialogo che chiede all'utente se desidera inviare una copia del messaggio di posta non indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata di Microsoft. 
     
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Informazioni generali sulla posta indesiderata e sul phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Componente aggiuntivo per Microsoft Outlook in report di posta indesiderata](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Componente aggiuntivo per la segnalazione della posta inDesiderata per Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 
