@@ -1,5 +1,5 @@
 ---
-title: 'Indicatori delle minacce: nuove e importanti'
+title: InSeguimenti di minacce-nuovi e degni di nota
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: 072d64a056d88000ad615a896328b0144aef3d0f
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241988"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524050"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Indicatori delle minacce: nuove e importanti
+# <a name="threat-trackers---new-and-noteworthy"></a>InSeguimenti di minacce-nuovi e degni di nota
 
-[Office 365 Threat Intelligence](office-365-ti.md) consente al team di sicurezza dell'organizzazione di individuare ed eseguire azioni contro le minacce di Cybersecurity. A partire dalla fine di marzo 2018 e nelle prossime settimane, Office 365 Threat Intelligence includerà nuove funzionalità di monitoraggio minacce, tra cui gli inseguitori degni di nota. Leggere questo articolo per ottenere una panoramica delle nuove funzionalità e dei passaggi successivi. 
+Le funzionalità di [ricerca e risposta](office-365-ti.md) alle minacce di Office 365 consentono al team di sicurezza dell'organizzazione di individuare ed eseguire azioni contro le minacce di Cybersecurity. Le funzionalità di ricerca e risposta alle minacce di Office 365 includono le funzionalità di monitoraggio delle minacce, compresi i Tracker degni di nota. Leggere questo articolo per ottenere una panoramica delle nuove funzionalità e dei passaggi successivi. 
 
 > [!IMPORTANT]
-> A partire da febbraio 2019 e distribuita nei prossimi mesi, Office 365 Threat Intelligence sta diventando Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence è ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Cosa sono gli inPistatori di minacce?
 
@@ -38,9 +38,9 @@ La maggior parte delle pagine del Tracker include i numeri di tendenza che vengo
   
 ![Esempio di informazioni sulla campagna in Esplora risorse](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Threat Intelligence](office-365-ti.md). Se disponibile, i nuovi inSeguitori di minacce includono inseguitori [degni](threat-trackers.md#notey)di nota, inseguitori di [tendenza](threat-trackers.md#trending), [query registrate](threat-trackers.md#trackedq)e [query salvate](threat-trackers.md#savedq).
+I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Gli inSeguitori di minacce includono inseguitori [significativi](threat-trackers.md#notey), inseguitori di [tendenza](threat-trackers.md#trending), [query registrate](threat-trackers.md#trackedq)e [query salvate](threat-trackers.md#savedq).
   
-Per visualizzare e usare gli informatori di minacce quando sono disponibili per l'organizzazione, passare al centro &amp; sicurezza e conformità[https://protection.office.com](https://protection.office.com)() e scegliere Threat **Management** \> **Threat Tracker**.
+Per visualizzare e utilizzare i Tracker di minacce per la propria organizzazione, andare al &amp; centro[https://protection.office.com](https://protection.office.com)sicurezza e scegliere Threat **Management** \> **Threat Tracker**.
   
 > [!NOTE]
 > Per utilizzare i Tracker di minacce, è necessario essere un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -77,9 +77,9 @@ Le query salvate vengono trovate anche nella sezione trackers. È possibile util
 
 Sia che si stia esaminando la posta elettronica, il contenuto o le attività di Office (disponibile a breve), Explorer e tracker interagiscono per esaminare e monitorare i rischi e le minacce per la sicurezza. Tutti insieme, i recapitatori forniscono informazioni per proteggere gli utenti di Office 365 evidenziando problemi nuovi, rilevanti e spesso ricercati: garantire che la propria azienda sia più protetta quando si sposta sul cloud.
   
-Quando gli informatori di minacce sono a vostra disposizione, provarli e ricordarsi che è sempre possibile fornire commenti e suggerimenti su questo o su altre funzionalità di sicurezza di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo in basso a destra della [panoramica di Office 365. Centro &amp; sicurezza e conformità](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Tenere presente che è sempre possibile fornire commenti e suggerimenti su questo o su altre funzionalità di sicurezza di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo in basso a destra della [Panoramica &amp; del Centro sicurezza e conformità di Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Centro sicurezza e &amp;conformità di Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>InSeguimenti e protezione avanzata dalle minacce di Office 365
 
@@ -93,7 +93,7 @@ Il nuovo filtro minacce notevole evidenzia gli elementi che sono stati rilevati 
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Se l'organizzazione non dispone già di Office 365 Threat Intelligence, vedere [come è possibile ottenere office 365 Threat Intelligence?](get-started-with-ti.md).
+- Se nell'organizzazione non sono già presenti le funzionalità di ricerca e di risposta alle minacce di Office 365, vedere [come si ottengono le funzionalità di analisi e risposta alle minacce di office 365?](get-started-with-ti.md).
     
 - Assicurarsi che il team di sicurezza disponga dei ruoli e delle autorizzazioni corretti assegnati. È necessario essere un amministratore globale di Office 365 oppure fare in modo che l'amministratore della sicurezza o il ruolo di ricerca ed &amp; eliminazione siano stati assegnati nel centro conformità sicurezza. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     

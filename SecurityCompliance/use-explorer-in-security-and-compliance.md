@@ -1,9 +1,9 @@
 ---
-title: Utilizzo di Esplora risorse nel &amp; Centro sicurezza e conformità
+title: Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,27 +15,27 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Explorer (denominato anche Esplora minacce) nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 4a28626d0e643d7a7b96a34656e7678c71a86c66
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241968"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524010"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Utilizzo di Esplora risorse nel &amp; Centro sicurezza e conformità
+# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 
-Se l'organizzazione dispone di [Office 365 Threat Intelligence](office-365-ti.md)ed è necessario disporre delle autorizzazioni necessarie, è possibile utilizzare Esplora risorse per identificare e analizzare le minacce. Ad esempio, è possibile identificare ed eliminare messaggi di posta elettronica dannosi che sono stati recapitati oppure vedere malware rilevati dalle funzionalità di sicurezza di Office 365. Explorer (noto anche come Threat Explorer) è un rapporto potente in tempo reale vicino al centro sicurezza &amp; e conformità.
+Se l'organizzazione dispone di [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)e si dispone delle autorizzazioni necessarie, è possibile utilizzare l'esploratore di minacce per identificare e analizzare le minacce. Ad esempio, è possibile identificare ed eliminare messaggi di posta elettronica dannosi che sono stati recapitati oppure vedere malware rilevati dalle funzionalità di sicurezza di Office 365. L'esploratore di minacce (noto anche come esploratore) è uno strumento potente quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere &amp; alle minacce nel centro sicurezza e conformità.
   
 ![Passare a gestione \> minacce](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Per utilizzare Esplora risorse, nel centro &amp; sicurezza e conformità, accedere a **gestione** \> **** minacce.
 
 > [!IMPORTANT]
-> A partire da febbraio 2019 e distribuita nei prossimi mesi, Office 365 Threat Intelligence sta diventando Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence è ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Panoramica di Esplora risorse
 
-In Esplora risorse vengono visualizzate informazioni relative al sospetto di malware nei messaggi di posta elettronica e nei file di Office 365, nonché altre minacce e rischi per la sicurezza per l'organizzazione. Quando si apre Explorer per la prima volta, la visualizzazione predefinita Visualizza i rilevamenti di malware provenienti da antivirus negli ultimi 7 giorni. Esplora risorse può anche mostrare le funzionalità di protezione della sicurezza in Office 365, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md) e può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni.
+In Esplora risorse vengono visualizzate informazioni su malware e phishing sospetti nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione. Quando si apre Explorer per la prima volta, la visualizzazione predefinita Visualizza i rilevamenti di malware per i messaggi di posta elettronica negli ultimi 7 giorni. Esplora risorse può anche mostrare le funzionalità di protezione della sicurezza in Office 365, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md) e può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni. Se si dispone di una versione di valutazione di abbonamento per Office 365 Advanced Threat Protection Plan 2 o Office 365 E5, verranno visualizzati solo i rilevamenti e i dati della posta elettronica per gli ultimi 7 giorni.
   
 ![Explorer visualizza informazioni sui principali utenti di malware e di destinazione](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
@@ -43,7 +43,7 @@ Utilizzare il menu Visualizza per modificare le informazioni visualizzate.
   
 ![Menu Visualizza per Esplora risorse](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-In Esplora sono disponibili diverse funzionalità di filtro e query che consentono di eseguire il drill-down nei dettagli, ad esempio gli utenti più mirati, le famiglie di malware principali e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
+In Esplora sono disponibili diverse funzionalità di filtro e query che consentono di eseguire il drill-down nei dettagli, ad esempio gli utenti più mirati, le famiglie di malware più importanti, la tecnologia di rilevamento e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
 
 > [!IMPORTANT]
 > Non utilizzare caratteri jolly, ad esempio un asterisco (*) o un punto interrogativo (?), con Esplora risorse. Quando si esegue una ricerca nel campo Subject per i messaggi di posta elettronica, Explorer eseguirà una corrispondenza parziale e restituisce risultati simili a quelli di una ricerca con caratteri jolly.
@@ -93,7 +93,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta el
 
 ## <a name="content--malware"></a>Malware \> contenuto
 
-Questa visualizzazione Mostra i file che sono stati identificati come dannosi in SharePoint Online, OneDrive for business e Microsoft teams.
+Questa visualizzazione Mostra i file che sono stati identificati come dannosi da Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for business e Microsoft teams.
 
 Consente di visualizzare le informazioni per la famiglia di malware, la tecnologia di rilevamento (come è stato rilevato il malware) e il carico di lavoro (OneDrive, SharePoint o Teams). 
 
@@ -103,7 +103,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli sui file specifici, ad 
   
 ## <a name="new-click-to-filter-capabilities"></a>(Nuovo!) Funzionalità di clic su filtro
 
-Nuovo in Esplora risorse è la possibilità di fare clic per filtrare. A partire dalla fine di maggio 2018, quando si fa clic su un elemento nella legenda, l'elemento diventa un filtro per il report. Si supponga, ad esempio, di esaminare la visualizzazione malware in Esplora risorse:
+Nuovo in Esplora risorse è la possibilità di fare clic per filtrare. Quando si fa clic su un elemento nella legenda, l'elemento diventa un filtro per il report. Si supponga, ad esempio, di esaminare la visualizzazione malware in Esplora risorse:
   
 ![Passare a gestione \> minacce](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -123,7 +123,7 @@ La possibilità di filtrare i dati in un clic e di passare a dettagli specifici 
   
 ## <a name="how-do-i-get-explorer"></a>Come è possibile ottenere Esplora risorse?
 
-Explorer è incluso in [Office 365 Threat Intelligence](office-365-ti.md). 
+Explorer è incluso in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). 
 
 Per visualizzare e utilizzare Esplora risorse, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza. Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
@@ -131,7 +131,7 @@ Per visualizzare e utilizzare Esplora risorse, è necessario disporre delle auto
 
 [Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Intelligence)](investigate-malicious-email-that-was-delivered.md)
+[Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Invesitgation e Response)](investigate-malicious-email-that-was-delivered.md)
   
 [Protezione antispam e antimalware in Office 365](anti-spam-and-anti-malware-protection.md)
   

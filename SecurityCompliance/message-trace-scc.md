@@ -9,14 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455348"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524090"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia dei messaggi nel centro sicurezza & Compliance
+
+## <a name="overview"></a>Panoramica
 
 La traccia dei messaggi nel centro sicurezza & Compliance segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
@@ -54,7 +56,8 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
-È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati`*@contoso.com` ( `scot?@contoso.com`o), ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.
+> [!NOTE]È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati`*@contoso.com` ( `scot?@contoso.com`o), ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.
+> [!NOTE]È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
 
 ### <a name="time-range"></a>Intervallo di tempo
 
