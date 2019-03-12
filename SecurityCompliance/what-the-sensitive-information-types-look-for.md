@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455268"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537643"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -566,7 +566,476 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Chiave di autenticazione di DocumentDB di Azure
+
+### <a name="format"></a>Formato
+
+La stringa "DocumentDb" seguita dai caratteri e dalle stringhe delineate nel modello seguente.
+
+### <a name="pattern"></a>Modello
+
+- La stringa "DocumentDb"
+- Qualsiasi combinazione tra 3-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- Un simbolo maggiore di (>), un segno di uguale (=), un segno di virgolette (") oppure un apostrofo (')
+- Qualsiasi combinazione di 86 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+)
+- Due segni uguali (=)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database di Azure IAAS e stringa di connessione SQL di Azure
+
+### <a name="format"></a>Formato
+
+Stringa "Server", "Server" o "Data Source" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp. Azure. <!--no-hyperlink-->com "o" cloudapp. Azure. <!--no-hyperlink-->NET "o" database. Windows. <!--no-hyperlink-->NET "e la stringa" password "o" password "o" pwd ".
+
+### <a name="pattern"></a>Modello
+
+- La stringa "Server", "Server" o "Data Source"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "cloudapp. Azure. <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->NET "o" database. Windows. <!--no-hyperlink-->NET "
+- Qualsiasi combinazione tra 1-300 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "password", "password" o "pwd"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Uno o più caratteri non costituiti da un punto e virgola (;), virgolette (") o apostrofo (')
+- Un punto e virgola (;), virgolette (") o apostrofo (')
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureConnectionString trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-iot-connection-string"></a>Stringa di connessione di Azure.
+
+### <a name="format"></a>Formato
+
+La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "Azure-Devices. <!--no-hyperlink-->NET "e" SharedAccessKey ".
+
+### <a name="pattern"></a>Modello
+
+- La stringa "HostName"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "Azure-Devices. <!--no-hyperlink-->NET "
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "SharedAccessKey"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione di 43 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+)
+- Segno di uguale (=)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureIoTConnectionString trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-publish-setting-password"></a>Password per l'impostazione di pubblicazione di Azure
+
+### <a name="format"></a>Formato
+
+La stringa "UserPwd =" seguita da una stringa alfanumerica.
+
+### <a name="pattern"></a>Modello
+
+- La stringa "UserPwd ="
+- Qualsiasi combinazione di lettere o cifre minuscole di 60
+- Virgolette (")
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-redis-cache-connection-string"></a>Stringa di connessione della cache di Azure Redis
+
+### <a name="format"></a>Formato
+
+La stringa "Redis. cache. Windows. <!--no-hyperlink-->NET "seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa" password "o" pwd ".
+
+### <a name="pattern"></a>Modello
+
+- La stringa "Redis. cache. Windows. <!--no-hyperlink-->NET "
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "password" o "pwd"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione di 43 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
+- Segno di uguale (=)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova il contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-sas"></a>SAS di Azure
+
+### <a name="format"></a>Formato
+
+La stringa "sig" seguita dai caratteri e dalle stringhe delineate nel modello seguente.
+
+### <a name="pattern"></a>Modello
+
+- La stringa "sig"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione tra 43-53 caratteri che sono minuscoli o maiuscoli, cifre o il segno di percentuale (%)
+- La stringa "% 3D"
+- Qualsiasi carattere che non sia una lettera, una cifra o un segno di percentuale inferiore o maiuscolo (%)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureSAS trova il contenuto che corrisponde al modello.
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Stringa di connessione bus di servizio di Azure
+
+### <a name="format"></a>Formato
+
+Stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "ServiceBus. Windows. <!--no-hyperlink-->NET "e" SharedAccesKey ".
+
+### <a name="pattern"></a>Modello
+
+- La stringa "EndPoint"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "ServiceBus. Windows. <!--no-hyperlink-->NET "
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "SharedAccessKey"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione di 43 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
+- Segno di uguale (=)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova il contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-storage-account-key"></a>Chiave dell'account di archiviazione di Azure
+
+### <a name="format"></a>Formato
+
+La stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe delineate nel modello seguente, inclusa la stringa "AccountKey".
+
+### <a name="pattern"></a>Modello
+
+- La stringa "DefaultEndpointsProtocol"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "AccountKey"
+- 0-2 caratteri dello spazio vuoto
+- Segno di uguale (=)
+- 0-2 caratteri dello spazio vuoto
+- Qualsiasi combinazione di 86 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
+- Due segni uguali (=)
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureStorageAccountKey trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_AzureEmulatorStorageAccountFilter non **** trova contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
+## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generico)
+
+### <a name="format"></a>Formato
+
+Qualsiasi combinazione di 86 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+), preceduto o seguito dai caratteri delineati nel modello seguente.
+
+### <a name="pattern"></a>Modello
+
+- 0-1 del simbolo maggiore di (>), apostrofo ('), segno di uguale (=), virgolette (") o segno numerico (#)
+- Qualsiasi combinazione di 86 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
+- Due segni uguali (=)
+
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova il contenuto che corrisponde al modello.
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>Belgio - Numero nazionale
 
 ### <a name="format"></a>Formato
@@ -579,7 +1048,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Sei cifre e due punti nel formato AA.MM.GG per data di nascita  
 - Una lineetta 
 - Tre cifre sequenziali (dispari sia per uomini che per donne)  
-- Un punto  
+- Un punto 
 - Due cifre, ovvero una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -1951,7 +2420,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
    
 ## <a name="eu-debit-card-number"></a>Unione Europea - Numero di carta di debito
@@ -2454,7 +2923,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
    
 ## <a name="france-passport-number"></a>Francia - Numero di passaporto
 
@@ -3162,7 +3631,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
    
 ## <a name="ip-address"></a>Indirizzo IP
@@ -4501,8 +4970,84 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
-   
+Nessuno
+
+## <a name="sql-server-connection-string"></a>Stringa di connessione di SQL Server
+
+### <a name="format"></a>Formato
+
+Stringa "ID utente", "ID utente", "UID" o "UserId" seguito dai caratteri e dalle stringhe delineati nel modello seguente.
+
+### <a name="pattern"></a>Modello
+
+- Stringa "ID utente", "ID utente", "UID" o "UserId"
+- Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- La stringa "password" o "pwd", dove "pwd" non è preceduta da una lettera minuscola
+- Segno di uguale (=)
+- Qualsiasi carattere non costituito da un segno di dollaro ($), un simbolo di percentuale (%), un simbolo maggiore di (>), un simbolo (@), una virgoletta ("), un punto e virgola (;), una parentesi graffa sinistra ([) o una parentesi quadra sinistra ({)
+- Qualsiasi combinazione di 7-128 caratteri che non sono un punto e virgola (;), barra (/) o virgolette (")
+- Un punto e virgola (;) o virgolette (")
+
+### <a name="checksum"></a>Checksum
+
+No
+
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_SQLServerConnectionString trova il contenuto che corrisponde al modello.
+- **Non** viene trovata una parola chiave da CEP_GlobalFilter.
+- L'espressione regolare CEP_PasswordPlaceHolder non **** trova contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords non **** trova contenuto corrispondente al modello.
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- some-password
+- somepassword
+- secretPassword
+- esempio
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- Password o pwd seguito da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*)-----------------
+- Password o pwd seguito da:
+    - Segno di uguale (=)
+    - Valore minore di (<)
+    - Qualsiasi combinazione di 1-200 caratteri che sono lettere maiuscole o minuscole, cifre, asterisco (*), segno meno (-), sottolineatura (_) o carattere dello spazio vuoto
+    - Simbolo maggiore di (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+
+- contoso
+- Fabrikam
+- Northwind
+- sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
+
 ## <a name="sweden-national-id"></a>Svezia - Identificativo nazionale
 
 ### <a name="format"></a>Formato
