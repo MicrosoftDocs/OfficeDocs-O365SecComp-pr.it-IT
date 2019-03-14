@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Informazioni su come abilitare ATP per SharePoint, OneDrive e teams, inclusa la procedura per impostare gli avvisi per i file rilevati.
-ms.openlocfilehash: 88eae37b0da3df75807436d66a5c80e0c40f82d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220396"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242148"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -73,9 +74,9 @@ Per ricevere una notifica quando un file in SharePoint Online, OneDrive for busi
     
 5. Nella sezione **Invia questo avviso quando...** eseguire le operazioni seguenti: 
     
-    a. nell'elenco **attività** scegliere **rilevato malware nel file**.
+    un. Nell'elenco **attività** scegliere **rilevato malware nel file**.
     
-    b. lasciare vuoto **** il campo Users. 
+    b. Lasciare vuoto **** il campo Users. 
     
 6. Nella sezione **Invia questo avviso a...** selezionare uno o più amministratori globali, amministratori della sicurezza o lettori di sicurezza che dovrebbero ricevere una notifica quando viene rilevato un file dannoso. 
     

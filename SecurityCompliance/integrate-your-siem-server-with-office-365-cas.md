@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: È possibile integrare il server SIEM con Office 365 cloud app Security. Leggere questo articolo per ottenere una panoramica di come funziona e come configurarlo.
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215876"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548586"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrare il server SIEM con Office 365 Cloud App Security
   
@@ -27,7 +27,7 @@ ms.locfileid: "30215876"
    
 ## <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
 
-È possibile integrare [Office 365 cloud app Security](get-ready-for-office-365-cas.md) con il server di gestione eventi e informazioni di sicurezza (Siem) per abilitare il monitoraggio centralizzato degli avvisi. Questo è particolarmente vantaggioso per le organizzazioni che utilizzano i servizi cloud e le applicazioni server locali. L'integrazione con un server SIEM consente al team di sicurezza di proteggere al meglio le applicazioni di Office 365 mantenendo il flusso di lavoro di sicurezza usuale, automatizzando determinate procedure di sicurezza e correlando tra gli eventi basati su cloud e in locale.  
+È possibile integrare [Office 365 cloud app Security](get-ready-for-office-365-cas.md) con il server di gestione eventi e informazioni di sicurezza (Siem) per abilitare il monitoraggio centralizzato degli avvisi. Questo è particolarmente vantaggioso per le organizzazioni che utilizzano i servizi cloud e le applicazioni server locali. È possibile integrare il server SIEM per estrarre avvisi e attività da Office 365 cloud app Security nel server SIEM. L'integrazione con un server SIEM consente al team di sicurezza di proteggere al meglio le applicazioni di Office 365 mantenendo il flusso di lavoro di sicurezza usuale, automatizzando determinate procedure di sicurezza e correlando tra gli eventi basati su cloud e in locale.  
   
 Quando si integra per la prima volta il server SIEM con Office 365 cloud app Security, gli avvisi degli ultimi due giorni vengono inoltrati al server SIEM, nonché tutti gli avvisi da quel momento in poi (in base ai filtri selezionati). Inoltre, se si disabilita questa funzionalità per un periodo di tempo prolungato, quando si abilita di nuovo, verranno inoltrati gli ultimi due giorni di avvisi e quindi tutti gli avvisi da quel momento in poi.
 
@@ -81,8 +81,9 @@ Office 365 cloud app Security attualmente supporta i seguenti server SIEM:
 6. Nel passaggio **syslog Remote** , specificare l'indirizzo IP o il nome host dell' **host syslog remoto** e il **numero di porta syslog**. Selezionare TCP o UDP come protocollo syslog remoto. Se non si dispone di tali informazioni, è possibile collaborare con l'amministratore di rete o con l'amministratore della sicurezza. Fare quindi clic su **Avanti**.<br/>![Specificare i dettagli di syslog remoti](media/ArcSightS1Syslog.png)
   
 7. Nel passaggio **tipi di dati** effettuare una delle operazioni seguenti e quindi fare clic su **Avanti**:
-    - Mantieni l'impostazione predefinita di **tutti gli avvisi**<br/>OPPURE
-    - Fare clic su **tutti gli avvisi**e quindi scegliere **filtri specifici**. Definire i filtri per selezionare i tipi di avvisi che si desidera inviare al server SIEM.<br/>![Passaggio dei tipi di dati della procedura guidata](media/ArcSightS1ExportOptions.png)
+    - Mantieni l'impostazione predefinita di **tutti gli avvisi**<br/>O
+    - Fare clic su **tutti gli avvisi**e quindi scegliere **filtri specifici**. Definire i filtri per selezionare i tipi di avvisi che si desidera inviare al server SIEM.
+<br/>![Passaggio dei tipi di dati della procedura guidata](media/ArcSightS1ExportOptions.png)
   
 8. Nella schermata Congratulazioni, copiare il token e salvarlo in un secondo momento.<br/>![Schermata dell'agente di SIEM creato](media/SIEMAgentFinished.png) 
 
@@ -153,7 +154,7 @@ Di seguito è riportato un esempio di file di log avvisi che potrebbe essere inv
 Ed ecco un altro esempio, questa volta in formato CEF:
 
 
-|Nome del campo CEF  | Description  |
+|Nome del campo CEF  | Descrizione  |
 |---------|---------|
 |iniziare     | timestamp di avviso        |
 |End     | timestamp di avviso        |
@@ -184,7 +185,7 @@ Se si perde il token, è possibile rigenerarne uno.
 
 2. Individuare la riga per l'agente SIEM. 
 
-3. Fare clic sui puntini di ellisse e quindi scegliere **modifica**. Se si modifica l'agente SIEM, non è necessario rieseguire il file. jar; si aggiorna automaticamente.<br/>![Per modificare l'agente SIEM, scegliere i puntini di ellisse e quindi fare clic su modifica.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Fare clic sui puntini di ellisse e quindi scegliere **modifica**. Se si modifica l'agente SIEM, non è necessario rieseguire il file. jar; si aggiorna automaticamente. <br/>![Per modificare l'agente SIEM, scegliere i puntini di ellisse e quindi fare clic su modifica.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Eliminare un agente SIEM
 

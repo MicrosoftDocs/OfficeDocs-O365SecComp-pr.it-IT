@@ -17,19 +17,20 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare un criterio di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
+ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313172"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474157"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare i criteri di supervisione per l'organizzazione
 
 Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di supervisione consentono di monitorare le comunicazioni nell'organizzazione, vedere [criteri di supervisione in Office 365](supervision-policies.md).
 
 > [!NOTE]
-> Gli utenti monitorati dai criteri di supervisione devono disporre di una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5.
+Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Seguire questa procedura per configurare e usare la supervisione nell'organizzazione di Office 365:
   
@@ -74,11 +75,11 @@ Per controllare le comunicazioni tra o all'interno di gruppi nell'organizzazione
 
 In questo esempio viene incluso un gruppo di distribuzione che è stato configurato per un'organizzazione finanziaria denominata Contoso Financial International.
   
-In Contoso Financial International, deve essere supervisionato un campionamento delle comunicazioni tra broker negli Stati Uniti. Tuttavia, i responsabili della conformità all'interno del gruppo non richiedono supervisione. In questo esempio, è possibile creare i seguenti gruppi:
+In Contoso Financial International, è necessario controllare un campionamento delle comunicazioni tra broker negli Stati Uniti. Tuttavia, i responsabili della conformità all'interno di tale gruppo non richiedono la supervisione. Per questo esempio, è possibile creare i gruppi seguenti:
   
-|**Configurare il gruppo di distribuzione**|**Indirizzo del gruppo (alias)**|**Descrizione**|
+|**Configurare questo gruppo di distribuzione**|**Indirizzo di gruppo (alias)**|**Descrizione**|
 |:-----|:-----|:-----|
-|Tutti i broker degli Stati Uniti | US_Brokers@Contoso.com | Questo gruppo include gli indirizzi di posta elettronica di tutti i broker degli Stati Uniti che lavorano per Contoso. |
+|Tutti i broker degli Stati Uniti | US_Brokers@Contoso.com | Questo gruppo include gli indirizzi di posta elettronica per tutti i broker basati su US che lavorano per contoso. |
 | Tutti i responsabili della conformità degli Stati Uniti | US_Compliance@Contoso.com  | Questo gruppo include gli indirizzi di posta elettronica per tutti i responsabili della conformità basati su US che lavorano per contoso. Poiché questo gruppo è un sottoinsieme di tutti i broker basati su Stati Uniti, è possibile utilizzare questo alias per esonerare i responsabili della conformità da un criterio di supervisione. |
   
 <a name="MakeAvailable"> </a>
@@ -214,7 +215,7 @@ Per configurare la revisione per Outlook desktop o Outlook per il Web, è necess
 
 Successivamente, i revisori dovranno eseguire un paio di comandi di PowerShell di Exchange online in modo che possano connettere Outlook alla cassetta postale di supervisione.
   
-1. Connettersi a PowerShell di Exchange Online. [Come si esegue questa operazione?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Connettersi a Exchange Online PowerShell. [Come eseguire l'operazione](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Eseguire i comandi seguenti, dove *SupervisoryReview {GUID} @domain. onmicrosoft.com* è l'indirizzo copiato nel passaggio 1 e l' *utente* è il nome del revisore che si collegherà alla cassetta postale di supervisione nel passaggio 3.
 

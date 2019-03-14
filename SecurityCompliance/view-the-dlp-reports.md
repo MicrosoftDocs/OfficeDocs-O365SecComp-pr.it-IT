@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i report DLP in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi. controllare se si sta facendo una tendenza verso l'alto o verso il basso nel tempo; filtrare il report in modi diversi; e visualizzare ulteriori dettagli selezionando un punto su una linea del grafico.
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454848"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510223"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 
@@ -71,6 +71,16 @@ I report possono mostrare spunti e suggerimenti in cui è possibile fare clic su
   
 ![Fare clic su un'icona Insights per visualizzare i dettagli e le azioni da intraprendere](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>Autorizzazioni per i report DLP
+
+Per visualizzare i report DLP nel centro sicurezza & Compliance, è necessario assegnare il seguente:
+
+- Ruolo **lettore di sicurezza** nell'interfaccia di amministrazione di Exchange. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione organizzazione e lettore di sicurezza nell'interfaccia di amministrazione di Exchange.
+
+- Ruolo di **gestione della conformità DLP di sola visualizzazione** nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore di conformità, Gestione organizzazione, amministratore della sicurezza e lettore di sicurezza nel centro conformità di sicurezza &.
+
+- Ruolo **destinatari di sola visualizzazione** nell'interfaccia di amministrazione di Exchange. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione conformità, Gestione organizzazione e organizzazione di sola visualizzazione nell'interfaccia di amministrazione di Exchange.
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Individuare i cmdlet per i report DLP
 
 Per utilizzare la maggior parte dei cmdlet per il centro &amp; sicurezza e conformità, è necessario:

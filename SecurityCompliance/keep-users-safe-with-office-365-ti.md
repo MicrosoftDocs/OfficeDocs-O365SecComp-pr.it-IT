@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come le funzionalità di analisi e risposta alle minacce di Office 365 consentono all'organizzazione di rilevare intrusioni e minacce e di attenuare e recuperare rapidamente le minacce.
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524030"
+ms.locfileid: "30536136"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenere gli utenti di Office 365 sicuri con Office 365 Threat Investigation and response capabilities
 
@@ -31,7 +31,7 @@ Si sa quale degli utenti di Office 365 sono sotto attacco o sono stati compromes
 [Office 365 Threat Investigation and Response](office-365-ti.md) è una serie di funzionalità incluse nell'abbonamento a Office 365 E5. Le funzionalità di ricerca e risposta alle minacce di Office 365 hanno consentito a Microsoft di ridurre il tempo medio per la risoluzione degli incidenti di social engineering del 80% e l'aumento della velocità effettiva dei casi del 37% al mese rispetto ai 2 trimestri precedenti. 
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection e Threat Intelligence ora fanno parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection and Threat Investigation and Response (in precedenza noto come Office 365 Threat Intelligence) sono ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Di recente sono state aggiunte nuove funzionalità che consentono di migliorare il modo in cui è possibile rilevare e recuperare dalle minacce. Di seguito è illustrata la modalità di analisi delle minacce aggiornate e delle funzionalità di risposta che consentono di rendere ancora più efficienti.
   
@@ -60,7 +60,7 @@ Se non si dispone già di queste funzionalità di analisi e risposta alle minacc
 Le funzionalità di ricerca e risposta alle minacce di Office 365 sono alimentate con dati del grafico Microsoft Intelligent Security. Il grafico acquisisce il segnale di minaccia più recente da oltre 1 miliardo dispositivi Windows, 450 miliardi mensili e 400 miliardi messaggi di posta elettronica mensili in Office 365. Questo segnale di minaccia senza eguali è ciò che rende la visibilità generale in un tenant del cliente cruciale per gli amministratori e gli analisti di sicurezza per avere una visione completa delle minacce che influiscono sulla loro organizzazione. 
   
    
-## <a name="why-threat-intelligence"></a>Perché Threat Intelligence?
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Perché utilizzare le funzionalità di analisi e risposta alle minacce di Office 365?
 
 Gartner stima che in 2017 solo oltre $90B è stata spesa su Cybersecurity. SID Deshpande, Principal Research Analyst di Gartner, è citato come dire che "il passaggio del settore al rilevamento e alla risposta... Invia un messaggio chiaro che la prevenzione è futile a meno che non sia legata a una capacità di rilevamento e risposta ". La inchiesta e la risposta alle minacce sono una parte fondamentale del portafoglio di servizi di ogni organizzazione e possono essere consumate come servizi autonomi o come parte di Office 365 E5.
   

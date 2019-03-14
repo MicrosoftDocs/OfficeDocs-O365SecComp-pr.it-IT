@@ -1,7 +1,7 @@
 ---
 title: Quarantena
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -11,14 +11,16 @@ ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
-description: Informazioni sulla quarantena in hosting per Exchange Online ed Exchange Online Protection.
-ms.openlocfilehash: 2455f912fbe3b309e3759a0fdc3fd7df7ed47390
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
+ms.collection:
+- M365-security-compliance
+description: Informazioni sulla quarantena ospitata per Exchange Online e Exchange Online Protection.
+ms.openlocfilehash: 9d0f00f5305838f1862eebdc649de0205679d282
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003005"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510213"
 ---
 # <a name="quarantine"></a>Quarantena
 
@@ -28,10 +30,10 @@ Negli argomenti di seguito vengono fornire informazioni sulla quarantena in host
     
 - [Individuazione e rilascio dei messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md) : descrive il modo in cui gli amministratori possono trovare e rilasciare qualsiasi messaggi che risiede nella quarantena nell'interfaccia di amministrazione di Exchange, nonché segnalare a Microsoft un messaggio come falso positivo (non di posta indesiderata) it as a false positive (not junk). 
     
-- [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) - descrive come gli utenti finali possono trovare e rilasciare i propri messaggi in quarantena nell'interfaccia utente di quarantena della posta indesiderata e segnalarli come non indesiderati a Microsoft. 
+- [Trovare e rilasciare i messaggi](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) in quarantena-descrive in che modo gli utenti finali possono individuare e rilasciare i propri messaggi di posta indesiderata in quarantena nell'interfaccia utente per la quarantena della posta indesiderata e segnalarli come non indesiderati a Microsoft. 
     
     > [!IMPORTANT]
-    > Per accedere alla quarantena di posta indesiderata utente finale, utenti finali devono avere un ID utente di Office 365 valido e una password. I clienti EOP protezione cassette postali locali devono essere creati tramite la sincronizzazione delle directory o l'interfaccia di amministrazione di Exchange agli utenti di posta elettronica valido. Per ulteriori informazioni sulla gestione degli utenti, gli amministratori di EOP possono vedere [gestione di utenti di posta in EOP](eop/manage-mail-users-in-eop.md). Per i clienti autonomo EOP, si consiglia di sincronizzazione della directory e abilitazione della Directory Based Edge Blocking; Per ulteriori informazioni, vedere [Utilizzo Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
+    > Per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password di Office 365 validi. I clienti di EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi creati tramite la sincronizzazione della directory o EAC. Per ulteriori informazioni sulla gestione degli utenti, gli amministratori di EOP possono fare riferimento per [gestire gli utenti di posta elettronica in EOP](eop/manage-mail-users-in-eop.md). Per i clienti autonomi di EOP, si consiglia di utilizzare la sincronizzazione della directory e di abilitare il blocco Edge basato su directory. Per ulteriori informazioni, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
   
     
 
