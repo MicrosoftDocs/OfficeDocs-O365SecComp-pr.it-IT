@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573550"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia dei messaggi nel centro sicurezza & Compliance
 
@@ -56,8 +56,8 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
-> [!NOTE]È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati`*@contoso.com` ( `scot?@contoso.com`o), ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.
-> [!NOTE]È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
+> [!NOTE]
+> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati`*@contoso.com` ( `scot?@contoso.com`o), ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
 
 ### <a name="time-range"></a>Intervallo di tempo
 
@@ -339,7 +339,7 @@ Un valore **custom_data** che inizia con `S:SFA` è dell'agente filtro posta ind
 |`DI=SJ`|Il messaggio è stato inviato alla cartella posta inDesiderata del destinatario.|
 |`DI=SN`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
-|' FS = [a]|SFS = [b]'|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
+|`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
 |`H=<EHLOstring>`|La stringa HELO o EHLO del server di posta elettronica di connessione.|
 |`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP di invio, anche noto come indirizzo DNS inverso.|
@@ -354,7 +354,7 @@ Un valore **custom_data** che inizia con `S:AMA` è dell'agente di filtro antima
 
 |**Valore**|**Descrizione**|
 |:-----|:-----|
-|' AMA = somma|v = 1|` or `AMA = EV|v = 1'|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
+|`AMA=SUM|v=1|`o`AMA=EV|v=1`|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
 |`Action=r`|Il messaggio è stato sostituito.|
 |`Action=p`|Il messaggio è stato ignorato.|
 |`Action=d`|Il messaggio è stato rinviato.|
@@ -377,7 +377,7 @@ Un valore **custom_data** che inizia con`S:TRA` è compreso nell'agente della re
 
 |**Valore**|**Descrizione**|
 |:-----|:-----|
-|' ETR|ruleId =<guid>`|L'ID regola corrispondente.|
+|`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in formato UTC quando si è verificata la corrispondenza della regola.|
 |`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
 |`Mode=<Mode>`|La modalità della regola. I valori validi sono: <br/>• **Enforce**: tutte le azioni della regola verranno applicate. <br/>• **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>• **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|

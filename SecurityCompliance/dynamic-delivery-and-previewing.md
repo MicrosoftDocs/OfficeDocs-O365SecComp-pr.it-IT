@@ -3,7 +3,7 @@ title: ReCapito dinamico e anteprima con allegati sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/08/2019
+ms.date: 03/12/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere reCapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
-ms.openlocfilehash: 1fb221d28a4089db8a4278903107c610d6825f5e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218396"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573510"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>ReCapito dinamico e anteprima con allegati sicuri ATP di Office 365
 
-**Riepilogo**: il recapito dinamico è un'opzione che può essere selezionata per gli [allegati sicuri di ATP](atp-safe-attachments.md). Leggere questo articolo per informazioni sulle funzionalità di anteprima degli allegati e il reCapito dinamico in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
+## <a name="overview"></a>Panoramica
+
+ReCapito dinamico è un'opzione che può essere selezionata per gli [allegati sicuri di ATP](atp-safe-attachments.md). Leggere questo articolo per informazioni sulle funzionalità di anteprima degli allegati e il reCapito dinamico in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
 
 Quando i [criteri degli allegati sicuri di ATP sono](set-up-atp-safe-attachments-policies.md) configurati per l'organizzazione, sono disponibili diverse opzioni per la gestione degli allegati di posta elettronica. Sono inclusi **blocco**, **sostituzione**e **recapito dinamico**. A seconda del modo in cui vengono configurati i criteri per gli allegati sicuri di ATP, i destinatari di posta elettronica potrebbero subire un ritardo durante l'analisi dei messaggi. Per evitare ritardi nei messaggi, scegliere **recapito dinamico**.
   
@@ -51,7 +53,7 @@ Si supponga che un'organizzazione stia utilizzando il reCapito dinamico per il [
   
 - Se un destinatario è incluso in un criterio di allegati sicuri ATP utilizzando l'opzione di reCapito dinamico, il destinatario Visualizza il segnaposto, con la possibilità di visualizzare in anteprima i file compatibili.
     
-- Se un destinatario non è incluso in un criterio per gli allegati sicuri di ATP, il messaggio di posta elettronica e l'allegato passeranno, senza l'analisi degli allegati sicuri di ATP o i segnaposto allegati.
+- Se un destinatario non è incluso in un criterio degli allegati sicuri di ATP, il messaggio di posta elettronica e l'allegato passeranno, senza che vengano analizzati o segnaposto allegati sicuri di ATP.
     
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>Cosa è necessario per il funzionamento del reCapito dinamico?
 
@@ -59,11 +61,11 @@ Si supponga che un'organizzazione stia utilizzando il reCapito dinamico per il [
     
 - I criteri devono essere definiti per gli allegati sicuri di ATP utilizzando l'opzione di reCapito dinamico (vedere [configurare i criteri degli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md))
     
-- La posta elettronica dell'organizzazione deve essere ospitata in Office 365
+- La posta elettronica dell'organizzazione deve essere ospitata in Office 365. Anche se [Office 365 Advanced Threat Protection può essere utilizzato con qualsiasi agente di trasferimento posta SMTP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp) (ad esempio Exchange Server), l'opzione di recapito dinamico per gli allegati sicuri di ATP richiede che la posta elettronica dell'organizzazione sia ospitata in Office 365. Se il messaggio di posta elettronica non è ospitato in Office 365, scegliere un'opzione diversa per i criteri per gli [allegati sicuri ATP](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options), ad esempio **blocca**.
     
-## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>Esistono scenari per i quali il reCapito dinamico non è disponibile?
+## <a name="additional-considerations"></a>Considerazioni aggiuntive
 
-Esistono alcuni scenari in cui il reCapito dinamico non è supportato. Sono inclusi i seguenti:
+Esistono alcuni scenari in cui il reCapito dinamico non è supportato. Tra le caratteristiche vi sono le seguenti:
   
 - Messaggi di posta elettronica presenti nelle cartelle pubbliche
     
@@ -79,3 +81,4 @@ Esistono alcuni scenari in cui il reCapito dinamico non è supportato. Sono incl
 
 - Messaggi crittografati con [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
+Nei casi in cui il reCapito dinamico non è supportato, gli allegati sicuri di ATP non analizzeranno i messaggi di posta elettronica. Tuttavia, a seconda del modo in cui vengono configurati i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) , verranno controllati gli URL nei messaggi di posta elettronica (e nei file di Office).
