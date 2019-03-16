@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455408"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639113"
 ---
 # <a name="document-metadata-fields"></a>Campi dei metadati del documento
 
 
 |**Nome del campo** </br>|**Ricercabile e visualizzabile in working set** |**Pannello metadati file** |**Esporta** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Tag del caso                  | Sì                                             |                         | Sì         |
+|Tag del caso                  | Sì (tag)                                      |                         | Sì         |
 |Etichette di conformità          |                                                 |                         | Sì         |
 |Percorso composto              |                                                 |                         | Sì         |
 |ID contenitore               |                                                 |                         | Sì         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455408"
 |Percorso composto deduplicato      |                                                 |                         | Sì         |
 |Depositari deduplicati         |                                                 |                         | Sì         |
 |ID file deduplicati           |                                                 |                         | Sì         |
-|Autori del documento                |                                                 |                         | Sì         |
+|Autori del documento                | Sì (autore) *                                   |                         | Sì         |
 |Commenti del documento               |                                                 |                         | Sì         |
 |Azienda doc                |                                                 |                         | Sì         |
-|Data di creazione del documento           |                                                 |                         | Sì         |
-|Data del documento modificata          |                                                 |                         | Sì         |
+|Data di creazione del documento           | Sì (createdTime) *                              |                         | Sì         |
+|Data del documento modificata          | Sì (lastModifiedDate) *                         |                         | Sì         |
 |Parole chiave del documento               |                                                 |                         | Sì         |
 |Ultimo salvataggio del documento          |                                                 |                         | Sì         |
 |Documento modificato da            |                                                 |                         | Sì         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455408"
 |ND ET Sort escl     |                                                 |                         | Sì         |
 |ND ET Sort incl Attach     |                                                 |                         | Sì         |
 |Set ND                     |                                                 |                         | Sì         |
-|Autori di O365               |                                                 |                         | Sì         |
+|Autori di O365               | Sì (autore) *                                   |                         | Sì         |
 |O365 creato da            |                                                 |                         | Sì         |
-|Data di O365 creata          |                                                 |                         | Sì         |
-|Data di O365 modificata         |                                                 |                         | Sì         |
+|Data di O365 creata          | Sì (createdTime) *                              |                         | Sì         |
+|Data di O365 modificata         | Sì (lastModifiedDate) *                         |                         | Sì         |
 |O365 modificato da           |                                                 |                         | Sì         |
 |Nodo padre                |                                                 |                         | Sì         |
 |ID pivot                   | Sì (pivotId)                                   |                         | Sì         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455408"
 |Percentuale di somiglianza         |                                                 |                         | Sì         |
 |Elenco temi                | Sì (temi)                                |                         | Sì         |
 |Word count                 | Sì (wordCount)                                 |                         | Sì         |
+|Punteggio di pertinenza (problema)    | Sì (relevanceScore_issueNum)                   |                         |             |
+|Lettura percentile (problema)    | Sì (readPercentile_issueNum)                   |                         |             |
+|Tag pertinenza (problema)      | Sì (relevanceTag_issueNum)                     |                         |             |
+
+  \*Per questi campi, se sono presenti valori incorporati all'interno dei documenti, la ricerca darà la priorità a tali valori. in caso contrario, tenterà di visualizzare i valori di O365.

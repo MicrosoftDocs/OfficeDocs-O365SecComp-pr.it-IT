@@ -1,7 +1,7 @@
 ---
 title: Creazione impronta digitale documenti
-ms.author: stephow
-author: stephow-msft
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: ef3f8450c9a0c65669c736c667e52568ab5996bd
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: a90cb0c7fdfe5e350c9d97adb9a8f357f526742a
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410641"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638993"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 

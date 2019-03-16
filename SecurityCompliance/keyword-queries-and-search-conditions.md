@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sui messaggi di posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando &amp; lo strumento di ricerca contenuto nel centro sicurezza e conformità di Office 365.  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354758"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639163"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query delle parole chiave e condizioni di ricerca per ricerca contenuto
 
@@ -123,11 +123,14 @@ Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e ch
 
 ## <a name="searchable-sensitive-data-types"></a>Tipi di dati sensibili disponibili per la ricerca
 
-È possibile utilizzare la funzionalità Ricerca contenuto nel centro sicurezza &amp; e conformità per cercare dati riservati, ad esempio numeri di carta di credito o numeri di previdenza sociale, archiviati nei documenti di SharePoint e di siti di OneDrive for business. È possibile eseguire questa operazione utilizzando la `SensitiveType` proprietà e il nome di un tipo di informazioni riservate in una query di parole chiave. Ad esempio, la query `SensitiveType:"Credit Card Number"` restituisce i documenti che contengono un numero di carta di credito. La query `SensitiveType:"U.S. Social Security Number (SSN)"` restituisce i documenti che contengono un numero di previdenza sociale degli Stati Uniti. Per visualizzare un elenco dei tipi di dati riservati di cui è possibile eseguire la ricerca, passare a **classificazione** \> **tipi di informazioni** riservate &amp; nel centro sicurezza e conformità. In alternativa, è possibile utilizzare il cmdlet **Get-DlpSensitiveInformationType** in &amp; PowerShell per la conformità al centro sicurezza per visualizzare un elenco di tipi di informazioni riservate. 
+È possibile utilizzare la funzionalità Ricerca contenuto nel centro sicurezza & Compliance per cercare dati riservati, ad esempio numeri di carta di credito o numeri di previdenza sociale, archiviati nei documenti di SharePoint e siti di OneDrive for business. È possibile eseguire questa operazione utilizzando la `SensitiveType` proprietà e il nome di un tipo di informazioni riservate in una query di parole chiave. Ad esempio, la query `SensitiveType:"Credit Card Number"` restituisce i documenti che contengono un numero di carta di credito. La query `SensitiveType:"U.S. Social Security Number (SSN)"` restituisce i documenti che contengono un numero di previdenza sociale degli Stati Uniti. Per visualizzare un elenco dei tipi di dati riservati di cui è possibile eseguire la ricerca, passare a **classificazione** \> **tipi di informazioni** riservate &amp; nel centro sicurezza e conformità. In alternativa, è possibile utilizzare il cmdlet **Get-DlpSensitiveInformationType** in &amp; PowerShell per la conformità al centro sicurezza per visualizzare un elenco di tipi di informazioni riservate. 
   
 È inoltre possibile utilizzare la `SensitiveType` proprietà per cercare il nome di un tipo di informazioni riservate personalizzato creato dall'utente (o da un altro amministratore) per l'organizzazione. Si noti che è possibile utilizzare la colonna **Publisher** nella pagina **tipi di informazioni riservate** nel &amp; centro conformità di sicurezza (o la proprietà **Publisher** in PowerShell) per distinguere tra incorporate e Custom sensitive. tipi di informazioni. Per ulteriori informazioni, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md).
   
 Per ulteriori informazioni sulla creazione di query tramite `SensitiveType` la proprietà, vedere [form a query to find sensitive data stored in sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+
+> [!NOTE]
+> Non è possibile utilizzare i tipi di dati `SensitiveType` riservati e la proprietà Search per cercare i dati riservati in-Rest nelle cassette postAli di Exchange Online. Tuttavia, è possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per proteggere i dati sensibili del messaggio di posta elettronica in transito. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md) e [cercare e trovare i dati personali](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operatori di ricerca
 

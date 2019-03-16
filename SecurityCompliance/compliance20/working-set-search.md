@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2523072181307cce510f0f318834329b2c70b376
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454988"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639013"
 ---
 # <a name="query-the-data-in-a-working-set"></a>Eseguire query sui dati in un set di lavoro
 
@@ -31,7 +31,7 @@ Per creare ed eseguire una query all'interno del working set, fare clic su "nuov
 
 ## <a name="building-your-query"></a>Creazione di una query
 
-È possibile creare la query utilizzando una combinazione di schede di condizione e lingua di query nella scheda condizione parole chiave.
+È possibile creare la query utilizzando una combinazione di schede di condizione e lingua di query nella scheda condizione parole chiave. È possibile raggruppare le schede delle condizioni insieme come blocco per creare una query più complessa.
 
 ### <a name="condition-card"></a>Scheda condizione
 
@@ -40,9 +40,15 @@ Ogni campo ricercabile di un working set ha una corrispondente scheda di condizi
 Sono disponibili più tipi di schede di condizione:
 - FREETEXT: la scheda di stato FREETEXT viene utilizzata per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
 - Data: la scheda condizione data viene utilizzata per i campi data, ad esempio la data dell'Ultima modifica.
-- Opzioni di ricerca: la scheda condizione opzioni di ricerca fornisce un elenco di valori possibili per il campo specifico del working set. Viene utilizzato per i campi come sender, in cui è presente un numero finito di valori possibili nel working set.
+- Opzioni di ricerca: la scheda condizione opzioni di ricerca fornisce un elenco di valori possibili per il campo specifico del working set. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel working set.
 - Keyword: la scheda condizione parola chiave è una specifica istanza della scheda di condizione di FREETEXT che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query simile a KQL. Per ulteriori informazioni, vedere di seguito.
 
 ### <a name="query-language"></a>Lingua query
 
 Oltre alle schede delle condizioni, è possibile utilizzare una lingua di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query supporta la sintassi di KQL standard, come e, o, non e vicino (n). Supporta anche caratteri jolly con caratteri singoli (?) e caratteri jolly (*).
+
+## <a name="filter"></a>Filtro
+
+Oltre alle query che è possibile salvare, è possibile sovrapporre ulteriori condizioni al volo ai risultati delle query utilizzando filtri. I filtri differiscono dalle query in pochi modi significativi:
+- I filtri sono transitori (ovvero non sono permanenti su sessioni diverse), mentre le query vengono salvate nel working set.
+- I filtri sono sempre additivi. i filtri verranno applicati in base alla query in vigore al momento, mentre l'applicazione di una query sostituirà la query in effetti.

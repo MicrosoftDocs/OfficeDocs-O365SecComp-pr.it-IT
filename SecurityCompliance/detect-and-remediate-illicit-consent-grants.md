@@ -8,18 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223355"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656072"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -65,7 +65,7 @@ Fare in modo che gli https://myapps.microsoft.com utenti accedano e rivedano l'a
 ### <a name="steps-for-doing-this-with-powershell"></a>Passaggi per eseguire questa operazione con PowerShell
 Il modo più semplice per verificare l'attacco di concessione di consenso illecito consiste nell'eseguire [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che consentirà di scaricare tutti i concessioni di autorizzazione OAuth e le app OAuth per tutti gli utenti nel proprio contratto di locazione in un unico file. csv. 
 
-#### <a name="pre-requisites"></a>Prerequisiti
+#### <a name="pre-requisites"></a>Requisiti preliminari
 - Libreria di Azure AD PowerShell installata.
 - Diritti di amministratore globale sul tenant su cui verrà eseguito lo script.
 - Amministratore locale nel computer da cui verranno eseguiti gli script.

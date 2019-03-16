@@ -1,7 +1,7 @@
 ---
 title: Panoramica relativa ai criteri di prevenzione della perdita di dati
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455048"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639143"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -510,6 +510,6 @@ Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incl
     
 - [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
-- [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md)
+- [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
     
 

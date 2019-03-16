@@ -1,7 +1,7 @@
 ---
 title: Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455188"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639153"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
 
@@ -90,7 +90,7 @@ Per ogni regola in un criterio DLP, è possibile:
 - Personalizzare il testo incluso nella notifica tramite HTML o token. Per ulteriori informazioni, vedere la sezione riportata di seguito.
     
 > [!NOTE]
->  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. > solo il nuovo contenuto attiverà una notifica tramite posta elettronica. Le modifiche ai contenuti esistenti attivano i suggerimenti per i criteri, non una notifica di posta elettronica. 
+>  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. Solo i nuovi contenuti attivano una notifica di posta elettronica. Le modifiche ai contenuti esistenti attivano i suggerimenti per i criteri, non una notifica di posta elettronica. 
   
 ![Opzioni di notifica tramite posta elettronica](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   

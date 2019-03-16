@@ -8,25 +8,26 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: 214be3e8492c2896d2a4010c30768e41bc149078
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215236"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656062"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
 
 **Riepilogo** Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Che cos'è l'attacco delle regole di Outlook e dell'iniezione di moduli personalizzati?
-Dopo che un utente malintenzionato ha violato un account nel tuo contratto di locazione ed è entrato, ci sarà una soluzione per cercare di stabilire un modo per rimanere o un modo per tornare indietro dopo che sono stati scoperti e rimossi. Si tratta di una chiamata che istituisce un meccanismo di persistenza. Due modi per eseguire questa operazione sono lo sfruttamento delle regole di Outlook o la possibilità di inserire moduli personalizzati in Outlook. In entrambi i casi, la regola o la maschera viene sincronizzata dal servizio cloud verso il basso nel client desktop, quindi un formato completo e una nuova installazione del software client non eliminano il meccanismo di iniezione. Ciò è dovuto al fatto che, quando il software client di Outlook si riconnette alla cassetta postale nel cloud, riscaricherà le regole e i moduli dal cloud. Dopo che le regole e i moduli sono stati attivati, l'utente malintenzionato li utilizza per eseguire codice remoto o personalizzato, in genere per installare malware nel computer locale. Il malware quindi ri-ruba le credenziali o esegue altre attività illecite. La buona notizia è che se si mantiene i client con patch per la versione più recente, non si è vulnerabili alla minaccia come le impostazioni predefinite del client Outlook correnti bloccano entrambi i meccanismi. 
+Dopo che un utente malintenzionato ha violato un account nel tuo contratto di locazione ed è entrato, ci sarà una soluzione per cercare di stabilire un modo per rimanere o un modo per tornare indietro dopo che sono stati scoperti e rimossi. Si tratta di una chiamata che istituisce un meccanismo di persistenza. Due modi per eseguire questa operazione sono lo sfruttamento delle regole di Outlook o la possibilità di inserire moduli personalizzati in Outlook.
+In entrambi i casi, la regola o la maschera viene sincronizzata dal servizio cloud verso il basso nel client desktop, quindi un formato completo e una nuova installazione del software client non eliminano il meccanismo di iniezione. Ciò è dovuto al fatto che, quando il software client di Outlook si riconnette alla cassetta postale nel cloud, riscaricherà le regole e i moduli dal cloud. Dopo che le regole e i moduli sono stati attivati, l'utente malintenzionato li utilizza per eseguire codice remoto o personalizzato, in genere per installare malware nel computer locale. Il malware quindi ri-ruba le credenziali o esegue altre attività illecite. La buona notizia è che se si mantiene i client con patch per la versione più recente, non si è vulnerabili alla minaccia come le impostazioni predefinite del client Outlook correnti bloccano entrambi i meccanismi. 
 
 Gli attacchi in genere seguono questi modelli:
 
@@ -87,7 +88,7 @@ Questi meccanismi di persistenza sono improbabili da essere notati dagli utenti 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Passaggi per confermare le regole e i moduli di attacco tramite PowerShell
 Il modo più semplice per verificare una regola o un attacco di moduli personalizzati consiste nell'eseguire lo script di PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) .  Questo script si connette a tutte le cassette postali del tenant e Scarica tutte le regole e i moduli in due file. csv.
 
-#### <a name="pre-requisites"></a>Prerequisiti
+#### <a name="pre-requisites"></a>Requisiti preliminari
 Sarà necessario disporre di diritti di amministratore globale per eseguire lo script perché lo script si connette a tutte le cassette postali del contratto di locazione per leggere le regole e i moduli.
 
 1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
@@ -140,7 +141,8 @@ Le regole e gli exploit dei moduli vengono utilizzati solo da un utente malinten
 
 Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti di Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  È inoltre necessario:
 <ol>
-    <li>Monitorare la modalità <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">di accesso e utilizzo</a>degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">criteri di protezione delle app cloud di Office 365</a> per monitorare gli account e allertare attività inusuali.<ol type="a">
+    <li>Monitorare la modalità <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">di accesso e utilizzo</a>degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">criteri di protezione delle app cloud di Office 365</a> per monitorare gli account e allertare attività inusuali. 
+        <ol type="a">
             <li><b>Tentativi di accesso non riusciti multipli</b> Questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività di accesso non riuscite in una singola sessione rispetto alla linea di base acquisita, il che potrebbe indicare una tentativo di violazione.</li>
             <li><b>Viaggi impossibili</b> - Questo criterio profila l'ambiente e attiva gli avvisi quando vengono rilevate attività dallo stesso utente in posizioni diverse entro un periodo di tempo inferiore a quello previsto tra le due posizioni. Questo potrebbe indicare che un utente diverso utilizza le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale viene illustrato il modello di attività di un nuovo utente.</li>
             <li><b>Attività rappresentata insolita (per utente)</b> - Questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività rappresentate in una singola sessione rispetto alla linea di base appresa, il che potrebbe indicare una tentativo di violazione.</li>

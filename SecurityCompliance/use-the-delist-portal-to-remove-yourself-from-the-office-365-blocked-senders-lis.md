@@ -15,12 +15,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 2d01d1637ddf1a4666d580b09e59fc6baa12784e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276184"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30647306"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Accedere al portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365
 
@@ -32,7 +32,7 @@ Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri client
   
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
   
-550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, https://sender.office.com/ visitare e seguire le indicazioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito della posta elettronica in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+> 550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, https://sender.office.com/ visitare e seguire le indicazioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito della posta elettronica in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta. 
   
@@ -44,7 +44,7 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     
 3. Fare clic su **Invia**.
     
-    Il portale Invia un messaggio di posta elettronica all'indirizzo di posta elettronica fornito. Il messaggio di posta elettronica avrà un aspetto analogo al seguente: ![screenshot del messaggio di posta elettronica ricevuto quando si invia una richiesta tramite il portale di esclusione](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Il portale invia un messaggio di posta elettronica all'indirizzo di posta elettronica fornito. Il messaggio di posta elettronica avrà un aspetto analogo al seguente: ![screenshot del messaggio di posta elettronica ricevuto quando si invia una richiesta tramite il portale di esclusione](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. Fare clic sul collegamento di conferma nel messaggio di posta elettronica inviato all'utente dal portale di esclusione.
     
@@ -54,4 +54,5 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     
     Dopo la rimozione dell'indirizzo IP dall'elenco dei mittenti bloccati, i messaggi di posta elettronica dall'indirizzo IP verranno recapitati ai destinatari che utilizzano Office 365. Pertanto, assicurarsi che la posta elettronica inviata da tale indirizzo IP non sia offensiva o dannosa; in caso contrario, l'indirizzo IP verrà bloccato di nuovo.
     
-
+    > [!NOTE]
+    > Potrebbe essere necessario fino a un'ora prima che vengano rimosse le restrizioni.
