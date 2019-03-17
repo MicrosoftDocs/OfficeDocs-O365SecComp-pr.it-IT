@@ -1,7 +1,7 @@
 ---
 title: Personalizzare una tipologia integrata di informazioni sensibili
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una regola. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito.
-ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455428"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639073"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
@@ -44,7 +44,7 @@ Per esportare l'XML, è necessario [connettersi al Centro sicurezza e conformit�
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > Assicurarsi di usare il percorso del file in cui è effettivamente archiviato il pacchetto di regole.  `C:\custompath\` è un segnaposto. 
+    > Assicurarsi di utilizzare il percorso in cui è effettivamente archiviato il pacchetto di regole. `C:\custompath\` è un segnaposto. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Individuare la regola da modificare nel file XML
 
