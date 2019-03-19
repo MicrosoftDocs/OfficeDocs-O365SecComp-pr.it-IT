@@ -106,7 +106,7 @@
 ### [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
 ### [Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md)
 ### [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
-### [Rimuovere un utente, dominio o indirizzo IP da un elenco di blocco](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md)
 #### [Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
