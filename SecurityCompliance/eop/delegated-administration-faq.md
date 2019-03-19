@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: In questo argomento vengono riportate le domande frequenti per i partner e rivenditori Microsoft che vogliono eseguire attività di amministrazione delegata in Office 365, quali la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027493"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670441"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 
@@ -24,7 +24,7 @@ In questo argomento vengono riportate le domande frequenti per i partner e riven
   
  **D. Sono un rivenditore e devo gestire i tenant del mio cliente. Come posso eseguire questa operazione?**
   
-R. Sì. Se sei un partner o rivenditore Microsoft e ti sei registrato in qualità di consulente Microsoft, puoi richiedere l'autorizzazione per amministrarne i tenant nell'interfaccia di amministrazione di Office 365. Questa è nota come amministrazione delegata e ti consente di configurare le impostazioni EOP allo stesso modo dell'amministratore dell'organizzazione. I passaggi per eseguire l'amministrazione delegata sono i seguenti:
+R. Se si è un partner o rivenditore Microsoft e si è iscritti a Microsoft Advisor, è possibile richiedere l'autorizzazione per l'amministrazione del tenant all'interno dell'interfaccia di amministrazione. Questa operazione è nota come amministrazione delegata e consente di gestire il tenant di Office 365 (incluse le impostazioni di EOP) come se si trattasse di un amministratore all'interno della propria organizzazione. Di seguito sono riportati i passaggi per l'esecuzione di un'amministrazione delegata:
   
 1. Iscriviti e diventa un [consulente di Microsoft Office 365](https://aka.ms/cloudbenefits).
     
@@ -44,6 +44,6 @@ R. Attualmente, questa funzionalità non è compresa in Office 365.
   
  **D. Posso visualizzare report consolidati in tutti i miei tenant secondari?**
   
-R. Attualmente, i report consolidati delle aziende che gestisci non sono disponibili per i report dell'interfaccia di amministrazione di Office 365 Tuttavia, puoi eseguire questa operazione tramite Windows PowerShell remoto o il [servizio web gestione rapporti ](https://go.microsoft.com/fwlink/?LinkId=279926). 
+R. La creazione di rapporti conSolidati tra le società gestite non è disponibile per i report dell'interfaccia di amministrazione di Micrsoft 365 in questo momento. Tuttavia, è possibile eseguire questa operazione tramite Windows PowerShell remoto o il [servizio Web di Reporting](https://go.microsoft.com/fwlink/?LinkId=279926). 
   
 

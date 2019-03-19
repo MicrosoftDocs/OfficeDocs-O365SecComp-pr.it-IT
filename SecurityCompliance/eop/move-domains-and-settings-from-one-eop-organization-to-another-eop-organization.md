@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341557"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670591"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di EOP a un'altra organizzazione di EOP
 
 Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta. 
   
 > [!NOTE]
->  Le impostazioni possono essere spostate in modo affidabile solo da un'organizzazione di EOP autonoma (standard) a un'altra EOP standard o a un'organizzazione di Exchange Enterprise CAL with Services (EOP Premium) o da un'organizzazione di EOP Premium a un'altra organizzazione di EOP Premium. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo. > queste istruzioni sono disponibili solo per le organizzazioni di solo filtro di EOP. Sono disponibili ulteriori considerazioni per passare da un'organizzazione di Exchange Online a un'altra dell'organizzazione di Exchange Online. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni. 
+>  È possibile spostare le impostazioni in modo affidabile solo da un'organizzazione (standard) autonoma di EOP a un'altra organizzazione standard di EOP o Enterprise CAL con servizi (Premium EOP), oppure da un'organizzazione Premium EOP a un'altra. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo. >  Queste istruzioni riguardano solo le organizzazioni con filtro EOP. Esistono ulteriori considerazioni sul trasferimento da un'organizzazione di Exchange Online a un'altra. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni. 
   
 Nell'esempio seguente, Contoso, Ltd. è stato unito a Contoso Suite. Nella figura seguente viene illustrato il processo di trasferimento di domini, utenti e gruppi di posta e impostazioni dall'organizzazione EOP di origine (contoso.onmicrosoft.com) all'organizzazione EOP di destinazione (contososuites.onmicrosoft.com):
   
@@ -58,22 +58,22 @@ Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in
   
 Dopo aver eseguito la connessione a Windows PowerShell remoto, creare una directory denominata Esportazione in un percorso facile in cui trovare e modificare tale directory. Esempio:
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-Lo script seguente può essere utilizzato per raccogliere tutti gli utenti di posta elettronica, i gruppi, le impostazioni di protezione dalla posta indesiderata, le impostazioni antimalware, i connettori e le regole del flusso di posta nell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come blocco note, salvare il file come Source_EOP_Settings. ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
+Lo script seguente può essere utilizzato per raccogliere tutti gli utenti di posta elettronica, i gruppi, le impostazioni di protezione dalla posta indesiderata, le impostazioni antimalware, i connettori e le regole del flusso di posta nell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come Source_EOP_Settings.ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,7 +141,7 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 Eseguire i comandi seguenti dalla directory di esportazione per aggiornare i file XML con l'organizzazione di destinazione. Sostituire contoso.onmicrosoft.com e contososuites.onmicrosoft.com con i nomi delle organizzazioni di origine e di destinazione.
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -150,13 +150,13 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 
 Aggiungere i domini all'organizzazione di destinazione utilizzando lo script seguente. Copiare e incollare il testo in un editor di testo come Blocco note, salvare lo script comeC:\EOP\Export\Add_Domains.ps1 ed eseguire il comando riportato di seguito:
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 Questi domini non saranno verificati e non possono essere utilizzati per instradare la posta, ma dopo l'aggiunta dei domini, è possibile raccogliere le informazioni necessarie per verificare i domini ed eventualmente aggiornare i record MX per il nuovo tenant.
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,9 +172,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-A questo punto, è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Office 365 dell'organizzazione di destinazione in modo che sia possibile verificare rapidamente i domini quando occorre:
+A questo punto, è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Microsoft 365 dell'organizzazione di destinazione, in modo da poter verificare rapidamente i domini quando arriva il momento:
   
-1. Effettuare l'accesso all'interfaccia di amministrazione di Office 365 in [https://portal.office.com](https://portal.office.com).
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 all' [https://portal.office.com](https://portal.office.com)indirizzo.
     
 2. Fare clic su **Domini**.
     
@@ -186,7 +186,7 @@ A questo punto, è possibile esaminare e raccogliere le informazioni dall'interf
     
 6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di record DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
     
-## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda
+## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda 
 
 Durante il trasferimento dei domini da un tenant a un altro, sarà necessario eliminare i domini dall'organizzazione di origine e verificarli nell'organizzazione di destinazione. Durante questo periodo, non sarà possibile instradare la posta attraverso EOP.
   
@@ -203,11 +203,11 @@ Per ulteriori informazioni sulla configurazione di record DNS, vedere [Creare re
 
 Lo script seguente consente di rimuovere gli utenti, i gruppi e i domini dal tenant di origine utilizzando Windows PowerShell remoto di Azure Active Directory. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come C:\EOP\Export\Remove_Users_and_Groups.ps1 ed eseguire il comando riportato di seguito:
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,7 +243,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Passaggio 5: Verificare i domini dell'organizzazione di destinazione
 
-1. Effettuare l'accesso all'interfaccia di amministrazione di Office 365 in [https://portal.office.com](https://portal.office.com).
+1. Accedere all'interfaccia di amministrazione all'indirizzo [https://portal.office.com](https://portal.office.com).
     
 2. Fare clic su **Domini**.
     
@@ -255,11 +255,11 @@ Una procedura ottimale per EOP consiste nell'utilizzare Azure Active Directory p
   
 Per utilizzare questo script, copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come C:\EOP\Export\Add_Users_and_Groups.ps1 ed eseguire il comando riportato di seguito:
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ if($MailContactsCount -gt 0){
   
 Copiare e incollare lo script in un editor di testo come Blocco note, salvare il file comeC:\EOP\Export\Import_Settings.ps1 ed eseguire il comando riportato di seguito:
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 Questo script consente di importare i file XML e creare un file di script Windows PowerShell denominato Settings.ps1 che è possibile rivedere, modificare e quindi eseguire per ricreare le impostazioni relative alla protezione e al flusso di posta.
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -926,6 +926,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Passaggio 8: Ripristinare le impostazioni DNS per interrompere l'accodamento della posta
 
-Se si è scelto di impostare i record MX per un indirizzo non valido affinché i mittenti inseriscano la posta in coda durante la transizione, sarà necessario impostarli di nuovo in base al valore corretto, come specificato nell'[interfaccia di amministrazione di Office 365](https://portal.office.com). Per ulteriori informazioni sulla configurazione DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti vengano accodati alla posta durante la transizione, è necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per ulteriori informazioni sulla configurazione DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
 

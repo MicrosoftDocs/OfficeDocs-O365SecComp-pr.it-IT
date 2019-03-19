@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Se si invia un volume elevato di posta elettronica di dominio non registrato, si rischia che la posta elettronica venga bloccata. Leggere questo articolo per ulteriori informazioni.
-ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276226"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670541"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Messaggio di posta elettronica di dominio non registrato: informazioni utili
 
@@ -37,7 +37,7 @@ Una volta compromesso, ai tenant verrà impedito di inviare la posta in uscita p
 
 È necessario eseguire diverse operazioni se si viene bloccati per l'invio da domini non registrati:
 
-1. Assicurarsi di registrare tutti i domini nell'interfaccia di amministrazione di Office 365. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Assicurarsi di registrare tutti i domini nell'interfaccia di amministrazione di Microsoft 365. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Cercare connettori inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nel tenant di Office 365 per inviare la posta indesiderata. Ulteriori informazioni su come controllare i connettori sono disponibili [qui](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 

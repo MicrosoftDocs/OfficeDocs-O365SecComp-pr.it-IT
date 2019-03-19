@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
-ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 8792f41ade704c7742445646b3cb965561994d02
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524080"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670681"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
 
@@ -137,9 +137,9 @@ TTL:                3600
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>Abilitare la firma DKIM per il dominio personalizzato in Office 365
 <a name="EnableDKIMinO365"> </a>
 
-Dopo aver pubblicato i record CNAME in DNS, è possibile abilitare la firma DKIM tramite Office 365. È possibile eseguire questa operazione tramite l'interfaccia di amministrazione di Office 365 oppure PowerShell.
+Dopo aver pubblicato i record CNAME in DNS, è possibile abilitare la firma DKIM tramite Office 365. È possibile eseguire questa operazione tramite l'interfaccia di amministrazione di Microsoft 365 o tramite PowerShell.
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>Per abilitare la firma DKIM del dominio personalizzato tramite l'interfaccia di amministrazione di Office 365
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Per abilitare la firma DKIM per il dominio personalizzato tramite l'interfaccia di amministrazione
 
 1. [Accedere a Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione. 
     

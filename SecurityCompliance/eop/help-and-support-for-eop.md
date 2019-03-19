@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027553"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670531"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per EOP
 
@@ -38,7 +38,7 @@ Articolo relativo alla [procedura guidata dettagliata del flusso di posta in Off
   
 ## <a name="assisted-support-from-microsoft"></a>Supporto assistito di Microsoft
 
-È possibile ottenere un'assistenza da Microsoft facendo partire una nuova richiesta di servizio all'interno di interfaccia di amministrazione di Office 365 chiamando il numero telefonico. I sottoscrittori del Supporto Premier hanno opzioni di supporto supplementare.
+È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio all'interno dell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. I sottoscrittori del Supporto Premier hanno opzioni di supporto supplementare.
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Supporto per i sottoscrittori del Supporto Premier Microsoft
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni sull'utilità del Supporto Premier per l'ottimizzazio
   
 ### <a name="ask-for-help-on-the-web"></a>Richiedere assistenza sul Web
 
-1. Accedere a interfaccia di amministrazione di Office 365.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365.
     
 2. Andare a **Supporto** \> **Richiedi l'assistenza clienti** \> **Nuova richiesta di assistenza**
     
@@ -56,7 +56,7 @@ Per ulteriori informazioni sull'utilità del Supporto Premier per l'ottimizzazio
     
 ### <a name="ask-for-help-on-the-telephone"></a>Richiedere assistenza tramite il telefono
 
-1. Accedere a interfaccia di amministrazione di Office 365.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365.
     
 2. Per i problemi generali dei prodotti andare nella pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto tecnico**.
     
@@ -81,8 +81,8 @@ Microsoft fornisce numeri di telefono locali o un numero verde per il supporto d
    
 ## <a name="for-more-information-about-eop-documentation"></a>Per ulteriori informazioni sulla documentazione di EOP
 
-[Avviso di copyright di terze parti](third-party-copyright-notices.md)
+[Informazioni sul copyright di terze parti](third-party-copyright-notices.md)
   
-[Accessibilità per gli utenti disabili](accessibility-for-people-with-disabilities.md)
+[Accessibilità per persone con disabilità](accessibility-for-people-with-disabilities.md)
   
 

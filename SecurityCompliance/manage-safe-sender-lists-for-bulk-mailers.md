@@ -15,16 +15,16 @@ ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
 ms.collection:
 - M365-security-compliance
 description: "Se si desidera utilizzare elenchi di mittenti attendibili, è necessario sapere che Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio rispetta i mittenti e i domini attendibili esaminando l'indirizzo RFC 5321. MailFrom e l'indirizzo RFC 5322. from, mentre Outlook aggiunge l'indirizzo RFC 5322. from all'elenco dei mittenti attendibili di un utente. Nota: il servizio controlla sia l'indirizzo 5321. MailFrom sia l'indirizzo 5322. from per i mittenti e i domini bloccati."
-ms.openlocfilehash: 27d635ec93dd04df8ebf22d5d3d8f8ead4b7bcf8
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: cc0f74fccade2e9b3cb96bbab9ec72936df24bae
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276136"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670601"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gestire gli elenchi di mittenti attendibili per messaggi inviati in massa
 
-Se si desidera utilizzare elenchi di mittenti attendibili, è necessario sapere che Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio rispetta i mittenti e i domini attendibili esaminando l'indirizzo RFC 5321. MailFrom e l'indirizzo RFC 5322. from, mentre Outlook aggiunge l'indirizzo RFC 5322. from all'elenco dei mittenti attendibili di un utente. Nota: il servizio controlla sia l'indirizzo 5321. MailFrom sia l'indirizzo 5322. from per i mittenti e i domini bloccati.
+Se si desidera utilizzare elenchi di mittenti attendibili, è necessario sapere che Exchange Online Protection (EOP) e Outlook gestiscono l'elaborazione in modo diverso. Il servizio Office 365 rispetta i mittenti e i domini attendibili esaminando l'indirizzo RFC 5321. MailFrom e l'indirizzo RFC 5322. from, mentre Outlook aggiunge l'indirizzo RFC 5322. from all'elenco dei mittenti attendibili di un utente. Nota: il servizio controlla sia l'indirizzo 5321. MailFrom sia l'indirizzo 5322. from per i mittenti e i domini bloccati.
   
 L'indirizzo di posta elettronica SMTP, altrimenti noto come indirizzo RFC 5321. MailFrom, è l'indirizzo di posta elettronica utilizzato per eseguire i controlli SPF e, se non è possibile recapitare la posta, il percorso in cui viene recapitato il messaggio. Si tratta di questo indirizzo di posta elettronica che viene inserito nel percorso di ritorno nelle intestazioni del messaggio per impostazione predefinita, sebbene sia possibile che il mittente designi un indirizzo diverso per il percorso restituito.
   
@@ -32,6 +32,6 @@ L'indirizzo da: nelle intestazioni del messaggio, altrimenti noto come indirizzo
   
 La maggior parte delle volte, gli indirizzi 5321. MailFrom e 5322. from sono gli stessi. Questa è la caratteristica tipica della comunicazione da persona a persona. Tuttavia, quando viene inviato un messaggio di posta elettronica per conto di qualcun altro, gli indirizzi sono spesso diversi. Questo accade solitamente più spesso per i messaggi di posta elettronica in blocco.
   
-Si supponga, ad esempio, che la compagnia aerea Blue laggiù abbia stipulato un contratto con Margie ' s Travel per inviare la propria pubblicità tramite posta elettronica. È quindi possibile ottenere un messaggio nella posta in arrivo dal mittente blueyonder@news.blueyonderairlines.com. In questo caso, l'indirizzo 5321. MailFrom è blueyonder.airlines@margiestravel.com e blueyonder@news.blueyonderairlines.com è l'indirizzo 5322. from che è quello visualizzato in Outlook. Poiché il servizio rispetta l'indirizzo RFC 5322. from, per evitare che questo messaggio venga filtrato, è sufficiente aggiungere l'indirizzo RFC 5322. from come mittente sicuro in Outlook.
+Si supponga, ad esempio, che la compagnia aerea Blue laggiù abbia stipulato un contratto con Margie ' s Travel per inviare la propria pubblicità tramite posta elettronica. È quindi possibile ottenere un messaggio nella posta in arrivo dal mittente blueyonder@news.blueyonderairlines.com. In questo caso, l'indirizzo 5321. MailFrom è blueyonder.airlines@margiestravel.com e blueyonder@news.blueyonderairlines.com è l'indirizzo 5322. from che è quello visualizzato in Outlook. Poiché il servizio rispetta l'indirizzo RFC 5322. from, per evitare che questo messaggio venga filtrato, è possibile aggiungere l'indirizzo RFC 5322. from come mittente sicuro in Outlook (come utente) oppure, se si è un amministratore impostare una regola del flusso di posta come mostrato nella barra di protezione [ Sezione Protection](anti-spam-protection.md) .
   
 

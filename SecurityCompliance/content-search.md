@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296359"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670721"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -70,7 +70,7 @@ Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizz
     
     ![Specificare le parole chiave, le condizioni e le posizioni in cui eseguire la ricerca](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Parole chiave per la ricerca per** Digitare una query di ricerca nella casella **parole chiave** . È possibile specificare le parole chiave, le proprietà del messaggio, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
+- **Parole chiave per la ricerca per** Digitare una query di ricerca nella casella **parole chiave** . È possibile specificare parole chiave, proprietà del messaggio, come ad esempio, le date di invio e ricezione o le proprietà del documento, quali ad esempio, i nomi dei file o la data dell'ultima modifica apportata a un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
     
     In alternativa, è possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico ( **c:s**) simile alla funzionalità all'operatore **or** nella query di ricerca creata. 
     
@@ -78,7 +78,7 @@ Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizz
 
     [!NOTE] Per contribuire a ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, si è limitato a un massimo di 20 righe nell'elenco delle parole chiave.
     
-- **Condizioni** : è possibile aggiungere condizioni di ricerca per restringere una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca che viene creata e eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico ( **c:c**) simile alla funzionalità all'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che una o più condizioni da includere nei risultati. Questo è il modo in cui le condizioni aiutano a limitare i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#search-conditions).
+- **Condizioni** : è possibile aggiungere condizioni di ricerca per restringere una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca che viene creata e eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico ( **c:c**) simile alla funzionalità all'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che una o più condizioni da includere nei risultati. Ecco come le condizioni consentono di circoscrivere i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Posizioni** : scegliere i percorsi di contenuto in cui eseguire la ricerca.
     
@@ -137,7 +137,7 @@ Per visualizzare le statistiche di ricerca:
     
 4. Nell'elenco a discesa **tipo** fare clic su una delle opzioni seguenti, a seconda delle statistiche di ricerca che si desidera visualizzare. 
     
-  - **Riepilogo** : consente di visualizzare le statistiche per ogni tipo di percorsi di contenuto ricercati. Questo contenuto include il numero di posizioni di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni degli elementi dei risultati di ricerca. Questa è l'impostazione predefinita.
+  - **Riepilogo** : consente di visualizzare le statistiche per ogni tipo di percorsi di contenuto ricercati. Questo contenuto include il numero di posizioni di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni degli elementi dei risultati di ricerca. Questa impostazione è quella predefinita.
     
   - **Query** : consente di visualizzare le statistiche relative alla query di ricerca. Questo include il tipo di percorso di contenuto a cui sono applicabili le statistiche di query, parte della query di ricerca a cui si applicano le statistiche (si noti che **Primary** indica l'intera query di ricerca), il numero di posizioni di contenuto che contengono elementi che corrispondere alla query di ricerca e al numero totale e alle dimensioni e agli elementi trovati (nel percorso del contenuto specificato) che corrispondono alla query di ricerca. Si noti che vengono visualizzate anche le statistiche per gli elementi non indicizzati (denominati anche elementi parzialmente indicizzati). Tuttavia, solo gli elementi parzialmente indicizzati dalle cassette postali sono inclusi nelle statistiche. Gli elementi parzialmente indicizzati provenienti da SharePoint e OneDrive non sono inclusi nelle statistiche.
     
@@ -148,15 +148,15 @@ Per informazioni più dettagliate sulle statistiche di ricerca, vedere [visualiz
   
 ## <a name="export-search-results"></a>Esportare i risultati della ricerca
 
-Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati della posta elettronica, è possibile scaricarli nel computer come file PST o come singoli messaggi (file. msg). Quando si esporta contenuto da siti di SharePoint e OneDrive, vengono esportate copie dei documenti di Office nativi. Sono inoltre disponibili documenti e report aggiuntivi inclusi nei risultati della ricerca esportati. È anche possibile esportare solo il report dei risultati di ricerca e non gli elementi effettivi.
+Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati della posta elettronica, è possibile scaricarli nel computer come file PST o come singoli messaggi (file. msg). Quando si esporta contenuto da siti di SharePoint e OneDrive, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti anche altri documenti e report. È anche possibile esportare solo il report dei risultati di ricerca e non gli elementi effettivi.
   
 Per esportare i risultati della ricerca:
   
-1. Nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità fare clic su **Apri** e quindi fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca. 
+1. Nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca. 
     
 2. Nella pagina Fly ![out fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca, quindi fare clic su **Esporta risultati**. Si noti che è anche possibile esportare un rapporto sui risultati di ricerca.
     
-3. Completare le sezioni nella pagina a comparsa **Esporta risultati**. Assicurarsi di usare la barra di scorrimento per visualizzare tutte le opzioni di esportazione. 
+3. Completare le sezioni della pagina dei **risultati di esportazione** . Assicurarsi di utilizzare la barra di scorrimento per visualizzare tutte le opzioni di esportazione. 
     
 Per istruzioni più dettagliate e suggerimenti per la risoluzione dei problemi, vedere:
   
@@ -219,7 +219,7 @@ Quando si utilizza l'elenco di parole chiave per creare una query di ricerca, è
   
 - È inoltre possibile predisporre un elenco di parole chiave o frasi di keyword in un file di Excel o in un file di testo normale, quindi copiare e incollare l'elenco nell'elenco parole chiave. A tale scopo, è necessario selezionare la casella di controllo **Mostra elenco parole chiave** . Fare quindi clic sulla prima riga dell'elenco delle parole chiave e incollare l'elenco. Ogni riga del file di testo o di Excel verrà incollata in una riga separata nell'elenco delle parole chiave. 
     
-- Dopo aver creato una query utilizzando l'elenco di parole chiave, è consigliabile verificare la sintassi delle query di ricerca per rendere la query di ricerca come previsto. Nella query di ricerca visualizzata in **query** nel riquadro dei dettagli, le parole chiave sono separate dal testo **(c:s)**. questo indica che le parole chiave sono connesse da un operatore logico simile alla funzionalità all'operatore **or** . Analogamente, se la query di ricerca include condizioni, le parole chiave e le condizioni sono separate dal testo **(c:c)**. questo indica che le parole chiave sono connesse alle condizioni con un operatore logico simile alla funzionalità di **e** operatore. Di seguito è riportato un esempio della query di ricerca, visualizzata nel riquadro dei dettagli, che risulta quando si utilizza l'elenco delle parole chiave e una condizione. 
+- Dopo aver creato una query utilizzando l'elenco di parole chiave, è consigliabile verificare la sintassi delle query di ricerca per rendere la query di ricerca come previsto. Nella query di ricerca visualizzata in **query** nel riquadro dei dettagli, le parole chiave sono separate dal testo **(c:s)**. Ciò indica che le parole chiave sono connesse da un operatore logico simile alla funzionalità all'operatore **or** . Analogamente, se la query di ricerca include condizioni, le parole chiave e le condizioni sono separate dal testo **(c:c)**. Ciò indica che le parole chiave sono connesse alle condizioni con un operatore logico simile in funzionalità all'operatore **and** . Di seguito è riportato un esempio della query di ricerca, visualizzata nel riquadro dei dettagli, che risulta quando si utilizza l'elenco delle parole chiave e una condizione. 
     
     ![Esempio di query creata quando si utilizza l'elenco delle parole chiave e una condizione](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -342,7 +342,7 @@ Di seguito sono riportate alcune considerazioni da tenere presenti durante la ri
     
 Inoltre, sono supportati i seguenti tipi di contenitori di file. È possibile visualizzare l'elenco dei file nel contenitore nel riquadro di anteprima.
   
-- .zip
+- . zip
     
 - . gzip
     

@@ -15,12 +15,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d1e3ee90f3df20359634ae55286270b49d766324
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220466"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670431"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection 
 
@@ -32,9 +32,9 @@ Per informazioni sulla versione di Exchange Online in questo argomento, vedere [
   
 ## <a name="accessing-the-eac"></a>Accesso a EAC
 
-Nella maggior parte dei casi, i clienti EOP accederanno a EAC tramite l'interfaccia di amministrazione di Office 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro **Amministratore** e selezionare **Exchange Online Protection** dal menu a discesa per l'esecuzione in EAC. 
+Nella maggior parte dei casi, i clienti di EOP accederanno a EAC tramite l'interfaccia di amministrazione di Microsoft 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro **Amministratore** e selezionare **Exchange Online Protection** dal menu a discesa per l'esecuzione in EAC. 
   
-È inoltre possibile accedere alla pagina di accesso di EAC direttamente tramite l'URL seguente https://admin.protection.outlook.com/ecp/\<companydomain\>:. Ad esempio, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Dopo aver specificato le credenziali utente, verranno eseguite direttamente nell'interfaccia di amministrazione di Exchange.
+You can also access the EAC sign in page directly via the following URL: https://admin.protection.outlook.com/ecp/\<companydomain\>. For example, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. After specifying your user credentials you will be taken directly into the EAC.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementi comuni dell'interfaccia utente in EAC
 

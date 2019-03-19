@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In questo argomento viene illustrato come configurare Microsoft Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715902"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670611"
 ---
 # <a name="set-up-your-eop-service"></a>Installazione del servizio EOP
 
@@ -38,13 +38,13 @@ In questo argomento viene illustrato come configurare Microsoft Exchange Online 
 > [!TIP]
 > Problemi? È possibile richiedere supporto nei forum di Exchange. I forum sono disponibili sui seguenti siti: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="how-do-you-do-this"></a>Come eseguire l'operazione
+## <a name="how-do-you-do-this"></a>Come eseguire l'operazione?
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: Aggiunta e verifica del dominio tramite l'interfaccia di amministrazione di Office 365
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: utilizzare l'interfaccia di amministrazione di Microsoft 365 per aggiungere e verificare il dominio
 
-1. Nell'interfaccia di amministrazione di Office 365, andare a **Installazione** per aggiungere il dominio al servizio. 
+1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **installazione** per aggiungere il dominio al servizio. 
     
-    Dubbi su dove trovare l'interfaccia di amministrazione di Office 365? Ulteriori informazioni in [Informazioni sull'interfaccia di amministrazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=521888).
+    Non si è sicuri di dove trovare l'interfaccia di amministrazione di Microsoft 365? Per ulteriori informazioni, vedere [about the Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=521888).
     
 2. Seguire la procedura di aggiunta dei record DNS applicabili al provider che ospita i DNS per verificare la proprietà del dominio.
     
@@ -72,11 +72,11 @@ Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazi
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Passaggio 5: Utilizzare Shell per garantire che la posta indesiderata sia instradata nella cartella posta indesiderata di ogni utente
 
-Per garantire che la posta elettronica da posta indesiderata (indesiderata) sia instradata correttamente alla cartella posta indesiderata di ogni utente, è necessario eseguire due passaggi di configurazione. Vengono forniti i passaggi di [verificare che la posta indesiderata sia instradata nella cartella posta indesiderata di ogni utente](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. I passaggi vengono forniti in [modo che la posta indesiderata venga instradata alla cartella posta indesiderata di ogni utente](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
-Se non si desidera spostare messaggi nella cartella posta indesiderata di ogni utente, è possibile scegliere un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [configurazione dei criteri di filtro posta indesiderata](../configure-your-spam-filter-policies.md).
+Se non si intende spostare i messaggi nella cartella posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](../configure-your-spam-filter-policies.md).
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: Utilizzo dell'interfaccia di amministrazione di Office 365 per puntare il record MX a EOP
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: utilizzare l'interfaccia di amministrazione di Microsoft 365 per puntare il record MX a EOP
 
 Seguire i passaggi di configurazione del dominio di Office 365 per aggiornare il record MX relativo al proprio dominio. In questo modo, la posta elettronica in ingresso attraversa EOP. Assicurarsi di puntare il record MX direttamente verso EOP, invece di consentire a un servizio di filtro di terze parti di inoltrare la posta elettronica in EOP. Per ulteriori informazioni, fare di nuovo riferimento a [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   

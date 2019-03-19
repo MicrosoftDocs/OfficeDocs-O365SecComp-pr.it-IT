@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Di seguito vengono riportate le risposte alle domande più frequenti sul servizio di filtro della posta elettronica ospitato su cloud di Microsoft Exchange Online Protection (EOP). Per ulteriori argomenti sulle domande frequenti (FAQ), accedere ai collegamenti seguenti:'
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027383"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670451"
 ---
 # <a name="eop-general-faq"></a>Domande frequenti su EOP
 
@@ -24,15 +24,15 @@ Di seguito vengono riportate le risposte alle domande più frequenti sul servizi
   
 - [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md)
     
-- [Domande frequenti sull'amministrazione delegata](delegated-administration-faq.md)
+- [Domande frequenti sull'amministrazione con delega](delegated-administration-faq.md)
     
-- [Domande frequenti sulla protezione anti-spam](../anti-spam-protection-faq.md)
+- [DOMANDE frequenti sulla protezione da posta indesiderata](../anti-spam-protection-faq.md)
     
 - [Elenchi di mittenti attendibili e bloccati in Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [Domande frequenti sulla quarantena](../quarantine-faq.md)
     
-- [Domande frequenti sulla protezione anti-malware](../anti-malware-protection-faq-eop.md)
+- [DOMANDE frequenti sulla protezione anti-malware](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -64,7 +64,7 @@ R. Office 365 è il nome dato a una raccolta di prodotti e servizi a cui è poss
   
  **D. EOP dispone di un portale di comunicazione, nel quale è possibile trovare informazioni su problemi noti e possibili risoluzioni? Le informazioni sulle nuove funzionalità?**
   
-R. Nell'interfaccia di amministrazione di Office 365 sono disponibili alcune di queste informazioni. Nel caso di un evento di servizio, viene visualizzato un avviso (generalmente unito all'icona di una campanella) in seguito all'accesso nell'interfaccia di amministrazione di Office 365. Si consiglia di leggere e intervenire su tutti gli elementi, come necessario.
+R. L'interfaccia di amministrazione di Microsoft 365 avrà alcune di queste informazioni. Se si ha un impatto su un evento di servizio, dovrebbe essere visualizzato un avviso di comunicazione (in genere accompagnato da un'icona del campanello) dopo aver eseguito l'accesso all'interfaccia di amministrazione di Microsoft 365. Si consiglia di leggere e intervenire su tutti gli elementi, come necessario.
   
 In relazione alle funzionalità EOP, la [guida a Office 365 for business](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) è un ottima risorsa per trovare informazioni sulle nuove imminenti funzionalità. Saranno inoltre pubblicati articoli di blog sulle nuova funzionalità sul sito Web [Office Blogs](https://go.microsoft.com/fwlink/p/?LinkId=392724). 
   

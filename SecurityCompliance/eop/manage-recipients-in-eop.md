@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. Come amministratore, è possibile effettuare alcune attività di gestione all'interno dell'interfaccia di amministrazione di Exchange (EAC) o utilizzando Windows PowerShell remoto, quindi verificare altre attività di gestione eseguite nell'interfaccia di amministrazione di Microsoft Office 365.
-ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. In qualità di amministratore, è possibile eseguire alcune attività di gestione all'interno dell'interfaccia di amministrazione di Exchange (EAC) o tramite Windows PowerShell remoto e verificare altre attività di gestione eseguite nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341657"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670401"
 ---
 # <a name="manage-recipients-in-eop"></a>Gestione di destinatari in EOP
 
-Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. Come amministratore, è possibile effettuare alcune attività di gestione all'interno dell'interfaccia di amministrazione di Exchange (EAC) o utilizzando Windows PowerShell remoto, quindi verificare altre attività di gestione eseguite nell'interfaccia di amministrazione di Microsoft Office 365.
+Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. In qualità di amministratore, è possibile eseguire alcune attività di gestione all'interno dell'interfaccia di amministrazione di Exchange (EAC) o tramite Windows PowerShell remoto e verificare altre attività di gestione eseguite nell'interfaccia di amministrazione di Microsoft 365.
   
 EOP supporta i seguenti tipi di destinatari:
   

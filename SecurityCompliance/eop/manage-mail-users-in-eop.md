@@ -11,25 +11,25 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP).
-ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9ab4420dd9fcf6c056bc661b5f3646672a89a683
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341027"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670641"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestione utenti di posta in EOP
 
 La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP). In EOP è possibile gestire gli utenti in diversi modi.
   
-- Utilizzare la sincronizzazione della directory per gestire gli utenti di posta elettronica: se l'azienda dispone di account utente esistenti in un ambiente Active Directory locale, è possibile sincronizzare tali account in Azure Active Directory (AD), in cui viene archiviata una copia degli account nel cloud. Quando si sincronizzano gli account utente esistenti in Azure Active Directory, è possibile visualizzarli nel riquadro **destinatari** dell'interfaccia di amministrazione di Exchange (EAC). È consigliabile utilizzare la sincronizzazione della directory. 
+- Utilizzare la sincronizzazione della directory per gestire gli utenti di posta: se in azienda sono presenti account utente in un ambiente di Active Directory locale, è possibile sincronizzarli con Azure Active Directory (AD), dove una copia di tali account è memorizzata nel cloud. Durante la sincronizzazione degli account utente esistenti su Azure Active Directory, è possibile visualizzare tali utenti nel riquadro **Destinatari** nell'interfaccia di amministrazione di Exchange (EAC). Si consiglia di utilizzare la sincronizzazione delle directory. 
     
 - Utilizzare il valore EAC per gestire gli utenti di posta: aggiungere e gestire gli utenti di posta direttamente in EAC. Si tratta del modo più semplice per aggiungere utenti di posta elettronica ed è utile per aggiungere un utente alla volta.
     
 - Utilizzare Windows PowerShell remoto per gestire gli utenti di posta elettronica: aggiungere e gestire utenti di posta elettronica eseguendo Windows PowerShell remoto. Questo metodo è utile per aggiungere più record e creare script.
     
 > [!NOTE]
-> È possibile aggiungere utenti nell'interfaccia di amministrazione di Office 365, ma questi utenti non possono essere usati come destinatari di posta elettronica. 
+> È possibile aggiungere utenti nell'interfaccia di amministrazione di Microsoft 365, ma questi utenti non possono essere utilizzati come destinatari della posta. 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
@@ -45,10 +45,10 @@ La definizione degli utenti di posta è una parte importante della gestione del 
 Nella presente sezione vengono fornite informazioni sulla gestione degli utenti di posta elettronica utilizzando la sincronizzazione della directory.
   
 > [!IMPORTANT]
-> Se si utilizza la sincronizzazione della directory per gestire i destinatari, è comunque possibile aggiungere e gestire gli utenti nell'interfaccia di amministrazione di Office 365. Tuttavia questi non verranno sincronizzati con Active Directory in locale poiché la sincronizzazione della directory sincronizza solamente i destinatari dall'Active Directory locale al cloud. 
+> Se si utilizza la sincronizzazione della directory per gestire i destinatari, è comunque possibile aggiungere e gestire gli utenti nell'interfaccia di amministrazione di Microsoft 365, ma non verranno sincronizzati con Active Directory locale. Tuttavia questi non verranno sincronizzati con Active Directory in locale poiché la sincronizzazione della directory sincronizza solamente i destinatari dall'Active Directory locale al cloud. 
   
 > [!TIP]
->  L'utilizzo della sincronizzazione della directory è consigliato per l'utilizzo con le seguenti funzionalità: > **Outlook safe sender e gli elenchi di mittenti bloccati** -quando vengono sincronizzati con il servizio, questi elenchi avranno la precedenza sul filtro di posta indesiderata nel servizio. Questo consente agli utenti di gestire i propri mittenti attendibili e gli elenchi di mittenti bloccati in base ai singoli utenti o ai singoli domini. > **(DBEB)** -per ulteriori informazioni su DBEB, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). quarantena della **posta indesiderata dell'utente** finale di >-per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password validi di Office 365. I clienti di EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi. **regole del flusso di posta** di >: quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare regole del flusso di posta (note anche come regole di trasporto) che si rivolgono a utenti specifici e/ o gruppi senza dover aggiungerli manualmente tramite l'EAC o Exchange Online Protection PowerShell. Si noti che i [gruppi di distribuzione dinamici](https://go.microsoft.com/fwlink/?LinkId=507569) non possono essere sincronizzati tramite la sincronizzazione della directory. 
+>  Si consiglia di utilizzare la sincronizzazione della directory con le seguenti funzionalità: > **Elenchi di mittenti attendibili e bloccati di Outlook**: se sincronizzati con il servizio, questi elenchi avranno la precedenza sul filtro di protezione da posta indesiderata del servizio. Ciò consente agli utenti di gestire i propri elenchi di utenti attendibili o bloccati a livello di organizzazione o a livello di singolo utente. > **Directory Based Edge Blocking (DBEB)**: per ulteriori informazioni su DBEB, vedere [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Quarantena posta indesiderata utente finale**: per accedere alla quarantena posta indesiderata utente finale, gli utenti finali devono possedere un ID e una password per utenti di Office 365 validi. I clienti EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi. > **Regole del flusso di posta** : quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare regole del flusso di posta (note anche come regole di trasporto) che si rivolgono a utenti specifici e/o gruppi senza dover aggiungerli manualmente tramite l'EAC o Exchange Online Protection PowerShell. Si noti che non è possibile sincronizzare i [gruppi di distribuzione dinamici](https://go.microsoft.com/fwlink/?LinkId=507569) tramite la sincronizzazione delle directory. 
   
  **Informazioni preliminari**
   
@@ -101,7 +101,7 @@ Per eseguire queste procedure, è necessario disporre delle autorizzazioni appro
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>Per modificare o rimuovere un utente di posta in EAC
 
-- Nell'interfaccia di amministrazione di Exchange, accedere a **contatti** **destinatari** \> . Nell'elenco degli utenti, fare clic sull'utente che si desidera visualizzare o modificare, quindi selezionare **modifica** ![icona](../media/ITPro-EAC-EditIcon.gif) modifica per aggiornare le impostazioni utente in base alle esigenze. È possibile modificare il nome, l'alias o le informazioni di contatto dell'utente ed è possibile registrare informazioni dettagliate sul ruolo dell'utente nell'organizzazione. È inoltre possibile selezionare un utente e quindi scegliere **Rimuovi**![icona](../media/ITPro-EAC-RemoveIcon.gif) Rimuovi per eliminarlo. 
+- Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**. Nell'elenco degli utenti, fare clic sull'utente che si desidera visualizzare o modificare, quindi selezionare **modifica** ![icona](../media/ITPro-EAC-EditIcon.gif) modifica per aggiornare le impostazioni utente in base alle esigenze. È possibile modificare il nome utente, l'alias o le informazioni di contatto e registrare le informazioni dettagliate sul ruolo dell'utente nell'organizzazione. È inoltre possibile selezionare un utente e scegliere **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif) per eliminarlo. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Utilizzare Windows PowerShell remoto per gestire gli utenti di posta elettronica
 
@@ -133,7 +133,7 @@ In questo esempio viene utilizzato il cmdlet [New-EOPMailUser](http://technet.mi
     
 - La password è Pa$$word1.
     
-```
+```Powershell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
@@ -141,7 +141,7 @@ New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -N
   
 Eseguire il cmdlet [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) come segue per visualizzare le informazioni sul nuovo utente di posta elettronica Jeffrey Zeng: 
   
-```
+```Powershell
 Get-User "Jeffrey Zeng"
 
 ```
@@ -152,13 +152,13 @@ Utilizzare i cmdlet di [Get-Recipient](http://technet.microsoft.com/library/2ce6
   
 In questo esempio viene impostato l'indirizzo di posta elettronica esterno per Pilar Pinilla.
   
-```
+```Powershell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 In questo esempio viene impostata la proprietà Company per tutti gli utenti di posta di Contoso.
   
-```
+```Powershell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
@@ -168,14 +168,14 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
   
 Nell'esempio precedente in cui sono stata cambiate le proprietà per l'utente di posta elettronica Pilar Pinella, utilizzare il cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) per verificare le modifiche (tenere presente che è possibile visualizzare più proprietà per più contatti di posta elettronica). 
   
-```
+```Powershell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List 
 
 ```
 
 Nell'esempio precedente in cui la proprietà Company è stata impostata su Contoso per tutti gli utenti di posta, utilizzare il comando seguente per verificare le modifiche:
   
-```
+```Powershell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
@@ -186,7 +186,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
   
 In questo esempio viene utilizzato il cmdlet [Remove-EOPMailUser](http://technet.microsoft.com/library/cb91dc26-ed22-4d3c-9f64-df9df1754edb.aspx) per eliminare l'utente Jeffrey Zeng: 
   
-```
+```Powershell
 Remove-EOPMailUser -Identity Jeffrey
 ```
 
@@ -194,7 +194,7 @@ Remove-EOPMailUser -Identity Jeffrey
   
 Eseguire il cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) nel modo seguente. Dovrebbe essere visualizzato un messaggio di errore dal momento che l'utente non esiste più. 
   
-```
+```Powershell
 Get-Recipient Jeffrey | fl
 ```
 

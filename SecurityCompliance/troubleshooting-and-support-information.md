@@ -15,12 +15,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
-ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275996"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670481"
 ---
 # <a name="troubleshooting-and-support-information"></a>Informazioni sul supporto tecnico e sulla risoluzione dei problemi
 
@@ -53,7 +53,7 @@ Un amministratore può incontrare problemi quando gli utenti utilizzano il compo
   
  **Problema:** Viene visualizzato continuamente un messaggio di errore che chiede agli utenti di contattare l'amministratore di sistema. 
   
-### <a name="troubleshooting-tip"></a>Suggerimento per la risoluzione dei problemi
+### <a name="troubleshooting-tip"></a>Suggerimenti per la risoluzione dei problemi
 
 1. Impostare il valore seguente del Registro di sistema su "Verbose":
     
@@ -79,7 +79,7 @@ Un amministratore può incontrare problemi quando gli utenti utilizzano il compo
     
  **Problema:** Gli utenti hanno scelto di non ricevere una conferma quando segnalano un messaggio di posta elettronica come indesiderato e ora richiedono di reimpostare l'opzione. 
   
-### <a name="troubleshooting-tip"></a>Suggerimento per la risoluzione dei problemi
+### <a name="troubleshooting-tip"></a>Suggerimenti per la risoluzione dei problemi
 
 1. Impostare il valore seguente del Registro di sistema su "True": HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk
     
@@ -87,11 +87,11 @@ Un amministratore può incontrare problemi quando gli utenti utilizzano il compo
     
 ## <a name="support-information"></a>Informazioni sul supporto tecnico
 
-Se si ha bisogno di assistenza per l'installazione, la configurazione o la disinstallazione del componente aggiuntivo, contattare il supporto tecnico utilizzando il nuovo collegamento richiesta di servizio nella pagina supporto nell'interfaccia di amministrazione di Office 365. Per ulteriori opzioni, tra cui l'invio di una richiesta di servizio tramite le opzioni telefono e supporto self-service, vedere [Help and Support for EOP](eop/help-and-support-for-eop.md).
+Se si ha bisogno di assistenza per l'installazione, la configurazione o la disinstallazione del componente aggiuntivo, contattare il supporto tecnico utilizzando il nuovo collegamento richiesta di servizio nella pagina supporto nell'interfaccia di amministrazione di Microsoft 365. Per ulteriori opzioni, tra cui l'invio di una richiesta di servizio tramite le opzioni telefono e supporto self-service, vedere [Help and Support for EOP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Attivare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Abilitare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Segnalazione di messaggi indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Informazioni su come automatizzare le attività di ricerca contenuto come la creazione di ricerche e l'esecuzione di report tramite gli &amp; script di PowerShell nel centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213236"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670661"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Creare, ottenere rapporti ed eliminare più Ricerche di contenuto
 
@@ -59,8 +59,8 @@ Il file con valori delimitati da virgole (CSV) creato in questo passaggio contie
     |**Parametro**|**Descrizione**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |L'indirizzo SMTP della cassetta postale dell'utente.  <br/> |
-    | `SharePointLocation` <br/> |L'URL del sito di OneDrive for business dell'utente o l'URL di qualsiasi sito nell'organizzazione. Per l'URL per i siti di OneDrive for business, utilizzare questo ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `formato:. Ad esempio, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
-    | `ContentMatchQuery` <br/> |Query di ricerca per la ricerca. Per ulteriori informazioni sulla creazione di una query di ricerca, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).<br/> |
+    | `SharePointLocation` <br/> |L'URL del sito di OneDrive for business dell'utente o l'URL di qualsiasi sito nell'organizzazione. Per l'URL per i siti di OneDrive for business, utilizzare questo ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `formato:. Ad esempio,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `ContentMatchQuery` <br/> |Query di ricerca per la ricerca. Per ulteriori informazioni sulla creazione di una query di ricerca, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Per la posta elettronica, la data o dopo che un messaggio è stato ricevuto da un destinatario o inviato dal mittente. Per i documenti sui siti di SharePoint o OneDrive for business, la data in cui è stato modificato l'ultima volta un documento.  <br/> |
     | `EndDate` <br/> |Per la posta elettronica, la data su o prima che un messaggio è stato inviato da un utente. Per i documenti nei siti di SharePoint o OneDrive for business, la data di inizio o di fine di un documento è stata modificata.  <br/> |
    
@@ -98,7 +98,7 @@ Per eseguire lo script:
 
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `CreateSearches.ps1`. Salvare il file nella stessa cartella in cui sono stati salvati gli altri file.
     
-  ```
+  ```Powershell
   # Get the Search Group ID and the location of the CSV input file
   $searchGroup = Read-Host 'Search Group ID'
   $csvFile = Read-Host 'Source CSV file'
@@ -175,7 +175,7 @@ Per eseguire lo script:
 
 2. In Windows PowerShell, passare alla cartella in cui è stato salvato lo script nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```Powershell
     .\CreateSearches.ps1
     ```
 
@@ -195,7 +195,7 @@ Dopo aver creato le ricerche, il passaggio successivo consiste nell'eseguire uno
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `SearchReport.ps1`. Salvare il file nella stessa cartella in cui sono stati salvati gli altri file.
     
-  ```
+  ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
   $outputFile = Read-Host 'Enter a file name or file path to save the report to a .csv file. Leave blank to only display the report'
   $searches = Get-ComplianceSearch | ?{$_.Name -clike $searchGroup + "_*"}
@@ -250,7 +250,7 @@ Dopo aver creato le ricerche, il passaggio successivo consiste nell'eseguire uno
 
 2. In Windows PowerShell, passare alla cartella in cui è stato salvato lo script nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```Powershell
     .\SearchReport.ps1
     ```
 
@@ -258,7 +258,7 @@ Dopo aver creato le ricerche, il passaggio successivo consiste nell'eseguire uno
     
 4. Nel **percorso del file per salvare il report in un file CSV (lasciare vuoto solo per visualizzare il report)** , digitare il nome di un file del percorso completo (inclusa l'estensione CSV) se si desidera salvare il report in un file CSV. nome del file CSV, inclusa l'estensione del file CSV. Ad esempio, è possibile digitare `ContosoCaseReport.csv` per salvarlo nella directory corrente oppure è possibile digitare `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` per salvarlo in un'altra cartella. È inoltre possibile lasciare il messaggio vuoto per visualizzare il report, ma non salvarlo in un file. 
     
-5. Premere **invio**.
+5. Premere **INVIO**.
     
     Nello script viene visualizzato lo stato di avanzamento della creazione e dell'esecuzione delle ricerche. Al termine dello script, viene visualizzato il report. 
     
@@ -273,7 +273,7 @@ Poiché potrebbe essere la creazione di un sacco di ricerche, questo ultimo scri
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `DeleteSearches.ps1`. Salvare il file nella stessa cartella in cui sono stati salvati gli altri file.
     
-  ```
+  ```Powershell
   # Delete all searches in a search group
   $searchGroup = Read-Host 'Search Group ID'
   Get-ComplianceSearch |
@@ -289,7 +289,7 @@ Poiché potrebbe essere la creazione di un sacco di ricerche, questo ultimo scri
 
 2. In Windows PowerShell, passare alla cartella in cui è stato salvato lo script nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```Powershell
     .\DeleteSearches.ps1
     ```
 
