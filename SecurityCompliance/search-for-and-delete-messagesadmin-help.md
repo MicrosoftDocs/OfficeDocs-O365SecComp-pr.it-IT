@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Gli amministratori possono utilizzare il cmdlet Search-Mailbox per cercare cassette postali utente ed eliminare messaggi da una cassetta postale.
-ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297129"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693485"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Ricerca ed eliminazione di messaggi - Guida di Amministrazione
   
@@ -37,19 +36,19 @@ Come ulteriore salvaguardia, è possibile prima copiare i messaggi su un'altra c
     
 - Per cercare ed eliminare messaggi nelle cassette postali degli utenti, è necessario ricoprire entrambi i seguenti ruoli di gestione:
     
-  - **Ricerca cassette postali**-questo ruolo consente di cercare i messaggi su più cassette postali dell'organizzazione. Per impostazione predefinita, gli amministratori non sono assegnati a questo ruolo. Per assegnare manualmente questo ruolo affinché sia possibile effettuare ricerche nelle cassette postali, aggiungersi come membro del gruppo di ruoli Gestione individuazione. Vedere [aggiungere un utente al gruppo di ruoli Gestione individuazione](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Ricerca cassette postali**-questo ruolo consente di cercare i messaggi su più cassette postali dell'organizzazione. Agli amministratori non viene assegnato questo ruolo per impostazione predefinita. Per assegnare a se stessi questo ruolo per poter effettuare ricerche nelle cassette postali, aggiungersi come membro del gruppo di ruoli Gestione individuazione. Vedere [Add a User to the Discovery Management Role Group](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Esportazione delle cassette postali** -questo ruolo consente di eliminare i messaggi dalla cassetta postale di un utente. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli. Per eliminare i messaggi dalle cassette postali degli utenti, è possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere la sezione "aggiungere un ruolo a un gruppo di ruoli" in [Manage Role](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) groups. 
+  - **Esportazione delle cassette postali** -questo ruolo consente di eliminare i messaggi dalla cassetta postale di un utente. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli. Per eliminare i messaggi dalle cassette postali degli utenti, è possibile aggiungere il ruolo Esportazione/importazione delle cassette postali al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere la sezione "aggiungere un ruolo a un gruppo di ruoli" in [Manage Role](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) groups. 
     
 - Se la cassetta postale dalla quale si desidera eliminare i messaggi ha la funzione di individuazione di singoli elementi, è necessario prima disabilitare la funzione. Per ulteriori informazioni, vedere [Abilitare o disabilitare il ripristino di un singolo elemento per una cassetta postale](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Se la cassetta postale da cui si desidera eliminare i messaggi è disattivata, è consigliabile verificare la gestione dei record o il reparto legale prima di rimuovere il blocco ed eliminare il contenuto della cassetta postale. Dopo aver ottenuto l'approvazione, seguire i passaggi elencati nell'argomento [pulizia della cartella elementi ripristinabili](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- Se la cassetta postale dalla quale si desidera eliminare i messaggi è stata bloccata, si consiglia di verificare con i responsabili della gestione dei record o con il dipartimento legale prima di rimuovere l'opzione di conservazione ed eliminare il contenuto delle cassette postali. Dopo aver ottenuto l'approvazione, seguire i passaggi elencati nell'argomento [pulizia della cartella elementi ripristinabili](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
     
 - Una singola ricerca può essere eseguita su un massimo di 10.000 cassette postali con il cmdlet **Search-Mailbox**. Se si è un'organizzazione Exchange Online con più di 10.000 cassette postali, è possibile utilizzare la funzionalità Ricerca di conformità (o il corrispondente cmdlet **New-ComplianceSearch** ) per cercare un numero illimitato di cassette postali. È possibile utilizzare il cmdlet **New-ComplianceSearchAction** per eliminare i messaggi restituiti da una ricerca di conformità. Per ulteriori informazioni, vedere [Cercare ed eliminare messaggi dall'organizzazione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
 - Se si include una query di ricerca (usando il parametro  *SearchQuery*  ), il cmdlet **Search-Mailbox** restituirà un massimo di 10.000 elementi nei risultati della ricerca. Pertanto se si include una query di ricerca, potrebbe essere necessario eseguire il comando **Search-Mailbox** più volte per eliminare più di 10.000 elementi. 
     
-- La cassetta postale di archiviazione dell'utente verrà cercata anche quando si esegue il cmdlet **Search-Mailbox** . Analogamente, gli elementi nella cassetta postale di archiviazione principale verranno eliminati quando si utilizza il cmdlet **Search-Mailbox** con l'opzione _deletecontent_ . Per evitare questo, è possibile includere l'opzione *DoNotIncludeArchive* . Inoltre, si consiglia di non utilizzare l'opzione _deletecontent_ per eliminare i messaggi nelle cassette postAli di Exchange Online che dispongono di archiviazione in espansione automatica attivata perché potrebbe verificarsi una perdita di dati imprevista. 
+- La cassetta postale di archiviazione dell'utente verrà cercata anche eseguendo il cmdlet **Search-Mailbox**. Allo stesso modo, gli elementi nella cassetta postale di archiviazione principale verranno eliminati quando si utilizza il cmdlet **Search-Mailbox** con l'opzione  _DeleteContent_. Per prevenire questa situazione, è possibile includere l'opzione  *DoNotIncludeArchive*  . Inoltre, si consiglia di non utilizzare l'opzione _deletecontent_ per eliminare i messaggi nelle cassette postAli di Exchange Online che dispongono di archiviazione in espansione automatica attivata perché potrebbe verificarsi una perdita di dati imprevista. 
     
 ## <a name="search-messages-and-log-the-search-results"></a>Ricerca di messaggi e registrazione dei risultati della ricerca
 

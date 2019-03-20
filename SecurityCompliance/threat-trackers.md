@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524050"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693075"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>InSeguimenti di minacce-nuovi e degni di nota
 
 Le funzionalità di [ricerca e risposta](office-365-ti.md) alle minacce di Office 365 consentono al team di sicurezza dell'organizzazione di individuare ed eseguire azioni contro le minacce di Cybersecurity. Le funzionalità di ricerca e risposta alle minacce di Office 365 includono le funzionalità di monitoraggio delle minacce, compresi i Tracker degni di nota. Leggere questo articolo per ottenere una panoramica delle nuove funzionalità e dei passaggi successivi. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence è ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence è ora Office 365 Advanced Threat Protection piano 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Cosa sono gli inPistatori di minacce?
 

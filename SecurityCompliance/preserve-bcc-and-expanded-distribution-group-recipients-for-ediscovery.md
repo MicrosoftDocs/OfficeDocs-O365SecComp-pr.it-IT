@@ -7,26 +7,25 @@ ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: I criteri di conservazione archiviazione sul posto, conservazione per controversia legale e Office 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di eDiscovery e la conformità alle normative.
-ms.openlocfilehash: 1149834181bca527bd06cea846f455e36fad283c
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Archiviazione sul posto, blocco per controversia legale e criteri di conservazione di Office 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery.
+ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038159"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693235"
 ---
-# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Mantenere Ccn e i destinatari del gruppo di destinazione espanso per eDiscovery
+# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservazione dei destinatari Ccn e del gruppo di destinazione esteso per eDiscovery
   
-Archiviazione sul posto, conservazione per controversia legale e [criteri di conservazione di Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (creato in Office 365 Security &amp; centro conformità) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti normativi conformità ed eDiscovery. Informazioni sui destinatari direttamente previsti in a e Cc i campi di un messaggio è incluso in tutti i messaggi per impostazione predefinita, ma l'organizzazione può richiedere la possibilità di cercare e riprodurre informazioni dettagliate su tutti i destinatari del messaggio. Includono: 
+In-Place Hold, Litigation Hold, and [Office 365 retention policies](http://go.microsoft.com/fwlink/?LinkID=827811) (created in the Office 365 Security &amp; Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
   
 - **Destinatari inseriti utilizzando il campo Ccn di un messaggio** I destinatari Ccn vengono archiviati nel messaggio nella cassetta postale del mittente, ma non vengono inclusi nelle intestazioni del messaggio recapitato ai destinatari. 
     
 - **Destinatari del gruppo di distribuzione espanso** I destinatari che ricevono il messaggio perché sono membri di un gruppo di distribuzione al quale è indirizzato il messaggio, inseriti nei campi A, Cc o Ccn. 
     
-Exchange Online ed Exchange Server 2013 (aggiornamento cumulativo 7 e versioni successive) mantenute informazioni sui destinatari di gruppo di distribuzione espanse e Ccn. È possibile cercare queste informazioni tramite una ricerca eDiscovery In locale nell'interfaccia di amministrazione di Exchange (EAC) o una ricerca di contenuto per la protezione &amp; centro conformità. 
+Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an In-Place eDiscovery search in the Exchange admin center (EAC) or a Content Search in the Security &amp; Compliance Center. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Come mantenere i destinatari Ccn e del gruppo di distribuzione espanso
 <a name="sectionSection0"> </a>

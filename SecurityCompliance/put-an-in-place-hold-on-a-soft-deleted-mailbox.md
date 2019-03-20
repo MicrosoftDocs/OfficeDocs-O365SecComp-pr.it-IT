@@ -6,29 +6,28 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Informazioni su come creare un blocco sul posto per una cassetta postale eliminata temporaneamente per renderla inattiva e conservarne il contenuto. È quindi possibile utilizzare gli strumenti di Microsoft eDiscovery per cercare la cassetta postale inattiva.
-ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 5113bd0dffe98a7af1c65af234caaefffff95184
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223525"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692595"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Inserire un blocco sul posto di una cassetta postale eliminata in modo reversibile in Exchange Online
 
 Informazioni su come creare un blocco sul posto per una cassetta postale eliminata temporaneamente per renderla inattiva e conservarne il contenuto. È quindi possibile utilizzare gli strumenti di Microsoft eDiscovery per cercare la cassetta postale inattiva.
   
 > [!NOTE]
-> È stata posticipata la data di scadenza per la creazione di nuove archiviazioni sul posto in Exchange Online (nei piani autonomi di Office 365 e Exchange Online). Ma entro la fine dell'anno o all'inizio del prossimo anno, non sarà possibile creare nuove archiviazioni sul posto in Exchange Online. In alternativa all'utilizzo delle archiviazioni sul posto, è possibile utilizzare i criteri di [conservazione](https://go.microsoft.com/fwlink/?linkid=827811) o i [casi di eDiscovery](https://go.microsoft.com/fwlink/?linkid=780738) nel &amp; centro sicurezza e conformità di Office 365. Dopo la rimozione di nuove esenzioni sul posto, sarà comunque possibile modificare le esenzioni sul posto esistenti e creare nuove archiviazioni sul posto in Exchange Server 2013 e le distribuzioni ibride di Exchange continueranno a essere supportate. È comunque possibile inserire le cassette postali in blocco per controversia legale. 
+> È stata posticipata la data di scadenza per la creazione di nuove archiviazioni sul posto in Exchange Online (nei piani autonomi di Office 365 e Exchange Online). Tuttavia, più avanti nel corso di questo anno o all'inizio del prossimo, non sarà più possibile creare blocchi sul posto in Exchange Online. In alternativa all'utilizzo delle archiviazioni sul posto, è possibile utilizzare i criteri di [conservazione](https://go.microsoft.com/fwlink/?linkid=827811) o i [casi di eDiscovery](https://go.microsoft.com/fwlink/?linkid=780738) nel &amp; centro sicurezza e conformità di Office 365. Dopo la rimozione di nuove esenzioni sul posto, sarà comunque possibile modificare le esenzioni sul posto esistenti e creare nuove archiviazioni sul posto in Exchange Server 2013 e le distribuzioni ibride di Exchange continueranno a essere supportate. Inoltre, sarà ancora possibile applicare un blocco per controversia legale alle cassette postali. 
   
 Potrebbe verificarsi una situazione in cui una persona ha lasciato la propria organizzazione e l'account utente e la cassetta postale corrispondenti sono stati eliminati. Successivamente, si rende conto che esistono informazioni nella cassetta postale che devono essere conservate. Cosa potete fare? Se il periodo di conservazione della cassetta postale eliminata non è scaduto, è possibile applicare un blocco sul posto alla cassetta postale eliminata (denominata cassetta postale eliminata temporaneamente) e renderla una cassetta postale inattiva. Una *cassetta postale inattiva* viene utilizzata per mantenere la posta elettronica di un ex dipendente dopo che lui o lei lascia l'organizzazione. I contenuti di una cassetta postale inattiva vengono conservati per la durata del blocco sul posto che è stato inserito nella cassetta postale eliminata temporaneamente quando è stato reso inattivo. Dopo che la cassetta postale è stata resa inattiva, è possibile eseguire una ricerca nella cassetta postale utilizzando eDiscovery sul posto in Exchange Online, ricerca contenuto nel &amp; Centro sicurezza e conformità di Office 365 o eDiscovery Center in SharePoint Online. 
   
 > [!NOTE]
-> In Exchange Online, una cassetta postale eliminata in maniera reversibile è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un determinato periodo di conservazione. Il periodo di conservazione delle cassette postali eliminate temporaneamente in Exchange Online è di 30 giorni. Questo significa che la cassetta postale può essere recuperata (o resa una cassetta postale inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata temporaneamente è contrassegnata per l'eliminazione definitiva e non può essere recuperata o resa inattiva. 
+> In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Questo significa che la cassetta postale può essere recuperata (o resa una cassetta postale inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata temporaneamente è contrassegnata per l'eliminazione definitiva e non può essere recuperata o resa inattiva. 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 

@@ -7,18 +7,17 @@ ms.date: 1/14/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: "Il componente aggiuntivo per report di posta indesiderata di Microsoft Outlook consente agli utenti di Exchange Online e Exchange Online Protection di inviare facilmente a Microsoft report di posta indesiderata da analizzare al fine di ridurre il numero e l'impatto di messaggi dei posta indesiderata futuri filtrati dal servizio. Compatibile con Microsoft Outlook 2013, Outlook 2010 oppure Outlook 2007 con Windows 7, Windows 8 o Windows 10 questo componente aggiuntivo per report offre i seguenti vantaggi:"
-ms.openlocfilehash: 2434edbf51523f80a8bcf3cb5c7ace5ff3369f4d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fd8db743daff164d18b4067004fcb23b48393d66
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276086"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693345"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Componente aggiuntivo per Microsoft Outlook in report di posta indesiderata
 

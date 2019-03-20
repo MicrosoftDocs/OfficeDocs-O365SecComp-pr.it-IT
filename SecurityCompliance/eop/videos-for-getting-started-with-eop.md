@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341187"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693565"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Video per iniziare con EOP
 

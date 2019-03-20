@@ -7,7 +7,6 @@ ms.date: 7/16/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle di posta inDesiderata degli utenti in Exchange Online Protection.
-ms.openlocfilehash: aada143944acf594e3ec0e873d022d7e2d45b003
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670551"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692815"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
 

@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 51db286757ddb6a0d158a72196b48ff412d33e5f
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 8eb6eafb7214938af302852e2726af3fcdbd44d3
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670671"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693585"
 ---
 # <a name="eop-features"></a>Caratteristiche di EOP
 

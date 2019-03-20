@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: In questa articleSupported LanguagesInstall la segnalazione della posta inDesiderata Add-inUninstall the junk email Reporting Add-inFor more information
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276306"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693015"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
   
@@ -26,7 +25,7 @@ In questo argomento viene descritto come installare e disinstallare il component
   
 Il componente aggiuntivo (per tutte le lingue supportate) consente di segnalare la posta elettronica indesiderata direttamente dalla barra multifunzione di Outlook. La versione inglese del componente aggiuntivo include altre opzioni per segnalare i problemi di posta elettronica a Microsoft, direttamente dalla barra multifunzione:
   
--   Segnalazione dei messaggi di posta elettronica ricevuti che rappresentano tentativi di phishing 
+-  Segnalazione dei messaggi di posta elettronica ricevuti che rappresentano tentativi di phishing 
     
 - Segnalazione di messaggi di posta elettronica identificati erroneamente come posta indesiderata.
     
@@ -113,7 +112,7 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 
 1. Chiudere Outlook nel proprio computer.
     
-2. Aprire una finestra con il prompt dei comandi.
+2. Aprire la finestra del prompt dei comandi.
     
 3. Per eseguire l'installazione del componente aggiuntivo in modo semplice, senza parametri opzionali, specificare quanto segue:
     

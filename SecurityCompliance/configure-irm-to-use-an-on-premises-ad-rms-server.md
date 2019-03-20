@@ -7,7 +7,6 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,22 +14,22 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS.
-ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215257"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693035"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurazione di IRM per l'utilizzo di un server AD RMS locale
   
-Per l'utilizzo con distribuzioni locali, Information Rights Management (IRM) in Exchange Online utilizza Active Directory Rights Management Services (AD RMS), una tecnologia di protezione delle informazioni in Windows Server 2008 e versioni successive. La protezione IRM viene applicata ai messaggi di posta elettronica applicando un modello di criteri per i diritti AD RMS a un messaggio di posta elettronica. I diritti sono allegati al messaggio stesso, in modo che la protezione si verifichi online e offline e all'interno e all'esterno del firewall dell'organizzazione.
+Per l'utilizzo con distribuzioni locali, Information Rights Management (IRM) in Exchange Online utilizza Active Directory Rights Management Services (AD RMS), una tecnologia di protezione delle informazioni in Windows Server 2008 e versioni successive. La protezione IRM viene applicata alla posta elettronica applicando un modello dei criteri dei diritti AD RMS a un messaggio di posta elettronica. I diritti sono allegati al messaggio stesso, in modo che la protezione si verifichi online e offline e all'interno e all'esterno del firewall dell'organizzazione.
   
-In questo argomento viene illustrato come configurare IRM per l'utilizzo di un server AD RMS. Per informazioni sull'utilizzo delle nuove funzionalità per la crittografia dei messaggi di Office 365 con Azure Active Directory e Azure Rights Management, vedere le [domande frequenti sulla crittografia dei messaggi di office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS. Per informazioni sull'utilizzo delle nuove funzionalità per la crittografia dei messaggi di Office 365 con Azure Active Directory e Azure Rights Management, vedere le [domande frequenti sulla crittografia dei messaggi di office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Per ulteriori informazioni su IRM in Exchange Online, vedere [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
 <a name="sectionSection0"> </a>
 
 - Tempo stimato per il completamento di questa attività: 30 minuti
@@ -46,7 +45,7 @@ Per ulteriori informazioni su IRM in Exchange Online, vedere [Information Rights
 > [!TIP]
 > Problemi? È possibile richiedere supporto nei forum di Exchange. I forum sono disponibili sui seguenti siti: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="how-do-you-do-this"></a>Come eseguire l'operazione
+## <a name="how-do-you-do-this"></a>Come eseguire l'operazione?
 <a name="sectionSection1"> </a>
 
 ### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Passaggio 1: Utilizzare la console AD RMS per esportare un dominio di pubblicazione trusted (TPD, trusted publishing domain) da un server AD RMS
@@ -101,7 +100,7 @@ Per verificare di aver importato il dominio di pubblicazione trusted, eseguire i
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Passaggio 3: utilizzare Exchange Management Shell per distribuire un modello dei criteri per i diritti AD RMS
 
-Dopo aver importato il dominio di pubblicazione trusted, è necessario assicurarsi che sia distribuito un modello dei criteri per i diritti AD RMS. Un modello distribuito è visibile per gli utenti di Outlook sul Web (in precedenza noto come Outlook Web App), che può quindi applicare i modelli a un messaggio di posta elettronica.
+Dopo avere importato il dominio di pubblicazione trusted, è necessario assicurarsi che sia distribuito un modello dei criteri dei diritti AD RMS. Un modello distribuito è visibile per gli utenti di Outlook sul Web (in precedenza noto come Outlook Web App), che può quindi applicare i modelli a un messaggio di posta elettronica.
   
 Per tornare ad un elenco di tutti i modelli contenuti nel dominio di pubblicazione trusted predefinito, eseguire il comando riportato di seguito:
   
@@ -109,7 +108,7 @@ Per tornare ad un elenco di tutti i modelli contenuti nel dominio di pubblicazio
 Get-RMSTemplate -Type All | fl
 ```
 
-Se il valore del parametro _Type_ è `Archived`, il modello non è visibile agli utenti. Solo i modelli distribuiti nel dominio di pubblicazione trusted predefinito sono disponibili in Outlook sul Web.
+Se il valore del parametro  _Type_ è  `Archived`, il modello non è visibile agli utenti. Solo i modelli distribuiti nel dominio di pubblicazione trusted predefinito sono disponibili in Outlook sul Web.
   
 Per distribuire un modello, eseguire il comando riportato di seguito:
   

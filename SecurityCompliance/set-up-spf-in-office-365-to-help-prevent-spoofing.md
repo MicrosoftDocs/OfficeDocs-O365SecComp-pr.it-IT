@@ -7,7 +7,6 @@ ms.date: 2/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: "Riepilogo: In questo articolo viene descritto come aggiornare un record DNS (Domain Name Service) affinché sia possibile utilizzare Sender Policy Framework (SPF) con il dominio personalizzato in Office 365. L'utilizzo di SPF consente di convalidare la posta elettronica in uscita inviata dal dominio personalizzato."
-ms.openlocfilehash: 330cdb7e3aa5fa6ba6e46015b7333672f8a96451
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492835"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692835"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurazione di SPF in Office 365 per evitare lo spoofing
 

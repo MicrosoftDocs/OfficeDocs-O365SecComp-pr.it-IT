@@ -7,20 +7,19 @@ ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: e639b1185d75959061163b5391cf046bc789e3c4
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341627"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693525"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
-Microsoft Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che contribuisce a proteggere l'organizzazione da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica. EOP è in grado di semplificare la gestione dell'ambiente di messaggistica e ridurre molti dei problemi legati alla gestione dei componenti hardware e software locali.
+Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica. EOP è in grado di semplificare la gestione dell'ambiente di messaggistica e ridurre molte delle responsabilità associate alla gestione di componenti hardware e software locali.
   
 Di seguito sono riportati i modi principali in cui è possibile utilizzare EOP per la protezione dei messaggi:
   
@@ -81,11 +80,11 @@ Se EOP è già stato acquistato, vedere [Installazione del servizio EOP](set-up-
   
 [Video per iniziare con EOP](videos-for-getting-started-with-eop.md)
   
-[Domande frequenti su EOP](eop-general-faq.md)
+[Domande frequenti generali su EOP](eop-general-faq.md)
   
 [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md)
   
-[Domande frequenti sull'amministrazione delegata](delegated-administration-faq.md)
+[Domande frequenti sull'amministrazione con delega](delegated-administration-faq.md)
   
 [Spostare i domini e le impostazioni da un'organizzazione di EOP a un'altra organizzazione di EOP](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
   

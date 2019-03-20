@@ -7,18 +7,17 @@ ms.date: 8/8/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibile l'elenco dei messaggi consentiti in un criterio di filtro posta indesiderata nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 0759d054f270cae03b98d9da7e2e2dcfe442d68f
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341597"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693275"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili o bloccati per l'intera organizzazione in Office 365
   
@@ -27,7 +26,7 @@ Se si desidera essere sicuri di ricevere la posta da un mittente specifico, poic
 Una regola del flusso di posta sarebbe utile in questa situazione se è necessario filtrare criteri complessi, ad esempio controllare le intestazioni dei messaggi o i nomi degli allegati o se si desidera aggiungere azioni complesse, ad esempio l'aggiunta di una dichiarazione di non responsabilità al messaggio o l'applicazione di un periodo di tempo in cui il RUL e attivo. Tuttavia, il metodo preferito per assicurarsi che i messaggi di posta elettronica provenienti da un mittente o da un dominio specifico ignorino il filtro per la posta indesiderata è di aggiungerli al criterio di filtro Per iniziare a utilizzare questa operazione nell'interfaccia di amministrazione di Exchange, andare a **protezione** \> dalla **posta**indesiderata. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
   
 > [!TIP]
-> Un elenco basato sul dominio in una regola del flusso di posta non è protetto come un elenco basato sull'indirizzo IP, perché i domini possono essere falsificati. Inoltre, se l'indirizzo IP di invio è presente in un elenco di indirizzi bloccati, verrà comunque bloccato anche se viene ignorato il filtro per il dominio o l'utente. Ciò è dovuto al fatto che una regola del flusso di posta in un dominio o un utente non sovrascrive l'elenco di indirizzi IP bloccati globale. Nella maggior parte dei casi è consigliabile utilizzare un elenco basato sull'indirizzo IP. Per creare un elenco basato sull'indirizzo IP, è possibile utilizzare l'elenco indirizzi IP conSentiti o l'elenco indirizzi IP bloccati nel filtro di connessione. Tutti i messaggi inviati da questi indirizzi IP non vengono controllati dal filtro contenuto. Per istruzioni su come configurare il criterio di filtro delle connessioni aggiungendo indirizzi IP all'elenco o all'elenco IP conSentiti, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). 
+> Un elenco basato sul dominio in una regola del flusso di posta non è protetto come un elenco basato sull'indirizzo IP, perché i domini possono essere falsificati. Inoltre, se l'indirizzo IP di invio è presente nell'elenco degli indirizzi bloccati, sarà comunque bloccato anche se viene ignorato il filtro del dominio o dell'utente. Ciò è dovuto al fatto che una regola del flusso di posta in un dominio o un utente non sovrascrive l'elenco di indirizzi IP bloccati globale. Si consiglia di utilizzare un elenco basato sull'indirizzo IP in gran parte dei casi. Per creare un elenco basato sull'indirizzo IP, è possibile utilizzare l'elenco di indirizzi IP consentiti o bloccati del filtro connessioni. I messaggi inviati da questi indirizzi IP non vengono controllati dal filtro contenuto. Per istruzioni su come configurare il criterio di filtro delle connessioni aggiungendo indirizzi IP all'elenco o all'elenco IP conSentiti, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). 
   
 Per altre attività di gestione relative alle regole del flusso di posta, vedere [Mail Flow Rules (Transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
@@ -41,11 +40,11 @@ Per altre attività di gestione relative alle regole del flusso di posta, vedere
     
   - Fare clic su **nuovo** per creare un nuovo criterio di filtro di posta indesiderata personalizzato che può essere applicato a utenti, gruppi e domini dell'organizzazione. 
     
-3. Nella pagina **Consenti elenchi** , è possibile specificare voci, ad esempio mittenti o domini, che verranno sempre recapitati nella posta in arrivo. Il messaggio di posta elettronica da queste voci non viene elaborato dal filtro di posta indesiderata. Eseguire le operazioni seguenti: 
+3. Nella pagina degli **elenchi di indirizzi consentiti**, è possibile specificare voci, come mittenti e domini, ai quali verranno sempre recapitati messaggi di posta elettronica nella Posta in arrivo. La posta elettronica proveniente da tali voci non viene elaborata dal filtro di protezione da posta indesiderata. Eseguire le operazioni seguenti: 
     
-  - Aggiungere mittenti attendibili all'elenco dei mittenti consentiti. Fare clic su **Aggiungi**e, nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera consentire. È possibile separare più voci usando un punto e virgola o una nuova linea. Fare clic su OK per tornare alla pagina degli **elenchi di indirizzi** consentiti. 
+  - Aggiungere i mittenti attendibili a Elenco mittenti consentiti. Fare clic su **Aggiungi**e, nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera consentire. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su OK per tornare alla pagina degli **elenchi elementi consentiti**. 
     
-  - Aggiungere domini attendibili all'elenco dei domini consentiti. Fare clic su **Aggiungi**, quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera consentire. È possibile separare più voci usando un punto e virgola o una nuova linea. Fare clic su OK per tornare alla pagina degli **elenchi di indirizzi** consentiti. 
+  - Aggiungere i domini attendibili a Elenco di domini consentiti. Fare clic su **Aggiungi**, quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera consentire. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su OK per tornare alla pagina degli **elenchi elementi consentiti**. 
     
     > [!CAUTION]
     > Se si consentono domini di livello superiore, è probabile che la posta elettronica indesiderata sarà recapitata in una cartella di Posta in arrivo. 
@@ -63,20 +62,20 @@ Per altre attività di gestione relative alle regole del flusso di posta, vedere
     
 - Non è necessario creare una regola del flusso di posta per ignorare il filtro posta indesiderata o contrassegnare la posta elettronica come posta indesiderata per un mittente o dominio. Utilizzare Exchange Online Protection Block e consentire gli elenchi in un criterio di posta indesiderata invece che in questa regola del flusso del messaggio se si desidera semplicemente bloccare o consentire un mittente o un dominio specifico e non collegare eventuali condizioni aggiuntive. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
     
-- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "regole del flusso di posta" nell'argomento [criteri di messaggistica e autorizzazioni di conformità](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "regole del flusso di posta" nell'argomento [criteri di messaggistica e autorizzazioni di conformità](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
     
 - Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange**.
     
 > [!TIP]
-> Problemi? Richiedere assistenza nei forum di Exchange. Visitare i forum di Exchange [Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Problemi? È possibile richiedere supporto nei forum di Exchange. Visitare i forum di Exchange [Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta elettronica per ignorare il filtro posta indesiderata per un dominio
 
-1. Nell'interfaccia di amministrazione di Exchange, accedere alle **regole**del **flusso** \> di posta. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona e quindi scegliere **Ignora filtro posta**indesiderata.
+1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona e quindi scegliere **Ignora filtro posta**indesiderata.
     
 2. Assegnare un nome alla regola. In **Applica la regola se**, scegliere **Il mittente** quindi selezionare una delle seguenti condizioni: 
     
-  - Se si desidera specificare un dominio, scegliere **dominio è**. Nella finestra di dialogo **Specifica dominio** , immettere il dominio del mittente che si desidera designare come attendibile, ad esempio contoso.com. **Aggiungi** ![Aggiungere un'](media/ITPro-EAC-AddIcon.gif) icona per spostarla nell'elenco delle frasi. Ripetere questo passaggio se si desidera aggiungere ulteriori domini e fare clic su **OK** al termine. 
+  - Se si desidera specificare un dominio, scegliere **il dominio è**. Nella finestra di dialogo **Specifica dominio**, immettere il dominio del mittente da designare come sicuro, ad esempio contoso.com. **Aggiungi** ![Aggiungere un'](media/ITPro-EAC-AddIcon.gif) icona per spostarla nell'elenco delle frasi. Ripetere la procedura per aggiungere ulteriori domini e fare clic su **OK** una volta terminato. 
     
   - Se si desidera specificare un utente, scegliere **è questa persona**. Nella finestra di dialogo **Seleziona membri**, aggiungere l'utente dall'elenco o digitare l'utente, quindi fare clic su **Controlla nomi**. Ripetere la procedura per aggiungere ulteriori utenti e fare clic su **OK** una volta terminato. 
     
@@ -92,13 +91,13 @@ Dopo aver creato e applicato la regola, il filtro di protezione da posta indesid
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta che blocchi i messaggi inviati da un dominio o utente
 
-1. Nell'interfaccia di amministrazione di Exchange, accedere alle **regole**del **flusso** \> di posta. Scegliere **Aggiungi** ![icona](media/ITPro-EAC-AddIcon.gif) e quindi fare clic su **Crea una nuova regola**.
+1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**. Scegliere **Aggiungi** ![icona](media/ITPro-EAC-AddIcon.gif) e quindi fare clic su **Crea una nuova regola**.
     
 2. Assegnare un nome alla regola, quindi fare clic su **Altre opzioni**. 
     
 3. In **Applica la regola se**, scegliere **Il mittente** quindi selezionare una delle seguenti condizioni: 
     
-  - Se si desidera specificare un dominio, scegliere **dominio è**. Nella finestra di dialogo Specifica dominio, immettere il dominio del mittente da cui si desidera bloccare i messaggi, ad esempio contoso.com. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere questo passaggio se si desidera aggiungere ulteriori domini e fare clic su **OK** al termine. 
+  - Se si desidera specificare un dominio, scegliere **il dominio è**. Nella casella di dialogo Specifica dominio, immettere il dominio del mittente da cui si desidera bloccare i messaggi, ad esempio contoso.com. Fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere la procedura per aggiungere ulteriori domini e fare clic su **OK** una volta terminato. 
     
   - Se si desidera specificare un utente, scegliere **è questa persona**. Nella finestra di dialogo **Seleziona membri**, aggiungere l'utente dall'elenco o digitare l'utente, quindi fare clic su **Controlla nomi**. Ripetere la procedura per aggiungere ulteriori utenti e fare clic su **OK** una volta terminato. 
     
@@ -116,5 +115,5 @@ Dopo aver creato a applicato la regola, i messaggi inviati dal dominio o dall'ut
 
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
   
-[Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco](use-transport-rules-to-configure-bulk-email-filtering.md)
+[Usare le regole del flusso di posta per configurare il filtro per i messaggi inviati in blocco](use-transport-rules-to-configure-bulk-email-filtering.md)
 
