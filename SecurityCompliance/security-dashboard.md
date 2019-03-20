@@ -3,7 +3,7 @@ title: Panoramica del dashboard di sicurezza
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241888"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692755"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -99,9 +99,9 @@ Insights non solo i problemi principali che è necessario esaminare, ma anche su
 
 Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing vengono recapitati perché alcuni utenti hanno disabilitato le opzioni di posta indesiderata. Per ulteriori informazioni sul funzionamento delle intuizioni, vedere [Reports and Insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-intelligence"></a>Intelligence per le minacce
+## <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
-Se l'abbonamento dell'organizzazione include [funzionalità di intelligence](office-365-ti.md)per le minacce, nel dashboard di sicurezza è presente una sezione di **Intelligence di rischio** che include strumenti avanzati. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questa sezione per comprendere le campagne emergenti, esaminare le minacce e gestire gli incidenti. 
+Se l'abbonamento dell'organizzazione include [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), il dashboard di sicurezza ha una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questa sezione per comprendere le campagne emergenti, esaminare le minacce e gestire gli incidenti. 
   
 ![Threat Intelligence aiuta a comprendere gli attacchi indirizzati alla propria organizzazione](media/threatintelwidget.png)
   
@@ -112,7 +112,7 @@ Nella parte inferiore del dashboard di sicurezza è presente **** una sezione Tr
   
 ![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](media/trends.png)
   
-Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [funzionalità di intelligence](office-365-ti.md)per le minacce, in questa sezione è disponibile anche un rapporto di avvisi sulla **gestione delle minacce recente** che consente al team di sicurezza di visualizzare e intraprendere un'azione avvisi di sicurezza ad alta priorità. 
+Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), in questa sezione è disponibile anche un rapporto **avvisi di gestione delle minacce di recente** che consente al team di sicurezza di visualizzare e intraprendere un'azione avvisi di sicurezza ad alta priorità. 
 
 Per visualizzare o accedere al widget messaggi di posta elettronica inviati e ricevuti, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -126,6 +126,6 @@ Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, 
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Office 365 Threat Intelligence](office-365-ti.md)
+[Indagine e risposta alle minacce di Office 365](office-365-ti.md)
   
 

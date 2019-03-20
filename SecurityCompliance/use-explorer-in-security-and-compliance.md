@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Explorer (denominato anche Esplora minacce) nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524010"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693615"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 
@@ -31,7 +31,7 @@ Se l'organizzazione dispone di [Office 365 Advanced Threat Protection Plan 2](of
 Per utilizzare Esplora risorse, nel centro &amp; sicurezza e conformità, accedere a **gestione** \> **** minacce.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence è ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence è ora Office 365 Advanced Threat Protection piano 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Panoramica di Esplora risorse
 

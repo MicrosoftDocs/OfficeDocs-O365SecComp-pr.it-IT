@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft si impegna a rendere i propri prodotti e servizi di facile utilizzo per tutti.
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206379"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693105"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilità per persone con disabilità
 
@@ -66,9 +65,9 @@ Se si hanno delle difficoltà nella lettura o nella gestione dei materiali stamp
    
 ### <a name="customer-service-for-people-with-hearing-impairments"></a>Servizio clienti per persone con problemi di udito
 
-Se si hanno problemi di udito più o meno gravi, l'accesso completo ai servizi e ai prodotti Microsoft per i clienti è disponibile mediante un servizio per la trasmissione di testo tramite telefono (TTY/TDD):
+Gli utenti audiolesi o con problemi di udito possono usufruire di accesso completo all'assistenza per clienti e prodotti Microsoft tramite un servizio di trasmissione telefonica di testo (TTY/TDD):
   
-- Per il servizio clienti, contattare Microsoft Sales Information Center al numero (800) 892-5234 tra le 6:30 A.M. e le 5:30 P.M. (Pacifico), dal lunedì al venerdì, festività escluse. 
+- Per l'assistenza clienti, contattare il servizio clienti Microsoft al numero (800) 892-5234 dalle ore 6.30 alle 17.30 ora del Pacifico, dal lunedì al venerdì, festività escluse. 
     
 - Per l'assistenza tecnica negli Stati Uniti, contattare Microsoft Product Support Services al numero (800) 892-5234 tra le 06:00:00 A.M. e le 06:00:00 P.M. (Pacifico), dal lunedì al venerdì, festività escluse. In Canada, chiamare il numero (905) 568-9641 fra le 8:00 A.M. e le 8:00 P.M. Fuso or., dal lunedì al venerdì, festività escluse. 
     

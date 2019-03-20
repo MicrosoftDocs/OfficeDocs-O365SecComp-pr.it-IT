@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
-ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216566"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692855"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>La lotta alla posta indesiderata inviata a Office 365
 

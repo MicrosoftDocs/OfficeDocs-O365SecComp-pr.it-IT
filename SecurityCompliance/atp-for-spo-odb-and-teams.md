@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 03/19/2019
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Estendere Office 365 Advanced Threat Protection ai file in SharePoint Online, OneDrive for business e Microsoft teams per consentire una collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: d9d99041d002a6c43d7b6918f53aabb93f82339a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220606"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692445"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -46,11 +46,11 @@ Per ulteriori informazioni, vedere [accendere Office 365 ATP per SharePoint, One
   
 ## <a name="keep-these-points-in-mind"></a>Tenere presente questi punti
 
-- ATP non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Questo è un progetto. I file vengono analizzati in modo asincrono, tramite un processo che utilizza la condivisione e gli eventi di attività Guest insieme ai segnali euristici intelligenti e alle minacce per identificare i file dannosi.
+- ATP non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Questo è il funzionamento predefinito. I file vengono analizzati in modo asincrono, tramite un processo che utilizza la condivisione e gli eventi di attività Guest insieme ai segnali euristici intelligenti e alle minacce per identificare i file dannosi.
 
 - Verificare che i siti di SharePoint siano configurati per l'utilizzo dell' [esperienza moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Quando un file viene identificato come dannoso e bloccato, gli utenti possono vedere che si è verificato l'esperienza moderna, ma non la visualizzazione classica. La protezione del trifosfato di adenosina applica se viene utilizzata l'esperienza moderna o la visualizzazione classica. Tuttavia, gli indicatori visivi che un file è bloccato sono presenti solo nell'esperienza moderna.
     
-- I file identificati come dannosi in SharePoint Online, OneDrive for business o Microsoft teams verranno visualizzati nei [report di office 365 Advanced Threat Protection](view-reports-for-atp.md) e in Threat Explorer (parte di [Office 365 Threat Intelligence](office-365-ti.md)).
+- I file identificati come dannosi in SharePoint Online, OneDrive for business o Microsoft teams verranno visualizzati nei [report di office 365 Advanced Threat Protection](view-reports-for-atp.md) e in Threat Explorer (parte di [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ).
     
 - ATP fa parte della strategia globale di protezione dalle minacce dell'organizzazione, che include protezione da posta indesiderata e antimalware, oltre a collegamenti sicuri e allegati sicuri. Per ulteriori informazioni, vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
     

@@ -7,7 +7,6 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,22 +14,22 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a impostare il SCL dei messaggi in Exchange Online Protection.
-ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: e07b90ab1ab004c39ef36b2aa744ca87120c11fe
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341347"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692745"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi
 
-È possibile creare una regola del flusso di posta (nota anche come regola di trasporto) che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il livello SCL è una misura del modo in cui un messaggio deve essere la posta indesiderata. La posta indesiderata è messaggi di posta elettronica non richiesti (e in genere indesiderati). Il servizio esegue un'azione diversa su un messaggio in base alla classificazione SCL. Ad esempio, si potrebbe voler bypassare il filtro del contenuto di posta indesiderata per i messaggi inviati da persone all'interno dell'organizzazione perché è attendibile che un messaggio inviato internamente da un collega non sia posta indesiderata. L'utilizzo delle regole del flusso di posta per impostare il valore SCL di un messaggio garantisce un maggiore controllo della gestione della posta indesiderata. 
+È possibile creare una regola del flusso di posta (nota anche come regola di trasporto) che imposta il livello di probabilità di posta indesiderata (SCL) di un messaggio di posta elettronica. Il livello SCL è una misura del modo in cui un messaggio deve essere la posta indesiderata. Per posta indesiderata si intendono quei messaggi di posta elettronica non richiesti (e in genere non desiderati). Il servizio esegue un'azione diversa su un messaggio in base alla classificazione SCL. Ad esempio, si potrebbe voler bypassare il filtro del contenuto di posta indesiderata per i messaggi inviati da persone all'interno dell'organizzazione perché è attendibile che un messaggio inviato internamente da un collega non sia posta indesiderata. L'utilizzo delle regole del flusso di posta per impostare il valore SCL di un messaggio garantisce un maggiore controllo della gestione della posta indesiderata. 
   
  **Che cosa è necessario sapere prima di iniziare**
   
 - Tempo stimato per il completamento di questa procedura: 10 minuti.
     
-- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "regole del flusso di posta" in [autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [funzionalità Permissions in EOP](eop/feature-permissions-in-eop.md). 
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "regole del flusso di posta" in [autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [funzionalità Permissions in EOP](eop/feature-permissions-in-eop.md). 
     
 - Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange**.
     
@@ -59,7 +58,7 @@ ms.locfileid: "30341347"
     
   - **7-9** -quando si imposta il livello SCL su uno di questi valori, verrà applicata l'azione specificata per la posta indesiderata con **attendibilità elevata** nei criteri di filtro del contenuto applicabili. Per impostazione predefinita, l'azione consiste nell'inviare il messaggio alla cartella posta inDesiderata del destinatario. 
     
-    Per ulteriori informazioni sulla configurazione dei criteri di filtro del contenuto, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata. Per ulteriori informazioni sui valori SCL del servizio, vedere [Spam Confidence levels](spam-confidence-levels.md).
+    Per ulteriori informazioni sulla configurazione dei criteri di filtro del contenuto, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata. Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
     
 7. Specificare le proprietà aggiuntive per la regola e scegliere **Salva**.
     

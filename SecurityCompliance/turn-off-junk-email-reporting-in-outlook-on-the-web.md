@@ -6,29 +6,28 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore di Office 365, è possibile disattivare la possibilità per gli utenti di segnalare la posta elettronica come indesiderata.
-ms.openlocfilehash: 1e45f258bea2ea75d9b4cabcacc43b54c44f83c3
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275586"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692555"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Disattivare la segnalazione della posta indesiderata in Outlook sul Web
 
 È possibile inviare messaggi di posta indesiderata, di phishing e non a Microsoft per l'analisi utilizzando le opzioni di segnalazione della posta indesiderata di Outlook sul Web (in precedenza note come Outlook Web App), come descritto in [report posta indesiderata e truffe di phishing in Outlook sul Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Se non si desidera utilizzare queste opzioni, gli amministratori possono disattivarli tramite il cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
 <a name="sectionSection0"> </a>
 
 - Tempo stimato per il completamento: 5 minuti
     
-- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "criteri cassetta postale di Outlook sul Web" nell'argomento [autorizzazioni di Outlook sul Web](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "criteri cassetta postale di Outlook sul Web" nell'argomento [autorizzazioni di Outlook sul Web](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
 
 - Per connettersi a PowerShell di Exchange Online, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 

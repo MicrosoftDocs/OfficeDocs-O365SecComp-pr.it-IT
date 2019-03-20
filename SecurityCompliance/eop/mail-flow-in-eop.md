@@ -7,16 +7,15 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Come cliente di Exchange Online Protection (EOP), tutti i messaggi inviati all'organizzazione passano attraverso EOP prima che i dipendenti li visualizzino. A prescindere che tutte le cassette postali siano ospitate nel cloud con Exchange Online o siano locali (il cosiddetto scenario autonomo), ad esempio per continuare a sfruttare l'infrastruttura esistente, sono disponibili diverse opzioni di routing dei messaggi che passeranno attraverso EOP per l'elaborazione prima di essere instradati alle cassette postali dei dipendenti.
-ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
-ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
+ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "23002146"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691715"
 ---
 # <a name="mail-flow-in-eop"></a>Flusso di posta in EOP
 
@@ -36,7 +35,7 @@ Se si aggiungono sottodomini all'organizzazione, il servizio EOP può essere uti
   
 In [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) vengono descritti i connettori EOP e come è possibile utilizzarli per personalizzare il routing della posta. Gli scenari includono la verifica relativa alla sicurezza delle comunicazioni con un'organizzazione partner e la configurazione di uno smart host. 
   
-Per garantire che la posta indesiderata sia instradata correttamente alla cartella posta indesiderata di ogni utente, è necessario eseguire due passaggi di configurazione. Questi sono descritti nelle [Assicurarsi che la posta indesiderata sia instradata nella cartella posta indesiderata di ogni utente](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si desidera spostare messaggi nella cartella posta indesiderata di ogni utente, è possibile scegliere un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [configurazione dei criteri di filtro posta indesiderata](../configure-your-spam-filter-policies.md).
+Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella Posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. Queste informazioni sono dettagliate [per garantire che la posta indesiderata venga instradata alla cartella posta indesiderata di ogni utente](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si intende spostare i messaggi nella cartella Posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](../configure-your-spam-filter-policies.md).
   
 ## <a name="verify-mail-flow"></a>Verificare il flusso di posta
 

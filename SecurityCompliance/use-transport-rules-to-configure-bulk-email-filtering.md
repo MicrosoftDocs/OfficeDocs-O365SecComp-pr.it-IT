@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,21 +13,21 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come utilizzare le regole del flusso di posta in Exchange Online Protection per il filtro della posta elettronica in blocco.
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275686"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693285"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco in Exchange Online Protection
 
 È possibile impostare filtri di contenuto a livello aziendale per la posta indesiderata e i messaggi in blocco utilizzando i criteri di filtro contenuto spam predefiniti. Vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md) indesiderata e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) su come impostare i criteri di filtro dei contenuti. 
   
-Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per cercare modelli di testo o frasi che si trovano di frequente nei messaggi di posta elettronica in blocco. Tutti i messaggi che contengono queste caratteristiche verranno contrassegnati come posta indesiderata. L'utilizzo di queste regole può contribuire a ridurre la quantità di messaggi di posta elettronica indesiderata ricevuti dall'organizzazione.
+Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per cercare modelli di testo o frasi che si trovano di frequente nei messaggi di posta elettronica in blocco. Tutti i messaggi che contengono queste caratteristiche verranno contrassegnati come posta indesiderata. L'utilizzo di queste regole consente di ridurre la quantità di posta indesiderata ricevuta dall'organizzazione.
 
 > [!IMPORTANT]
-> Prima di creare le regole del flusso di posta documentate questo argomento, si consiglia di leggere innanzitutto [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valori a livello](bulk-complaint-level-values.md)di reclamo in blocco.<br>Le procedure seguenti contrassegnano un messaggio come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per applicare queste regole solo a destinatari specifici dell'organizzazione. In questo modo, le impostazioni di filtro della posta elettronica in blocco aggressive possono essere applicate a pochi utenti fortemente mirati, mentre gli altri utenti (che per lo più ricevono la posta elettronica di massa a cui hanno effettuato l'iscrizione) non sono interessati. 
+> Prima di creare le regole del flusso di posta documentate questo argomento, si consiglia di leggere innanzitutto [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) e [valori a livello](bulk-complaint-level-values.md)di reclamo in blocco.<br> Le procedure indicate di seguito consentono di contrassegnare un messaggio come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per applicare queste regole esclusivamente a destinatari specifici nell'organizzazione. In questo modo, le impostazioni di filtro della posta elettronica in blocco aggressive possono essere applicate a pochi utenti fortemente mirati, mentre gli altri utenti (che per lo più ricevono la posta elettronica di massa a cui hanno effettuato l'iscrizione) non sono interessati. 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Creare una regola del flusso di posta per filtrare i messaggi di posta elettronica in blocco in base ai modelli di testo
 
@@ -38,7 +37,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
 3. Specificare un nome per la regola.
     
-4. Fare clic su **altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo o l'oggetto corpo **corrisponde a questi modelli di testo**.
+4. Fare clic su **Altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo o l'oggetto corpo **corrisponde a questi modelli di testo**.
     
 5. Nella finestra di dialogo **specificare parole o frasi**, aggiungere le seguenti espressioni regolari che si trovano di solito nei messaggi di posta elettronica in blocco, una per volta, e fare clic su **OK** al termine: 
     
@@ -66,7 +65,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
    - `click (here to|the) unsubscribe`
     
-   L'elenco di cui sopra non è un insieme esaustivo di espressioni regolari presenti nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, è un buon punto di partenza.<br>La ricerca di parole o di modelli di testo nell'oggetto o in altri campi di intestazione del messaggio si verifica *dopo* la decodifica del messaggio dal metodo MIME Content Transfer Encoding utilizzato per la trasmissione del messaggio binario tra i server SMTP in testo ASCII. Non è possibile utilizzare le condizioni o le eccezioni per cercare i valori non elaborati (in genere, Base64) codificati dell'oggetto o di altri campi di intestazione nei messaggi. 
+   L'elenco di cui sopra non è un insieme esaustivo di espressioni regolari presenti nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, si tratta di un buon punto di partenza.<br>La ricerca di parole o di modelli di testo nell'oggetto o in altri campi di intestazione del messaggio si verifica *dopo* la decodifica del messaggio dal metodo MIME Content Transfer Encoding utilizzato per la trasmissione del messaggio binario tra i server SMTP in testo ASCII. Non è possibile utilizzare condizioni o eccezioni per cercare i valori codificati non elaborati (in genere, Base64) dell'oggetto o di altri campi dell'intestazione dei messaggi. 
     
 6. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.
     
@@ -88,7 +87,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
 3. Specificare un nome per la regola.
     
-4. Fare clic su **altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo del soggetto o **del corpo include una o più delle seguenti parole**.
+4. Fare clic su **Altre opzioni**. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo del soggetto o **del corpo include una o più delle seguenti parole**.
     
 5. Nella finestra di dialogo **specificare parole o frasi**, aggiungere le seguenti frasi che si trovano di solito nei messaggi di posta elettronica in blocco, una per volta, e fare clic su **OK** al termine: 
     
@@ -118,7 +117,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
    - `You are receiving this email because you are subscribed`
     
-   Questo elenco non è un insieme esaustivo di frasi trovate nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, è un buon punto di partenza.
+   Questo elenco non è un insieme esaustivo di frasi trovate nei messaggi di posta elettronica in blocco; Altre informazioni possono essere aggiunte o rimosse in base alle esigenze. Tuttavia, si tratta di un buon punto di partenza.
     
 6. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.
     

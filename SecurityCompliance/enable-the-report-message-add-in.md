@@ -1,5 +1,5 @@
 ---
-title: Attivare il componente aggiuntivo Segnala messaggio
+title: Abilitare il componente aggiuntivo Segnala messaggio
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,26 +15,26 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410901"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693385"
 ---
-# <a name="enable-the-report-message-add-in"></a>Attivare il componente aggiuntivo Segnala messaggio
+# <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
 > [!NOTE]
 > Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web non è esattamente lo stesso del filtro della [posta](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)indesideraTa di Outlook, sebbene entrambi possano essere utilizzati per contrassegnare la posta elettronica come indesiderata, non indesiderata o tentativo di phishing. La differenza è che il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web notifica a Microsoft la posta indesiderata, mentre il filtro posta inDesiderata di Outlook viene utilizzato per organizzare i messaggi di posta elettronica nella cassetta postale di un utente. 
 
 ## <a name="overview"></a>Panoramica
 
-Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web consente agli utenti di segnalare facilmente messaggi di posta indesiderata, siano essi sicuri o dannosi, a Microsoft e ai suoi affiliati per l'analisi. Microsoft utilizza questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Inoltre, se l'organizzazione utilizza [office 365 Advanced Threat Protection](office-365-atp.md) o [Office 365 Threat Intelligence](office-365-ti.md), il componente aggiuntivo segnala messaggio fornisce al team di sicurezza dell'organizzazione informazioni utili che è possibile utilizzare per esaminare e aggiornare criteri di sicurezza. 
+Il componente aggiuntivo del messaggio di report per Outlook e Outlook sul Web consente agli utenti di segnalare facilmente messaggi di posta indesiderata, siano essi sicuri o dannosi, a Microsoft e ai suoi affiliati per l'analisi. Microsoft utilizza questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Inoltre, se l'organizzazione utilizza [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [Plan 2](office-365-ti.md), il componente aggiuntivo segnala messaggio fornisce al team di sicurezza dell'organizzazione informazioni utili che è possibile utilizzare per esaminare e aggiornare i criteri di sicurezza. 
 
 Si supponga, ad esempio, che le persone riferiscono un gran quantità di messaggi come phishing. Queste informazioni si riferiscono al [dashboard di sicurezza](security-dashboard.md) e ad altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri di protezione anti-phishing. In alternativa, se la gente segnala un gran quantità di messaggi che sono stati contrassegnati come posta indesiderata come non inDesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover adeguare i criteri di protezione da [posta](configure-the-anti-spam-policies.md)indesiderata. 
 
 Il componente aggiuntivo segnala messaggio è compatibile con l'abbonamento a Office 365 e i prodotti seguenti:
- - Outlook sul Web
+ - Outlook sul web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 per Mac

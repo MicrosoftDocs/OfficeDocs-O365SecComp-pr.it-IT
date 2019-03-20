@@ -3,7 +3,7 @@ title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel c
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione con Office 365 Enterprise. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341447"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684365"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
@@ -68,9 +68,9 @@ Quando il report viene aperto per la prima volta, verranno visualizzati i dati r
 
 ![Dati della visualizzazione del rapporto di crittografia per menu](media/encryptionreport-viewdataby.png)
 
-Grazie alla flessibilità del nuovo rapporto di crittografia, è possibile visualizzare le tendenze e intraprendere le azioni appropriate. Ad esempio, se viene visualizzato un numero elevato di messaggi di posta elettronica crittografati dagli utenti, potrebbe essere necessario aggiungere un criterio di crittografia per automatizzare la crittografia per alcuni casi di utilizzo. Se si dispone di un numero di modelli di crittografia disponibili ma nessuno li utilizza, potrebbe essere necessario valutare se gli utenti devono essere allenati per tale caratteristica. 
+Grazie alla flessibilità del nuovo rapporto di crittografia, è possibile visualizzare le tendenze e intraprendere le azioni appropriate. Ad esempio, se viene visualizzato un numero elevato di messaggi di posta elettronica crittografati dagli utenti, potrebbe essere necessario aggiungere un criterio di crittografia per automatizzare la crittografia per alcuni casi di utilizzo. Per ottenere assistenza, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md). Come altro esempio, se si dispone di un numero di modelli di crittografia disponibili ma nessuno li utilizza, potrebbe essere necessario valutare se gli utenti devono essere allenati per tale caratteristica. 
 
-Questo rapporto consente al team di conformità e sicurezza dell'organizzazione di monitorare in che modo viene utilizzata la crittografia dei messaggi e se sono necessarie ulteriori azioni.
+Utilizzare questo rapporto consente al team di conformità e sicurezza dell'organizzazione di monitorare la modalità di utilizzo della crittografia dei messaggi e se sono necessarie ulteriori azioni.
 
 ## <a name="threat-protection-status-report"></a>Rapporto sullo stato della protezione dalle minacce
 
@@ -219,7 +219,7 @@ Per visualizzare e utilizzare i rapporti descritti in questo articolo, **è nece
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    

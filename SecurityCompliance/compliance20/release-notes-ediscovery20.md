@@ -14,20 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo sono contenute le note sulla versione per Advanced eDiscovery (Preview).
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295009"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684355"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>Note sulla versione per Advanced eDiscovery (Preview)
 
 Il programma di anteprima pubblica per Advanced eDiscovery è il modo in cui ottenere un accesso precoce alle funzionalità e agli aggiornamenti imminenti. Per ottenere un accesso rapido alle funzionalità più recenti, è sufficiente creare e utilizzare un caso avanzato di eDiscovery (anteprima) nel centro conformità & sicurezza di Office 365. Per ulteriori informazioni, vedere [Create a New Case](create-new-ediscovery-case.md).
 
+## <a name="known-issues"></a>Problemi noti
+
+**Microsoft Forms**
+
+- I dati corrispondenti a un modulo creato prima del 31 gennaio 2019 non saranno disponibili per la ricerca quando si utilizza lo strumento di ricerca in Advanced eDiscovery (Preview) per cercare le cassette postali del custode. I moduli creati dopo questa data saranno disponibili per la ricerca.
+
+- Un modulo creato da un utente può comunque ricevere risposte anche dopo che l'utente che ha creato il modulo è stato eliminato. Tuttavia, i dati corrispondenti per tali risposte (che si sono verificati dopo l'eliminazione della cassetta postale di custode) non saranno disponibili per la ricerca quando si utilizza lo strumento di ricerca in Advanced eDiscovery (Preview) per cercare le cassette postali del custode.
+ 
+**Microsoft Sway**
+
+- Se un utente modifica un dominio subito prima dell'eliminazione dell'account utente per il proprietario del dominio, tali modifiche potrebbero non essere disponibili per la ricerca quando si utilizza lo strumento di ricerca in Advanced eDiscovery (Preview) per cercare le cassette postali del custode. L'ondeggiamento blocca le modifiche apportate a un ondeggiamento non appena riceve un segnale che l'account è stato eliminato. Tuttavia, c'è una piccola possibilità che un ondeggiamento può essere modificato prima che questo segnale venga ricevuto.
+
 ## <a name="issues-fixed-in-this-release"></a>Problemi risolti in questa versione
 
-- DCR: gestione delle eccezioni per gli elementi non indicizzati e orfani
+- DCR: gestione delle eccezioni per gli elementi non indicizzati e gli elementi orfani
 - DCR: notifiche di blocco
 - DCR: depositari in eDiscovery
 

@@ -7,7 +7,6 @@ ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: I clienti a volte askwhat è la differenza tra posta elettronica indesiderata e messaggi di posta elettronica in blocco? Lo scopo di questo argomento è spiegare la differenza e fornire informazioni sulle diverse opzioni disponibili per entrambi in Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 877912c94af5d4b399769759189d091c62d50075
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275716"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693215"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Differenza tra posta elettronica indesiderata e posta elettronica in blocco
 
@@ -43,6 +42,6 @@ Il modo in cui gestire la posta elettronica in blocco non è una decisione chiar
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Abilitare il controllo della riservatezza sulla posta inviata in massa nel criterio filtro del contenuto
 
-A seconda del criterio dell'azienda nei messaggi di posta elettronica in blocco, gli amministratori possono selezionare una soglia per assegnare il messaggio di posta elettronica in blocco. L'impostazione è configurabile tramite i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per la procedura, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md) indesiderata. È possibile scegliere un'impostazione di soglia da 1-9, dove 1 contrassegna la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio esegue quindi l'azione configurata, ad esempio l'invio del messaggio alla cartella posta inDesiderata del destinatario. 
+A seconda del criterio aziendale sui messaggi di posta elettronica inviati in massa, gli amministratori possono selezionare una soglia da assegnare alla posta inviata in massa. L'impostazione è configurabile tramite i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per la procedura, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md) indesiderata. È possibile scegliere un'impostazione di soglia da 1-9, dove 1 contrassegna la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio quindi esegue l'azione configurata, ad esempio, l'invio del messaggio alla cartella Posta indesiderata del destinatario. 
   
 

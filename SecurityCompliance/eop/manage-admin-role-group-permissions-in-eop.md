@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) per rendere un utente membro di un gruppo o di gruppi di ruoli per poter assegnargli autorizzazioni per effettuare attività amministrative specifiche. È inoltre possibile rimuovere un utente da un gruppo o da gruppi di ruoli utilizzando l'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002975"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693425"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gestione autorizzazioni gruppo di ruoli di amministratore in EOP
   
@@ -30,7 +29,7 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
     
 - Alcune autorizzazione in Office 365 eseguono il mapping delle autorizzazioni dei gruppi di ruoli di amministratore di EOP. Per ulteriori informazioni, vedere la colonna "Ruolo in Exchange Online" nella sezione "Quali servizi sono disponibili per le mie autorizzazioni di Office 365?" in [Assegnazione di ruoli di amministratore](https://go.microsoft.com/fwlink/p/?LinkId=286708).
     
-- Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange**.
+- Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > Problemi? È possibile richiedere supporto nei forum di Exchange. I forum sono disponibili sui seguenti siti: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -39,7 +38,7 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Aggiunta dei membri a gruppi di ruoli tramite EAC
 
-1. In EAC, andare a **autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruolo che si desidera aggiungere l'utente o gli utenti e quindi fare clic su **Modifica** ![sull'icona Modifica](../media/ITPro-EAC-EditIcon.gif).
+1. Nell'interfaccia di amministrazione di Exchange, accedere a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli a cui si desidera aggiungere l'utente o gli utenti](../media/ITPro-EAC-EditIcon.gif), quindi fare clic su **modifica** ![icona modifica.
     
 2. In Membri, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif). Viene visualizzata la finestra Seleziona membri.
     
@@ -54,7 +53,7 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Rimozione di membri da un gruppo di ruoli di amministratore tramite EAC
 
-1. In EAC, andare a **autorizzazioni** \> **Ruoli amministratore**, fare clic sul gruppo di ruolo che si desidera rimuovere un utente o gli utenti e quindi fare clic su **Modifica** ![sull'icona Modifica](../media/ITPro-EAC-EditIcon.gif).
+1. Nell'interfaccia di amministrazione di Exchange, accedere a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli da cui si desidera rimuovere un utente o utenti e](../media/ITPro-EAC-EditIcon.gif)quindi fare clic su **modifica** ![icona modifica.
     
 2. In Membri, selezionare l'utente o gli utenti che si desidera rimuovere, quindi fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif).
     

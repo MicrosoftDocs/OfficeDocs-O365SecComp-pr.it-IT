@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: In questo argomento vengono fornite le risposte alle domande frequenti sui messaggi restituiti al mittente, differiti e in coda durante la procedura di filtraggio in Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e8fdb07d11a1f540e94b82730eb848a97f51523a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686426"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693205"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP
 
@@ -32,10 +31,10 @@ R. I messaggi vengono mantenuti quando non è possibile eseguire una connessione
   
  **D. Per quanto tempo un messaggio rimane in coda e qual è l'intervallo tra tentativi?**
   
-R. messaggi accodati resteranno nel nostro code per 2 giorni. Messaggio di tentativi sono basati su errore che è possibile ottenere dal sistema di posta elettronica del destinatario. Il dilazioni alcuni prima sono 15 minuti o minore di successivi tentativi di connessione (tramite il successiva decine metà o meno) aumentare l'intervallo su più tentativi per un massimo di 60 minuti. L'espansione di durata intervallo è dinamico, tenendo in considerazione più variabili come dimensioni coda e la priorità del messaggio interno. In base, è 15 minuti (o minore di) per avviare, quindi l'espansione da quest'ultimo su alcune ore successiva al massimo di 60 minuti.
+R. I messaggi il cui recapito è ritardato rimangono nelle code per 2 giorni. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. I primi deferimenti sono di 15 minuti o meno, con i successivi tentativi (nelle prossime mezze dozzine) che aumentano l'intervallo su più tentativi fino a un massimo di 60 minuti. L'espansione della durata dell'intervallo è dinamica, tenendo in considerazione più variabili come le dimensioni delle code e la priorità dei messaggi interni. In Basic, è 15 minuti (o meno) per iniziare, quindi espandersi da lì nelle prossime ore fino a 60 mins max.
   
  **D. Dopo il ripristino del server di posta elettronica, come vengono distribuiti i messaggi in coda?**
   
-R. Dopo il ripristino del server di posta elettronica, tutti i messaggi accodati sono automaticamente elaborati nell'ordine in cui sono stati ricevuti e vengono accodati quando il server non è più disponibile. 
+R. Dopo il ripristino del server di posta elettronica, tutti i messaggi accodati sono automaticamente elaborati nell'ordine in cui sono stati ricevuti e vengono accodati quando il server non è più disponibile.   
   
 

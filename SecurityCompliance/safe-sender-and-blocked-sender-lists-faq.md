@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Un modo per farlo consiste nel creare elenchi di mittenti attendibili e di mittenti bloccati per gli utenti dell'organizzazione.
-ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 11ae38733418bb0842732978512698ca6a6274fd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275656"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692225"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Elenchi di mittenti attendibili e bloccati in Exchange Online
 
@@ -39,11 +38,11 @@ I limiti dei mittenti attendibili e bloccati in Exchange Online sono diversi da 
     
 Nota:
   
-È possibile che si verifichi l'errore descritto in [KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app). Per risolvere il problema, deselezionare la casella di controllo "attendibilità dei messaggi di posta elettronica dai contatti personali". In alternativa, ridurre la quantità di indirizzi di posta elettronica presenti nella cartella Contatti predefinita per riportarla entro il limite massimo consentito di 1024 in Exchange Online impostato per l'attributo "parametri MaxSafeSenders". Per ulteriori informazioni su questo attributo e sul cmdlet Set-Mailbox, ribolle nell'argomento seguente:
+È possibile che si verifichi l'errore descritto in [KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app). Per risolvere il problema, deselezionare la casella di controllo "Considera attendibili i messaggi di posta elettronica provenienti dai contatti personali". In alternativa, ridurre la quantità di indirizzi di posta elettronica presenti nella cartella Contatti predefinita per riportarla entro il limite massimo consentito di 1024 in Exchange Online impostato per l'attributo "parametri MaxSafeSenders". Per ulteriori informazioni sull'attributo e sul cmdlet Set-Mailbox, vedere l'argomento seguente:
   
 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vedere anche
 
 [Sender filtering in Exchange 2016](http://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
 

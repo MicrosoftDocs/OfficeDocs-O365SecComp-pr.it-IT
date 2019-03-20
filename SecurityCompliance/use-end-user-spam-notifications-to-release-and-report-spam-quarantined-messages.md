@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti che visualizzano un messaggio di notifica di posta indesiderata dell'utente finale dall'amministratore relativo alla posta in quarantena possono eseguire queste azioni nei messaggi. "
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341237"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691975"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilizzare le notifiche di posta indesiderata dell'utente finale per segnalare i messaggi di posta indesiderata in quarantena
 
@@ -41,6 +40,6 @@ Se l'amministratore abilita le notifiche di posta indesiderata dell'utente final
 - **Segnala come non indesiderata** Facendo clic su questo collegamento viene inviata una copia del messaggio a Microsoft per l'analisi. Il team di analisi di posta indesiderata, valuta e analizza il messaggio e a seconda dei risultati dell'analisi, regola il filtro di protezione da posta indesiderata per consentire l'inoltro del messaggio. 
     
 > [!NOTE]
->  I messaggi messi in quarantena a causa di una regola del flusso di posta (nota anche come a) non sono inclusi nei messaggi di posta indesiderata in quarantena dell'utente finale. Sono elencati solo i messaggi in quarantena della posta indesiderata. > è possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) una volta. 
+>  I messaggi messi in quarantena a causa di una regola del flusso di posta (nota anche come a) non sono inclusi nei messaggi di posta indesiderata in quarantena dell'utente finale. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena. >  È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta. 
   
 

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: "Riepilogo: leggere questo articolo per ottenere una panoramica dell'integrazione del server SIEM con Microsoft 365."
-ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357497"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693645"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SIEM con i servizi e le applicazioni di Microsoft 365
 
@@ -33,7 +33,7 @@ Un server SIEM può ricevere dati da un'ampia gamma di servizi e applicazioni di
 
 | Servizio o applicazione Microsoft 365 | Input del server SIEM | Risorse per ulteriori informazioni |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   oppure   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Registri di controllo | [Integrazione di SIEM con Office 365 Threat Intelligence e Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   oppure   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Registri di controllo | [Integrazione di SIEM con Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integrazione del registro | [Integrazione di SIEM con Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 Cloud App Security](office-365-cas-overview.md) | Integrazione del registro | [Integrare il server SIEM con Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
 | [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Integrazione del registro | [Tirare gli avvisi agli strumenti di SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
@@ -53,6 +53,6 @@ Verificare che la registrazione di controllo sia attivata prima di configurare l
 
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Test Lab Guide (TLG) di adozione cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Test Lab Guide (TLG) per l’adozione del cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 

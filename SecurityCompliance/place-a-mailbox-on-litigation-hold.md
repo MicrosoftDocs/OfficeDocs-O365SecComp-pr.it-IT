@@ -7,34 +7,33 @@ ms.date: 10/18/2016
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Attivare un blocco per controversia legale in una cassetta postale per conservare tutto il contenuto della cassetta postale, tra cui elementi eliminati e versioni originali degli elementi modificati. '
-ms.openlocfilehash: b2d2a60fddb51aa310d01a765c1ebbbf127ecd19
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: a4d0939ffed32a8442b4b705bd15804b9f3eb7ea
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296979"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693125"
 ---
-# <a name="place-a-mailbox-on-litigation-hold"></a>Conservazione in caso di dispute di una cassetta postale
+# <a name="place-a-mailbox-on-litigation-hold"></a>Blocco per controversia legale di una cassetta postale
  
 Attivare un blocco per controversia legale in una cassetta postale per conservare tutto il contenuto della cassetta postale, tra cui elementi eliminati e versioni originali degli elementi modificati. Quando si attiva un blocco per controversia legale nella cassetta postale di un utente, anche il contenuto della cassetta postale di archiviazione dell'utente (se abilitata) viene messo in attesa. Gli elementi eliminati o modificati vengono conservati per un periodo specificato o fino a quando non viene rimosso il blocco per controversia legale dalla cassetta postale. Tutti questi elementi delle cassette postali vengono restituiti in una ricerca di [eDiscovery in locale](http://technet.microsoft.com/library/6377cb7a-3416-4e15-8571-c45d2160fc6f.aspx). 
   
 > [!IMPORTANT]
 > Il blocco per controversia legale conserva gli elementi nella cartella Elementi ripristinabili nella cassetta postale dell'utente.A seconda del numero e della dimensione degli elementi eliminati o modificati, la dimensione della cartella Elementi ripristinabili della cassetta postale potrebbe aumentare rapidamente. Per impostazione predefinita, la cartella Elementi ripristinabili è configurata con una quota elevata. In Exchange Online, questa quota viene aumentata automaticamente quando si attiva un blocco per controversia legale in una cassetta postale. In Exchange Server 2013 si consiglia di monitorare le cassette postali con blocco per controversia legale attivato ogni settimana per verificare non venga raggiunto il limite delle quote di Elementi ripristinabili. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
 <a name="sectionSection0"> </a>
 
 - Tempo stimato per il completamento: 5 minuti
     
 - L'impostazione Blocco per controversia legale potrebbe richiedere fino a 60 minuti per essere effettivo.
     
-- Prima di poter eseguire questa procedura o procedure, è necessario disporre delle autorizzazioni assegnate. Per sapere quali autorizzazioni sono necessarie, vedere "blocco sul posto" nell'argomento [criteri di messaggistica e autorizzazioni di conformità](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "blocco sul posto" nell'argomento [criteri di messaggistica e autorizzazioni di conformità](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
     
 - Per attivare il blocco per controversia legale in una cassetta postale di Exchange Online, è necessario disporre di una licenza di Exchange Online (Piano 2). Se una cassetta postale dispone di una licenza di Exchange Online (Piano 1), occorre assegnarle una licenza di Exchange Online Archiving distinta per attivare il blocco.
     
@@ -42,7 +41,7 @@ Attivare un blocco per controversia legale in una cassetta postale per conservar
     
 - In Exchange Online, la quota per la cartella Elementi ripristinabili viene automaticamente aumentata a 100 GB quando per una cassetta postale si attiva il blocco per controversia legale. La dimensione predefinita della cartella è 30 GB.
     
-- Il blocco per controversia legale conserva gli elementi eliminati e conserva anche le versioni originali degli elementi modificati finché non viene rimosso il blocco. Facoltativamente, è possibile specificare una durata del blocco, che conserva un elemento della cassetta postale per il periodo di durata specificato. Se si specifica un periodo di durata del blocco, viene calcolato a partire dalla data di ricezione di un messaggio o dalla creazione di un elemento della cassetta postale. Per mantenere gli elementi che soddisfano i criteri specificati, utilizzare un blocco sul posto per creare un blocco basato su query. Per ulteriori informazioni, vedere [creare o rimuovere un blocco sul posto](http://technet.microsoft.com/library/9d5d8d37-a053-4830-9cb1-6e1ede25e963.aspx).
+- Il blocco per controversia legale preserva gli elementi eliminati e anche le versioni originali degli elementi modificati finché non viene rimosso il blocco. È possibile specificare in modo facoltativo la durata del blocco, che conserva un elemento della cassetta postale per il periodo di durata specificato. È possibile specificare un periodo della durata del blocco, viene calcolato dalla data di ricezione di un messaggio o dalla creazione dell'elemento della cassetta postale. Per mantenere gli elementi che soddisfano i criteri specificati, usare un blocco sul posto per creare un blocco basato su query. Per ulteriori informazioni, vedere [creare o rimuovere un blocco sul posto](http://technet.microsoft.com/library/9d5d8d37-a053-4830-9cb1-6e1ede25e963.aspx).
     
 - Per attivare un blocco in una cassetta postale di Exchange Online tramite la shell, è necessario utilizzare Exchange Online PowerShell. Per ulteriori informazioni, vedere [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
@@ -159,7 +158,7 @@ Per verificare la corretta attivazione di un blocco per controversia legale in u
     
   - La cartella Elementi ripristinabili presenta un proprio limite di archiviazione, quindi gli elementi nella cartella non pesano sul limite di archiviazione della cassetta postale. Come spiegato in precedenza, la conservazione dei dati delle cassette postali per un lungo periodo di tempo causa la crescita della cartella Elementi ripristinabili in una cassetta postale e nell'archivio di un utente. Per rendere possibile questo aumento in Exchange Online, la quota per la cartella Elementi ripristinabili viene automaticamente aumentata da 30 GB a 100 GB quando per una cassetta postale si attiva il blocco per controversia legale. 
     
-    In Exchange Server 2013, il limite di archiviazione predefinito per la cartella elementi ripristinabili è anche 30 GB. Si consiglia di monitorare periodicamente le dimensioni della cartella per assicurarsi che non raggiunga il limite. Per ulteriori informazioni, vedere [cartella elementi ripristinabili](http://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+    In Exchange Server 2013, il limite di archiviazione predefinito per la cartella Elementi ripristinabili è di 30 GB. Si consiglia di tenere periodicamente sotto controllo le dimensioni della cartella per verificare di non raggiungere il limite. Per ulteriori informazioni, vedere [cartella elementi ripristinabili](http://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
     
 - Il comando precedente per attivare un blocco in tutte e cassette postali utilizza un filtro destinatario che restituisce tutte le cassette postali utente. È possibile utilizzare altre proprietà dei destinatari per un elenco delle cassette postali specifiche che è quindi possibile restituire al cmdlet **Set-Mailbox** per attivare un blocco per controversia legale in tali cassette postali. 
     

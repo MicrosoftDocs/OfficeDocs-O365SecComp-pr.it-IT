@@ -7,7 +7,6 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
-ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276296"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692105"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
@@ -88,7 +87,7 @@ Per richiedere la rimozione da questo elenco, è possibile [utilizzare il portal
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>La posta elettronica è atterrata nella cartella di posta indesiderata del destinatario in EOP
 <a name="JunkMailBox"> </a>
 
-Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile collaborare con il destinatario per inviare questo messaggio falso positivo al team di analisi di posta inDesiderata di Microsoft, che valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, è possibile modificare le regole di filtro del contenuto della posta indesiderata a livello di servizio per consentire il passaggio del messaggio. Si utilizza la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
+Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile collaborare con il destinatario per inviare questo messaggio falso positivo al team di analisi di posta inDesiderata di Microsoft, che valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio. Si utilizza la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
   
 ### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Per utilizzare la posta elettronica per inviare messaggi falsi positivi al team di analisi di posta inDesiderata di Microsoft
 
@@ -126,7 +125,7 @@ Se si eseguono spesso campagne di posta elettronica in blocco per gli utenti di 
   
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Verificare che il nome: rispecchi chi sta inviando il messaggio
 
-L'oggetto dovrebbe essere un breve riepilogo del messaggio e il corpo del messaggio deve indicare in modo chiaro e conciso cosa significa l'offerta, il servizio o il prodotto. Per esempio:
+L'oggetto dovrebbe essere un breve riepilogo del messaggio e il corpo del messaggio deve indicare in modo chiaro e conciso cosa significa l'offerta, il servizio o il prodotto. Ad esempio:
   
 Corretto
   
@@ -144,7 +143,7 @@ Più è facile per gli utenti sapere chi è e cosa si sta facendo, minore sarà 
   
 ### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Includi sempre un'opzione di annullamento della sottoscrizione nei messaggi di posta elettronica della campagna
 
-I messaggi di posta elettronica di marketing, in particolare le newsletter, dovrebbero includere sempre un modo di annullamento della sottoscrizione da messaggi di posta elettronica futuri. Per esempio:
+I messaggi di posta elettronica di marketing, in particolare le newsletter, dovrebbero includere sempre un modo di annullamento della sottoscrizione da messaggi di posta elettronica futuri. Ad esempio:
   
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
   
@@ -168,7 +167,7 @@ Altrettanto importante del modo in cui vengono inviati i messaggi di posta elett
   
 - Quando il messaggio di posta elettronica richiede che i destinatari aggiungono il mittente alla Rubrica, è necessario indicare chiaramente che tale azione non è una garanzia di recapito.
     
-- I reindirizzamenti inclusi nel corpo del messaggio devono essere simili e coerenti e non multipli e diversificati. Un reindirizzamento in questo contesto è qualsiasi elemento che punti al di fuori del messaggio, ad esempio collegamenti e documenti. Se si dispone di numerosi collegamenti pubblicitari o di annullamento della sottoscrizione oppure si aggiornano i collegamenti dei profili, tutti gli utenti devono puntare allo stesso dominio. Per esempio:
+- I reindirizzamenti inclusi nel corpo del messaggio devono essere simili e coerenti e non multipli e diversificati. Un reindirizzamento in questo contesto è qualsiasi elemento che punti al di fuori del messaggio, ad esempio collegamenti e documenti. Se si dispone di numerosi collegamenti pubblicitari o di annullamento della sottoscrizione oppure si aggiornano i collegamenti dei profili, tutti gli utenti devono puntare allo stesso dominio. Ad esempio:
     
     Corretto
     

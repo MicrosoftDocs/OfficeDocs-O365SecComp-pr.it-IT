@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Lo scopo di questo argomento è quello di aiutare l'utente a comprendere il processo per passare a Exchange Online Protection (EOP) da un'applicazione per l'igiene della posta elettronica locale o un servizio di protezione basato su cloud, nonché di fornire risorse per iniziare.
-ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340757"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693415"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a EOP da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 
@@ -56,9 +55,9 @@ Se si prende in considerazione una distribuzione ibrida, il migliore punto di pa
 
 Se si decide di passare a EOP, assicurarsi di prestare particolare attenzione alle seguenti aree:
   
-- **Regole di filtro personalizzate** Se si dispone di un filtro personalizzato o di regole aziendali per la cattura di posta indesiderata specifica, è consigliabile provare EOP con le impostazioni predefinite per un periodo, prima di eseguire la migrazione delle regole. EOP offre protezione da posta indesiderata a livello aziendale con le impostazioni predefinite, potrebbe risultare che non è necessario eseguire la migrazione di alcune delle regole a EOP. Naturalmente, se si dispone di regole sul posto che applicano criteri aziendali personalizzati specifici, è possibile crearli. [Le regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) sono disponibili istruzioni dettagliate per la creazione di regole del flusso di posta in EOP. 
+- **Regole di filtro personalizzate** Se si dispone di regole di filtro personalizzate o di regole di criteri aziendali per individuare specifici messaggi di posta indesiderata, si consiglia di provare EOP con le impostazioni predefinite per un certo periodo di tempo prima di eseguire la migrazione delle regole. Poiché EOP offre protezione da posta indesiderata a livello aziendale con impostazioni predefinite, è possibile che non sia necessario migrare alcune delle regole a EOP. Ovviamente, nel caso di regole che applicano criteri aziendali personalizzati specifici, è possibile eseguirne la creazione. [Le regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) sono disponibili istruzioni dettagliate per la creazione di regole del flusso di posta in EOP. 
     
-- Elenchi di indirizzi IP consentiti **e di indirizzi IP bloccati** Se si dispone di elenchi di indirizzi consentiti per utente e di blocco, è possibile copiare gli elenchi in EOP come parte del processo di configurazione. Per ulteriori informazioni sugli elenchi di indirizzi IP consentiti e sugli elenchi di indirizzi IP bloccati, vedere [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
+- **Elenco indirizzi IP consentiti ed Elenco indirizzi IP bloccati** Se si dispone elenchi indirizzi IP bloccati e consentiti per utente, attendere il tempo necessario per la copia degli elenchi in EOP durante il del processo di configurazione. Per ulteriori informazioni sugli elenchi di indirizzi IP consentiti e sugli elenchi di indirizzi IP bloccati, vedere [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
     
 - **Comunicazione protetta** Se un partner richiede la messaggistica crittografata, si consiglia di configurarla nell'interfaccia di amministrazione di Exchange. Per configurare questo scenario, vedere [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

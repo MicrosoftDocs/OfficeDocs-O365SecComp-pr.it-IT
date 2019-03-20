@@ -1,5 +1,5 @@
 ---
-title: Protezione contro le minacce in Office 365
+title: Protezione dalle minacce in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,14 +14,14 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come Office 365 Enterprise può aiutare a proteggere l'organizzazione da una serie di minacce, tra cui spoofing, malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati.
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245582"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693245"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Protezione contro le minacce in Office 365
+# <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
 
 Con Office 365 Enterprise, è possibile proteggere l'organizzazione da una serie di minacce, tra cui spoofing, malware, posta indesiderata, tentativi di phishing e accesso non autorizzato ai dati. Utilizzare le risorse in questa pagina per informazioni sulle opzioni di protezione dalle minacce e sulle azioni che è possibile eseguire.
 
@@ -39,7 +39,7 @@ Con Office 365 Enterprise, è possibile proteggere l'organizzazione da una serie
 
 - [Allegati sicuri di Office 365 ATP](atp-safe-attachments.md)
 
-- [Collegamenti sicuri di Office 365 ATP](atp-safe-links.md)
+- [Collegamenti sicuri ATP di Office 365](atp-safe-links.md)
 
 ## <a name="anti-phishing"></a>Anti-phishing
 
@@ -55,9 +55,9 @@ Se si utilizza un dominio personalizzato in Office 365, impedire la frode del mi
     
 - [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
+- [Utilizzo di DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
 
-## <a name="anti-spam"></a>Protezione posta indesiderata
+## <a name="anti-spam"></a>Protezione da posta inDesiderata
 
 - [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
@@ -72,7 +72,7 @@ Configurazione dei criteri per la gestione dello spoofing, la protezione da atta
   
 - [Informazioni su Office 365 ATP](office-365-atp.md)
 
-- [Ottenere una panoramica di Office 365 Threat Intelligence](office-365-ti.md)
+- [Ottenere una panoramica di Office 365 ATP piano 2](office-365-ti.md)
     
 - [Impostare i criteri di anti-phishing](set-up-anti-phishing-policies.md)
     

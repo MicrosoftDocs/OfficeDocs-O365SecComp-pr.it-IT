@@ -7,7 +7,6 @@ ms.date: 3/5/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: I messaggi di posta elettronica in blocco variano nei modelli di invio, nella creazione di contenuto e nelle procedure di acquisizione dell'elenco. Alcuni sono buoni mailer che inviano messaggi desiderati con contenuto pertinente ai propri abbonati. Questi messaggi generano alcuni reclami dai destinatari. Altri messaggi di posta elettronica in blocco inviano messaggio non richiesti che assomigliano molto alla posta indesiderata e generano numerosi reclami dai destinatari. Per distinguere questi tipi di messaggi di posta elettronica in blocco, viene assegnato un punteggio di livello di reclamo in blocco da parte di un messaggio di posta elettronica in blocco. Le valutazioni BCL variano da 1 a 9 a seconda di quanto è probabile che il mailer di posta in blocco debba generare reclami. Un mittente che ha un punteggio di BCL 9 può generare molti reclami dai destinatari, mentre non è probabile che un punteggio di BCL 3 generi molti reclami. Microsoft utilizza origini sia interne che di terze parti per identificare la posta in blocco e determinare la BCL appropriata. Questa valutazione è esposta nell'intestazione X-Microsoft-antispam di ogni messaggio. Per ulteriori informazioni su questa intestazione del messaggio, vedere intestazioni dei messaggi di protezione da posta indesiderata.
-ms.openlocfilehash: a948e90ba436dcfdb78df856e090983e6015bb0a
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: e6d639098adc8c29b09b186ff72e38c5f5ac4e81
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276016"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692315"
 ---
 # <a name="bulk-complaint-level-values"></a>Valori di livello di reclamo in blocco
 

@@ -7,7 +7,6 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
-ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670481"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693655"
 ---
 # <a name="troubleshooting-and-support-information"></a>Informazioni sul supporto tecnico e sulla risoluzione dei problemi
 

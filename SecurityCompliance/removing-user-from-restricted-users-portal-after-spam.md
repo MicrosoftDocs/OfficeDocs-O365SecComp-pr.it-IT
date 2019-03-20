@@ -1,5 +1,5 @@
 ---
-title: Rimozione di un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata
+title: Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -9,7 +9,6 @@ ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,14 +16,14 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se un utente invia continuamente messaggi di posta elettronica provenienti da Office 365 classificati come posta indesiderata, non invierà più messaggi.
-ms.openlocfilehash: 61d52ad1f25dc3767ad51da5b3a217ace59303ce
-ms.sourcegitcommit: 9918411c01e962d5c67d53dd30a8a9c28c547397
+ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30654553"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692015"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Rimozione di un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
 
 Se un utente invia continuamente messaggi di posta elettronica provenienti da Office 365 classificati come posta indesiderata, non invierà più messaggi in uscita. L'utente verrà elencato nel servizio come mittente in uscita non valido e riceverà un rapporto di mancato reCapito (NDR) che dichiara:
 
