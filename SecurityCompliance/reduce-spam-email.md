@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357547"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670561"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
@@ -56,6 +56,9 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
 - **Bloccare immediatamente un mittente** Se occorre bloccare immediatamente un mittente, è possibile applicare il blocco in base all'indirizzo di posta elettronica, al dominio o all'indirizzo IP. Vedere [Usare l'interfaccia di amministrazione di Exchange per creare una regola di flusso di posta che blocchi i messaggi inviati da un dominio](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Tenere presente che una voce nell'elenco di indirizzi consentiti di un utente finale può impedire l'applicazione di un blocco impostato dall'amministratore.
     
 - **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
+- **Abilitare [DKIM](use-dkim-to-validate-outbound-email.md)** per firmare tutti i messaggi in uscita e migliorare la sicurezza del dominio e del tenant.
+ > [!TIP]
+> Dopo aver abilitato DKIM è necessario abilitare [DMARC](use-dkim-to-validate-outbound-email.md) perché questo record verrà convalidato se DKIM e SPF funzionano correttamente e, in generale, i messaggi di posta elettronica di spoofing non includono alcuna firma in quanto O365 gestisce la chiave simmetrica pubblica e privata.
     
 ### <a name="for-users"></a>Per gli utenti
 

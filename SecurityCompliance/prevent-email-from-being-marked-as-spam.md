@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come impedire falsi positivi ed evitare che messaggi di posta elettronica effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455098"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670651"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365
 
@@ -62,6 +62,10 @@ Per funzionare correttamente, Exchange Online Protection (EOP) chiede agli ammin
 - **Selezionare i record DNS di Office 365**. Per consentire a EOP di fornire protezione, i record DNS di Mail Exchanger (MX) per tutti i domini devono essere indirizzati a Office 365 e solo a Office 365. Se MX non punta a Office 365, EOP non può fornire filtri antispam per gli utenti. Se si vuole usare un altro servizio o appliance per fornire filtri antispam al proprio dominio, prendere in considerazione la possibilità di disabilitare la protezione antispam in EOP. È possibile farlo creando una regola di flusso di posta che imposta il valore SCL su -1. Se in seguito si decide di usare EOP, assicurarsi di rimuovere questa regola di flusso di posta. 
     
 - **Attivare il componente aggiuntivo Segnala messaggio per gli utenti**: è consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
+
+- **Verificare che gli utenti rispettino i limiti consentiti** per l'invio e la ricezione dei messaggi di posta elettronica come illustrato [qui](https://docs.microsoft.com/it-IT/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+
+ - **Ricontrollare i livelli di blocco** come specificato [qui](bulk-complaint-level-values.md)
     
 ### <a name="for-users"></a>Per gli utenti
     
@@ -74,7 +78,7 @@ EOP rispetterà gli elenchi dei mittenti e dei destinatari attendibili, ma non q
 - **Disabilitare il filtro SmartScreen in Outlook** Se si usa un client desktop Outlook meno recente, è opportuno disabilitare la funzionalità di filtro SmartScreen, che è stata sospesa. Se abilitato, può causare falsi positivi. Questo non dovrebbe essere necessario se si esegue un client Outlook desktop aggiornato.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Risoluzione dei problemi: un messaggio viene recapitato nella cartella Posta indesiderata anche se è stato contrassegnato come posta legittima da EOP
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 Se gli utenti hanno abilitato l'opzione "Solo elenchi indirizzi attendibili: nella cartella Posta in arrivo verranno recapitati solo i messaggi inviati dagli utenti o dai domini inclusi nell'elenco Mittenti attendibili o Destinatari attendibili", tutti i messaggi di posta elettronica per un mittente verranno recapitati nella cartella della posta indesiderata, a meno che il mittente non sia incluso nell'elenco dei mittenti attendibili del destinatario. Questo avverrà indipendentemente dal fatto che EOP contrassegni o meno un messaggio come posta legittima o dall'aver configurato o meno una regola in EOP per contrassegnare il messaggio come posta legittima.
   
@@ -90,7 +94,7 @@ Se si osserva l'intestazione di un messaggio, questa può includere il timbro SF
     
 2. Eseguire il comando seguente per visualizzare le impostazioni di configurazione della posta indesiderata dell'utente:
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 
