@@ -88,12 +88,12 @@
 ### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Protezione contro le minacce](protect-against-threats.md)
+## [Guida introduttiva: Configurare Office 365 Advanced Threat Protection](checklist-atp-setup.md)
 ## [Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
 ### [Panoramica di EOP](videos-for-getting-started-with-protecting-your-email.md)
 ### [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 ### [Come evitare che i messaggi effettivi vengano contrassegnatati come indesiderati in Office 365 ](prevent-email-from-being-marked-as-spam.md)
 ### [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)
-### [Evitare che la posta elettronica venga contrassegnata come indesiderata in Exchange Online Protection e Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Controllo della posta indesiderata in uscita in Office 365](outbound-spam-controls.md)
 ### [Bloccare la posta indesiderata utilizzando l'apposito filtro di Office 365 per evitare problemi di falsi negativi](reduce-spam-email.md)
 ### [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
 ## [Abilitare o disabilitare la ricerca dei log di controllo](turn-audit-log-search-on-or-off.md)
-## [Abilitare il controllo delle cassette postali](enable-mailbox-auditing.md)
+## [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md)
 ## [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md)
 ## [Usare il log di controllo per risolvere i problemi degli scenari comuni](auditing-troubleshooting-scenarios.md)
 ## [Usare il controllo di condivisione nel log di controllo](use-sharing-auditing.md)
