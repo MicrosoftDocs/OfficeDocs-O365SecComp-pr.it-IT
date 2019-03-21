@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono ottenere informazioni sugli avvisi e le code in coda nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454868"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720306"
 ---
 # <a name="queue-alerts-and-queues"></a>Avvisi di coda e code
 
@@ -69,3 +69,7 @@ Anche se il volume del messaggio in coda non ha superato la soglia, è comunque 
 Quando si fa clic sul numero di messaggi in coda nelle **Code**, i dettagli della coda e le indicazioni su come risolvere il problema verranno visualizzati in un riquadro a comparsa (lo stesso riquadro a comparsa visualizzato dopo aver fatto clic su **Visualizza coda** nei dettagli di un avviso di coda).
 
 ![Dettagli coda](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>Vedere anche
+
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

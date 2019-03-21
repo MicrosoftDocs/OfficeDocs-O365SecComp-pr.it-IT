@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
-ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454928"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720266"
 ---
 # <a name="auto-forwarded-messages-report"></a>Report dei messaggi inoltrati automaticamente
 
@@ -33,3 +33,7 @@ Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riqua
 ## <a name="insights"></a>Approfondimenti
 
 Vengono generate due informazioni in base ai dati del rapporto: **nuovi utenti di inoltro** e **nuovi domini di inoltro**. Ogni Insight fornisce un riepilogo del numero di nuovi Forwarder o domini con un collegamento al **nuovo rapporto di inoltro** che fornisce maggiori dettagli per i due tipi di dati. Il **nuovo rapporto di inoltro** Mostra anche una visualizzazione della sequenza temporale di nuove attività e la tabella dei dettagli identifica gli utenti che hanno avviato l'inoltro e a quali domini.
+
+## <a name="see-also"></a>Vedere anche
+
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

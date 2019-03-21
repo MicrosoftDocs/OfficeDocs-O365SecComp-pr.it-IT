@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Gli amministratori possono ottenere informazioni sull'Insight delle regole del flusso di posta lenta nel dashboard del flusso di posta in Office 365 Security & Compliance Center.
-ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454878"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720256"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Approfondimenti sulle regole del flusso di posta lento
 
@@ -34,3 +34,7 @@ L'Insight consentirà di identificare e ottimizzare le regole del flusso di post
 Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a comparsa dove è possibile esaminare la regola. Nel riquadro a comparsa, è anche possibile fare clic su **Visualizza messaggi di esempio** per visualizzare il tipo di messaggi interessati dalla regola.
 
 ![Riquadro a comparsa dopo aver fatto clic su Visualizza dettagli in una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+
+## <a name="see-also"></a>Vedere anche
+
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

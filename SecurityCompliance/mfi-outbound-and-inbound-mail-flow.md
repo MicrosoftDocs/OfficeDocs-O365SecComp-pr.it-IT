@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sul widget del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta in Office 365 Security & Compliance Center.
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454888"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720286"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flusso di posta in ingresso e in uscita
 
@@ -48,3 +48,7 @@ La visualizzazione del **flusso di posta** Mostra il volume dei messaggi attrave
 È possibile selezionare la visualizzazione **utilizzo TLS** dall'elenco a discesa per visualizzare la ripartizione della protezione TLS per i messaggi tramite il connettore. Analogamente alla relazione **panoramica sul rapporto TLS** , questa visualizzazione Mostra la percentuale delle diverse versioni di TLS. Per le connessioni TLS 1,0, è effettivamente necessario ottenere il server di posta elettronica o il server del partner aggiornato o risolto per evitare eventuali problemi quando il supporto di TLS 1,0 è finalmente deprecato in Office 365. Per ulteriori informazioni, vedere informazioni [di riferimento tecnico sulla crittografia in Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
 
 Insights punta ai connettori per attirare la vostra attenzione sui potenziali problemi di crittografia TLS per il connettore. Gli Insight sono: **No TLS è superiore al 25%** o **TLS 1,0 è superiore a 50%**. Se vengono visualizzate queste informazioni, è necessario esaminare i server di posta elettronica associati al connettore o contattare l'organizzazione partner.
+
+## <a name="see-also"></a>Vedere anche
+
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

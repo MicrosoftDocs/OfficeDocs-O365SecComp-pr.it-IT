@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare un criterio di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474157"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701291"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare i criteri di supervisione per l'organizzazione
 
@@ -62,26 +62,20 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Passaggio 1: configurare i gruppi per la superVisione (facoltativo)
 
- Quando si crea un criterio di supervisione, si determinerà gli utenti che avranno esaminato le comunicazioni e che eseguiranno tali revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, creare gruppi per gli utenti che avranno la propria comunicazione e i gruppi di utenti che rivedranno tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi, ad esempio se si desidera monitorare le comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo che non verrà controllato. Per informazioni dettagliate sul funzionamento di questo metodo, vedere [gruppi di distribuzione di esempio](configure-supervision-policies.md#GroupExample) .
-  
-Per controllare le comunicazioni tra o all'interno di gruppi nell'organizzazione, configurare i gruppi di distribuzione nell'interfaccia di amministrazione di Exchange (andare ai **gruppi**di **destinatari** \> ). Per ulteriori informazioni sulla configurazione dei gruppi di distribuzione, vedere [Manage Distribution Groups](http://go.microsoft.com/fwlink/?LinkId=613635) .
-  
-> [!NOTE]
-> Se si preferisce, è inoltre possibile utilizzare gruppi di distribuzione dinamici o gruppi di sicurezza per la supervisione. Per decidere se migliorare le esigenze dell'organizzazione, vedere [gestire i gruppi di sicurezza abilitaTi alla posta elettronica](http://go.microsoft.com/fwlink/?LinkId=627033)e [gestire i gruppi di distribuzione dinamici](http://go.microsoft.com/fwlink/?LinkId=627058).
-  
-<a name="GroupExample"> </a>
+ Quando si crea un criterio di supervisione, si determinerà gli utenti che avranno esaminato le comunicazioni e che eseguiranno tali revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che avranno la propria comunicazione riesaminata e i gruppi per gli utenti che rivedranno tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi, ad esempio se si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non è in grado di eseguire la supervisione.
 
-### <a name="example-distribution-groups"></a>Gruppi di distribuzione di esempio
+Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di supervisione:
 
-In questo esempio viene incluso un gruppo di distribuzione che è stato configurato per un'organizzazione finanziaria denominata Contoso Financial International.
-  
-In Contoso Financial International, è necessario controllare un campionamento delle comunicazioni tra broker negli Stati Uniti. Tuttavia, i responsabili della conformità all'interno di tale gruppo non richiedono la supervisione. Per questo esempio, è possibile creare i gruppi seguenti:
-  
-|**Configurare questo gruppo di distribuzione**|**Indirizzo di gruppo (alias)**|**Descrizione**|
+| **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Tutti i broker degli Stati Uniti | US_Brokers@Contoso.com | Questo gruppo include gli indirizzi di posta elettronica per tutti i broker basati su US che lavorano per contoso. |
-| Tutti i responsabili della conformità degli Stati Uniti | US_Compliance@Contoso.com  | Questo gruppo include gli indirizzi di posta elettronica per tutti i responsabili della conformità basati su US che lavorano per contoso. Poiché questo gruppo è un sottoinsieme di tutti i broker basati su Stati Uniti, è possibile utilizzare questo alias per esonerare i responsabili della conformità da un criterio di supervisione. |
+|Utenti controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
+| Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
+Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
+- [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Gestire i gruppi di protezione abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Passaggio 2: rendere disponibile la supervisione nell'organizzazione (obbligatorio)
@@ -118,43 +112,26 @@ Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere pe
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>Passaggio 3: creare tipi di informazioni riservate personalizzate o dizionari per parole chiave personalizzate (facoltativo)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Passaggio 3: creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate (facoltativo)
 
 Per scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata dei criteri di supervisione, è necessario prima di tutto creare questi elementi, se necessario.
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Creare dizionario di parole chiave personalizzato/lessico (facoltativo)
+
+Se si utilizza un editor di testo, ad esempio il blocco note, è possibile creare un nuovo file che includa i termini di parola chiave che si desidera monitorare in un criterio di supervisione. Assicurarsi che ogni termine sia su una riga distinta e salvare il file nel formato **Unicode/UTF-16 (Little endian)** .
+
 ### <a name="create-custom-sensitive-information-types"></a>Creare tipi di informazioni riservate personalizzate
 
-1. Creare un nuovo tipo di informazioni riservate nel centro conformità di Office 365 Security &. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
+1. Creare un nuovo tipo di informazioni riservate e aggiungere il dizionario personalizzato nel centro conformità di Office 365 Security &. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
 
     - Definire un nome e una descrizione per il tipo di informazioni riservate
     - Definire gli elementi di prossimità, livello di confidenza e motivo primario
+    - Importare il dizionario personalizzato come requisito per l'elemento corrispondente
     - Esaminare le selezioni e creare il tipo di informazioni riservate
 
-    Per informazioni più dettagliate, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md).
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>Creare dizionario/lessico di parole chiave personalizzato
-
-1. Se si utilizza un editor di testo, ad esempio il blocco note, è possibile creare un nuovo file che includa i termini di parola chiave che si desidera monitorare in un criterio di supervisione. Assicurarsi che ogni termine sia su una riga distinta e salvare il file nel formato **Unicode/UTF-16 (Little endian)** .
-2. Importare il file di parole chiave nel tenant di Office 365 utilizzando PowerShell. Per connettersi a Office 365 con PowerShell, vedere [Connect to office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-    Dopo aver effettuato la connessione a Office 365 con PowerShell, eseguire i seguenti comandi per importare il dizionario di parole chiave:
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    Per informazioni più dettagliate, vedere [creare un dizionario di parole chiave](create-a-keyword-dictionary.md).
-
-3. Creare un nuovo tipo di informazioni riservate nel centro conformità di Office 365 Security &. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
-
-    - Definire un nome e una descrizione per il tipo di informazioni riservate
-    - Aggiungere il dizionario personalizzato come requisito per l'elemento corrispondente
-    - Esaminare le selezioni e creare il tipo di informazioni riservate
+    Per informazioni più dettagliate, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md) e [creare un dizionario di parole chiave](create-a-keyword-dictionary.md)
 
     Dopo aver creato il dizionario/lessico personalizzato, è possibile visualizzare le parole chiave configurate utilizzando il cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) oppure aggiungere e rimuovere termini utilizzando il cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
-
-    Per informazioni più dettagliate, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md).
 
 <a name="setupsuper"> </a>
 
