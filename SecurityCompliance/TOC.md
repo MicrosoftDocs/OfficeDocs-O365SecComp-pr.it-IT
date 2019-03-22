@@ -166,7 +166,7 @@
 #### [Crittografia in Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Crittografia in Azure](office-365-azure-encryption.md)
 
-## [Advanced Threat Protection (collegamenti sicuri e allegati sicuri)](office-365-atp.md)
+## [Protezione avanzata dalle minacce](office-365-atp.md)
 ### [Collegamenti sicuri di ATP](atp-safe-links.md)
 #### [Configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
 #### [Configurare un elenco personalizzato di URL da "non riscrivere"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -183,7 +183,10 @@
 ## [Analisi e risposta alle minacce](office-365-ti.md)
 ### [Introduzione](get-started-with-ti.md)
 ### [Indicatori delle minacce](threat-trackers.md)
-### [Usare la finestra Esplora minacce nel Centro sicurezza e conformità](use-explorer-in-security-and-compliance.md)
+### [Esplora minacce](use-explorer-in-security-and-compliance.md)
+#### [Visualizzazioni di Esplora minacce](threat-explorer-views.md)
+#### [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
+### [Analisi e risposta alle minacce automatizzate](automated-investigation-response-office.md)
 ### [Visualizzare i report di ATP](view-reports-for-atp.md)
 ### [Simulatore di attacchi in Office 365](attack-simulator.md)
 ### [Proteggere gli utenti con l'analisi e la risposta alle minacce](keep-users-safe-with-office-365-ti.md)
@@ -319,6 +322,7 @@
 #### [Limiti di Advanced eDiscovery (anteprima)](compliance20/limits-ediscovery20.md)
 #### [Tipi di file supportati](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campi dei metadati del documento](compliance20/document-metadata-fields.md)
+#### [Risoluzione dei problemi di AzCopy](compliance20/troubleshooting-azcopy.md)
 
 ## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Introduzione ad Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
