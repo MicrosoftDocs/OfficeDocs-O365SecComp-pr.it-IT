@@ -3,23 +3,22 @@ title: Creare un dizionario di parole chiave
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Per identificare le informazioni riservate a volte è necessario cercare delle parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni riservate, questi elenchi hanno dimensioni limitate e richiedono la modifica di file XML per crearli o modificarli. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala molto più ampia, supportano fino a 100.000 termini per dizionario.
-ms.openlocfilehash: 8e115c0feddbd55a498db3481e6ad4bc7ebb07e7
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 5561f8b11cf7bab8c726da332caca1484d455b35
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638913"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701311"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -27,17 +26,32 @@ La prevenzione della perdita dei dati in Office 365 consente di identificare, mo
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Procedura di base per la creazione di un dizionario di parole chiave
 
-Le parole chiave per il dizionario possono provenire da diverse origini, in genere da un file (ad esempio, un elenco con estensione csv o txt), da un elenco che viene immesso direttamente nel cmdlet o da un dizionario esistente. Quando si crea un dizionario di parole chiave, seguire gli stessi passaggi di base:
+Le parole chiave per il dizionario possono provenire da diverse origini, in genere da un file (ad esempio, un elenco con estensione csv o txt) importato nel servizio o tramite il cmdlet di PowerShell, da un elenco che viene immesso direttamente nel cmdlet di PowerShell o da un dizionario esistente. Quando si crea un dizionario di parole chiave, seguire gli stessi passaggi di base:
   
-1. **Connettersi a PowerShell nel Centro sicurezza e conformità**: vedere [questo argomento](https://docs.microsoft.com/it-IT/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Usare **Centro sicurezza e conformità** o connettersi a **PowerShell per Centro sicurezza e conformità**.
     
-2. **Definire o caricare le parole chiave dell'origine prevista**: il cmdlet per creare un dizionario di parole chiave accetta un elenco di parole chiave separate da virgole, quindi questo passaggio può variare leggermente a seconda dell'origine delle parole chiave. 
+2. **Definire o caricare le parole chiave dell'origine prevista**: sia la procedura guidata che il cmdlet accettano un elenco di parole chiave delimitate da virgole per creare un dizionario di parole chiave personalizzato, quindi questo passaggio può variare leggermente a seconda dell'origine delle parole chiave. Una volta caricate, le parole chiave vengono codificate e convertite in una matrice di byte prima di essere importate.
     
-3. **Codificare le parole chiave**: una volta caricate, le parole chiave vengono convertite in una matrice di byte prima di essere importate. 
+3. **Creare il dizionario**: scegliere un nome e una descrizione e creare il dizionario.
+
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Creare un dizionario di parole chiave usando il Centro sicurezza e conformità.
+
+Seguire la procedura seguente per creare e importare parole chiave per un dizionario personalizzato:
+
+1. Eseguire la connessione al [Centro sicurezza e conformità](https://protection.office.com).
+2. Accedere a **Classificazioni > Tipi di informazioni sensibili**.
+3. Selezionare **Crea** e immettere un **nome** e una **descrizione** per i tipi di informazioni sensibili, quindi selezionare **Avanti**
+4. Selezionare **Aggiungere un elemento**, quindi selezionare **Dizionario (parole chiave grandi)** nell'elenco a discesa **Rilevare il contenuto che contiene**.
+5. Selezionare **Aggiungere un dizionario**.
+6. Nel controllo Ricerca selezionare **È possibile creare nuovi elementi, come Dizionari di parole chiave, qui**.
+7. Immettere un **nome** per il dizionario personalizzato.
+8. Selezionare **Importa** e quindi **Da testo** o **Da CSV** in base al tipo di file con parole chiave.
+9. Nella finestra di dialogo File selezionare il file delle parole chiave nel computer locale o nella condivisione file di rete, quindi selezionare **Apri**.
+10. Selezionare **Salva**, quindi selezionare il dizionario personalizzato nell'elenco **Dizionari di parole chiave**.
+11. Selezionare **Aggiungi**, quindi **Avanti**.
+12. Esaminare e finalizzare le selezioni dei tipi di informazioni sensibili, quindi selezionare **Fine**.
     
-4. **Creare il dizionario**: scegliere un nome e una descrizione e creare il dizionario. 
-    
-## <a name="create-a-keyword-dictionary-from-a-file"></a>Creare un dizionario di parole chiave da un file
+## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Creare un dizionario di parole chiave da un file con PowerShell
 
 Spesso quando si deve creare un dizionario di grandi dimensioni, è necessario utilizzare parole chiave da un file o un elenco esportato da un'altra origine. In questo caso, viene creato un dizionario di parole chiave contenente un elenco di termini offensivi da evitare nella posta elettronica esterna. È necessario prima [connettersi al PowerShell del Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/it-IT/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
@@ -59,7 +73,9 @@ Spesso quando si deve creare un dizionario di grandi dimensioni, è necessario u
 
 ## <a name="modifying-an-existing-keyword-dictionary"></a>Modifica di un dizionario di parole chiave esistente
 
-Potrebbe essere necessario modificare le parole chiave in uno dei dizionari di parole chiave o modificare uno dei dizionari predefiniti. In questo esempio alcuni termini vengono modificati in PowerShell, salvati in locale, dove è possibile modificarli in un editor, e quindi inseriti al posto dei termini esistenti. Prima di tutto, recuperare l'oggetto dizionario:
+Può essere necessario modificare le parole chiave in uno dei dizionari di parole chiave o modificare uno dei dizionari predefiniti. Attualmente è possibile aggiornare solo un dizionario di parole chiave personalizzato con PowerShell. 
+
+In questo esempio alcuni termini verranno modificati in PowerShell, salvati in locale, dove è possibile modificarli in un editor, e quindi inseriti al posto dei termini esistenti. Prima di tutto, recuperare l'oggetto dizionario:
   
 ```
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
