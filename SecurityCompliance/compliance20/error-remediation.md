@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296729"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737676"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
@@ -62,8 +62,8 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > In caso di problemi con questo comando, vedere https://go.microsoft.com/fwlink/?linkid=2038117 per suggerimenti per la risoluzione dei problemi.
+    > [!NOTE]
+    > Se il comando AzCopy fornito ha esito negativo, vedere per [risolvere i problemi relativi a AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
 
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     > [!NOTE]

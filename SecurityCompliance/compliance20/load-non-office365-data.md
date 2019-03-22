@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b177fc292c748f21907621196dc28d6b8fe17959
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296789"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737666"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Caricare dati non Office 365 in un set di lavoro
 
 Non tutti i documenti che potrebbe essere necessario analizzare con Office 365 Advanced eDiscovery vivranno in Office 365. Con la caratteristica di importazione di contenuto non Office 365 in Advanced eDiscovery è possibile caricare documenti che non risiedono in Office 365 in un working set, in modo da essere analizzati con Advanced eDiscovery. In questa procedura viene illustrato come portare i documenti non Office 365 in Advanced eDiscovery per l'analisi.
 
 >[!Note]
->Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile richiedere una valutazione di Office 365 Enterprise E5.
+>Advanced eDiscovery richiede un Office 365 E3 con il componente aggiuntivo per la conformità avanzato o un abbonamento E5 per l'organizzazione. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 Se si utilizza la funzionalità carica non Office 365 come descritto in questa procedura, è necessario disporre di:
@@ -38,6 +38,14 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
 - Un caso di eDiscovery esistente.
 
 - Tutti i file per il caricamento raccolti in cartelle in cui è presente una cartella per ogni custode e il nome delle cartelle è in questo formato *alias @ NomeDominio* . L' *alias @ DomainName* deve essere Users Office 365 alias and Domain. È possibile raccogliere tutte le cartelle *alias @ DomainName* in una cartella radice. La cartella radice può contenere solo le cartelle *alias @ DomainName* , non devono essere presenti file liberi nella cartella radice.
+
+   La struttura delle cartelle per i dati non di Office 365 che si intende caricare dovrebbe essere simile alla seguente:
+
+   - c:\nonO365\abraham.mcmahon@contoso.com
+   - c:\nonO365\jewell.gordon@contoso.com
+   - c:\nonO365\staci.gonzalez@contoso.com
+
+   Dove abraham.mcmahon@contoso.com, jewell.gordon@contoso.com e staci.gonzalez@contoso.com sono indirizzi SMTP dei depositari nel caso.
 
 - Un account che sia uno eDiscovery Manager o eDiscovery Administrator Microsoft Azure Storage Tools installato su un computer che ha accesso alla struttura di cartelle di contenuto non Office 365.
 
@@ -65,6 +73,9 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
 ![Importazione/caricamento di file non di Office 365](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
 ![Non Office 365 Import-AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+
+> [!NOTE]
+> Se il comando AzCopy fornito ha esito negativo, fare riferimento a [risoluzione dei problemi AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md) .
 
 6. Infine, tornare alla conformità & sicurezza e fare clic sul pulsante **Avanti: elabora file** .  Verrà avviata l'elaborazione, l'estrazione del testo e l'indicizzazione dei file caricati.  È possibile tenere conto dello stato di avanzamento dell'elaborazione qui o nella scheda **processi** .  Una volta completato, i nuovi file saranno disponibili nel working set.  Dopo aver completato l'elaborazione, è possibile chiudere la procedura guidata.
 
