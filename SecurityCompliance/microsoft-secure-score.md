@@ -11,14 +11,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: de3abe7ca0e84efd2412984e172202d8f3962476
-ms.sourcegitcommit: 9d48b656406e916e93651352692c5c6bcbbd645f
+ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30203726"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789411"
 ---
-# <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
+# <a name="microsoft-secure-score"></a>Microsoft Secure Score
+
+[!include[Prerelease�information](prerelease.md)]
 
 Con Microsoft Secure score in Microsoft 365 Security Center, è possibile avere maggiore visibilità e controllo sulla posizione di sicurezza dell'organizzazione. Da un Dashboard centralizzato è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365.
 

@@ -13,14 +13,15 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: bcd5dd27ac0061277a47dcc5875990cc473cb768
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 8b308e4b5ce651632834884c12a4500989b43bf5
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693375"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747582"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 

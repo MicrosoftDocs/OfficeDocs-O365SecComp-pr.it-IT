@@ -1,9 +1,9 @@
 ---
-title: Indagine automatizzata e risposta (aria) con Office 365 Threat Intelligence
+title: Indagine automatizzata e risposta (aria) con Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/21/2019
+ms.date: 03/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,47 +13,55 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: c2d5acd0bf26dc28b30f26488adf47de2c834fb6
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.openlocfilehash: c6cfc03588e580382f673b2e9be8543bfcaf9ac1
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736369"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747562"
 ---
-# <a name="automated-investigation-and-response-air-with-office-365-threat-intelligence"></a>Indagine automatizzata e risposta (aria) con Office 365 Threat Intelligence
+# <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
 
-Indagine automatizzata e risposta (AIR) (prossimamente a [Office 365 Threat Investigation and response capabilities](office-365-ti.md)) consente di eseguire indagini automatizzate e il risanamento di minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e in che modo può essere utile per l'organizzazione attenuare le minacce in modo più efficace ed efficiente. Per ulteriori informazioni sulla disponibilità dell'aria, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Indagine automatizzata e risposta (AIR) (prossimamente a [Office 365 Threat Investigation and response capabilities](office-365-ti.md)) consente di eseguire indagini automatizzate e il risanamento di minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. Per ulteriori informazioni su quando saranno disponibili altre funzionalità in AIR, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="alerts"></a>Avvisi
 
 Gli [avvisi](alert-policies.md#viewing-alerts) rappresentano trigger per i flussi di lavoro del team di operazioni di sicurezza per la risposta agli incidenti. Definire la priorità del set di avvisi corretti per l'analisi e verificare che non vi siano minacce non indirizzate. Quando le indagini sugli avvisi vengono eseguite manualmente, i team delle operazioni di sicurezza devono cercare e correlare le entità (ad esempio, il contenuto, i dispositivi e gli utenti) a rischio di minacce. Tali attività e flussi di lavoro richiedono molto tempo e coinvolgono più strumenti e sistemi. Con AIR, l'analisi e la risposta vengono automatizzate in avvisi chiave per la sicurezza e la gestione delle minacce che attivano automaticamente gli schemi di risposta alla sicurezza. 
 
-per visualizzare gli avvisi, nel centro conformità & sicurezza di Office 365 scegliere **avvisi** > **visualizza avvisi**.
+Nella versione iniziale di AIR nell'aprile 2019, vengono esaminati automaticamente gli avvisi generati dal seguito dei criteri di avviso per gli eventi Singel. 
+
+1. È stato rilevato un clic URL potenzialmente dannoso
+2. Messaggi di posta elettronica segnalati dall'utente come phishing *
+3. Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
+4. Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
+
+* Nota: a questi avvisi è stata assegnata una gravità "inFormativa" nei rispettivi criteri di avviso nel centro sicurezza e conformità con le notifiche di posta elettronica disattivate. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
+
+per visualizzare gli avvisi, nel centro conformità & sicurezza di Office 365 scegliere **avvisi** > **visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente.
 
 ![Avvisi relativi al collegamento alle indagini](media/air-alerts-page-details.png) 
 
-Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente.
 
 ## <a name="security-playbooks"></a>Schemi di sicurezza
 
 Gli schemi di sicurezza sono criteri di back-end che sono al centro dell'automazione in Microsoft Threat Protection. Gli schemi di sicurezza forniti in AIR sono basati su scenari comuni di sicurezza del mondo reale. Un playbook di sicurezza viene avviato automaticamente quando un avviso viene attivato all'interno dell'organizzazione. Dopo che l'avviso è stato attivato, l'oggetto PlayBook associato viene eseguito automaticamente. Il PlayBook esegue un'indagine, esaminando tutti i metadati associati (inclusi i messaggi di posta elettronica, gli utenti, i soggetti, i mittenti e così via) e, in base ai risultati, consiglia una serie di azioni che il team di sicurezza dell'organizzazione può intraprendere per il controllo e l'attenuazione la minaccia. 
 
-Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le minacce più frequenti che le organizzazioni devono affrontare oggi. Sono basati sull'input dalle operazioni di sicurezza e dai team di risposta agli incidenti, compresi quelli che aiutano a difendere le risorse Microsoft.
+Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le minacce più frequenti che le organizzazioni devono affrontare oggi. Sono basati sull'input dalle operazioni di sicurezza e dai team di risposta agli incidenti, compresi quelli che aiutano a difendere Microsoft e le risorse dei clienti.
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Gli schemi di sicurezza vengono implementati in fasi
 
 Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi
 
-- **Fase 1 (2019 aprile)**: i PlayBook includono suggerimenti per la revisione e l'approvazione da parte degli amministratori della sicurezza. 
+- **Fase 1 (2019 aprile)**: i PlayBook includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza. 
 
-- **Fase 2 (2019 giugno)**: gli amministratori della sicurezza avranno la possibilità di consentire ai PlayBook di sicurezza di intervenire automaticamente, senza interazione amministrativa.
+- **Fase 2 (2019 giugno)**: gli amministratori della sicurezza avranno la possibilità di configurare gli schemi di sicurezza per intervenire automaticamente, senza interazione amministrativa.
 
 La fase 1 includerà gli schemi seguenti:
 - Messaggio phishing visualizzato dall'utente
-- URL fare clic su modifica verdetto e sostituzione del blocco di collegamenti sicuri ATP
-- Malware ZAP
-- Phishing ZAP
-- Indagini manuali (tramite Esplora risorse)
+- URL fare clic su modifica verdetto 
+- Malware rilevato dopo il recapito (ZAP malware)
+- Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
+- Indagini manuali tramite posta elettronica (tramite Esplora minacce)
 
 Sono previste diverse altre PlayBook per la fase 2.
 
@@ -61,8 +69,8 @@ Sono previste diverse altre PlayBook per la fase 2.
 
 Ogni PlayBook include: 
 - un'indagine radice, 
-- passaggi per la ricerca di altre potenziali minacce e 
-- correzione delle minacce consigliate.
+- passaggi necessari per identificare e correlare altre potenziali minacce e 
+- azioni di correzione delle minacce consigliate.
 
 Ogni passaggio di alto livello include numerosi passaggi secondari eseguiti per fornire una risposta profonda, dettagliata ed esaustiva alle minacce.
 
@@ -81,13 +89,13 @@ Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio d
 
 Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azioni consigliate da eseguire.
   
-Successivamente, vengono eseguiti diversi passaggi di caccia:
+Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
 
 - Vengono ricercati messaggi di posta elettronica simili in altri cluster di posta elettronica.
 - Il segnale viene condiviso con altre piattaforme, ad esempio [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
-- Si determina se gli utenti hanno fatto clic sul messaggio di posta elettronica sospetti.
-- Viene effettuato un controllo tra Office 365 [EOP](eop/exchange-online-protection-eop.md) e [ATP](office-365-atp.md) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
-- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali in [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali eventi o avvisi correlati. 
+- Si determina se gli utenti hanno fatto clic su eventuali collegamenti nei messaggi di posta elettronica sospetti.
+- Viene effettuato un controllo in Office 365 Exchange Online Protection ([EOP]) (EOP/Exchange-Online-Protection-EOP. MD) e Office 365 Advanced Therat Protection ([ATP]) (Office-365-atp.md) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
+- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative all'attività degli utenti. 
 
 Durante la fase di caccia, i rischi e le minacce sono assegnati a vari passaggi di caccia.  
 
@@ -95,7 +103,7 @@ La correzione è la fase finale del PlayBook. Durante questa fase, vengono esegu
 
 ## <a name="getting-started"></a>Introduzione
 
-Per accedere alle indagini, come amministratore globale o amministratore di sicurezza di Office 365, passare a Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
+Per accedere alle indagini, come amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza, passare a Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
 
 - Nella barra di spostamento a sinistra, andare a > **indagini**sulla **gestione delle minacce**.
 
@@ -106,6 +114,8 @@ Per accedere alle indagini, come amministratore globale o amministratore di sicu
 ![Widget aria](media/air-widgets.png)
 
 I widget aria verranno visualizzati nella parte superiore del dashboard di [sicurezza](security-dashboard.md). Selezionare un widget per iniziare.
+
+È inoltre possibile accedere a un invesitgation direttamente dagli avvisi correlati.
 
 ### <a name="automated-investigations"></a>Indagini automatizzate
 
@@ -132,7 +142,7 @@ Quando si apre una specifica indagine, viene visualizzata la pagina del grafico 
 
 ### <a name="alert-investigation"></a>Indagine sugli avvisi
 
-Nella scheda **avvisi** per un'indagine, è possibile visualizzare tutti gli avvisi rilevanti per l'indagine. I dettagli includono l'avviso che ha attivato l'indagine e altri avvisi, ad esempio l'accesso a rischio, il download di massa e così via, che sono correlati all'inchiesta. Da questa pagina, un analista di sicurezza può anche visualizzare ulteriori dettagli sui singoli avvisi.
+Nella scheda **avvisi** per un'indagine, è possibile visualizzare gli avvisi rilevanti per l'indagine. I dettagli includono l'avviso che ha attivato l'indagine e altri avvisi, ad esempio l'accesso a rischio, il download di massa e così via, che sono correlati all'inchiesta. Da questa pagina, un analista di sicurezza può anche visualizzare ulteriori dettagli sui singoli avvisi.
 
 ![Pagina avvisi aria](media/air-investigationalertspage.png)
 
@@ -151,7 +161,7 @@ Dato il volume totale di messaggi di posta elettronica che gli utenti di un'orga
 
 può richiedere molte ore. AIR ora automatizza questo processo, salvando il tempo e lo sforzo del team di sicurezza dell'organizzazione. 
 
-Si consideri, ad esempio, l'immagine seguente. Il primo gruppo di tre messaggi di posta elettronica è stato ritenuto phishing. Un altro gruppo di messaggi simili con lo stesso IP e l'oggetto è stato trovato ed è considerato dannoso, in quanto alcuni di essi sono stati identificati come phishing durante il rilevamento iniziale. 
+Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi di posta elettronica è stato ritenuto phishing. Un altro gruppo di messaggi simili con lo stesso IP e l'oggetto è stato trovato e considerato dannoso, in quanto alcuni di essi sono stati identificati come phishing durante il rilevamento iniziale. 
 
 ![Pagina di ricerca della posta elettronica AEREa](media/air-investigationemailpage.png)
 
@@ -161,11 +171,13 @@ Si consideri, ad esempio, l'immagine seguente. Il primo gruppo di tre messaggi d
 
 ![Messaggi di posta elettronica di analisi AEREa con dettagli a comparsa](media/air-investigationemailpageflyoutdetails.png)
 
+* Nota: nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia dei volumi come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili attorno al tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, le campagne di posta elettronica in blocco e spom, a volte condividono anche queste caratteristiche. Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
+
 ### <a name="user-investigation"></a>Analisi degli utenti
 
 Nella scheda **utenti** è possibile visualizzare tutti gli utenti identificati come parte dell'indagine. 
 
-Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di compromesso e anomalie basate su una nuova regola di posta in arrivo che è stata creata. Ulteriori dettagli (prova) dell'indagine sono disponibili tramite visualizzazioni dettagliate all'interno di questa scheda.
+Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di compromesso e anomalie basate su una nuova regola di posta in arrivo che è stata creata. Ulteriori dettagli (prova) dell'indagine sono disponibili tramite visualizzazioni dettagliate all'interno di questa scheda. gli indicatori di compromesso e anomalie possono includere anche rilevamenti di anomalie dalla [sicurezza delle app cloud di Microsoft](https://docs.microsoft.com/cloud-app-security).
 
 ![Pagina utenti di analisi AEREa](media/air-investigationuserspage.png)
 
@@ -183,7 +195,7 @@ Nell'ambito dell'inchiesta, AIR correla le minacce alla posta elettronica ai dis
 
 È possibile:
 - Ottenere una panoramica visiva dei computer e delle minacce correnti trovati.
-- Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini di Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)correlate.
+- Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini di Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) ATP correlate in Windows Defender ATP Security Center.
 
 ### <a name="entity-investigation"></a>Indagine su entità
 
@@ -201,7 +213,7 @@ In questa sezione, è possibile visualizzare le entità indagate. È possibile v
 
 ### <a name="playbook-log"></a>Registro PlayBook
 
-Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook che si sono verificati durante l'indagine. Il log acquisisce un inventario completo di tutte le azioni completate dalle funzionalità di business intelligence di Office 365 come parte di AIR. Viene fornita una chiara visualizzazione di tutti i passaggi, tra cui l'azione stessa, una descrizione e la durata dell'effettiva dall'inizio alla fine. 
+Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook che si sono verificati durante l'indagine. Il log acquisisce un inventario completo di tutte le azioni completate dalle funzionalità di analisi automatica di Office 365 come parte di AIR. Viene fornita una chiara visualizzazione di tutti i passaggi, tra cui l'azione stessa, una descrizione e la durata dell'effettiva dall'inizio alla fine. 
 
 ![Pagina del registro delle indagini AEREe](media/air-investigationlogpage.png)
 
@@ -214,20 +226,20 @@ Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook c
 
 Nella scheda **azioni** , è possibile visualizzare tutte le azioni di PlayBook consigliate per la correzione dopo il completamento dell'indagine. 
 
-Azioni acquisire un elenco completo di tutti i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** , verrà avviata la correzione. (Potrebbe essere necessario disporre delle autorizzazioni appropriate. Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle.  
+Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** , verrà avviata la correzione. (Sarà necessario disporre delle autorizzazioni appropriate. Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle.  
 
 ![Pagina azione indagini AEREe](media/air-investigationactionspage.png)
 
 È possibile:
 - Ottenere una panoramica visiva delle azioni consigliate in PlayBook.
 - Selezionare una singola azione o più azioni.
-- Approva le azioni consigliate. Questi vengono avviati immediatamente con i commenti.
+- ApProvare o rifiutare le azioni consigliate con i commenti.
 - Esportare i risultati in un file CSV.
 - Filtrare la visualizzazione.
 
 ## <a name="how-to-get-air"></a>Come ottenere aria
 
-Attualmente, l'aria è in anteprima. Quando viene rilasciato, AIR verrà incluso nelle sottoscrizioni seguenti:
+Attualmente, Office 365 AIR è in anteprima. Office 365 AIR verrà incluso nelle sottoscrizioni seguenti:
 
 - Microsoft 365 Enterprise E5
 - Office 365 Enterprise E5
