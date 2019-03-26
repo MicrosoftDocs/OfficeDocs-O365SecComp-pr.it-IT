@@ -3,13 +3,15 @@
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ## [Preparare l'ambiente per i nuovi Centro sicurezza Microsoft 365 e Centro conformità Microsoft 365](microsoft-security-and-compliance.md)
+## [Centro sicurezza Microsoft 365](overview-security-center.md)
+### [Microsoft Secure Score](microsoft-secure-score.md)
 ## [Office 365 Secure Score](office-365-secure-score.md)
-## [Microsoft Secure Score](microsoft-secure-score.md)
 ## [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ## [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
 ## [Panoramica del Dashboard sulla sicurezza](security-dashboard.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
+
 # Proteggere l'accesso a dati e servizi
 ## [Proteggere l'accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
 
@@ -88,6 +90,8 @@
 ### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Protezione contro le minacce](protect-against-threats.md)
+## [Cercare in Microsoft 365](hunting.md)
+## [Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce](latest-attack-campaigns.md)
 ## [Guida introduttiva: Configurare Office 365 Advanced Threat Protection](checklist-atp-setup.md)
 ## [Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
 ### [Panoramica di EOP](videos-for-getting-started-with-protecting-your-email.md)
@@ -380,6 +384,11 @@
 ## [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Monitorare la sicurezza e la conformità
+## [Monitoraggio e creazione di report in Centro sicurezza Microsoft 365](monitoring-and-reporting.md)
+### [Monitorare e creare report sulle identità in Sicurezza Microsoft 365](monitor-and-report-identities.md)
+### [Monitorare i dati in Sicurezza Microsoft 365](monitor-data.md)
+### [Monitorare i dispositivi in Sicurezza Microsoft 365](monitor-devices.md)
+### [Monitorare le app in Sicurezza Microsoft 365](monitor-apps.md)
 ## [Criteri di avviso](alert-policies.md)
 ## [Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità](reports-and-insights-in-security-and-compliance.md)
 ### [Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789431"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800288"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
 
@@ -29,15 +29,16 @@ ms.locfileid: "30789431"
 
 Se si usano etichette per la protezione dei dati personali in Office 365, Microsoft consiglia di iniziare con le [etichette di conservazione](labels.md). Con le etichette di conservazione è possibile:
 - Usare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni sensibili o ad altri criteri.
--  Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione. 
+- Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione. 
 - Usare le etichette con eDiscovery e Ricerca contenuto. 
-- Usare etichette e tipi di informazioni sensibili con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
+
+Cloud App Security attualmente non supporta le etichette di conservazione, ma è possibile usare i tipi di informazioni riservate di Office 365 con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
 
 Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud. Sono consigliate anche per file in Office 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.
 
 Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Office 365 contenenti dati soggetti al GDPR. I servizi di Office 365 attualmente non possono leggere nei file con crittografia AIP. Di conseguenza, il servizio non trova i dati sensibili in questi file.
 
-Le etichette di riservatezza possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Office 365. 
+Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Office 365. 
 
 ![Le etichette di Office 365 e di Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
@@ -45,7 +46,7 @@ Le etichette di riservatezza possono essere applicate ai messaggi di posta elett
 Nella figura:
 
 -   Usare le etichette di conservazione per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.
-
+-   È possibile usare i tipi di informazioni sensibili di Office 365 all'interno di Office 365 e Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
 -   Usare le etichette di riservatezza per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter locali e file in altri provider cloud.
 
 
@@ -80,8 +81,8 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <p>Dati cliente
 </p></td>
 <td align="left"><p>Avvisa quando i file con questi attributi...</p>
-<p>&lt;Attributo PII predefinito oppure espressione personalizzata&gt;</p>
-<p>... in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p></td>
+<p>Scegliere uno o più attributi: attributi PII predefinito, tipo di informazioni riservate di Office 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
+<p>. . . in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p><p>Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</td>
 </tr>
 <tr class="even">
 <td align="left">Tipi di informazioni riservate. Esempi: Codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese</td>
@@ -92,7 +93,7 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <td align="left"><p>Applicare la protezione...</p>
 <p>&lt;definire la protezione&gt;</p>
 <p>... ai documenti che corrispondono a questi tipi di informazioni riservate&gt;</p></td>
-<td align="left">Nota: gli attributi di Cloud App Security presto includeranno i tipi di informazioni riservate di Office 365 e le etichette unificate in Office 365 e Azure Information Protection.</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>

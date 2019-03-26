@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789441"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800298"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 
@@ -41,9 +41,9 @@ Scegliere una delle seguenti opzioni:
 
 -   Sono più facili da usare se l'organizzazione non dispone o non intende implementare un piano di governance dei dati più ampio con le etichette.
 
--   Funzionano con le regole DLP (come le etichette di Office).
+-   Funzionano con le regole DLP (come le etichette di conservazione).
 
--   In futuro, saranno compatibili con Cloud App Security per consentire agli utenti di rilevare le informazioni riservate in altre app SaaS.
+-   I tipi di informazioni sensibili sono compatibili con Cloud App Security per consentire agli utenti di rilevare le informazioni riservate in altre app SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opzione 2: usare tipi di informazioni sensibili + etichette di conservazione
 
