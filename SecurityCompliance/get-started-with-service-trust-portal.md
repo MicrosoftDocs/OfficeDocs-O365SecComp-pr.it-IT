@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296689"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647336"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -87,7 +87,7 @@ Fornisce informazioni di conformità specifiche per l'industria e le aree geogra
     - Istruzione
     - Servizi finanziari
     - Governo
-    - Stato attività
+    - Integrità
     - Produzione
     - Dettaglio
 
@@ -100,7 +100,7 @@ Offre una vasta gamma di informazioni sulla progettazione e l'implementazione de
 - White paper, domande frequenti e How-to-articles
 - Guide per la conformità
 - Test di penna e valutazioni di sicurezza
-- Punteggio sicuro
+- Secure Score
 - Cianografie di sicurezza e conformità di Azure
 - Controlli controllati
   
@@ -139,7 +139,7 @@ Per elencare i controlli dalle valutazioni in Compliance Manager correlate ai te
   
 ## <a name="my-library"></a>Raccolta personale
 
-Utilizzare la funzionalità raccolta personale per aggiungere documenti e risorse nel Service Trust Portal alla pagina raccolta personale. In questo modo è possibile accedere ai documenti rilevanti in un'unica posizione.  Per aggiungere un documento alla raccolta personale, fare clic sul menu **...** a destra di un documento e quindi selezionare **Aggiungi a raccolta**. È possibile aggiungere più documenti alla raccolta personale facendo clic sulla casella di controllo accanto a uno o più documenti e quindi facendo clic su **Salva in raccolta** nella parte superiore della pagina.
+Utilizzare la funzionalità raccolta personale per aggiungere documenti e risorse nel Service Trust Portal alla pagina raccolta personale. In questo modo è possibile accedere ai documenti rilevanti in un'unica posizione.  Per aggiungere un documento alla raccolta personale, fare clic sul menu **...** a destra di un documento e quindi selezionare **Salva in raccolta**. È possibile aggiungere più documenti alla raccolta personale facendo clic sulla casella di controllo accanto a uno o più documenti e quindi facendo clic su **Salva in raccolta** nella parte superiore della pagina.
 
 Inoltre, la caratteristica notifiche consente di configurare la raccolta personale in modo che un messaggio di posta elettronica venga inviato all'utente ogni volta che Microsoft aggiorna un documento che è stato aggiunto alla raccolta personale. Per configurare le notifiche, passare alla raccolta personale e fare clic su **impostazioni di notifica**. È possibile scegliere la frequenza delle notifiche e specificare un indirizzo di posta elettronica all'interno dell'organizzazione a cui inviare le notifiche. Le notifiche tramite posta elettronica includono collegamenti ai documenti che sono stati aggiornati e una breve descrizione dell'aggiornamento.
 

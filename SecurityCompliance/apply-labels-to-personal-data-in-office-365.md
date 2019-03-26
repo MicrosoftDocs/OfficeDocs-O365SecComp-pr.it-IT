@@ -3,7 +3,7 @@ title: Applicare le etichette ai dati personali in Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,43 +16,42 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373897"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789431"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
 
- Utilizzare questo argomento se si utilizzano le etichette per il piano di protezione RGPD. Oggi è possibile creare le etichette nel Centro sicurezza e conformità di Office 365 e in Azure Information Protection. Nel corso del tempo queste tecnologie convergeranno in un'esperienza di classificazione e creazione delle etichette unificata e sarà possibile aggiungerne anche altre.
+ Consultare questo argomento se si usano etichette di classificazione per il piano di protezione GDPR. 
 
-Se si utilizzano le etichette per la protezione dei dati personali in Office 365, Microsoft suggerisce di iniziare con le etichette di Office. È possibile utilizzare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni riservate o altri criteri. È possibile utilizzare le etichette di Office con la prevenzione della perdita di dati per applicare la protezione. È inoltre possibile usarle con eDiscovery e Ricerca contenuto. Presto sarà possibile usare le etichette e i tipi di informazioni riservate con Cloud App Security per monitorare i dati personali che si trovano in altre applicazioni SaaS.
+Se si usano etichette per la protezione dei dati personali in Office 365, Microsoft consiglia di iniziare con le [etichette di conservazione](labels.md). Con le etichette di conservazione è possibile:
+- Usare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni sensibili o ad altri criteri.
+-  Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione. 
+- Usare le etichette con eDiscovery e Ricerca contenuto. 
+- Usare etichette e tipi di informazioni sensibili con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
 
-Le etichette di Azure Information Protection al momento sono consigliate per l'applicazione di etichette ai file in locale e in altri servizi e provider cloud. Sono consigliate anche per i file in Office 365 che richiedono la crittografia di Azure Rights Management (Azure RMS) per la protezione dei dati, come file contenenti segreti commerciali.
+Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud. Sono consigliate anche per file in Office 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.
 
-Al momento, l'uso di Azure Information Protection per applicare la crittografia di Azure RMS non è consigliabile per i file in Office 365 contenti dati soggetti all'RGPD. I servizi di Office 365 attualmente non possono leggere i file crittografati con RMS. Di conseguenza, il servizio non può trovare i dati sensibili in questi file.
+Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Office 365 contenenti dati soggetti al GDPR. I servizi di Office 365 attualmente non possono leggere nei file con crittografia AIP. Di conseguenza, il servizio non trova i dati sensibili in questi file.
 
-Le etichette di Azure Information Protection possono essere applicate alla posta in Exchange Online e funzionano con la prevenzione della perdita di dati di Office 365. Prossimamente, con il motore unificato per la classificazione e la creazione delle etichette, sarà possibile usare le stesse etichette per i messaggi di posta elettronica e i file; sarà anche possibile creare le etichette e proteggere i messaggi di posta elettronica in transito.
-
+Le etichette di riservatezza possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Office 365. 
 
 ![Le etichette di Office 365 e di Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 Nella figura:
 
--   Uso delle etichette di Office 365 per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.
+-   Usare le etichette di conservazione per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.
+
+-   Usare le etichette di riservatezza per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter locali e file in altri provider cloud.
 
 
--   Uso delle etichette di Azure Information Protection (AIP) per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter in locale e file in altri provider cloud.
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usare le etichette di conservazione e i tipi di informazioni sensibili in Microsoft 365 per la protezione delle informazioni
 
-
--   Prossimamente questi due tipi di etichette verranno consolidati per offrire un'unica esperienza di classificazione e creazione di etichette.
-
-
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Usare le etichette di Office e i tipi di informazioni riservate in Microsoft 365 per la protezione delle informazioni
-
-La figura seguente mostra come le etichette e le tipologie di informazioni sensibili di Office possono essere utilizzati nei criteri delle etichette, nei criteri di prevenzione della perdita di dati e con i criteri di Cloud App Security.
-
+La figura seguente mostra come usare le etichette di conservazione e i tipi di informazioni sensibili in criteri di etichetta, criteri di prevenzione della perdita dei dati e i criteri di Cloud App Security.
 
 ![Etichette di Office e tipi di informazioni riservate](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -69,8 +68,7 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Etichette di Office. Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato
-</td>
+<td align="left">Etichette di conservazione. Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato</td>
 <td align="left"><p>Applicare automaticamente questa etichetta...</p>
 <p>Dati cliente
 </p>
@@ -198,8 +196,8 @@ Creare le etichette e i criteri nel Centro sicurezza e conformità.
 <p>Vedere <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Creare etichette di Office</p></td>
-<td align="left">Andare a Classificazioni in Centro sicurezza e conformità, scegliere Etichette e creare etichette per il proprio ambiente.</td>
+<td align="left"><p>Creare etichette di conservazione.</p></td>
+<td align="left">Passare a Classificazioni in Centro sicurezza e conformità, scegliere Etichette di conservazione e creare le etichette per il proprio ambiente.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Creare criteri di applicazione automatica per le etichette.</p></td>

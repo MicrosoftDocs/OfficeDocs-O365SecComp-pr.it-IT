@@ -3,7 +3,7 @@ title: Progettare uno schema di classificazione per i dati personali
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373867"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789441"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 
@@ -45,13 +45,13 @@ Scegliere una delle seguenti opzioni:
 
 -   In futuro, saranno compatibili con Cloud App Security per consentire agli utenti di rilevare le informazioni riservate in altre app SaaS.
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>Opzione 2: usare tipi di informazioni riservate + etichette di Office
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opzione 2: usare tipi di informazioni sensibili + etichette di conservazione
 
--   I tipi di informazioni riservate dovranno applicare automaticamente le etichette ai dati personali soggetti a RGPD, quindi rappresentano un prerequisito.
+-   I tipi di informazioni sensibili devono applicare automaticamente le etichette ai dati personali soggetti a GDPR, quindi rappresentano un prerequisito.
 
--   L'uso delle etichette di Office consente di includere dati personali soggetti a RGPD in un piano di governance dei dati più ampio per l'organizzazione.
+-   L'uso delle etichette di conservazione consente di includere dati personali soggetti a GDPR in un piano di governance dei dati più ampio per l'organizzazione.
 
--   In un secondo momento, le etichette di Office diventeranno le etichette di Azure Information Protection nell'ambito di un motore di classificazione e assegnazione di etichette unificato.
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Sviluppare uno schema di etichette che include dati personali
 

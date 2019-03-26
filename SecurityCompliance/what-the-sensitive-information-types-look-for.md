@@ -1,7 +1,7 @@
 ---
 title: Tipi di informazioni riservate disponibili da cercare
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537643"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639193"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -616,14 +616,14 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database di Azure IAAS e stringa di connessione SQL di Azure
 
 ### <a name="format"></a>Formato
 
-Stringa "Server", "Server" o "Data Source" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp. Azure. <!--no-hyperlink-->com "o" cloudapp. Azure. <!--no-hyperlink-->NET "o" database. Windows. <!--no-hyperlink-->NET "e la stringa" password "o" password "o" pwd ".
+Stringa "Server", "Server" o "Data Source" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp. Azure.<!--no-hyperlink-->com "o" cloudapp. Azure.<!--no-hyperlink-->NET "o" database. Windows.<!--no-hyperlink-->NET "e la stringa" password "o" password "o" pwd ".
 
 ### <a name="pattern"></a>Modello
 
@@ -632,7 +632,7 @@ Stringa "Server", "Server" o "Data Source" seguito dai caratteri e dalle stringh
 - Segno di uguale (=)
 - 0-2 caratteri dello spazio vuoto
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- La stringa "cloudapp. Azure. <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->NET "o" database. Windows. <!--no-hyperlink-->NET "
+- La stringa "cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "o" database. Windows.<!--no-hyperlink-->NET
 - Qualsiasi combinazione tra 1-300 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
 - La stringa "password", "password" o "pwd"
 - 0-2 caratteri dello spazio vuoto
@@ -676,14 +676,14 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iot-connection-string"></a>Stringa di connessione di Azure.
 
 ### <a name="format"></a>Formato
 
-La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "Azure-Devices. <!--no-hyperlink-->NET "e" SharedAccessKey ".
+La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "Azure-Devices.<!--no-hyperlink-->NET "e" SharedAccessKey ".
 
 ### <a name="pattern"></a>Modello
 
@@ -692,7 +692,7 @@ La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel model
 - Segno di uguale (=)
 - 0-2 caratteri dello spazio vuoto
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- La stringa "Azure-Devices. <!--no-hyperlink-->NET "
+- La stringa "Azure-Devices.<!--no-hyperlink-->NET
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
 - La stringa "SharedAccessKey"
 - 0-2 caratteri dello spazio vuoto
@@ -736,7 +736,7 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-publish-setting-password"></a>Password per l'impostazione di pubblicazione di Azure
@@ -787,18 +787,18 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-redis-cache-connection-string"></a>Stringa di connessione della cache di Azure Redis
 
 ### <a name="format"></a>Formato
 
-La stringa "Redis. cache. Windows. <!--no-hyperlink-->NET "seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa" password "o" pwd ".
+La stringa "Redis. cache. Windows.<!--no-hyperlink-->NET "seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa" password "o" pwd ".
 
 ### <a name="pattern"></a>Modello
 
-- La stringa "Redis. cache. Windows. <!--no-hyperlink-->NET "
+- La stringa "Redis. cache. Windows.<!--no-hyperlink-->NET
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
 - La stringa "password" o "pwd"
 - 0-2 caratteri dello spazio vuoto
@@ -842,7 +842,7 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-sas"></a>SAS di Azure
@@ -883,7 +883,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="format"></a>Formato
 
-Stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "ServiceBus. Windows. <!--no-hyperlink-->NET "e" SharedAccesKey ".
+Stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "ServiceBus. Windows.<!--no-hyperlink-->NET "e" SharedAccesKey ".
 
 ### <a name="pattern"></a>Modello
 
@@ -892,7 +892,7 @@ Stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello 
 - Segno di uguale (=)
 - 0-2 caratteri dello spazio vuoto
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- La stringa "ServiceBus. Windows. <!--no-hyperlink-->NET "
+- La stringa "ServiceBus. Windows.<!--no-hyperlink-->NET
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
 - La stringa "SharedAccessKey"
 - 0-2 caratteri dello spazio vuoto
@@ -936,7 +936,7 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key"></a>Chiave dell'account di archiviazione di Azure
@@ -1002,7 +1002,7 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generico)
@@ -5045,7 +5045,7 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-national-id"></a>Svezia - Identificativo nazionale

@@ -1,5 +1,5 @@
 ---
-title: Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Intelligence)
+title: Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Investigation and Response
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692455"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732249"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Verificare che vengano soddisfatti i seguenti requisiti:
     
 - La [registrazione di controllo di Office 365](turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
     
-- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [gestione delle minacce nel centro sicurezza &amp; e conformità di Office 365](threat-management.md).
+- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [Office 365 Advanced Threat Protection](office-365-atp.md).
     
 - Si è un amministratore globale di Office 365 oppure è stato assegnato l'amministratore della sicurezza o il ruolo di ricerca ed eliminazione nel centro sicurezza &amp; e conformità. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
