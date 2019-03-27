@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
-ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670721"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900105"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -76,7 +76,8 @@ Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizz
     
     Perché usare l'elenco delle parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. In questo modo è possibile identificare rapidamente quali parole chiave sono le più (e meno) effettive. È inoltre possibile utilizzare una frase di parole chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche sulle parole chiave per i risultati della ricerca contenuto](view-keyword-statistics-for-content-search.md).
 
-    [!NOTE] Per contribuire a ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, si è limitato a un massimo di 20 righe nell'elenco delle parole chiave.
+    > [!NOTE]
+    > Per contribuire a ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, si è limitato a un massimo di 20 righe nell'elenco delle parole chiave.
     
 - **Condizioni** : è possibile aggiungere condizioni di ricerca per restringere una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca che viene creata e eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico ( **c:c**) simile alla funzionalità all'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che una o più condizioni da includere nei risultati. Ecco come le condizioni consentono di circoscrivere i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#search-conditions).
     

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Lo scopo di questo argomento è quello di aiutare l'utente a comprendere il processo per passare a Exchange Online Protection (EOP) da un'applicazione per l'igiene della posta elettronica locale o un servizio di protezione basato su cloud, nonché di fornire risorse per iniziare.
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693415"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899955"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a EOP da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 
@@ -25,14 +25,13 @@ Se non si conosce EOP e si desidera avere una panoramica sulle relative funziona
   
 Prima di effettuare il passaggio a EOP, è importante considerare se ospitare le cassette postali protette da EOP nel cloud, con Exchange Online, in locale o in uno scenario ibrido. Ibrido significa che alcune cassette postali sono locali e altre sono ospitate su Exchange Online. Ciascuno di questi scenari di hosting: cloud, locale, ibrido è possibile. Tuttavia la procedura di impostazione può variare. Di seguito sono riportate alcune considerazioni che faciliteranno l'utente nella scelta della distribuzione appropriata:
   
-- **Protezione EOP con cassette postali locali** Questo scenario è appropriato se si desidera utilizzare un'infrastruttura di hosting di posta esistente oppure se i requisiti aziendali impongono di mantenere le cassette postali in locale e si desidera una protezione EOP della posta elettronica basata su cloud. [Passare a EOP autonomo](#BKMK_SwitchStandalone.md) descrive lo scenario in maggiore dettaglio. 
+- **Protezione EOP con cassette postali locali** Questo scenario è appropriato se si desidera utilizzare un'infrastruttura di hosting di posta esistente oppure se i requisiti aziendali impongono di mantenere le cassette postali in locale e si desidera una protezione EOP della posta elettronica basata su cloud. [Passare a EOP autonomo](#switch-to-eop-standalone) descrive lo scenario in maggiore dettaglio. 
     
 - **Protezione EOP con cassette postali di Exchange Online** Questo scenario è appropriato se si desidera una protezione EOP e tutte le cassette postali sono ospitate nel cloud. Può facilitare la riduzione della complessità, poiché non è necessario mantenere i server di messaggistica in locale. [Passaggio a Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) descrive questo scenario. 
     
-- **Protezione EOP con cassette postali ibride** Consente di avere cassette postali sul cloud, tranne alcune per specifici utenti che restano locali. Scegliere questo scenario se si desidera che alcune cassette postali siano locali e altre siano ospitate su cloud con Exchange Online. [Passare a una soluzione ibrida](#BKMK_SwitchHybrid.md) descrive questo scenario. 
+- **Protezione EOP con cassette postali ibride** Consente di avere cassette postali sul cloud, tranne alcune per specifici utenti che restano locali. Scegliere questo scenario se si desidera che alcune cassette postali siano locali e altre siano ospitate su cloud con Exchange Online. [Passare a una soluzione ibrida](#switch-to-a-hybrid-solution) descrive questo scenario. 
     
 ## <a name="switch-to-eop-standalone"></a>Passare a EOP autonomo
-<a name="BKMK_SwitchStandalone"> </a>
 
 Se attualmente le cassette postali sono ospitate in locale e si utilizza un'applicazione di protezione locale o un servizio di protezione della messaggistica cloud, è possibile passare a EOP per utilizzare disponibilità e funzionalità di protezione. Per impostare EOP in uno scenario autonomo, in cui le cassette postali sono ospitate in locale e utilizzano EOP per la protezione della posta elettronica, seguire la procedura indicata in [Installazione del servizio EOP](set-up-your-eop-service.md). Nell'argomento viene descritta la procedura per impostare la protezione EOP, che include l'accesso, l'aggiunta del proprio dominio e l'impostazione del flusso di posta con i connettori.
   

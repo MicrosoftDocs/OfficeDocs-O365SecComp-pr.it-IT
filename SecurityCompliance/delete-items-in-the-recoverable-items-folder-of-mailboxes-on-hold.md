@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365.'
-ms.openlocfilehash: 4b7b12b33a2364d76b5d7dab6c7e94dc8f00d151
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: a1abfd73d96db6d67e1e1fe13d5487ac55c40344
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296179"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900115"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -49,7 +49,7 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
     
   - **Ricerca cassette** postali-questo ruolo consente di effettuare ricerche nelle cassette postali dell'organizzazione. Per impostazione predefinita, gli amministratori di Exchange non sono assegnati a questo ruolo. Per assegnare manualmente questo ruolo, aggiungersi come membro del gruppo di ruoli Gestione individuazione in Exchange Online. 
     
-  - **Esportazione delle cassette postali** -questo ruolo consente di eliminare i messaggi dalla cassetta postale di un utente. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli. Per eliminare i messaggi dalle cassette postali degli utenti, è possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. 
+  - **Esportazione delle cassette postali** -questo ruolo consente di eliminare i messaggi dalla cassetta postale di un utente. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli. Per eliminare i messaggi dalle cassette postali degli utenti, è possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. 
     
 - La procedura descritta in questo articolo non è supportata per le cassette postali inattive. Ciò è dovuto al fatto che non è possibile riapplicare un blocco (o un criterio di conservazione di Office 365) a una cassetta postale inattiva dopo averlo rimosso. Quando si rimuove un'esenzione da una cassetta postale inattiva, viene modificata in una normale cassetta postale eliminata temporaneamente e viene eliminata definitivamente dall'organizzazione dopo che è stata elaborata dall'Assistente cartelle gestite.
     
@@ -63,11 +63,11 @@ Questo primo passaggio consiste nel raccogliere le proprietà selezionate dalla 
   
 -  *SingleItemRecoveryEnabled* e *RetainDeletedItemsFor* ; Se necessario, è possibile disabilitare il ripristino singolo e aumentare il periodo di conservazione degli elementi eliminati nel passaggio 3. 
     
--  *LitigationHoldEnabled* e *InPlaceHolds* ; è necessario identificare tutti gli appigli posizionati nella cassetta postale in modo da poterli rimuovere temporaneamente nel passaggio 3. Vedere la sezione [ulteriori informazioni](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) per suggerimenti su come identificare il blocco dei tipi che potrebbe essere posizionato su una cassetta postale. 
+-  *LitigationHoldEnabled* e *InPlaceHolds* ; è necessario identificare tutti gli appigli posizionati nella cassetta postale in modo da poterli rimuovere temporaneamente nel passaggio 3. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come identificare il blocco dei tipi che potrebbe essere posizionato su una cassetta postale. 
     
 Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette postali in modo da poterle disabilitare temporaneamente in modo che il proprietario (o altri utenti) non riesca ad accedere alla cassetta postale durante questa procedura. Infine, è possibile ottenere la dimensione corrente e il numero di elementi nella cartella elementi ripristinabili. Dopo aver eliminato gli elementi nella cartella elementi ripristinabili nel passaggio 5, è possibile utilizzare queste informazioni per verificare che gli elementi siano stati effettivamente rimossi.
   
-1. [Connettersi a PowerShell di Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
     
 2. Eseguire il seguente comando per ottenere informazioni sul ripristino di un singolo elemento e sul periodo di conservazione degli elementi eliminati.
 
@@ -190,7 +190,7 @@ Eseguire il seguente comando in PowerShell di Exchange Online per identificare i
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
    
-Dopo aver identificato il blocco sul posto, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell per rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni, vedere [creare o rimuovere un blocco sul posto](https://go.microsoft.com/fwlink/?linkid=852668).
+Dopo aver identificato il blocco sul posto, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell per rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni, vedere [Creare o rimuovere un'archiviazione sul posto](https://go.microsoft.com/fwlink/?linkid=852668).
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>Criteri di conservazione di Office 365 applicati a cassette postali specifiche
   
@@ -273,7 +273,7 @@ A questo punto si è pronti per eliminare effettivamente gli elementi nella cart
     
 - Eliminare gli elementi senza copiarli in una cassetta postale di destinazione. 
     
-Tenere presente che gli elementi nella cartella elementi ripristinabili nella cassetta postale di archiviazione principale dell'utente verranno eliminati anche quando si esegue il cmdlet **Search-Mailbox** . Per evitare questo, è possibile includere l'opzione *DoNotIncludeArchive* . Come indicato in precedenza, se l'archiviazione con espansione automatica è abilitata per la cassetta postale, il cmdlet * * Search-Mailbox * * non elimina gli elementi in una cassetta postale di archiviazione ausiliaria. Per ulteriori informazioni sull'espansione automatica dell'archivio, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
+Tenere presente che gli elementi nella cartella elementi ripristinabili nella cassetta postale di archiviazione principale dell'utente verranno eliminati anche quando si esegue il cmdlet **Search-Mailbox** . Per prevenire questa situazione, è possibile includere l'opzione  *DoNotIncludeArchive*  . Come indicato in precedenza, se l'archiviazione con espansione automatica è abilitata per la cassetta postale, il cmdlet * * Search-Mailbox * * non elimina gli elementi in una cassetta postale di archiviazione ausiliaria. Per ulteriori informazioni sull'espansione automatica dell'archivio, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
   
 > [!NOTE]
 > Se si include una query di ricerca (usando il parametro  *SearchQuery*  ), il cmdlet **Search-Mailbox** restituirà un massimo di 10.000 elementi nei risultati della ricerca. Pertanto se si include una query di ricerca, potrebbe essere necessario eseguire il comando **Search-Mailbox** più volte per eliminare più di 10.000 elementi. 
@@ -346,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Passaggio 6: ripristinare lo stato precedente della cassetta postale
 
-Il passaggio finale consiste nel ripristinare la configurazione precedente della cassetta postale. Questo significa reimpostare le proprietà modificate nel passaggio 2 e riapplicare le esenzioni rimosse al passaggio 3. Sono inclusi i seguenti:
+Il passaggio finale consiste nel ripristinare la configurazione precedente della cassetta postale. Questo significa reimpostare le proprietà modificate nel passaggio 2 e riapplicare le esenzioni rimosse al passaggio 3. Ciò include:
   
 - Modifica del periodo di conservazione degli elementi eliminati sul valore precedente. In alternativa, è possibile lasciare questo set a 30 giorni, ovvero il valore massimo in Exchange Online.
     
@@ -383,7 +383,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
    
 4. Riapplicare le esenzioni rimosse nel passaggio 3. A seconda del tipo di blocco, utilizzare una delle procedure seguenti.
     
-    **Conservazione in caso di dispute**
+    **Conservazione per controversia legale**
     
     Eseguire il seguente comando per riattivare un blocco per controversia legale per la cassetta postale.
     
@@ -391,7 +391,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
-    **Conservazione in locale**
+    **In-Place Hold**
     
     Utilizzare EAC (o Exchange Online PowerShell) per aggiungere di nuovo la cassetta postale all'archiviazione sul posto. 
     
@@ -432,9 +432,9 @@ Come spiegato in precedenza, è necessario rimuovere tutte le esenzioni e i crit
 |**Tipo di blocco**|**Valore di esempio**|**Come identificare il blocco**|
 |:-----|:-----|:-----|
 |Blocco per controversia legale  <br/> | `True` <br/> |La proprietà  *LitigationHoldEnabled*  è impostata su  `True`.  <br/> |
-|Blocco sul posto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La proprietà *InPlaceHolds* contiene il GUID del blocco sul posto applicato alla cassetta postale. È possibile indicare che si tratta di un blocco sul posto poiché il GUID non inizia con un prefisso.<br/> È possibile utilizzare il `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando in PowerShell di Exchange Online per ottenere informazioni sul blocco sul posto sulla cassetta postale.  <br/> |
-| Criteri di conservazione di Office 365 nel &amp; centro conformità di sicurezza applicato a cassette postali specifiche  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oppure  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Quando si esegue il cmdlet **Get-Mailbox** , la proprietà *InPlaceHolds* contiene anche i GUID dei criteri di conservazione di Office 365 applicati alla cassetta postale. È possibile identificare i criteri di conservazione perché il GUID inizia `mbx` con il prefisso. Si noti che se il GUID del criterio di conservazione inizia con `skp` il prefisso, indica che il criterio di conservazione viene applicato alle conversazioni di Skype for business.<br/> Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale, eseguire il comando seguente in PowerShell &amp; per il Centro sicurezza e conformità: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Assicurarsi di rimuovere il `mbx` prefisso o `skp` quando si esegue questo comando.  <br/> |
-|Criteri di conservazione di Office 365 a livello di organizzazione &amp; nel centro sicurezza e conformità  <br/> |Nessun valore  <br/> oppure  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(indica che la cassetta postale è esclusa da un criterio a livello di organizzazione)  <br/> |Anche se la proprietà *InPlaceHolds* è vuota quando si esegue il cmdlet **Get-Mailbox** , è ancora possibile che siano presenti uno o più criteri di conservazione di Office 365 a livello di organizzazione applicati alla cassetta postale.  <br/> Per verificarlo, è possibile eseguire il `Get-OrganizationConfig | FL InPlaceHolds` comando in Exchange Online PowerShell per ottenere un elenco dei GUID per i criteri di conservazione di Office 365 a livello dell'organizzazione. Il GUID per i criteri di conservazione a livello dell'organizzazione applicati alle cassette postali di Exchange inizia con il `mbx` prefisso. ad esempio `mbxa3056bb15562480fadb46ce523ff7b02`.<br/> Per identificare i criteri di conservazione di Office 365 a livello di organizzazione applicati alla cassetta postale, eseguire il comando seguente in &amp; PowerShell per il Centro sicurezza e conformità: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si noti che se una cassetta postale è stata esclusa da un criterio di conservazione di Office 365 a livello di organizzazione, il GUID per il criterio di conservazione viene visualizzato nella proprietà *InPlaceHolds* della cassetta postale dell'utente quando si esegue il cmdlet **Get-Mailbox** . è identificato dal prefisso `-mbx`; Per esempio`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|blocco del caso di eDiscovery nel &amp; Centro sicurezza e conformità  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La proprietà *InPlaceHolds* contiene inoltre il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro &amp; sicurezza e conformità che potrebbe essere posizionato sulla cassetta postale. Si può dire che si tratta di un caso di eDiscovery, perché il GUID `UniH` inizia con il prefisso.<br/> È possibile utilizzare il `Get-CaseHoldPolicy` cmdlet in PowerShell &amp; per la conformità al centro sicurezza per ottenere informazioni sul caso di eDiscovery a cui è associato il blocco della cassetta postale. Ad esempio, è possibile eseguire il comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` per visualizzare il nome del blocco del caso che si trova nella cassetta postale. Assicurarsi di rimuovere il `UniH` prefisso quando si esegue questo comando.<br/><br/> Per identificare il caso di eDiscovery a cui è associato il blocco della cassetta postale, eseguire i comandi seguenti:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+|Blocco sul posto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La proprietà *InPlaceHolds* contiene il GUID del blocco sul posto applicato alla cassetta postale. È possibile indicare che si tratta di un blocco sul posto poiché il GUID non inizia con un prefisso.  <br/> È possibile utilizzare il `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando in PowerShell di Exchange Online per ottenere informazioni sul blocco sul posto sulla cassetta postale.  <br/> |
+| Criteri di conservazione di Office 365 nel &amp; centro conformità di sicurezza applicato a cassette postali specifiche  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oppure  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Quando si esegue il cmdlet **Get-Mailbox** , la proprietà *InPlaceHolds* contiene anche i GUID dei criteri di conservazione di Office 365 applicati alla cassetta postale. È possibile identificare i criteri di conservazione perché il GUID inizia `mbx` con il prefisso. Si noti che se il GUID del criterio di conservazione inizia con `skp` il prefisso, indica che il criterio di conservazione viene applicato alle conversazioni di Skype for business.  <br/> Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale, eseguire il comando seguente in PowerShell &amp; per il Centro sicurezza e conformità: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Assicurarsi di rimuovere il prefisso  `mbx` o  `skp` quando si esegue questo comando.  <br/> |
+|Criteri di conservazione di Office 365 a livello di organizzazione &amp; nel centro sicurezza e conformità  <br/> |Nessun valore  <br/> oppure  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(indica che la cassetta postale è esclusa da un criterio a livello di organizzazione)  <br/> |Anche se la proprietà *InPlaceHolds* è vuota quando si esegue il cmdlet **Get-Mailbox** , è ancora possibile che siano presenti uno o più criteri di conservazione di Office 365 a livello di organizzazione applicati alla cassetta postale.  <br/> Per verificarlo, è possibile eseguire il `Get-OrganizationConfig | FL InPlaceHolds` comando in Exchange Online PowerShell per ottenere un elenco dei GUID per i criteri di conservazione di Office 365 a livello dell'organizzazione. Il GUID per i criteri di conservazione a livello dell'organizzazione applicati alle cassette postali di Exchange inizia con il `mbx` prefisso. ad esempio `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> Per identificare i criteri di conservazione di Office 365 a livello di organizzazione applicati alla cassetta postale, eseguire il comando seguente in &amp; PowerShell per il Centro sicurezza e conformità: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si noti che se una cassetta postale è stata esclusa da un criterio di conservazione di Office 365 a livello di organizzazione, il GUID per il criterio di conservazione viene visualizzato nella proprietà *InPlaceHolds* della cassetta postale dell'utente quando si esegue il cmdlet **Get-Mailbox** . è identificato dal prefisso `-mbx`; Per esempio`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|eDiscovery case hold in the Security &amp; Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La proprietà *InPlaceHolds* contiene inoltre il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro &amp; sicurezza e conformità che potrebbe essere posizionato sulla cassetta postale. È possibile stabilire che si tratta di un blocco caso eDiscovery perché il GUID inizia con il prefisso  `UniH`.  <br/> È possibile utilizzare il `Get-CaseHoldPolicy` cmdlet in PowerShell &amp; per la conformità al centro sicurezza per ottenere informazioni sul caso di eDiscovery a cui è associato il blocco della cassetta postale. Ad esempio, è possibile eseguire il comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` per visualizzare il nome del blocco del caso che si trova nella cassetta postale. Be sure to remove the  `UniH` quando si esegue questo comando.  <br/><br/> Per identificare il caso di eDiscovery a cui è associato il blocco della cassetta postale, eseguire i comandi seguenti:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Di seguito sono riportate alcune considerazioni da tenere presenti prima di iniziare a lavorare con EOP.
-ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692325"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900125"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -23,7 +23,7 @@ Servizio di filtro della posta elettronica ospitato di Microsoft Exchange Online
   
 - Per ulteriori informazioni su EOP, vedere [Descrizione del servizio Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619). Altre risorse utili sono [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md), [Domande frequenti su EOP](eop-general-faq.md) e [Caratteristiche di EOP](eop-features.md), nonché la [home page di Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
     
-- Per iniziare a utilizzare EOP, vedere [Installazione del servizio EOP](set-up-your-eop-service.md). In questo argomento vengono indicati i passaggi consentono di utilizzare immediatamente EOP. È anche possibile visualizzare le serie di video introduttivi disponibili su [Video per iniziare con EOP](videos-for-getting-started-with-eop.md).
+- Per iniziare a utilizzare EOP, vedere [Installazione del servizio EOP](set-up-your-eop-service.md). In questo argomento vengono indicati i passaggi consentono di utilizzare immediatamente EOP. 
     
 - Per ulteriore assistenza o per condividere idee, il [forum di EOP](https://go.microsoft.com/fwlink/?LinkId=285351) è un ottimo punto di partenza. 
     
@@ -36,8 +36,6 @@ Il contenuto della Guida di EOP per gli amministratori comprende le seguenti cat
 - [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md) Introduce il funzionamento di EOP e fornisce collegamenti a ulteriori informazioni. 
     
 - [Caratteristiche di EOP](eop-features.md) Fornisce un elenco delle caratteristiche disponibili in EOP. 
-    
-- [Video per iniziare con EOP](videos-for-getting-started-with-eop.md) Introduce EOP con una serie di video che spiegano in dettaglio le comuni attività di impostazione. 
     
 - [Installazione del servizio EOP](set-up-your-eop-service.md) Fornisce la procedura di impostazione del servizio EOP e i collegamenti a ulteriori informazioni. 
     

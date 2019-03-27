@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Informazioni su come configurare il registro di sistema di Windows per aumentare la velocità effettiva dei dati quando si scaricano i risultati della &amp; ricerca e i dati di ricerca da Office 365 Security Compliance Center e Office 365 Advanced eDiscovery.
-ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ddeb247be6981dbfdb874e270a123e4465914d86
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295429"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899925"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365
 
@@ -52,7 +52,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per scaricare 
 6. È possibile ripetere i passaggi 2-5 per modificare il valore per `DownloadConcurrency` l'impostazione del registro di sistema. 
     
     > [!IMPORTANT]
-    > Dopo aver creato o modificato l' `DownloadConcurrency` impostazione del registro di sistema, assicurarsi di creare un nuovo processo di esportazione o di riavviare un processo di esportazione esistente per i risultati di ricerca o i dati che si desidera scaricare. Per ulteriori dettagli, vedere la sezione [ulteriori informazioni](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) . 
+    > Dopo aver creato o modificato l' `DownloadConcurrency` impostazione del registro di sistema, assicurarsi di creare un nuovo processo di esportazione o di riavviare un processo di esportazione esistente per i risultati di ricerca o i dati che si desidera scaricare. Per ulteriori dettagli, vedere la sezione [ulteriori informazioni](#more-information) . 
   
 ## <a name="more-information"></a>Ulteriori informazioni
 

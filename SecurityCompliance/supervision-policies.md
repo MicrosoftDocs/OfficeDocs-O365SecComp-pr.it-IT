@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720276"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900095"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -73,7 +73,11 @@ Per semplificare la configurazione, creare gruppi per gli utenti che avranno la 
 Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi in una o più delle piattaforme di comunicazione seguenti:
 
 - **Posta elettronica di Exchange:** Le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Office 365 sono tutte idonee per la supervisione dei messaggi. I messaggi di posta elettronica e gli allegati che corrispondono alle condizioni dei criteri di supervisione sono immediatamente disponibili per il monitoraggio e i report I tipi di allegati supportati per la supervisione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
-- **Microsoft teams:** È possibile controllare le comunicazioni chat e gli allegati associati sia nei canali di Microsoft Public che in quelli privati e nelle chat individuali. Chat teams le condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e per i report di supervisione.
+- **Microsoft teams:** È possibile controllare le comunicazioni chat e gli allegati associati sia nei canali di Microsoft Public che in quelli privati e nelle chat individuali. Chat teams le condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e per i report di supervisione. Utilizzare le configurazioni di gestione di gruppo seguenti per controllare efficacemente le chat utente e le comunicazioni dei canali nei team:
+
+    - **Per la supervisione di teams chat:** è necessario assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Si tratta di relazioni tra utenti e chat da 1 a 1 o da 1 a molti.
+    - **Per le comunicazioni di canale dei team:** sarà necessario assegnare a tutti i gruppi di Microsoft Team o di Office 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente a altri canali di Microsoft teams o gruppi di Office 365, accertarsi di aggiungere anche questi nuovi canali e gruppi ai criteri di supervisione.
+
 - **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) se i dati sono stati importati nelle cassette postali di Office 365 nell'organizzazione. [Informazioni su come importare i dati di terze parti in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
 ### <a name="policy-settings"></a>Impostazioni dei criteri

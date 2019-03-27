@@ -14,16 +14,16 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: 6091f6cca75bffbb05bcd59f70cfae0dbdcb9040
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297069"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900035"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrare i dati durante l'importazione di file PST in Office 365
 
-Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi nei file PST che vengono effettivamente importati nelle cassette postali di destinazione. Ecco come funziona:
+Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi nei file PST che vengono effettivamente importati nelle cassette postali di destinazione. Tenere presente quanto segue:
   
 - Dopo aver creato e inviato un processo di importazione PST, i file PST vengono caricati in un'area di archiviazione di Azure nel cloud Microsoft.
     
@@ -79,7 +79,7 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
   
 5. In base al fatto che si desideri o meno tagliare i dati importati in Office 365, eseguire una delle operazioni seguenti per **filtrare i dati**:
     
-    a. fare clic su **Sì, voglio filtrarlo prima** di eseguire l'importazione per tagliare i dati importati e quindi fare clic su **Avanti**.
+    un. Fare clic su **Sì, si desidera filtrarlo prima** di eseguire l'importazione per tagliare i dati importati e quindi fare clic su **Avanti**.
     
     La pagina **Import data to Office 365** page viene visualizzata con informazioni dettagliate sull'analisi eseguita da Office 365. 
     
@@ -87,38 +87,38 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
   
     Il grafico in questa pagina Visualizza la quantità di dati che verranno importati. Le informazioni su ogni tipo di messaggio trovato nei file PST vengono visualizzate nel grafico. È possibile posizionare il puntatore del mouse su ogni barra per visualizzare informazioni specifiche sul tipo di messaggio. È inoltre presente un elenco a discesa con valori di età diversi in base all'analisi dei file PST. Quando si seleziona un'età nell'elenco a discesa, il grafico viene aggiornato per visualizzare la quantità di dati che verranno importati per l'età selezionata. 
     
-    b. per configurare i filtri di addizione per ridurre la quantità di dati importati, fare clic su **altre opzioni di filtro**.
+    b. Per configurare i filtri di addizione per ridurre la quantità di dati importati, fare clic su **altre opzioni di filtro**.
     
     ![Configurare i filtri nella pagina altre opzioni per tagliare i dati importati](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     È possibile configurare questi filtri:
     
-      - **Age** -selezionare un'età in modo che vengano importati solo gli elementi più recenti di quelli specificati. Vedere la sezione [ulteriori informazioni](filter-data-when-importing-pst-files.md#moreinfo) per una descrizione del modo in cui Office 365 determina i bucket di validità del filtro di **età** . 
+      - **Age** -selezionare un'età in modo che vengano importati solo gli elementi più recenti di quelli specificati. Vedere la sezione [ulteriori informazioni](#more-information) per una descrizione del modo in cui Office 365 determina i bucket di validità del filtro di **età** . 
     
-      - **Tipo** : in questa sezione vengono illustrati tutti i tipi di messaggi trovati nei file PST per il processo di importazione. È possibile deselezionare una casella accanto a un tipo di messaggio che si desidera escludere. Si noti che non è possibile escludere l'altro tipo di messaggio. Per un elenco degli elementi delle cassette postali inclusi nell'altra categoria, vedere la sezione [ulteriori informazioni](filter-data-when-importing-pst-files.md#moreinfo) . 
+      - **Tipo** : in questa sezione vengono illustrati tutti i tipi di messaggi trovati nei file PST per il processo di importazione. È possibile deselezionare una casella accanto a un tipo di messaggio che si desidera escludere. Si noti che non è possibile escludere l'altro tipo di messaggio. Per un elenco degli elementi delle cassette postali inclusi nell'altra categoria, vedere la sezione [ulteriori informazioni](#more-information) . 
     
       - **Utenti** : è possibile escludere i messaggi inviati o ricevuti da persone specifiche. Per escludere le persone che vengono visualizzate nel campo da: campo, a: oppure il campo CC: dei messaggi, fare clic su **Escludi utenti** accanto a quel tipo di destinatario. Digitare l'indirizzo di posta elettronica (indirizzo SMTP) della persona, ****![fare clic su](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Aggiungi nuova icona per aggiungerli all'elenco di utenti esclusi per tale tipo di destinatario e quindi fare clic su **Salva** per salvare l'elenco di utenti esclusi. 
     
         > [!NOTE]
         > Office 365 non Visualizza informazioni dettagliate risultante dall'impostazione del filtro **persone** . Tuttavia, se si imposta questo filtro per escludere i messaggi inviati o ricevuti da persone specifiche, tali messaggi verranno esclusi durante il processo di importazione effettivo. 
   
-    c. fare clic su **applica** nella pagina **altre opzioni di filtro** per salvare le impostazioni del filtro. 
+    c. Fare clic su **applica** nella pagina **altre opzioni di filtro** per salvare le impostazioni del filtro. 
     
     Le informazioni dettagliate sulla pagina **Importa dati in Office 365** vengono aggiornate in base alle impostazioni del filtro, inclusa la quantità totale di dati che verranno importati in base alle impostazioni del filtro. Si noti che è anche visualizzato un riepilogo delle impostazioni del filtro. È possibile fare clic su **modifica** accanto a un filtro per modificare l'impostazione, se necessario. 
     
     ![Gli Insight dei dati vengono aggiornati in base alle impostazioni del filtro](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. fare clic su **Avanti**.
+    d. Fare clic su **Avanti**.
     
     Viene visualizzata una pagina di stato per visualizzare le impostazioni del filtro. Anche in questo caso, è possibile modificare le impostazioni del filtro.
     
-    e. fare clic su **Importa dati** per avviare l'importazione. Si noti che la quantità totale di dati che verranno importati viene visualizzata. 
+    e. Fare clic su **Importa dati** per avviare l'importazione. Si noti che la quantità totale di dati che verranno importati viene visualizzata. 
     
     Oppure
     
-    a. fare clic su **No, si desidera importare tutto** per importare tutti i dati nei file PST in Office 365 e quindi fare clic su **Avanti**.
+    un. Fare clic su **No, si desidera importare tutto** per importare tutti i dati nei file PST in Office 365 e quindi fare clic su **Avanti**.
     
-    b. nella pagina **Import data to Office 365** fare clic su **Importa dati** per avviare l'importazione. Si noti che la quantità totale di dati che verranno importati viene visualizzata. 
+    b. Nella pagina **Importa dati in Office 365** fare clic su **Importa dati** per avviare l'importazione. Si noti che la quantità totale di dati che verranno importati viene visualizzata. 
     
 6. Nella pagina **Importa** , fare clic **** ![su Aggiorna](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)aggiornamento. Lo stato del processo di importazione viene visualizzato nella colonna **stato** . 
     
@@ -133,7 +133,7 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
     
     |**ID classe messaggio**|**Elementi della cassetta postale che utilizzano questa classe messaggio**|
     |:-----|:-----|
-    |IPM. Attività  <br/> |Voci del Journal  <br/> |
+    |IPM. Attività  <br/> |Voci del diario  <br/> |
     |IPM. Documento  <br/> |Documenti e file (non allegati a un messaggio di posta elettronica)  <br/> |
     |IPM. File  <br/> |(uguale a IPM. Documento  <br/> |
     |IPM. Note. IMC. Notification  <br/> |Report inviati da Internet mail Connect, che è il gateway di Exchange Server per Internet  <br/> |
@@ -141,6 +141,6 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
     |IPM. Note. Rules. OOF. template. Microsoft  <br/> |Messaggi di risposta automatica fuori sede  <br/> |
     |IPM. Note. Rules. ReplyTemplate. Microsoft  <br/> |Risposte inviate da una regola di posta in arrivo  <br/> |
     |IPM. OLE. Classe  <br/> |Eccezioni per una serie ricorrente  <br/> |
-    |IPM. Recall. report  <br/> |Rapporti di richiamo del messaggio  <br/> |
+    |IPM. Recall. report  <br/> |Rapporti Richiamo messaggio  <br/> |
     |IPM. Remoto  <br/> |Messaggi di posta elettronica remoti  <br/> |
     |IPM. Report  <br/> |Report sullo stato degli elementi  <br/> |

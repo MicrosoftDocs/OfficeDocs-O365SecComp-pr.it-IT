@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando non è più necessario conservare il contenuto di una cassetta postale inattiva di Office 365, è possibile eliminare definitivamente la cassetta postale inattiva rimuovendo l'esenzione. Dopo aver rimosso il blocco, la cassetta postale inattiva viene contrassegnata per l'eliminazione e viene eliminata definitivamente dopo l'elaborazione.
-ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295739"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899985"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminare una cassetta postale inattiva in Office 365
 
-Una cassetta postale inattiva viene utilizzata per mantenere la posta elettronica di un ex dipendente dopo che lui o lei lascia l'organizzazione. Quando non è più necessario conservare il contenuto di una cassetta postale inattiva, è possibile eliminare definitivamente la cassetta postale inattiva rimuovendo l'esenzione. Inoltre, è possibile che più blocchi possano essere inseriti in una cassetta postale inattiva. Ad esempio, una cassetta postale inattiva potrebbe essere attivata per il blocco per controversia legale e su una o più archiviazioni sul posto. Inoltre, un criterio di conservazione di Office 365 (creato nel centro sicurezza &amp; e conformità di Office 365) potrebbe essere applicato alla cassetta postale inattiva. È necessario rimuovere tutte le esenzioni e i criteri di conservazione di Office 365 da una cassetta postale inattiva per eliminarla. Una volta rimosse le esenzioni e i criteri di conservazione, la cassetta postale inattiva viene contrassegnata per l'eliminazione e viene eliminata definitivamente dopo l'elaborazione.
+An inactive mailbox is used to preserve a former employee's email after he or she leaves your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. Additionally, an Office 365 retention policy (created in the Office 365 Security &amp; Compliance Center) might be applied to the inactive mailbox. You have to remove all holds and Office 365 retention policies from an inactive mailbox to delete it. After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
   
 > [!IMPORTANT]
 > Abbiamo posticipato la scadenza del 1° luglio 2017 relativa alla creazione di un nuovo blocco sul posto per rendere inattiva una cassetta postale. Tuttavia, più avanti nel corso di questo anno o all'inizio del prossimo, non sarà più possibile creare blocchi sul posto in Exchange Online. Da quel momento, sarà possibile utilizzare soltanto blocchi per controversia legale e criteri di conservazione di Office 365 per creare una cassetta postale inattiva. Tuttavia, le cassette postali inattive esistenti disponibili nel blocco sul posto continueranno a essere supportate ed è possibile continuare a gestire i blocchi per controversia legale sulle cassette postali inattive. Ciò include le operazioni di modifica della durata di un blocco sul posto e di eliminazione definitiva di una cassetta postale inattiva mediante la rimozione del blocco sul posto. 
   
-Vedere la sezione [Ulteriori informazioni](delete-an-inactive-mailbox.md#moreinfo) per una descrizione di cosa succede dopo che i blocchi vengono rimossi da una cassetta postale inattiva. 
+Vedere la sezione [Ulteriori informazioni](#more-information) per una descrizione di cosa succede dopo che i blocchi vengono rimossi da una cassetta postale inattiva. 
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- È necessario utilizzare Exchange Online PowerShell per rimuovere un blocco per controversia legale da una cassetta postale inattiva. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC). Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). È possibile utilizzare PowerShell di Exchange Online o EAC per rimuovere un blocco sul posto da una cassetta postale inattiva. 
+- È necessario utilizzare Exchange Online PowerShell per rimuovere un blocco per controversia legale da una cassetta postale inattiva. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC). Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). È possibile utilizzare Exchange Online PowerShell o l'interfaccia di amministrazione di Exchange (EAC) per rimuovere un blocco sul posto da una cassetta postale inattiva. 
     
-- È possibile copiare il contenuto di una cassetta postale inattiva in un'altra cassetta postale prima di rimuovere il blocco ed eliminare una cassetta postale inattiva. Per ulteriori informazioni, vedere [ripristinare una cassetta postale inattiva in Office 365](restore-an-inactive-mailbox.md).
+- È possibile copiare i contenuti di una cassetta postale inattiva in un'altra cassetta postale prima di rimuovere il blocco ed eliminare una cassetta postale inattiva. Per ulteriori informazioni, vedere [ripristinare una cassetta postale inattiva in Office 365](restore-an-inactive-mailbox.md).
     
-- Se si rimuove il blocco o il criterio di conservazione di Office 365 da una cassetta postale inattiva e il periodo di conservazione delle cassette postali eliminate temporaneamente per la cassetta postale è scaduto, la cassetta postale viene eliminata definitivamente. Dopo che è stata eliminata, non può essere ripristinata. Prima di rimuovere il blocco, accertarsi che il contenuto della cassetta postale non sia più necessario. Se si desidera riattivare una cassetta postale inattiva, è possibile recuperarla. Per ulteriori informazioni, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
+- Se si rimuove il blocco o i criteri di conservazione di Office 365 da una cassetta postale inattiva e il periodo di conservazione della cassetta postale con eliminazione temporanea è scaduto, la cassetta postale viene eliminata definitivamente. Una volta eliminata, non è possibile recuperarla. Prima di rimuovere il blocco, assicurarsi che il contenuto della cassetta postale non sia più necessario. Se si desidera attivare nuovamente una cassetta postale inattiva, è possibile recuperarla. Per ulteriori informazioni, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
     
 - Per ulteriori informazioni sulle cassette postali inattive, vedere [inactive Mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
@@ -67,7 +67,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> Se in una cassetta postale inattiva vengono inseriti numerosi blocchi sul posto, non vengono visualizzati tutti i GUID del blocco sul posto. È possibile eseguire il comando seguente per visualizzare tutti i GUID del blocco sul posto:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> Se sono abilitati numerosi blocchi sul posto per una cassetta postale inattiva, non vengono visualizzati tutti i GUID dei blocchi sul posto. È possibile eseguire il comando seguente per visualizzare tutti i GUID del blocco sul posto:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
 ## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>Passaggio 2: Rimuovere un blocco da una cassetta postale inattiva
 
@@ -97,25 +97,25 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>Utilizzare EAC per eliminare un blocco sul posto
 
-1. Se si conosce il nome del blocco sul posto che si desidera eliminare, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva che si desidera eliminare definitivamente. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](delete-an-inactive-mailbox.md#step1).
+1. Se si conosce il nome del blocco sul posto che si desidera eliminare, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva che si desidera eliminare definitivamente. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. Nell'interfaccia di amministrazione di Exchange, andare a **gestione** \> **della conformità &amp; sul posto eDiscovery Hold**.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Selezionare il blocco sul posto che si desidera eliminare, quindi fare clic su **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
     
-4. Nella pagina delle proprietà **di conservazione &amp; eDiscovery sul posto** , fare clic su archiviazione sul **posto**, deselezionare la casella di controllo **posiziona il contenuto corrispondente alla query di ricerca nelle cassette postali selezionate** e quindi fare clic su **Salva**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
-5. Nella pagina ** &amp; blocco eDiscovery sul posto** , selezionare di nuovo il blocco sul posto, quindi fare clic su **Elimina**![icona](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)di eliminazione.
+5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
     
 6. Nell'avviso, fare clic su **Sì** per eliminare il blocco sul posto. 
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Utilizzare PowerShell di Exchange Online per eliminare un blocco sul posto
 
-1. Creare una variabile che contiene le proprietà del blocco sul posto che si desidera eliminare. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](delete-an-inactive-mailbox.md#step1).
+1. Creare una variabile che contiene le proprietà del blocco sul posto che si desidera eliminare. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -135,17 +135,17 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Usare EAC per rimuovere una cassetta postale inattiva da un blocco sul posto
 
-1. Se si conosce il nome del blocco sul posto che si desidera applicare alla cassetta postale inattiva, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](delete-an-inactive-mailbox.md#step1).
+1. Se si conosce il nome del blocco sul posto che si desidera applicare alla cassetta postale inattiva, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. Nell'interfaccia di amministrazione di Exchange, andare a **gestione** \> **della conformità &amp; sul posto eDiscovery Hold**.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Selezionare il blocco sul posto applicato alla cassetta postale inattiva, quindi fare clic su **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
     
-4. Nella pagina delle proprietà **di blocco &amp; sul posto eDiscovery** fare clic su **origini**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
 5. Nell'elenco delle cassette postali di origine, fare clic sul nome della cassetta postale inattiva che si desidera rimuovere, quindi fare clic su **Rimuovi**![Icona Rimuovi](media/adf01106-cc79-475c-8673-065371c1897b.gif).
     
@@ -157,7 +157,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 Se il blocco sul posto contiene un numero elevato di cassette postali di origine, è possibile che la cassetta postale inattiva non sia riportata nella pagina **Origini** nell'interfaccia di amministrazione di Exchange. Vengono visualizzate fino a 3.000 cassette postali nella pagina **Origini** quando si modifica un blocco sul posto. Se una cassetta postale inattiva non è indicata nella pagina **Origini**, è possibile utilizzare PowerShell di Exchange Online per rimuoverla dal blocco sul posto. 
   
-1. Creare una variabile che contiene le proprietà del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](delete-an-inactive-mailbox.md#step1).
+1. Creare una variabile che contiene le proprietà del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -169,7 +169,7 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
   $InPlaceHold.Sources
 ```
 
-   **Nota:** La ** proprietà sources del blocco sul posto identifica le cassette postali di origine in base alle rispettive proprietà *legacyExchangeDN* . Poiché questa proprietà identifica in modo univoco le cassette postali inattive, l'utilizzo della proprietà *Sources* dall'archiviazione sul posto consente di impedire la rimozione della cassetta postale errata. Questo consente inoltre di evitare problemi se due cassette postali hanno lo stesso alias o indirizzo SMTP. 
+   **Nota:** La ** proprietà sources del blocco sul posto identifica le cassette postali di origine in base alle rispettive proprietà *legacyExchangeDN* . Poiché questa proprietà identifica le cassette postali inattive in modo univoco, l'utilizzo della proprietà *Sources* dal blocco sul posto consente di evitare la rimozione della cassetta postale errata. Ciò consente inoltre di evitare problemi se due cassette postali hanno lo stesso alias o indirizzo SMTP. 
    
 3. Rimuovere la cassetta postale inattiva dall'elenco delle cassette postali di origine nella variabile. Assicurarsi di usare il **LegacyExchangeDN** della cassetta postale inattiva restituito dal comando nel passaggio precedente. 
     
@@ -209,9 +209,9 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
     
 - **Una cassetta postale inattiva viene eliminata definitivamente subito dopo la rimozione del blocco?** Se la data di eliminazione temporanea di una cassetta postale inattiva risale a più di 30 giorni prima, la cassetta postale non viene eliminata definitivamente non appena si rimuove il blocco. La cassetta postale viene contrassegnata per l'eliminazione definitiva e viene eliminata la volta successiva che viene elaborata. 
     
-- In **che modo il periodo di conservazione delle cassette postali eliminate temporaneamente influenza le cassette postali inattive?** Se la data di eliminazione temporanea di una cassetta postale inattiva è superiore a 30 giorni prima della data in cui è stato rimosso il blocco, la cassetta postale viene contrassegnata per l'eliminazione definitiva. Tuttavia, se una cassetta postale inattiva ha una data di eliminazione temporanea negli ultimi 30 giorni e si rimuove il blocco, è possibile ripristinare la cassetta postale fino alla scadenza del periodo di conservazione della cassetta postale eliminata temporaneamente. Per informazioni dettagliate, vedere [eliminare o ripristinare le cassette postali degli utenti in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Dopo la scadenza del periodo di conservazione della cassetta postale eliminata temporaneamente, seguire le procedure per il ripristino di una cassetta postale inattiva. Per ulteriori informazioni, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
+- **In che modo il periodo di conservazione delle cassette postali con eliminazione temporanea influisce sulle cassette postali inattive?** Se la data di eliminazione temporanea di una cassetta postale inattiva risale a più di 30 giorni prima della data in cui è stato rimosso il blocco, la cassetta postale viene contrassegnata per l'eliminazione definitiva. Tuttavia, se una cassetta postale inattiva ha una data di eliminazione temporanea entro gli ultimi 30 giorni e si rimuove il blocco, è possibile ripristinare la cassetta postale fino a quando non scade il periodo di conservazione delle cassette postali con eliminazione temporanea. Per ulteriori dettagli, vedere [Eliminare o ripristinare le cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Alla scadenza del periodo di conservazione delle cassette postali con eliminazione temporanea, è necessario seguire le procedure per il ripristino di una cassetta postale inattiva. Per ulteriori informazioni, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
     
-- **Come si visualizzano le informazioni su una cassetta postale inattiva dopo la rimozione del blocco?** Dopo la rimozione di un'esenzione e la cassetta postale inattiva viene ripristinata a una cassetta postale eliminata temporaneamente, non verrà restituita utilizzando il parametro *InactiveMailboxOnly* con il cmdlet **Get-Mailbox** . Tuttavia, è possibile visualizzare le informazioni sulla cassetta postale utilizzando il comando **Get-Mailbox-SoftDeletedMailbox** . Per esempio: 
+- **Come vengono visualizzate le informazioni su una cassetta postale inattiva dopo la rimozione del blocco?** Dopo la rimozione di un'esenzione e la cassetta postale inattiva viene ripristinata a una cassetta postale eliminata temporaneamente, non verrà restituita utilizzando il parametro *InactiveMailboxOnly* con il cmdlet **Get-Mailbox** . Tuttavia, è possibile visualizzare le informazioni sulla cassetta postale utilizzando il comando **Get-Mailbox -SoftDeletedMailbox**. Ad esempio: 
     
 ```
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In

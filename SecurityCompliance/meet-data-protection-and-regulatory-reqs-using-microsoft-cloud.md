@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296839"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900175"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
 
@@ -385,7 +385,7 @@ Alcune normative richiedono che un'organizzazione debba essere in grado di elimi
   
 - [Cercare un utente](#search-for-a-user)
 
-- [Esportare un report di cronologia dei dati dell'account](#export-report-of-account-data-history)
+- [Esportare un report di cronologia dei dati dell'account](#export-a-report-of-account-data-history)
 
 - [Riassegnare attività](#reassign-action-items)
 
@@ -511,9 +511,9 @@ Per aggiungere una valutazione a Compliance Manager:
   
 1. Nel dashboard di Compliance Manager, fare clic sull'![icona Aggiungi](media/ITPro-EAC-AddIcon.gif) **Aggiungi valutazione**. 
     
-2. Nella finestra **Aggiungere valutazione**, è possibile creare un nuovo gruppo per aggiungere la valutazione oppure aggiungerla a un gruppo esistente (il gruppo predefinito è denominato "Gruppo iniziale"). A seconda dell'opzione scelta, digitare il nome di un nuovo gruppo o selezionare un gruppo esistente dall'elenco a discesa. Per ulteriori informazioni, vedere [Raggruppamento delle valutazioni](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
+2. Nella finestra **Aggiungere valutazione**, è possibile creare un nuovo gruppo per aggiungere la valutazione oppure aggiungerla a un gruppo esistente (il gruppo predefinito è denominato "Gruppo iniziale"). A seconda dell'opzione scelta, digitare il nome di un nuovo gruppo o selezionare un gruppo esistente dall'elenco a discesa. Per ulteriori informazioni, vedere [Raggruppamento delle valutazioni](#grouping-assessments).
     
-    Se si crea un nuovo gruppo, è anche possibile copiare le informazioni da un gruppo esistente alla nuova valutazione. Ciò significa che qualsiasi informazione che è stata aggiunta ai campi Dettagli di implementazione, Piano di test e Risposta del management dei controlli gestiti dal cliente da Valutazioni nel gruppo da cui si copia, viene copiata nello stesso (o correlato) controllo gestito dai clienti nella nuova valutazione. Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni delle valutazioni in quel gruppo verranno copiate nella nuova valutazione. Per ulteriori informazioni, vedere [Copiare informazioni da valutazioni esistenti](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying).
+    Se si crea un nuovo gruppo, è anche possibile copiare le informazioni da un gruppo esistente alla nuova valutazione. Ciò significa che qualsiasi informazione che è stata aggiunta ai campi Dettagli di implementazione, Piano di test e Risposta del management dei controlli gestiti dal cliente da Valutazioni nel gruppo da cui si copia, viene copiata nello stesso (o correlato) controllo gestito dai clienti nella nuova valutazione. Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni delle valutazioni in quel gruppo verranno copiate nella nuova valutazione. Per ulteriori informazioni, vedere [Copiare informazioni da valutazioni esistenti](#copying-information-from-existing-assessments).
     
 3. Fare clic su **Avanti** e procedere come segue:
     
@@ -553,7 +553,7 @@ Analogamente, vengono sincronizzate le informazioni provenienti dai controlli co
   
 1. Questa sezione mostra le informazioni di riepilogo della valutazione, incluso il nome del gruppo di valutazione, del prodotto, della valutazione e il numero di controlli di valutazione
     
-2. Questa sezione mostra i controlli del filtro di valutazione. Per una spiegazione più dettagliata su come utilizzare i controlli del filtro di valutazione, vedere la sezione [Gestire il processo di valutazione](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1). 
+2. Questa sezione mostra i controlli del filtro di valutazione. Per una spiegazione più dettagliata su come utilizzare i controlli del filtro di valutazione, vedere la sezione [Gestire il processo di valutazione](#managing-the-assessment-process). 
     
 3. Questa sezione mostra i singoli servizi cloud che rientrano nell'ambito della valutazione.
     
@@ -561,7 +561,7 @@ Analogamente, vengono sincronizzate le informazioni provenienti dai controlli co
     
 5. Questa sezione contiene i controlli gestiti dai clienti, che sono anche organizzati dalla famiglia di controlli. Fare clic su una famiglia di controlli per espanderla e visualizzare i singoli controlli.
     
-6. Visualizza il numero totale di controlli nella famiglia di controlli e quanti di questi controlli sono stati valutati. Una funzionalità chiave di Compliance Manager è il monitoraggio dei progressi della tua organizzazione sulla valutazione dei controlli gestiti dai clienti. Per ulteriori informazioni, vedere la sezione [Comprendere il punteggio di conformità](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore). 
+6. Visualizza il numero totale di controlli nella famiglia di controlli e quanti di questi controlli sono stati valutati. Una funzionalità chiave di Compliance Manager è il monitoraggio dei progressi della tua organizzazione sulla valutazione dei controlli gestiti dai clienti. Per ulteriori informazioni, vedere la sezione [Comprendere il punteggio di conformità](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gestire il processo di valutazione
 

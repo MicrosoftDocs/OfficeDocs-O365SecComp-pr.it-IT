@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639133"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900055"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per individuare dati riservati memorizzati nei siti
 
@@ -53,7 +53,7 @@ Infine, intervallo di confidenza consiste nel livello di confidenza con il quale
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Ulteriori proprietà della query e operatori di ricerca sono disponibili nel Centro eDiscovery
 
-DLP in SharePoint introduce anche la proprietà LastSensitiveContentScan, che consente di cercare i file analizzati in un intervallo di tempo specifico. Per gli esempi di query `LastSensitiveContentScan` con la proprietà, vedere gli [esempi di query complesse](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) nella sezione successiva. 
+DLP in SharePoint introduce anche la proprietà LastSensitiveContentScan, che consente di cercare i file analizzati in un intervallo di tempo specifico. Per gli esempi di query `LastSensitiveContentScan` con la proprietà, vedere gli [esempi di query complesse](#examples-of-complex-queries) nella sezione successiva. 
   
 È possibile utilizzare non solo le proprietà specifiche di DLP per creare una query, ma anche le proprietà di ricerca di eDiscovery `Author` di `FileExtension`SharePoint standard, ad esempio o. È possibile utilizzare gli operatori per creare query complesse. Per l'elenco delle proprietà e degli operatori disponibili, vedere l'articolo [utilizzo di proprietà e operatori di ricerca con](https://go.microsoft.com/fwlink/?LinkId=510093) il post di Blog di eDiscovery. 
   
