@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296809"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900155"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -38,9 +38,10 @@ Office 365 offre diversi modi in cui l'organizzazione può impedire che il conte
 
     - **Criteri di conservazione** delle posizioni specifiche: criteri che vengono assegnati ai percorsi di contenuto di utenti specifici. È possibile utilizzare il cmdlet **Get-Mailbox** in Exchange Online PowerShell per ottenere informazioni sui criteri di conservazione assegnati a cassette postali specifiche.
 
-    - **Criteri di conservazione a livello dell'organizzazione** : criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione. Per ulteriori informazioni, vedere la sezione "applicazione di un criterio di conservazione a un'intera organizzazione o a percorsi specifici" in [Overview of Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)Retention Policies.
+    - **Criteri di conservazione a livello dell'organizzazione** : criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione.
+  Per ulteriori informazioni, vedere la sezione "applicazione di un criterio di conservazione a un'intera organizzazione o a percorsi specifici" in [Overview of Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)Retention Policies.
 
-- **Etichette di conservazione di office 365** -se un utente applica un'etichetta di conservazione di Office 365 (una configurata in modo da conservare il contenuto o conservare e quindi eliminare il contenuto) in *qualsiasi* cartella o elemento della propria cassetta postale, la cassetta postale viene conservata come se la cassetta postale fosse in blocco per controversia legale o assegnato a un criterio di conservazione di Office 365. Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
+- **Etichette di conservazione di office 365** -se un utente applica un'etichetta di conservazione di Office 365 (una configurata in modo da conservare il contenuto o conservare e quindi eliminare il contenuto) in *qualsiasi* cartella o elemento della propria cassetta postale, la cassetta postale viene conservata come se la cassetta postale fosse in blocco per controversia legale o assegnato a un criterio di conservazione di Office 365. Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
 
 Per gestire le cassette postali in blocco, potrebbe essere necessario identificare il tipo di blocco applicato a una cassetta postale, in modo da poter eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o definitiva del blocco o l'esclusione di una cassetta postale da un criterio di conservazione di Office 365. In questi casi, il primo passaggio consiste nell'identificare il tipo di blocco applicato alla cassetta postale. Poiché in una singola cassetta postale è possibile inserire più esenzioni (e tipi diversi di esenzioni), è necessario identificare tutte le esenzioni inserite in una cassetta postale se si desidera rimuovere o modificare tali esenzioni.
 
@@ -138,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Per eseguire la connessione a PowerShell centro conformità &, vedere [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Blocchi sul posto
+### <a name="in-place-holds"></a>Archiviazione sul posto
 
 Eseguire il seguente comando in PowerShell di Exchange Online per identificare il blocco sul posto applicato alla cassetta postale. Utilizzare il GUID per il blocco sul posto identificato nel passaggio 1. Il comando Visualizza il nome del blocco e un elenco delle cassette postali a cui è applicato il blocco.
 
@@ -195,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
 > [!TIP]
-> Il modo migliore per specificare una cassetta postale inattiva nel comando precedente consiste nell'utilizzare il nome distinto o il valore GUID di Exchange. L'utilizzo di uno di questi valori consente di evitare di specificare accidentalmente la cassetta postale errata. 
+> Il modo migliore per specificare una cassetta postale inattiva nel comando precedente consiste nell'utilizzare il nome distinto o il valore GUID di Exchange. L'utilizzo di uno di questi valori consente di non specificare accidentalmente la cassetta postale errata. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
