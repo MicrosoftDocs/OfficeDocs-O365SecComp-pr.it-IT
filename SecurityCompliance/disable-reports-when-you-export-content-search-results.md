@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Modificare il registro di sistema di Windows nel computer locale per disabilitare i report quando si esportano i risultati di una ricerca di &amp; contenuto dal centro regola di sicurezza di Office 365. La disAttivazione di questi rapporti consente di velocizzare il tempo di download e di risparmiare spazio su disco.
-ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213476"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936716"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Disabilitare i report quando si esportano i risultati della ricerca contenuto &amp; nel centro sicurezza e conformità di Office 365
 

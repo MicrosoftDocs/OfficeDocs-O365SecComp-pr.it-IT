@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Oltre alla linea di base, la crittografia a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, inclusi i dati di Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Si tratta della crittografia del servizio.
-ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216506"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936766"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 
@@ -142,7 +142,7 @@ Office 365 utilizza la chiave di disponibilità sia per la disponibilità del se
   
 ![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
-Se entrambe le chiavi di Azure Key Vault di un singolo criterio di crittografia dei dati (DEP, Data Encryption Policy) non sono disponibili, Office 365 può utilizzare la chiave di disponibilità per passare a un nuovo DEP. Office 365 determina se utilizzare la chiave di disponibilità per la disponibilità del servizio in modo diverso a seconda che si tratti di un attività avviata dall'utente, ad esempio quando un utente Scarica la posta elettronica nel client Outlook o un'attività avviata dal sistema, come l'indicizzazione del contenuto delle cassette postali o per le ricerche di eDiscovery, ha attivato il processo.
+Se entrambe le chiavi di Azure Key Vault di un singolo criterio di crittografia dei dati (DEP, Data Encryption Policy) non sono disponibili, Office 365 può utilizzare il tasto disponibilità per passare a una nuova funzionalità di protezione esecuzione programmi. Office 365 determina se utilizzare la chiave di disponibilità per la disponibilità del servizio in modo diverso a seconda che si tratti di un'attività avviata dall'utente, ad esempio quando un utente Scarica la posta elettronica per il client di Outlook o un'attività avviata dal sistema, ad esempio l'indicizzazione il contenuto delle cassette postali o per le ricerche di eDiscovery ha attivato il processo.
   
 Office 365 segue questo processo in risposta alle azioni avviate dall'utente per determinare se utilizzare la chiave di disponibilità per le cassette postali degli utenti:
   

@@ -14,12 +14,12 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Il 15 agosto 2018, verrà rimossa l'app per dispositivi mobili di Office 365 Message Encryption (OME) da Android e Apple Store. Per leggere i messaggi di posta elettronica e gli allegati crittografati con la versione precedente di OME sui telefoni Apple e Android, è necessaria l'app per dispositivi mobili di Office 365 Message Encryption Viewer. Oltre a rimuovere l'app del Visualizzatore OME, non vengono apportate altre modifiche alla versione precedente di OME.
-ms.openlocfilehash: e2ca43f2bca6e419a5dfeb2ff5ca2c554598357c
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 0aa8ef0f2610284c1e897290c3f337804d78185b
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357477"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936676"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>Obsoleto app di Office 365 Message Encryption Viewer
 

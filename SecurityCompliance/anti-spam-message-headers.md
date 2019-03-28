@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio.
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693575"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936746"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -28,7 +28,6 @@ Quando Exchange Online Protection analizza un messaggio di posta elettronica in 
 > Per informazioni sulla visualizzazione dell'intestazione di un messaggio di posta elettronica in diversi client di posta elettronica, vedere [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). È possibile copiare e incollare il contenuto dell'intestazione di un messaggio nello strumento [Analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha). Quando si seleziona un messaggio nella quarantena nell'interfaccia di amministrazione di Exchange, il collegamento **Visualizza intestazione messaggio** consente di copiare e incollare facilmente il testo dell'intestazione del messaggio nello strumento . Dopo l'accesso allo strumento Analizzatore intestazione messaggio, fare clic su **Analizza intestazioni** per recuperare le informazioni sull'intestazione.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campi di intestazione del messaggio X-Forefront-Antispam-Report
-<a name="sectionSection0"> </a>
 
 Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del messaggio, cercare **X-Forefront-Antispam-Report**, quindi cercare i campi seguenti. L'utilizzo degli altri campi dell'intestazione è riservato al team di protezione dalla posta indesiderata di Microsoft per scopi di diagnostica.
 
@@ -38,7 +37,7 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |CTRY|Il paese dal quale il messaggio è stato connesso al servizio. Questo è determinato dall'indirizzo IP di connessione, il quale potrebbe non essere uguale all'indirizzo IP di invio di origine.|
 |LANG|LANG:   la lingua in cui è scritto il messaggio, come specificato dal codice paese (ad esempio, ru_RU per la Russia).|
 |SCL|Il valore del livello di probabilità di posta indesiderata (SCL) del messaggio. Per ulteriori informazioni sull'interpretazione di questi valori, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).  |
-|PCL|Il valore del livello di confidenza di Phishing (PCL) del messaggio. |
+|PCL|Il valore del livello di confidenza di Phishing (PCL) del messaggio.|
 |SRV:BULK|Il messaggio è stato identificato come un messaggio di posta elettronica in blocco. Se l'**opzione avanzata di filtro della posta indesiderata Blocca tutti i messaggi di posta in blocco** è abilitata, il messaggio verrà contrassegnato come posta indesiderata. Se l'opzione è disabilitata, il messaggio verrà contrassegnato come posta indesiderata solo se il resto delle regole del filtro stabiliscono che è indesiderato.|
 |SFV:SFE|Il filtro è stato ignorato e il messaggio è stato lasciato passare perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti attendibili.|
 |SFV:BLK|Il filtro è stato ignorato e il messaggio è stato bloccato perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti bloccati.  <br/> **Suggerimento**: per ulteriori informazioni su come gli utenti finali possono creare elenchi di mittenti attendibili e bloccati, vedere [blocco o Consenti (impostazioni di posta indesiderata)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook sul Web) e [Panoramica del filtro per la posta](https://go.microsoft.com/fwlink/p/?LinkId=270065) indesiderata (Outlook).|
@@ -58,7 +57,6 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |X-CustomSpam: [ASFOption]|Il messaggio ha trovato un'opzione di filtro per la posta indesiderata avanzata. Ad esempio, **X-CustomSpam: I collegamenti immagini a siti remoti** indicano che l'opzione ASF dei **collegamenti immagini a siti remoti** ha trovato una corrispondenza. Per scoprire quale testo X-header viene aggiunto per ogni specifica opzione ASF, vedere [Advanced Spam Filtering Options](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campi di intestazione del messaggio X-Microsoft-Antispam 
-<a name="sectionSection1"> </a>
 
 Nella tabella seguente vengono descritti i campi utili nell'intestazione del messaggio **X-Microsoft-Antispam**. L'utilizzo degli altri campi dell'intestazione è riservato al team di protezione dalla posta indesiderata di Microsoft per scopi di diagnostica.
   
@@ -68,16 +66,14 @@ Nella tabella seguente vengono descritti i campi utili nell'intestazione del mes
 |PCL|Il Livello di probabilità di phishing (PCL) del messaggio, che indica se si tratta di un messaggio di phishing. Lo stato restituito può avere i seguenti valori numerici: <br/>• **0-3**: il contenuto del messaggio non è probabile che sia phishing. <br/>• **4-8**: è probabile che il contenuto del messaggio sia phishing. <br/>• **-9990**: (solo Exchange Online Protection) è probabile che il contenuto del messaggio sia phishing.  <br/>  I valori vengono utilizzati per determinare quale azione viene eseguita dal client di posta elettronica sui messaggi. Ad esempio, Outlook utilizza il timbro PCL per bloccare il contenuto dei messaggi sospetti. Per ulteriori informazioni sul phishing e su come Outlook elabora i messaggi di phishing, vedere [Attivare o disattivare i collegamenti nei messaggi di posta elettronica](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
    
 ## <a name="authentication-results-message-header"></a>Intestazione del messaggio Authentication-results
-<a name="sectionSection2"> </a>
 
 I risultati dei controlli su SPF, DKIM e DMARC vengono registrati (o contrassegnati) da Office 365 nell'intestazione del messaggio **Authentication-results** quando i server di posta ricevono un messaggio di posta elettronica.
   
 ### <a name="check-stamp-syntax-and-examples"></a>Esempi e sintassi del contrassegno di controllo
-<a name="referenceSPFstamp"> </a>
 
 I seguenti esempi di sintassi mostrano una porzione del "contrassegno" che Office 365 applica all'intestazione di ogni messaggio di posta elettronica che viene sottoposto a una verifica dell'autenticazione della posta elettronica quando viene ricevuto dai server della posta. Il contrassegno viene aggiunto all'intestazione **Authentication-Results**.
   
- **Sintassi: timbro segno di spunta SPF**
+**Sintassi: timbro segno di spunta SPF**
   
 Per SPF, si applica la sintassi seguente.
   
@@ -85,14 +81,14 @@ Per SPF, si applica la sintassi seguente.
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **Esempi: timbro segno di spunta SPF**
+**Esempi: timbro segno di spunta SPF**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **Sintassi: timbro segno di spunta DKIM**
+**Sintassi: timbro segno di spunta DKIM**
   
 Per DKIM, si applica la sintassi seguente.
   
@@ -100,14 +96,14 @@ Per DKIM, si applica la sintassi seguente.
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **Esempi: timbro segno di spunta DKIM**
+**Esempi: timbro segno di spunta DKIM**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **Sintassi: timbro segno di spunta DMARC**
+**Sintassi: timbro segno di spunta DMARC**
   
 Per DMARC, si applica la sintassi seguente.
   
@@ -115,7 +111,7 @@ Per DMARC, si applica la sintassi seguente.
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **Esempi: timbro segno di spunta DMARC**
+**Esempi: timbro segno di spunta DMARC**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Campi di intestazione del messaggio Authentication-results utilizzati dall'autenticazione della posta elettronica di Office 365
-<a name="referenceSPFstamp"> </a>
 
 Nella tabella seguente vengono descritti i campi e i valori possibili per il controllo di autenticazione di ogni messaggio di posta elettronica.
   

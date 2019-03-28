@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come impedire falsi positivi ed evitare che messaggi di posta elettronica effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670651"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936706"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365
 

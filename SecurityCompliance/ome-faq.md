@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217116"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936786"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi di Office 365
 
@@ -30,7 +30,7 @@ Domande su come funzionano le nuove funzionalità di protezione dei messaggi di 
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>Che cos'è la crittografia dei messaggi (OME) di Office 365?
 
-OME combina la crittografia della posta elettronica e le funzionalità di gestione dei diritti. Le funzionalità di gestione dei diritti sono alimentate da Azure Information Protection.
+OME combina la crittografia della posta elettronica e le funzionalità di gestione dei diritti. Le funzionalità di Rights management si basano sulla tecnologia Azure Information Protection.
   
 ## <a name="who-can-use-ome"></a>Chi può utilizzare OME?
 
@@ -116,7 +116,7 @@ Se si collega un file PDF a un messaggio protetto, il messaggio verrà protetto,
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Gli allegati di OneDrive for business sono supportati?
 
-Non ancora. Gli allegati di OneDrive for business non sono supportati e gli utenti finali non possono crittografare un messaggio di posta elettronica che contiene un allegato cloud OneDrive for business.
+Not yet. Gli allegati di OneDrive for business non sono supportati e gli utenti finali non possono crittografare un messaggio di posta elettronica che contiene un allegato cloud OneDrive for business.
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>È possibile crittografare automaticamente i messaggi impostando i criteri?
 

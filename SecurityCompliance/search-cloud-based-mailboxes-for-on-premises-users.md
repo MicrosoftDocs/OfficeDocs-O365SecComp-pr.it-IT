@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1XN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 148a5766342fcdd52e0505a59729cad3d2993908
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296699"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935231"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -32,7 +32,7 @@ Di seguito sono riportati i requisiti e le limitazioni per la configurazione e p
     
 - La cassetta postale basata sul cloud per gli utenti locali viene utilizzata solo per archiviare i dati della chat dei team. Un utente locale non è in grado di accedere alla cassetta postale basata sul cloud o di accedervi in alcun modo. Non può essere utilizzato per inviare o ricevere messaggi di posta elettronica. 
     
-- È necessario inviare una richiesta al supporto tecnico Microsoft per consentire all'organizzazione di cercare i dati della chat dei team nelle cassette postali basate sul cloud per gli utenti locali. [Per abilitare questa funzionalità nel centro &amp; sicurezza e conformità di questo articolo, vedere presentazione di una richiesta con il supporto tecnico Microsoft](#filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center) . 
+- È necessario inviare una richiesta al supporto tecnico Microsoft per consentire all'organizzazione di cercare i dati della chat dei team nelle cassette postali basate sul cloud per gli utenti locali. Per abilitare questa funzionalità in questo articolo, vedere [presentazione di una richiesta con il supporto tecnico Microsoft](#filing-a-request-with-microsoft-support-to-enable-this-feature) . 
     
  **Nota:** Le conversazioni dei canali di teams vengono sempre memorizzate nella cassetta postale basata sul cloud associata al team. Questo significa che è possibile usare la ricerca contenuto per le conversazioni del canale di ricerca senza dover presentare una richiesta di supporto. Per ulteriori informazioni sulla ricerca delle conversazioni dei canali di teams, vedere [searchIng Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
@@ -46,7 +46,7 @@ Nell'immagine seguente viene illustrato il flusso di lavoro del modo in cui i da
   
 Oltre a questa nuova funzionalità, è comunque possibile utilizzare la ricerca contenuto per cercare, visualizzare in anteprima ed esportare il contenuto dei team nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata a ciascun dato di chat teams di Microsoft e 1xN teams nella cassetta postale di Exchange Online per utenti basati sul cloud.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center"></a>Archiviazione di una richiesta con il supporto tecnico Microsoft per abilitare questa funzionalità &amp; nel centro sicurezza e conformità
+## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Archiviazione di una richiesta con il supporto tecnico Microsoft per abilitare questa funzionalità
 
 È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel &amp; Centro sicurezza e conformità per cercare i dati di chat dei team nelle cassette postali basate sul cloud per gli utenti locali. Si noti che questa funzionalità è disponibile in PowerShell per &amp; il Centro sicurezza e conformità di Office 365. Non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
   

@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: f61c9e3caf7de3560a03f2b720822162ea98486d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296659"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936726"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicazione nei risultati della ricerca di eDiscovery
 
 In questo articolo viene illustrato il funzionamento della deduplicazione dei risultati della ricerca di eDiscovery e vengono illustrate le limitazioni dell'algoritmo di deduplicazione.
   
-Quando si utilizzano gli strumenti di Office 365 eDiscovery per esportare i risultati di una ricerca di eDiscovery, è possibile scegliere di deduplicare i risultati esportati. Cosa significa? Quando si attiva la deduplicazione (per impostazione predefinita, la deduplicazione non è abilitata), viene esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali in cui è stata eseguita la ricerca. La deduplicazione consente di risparmiare tempo riducendo il numero di elementi che è necessario esaminare e analizzare dopo l'esportazione dei risultati della ricerca. Tuttavia, è importante comprendere il funzionamento della deduplicazione e tenere presente che sono presenti limitazioni all'algoritmo che potrebbero provocare la marcatura di un elemento univoco come duplicato durante il processo di esportazione.
+Quando si utilizzano gli strumenti di Office 365 eDiscovery per esportare i risultati di una ricerca di eDiscovery, è possibile scegliere di deduplicare i risultati esportati. Cosa significa questo messaggio? Quando si attiva la deduplicazione (per impostazione predefinita, la deduplicazione non è abilitata), viene esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali in cui è stata eseguita la ricerca. La deduplicazione consente di risparmiare tempo riducendo il numero di elementi che è necessario esaminare e analizzare dopo l'esportazione dei risultati della ricerca. Tuttavia, è importante comprendere il funzionamento della deduplicazione e tenere presente che sono presenti limitazioni all'algoritmo che potrebbero provocare la marcatura di un elemento univoco come duplicato durante il processo di esportazione.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Come vengono identificati i messaggi duplicati
 
