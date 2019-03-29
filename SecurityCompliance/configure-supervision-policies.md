@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare un criterio di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701291"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866392"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare i criteri di supervisione per l'organizzazione
 
@@ -71,6 +71,34 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 |Utenti controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
 | Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
+Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in un gruppo molto numeroso. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere aggiornati i criteri di supervisione Man mano che i nuovi dipendenti fanno parte dell'organizzazione.
+
+1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicato per il criterio di supervisione globale con le proprietà seguenti. Assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
+
+    - **MemberDepartRestriction = chiuso**. Questo garantisce che gli utenti non possano rimuoversi dal gruppo di distribuzione.
+    - **MemberJoinRestriction = chiuso**. Questo garantisce che gli utenti non possano aggiungersi al gruppo di distribuzione.
+    - **ModerationEnabled = true**. Questo garantisce che tutti i messaggi inviati a questo gruppo devono essere approvati e che il gruppo non venga utilizzato per comunicare al di fuori della configurazione dei criteri di supervisione.
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. Selezionare un [attributo personalizzato di Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) non utilizzato da utilizzare per la verifica degli utenti aggiunti al criterio di supervisione nell'organizzazione.
+
+3. Eseguire il seguente script di PowerShell su una pianificazione ricorrente per aggiungere gli utenti ai criteri di supervisione:
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 - [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gestire i gruppi di protezione abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)

@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
-ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215916"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862498"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
@@ -34,9 +34,9 @@ L'azienda dispone di un numero elevato di contatti aziendali esistenti che si de
 
 Dopo aver completato questa procedura per importare i contatti, è possibile eseguire queste attività aggiuntive:
   
-- [Aggiungere altri contatti esterni](bulk-import-external-contacts.md#AddMore)
+- [Aggiungere altri contatti esterni](#add-more-external-contacts)
   
-- [Nascondere i contatti esterni dalla rubrica condivisa](bulk-import-external-contacts.md#Hide)
+- [Nascondere i contatti esterni dalla rubrica condivisa](#hide-external-contacts-from-the-shared-address-book)
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Passaggio 1: creare un file CSV contenente informazioni sui contatti esterni
 
@@ -123,7 +123,7 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
     
 2. Fare clic su un contatto e **** ![quindi fare clic](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
     
-Questo è tutto! Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica Outlook e Outlook sul Web.
+È tutto. Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica Outlook e Outlook sul Web.
   
 ## <a name="add-more-external-contacts"></a>Aggiungere altri contatti esterni
 
@@ -134,7 +134,7 @@ Questo è tutto! Gli utenti possono visualizzare i contatti e le informazioni ag
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Nascondere i contatti esterni dall'indirizzo condiviso book>
 
-Alcune aziende possono utilizzare i contatti esterni solo in modo che possano essere aggiunti come membri dei gruppi di distribuzione. In questo scenario, è possibile che si desideri nascondere i contatti esterni dalla rubrica condivisa. Ecco come:
+Alcune aziende possono utilizzare i contatti esterni solo in modo che possano essere aggiunti come membri dei gruppi di distribuzione. In questo scenario, è possibile che si desideri nascondere i contatti esterni dalla rubrica condivisa. Ecco come fare.
   
 1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     

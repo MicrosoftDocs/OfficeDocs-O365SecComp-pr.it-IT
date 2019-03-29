@@ -1,74 +1,53 @@
 ---
-title: Video per iniziare con EOP
+title: Che cos'è EOP
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: In questo documento introduttivo vengono fornite informazioni utili per comprendere Exchange Online Protection (EOP) e una terminologia importante. Questo è applicabile per i clienti di Office 365 che proteggono le cassette postali ospitate sul cloud di Exchange Online e i clienti autonomi di EOP che proteggono le cassette postali locali, ad esempio Exchange Server 2016.
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926731"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950433"
 ---
-# <a name="videos-for-getting-started-with-eop"></a>Video per iniziare con EOP
+## <a name="what-is-exchange-online-protection-eop"></a>Che cos'è Exchange Online Protection (EOP)
 
-La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
-  
-> [!NOTE]
-> Prima di avviare le attività descritte nei video, si consiglia di configurare il flusso della posta. Per ulteriori informazioni, vedere l'argomento [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
-  
-Questi video riguardano la personalizzazione delle impostazioni di protezione da posta indesiderata in base alle esigenze dell'organizzazione. Per la posta in ingresso che attraversa il servizio all'organizzazione, è inclusa la creazione di elenchi di mittenti attendibili e bloccati basati su indirizzi IP e la configurazione delle impostazioni del filtro del contenuto. È inoltre disponibile un video in cui gli amministratori possono trovare e rilasciare messaggi di posta indesiderata filtrati o messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) che sono stati inviati alla quarantena e come segnalare i messaggi di posta indesiderata per migliorare il servizio.
-  
-- Configurazione degli elenchi di indirizzi IP consentiti e bloccati in EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    Per ulteriori informazioni, vedere l'argomento [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md) . 
-    
-- Configurazione del filtro del contenuto di posta indesiderata in EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    Per ulteriori informazioni, vedi l'argomento [Configurare i criteri di filtro della posta indesiderata](../configure-your-spam-filter-policies.md). 
-    
-- Trovare e rilasciare i messaggi dalla quarantena
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    Per ulteriori informazioni, vedi l'argomento [Individuazione e rilascio dei messaggi in quarantena come amministratore](../find-and-release-quarantined-messages-as-an-administrator.md). 
-    
-Sarà anche necessario configurare i criteri di protezione da posta indesiderata in uscita se si desidera controllare se la posta indesiderata viene inviata dall'organizzazione. Per informazioni su come eseguire questa operazione, guarda il video sulla posta indesiderata in uscita.
-  
-- Configurazione del criterio delle posta indesiderata in uscita
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    Per ulteriori informazioni, vedere il [criterio di configurazione della posta](../configure-the-outbound-spam-policy.md) indesiderata in uscita
-    
-Exchange Online Protection include anche le impostazioni per gestire i malware rilevati dal servizio, descritte nel video relativo al filtro anti-malware.
-  
-- Configurazione dei criteri antimalware
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    Per ulteriori informazioni, vedi l'argomento [Configurazione dei criteri anti-malware](../configure-anti-malware-policies.md). 
-    
-Per filtrare e instradare i messaggi in base a condizioni specifiche impostate, in base ai criteri aziendali o ai regolamenti, è necessario guardare il video su come creare regole del flusso di posta.
-  
-- Configurare le regole del flusso di posta di Exchange in EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    Per ulteriori informazioni, vedere le regole del [flusso di posta (regole di trasporto) nell'argomento Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se si utilizza EOP autonomo oppure vedere [Mail Flow Rules (Transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic se si utilizza Exchange Online.
-    
-Se si è interessati alla configurazione del servizio eseguendo script dalla riga di comando, guardare il video introduttivo sull'utilizzo di PowerShell in remoto.
-  
-- Utilizzare Remote PowerShell in EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    Per ulteriori dettagli, vedere l'argomento [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) se si utilizza un EOP autonomo oppure vedere l'argomento [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) se si utilizza Exchange Online. 
-    
+Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che consente di proteggere l'organizzazione da posta indesiderata e malware. Se si dispone di cassette postali in Office 365, queste vengono protette automaticamente da EOP, poiché fanno parte del servizio. Sono incluse le organizzazioni che dispongono di cassette postali sia in Office 365 che in locale, comunemente noto come scenario ibrido. EOP standalone è disponibile anche per i clienti che non dispongono di cassette postali nel cloud ma che desiderano proteggere le cassette postali locali. 
 
+EOP tenta di filtrare gli indesiderati, mantenendo la posta in arrivo sgombra dal contenuto che gli utenti non desiderano visualizzare. In genere, la posta indesiderata viene recapitata alla cartella posta inDesiderata. Alcuni utenti desiderano verificare che il filtro stia facendo ciò che vuole, in modo che la cartella posta inDesiderata sia un modo semplice per consentire agli utenti di controllare da soli.  
+
+> [!TIP]
+> Si tratta di una buona cosa quando la posta indesiderata o altrimenti cattivo entra automaticamente nella cartella posta inDesiderata. Il servizio eseguirà le operazioni necessarie in base a ciò che lo stato delle impostazioni di amministratore predefinito o personalizzato. In altre parole, gli utenti non devono preoccuparsi di visualizzare molti messaggi di posta indesiderata nella cartella posta inDesiderata. Se gli amministratori preferiscono spostare tutta la posta indesiderata, la quarantena deve essere configurata. Per ulteriori informazioni, vedere l'articolo relativo alla [quarantena dei messaggi di posta elettronica in Office 365](../quarantine-email-messages.md) .
+
+## <a name="important-terms"></a>Termini importanti
+
+In **ingresso:** Messaggi che stanno entrando in Office 365.
+
+In **uscita:** Messaggi in uscita da Office 365.
+
+**Interno:** Messaggi provenienti da un utente all'interno dell'organizzazione a un utente all'interno dell'organizzazione. Questo include i clienti che si trovano in scenari ibridi e una cassetta postale potrebbe essere locale e l'altra cassetta postale si trova nel cloud.
+
+**False negative (FN):** Posta inDesiderata e altre cianfrusaglie che vengono inviate erroneamente alla posta in arrivo.
+
+**Falso positivo (FP):** Messaggi legittimi che vengono contrassegnati erroneamente come posta indesiderata e inseriti nella cartella posta inDesiderata o in quarantena.
+
+**Posta indesiderata, nota anche come e-mail indesiderata:** Questo è in forma di pubblicità commerciale, catene di lettere, invii politici e così via. Si tratta di un messaggio di posta elettronica a cui gli utenti non possono accedere e provenienti da spammer che tentano di richiedere prodotti o che tentano di commettere frodi.
+
+**Phishing:** Il phishing è un tipo speciale di posta indesiderata che ha lo scopo di ingannare l'utente nel rinunciare alle informazioni personali al fine di commettere furti di identità o frodi. In genere, questo tipo di messaggio contiene un collegamento o un allegato dannoso, ma non sempre.
+
+**Spoof:** Lo spoofing è quando gli spammer falsificano l'intestazione FROM in modo che i messaggi vengano originati da un utente o da una posizione diversa dall'origine effettiva. Può trattarsi di posta indesiderata, ma più comunemente utilizzata per gli utenti di phishing.
+
+**Rappresentazione:** Questo tipo di posta indesiderata è anche un modo per creare l'indirizzo del mittente, ma è possibile modificare parte del nome o del dominio in modo che appaia come l'origine reale. Ad esempio, Bi11@micr0s0ft.com, dove la "l" in Bill era in realtà il numero undici e la "o" in Microsoft è stata sostituita con il numero zero.
+
+In **blocco:** La posta in blocco è in genere sollecitata dagli utenti, anche se a volte indirettamente quando le aziende vendono informazioni ad altre società. È comune che gli utenti si iscrivono intenzionalmente alla posta in blocco (ad esempio, newsletter), ma dimentichino in seguito e pensino che si tratta di posta indesiderata. La posta in blocco diventa indesiderata quando i messaggi di posta in blocco inviano più utenti e i livelli di reclamo diventano troppo alti.

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilizzare la pagina avvisi in Office 365 cloud app Security per visualizzare potenziali problemi e intervenire. È possibile eliminare o risolvere gli avvisi e, se necessario, sospendere un account utente.
-ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213166"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862468"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Esaminare gli avvisi per intervenire in Office 365 Cloud App Security
   
@@ -35,7 +35,10 @@ ms.locfileid: "30213166"
 1. Accedere al portale[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)di sicurezza delle app cloud e accedere.
   
 2. Nella barra di spostamento nella parte superiore dello schermo, scegliere **avvisi**.<br/>![Nella pagina avvisi, è possibile visualizzare gli avvisi che sono stati attivati e tutte le azioni intraprese.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
-  
+ 
+> [!NOTE]
+> gli avvisi per la sicurezza delle App Cloud sono visibili anche nel centro conformità di Office 365 security **** > & (vai a avvisi**visualizza**avvisi. Attualmente, tuttavia, è necessario risolvere questi avvisi sia nel portale cloud app Security che nel centro conformità di Office 365 Security &. Per ulteriori informazioni, vedere [viewIng cloud app Security Alerts](alert-policies.md#viewing-cloud-app-security-alerts). 
+ 
 ## <a name="review-and-handle-alerts"></a>Esaminare e gestire gli avvisi
 
 Gli avvisi consentono di identificare le attività nell'ambiente cloud di Office 365 che potrebbe essere necessario esaminare ulteriormente. È inoltre possibile decidere di creare nuovi criteri o di modificare i criteri esistenti in base agli avvisi visualizzati. Ad esempio, se viene visualizzato un amministratore che accede da una posizione sconosciuta, è possibile decidere di impostare un criterio che impedisca agli amministratori di accedere a Office 365 da determinate posizioni.

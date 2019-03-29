@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro conformità di Office 365 Security & per gestire un problema di fuoriuscita dei dati.
-ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 33943ee4367e01f413cfa7840c796d5197323185
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295809"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862558"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365 
 
@@ -96,14 +96,14 @@ Per creare un'analisi dei dati:
  
 Se si conoscono gli utenti di cui si desidera eseguire la ricerca per i dati riversati, è possibile aggiungerli come persone di interesse per mappare le origini dati all'analisi e cercare rapidamente la propria cassetta postale e l'account OneDrive. Per aggiungere persone di interesse all'indagine, fare clic su **persone di interesse**, quindi fare clic su **Aggiungi persone di interesse**. 
 
-Nella scheda **ricerche** è possibile creare ricerche per individuare i dati versati. Si utilizzerà la stessa query di ricerca utilizzata per individuare i dati rovesciati per eliminare gli stessi messaggi nel [passaggio 4](##step-4:-permanently-delete-the-spilled-data). Per ulteriori informazioni sulla creazione di ricerche, vedere [creare una ricerca per raccogliere i dati](create-search-to-collect-data.md).
+Nella scheda **ricerche** è possibile creare ricerche per individuare i dati versati. Si utilizzerà la stessa query di ricerca utilizzata per individuare i dati rovesciati per eliminare gli stessi messaggi nel [passaggio 4](#step-4-permanently-delete-the-spilled-data). Per ulteriori informazioni sulla creazione di ricerche, vedere [creare una ricerca per raccogliere i dati](create-search-to-collect-data.md).
 
 Dopo aver eseguito la ricerca, è possibile visualizzare in anteprima esempi di risultati della ricerca e visualizzarne le statistiche per valutare l'efficacia della query di ricerca. Dopo aver identificato gli elementi che si desidera eliminare da Office 365, è possibile fare clic sulla scheda **eventi** non consentiti e quindi creare un evento imprevisto e aggiungere i risultati della ricerca che contengono tali elementi. 
 
-A tale scopo, fare clic sulla ricerca che si desidera esaminare. Nella pagina riquadro a comparsa fare clic su **Aggiungi risultati in incidente** e seguire le istruzioni. Nell'incidente è quindi possibile esaminare singoli documenti, esaminare gli utenti che hanno accesso ai documenti ed esportare i documenti. Per eliminare semplicemente i documenti anziché esaminarli, passare al [passaggio 4](##step-4:-permanently-delete-the-spilled-data). 
+A tale scopo, fare clic sulla ricerca che si desidera esaminare. Nella pagina riquadro a comparsa fare clic su **Aggiungi risultati in incidente** e seguire le istruzioni. Nell'incidente è quindi possibile esaminare singoli documenti, esaminare gli utenti che hanno accesso ai documenti ed esportare i documenti. Per eliminare semplicemente i documenti anziché esaminarli, passare al [passaggio 4](#step-4-permanently-delete-the-spilled-data). 
 
 > [!IMPORTANT]
-> Le parole chiave utilizzate nella query di ricerca possono contenere i dati di cui è stata eseguita la ricerca. Ad esempio, se si cercano documenti contenenti un numero di previdenza sociale e lo si usa come parola chiave nella query di ricerca, è necessario eliminare la query in seguito per evitare ulteriori fuoriuscite. È possibile eliminare la ricerca o eliminare l'intera analisi nel [passaggio 5](##step-5:-close-or-delete-investigation). 
+> Le parole chiave utilizzate nella query di ricerca possono contenere i dati di cui è stata eseguita la ricerca. Ad esempio, se si cercano documenti contenenti un numero di previdenza sociale e lo si usa come parola chiave nella query di ricerca, è necessario eliminare la query in seguito per evitare ulteriori fuoriuscite. È possibile eliminare la ricerca o eliminare l'intera analisi nel [passaggio 5](#step-5-close-or-delete-the-investigation). 
 
 ## <a name="step-3-review-and-investigate"></a>Passaggio 3: Revisione e analisi 
 

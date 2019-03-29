@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione con Office 365 Enterprise. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684365"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862508"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
@@ -29,24 +29,15 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com) sono d
 ![Dashboard in cui viene visualizzato il livello di protezione avanzata dalle minacce](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 I rapporti di sicurezza della posta elettronica includono quanto segue:
-
 - [Rapporto di crittografia](#encryption-report) (Nuovo!)
-  
-- [Rapporto sullo stato della protezione dalle minacce](view-email-security-reports.md#tps) 
-    
-- [Rapporto riLevamenti malware](view-email-security-reports.md#maldet)
-    
+- [Rapporto sullo stato della protezione dalle minacce](#threat-protection-status-report) 
+- [Rapporto riLevamenti malware](#malware-detections-report)    
 - [Rapporto malware principale](#top-malware-report)
-    
-- [Report mittenti e destinatari principali](view-email-security-reports.md#topsenders)
-    
-- [Report di posta contraffatta](#spoof-mail-report)
-    
+- [Report mittenti e destinatari principali](#top-senders-and-recipients-report)
+- [Rapporto riLevamenti spoof](#spoof-detections-report)
 - [Rapporto rilevamento posta inDesiderata](#spam-detections-report)
-    
-- [Report di posta elettronica inviati e ricevuti](view-email-security-reports.md#sentreceivedemail)
-
-- [Report dei messaggi segnalati dall'utente](view-email-security-reports.md#userreported)
+- [Report di posta elettronica inviati e ricevuti](#sent-and-received-email-report)
+- [Report dei messaggi segnalati dall'utente](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>Rapporto di crittografia
 

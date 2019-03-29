@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: "Per gli amministratori: informazioni su come importare in blocco i file PST dell'organizzazione nelle cassette postali di Office 365 copiando i file PST su un disco rigido e quindi inviarli a Microsoft. "
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354748"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950473"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Utilizzare il servizio di spedizione delle unità per importare i file PST dell'organizzazione in Office 365
 
@@ -86,16 +86,16 @@ Per le domande frequenti sull'utilizzo della spedizione delle unità per importa
     
 - L'unità disco rigido inviata a Microsoft potrebbe dover attraversare i confini nazionali. In tal caso, l'utente è tenuto ad accertarsi che l'unità disco rigido e i dati in essa contenuti vengano importati e/o esportati in conformità alle leggi applicabili. Prima dell'invio di un'unità disco rigido, verificare con i propri consulenti che sia legalmente possibile inviare l'unità e i dati al data center Microsoft identificato. Ciò contribuirà a garantire che i supporti raggiungano Microsoft in tempo utile.
     
-- Questa procedura comporta la copia e il salvataggio di una chiave di archiviazione protetta e di una chiave di crittografia BitLocker. Adottare le dovute precauzioni per proteggere tali chiavi nello stesso modo in cui vengono protette password o altre informazioni di sicurezza. Ad esempio, potrebbe essere necessario salvarle in un documento di Microsoft Word protetto da password oppure su un'unità USB crittografata. Per un esempio di queste chiavi, vedere la sezione [ulteriori informazioni](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) . 
+- Questa procedura comporta la copia e il salvataggio di una chiave di archiviazione protetta e di una chiave di crittografia BitLocker. Adottare le dovute precauzioni per proteggere tali chiavi nello stesso modo in cui vengono protette password o altre informazioni di sicurezza. Ad esempio, potrebbe essere necessario salvarle in un documento di Microsoft Word protetto da password oppure su un'unità USB crittografata. Per un esempio di queste chiavi, vedere la sezione [ulteriori informazioni](#more-information) . 
     
-- Dopo aver importato i file PST in una cassetta postale di Office 365, l'impostazione di conservazione per la cassetta postale è attivata per una durata indefinita. Questo significa che i criteri di conservazione assegnati alla cassetta postale non verranno elaborati fino a quando non si disattiva il blocco di conservazione o si imposta una data per disattivare il blocco. Perché eseguire questa operazione? Se i messaggi importati in una cassetta postale sono obsoleti, potrebbero essere eliminati definitivamente (eliminati) perché il periodo di conservazione è scaduto in base alle impostazioni di conservazione configurate per la cassetta postale. Se si posiziona la cassetta postale su conservazione, il proprietario della cassetta postale consentirà di gestire i messaggi appena importati o di modificare le impostazioni di conservazione per la cassetta postale. Vedere la sezione [ulteriori informazioni](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) per suggerimenti sulla gestione del blocco di conservazione. 
+- Dopo aver importato i file PST in una cassetta postale di Office 365, l'impostazione di conservazione per la cassetta postale è attivata per una durata indefinita. Questo significa che i criteri di conservazione assegnati alla cassetta postale non verranno elaborati fino a quando non si disattiva il blocco di conservazione o si imposta una data per disattivare il blocco. Perché eseguire questa operazione? Se i messaggi importati in una cassetta postale sono obsoleti, potrebbero essere eliminati definitivamente (eliminati) perché il periodo di conservazione è scaduto in base alle impostazioni di conservazione configurate per la cassetta postale. Se si posiziona la cassetta postale su conservazione, il proprietario della cassetta postale consentirà di gestire i messaggi appena importati o di modificare le impostazioni di conservazione per la cassetta postale. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti sulla gestione del blocco di conservazione. 
     
 - Per impostazione predefinita, le dimensioni massime dei messaggi che possono essere ricevute da una cassetta postale di Office 365 sono 35 MB. Ciò è dovuto al fatto che il valore predefinito per la proprietà *MaxReceiveSize* di una cassetta postale è impostato su 35 MB. Tuttavia, il limite per la dimensione massima di ricezione dei messaggi in Office 365 è 150 MB. Pertanto, se si importa un file PST che contiene un elemento di dimensioni superiori a 35 MB, il servizio di importazione di Office 365 modificherà automaticamente il valore della proprietà *MaxReceiveSize* nella cassetta postale di destinazione a 150 MB. In questo modo i messaggi fino a 150 MB verranno importati nelle cassette postali degli utenti. 
     
     > [!TIP]
     > Per identificare le dimensioni di ricezione dei messaggi per una cassetta postale, è possibile eseguire questo comando in PowerShell `Get-Mailbox <user mailbox> | FL MaxReceiveSize`di Exchange Online:. 
   
-- È possibile importare i file PST in una cassetta postale inattiva in Office 365. A tale scopo, specificare il GUID della cassetta postale inattiva nel `Mailbox` parametro nel file di mapping di importazione PST. Per ulteriori informazioni, vedere [passaggio 3: creare il file di mapping di importazione PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+- È possibile importare i file PST in una cassetta postale inattiva in Office 365. A tale scopo, specificare il GUID della cassetta postale inattiva nel `Mailbox` parametro nel file di mapping di importazione PST. Per ulteriori informazioni, vedere [passaggio 3: creare il file di mapping di importazione PST](#step-3-create-the-pst-import-mapping-file) . 
     
 - In una distribuzione ibrida di Exchange, è possibile importare i file PST in una cassetta postale di archiviazione basata sul cloud per un utente la cui cassetta postale principale è in locale. A tale scopo, eseguire le operazioni seguenti nel file di mapping di importazione PST:
     
@@ -103,7 +103,7 @@ Per le domande frequenti sull'utilizzo della spedizione delle unità per importa
     
   - Specificare il valore **true** nel `IsArchive` parametro. 
     
-    Per ulteriori informazioni, vedere [passaggio 3: creare il file di mapping di importazione PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+    Per ulteriori informazioni, vedere [passaggio 3: creare il file di mapping di importazione PST](#step-3-create-the-pst-import-mapping-file) . 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Passaggio 1: scaricare la chiave di archiviazione sicura e lo strumento di importazione PST
 
@@ -308,7 +308,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
 Il passaggio successivo consiste nel spedire l'unità disco rigido a Microsoft e quindi fornire il numero di tracciabilità per la spedizione e restituire le informazioni relative alla spedizione per il processo di spedizione delle unità. Dopo che l'unità è stata ricevuta da Microsoft, saranno necessari tra 7 e 10 giorni lavorativi per il personale del Data Center per caricare i file PST nell'area di archiviazione di Azure per l'organizzazione.
   
 > [!NOTE]
-> Se non si fornisce il numero di tracciabilità e si restituiscono le informazioni sulla spedizione entro 14 giorni dalla creazione del processo di importazione, il processo di importazione verrà scaduto. In questo caso, sarà necessario creare un nuovo processo di importazione della spedizione delle unità (vedere il [passaggio 4: creare un processo di importazione PST in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) e inviare nuovamente il file di unità e il file di mapping di importazione PST. 
+> Se non si fornisce il numero di tracciabilità e si restituiscono le informazioni sulla spedizione entro 14 giorni dalla creazione del processo di importazione, il processo di importazione verrà scaduto. In questo caso, sarà necessario creare un nuovo processo di importazione della spedizione delle unità (vedere il [passaggio 4: creare un processo di importazione PST in Office 365](#step-4-create-a-pst-import-job-in-office-365)) e inviare nuovamente il file di unità e il file di mapping di importazione PST. 
   
 ### <a name="ship-the-hard-drive"></a>Spedire l'unità disco rigido
 
@@ -502,7 +502,7 @@ Per installare Azure Storage Explorer e connettersi all'area di archiviazione di
     
   - Dopo un determinato periodo di tempo, è possibile disattivare il blocco di conservazione eseguendo il `Set-Mailbox -RetentionHoldEnabled $false` comando. Per le istruzioni, vedere [posizionare una cassetta postale sul blocco di conservazione](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - È possibile configurare il blocco di conservazione in modo che sia disattivata in futuro. A tale scopo, eseguire il `Set-Mailbox -EndDateForRetentionHold <date>` comando. Ad esempio, presupponendo che la data odierna sia il 1 ° luglio 2016 e che si desideri disattivare il blocco di conservazione in 30 giorni, è necessario `Set-Mailbox -EndDateForRetentionHold 8/1/2016`eseguire il comando seguente:. In questo scenario, si lascerà la proprietà *RentionHoldEnabled* impostata su *true* . Per ulteriori informazioni, vedere [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - È possibile configurare il blocco di conservazione in modo che sia disattivata in futuro. A tale scopo, eseguire il `Set-Mailbox -EndDateForRetentionHold <date>` comando. Ad esempio, presupponendo che la data odierna sia il 1 ° giugno 2016 e che si desideri disattivare il blocco di conservazione in 30 giorni, è necessario `Set-Mailbox -EndDateForRetentionHold 7/1/2016`eseguire il comando seguente:. In questo scenario, si lascerà la proprietà *RentionHoldEnabled* impostata su *true*. Per ulteriori informazioni, vedere [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
   - È possibile modificare le impostazioni per i criteri di conservazione assegnati alla cassetta postale, in modo che gli elementi meno recenti importati non vengano immediatamente eliminati o spostati nella cassetta postale di archiviazione dell'utente. Ad esempio, è possibile estendere l'età di conservazione per un criterio di eliminazione o di archiviazione assegnato alla cassetta postale. In questo scenario, è necessario disattivare il blocco di conservazione sulla cassetta postale dopo aver modificato le impostazioni del criterio di conservazione. Per ulteriori informazioni, vedere [configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

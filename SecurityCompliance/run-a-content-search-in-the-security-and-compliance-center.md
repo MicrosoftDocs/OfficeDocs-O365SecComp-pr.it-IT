@@ -1,5 +1,5 @@
 ---
-title: Eseguire una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365
+title: 'Run a Content Search in the Office 365 Security &amp; Compliance Center '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare le cassette postali, i siti di SharePoint Online e OneDrive for business. '
-ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223735"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935321"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Eseguire una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365
+# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Run a Content Search in the Office 365 Security &amp; Compliance Center 
 
 È possibile utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare elementi quali messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Utilizzare questo strumento per cercare gli elementi presenti nei servizi di Office 365:
   
@@ -33,21 +33,21 @@ ms.locfileid: "30223735"
     
 - Gruppi di Office 365
     
-Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalità di ridimensionamento e prestazioni nuove e migliorate. Utilizzare la ricerca contenuto per eseguire ricerche di eDiscovery di grandi dimensioni. È possibile eseguire una ricerca in tutte le cassette postali, tutte le cartelle pubbliche di Exchange e tutti i siti di SharePoint Online e gli account di OneDrive for business in una singola ricerca contenuto. Non sono previsti limiti per il numero di posizioni di contenuto che è possibile ricercare. Non esistono limiti al numero di ricerche che possono essere eseguite contemporaneamente. Dopo aver eseguito una ricerca contenuto, il numero di posizioni di contenuto e il numero stimato di risultati della ricerca vengono visualizzati nel riquadro dei dettagli nella pagina **Ricerca contenuto** . Dopo aver eseguito una ricerca, è possibile visualizzare in anteprima i risultati, ottenere statistiche delle parole chiave per una o più ricerche, modificare in blocco le ricerche dei contenuti ed esportare i risultati in un computer locale. 
+Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzionalità migliorate di scalabilità e prestazioni. Utilizzare Ricerca contenuto per eseguire ricerche di eDiscovery di grandi dimensioni. È possibile eseguire una ricerca in tutte le cassette postali, tutte le cartelle pubbliche di Exchange e tutti i siti di SharePoint Online e gli account di OneDrive for business in una singola ricerca contenuto. Non sono previsti limiti per il numero di posizioni di contenuto che è possibile ricercare. Non esistono inoltre limiti al numero di ricerche che è possibile eseguire contemporaneamente. Dopo aver eseguito una ricerca contenuto, il numero di posizioni di contenuto e il numero stimato di risultati della ricerca vengono visualizzati nel riquadro dei dettagli nella pagina **Ricerca contenuto** . Dopo aver eseguito una ricerca, è possibile visualizzare in anteprima i risultati, ottenere statistiche delle parole chiave per una o più ricerche, modificare in blocco le ricerche dei contenuti ed esportare i risultati in un computer locale. 
   
  **Sommario**
   
-[Creare una ricerca](run-a-content-search-in-the-security-and-compliance-center.md#create)
+[Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
 [Esportare i risultati della ricerca](run-a-content-search-in-the-security-and-compliance-center.md#export)
   
-[Anteprima dei risultati della ricerca](run-a-content-search-in-the-security-and-compliance-center.md#preview)
+[Preview search results](run-a-content-search-in-the-security-and-compliance-center.md#preview)
   
-[Aggiornare i risultati della ricerca](run-a-content-search-in-the-security-and-compliance-center.md#restart)
+[Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Modificare una ricerca](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Riprovare la ricerca](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -57,7 +57,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
 - Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli Gestione &amp; eDiscovery nella conformità alla sicurezza Centro. Non è necessario assegnare altre autorizzazioni di ricerca in Exchange Online, SharePoint Online o per i siti di OneDrive for business. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
     
-- Sono stati applicati limiti alla ricerca contenuto per mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni di Office 365. Nella maggior parte dei casi, non è possibile modificare questi limiti, ma è necessario conoscerli in modo da poter prendere in considerazione questi limiti durante la pianificazione, l'esecuzione e la risoluzione dei problemi relativi alle ricerche. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
+- Sono stati applicati limiti alla ricerca contenuto per mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni di Office 365. Nella maggior parte dei casi, non è possibile modificare questi limiti, ma è necessario conoscerli in modo da tenerli in considerazione durante la pianificazione, l'esecuzione e la risoluzione dei problemi delle ricerche. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
     
 - Vedere la sezione relativa ai tempi di ricerca stimati in base al numero di cassette postali che vengono cercate in una singola ricerca di contenuto. 
     
@@ -69,9 +69,9 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
     Vedere la sezione Suggerimenti per la ricerca di contenuto nei gruppi di Office 365 e Microsoft teams. 
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Creare una ricerca
+## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
@@ -98,7 +98,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
     **Cassette postali**
     
-  - Quando si fa ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare le cassette postali da cercare, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere destinatari all'elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca e fare clic su ****![icona](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)ricerca ricerca.
+  - Quando si fa ****![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif) icona per specificare le cassette postali da cercare, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere destinatari all'elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca e fare clic su ****![icona](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)ricerca ricerca.
     
   - È possibile aggiungere le cassette postali inattive e i gruppi di distribuzione all'elenco delle cassette postali da cercare. Per i gruppi di distribuzione, vengono ricercate le cassette postali dei membri del gruppo. Si noti che i gruppi di distribuzione dinamici non sono supportati.
     
@@ -126,7 +126,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
     ![Creare una query di ricerca con parole chiave e condizioni](media/1b7cf7b5-f1e1-471a-ad5c-48aad8435b00.png)
   
-1. Nella casella in **che cosa si desidera cercare?**, digitare una query di ricerca nella casella. È possibile specificare le parole chiave, le proprietà del messaggio, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**, **vicino**o **ONEAR**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca. 
+1. Nella casella in **Cosa vuoi cercare?**, digitare una query di ricerca. È possibile specificare parole chiave, proprietà del messaggio, come ad esempio, le date di invio e ricezione o le proprietà del documento, quali ad esempio, i nomi dei file o la data dell'ultima modifica apportata a un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**, **vicino**o **ONEAR**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca. 
     
 2. È possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse dall'operatore **or** nella query di ricerca creata. 
     
@@ -138,15 +138,15 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
 3. Fare clic su **Controlla query per errori** di battitura per controllare la query per i caratteri non supportati e per gli operatori booleani che potrebbero non essere capitalizzati. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati indesiderati. Per ulteriori informazioni sui caratteri non supportati, vedere [Check your content search query for Errors](check-your-content-search-query-for-errors.md).
     
-4. In **condizioni**, aggiungere condizioni a una query di ricerca per restringere una ricerca e restituire un set di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca di KQL creata ed eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, dall'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da includere nei risultati. Questo è il modo in cui le condizioni aiutano a limitare i risultati. 
+4. In **condizioni**, aggiungere condizioni a una query di ricerca per restringere una ricerca e restituire un set di risultati più raffinato. Ogni condizione consente di aggiungere una clausola alla query di ricerca KQL creata ed eseguita quando si avvia la ricerca. Una condizione è logicamente connessa alla query con parole chiave (specificata nella casella delle parole chiave) mediante l'operatore **AND**. Ciò significa che, per essere inclusi nei risultati, gli elementi devono soddisfare sia la query con parola chiave, sia la condizione. Ecco come le condizioni consentono di circoscrivere i risultati. 
     
 ||
 |:-----|
 |Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search ](keyword-queries-and-search-conditions.md). |
    
-9. Fare clic su **Ricerca** per salvare le impostazioni e avviare la ricerca. 
+9. Fare clic su **Ricerca** per salvare le impostazioni di ricerca e avviare la ricerca. 
     
-    La ricerca viene avviata. Al termine della ricerca, nel riquadro dei dettagli vengono visualizzate le informazioni riportate di seguito.
+    Viene avviata la ricerca. Al termine della ricerca, nel riquadro dei dettagli vengono visualizzate le informazioni riportate di seguito.
     
     ![Le statistiche di ricerca vengono visualizzate nel riquadro dei dettagli della ricerca di contenuto selezionata](media/2046bb5e-f4cb-4ba7-b7fc-8e5e53dae567.png)
   
@@ -154,7 +154,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
 2. Il numero e la dimensione totale degli elementi che sono stati trovati che corrispondono alla query di ricerca. Di seguito sono riportati alcuni esempi di tipi di elementi: messaggi di posta elettronica, elementi del calendario e documenti. Se un elemento contiene più istanze di una parola chiave che si sta cercando, viene conteggiata solo una volta nel numero totale di elementi. Ad esempio, se si sta cercando parole "stock" o "Tip" e un messaggio di posta elettronica contiene tre istanze della parola "stock", viene conteggiata una sola volta nel campo **elementi** . 
     
-3. Il numero e la dimensione totale degli elementi non indicizzati nei percorsi di contenuto in cui è stata eseguita la ricerca. Il numero di elementi non indicizzati che non soddisfano i criteri di ricerca verrà incluso nelle statistiche di ricerca visualizzate nel riquadro dei dettagli. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Tuttavia, se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nella stima degli elementi non indicizzati.
+3. Il numero e la dimensione totale degli elementi non indicizzati nei percorsi di contenuto in cui è stata eseguita la ricerca. Il numero di elementi non indicizzati (che non corrispondono ai criteri di ricerca) verrà incluso nelle statistiche della ricerca visualizzate nel riquadro dei dettagli. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Tuttavia, se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nella stima degli elementi non indicizzati.
     
 4. Il numero di ogni tipo di percorso di contenuto in cui è stata eseguita la ricerca. Per le cassette postali, tenere presente che le cassette postali di archiviazione sono incluse nel numero totale di cassette postali ricercate. Nell'esempio precedente, sono state cercate quattro cassette postali utente e la cassetta postale di archiviazione per ognuno di questi utenti è abilitata. Questo è il motivo per cui otto cassette postali vengono citate nelle statistiche di ricerca.
     
@@ -162,17 +162,17 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con funzionalit
     
     Se necessario, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare le informazioni nel riquadro dei dettagli per la ricerca selezionata. 
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="export-search-results"></a>Esportare i risultati della ricerca
 <a name="export"> </a>
 
-Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati della posta elettronica, vengono scaricati nel computer come file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Sono inoltre disponibili documenti e report aggiuntivi inclusi nei risultati della ricerca esportati. Per ulteriori informazioni, vedere [esportare i risultati di ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
+Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti anche altri documenti e report. Per ulteriori informazioni, vedere [esportare i risultati di ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Anteprima dei risultati della ricerca
 <a name="preview"> </a>
 
-Una volta completata la ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Sono disponibili numerosi limiti relativi alla visualizzazione in anteprima dei risultati della ricerca del contenuto. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Tenere presente che gli elementi non indicizzati non sono disponibili per la visualizzazione in anteprima.
+Al termine della ricerca, è possibile visualizzarne in anteprima i risultati. Esistono alcuni limiti relativi alla visualizzazione in anteprima dei risultati della ricerca contenuto. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Tenere presente che gli elementi non indicizzati non sono disponibili per la visualizzazione in anteprima.
   
 1. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
     
@@ -187,7 +187,7 @@ Una volta completata la ricerca, è possibile visualizzare in anteprima i risult
 4. Se un tipo di file non è supportato per l'anteprima o per scaricare una copia di un documento, è possibile fare clic su **Scarica file originale** per scaricarlo nel computer locale. Per le pagine Web con estensione aspx, l'URL della pagina è incluso se non si dispone delle autorizzazioni per accedere alla pagina. 
     
 > [!NOTE]
-> Se si visualizzano in anteprima i risultati della ricerca per una ricerca che è stata eseguita l'ultima volta più di 7 giorni fa, verrà richiesto di aggiornare i risultati della ricerca. La ricerca viene eseguita nuovamente per ottenere i risultati più recenti che soddisfano la query di ricerca. 
+> Se si visualizzano in anteprima i risultati di una ricerca la cui ultima esecuzione risale a non più di 7 giorni prima, verrà richiesto di aggiornare i risultati della ricerca. La ricerca viene eseguita nuovamente per ottenere i risultati più recenti che soddisfano la query di ricerca. 
   
 ### <a name="file-types-that-can-be-previewed"></a>Tipi di file che è possibile visualizzare in anteprima
 
@@ -205,11 +205,11 @@ Una volta completata la ricerca, è possibile visualizzare in anteprima i risult
     
 Inoltre, sono supportati i seguenti tipi di contenitori di file. È possibile visualizzare l'elenco dei file nel contenitore nel riquadro di anteprima.
   
-- .zip
+- . zip
     
 - . gzip
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Aggiornare i risultati della ricerca
 <a name="restart"> </a>
@@ -220,9 +220,9 @@ Quando si aggiornano i risultati di una ricerca di contenuto esistente, la query
     
 2. Nel riquadro dei dettagli, in **Risultati**, fare clic su **Aggiorna risultati della ricerca**.
     
-    Viene visualizzato un messaggio di stato che indica che i risultati vengono recuperati. Al termine della ricerca, le informazioni aggiornate vengono visualizzate nel **** riquadro dei dettagli. Si noti che la data nel campo **ricerca** nel riquadro dei dettagli viene aggiornata alla data e all'ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche di contenuto, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif)l'icona Aggiorna.
+    Viene visualizzato un messaggio di stato che indica che è in corso il recupero dei risultati. Quando la ricerca è completata, le informazioni aggiornate vengono visualizzate in **Risultati** nel riquadro dei dettagli. Si noti che la data nel campo **Cercato il** nel riquadro dei dettagli viene aggiornata alla data e ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche di contenuto, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif)l'icona Aggiorna.
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Modificare una ricerca
 <a name="edit"> </a>
@@ -233,7 +233,7 @@ Quando si aggiornano i risultati di una ricerca di contenuto esistente, la query
     
 2. Nel riquadro dei dettagli, in **Query**, fare clic su **Modifica ricerca**.
     
-3. Nella pagina **percorsi** è possibile modificare le cassette postali, i gruppi, i siti di SharePoint o i siti di OneDrive for business in cui eseguire la ricerca. È inoltre possibile selezionare (o deselezionare) per eseguire una ricerca in tutte le cartelle pubbliche di Exchange. 
+3. Nella pagina **percorsi** è possibile modificare le cassette postali, i gruppi, i siti di SharePoint o i siti di OneDrive for business in cui eseguire la ricerca. È inoltre possibile selezionare (o deselezionate) la ricerca in tutte le cartelle pubbliche in Exchange. 
     
 4. Nella pagina **query** è possibile modificare la query di ricerca. 
     
@@ -250,32 +250,32 @@ Se una ricerca restituisce tutti gli errori, non è necessario eseguire nuovamen
     
 2. Nel riquadro dei dettagli, in **Errore**, fare clic su **Ripeti la ricerca**.
     
-    Viene visualizzato un messaggio di stato che indica che i risultati vengono recuperati. Al termine della ricerca, le informazioni aggiornate vengono visualizzate nel riquadro **dei** dettagli. Si noti che la data nel campo **ricerca** nel riquadro dei dettagli viene aggiornata alla data e all'ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche, fare clic su **Aggiorna**![l'](media/O365-MDM-Policy-RefreshIcon.gif)icona Aggiorna.
+    Viene visualizzato un messaggio di stato che indica che è in corso il recupero dei risultati. Quando la ricerca è completata, le informazioni aggiornate vengono visualizzate in **Risultati** nel riquadro dei dettagli. Si noti che la data nel campo **Cercato il** nel riquadro dei dettagli viene aggiornata alla data e ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche, fare clic su **Aggiorna**![l'](media/O365-MDM-Policy-RefreshIcon.gif)icona Aggiorna.
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Ulteriori informazioni
 <a name="moreinfo"> </a>
 
 Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
-[Limiti e prestazioni](run-a-content-search-in-the-security-and-compliance-center.md#limits)
+[Limiti e prestazioni](#limits-and-performance)
   
-[Elementi non indicizzati](run-a-content-search-in-the-security-and-compliance-center.md#unindexeditems)
+[Elementi non indicizzati](#unindexed-items) 
+ 
+[Microsoft teams e gruppi di Office 365](#microsoft-teams-and-office-365-groups)
   
-[Microsoft teams e gruppi di Office 365](run-a-content-search-in-the-security-and-compliance-center.md#teams)
+[OneDrive for Business](#onedrive-for-business)
   
-[OneDrive for Business](run-a-content-search-in-the-security-and-compliance-center.md#onedrive)
+[Query di ricerca](#search-queries)
   
-[Query di ricerca](run-a-content-search-in-the-security-and-compliance-center.md#queries)
+[Ricerca di cassette postali inattive](#searching-inactive-mailboxes)
   
-[Ricerca di cassette postali inattive](run-a-content-search-in-the-security-and-compliance-center.md#inactivemailboxes)
+[Varie](#miscellaneous)
   
-[Varie](run-a-content-search-in-the-security-and-compliance-center.md#misc)
+[Return to top](#before-you-begin)
   
-[(Torna all'inizio)](run-a-content-search-in-the-security-and-compliance-center.md#top)
-  
- **Limiti e prestazioni**
+### <a name="limits-and-performance"></a>Limiti e prestazioni
   
 - Per una descrizione dei limiti applicati alla funzionalità di ricerca contenuto, vedere [limits for Search in the Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
     
@@ -290,15 +290,14 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
 |50.000  <br/> |20 minuti  <br/> |
 |100,000  <br/> |25 minuti  <br/> |
    
-
   
- **Elementi non indicizzati**
+### <a name="unindexed-items"></a>Elementi non indicizzati
   
-- Come spiegato in precedenza, gli elementi non indicizzati nei percorsi di contenuto ricercati vengono inclusi nei risultati della ricerca stimati. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Per ulteriori informazioni, vedere [elementi non indicizzati nella ricerca di contenuto](https://go.microsoft.com/fwlink/p/?LinkId=780739).
+- Come spiegato in precedenza, gli elementi non indicizzati nei percorsi di contenuto ricercati vengono inclusi nei risultati della ricerca stimati. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Per ulteriori informazioni, vedere [Unindexed items in Content Search](https://go.microsoft.com/fwlink/p/?LinkId=780739).
     
 
   
- **Microsoft teams e gruppi di Office 365**
+### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft teams e gruppi di Office 365
   
 - Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro ricerca è molto simile. Quando si esegue la ricerca di contenuto in Microsoft teams e nei gruppi di Office 365, tenere presente quanto segue.
     
@@ -343,15 +342,12 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
     > [!NOTE]
     > La possibilità di eseguire ricerche nel wiki di un team o di un canale Microsoft (quando si esegue una ricerca nel sito di SharePoint del team) è stata rilasciata il 22 giugno 2017. Le pagine wiki che sono state salvate o aggiornate a quella data o dopo sono disponibili per la ricerca. Le pagine wiki sono state salvate o aggiornate prima che questa data non sia disponibile per la ricerca. 
   
-
-  
- **OneDrive for Business **
+### <a name="onedrive-for-business"></a>OneDrive for Business
   
 - Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione, vedere [creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Lo script in questo articolo consente di creare un file di testo contenente un elenco di tutti i siti di OneDrive for business. Per eseguire questo script, è necessario installare e utilizzare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio del sito Web dell'organizzazione a ogni sito di OneDrive for business che si desidera ricercare. Questo è il dominio che contiene tutte le OneDrive for business; ad esempio, `https://contoso-my.sharepoint.com`. Di seguito è riportato un esempio di un URL per il sito di OneDrive for business `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`di un utente:.
     
 
-  
- **Query di ricerca**
+### <a name="search-queries"></a>Query di ricerca
   
 - Quando si utilizza l'elenco di parole chiave per creare una query di ricerca, è necessario tenere presente quanto segue.
     
@@ -367,7 +363,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
   - È inoltre possibile predisporre un elenco di parole chiave o frasi di keyword in un file di Excel o in un file di testo normale, quindi copiare e incollare l'elenco nell'elenco parole chiave. A tale scopo, è necessario selezionare la casella di controllo **Mostra elenco parole chiave** . Fare quindi clic sulla prima riga dell'elenco delle parole chiave e incollare l'elenco. Ogni riga del file di testo o di Excel verrà incollata in una riga separata nell'elenco delle parole chiave. 
     
-  - Dopo aver creato una query utilizzando l'elenco di parole chiave, è consigliabile verificare la sintassi delle query di ricerca, nel riquadro dei dettagli della ricerca selezionata, per rendere la query di ricerca come previsto. Nella query di ricerca visualizzata in **query** nel riquadro dei dettagli, le parole chiave sono separate dal testo **(c:s)**. questo indica che le parole chiave sono connesse tramite l'operatore **or** . Analogamente, se la query di ricerca include condizioni, le parole chiave e le condizioni sono separate dal testo **(c:c)**. questo indica che le parole chiave sono connesse alle condizioni dall'operatore **and** . Di seguito è riportato un esempio della query di ricerca, visualizzata nel riquadro dei dettagli, che risulta quando si utilizza l'elenco delle parole chiave e una condizione. 
+  - Dopo aver creato una query utilizzando l'elenco di parole chiave, è consigliabile verificare la sintassi delle query di ricerca, nel riquadro dei dettagli della ricerca selezionata, per rendere la query di ricerca come previsto. Nella query di ricerca visualizzata in **query** nel riquadro dei dettagli, le parole chiave sono separate dal testo **(c:s)**. Ciò indica che le parole chiave sono connesse tramite l'operatore **or** . Analogamente, se la query di ricerca include condizioni, le parole chiave e le condizioni sono separate dal testo **(c:c)**. Ciò indica che le parole chiave sono connesse alle condizioni dall'operatore **and** . Di seguito è riportato un esempio della query di ricerca, visualizzata nel riquadro dei dettagli, che risulta quando si utilizza l'elenco delle parole chiave e una condizione. 
     
     ![Esempio di query creata quando si utilizza l'elenco delle parole chiave e una condizione](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -384,8 +380,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
     Ad esempio, per modificare l'impostazione della lingua in cinese, è necessario `zh-CN` utilizzare il valore del codice delle impostazioni cultura. Dopo aver modificato l'impostazione della lingua, è necessario eseguire nuovamente la ricerca. Per un elenco dei possibili valori del codice delle impostazioni cultura, vedere [classe CultureInfo](https://go.microsoft.com/fwlink/p/?LinkID=184859). Per le ricerche di contenuto, è consigliabile utilizzare i codici delle impostazioni cultura in due parti per il valore dell'impostazione della lingua. ad esempio, `ja-JP` e non `ja`.
     
 
-  
- **Ricerca di cassette postali inattive**
+### <a name="searching-inactive-mailboxes"></a>Ricerca di cassette postali inattive
   
 Come indicato in precedenza, è possibile cercare le cassette postali inattive in una ricerca di contenuto. Di seguito sono riportate alcune considerazioni da tenere presenti durante la ricerca di cassette postali inattive.
   
@@ -401,14 +396,12 @@ Come indicato in precedenza, è possibile cercare le cassette postali inattive i
     
   - [Eliminare una cassetta postale inattiva in Office 365](delete-an-inactive-mailbox.md)
     
-
-  
- **Varie**
+### <a name="miscellaneous"></a>Varie
   
 - Le ricerche di contenuto create nella pagina **Ricerca contenuto** nel centro &amp; sicurezza e conformità non vengono visualizzate nella pagina **blocco eDiscovery &amp; sul posto** nell'interfaccia di amministrazione di Exchange. Ciò è dovuto al fatto che l'architettura di ricerca del contenuto e gli oggetti &amp; di ricerca creati nel centro sicurezza e conformità sono completamente diversi rispetto alla caratteristica eDiscovery sul posto in Exchange Online. 
     
     Per lo stesso motivo, le ricerche create nella pagina **Ricerca contenuto** non vengono visualizzate nella pagina **ricerche** di un caso di eDiscovery nel centro &amp; sicurezza e conformità. 
     
-- Qual è la differenza tra riavviare e riprovare una ricerca? Quando si riavvia una ricerca, tutti i percorsi di contenuto specificati nella ricerca vengono nuovamente ricercati in una nuova ricerca di anteprima. Tuttavia, quando si ritenta una ricerca, solo i percorsi di contenuto che hanno avuto esito negativo quando è stata eseguita la ricerca per l'ultima volta vengono nuovamente ricercati.
+- Qual è la differenza tra riavviare e riprovare una una ricerca? Quando si riavvia una ricerca, tutti i percorsi di contenuto specificati nella ricerca vengono nuovamente ricercati in una nuova ricerca di anteprima. Tuttavia, quando si ritenta una ricerca, solo i percorsi di contenuto che hanno avuto esito negativo quando è stata eseguita la ricerca per l'ultima volta vengono nuovamente ricercati.
    
 

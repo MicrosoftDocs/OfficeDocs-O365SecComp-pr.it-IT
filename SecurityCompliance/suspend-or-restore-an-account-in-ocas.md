@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Con Office 365 cloud app Security, le azioni di governance che è possibile intraprendere sono la sospensione o la sospensione di un account utente. '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215096"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862448"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Sospendere o ripristinare un account utente in Office 365 Cloud App Security
 
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
-|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggi successivi](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggi successivi](#next-steps)<br/> |
    
 Si supponga di ricevere un avviso per il quale uno degli account utente dell'organizzazione per Office 365 è stato compromesso. In alternativa, si supponga di aver ricevuto un avviso che indica che è presente un errore in un account utente. Con Office 365 cloud app Security, è possibile sospendere un account utente e successivamente ripristinarlo dopo aver esaminato gli avvisi ricevuti.
   

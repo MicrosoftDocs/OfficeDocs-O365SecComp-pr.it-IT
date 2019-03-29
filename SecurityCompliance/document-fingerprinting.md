@@ -3,7 +3,7 @@ title: Creazione impronta digitale documenti
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/17/2014
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 search.appverid: MET150
@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: a90cb0c7fdfe5e350c9d97adb9a8f357f526742a
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638993"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866352"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -78,7 +78,7 @@ $Employee_Fingerprint = New-DlpFingerprint -FileData $Employee_Template -Descrip
 A questo punto, passiamo alla creazione di una nuova regola di classificazione dati denominata "Contoso Employee Confidential" che utilizza l'impronta digitale del documento del file C:\Documenti\Contoso Customer Information Form.docx.
   
 ```
-$Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
+$Customer_Form = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte -ReadCount 0
 $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
 ```

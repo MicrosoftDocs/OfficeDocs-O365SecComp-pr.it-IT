@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639143"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862538"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -100,7 +100,7 @@ Le condizioni disponibili a questo punto consentono di determinare se:
   
 - Content contiene un tipo di informazioni riservate.
     
-- Il contenuto contiene un'etichetta. Per ulteriori informazioni, vedere la sezione riportata [di seguito utilizzando un'etichetta come condizione in un criterio DLP](data-loss-prevention-policies.md#label).
+- Il contenuto contiene un'etichetta. Per ulteriori informazioni, vedere la sezione riportata [di seguito utilizzando un'etichetta come condizione in un criterio DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Il contenuto viene condiviso con utenti esterni o interni alla propria organizzazione.
     
@@ -510,6 +510,6 @@ Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incl
     
 - [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
-- [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
+- [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md)
     
 

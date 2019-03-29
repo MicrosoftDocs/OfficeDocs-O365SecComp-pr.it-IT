@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il centro conformità & sicurezza di Office 365 per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411021"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935351"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro conformità di Office 365 Security &
+
+## <a name="introduction"></a>Introduzione
 
 È necessario individuare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla propria cassetta postale? In caso affermativo, è possibile utilizzare il centro &amp; sicurezza e conformità di Office 365 per eseguire una ricerca nel registro di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. Perché un log di controllo unificato? Poiché è possibile cercare i seguenti tipi di attività di utente e di amministratore in Office 365:
   
@@ -57,7 +59,7 @@ ms.locfileid: "30411021"
 
 - Attività di Analyst e di amministrazione nell'analisi del luogo di lavoro Microsoft
 
-- Attività di utenti e amministratori in PowerApps
+- Attività di utenti e amministratori in Microsoft PowerApps
     
    
 ## <a name="before-you-begin"></a>Informazioni preliminari
@@ -296,12 +298,11 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |:-----|:-----|:-----|
 |[Attività di file e pagine](#file-and-page-activities)<br/> |[Attività cartella](#folder-activities)<br/> |[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |
 |[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività amministrative del sito](#site-administration-activities)<br/> |[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |
-|[Criteri di conservazione e attività relative alle etichette](#retention-policy-and-label-activities) <br/>|[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> 
-|[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |
-|[Attività di amministrazione della directory](#directory-administration-activities) <br/> |[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |
-|[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>
+|[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> 
+|[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |[Attività di amministrazione della directory](#directory-administration-activities) <br/>| 
+|[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|
+|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |[Attività di flusso Microsoft](#microsoft-flow-activities) <br/>|
+|[Attività di Microsoft PowerApps](#microsoft-powerapps)<br/>|[Attività di Microsoft Stream](#microsoft-stream-activities) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -420,7 +421,7 @@ Nella tabella seguente sono elencati gli eventi che risultano dalle attività di
 |Utente consentito per la creazione di gruppi  <br/> |AllowGroupCreationSet  <br/> |L'amministratore del sito o il proprietario aggiunge un livello di autorizzazione a un sito che consente a un utente a cui è stata assegnata l'autorizzazione di creare un gruppo per il sito.  <br/> |
 |Spostamento Geo del sito cancellato  <br/> |SiteGeoMoveCancelled  <br/> |Un amministratore di SharePoint o globale Annulla correttamente una mossa geografica del sito di SharePoint o OneDrive. La funzionalità multi-Geo consente a un'organizzazione di Office 365 di suddividere più aree geografiche di Office 365 datacenter, denominate GEOS. Per ulteriori informazioni, vedere [multi-Geo capabilities in OneDrive e SharePoint online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Modifica di un criterio di condivisione  <br/> |SharingPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato un criterio di condivisione di SharePoint utilizzando il portale di amministrazione di Office 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Tutte le modifiche apportate alle impostazioni nel criterio di condivisione nell'organizzazione verranno registrate. I criteri modificati vengono identificati nel campo **ModifiedProperties** nelle proprietà dettagliate del record di evento.  <br/> |
-|Criteri di accesso ai dispositivi modificati  <br/> |DeviceAccessPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato i criteri per i dispositivi non gestiti per l'organizzazione. Questo criterio consente di controllare l'accesso a SharePoint, OneDrive e Office 365 da dispositivi che non sono stati aggiunti all'organizzazione. La configurazione di questo criterio richiede una sottoscrizione Enterprise Mobility + Security. Per ulteriori informazioni, vedere [controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
+|Criteri di accesso ai dispositivi modificati  <br/> |DeviceAccessPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato i criteri per i dispositivi non gestiti per l'organizzazione. Questo criterio consente di controllare l'accesso a SharePoint, OneDrive e Office 365 da dispositivi che non sono stati aggiunti all'organizzazione. La configurazione di questo criterio richiede una sottoscrizione Enterprise Mobility + Security. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
 |Agenti utente esenti modificati  <br/> |CustomizeExemptUsers  <br/> |Un amministratore di SharePoint o globale ha personalizzato l'elenco degli agenti utente esenti nell'interfaccia di amministrazione di SharePoint. È possibile specificare quali agenti utente esentare dalla ricezione di un'intera pagina Web da indicizzare. Questo significa che quando un agente utente specificato come esenzione incontra un modulo di InfoPath, il modulo verrà restituito come file XML, invece di un'intera pagina Web. In tal modo l'indicizzazione dei moduli di InfoPath è più rapida.  <br/> |
 |Criteri di accesso alla rete modificati  <br/> |NetworkAccessPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato il criterio di accesso basato sulla posizione (denominato anche limite di rete attendibile) nell'interfaccia di amministrazione di SharePoint o tramite PowerShell di SharePoint Online. Questo tipo di criteri controlla chi può accedere alle risorse di SharePoint e OneDrive nell'organizzazione in base agli intervalli di indirizzi IP autorizzati specificati. Per ulteriori informazioni, vedere [controllare l'accesso ai dati di SharePoint Online e OneDrive in base al percorso di rete](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
 |Spostamento geografico completato del sito  <br/> |SiteGeoMoveCompleted  <br/> |Una mossa geografica del sito pianificata da un amministratore globale dell'organizzazione è stata completata correttamente. La funzionalità multi-Geo consente a un'organizzazione di Office 365 di suddividere più aree geografiche di Office 365 datacenter, denominate GEOS. Per ulteriori informazioni, vedere [multi-Geo capabilities in OneDrive e SharePoint online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
@@ -468,28 +469,6 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |Messaggio aggiornato  <br/> |Aggiorna  <br/> |Modifiche apportate a un messaggio o alle relative proprietà.  <br/> |
 |Utente che ha eseguito l'accesso alla cassetta postale  <br/> |MailboxLogin  <br/> |Accesso effettuato dall'utente alla propria cassetta postale.  <br/> |
 |nessuno  <br/> |UpdateInboxRules  <br/> |È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.  <br/> Per restituire le voci per le attività della regola di posta in arrivo, è necessario selezionare **Mostra risultati per tutte** le attività nell'elenco **attività** . Utilizzare le caselle Intervallo di date e l'elenco **utenti** per restringere i risultati della ricerca.  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>Criteri di conservazione e attività relative alle etichette
-
-Nella tabella seguente vengono descritte le attività relative ai criteri di conservazione e alle etichette di conservazione nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere:
-
-- [Panoramica dei criteri di conservazione](retention-policies.md)
-- [Panoramica delle etichette di conservazione](labels.md)
-<br/>
-
-|**Attività**|**Operazione**|**Descrizione**|
-|:-----|:-----|:-----|
-| Configurazione di conservazione creata per un criterio di conservazione<br/> |NewRetentionComplianceRule<br/> |Administrator consente di configurare le impostazioni di conservazione per un nuovo criterio di conservazione. Le impostazioni di conservazione includono la durata di conservazione degli elementi e gli elementi che si verificano quando il periodo di mantenimento scade, ad esempio l'eliminazione di elementi, la conservazione degli elementi o la conservazione e la loro eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
-| Etichetta di conservazione creata <br/> |NewComplianceTag<br/>  |L'amministratore crea una nuova etichetta di conservazione.<br/> |
-| Criterio di conservazione creato<br/> |NewRetentionCompliancePolicy<br/> |L'amministratore crea un nuovo criterio di conservazione.<br/>  |
-| Configurazione di conservazione eliminata per un criterio di conservazione<br/> | RemoveRetentionComplianceRule<br/>| L'amministratore Elimina le impostazioni di configurazione di un criterio di conservazione. È probabile che questa attività venga registrata quando un amministratore Elimina un criterio di conservazione o esegue il cmdlet **Remove-RetentionComplianceRule** .<br/> |
-| Etichetta di conservazione eliminata <br/> |RemoveComplianceTag<br/>  | L'amministratore Elimina un'etichetta di conservazione.<br/>|
-| Criterio di conservazione eliminato<br/> |RemoveRetentionCompliancePolicy<br/> |L'amministratore Elimina un criterio di conservazione. <br/>  |
-| Abilitare le funzionalità di conformità alle normative<br/> |SetRestrictiveRetentionUI<br/> |L'amministratore consente di abilitare le funzionalità di conformità alle normative eseguendo il cmdlet **set-RegulatoryComplianceUI** . Dopo l'esecuzione di questo cmdlet, gli amministratori possono bloccare un criterio di conservazione e specificare un'etichetta di conservazione come record normativo utilizzando l'interfaccia utente del centro conformità di sicurezza &. Fino a quando un'organizzazione utilizza il cmdlet **set-RegulatoryComplianceUI** per abilitare queste funzionalità, il blocco di un criterio di conservazione e la creazione di un'etichetta di conservazione regolabile possono essere eseguiti solo tramite PowerShell. <br/>|
-| Configurazione di conservazione aggiornata per un criterio di conservazione<br/> | SetRetentionComplianceRule<br/>| L'amministratore modifica le impostazioni di conservazione per un criterio di conservazione esistente. Le impostazioni di conservazione includono la durata di conservazione degli elementi e gli elementi che si verificano quando il periodo di mantenimento scade, ad esempio l'eliminazione di elementi, la conservazione degli elementi o la conservazione e la loro eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) . <br/>|
-| Etichetta di conservazione aggiornata <br/> |SetComplianceTag<br/>  | L'amministratore aggiorna un'etichetta di conservazione esistente.<br/>|
-| Criterio di conservazione aggiornato<br/> |SetRetentionCompliancePolicy <br/>|L'amministratore aggiorna un criterio di conservazione esistente. Gli aggiornamenti che attivano questo evento includono l'aggiunta o l'esclusione di percorsi di contenuto a cui viene applicato il criterio di conservazione.<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Attività di Sway
@@ -586,7 +565,7 @@ Nella tabella seguente sono elencate le attività di directory e di dominio di A
 |Impostare i criteri per le password  <br/> |Impostare i criteri per le password  <br/> |Sono stati modificati i vincoli di lunghezza e di carattere per le password degli utenti nell'organizzazione di Office 365.  <br/> |
 |Attivata la sincronizzazione di Azure AD  <br/> |Impostare il flag DirSyncEnabled sulla società  <br/> |Impostare la proprietà che Abilita una directory per Azure AD Sync.  <br/> |
 |Dominio aggiornato  <br/> |Aggiornamento del dominio  <br/> |Sono state aggiornate le impostazioni di un dominio nell'organizzazione di Office 365.  <br/> |
-|Dominio verificato  <br/> |Verificare il dominio  <br/> |Verificato che l'organizzazione sia il proprietario di un dominio.  <br/> |
+|Dominio verificato  <br/> |Verificare un dominio  <br/> |Verificato che l'organizzazione sia il proprietario di un dominio.  <br/> |
 |Dominio verificato per la posta elettronica verificato  <br/> |Verificare il dominio verificato tramite posta elettronica  <br/> |Verifica della posta elettronica utilizzata per verificare che l'organizzazione sia il proprietario di un dominio.  <br/> |
 ||||
    
@@ -725,7 +704,7 @@ Per ulteriori informazioni sulle funzionalità di controllo e Reporting disponib
 
 **Quali sono i diversi servizi di Office 365 attualmente controllati?**
 
-I servizi di Office 365 più utilizzati come Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft teams, CRM, Advanced Threat Protection e prevenzione della perdita di dati vengono controllati. Per un elenco completo, vedere la sezione [Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) in questo articolo.
+I servizi di Office 365 più utilizzati come Exchange Online, SharePoint Online, OneDrive for business, Azure Active Directory, Microsoft teams, Dynamics 365, Advanced Threat Protection e Power BI sono controllati. Vedere l' [inizio di questo articolo](search-the-audit-log-in-security-and-compliance.md) per un elenco dei servizi controllati.
 
 **Quali attività vengono controllate tramite il servizio di controllo in Office 365?**
 
@@ -771,15 +750,3 @@ No. Al momento sono presenti distribuzioni di pipeline di controllo nelle aree N
 **I dati di controllo sono crittografati?**
 
 I dati di controllo vengono archiviati nelle cassette postali di Exchange (dati a riposo) nella stessa area in cui viene distribuita la pipeline di controllo. Questi dati non sono crittografati. Tuttavia, i dati in transito sono sempre crittografati. 
-
-
-
-
-
-
-
-
-
-
-
-

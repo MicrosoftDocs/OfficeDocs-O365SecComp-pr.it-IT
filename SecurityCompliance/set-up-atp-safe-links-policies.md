@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296829"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862478"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -33,13 +33,13 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
 
 ## <a name="what-to-do"></a>cosa fare 
   
-1. [Esaminare i prerequisiti](#review-the-prerequisites).
+1. Esaminare i prerequisiti.
     
-2. [Rivedere e modificare il criterio dei collegamenti sicuri ATP predefinito che si applica a tutti gli utenti](#define-an-atp-safe-links-policy-that-applies-to-everyone). Ad esempio, è possibile [configurare l'elenco degli URL bloccati personalizzati per i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Rivedere e modificare il criterio dei collegamenti sicuri ATP predefinito che si applica a tutti gli utenti. Ad esempio, è possibile [configurare l'elenco degli URL bloccati personalizzati per i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Aggiungere o modificare i criteri per i destinatari di messaggi di posta elettronica specifici](#add-a-policy-for-specific-email-recipients), inclusa [la configurazione dell'elenco di URL personalizzati "non riscrivere" per i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+3. Aggiungere o modificare i criteri per i destinatari di messaggi di posta elettronica specifici, inclusa [la configurazione dell'elenco di URL personalizzati "non riscrivere" per i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. Informazioni [sulle opzioni dei criteri collegamenti sicuri di ATP](#learn-about-atp-safe-links-policy-options) (in questo articolo), incluse le impostazioni per le modifiche recenti.
+4. Informazioni sulle opzioni dei criteri collegamenti sicuri di ATP (in questo articolo), incluse le impostazioni per le modifiche recenti.
     
 ## <a name="step-1-review-the-prerequisites"></a>Passaggio 1: esaminare i prerequisiti
 
@@ -57,7 +57,7 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
 
 - Verificare che i client di Office siano configurati per l'utilizzo dell' [autenticazione moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (per la protezione dei collegamenti sicuri di ATP nei documenti di Office).
     
-- Informazioni [sulle opzioni dei criteri collegamenti sicuri di ATP](#learn-about-atp-safe-links-policy-options) (in questo articolo). 
+- Informazioni [sulle opzioni dei criteri collegamenti sicuri di ATP](#step-4-learn-about-atp-safe-links-policy-options) (in questo articolo). 
 
 - Consentono fino a 30 minuti affinché il criterio nuovo o aggiornato venga esteso a tutti i datacenter di Office 365.
     
@@ -75,7 +75,7 @@ Quando si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md),
     
 5. Nelle **impostazioni che si applicano al contenuto, ad eccezione della sezione posta elettronica** , selezionare (o deselezionare) le opzioni che si desidera utilizzare. (Si consiglia di selezionare tutte le opzioni). 
     
-6. Scegliere **Save**.
+6. Fare clic su **Salva**.
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Passaggio 3: aggiungere o modificare i criteri per i collegamenti sicuri di ATP che si applicano ai destinatari di messaggi di posta elettronica specifici
 
@@ -107,7 +107,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
     
   - Nella sezione **applicato a** , scegliere **il destinatario è un membro di**, quindi scegliere il gruppo o i gruppi che si desidera includere nel criterio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
-6. Scegliere **Save**.
+6. Fare clic su **Salva**.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 
@@ -130,13 +130,13 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
-|**Off** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
-|**Nella** <br/> |Riscrive gli URL per instradare gli utenti tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica.  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi.  <br/> |
+|**Disattivato** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
+|**Attivato** <br/> |Riscrive gli URL per instradare gli utenti tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica.  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi.  <br/> |
 |**Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile** <br/> |Quando questa opzione è selezionata, gli URL che puntano al contenuto scaricabile vengono analizzati.  <br/> |
 |**Applicazione di collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** <br/> | Quando questa opzione è disponibile e selezionata, la protezione dei collegamenti sicuri di ATP viene applicata ai messaggi di posta elettronica inviati tra gli utenti dell'organizzazione, purché gli account di posta elettronica siano ospitati in Office 365.  <br/> |
 |**Non monitorare i clic dell'utente** <br/> |Quando questa opzione è selezionata, fare clic su dati per gli URL in messaggi di posta elettronica da mittenti esterni non archiviati. URL fare clic su rilevamento per i collegamenti all'interno dei messaggi di posta elettronica inviati all'interno dell'organizzazione non è attualmente supportato.  <br/> |
 |**Non consentire agli utenti di fare clic sull'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |
-|**Non riscrivere gli URL seguenti** <br/> |Lascia gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non devono essere analizzati per uno specifico gruppo di destinatari di posta elettronica nell'organizzazione.  Per ulteriori informazioni, vedere [configurare un elenco di URL "non riscrivere" personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , incluse le modifiche recenti al supporto per gli\*asterischi con caratteri jolly ().<br/> |
+|**Non riscrivere gli URL seguenti** <br/> |Lascia gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non devono essere analizzati per uno specifico gruppo di destinatari di posta elettronica nell'organizzazione.  Per ulteriori informazioni, vedere [configurare un elenco di URL "non riscrivere" personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , incluse le modifiche recenti al supporto per gli\*asterischi con caratteri jolly ().  <br/> |
    
 ## <a name="next-steps"></a>Passaggi successivi
 

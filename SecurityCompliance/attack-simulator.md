@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693665"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862458"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693665"
 
 Sono attualmente disponibili tre tipi di simulazioni di attacco:
   
-- [Nome visualizzato Spear-attacco di phishing](attack-simulator.md#spearphish)
-    
-- [Attacco spray per la password](attack-simulator.md#passwordspray)
-    
-- [Attacco per la password con forza bruta](attack-simulator.md#bruteforce)
+- [Nome visualizzato Spear-attacco di phishing](#display-name-spear-phishing-attack)
+- [Attacco spray per la password](#password-spray-attack)
+- [Attacco per la password con forza bruta](#brute-force-password-attack)
     
 Per l'avvio di un attacco, è possibile utilizzare l'autenticazione a più fattori nell'account che si sta utilizzando per eseguire attacchi simulati. Inoltre, è necessario essere un amministratore globale di Office 365.
   

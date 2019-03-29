@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 2671711d5b37f9f0f8793bb528741dc7b6d05680
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296429"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862438"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -101,7 +101,6 @@ Utilizzando lo scenario dei limiti di conformità di Contoso, è necessario crea
 
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Passaggio 4: creare un filtro delle autorizzazioni di ricerca per applicare il limite di conformità
-<a name="step4"> </a>
 
 Dopo aver creato i gruppi di ruoli per ogni agenzia, il passaggio successivo consiste nel creare i filtri delle autorizzazioni di ricerca che associano ciascun gruppo di ruoli alla propria agenzia specifica e definisce il limite di conformità stesso. È necessario creare un filtro delle autorizzazioni di ricerca per ogni agenzia. Per ulteriori informazioni sulla creazione di filtri per le autorizzazioni di sicurezza, vedere [Configure Permissions Filtering for content search](permissions-filtering-for-content-search.md).
   
@@ -180,39 +179,40 @@ Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Ricerca ed esportazione di contenuto in ambienti multi-Geo
 
-I filtri delle autorizzazioni di ricerca consentono inoltre di controllare il percorso del contenuto per l'esportazione e il Data Center in cui è possibile eseguire ricerche nei siti di SharePoint e negli account di OneDrive in un [ambiente multi-geografico di SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
+I filtri per le autorizzazioni di ricerca consentono inoltre di controllare il percorso del contenuto per l'esportazione e il Data Center in cui è possibile eseguire ricerche nei percorsi di contenuto in un [ambiente multi-geografico di SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
-- Esportare i risultati della ricerca da un data center specifico. Questo significa che è possibile specificare la posizione del Data Center in cui verranno esportati i risultati della ricerca.
+- **Esportare i risultati della ricerca** : è possibile esportare i risultati della ricerca da cassette postAli di Exchange, siti di SharePoint e account di OneDrive da un datacenter specifico. Questo significa che è possibile specificare la posizione del centro dati da cui verranno esportati i risultati della ricerca.
+
+    Utilizzare il parametro **Region** per i cmdlet **New-ComplianceSecurityFilter** o **set-ComplianceSecurityFilter** per creare o modificare il Data Center in cui verrà instradata l'esportazione.
+  
+    |**Valore del parametro**|**Percorso del datacenter**|
+    |:-----|:-----|
+    |NAM  <br/> |Nordamericano (i datacenter effettivi sono negli Stati Uniti)  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Asia Pacifico  <br/> |
+    |CAN <br/> |Canada
     
-- InStradare le ricerche dei siti di SharePoint e degli account di OneDrive a un Data Center satellite. Questo significa che è possibile specificare la posizione del centro dati in cui verranno eseguite le ricerche.
+- **Route content Searches** -è possibile instradare le ricerche di contenuto dei siti di SharePoint e degli account di OneDrive a un Data Center satellite. Questo significa che è possibile specificare la posizione del centro dati in cui verranno eseguite le ricerche.
     
-Utilizzare il parametro **Region** per i cmdlet **New-ComplianceSecurityFilter** o **set-ComplianceSecurityFilter** per creare o modificare il Data Center in cui verrà instradata l'esportazione.
+    Utilizzare i valori seguenti per i valori dei parametri **Region** per controllare il Data Center in cui verranno eseguite ricerche di contenuto durante la ricerca di siti di SharePoint e percorsi di OneDrive. Si noti che nella tabella seguente vengono illustrate anche le esportazioni di datacenter che verranno instradate. 
   
-|**Valore del parametro**|**Percorso Data Center**|
-|:-----|:-----|
-|NAM  <br/> |Nord America (i Data Center effettivi sono negli Stati Uniti)  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Asia Pacifico  <br/> |
-|CAN <br/> |Canada
+    |**Valore del parametro**|**Percorsi di routing dei datacenter per l'esportazione**|
+    |:-----|:-----|
+    |NAM  <br/> |NOI  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Asia Pacifico  <br/> |
+    |CAN  <br/> |NOI  <br/> |
+    |AUS  <br/> |Asia Pacifico  <br/> |
+    |KOR  <br/> |Data Center predefinito dell'organizzazione  <br/> |
+    |GBR  <br/> |Europa  <br/> |
+    |JPN  <br/> |Asia Pacifico  <br/> |
+    |IND  <br/> |Asia Pacifico  <br/> |
+    |LAM  <br/> |NOI  <br/> |
    
-Analogamente, è possibile utilizzare i valori seguenti per i valori dei parametri **Region** per controllare il Data Center in cui verranno eseguite ricerche di contenuto durante la ricerca di percorsi di SharePoint e OneDrive. Tenere presente che nella tabella seguente vengono illustrate anche le esportazioni del Data Center. 
+> [!NOTE]
+> Se non si specifica il parametro **Region** per un filtro delle autorizzazioni di ricerca, verrà eseguita la ricerca nell'area di SharePoint predefinita per le organizzazioni, quindi i risultati della ricerca vengono esportati nel centro dati più vicino. 
   
-|**Valore del parametro**|**Percorsi di routing dei Data Center per l'esportazione**|
-|:-----|:-----|
-|NAM  <br/> |IT  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Asia Pacifico  <br/> |
-|CAN  <br/> |IT  <br/> |
-|AUS  <br/> |Asia Pacifico  <br/> |
-|KOR  <br/> |Data Center predefinito dell'organizzazione  <br/> |
-|GBR  <br/> |Europa  <br/> |
-|JPN  <br/> |Asia Pacifico  <br/> |
-|IND  <br/> |Asia Pacifico  <br/> |
-|LAM  <br/> |IT  <br/> |
-   
- **Nota:** Se non si specifica il parametro Region per un filtro delle autorizzazioni di ricerca, verrà eseguita la ricerca nell'area di SharePoint predefinita per le organizzazioni, quindi i risultati della ricerca vengono esportati nel data center più vicino. 
-  
-Di seguito sono riportati alcuni esempi di utilizzo del parametro **-Region** quando si creano filtri delle autorizzazioni di ricerca per i limiti di conformità. Ciò presuppone che la quarta filiale del caffè si trovi in Nord America e che Coho Winery sia in Europa. 
+Di seguito sono riportati alcuni esempi di utilizzo del parametro **Region** quando si creano filtri delle autorizzazioni di ricerca per i limiti di conformità. Ciò presuppone che la quarta filiale del caffè si trovi in Nord America e che Coho Winery sia in Europa. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
