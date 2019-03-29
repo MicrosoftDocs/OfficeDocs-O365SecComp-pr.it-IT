@@ -1,74 +1,53 @@
 ---
-title: Video per iniziare con EOP
+title: Che cos'è EOP
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: In questo documento introduttivo vengono fornite informazioni utili per comprendere Exchange Online Protection (EOP) e una terminologia importante. Questo è applicabile per i clienti di Office 365 che proteggono le cassette postali ospitate sul cloud di Exchange Online e i clienti autonomi di EOP che proteggono le cassette postali locali, ad esempio Exchange Server 2016.
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926731"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950433"
 ---
-# <a name="videos-for-getting-started-with-eop"></a><span data-ttu-id="65afd-103">Video per iniziare con EOP</span><span class="sxs-lookup"><span data-stu-id="65afd-103">Videos for getting started with EOP</span></span>
+## <a name="what-is-exchange-online-protection-eop"></a><span data-ttu-id="4aa70-104">Che cos'è Exchange Online Protection (EOP)</span><span class="sxs-lookup"><span data-stu-id="4aa70-104">What is Exchange Online Protection (EOP)</span></span>
 
-<span data-ttu-id="65afd-104">La serie di video seguente consente di configurare e usare il servizio di filtro della posta elettronica ospitato su Exchange Online Protection (EOP).</span><span class="sxs-lookup"><span data-stu-id="65afd-104">The following series of videos will help you set up and use the Exchange Online Protection (EOP) hosted email filtering service.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="65afd-p101">Prima di avviare le attività descritte nei video, si consiglia di configurare il flusso della posta. Per ulteriori informazioni, vedere l'argomento [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx).</span><span class="sxs-lookup"><span data-stu-id="65afd-p101">Before you start the tasks described in the videos, we recommend that you set up mail flow. For more information, see the [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) topic.</span></span> 
-  
-<span data-ttu-id="65afd-107">Questi video riguardano la personalizzazione delle impostazioni di protezione da posta indesiderata in base alle esigenze dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="65afd-107">These videos are about tailoring your anti-spam settings to fit the needs of your organization.</span></span> <span data-ttu-id="65afd-108">Per la posta in ingresso che attraversa il servizio all'organizzazione, è inclusa la creazione di elenchi di mittenti attendibili e bloccati basati su indirizzi IP e la configurazione delle impostazioni del filtro del contenuto.</span><span class="sxs-lookup"><span data-stu-id="65afd-108">For inbound mail traveling through the service to your organization, this includes creating safe sender and blocked sender lists based on IP addresses, and configuring content filter settings.</span></span> <span data-ttu-id="65afd-109">È inoltre disponibile un video in cui gli amministratori possono trovare e rilasciare messaggi di posta indesiderata filtrati o messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) che sono stati inviati alla quarantena e come segnalare i messaggi di posta indesiderata per migliorare il servizio.</span><span class="sxs-lookup"><span data-stu-id="65afd-109">There's also a video showing how admins can find and release content-filtered spam messages or messages that matched a mail flow rule (also known as a transport rule) that were sent to the quarantine, and also how to report spam messages to help us improve the service.</span></span>
-  
-- <span data-ttu-id="65afd-110">Configurazione degli elenchi di indirizzi IP consentiti e bloccati in EOP</span><span class="sxs-lookup"><span data-stu-id="65afd-110">Configure IP Allow and IP Block Lists in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    <span data-ttu-id="65afd-111">Per ulteriori informazioni, vedere l'argomento [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md) .</span><span class="sxs-lookup"><span data-stu-id="65afd-111">For more details, see the [Configure the connection filter policy](../configure-the-connection-filter-policy.md) topic.</span></span> 
-    
-- <span data-ttu-id="65afd-112">Configurazione del filtro del contenuto di posta indesiderata in EOP</span><span class="sxs-lookup"><span data-stu-id="65afd-112">Configure Spam Content Filtering in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    <span data-ttu-id="65afd-113">Per ulteriori informazioni, vedi l'argomento [Configurare i criteri di filtro della posta indesiderata](../configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="65afd-113">For more details, see the [Configure your spam filter policies](../configure-your-spam-filter-policies.md) topic.</span></span> 
-    
-- <span data-ttu-id="65afd-114">Trovare e rilasciare i messaggi dalla quarantena</span><span class="sxs-lookup"><span data-stu-id="65afd-114">Find and Release Messages From the Quarantine</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    <span data-ttu-id="65afd-115">Per ulteriori informazioni, vedi l'argomento [Individuazione e rilascio dei messaggi in quarantena come amministratore](../find-and-release-quarantined-messages-as-an-administrator.md).</span><span class="sxs-lookup"><span data-stu-id="65afd-115">For more details, see the [Find and release quarantined messages as an administrator](../find-and-release-quarantined-messages-as-an-administrator.md) topic.</span></span> 
-    
-<span data-ttu-id="65afd-p103">Sarà anche necessario configurare i criteri di protezione da posta indesiderata in uscita se si desidera controllare se la posta indesiderata viene inviata dall'organizzazione. Per informazioni su come eseguire questa operazione, guarda il video sulla posta indesiderata in uscita.</span><span class="sxs-lookup"><span data-stu-id="65afd-p103">You'll also want to configure the outbound spam policy because you'll want to monitor if spam is being sent from your organization. Check out the outbound spam video to learn how.</span></span>
-  
-- <span data-ttu-id="65afd-118">Configurazione del criterio delle posta indesiderata in uscita</span><span class="sxs-lookup"><span data-stu-id="65afd-118">Configure the Outbound Spam Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    <span data-ttu-id="65afd-119">Per ulteriori informazioni, vedere il [criterio di configurazione della posta](../configure-the-outbound-spam-policy.md) indesiderata in uscita</span><span class="sxs-lookup"><span data-stu-id="65afd-119">For more details, see the [Configure the outbound spam policy](../configure-the-outbound-spam-policy.md)</span></span>
-    
-<span data-ttu-id="65afd-120">Exchange Online Protection include anche le impostazioni per gestire i malware rilevati dal servizio, descritte nel video relativo al filtro anti-malware.</span><span class="sxs-lookup"><span data-stu-id="65afd-120">EOP also has settings for how to handle malware that's detected by the service, which the anti-malware filtering video describes.</span></span>
-  
-- <span data-ttu-id="65afd-121">Configurazione dei criteri antimalware</span><span class="sxs-lookup"><span data-stu-id="65afd-121">Configure the Anti-Malware Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    <span data-ttu-id="65afd-122">Per ulteriori informazioni, vedi l'argomento [Configurazione dei criteri anti-malware](../configure-anti-malware-policies.md).</span><span class="sxs-lookup"><span data-stu-id="65afd-122">For more details, see the [Configure anti-malware policies](../configure-anti-malware-policies.md) topic.</span></span> 
-    
-<span data-ttu-id="65afd-123">Per filtrare e instradare i messaggi in base a condizioni specifiche impostate, in base ai criteri aziendali o ai regolamenti, è necessario guardare il video su come creare regole del flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="65afd-123">To filter and route messages based on specific conditions you set, based on company policy or regulations, you'll want to watch the video about how to create mail flow rules.</span></span>
-  
-- <span data-ttu-id="65afd-124">Configurare le regole del flusso di posta di Exchange in EOP</span><span class="sxs-lookup"><span data-stu-id="65afd-124">Configure Exchange mail flow rules in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    <span data-ttu-id="65afd-125">Per ulteriori informazioni, vedere le regole del [flusso di posta (regole di trasporto) nell'argomento Exchange Online Protection](mail-flow-rules-transport-rules-0.md) se si utilizza EOP autonomo oppure vedere [Mail Flow Rules (Transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic se si utilizza Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="65afd-125">For more details, see the [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) topic if you use EOP standalone, or see [Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic if you use Exchange Online.</span></span>
-    
-<span data-ttu-id="65afd-126">Se si è interessati alla configurazione del servizio eseguendo script dalla riga di comando, guardare il video introduttivo sull'utilizzo di PowerShell in remoto.</span><span class="sxs-lookup"><span data-stu-id="65afd-126">f you're interested in configuring the service by running scripts from the command line, the remote PowerShell video will help you get started.</span></span>
-  
-- <span data-ttu-id="65afd-127">Utilizzare Remote PowerShell in EOP</span><span class="sxs-lookup"><span data-stu-id="65afd-127">Use Remote PowerShell in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    <span data-ttu-id="65afd-128">Per ulteriori dettagli, vedere l'argomento [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) se si utilizza un EOP autonomo oppure vedere l'argomento [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) se si utilizza Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="65afd-128">For more details, see the [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) topic if you use EOP standalone, or see the [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) topic if you use Exchange Online.</span></span> 
-    
+<span data-ttu-id="4aa70-105">Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che consente di proteggere l'organizzazione da posta indesiderata e malware.</span><span class="sxs-lookup"><span data-stu-id="4aa70-105">Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware.</span></span> <span data-ttu-id="4aa70-106">Se si dispone di cassette postali in Office 365, queste vengono protette automaticamente da EOP, poiché fanno parte del servizio.</span><span class="sxs-lookup"><span data-stu-id="4aa70-106">If you have mailboxes in Office 365, they are automatically protected by EOP since it is part of the service.</span></span> <span data-ttu-id="4aa70-107">Sono incluse le organizzazioni che dispongono di cassette postali sia in Office 365 che in locale, comunemente noto come scenario ibrido.</span><span class="sxs-lookup"><span data-stu-id="4aa70-107">This includes organizations that have mailboxes in both Office 365 and on-premise, which is commonly known as a hybrid scenario.</span></span> <span data-ttu-id="4aa70-108">EOP standalone è disponibile anche per i clienti che non dispongono di cassette postali nel cloud ma che desiderano proteggere le cassette postali locali.</span><span class="sxs-lookup"><span data-stu-id="4aa70-108">EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premise mailboxes.</span></span> 
 
+<span data-ttu-id="4aa70-109">EOP tenta di filtrare gli indesiderati, mantenendo la posta in arrivo sgombra dal contenuto che gli utenti non desiderano visualizzare.</span><span class="sxs-lookup"><span data-stu-id="4aa70-109">EOP attempts to filter out junk, keeping your Inbox clear of content that users don't want to see.</span></span> <span data-ttu-id="4aa70-110">In genere, la posta indesiderata viene recapitata alla cartella posta inDesiderata.</span><span class="sxs-lookup"><span data-stu-id="4aa70-110">Normally, junk mail is delivered to the Junk Email folder.</span></span> <span data-ttu-id="4aa70-111">Alcuni utenti desiderano verificare che il filtro stia facendo ciò che vuole, in modo che la cartella posta inDesiderata sia un modo semplice per consentire agli utenti di controllare da soli.</span><span class="sxs-lookup"><span data-stu-id="4aa70-111">Some users like to check to make sure the filtering is doing what they want so the Junk Email folder is an easy way for users to check on their own.</span></span>  
+
+> [!TIP]
+> <span data-ttu-id="4aa70-112">Si tratta di una buona cosa quando la posta indesiderata o altrimenti cattivo entra automaticamente nella cartella posta inDesiderata.</span><span class="sxs-lookup"><span data-stu-id="4aa70-112">It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically.</span></span> <span data-ttu-id="4aa70-113">Il servizio eseguirà le operazioni necessarie in base a ciò che lo stato delle impostazioni di amministratore predefinito o personalizzato.</span><span class="sxs-lookup"><span data-stu-id="4aa70-113">The service will do what is necessary based on what the default or the custom admin settings state.</span></span> <span data-ttu-id="4aa70-114">In altre parole, gli utenti non devono preoccuparsi di visualizzare molti messaggi di posta indesiderata nella cartella posta inDesiderata.</span><span class="sxs-lookup"><span data-stu-id="4aa70-114">In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder.</span></span> <span data-ttu-id="4aa70-115">Se gli amministratori preferiscono spostare tutta la posta indesiderata, la quarantena deve essere configurata.</span><span class="sxs-lookup"><span data-stu-id="4aa70-115">If admins prefer to move all junk out of sight, then the Quarantine should be configured.</span></span> <span data-ttu-id="4aa70-116">Per ulteriori informazioni, vedere l'articolo relativo alla [quarantena dei messaggi di posta elettronica in Office 365](../quarantine-email-messages.md) .</span><span class="sxs-lookup"><span data-stu-id="4aa70-116">For more details, see the [Quarantine email messages in Office 365](../quarantine-email-messages.md) article.</span></span>
+
+## <a name="important-terms"></a><span data-ttu-id="4aa70-117">Termini importanti</span><span class="sxs-lookup"><span data-stu-id="4aa70-117">Important terms</span></span>
+
+<span data-ttu-id="4aa70-118">In **ingresso:** Messaggi che stanno entrando in Office 365.</span><span class="sxs-lookup"><span data-stu-id="4aa70-118">**Inbound:** Messages that are coming into Office 365.</span></span>
+
+<span data-ttu-id="4aa70-119">In **uscita:** Messaggi in uscita da Office 365.</span><span class="sxs-lookup"><span data-stu-id="4aa70-119">**Outbound:** Messages that are going out of Office 365.</span></span>
+
+<span data-ttu-id="4aa70-120">**Interno:** Messaggi provenienti da un utente all'interno dell'organizzazione a un utente all'interno dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="4aa70-120">**Internal:** Messages that are from someone inside the organization to someone inside the organization.</span></span> <span data-ttu-id="4aa70-121">Questo include i clienti che si trovano in scenari ibridi e una cassetta postale potrebbe essere locale e l'altra cassetta postale si trova nel cloud.</span><span class="sxs-lookup"><span data-stu-id="4aa70-121">This includes customers who are in hybrid scenarios and one mailbox could be on-premise and the other mailbox is in the cloud.</span></span>
+
+<span data-ttu-id="4aa70-122">**False negative (FN):** Posta inDesiderata e altre cianfrusaglie che vengono inviate erroneamente alla posta in arrivo.</span><span class="sxs-lookup"><span data-stu-id="4aa70-122">**False Negative (FN):** Spam and other junk that incorrectly gets sent into the inbox.</span></span>
+
+<span data-ttu-id="4aa70-123">**Falso positivo (FP):** Messaggi legittimi che vengono contrassegnati erroneamente come posta indesiderata e inseriti nella cartella posta inDesiderata o in quarantena.</span><span class="sxs-lookup"><span data-stu-id="4aa70-123">**False Positive (FP):** Legitimate messages that incorrectly get marked as spam and put into the Junk Email folder or Quarantine.</span></span>
+
+<span data-ttu-id="4aa70-124">**Posta indesiderata, nota anche come e-mail indesiderata:** Questo è in forma di pubblicità commerciale, catene di lettere, invii politici e così via. Si tratta di un messaggio di posta elettronica a cui gli utenti non possono accedere e provenienti da spammer che tentano di richiedere prodotti o che tentano di commettere frodi.</span><span class="sxs-lookup"><span data-stu-id="4aa70-124">**Spam, also known as unsolicited e-mail:** This comes in the form of commercial advertising, chain letters, political mailings, etc. This is email that users do not sign up for and from spammers who are trying to solicit products or attempting to commit fraud.</span></span>
+
+<span data-ttu-id="4aa70-125">**Phishing:** Il phishing è un tipo speciale di posta indesiderata che ha lo scopo di ingannare l'utente nel rinunciare alle informazioni personali al fine di commettere furti di identità o frodi.</span><span class="sxs-lookup"><span data-stu-id="4aa70-125">**Phish:** Phishing is a special type of spam that is intended to trick you into giving up personal information for the purpose of committing identity theft or fraud.</span></span> <span data-ttu-id="4aa70-126">In genere, questo tipo di messaggio contiene un collegamento o un allegato dannoso, ma non sempre.</span><span class="sxs-lookup"><span data-stu-id="4aa70-126">This type of message usually contains a malicious link or attachment, but not always.</span></span>
+
+<span data-ttu-id="4aa70-127">**Spoof:** Lo spoofing è quando gli spammer falsificano l'intestazione FROM in modo che i messaggi vengano originati da un utente o da una posizione diversa dall'origine effettiva.</span><span class="sxs-lookup"><span data-stu-id="4aa70-127">**Spoof:** Spoofing is when spammers forge the FROM header so that messages appear to have originated from someone or somewhere other than the actual source.</span></span> <span data-ttu-id="4aa70-128">Può trattarsi di posta indesiderata, ma più comunemente utilizzata per gli utenti di phishing.</span><span class="sxs-lookup"><span data-stu-id="4aa70-128">This can be spam but most commonly used to phish users.</span></span>
+
+<span data-ttu-id="4aa70-129">**Rappresentazione:** Questo tipo di posta indesiderata è anche un modo per creare l'indirizzo del mittente, ma è possibile modificare parte del nome o del dominio in modo che appaia come l'origine reale.</span><span class="sxs-lookup"><span data-stu-id="4aa70-129">**Impersonation:** This type of spam is also a way to forge the sender address, but it is done by modifying part of the name or domain so that it looks like the real source.</span></span> <span data-ttu-id="4aa70-130">Ad esempio, Bi11@micr0s0ft.com, dove la "l" in Bill era in realtà il numero undici e la "o" in Microsoft è stata sostituita con il numero zero.</span><span class="sxs-lookup"><span data-stu-id="4aa70-130">For example, Bi11@micr0s0ft.com, where the "l" in Bill was actually the number eleven and the "o" in Microsoft was replaced with the number zero.</span></span>
+
+<span data-ttu-id="4aa70-131">In **blocco:** La posta in blocco è in genere sollecitata dagli utenti, anche se a volte indirettamente quando le aziende vendono informazioni ad altre società.</span><span class="sxs-lookup"><span data-stu-id="4aa70-131">**Bulk:** Bulk mail is usually solicited by users, although sometimes indirectly when companies sell information to other companies.</span></span> <span data-ttu-id="4aa70-132">È comune che gli utenti si iscrivono intenzionalmente alla posta in blocco (ad esempio, newsletter), ma dimentichino in seguito e pensino che si tratta di posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="4aa70-132">It is common that users intentionally sign up for bulk mail (i.e. newletters) but forget later on and think it is spam.</span></span> <span data-ttu-id="4aa70-133">La posta in blocco diventa indesiderata quando i messaggi di posta in blocco inviano più utenti e i livelli di reclamo diventano troppo alti.</span><span class="sxs-lookup"><span data-stu-id="4aa70-133">Bulk mail becomes spam when bulk mailers send more than users sign up and complaint levels get too high.</span></span>
