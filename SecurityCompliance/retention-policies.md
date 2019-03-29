@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455448"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935301"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -244,7 +244,7 @@ Microsoft sta ancora lavorando sulla conservazione in Teams e renderà presto di
     
 - **Teams non è incluso in un criterio a livello di organizzazione:** se si crea un criterio a livello di organizzazione, Teams non viene incluso perché richiede criteri di conservazione specifici. 
     
-- **Teams non supporta la conservazione avanzata:** quando si creano i criteri di conservazione, se si scelgono le [impostazioni avanzate che applicano criteri solo a contenuti che soddisfano determinate condizioni](retention-policies.md#advanced), il percorso di Teams non è disponibile. Al momento, la conservazione in Teams si applica a tutto il contenuto di chat e messaggi del canale.
+- **Teams non supporta la conservazione avanzata:** quando si creano i criteri di conservazione, se si scelgono le [impostazioni avanzate che applicano criteri solo a contenuti che soddisfano determinate condizioni](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), il percorso di Teams non è disponibile. Al momento, la conservazione in Teams si applica a tutto il contenuto di chat e messaggi del canale.
     
 - **Per essere eliminato, il contenuto di Teams deve risalire ad almeno 30 giorni:** al momento, non è supportata la creazione di un criterio per eliminare il contenuto di Teams che ha meno di 30 giorni. Per applicare questo criterio al contenuto di Teams, specificare un periodo di conservazione uguale o maggiore di 30 giorni. 
     
@@ -252,7 +252,7 @@ Microsoft sta ancora lavorando sulla conservazione in Teams e renderà presto di
     
 In un team i file condivisi in chat vengono archiviati nell'account di OneDrive dell'utente che ha condiviso il file. I file caricati nei canali vengono archiviati nel sito di SharePoint del team. Di conseguenza, per conservare o eliminare i file in un team, è necessario creare un criterio di conservazione che si applica ai percorsi di SharePoint e OneDrive. Per applicare un criterio ai file di un solo team, è possibile scegliere il sito di SharePoint per il team e gli account di OneDrive per gli utenti del team.
   
-I criteri di conservazione che si applicano a Teams possono usare la [protezione dell'archiviazione](retention-policies.md#locking).
+I criteri di conservazione che si applicano a Teams possono usare la [protezione dell'archiviazione](#locking-a-retention-policy).
   
 ![Posizioni Teams per chat e messaggi del canale](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   

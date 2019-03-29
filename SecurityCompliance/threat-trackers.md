@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693075"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862528"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>InSeguimenti di minacce-nuovi e degni di nota
 
@@ -38,7 +38,7 @@ La maggior parte delle pagine del Tracker include i numeri di tendenza che vengo
   
 ![Esempio di informazioni sulla campagna in Esplora risorse](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Gli inSeguitori di minacce includono inseguitori [significativi](threat-trackers.md#notey), inseguitori di [tendenza](threat-trackers.md#trending), [query registrate](threat-trackers.md#trackedq)e [query salvate](threat-trackers.md#savedq).
+I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Gli inSeguitori di minacce includono inseguitori di [Noteworth](#noteworthy-trackers), inseguitori di [tendenza](#trending-trackers), [query registrate](#tracked-queries)e [query salvate](#saved-queries).
   
 Per visualizzare e utilizzare i Tracker di minacce per la propria organizzazione, andare al &amp; centro[https://protection.office.com](https://protection.office.com)sicurezza e scegliere Threat **Management** \> **Threat Tracker**.
   

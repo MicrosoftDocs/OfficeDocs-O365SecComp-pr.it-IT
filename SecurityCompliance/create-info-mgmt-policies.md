@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
-ms.openlocfilehash: d4161ad3684a006f0e4b2b9e0e856ea0a8aa67fc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214696"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862568"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 
@@ -43,7 +43,7 @@ Per ulteriori informazioni, vedere [Introduzione ai criteri di gestione delle in
 
 Per garantire che un criterio di informazioni venga applicato a tutti i documenti di un determinato tipo all'interno di una raccolta siti, prendere in considerazione la possibilità di creare il criterio a livello di raccolta siti e successivamente applicarlo ai tipi di contenuto. Questi vengono definiti criteri di raccolta siti. 
   
-1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **sito.** \>
+1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
@@ -66,7 +66,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
   
  È inoltre possibile aggiungere un criterio di gestione delle informazioni a un tipo di contenuto specifico per gli elenchi. Questo ha l'effetto di applicare il criterio solo agli elementi dell'elenco che utilizzano il tipo di contenuto. 
   
-1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **sito.** \>
+1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
@@ -90,8 +90,8 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
 ||||||**1.**|* * Scegliere * * aggiungere una fase di conservazione per i record... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Selezionare un'opzione periodo di conservazione per specificare quando i documenti o gli elementi sono impostati in modo che scadano. Eseguire una delle operazioni seguenti:<br/>  Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione ( ad esempio, il numero di giorni, mesi o anni) quando si desidera che l'elemento scada.  <br/>  Per utilizzare una formula di conservazione personalizzata per determinare la scadenza, scegliere **imposta da una formula di conservazione personalizzata installata nel server**.  <br/> > [!NOTE]> questa opzione è disponibile solo se è stata configurata una formula personalizzata dall'amministratore.           |
-||||||3.  <br/> |L'opzione **avvia un flusso di lavoro** è disponibile solo se si definisce un criterio per un elenco, una raccolta o un tipo di contenuto a cui è già associato un flusso di lavoro. Verrà quindi data la possibilità di scegliere tra i flussi di lavoro.<br/> |
+||||||2.  <br/> | Selezionare un'opzione periodo di conservazione per specificare quando i documenti o gli elementi sono impostati in modo che scadano. Eseguire una delle operazioni seguenti:  <br/>  Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione ( ad esempio, il numero di giorni, mesi o anni) quando si desidera che l'elemento scada.  <br/>  Per utilizzare una formula di conservazione personalizzata per determinare la scadenza, scegliere **imposta da una formula di conservazione personalizzata installata nel server**.  <br/> > [!NOTE]> questa opzione è disponibile solo se è stata configurata una formula personalizzata dall'amministratore.           |
+||||||3.  <br/> |L'opzione **avvia un flusso di lavoro** è disponibile solo se si definisce un criterio per un elenco, una raccolta o un tipo di contenuto a cui è già associato un flusso di lavoro. Verrà quindi data la possibilità di scegliere tra i flussi di lavoro.  <br/> |
 ||||||4.  <br/> |Nella sezione **** ricorrenza selezionare **Ripeti azione di questo passaggio...** e immettere la frequenza con cui si desidera che l'azione venga rieseguita.  <br/> > [!NOTE]> questa opzione è disponibile solo se l'azione selezionata può essere ripetuta. Ad esempio, non è possibile impostare la ricorrenza per l'azione **Elimina definitivamente**.           |
 ||||||5.  <br/> |Scegliere **OK**.  <br/> |
    
@@ -103,8 +103,8 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |**Per richiedere agli utenti di inserire i codici a barre nei documenti,** **scegliere** **Richiedere agli utenti di inserire un codice a barre prima del salvataggio o della stampa** **.** <br/> |
 ||||||**3.** <br/> |**Scegliere** **OK** * * per applicare la funzionalità di controllo al criterio. ** <br/> |
-|||||||La funzionalità dei criteri di controllo consente alle organizzazioni di creare e analizzare percorsi di controllo per i documenti e di elencare gli elementi, ad esempio elenchi di attività, elenchi di problemi, gruppi di discussione e calendari. Questa caratteristica dei criteri fornisce un registro di controllo che registra gli eventi, ad esempio quando il contenuto viene visualizzato, modificato o eliminato.  <br/> |
-|||||||Quando il controllo è abilitato nell'ambito di un criterio di gestione delle informazioni, gli amministratori possono visualizzare i dati di controllo nei report sull'utilizzo dei criteri basati su Microsoft Excel e riassumendo l'utilizzo corrente. Gli amministratori possono utilizzare questi rapporti per determinare il modo in cui vengono utilizzate le informazioni all'interno dell'organizzazione. Tali rapporti possono inoltre consentire alle organizzazioni di verificare e documentare la conformità normativa o di indagare su potenziali problemi.  <br/> |
+|||||||La funzionalità dei criteri di controllo consente alle organizzazioni di creare e analizzare percorsi di controllo per i documenti e di elencare gli elementi, ad esempio elenchi di attività, elenchi di problemi, gruppi di discussione e calendari. Questa caratteristica dei criteri garantisce un registro di controllo in cui vengono registrati gli eventi, ad esempio il momento di visualizzazione, modifica o eliminazione del contenuto.  <br/> |
+|||||||Quando il controllo è abilitato nell'ambito di un criterio di gestione delle informazioni, gli amministratori possono visualizzare i dati di controllo nei report sull'utilizzo dei criteri basati su Microsoft Excel e riassumendo l'utilizzo corrente. Gli amministratori possono utilizzare questi report per determinare come vengono utilizzate le informazioni all'interno dell'organizzazione. Tali rapporti possono inoltre consentire alle organizzazioni di verificare e documentare la conformità normativa o di indagare su potenziali problemi.  <br/> |
 |||||||Nel registro di controllo vengono registrate le informazioni seguenti: nome dell'evento, data e ora dell'evento e nome di sistema dell'utente che ha eseguito l'azione.  <br/> |
    
 1. Quando i codici a barre sono abilitati nell'ambito di un criterio, vengono aggiunti alle proprietà del documento e vengono visualizzati nell'area di intestazione del documento a cui è applicato il codice a barre. Come le etichette, è possibile rimuovere manualmente anche i codici a barre da un documento. È possibile specificare se gli utenti devono essere invitati a includere il codice a barre durante la stampa o il salvataggio di un elemento o se il codice a barre deve essere inserito manualmente utilizzando la scheda **Inserisci** in 2010 programmi di Office Release. 
@@ -124,11 +124,11 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
 ||||||**1.**|* * Per richiedere agli utenti di aggiungere un'etichetta a un documento, scegliere **Richiedi agli utenti di inserire un'etichetta prima del salvataggio o della stampa**.  <br/> > [!NOTE]> se si desidera che le etichette siano facoltative, non selezionare questa casella di controllo.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> |Per bloccare un'etichetta in modo che non possa essere modificata dopo l'inserimento, scegliere **Impedisci modifiche alle etichette dopo che sono state aggiunte**.  <br/>  Questa impostazione consente di evitare che il testo dell'etichetta venga aggiornato dopo l'inserimento dell'etichetta in un elemento all'interno di un'applicazione client, ad esempio Word, Excel o PowerPoint. Se si desidera che l'etichetta venga aggiornata quando vengono aggiornate le proprietà del documento o dell'elemento, non selezionare questa casella di controllo.<br/> |
+||||||2.  <br/> |Per bloccare un'etichetta in modo che non possa essere modificata dopo l'inserimento, scegliere **Impedisci modifiche alle etichette dopo che sono state aggiunte**.  <br/>  Questa impostazione consente di evitare che il testo dell'etichetta venga aggiornato dopo l'inserimento dell'etichetta in un elemento all'interno di un'applicazione client, ad esempio Word, Excel o PowerPoint. Se si desidera che l'etichetta venga aggiornata in caso di aggiornamento delle proprietà del documento o dell'elemento, non selezionare questa casella di controllo.  <br/> |
 ||||||3.  <br/> |Nella casella formato etichetta immettere il testo per l'etichetta che si desidera visualizzare. Le etichette possono contenere fino a 10 riferimenti di colonna, ognuno dei quali può avere una lunghezza massima di 255 caratteri. Per creare il formato per l'etichetta, eseguire le operazioni seguenti:  <br/> Digitare i nomi delle colonne che si desidera includere nell'etichetta nell'ordine in cui si desidera che vengano visualizzate. Racchiudere i nomi delle colonne racchiuse tra parentesi{}graffe (), come illustrato nell'esempio nella pagina Modifica criterio.  <br/> Digitare parole per identificare le colonne all'esterno delle parentesi quadre, come illustrato nell'esempio nella pagina Modifica criterio.  <br/> |
 ||||||4.  <br/> |Per aggiungere un'interruzione di riga, immettere **\n** in cui si desidera che l'interruzione di riga venga visualizzata.  <br/> |
-||||||5.  <br/> |Selezionare la dimensione e lo stile del carattere desiderati e specificare se si desidera che l'etichetta sia posizionata a sinistra, al centro o a destra all'interno del documento.  <br/>  Selezionare un tipo di carattere e uno stile disponibili nei computer degli utenti. Le dimensioni del tipo di carattere influiscono sulla quantità di testo che è possibile visualizzare sull'etichetta.  <br/> |
-||||||6.  <br/> |Immettere l'altezza e la larghezza dell'etichetta. L'altezza dell'etichetta può variare da .25 pollici a 20 pollici e la larghezza dell'etichetta può variare da .25 pollici a 20 pollici. Il testo dell'etichetta è sempre centrato verticalmente all'interno dell'immagine dell'etichetta.  <br/> |
+||||||5.  <br/> |Selezionare la dimensione e lo stile del carattere desiderati e specificare se si desidera che l'etichetta sia posizionata a sinistra, al centro o a destra all'interno del documento.  <br/>  Selezionare un tipo di carattere e uno stile disponibili nei computer degli utenti. Dalla dimensione del tipo di carattere dipende la quantità di testo visualizzabile sull'etichetta.  <br/> |
+||||||6.  <br/> |Immettere l'altezza e la larghezza dell'etichetta. L'altezza e la larghezza dell'etichetta possono essere comprese tra 0,5 cm e 50 cm. Il testo dell'etichetta viene sempre centrato verticalmente all'interno dell'immagine dell'etichetta.  <br/> |
 ||||||7.  <br/> |Scegliere **Refresh** per visualizzare un'anteprima del contenuto dell'etichetta.  <br/> |
    
 1. Scegliere **OK**.
@@ -195,7 +195,7 @@ Se il **tipo di contenuto** viene visualizzato come origine, fare clic su **Camb
 
 Se i criteri di gestione delle informazioni sono già stati creati per il sito come criteri di raccolta siti, è possibile applicare uno dei criteri a un tipo di contenuto. In questo modo, è possibile applicare lo stesso criterio a più tipi di contenuto in una raccolta siti che non condividono lo stesso tipo di contenuto padre.
   
- Se si desidera applicare i criteri a più tipi di contenuto in una raccolta siti e si dispone di un servizio metadati gestiti configurato, è possibile utilizzare la pubblicazione dei tipi di contenuto per pubblicare le polizie di gestione delle informazioni in più raccolte siti. Per ulteriori informazioni, vedere la sezione [applicare un criterio ai tipi di contenuto nelle raccolte siti](create-info-mgmt-policies.md#__apply_a_policy) . 
+ Se si desidera applicare i criteri a più tipi di contenuto in una raccolta siti e si dispone di un servizio metadati gestiti configurato, è possibile utilizzare la pubblicazione dei tipi di contenuto per pubblicare le polizie di gestione delle informazioni in più raccolte siti. Per ulteriori informazioni, vedere la sezione [applicare un criterio tra le raccolte siti](#apply-a-policy-across-site-collections) . 
   
 1. Passare all'elenco o alla raccolta che contiene il tipo di contenuto a cui si desidera applicare un criterio.
     
@@ -267,6 +267,13 @@ L'importazione di un criterio di gestione delle informazioni consente di applica
     
 È ora possibile applicare i criteri importati a uno o più tipi di contenuto a livello di sito o di elenco. 
   
-[I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti. È possibile creare un criterio di gestione delle informazioni può essere suddiviso in tre posizioni diverse nella gerarchia dei siti, dalla più ampia alla più stretta: creare un criterio da utilizzare su più tipi di contenuto all'interno di una raccolta siti. Creare un criterio per un tipo di contenuto del sito. Creare un criterio per un elenco o una raccolta. Per ulteriori informazioni, vedere Introduzione ai criteri di gestione delle informazioni.](create-info-mgmt-policies.md#__top)
+I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
+
+È possibile creare un criterio di gestione delle informazioni può essere in tre posizioni diverse nella gerarchia dei siti, dalla più ampia alla più stretta:
+- Creare un criterio da utilizzare su più tipi di contenuto all'interno di una raccolta siti.
+- Creare un criterio per un tipo di contenuto del sito.
+- Creare un criterio per un elenco o una raccolta.
+
+Per ulteriori informazioni, vedere [Introduzione ai criteri di gestione delle informazioni](intro-to-info-mgmt-policies.md).
   
 
