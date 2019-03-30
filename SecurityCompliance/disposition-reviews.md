@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Quando si crea un'etichetta di conservazione che conserva il contenuto di Office 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512661"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997262"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -33,7 +33,7 @@ Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile
     
 - Restituire il contenuto ai client o trasferirlo in un'altra organizzazione.
     
-Quando si crea un'etichetta di conservazione in Office 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione. In una recensione di disposizione:
+Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center, Microsoft 365 Security Center o Office 365 Security & Compliance Center, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione. In una recensione di disposizione:
   
 - Gli utenti che scelgono ricevono una notifica tramite posta elettronica che dispongono di contenuto da esaminare. Questi revisori possono essere singoli utenti, gruppi di distribuzione o di sicurezza o gruppi di Office 365. Si noti che le notifiche vengono inviate su base settimanale.
     

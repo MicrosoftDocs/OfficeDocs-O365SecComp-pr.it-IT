@@ -3,7 +3,7 @@ title: Panoramica della gestione del piano file
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 9/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: d972a7ea6507e51c4efaaef30c98d55a87912417
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454828"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997272"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 

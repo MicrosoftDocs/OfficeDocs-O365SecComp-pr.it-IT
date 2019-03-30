@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilizzare il pulsante riProva per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
-ms.openlocfilehash: 032d93ef0990ed1dd7c1ea7bf2ba16653b3a862f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218856"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998999"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>RiProvare una ricerca contenuto per risolvere un errore del percorso del contenuto
 
-Quando si utilizza la ricerca contenuto nel centro conformità di Office 365 Security & per cercare un numero molto elevato di cassette postali (ad esempio, la ricerca di 100.000 cassette postali o più in una singola ricerca contenuto), è possibile che si verifichino errori di ricerca analoghi a quelli riportati di seguito:
+Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per cercare un numero molto elevato di cassette postali (ad esempio, la ricerca di 100.000 cassette postali o più in una singola ricerca contenuto), è possibile che si verifichino errori di ricerca analoghi a quelli riportati di seguito:
 
 ```
 Error

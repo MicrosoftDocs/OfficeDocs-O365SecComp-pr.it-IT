@@ -1,5 +1,5 @@
 ---
-title: Monitorare e segnalare le identità in Microsoft 365 Security
+title: Monitorare e creare report sulle identità in Sicurezza Microsoft 365
 description: Descrive in che modo è possibile monitorare le identità nell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, identità
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b2dfec483f4365c7eff132e2a2401734358ad7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791745"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998889"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Monitorare e segnalare le identità in Microsoft 365 Security
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Monitorare e creare report sulle identità in Sicurezza Microsoft 365
 
 È possibile monitorare le identità nell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi. Nella categoria **identità** di monitoraggio dei **report di &**, è possibile monitorare:
 

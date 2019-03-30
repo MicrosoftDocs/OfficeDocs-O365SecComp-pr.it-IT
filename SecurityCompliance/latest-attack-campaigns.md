@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7fd07e2e1dfe495addc41242790f1c0ed15d2e
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 2bd777b6e785d1631810469f699da0823f1c3320
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791743"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998679"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendere le campagne e le tecniche di attacco più recenti con Threat Analytics
-
-[!include[Prerelease�information](prerelease.md)]
 
 Le minacce cibernetiche stanno diventando sempre più frequenti e sofisticate. È fondamentale per le organizzazioni valutare rapidamente la propria posizione di sicurezza e la resilienza in base a minacce emergenti specifiche.
 

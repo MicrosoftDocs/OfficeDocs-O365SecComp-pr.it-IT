@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se un utente invia continuamente messaggi di posta elettronica provenienti da Office 365 classificati come posta indesiderata, non invierà più messaggi.
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692015"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998499"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
 
@@ -29,7 +29,7 @@ Se un utente invia continuamente messaggi di posta elettronica provenienti da Of
 
 - Non è stato possibile recapitare il messaggio perché non sono stati riconosciuti come mittenti validi. Il motivo più comune è che l'indirizzo di posta elettronica è sospettato di inviare posta indesiderata e non è più consentito l'invio di messaggi all'esterno dell'organizzazione. Contattare l'amministratore della posta elettronica per ricevere assistenza. Il server remoto ha restituito ' 550 5.1.8 Access Denied, Bad Outbound sender '
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 <a name="sectionSection0"> </a>
 
 Tempo stimato per il completamento: 5 minuti
@@ -40,7 +40,7 @@ La seguente procedura può essere eseguita anche tramite PowerShell remota. Util
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Rimuovere le restrizioni relative a un account di posta elettronica di Office 365 bloccato
 
-Questa attività viene completata nel centro sicurezza & Compliance (SCC) di Office 365. Per ulteriori informazioni su SCC, [passare al centro conformità di Office 365 Security &](go-to-the-securitycompliance-center.md) . Per poter eseguire queste funzioni, è necessario essere nel gruppo di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli SCC, [accedere a autorizzazioni nel centro conformità di Office 365 Security &](permissions-in-the-security-and-compliance-center.md) .
+Questa attività viene completata nel centro sicurezza & Compliance (SCC). Per ulteriori informazioni su SCC, [visitare il Centro sicurezza _AMP_ Compliance](go-to-the-securitycompliance-center.md) . Per poter eseguire queste funzioni, è necessario essere nel gruppo di ruoli **Gestione organizzazione** o **amministratore sicurezza** . [Andare a Permissions in the Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md) per ulteriori informazioni sui gruppi di ruoli SCC.
 
 1. Utilizzando un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale di Office 365, accedere al centro sicurezza e conformità di Office 365 e, nell'elenco a sinistra, espandere **gestione minacce**, scegliere **Revisione**e quindi fare clic su **limitato. Gli utenti**.
     
@@ -60,7 +60,7 @@ Questa attività viene completata nel centro sicurezza & Compliance (SCC) di Off
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Verificare che gli amministratori siano avvisati quando questo accade
 
-Gli amministratori del tenant riceveranno anche un avviso che indica che l'utente è stato impedito di inviare altri messaggi in uscita. Si tratta di un avviso predefinito fornito per tutti i tenant ed è elencato nella pagina Criteri di avviso di SCC, intitolata "utente con restrizioni dall'invio di messaggi di posta elettronica". Andare a [criteri di avviso nel centro conformità di Office 365 Security &](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) per ulteriori informazioni sull'avviso.
+Gli amministratori del tenant riceveranno anche un avviso che indica che l'utente è stato impedito di inviare altri messaggi in uscita. Si tratta di un avviso predefinito fornito per tutti i tenant ed è elencato nella pagina Criteri di avviso di SCC, intitolata "utente con restrizioni dall'invio di messaggi di posta elettronica". Andare a [criteri di avviso nel centro sicurezza _AMP_ Compliance](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) per ulteriori informazioni sull'avviso.
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
@@ -70,4 +70,4 @@ Gli amministratori del tenant riceveranno anche un avviso che indica che l'utent
 
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Autorizzazioni nel centro conformità & sicurezza di Office 365](permissions-in-the-security-and-compliance-center.md)
+[Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)

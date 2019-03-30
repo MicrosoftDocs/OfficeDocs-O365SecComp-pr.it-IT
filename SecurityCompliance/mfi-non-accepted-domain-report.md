@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono ottenere informazioni sul rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza e conformità di Office 365 &.
+description: Gli amministratori possono ottenere informazioni sul rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7fc54a4b1d31d724a95c5d8540b95034effbab4
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722925"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998989"
 ---
 # <a name="non-accepted-domain-report"></a>Rapporto di dominio non accettato
 
@@ -26,7 +26,7 @@ Analogamente all'Insight del **dominio del mittente** , l'Insight del **dominio 
 
 Se si dispone di dati per dimostrare che lo scopo di questi messaggi è dannoso, Office 365 potrebbe limitare tali messaggi. Pertanto, è importante capire cosa succede e risolvere il problema.
 
-![Il rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza e conformità di Office 365 &](media/non-accepted-domain-report-selected.png)
+![Il rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/non-accepted-domain-report-selected.png)
 
 Quando si fa clic sul widget, viene portato al rapporto completo. Nel report completo, in cui è possibile fare clic su **Visualizza dettagli** per visualizzare le informazioni in una tabella, come illustrato nel diagramma seguente:
 

@@ -1,5 +1,5 @@
 ---
-title: Disabilitare i report quando si esportano i risultati della ricerca contenuto &amp; nel centro sicurezza e conformità di Office 365
+title: Disabilitare i rapporti quando si esportano i risultati della Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Modificare il registro di sistema di Windows nel computer locale per disabilitare i report quando si esportano i risultati di una ricerca di &amp; contenuto dal centro regola di sicurezza di Office 365. La disAttivazione di questi rapporti consente di velocizzare il tempo di download e di risparmiare spazio su disco.
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: Modificare il registro di sistema di Windows nel computer locale per disabilitare i report quando si esportano i risultati di una ricerca di contenuto dal centro sicurezza & compliance in Office 365. La disAttivazione di questi rapporti consente di velocizzare il tempo di download e di risparmiare spazio su disco.
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936716"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998766"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Disabilitare i report quando si esportano i risultati della ricerca contenuto &amp; nel centro sicurezza e conformità di Office 365
+# <a name="disable-reports-when-you-export-content-search-results"></a>Disabilitare i rapporti quando si esportano i risultati della Ricerca contenuto
 
-Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per esportare i risultati di una ricerca contenuto &amp; nel centro sicurezza e conformità, lo strumento crea e Esporta automaticamente due rapporti che contengono informazioni aggiuntive sul contenuto esportato. Questi rapporti sono il file results. csv e il file manifest. XML (vedere la sezione [domande frequenti su disabilitazione dei rapporti di esportazione](#frequently-asked-questions-about-disabling-export-reports) in questo argomento per una descrizione dettagliata di questi report). Poiché questi file possono essere di dimensioni molto grandi, è possibile velocizzare il tempo di download e salvare lo spazio su disco impedendo l'esportazione di tali file. A tale scopo, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera includere i rapporti in un secondo momento, è possibile modificare l'impostazione del registro di sistema. 
+Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per esportare i risultati di una ricerca contenuto nel centro sicurezza & Compliance, lo strumento crea e Esporta automaticamente due rapporti che contengono informazioni aggiuntive sul contenuto esportato. Questi rapporti sono il file results. csv e il file manifest. XML (vedere la sezione [domande frequenti su disabilitazione dei rapporti di esportazione](#frequently-asked-questions-about-disabling-export-reports) in questo argomento per una descrizione dettagliata di questi report). Poiché questi file possono essere di dimensioni molto grandi, è possibile velocizzare il tempo di download e salvare lo spazio su disco impedendo l'esportazione di tali file. A tale scopo, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera includere i rapporti in un secondo momento, è possibile modificare l'impostazione del registro di sistema. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Creare le impostazioni del registro di sistema per disabilitare i report di esportazione
 

@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866352"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999139"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -66,7 +66,7 @@ L'impronta digitale del documento non rileva informazioni riservate nei casi seg
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utilizzo di PowerShell per creare un pacchetto di regole di classificazione basato sull'impronta digitale dei documenti
 
-Si noti che è possibile creare un'impronta digitale del documento solo tramite PowerShell nel centro &amp; sicurezza e conformità. Per la connessione, vedere [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Si noti che è possibile creare un'impronta digitale del documento solo tramite PowerShell nel centro &amp; sicurezza e conformità. Per la connessione, vedere [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP utilizza pacchetti di regole di classificazione per rilevare contenuti sensibili. Per creare un pacchetto di regole di classificazione in base a un'impronta digitale del documento, utilizzare i cmdlet **New-DlpFingerprint** e **New-DlpSensitiveInformationType** . Poiché i risultati di **New-DlpFingerprint** non sono archiviati all'esterno della regola di classificazione dei dati, vengono sempre eseguiti **New-DlpFingerprint** e **New-DlpSensitiveInformationType** o **set-DlpSensitiveInformationType** nello stesso Sessione di PowerShell. In questo esempio viene creata una nuova impronta digitale di documento in base al file C:\Documenti\Contoso Employee Template.docx. La nuova impronta digitale viene archiviata come variabile e potrà essere quindi utilizzata con il cmdlet **New-DlpSensitiveInformationType** nella stessa sessione di PowerShell. 
   

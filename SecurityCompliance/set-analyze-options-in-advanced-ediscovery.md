@@ -1,5 +1,5 @@
 ---
-title: Visualizzare le opzioni di Analizza in Office 365 Advanced eDiscovery
+title: Impostare le opzioni di analisi in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Esaminare i passaggi per configurare le opzioni per il processo di analisi in Office 365 Advanced eDiscovery, inclusi i quasi duplicati, i thread di posta elettronica e i temi.  '
-ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218226"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998529"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Visualizzare le opzioni di Analizza in Office 365 Advanced eDiscovery
+# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Impostare le opzioni di analisi in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -33,7 +33,7 @@ Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la fin
   
 ![Impostare opzioni di analisi](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
- **Quasi duplicati e thread di posta elettronica** Selezionare questa casella di controllo se si desidera eseguire l'analisi. È selezionata per impostazione predefinita. 
+ **Quasi duplicati e thread di posta elettronica** Selezionare questa casella di controllo se si desidera eseguire l'analisi. Questa opzione è selezionata per impostazione predefinita. 
   
  **Somiglianza del documento** Immettere il valore soglia quasi duplicati oppure accettare l'impostazione predefinita 65%. 
   
@@ -52,7 +52,7 @@ Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la fin
   
 1. Per visualizzare, aggiungere o modificare i temi suggeriti, fare clic su **modifica**.
     
-2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi**![icona](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
+2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![icona](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
     
 3. In **numero di temi**selezionare un valore per determinare il numero di temi avanzati che eDiscovery tenterà di generare per queste parole (l'impostazione predefinita è 1 tema).
     

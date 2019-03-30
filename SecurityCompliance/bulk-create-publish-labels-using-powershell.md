@@ -2,7 +2,7 @@
 title: Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 ms.author: stephow
 author: stephow-msft
-ms.date: 1/17/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In Office 365, è possibile utilizzare le etichette per implementare una pianificazione di conservazione per l'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
-ms.openlocfilehash: 982ce21a0cbd1c465f6e04db52e10022a4980c5b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: f787171e0b463b09f99698c37ac0bf5c516fad8f
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454898"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997282"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 

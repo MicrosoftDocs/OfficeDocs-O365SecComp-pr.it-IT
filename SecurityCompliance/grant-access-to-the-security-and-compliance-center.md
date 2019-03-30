@@ -3,7 +3,7 @@ title: Fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di 
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono disporre delle autorizzazioni per il Centro sicurezza &amp; e conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
-ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216306"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997236"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di Office 365
 
-Gli utenti devono disporre delle autorizzazioni per il Centro sicurezza &amp; e conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità. In qualità di amministratore globale di Office 365 o membro del gruppo di ruoli OrganizationManagement nel &amp; Centro sicurezza e conformità, è possibile concedere queste autorizzazioni agli utenti. Gli utenti saranno in grado di gestire solo le funzionalità di sicurezza o conformità a cui si accede. 
+Gli utenti devono disporre delle autorizzazioni per il Centro sicurezza &amp; e conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità. In qualità di amministratore globale di Office 365 o membro del gruppo di ruoli OrganizationManagement nel &amp; Centro sicurezza e conformità, è possibile concedere queste autorizzazioni agli utenti. Gli utenti potranno solo gestire le funzionalità di sicurezza o conformità per le quali è stato concesso loro l'accesso. 
   
 Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegnare agli utenti nel centro sicurezza &amp; e conformità, vedere [autorizzazioni nel centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
   
@@ -53,7 +53,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
     
 7. Fare clic su **Salva** per salvare le modifiche al gruppo di ruoli. 
     
-### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
+### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo?
 
 1. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**.
     
@@ -76,7 +76,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
   
 - _-Identity_ è il gruppo di ruoli al quale aggiungere un membro. 
     
-- _Member_ è la cassetta postale, il gruppo di protezione universale (USG) o il computer da aggiungere al gruppo di ruoli. È possibile specificare un solo membro alla volta. 
+- _Member_ è la cassetta postale, il gruppo di protezione universale (USG) o il computer da aggiungere al gruppo di ruoli. Puoi specificare solo un membro per volta. 
     
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
