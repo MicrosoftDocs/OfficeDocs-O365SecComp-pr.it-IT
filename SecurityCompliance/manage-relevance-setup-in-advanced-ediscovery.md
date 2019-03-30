@@ -3,7 +3,6 @@ title: Gestire la configurazione della rilevanza in Office 365 Advanced eDiscove
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Alcuni consigli per configurare il training della rilevanza in Office 365 Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.
-ms.openlocfilehash: e2ab772c900068c140e365c10b681da3983bea6b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215626"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001119"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestire la configurazione della rilevanza in Office 365 Advanced eDiscovery
 
