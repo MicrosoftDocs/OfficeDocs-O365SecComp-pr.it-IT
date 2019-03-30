@@ -91,7 +91,7 @@ Se l'organizzazione ha la necessità di proteggere i dati o di rispettare gli st
                         <h3>Protezione del soggiorno</h3>
                         <p><a href="security-roadmap.md">Guida di orientamento alla sicurezza di Office 365</a></p>
                         <p><a href="office-365-secure-score.md" target="_blank">Microsoft Secure Score</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Centro sicurezza e conformità di Office 365</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Centro sicurezza e conformità di &</a></p>
                     </div>
                 </div>
             </div>
