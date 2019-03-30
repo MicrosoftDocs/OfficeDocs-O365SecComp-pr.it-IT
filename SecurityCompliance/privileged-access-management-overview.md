@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: d8b16d7dd73f99c15ec241963a58273966074318
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a464bacaa568515e470e29a0c9c45a91a79cf8e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001249"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestione degli accessi con privilegi in Office 365
 
@@ -45,23 +45,23 @@ La gestione degli accessi con privilegi in Office 365 può essere definita e por
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Architettura e flusso di processo di gestione degli accessi con privilegi
 
-Ognuno dei seguenti flussi di processo descrive l'architettura dell'accesso di priveleged e il modo in cui interagisce con il substrato di Office 365, il controllo di Office 365 e l'Exchange Management Runspace.
+Ognuno dei seguenti flussi di processo descrive l'architettura dell'accesso con privilegi e la modalità di interazione con il substrato di Office 365, il controllo di Office 365 e l'Exchange Management Runspace.
 
 ### <a name="step-1-configuring-a-privileged-access-policy"></a>Passaggio 1: configurazione di un criterio di accesso privilegiato
 
-Quando si configura un criterio di accesso privilegiato utilizzando l'interfaccia di amministrazione di Office 365 o Exchange Management PowerShell, si crea e si definisce il criterio e la funzionalità di accesso privilegiato elabora gli attributi dei criteri nel supporto di Office 365 e registra il attività nel centro sicurezza e conformità di Office 365. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
+Quando si configura un criterio di accesso privilegiato utilizzando l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, si crea e si definisce il criterio e la funzionalità di accesso privilegiato elabora gli attributi dei criteri nel supporto di Office 365 e registra l'attività nel centro sicurezza e conformità di Office 365. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
 
 ![Passaggio 1: creazione di criteri](media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Passaggio 2: richiesta di accesso
 
-Utilizzando l'interfaccia di amministrazione di Office 365 o Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività elevate o privilegiate. La funzionalità accesso privilegiato Invia la richiesta al substrato Office 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati e registra Sctivity nei registri del Centro sicurezza e conformità di Office 365.
+Utilizzando l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività elevate o privilegiate. La funzionalità accesso privilegiato Invia la richiesta al substrato Office 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati e registra l'attività nei registri del Centro sicurezza e conformità di Office 365.
 
 ![Passaggio 2-richiesta di accesso](media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Passaggio 3: accesso all'approvazione
 
-Viene generata una richiesta di approvazione e il gruppo di approvazione riceve una notifica tramite posta elettronica della richiesta in sospeso. Se viene concessa l'approvazione, la richiesta di accesso privilegiato viene elaborata come approvazione e l'attività è pronta per essere completata. Se la richiesta viene negata, l'attività viene bloccata e non viene concesso alcun accesso all'reqeustor. Il richiedente riceverà una notifica dell'approvazione o della negazione della richiesta tramite il messaggio di posta elettronica.
+Viene generata una richiesta di approvazione e il gruppo di approvazione riceve una notifica tramite posta elettronica della richiesta in sospeso. Se viene concessa l'approvazione, la richiesta di accesso privilegiato viene elaborata come approvazione e l'attività è pronta per essere completata. Se la richiesta viene negata, l'attività viene bloccata e non viene concesso alcun accesso al richiedente. Il richiedente riceverà una notifica dell'approvazione o della negazione della richiesta tramite il messaggio di posta elettronica.
 
 ![Passaggio 3-approvazione dell'accesso](media/pam-step3-access-approval.jpg)
 
@@ -84,7 +84,7 @@ Si prevede di offrire questa funzionalità in altri carichi di lavoro di Office 
 Si prevede di aumentare al più presto il limite corrente di 30 criteri di accesso privilegiato per l'organizzazione di Office 365.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>È necessario essere un amministratore globale per gestire l'accesso con privilegi in Office 365?
-No, è necessario che il ruolo di gestione dei ruoli di Exchange sia assegnato agli account che gestiscono l'accesso con privilegi in Office 365. Tuttavia, il ruolo di amministratore globale include questo ruolo per impostazione predefinita e può essere utilizzato per gestire l'accesso con privilegi se non si desidera configurare il ruolo di gestione dei ruoli come autorizzazione Account autonomo. Gli utenti inclusi in un gruppo dei responsabili approvazione non devono essere un amministratore globale o avere il ruolo di gestione dei ruoli assegnato per esaminare e approvare le richieste. 
+No, è necessario che il ruolo di gestione dei ruoli di Exchange sia assegnato agli account che gestiscono l'accesso con privilegi in Office 365. Tuttavia, il ruolo di amministratore globale include questo ruolo per impostazione predefinita e può essere utilizzato per gestire l'accesso con privilegi se non si desidera configurare il ruolo di gestione dei ruoli come autorizzazione Account autonomo. Gli utenti inclusi in un gruppo dei responsabili approvazione non devono essere un amministratore globale o avere il ruolo di gestione dei ruoli assegnato per esaminare e approvare le richieste.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>In che modo la gestione degli accessi con privilegi in Office 365 è relativa all'archivio protetto dei clienti?
 L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) consente a un livello di controllo di accesso per le organizzazioni di accedere ai dati dal proprio provider di servizi, ad esempio Microsoft. La gestione degli accessi con privilegi in Office 365 consente il controllo di accesso granulare all'interno di un'organizzazione per tutte le attività di Office 365.

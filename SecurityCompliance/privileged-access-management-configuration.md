@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla configurazione della gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492825"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001149"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configurazione della gestione degli accessi con privilegi in Office 365
 
@@ -58,13 +58,13 @@ Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 ## <a name="step-1---create-an-approvers-group"></a>Passaggio 1: creare un gruppo del responsabile approvazione
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione, andare a **gruppi** > **aggiungere un gruppo**.
 
 3. Selezionare il tipo di gruppo gruppo di **sicurezza abilitato alla posta elettronica** e quindi completare il **nome**, l' **indirizzo di posta elettronica del gruppo**e i campi **Descrizione** per il nuovo gruppo.
 
-4. Salvare il gruppo. Il gruppo può richiedere alcuni minuti completamente configurati e visualizzarlo nell'interfaccia di amministrazione di Office 365.
+4. Salvare il gruppo. Il gruppo può richiedere alcuni minuti completamente configurati e comparire nell'interfaccia di amministrazione di Microsoft 365.
 
 5. Selezionare il gruppo del nuovo responsabile approvazione e selezionare **modifica** per aggiungere gli utenti al gruppo.
 
@@ -76,7 +76,7 @@ Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni > sicurezza & privacy** > **accesso privilegiato**.
 
@@ -108,7 +108,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
@@ -152,7 +152,7 @@ Le richieste di accesso con privilegi sono valide per un massimo di 24 ore dopo 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le proprie credenziali.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le proprie credenziali.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
@@ -187,7 +187,7 @@ Dopo la creazione di una richiesta di approvazione, lo stato della richiesta di 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le proprie credenziali.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le proprie credenziali.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
@@ -211,7 +211,7 @@ Quando viene creata una richiesta di approvazione, i membri del gruppo responsab
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le proprie credenziali.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le proprie credenziali.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
@@ -248,7 +248,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
@@ -274,7 +274,7 @@ Se necessario, è possibile disabilitare la gestione degli accessi con privilegi
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 

@@ -1,9 +1,8 @@
 ---
-title: Decidere in base ai risultati in Office 365 Advanced eDiscovery
+title: Decisione basata sui risultati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Informazioni su come la scheda decidere in Office 365 Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di riesame dei file di caso. '
-ms.openlocfilehash: c4767e703d03ef5dbdb808332e873d22094d7bca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216106"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999909"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decidere in base ai risultati in Office 365 Advanced eDiscovery
+# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisione basata sui risultati in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

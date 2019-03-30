@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936726"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999299"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicazione nei risultati della ricerca di eDiscovery
 
@@ -66,7 +66,7 @@ Si noti che i messaggi univoci possono essere contrassegnati anche come duplicat
 
 - Le informazioni contenute in questo articolo sono applicabili quando si esportano i risultati della ricerca utilizzando uno dei seguenti strumenti di eDiscovery:
     
-  - Ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365
+  - Ricerca contenuto nel centro conformità in Office 365
     
   - eDiscovery sul posto in Exchange Online
     
@@ -74,9 +74,9 @@ Si noti che i messaggi univoci possono essere contrassegnati anche come duplicat
     
 - Per ulteriori informazioni sull'esportazione dei risultati della ricerca, vedere:
     
-  - [Esportare i risultati di ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md)
+  - [Esporta ricerca contenuto](export-search-results.md)
     
-  - [Esportare un report di ricerca contenuto dal centro sicurezza &amp; e conformità di Office 365](export-a-content-search-report.md)
+  - [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
     
   - [Esportare i risultati della ricerca eDiscovery sul posto in un file PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

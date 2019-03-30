@@ -1,5 +1,5 @@
 ---
-title: Modificare in blocco le ricerche di contenuto nel centro &amp; sicurezza e conformità di Office 365
+title: Modifica in blocco delle ricerche di contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
-description: Utilizzare l'editor ricerca in blocco nel centro sicurezza &amp; e conformità di Office 365 per modificare rapidamente i percorsi di query e di contenuto per una o più ricerche di contenuto.
-ms.openlocfilehash: ff96beacdde3192db65c5eb31d14649c6bed4afc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Utilizzare l'editor ricerche in blocco nel centro sicurezza e conformità di Office 365 o Microsoft 365 per modificare rapidamente i percorsi di query e di contenuto per una o più ricerche di contenuto.
+ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214886"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001099"
 ---
-# <a name="bulk-edit-content-searches-in-the-office-365-security-amp-compliance-center"></a>Modificare in blocco le ricerche di contenuto nel centro &amp; sicurezza e conformità di Office 365
+# <a name="bulk-edit-content-searches"></a>Modifica in blocco delle ricerche di contenuto
 
-È possibile utilizzare l'editor ricerca in blocco nel centro sicurezza &amp; e conformità di Office 365 per modificare contemporaneamente più ricerche di contenuto. L'utilizzo di questo strumento consente di modificare rapidamente la query e i percorsi di contenuto per una o più ricerche. È quindi possibile rieseguire le ricerche e ottenere nuovi risultati della ricerca stimati per le ricerche rivedute. L'editor consente inoltre di copiare e incollare query e percorsi di contenuto da un file di testo o da un file di Microsoft Excel. Questo significa che è possibile utilizzare lo strumento Statistiche di ricerca per visualizzare le statistiche di una o più ricerche, esportare le statistiche in un file CSV in cui è possibile modificare le query e i percorsi di contenuto in Excel. Successivamente, utilizzare l'editor ricerche in blocco per aggiungere le query e i percorsi di contenuto rivisti alle ricerche. Dopo aver rivisto una o più ricerche, è possibile riavviarle e ottenere nuovi risultati della ricerca stimati.
+È possibile utilizzare l'editor ricerca in blocco nello strumento ricerca contenuto per modificare più ricerche contemporaneamente. L'utilizzo di questo strumento consente di modificare rapidamente la query e i percorsi di contenuto per una o più ricerche. È quindi possibile rieseguire le ricerche e ottenere nuovi risultati della ricerca stimati per le ricerche rivedute. L'editor consente inoltre di copiare e incollare query e percorsi di contenuto da un file di testo o da un file di Microsoft Excel. Questo significa che è possibile utilizzare lo strumento Statistiche di ricerca per visualizzare le statistiche di una o più ricerche, esportare le statistiche in un file CSV in cui è possibile modificare le query e i percorsi di contenuto in Excel. Successivamente, utilizzare l'editor ricerche in blocco per aggiungere le query e i percorsi di contenuto rivisti alle ricerche. Dopo aver rivisto una o più ricerche, è possibile riavviarle e ottenere nuovi risultati della ricerca stimati.
   
 Per ulteriori informazioni sull'utilizzo dello strumento Statistiche di ricerca, vedere [View keyword Statistics for content search results](view-keyword-statistics-for-content-search.md).
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Utilizzare l'editor ricerche in blocco per modificare le query
 
-1. Nel centro sicurezza &amp; e conformità, andare alla \> **Ricerca contenuto**ricerca ** &amp; analisi** .
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com), quindi fare clic su ricerca **contenuto** **ricerca** \> .
     
 2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi fare clic sul **** ![pulsante](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor ricerca bulk editor ricerche in blocco.
     
@@ -36,9 +36,9 @@ Per ulteriori informazioni sull'utilizzo dello strumento Statistiche di ricerca,
     
     ![Nella pagina Editor ricerche in blocco vengono visualizzate le query per le ricerche selezionate](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
-    a. nella colonna **ricerca** viene visualizzato il nome della ricerca di contenuto. Come indicato in precedenza, è possibile modificare la query per più ricerche. 
+    un. Nella colonna **ricerca** viene visualizzato il nome della ricerca di contenuto. Come indicato in precedenza, è possibile modificare la query per più ricerche. 
     
-    b. la colonna **query** Visualizza la query per la ricerca di contenuto elencata nella colonna **ricerca** . Se la query è stata creata utilizzando la caratteristica elenco di parole chiave, la parola chiave viene separata dal `(c:s)`testo * * **. Ciò indica che le parole chiave sono connesse tramite l'operatore **or** . Inoltre, se la query include condizioni, le parole chiave e le condizioni sono separate dal testo * * `(c:c)` **. Ciò indica che le parole chiave (o fasi parola chiave) sono connesse alle condizioni dall'operatore **and** . Ad esempio, nella schermata precedente per la ricerca ContosoSearch1, la query KQL equivalente a `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` sarebbe. `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`
+    b. La colonna **query** Visualizza la query per la ricerca di contenuto elencata nella colonna **ricerca** . Se la query è stata creata utilizzando la caratteristica elenco di parole chiave, la parola chiave viene separata dal `(c:s)`testo * * **. Ciò indica che le parole chiave sono connesse tramite l'operatore **or** . Inoltre, se la query include condizioni, le parole chiave e le condizioni sono separate dal testo * * `(c:c)` **. Ciò indica che le parole chiave (o fasi parola chiave) sono connesse alle condizioni dall'operatore **and** . Ad esempio, nella schermata precedente per la ricerca ContosoSearch1, la query KQL equivalente a `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` sarebbe. `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`
     
 3. Per modificare una query, fare clic nella cella della query che si desidera modificare e quindi eseguire una delle operazioni seguenti. Si noti che la cella è delimitata da una casella blu quando si fa clic su di essa.
     
@@ -71,11 +71,11 @@ Di seguito sono riportate alcune indicazioni per la modifica delle query tramite
     
     ![Fare clic su Abilita editor percorso di massa e quindi su percorsi per aggiungere o rimuovere percorsi di contenuto](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
-    a. **Mailboxes to search**in questa sezione viene visualizzata una colonna per ogni ricerca di contenuto selezionata e una riga per ogni cassetta postale inclusa nella ricerca. Un segno di spunta indica che la cassetta postale è inclusa nella ricerca. È possibile aggiungere altre cassette postali a una ricerca digitando l'indirizzo di posta elettronica della cassetta postale in una riga vuota e quindi facendo clic sulla casella di controllo relativa alla ricerca di contenuto a cui si desidera aggiungerla. In alternativa, è possibile rimuovere una cassetta postale da una ricerca deselezionando la casella di controllo.
+    un. **Cassette postali da cercare** In questa sezione viene visualizzata una colonna per ogni ricerca di contenuto selezionata e una riga per ogni cassetta postale inclusa nella ricerca. Un segno di spunta indica che la cassetta postale è inclusa nella ricerca. È possibile aggiungere altre cassette postali a una ricerca digitando l'indirizzo di posta elettronica della cassetta postale in una riga vuota e quindi facendo clic sulla casella di controllo relativa alla ricerca di contenuto a cui si desidera aggiungerla. In alternativa, è possibile rimuovere una cassetta postale da una ricerca deselezionando la casella di controllo.
     
-    b. **siti di SharePoint per la ricerca**in questa sezione viene visualizzata una riga per ogni sito di SharePoint e OneDrive incluso in ogni ricerca di contenuto selezionata. Un segno di spunta indica che il sito è incluso nella ricerca. È possibile aggiungere altri siti a una ricerca digitando l'URL del sito in una riga vuota e quindi facendo clic sulla casella di controllo relativa alla ricerca di contenuto a cui si desidera aggiungerla. In alternativa, è possibile rimuovere un sito da una ricerca deselezionando la casella di controllo.
+    b. **Siti di SharePoint da cercare** In questa sezione viene visualizzata una riga per ogni sito di SharePoint e OneDrive incluso in ogni ricerca di contenuto selezionata. Un segno di spunta indica che il sito è incluso nella ricerca. È possibile aggiungere altri siti a una ricerca digitando l'URL del sito in una riga vuota e quindi facendo clic sulla casella di controllo relativa alla ricerca di contenuto a cui si desidera aggiungerla. In alternativa, è possibile rimuovere un sito da una ricerca deselezionando la casella di controllo.
     
-    c. **altre opzioni di ricerca**in questa sezione viene indicato se gli elementi non indicizzati e le cartelle pubbliche sono inclusi nella ricerca. Per includere questi, verificare che sia selezionata la casella di controllo. Per rimuoverli, deseleziona la casella di controllo.
+    c. **Altre opzioni di ricerca** In questa sezione viene indicato se nella ricerca vengono inclusi gli elementi non indicizzati e le cartelle pubbliche. Per includere questi, verificare che sia selezionata la casella di controllo. Per rimuoverli, deseleziona la casella di controllo.
     
 2. Dopo aver modificato una o più sezioni della pagina **posizioni** , fare clic su **Salva**.
     

@@ -3,8 +3,8 @@ title: Panoramica relativa ai criteri di prevenzione della perdita di dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862538"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000019"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -28,7 +28,7 @@ Per ottenere la conformità agli standard aziendali e alle normative di settore,
   
 Utilizzando un criterio DLP, è possibile:
   
-- **Identificare informazioni riservate in numerosi percorsi, ad esempio Exchange Online, SharePoint Online e OneDrive for business.**
+- **Identificare informazioni riservate in numerosi percorsi, ad esempio Exchange Online, SharePoint Online, OneDrive for business e Microsoft teams.**
     
     Ad esempio, è possibile identificare qualsiasi documento contenente un numero di carta di credito memorizzato in qualsiasi sito di OneDrive for business oppure è possibile monitorare solo i siti di OneDrive di persone specifiche.
     
@@ -36,13 +36,13 @@ Utilizzando un criterio DLP, è possibile:
     
     Ad esempio, è possibile identificare qualsiasi documento o messaggio di posta elettronica contenente un record di integrità condiviso con persone esterne all'organizzazione e quindi bloccare automaticamente l'accesso a tale documento o bloccare l'invio della posta elettronica.
     
-- **Monitorare e proteggere le informazioni riservate nelle versioni desktop di Excel 2016, PowerPoint 2016 e Word 2016.**
+- **Monitorare e proteggere le informazioni riservate nelle versioni desktop di Excel, PowerPoint e Word.**
     
-    Proprio come in Exchange Online, SharePoint Online e OneDrive for business, questi programmi desktop di Office 2016 includono le stesse funzionalità per identificare le informazioni riservate e applicare i criteri DLP. La prevenzione della perdita dei dati (DLP) fornisce un monitoraggio continuo quando gli utenti condividono contenuti in questi programmi Office 2016.
+    Proprio come in Exchange Online, SharePoint Online e OneDrive for business, questi programmi desktop di Office includono le stesse funzionalità per identificare le informazioni riservate e applicare i criteri DLP. DLP fornisce un monitoraggio continuo quando le persone condividono contenuto in queste applicazioni di Office.
     
 - **Fornire agli utenti informazioni su come garantire la conformità senza interrompere il flusso di lavoro.**
     
-    È possibile fornire agli utenti informazioni sui criteri DLP e aiutarli a garantire la conformità senza interrompere il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio DLP invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook 2013 e versioni successive, Excel 2016, PowerPoint 2016 e Word 2016.
+    È possibile fornire agli utenti informazioni sui criteri DLP e aiutarli a garantire la conformità senza interrompere il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio DLP invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook, Excel, PowerPoint e Word.
     
 - **Visualizzare i report DLP che mostrano il contenuto che corrisponde ai criteri DLP dell'organizzazione.**
     
@@ -56,7 +56,7 @@ Utilizzando un criterio DLP, è possibile:
 
 In un criterio DLP sono disponibili alcuni elementi di base:
   
-- Dove proteggere i siti di contenuto **** , ad esempio Exchange Online, SharePoint Online e OneDrive for business. 
+- Dove proteggere il contenuto, ad **** esempio i siti di Exchange Online, SharePoint Online e OneDrive for business, nonché le chat e i canali di Microsoft teams. 
     
 - Quando e in che modo proteggere il contenuto, applicando **regole** composte da: 
     
@@ -72,7 +72,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ### <a name="locations"></a>Percorsi
 
-Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online o OneDrive for business. È possibile scegliere di proteggere facilmente tutti i siti di SharePoint o gli account di OneDrive, solo siti o account specifici o tutte le cassette postali. Si noti che non è ancora possibile selezionare solo le cassette postali di utenti specifici.
+Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online, OneDrive for business o Microsoft teams. È possibile scegliere di proteggere il contenuto in messaggi di posta elettronica di Exchange, chat e canali di Microsoft teams e tutte le raccolte di SharePoint o OneDrive oppure selezionare percorsi specifici per un criterio.
   
 ![Opzioni per la posizione in cui è possibile applicare un criterio DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ Il messaggio di posta elettronica può informare la persona che ha inviato, cond
   
 Oltre a inviare una notifica tramite posta elettronica, una notifica utente visualizza un suggerimento per i criteri:
   
-- In Outlook 2013 e versioni successive e Outlook sul Web.
+- In Outlook e Outlook sul Web.
     
 - Per il documento in un sito di SharePoint Online o di OneDrive for business.
     
-- In Excel 2016, PowerPoint 2016 e Word 2016, quando il documento viene archiviato in un sito incluso in un criterio DLP.
+- In Excel, PowerPoint e Word, quando il documento viene archiviato in un sito incluso in un criterio DLP.
     
 La notifica di posta elettronica e il suggerimento per i criteri spiegano perché i conflitti di contenuto con un criterio DLP. Se desiderato, la notifica di posta elettronica e il suggerimento per i criteri possono consentire agli utenti di ignorare una regola segnalando un falso positivo o fornendo una motivazione aziendale. In questo modo, è possibile illustrare agli utenti le caratteristiche dei criteri DLP e la loro modalità di applicazione senza impedire alle persone di eseguire le proprie attività. Le informazioni sulle sostituzioni e sui falsi positivi sono abilitate anche per la creazione di report (vedere le informazioni sui report DLP riportate in basso) e incluse nei rapporti sulle operazioni non consentite (sezione seguente), in modo che il responsabile della conformità possa consultarle regolarmente.
   
@@ -428,13 +428,15 @@ DLP permette di rilevare le informazioni riservate tramite un'analisi approfondi
 
 Dopo aver creato un criterio DLP nel centro sicurezza &amp; e conformità, quest'ultimo viene archiviato in un archivio dei criteri centrale e quindi sincronizzato con le diverse origini di contenuto, tra cui:
   
-- Exchange Online e da qui a Outlook sul Web e Outlook 2013 e versioni successive
+- Exchange Online e da qui a Outlook sul Web e Outlook
     
 - Siti OneDrive for Business
     
 - Siti SharePoint Online
     
-- Programmi desktop di Office 2016 (Excel 2016, PowerPoint 2016 e Word 2016)
+- Programmi desktop di Office (Excel, PowerPoint e Word)
+
+- Canali e chat di Microsoft Teams
     
 Dopo che i criteri sono stati sincronizzati con i percorsi giusti, viene avviata la valutazione del contenuto e l'applicazione delle azioni.
   
@@ -444,26 +446,36 @@ In tutti i siti di SharePoint Online e OneDrive for business, i documenti cambia
   
 Per questo motivo, i criteri DLP consentono di verificare la corrispondenza dei documenti ai criteri in background frequentemente. Tale operazione può essere considerata come una valutazione asincrona del criterio.
   
-Ecco come funziona. Quando gli utenti aggiungono o cambiano documenti nei propri siti, il motore di ricerca analizza il contenuto in modo che sia possibile cercarlo in un secondo momento. Anche se questo accade, il contenuto viene analizzato per informazioni riservate e per verificare se è condiviso. Tutte le informazioni riservate trovate vengono archiviate in modo sicuro nell'indice di ricerca, affinché solo il team di conformità possa accedervi, ma non gli utenti tipici. Ogni criterio DLP attivato viene eseguito in background (in modo asincrono), controllando la ricerca di frequente per qualsiasi contenuto che corrisponda a un criterio e applicando le azioni per proteggerlo dalle perdite accidentali.
+#### <a name="how-it-works"></a>Funzionamento
+ 
+Quando gli utenti aggiungono o cambiano documenti nei propri siti, il motore di ricerca analizza il contenuto in modo che sia possibile cercarlo in un secondo momento. Anche se questo accade, il contenuto viene analizzato per informazioni riservate e per verificare se è condiviso. Tutte le informazioni riservate trovate vengono archiviate in modo sicuro nell'indice di ricerca, affinché solo il team di conformità possa accedervi, ma non gli utenti tipici. Ogni criterio DLP attivato viene eseguito in background (in modo asincrono), controllando la ricerca di frequente per qualsiasi contenuto che corrisponda a un criterio e applicando le azioni per proteggerlo dalle perdite accidentali.
   
 ![Diagramma che mostra il modo in cui i criteri DLP valutano il contenuto in modo asincrono](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Infine, i documenti possono essere in conflitto con un criterio DLP ma possono anche diventare conformi a tale criterio. Ad esempio, se una persona aggiunge numeri di carta di credito a un documento, è possibile che un criterio DLP blocchi l'accesso a tale documento automaticamente. Tuttavia, se in un secondo momento l'utente elimina le informazioni riservate, l'azione (in questo caso, di blocco) viene automaticamente annullata durante la successiva valutazione del documento rispetto al criterio.
   
-La prevenzione della perdita dei dati (DLP) consente di valutare qualsiasi contenuto che è possibile indicizzare. Per ulteriori informazioni sui tipi di file sottoposti a ricerca per indicizzazione per impostazione predefinita, vedere default indicizzazione del [nome di file e tipi di file analizzati in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+La prevenzione della perdita dei dati (DLP) consente di valutare qualsiasi contenuto che è possibile indicizzare. Per ulteriori informazioni sui tipi di file sottoposti a ricerca per indicizzazione per impostazione predefinita, vedere default indicizzazione del [nome di file e tipi di file analizzati in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Valutazione dei criteri in Exchange Online, Outlook 2013 e versioni successive e Outlook sul Web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Valutazione dei criteri in Exchange Online, Outlook e Outlook sul Web
 
-Quando si crea un criterio DLP che include Exchange Online come percorso, il criterio è sincronizzato dal centro sicurezza &amp; e conformità di Office 365 a Exchange Online e quindi da Exchange Online a Outlook sul Web e Outlook 2013 e versioni successive.
+Quando si crea un criterio DLP che include Exchange Online come percorso, il criterio è sincronizzato dal centro sicurezza &amp; e conformità di Office 365 a Exchange Online e quindi da Exchange Online a Outlook sul Web e Outlook.
   
-Quando un messaggio viene composto in Outlook, l'utente può visualizzare i suggerimenti per i criteri quando il contenuto da creare viene valutato in base ai criteri DLP. Dopo aver inviato un messaggio, viene valutato in base ai criteri DLP come parte normale del flusso di posta, oltre alle regole del flusso di posta di Exchange (note anche come regole di trasporto) e ai criteri DLP creati nell'interfaccia di amministrazione di Exchange (vedere la sezione successiva per altre informazioni). I criteri DLP analizzano sia il messaggio che gli allegati.
+Quando un messaggio viene composto in Outlook, l'utente può visualizzare i suggerimenti per i criteri quando il contenuto da creare viene valutato in base ai criteri DLP. Dopo aver inviato un messaggio, viene valutato in base ai criteri DLP come parte normale del flusso di posta, insieme alle regole del flusso di posta di Exchange (note anche come regole di trasporto) e ai criteri DLP creati nell'interfaccia di amministrazione di Exchange. I criteri DLP analizzano sia il messaggio che gli allegati.
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Valutazione dei criteri nei programmi desktop di Office 2016
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Valutazione dei criteri nei programmi desktop di Office
 
-Excel 2016, PowerPoint 2016 e Word 2016 dispongono della stessa funzionalità di SharePoint Online e OneDrive for Business che consente di identificare le informazioni riservate e applicare i criteri DLP. Questi programmi di Office 2016 sincronizzano i criteri DLP direttamente dall'archivio dei criteri centrali e quindi valutano continuamente il contenuto in base ai criteri DLP quando le persone lavorano con documenti aperti da un sito incluso in un criterio DLP.
+Excel, PowerPoint e Word includono la stessa funzionalità per identificare le informazioni riservate e applicare i criteri DLP come SharePoint Online e OneDrive for business. Queste applicazioni di Office sincronizzano i criteri DLP direttamente dall'archivio dei criteri centrali e quindi valutano continuamente il contenuto in base ai criteri DLP quando le persone lavorano con documenti aperti da un sito incluso in un criterio DLP.
   
-La valutazione dei criteri DLP in Office 2016 è progettata per non influire sulle prestazioni dei programmi o sulla produttività degli utenti. Se si lavora su un documento di grandi dimensioni o se il computer dell'utente è occupato, potrebbero essere necessari alcuni secondi affinché venga visualizzato un suggerimento per i criteri.
-  
+La valutazione del criterio DLP in Office è progettata per non influire sulle prestazioni dei programmi o sulla produttività degli utenti che lavorano al contenuto. Se si lavora su un documento di grandi dimensioni o se il computer dell'utente è occupato, potrebbero essere necessari alcuni secondi affinché venga visualizzato un suggerimento per i criteri.
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Valutazione del criterio in Microsoft Teams
+ 
+Quando si crea un criterio DLP che include Microsoft teams come percorso, i criteri vengono sincronizzati dal centro sicurezza &amp; e conformità di Office 365 agli account utente e ai canali e alle chat di Microsoft teams. A seconda del modo in cui vengono configurati i criteri DLP, quando un utente tenta di condividere informazioni riservate in una chat o un canale di Microsoft teams, il messaggio può essere bloccato o revocato. Inoltre, i documenti che contengono informazioni riservate e che sono condivisi con gli ospiti (utenti esterni) non verranno aperti per tali utenti.
+
+Si supponga, ad esempio, che un utente tenti di condividere le informazioni riservate in una chat o un canale di team con utenti esterni. Si supponga che sia stato definito un criterio DLP per evitare questo problema. Con la protezione sul posto, vengono eliminati i messaggi che contengono informazioni riservate agli utenti esterni. Questo accade in pochi secondi e avviene automaticamente, in base al modo in cui viene configurato il criterio DLP.
+
+Suggerimenti per i criteri notifica ai mittenti il motivo per cui i messaggi sono stati bloccati o revocati. Ad esempio, a un mittente potrebbe essere detto che il messaggio contiene informazioni personali che non sono consentite per la condivisione con nessuno o che un documento contenente PII non può essere condiviso con persone esterne all'organizzazione. Il mittente può quindi modificare il messaggio in modo che sia conforme ai criteri DLP.
+ 
 ## <a name="permissions"></a>Autorizzazioni
 
 I membri del team di conformità che creeranno criteri DLP devono disporre delle autorizzazioni &amp; per il Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questo percorso e potrà fornire ai responsabili della conformità e agli altri utenti &amp; l'accesso al centro sicurezza e conformità, senza fornire loro tutte le autorizzazioni di un amministratore tenant. A tale scopo, è consigliabile eseguire le operazioni seguenti:
@@ -482,19 +494,19 @@ Queste autorizzazioni sono necessarie solo per la creazione e l'applicazione di 
 
 Per utilizzare la maggior parte dei cmdlet per il centro &amp; sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Utilizzare uno di questi [cmdlet del centro &amp; sicurezza e conformità di Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Utilizzare uno di questi [cmdlet di policy-and-Compliance-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incluso Exchange Online. Per questo motivo, i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell per &amp; il Centro sicurezza e conformità. Pertanto, per utilizzare i cmdlet per i report DLP, è necessario eseguire le operazioni seguenti:
+Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incluso Exchange Online. Per questo motivo, **i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell per &amp; il Centro sicurezza e conformità**. Pertanto, per utilizzare i cmdlet per i report DLP, è necessario eseguire le operazioni seguenti:
   
-1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Utilizzare uno di questi cmdlet per i report DLP:
     
-  - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Ulteriori informazioni
 

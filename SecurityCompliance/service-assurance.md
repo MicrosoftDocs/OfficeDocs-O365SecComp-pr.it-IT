@@ -1,5 +1,5 @@
 ---
-title: Garanzia del servizio nel centro sicurezza &amp; e conformità di Office 365
+title: Garanzia del servizio nel centro sicurezza & Compliance
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: 6596eadac1702f286d57b516e11334a06553af51
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213936"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999449"
 ---
-# <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>Garanzia del servizio nel centro sicurezza &amp; e conformità di Office 365
+# <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & Compliance
 
-Utilizzare Service Assurance nel centro sicurezza &amp; e conformità di Office 365 per accedere ai documenti che descrivono una serie di argomenti, tra cui: 
+Utilizzare la garanzia del servizio nel centro sicurezza & Compliance per accedere ai documenti che descrivono una serie di argomenti, tra cui: 
   
 - Procedure di sicurezza Microsoft per i dati dei clienti archiviati in Office 365. 
     
@@ -47,20 +47,20 @@ Utilizzare Service Assurance nel centro sicurezza &amp; e conformità di Office 
  Per impostazione predefinita, i **membri della sottoscrizione di O365** possono accedere alla sezione Service Assurance nel centro protezione di Office365 se l'accesso basato sui ruoli di Assurance del servizio non è stato implementato nell'abbonamento. Service Assurance fornisce report e documenti che descrivono le procedure di sicurezza di Microsoft per i dati dei clienti archiviati in Office 365. Vengono inoltre forniti report di controllo di terze parti indipendenti su Office 365. 
   
 > [!NOTE]
-> Nota: se l'azienda ha implementato l'accesso basato sui ruoli di Assurance di servizio nell'abbonamento a Office 365 (che potrebbe essere se l'organizzazione ha fornito accesso ai report personalizzati) ed è necessario l'accesso alla garanzia del servizio, ma non è incluso nella parte sinistra riquadro del Centro sicurezza &amp; e conformità, chiedere all'amministratore di Office 365 di aggiungersi al gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . Per ulteriori informazioni, vedere onboard other Service Assurance Users or groups. 
+> Nota: se l'azienda ha implementato l'accesso basato sui ruoli di Assurance di servizio nell'abbonamento a Office 365 (che potrebbe essere se l'organizzazione ha fornito accesso ai report personalizzati) ed è necessario l'accesso alla garanzia del servizio, ma non è incluso nella parte sinistra riquadro del centro conformità di sicurezza &, chiedere all'amministratore di Office 365 di aggiungere il gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . Per ulteriori informazioni, vedere onboard other Service Assurance Users or groups. 
   
  **Gli utenti con provisioning di accesso basato sui ruoli di Service Assurance** Se l'azienda ha implementato l'accesso basato sui ruoli di Assurance del servizio, è possibile garantire l'accesso a tutti gli addetti alla sicurezza e alla conformità, inclusi sicurezza delle informazioni, gestione dei rischi, conformità e team di controllo e personale all'interno dell' organizzazione. Per informazioni dettagliate, vedere [onboard other Service Assurance Users or groups](service-assurance.md#addother).
   
-È possibile accedere a Service Assurance tramite il &amp; Centro sicurezza e conformità. Ecco come arrivarci.
+È possibile accedere a Service Assurance tramite il Centro sicurezza & Compliance. Ecco come arrivarci.
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. 
     
 3. Nel riquadro sinistro, selezionare **Service Assurance**. Successivamente, [scegliere il settore e le impostazioni internazionali](service-assurance.md#Chooseyourindustryregional) e [gli altri utenti o gruppi di Assurance di servizio](service-assurance.md#addother).
     
     > [!NOTE]
-    > Se è necessario accedere all'assicurazione del servizio e non è inclusa nel riquadro sinistro del Centro sicurezza &amp; e conformità, chiedere all'amministratore di Office 365 di aggiungersi al gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . 
+    > Se è necessario accedere a Service Assurance e non è incluso nel riquadro sinistro del Centro sicurezza & Compliance, chiedere all'amministratore di Office 365 di aggiungersi al gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . 
   
 ## <a name="choose-your-industry-and-regional-settings"></a>Scegliere il settore e le impostazioni internazionali
 <a name="Chooseyourindustryregional"> </a>
@@ -102,8 +102,8 @@ Selezionare il report che si desidera scaricare e quindi fare clic su **Salva** 
 |**Pagina garanzia del servizio**|**Contenuto disponibile**|**Descrizione**|
 |:-----|:-----|:-----|
 |Rapporti di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilizzare i rapporti di conformità del servizio per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti delle operazioni di reCapito dei servizi di Office 365.  <br/> |
-|Attendibilità documenti  <br/> | DOMANDE frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
-|Controlli sottoposti a controllo  <br/> |Standard globali e normative che Office 365 ha implementato.  <br/> | Assistenza per la valutazione dei rischi durante la valutazione, l'onboarding o l'utilizzo di servizi di Office 365. Scoprire:  <br/> <br/>-In che modo i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>-Informazioni sui test dei controlli in Office 365, risultati di questi test e al termine dell'operazione.  <br/> |
+|Documenti di attendibilità  <br/> | DOMANDE frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
+|Controlli controllati  <br/> |Standard globali e normative che Office 365 ha implementato.  <br/> | Assistenza per la valutazione dei rischi durante la valutazione, l'onboarding o l'utilizzo di servizi di Office 365. Scoprire:  <br/> <br/>-In che modo i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>-Informazioni sui test dei controlli in Office 365, risultati di questi test e al termine dell'operazione.  <br/> |
    
 A seconda della configurazione specifica, le opzioni incluse nella visualizzazione potrebbero avere alcune differenze.
   
@@ -112,7 +112,7 @@ A seconda della configurazione specifica, le opzioni incluse nella visualizzazio
 
 Per accedere ai report predefiniti generalmente disponibili in tutti gli abbonamenti a Microsoft Cloud, non è necessario implementare il modello di accesso basato sui ruoli di Service Assurance ed è possibile ignorare questo passaggio. Tuttavia, se all'organizzazione è stato concesso l'accesso ai report personalizzati, aggiungere altri utenti o gruppi ai ruoli di garanzia del servizio. Per aggiungere altri utenti o gruppi:
   
-1. Nel centro sicurezza &amp; e conformità, selezionare **autorizzazioni** nel riquadro sinistro, come illustrato nella schermata seguente. 
+1. Nel centro sicurezza & Compliance selezionare **autorizzazioni** nel riquadro sinistro, come illustrato nella schermata seguente. 
     
     ![Menu &amp; autorizzazioni di conformità di sicurezza](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
@@ -124,7 +124,7 @@ Per accedere ai report predefiniti generalmente disponibili in tutti gli abbonam
     
     ![Service Assurance utente-Scegli utente](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
-4. Ogni utente o gruppo aggiunto al ruolo utente di Service Assurance può ora trovare la garanzia del servizio e scaricare i report e altri documenti nel centro &amp; sicurezza e conformità.
+4. Ogni utente o gruppo aggiunto al ruolo utente di Service Assurance può ora trovare la garanzia del servizio e scaricare i report e altri documenti nel centro conformità di sicurezza di &.
     
 Tornare alla pagina delle **autorizzazioni** in qualsiasi momento per aggiungere altri utenti o rimuovere quelli esistenti. 
   

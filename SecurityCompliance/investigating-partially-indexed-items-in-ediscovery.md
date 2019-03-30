@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) sono elementi e documenti delle cassette postali di Exchange nei siti di SharePoint e OneDrive che per qualche motivo non sono stati completamente indicizzati per la ricerca di contenuto. In questo articolo, è possibile sapere perché gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati, identificare gli errori di ricerca per gli elementi parzialmente indicizzati e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione a un messaggio di posta elettronica parzialmente indicizzato. elementi.
-ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295629"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000889"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 
-Una ricerca di contenuto eseguita dal centro sicurezza &amp; e conformità di Office 365 include automaticamente gli elementi parzialmente indicizzati nei risultati della ricerca stimati durante l'esecuzione di una ricerca. Gli elementi parzialmente indicizzati sono gli elementi della cassetta postale di Exchange e i documenti sui siti di SharePoint e OneDrive for business che per qualche motivo non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e i documenti del sito vengono indicizzati correttamente perché rientrano nei [limiti di indicizzazione dei messaggi di posta elettronica](limits-for-content-search.md#indexing-limits-for-email-messages) Tuttavia, alcuni elementi possono superare questi limiti di indicizzazione e verranno parzialmente indicizzati. Di seguito sono riportati altri motivi per i quali gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati durante l'esecuzione di una ricerca di contenuto:
+Una ricerca di contenuto eseguita dal centro sicurezza & Compliance include automaticamente gli elementi parzialmente indicizzati nei risultati della ricerca stimati durante l'esecuzione di una ricerca. Gli elementi parzialmente indicizzati sono gli elementi della cassetta postale di Exchange e i documenti sui siti di SharePoint e OneDrive for business che per qualche motivo non sono stati completamente indicizzati per la ricerca. La maggior parte dei messaggi di posta elettronica e i documenti del sito vengono indicizzati correttamente perché rientrano nei [limiti di indicizzazione dei messaggi di posta elettronica](limits-for-content-search.md#indexing-limits-for-email-messages) Tuttavia, alcuni elementi possono superare questi limiti di indicizzazione e verranno parzialmente indicizzati. Di seguito sono riportati altri motivi per i quali gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati durante l'esecuzione di una ricerca di contenuto:
   
 - I messaggi di posta elettronica dispongono di un file allegato di un tipo di file che non può essere indicizzato. nella maggior parte dei casi, il tipo di file non è [riconosciuto o non è supportato per](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search) l'indicizzazione
     
@@ -37,7 +37,7 @@ Anche se varia, la maggior parte dei clienti di Office 365 organizzazioni ha men
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Perché il conteggio degli elementi parzialmente indicizzato cambia per una ricerca?
 
-Dopo aver eseguito una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365, il numero totale e le dimensioni degli elementi parzialmente indicizzati nei percorsi ricercati sono elencati nelle statistiche dei risultati di ricerca visualizzati nelle statistiche dettagliate per la ricerca. Nota Queste sono denominate *voci* non indicizzate nelle statistiche di ricerca. Di seguito sono riportati alcuni aspetti che influiscono sul numero di elementi parzialmente indicizzati restituiti nei risultati della ricerca: 
+Dopo aver eseguito una ricerca contenuto nel centro sicurezza & Compliance, il numero totale e le dimensioni degli elementi parzialmente indicizzati nei percorsi ricercati sono elencati nelle statistiche dei risultati di ricerca visualizzati nelle statistiche dettagliate per la ricerca. Nota Queste sono denominate *voci* non indicizzate nelle statistiche di ricerca. Di seguito sono riportati alcuni aspetti che influiscono sul numero di elementi parzialmente indicizzati restituiti nei risultati della ricerca: 
   
 - Se un elemento è parzialmente indicizzato e corrisponde alla query di ricerca, è incluso sia nel conteggio (sia nelle dimensioni) degli elementi dei risultati di ricerca e degli elementi parzialmente indicizzati. Tuttavia, quando vengono esportati i risultati della stessa ricerca, l'elemento viene incluso solo con un set di risultati di ricerca. non è incluso come elemento parzialmente indicizzato.
     
@@ -122,7 +122,7 @@ Nei passaggi seguenti viene illustrato come eseguire uno script di PowerShell ch
 
 ```
   write-host "**************************************************"
-  write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "**************************************************"
   " " 
@@ -164,9 +164,9 @@ Nei passaggi seguenti viene illustrato come eseguire uno script di PowerShell ch
   
 ```
    
-2. [Connettersi a PowerShell per centro &amp; sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Connettersi a PowerShell per Centro sicurezza _AMP_ Compliance](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
-3. In PowerShell &amp; per il Centro sicurezza e conformità, passare alla cartella in cui è stato salvato lo script nel passaggio 1, quindi eseguire lo script. Per esempio:
+3. In PowerShell centro conformità di sicurezza & passare alla cartella in cui è stato salvato lo script nel passaggio 1, quindi eseguire lo script. Per esempio:
 
     ```
     .\PartiallyIndexedItems.ps1

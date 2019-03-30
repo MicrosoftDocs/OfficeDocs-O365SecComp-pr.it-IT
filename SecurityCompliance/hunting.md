@@ -11,16 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f11abff72ef144b44ce99ca83aadbf5d65bdb273
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a1a6970e81f3c6ce3f768958333f3a692b05346c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791769"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999999"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>Cercare malware e altre minacce in Microsoft 365
 
-[!include[Prerelease�information](prerelease.md)]
 
 Hunting fornisce ai team di sicurezza una visualizzazione delle possibili minacce nell'organizzazione tramite posta elettronica e dati, dispositivi e identità. All'interno di Windows Defender ATP, Office 365 ATP e portali di Azure ATP è possibile cercare gli account compromessi, file meno malware, messaggi di posta elettronica sospetti e altro ancora.
 

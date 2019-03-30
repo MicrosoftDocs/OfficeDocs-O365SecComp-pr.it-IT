@@ -15,17 +15,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
-ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Utilizzare lo strumento di ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
+ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900105"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001019"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
-È possibile utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare gli elementi sul posto, ad esempio messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Utilizzare questo strumento per cercare gli elementi presenti nei servizi di Office 365:
+È possibile utilizzare lo strumento eDiscovery ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare elementi sul posto, ad esempio messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Utilizzare questo strumento per cercare gli elementi presenti nei servizi di Office 365:
   
 - Cassette postali e cartelle pubbliche di Exchange Online
     
@@ -42,62 +42,60 @@ Dopo aver eseguito una ricerca di contenuto, il numero di posizioni di contenuto
 
 ## <a name="create-a-new-search"></a>Creare una nuova ricerca
 
-Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli Gestione &amp; eDiscovery nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
+Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli Gestione eDiscovery nel centro conformità & sicurezza. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Accedere a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere utilizzando l'indirizzo di posta elettronica e la password di Office 365.
     
-2. Accedere utilizzando l'indirizzo di posta elettronica e la password di Office 365. 
+2. Fare clic su ricerca **contenuto** **ricerca** \> .
     
-3. Nel centro sicurezza &amp; e conformità, fare **clic &amp; ** su \> Cerca **contenuto**ricerca ricerche.
-    
-4. Nella pagina **ricerca** fare clic sulla freccia accanto a ![Aggiungi](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona. 
+3. Nella pagina **ricerca** fare clic sulla freccia accanto a ![Aggiungi](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona. 
     
     ![L'elenco a discesa ricerca nuovo](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     È possibile scegliere una delle seguenti opzioni:
     
-  - **Ricerca guidata** : questa opzione consente di avviare una procedura guidata per la creazione della ricerca. L'interfaccia utente per selezionare i percorsi di contenuto e generare la query di ricerca è identica alla nuova opzione di **ricerca** . 
+    - **Ricerca guidata** : questa opzione consente di avviare una procedura guidata per la creazione della ricerca. L'interfaccia utente per selezionare i percorsi di contenuto e generare la query di ricerca è identica alla nuova opzione di **ricerca** . 
     
-  - **Nuova ricerca** : questa opzione consente di visualizzare un'interfaccia utente aggiornata per creare una nuova ricerca. Questa è l'opzione predefinita se si fa clic su **nuova ricerca**.
+    - **Nuova ricerca** : questa opzione consente di visualizzare un'interfaccia utente aggiornata per creare una nuova ricerca. Questa è l'opzione predefinita se si fa clic su **nuova ricerca**.
     
-  - **Cerca in base all'elenco di ID** : questa opzione consente di cercare messaggi di posta elettronica specifici e altri elementi della cassetta postale utilizzando un elenco di ID di Exchange. Per creare una ricerca nell'elenco di ID (denominato formalmente ricerca mirata), è necessario inviare un file CSV (comma separated value) che identifica gli elementi specifici della cassetta postale da cercare. Per istruzioni, vedere [preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365](csv-file-for-an-id-list-content-search.md).
+    - **Cerca in base all'elenco di ID** : questa opzione consente di cercare messaggi di posta elettronica specifici e altri elementi della cassetta postale utilizzando un elenco di ID di Exchange. Per creare una ricerca nell'elenco di ID (denominato formalmente ricerca mirata), è necessario inviare un file CSV (comma separated value) che identifica gli elementi specifici della cassetta postale da cercare. Per istruzioni, vedere [preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365](csv-file-for-an-id-list-content-search.md).
     
     Il resto dei passaggi di questa procedura seguirà il nuovo flusso di lavoro di ricerca predefinito.
     
-5. Fare clic su **nuova ricerca** nell'elenco a discesa. 
+4. Fare clic su **nuova ricerca** nell'elenco a discesa. 
     
-6. In **query di ricerca**specificare gli elementi seguenti.
+5. In **query di ricerca**specificare gli elementi seguenti.
     
     ![Specificare le parole chiave, le condizioni e le posizioni in cui eseguire la ricerca](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Parole chiave per la ricerca per** Digitare una query di ricerca nella casella **parole chiave** . È possibile specificare parole chiave, proprietà del messaggio, come ad esempio, le date di invio e ricezione o le proprietà del documento, quali ad esempio, i nomi dei file o la data dell'ultima modifica apportata a un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
+   - **Parole chiave per la ricerca per** Digitare una query di ricerca nella casella **parole chiave** . È possibile specificare parole chiave, proprietà del messaggio, come ad esempio, le date di invio e ricezione o le proprietà del documento, quali ad esempio, i nomi dei file o la data dell'ultima modifica apportata a un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
     
-    In alternativa, è possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico ( **c:s**) simile alla funzionalità all'operatore **or** nella query di ricerca creata. 
+      In alternativa, è possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico ( **c:s**) simile alla funzionalità all'operatore **or** nella query di ricerca creata. 
     
-    Perché usare l'elenco delle parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. In questo modo è possibile identificare rapidamente quali parole chiave sono le più (e meno) effettive. È inoltre possibile utilizzare una frase di parole chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche sulle parole chiave per i risultati della ricerca contenuto](view-keyword-statistics-for-content-search.md).
+      Perché usare l'elenco delle parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. In questo modo è possibile identificare rapidamente quali parole chiave sono le più (e meno) effettive. È inoltre possibile utilizzare una frase di parole chiave (racchiusa tra parentesi) in una riga. Per ulteriori informazioni sulle statistiche di ricerca, vedere [visualizzare le statistiche sulle parole chiave per i risultati della ricerca contenuto](view-keyword-statistics-for-content-search.md).
 
     > [!NOTE]
     > Per contribuire a ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, si è limitato a un massimo di 20 righe nell'elenco delle parole chiave.
     
-- **Condizioni** : è possibile aggiungere condizioni di ricerca per restringere una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca che viene creata e eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico ( **c:c**) simile alla funzionalità all'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che una o più condizioni da includere nei risultati. Ecco come le condizioni consentono di circoscrivere i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#search-conditions).
+    - **Condizioni** : è possibile aggiungere condizioni di ricerca per restringere una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca che viene creata e eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico ( **c:c**) simile alla funzionalità all'operatore **and** . Questo significa che gli elementi devono soddisfare sia la query di parole chiave che una o più condizioni da includere nei risultati. Ecco come le condizioni consentono di circoscrivere i risultati. Per un elenco e una descrizione delle condizioni che è possibile utilizzare in una query di ricerca, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#search-conditions).
     
-- **Posizioni** : scegliere i percorsi di contenuto in cui eseguire la ricerca.
+       - **Posizioni** : scegliere i percorsi di contenuto in cui eseguire la ricerca.
     
-  - **Tutte le posizioni** : utilizzare questa opzione per eseguire una ricerca in tutti i percorsi di contenuto dell'organizzazione. Questo include la posta elettronica in tutte le cassette postali di Exchange (incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Office 365, le cassette postali per tutti i team Microsoft), tutte le conversazioni di Skype for business, tutti i siti di SharePoint e OneDrive per tutti i gruppi di Office 365 e Microsoft teams e gli elementi in tutte le cartelle pubbliche di Exchange.
+      - **Tutte le posizioni** : utilizzare questa opzione per eseguire una ricerca in tutti i percorsi di contenuto dell'organizzazione. Questo include la posta elettronica in tutte le cassette postali di Exchange (incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Office 365, le cassette postali per tutti i team Microsoft), tutte le conversazioni di Skype for business, tutti i siti di SharePoint e OneDrive per tutti i gruppi di Office 365 e Microsoft teams e gli elementi in tutte le cartelle pubbliche di Exchange.
     
-  - **Posizioni specifiche** : utilizzare questa opzione per cercare percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per uno specifico servizio di Office 365, ad esempio per la ricerca in tutte le cassette postali di Exchange o per cercare tutti i siti di SharePoint, oppure è possibile effettuare ricerche in posizioni specifiche in tutti i servizi di Office 365 visualizzati. 
+      - **Posizioni specifiche** : utilizzare questa opzione per cercare percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per uno specifico servizio di Office 365, ad esempio per la ricerca in tutte le cassette postali di Exchange o per cercare tutti i siti di SharePoint, oppure è possibile effettuare ricerche in posizioni specifiche in tutti i servizi di Office 365 visualizzati. 
     
-    ![Interfaccia utente per scegliere le posizioni di contenuto in cui eseguire la ricerca](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interfaccia utente per scegliere le posizioni di contenuto in cui eseguire la ricerca](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
-    Si noti che è inoltre possibile aggiungere gruppi di distribuzione all'elenco delle cassette postali di Exchange da cercare. Per i gruppi di distribuzione, vengono ricercate le cassette postali dei membri del gruppo. Si noti che i gruppi di distribuzione dinamici non sono supportati.
+         Si noti che è inoltre possibile aggiungere gruppi di distribuzione all'elenco delle cassette postali di Exchange da cercare. Per i gruppi di distribuzione, vengono ricercate le cassette postali dei membri del gruppo. Si noti che i gruppi di distribuzione dinamici non sono supportati.
     
-    **Importante:** Quando si esegue una ricerca in tutte le posizioni delle cassette postali o solo in determinate cassette postali, i dati di analisi e altre applicazioni di Office 365 salvati nelle cassette postali degli utenti vengono inclusi quando si esportano i risultati di una ricerca di contenuto. Questi dati non vengono inclusi nei risultati della ricerca stimati e non saranno disponibili per l'anteprima. Verrà incluso solo quando si esportano e si scaricano i risultati della ricerca; vedere [esportazione di dati da analisi e altre applicazioni di Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications) nella sezione "ulteriori informazioni sulla ricerca di contenuto". 
+       **Importante:** Quando si esegue una ricerca in tutte le posizioni delle cassette postali o solo in determinate cassette postali, i dati di analisi e altre applicazioni di Office 365 salvati nelle cassette postali degli utenti vengono inclusi quando si esportano i risultati di una ricerca di contenuto. Questi dati non vengono inclusi nei risultati della ricerca stimati e non saranno disponibili per l'anteprima. Verrà incluso solo quando si esportano e si scaricano i risultati della ricerca; vedere [esportazione di dati da analisi e altre applicazioni di Office 365](#exporting-data-from-myanalytics-and-other-office-365-applications) nella sezione "ulteriori informazioni sulla ricerca di contenuto". 
     
-7. Dopo aver configurato la query di ricerca, fare clic **su &amp; Salva esecuzione**.
+6. Dopo aver configurato la query di ricerca, fare clic **su &amp; Salva esecuzione**.
     
-8. Nella pagina **Salva ricerca** Digitare un nome per la ricerca e una descrizione facoltativa che consenta di identificare la ricerca. Si noti che il nome della ricerca deve essere univoco nell'organizzazione. 
+7. Nella pagina **Salva ricerca** Digitare un nome per la ricerca e una descrizione facoltativa che consenta di identificare la ricerca. Si noti che il nome della ricerca deve essere univoco nell'organizzazione. 
     
-9. Fare clic su **Salva** per avviare la ricerca. 
+8. Fare clic su **Salva** per avviare la ricerca. 
     
     Dopo aver salvato ed eseguito la ricerca, tutti i risultati restituiti dalla ricerca vengono visualizzati nel riquadro dei risultati. A seconda del modo in cui è stata configurata l'impostazione di anteprima, i risultati della ricerca vengono visualizzati oppure è necessario fare clic su **Anteprima risultati** per visualizzarli. Per informazioni dettagliate, vedere la sezione successiva. 
     
@@ -116,7 +114,7 @@ Sono disponibili due impostazioni di configurazione per la visualizzazione in an
     
 2. **Anteprima dei risultati manualmente** -questa impostazione consente di visualizzare i segnaposto nel riquadro dei risultati della ricerca e visualizza il pulsante **Anteprima risultati** che è necessario fare clic per visualizzare i risultati della ricerca. Questa è l'impostazione predefinita. consente di migliorare le prestazioni di ricerca non visualizzando automaticamente i risultati della ricerca quando si apre una ricerca esistente. 
     
-Sono presenti limiti relativi al numero di elementi che è possibile visualizzare in anteprima. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md). 
+Sono presenti limiti relativi al numero di elementi che è possibile visualizzare in anteprima. Per ulteriori informazioni, vedere [limits for content search](limits-for-content-search.md). 
   
 Per un elenco dei tipi di file supportati che è possibile visualizzare in anteprima, vedere [anteprima dei risultati della ricerca](#previewing-search-results) nella sezione "ulteriori informazioni sulla ricerca di contenuto". Se un tipo di file non è supportato per l'anteprima o per scaricare una copia di un documento, è possibile fare clic su **Scarica file originale** per scaricarlo nel computer locale. Per le pagine Web con estensione aspx, l'URL della pagina è incluso se non si dispone delle autorizzazioni per accedere alla pagina. 
   
@@ -130,7 +128,7 @@ Dopo aver creato ed eseguito una ricerca di contenuto, è possibile visualizzare
   
 Per visualizzare le statistiche di ricerca:
   
-1. Nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità fare clic su **Apri** e quindi sulla ricerca per la quale si desidera visualizzare le statistiche. 
+1. Nella pagina **Ricerca contenuto** , fare clic su **Apri** , quindi fare clic sulla ricerca per la quale si desidera visualizzare le statistiche. 
     
 2. Nella pagina fly out fare clic su **Apri query**. 
     
@@ -153,7 +151,7 @@ Una volta eseguita correttamente una ricerca, è possibile esportare i risultati
   
 Per esportare i risultati della ricerca:
   
-1. Nella pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca. 
+1. Nella pagina **Ricerca contenuto** fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca. 
     
 2. Nella pagina Fly ![out fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca, quindi fare clic su **Esporta risultati**. Si noti che è anche possibile esportare un rapporto sui risultati di ricerca.
     
@@ -161,11 +159,10 @@ Per esportare i risultati della ricerca:
     
 Per istruzioni più dettagliate e suggerimenti per la risoluzione dei problemi, vedere:
   
-- [Esportare i risultati di ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md)
+- [Esportare i risultati della Ricerca contenuto](export-search-results.md)
     
 - [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
     
-
   
 ## <a name="more-information-about-content-search"></a>Ulteriori informazioni sulla ricerca contenuto
 
@@ -189,7 +186,7 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
   
 ### <a name="content-search-limits"></a>Limiti relativi alla ricerca contenuto
 
-- Per una descrizione dei limiti applicati alla funzionalità di ricerca contenuto, vedere [limits for Search in the Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
+- Per una descrizione dei limiti applicati alla funzionalità di ricerca contenuto, vedere [limits for content search](limits-for-content-search.md).
     
 - Microsoft raccoglie le informazioni sulle prestazioni per le ricerche di contenuto eseguite da tutte le organizzazioni di Office 365. Anche se la complessità della query di ricerca può influire sui tempi di ricerca, il fattore principale che influenza la durata delle ricerche è il numero di cassette postali in cui è stata eseguita la ricerca. Anche se Microsoft non fornisce un contratto di servizio per i tempi di ricerca, nella tabella seguente sono elencati i tempi di ricerca medi per una ricerca di contenuto in base al numero di cassette postali incluse nella ricerca.
     
@@ -258,7 +255,7 @@ Quando si esegue la ricerca di contenuto in Microsoft teams e nei gruppi di Offi
   
 - Quando viene eseguita la ricerca della cassetta postale di un utente, un gruppo di Microsoft Team o di Office 365 di cui l'utente è membro non verrà cercato. Analogamente, quando si esegue una ricerca in un team Microsoft o in un gruppo di Office 365, vengono cercate solo le cassette postali di gruppo e il sito del gruppo specificato. le cassette postali e gli account di OneDrive for business dei membri del gruppo non vengono ricercati, a meno che non vengano aggiunti in modo esplicito alla ricerca.
     
-- Per ottenere un elenco dei membri di un team di Microsoft o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **Home \> gruppi** nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
+- Per ottenere un elenco dei membri di un team di Microsoft o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **Home \> gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -310,7 +307,7 @@ Si noti che le condizioni sono connesse logicamente alla query di parole chiave 
   
 ### <a name="searching-inactive-mailboxes"></a>Ricerca di cassette postali inattive
 
-È possibile cercare le cassette postali inattive in una ricerca di contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile accedere alla **conservazione** della &amp; governance](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> \> **dei dati** nel centro sicurezza e conformità, quindi fare clic su **altre**![ **cassette postali inattive**della barra di spostamento.
+È possibile cercare le cassette postali inattive in una ricerca di contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile accedere alla **conservazione** della governance \> **dei dati** nel centro sicurezza e conformità di & e quindi fare clic su **altre**![](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **cassette postali inattive**della barra di spostamento.
   
 Di seguito sono riportate alcune considerazioni da tenere presenti durante la ricerca di cassette postali inattive.
   

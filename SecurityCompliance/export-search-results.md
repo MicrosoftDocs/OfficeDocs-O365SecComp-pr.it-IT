@@ -1,5 +1,5 @@
 ---
-title: Esportare i risultati della ricerca del contenuto dal centro conformità & sicurezza di Office 365
+title: Esportare i risultati della Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,17 +17,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Esportare i risultati della ricerca da una ricerca di contenuto nel centro conformità di Office 365 Security & in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & compliance in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
+ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296569"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000469"
 ---
-# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Esportare i risultati della ricerca del contenuto dal centro conformità & sicurezza di Office 365
+# <a name="export-content-search-results"></a>Esportare i risultati della Ricerca contenuto
 
-Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati della posta elettronica, vengono scaricati nel computer come file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Sono disponibili documenti e report aggiuntivi inclusi nei risultati della ricerca esportati.
+Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti altri documenti e report.
   
 Inoltre, tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati di una ricerca di contenuto verranno decrittografati quando vengono esportati (come singoli messaggi). Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione deCrypt RMS è assegnato a questo gruppo di ruoli. Vedere la sezione [ulteriori informazioni](#more-information) per informazioni dettagliate sulla decrittografia RMS quando si esportano i risultati della ricerca. 
   
@@ -35,7 +35,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per esportare i risultati della ricerca, è necessario assegnare il ruolo Export Management nel centro sicurezza &amp; e conformità di Office 365. Questo ruolo viene assegnato al gruppo di ruoli eDiscovery Manager incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
+- Per esportare i risultati della ricerca, è necessario essere assegnati al ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
 - Il computer utilizzato per esportare i risultati della ricerca deve soddisfare i seguenti requisiti di sistema:
     
@@ -47,7 +47,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
      - Microsoft Edge
     
-        OPPURE
+        O
     
      - Microsoft Internet Explorer 10 e versioni successive
     
@@ -80,11 +80,11 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
 
 Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, vengono caricati in una posizione di archiviazione di Azure nel cloud Microsoft. Si noti che il contenuto delle cassette postali e dei siti viene caricato a una velocità massima di 2 GB/ora.
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **Ricerca contenuto**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su ricerca **contenuto** **ricerca** \> .
     
 4. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
     
@@ -126,7 +126,7 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
     
 11. Fare clic su **Avvia esportazione**.
     
-    I risultati della ricerca sono pronti per il download, il che significa che sono stati caricati nel percorso di archiviazione di Azure nel cloud Microsoft. Quando i risultati della ricerca sono pronti per il download, il collegamento **download esportato risultati** viene visualizzato in **Esporta risultati in un computer** nel riquadro dei dettagli. 
+    I risultati della ricerca sono pronti per il download, il che significa che sono stati caricati nel percorso di archiviazione di Azure nel cloud Microsoft. Quando i risultati della ricerca sono pronti per il download, viene visualizzato il collegamento **Scarica i risultati esportati** in **Esporta i risultati in un computer** nel riquadro dei dettagli. 
   
 ## <a name="step-2-download-the-search-results"></a>Passaggio 2: Scaricare i risultati della ricerca
 
@@ -166,7 +166,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
   
 1. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
     
-    Lo **strumento di esportazione di eDiscovery** Visualizza le informazioni sullo stato relative al processo di esportazione, inclusa una stima del numero e delle dimensioni degli elementi restanti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. 
+    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. 
     
 
   
@@ -174,7 +174,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
-[Limiti relativi all'esportazione](#export-limits)
+[Limiti di esportazione](#export-limits)
   
 [Esporta rapporti](#export-reports)
   
@@ -188,9 +188,9 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
 [Varie](#miscellaneous)
   
- ### <a name="export-limits"></a>Limiti relativi all'esportazione
+ ### <a name="export-limits"></a>Limiti di esportazione
   
-- L'esportazione dei risultati di ricerca &amp; dal centro sicurezza e conformità presenta i seguenti limiti:
+- L'esportazione dei risultati di ricerca dal centro sicurezza & Compliance ha i seguenti limiti:
     
   - È possibile esportare un massimo di 2 TB di dati da una singola ricerca di contenuto. Se i risultati della ricerca sono superiori a 2 TB, prendere in considerazione l'utilizzo di intervalli di date o di altri tipi di filtri per ridurre le dimensioni totali dei risultati della ricerca.
     
@@ -254,7 +254,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
 - Se si stanno esportando elementi della cassetta postale da una ricerca di contenuto che restituisce tutti gli elementi delle cassette postali nei risultati della ricerca (perché nessuna parola chiave dove è inclusa nella query di ricerca), gli elementi parzialmente indicizzati non verranno copiati nel file PST che contiene gli elementi non indicizzati. Ciò è dovuto al fatto che tutti gli elementi, compresi gli elementi parzialmente indicizzati, vengono inclusi automaticamente nei risultati di ricerca normali. Questo significa che gli elementi parzialmente indicizzati verranno inclusi in un file PST (o come singoli messaggi) che contiene gli altri elementi indicizzati.
     
-    Inoltre, se si esportano sia gli elementi indicizzati che quelli parzialmente indicizzati oppure se si esportano solo gli elementi indicizzati da una ricerca di contenuto che restituisce tutti gli elementi, verrà scaricato lo stesso numero di elementi. Questo accade anche se i risultati della ricerca stimati per la ricerca di contenuto (visualizzati nelle statistiche di ricerca &amp; nel centro sicurezza e conformità) continueranno a includere una stima distinta per il numero di elementi parzialmente indicizzati. Si supponga, ad esempio, che la stima di una ricerca che includa tutti gli elementi (nessuna parola chiave nella query di ricerca) indichi che sono stati trovati 1.000 elementi e che sono stati trovati anche gli elementi parzialmente indicizzati 200. In questo caso, gli elementi 1.000 includono gli elementi parzialmente indicizzati poiché la ricerca restituisce tutti gli elementi. In altre parole, sono disponibili 1.000 elementi totali restituiti dalla ricerca e non 1.200 elementi (come si potrebbe immaginare). Se si esportano i risultati della ricerca e si sceglie di esportare gli elementi indicizzati e parzialmente indicizzati (o solo gli elementi indicizzati), verranno scaricati gli elementi 1.000. Di nuovo, perché gli elementi parzialmente indicizzati sono inclusi nei risultati regolari (indicizzati) quando si utilizza una query di ricerca vuota per restituire tutti gli elementi. In questo stesso esempio, se si sceglie di esportare solo gli elementi parzialmente indicizzati, verranno scaricati solo gli elementi 200 non indicizzati.
+    Inoltre, se si esportano sia gli elementi indicizzati che quelli parzialmente indicizzati oppure se si esportano solo gli elementi indicizzati da una ricerca di contenuto che restituisce tutti gli elementi, verrà scaricato lo stesso numero di elementi. Questo accade anche se i risultati della ricerca stimati per la ricerca di contenuto (visualizzati nelle statistiche di ricerca nel centro sicurezza & Compliance) continueranno a includere una stima distinta per il numero di elementi parzialmente indicizzati. Si supponga, ad esempio, che la stima di una ricerca che includa tutti gli elementi (nessuna parola chiave nella query di ricerca) indichi che sono stati trovati 1.000 elementi e che sono stati trovati anche gli elementi parzialmente indicizzati 200. In questo caso, gli elementi 1.000 includono gli elementi parzialmente indicizzati poiché la ricerca restituisce tutti gli elementi. In altre parole, sono disponibili 1.000 elementi totali restituiti dalla ricerca e non 1.200 elementi (come si potrebbe immaginare). Se si esportano i risultati della ricerca e si sceglie di esportare gli elementi indicizzati e parzialmente indicizzati (o solo gli elementi indicizzati), verranno scaricati gli elementi 1.000. Di nuovo, perché gli elementi parzialmente indicizzati sono inclusi nei risultati regolari (indicizzati) quando si utilizza una query di ricerca vuota per restituire tutti gli elementi. In questo stesso esempio, se si sceglie di esportare solo gli elementi parzialmente indicizzati, verranno scaricati solo gli elementi 200 non indicizzati.
     
     Si noti inoltre che nell'esempio precedente (quando si esportano elementi indicizzati e parzialmente indicizzati o si esportano solo elementi indicizzati), il rapporto riepilogativo di **esportazione** incluso con i risultati di ricerca esportati elenca 1.000 elementi stimati e 1.000 scaricati gli elementi per gli stessi motivi descritti in precedenza. 
     
@@ -325,8 +325,8 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
  ### <a name="miscellaneous"></a>Varie
   
-- Tutti i risultati di ricerca e i report di esportazione sono inclusi in una cartella con lo stesso nome della ricerca di contenuto. I messaggi di posta elettronica che sono stati esportati si trovano in una cartella denominata **Exchange**. I documenti si trovano in una cartella denominata **SharePoint**. 
+- Tutti i risultati della ricerca e i report di esportazione sono inclusi in una cartella con lo stesso nome della cartella Ricerca contenuto. I messaggi di posta elettronica che sono stati esportati si trovano in una cartella denominata **Exchange**. I documenti si trovano in una cartella denominata **SharePoint**. 
     
-- I metadati del file System per i documenti nei siti di SharePoint e OneDrive for business vengono mantenuti quando i documenti vengono esportati nel computer locale. Questo significa che le proprietà del documento, ad esempio le date create e Last modified, non vengono modificate quando vengono esportati i documenti.
+- I metadati del file System per i documenti nei siti di SharePoint e OneDrive for business vengono mantenuti quando i documenti vengono esportati nel computer locale. Ciò significa che le proprietà del documento, ad esempio le date di creazione e dell'ultima modifica, non subiscono variazioni durante l’esportazione dei documenti.
 
 - Se i risultati della ricerca includono una voce di elenco di SharePoint che corrisponde alla query di ricerca, tutte le righe dell'elenco verranno esportate oltre all'elemento che corrisponde alla query di ricerca. Sono inclusi gli allegati presenti nell'elenco. Il motivo è fornire un contesto per gli elementi di elenco restituiti nei risultati della ricerca. Si noti inoltre che gli elementi di elenco aggiuntivi e gli allegati possono determinare una differenza tra il numero di elementi esportati e la stima originale dei risultati della ricerca.

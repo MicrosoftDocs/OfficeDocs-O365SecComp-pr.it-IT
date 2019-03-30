@@ -1,5 +1,5 @@
 ---
-title: Smart report e informazioni dettagliate nel centro conformità & sicurezza di Office 365
+title: Smart report e informazioni dettagliate nel centro sicurezza e conformità di &
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Ottenere una panoramica dei report e delle informazioni di avialable nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 03b551a05d9e19be000ff9ba53e8afa11d8715f3
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: fff1fac7d35a4e12e66f27ac0069d34eb86f3fe0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242158"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999319"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Smart report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365
 

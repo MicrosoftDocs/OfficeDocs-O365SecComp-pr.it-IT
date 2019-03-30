@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900155"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001219"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -28,7 +28,7 @@ Office 365 offre diversi modi in cui l'organizzazione può impedire che il conte
 
 - **Esenzioni per controversIa legale** applicate alle cassette postali degli utenti in Exchange Online.
 
-- **eDiscovery Hold** -appigli associati a un caso di eDiscovery nel centro conformità & sicurezza. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e nella cassetta postale corrispondente per i gruppi di Office 365 e Microsoft teams.
+- **eDiscovery Hold** -appigli associati a un caso di eDiscovery nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e nella cassetta postale corrispondente per i gruppi di Office 365 e Microsoft teams.
 
 - Archiviazione **sul posto** che vengono applicate alle cassette postali degli utenti utilizzando lo strumento di archiviazione eDiscovery _AMP_ sul posto nell'interfaccia di amministrazione di Exchange in Exchange Online.
 
@@ -53,7 +53,7 @@ Per gestire le cassette postali in blocco, potrebbe essere necessario identifica
 
 - **Get-OrganizationConfig** -utilizzare questo cmdlet per ottenere i GUID per i criteri di conservazione a livello dell'organizzazione.
 
-Per connettersi a PowerShell di Exchange Online, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -72,7 +72,7 @@ Nella tabella seguente viene descritto come identificare diversi tipi di esenzio
 |Tipo di blocco  |Valore di esempio  |Come identificare il blocco  |
 |---------|---------|---------|
 |Conservazione in caso di dispute     |    `True`     |     Il blocco per controversia legale è abilitato per una ** cassetta postale se la proprietà `True`LitigationHoldEnabled è impostata su.    |
-|eDiscovery Hold     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *Proprietà InPlaceHolds* contiene il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro sicurezza & Compliance. Si può dire che si tratta di un blocco eDiscovery perché il GUID inizia `UniH` con il prefisso (che denota una conservazione unitaria).      |
+|eDiscovery Hold     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *Proprietà InPlaceHolds* contiene il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro sicurezza e conformità. Si può dire che si tratta di un blocco eDiscovery perché il GUID inizia `UniH` con il prefisso (che denota una conservazione unitaria).      |
 |Blocco sul posto     |     `c0ba3ce811b6432a8751430937152491` <br/> oppure <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La proprietà *InPlaceHolds* contiene il GUID del blocco sul posto applicato alla cassetta postale. Si può dire che si tratta di un blocco sul posto, perché il GUID non inizia con un prefisso o inizia con il `cld` prefisso.     |
 |Criteri di conservazione di Office 365 applicati specificamente alla cassetta postale     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oppure <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La proprietà InPlaceHolds contiene GUID di tutti i criteri di conservazione delle posizioni specifici applicati alla cassetta postale. È possibile identificare i criteri di conservazione perché il GUID inizia `mbx` con il `skp` prefisso o. Il `skp` prefisso indica che il criterio di conservazione viene applicato alle conversazioni di Skype for business nella cassetta postale dell'utente.    |
 |Escluso da un criterio di conservazione di Office 365 a livello di organizzazione     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Se una cassetta postale è esclusa da un criterio di conservazione di Office 365 a livello di organizzazione, il GUID del criterio di conservazione a cui viene esclusa la cassetta postale viene visualizzato nella `-mbx` proprietà InPlaceHolds ed è identificato dal prefisso.    |
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Per eseguire la connessione a PowerShell centro conformità &, vedere [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Per eseguire la connessione a PowerShell per Centro sicurezza & Compliance, vedere [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="in-place-holds"></a>Archiviazione sul posto
 

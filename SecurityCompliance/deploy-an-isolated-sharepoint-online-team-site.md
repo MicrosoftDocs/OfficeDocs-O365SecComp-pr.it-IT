@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Sintesi: istruzioni dettagliate per distribuire un nuovo sito del team di SharePoint Online isolato.'
-ms.openlocfilehash: 6a552e7ce8982f3b7d943136907764385fa33115
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216606"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000188"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
@@ -153,7 +153,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 Di seguito è configurata la configurazione risultante con i tre gruppi di accesso al sito popolati con account utente o gruppi.
   
-![I tre gruppi di accesso popolati con account utente.](media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![I tre gruppi di accesso popolati con gli account utente.](media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: creare e configurare il sito del team isolato
 
@@ -161,7 +161,7 @@ In questa fase, viene creato il sito di SharePoint Online isolato e vengono conf
   
 Creare innanzitutto il sito del team di SharePoint Online seguendo questa procedura.
   
-1. Accedere al portale di Office 365 con un account che verrà usato anche per gestire il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere all'interfaccia di amministrazione con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -220,11 +220,10 @@ I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
 - Il gruppo di SharePoint ** \<visitatori del sito name>** contiene il gruppo di accesso dei visualizzatori del sito, in cui tutti i membri hanno il livello di autorizzazione **lettura** .
     
 - I membri non hanno la possibilità di invitare altri membri o di richiedere l'accesso per utenti non membri.
-
     
 Ecco la configurazione risultante con i tre gruppi di SharePoint per il sito configurati per l'utilizzo dei tre gruppi di accesso, che sono popolati con gli account utente o i gruppi di Azure AD.
   
-![La configurazione finale del sito di SharePoint Online isolato con gruppi di accesso e account utente.](media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![La configurazione finale del sito di SharePoint Online isolato con i gruppi di accesso e gli account utente.](media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 I membri del sito, tramite l'appartenenza a uno dei gruppi di accesso, possono ora collaborare utilizzando le risorse del sito.
   

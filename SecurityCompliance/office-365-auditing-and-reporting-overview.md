@@ -1,38 +1,37 @@
 ---
-title: Controllo e creazione di report in Office 365
+title: Controllo e creazione di report nei servizi cloud Microsoft
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 12/03/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - M365-analytics
-description: Panoramica delle funzionalità di controllo e Reporting all'interno di Office 365 e garanzia del servizio.
-ms.openlocfilehash: e2fd596279743ad72a3632ba09ec28142e9322f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Panoramica delle funzionalità di controllo e Reporting all'interno di Office 365, Microsoft 365 e Service Assurance.
+ms.openlocfilehash: a5df0dcb6f762723c6ec0102b2c39f1bc157720c
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221016"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004113"
 ---
-# <a name="auditing-and-reporting-in-office-365"></a>Controllo e creazione di report in Office 365
+# <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Controllo e creazione di report nei servizi cloud Microsoft
 
 ## <a name="introduction"></a>Introduzione
 I servizi cloud Microsoft includono diverse funzionalità di controllo e Reporting che i clienti possono utilizzare per monitorare l'attività dell'utente e dell'amministrazione all'interno del tenant, ad esempio le modifiche apportate alle impostazioni di configurazione del tenant di Exchange Online e di SharePoint Online, e le modifiche apportate dagli utenti ai documenti e ad altri elementi. I clienti possono utilizzare le informazioni di controllo e i report disponibili nei servizi cloud per gestire in modo più efficace l'esperienza utente, attenuare i rischi e soddisfare gli obblighi di conformità.
 
-## <a name="office-365-security--compliance-center"></a>Centro sicurezza e conformità di Office 365
-[Office 365 Security _AMP_ Compliance Center](https://support.office.com/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8) è un portale One-Stop per la protezione dei dati in Office 365 e include numerose funzionalità di controllo e creazione di report. Si tratta di un'evoluzione del centro conformità di Office 365. Il Centro sicurezza e conformità di & è stato creato per le organizzazioni con esigenze di protezione dei dati o conformità o che desiderano controllare l'attività di utenti e amministratori. È possibile utilizzare il Centro sicurezza & Compliance per gestire la conformità per tutti i dati di Office 365 dell'organizzazione. È possibile accedere al centro sicurezza & Compliance [http://protection.office.com](http://protection.office.com/) utilizzando l'account di amministratore di Office 365.
+## <a name="security--compliance-centers"></a>Centro sicurezza & Compliance
+Il Centro sicurezza [_AMP_ Compliance Office 365](https://protection.office.com), il centro [sicurezza Microsoft 365](https://security.microsoft.com)e il [centro conformità Microsoft 365](https://compliance.microsoft.com) sono portali One-Stop per la protezione dei dati nell'organizzazione e comprendono numerosi controlli e report caratteristiche. Questi centri sono studiati per le organizzazioni con esigenze di protezione dei dati o conformità o che desiderano controllare l'attività di utenti e amministratori. È possibile accedere a questi centri utilizzando l'account di amministratore della sottoscrizione.
 
-Il Centro sicurezza e conformità di & include i riquadri di spostamento che consentono di accedere a diverse funzionalità:
+Questi centri includono i riquadri di spostamento che consentono di accedere a diverse funzionalità:
 - **Avvisi** : consente di gestire gli avvisi, visualizzare gli avvisi relativi alla sicurezza e gestire gli avvisi avanzati tramite [Office 365 cloud app Security](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/office-365-cas-overview). 
-- **** Permissions: consente di [assegnare autorizzazioni](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76) quali amministratore della conformità, eDiscovery Manager e altre persone dell'organizzazione in modo che possano eseguire attività nel centro sicurezza & Compliance. È possibile assegnare le autorizzazioni per la maggior parte delle funzionalità nel centro sicurezza & Compliance, ma è necessario configurare altre autorizzazioni utilizzando l'interfaccia di amministrazione di Exchange e l'interfaccia di amministrazione di SharePoint.
+- **** Permissions: consente di [assegnare autorizzazioni](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76) quali amministratore della conformità, eDiscovery Manager e altre persone dell'organizzazione in modo che possano eseguire attività in questi centri. È possibile assegnare le autorizzazioni per la maggior parte delle funzionalità di ogni centro, ma è necessario configurare altre autorizzazioni utilizzando l'interfaccia di amministrazione di Exchange e l'interfaccia di amministrazione di SharePoint.
 - **Gestione delle minacce** : consente di creare e applicare criteri di gestione dei dispositivi tramite la [gestione dei dispositivi mobili di Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)per configurare i criteri di [prevenzione della perdita di dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e) (DLP) per la propria organizzazione, per la configurazione del filtro della posta elettronica anti-malware, DomainKeys (DKIM), allegati sicuri, collegamenti sicuri e app OAuth.
 - **GovernaNce dei dati** : consente [di importare i dati di posta elettronica o di SharePoint da altri sistemi in Office 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84), [configurare le cassette postali di archiviazione](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)e impostare i criteri di [conservazione](https://support.office.com/article/Retention-in-the-Office-365-Security-Compliance-Center-2a0fc432-f18c-45aa-a539-30ab035c608c) per la posta elettronica e altri contenuti all'interno dell'organizzazione.
 - **Search & Investigation** -fornisce [ricerche di contenuto](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a), [log di controllo](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c), quarantena e strumenti di [gestione dei casi di eDiscovery](https://support.office.com/article/Manage-eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-edea80d6-20a7-40fb-b8c4-5e8c8395f6da) per eseguire rapidamente le attività tra le cassette postali, i gruppi e le cartelle pubbliche di Exchange Online, SharePoint Online e OneDrive for business.
@@ -47,7 +46,7 @@ Service Assurance fornisce la trasparenza delle operazioni e delle informazioni 
 ## <a name="onedrive-for-business-admin-center"></a>Interfaccia di amministrazione di OneDrive for business
 La nuova interfaccia di amministrazione di Microsoft OneDrive consente di gestire rapidamente e facilmente le impostazioni di OneDrive for business dell'organizzazione in un'unica posizione. Per utilizzare l'interfaccia di amministrazione di OneDrive, è necessario consentire l'accesso a onedrive.com. È inoltre necessario essere un amministratore globale per l'organizzazione o un amministratore personalizzato con il ruolo di amministratore di SharePoint. Accedere all'anteprima dell'interfaccia di amministrazione di OneDrive [https://admin.onedrive.com](https://admin.onedrive.com/)for business all'indirizzo.
 
-Le caratteristiche principali includono un'area di conformità che fornisce agli amministratori collegamenti al centro sicurezza e conformità di Office 365 per scenari chiave come la ricerca nel registro di controllo, l'utilizzo di DLP, la conservazione, la eDiscovery e gli avvisi.
+Le caratteristiche principali includono un'area di conformità che consente agli amministratori di accedere al centro di gestione appropriato per scenari chiave come la ricerca nel registro di controllo, l'utilizzo di DLP, la conservazione, la eDiscovery e gli avvisi.
 
 ## <a name="related-links"></a>Collegamenti correlati
 - [Funzionalità di ricerca e di eDiscovery](office-365-ediscovery-and-search-features.md)

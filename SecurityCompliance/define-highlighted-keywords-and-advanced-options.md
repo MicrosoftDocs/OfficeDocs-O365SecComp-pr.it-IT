@@ -3,7 +3,6 @@ title: Definire le parole chiave evidenziate e le opzioni avanzate in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Office 365 Advanced eDiscovery e per specificare i parametri di costo.  "
-ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220656"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999339"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Office 365 Advanced eDiscovery
 

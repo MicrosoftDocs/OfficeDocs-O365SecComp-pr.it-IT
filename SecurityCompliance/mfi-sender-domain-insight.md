@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta in Office 365 Security & Compliance Center.
+description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722919"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000309"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere il dominio del mittente Insight
 
@@ -38,7 +38,7 @@ I messaggi che non soddisfano i criteri non verranno attribuiti all'organizzazio
 
 La **correzione del dominio del mittente** consente di visualizzare la posta elettronica dall'ambiente locale che non soddisfa i criteri, consente di identificare le macchine e gli account utente potenzialmente compromessi nell'ambiente di posta elettronica locale, contribuendo a eseguire azioni di correzione.
 
-![L'Insight del dominio del mittente Fix nel dashboard del flusso di posta in Office 365 Security & Compliance Center](media/sender-domain-insight-selected.png)
+![L'Insight del dominio del mittente Fix nel dashboard del flusso di posta nel centro sicurezza & Compliance](media/sender-domain-insight-selected.png)
 
 Quando si fa clic su **Visualizza dettagli**, si viene indirizzati a un altro widget con maggiori dettagli, come illustrato nel diagramma seguente:
 

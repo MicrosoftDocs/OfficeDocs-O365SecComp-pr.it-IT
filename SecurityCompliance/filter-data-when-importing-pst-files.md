@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900035"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999479"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrare i dati durante l'importazione di file PST in Office 365
 
@@ -51,7 +51,7 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
     
   - [Utilizzare la spedizione dell'unità per importare file PST in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Dopo aver creato un processo di importazione tramite il caricamento di rete, lo stato del processo di importazione nella pagina importa del Centro sicurezza &amp; e conformità di Office 365 è impostato su **analisi in corso**, il che significa che Office 365 analizza i dati nei file PST che sono stati caricati. Fare clic su](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) aggiorna aggiornamento per aggiornare lo stato del processo di importazione. ****![ 
+- Dopo aver creato un processo di importazione tramite il caricamento di rete, lo stato del processo di importazione nella pagina importa del centro conformità & sicurezza è impostato su **analisi in corso**, il che significa che Office 365 analizza i dati nei file PST caricati. Fare clic su](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) aggiorna aggiornamento per aggiornare lo stato del processo di importazione. ****![ 
     
 - Per i processi di importazione delle unità di trasporto, i dati verranno analizzati da Office 365 dopo che il personale del Data Center di Microsoft riceverà il disco rigido e caricherà i file PST nell'area di archiviazione di Azure per l'organizzazione.
   
@@ -59,9 +59,9 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
 
 Dopo aver creato un processo di importazione PST, attenersi alla procedura seguente per filtrare i dati prima di importarli in Office 365.
   
-1. Passare a [https://protection.office.com/](https://protection.office.com/) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
+1. Passare a [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. &amp; nel riquadro sinistro del centro sicurezza e conformità di Office 365 fare clic su **importazione**di governance **** \> dei dati.
+2. Fare clic su \> **importazione**di **governance dei dati** .
     
     I processi di importazione per l'organizzazione sono elencati nella pagina **Importa** . Si noti che il valore **analisi completata** nella colonna **stato** indica i processi di importazione analizzati da Office 365 e che sono pronti per l'importazione. 
     

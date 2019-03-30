@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: Dopo aver reso inattiva una cassetta postale di Office 365, è possibile modificare la durata del blocco o il criterio di conservazione di Office 365 assegnato alla cassetta postale inattiva. La durata del blocco definisce il periodo di conservazione degli elementi nella cartella elementi ripristinabili.
-ms.openlocfilehash: f51750a0e822a4786f332639203b08ba4b5e2ba7
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Dopo aver reso inattiva una cassetta postale di Office 365, è possibile modificare la durata del blocco o il criterio di conservazione di Office 365 assegnato alla cassetta postale inattiva. La durata del blocco definisce per quanto tempo gli elementi nella cartella Elementi ripristinabili vengono conservati.
+ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295889"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999599"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modificare la durata del blocco per una cassetta postale inattiva in Office 365
 
@@ -30,13 +30,13 @@ Una cassetta postale inattiva viene utilizzata per conservare la posta elettroni
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per modificare la durata di un blocco per controversia legale su una cassetta postale inattiva, è necessario utilizzare Exchange Online PowerShell. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC). Tuttavia, è possibile utilizzare PowerShell di Exchange Online o EAC per modificare la durata del blocco per un blocco sul posto. Per modificare la durata del blocco di &amp; un criterio di conservazione di &amp; Office 365, è possibile utilizzare il Centro sicurezza e conformità di Office 365 o il Centro sicurezza e conformità.
+- You have to use Exchange Online PowerShell to change the hold duration for a Litigation Hold on an inactive mailbox. You can't use the Exchange admin center (EAC). But you can use Exchange Online PowerShell or the EAC to change the hold duration for an In-Place Hold. Per modificare la durata del blocco di un criterio di conservazione di Office 365, è possibile utilizzare il Centro sicurezza e conformità o il Centro sicurezza di & Compliance PowerShell.
     
-- Per connettersi a PowerShell di Exchange Online o &amp; al centro sicurezza e conformità, vedere uno degli argomenti seguenti:
+- Per connettersi a PowerShell di Exchange Online o al centro conformità di & di sicurezza, vedere uno dei seguenti argomenti:
     
-  - [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+  - [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Connettersi a Office 365 Security& Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - Tenere presenta che i blocchi associati ai casi di eDiscovery sono blocchi infiniti, il che significa non esiste una durata del blocco che può essere modificata. Gli elementi vengono conservati all'infinito o finché il blocco non viene rimosso e la cassetta postale non viene eliminata.
     
@@ -52,7 +52,7 @@ Eseguire il seguente comando in Exchange Online per visualizzare le informazioni
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
    
-Il valore **true** per la proprietà **LitigationHoldEnabled** indica che la cassetta postale inattiva è in blocco per controversia legale. Se un blocco sul posto, eDiscovery Hold o il criterio di conservazione di Office 365 viene inserito in una cassetta postale inattiva, viene visualizzato un GUID per il blocco o il criterio di conservazione come valore per la proprietà **InPlaceHolds** . Ad esempio, di seguito vengono illustrati i risultati per 5 cassette postali inattive. 
+Il valore di **True** per la proprietà **LitigationHoldEnabled** indica che la cassetta postale inattiva ha un blocco per controversia legale. Se in una cassetta postale inattiva è abilitato un blocco sul posto, eDiscovery o un criterio di conservazione di Office 365, un GUID del blocco o del criterio di conservazione viene visualizzato come il valore per la proprietà **InPlaceHolds**. Ad esempio, di seguito vengono illustrati i risultati per 5 cassette postali inattive. 
   
 ||
 |:-----|
@@ -99,10 +99,10 @@ Nella tabella seguente vengono identificati i cinque tipi diversi di blocco util
 |**Cassetta postale inattiva**|**Tipo di blocco**|**Come identificare il blocco sulla cassetta postale inattiva**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |Blocco per controversia legale  <br/> |La proprietà  *LitigationHoldEnabled*  è impostata su  `True`.  <br/> |
-|Pilar Pinilla  <br/> |Blocco sul posto  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del blocco sul posto applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un blocco sul posto perché l'ID non inizia con un prefisso.  <br/> È possibile utilizzare il `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando in Exchange Online PowerShell per ottenere informazioni sul blocco sul posto della cassetta postale inattiva.  <br/> |
-|Mario Necaise  <br/> |Criteri di conservazione di Office 365 a livello di organizzazione &amp; nel centro sicurezza e conformità  <br/> |La proprietà *InPlaceHolds* è vuota. Ciò indica che uno o più criteri di conservazione di Office 365 a livello di organizzazione o di Exchange vengono applicati alla cassetta postale inattiva. In questo caso, è possibile eseguire il `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` comando in Exchange Online PowerShell per ottenere un elenco dei GUID per i criteri di conservazione di Office 365 a livello dell'organizzazione. Il GUID per i criteri di conservazione a livello dell'organizzazione applicati alle cassette postali di `mbx` Exchange inizia con il prefisso. ad esempio `mbxa3056bb15562480fadb46ce523ff7b02`.<br/> <br/>Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale inattiva, eseguire il comando seguente in PowerShell &amp; per il Centro sicurezza e conformità.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
-|Carol Olson  <br/> |Criteri di conservazione di Office 365 nel &amp; centro conformità di sicurezza applicato a cassette postali specifiche  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del criterio di conservazione di Office 365 applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un criterio di conservazione applicato a specifiche cassette postali perché il GUID inizia con il prefisso  `mbx`. Tenere presente che il GUID del criterio di conservazione applicato alla cassetta postale inattiva iniziava con il prefisso  `skp`, indicando che il criterio di conservazione è applicato alle conversazioni di Skype for Business.  <br/><br/> Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale inattiva, eseguire il comando seguente in PowerShell &amp; per il Centro sicurezza e conformità.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Assicurarsi di rimuovere il `mbx` prefisso o `skp` quando si esegue questo comando.  <br/> |
-|Abraham McMahon  <br/> |blocco del caso di eDiscovery nel &amp; Centro sicurezza e conformità  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del blocco caso eDiscovery applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un blocco caso eDiscovery perché il GUID inizia con il prefisso  `UniH`.  <br/> È possibile utilizzare il `Get-CaseHoldPolicy` cmdlet in PowerShell &amp; per la conformità al centro sicurezza per ottenere informazioni sul caso di eDiscovery a cui è associato il blocco sulla cassetta postale inattiva. Ad esempio, è possibile eseguire il comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` per visualizzare il nome del blocco del caso che si trova nella cassetta postale inattiva. Assicurarsi di rimuovere il `UniH` prefisso quando si esegue questo comando.<br/><br/> Per identificare il caso eDiscovery a cui è associato il blocco applicato alla cassetta postale inattiva, eseguire i seguenti comandi.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Nota:** Non è consigliabile utilizzare eDiscovery per le cassette postali inattive. Ciò è dovuto al fatto che i casi di eDiscovery sono destinati a casi specifici relativi a un problema legale. A un certo punto, probabilmente si concluderà un caso legale e le esenzioni associate al caso verranno rimosse e il caso di eDiscovery verrà chiuso (o eliminato). Infatti, se una conservazione inserita in una cassetta postale inattiva è associata a un caso di eDiscovery e il blocco viene rilasciato o se il caso eDiscovery è chiuso o eliminato, la cassetta postale inattiva viene eliminata definitivamente. 
+|Pilar Pinilla  <br/> |Blocco sul posto  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del blocco sul posto applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un blocco sul posto perché l'ID non inizia con un prefisso.  <br/> È possibile utilizzare il comando  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` in Exchange Online PowerShell per ottenere informazioni sul blocco sul posto della cassetta postale inattiva.  <br/> |
+|Mario Necaise  <br/> |Criteri di conservazione di Office 365 a livello di organizzazione nel centro sicurezza e conformità di &  <br/> |La proprietà  *InPlaceHolds*  è vuota. Ciò indica che uno o più criteri di conservazione di Office 365 a livello di organizzazione (o di Exchange) sono applicati alla cassetta postale inattiva. In questo caso, è possibile eseguire il comando  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies that are applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> <br/>Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale inattiva, eseguire il comando seguente in PowerShell centro conformità di sicurezza &.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Carol Olson  <br/> |Criteri di conservazione di Office 365 nel centro conformità di & di sicurezza applicato a cassette postali specifiche  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del criterio di conservazione di Office 365 applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un criterio di conservazione applicato a specifiche cassette postali perché il GUID inizia con il prefisso  `mbx`. Tenere presente che il GUID del criterio di conservazione applicato alla cassetta postale inattiva iniziava con il prefisso  `skp`, indicando che il criterio di conservazione è applicato alle conversazioni di Skype for Business.  <br/><br/> Per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale inattiva, eseguire il comando seguente in PowerShell centro conformità di sicurezza &.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Assicurarsi di rimuovere il prefisso  `mbx` o  `skp` quando si esegue questo comando.  <br/> |
+|Abraham McMahon  <br/> |blocco del caso di eDiscovery nel centro sicurezza & Compliance  <br/> |La proprietà  *InPlaceHolds*  contiene il GUID del blocco caso eDiscovery applicato alla cassetta postale inattiva. È possibile stabilire che si tratta di un blocco caso eDiscovery perché il GUID inizia con il prefisso  `UniH`.  <br/> È possibile utilizzare il `Get-CaseHoldPolicy` cmdlet in PowerShell centro conformità _AMP_ di sicurezza per ottenere informazioni sul caso eDiscovery a cui è associato il blocco sulla cassetta postale inattiva. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` quando si esegue questo comando.  <br/><br/> Per identificare il caso eDiscovery a cui è associato il blocco applicato alla cassetta postale inattiva, eseguire i seguenti comandi.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Nota:** Non è consigliabile utilizzare eDiscovery per le cassette postali inattive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. A un certo punto, probabilmente si concluderà un caso legale e le esenzioni associate al caso verranno rimosse e il caso di eDiscovery verrà chiuso (o eliminato). Infatti, se una conservazione inserita in una cassetta postale inattiva è associata a un caso di eDiscovery e il blocco viene rilasciato o se il caso eDiscovery è chiuso o eliminato, la cassetta postale inattiva viene eliminata definitivamente. 
 
 Per ulteriori informazioni sui criteri di conservazione di Office 365, vedere [Overview of](retention-policies.md)Retention Policies.
   
@@ -129,23 +129,23 @@ Il risultato è che gli elementi nella cassetta postale inattiva vengono conserv
   
 #### <a name="use-the-eac-to-change-the-hold-duration"></a>Modifica della durata del blocco tramite l'interfaccia di amministrazione di Exchange
 
-1. Se si conosce il nome del blocco sul posto che si desidera modificare, passare al passaggio successivo. In caso contrario, eseguire il comando riportato di seguito per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto ottenuto nel [passaggio 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
+1. Se si conosce il nome del blocco sul posto che si desidera modificare, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto ottenuto nel [passaggio 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
-2. Nell'interfaccia di amministrazione di Exchange, andare a **gestione** \> **della conformità &amp; sul posto eDiscovery Hold**.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Selezionare il blocco sul posto che si desidera modificare, quindi fare clic su **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
     
-4. Nella pagina proprietà **blocco eDiscovery &amp; sul posto** fare clic su **blocco sul posto**. 
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**. 
     
 5. Eseguire una delle operazioni seguenti in base alla durata del blocco corrente:
     
 1. Fare clic su **Blocca illimitatamente** per conservare gli elementi per un periodo di tempo illimitato. 
     
-2. Fare clic su **Specifica numero di giorni per contenere gli elementi relativi alla data di ricezione** in modo che gli elementi vengano conservati per un periodo specifico. Digitare il numero di giorni in cui si desidera conservare gli elementi. 
+2. Fare clic su **Specifica numero di giorni per contenere gli elementi relativi alla data di ricezione** in modo che gli elementi vengano conservati per un periodo specifico. Specificare il numero dei giorni per i quali bloccare gli elementi. 
     
     ![Schermata della modifica della durata per un blocco sul posto](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
@@ -153,7 +153,7 @@ Il risultato è che gli elementi nella cassetta postale inattiva vengono conserv
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Utilizzare Exchange Online PowerShell per modificare la durata del blocco
 
-1. Se si conosce il nome del blocco sul posto che si desidera modificare, passare al passaggio successivo. In caso contrario, eseguire il comando riportato di seguito per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto ottenuto nel [passaggio 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
+1. Se si conosce il nome del blocco sul posto che si desidera modificare, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto ottenuto nel [passaggio 1](#step-1-identify-the-holds-on-an-inactive-mailbox).
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name

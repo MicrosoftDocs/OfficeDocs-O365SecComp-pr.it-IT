@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862438"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001089"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -34,7 +34,7 @@ In questo esempio, contoso LTD è un'organizzazione di Office 365 costituita da 
   
 - La funzionalità di filtro delle autorizzazioni di ricerca nella ricerca contenuto controlla i percorsi di contenuto in cui i responsabili e gli investigatori di eDiscovery possono eseguire ricerche. Questo significa che i responsabili e gli investigatori di eDiscovery della Fourth Coffee Agency possono solo ricercare i percorsi dei contenuti nell'affiliata di Fourth Coffee. La stessa restrizione si applica alla filiale di Coho Winery.
     
-    I gruppi di ruoli controllano gli utenti che possono visualizzare i casi di &amp; eDiscovery nel centro sicurezza e conformità di Office 365. Questo significa che i responsabili e gli investigatori di eDiscovery possono vedere solo i casi di eDiscovery nell'agenzia.
+    I gruppi di ruoli controllano gli utenti che possono visualizzare i casi di eDiscovery nel centro sicurezza & Compliance. Questo significa che i responsabili e gli investigatori di eDiscovery possono vedere solo i casi di eDiscovery nell'agenzia.
     
 - I gruppi di ruoli consentono anche di controllare chi può assegnare membri a un caso di eDiscovery. Questo significa che i responsabili e gli investigatori di eDiscovery possono solo assegnare i membri ai casi in cui essi stessi sono membri.
     
@@ -84,9 +84,9 @@ Dopo aver apportato la modifica dell'ingegneria e l'attributo è sincronizzato c
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Passaggio 3: creare un gruppo di ruoli per ogni agenzia
 
-Il passaggio successivo consiste nel creare i gruppi di ruoli nel centro sicurezza &amp; e conformità di Office 365 che verranno allineati alle agenzie. È consigliabile creare un nuovo gruppo di ruoli copiando il gruppo dei responsabili di eDiscovery incorporati, aggiungendo i membri corretti e rimuovendo i ruoli che potrebbero non essere applicabili alle proprie esigenze. Per ulteriori informazioni sui ruoli correlati a eDiscovery, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
+Il passaggio successivo consiste nel creare i gruppi di ruoli nel centro sicurezza & Compliance che si allineerà con le agenzie. È consigliabile creare un nuovo gruppo di ruoli copiando il gruppo dei responsabili di eDiscovery incorporati, aggiungendo i membri corretti e rimuovendo i ruoli che potrebbero non essere applicabili alle proprie esigenze. Per ulteriori informazioni sui ruoli correlati a eDiscovery, vedere [assign eDiscovery Permissions in the Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
   
-Per creare i gruppi di ruoli, passare alla pagina **autorizzazioni** nel centro conformità &amp; di sicurezza e creare un gruppo di ruoli per ogni team in ogni agenzia che utilizzerà i limiti di conformità e i casi di eDiscovery per gestire le indagini. 
+Per creare i gruppi di ruoli, passare alla pagina **autorizzazioni** nel centro conformità di sicurezza & e creare un gruppo di ruoli per ogni team in ogni agenzia che utilizzerà i limiti di conformità e i casi di eDiscovery per gestire le indagini. 
   
 Utilizzando lo scenario dei limiti di conformità di Contoso, è necessario creare quattro gruppi di ruoli e aggiungere i membri corretti a ognuno di essi.
   
@@ -144,16 +144,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Passaggio 5: creare un caso di eDiscovery per indagini intra-Agency
 
-Il passaggio finale consiste nel creare un nuovo caso di eDiscovery nel centro &amp; sicurezza e quindi aggiungere il gruppo di ruoli, creato nel passaggio 3, come membro del caso. Questo comporta due importanti caratteristiche dell'utilizzo dei limiti di conformità:
+Il passaggio finale consiste nel creare un nuovo caso di eDiscovery nel centro sicurezza e conformità di & e quindi aggiungere il gruppo di ruoli, creato nel passaggio 3, come membro del caso. Questo comporta due importanti caratteristiche dell'utilizzo dei limiti di conformità:
   
-- Solo i membri del gruppo di ruoli aggiunti al caso saranno in grado di visualizzare e accedere al caso nel centro sicurezza &amp; e conformità. Ad esempio, se il gruppo di ruolo investigatori di Fourth Coffee è l'unico membro di un caso, i membri del gruppo di ruoli Fourth Coffee eDiscovery Managers (o membri di qualsiasi altro gruppo di ruoli) non potranno visualizzare o accedere al caso.
+- Solo i membri del gruppo di ruoli aggiunti al caso saranno in grado di visualizzare e accedere al caso nel centro sicurezza & Compliance. Ad esempio, se il gruppo di ruolo investigatori di Fourth Coffee è l'unico membro di un caso, i membri del gruppo di ruoli Fourth Coffee eDiscovery Managers (o membri di qualsiasi altro gruppo di ruoli) non potranno visualizzare o accedere al caso.
     
 - Quando un membro del gruppo di ruoli assegnato a un caso esegue una ricerca associata al caso, sarà in grado di eseguire la ricerca solo nei percorsi di contenuto all'interno della propria agenzia (definiti dal filtro delle autorizzazioni di ricerca creato nel passaggio 4).
 
 
 Per creare un nuovo caso e assegnare membri:
     
-1. Passare alla pagina **eDiscovery** nel centro conformità sicurezza &amp; e creare un nuovo caso. 
+1. Passare alla pagina **eDiscovery** nel centro sicurezza e conformità & e creare un nuovo caso. 
     
 2. Nell'elenco dei casi di eDiscovery, fare clic sul nome del caso appena creato.
     
@@ -242,7 +242,7 @@ Quando si esegue la ricerca e l'esportazione di contenuto in ambienti multi-Geo,
 
  **Chi può creare e gestire i filtri delle autorizzazioni di ricerca (utilizzando i cmdlet New-ComplianceSecurityFilter e set-ComplianceSecurityFilter)?**
   
-Per creare, visualizzare e modificare i filtri delle autorizzazioni di ricerca, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro &amp; sicurezza e conformità.
+Per creare, visualizzare e modificare i filtri delle autorizzazioni di ricerca, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro conformità & sicurezza.
   
  **Se un responsabile di eDiscovery viene assegnato a più di un gruppo di ruoli che si estende su più agenzie, in che modo viene eseguita la ricerca del contenuto in un'agenzia o nell'altra?**
   

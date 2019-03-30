@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'Utilizzare uno script di PowerShell per creare una ricerca eDiscovery sul posto in Exchange online in base a una ricerca creata nel centro sicurezza &amp; e conformità di Office 365. '
-ms.openlocfilehash: 03df28094f29ced5a299aeb4f2140c3c3b0eba8c
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Utilizzare uno script di PowerShell per creare una ricerca eDiscovery sul posto in Exchange online in base a una ricerca creata nel centro sicurezza & Compliance. '
+ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935251"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000029"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilizzare la ricerca di contenuto nel flusso di lavoro di eDiscovery
 
-La funzionalità di ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 consente di effettuare una ricerca in tutte le cassette postali dell'organizzazione. A differenza di eDiscovery sul posto in Exchange Online (dove è possibile effettuare ricerche fino a 10.000 cassette postali), non esistono limiti per il numero di cassette postali di destinazione in una singola ricerca. Per gli scenari che richiedono di eseguire ricerche a livello dell'intera organizzazione, è possibile utilizzare Ricerca contenuto per effettuare ricerche in tutte le cassette postali. È quindi possibile utilizzare le funzionalità per i flussi di lavoro di eDiscovery sul posto per eseguire altre attività relative a eDiscovery, come la conservazione delle cassette postali e l'esportazione dei risultati di ricerca. Ad esempio, si supponga di dover effettuare una ricerca in tutte le cassette postali per identificare responsabili specifici di un caso legale. È possibile utilizzare la ricerca contenuto nel centro &amp; sicurezza e conformità per eseguire ricerche in tutte le cassette postali dell'organizzazione per identificare quelle che rispondono al caso. Successivamente, è possibile utilizzare l'elenco delle cassette postali del custode come cassette postali di origine per una ricerca eDiscovery sul posto in Exchange Online. eDiscovery sul posto consente, inoltre, di abilitare una conservazione per tali cassette postali di origine, copiare i risultati della ricerca in una cassetta postale di individuazione ed esportare i risultati della ricerca.
+La funzionalità di ricerca contenuto nel centro sicurezza & Compliance consente di effettuare una ricerca in tutte le cassette postali dell'organizzazione. A differenza di eDiscovery sul posto in Exchange Online (dove è possibile effettuare ricerche fino a 10.000 cassette postali), non esistono limiti per il numero di cassette postali di destinazione in una singola ricerca. Per gli scenari che richiedono di eseguire ricerche a livello dell'intera organizzazione, è possibile utilizzare Ricerca contenuto per effettuare ricerche in tutte le cassette postali. È quindi possibile utilizzare le funzionalità per i flussi di lavoro di eDiscovery sul posto per eseguire altre attività relative a eDiscovery, come la conservazione delle cassette postali e l'esportazione dei risultati di ricerca. Ad esempio, si supponga di dover effettuare una ricerca in tutte le cassette postali per identificare responsabili specifici di un caso legale. È possibile utilizzare la ricerca contenuto nel centro sicurezza & Compliance per eseguire una ricerca in tutte le cassette postali dell'organizzazione per identificare quelle che rispondono al caso. Successivamente, è possibile utilizzare l'elenco delle cassette postali del custode come cassette postali di origine per una ricerca eDiscovery sul posto in Exchange Online. eDiscovery sul posto consente, inoltre, di abilitare una conservazione per tali cassette postali di origine, copiare i risultati della ricerca in una cassetta postale di individuazione ed esportare i risultati della ricerca.
   
-In questo argomento è incluso uno script che è possibile eseguire per creare una ricerca eDiscovery sul posto in Exchange Online utilizzando l'elenco delle cassette postali di origine e la query di ricerca di una &amp; ricerca creata nel centro sicurezza e conformità. Di seguito viene fornita una panoramica del processo:
+In questo argomento è incluso uno script che è possibile eseguire per creare una ricerca eDiscovery sul posto in Exchange Online utilizzando l'elenco delle cassette postali di origine e la query di ricerca di una ricerca creata nel centro sicurezza & Compliance. Di seguito viene fornita una panoramica del processo:
   
 [Passaggio 1: creare una ricerca di contenuto per effettuare una ricerca in tutte le cassette postali dell'organizzazione](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,16 +33,16 @@ In questo argomento è incluso uno script che è possibile eseguire per creare u
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Passaggio 1: creare una ricerca di contenuto per effettuare una ricerca in tutte le cassette postali dell'organizzazione
 
-Il primo passaggio consiste nell'utilizzare il centro &amp; conformità di sicurezza (o PowerShell di & Compliance Center) per creare una ricerca di contenuto in cui vengono eseguite ricerche in tutte le cassette postali dell'organizzazione. Non esiste alcun limite al numero di cassette postali per una singola ricerca di contenuto. Specificare una query con parole chiave appropriate (o una query per tipi di informazioni riservate) in modo che la ricerca restituisca solo le cassette postali di origine rilevanti per l'analisi. Se necessario, è possibile perfezionare la query di ricerca per circoscrivere l'ambito dei risultati di ricerca e il numero di cassette postali di origine restituite.
+Il primo passaggio consiste nell'utilizzare il Centro sicurezza & Compliance (o la sicurezza & Compliance Center PowerShell) per creare una ricerca di contenuto che cerca tutte le cassette postali dell'organizzazione. Non esiste alcun limite al numero di cassette postali per una singola ricerca di contenuto. Specificare una query con parole chiave appropriate (o una query per tipi di informazioni riservate) in modo che la ricerca restituisca solo le cassette postali di origine rilevanti per l'analisi. Se necessario, è possibile perfezionare la query di ricerca per circoscrivere l'ambito dei risultati di ricerca e il numero di cassette postali di origine restituite.
   
 > [!NOTE]
 > Se la ricerca di contenuto di origine non restituisce risultati, non viene creata una ricerca eDiscovery sul posto quando si esegue lo script indicato al passaggio 3. Potrebbe essere necessario rivedere la query di ricerca ed eseguire di nuovo la ricerca di contenuto per ottenere dei risultati. 
   
-### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>Utilizzare il centro &amp; sicurezza e conformità per effettuare ricerche in tutte le cassette postali
+### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Utilizzare il Centro sicurezza e conformità per effettuare ricerche in tutte le cassette postali
 
-1. [Accedere al centro sicurezza &amp; e conformità di Office 365](go-to-the-securitycompliance-center.md). 
+1. [Accedere al centro sicurezza e conformità di &](go-to-the-securitycompliance-center.md). 
     
-2. **** ![su ricerca ricerche, fare clic su **Ricerca contenuto**e quindi su](media/O365-MDM-CreatePolicy-AddIcon.gif)nuova icona Aggiungi. ** &amp; **
+2.  > Fare **** clic su ricerca**contenuto**ricerca, quindi fare clic su nuova](media/O365-MDM-CreatePolicy-AddIcon.gif)icona di **ricerca** ![Aggiungi.
     
 3. Nella pagina **Nuova ricerca**, digitare un nome per la ricerca di contenuto. 
     
@@ -58,7 +58,7 @@ Il primo passaggio consiste nell'utilizzare il centro &amp; conformità di sicur
     
 ### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Utilizzare PowerShell per la sicurezza di & Compliance Center per cercare tutte le cassette postali
 
-È inoltre possibile utilizzare il cmdlet **New-ComplianceSearch** per effettuare ricerche in tutte le cassette postali dell'organizzazione. Il primo passaggio consiste nel [connettersi a PowerShell per centro &amp; sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+È inoltre possibile utilizzare il cmdlet **New-ComplianceSearch** per effettuare ricerche in tutte le cassette postali dell'organizzazione. Il primo passaggio consiste nel [connettersi a PowerShell per Centro sicurezza _AMP_ Compliance](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Di seguito è riportato un esempio di utilizzo di PowerShell per eseguire una ricerca in tutte le cassette postali dell'organizzazione. La query di ricerca restituisce tutti i messaggi inviati tra il 1° gennaio 2015 e il 30 giugno 2015 e contenenti la frase "relazione finanziaria" nella riga dell'oggetto. Il primo comando crea la ricerca e il secondo la esegue. 
   
@@ -124,7 +124,7 @@ Se sono presenti più di 1.000 cassette postali di origine, provare a creare due
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Passaggio 2: connettersi al centro conformità \& di sicurezza e a Exchange online in una singola sessione di PowerShell remota
 
-Il passaggio successivo consiste nel connettere Windows PowerShell al centro conformità di &amp; sicurezza e all'organizzazione di Exchange Online. Questa operazione è necessaria perché lo script eseguito nel passaggio 3 richiede l'accesso ai cmdlet di ricerca del contenuto nel centro conformità &amp; di sicurezza e i cmdlet di eDiscovery sul posto in Exchange Online.
+Il passaggio successivo consiste nel connettere Windows PowerShell al centro sicurezza e conformità di & e all'organizzazione di Exchange Online. Questa operazione è necessaria perché lo script eseguito nel passaggio 3 richiede l'accesso ai cmdlet di ricerca contenuto nel centro sicurezza e conformità di & e i cmdlet di eDiscovery sul posto in Exchange Online.
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell con il suffisso del nome .ps1. Ad esempio, è possibile salvarlo in un file denominato `ConnectEXO-CC.ps1`.
     
@@ -143,7 +143,7 @@ Il passaggio successivo consiste nel connettere Windows PowerShell al centro con
     .\ConnectEXO-CC.ps1
     ```
 
-Come si può verificare se l'operazione ha avuto esito positivo? Dopo aver eseguito lo script, i cmdlet del Centro sicurezza &amp; e conformità di Exchange Online vengono importati nella sessione di PowerShell locale. Se non vengono visualizzati errori, la connessione è stata eseguita correttamente. Un test rapido consiste nell'eseguire un cmdlet &amp; del Centro sicurezza e conformità, ad esempio **Install-UnifiedCompliancePrerequisite** , e un cmdlet di Exchange Online, come **Get-Mailbox**. 
+Come si può verificare se l'operazione ha avuto esito positivo? Dopo aver eseguito lo script, i cmdlet del Centro sicurezza e conformità di & e di Exchange Online vengono importati nella sessione di PowerShell locale. Se non vengono visualizzati errori, la connessione è stata eseguita correttamente. Un test rapido consiste nell'eseguire un cmdlet del Centro sicurezza & Compliance, ad esempio **Install-UnifiedCompliancePrerequisite** , e un cmdlet di Exchange Online, come **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Passaggio 3: eseguire lo script per creare una ricerca eDiscovery sul posto dalla ricerca di contenuto
 

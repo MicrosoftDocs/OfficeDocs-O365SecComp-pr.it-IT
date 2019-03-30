@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Spiegazione di come funziona la registrazione interna per i team di ingegneri di Office 365.
-ms.openlocfilehash: 68f8763b9a647de462f402e40a4c78749343dfd9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216496"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004218"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Log interni per Office 365 Engineering
 Oltre agli eventi e ai dati dei registri disponibili per i clienti, è presente anche un sistema di raccolta dati interno disponibile per gli ingegneri di Office 365. Molti tipi diversi di dati di log vengono caricati dai server di Office 365 a un servizio di elaborazione dati di grandi dimensioni interno denominato Cosmos. Ogni team di servizio carica i registri di controllo dai rispettivi server nel database Cosmos per l'aggregazione e l'analisi. Questo trasferimento dei dati si verifica su una connessione TLS convalidata FIPS 140-2 su porte e protocolli approvati utilizzando uno strumento di automazione proprietaria denominato Office Data Loader (FAD). Gli strumenti utilizzati in Office 365 per la raccolta e l'elaborazione dei record di controllo non consentono modifiche permanenti o irreversibili al contenuto del record di controllo originale o all'ordine di tempo.

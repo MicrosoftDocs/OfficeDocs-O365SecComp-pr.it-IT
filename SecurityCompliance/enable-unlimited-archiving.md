@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione in espansione automatica in Office 365, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670621"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000849"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Abilitare l'archiviazione illimitata in Office 365-Guida per gli amministratori
 
@@ -31,20 +31,20 @@ ms.locfileid: "30670621"
 
 - È necessario essere un amministratore globale dell'organizzazione di Office 365 o un membro del gruppo di ruoli Gestione organizzazione nell'organizzazione di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione o per utenti specifici. In alternativa, è necessario essere membri di un gruppo di ruoli a cui è stato assegnato il ruolo destinatari di posta elettronica per abilitare l'archiviazione in espansione automatica per utenti specifici.
     
-- La cassetta postale di archiviazione di un utente deve essere abilitata prima di poter abilitare l'archiviazione automatica. A un utente deve essere assegnata una licenza di Exchange Online piano 2 per abilitare la cassetta postale di archiviazione. Se a un utente è assegnata una licenza di Exchange Online piano 1, è necessario assegnare loro una licenza di archiviazione Exchange Online separata per abilitare la cassetta postale di archivio. Vedere [abilitare le cassette postali di archiviazione nel &amp; Centro sicurezza e conformità di Office 365](enable-archive-mailboxes.md).
+- La cassetta postale di archiviazione di un utente deve essere abilitata prima di poter abilitare l'archiviazione automatica. A un utente deve essere assegnata una licenza di Exchange Online piano 2 per abilitare la cassetta postale di archiviazione. Se a un utente è assegnata una licenza di Exchange Online piano 1, è necessario assegnare loro una licenza di archiviazione Exchange Online separata per abilitare la cassetta postale di archivio. Vedere [abilitare le cassette postali di archiviazione nel centro sicurezza _AMP_ Compliance](enable-archive-mailboxes.md).
     
 - È inoltre possibile utilizzare PowerShell per abilitare le cassette postali di archiviazione. Vedere la sezione [ulteriori informazioni](#more-information) per un esempio di comando di PowerShell che è possibile utilizzare per abilitare le cassette postali di archiviazione per tutti gli utenti dell'organizzazione. 
     
 - L'espansione automatica dell'archivio supporta anche le cassette postali condivise. Per abilitare l'archivio per una cassetta postale condivisa, è necessaria una licenza di Exchange Online piano 2 o una licenza di Exchange Online piano 1 con una licenza di archiviazione Exchange Online.
     
-- Non è possibile utilizzare l'interfaccia di amministrazione di Exchange &amp; o il Centro sicurezza e conformità per abilitare l'archiviazione in espansione automatica. È necessario utilizzare Exchange Online PowerShell. Per connettersi a un'organizzazione di Exchange Online utilizzando PowerShell remoto, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Non è possibile utilizzare l'interfaccia di amministrazione di Exchange o il Centro sicurezza & Compliance per abilitare l'archiviazione in espansione automatica. È necessario utilizzare Exchange Online PowerShell. Per connettersi a un'organizzazione di Exchange Online utilizzando PowerShell remoto, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Abilitare l'archiviazione in espansione automatica per l'intera organizzazione
 
 È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione. Dopo averlo attivato, l'archiviazione con espansione automatica sarà abilitata per le cassette postali degli utenti esistenti e per le nuove cassette postali degli utenti create. Quando si creano nuove cassette postali utente, assicurarsi di abilitare la cassetta postale di archiviazione principale dell'utente in modo che la funzionalità di archiviazione in espansione automatica funzioni per la nuova cassetta postale utente.
   
-1. [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Eseguire il seguente comando in PowerShell di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione.
 
@@ -64,7 +64,7 @@ Quando si Abilita l'archiviazione in espansione automatica per un utente specifi
     
 Questo spazio aggiuntivo viene aggiunto per evitare eventuali problemi di archiviazione che possono verificarsi prima del provisioning dell'archivio con espansione automatica. Si noti che lo spazio di archiviazione aggiuntivo *non viene* aggiunto quando si Abilita l'archiviazione in espansione automatica per l'intera organizzazione, come descritto nella sezione precedente. 
   
-1. [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Eseguire il seguente comando in PowerShell di Exchange Online per abilitare l'archiviazione in espansione automatica per un utente specifico. Come spiegato in precedenza, la cassetta postale di archiviazione dell'utente (archivio principale) deve essere abilitata prima di poter attivare l'archiviazione in espansione automatica per tale utente.
     

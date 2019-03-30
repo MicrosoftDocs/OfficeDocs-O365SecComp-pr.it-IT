@@ -1,5 +1,5 @@
 ---
-title: Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR &amp; nel centro sicurezza e conformità di Office 365
+title: Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro sicurezza &amp; e conformità di Office 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900145"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000109"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR &amp; nel centro sicurezza e conformità di Office 365
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
 Il regolamento generale sulla protezione dei dati (GDPR) dell'UE riguarda la protezione e l'abilitazione dei diritti di privacy degli individui all'interno dell'Unione europea (UE). Il GDPR fornisce agli individui nell'Unione europea (noti come soggetti di dati) il diritto di accedere, recuperare, correggere, cancellare e limitare l'elaborazione dei dati personali. In GDPR, i dati personali significano tutte le informazioni relative a una persona fisica identificata o identificabile. Una richiesta formale da parte di una persona alla propria organizzazione di intraprendere un'azione sui propri dati personali è denominata richiesta del soggetto dei dati o DSR. Per informazioni dettagliate sulla risposta a richieste DSR per i dati in Office 365, vedere [office 365 data Subject Request guide](https://go.microsoft.com/fwlink/?linkid=871169 ).
   
-Per gestire le indagini in risposta a un DSR inviato da una persona all'interno dell'organizzazione, è possibile utilizzare lo strumento di gestione dei casi DSR nel &amp; Centro sicurezza e conformità di Office 365 per individuare il contenuto archiviato in:
+Per gestire le indagini in risposta a un DSR inviato da una persona all'interno dell'organizzazione, è possibile utilizzare lo strumento di gestione dei casi DSR nel centro sicurezza & Compliance per individuare il contenuto archiviato in:
   
 - Qualsiasi cassetta postale dell'utente nell'organizzazione. Questo include conversazioni di Skype for business e chat One-to-One in Microsoft Teams
     
@@ -42,7 +42,7 @@ Se si utilizza lo strumento di caso DSR, è possibile:
   
 - Creare un caso distinto per ogni indagine DSR.
     
-- Controllare chi ha accesso al caso DSR aggiungendo persone come membri del caso. solo i membri possono accedere al caso e possono visualizzarne solo i casi nell'elenco dei casi nella pagina **casi DSR** nel centro sicurezza &amp; e conformità. È inoltre possibile assegnare autorizzazioni diverse a membri diversi dello stesso caso. Ad esempio, è possibile consentire ad alcuni membri di visualizzare solo il caso e i risultati della ricerca e consentire ad altri membri di creare ricerche ed esportare i risultati della ricerca. 
+- Controllare chi ha accesso al caso DSR aggiungendo persone come membri del caso. solo i membri possono accedere al caso e possono visualizzarne solo i casi nell'elenco dei casi nella pagina **casi DSR** nel centro sicurezza & Compliance. È inoltre possibile assegnare autorizzazioni diverse a membri diversi dello stesso caso. Ad esempio, è possibile consentire ad alcuni membri di visualizzare solo il caso e i risultati della ricerca e consentire ad altri membri di creare ricerche ed esportare i risultati della ricerca. 
     
 - Utilizzare la ricerca incorporata per cercare tutto il contenuto creato o caricato da uno specifico soggetto dei dati.
     
@@ -73,20 +73,20 @@ Di seguito è indicato il processo di alto livello per l'utilizzo dello strument
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
-Per impostazione predefinita, un amministratore globale di Office 365 può accedere allo strumento dei casi DSR &amp; nel centro sicurezza e conformità. In base alla progettazione, altri utenti, ad esempio un responsabile della privacy dei dati, un manager delle risorse umane o altre persone coinvolte in indagini DSR, non hanno accesso allo strumento per i casi DSR e dovranno essere assegnate le autorizzazioni appropriate per accedere allo strumento. Il modo più semplice per eseguire questa operazione consiste nell'accedere alla pagina **autorizzazioni** nel centro &amp; conformità di sicurezza e aggiungere gli utenti al gruppo di ruoli eDiscovery Manager. Tenere presente che è inoltre necessario assegnare queste autorizzazioni in modo da poterle aggiungere come membri del caso DSR creato nel passaggio 2. 
+Per impostazione predefinita, un amministratore globale di Office 365 può accedere allo strumento dei casi DSR nel centro sicurezza & Compliance. In base alla progettazione, altri utenti, ad esempio un responsabile della privacy dei dati, un manager delle risorse umane o altre persone coinvolte in indagini DSR, non hanno accesso allo strumento per i casi DSR e dovranno essere assegnate le autorizzazioni appropriate per accedere allo strumento. Il modo più semplice per eseguire questa operazione consiste nell'accedere alla pagina **autorizzazioni** nel centro sicurezza e conformità di & e aggiungere gli utenti al gruppo di ruoli Gestione eDiscovery. Tenere presente che è inoltre necessario assegnare queste autorizzazioni in modo da poterle aggiungere come membri del caso DSR creato nel passaggio 2. 
   
-Per istruzioni dettagliate, vedere [assegnare le autorizzazioni di &amp; eDiscovery nel centro sicurezza e conformità di Office 365](assign-ediscovery-permissions.md).
+Per istruzioni dettagliate, vedere [assegnare le autorizzazioni di eDiscovery nel centro conformità _AMP_ sicurezza di Office 365](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel &amp; Centro sicurezza e conformità non dispongono delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto (vedere il passaggio 4 in questo articolo). Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
+> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance non dispongono delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto (vedere il passaggio 4 in questo articolo). Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Passaggio 2: creare un caso DSR e aggiungere membri
 
 Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso, è possibile scegliere di avviare la ricerca incorporata oppure è possibile creare il caso senza avviare la ricerca. La procedura seguente consente di creare il caso senza avviare la ricerca e quindi di mostrare come aggiungere membri al caso.
   
-1. [https://protection.office.com](https://protection.office.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
     
-2. Nel centro sicurezza &amp; e conformità, fare clic su **richieste degli interessati**per ![la](media/ITPro-EAC-AddIcon.gif) **privacy** \> dei dati e quindi fare clic su Aggiungi **nuovo caso DSR**.
+2. Nel centro sicurezza & Compliance fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su ![Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo caso DSR**.
     
 3. Nella pagina **nuovo** riquadro a comparsa del modello DSR, assegnare un nome al caso, digitare una descrizione facoltativa e quindi fare clic su **Avanti**. Tenere presente che il nome del caso deve essere univoco nell'organizzazione.
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Per eseguire la ricerca incorporata per un caso DSR:**
   
-1. Nel centro sicurezza &amp; e conformità, fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
+1. Nel centro sicurezza & Compliance fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
     
     Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il nuovo caso DSR. Nota la ricerca ha lo stesso nome del caso DSR. 
     
@@ -164,10 +164,10 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
 Dopo aver eseguito la ricerca incorporata, è possibile esportare i risultati della ricerca. In alternativa, prima di esportare i dati, è possibile che si desideri rivedere la query per ridurre il numero di risultati di ricerca. Per ulteriori informazioni su come limitare i risultati della ricerca, vedere passaggio 5.
   
-Quando si esportano i risultati della ricerca, è possibile scaricare gli elementi delle cassette postali nei file PST o come singoli messaggi. Quando si esporta contenuto dagli account di SharePoint e OneDrive, vengono esportate copie dei documenti di Office native e di altri documenti. Nei risultati della ricerca è incluso anche un file dei risultati che contiene informazioni su tutti gli elementi esportati. Per informazioni più dettagliate sull'esportazione, vedere [esportare i risultati della ricerca contenuto dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
+Quando si esportano i risultati della ricerca, è possibile scaricare gli elementi delle cassette postali nei file PST o come singoli messaggi. Quando si esporta contenuto dagli account di SharePoint e OneDrive, vengono esportate copie dei documenti di Office native e di altri documenti. Nei risultati della ricerca è incluso anche un file dei risultati che contiene informazioni su tutti gli elementi esportati. Per informazioni più dettagliate sull'esportazione, vedere [Export content search results](export-search-results.md).
   
 > [!NOTE]
-> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel &amp; Centro sicurezza e conformità) non dispone delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto. Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
+> Per impostazione predefinita, un amministratore globale di Office 365 (o altri membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance) non dispone delle autorizzazioni necessarie per esportare i risultati della ricerca del contenuto. Per risolvere questo ruolo, un amministratore può aggiungersi come membro del gruppo di ruoli eDiscovery Manager. 
   
 Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti di sistema:
   
@@ -188,7 +188,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
   
  **Per esportare i dati dalla ricerca incorporata in un caso DSR:**
   
-1. Nel centro sicurezza &amp; e conformità fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR da cui si desidera esportare i dati. 
+1. Nel centro sicurezza & Compliance fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR da cui si desidera esportare i dati. 
     
 2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il caso DSR. Oppure fare clic su un'altra ricerca per esportare i dati dalla ricerca. 
     
@@ -229,7 +229,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
   
 13. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
     
-    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. Per ulteriori informazioni sui report che includono quando si scaricano i risultati della ricerca contenuto, vedere la sezione [altre informazioni](export-search-results.md#more-information) in "esportare i risultati della ricerca contenuto dal &amp; Centro sicurezza e conformità di Office 365". 
+    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. Per ulteriori informazioni sui report che includono quando si scaricano i risultati della ricerca contenuto, vedere la sezione [altre informazioni](export-search-results.md#more-information) in "esportare i risultati della ricerca del contenuto". 
     
 Una volta esportati i dati, i risultati della ricerca e i report di esportazione si trovano in una cartella con lo stesso nome del caso DSR. I file PST che contengono gli elementi delle cassette postali si trovano in una sottocartella denominata **Exchange**. I documenti e gli altri elementi provenienti dai siti si trovano in una sottocartella denominata **SharePoint**. 
   
@@ -304,7 +304,7 @@ Quando si esportano dati da Analytics e dal servizio di roaming di Office, i dat
    
  **Per eseguire la ricerca e l'esportazione di dati di analisi e di servizio di roaming di Office:**
   
-1. Nel centro sicurezza &amp; e conformità, fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dei dati per il quale si desidera esportare i dati di utilizzo. 
+1. Nel centro sicurezza & Compliance fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dei dati per il quale si desidera esportare i dati di utilizzo. 
     
 2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
     

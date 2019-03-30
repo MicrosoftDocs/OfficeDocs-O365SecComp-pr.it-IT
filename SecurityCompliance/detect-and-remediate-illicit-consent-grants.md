@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656072"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999939"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -86,7 +86,7 @@ Lo script produce un file denominato perMissions. csv. Eseguire la procedura seg
 4.  Nella colonna ClientDisplayName (colonna C) cercare le app che risultano sospette. Le app con nomi di ortografia errati, nomi Super blandi o nomi di hacker devono essere esaminate con attenzione.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
-Dopo aver completato l'inventario dell'applicazione, esaminare il **Registro di controllo** di Office 365 per determinare l'ambito completo della violazione.  Cercare negli utenti coinvolti, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni dell'app. È possibile eseguire una ricerca nel **Registro di controllo** nel [Centro sicurezza e conformità di Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
+Dopo aver completato l'inventario dell'applicazione, esaminare il **Registro di controllo** di Office 365 per determinare l'ambito completo della violazione.  Cercare negli utenti coinvolti, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni dell'app. È possibile eseguire una ricerca nel **Registro di controllo** nel [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
 
 > [!IMPORTANT]
 > Il controllo [delle cassette postali](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) e il [controllo delle attività per gli amministratori e gli utenti](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014) devono essere stati abilitati prima dell'attacco per ottenere queste informazioni.

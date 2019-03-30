@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul nuovo centro conformità di Microsoft 365, incluso quello che contiene, su come ottenerlo e sui passaggi successivi.
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950443"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001039"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Benvenuti nel nuovo centro conformità di Microsoft 365
 
@@ -83,7 +83,7 @@ Oltre ai collegamenti nelle schede nella Home page, è disponibile un riquadro d
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Perché sono state apportate al centro conformità di Office 365 Security & per eseguire alcune attività, come la definizione di determinati criteri?
 
-È ancora in corso lo sviluppo del centro conformità Microsoft 365 e verranno aggiunte altre funzionalità e soluzioni nei prossimi mesi. Nel frattempo, esistono alcune attività che devono essere eseguite nel centro conformità di Office 365 Security &. In questi casi, l'utente verrà indirizzato automaticamente al percorso in cui è possibile eseguire l'attività, ad esempio la creazione o la modifica di un criterio di supervisione.
+È ancora in corso lo sviluppo del centro conformità Microsoft 365 e verranno aggiunte altre funzionalità e soluzioni nei prossimi mesi. Nel frattempo, sono presenti alcune attività che devono essere eseguite nel centro conformità di sicurezza di &. In questi casi, l'utente verrà indirizzato automaticamente al percorso in cui è possibile eseguire l'attività, ad esempio la creazione o la modifica di un criterio di supervisione.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Perché non viene ancora visualizzato il nuovo centro conformità di Microsoft 365?
 

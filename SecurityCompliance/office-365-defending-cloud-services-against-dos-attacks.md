@@ -3,23 +3,22 @@ title: Office 365 difesa dei servizi cloud per gli attacchi Denial of Service
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: In che modo Microsoft difende i propri servizi cloud contro gli attacchi DoS (Denial of Service).
-ms.openlocfilehash: d284ace935e0f90417b3b009d76e3b282b08bc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 784e17d4b80ac990c903c96f92cd6b96f194439b
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212796"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004183"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Difesa dei servizi cloud Microsoft in base agli attacchi Denial of Service
 

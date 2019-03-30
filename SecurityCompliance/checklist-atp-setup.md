@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Ecco una guida introduttiva che è possibile utilizzare per assicurarsi che Office 365 Advanced Threat Protection (ATP) sia impostato e configurato per l'organizzazione.
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693298"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999399"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guida introduttiva: configurare Office 365 Advanced Threat Protection
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guida introduttiva: Configurare Office 365 Advanced Threat Protection
 
 Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per assicurarsi che Office 365 Advanced Threat Protection (ATP) sia configurato per l'organizzazione. Se si è nuovi per la protezione dalle minacce in Office 365 o non si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza. 
 
@@ -44,7 +44,7 @@ Di seguito è illustrata una guida introduttiva che è possibile utilizzare come
 
 ## <a name="part-1---anti-malware"></a>Parte 1-antimalware
 
-1. nel [centro conformità di Office 365 Security &](https://protection.office.com), scegliere**Anti-malware**per**criteri** > di **gestione** > .
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com)scegliere**anti-malware** **Management** > **policy** > .
 2. Fare doppio clic sul criterio **predefinito** e quindi scegliere **Impostazioni**.
 3. Specificare le impostazioni seguenti:
     - Nella sezione **risposta di rilevamento malware** mantenere l'impostazione predefinita **Nr**.
@@ -59,7 +59,7 @@ La protezione da zero giorni è configurata tramite criteri, ad esempio i colleg
 
 ### <a name="atp-safe-attachments-policies"></a>Criteri per gli allegati sicuri ATP
 
-1. nel [centro conformità di Office 365 Security &](https://protection.office.com), selezionare i**criteri** > di **gestione** > delle minacce per gli**allegati sicuri ATP**.
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com)selezionare i **** > **criteri** > di gestione delle minacce per gli**allegati sicuri ATP**.
 2. Selezionare l'opzione **attiva ATP per SharePoint, OneDrive e Microsoft teams**.
 3. Nella sezione **Proteggi allegati di posta elettronica** , fare clic sul**+** segno più ().
 4. Specificare le impostazioni seguenti:
@@ -76,7 +76,7 @@ Per ulteriori informazioni, vedere [configurare i criteri per gli allegati sicur
 
 Per configurare i collegamenti sicuri di ATP, esaminare i criteri predefiniti e aggiungere un criterio.
 
-1. nel [centro conformità Office 365 Security &](https://protection.office.com), scegliere**criteri** > di **gestione** > delle minacce**ATP collegamenti sicuri**.
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com)scegliere**criteri** > di **gestione** > delle minacce**ATP collegamenti sicuri**.
 2. Fare doppio clic sul criterio **predefinito** .
 3. Nella sezione **use Safe Links in** selezionare l'opzione **Office 365 ProPlus, Office per iOS e Android**e quindi fare clic su **Salva**.
 4. Nella sezione **criteri che si applicano a destinatari specifici** fare clic sul segno più**+**().
@@ -94,7 +94,7 @@ Per ulteriori informazioni, vedere [configurare i criteri dei collegamenti sicur
 
 ## <a name="part-3---anti-phishing"></a>Parte 3-anti-phishing 
 
-1. nel [centro conformità Office 365 Security &](https://protection.office.com), scegliere**criteri** > di **gestione** > delle minacce**ATP anti-phishing**.
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com), scegliere il**criterio** > di **gestione** > delle minacce**ATP anti-phishing**.
 2. Fare clic su **criteri predefiniti**.
 3. Nella sezione **rappresentazione** fare clic su **modifica**e quindi specificare le impostazioni seguenti:
     -  Nella scheda **Aggiungi utenti da proteggere** , attiva la protezione. Aggiungere quindi gli utenti, ad esempio i membri del Consiglio dell'organizzazione, il CEO, il CFO e altri leader senior. (È possibile digitare un singolo indirizzo di posta elettronica o fare clic per visualizzare un elenco).
@@ -112,7 +112,7 @@ Per ulteriori informazioni sulle opzioni relative ai criteri di anti-phishing, v
 
 ## <a name="part-4---anti-spam"></a>Parte 4-protezione da posta indesiderata
 
-1. nel [centro conformità di Office 365 Security &](https://protection.office.com), scegliere protezione dalla**posta**indesiderata **dei** > **criteri** > di gestione delle minacce.
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com), scegliere protezione dalla**posta**indesiderata **dei** > **criteri** > di gestione delle minacce.
 2. Nella scheda **personalizzato** , attiva **impostazioni personalizzate** .
 3. Espandere **criteri di filtro della posta indesideraTa predefiniti**, fare clic su **modifica criteri**e quindi specificare le impostazioni seguenti:
     - Nella sezione **azioni di posta indesiderata e di massa** impostare la soglia su un valore pari a 5 o 6.

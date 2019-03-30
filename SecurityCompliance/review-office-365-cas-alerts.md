@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilizzare la pagina avvisi in Office 365 cloud app Security per visualizzare potenziali problemi e intervenire. È possibile eliminare o risolvere gli avvisi e, se necessario, sospendere un account utente.
-ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000039"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Esaminare gli avvisi per intervenire in Office 365 Cloud App Security
   
@@ -37,7 +37,7 @@ ms.locfileid: "30862468"
 2. Nella barra di spostamento nella parte superiore dello schermo, scegliere **avvisi**.<br/>![Nella pagina avvisi, è possibile visualizzare gli avvisi che sono stati attivati e tutte le azioni intraprese.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
  
 > [!NOTE]
-> gli avvisi per la sicurezza delle App Cloud sono visibili anche nel centro conformità di Office 365 security **** > & (vai a avvisi**visualizza**avvisi. Attualmente, tuttavia, è necessario risolvere questi avvisi sia nel portale cloud app Security che nel centro conformità di Office 365 Security &. Per ulteriori informazioni, vedere [viewIng cloud app Security Alerts](alert-policies.md#viewing-cloud-app-security-alerts). 
+> Gli avvisi di sicurezza delle app Cloud sono visibili anche nel centro conformità sicurezza & ( **** > andare a avvisi**Visualizza**avvisi. Attualmente, tuttavia, è necessario risolvere questi avvisi sia nel portale cloud app Security che nel centro conformità di sicurezza &. Per ulteriori informazioni, vedere [viewIng cloud app Security Alerts](alert-policies.md#viewing-cloud-app-security-alerts). 
  
 ## <a name="review-and-handle-alerts"></a>Esaminare e gestire gli avvisi
 

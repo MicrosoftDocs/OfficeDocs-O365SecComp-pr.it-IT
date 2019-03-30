@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 863cd36d383000b81d1a543d866f24b0380e5fdd
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a0acaf9560b814fe8e87751d3a8f4b6d13b3864a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000599"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza di Microsoft 365
-
-[!include[Prerelease�information](prerelease.md)]
 
 La gestione della sicurezza dell'azienda per proteggersi da un paesaggio di minacce in continua evoluzione comporta molte sfide. Potrebbe essere necessario disporre di troppe soluzioni di sicurezza con diverse posizioni per configurare un numero elevato di controlli e non sapere quali controlli siano i più efficaci e che introdurranno nuove sfide per la forza lavoro. Per i team di sicurezza può essere difficile trovare il giusto equilibrio tra sicurezza e produttività.
 
@@ -51,7 +49,7 @@ Il Centro sicurezza Microsoft 365 include:
 * **Criteri** : configurare i criteri per gestire i dispositivi, proteggerli dalle minacce e ricevere avvisi su varie attività nell'organizzazione organizzativa.
 * **** Permissions-gestire gli utenti dell'organizzazione che dispongono dell'accesso a Microsoft 365 Security Center per visualizzare il contenuto ed eseguire le attività. È inoltre possibile assegnare le autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esigenze di sicurezza:
 

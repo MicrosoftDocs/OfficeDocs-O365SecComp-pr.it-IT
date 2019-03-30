@@ -3,30 +3,29 @@ title: Controlli di accesso amministrativo in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Riepilogo: informazioni generali sui controlli di accesso amministrativo e sulla categorizzazione dei dati di Office 365.'
-ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216026"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004133"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Controlli di accesso amministrativo in Office 365 
 
 ## <a name="introduction"></a>Introduzione
 Microsoft ha investito pesantemente e di conseguenza nei sistemi e nei controlli che automatizzano la maggior parte delle operazioni di Office 365, limitando intenzionalmente l'accesso di Microsoft al contenuto dei clienti. Gli esseri umani regolano il servizio e il software gestisce il servizio. Ciò consente a Microsoft di gestire Office 365 in scala, oltre a gestire i rischi di minacce interne ai contenuti dei clienti, come gli attori maligni, il Spear-phishing di un tecnico Microsoft e così via.
 
-Per impostazione predefinita, i tecnici Microsoft dispongono di privilegi amministrativi pari a zero e di accesso a zero in piedi ai contenuti dei clienti in Office 365. Un tecnico Microsoft può disporre di un accesso limitato, controllato e protetto al contenuto di un cliente per un periodo di tempo limitato, ma solo se necessario per le operazioni di servizio e solo quando è approvato da un membro di Microsoft Senior Management (e per i clienti che sono concesso in licenza per la funzionalità archivio clienti, il cliente.
+Per impostazione predefinita, i tecnici Microsoft non hanno privilegi amministrativi e non hanno accesso ai contenuti dei clienti in Office 365. Un tecnico Microsoft può disporre di un accesso limitato, controllato e protetto al contenuto di un cliente per un periodo di tempo limitato, ma solo se necessario per le operazioni di servizio e solo quando è approvato da un membro di Microsoft Senior Management (e per i clienti che sono concesso in licenza per la funzionalità archivio clienti, il cliente.
 
 Microsoft fornisce servizi online, tra cui Office 365, utilizzando più moduli di recapito cloud:
 

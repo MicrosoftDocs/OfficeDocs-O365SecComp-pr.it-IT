@@ -7,19 +7,19 @@ ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Riepilogo: Descrizione dei controlli di isolamento all'interno di Office 365."
-ms.openlocfilehash: a6ff2b11ea02334a6c47317cbb77b8d47207b552
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 46514a33ad9eff6e2acc71a51b073a79b051c521
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217316"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004173"
 ---
 # <a name="office-365-isolation-controls"></a>Controlli di isolamento di Office 365 
 

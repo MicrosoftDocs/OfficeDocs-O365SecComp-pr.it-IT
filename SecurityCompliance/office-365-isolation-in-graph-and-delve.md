@@ -3,23 +3,22 @@ title: Isolamento tenant di Office 365 nel grafico di Office e approfondire
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Sintesi: una spiegazione dell'isolamento del tenant in Office Graph e in approfondire."
-ms.openlocfilehash: cb1b432dccff6c4f890ef4aeb8ea4c19989b09d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 22bcf581c26ea4e334539a81861ff4dee68967ef
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216806"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004203"
 ---
 # <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Isolamento del tenant in Office Graph e Delve
 
@@ -36,4 +35,5 @@ In Office Graph non vengono portati tutti i dati in un unico repository. piuttos
 L'analisi all'interno di ogni carico di lavoro deduce informazioni rilevanti per i calcoli a livello di tenant e li inserisce nel grafico tenant. I motivi di analisi tenant su tutte le attività in una locazione per produrre informazioni su modelli di comportamento. Ad esempio, Exchange Online calcola la cache dei destinatari per ogni utente con analisi che ragionano efficacemente sulla cassetta postale di ogni utente. Queste analisi per utente producono un insieme di *spigoli RecipientCache* su ogni persona, che a sua volta vengono spinte nel grafico tenant. In questo modo il processo di analisi viene mantenuto il più vicino possibile ai dati di origine.
 
 ## <a name="tenant-isolation-in-delve"></a>Isolamento del tenant nell'approfondimento
-Come accennato in precedenza, Office Graph alimenta le esperienze che consentono agli utenti di individuare e collaborare alle attività correnti nell'organizzazione e fornisce una piattaforma di analisi incentrata su entità per il motivo del contenuto e dell'attività tra i carichi di lavoro e oltre Office 365. Approfondire è la prima esperienza di questo tipo fornita da Office Graph. Approfondire è un'esperienza Web di Office 365 che consente di visualizzare il contenuto di Office 365 e Yammer Enterprise con gli utenti di Office 365 tramite Office Graph. L'esperienza Web consente di visualizzare i dati come schede diverse, ognuna con un determinato argomento, ad esempio i *trend attorno a me* o *modificati da me*. Ogni scheda è costituita da diverse schede documento che visualizzano testo di riepilogo e un'immagine del documento. La scheda consente agli utenti di eseguire operazioni come aprire il documento o una pagina di Yammer per il documento. Vi è una pagina per ogni persona in un tenant di Office 365 che Visualizza i documenti più rilevanti per questa persona e le icone che possono richiamare Exchange Online o Skype for business per interagire con quella persona. Poiché il servizio di approfondimento è basato sull'API di Office Graph, è associato all'isolamento basato sul tenant di tale API.
+Come accennato in precedenza, Office Graph alimenta le esperienze che consentono agli utenti di individuare e collaborare alle attività correnti nell'organizzazione e fornisce una piattaforma di analisi incentrata su entità per il motivo del contenuto e dell'attività tra i carichi di lavoro e oltre Office 365. Approfondire è la prima esperienza di questo tipo fornita da Office Graph.
+Approfondire è un'esperienza Web di Office 365 che consente di visualizzare il contenuto di Office 365 e Yammer Enterprise con gli utenti di Office 365 tramite Office Graph. L'esperienza Web consente di visualizzare i dati come schede diverse, ognuna con un determinato argomento, ad esempio i *trend attorno a me* o *modificati da me*. Ogni scheda è costituita da diverse schede documento che visualizzano testo di riepilogo e un'immagine del documento. La scheda consente agli utenti di eseguire operazioni come aprire il documento o una pagina di Yammer per il documento. Vi è una pagina per ogni persona in un tenant di Office 365 che Visualizza i documenti più rilevanti per questa persona e le icone che possono richiamare Exchange Online o Skype for business per interagire con quella persona. Poiché il servizio di approfondimento è basato sull'API di Office Graph, è associato all'isolamento basato sul tenant di tale API.

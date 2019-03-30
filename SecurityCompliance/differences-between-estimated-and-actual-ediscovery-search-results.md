@@ -16,21 +16,22 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: d3edc73d94d51c2582b6ef2077c5e4c834d1ff82
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d3a34a58f9bd8213922824e34a77742f5cd4c36b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296119"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001049"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
 
-Questo argomento si applica alle ricerche che è possibile eseguire utilizzando uno dei seguenti strumenti di Microsoft eDiscovery:  <br/>  
-- Ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365  <br/>  
+Questo argomento si applica alle ricerche che è possibile eseguire utilizzando uno dei seguenti strumenti di Microsoft eDiscovery: 
+
+- Ricerca contenuto nel centro sicurezza e conformità di &  <br/>  
 - EDiscovery sul posto nell'interfaccia di amministrazione di Exchange (EAC)  <br/>  
 - Centro eDiscovery in SharePoint Online  <br/> 
    
-Quando si esegue una ricerca eDiscovery, lo strumento che si sta utilizzando restituirà una stima del numero di elementi (e delle relative dimensioni totali) che soddisfano i criteri di ricerca. Ad esempio, quando si esegue una ricerca nel centro sicurezza &amp; e conformità, i risultati della ricerca stimati vengono visualizzati nel riquadro dei dettagli per la ricerca selezionata.
+Quando si esegue una ricerca eDiscovery, lo strumento che si sta utilizzando restituirà una stima del numero di elementi (e delle relative dimensioni totali) che soddisfano i criteri di ricerca. Ad esempio, quando si esegue una ricerca nel centro sicurezza & Compliance, i risultati della ricerca stimati vengono visualizzati nel riquadro dei dettagli per la ricerca selezionata.
   
 ![Stima dei risultati visualizzati nel riquadro dei dettagli della ricerca selezionata](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
@@ -56,9 +57,9 @@ Di seguito sono riportate alcune ragioni per queste differenze:
     
 - **Elementi** non indicizzati: gli elementi non indicizzati per la ricerca possono causare differenze tra i risultati di ricerca stimati ed effettivi. Ad esempio, eDiscovery sul posto in Exchange e il centro eDiscovery in SharePoint non includono gli elementi non indicizzati (che non soddisfano i criteri di ricerca) quando si esegue una ricerca per stimare i risultati della ricerca. Tuttavia, è possibile includere gli elementi non indicizzati quando si esportano i risultati della ricerca. Se si includono gli elementi non indicizzati quando si esportano i risultati della ricerca, potrebbero essere presenti più elementi esportati. Ciò causerà una differenza tra i risultati di ricerca stimati ed esportati. 
     
-    Quando si utilizza lo strumento di ricerca contenuto nel &amp; Centro sicurezza e conformità, è possibile includere gli elementi non indicizzati nella stima della ricerca. Il numero di elementi non indicizzati restituiti dalla ricerca è elencato nel riquadro dei dettagli insieme agli altri risultati della ricerca stimati. Tutti gli elementi non indicizzati verrebbero inclusi anche nella dimensione totale dei risultati della ricerca stimati. Quando si esportano i risultati della ricerca, si ha la possibilità di includere o meno gli elementi non indicizzati. Il modo in cui vengono configurate queste opzioni potrebbe causare differenze tra i risultati di ricerca stimati e quelli effettivamente scaricati. 
+    Quando si utilizza lo strumento di ricerca contenuto nel centro sicurezza & Compliance, è possibile includere gli elementi non indicizzati nella stima della ricerca. Il numero di elementi non indicizzati restituiti dalla ricerca è elencato nel riquadro dei dettagli insieme agli altri risultati della ricerca stimati. Tutti gli elementi non indicizzati verrebbero inclusi anche nella dimensione totale dei risultati della ricerca stimati. Quando si esportano i risultati della ricerca, si ha la possibilità di includere o meno gli elementi non indicizzati. Il modo in cui vengono configurate queste opzioni potrebbe causare differenze tra i risultati di ricerca stimati e quelli effettivamente scaricati. 
     
-- **Esportazione dei risultati di una ricerca di contenuto che include tutti i percorsi di contenuto** : se la ricerca da cui si stanno esportando risultati è stata una ricerca di tutti i percorsi di contenuto nell'organizzazione, solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono gli elementi che soddisfano i criteri di ricerca verranno esportati. In altre parole, se non sono presenti risultati della ricerca in una cassetta postale o in un sito, tutti gli elementi non indicizzati in tale cassetta postale o sito non verranno esportati. Tuttavia, gli elementi non indicizzati provenienti da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di ricerca) saranno inclusi nei risultati della ricerca stimati. 
+- **Esportazione dei risultati di una ricerca di contenuto che include tutti i percorsi di contenuto** : se la ricerca da cui si stanno esportando risultati è stata una ricerca di tutti i percorsi di contenuto nell'organizzazione, solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono gli elementi che soddisfano i criteri di ricerca verranno esportati. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Tuttavia, gli elementi non indicizzati provenienti da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di ricerca) saranno inclusi nei risultati della ricerca stimati. 
     
     In alternativa, se la ricerca che si sta esportando risulta da posizioni di contenuto specifiche incluse, gli elementi non indicizzati (che non sono esclusi dai criteri di ricerca) da tutti i percorsi di contenuto specificati nella ricerca verranno esportati. In questo caso, il numero stimato di elementi non indicizzati e il numero di elementi non indicizzati effettivamente esportati devono corrispondere.
     
@@ -70,7 +71,7 @@ Di seguito sono riportate alcune ragioni per queste differenze:
     
 - **De-duplication** -per gli elementi di Exchange, la deduplicazione riduce il numero di elementi che vengono esportati. Si ha la possibilità di deduplicare i risultati della ricerca quando vengono esportati. Per i messaggi di Exchange, ciò significa che viene esportata una sola istanza di un messaggio, anche se tale messaggio può essere trovato in più cassette postali. I risultati della ricerca stimati includono tutte le istanze di un messaggio. Pertanto, se si sceglie l'opzione di deduplicazione quando si esportano i risultati della ricerca, il numero effettivo di elementi che vengono esportati potrebbe essere notevolmente inferiore al numero stimato di elementi. 
     
-    Un'altra cosa da tenere presente se si sceglie l'opzione di deduplicazione è che tutti gli elementi di Exchange vengono esportati in un singolo file PST e la struttura delle cartelle dalle cassette postali di origine non viene conservata. Il file PST esportato contiene solo gli elementi di posta elettronica. Tuttavia, un rapporto sui risultati di ricerca contiene una voce per ogni messaggio esportato che identifica la cassetta postale di origine in cui si trova il messaggio. In questo modo è possibile identificare tutte le cassette postali che contengono un messaggio duplicato. Se non si attiva la deduplicazione, viene esportato un file PST separato per ogni cassetta postale inclusa nella ricerca. 
+    Un'altra cosa da tenere presente se si sceglie l'opzione di deduplicazione è che tutti gli elementi di Exchange vengono esportati in un singolo file PST e la struttura delle cartelle dalle cassette postali di origine non viene conservata. Il file PST esportato contiene solo gli elementi di posta elettronica. Tuttavia, un rapporto sui risultati di ricerca contiene una voce per ogni messaggio esportato che identifica la cassetta postale di origine in cui si trova il messaggio. In questo modo è possibile identificare tutte le cassette postali che contengono un messaggio duplicato. Se invece non si attiva la deduplicazione, viene esportato un file PST separato per ciascuna cassetta postale inclusa nella ricerca. 
     
 ## <a name="exporting-unindexed-items-from-the-ediscovery-center-in-sharepoint-online"></a>Esportazione di elementi non indicizzati dal centro eDiscovery in SharePoint Online
 

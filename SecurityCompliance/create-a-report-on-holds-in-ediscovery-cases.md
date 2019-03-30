@@ -11,31 +11,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Utilizzare lo script in questo articolo per generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365.
-ms.openlocfilehash: 95a960e8f76c672185e10d5b6be2a7ff2538a34b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Utilizzare lo script in questo articolo per generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nel centro conformità in Office 365 o Microsoft 365.
+ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296999"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000879"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Creare un report su esenzioni nei casi di eDiscovery in Office 365
   
-Lo script in questo articolo consente agli amministratori di eDiscovery e ai responsabili di eDiscovery di generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery &amp; nel centro sicurezza e conformità di Office 365. Il report contiene informazioni quali il nome del caso in cui è associata una conservazione, i percorsi di contenuto che sono stati conservati e se il blocco è basato su query. Se sono presenti casi che non dispongono di alcuna esenzione, lo script creerà un ulteriore rapporto con un elenco di casi senza esenzioni.
+Lo script in questo articolo consente agli amministratori di eDiscovery e ai responsabili di eDiscovery di generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nel centro conformità di Office 365 o Microsoft 365. Il report contiene informazioni quali il nome del caso in cui è associata una conservazione, i percorsi di contenuto che sono stati conservati e se il blocco è basato su query. Se sono presenti casi che non dispongono di alcuna esenzione, lo script creerà un ulteriore rapporto con un elenco di casi senza esenzioni.
 
 Per una descrizione dettagliata delle informazioni incluse nel report, vedere la sezione [ulteriori informazioni](#more-information) . 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per generare un report su tutti i casi di eDiscovery nell'organizzazione, è necessario essere un amministratore di eDiscovery nell'organizzazione. Se si è un Manager di eDiscovery, il report includerà solo informazioni sui casi in cui è possibile accedere. Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assegnare le autorizzazioni di eDiscovery nel centro &amp; sicurezza e conformità di Office 365](assign-ediscovery-permissions.md).
+- Per generare un report su tutti i casi di eDiscovery nell'organizzazione, è necessario essere un amministratore di eDiscovery nell'organizzazione. Se si è un Manager di eDiscovery, il report includerà solo informazioni sui casi in cui è possibile accedere. Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assign eDiscovery](assign-ediscovery-permissions.md)Permissions.
     
 - Lo script di questo articolo contiene una gestione degli errori minima. Lo scopo principale consiste nel creare rapidamente report sulle esenzioni associate ai casi di eDiscovery nell'organizzazione.
     
 - Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Passaggio 1: connettersi al centro sicurezza &amp; e conformità tramite Remote PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi al centro sicurezza & Compliance PowerShell
 
-Il primo passaggio consiste nel connettere Windows PowerShell al centro sicurezza &amp; e conformità per l'organizzazione.
+Il primo passaggio consiste nel connettersi al centro sicurezza e conformità di & per l'organizzazione.
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `ConnectSCC.ps1`. 
     
@@ -44,7 +44,7 @@ Il primo passaggio consiste nel connettere Windows PowerShell al centro sicurezz
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
       Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. Nel computer locale, aprire Windows PowerShell e passare alla cartella in cui è stato salvato lo script. 
@@ -59,7 +59,7 @@ Il primo passaggio consiste nel connettere Windows PowerShell al centro sicurezz
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: eseguire lo script per segnalare le esenzioni associate ai casi di eDiscovery
 
-Dopo aver effettuato la connessione al centro &amp; sicurezza e conformità con Remote PowerShell, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione. 
+Dopo aver effettuato la connessione al centro sicurezza & Compliance PowerShell, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione. 
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, CaseHoldsReport. ps1. 
     
@@ -67,7 +67,7 @@ Dopo aver effettuato la connessione al centro &amp; sicurezza e conformità con 
 #script begin
 " " 
 write-host "***********************************************"
-write-host "   Office 365 Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "        eDiscovery cases - Holds report         " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " " 
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
   
 ## <a name="more-information"></a>Ulteriori informazioni
 
-Il caso contiene il rapporto creato quando si esegue lo script in questo articolo contiene le informazioni seguenti su ogni blocco. Come spiegato in precedenza, è necessario essere un amministratore di eDiscovery per restituire le informazioni relative a tutte le esenzioni nell'organizzazione. Per ulteriori informazioni sulle esenzioni dei casi, vedere [eDiscovery Cases in the &amp; Office 365 Security Compliance Center](ediscovery-cases.md).
+Il caso contiene il rapporto creato quando si esegue lo script in questo articolo contiene le informazioni seguenti su ogni blocco. Come spiegato in precedenza, è necessario essere un amministratore di eDiscovery per restituire le informazioni relative a tutte le esenzioni nell'organizzazione. Per ulteriori informazioni sulle esenzioni dei casi, vedere [eDiscovery Cases](ediscovery-cases.md).
   
   - Nome del blocco e nome del caso di eDiscovery a cui è associato il blocco.
     

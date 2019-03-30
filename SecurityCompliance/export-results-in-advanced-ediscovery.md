@@ -3,7 +3,6 @@ title: Esportare i risultati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218096"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000909"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Esportare i risultati in Office 365 Advanced eDiscovery
 
@@ -27,7 +26,7 @@ ms.locfileid: "30218096"
   
 In questo argomento vengono descritte le opzioni avanzate di installazione di eDiscovery Export.
   
- **Contenuto dell'argomento:**
+ **In questo argomento:**
   
 - [Definizione di batch e sessioni di esportazione](export-results-in-advanced-ediscovery.md#BK_Define)
     
@@ -180,13 +179,13 @@ Per una descrizione completa dei campi del rapporto di esportazione, vedere [Exp
 
 Nella tabella seguente sono elencati i file di output generati quando si esegue un batch di esportazione.
   
-|**Usare l'attività di riepilogo del progetto per allegare o creare un collegamento ai documenti per la pianificazione**|**Tipo file**|**Descrizione**|
+|**Nome file**|**Tipo file**|**Descrizione**|
 |:-----|:-----|:-----|
 |Riepilogo esportazione  <br/> |CSV  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
 |Traccia  <br/> |txt  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
 |File di testo estratti  <br/> |Cartella file  <br/> |Cartella che contiene i file di testo estratti dei file esportati.  <br/> |
 |Input o file nativi  <br/> |Cartella file  <br/> |Cartella che contiene i file nativi e di input dei file esportati.  <br/> |
-|Esporta elenco  <br/> |xlsx  <br/> |Metadati dei file esPortati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Esporta elenco  <br/> |XLSX  <br/> |Metadati dei file esPortati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Carica file  <br/> |CSV  <br/> |Metadati dei file esPortati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
 |Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il suo nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
@@ -196,7 +195,7 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
   
 [Visualizzazione della cronologia batch ed esportazione dei risultati precedenti](view-batch-history-and-export-past-results.md)
   
-[Impostazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Configurazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
   

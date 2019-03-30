@@ -1,5 +1,5 @@
 ---
-title: Panoramica di Office 365 Cloud App Security
+title: Overview of Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 cloud app Security consente di approfondire le attività sospette in Office 365, in modo da poter esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza. '
-ms.openlocfilehash: 974858a547d9af2db600f9856efbce619a3b38e4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 960e4c75a4da13e1a0365f75d290cd18587abd58
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220176"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001209"
 ---
-# <a name="overview-of-office-365-cloud-app-security"></a>Panoramica di Office 365 Cloud App Security
+# <a name="overview-of-office-365-cloud-app-security"></a>Overview of Office 365 Cloud App Security
   
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
 |Sei qui!  <br/> [Passaggio successivo](get-ready-for-office-365-cas.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |[Avviare la distribuzione](turn-on-office-365-cas.md) <br/> |[Iniziare a utilizzare](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365 cloud app Security è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un altro abbonamento a Office 365 Enterprise, Office 365 cloud app Security può essere acquistato come componente aggiuntivo. (come amministratore globale, nell'interfaccia di amministrazione di Office 365 scegliere **fatturazione** \> **aggiungi abbonamenti**). Per ulteriori informazioni, vedere [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
+> Office 365 cloud app Security è disponibile in Office 365 Enterprise E5. Se l'organizzazione utilizza un altro abbonamento a Office 365 Enterprise, Office 365 cloud app Security può essere acquistato come componente aggiuntivo. (come amministratore globale, nell'interfaccia di amministrazione di Microsoft 365, scegliere **fatturazione** \> **aggiungi abbonamenti**). Per ulteriori informazioni, vedere [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
   
 Office 365 cloud app Security fornisce informazioni sull'attività sospetta in Office 365, in modo da poter esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza. Con Office 365 cloud app Security, è possibile ricevere notifiche degli avvisi attivati per attività atipiche o sospette, vedere come si accede e si utilizzano i dati dell'organizzazione in Office 365, sospendere gli account utente che presentano attività sospette e richiedere Gli utenti di eseguire l'accesso alle app di Office 365 dopo che è stato attivato un avviso. Leggere questo articolo per ottenere una panoramica delle funzionalità e delle funzionalità di sicurezza delle app di Office 365 cloud.
   
@@ -48,7 +48,7 @@ Office 365 cloud app Security fornisce informazioni sull'attività sospetta in O
     
 3. Scegliere **Vai a Office 365 cloud app Security**. 
     
-## <a name="policies"></a>Criteri
+## <a name="policies"></a>Generali
 
 Office 365 cloud app Security è compatibile con i criteri definiti per l'organizzazione. Con Office 365 cloud app Security, l'organizzazione riceve numerosi criteri di rilevamento delle anomalie predefinite e diversi modelli per i criteri di attività. Questi criteri sono stati studiati per rilevare anomalie generali, identificare gli utenti che accedono a un indirizzo IP rischioso, rilevare attività ransomware, rilevare attività amministrative da indirizzi IP non aziendali e altro ancora.
   

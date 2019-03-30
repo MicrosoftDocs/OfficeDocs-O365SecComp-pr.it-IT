@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Gli amministratori possono ottenere informazioni sull'Insight delle regole del flusso di posta lenta nel dashboard del flusso di posta in Office 365 Security & Compliance Center.
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Gli amministratori possono ottenere informazioni sull'Insight delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720256"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999779"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Approfondimenti sulle regole del flusso di posta lento
 
@@ -29,7 +29,7 @@ Inefficienti regole del flusso di posta (note anche come regole di trasporto) po
 
 L'Insight consentirà di identificare e ottimizzare le regole del flusso di posta per contribuire a ridurre i ritardi del flusso di posta.
 
-![Una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro conformità di Office 365 Security &](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a comparsa dove è possibile esaminare la regola. Nel riquadro a comparsa, è anche possibile fare clic su **Visualizza messaggi di esempio** per visualizzare il tipo di messaggi interessati dalla regola.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Run a Content Search in the Office 365 Security &amp; Compliance Center '
+title: Eseguire una ricerca contenuto nel Centro sicurezza e conformità
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare le cassette postali, i siti di SharePoint Online e OneDrive for business. '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Utilizzare la ricerca contenuto nel centro sicurezza e conformità di & per cercare le cassette postali, i siti di SharePoint Online e OneDrive for business. '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935321"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000279"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Run a Content Search in the Office 365 Security &amp; Compliance Center 
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>Eseguire una ricerca contenuto nel Centro sicurezza e conformità
 
-È possibile utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per cercare elementi quali messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Utilizzare questo strumento per cercare gli elementi presenti nei servizi di Office 365:
+È possibile utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza & Compliance per cercare elementi quali messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Utilizzare questo strumento per cercare gli elementi presenti nei servizi di Office 365:
   
 - Cassette postali e cartelle pubbliche di Exchange Online
     
@@ -55,9 +55,9 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
 
 - Per informazioni e istruzioni sulla creazione di query di ricerca e sull'utilizzo di operatori di ricerca booleani, vedere [keyword query and Search Conditions for content search](keyword-queries-and-search-conditions.md). In questo articolo sono inoltre disponibili informazioni sulla ricerca di tipi di informazioni riservate e sulla ricerca di contenuto condiviso con persone all'interno e all'esterno dell'organizzazione.
     
-- Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli Gestione &amp; eDiscovery nella conformità alla sicurezza Centro. Non è necessario assegnare altre autorizzazioni di ricerca in Exchange Online, SharePoint Online o per i siti di OneDrive for business. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
+- Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance. Non è necessario assegnare altre autorizzazioni di ricerca in Exchange Online, SharePoint Online o per i siti di OneDrive for business. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro conformità _AMP_ sicurezza di Office 365](assign-ediscovery-permissions.md).
     
-- Sono stati applicati limiti alla ricerca contenuto per mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni di Office 365. Nella maggior parte dei casi, non è possibile modificare questi limiti, ma è necessario conoscerli in modo da tenerli in considerazione durante la pianificazione, l'esecuzione e la risoluzione dei problemi delle ricerche. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
+- Sono stati applicati limiti alla ricerca contenuto per mantenere l'integrità e la qualità dei servizi forniti alle organizzazioni di Office 365. Nella maggior parte dei casi, non è possibile modificare questi limiti, ma è necessario conoscerli in modo da tenerli in considerazione durante la pianificazione, l'esecuzione e la risoluzione dei problemi delle ricerche. Per ulteriori informazioni, vedere [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Vedere la sezione relativa ai tempi di ricerca stimati in base al numero di cassette postali che vengono cercate in una singola ricerca di contenuto. 
     
@@ -74,11 +74,11 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **Ricerca contenuto**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su ricerca **contenuto** **ricerca** \> .
     
 4. Fare clic su **Nuovo**![Icona Aggiungi](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
@@ -102,7 +102,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
     
   - È possibile aggiungere le cassette postali inattive e i gruppi di distribuzione all'elenco delle cassette postali da cercare. Per i gruppi di distribuzione, vengono ricercate le cassette postali dei membri del gruppo. Si noti che i gruppi di distribuzione dinamici non sono supportati.
     
-  - Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile accedere alla **conservazione** della &amp; governance](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> \> **dei dati** nel centro sicurezza e conformità, quindi fare clic su **altre**![ **cassette postali inattive**della barra di spostamento.
+  - Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile accedere alla **conservazione** della governance \> **dei dati** nel centro sicurezza e conformità di & e quindi fare clic su **altre**![](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **cassette postali inattive**della barra di spostamento.
     
   - È inoltre possibile aggiungere la cassetta postale associata a un gruppo di Office 365 o a un team di Microsoft. In questo caso, viene cercata solo la cassetta postale del gruppo o del team. le cassette postali dei membri del gruppo o del team non vengono cercate. Per eseguire la ricerca, è necessario aggiungerli in modo specifico alla ricerca.
     
@@ -167,12 +167,12 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
 ## <a name="export-search-results"></a>Esportare i risultati della ricerca
 <a name="export"> </a>
 
-Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti anche altri documenti e report. Per ulteriori informazioni, vedere [esportare i risultati di ricerca dal centro sicurezza &amp; e conformità di Office 365](export-search-results.md).
+Una volta eseguita correttamente una ricerca, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti anche altri documenti e report. Per ulteriori informazioni, vedere [Export Search Results from the Security _AMP_ Compliance Center](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Anteprima dei risultati della ricerca
 <a name="preview"> </a>
 
-Al termine della ricerca, è possibile visualizzarne in anteprima i risultati. Esistono alcuni limiti relativi alla visualizzazione in anteprima dei risultati della ricerca contenuto. Per ulteriori informazioni, vedere [limits for Search in the Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Tenere presente che gli elementi non indicizzati non sono disponibili per la visualizzazione in anteprima.
+Al termine della ricerca, è possibile visualizzarne in anteprima i risultati. Esistono alcuni limiti relativi alla visualizzazione in anteprima dei risultati della ricerca contenuto. Per ulteriori informazioni, vedere [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md). Tenere presente che gli elementi non indicizzati non sono disponibili per la visualizzazione in anteprima.
   
 1. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
     
@@ -277,7 +277,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
 ### <a name="limits-and-performance"></a>Limiti e prestazioni
   
-- Per una descrizione dei limiti applicati alla funzionalità di ricerca contenuto, vedere [limits for Search in the Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
+- Per una descrizione dei limiti applicati alla funzionalità di ricerca contenuto, vedere [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Microsoft raccoglie le informazioni sulle prestazioni per le ricerche di contenuto eseguite da tutte le organizzazioni di Office 365. Anche se la complessità della query di ricerca può influire sui tempi di ricerca, il fattore principale che influenza la durata delle ricerche è il numero di cassette postali in cui è stata eseguita la ricerca. Anche se Microsoft non fornisce un contratto di servizio per i tempi di ricerca, nella tabella seguente sono elencati i tempi di ricerca medi per una ricerca di contenuto in base al numero di cassette postali incluse nella ricerca.
     
@@ -319,7 +319,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
   - Quando viene eseguita la ricerca della cassetta postale di un utente, un gruppo di Microsoft Team o di Office 365 di cui l'utente è membro non verrà cercato. Analogamente, quando si esegue una ricerca in un team Microsoft o in un gruppo di Office 365, vengono cercate solo le cassette postali di gruppo e il sito del gruppo specificato. le cassette postali e gli account di OneDrive for business dei membri del gruppo non vengono ricercati, a meno che non vengano aggiunti in modo esplicito alla ricerca.
     
-  - Per ottenere un elenco dei membri di un team di Microsoft o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **Home \> gruppi** nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
+  - Per ottenere un elenco dei membri di un team di Microsoft o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **Home \> gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
     
     ![Esempio di query creata quando si utilizza l'elenco delle parole chiave e una condizione](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - Se si dispone di una query di ricerca che contiene parole chiave per caratteri non inglesi, ad esempio caratteri cinesi, potrebbe essere necessario utilizzare il cmdlet **set-ComplianceSearch** per configurare la proprietà Language per la ricerca di contenuto. Quando si crea una ricerca di contenuto utilizzando l'interfaccia utente grafica &amp; nel centro sicurezza e conformità, la lingua predefinita è neutra. 
+  - Se si dispone di una query di ricerca che contiene parole chiave per caratteri non inglesi, ad esempio caratteri cinesi, potrebbe essere necessario utilizzare il cmdlet **set-ComplianceSearch** per configurare la proprietà Language per la ricerca di contenuto. Quando si crea una ricerca di contenuto utilizzando l'interfaccia utente grafica nel centro sicurezza & Compliance, la lingua predefinita è neutra. 
     
     Come è possibile stabilire se è necessario modificare l'impostazione della lingua per una ricerca di contenuto? Se si verificano determinati percorsi di contenuto che contengono i caratteri non in lingua inglese che si sta cercando, ma la ricerca non restituisce alcun risultato, è possibile che l'impostazione della lingua sia la causa.
     
-    Per modificare l'impostazione della lingua per una ricerca di contenuto esistente, eseguire il comando seguente &amp; in PowerShell per il Centro sicurezza e conformità:
+    Per modificare l'impostazione della lingua per una ricerca di contenuto esistente, eseguire il comando seguente in PowerShell centro conformità di & di sicurezza:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ Come indicato in precedenza, è possibile cercare le cassette postali inattive i
     
 ### <a name="miscellaneous"></a>Varie
   
-- Le ricerche di contenuto create nella pagina **Ricerca contenuto** nel centro &amp; sicurezza e conformità non vengono visualizzate nella pagina **blocco eDiscovery &amp; sul posto** nell'interfaccia di amministrazione di Exchange. Ciò è dovuto al fatto che l'architettura di ricerca del contenuto e gli oggetti &amp; di ricerca creati nel centro sicurezza e conformità sono completamente diversi rispetto alla caratteristica eDiscovery sul posto in Exchange Online. 
+- Le ricerche di contenuto create nella pagina **Ricerca contenuto** nel centro sicurezza & Compliance non vengono visualizzate nella pagina **blocco eDiscovery &amp; sul posto** nell'interfaccia di amministrazione di Exchange. Ciò è dovuto al fatto che l'architettura di ricerca del contenuto e gli oggetti di ricerca creati nel centro conformità di sicurezza & sono completamente diversi rispetto alla funzionalità eDiscovery sul posto in Exchange Online. 
     
-    Per lo stesso motivo, le ricerche create nella pagina **Ricerca contenuto** non vengono visualizzate nella pagina **ricerche** di un caso di eDiscovery nel centro &amp; sicurezza e conformità. 
+    Per lo stesso motivo, le ricerche create nella pagina **Ricerca contenuto** non vengono visualizzate nella pagina **ricerche** di un caso di eDiscovery nel centro sicurezza & Compliance. 
     
 - Qual è la differenza tra riavviare e riprovare una una ricerca? Quando si riavvia una ricerca, tutti i percorsi di contenuto specificati nella ricerca vengono nuovamente ricercati in una nuova ricerca di anteprima. Tuttavia, quando si ritenta una ricerca, solo i percorsi di contenuto che hanno avuto esito negativo quando è stata eseguita la ricerca per l'ultima volta vengono nuovamente ricercati.
    

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792510"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000439"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
 
@@ -39,9 +39,9 @@ Nella versione iniziale di AIR del 2019 aprile, gli avvisi generati dai criteri 
 
 ***Nota**: a questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso all'interno del Centro sicurezza & compliance con notifiche tramite posta elettronica disattivata. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
 
-per visualizzare gli avvisi, nel centro conformità & sicurezza di Office 365 scegliere **avvisi** > **visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
+Per visualizzare gli avvisi, nel centro sicurezza & Compliance scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
-Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro conformità di Office 365 Security &, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
+Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro conformità di sicurezza &, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
 ![Avvisi relativi al collegamento alle indagini](media/air-alerts-page-details.png) 
 
@@ -121,7 +121,7 @@ Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che veng
 
 ## <a name="get-started"></a>Attività iniziali
 
-Per accedere alle indagini, come amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza, passare a Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
+Per accedere alle indagini, come un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza, passare al centro sicurezza &[https://protection.office.com](https://protection.office.com)Compliance () ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
 
 - Nella barra di spostamento a sinistra, **** > passare a avvisi**visualizzazione**avvisi, aprire uno degli avvisi correlati all'analisi, quindi fare clic sul collegamento **Visualizza analisi** nella parte inferiore del riquadro a comparsa di avviso. 
 

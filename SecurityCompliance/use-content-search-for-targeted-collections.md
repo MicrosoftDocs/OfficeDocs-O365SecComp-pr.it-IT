@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: Utilizzare la ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per eseguire le raccolte mirate. Un insieme mirato indica che gli elementi che rispondono a un caso o a elementi privilegiati si trovano in una cassetta postale o in una cartella del sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.
-ms.openlocfilehash: 4cfdb95ef65f94bc46b79265f986ed8d9ada04da
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Utilizzare la ricerca contenuto nel centro sicurezza e conformità di & per eseguire le raccolte mirate. Un insieme mirato indica che gli elementi che rispondono a un caso o a elementi privilegiati si trovano in una cassetta postale o in una cartella del sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.
+ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30899996"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001239"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca contenuto in Office 365 per le raccolte mirate
 
@@ -56,7 +56,7 @@ Lo script eseguito in questo primo passaggio restituirà un elenco di cartelle d
     
   - **OneDrive for business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **Credenziali utente** : lo script utilizzerà le credenziali per la connessione a Exchange Online e il centro &amp; sicurezza e conformità con Remote PowerShell. Come spiegato in precedenza, è necessario assegnare le autorizzazioni appropriate per eseguire correttamente lo script.
+- **Credenziali utente** : lo script utilizzerà le credenziali per connettersi a Exchange Online e al centro sicurezza & compliance con Remote PowerShell. Come spiegato in precedenza, è necessario assegnare le autorizzazioni appropriate per eseguire correttamente lo script.
     
 Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del sito documentlink (percorso):
   
@@ -66,7 +66,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -83,7 +83,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -125,7 +125,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Compliance Center
+      # Authenticate with the Security & Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection

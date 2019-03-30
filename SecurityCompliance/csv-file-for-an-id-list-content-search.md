@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilizzare il file results. csv o unindexed Items. csv da una ricerca di contenuto esistente per creare una ricerca nell'elenco di ID che restituisca messaggi di posta elettronica specifici. Le ricerche degli elenchi di ID vengono in genere utilizzate per restituire gli elementi della cassetta postale parzialmente indicizzati.
-ms.openlocfilehash: 558a8512ed133995b2cc1d0d8b78fd7f08d11168
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296739"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999679"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365
 
@@ -25,11 +25,11 @@ ms.locfileid: "30296739"
   
 Ecco una breve panoramica del processo per la creazione di una ricerca nell'elenco di ID.
   
-1. Creare ed eseguire una ricerca di contenuto nuovo o guidato nel centro &amp; sicurezza e conformità.
+1. Creare ed eseguire una ricerca di contenuto nuovo o guidato nel centro sicurezza & Compliance.
     
 2. Esportare i risultati della ricerca del contenuto o esportare il rapporto di ricerca contenuto. Per ulteriori informazioni, vedere:
     
-    - [Esportare i risultati della ricerca del contenuto dal centro &amp; sicurezza e conformità di Office 365](export-search-results.md)
+    - [Esportare i risultati della Ricerca contenuto](export-search-results.md)
     
     - [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
     
@@ -76,7 +76,7 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 > [!IMPORTANT]
 > È consigliabile creare un elenco di ID che non superi i 2 giorni dopo l'esportazione dei risultati o del report da una ricerca di contenuto. Se i risultati della ricerca o il report in cui è stata esportata più di 2 giorni fa, è necessario riesportare i risultati della ricerca o il report per generare i file CSV aggiornati. È quindi possibile preparare uno dei file CSV aggiornati e utilizzarlo per creare una ricerca nell'elenco di ID. 
   
-1. Nel centro sicurezza &amp; e conformità, andare alla \> **Ricerca contenuto**ricerca ** &amp; analisi** .
+1. Nel centro sicurezza & Compliance, andare alla **** \> **Ricerca contenuto**ricerca.
     
 2. Nella pagina **ricerca** fare clic sulla freccia accanto a Aggiungi ![](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona, quindi fare clic su **Cerca in base all'elenco di ID**.
     

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296599"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000149"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -60,7 +60,7 @@ Ecco come gestire un problema di fuoriuscita dei dati:
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Optional Passaggio 1: gestire gli utenti autorizzati a accedere al caso e impostare i limiti di conformità
 
-A seconda della prassi organizzativa, è necessario controllare chi può accedere al caso di eDiscovery utilizzato per analizzare un problema di fuoriuscita dei dati e impostare i limiti di conformità. Il modo più semplice per eseguire questa operazione consiste nell'aggiungere ricercatori come membri di un gruppo di ruoli esistente nel centro conformità di Office 365 Security & e quindi aggiungere il gruppo di ruolo come membro del caso eDiscovery. Per informazioni sui gruppi di ruoli incorporati di eDiscovery e su come aggiungere membri a un caso di eDiscovery, vedere [assign eDiscovery Permissions in the &amp; Office 365 Security Compliance Center](assign-ediscovery-permissions.md).
+A seconda della prassi organizzativa, è necessario controllare chi può accedere al caso di eDiscovery utilizzato per analizzare un problema di fuoriuscita dei dati e impostare i limiti di conformità. Il modo più semplice per eseguire questa operazione consiste nell'aggiungere ricercatori come membri di un gruppo di ruoli esistente nel centro sicurezza & compliance e quindi aggiungere il gruppo di ruolo come membro del caso eDiscovery. Per informazioni sui gruppi di ruoli incorporati di eDiscovery e su come aggiungere membri a un caso di eDiscovery, vedere [assign eDiscovery](assign-ediscovery-permissions.md)Permissions.
   
 È inoltre possibile creare un nuovo gruppo di ruoli che sia allineato con le esigenze dell'organizzazione. Ad esempio, potrebbe essere necessario che un gruppo di investigatori per il versamento dei dati nell'organizzazione acceda e collabori su tutti i casi di perdita dei dati. A tale scopo, è possibile creare un gruppo di ruoli "investigatore per la fuoriuscita dei dati", assegnando i ruoli corretti (esportazione, deCrittografia RMS, revisione, anteprima, ricerca di conformità e gestione dei casi), aggiungendo gli investigatori di versamento dei dati al gruppo di ruoli e quindi aggiungendo la gruppo di ruolo come membro del caso di eDiscovery di perdita dei dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [configurare i limiti di conformità per le indagini di eDiscovery in Office 365](set-up-compliance-boundaries.md) . 
   
@@ -68,19 +68,19 @@ A seconda della prassi organizzativa, è necessario controllare chi può acceder
 
 Un caso di eDiscovery rappresenta un modo efficace per gestire l'analisi del versamento dei dati. È possibile aggiungere membri al gruppo di ruoli creato nel passaggio 1, aggiungere il gruppo di ruoli come membro di un nuovo caso di eDiscovery, eseguire ricerche iterative per individuare i dati rovesciati, esportare un report in condivisione, monitorare lo stato del caso e quindi fare riferimento ai dettagli del c. ASE, se necessario. Valutare la possibilità di stabilire una convenzione di denominazione per i casi di eDiscovery utilizzati per gli incidenti relativi alla fuoriuscita dei dati e fornire quante più informazioni possibile nel caso di nome e descrizione, in modo da poter individuare e fare riferimento in futuro, se necessario.
   
-Per creare un nuovo caso, è possibile utilizzare eDiscovery nel centro sicurezza &amp; e conformità. Vedere "creare un nuovo caso" in [eDiscovery Cases in the Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
+Per creare un nuovo caso, è possibile utilizzare eDiscovery nel centro sicurezza e conformità. Vedere "creare un nuovo caso" in [casi di eDiscovery](ediscovery-cases.md#step-2-create-a-new-case).
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Passaggio 3: ricerca dei dati versati
 
 Dopo aver creato un caso e l'accesso gestito, è possibile utilizzare il caso per cercare in modo iterativo i dati riversati e identificare le cassette postali che contengono i dati versati. Si utilizzerà la stessa query di ricerca utilizzata per trovare i messaggi di posta elettronica per eliminare gli stessi messaggi nel [passaggio 7](#step-7-permanently-delete-the-spilled-data).
   
-Per creare una ricerca di contenuto associata a un caso di eDiscovery, vedere la sezione relativa alla creazione ed esecuzione di ricerche di contenuto associate a un caso "in eDiscovery Cases [in the Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Per creare una ricerca di contenuto associata a un caso di eDiscovery, vedere la sezione relativa alla creazione e all'esecuzione di una ricerca di contenuto associata a un caso in [eDiscovery](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)case.
   
  **Importante:** Le parole chiave utilizzate nella query di ricerca possono contenere i dati di cui è stata eseguita la ricerca. Ad esempio, se si cercano documenti contenenti un numero di previdenza sociale e si utilizza la parola chiave it As Search, è necessario eliminare la query in seguito per evitare ulteriori fuoriuscite. Per ulteriori informazioni, vedere [eliminazione della query di ricerca](#deleting-the-search-query) nel passaggio 8. 
   
 ## <a name="step-4-review-and-validate-case-findings"></a>Passaggio 4: esaminare e convalidare i risultati del caso
 
-Dopo aver creato una ricerca di contenuto, è necessario esaminare e convalidare i risultati della ricerca e verificare che siano costituiti solo dai messaggi di posta elettronica che devono essere eliminati. In una ricerca di contenuto, è possibile visualizzare in anteprima un campionamento casuale di 1.000 messaggi di posta elettronica senza esportare i risultati della ricerca per evitare un ulteriore versamento dei dati. Per ulteriori informazioni sulle limitazioni relative all'anteprima, vedere [limiti per la ricerca di contenuto nel centro &amp; sicurezza e conformità di Office 365](limits-for-content-search.md).
+Dopo aver creato una ricerca di contenuto, è necessario esaminare e convalidare i risultati della ricerca e verificare che siano costituiti solo dai messaggi di posta elettronica che devono essere eliminati. In una ricerca di contenuto, è possibile visualizzare in anteprima un campionamento casuale di 1.000 messaggi di posta elettronica senza esportare i risultati della ricerca per evitare un ulteriore versamento dei dati. Per ulteriori informazioni sulle limitazioni relative all'anteprima, vedere [limits for content search](limits-for-content-search.md).
   
 Se si dispone di più di 1.000 cassette postali o più di 100 messaggi di posta elettronica per cassetta postale da esaminare, è possibile suddividere la ricerca iniziale in più ricerche utilizzando parole chiave aggiuntive o condizioni quali l'intervallo di date o il mittente/destinatario ed esaminare i risultati di ogni ricerca. individualmente. Assicurarsi di prendere nota di tutte le query di ricerca da utilizzare quando si eliminano i messaggi nel [passaggio 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -116,11 +116,11 @@ Per ulteriori informazioni sull'esportazione di report, vedere [Export a content
 
 Per ulteriori informazioni sull'eventuale condivisione di messaggi di posta elettronica con i dati riversati, è possibile eseguire una query sui registri di traccia dei messaggi con il mittente e le informazioni sull'intervallo di date raccolte nel passaggio 4. Si noti che il periodo di conservazione per la traccia dei messaggi è di 30 giorni per i dati in tempo reale e di 90 giorni per i dati cronologici.
   
-È possibile utilizzare la traccia dei messaggi nel centro sicurezza & Compliance o utilizzare i cmdlet corrispondenti in PowerShell di Exchange Online. È importante tenere presente che l'analisi dei messaggi non offre garanzie complete sulla completezza di dati restituiti. Per ulteriori informazioni sull'utilizzo della traccia dei messaggi, vedere: 
+È possibile utilizzare la traccia dei messaggi nel centro sicurezza e conformità o utilizzare i cmdlet corrispondenti in PowerShell di Exchange Online. È importante tenere presente che l'analisi dei messaggi non offre garanzie complete sulla completezza di dati restituiti. Per ulteriori informazioni sull'utilizzo della traccia dei messaggi, vedere: 
   
-- [Traccia dei messaggi nel centro sicurezza &amp; e conformità di Office 365](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Traccia dei messaggi nel Centro sicurezza e conformità](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Nuova traccia dei messaggi nel centro sicurezza &amp; e conformità di Office 365](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nuova traccia dei messaggi nel centro conformità di & di sicurezza](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Passaggio 6: preparare le cassette postali
 
@@ -206,7 +206,7 @@ Se nel passaggio 6 è stata modificata la configurazione delle cassette postali 
 
 Se le parole chiave della query di ricerca creata e utilizzata nel passaggio 3 contengono alcuni tra tutti i dati effettivamente eliminati, è necessario eliminare la query di ricerca per impedire l'ulteriore fuoriuscita dei dati.
   
-1. Nel centro sicurezza e conformità di &, aprire il caso eDiscovery, andare alla pagina di **ricerca** e selezionare la ricerca di contenuto appropriata.
+1. Nel centro sicurezza e conformità, aprire il caso eDiscovery, passare alla pagina di **ricerca** e selezionare la ricerca di contenuto appropriata.
     
 2. Nella pagina a comparsa fare clic su **Elimina**.
 
@@ -216,10 +216,10 @@ Se le parole chiave della query di ricerca creata e utilizzata nel passaggio 3 c
 
 È possibile eseguire una ricerca nel registro di controllo di Office 365 per le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel registro di controllo per restituire i record di controllo creati quando è stato eseguito il comando **Search-Mailbox-DeleteContent** per eliminare i dati versati. Per ulteriori informazioni, vedere:
 
-- [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](search-the-audit-log-in-security-and-compliance.md)
+- [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
 
-- [Ricerca di attività di eDiscovery nel registro di controllo di Office 365](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Vedere la sezione "attività controllate-log di controllo dell'amministratore di Exchange" in [Search the audit log in the Office 365 Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) per informazioni su come eseguire la ricerca dei record di controllo relativi all'esecuzione di cmdlet in Exchange Online.
+- Vedere la sezione "attività controllate-log di controllo dell'amministratore di Exchange" in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities) per indicazioni su come cercare i record di controllo relativi ai cmdlet in esecuzione in Exchange Online.
   
 

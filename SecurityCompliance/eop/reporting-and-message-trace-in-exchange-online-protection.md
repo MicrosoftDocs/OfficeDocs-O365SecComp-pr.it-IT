@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità. Nella tabella seguente vengono descritti i report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di EOP.
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693165"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000949"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Creazione di rapporti e traccia dei messaggi in Exchange Online Protection
 
@@ -38,7 +38,7 @@ Per ulteriori informazioni, vedere le risorse seguenti:
 - [Report di Office 365 nell'interfaccia di amministrazione - Utilizzo delle applicazioni di posta elettronica](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [Report di Office 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Rapporti &amp; di conformità della sicurezza nell'interfaccia di amministrazione di Office 365
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Rapporti &amp; di conformità della sicurezza nell'interfaccia di amministrazione di Microsoft 365
 
 Questi report avanzati forniscono un'esperienza di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.  
 
@@ -50,7 +50,7 @@ Questi report avanzati forniscono un'esperienza di report interattiva per gli am
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Report personalizzati tramite Microsoft Graph
 
-Creare report a livello di programmazione che sono disponibili nell'interfaccia di amministrazione di Office 365 tramite Microsoft Graph vedere gli argomenti secondari di utilizzo dei [report sull'utilizzo di office 365 in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
+Creare report a livello di programmazione che sono disponibili nell'interfaccia di amministrazione di Microsoft 365 tramite Microsoft Graph vedere gli argomenti secondari di utilizzo dei [report sull'utilizzo di Office 365 in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>Rapporti personalizzati tramite servizi Web Reporting
 
@@ -83,6 +83,6 @@ La tabella seguente descrive quando in EOP le funzionalità di creazione rapport
 |Dati di traccia dei messaggi  <br/> |90 giorni  <br/> |Quando si esegue la traccia dei messaggi per i messaggi creati da meno di 7 giorni, i messaggi devono essere visualizzati entro un periodo compreso tra 5 e 30 minuti.  <br/> Quando si esegua la traccia dei messaggi per messaggi creati da più di 7 giorni, i risultati potrebbero richiedere alcune ore.  <br/> |
    
 > [!NOTE]
-> La latenza e la disponibilità dei dati è la stessa a prescindere che la richiesta venga effettuata tramite interfaccia di amministrazione di Office 365 o PowerShell remota. 
+> La disponibilità e la latenza dei dati sono le stesse se richieste tramite l'interfaccia di amministrazione di Microsoft 365 o Remote PowerShell. 
   
 

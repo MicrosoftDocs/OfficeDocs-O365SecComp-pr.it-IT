@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Informazioni su come Office 365 Advanced eDiscovery può essere utile per analizzare i dati di Office 365, semplificare le revisioni dei documenti e prendere decisioni per eDiscovery efficienti.
-ms.openlocfilehash: 7bef666b4b178fee883f52549ae75717bd55f45a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 203d3bfa627064704b4123a757db94bc3478b7bc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219276"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000649"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Con Advanced eDiscovery, è possibile comprendere meglio i dati di Office 365 e ridurre i costi di eDiscovery. Advanced eDiscovery consente di analizzare i dati non strutturati all'interno di Office 365, di eseguire una revisione dei documenti più efficiente e di prendere decisioni per la riduzione dei dati per eDiscovery. È possibile utilizzare i dati archiviati in Exchange Online, SharePoint Online, OneDrive for business, Skype for business, gruppi di Office 365 e Microsoft teams. È possibile eseguire una ricerca di eDiscovery nel centro sicurezza &amp; e conformità di Office 365 per cercare contenuto in gruppi, cassette postali e siti singoli e quindi analizzare i risultati della ricerca con Advanced eDiscovery. Si noti che quando si preparano i risultati della ricerca per l'analisi in Advanced eDiscovery, il riconoscimento ottico dei caratteri consente l'estrazione del testo dalle immagini. Questa funzionalità consente di applicare ai file di immagine le potenti funzionalità analitiche del testo di Advanced eDiscovery.
+Con Advanced eDiscovery, è possibile comprendere meglio i dati di Office 365 e ridurre i costi di eDiscovery. Advanced eDiscovery consente di analizzare i dati non strutturati all'interno di Office 365, di eseguire una revisione dei documenti più efficiente e di prendere decisioni per la riduzione dei dati per eDiscovery. È possibile utilizzare i dati archiviati in Exchange Online, SharePoint Online, OneDrive for business, Skype for business, gruppi di Office 365 e Microsoft teams. È possibile eseguire una ricerca di eDiscovery nel centro sicurezza &amp; e conformità di Microsoft 365 per cercare contenuto in gruppi, cassette postali e siti singoli e quindi analizzare i risultati della ricerca con Advanced eDiscovery. Si noti che quando si preparano i risultati della ricerca per l'analisi in Advanced eDiscovery, il riconoscimento ottico dei caratteri consente l'estrazione del testo dalle immagini. Questa funzionalità consente di applicare ai file di immagine le potenti funzionalità analitiche del testo di Advanced eDiscovery.
   
 Advanced eDiscovery semplifica e velocizza il processo di revisione del documento identificando informazioni ridondanti con caratteristiche come il rilevamento e l'analisi dei thread di posta elettronica quasi duplicati. La funzionalità pertinenza applica la tecnologia di codifica predittiva per identificare i documenti rilevanti. Advanced eDiscovery apprende dalle decisioni di tagging sui documenti di esempio e applica tecniche statistiche e di apprendimento automatico per calcolare la pertinenza di ogni documento nel set di dati. In questo modo è possibile concentrarsi sui documenti principali, prendere decisioni rapide ma informate sulla strategia del caso, i dati di eliminazione e la revisione delle priorità.
   

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: "Se un ex dipendente ritorna all'organizzazione o se un nuovo dipendente viene assunto per assumere le responsabilità del lavoro di un dipendente defunto, è possibile recuperare il contenuto della cassetta postale inattiva in Office 365. Quando si ripristina una cassetta postale inattiva, viene convertita in una nuova cassetta postale che contiene il contenuto della cassetta postale inattiva. "
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900045"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999819"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperare una cassetta postale inattiva in Office 365
 
@@ -69,7 +69,7 @@ Utilizzare il cmdlet **New-Mailbox** con il parametro *InactiveMailbox* per recu
 
     L'indirizzo SMTP primario per la cassetta postale inattiva recuperata avrà lo stesso valore di quello specificato dal parametro *MicrosoftOnlineServicesID* . 
     
-Dopo il recupero di una cassetta postale inattiva, viene creato anche un nuovo account utente di Office 365. È necessario attivare questo account utente assegnando una licenza. Per assegnare una licenza nell'interfaccia di amministrazione di Office 365, vedere [Assegnare licenze agli utenti in Office 365 per le aziende](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+Dopo il recupero di una cassetta postale inattiva, viene creato anche un nuovo account utente di Office 365. È necessario attivare questo account utente assegnando una licenza. Per assegnare una licenza nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare licenze per Office 365 per le aziende o annullarne l'assegnazione](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
 ## <a name="more-information"></a>Ulteriori informazioni
 

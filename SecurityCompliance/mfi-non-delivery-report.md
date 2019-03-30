@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono ottenere informazioni sul rapporto di mancato recapito nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
+description: Gli amministratori possono ottenere informazioni sul rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7786e2667f268566d189d4f09acd937eacb2c225
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722918"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000059"
 ---
 # <a name="non-delivery-report"></a>Rapporto di mancato recapito
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722918"
 
 Il **rapporto** di mancato recapito indica i codici di errore più rilevati nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) per gli utenti dell'organizzazione. Questo rapporto è destinato a visualizzare i dettagli dei rapporti di mancato reCapito, quindi è possibile risolvere i problemi.
 
-![Il rapporto di mancato recapito nel dashboard del flusso di posta nel centro conformità di Office 365 Security &](media/non-delivery-report-selected.png)
+![Il rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/non-delivery-report-selected.png)
 
 È possibile visualizzare informazioni su tutti i codici di MANCAto reCAPITO o su un codice specifico facendo clic su **Mostra dati per**. È inoltre possibile fare clic su **Visualizza dettagli** per visualizzare una visualizzazione più dettagliata, come illustrato nel diagramma seguente:
 

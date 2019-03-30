@@ -1,9 +1,8 @@
 ---
-title: Definire le impostazioni del tenant e il caso in Office 365 Advanced eDiscovery
+title: Definire le impostazioni del case e del tenant in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Informazioni sulle impostazioni delle etichette, del modulo incrociato e del tenant che è possibile definire a livello di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e27f33f15d133d502e01a780d6f05ca85cce41a5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219366"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000839"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definire le impostazioni del tenant e il caso in Office 365 Advanced eDiscovery
+# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definire le impostazioni del case e del tenant in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

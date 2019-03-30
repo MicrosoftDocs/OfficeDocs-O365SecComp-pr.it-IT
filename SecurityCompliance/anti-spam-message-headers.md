@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio.
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936746"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004243"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
 Quando Exchange Online Protection analizza un messaggio di posta elettronica in ingresso, inserisce l'intestazione **X-Forefront-Antispam-Report** nel messaggio. I campi di questa intestazione consentono agli amministratori di ottenere informazioni relative al messaggio e a come è stato elaborato. I campi nell'intestazione **X-Microsoft-Antispam** forniscono informazioni aggiuntive sulla posta inviata in massa e sul phishing. Oltre a queste due intestazioni, Exchange Online Protection inserisce anche i risultati dell'autenticazione della posta elettronica per ogni messaggio che elabora nell'intestazione **Authentication-results**.
+
+Per informazioni sulla visualizzazione dell'intestazione di un messaggio di posta elettronica in diversi client di posta elettronica, vedere [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
   
 > [!TIP]
-> Per informazioni sulla visualizzazione dell'intestazione di un messaggio di posta elettronica in diversi client di posta elettronica, vedere [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). È possibile copiare e incollare il contenuto dell'intestazione di un messaggio nello strumento [Analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha). Quando si seleziona un messaggio nella quarantena nell'interfaccia di amministrazione di Exchange, il collegamento **Visualizza intestazione messaggio** consente di copiare e incollare facilmente il testo dell'intestazione del messaggio nello strumento . Dopo l'accesso allo strumento Analizzatore intestazione messaggio, fare clic su **Analizza intestazioni** per recuperare le informazioni sull'intestazione.
+>  È possibile copiare e incollare il contenuto dell'intestazione del messaggio nello strumento [analizzatore dei messaggi](https://testconnectivity.microsoft.com/?tabid=mha) . Questo strumento consente di analizzare le intestazioni e di inserirlo in un formato più leggibile.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campi di intestazione del messaggio X-Forefront-Antispam-Report
 

@@ -3,23 +3,22 @@ title: Difesa contro gli attacchi Denial of Service in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una panoramica degli attacchi DoS (Denial of Service).
-ms.openlocfilehash: 246704bff18c07d9b76281ae3c7071cd0d747630
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220506"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004073"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Difesa contro gli attacchi Denial of Service in Office 365
 

@@ -12,26 +12,26 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilizzare la ricerca contenuto e lo script in questo articolo per eseguire ricerche nelle cassette postali e nei siti di OneDrive for business per un gruppo di utenti.
-ms.openlocfilehash: 1d180d4b6deefd59a26b1e93f354c72810030718
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295499"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001279"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usare la Ricerca contenuto per eseguire ricerche nella cassetta postale e nel sito OneDrive for Business per un elenco di utenti
 
-Il Centro sicurezza &amp; e conformità di Office 365 fornisce una serie di cmdlet di Windows PowerShell che consentono di automatizzare le attività relative a eDiscovery. Attualmente, la creazione di una ricerca di contenuto &amp; nel centro sicurezza e conformità per la ricerca di un numero elevato di posizioni di contenuto del custode richiede tempo e preparazione. Prima di creare una ricerca, è necessario raccogliere l'URL per ogni sito di OneDrive for business e quindi aggiungere ogni cassetta postale e O neDrive for Business site alla ricerca. Nelle versioni future, questo sarà più facile da fare nel centro sicurezza &amp; e conformità. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo. Questo script richiede l'utilizzo del nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), un elenco di indirizzi di posta elettronica utente, il nome della nuova ricerca contenuto e la query di ricerca da utilizzare. Lo script ottiene l'URL di OneDrive for business per ogni utente nell'elenco e quindi crea e avvia una ricerca di contenuto che cerca nella cassetta postale e nel sito di OneDrive for business ogni utente nell'elenco, utilizzando la query di ricerca fornita. 
+Il Centro sicurezza e conformità di & fornisce un certo numero di cmdlet di Windows PowerShell che consentono di automatizzare le attività relative all'utilizzo di eDiscovery. Attualmente, la creazione di una ricerca di contenuto nel centro sicurezza & Compliance per la ricerca di un gran numero di posizioni di contenuto custode richiede tempo e preparazione. Prima di creare una ricerca, è necessario raccogliere l'URL per ogni sito di OneDrive for business e quindi aggiungere ogni cassetta postale e O neDrive for Business site alla ricerca. Nelle versioni future, questo sarà più facile da fare nel centro sicurezza & Compliance. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo. Questo script richiede l'utilizzo del nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), un elenco di indirizzi di posta elettronica utente, il nome della nuova ricerca contenuto e la query di ricerca da utilizzare. Lo script ottiene l'URL di OneDrive for business per ogni utente nell'elenco e quindi crea e avvia una ricerca di contenuto che cerca nella cassetta postale e nel sito di OneDrive for business ogni utente nell'elenco, utilizzando la query di ricerca fornita. 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per eseguire lo script nel passaggio 3, è necessario essere membri del gruppo di &amp; ruoli eDiscovery Manager nel centro conformità sicurezza e un amministratore globale di SharePoint Online.
+- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza e conformità di & e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3.
     
 - Assicurarsi di salvare l'elenco di utenti creato nel passaggio 2 e lo script nel passaggio 3 alla stessa cartella. Questo renderà più facile eseguire lo script.
     
 - Lo script include la gestione degli errori minima. Lo scopo principale è la ricerca rapida e semplice della cassetta postale e del sito di OneDrive for business di ogni utente.
     
-- Gli script di esempio forniti in questo argomento non sono supportati in alcun servizio o programma di supporto Microsoft standard. Gli script di esempio sono forniti come è senza garanzia di alcun tipo. Microsoft nega inoltre tutte le garanzie di[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)mplied, incluse, a titolo esemplificativo, le garanzie implicite di commerciabilità o di idoneità per uno scopo specifico. L'intero rischio derivante dall'utilizzo o dalle prestazioni degli script di esempio e della documentazione rimane invariato. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script sarà responsabile per eventuali danni (compresi, senza limitazione, i danni per perdita degli utili aziendali, interruzioni aziendali, perdita di informazioni aziendali o altre perdite pecuniarie) derivanti dall'utilizzo o dall'impossibilità di utilizzare gli script di esempio o la documentazione, anche se Microsoft è stata avvisata della possibilità di tali danni.
+- Gli script di esempio forniti in questo argomento non sono supportati in alcun servizio o programma di supporto Microsoft standard. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Microsoft nega inoltre tutte le garanzie di[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)mplied, incluse, a titolo esemplificativo, le garanzie implicite di commerciabilità o di idoneità per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Passaggio 1: Installare SharePoint Online Management Shell
 <a name="step1"> </a>
@@ -57,7 +57,7 @@ Dopo aver eseguito il comando, accertarsi di aprire il file e rimuovere l'intest
 
 Quando si esegue lo script in questo passaggio, vengono richieste le informazioni seguenti. Assicurarsi di avere queste informazioni pronte prima di eseguire lo script.
   
-- **Credenziali utente** : lo script utilizzerà le credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business e connettersi al centro sicurezza &amp; e conformità con Remote PowerShell. 
+- **Credenziali utente** : lo script utilizzerà le credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business e connettersi al centro sicurezza & compliance con Remote PowerShell. 
     
 - **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com**, è necessario immetterlo `contoso` quando lo script richiede il nome del dominio di siti personali. 
     
@@ -182,4 +182,4 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
     
     - La query di ricerca (lasciare vuoto questo elemento per restituire tutti gli elementi nei percorsi di contenuto).
     
-    Lo script consente di recuperare gli URL per ogni sito di OneDrive for business e quindi di creare e avviare la ricerca. È possibile eseguire il cmdlet **Get-ComplianceSearch** in PowerShell centro conformità _AMP_ di sicurezza per visualizzare le statistiche di ricerca e i risultati oppure andare alla pagina **Ricerca contenuto** nel centro sicurezza &amp; e conformità per visualizzare informazioni sulla ricerca. 
+    Lo script consente di recuperare gli URL per ogni sito di OneDrive for business e quindi di creare e avviare la ricerca. È possibile eseguire il cmdlet **Get-ComplianceSearch** in PowerShell centro conformità _AMP_ di sicurezza per visualizzare le statistiche di ricerca e i risultati oppure andare alla pagina **Ricerca contenuto** nel centro sicurezza e conformità di & per visualizzare le informazioni informazioni sulla ricerca. 

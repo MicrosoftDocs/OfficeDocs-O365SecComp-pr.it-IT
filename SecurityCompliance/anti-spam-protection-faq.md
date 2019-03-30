@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692235"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000989"
 ---
 # <a name="anti-spam-protection-faq"></a>DOMANDE frequenti sulla protezione da posta indesiderata
 
@@ -71,7 +71,7 @@ R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per
   
  **D. È possibile ricevere rapporti sulla posta indesiderata?**
   
-A. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Office 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
+A. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Microsoft 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
   
 Clienti di Exchange Online: [monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   

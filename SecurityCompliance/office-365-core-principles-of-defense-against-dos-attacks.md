@@ -6,23 +6,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: In che modo Microsoft utilizza i principi fondamentali dell'assorbimento, del rilevamento e dell'attenuazione in difesa degli attacchi DoS (Denial of Service).
-ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216006"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004103"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>I principi fondamentali di protezione contro gli attacchi Denial of Service
 
-I tre principi fondamentali per la difesa dagli attacchi DoS basati sulla rete sono assorbimento, rilevamento e attenuazione. L'assorbimento avviene prima del rilevamento e il rilevamento avviene prima dell'attenuazione. L'assorbimento è la migliore difesa contro gli attacchi DoS. Se non è possibile rilevare l'attacco, non può essere attenuato. Tuttavia, se non è possibile assorbire anche il più piccolo attacco DoS, i servizi non sopravvivranno abbastanza a lungo per rilevare l'attacco.
+I tre principi fondamentali per la difesa dagli attacchi DoS basati sulla rete sono assorbimento, rilevamento e attenuazione.
+L'assorbimento avviene prima del rilevamento e il rilevamento avviene prima dell'attenuazione. L'assorbimento è la migliore difesa contro gli attacchi DoS. Se non è possibile rilevare l'attacco, non può essere attenuato. Tuttavia, se non è possibile assorbire anche il più piccolo attacco DoS, i servizi non sopravvivranno abbastanza a lungo per rilevare l'attacco.
 
 Naturalmente, in generale, non è possibile per la maggior parte delle organizzazioni acquistare la capacità in eccesso necessaria per assorbire gli attacchi DoS, poiché ciò richiede un investimento considerevole in tecnologia e competenze tecniche. Questo evidenzia uno dei vantaggi per la sicurezza dell'utilizzo dei servizi cloud Microsoft; la scalabilità dei nostri servizi consente di offrire una protezione della rete elevata ai clienti cloud in modo economico. Tuttavia, anche a livello di scala, tuttavia, è necessario un bilanciamento tra assorbimento, rilevamento e attenuazione. Per trovare questo bilanciamento, è possibile studiare il tasso di crescita di un attacco per stimare quanto è necessario assorbire.
 

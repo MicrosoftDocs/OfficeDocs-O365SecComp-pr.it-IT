@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection include allegati sicuri, collegamenti sicuri, strumenti avanzati di anti-phishing, strumenti per la creazione di report e funzionalità di minacce di intelligence.
-ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989621"
+ms.locfileid: "31001179"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -89,9 +89,9 @@ Per accedere alle funzionalità ATP nel centro sicurezza & Compliance, è necess
 
 Per ulteriori informazioni, vedere:
 
-- [Autorizzazioni nel centro conformità & sicurezza di Office 365](permissions-in-the-security-and-compliance-center.md) 
+- [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md) 
 
-- [Fornire agli utenti l'accesso al centro conformità & sicurezza di Office 365](grant-access-to-the-security-and-compliance-center.md)
+- [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="get-office-365-atp"></a>Ottenere Office 365 ATP
 

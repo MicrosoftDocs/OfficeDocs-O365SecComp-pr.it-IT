@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'espansione automatica dell'archiviazione in Office 365, che fornisce un archivio di archiviazione illimitato per le cassette postali di Exchange Online.
-ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296649"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000789"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Panoramica dell'archiviazione illimitata in Office 365
 
@@ -29,7 +29,7 @@ In Office 365, le cassette postali di archiviazione offrono agli utenti un ulter
 Per istruzioni dettagliate per l'attivazione dell'archiviazione in espansione automatica, vedere Enable Unlimited [Archiving in Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> L'archiviazione in espansione automatica supporta anche le cassette postali condivise. Per abilitare l'archivio per una cassetta postale condivisa, è necessaria una licenza di Exchange Online piano 2 o una licenza di Exchange Online piano 1 con una licenza di archiviazione Exchange Online. 
+> L'espansione automatica dell'archivio supporta anche le cassette postali condivise. Per abilitare l'archivio per una cassetta postale condivisa, è necessaria una licenza di Exchange Online piano 2 o una licenza di Exchange Online piano 1 con una licenza di archiviazione Exchange Online. 
   
 ## <a name="how-auto-expanding-archiving-works"></a>Funzionamento dell'archiviazione con espansione automatica
 
@@ -97,7 +97,7 @@ In questa sezione viene illustrata la funzionalità tra l'archiviazione in espan
   
 - **eDiscovery** -quando si utilizza uno strumento di eDiscovery di Office 365, ad esempio la ricerca di contenuto o eDiscovery sul posto, vengono cercate anche le aree di archiviazione aggiuntive in un archivio con espansione automatica.
     
-- **Conservazione** : quando si attiva il blocco di una cassetta postale utilizzando strumenti come il blocco per controversia legale in Exchange Online o eDiscovery e i criteri di conservazione nel centro conformità & sicurezza di Office 365, il contenuto presente in un archivio auto-espanso è anche posto in attesa.
+- **Conservazione** : quando si inserisce una cassetta postale in attesa utilizzando strumenti come il blocco per controversia legale in Exchange Online o eDiscovery e i criteri di conservazione nel centro sicurezza e conformità, anche il contenuto di un archivio espanso automaticamente viene messo in attesa.
     
 - **Gestione record di messaggistica** -se si utilizzano i criteri di eliminazione dei messaggi di posta elettronica in Exchange Online per eliminare definitivamente gli elementi della cassetta postale scaduta, verranno eliminati anche gli elementi scaduti che si trovano nell'archivio auto-espanso.
     

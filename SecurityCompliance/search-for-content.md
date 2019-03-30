@@ -1,5 +1,5 @@
 ---
-title: Ricerca di contenuti in Office 365
+title: Ricerca di contenuto in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365 per trovare rapidamente la posta elettronica nelle cassette postAli di Exchange, i documenti nei siti di SharePoint e le posizioni di OneDrive e le conversazioni di messaggistica istantanea in Skype for business.
-ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza e conformità & per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, i documenti nei siti di SharePoint e le posizioni OneDrive e le conversazioni di messaggistica istantanea in Skype for business.
+ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214536"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000969"
 ---
-# <a name="search-for-content-in-office-365"></a>Ricerca di contenuti in Office 365
+# <a name="search-for-content-in-office-365"></a>Ricerca di contenuto in Office 365
 
-Utilizzare lo strumento di ricerca contenuto nel centro &amp; sicurezza e conformità per trovare rapidamente la posta elettronica nelle cassette postAli di Exchange, nei documenti nei siti di SharePoint e nelle posizioni di OneDrive e nelle conversazioni di messaggistica istantanea in Skype for business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea negli strumenti di collaborazione di Office 365, ad esempio i gruppi di Microsoft teams e Office 365.
+Utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità di & per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, i documenti nei siti di SharePoint e le posizioni di OneDrive e le conversazioni di messaggistica istantanea in Skype for business. È possibile utilizzare lo strumento di ricerca contenuto per cercare messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea negli strumenti di collaborazione di Office 365, ad esempio i gruppi di Microsoft teams e Office 365.
   
 ## <a name="search-for-content"></a>Ricerca dei contenuti
 
@@ -72,7 +72,7 @@ La ricerca di contenuti è facile da usare, ma è anche uno strumento potente. D
     
 ## <a name="use-scripts-for-advanced-scenarios"></a>Utilizzare gli script per gli scenari avanzati
 
-A volte è necessario eseguire attività di ricerca di contenuto più avanzate, complesse e ripetitive. In questi casi, è più semplice e veloce utilizzare i comandi di PowerShell nel centro &amp; sicurezza e conformità. Per semplificare le operazioni, è stato creato un certo numero di script &amp; PowerShell per il Centro sicurezza e conformità che consentono di completare le attività complesse relative alla ricerca di contenuto.
+A volte è necessario eseguire attività di ricerca di contenuto più avanzate, complesse e ripetitive. In questi casi, è più semplice e veloce utilizzare i comandi di PowerShell nel centro sicurezza & Compliance. Per semplificare le operazioni, è stato creato un certo numero di script di PowerShell per la sicurezza di & Compliance Center che consentono di completare le attività complesse correlate alla ricerca di contenuto.
   
 - [Cartelle di cassette postali e di sito specifiche per la ricerca](use-content-search-for-targeted-collections.md) (denominato *insieme mirato* ) quando si è certi che gli elementi sensibili a un caso siano presenti in tale cartella 
     
