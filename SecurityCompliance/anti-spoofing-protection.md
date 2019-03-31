@@ -3,7 +3,7 @@ title: Protezione anti-spoofing in Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936796"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004263"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -412,34 +412,6 @@ Questa funzionalità è attualmente in fase di sviluppo. Con la definizione di u
   
 ![Esperienza utente possibile per consentire un mittente falsificato](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Informazioni sul modo in cui sono combinati posta indesiderata, phishing e rilevamento avanzato di phishing
-
-Le organizzazioni che utilizzano Exchange Online, con o senza ATP, possono specificare le azioni da intraprendere quando il servizio identifica i messaggi come malware, posta indesiderata, alta probabilità di posta indesiderata, phishing e invio in blocco.  Tramite i criteri di anti-phishing ATP per i clienti ATP e i criteri di anti-phishing per i clienti di EOP e dato che un messaggio può colpire più tipi di rilevamento (ad esempio, malware, phishing e rappresentazione di utenti), può verificarsi una certa confusione su quale criterio applicare.
-  
-In generale, il criterio applicato a un messaggio è identificato nell'intestazione X-Forefront-Antispam-Report nella proprietà CAT (categoria).
-  
-|**Priorità **|**Criterio**|**Categoria**|**Dove è gestito?**|**Si applica a**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Criteri anti-malware](configure-anti-malware-policies.md) <br/> |Tutte le organizzazioni  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md) <br/> |Tutte le organizzazioni  <br/> |
-|3  <br/> |Alta probabilità di posta indesiderata  <br/> |HSPM  <br/> |[Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md) <br/> |Tutte le organizzazioni  <br/> |
-|4  <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Criteri di anti-phishing](https://go.microsoft.com/fwlink/?linkid=864553), [Spoof intelligence](learn-about-spoof-intelligence.md) <br/> |Tutte le organizzazioni  <br/> |
-|5  <br/> |Posta indesiderata  <br/> |SPM  <br/> |[Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md) <br/> |Tutte le organizzazioni  <br/> |
-|6  <br/> |Invio in blocco  <br/> |BULK  <br/> |[Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md) <br/> |Tutte le organizzazioni  <br/> |
-|7  <br/> |Rappresentazione del dominio  <br/> |DIMP  <br/> |[Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP ](set-up-anti-phishing-policies.md) <br/> |Organizzazioni con solo ATP  <br/> |
-|8  <br/> |Rappresentazione utente  <br/> |UIMP  <br/> |[Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP ](set-up-anti-phishing-policies.md) <br/> |Organizzazioni con solo ATP <br/> |
-
-Se si dispone di più criteri di anti-phishing, verrà applicato il criterio con la priorità più alta. Si supponga, ad esempio, che si dispone di due criteri:
-
-|**Criterio**|**Priorità **|**Rappresentazione del dominio/utente**|**Anti-spoofing**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Attivato  <br/> |Disattivato  <br/> |
-|B  <br/> |2  <br/> |Disattivato  <br/> |Attivato  <br/> |
-
-Se un messaggio viene identificato come spoofing e rappresentazione utente, e lo stesso insieme di utenti ha come ambito il criterio A e il criterio B, il messaggio viene considerato come spoofing ma non è applicata alcuna azione poiché l'anti-spoofing è disattivato e SPOOF viene eseguito con una priorità più alta (4) rispetto alla rappresentazione dell'utente (8).
-  
-Per applicare altri criteri di phishing, è necessario modificare le impostazioni che definiscono a chi sono applicati i diversi criteri.
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scenari legittimi per disabilitare l'anti-spoofing
 
 L'anti-spoofing protegge meglio i clienti dagli attacchi di phishing e quindi la disabilitazione della protezione anti-spoofing è fortemente scoraggiata. Disabilitandolo, è possibile risolvere alcuni falsi positivi a breve termine, ma a lungo termine si sarà esposti a più rischi. Il costo per la configurazione dell'autenticazione da parte del mittente o la modifica dei criteri di phishing è in genere una tantum o richiede una manutenzione periodica minima.  Tuttavia, il costo per il ripristino da un attacco di phishing, in cui i dati sono stati esposti o in cui le risorse sono state compromesse, è molto più alto.
@@ -548,18 +520,8 @@ Tenere presente che quest’ultimo dovrebbe essere applicato solo ai domini sott
 ### <a name="information-for-individual-users"></a>Informazioni per i singoli utenti
 
 I singoli utenti sono limitati nel modo in cui possono interagire con il suggerimento per la sicurezza anti-spoofing. Tuttavia, esistono diverse operazioni che è possibile eseguire per risolvere gli scenari comuni.
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>Scenario comune N.1 - inoltro delle cassette postali
-
-Se si utilizza un altro servizio di posta elettronica e si inoltra la posta elettronica a Office 365 o Outlook.com, è possibile che la posta elettronica sia contrassegnata come spoofing e riceva un suggerimento per la sicurezza in rosso.  Office 365 e Outlook.com pianificano l'inoltro automatico quando il mittente appartiene a Outlook.com, Office 365, Gmail o qualsiasi altro servizio che utilizzi il [protocollo Arc](https://arc-spec.org). Tuttavia, finché non viene distribuita la correzione, gli utenti devono utilizzare la funzionalità Account connessi per importare i propri messaggi direttamente, anziché utilizzare l'opzione di inoltro.
-  
-Per configurare gli account connessi in Office 365, selezionare l'icona a ingranaggio nell'angolo in alto a destra, quindi \> Account connessi \> Account, \>di \> Posta elettronica nell'interfaccia web di Office 365.
-  
-![Office 365: opzione account connessi](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-In Outlook.com, il processo è icona dell'ingranaggio \> Opzioni \> Account di \> posta elettronica \>Account connessi.
-  
-### <a name="common-scenario-2---discussion-lists"></a>Scenario comune N.2: elenchi di discussione
+ 
+### <a name="common-scenario-1---discussion-lists"></a>Scenario comune 1: elenchi di discussione
 
 Gli elenchi di discussione sono noti per avere problemi con l'anti-spoofing a causa del modo in cui inoltrano il messaggio e ne modificano il contenuto conservando l'indirizzo originale Da:.
   
@@ -661,7 +623,7 @@ Dopo aver iniziato con un record SPF con un criterio di fallback di ?all, è pos
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Che cosa succede se si è il proprietario di una mailing list?
 
-Vedere la sezione [Scenario comune N.2: elenchi di discussione](#common-scenario-2---discussion-lists).
+Vedere la sezione [Scenario comune 1: elenchi di discussione](#common-scenario-1---discussion-lists).
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Che cosa succede se si è un provider di infrastruttura, ad esempio un Internet Service Provider (ISP), un Email Service Provider (ESP), o un cloud hosting service?
 

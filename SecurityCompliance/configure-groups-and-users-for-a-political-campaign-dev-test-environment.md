@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
-ms.openlocfilehash: 098ae2c3005e0c6ba7939c52260b1a2c49dc557e
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0b2bf64a408eeee457dfc6c2ac8565e91c927f72
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223705"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000139"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -36,9 +36,9 @@ Per prima cosa, seguire le istruzioni della **fase 2** nell'articolo relativo al
   
 Iscriversi quindi per la sottoscrizione di valutazione di EMS E5 e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365.
   
-1. Se necessario, accedere al portale di Office 365 con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale dell'abbonamento di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Fare clic sul riquadro **Amministratore**.
+2. Scegliere il riquadro **Amministrazione**.
     
 3. Nella scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Fatturazione > Servizi di acquisto** nel riquadro di spostamento di sinistra.
     
@@ -50,7 +50,7 @@ Iscriversi quindi per la sottoscrizione di valutazione di EMS E5 e aggiungerla a
     
 Abilitare quindi la licenza EMS E5 per l'account amministratore globale.
   
-1. Nella scheda **Interfaccia di amministrazione di Office 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
+1. Nella scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento sinistro.
     
 2. Fare clic sull'account amministratore globale e quindi su **Modifica** per le **licenze del prodotto**.
     
