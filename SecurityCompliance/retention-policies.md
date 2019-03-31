@@ -3,7 +3,7 @@ title: Panoramica dei criteri di conservazione
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con i criteri di conservazione, è possibile decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, applicare un singolo criterio all'intera organizzazione oppure solo a posizioni o utenti specifici e applicare i criteri a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o solo a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935301"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997142"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -31,7 +31,7 @@ Per la maggior parte delle organizzazioni, il volume e la complessità dei dati 
     
 - **Aiutare l'organizzazione a condividere le informazioni in modo efficace e a essere più flessibile** assicurando che gli utenti usino solo contenuti aggiornati e pertinenti. 
     
-I criteri di conservazione in Office 365 consentono di raggiungere tutti questi obiettivi. La gestione dei contenuti in genere richiede due azioni:
+Un criterio di conservazione consente di raggiungere tutti questi obiettivi. La gestione dei contenuti in genere richiede due azioni:
   
 - **Conservare** il contenuto in modo che non possa essere eliminato definitivamente prima del termine del periodo di conservazione. 
     
@@ -49,10 +49,10 @@ Quando si impostano criteri di conservazione per il contenuto, gli utenti posson
   
 È infine possibile che alcune organizzazioni debbano conformarsi a normative come la regola 17a-4 della SEC (Securities and Exchange Commission), in base alla quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. Per soddisfare questo requisito, è possibile usare la caratteristica Protezione dell'archiviazione. Dopo aver bloccato i criteri, nessuno, incluso l'amministratore, può disattivarli o renderli meno restrittivi.
   
-I criteri di conservazione vengono creati e gestiti nella pagina **Conservazione** del Centro sicurezza e conformità di Office 365. 
-  
-![Pagina Conservazione del Centro sicurezza e conformità](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+Creare e gestire i criteri di conservazione sulla:
+
+- Pagina **Criteri** pagina nel Centro conformità Microsoft 365.
+- Pagina **Conservazione** sotto **Governance dei dati** nel centro sicurezza&amp; e conformità di Office 365.
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funzionamento dei criteri di conservazione con il contenuto presente
 
@@ -322,7 +322,7 @@ Infine, un criterio o un'etichetta di conservazione non può eliminare definitiv
 
 Un singolo criterio di conservazione può essere facilmente applicato a un'intera organizzazione e alle posizioni in Office 365, tra cui Exchange Online, SharePoint Online, OneDrive for Business e Gruppi di Office 365. Se si desidera conservare o eliminare il contenuto in una posizione qualsiasi di Office 365, è consigliabile usare i criteri di conservazione. È anche possibile usare le etichette con impostazioni di conservazione. Per ulteriori informazioni, vedere [Panoramica delle etichette](labels.md).
   
-Per conservare o eliminare il contenuto in Office 365 in passato sono state usate diverse altre caratteristiche, elencate di seguito, che continueranno a funzionare insieme ai criteri di conservazione e alle etichette creati nel Centro sicurezza e conformità. In futuro, tuttavia, per la governance dei dati si consiglia di usare i criteri di conservazione o le etichette invece di queste caratteristiche. I criteri di conservazione sono l'unica funzionalità che può sia conservare che eliminare il contenuto in Office 365.
+Per conservare o eliminare il contenuto in Office 365 in passato sono state usate diverse altre caratteristiche, elencate di seguito, che continueranno a funzionare insieme ai criteri di conservazione e alle etichette. In futuro, tuttavia, per la governance dei dati si consiglia di usare i criteri di conservazione o le etichette invece di queste caratteristiche. I criteri di conservazione sono l'unica caratteristica che può sia conservare che eliminare il contenuto in Office 365.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -344,17 +344,17 @@ Per conservare o eliminare il contenuto in Office 365 in passato sono state usat
     
 - [Usare criteri per la chiusura e l'eliminazione di siti](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminazione) 
     
-- [Criteri per la gestione delle informazioni ](intro-to-info-mgmt-policies.md) (solo eliminazione) 
+- [Criteri di gestione delle informazioni ](intro-to-info-mgmt-policies.md) (solo eliminazione) 
     
-Se in passato sono stati usati blocchi di eDiscovery per la governance dei dati, per garantire una conformità proattiva ora si devono usare invece i criteri di conservazione. È consigliabile usare un blocco creato nel Centro sicurezza e conformità solo per eDiscovery.
+Se in passato sono stati usati blocchi di eDiscovery per la governance dei dati, per garantire una conformità proattiva ora si devono usare invece i criteri di conservazione. È consigliabile usare un solo blocco per eDiscovery.
   
 ### <a name="retention-policies-override-information-management-policies"></a>I criteri di conservazione sostituiscono i criteri di gestione delle informazioni
 
-Nei siti di SharePoint potrebbero essere usati [criteri di gestione delle informazioni](intro-to-info-mgmt-policies.md) per conservare il contenuto. Se si applicano criteri di conservazione creati nel Centro sicurezza e conformità a un sito che già usa criteri per il tipo di contenuto o criteri di gestione delle informazioni per un elenco o una raccolta, tali criteri vengono ignorati quando sono applicati i criteri di conservazione. 
+Nei siti di SharePoint potrebbero essere usati [criteri di gestione delle informazioni](intro-to-info-mgmt-policies.md) per conservare il contenuto. Se si applicano criteri di conservazione dei documenti a un sito che già usa criteri tipo di contenuto o criteri di gestione delle informazioni per un elenco o una raccolta, tali criteri vengono ignorati e vengono applicati i criteri di eliminazione dei documenti. 
   
 ## <a name="what-happened-to-preservation-policies"></a>Modifiche apportate ai criteri di conservazione
 
-Se si usavano i precedenti criteri di conservazione, questi criteri ora vengono convertiti automaticamente nei nuovi criteri di conservazione che usano solo l'azione di conservazione. I criteri non eliminano il contenuto. I criteri di conservazione continueranno a funzionare e conservare il contenuto senza bisogno di interventi da parte dell'utente. Questi criteri sono disponibili nella pagina **Conservazione** del Centro sicurezza e conformità. È possibile modificare i criteri di conservazione per modificare il periodo di conservazione, ma non è possibile apportare altre modifiche, ad esempio l'aggiunta o la rimozione delle posizioni. 
+Se si usavano i precedenti criteri di conservazione, questi criteri ora vengono convertiti automaticamente nei nuovi criteri di conservazione che usano solo l'azione di conservazione. I criteri non eliminano il contenuto. I criteri di conservazione continueranno a funzionare e conservare il contenuto senza bisogno di interventi da parte dell'utente. Questi criteri sono disponibili nella pagina **Criteri** nel Centro conformità di Microsoft 365, o nella pagina **Conservazione** sotto **Governance dei dati** del centro sicurezza &amp;e conformità. È possibile cambiare i criteri di conservazione per modificare il periodo di conservazione, ma non è possibile apportare altre modifiche, ad esempio l'aggiunta o la rimozione delle posizioni. 
   
 ## <a name="permissions"></a>Autorizzazioni
 

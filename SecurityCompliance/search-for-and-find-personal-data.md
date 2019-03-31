@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come cercare e trovare i dati personali dell'utente in Office 365.
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373877"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955179"
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
@@ -80,14 +80,13 @@ Se necessario, è possibile aggiungere parametri alla query per ridurre i falsi 
 </tbody>
 </table>
 
-A breve, sarà possibile creare e modificare i tipi di informazioni riservate in una nuova interfaccia utente in Centro sicurezza e conformità. Sarà possibile modificare in modo dinamico i risultati corrispondenti e ottimizzare i tipi di informazioni riservate in base alle proprie esigenze.
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>Cercare le tipologie di informazioni sensibili con Ricerca contenuto
 
 
-Iniziare la ricerca dei dati personali utilizzando i tipi di informazioni riservate inclusi in Office 365. Sono elencati nel Centro sicurezza e conformità in Classificazione.
+Avviare la ricerca dei dati personali usando i tipi di informazioni riservate incluse in Office 365. Questi sono elencati sotto Classificazioni nel Centro sicurezza e conformità.
 
-Questo argomento include un elenco dei tipi di informazioni riservate correnti che si applicano ai cittadini dell'Unione europea. Usarli come punto di partenza. Controllare spesso Centro sicurezza e conformità per le nuove aggiunte che semplificano la conformità RGPD.
+Questo argomento include un elenco di alcuni tipi di informazioni riservate che si applicano ai cittadini dell'Unione Europea. Controllare il Centro sicurezza e conformità per le nuove aggiunte che semplificano la conformità all’RGDP.
 
 Vedere anche l'articolo: [Elenco dei tipi di informazioni riservate e l'aspetto di ognuno di essi](https://support.office.com/it-IT/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 
