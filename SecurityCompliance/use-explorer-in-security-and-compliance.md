@@ -3,7 +3,7 @@ title: Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 03/31/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Explorer (denominato anche Esplora minacce) nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: e6177970edc67c8b9e1c0ae6144f4c37f116012f
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989611"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014015"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 
@@ -47,18 +47,22 @@ Il rapporto viene aggiornato per visualizzare i risultati rilevati dal malware n
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Visualizzare i dati relativi agli URL di phishing e fare clic su verdetto
 
-Si supponga di voler vedere tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL che sono stati consentiti, bloccati e ignorati. A tale scopo, utilizzare la visualizzazione [_GT_ phishing di posta elettronica](threat-explorer-views.md#email--phish) di Esplora risorse.
+Si supponga di voler vedere tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL che sono stati consentiti, bloccati e ignorati.  L'identificazione degli URL a cui è stato fatto clic richiede [collegamenti sicuri ATP](atp-safe-links.md). (Accertarsi di aver configurato e applicato i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) agli utenti per la protezione e la registrazione di clic di verdetti da ATP Safe Links.) Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione [phishing > di posta elettronica](threat-explorer-views.md#email--phish) di Esplora risorse.
 
 1. Nel centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)), scegliere **gestione** > **** minacce.
 2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewEmailPhishMenu.png)<br/>
 3. Fare clic su **sender**e quindi scegliere **urls** > ****.
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** per applicare il filtro.<br/>![URL e fare clic su verdetti](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
-Il rapporto viene aggiornato per visualizzare gli URL di phishing rilevati nel messaggio di posta elettronica che sono stati bloccati (o visitati nonostante un avviso), insieme allo stato di recapito della posta elettronica. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali che sono stati bloccati nella posta elettronica dell'organizzazione. 
+Il rapporto viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL seguente:
+1. Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati inFormatici includono una combinazione di URL buoni e cattivi nei loro messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente a cui fare clic. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
+2. I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, questi sono più spesso collegamenti sospetti o malevoli, ma possono includere URL puliti che si verificano nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
+
+Le due tabelle degli URL mostrano gli URL principali nei messaggi di posta elettronica di phishing in base allo stato di recapito e visualizzano gli URL che sono stati bloccati (o sono stati visitati nonostante un avviso), in modo da poter capire quali collegamenti negativi sono stati ricevuti dagli utenti e interagito con gli utenti. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione. 
 
 ![URL di Esplora risorse bloccati](media/ExplorerPhishClickVerdictURLs.png) 
 
-Selezionare un URL per visualizzare informazioni più dettagliate.
+Selezionare un URL per visualizzare informazioni più dettagliate. Si noti che nella finestra di dialogo URL a comparsa, il filtro nei messaggi di posta elettronica viene rimosso per visualizzare la visualizzazione completa dell'esposizione dell'URL nell'ambiente in uso. In questo modo è possibile filtrare i messaggi di posta elettronica in Esplora risorse a quelli di cui si è preoccupati, individuare URL specifici che sono potenziali minacce e quindi espandere la propria comprensione dell'esposizione all'URL nell'ambiente (tramite la finestra di dialogo Dettagli URL) senza dover aggiungere filtri URL al Visualizzazione di Esplora risorse.
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
