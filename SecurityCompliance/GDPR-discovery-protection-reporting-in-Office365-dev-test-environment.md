@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Dimostrazione delle funzionalità correlate al GDPR in Office 365.
-ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373907"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955279"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
 
@@ -175,7 +175,7 @@ Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Fase 5: dimostrare la protezione dei dati
 
-La protezione delle informazioni personali in Office 365 include l'utilizzo delle funzionalità di prevenzione della perdita dei dati (DLP). Con i criteri DLP nel Centro sicurezza e conformità di Office 365, è possibile proteggere automaticamente le informazioni sensibili presenti in Office 365.
+La protezione delle informazioni personali di Office 365 include l’uso delle funzionalità di prevenzione della perdita dei dati (DPL).  Con i criteri DPL, è possibile proteggere automaticamente le informazioni riservate in Office 365.
 
 Esistono molti modi per applicare la protezione. Investire nella formazione e nella sensibilizzazione in merito alla posizione in cui i dati degli utenti che risiedono nell'UE vengono memorizzati nell'ambiente e a come i dipendenti sono autorizzati a gestirli, rappresenta un livello di protezione delle informazioni tramite i criteri di prevenzione della perdita dei dati di Office 365.
 

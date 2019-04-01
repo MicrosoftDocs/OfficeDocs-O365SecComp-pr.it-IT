@@ -3,7 +3,7 @@ title: Panoramica delle etichette di riservatezza
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737686"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999739"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
 Per svolgere il loro lavoro, i membri dell’organizzazione devono collaborare con altri utenti, sia all’interno sia all’esterno dell'organizzazione. Questo significa che i contenuti non sono più protetti da un firewall, ma si spostano tra dispositivi, applicazioni e servizi. E quando si spostano, è preferibile che lo facciano in modo sicuro e protetto, nel rispetto dei criteri aziendali e di conformità dell'organizzazione.
 
-Con le etichette di riservatezza in Office 365, è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti.
+Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti.
 
 ![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ Con le etichette di riservatezza in Office 365, è possibile classificare e prot
     
 In tutti questi casi, le etichette di riservatezza in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di riservatezza è possibile classificare i dati all'interno dell'organizzazione e applicare impostazioni di protezione in base alla classificazione.
   
-Le etichette di riservatezza vengono create nel Centro sicurezza e conformità di Office 365. Il Centro sicurezza e conformità è ora l'unico luogo in cui configurare i criteri e le etichette di riservatezza in Azure Information Protection e Office 365. Queste etichette di riservatezza possono essere usate da Azure Information Protection, dalle applicazioni di Office e dai servizi di Office 365.
+Le etichette di riservatezza vengono create nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365. Queste etichette di riservatezza possono essere usate da Azure Information Protection, dalle app di Office e dai servizi di Office 365.
 
-Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nel Centro sicurezza e conformità e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. **Le etichette di Azure Information Protection e le etichette di riservatezza di Office 365 sono completamente compatibili tra loro.** Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection.
-
-![Scheda riservatezza nella pagina Etichette del Centro sicurezza e conformità](media/Sensitivity_label_tab_on_Labels_page.png)
+Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nelle altre interfacce di amministrazione e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. **Le etichette di Azure Information Protection e le etichette di riservatezza di Office 365 sono completamente compatibili tra loro.** Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection.
 
 ## <a name="what-a-sensitivity-label-is"></a>Cos’è un'etichetta di riservatezza
 
@@ -84,13 +82,13 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-Tutte queste opzioni sono disponibili quando si crea un'etichetta in Centro sicurezza e conformità.
+Tutte queste opzioni sono disponibili quando si crea un'etichetta di riservatezza.
 
 ![Opzioni di creazione di un'etichetta di riservatezza](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>Priorità dell’etichetta (l’ordine è importante)
 
-Quando si creano le etichette di riservatezza nel Centro sicurezza e conformità, queste vengono visualizzate in un elenco nella scheda **Riservatezza** nella pagina **Etichette**. In questo elenco, l'ordine delle etichette è importante perché ne riflette la priorità. È importante che l'etichetta con il grado di riservatezza più restrittivo, come Riservatezza elevata, sia visualizzata nella **parte inferiore** dell'elenco, e che l’etichetta con il grado di riservatezza meno restrittivo, ad esempio Pubblico, sia visualizzata nella **parte superiore**.
+Quando si creano le etichette di riservatezza nel Centro sicurezza, queste vengono visualizzate in un elenco nella scheda **Riservatezza** nella pagina **Etichette**. In questo elenco, l'ordine delle etichette è importante perché ne riflette la priorità. È importante che l'etichetta con il grado di riservatezza più restrittivo, come Riservatezza elevata, sia visualizzata nella **parte inferiore** dell'elenco e che l'etichetta con il grado di riservatezza meno restrittivo, ad esempio Pubblico, sia visualizzata nella **parte superiore**.
 
 È possibile applicare solo un’etichetta di riservatezza a un documento o a un messaggio di posta elettronica. Se si richiede agli utenti di fornire una motivazione per modificare l'etichetta applicando una classificazione inferiore, l'ordine dell'elenco stabilisce quale classificazione è inferiore.
 
@@ -108,9 +106,9 @@ Le sottoetichette sono solo un modo per presentare le etichette agli utenti in g
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modificare o eliminare un'etichetta di riservatezza
 
-Se si elimina un'etichetta di riservatezza nel Centro sicurezza e conformità, tenere presente che l'etichetta non viene rimossa dal contenuto e che le impostazioni di protezione continuano a essere applicate al contenuto.
+Se si elimina un'etichetta di riservatezza, tenere presente che l'etichetta non viene rimossa dal contenuto e che le impostazioni di protezione continuano a essere applicate al contenuto.
 
-Se si modifica un'etichetta di riservatezza nel Centro sicurezza e conformità, sarà applicata al contenuto la versione dell’etichetta originalmente applicata su di esso.
+Se si modifica un'etichetta di riservatezza, sarà applicata al contenuto la versione dell'etichetta originalmente applicata su di esso.
 
 ## <a name="what-label-policies-can-do"></a>Operazioni eseguibili dai criteri di etichetta
 
@@ -120,7 +118,7 @@ Con un criterio di etichetta, è possibile:
 
 - **Scegliere gli utenti e i gruppi che visualizzeranno le etichette.** Le etichette possono essere pubblicate in un gruppo di sicurezza abilitato per la posta elettronica, un gruppo di distribuzione, un gruppo di Office 365 o un gruppo di distribuzione dinamico.
 
-- **Applicare un'etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio di etichetta. Questa etichetta predefinita consente di impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Notare che
+- **Applicare un'etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio di etichetta. Questa etichetta predefinita può impostare un livello di base di impostazioni di protezione che si desidera applicare a tutto il contenuto.
 
 - **Richiedere una motivazione per modificare un'etichetta.** Se il contenuto è contrassegnato come Riservato e un utente desidera rimuovere l'etichetta o sostituirla con una classificazione inferiore, ad esempio un'etichetta denominata Pubblico, è possibile richiedere che l'utente fornisca una motivazione quando esegue questa operazione. Le motivazioni saranno sottoposte a esame dell’amministratore. Attualmente stiamo lavorando a un report in cui gli amministratori potranno visualizzare le motivazioni dell'utente.
 
@@ -197,7 +195,7 @@ Gli utenti di Azure Information Protection possono attualmente classificare e as
 - Mantenere le etichette esistenti di Azure Information Protection in documenti e messaggi di posta elettronica.
 - Mantenere la configurazione di etichetta Azure Information Protection esistente.
 
-Se si usano le etichette di Azure Information Protection, per il momento è consigliabile evitare di creare nuove etichette nel Centro sicurezza e conformità finché non è stata completata la migrazione. L’[argomento migrazione Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/configure-policy-migrate-labels) contiene informazioni importanti e alcuni avvisi specifici. Se non si è ancora pronti per eseguire la migrazione dei tenant di produzione alle etichette di riservatezza, non è bisogna preoccuparsi: per il momento, gli utenti possono continuare a usare il client di Azure Information Protection e gli amministratori possono continuare a usare il portale di Azure per la gestione.
+Se si usano le etichette di Azure Information Protection, per il momento è consigliabile evitare di creare nuove etichette nelle altre interfacce di amministrazione finché non è stata completata la migrazione. L'[argomento sulla migrazione di etichette di Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/configure-policy-migrate-labels) contiene informazioni importanti e alcuni avvisi specifici. Se non si è ancora pronti per eseguire la migrazione dei tenant di produzione alle etichette di riservatezza, non c'è motivo di preoccuparsi: per il momento, gli utenti possono continuare a usare il client di Azure Information Protection e gli amministratori possono continuare a usare il portale di Azure per la gestione.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Proteggere il contenuto nei dispositivi Windows con Endpoint Protection in Microsoft Intune
 
@@ -252,6 +250,6 @@ Per ulteriori informazioni sulla protezione di SDK di Microsoft Information Prot
 
 Ai membri del team di conformità che creeranno etichette di riservatezza è necessario assegnare autorizzazioni per il Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questa posizione e potrà fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. A questo scopo, è consigliabile accedere alla pagina **Autorizzazioni** del Centro sicurezza e conformità, modificare il gruppo di ruoli **Amministratore conformità** e aggiungere membri a tale gruppo di ruoli.
 
-Per ulteriori informazioni, vedere Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365.
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare e applicare etichette e criteri di etichetta. L'applicazione dei criteri non richiede l'accesso al contenuto.

@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800288"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955199"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
 
@@ -181,7 +181,7 @@ Assicurarsi che il piano di implementazione delle etichette includa:
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Creare le etichette e i criteri per applicare le etichette automaticamente
 
 
-Creare le etichette e i criteri nel Centro sicurezza e conformità.
+Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.
 
 <table>
 <thead>
@@ -193,16 +193,16 @@ Creare le etichette e i criteri nel Centro sicurezza e conformità.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Assegnare autorizzazioni ai membri del team di conformità.</p></td>
-<td align="left"><p>I membri del team di conformità che creeranno le etichette necessitano di autorizzazioni per utilizzare il Centro sicurezza e conformità. Andare a Autorizzazioni nel Centro sicurezza e conformità e modificare i membri del gruppo Amministratori di conformità.</p>
-<p>Vedere <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365</a>.</p></td>
+<td align="left"><p>I membri del team di conformità che creeranno le etichette necessitano di autorizzazioni per utilizzare il centro sicurezza e/o il centro conformità. Andare a Autorizzazioni nel centro sicurezza o nel centro conformità e modificare i membri del gruppo Amministratori di conformità.</p>
+<p>Vedere <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Creare etichette di conservazione.</p></td>
-<td align="left">Passare a Classificazioni in Centro sicurezza e conformità, scegliere Etichette di conservazione e creare le etichette per il proprio ambiente.</td>
+<td align="left">Passare a Classificazioni nel Centro sicurezza o nel Centro conformità, scegliere Etichette di conservazione e creare le etichette per il proprio ambiente.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Creare criteri di applicazione automatica per le etichette.</p></td>
-<td align="left">Andare a Classificazione nel Centro sicurezza e conformità, scegliere Criteri etichette e creare i criteri di applicazione automatica delle etichette. Assicurarsi di creare questi criteri nell'ordine di priorità.</td>
+<td align="left">Andare a Classificazione nel centro sicurezza o nel centro conformità, scegliere Criteri etichette e creare i criteri di applicazione automatica delle etichette. Assicurarsi di creare questi criteri nell'ordine di priorità.</td>
 </tr>
 </tbody>
 </table>

@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639063"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999089"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creare un tipo di informazioni sensibili personalizzato
 
@@ -42,11 +42,11 @@ Le parti fondamentali di un tipo di informazioni sensibili personalizzato sono:
 
     ![Numero di istanze e opzioni di precisione di corrispondenza](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Per creare tipi di informazioni riservate personalizzati nel Centro sicurezza e conformità di Office 365, si hanno le opzioni seguenti:
+Per creare tipi di informazioni riservate personalizzati nel Centro sicurezza e conformità, si hanno le opzioni seguenti:
 
 - **Usare l'interfaccia utente**: questo metodo è più facile e veloce, ma fornisce meno opzioni di configurazione rispetto a PowerShell. Il resto di questo argomento descrive tali procedure.
 
-- **Usare PowerShell**: questo metodo richiede di creare prima un file XML (denominato _pacchetto di regole_) che contiene uno o più tipi di informazioni sensibili, quindi usare PowerShell per importare il pacchetto di regole (l'importazione del pacchetto di regole è semplicissima rispetto alla creazione del pacchetto di regole). Questo metodo è molto più complesso dell'interfaccia utente, ma fornisce un maggior numero di opzioni di configurazione. Per istruzioni in merito, vedere [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità di Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Usare PowerShell**: questo metodo richiede di creare prima un file XML (denominato _pacchetto di regole_) che contiene uno o più tipi di informazioni sensibili, quindi usare PowerShell per importare il pacchetto di regole (l'importazione del pacchetto di regole è semplicissima rispetto alla creazione del pacchetto di regole). Questo metodo è molto più complesso dell'interfaccia utente, ma fornisce un maggior numero di opzioni di configurazione. Per istruzioni in merito, vedere [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 Le differenze principali vengono descritte nella tabella seguente:
 
@@ -58,9 +58,9 @@ Le differenze principali vengono descritte nella tabella seguente:
 |I tipi di informazioni sensibili personalizzati vengono aggiunti al pacchetto di regole denominato Microsoft.SCCManaged.CustomRulePack.|È possibile creare fino a 10 pacchetti di regole che contengono tipi di informazioni sensibili personalizzati.|
 |La corrispondenza al criterio richiede il rilevamento del criterio principale e di tutte le evidenze di supporto (viene usato l'operatore AND implicito).|La corrispondenza al criterio richiede il rilevamento del criterio principale e di una quantità configurabile di evidenze di supporto (vengono usati gli operatori AND e OR impliciti).|
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Informazioni preliminari
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire il Centro sicurezza e conformità, vedere [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md).
+- Per aprire il Centro sicurezza e conformità, vedere [Accedere al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md).
 
 - I tipi di informazioni sensibili personalizzati richiedono una certa familiarità con le espressioni regolari (RegEx). Per ulteriori informazioni sul motore Boost.RegEx (in precedenza noto come RegEx++) utilizzato per l'elaborazione del testo, vedere [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 

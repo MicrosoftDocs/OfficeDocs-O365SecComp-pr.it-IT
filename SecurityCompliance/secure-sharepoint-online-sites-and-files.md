@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 12f25fcc487b91c493b4eb3b2e1d0373daa9b171
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789391"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955229"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -120,7 +120,7 @@ La tabella seguente contiene il riepilogo delle operazioni di configurazione per
 |Sito del team privato o pubblico  <br/> |Pubblico  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Chi può accedere?  <br/> |Tutti gli utenti dell'organizzazione, inclusi gli utenti B2B e gli utenti guest.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri. Altri utenti non possono richiedere l'accesso.  <br/> |
 |Controlli di condivisione a livello di sito  <br/> |Condivisione consentita con chiunque. Impostazioni predefinite.  <br/> |Condivisione consentita con chiunque. Impostazioni predefinite.  <br/> |I membri non possono condividere l'accesso al sito.  <br/> I non membri possono richiedere l'accesso al sito, ma tali richieste devono essere gestite da un amministratore del sito.  <br/> |I membri non possono condividere l'accesso al sito.  <br/> I non membri non possono richiedere l'accesso al sito o ai contenuti.  <br/> |
-|Controlli di accesso dispositivo a livello di sito  <br/> |Nessun controllo aggiuntivo.  <br/> |Nessun controllo aggiuntivo.  <br/> |I controlli a livello di sito saranno disponibili a breve e impediranno agli utenti di scaricare file su dispositivi collegati non compatibili o non di dominio. Ciò consente di accedere solo al browser da tutti gli altri dispositivi.  <br/> |Controlli a livello di sito, presto disponibili, impediscono agli utenti di scaricare file su dispositivi collegati non compatibili o non appartenenti al dominio.  <br/> |
+|Controlli di accesso dispositivo a livello di sito  <br/> |Nessun controllo aggiuntivo.  <br/> |Nessun controllo aggiuntivo.  <br/> |Impedire agli utenti di scaricare file su dispositivi collegati non compatibili o non di dominio. Ciò consente di accedere solo al browser da tutti gli altri dispositivi.  <br/> |Bloccare il download di file su dispositivi collegati non compatibili o non di dominio.  <br/> |
 |Etichette di conservazione  <br/> |Pubblico di livello interno  <br/> |Private  <br/> |Dati sensibili  <br/> |Highly Confidential (Riservatezza elevata)  <br/> |
 |Criteri di prevenzione della perdita di dati (DLP)  <br/> |||Gli utenti vengono avvisati se inviano file con etichetta Sensitive (Dati sensibili) all'esterno dell'organizzazione.  <br/> Per bloccare la condivisione esterna di tipi di dati riservati, ad esempio numeri di carta di credito o altri dati personali, è possibile configurare criteri DLP aggiuntivi per questi tipi di dati (inclusi i tipi di dati personalizzati che è necessario configurare).  <br/> |Bloccare l'invio di file contrassegnati come estremamente riservati all'esterno dell'organizzazione da parte degli utenti. Consentire agli utenti di sostituire questa impostazione specificando giustificazioni, inclusa l'informazione sugli utenti con cui si condivide il file.  <br/> |
 |Etichette di riservatezza  <br/> ||||Usare le etichette di riservatezza per crittografare e concedere automaticamente le autorizzazioni per i file. Le etichette di riservatezza usano Azure Information Protection per crittografare i file. Questa protezione viaggia con i file in caso di perdita.  <br/> Office 365 non può leggere i file crittografati con Azure Information Protection. Inoltre, i criteri DLP possono funzionare solo con i metadati (comprese le etichette), ma non con i contenuti di tali file (ad esempio i numeri di carta di credito all'interno dei file).  <br/> |

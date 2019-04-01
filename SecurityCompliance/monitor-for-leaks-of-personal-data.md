@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373887"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955209"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -57,7 +57,7 @@ Dopo aver creato i criteri di prevenzione della perdita dei dati (DLP), è possi
 
 Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, quando vengono eseguiti nella modalità test.
 
-I report DLP si trovano nel Centro sicurezza e conformità. Accedere a Report \> Vizualizza report. Sotto Prevenzione della perdita dei dati (DLP), andare alle corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o ai falsi positivi e override dei criteri di prevenzione della perdita dei dati.
+I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Passare a Report \> Visualizza report. Sotto Prevenzione della perdita dei dati scegliere Corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o Falsi positivi e override dei criteri di prevenzione della perdita dei dati.
 
 Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://support.office.com/it-IT/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
@@ -67,9 +67,9 @@ Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della p
 
 Il log di controllo di Office 365 contiene eventi di Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway e altri servizi di Office 365.
 
-Il Centro sicurezza e conformità di Office 365 offre due modi per il monitoraggio e la creazione di report in merito al log di controllo di Office 365:
+Il centro sicurezza e il centro conformità offrono due modi per il monitoraggio e la creazione di report in merito al log di controllo di Office 365:
 
--   Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare i nuovi strumenti della dashboard e dei criteri di avviso nel Centro sicurezza e conformità di Office 365.
+-   Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare gli strumenti della dashboard e dei criteri di avviso nel centro sicurezza o nel centro conformità.
 
 -   Cercare direttamente il log di controllo: è possibile ricercare tutti gli eventi in un intervallo di date specificato o filtrare i risultati in base a criteri specifici, come l'utente che ha effettuato l'operazione, l'operazione o l'oggetto di destinazione.
 
@@ -81,14 +81,14 @@ Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo un
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
--   [Criteri di avviso nel Centro sicurezza e conformità di Office 365](https://support.office.com/it-IT/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://support.office.com/it-IT/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://support.office.com/it-IT/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduzione)
 
 -   [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/it-IT/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Eseguire ricerche nel log di controllo](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900135"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955239"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -384,11 +384,13 @@ Un'etichetta di conservazione può applicare azioni di conservazione sul contenu
   
 Per altre informazioni, vedere [Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>Uso dei report di Esplora attività con etichette e Governance dei dati
+## <a name="monitor-retention-labels"></a>Monitorare le etichette di conservazione
 
 Dopo aver pubblicato o applicato automaticamente le etichette di conservazione, è consigliabile verificare che vengano applicate al contenuto come previsto. Per monitorare le etichette di conservazione, si può usare:
   
 - **Esplora attività con etichette**. Con Esplora attività con etichette (mostrato di seguito), è possibile cercare e visualizzare rapidamente le attività relative alle etichette di conservazione per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Per altre informazioni, vedere [Visualizzare le attività con etichette per i documenti](view-label-activity-for-documents.md).
+
+- Pagina di **analisi delle etichette**. Nel centro conformità Microsoft 365 e nel centro sicurezza Microsoft 365 è possibile visualizzare rapidamente le etichette principali e dove vengono applicate. È possibile anche visualizzare tutto il contenuto con una specifica etichetta. Per ulteriori informazioni vedere [Visualizzare l'uso delle etichette con Analisi delle etichette](label-analytics.md).
     
 - **Report di Governance dei dati**. Con questi report, è possibile visualizzare rapidamente le tendenze delle etichette di conservazione e le attività per tutto il contenuto di Exchange, SharePoint e OneDrive for Business degli ultimi 90 giorni. Per altre informazioni, vedere [Visualizzare i report di Governance dei dati](view-the-data-governance-reports.md).
     
