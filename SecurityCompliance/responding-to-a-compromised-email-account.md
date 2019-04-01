@@ -14,121 +14,121 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: 5598b424c8175fd8cbb173d4b7b96839f64472dd
-ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
-ms.translationtype: MT
+ms.openlocfilehash: f974719e5609645314bf1e8d7b15ae30cda6282e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "30747552"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001269"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
 **Riepilogo** Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365.
 
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Che cos'è un account di posta elettronica compromesso in Office 365?
-L'accesso alle cassette postali, ai dati e ad altri servizi di Office 365 è controllato tramite l'utilizzo delle credenziali, ad esempio un nome utente e una password o un PIN. Quando una persona diversa dall'utente desiderato ruba tali credenziali, le credenziali rubate vengono considerate compromesse. Con gli utenti che effettuano l'attacco possono accedere come utente originale ed eseguire azioni illecite.
-Utilizzando le credenziali rubate, l'utente malintenzionato può accedere alla cassetta postale di Office 365, alle cartelle di SharePoint o ai file nell'OneDrive dell'utente. Un'azione comunemente vista è l'aggressore che invia messaggi di posta elettronica come utente originale ai destinatari sia all'interno che all'esterno dell'organizzazione. Quando l'utente malintenzionato invia messaggi di posta elettronica ai destinatari esterni, viene chiamato data exfiltration.
+L’accesso alle cassette postali, dati e altri servizi di Office 365 viene controllato tramite l’uso di credenziali, ad esempio un nome utente e la password o PIN. Quando un utente diverso da quello previsto sottrae queste credenziali, queste sono considerate compromesse. Con queste l'utente malintenzionato può accedere come utente originale ed effettuare operazioni illegali.
+Usando le credenziali rubate, l'autore dell'attacco può accedere alla cassetta postale di Office 365 dell'utente, alle cartelle di SharePoint o ai file in OneDrive dell'utente. Un’operazione vista comunemente è l’invio da parte del pirata informatico di messaggi di posta elettronica a destinatari sia interni che esterni all'organizzazione dell'utente originale. Quando un utente malintenzionato invia dei dati tramite messaggi di posta elettronica a destinatari esterni, si chiama esfiltrazione di dati.
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un account di posta elettronica di Office 365 compromesso
-Gli utenti possono notare e segnalare attività insolite nelle cassette postali di Office 365. Di seguito sono riportati alcuni sintomi comuni:
+## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un account di posta elettronica compromesso di Office 365
+Gli utenti potrebbero notare e segnalare attività insolite nelle proprie cassette postali di Office 365. Ecco i sintomi più comuni:
 - Attività sospette, ad esempio messaggi di posta elettronica mancanti o eliminati.
-- Gli altri utenti possono ricevere messaggi di posta elettronica dall'account compromesso senza il corrispondente messaggio di posta elettronica esistente nella cartella degli **elementi inviati** del mittente.
-- La presenza delle regole di posta in arrivo che non sono state create dall'utente o dall'amministratore desiderato. Queste regole possono inoltrare automaticamente messaggi di posta elettronica a indirizzi sconosciuti o spostarli nelle cartelle **Note**, **posta**IndesideraTa o **abbonamenti RSS** .
-- Il nome visualizzato dell'utente potrebbe essere modificato nell'elenco indirizzi globale.
-- La cassetta postale dell'utente è bloccata dall'invio di messaggi di posta elettronica.
-- Le cartelle degli elementi inviati o eliminati in Microsoft Outlook o Outlook sul Web (in precedenza noto come Outlook Web App) contengono messaggi di account violati comuni, ad esempio "sono bloccato a Londra, invio di denaro".
-- Sono state aggiornate le modifiche del profilo inUsuali, ad esempio il nome, il numero di telefono o il Cap.
-- Modifiche inUsuali delle credenziali, ad esempio più modifiche delle password sono obbligatorie.
-- L'inoltro della posta è stato aggiunto di recente.
-- Una firma inusuale è stata aggiunta di recente, ad esempio una firma bancaria fasulla o una firma antidroga.
+- Altri utenti potrebbero ricevere messaggi di posta elettronica dall'account compromesso senza che sia presente il messaggio di posta elettronica corrispondente nella cartella **Posta inviata** del mittente.
+- La presenza di regole posta in arrivo che non sono state create dal proprietario o dall'amministratore. Queste regole possono inoltrare messaggi di posta elettronica a indirizzi sconosciuti o spostarli automaticamente nelle cartelle di**Note**, **Posta indesiderata**, o **Sottoscrizioni RSS**.
+- Il nome visualizzato dell'utente può essere modificato nell'elenco indirizzi globale.
+- Non è possibile inviare messaggi di posta elettronica dalla cassetta postale dell'utente.
+- Le cartelle Posta inviata o Posta eliminata in Microsoft Outlook o Outlook sul web (precedentemente noto come Outlook Web App) contengono messaggi presenti comunemente in un account oggetto di un attacco, ad esempio "Mi sono bloccato a Milano, invia denaro."
+- Modifiche al profilo insolite, ad esempio un aggiornamento del nome, numero di telefono o codice postale.
+- Modifiche insolite alle credenziali, ad esempio, sono richiesti varie modifiche alla password.
+- È stato aggiunto di recente un inoltro della posta di Outlook.
+- È stata aggiunta una firma insolita, ad esempio una firma bancaria falsa o la fima per una ricetta medica.
 
-Se un utente segnala uno dei sintomi riportati sopra, è consigliabile eseguire ulteriori indagini. Il Centro sicurezza e conformità di Office 365 & e il portale di Azure offrono strumenti che consentono di analizzare l'attività di un account utente che si sospetta potrebbe essere compromesso.
-- Registri di controllo unificato di Office 365 nel centro sicurezza & Compliance-esaminare tutte le attività per l'account sospetto filtrando i risultati relativi all'intervallo di date che si estende da subito prima che l'attività sospetta si sia verificata alla data corrente. Non filtrare le attività durante la ricerca.
-- Utilizzare i registri di accesso di Azure AD e altri report sui rischi disponibili nel portale di Azure AD. Esaminare i valori nelle colonne seguenti:
+Se un utente segnala qualsiasi dei sintomi precedenti, è necessario eseguire ulteriori analisi. Il Centro sicurezza e conformità di Microsoft 365 e il portale di Azure offfrono strumenti che consentono di analizzare le attività di un account utente che si sospetta potrebbe essere compromesso.
+- Log di controllo di Office 365 nel Centro sicurezza e conformità - Esaminare tutte le attività nell'account sospetto filtrando i risultati per l’intervallo di date che si estendono da immediatamente prima delle attività sospette alla data attuale. Non filtrare le attività durante la ricerca.
+- Usare i log di accesso di Azure AD e i report di altri rischi disponibili nel portale di Azure Active Directory. Esaminare i valori in queste colonne:
     - Esaminare l'indirizzo IP
-    - posizioni di accesso
+    - Posizioni di accesso
     - Orari di accesso
-    - esito positivo o negativo dell'accesso
+    - Esito dell’accesso
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Come proteggere e ripristinare la funzione di posta elettronica a un account e una cassetta postale di Office 365 compromessi sospetti
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Come proteggere e ripristinare la funzione di posta elettronica in un potenziale account e cassetta postale di Office 365 compromessi.
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
-Anche dopo aver riottenuto l'accesso all'account, l'utente malintenzionato può aver aggiunto voci di back-door che consentono all'utente malintenzionato di riprendere il controllo dell'account.
+Anche l’accesso all’account è stato riacquisito rapidamente, un utente malintenzionato potrebbe aver aggiunto voci “back-door” che gli permettono di riprendere il controllo dell'account.
 
-Per riaccedere al proprio account, è necessario eseguire tutti i passaggi seguenti, prima di tutto è preferibile verificare che il dirottatore non riprenda a controllare il proprio account. Questi passaggi consentono di rimuovere tutte le voci di back-door che il dirottatore può aver aggiunto al proprio account. Dopo aver eseguito questa procedura, è consigliabile eseguire un'analisi antivirus per assicurarsi che il computer non venga compromesso.
+È necessario eseguire la procedura seguente per accedere all'account il prima possibile per assicurarsi che l’autore dell’attacco non riprenda il controllo dell’account. Questa procedura consente di rimuovere le voci “back-door” che l’autore dell’attacco potrebbe aver aggiunto all’account. Dopo avere eseguito questi passaggi, è consigliabile eseguire una scansione con un programma antivirus per verificare che il computer non sia compromesso.
 
-### <a name="step-1-reset-the-users-password"></a>Passaggio 1 reImpostare la password dell'utente
+### <a name="step-1-reset-the-users-password"></a>Passaggio 1: Reimpostare la password dell’utente.
 > [!WARNING]
-> Non inviare la nuova password all'utente desiderato tramite posta elettronica poiché l'aggressore ha ancora accesso alla cassetta postale a questo punto.
+> Non inviare la nuova password per l'utente desiderato tramite posta elettronica, poiché l’utente malintenzionato potrebbe ancora avere accesso alla cassetta postale.
 
-1. Seguire la reImpostazione di una password aziendale di Office 365 per le procedure di un altro utente in [Admins: reimpostare le password di office 365 business](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
+1. Seguire i passaggi descritti in Reimpostare la password di un altro utente in Office 365 Business per altri utenti in[Amministratori: reimpostare le password aziendali di Office 365](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
 **Note:**
-- Verificare che la password sia elevata e che contenga lettere maiuscole e minuscole, almeno un numero e almeno un carattere speciale. 
-- Non riutilizzare nessuna delle ultime cinque password. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è necessario selezionare qualcosa che l'utente malintenzionato non riesca a indovinare.
-- Se l'identità locale è federata con Office 365, è necessario modificare la password locale e quindi informare l'amministratore del compromesso.
+- Assicurarsi che la password sia complessa e che contenga lettere maiuscole e minuscole, almeno un numero e almeno un carattere speciale. 
+- Non riutilizzare le cinque password più recenti. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è necessario sceglierla in modo che un utente malintenzionato non possa indovinarla.
+- Se l'identità dell'utente locale è federata con Office 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 
 > [!TIP]
-> È consigliabile abilitare l'autenticazione a più fattori per impedire il compromesso, soprattutto per gli account con privilegi amministrativi.  È possibile ottenere ulteriori informazioni [qui](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Ulteriori informazioni sono disponibili [qui](https://support.office.com/it-IT/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
-### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2 rimuovere indirizzi sospetti di inoltro della posta elettronica
-1. Aprire l'interfaccia di **amministrazione di Office 365 _GT_ gli utenti attivi**.
-2. Individuare l'account utente in questione ed espandere **impostazioni di posta elettronica**.
-3. Per l' **inoltro della posta elettronica**, fare clic su **modifica**.
-4. Rimuovere gli indirizzi di inoltro sospetti.
+### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
+1. Aprire l’**interfaccia di amministrazione di Microsoft 365 > Utenti attivi**.
+2. Trovare l'account utente in questione ed espandere le ** impostazioni della posta**.
+3. Su **Inoltro della posta elettronica**, fare clic su **Modifica**.
+4. Rimuovere qualsiasi indirizzo di inoltro sospetto.
 
-### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Passaggio 3 Disabilitazione delle regole di posta in arrivo sospette
-1. Accedere alla cassetta postale dell'utente utilizzando Outlook sul Web.
-2. Fare clic sull'icona dell'ingranaggio e fare clic su **posta**.
-3. Fare clic su **posta in arrivo e regole di sweep** e controllare le regole.
-4. Disabilitare o eliminare le regole sospette.
+### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Passaggio 3 disabilitare tutte le regole di posta in arrivo sospette
+1. Aprire la cassetta postale dell’utente con Outlook sul web.
+2. Fare clic sull'icona con l’ingranaggio e fare clic su **Posta**.
+3. Fare clic su **Regole posta in arrivo e organizzazione** ed esaminare le regole.
+4. Disattivare o eliminare le regole sospette.
 
-### <a name="step-4-unblock-the-user-from-sending-mail"></a>Passaggio 4 sbloccare l'utente dall'invio di messaggi di posta elettronica
-Se la cassetta postale sospetta è stata usata illegalmente per inviare messaggi di posta indesiderata, è probabile che la cassetta postale sia stata bloccata dall'invio della posta.
-1. Per sbloccare una cassetta postale dall'invio di messaggi di posta elettronica, seguire le procedure riportate in [rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email )di posta indesiderata.
+### <a name="step-4-unblock-the-user-from-sending-mail"></a>Passaggio 4 Disattivare il blocco dell’invio di posta elettronica
+Se la cassetta postale compromessa è stata usata illecitamente per inviare posta indesiderata, è probabile che la l'invio di posta elettronica sia stato bloccato.
+1. Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le procedure descritte in [Rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta elettronica indesiderata](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email ).
 
-### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Passaggio 5 facoltativo: bloccare l'account utente dall'accesso
+### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Passaggio 5 facoltativo: Bloccare l’accesso all’account dell’utente
 > [!IMPORTANT]
-> È possibile bloccare l'account compromesso sospettato dall'accesso fino a quando non si ritiene che sia sicuro riattivarlo.
+> È possibile bloccare l’accesso all’account compromesso fino a quando non si ritiene che sia sicuro abilitare di nuovo l'accesso.
 
-1. Passare all'interfaccia di amministrazione di Office 365.
-2. Nell'Interfaccia di amministrazione di Office 365 selezionare **Utenti**.
-3. Selezionare il dipendente da bloccare e quindi fare clic su **modifica** accanto a stato di **accesso** nel riquadro utente.
+1. Passare all'interfaccia di amministrazione di Microsoft 365.
+2. Nell'Interfaccia di amministrazione di Microsoft 365, selezionare **Utenti**.
+3. Selezionare il dipendente da bloccare e scegliere **Modifica** accanto a **Stato accesso** nel riquadro degli utenti.
 4. Nel riquadro **Stato accesso** scegliere **Accesso bloccato** e quindi **Salva**. 
-5. Nell'interfaccia di amministrazione di Office 365, nel riquadro di spostamento in basso a sinistra, espandere interfaccia di **Amministrazione** e selezionare **Exchange**.
-6. Nell'interfaccia di amministrazione di Exchange, accedere a **destinatari _GT_ cassette postali**.
-7. Selezionare l'utente e nella pagina proprietà utente, in **dispositivi mobili**, fare clic su **Disattiva Exchange ACTIVCSYNC** e **disabilitare OWA per i dispositivi** e rispondere **Sì** a entrambi.
-8. In **connettività posta elettronica**, **Disabilita** e Rispondi **Sì**. 
+5. Nell'interfaccia di amministrazione nel riquadro di spostamento in basso a sinistra, espandere **Interfacce di amministrazione** e selezionare **Exchange**.
+6. Nell'interfaccia di amministrazione di Exchange passare a **Destinatari > Cassette postali**.
+7. Selezionare l'utente e nella relativa pagina delle proprietà, in **Dispositivi mobili**, selezionare **Disabilita Exchange ActiveSync**, **Disabilita OWA per i dispositivi** e rispondere **sì** per entrambi.
+8. In **Connettività posta elettronica** fare clic su **Disabilita** e rispondere **sì**. 
 
-### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Passaggio 6 facoltativo: rimuovere l'account compromesso sospetto da tutti i gruppi di ruoli amministrativi
+### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Passaggio 6 Facoltativo: Rimuovere l'account potenzialmente compromesso da tutti i gruppi di ruoli amministrativi
 > [!NOTE]
-> L'appartenenza a un gruppo di ruoli amministrativi può essere ripristinata dopo che l'account è stato protetto.
+> Dopo aver protetto l'account, è possibile ripristinare l'appartenenza ai gruppi di ruoli amministrativi.
 
-1. Accedere all'interfaccia di amministrazione di Office 365 con un account di amministratore globale e aprire **utenti attivi**.
-2. Individuare l'account compromesso sospettato e controllare manualmente se sono presenti ruoli amministrativi assegnati all'account.
-3. Aprire il **Centro sicurezza _AMP_ Compliance**.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 con l'account di amministratore globale e aprire **Utenti attivi**.
+2. Individuare i possibili account compromessi e controllare manualmente se sono presenti dei ruoli amministrativi assegnati all'account.
+3. Aprire il **Centro sicurezza e conformità**.
 4. Fare clic su **Autorizzazioni**.
-5. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi.  Se si tratta di: a. Fare clic sul gruppo di ruoli e fare clic su **modifica gruppo di ruoli**.
-    b. Fare clic su **Scegli membri** e **modifica** per rimuovere l'utente dal gruppo di ruoli.
-6. Aprire l'interfaccia di **amministrazione di Exchange**
+5. Controllare manualmente i gruppi di ruoli per verificare se l’account potenzialmente compromesso sia un membro di uno di questi account.  Se è: a. Fare clic sul gruppo di ruoli e selezionare **Modifica gruppo di ruoli**.
+    b. Fare clic su **Scegli membri** e **Modifica** per rimuovere l'utente dal gruppo di ruoli.
+6. Aprire **l'interfaccia di amministrazione di Exchange**
 7. Fare clic su **Autorizzazioni**.
-8. Esaminare manualmente i gruppi di ruoli per verificare se l'account compromesso ritenuto sospetto è un membro di uno di essi. Se si tratta di: a. Fare clic sul gruppo di ruoli e fare clic su **modifica**.
-    b. Utilizzare la **** sezione Members per rimuovere l'utente dal gruppo di ruoli.
+8. Controllare manualmente i gruppi di ruoli per verificare se l’account potenzialmente compromesso sia un membro di uno di questi account. Se è: a. Fare clic sul gruppo di ruoli e selezionare **Modifica**.
+    b. Fare clic sulla sezione**Membri** per rimuovere l'utente dal gruppo di ruoli.
 
-### <a name="step-7-optional-additional-precautionary-steps"></a>Passaggio 7 facoltativo: ulteriori passaggi precauzionali
-1. Verificare che gli elementi inviati siano stati verificati. Potrebbe essere necessario informare gli utenti dell'elenco dei contatti che l'account è stato compromesso. L'utente malintenzionato può aver chiesto soldi, spoofing, ad esempio, che sono stati bloccati in un paese diverso e necessari soldi, o l'aggressore potrebbe inviare un virus anche per dirottare i propri computer.
-2. Qualsiasi altro servizio utilizzato per l'account di Exchange come account di posta elettronica alternativo potrebbe essere stato compromesso. Per prima cosa, eseguire la procedura seguente per l'abbonamento a Office 365 e quindi eseguire questi passaggi per gli altri account.
-3. Verificare che le informazioni di contatto, ad esempio i numeri di telefono e gli indirizzi, siano corrette.
+### <a name="step-7-optional-additional-precautionary-steps"></a>Passaggio 7 facoltativo: Precauzioni di prevenzione aggiuntive
+1. Assicurarsi di verificare i messaggi inviati. Potrebbe essere necessario informare gli utenti nell'elenco dei contatti che l'account è stato compromesso. Un utente malintenzionato potrebbe aver richiesto loro del denaro, fingendo (spoofing) che l’utente originale si trovasse bloccato in un paese/area geografica diversa e avesse necessità di denaro, oppure il malintenzionato potrebbe anche inviare dei virus per assumere il controllo dei loro computer. 
+2. Qualsiasi altro servizio utilizzato con l'account di Exchange e il suo account di posta elettronica alternativo potrebbe essere compromesso. Prima di tutto, eseguire questi passaggi per l'abbonamento a Office 365 e seguire la stessa procedura per gli altri account.
+3. Assicurarsi che le informazioni di contatto, ad esempio numeri di telefono e indirizzi, siano corrette.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Protezione di Office 365 come un Cybersecurity Pro
-L'abbonamento a Office 365 è dotato di un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti.  Utilizzare la Guida di [orientamento alla sicurezza di office 365: priorità principali per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliAte di Microsoft consigliati per la protezione del tenant di Office 365.
-- Attività da eseguire nei primi 30 giorni.  Tali effetti hanno un impatto immediato e sono di scarso effetto per gli utenti.
-- Attività da eseguire in 90 giorni. Questi richiedono un po' più di tempo per pianificare e implementare, ma migliorare notevolmente la posizione di sicurezza.
-- Oltre 90 giorni. Questi miglioramenti vengono costruiti nei primi 90 giorni di lavoro.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+- Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
+- Attività da completare in 90 giorni. Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.
+- Dopo 90 giorni. Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.
 
 ## <a name="see-also"></a>Vedere anche:
 - [Procedure consigliate per la sicurezza per Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-- [Centro reclami crimine Internet](http://www.ic3.gov/preventiontips.aspx)
-- [Securities and Exchange Commission-frode "phishing"](http://www.sec.gov/investor/pubs/phishing.htm)
+- [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
+- [Securities and Exchange Commission (SEC) - Frode “Phishing”](http://www.sec.gov/investor/pubs/phishing.htm)
