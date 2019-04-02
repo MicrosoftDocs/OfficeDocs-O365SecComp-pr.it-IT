@@ -16,16 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 ms.collection:
-- Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_IP
 description: Ridurre al minimo le potenzialità di una violazione dei dati o un account compromesso attenendosi alle procedure consigliate riportate di seguito.
-ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357527"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026337"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedure consigliate per la sicurezza per Office 365
 
@@ -57,7 +56,7 @@ Impostare i criteri in base alle esigenze aziendali per monitorare le attività 
   
 - [Panoramica di O365 cloud app Security](office-365-cas-overview.md)
 
-- [Attivare Office 365 Cloud App Security](turn-on-office-365-cas.md)
+- [Attivazione di Office 365 cloud app Security](turn-on-office-365-cas.md)
 
 ## <a name="secure-mail-flow"></a>Protezione del flusso di posta
 
@@ -89,11 +88,11 @@ Per informazioni sulle altre azioni che è possibile eseguire con il registro di
   
 ## <a name="configure-data-loss-prevention-dlp"></a>Configurare la prevenzione della perdita di dati (DLP)
 
-DLP consente di identificare i dati sensibili e creare criteri che consentono di impedire agli utenti di condividere accidentalmente o intenzionalmente i dati. DLP è compatibile con Office 365 incluso Exchange Online, SharePoint Online e OneDrive in modo che gli utenti possano rimanere conformi senza interrompere il flusso di lavoro. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md).
+DLP consente di identificare i dati sensibili e creare criteri che consentono di impedire agli utenti di condividere accidentalmente o intenzionalmente i dati. DLP è compatibile con Office 365 incluso Exchange Online, SharePoint Online e OneDrive in modo che gli utenti possano rimanere conformi senza interrompere il flusso di lavoro. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md).
   
 ## <a name="use-customer-lockbox"></a>Utilizzo dell'archivio protetto dei clienti
 
-In qualità di amministratore di Office 365, è possibile utilizzare l'archivio protetto dei clienti per controllare il modo in cui un tecnico del supporto Microsoft accede ai dati durante una sessione della guida. Nei casi in cui il tecnico richiede l'accesso ai dati per la risoluzione dei problemi e per risolvere un problema, il servizio di archivio clienti consente di approvare o rifiutare la richiesta di accesso. Se lo si approva, il tecnico può accedere ai dati. Ogni richiesta ha una scadenza e una volta che il problema è stato risolto, la richiesta è stata chiusa e l'accesso è stato revocato. L'archivio protetto dei clienti è incluso nel piano Office 365 Enterprise E5 oppure è possibile acquistare un abbonamento separato con qualsiasi altro piano di Office 365 Enterprise. Per informazioni, vedere [richieste dell'archivio clienti di Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+In qualità di amministratore di Office 365, è possibile usare Customer Lockbox per controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati dell'utente durante una sessione di assistenza. Nei casi in cui il tecnico richiede l'accesso ai dati dell'utente per risolvere e correggere un problema, Customer Lockbox consente di approvare o rifiutare la richiesta di accesso. Se lo si approva, il tecnico può accedere ai dati. Ogni richiesta ha una scadenza e, dopo che il problema viene risolto, la richiesta viene chiusa e l'accesso revocato. L'archivio protetto dei clienti è incluso nel piano Office 365 Enterprise E5 oppure è possibile acquistare un abbonamento separato con qualsiasi altro piano di Office 365 Enterprise. Per informazioni, vedere [richieste dell'archivio clienti di Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Provare da soli
 <a name="SecureScore"> </a>
