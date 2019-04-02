@@ -3,7 +3,7 @@ title: Panoramica delle etichette di conservazione
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955239"
+ms.locfileid: "31000819"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -60,10 +60,9 @@ Con le etichette di conservazione è possibile:
     
 - **Implementare la gestione dei record in Office 365**, compresi posta elettronica e documenti. È possibile usare un'etichetta di conservazione per classificare il contenuto come record. In questo caso, non è possibile cambiare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. 
     
-Le etichette di conservazione vengono create e gestite nella scheda **Conservazione** della pagina **Etichette** nel Centro sicurezza e conformità di Office 365. 
+Le etichette di conservazione vengono create e gestite nella scheda **Conservazione** della pagina **Etichette** nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365. 
   
-![Scheda Conservazione nella pagina Etichette](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>Funzionamento delle etichette di conservazione con i criteri di etichetta
 
 Rendere disponibili le etichette di conservazione agli utenti dell'organizzazione in modo che possano classificare il contenuto è un processo in due passaggi. Il primo consiste nel creare le etichette, il secondo nel pubblicarle nelle posizioni scelte. Quando si pubblicano le etichette di conservazione, vengono creati criteri di etichetta.
@@ -98,7 +97,7 @@ Le informazioni contenute in questa sezione si applicano solo alle etichette di 
 
 Quando si pubblicano o si applicano automaticamente le etichette di conservazione, queste non hanno effetto immediato:
   
-1. Per prima cosa i criteri di etichetta devono essere sincronizzati dal Centro sicurezza e conformità alle posizioni indicate nei criteri.
+1. Per prima cosa i criteri di etichetta devono essere sincronizzati dall'interfaccia di amministrazione alle posizioni indicate nei criteri.
     
 2. Quindi, la posizione potrebbe richiedere del tempo per rendere disponibili le etichette manuali agli utenti finali o per applicare automaticamente etichette al contenuto. Il tempo necessario dipende dalla posizione e dal tipo di etichetta.
     
@@ -110,7 +109,7 @@ Se si pubblicano etichette di conservazione in SharePoint o OneDrive, può esser
   
 ### <a name="auto-apply-retention-labels"></a>Applicare automaticamente etichette di conservazione
 
-In caso di applicazione automatica di etichette di conservazione ai contenuti che soddisfano condizioni specifiche, possono essere necessari 7 giorni prima che le etichette di conservazione vengano applicate a tutto il contenuto che soddisfa le condizioni.
+In caso di applicazione automatica di etichette di conservazione ai contenuti che soddisfano condizioni specifiche, possono essere necessari 7 giorni prima che le etichette di conservazione vengano applicate a tutto il contenuto esistente che soddisfa le condizioni. Tenere presente che, una volta distribuite, le etichette di conservazione vengono applicate rapidamente ai nuovi contenuti, in genere entro 15 minuti.
   
 ![Diagramma del momento in cui le etichette applicate automaticamente hanno effetto](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -398,9 +397,7 @@ Dopo aver pubblicato o applicato automaticamente le etichette di conservazione, 
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Uso di Ricerca contenuto per trovare tutto il contenuto a cui è applicata una specifica etichetta di conservazione
 
-Dopo l'assegnazione automatica o manuale di etichette di conservazione al contenuto, è possibile usare Ricerca contenuto nel Centro sicurezza e conformità per trovare tutto il contenuto che ha una specifica etichetta di conservazione.
-  
-![Pagina di Ricerca contenuto](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+Dopo l'assegnazione automatica o manuale di etichette di conservazione al contenuto, è possibile usare Ricerca contenuto per trovare tutto il contenuto che ha una specifica etichetta di conservazione.
   
 Quando si crea una ricerca di contenuto, scegliere la condizione **Tag di conformità**, quindi immettere il nome completo dell'etichetta o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
   
@@ -434,7 +431,7 @@ Infine, un criterio o un'etichetta di conservazione non può eliminare definitiv
 
 Le etichette di conservazione possono facilmente essere rese disponibili per un'intera organizzazione e il relativo contenuto in Office 365, compresi Exchange, SharePoint, OneDrive e gruppi di Office 365. Se è necessario classificare il contenuto o gestire i record ovunque in Office 365, è consigliabile usare le etichette di conservazione.
   
-Per classificare il contenuto o gestire i record in Office 365 esistono già altre funzionalità, elencate di seguito, che continueranno a funzionare insieme alle etichette di conservazione create nel Centro sicurezza e conformità. Anche se ci sono istanze in cui l'implementazione delle etichette di conservazione è diversa rispetto alle funzionalità precedenti, l'evoluzione delle etichette di conservazione determinerà il futuro della gestione dei record in Office 365. In futuro, quindi, per la governance dei dati si consiglia di usare le etichette di conservazione invece di queste funzionalità.
+Per classificare il contenuto o gestire i record in Office 365 esistono già altre funzionalità, elencate di seguito, che continueranno a funzionare insieme alle etichette di conservazione. Anche se ci sono istanze in cui l'implementazione delle etichette di conservazione è diversa rispetto alle funzionalità precedenti, l'evoluzione delle etichette di conservazione determinerà il futuro della gestione dei record in Office 365. In futuro, quindi, per la governance dei dati si consiglia di usare le etichette di conservazione invece di queste funzionalità.
   
 ### <a name="exchange-online"></a>Exchange Online
 

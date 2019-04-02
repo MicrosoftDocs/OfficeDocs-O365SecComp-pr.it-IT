@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Dimostrazione delle funzionalità correlate al GDPR in Office 365.
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955279"
+ms.locfileid: "31001259"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
 
@@ -98,7 +98,7 @@ In questa fase, viene creato un tipo di informazione riservata personalizzato pe
 
 Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza interna/esterna, nei documenti e in altri moduli. Contoso ha bisogno di un tipo di elemento riservato personalizzato che rilevi l'uso di CCN nei contenuti di Office 365 per poter applicare la protezione per l'utilizzo di questo modulo di informazioni personali.
 
-1. Seguire le istruzioni in [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365 mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) e connettersi al Centro sicurezza e conformità con l'UPN del proprio account amministratore globale.
+1. Seguire le istruzioni in [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365 mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) e connettersi al Centro sicurezza e conformità con l'UPN del proprio account amministratore globale.
 2. Eseguire i seguenti comandi PowerShell.
 
      ```

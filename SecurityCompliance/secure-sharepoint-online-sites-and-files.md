@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955229"
+ms.locfileid: "30999379"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -125,7 +125,7 @@ La tabella seguente contiene il riepilogo delle operazioni di configurazione per
 |Criteri di prevenzione della perdita di dati (DLP)  <br/> |||Gli utenti vengono avvisati se inviano file con etichetta Sensitive (Dati sensibili) all'esterno dell'organizzazione.  <br/> Per bloccare la condivisione esterna di tipi di dati riservati, ad esempio numeri di carta di credito o altri dati personali, è possibile configurare criteri DLP aggiuntivi per questi tipi di dati (inclusi i tipi di dati personalizzati che è necessario configurare).  <br/> |Bloccare l'invio di file contrassegnati come estremamente riservati all'esterno dell'organizzazione da parte degli utenti. Consentire agli utenti di sostituire questa impostazione specificando giustificazioni, inclusa l'informazione sugli utenti con cui si condivide il file.  <br/> |
 |Etichette di riservatezza  <br/> ||||Usare le etichette di riservatezza per crittografare e concedere automaticamente le autorizzazioni per i file. Le etichette di riservatezza usano Azure Information Protection per crittografare i file. Questa protezione viaggia con i file in caso di perdita.  <br/> Office 365 non può leggere i file crittografati con Azure Information Protection. Inoltre, i criteri DLP possono funzionare solo con i metadati (comprese le etichette), ma non con i contenuti di tali file (ad esempio i numeri di carta di credito all'interno dei file).  <br/> |
    
-Riguardo ai passaggi da seguire per eseguire la distribuzione dei quattro diversi tipi di siti del team di SharePoint Online in questa soluzione, vedere [Distribuzione dei siti di SharePoint Online per tre livelli di protezione ](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Per le istruzioni riguardanti la creazione di un ambiente di sviluppo/test, vedere [Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
+Per la procedura di distribuzione dei quattro tipi diversi di siti del team di SharePoint Online in questa soluzione, vedere [Distribuire siti di SharePoint Online per tre livelli di protezione](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). 
   
 ## <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
 
@@ -186,7 +186,3 @@ Per la procedura di configurazione di Azure Information Protection in questa sol
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-
