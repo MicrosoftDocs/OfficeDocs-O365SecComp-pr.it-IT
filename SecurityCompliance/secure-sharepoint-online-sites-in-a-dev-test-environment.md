@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: eb3b2012a36743e8c34453399b02b91f3595ec6c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223635"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999979"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 
@@ -40,9 +40,9 @@ Per prima cosa, seguire le istruzioni della **fase 2** nell'articolo relativo al
   
 Iscriversi quindi per la sottoscrizione di valutazione di EMS e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365.
   
-1. Se necessario, accedere al portale di Office 365 con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Fare clic sul riquadro **Amministratore**.
+2. Scegliere il riquadro **Amministrazione**.
     
 3. Nella scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Fatturazione > Servizi di acquisto** nel riquadro di spostamento di sinistra.
     
@@ -54,7 +54,7 @@ Iscriversi quindi per la sottoscrizione di valutazione di EMS e aggiungerla alla
     
 Abilitare quindi la licenza Enterprise Mobility + Security E5 per l'account amministratore globale.
   
-1. Nella scheda **Interfaccia di amministrazione di Office 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
+1. Nella scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
     
 2. Fare clic sull'account amministratore globale e quindi su **Modifica** per le **licenze del prodotto**.
     
@@ -195,7 +195,7 @@ Seguire questi passaggi per verificare che le licenze basate su gruppo funzionin
 
 In questa fase vengono create le etichette per i diversi livelli di sicurezza per cartelle di documenti dei siti del team di SharePoint Online.
   
-1. Se necessario, usare un'istanza privata del browser Internet e accedere al portale di Office 365 con l'account amministratore globale della sottoscrizione di valutazione di Office 365 E5. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, usare un'istanza privata del browser Internet e accedere all'interfaccia di amministrazione con l'account amministratore globale dell'abbonamento di valutazione di Office 365 E5. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dalla scheda **Microsoft Office Home** fare clic sul riquadro **Amministratore**.
     
@@ -243,7 +243,7 @@ In questa fase vengono creati e configurati i quattro tipi di siti del team di S
 
 Per creare un sito pubblico iniziale per il team di SharePoint Online, eseguire queste operazioni:
   
-1. Se necessario, usare un browser sul computer locale e accedere al portale di Office 365 con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, usare un browser sul computer locale e accedere all'interfaccia di amministrazione con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -277,7 +277,7 @@ Di seguito è riportata la configurazione risultante.
 
 Per creare un sito del team SharePoint Online privato iniziale per un progetto all'interno dell'organizzazione, eseguire queste operazioni:
   
-1. Se necessario, usare un browser sul computer locale e accedere al portale di Office 365 con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, usare un browser sul computer locale e accedere all'interfaccia di amministrazione con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -311,7 +311,7 @@ Di seguito è riportata la configurazione risultante.
 
 Per creare un sito del team di SharePoint Online isolato per i dati sensibili delle risorse della campagna di marketing, eseguire le operazioni seguenti:
   
-1. Usando un browser sul computer locale, accedere al portale di Office 365 con il proprio account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Usando un browser nel computer locale, accedere all'interfaccia di amministrazione con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -427,7 +427,7 @@ Di seguito è riportata la configurazione risultante.
 
 Per creare un sito del team di SharePoint Online isolato per i dati altamente riservati delle risorse aziendali strategiche dei dirigenti dell'organizzazione, eseguire le operazioni seguenti:
   
-1. Se necessario, usare un browser sul computer locale e accedere al portale di Office 365 con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, usare un browser sul computer locale e accedere all'interfaccia di amministrazione con l'account amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -491,9 +491,9 @@ Successivamente, configurare la cartella dei documenti del sito del team Strateg
     
 Configurare un criterio di prevenzione della perdita di dati che blocchi gli utenti quando condividono un documento presente su un sito del team di SharePoint Online con etichetta Highly Confidential, incluso il sito Company strategy, all'esterno dell'organizzazione.
   
-1. Se necessario, usare un browser nel computer locale e accedere al portale di Office 365 con un account con il ruolo Amministratore della sicurezza o Amministratore società. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, usare un browser nel computer locale e accedere all'interfaccia di amministrazione con un account che dispone del ruolo Amministratore della sicurezza o Amministratore società. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Dalla scheda **Microsoft Office Home** del browser fare clic sul riquadro **Sicurezza &amp; Conformità**.
+2. Dalla scheda **Microsoft Office Home** del browser fare clic sul riquadro **Sicurezza e conformità**.
     
 3. Nella nuova scheda **Sicurezza e conformità** del browser fare clic su **Prevenzione perdita dati > Criterio**.
     
@@ -533,11 +533,11 @@ Configurare un criterio di prevenzione della perdita di dati che blocchi gli ute
     
 20. Nel riquadro **Verifica le impostazioni** fare clic su **Crea** e quindi su **Chiudi**.
     
-Seguire quindi le istruzioni in [Attivare Azure RMS dall'interfaccia di amministrazione di Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Seguire quindi le istruzioni in [Attivare Azure RMS dall'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Successivamente, configurare Azure Information Protection con nuovi criteri e un'etichetta secondaria con ambito per il gruppo C-Suite per la protezione e le autorizzazioni con la procedura seguente:
   
-1. Accedere al portale di Office 365 con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere all'interfaccia di amministrazione con un account che dispone del ruolo Amministratore della sicurezza o Amministratore della società. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In un'altra scheda del browser, accedere al portale di Azure ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -579,7 +579,7 @@ Successivamente, configurare Azure Information Protection con nuovi criteri e un
 
 21. Fare clic su **Salva**, quindi su **OK**.
     
-Per proteggere un documento con Azure Information Protection e la nuova etichetta, è necessario [installare il client di Azure Information Protection in un computer di test](https://docs.microsoft.com/information-protection/rms-client/install-client-app), installare Office dal portale di Office 365 e quindi accedere da Microsoft Word con un account del gruppo **C-Suite** della sottoscrizione di valutazione.
+Per proteggere un documento con Azure Information Protection e la nuova etichetta, è necessario [installare il client di Azure Information Protection in un computer di test](https://docs.microsoft.com/information-protection/rms-client/install-client-app), installare Office dall'interfaccia di amministrazione e quindi accedere da Microsoft Word con un account del gruppo **C-Suite** dell'abbonamento di valutazione.
   
 Di seguito è riportata la configurazione risultante.
   
