@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 69ac13fde6e83f5905b95a3eefdc2e1a44156e1d
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998889"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043347"
 ---
 # <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Monitorare e creare report sulle identità in Sicurezza Microsoft 365
 

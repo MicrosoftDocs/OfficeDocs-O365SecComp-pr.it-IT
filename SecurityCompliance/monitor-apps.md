@@ -11,16 +11,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 02cc511532f65172aba2c0f98cdf594776f586a5
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+search.appverid: met150
+ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791752"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043297"
 ---
 # <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Monitorare e segnalare lo stato delle app in Microsoft 365 Security
 
-[!include[Prerelease�information](prerelease.md)]
 
 Questi rapporti offrono maggiori informazioni su come vengono utilizzate le app Cloud nell'organizzazione, inclusi i tipi di app, il livello di rischio e gli avvisi.
 
