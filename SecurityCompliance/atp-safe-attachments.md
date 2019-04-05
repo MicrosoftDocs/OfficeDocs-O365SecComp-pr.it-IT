@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/08/2019
+ms.date: 04/04/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La funzionalità allegati sicuri fornisce il tempo di fare clic sulla verifica degli allegati di posta elettronica. Utilizzo degli allegati sicuri per proteggere l'organizzazione da file dannosi che gli utenti inviano o ricevono tramite posta elettronica.
-ms.openlocfilehash: 25fbfba104694f7f7418fadb88d60b17ea3d1ae6
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
+ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357487"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "31476824"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Allegati sicuri di Office 365 ATP
 
@@ -40,9 +40,11 @@ Di seguito sono riportati due esempi di allegati sicuri di ATP sul posto di lavo
 
 - **Esempio 2: file in SharePoint Online** Si supponga che Jean abbia ricevuto un file e lo abbia caricato in una raccolta in SharePoint Online. Jean condivide il collegamento al file con il resto del team, non sapendo che il file è effettivamente dannoso. Fortunatamente, [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) rileva il file dannoso e lo blocca. Dopo alcuni giorni, Chris si reca all'apertura del documento. Anche se Chris è in grado di visualizzare il file è presente, Chris non può aprirlo o condividerlo, impedendo al computer di Chris e ad altri utenti di eseguire il file dannoso.
 
-L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
-
 I criteri per gli allegati sicuri di ATP possono essere applicati a persone o gruppi specifici dell'organizzazione o all'intero dominio. Inoltre, è possibile configurare i criteri degli allegati sicuri di ATP per utilizzare gli allegati segnaposto mentre vengono analizzati gli allegati effettivi. Per ulteriori informazioni, vedere **[configurare i criteri per gli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md)**.
+
+> [!NOTE]
+> L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
+
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Come ottenere gli allegati sicuri di ATP
 
@@ -74,7 +76,7 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio. In tutti que
 |Lee è un dipendente del reparto vendite di contoso. L'organizzazione di Lee ha un criterio di allegati sicuri ATP sul posto che si applica solo ai dipendenti finanziari.  <br/> |No. In questo caso, i dipendenti finanziari avrebbero una protezione per gli allegati sicuri di ATP, ma altri dipendenti, incluso il reparto vendite, non consentiranno di definire i criteri che includono tali gruppi.  <br/> |
 |Ieri, un amministratore di Office 365 nell'organizzazione di Jean ha configurato un criterio di allegati sicuri ATP che si applica a tutti i dipendenti. Prima di oggi, Jean ha ricevuto un messaggio di posta elettronica che include un allegato.  <br/> |Sì. In questo esempio, Jean ha una licenza per Advanced Threat Protection e un criterio per gli allegati sicuri ATP che include Jean è stato definito. In genere, sono necessari circa 30 minuti affinché un nuovo criterio abbia effetto su tutti i datacenter. Poiché un giorno è passato in questo caso, il criterio dovrebbe essere attivo.  <br/> |
 |L'organizzazione di Chris ha Office 365 Enterprise E5 con i criteri per gli allegati sicuri di ATP sul posto per tutti gli utenti dell'organizzazione. Chris riceve un messaggio di posta elettronica con un allegato e lo inoltra ad altri utenti esterni all'organizzazione.  <br/> |La protezione per gli allegati sicuri ATP è attiva per i messaggi ricevuti da Chris. Se le organizzazioni dei destinatari dispongono anche di criteri per gli allegati sicuri di ATP sul posto, il messaggio che Chris inoltra è soggetto a tali criteri quando arriva il messaggio inoltrato.  <br/> |
-|L'organizzazione di Jamie dispone di criteri per gli allegati sicuri ATP sul posto e [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) è stato attivato. Jamie presuppone che ogni file in SharePoint Online sia stato analizzato ed è sicuro per l'apertura o il download.<br/> |La protezione per gli allegati sicuri ATP è in vigore secondo i criteri definiti. Tuttavia, ciò non significa che ogni singolo file in SharePoint Online, OneDrive for business o Microsoft teams venga analizzato. Per ulteriori informazioni, vedere [ATP for SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md).<br/> |
+|L'organizzazione di Jamie dispone di criteri per gli allegati sicuri ATP sul posto e [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) è stato attivato. Jamie presuppone che ogni file in SharePoint Online sia stato analizzato ed è sicuro per l'apertura o il download.  <br/> |La protezione per gli allegati sicuri ATP è in vigore secondo i criteri definiti. Tuttavia, ciò non significa che ogni singolo file in SharePoint Online, OneDrive for business o Microsoft teams venga analizzato. Per ulteriori informazioni, vedere [ATP for SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md).  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>Invio di file per l'analisi antimalware
 
