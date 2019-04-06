@@ -1,5 +1,5 @@
 ---
-title: Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365
+title: Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Utilizzare il centro conformità & sicurezza di Office 365 per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935351"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479682"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro conformità di Office 365 Security &
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
 ## <a name="introduction"></a>Introduzione
 
@@ -43,7 +43,7 @@ ms.locfileid: "30935351"
     
 - Attività di utenti e amministratori in Sway
     
-- attività di eDiscovery nel centro conformità & sicurezza di Office 365
+- attività di eDiscovery nel centro sicurezza e conformità
     
 - Attività di utenti e amministratori in Power BI
     
@@ -66,15 +66,15 @@ ms.locfileid: "30935351"
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel registro di controllo di Office 365.
   
-- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo prima di iniziare a eseguire la ricerca nel registro di controllo di Office 365. Per attivarla, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel &amp; Centro sicurezza e conformità. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo averla attivata, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È necessario eseguire questa operazione una sola volta. 
+- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo prima di iniziare a eseguire la ricerca nel registro di controllo di Office 365. Per attivarlo, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel centro sicurezza & Compliance. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo averla attivata, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È necessario eseguire questa operazione una sola volta. 
     
     > [!NOTE]
     > Per impostazione predefinita, è in corso l'attivazione del controllo. Fino a quel momento, è possibile attivarlo come descritto in precedenza. 
   
-- È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo di Office 365 con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Si noti che gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo di Office 365 con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Se si assegna a un utente il ruolo di controllo solo visualizzazione o log di controllo nella pagina **autorizzazioni** nel centro sicurezza &amp; e conformità, non sarà possibile eseguire la ricerca nel registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò è dovuto al fatto che il cmdlet sottostante utilizzato per eseguire la ricerca nel registro di controllo è un cmdlet di Exchange Online. 
+    > Se si assegna un utente ai registri di controllo di sola visualizzazione o ai registri di controllo nella pagina **autorizzazioni** nel centro conformità di sicurezza &, non sarà possibile eseguire la ricerca nel registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò è dovuto al fatto che il cmdlet sottostante utilizzato per eseguire la ricerca nel registro di controllo è un cmdlet di Exchange Online. 
   
 - Quando un'attività controllata viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene memorizzato nel registro di controllo di Office 365 per l'organizzazione. Il periodo di tempo in cui un record di controllo viene mantenuto (e ricercabile nel log di controllo) dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico.
 
@@ -99,7 +99,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
 
     Per ulteriori informazioni, vedere [disattivazione della ricerca del registro di controllo in Office 365](turn-audit-log-search-on-or-off.md).
     
-- Come indicato in precedenza, il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Questo significa che è possibile utilizzare questo cmdlet per eseguire una ricerca nel registro di controllo di Office 365 anziché utilizzare la pagina di ricerca &amp; del registro di **controllo** nel centro sicurezza e conformità. È necessario eseguire questo cmdlet in Remote PowerShell connesso all'organizzazione Exchange Online. Per ulteriori informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Come indicato in precedenza, il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Questo significa che è possibile utilizzare questo cmdlet per eseguire una ricerca nel registro di controllo di Office 365 anziché utilizzare la pagina di **ricerca del registro di controllo** nel centro sicurezza e conformità di &. È necessario eseguire questo cmdlet in Remote PowerShell connesso all'organizzazione Exchange Online. Per ulteriori informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Se si desidera scaricare dati a livello di programmazione dal registro di controllo di Office 365, è consigliabile utilizzare l'API di attività di gestione di Office 365 anziché utilizzare uno script di PowerShell. L'API di attività di gestione di Office 365 è un servizio Web REST che è possibile utilizzare per sviluppare soluzioni di monitoraggio di operazioni, sicurezza e conformità per l'organizzazione. Per ulteriori informazioni, vedere Guida di [riferimento all'API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
     
@@ -120,13 +120,13 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
     |Microsoft Stream  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Security &amp; Compliance Center  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Centro sicurezza e conformità  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online e OneDrive for Business  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Workplace Analytics<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il registro di controllo unificato contiene le attività relative a utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Office 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [eventi del rapporto di controllo di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
+- Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il registro di controllo unificato contiene le attività relative a utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [eventi del rapporto di controllo di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
 - I log di controllo di Exchange Online sono costituiti da due tipi di eventi: eventi di amministrazione di Exchange (azioni eseguite dagli amministratori) e eventi delle cassette postali (azioni eseguite dagli utenti nelle cassette postali). Si noti che il controllo delle cassette postali non è abilitato per impostazione predefinita. Deve essere abilitata per ogni cassetta postale utente prima che gli eventi della cassetta postale possano essere cercati nel registro di controllo di Office 365. Per ulteriori informazioni sul controllo delle cassette postali e sulle azioni di controllo delle cassette postali registrate, vedere [Enable Mailbox auditing in Office 365](enable-mailbox-auditing.md).
     
@@ -147,14 +147,14 @@ Ecco la procedura per eseguire una ricerca nel log di controllo in Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: eseguire una ricerca nel registro di controllo
 
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
     > [!TIP]
-    > Utilizzare una sessione di esplorazione privata (non una sessione regolare) per accedere al centro sicurezza &amp; e conformità di Office 365 perché ciò impedirà di utilizzare le credenziali a cui è attualmente connesso. Per aprire una sessione di InPrivate Browsing in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra in incognito), premere CTRL + MAIUSC + N. 
+    > Utilizzare una sessione di esplorazione privata (non una sessione regolare) per accedere al centro sicurezza & Compliance perché in questo modo si eviterà che vengano utilizzate le credenziali a cui si è connessi. Per aprire una sessione di InPrivate Browsing in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra in incognito), premere CTRL + MAIUSC + N. 
   
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro del Centro sicurezza &amp; e conformità fare clic su **ricerca &amp; **e quindi su **Ricerca log di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **Cerca**e quindi su **Ricerca log di controllo**.
     
     Viene visualizzata la pagina di **ricerca del registro di controllo** . 
     
@@ -288,7 +288,7 @@ Per filtrare i risultati:
 
 ## <a name="audited-activities"></a>Attività controllate
 
-Nelle tabelle di questa sezione vengono descritte le attività di cui è stato eseguito il controllo in Office 365. È possibile cercare questi eventi eseguendo una ricerca nel registro di controllo nel centro sicurezza & Compliance.
+Nelle tabelle di questa sezione vengono descritte le attività di cui è stato eseguito il controllo in Office 365. È possibile cercare questi eventi eseguendo una ricerca nel registro di controllo nel centro sicurezza e conformità.
   
 Queste tabelle raggruppano le attività correlate o le attività di un servizio specifico di Office 365. Nelle tabelle è incluso il nome descrittivo visualizzato nell'elenco a discesa **attività** e il nome dell'operazione corrispondente che viene visualizzata nelle informazioni dettagliate di un record di controllo e nel file CSV quando si esportano i risultati della ricerca. Per le descrizioni delle informazioni dettagliate, vedere [proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -415,7 +415,7 @@ Nella tabella seguente sono elencati gli eventi che risultano dalle attività di
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
 |Aggiunta di un agente utente di esenzione  <br/> |ExemptUserAgentSet  <br/> |Un amministratore di SharePoint o globale aggiunge un agente utente all'elenco degli agenti utente esenti nell'interfaccia di amministrazione di SharePoint.  <br/> |
-|Aggiunta dell'amministratore della raccolta siti  <br/> |SiteCollectionAdminAdded  <br/> |L'amministratore o il proprietario della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari. Questa attività viene inoltre registrata quando un amministratore si concede l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [utilizzando il centro di amministrazione di Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
+|Aggiunta dell'amministratore della raccolta siti  <br/> |SiteCollectionAdminAdded  <br/> |L'amministratore o il proprietario della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari. Questa attività viene inoltre registrata quando un amministratore si concede l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [utilizzando il centro di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
 |nessuno  <br/> |SiteCollectionAdminRemoved <br/> |L'amministratore o il proprietario della raccolta siti consente di rimuovere una persona come amministratore della raccolta siti per un sito. Questa attività viene inoltre registrata quando un amministratore si rimuove dall'elenco degli amministratori delle raccolte siti per l'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint).  Si noti che per restituire questa attività nei risultati di ricerca del registro di controllo, è necessario cercare tutte le attività. <br/> |
 |Aggiunta di un utente o un gruppo a un gruppo di SharePoint  <br/> |AddedToGroup  <br/> |L'utente ha aggiunto un membro o un ospite a un gruppo di SharePoint. Potrebbe trattarsi di un'azione intenzionale o del risultato di un'altra attività, ad esempio un evento di condivisione.  <br/> |
 |Utente consentito per la creazione di gruppi  <br/> |AllowGroupCreationSet  <br/> |L'amministratore del sito o il proprietario aggiunge un livello di autorizzazione a un sito che consente a un utente a cui è stata assegnata l'autorizzazione di creare un gruppo per il sito.  <br/> |
@@ -486,17 +486,17 @@ Nella tabella seguente sono elencate le attività di utenti e amministratori in 
 |Attivata la duplicazione degli ondeggiamenti  <br/> |EnableDuplication  <br/> |L'utente abilita la duplicazione di un ondeggiamento; la possibilità per un utente di abilitare la duplicazione di un dominio è abilitata per impostazione predefinita.  <br/> |
 |Condivisione degli ondeggiamenti revocati  <br/> |SwayRevokeShare  <br/> |L'utente interrompe la condivisione di un dominio revocando l'accesso. La revoca dell'accesso cambia i collegamenti associati a un dominio.  <br/> |
 |Influenza condivisa  <br/> |SwayShare  <br/> |L'utente intende condividere un dominio. Questo evento acquisisce l'azione dell'utente facendo clic su una destinazione di condivisione specifica all'interno del menu Condividi influenza. L'evento non indica se l'utente ha completato l'azione Condividi.  <br/> |
-|Disattivata la condivisione esterna di Sway  <br/> |SwayExternalSharingOff  <br/> |L'amministratore disattiva la condivisione degli ondeggiamenti esterni per l'intera organizzazione utilizzando l'interfaccia di amministrazione di Office 365.  <br/> |
-|Attivata la condivisione esterna di Sway  <br/> |SwayExternalSharingOn  <br/> |L'amministratore abilita la condivisione degli ondeggiamenti esterni per l'intera organizzazione tramite l'interfaccia di amministrazione di Office 365.  <br/> |
-|Disattivazione del servizio Sway  <br/> |SwayServiceOff  <br/> |L'amministratore disattiva l'influenza per l'intera organizzazione utilizzando l'interfaccia di amministrazione di Office 365.  <br/> |
-|Attivata la funzione Sway  <br/> |SwayServiceOn  <br/> |L'amministratore consente di influenzare l'intera organizzazione utilizzando l'interfaccia di amministrazione di Office 365 (il servizio Sway è abilitato per impostazione predefinita).  <br/> |
+|Disattivata la condivisione esterna di Sway  <br/> |SwayExternalSharingOff  <br/> |L'amministratore disattiva la condivisione degli ondeggiamenti esterni per l'intera organizzazione tramite l'interfaccia di amministrazione di Microsoft 365.  <br/> |
+|Attivata la condivisione esterna di Sway  <br/> |SwayExternalSharingOn  <br/> |L'amministratore abilita la condivisione degli ondeggiamenti esterni per l'intera organizzazione tramite l'interfaccia di amministrazione di Microsoft 365.  <br/> |
+|Disattivazione del servizio Sway  <br/> |SwayServiceOff  <br/> |L'amministratore disattiva l'influenza per l'intera organizzazione tramite l'interfaccia di amministrazione di Microsoft 365.  <br/> |
+|Attivata la funzione Sway  <br/> |SwayServiceOn  <br/> |L'amministratore consente di influenzare l'intera organizzazione utilizzando l'interfaccia di amministrazione di Microsoft 365 (il servizio Sway è abilitato per impostazione predefinita).  <br/> |
 |Ondeggiamento visualizzato  <br/> |SwayView  <br/> |L'utente visualizza un ondeggiamento.  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>Attività di amministrazione degli utenti
   
-Nella tabella seguente sono elencate le attività di amministrazione degli utenti registrate quando un amministratore aggiunge o modifica un account utente utilizzando l'interfaccia di amministrazione di Office 365 o il portale di gestione di Azure.
+Nella tabella seguente sono elencate le attività di amministrazione degli utenti registrate quando un amministratore aggiunge o modifica un account utente tramite l'interfaccia di amministrazione di Microsoft 365 o il portale di gestione di Azure.
   
 |**Attività**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -512,7 +512,7 @@ Nella tabella seguente sono elencate le attività di amministrazione degli utent
   
 ### <a name="azure-ad-group-administration-activities"></a>Attività di amministrazione di gruppi di Azure AD
   
-Nella tabella seguente sono elencate le attività di amministrazione del gruppo registrate quando un amministratore o un utente crea o modifica un gruppo di Office 365 o quando un amministratore crea un gruppo di sicurezza utilizzando l'interfaccia di amministrazione di Office 365 o il portale di gestione di Azure. Per ulteriori informazioni sui gruppi di Office 365, vedere [visualizzare, creare ed eliminare gruppi nell'interfaccia di amministrazione di office 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+Nella tabella seguente sono elencate le attività di amministrazione del gruppo registrate quando un amministratore o un utente crea o modifica un gruppo di Office 365 o quando un amministratore crea un gruppo di sicurezza utilizzando l'interfaccia di amministrazione di Microsoft 365 o il portale di gestione di Azure. Per ulteriori informazioni sui gruppi di Office 365, vedere [visualizzare, creare ed eliminare gruppi nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -540,7 +540,7 @@ Nella tabella seguente sono elencate le attività di amministrazione dell'applic
 
 ### <a name="role-administration-activities"></a>Attività di amministrazione del ruolo
   
-Nella tabella seguente sono elencate le attività di amministrazione dei ruoli di Azure AD registrate quando un amministratore gestisce i ruoli di amministratore nell'interfaccia di amministrazione di Office 365 o nel portale di gestione di Azure.
+Nella tabella seguente sono elencate le attività di amministrazione dei ruoli di Azure AD registrate quando un amministratore gestisce i ruoli di amministratore nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure.
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -551,7 +551,7 @@ Nella tabella seguente sono elencate le attività di amministrazione dei ruoli d
    
 ### <a name="directory-administration-activities"></a>Attività di amministrazione della directory
   
-Nella tabella seguente sono elencate le attività di directory e di dominio di Azure AD correlate registrate quando un amministratore gestisce la propria organizzazione di Office 365 nell'interfaccia di amministrazione di Office 365 o nel portale di gestione di Azure.
+Nella tabella seguente sono elencate le attività di directory e di dominio di Azure AD correlate registrate quando un amministratore gestisce la propria organizzazione di Office 365 nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure.
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -571,7 +571,7 @@ Nella tabella seguente sono elencate le attività di directory e di dominio di A
    
 ### <a name="ediscovery-activities"></a>attività di eDiscovery
   
-Le attività relative alla ricerca di contenuto e eDiscovery eseguite in Office 365 Security & Compliance Center o eseguendo i cmdlet di Windows PowerShell corrispondenti vengono registrate nel registro di controllo di Office 365. Sono incluse le attività seguenti:
+Le attività relative alla ricerca e al contenuto di eDiscovery eseguite nel centro sicurezza e conformità o eseguendo i cmdlet di PowerShell corrispondenti vengono registrate nel registro di controllo. Sono incluse le attività seguenti:
   
 - Creazione e gestione dei casi di eDiscovery
     
@@ -628,7 +628,7 @@ Nella tabella seguente sono elencate le attività di utenti e amministratori in 
 |Aggiunta di membri al team  <br/> |MemberAdded  <br/> |Un proprietario del team aggiunge i membri a un team.  <br/> |
 |Scheda aggiunta  <br/> |TabAdded  <br/> |Un utente aggiunge una tabulazione a un canale.  <br/> |
 |Impostazione del canale modificata  <br/> |ChannelSettingChanged  <br/> | L'operazione ChannelSettingChanged viene registrata quando i membri del team eseguono le attività seguenti. Per ognuna di queste attività, nella colonna **elemento** dei risultati di ricerca del registro di controllo viene visualizzata una descrizione dell'impostazione modificata, visualizzata tra parentesi.  <br/> <br/>-Cambia il nome di un canale del team ( **nome del canale**).  <br/>  <br/>-Modifica la descrizione di un canale del team ( **Descrizione del canale**).  <br/> |
-|Impostazione dell'organizzazione modificata  <br/> |TeamsTenantSettingChanged  <br/> | L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale (utilizzando l'interfaccia di amministrazione di Office 365). Si noti che queste attività incidono sulle impostazioni di Microsoft Teams a livello dell'organizzazione. Per ulteriori informazioni, vedere [impostazioni di amministratore per Microsoft teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Per ognuna di queste attività, nella colonna **elemento** dei risultati di ricerca del registro di controllo viene visualizzata una descrizione dell'impostazione modificata, visualizzata tra parentesi.  <br/><br/>-Consente di abilitare o disabilitare Microsoft teams per l'organizzazione ( **Microsoft teams**).  <br/><br/>-Consente di abilitare o disabilitare l'interoperabilità tra Microsoft teams e Skype for business per l'organizzazione (interoperabilità **Skype for business**).<br/><br/>-Abilita o Disabilita la visualizzazione organigramma nei client Microsoft Teams ( **org Chart View**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di pianificare riunioni private ( **pianificazione riunione privata**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di pianificare le riunioni dei canali (pianificazione delle riunioni di **canale**).  <br/><br/>-Abilita o Disabilita la videochiamata nelle riunioni dei team ( **video per le riunioni Skype**).  <br/><br/>-Abilita o Disabilita la condivisione dello schermo nei Meetup di Microsoft teams per l'organizzazione ( **condivisione dello schermo per le riunioni Skype**).  <br/><br/>-Abilita o Disabilita la possibilità di aggiungere immagini animate (denominate Giphys) a conversazioni di Teams ( **Immagini animate**).  <br/><br/>-Modifica l'impostazione di valutazione del contenuto per l'organizzazione ( **valutazione del contenuto**). La valutazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate memi personalizzati) da Internet alle conversazioni del team ( **Immagini personalizzabili da Internet**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere immagini modificabili (denominate adesivi) alle conversazioni del team ( **immagini modificabili**).<br/><br/>-Abilita o Disabilita la possibilità per i membri del team di usare i bot nelle chat e nei canali di Microsoft Teams ( **bot a livello di organizzazione**).<br/><br/>-Abilita bot specifici per Microsoft Teams; Questo non include il T-bot, che è teams Help bot disponibile quando i bot sono abilitati per l'organizzazione ( **singoli bot**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere estensioni o tabulazioni ( **estensioni o tabulazioni**).  <br/><br/>-Attiva o disattiva il caricamento laterale dei bot proprietari per Microsoft Teams ( **caricamento laterale dei bot**).  <br/><br/>-Abilita o Disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un canale Microsoft Teams ( **canale di posta elettronica**).  <br/> |
+|Impostazione dell'organizzazione modificata  <br/> |TeamsTenantSettingChanged  <br/> | L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale (utilizzando l'interfaccia di amministrazione di Microsoft 365). Si noti che queste attività incidono sulle impostazioni di Microsoft Teams a livello dell'organizzazione. Per ulteriori informazioni, vedere [impostazioni di amministratore per Microsoft teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Per ognuna di queste attività, nella colonna **elemento** dei risultati di ricerca del registro di controllo viene visualizzata una descrizione dell'impostazione modificata, visualizzata tra parentesi.  <br/><br/>-Consente di abilitare o disabilitare Microsoft teams per l'organizzazione ( **Microsoft teams**).  <br/><br/>-Consente di abilitare o disabilitare l'interoperabilità tra Microsoft teams e Skype for business per l'organizzazione (interoperabilità **Skype for business**).<br/><br/>-Abilita o Disabilita la visualizzazione organigramma nei client Microsoft Teams ( **org Chart View**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di pianificare riunioni private ( **pianificazione riunione privata**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di pianificare le riunioni dei canali (pianificazione delle riunioni di **canale**).  <br/><br/>-Abilita o Disabilita la videochiamata nelle riunioni dei team ( **video per le riunioni Skype**).  <br/><br/>-Abilita o Disabilita la condivisione dello schermo nei Meetup di Microsoft teams per l'organizzazione ( **condivisione dello schermo per le riunioni Skype**).  <br/><br/>-Abilita o Disabilita la possibilità di aggiungere immagini animate (denominate Giphys) a conversazioni di Teams ( **Immagini animate**).  <br/><br/>-Modifica l'impostazione di valutazione del contenuto per l'organizzazione ( **valutazione del contenuto**). La valutazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate memi personalizzati) da Internet alle conversazioni del team ( **Immagini personalizzabili da Internet**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere immagini modificabili (denominate adesivi) alle conversazioni del team ( **immagini modificabili**).<br/><br/>-Abilita o Disabilita la possibilità per i membri del team di usare i bot nelle chat e nei canali di Microsoft Teams ( **bot a livello di organizzazione**).<br/><br/>-Abilita bot specifici per Microsoft Teams; Questo non include il T-bot, che è teams Help bot disponibile quando i bot sono abilitati per l'organizzazione ( **singoli bot**).  <br/><br/>-Abilita o Disabilita la possibilità per i membri del team di aggiungere estensioni o tabulazioni ( **estensioni o tabulazioni**).  <br/><br/>-Attiva o disattiva il caricamento laterale dei bot proprietari per Microsoft Teams ( **caricamento laterale dei bot**).  <br/><br/>-Abilita o Disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un canale Microsoft Teams ( **canale di posta elettronica**).  <br/> |
 |Ruolo cambiato dei membri del team  <br/> |MemberRoleChanged  <br/> |Un proprietario del team modifica il ruolo dei membri di un team. I valori riportati di seguito indicano il tipo di ruolo assegnato all'utente.  <br/><br/><br/> **1** -indica il ruolo del proprietario.<br/>**2** -indica il ruolo del membro. <br/>**3** -indica il ruolo Guest. <br/>La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.  <br/> |
 |Impostazione del team modificata  <br/> |TeamSettingChanged  <br/> | L'operazione TeamSettingChanged viene registrata quando le attività seguenti vengono eseguite da un proprietario del team. Per ognuna di queste attività, nella colonna **elemento** dei risultati di ricerca del registro di controllo viene visualizzata una descrizione dell'impostazione modificata, visualizzata tra parentesi.  <br/><br/>-Cambia il tipo di accesso per un team. I team possono essere impostati come privato o pubblico ( **tipo di accesso del team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedere al team solo tramite invito. Quando un team è pubblico, è individuabile da tutti gli utenti.  <br/><br/>-Modifica la classificazione delle informazioni di un team ( **classificazione del team**).  <br/>  I dati del team, ad esempio, possono essere classificati come impatto aziendale elevato, impatto aziendale medio o impatto aziendale basso.<br/><br/>-Cambia il nome di un team ( **nome del team**).  <br/><br/>-Modifica la descrizione del team ( **Descrizione del team**). <br/><br/>-Modifiche apportate a una qualsiasi delle impostazioni del team. Un proprietario del team può accedere a queste impostazioni in un client di team facendo clic con il pulsante destro del mouse su un team, scegliendo **Gestisci team**e quindi facendo clic sulla scheda **Impostazioni** . Per queste attività, il nome dell'impostazione modificata viene visualizzato nella colonna **elemento** dei risultati di ricerca del registro di controllo.  <br/> |
 |Team creato  <br/> |TeamCreated  <br/> |Un utente crea un nuovo team.  <br/> |
@@ -670,7 +670,7 @@ Nella tabella seguente sono elencate le attività dell'utente e dell'amministrat
    
 ### <a name="microsoft-flow-activities"></a>Attività di flusso Microsoft
 
-È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Flow. Tali attività includono la creazione, la modifica e l'eliminazione dei flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo per le attività di flusso, vedere il Blog [Microsoft Flow Audit Events now available in Office 365 Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Flow. Tali attività includono la creazione, la modifica e l'eliminazione dei flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo per le attività di flusso, vedere il Blog [Microsoft Flow Audit Events now available in Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -731,7 +731,7 @@ Si noti inoltre che la durata del periodo di conservazione per i record di contr
 
 Sì. L'API di attività di gestione di Office 365 viene utilizzata per recuperare i registri di controllo a livello di programmazione.  Per iniziare, vedere [Introduzione a Office 365 Management Apis](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Esistono altri modi per ottenere registri di controllo diversi da quelli che utilizzano Office 365 Security & Compliance Center o Office 365 Management Activity API?**
+**Esistono altri modi per ottenere registri di controllo diversi da quelli utilizzati dal centro sicurezza e conformità o dall'API di attività di gestione di Office 365?**
 
 No. Questi sono gli unici due modi per ottenere i dati dal servizio di controllo di Office 365. 
 

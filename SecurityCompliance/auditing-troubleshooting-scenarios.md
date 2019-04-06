@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso o la ricerca dell'utente che ha configurato l'inoltro della posta elettronica per una cassetta postale.
-ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999629"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479662"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
 
@@ -36,17 +36,13 @@ Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si ba
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per l'utilizzo dello strumento di ricerca del registro di controllo
 
-È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Si noti che gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Esecuzione delle ricerche nei registri di controllo
 
 In questa sezione vengono descritte le nozioni di base per la creazione e l'esecuzione di ricerche nei registri Utilizzare queste istruzioni come punto di partenza per ogni scenario di risoluzione dei problemi in questo articolo. Per istruzioni dettagliate, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
-  
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
-
-3. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su ricerca del**Registro di controllo**di **ricerca** > .
+1. Accedere a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e accedere con l'account aziendale o dell'Istituto di istruzione.
     
     Viene visualizzata la pagina di **ricerca del registro di controllo** . 
     
@@ -115,9 +111,9 @@ A questo punto, è necessario esaminare i dettagli di ogni record di controllo p
 
 un. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in cui è stato impostato l'inoltro della posta elettronica. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati di ricerca.
 
-b. Nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che la posta elettronica inoltrata è stata impostata sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo di posta elettronica mike@contoso.com, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
+b. Nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che la posta elettronica inoltrata è stata impostata sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo mike@contoso.comdi posta elettronica, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
 
-c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *ed* è inoltrata all'indirizzo di posta elettronica specificato dal *ForwardingSmtpAddress *parametro, che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
+c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio recapitato a sarad@alpinehouse.onmicrosoft.com *e* viene inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo L'esempio mike@contoso.comè. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
 
 d. Il campo **userid** indica l'utente che ha impostato l'inoltro della posta elettronica sulla cassetta postale specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca. In questo caso, sembra che il proprietario della cassetta postale abbia impostato l'inoltro della posta elettronica sulla sua cassetta postale.
 
@@ -191,8 +187,8 @@ Dopo aver eseguito la ricerca, i record di controllo per questa attività vengon
 
 un. Nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
 
-b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul admin@alpinehouse.onmicrosoft.commessaggio di posta elettronica inviato da. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. in questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. in questo esempio, i messaggi ricevuti admin@alpinehouse.onmicrosoft.com da vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
 d. Il campo **userid** indica l'utente che ha creato la regola di posta in arrivo specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca.

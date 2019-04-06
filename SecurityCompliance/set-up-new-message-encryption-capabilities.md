@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection, l'organizzazione può utilizzare le comunicazioni di posta elettronica protette con persone all'interno e all'esterno dell'organizzazione. Le nuove funzionalità OME sono compatibili con altre organizzazioni di Office 365, Outlook.com, Gmail e altri servizi di posta elettronica.
-ms.openlocfilehash: 90247a7e3cd7e5978eb144a2b6f66a9de21a8f96
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fd237e537aa1ff961d2d975b3b30f4a51744ba7c
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296189"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479652"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Office 365 Message Encryption
 
@@ -26,14 +26,14 @@ Le nuove funzionalità di crittografia dei messaggi di Office 365 consentono all
 >[!NOTE]
 >Questo articolo è destinato agli amministratori e ai professionisti IT. Se si è un utente finale, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) per le soluzioni appropriate.
 
-Attenersi alla procedura riportata di seguito per verificare che le nuove funzionalità OME siano disponibili nel tenant di Office 365. 
+Attenersi alla procedura riportata di seguito per verificare che le nuove funzionalità OME siano disponibili nel tenant di Office 365.
 
 ## <a name="verify-azure-rights-management-arm-is-active"></a>Verificare che Azure Rights Management (ARM) sia attivo
 
 >[!NOTE]
 >Le nuove funzionalità OME sfruttano le funzionalità di protezione di [Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection), la tecnologia utilizzata da [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms).
 
-L'unico prerequisito per l'utilizzo delle nuove funzionalità OME è che [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) deve essere attivato nel tenant di Office 365. In caso contrario, Office 365 attiva automaticamente le nuove funzionalità OME e non è necessario eseguire alcuna operazione. 
+L'unico prerequisito per l'utilizzo delle nuove funzionalità OME è che [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) deve essere attivato nel tenant di Office 365. In caso contrario, Office 365 attiva automaticamente le nuove funzionalità OME e non è necessario eseguire alcuna operazione.
 
 ARM viene attivato automaticamente per la maggior parte dei piani idonei, quindi probabilmente non è necessario eseguire alcuna operazione anche in questo caso. Per ulteriori informazioni, vedere [attivazione di Azure Rights Management](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service) .
 
@@ -42,23 +42,21 @@ ARM viene attivato automaticamente per la maggior parte dei piani idonei, quindi
 
 Per ulteriori informazioni, vedere:
 
-- [Quali abbonamenti sono necessari per utilizzare le nuove funzionalità ome?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) per verificare se il piano di sottoscrizione include Azure Information Protection (che include ARM).   
--  [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) per informazioni sull'acquisto di una sottoscrizione idonea.  
+- [Quali abbonamenti sono necessari per utilizzare le nuove funzionalità ome?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) per verificare se il piano di sottoscrizione include Azure Information Protection (che include ARM).
+- [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) per informazioni sull'acquisto di una sottoscrizione idonea.  
 
 ### <a name="manually-activating-arm"></a>Attivazione manuale del braccio
 
 Se è stato disabilitato ARM o se non è stato attivato automaticamente per qualsiasi motivo, è possibile attivarlo manualmente nel:
 
-- Interfaccia di **amministrazione di office 365**: vedere [come attivare Azure Rights Management dall'interfaccia di amministrazione di Office 365](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) per istruzioni
-- **Portale di Azure**: vedere [come attivare Azure Rights Management dal portale di Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) per istruzioni. 
-
+- Interfaccia di **amministrazione di office 365**: vedere [come attivare Azure Rights Management dall'interfaccia di amministrazione di Office 365](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) per istruzioni.
+- **Portale di Azure**: vedere [come attivare Azure Rights Management dal portale di Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) per istruzioni.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurare la gestione della chiave tenant di Azure Information Protection
 
-Si tratta di un passaggio facoltativo. L'impostazione predefinita e la procedura consigliata per la maggior parte dei tenant di Office 365 sono le impostazioni predefinite per la gestione della chiave radice per Azure Information Protection. In questo caso, non è necessario eseguire alcuna operazione. 
+Questo passo è facoltativo. L'impostazione predefinita e la procedura consigliata per la maggior parte dei tenant di Office 365 sono le impostazioni predefinite per la gestione della chiave radice per Azure Information Protection. In questo caso, non è necessario eseguire alcuna operazione.
 
-Esistono diversi motivi, ad esempio i requisiti di conformità, che potrebbero richiedere la generazione e la gestione della chiave radice (nota anche come Bring your own key (BYOK)). In questo caso, è consigliabile completare i passaggi necessari prima di impostare le nuove funzionalità OME. Per ulteriori informazioni, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) . 
-
+Esistono diversi motivi, ad esempio i requisiti di conformità, che potrebbero richiedere la generazione e la gestione della chiave radice (nota anche come Bring your own key (BYOK)). In questo caso, è consigliabile completare i passaggi necessari prima di impostare le nuove funzionalità OME. Per ulteriori informazioni, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) .
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Verificare la nuova configurazione OME in Exchange Online PowerShell
 
@@ -72,15 +70,15 @@ Esistono diversi motivi, ad esempio i requisiti di conformità, che potrebbero r
      Test-IRMConfiguration [-Sender <email address >]
      ```  
 
-   **Esempio**: 
-   
+   **Esempio**:
+
      ```powershell
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
-     
+
      - La disponibilità di un messaggio di posta elettronica del mittente è facoltativa, ma forza il sistema a eseguire ulteriori controlli. Utilizzare l'indirizzo di posta elettronica di qualsiasi utente nel tenant di Office 365. 
-     
-    I risultati devono essere simili a:
+
+     I risultati devono essere simili a:
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -101,7 +99,7 @@ Esistono diversi motivi, ad esempio i requisiti di conformità, che potrebbero r
    - I nomi dei modelli predefiniti possono essere diversi da quelli visualizzati in alto. Per ulteriori informazioni, vedere Configuring [and Managing templates for Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates) .
 
 3. Eseguire il cmdlet Remove-PSSession per disconnettersi dal servizio Rights Management.
-    
+
      ```powershell
      Remove-PSSession $session
      ```
@@ -121,7 +119,7 @@ Per aggiornare le regole esistenti per l'utilizzo delle nuove funzionalità OME:
 3. Per ogni regola, **eseguire le operazioni seguenti**:
     - Selezionare **modifica la sicurezza dei messaggi**.
     - Selezionare **Apply Office 365 Message Encryption and Rights Protection**.
-    - Selezionare un modello RMS dall'elenco
+    - Selezionare un modello RMS dall'elenco.
     - Selezionare **Salva**.
     - Selezionare **OK**.
   
