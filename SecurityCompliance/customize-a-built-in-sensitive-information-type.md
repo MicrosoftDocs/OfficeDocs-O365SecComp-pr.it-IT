@@ -3,7 +3,7 @@ title: Personalizzare una tipologia integrata di informazioni sensibili
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 04/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una regola. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito.
-ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
+ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999609"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31389684"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
@@ -29,7 +29,7 @@ L'esempio riportato può essere applicato ad altre tipologie di informazioni sen
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Esportare il file XML delle regole correnti
 
-Per esportare l'XML, è necessario [connettersi al Centro sicurezza e conformità tramite una sessione remota di PowerShell](https://go.microsoft.com/fwlink/?linkid=799771).
+Per esportare l'XML, è necessario [connettersi al Centro sicurezza e conformità tramite una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
   
 1. In PowerShell, digitare quanto segue per visualizzare le regole dell'organizzazione sullo schermo. Se non sono state create regole proprie, verranno visualizzate solo quelle predefinite con l'etichetta "Pacchetto di regole Microsoft".
     
@@ -208,7 +208,7 @@ Per iniziare a usare la nuova regola per rilevare informazioni sensibili, è nec
   
 ## <a name="term-glossary"></a>Glossario
 
-Di seguito sono riportati i termini incontrati durante la procedura.
+Ecco le definizioni dei termini incontrati durante questa procedura.
   
 |**Termine**|**Definizione**|
 |:-----|:-----|
@@ -225,7 +225,7 @@ Di seguito sono riportati i termini incontrati durante la procedura.
 
 - [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
     
-- [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
+- [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md)
     
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
     
