@@ -1,22 +1,22 @@
 ---
-title: Welcome to your all-New New Microsoft 365 Compliance Center
+title: Panoramica del nuovo centro conformità di Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul nuovo centro conformità di Microsoft 365, incluso quello che contiene, su come ottenerlo e sui passaggi successivi.
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026317"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518386"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Benvenuti nel nuovo centro conformità di Microsoft 365
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Panoramica del nuovo centro conformità Microsoft 365
 
 ## <a name="overview"></a>Panoramica
 
@@ -24,7 +24,7 @@ Se si è interessati alla postura di conformità dell'organizzazione, sarà poss
 
 Leggere questo articolo per acquisire familiarità con il centro conformità Microsoft 365, [come ottenerlo](#how-do-i-get-this), le [domande frequenti](#frequently-asked-questions)e i [passaggi successivi](#next-steps).
 
-[![Centro conformità Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Mcentro conformità di icrosoft 365(media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Conformità a Microsoft 365 Compliance
 
@@ -83,11 +83,15 @@ Oltre ai collegamenti nelle schede nella Home page, è disponibile un riquadro d
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Perché sono state apportate al centro conformità di Office 365 Security & per eseguire alcune attività, come la definizione di determinati criteri?
 
-È ancora in corso lo sviluppo del centro conformità Microsoft 365 e verranno aggiunte altre funzionalità e soluzioni nei prossimi mesi. Nel frattempo, sono presenti alcune attività che devono essere eseguite nel centro conformità di sicurezza di &. In questi casi, l'utente verrà indirizzato automaticamente al percorso in cui è possibile eseguire l'attività, ad esempio la creazione o la modifica di un criterio di supervisione.
+È ancora in corso lo sviluppo del centro conformità Microsoft 365 e verranno aggiunte altre funzionalità e soluzioni nei prossimi mesi. Nel frattempo, esistono alcune attività che devono essere eseguite nel centro conformità di Office 365 Security & ([https://protection.office.com](https://protection.office.com)). In questi casi, l'utente verrà indirizzato automaticamente al percorso in cui è possibile eseguire l'attività, ad esempio la creazione o la modifica di un criterio di supervisione.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Perché non viene ancora visualizzato il nuovo centro conformità di Microsoft 365?
 
-Prima di tutto, assicurarsi di avere le [licenze e le autorizzazioni](microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriate. Accedere quindi a [https://compliance.microsoft.com](https://compliance.microsoft.com). Se non si vede ancora il nuovo centro conformità, lo si avrà molto presto.
+Prima di tutto, assicurarsi di avere le [licenze e le autorizzazioni](microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriate. Accedere quindi a [https://compliance.microsoft.com](https://compliance.microsoft.com). Se il nuovo centro conformità non è ancora disponibile, lo sarà presto.
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>Non è possibile trovare alcune delle impostazioni di conformità. What do I do?
+
+È ancora in aggiunta la funzionalità al centro conformità Microsoft 365. Se non si riesce a trovare un elemento, ad esempio la ricerca del registro di controllo, provare a passare al centro sicurezza[https://protection.office.com](https://protection.office.com)& Compliance di Office 365 (). Le configurazioni vengono salvate automaticamente nel centro conformità di Office 365 Security & e nel nuovo centro conformità di Microsoft 365.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
