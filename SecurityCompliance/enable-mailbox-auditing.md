@@ -1,8 +1,8 @@
 ---
 title: Gestire il controllo delle cassette postali
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 604b7fc26c2e97a5efce28fe844fbd066196c4ce
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670631"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745318"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
   
@@ -268,7 +268,7 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
   
 Nella tabella seguente sono riepilogate le azioni che vengono controllate per ogni tipo di accesso utente. Nella tabella, un asterisco ( **\*** ) indica che l'azione è registrata per impostazione predefinita. Un **No** indica che non è possibile registrare un'azione per il tipo di accesso. Si noti che un amministratore a cui è stata assegnata l'autorizzazione di accesso completo per la cassetta postale di un utente viene considerato un utente delegato. 
   
-|**Azione**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
+|**Azione**|**Descrizione**|**Amministratore**|**Delegato**|**Proprietario**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copia** <br/> |Messaggio copiato in un'altra cartella.  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
 |**Creazione** <br/> |Elemento creato nella cartella Calendario, Contatti, Note o Attività nella cassetta postale; ad esempio, viene creata una nuova convocazione di riunione. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
