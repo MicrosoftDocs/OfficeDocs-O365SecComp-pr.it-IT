@@ -3,7 +3,7 @@ title: Panoramica relativa ai criteri di prevenzione della perdita di dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000019"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784107"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -56,13 +56,13 @@ Utilizzando un criterio DLP, è possibile:
 
 In un criterio DLP sono disponibili alcuni elementi di base:
   
-- Dove proteggere il contenuto, ad **** esempio i siti di Exchange Online, SharePoint Online e OneDrive for business, nonché le chat e i canali di Microsoft teams. 
+- Dove proteggere il contenuto: **luoghi** quali Exchange Online, SharePoint Online e OneDrive for business, nonché chat e canali di Microsoft teams. 
     
 - Quando e in che modo proteggere il contenuto, applicando **regole** composte da: 
     
-  - **Condizioni** il contenuto deve corrispondere prima che la regola venga applicata, ad esempio solo per il contenuto contenente i numeri di previdenza sociale condivisi con utenti esterni all'organizzazione. 
+  - **Condizioni** in cui il contenuto deve corrispondere prima che la regola venga applicata. Ad esempio, una regola può essere configurata in modo da cercare solo il contenuto contenente i numeri di preVidenza sociale condivisi con utenti esterni all'organizzazione. 
     
-  - **Azioni** che la regola deve effettuare automaticamente quando vengono rilevati contenuti corrispondenti alle condizioni: ad esempio, è possibile bloccare l'accesso al documento e inviare una notifica tramite posta elettronica sia all'utente che al responsabile della conformità. 
+  - **Azioni** che si desidera vengano eseguite automaticamente quando vengono trovati contenuti che soddisfano le condizioni. Ad esempio, una regola può essere configurata per bloccare l'accesso a un documento e inviare una notifica tramite posta elettronica sia all'utente che al responsabile della conformità. 
     
 È possibile utilizzare una regola per rispondere a uno specifico requisito di conformità, per poi utilizzare un criterio DLP per raggruppare i requisiti di sicurezza più comuni, ad esempio, tutte le regole necessarie per ottenere la conformità a una normativa specifica.
   
@@ -70,7 +70,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ![Diagramma che mostra il criterio DLP contenente posizioni e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Percorsi
+### <a name="locations"></a>Sedi
 
 Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online, OneDrive for business o Microsoft teams. È possibile scegliere di proteggere il contenuto in messaggi di posta elettronica di Exchange, chat e canali di Microsoft teams e tutte le raccolte di SharePoint o OneDrive oppure selezionare percorsi specifici per un criterio.
   
@@ -212,10 +212,14 @@ Ad esempio, il criterio **HIPAA americano** incorporato ha una regola che utiliz
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Priorità in base alla quale vengono elaborate le regole
 
-Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine in cui è stata creata, ovvero la regola creata per primo ha priorità assoluta, la regola creata secondo ha una seconda priorità e così via. Dopo aver creato una regola, non è possibile modificare la priorità, tranne eliminando e ricrearla.
+Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine in cui è stata creata, ovvero la regola creata per primo ha priorità assoluta, la regola creata secondo ha una seconda priorità e così via. 
   
 ![Regole in ordine di priorità](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+Dopo aver configurato più di un criterio DLP, è possibile modificare la priorità di uno o più criteri. A tale scopo, selezionare un criterio, scegliere **modifica criterio**e utilizzare l'elenco **priorità** per specificare la priorità.
+
+![Impostare la priorità per un criterio](media/dlp-set-policy-priority.png)
+
 Quando il contenuto viene valutato in base alle regole, le regole vengono elaborate in ordine di priorità. Se il contenuto corrisponde a più regole, le regole vengono elaborate in ordine di priorità e l'azione più restrittiva viene applicata. Ad esempio, se il contenuto corrisponde a tutte le regole seguenti, la regola 3 viene applicata perché è la regola più alta, la più restrittiva:
   
 - Regola 1: notifica solo agli utenti
@@ -244,7 +248,7 @@ Dopo che la gente ha creato e attivato i propri criteri DLP, a volte si ricorre 
   
 - Un numero eccessivo di contenuti che **non sono** informazioni riservate corrisponde alle regole, ovvero troppi falsi positivi. 
     
-- Troppo poco contenuto con **** informazioni riservate corrisponde alle regole-in altre parole, le azioni protettive non vengono applicate alle informazioni riservate. 
+- Troppo poco contenuto con **** informazioni riservate corrisponde alle regole. In altre parole, le azioni protettive non vengono applicate alle informazioni riservate. 
     
 Per risolvere questi problemi, è possibile ottimizzare le regole regolando il numero di istanze e la precisione della corrispondenza per rendere più difficile o più facile per il contenuto soddisfare le regole. Ogni tipo di informazioni riservate utilizzato in una regola dispone sia di un conteggio delle istanze che di una corrispondenza accurata.
   
@@ -403,6 +407,10 @@ Se si stanno creando criteri DLP con un impatto potenziale elevato, è consiglia
 È possibile disattivare un criterio DLP in qualsiasi momento, disabilitando anche tutte le regole nel criterio. Tuttavia, ogni regola può anche essere disattivata singolarmente commutando lo stato nell'editor delle regole.
   
 ![Opzioni per disattivare una regola in un criterio](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+È inoltre possibile modificare la priorità di più regole in un criterio. A tale scopo, aprire un criterio per la modifica. In una riga di una regola scegliere i puntini di controllo (**...**) e quindi scegliere un'opzione, ad esempio **Sposta verso il basso** o **porta per ultimo**.
+
+![Impostare la priorità delle regole](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Rapporti DLP
 
@@ -494,13 +502,13 @@ Queste autorizzazioni sono necessarie solo per la creazione e l'applicazione di 
 
 Per utilizzare la maggior parte dei cmdlet per il centro &amp; sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell.](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
 2. Utilizzare uno di questi [cmdlet di policy-and-Compliance-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
 Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incluso Exchange Online. Per questo motivo, **i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell per &amp; il Centro sicurezza e conformità**. Pertanto, per utilizzare i cmdlet per i report DLP, è necessario eseguire le operazioni seguenti:
   
-1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connessione a Exchange Online tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Utilizzare uno di questi cmdlet per i report DLP:
     
@@ -510,17 +518,17 @@ Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incl
     
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
+- [Creare criteri di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
 - [Inviare notifiche e visualizzare i suggerimenti per i criteri DLP](use-notifications-and-policy-tips.md)
     
-- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
+- [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [Elementi cercati dai tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
     
-- [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
+- [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
 - [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md)
     
