@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999379"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745278"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -41,7 +41,7 @@ Le configurazioni descritte in questo articolo sono allineate alle raccomandazio
     
 Per altre informazioni su questi livelli e sulle funzionalità consigliate per ogni livello, vedere le risorse seguenti. 
   
-- [Protezione di dispositivi e identità per Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
+- [Identity and Device Protection per Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
 - [Soluzioni per la protezione dei file in Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect)
     
@@ -115,7 +115,7 @@ La tabella seguente contiene il riepilogo delle operazioni di configurazione per
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Protezione di base 1** <br/> |**Protezione di base 2** <br/> |**Protezione dati sensibili** <br/> |**Riservatezza elevata** <br/> |
+||**Protezione di base #1** <br/> |**Protezione di base #2** <br/> |**Protezione dati sensibili** <br/> |**Estremamente riservato** <br/> |
 |Descrizione  <br/> |Individuazione e collaborazione aperte all'interno dell'organizzazione.  <br/> |Sito privato e gruppo con condivisione consentita all'esterno del gruppo.  <br/> |Sito isolato, in cui i livelli di accesso sono definiti dall'appartenenza a gruppi specifici. La condivisione è consentita solo ai membri del sito. La prevenzione della perdita di dati avvisa gli utenti quando tentano di inviare file all'esterno dell'organizzazione.  <br/> |Sito isolato + crittografia dei file e autorizzazioni con Azure Information Protection. La prevenzione della perdita dei dati impedisce agli utenti di inviare file all'esterno dell'organizzazione.  <br/> |
 |Sito del team privato o pubblico  <br/> |Pubblico  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Chi può accedere?  <br/> |Tutti gli utenti dell'organizzazione, inclusi gli utenti B2B e gli utenti guest.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri. Altri utenti non possono richiedere l'accesso.  <br/> |
@@ -180,9 +180,14 @@ Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti c
 
 Per la procedura di configurazione di Azure Information Protection in questa soluzione, vedere [Proteggere i file di SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md).
   
+
+## <a name="next-step"></a>Passaggio successivo
+
+Creare un modello di verifica con [Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md).
+
 ## <a name="see-also"></a>Vedere anche
 
-[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

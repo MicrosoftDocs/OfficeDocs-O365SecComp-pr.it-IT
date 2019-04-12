@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999159"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745258"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di conservazione e la prevenzione della perdita dei dati
 
@@ -47,7 +47,7 @@ In questa fase si definiscono i nomi delle etichette di conservazione per i quat
   
 |**Livello di protezione del sito del team di SharePoint Online**|**Nome etichetta**|
 |:-----|:-----|
-|Pubblico di base  <br/> |Pubblico interno  <br/> |
+|Pubblico di livello di base  <br/> |Pubblico interno  <br/> |
 |Privato di base  <br/> |Private  <br/> |
 |Dati sensibili  <br/> |Dati sensibili  <br/> |
 |Highly Confidential (Riservatezza elevata)  <br/> |Highly Confidential (Riservatezza elevata)  <br/> |
@@ -56,9 +56,9 @@ In questa fase si definiscono i nomi delle etichette di conservazione per i quat
 
 In questa fase si creano e poi pubblicano le etichette specificate per i diversi livelli di protezione delle informazioni.
   
-1. Accedere al [portale Sicurezza Microsoft 365](https://security.microsoft.com) con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società.
+1. Accedere al [portale Conformità Microsoft 365](https://compliance.microsoft.com) con un account che dispone del ruolo Amministratore della sicurezza oppure Amministratore della società.
     
-2. Dalla scheda **Home: Sicurezza Microsoft 365** del browser fare clic su **Classificazioni > Etichette**.
+2. Dalla scheda **Home: Conformità Microsoft 365** del browser fare clic su **Classificazioni > Etichette**.
     
 3. Fare clic su **Etichette di conservazione > Crea un'etichetta**.
     
@@ -70,7 +70,7 @@ In questa fase si creano e poi pubblicano le etichette specificate per i diversi
     
 7. Nel riquadro **Rivedere le impostazioni** fare clic su **Crea etichetta**.
     
-8. Per etichette aggiuntive, fare clic su **Crea un'etichetta** e ripetere i passaggi da 4 a 7.
+8. Per etichette aggiuntive, fare clic su **Crea un'etichetta** e ripetere i passaggi da 3 a 7 in base alle esigenze.
     
 
 ### <a name="publish-your-new-labels"></a>Pubblicare le nuove etichette
@@ -221,9 +221,9 @@ Di seguito è riportata la configurazione risultante per i siti con riservatezza
     
 ## <a name="see-also"></a>Vedere anche
 
-[Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteggere siti e file di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
