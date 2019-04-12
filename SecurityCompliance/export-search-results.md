@@ -1,5 +1,5 @@
 ---
-title: Esportare i risultati della Ricerca contenuto
+title: Esportare i risultati di Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & compliance in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000469"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814057"
 ---
-# <a name="export-content-search-results"></a>Esportare i risultati della Ricerca contenuto
+# <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
 Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti altri documenti e report.
   
@@ -33,7 +33,7 @@ Inoltre, tutti i messaggi di posta elettronica crittografati con RMS inclusi nei
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per esportare i risultati della ricerca, è necessario essere assegnati al ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
@@ -80,7 +80,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
 
 Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, vengono caricati in una posizione di archiviazione di Azure nel cloud Microsoft. Si noti che il contenuto delle cassette postali e dei siti viene caricato a una velocità massima di 2 GB/ora.
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -170,7 +170,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   

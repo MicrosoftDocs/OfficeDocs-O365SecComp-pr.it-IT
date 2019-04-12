@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Utilizzare la ricerca contenuto nel centro sicurezza e conformità di & per cercare le cassette postali, i siti di SharePoint Online e OneDrive for business. '
-ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000279"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814077"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Eseguire una ricerca contenuto nel Centro sicurezza e conformità
 
@@ -45,13 +45,13 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
   
 [Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Modificare una ricerca](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Riprovare la ricerca](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per informazioni e istruzioni sulla creazione di query di ricerca e sull'utilizzo di operatori di ricerca booleani, vedere [keyword query and Search Conditions for content search](keyword-queries-and-search-conditions.md). In questo articolo sono inoltre disponibili informazioni sulla ricerca di tipi di informazioni riservate e sulla ricerca di contenuto condiviso con persone all'interno e all'esterno dell'organizzazione.
     
@@ -69,12 +69,12 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
     
     Vedere la sezione Suggerimenti per la ricerca di contenuto nei gruppi di Office 365 e Microsoft teams. 
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -209,7 +209,7 @@ Inoltre, sono supportati i seguenti tipi di contenitori di file. È possibile vi
     
 - . gzip
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Aggiornare i risultati della ricerca
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Quando si aggiornano i risultati di una ricerca di contenuto esistente, la query
     
     Viene visualizzato un messaggio di stato che indica che è in corso il recupero dei risultati. Quando la ricerca è completata, le informazioni aggiornate vengono visualizzate in **Risultati** nel riquadro dei dettagli. Si noti che la data nel campo **Cercato il** nel riquadro dei dettagli viene aggiornata alla data e ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche di contenuto, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif)l'icona Aggiorna.
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Modificare una ricerca
 <a name="edit"> </a>
@@ -273,7 +273,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
 [Varie](#miscellaneous)
   
-[Return to top](#before-you-begin)
+[Inizio pagina](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Limiti e prestazioni
   

@@ -1,5 +1,5 @@
 ---
-title: Esportare il rapporto della Ricerca contenuto
+title: Esportare un report di Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,23 +18,23 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365, è possibile esportare solo un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
-ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & compliance in Office 365, è possibile esportare solo un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
+ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295979"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813927"
 ---
-# <a name="export-a-content-search-report"></a>Esportare il rapporto della Ricerca contenuto
+# <a name="export-a-content-search-report"></a>Esportare un report di Ricerca contenuto
 
-Invece di esportare il set completo di risultati della ricerca da una ricerca di contenuto nel centro sicurezza &amp; e conformità di Office 365 (e da una ricerca di contenuto associata a un caso di eDiscovery), è possibile esportare solo gli stessi rapporti che vengono generati quando si esportare i risultati della ricerca.
+Invece di esportare il set completo di risultati della ricerca da una ricerca di contenuto nel centro sicurezza e conformità di & (e da una ricerca di contenuto associata a un caso di eDiscovery), è possibile esportare solo gli stessi rapporti che vengono generati quando si esporta la ricerca Risultati.
   
 Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly* . Ad esempio, se la ricerca di contenuto è denominata *ContosoCase0815* , il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly* . Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per esportare un rapporto di ricerca contenuto, è necessario che il ruolo di gestione della ricerca di conformità sia assegnato al &amp; Centro sicurezza e conformità di Office 365. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](assign-ediscovery-permissions.md).
+- Per esportare un rapporto di ricerca contenuto, è necessario che il ruolo di gestione della ricerca di conformità sia assegnato al centro sicurezza & Compliance. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
 - Quando si esporta un report, i dati vengono temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.core.windows.net** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dall'area di archiviazione di Azure due settimane dopo la sua creazione. 
     
@@ -56,7 +56,7 @@ Quando si esporta un report, viene scaricato in una cartella con lo stesso nome 
 
 - Se la dimensione totale stimata dei risultati restituiti da una ricerca di contenuto supera&nbsp;i 20 TB, l'esportazione del rapporto avrà esito negativo. Per esportare correttamente il report, provare a restringere l'ambito ed eseguire di nuovo la ricerca in modo che la dimensione stimata dei risultati&nbsp;sia inferiore a 20 TB.
 
-- L'esportazione dei rapporti di ricerca del contenuto conta sul numero massimo di esportazioni in esecuzione contemporaneamente e sul numero massimo di esportazioni che un singolo utente può eseguire. Per ulteriori informazioni sui limiti di esportazione, vedere [Export content search results from the Office 365 Security _AMP_ Compliance Center](export-search-results.md#export-limits).
+- L'esportazione dei rapporti di ricerca del contenuto conta sul numero massimo di esportazioni in esecuzione contemporaneamente e sul numero massimo di esportazioni che un singolo utente può eseguire. Per ulteriori informazioni sui limiti di esportazione, vedere [Export content search results](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generare e scaricare un report di ricerca contenuto
 
@@ -70,14 +70,14 @@ Il primo passaggio consiste nel preparare il report per il download nel computer
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **Ricerca contenuto**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su ricerca **contenuto** **ricerca** \> .
     
 4. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
     
 5. Nel riquadro dei dettagli, in **Esporta rapporto in un computer**, fare clic su **genera report**.
     
     > [!NOTE]
-    > Se i risultati di una ricerca risalgono a più di 7 giorni, viene richiesto di aggiornare i risultati della ricerca. In tal caso, annullare l'esportazione, fare clic su **Aggiorna i risultati della ricerca** nel riquadro dei dettagli per la ricerca selezionata e quindi avviare di nuovo l'esportazione del rapporto dopo l'aggiornamento dei risultati. 
+    > Se i risultati di una ricerca hanno più di 7 giorni, viene chiesto di aggiornare i risultati di ricerca. In tal caso, annullare l'esportazione, fare clic su **Aggiorna i risultati della ricerca** nel riquadro dei dettagli per la ricerca selezionata e quindi avviare di nuovo l'esportazione del rapporto dopo l'aggiornamento dei risultati. 
   
 6. Nella pagina **Esporta un report** , in **Includi questi elementi della ricerca**, scegliere una delle seguenti opzioni:
     
@@ -96,7 +96,7 @@ Il primo passaggio consiste nel preparare il report per il download nel computer
     Il report dei risultati della ricerca è pronto per il download, il che significa che i documenti del rapporto verranno caricati nell'area di archiviazione di Azure nel cloud Microsoft. Quando il report è pronto per il download, il collegamento del **rapporto di download** viene visualizzato in **Esporta rapporto in un computer** nel riquadro dei dettagli. 
     
 > [!NOTE]
-> È inoltre possibile esportare un report per una ricerca di contenuto associata a un caso di eDiscovery. A tale scopo, andare a **Search &amp; Investigation** \> **eDiscovery**, selezionare un caso, quindi fare **** ![clic su modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica. Nella pagina **ricerche** selezionare una ricerca e quindi fare clic su **** ![Esporta esportazione dei risultati della ricerca](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **l'icona Esporta un report**. 
+> È inoltre possibile esportare un report per una ricerca di contenuto associata a un caso di eDiscovery. A tale scopo, accedere a **eDiscovery** \> **eDiscovery**, selezionare un caso e fare clic su **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica. Nella pagina **ricerche** selezionare una ricerca e quindi fare clic su **** ![Esporta esportazione dei risultati della ricerca](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **l'icona Esporta un report**. 
   
 ## <a name="step-2-download-the-report"></a>Passaggio 2: scaricare il report
 
@@ -110,13 +110,13 @@ Il passaggio successivo consiste nel scaricare il report dall'area di archiviazi
     
     - La dimensione totale stimata degli elementi che verranno scaricati.
     
-    - Se verranno esportati o meno indicizzati. Gli elementi non indicizzati sono elementi che hanno un formato riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi.
+    - Se gli elementi esportati saranno indicizzati o non indicizzati. Gli elementi non indicizzati sono elementi che hanno un formato riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi.
     
     - Se verranno scaricate o meno versioni di documenti SharePoint.
     
     - Lo stato del processo di esportazione del report. È possibile iniziare a scaricare il report anche se la preparazione del report non è stata completata.
     
-2. In **Esporta chiave**, fare clic su **copia negli Appunti**. Questo tasto verrà utilizzato nel passaggio 5 per scaricare il report.
+2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Questo tasto verrà utilizzato nel passaggio 5 per scaricare il report.
     
     > [!IMPORTANT]
     > Poiché tutti gli utenti possono installare e avviare lo strumento di esportazione di eDiscovery e quindi utilizzare questa chiave per scaricare il report di ricerca, assicurarsi di prendere precauzioni per proteggere questa chiave come se si proteggessero le password o altre informazioni relative alla sicurezza. 
@@ -131,10 +131,10 @@ Il passaggio successivo consiste nel scaricare il report dall'area di archiviazi
     
 7. Fare clic su **Avvia** per scaricare i risultati della ricerca nel computer. 
     
-    Lo **strumento di esportazione di eDiscovery** Visualizza le informazioni sullo stato relative al processo di esportazione, inclusa una stima del numero e delle dimensioni degli elementi restanti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. 
+    Lo **Strumento di esportazione eDiscovery** consente di visualizzare informazioni sullo stato delle informazioni relative al processo di esportazione, incluso il numero stimato (e le dimensioni) degli elementi rimanenti da scaricare. Al termine del processo di esportazione, è possibile accedere ai file nel percorso in cui sono stati scaricati. 
     
 > [!NOTE]
-> È possibile scaricare il report per una ricerca di contenuto associata a un caso di eDiscovery. A tale scopo, andare a **Search &amp; Investigation** \> **eDiscovery**, selezionare un caso, quindi fare **** ![clic su modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica. Nella pagina **** esportazioni selezionare l'esportazione di un report e quindi fare clic su **Scarica report** nel riquadro dei dettagli. 
+> È possibile scaricare il report per una ricerca di contenuto associata a un caso di eDiscovery. A tale scopo, accedere a **eDiscovery** \> **eDiscovery**, selezionare un caso e fare clic su **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica. Nella pagina **** esportazioni selezionare l'esportazione di un report e quindi fare clic su **Scarica report** nel riquadro dei dettagli. 
   
 ## <a name="whats-included-in-the-report"></a>Elementi inclusi nel report
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza e conformità in modo che Office 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche in Office 365.
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999659"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813987"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Creare avvisi attività in Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "30999659"
 > [!NOTE]
 > Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per gestire gli avvisi di attività, è necessario essere assegnati al ruolo Configurazione organizzazione nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security _AMP_ Compliance Center](grant-access-to-the-security-and-compliance-center.md).
     
@@ -43,7 +43,7 @@ ms.locfileid: "30999659"
     
 ## <a name="create-an-activity-alert"></a>Creare un avviso di attività
 
-1. Passare a [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Passare a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -82,7 +82,7 @@ ms.locfileid: "30999659"
 
 È possibile disattivare un avviso di attività in modo che non venga inviata una notifica di posta elettronica. Dopo aver disattivato l'avviso attività, viene comunque visualizzato nell'elenco degli avvisi attività per l'organizzazione ed è comunque possibile visualizzarne le proprietà.
   
-1. Passare a [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Vai a Vai a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -94,7 +94,7 @@ ms.locfileid: "30999659"
     
 Per riattivare un avviso di attività, ripetere questi passaggi e fare clic **** sull'opzione attiva/disattiva per modificare lo stato **su**attivato.
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Di seguito è riportato un esempio di notifica di posta elettronica inviato agli utenti specificati nel campo inviato questo avviso a (ed elencati in **destinatari** nella pagina **avvisi attività** ) nel centro sicurezza e conformità di &. 
     

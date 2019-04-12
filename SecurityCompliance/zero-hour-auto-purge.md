@@ -3,7 +3,7 @@ title: 'Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malwa
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica che consente di rilevare i messaggi con posta indesiderata o malware che sono già stati recapitati alle cassette postali degli utenti e quindi di eseguire il rendering del contenuto dannoso innocuo. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479632"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818603"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -48,7 +48,7 @@ Office 365 aggiorna le firme di malware e del motore di protezione da posta inde
 
 - Per il malware appena rilevato, ZAP rimuove gli allegati dai messaggi di posta elettronica, indipendentemente dal fatto che il messaggio di posta elettronica sia stato letto.
   
-L'azione ZAP è senza problemi per l'utente della cassetta postale; non vengono notificati se viene spostato un messaggio di posta elettronica.
+L'azione ZAP è senza problemi per l'utente della cassetta postale; non vengono notificati se viene spostato un messaggio di posta elettronica. Il messaggio non deve superare i 2 giorni.
   
 Gli elenchi Consenti, [le regole del flusso di posta](https://go.microsoft.com/fwlink/p/?LinkId=722755)e le regole degli utenti finali o i filtri aggiuntivi hanno la precedenza su Zap.
   
@@ -89,7 +89,10 @@ ZAP non sposta i messaggi in quarantena dalla posta in arrivo in questo momento.
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Cosa succede se si dispone di una regola del flusso di posta personalizzata (blocco/Consenti regola)?
   
 Le regole create dagli amministratori (regole del flusso di posta) o blocca e Consenti hanno la precedenza. Tali messaggi sono esclusi dai criteri di funzionalità in modo che il flusso di posta seguirà l'azione della regola (blocco/Consenti regola).
-  
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, la regola di posta in arrivo)?
+ZAP continua a funzionare in questo caso, a meno che il messaggio non sia stato eliminato o sia inDesiderato.
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Protezione dalla posta inDesiderata di Office 365](anti-spam-protection.md)

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000109"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814027"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -56,7 +56,7 @@ Se si utilizza lo strumento di caso DSR, è possibile:
     
 Di seguito è indicato il processo di alto livello per l'utilizzo dello strumento di gestione dei casi DSR per gestire le indagini DSR:
   
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Passaggio 2: creare un caso DSR e aggiungere membri](#step-2-create-a-dsr-case-and-add-members)
 
@@ -84,7 +84,7 @@ Per istruzioni dettagliate, vedere [assegnare le autorizzazioni di eDiscovery ne
 
 Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso, è possibile scegliere di avviare la ricerca incorporata oppure è possibile creare il caso senza avviare la ricerca. La procedura seguente consente di creare il caso senza avviare la ricerca e quindi di mostrare come aggiungere membri al caso.
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
+1. [https://protection.office.com](https://protection.office.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
     
 2. Nel centro sicurezza & Compliance fare clic su richieste degli \> **interessati**per la **privacy dei dati** e quindi fare clic su ![Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo caso DSR**.
     
@@ -393,7 +393,7 @@ Di seguito viene indicato un processo di alto livello per esportare gli elementi
     
 Per ulteriori informazioni sugli elementi parzialmente indicizzati, vedere: 
   
-- [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md) (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
+- [Partially indexed items in Content Search in Office 365 (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)](partially-indexed-items-in-content-search.md)
 
 - [Esportazione di elementi parzialmente indicizzati](export-search-results.md#exporting-partially-indexed-items)
     

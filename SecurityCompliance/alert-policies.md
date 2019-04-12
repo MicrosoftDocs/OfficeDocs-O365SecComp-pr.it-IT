@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e il problema delle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000719"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814127"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
 
@@ -47,7 +47,7 @@ Di seguito viene illustrata una breve panoramica del funzionamento dei criteri d
 
 Un criterio di avviso è costituito da un insieme di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genererà un avviso, un elenco di utenti che attiveranno l'avviso se eseguono l'attività e la soglia che definisce il numero di volte in cui l'attività deve essere eseguita prima di un n avviso attivato. È inoltre possibile suddividere in categorie il criterio e assegnargli un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso (e gli avvisi attivati quando vengono soddisfatte le condizioni dei criteri) perché è possibile filtrare queste impostazioni quando si gestiscono i criteri e si visualizzano gli avvisi nel centro sicurezza e conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
   
-Per visualizzare e creare criteri di avviso, passare [https://compliance.microsoft.com](https://compliance.microsoft.com) a e quindi fare clic su **avvisi** \> per i **criteri di avviso**. 
+Per visualizzare e creare criteri di avviso, passare [https://protection.office.com](https://protection.office.com) a e quindi fare clic su **avvisi** \> per i **criteri di avviso**. 
   
 ![Nel centro sicurezza e conformità fare clic su avvisi, quindi fare clic su criteri avvisi per visualizzare e creare criteri di avviso.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -73,7 +73,7 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
     
   - Governance dei dati
     
-  - Prevenzione della perdita di dati
+  - Prevenzione della perdita dei dati
 
   - Flusso di posta
     
@@ -126,7 +126,7 @@ Si noti che le attività insolite monitorate da alcuni dei criteri incorporati s
 
 Quando un'attività eseguita dagli utenti dell'organizzazione corrisponde alle impostazioni di un criterio di avviso, viene generato un avviso e visualizzato nella pagina **Visualizza avvisi** nel centro sicurezza e conformità, a seconda delle impostazioni di un criterio di avviso, di un messaggio di posta elettronica la notifica viene inviata anche a un elenco di utenti specificati quando si attiva un avviso. Per ogni avviso, il dashboard nella pagina **Visualizza avvisi** Visualizza il nome del criterio di avviso corrispondente, la gravità e la categoria dell'avviso (definiti nel criterio di avviso) e il numero di volte in cui si è verificata un'attività che ha provocato l'attivazione dell'avviso. generato Questo valore si basa sull'impostazione di soglia del criterio di avviso. Il dashboard Visualizza anche lo stato di ogni avviso. Per ulteriori [](#managing-alerts) informazioni sull'utilizzo della proprietà Status per gestire gli avvisi, vedere la sezione managing alerts. 
   
-Per visualizzare gli avvisi, passare [https://compliance.microsoft.com](https://compliance.microsoft.com) a e quindi fare clic su **avvisi** \> **Visualizza**avvisi. 
+Per visualizzare gli avvisi, passare [https://protection.office.com](https://protection.office.com) a e quindi fare clic su **avvisi** \> **Visualizza**avvisi. 
   
 ![In sicurezza e conformità, fare clic su avvisi, quindi fare clic su Visualizza avvisi per visualizzare gli avvisi](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   
@@ -163,7 +163,7 @@ Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvi
 
 Per visualizzare la categoria a cui è assegnato un criterio di avviso predefinito, vedere la tabella nella sezione [criteri di avviso predefiniti](#default-alert-policies) .
 
-|<br/>|Governance dei dati|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri | 
+|<br/>|Governance dei dati|Prevenzione della perdita dei dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri | 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registri di controllo <br/> |         ||         |         |         |         |
 |Gestione dei casi <br/>|         |         |         |         |         |         |

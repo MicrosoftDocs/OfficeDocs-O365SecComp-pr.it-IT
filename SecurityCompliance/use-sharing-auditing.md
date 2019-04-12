@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo di Office 365 per determinare la modalità di utilizzo della condivisione nell'organizzazione. "
-ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219886"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813947"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Controllare la condivisione per identificare risorse condivise con utenti esterni
 
@@ -73,13 +73,13 @@ Un requisito comune per gli amministratori consiste nella creazione di un elenco
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Passaggio 1: cercare gli eventi di condivisione ed esportare i risultati in un file CSV
 
-Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo di Office 365 per la condivisione degli eventi. Per ulteriori informazioni (incluse le autorizzazioni necessarie) sulla ricerca nel registro di controllo, vedere [Search the audit log in the Office 365 &amp; Security Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo di Office 365 per la condivisione degli eventi. Per ulteriori informazioni (incluse le autorizzazioni necessarie) sulla ricerca nel registro di controllo, vedere [Search the audit log in the Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro del Centro sicurezza &amp; e conformità fare clic su **ricerca &amp; **e quindi su **Ricerca log di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su ricerca**log di controllo**di **ricerca**  > .
     
     Viene visualizzata la pagina di **ricerca del registro di controllo** . 
     
@@ -105,7 +105,7 @@ Il passaggio successivo consiste nel filtrare il CSV per gli eventi **SharingSet
   
 1. In Excel 2016 aprire una cartella di lavoro vuota.
     
-2. Fare clic sulla scheda **Dati**. 
+2. Fare clic sulla scheda **dati** . 
     
 3. Fare clic su **nuova query** \> **da file** \> **da CSV**.
     

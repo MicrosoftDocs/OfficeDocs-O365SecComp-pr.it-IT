@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare lo strumento di ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001019"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814067"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -44,7 +44,7 @@ Dopo aver eseguito una ricerca di contenuto, il numero di posizioni di contenuto
 
 Per accedere alla pagina **Ricerca contenuto** per eseguire ricerche e visualizzare in anteprima ed esportare i risultati della ricerca, un amministratore, un responsabile della conformità o un Manager di eDiscovery deve essere membro del gruppo di ruoli Gestione eDiscovery nel centro conformità & sicurezza. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
   
-1. Accedere a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere utilizzando l'indirizzo di posta elettronica e la password di Office 365.
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'indirizzo di posta elettronica e la password di Office 365.
     
 2. Fare clic su ricerca **contenuto** **ricerca** \> .
     
@@ -159,9 +159,9 @@ Per esportare i risultati della ricerca:
     
 Per istruzioni più dettagliate e suggerimenti per la risoluzione dei problemi, vedere:
   
-- [Esportare i risultati della Ricerca contenuto](export-search-results.md)
+- [Esportare i risultati di Ricerca contenuto](export-search-results.md)
     
-- [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
+- [Esportare un report di Ricerca contenuto](export-a-content-search-report.md)
     
   
 ## <a name="more-information-about-content-search"></a>Ulteriori informazioni sulla ricerca contenuto

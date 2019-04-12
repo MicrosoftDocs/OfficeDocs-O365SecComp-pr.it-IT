@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Office 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935271"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814017"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365
 
@@ -44,7 +44,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione di Office 365. 
     
@@ -64,7 +64,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Nel centro sicurezza &amp; e conformità, accedere a \> **Archivio**di **governance dei dati** .
+3. Nel centro sicurezza & Compliance, passare a **Data Governance** \> **Archive**.
     
     Viene visualizzato un elenco delle cassette postali nell'organizzazione e se la corrispondente cassetta postale di archiviazione è abilitata o disabilitata. 
     
@@ -85,7 +85,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
     
     ![L'elenco delle cassette postali con la cassetta postale di archiviazione abilitata](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Lasciare aperto il &amp; Centro sicurezza e conformità. Verrà utilizzato nel passaggio successivo.
+8. Lasciare aperto il Centro sicurezza & Compliance. Verrà utilizzato nel passaggio successivo.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Passaggio 2: creare nuovi tag di conservazione per i criteri di eliminazione e archiviazione
 
@@ -99,11 +99,11 @@ In questo passaggio verranno creati i tre tag di conservazione personalizzati de
     
 Per creare nuovi tag di conservazione, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) nell'organizzazione di Exchange Online.
   
-1. Nel centro sicurezza &amp; e conformità, fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic sul riquadro **amministratore** . 
+1. Nel centro sicurezza & Compliance, fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic sul riquadro **amministratore** . 
     
-2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Office 365 fare clic su interfaccia di **Amministrazione**e quindi su **Exchange**.
+2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365, fare clic su interfacce di **Amministrazione**, quindi su **Exchange**.
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot Visualizza l'interfaccia di amministrazione di Microsoft 365 con l'opzione interfaccia di amministrazione espansa ed Exchange selezionata.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Nell'interfaccia di amministrazione di Exchange, andare a **tag di conservazione** per la **gestione** \> della conformità
     
@@ -301,7 +301,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
     ```
 4. È possibile rieseguire il comando riportato nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito sia stato modificato.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Come viene calcolato il periodo di validità della conservazione? L'età di conservazione degli elementi della cassetta postale viene calcolata a partire dalla data di recapito o dalla data di creazione per gli elementi, ad esempio i messaggi Draft che non sono stati inviati ma che sono stati creati dall'utente. Quando Assistente cartelle gestite elabora gli elementi in una cassetta postale, applica una data di inizio e una data di scadenza a tutti gli elementi con tag di conservazione utilizzando l'azione di conservazione Elimina e consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una data di spostamento. 
     

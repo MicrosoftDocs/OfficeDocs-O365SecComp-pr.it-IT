@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479682"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814177"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
@@ -62,7 +62,7 @@ ms.locfileid: "31479682"
 - Attività di utenti e amministratori in Microsoft PowerApps
     
    
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel registro di controllo di Office 365.
   
@@ -147,7 +147,7 @@ Ecco la procedura per eseguire una ricerca nel log di controllo in Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Passaggio 1: eseguire una ricerca nel registro di controllo
 
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Utilizzare una sessione di esplorazione privata (non una sessione regolare) per accedere al centro sicurezza & Compliance perché in questo modo si eviterà che vengano utilizzate le credenziali a cui si è connessi. Per aprire una sessione di InPrivate Browsing in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra in incognito), premere CTRL + MAIUSC + N. 
@@ -466,7 +466,7 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |Messaggio inviato utilizzando le autorizzazioni Invia come  <br/> |SendAs  <br/> |Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.  <br/> |
 |Messaggio inviato utilizzando le autorizzazioni Invia per conto di  <br/> |SendOnBehalf  <br/> |Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.  <br/> |
 |Accesso delegato aggiornato alla cartella del calendario  <br/> |UpdateCalendarDelegation  <br/> |Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario fornisce a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.  <br/> |
-|Messaggio aggiornato  <br/> |Aggiorna  <br/> |Modifiche apportate a un messaggio o alle relative proprietà.  <br/> |
+|Messaggio aggiornato  <br/> |Aggiornamento  <br/> |Modifiche apportate a un messaggio o alle relative proprietà.  <br/> |
 |Utente che ha eseguito l'accesso alla cassetta postale  <br/> |MailboxLogin  <br/> |Accesso effettuato dall'utente alla propria cassetta postale.  <br/> |
 |nessuno  <br/> |UpdateInboxRules  <br/> |È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.  <br/> Per restituire le voci per le attività della regola di posta in arrivo, è necessario selezionare **Mostra risultati per tutte** le attività nell'elenco **attività** . Utilizzare le caselle Intervallo di date e l'elenco **utenti** per restringere i risultati della ricerca.  <br/> |
 ||||

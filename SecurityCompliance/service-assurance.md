@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999449"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813957"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & Compliance
 
@@ -53,7 +53,7 @@ Utilizzare la garanzia del servizio nel centro sicurezza & Compliance per accede
   
 È possibile accedere a Service Assurance tramite il Centro sicurezza & Compliance. Ecco come arrivarci.
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. 
     

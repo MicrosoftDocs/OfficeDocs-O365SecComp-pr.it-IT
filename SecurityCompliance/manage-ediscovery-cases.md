@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilizzare il Centro sicurezza & Compliance per creare eDiscovery stive e per accedere e gestire i casi di eDiscovery nell'organizzazione.
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000449"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814137"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -25,7 +25,7 @@ Un caso di eDiscovery consente di aggiungere membri a un caso, controllare i tip
   
 Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDiscovery nel centro sicurezza & compliance e Advanced eDiscovery.
   
-[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
+[Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso](manage-ediscovery-cases.md#step1_1)
   
 [Passaggio 2: creare un nuovo caso](manage-ediscovery-cases.md#step2_1)
   
@@ -45,7 +45,7 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
   
 [Optional Passaggio 10: riaprire un caso chiuso](manage-ediscovery-cases.md#reopencase_1)
   
-[Ulteriori informazioni](manage-ediscovery-cases.md#moreinfo_1)
+[Altre informazioni](manage-ediscovery-cases.md#moreinfo_1)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 <a name="step1_1"> </a>
@@ -73,7 +73,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate relativ
   
  **Per assegnare autorizzazioni di eDiscovery:**
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -94,7 +94,7 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate relativ
 
 Il passaggio successivo consiste nel creare un nuovo caso di eDiscovery. È necessario essere un membro del gruppo di ruoli Gestore di eDiscovery per creare casi di eDiscovery. Come spiegato in precedenza, dopo aver creato un nuovo caso nel centro sicurezza & Compliance, l'utente (e altri membri del caso) potranno accedere allo stesso caso in Advanced eDiscovery se l'organizzazione ha un abbonamento a Office 365 E5.
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -491,7 +491,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
     
     Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 <a name="moreinfo_1"> </a>
 
 - Esistono **limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.

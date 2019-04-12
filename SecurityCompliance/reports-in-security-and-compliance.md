@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: "Utilizzare il Centro sicurezza & Compliance per ottenere vari report per l'organizzazione di SharePoint Online ed Exchange Online, oltre ai report di Azure Active Directory.  "
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999059"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813917"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Report nel Centro sicurezza e conformità
 
@@ -37,7 +37,7 @@ Per visualizzare i report nel centro sicurezza e conformità di &, sono necessar
   
  **Per aprire la pagina Visualizza report nel centro sicurezza & Compliance:**
   
-1. Passare a [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports).
+1. Passare a [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
 2. Accedere a Office 365 utilizzando le credenziali per un account utente nell'organizzazione di Office 365.
     
@@ -55,7 +55,7 @@ Nella tabella seguente vengono descritti i report nella sezione **controllo** de
 |:-----|:-----|
 |**Report del registro di controllo di Office 365** <br/> |È possibile eseguire una ricerca nel registro di controllo di Office 365 per l'attività di amministratore e utente nell'organizzazione di Office 365. Il report contiene le voci utente e l'attività di amministratore in Exchange Online, SharePoint Online, OneDrive for business e Azure Active Directory, che è il servizio directory per Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> |
 |**Report di Azure AD** <br/> |Per cercare attività di accesso inusuali o sospette nell'organizzazione di Office 365, è possibile utilizzare i report di accesso e attività in Microsoft Azure. È inoltre possibile visualizzare gli eventi nel registro di controllo di Azure AD. Per visualizzare i report in Azure, è sufficiente fare clic su **Visualizza report di Azure ad**. Per ulteriori informazioni, vedere: <br/><br/>[Utilizzare la sottoscrizione gratuita di Azure Active Directory in Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Visualizzare i report di accesso e utilizzo](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
-|**Report sui controlli di Exchange** <br/> | È possibile utilizzare la funzionalità di controllo di Office 365 per verificare le modifiche apportate alla configurazione di Exchange Online da parte degli amministratori dell'organizzazione. Vengono inoltre registrate le modifiche apportate all'organizzazione di Exchange Online da un amministratore dei Data Center Microsoft o da un amministratore delegato. Per Exchange Online, la registrazione di controllo dell'amministratore è abilitata per impostazione predefinita, quindi non è necessario eseguire alcuna operazione per attivarla. Exchange Online fornisce anche la registrazione di controllo delle cassette postali per consentire l'accesso alle cassette postali da parte di utenti diversi dal proprietario della cassetta postale. È necessario abilitare la registrazione di controllo della cassetta postale per ogni cassetta postale per la quale si desidera tenere traccia di accesso non proprietario.  <br/>  Per la registrazione di controllo dell'amministratore e della cassetta postale, è possibile eseguire report di controllo per visualizzare le voci del log di controllo. È inoltre possibile esportare i log di controllo dell’amministratore e della cassetta postale, che vengono inviati all'utente entro 24 ore in un file XML allegato al messaggio di posta elettronica. <br/><br/>Per ulteriori informazioni sull’esportazione dei registri di controllo, vedere:  <br/><br/> [Esportare i log di controllo delle cassette postali](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Visualizzare ed esportare il registro di controllo dell'amministratore del datacenter](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Ricerca delle modifiche al gruppo di ruoli o ai log di controllo dell'amministratore](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Rapporti di controllo di Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
+|**Report sui controlli di Exchange** <br/> | È possibile utilizzare la funzionalità di controllo di Office 365 per verificare le modifiche apportate alla configurazione di Exchange Online da parte degli amministratori dell'organizzazione. Vengono inoltre registrate le modifiche apportate all'organizzazione di Exchange Online da un amministratore dei Data Center Microsoft o da un amministratore delegato. Per Exchange Online, la registrazione di controllo dell'amministratore è abilitata per impostazione predefinita, quindi non è necessario eseguire alcuna operazione per attivarla. Exchange Online fornisce anche la registrazione di controllo delle cassette postali per consentire l'accesso alle cassette postali da parte di utenti diversi dal proprietario della cassetta postale. È necessario abilitare la registrazione di controllo della cassetta postale per ogni cassetta postale per la quale si desidera tenere traccia di accesso non proprietario.  <br/>  Per la registrazione di controllo dell'amministratore e della cassetta postale, è possibile eseguire report di controllo per visualizzare le voci del log di controllo. È inoltre possibile esportare i log di controllo dell’amministratore e della cassetta postale, che vengono inviati all'utente entro 24 ore in un file XML allegato al messaggio di posta elettronica. <br/><br/>Per ulteriori informazioni sull’esportazione dei registri di controllo, vedere:  <br/><br/> [Esportazione dei log di controllo delle cassette postali](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Visualizzare ed esportare il registro di controllo dell'amministratore del datacenter](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Ricerca delle modifiche al gruppo di ruoli o ai log di controllo dell'amministratore](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Rapporti di controllo di Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
 ## <a name="supervisory-review-report"></a>Rapporto di revisione di superVisione
 

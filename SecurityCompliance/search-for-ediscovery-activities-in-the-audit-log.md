@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo di Office 365 per gli eventi che vengono registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000709"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814097"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di attività di eDiscovery nel registro di controllo di Office 365
 
@@ -42,7 +42,7 @@ Per ulteriori informazioni sulla ricerca nel registro di controllo di Office 365
 
 Al momento, è necessario eseguire alcune operazioni specifiche per visualizzare le attività di eDiscovery nel registro di controllo di Office 365. Ecco come fare.
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -184,5 +184,5 @@ Nella tabella seguente vengono descritte le proprietà incluse quando si fa clic
 |UserKey  <br/> |ID alternativo per l'utente identificato nella proprietà UserId. Per le attività di eDiscovery, il valore di questa proprietà è in genere identico a quello della proprietà UserId.  <br/> |
 |UserServicePlan  <br/> |La sottoscrizione di Office 365 utilizzata dall'organizzazione. Per le attività di eDiscovery, questa proprietà è in genere vuota.  <br/> |
 |UserType  <br/> |Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente.  <br/> 0 un utente normale. 2 un amministratore dell'organizzazione di Office 365. 3 un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. 4 un account di sistema. 5 un'applicazione. 6 un'entità di servizio. |
-|Version  <br/> |Indica il numero di versione dell'attività (identificata dalla proprietà Operation) registrata.  <br/> |
+|Versione  <br/> |Indica il numero di versione dell'attività (identificata dalla proprietà Operation) registrata.  <br/> |
 |Carico di lavoro  <br/> |Il servizio Office 365 in cui si è verificata l'attività. Per le attività di eDiscovery, il valore è **SecurityComplianceCenter**.  <br/> |
