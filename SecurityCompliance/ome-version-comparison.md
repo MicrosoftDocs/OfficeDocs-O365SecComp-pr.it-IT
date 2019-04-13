@@ -1,5 +1,5 @@
 ---
-title: Confronto delle versioni di crittografia dei messaggi di Office 365
+title: Confronto delle versioni di crittografia messaggi (OME) di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,17 +9,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Vengono illustrate le differenze tra le funzionalità fornite con diverse versioni della crittografia dei messaggi di Office 365 e il modo in cui i due continuano a funzionare insieme.
-ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: In questo articolo vengono descritte le differenze tra le funzionalità recapitate con diverse versioni della crittografia dei messaggi di Office 365 e il modo in cui i due continuano a funzionare insieme.
+ms.openlocfilehash: bb13208e2b630c8a6217b78b48a4cd3bb4b0de79
+ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341437"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31836840"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
-In questo articolo viene confrontata la crittografia dei messaggi legacy di Office 365 con le nuove funzionalità OME. Le nuove funzionalità sono una fusione e una versione più recente sia di OME che di Information Rights Management (IRM). Si tratterà anche del modo in cui i due possono coesistere nell'organizzazione di Office 365.
+Questo articolo consente di confrontare la crittografia dei messaggi di Office 365 (OME) legacy con le nuove funzionalità OME. Le nuove funzionalità sono una fusione e una versione più recente di OME e Information Rights Management (IRM). Sono delineate anche le caratteristiche uniche di distribuzione in GCC High. Si tratterà anche del modo in cui i due possono coesistere nell'organizzazione di Office 365.
 
 ||
 |:-----|
@@ -40,11 +40,11 @@ In questo articolo viene confrontata la crittografia dei messaggi legacy di Offi
 |*Fornire il supporto per la chiave personale (BYOK)*|Nessuna                |Nessuna               |BYOK supportato          |
 ||
 
-## <a name="advantages-of-using-the-new-ome-capabilities-over-legacy-ome"></a>Vantaggi dell'utilizzo delle nuove funzionalità OME su OME legacy
+## <a name="advantages-of-the-new-ome-capabilities-over-legacy-ome"></a>Vantaggi delle nuove funzionalità OME su OME legacy
 
 Le nuove funzionalità offrono i vantaggi seguenti:
 
-- Possibilità di utilizzare solo crittografia (che consente la collaborazione sicura), non inoltrare, nonché restrizioni personalizzate.
+- Possibilità di utilizzare solo crittografia (che consente la collaborazione sicura), non inoltrare e restrizioni personalizzate.
 - I mittenti possono inviare messaggi di posta elettronica crittografati con le nuove funzionalità manualmente da Outlook desktop, Outlook per Mac e Outlook sul Web client.
 - Gli utenti di Office 365 ricevono l'utilizzo di un'esperienza in linea nei client Outlook supportati. In alternativa, gli amministratori possono scegliere di mostrare ai destinatari di Office 365 un'esperienza di marca.
 - Gli account esterni a Office 365, ad esempio Gmail, Yahoo e gli account Microsoft, sono federati con il portale OME, che offre un'esperienza utente migliore per questi destinatari. Tutte le altre identità utilizzano un codice Pass una tantum per accedere ai messaggi crittografati.
@@ -52,23 +52,39 @@ Le nuove funzionalità offrono i vantaggi seguenti:
 - Gli amministratori possono revocare i messaggi di posta elettronica crittografati con le nuove funzionalità.
 - Le nuove funzionalità forniscono rapporti di utilizzo dettagliati tramite &amp; il Centro sicurezza e conformità.
 
+## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Caratteristiche esclusive della crittografia dei messaggi di Office 365 in una distribuzione ad alta GCC
+
+Se si prevede di utilizzare la crittografia dei messaggi di Office 365 in un ambiente GCC High, esistono alcune caratteristiche uniche relative all'esperienza del destinatario.
+
+### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati da GCC High a GCC High Recipients
+
+I mittenti possono crittografare manualmente i messaggi di posta elettronica in Outlook per PC e Mac e Outlook sul Web, oppure le organizzazioni possono configurare un criterio per crittografare i messaggi di posta elettronica utilizzando le regole del flusso del messaggio di Exchange.
+
+I destinatari all'interno di GCC High ricevono la stessa esperienza di lettura in linea in Outlook per PC e Mac e Outlook sul Web come tutti gli altri utenti di Office 365.
+
+### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Messaggi di posta elettronica crittografati da GCC High a destinatari non GCC alti
+
+I mittenti all'interno di GCC High possono inviare messaggi di posta elettronica crittografati all'esterno del limite alto GCC.
+
+Tutti i destinatari esterni a GCC High, compresi gli utenti di Office 365 commerciali, gli utenti di Outlook.com e altri utenti di altri provider di posta elettronica come Gmail e Yahoo, ricevono un messaggio di posta elettronica wrapper che reindirizza il destinatario al portale OME in cui il destinatario è in grado di leggere e Rispondi a un messaggio.
+
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coesistenza di OME legacy e nuove funzionalità nello stesso tenant
 
 È possibile utilizzare sia legacy OME che le nuove funzionalità nello stesso tenant. In qualità di amministratore, è possibile scegliere la versione di OME che si desidera utilizzare quando si creano le regole del flusso di posta.
 
-- Per specificare la versione legacy di OME, utilizzare l'azione della regola del flusso di posta di Exchange "Apply the previous version of OME".
-- Per specificare le nuove funzionalità, utilizzare l'azione della regola del flusso di posta di Exchange "Apply Office 365 Message Encryption and Rights Protection".
+- Per specificare la versione legacy di OME, utilizzare l'azione regola flusso di posta di Exchange **applicare la versione precedente di ome**.
+- Per specificare le nuove funzionalità, utilizzare l'azione della regola del flusso di posta di Exchange **applicare la crittografia dei messaggi di Office 365 e Rights Protection**.
 
-Gli utenti possono anche inviare manualmente la posta crittografata con le nuove funzionalità dal desktop di Outlook, Outlook per Mac e Outlook sul Web client.
+Gli utenti possono inviare manualmente messaggi di posta elettronica crittografati con le nuove funzionalità di Outlook desktop, Outlook per Mac e Outlook sul Web.
 
-## <a name="migrating-from-legacy-ome-to-the-new-capabilities"></a>Migrazione da OME legacy alle nuove funzionalità
+## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>Eseguire la migrazione da OME legacy alle nuove funzionalità
 
-Anche se entrambe le versioni di OME possono coesistere, si consiglia di modificare le regole del flusso di posta precedenti che utilizzano l'azione della regola "applica la versione precedente di OME" per utilizzare le nuove funzionalità specificando l'azione della regola del flusso di posta elettronica "applicare la crittografia dei messaggi di Office 365 e protezione dei diritti ". Per istruzioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Anche se entrambe le versioni di OME possono coesistere, è consigliabile modificare le regole del flusso di posta obsolete che utilizzano l'azione regola **applicano la versione precedente di ome** per utilizzare le nuove funzionalità. Update these rules to use the mail Flow Rule Action **Apply Office 365 Message Encryption and Rights Protection**. Per istruzioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-## <a name="getting-started-with-ome"></a>Guida introduttiva a OME
+## <a name="get-started-with-ome"></a>Introduzione a OME
 
-In genere, le nuove funzionalità OME sono abilitate automaticamente per l'organizzazione di Office 365. Se si è pronti per iniziare a utilizzare le nuove funzionalità OME all'interno dell'organizzazione, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md).
+In genere, le nuove funzionalità OME sono abilitate automaticamente per l'organizzazione di Office 365. Per ulteriori informazioni sulle nuove funzionalità OME all'interno dell'organizzazione, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md).
 
 La versione legacy di OME è abilitata automaticamente per l'organizzazione di Office 365 se è stata abilitata Azure Information Protection. In passato, la funzionalità OME Legacy ha funzionato anche se la protezione delle informazioni di Azure non è stata abilitata. Questo non è più il caso.
 
-Per iniziare a utilizzare OME legacy, se è stata abilitata Azure Information Protection, è sufficiente configurare le regole del flusso di posta che utilizzano l'azione della regola "applica la versione precedente di OME". Per istruzioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Per iniziare a utilizzare OME legacy, se è stata abilitata la protezione delle informazioni di Azure, è sufficiente configurare le regole del flusso di posta che utilizzano l'azione regola **applicano la versione precedente di ome**. Per istruzioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
