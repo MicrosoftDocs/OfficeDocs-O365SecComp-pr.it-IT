@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
+ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997272"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824435"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
@@ -31,9 +31,26 @@ La gestione del piano file fornisce funzionalità avanzate per la gestione di cr
 
 I requisiti per accedere al piano file sono due:
 - Un abbonamento a Office 365 Enterprise E5.
-- L’utente dispone di uno dei ruoli seguenti nel Centro sicurezza e conformità: 
+- L’utente dispone di uno dei ruoli seguenti nel Centro sicurezza e conformità:
     - Responsabile della conservazione
     - Responsabile della conservazione solo visualizzazione
+
+## <a name="default-retention-labels-and-label-policy"></a>Etichette di conservazione e criteri di etichetta predefiniti
+
+Se non sono presenti etichette conservazione nel Centro Sicurezza e Conformità, la prima volta in cui scegli **Piano file** nel riquadro di spostamento a sinistra, verrà creato un criterio di etichetta denominato **Criterio di pubblicazione di governance dei dati predefinito**. 
+
+Questo criterio di etichetta contiene tre etichette di conservazione:
+
+- **Procedura operativa**
+- **Business general**
+- **Accordo contrattuale**
+
+Queste etichette di conservazione vengono configurate solo per conservare il contenuto, non per eliminare il contenuto. Questo criterio di etichetta verrà pubblicato per l'intera organizzazione e può essere disattivato o rimosso. 
+
+È possibile stabilire chi ha aperto la gestione del piano file e avviato la first-run experience esaminando il log di controllo per le attività **Criteri di conservazione creati** e **Configurazione di conservazione creata per un criterio di conservazione**.
+
+> [!NOTE]
+> A causa di feedback di alcuni clienti, è stata rimossa la funzionalità che consente di creare le etichette di conservazione predefinite e i criteri di etichetta indicati in precedenza. Si vedranno solo questi criteri ed etichette se si utilizza la gestione piano file prima dell'11 aprile 2019.
 
 ## <a name="navigating-your-file-plan"></a>Esplorare il piano file
 
@@ -44,8 +61,8 @@ Si noti che le etichette di conservazione create all'esterno del piano file sara
 Nella tabella **etichette piano file** sono disponibili le seguenti informazioni e funzionalità aggiuntive:
 
 ### <a name="label-settings-columns"></a>Colonne impostazioni etichetta
- 
-- **In base a** identifica il tipo di trigger che avvierà il periodo di conservazione. I valori validi sono: 
+
+- **In base a** identifica il tipo di trigger che avvierà il periodo di conservazione. I valori validi sono:
     - Evento
     - Momento della creazione
     - Data ultima modifica
@@ -58,7 +75,7 @@ Nella tabella **etichette piano file** sono disponibili le seguenti informazioni
     - Conservare
     - Conservare ed eliminare
     - Eliminare
-- **Disposizione** identifica cosa succederà al contenuto alla fine del periodo di conservazione. I valori validi sono: 
+- **Disposizione** identifica cosa succederà al contenuto alla fine del periodo di conservazione. I valori validi sono:
     - null
     - Nessuna azione
     - Eliminazione automatica
