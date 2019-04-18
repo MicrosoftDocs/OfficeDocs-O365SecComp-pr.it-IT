@@ -14,23 +14,23 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Il 15 agosto 2018, verrà rimossa l'app per dispositivi mobili di Office 365 Message Encryption (OME) da Android e Apple Store. Per leggere i messaggi di posta elettronica e gli allegati crittografati con la versione precedente di OME sui telefoni Apple e Android, è necessaria l'app per dispositivi mobili di Office 365 Message Encryption Viewer. Oltre a rimuovere l'app del Visualizzatore OME, non vengono apportate altre modifiche alla versione precedente di OME.
-ms.openlocfilehash: 0aa8ef0f2610284c1e897290c3f337804d78185b
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 82f28249e6b9911faea866f5a3574b635e45156c
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936676"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901934"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>Obsoleto app di Office 365 Message Encryption Viewer
 
-Il 15 agosto 2018, verrà rimossa l'app per dispositivi mobili di Office 365 Message Encryption (OME) da Android e Apple Store. Per leggere i messaggi di posta elettronica e gli allegati crittografati con la versione precedente di OME sui telefoni Apple e Android, è necessaria l'app per dispositivi mobili di Office 365 Message Encryption Viewer. Oltre a rimuovere l'app del Visualizzatore OME, non vengono apportate altre modifiche alla versione precedente di OME.
+Il 15 agosto 2018, è stata rimossa l'app per dispositivi mobili di Office 365 Message Encryption (OME) da Android e Apple Stores. Per leggere i messaggi di posta elettronica e gli allegati crittografati con la versione precedente di OME sui telefoni Apple e Android, è necessaria l'app per dispositivi mobili di Office 365 Message Encryption Viewer. Oltre a rimuovere l'app del Visualizzatore OME, non vengono apportate altre modifiche alla versione precedente di OME.
   
-## <a name="changes-beginning-august-2018"></a>Modifiche all'inizio del 2018 agosto
+## <a name="changes-from-august-2018"></a>Modifiche apPortate dal 2018 agosto
 
-Come annunciato lo scorso settembre, è stata rilasciata una nuova versione della [crittografia dei messaggi di Office 365](https://aka.ms/ome2017) in modo che gli utenti possano inviare messaggi crittografati e protetti a chiunque all'interno o all'esterno dell'organizzazione senza il requisito dell'app per dispositivi mobili. Da allora, sono state aggiunte altre funzionalità: 
+Come annunciato il 2017 settembre, è stata rilasciata una nuova versione della [crittografia dei messaggi di Office 365](https://aka.ms/ome2017) in modo che gli utenti possano inviare messaggi crittografati e protetti a chiunque all'interno o all'esterno dell'organizzazione senza il requisito dell'app per dispositivi mobili. Da allora, sono state aggiunte altre funzionalità:
   
 - [Modello solo crittografato](https://aka.ms/encryptonly)
-    
+
 - [Controllo per la decrittografia degli allegati](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
 Con questa modifica, gli utenti non saranno più in grado di scaricare l'app per dispositivi mobili di Office 365 Message Encryption Viewer a partire dal 1 ° agosto. Di conseguenza, i destinatari di posta elettronica potrebbero non essere in grado di leggere i messaggi crittografati con la versione precedente di OME su alcuni dispositivi mobili Android e Apple. Tuttavia, saranno comunque in grado di leggere questi messaggi nei personal computer (tramite browser desktop). Gli utenti che hanno già scaricato l'app continueranno a essere in grado di usarlo.

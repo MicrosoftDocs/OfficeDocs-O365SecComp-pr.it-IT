@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilizzare il Centro sicurezza & compliance in Office 365 per abilitare le cassette postali di archiviazione per supportare i requisiti di conservazione, eDiscovery e mantenimento dei messaggi dell'organizzazione.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813967"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901944"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel centro sicurezza e conformità di &
   
@@ -37,7 +37,7 @@ Per abilitare o disabilitare le cassette postali di archiviazione, è necessario
   
 ## <a name="enable-an-archive-mailbox"></a>Abilitazione di una cassetta postale di archiviazione
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -68,7 +68,7 @@ Si noti che il criterio di archiviazione predefinito assegnato alle cassette pos
   
 Per disabilitare una cassetta postale di archiviazione:
   
-1. Passare a [https://protection.office.com](https://protection.office.com).
+1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -141,6 +141,6 @@ Eseguire il seguente comando per disabilitare la cassetta postale di archiviazio
     
   - [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Criteri di conservazione predefiniti in Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
