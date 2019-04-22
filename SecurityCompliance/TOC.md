@@ -13,6 +13,12 @@
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
 ## [Workshop di formazione per Chief Information Security Officer (CISO)](ciso-workshop.md)
+### [Modulo 1 - Presentazione sulla sicurezza informatica in Microsoft](ciso-workshop-module-1.md)
+### [Modulo 2 - Gestione della sicurezza](ciso-workshop-module-2.md)
+### [Modulo 3 - Gestione di identità e accessi](ciso-workshop-module-3.md)
+### [Modulo4a - Strategia di protezione dalle minacce, Parte I](ciso-workshop-module-4a.md)
+### [Modulo 4b - Strategia di protezione dalle minacce, Parte II](ciso-workshop-module-4b.md)
+### [Modulo 5 - Protezione delle informazioni](ciso-workshop-module-5.md)
 
 # Proteggere l'accesso a dati e servizi
 ## [Proteggere l'accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
