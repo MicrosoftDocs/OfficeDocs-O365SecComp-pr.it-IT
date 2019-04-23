@@ -254,7 +254,7 @@
 ### [Usare la Ricerca contenuto per cercare i dati di terze parti](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Usare la Ricerca contenuto nel flusso di lavoro di eDiscovery](use-content-search-in-ediscovery.md)
 ### [Verificare la query di Ricerca contenuto per gli errori](check-your-content-search-query-for-errors.md)
-### [Conservare i destinatari in Ccn per la ricerca contenuto](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [Conservare i destinatari in Ccn per la ricerca contenuto](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## Informazioni sulla Ricerca contenuto
 ### [Limiti per la Ricerca contenuto](limits-for-content-search.md)
 ### [Elementi parzialmente indicizzati in Ricerca contenuto](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Aumentare la quota degli Elementi recuperabili per le cassette postali con blocchi](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Mantenere Ccn e i destinatari del gruppo di distribuzione espanso](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Advanced eDiscovery (anteprima) in Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Note sulla versione](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [Statistiche della ricerca](compliance20/search-statistics.md)
 #### [Aggiungere i risultati della ricerca a un set di lavoro](compliance20/add-data-to-working-set.md)
 
+### [Gestire i set di lavoro](compliance20/managing-working-sets.md)
+#### [Caricare dati non Office 365 in un set di lavoro](compliance20/load-non-office365-data.md)
+#### [Aggiungere dati a un altro set di lavoro](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [Gestire i set caricati](compliance20/manage-load-sets.md)
+
 ### [Esaminare i dati del caso](compliance20/reviewing-data-in-working-set.md)
 #### [Visualizzare i documenti in un set di lavoro](compliance20/view-documents-in-working-set.md)
 #### [Eseguire query sui dati in un set di lavoro](compliance20/working-set-search.md)
-#### [Gestire i set di lavoro](compliance20/managing-working-sets.md)
-#### [Aggiungere dati a un altro set di lavoro](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [Gestire i set caricati](compliance20/manage-load-sets.md)
-#### [Caricare dati non Office 365 in un set di lavoro](compliance20/load-non-office365-data.md)
 #### [Aggiungere tag ai documenti in un set di lavoro](compliance20/tagging-documents.md)
 
 ### [Analizzare i dati del caso](compliance20/analyzing-data-in-working-set.md)
@@ -579,7 +581,6 @@
 ### [Intelligence del flusso di posta in Office 365](mail-flow-intelligence-in-office-365.md)
 ## Blocco delle cassette postali
 ### [Creare un blocco per controversia legale](create-a-litigation-hold.md)
-### [Mantenere Ccn e i destinatari del gruppo di distribuzione espanso per eDiscovery](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [Applicare un blocco sul posto a una cassetta postale eliminata temporaneamente](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [Quarantena](quarantine.md)
 ### [Trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md)
