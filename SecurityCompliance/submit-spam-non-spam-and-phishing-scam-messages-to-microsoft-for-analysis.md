@@ -3,7 +3,7 @@ title: Invio di messaggi di posta indesiderata e non e tentativi di phishing a M
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +14,14 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958677"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
+# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
 Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata o messaggi di phishing nella cartella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché sono contrassegnati come posta indesiderata. La correzione dei filtri per la posta indesiderata è sempre più accurata. L'utente e gli utenti possono aiutare questo processo inviando messaggi di posta indesiderata negativi e falsi positivi a Microsoft per l'analisi. Un "falso negativo" è un messaggio di posta indesiderata che avrebbe dovuto essere ma non è stato identificato come posta indesiderata. Un "falso positivo" è un messaggio di posta elettronica legittimo che è stato erroneamente identificato come posta indesiderata. 
   
@@ -33,11 +33,11 @@ Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi d
 
 Se si riceve un messaggio che passa attraverso i filtri per la posta indesiderata e che deve essere classificato come posta indesiderata o phishing, è possibile inviare il messaggio "falso negativo" ai team di analisi di posta inDesiderata e Microsoft Phishing Analysis, a seconda dei casi. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio, se soddisfano i criteri di classificazione. 
   
-Per ulteriori impostazioni di posta indesiderata applicabili all'intera organizzazione, vedere [Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). In questo articolo sono contenuti suggerimenti che consentono di evitare falsi negativi.
+Per ulteriori impostazioni di posta indesiderata applicabili all'intera organizzazione, vedere [Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md). In questo articolo sono contenuti suggerimenti che consentono di evitare falsi negativi.
   
 È possibile inviare messaggi di posta indesiderata nei modi seguenti:
   
-- Per gli utenti di Outlook e Outlook sul Web, utilizzare il componente aggiuntivo segnala messaggio per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [Enable the report Message Add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). 
+- Per gli utenti di Outlook e Outlook sul Web, utilizzare il componente aggiuntivo segnala messaggio per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [Enable the report Message Add-in](enable-the-report-message-add-in.md). 
         
 - È inoltre possibile utilizzare la posta elettronica per inviare messaggi a Microsoft che devono essere classificati come indesiderati o truffe di phishing, come descritto nella procedura seguente.
     
@@ -66,7 +66,7 @@ Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:
 
 Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio "falso positivo" al team di analisi di posta inDesiderata di Microsoft. Gli analisti valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio.
   
-Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [come garantire che un messaggio non venga contrassegnato come posta](https://go.microsoft.com/fwlink/p/?LinkId=534224)indesiderata. Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
+Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [come garantire che un messaggio non venga contrassegnato come posta](prevent-email-from-being-marked-as-spam.md)indesiderata. Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
   
 È possibile inviare messaggi non di posta indesiderata nei modi seguenti:
   
@@ -82,7 +82,7 @@ Gli amministratori possono esaminare altre informazioni sulle impostazioni di po
     
   - Gli utenti possono rilasciare i propri messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi tramite i seguenti canali: 
     
-  - Interfaccia utente EAC. Per ulteriori informazioni, vedere [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+  - Interfaccia utente EAC. Per ulteriori informazioni, vedere [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
     
   - Messaggi di notifica di posta indesiderata utente finale (se abilitati dall'amministratore). 
     
@@ -118,10 +118,10 @@ La valutazione della posta indesiderata è un processo continuo applicabile a pr
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="sectionSection4"> </a>
 
-[Protezione antispam e antimalware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
   
-[Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](prevent-email-from-being-marked-as-spam.md)
   
-[Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md)
   
 

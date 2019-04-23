@@ -3,7 +3,7 @@ title: ReCapito dinamico e anteprima con allegati sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere reCapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958567"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>ReCapito dinamico e anteprima con allegati sicuri ATP di Office 365
 
@@ -81,4 +81,4 @@ Esistono alcuni scenari in cui il reCapito dinamico non è supportato. Tra le ca
 
 - Messaggi crittografati con [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
-Nei casi in cui il reCapito dinamico non è supportato, gli allegati sicuri di ATP non analizzeranno i messaggi di posta elettronica. Tuttavia, a seconda del modo in cui vengono configurati i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) , verranno controllati gli URL nei messaggi di posta elettronica (e nei file di Office).
+- Nei casi in cui il reCapito dinamico non è supportato, gli allegati sicuri di ATP non analizzeranno i messaggi di posta elettronica. Tuttavia, la distribuzione dei messaggi di posta elettronica con allegati che contengono URL verrà controllata, a seconda del modo in cui sono configurati i [criteri collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) . In questi casi, vengono controllati gli URL nei messaggi di posta elettronica e nei file di Office.

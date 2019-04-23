@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Utilizzare la ricerca contenuto nel centro sicurezza e conformità di & per cercare le cassette postali, i siti di SharePoint Online e OneDrive for business. '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958277"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Eseguire una ricerca contenuto nel Centro sicurezza e conformità
 
@@ -45,9 +45,9 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
   
 [Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Modificare una ricerca](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Riprovare la ricerca](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -69,7 +69,7 @@ Ricerca contenuto è un nuovo strumento di ricerca di eDiscovery con nuove funzi
     
     Vedere la sezione Suggerimenti per la ricerca di contenuto nei gruppi di Office 365 e Microsoft teams. 
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
@@ -209,7 +209,7 @@ Inoltre, sono supportati i seguenti tipi di contenitori di file. È possibile vi
     
 - . gzip
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Aggiornare i risultati della ricerca
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Quando si aggiornano i risultati di una ricerca di contenuto esistente, la query
     
     Viene visualizzato un messaggio di stato che indica che è in corso il recupero dei risultati. Quando la ricerca è completata, le informazioni aggiornate vengono visualizzate in **Risultati** nel riquadro dei dettagli. Si noti che la data nel campo **Cercato il** nel riquadro dei dettagli viene aggiornata alla data e ora correnti. Per aggiornare le informazioni nell'elenco delle ricerche di contenuto, fare ****![clic su Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif)l'icona Aggiorna.
     
-[Inizio pagina](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Modificare una ricerca
 <a name="edit"> </a>
@@ -265,7 +265,8 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
  
 [Microsoft teams e gruppi di Office 365](#microsoft-teams-and-office-365-groups)
   
-[OneDrive for Business](#onedrive-for-business)
+
+  [OneDrive for Business](#onedrive-for-business)
   
 [Query di ricerca](#search-queries)
   
@@ -273,7 +274,7 @@ Di seguito vengono fornite ulteriori informazioni sulle ricerche di contenuto.
   
 [Varie](#miscellaneous)
   
-[Inizio pagina](#before-you-begin)
+[Return to top](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Limiti e prestazioni
   

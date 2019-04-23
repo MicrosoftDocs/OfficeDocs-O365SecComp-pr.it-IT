@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 550f37ad4aa8af9e6bc1d3fd8b799c72c37f2067
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958557"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -50,7 +50,7 @@ I criteri di superVisione possono assistere il monitoraggio delle comunicazioni 
 
 ### <a name="supervision-policy"></a>Criteri di superVisione
 
-Verranno creati i criteri di supervisione nel centro sicurezza & Compliance. Questi criteri definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specifica chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli revisione di superVisione possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina di superVisione sotto la governance dei dati nel centro sicurezza & Compliance Office 365.
+Verranno creati i criteri di supervisione nel centro conformità. Questi criteri definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specifica chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli revisione di superVisione possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina di superVisione nel centro conformità.
 
 ### <a name="supervised-users"></a>Utenti controllati
 
@@ -62,7 +62,7 @@ Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a esegu
 
 ### <a name="reviewers"></a>Revisori
 
-Quando si crea un criterio di supervisione, si determinerà anche chi eseguirà le revisioni dei messaggi degli utenti controllati. Nei criteri si utilizzeranno gli indirizzi di posta elettronica degli utenti per identificare gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate.
+Quando si crea un criterio di supervisione, si determinerà anche chi eseguirà le revisioni dei messaggi degli utenti controllati. Nei criteri si utilizzeranno gli indirizzi di posta elettronica degli utenti per identificare gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate. Tutti i revisori devono disporre di cassette postali ospitate in Exchange Online.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppi per gli utenti e i revisori controllati
 
@@ -129,7 +129,7 @@ Ogni riga di parole immesse verrà applicata separatamente (è necessario applic
   
 ##### <a name="entering-multiple-conditions"></a>Immissione di più condizioni
 
-Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che siano soddisfatte per l'applicazione del criterio, a meno che non si immetta un'eccezione. Si supponga, ad esempio, che sia necessario creare un criterio che dovrebbe essere applicato se un messaggio contiene la parola "Trade" ed è maggiore di 2MB. Tuttavia, se il messaggio contiene anche le parole "apProvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
+Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che siano soddisfatte per l'applicazione del criterio, a meno che non si immetta un'eccezione. Si supponga, ad esempio, che sia necessario creare un criterio che dovrebbe essere applicato se un messaggio contiene la parola "Trade" ed è superiore a 2 MB. Tuttavia, se il messaggio contiene anche le parole "apProvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
   
 - Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
 
@@ -139,7 +139,7 @@ Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme
 
 #### <a name="review-percentage"></a>Percentuale di Revisione
 
-È possibile specificare una percentuale di tutte le comunicazioni disciplinate da un criterio di supervisione se si desidera ridurre la quantità di contenuto da rivedere. Selezioneremo casualmente la quantità di contenuto dalla percentuale totale corrispondente alle condizioni scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile immettere **100%** in un criterio di supervisione.
+Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di supervisione. Selezioneremo casualmente la quantità di contenuto dalla percentuale totale corrispondente alle condizioni scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile immettere **100%** in un criterio di supervisione.
 
 ## <a name="monitoring--managing"></a>Monitoraggio della gestione di &
 
@@ -147,7 +147,7 @@ Monitorare i risultati dei criteri di supervisione e applicare un tag di risoluz
 
 ### <a name="supervision-policy-dashboard"></a>Dashboard criteri di superVisione
 
-Il modo più semplice per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso consiste nell'utilizzare il dashboard dei criteri di supervisione. Questo dashboard consente ai revisori di visualizzare rapidamente gli elementi che devono essere esaminati, intervenire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. è possibile accedere al dashboard dei criteri di supervisione nel centro conformità di Office 365 **** > Security & per la supervisione*del criterio* > personalizzato**aperto**.
+Il modo più semplice per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso consiste nell'utilizzare il dashboard dei criteri di supervisione. Questo dashboard consente ai revisori di visualizzare rapidamente gli elementi che devono essere esaminati, intervenire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro **** > conformità al momento dell' > **apertura**del*criterio personalizzato*.
 
 #### <a name="dashboard-home"></a>Home dashboard
 
@@ -179,11 +179,11 @@ La scheda **elementi risolti** è la posizione in cui i revisori possono visuali
 
 Se i revisori preferiscono non utilizzare il dashboard di supervisione in Office 365, dispongono anche di altre opzioni per la revisione e la gestione degli elementi raccolti dai criteri di supervisione.
 
-#### <a name="outlook-on-the-web"></a>Outlook sul web
+#### <a name="outlook-on-the-web"></a>Outlook sul Web
 
-Gli utenti designati come revisori in un criterio di supervisione possono utilizzare Outlook sul Web per esaminare e risolvere gli elementi di supervisione. Il componente aggiuntivo di superVisione viene installato automaticamente in Outlook sul Web per tutti i revisori specificati nel criterio. Non è necessaria alcuna configurazione aggiuntiva da parte dell'organizzazione per le cartelle condivise dei criteri di supervisione per essere disponibili per i revisori configurati.
+Gli utenti designati come revisori in un criterio di supervisione possono utilizzare Outlook sul Web per esaminare e risolvere gli elementi di supervisione. Il componente aggiuntivo di superVisione viene installato automaticamente in Outlook sul Web per tutti i revisori specificati nel criterio. Non è necessaria alcuna configurazione aggiuntiva per le cartelle condivise dei criteri di supervisione per essere disponibili per i revisori configurati.
 
-Tramite Outlook sul Web, i revisori possono:
+Con Outlook sul Web, i revisori possono:
 
 - Visualizzare gli elementi filtrati in base allo stato conforme, non conforme, discutibile e risolto
 - Contrassegnare un singolo elemento come conforme, non conforme, discutibile o risolto. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
@@ -194,7 +194,7 @@ Tramite Outlook sul Web, i revisori possono:
 
 Per esaminare le comunicazioni identificate da un criterio di supervisione, i revisori possono anche utilizzare il componente aggiuntivo di superVisione per Microsoft Outlook. Tuttavia, i revisori devono eseguire alcuni passaggi per installarlo nella versione desktop di Outlook. Per istruzioni dettagliate sull'installazione del componente aggiuntivo per la superVisione per Outlook, vedere [Configure Supervision Policies](configure-supervision-policies.md).
 
-Utilizzando Outlook, i revisori possono:
+Con Outlook, i revisori possono:
 
 - Visualizzare gli elementi filtrati in base allo stato conforme, non conforme, discutibile e risolto
 - Contrassegnare un singolo elemento come conforme, non conforme, discutibile o risolto. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
@@ -206,12 +206,12 @@ Utilizzando Outlook, i revisori possono:
 Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione a livello di criteri e revisori. Per ogni criterio, è anche possibile visualizzare le statistiche in tempo reale sullo stato corrente dell'attività di revisione. È possibile utilizzare i report di supervisione per:
   
 - Verificare che i criteri funzionino come previsto.
-- Informazioni su quante comunicazioni vengono identificate per la revisione.
+- Informazioni su quante comunicazioni sono identificate per la revisione.
 - Informazioni su quante comunicazioni non sono conformi e quali passano la revisione. Queste informazioni consentono di decidere se ottimizzare i criteri o modificare il numero di revisori.
 
 ### <a name="view-the-supervision-report"></a>Visualizzare il report di superVisione
 
-1. Accedere al [Centro sicurezza e conformità di &](https://protection.office.com/) utilizzando le credenziali per un account di amministratore nell'organizzazione di Office 365 che disponga delle autorizzazioni per visualizzare i report di supervisione.
+1. Accedere al [centro conformità](https://compliance.microsoft.com) con le credenziali di un account di amministratore dell'organizzazione che disponga delle autorizzazioni per visualizzare i report di supervisione.
 2. Andare al **Dashboard** o alla supervisione di **report** \> . **** Verrà visualizzato un widget di Reporting di supervisione con un riepilogo delle attività correnti dei criteri di supervisione.
 3. Selezionare il **** widget di supervisione per aprire la pagina del rapporto dettagliato.
 
@@ -220,7 +220,7 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
   
 ### <a name="how-to-use-the-report"></a>Come utilizzare il report
 
-Quando un criterio di supervisione identifica un messaggio di comunicazione per la revisione, la posta elettronica viene recapitata alla cartella di superVisione del revisore in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Questo rapporto elenca il nome di ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione.
+Quando un criterio di supervisione identifica un messaggio di comunicazione per la revisione, la posta elettronica viene recapitata alla cartella di superVisione del revisore in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Questo rapporto elenca ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione.
   
 Utilizzare il report per:
   
@@ -249,7 +249,7 @@ Di seguito viene indicato un guasto dei valori che è possibile visualizzare nel
 
 In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui un criterio di supervisione è stato modificato o aggiornato. I criteri di superVisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La prova delle procedure di supervisione può essere dimostrata con una cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione.
 
-Le attività dei criteri di supervisione seguenti sono controllate e possono essere visualizzate utilizzando i log di controllo di Office 365:
+Le attività dei criteri di supervisione seguenti sono controllate e rese disponibili nei registri di controllo di Office 365:
 
 |**Attività**|**Comandi associati**|
 |:-----|:-----|
@@ -258,7 +258,7 @@ Le attività dei criteri di supervisione seguenti sono controllate e possono ess
 | Eliminazione di un criterio| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
 | Visualizzazione di un criterio | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
-I controlli possono essere recuperati utilizzando la funzione di ricerca del registro di controllo unificato o utilizzando il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
+Le attività di controllo vengono visualizzate con la funzione di ricerca del registro di controllo unificato o con il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 
 Ad esempio, nell'esempio seguente vengono restituite le attività per tutte le attività di revisione di supervisione (criteri e regole) ed elenchi di informazioni dettagliate per ogni:
 

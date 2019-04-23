@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilizzare il Centro sicurezza & compliance in Office 365 per abilitare le cassette postali di archiviazione per supportare i requisiti di conservazione, eDiscovery e mantenimento dei messaggi dell'organizzazione.
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958307"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel centro sicurezza e conformità di &
   
@@ -37,7 +37,7 @@ Per abilitare o disabilitare le cassette postali di archiviazione, è necessario
   
 ## <a name="enable-an-archive-mailbox"></a>Abilitazione di una cassetta postale di archiviazione
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
@@ -68,7 +68,7 @@ Si noti che il criterio di archiviazione predefinito assegnato alle cassette pos
   
 Per disabilitare una cassetta postale di archiviazione:
   
-1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
