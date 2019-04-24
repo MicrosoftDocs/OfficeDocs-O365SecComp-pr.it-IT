@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Utilizzare uno script di PowerShell per creare una ricerca eDiscovery sul posto in Exchange online in base a una ricerca creata nel centro sicurezza & Compliance. '
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263798"
 ---
-# <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilizzare la ricerca di contenuto nel flusso di lavoro di eDiscovery
+# <a name="use-content-search-in-your-ediscovery-workflow"></a>Usare Ricerca contenuto nel flusso di lavoro di eDiscovery
 
 La funzionalità di ricerca contenuto nel centro sicurezza & Compliance consente di effettuare una ricerca in tutte le cassette postali dell'organizzazione. A differenza di eDiscovery sul posto in Exchange Online (dove è possibile effettuare ricerche fino a 10.000 cassette postali), non esistono limiti per il numero di cassette postali di destinazione in una singola ricerca. Per gli scenari che richiedono di eseguire ricerche a livello dell'intera organizzazione, è possibile utilizzare Ricerca contenuto per effettuare ricerche in tutte le cassette postali. È quindi possibile utilizzare le funzionalità per i flussi di lavoro di eDiscovery sul posto per eseguire altre attività relative a eDiscovery, come la conservazione delle cassette postali e l'esportazione dei risultati di ricerca. Ad esempio, si supponga di dover effettuare una ricerca in tutte le cassette postali per identificare responsabili specifici di un caso legale. È possibile utilizzare la ricerca contenuto nel centro sicurezza & Compliance per eseguire una ricerca in tutte le cassette postali dell'organizzazione per identificare quelle che rispondono al caso. Successivamente, è possibile utilizzare l'elenco delle cassette postali del custode come cassette postali di origine per una ricerca eDiscovery sul posto in Exchange Online. eDiscovery sul posto consente, inoltre, di abilitare una conservazione per tali cassette postali di origine, copiare i risultati della ricerca in una cassetta postale di individuazione ed esportare i risultati della ricerca.
   

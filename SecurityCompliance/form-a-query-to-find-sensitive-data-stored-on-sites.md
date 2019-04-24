@@ -15,13 +15,13 @@ search.appverid:
 - MET150
 description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
 ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255540"
 ---
-# <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per individuare dati riservati memorizzati nei siti
+# <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per trovare i dati sensibili archiviati nei siti
 
 Gli utenti memorizzano spesso dati riservati, ad esempio il numero della carta di credito, il numero di previdenza sociale o il codice fiscale e con il tempo possono esporre l'organizzazione al rischio di perdita di tali dati. I documenti archiviati nei siti, inclusi i siti di OneDrive for business, possono essere condivisi con utenti esterni all'organizzazione che non devono avere accesso alle informazioni. Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
   

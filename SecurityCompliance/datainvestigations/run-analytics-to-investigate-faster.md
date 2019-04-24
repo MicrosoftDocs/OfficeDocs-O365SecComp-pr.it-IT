@@ -1,5 +1,5 @@
 ---
-title: Eseguire analisi per analizzare più velocemente
+title: Eseguire analisi per velocizzare le indagini
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257614"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>Eseguire analisi per analizzare più velocemente
+# <a name="run-analytics-to-investigate-faster"></a>Eseguire analisi per velocizzare le indagini
 
 Quando un insieme Evidence è di grandi dimensioni, può essere difficile rivederle tutte. Un insieme di evidenze spesso include più copie dello stesso tipo o di messaggi di posta elettronica o documenti simili. Indagini sui dati (Preview) fornisce una serie di strumenti di analisi che consentono di ridurre il volume dei documenti che devono essere esaminati senza perdita di informazioni. Per ulteriori informazioni su queste funzionalità, vedere:
 

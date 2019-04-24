@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
 ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256984"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
   
@@ -93,10 +93,10 @@ Nella tabella seguente sono riportate le azioni delle cassette postali attualmen
 |Creazione    |Creazione       | HardDelete        |
 |HardDelete    |HardDelete        |MoveToDeletedItems       |
 |MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
-|SendAs    |SendAs      |    Aggiorna     |
+|SendAs    |SendAs      |    Aggiornamento     |
 |SendOnBehalf    |SendOnBehalf       |UpdateCalendarDelegation        |
 |SoftDelete     |SoftDelete      | UpdateFolderPermissions        |
-|Aggiorna    |Aggiorna       |UpdateInboxRules         |
+|Aggiornamento    |Aggiornamento       |UpdateInboxRules         |
 |UpdateCalendarDelegation    | UpdateFolderPermissions        |         |
 |UpdateFolderPermissions     | UpdateInboxRules        |         |
 |UpdateInboxRules     |         |         |
@@ -268,7 +268,7 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
   
 Nella tabella seguente sono riepilogate le azioni che vengono controllate per ogni tipo di accesso utente. Nella tabella, un asterisco ( **\*** ) indica che l'azione è registrata per impostazione predefinita. Un **No** indica che non è possibile registrare un'azione per il tipo di accesso. Si noti che un amministratore a cui è stata assegnata l'autorizzazione di accesso completo per la cassetta postale di un utente viene considerato un utente delegato. 
   
-|**Azione**|**Descrizione**|**Amministratore**|**Delegato**|**Proprietario**|
+|**Azione**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copia** <br/> |Messaggio copiato in un'altra cartella.  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
 |**Creazione** <br/> |Elemento creato nella cartella Calendario, Contatti, Note o Attività nella cassetta postale; ad esempio, viene creata una nuova convocazione di riunione. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.  <br/> |Sì\*  <br/> |Sì\*  <br/> |Sì  <br/> |
@@ -289,7 +289,7 @@ Nella tabella seguente sono riepilogate le azioni che vengono controllate per og
 > [!NOTE]
 > <sup>\*</sup>Controllo per impostazione predefinita quando è abilitato il controllo delle cassette postali predefinito per il tipo di accesso. <br/><br/>  <sup>\*\*</sup>I record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolida Viene generato un record di controllo per l'accesso a una singola cartella entro un intervallo di tempo di 24 ore. <br/><br/> L'azione MessageBind è stata deprecata in Exchange Online e non è più disponibile per l'aggiunta all'elenco delle azioni delle cassette postali per il tipo di accesso di amministratore. <sup> \* \* \* </sup> 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per impostazione predefinita, i record del registro di controllo della cassetta postale vengono conservati per 90 giorni e quindi eliminati. È possibile modificare il limite di validità dei record del registro di controllo utilizzando il comando **Set-Mailbox-AuditLogAgeLimit** in PowerShell di Exchange Online. Si noti che l'aumento del limite di validità predefinito dei record di controllo delle cassette postali non influisce sul limite di validità di 90 giorni per i record del registro di controllo della cassetta postale nel registro di controllo di Microsoft 365 Ad esempio, se si aumenta il limite di validità dei record del registro di controllo delle cassette postali a 365 giorni, il record di controllo della cassetta postale sarà ricercabile nel registro di controllo di Microsoft 365 solo 90 giorni dopo l'evento corrispondente. In questo caso, è necessario eseguire una ricerca nel registro di controllo della cassetta postale dell'utente per i record precedenti a 90 giorni. Per ulteriori informazioni sulla ricerca dei registri di controllo delle cassette postali, vedere [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog).
 

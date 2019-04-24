@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul flusso di posta nel centro sicurezza e conformità di &
+title: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252110"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni sul flusso di posta nel centro sicurezza e conformità di &
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
 > [!NOTE]
 > Le funzionalità descritte in questo argomento non sono state distribuite in tutte le organizzazioni di Office 365 e sono soggette a modifiche.

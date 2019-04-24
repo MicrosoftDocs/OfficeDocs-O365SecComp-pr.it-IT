@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
 ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258944"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -170,7 +170,7 @@ Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale 
 
 Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati. Come spiegato in precedenza, è necessario assegnare il ruolo di esportazione delle cassette postali di importazione in Exchange Online per eliminare i messaggi utilizzando la procedura seguente.
   
-1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Eseguire il comando riportato di seguito:
     

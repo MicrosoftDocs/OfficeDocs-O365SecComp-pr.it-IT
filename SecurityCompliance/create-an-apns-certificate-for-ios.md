@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: Per gestire i dispositivi iOS come iPad e iPhone in gestione dispositivi mobili per Office 365, eseguire la procedura seguente per creare un certificato di APNs.
 ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258628"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Creare un certificato APNs per i dispositivi iOS
 
@@ -33,41 +33,41 @@ A tale scopo, seguire i passaggi del collegamento **set up** nella pagina del po
   
 ![Configurare i passaggi necessari e consigliati per la gestione dei dispositivi mobili](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
-1. Accanto a **Configure a APNs certificate for iOS Devices**, selezionare **set up**.
+1. Next to **Configure a APNs Certificate for iOS devices**, select **Set up**.
     
-2. Selezionare **Scarica il file CSR** e salvare la richiesta di firma del certificato in un punto qualsiasi del computer che si ricorderà. 
+2. Select **Download your CSR file** and save the Certificate signing request to a somewhere on your computer that you'll remember. 
     
     ![Finestra di dialogo Installa certificato APN](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
   
-3. Selezionare **Avanti**.
+3.  Select **Next**. 
     
-4. Creare un certificato APN.
+4.  Create an APN certificate.
     
-  - Selezionare il **portale Apple APNs** per aprire il portale Apple Push Certificates. 
+  - Select **Apple APNS Portal** to open the Apple Push Certificates Portal.  
     
     ![Installare la finestra di dialogo CERT notifica APN con il portale di APNS Apple selezionato](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
   
-  - Accedere con un ID Apple.
+  - Sign in with an Apple ID.
     
     > [!IMPORTANT]
-    > Utilizzare un ID Apple aziendale associato a un account di posta elettronica che rimarrà nell'organizzazione anche se l'utente che gestisce l'account parte. Salvare questo ID perché è necessario utilizzare lo stesso ID quando è il momento di rinnovare il certificato. 
+    > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate. 
   
-  - Selezionare **Create a certificate** e accettate le condizioni per l' **utilizzo**.
+  - Select **Create a Certificate** and accept the **Terms of Use**.
     
-  - **Passare** alla richiesta di firma del certificato scaricata nel computer da Office 365 e selezionare **carica**.
+  - **Browse** to the Certificate signing request you downloaded to your computer from Office 365 and select **Upload**.
     
-  - **Scaricare** il certificato APN creato dal portale Apple Push certificate nel computer in uso. 
+  - **Download** the APN certificate created by the Apple Push Certificate Portal to your computer. 
     
     > [!TIP]
-    > Se si verificano problemi durante il download del certificato, aggiornare il browser. 
+    > If you're having trouble downloading the certificate, refresh your browser. 
   
-5. Tornare a Office 365 e selezionare **Avanti** per accedere alla pagina **carica APNs certificate** . 
+5. Go back to Office 365 and select **Next** to get to the **Upload APNS certificate** page. 
     
-6. Passare al certificato APN scaricato dal portale Apple Push Certificates.
+6.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
     
     ![Fare clic sul pulsante Sfoglia per selezionare APNS Cert scaricato da Apple](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Selezionare **fine**.
+7. Select **Finish**.
     
 Tornare a **Security &amp; Compliance Center** \> **Security Policies** \> **gestione** \> dispositivi **gestire le impostazioni** per completare l'installazione. 
   

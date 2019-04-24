@@ -1,5 +1,5 @@
 ---
-title: Le funzionalità di anti-phishing ATP in Office 365
+title: Funzionalità di anti-phishing ATP in Office 365
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: ATP anti-phishing è parte di Office 365 Advanced Threat Protection. ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. Tutti i messaggi sono soggetti a una vasta gamma di modelli di apprendimento automatico addestrati a rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da vari attacchi di rappresentazione di dominio e utente.
 ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249566"
 ---
-# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Le funzionalità di anti-phishing ATP in Office 365
+# <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funzionalità di anti-phishing ATP in Office 365
 
 ATP anti-phishing è parte di [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. Tutti i messaggi sono soggetti a una vasta gamma di modelli di apprendimento automatico addestrati a rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da vari attacchi di rappresentazione di dominio e utente. ATP anti-phishing protegge l'organizzazione in base a criteri di polizia impostati dagli amministratori globali o di sicurezza di Office 365.
   

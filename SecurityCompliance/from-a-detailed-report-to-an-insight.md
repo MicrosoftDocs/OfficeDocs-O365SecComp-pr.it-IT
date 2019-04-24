@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come passare da un report dettagliato a un'intuizione con azioni consigliate nel centro &amp; sicurezza e conformità.
 ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255312"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procedura: da un report dettagliato alle informazioni dettagliate
 
@@ -32,7 +32,7 @@ Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza
 
 Let ' s walk through the flow from a dettagliato report to a Insight and actions. (Si tratta di un breve esempio di protezione da [posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Iniziamo con i report del [Centro sicurezza &amp; e conformità](https://protection.office.com) . (Andare al **** \> **Dashboard**di report).<br/>![Nel centro sicurezza &amp; e conformità, andare al dashboard \> dei report](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Iniziamo con i report del [Centro sicurezza &amp; e conformità](https://protection.office.com) . (Andare al **** \> **Dashboard**di report). <br/>![Nel centro sicurezza &amp; e conformità, andare al dashboard \> dei report](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. È possibile scegliere un report per ottenere una visualizzazione più dettagliata. Scegliere un report, ad esempio il rapporto **sullo stato di protezione dalle minacce** .<br/>![Rapporto sullo stato di protezione dalle minacce che mostra informazioni dettagliate](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

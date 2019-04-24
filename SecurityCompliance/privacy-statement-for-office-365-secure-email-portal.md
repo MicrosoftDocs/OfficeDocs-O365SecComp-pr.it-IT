@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Ultimo aggiornamento: 2017 maggio'
 ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265268"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>InFormativa sulla privacy per Office 365 Secure E-mail Portal
 
@@ -37,7 +37,7 @@ Durante il processo di decrittografia, i messaggi crittografati ricevuti non ver
   
 Il nuovo portale delle funzionalità OME può, in alcuni casi, raccogliere punti dati sull'uso e sulle prestazioni delle nuove funzionalità OME (ad esempio, la frequenza con cui vengono visualizzati i messaggi crittografati, il browser o l'app utilizzata e gli eventuali errori riscontrati), che possono essere analizzati in aggregazione allo scopo di migliorare la qualità, la sicurezza e l'integrità di questo e di altre app, prodotti o servizi Microsoft. Queste informazioni non vengono utilizzate per identificare, contattare o indirizzare la pubblicità all'utente.
   
-## <a name="for-more-information"></a>Per ulteriori informazioni
+## <a name="for-more-information"></a>Ulteriori informazioni
 
 Consultare le richieste di informazioni relative alla privacy dirette a Microsoft tramite [omepriv@microsoft.com](mailto:omepriv@microsoft.com)o tramite posta elettronica al seguente indirizzo:
   
@@ -51,6 +51,6 @@ Redmond, Washington 98052 USA
   
 ## <a name="changes"></a>Modifiche
 
-Se si inviano modifiche all'istruzione, verranno revisionati i dati "Ultimo aggiornamento" all'inizio dell'istruzione. Consultare l'organizzazione che fornisce l'accesso ai propri servizi per ottenere ulteriori informazioni sulle modifiche apportate alle procedure di privacy.
+Se si inviano modifiche all'istruzione, verranno revisionati i dati "Ultimo aggiornamento" all'inizio dell'istruzione. Contattare l'organizzazione che fornisce l'accesso ai servizi per ulteriori informazioni sulle modifiche alle procedure di privacy.
   
 

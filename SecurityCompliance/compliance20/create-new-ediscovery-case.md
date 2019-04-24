@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: b06c377c4841bce16e0121177665d1884497eaaa
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244103"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Creare un nuovo caso in Advanced eDiscovery (Preview)    
 

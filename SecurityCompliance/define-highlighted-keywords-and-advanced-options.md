@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Office 365 Advanced eDiscovery e per specificare i parametri di costo.  "
 ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257082"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Office 365 Advanced eDiscovery
 

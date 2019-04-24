@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e9e34d112cb84c27fec35e752eb2bfcbfe3136a3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243436"
 ---
 # <a name="add-data-to-a-working-set-from-another-working-set"></a>Aggiungere dati a un working set da un altro working set
 In alcuni casi, potrebbe essere necessario suddividere una parte di documenti da un working set e utilizzarli singolarmente in un altro working set.  Questo è particolarmente utile se si è abbattuti contenuti in un working set e si vuole eseguire l'analisi del sottoinsieme di dati.

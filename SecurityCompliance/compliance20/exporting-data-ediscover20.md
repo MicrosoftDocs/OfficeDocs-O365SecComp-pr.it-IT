@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256174"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-preview"></a>Esportare i dati del caso in Advanced eDiscovery (Preview)
 
-L'esportazione viene eseguita all'interno di un working set per garantire la massima visibilità su ciò che viene esportato da un tenant. Per esportare il contenuto sono disponibili tre metodi distinti:
+Esistono tre modi per esportare i dati da un working set:
 
-Download: consente a un utente di scaricare un piccolo gruppo di file nativi tramite il browser.
+**Download** : consente di scaricare (utilizzando un browser) un piccolo insieme di file nativi. Questo è il modo più rapido per esportare un set di dati di piccole dimensioni.
 
-Esporta – personalizzare l'esportazione per includere contenuto aggiuntivo incluso un file di metadati, bruciato nei file di testo e nei file redatti.
+**Export** : consente di personalizzare i dati esportati, inclusi l'esportazione di file di metadati, file nativi, file di testo e documenti redatti che sono stati salvati in un file PDF. Dopo aver esportato i dati viene caricato il percorso di archiviazione di Azure, è necessario scaricarlo in un computer locale. Per ulteriori informazioni, vedere: 
 
-Working set: consente a un utente di esportare il contenuto da un working set a un altro working set.
+   - [Esportare documenti da un set di lavoro](export-documents-from-working-set.md)
 
-Una volta completata l'esportazione, il contenuto viene inserito in un BLOB di Microsoft Azure. È possibile raggiungere il contenuto utilizzando le informazioni contenute nella scheda esPortazioni. Per ulteriori informazioni, vedere \[collegamento per scaricare i processi di esportazione\]
+   - [Scaricare processi di esportazione](download-export-jobs.md)
+
+**Aggiungi a un altro working set** -utilizzare per copiare i dati da un working set a un altro working set. Per ulteriori informazioni, vedere [aggiungere dati da un working set a un altro working set](add-data-to-working-set-from-another-working-set.md). 

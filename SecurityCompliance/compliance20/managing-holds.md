@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240951"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gestione delle esenzioni in Advanced eDiscovery (Preview)
 
@@ -56,7 +56,7 @@ Per creare un'esenzione per un caso avanzato di eDiscovery (anteprima):
   
 4. Nella scheda **esenzioni** fare clic su **Crea**.
   
-5. Nella pagina deNominare il **blocco** , assegnare un nome al blocco. Il nome dell'esenzione deve essere univoco nell'organizzazione.
+5. Nella pagina deNominare il **blocco** , assegnare un nome al blocco. Il nome del blocco deve essere univoco nell'organizzazione.
  
 6. Optional Nella casella **Descrizione** aggiungere una descrizione dell'esenzione.
   
@@ -64,19 +64,19 @@ Per creare un'esenzione per un caso avanzato di eDiscovery (anteprima):
   
 8. Scegliere i percorsi di contenuto che si desidera inserire in attesa. È possibile inserire le cassette postali, i siti e le cartelle pubbliche in attesa.
 
-   a. **posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Office 365 o un team di Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+   un. **Posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Office 365 o un team di Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
  
     > [!NOTE]
-    > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Questo è un progetto che consente di migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
+    > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
 
-    b. **siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su choose **sites** again per specificare SharePoint e OneDrive for business sites to Place on Hold. Digitare l'URL per ogni sito che si desidera inserire in attesa. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Fare clic su **Scegli**e quindi su **fine**.
+    b. **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare i siti di SharePoint e OneDrive for business in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Fare clic su **Scegli**e quindi su **fine**.
     
      Vedere la sezione **FAQ** per suggerimenti su come mettere in attesa i gruppi di Office 365 e Microsoft teams.
 
     > [!NOTE]
     > Nel caso raro che il nome dell'entità utente (UPN) di una persona sia stato modificato, verrà modificato anche l'URL per il relativo account OneDrive per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente.
 
-     c. **cartelle pubbliche di Exchange** -spostare l'interruttore toggle sulla posizione all per mettere in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere le cartelle pubbliche specifiche da mettere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
+     c. **Cartelle pubbliche di Exchange** -spostare l'interruttore Toggle nella posizione all per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere le cartelle pubbliche specifiche da mettere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
 
 9. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
   
@@ -84,7 +84,7 @@ Per creare un'esenzione per un caso avanzato di eDiscovery (anteprima):
     
     - Nella casella sotto **parole chiave**Digitare una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca venga messo in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio e, o o meno. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà messo in attesa.
 
-    - Fare clic su **Aggiungi** condizioni per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, dall'operatore AND. Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa.
+    - Fare clic su **Aggiungi** condizioni per aggiungere una o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore AND. Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa.
 
      Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
@@ -113,7 +113,7 @@ Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-- **Come è possibile eseguire il mapping di un sito di Office 365 gruppi o Microsoft Teams a un custode? E che dire di disporre di un blocco non deTentivo sui gruppi di Office 365 e Microsoft teams?** Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams.
+- **Come è possibile eseguire il mapping di un sito di Office 365 gruppi o Microsoft Teams a un custode? E che dire di disporre di un blocco non deTentivo sui gruppi di Office 365 e Microsoft Teams?** Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams.
   - Per inserire il contenuto presente nei gruppi di Office 365 e Microsoft teams in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
   
   - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un gruppo di Office 365 o di un team di Microsoft. Questo è un ottimo metodo per ottenere l'URL del sito associato a un gruppo di Office 365 o a un team di Microsoft. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:

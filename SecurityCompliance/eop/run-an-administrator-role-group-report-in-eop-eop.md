@@ -1,5 +1,5 @@
 ---
-title: 'Eseguire un report di un gruppo di ruoli amministratore in EOP '
+title: 'Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Quando un amministratore aggiunge membri o rimuove membri dai gruppi di ruoli amministratore, Microsoft Exchange Online Protection (EOP) registra ogni occorrenza.
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256184"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in EOP 
+# <a name="run-an-administrator-role-group-report-in-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection 
 
  Quando un amministratore aggiunge membri o rimuove membri dai gruppi di ruoli amministratore, Microsoft Exchange Online Protection (EOP) registra ogni occorrenza. Quando si esegue un rapporto del gruppo di ruoli amministratore nell'interfaccia di amministrazione di Exchange, le voci vengono visualizzate come risultati di ricerca e includono i gruppi di ruolo interessati, chi ha modificato l'appartenenza al gruppo di ruoli e quando e quali aggiornamenti dell'appartenenza sono stati effettuati. Utilizzare questo rapporto per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.
   

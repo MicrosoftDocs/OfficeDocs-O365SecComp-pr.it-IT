@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Vedere come funziona il nuovo spoofing Intelligence Insight.
 ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267254"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procedura dettagliata: spoofing Intelligence Insight
 
@@ -59,7 +59,7 @@ In entrambi i casi, i domini falsificati visualizzati nell'Insight sono separati
   
 Una *coppia di domini* è una combinazione dell'indirizzo "from:" e dell'infrastruttura di invio. 
   
-- L'indirizzo "da" è l'indirizzo visualizzato come indirizzo da dall'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Ovvero, la cassetta postale della persona o del sistema responsabile della scrittura del messaggio. A volte viene chiamato indirizzo 5322. from.
+- L'indirizzo "da" è l'indirizzo visualizzato come indirizzo da dall'applicazione di posta elettronica. Questo indirizzo identifica l'autore del messaggio di posta elettronica. Vale a dire, la cassetta postale dell'utente o del sistema responsabile della creazione del messaggio. Questo a volte viene chiamato indirizzo 5322.From.
     
 - L'infrastruttura di invio, o mittente, è il dominio dell'organizzazione del record PTR dell'indirizzo IP di invio. Se l'indirizzo IP di invio non ha un record PTR, il mittente viene identificato dall'IP di invio con la subnet mask 255.255.255.0 nella notazione CIDR (/24). Ad esempio, se l'indirizzo IP è 192.168.100.100, l'indirizzo IP completo del mittente è 192.168.100.100/24.
     

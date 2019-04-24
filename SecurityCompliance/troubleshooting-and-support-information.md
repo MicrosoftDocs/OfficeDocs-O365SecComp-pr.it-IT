@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
 ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259844"
 ---
-# <a name="troubleshooting-and-support-information"></a>Informazioni sul supporto tecnico e sulla risoluzione dei problemi
+# <a name="troubleshooting-and-support-information"></a>Supporto tecnico e risoluzione dei problemi
 
 In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
   

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: "Come utente di Office 365, è possibile gestire i messaggi in quarantena per la posta indesiderata in uno dei due modi seguenti: rispondendo alle notifiche di posta indesiderata inviate direttamente (se l'amministratore ha configurato questa funzionalità) oppure utilizzando la funzionalità di &amp; quarantena della posta indesiderata nella conformità alla sicurezza Centro."
 ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255204"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi in quarantena come utente in Office 365
 
@@ -61,7 +61,7 @@ Se si dispone di molti elementi in quarantena, è possibile ridurre il numero a 
     
   - **ID messaggio** Utilizzare questa pagina per selezionare un messaggio specifico quando si conosce l'ID del messaggio. 
     
-    Ad esempio, se un messaggio specifico viene inviato o destinato a un utente dell'organizzazione, ma non ha mai raggiunto la destinazione, è possibile cercare il messaggio utilizzando una traccia dei messaggi (vedere [eseguire una traccia dei messaggi e visualizzare i risultati](https://go.microsoft.com/fwlink/?LinkId=799737)). Se si rileva che il messaggio è stato inviato alla quarantena, probabilmente perché corrisponde a una regola del flusso di posta o è stato identificato come posta indesiderata, è possibile trovare facilmente questo messaggio in quarantena specificando l'ID del messaggio. Assicurarsi di includere la stringa dell'ID del messaggio completo. Questo potrebbe includere parentesi angolari\<\>(), ad esempio:
+    Ad esempio, se un messaggio specifico viene inviato o destinato a un utente dell'organizzazione, ma non ha mai raggiunto la destinazione, è possibile cercare il messaggio utilizzando una traccia dei messaggi (vedere [eseguire una traccia dei messaggi e visualizzare i risultati](https://go.microsoft.com/fwlink/?LinkId=799737)). Se si rileva che il messaggio è stato inviato alla quarantena, probabilmente perché corrisponde a una regola del flusso di posta o è stato identificato come posta indesiderata, è possibile trovare facilmente questo messaggio in quarantena specificando l'ID del messaggio. Includere la stringa completa dell'ID del messaggio. Questo potrebbe includere parentesi angolari\<\>(), ad esempio:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
@@ -108,7 +108,7 @@ Dopo aver selezionato un messaggio, verrà visualizzato un riepilogo delle propr
 
 Dopo aver selezionato un messaggio o un gruppo di messaggi, sono disponibili diverse opzioni per la gestione dei messaggi in quarantena.
   
-- Non eseguire alcuna operazione. Se si sceglie di non eseguire alcuna operazione, il messaggio verrà eliminato automaticamente da Office 365 alla scadenza. Tenere presente che quando Office 365 Elimina un messaggio dalla quarantena, non è possibile riottenerlo.
+- Nessuna operazione. Se si sceglie di non eseguire alcuna operazione, il messaggio verrà eliminato automaticamente da Office 365 alla scadenza. Tenere presente che quando Office 365 Elimina un messaggio dalla quarantena, non è possibile riottenerlo.
     
 - **Rilascia il messaggio** Rilasciare un messaggio in quarantena (o un insieme di messaggi) in modo che il messaggio venga inviato alla cassetta postale. Quando si rilascia un messaggio, si ha la possibilità di segnalare il messaggio a Microsoft per l'analisi. 
     

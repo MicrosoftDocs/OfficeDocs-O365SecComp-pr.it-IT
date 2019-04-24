@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
 ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258846"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 

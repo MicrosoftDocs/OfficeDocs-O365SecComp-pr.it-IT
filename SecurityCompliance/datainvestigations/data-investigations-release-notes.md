@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
 ms.openlocfilehash: 648f223c136007e88a3beb6b58e692b758b5d27f
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258984"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 

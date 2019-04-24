@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare il supporto per i messaggi anonimi provenienti da origini IPv6 per Exchange Online Protection ed Exchange Online.
 ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260254"
 ---
-# <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Supporto per messaggi di posta elettronica in ingresso anonimi su IPv6
+# <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
 
 Exchange Online Protection (EOP) ed Exchange Online supportano la ricezione di messaggi di posta elettronica in ingresso anonimi sulle comunicazioni IPv6 da mittenti che non inviano messaggi su TLS (Transport Layer Security). È possibile scegliere di ricevere i messaggi tramite IPv6 richiedendo questa funzionalità dal supporto tecnico Microsoft aprendo l'interfaccia di amministrazione di Microsoft 365 in [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home), facendo clic su **supporto**e quindi su **nuova richiesta di servizio**. Se non si sceglie di utilizzare IPv6, si continuerà a ricevere messaggi su IPv4.
   

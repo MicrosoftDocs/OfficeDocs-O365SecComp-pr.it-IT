@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare Customer Key per Office 365 per Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Con il codice "Customer Key", è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Office 365 per utilizzarle per crittografare i dati a riposo nei datacenter di Microsoft.
 ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258354"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controllare i dati in Office 365 con Customer Key
 
@@ -103,7 +103,7 @@ Completare queste attività in Azure Key Vault per impostare la chiave del clien
 Per la chiave del cliente sono necessarie due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di creare nuove sottoscrizioni di Azure per l'utilizzo con la chiave del cliente. Le chiavi del Vault Key di Azure possono essere autorizzate solo per le applicazioni nello stesso tenant di Azure Active Directory (AAD), è necessario creare le nuove sottoscrizioni usando lo stesso tenant di Azure AD utilizzato con l'organizzazione di Office 365 in cui verrà assegnato il DEPs. Ad esempio, utilizzando l'account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale nell'organizzazione di Office 365. Per la procedura dettagliata, vedere [iscriversi a Azure come organizzazione](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> La chiave del cliente richiede due chiavi per ogni criterio di crittografia dei dati. Per ottenere questo risultato, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di disporre di membri distinti dell'organizzazione che configurano una chiave in ogni sottoscrizione. Inoltre, queste sottoscrizioni di Azure devono essere utilizzate solo per amministrare le chiavi di crittografia per Office 365. Questo consente di proteggere l'organizzazione nel caso in cui uno degli operatori involontariamente, intenzionalmente o elimini in modo doloso o meno le chiavi per le quali sono responsabili.<br/> È consigliabile impostare nuove sottoscrizioni di Azure che vengono utilizzate solo per la gestione delle risorse del Vault Key di Azure per l'utilizzo con la chiave del cliente. Non esiste alcun limite pratico per il numero di sottoscrizioni di Azure che è possibile creare per l'organizzazione. Seguendo queste procedure consigliate si minimizza l'impatto dell'errore umano contribuendo a gestire le risorse utilizzate dalla chiave del cliente. 
+> La chiave del cliente richiede due chiavi per ogni criterio di crittografia dei dati. Per ottenere questo risultato, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di disporre di membri distinti dell'organizzazione che configurano una chiave in ogni sottoscrizione. Inoltre, queste sottoscrizioni di Azure devono essere utilizzate solo per amministrare le chiavi di crittografia per Office 365. Questo consente di proteggere l'organizzazione nel caso in cui uno degli operatori involontariamente, intenzionalmente o elimini in modo doloso o meno le chiavi per le quali sono responsabili. <br/> È consigliabile impostare nuove sottoscrizioni di Azure che vengono utilizzate solo per la gestione delle risorse del Vault Key di Azure per l'utilizzo con la chiave del cliente. Non esiste alcun limite pratico per il numero di sottoscrizioni di Azure che è possibile creare per l'organizzazione. Seguendo queste procedure consigliate si minimizza l'impatto dell'errore umano contribuendo a gestire le risorse utilizzate dalla chiave del cliente. 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Inviare una richiesta per attivare la chiave del cliente per Office 365
 <a name="FastTrack"> </a>
@@ -290,7 +290,7 @@ Dove:
   
 - Se si intende proteggere la chiave con un HSM, accertarsi di specificare **HSM** come valore del parametro Destination, __ in caso contrario, specificare il **software**.
     
-Ad esempio:
+For example,
   
 ```
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
@@ -581,7 +581,7 @@ Se nel Vault della chiave è già presente un tasto con lo stesso nome, l'operaz
 I tasti di scorrimento non sono richiesti da un Vault di Azure Key o dal codice del cliente. Inoltre, le chiavi protette con un HSM sono virtualmente impossibili da compromettere. Anche se una chiave radice è in possesso di un attore malevolo, non è possibile utilizzarlo per decrittografare i dati, poiché solo il codice di Office 365 sa come usarlo. Tuttavia, l'implementazione di una chiave è supportata dal codice "Customer Key".
   
 > [!CAUTION]
-> Eseguire il rollback di una chiave di crittografia da utilizzare con il codice "Customer Key" se esiste un motivo tecnico chiaro oppure se un requisito di conformità richiede che è necessario eseguire il rollforward della chiave. Inoltre, non eliminare le chiavi che sono o sono state associate ai criteri. Quando si esegue il rollback delle chiavi, verranno crittografati i contenuti con le chiavi precedenti. Ad esempio, mentre le cassette postali attive verranno crittografate di frequente, le cassette postali inattive, disconnesse e disabilitate potrebbero essere ancora crittografate con le chiavi precedenti. SharePoint Online esegue il backup del contenuto per scopi di ripristino e ripristino, per cui è possibile che il contenuto archiviato sia ancora utilizzato con i tasti precedenti.<br/> Per garantire la sicurezza dei dati, SharePoint Online non consentirà di eseguire più di un'operazione di rollforward della chiave alla volta. Se si desidera eseguire il rollback di entrambe le chiavi in un Vault chiave, è necessario attendere il completamento completo della prima operazione di rollforward. La nostra raccomandazione è quella di scaglionare le operazioni di rollio chiave a intervalli diversi, in modo che non si tratti di un problema. 
+> Eseguire il rollback di una chiave di crittografia da utilizzare con il codice "Customer Key" se esiste un motivo tecnico chiaro oppure se un requisito di conformità richiede che è necessario eseguire il rollforward della chiave. Inoltre, non eliminare le chiavi che sono o sono state associate ai criteri. Quando si esegue il rollback delle chiavi, verranno crittografati i contenuti con le chiavi precedenti. Ad esempio, mentre le cassette postali attive verranno crittografate di frequente, le cassette postali inattive, disconnesse e disabilitate potrebbero essere ancora crittografate con le chiavi precedenti. SharePoint Online esegue il backup del contenuto per scopi di ripristino e ripristino, per cui è possibile che il contenuto archiviato sia ancora utilizzato con i tasti precedenti. <br/> Per garantire la sicurezza dei dati, SharePoint Online non consentirà di eseguire più di un'operazione di rollforward della chiave alla volta. Se si desidera eseguire il rollback di entrambe le chiavi in un Vault chiave, è necessario attendere il completamento completo della prima operazione di rollforward. La nostra raccomandazione è quella di scaglionare le operazioni di rollio chiave a intervalli diversi, in modo che non si tratti di un problema. 
   
 Quando si esegue il rollforward di una chiave, si richiede una nuova versione di una chiave esistente. Per richiedere una nuova versione di una chiave esistente, è necessario utilizzare lo stesso cmdlet [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), con la stessa sintassi utilizzata per creare la chiave in primo luogo.
   

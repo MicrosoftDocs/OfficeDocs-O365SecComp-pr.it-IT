@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Oltre al Centro protezione di Office 365 che fornisce informazioni sulla sicurezza, la privacy e la conformità per Office 365, è possibile che si desideri sapere in che modo Office 365 consente di proteggere i segreti forniti nei propri datacenter. Viene utilizzata una tecnologia denominata Distributed Key Manager (DKM).
 ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255484"
 ---
-# <a name="how-exchange-online-secures-your-email-secrets"></a>Come viene garantita la protezione della posta elettronica in Exchange Online
+# <a name="how-exchange-online-secures-your-email-secrets"></a>Modalità di protezione dei segreti di posta elettronica in Exchange Online
 
 In questo articolo viene descritto come Microsoft garantisce la protezione della posta elettronica degli utenti nei datacenter.
   
@@ -34,7 +34,6 @@ Si tratta di una funzionalità lato client che usa un set di chiavi segrete per 
 Per scopi legati al debug, alla risoluzione dei problemi o al controllo, è necessario che l'amministratore di un datacenter richieda un accesso con privilegi elevati per ottenere le credenziali temporanee relative al gruppo di sicurezza. Questo processo richiede più livelli di approvazione legale. Se viene consentito l'accesso, tutta l'attività viene registrata e controllata. Inoltre, l'accesso viene consentito solo per un determinato intervallo di tempo, al termine del quale scade automaticamente.
   
 Per una protezione maggiore, la tecnologia DKM include il rollover della chiave automatico e l'archiviazione. Ciò garantisce ulteriormente che l'utente possa continuare ad accedere ai contenuti meno recenti senza dover usare la stessa chiave per un periodo di tempo indeterminato.
-
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>Per cosa si utilizza DKM in Exchange Online?
 
@@ -42,7 +41,7 @@ Microsoft utilizza DKM per crittografare i dati riservati degli utenti nei datac
   
 - Le credenziali dell'account di posta elettronica per gli account connessi. Gli account connessi sono account di terzi come quelli di Hotmail, Gmail e Yahoo!.
     
-- Chiavi radice del servizio Rights Management (RMS). Queste sono le chiavi dei clienti che vengono importate da Azure RMS o dalle distribuzioni RMS di Active Directory locale dei clienti che vengono utilizzate per crittografare e decrittografare i messaggi di posta elettronica con RMS o Office 365 Message Encryption (OME).
+- Le chiavi radice di Rights Management service (RMS). Queste sono le chiavi dei clienti che vengono importate da Azure RMS o dalle distribuzioni RMS di Active Directory locale dei clienti che vengono utilizzate per crittografare e decrittografare i messaggi di posta elettronica con RMS o Office 365 Message Encryption (OME).
     
 ## <a name="related-topics"></a>Argomenti correlati
 

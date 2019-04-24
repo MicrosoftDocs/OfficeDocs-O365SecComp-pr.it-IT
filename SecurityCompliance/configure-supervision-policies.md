@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
 ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259534"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
 

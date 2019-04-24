@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & Compliance per gestire un problema di fuoriuscita dei dati.
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258824"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -111,7 +111,7 @@ Nella sezione analisi passare alla scheda **prova** e fare clic sul set di prove
 
 Per raggruppare i documenti e ottenere assistenza per la revisione, fare clic su **Gestisci evidenza**. Nel riquadro **analisi** fare clic su **analizza**. Verrà eseguito l'analisi avanzata, ad esempio il rilevamento duplicato, il threading di posta elettronica e l'analizzatore dei temi. Per ulteriori informazioni, vedere:
 
-- [Eseguire analisi per analizzare più velocemente](run-analytics-to-investigate-faster.md)
+- [Eseguire analisi per velocizzare le indagini](run-analytics-to-investigate-faster.md)
 - [Rilevamento dei documenti simili](near-duplicates.md)
 - [Threading posta elettronica](email-threading.md)
 - [Temi](themes.md)
