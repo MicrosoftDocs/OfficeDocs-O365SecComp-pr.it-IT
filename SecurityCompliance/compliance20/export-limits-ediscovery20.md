@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251974"
 ---
-# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="d4ec7-102">Limiti di esportazione in Advanced eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="d4ec7-102">Export limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="7de06-102">Limiti di esportazione in Advanced eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="7de06-102">Export limits in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="d4ec7-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="d4ec7-103">Content coming soon.</span></span>
+<span data-ttu-id="7de06-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="7de06-103">Content coming soon.</span></span>
