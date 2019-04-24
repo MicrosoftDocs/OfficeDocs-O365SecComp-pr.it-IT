@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Questa soluzione indica gli elementi più comuni che possono essere assomigliati a Office 365 e come rispondere a tali attacchi.
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262358"
 ---
 # <a name="office-365-security-incident-response"></a>Intervento in caso di incidente di sicurezza di Office 365
 
@@ -47,11 +47,11 @@ Controllare di nuovo qui mensilmente, in quanto verranno aggiunti altri articoli
 
 - [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Protezione di Office 365 come un Cybersecurity Pro
-L'abbonamento a Office 365 è dotato di un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti.  Utilizzare la Guida di [orientamento alla sicurezza di office 365: priorità principali per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliAte di Microsoft consigliati per la protezione del tenant di Office 365.
-- Attività da eseguire nei primi 30 giorni.  Tali effetti hanno un impatto immediato e sono di scarso effetto per gli utenti.
-- Attività da eseguire in 90 giorni. Questi richiedono un po' più di tempo per pianificare e implementare, ma migliorare notevolmente la posizione di sicurezza
-- Oltre 90 giorni. Questi miglioramenti vengono costruiti nei primi 90 giorni di lavoro.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+- Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
+- Attività da completare in 90 giorni. Questi richiedono un po' più di tempo per pianificare e implementare, ma migliorare notevolmente la posizione di sicurezza
+- Dopo 90 giorni. Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.
 
 
 

@@ -3,7 +3,7 @@ title: Panoramica delle cassette postali inattive in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Informazioni su come conservare il contenuto delle cassette postali per gli ex dipendenti trasformando la cassetta postale in una cassetta postale inattiva. A tale scopo, inserire la cassetta postale sul blocco per controversia legale o applicare un criterio di conservazione di Office 365 alla cassetta postale e quindi rimuovere l'account di Office 365 corrispondente.
-ms.openlocfilehash: 12688cb1c0f1d165c21736ce5a6130245db36a06
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 19cd2bafc1f4bf0b6aa3b4c0332a3588ace3e5d8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256524"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Panoramica delle cassette postali inattive in Office 365
 
@@ -33,7 +33,8 @@ Quando un dipendente lascia l'organizzazione (o prosegue un congedo prolungato),
   
 Tuttavia, se l'organizzazione deve conservare il contenuto delle cassette postali per gli ex dipendenti, è possibile trasformare la cassetta postale in una cassetta postale inattiva posizionando la cassetta postale sul blocco per controversia legale o applicando un criterio di conservazione di Office 365 alla cassetta postale nel centro sicurezza & Compliance. e quindi rimuovendo l'account Office 365 corrispondente. The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. Tuttavia, dopo 30 giorni, la cassetta postale inattiva viene conservata in Office 365 fino a quando non viene rimosso il blocco o il criterio di conservazione. 
   
-**Importante:** La data di scadenza del 1 ° luglio 2017 è stata posticipata per la creazione di nuove esenzioni sul posto per rendere inattiva una cassetta postale. Tuttavia, più avanti nel corso di questo anno o all'inizio del prossimo, non sarà più possibile creare blocchi sul posto in Exchange Online. Da quel momento, sarà possibile utilizzare soltanto blocchi per controversia legale e criteri di conservazione di Office 365 per creare una cassetta postale inattiva. Tuttavia, le cassette postali inattive esistenti disponibili nel blocco sul posto continueranno a essere supportate ed è possibile continuare a gestire i blocchi per controversia legale sulle cassette postali inattive. Ciò include le operazioni di modifica della durata di un blocco sul posto e di eliminazione definitiva di una cassetta postale inattiva mediante la rimozione del blocco sul posto. 
+> [!NOTE]
+> Abbiamo posticipato la scadenza del 1° luglio 2017 relativa alla creazione di un nuovo blocco sul posto per rendere inattiva una cassetta postale. Tuttavia, più avanti nel corso di questo anno o all'inizio del prossimo, non sarà più possibile creare blocchi sul posto in Exchange Online. Da quel momento, sarà possibile utilizzare soltanto blocchi per controversia legale e criteri di conservazione di Office 365 per creare una cassetta postale inattiva. Tuttavia, le cassette postali inattive esistenti disponibili nel blocco sul posto continueranno a essere supportate ed è possibile continuare a gestire i blocchi per controversia legale sulle cassette postali inattive. Ciò include le operazioni di modifica della durata di un blocco sul posto e di eliminazione definitiva di una cassetta postale inattiva mediante la rimozione del blocco sul posto. 
  
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>Le cassette postali inattive e i criteri di conservazione di Office 365
@@ -42,23 +43,26 @@ Oltre alla conservazione per controversia legale, l'utilizzo della nuova caratte
   
 - Deve essere applicato alle cassette postali di Exchange o a percorsi di Skype for Business (perché i contenuti correlati di Skype vengono archiviati nella cassetta postale dell'utente). 
     
-- Deve essere configurato per conservare i contenuti o conservare e poi eliminare i contenuti. Se il criterio di conservazione è configurato solo per eliminare i contenuti, una cassetta postale alla quale viene applicato il criterio non diventerà inattiva quando la cassetta postale viene eliminata.
+- Deve essere configurato in modo da conservare il contenuto o conservarlo e quindi eliminarlo. Se il criterio di conservazione è configurato solo per eliminare i contenuti, una cassetta postale alla quale viene applicato il criterio non diventerà inattiva quando la cassetta postale viene eliminata.
     
 - Può essere basato su query affinché conservi quindi solo elementi corrispondenti a una query di ricerca. 
     
 Per ulteriori informazioni sulla configurazione dei criteri di conservazione di Office 365, vedere [Panoramica dei criteri di conservazione in Office 365](retention-policies.md).
   
-Se si usa un criterio di conservazione di Office 365 per rendere inattiva una cassetta postale, Office 365 continuerà a elaborare il criterio di conservazione nella cassetta postale inattiva. Questo significa che se i criteri di conservazione sono configurato per mantenere ed eliminare contenuto, gli elementi verranno spostati nella cartella Elementi ripristinabili alla scadenza del periodo di conservazione e verranno alla fine eliminati dalla cassetta postale inattiva. Se il criterio di conservazione Office 365 non è configurato per la posta eliminata, allora gli elementi che non vengano eliminati definitivamente dall'utente (prima che la cassetta postale è stata resa inattiva) non verranno spostati nella cartella Elementi ripristinabili e verranno conservati indefinitamente dopo la disattivazione della cassetta postale. 
+Se si utilizza un criterio di conservazione per creare una cassetta postale inattiva, Office 365 continuerà a elaborare il criterio di conservazione nella cassetta postale inattiva. Questo significa che se i criteri di conservazione sono configurato per mantenere ed eliminare contenuto, gli elementi verranno spostati nella cartella Elementi ripristinabili alla scadenza del periodo di conservazione e verranno alla fine eliminati dalla cassetta postale inattiva. Se il criterio di conservazione Office 365 non è configurato per la posta eliminata, allora gli elementi che non vengano eliminati definitivamente dall'utente (prima che la cassetta postale è stata resa inattiva) non verranno spostati nella cartella Elementi ripristinabili e verranno conservati indefinitamente dopo la disattivazione della cassetta postale. 
   
 È consigliabile creare un criterio di conservazione Office 365 specifico per le cassette postali inattive. Vengono elencati di seguito alcuni motivi di tale operazione e considerazioni importanti da valutare:
   
 - È possibile configurare i criteri di conservazione per conservare il contenuto della cassetta postale solo purché necessari per soddisfare i requisiti dell'organizzazione per ex dipendenti.
     
-- Si tratta di un modo semplice per identificare le cassette postali inattive perché il criterio di conservazione viene applicato solo alle cassette postali inattive.
+- È un ottimo metodo per identificare le cassette postali inattive perché il criterio di conservazione viene applicato solo alle cassette postali inattive.
     
-- You'll be able to easily identify the retention policy that's assigned to inactive mailboxes in your organization. This will make it easier to change the retention (or deletion) settings if necessary. Sarà inoltre più facile eliminare definitivamente una cassetta postale inattiva perché è possibile rimuoverla solo dal criterio utilizzando il Centro sicurezza & Compliance. In caso contrario, è necessario utilizzare Exchange Online PowerShell per rimuovere un blocco per controversia legale da una cassetta postale inattiva o utilizzare PowerShell di & Compliance Center di sicurezza per escludere una cassetta postale inattiva da un criterio di conservazione di Office 365 a livello di organizzazione.
+- È possibile identificare rapidamente i criteri di conservazione assegnati alle cassette postali inattive nell'organizzazione. This will make it easier to change the retention (or deletion) settings if necessary. Sarà inoltre più facile eliminare definitivamente una cassetta postale inattiva perché è possibile rimuoverla solo dal criterio utilizzando il Centro sicurezza & Compliance. In caso contrario, è necessario utilizzare Exchange Online PowerShell per rimuovere un blocco per controversia legale da una cassetta postale inattiva o utilizzare PowerShell di & Compliance Center di sicurezza per escludere una cassetta postale inattiva da un criterio di conservazione di Office 365 a livello di organizzazione.
     
 - Se si crea un criterio di conservazione Office 365 specifico per le cassette postali inattive, è possibile aggiungere un massimo di 1.000 cassette postali al criterio. Se si è un'organizzazione di dimensioni molto grandi, potrebbe essere necessario creare più criteri di conservazione Office 365 da utilizzare per le cassette postali inattive.
+
+> [!CAUTION]
+> Se si utilizza un criterio di conservazione per rendere inattiva una cassetta postale, non modificare o rimuovere il nome dell'entità utente (UPN) per la cassetta postale prima di eliminare l'account utente di Office 365 corrispondente. Inoltre, non modificare l'indirizzo SMTP principale (derivato dall'UPN) oppure rimuovere l'indirizzo di posta elettronica dall'elenco degli indirizzi SMTP secondari associati alla cassetta postale prima di rendere inattiva la cassetta postale. Se si modifica l'UPN o gli indirizzi di posta elettronica (che sono stati assegnati alla cassetta postale nel momento in cui è stato applicato il criterio di conservazione) ed è quindi possibile eliminare l'account utente per rendere inattiva la cassetta postale, non sarà possibile eliminare la cassetta postale inattiva quando non è più necessario mantenere i t. Ciò è dovuto al fatto che non è possibile rimuovere la cassetta postale inattiva dal criterio di conservazione utilizzando un UPN o un indirizzo di posta elettronica (per identificare la cassetta postale inattiva) diversa da quella esistente quando il criterio di conservazione è stato inizialmente applicato alla cassetta postale. Per ulteriori informazioni sull'eliminazione di cassette postali inattive, vedere [eliminare una cassetta postale inattiva in Office 365](delete-an-inactive-mailbox.md).
   
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Le cassette postali inattive e i blocchi dei casi di eDiscovery
 
@@ -96,6 +100,9 @@ Nella tabella seguente viene riepilogato il processo di creazione di una cassett
 Dopo aver reso inattiva una cassetta postale, è possibile eseguire varie attività di gestione nelle cassette postali inattive.
   
 - **Modificare la durata del blocco per una cassetta postale inattiva** Dopo aver reso inattiva una cassetta postale, è possibile modificare la durata del blocco per controversia legale o del criterio di conservazione di Office 365 applicato alla cassetta postale inattiva. Per le procedure dettagliate, vedere [modificare la durata del blocco per una cassetta postale inattiva in Office 365](change-the-hold-duration-for-an-inactive-mailbox.md).
+
+  > [!NOTE]
+  > Non è possibile applicare altri criteri di conservazione a una cassetta postale inattiva. È possibile modificare la durata di conservazione di un criterio di conservazione esistente applicato alla cassetta postale inattiva.
     
 - **Recuperare una cassetta postale inattiva** Se un ex dipendente (o un dipendente in congedo) torna nell'organizzazione oppure se un nuovo dipendente viene assunto per ricoprire il ruolo del precedente dipendente, è possibile recuperare i contenuti della cassetta postale inattiva. Quando si recupera una cassetta postale inattiva, la cassetta postale viene convertita in una nuova cassetta postale, il contenuto e la struttura della cassetta postale vengono conservati e la cassetta postale viene collegata a un nuovo account utente. Dopo essere stata recuperata, la cassetta postale inattiva non esiste più. Per le procedure dettagliate e le informazioni su ciò che accade quando si recupera una cassetta postale inattiva, vedere [recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md).
     

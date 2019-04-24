@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Le app OAuth in Office 365 cloud app Security consentono di gestire le app scaricate dagli utenti per l'utilizzo con i dati di Office 365
 ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260170"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Gestire le app di OAuth con Office 365 Cloud App Security
 

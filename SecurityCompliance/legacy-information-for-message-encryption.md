@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento alle nuove funzionalità di Office 365 Message Encryption
+title: Informazioni legacy per Office 365 Message Encryption
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection. Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere crittografia dei messaggi di Office 365. Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
 ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252076"
 ---
-# <a name="legacy-information-for-office-365-message-encryption"></a>Aggiornamento alle nuove funzionalità di Office 365 Message Encryption
+# <a name="legacy-information-for-office-365-message-encryption"></a>Informazioni legacy per Office 365 Message Encryption
 
 Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection](set-up-new-message-encryption-capabilities.md). Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere [crittografia dei messaggi di Office 365](ome.md). Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
   
@@ -47,7 +47,7 @@ Guardare questo breve video per vedere come funziona la crittografia dei messagg
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c55540e7-f7f0-42f5-b254-4b2d2fbb1d63?autoplay=false]
   
-Quando un utente invia un messaggio di posta elettronica in Exchange Online che corrisponde a una regola di crittografia, il messaggio viene inviato con un allegato HTML. Il destinatario apre l'allegato HTML e segue le istruzioni per visualizzare il messaggio crittografato sul portale di crittografia dei messaggi di Office 365. Il destinatario può scegliere di visualizzare il messaggio accedendo con un account Microsoft o un lavoro o una scuola associati a Office 365 oppure utilizzando un codice Pass una tantum. Entrambe le opzioni consentono di verificare che solo il destinatario previsto possa visualizzare il messaggio crittografato. Questo processo è molto diverso per le nuove funzionalità OME.
+Quando un utente invia un messaggio di posta elettronica in Exchange Online che corrisponde a una regola di crittografia, il messaggio viene inviato con un allegato HTML. Il destinatario apre l'allegato HTML e segue le istruzioni per visualizzare il messaggio crittografato sul portale di crittografia dei messaggi di Office 365. Il destinatario può scegliere di visualizzare il messaggio accedendo con un account Microsoft o un lavoro o una scuola associati a Office 365 oppure utilizzando un codice Pass una tantum. Tali opzioni garantiscono che solo il destinatario specificato sia in grado di visualizzare il messaggio crittografato. Questo processo è molto diverso per le nuove funzionalità OME.
   
 Nel seguente diagramma viene riepilogata la procedura di crittografia e decrittografia di un messaggio di posta elettronica.
   
@@ -71,7 +71,7 @@ I destinatari seguono le istruzioni del messaggio per aprire l'allegato e esegui
   
 ## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Personalizzare i messaggi crittografati con la crittografia dei messaggi di Office 365
 
-In qualità di amministratore di Exchange Online e Exchange Online Protection, è possibile personalizzare i messaggi crittografati. Ad esempio, è possibile aggiungere il marchio e il logo della società, specificare un'introduzione e aggiungere testo di dichiarazione di non responsabilità nei messaggi crittografati e nel portale in cui i destinatari visualizzano i messaggi crittografati. Utilizzando i cmdlet di Windows PowerShell, è possibile personalizzare i seguenti aspetti dell'esperienza di visualizzazione per i destinatari dei messaggi di posta elettronica crittografati:
+In qualità di amministratore di Exchange Online e Exchange Online Protection, è possibile personalizzare i messaggi crittografati. Ad esempio, è possibile aggiungere il marchio e il logo della società, specificare un'introduzione e aggiungere testo di dichiarazione di non responsabilità nei messaggi crittografati e nel portale in cui i destinatari visualizzano i messaggi crittografati. Utilizzando i cmdlet Windows PowerShell, è possibile personalizzare i seguenti aspetti dell'esperienza di visualizzazione per i destinatari dei messaggi di posta elettronica crittografati:
   
 - Testo introduttivo del messaggio di posta elettronica contenente il messaggio crittografato
     
@@ -100,7 +100,7 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
 |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
 |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> formati di file supportati: .png, .jpg, .bmp o .tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel  <br/> |
+|Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel  <br/> |
    
  **Per rimuovere le personalizzazioni di marca dai messaggi di posta elettronica di crittografia e il portale di crittografia**
   
@@ -125,9 +125,9 @@ La tabella seguente fornisce informazioni tecniche per il servizio di crittograf
 |**Dettagli servizio**|**Descrizione**|
 |:-----|:-----|
 |Requisiti dei dispositivi client  <br/> |I messaggi crittografati possono essere visualizzati su tutti i dispositivi client, purché l'allegato HTML possa essere aperto in un browser moderno che supporta Post per i moduli.  <br/> |
-|Algoritmo di crittografia e conformità FIPS (Federal Information Processing Standards)  <br/> |La crittografia dei messaggi di Office 365 utilizza le stesse chiavi di crittografia di Windows Azure Information Rights Management (IRM) e supporta la modalità crittografica 2 (2K Key per RSA e 256 bit Key per i sistemi SHA-1). Per ulteriori informazioni sulle modalità di crittografia IRM sottostanti, vedere [modalità di crittografia ad RMS](http://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).<br/> |
-|Tipi di messaggi supportati  <br/> |La crittografia dei messaggi di Office 365 è supportata solo per gli elementi che dispongono di un ID classe messaggio **IPM. Nota**. Per ulteriori informazioni, vedere [tipi di elementi e classi di messaggi](https://msdn.microsoft.com/library/office/ff861573.aspx).<br/> |
-|Limiti di dimensione dei messaggi  <br/> |La crittografia dei messaggi di Office 365 è in grado di crittografare i messaggi fino a 25 megabyte. Per ulteriori informazioni sui limiti relativi alle dimensioni dei messaggi, vedere [limiti di Exchange Online](http://technet.microsoft.com/library/exchange-online-limits.aspx).<br/> |
+|Algoritmo di crittografia e conformità FIPS (Federal Information Processing Standards)  <br/> |La crittografia dei messaggi di Office 365 utilizza le stesse chiavi di crittografia di Windows Azure Information Rights Management (IRM) e supporta Modalità crittografia 2 (chiave a 2 K per RSA e chiave a 256 bit per sistemi SHA-1). Per ulteriori informazioni sulle modalità di crittografia IRM sottostanti, vedere [modalità di crittografia ad RMS](http://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
+|Tipi di messaggi supportati  <br/> |La crittografia messaggi di Office 365 è supportata soltanto per gli elementi con ID classe messaggio pari a **IPM.Note**. Per ulteriori informazioni, vedere [tipi di elementi e classi di messaggi](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
+|Limiti di dimensione dei messaggi  <br/> |Crittografia dei messaggi di Office 365 è in grado di crittografare messaggi con dimensioni fino a 25 megabyte. Per ulteriori informazioni sui limiti relativi alle dimensioni dei messaggi, vedere [limiti di Exchange Online](http://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Criteri di conservazione della posta elettronica di Exchange Online  <br/> |Exchange Online non archivia i messaggi crittografati.  <br/> |
 |Supporto linguistico per la crittografia dei messaggi di Office 365  <br/> | Crittografia dei messaggi di Office 365 supporta le ingue di Office 365, come segue:  <br/>  I messaggi di posta elettronica in arrivo e i file HTML allegati vengono localizzati in base alle impostazioni della lingua del mittente.  <br/>  Il portale di visualizzazione viene localizzato in base alle impostazioni del browser del destinatario.  <br/>  Il corpo (contenuto) del messaggio crittografato non è localizzato.  <br/> |
 |Informazioni sulla privacy per il Portale OME e l'app visualizzatore OME  <br/> |[Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) fornisce informazioni dettagliate sulle azioni effettuate da Microsoft con le informazioni private fornite dagli utenti.  <br/> |
@@ -163,29 +163,29 @@ No, i destinatari esterni non necessitano di una sottoscrizione per leggere o ri
   
  **D. in che modo la crittografia dei messaggi di Office 365 è diversa da Rights Management Services (RMS)?**
   
-RMS fornisce le funzionalità di protezione dei diritti di informazioni per i messaggi di posta elettronica interni di un'organizzazione fornendo modelli incorporati, ad esempio: non inoltrare e riservare la società. La crittografia dei messaggi di Office 365 supporta la crittografia del messaggio di posta elettronica per i messaggi inviati ai destinatari esterni e ai destinatari interni.
+RMS fornisce le funzionalità di protezione dei diritti di informazioni per i messaggi di posta elettronica interni di un'organizzazione fornendo modelli incorporati, ad esempio: non inoltrare e riservare la società. La crittografia dei messaggi di Office 365 supporta la crittografia dei messaggi di posta elettronica che vengono inviati ai destinatari esterni e interni.
   
  **D. in che modo la crittografia dei messaggi di Office 365 è diversa da S/MIME?**
   
-S/MIME è essenzialmente una tecnologia di crittografia sul retro del client e richiede un'infrastruttura di pubblicazione e gestione dei certificati complessa. La crittografia dei messaggi di Office 365 utilizza le regole del flusso di posta (note anche come regole di trasporto) e non dipende dalla pubblicazione dei certificati.
+S/MIME rappresenta una tecnologia di crittografia sul lato client e necessita di una complessa gestione del certificato e di pubblicazione dell'infrastruttura. La crittografia dei messaggi di Office 365 utilizza le regole del flusso di posta (note anche come regole di trasporto) e non dipende dalla pubblicazione dei certificati.
   
  **D. È possibile leggere i messaggi crittografati su dispositivi mobili?**
   
-Sì, è possibile visualizzare i messaggi su Android e iOS scaricando le app del Visualizzatore OME da [Google Play Store](http://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) e dall' [Apple App Store](http://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Aprire l'allegato HTML nell'app visualizzatore OME e quindi seguire le istruzioni per aprire il messaggio crittografato. Per altri dispositivi mobili, è possibile aprire l'allegato HTML fino a quando il client di posta elettronica supporta il post del modulo.
+Sì, è possibile visualizzare i messaggi su Android e iOS scaricando le app del Visualizzatore OME da [Google Play Store](http://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409) e dall' [Apple App Store](http://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409). Aprire l'allegato in formato HTML nell'app Visualizzatore Crittografia messaggi di Office 365 e attenersi alle istruzioni per aprire il messaggio crittografato. Per quanto riguarda altri dispositivi mobili, è possibile aprire l'allegato in formato HTML fin tanto che il client di posta elettronica supporta Post per i form.
   
  **D. I messaggi di risposta e i messaggi inoltrati vengono crittografati?**
   
 Sì. I messaggi di risposta vengono crittografati per tutta la durata del thread.
   
- **D. La crittografia dei messaggi di Office 365 fornisce localizzazione?**
+ **D. la crittografia dei messaggi di Office 365 fornisce la localizzazione?**
   
 Il contenuto della posta elettronica in arrivo viene localizzata in base alle impostazioni di posta elettronica del mittente. Il portale di visualizzazione viene localizzato in base alle impostazioni del browser del destinatario. Tuttavia, il corpo (contenuto) del messaggio crittografato non viene localizzato.
   
- **D. Quale metodo di crittografia viene utilizzato per la crittografia dei messaggi di Office 365?**
+ **D. quale metodo di crittografia viene utilizzato per la crittografia dei messaggi di Office 365?**
   
 La crittografia dei messaggi di Office 365 utilizza Rights Management Services (RMS) come infrastruttura di crittografia. Il metodo di crittografia utilizzato dipende da dove ottieni le chiavi RMS utilizzate per crittografare e decrittografare messaggi.
   
-- Se si utilizza Microsoft Azure RMS per ottenere le chiavi, viene utilizzata la modalità di crittografia 2. La modalità di crittografia 2 è un'implementazione crittografica AD RMS aggiornata e migliorata. Supporta RSA 2048 per la firma e la crittografia e supporta SHA-256 per la firma.
+- Se si utilizza Microsoft Azure RMS per ottenere le chiavi, viene utilizzata la modalità di crittografia 2. La Modalità di crittografia 2 è un'implementazione di crittografia AD RMS aggiornata e migliorata. Questa supporta RSA 2048 per la crittografia e firma e SHA-256 per firma.
     
 - Se si utilizza Active Directory (AD) RMS per ottenere le chiavi, viene utilizzata la Modalità di crittografia 1 o la Modalità di crittografia 2. Il metodo utilizzato dipende dalla distribuzione Active directory (AD) RMS. La Modalità di crittografia 1 è l'implementazione di crittografia AD RMS originale. Questa supporta RSA 1024 per la crittografia e firma e SHA-1 per firma. Questa modalità continua ad essere supportata da tutte le versioni correnti di RMS.
     
@@ -197,15 +197,15 @@ Quando una risposta crittografata viene inviata dal portale di crittografia oppu
   
  **D. sono un Sottoscrittore di Exchange Hosted Encryption (EHE). Dove è possibile ottenere ulteriori informazioni sull'aggiornamento alla crittografia dei messaggi di Office 365?**
   
-Tutti i clienti di EHE sono stati aggiornati alla crittografia dei messaggi di Office 365. Per ulteriori informazioni, visitare il [Centro aggiornamenti di Exchange hostEd Encryption](http://go.microsoft.com/fwlink/p/?LinkID=511077).
+Si è provveduto all'aggiornamento al servizio di crittografia dei messaggi di Office 365 per tutti gli utenti di EHE. Per ulteriori informazioni, visitare il [Centro aggiornamenti di Exchange hostEd Encryption](http://go.microsoft.com/fwlink/p/?LinkID=511077).
   
  **D. è necessario aprire tutti gli URL, gli indirizzi IP o le porte del firewall dell'organizzazione per supportare la crittografia dei messaggi di Office 365?**
   
-Sì. È necessario aggiungere degli URL per Exchange Online per consentire all'elenco della tua organizzazione di abilitare l'autenticazione per i messaggi criptati di crittografia dei messaggi di Office 365. Per un elenco di URL di Exchange Online, vedi [Office 365 URLs and IP Address Ranges](https://support.office.com/article/f57e35b7-0a45-42f0-855e-11aa5e7f13fd.aspx).
+Sì. È necessario aggiungere URL per Exchange Online all'elenco Consenti per l'organizzazione per abilitare l'autenticazione per i messaggi crittografati tramite la crittografia dei messaggi di Office 365. Per un elenco di URL di Exchange Online, vedi [Office 365 URLs and IP Address Ranges](https://support.office.com/article/f57e35b7-0a45-42f0-855e-11aa5e7f13fd.aspx).
   
  **D. A quanti destinatari posso inviare un messaggio crittografato tramite Office 365?**
   
-Il limite per il destinatario di un messaggio crittografato è basato sul numero di caratteri nel campo **a** del messaggio. Se combinati (dopo l'espansione della lista di distribuzione), gli indirizzi dei destinatari nel campo **a** non devono superare 11.980 caratteri. Poiché gli indirizzi di posta elettronica possono variare in base alla lunghezza dei caratteri, non esiste un limite standard per il destinatario di un singolo messaggio crittografato. 
+Il limite per il destinatario di un messaggio crittografato è basato sul numero di caratteri nel campo **a** del messaggio. Quando combinati (dopo l'espansione della lista di distribuzione), gli indirizzi dei destinatari nel campo **A** non dovrebbero superare gli 11.980 caratteri. Poiché gli indirizzi di posta elettronica possono variare in base alla lunghezza dei caratteri, non esiste un limite standard per il destinatario di un singolo messaggio crittografato. 
   
  **D. È possibile revocare un messaggio inviato a un particolare destinatario?**
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Oltre alla linea di base, la crittografia a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, inclusi i dati di Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Si tratta della crittografia del servizio.
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266944"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 
@@ -46,7 +46,7 @@ BYOK con Azure Information Protection per Exchange Online è disponibile nelle f
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>La crittografia dei messaggi di Office 365 e la propria chiave con Azure Information Protection modifica l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio le citazioni in giudizio?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-No. La crittografia dei messaggi di Office 365 e l'opzione per fornire e controllare le proprie chiavi di crittografia con Bring your own key (BYOK) per Azure Information Protection (AIP) non è stata progettata per rispondere alle citazioni di polizia. La crittografia dei messaggi di Office 365 con BYOK per AIP è stata progettata per soddisfare i clienti che hanno la necessità di rispettare i propri obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. La crittografia dei messaggi di Office 365 e l'opzione per fornire e controllare le proprie chiavi di crittografia con Bring your own key (BYOK) per Azure Information Protection non è stato creato per rispondere alle citazioni di polizia. La crittografia dei messaggi di Office 365 con BYOK per AIP è stata progettata per soddisfare i clienti che hanno la necessità di rispettare i propri obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) relativo alle richieste di dati di terze parti e alla "divulgazione dei dati del cliente" nelle condizioni per i [servizi online (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   

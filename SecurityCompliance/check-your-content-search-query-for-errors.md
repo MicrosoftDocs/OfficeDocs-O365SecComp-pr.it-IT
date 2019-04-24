@@ -1,5 +1,5 @@
 ---
-title: Verificare la query di Ricerca contenuto per gli errori
+title: Verificare la presenza di errori nella query di Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,13 +12,13 @@ search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Prima di eseguire la ricerca, controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio caratteri non supportati e operatori booleani minuscoli. Se viene visualizzato un errore, verrà suggerita una query riveduta.
 ms.openlocfilehash: 00612116f345e2a01471d5c83df77f4bc8db9ce5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243663"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Verificare la query di Ricerca contenuto per gli errori
+# <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 
 Quando si crea o si modifica una ricerca di contenuto, è possibile che Office 365 verifichi la query per i caratteri non supportati e gli operatori booleani che potrebbero non essere capitalizzati. Come? Basta fare clic su **Controlla query per errori** di battitura nella pagina query di una ricerca contenuto. 
   

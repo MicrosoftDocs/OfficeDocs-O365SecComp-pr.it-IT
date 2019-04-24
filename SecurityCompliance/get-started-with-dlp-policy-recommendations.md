@@ -1,5 +1,5 @@
 ---
-title: Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati
+title: Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,13 +12,13 @@ ms.collection:
 localization_priority: Normal
 description: Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Office 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella Home page del Centro sicurezza &amp; e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate ma non sono protetti da un criterio DLP.
 ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254092"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>Cominciare con i suggerimenti per i criteri di prevenzione della perdita dei dati
+# <a name="get-started-with-dlp-policy-recommendations"></a>Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
 
 Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Office 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella **Home** page del Centro sicurezza &amp; e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate, ma non sono protetti da un criterio di prevenzione della perdita di dati (DLP). 
   

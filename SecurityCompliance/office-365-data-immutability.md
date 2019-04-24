@@ -3,7 +3,6 @@ title: ImMutabilità dei dati di Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definisce e spiega l'immutabilità dei dati o i dati che devono essere individuabili e che non possono essere distrutti o modificati.
-ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.openlocfilehash: b23a62dd95ec2ca554997fc667d89e6979e5b747
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262868"
 ---
-# <a name="immutability-in-office-365"></a>Capacità di immutabilità in Office 365
+# <a name="immutability-in-office-365"></a>Immutabilità in Office 365
 Per alcune organizzazioni, la conformità alle normative, i requisiti di governance interna o il rischio di controversia legale richiedono la conservazione della posta elettronica e dei dati associati in un modulo individuabile. Tutti i dati del sistema devono essere individuabili e nessuno di essi può essere distrutto o alterato. Il termine standard del settore per questo è "immutabilità". 
 
 I metodi tradizionali per ottenere l'immutabilità hanno in genere funzionato spostando i messaggi di posta elettronica in un percorso di archiviazione separato e di sola lettura. Sebbene tali sistemi servano allo scopo di preservare gli elementi delle cassette postali per l'individuazione, spesso influiscono sull'esperienza degli utenti in modo significativo rimuovendo gli elementi conservati dal flusso di lavoro giornaliero consueto. Per i professionisti IT, questo approccio all'immutabilità richiede la distribuzione e la manutenzione continua di un'infrastruttura di archiviazione e server separata. Lo stesso Discovery viene eseguito con gli strumenti esterni al sistema di posta elettronica, con i costi di distribuzione e manutenzione associati.

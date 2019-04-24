@@ -1,5 +1,5 @@
 ---
-title: Controllo della posta indesiderata in uscita in Office 365
+title: Controllare la posta indesiderata in uscita in Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,24 +15,24 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se l'organizzazione invia una gran quantità di posta in blocco contrassegnata come posta indesiderata, potrebbe essere bloccata dall'invio di messaggi di posta elettronica con Office 365. Leggere questo articolo per ulteriori informazioni sul motivo per cui questo accade e su cosa è possibile fare.
-ms.openlocfilehash: 476e1ddff73493881708e050fb7834e6bd6b272a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9261c61d472554ae7d2f3d4134514d23b600ee87
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258214"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Controllo della posta indesiderata in uscita in Office 365
+# <a name="control-outbound-spam-in-office-365"></a>Controllare la posta indesiderata in uscita in Office 365
 
 Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché la nostra è un servizio condiviso.  Esistono molti clienti che si trovano dietro un pool di risorse condiviso, in cui se un cliente invia la posta indesiderata in uscita, può peggiorare la reputazione IP in uscita del servizio e influisce sulla corretta recapito della posta elettronica per gli altri clienti. È ingiusto per il cliente a se il cliente B spam e varie terze parti elenchi dei blocchi IP elencare l'indirizzo IP che utilizza.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Operazioni che possono essere eseguite dagli amministratori per controllare la posta indesiderata in uscita
 
-- **Abilitare le notifiche quando un account invia messaggi di posta indesiderata o arrestati**. Gli amministratori possono ottenere Ccn ogni volta che un messaggio è contrassegnato come posta indesiderata in uscita e inviato tramite il pool ad alto rischio. Monitorando questa cassetta postale, un amministratore può rilevare se dispone di un account compromesso nella propria rete o se il filtro di posta indesiderata contrassegna per un messaggio di posta elettronica come posta indesiderata.  Ulteriori informazioni sulla configurazione del criterio di posta indesiderata in uscita possono essere trovate [qui](configure-the-outbound-spam-policy.md).
+- **Abilitare le notifiche quando un account invia messaggi di posta indesiderata o arrestati**. Gli amministratori possono ottenere Ccn ogni volta che un messaggio è contrassegnato come posta indesiderata in uscita e inviato tramite il pool ad alto rischio. Monitorando questa cassetta postale, un amministratore può rilevare se dispone di un account compromesso nella propria rete o se il filtro di posta indesiderata contrassegna per un messaggio di posta elettronica come posta indesiderata. Per ulteriori informazioni sulla configurazione dei criteri di posta indesiderata in uscita, vedere [qui](configure-the-outbound-spam-policy.md).
  
 - **Esaminare manualmente i problemi di posta indesiderata dai provider di posta elettronica 3rd party**. Molti servizi di posta elettronica di terze parti come Outlook.com, Yahoo e AOL forniscono un ciclo di commenti e suggerimenti in cui se un utente del servizio contrassegna un messaggio di posta elettronica dal servizio come posta indesiderata, viene inserito e inviato nuovamente a noi per la revisione. Per ulteriori informazioni sul supporto dei mittenti per Outlook.com, fare clic [qui](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
-## <a name="what-eop-does-to-control-outbound-spam"></a>Cosa fa EOP per controllare la posta indesiderata in uscita 
+## <a name="what-eop-does-to-control-outbound-spam"></a>Cosa fa EOP per controllare la posta indesiderata in uscita
 
 1. **Segregazione del traffico in uscita in pool distinti di indirizzi IP**. Tutti i messaggi inviati dai clienti in uscita tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è posta indesiderata, viene instradato attraverso il pool di reCapito ad alto rischio. Questo pool IP contiene notifiche di stato non recapitabili e posta indesiderata. Il reCapito al destinatario previsto non è garantito poiché molte terze parti non accetteranno la posta elettronica poiché la qualità del messaggio di posta elettronica emesso.<br/><br/>Suddividendo il traffico in questo modo si garantisce che la posta elettronica di qualità inferiore (indesiderata, NDR backscatter) non trascini la reputazione dei pool di posta elettronica in uscita normali. Il pool ad alto rischio ha generalmente una bassa reputazione in molti ricevitori su Internet, anche se questo non è universale. 
 
@@ -57,7 +57,7 @@ Il gruppo di lavoro per la messaggistica, la telefonia mobile, antiAbuso di malw
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Notifica di esempio quando a un mittente viene impedito di inviare posta indesiderata in uscita.](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[Notifica di esempio quando un mittente è bloccato nell'invio di posta indesiderata in uscita](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 

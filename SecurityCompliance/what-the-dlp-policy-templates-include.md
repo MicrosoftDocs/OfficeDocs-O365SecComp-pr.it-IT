@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
 ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266841"
 ---
-# <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli del criterio DLP
+# <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
 
 La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
   

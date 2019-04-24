@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introduzione all'utilizzo di Office 365 cloud app Security
 ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254022"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Preparare l'ambiente per Office 365 Cloud App Security
   
@@ -46,7 +46,7 @@ Affinché Office 365 cloud app Security funzioni correttamente, è necessario ch
 
 È inoltre possibile accedere al centro sicurezza &amp; e conformità di Office 365. Di seguito è indicato un ottimo metodo per eseguire la procedura:
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. (questo porta al centro sicurezza &amp; e conformità).
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza &amp; e conformità.
     
 2. Passare a **avvisi** \> per la **gestione degli avvisi avanzati**.
     
@@ -99,7 +99,8 @@ In qualità di amministratore globale o amministratore della sicurezza, è possi
   
 ## <a name="step-8-create-a-maintenance-plan"></a>Passaggio 8: creare un piano di manutenzione
 
-Dopo aver installato e configurato Office 365 cloud app Security, è necessario eseguire alcune attività di utilizzo come amministratore globale di Office 365 o amministratore della protezione per l'organizzazione. Eseguendo queste attività, è possibile garantire che Office 365 cloud app Security sia configurato correttamente, che i criteri siano aggiornati e che l'organizzazione realizzi il valore da Office 365. Utilizzare questo articolo come guida per pianificare queste attività. Vedere [attività di utilizzo dopo la distribuzione di Office 365 cloud app Security](utilization-activities-for-ocas.md).
+Dopo aver installato e configurato Office 365 cloud app Security, è necessario eseguire alcune attività di utilizzo come amministratore globale di Office 365 o amministratore della protezione per l'organizzazione.
+Eseguendo queste attività, è possibile garantire che Office 365 cloud app Security sia configurato correttamente, che i criteri siano aggiornati e che l'organizzazione realizzi il valore da Office 365. Utilizzare questo articolo come guida per pianificare queste attività. Vedere [attività di utilizzo dopo la distribuzione di Office 365 cloud app Security](utilization-activities-for-ocas.md).
 
 ## <a name="optional-step-9-use-your-siem-server-with-office-365-cloud-app-security"></a>Optional Passaggio 9: utilizzare il server SIEM con Office 365 cloud app Security
 
@@ -107,7 +108,7 @@ L'organizzazione utilizza un server di gestione eventi e informazioni di sicurez
   
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Attivare Office 365 Cloud App Security](turn-on-office-365-cas.md)
+- [Attivazione di Office 365 cloud app Security](turn-on-office-365-cas.md)
     
 - Provare la [Guida del laboratorio](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) di testing per un'esperienza pratica in cui è possibile dimostrare le potenti funzionalità di Office 365 cloud app Security e creare una prova del concetto. 
     

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Introduce suggerimenti di sicurezza per i messaggi di posta elettronica filtrati dal filtro di posta indesiderata EOP e Office 365.
 ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261448"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
 
@@ -58,7 +58,7 @@ Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avvis
 
 I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori di Office 365 possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per ulteriori informazioni, vedere [abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](enable-or-disable-safety-tips.md).
   
-Se non si è d'accordo con il modo in cui Office 365 e EOP hanno categorizzato un messaggio (ovvero non è posta indesiderata o non è lecito), è possibile inviare i messaggi per l'analisi per migliorare l'esperienza. Per ulteriori informazioni, vedere [segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web](https://technet.microsoft.com/library/dn594557.aspx). È anche possibile fare clic sul collegamento commenti e suggerimenti sulla sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.
+Se non si è d'accordo con il modo in cui Office 365 e EOP hanno categorizzato un messaggio (ovvero non è posta indesiderata o non è lecito), è possibile inviare i messaggi per l'analisi per migliorare l'esperienza. Per ulteriori informazioni, vedere [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/library/dn594557.aspx). È anche possibile fare clic sul collegamento commenti e suggerimenti sulla sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.
   
 ## <a name="see-also"></a>Vedere anche
 

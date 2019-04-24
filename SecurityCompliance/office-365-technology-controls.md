@@ -3,23 +3,22 @@ title: Controlli delle tecnologie Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Riepilogo: Panoramica delle procedure di controllo della tecnologia Microsoft per Office 365.'
-ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262338"
 ---
 # <a name="office-365-technology-controls"></a>Controlli delle tecnologie Office 365 
 
@@ -34,7 +33,7 @@ L'archivio protetto elabora le richieste per le autorizzazioni che conferiscono 
 
 L'archivio protetto dei clienti per Office 365 può essere utile per soddisfare gli obblighi di conformità, ad esempio quelli presenti in FedRAMP e HIPAA, se sono necessarie procedure per l'autorizzazione esplicita di accesso ai dati. Nell'istanza rara quando un tecnico del servizio Microsoft ha bisogno dell'accesso ai dati, si concede l'accesso solo ai dati necessari per risolvere il problema e per un periodo di tempo limitato. Le azioni eseguite dal tecnico del supporto sono registrate per il controllo e sono accessibili tramite l' [API di gestione delle attività di Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e il [Centro sicurezza e conformità](http://protection.office.com/). L'archivio protetto dei clienti inserisce il cliente nel processo di approvazione dell'archivio protetto e fornisce loro la possibilità di controllare l'autorizzazione di Microsoft Access al proprio contenuto Exchange Online o SharePoint Online per le operazioni del servizio.
 
->**Nota**: l'archivio protetto dei clienti è disponibile in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) e come acquisto di un componente aggiuntivo, ma è necessario eseguire operazioni manuali nell'interfaccia di amministrazione di Office 365 (in impostazioni del servizio | Archivio protetto dei clienti) per abilitarlo. Per ulteriori informazioni, vedere [richieste dell'archivio clienti di Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+>**Nota**: l'archivio protetto dei clienti è disponibile in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) e come acquisto di un componente aggiuntivo, ma è necessario eseguire operazioni manuali nell'interfaccia di amministrazione di Microsoft 365 (in impostazioni del servizio | Archivio protetto dei clienti) per abilitarlo. Per ulteriori informazioni, vedere [Richieste di Customer Lockbox di Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 Tutte le richieste di servizio per Exchange Online e SharePoint Online vengono gestite dal sistema dell'archivio protetto. E con l'archivio protetto dei clienti, tutte le operazioni di servizio che richiedono l'accesso a questi servizi con l'esposizione ai dati dei clienti passano attraverso il processo di approvazione dell'archivio protetto e quindi consentono al cliente di approvare o rifiutare la richiesta successivamente.
  

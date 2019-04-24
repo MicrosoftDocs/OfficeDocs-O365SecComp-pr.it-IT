@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Se si invia un volume elevato di posta elettronica di dominio non registrato, si rischia che la posta elettronica venga bloccata. Leggere questo articolo per ulteriori informazioni.
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263988"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Messaggio di posta elettronica di dominio non registrato: informazioni utili
 

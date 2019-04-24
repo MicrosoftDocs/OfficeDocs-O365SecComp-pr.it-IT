@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Dopo aver configurato Office 365 Message Encryption (OME), è possibile personalizzare la configurazione della distribuzione in vari modi. Ad esempio, è possibile configurare la possibilità di abilitare i codici Pass una tantum, visualizzare il pulsante Proteggi in Outlook sul Web e altro ancora. Le attività descritte in questo articolo illustrano come fare.
 ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259814"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 
@@ -109,7 +109,7 @@ Per impostazione predefinita, **** il pulsante Proteggi in Outlook sul Web non �
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Abilitare la decrittografia sul posto del servizio dei messaggi di posta elettronica per gli utenti delle app di posta elettronica iOS
 
-L'app di posta iOS non può decrittografare i messaggi protetti con la crittografia dei messaggi di Office 365. In qualità di amministratore di Office 365, è possibile applicare la decrittografia sul posto di servizio per i messaggi recapitati all'app di posta elettronica iOS. Quando si sceglie di eseguire questa operazione, il servizio invia una copia decrittografata del messaggio al dispositivo iOS. Il messaggio viene archiviato come decrittografato nel dispositivo client. Il messaggio conserva anche informazioni sui diritti di utilizzo anche se l'app di posta iOS non applica i diritti di utilizzo sul fianco del client all'utente. Questo significa che l'utente può copiare o stampare il messaggio anche se in origine non aveva i diritti per farlo. Tuttavia, se l'utente tenta di eseguire un'azione che richiede il server di posta di Office 365, ad esempio l'inoltro del messaggio, il server non consentirà l'azione se l'utente non ha originariamente il diritto di utilizzo. Tuttavia, gli utenti finali possono aggirare non inoltrare la restrizione di utilizzo inoltrando il messaggio da un account diverso nell'app di posta iOS. indipendentemente dal fatto che sia stata configurata la decrittografia dei messaggi sul lato del servizio, gli allegati ai messaggi crittografati e protetti da diritti di posta elettronica non può essere visualizzato nell'app di posta elettronica iOS.
+L'app di posta iOS non può decrittografare i messaggi protetti con la crittografia dei messaggi di Office 365. In qualità di amministratore di Office 365, è possibile applicare la decrittografia sul posto di servizio per i messaggi recapitati all'app di posta elettronica iOS. Quando si sceglie di eseguire questa operazione, il servizio invia una copia decrittografata del messaggio al dispositivo iOS. Il messaggio viene archiviato come decrittografato nel dispositivo client. Il messaggio conserva anche informazioni sui diritti di utilizzo anche se l'app di posta iOS non applica i diritti di utilizzo sul fianco del client all'utente. Questo significa che l'utente può copiare o stampare il messaggio anche se in origine non aveva i diritti per farlo. Tuttavia, se l'utente tenta di eseguire un'azione che richiede il server di posta di Office 365, ad esempio l'inoltro del messaggio, il server non consentirà l'azione se l'utente non ha originariamente il diritto di utilizzo. Tuttavia, gli utenti finali possono aggirare non inoltrare la restrizione di utilizzo inoltrando il messaggio da un account diverso nell'app di posta elettronica iOS. Indipendentemente dal fatto che sia stata configurata la decrittografia sul posto del servizio della posta, gli allegati ai messaggi crittografati e protetti da diritti non possono essere visualizzati nell'app mail iOS.
   
 Se si sceglie di non consentire l'invio di messaggi decrittografati agli utenti delle app di posta elettronica iOS, gli utenti riceveranno un messaggio che indica che non dispongono dei diritti per visualizzare il messaggio. Per impostazione predefinita, la decrittografia sul posto di servizio dei messaggi di posta elettronica non è abilitata.
   

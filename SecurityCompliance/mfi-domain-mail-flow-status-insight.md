@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sulla panoramica dello stato del flusso di posta di dominio principale nel dashboard del flusso di posta nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267037"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Informazioni sullo stato del flusso di posta principale del dominio
 

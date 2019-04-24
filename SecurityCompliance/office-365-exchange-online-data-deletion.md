@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: La modalità di gestione delle eliminazioni dei dati non consentiti in Exchange Online.
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262688"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Eliminazione dei dati di Exchange online in Office 365
 In Exchange Online, esistono due tipi di eliminazioni: eliminazioni morbide e eliminazioni dure. Questo si applica alle cassette postali e agli elementi all'interno di una cassetta postale.

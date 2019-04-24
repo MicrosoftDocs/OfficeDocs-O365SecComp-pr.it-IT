@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza e conformità in modo che Office 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche in Office 365.
 ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258678"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Creare avvisi attività in Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "31813987"
 > [!NOTE]
 > Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per gestire gli avvisi di attività, è necessario essere assegnati al ruolo Configurazione organizzazione nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security _AMP_ Compliance Center](grant-access-to-the-security-and-compliance-center.md).
     

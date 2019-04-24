@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: "Informazioni sulle linee guida per la preparazione dei file di case di dati di Office 365 per l'analisi con Office 365 Advanced eDiscovery.  "
 ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261034"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo in Office 365 Advanced eDiscovery
 
@@ -39,7 +39,7 @@ I file dei casi vengono caricati in Advanced eDiscovery durante la **preparazion
     
 - **Tipo di file e nome**:
     
-  - Advanced eDiscovery è in grado di elaborare file di vari formati ed estrarre i file nativi caricati in un formato \*standard, ad esempio. TXT, HTML o. XML. l'elaborazione dei file di testo è più veloce rispetto ai file nativi. I file di testo estratti vengono archiviati nella cartella case.
+  - Advanced eDiscovery è in grado di elaborare file di vari formati ed estrarre i file nativi caricati in un formato \*standard, ad esempio. TXT, HTML o. XML. L'elaborazione dei file di testo è più veloce rispetto ai file nativi. I file di testo estratti vengono archiviati nella cartella case.
     
   - Non caricare file che non possono essere estratti, ad esempio file di sistema o immagini grafiche. Questi file potrebbero ritardare l'elaborazione.
     

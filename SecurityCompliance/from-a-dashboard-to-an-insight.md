@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come passare da un dashboard a un'intuizione con azioni consigliate nel centro &amp; sicurezza e conformità.
 ms.openlocfilehash: 732c78b35a60c1686bc382931688dec08080f8c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255594"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procedura: da una dashboard alle informazioni dettagliate
 

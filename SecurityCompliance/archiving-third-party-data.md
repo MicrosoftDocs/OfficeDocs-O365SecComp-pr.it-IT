@@ -3,7 +3,7 @@ title: Archiviazione dei dati di terze parti in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Gli amministratori possono importare i dati di terze parti dalle piattaforme di social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti alle cassette postali nell'organizzazione di Office 365. In questo modo è possibile archiviare i dati da Facebook, Twitter e origini dati in Office 365. È quindi possibile applicare le funzionalità di conformità di Office 365 (come la conservazione legale, la ricerca del contenuto e i criteri di ritenzione) ai dati di terze parti.
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249608"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archiviazione di dati di terze parti in Office 365
 
@@ -505,7 +505,7 @@ Di seguito sono riportati i passaggi per la creazione e la configurazione di una
     
     - Abilitare il blocco per controversia legale nella cassetta postale di dati di terze parti. È anche possibile applicare un criterio di conservazione di Office 365 nel centro sicurezza e conformità. Se si inserisce questa cassetta postale in attesa, verranno mantenuti gli elementi di dati di terze parti (a tempo indeterminato o per una durata specificata) e impedire che vengano eliminati dalla cassetta postale. Vedere uno dei seguenti argomenti:
     
-      - [Blocco per controversia legale di una cassetta postale](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Creare un blocco per controversia legale](create-a-litigation-hold.md)
     
       - [Panoramica dei criteri di conservazione in Office 365](retention-policies.md)
     
@@ -521,7 +521,7 @@ Il passaggio successivo consiste nel configurare cassette postali degli utenti p
     
 2. Inserire le cassette postali degli utenti sul blocco per controversia legale o applicare un criterio di conservazione di Office 365; vedere uno dei seguenti argomenti: 
     
-    - [Blocco per controversia legale di una cassetta postale](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Creare un blocco per controversia legale](create-a-litigation-hold.md)
     
     - [Panoramica dei criteri di conservazione in Office 365](retention-policies.md)
     
@@ -573,7 +573,7 @@ Per revocare il consenso per un connettore di dati di terze parti, è possibile 
     |**Data** <br/> |Sì  <br/> |La data in cui l'elemento è stato originariamente creato o inserito nell'origine dati del cliente; ad esempio, la data in cui è stato twittato un messaggio di Twitter.  <br/> | `01 NOV 2015` <br/> |
     |**CORPO** <br/> |No  <br/> |Il contenuto del messaggio o del post. Per alcune origini dati, il contenuto di questa proprietà può corrispondere al contenuto della proprietà **SUBJECT**. Durante il processo di importazione, il connettore partner tenterà di mantenere la massima fedeltà possibile rispetto all'origine del contenuto. Se possibile, i file, gli elementi grafici o altri contenuti del corpo dell'elemento di origine sono inclusi in questa proprietà. In caso contrario, il contenuto dell'elemento di origine è incluso nella proprietà **ATTACHMENT**. Il contenuto di questa proprietà dipenderà dal connettore del partner e dalla funzionalità della piattaforma di origine.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**ALLEGATO** <br/> |No  <br/> |Se un elemento nell'origine dati, ad esempio un tweet in Twitter o una conversazione di messaggistica istantanea, ha un file allegato o include immagini, la connessione del partner tenterà innanzitutto di includere gli allegati nella proprietà **Body** . Se non è possibile, allora viene aggiunto alla proprietà * * ATTACHMENT * *. Altri esempi di allegati sono i Like su Facebook, i metadati dell'origine del contenuto e le risposte a un messaggio o a un post.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sì  <br/> | Si tratta di una proprietà multivalore, che viene creata e compilata dal connettore partner. Il formato di questa proprietà è `IPM.NOTE.Source.Event`. (Questa proprietà deve iniziare con `IPM.NOTE`; questo formato è simile a quello della classe `IPM.NOTE.X` Message). Questa proprietà include le informazioni seguenti:  <br/><br/>`Source` -Indica l'origine dati di terze parti; ad esempio, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event` -Indica il tipo di attività eseguita nell'origine dati di terze parti che ha prodotto gli elementi; ad esempio, un tweet in Twitter o un post in Facebook. Gli eventi sono specifici per l'origine dati.  <br/> <br/>  Uno scopo di questa proprietà risiede nel filtrare gli elementi specifici in base all'origine dati in cui un elemento ha avuto origine o in base al tipo di evento. In una ricerca eDiscovery, ad esempio, è possibile creare una query di ricerca per trovare tutti i tweet pubblicati da un utente specifico.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Sì  <br/> | Si tratta di una proprietà multivalore, che viene creata e compilata dal connettore partner. Il formato di questa proprietà è `IPM.NOTE.Source.Event`. (Questa proprietà deve iniziare con `IPM.NOTE`; questo formato è simile a quello della classe `IPM.NOTE.X` Message). Questa proprietà include le informazioni seguenti:  <br/><br/>`Source`-Indica l'origine dati di terze parti; ad esempio, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`-Indica il tipo di attività eseguita nell'origine dati di terze parti che ha prodotto gli elementi; ad esempio, un tweet in Twitter o un post in Facebook. Gli eventi sono specifici per l'origine dati.  <br/> <br/>  Uno scopo di questa proprietà risiede nel filtrare gli elementi specifici in base all'origine dati in cui un elemento ha avuto origine o in base al tipo di evento. In una ricerca eDiscovery, ad esempio, è possibile creare una query di ricerca per trovare tutti i tweet pubblicati da un utente specifico.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - Quando gli elementi vengono importati correttamente nelle cassette postali di Office 365, viene restituito un identificatore univoco al chiamante come parte della risposta HTTP. Questo identificatore, denominato `x-IngestionCorrelationID`, può essere utilizzato per la risoluzione dei problemi successivi da parte di partner per il monitoraggio end-to-end degli elementi. Si consiglia di raccogliere queste informazioni e registrarle nel modo più appropriato. Di seguito è riportato un esempio di una risposta HTTP che mostra l'identificatore:
 
@@ -599,5 +599,5 @@ Per revocare il consenso per un connettore di dati di terze parti, è possibile 
     
   - [Ricerca contenuto in Office 365](content-search.md)
     
-  - [Query delle parole chiave e condizioni di ricerca per ricerca contenuto](keyword-queries-and-search-conditions.md)
+  - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
  

@@ -1,5 +1,5 @@
 ---
-title: Eseguire ricerche nel log di controllo per le attività di utenti e amministratori in Office 365
+title: Eseguire una ricerca nel registro di controllo per l'attività di utenti e amministratori in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: "Il registro di controllo di Office 365 è un log di controllo unificato. Perché un log di controllo unificato? Poiché gli eventi provenienti dalla maggior parte dei servizi di Office 365 in cui si esegue la sottoscrizione dell'organizzazione vengono registrati in un singolo log di controllo che è possibile ricercare. Questo significa che è possibile cercare l'attività di utenti e amministratori in questi servizi:"
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265858"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Eseguire ricerche nel log di controllo per le attività di utenti e amministratori in Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Eseguire una ricerca nel registro di controllo per l'attività di utenti e amministratori in Office 365
 
 Il registro di controllo di Office 365 è un log di controllo unificato. Perché un log di controllo unificato? Poiché gli eventi provenienti dalla maggior parte dei servizi di Office 365 in cui si esegue la sottoscrizione dell'organizzazione vengono registrati in un singolo log di controllo che è possibile ricercare. Questo significa che è possibile cercare l'attività di utenti e amministratori in questi servizi: 
   

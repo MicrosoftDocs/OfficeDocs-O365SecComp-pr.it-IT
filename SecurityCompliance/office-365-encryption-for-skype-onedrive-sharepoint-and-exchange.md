@@ -15,15 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Riepilogo: Descrizione della crittografia per Skype, OneDrive, SharePoint e Exchange Online.'
 ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262788"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Crittografia di Office 365 per Skype for business, OneDrive for business, SharePoint Online ed Exchange Online
 
-Office 365 è un ambiente altamente sicuro che offre una protezione estesa in più livelli: protezione dei data center fisici, sicurezza della rete, sicurezza dell'accesso, sicurezza delle applicazioni e sicurezza dei dati.
+Office 365 è un ambiente con protezione avanzata che offre una protezione estesa in più livelli: sicurezza data center fisico, sicurezza di rete, sicurezza accessi, sicurezza applicazioni e sicurezza dati.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -44,12 +44,12 @@ Diversi carichi di lavoro in Office 365 archiviano i dati in SharePoint Online, 
     - Il database del contenuto è protetto dai controlli di accesso ai database e dalla crittografia a riposo. La crittografia viene eseguita utilizzando la [crittografia TranspareNt Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) in [Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). Il database SQL di Azure è un servizio di database relazionale generico in Microsoft Azure che supporta strutture quali dati relazionali, JSON, spaziali e XML. Questi segreti sono a livello di servizio per SharePoint Online, non a livello di tenant. Questi segreti (a volte denominati tasti Master) sono archiviati in un repository sicuro separato denominato archivio chiavi. Transparent garantisce la sicurezza a riposo sia per il database attivo che per i backup di database e i registri delle transazioni.
     - Quando i clienti forniscono il tasto facoltativo, la chiave del cliente viene archiviata nel Vault Key di Azure e il servizio utilizza la chiave per crittografare una chiave del tenant, utilizzata per crittografare una chiave del sito, che viene quindi utilizzata per crittografare le chiavi a livello di file. In sostanza, viene introdotta una nuova gerarchia di chiavi quando il cliente fornisce una chiave.
 - La mappa utilizzata per riassemblare il file è memorizzata nel database del contenuto insieme alle chiavi crittografate, separatamente dalla chiave master necessaria per decrittografarli.
-- Ogni account di archiviazione di Azure dispone di credenziali univoche per ogni tipo di accesso (lettura, scrittura, enumerazione ed eliminazione). Ogni set di credenziali è contenuto nell'archivio delle chiavi sicure ed è regolarmente aggiornato. Come descritto in alto, esistono tre tipi diversi di archivi, ognuno con una funzione distinta:
+- Ogni account di archiviazione di Azure dispone di credenziali univoche per ogni tipo di accesso (lettura, scrittura, enumerazione ed eliminazione). Ogni set di credenziali è conservato nell'archivio chiavi protetto e viene regolarmente aggiornato. Come descritto in alto, esistono tre tipi diversi di archivi, ognuno con una funzione distinta:
     - I dati dei clienti vengono archiviati come BLOB crittografati nello spazio di archiviazione di Azure. La chiave di ogni blocco di dati dei clienti viene crittografata e memorizzata separatamente nel database del contenuto. I dati del cliente stesso non contengano alcun indizio su come può essere decrittografato.
-    - Il database del contenuto è un database di SQL Server. Contiene la mappa necessaria per individuare e riassemblare gli oggetti BLOB dei dati del cliente in archiviazione di Azure, nonché le chiavi necessarie per crittografare tali BLOB. Tuttavia, il set di chiavi è crittografato (come spiegato in precedenza) e conservato in un archivio chiave separato.
+    - Il database del contenuto è un database SQL Server. Contiene la mappa necessaria per individuare e riassemblare gli oggetti BLOB dei dati del cliente in archiviazione di Azure, nonché le chiavi necessarie per crittografare tali BLOB. Tuttavia, il set di chiavi è crittografato (come spiegato in precedenza) e conservato in un archivio chiave separato.
     - L'archivio chiavi è fisicamente separato dal database del contenuto e dallo spazio di archiviazione di Azure. Contiene le credenziali per ogni contenitore di archiviazione di Azure e la chiave master per il set di chiavi crittografate contenute nel database del contenuto.
 
-Ognuno di questi tre componenti di archiviazione – l'archivio BLOB di Azure, il database del contenuto e l'archivio delle chiavi – è fisicamente separato. Le informazioni contenute in uno dei componenti sono inutilizzabili da solo. Senza accesso a tutti e tre, non è possibile recuperare le chiavi per i blocchi, decrittografare i tasti per renderli utilizzabili, associare le chiavi ai blocchi corrispondenti, decrittografare ogni blocco o ricostruire un documento dai relativi blocchi costitutivi.
+Ognuno di questi tre componenti di archiviazione – l'archivio BLOB di Azure, il database del contenuto e l'archivio delle chiavi – è fisicamente separato. Le informazioni contenute in uno dei componenti sono inutilizzabili da sole. Senza accesso a tutti e tre, non è possibile recuperare le chiavi per i blocchi, decrittografare i tasti per renderli utilizzabili, associare le chiavi ai blocchi corrispondenti, decrittografare ogni blocco o ricostruire un documento dai relativi blocchi costitutivi.
 
 I certificati di BitLocker, che proteggono i volumi del disco fisico nei computer nel centro dati, vengono archiviati in un archivio sicuro (l'archivio segreto di SharePoint Online) protetto dalla chiave della farm.
 
@@ -73,8 +73,8 @@ Gli elementi di elenco sono parti più piccole dei dati del cliente creati ad-ho
 
 In OneDrive for Business e SharePoint Online, esistono due scenari in cui i dati entrano ed escono dai data center.
 
-- **Comunicazione client con il server** -comunicazione con OneDrive for business su Internet utilizza connessioni SSL/TLS. Tutte le connessioni SSL vengono stabilite utilizzando chiavi a 2048 bit.
-- **Spostamento dei dati tra** i datacenter: il motivo principale per spostare i dati tra i datacenter è la replica geografica per abilitare il ripristino di emergenza. Ad esempio, i registri delle transazioni di SQL Server e i Delta di archiviazione BLOB passano lungo questa pipe. Anche se questi dati sono già trasmessi tramite una rete privata, è inoltre possibile proteggerli con la crittografia Best-in-class.
+- **Comunicazione client con il server** -comunicazione con OneDrive for business su Internet utilizza connessioni SSL/TLS. Tutte le connessioni SSL vengono stabilite mediante chiavi a 2048 bit.
+- **Spostamento dei dati tra** i datacenter: il motivo principale per spostare i dati tra i datacenter è la replica geografica per abilitare il ripristino di emergenza. Ad esempio, i registri transazioni di SQL Server e le differenze dell'archiviazione BLOB viaggiano lungo questa pipe. Mentre questi dati vengono già trasmessi utilizzando una rete privata, sono ulteriormente protetti mediante la migliore crittografia.
 
 ## <a name="exchange-online"></a>Exchange Online
 

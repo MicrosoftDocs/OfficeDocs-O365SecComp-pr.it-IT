@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Sintesi: una spiegazione della crittografia in Azure.'
 ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265878"
 ---
 # <a name="office-365-encryption-in-azure"></a>Crittografia di Office 365 in Azure
 
@@ -49,4 +49,4 @@ Alcuni servizi di Office 365 utilizzano Azure per l'archiviazione dei dati. Ad e
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 
-La gestione sicura delle chiavi non è solo la base per le procedure consigliate per la crittografia; è inoltre essenziale per la protezione dei dati nel cloud. Il [Vault Key di Azure](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) consente di crittografare le chiavi e i piccoli segreti come password che utilizzano chiavi archiviate in moduli di sicurezza hardware (HSM). Azure Key Vault è la soluzione consigliata da Microsoft per la gestione e il controllo dell'accesso alle chiavi di crittografia utilizzate dai servizi cloud. È possibile assegnare le autorizzazioni per i tasti di accesso ai servizi o agli utenti con account di Azure Active Directory. Il Vault Key di Azure allevia le organizzazioni della necessità di configurare, applicare patch e gestire HSM e il software di gestione delle chiavi. Con Vault Key di Azure, Microsoft non vede mai le chiavi e le applicazioni non hanno accesso diretto a loro; mantenere il controllo. È inoltre possibile importare o generare chiavi in HSM. le organizzazioni che dispongono di un abbonamento che include Azure Information Protection possono configurare il tenant di Azure Information Protection per utilizzare una chiave gestita dal cliente per [portare la propria chiave](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK) e [accedere il relativo utilizzo](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).
+La gestione sicura delle chiavi non è solo la base per le procedure consigliate per la crittografia; è inoltre essenziale per la protezione dei dati nel cloud. Il [Vault Key di Azure](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) consente di crittografare le chiavi e i piccoli segreti come password che utilizzano chiavi archiviate in moduli di sicurezza hardware (HSM). Azure Key Vault è la soluzione consigliata da Microsoft per la gestione e il controllo dell'accesso alle chiavi di crittografia utilizzate dai servizi cloud. È possibile assegnare le autorizzazioni per i tasti di accesso ai servizi o agli utenti con account di Azure Active Directory. Il Vault Key di Azure allevia le organizzazioni della necessità di configurare, applicare patch e gestire HSM e il software di gestione delle chiavi. Con Vault Key di Azure, Microsoft non vede mai le chiavi e le applicazioni non hanno accesso diretto a loro; mantenere il controllo. È inoltre possibile importare o generare chiavi in HSM. Le organizzazioni che dispongono di un abbonamento che include Azure Information Protection possono configurare il tenant di Azure Information Protection per utilizzare una chiave gestita dal cliente per [portare la propria chiave](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) e [registrarne l'utilizzo](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).

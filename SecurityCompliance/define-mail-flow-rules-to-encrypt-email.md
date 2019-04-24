@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a creare regole del flusso di posta (regole di trasporto) per crittografare e decrittografare i messaggi utilizzando la crittografia dei messaggi di Office 365.
 ms.openlocfilehash: 1f5b0ff9be5994f036d2367d0b15744c24f2bbe0
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257704"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 
-In qualità di amministratore globale di Office 365, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per proteggere i messaggi di posta elettronica inviati e ricevuti. È possibile configurare le regole per crittografare i messaggi di posta elettronica in uscita e rimuovere la crittografia dai messaggi crittografati provenienti dall'interno dell'organizzazione o dalle risposte ai messaggi crittografati inviati dall'organizzazione. Per creare queste regole, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell. Oltre alle regole di crittografia generali, è anche possibile scegliere di abilitare o disabilitare le singole opzioni di crittografia dei messaggi per gli utenti finali.
+In qualità di amministratore globale di Office 365, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per proteggere i messaggi di posta elettronica inviati e ricevuti. È possibile configurare le regole per crittografare i messaggi di posta elettronica in uscita e rimuovere la crittografia dai messaggi crittografati provenienti dall'interno dell'organizzazione o dalle risposte ai messaggi crittografati inviati dall'organizzazione. Per creare queste regole, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell. Oltre alle regole di crittografia generali, è inoltre possibile scegliere di abilitare o disabilitare le opzioni di crittografia dei messaggi individuali per gli utenti finali.
 
 ||
 |:-----|
@@ -93,7 +93,7 @@ Per informazioni sui componenti che compongono le regole del flusso di posta e s
 
 7. Nell'elenco **eseguire le operazioni seguenti** rimuovere tutte le azioni assegnate per **modificare la sicurezza** \> dei messaggi **applicare la versione precedente di ome**.
 
-8. Scegliere **Save**.
+8. Fare clic su **Salva**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Creare regole del flusso di posta per la crittografia dei messaggi di Office 365 senza le nuove funzionalità
 
@@ -133,7 +133,7 @@ Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzi
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utilizzare PowerShell di Exchange Online per creare una regola del flusso di posta per la crittografia dei messaggi di posta elettronica senza le nuove funzionalità OME
 
-1. Connettersi a PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connettersi a PowerShell per Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Creare una regola utilizzando il cmdlet **New-TransportRule** e impostare il parametro _ApplyOME_ su `$true`.
 
@@ -151,11 +151,11 @@ Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzi
 
    - Il parametro _SentToScope_ consente di specificare la posizione dei destinatari del messaggio. In questo esempio, la cassetta postale del destinatario si trova in Hotmail e non fa parte dell'organizzazione di Office 365, quindi `NotInOrganization` viene utilizzato il valore.
 
-   Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+   Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Rimuovere la crittografia dalle risposte di posta elettronica crittografate senza le nuove funzionalità OME
 
-Quando gli utenti di posta elettronica inviano messaggi crittografati, i destinatari di tali messaggi possono rispondere con risposte crittografate. È possibile creare regole del flusso di posta per rimuovere automaticamente la crittografia dalle risposte in modo che gli utenti di posta elettronica nell'organizzazione non debbano accedere al portale di crittografia per visualizzarli. È possibile utilizzare l'interfaccia di amministrazione di Exchange o i cmdlet di Windows PowerShell per definire queste regole. Se non si utilizzano ancora le nuove funzionalità OME, è possibile decrittografare solo i messaggi inviati dall'interno dell'organizzazione o i messaggi che rispondono ai messaggi inviati dall'interno dell'organizzazione. Non è possibile decrittografare i messaggi crittografati provenienti dall'esterno dell'organizzazione.
+Quando gli utenti di posta elettronica inviano messaggi crittografati, i relativi destinatari possono rispondere con risposte crittografate. È possibile creare regole del flusso di posta per rimuovere automaticamente la crittografia dalle risposte in modo che gli utenti di posta elettronica nell'organizzazione non debbano accedere al portale di crittografia per visualizzarli. È possibile utilizzare l'interfaccia di amministrazione di Exchange o i cmdlet di Windows PowerShell per definire queste regole. Se non si utilizzano ancora le nuove funzionalità OME, è possibile decrittografare solo i messaggi inviati dall'interno dell'organizzazione o i messaggi che rispondono ai messaggi inviati dall'interno dell'organizzazione. Non è possibile decrittografare i messaggi crittografati provenienti dall'esterno dell'organizzazione.
 
 #### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola per la rimozione della crittografia dalle risposte di posta elettronica crittografate senza le nuove funzionalità OME
 
@@ -177,7 +177,7 @@ Quando gli utenti di posta elettronica inviano messaggi crittografati, i destina
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utilizzo di PowerShell di Exchange Online per creare una regola per rimuovere la crittografia dalle risposte di posta elettronica crittografate senza le nuove funzionalità OME
 
-1. Connettersi a PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connettersi a PowerShell per Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Creare una regola utilizzando il cmdlet **New-TransportRule** e impostare il parametro _RemoveOME_ su `$true`.
 
@@ -199,7 +199,7 @@ Quando gli utenti di posta elettronica inviano messaggi crittografati, i destina
 
      - L'indirizzo di posta elettronica del destinatario si trova in un dominio accettato configurato come dominio autorevole o come dominio di inoltro interno nell'organizzazione _e_ il messaggio è stato inviato o ricevuto tramite una connessione autenticata.
 
-Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -207,7 +207,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule]
 
 [Configurare le nuove funzionalità di Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md)
 
-[Aggiungere personalizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md)
+[Aggiungere una personalizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md)
 
 [Regole del flusso di posta (regole di trasporto) in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=506707)
 

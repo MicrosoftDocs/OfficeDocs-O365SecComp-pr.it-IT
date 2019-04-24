@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Ottenere una panoramica delle pagine di avviso che è possibile visualizzare quando Office 365 Advanced Threat Protection è al lavoro.
 ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251286"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pagine di avviso per collegamenti sicuri ATP di Office 365
 

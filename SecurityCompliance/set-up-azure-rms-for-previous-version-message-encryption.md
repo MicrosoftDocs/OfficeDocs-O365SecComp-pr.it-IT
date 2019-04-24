@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versione precedente della crittografia dei messaggi di Office 365 dipende da Microsoft Azure Rights Management (precedentemente noto come Windows Azure Active Directory Rights Management).
 ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266888"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
 
@@ -107,7 +107,7 @@ Un dominio di pubblicazione trusted è un file XML che contiene informazioni sul
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. Per verificare di aver importato correttamente il dominio di pubblicazione trusted e abilitato Azure Rights Management, utilizzare il cmdlet Test-IRMConfiguration per testare la funzionalità di Azure Rights Management. Per ulteriori informazioni, vedere l'esempio 1 in [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
+8. Per verificare di aver importato correttamente il dominio di pubblicazione trusted e abilitato Azure Rights Management, utilizzare il cmdlet Test-IRMConfiguration per testare la funzionalità di Azure Rights Management. Per informazioni dettagliate, vedere "Esempio 1" in [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>La versione precedente di OME è stata configurata con Active Directory Rights Management non Azure Information Protection, cosa fare?
 <a name="importTPDs"> </a>

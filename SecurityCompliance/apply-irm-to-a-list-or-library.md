@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
 ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244029"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
@@ -77,7 +77,7 @@ ms.locfileid: "30220416"
 ## <a name="what-is-information-rights-management"></a>Che cos'è Information Rights Management?
 <a name="__toc256598175"> </a>
 
-Information Rights Management (IRM) consente di limitare le operazioni che gli utenti possono eseguire sui file scaricati da elenchi o raccolte. IRM consente di crittografare i file scaricati e limita l'insieme di utenti e programmi autorizzati a decrittografare tali file. IRM può anche limitare i diritti degli utenti autorizzati a leggere i file in modo che non possano intraprendere azioni come la stampa di copie dei file o la copia di testo da essi.
+Information Rights Management (IRM) consente di limitare le operazioni che gli utenti possono eseguire sui file scaricati da elenchi o raccolte. IRM consente di crittografare i file scaricati e limitare il gruppo di utenti e programmi autorizzati a decrittografare tali file. IRM può anche limitare i diritti degli utenti autorizzati a leggere i file in modo che non possano intraprendere azioni come la stampa di copie dei file o la copia di testo da essi.
   
 È possibile utilizzare IRM in elenchi o raccolte per limitare la diffusione di contenuto riservato. Se ad esempio si sta creando una raccolta documenti per condividere informazioni sui prodotti imminenti con rappresentanti di marketing selezionati, è possibile utilizzare IRM per impedire a tali utenti di condividere questo contenuto con altri dipendenti dell'azienda.
   
@@ -133,7 +133,7 @@ I tipi di restrizioni applicati a un file quando vengono scaricati da un elenco 
 |:-----|:-----|
 |Gestione delle autorizzazioni, gestione sito Web  <br/> |**Controllo completo** (come definito dal programma client): questa autorizzazione consente in genere a un utente di leggere, modificare, copiare, salvare e modificare le autorizzazioni per il contenuto protetto.  <br/> |
 |Modifica elementi, gestione elenchi, aggiunta e personalizzazione pagine  <br/> |**Modifica**, **copia**e **Salva**: un utente può stampare un file solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina impostazioni di Information Rights Management per l'elenco o la raccolta.  <br/> |
-|Visualizzazione elementi  <br/> |**Lettura**: un utente può leggere il documento, ma non è in grado di copiarlo o modificarne il contenuto. Un utente può stampare solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina delle impostazioni di Information Rights Management per l'elenco o la raccolta.<br/> |
+|Visualizzazione elementi  <br/> |**Lettura**: un utente può leggere il documento, ma non è in grado di copiarlo o modificarne il contenuto. Un utente può stampare solo se la casella **di controllo Consenti agli utenti di stampare i documenti** è selezionata nella pagina delle impostazioni di Information Rights Management per l'elenco o la raccolta.  <br/> |
 |Altro  <br/> |Nessun'altra autorizzazione corrisponde direttamente alle autorizzazioni IRM.  <br/> |
    
 Quando si abilita IRM per un elenco o una raccolta in SharePoint Server 2013, è possibile proteggere solo i tipi di file nell'elenco o nella raccolta di cui è installato un Protector su tutti i server Web front-end. Un Protector è un programma che controlla la crittografia e la decrittografia dei file con diritti gestiti di un formato di file specifico. SharePoint include protettori per i seguenti tipi di file:

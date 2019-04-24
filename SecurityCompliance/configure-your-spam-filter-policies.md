@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base dei filtri per la posta indesiderata includono la selezione dell'azione da intraprendere per i messaggi identificati come posta indesiderata e la scelta se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche.
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258814"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
   
-Le impostazioni di base dei filtri per la posta indesiderata includono la selezione dell'azione da intraprendere per i messaggi identificati come posta Le impostazioni dei criteri di filtro della posta inDesiderata vengono applicate solo ai messaggi in ingresso. È possibile modificare i criteri di filtro della posta indesiderata predefiniti per configurare le impostazioni del filtro di posta indesiderata a livello aziendale e creare criteri di filtro della posta indesiderata personalizzati, quindi applicarli a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sui criteri predefiniti. È possibile modificare l'ordine in cui i criteri personalizzati vengono eseguiti modificando la priorità di ogni criterio personalizzato. Tuttavia, solo il criterio di priorità più alto verrà applicato se più criteri soddisfano i criteri impostati. 
+Le impostazioni di base dei filtri per la posta indesiderata includono la selezione dell'azione da intraprendere per i messaggi identificati come posta Le impostazioni dei criteri di filtro della posta inDesiderata vengono applicate solo ai messaggi in ingresso. È possibile modificare i criteri di filtro della posta indesiderata predefiniti per configurare le impostazioni del filtro di posta indesiderata a livello aziendale e creare criteri di filtro della posta indesiderata personalizzati, quindi applicarli a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sui criteri predefiniti. È possibile modificare l'ordine in cui i criteri personalizzati vengono eseguiti modificando la priorità di ogni criterio personalizzato. Tuttavia, solo il criterio di priorità più alto verrà applicato se più criteri soddisfano i criteri impostati.
   
 > [!IMPORTANT]
 > Per i clienti autonomi di Exchange Online Protection (EOP): per impostazione predefinita, i filtri di posta indesiderata di EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata di ogni destinatario. Tuttavia, per assicurarsi che il **messaggio di spostamento all'azione della cartella posta** indesiderata funzioni per le cassette postali locali, è necessario configurare le regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 

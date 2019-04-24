@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Per evitare il phishing, Office 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
 ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253934"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 
@@ -35,7 +35,7 @@ Microsoft inizierà a implementare l'applicazione dei criteri descritti in quest
   
 ## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>In che modo Office 365 applica l'utilizzo di un indirizzo valido da: per impedire attacchi di phishing
 
-Office 365 sta apportando modifiche al modo in cui applica l'utilizzo dell'indirizzo from: nei messaggi ricevuti per garantire una maggiore protezione dagli attacchi di phishing. In questo articolo:
+Office 365 sta apportando modifiche al modo in cui applica l'utilizzo dell'indirizzo from: nei messaggi ricevuti per garantire una maggiore protezione dagli attacchi di phishing. Contenuto dell'articolo:
   
 - [Tutti i messaggi devono includere un indirizzo valido da:](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
@@ -121,7 +121,7 @@ From: "Office 365" <sender@contoso.com> (Sent by a process)
 
 Per gli indirizzi da: che includono un valore per il nome visualizzato, si applicano le regole seguenti:
   
-- Se l'indirizzo del mittente include un nome visualizzato e il nome visualizzato include una virgola, il nome visualizzato deve essere racchiuso tra virgolette. Per esempio:
+- Se l'indirizzo del mittente include un nome visualizzato e il nome visualizzato include una virgola, il nome visualizzato deve essere racchiuso tra virgolette. Ad esempio:
     
     L'esempio seguente è valido:
     

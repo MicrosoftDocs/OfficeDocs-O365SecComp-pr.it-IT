@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261582"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web 
 

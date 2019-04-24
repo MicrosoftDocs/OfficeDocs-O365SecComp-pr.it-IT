@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: Spiegazione di come funziona la registrazione interna per i team di ingegneri di Office 365.
 ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262678"
 ---
-# <a name="internal-logging-for-office-365-engineering"></a>Log interni per Office 365 Engineering
+# <a name="internal-logging-for-office-365-engineering"></a>Registrazione interna per Office 365 Engineering
 Oltre agli eventi e ai dati dei registri disponibili per i clienti, è presente anche un sistema di raccolta dati interno disponibile per gli ingegneri di Office 365. Molti tipi diversi di dati di log vengono caricati dai server di Office 365 a un servizio di elaborazione dati di grandi dimensioni interno denominato Cosmos. Ogni team di servizio carica i registri di controllo dai rispettivi server nel database Cosmos per l'aggregazione e l'analisi. Questo trasferimento dei dati si verifica su una connessione TLS convalidata FIPS 140-2 su porte e protocolli approvati utilizzando uno strumento di automazione proprietaria denominato Office Data Loader (FAD). Gli strumenti utilizzati in Office 365 per la raccolta e l'elaborazione dei record di controllo non consentono modifiche permanenti o irreversibili al contenuto del record di controllo originale o all'ordine di tempo.
 
 I team di servizio utilizzano Cosmos come repository centralizzato per eseguire un'analisi dell'utilizzo delle applicazioni, per misurare le prestazioni operative e del sistema e per cercare anomalie e modelli che potrebbero indicare problemi o problemi di sicurezza. Ogni team di servizio carica una linea di base dei log in Cosmos, a seconda di ciò che stanno cercando di analizzare, che spesso includono:

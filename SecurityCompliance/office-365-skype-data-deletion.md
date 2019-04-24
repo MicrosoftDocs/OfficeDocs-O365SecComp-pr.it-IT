@@ -3,23 +3,22 @@ title: Eliminazione dei dati di Office 365 Skype for business
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Spiegazione dell'eliminazione dei dati in Skype for business.
-ms.openlocfilehash: 77ead8b8c2251ce21f9a0c0db9e29d5d48829760
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ca48a4bc57cdba7301a51cc6404a7d402166ffb0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261304"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Eliminazione dei dati di Skype for business in Office 365
 
@@ -28,15 +27,15 @@ Skype for Business fornisce le funzionalità di archiviazione dei messaggi istan
 Tutta l'archiviazione in Skype for Business viene considerata "archiviazione a livello dell'utente" perché consente di abilitare o disabilitare l'archiviazione per uno o più utenti o gruppi di utenti specifici, creando, configurando e applicando criteri di archiviazione a livello di utente per tali utenti. Nell'interfaccia di amministrazione di Skype for Business non è disponibile un controllo diretto sulle impostazioni di archiviazione.
 
 I seguenti tipi di contenuto non vengono archiviati in Skype for business: 
-- File trasferiti peer-to-peer
-- Audio/video per conferenze e messaggi immediati peer-to-peer
+- Trasferimenti di file peer-to-peer
+- Audio e video per conferenze e messaggi istantanei peer-to-peer
 - Applicazioni condivise per conferenze e messaggi immediati peer-to-peer
 - Annotazioni di conferenza 
 
 ## <a name="meeting-content-retention"></a>Conservazione del contenuto della riunione
-I clienti che utilizzano Skype for business possono caricare contenuti in una riunione di Skype for business come allegati, ad esempio presentazioni di PowerPoint, file OneNote e altri file. Il periodo di conservazione per il contenuto caricato in una riunione è il seguente:
+I clienti che utilizzano Skype for business possono caricare contenuti in una riunione di Skype for business come allegati, ad esempio presentazioni di PowerPoint, file OneNote e altri file. Il periodo di conservazione del contenuto caricato durante una riunione è il seguente:
 - La riunione-contenuto **una tantum** viene conservata per 15 giorni a partire da quando l'ultima persona lascia la riunione.
-- Il contenuto di **riunioni ricorrenti** viene conservato per 15 giorni dopo che l'ultima persona ha lasciato l'ultima sessione della riunione. Il timer di conservazione viene reimpostato se un utente si unisce alla stessa sessione di riunione entro 15 giorni. Si supponga, ad esempio, che venga pianificata una riunione di Skype for business su base settimanale per un anno e che un file venga caricato alla riunione durante la prima istanza. Se almeno una persona entra a far parte della sessione di riunione ogni settimana, il file viene conservato nei server Skype for business online per tutto l'anno più 15 giorni dopo che l'ultima persona ha lasciato l'ultima riunione della serie.
+- Il contenuto di **riunioni ricorrenti** viene conservato per 15 giorni dopo che l'ultima persona ha lasciato l'ultima sessione della riunione. Se un utente accede alla stessa sessione della riunione prima della scadenza dei 15 giorni, il tempo di conservazione viene reimpostato. Si supponga, ad esempio, che venga pianificata una riunione di Skype for business su base settimanale per un anno e che un file venga caricato alla riunione durante la prima istanza. Se almeno una persona entra a far parte della sessione di riunione ogni settimana, il file viene conservato nei server Skype for business online per tutto l'anno più 15 giorni dopo che l'ultima persona ha lasciato l'ultima riunione della serie.
 - **Meet Now meeting** -Content viene conservato per 8 ore dopo l'ora di fine della riunione.
 
 > [!NOTE]
@@ -49,7 +48,7 @@ Gli utenti possono accedere a una riunione specifica dopo che è terminata in ba
 - **Meet Now meeting** -meeting scade dopo 8 ore.
 
 ## <a name="whiteboard-collaboration"></a>Collaborazione lavagna
-Le anNotazioni eseguite nelle lavagne verranno visualizzate da tutti i partecipanti. Quando si salva una lavagna, la lavagna e tutte le annotazioni verranno archiviate su un server Skype for business e verranno conservate sul server in base ai criteri di scadenza del contenuto delle riunioni impostati dall'amministratore.
+Le annotazioni effettuate sulle lavagne verranno visualizzate da tutti i partecipanti. Quando si salva una lavagna, la lavagna e tutte le annotazioni verranno archiviate su un server Skype for business e verranno conservate sul server in base ai criteri di scadenza del contenuto delle riunioni impostati dall'amministratore.
 
 ## <a name="audio-test-service"></a>Servizio di test audio
 Durante la chiamata del servizio di test audio viene registrato un campione breve (circa 5 secondi) della voce. Il campione vocale viene utilizzato dall'utente per verificare e/o verificare la qualità del suono della chiamata Skype for business in base alla qualità della registrazione. Quando viene terminata la chiamata al servizio di test audio, viene eliminato l'esempio di voce.

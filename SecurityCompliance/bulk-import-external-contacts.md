@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244505"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
@@ -91,7 +91,7 @@ Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggi
     I contatti importati verranno visualizzati nella rubrica condivisa in Outlook e Outlook sul Web.
     
     > [!NOTE]
-    > è inoltre possibile visualizzare i contatti nell'interfaccia di amministrazione di Office 365 accedendo ai **contatti** **degli utenti** \> . 
+    > è inoltre possibile visualizzare i contatti nell'interfaccia di amministrazione di Microsoft 365 accedendo ai **contatti** **degli utenti** \> . 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Passaggio 3: aggiungere informazioni alle proprietà dei contatti esterni
 
@@ -134,7 +134,7 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Nascondere i contatti esterni dall'indirizzo condiviso book>
 
-Alcune aziende possono utilizzare i contatti esterni solo in modo che possano essere aggiunti come membri dei gruppi di distribuzione. In questo scenario, è possibile che si desideri nascondere i contatti esterni dalla rubrica condivisa. Ecco come fare.
+Alcune aziende possono utilizzare i contatti esterni solo in modo che possano essere aggiunti come membri dei gruppi di distribuzione. In questo scenario, è possibile che si desideri nascondere i contatti esterni dalla rubrica condivisa. Ecco come:
   
 1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     

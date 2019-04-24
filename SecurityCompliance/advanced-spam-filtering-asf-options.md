@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Le opzioni avanzate per il filtro della posta indesiderata offrono agli amministratori la possibilità di esaminare vari attributi di contenuto di un messaggio. La presenza di tali attributi in un messaggio ne aumenta il punteggio posta indesiderata, aumentando così la probabilità di essere identificato come posta indesiderata, o lo contrassegna come posta indesiderata. Le opzioni ASF sono mirate e specifiche proprietà dei messaggio, ad esempio tag HTML e reindirizzamento URL, che in genere si trovano nei messaggi di posta indesiderata.
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242484"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opzioni avanzate per il filtraggio della posta indesiderata
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono disporre delle autorizzazioni per il Centro sicurezza &amp; e conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
 ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253970"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di Office 365
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'I criteri di rilevamento delle anomalie in Office 365 cloud app Security utilizzano algoritmi incorporati per consentire di individuare potenziali problemi. È necessario disporre di almeno un criterio di rilevamento delle anomalie, che è possibile sintonizzare (quando lo si crea) tramite filtri. '
 ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242863"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Criteri di rilevamento delle anomalie in Office 365 Cloud App Security
 
@@ -67,7 +67,7 @@ In base ai risultati dei criteri, vengono attivati gli avvisi di sicurezza. Offi
   
 Nella tabella seguente vengono descritti i criteri di rilevamento delle anomalie predefiniti, le operazioni eseguite e il relativo funzionamento.
   
-|**Nome del criterio di rilevamento delle anomalie**|**Funzionamento**|
+|**Nome del criterio di rilevamento delle anomalie**|**Come funziona**|
 |:-----|:-----|
 |Viaggi imPossibili  <br/> |Identifica due attività utente (è una singola o più sessioni) provenienti da percorsi geograficamente distanti entro un periodo di tempo più breve rispetto al tempo impiegato dall'utente per spostarsi dal primo percorso alla seconda, a indicare che un altro l'utente utilizza le stesse credenziali. Questo rilevamento utilizza un algoritmo di apprendimento automatico che ignora gli evidenti "falsi positivi" che contribuiscono alla condizione di viaggio impossibile, ad esempio le connessioni VPN e i percorsi utilizzati periodicamente da altri utenti dell'organizzazione. Il rilevamento ha un periodo di apprendimento iniziale di sette giorni durante il quale viene illustrato il modello di attività di un nuovo utente.  <br/> |
 |Attività da un paese infrequente  <br/> |Considera le posizioni di attività precedenti per determinare le posizioni nuove e rare. Il motore di rilevamento delle anomalie archivia le informazioni sui percorsi precedenti utilizzati dagli utenti nell'organizzazione. Viene attivato un avviso quando si verifica un'attività da una posizione non recente o mai visitata dall'utente o da un utente dell'organizzazione.  <br/> |

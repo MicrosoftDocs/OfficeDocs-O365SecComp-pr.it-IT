@@ -1,5 +1,5 @@
 ---
-title: Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security
+title: Esaminare i risultati dell'individuazione di app in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: La revisione dei rapporti di individuazione delle app in Office 365 cloud app Security consente di ottenere ulteriori informazioni sul modo in cui gli utenti dell'organizzazione utilizzano le app cloud. Dopo aver creato i report di individuazione delle app utilizzando i file di log dai firewall e dai proxy, esaminare i risultati nel dashboard di individuazione delle app.
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264972"
 ---
-# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Esaminare i risultati dell’individuazione di app in Office 365 Cloud App Security
+# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Esaminare i risultati dell'individuazione di app in Office 365 Cloud App Security
   
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|

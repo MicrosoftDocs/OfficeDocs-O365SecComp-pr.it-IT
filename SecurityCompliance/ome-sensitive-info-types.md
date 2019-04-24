@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: i criteri di crittografia dei messaggi di Office 365 per i tipi di informazioni riservate sono ora disponibili.'
 ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261264"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Criteri di crittografia dei messaggi di Office 365 per informazioni riservate
 
@@ -50,7 +50,7 @@ L'esecuzione dei comandi seguenti in PowerShell consente di creare una regola de
 - Numero di Routing ABA
 - Numero di carta di credito
 - Numero dell'agenzia di applicazione della droga (DEA)
-- Numero di passaporto Stati Uniti/Regno Unito
+- STATI UNITI/REGNO UNITO passport number
 - Numero di conto corrente bancario degli Stati Uniti
 - Stati Uniti - Codice identificativo del contribuente individuale (ITIN)
 - Stati Uniti - Numero di previdenza sociale (SSN)

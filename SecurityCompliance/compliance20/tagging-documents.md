@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241122"
 ---
 # <a name="tag-documents-in-a-working-set"></a>Aggiungere tag ai documenti in un set di lavoro
 
 L'organizzazione del contenuto in un working set è importante per completare diversi flussi di lavoro nel processo di eDiscovery. Ciò include:
 
--  Eliminazione del contenuto non necessario.
+-  Eliminazione del contenuto non necessario
 
-- Identificare il contenuto pertinente.
+- Identificazione di contenuto pertinente
  
--  Identificare il contenuto che deve essere esaminato da un esperto o da un avvocato.
+-  Identificazione di contenuti che devono essere esaminati da un esperto o da un avvocato
 
 Quando esperti, avvocati o altri utenti esaminano il contenuto in un working set, le loro opinioni relative al contenuto possono essere acquisite utilizzando i tag. Ad esempio, se lo scopo è quello di eliminare contenuto non necessario, un utente può contrassegnare i documenti con un tag come "non rispondente". Dopo la revisione e il tag del contenuto, è possibile creare una ricerca di working set che escluda qualsiasi contenuto contrassegnato come "non reattivo", che elimini questo contenuto dai passaggi successivi del flusso di lavoro di eDiscovery. Il riquadro Tag può essere personalizzato per ogni caso, in modo che i tag possano supportare il flusso di lavoro di revisione previsto.
 

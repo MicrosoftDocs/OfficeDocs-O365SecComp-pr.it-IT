@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Panoramica della caratteristica eDiscovery e di altre funzionalità di ricerca di Office 365 per l'utilizzo e la trasparenza di controllo.
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262808"
 ---
 # <a name="ediscovery-and-search-features"></a>Funzionalità di ricerca e di eDiscovery 
 

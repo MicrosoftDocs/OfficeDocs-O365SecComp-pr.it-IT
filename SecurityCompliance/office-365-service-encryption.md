@@ -12,11 +12,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
 ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262388"
 ---
 # <a name="office-365-service-encryption"></a>Servizio di crittografia di Office 365
 
@@ -31,6 +31,7 @@ La crittografia dei servizi offre molteplici vantaggi. Ad esempio:
 - consente di migliorare la capacità di Office 365 di soddisfare le esigenze dei clienti con requisiti di conformità relativi alla crittografia.
 
 ## <a name="customer-key"></a>Chiave cliente
-Utilizzando la chiave del cliente, è possibile generare chiavi di crittografia personalizzate utilizzando un HSM locale o un Vault chiave di Azure. Indipendentemente dal modo in cui viene generata la chiave, i clienti utilizzano Azure Key Vault per controllare e gestire le chiavi di crittografia utilizzate da Office 365. Una volta che le chiavi vengono archiviate nel Vault Key di Azure, è possibile assegnarle ai carichi di lavoro come Exchange Online e SharePoint Online e come radice del keychain utilizzato per crittografare i dati e i file delle cassette postali. Uno degli altri vantaggi derivanti dall'utilizzo della chiave del cliente consiste nel controllare la capacità di Microsoft di elaborare i dati dei clienti. Questa funzionalità esiste in modo che un cliente che desidera rimuovere i dati da Office 365 (ad esempio quando un cliente termina il servizio con Microsoft o rimuove una parte dei dati archiviati nel cloud) sia in grado di eseguire tale operazione e utilizzare la chiave del cliente come controllo tecnico per garantire che nessuno , incluso Microsoft, può accedere ai dati o elaborarli. Questo è in aggiunta (e un complemento) alla funzionalità dell'archivio protetto dei clienti che può essere utilizzata per controllare l'accesso ai dati dei clienti da parte di personale Microsoft.
+Utilizzando la chiave del cliente, è possibile generare chiavi di crittografia personalizzate utilizzando un HSM locale o un Vault chiave di Azure. Indipendentemente dal modo in cui viene generata la chiave, i clienti utilizzano Azure Key Vault per controllare e gestire le chiavi di crittografia utilizzate da Office 365. Una volta che le chiavi vengono archiviate nel Vault Key di Azure, è possibile assegnarle ai carichi di lavoro come Exchange Online e SharePoint Online e come radice del keychain utilizzato per crittografare i dati e i file delle cassette postali.
+Uno degli altri vantaggi derivanti dall'utilizzo della chiave del cliente consiste nel controllare la capacità di Microsoft di elaborare i dati dei clienti. Questa funzionalità esiste in modo che un cliente che desidera rimuovere i dati da Office 365 (ad esempio quando un cliente termina il servizio con Microsoft o rimuove una parte dei dati archiviati nel cloud) sia in grado di eseguire tale operazione e utilizzare la chiave del cliente come controllo tecnico per garantire che nessuno , incluso Microsoft, può accedere ai dati o elaborarli. Questo è in aggiunta (e un complemento) alla funzionalità dell'archivio protetto dei clienti che può essere utilizzata per controllare l'accesso ai dati dei clienti da parte di personale Microsoft.
 
 Per informazioni su come configurare Customer Key per Office 365 per Exchange Online, Skype for business, SharePoint Online e OneDrive for business, vedere conTrolling [your data in office 365 using Customer Key](https://support.office.com/article/Controlling-your-data-in-Office-365-using-Customer-Key-f2cd475a-e592-46cf-80a3-1bfb0fa17697). Per ulteriori informazioni, vedere le [domande frequenti su Customer Key per Office 365](https://support.office.com/article/Customer-Key-for-Office-365-FAQ-41ae293a-bd5c-4083-acd8-e1a2b4329da6)e [gestire e controllare i dati per soddisfare i requisiti di conformità con la chiave del cliente](https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Manage-and-control-your-data-to-help-meet-compliance-needs-with/td-p/117580).

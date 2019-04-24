@@ -1,5 +1,5 @@
 ---
-title: Tipi di file supportati nelle indagini sui dati
+title: Tipi di file supportati in indagini sui dati (anteprima)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bec8c01b75d68249a335c4de48909ce50ab3bf97
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257634"
 ---
-# <a name="supported-file-types-in-data-investigations"></a>Tipi di file supportati nelle indagini sui dati
+# <a name="supported-file-types-in-data-investigations-preview"></a>Tipi di file supportati in indagini sui dati (anteprima)
 
+Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi, descritti nella tabella seguente. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Nella tabella è inoltre indicato se è possibile visualizzare un tipo di file nei visualizzatori disponibili quando si esaminano le prove.
 
-| Tipo MIME | Classe file (ad esempio immagine, archivio, posta elettronica, documento di Office e così via) | Visualizzatore nativo | Testo | Visualizzatore anNotazioni | Estrazione del contenitore | Estensioni possibili |
+| Tipo MIME | Classe file | Visualizzatore nativo | Visualizzatore di testo | Visualizzatore anNotazioni | Estrazione del contenitore | Estensioni |
 | :- | :- | :- | :- | :- | :- | :- |
 | applicazione/MSWord | Documento | Sì | Sì | Sì | No | . doc;. dat |
 | applicazione/PDF | Documento | Sì | Sì | Sì | No | .pdf |
@@ -67,3 +68,4 @@ ms.locfileid: "31030205"
 | testo/HTML | Documento | Sì | Sì | Sì | No | . html;. shtml;. htm |
 | testo/normale | Documento | Sì | Sì | Sì | No | . txt;. CSS;. con;. pl;. csv;. dat |
 | Text/vCard-contatti | Documento | Sì | Sì | Sì | No | . vcf |
+||||||||

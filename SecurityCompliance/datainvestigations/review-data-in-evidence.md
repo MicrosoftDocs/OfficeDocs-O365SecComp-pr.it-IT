@@ -1,5 +1,5 @@
 ---
-title: Esaminare i dati in evidenza
+title: Esaminare i dati nelle prove
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,104 +14,92 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 279d2117a69e889f9e605e0ab211c03c5842a59d
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258044"
 ---
-# <a name="review-data-in-evidence"></a>Esaminare i dati in evidenza
+# <a name="review-the-data-in-evidence"></a>Esaminare i dati nelle prove
 
-**Evidence** è uno snapshot dei risultati della ricerca raccolti. Quando si aggiungono i risultati della ricerca all'evidenza, viene attivato un processo per estrarre file, metadati e testo. Successivamente, il sistema genera un nuovo indice di tutti i dati e aggiunge l' **elemento Evidence**. 
+I dati di un set di evidenze in un'analisi dei dati sono uno snapshot dei risultati della ricerca raccolti e aggiunti al set di evidenze. Quando si aggiungono i risultati della ricerca all'evidenza, viene attivato un processo per estrarre file, metadati e testo dagli elementi restituiti dalla ricerca. Successivamente, lo strumento indagini dati (Preview) crea un nuovo indice (tramite un processo denominato *Advanced*indicizzazione) di tutti i dati e aggiunge a un set di evidenze nella scheda **Evidence** . 
 
-Per eventuali incidenti sensibili al tempo, in questo modo è possibile contenere rapidamente l'ambiente eliminando i dati nei percorsi originali durante l'analisi delle evidenze ricreate in un ambiente in quarantena. Una volta raccolti i dati, è possibile esaminare singoli documenti nel formato nativo, nel formato di testo o in un formato quasi nativo. Inoltre, è possibile eseguire query per limitare i dati in base a intervallo di tempo, tipi di file, proprietari di dati e molte altre schede di condizione. Utilizzando le schede delle condizioni autore/mittente/destinatario, è possibile esaminare rapidamente gli utenti coinvolti nella fuoriuscita e se sono presenti parti esterne. Per ulteriori informazioni, vedere:
+Per le indagini sensibili al tempo, in questo modo è possibile contenere rapidamente l'ambiente eliminando i dati effettivamente riversati o dannosi che si trovano nell'origine dati originale, mentre allo stesso tempo è possibile esaminare l'evidenza ricreata in un ambiente in quarantena, che in questo caso è il dato copiato nel set di evidenze. Dopo la raccolta e l'aggiunta dell'evidenza al set di evidenze, è possibile esaminare i singoli documenti nel formato nativo, nel formato di testo o in un formato quasi nativo che è possibile utilizzare per annotare e redigere i documenti. È inoltre possibile eseguire query per limitare il set di dati in base a intervallo di tempo, tipi di file, proprietari di dati e molte altre proprietà e condizioni di ricerca. Ad esempio, utilizzando le condizioni di autore, mittente o destinatario, è possibile identificare rapidamente le persone coinvolte nell'incidente e se i dati dell'organizzazione sono stati condivisi con utenti esterni. Per ulteriori informazioni sulla ricerca di dati in un set di evidenze, vedere [query the data in evidence](evidence-query.md).
 
-  - [Eseguire una query sui dati in evidenza](evidence-query.md)
-
-Per raggruppare i documenti e ottenere assistenza per la revisione, fare clic su **Gestisci evidenza**. Nel riquadro **analisi** fare clic su **analizza**. Verrà eseguito l'analisi avanzata, ad esempio il rilevamento duplicato, il threading di posta elettronica e l'analizzatore dei temi. Successivamente, è possibile visualizzare i temi generali dei dati e anche organizzare i documenti tramite thread di posta elettronica, duplicati esatti e duplicati quasi per facilitare l'indagine. Per ulteriori informazioni, vedere:
-
-  - [Eseguire analisi per analizzare più velocemente](run-analytics-to-investigate-faster.md)
+Per raggruppare i documenti e ottenere assistenza per la revisione, selezionare un set di evidenze nella scheda **Evidence** e quindi fare clic su **Gestisci prova**. Nel riquadro **analisi** fare clic su **Ricostruisci analisi per l'intero set**. Verrà eseguito l'analisi avanzata, ad esempio il rilevamento duplicato, il threading di posta elettronica e l'analizzatore dei temi. Successivamente, è possibile visualizzare i temi generali dei dati e anche organizzare i documenti tramite thread di posta elettronica, vicino a duplicati e duplicati esatti per facilitare l'indagine. Per ulteriori informazioni, vedere [Run Analytics to investigate Faster](run-analytics-to-investigate-faster.md).
 
 ## <a name="view-documents-in-evidence"></a>Visualizzare i documenti in evidenza
 
-L'analisi dei dati (Preview) Visualizza il contenuto tramite diversi visualizzatori ognuno con diversi scopi. È possibile utilizzare i diversi visualizzatori facendo clic su qualsiasi documento in **evidenza**. I visualizzatori attualmente forniti sono:
+Indagini sui dati (Preview) consente di visualizzare il contenuto in diversi visualizzatori, in cui ogni visualizzatore ha uno scopo diverso. Questi visualizzatori sono:
 
 - Metadati dei file
 - Visualizzazione nativa
 - Visualizzazione testo
 - Visualizzazione anNotazioni
-- Visualizzazione convertita
+
+Per accedere a uno di questi visualizzatori, è sufficiente selezionare un documento in un set di evidenze.
 
 ## <a name="file-metadata"></a>Metadati dei file
 
-Questo pannello può essere attivato/disattivato per visualizzare i vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per la visualizzazione di metadati specifici, è possibile che lo scorrimento orizzontale possa essere difficoltoso durante la revisione dei dati. Il pannello metadati file consente a un utente di alternare una visualizzazione all'interno del visualizzatore.
+In questa visualizzazione vengono visualizzate varie proprietà dei metadati associate al documento selezionato. È possibile attivare o disattivare questa visualizzazione facendo clic su **metadati file**. Quando si esegue la revisione di un documento, è possibile visualizzare i metadati dei file e comunque cambiarli tra i diversi visualizzatori.
 
-![Pannello metadati file
-](../media/Reviewimage2.png)
+Di seguito è riportato un esempio dei metadati di file per un documento. Per ulteriori informazioni sui campi dei metadati, vedere [documento dei campi di metadati nelle indagini sui dati (Preview)](document-metadata-fields.md).
+
+![Pannello metadati file](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
-Il Visualizzatore nativo Visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, ad esempio, il visualizzatore utilizza Office Online per visualizzare contenuti quali commenti a documenti, formule di Excel, righe/colonne nascoste, note di PowerPoint e così via. Per ulteriori informazioni sui visualizzatori di Office Online, visitare \[il collegamento necessario\]
+Il Visualizzatore nativo Visualizza la visualizzazione più accurata di un documento nel formato nativo. La visualizzazione nativa è supportata per centinaia di tipi di file ed è destinata a visualizzare i documenti in una delle più vere esperienze native possibili. Per i file di Microsoft Office, il Visualizzatore nativo utilizza Office Online. In questo modo è possibile visualizzare il contenuto, ad esempio i commenti in documenti di Office, formule e righe/colonne nascoste in Excel, e la visualizzazione note in PowerPoint.
 
 ![Visualizzazione nativa
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Visualizzazione testo
 
-Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma sarà una visualizzazione molto perFormante se un utente cerca di comprendere rapidamente il contenuto. La visualizzazione testo include anche altre caratteristiche:
+Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma questa visualizzazione è molto utile se si sta tentando di esaminare e comprendere rapidamente il contenuto di un documento. La visualizzazione del testo include anche queste caratteristiche:
 
-  - Il contatore linea rende più facile fare riferimento a parti specifiche di un documento
+  - Un contatore di linea, che rende più facile fare riferimento a parti specifiche di un documento.
 
-  - Evidenziazione hit Search che evidenzierà i termini all'interno del documento e la barra di scorrimento
+  - Ricerca hit highlighting che evidenzia i termini del documento e della barra di scorrimento
 
-  - La visualizzazione diff fornisce una visualizzazione di confronto che evidenzia le differenze testuali quando si visualizza vicino a documenti duplicati
+  - Una visualizzazione diff fornisce una visualizzazione di confronto in cui vengono evidenziate le differenze di testo quando si visualizzano i documenti utilizzando il riquadro **quasi duplicati** .
+
+**Esempio di contatore di riga e di evidenziazione dei risultati della ricerca in testo e barra di scorrimento**
 
 ![Visualizzazione testo
 ](../media/Reviewimage4.png)
+
+**Esempio di visualizzazione diff**
 
 ![Visualizzazione diff
 ](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Visualizzazione anNotazioni
 
-La visualizzazione anNotazioni fornisce caratteristiche che consentono agli utenti di applicare il markup su un documento durante le indagini, tra cui:
+La visualizzazione anNotazioni fornisce caratteristiche che consentono di applicare il markup su un documento durante il processo di revisione. sono inclusi gli strumenti seguenti:
 
-  - Redazioni area: gli utenti possono disegnare una casella del documento per nascondere i contenuti sensibili
+  - **RedaziOni area** : è possibile disegnare una casella opaca nel documento che nasconde contenuto sensibile.
 
-  - Matita: gli utenti possono disegnare a mano libera su un documento per portare l'attenzione su determinate parti di un documento.
+  - **Matita** – è possibile disegnare a mano libera su un documento per attirare l'attenzione su determinate parti del contenuto.
 
-  - Seleziona annotazioni: gli utenti possono selezionare le annotazioni di un documento per eliminare
+  - **Seleziona** annotazioni: è possibile selezionare ed eliminare le annotazioni in un documento.
 
-  - Toggle trasparenza annotazione – rende le annotazioni semitrasparenti per visualizzare il contenuto dietro l'annotazione
+  - **Toggle Transparency** Annotation – è possibile alternare la trasparenza delle annotazioni (tra opaco e semitrasparente) in modo da poter visualizzare il contenuto dietro l'annotazione. Questo include l'attivazione della trasparenza delle annotazioni e dei redazioni di matite.
 
-  - Pagina precedente – consente di accedere alla pagina precedente
+La visualizzazione anNotazioni fornisce anche la funzionalità di spostamento seguente:
 
-  - Pagina successiva – passa alla pagina successiva
+  - **Pagina precedente**, **pagina successiva**e **passare ai** controlli di spostamento della pagina da utilizzare per i documenti a più pagine.
 
-  - Vai a pagina-l'utente può immettere un numero di pagina specifico per passare a
+  - **Zoom** : aumenta o diminuisce le dimensioni dei documenti nella visualizzazione annotazioni.
 
-  - Zoom – impostare il livello di zoom per la visualizzazione annotazioni
+  - **Ruota** – ruota i documenti in senso orario.
 
-  - Ruota – l'utente può ruotare il documento in senso orario
+  - **Ricerca** : cercare le parole chiave in un documento e quindi utilizzare i controlli precedenti e successivi per visualizzare i risultati evidenziati all'interno del documento.
 
-  - Search: l'utente può eseguire una ricerca in un documento e passare ai vari successi all'interno del documento
-    
-    ![Visualizzazione anNotazioni
-    ](../media/Reviewimage1.png)
+**Esempio di visualizzazione anNotazioni**
 
-Si noti che queste annotazioni sono su dati raccolti come elementi di prova, non nel relativo percorso originale in Live System. 
+![Visualizzazione anNotazioni](../media/Reviewimage1.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
-
-Nella tabella seguente sono elencati i limiti per le evidenze nelle indagini sui dati (Preview).  Tutti gli elementi che superano i valori massimi dei singoli file verranno visualizzati come errori di elaborazione.
-    
-  |**Descrizione del limite**|**Tipo di limite**|
-  |:-----|:-----|
-  |Numero massimo di raccolte di prove  <br/> |50  <br/> |
-  |Numero totale di documenti che possono essere ingeriti in un caso (per tutte le raccolte di evidenze nell'inchiesta)  <br/> |1 milione  <br/> |
-  |Dimensioni totali dei file per carico  <br/> |100 GB  <br/> |
-  |Dimensioni massime di un singolo file   <br/> |100 MB  <br/> |
-  |Numero massimo di caratteri estratti da un singolo file  <br/> |10 milioni  <br/> |
-  |Profondità degli elementi incorporati in un documento  <br/> |25  <br/> |
-  
+> [!NOTE]
+> Le anNotazioni vengono applicate a una copia del documento che è stato aggiunto al set di evidenze. I documenti originali del servizio Live non vengono annotati.

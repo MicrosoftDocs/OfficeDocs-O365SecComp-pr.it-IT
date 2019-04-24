@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: Office 365 cloud app Security è compatibile con i log del traffico Web da una vasta gamma di provider. Leggere questo articolo per ulteriori informazioni sui log del traffico Web e le origini dati supportate per Office 365 cloud app Security.
 ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266851"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Log del traffico Web e origini dati per Office 365 Cloud App Security
   
@@ -138,7 +138,7 @@ Dopo aver caricato i file di registro del traffico Web, controllare il registro 
 Verificare che il registro non sia danneggiato. Confrontare e associare il formato di file di registro al formato di esempio visualizzato nella pagina caricamento. |
 |Le transazioni hanno più di 90 giorni.  <br/> |Tutte le transazioni hanno più di 90 giorni e pertanto vengono ignorate.  <br/> |Esportare un nuovo log con gli eventi recenti e ricaricarlo.  <br/> |
 |Nessuna transazione per le app del cloud Catalogo  <br/> |Nessuna transazione per le app Cloud riconosciute si trova nel registro.  <br/> |Verificare che il registro contenga informazioni sul traffico in uscita.  <br/> |
-|Tipo di log non supportato  <br/> |Quando si seleziona **origine dati = altro (non supportato)**, il log non viene analizzato. Viene invece inviato per la revisione al team tecnico di [Microsoft cloud app Security](https://aka.ms/whatiscas) .<br/> |Il team tecnico [Microsoft cloud app Security](https://aka.ms/whatiscas) crea un parser dedicato per ogni origine dati. Le origini dati più popolari sono già supportate. Quando viene caricata un'origine dati non supportata, questa viene esaminata e aggiunta all'elenco dei potenziali nuovi analizzatori di origine dati.<br/> Quando viene aggiunto un nuovo parser alla funzionalità, viene inclusa una notifica nelle note sulla versione di sicurezza di Microsoft cloud app.  <br/> |
+|Tipo di log non supportato  <br/> |Quando si seleziona **origine dati = altro (non supportato)**, il log non viene analizzato. Viene invece inviato per la revisione al team tecnico di [Microsoft cloud app Security](https://aka.ms/whatiscas) .  <br/> |Il team tecnico [Microsoft cloud app Security](https://aka.ms/whatiscas) crea un parser dedicato per ogni origine dati. Le origini dati più popolari sono già supportate. Quando viene caricata un'origine dati non supportata, questa viene esaminata e aggiunta all'elenco dei potenziali nuovi analizzatori di origine dati.  <br/> Quando viene aggiunto un nuovo parser alla funzionalità, viene inclusa una notifica nelle note sulla versione di sicurezza di Microsoft cloud app.  <br/> |
    
 ## <a name="next-steps"></a>Passaggi successivi
 

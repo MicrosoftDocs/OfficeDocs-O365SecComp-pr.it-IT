@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sulla quarantena ospitata per Exchange Online e Exchange Online Protection.
 ms.openlocfilehash: 7a92704c7a3cf978ed028b094cac9f6c9ed4b47b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265668"
 ---
 # <a name="quarantine"></a>Quarantena
 

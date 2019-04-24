@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Per un esempio di prevenzione della perdita di dati, è possibile passare da una &amp; panoramica a una relazione dettagliata nel centro sicurezza e conformità.
 ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255394"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procedura: dalle informazioni dettagliate a un report dettagliato
 

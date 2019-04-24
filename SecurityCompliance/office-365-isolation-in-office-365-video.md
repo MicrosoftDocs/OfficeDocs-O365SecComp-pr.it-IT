@@ -3,23 +3,22 @@ title: Isolamento del tenant di Office 365 in Office 365 video
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Sintesi: una spiegazione dell'isolamento del tenant in Office 365 video."
-ms.openlocfilehash: ffdc87c0a5e63336552268dafab1293699f262ba
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 071a71266191748db8f6cb27ae86e1f65dcb4d1d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262588"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento del tenant in Office 365 Video
 

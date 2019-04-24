@@ -3,23 +3,22 @@ title: Isolamento e controllo di accesso di Office 365 in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Office 365."
-ms.openlocfilehash: 734c92a6f3185a25faf9aade1ba235444ed762da
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c4328539f8cca5cb7e76c4a3175cfab0a01b42cf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262624"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controllo di accesso in Office 365
 

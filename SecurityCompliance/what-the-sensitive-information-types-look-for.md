@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266872"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
+# <a name="what-the-sensitive-information-types-look-for"></a>Elementi cercati dai tipi di informazioni sensibili
 
 La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include numerosi tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori, ad esempio, parole chiave e checksum per identificare una tipologia di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
   
@@ -2420,7 +2420,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
    
 ## <a name="eu-debit-card-number"></a>Unione Europea - Numero di carta di debito
@@ -2923,7 +2923,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
    
 ## <a name="france-passport-number"></a>Francia - Numero di passaporto
 
@@ -3631,7 +3631,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
    
 ## <a name="ip-address"></a>Indirizzo IP
@@ -4970,7 +4970,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
 ## <a name="sql-server-connection-string"></a>Stringa di connessione di SQL Server
 

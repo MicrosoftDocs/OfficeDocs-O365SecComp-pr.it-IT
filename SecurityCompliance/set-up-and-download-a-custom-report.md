@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare e scaricare un report con un intervallo di date personalizzato e filtri nel centro sicurezza &amp; e conformità.
 ms.openlocfilehash: 912dfb43a7fd146f4fb00eb68a7d1004db81466c
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264360"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurare e scaricare un report personalizzato nel centro sicurezza &amp; e conformità
 

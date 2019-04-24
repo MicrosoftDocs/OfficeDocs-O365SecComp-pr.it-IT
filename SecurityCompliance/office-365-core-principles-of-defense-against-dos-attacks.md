@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: In che modo Microsoft utilizza i principi fondamentali dell'assorbimento, del rilevamento e dell'attenuazione in difesa degli attacchi DoS (Denial of Service).
 ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262928"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>I principi fondamentali di protezione contro gli attacchi Denial of Service
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principi fondamentali di protezione contro gli attacchi Denial of Service
 
 I tre principi fondamentali per la difesa dagli attacchi DoS basati sulla rete sono assorbimento, rilevamento e attenuazione.
 L'assorbimento avviene prima del rilevamento e il rilevamento avviene prima dell'attenuazione. L'assorbimento è la migliore difesa contro gli attacchi DoS. Se non è possibile rilevare l'attacco, non può essere attenuato. Tuttavia, se non è possibile assorbire anche il più piccolo attacco DoS, i servizi non sopravvivranno abbastanza a lungo per rilevare l'attacco.

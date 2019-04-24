@@ -15,18 +15,19 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240968"
 ---
 # <a name="search-statistics"></a>Statistiche della ricerca
 
 Un modo per convalidare i risultati della ricerca consiste nell'esaminare le statistiche sui risultati per assicurarsi che siano allineate alle aspettative. Al termine della ricerca, le statistiche di alto livello vengono visualizzate nel riquadro a comparsa dettagli ricerca:
 - Numero e volume degli elementi recuperati dalla ricerca
 - Numero e volume degli elementi parzialmente indicizzati/non indicizzati che sono stati trovati nei percorsi di ricerca
-- Numero di cassette postali e percorsi ricercati. Per visualizzare statistiche più dettagliate, fare clic su "statistiche" nel riquadro a comparsa dettagli ricerca.
+- Numero di cassette postali e percorsi ricercati.
+Per visualizzare statistiche più dettagliate, fare clic su "statistiche" nel riquadro a comparsa dettagli ricerca.
 
 ## <a name="summary"></a>Riepilogo
 
@@ -39,7 +40,7 @@ In visualizzazione Riepilogo, è possibile visualizzare i risultati della ricerc
 
 Nella visualizzazione posizioni principali, vengono visualizzati i singoli percorsi con la maggior parte delle corrispondenze. Per ogni posizione, è possibile visualizzare le informazioni seguenti:
 - Nome della posizione (ad esempio, URL di SharePoint)
-- Tipo di percorso
+- Tipo di posizione
 - Numero di elementi che corrispondono alle condizioni di ricerca
 - Volume totale di elementi che corrispondono alle condizioni di ricerca.
 

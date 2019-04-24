@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrizioni di proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
 ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257650"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
@@ -87,7 +87,7 @@ Nella tabella seguente vengono descritte le proprietà incluse, in base al servi
 |UserKey|ID alternativo per l'utente identificato nella proprietà **userid** . Ad esempio, questa proprietà viene popolata con l'ID univoco Passport (PUID) per gli eventi eseguiti dagli utenti in SharePoint. Questa proprietà può anche specificare lo stesso valore della proprietà **userid** per gli eventi che si verificano in altri servizi ed eventi eseguiti dagli account di sistema.|Tutti|
 |UserSharedWith|Utente a cui è stata condivisa una risorsa. Questa proprietà è inclusa se il valore della proprietà **Operation** è **SharingSet**. Questo utente è elencato anche nella colonna **Shared con** del report.|SharePoint|
 |UserType|Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente. <br/> <br/> **0** -un utente normale. <br/>**2** -un amministratore dell'organizzazione di Office 365. <br/>**3** -un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. <br/>**4** -un account di sistema. <br/>**5** -un'applicazione. <br/>**6** -un'entità di servizio.<br/>**7** -un criterio personalizzato.<br/>**8** -un criterio di sistema.|Tutti|
-|Version|Indica il numero di versione dell'attività (identificata dalla proprietà **Operation** ) registrata.|Tutti|
+|Versione|Indica il numero di versione dell'attività (identificata dalla proprietà **Operation** ) registrata.|Tutti|
 |Carico di lavoro|Il servizio Office 365 in cui si è verificata l'attività. I valori possibili per questa proprietà sono:  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/><br/>Compliance<br/>Skype for business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>analisi del luogo di lavoro**|Tutti|
 ||||
    

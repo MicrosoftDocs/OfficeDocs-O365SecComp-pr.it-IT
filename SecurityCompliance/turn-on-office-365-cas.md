@@ -1,5 +1,5 @@
 ---
-title: Attivare Office 365 Cloud App Security
+title: Attivazione di Office 365 cloud app Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Leggere questo articolo per informazioni su come abilitare Office 365 cloud app Security, alimentato da cloud app Security in Microsoft Azure.
 ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264128"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a>Attivare Office 365 Cloud App Security
+# <a name="turn-on-office-365-cloud-app-security"></a>Attivazione di Office 365 cloud app Security
   
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|
 |[Iniziare a valutare](office-365-cas-overview.md) <br/> |[Avviare la pianificazione](get-ready-for-office-365-cas.md) <br/> |Sei qui!  <br/> [Passaggio successivo](activity-policies-and-alerts.md) <br/> |[Iniziare a utilizzare](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a>Attivare Office 365 Cloud App Security
+## <a name="turn-on-office-365-cloud-app-security"></a>Attivazione di Office 365 cloud app Security
 
 > [!IMPORTANT]
 > Per eseguire l'attività seguente, è necessario essere un amministratore globale o un amministratore della sicurezza. Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Affinché Office 365 cloud app Security funzioni correttamente, **è necessario che la registrazione di controllo sia attivata** per l'ambiente Office 365. Per ulteriori informazioni, vedere [attivazione o disattivaZione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md). 

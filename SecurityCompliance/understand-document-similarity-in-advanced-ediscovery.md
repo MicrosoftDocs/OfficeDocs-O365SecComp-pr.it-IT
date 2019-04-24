@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla similarità dei documenti di Office 365 Advanced eDiscovery
+title: Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Office 365 Advanced eDiscovery. '
 ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264150"
 ---
-# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Informazioni sulla similarità dei documenti di Office 365 Advanced eDiscovery
+# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

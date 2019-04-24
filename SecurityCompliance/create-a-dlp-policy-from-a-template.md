@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258546"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
+# <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
 Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. È possibile utilizzare uno di questi modelli come è o personalizzare le regole per soddisfare i requisiti di conformità specifici dell'organizzazione.
   
@@ -52,7 +52,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 - Si consentirà agli utenti di eseguire l'override delle azioni fornendo una motivazione aziendale o segnalando un falso positivo. In questo modo, i criteri DLP non impediscono agli utenti dell'organizzazione di svolgere il proprio lavoro, purché dispongano di un motivo aziendale valido per la condivisione delle informazioni riservate.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
+### <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
@@ -165,9 +165,9 @@ Di seguito sono riportati i diversi stati e il loro significato.
 |**Attivazione in corso...** <br/> |Il criterio viene distribuito alle origini del contenuto che include. Il criterio non è ancora applicato su tutte le origini.  <br/> |
 |**Test, con notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio vengono inviate ai destinatari specificati.  <br/> |
 |**Test, senza notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio non vengono inviate ai destinatari specificati.  <br/> |
-|**Nella** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
+|**Attivato** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
 |**Disattivazione in corso...** <br/> |Il criterio viene rimosso dalle origini del contenuto che include. Il criterio potrebbe essere ancora attivo e applicato in alcune origini. La disattivazione di un criterio potrebbe richiedere fino a 45 minuti.  <br/> |
-|**Off** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
+|**Disattivato** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
 |**Eliminazione di...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP

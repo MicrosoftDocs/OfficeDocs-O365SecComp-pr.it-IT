@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256244"
 ---
-# <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per EOP
+# <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
 Le risorse di supporto tecnico, elencate di seguito, consentiranno agli utenti di trovare le risposte nel caso si abbiano difficoltà con Microsoft Exchange Online Protection (EOP). Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito. 
   
@@ -80,7 +80,7 @@ Microsoft fornisce numeri di telefono locali o un numero verde per il supporto d
    
 ## <a name="for-more-information-about-eop-documentation"></a>Per ulteriori informazioni sulla documentazione di EOP
 
-[Informazioni sul copyright di terze parti](third-party-copyright-notices.md)
+[Note del copyright di terze parti](third-party-copyright-notices.md)
   
 [Accessibilità per persone con disabilità](accessibility-for-people-with-disabilities.md)
   

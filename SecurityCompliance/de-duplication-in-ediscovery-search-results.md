@@ -1,5 +1,5 @@
 ---
-title: Deduplicazione nei risultati della ricerca di eDiscovery
+title: De-duplicazione nei risultati della ricerca di eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
 ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258076"
 ---
-# <a name="de-duplication-in-ediscovery-search-results"></a>Deduplicazione nei risultati della ricerca di eDiscovery
+# <a name="de-duplication-in-ediscovery-search-results"></a>De-duplicazione nei risultati della ricerca di eDiscovery
 
 In questo articolo viene illustrato il funzionamento della deduplicazione dei risultati della ricerca di eDiscovery e vengono illustrate le limitazioni dell'algoritmo di deduplicazione.
   
@@ -62,7 +62,7 @@ Si noti che i messaggi univoci possono essere contrassegnati anche come duplicat
 > [!IMPORTANT]
 > Se le limitazioni dell'algoritmo di deduplicazione possono influire sulla qualità dei risultati della ricerca, non è necessario abilitare la deduplicazione quando si esportano gli elementi. Se non è probabile che le situazioni descritte in questa sezione siano un fattore nei risultati di ricerca e si desidera ridurre il numero di elementi più probabili per essere duplicati, è consigliabile abilitare la deduplicazione. 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Le informazioni contenute in questo articolo sono applicabili quando si esportano i risultati della ricerca utilizzando uno dei seguenti strumenti di eDiscovery:
     

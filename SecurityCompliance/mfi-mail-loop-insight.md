@@ -1,5 +1,5 @@
 ---
-title: Approfondimenti sul ciclo di posta
+title: Informazioni dettagliate sul ciclo di posta
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Gli amministratori possono ottenere informazioni sull'Insight del loop di posta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
 ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267077"
 ---
-# <a name="mail-loop-insight"></a>Approfondimenti sul ciclo di posta
+# <a name="mail-loop-insight"></a>Informazioni dettagliate sul ciclo di posta
 
 Un loop di posta non è valido perché spreca risorse di sistema, consuma la quota del volume di posta dell'organizzazione e invia rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) ai mittenti originali. Questo Insight segnala quando viene trovato un loop di posta nell'organizzazione, i domini di posta elettronica coinvolti nel ciclo e il numero di messaggi del giorno precedente che si trovavano nel ciclo.
 

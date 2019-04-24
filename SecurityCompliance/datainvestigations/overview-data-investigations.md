@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257720"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -43,9 +43,9 @@ Utilizzare la scheda **Evidence** per esaminare i dati raccolti dal servizio Liv
 
 È inoltre possibile eseguire l'analisi avanzata sulle prove raccolte. In questo modo è possibile fornire i temi generali e organizzare le prove tramite thread di posta elettronica, duplicati esatti e quasi duplicati per facilitare l'indagine. È possibile esaminare i documenti in visualizzazione testo estratto o nel formato di file nativo e contrassegnarli con i risultati dell'analisi. Per ulteriori informazioni, vedere:
 
-  - [Esaminare i dati in evidenza](review-data-in-evidence.md)
+  - [Esaminare i dati nelle prove](review-data-in-evidence.md)
 
-  - [Eseguire analisi per analizzare più velocemente](run-analytics-to-investigate-faster.md)
+  - [Eseguire analisi per velocizzare le indagini](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>Gestione degli utenti di interesse

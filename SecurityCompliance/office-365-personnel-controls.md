@@ -3,23 +3,22 @@ title: Controlli del personale di Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Riepilogo: Panoramica delle procedure di screening del personale Microsoft per Office 365.'
-ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262418"
 ---
 # <a name="office-365-personnel-controls"></a>Controlli del personale di Office 365 
 
@@ -70,7 +69,8 @@ Laddove la legge locale lo consente, il dipartimento di sicurezza globale di Mic
 - Conferma dell'identità da un'identificazione emessa dal governo
 - Verifica del credito, se appropriato
 
-Potrebbe essere necessario eseguire il rescreening periodico e/o ulteriori controlli in background per alcuni ruoli di gestione, sicurezza o di altro genere, tra cui i dipendenti basati su Stati Uniti nei ruoli che richiedono l'accesso ai dati dei clienti. Per il personale contingente, il contratto con terze parti specifica i requisiti di Microsoft per la selezione che devono essere eseguiti da terze parti. Per i controlli in background, la società di terze parti è responsabile di fornire alla verifica Microsoft che è stato eseguito un controllo in background. I risultati del controllo dei precedenti vengono in genere ricevuti tramite posta elettronica dal reparto risorse umane di terze parti. I dipendenti internazionali del personale contrattuale possono essere esonerati dal processo di screening in background a causa di leggi nei paesi che proibiscono i controlli in background.
+Potrebbe essere necessario eseguire il rescreening periodico e/o ulteriori controlli in background per alcuni ruoli di gestione, sicurezza o di altro genere, tra cui i dipendenti basati su Stati Uniti nei ruoli che richiedono l'accesso ai dati dei clienti.
+Per il personale contingente, il contratto con terze parti specifica i requisiti di Microsoft per la selezione che devono essere eseguiti da terze parti. Per i controlli in background, la società di terze parti è responsabile di fornire alla verifica Microsoft che è stato eseguito un controllo in background. I risultati del controllo dei precedenti vengono in genere ricevuti tramite posta elettronica dal reparto risorse umane di terze parti. I dipendenti internazionali del personale contrattuale possono essere esonerati dal processo di screening in background a causa di leggi nei paesi che proibiscono i controlli in background.
 
 ## <a name="microsoft-employment-screening"></a>Screening di Microsoft Employment
 Dal 2004, Microsoft ha richiesto agli utenti di passare uno schermo di sette anni di fedina penale per reati e reati, e di verificare la loro storia dell'istruzione e dell'occupazione, come parte dello screening preoccupazionale negli Stati Uniti per i dipendenti e gli stagisti.
@@ -84,7 +84,7 @@ Come condizione di impiego, al momento del noleggio, tutti i dipendenti Microsof
 
 Nella tabella seguente sono elencati i controlli eseguiti come parte del controllo dei precedenti del cloud di Microsoft.
 
-| Screening | Description |
+| Screening | Descrizione |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ricerca del numero di preVidenza sociale | Verifica che il numero di preVidenza sociale fornito sia valido. |
 | Controllo di precedenti penali | I record penali di sette anni controllano reati di reato e reato allo stato, alla contea e ai livelli locali e, a seconda dei casi, a livello federale. |

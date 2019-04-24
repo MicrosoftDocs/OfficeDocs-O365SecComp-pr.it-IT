@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informazioni su come accedere ad Azure Active Directory, incluso nella sottoscrizione a pagamento a Office 365.
 ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242600"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Utilizzare la sottoscrizione di Azure Active Directory gratuita in Office 365
 

@@ -1,5 +1,5 @@
 ---
-title: Configurare i gruppi di file per aggiungere i file importati in Office 365 Advanced eDiscovery
+title: Impostare i carichi per aggiungere i file importati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Office 365 Advanced eDiscovery.  "
 ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260740"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurare i gruppi di file per aggiungere i file importati in Office 365 Advanced eDiscovery
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Impostare i carichi per aggiungere i file importati in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, un carico è un nuovo batch di file aggiunto a un caso. Per impostazione predefinita, viene definito un carico e vengono aggiunti tutti i file importati. Prima di eseguire la formazione di pertinenza, i file importati devono essere aggiunti al carico. 
   
-Si conSideri gli scenari seguenti:
+Si considerino gli scenari seguenti:
   
 - I nuovi file sono noti per essere simili ai file precedenti caricati nel database del caso oppure il carico precedente di file era un set casuale della raccolta file. In questa istanza, aggiungere i file importati al caricamento del file corrente.
     

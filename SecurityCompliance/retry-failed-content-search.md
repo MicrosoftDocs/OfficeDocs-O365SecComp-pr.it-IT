@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare il pulsante riProva per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
 ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261500"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>RiProvare una ricerca contenuto per risolvere un errore del percorso del contenuto
 

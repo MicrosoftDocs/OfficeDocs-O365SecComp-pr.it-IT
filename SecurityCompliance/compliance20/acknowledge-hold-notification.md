@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243637"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco 
 Quando si risponde a una richiesta di regolamentazione o a un'indagine, potrebbe essere necessario informare i depositari dell'obbligo di conservare le informazioni archiviate elettronicamente (ESI), nonché qualsiasi materiale pertinente a una questione legale attiva o imminente. Una volta inviati, i team legali devono sapere che ogni custode ha ricevuto, letto e compreso e ha accettato di conformarsi alle istruzioni fornite.

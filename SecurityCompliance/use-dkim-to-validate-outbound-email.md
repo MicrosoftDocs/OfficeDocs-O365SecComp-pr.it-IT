@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
 ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263744"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
 
@@ -152,7 +152,7 @@ Dopo aver pubblicato i record CNAME in DNS, è possibile abilitare la firma DKIM
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Per abilitare la firma DKIM del dominio personalizzato usando PowerShell
 
-1. [Connettersi a Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Connettersi a PowerShell per Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
 2. Eseguire il comando riportato di seguito:
     
@@ -203,7 +203,7 @@ La disabilitazione del criterio di firma non disattiva completamente DKIM. Dopo 
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Per disabilitare il criterio di firma DKIM usando Windows PowerShell
 
-1. [Connettersi a Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Connettersi a PowerShell per Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
 2. Eseguire uno dei comandi seguenti per ogni dominio per il quale si desidera disabilitare la firma DKIM.
     

@@ -1,5 +1,5 @@
 ---
-title: Inviare messaggi di posta elettronica a Office 365
+title: Invio di posta a Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
 ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260914"
 ---
-# <a name="sending-mail-to-office-365"></a>Inviare messaggi di posta elettronica a Office 365
+# <a name="sending-mail-to-office-365"></a>Invio di posta a Office 365
 
 Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
   

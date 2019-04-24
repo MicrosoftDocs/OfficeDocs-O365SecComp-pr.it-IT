@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262186"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -380,7 +380,7 @@ Per passare rapidamente a una sezione, fare clic su un elemento nella barra di s
   
 ![Menu di spostamento superiore dell'editor delle regole DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modelli dei criteri di prevenzione della perdita dei dati
+## <a name="dlp-policy-templates"></a>Modelli di criteri di prevenzione della perdita dei dati
 
 Il primo passaggio per la creazione di un criterio DLP è la scelta delle informazioni da proteggere. A partire da un modello DLP, è possibile salvare il lavoro di creazione di un nuovo set di regole da zero e capire quali tipi di informazioni devono essere incluse per impostazione predefinita. È quindi possibile aggiungere o modificare questi requisiti per ottimizzare la regola per soddisfare i requisiti specifici dell'organizzazione.
   
@@ -502,13 +502,13 @@ Queste autorizzazioni sono necessarie solo per la creazione e l'applicazione di 
 
 Per utilizzare la maggior parte dei cmdlet per il centro &amp; sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell.](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Utilizzare uno di questi [cmdlet di policy-and-Compliance-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
 Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incluso Exchange Online. Per questo motivo, **i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell per &amp; il Centro sicurezza e conformità**. Pertanto, per utilizzare i cmdlet per i report DLP, è necessario eseguire le operazioni seguenti:
   
-1. [Connessione a Exchange Online tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Utilizzare uno di questi cmdlet per i report DLP:
     
@@ -516,19 +516,19 @@ Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incl
     
   - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
-- [Creare criteri di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
+- [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
 - [Inviare notifiche e visualizzare i suggerimenti per i criteri DLP](use-notifications-and-policy-tips.md)
     
-- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
+- [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Elementi cercati dai tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
     
-- [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
+- [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
 - [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md)
     

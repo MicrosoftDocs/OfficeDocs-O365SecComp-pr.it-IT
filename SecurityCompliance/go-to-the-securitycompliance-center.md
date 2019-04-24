@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Before you can use the Security &amp; Compliance Center, you need the right permissions. L'account aziendale o dell'Istituto di istruzione deve essere assegnato al ruolo di amministratore globale di Office 365 o essere stato assegnato a &amp; uno o più gruppi di ruoli del Centro sicurezza e conformità da un amministratore globale.
 ms.openlocfilehash: a4d6c1a62047728517316199b5ad555d1996a497
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256490"
 ---
 # <a name="go-to-the-office-365-security-amp-compliance-center"></a>Go to the Office 365 Security &amp; Compliance Center
 

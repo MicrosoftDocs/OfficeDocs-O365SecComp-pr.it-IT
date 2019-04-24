@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare l'autenticazione dei messaggi basata sul dominio, la creazione di report e la conformità (DMARC) per convalidare i messaggi inviati dall'organizzazione di Office 365.
 ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263728"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utilizzare DMARC per convalidare la posta elettronica in Office 365
 

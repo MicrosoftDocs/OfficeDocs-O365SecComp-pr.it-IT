@@ -1,9 +1,8 @@
 ---
-title: Esportare i campi dei report in Office 365 Advanced eDiscovery
+title: Esportare i campi di report in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: a910fa94a1361e48099ef5792ce93d5934fdccc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255464"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Esportare i campi dei report in Office 365 Advanced eDiscovery
+# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Esportare i campi di report in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -104,14 +103,14 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Export_status_ID  <br/> |Elaborazione  <br/> |ID dello stato di esportazione.  <br/> |Sì  <br/> |Sì  <br/> |
 |Export_status_description  <br/> |Elaborazione  <br/> |Descrizione dello stato di esportazione; Descrizione riuscita o errore.  <br/> |Sì  <br/> |Sì  <br/> |
 |Read_percent  <br/> |Pertinenza  <br/> |Lettura% (0-100). Per ogni problema.  <br/> |Sì  <br/> |Sì  <br/> |
-|Doc_author  <br/> |Proprietà del documento  <br/> |Proprietà del documento: Author.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_comments  <br/> |Proprietà del documento  <br/> |Proprietà del documento: commenti.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_keywords  <br/> |Proprietà del documento  <br/> |Proprietà del documento: parole chiave.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_last_saved_by  <br/> |Proprietà del documento  <br/> |Proprietà del documento: ultimo salvataggio da.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_revision  <br/> |Proprietà del documento  <br/> |Proprietà del documento: numero di revisione.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_subject  <br/> |Proprietà del documento  <br/> |Proprietà del documento: subject.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_template  <br/> |Proprietà del documento  <br/> |Proprietà documento: modello.  <br/> |No  <br/> |Sì  <br/> |
-|Doc_title  <br/> |Proprietà del documento  <br/> |Proprietà del documento: title.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_author  <br/> |Proprietà di documento  <br/> |Proprietà del documento: Author.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_comments  <br/> |Proprietà di documento  <br/> |Proprietà del documento: commenti.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_keywords  <br/> |Proprietà di documento  <br/> |Proprietà del documento: parole chiave.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_last_saved_by  <br/> |Proprietà di documento  <br/> |Proprietà del documento: ultimo salvataggio da.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_revision  <br/> |Proprietà di documento  <br/> |Proprietà del documento: numero di revisione.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_subject  <br/> |Proprietà di documento  <br/> |Proprietà del documento: subject.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_template  <br/> |Proprietà di documento  <br/> |Proprietà documento: modello.  <br/> |No  <br/> |Sì  <br/> |
+|Doc_title  <br/> |Proprietà di documento  <br/> |Proprietà del documento: title.  <br/> |No  <br/> |Sì  <br/> |
 |Email_has_attachment  <br/> |Posta elettronica  <br/> |Indica se il messaggio di posta elettronica contiene uno o più allegati.  <br/> |No  <br/> |Sì  <br/> |
 |Email_importance  <br/> |Posta elettronica  <br/> |Valore della proprietà di posta elettronica.  <br/> |No  <br/> |Sì  <br/> |
 |Email_level  <br/> |Posta elettronica  <br/> |Indica il livello di posta elettronica all'interno del thread di posta elettronica. Per gli allegati, il valore del messaggio di posta elettronica allegato.  <br/> |No  <br/> |Sì  <br/> |
@@ -125,8 +124,8 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Has_Text  <br/> |Elaborazione  <br/> |Indica se è presente un testo nel file: 0-No; 1-Sì.  <br/> |No  <br/> |Sì  <br/> |
 |Input_file_ID  <br/> |Elaborazione  <br/> |ID del file di input da cui è stato estratto il file.  <br/> |No  <br/> |Sì  <br/> |
 |Native_SHA_256  <br/> |Elaborazione  <br/> |Valore hash SHA-256 del file nativo.  <br/> |No  <br/> |Sì  <br/> |
-|O365_authors  <br/> |Proprietà del documento  <br/> |Utenti che hanno modificato il file nativo, ricavato da campi di SharePoint o di Exchange.  <br/> |No  <br/> |Sì  <br/> |
-|O365_created_by  <br/> |Proprietà del documento  <br/> |Utente che ha creato il file nativo, ricavato da campi di SharePoint o di Exchange.  <br/> |No  <br/> |Sì  <br/> |
+|O365_authors  <br/> |Proprietà di documento  <br/> |Utenti che hanno modificato il file nativo, ricavato da campi di SharePoint o di Exchange.  <br/> |No  <br/> |Sì  <br/> |
+|O365_created_by  <br/> |Proprietà di documento  <br/> |Utente che ha creato il file nativo, ricavato da campi di SharePoint o di Exchange.  <br/> |No  <br/> |Sì  <br/> |
 |Parent_node  <br/> |Posta elettronica  <br/> |Collega un nodo in un thread di posta elettronica al nodo padre più vicino che non è un collegamento mancante.  <br/> |No  <br/> |Sì  <br/> |
 |Set_order_inclusives_first  <br/> |Posta elettronica  <br/> |Messaggi di posta elettronica e allegati: contatore ordine cronologico (incluso per primo). Documenti: pivot prima e resto per Punteggio di somiglianza, discendente.  <br/> |No  <br/> |Sì  <br/> |
 |Tagged_By  <br/> |Pertinenza  <br/> |Utente che ha aggiunto il file in pertinenza per il problema specifico.  <br/> |No  <br/> |Sì  <br/> |

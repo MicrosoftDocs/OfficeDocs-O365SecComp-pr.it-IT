@@ -1,5 +1,5 @@
 ---
-title: Eseguire i rapporti in Office 365 Advanced eDiscovery
+title: Esecuzione di report in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Informazioni su come eseguire un report e quindi scaricare il relativo file. csv in Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: c6b70700d785c2616f984f3902fbc543d1ae26b3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261210"
 ---
-# <a name="run-reports-in-office-365-advanced-ediscovery"></a>Eseguire i rapporti in Office 365 Advanced eDiscovery
+# <a name="run-reports-in-office-365-advanced-ediscovery"></a>Esecuzione di report in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

@@ -13,25 +13,23 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241579"
 ---
 # <a name="view-documents-in-a-working-set"></a>Visualizzare i documenti in un set di lavoro
 
 Advanced eDiscovery (Preview) Visualizza il contenuto tramite diversi visualizzatori ognuno con diversi scopi. È possibile utilizzare i diversi visualizzatori facendo clic su qualsiasi documento all'interno di un working set. I visualizzatori attualmente forniti sono:
 
-- Metadati di file  
-
+- Metadati dei file
 - Visualizzazione nativa
 - Visualizzazione testo
 - Visualizzazione anNotazioni
 - Visualizzazione convertita
 
-## <a name="file-metadata"></a>Metadati di file  
-
+## <a name="file-metadata"></a>Metadati dei file
 
 Questo pannello può essere attivato/disattivato per visualizzare i vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per la visualizzazione di metadati specifici, è possibile che lo scorrimento orizzontale possa essere difficoltoso durante la revisione dei dati. Il pannello metadati file consente a un utente di alternare una visualizzazione all'interno del visualizzatore.
 

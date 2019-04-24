@@ -1,5 +1,5 @@
 ---
-title: Usare il modulo di Rilevanza in Office 365 Advanced eDiscovery
+title: Utilizzare il modulo pertinenza in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Informazioni sul modulo pertinenza in Office 365 Advanced eDiscovery, tra cui un flusso di lavoro e le linee guida e i passaggi per la formazione e la revisione dei file.  '
 ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263788"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Usare il modulo di Rilevanza in Office 365 Advanced eDiscovery
+# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Utilizzare il modulo pertinenza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilizzare il filtro delle autorizzazioni per la ricerca del contenuto per consentire a un responsabile di eDiscovery di cercare solo un sottoinsieme di cassette postali e siti nell'organizzazione di Office 365.
 ms.openlocfilehash: 1e12a125390deae60cc8762318b3b6bcf0e6533f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261254"
 ---
-# <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per la ricerca di contenuto
+# <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per Ricerca contenuto
 
 È possibile utilizzare il filtro delle autorizzazioni di ricerca per consentire a un responsabile di eDiscovery di ricercare solo un sottoinsieme di cassette postali e siti nell'organizzazione di Office 365. È inoltre possibile filtrare le autorizzazioni per consentire allo stesso gestore di eDiscovery di eseguire le ricerche solo per i contenuti delle cassette postali e dei siti che rispondono a un criterio di ricerca specifico. Ad esempio, è possibile consentire un gestore di eDiscovery di effettuare la ricerca solo nelle cassette postali degli utenti in un determinato percorso o reparto. Questa operazione viene eseguita creando un filtro che utilizza un filtro destinatari supportati per limitare le cassette postali in cui è possibile effettuare la ricerca. È inoltre possibile creare un filtro che consente di specificare i contenuti delle cassette postali che è possibile ricercare. Questa operazione viene eseguita creando un filtro che utilizza una proprietà dei messaggi disponibili per la ricerca. Analogamente, è possibile consentire a un Manager di eDiscovery di eseguire ricerche in siti di SharePoint specifici nell'organizzazione. Questa operazione viene eseguita creando un filtro che consente di limitare il sito disponibile per la ricerca. È inoltre possibile creare un filtro che consente di specificare i contenuti dei siti che è possibile ricercare. Questa operazione viene eseguita creando un filtro che utilizza una proprietà dei siti disponibili per la ricerca.
 

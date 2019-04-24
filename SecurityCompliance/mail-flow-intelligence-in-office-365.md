@@ -12,13 +12,13 @@ search.appverid:
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
 ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252500"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Business intelligence di flusso di posta elettronica in Office 365
+# <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
 
 In genere, si utilizza un connettore per instradare i messaggi di posta elettronica dall'organizzazione di Office 365 all'ambiente di posta elettronica locale. È anche possibile usare un connettore per instradare i messaggi da Office 365 a un'organizzazione partner. Quando Office 365 non è in grado di recapitare tali messaggi attraverso il connettore, questi ultimi vengono messi in coda in Office 365. Office 365 proverà a ripetere il recapito di ogni messaggio per 48 ore. Dopo 48 ore, il messaggio nella coda scade e viene inviato di nuovo al mittente originale tramite un rapporto di mancato recapito (detto anche NDR o notifica di mancato recapito).
 

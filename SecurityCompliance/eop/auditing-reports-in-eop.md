@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: I report di controllo in Microsoft Exchange Online Protection (EOP) consentono di soddisfare i requisiti normativi, di conformità e legali della propria organizzazione. È possibile ottenere report di controllo in qualsiasi momento per determinare le modifiche apportate alla configurazione di Exchange Online Protection. Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità.
 ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256654"
 ---
-# <a name="auditing-reports-in-eop"></a>Report di controllo in EOP
+# <a name="auditing-reports-in-eop"></a>Report di controllo in Exchange Online Protection
 
 I report di controllo in Microsoft Exchange Online Protection (EOP) consentono di soddisfare i requisiti normativi, di conformità e legali della propria organizzazione. È possibile ottenere report di controllo in qualsiasi momento per determinare le modifiche apportate alla configurazione di Exchange Online Protection. Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità.
   

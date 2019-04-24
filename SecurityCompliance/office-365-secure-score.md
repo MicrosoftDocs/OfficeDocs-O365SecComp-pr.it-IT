@@ -1,5 +1,5 @@
 ---
-title: Secure Score di Office 365
+title: Office 365 Secure Score
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Vi è mai chiesto come la sicurezza dell'organizzazione sia davvero in Office 365? Il Punteggio sicuro è qui per aiutarti. Secure Score analizza la sicurezza dell'organizzazione in base alle normali attività e alle impostazioni di sicurezza di Office 365 e assegna un punteggio.
 ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262464"
 ---
-# <a name="office-365-secure-score"></a>Secure Score di Office 365
+# <a name="office-365-secure-score"></a>Office 365 Secure Score
 
 **Riepilogo** Vi è mai chiesto come la sicurezza dell'organizzazione sia davvero in Office 365? Il Punteggio sicuro è qui per aiutarti. Secure Score analizza la sicurezza dell'organizzazione in base alle normali attività e alle impostazioni di sicurezza di Office 365 e assegna un punteggio. Leggere questo articolo per ottenere una panoramica del Punteggio sicuro e come utilizzarlo.
   

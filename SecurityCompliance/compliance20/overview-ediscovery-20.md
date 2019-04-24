@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery (Preview) in Microsoft 365.
 ms.openlocfilehash: 2296f4ee1867cacc90eada9e5f12888a8ea0d242
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252476"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Panoramica di Advanced eDiscovery (Preview) in Microsoft 365
 
@@ -57,7 +57,7 @@ Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscover
 
 ![Tabs in Advanced eDiscovery (Preview) seguire il flusso di lavoro di EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Gestione dei responsabili
+## <a name="managing-custodians"></a>Gestione dei depositari
 
 Utilizzare la scheda **depositari** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso. Quando si aggiungono depositari, è possibile eseguire rapidamente azioni relative a un custode come la conservazione di un blocco legale su origini dati depositarie, ad esempio la cassetta postale e l'account OneDrive, la comunicazione con i depositari e la ricerca di origini dati depositarie per la raccolta del contenuto. Questo è pertinente per il caso. Quando il caso progredisce, è facile aggiungere nuovi depositari o rilasciarli dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery (Preview)](managing-custodians.md).
 
@@ -92,6 +92,6 @@ Dopo aver esportato i dati da un working set, **** utilizzare la scheda exports 
 
 Utilizzare la scheda **processi** per monitorare i processi a esecuzione prolungata per le attività correlate al caso che sono state avviate. Esempi di processi includono quelli relativi alla reindicizzazione, alle ricerche e alle esportazioni. Ad esempio, è possibile creare una nuova ricerca nella scheda **ricerche** che include un numero elevato di origini dati. Lo stato di questo processo di ricerca viene visualizzato nella scheda **processi** . Per ulteriori informazioni, vedere [gestire i processi in Advanced eDiscovery (Preview)](managing-jobs-ediscovery20.md).
 
-## <a name="configuring-case-settings"></a>Configurazione delle impostazioni dei casi
+## <a name="configuring-case-settings"></a>Configurazione delle impostazioni del caso
 
 Utilizzare la scheda **Impostazioni** per configurare le impostazioni a livello di maiuscole e minuscole. Questo include l'aggiunta di membri a un caso, la chiusura o l'eliminazione di un caso e la configurazione del comportamento di ricerca e analisi. Per ulteriori informazioni, vedere [Configure case Settings in Advanced eDiscovery (Preview)](configuring-case-settings-ediscovery20.md).

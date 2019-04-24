@@ -1,5 +1,5 @@
 ---
-title: Creare i report dell’individuazione di app con Office 365 Cloud App Security
+title: Creare report sull'individuazione di app con Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Creare report con Office 365 cloud app Security che consentano di comprendere in che modo gli utenti dell'organizzazione utilizzano Office 365 e altre app.
 ms.openlocfilehash: 23165a52a09e5bcde46ee3ab2110dc17d0faf7f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259640"
 ---
-# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Creare i report dell’individuazione di app con Office 365 Cloud App Security
+# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Creare report sull'individuazione di app con Office 365 Cloud App Security
 
 |Valutazione * *\>**|Planning * *\>**|Distribuzione * *\>**|Utilizzo * * * *|
 |:-----|:-----|:-----|:-----|

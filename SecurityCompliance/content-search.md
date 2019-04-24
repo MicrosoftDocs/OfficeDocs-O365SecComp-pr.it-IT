@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilizzare lo strumento di ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare il contenuto nelle cassette postali, i siti di SharePoint Online, gli account di OneDrive, Microsoft teams, i gruppi di Office 365 e le conversazioni di Skype for business. È possibile utilizzare le query di ricerca con parole chiave e le condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La ricerca contenuto è anche uno strumento efficace per la ricerca di contenuto che potrebbe essere correlato a una richiesta del soggetto dei dati di GDPR.
 ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264086"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -159,9 +159,9 @@ Per esportare i risultati della ricerca:
     
 Per istruzioni più dettagliate e suggerimenti per la risoluzione dei problemi, vedere:
   
-- [Esportare i risultati di Ricerca contenuto](export-search-results.md)
+- [Esportare i risultati della Ricerca contenuto](export-search-results.md)
     
-- [Esportare un report di Ricerca contenuto](export-a-content-search-report.md)
+- [Esportare il rapporto della Ricerca contenuto](export-a-content-search-report.md)
     
   
 ## <a name="more-information-about-content-search"></a>Ulteriori informazioni sulla ricerca contenuto

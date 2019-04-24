@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 9898e3c4861da8dbd90168622395981f34aaa510
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240901"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gestire i processi in Advanced eDiscovery (Preview)
 
@@ -41,3 +41,17 @@ Di seguito è indicato un elenco dei processi (che in genere sono di lunga durat
 |Esecuzione di analisi | Un utente analizza i dati in un working set eseguendo strumenti di analisi avanzata di eDiscovery, ad esempio in prossimità del rilevamento duplicato, dell'analisi del threading di posta elettronica e dell'analisi dei temi. Per ulteriori informazioni, vedere [analyze data in a working set](analyzing-data-in-working-set.md). | 
 |Contrassegnare i documenti | Questo processo viene attivato quando un utente fa clic su **Avvia processo di tagging** nel **Pannello di tagging** quando si esaminano i documenti in un working set. Un utente può avviare questo processo dopo aver eseguito il tagging dei documenti in un working set e quindi selezionarli in blocco nel pannello Visualizza documento. Per ulteriori informazioni, vedere [tag Documents in a working set](tagging-documents.md). | 
 |||
+
+
+## <a name="job-status"></a>Stato processo
+
+Nella tabella seguente vengono descritti i diversi Stati di stato per i processi.
+
+| Stato           | Descrizione     |
+| :----------------- | :----------     |
+| Inserita | È stato creato un nuovo processo.  La data e l'ora in cui il processo è stato inviato viene visualizzato nella colonna **creato** nella scheda **processi** . |
+| Invio non riuscito | L'invio dei processi ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. |
+| In corso | Il processo è in corso, è possibile monitorare lo stato del processo nella scheda **processi** . |
+| Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
+| Parzialmente completata | Il processo ha avuto esito positivo. |
+| Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |

@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul nuovo centro conformità di Microsoft 365, incluso quello che contiene, su come ottenerlo e sui passaggi successivi.
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265564"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Panoramica del nuovo centro conformità Microsoft 365
 
@@ -24,7 +24,7 @@ Se si è interessati alla postura di conformità dell'organizzazione, sarà poss
 
 Leggere questo articolo per acquisire familiarità con il centro conformità Microsoft 365, [come ottenerlo](#how-do-i-get-this), le [domande frequenti](#frequently-asked-questions)e i [passaggi successivi](#next-steps).
 
-[![Mcentro conformità di icrosoft 365(media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Centro conformità Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Conformità a Microsoft 365 Compliance
 

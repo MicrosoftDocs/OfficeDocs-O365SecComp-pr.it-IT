@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definire i criteri di attività con Office 365 cloud app Security per impostare gli avvisi da attivare quando si verificano o si verificano attività specifiche. Se si configurano i criteri per attivare gli avvisi, è possibile ricevere una notifica e monitorare le attività specifiche.
 ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242720"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Criteri delle attività e avvisi in Office 365 Cloud App Security
 

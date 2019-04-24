@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora risorse (denominato anche Threat Explorer) come parte di Office 365 Advanced Threat Protection Plan 2.
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260572"
 ---
 # <a name="threat-explorer-views"></a>Visualizzazioni di Esplora minacce
 

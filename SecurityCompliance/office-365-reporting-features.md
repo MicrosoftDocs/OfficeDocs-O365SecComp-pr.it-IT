@@ -1,26 +1,26 @@
 ---
-title: Funzionalità di reporting di Office 365
+title: Funzionalità di creazione di report di Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Una spiegazione delle funzionalità di Reporting all'interno di Office 365.
-ms.openlocfilehash: 5e765045982d6788ee93550fa8041a52efb306c0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 150928ccfb99da8b762cf5d5b99bf152a91949fa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262398"
 ---
-# <a name="office-365-reporting-features"></a>Funzionalità di reporting di Office 365 
+# <a name="office-365-reporting-features"></a>Funzionalità di creazione di report di Office 365 
 
 ## <a name="introduction"></a>Introduzione
 La caratteristica rapporti di Office 365 offre una vasta gamma di report di controllo per Azure Active Directory (AD), Exchange Online, gestione dei dispositivi, revisione di supervisione e prevenzione della perdita di dati (DLP). Questi sono diversi e separati dai rapporti attività di Office 365.

@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258735"
 ---
-# <a name="data-investigations-limits"></a>Limiti relativi alle indagini sui dati
+# <a name="data-investigations-preview-limits"></a>Limiti relativi alle indagini sui dati (Preview)
 
-In questo articolo vengono descritti i limiti delle indagini sui dati.
+In questo articolo vengono descritti i limiti delle indagini sui dati (Preview).
 
-## <a name="investigatino-limits"></a>Limiti di Investigatino
+## <a name="investigation-limits"></a>Limiti relativi alle indagini
 
-## <a name="indexing-limits"></a>Limiti di inDicizzazione
-
-## <a name="search-limits"></a>Limiti relativi alla ricerca
-
-## <a name="incident-limits"></a>Limiti relativi agli incidenti
-
-Nella tabella seguente sono elencati i limiti per gli eventi non consentiti nelle indagini sui dati.  Tutti gli elementi che superano i valori massimi dei singoli file verranno visualizzati come errori di elaborazione.
+Nella tabella seguente sono elencati i limiti per le indagini in indagini sui dati (Preview). 
     
   |**Descrizione del limite**|**Tipo di limite**|
   |:-----|:-----|
-  |Numero massimo di operazioni non consentite  <br/> |50  <br/> |
-  |Numero totale di documenti che possono essere ingeriti in un evento imprevisto (per tutti gli incidenti nell'inchiesta)  <br/> |1 milione  <br/> |
-  |Dimensioni totali dei file per carico  <br/> |100 GB  <br/> |
-  |Dimensioni massime di un singolo file   <br/> |100 MB  <br/> |
-  |Numero massimo di caratteri estratti da un singolo file  <br/> |10 milioni  <br/> |
-  |Profondità degli elementi incorporati in un documento  <br/> |25  <br/> |
-  
+  |Numero massimo di indagini.  <br/> |50  <br/> |
+  |Numero totale di documenti che è possibile aggiungere a un'analisi (per tutti i set di prove nell'inchiesta).  <br/> |1 milione  <br/> |
+  |Dimensioni totali dei file per carico.  <br/> |100 GB  <br/> |
+  |Dimensione massima di un singolo file.   <br/> |100 MB <sup>1</sup> <br/> |
+  |Numero massimo di caratteri estratti da un singolo file.  <br/> |10 milioni <sup>1</sup> <br/> |
+  |Profondità degli elementi incorporati in un singolo file.  <br/> |25 <sup>1</sup> <br/> |
+|||
+> [!NOTE]
+><sup>1</sup> tutti gli elementi che superano il limite di un singolo file verranno visualizzati come errori di elaborazione.
+
+## <a name="indexing-limits"></a>Limiti di inDicizzazione
+
+Il contenuto sarà disponibile a breve.
+
+## <a name="search-limits"></a>Limiti relativi alla ricerca
+
+Il contenuto sarà disponibile a breve.
 
 ## <a name="export-limits"></a>Limiti di esportazione
 
+Il contenuto sarà disponibile a breve.
+
 ## <a name="download-limits"></a>Limiti per il download
+
+Il contenuto sarà disponibile a breve.
 

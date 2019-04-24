@@ -1,5 +1,5 @@
 ---
-title: Usare le utilità di Office 365 Advanced eDiscovery
+title: Utilizzare le utilità avanzate di eDiscovery di Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Informazioni sulle utilità in Office 365 Advanced eDiscovery, tra cui log di caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.  '
 ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265358"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Usare le utilità di Office 365 Advanced eDiscovery
+# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utilizzare le utilità avanzate di eDiscovery di Office 365
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

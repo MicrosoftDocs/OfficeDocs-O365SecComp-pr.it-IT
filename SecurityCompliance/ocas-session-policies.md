@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: I criteri di sessione di sicurezza di Office 365 cloud app consentono il monitoraggio a livello di sessione in tempo reale, offrendo una visibilità granulare nelle app di Office 365 e la possibilità di eseguire azioni diverse a seconda dei criteri impostati per una sessione utente. Invece di consentire o bloccare completamente l'accesso, con il controllo sessione è possibile consentire l'accesso durante il monitoraggio della sessione e/o limitare le attività specifiche della sessione utilizzando le funzionalità del proxy inverso del controllo delle app con accesso condizionale.
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263030"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Criteri di sessione in Office 365 Cloud App Security
 

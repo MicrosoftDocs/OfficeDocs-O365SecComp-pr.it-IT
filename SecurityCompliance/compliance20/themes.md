@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240978"
 ---
 # <a name="themes"></a>Temi
 In che modo una persona scrive un documento? In genere iniziano con una o più idee che vogliono trasmettere nel documento e compongono l'utilizzo di parole che si allineano con le idee. Più è prevalente un'idea, più le parole che sono correlate a quell'idea tendono ad essere. In questo modo viene spiegato come gli utenti utilizzano i documenti. la cosa importante da leggere è la lettura di un documento e le idee che il documento sta cercando di trasmettere e quali idee vengono visualizzate e quali sono le relazioni tra le idee.

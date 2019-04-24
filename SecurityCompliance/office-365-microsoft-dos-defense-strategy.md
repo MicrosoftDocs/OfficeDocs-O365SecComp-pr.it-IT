@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Una panoramica della strategia di difesa Microsoft per la gestione degli attacchi DoS (Denial of Service).
 ms.openlocfilehash: acc0c74ae9ed434d4718d7b8b3bd9429b3245d46
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262548"
 ---
 # <a name="microsofts-denial-of-service-defense-strategy"></a>Strategia di difesa Denial of Service di Microsoft
 

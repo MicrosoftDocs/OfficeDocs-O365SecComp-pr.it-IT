@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni avanzate di Analizza in Office 365 Advanced eDiscovery
+title: Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Office 365 Advanced eDiscovery. '
 ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260860"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Configurare le impostazioni avanzate di Analizza in Office 365 Advanced eDiscovery
+# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

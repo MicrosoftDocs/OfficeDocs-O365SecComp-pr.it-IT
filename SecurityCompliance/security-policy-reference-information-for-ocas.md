@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: aef6c88f-7f47-40ef-9503-2b400e3bc6fd
 description: Ottenere assistenza con i criteri di attività di Office 365 e i criteri di rilevamento delle anomalie.
 ms.openlocfilehash: db44b6cbf5b8c2783cba9862107120d2c33c1559
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264628"
 ---
 # <a name="security-policy-reference-information-for-office-365-cloud-app-security"></a>Informazioni di riferimento sui criteri di sicurezza per Office 365 cloud app Security
   

@@ -1,5 +1,5 @@
 ---
-title: Traccia dei messaggi nel centro sicurezza & Compliance
+title: Traccia messaggio nel Centro sicurezza e conformità
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265634"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Traccia dei messaggi nel centro sicurezza & Compliance
+# <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 ## <a name="overview"></a>Panoramica
 

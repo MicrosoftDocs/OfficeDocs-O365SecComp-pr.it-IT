@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. I seguenti argomenti e i sottoargomenti associati forniscono informazioni e procedure di configurazione per la gestione dei destinatari e l'assegnazione delle autorizzazioni dei gruppi di ruoli di amministratore.
 ms.openlocfilehash: 431a3af4a573c32ef099e72786f26f32dc3288e8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256584"
 ---
-# <a name="manage-recipients-and-admin-role-groups-in-eop"></a>Gestire destinatari e gruppi di ruoli amministratore in EOP
+# <a name="manage-recipients-and-admin-role-groups-in-eop"></a>Gestire destinatari e gruppi di ruoli amministratore in Exchange Online Protection
 
 Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. I seguenti argomenti e i sottoargomenti associati forniscono informazioni e procedure di configurazione per la gestione dei destinatari e l'assegnazione delle autorizzazioni dei gruppi di ruoli di amministratore.
   

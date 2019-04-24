@@ -1,5 +1,5 @@
 ---
-title: Impostare l’opzione Ignora messaggio per Analizza in Office 365 Advanced eDiscovery
+title: Impostare l'opzione Ignora testo per ANALYZE in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Informazioni su come definire la regola per ignorare il testo specifico quando si utilizzano i moduli Analyze and process in Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260826"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Impostare l’opzione Ignora messaggio per Analizza in Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Impostare l'opzione Ignora testo per ANALYZE in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

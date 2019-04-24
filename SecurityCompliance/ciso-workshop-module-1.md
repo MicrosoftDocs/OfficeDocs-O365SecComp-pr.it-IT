@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
 ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243997"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>OICOL workshop Module 1: briefing di Microsoft Cybersecurity
 

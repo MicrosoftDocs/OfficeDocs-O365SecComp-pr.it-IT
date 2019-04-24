@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta nel centro sicurezza & Compliance.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252182"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere il dominio del mittente Insight
 

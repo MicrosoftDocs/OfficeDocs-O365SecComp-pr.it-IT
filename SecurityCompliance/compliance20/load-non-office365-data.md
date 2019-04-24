@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242943"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Caricare dati non Office 365 in un set di lavoro
 
@@ -28,7 +28,7 @@ Non tutti i documenti che potrebbe essere necessario analizzare con Office 365 A
 >[!Note]
 >Advanced eDiscovery richiede un Office 365 E3 con il componente aggiuntivo per la conformità avanzato o un abbonamento E5 per l'organizzazione. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 Se si utilizza la funzionalità carica non Office 365 come descritto in questa procedura, è necessario disporre di:
 
 - Un Office 365 E3 con un componente aggiuntivo di conformità avanzato o un abbonamento E5.
