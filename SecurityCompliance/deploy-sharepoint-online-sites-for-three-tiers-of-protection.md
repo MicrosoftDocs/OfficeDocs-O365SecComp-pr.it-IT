@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Sintesi: creare e configurare siti del team di SharePoint Online per diversi livelli di protezione delle informazioni.'
 ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257198"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Distribuire siti di SharePoint Online per tre livelli di protezione
 

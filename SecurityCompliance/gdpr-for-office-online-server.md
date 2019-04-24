@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
 ms.openlocfilehash: 9f2b52e11d85838bc0f4a1cc6a0e0961cd69a32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255240"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGDP per Server Office Web Apps e Office Online Server
 

@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Informazioni su come cercare e trovare i dati personali dell'utente in Office 365.
 ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265338"
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
@@ -145,7 +145,7 @@ Iniziare con queste tipologie di informazioni sensibili. Molte altre tipologie s
 
 > Belgio - Numero nazionale
 >
-> Credit Card Number
+> Numero di carta di credito
 >
 > Numero di carta di identità della Croazia
 >

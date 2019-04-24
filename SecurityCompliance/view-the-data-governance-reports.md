@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: I report sulla governance dei dati nel Centro sicurezza e conformità di Office 365 consentono di visualizzare rapidamente se le etichette vengono applicate al contenuto nel modo previsto.
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266987"
 ---
 # <a name="view-the-data-governance-reports"></a>Visualizzare i report sulla governance dei dati
 

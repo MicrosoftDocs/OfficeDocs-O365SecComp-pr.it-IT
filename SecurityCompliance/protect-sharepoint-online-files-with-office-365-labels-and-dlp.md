@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
 ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261662"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di conservazione e la prevenzione della perdita dei dati
 
@@ -47,7 +47,7 @@ In questa fase si definiscono i nomi delle etichette di conservazione per i quat
   
 |**Livello di protezione del sito del team di SharePoint Online**|**Nome etichetta**|
 |:-----|:-----|
-|Pubblico di livello di base  <br/> |Pubblico interno  <br/> |
+|Pubblico di base  <br/> |Pubblico interno  <br/> |
 |Privato di base  <br/> |Private  <br/> |
 |Dati sensibili  <br/> |Dati sensibili  <br/> |
 |Highly Confidential (Riservatezza elevata)  <br/> |Highly Confidential (Riservatezza elevata)  <br/> |
@@ -221,9 +221,9 @@ Di seguito è riportata la configurazione risultante per i siti con riservatezza
     
 ## <a name="see-also"></a>Vedere anche
 
-[Proteggere siti e file di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

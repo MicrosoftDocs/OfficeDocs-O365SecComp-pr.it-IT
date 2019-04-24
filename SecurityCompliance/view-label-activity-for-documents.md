@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Con Esplora attività con etichette nel Centro sicurezza e conformità di Office 365, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
 ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267337"
 ---
 # <a name="view-label-activity-for-documents"></a>Visualizzare le attività delle etichette per i documenti
 

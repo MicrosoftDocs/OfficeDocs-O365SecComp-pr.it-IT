@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: Informazioni su come gestire i requisiti GDPR nell'ambiente Skype for Business Server e Lync Server locale.
 ms.openlocfilehash: 3452a6cf6ffdd16f18b7fbc0876d2ae424a6fc76
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254874"
 ---
 # <a name="gdpr-for-skype-for-business-server-and-lync-server"></a>GDPR per Skype for Business Server e Lync Server
 

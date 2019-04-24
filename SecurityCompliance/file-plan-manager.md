@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
 ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
-ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256086"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
