@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con le etichette in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento fa scattare l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso. La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record.
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: Con le etichette di conservazione in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta di conservazione applicate su di esso. La conservazione basata su eventi viene generalmente utilizzata nel corso di un processo di gestione dei record.
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256404"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
-Quando si conserva il contenuto, il periodo di conservazione si basa spesso sull'età del contenuto: ad esempio, è possibile conservare i documenti per sette anni dopo la loro creazione e quindi eliminarli. Tuttavia, con le etichette in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento fa scattare l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso.
+Quando si conserva il contenuto, il periodo di conservazione si basa spesso sull'età del contenuto: ad esempio, è possibile conservare i documenti per sette anni dopo la loro creazione e quindi eliminarli. Tuttavia, con le etichette di conservazione in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta di conservazione applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso.
   
 Ad esempio, è possibile usare etichette con conservazione basata su eventi per:
   
@@ -77,7 +77,7 @@ Di seguito viene illustrato il flusso di lavoro principale per la conservazione 
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Passaggio 1: creare un'etichetta il cui periodo di conservazione sia basato su un evento
 
-Nel Centro sicurezza e conformità, sotto **Classificazioni** nel riquadro di spostamento a sinistra, scegliere **Etichette** \> **Crea un'etichetta**.
+Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 o del Centro sicurezza e conformità di Office 365 scegliere **Classificazioni** > **Etichette** >  scheda **Etichette di conservazione** > **Crea un'etichetta**.
   
 Quando si crea l'etichetta, attivare la conservazione, quindi scegliere l'opzione mostrata di seguito per conservare o eliminare il contenuto in base a un evento. Ciò significa che le impostazioni di conservazione non avranno effetto fino al Passaggio 5, quando verrà creato un evento nella pagina **Eventi**. 
   
@@ -103,7 +103,7 @@ Una volta scelto un tipo di evento e creata l'etichetta, il tipo di evento non p
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Passaggio 3: pubblicare o applicare automaticamente l'etichetta
 
-Come qualsiasi etichetta, è necessario pubblicare o applicare automaticamente un'etichetta basata su eventi in modo che venga applicata manualmente o automaticamente ai contenuti. Ciò può essere effettuato nella pagina **Etichette**. Le etichette che classificano il contenuto come record possono essere pubblicate e applicate solo manualmente al contenuto. 
+Come qualsiasi etichetta, è necessario pubblicare o applicare automaticamente un'etichetta basata su eventi in modo che venga applicata manualmente o automaticamente ai contenuti. È possibile effettuare questa operazione nella pagina **Etichette** o or **Criteri delle etichette**. Le etichette che classificano il contenuto come record possono essere pubblicate e applicate solo manualmente al contenuto. 
   
 ![Opzioni per pubblicare o applicare automaticamente un'etichetta](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ Infine, scegliere la data in cui si è verificato l'evento. Questa data viene ut
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Utilizzare Ricerca contenuto per trovare tutti i contenuti con un'etichetta o un ID risorsa specifici
 
-Dopo che le etichette sono state assegnate al contenuto, è possibile utilizzare la ricerca di contenuti nel Centro sicurezza e conformità per trovare tutti i contenuti classificati con un'etichetta specifica o che contengono un ID risorsa specifico.
+Dopo che le etichette sono state assegnate al contenuto, è possibile usare la funzionalità di ricerca di contenuto per trovare tutti i contenuti classificati con un'etichetta specifica o che contengono un ID risorsa specifico.
   
 Quando si crea una ricerca di contenuto:
   
@@ -167,11 +167,9 @@ Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro si
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizzare gli eventi con PowerShell
 
-Nel Centro sicurezza e conformità di Office 365, è possibile creare eventi solo manualmente, non è possibile attivare automaticamente un evento quando si verifica. Tuttavia, è possibile utilizzare uno script PowerShell per automatizzare la conservazione basata sugli eventi dalle applicazioni aziendali.
-  
-Attualmente stiamo lavorando sulle API, in modo che sia possibile collegare le applicazioni aziendali (ad esempio risorse umane, CRM o applicazioni finanziarie) alla conservazione basata su eventi. Ad esempio, sarà possibile connettere il proprio sistema di gestione delle risorse umane alla conservazione basata su eventi, cosicché quando un dipendente lascia l'organizzazione, un evento di quel tipo viene attivato automaticamente.
-  
-Nel frattempo, ecco i cmdlet di PowerShell disponibili per la conservazione basata su eventi:
+Nell'interfaccia di amministrazione è possibile creare eventi solo manualmente e non è possibile attivare automaticamente un evento quando si verifica. Tuttavia, è possibile usare un'API REST per attivare eventi automaticamente. Per altre informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
+
+È anche possibile usare uno script di PowerShell per automatizzare la conservazione basata su eventi dalle applicazioni aziendali. Ecco i cmdlet di PowerShell disponibili per la conservazione basata su eventi:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

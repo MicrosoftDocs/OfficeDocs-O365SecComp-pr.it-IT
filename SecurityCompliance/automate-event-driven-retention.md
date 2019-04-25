@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 55bfdccea07b6aaa9227974b43b1b20adcf97ff5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 99ece368cbda5318556d1f3863fa07ee11a1d003
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251078"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 
@@ -52,16 +52,16 @@ Identificare i ruoli diversi in un'organizzazione che esegue attività di Gestio
 
   | **Persona**| **Ruolo**|
   | - | - |
-  | Amministratore del Centro sicurezza e conformità | Crea tipi di eventi di conservazione, etichette di conservazione e repository dei record in SharePoint |
+  | Amministratore | Crea tipi di eventi di conservazione, etichette di conservazione e repository dei record in SharePoint |
   | Responsabile della gestione dei record                                  | Fornisce linee guida su criteri di conservazione e pianificazioni della conservazione, oltre a informazioni dettagliate sulla conformità   |
   | Amministratore di sistema (azienda)                          | Configura e gestisce i sistemi esterni in modo da utilizzare Microsoft 365                       |
   | Information Worker                               | Gestisce il ciclo di vita del proprio processo aziendale (risorse umane, finanza, IT ecc.)                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Configurare il Centro sicurezza e conformità
   
-1. L'amministratore di conformità crea un tipo di evento, ad esempio Licenziamento dipendente, Scadenza contratto oppure Fine produzione (consultare la procedura dettagliata nell'[articolo sulla conservazione degli eventi](https://docs.microsoft.com/it-IT/office365/securitycompliance/event-driven-retention))
+1. L'amministratore di conformità crea un tipo di evento, ad esempio Licenziamento dipendente, Scadenza contratto oppure Fine produzione. Vedere la procedura dettagliata nell'articolo sulla [conservazione basata su eventi](https://docs.microsoft.com/it-IT/office365/securitycompliance/event-driven-retention).
     
-1. L'amministratore di conformità crea un'etichetta di conservazione in base a un evento e l'associa a un tipo di evento
+1. L'amministratore di conformità crea un'etichetta di conservazione in base a un evento e la associa a un tipo di evento.
     
 1. Ci sono 4 tipi di trigger per le etichette di conservazione:
             
@@ -73,7 +73,7 @@ Identificare i ruoli diversi in un'organizzazione che esegue attività di Gestio
                 
     1. Basata su eventi
     
-1. L'amministratore di conformità pubblica l'etichetta
+1. L'amministratore di conformità pubblica l'etichetta.
 
 ### <a name="set-up-sharepoint"></a>Configurare SharePoint
    
@@ -93,7 +93,7 @@ Per creare un repository dei record, l'amministratore di conformità deve:
 
 Esistono due modi in cui è possibile attivare la conservazione basata su eventi:
 
-- **Con l'interfaccia utente del Centro sicurezza e conformità**: questo processo può essere utile per conservare meno contenuti contemporaneamente o quando la frequenza di attivazione della conservazione è bassa, ad esempio mensile o annuale. Per altre informazioni su questo metodo, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md). Questa modalità di attivazione della conservazione può tuttavia comportare tempi eccessivi ed è predisposta all'errore, impedendo così la scalabilità. Di conseguenza, una soluzione semplificata e automatica per attivare la conservazione può migliorare la sicurezza e la conformità dei dati.
+- **Con l'interfaccia di amministrazione**: questo processo può essere utile per conservare meno contenuti contemporaneamente o quando la frequenza di attivazione della conservazione è bassa, ad esempio mensile o annuale. Per altre informazioni su questo metodo, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md). Questa modalità di attivazione della conservazione può tuttavia comportare tempi eccessivi ed è più soggetta ad errori, impedendo così la scalabilità. Di conseguenza, per migliorare la sicurezza e la conformità dei dati, è consigliabile adottare una soluzione semplificata e automatica per attivare la conservazione.
 
 - **Con l'API REST di M365**: questo processo è utile quando occorre conservare grandi quantità di contenuto contemporaneamente e/o la frequenza di attivazione della conservazione è alta, ad esempio giornaliera o settimanale. Il flusso rileva il verificarsi di un evento nel sistema line-of-business e crea automaticamente un evento correlato nel Centro di sicurezza e conformità. Non è necessario creare manualmente un evento nell'interfaccia ogni volta che se ne verifica uno.
 
@@ -137,9 +137,9 @@ Di conseguenza, un processo automatizzato per attivare i diversi intervalli di c
 
   - accede al Centro sicurezza e conformità
 
-  - L'amministratore SCC crea tipi di eventi correlati al dipendente, come "Licenziamento del dipendente", "Assunzione del dipendente", nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea tipi di eventi correlati al dipendente, come "Licenziamento del dipendente", "Assunzione del dipendente".
 
-  - L'amministratore SCC crea l'etichetta "Conservazione dipendente" nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea l'etichetta "Conservazione dipendente".
 
   - L'etichetta "Conservazione dipendente" viene pubblicata e applicata manualmente o automaticamente ai documenti dei dipendenti in SharePoint
 
@@ -433,9 +433,9 @@ Un sistema di Customer Relationship Management (CRM) può interagire con Microso
 
   - L'amministratore SCC accede al Centro sicurezza e conformità
 
-  - L'amministratore SCC crea tipi di eventi correlati al contratto, come "Creazione contratto", "Scadenza contratto", nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea tipi di eventi correlati al contratto, come "Creazione contratto", "Scadenza contratto".
 
-  - L'amministratore SCC crea l'etichetta "Scadenza contratto" nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea l'etichetta "Scadenza contratto".
 
   - L'etichetta "Scadenza contratto" viene pubblicata e applicata manualmente o automaticamente ai documenti contrattuali in SharePoint
 
@@ -461,9 +461,9 @@ Un sistema ERP (Enterprise Resource Planning) può utilizzare Microsoft 365 e Mi
 
   - L'amministratore SCC accede al Centro sicurezza e conformità
 
-  - L'amministratore SCC crea tipi di eventi correlati al prodotto, come "Inizio produzione", "Fine produzione", nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea tipi di eventi correlati al prodotto, come "Inizio produzione", "Fine produzione".
 
-  - L'amministratore SCC crea l'etichetta "Fine produzione" nel Centro sicurezza e conformità.
+  - L'amministratore SCC crea l'etichetta "Fine produzione".
 
   - L'etichetta "Fine produzione" viene pubblicata e applicata manualmente o automaticamente ai documenti del prodotto in SharePoint
 

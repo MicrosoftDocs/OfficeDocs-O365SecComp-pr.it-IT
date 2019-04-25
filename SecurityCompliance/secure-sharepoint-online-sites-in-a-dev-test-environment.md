@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260950"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 
@@ -208,9 +208,7 @@ In questa fase vengono create le etichette di conservazione per i diversi livell
     
 7. Nel riquadro **Rivedere le impostazioni** fare clic su **Crea etichetta**.
     
-8. Per etichette aggiuntive, fare clic su **Crea un'etichetta** e ripetere i passaggi da 3 a 7.
-
-9. Ripetere i passaggi da 3 a 8 per altre etichette con i nomi seguenti:
+8. Ripetere i passaggi da 3 a 7 per altre etichette con i nomi seguenti:
     
   - Private
     
@@ -218,21 +216,21 @@ In questa fase vengono create le etichette di conservazione per i diversi livell
     
   - Highly Confidential (Riservatezza elevata)
   
-10. Dal riquadro **Home > Etichette** fare clic su **Publish labels** (Pubblica etichette).
+9. Dal riquadro **Home > Etichette** fare clic su **Publish labels** (Pubblica etichette).
     
-11. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Choose labels to publish** (Scegli etichette da pubblicare).
+10. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Choose labels to publish** (Scegli etichette da pubblicare).
     
-12. Nel riquadro **Choose labels** (Scegli etichette) fare clic su **Aggiungi** e selezionare le quattro etichette.
+11. Nel riquadro **Choose labels** (Scegli etichette) fare clic su **Aggiungi** e selezionare le quattro etichette.
     
-13. Fare clic su **Fine**.
+12. Fare clic su **Fine**.
     
-14. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
+13. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
     
-15. Nel riquadro **Choose locations** (Scegli posizioni) fare clic su **Avanti**.
+14. Nel riquadro **Choose locations** (Scegli posizioni) fare clic su **Avanti**.
     
-16. Nel riquadro **Denomina il criterio** digitare **Example organization** in **Nome**, quindi fare clic su **Avanti**.
+15. Nel riquadro **Denomina il criterio** digitare **Example organization** in **Nome**, quindi fare clic su **Avanti**.
     
-17. Nel riquadro **Verifica le impostazioni** fare clic su **Publish labels** (Pubblica etichette), quindi fare clic su **Chiudi**.
+16. Nel riquadro **Verifica le impostazioni** fare clic su **Publish labels** (Pubblica etichette), quindi fare clic su **Chiudi**.
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Fase 4: creare i siti del team di SharePoint Online
 
@@ -580,11 +578,11 @@ Quando si è pronti per la distribuzione di produzione dei siti di SharePoint On
   
 ## <a name="see-also"></a>Vedere anche
 
-[Proteggere siti e file di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Protezione di file e siti di SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 
