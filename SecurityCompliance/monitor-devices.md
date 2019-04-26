@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
+ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263570"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33302740"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Monitorare i dispositivi in Sicurezza Microsoft 365
 
@@ -25,7 +25,7 @@ Mantenere i dispositivi sicuri, aggiornati e individuare potenziali minacce nel 
 
 ## <a name="view-device-alerts"></a>Visualizzare gli avvisi per i dispositivi
 
-Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Windows Defender ATP (disponibile con una licenza E5). Microsoft 365 Security Center contiene diverse schede che consentono di monitorare efficacemente gli avvisi a un livello superiore, a seconda del flusso di lavoro preferito.
+Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Windows Defender ATP (disponibile con una licenza E5). Microsoft 365 Security Center monitora efficacemente gli avvisi a un livello elevato utilizzando il flusso di lavoro preferito.
 
 ### <a name="monitor-high-impact-alerts"></a>Monitorare gli avvisi ad impatto elevato
 
@@ -183,19 +183,44 @@ Microsoft Intune offre funzionalità di gestione per le regole di ASR. Se si des
 
 ### <a name="exclude-files-from-asr-rules"></a>Escludi file dalle regole di ASR
 
-Escludendo i file dai rilevamenti, è possibile impedire rilevamenti falsi positivi indesiderati e distribuire in modo più sicuro le regole di riduzione delle superfici di attacco in modalità di blocco.
+Microsoft 365 Security Center raccoglie i nomi dei [file che potrebbe essere](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive) necessario escludere dai rilevamenti tramite le regole di riduzione della superficie di attacco. Escludendo i file, è possibile ridurre i rilevamenti falsi positivi e distribuire in modo più sicuro le regole di riduzione della superficie di attacco in modalità di blocco.
 
-Mentre le esclusioni dei file per le regole di riduzione della superficie di attacco vengono gestite su Microsoft Intune, Microsoft 365 Security Center fornisce uno strumento di analisi che consente di comprendere i file che stanno attivando i rilevamenti. Consente inoltre di raccogliere i nomi dei file che si desidera escludere.
+Le esclusioni sono gestite su Microsoft Intune, ma Microsoft 365 Security Center fornisce uno strumento di analisi per facilitare la comprensione dei file. Per avviare la raccolta dei file per l'esclusione, passare alla scheda **Aggiungi esclusioni** nella pagina rapporto **regole di riduzione della superficie di attacco** .
 
-Per avviare l'analisi di rilevamenti e la raccolta di file per l'esclusione, passare alla scheda **Aggiungi esclusioni** nella pagina rapporto **regole di riduzione delle superfici attacco** .
+>[!NOTE]  
+>Lo strumento analizza i rilevamenti per tutte le regole di riduzione della superficie di attacco, ma [solo alcune regole supportano](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)le esclusioni.
 
 ![Scheda Aggiungi esclusioni](./media/security-docs/add-exclusions-tab.png)
 
-Nella tabella sono elencati tutti i nomi di file rilevati dalle regole di riduzione della superficie di attacco. Dopo aver selezionato un file o più file, è possibile esaminare l'impatto relativo all'aggiunta di tali file alle eccezioni:
+Nella tabella sono elencati tutti i nomi di file rilevati dalle regole di riduzione della superficie di attacco. È possibile selezionare i file per esaminare l'impatto dell'esclusione:
 
-* Riduzione del numero totale di rilevamenti
-* Riduzione del numero totale di dispositivi coinvolti nei rilevamenti
+* Quanti meno rilevamenti
+* Quanti meno dispositivi segnalano i rilevamenti
 
 Per ottenere un elenco dei file selezionati con i percorsi completi per l'esclusione, selezionare **Ottieni percorsi di esclusione**.
 
-Per ulteriori informazioni sulle esclusioni e sulle istruzioni dettagliate su come aggiungerle, vedere [risolvere i problemi relativi alle regole di riduzione della superficie di attacco](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr).
+Registri per la regola di ASR **Block Credential Stealing from the Windows Local Security Authority Subsystem (Lsass. exe)** acquisire l'app di origine **Lsass. exe**, un file di sistema normale, come file rilevato. Di conseguenza, l'elenco generato dei percorsi di esclusione includerà questo file. Per escludere il file che ha attivato questa regola anziché **Lsass. exe**, utilizzare il percorso dell'applicazione di origine anziché il file rilevato.
+
+Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) seguente per questa regola specifica (identificata dalla regola ID 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2): 
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+| project InitiatingProcessFolderPath, InitiatingProcessFileName
+```
+
+#### <a name="check-files-for-exclusion"></a>Controllare i file per l'esclusione
+Prima di escludere un file dal riconoscimento vocale automatico, è consigliabile ispezionare il file per determinare se non è effettivamente dannoso.
+
+Per esaminare un file, utilizzare la [pagina informazioni sui file](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection) in centro sicurezza Windows Defender. La pagina fornisce informazioni sulla prevalenza così come il rapporto di rilevamento antivirus di VirusTotal. È inoltre possibile utilizzare la pagina per inviare il file per un'analisi approfondita.
+
+Per individuare un file rilevato in centro sicurezza Windows Defender, cercare tutti i rilevamenti ASR utilizzando la query di caccia avanzata seguente:
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
+```
+
+Utilizzare l'interfaccia **SHA1** o la **InitiatingProcessSHA1** nei risultati per cercare il file utilizzando la barra di ricerca universale in centro sicurezza Windows Defender.

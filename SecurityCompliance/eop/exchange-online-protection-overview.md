@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
+ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256160"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33306580"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -25,9 +25,11 @@ Di seguito sono riportati i modi principali in cui è possibile utilizzare EOP p
   
 - **In uno scenario autonomo** EOP fornisce la protezione della posta elettronica basata sul cloud per l'ambiente di Microsoft Exchange Server 2013 locale, le versioni legacy di Exchange Server o per qualsiasi altra soluzione di posta elettronica SMTP locale. 
     
-- **Come parte di Microsoft Exchange Online** Per impostazioni predefinita, EOP protegge le cassette postali di Microsoft Exchange Online ospitate nel cloud. 
+- **Come parte di Microsoft Exchange Online** Per impostazioni predefinita, EOP protegge le cassette postali di Microsoft Exchange Online ospitate nel cloud. Vedere [Protect Against Threats](../protect-against-threats.md) for help configuring these Exchange Online capabilities. 
     
-- **In una distribuzione ibrida** EOP può essere configurato per proteggere l'ambiente di messaggistica e controllare l'instradamento della posta quando si dispone di un mix di cassette postali locali e cloud. 
+- **In una distribuzione ibrida** EOP può essere configurato in modo da proteggere l'ambiente di messaggistica e controllare il routing della posta quando si utilizza una combinazione di cassette postali locali e basate sul cloud. 
+
+Gli articoli di Exchange Online Protection sono validi per gli ambienti ibridi e locali. 
     
 ## <a name="how-eop-works"></a>Come funziona EOP
 
