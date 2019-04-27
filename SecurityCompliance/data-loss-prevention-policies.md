@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262186"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362054"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
 
@@ -70,7 +70,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ![Diagramma che mostra il criterio DLP contenente posizioni e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Sedi
+### <a name="locations"></a>Percorsi
 
 Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online, OneDrive for business o Microsoft teams. È possibile scegliere di proteggere il contenuto in messaggi di posta elettronica di Exchange, chat e canali di Microsoft teams e tutte le raccolte di SharePoint o OneDrive oppure selezionare percorsi specifici per un criterio.
   
@@ -380,7 +380,7 @@ Per passare rapidamente a una sezione, fare clic su un elemento nella barra di s
   
 ![Menu di spostamento superiore dell'editor delle regole DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modelli di criteri di prevenzione della perdita dei dati
+## <a name="dlp-policy-templates"></a>Modelli dei criteri di prevenzione della perdita dei dati
 
 Il primo passaggio per la creazione di un criterio DLP è la scelta delle informazioni da proteggere. A partire da un modello DLP, è possibile salvare il lavoro di creazione di un nuovo set di regole da zero e capire quali tipi di informazioni devono essere incluse per impostazione predefinita. È quindi possibile aggiungere o modificare questi requisiti per ottimizzare la regola per soddisfare i requisiti specifici dell'organizzazione.
   
@@ -478,11 +478,7 @@ La valutazione del criterio DLP in Office è progettata per non influire sulle p
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Valutazione del criterio in Microsoft Teams
  
-Quando si crea un criterio DLP che include Microsoft teams come percorso, i criteri vengono sincronizzati dal centro sicurezza &amp; e conformità di Office 365 agli account utente e ai canali e alle chat di Microsoft teams. A seconda del modo in cui vengono configurati i criteri DLP, quando un utente tenta di condividere informazioni riservate in una chat o un canale di Microsoft teams, il messaggio può essere bloccato o revocato. Inoltre, i documenti che contengono informazioni riservate e che sono condivisi con gli ospiti (utenti esterni) non verranno aperti per tali utenti.
-
-Si supponga, ad esempio, che un utente tenti di condividere le informazioni riservate in una chat o un canale di team con utenti esterni. Si supponga che sia stato definito un criterio DLP per evitare questo problema. Con la protezione sul posto, vengono eliminati i messaggi che contengono informazioni riservate agli utenti esterni. Questo accade in pochi secondi e avviene automaticamente, in base al modo in cui viene configurato il criterio DLP.
-
-Suggerimenti per i criteri notifica ai mittenti il motivo per cui i messaggi sono stati bloccati o revocati. Ad esempio, a un mittente potrebbe essere detto che il messaggio contiene informazioni personali che non sono consentite per la condivisione con nessuno o che un documento contenente PII non può essere condiviso con persone esterne all'organizzazione. Il mittente può quindi modificare il messaggio in modo che sia conforme ai criteri DLP.
+Quando si crea un criterio DLP che include Microsoft teams come percorso, i criteri vengono sincronizzati dal centro sicurezza &amp; e conformità di Office 365 agli account utente e ai canali e alle chat di Microsoft teams. A seconda del modo in cui vengono configurati i criteri DLP, quando un utente tenta di condividere informazioni riservate in una chat o un canale di Microsoft teams, il messaggio può essere bloccato o revocato. Inoltre, i documenti che contengono informazioni riservate e che sono condivisi con gli ospiti (utenti esterni) non verranno aperti per tali utenti. Per ulteriori informazioni, vedere [prevenzione della perdita di dati e Microsoft teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -516,7 +512,7 @@ Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incl
     
   - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     

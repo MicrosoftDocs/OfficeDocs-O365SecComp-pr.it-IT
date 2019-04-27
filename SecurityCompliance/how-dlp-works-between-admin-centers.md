@@ -3,7 +3,7 @@ title: Funzionamento della prevenzione della perdita dei dati tra il Centro sicu
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Informazioni su come DLP nel centro sicurezza & Compliance funziona con le regole del flusso di posta e DLP (regole di trasporto) nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254930"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362034"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
 
 In Office 365, è possibile creare un criterio di prevenzione della perdita di dati (DLP) in due diversi centri di amministrazione:
   
-- Nel **Centro sicurezza _AMP_ Compliance**, è possibile creare un singolo criterio DLP per proteggere il contenuto in SharePoint, OneDrive ed Exchange. Quando possibile, si consiglia di creare un criterio DLP. Per ulteriori informazioni, vedere [DLP in the Security _AMP_ Compliance Center](data-loss-prevention-policies.md).
+- Nel **Centro sicurezza _AMP_ Compliance**, è possibile creare un singolo criterio DLP per proteggere il contenuto in SharePoint, OneDrive, Exchange e ora Microsoft teams. Quando possibile, si consiglia di creare un criterio DLP. Per ulteriori informazioni, vedere [DLP in the Security _AMP_ Compliance Center](data-loss-prevention-policies.md).
     
 - Nell'interfaccia di **amministrazione di Exchange**, è possibile creare un criterio DLP per proteggere il contenuto solo in Exchange. Questo criterio è in grado di utilizzare le regole del flusso di posta di Exchange (note anche come regole di trasporto), quindi dispone di più opzioni specifiche per la gestione della posta elettronica. Per ulteriori informazioni, vedere [DLP nell'](https://go.microsoft.com/fwlink/?linkid=852311)interfaccia di amministrazione di Exchange.
     
