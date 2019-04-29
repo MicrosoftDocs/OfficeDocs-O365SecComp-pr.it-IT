@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Seguire questa procedura per configurare le app di Azure AD Office 365 in modo che siano controllate da Office 365 cloud app Security Conditional Access App Control.
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263110"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402944"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Distribuire Controllo app per l'accesso condizionale per le app di Office 365
 
@@ -50,7 +50,7 @@ Seguire questa procedura per configurare le app di Azure AD Office 365 in modo c
 
 6. Aggiungere tutte le **assegnazioni di condizioni** applicabili o i **controlli** di concessione (facoltativo).
 
-> ![Accesso condizionale di Azure AD](media/image1.png)
+> ![Accesso condizionale di Azure AD](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>Passaggio 2: accedere con l'ambito di un utente al criterio nelle app 
 
@@ -72,7 +72,7 @@ per configurare un criterio avanzato, creare un criterio di [accesso](ocas-acce
 
 3. Dopo aver caricato il certificato, è possibile creare criteri di accesso e criteri di sessione basati sul **tag del dispositivo** e sul **certificato client valido**.
 
-![ID del dispositivo di controllo dell'accesso condizionale](media/image2.png)
+![ID del dispositivo di controllo dell'accesso condizionale](media/OCASimage2.png)
 
 > [!NOTE]
 > Un certificato viene richiesto solo da un utente se la sessione corrisponde a un criterio che utilizza il filtro certificato client valido.

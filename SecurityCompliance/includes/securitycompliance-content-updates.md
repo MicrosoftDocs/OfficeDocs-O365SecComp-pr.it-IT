@@ -175,7 +175,7 @@
 | 3/20/2019 | [Report dei client auth SMTP](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | aggiunto |
 | 3/21/2019 | [Indagine automatizzata e risposta (aria) con Office 365 Threat Intelligence](/Office365/SecurityCompliance/automated-investigation-response-office) | aggiunto |
 | 3/21/2019 | [Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Investigation and Response](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modificato |
-| 3/21/2019 | [Indagine e risposta alle minacce di Office 365](/Office365/SecurityCompliance/office-365-ti) | modificato |
+| 3/21/2019 | [Analisi delle minacce e risposta alle minacce in Office 365](/Office365/SecurityCompliance/office-365-ti) | modificato |
 | 3/21/2019 | [Visualizzazioni di Esplora minacce](/Office365/SecurityCompliance/threat-explorer-views) | aggiunto |
 | 3/21/2019 | [Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modificato |
 | 3/21/2019 | [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modificato |
@@ -216,7 +216,7 @@
 | 3/26/2019 | [Welcome to your all-New New Microsoft 365 Compliance Center](/Office365/SecurityCompliance/microsoft-365-compliance-center) | aggiunto |
 | 3/26/2019 | [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries) | modificato |
 | 3/26/2019 | [Pagine di avviso per collegamenti sicuri ATP di Office 365](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modificato |
-| 3/26/2019 | [Collegamenti sicuri ATP di Office 365](/Office365/SecurityCompliance/atp-safe-links) | modificato |
+| 3/26/2019 | [Collegamenti sicuri di Office 365 ATP](/Office365/SecurityCompliance/atp-safe-links) | modificato |
 | 3/26/2019 | [Simulatore di attacchi in Office 365](/Office365/SecurityCompliance/attack-simulator) | modificato |
 | 3/26/2019 | [Importare in blocco i contatti esterni in Exchange Online](/Office365/SecurityCompliance/bulk-import-external-contacts) | modificato |
 | 3/26/2019 | [Gestire un problema di fuoriuscita dei dati in Microsoft 365](/Office365/SecurityCompliance/compliance20/manage-data-spillage-incidents) | modificato |
@@ -359,7 +359,7 @@
 | 3/29/2019 | [Modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery](/Office365/SecurityCompliance/change-the-size-of-pst-files-when-exporting-results) | modificato |
 | 3/29/2019 | [Avvio veloce: configurare Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/checklist-atp-setup) | modificato |
 | 3/29/2019 | [Clonare una Ricerca contenuto](/Office365/SecurityCompliance/clone-a-content-search) | modificato |
-| 3/29/2019 | [Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modificato |
+| 3/29/2019 | [Configurare gruppi e utenti per un ambiente di sviluppo/testing per la campagna politica](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modificato |
 | 3/29/2019 | [Ricerca contenuto in Office 365](/Office365/SecurityCompliance/content-search) | modificato |
 | 3/29/2019 | [Creare un tipo di informazioni riservate personalizzato in PowerShell centro conformità di & di sicurezza](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modificato |
 | 3/29/2019 | [Creare un tipo di informazioni sensibili personalizzato](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificato |
@@ -484,7 +484,7 @@
 | 3/29/2019 | [Attività di utilizzo dopo la distribuzione di Office 365 Cloud App Security](/Office365/SecurityCompliance/utilization-activities-for-ocas) | modificato |
 | 3/29/2019 | [Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](/Office365/SecurityCompliance/view-keyword-statistics-for-content-search) | modificato |
 | 3/29/2019 | [Intestazioni messaggi della protezione da posta indesiderata](/Office365/SecurityCompliance/anti-spam-message-headers) | modificato |
-| 3/29/2019 | Sicurezza e conformità per Office 365 | rimosso |
+| 3/29/2019 | Sicurezza e conformità di Office 365 | rimosso |
 | 3/29/2019 | [Controlli di accesso amministrativo in Office 365](/Office365/SecurityCompliance/office-365-administrative-access-controls-overview) | modificato |
 | 3/29/2019 | [Principi fondamentali di Office 365 per la difesa dagli attacchi Denial of Service](/Office365/SecurityCompliance/office-365-core-principles-of-defense-against-dos-attacks) | modificato |
 | 3/29/2019 | [Distruzione dei dati di Office 365](/Office365/SecurityCompliance/office-365-data-destruction) | modificato |
@@ -663,7 +663,7 @@
 | 4/16/2019 | [Applicare le etichette ai dati personali in Office 365](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | modificato |
 | 4/16/2019 | [Archiviazione dei dati di terze parti in Office 365](/Office365/SecurityCompliance/archiving-third-party-data) | modificato |
 | 4/16/2019 | [Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance](/Office365/SecurityCompliance/assign-ediscovery-permissions) | modificato |
-| 4/16/2019 | [Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modificato |
+| 4/16/2019 | [Configurare gruppi e utenti per un ambiente di sviluppo/testing per la campagna politica](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modificato |
 | 4/16/2019 | [Configurare i criteri di filtro della posta indesiderata](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | modificato |
 | 4/16/2019 | [Controllare la posta indesiderata in uscita in Office 365](/Office365/SecurityCompliance/controlling-outbound-spam-in-office-365) | modificato |
 | 4/16/2019 | [Crittografia dei dati in OneDrive for Business e SharePoint Online](/Office365/SecurityCompliance/data-encryption-in-odb-and-spo) | modificato |
@@ -709,17 +709,17 @@
 | 4/16/2019 | [Chief Information Security Officer (OICOL) workshop-modulo 4a-strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificato |
 | 4/16/2019 | [Chief Information Security Officer (OICOL) workshop-modulo 4B – strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificato |
 | 4/16/2019 | [Chief Information Security Officer (OICOL) workshop-modulo 5 – protezione delle informazioni](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificato |
-| 4/17/2019 | [Configurare i criteri di supervisione per l'organizzazione](/Office365/SecurityCompliance/configure-supervision-policies) | modificato |
-| 4/17/2019 | [Criteri di superVisione in Office 365](/Office365/SecurityCompliance/supervision-policies) | modificato |
-| 4/17/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 1: briefing di Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | modificato |
-| 4/17/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 2: gestione della sicurezza](/Office365/SecurityCompliance/ciso-workshop-module-2) | modificato |
-| 4/17/2019 | [OICOL (Chief Information Security Officer), modulo 3: identità e gestione degli accessi](/Office365/SecurityCompliance/ciso-workshop-module-3) | modificato |
-| 4/17/2019 | [Chief Information Security Officer (OICOL) workshop, modulo 4a: strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificato |
-| 4/17/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 4B: strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificato |
-| 4/17/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 5: protezione delle informazioni](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificato |
-| 4/17/2019 | [Laboratorio di Chief Information Security Officer (OICOL)](/Office365/SecurityCompliance/ciso-workshop) | modificato |
-| 4/17/2019 | [Configurazione della gestione degli accessi con privilegi in Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modificato |
-| 4/17/2019 | [Gestione degli accessi con privilegi in Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificato |
+| 17/04/2019 | [Configurare i criteri di supervisione per l'organizzazione](/Office365/SecurityCompliance/configure-supervision-policies) | modificato |
+| 17/04/2019 | [Criteri di superVisione in Office 365](/Office365/SecurityCompliance/supervision-policies) | modificato |
+| 17/04/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 1: briefing di Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | modificato |
+| 17/04/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 2: gestione della sicurezza](/Office365/SecurityCompliance/ciso-workshop-module-2) | modificato |
+| 17/04/2019 | [OICOL (Chief Information Security Officer), modulo 3: identità e gestione degli accessi](/Office365/SecurityCompliance/ciso-workshop-module-3) | modificato |
+| 17/04/2019 | [Chief Information Security Officer (OICOL) workshop, modulo 4a: strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificato |
+| 17/04/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 4B: strategia di protezione dalle minacce](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificato |
+| 17/04/2019 | [Workshop Chief Information Security Officer (OICOL), modulo 5: protezione delle informazioni](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificato |
+| 17/04/2019 | [Laboratorio di Chief Information Security Officer (OICOL)](/Office365/SecurityCompliance/ciso-workshop) | modificato |
+| 17/04/2019 | [Configurazione della gestione degli accessi con privilegi in Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modificato |
+| 17/04/2019 | [Gestione degli accessi con privilegi in Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificato |
 | 4/18/2019 | [Configurare il tenant di Office 365 per una maggiore sicurezza](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | modificato |
 | 4/18/2019 | [Configurare i criteri di supervisione per l'organizzazione](/Office365/SecurityCompliance/configure-supervision-policies) | modificato |
 | 4/18/2019 | [Criteri di superVisione in Office 365](/Office365/SecurityCompliance/supervision-policies) | modificato |

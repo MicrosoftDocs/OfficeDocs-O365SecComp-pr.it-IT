@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Gli amministratori possono ottenere informazioni sulle autorizzazioni disponibili nel centro conformità di Office 365 Security &.
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439340"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402974"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Autorizzazioni nel centro conformità & sicurezza di Office 365
 

@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
 ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260324"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403044"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
@@ -177,7 +177,7 @@ La scheda **elementi risolti** è la posizione in cui i revisori possono visuali
 
 Se i revisori preferiscono non utilizzare il dashboard di supervisione in Office 365, dispongono anche di altre opzioni per la revisione e la gestione degli elementi raccolti dai criteri di supervisione.
 
-#### <a name="outlook-on-the-web"></a>Outlook sul Web
+#### <a name="outlook-on-the-web"></a>Outlook sul web
 
 Gli utenti designati come revisori in un criterio di supervisione possono utilizzare Outlook sul Web per esaminare e risolvere gli elementi di supervisione. Il componente aggiuntivo di superVisione viene installato automaticamente in Outlook sul Web per tutti i revisori specificati nel criterio. Non è necessaria alcuna configurazione aggiuntiva per le cartelle condivise dei criteri di supervisione per essere disponibili per i revisori configurati.
 

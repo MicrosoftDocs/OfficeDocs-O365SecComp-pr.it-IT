@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: I criteri di sessione di sicurezza di Office 365 cloud app consentono il monitoraggio a livello di sessione in tempo reale, offrendo una visibilità granulare nelle app di Office 365 e la possibilità di eseguire azioni diverse a seconda dei criteri impostati per una sessione utente. Invece di consentire o bloccare completamente l'accesso, con il controllo sessione è possibile consentire l'accesso durante il monitoraggio della sessione e/o limitare le attività specifiche della sessione utilizzando le funzionalità del proxy inverso del controllo delle app con accesso condizionale.
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263030"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403034"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Criteri di sessione in Office 365 Cloud App Security
 
@@ -117,7 +117,7 @@ Controllo delle app di accesso condizionale registra i log di traffico di ogni s
 
 1. Passare alla barra delle impostazioni e fare clic su **controllo di accesso condizionale**.
 
-2. Sul lato destro della tabella fare clic sul pulsante Esporta.<br>![pulsante Esporta](media/image3.png)<br>
+2. Sul lato destro della tabella fare clic sul pulsante Esporta.<br>![pulsante Esporta](media/OCASimage3.png)<br>
 
 3. Selezionare l'intervallo del report e fare clic su **Esporta**. Questo processo potrebbe richiedere del tempo.
 
@@ -125,7 +125,7 @@ Controllo delle app di accesso condizionale registra i log di traffico di ogni s
 
 1. Dopo che il report è pronto, passare a **Impostazioni** e quindi **rapporti**esportati.
 
-2. Nella tabella, selezionare il report pertinente dall'elenco dei **log** del traffico delle app con accesso condizionale e fare clic su Scarica.<br>![pulsante Download](media/image4.png)<br>
+2. Nella tabella, selezionare il report pertinente dall'elenco dei **log** del traffico delle app con accesso condizionale e fare clic su Scarica.<br>![pulsante Download](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>Blocca tutti i download
 

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999939"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402954"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -36,7 +36,11 @@ In un attacco di concessione di consenso illecito, l'utente malintenzionato crea
 3. Creare una ricerca (tutte le attività e tutti gli utenti) e filtrare i risultati per il consenso all'applicazione e aggiungere OAuth2PermissionGrant.
 4. Esaminare le proprietà estese e verificare se IsAdminContent è impostato su true.
 
-
+> [!NOTE]
+>  
+   - Possono essere necessari fino a 30 minuti o fino a 24 ore dopo che si è verificato un evento per la voce del registro di controllo corrispondente da visualizzare nei risultati della ricerca.
+   - Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](search-the-audit-log-in-security-and-compliance.md).
+      
 Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](detect-and-remediate-illicit-consent-grants.md#confirmattack).
 
 <a name="confirmattack"> </a>
@@ -103,11 +107,11 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, sono disponi
 - È inoltre possibile disabilitare l'accesso per l'account interessato del tutto, che disattiverà la disabilitazione dell'app ai dati di quell'account. Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si lavora per limitare rapidamente l'impatto, può essere una soluzione valida per la correzione a breve termine.
 - È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti.  È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34)disattivazione delle app integrate.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Protezione di Office 365 come un Cybersecurity Pro
-L'abbonamento a Office 365 è dotato di un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti.  Utilizzare la Guida di [orientamento alla sicurezza di office 365: priorità principali per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliAte di Microsoft consigliati per la protezione del tenant di Office 365.
-- Attività da eseguire nei primi 30 giorni.  Tali effetti hanno un impatto immediato e sono di scarso effetto per gli utenti.
-- Attività da eseguire in 90 giorni. Questi richiedono un po' più di tempo per pianificare e implementare, ma migliorare notevolmente la posizione di sicurezza.
-- Oltre 90 giorni. Questi miglioramenti vengono costruiti nei primi 90 giorni di lavoro.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+- Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
+- Attività da completare in 90 giorni. Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.
+- Dopo 90 giorni. Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.
 
 ## <a name="see-also"></a>Vedere anche:
 - [Applicazione imprevista nell'elenco delle applicazioni](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) gli amministratori possono eseguire le varie azioni che è possibile intraprendere dopo aver realizzato che sono presenti applicazioni inattese con accesso ai dati.

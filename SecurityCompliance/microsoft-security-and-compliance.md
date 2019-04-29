@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: Prepararsi per il Centro sicurezza e conformità di Microsoft 365
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265490"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402994"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>I nuovi Microsoft 365 Security Center e Microsoft 365 Compliance Center sono ora generalmente disponibili
 
@@ -108,7 +108,7 @@ Nella tabella seguente sono riepilogati gli utenti che possono accedere a vari p
 |[Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Sì |Sì |No |
 |[Exchange](https://docs.microsoft.com/exchange/)     |Sì |Sì |Sì |
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 
 [Centro sicurezza Microsoft 365](overview-security-center.md)
 
