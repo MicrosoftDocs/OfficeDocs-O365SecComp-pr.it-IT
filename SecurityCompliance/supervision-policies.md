@@ -15,20 +15,27 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4399ea298d467a9ab7f395a51d23b2f9f783231b
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403044"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470426"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
 
-I criteri di superVisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione. Questi criteri possono anche aiutare a superare molte sfide di conformità moderne, tra cui il monitoraggio dei tipi di canali di comunicazione, l'aumento del volume dei dati del messaggio e l'applicazione della normativa & il rischio di multe.
+I criteri di superVisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione. 
 
-In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Office 365 supporta la separazione tra la configurazione del tenant e le funzionalità di supporto dei criteri di supervisione e la configurazione di criteri e l'azione su comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
+Questi criteri possono anche aiutare a superare molte sfide di conformità moderne, tra cui:
+
+- Monitoraggio dei tipi di canali di comunicazione crescenti
+- Volume crescente di dati dei messaggi
+- Applicazione di regolamentazione & il rischio di multe.
+
+In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Office 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
+
+Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di superVisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="scenarios-for-supervision-policies"></a>Scenari per i criteri di supervisione
 
@@ -87,8 +94,8 @@ Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi i
 Per impostazione predefinita, la **direzione è** la condizione viene visualizzata e non può essere rimossa. Le impostazioni relative alla direzione di comunicazione in un criterio vengono scelte singolarmente o contemporaneamente:
 
 - In **ingresso**: è possibile scegliere in **ingresso** per esaminare le comunicazioni inviate **alle** persone scelte per la supervisione **da** parte di utenti non inclusi nel criterio.
-- In **uscita** : è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
-- **Internal** -è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
+- In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
+- **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
 #### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
@@ -103,7 +110,28 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 #### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-La configurazione di dizionari per parole chiave personalizzate (o lessici) può fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria e può supportare fino a 100.000 termini per dizionario. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere importato [nel centro conformità](create-a-keyword-dictionary.md).
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100.000 termini per dizionario. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere importato [nel centro conformità](create-a-keyword-dictionary.md).
+
+#### <a name="offensive-language"></a>Lingua offensiva
+
+Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare i messaggi di posta elettronica inadeguati come parte dei requisiti di monitoraggio per il bullismo e l'antimolestia. Per impedire o bloccare la lingua offensiva nelle comunicazioni per la propria organizzazione, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) che utilizza un dizionario di [parole chiave personalizzate](create-a-keyword-dictionary.md) per i termini offensivi.
+
+Il modello di lingua offensiva attualmente supporta le parole chiave in inglese e monitora il corpo dei messaggi di posta elettronica. Il modello di lingua offensivo monitora la posta elettronica per i sentimenti associati ai tipi di lingua seguenti:
+
+|**Tipo**|**Descrizione**|
+|:-----|:-----|
+| **Bestemmie** | Espressioni inappropriate e in imbarazzo per la maggior parte delle persone. |
+| **Legature** | Espressioni che attaccano le culture e le etnie. |
+| **Insulti** | Espressioni che provocano, condannano e ridicolizzano. |
+| **Riferimenti a svantaggi** | Espressioni che si rivolgono a handicap fisici o mentali. |
+| **Lingua squallida** | Espressioni che mirano agli interessi sessuali e allo stato fisico di pulizia. |
+| **Omofobia** | Espressioni che indirizzano le preferenze sessuali. |
+| **Razzismo** | Espressioni che mirano alla razza e all'etnia. |
+| **Estremismo** | Espressioni che mirano alla religione e alle ideologie politiche. |
+| **Alterare** | Espressioni per le quali il significato o la pronuncia è identica a quella di un altro termine più offensivo. |
+| **Lingua provocatoria** | Espressioni che potenzialmente causano rabbia o violenza. |
+| **Tabù** | Espressioni che in genere non sono appropriate nelle comunicazioni educate della società. |
+| **Lingua non affinata** | Espressioni che non dispongono di maniere educate e che sono potenzialmente dure e maleducate. |
 
 #### <a name="conditional-settings"></a>Impostazioni condizionali
 
@@ -113,14 +141,14 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 |**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
-| Il messaggio viene ricevuto da uno di questi domini  <br><br> Il messaggio non viene ricevuto da nessuno di questi domini | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio ricevuto, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso viene applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
-| Il messaggio viene inviato a uno di questi domini  <br><br> Il messaggio non viene inviato a uno di questi domini | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio inviato, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso verrà applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
-| Il messaggio è classificato con una qualsiasi di queste etichette  <br><br> Il messaggio non è classificato con nessuna di queste etichette | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of](https://docs.microsoft.com/office365/securitycompliance/labels)retention labels.|
-| Il messaggio contiene una o più delle seguenti parole  <br><br> Il messaggio contiene nessuna di queste parole | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
-| L'allegato contiene una o più delle seguenti parole  <br><br> L'allegato contiene nessuna di queste parole | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga affinché il criterio venga applicato all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
-| Attachment è uno qualsiasi di questi tipi di file  <br><br> Attachment è nessuno di questi tipi di file | Per controllare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file, ad esempio. exe o. pdf. Se si desidera includere o escludere più estensioni di file, immetterle su righe separate. Per applicare il criterio, è necessario che sia presente una sola estensione per gli allegati.|
-| La dimensione del messaggio è superiore a  <br><br> La dimensione del messaggio non è maggiore di | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 mb**, tutti i messaggi che sono 1,01 MB e superiori sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
-| L'allegato è più grande di  <br><br> L'allegato non è più grande di | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. ad esempio, se si specifica **attachment è maggiore di** \> **2,0 mb**, tutti i messaggi con allegati 2,01 MB e oltre sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
+| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio ricevuto, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso viene applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
+| **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio inviato, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso verrà applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
+| **Il messaggio è classificato con una qualsiasi di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of](https://docs.microsoft.com/office365/securitycompliance/labels)retention labels.|
+| **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
+| **L'allegato contiene una o più delle seguenti parole**  <br><br> **L'allegato contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga affinché il criterio venga applicato all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
+| **Attachment è uno qualsiasi di questi tipi di file**  <br><br> **Attachment è nessuno di questi tipi di file** | Per controllare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file, ad esempio. exe o. pdf. Se si desidera includere o escludere più estensioni di file, immetterle su righe separate. Per applicare il criterio, è necessario che sia presente una sola estensione per gli allegati.|
+| **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è maggiore di** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 mb**, tutti i messaggi che sono 1,01 MB e superiori sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
+| **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. ad esempio, se si specifica **attachment è maggiore di** \> **2,0 mb**, tutti i messaggi con allegati 2,01 MB e oltre sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"></a> Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una o più delle seguenti parole**, con le parole chiave "Banker" e "insider trading" su righe separate. Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
@@ -231,14 +259,14 @@ Di seguito viene indicato un guasto dei valori che è possibile visualizzare nel
   
 |**Tipo di tag**|**Cosa significa**|
 |:-----|:-----|
-| Non Recensito | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365 o nella cartella di supervisione del revisore in Outlook o Outlook sul Web.
-| Conformi | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi richiedono ancora una soluzione. |
-| Ambigui | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Questo funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
-| Non conforme (attivo) | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |
-| Non conforme (risolto) | Il numero di messaggi di posta elettronica non conformi che i revisori hanno esaminato e risolto. |
-| Hit Policy | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti che corrispondono a una o più condizioni definite in un criterio di supervisione |
-| Competenza | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti analizzati da un criterio di supervisione |
-| Risolto | Il numero totale di messaggi provenienti da origini dati di Exchange, teams e di terze parti classificate come **risolte**|
+| **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365 o nella cartella di supervisione del revisore in Outlook o Outlook sul Web.
+| **Conformi** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi richiedono ancora una soluzione. |
+| **Ambigui** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Questo funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
+| **Non conforme (attivo)** | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |
+| **Non conforme (risolto)** | Il numero di messaggi di posta elettronica non conformi che i revisori hanno esaminato e risolto. |
+| **Hit Policy** | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti che corrispondono a una o più condizioni definite in un criterio di supervisione |
+| **Competenza** | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti analizzati da un criterio di supervisione |
+| **Risolto** | Il numero totale di messaggi provenienti da origini dati di Exchange, teams e di terze parti classificate come **risolte**|
 
 > [!NOTE]
 > Prima che vengano visualizzati in questo report, è necessario eseguire il provisioning di criteri di superVisione. Inoltre, se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
@@ -251,10 +279,10 @@ Le attività dei criteri di supervisione seguenti sono controllate e rese dispon
 
 |**Attività**|**Comandi associati**|
 |:-----|:-----|
-| Creare un criterio | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| Modificare un criterio | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| Eliminare un criterio| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| Visualizzazione di un criterio | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
+| **Creare un criterio** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| **Modificare un criterio** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| **Eliminare un criterio** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **Visualizzazione di un criterio** | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 
