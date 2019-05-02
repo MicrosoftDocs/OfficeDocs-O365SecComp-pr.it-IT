@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d54f5ffa5a2dd253a478a758ac0616025a79f118
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252640"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516494"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
-La correzione degli errori consente agli amministratori di eDiscovery di correggere i problemi relativi ai dati che impediscono l'elaborazione corretta del contenuto da parte di Advanced eDiscovery (Preview). Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli amministratori di eDiscovery possono scaricare i file con tale errore, rimuovere la protezione dalla password e caricare i file corretti.
+La correzione degli errori consente agli amministratori di eDiscovery di correggere i problemi relativi ai dati che impediscono al eDiscovery avanzato di elaborare correttamente il contenuto. Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli amministratori di eDiscovery possono scaricare i file con tale errore, rimuovere la protezione dalla password e caricare i file corretti.
 
-Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi di Advanced eDiscovery (Preview).
+Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi avanzati di eDiscovery.
 
 ## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creazione di una sessione di correzione degli errori per la correzione dei file con errore di elaborazione
 
 >[!NOTE]
 >Se la procedura guidata per la correzione degli errori viene chiusa in qualsiasi momento durante la routine seguente, è possibile tornare alla sessione di correzione degli errori dalla scheda **elaborazione** selezionando **correzioni di errore** nel menu a discesa **Visualizza** .
 
-1. Nella scheda **elaborazione** in un caso avanzato di eDiscovery (anteprima), selezionare **errori** nel menu a discesa **Visualizza** .
+1. Nella scheda **elaborazione** in un caso avanzato di eDiscovery, selezionare **errori** nel menu a discesa **Visualizza** .
 
 2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o al tipo di file.  Nell'esempio seguente, viene rimediato un file protetto da password.
 
@@ -63,13 +63,13 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
     ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Se il comando AzCopy fornito ha esito negativo, vedere per [risolvere i problemi relativi a AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
+    > Se il comando AzCopy fornito ha esito negativo, vedere per [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
 
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     > [!NOTE]
     > È importante mantenere intatte la struttura di directory e i nomi di file dei file corretti.  Tutte le convenzioni di denominazione utilizzate nei file e nelle cartelle scaricati consentono di associare nuovamente i file di remdiated all'originale.
 
-8. A questo punto, tornare a Advanced eDiscovery (Preview) e fare clic su **Next: upload files**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
+8. A questo punto, tornare a Advanced eDiscovery e fare clic su **Next: upload files**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 
     ![Caricare file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
@@ -79,9 +79,9 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![ff2ff691-629F-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Infine, tornare a Advanced eDiscovery (Preview) e fare clic su **Next: Process files**.
+11. Infine, tornare a Advanced eDiscovery e fare clic su **Next: Process files**.
 
-12. Quando l'elaborazione è completata.  È possibile tornare al working set e vedere il file correttivo.
+12. Quando l'elaborazione è completata.  È possibile tornare al set di revisione e vedere il file di correzione.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
 
@@ -100,4 +100,4 @@ Quando vengono caricati file corretti, i metadati originali vengono mantenuti co
 - WordCount
 - WorkingsetId
 
-Per una definizione di tutti i campi dei metadati del documento in Advanced eDiscovery (Preview), vedere [Document Metadata Fields](document-metadata-fields.md).
+Per una definizione di tutti i campi dei metadati del documento in Advanced eDiscovery, vedere [Document Metadata Fields](document-metadata-fields.md).
