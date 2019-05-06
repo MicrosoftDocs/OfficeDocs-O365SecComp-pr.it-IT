@@ -260,22 +260,8 @@
 ### [Clonare una Ricerca contenuto](clone-a-content-search.md)
 
 # [Gestire le indagini legali](manage-legal-investigations.md)
-## [Creare e gestire i casi di eDiscovery](ediscovery-cases.md)
-## [Assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md)
-## [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](set-up-compliance-boundaries.md)
-## [Soluzione eDiscovery: scenario di compromissione di dati riservati, ricerca ed eliminazione definitiva](data-spillage-scenariosearch-and-purge.md)
-## [Preparare i risultati di ricerca per Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
-## [Usare uno script per aggiungere gli utenti a un blocco in un caso di eDiscovery](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
-## [Creare un rapporto sui casi di blocco in eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
-## Gestire i blocchi
-### [Creare un blocco di eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold)
-### [Creare un blocco per controversia legale](create-a-litigation-hold.md)
-### [Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
-### [Aumentare la quota degli Elementi recuperabili per le cassette postali con blocchi](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
-### [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
-### [Mantenere Ccn e i destinatari del gruppo di distribuzione espanso](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
-## [Advanced eDiscovery (anteprima) in Microsoft 365](compliance20/overview-ediscovery-20.md)
+## [Soluzione Advanced eDiscovery in Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Note sulla versione](compliance20/release-notes-ediscovery20.md)
 ### [Creare un nuovo caso](compliance20/create-new-ediscovery-case.md)
 
@@ -300,27 +286,27 @@
 #### [Creare una ricerca per raccogliere dati](compliance20/create-search-to-collect-data.md)
 #### [Creare query di ricerca](compliance20/building-search-queries.md)
 #### [Statistiche della ricerca](compliance20/search-statistics.md)
-#### [Aggiungere i risultati della ricerca a un set di lavoro](compliance20/add-data-to-working-set.md)
+#### [Aggiungere i risultati della ricerca a un insieme da rivedere](compliance20/add-data-to-review-set.md)
 
-### [Gestire i set di lavoro](compliance20/managing-working-sets.md)
-#### [Caricare dati non Office 365 in un set di lavoro](compliance20/load-non-office365-data.md)
-#### [Aggiungere dati a un altro set di lavoro](compliance20/add-data-to-working-set-from-another-working-set.md)
+### [Gestire gli insiemi da rivedere](compliance20/managing-review-sets.md)
+#### [Caricare dati non Office 365 in un insieme da rivedere](compliance20/load-non-office365-data.md)
+#### [Aggiungere dati a un altro insieme da rivedere](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Gestire i set caricati](compliance20/manage-load-sets.md)
 
-### [Esaminare i dati del caso](compliance20/reviewing-data-in-working-set.md)
-#### [Visualizzare i documenti in un set di lavoro](compliance20/view-documents-in-working-set.md)
-#### [Eseguire query sui dati in un set di lavoro](compliance20/working-set-search.md)
-#### [Aggiungere tag ai documenti in un set di lavoro](compliance20/tagging-documents.md)
+### [Esaminare i dati del caso](compliance20/reviewing-data-in-review-set.md)
+#### [Visualizzare i documenti in un insieme da rivedere](compliance20/view-documents-in-review-set.md)
+#### [Eseguire query sui dati in un insieme da rivedere](compliance20/review-set-search.md)
+#### [Contrassegnare i documenti in un insieme da rivedere](compliance20/tagging-documents.md)
 
-### [Analizzare i dati del caso](compliance20/analyzing-data-in-working-set.md)
+### [Analizzare i dati del caso](compliance20/analyzing-data-in-review-set.md)
 #### [Rilevamento dei documenti simili](compliance20/near-duplicates.md)
 #### [Threading posta elettronica](compliance20/email-threading.md)
 #### [Temi](compliance20/themes.md)
 #### [Usare il modulo Rilevanza per l'analisi dei dati](compliance20/using-relevance.md)
 
 ### [Esportare i dati del caso](compliance20/exporting-data-ediscover20.md)
-#### [Esportare documenti da un set di lavoro](compliance20/export-documents-from-working-set.md)
-#### [Scaricare processi di esportazione](compliance20/download-export-jobs.md)
+#### [Esportare i documenti da un insieme da rivedere](compliance20/export-documents-from-review-set.md)
+#### [Scaricare i processi di esportazione](compliance20/download-export-jobs.md)
 
 ### [Gestire processi](compliance20/managing-jobs-ediscovery20.md)
 
@@ -329,58 +315,76 @@
 #### [Aggiungere o rimuovere membri da un caso](compliance20/add-remove-members.md)
 #### [Configurare le impostazioni di ricerca e analisi](compliance20/configure-search-analytics-settings.md)
 
-### Informazioni di riferimento su Advanced eDiscovery (anteprima)
-#### [Limiti di Advanced eDiscovery (anteprima)](compliance20/limits-ediscovery20.md)
+### Informazioni di riferimento su Advanced eDiscovery
+#### [Limiti di Advanced eDiscovery](compliance20/limits-ediscovery20.md)
 #### [Tipi di file supportati](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campi dei metadati del documento](compliance20/document-metadata-fields.md)
 #### [Risoluzione dei problemi di AzCopy](compliance20/troubleshooting-azcopy.md)
 
-## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
-### [Introduzione ad Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
-### [Configurazione dei casi](set-up-users-and-cases-in-advanced-ediscovery.md)
-#### [Definizione dei problemi per un caso](define-issues-and-assign-users.md)
+## [Gestire casi di eDiscovery](ediscovery-cases.md)
+### [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+#### [Introduzione ad Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
-### Raccolta dei dati del caso
-#### [Preparare i dati per Advanced eDiscovery](prepare-data-for-advanced-ediscovery.md)
-#### [Importare contenuto non Office 365 in un caso](import-non-office-365-data-into-advanced-ediscovery.md)
+#### [Configurazione dei casi](set-up-users-and-cases-in-advanced-ediscovery.md)
+##### [Definizione dei problemi per un caso](define-issues-and-assign-users.md)
 
-### [Elaborazione dei dati del caso](run-the-process-module-in-advanced-ediscovery.md)
-#### [Eseguire il modulo di processo e caricare i dati](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
-#### [Visualizzare i risultati del modulo di processo](view-process-module-results-in-advanced-ediscovery.md)
+#### Raccolta dei dati del caso
+##### [Preparare i risultati di ricerca per Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md)
+##### [Caricare i dati in Advanced eDiscovery](prepare-data-for-advanced-ediscovery.md)
+##### [Importare contenuto non Office 365 in un caso](import-non-office-365-data-into-advanced-ediscovery.md)
 
-### Esame dei dati del caso
-#### [Cercare e aggiungere tag ai dati del caso](search-and-tagging.md)
-#### [Prendere decisioni sull'insieme da rivedere](decision-based-on-the-results-in-advanced-ediscovery.md)
+#### [Elaborazione dei dati del caso](run-the-process-module-in-advanced-ediscovery.md)
+##### [Eseguire il modulo di processo e caricare i dati](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+##### [Visualizzare i risultati del modulo di processo](view-process-module-results-in-advanced-ediscovery.md)
 
-### [Analisi dei dati del caso](analyze-case-data-with-advanced-ediscovery.md)
-#### [Eseguire Analisi rapida](use-express-analysis-in-advanced-ediscovery.md)
-#### [Panoramica della similarità dei documenti (documenti simili)](understand-document-similarity-in-advanced-ediscovery.md)
-#### [Visualizzare i risultati dell'analisi](view-analyze-results-in-advanced-ediscovery.md)
+#### Esame dei dati del caso
+##### [Cercare e aggiungere tag ai dati del caso](search-and-tagging.md)
+##### [Prendere decisioni sull'insieme da rivedere](decision-based-on-the-results-in-advanced-ediscovery.md)
 
-### [Uso del modulo Rilevanza](use-relevance-in-advanced-ediscovery.md)
-#### [Panoramica della valutazione di rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
-#### [Eseguire la valutazione di rilevanza e aggiungere tag](tagging-and-assessment-in-advanced-ediscovery.md)
-#### [Configurare il training per la rilevanza](manage-relevance-setup-in-advanced-ediscovery.md)
-#### [Eseguire il training per la rilevanza e aggiungere tag](tagging-and-relevance-training-in-advanced-ediscovery.md)
-#### [Tenere traccia del processo di training per la rilevanza](track-relevance-analysis-in-advanced-ediscovery.md)
-#### [Testare i risultati dell'analisi di rilevanza](test-relevance-analysis-in-advanced-ediscovery.md)
-#### [Caricare dati aggiuntivi per il training per la rilevanza](set-up-loads-to-add-imported-files.md)
+#### [Analisi dei dati del caso](analyze-case-data-with-advanced-ediscovery.md)
+##### [Eseguire Analisi rapida](use-express-analysis-in-advanced-ediscovery.md)
+##### [Panoramica della similarità dei documenti (documenti simili)](understand-document-similarity-in-advanced-ediscovery.md)
+##### [Visualizzare i risultati dell'analisi](view-analyze-results-in-advanced-ediscovery.md)
 
-### [Esportazione dei dati del caso](export-case-data-in-advanced-ediscovery.md)
-#### [Esportare dati](export-results-in-advanced-ediscovery.md)
-#### [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
-#### [Visualizzare la cronologia dei batch ed esportare i risultati precedenti](view-batch-history-and-export-past-results.md)
+#### [Uso del modulo Rilevanza](use-relevance-in-advanced-ediscovery.md)
+##### [Panoramica della valutazione di rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+##### [Eseguire la valutazione di rilevanza e aggiungere tag](tagging-and-assessment-in-advanced-ediscovery.md)
+##### [Configurare il training per la rilevanza](manage-relevance-setup-in-advanced-ediscovery.md)
+##### [Eseguire il training per la rilevanza e aggiungere tag](tagging-and-relevance-training-in-advanced-ediscovery.md)
+##### [Tenere traccia del processo di training per la rilevanza](track-relevance-analysis-in-advanced-ediscovery.md)
+##### [Testare i risultati dell'analisi di rilevanza](test-relevance-analysis-in-advanced-ediscovery.md)
+##### [Caricare dati aggiuntivi per il training per la rilevanza](set-up-loads-to-add-imported-files.md)
 
-### Configurazione di Advanced eDiscovery
-#### [Configurare le impostazioni di caso e organizzazione](define-case-and-tenant-settings-in-advanced-ediscovery.md)
-#### [Configurare le impostazioni di analisi](set-analyze-options-in-advanced-ediscovery.md)
-#### [Configurare le impostazioni di Ignora testo](set-ignore-text-in-advanced-ediscovery.md)
-#### [Configurare le parole chiave evidenziate e altre impostazioni di Rilevanza](define-highlighted-keywords-and-advanced-options.md)
+#### [Esportazione dei dati del caso](export-case-data-in-advanced-ediscovery.md)
+##### [Esportare dati](export-results-in-advanced-ediscovery.md)
+##### [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
+##### [Visualizzare la cronologia dei batch ed esportare i risultati precedenti](view-batch-history-and-export-past-results.md)
 
-### Informazioni di riferimento su Advanced eDiscovery
-#### [Usare le utilità di Advanced eDiscovery](use-advanced-ediscovery-utilities.md)
-#### [Eseguire i report](run-reports-in-advanced-ediscovery.md)
+#### Configurazione di Advanced eDiscovery
+##### [Configurare le impostazioni di caso e organizzazione](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+##### [Configurare le impostazioni di analisi](set-analyze-options-in-advanced-ediscovery.md)
+##### [Configurare le impostazioni di Ignora testo](set-ignore-text-in-advanced-ediscovery.md)
+##### [Configurare le parole chiave evidenziate e altre impostazioni di Rilevanza](define-highlighted-keywords-and-advanced-options.md)
+
+#### Informazioni di riferimento su Advanced eDiscovery
+##### [Usare le utilità di Advanced eDiscovery](use-advanced-ediscovery-utilities.md)
+##### [Eseguire i report](run-reports-in-advanced-ediscovery.md)
+
+### [Usare uno script per aggiungere gli utenti a un blocco in un caso di eDiscovery](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
+### [Creare un rapporto sui casi di blocco in eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
+
+## [Assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md)
+## [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](set-up-compliance-boundaries.md)
+## [Soluzione eDiscovery: scenario di compromissione di dati riservati, ricerca ed eliminazione definitiva](data-spillage-scenariosearch-and-purge.md)
+
+## Gestire i blocchi
+### [Creare un blocco di eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold)
+### [Creare un blocco per controversia legale](create-a-litigation-hold.md)
+### [Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+### [Aumentare la quota degli Elementi recuperabili per le cassette postali con blocchi](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+### [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Mantenere Ccn e i destinatari del gruppo di distribuzione espanso](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [Gestire le indagini sui dati](datainvestigations/overview-data-investigations.md)
 ## [Note sulla versione](datainvestigations/data-investigations-release-notes.md)
