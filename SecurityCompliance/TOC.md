@@ -5,7 +5,6 @@
 ### [Centro conformità Microsoft 365](microsoft-365-compliance-center.md)
 ### [Centro sicurezza Microsoft 365](overview-security-center.md)
 ### [Microsoft Secure Score](microsoft-secure-score.md)
-### [Office 365 Secure Score](office-365-secure-score.md)
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ### [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 ### [Fornire agli utenti l'accesso al Centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md)
@@ -71,68 +70,13 @@
 #### [Aggiornamento alle nuove funzionalità di Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Gestione dei record
-## [Gestione del piano di archiviazione](file-plan-manager.md)
-## [Etichette di conservazione](labels.md)
-### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Criteri di conservazione basati su eventi](event-driven-retention.md)
-### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
-## [Revisioni per l'eliminazione](disposition-reviews.md)
-## Gestione dei record di monitor
-### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
-### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
-### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
-## Altre informazioni sulla gestione dei record
-### [Guardare i video del team di Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# Gestire la governance dei dati
-## [Importare dati](importing-pst-files-to-office-365.md)
-### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
-### [Usare la spedizione unità per importare i file PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Usare lo strumento Raccolta PST per trovare, copiare ed eliminare i file PST](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtrare i dati durante l’importazione dei file PST](filter-data-when-importing-pst-files.md)
-### [Usare il caricamento di rete per importare i file PST crittografati con RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [Domande frequenti sull'importazione di file PST](faqimporting-pst-files-to-office-365.md)
-### [Archiviare i dati di terze parti in Office 365](archiving-third-party-data.md)
-#### [Utilizzare i connettori di esempio per archiviare i dati di terze parti](archive-third-party-data-with-sample-connector.md)
-#### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
-## Archiviare i dati
-### [Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)
-### [Panoramica dell’archiviazione illimitata](unlimited-archiving.md)
-### [Abilitare l’archiviazione illimitata](enable-unlimited-archiving.md)
-### [Configurare i criteri di archiviazione ed eliminazione per le cassette postali](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Conservare i dati
-### [Criteri di conservazione](retention-policies.md)
-### [Gestione del piano di archiviazione](file-plan-manager.md)
-### [Etichette di conservazione](labels.md)
-### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Criteri di conservazione basati su eventi](event-driven-retention.md)
-### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
-## [Eliminare i dati](disposition-reviews.md)
-## [Supervisionare le comunicazioni](supervision-policies.md)
-### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
-## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
-### [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)
-### [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Recuperare una cassetta postale inattiva](recover-an-inactive-mailbox.md)
-### [Ripristinare una cassetta postale inattiva](restore-an-inactive-mailbox.md)
-### [Eliminare una cassetta postale inattiva](delete-an-inactive-mailbox.md)
-## Monitorare la governance dei dati
-### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
-### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
-### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
-## Altre informazioni sulla governance dei dati
-### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Protezione contro le minacce](protect-against-threats.md)
 
 ## [Cercare in Microsoft 365](hunting.md)
 
 ## [Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce](latest-attack-campaigns.md)
 
-## [Protezione avanzata dalle minacce](office-365-atp.md)
+## [Office 365 Advanced Threat Protection](office-365-atp.md)
 ### [Collegamenti sicuri di ATP](atp-safe-links.md)
 #### [Configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)
 #### [Configurare un elenco personalizzato di URL da "non riscrivere"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +170,66 @@
 ### [Domande frequenti sulla quarantena in Office 365](quarantine-faq.md)
 ### [Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# Gestione degli incidenti di sicurezza
+## [Intervento in caso di incidente di sicurezza di Office 365](office365-security-incident-response-overview.md)
+## [Rilevare e rimediare a concessioni di consenso illecite in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
+
+# Gestione dei record
+## [Gestione del piano di archiviazione](file-plan-manager.md)
+## [Etichette di conservazione](labels.md)
+### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [Criteri di conservazione basati su eventi](event-driven-retention.md)
+### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
+## [Revisioni per l'eliminazione](disposition-reviews.md)
+## Gestione dei record di monitor
+### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
+### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
+### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
+## Altre informazioni sulla gestione dei record
+### [Guardare i video del team di Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# Gestire la governance dei dati
+## [Importare dati](importing-pst-files-to-office-365.md)
+### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
+### [Usare la spedizione unità per importare i file PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [Usare lo strumento Raccolta PST per trovare, copiare ed eliminare i file PST](find-copy-and-delete-pst-files-in-your-organization.md)
+### [Filtrare i dati durante l’importazione dei file PST](filter-data-when-importing-pst-files.md)
+### [Usare il caricamento di rete per importare i file PST crittografati con RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [Domande frequenti sull'importazione di file PST](faqimporting-pst-files-to-office-365.md)
+### [Archiviare i dati di terze parti in Office 365](archiving-third-party-data.md)
+#### [Utilizzare i connettori di esempio per archiviare i dati di terze parti](archive-third-party-data-with-sample-connector.md)
+#### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
+## Archiviare i dati
+### [Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)
+### [Panoramica dell’archiviazione illimitata](unlimited-archiving.md)
+### [Abilitare l’archiviazione illimitata](enable-unlimited-archiving.md)
+### [Configurare i criteri di archiviazione ed eliminazione per le cassette postali](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## Conservare i dati
+### [Criteri di conservazione](retention-policies.md)
+### [Gestione del piano di archiviazione](file-plan-manager.md)
+### [Etichette di conservazione](labels.md)
+### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Criteri di conservazione basati su eventi](event-driven-retention.md)
+### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
+## [Eliminare i dati](disposition-reviews.md)
+## [Supervisionare le comunicazioni](supervision-policies.md)
+### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
+## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
+### [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)
+### [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [Recuperare una cassetta postale inattiva](recover-an-inactive-mailbox.md)
+### [Ripristinare una cassetta postale inattiva](restore-an-inactive-mailbox.md)
+### [Eliminare una cassetta postale inattiva](delete-an-inactive-mailbox.md)
+## Monitorare la governance dei dati
+### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
+### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
+### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
+## Altre informazioni sulla governance dei dati
+### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Ricerca dei contenuti](search-for-content.md)
 ## [Usare la Ricerca contenuto](content-search.md)
@@ -479,7 +483,7 @@
 ### [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [integrazione server SIEM](siem-server-integration.md)
 
-# Soluzioni per la conformità
+# Soluzioni per la conformità alle normative
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance Manager (classico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance Manager (anteprima)](compliance-manager-overview.md)
@@ -506,12 +510,6 @@
 ### [GDPR per Project Server](gdpr-for-project-server.md)
 ### [RGDP per Server Office Web Apps e Office Online Server](gdpr-for-office-online-server.md)
 ### [GDPR per le condivisioni dei file di Windows Server locale](gdpr-for-on-premises-file-shares.md)
-
-# Gestione degli incidenti di sicurezza
-## [Intervento in caso di incidente di sicurezza di Office 365](office365-security-incident-response-overview.md)
-## [Rilevare e rimediare a concessioni di consenso illecite in Office 365](detect-and-remediate-illicit-consent-grants.md)
-## [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-## [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
 
 # Garanzia del servizio
 ## [Garanzia del servizio nel Centro sicurezza e conformità di Office 365](service-assurance.md)

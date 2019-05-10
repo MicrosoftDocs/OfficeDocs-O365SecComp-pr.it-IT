@@ -1,5 +1,5 @@
 ---
-title: Campi dei metadati del documento in Advanced eDiscovery (Preview)
+title: Campi dei metadati del documento in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75550d48a474fc6429a780d0a03d28745e20e1f7
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251854"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33835056"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>Campi dei metadati del documento in Advanced eDiscovery (Preview)
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
-Nella tabella seguente sono elencati i campi dei metadati per i documenti in un working set in un caso in Advanced eDiscovery (Preview). La tabella indica il nome del campo metadati, se il campo può essere cercato durante l'esecuzione di una query in un working set, se il campo è presente quando si visualizzano i metadati dei file di un documento selezionato in un working set e se il campo è incluso quando i documenti vengono esportati. 
-
-Nella tabella seguente sono elencati i campi dei metadati per i documenti in un working set in un caso in Advanced eDiscovery (Preview). La tabella indica il nome del campo metadati, se il campo può essere cercato durante l'esecuzione di una query in un working set, se il campo è presente quando si visualizzano i metadati dei file di un documento selezionato in un working set e se il campo è incluso quando i documenti vengono esportati. 
+Nella tabella di questo articolo vengono elencati i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery. La tabella indica il nome del campo metadati, se il campo può essere cercato quando si esegue una query in un set di revisione, se il campo è presente quando si visualizzano i metadati dei file di un documento selezionato in un set di revisione e se il campo è incluso quando i documenti a re esportato. 
 
 > [!NOTE]
-> I valori racchiusi tra parentesi nella colonna **working set di ricerca** è il nome della proprietà che è possibile cercare. I valori racchiusi tra parentesi nella colonna dei **metadati visualizzabili in file** è il nome della proprietà visualizzata quando si visualizzano i metadati dei file.
+> I valori racchiusi tra parentesi nella colonna ricercabile del **set di revisione** sono il nome della proprietà che è possibile cercare. I valori racchiusi tra parentesi nella colonna dei **metadati visualizzabili in file** è il nome della proprietà visualizzata quando si visualizzano i metadati dei file.
 
-|**Nome del campo** </br>|**Ricercabile in working set** |**Visualizzabile nei metadati dei file** |**Esportato** |
+|**Nome del campo** </br>|**Ricercabile nel set di Revisione** |**Visualizzabile nei metadati dei file** |**Esportato** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Tag del caso                  | Sì (tag)                                      |                         | Sì         |
 |Etichette di conformità          |                                                 |                         | Sì         |
@@ -86,7 +84,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Percorso testo Estratto        |                                                 |                         | Sì         |
 |ID famiglia                  | Sì (familyId)                                  |   Sì (FamilyId)        | Sì         |
 |Dimensione famiglia                |                                                 |                         | Sì         |
-|Classe file                 | Sì (fileClass)                                 |   Sì (classe file)      | Sì         |
+|Classe file                 | Sì (fileclass)                                 |   Sì (classe file)      | Sì         |
 |ID file                    | Sì (fileId)                                    |   Sì (ID)              | Sì         |
 |Contiene testo                   |                                                 |                         | Sì         |
 |Tipo inclusivo             | Sì (inclusiveType)                             |   Sì (tipo incluso)  | Sì         |

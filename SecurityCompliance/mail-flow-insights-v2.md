@@ -9,34 +9,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252110"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868624"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
-
-> [!NOTE]
-> Le funzionalità descritte in questo argomento non sono state distribuite in tutte le organizzazioni di Office 365 e sono soggette a modifiche.
 
 Gli amministratori possono utilizzare il dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per individuare le tendenze, le intuizioni e intraprendere azioni che consentono di risolvere i problemi relativi al flusso di posta nella propria organizzazione di Office 365.
 
 Gli Insight, i report e i widget disponibili nel dashboard del flusso di posta sono i seguenti:
 
-- [Rapporto Mappa del flusso di posta](mfi-mail-flow-map-report.md) (Questo rapporto è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Rapporto Mappa del flusso di posta](mfi-mail-flow-map-report.md)
 
-- [Informazioni sullo stato del flusso di posta del dominio](mfi-domain-mail-flow-status-insight.md) (Questo Insight è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Informazioni sullo stato del flusso di posta del dominio](mfi-domain-mail-flow-status-insight.md)
 
-- [Report dei client auth SMTP](mfi-smtp-auth-clients-report.md) (Questo rapporto è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Report dei client auth SMTP](mfi-smtp-auth-clients-report.md)
 
-- [Insight sul dominio del mittente](mfi-sender-domain-insight.md) (Questo Insight è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Insight sul dominio del mittente](mfi-sender-domain-insight.md)
 
-- [Rapporto di mancato recapito](mfi-non-delivery-report.md) (Questo rapporto è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Rapporto di mancato recapito](mfi-non-delivery-report.md)
 
-- [Rapporto di dominio non accettato](mfi-non-accepted-domain-report.md) (Questo rapporto è nuovo ed è attualmente in fase di distribuzione in Office 365).
+- [Rapporto di dominio non accettato](mfi-non-accepted-domain-report.md)
 
 - [Flusso di posta in ingresso e in uscita](mfi-outbound-and-inbound-mail-flow.md)
 

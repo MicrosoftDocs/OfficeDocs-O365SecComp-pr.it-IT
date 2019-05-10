@@ -9,18 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
-ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7556dd98e1381fe59a2a911dbfa27132f1aa44d
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252347"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868614"
 ---
 # <a name="auto-forwarded-messages-report"></a>Report dei messaggi inoltrati automaticamente
 
 Il rapporto **messaggi auto-inoltrati** nel dashboard del flusso di posta elettronica Visualizza le informazioni sui messaggi che vengono automaticamente inoltrati dall'organizzazione di Office 365 ai destinatari nei domini esterni.
 
-![x](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Insight dei messaggi auto-inoltrati nel centro conformità & sicurezza di Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ![Il rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza e conformità di Office 365 &](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 

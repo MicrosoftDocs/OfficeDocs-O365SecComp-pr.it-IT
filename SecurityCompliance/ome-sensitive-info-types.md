@@ -1,51 +1,42 @@
 ---
-title: Criteri di crittografia dei messaggi di Office 365 per informazioni riservate
+title: Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2019
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Riepilogo: i criteri di crittografia dei messaggi di Office 365 per i tipi di informazioni riservate sono ora disponibili.'
-ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_Enterprise
+description: 'Riepilogo: criteri di crittografia dei messaggi di Office 365 per i tipi di informazioni riservate.'
+ms.openlocfilehash: 44966303ec7c58fdd82f733e1922073de848cf73
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261264"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834835"
 ---
-# <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Criteri di crittografia dei messaggi di Office 365 per informazioni riservate
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
 
-Update (1/30/19): nell'ottobre 2018 abbiamo lavorato con un piccolo campione di clienti per capire se è possibile semplificare la protezione tramite la crittografia automatica dei messaggi di posta elettronica sensibili in base a determinati tipi di informazioni riservate. In base al feedback positivo di questo esempio, si è deciso di espandersi a un profilo più vario dei tenant nel dicembre 2018. Dopo aver comunicato il prossimo roll-out per selezionare i tenant, abbiamo ascoltato i commenti e abbiamo determinato che i clienti con ambienti più complessi volevano implementare le regole con maggiore cautela e quindi adeguare i piani.
-
-Se l'organizzazione è stata selezionata per il roll-out a partire dal 15 gennaio 2019, non verrà eliminato il criterio automatico. Al contrario, vengono fornite istruzioni in questo articolo su come è possibile completare l'implementazione. Continuare a leggere per scoprire come.
-
-||
-|:-----|
-|Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
-||
-
-## <a name="how-to-create-the-sensitive-information-type-policy-for-your-tenant"></a>Come creare il criterio tipo di informazioni riservate per il tenant
-
-È possibile utilizzare le regole del flusso di posta di Exchange o la prevenzione della perdita di dati (DLP) di Office 365 per creare i criteri dei tipi di informazioni riservate. Per creare una regola del flusso di posta di Exchange, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o PowerShell.
+È possibile utilizzare le regole del flusso di posta di Exchange o la prevenzione della perdita di dati (DLP) di Office 365 per creare un criterio tipo di informazioni riservate con la crittografia dei messaggi di Office 365. Per creare una regola del flusso di posta di Exchange, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o PowerShell.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Per creare il criterio mediante le regole del flusso di posta nell'interfaccia di amministrazione di Exchange
 
-Accedere all'interfaccia di amministrazione di Exchange (EAC) e passare a**regole**del **flusso** > di posta. Creare una regola che applica la crittografia dei messaggi di Office 365 in base a condizioni quali la presenza di determinate parole chiave o tipi di informazioni riservate nel messaggio o nell'allegato.
+Accedere all'interfaccia di amministrazione di Exchange (EAC) e passare a **** > **regole**del flusso di posta. Nella pagina regole creare una regola che applica la crittografia dei messaggi di Office 365. È possibile creare una regola in base a condizioni quali la presenza di determinate parole chiave o tipi di informazioni riservate nel messaggio o nell'allegato.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Per creare il criterio mediante le regole del flusso di posta in PowerShell
 
-Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Utilizzare i cmdlet Set-IRMConfiguration e New-TransporRule per creare il criterio.
+Utilizzare un account aziendale o dell'Istituto di istruzione che disponga delle autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Utilizzare i cmdlet Set-IRMConfiguration e New-TransportRule per creare il criterio.
 
 ### <a name="example-mail-flow-rule-created-with-powershell"></a>Esempio di regola del flusso di posta creato con PowerShell
 
-L'esecuzione dei comandi seguenti in PowerShell consente di creare una regola del flusso di posta di Exchange che consente di crittografare automaticamente i messaggi esterni all'organizzazione con il criterio di *sola crittografia* se i messaggi di posta elettronica o i relativi allegati contengono i seguenti elementi sensibili tipi di informazioni:
+Eseguire i comandi seguenti in PowerShell per creare una regola del flusso di posta di Exchange che consente di crittografare automaticamente i messaggi inviati all'esterno dell'organizzazione con il criterio di *sola crittografia* se i messaggi di posta elettronica o i relativi allegati contengono le seguenti informazioni riservate tipi
 
 - Numero di Routing ABA
 - Numero di carta di credito
@@ -62,7 +53,7 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>Modalità di accesso degli allegati ai destinatari
 
-Dopo che un messaggio è stato crittografato, i destinatari avranno accesso illimitato agli allegati una volta che accedono e aprono la posta elettronica crittografata.
+Dopo che Office 365 ha crittografato un messaggio, i destinatari hanno accesso illimitato agli allegati quando accedono e aprono la posta elettronica crittografata.
 
 ## <a name="to-prepare-for-this-change"></a>Per preparare questa modifica
 
@@ -73,12 +64,11 @@ Potrebbe essere necessario aggiornare la documentazione per gli utenti finali ap
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Visualizzare queste modifiche nel log di controllo
 
-Questa attività è controllata ed è disponibile per gli amministratori di Office 365. L'operazione è' New-TransportRule ' e un frammento di una voce di controllo di esempio dalla ricerca del registro di controllo nel centro sicurezza & Compliance è riportato di seguito:
+Office 365 verifica questa attività e la rende disponibile per gli amministratori di Office 365. L'operazione è' New-TransportRule ' e un frammento di una voce di controllo di esempio dalla ricerca del registro di controllo nel centro sicurezza & Compliance è riportato di seguito:
 
-|     |
-| --- |
-| *{"CreationTime": "2018-11-28T23:35:01", "ID": "A1b2C3d4-DAA0-4c4f-A019-03a1234a1b0c", "Operation": "New-TransportRule", "IDOrganizzazione": "123456-221D-12345", "RecordType": 1, "ResultStatus": "true", "UserKey": "Microsoft operator", " UserType ": 3," Version ": 1," carico di lavoro ":" Exchange "," ClientIP ":" 123.456.147.68:17584 "," ObjectId ":" "," UserId ":" Microsoft operator","ExternalAccess":true,"OrganizationName":"contoso. onmicrosoft. com "," OriginatingServer ":" CY4PR13MBXXXX ( 15.20.1382.008) "," parametri ": {" nome ":" organizzazione "," valore ":" 123456-221D-12346 "{" Name ":" ApplyRightsProtectionTemplate consente "," value ":" Encrypt "}, {" Name ":" Name "," value ":" Encrypt Outbound emails sensitive (out of box Rule) "}, {" Name ":" MessageContainsDataClassifications "... ecc.* |
-| |
+```text
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Per disabilitare o personalizzare i criteri dei tipi di informazioni riservate
 

@@ -1,5 +1,5 @@
 ---
-title: Limiti avanzati di eDiscovery (anteprima)
+title: Limiti avanzati di eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,34 +12,34 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0c5213a49744b997037b084f33dce1ab47df05bf
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243797"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834945"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a>Limiti di Advanced eDiscovery (anteprima)
+# <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
-In questo articolo vengono descritti i limiti in Advanced eDiscovery (Preview).
+In questo articolo vengono descritti i limiti in Advanced eDiscovery.
 
 ## <a name="case-limits"></a>Limiti relativi al caso
 
-Nella tabella seguente sono elencati i limiti per i casi in Advanced eDiscovery (Preview).
+Nella tabella seguente sono elencati i limiti per i casi in Advanced eDiscovery.
 
 |**Descrizione del limite**|**Tipo di limite**|
   |:-----|:-----|
   |Numero massimo di casi.  <br/> |50  <br/> |
-  |Numero totale di documenti che è possibile aggiungere a un caso (per tutti i working set del caso).  <br/> |1 milione  <br/> |
-  |Dimensioni totali dei file per carico.  <br/> |100 GB  <br/> |
+  |Numero totale di documenti che è possibile aggiungere a un caso (per tutti i set di revisione nel caso).  <br/> |1 milione  <br/> |
+  |Dimensione totale dei file per set di carico.  <br/> |100 GB  <br/> |
   |Dimensioni massime di un singolo file.   <br/> |100 MB <sup>1</sup> <br/> |
   |Numero massimo di caratteri estratti da un singolo file.  <br/> |10 milioni <sup>1</sup> <br/> |
-  |Profondità degli elementi incorporati in un documento.  <br/> |25 <sup>1</sup> <br/> |
+  |Profondità massima degli elementi incorporati in un documento.  <br/> |25 <sup>1</sup> <br/> |
 |||
  > [!NOTE]
-> <sup>1</sup> tutti gli elementi che superano il limite di un singolo file verranno visualizzati come errori di elaborazione. 
+> <sup>1</sup> qualsiasi elemento che supera il limite di un singolo file verrà visualizzato come un errore di elaborazione. 
 
-## <a name="indexing-limits"></a>Limiti di inDicizzazione
+## <a name="indexing-limits"></a>Limiti di indicizzazione
 
 Il contenuto sarà disponibile a breve.
 

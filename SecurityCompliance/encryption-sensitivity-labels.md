@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257258"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628331"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -113,6 +113,26 @@ All'emittente di Rights Management sono sempre concesse le autorizzazioni di con
 - L'emittente di Rights Management può aprire un documento anche se è stato revocato.
 
 Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietario di Rights Management](https://docs.microsoft.com/it-IT/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Cosa accade alla crittografia esistente in seguito all'applicazione di un'etichetta
+
+Prima che al contenuto venga applicata un'etichetta di riservatezza, è possibile che un utente abbia già crittografato il contenuto applicando altre impostazioni di protezione. Ad esempio, un utente può aver applicato:
+
+- L'opzione **Non inoltrare**.
+- La protezione personalizzata usando il client di etichettatura unificata di Azure Information Protection.
+- Un modello di Azure Rights Management Service (RMS) che crittografa il contenuto ma non viene associato a un'etichetta.
+
+Questa tabella descrive cosa accade alla crittografia esistente quando si applica un'etichetta di riservatezza a tale contenuto.
+<br/>
+<br/>
+
+| |**L'utente applica un'etichetta di riservatezza con la crittografia disattivata**|**L'utente applica un'etichetta di riservatezza con la crittografia attivata**|**L'utente applica un'etichetta con Rimuovi protezione**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**Non inoltrare**|Posta elettronica - La protezione viene rimossa<br/>Documento - La protezione viene mantenuta|La protezione dell'etichetta viene applicata|L'etichetta **Non inoltrare** viene rimossa|
+|**Protezione personalizzata**<sup>1</sup>|La protezione viene mantenuta|La protezione dell'etichetta viene applicata|La protezione personalizzata viene rimossa|
+|**Modello di Azure RMS**|La protezione viene mantenuta|La protezione dell'etichetta viene applicata|La protezione personalizzata viene rimossa|
+
+<sup>1</sup>Supportata solo nel client di etichettatura di Azure Information Protection.
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Archiviare contenuti crittografati in OneDrive e SharePoint
 

@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252142"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868574"
 ---
 # <a name="non-accepted-domain-report"></a>Rapporto di dominio non accettato
-
-> [!NOTE]
-> Le funzionalità descritte in questo argomento non sono state distribuite in tutte le organizzazioni di Office 365 e sono soggette a modifiche.
 
 Analogamente all'Insight del **dominio del mittente** , l'Insight del **dominio non accettato** identifica i messaggi provenienti dall'organizzazione di posta elettronica locale, ma il dominio del mittente non è configurato come dominio accettato nell'organizzazione di Office 365.
 
