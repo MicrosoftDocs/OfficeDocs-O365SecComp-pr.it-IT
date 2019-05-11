@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & Compliance per gestire un problema di fuoriuscita dei dati.
-ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258824"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884764"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -34,7 +34,10 @@ In questo articolo viene fornito un elenco di istruzioni su come eliminare defin
 
 ## <a name="scenario"></a>Scenario
 
-Si è informati di un problema di fuoriuscita dei dati in cui un dipendente ha condiviso inconsapevolmente un documento estremamente riservato con più persone tramite posta elettronica. Si desidera valutare rapidamente chi ha ricevuto il documento, sia all'interno che all'esterno dell'organizzazione. Dopo aver indagato sull'incidente, si prevede di condividere i risultati con altri ricercatori per esaminare e quindi rimuovere definitivamente i dati di cui è stato eseguito il versamento da Office 365. Al termine dell'analisi, si desidera rimuovere tutte le prove. 
+Si è informati di un problema di fuoriuscita dei dati in cui un dipendente ha condiviso inconsapevolmente un documento estremamente riservato con più persone tramite posta elettronica. Si desidera valutare rapidamente chi ha ricevuto il documento, sia all'interno che all'esterno dell'organizzazione. Dopo aver indagato sull'incidente, si prevede di condividere i risultati con altri ricercatori per esaminare e quindi rimuovere definitivamente i dati versati dall'organizzazione di Office 365. Al termine dell'analisi, si desidera rimuovere tutte le prove. 
+
+> [!IMPORTANT]
+> Anche se è possibile rimuovere definitivamente i dati versati all'interno dell'organizzazione, i dati riversati all'esterno dell'organizzazione non possono essere rimossi con queste funzionalità.
 
 ## <a name="workflow"></a>Flusso di lavoro
 
@@ -57,7 +60,7 @@ Di seguito è indicato il flusso di lavoro per l'utilizzo delle indagini sui dat
 
 - Per creare un'indagine, è necessario essere membri del gruppo di ruoli amministratore conformità nel centro sicurezza & Compliance.
 
-- Per eliminare i messaggi, è necessario essere membri di un gruppo di ruoli nel centro sicurezza e conformità di & a cui è stato assegnato il ruolo di ricerca ed eliminazione. Per impostazione predefinita, questo ruolo è assegnato al gruppo di ruoli Gestione organizzazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere perMissions [in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
+- Per eliminare i messaggi, è necessario essere membri di un gruppo di ruoli nel centro sicurezza e conformità di & a cui è stato assegnato il ruolo di ricerca ed eliminazione. Per impostazione predefinita, questo ruolo è assegnato al gruppo di ruoli Gestione organizzazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere Permissions [in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
 
 - Per controllare le cassette postali degli utenti e gli account di OneDrive che un ricercatore può cercare, l'organizzazione può impostare i limiti di conformità. Per ulteriori informazioni, [impostare i limiti di conformità per le indagini di eDiscovery](../set-up-compliance-boundaries.md). 
 
