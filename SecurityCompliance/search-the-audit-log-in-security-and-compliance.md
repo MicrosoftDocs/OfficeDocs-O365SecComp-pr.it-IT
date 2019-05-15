@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9bf288618d91d4084580c45d96d13e345af32ea9
+ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264872"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970309"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
@@ -80,10 +80,10 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
 
      - **Office 365 E3** -i record di controllo vengono conservati per 90 giorni. Questo significa che è possibile eseguire una ricerca nel registro di controllo per le attività eseguite negli ultimi 90 giorni.
 
-     - **Office 365 E5** -i record di controllo vengono conservati per 365 giorni (un anno). Questo significa che è possibile eseguire una ricerca nel registro di controllo per le attività eseguite nell'ultimo anno. La conservazione dei record di controllo per un anno è disponibile anche per gli utenti a cui è stata assegnata una licenza E3/Exchange Online piano 1 e che dispongono di una licenza per il componente aggiuntivo per la conformità avanzata di Office 365.
+     - I record di controllo di **Office 365 E5** vengono conservati anche per 90 giorni. La conservazione dei record di controllo per un anno può essere eventualmente disponibile per gli utenti e gli utenti di E5 con una licenza E3 e una licenza per il componente aggiuntivo per la conformità avanzata di Office 365.
 
         > [!NOTE]
-        > Il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o le organizzazioni E3 con licenze per i componenti aggiuntivi di conformità avanzate) è attualmente disponibile solo nell'ambito di un programma di anteprima privata. Per iscriversi al programma di anteprima, inviare una richiesta con il [supporto tecnico Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e includere quanto segue come descrizione di cosa serve aiuto con: "Long-term Office 365 audit log di controllo di anteprima privata".
+        > Il programma di anteprima privata per il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o per gli utenti delle organizzazioni E3 che dispongono di licenze per i componenti aggiuntivi per la conformità avanzato) è chiuso alla nuova registrazione. Questo articolo verrà aggiornato quando il periodo di conservazione di un anno è disponibile in anteprima pubblica o rilasciato per la disponibilità generale.
 
 - Se si desidera disattivare la ricerca del registro di controllo in Office 365 per l'organizzazione, è possibile eseguire il comando riportato di seguito in Remote PowerShell connesso all'organizzazione Exchange Online:
     
@@ -312,26 +312,26 @@ Nella tabella seguente vengono descritte le attività relative a file e pagine i
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|File a cui si accede  <br/> |FileAccessed  <br/> |L'utente o l'account del sistema accede a un file.  <br/> |
-|nessuno  <br/> |FileAccessedExtended  <br/> |Questa operazione è correlata all'attività "file di accesso" (fileAccessed). Un evento FileAccessedExtended viene registrato quando la stessa persona accede continuamente a un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileAccessedExtended consiste nel ridurre il numero di eventi fileAccessed che vengono registrati quando si accede continuamente a un file. In questo modo è possibile ridurre il rumore di più record fileAccessed per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento iniziale (e più importante) fileAccessed.  <br/> |
-|File archiviato  <br/> |FileCheckedin  <br/> |L'utente verifica un documento Estratto da una raccolta documenti.  <br/> |
+|File a cui si accede  <br/> |Fileaccessed  <br/> |L'utente o l'account del sistema accede a un file.  <br/> |
+|nessuno  <br/> |FileAccessedExtended  <br/> |Questa operazione è correlata all'attività "file di accesso" (fileaccessed). Un evento FileAccessedExtended viene registrato quando la stessa persona accede continuamente a un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileAccessedExtended consiste nel ridurre il numero di eventi fileaccessed che vengono registrati quando si accede continuamente a un file. In questo modo è possibile ridurre il rumore di più record fileaccessed per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento iniziale (e più importante) fileaccessed.  <br/> |
+|File archiviato  <br/> |Filecheckedin  <br/> |L'utente verifica un documento Estratto da una raccolta documenti.  <br/> |
 |File Estratto  <br/> |FileCheck-out  <br/> |L'utente estrae un documento che si trova in una raccolta documenti. Gli utenti possono estrarre e apportare modifiche ai documenti che sono stati condivisi con essi.  <br/> |
-|File copiato  <br/> |FileCopied  <br/> |L'utente copia un documento da un sito. Il file copiato può essere salvato in un'altra cartella nel sito.  <br/> |
+|File copiato  <br/> |Filecopied  <br/> |L'utente copia un documento da un sito. Il file copiato può essere salvato in un'altra cartella nel sito.  <br/> |
 |File eliminato  <br/> |FileDeleted  <br/> |L'utente elimina un documento da un sito.  <br/> |
 |File eliminato dal Cestino  <br/> |FileDeletedFirstStageRecycleBin  <br/> |L'utente elimina un file dal Cestino di un sito.  <br/> |
 |File eliminato dal Cestino secondario  <br/> |FileDeletedSecondStageRecycleBin  <br/> |L'utente elimina un file dal Cestino secondario di un sito.  <br/> |
 |Malware rilevato nel file  <br/> |FileMalwareDetected  <br/> |Il motore di protezione di SharePoint rileva malware in un file.  <br/> |
 |Estrazione file scartata  <br/> |FileCheckOutDiscarded  <br/> |L'utente elimina (o annulla) un file estratto. Ciò significa che eventuali modifiche apportate al file al momento dell'estrazione vengono eliminate e non vengono salvate nella versione del documento nella raccolta documenti.  <br/> |
-|File scaricato  <br/> |FileDownloaded  <br/> |L'utente scarica un documento da un sito.  <br/> |
-|File modificato  <br/> |FileModified  <br/> |L'account utente o di sistema consente di modificare il contenuto o le proprietà di un documento che si trova in un sito.  <br/> |
-|nessuno  <br/> |FileModifiedExtended  <br/> |Questa operazione è correlata all'attività "file modificato" (fileModified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica continuamente un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileModifiedExtended consiste nel ridurre il numero di eventi fileModified che vengono registrati quando un file viene continuamente modificato. In questo modo si riduce il rumore di più record fileModified per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento di fileModified iniziale (e più importante).  <br/> |
-|File spostato  <br/> |FileMoved  <br/> |L'utente sposta un documento dal percorso corrente di un sito a un nuovo percorso.  <br/> |
-|ReCycled tutte le versioni secondarie del file  <br/> |FileVersionsAllMinorsRecycled  <br/> |L'utente Elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
-|ReCycled tutte le versioni di file  <br/> |FileVersionsAllRecycled  <br/> |L'utente Elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
+|File scaricato  <br/> |Filedownloaded  <br/> |L'utente scarica un documento da un sito.  <br/> |
+|File modificato  <br/> |Filemodified  <br/> |L'account utente o di sistema consente di modificare il contenuto o le proprietà di un documento che si trova in un sito.  <br/> |
+|nessuno  <br/> |FileModifiedExtended  <br/> |Questa operazione è correlata all'attività "file modificato" (filemodified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica continuamente un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileModifiedExtended consiste nel ridurre il numero di eventi filemodified che vengono registrati quando un file viene continuamente modificato. In questo modo si riduce il rumore di più record filemodified per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento di filemodified iniziale (e più importante).  <br/> |
+|File spostato  <br/> |Filemoved  <br/> |L'utente sposta un documento dal percorso corrente di un sito a un nuovo percorso.  <br/> |
+|Recycled tutte le versioni secondarie del file  <br/> |FileVersionsAllMinorsRecycled  <br/> |L'utente Elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
+|Recycled tutte le versioni di file  <br/> |FileVersionsAllRecycled  <br/> |L'utente Elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
 |Versione riciclata del file  <br/> |FileVersionRecycled  <br/> |L'utente elimina una versione dalla cronologia delle versioni di un file. La versione eliminata viene spostata nel cestino del sito.  <br/> |
 |File rinominato  <br/> |FileRinomina  <br/> |L'utente ridenomina un documento in un sito.  <br/> |
 |File ripristinato  <br/> |FileRestore  <br/> |L'utente ripristina un documento dal Cestino di un sito.  <br/> |
-|File caricato  <br/> |FileUploaded  <br/> |L'utente carica un documento in una cartella di un sito.  <br/> |
+|File caricato  <br/> |Fileuploaded  <br/> |L'utente carica un documento in una cartella di un sito.  <br/> |
 |Pagina visualizzata  <br/> |Visualizzazione a pagina  <br/> |L'utente visualizza una pagina in un sito. Questo non include l'utilizzo di un Web browser per visualizzare i file che si trovano in una raccolta documenti.  <br/> |
 |nessuno  <br/> |PageViewedExtended  <br/> |Questa operazione è correlata all'attività "visualizzazione pagina" (visualizzata in una pagina). Un evento PageViewedExtended viene registrato quando la stessa persona Visualizza continuamente una pagina Web per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di PageViewedExtended consiste nel ridurre il numero di eventi visualizzati in visualizzazione che vengono registrati quando una pagina viene visualizzata continuamente. In questo modo, è possibile ridurre il rumore dei record a più pagine visualizzate in base alla stessa attività dell'utente e consentire di concentrarsi sull'evento iniziale (e più importante) di visualizzazione.  <br/> |
 ||||
@@ -366,8 +366,8 @@ Nella tabella seguente vengono descritte le attività relative alla condivisione
 |Invito alla condivisione accettata  <br/> |SharingInvitationAccepted  <br/> |L'utente (membro o ospite) ha accettato un invito alla condivisione ed è stato concesso l'accesso a una risorsa. Questo evento include informazioni sull'utente che è stato invitato e l'indirizzo di posta elettronica utilizzato per accettare l'invito (potrebbero essere diversi). Questa attività è spesso accompagnata da un secondo evento in cui viene descritto come all'utente è stato concesso l'accesso alla risorsa, ad esempio l'aggiunta di un utente a un gruppo che ha accesso alla risorsa.  <br/> |
 |Livello di autorizzazione aggiunto per la raccolta siti  <br/> |PermissionLevelAdded  <br/> |È stato aggiunto un livello di autorizzazione a una raccolta siti.  <br/> |
 |Aggiunta di un utente al collegamento protetto  <br/> |AddedToSecureLink  <br/> |Un utente è stato aggiunto all'elenco di entità che possono utilizzare questo collegamento di condivisione sicura.  <br/> |
-|Invito per la condivisione bloccata  <br/> |SharingInvitationBlocked  <br/> | Un invito alla condivisione inviato da un utente nell'organizzazione è bloccato a causa di un criterio di condivisione esterna che consente o nega la condivisione esterna in base al dominio dell'utente di destinazione. In questo caso, l'invito alla condivisione è stato bloccato perché:  <br/>  Il dominio dell'utente di destinazione non è incluso nell'elenco dei domini consentiti.  <br/>  Oppure  <br/>  Il dominio dell'utente di destinazione è incluso nell'elenco dei domini bloccati.  <br/>  Per ulteriori informazioni su come consentire o bloccare la condivisione esterna in base ai domini, vedere reStricted [Domains sharing in SharePoint Online e OneDrive for business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Ereditarietà a livello di autorizzazione interRotta  <br/> |PermissionLevelsInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più i livelli di autorizzazione dall'elemento padre.  <br/> |
+|Invito per la condivisione bloccata  <br/> |SharingInvitationBlocked  <br/> | Un invito alla condivisione inviato da un utente nell'organizzazione è bloccato a causa di un criterio di condivisione esterna che consente o nega la condivisione esterna in base al dominio dell'utente di destinazione. In questo caso, l'invito alla condivisione è stato bloccato perché:  <br/>  Il dominio dell'utente di destinazione non è incluso nell'elenco dei domini consentiti.  <br/>  Oppure  <br/>  Il dominio dell'utente di destinazione è incluso nell'elenco dei domini bloccati.  <br/>  Per ulteriori informazioni su come consentire o bloccare la condivisione esterna in base ai domini, vedere Restricted [Domains sharing in SharePoint Online e OneDrive for business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
+|Ereditarietà a livello di autorizzazione interrotta  <br/> |PermissionLevelsInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più i livelli di autorizzazione dall'elemento padre.  <br/> |
 |Ha interrotto l'ereditarietà della condivisione  <br/> |SharingInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più le autorizzazioni di condivisione dal relativo elemento padre.  <br/> |
 |Creazione di un collegamento condiviso con la società  <br/> |CompanyLinkCreated  <br/> |L'utente ha creato un collegamento a livello di società a una risorsa. i collegamenti a livello di azienda possono essere utilizzati solo dai membri dell'organizzazione. Non possono essere utilizzati dagli ospiti.  <br/> |
 |Richiesta di accesso creata  <br/> |AccessRequestCreated  <br/> |L'utente richiede l'accesso a un sito, una cartella o un documento in cui non dispongono delle autorizzazioni per l'accesso.  <br/> |
@@ -391,7 +391,7 @@ Nella tabella seguente vengono descritte le attività relative alla condivisione
 |Collegamento sicuro utilizzato  <br/> |SecureLinkUsed  <br/> |Un utente ha utilizzato un collegamento sicuro.  <br/> |
 |Aggiunta di un utente al collegamento protetto  <br/> |AddedToSecureLink  <br/> |Un utente è stato aggiunto all'elenco di entità che possono utilizzare un collegamento di condivisione sicura.  <br/> |
 |Utente rimosso dal collegamento protetto  <br/> |RemovedFromSecureLink  <br/> |Un utente è stato rimosso dall'elenco di entità che possono utilizzare un collegamento di condivisione sicura.  <br/> |
-|Invito alla condivisione riTirato  <br/> |SharingInvitationRevoked  <br/> |L'utente ha ritirato un invito di condivisione a una risorsa.  <br/> |
+|Invito alla condivisione ritirato  <br/> |SharingInvitationRevoked  <br/> |L'utente ha ritirato un invito di condivisione a una risorsa.  <br/> |
 ||||
   
 ### <a name="synchronization-activities"></a>Attività di sincronizzazione
@@ -462,7 +462,7 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |Spostamento dei messaggi nella cartella Posta eliminata  <br/> |MoveToDeletedItems  <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |
 |Autorizzazione per la cartella modificata  <br/> |UpdateFolderPermissions  <br/> |È stata modificata un'autorizzazione per la cartella. Autorizzazioni per le cartelle controllare quali utenti dell'organizzazione possono accedere alle cartelle delle cassette postali e ai messaggi presenti nella cartella.  <br/> |
 |Messaggi eliminati dalla cassetta postale  <br/> |HardDelete  <br/> |Un messaggio è stato eliminato dalla cartella elementi ripristinabili (eliminato definitivamente dalla cassetta postale).  <br/> |
-|Autorizzazioni di cassetta postale delegate riMosse  <br/> |Remove-MailboxPermission  <br/> |Un amministratore ha rimosso l'autorizzazione FullAccess (assegnata a un delegato) dalla cassetta postale di una persona. Dopo la rimozione dell'autorizzazione FullAccess, il delegato non è in grado di aprire la cassetta postale dell'altra persona o di accedere a qualsiasi contenuto.  <br/> |
+|Autorizzazioni di cassetta postale delegate rimosse  <br/> |Remove-MailboxPermission  <br/> |Un amministratore ha rimosso l'autorizzazione FullAccess (assegnata a un delegato) dalla cassetta postale di una persona. Dopo la rimozione dell'autorizzazione FullAccess, il delegato non è in grado di aprire la cassetta postale dell'altra persona o di accedere a qualsiasi contenuto.  <br/> |
 |Messaggio inviato utilizzando le autorizzazioni Invia come  <br/> |SendAs  <br/> |Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.  <br/> |
 |Messaggio inviato utilizzando le autorizzazioni Invia per conto di  <br/> |SendOnBehalf  <br/> |Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.  <br/> |
 |Accesso delegato aggiornato alla cartella del calendario  <br/> |UpdateCalendarDelegation  <br/> |Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario fornisce a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.  <br/> |
@@ -532,9 +532,9 @@ Nella tabella seguente sono elencate le attività di amministrazione dell'applic
 |Aggiunta della voce di delega  <br/> |Aggiungere una voce di delega  <br/> |Un'autorizzazione di autenticazione è stata creata/concessa a un'applicazione in Azure AD.  <br/> |
 |Aggiunta dell'entità servizio  <br/> |Aggiungere l'entità servizio  <br/> |Un'applicazione è stata registrata in Azure AD. Un'applicazione è rappresentata da un'entità di servizio nella directory.  <br/> |
 |Aggiunta di credenziali a un'entità di servizio  <br/> |Aggiungere le credenziali dell'entità servizio  <br/> |Le credenziali sono state aggiunte a un'entità di servizio in Azure AD. Un principio del servizio rappresenta un'applicazione nella directory.  <br/> |
-|Voce di delega riMossa  <br/> |Rimuovi voce di delega  <br/> |Un'autorizzazione di autenticazione è stata rimossa da un'applicazione in Azure AD.  <br/> |
+|Voce di delega rimossa  <br/> |Rimuovi voce di delega  <br/> |Un'autorizzazione di autenticazione è stata rimossa da un'applicazione in Azure AD.  <br/> |
 |Rimozione di un'entità di servizio dalla directory  <br/> |Rimuovi entità servizio  <br/> |Un'applicazione è stata eliminata o annullata la registrazione da Azure AD. Un'applicazione è rappresentata da un'entità di servizio nella directory.  <br/> |
-|Credenziali riMosse da un'entità di servizio  <br/> |Rimuovere le credenziali dell'entità servizio  <br/> |Le credenziali sono state rimosse da un'entità di servizio in Azure AD. Un principio del servizio rappresenta un'applicazione nella directory.  <br/> |
+|Credenziali rimosse da un'entità di servizio  <br/> |Rimuovere le credenziali dell'entità servizio  <br/> |Le credenziali sono state rimosse da un'entità di servizio in Azure AD. Un principio del servizio rappresenta un'applicazione nella directory.  <br/> |
 |Impostare la voce di delega  <br/> |Impostare la voce di delega  <br/> |È stata aggiornata un'autorizzazione di autenticazione per un'applicazione in Azure AD.  <br/> |
 ||||
 
@@ -637,7 +637,7 @@ Nella tabella seguente sono elencate le attività di utenti e amministratori in 
 |Rimozione del bot dal team  <br/> |BotRemovedFromTeam  <br/> |Un utente rimuove un bot da un team.  <br/> |
 |Connettore rimosso  <br/> |ConnectorRemoved  <br/> |Un utente rimuove il connettore da un canale.  <br/> |
 |Membri rimossi dal team  <br/> |MemberRemoved  <br/> |Un proprietario del team rimuove i membri di un team.  <br/> |
-|Scheda riMossa  <br/> |TabRemoved  <br/> |Un utente rimuove una scheda da un canale.  <br/> |
+|Scheda rimossa  <br/> |TabRemoved  <br/> |Un utente rimuove una scheda da un canale.  <br/> |
 |Connettore aggiornato  <br/> |ConnectorUpdated  <br/> |Un utente ha modificato un connettore in un canale.  <br/> |
 |Scheda aggiornato  <br/> |TabUpdated  <br/> |Un utente ha modificato una scheda in un canale.  <br/> |
 |L'utente ha eseguito l'accesso ai team  <br/> |TeamsSessionStarted  <br/> |Un utente accede a un client Microsoft teams.  <br/> |
@@ -654,18 +654,18 @@ Nella tabella seguente sono elencate le attività dell'utente e dell'amministrat
 |Impostazioni del profilo di rete modificate  <br/> |ProcessProfileFields  <br/> |La rete o l'amministratore verificato modifica le informazioni visualizzate nei profili membri per la rete degli utenti di rete.  <br/> |
 |Modalità di contenuto privato modificata  <br/> |SupervisorAdminToggled  <br/> |L'amministratore verificato attiva o disattiva la *modalità di contenuto privato* . Questa modalità consente a un amministratore di visualizzare i post in gruppi privati e di visualizzare i messaggi privati tra singoli utenti (o gruppi di utenti). Solo gli amministratori verificati sono in grado di eseguire questa operazione.  <br/> |
 |Configurazione della sicurezza modificata  <br/> |NetworkSecurityConfigurationUpdated  <br/> |L'amministratore verificato aggiorna la configurazione di sicurezza della rete Yammer. Questo include l'impostazione di criteri di scadenza delle password e restrizioni sugli indirizzi IP. Solo gli amministratori verificati sono in grado di eseguire questa operazione.  <br/> |
-|File creato  <br/> |FileCreato  <br/> |L'utente carica un file.  <br/> |
+|File creato  <br/> |Filecreato  <br/> |L'utente carica un file.  <br/> |
 |Gruppo creato  <br/> |GroupCreation  <br/> |L'utente crea un nuovo gruppo.  <br/> |
 |Gruppo eliminato  <br/> |GroupDeletion  <br/> |Un gruppo viene eliminato da Yammer.  <br/> |
 |Messaggio eliminato  <br/> |MessageDeleted  <br/> |L'utente elimina un messaggio.  <br/> |
-|File scaricato  <br/> |FileDownloaded  <br/> |L'utente scarica un file.  <br/> |
-|Dati esPortati  <br/> |DataExport  <br/> |L'amministratore verificato Esporta i dati di rete di Yammer. Solo gli amministratori verificati sono in grado di eseguire questa operazione.  <br/> |
-|File condiviso  <br/> |FileShared  <br/> |L'utente condivide un file con un altro utente.  <br/> |
+|File scaricato  <br/> |Filedownloaded  <br/> |L'utente scarica un file.  <br/> |
+|Dati esportati  <br/> |DataExport  <br/> |L'amministratore verificato Esporta i dati di rete di Yammer. Solo gli amministratori verificati sono in grado di eseguire questa operazione.  <br/> |
+|File condiviso  <br/> |Fileshared  <br/> |L'utente condivide un file con un altro utente.  <br/> |
 |Utente della rete sospesa  <br/> |NetworkUserSuspended  <br/> |La rete o l'amministratore verificato sospende (Disattiva) un utente di Yammer.  <br/> |
 |Utente sospeso  <br/> |UserSuspension  <br/> |L'account utente è sospeso (disattivata).  <br/> |
 |Descrizione file aggiornata  <br/> |FileUpdateDescription  <br/> |L'utente modifica la descrizione di un file.  <br/> |
-|Nome file aggiornato  <br/> |FileUpdatename  <br/> |L'utente modifica il nome di un file.  <br/> |
-|File visualizzato  <br/> |FileVisiting  <br/> |L'utente visualizza un file.  <br/> |
+|Nome file aggiornato  <br/> |Fileupdatename  <br/> |L'utente modifica il nome di un file.  <br/> |
+|File visualizzato  <br/> |Filevisiting  <br/> |L'utente visualizza un file.  <br/> |
 ||||
    
 ### <a name="microsoft-flow-activities"></a>Attività di flusso Microsoft
@@ -720,12 +720,12 @@ Come spiegato in precedenza, il periodo di conservazione dei record di controllo
 
 - **Office 365 E3** -i record di controllo vengono conservati per 90 giorni.
 
-- **Office 365 E5** -i record di controllo vengono conservati per 365 giorni (un anno). La conservazione dei record di controllo per un anno è disponibile anche per le organizzazioni che dispongono di un abbonamento E3 e di un abbonamento al componente aggiuntivo per la conformità a Office 365 Advanced Compliance.
+- I record di controllo di **Office 365 E5** vengono conservati anche per 90 giorni. La conservazione dei record di controllo per un anno può essere eventualmente disponibile per gli utenti e gli utenti di E5 con una licenza E3 e una licenza per il componente aggiuntivo per la conformità avanzata di Office 365.
 
      > [!NOTE]
-     > Come spiegato in precedenza, il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o le organizzazioni E3 con licenze per i componenti aggiuntivi per la conformità avanzate) è attualmente disponibile solo nell'ambito di un programma di anteprima privata. Per iscriversi al programma di anteprima, inviare una richiesta con il [supporto tecnico Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) e includere quanto segue come descrizione di cosa serve aiuto con: "Long-term Office 365 audit log di controllo di anteprima privata".
+     > Come spiegato in precedenza, il programma di anteprima privata per il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o le organizzazioni E3 con licenze per i componenti aggiuntivi per la conformità avanzate) è chiuso alla nuova registrazione. Questo articolo verrà aggiornato quando il periodo di conservazione di un anno è disponibile in anteprima pubblica o rilasciato per la disponibilità generale.
 
-Si noti inoltre che la durata del periodo di conservazione per i record di controllo si basa sulla gestione delle licenze per utente. Ad esempio, se a un utente dell'organizzazione è assegnata una licenza di Office 365 E3, i record di controllo per le attività eseguite dall'utente vengono conservati per 90 giorni. Se a un utente diverso viene assegnata una licenza di Office 365 E5, i relativi record di controllo vengono conservati per un anno. 
+Si noti inoltre che la durata del periodo di conservazione per i record di controllo si basa sulla gestione delle licenze per utente. Ad esempio, se a un utente dell'organizzazione è assegnata una licenza di Office 365 E3 o E5, i record di controllo per le attività eseguite dall'utente vengono conservati per 90 giorni.
 
 **È possibile accedere ai dati di controllo a livello di programmazione?**
 
