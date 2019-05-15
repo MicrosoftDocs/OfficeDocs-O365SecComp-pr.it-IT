@@ -1,5 +1,5 @@
 ---
-title: Rilevare e correggere le regole di Outlook e gli attacchi per inIezioni di moduli personalizzati in Office 365
+title: Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256864"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979492"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
 
@@ -141,7 +141,7 @@ Le regole e gli exploit dei moduli vengono utilizzati solo da un utente malinten
 
 Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti di Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  È inoltre necessario:
 <ol>
-    <li>Monitorare la modalità <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">di accesso e utilizzo</a>degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">criteri di protezione delle app cloud di Office 365</a> per monitorare gli account e allertare attività inusuali. 
+    <li>Monitorare la modalità <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">di accesso e utilizzo</a>degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">criteri di protezione delle app cloud di Office 365</a> per monitorare gli account e allertare attività inusuali. 
         <ol type="a">
             <li><b>Tentativi di accesso non riusciti multipli</b> Questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività di accesso non riuscite in una singola sessione rispetto alla linea di base acquisita, il che potrebbe indicare una tentativo di violazione.</li>
             <li><b>Viaggi impossibili</b> - Questo criterio profila l'ambiente e attiva gli avvisi quando vengono rilevate attività dallo stesso utente in posizioni diverse entro un periodo di tempo inferiore a quello previsto tra le due posizioni. Questo potrebbe indicare che un utente diverso utilizza le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale viene illustrato il modello di attività di un nuovo utente.</li>

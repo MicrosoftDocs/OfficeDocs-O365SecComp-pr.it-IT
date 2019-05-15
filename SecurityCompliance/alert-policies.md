@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e il problema delle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516504"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979502"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
 
@@ -229,7 +229,8 @@ Dopo che gli avvisi sono stati generati e visualizzati nella pagina **Visualizza
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualizzazione degli avvisi di sicurezza delle app Cloud
   
-Gli avvisi attivati dai criteri di protezione delle app di Office 365 cloud sono ora visualizzati nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Sono inclusi gli avvisi attivati da criteri di attività e avvisi attivati dai criteri di rilevamento delle anomalie in Office 365 cloud app Security. Questo significa che è possibile visualizzare tutti gli avvisi nel centro sicurezza e conformità. Si noti che Office 365 cloud app Security è disponibile solo per le organizzazioni con un abbonamento a Office 365 Enterprise E5 o Office 365 US Government G5. Per ulteriori informazioni, vedere [Overview of Office 365 cloud app Security](office-365-cas-overview.md).
+Gli avvisi attivati dai criteri di protezione delle app di Office 365 cloud sono ora visualizzati nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Sono inclusi gli avvisi attivati da criteri di attività e avvisi attivati dai criteri di rilevamento delle anomalie in Office 365 cloud app Security. Questo significa che è possibile visualizzare tutti gli avvisi nel centro sicurezza e conformità. Si noti che Office 365 cloud app Security è disponibile solo per le organizzazioni con un abbonamento a Office 365 Enterprise E5 o Office 365 US Government G5. Per ulteriori informazioni, vedere [Overview of cloud app Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+).
 
 Inoltre, le organizzazioni che dispongono di Microsoft cloud app Security come parte di un abbonamento Enterprise Mobility + Security E5 o come servizio autonomo possono anche visualizzare gli avvisi di sicurezza delle app Cloud correlati alle app e ai servizi di Office 365 nel & di sicurezza Centro conformità.
 
@@ -237,7 +238,7 @@ Per visualizzare solo gli avvisi di sicurezza delle app Cloud nel centro sicurez
 
 ![Utilizzare il filtro di origine per visualizzare solo gli avvisi di sicurezza delle app Cloud](media/FilterCASAlerts.png)
 
-Analogamente a un avviso attivato da un criterio di avviso per il Centro sicurezza e conformità, è possibile fare clic su un avviso di protezione delle app cloud per visualizzare una pagina a comparsa con informazioni dettagliate sull'avviso. L'avviso include un collegamento per visualizzare i dettagli e gestire l'avviso nel cloud app Security Portal e un collegamento ai criteri di protezione delle app cloud corrispondenti che hanno attivato l'avviso. Vedere [Review and Take Action on Alerts in Office 365 cloud app Security](review-office-365-cas-alerts.md).
+Analogamente a un avviso attivato da un criterio di avviso per il Centro sicurezza e conformità, è possibile fare clic su un avviso di protezione delle app cloud per visualizzare una pagina a comparsa con informazioni dettagliate sull'avviso. L'avviso include un collegamento per visualizzare i dettagli e gestire l'avviso nel cloud app Security Portal e un collegamento ai criteri di protezione delle app cloud corrispondenti che hanno attivato l'avviso. Vedere [monitorare gli avvisi in cloud app Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
 ![I dettagli degli avvisi contengono collegamenti al portale di cloud app Security](media/CASAlertDetail.png)
 

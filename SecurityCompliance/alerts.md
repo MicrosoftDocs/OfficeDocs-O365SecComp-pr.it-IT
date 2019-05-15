@@ -15,12 +15,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Informazioni sugli avvisi che è possibile impostare per facilitare la sicurezza in Office 365.
-ms.openlocfilehash: e02e78b091c7e5e2347c90c14a99cf838b4482b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 51a53961a5a6e575986c6a5192a6980052d015a4
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242564"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979482"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
@@ -55,6 +55,6 @@ Nella tabella seguente vengono descritti gli strumenti disponibili in **avvisi**
 |**Strumento**|**Descrizione**|
 |:-----|:-----|
 |[Gestione avvisi](create-activity-alerts.md) <br/> |Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo di Office 365 per gli eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.  <br/> |
-|[Gestire gli avvisi avanzati](office-365-cas-overview.md) <br/> |Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.  <br/> |
+|[Gestire gli avvisi avanzati](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.  <br/> |
    
 
