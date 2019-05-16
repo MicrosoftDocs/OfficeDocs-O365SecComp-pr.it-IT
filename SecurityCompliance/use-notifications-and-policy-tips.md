@@ -1,10 +1,10 @@
 ---
-title: Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
+title: Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263908"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077362"
 ---
-# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche tramite posta elettronica e visualizzare i suggerimenti per i criteri DLP
+# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
 È possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, controllare e proteggere le informazioni riservate in Office 365. Si desidera che gli utenti dell'organizzazione che lavorano con queste informazioni riservate vengano conformi ai criteri DLP, ma non si desidera bloccarli inutilmente dall'ottenere il proprio lavoro. In questo scenario possono risultare utili le notifiche tramite posta elettronica e i suggerimenti per i criteri.
   
@@ -65,7 +65,7 @@ Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i s
     
 6. Per scegliere i percorsi che si desidera proteggere dal criterio DLP, effettuare una delle seguenti operazioni:
     
-  - scegliere **tutte le posizioni in Office 365** \> **avanti**.
+  - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
     
   - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**.
     
@@ -118,7 +118,7 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |Le azioni applicate al contenuto.  <br/> |
 |%% ContentURL%%  <br/> |URL del documento nel sito di SharePoint Online o OneDrive for business.  <br/> |
-|%% MatchedConditions%%  <br/> |Le condizioni corrispondenti al contenuto. Utilizzare questo token per informare gli utenti dei possibili problemi relativi al contenuto.  <br/> |
+|%%MatchedConditions%%  <br/> |Le condizioni corrispondenti al contenuto. Utilizzare questo token per informare gli utenti dei possibili problemi relativi al contenuto.  <br/> |
    
 ![Messaggio di notifica in cui vengono visualizzati i token](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
@@ -126,7 +126,7 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 
 Per ogni regola in un criterio DLP, è possibile configurare suggerimenti per i criteri per:
   
-- Informare l'utente che il contenuto è in conflitto con un criterio DLP, affinché possa intervenire per risolvere il conflitto. È possibile utilizzare il testo predefinito (vedere le tabelle riPortate di seguito) oppure immettere testo personalizzato sui criteri specifici dell'organizzazione.
+- Informare l'utente che il contenuto è in conflitto con un criterio DLP, affinché possa intervenire per risolvere il conflitto. È possibile utilizzare il testo predefinito (vedere le tabelle riportate di seguito) oppure immettere testo personalizzato sui criteri specifici dell'organizzazione.
     
 - Consentire all'utente di ignorare il criterio DLP. In alternativa, è possibile:
     

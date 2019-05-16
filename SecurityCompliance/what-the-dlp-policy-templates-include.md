@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
-ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077152"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
 
@@ -129,8 +129,8 @@ La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformi
 
 |**Nome regola**|**Condizioni <br/> (compresi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|Contenuto sensibile dell'UE a basso volume trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente di guida dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE-conteggio minimo 1, conteggio massimo 9  <br/>  Codice di preVidenza sociale (SSN) UE o ID equivalente-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione fiscale dell'Unione europea (TIN)-conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare rapporti sugli incidenti all'amministratore  <br/> |
-|Volume elevato di contenuto sensibile all'UE trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente di guida dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE-conteggio minimo 1, conteggio massimo 9  <br/>  Codice di preVidenza sociale (SSN) UE o ID equivalente-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione fiscale dell'Unione europea (TIN)-conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Limitare l'accesso al contenuto per gli utenti esterni  <br/>  Notificare agli utenti messaggi di posta elettronica e suggerimenti sui criteri  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporti sugli incidenti all'amministratore  <br/> |
+|Contenuto sensibile dell'UE a basso volume trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente di guida dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE-conteggio minimo 1, conteggio massimo 9  <br/>  Codice di previdenza sociale (SSN) UE o ID equivalente-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione fiscale dell'Unione europea (TIN)-conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare rapporti sugli incidenti all'amministratore  <br/> |
+|Volume elevato di contenuto sensibile all'UE trovato  <br/> | I contenuti includono informazioni riservate:  <br/>  Numero di carta di debito UE - conteggio minimo 1, conteggio massimo 9  <br/>  Numero della patente di guida dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione nazionale dell'UE-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di passaporto UE-conteggio minimo 1, conteggio massimo 9  <br/>  Codice di previdenza sociale (SSN) UE o ID equivalente-conteggio minimo 1, conteggio massimo 9  <br/>  Numero di identificazione fiscale dell'Unione europea (TIN)-conteggio minimo 1, conteggio massimo 9  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> | Limitare l'accesso al contenuto per gli utenti esterni  <br/>  Notificare agli utenti messaggi di posta elettronica e suggerimenti sui criteri  <br/>  Consentire override  <br/>  Richiedere una motivazione aziendale  <br/>  Inviare rapporti sugli incidenti all'amministratore  <br/> |
    
 ## <a name="germany-financial-data"></a>Dati finanziari Germania
 
@@ -283,7 +283,7 @@ La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformi
 
 |**Nome regola**|**Condizioni <br/> (compresi i tipi di informazioni riservate)**|**Azioni**|
 |:-----|:-----|:-----|
-|Contenuto corrisponde agli Stati Uniti HIPAA  <br/> | Contiene una delle informazioni riservate seguenti:  <br/>  Codice di preVidenza sociale degli Stati Uniti (SSN)-conteggio minimo 1, conteggio massimo illimitato  <br/>  Numero di forze dell'ordine (DEA) (Drug Enforcement Agency)-conteggio minimo 1, conteggio massimo illimitato  <br/> **E** <br/>  Il contenuto contiene uno dei seguenti termini:  <br/>  Classificazione internazionale delle malattie (ICD-9-CM)-conteggio minimo 1, conteggio massimo qualsiasi  <br/>  Classificazione internazionale delle malattie (ICD-10-CM)-conteggio minimo 1, conteggio massimo qualsiasi  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
+|Contenuto corrisponde agli Stati Uniti HIPAA  <br/> | Contiene una delle informazioni riservate seguenti:  <br/>  Codice di previdenza sociale degli Stati Uniti (SSN)-conteggio minimo 1, conteggio massimo illimitato  <br/>  Numero di forze dell'ordine (DEA) (Drug Enforcement Agency)-conteggio minimo 1, conteggio massimo illimitato  <br/> **E** <br/>  Il contenuto contiene uno dei seguenti termini:  <br/>  Classificazione internazionale delle malattie (ICD-9-CM)-conteggio minimo 1, conteggio massimo qualsiasi  <br/>  Classificazione internazionale delle malattie (ICD-10-CM)-conteggio minimo 1, conteggio massimo qualsiasi  <br/>  I contenuti vengono condivisi con:  <br/>  Persone esterne all'organizzazione  <br/> |Inviare una notifica  <br/> |
    
 ## <a name="us-patriot-act"></a>U.S. Patriot Act
 

@@ -3,7 +3,7 @@ title: Integrazione di SIEM con Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: None
@@ -15,12 +15,12 @@ ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: Integrare il server SIEM dell'organizzazione con Office 365 Advanced Threat Protection e gli eventi relativi alle minacce correlati nell'API di gestione delle attività di Office 365.
-ms.openlocfilehash: fa9dcda0556684b748068cbe5ee848ba443d7667
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: da34073669d50cadcc01b5dd885d209a329c645f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260684"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077192"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Integrazione di SIEM con Office 365 Advanced Threat Protection
 
@@ -47,7 +47,7 @@ Il server SIEM o un altro sistema analogo deve eseguire il polling del carico di
 
 [Indagine e risposta alle minacce di Office 365](office-365-ti.md)
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
 
 [Smart report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
   

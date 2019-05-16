@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: ff80191ae75a37994d1ad08f587fa07f72b88f24
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077322"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -84,7 +84,7 @@ Oltre ai report ATP descritti in questo articolo, sono disponibili diversi altri
 |Report (s)  |Dettagli  |
 |---------|---------|
 |**Traccia URL collegamenti sicuri ATP** (Si tratta di un report generato tramite PowerShell). Questo rapporto illustra i risultati delle azioni di collegamenti sicuri ATP negli ultimi sette (7) giorni. |[Informazioni di riferimento sui cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
-|Report di **protezione della posta elettronica**, ad esempio un report mittenti e destinatari principali, un report di posta indesiderata e un report di rilevaMenti di spam. | [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md)        |
+|Report di **protezione della posta elettronica**, ad esempio un report mittenti e destinatari principali, un report di posta indesiderata e un report di rilevamenti di spam. | [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md)        |
 |**Gestione risorse** (noto anche come Esplora minacce, è incluso in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md))     | [Utilizzo di Esplora risorse nel &amp; Centro sicurezza e conformità](use-explorer-in-security-and-compliance.md)        |
 |**Risultati di EOP e ATP** (Si tratta di un report personalizzato generato tramite PowerShell). Questo report contiene informazioni, ad esempio dominio, data, tipo di evento, direzione, azione e numero di messaggi.  | [Informazioni di riferimento sui cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
 |**Rilevamenti di EOP e ATP** (Si tratta di un report personalizzato generato tramite PowerShell). Questo report contiene informazioni dettagliate su file o URL dannosi, tentativi di phishing, rappresentazione e altre potenziali minacce nei messaggi di posta elettronica o nei file.   | [Informazioni di riferimento sui cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |

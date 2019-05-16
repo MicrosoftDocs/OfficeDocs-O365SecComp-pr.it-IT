@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077272"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Advanced Threat Protection Plan 2)
 
@@ -58,7 +58,7 @@ Gli utenti malintenzionati possono inviare messaggi ai propri clienti per cercar
   
 4. Si notino le etichette che vengono visualizzate nel report, **** ad esempio recapitate, **sconosciute**o recapitate in **posta**indesiderata.<br/>![Esplora minacce che mostra i dati per tutti i messaggi di posta](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>A seconda delle operazioni eseguite nei messaggi di posta elettronica per l'organizzazione, è possibile che vengano visualizzate altre etichette, ad esempio **bloccate** o **sostituite**.
     
-5. Nel rapporto scegliere reCapitato per visualizzare solo i messaggi di posta elettronica che sono finiti nelle cassette postali degli utenti. ****<br/>![Se si fa clic su "reCapitato alla posta indesiderata", vengono rimossi](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. Nel rapporto scegliere recapitato per visualizzare solo i messaggi di posta elettronica che sono finiti nelle cassette postali degli utenti. ****<br/>![Se si fa clic su "recapitato alla posta indesiderata", vengono rimossi](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
 6. Al di sotto del grafico, esaminare l'elenco di **posta elettronica** al di sotto del grafico.<br/>![Sotto il grafico, visualizzare un elenco di messaggi di posta elettronica che sono stati rilevati](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   

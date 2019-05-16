@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077622"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -54,7 +54,7 @@ Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per 
     
 - L' ** [autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) a più fattori (AMF) è attivata, almeno per l'account amministratore globale di Office 365**. (Idealmente, l'AMF è attivata per tutti gli utenti dell'organizzazione.)
  
-- **l'organizzazione dispone [di Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat management** \> **Attack simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
+- **L'organizzazione dispone [di Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat Management** \> **Attack Simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nome visualizzato Spear-attacco di phishing
@@ -139,7 +139,7 @@ Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/m
 
 [Office 365 Advanced Threat Protection Service Descrizione](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
 
 
 

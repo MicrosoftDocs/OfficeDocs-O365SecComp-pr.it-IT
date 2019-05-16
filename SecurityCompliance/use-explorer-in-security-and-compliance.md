@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Explorer (denominato anche Esplora minacce) nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30f3759b6eb35508a9de8c03abb72562417aa04f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077332"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utilizzo di Esplora minacce nel centro &amp; sicurezza e conformità
 
@@ -55,7 +55,7 @@ Si supponga di voler vedere tentativi di phishing tramite URL nella posta elettr
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** per applicare il filtro.<br/>![URL e fare clic su verdetti](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
 Il rapporto viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL seguente:
-1. Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati inFormatici includono una combinazione di URL buoni e cattivi nei loro messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente a cui fare clic. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
+1. Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati informatici includono una combinazione di URL buoni e cattivi nei loro messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente a cui fare clic. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
 2. I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, questi sono più spesso collegamenti sospetti o malevoli, ma possono includere URL puliti che si verificano nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
 
 Le due tabelle degli URL mostrano gli URL principali nei messaggi di posta elettronica di phishing in base allo stato di recapito e visualizzano gli URL che sono stati bloccati (o sono stati visitati nonostante un avviso), in modo da poter capire quali collegamenti negativi sono stati ricevuti dagli utenti e interagito con gli utenti. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione. 
@@ -66,7 +66,7 @@ Selezionare un URL per visualizzare informazioni più dettagliate. Si noti che n
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
-Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non inDesiderata o phishing tramite il [componente aggiuntivo segnala messaggio per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> di posta elettronica segnalaTa dall'utente](threat-explorer-views.md#email--user-reported) di Esplora risorse.
+Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo segnala messaggio per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> di posta elettronica segnalata dall'utente](threat-explorer-views.md#email--user-reported) di Esplora risorse.
 
 1. Nel centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)), scegliere **gestione** > **** minacce.
 2. Nel menu **Visualizza** scegliere la **posta elettronica** > **segnalata dall'utente**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewMenuEmailUserReported.png)<br/>

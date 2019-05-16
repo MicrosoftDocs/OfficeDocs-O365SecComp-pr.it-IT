@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se è il caso della propria organizzazione, è possibile creare un criterio DLP in Office 365 che riconosce le proprietà che sono state applicate ai documenti da FCI di Windows Server o da un altro sistema, in modo che il criterio DLP possa essere applicato a documenti di Office con FCI specifica o altri valori di proprietà.
-ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4db84ac4fd0c62dff0834c68827808f832a36d03
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077282"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
@@ -84,7 +84,7 @@ Prima di tutto, eseguire la procedura precedente per creare una proprietà gesti
   
 Successivamente, si crea un criterio DLP con due regole che entrambe utilizzano le **proprietà del documento Condition contengono uno dei valori seguenti**:
   
-- **Contenuto delle informazioni personali FCI-alto, moderato** La prima regola limita l'accesso al documento se la proprietà di classificazione FCI **identificaBile personalmente** è uguale **ad alta** o **moderata** e il documento viene condiviso con persone esterne all'organizzazione. 
+- **Contenuto delle informazioni personali FCI-alto, moderato** La prima regola limita l'accesso al documento se la proprietà di classificazione FCI **identificabile personalmente** è uguale **ad alta** o **moderata** e il documento viene condiviso con persone esterne all'organizzazione. 
     
 - **Contenuto delle informazioni personali FCI-basso** La seconda regola invia una notifica al proprietario del documento se la proprietà di classificazione FCI **identifica le informazioni** personali è uguale a **bassa** e il documento viene condiviso con persone esterne all'organizzazione. 
     
@@ -129,7 +129,7 @@ Per rilevare il contenuto con tale proprietà ovunque, è possibile richiedere m
 > [!CAUTION]
 > [!ATTENZIONE]  La reindicizzazione di un sito può provocare un carico eccessivo nel sistema di ricerca. Non reindicizzare il sito, a meno che lo scenario non lo richieda assolutamente. 
   
-Per ulteriori informazioni, vedere [ricerca per indicizzazione e reindicizzaZione manuale di un sito, di una raccolta o di un elenco](http://go.microsoft.com/fwlink/p/?LinkID=627457).
+Per ulteriori informazioni, vedere [ricerca per indicizzazione e reindicizzazione manuale di un sito, di una raccolta o di un elenco](http://go.microsoft.com/fwlink/p/?LinkID=627457).
   
 ### <a name="re-index-a-site-optional"></a>Reindicizzare un sito (facoltativo)
 

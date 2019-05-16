@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261086"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077222"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -32,9 +32,9 @@ Guarda il video per ottenere una panoramica e quindi leggi questo articolo per u
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
   
-A seconda di come è inclusa la sottoscrizione di Office 365 dell'organizzazione, il dashboard di sicurezza include diversi widget, come riepilogo della gestione delle minacce, stato di protezione delle minacce, riLevamenti di minacce globali settimanali, malware e altro ancora, come descritto nell' sezioni seguenti.
+A seconda di come è inclusa la sottoscrizione di Office 365 dell'organizzazione, il dashboard di sicurezza include diversi widget, come riepilogo della gestione delle minacce, stato di protezione delle minacce, rilevamenti di minacce globali settimanali, malware e altro ancora, come descritto nell' sezioni seguenti.
   
-per visualizzare il dashboard di sicurezza, nel [centro &amp; sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md)accedere a **Threat management** \> **dashboard**.
+Per visualizzare il dashboard di sicurezza, nel [centro &amp; sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md)accedere a **Threat Management** \> **Dashboard**.
   
 > [!NOTE]
 > Per visualizzare il dashboard di sicurezza, è necessario essere un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza. Alcuni widget richiedono ulteriori autorizzazioni per la visualizzazione. Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -70,11 +70,11 @@ I dettagli dipendono dal fatto che la sottoscrizione di Office 365 includa [Exch
 
 Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-## <a name="global-weekly-threat-detections"></a>RiLevamenti di minacce globali settimanali
+## <a name="global-weekly-threat-detections"></a>Rilevamenti di minacce globali settimanali
  
-Il widget globale settimanale per i riLevamenti di minacce indica quante minacce sono state rilevate nei messaggi di posta elettronica negli ultimi sette (7) giorni.
+Il widget globale settimanale per i rilevamenti di minacce indica quante minacce sono state rilevate nei messaggi di posta elettronica negli ultimi sette (7) giorni.
 
-![Widget globale settimanale per i riLevamenti di minacce](media/globalweeklythreatdetections.png)
+![Widget globale settimanale per i rilevamenti di minacce](media/globalweeklythreatdetections.png)
 
 Le metriche vengono calcolate come descritto nella tabella seguente:
 
@@ -124,7 +124,7 @@ Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, 
   
 [Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
   
 [Indagine e risposta alle minacce di Office 365](office-365-ti.md)
   

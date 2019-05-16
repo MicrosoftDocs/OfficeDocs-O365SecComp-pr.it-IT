@@ -1,9 +1,9 @@
 ---
-title: Collegamenti sicuri ATP di Office 365
+title: Collegamenti sicuri di Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 03/05/2019
 ms.topic: overview
 f1_keywords:
@@ -22,14 +22,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare collegamenti sicuri per proteggere l'organizzazione da attacchi di phishing e altri.
-ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa70440a5192600821ac5d627baf630c3243716a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077542"
 ---
-# <a name="office-365-atp-safe-links"></a>Collegamenti sicuri ATP di Office 365
+# <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Panoramica dei collegamenti sicuri ATP di Office 365
 

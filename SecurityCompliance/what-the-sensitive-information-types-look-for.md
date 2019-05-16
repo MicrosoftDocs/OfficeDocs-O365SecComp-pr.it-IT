@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266872"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077552"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>Elementi cercati dai tipi di informazioni sensibili
+# <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
 La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include numerosi tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori, ad esempio, parole chiave e checksum per identificare una tipologia di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
   
@@ -72,15 +72,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - aba routing #
 - aba routing number
 - ABA
-- abarouting #
+- abarouting#
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting #
+- americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting #
+- bankrouting#
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -279,34 +279,34 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic #
-- DriverLics #
-- DriverLicence #
-- DriverLicences #
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic #
-- DriversLics #
-- DriversLicence #
-- DriversLicences #
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
 - Drivers Licences#
-- Driver'Lic #
+- Driver'Lic#
 - Driver ' LiCS
-- Driver'Licence #
-- Driver'Licences #
+- Driver'Licence#
+- Driver'Licences#
 - Driver' Lic#
 - Driver'Lics#
 - Driver'Licence#
 - Driver' Licences#
-- Driver'sLic #
-- Driver'sLics #
-- Driver'sLicence #
-- Driver'sLicences #
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
@@ -331,12 +331,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Driver'sLicenses
 - Driver's License
 - Driver's Licenses
-- DriverLicense #
-- DriverLicenses #
+- DriverLicense#
+- DriverLicenses#
 - Driver License#
 - Driver Licenses#
-- DriversLicense #
-- DriversLicenses #
+- DriversLicense#
+- DriversLicenses#
 - Drivers License#
 - Drivers Licenses#
 - Driver ' License
@@ -344,7 +344,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Driver' License#
 - Driver' Licenses#
 - Secondola
-- Driver'sLicenses #
+- Driver'sLicenses#
 - Driver's License#
 - Driver's Licenses#
    
@@ -1441,7 +1441,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
 
 - L'abbreviazione della provincia, ad esempio, AB
 - Il nome della provincia, ad esempio, Alberta
@@ -1509,7 +1509,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - idcard #s
 - idcard card
 - idcard cards
-- IDcard
+- idcard
 - identification number
 - identification numbers
 - identification #
@@ -1521,48 +1521,48 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - DLS 
 - CDL 
 - CDLS 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
 - Drivers Licence# 
 - Drivers Licences# 
-- Driver'Lic # 
+- Driver'Lic# 
 - Driver ' LiCS 
 - Driver ' License 
 - Driver ' licenses 
-- Driver'Licence # 
-- Driver'Licences # 
+- Driver'Licence# 
+- Driver'Licences# 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
 - Driver' Licence# 
 - Driver' Licences# 
-- Driver'sLic # 
-- Driver'sLics # 
+- Driver'sLic# 
+- Driver'sLics# 
 - Secondola 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1574,7 +1574,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - ID 
 - idcard card# 
 - idcard cards# 
-- IDcard # 
+- idcard# 
 - identification card# 
 - identification cards# 
 - identificazione 
@@ -1683,7 +1683,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - パスポート
 - パスポート番号
 - パスポートのNum
-- パスポート #
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
@@ -2032,9 +2032,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - prüfziffer
 - Prufziffer
 - sicherheits Kode
-- Sicherheitscode
+- sicherheitscode
 - sicherheitsnummer
-- Verfalldatum
+- verfalldatum
 - codice di verifica
 - Cod. sicurezza
 - cod sicurezza
@@ -2055,7 +2055,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - cód seguranca
 - número de verificação
 - numero de verificacao
-- Ablauf
+- ablauf
 - gültig bis
 - gültigkeitsdatum
 - gultig bis
@@ -2096,7 +2096,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - JCB
 - japanese card bureau
 - carte blanche
-- CarteBlanche
+- carteblanche
 - credit card
 - CC
 - CC #:
@@ -2110,7 +2110,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Bankcard
 - card number
 - card num
-- CardNumber
+- cardnumber
 - cardnumbers
 - card numbers
 - CreditCard
@@ -2143,12 +2143,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - numero de carte
 - nº de la carte
 - nº de carte
-- Kreditkarte
+- kreditkarte
 - Karte
-- Karteninhaber
+- karteninhaber
 - karteninhabers
 - kreditkarteninhaber
-- Kreditkarteninstitut
+- kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
 - kartennr 
@@ -2420,7 +2420,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
    
 ## <a name="eu-debit-card-number"></a>Unione Europea - Numero di carta di debito
@@ -2503,7 +2503,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - cardano numerico 
 - titolare 
 - titolari 
-- CardNumber 
+- cardnumber 
 - cardnumbers 
 - carta bianca 
 - carta credito 
@@ -2518,7 +2518,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - carte de credit 
 - carte de crédit 
 - carte di credito 
-- CarteBlanche 
+- carteblanche 
 - cartão de credito 
 - cartão de crédito 
 - cartão de debito 
@@ -2569,14 +2569,14 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - kaarthouder 
 - kaarthouders 
 - Karte  
-- Karteninhaber 
+- karteninhaber 
 - karteninhabers
 - kartennr 
 - kartennummer 
-- Kreditkarte 
+- kreditkarte 
 - Kreditkarten-Nummer 
 - kreditkarteninhaber 
-- Kreditkarteninstitut 
+- kreditkarteninstitut 
 - kreditkartennummer 
 - kreditkartentyp 
 - Maestro 
@@ -2699,7 +2699,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- No. Dell'Edizione 
+- No. dell'edizione 
 - No. di sicurezza 
 - numero de securite 
 - numero de verificacao 
@@ -2719,18 +2719,18 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - security no 
 - security number 
 - sicherheits kode 
-- Sicherheitscode 
+- sicherheitscode 
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
 - veiligheidsaantal 
-- Veiligheidscode 
+- veiligheidscode 
 - veiligheidsnummer 
-- Verfalldatum 
+- verfalldatum 
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- Ablauf 
+- ablauf 
 - data de expiracao 
 - data de expiração 
 - data del exp 
@@ -2784,9 +2784,9 @@ Per ulteriori informazioni, vedere [tipo di informazione riservata del numero di
 
 Per ulteriori informazioni, vedere [tipo di informazione sensibile al numero di passaporto dell'Unione europea](eu-passport-number.md).
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>Codice di preVidenza sociale dell'Unione europea o ID equivalente
+## <a name="eu-social-security-number-or-equivalent-id"></a>Codice di previdenza sociale dell'Unione europea o ID equivalente
 
-Per ulteriori informazioni, vedere [codice di PrevideNza sociale dell'Unione europea o tipo di dati sensibili ID equivalente](eu-social-security-number-or-equivalent-id.md).
+Per ulteriori informazioni, vedere [codice di previdenza sociale dell'Unione europea o tipo di dati sensibili ID equivalente](eu-social-security-number-or-equivalent-id.md).
   
 ## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
@@ -2923,7 +2923,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
    
 ## <a name="france-passport-number"></a>Francia - Numero di passaporto
 
@@ -3259,7 +3259,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
-- Reisepass
+- reisepass
 - reisepasse
 - reisepassnummer
 - passaporto
@@ -3267,7 +3267,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 #### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
 
-- Geburtsdatum
+- geburtsdatum
 - ausstellungsdatum
 - ausstellungsort
 
@@ -3631,7 +3631,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
    
 ## <a name="ip-address"></a>Indirizzo IP
@@ -4056,23 +4056,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座 # 
+- 銀行口座＃ 
 - 銀行の勘定番号 
-- 銀行のacct # 
+- 銀行のacct＃ 
 - 銀行の勘定いいえ 
 - 銀行口座番号
 - 普通預金口座番号 
 - 預金口座 
-- 貯蓄口座 # 
+- 貯蓄口座＃ 
 - 貯蓄勘定の数 
-- 貯蓄勘定 # 
+- 貯蓄勘定＃ 
 - 貯蓄勘定番号 
 - 普通預金口座番号 
 - 引き落とし口座番号 
 - 口座番号 
-- 口座番号 # 
+- 口座番号＃ 
 - デビットのacct番号 
-- デビット勘定 # 
+- デビット勘定＃ 
 - デビットACCTの番号 
 - デビット口座番号 
 
@@ -4131,7 +4131,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - state id 
 - state identification 
 - state identification number 
-- 低所得国 # 
+- 低所得国＃ 
 - 免許証 
 - 状態ID
 - 状態の識別 
@@ -4177,7 +4177,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
    
 ## <a name="japan-resident-registration-number"></a>Giappone - Numero di registrazione dei residenti
 
@@ -4220,8 +4220,8 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号 、 登録番号をレジデント 
-- 住民基本登録番号 、 登録番号 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
 - 住民基本レジストリ番号を常駐 
 - 登録番号を常駐住民基本台帳登録番号 
 
@@ -4970,7 +4970,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
 ## <a name="sql-server-connection-string"></a>Stringa di connessione di SQL Server
 
@@ -5146,7 +5146,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -5209,7 +5209,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - BIC\# 
 - bank identifier code 
 - 標準化 9362 
-- 迅速 # 
+- 迅速＃ 
 - SWIFTコード 
 - SWIFT番号 
 - 迅速なルーティング番号 
@@ -5755,7 +5755,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -5933,23 +5933,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
-- Driver'Lic # 
+- Driver'Lic# 
 - Driver ' LiCS 
 - Driver ' License 
 - Driver ' licenses 
@@ -5957,10 +5957,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic # 
-- Driver'sLics # 
+- Driver'sLic# 
+- Driver'sLics# 
 - Secondola 
-- Driver'sLicenses # 
+- Driver'sLicenses# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5971,7 +5971,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
 
 - Abbreviazione dello stato (ad esempio, "NY") 
 - Nome dello stato (ad esempio, "New York")    

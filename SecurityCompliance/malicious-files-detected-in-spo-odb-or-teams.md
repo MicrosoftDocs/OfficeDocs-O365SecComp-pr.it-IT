@@ -3,7 +3,7 @@ title: Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDri
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Per informazioni su come eseguire le operazioni su tali file, vedere l'articolo relativo alla visualizzazione dei file dannosi rilevati in SharePoint, OneDrive o teams.
-ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 070640d9aa1d28cc1a49a9d8b88e5bf5780d3622
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259834"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077582"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams
 
@@ -31,7 +31,7 @@ Per eseguire le attività descritte in questo articolo, è necessario disporre d
 
 Per visualizzare lo stato e informazioni dettagliate sui file che sono stati rilevati da Office 365 ATP, è possibile utilizzare il rapporto sullo stato di protezione dalle minacce.
   
-1. nel [centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **segnala** \> **** \> **lo stato di protezione delle minacce**del Dashboard.
+1. Nel [Centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **segnala** \> **** \> **lo stato di protezione delle minacce**del dashboard.
     
 2. Nell'angolo in alto a destra del report, scegliere **Visualizza dettagli tabella**.
     
@@ -43,7 +43,7 @@ Per visualizzare lo stato e informazioni dettagliate sui file che sono stati ril
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Visualizzare ed eseguire azioni sui file in quarantena
 
-1. nel centro sicurezza &amp; e conformità di Office 365 scegliere quarantena di **revisione** \> **** della **gestione** \> delle minacce.
+1. Nel centro sicurezza &amp; e conformità di Office 365 scegliere quarantena di **Revisione** \> **** della **gestione** \> delle minacce.
     
 2. Nell'angolo in alto a sinistra, cambiare il filtro dalla **posta elettronica** al **contenuto**.
     

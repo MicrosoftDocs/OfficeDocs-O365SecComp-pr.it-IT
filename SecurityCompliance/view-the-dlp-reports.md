@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i report DLP in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi. controllare se si sta facendo una tendenza verso l'alto o verso il basso nel tempo; filtrare il report in modi diversi; e visualizzare ulteriori dettagli selezionando un punto su una linea del grafico.
-ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077302"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 
@@ -45,7 +45,7 @@ Dopo aver creato i criteri di prevenzione della perdita di dati (DLP), è necess
     
   Poiché i conteggi dei rapporti vengono aggregati in modo diverso, il rapporto criteri di ricerca è migliore per identificare le corrispondenze con regole specifiche e criteri DLP di ottimizzazione. Il rapporto sugli incidenti è migliore per identificare parti di contenuto specifiche che sono problematiche per i criteri DLP.
     
-- **False positive e sostituZioni DLP** Se il criterio DLP consente agli utenti di eseguire l'override o di segnalare un falso positivo, questo rapporto Visualizza il numero di istanze nel tempo. È possibile filtrare il report per data, percorso o criterio. È possibile utilizzare questo report per: 
+- **False positive e sostituzioni DLP** Se il criterio DLP consente agli utenti di eseguire l'override o di segnalare un falso positivo, questo rapporto Visualizza il numero di istanze nel tempo. È possibile filtrare il report per data, percorso o criterio. È possibile utilizzare questo report per: 
     
   - Ottimizzare o affinare i criteri DLP vedendo quali criteri incorrono in un numero elevato di falsi positivi.
     

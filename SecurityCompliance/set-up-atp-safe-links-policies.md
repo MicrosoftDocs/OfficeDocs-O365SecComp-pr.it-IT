@@ -3,7 +3,7 @@ title: Configurare i criteri dei collegamenti sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/26/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fd67562955e14bf5d94280ad6bc8afcd72bcbeb5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077232"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -53,7 +53,7 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
     |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
     |Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
-    Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Permissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Verificare che i client di Office siano configurati per l'utilizzo dell' [autenticazione moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (per la protezione dei collegamenti sicuri di ATP nei documenti di Office).
     

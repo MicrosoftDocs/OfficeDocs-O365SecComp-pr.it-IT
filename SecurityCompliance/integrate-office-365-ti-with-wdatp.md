@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 01/22/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrazione di Office 365 Advanced Threat Protection con Windows Defender Advanced Threat Protection per visualizzare informazioni più dettagliate sulla gestione delle minacce.
-ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077252"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrazione di Office 365 Advanced Threat Protection con Windows Defender Advanced Threat Protection
 
@@ -59,6 +59,6 @@ Integrazione di Office 365 Advanced Threat Protection con Windows Defender Advan
 
 [Indagine e risposta alle minacce di Office 365](office-365-ti.md)
   
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
   
 

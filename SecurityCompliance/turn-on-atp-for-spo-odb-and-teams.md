@@ -3,7 +3,7 @@ title: Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare ATP per SharePoint, OneDrive e teams, inclusa la procedura per impostare gli avvisi per i file rilevati.
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077242"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -36,11 +36,11 @@ Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un r
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare ATP per SharePoint, OneDrive e Microsoft Teams
 
-**Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Office 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivaZione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
+**Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Office 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
   
 1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account aziendale o dell'Istituto di istruzione.
     
-2. nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **allegati sicuri**per i **criteri** \> . <br/>![Nel centro sicurezza &amp; e conformità scegliere criteri di gestione \> delle minacce](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. Nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **allegati sicuri**per i **criteri** \> . <br/>![Nel centro sicurezza &amp; e conformità scegliere criteri di gestione \> delle minacce](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. Selezionare **attiva ATP per SharePoint, OneDrive e Microsoft teams**.<br/>![Abilitare Advanced Threat Protection per SharePoint Online, OneDrive for business e Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
@@ -64,7 +64,7 @@ Per ulteriori informazioni sull'esperienza utente quando un file è stato rileva
 
 Per ricevere una notifica quando un file in SharePoint Online, OneDrive for business o Microsoft teams è stato identificato come dannoso, è possibile impostare un avviso.
   
-1. nel [centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **avvisi** \> **gestione avvisi**.
+1. Nel [Centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **avvisi** \> **Gestione avvisi**.
     
 2. Scegliere **nuovi criteri di avviso**.
     
