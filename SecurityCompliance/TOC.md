@@ -197,8 +197,7 @@
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
 ### [Etichette di conservazione](labels.md)
 ### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Criteri di conservazione basati su eventi](event-driven-retention.md)
 ### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
 ## [Eliminare i dati](disposition-reviews.md)
