@@ -165,8 +165,7 @@
 ## Piano di archiviazione
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
 ### [Etichette di conservazione](labels.md)
-### 
-  [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 ### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 ### [Visualizzare i report di governance dei dati](view-the-data-governance-reports.md)
