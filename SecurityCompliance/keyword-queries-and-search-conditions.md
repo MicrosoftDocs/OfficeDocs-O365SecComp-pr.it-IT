@@ -3,7 +3,7 @@ title: Query delle parole chiave e condizioni di ricerca per ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulla posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance.  '
-ms.openlocfilehash: bb8c8090f8439bbd08b9c153b332c30d78ced8c8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254490"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152498"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -111,7 +111,7 @@ Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e ch
 |GivenName|Nome della proprietà **First Name** .|
 |HomeAddress|L'indirizzo in una delle proprietà dell'indirizzo di **casa** .|
 |HomePhone|Il numero di telefono in una delle proprietà del numero di telefono di **casa** .|
-|ImAddress|La proprietà dell'indirizzo di messaggistica istantanea, che in genere è un indirizzo di posta elettronica utilizzato per la messaggistica immediata.|
+|IMAddress|La proprietà dell'indirizzo di messaggistica istantanea, che in genere è un indirizzo di posta elettronica utilizzato per la messaggistica immediata.|
 |MiddleName|Nome nella proprietà **Middle** Name.|
 |MobilePhone|Il numero di telefono nella proprietà del numero di telefono **cellulare** .|
 |Nickname|Nome della proprietà **Nickname** .|
@@ -130,7 +130,7 @@ Nella tabella seguente sono elencate le proprietà dei contatti indicizzate e ch
 Per ulteriori informazioni sulla creazione di query tramite `SensitiveType` la proprietà, vedere [form a query to find sensitive data stored in sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
 > [!NOTE]
-> Non è possibile utilizzare i tipi di dati `SensitiveType` riservati e la proprietà Search per cercare i dati riservati in-Rest nelle cassette postAli di Exchange Online. Tuttavia, è possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per proteggere i dati sensibili del messaggio di posta elettronica in transito. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md) e [cercare e trovare i dati personali](search-for-and-find-personal-data.md).
+> Non è possibile utilizzare i tipi di dati `SensitiveType` riservati e la proprietà Search per cercare i dati riservati in-Rest nelle cassette postali di Exchange Online. Tuttavia, è possibile utilizzare i criteri di prevenzione della perdita di dati (DLP) per proteggere i dati sensibili del messaggio di posta elettronica in transito. Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md) e [cercare e trovare i dati personali](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operatori di ricerca
 
@@ -347,9 +347,9 @@ Che cosa viene considerato come contenuto condiviso con persone esterne all'orga
 
 Mentre la `ViewableByExternalUsers` proprietà rappresenta lo stato del fatto che un documento o un sito sia condiviso con utenti esterni, sono presenti alcune avvertenze su ciò che questa proprietà fa e non riflette. Negli scenari seguenti, il valore della `ViewableByExternalUsers` proprietà non verrà aggiornato e i risultati di una query di ricerca del contenuto che utilizza questa proprietà potrebbero non essere corretti. 
   
-- Modifiche apPortate ai criteri di condivisione, ad esempio la disattivazione della condivisione esterna per un sito o per l'organizzazione. La proprietà continuerà a visualizzare documenti condivisi in precedenza come accessibili esternamente anche se l'accesso esterno potrebbe essere stato revocato.
+- Modifiche apportate ai criteri di condivisione, ad esempio la disattivazione della condivisione esterna per un sito o per l'organizzazione. La proprietà continuerà a visualizzare documenti condivisi in precedenza come accessibili esternamente anche se l'accesso esterno potrebbe essere stato revocato.
     
-- Modifiche apPortate all'appartenenza a un gruppo, ad esempio l'aggiunta o la rimozione di utenti esterni a gruppi di Office 365 o gruppi di sicurezza Office 365. La proprietà non verrà aggiornata automaticamente per gli elementi a cui il gruppo ha accesso.
+- Modifiche apportate all'appartenenza a un gruppo, ad esempio l'aggiunta o la rimozione di utenti esterni a gruppi di Office 365 o gruppi di sicurezza Office 365. La proprietà non verrà aggiornata automaticamente per gli elementi a cui il gruppo ha accesso.
     
 - Invio di inviti di condivisione a utenti esterni in cui il destinatario non ha accettato l'invito e pertanto non ha ancora accesso al contenuto.
     

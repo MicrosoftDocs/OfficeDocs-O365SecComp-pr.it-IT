@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo di Office 365 per gli eventi che vengono registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260964"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158808"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di attività di eDiscovery nel registro di controllo di Office 365
 
@@ -98,17 +98,17 @@ Nella tabella seguente vengono descritte le attività relative alla ricerca del 
 |Esportazione di ricerca contenuto scaricata  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un utente ha scaricato i risultati di una ricerca di contenuto nel proprio computer locale. Si noti che è necessario avviare un' **esportazione iniziale dell'attività di ricerca contenuto** prima di poter scaricare i risultati della ricerca.  <br/> |
 |Risultati visualizzati in anteprima della ricerca contenuto  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un utente ha visualizzato in anteprima i risultati di una ricerca di contenuto.  <br/> |
 |Risultati della ricerca contenuto eliminati  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utente ha eliminato i risultati di una ricerca di contenuto eseguendo il comando **New-ComplianceSearchAction-Purge** .  <br/> |
-|Analisi della ricerca di contenuto riMossa  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata una ricerca di contenuto per preparare l'azione (per preparare i risultati della ricerca per Office 365 Advanced eDiscovery). Se l'azione di preparazione ha meno di due settimane, i risultati della ricerca preparati per Advanced eDiscovery sono stati eliminati dall'area di archiviazione di Microsoft Azure. Se l'azione di preparazione è antecedente a 2 settimane, questo evento indica che è stata eliminata solo l'azione di preparazione corrispondente.  <br/> |
-|Esportazione di ricerca contenuto riMossa  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Un'azione di esportazione ricerca contenuto è stata eliminata. Se l'operazione di esportazione ha meno di due settimane, i risultati della ricerca caricati nell'area di archiviazione di Microsoft Azure sono stati eliminati. Se l'azione di esportazione è antecedente a 2 settimane, questo evento indica che è stata eliminata solo l'azione di esportazione corrispondente.  <br/> |
+|Analisi della ricerca di contenuto rimossa  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata una ricerca di contenuto per preparare l'azione (per preparare i risultati della ricerca per Office 365 Advanced eDiscovery). Se l'azione di preparazione ha meno di due settimane, i risultati della ricerca preparati per Advanced eDiscovery sono stati eliminati dall'area di archiviazione di Microsoft Azure. Se l'azione di preparazione è antecedente a 2 settimane, questo evento indica che è stata eliminata solo l'azione di preparazione corrispondente.  <br/> |
+|Esportazione di ricerca contenuto rimossa  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Un'azione di esportazione ricerca contenuto è stata eliminata. Se l'operazione di esportazione ha meno di due settimane, i risultati della ricerca caricati nell'area di archiviazione di Microsoft Azure sono stati eliminati. Se l'azione di esportazione è antecedente a 2 settimane, questo evento indica che è stata eliminata solo l'azione di esportazione corrispondente.  <br/> |
 |Membri rimossi dal caso di eDiscovery  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Un utente è stato rimosso come membro di un caso di eDiscovery.  <br/> |
 |Risultati dell'anteprima rimossi della ricerca contenuto  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata un'azione anteprima ricerca contenuto.  <br/> |
-|Azione di eliminazione riMossa eseguita nella ricerca contenuto  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata un'azione di eliminazione della ricerca del contenuto.  <br/> |
+|Azione di eliminazione rimossa eseguita nella ricerca contenuto  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata un'azione di eliminazione della ricerca del contenuto.  <br/> |
 |Report di ricerca rimosso  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |È stata eliminata un'azione del rapporto di ricerca di contenuto esportazione.  <br/> |
 |Analisi introduttiva della ricerca contenuto  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |I risultati di una ricerca di contenuto sono stati preparati per l'analisi in Advanced eDiscovery.  <br/> |
 |Ricerca di contenuto avviata  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |È stata avviata una ricerca di contenuto. Quando si crea o si modifica una ricerca di contenuto utilizzando l'interfaccia di amministrazione di & Compliance Center di sicurezza, la ricerca viene avviata automaticamente. Se si crea o si modifica una ricerca utilizzando il cmdlet **New-ComplianceSearch** o **set-ComplianceSearch** , è necessario eseguire il cmdlet **Start-ComplianceSearch** per avviare la ricerca.  <br/> |
 |Inizio esportazione della ricerca contenuto  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Un utente ha esportato i risultati di una ricerca di contenuto.  <br/> |
 |Report di esportazione avviato  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Un utente ha esportato un rapporto di ricerca contenuto.  <br/> |
-|Ricerca di contenuto interRotta  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un utente ha interrotto una ricerca di contenuto.  <br/> |
+|Ricerca di contenuto interrotta  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un utente ha interrotto una ricerca di contenuto.  <br/> |
   
 ## <a name="ediscovery-cmdlet-activities"></a>attività del cmdlet eDiscovery
 
@@ -137,7 +137,7 @@ Come indicato in precedenza, sono necessarie fino a 24 ore prima che le attivit�
 |Ricerca di contenuto eliminata  <br/> |[Remove-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517936) <br/> |È stata eliminata una ricerca di contenuto esistente.  <br/> |
 |Ricerca di contenuto modificata  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |È stata modificata una ricerca di contenuto esistente. Le modifiche possono includere l'aggiunta o la rimozione di percorsi di contenuto che vengono ricercati e la modifica della query di ricerca.  <br/> |
 |Ricerca di contenuto avviata  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |È stata avviata una ricerca di contenuto. Quando si crea o si modifica una ricerca di contenuto utilizzando l'interfaccia di amministrazione di & Compliance Center di sicurezza, la ricerca viene avviata automaticamente. Se si crea o si modifica una ricerca utilizzando il cmdlet **New-ComplianceSearch** o **set-ComplianceSearch** , è necessario eseguire il cmdlet **Start-ComplianceSearch** per avviare la ricerca.  <br/> |
-|Ricerca di contenuto interRotta  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |Una ricerca di contenuto in esecuzione è stata interrotta.  <br/> |
+|Ricerca di contenuto interrotta  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |Una ricerca di contenuto in esecuzione è stata interrotta.  <br/> |
 |Azione di ricerca contenuto creata  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |È stata creata un'azione di ricerca del contenuto. Le azioni di ricerca contenuto includono l'anteprima dei risultati della ricerca, l'esportazione dei risultati di ricerca, la preparazione dei risultati della ricerca per l'analisi in Office 365 Advanced eDiscovery e l'eliminazione definitiva degli elementi che soddisfano i criteri di ricerca di una ricerca di contenuto.  <br/> |
 |Azione di ricerca contenuto eliminata  <br/> |[Remove-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |È stata eliminata un'azione di ricerca del contenuto.  <br/> |
 |Filtro delle autorizzazioni di ricerca creato  <br/> |[New-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |È stato creato un filtro delle autorizzazioni di ricerca.  <br/> |
@@ -184,5 +184,5 @@ Nella tabella seguente vengono descritte le proprietà incluse quando si fa clic
 |UserKey  <br/> |ID alternativo per l'utente identificato nella proprietà UserId. Per le attività di eDiscovery, il valore di questa proprietà è in genere identico a quello della proprietà UserId.  <br/> |
 |UserServicePlan  <br/> |La sottoscrizione di Office 365 utilizzata dall'organizzazione. Per le attività di eDiscovery, questa proprietà è in genere vuota.  <br/> |
 |UserType  <br/> |Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente.  <br/> 0 un utente normale. 2 un amministratore dell'organizzazione di Office 365. 3 un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. 4 un account di sistema. 5 un'applicazione. 6 un'entità di servizio. |
-|Versione  <br/> |Indica il numero di versione dell'attività (identificata dalla proprietà Operation) registrata.  <br/> |
+|Version  <br/> |Indica il numero di versione dell'attività (identificata dalla proprietà Operation) registrata.  <br/> |
 |Carico di lavoro  <br/> |Il servizio Office 365 in cui si è verificata l'attività. Per le attività di eDiscovery, il valore è **SecurityComplianceCenter**.  <br/> |

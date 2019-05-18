@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/2/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
-ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244029"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152338"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
@@ -50,7 +50,7 @@ ms.locfileid: "32244029"
     
 2. Sulla barra multifunzione fare clic sulla scheda **raccolta** e quindi su **Impostazioni raccolta**. Se si utilizza un elenco, fare clic sulla scheda **elenco** e quindi su **Impostazioni elenco**.
     
-    ![Pulsanti delle impostazioni della raccolta di SharePoint sulla barra multiFunzione](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![Pulsanti delle impostazioni della raccolta di SharePoint sulla barra multifunzione](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. In **autorizzazioni e gestione**fare clic su **Information Rights Management**. Se il collegamento Information Rights Management non è visualizzato, IRM potrebbe non essere abilitato per il sito. Contattare l'amministratore del server per verificare se è possibile abilitare IRM per il sito. Il collegamento Information Rights Management non è visualizzato per le raccolte immagini.
     

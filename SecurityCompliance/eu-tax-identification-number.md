@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255524"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152958"
 ---
 # <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
@@ -82,9 +82,9 @@ numero di registrazione fiscale
   
 tax id
   
-St.Nr.
+st.nr.
   
-Steuernummer
+steuernummer
   
 ## <a name="belgium"></a>Belgio
 
@@ -195,9 +195,9 @@ bucn
   
 numero civile uniforme
   
-bucn #
+bucn#
   
-uniformcivilnumber #
+uniformcivilnumber#
   
 ID civile uniforme
   
@@ -207,11 +207,11 @@ EGN
   
 numero civile uniforme bulgaro
   
-uniformcivilno #
+uniformcivilno#
   
 EGN
   
-униформ граждански Номер
+униформ граждански номер
   
 ID униформ
   
@@ -339,11 +339,11 @@ TIC
   
 TIC
   
-Αριθμός φορολογικού Μητρώου
+αριθμός φορολογικού μητρώου
   
 φορολογική ταυτότητα
   
-Κωδικός φορολογικού Μητρώου
+κωδικός φορολογικού μητρώου
   
 ## <a name="czech-republic"></a>Repubblica Ceca
 
@@ -586,7 +586,7 @@ numero di identità
   
 numero di identificazione nazionale finlandese
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -610,7 +610,7 @@ numero identiteetti
   
 Suomen Kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
@@ -726,9 +726,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -740,7 +740,7 @@ codice di identificazione fiscale
   
 codice fiscale n.
   
-Steuernummer
+steuernummer
   
 ID Steuer
   
@@ -800,19 +800,19 @@ AFM
   
 latta
   
-taxidno #
+taxidno#
   
-taxregistryno #
+taxregistryno#
   
-Αριθμός φορολογικού Μητρώου
+αριθμός φορολογικού μητρώου
   
 aφμ
   
-aφμ Αριθμός
+aφμ αριθμός
   
-φορολογικού Μητρώου Νο.
+φορολογικού μητρώου νο.
   
-τον αριθμό φορολογικού Μητρώου
+τον αριθμό φορολογικού μητρώου
   
 ## <a name="hungary"></a>Ungheria
 
@@ -877,19 +877,19 @@ autorità tributaria No
   
 numero dell'identità fiscale dell'ID fiscale
   
-taxidnumber #
+taxidnumber#
   
 latta
   
-hungatiantin #
+hungatiantin#
   
 identificazione fiscale No
   
-taxidno #
+taxidno#
   
 adóazonosító szám
   
-Adószám
+adószám
   
 adóhatóság szám
   
@@ -950,15 +950,15 @@ servizio personale No
   
 servizio PPS No
   
-ppsno #
+ppsno#
   
 Irish PPS No
   
-publicserviceno #
+publicserviceno#
   
 numero di servizio pubblico personale
   
-uimhir phearsanta Seirbhíse poiblí
+uimhir phearsanta seirbhíse poiblí
   
 PPS uimh
   
@@ -1025,9 +1025,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1092,9 +1092,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1161,7 +1161,7 @@ tassa no.
   
 tax no #
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1230,9 +1230,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1244,7 +1244,7 @@ codice di identificazione fiscale
   
 codice fiscale n.
   
-Steuernummer
+steuernummer
   
 ID Steuer
   
@@ -1254,19 +1254,19 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Formato
 
-Per cittadini malTesi: 7 cifre e una lettera nel modello specificato
+Per cittadini maltesi: 7 cifre e una lettera nel modello specificato
   
-Nazionali non malTesi e soggetti maltesi: 9 cifre
+Nazionali non maltesi e soggetti maltesi: 9 cifre
   
 ### <a name="pattern"></a>Modello
 
-Cittadini malTesi: 7 cifre e una lettera
+Cittadini maltesi: 7 cifre e una lettera
   
 -  Sette cifre 
     
 - Una lettera (senza distinzione tra maiuscole e minuscole)
     
-Nazionali non malTesi e soggetti maltesi: 9 cifre
+Nazionali non maltesi e soggetti maltesi: 9 cifre
   
 -  9 cifre 
     
@@ -1307,9 +1307,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1465,9 +1465,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1491,7 +1491,7 @@ numero di partita IVA
   
 IVA No.
   
-vatno #
+vatno#
   
 ID partita IVA
   
@@ -1501,7 +1501,7 @@ numero Identyfikacji Podatkowej
   
 Polski numero Identyfikacji Podatkowej
   
-numeridentyfikacjipodatkowej #
+numeridentyfikacjipodatkowej#
   
 ## <a name="portugal"></a>Portogallo
 
@@ -1550,9 +1550,9 @@ codice fiscale
   
 tassa no.
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1614,7 +1614,7 @@ codice fiscale
   
 taxid #
   
-taxno #
+taxno#
   
 ID-ul taxei
   
@@ -1678,7 +1678,7 @@ codice fiscale
   
 taxid #
   
-taxno #
+taxno#
   
 daňové identifikačné číslo
   
@@ -1751,11 +1751,11 @@ codice fiscale
   
 taxid #
   
-taxno #
+taxno#
   
 identifikacijska številka davka
   
-Davčna številka
+davčna številka
   
 številka davčne datoteke
   
@@ -1864,13 +1864,13 @@ codice fiscale
   
 taxid #
   
-taxno #
+taxno#
   
-cifid #
+cifid#
   
-spanishcifid #
+spanishcifid#
   
-spanishcifno #
+spanishcifno#
   
 número de contribuyente
   
@@ -1880,7 +1880,7 @@ número de Identificación Fiscal
   
 número CIF
   
-cifnúmero #
+cifnúmero#
   
 ## <a name="sweden"></a>Svezia
 

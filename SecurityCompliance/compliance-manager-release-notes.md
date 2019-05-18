@@ -3,7 +3,7 @@ title: Note sulla versione di Microsoft Compliance Manager
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 5e18445e3f9ad2848f18174788ec6dd40bc4a178
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473116"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152068"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 
@@ -27,16 +27,16 @@ L'anteprima pubblica di Compliance Manager fornisce l'accesso tempestivo alle fu
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Novità di Compliance Manager (anteprima)
 
-- **Integrazione con Microsoft Secure Score:** Compliance Manager supporta l'integrazione con [Microsoft Secure Score](microsoft-secure-score.md) tramite la mappaTura delle azioni gestite dai clienti a più di 50 operazioni di valutazione sicure. Quando si completa un'azione mappata in Punteggio sicuro, l'azione corrispondente di Compliance Manager viene aggiornata automaticamente.
+- **Integrazione con Microsoft Secure Score:** Compliance Manager supporta l'integrazione con [Microsoft Secure Score](microsoft-secure-score.md) tramite la mappatura delle azioni gestite dai clienti a più di 50 operazioni di valutazione sicure. Quando si completa un'azione mappata in Secure score, l'azione corrispondente di Compliance Manager viene aggiornata automaticamente.
 
-- **Importare valutazioni personalizzate:** Oltre alle valutazioni predefinite, Compliance Manager ora supporta l'importazione di modelli personalizzati, consentendo di creare valutazioni personalizzate per qualsiasi prodotto o servizio, nonché per qualsiasi norma o regolamentazione.
+- **Importare valutazioni personalizzate:** Oltre alle valutazioni predefinite, Compliance Manager ora supporta l'importazione di modelli personalizzati. È possibile creare valutazioni personalizzate per qualsiasi prodotto o servizio e per qualsiasi norma o regolamento.
 
 - **Elementi Actions:** Gli elementi azione sono ora singoli elementi e molti includono la raccolta di telemetria dall'API Microsoft Secure Score Graph. Se possibile, le raccomandazioni per l'azione tecnica sono ora collegate alla pagina di configurazione applicabile nel servizio Office 365.
 
 - **Gestione tenant:** Nuova interfaccia per la gestione dei nuovi elementi dati in Compliance Manager (Preview):
     - **Dimensioni:** Consente di visualizzare, aggiungere e personalizzare i metadati per i modelli, le valutazioni e gli elementi di azione che consentono di creare pivot personalizzati per i filtri.
     - **Proprietari:** Specificare un proprietario per ogni elemento di azione.
-    - **Azioni dei clienti:** Gestire l'elenco completo degli elementi delle azioni inclusi in Compliance Manager (Preview) e abilitare/disabilitare il monitoraggio del Punteggio sicuro per gli elementi di azione che sono integrati con Secure score.
+    - **Azioni dei clienti:** Gestire l'elenco completo degli elementi delle azioni inclusi in Compliance Manager (Preview) e abilitare/disabilitare il monitoraggio del Punteggio sicuro per gli elementi azione integrati con Secure score.
 
 - **Punteggio di conformità aggiornato**: la metodologia è stata modificata per supportare la sincronizzazione con Microsoft Secure score. Il sistema di Punteggio rimuove i crediti di controllo gestiti da Microsoft e si concentra esclusivamente sul completamento dei controlli gestiti dal cliente.
 
@@ -46,7 +46,12 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 
 ### <a name="compliance-score"></a>Punteggio di conformità
 
-- Quando gli elementi azione sono contrassegnati come **non nell'ambito**, il punteggio assegnato all'elemento azione non viene escluso dal calcolo del Punteggio di conformità. Gli elementi azione contrassegnati **non nell'ambito** non devono aumentare il Punteggio di conformità.
+- Per gli elementi azione contrassegnati come **non nell'ambito**, il punteggio assegnato all'elemento azione non è escluso dal calcolo del Punteggio di conformità. Gli elementi azione contrassegnati **non nell'ambito** non aumentano il Punteggio di conformità.
+
+### <a name="secure-score"></a>Secure Score
+
+- I risultati del Punteggio sicuro non sono disponibili per alcuni elementi di azioni in determinate sottoscrizioni di Microsoft 365 e Office 365. Il risultato del Punteggio sicuro è' non è stato possibile rilevare ' in questi casi.
+- A volte vengono restituiti risultati di Punteggio sicuro per i criteri corrispondenti e gli elementi di azione non completati.
 
 ### <a name="microsoft-managed-controls"></a>Controlli gestiti da Microsoft
 
@@ -85,3 +90,7 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 ### <a name="session-timeout"></a>Timeout sessione
 
 - Quando si verifica un timeout di una sessione, potrebbe essere visualizzato un errore "qualcosa è andato storto". Per risolvere il caso, passare a [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) e accedere di nuovo.
+ 
+### <a name="language-support"></a>Supporto lingue
+
+- Tutte le lingue non sono supportate per tutte le pagine Web. Se la lingua locale non è supportata, visualizzarla in inglese (Stati Uniti).

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni dei criteri di protezione da posta indesiderata
-ms.openlocfilehash: 253ef10ac98b10377252a7a43fa306dd5a0ea90a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 64048e2621082edae21285df8b8fd1bcbd2e7c4a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242514"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152328"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
 
@@ -37,7 +37,7 @@ Per i clienti che dispongono di Office 365 Enterprise E5 o che hanno acquistato 
  **Filtro posta**indesiderata: Office 365 verifica la coerenza delle caratteristiche del messaggio con la posta indesiderata utilizzando il filtro posta È possibile modificare le azioni da intraprendere per i messaggi identificati come posta indesiderata e scegliere se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche. È inoltre possibile abilitare le opzioni avanzate per il filtro della posta indesiderata se si desidera perseguire un approccio aggressivo al filtro posta indesiderata. Inoltre, è possibile configurare le notifiche di posta indesiderata dell'utente finale per informare gli utenti quando i messaggi destinati ad essi sono stati inviati alla quarantena. (L'invio di messaggi alla quarantena è una delle azioni configurabili). Da queste notifiche, gli utenti finali possono rilasciare falsi positivi e segnalarli a Microsoft per l'analisi. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=617147). Per impedire la posta indesiderata in Office 365, utilizzare il filtro posta indesiderata, se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
   
 > [!NOTE]
-> Per i clienti autonomi di EOP: per impostazione predefinita, i filtri per la posta indesiderata di EOP inviano messaggi di posta indesiderata alla cartella posta inDesiderata Tuttavia, per assicurarsi che il **messaggio di spostamento all'azione della cartella posta** indesiderata funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](https://technet.microsoft.com/library/jj837173%28v=exchg.150%29.aspx). 
+> Per i clienti autonomi di EOP: per impostazione predefinita, i filtri per la posta indesiderata di EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata Tuttavia, per assicurarsi che il **messaggio di spostamento all'azione della cartella posta** indesiderata funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](https://technet.microsoft.com/library/jj837173%28v=exchg.150%29.aspx). 
   
 ## <a name="extra-information-if-you-receive-too-much-spam-in-office-365"></a>Informazioni aggiuntive se si riceve troppa posta indesiderata in Office 365
 
@@ -77,7 +77,7 @@ Se si è preoccupati per la posta indesiderata, il phishing e lo spoofing in Off
   
 [Come configurare il filtro di posta indesiderata di Office 365 per bloccare i messaggi di posta indesiderata](reduce-spam-email.md)
   
-[Qual è la differenza tra posta elettronica inDesiderata e posta elettronica in blocco?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
+[Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   
 [Intestazioni messaggi della protezione da posta indesiderata](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)
   

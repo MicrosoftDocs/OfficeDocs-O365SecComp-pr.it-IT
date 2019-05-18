@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d06dde60ae75cfea1bf1d79f445b613d20a76363
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e374509dccd235ef689609acc1c4f99db6594d4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257674"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150708"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Gestire gli utenti che interessano le indagini sui dati (anteprima)
 
@@ -28,7 +28,7 @@ Le indagini sui dati coinvolgono spesso persone di interesse. In genere, si trat
 
 ## <a name="add-people-of-interest"></a>Aggiungere persone di interesse
 
-Nella scheda **utenti di interesse** è possibile aggiungere persone di interesse e individuare le origini dati, ad esempio le cassette postAli di Exchange o il sito di OneDrive for business, che è possibile utilizzare per l'ambito della ricerca. Quando gli utenti sono interessati, le ricerche sono più performanti e accurate perché lo strumento rielabora tutti i dati non indicizzati, ad esempio immagini o tipi di file non supportati. È inoltre possibile visualizzare le informazioni di contatto, le informazioni sulla posizione e i registri delle attività che è possibile utilizzare per avviare le comunicazioni o approfondire le proprie attività. 
+Nella scheda **utenti di interesse** è possibile aggiungere persone di interesse e individuare le origini dati, ad esempio le cassette postali di Exchange o il sito di OneDrive for business, che è possibile utilizzare per l'ambito della ricerca. Quando gli utenti sono interessati, le ricerche sono più performanti e accurate perché lo strumento rielabora tutti i dati non indicizzati, ad esempio immagini o tipi di file non supportati. È inoltre possibile visualizzare le informazioni di contatto, le informazioni sulla posizione e i registri delle attività che è possibile utilizzare per avviare le comunicazioni o approfondire le proprie attività. 
 
 Per aggiungere persone di interesse a un'indagine:
 
@@ -83,7 +83,7 @@ Nella scheda **persone di interesse** , fare clic su una persona che si Adeed. I
 - Stato di elaborazione
 
   - **Stato**di indicizzazione: stato del Deep indicizzazione delle origini dati
-  - InDicizzazione dell' **Ultimo aggiornamento**: timestamp del momento in cui il processo di indicizzazione Deep è stato attivato.
+  - Indicizzazione dell' **Ultimo aggiornamento**: timestamp del momento in cui il processo di indicizzazione Deep è stato attivato.
   - **Origini dati**: Visualizza il numero di cassette postali, siti e team mappati alla persona
 
 - Indice di aggiornamento

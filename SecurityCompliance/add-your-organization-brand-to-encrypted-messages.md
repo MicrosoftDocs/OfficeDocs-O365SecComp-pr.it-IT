@@ -3,43 +3,55 @@ title: Aggiungere il marchio dell'organizzazione ai messaggi crittografati
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
+- Strat_O365_IP
 - M365-security-compliance
-description: In qualità di amministratore di Exchange, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
-ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In qualità di amministratore globale di Office 365, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
+ms.openlocfilehash: 6b51aefc10c0070749fcf4bc8c2d56c7ff7a3ef3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242654"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152468"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 
 In qualità di amministratore di Exchange Online o Exchange Online Protection, è possibile applicare il marchio dell'azienda per personalizzare l'aspetto dei messaggi di posta elettronica di crittografia messaggi di Office 365 dell'organizzazione e il contenuto del portale di crittografia. Utilizzando i cmdlet Get-OMEConfiguration e set-OMEConfiguration di Windows PowerShell, è possibile personalizzare i seguenti aspetti dell'esperienza di visualizzazione per i destinatari dei messaggi di posta elettronica crittografati:
   
 - Testo introduttivo del messaggio di posta elettronica contenente il messaggio crittografato
+
 - Testo della dichiarazione di non responsabilità del messaggio di posta elettronica contenente il messaggio crittografato
+
 - Testo visualizzato nel portale OME
+
 - Logo visualizzato nel messaggio di posta elettronica e nel portale OME
+
 - Colore di sfondo nel messaggio di posta elettronica e nel portale OME
 
 È anche possibile ripristinare l'aspetto predefinito in qualsiasi momento.
 
-Se si desidera un maggiore controllo, è possibile creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Utilizzando questi modelli, è possibile controllare più solo l'aspetto dei messaggi di posta elettronica, ma anche controllare le parti dell'esperienza dell'utente finale. Ad esempio, è possibile specificare se i destinatari di posta elettronica a cui è applicato il modello e che utilizzano Google, Yahoo e gli account Microsoft possono utilizzare questi account per accedere al portale di crittografia dei messaggi di Office 365. È possibile utilizzare i modelli per soddisfare diversi casi di utilizzo, ad esempio:
+ Se si desidera un maggiore controllo, è possibile utilizzare la crittografia avanzata dei messaggi di Office 365 e creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Utilizzando questi modelli, è possibile controllare più solo l'aspetto dei messaggi di posta elettronica, ma anche controllare le parti dell'esperienza dell'utente finale. Ad esempio, è possibile specificare se i destinatari di posta elettronica a cui è applicato il modello e che utilizzano Google, Yahoo e gli account Microsoft possono utilizzare questi account per accedere al portale di crittografia dei messaggi di Office 365. È possibile utilizzare i modelli per soddisfare diversi casi di utilizzo, ad esempio:
 
 - Modelli per ogni reparto, ad esempio finanza, vendite e così via.
+
 - Modelli per prodotti diversi
+
 - Modelli per aree geografiche o paesi diversi
 
-Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettronica crittografati utilizzando le regole del flusso di messaggi di Exchange. È possibile revocare tutti i messaggi di marca tramite questi modelli.
+- Se si desidera consentire la revoca di messaggi di posta elettronica
+
+- Se si desidera che i messaggi di posta elettronica inviati a destinatari esterni scadano dopo un determinato numero di giorni.
+
+Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettronica crittografati utilizzando le regole del flusso di messaggi di Exchange. Se si dispone della crittografia avanzata dei messaggi di Office 365, è possibile revocare tutti i messaggi di posta elettronica che sono stati creati utilizzando questi modelli.
   
 ||
 |:-----|
@@ -59,11 +71,13 @@ Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettro
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
+
    For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
    ```
+
 3. Definire le personalizzazioni per il modello appena definito utilizzando il cmdlet Set-OMEConfiguration come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) oppure utilizzare la seguente tabella per istruzioni.
 
 |**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
@@ -99,7 +113,8 @@ Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettro
 Dopo aver creato un modello di branding, è possibile creare regole del flusso di posta di Exchange per applicare il marchio personalizzato in base a determinate condizioni. Una regola di questo tipo applicherà il marchio personalizzato negli scenari seguenti:
 
 - Se il messaggio di posta elettronica è stato crittografato manualmente dall'utente finale dal client Outlook o Outlook sul Web (in precedenza noto come Outlook Web App)
-- Se il messaggio di posta elettronica è stato crittografato automaticamente da una regola del flusso di posta di Exchange o da un criterio di prevenzione della perdita
+
+- Se il messaggio di posta elettronica è stato crittografato automaticamente da una regola del flusso di posta di Exchange 365 o da un criterio di prevenzione della perdita
 
 Per informazioni su come creare una regola del flusso di posta di Exchange che applica la crittografia, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -120,6 +135,7 @@ Per informazioni su come creare una regola del flusso di posta di Exchange che a
      - Messaggi di posta elettronica crittografati inviati a un dominio specifico
 
 7. Da **procedere come segue**, selezionare **modifica la sicurezza** > dei messaggi**applicare il marchio personalizzato ai messaggi ome**. Successivamente, dal menu a discesa, selezionare un modello di branding tra quelli creati.
+
 8. Optional Se si desidera che la regola del flusso di posta applichi anche la crittografia oltre al marchio personalizzato, **fare quanto segue**, selezionare **modifica sicurezza messaggio** e quindi fare clic su **applica crittografia messaggi di Office 365 e protezione dei diritti**. Selezionare un modello RMS nell'elenco, scegliere **Salva**e quindi fare clic su **OK**.
   
      L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'utilizzo da parte di Office 365. Se l'elenco è vuoto, verificare di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in [configurare le nuove funzionalità di crittografia dei messaggi di office 365](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere Configuring [and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione **** non inoltrare, vedere non [inoltrare l'opzione per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **solo crittografia** , vedere [opzione di crittografia solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).

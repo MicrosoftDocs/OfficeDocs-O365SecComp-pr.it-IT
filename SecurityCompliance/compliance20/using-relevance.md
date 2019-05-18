@@ -1,10 +1,10 @@
 ---
-title: Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery (Preview)
+title: Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ae0546edbc9cb95808ba1843f835eab7dc460f0b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242122"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151498"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery (Preview)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery
 
-In Advanced eDiscovery (Preview), il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Per utilizzare il flusso di lavoro pertinenza, passare a gestione working set all'interno di un working set e fare clic su Mostra pertinenza. Prima di avviare il flusso di lavoro, è necessario eseguire un paio di passaggi:
-- Processo: ogni set di carico aggiunto al working set verrà visualizzato come "contenitore" qui. È necessario elaborare questi documenti prima di poterli aggiungere al modulo pertinenza. Questo è anche il luogo in cui è possibile contrassegnarli come Seed o come precontrassegnati per un problema specifico.
+In Advanced eDiscovery, il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Per utilizzare il flusso di lavoro pertinenza, andare a Manage Review set all'interno di un set di revisione e fare clic su Mostra pertinenza. Prima di avviare il flusso di lavoro, è necessario eseguire un paio di passaggi:
+
+- Processo: ogni set di carico aggiunto al set di revisione verrà visualizzato come un "contenitore" qui. È necessario elaborare questi documenti prima di poterli aggiungere al modulo pertinenza. Questo è anche il luogo in cui è possibile contrassegnarli come Seed o come precontrassegnati per un problema specifico.
+
 - Aggiungi a pertinenza: in \> carichi di pertinenza, è possibile aggiungere documenti elaborati alla pertinenza per renderli disponibili per la formazione.
 
 Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
@@ -39,7 +41,7 @@ Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
     
 - **Cicli di training e Tracking**
     
-  - **Tag**: Advanced eDiscovery (Preview) vengono fornite informazioni sui criteri di pertinenza specifici per ogni problema in base alla revisione iterativa dell'esperto e al tagging di singoli file.
+  - **Tag**: Advanced eDiscovery apprende criteri di pertinenza specifici per ogni problema in base alla revisione iterativa dell'esperto e al tagging di singoli file.
     
   - **Track**: calcola e Visualizza i risultati intermedi della formazione relativa alla pertinenza monitorando la validità statistica del processo. 
     
@@ -47,9 +49,9 @@ Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
     
 - **Decidere**: i risultati dell'analisi applicata all'intero caso vengono visualizzati dopo il calcolo del batch e vengono visualizzati i dati utilizzati per definire le decisioni relative alla revisione dei documenti.
     
-- **Test**: i risultati possono essere testati per verificare la validità e l'efficacia dell'elaborazione avanzata di eDiscovery (Preview).
+- **Test**: i risultati possono essere testati per verificare la validità e l'efficacia dell'elaborazione avanzata di eDiscovery.
 
-- **Ricerca**: dopo aver completato il flusso di lavoro della pertinenza, è possibile utilizzare l'output, ad esempio il percentile di un documento, per il problema, quando si esegue una query all'interno del working set.
+- **Ricerca**: dopo aver completato il flusso di lavoro della pertinenza, è possibile utilizzare l'output, ad esempio leggere il percentile di un documento per il problema, quando si esegue una query all'interno del set di revisione.
     
 ## <a name="guidelines-for-relevance-training-and-review"></a>Linee guida per la formazione e la revisione della pertinenza
 
@@ -67,7 +69,7 @@ Di seguito è riportata una panoramica delle linee guida per la formazione e la 
      
   - Ignorare il testo applicato alla pertinenza verrà rimosso nel contenuto del file visualizzato nella visualizzazione di testo in pertinenza. Se i valori per il testo Ignora sono stati definiti dopo la formazione di pertinenza già avviata, il nuovo testo ignorato verrà applicato ai file di esempio creati dal punto in cui è stata definita. La funzionalità Ignora testo deve essere utilizzata con cautela, in quanto il relativo utilizzo può ridurre le prestazioni dell'analisi dei file
     
-  - Utilizzare l'opzione **Ignora Tag** solo se necessario. Advanced eDiscovery (Preview) non si allena in base ai file ignorati. In valutazione, se è difficile stabilire se un file è pertinente, è consigliabile contrassegnarlo come pertinente (R) o non pertinente (NR) quando possibile anziché selezionando **Ignora**. Quando Advanced eDiscovery (Preview) valuta la formazione, è possibile vedere come sono stati elaborati questi tipi di file.
+  - Utilizzare l'opzione **Ignora Tag** solo se necessario. Advanced eDiscovery non si allena in base ai file ignorati. In valutazione, se è difficile stabilire se un file è pertinente, è consigliabile contrassegnarlo come pertinente (R) o non pertinente (NR) quando possibile anziché selezionando **Ignora**. Quando Advanced eDiscovery valuta la formazione, può essere visto bene come sono stati elaborati questi tipi di file.
     
   - Anche i file con una quantità minima di testo estratto devono essere contrassegnati in formazione come R/NR, anziché come "Skip", quando possibile. 
     
@@ -130,9 +132,9 @@ Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passag
 > [!NOTE]
 > Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-[Informazioni sulla valutazione in riLevanza](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](../assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](../tagging-and-assessment-in-advanced-ediscovery.md)
   
@@ -144,4 +146,4 @@ Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passag
   
 [Verifica dell'analisi della pertinenza](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Query all'interno del working set](working-set-search.md)
+[Eseguire query sui dati in un insieme da rivedere](review-set-search.md)

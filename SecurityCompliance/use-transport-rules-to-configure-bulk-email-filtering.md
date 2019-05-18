@@ -3,7 +3,7 @@ title: Utilizzare le regole del flusso di posta per configurare il filtro della 
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come utilizzare le regole del flusso di posta in Exchange Online Protection per il filtro della posta elettronica in blocco.
-ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8ec0f8385393cfd573191b75dd56944f3a6123df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267011"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157878"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco in Exchange Online Protection
 
@@ -73,7 +73,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
    L'impostazione di SCL su 5 o 6 consente di eseguire l'azione **Posta indesiderata**, mentre l'impostazione di SCL su 9 consente di effettuare l'azione **Alta probabilità di posta indesiderata**, come configurato nel criterio di filtro dei contenuti. Il servizio esegue l'azione impostata nel criterio di filtro dei contenuti. L'azione predefinita è quella di recapitare il messaggio nella cartella Posta indesiderata del destinatario, ma è possibile configurare azioni differenti, come descritto in [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
     
-   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta inDesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
+   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta indesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
   
    Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
     
@@ -125,7 +125,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
     
    L'impostazione di SCL su 5 o 6 consente di eseguire l'azione **Posta indesiderata**, mentre l'impostazione di SCL su 9 consente di effettuare l'azione **Alta probabilità di posta indesiderata**, come configurato nel criterio di filtro dei contenuti. Il servizio esegue l'azione impostata nel criterio di filtro dei contenuti. L'azione predefinita è quella di recapitare il messaggio nella cartella Posta indesiderata del destinatario, ma è possibile configurare azioni differenti, come descritto in [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
     
-   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta inDesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
+   Se l'azione configurata è quella di mettere in quarantena il messaggio anziché inviarlo alla cartella posta indesiderata dei destinatari, il messaggio verrà inviato alla quarantena dell'amministratore come corrispondenza della regola del flusso di posta e non sarà disponibile nella quarantena della posta indesiderata dell'utente finale o tramite l'utente finale. notifiche di posta indesiderata. 
   
    Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
 

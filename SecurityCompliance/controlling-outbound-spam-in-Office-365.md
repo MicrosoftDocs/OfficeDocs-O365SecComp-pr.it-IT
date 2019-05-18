@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 09/18/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se l'organizzazione invia una gran quantità di posta in blocco contrassegnata come posta indesiderata, potrebbe essere bloccata dall'invio di messaggi di posta elettronica con Office 365. Leggere questo articolo per ulteriori informazioni sul motivo per cui questo accade e su cosa è possibile fare.
-ms.openlocfilehash: 9261c61d472554ae7d2f3d4134514d23b600ee87
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f9d0d870b9c1016794326070de741deb17b6ca47
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258214"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151278"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Controllare la posta indesiderata in uscita in Office 365
 
@@ -34,7 +34,7 @@ Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché l
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>Cosa fa EOP per controllare la posta indesiderata in uscita
 
-1. **Segregazione del traffico in uscita in pool distinti di indirizzi IP**. Tutti i messaggi inviati dai clienti in uscita tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è posta indesiderata, viene instradato attraverso il pool di reCapito ad alto rischio. Questo pool IP contiene notifiche di stato non recapitabili e posta indesiderata. Il reCapito al destinatario previsto non è garantito poiché molte terze parti non accetteranno la posta elettronica poiché la qualità del messaggio di posta elettronica emesso.<br/><br/>Suddividendo il traffico in questo modo si garantisce che la posta elettronica di qualità inferiore (indesiderata, NDR backscatter) non trascini la reputazione dei pool di posta elettronica in uscita normali. Il pool ad alto rischio ha generalmente una bassa reputazione in molti ricevitori su Internet, anche se questo non è universale. 
+1. **Segregazione del traffico in uscita in pool distinti di indirizzi IP**. Tutti i messaggi inviati dai clienti in uscita tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è posta indesiderata, viene instradato attraverso il pool di recapito ad alto rischio. Questo pool IP contiene notifiche di stato non recapitabili e posta indesiderata. Il recapito al destinatario previsto non è garantito poiché molte terze parti non accetteranno la posta elettronica poiché la qualità del messaggio di posta elettronica emesso.<br/><br/>Suddividendo il traffico in questo modo si garantisce che la posta elettronica di qualità inferiore (indesiderata, NDR backscatter) non trascini la reputazione dei pool di posta elettronica in uscita normali. Il pool ad alto rischio ha generalmente una bassa reputazione in molti ricevitori su Internet, anche se questo non è universale. 
 
 2. **Monitoraggio della reputazione IP**. Office 365 esegue una query su diversi elenchi dei blocchi IP di terze parti e genera avvisi se sono elencati su di essi. In questo modo è possibile reagire rapidamente quando la posta indesiderata ha provocato un peggioramento della reputazione. Quando viene generato un avviso, è presente una documentazione interna che indica i passaggi da eseguire per ottenere la lista. 
 
@@ -53,7 +53,7 @@ Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché l
 
 2. **Utilizzare un messaggio di posta elettronica in blocco di terze parti per inviare la comunicazione di massa**. Sono disponibili diversi messaggi di posta elettronica di terze parti, la cui unica attività è inviare messaggi di posta elettronica in blocco. Possono collaborare con i clienti per assicurarsi che dispongano di una buona prassi di posta elettronica e che dispongano di risorse dedicate per l'applicazione. 
 
-Il gruppo di lavoro per la messaggistica, la telefonia mobile, antiAbuso di malware (MAAWG) pubblica il roster di appartenenza [qui](http://www.maawg.org/about/roster). Numerosi provider di posta elettronica in blocco sono presenti nell'elenco e sono noti come cittadini Internet responsabili. 
+Il gruppo di lavoro per la messaggistica, la telefonia mobile, antiabuso di malware (MAAWG) pubblica il roster di appartenenza [qui](http://www.maawg.org/about/roster). Numerosi provider di posta elettronica in blocco sono presenti nell'elenco e sono noti come cittadini Internet responsabili. 
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

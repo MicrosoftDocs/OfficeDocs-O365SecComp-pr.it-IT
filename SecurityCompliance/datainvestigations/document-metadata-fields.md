@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c4a7c479d730d5256efabe9120960b1590094779
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258124"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150908"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campi dei metadati del documento in indagini sui dati (anteprima)
 
@@ -84,7 +84,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Percorso testo Estratto        |                                                 |                         | Sì         |
 |ID famiglia                  | Sì (familyId)                                  |   Sì (FamilyId)        | Sì         |
 |Dimensione famiglia                |                                                 |                         | Sì         |
-|Classe file                 | Sì (fileClass)                                 |   Sì (classe file)      | Sì         |
+|Classe file                 | Sì (fileclass)                                 |   Sì (classe file)      | Sì         |
 |ID file                    | Sì (fileId)                                    |   Sì (ID)              | Sì         |
 |Contiene testo                   |                                                 |                         | Sì         |
 |Tipo inclusivo             | Sì (inclusiveType)                             |   Sì (tipo incluso)  | Sì         |

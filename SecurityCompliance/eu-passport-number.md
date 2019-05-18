@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di passaporto dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256824"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152968"
 ---
 # <a name="eu-passport-number"></a>Numero di passaporto EU
 
@@ -64,7 +64,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|passport number  <br/> numero di passaporto austriaco  <br/> Passport No  <br/> Reisepass  <br/> Österreichisch Reisepass  <br/> |
+|passport number  <br/> numero di passaporto austriaco  <br/> Passport No  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgio
 
@@ -103,7 +103,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|passport number  <br/> numero di passaporto belga  <br/> Passport No  <br/> PASPOORT  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
+|passport number  <br/> numero di passaporto belga  <br/> Passport No  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
@@ -712,7 +712,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|numero di passaporto olandese  <br/> passport number  <br/> numero di passaporto per i Paesi Bassi  <br/> Nederlanden PASPOORT Nummer  <br/> PASPOORT  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|numero di passaporto olandese  <br/> passport number  <br/> numero di passaporto per i Paesi Bassi  <br/> Nederlanden PASPOORT Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 

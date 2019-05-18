@@ -1,10 +1,10 @@
 ---
-title: Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery (Preview)
+title: Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241078"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151518"
 ---
-# <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery (Preview)
+# <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 
-Quando si caricano dati o documenti non di Office 365 per la correzione degli errori in Advanced eDiscovery (Preview), l'interfaccia utente fornisce un comando AzCopy di Azure che contiene parametri con il percorso in cui vengono archiviati i file che si desidera caricare e Azure percorso di archiviazione in cui verranno caricati i file. Per caricare i documenti, è possibile copiare questo comando e quindi eseguirlo in un prompt dei comandi nel computer locale.  Nello screenshot seguente è riportato un esempio di un comando AzCopy:
+Quando si caricano dati o documenti non di Office 365 per la correzione degli errori in Advanced eDiscovery, l'interfaccia utente fornisce un comando AzCopy di Azure che contiene parametri con il percorso in cui vengono archiviati i file che si desidera caricare e lo spazio di archiviazione di Azure percorso in cui verranno caricati i file. Per caricare i documenti, è possibile copiare questo comando e quindi eseguirlo in un prompt dei comandi nel computer locale.  Nello screenshot seguente è riportato un esempio di un comando AzCopy:
 
 ![Caricare i file non di Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 

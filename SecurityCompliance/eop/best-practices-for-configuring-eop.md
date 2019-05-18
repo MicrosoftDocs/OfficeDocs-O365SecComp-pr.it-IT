@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni.
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256644"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150288"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Procedure consigliate per la configurazione di Exchange Online Protection
   
@@ -35,7 +35,7 @@ Quando si configura EOP, si aggiunge un record SPF (Sender Policy Fremework)  pe
   
 ## <a name="set-anti-spam-options"></a>Impostazione delle opzioni di posta indesiderata
 
-Gestire le impostazioni del filtro di connessione aggiungendo gli indirizzi IP agli elenchi IP conSentiti e di blocco IP e selezionando l'opzione **Abilita elenco** indirizzi attendibili, che dovrebbe ridurre il numero di falsi positivi (posta elettronica buona classificata come posta indesiderata) ricevuti. Per ulteriori informazioni, vedere [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md). Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come garantire che un messaggio non venga contrassegnato come posta](https://go.microsoft.com/fwlink/p/?LinkId=534224) indesiderata o [blocca la posta indesiderata con il filtro di posta indesiderata di Office 365 per evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+Gestire le impostazioni del filtro di connessione aggiungendo gli indirizzi IP agli elenchi IP consentiti e di blocco IP e selezionando l'opzione **Abilita elenco** indirizzi attendibili, che dovrebbe ridurre il numero di falsi positivi (posta elettronica buona classificata come posta indesiderata) ricevuti. Per ulteriori informazioni, vedere [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md). Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come garantire che un messaggio non venga contrassegnato come posta](https://go.microsoft.com/fwlink/p/?LinkId=534224) indesiderata o [blocca la posta indesiderata con il filtro di posta indesiderata di Office 365 per evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
   
 Gestire i filtri del contenuto rivedendo e facoltativamente cambiando le impostazioni predefinite. Ad esempio, è possibile modificare l'azione per ciò che accade ai messaggi rilevati dalla posta indesiderata. Se si desidera perseguire un approccio aggressivo al filtro posta indesiderata, è possibile configurare le opzioni di filtro posta indesiderata avanzate. È consigliabile testare queste opzioni prima di implementarle nell'ambiente di produzione (attivando l'operazione) è consigliabile che le organizzazioni preoccupate del phishing attivino il **record SPF: opzione non riuscita** . Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](../configure-your-spam-filter-policies.md) indesiderata e le [Opzioni avanzate](../advanced-spam-filtering-asf-options.md)per il filtro
   

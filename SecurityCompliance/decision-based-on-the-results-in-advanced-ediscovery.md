@@ -3,7 +3,7 @@ title: Decisione basata sui risultati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Informazioni su come la scheda decidere in Office 365 Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di riesame dei file di caso. '
-ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3f8ce0343b5a09cf3ab4c4bd94a53d8d0cbe0cce
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257820"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153518"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisione basata sui risultati in Office 365 Advanced eDiscovery
 
@@ -48,13 +48,13 @@ Questa scheda include gli elementi seguenti:
     
 - **Distribuzione per Punteggio di pertinenza**: i file nel display grigio scuro a sinistra sono al di sotto del Punteggio di taglio. Un suggerimento per gli strumenti Visualizza il Punteggio di pertinenza e la percentuale relativa di file nel set di file di revisione in relazione ai file totali.
     
-Nel riquadro dettagli espansi vengono visualizzati ulteriori dettagli. I file nelle figure delle raccolte non includono file vuoti o nebulosi. Le figure dei file di famiglia rappresentano i file che non sono caricati in riLevanza, ma vengono comunque conteggiati come parte della famiglia.
+Nel riquadro dettagli espansi vengono visualizzati ulteriori dettagli. I file nelle figure delle raccolte non includono file vuoti o nebulosi. Le figure dei file di famiglia rappresentano i file che non sono caricati in rilevanza, ma vengono comunque conteggiati come parte della famiglia.
   
 ## <a name="see-also"></a>Vedere anche
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-relevance-training-in-advanced-ediscovery.md)
   

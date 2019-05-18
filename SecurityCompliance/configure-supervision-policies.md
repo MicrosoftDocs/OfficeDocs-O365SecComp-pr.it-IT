@@ -3,7 +3,7 @@ title: Configurare criteri di supervisione per l'organizzazione
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470396"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151538"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
 
@@ -33,31 +33,31 @@ Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a esegu
   
 Seguire questa procedura per configurare e usare la supervisione nell'organizzazione di Office 365:
   
-- **Passaggio 1 (facoltativo)**: [configurare i gruppi per la supervisione (facoltativo)](#step-1---set-up-groups-for-supervision-optional)
+- **Passaggio 1 (facoltativo)**: [configurare i gruppi per la supervisione](#step-1-set-up-groups-for-supervision-optional) 
 
     Prima di iniziare a utilizzare la supervisione, determinare gli utenti che devono esaminare le comunicazioni e che eseguono le recensioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la supervisione, è possibile ignorare la configurazione dei gruppi per il momento.
 
-- **Passaggio 2 (obbligatorio)**: [rendere disponibile la supervisione nell'organizzazione (obbligatorio)](#step-2---make-supervision-available-in-your-organization-required)
+- **Passaggio 2 (obbligatorio)**: [rendere disponibile la supervisione nell'organizzazione](#step-2-make-supervision-available-in-your-organization-required)
 
-    Aggiungersi al gruppo di ruolo revisione di superVisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo **** possono accedere alla pagina di supervisione nel centro conformità. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo **** possono accedere alla pagina di supervisione nel centro conformità. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- **Passaggio 3 (facoltativo)**: [creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **Passaggio 3 (facoltativo)**: [creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     Se è necessario un tipo di informazioni riservate personalizzato o un dizionario di parole chiave personalizzato per i criteri di supervisione, è necessario crearlo prima di avviare la procedura guidata di supervisione.
 
-- **Passaggio 4 (obbligatorio)**: [impostare un criterio di supervisione](#step-4---set-up-a-supervision-policy-required)
+- **Passaggio 4 (obbligatorio)**: [impostare un criterio di supervisione](#step-4-set-up-a-supervision-policy-required)
 
     È possibile creare criteri di supervisione nel centro conformità. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica e le comunicazioni di Microsoft teams e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
 
-- **Passaggio 5 (facoltativo)**: [testare i criteri](#step-5---test-your-supervision-policy-optional) di supervisione
+- **Passaggio 5 (facoltativo)**: [testare i criteri](#step-5-test-your-supervision-policy-optional) di supervisione
 
     Testare i criteri di supervisione per assicurarsi che funzioni come desiderato. È importante garantire che la strategia di conformità soddisfi gli standard.
 
-- **Passaggio 6 (facoltativo)**: [configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni controllate](#step-6---configure-outlook-for-reviewers-optional)
+- **Passaggio 6 (facoltativo)**: [configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni controllate](#step-6-configure-outlook-for-reviewers-optional)
 
     Configurare Outlook per consentire agli utenti di accedere alla funzionalità di supervisione all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
 
-## <a name="step-1-set-up-groups-for-supervision-optional"></a>Passaggio 1: configurare i gruppi per la superVisione (facoltativo)
+## <a name="step-1-set-up-groups-for-supervision-optional"></a>Passaggio 1: configurare i gruppi per la supervisione (facoltativo)
 
  Quando si crea un criterio di supervisione, si definisce chi ha le proprie comunicazioni recensite e chi esegue le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno la propria comunicazione riesaminata e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
 
@@ -65,7 +65,7 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
 | Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
 Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere il criterio di supervisione aggiornato man mano che i nuovi dipendenti fanno parte dell'organizzazione.
@@ -105,9 +105,9 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 Per rendere **** disponibile la supervisione come opzione di menu nel centro conformità, è necessario essere assegnati al ruolo amministratore revisione di supervisione.
   
-A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo revisione di superVisione oppure creare un gruppo di ruoli.
+A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo revisione di supervisione oppure creare un gruppo di ruoli.
   
-### <a name="add-members-to-the-supervisory-review-role-group"></a>Aggiungere membri al gruppo di ruoli revisione di superVisione
+### <a name="add-members-to-the-supervisory-review-role-group"></a>Aggiungere membri al gruppo di ruoli revisione di supervisione
 
 1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
 
@@ -127,7 +127,7 @@ A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo 
 
 4. Nella sezione **membri** aggiungere gli utenti che si desidera gestire la supervisione per l'organizzazione.
 
-Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere perMissions [in the Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere Permissions [in the Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Abilitare l'accesso remoto a PowerShell per i revisori (se la posta elettronica è ospitata su Exchange Online)
 
@@ -185,7 +185,7 @@ Dopo aver creato un criterio di supervisione, è consigliabile verificare che le
 
 ## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Passaggio 6: configurare Outlook per i revisori (facoltativo)
 
-I revisori che desiderano utilizzare Outlook invece del dashboard di superVisione in Office 365 per esaminare le comunicazioni devono configurare il client di Outlook.
+I revisori che desiderano utilizzare Outlook invece del dashboard di supervisione in Office 365 per esaminare le comunicazioni devono configurare il client di Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Passaggio 1: copiare l'indirizzo della cassetta postale di supervisione
 
@@ -202,7 +202,7 @@ Per configurare la revisione per Outlook desktop o Outlook per il Web, è necess
 
 3. Selezionare un criterio di supervisione per le comunicazioni che si desidera esaminare.
 
-4. Nel riquadro a comparsa dei dettagli del criterio, in **cassetta postale**di supervisione, copiare l'indirizzo.<br/>![La sezione "cassetta postale di superVisione" del riquadro a comparsa dei dettagli del criterio di supervisione che mostra l'indirizzo della cassetta postale](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
+4. Nel riquadro a comparsa dei dettagli del criterio, in **cassetta postale**di supervisione, copiare l'indirizzo.<br/>![La sezione "cassetta postale di supervisione" del riquadro a comparsa dei dettagli del criterio di supervisione che mostra l'indirizzo della cassetta postale](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
 ### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Passaggio 2: configurare la cassetta postale di supervisione per l'accesso di Outlook
 
@@ -231,7 +231,7 @@ Per il passaggio finale, i revisori devono creare un profilo di Outlook per la c
 
 3. In **configurazione posta elettronica-Outlook**, fare clic su **Mostra profili**.<br/>![La finestra di dialogo "configurazione della posta elettronica-Outlook" con il pulsante ' Mostra profili ' evidenziata](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
   
-4. In **posta**, fare clic su **Aggiungi**. Quindi, in **nuovo profilo**, immettere un nome per la cassetta postale di supervisione ****, ad esempio la supervisione.<br/>![La finestra di dialogo ' nuovo profilo ' che mostra il nome ' superVisione ' nella casella ' nome profilo '](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
+4. In **posta**, fare clic su **Aggiungi**. Quindi, in **nuovo profilo**, immettere un nome per la cassetta postale di supervisione ****, ad esempio la supervisione.<br/>![La finestra di dialogo ' nuovo profilo ' che mostra il nome ' supervisione ' nella casella ' nome profilo '](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
   
 5. In **Connetti Outlook a Office 365**fare clic su **Connetti a un account diverso**.<br/>![Il messaggio ' Connect Outlook to Office 365' con il collegamento ' Connetti a un account diverso ' evidenziato](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
   

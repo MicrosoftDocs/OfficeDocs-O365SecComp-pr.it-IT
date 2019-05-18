@@ -3,18 +3,18 @@ title: Traccia messaggio nel Centro sicurezza e conformità
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265634"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158678"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -129,7 +129,7 @@ I tipi di report disponibili sono i seguenti:
 
 **Note**:
 
-- Il riepilogo avanzato e i report esTesi vengono preparati utilizzando i dati di traccia dei messaggi archiviati e possono richiedere fino a diverse ore prima che il report sia disponibile per il download. A seconda del numero di altri amministratori che hanno inoltrato le richieste di rapporto nello stesso momento, è possibile che si verifichi un ritardo prima che la richiesta in coda inizi a essere elaborata.
+- Il riepilogo avanzato e i report estesi vengono preparati utilizzando i dati di traccia dei messaggi archiviati e possono richiedere fino a diverse ore prima che il report sia disponibile per il download. A seconda del numero di altri amministratori che hanno inoltrato le richieste di rapporto nello stesso momento, è possibile che si verifichi un ritardo prima che la richiesta in coda inizi a essere elaborata.
 
 - Anche se è possibile selezionare un riepilogo avanzato o un report esteso per qualsiasi intervallo di data/ora, in genere le ultime quattro ore di dati archiviati non saranno ancora disponibili per questi due tipi di report.
 
@@ -251,9 +251,9 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 <sup>*</sup>Queste proprietà sono disponibili solo in rapporti di riepilogo avanzati.
 
-### <a name="extended-reports"></a>Rapporti esTesi
+### <a name="extended-reports"></a>Rapporti estesi
 
-I report esTesi disponibili (completati) sono disponibili nella sezione **report scaricabili** all'inizio della traccia dei messaggi. Quasi tutte le informazioni provenienti da un rapporto riepilogativo avanzato sono disponibili in un report esteso (ad eccezione di **origin_timestamp** e **delivery_priority**). Le informazioni aggiuntive seguenti sono disponibili solo in un report esteso:
+I report estesi disponibili (completati) sono disponibili nella sezione **report scaricabili** all'inizio della traccia dei messaggi. Quasi tutte le informazioni provenienti da un rapporto riepilogativo avanzato sono disponibili in un report esteso (ad eccezione di **origin_timestamp** e **delivery_priority**). Le informazioni aggiuntive seguenti sono disponibili solo in un report esteso:
 
 - **Client_IP**: l'indirizzo IP del server di posta elettronica o del client di messaggistica che ha inviato il messaggio.
 
@@ -321,7 +321,7 @@ I report esTesi disponibili (completati) sono disponibili nella sezione **report
 
 Il campo **custom_data** per un `AGENTINFO` evento viene utilizzato da una vasta gamma di agenti di Exchange Online per registrare i dettagli di elaborazione dei messaggi. Alcuni degli agenti più interessanti sono descritti nelle sezioni seguenti.
 
-#### <a name="spam-filter-agent"></a>Agente filtro posta inDesiderata
+#### <a name="spam-filter-agent"></a>Agente filtro posta indesiderata
 
 Un valore **custom_data** che inizia con `S:SFA` è dell'agente filtro posta indesiderata. I dettagli della chiave sono descritti nella tabella seguente:
 
@@ -336,7 +336,7 @@ Un valore **custom_data** che inizia con `S:SFA` è dell'agente filtro posta ind
 |`DI=SB`|Il mittente del messaggio è stato bloccato.|
 |`DI=SQ`|Il messaggio è stato messo in quarantena.|
 |`DI=SD`|Il messaggio è stato eliminato.|
-|`DI=SJ`|Il messaggio è stato inviato alla cartella posta inDesiderata del destinatario.|
+|`DI=SJ`|Il messaggio è stato inviato alla cartella posta indesiderata del destinatario.|
 |`DI=SN`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
 |`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
@@ -348,7 +348,7 @@ Un esempio di valore di **custom_data** per un messaggio filtrato per la posta i
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
-#### <a name="malware-filter-agent"></a>Agente filtro antiMalware
+#### <a name="malware-filter-agent"></a>Agente filtro antimalware
 
 Un valore **custom_data** che inizia con `S:AMA` è dell'agente di filtro antimalware. I dettagli della chiave sono descritti nella tabella seguente:
 

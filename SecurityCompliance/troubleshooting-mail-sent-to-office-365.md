@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
-ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265908"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158218"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
@@ -74,11 +74,11 @@ Non è possibile accettare messaggi di posta elettronica provenienti da mittenti
 ### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Si è ricevuto un rapporto di mancato recapito (NDR) quando si invia un messaggio di posta elettronica a un utente in Office 365
 <a name="NDRInbound"> </a>
 
-Alcuni problemi di recapito sono il risultato dell'indirizzo IP del mittente che è stato bloccato da Microsoft o perché l'account utente è stato identificato come mittente vietato a causa di precedenti attività di posta indesiderata. Se si ritiene di aver ricevuto il rapporto di MANCAto reCAPITO in caso di errore, seguire le istruzioni riportate nel messaggio di MANCAto reCAPITO per risolvere il problema. 
+Alcuni problemi di recapito sono il risultato dell'indirizzo IP del mittente che è stato bloccato da Microsoft o perché l'account utente è stato identificato come mittente vietato a causa di precedenti attività di posta indesiderata. Se si ritiene di aver ricevuto il rapporto di mancato recapito in caso di errore, seguire le istruzioni riportate nel messaggio di mancato recapito per risolvere il problema. 
   
 Per ulteriori informazioni sull'errore ricevuto, vedere l'elenco completo dei codici di errore SMTP nelle [DSN e nei rapporti di mancato recapito in Exchange 2013 e Office 365 locali](http://technet.microsoft.com/library/8e91de84-76fa-49b2-898c-c5eface76560.aspx).
   
- Ad esempio, se si riceve il rapporto di MANCAto reCAPITO seguente, indica che l'indirizzo IP di invio è stato bloccato da Microsoft. 
+ Ad esempio, se si riceve il rapporto di mancato recapito seguente, indica che l'indirizzo IP di invio è stato bloccato da Microsoft. 
   
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
   
@@ -87,9 +87,9 @@ Per richiedere la rimozione da questo elenco, è possibile [utilizzare il portal
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>La posta elettronica è atterrata nella cartella di posta indesiderata del destinatario in EOP
 <a name="JunkMailBox"> </a>
 
-Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile collaborare con il destinatario per inviare questo messaggio falso positivo al team di analisi di posta inDesiderata di Microsoft, che valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio. Si utilizza la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
+Se un messaggio è stato erroneamente identificato come posta indesiderata da EOP, è possibile collaborare con il destinatario per inviare questo messaggio falso positivo al team di analisi di posta indesiderata di Microsoft, che valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio. Si utilizza la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
   
-### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Per utilizzare la posta elettronica per inviare messaggi falsi positivi al team di analisi di posta inDesiderata di Microsoft
+### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Per utilizzare la posta elettronica per inviare messaggi falsi positivi al team di analisi di posta indesiderata di Microsoft
 
 1. Salvare il messaggio che si desidera inviare come non di posta indesiderata.
     
@@ -107,11 +107,11 @@ Se un messaggio è stato erroneamente identificato come posta indesiderata da EO
 ### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Il traffico proveniente dall'indirizzo IP è limitato da EOP
 <a name="AllowEOPIPs"> </a>
 
-Se si riceve un rapporto di MANCAto reCAPITO da EOP che indica che l'indirizzo IP è sottoposto a limitazione da EOP, ad esempio:
+Se si riceve un rapporto di mancato recapito da EOP che indica che l'indirizzo IP è sottoposto a limitazione da EOP, ad esempio:
   
  `host xxxx.outlook.com [x.x.x.x]: 451 4.7.550 Access denied, please try again later`
   
-È stato ricevuto il rapporto di MANCAto reCAPITO perché l'attività sospetta è stata rilevata dall'indirizzo IP ed è stata temporaneamente limitata durante la valutazione. Se il sospetto è deselezionato tramite valutazione, questa restrizione verrà revocata a breve.
+È stato ricevuto il rapporto di mancato recapito perché l'attività sospetta è stata rilevata dall'indirizzo IP ed è stata temporaneamente limitata durante la valutazione. Se il sospetto è deselezionato tramite valutazione, questa restrizione verrà revocata a breve.
   
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Non è possibile ricevere messaggi di posta elettronica da mittenti in Office 365
 <a name="AllowEOPIPs"> </a>

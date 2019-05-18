@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 65e022680cc0bd39bbca3e05a4e3b6d24da1b2ad
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260740"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158608"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Impostare i carichi per aggiungere i file importati in Office 365 Advanced eDiscovery
 
@@ -35,7 +35,7 @@ Si considerino gli scenari seguenti:
     
 ## <a name="adding-imported-files-to-the-current-load"></a>Aggiunta di file importati al carico corrente
 
-Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanced eDiscovery. I file imPortati vengono aggiunti all'ultimo carico definito. Se si importano ulteriori file in un secondo momento, è necessario aggiungerli anche al carico.
+Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanced eDiscovery. I file importati vengono aggiunti all'ultimo carico definito. Se si importano ulteriori file in un secondo momento, è necessario aggiungerli anche al carico.
   
 1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
     
@@ -127,7 +127,7 @@ I carichi di rotolamento e la funzionalità di catch-up variano come indicato di
     
 2. Se i carichi sono stati individuati come distinti: è necessaria una formazione più pertinente e il passaggio successivo è la decisione di catch-up. Selezionare una decisione di catch-up come indicato di seguito:
     
-    Se si seleziona **Unisci carichi**, Advanced eDiscovery unisce i carichi precedenti e nuovi per il set di training. Anche se il primo carico ha superato il calcolo in batch, è necessario un numero maggiore di formazione. Continuare a formare carichi nuovi e precedenti insieme. Il calcolo batch verrà quindi eseguito di nuovo e i punteggi del calcolo batch precedenti devono essere ignorati. Scegliere questa selezione quando i punteggi di riLevanza per i carichi esistenti possono essere ricalcolati, ad esempio quando la revisione dei carichi di file esistenti non è stata avviata.
+    Se si seleziona **Unisci carichi**, Advanced eDiscovery unisce i carichi precedenti e nuovi per il set di training. Anche se il primo carico ha superato il calcolo in batch, è necessario un numero maggiore di formazione. Continuare a formare carichi nuovi e precedenti insieme. Il calcolo batch verrà quindi eseguito di nuovo e i punteggi del calcolo batch precedenti devono essere ignorati. Scegliere questa selezione quando i punteggi di rilevanza per i carichi esistenti possono essere ricalcolati, ad esempio quando la revisione dei carichi di file esistenti non è stata avviata.
     
     Se si seleziona **Suddividi carichi**, continuare la formazione sulla pertinenza solo sul nuovo carico. In questo caso, i punteggi del calcolo batch precedenti rimarranno così come sono. Scegliere questa opzione se non è possibile ricalcolare i punteggi di pertinenza esistenti per i carichi esistenti, ad esempio se è già stata avviata la revisione dei carichi esistenti. I punteggi relativi alla pertinenza sono gestiti separatamente da questo punto e non possono essere Uniti.
     

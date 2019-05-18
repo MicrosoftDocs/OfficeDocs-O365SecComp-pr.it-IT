@@ -1,22 +1,22 @@
 ---
-title: Rapporto Mappa del flusso di posta
+title: Report Mappa flusso di posta
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868586"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158688"
 ---
-# <a name="mail-flow-map-report"></a>Rapporto Mappa del flusso di posta
+# <a name="mail-flow-map-report"></a>Report Mappa flusso di posta
 
 Questo rapporto fornisce informazioni su come scorre la posta attraverso l'organizzazione di Office 365. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi man mano che si verificano.
 

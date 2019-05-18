@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza e conformità in modo che Office 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche in Office 365.
-ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1b09b191f82d8dd589fe2e5f650f42f67a846da2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258678"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151308"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Creare avvisi attività in Office 365
 
@@ -94,7 +94,7 @@ ms.locfileid: "32258678"
     
 Per riattivare un avviso di attività, ripetere questi passaggi e fare clic **** sull'opzione attiva/disattiva per modificare lo stato **su**attivato.
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Di seguito è riportato un esempio di notifica di posta elettronica inviato agli utenti specificati nel campo inviato questo avviso a (ed elencati in **destinatari** nella pagina **avvisi attività** ) nel centro sicurezza e conformità di &. 
     

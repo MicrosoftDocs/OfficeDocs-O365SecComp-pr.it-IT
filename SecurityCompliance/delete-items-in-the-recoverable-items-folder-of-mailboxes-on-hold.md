@@ -3,7 +3,7 @@ title: Eliminare gli elementi nella cartella elementi ripristinabili delle casse
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365.'
-ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256874"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150408"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -210,7 +210,7 @@ I criteri di conservazione di Office 365 a livello di organizzazione e di Exchan
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-dopo aver identificato i criteri di conservazione di Office 365 a livello di organizzazione, **** \> passare alla pagina **conservazione** governance data nel centro sicurezza & compliance, modificare ogni criterio di conservazione a livello di organizzazione identificato nell' passaggio precedente e aggiungere la cassetta postale all'elenco dei destinatari esclusi. In questo modo, la cassetta postale dell'utente verrà rimossa dal criterio di conservazione. 
+Dopo aver identificato i criteri di conservazione di Office 365 a livello di organizzazione, **** \> passare alla pagina **conservazione** governance data nel centro sicurezza & Compliance, modificare ogni criterio di conservazione a livello di organizzazione identificato nell' passaggio precedente e aggiungere la cassetta postale all'elenco dei destinatari esclusi. In questo modo, la cassetta postale dell'utente verrà rimossa dal criterio di conservazione. 
 
 ### <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
 
@@ -423,7 +423,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà *InPlaceHolds* quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

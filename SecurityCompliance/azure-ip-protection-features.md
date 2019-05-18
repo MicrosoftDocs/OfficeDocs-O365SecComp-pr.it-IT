@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
 description: Per facilitare il passaggio iniziale della protezione delle informazioni, a partire da luglio 2018 tutti i tenant idonei per la protezione delle informazioni di Azure disporranno delle funzionalità di protezione in Azure Information Protection attivate per impostazione predefinita. Le funzionalità di protezione di Azure Information Protection in precedenza erano note in Office 365 come Rights Management o Azure RMS. Se l'organizzazione dispone di un piano di servizio di Office E3 o di un piano di servizio superiore, è possibile iniziare a proteggere le informazioni tramite Azure Information Protection quando vengono implementate queste funzionalità.
-ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f7c5126ddf1a15dde147e724ceced34d95eef185
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152228"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Funzionalità di protezione in Azure Information Protection in uscita per i tenant di Office 365 esistenti
 
@@ -49,7 +49,7 @@ La crittografia dei messaggi di Office 365 utilizza le funzionalità di protezio
 
 Se l'organizzazione di Office 365 ha acquistato una licenza di Office 365 idonea, il tenant avrà un impatto su questa modifica.
   
- **IMPORTANTE!** Se si utilizza Active Directory Rights Management Services (AD RMS) nell'ambiente locale, è necessario disAttivarlo immediatamente o passare a Azure Information Protection prima di eseguire questa modifica entro i 30 giorni successivi. Per informazioni su come rifiutare l'opt-out, vedere "utilizzo di AD RMS, come è possibile escludere?" più avanti in questo articolo. Se si preferisce eseguire la migrazione, vedere [migrazione da ad RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+ **IMPORTANTE!** Se si utilizza Active Directory Rights Management Services (AD RMS) nell'ambiente locale, è necessario disattivarlo immediatamente o passare a Azure Information Protection prima di eseguire questa modifica entro i 30 giorni successivi. Per informazioni su come rifiutare l'opt-out, vedere "utilizzo di AD RMS, come è possibile escludere?" più avanti in questo articolo. Se si preferisce eseguire la migrazione, vedere [migrazione da ad RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>È possibile utilizzare Azure Information Protection con Active Directory Rights Management Services (AD RMS)?
 

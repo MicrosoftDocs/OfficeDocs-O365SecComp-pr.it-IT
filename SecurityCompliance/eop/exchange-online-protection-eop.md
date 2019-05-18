@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Di seguito sono riportate alcune considerazioni da tenere presenti prima di iniziare a lavorare con EOP.
-ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256464"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154668"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -70,7 +70,7 @@ I contenuti della Guida per l'assistenza agli utenti finali EOP per la gestione 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Descrive come gli utenti finali possono segnalare malware che non sono stati rilevati dai filtri oppure un file che è stato erroneamente identificato come malware. 
     
-- Gli utenti finali possono aggiungere utenti o domini specifici a un elenco di mittenti attendibili o a un elenco di mittenti bloccati configurando le impostazioni di posta indesiderata in Outlook o Outlook sul Web. Si noti che i messaggi inviati da mittenti bloccati sono contrassegnati come posta indesiderata, non rifiutati, ovvero possono essere recuperati dalla cartella posta inDesiderata o dalla quarantena (a seconda della posizione in cui l'amministratore ha configurato il servizio per l'invio di posta indesiderata). Per ulteriori informazioni, vedere [use the report Message Add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Gli utenti finali possono aggiungere utenti o domini specifici a un elenco di mittenti attendibili o a un elenco di mittenti bloccati configurando le impostazioni di posta indesiderata in Outlook o Outlook sul Web. Si noti che i messaggi inviati da mittenti bloccati sono contrassegnati come posta indesiderata, non rifiutati, ovvero possono essere recuperati dalla cartella posta indesiderata o dalla quarantena (a seconda della posizione in cui l'amministratore ha configurato il servizio per l'invio di posta indesiderata). Per ulteriori informazioni, vedere [use the report Message Add-in](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Guida e supporto tecnico per EOP](help-and-support-for-eop.md) Fornisce informazioni su come ottenere assistenza e supporto tecnico. 
     

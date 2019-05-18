@@ -3,7 +3,7 @@ title: Utilizzare lo strumento di raccolta PST per trovare, copiare ed eliminare
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilizzare lo strumento di raccolta PST di Microsoft per cercare la rete dell'organizzazione per ottenere un inventario dei file PST sparsi nell'organizzazione. Dopo aver trovato i file PST, è possibile utilizzare lo strumento di raccolta PST per copiarli in una posizione centrale in modo da poterli importare in Office 365.
-ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255346"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152778"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utilizzare lo strumento di raccolta PST per trovare, copiare ed eliminare i file PST nell'organizzazione
 
@@ -37,7 +37,7 @@ Ecco una breve panoramica del processo di utilizzo dello strumento di raccolta P
     
 2. **[(Facoltativo) passaggio 2: controllare l'accesso ai file PST](#optional-step-2-control-access-to-pst-files)** -lo strumento crea un oggetto Criteri di gruppo con impostazioni che impediscono agli utenti di creare o modificare i file PST. Questo oggetto Criteri di gruppo viene applicato a tutti gli utenti del dominio. Questo passaggio facoltativo consente di "bloccare" i file PST che sono stati individuati nel passaggio 1, in modo da poterli raccogliere, importare ed eliminare senza che siano stati creati nuovi file PST o che siano stati modificati i file PST esistenti. 
     
-3. **[Passaggio 3: copiare i file PST in una posizione di raccolta](#step-3-copy-the-pst-files-to-a-collection-location)** -consente di raccogliere i file PST in una posizione tale da poterli importare nelle cassette postAli di Exchange Online utilizzando il servizio di importazione di Office 365 nel passaggio 4. Quando si esegue lo strumento nella modalità "raccolta", ogni agente di raccolta copia i file PST dal computer di destinazione in cui è installato l'agente nel percorso di raccolta. 
+3. **[Passaggio 3: copiare i file PST in una posizione di raccolta](#step-3-copy-the-pst-files-to-a-collection-location)** -consente di raccogliere i file PST in una posizione tale da poterli importare nelle cassette postali di Exchange Online utilizzando il servizio di importazione di Office 365 nel passaggio 4. Quando si esegue lo strumento nella modalità "raccolta", ogni agente di raccolta copia i file PST dal computer di destinazione in cui è installato l'agente nel percorso di raccolta. 
     
 4. **[Passaggio 4: importare i file PST in Office 365](#step-4-import-the-pst-files-to-office-365)** -dopo aver copiato i file PST in un'unica posizione, è possibile importarli nelle cassette postali di Exchange Online. 
     

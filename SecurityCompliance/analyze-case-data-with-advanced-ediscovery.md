@@ -3,7 +3,7 @@ title: Analizzare i dati del caso con Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Ottenere una panoramica del processo di analisi, che consente di impostare parametri, eseguire opzioni e visualizzare i risultati, in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 11ef6f9bd052134625012742e64c466ae1e54f91
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c58114acb04bb7097a98ce30f8a5a8b2d74064e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243027"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152458"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analizzare i dati del caso con Office 365 Advanced eDiscovery
 

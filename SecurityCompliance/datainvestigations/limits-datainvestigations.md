@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258735"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150738"
 ---
 # <a name="data-investigations-preview-limits"></a>Limiti relativi alle indagini sui dati (Preview)
 
@@ -41,7 +41,7 @@ Nella tabella seguente sono elencati i limiti per le indagini in indagini sui da
 > [!NOTE]
 ><sup>1</sup> tutti gli elementi che superano il limite di un singolo file verranno visualizzati come errori di elaborazione.
 
-## <a name="indexing-limits"></a>Limiti di inDicizzazione
+## <a name="indexing-limits"></a>Limiti di indicizzazione
 
 Il contenuto sarà disponibile a breve.
 

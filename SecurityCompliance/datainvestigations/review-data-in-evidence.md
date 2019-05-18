@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258044"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150668"
 ---
 # <a name="review-the-data-in-evidence"></a>Esaminare i dati nelle prove
 
@@ -36,7 +36,7 @@ Indagini sui dati (Preview) consente di visualizzare il contenuto in diversi vis
 - Metadati dei file
 - Visualizzazione nativa
 - Visualizzazione testo
-- Visualizzazione anNotazioni
+- Visualizzazione annotazioni
 
 Per accedere a uno di questi visualizzatori, è sufficiente selezionare un documento in un set di evidenze.
 
@@ -75,11 +75,11 @@ Il Visualizzatore di testo consente di visualizzare il testo estratto di un file
 ![Visualizzazione diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Visualizzazione anNotazioni
+## <a name="annotate-view"></a>Visualizzazione annotazioni
 
-La visualizzazione anNotazioni fornisce caratteristiche che consentono di applicare il markup su un documento durante il processo di revisione. sono inclusi gli strumenti seguenti:
+La visualizzazione annotazioni fornisce caratteristiche che consentono di applicare il markup su un documento durante il processo di revisione. sono inclusi gli strumenti seguenti:
 
-  - **RedaziOni area** : è possibile disegnare una casella opaca nel documento che nasconde contenuto sensibile.
+  - **Redazioni area** : è possibile disegnare una casella opaca nel documento che nasconde contenuto sensibile.
 
   - **Matita** – è possibile disegnare a mano libera su un documento per attirare l'attenzione su determinate parti del contenuto.
 
@@ -87,7 +87,7 @@ La visualizzazione anNotazioni fornisce caratteristiche che consentono di applic
 
   - **Toggle Transparency** Annotation – è possibile alternare la trasparenza delle annotazioni (tra opaco e semitrasparente) in modo da poter visualizzare il contenuto dietro l'annotazione. Questo include l'attivazione della trasparenza delle annotazioni e dei redazioni di matite.
 
-La visualizzazione anNotazioni fornisce anche la funzionalità di spostamento seguente:
+La visualizzazione annotazioni fornisce anche la funzionalità di spostamento seguente:
 
   - **Pagina precedente**, **pagina successiva**e **passare ai** controlli di spostamento della pagina da utilizzare per i documenti a più pagine.
 
@@ -97,9 +97,9 @@ La visualizzazione anNotazioni fornisce anche la funzionalità di spostamento se
 
   - **Ricerca** : cercare le parole chiave in un documento e quindi utilizzare i controlli precedenti e successivi per visualizzare i risultati evidenziati all'interno del documento.
 
-**Esempio di visualizzazione anNotazioni**
+**Esempio di visualizzazione annotazioni**
 
-![Visualizzazione anNotazioni](../media/Reviewimage1.png)
+![Visualizzazione annotazioni](../media/Reviewimage1.png)
 
 > [!NOTE]
-> Le anNotazioni vengono applicate a una copia del documento che è stato aggiunto al set di evidenze. I documenti originali del servizio Live non vengono annotati.
+> Le annotazioni vengono applicate a una copia del documento che è stato aggiunto al set di evidenze. I documenti originali del servizio Live non vengono annotati.

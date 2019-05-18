@@ -1,10 +1,10 @@
 ---
-title: Configurare le impostazioni del caso in Advanced eDiscovery (Preview)
+title: Configurare le impostazioni del caso in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ab437eda6731181deb783146e4df23f437279444
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 868b8f91d020477a65309fa44843744f91b311b6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242749"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151898"
 ---
-# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a>Configurare le impostazioni del caso in Advanced eDiscovery (Preview)
+# <a name="configure-case-settings-in-advanced-ediscovery"></a>Configurare le impostazioni del caso in Advanced eDiscovery
 
 Il contenuto sarà disponibile a breve.

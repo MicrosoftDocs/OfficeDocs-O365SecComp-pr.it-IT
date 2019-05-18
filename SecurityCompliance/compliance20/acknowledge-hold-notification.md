@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243637"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151948"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco 
 Quando si risponde a una richiesta di regolamentazione o a un'indagine, potrebbe essere necessario informare i depositari dell'obbligo di conservare le informazioni archiviate elettronicamente (ESI), nonché qualsiasi materiale pertinente a una questione legale attiva o imminente. Una volta inviati, i team legali devono sapere che ogni custode ha ricevuto, letto e compreso e ha accettato di conformarsi alle istruzioni fornite.
 
-Per contribuire a ridurre il tempo, il costo e lo sforzo di follow-up con i propri depositari, Advanced eDiscovery (Preview) consente di inviare e seguire le notifiche di archiviazione legale tramite posta elettronica. Oltre alle notifiche di posta elettronica, ogni custode avrà accesso anche a un portale di conformità individualizzato, consentendo ai depositari di essere informati delle modifiche apportate al loro stato di obbligo.
+Per contribuire a ridurre il tempo, il costo e lo sforzo di follow-up con i propri depositari, Advanced eDiscovery consente di inviare e seguire le notifiche di archiviazione legale tramite posta elettronica. Oltre alle notifiche di posta elettronica, ogni custode avrà accesso anche a un portale di conformità individualizzato, consentendo ai depositari di essere informati delle modifiche apportate al loro stato di obbligo.
 
 ## <a name="email-notifications"></a>Notifiche tramite posta elettronica
 Dopo aver emesso una notifica per la conservazione legale, ogni custode riceverà un messaggio di posta elettronica univoco e personalizzato contenente l'avviso di conservazione legale definito e le istruzioni aggiunte. 

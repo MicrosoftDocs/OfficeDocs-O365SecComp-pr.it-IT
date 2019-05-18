@@ -3,7 +3,7 @@ title: Esportare i risultati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255842"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152928"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Esportare i risultati in Office 365 Advanced eDiscovery
 
@@ -50,7 +50,7 @@ Una sessione di esportazione è un'esecuzione dell'esportazione avanzata di eDis
 
 È possibile eseguire più sessioni di esportazione all'interno di un batch di esportazione per garantire risultati coerenti in base allo stesso modello di esportazione e ai parametri. Per ogni sessione all'interno di un batch, è possibile esportare analisi per i dati del caso appena elaborati ed elaborarli in modo incrementale.
   
-Per esportare utilizzando un set di parametri diverso, è necessario innanzitutto creare un nuovo batch. La prima sessione del nuovo batch produrrà risultati per i file elaborati nel caso fino a quel momento, indipendentemente dal fatto che questi file siano stati importati ed elaborati in una o più imPortazioni. Ogni batch Ricalcola pivot, similitudini, inclusioni e così via. Le sessioni utilizzano i parametri definiti per il batch e non ricalcolano pivot, similitudini, inclusioni e così via per ogni esecuzione di sessione.
+Per esportare utilizzando un set di parametri diverso, è necessario innanzitutto creare un nuovo batch. La prima sessione del nuovo batch produrrà risultati per i file elaborati nel caso fino a quel momento, indipendentemente dal fatto che questi file siano stati importati ed elaborati in una o più importazioni. Ogni batch Ricalcola pivot, similitudini, inclusioni e così via. Le sessioni utilizzano i parametri definiti per il batch e non ricalcolano pivot, similitudini, inclusioni e così via per ogni esecuzione di sessione.
   
 Ad esempio, si supponga che sia stato importato un caso e che i dati siano stati analizzati. Per recuperare i risultati dei messaggi di posta elettronica quasi duplicati e di threading per i dati incrementali, fare clic su **Crea sessione di esportazione** nello stesso batch precedentemente utilizzato per esportare i dati. 
   
@@ -185,8 +185,8 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
 |Traccia  <br/> |txt  <br/> |File di registro generato dallo strumento di esportazione di eDiscovery.  <br/> |
 |File di testo estratti  <br/> |Cartella file  <br/> |Cartella che contiene i file di testo estratti dei file esportati.  <br/> |
 |Input o file nativi  <br/> |Cartella file  <br/> |Cartella che contiene i file nativi e di input dei file esportati.  <br/> |
-|Esporta elenco  <br/> |XLSX  <br/> |Metadati dei file esPortati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
-|Carica file  <br/> |CSV  <br/> |Metadati dei file esPortati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
+|Esporta elenco  <br/> |XLSX  <br/> |Metadati dei file esportati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
+|Carica file  <br/> |CSV  <br/> |Metadati dei file esportati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
 |Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il suo nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche

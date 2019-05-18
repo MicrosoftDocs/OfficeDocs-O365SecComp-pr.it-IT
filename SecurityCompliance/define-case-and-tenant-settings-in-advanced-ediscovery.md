@@ -3,7 +3,7 @@ title: Definire le impostazioni del case e del tenant in Office 365 Advanced eDi
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Informazioni sulle impostazioni delle etichette, del modulo incrociato e del tenant che è possibile definire a livello di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 69e6e824a7c6a5698e9dc25095d4fab49e369490
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256914"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150598"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definire le impostazioni del case e del tenant in Office 365 Advanced eDiscovery
 
@@ -33,9 +33,9 @@ In questa sezione vengono descritte le impostazioni che possono essere definite 
 > [!NOTE]
 > Se nessun caso è attualmente selezionato in Advanced eDiscovery, la scheda **Impostazioni case** non è attiva. 
   
-### <a name="cross-module"></a>Modulo inCrociato
+### <a name="cross-module"></a>Modulo incrociato
 
-Le seguenti impostazioni del modulo inCrociato sono opzioni di caso applicabili ai moduli avanzati di eDiscovery.
+Le seguenti impostazioni del modulo incrociato sono opzioni di caso applicabili ai moduli avanzati di eDiscovery.
   
 - Pagina predefinita dopo l'accesso: imposta la pagina predefinita da visualizzare al momento dell'avvio di Advanced eDiscovery.
     

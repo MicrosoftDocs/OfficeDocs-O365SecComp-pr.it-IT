@@ -3,7 +3,7 @@ title: scenario di fuoriuscita dei dati della serie Solution di eDiscovery-ricer
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b06dea5449d655cfe66072b3607f40c3bb7362da
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258944"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153798"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -62,7 +62,7 @@ Ecco come gestire un problema di fuoriuscita dei dati:
 
 A seconda della prassi organizzativa, è necessario controllare chi può accedere al caso di eDiscovery utilizzato per analizzare un problema di fuoriuscita dei dati e impostare i limiti di conformità. Il modo più semplice per eseguire questa operazione consiste nell'aggiungere ricercatori come membri di un gruppo di ruoli esistente nel centro sicurezza & compliance e quindi aggiungere il gruppo di ruolo come membro del caso eDiscovery. Per informazioni sui gruppi di ruoli incorporati di eDiscovery e su come aggiungere membri a un caso di eDiscovery, vedere [assign eDiscovery](assign-ediscovery-permissions.md)Permissions.
   
-È inoltre possibile creare un nuovo gruppo di ruoli che sia allineato con le esigenze dell'organizzazione. Ad esempio, potrebbe essere necessario che un gruppo di investigatori per il versamento dei dati nell'organizzazione acceda e collabori su tutti i casi di perdita dei dati. A tale scopo, è possibile creare un gruppo di ruoli "investigatore per la fuoriuscita dei dati", assegnando i ruoli corretti (esportazione, deCrittografia RMS, revisione, anteprima, ricerca di conformità e gestione dei casi), aggiungendo gli investigatori di versamento dei dati al gruppo di ruoli e quindi aggiungendo la gruppo di ruolo come membro del caso di eDiscovery di perdita dei dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [configurare i limiti di conformità per le indagini di eDiscovery in Office 365](set-up-compliance-boundaries.md) . 
+È inoltre possibile creare un nuovo gruppo di ruoli che sia allineato con le esigenze dell'organizzazione. Ad esempio, potrebbe essere necessario che un gruppo di investigatori per il versamento dei dati nell'organizzazione acceda e collabori su tutti i casi di perdita dei dati. A tale scopo, è possibile creare un gruppo di ruoli "investigatore per la fuoriuscita dei dati", assegnando i ruoli corretti (esportazione, decrittografia RMS, revisione, anteprima, ricerca di conformità e gestione dei casi), aggiungendo gli investigatori di versamento dei dati al gruppo di ruoli e quindi aggiungendo la gruppo di ruolo come membro del caso di eDiscovery di perdita dei dati. Per istruzioni dettagliate su come eseguire questa operazione, vedere [configurare i limiti di conformità per le indagini di eDiscovery in Office 365](set-up-compliance-boundaries.md) . 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Passaggio 2: creare un caso di eDiscovery
 

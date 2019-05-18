@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 8/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sul widget del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252216"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158728"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flusso di posta in ingresso e in uscita
 
@@ -27,7 +27,7 @@ Le informazioni contenute nel widget sono correlate ai connettori e alla protezi
 
 - [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
 
-- [Come viene utilizzato TLS per proteggere il traffico della posta elettronica in Office 365](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+- [Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Protezione dei messaggi in transito (tramite TLS)
 

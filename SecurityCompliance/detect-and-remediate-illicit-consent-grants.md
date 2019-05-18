@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 4/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 5e89e6cb39c04b708ffe0a49a2cd41d6a775e4a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402954"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150279"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -83,7 +83,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
 4. Connettersi alla directory utilizzando il cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) .
 5. Eseguire la riga di comando di PowerShell come indicato di seguito:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
-Lo script produce un file denominato perMissions. csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite: 
+Lo script produce un file denominato Permissions. csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite: 
 1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti nel contratto di locazione. Le applicazioni di Office 365 native richiedono questa autorizzazione per funzionare correttamente. Tutte le applicazioni non Microsoft con questa autorizzazione devono essere esaminate con attenzione.
 2.  Nella colonna autorizzazione (colonna F) esaminare le autorizzazioni che ogni applicazione delegata deve soddisfare. Cercare l'autorizzazione "lettura" e "scrittura" o "*. All "autorizzazione e verificarne con attenzione perché potrebbero non essere appropriate.
 3.  Esaminare gli utenti specifici a cui sono concessi consenzienti. Se gli utenti di alto profilo o di alto impatto hanno concessi consensi inadeguati, è necessario indagare ulteriormente.

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità di & per cercare ed esportare i dati della chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb53daa381b89d8ded4f2400ed7781e2306eb263
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261006"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158738"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -34,7 +34,7 @@ Di seguito sono riportati i requisiti e le limitazioni per la configurazione e p
     
 - È necessario inviare una richiesta al supporto tecnico Microsoft per consentire all'organizzazione di cercare i dati della chat dei team nelle cassette postali basate sul cloud per gli utenti locali. Per abilitare questa funzionalità in questo articolo, vedere [presentazione di una richiesta con il supporto tecnico Microsoft](#filing-a-request-with-microsoft-support-to-enable-this-feature) . 
     
- **Nota:** Le conversazioni dei canali di teams vengono sempre memorizzate nella cassetta postale basata sul cloud associata al team. Questo significa che è possibile usare la ricerca contenuto per le conversazioni del canale di ricerca senza dover presentare una richiesta di supporto. Per ulteriori informazioni sulla ricerca delle conversazioni dei canali di teams, vedere [searchIng Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
+ **Nota:** Le conversazioni dei canali di teams vengono sempre memorizzate nella cassetta postale basata sul cloud associata al team. Questo significa che è possibile usare la ricerca contenuto per le conversazioni del canale di ricerca senza dover presentare una richiesta di supporto. Per ulteriori informazioni sulla ricerca delle conversazioni dei canali di teams, vedere [Searching Microsoft Teams and Office 365 groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
 ## <a name="how-it-works"></a>Funzionamento
 

@@ -3,7 +3,7 @@ title: Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Informazioni su come Office 365 Advanced eDiscovery può essere utile per analizzare i dati di Office 365, semplificare le revisioni dei documenti e prendere decisioni per eDiscovery efficienti.
-ms.openlocfilehash: 203d3bfa627064704b4123a757db94bc3478b7bc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 54700ad8d6d2dce07490caa82917bcfeee6036b6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262958"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158618"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 
@@ -28,7 +28,7 @@ Con Advanced eDiscovery, è possibile comprendere meglio i dati di Office 365 e 
   
 Advanced eDiscovery semplifica e velocizza il processo di revisione del documento identificando informazioni ridondanti con caratteristiche come il rilevamento e l'analisi dei thread di posta elettronica quasi duplicati. La funzionalità pertinenza applica la tecnologia di codifica predittiva per identificare i documenti rilevanti. Advanced eDiscovery apprende dalle decisioni di tagging sui documenti di esempio e applica tecniche statistiche e di apprendimento automatico per calcolare la pertinenza di ogni documento nel set di dati. In questo modo è possibile concentrarsi sui documenti principali, prendere decisioni rapide ma informate sulla strategia del caso, i dati di eliminazione e la revisione delle priorità.
   
- **Perché Advanced eDiscovery?** Office 365 Advanced eDiscovery si basa sull'insieme esistente di funzionalità di eDiscovery in Office 365. Ad esempio, è possibile utilizzare la funzionalità di ricerca nel centro sicurezza &amp; e conformità di Office 365 per eseguire una ricerca iniziale di tutte le origini di contenuto dell'organizzazione per identificare e raccogliere i dati che possono essere rilevanti per uno specifico caso legale. Successivamente, è possibile eseguire un'analisi su tali dati applicando il testo analitico, l'apprendimento automatico e la funzionalità di codifica predittiva e di riLevanza di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per un caso specifico. Il set di dati ridotto può quindi essere esportato fuori da Office 365 per ulteriori riesami. 
+ **Perché Advanced eDiscovery?** Office 365 Advanced eDiscovery si basa sull'insieme esistente di funzionalità di eDiscovery in Office 365. Ad esempio, è possibile utilizzare la funzionalità di ricerca nel centro sicurezza &amp; e conformità di Office 365 per eseguire una ricerca iniziale di tutte le origini di contenuto dell'organizzazione per identificare e raccogliere i dati che possono essere rilevanti per uno specifico caso legale. Successivamente, è possibile eseguire un'analisi su tali dati applicando il testo analitico, l'apprendimento automatico e la funzionalità di codifica predittiva e di rilevanza di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per un caso specifico. Il set di dati ridotto può quindi essere esportato fuori da Office 365 per ulteriori riesami. 
   
 ## <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 

@@ -3,18 +3,18 @@ title: Informazioni dettagliate sul ciclo di posta
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Gli amministratori possono ottenere informazioni sull'Insight del loop di posta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267077"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158668"
 ---
 # <a name="mail-loop-insight"></a>Informazioni dettagliate sul ciclo di posta
 

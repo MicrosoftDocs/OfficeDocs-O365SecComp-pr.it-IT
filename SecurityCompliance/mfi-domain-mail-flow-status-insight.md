@@ -1,22 +1,22 @@
 ---
-title: Informazioni sullo stato del flusso di posta principale del dominio
+title: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sulla panoramica dello stato del flusso di posta di dominio principale nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 851ef1438f111a36f69563670bbd0835a9956edc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868593"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158648"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Informazioni sullo stato del flusso di posta principale del dominio
+# <a name="top-domain-mail-flow-status-insight"></a>Informazioni dettagliate sullo stato del flusso di posta del dominio principale
 
 L'Insight **sullo stato del flusso di posta di dominio principale** offre lo stato corrente dei domini dell'organizzazione in termini di flusso di posta. Questo Insight consente di identificare e risolvere i problemi relativi ai domini che si verificano problemi di ***flusso di posta*** (ad esempio, non è possibile ricevere messaggi di posta elettronica esterni), in particolare le scadenze o i domini di dominio con record MX non corretti.
 

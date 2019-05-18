@@ -3,7 +3,7 @@ title: Proprietà dettagliate nel log di controllo di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrizioni di proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
-ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 69dfe34b0ace8061c3c41ae074582016fe61a55d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402964"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150338"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
@@ -47,9 +47,9 @@ Nella tabella seguente vengono descritte le proprietà incluse, in base al servi
 |ClientIP|L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.|Exchange ed Azure Active Directory|
 |ClientIPAddress|Uguale a ClientIP.|SharePoint|
 |CreationTime|Data e ora in formato UTC (Coordinated Universal Time) quando l'utente ha eseguito l'attività.|Tutto|
-|DestinationFileExtension|L'estensione di un file copiato o spostato. Questa proprietà viene visualizzata solo per le attività utente fileCopiate e fileMoved.|SharePoint|
-|NomefileDestinazione|Il nome del file viene copiato o spostato. Questa proprietà viene visualizzata solo per le azioni fileCopiate e fileMoved.|SharePoint|
-|DestinationRelativeUrl|URL della cartella di destinazione in cui un file viene copiato o spostato. La combinazione dei valori per le proprietà **SiteUrl**, **DestinationRelativeURL**e **NomefileDestinazione** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file copiato. Questa proprietà viene visualizzata solo per le attività utente fileCopiate e fileMoved.|SharePoint|
+|DestinationFileExtension|L'estensione di un file copiato o spostato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
+|NomefileDestinazione|Il nome del file viene copiato o spostato. Questa proprietà viene visualizzata solo per le azioni filecopiate e filemoved.|SharePoint|
+|DestinationRelativeUrl|URL della cartella di destinazione in cui un file viene copiato o spostato. La combinazione dei valori per le proprietà **SiteUrl**, **DestinationRelativeURL**e **NomefileDestinazione** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file copiato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
 |EventSource|Indica che si è verificato un evento in SharePoint. I valori possibili sono **SharePoint** e **ObjectModel**.|SharePoint|
 |ExternalAccess|Per l'attività di amministrazione di Exchange, specifica se il cmdlet è stato eseguito da un utente dell'organizzazione, dal personale del datacenter Microsoft o da un account di servizio di Datacenter o da un amministratore delegato. Il valore **false** indica che il cmdlet è stato eseguito da un utente dell'organizzazione. Il valore **true** indica che il cmdlet è stato eseguito dal personale del datacenter, da un account di servizio di Datacenter o da un amministratore delegato.  <br/> Per attività Cassetta postale di Exchange, specifica se è stato eseguito l'accesso a una cassetta postale da parte di un utente esterno all'organizzazione.|Exchange|
 |ExtendedProperties|Proprietà estese per un evento di Azure Active Directory.|Azure Active Directory|

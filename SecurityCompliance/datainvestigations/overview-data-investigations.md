@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257720"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150678"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -52,7 +52,7 @@ Utilizzare la scheda **Evidence** per esaminare i dati raccolti dal servizio Liv
 
 Utilizzare la scheda **utenti di interesse** per aggiungere e gestire gli utenti identificati come persone di interesse durante l'indagine sull'evidenza. Quando si aggiungono persone di interesse, le origini dati, ad esempio la cassetta postale e l'account OneDrive, vengono identificate e mappate. È quindi possibile applicare ulteriori ricerche cercando solo i percorsi di contenuto di tali utenti. Quando gli utenti hanno un ambito, le ricerche sono più efficienti e accurate perché lo strumento rielabora tutti i dati non indicizzati, ad esempio immagini o tipi di file non supportati. Nella scheda **utenti di interesse** è inoltre possibile visualizzare e cercare l'attività dei log di controllo di tali utenti per facilitare l'indagine. È possibile aggiungere altre persone di interesse durante l'indagine. Per ulteriori informazioni, vedere [Manage people of interest an Investigation](manage-people-of-interest.md).
 
-## <a name="indexing-the-data-of-people-of-interest"></a>InDicizzazione dei dati degli utenti interessati
+## <a name="indexing-the-data-of-people-of-interest"></a>Indicizzazione dei dati degli utenti interessati
 
 L'aggiunta di una persona interessata a un'indagine riindicizza tutti gli elementi parzialmente indicizzati dalle origini dati della persona. Questo processo è denominato *Advanced*indicizzazione. L'indicizzazione avanzata rielabora i dati quali immagini e tipi di file non supportati in modo che questi dati siano completamente individuabili quando si eseguono ricerche per raccogliere i dati per un'indagine. Utilizzare la scheda **elaborazione** per monitorare lo stato dell'indicizzazione avanzata e correggere eventuali errori di elaborazione che possono verificarsi utilizzando un processo denominato correzione degli *errori*. Per ulteriori informazioni, vedere [correzione degli errori durante l'elaborazione dei dati per un'indagine](error-remediation.md).
 

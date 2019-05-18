@@ -3,7 +3,7 @@ title: Configurare le impostazioni S/MIME in Exchange Online per Outlook sul Web
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Una breve descrizione di cosa devono fare gli amministratori di Exchange Online per visualizzare e configurare le impostazioni S/MIME in Outlook sul Web in Exchange Online.
-ms.openlocfilehash: 41ec5b675284b2040a11f9e076ccef4afcda561a
-ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
+ms.openlocfilehash: 2be1d7599d65601671504b7d6caf03e915f10fff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867829"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153858"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurare le impostazioni S/MIME in Exchange Online per Outlook sul Web
 
@@ -28,7 +28,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-SmimeCo
 
 ## <a name="considerations-for-chrome"></a>Considerazioni su Chrome
 
-Per utilizzare S/MIME in Outlook sul Web nel browser Web di Google Chrome, è necessario che l'utente (o un altro amministratore) debba impostare e configurare il criterio di cromo denominato **ExtensionInstallForcelist** per installare l'estensione Microsoft S/MIME in Chrome. Il valore del criterio `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`è. Si noti che l'applicazione di questo criterio richiede I computer aggiunti a un dominio, in modo che l'utilizzo di S/MIME in Chrome richiede effettivamente I computer aggiunti a un dominio.
+Per utilizzare S/MIME in Outlook sul Web nel browser Web di Google Chrome, è necessario che l'utente (o un altro amministratore) debba impostare e configurare il criterio di cromo denominato **ExtensionInstallForcelist** per installare l'estensione Microsoft S/MIME in Chrome. Il valore del criterio `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`è. Si noti che l'applicazione di questo criterio richiede i computer aggiunti a un dominio, in modo che l'utilizzo di S/MIME in Chrome richiede effettivamente i computer aggiunti a un dominio.
 
 Per informazioni dettagliate sul criterio **ExtensionInstallForcelist** , vedere [ExtensionInstallForcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist).
 

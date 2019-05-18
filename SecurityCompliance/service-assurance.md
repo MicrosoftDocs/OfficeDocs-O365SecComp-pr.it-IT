@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261166"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158828"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & Compliance
 
@@ -101,8 +101,8 @@ Selezionare il report che si desidera scaricare e quindi fare clic su **Salva** 
   
 |**Pagina garanzia del servizio**|**Contenuto disponibile**|**Descrizione**|
 |:-----|:-----|:-----|
-|Rapporti di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilizzare i rapporti di conformità del servizio per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti delle operazioni di reCapito dei servizi di Office 365.  <br/> |
-|Documenti di attendibilità  <br/> | DOMANDE frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
+|Rapporti di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilizzare i rapporti di conformità del servizio per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti delle operazioni di recapito dei servizi di Office 365.  <br/> |
+|Documenti di attendibilità  <br/> | Domande frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
 |Controlli controllati  <br/> |Standard globali e normative che Office 365 ha implementato.  <br/> | Assistenza per la valutazione dei rischi durante la valutazione, l'onboarding o l'utilizzo di servizi di Office 365. Scoprire:  <br/> <br/>-In che modo i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>-Informazioni sui test dei controlli in Office 365, risultati di questi test e al termine dell'operazione.  <br/> |
    
 A seconda della configurazione specifica, le opzioni incluse nella visualizzazione potrebbero avere alcune differenze.

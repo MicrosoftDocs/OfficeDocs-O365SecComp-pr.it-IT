@@ -1,22 +1,22 @@
 ---
-title: Report dei client auth SMTP
+title: Report sui client di autenticazione SMTP
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158598"
 ---
-# <a name="smtp-auth-clients-report"></a>Report dei client auth SMTP
+# <a name="smtp-auth-clients-report"></a>Report sui client di autenticazione SMTP
 
 Il rapporto **client auth SMTP** evidenzia l'utilizzo del protocollo di invio client auth SMTP da parte degli utenti o degli account di sistema nell'organizzazione. Questo protocollo legacy (che utilizza l'endpoint smtp.office365.com) offre solo l'autenticazione di base ed è suscettibile di essere utilizzato dagli account compromessi per inviare messaggi di posta elettronica.  Questo rapporto consente di verificare la possibilità di attività inusuali. Vengono inoltre visualizzati i dati di utilizzo di TLS per client o dispositivi che utilizzano l'autenticazione SMTP.
 

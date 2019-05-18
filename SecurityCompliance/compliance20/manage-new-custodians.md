@@ -1,10 +1,10 @@
 ---
-title: Gestire i depositari in un caso avanzato di eDiscovery (anteprima)
+title: Gestire i depositari in un caso avanzato di eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,113 +14,133 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d9806ecbc23f46ee2d39f8d7e6be07af0d6a83e8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241853"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151618"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestire i depositari in un caso avanzato di eDiscovery (anteprima)
+# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
-La scheda depositari contiene un elenco ordinabile di tutti i depositari nel caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode verranno raccolti automaticamente da Azure Active Directory.
+La scheda depositari in Advanced eDiscovery contiene un elenco di tutti i depositari che sono stati aggiunti al caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode vengono raccolti automaticamente da Azure Active Directory e sono visualizzabili in Advanced eDiscovery.
 
 ![Gestire i depositari](../media/CustodianDetails.PNG)
 
-## <a name="viewing-custodian-details"></a>Visualizzazione dei dettagli del custode
+## <a name="view-custodian-details"></a>Visualizzare i dettagli del custode
 
-Dopo aver aggiunto un custode a un caso e averli selezionati nell'elenco della scheda **depositari** , viene visualizzata la pagina del riquadro a comparsa contenente i dettagli del custode. Da qui, è possibile visualizzare tutti i dettagli relativi a quel custode. La pagina del riquadro a comparsa contiene i campi seguenti:
+Per visualizzare i dettagli relativi a un custode, fare clic sul custode dall'elenco nella scheda **depositari** . Viene visualizzata una pagina a comparsa che contiene le seguenti informazioni sul custode:
 
 - Informazioni di contatto
 
-  - **Nome**visualizzato: il nome visualizzato nella rubrica per il custode. Questo è in genere la combinazione del nome, dell'iniziale e del cognome del custode.
-  - **Posta/SMTP**: indirizzo SMTP per il custode, ad esempio Jeff@contoso.onmicrosoft.com.  
-  - **Titolo**: titolo del processo del custode.
-  - **Reparto**: il nome del reparto in cui lavora il custode.
-  - **Manager**: il responsabile della banca depositaria. Il responsabile designato riceverà eventuali comunicazioni di esCalation per questo custode.
+  - **Nome** visualizzato-nome visualizzato nella rubrica del custode. Questo è in genere la combinazione del nome, dell'iniziale e del cognome del custode.
+  
+   - **Mail/SMTP** : l'indirizzo SMTP primario per il custode, ad esempio brianj@contoso.onmicrosoft.com. Si noti che anche il nome dell'entità utente (UPN) del custode è elencato.
+
+  - **Title** -titolo del processo del custode.
+
+  - **Department** -nome del reparto in cui lavora il custode.
+
+  - **Manager** -responsabile del custode. Il responsabile designato riceverà eventuali comunicazioni di escalation per questo custode.
   
 - Informazioni sulle posizioni
 
-  - **Città**: la città in cui si trova il custode.
-  - **Stato**: lo stato o la provincia nell'indirizzo del custode.
-  - **Paese/area**geografica: il paese/area geografica in cui si trova il custode; ad esempio, "US" o "UK".
-  - **Office**: la sede dell'ufficio nel luogo di lavoro del custode.
+  - **City** : la città in cui si trova il custode.
+
+  - **Stato** : lo stato o la provincia nell'indirizzo del custode.
+
+  - **Paese/area** geografica-paese/area geografica in cui si trova il custode.
+
+  - **Office** : la sede dell'ufficio nel luogo di lavoro del custode.
 
 - Informazioni sul caso
 
-  - **Stato blocco**: indica se il custode è stato messo in attesa. 
-  - **Stato della comunicazione**: indica se il custode ha emesso un avviso di esenzione. Se il custode ha emesso un avviso, questo verrà contrassegnato come *pubblicato*. Se al custode non è stato emesso un avviso, lo stato non verrà *pubblicato*. 
-  - **Status**: lo stato del custode all'interno del caso. Questo sarà *attivo* se il custode è ancora in attesa per il caso. Se un custode è stato rimosso da un caso, il relativo stato verrà modificato in *rilasciato*. 
+  - **Stato blocco** -indica se il custode è stato messo in attesa. 
 
-- Stato di elaborazione
+  - **Stato della comunicazione**: indica se il custode ha emesso un avviso di esenzione. Se al custode è stato emesso un avviso, viene **pubblicato**questo valore di questa proprietà. Se al custode non è stato emesso alcun avviso, lo stato non viene **pubblicato**. 
 
-  - **Stato**di indicizzazione: indica lo stato del processo di indicizzazione Deep.  
-  - **IndexIng Last updated Time**: indica la DateStamp di quando è stato attivato l'ultimo processo di indicizzazione Deep.
-  - **Origini dati**: Visualizza il numero di cassette postali, siti e team selezionati per il custode.
+  - **Status** : lo stato del custode all'interno del caso. Lo stato **attivo** indica che il custode è parte del caso. Se un custode viene rilasciato da un caso, lo stato viene modificato in **rilasciato**. 
 
-## <a name="editing-a-custodian"></a>Modifica di un custode
+- Origini dati e informazioni sull'indicizzazione
+
+    - **Origini dati** : consente di visualizzare il numero e il tipo di origini dati (cassette postali, siti e Team) associati al custode e fanno parte del caso.
+
+    - **Tempo di aggiornamento dell'indice** : indica la data e l'ora in cui è stato attivato l'ultimo processo di indicizzazione avanzato. Questa proprietà indicherà anche quando il processo di indicizzazione avanzato è attualmente in corso.
+
+
+## <a name="edit-a-custodian"></a>Modificare un custode
 
 Man mano che il caso progredisce, è possibile rilevare che potrebbero essere presenti ulteriori origini dati rilevanti per un determinato custode & il caso. In altri scenari potrebbe essere necessario rimuovere determinate origini dati che sono state esaminate e ritenute irrilevanti.
 
-Per aggiornare un custode e le origini dati selezionate:
+Per aggiornare le origini dati associate a un custode:
 
-1. Selezionare un caso esistente dall' **eDiscovery _GT_ Advanced eDiscovery (Preview)**.
+1. Passare a **eDiscovery _GT_ Advanced eDiscovery** e aprire il caso.
   
-2. Nel caso, fare clic sulla scheda **depositari** .
+2. Fare clic sulla scheda **depositari** .
   
-3. Selezionare il custode o i depositari dall'elenco e fare clic su **modifica origini**.
+3. Selezionare un custode dall'elenco e fare clic su **modifica** nella pagina a comparsa.
 
     ![Modificare origini dati](../media/EditCustodianDataSource.PNG)
   
-4. Consente di aggiornare le selezioni per i percorsi di Exchange e OneDrive facendo clic su **Scegli origini dati**.
+4. Fare clic su scegliere la scheda **origini dati** per modificare le impostazioni per la cassetta postale di Exchange e l'account OneDrive della banca depositaria, fare clic su **Scegli origini dati**.
   
-5. Aggiunta o rimozione di Team, SharePoint o cassette postali di Exchange mappati dall'utente facendo clic per **selezionare origini dati aggiuntive**. Per ulteriori informazioni su come eseguire il mapping delle origini dati a un custode, vedere [aggiungere i depositari a un caso](add-custodians-to-case.md).
+5. Fare clic sulla scheda **Seleziona origini dati aggiuntive** per aggiungere o rimuovere team, SharePoint o cassette postali di Exchange associati al custode. 
+
+    Per ulteriori informazioni sulle origini dati associate a un custode, vedere "passaggio 3: associare altre origini dati a un custode" in [Aggiungi depositari a un caso](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
   
-6. Per aggiornare lo stato di conservazione dei depositari, fare clic su **Archivia esenzioni detentive**e abilitare o disabilitare il blocco per i depositari.
+6. Fare clic su **Place detentive** holds per abilitare o disabilitare il blocco per il custode.
 
-> [!TIP]
-> È possibile selezionare più depositari per eseguire azioni in blocco, come la reindicizzazione, il rilascio o la modifica di un insieme di depositari.
+## <a name="resolve-custodian-processing-errors"></a>Risolvere gli errori di elaborazione del custode
 
-## <a name="resolving-custodian-processing-errors"></a>Risoluzione degli errori di elaborazione del custode
+Nella maggior parte dei flussi di lavoro di eDiscovery per le indagini giudiziarie, viene cercato un sottoinsieme di dati di un custode dopo che il custode è stato aggiunto a un caso legale. A causa dei file di dimensioni molto grandi o di un possibile danneggiamento dei dati, alcuni elementi nelle origini dati associate a un custode possono essere parzialmente indicizzati. Utilizzando la funzionalità di indicizzazione [avanzata](indexing-custodian-data.md) in Advanced eDiscovery, è possibile correggere automaticamente gli elementi indicizzati in modo automatico riindicizzando questi elementi su richiesta.
 
-Nella maggior parte dei flussi di lavoro legali, dopo l'aggiunta di depositari per un'indagine specifica, verrà eseguita una ricerca in un sottoinsieme di dati degli utenti. A causa di grandi dimensioni o possibili danneggiamenti, alcuni elementi all'interno delle origini dati dei depositari possono essere parzialmente indicizzati. Utilizzando la funzionalità Advanced eDiscovery (Preview) Deep indicizzazione, questi elementi parzialmente indicizzati possono essere corretti automaticamente tramite la ricerca per indicizzazione e la reindicizzazione di questi elementi su richiesta. 
+Quando un custode viene aggiunto a un caso, i dati che si trovano nelle origini dati associate al custode vengono reindicizzati automaticamente (tramite il processo di indicizzazione avanzato). Questo significa che è possibile lasciare i dati sul posto invece di scaricarli e rimediarli e quindi cercarli in modalità non in linea. Tuttavia, durante il ciclo di vita di un caso legale, è possibile associare nuove origini dati a un custode. In questo caso, è necessario reindicizzare i dati del custode rieseguendo il processo di indicizzazione avanzato per correggere gli elementi parzialmente indicizzati e aggiornare l'indice per i dati del custode.
 
-Quando un custode viene aggiunto a un caso, i relativi dati vengono automaticamente "indicizzati in profondità", consentendo agli utenti di lasciare tali elementi parzialmente indicizzati anziché dover scaricare, correggere e rieseguire le ricerche al di fuori di Office 365. Durante il ciclo di vita di un caso, un utente può correggere gli elementi o aggiungere nuove origini dati per un determinato custode. Potrebbe essere necessario aggiornare l'indice del custode. 
+Per attivare il processo di reindicizzazione per risolvere gli elementi parzialmente indicizzati:
 
-Per attivare un processo di reindicizzazione per indirizzare gli elementi parzialmente indicizzati:
+1. Passare a **eDiscovery _GT_ Advanced eDiscovery** e aprire il caso.
 
-1. Passare a **eDiscovery _GT_ Advanced eDiscovery (Preview)** e selezionare un caso esistente.
+2. Fare clic **sulla scheda depositari**e quindi selezionare un custode i cui dati devono essere reindicizzati. 
 
-2. Nel caso, fare clic su per la **scheda depositari**. 
+3. Nella pagina riquadro a comparsa fare clic su **Aggiorna indice**.
 
-3. Selezionare il custode o i depositari che devono essere reindicizzati e quindi fare clic su ![Indice di aggiornamento](../media/UpdateIndex.PNG) nella pagina a comparsa.
+   Viene visualizzata una finestra di dialogo che indica che è stato creato il processo di indicizzazione.
 
-4. Controllare lo stato dell'indice del custode facendo clic sul collegamento nella colonna **stato processo** di indicizzazione nella scheda **depositari** .  
+La reindicizzazione dei dati del custode è un processo a esecuzione prolungata. il processo corrispondente creato è denominato reindicizzazione **dei dati del custode**. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **depositari** monitorando lo stato nella colonna **stato processo** di indicizzazione.
 
-5. Lo stato del processo di reindicizzazione può essere rilevato anche nella scheda **processi** .
+Per ulteriori informazioni, vedere:
 
-Per ulteriori informazioni su come reindicizzare e correggere gli elementi parzialmente indicizzati, vedere [Fix Processing Errors](processing-data-for-case.md).
+- [Gestire gli errori di elaborazione](processing-data-for-case.md)
 
-## <a name="releasing-a-custodian-from-a-case"></a>Rilascio di un custode da un caso
+- [Gestire processi](managing-jobs-ediscovery20.md)
 
-Un custode viene rilasciato in situazioni in cui un caso è chiuso, un custode non è più in dovere di preservare il contenuto di un caso o quando un custode è ritenuto non più pertinente a un caso specifico. 
+## <a name="release-a-custodian-from-a-case"></a>Rilasciare un custode da un caso
 
-Se si rilascia un custode dopo la pubblicazione di un avviso di esenzione, verrà inviato un avviso di rilascio al custode. Inoltre, verranno rimossi anche tutti gli appigli detentivi attribuiti ai depositari rilasciati.
+Un custode viene rilasciato in situazioni in cui un caso è chiuso, il custode non è più in dovere di preservare il contenuto di un caso o quando il custode è ritenuto non più pertinente al caso. 
 
-Se il custode è stato collocato in una posizione invisibile all'utente, in cui non sono state rilasciate notifiche di archiviazione legale, verranno rimossi tutti i resti di custodia attribuiti ai depositari rilasciati.  
+Se si rilascia un custode dopo la pubblicazione di un avviso di esenzione, verrà inviato un avviso di rilascio al custode. Inoltre, tutte le esenzioni inserite nelle origini dati associate al custode vengono rimosse. Se il custode è stato collocato in una conservazione *invisibile all'utente*, in cui non sono state rilasciate notifiche per la conservazione legale, non verrà inviato un avviso di rilascio, ma verranno rimosse tutte le esenzioni eseguite su origini dati associate a tale custode.
 
 Per rilasciare un custode: 
 
-1.  Passare alla scheda **depositari** .
+1. Passare a **eDiscovery _GT_ Advanced eDiscovery** e aprire il caso.
 
-2.  Seleziona il custode dall'elenco e fai clic su ![Rilascia il custode](../media/ReleaseCustodian.PNG) nella pagina a comparsa.
+2.  Passare alla scheda **depositari** .
 
-    Lo stato del custode nella scheda **depositari** è impostato su **rilasciato** e lo **stato di blocco** sulla pagina del riquadro a comparsa viene modificato in **inattivo**. 
+3.  Fare clic sulla **scheda depositari**e quindi selezionare il custode che viene rilasciato dal caso.
 
-> [!TIP]
-> Un custode potrebbe essere coinvolto contemporaneamente in diverse questioni legali. Quando un custode viene rilasciato da un caso, le esenzioni e le notifiche su altre questioni non verranno influenzate.
+4. Nella pagina riquadro a comparsa fare clic su **rilascia custode**.
 
-## <a name="related-information"></a>Informazioni correlate
+   Viene visualizzata una pagina di avviso in cui viene spiegato che se un blocco è posizionato su un'origine dati associata al custode, il blocco verrà rimosso e qualsiasi altro blocco associato a un caso di eDiscovery avanzato verrà applicato. Che include altri tipi di funzionalità di conservazione e conservazione in Office 365, ad esempio i criteri di conservazione di Office 365.
 
- - [Correzione degli errori durante l'elaborazione dei dati](error-remediation.md) 
-- [Uso delle comunicazioni](managing-custodian-communications.md)
+5. Fare clic su **Sì** per confermare che si desidera rilasciare il custode. 
+
+    Si noti che lo stato di questo utente nella scheda **depositari** è impostato su **rilasciato** e lo **stato di blocco** sulla pagina a comparsa viene modificato in **false**. 
+
+> [!NOTE]
+> Un custode potrebbe essere coinvolto contemporaneamente in numerosi casi legali. Quando un custode viene rilasciato da un caso, le esenzioni e le notifiche su altre questioni non verranno influenzate.
+
+## <a name="bulk-edit-custodians"></a>Modifica in blocco di custodi
+
+È possibile utilizzare l'editor di massa per modificare più depositari contemporaneamente. A tale scopo, è sufficiente selezionare due o più depositari nella scheda **depositari** per visualizzare l'editor di massa e quindi fare clic su una delle attività.
+
+![Pagina a comparsa per modificare le impostazioni di più depositari](../media/AeDBulkEditCustodians.png)

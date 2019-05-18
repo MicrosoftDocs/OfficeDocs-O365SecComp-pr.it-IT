@@ -1,23 +1,23 @@
 ---
-title: Codice di preVidenza sociale dell'Unione europea o ID equivalente
+title: Codice di previdenza sociale dell'Unione europea o ID equivalente
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando rileva il numero di preVidenza sociale dell'Unione europea o il tipo di informazioni riservate ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando rileva il numero di previdenza sociale dell'Unione europea o il tipo di informazioni riservate ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
+ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154488"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>Codice di preVidenza sociale dell'Unione europea o ID equivalente
+# <a name="eu-social-security-number-or-equivalent-id"></a>Codice di previdenza sociale dell'Unione europea o ID equivalente
 
 In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP, Data Loss Prevention), quando viene rilevato il codice fiscale dell'Unione europea (SSN) o il tipo di informazioni sensibili ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
   
@@ -88,13 +88,13 @@ codice assicurativo
   
 codice assicurativo #
   
-socialsecurityno #
+socialsecurityno#
   
 sozialversicherungsnummer
   
 soziale Sicherheit kein
   
-Versicherungsnummer
+versicherungsnummer
   
 ## <a name="belgium"></a>Belgio
 
@@ -145,7 +145,7 @@ numero nazionale
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -159,7 +159,7 @@ BNN
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 numéro nazionale
   
@@ -169,9 +169,9 @@ numéro d'assuré
   
 identificazione nazionale
   
-identifiantnational #
+identifiantnational#
   
-numéronational #
+numéronational#
   
 ## <a name="croatia"></a>Croazia
 
@@ -228,7 +228,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -242,7 +242,7 @@ BNN
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 OIB
   
@@ -307,7 +307,7 @@ numero di identificazione personale
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -317,7 +317,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -380,7 +380,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -390,7 +390,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 CPR-Nummer
   
@@ -461,7 +461,7 @@ numero di identità
   
 numero di identificazione nazionale finlandese
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -485,7 +485,7 @@ numero identiteetti
   
 Suomen Kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
@@ -497,7 +497,7 @@ hetu
   
 ## <a name="france"></a>Francia
 
-Per informazioni dettagliate, vedere la sezione "Francia social preVidenza (INSEE)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Francia social previdenza (INSEE)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Germania
 
@@ -554,9 +554,9 @@ codice di previdenza sociale ungherese
   
 social security number
   
-SocialSecurityNumber #
+socialsecuritynumber#
   
-hssn #
+hssn#
   
 socialsecuritynno
   
@@ -572,15 +572,15 @@ SSN
   
 previdenza sociale No
   
-ÁFA
+áfa
   
 közösségi adószám
   
-Általános forgalmi Adó szám
+általános forgalmi adó szám
   
-hozzáadottérték Adó
+hozzáadottérték adó
   
-ÁFA szám
+áfa szám
   
 Magyar ÁFA szám
   
@@ -590,7 +590,7 @@ Per informazioni dettagliate, vedere la sezione "Portugal Citizen Card Number" i
   
 ## <a name="spain"></a>Spagna
 
-Per informazioni dettagliate, vedere la sezione "Spagna Social preVidenza sociale (SSN)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Per informazioni dettagliate, vedere la sezione "Spagna Social previdenza sociale (SSN)" in [che cosa cercano i tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="sweden"></a>Svezia
 
@@ -669,7 +669,7 @@ identifikationsnumret
   
 personnummer
   
-identifikationsnumret #
+identifikationsnumret#
   
 ## <a name="see-also"></a>Vedere anche
 

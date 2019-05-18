@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di licenza del driver dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255774"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152978"
 ---
 # <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione europea
 
@@ -59,7 +59,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/>  numero della patente di guida  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein Republik Osterreich  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/>  numero della patente di guida  <br/> dlno#  <br/> fuhrerschein  <br/> fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Belgio
 
@@ -99,7 +99,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> dlno #  <br/> Rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> dlno#  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
@@ -139,7 +139,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно d'средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно d'средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Croazia
 
@@ -179,7 +179,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vozačka Dozvola  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Cipro
 
@@ -218,7 +218,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>Repubblica Ceca
 
@@ -264,7 +264,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Danimarca
 
@@ -304,7 +304,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> kørekort  <br/> Kørekortnummer  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> kørekort  <br/> Kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estonia
 
@@ -347,7 +347,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> dlno #  <br/> permis de conduire  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero della patente di guida  <br/> dlno#  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finlandia
 
@@ -392,7 +392,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> AJOKORTTI  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>Francia
 
@@ -439,7 +439,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|DlL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
+|DlL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>Ungheria
 
@@ -482,7 +482,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
@@ -525,7 +525,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>Italia
 
@@ -572,7 +572,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
@@ -611,7 +611,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Lussemburgo
 
@@ -650,7 +650,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -699,7 +699,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Liċenzja TAS-sewqan  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> Liċenzja TAS-sewqan  <br/> |
    
 ## <a name="netherlands"></a>Paesi Bassi
 
@@ -738,7 +738,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> permis de conduire  <br/> Rijbewijs  <br/> rijbewijsnummer  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
@@ -787,7 +787,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> prawo jazdy  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portogallo
 
@@ -836,7 +836,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> carteira de motorista  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Romania
 
@@ -879,7 +879,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> Permis de conducere  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> Permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>Slovacchia
 
@@ -922,7 +922,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Slovenia
 
@@ -961,7 +961,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>Spagna
 
@@ -1004,7 +1004,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> DL  <br/> driver Lic.  <br/> patente di guida  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente di guida  <br/> numero della patente di guida  <br/> permesso di guida  <br/> numero di licenza di guida  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de Permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> Permiso conducir  <br/> licencia de manejo  <br/> El carnet de conducir  <br/> carnet conducir  <br/> |
+|dlno#  <br/> DL  <br/> driver Lic.  <br/> patente di guida  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> numero di patente di guida  <br/> numero della patente di guida  <br/> permesso di guida  <br/> numero di licenza di guida  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia conducir  <br/> número de carnet de conducir  <br/> número carnet conducir  <br/> licencia conducir  <br/> número de Permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> El carnet de conducir  <br/> carnet conducir  <br/> |
    
 ## <a name="sweden"></a>Svezia
 
@@ -1049,7 +1049,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno #  <br/> körkort  <br/> |
+|DL  <br/> driver license  <br/> numero della patente di guida  <br/> patente di guida  <br/> driver Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> numero della patente di guida  <br/> numero di patente del conducente  <br/> numero della patente di guida  <br/> dlno#  <br/> körkort  <br/> |
    
 ## <a name="uk"></a>Regno Unito
 

@@ -6,18 +6,18 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256314"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152708"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quali criteri si applicano quando più metodi di protezione e analisi di rilevamento vengono eseguiti nel messaggio di posta elettronica
 
@@ -41,7 +41,7 @@ Inoltre, questi criteri si applicano alle _organizzazioni con ATP_.
 |Priority |Criteri  |Categoria  |Dove gestito |
 |---------|---------|---------|---------|
 |7     | Rappresentazione del dominio         | DIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP         |
-|8     | Rappresentazione utente        | UIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP          |
+|8      | Rappresentazione utente        | UIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP          |
 
 Ad esempio, se si dispone di due criteri con le rispettive priorità:
 

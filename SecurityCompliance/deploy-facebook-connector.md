@@ -4,28 +4,27 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook in Office 365. Dopo aver importato i dati in Office 365, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: d90714072bdeb609fe4af14208476bfa2f60b6d7
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33308075"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150558"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Distribuire un connettore per archiviare i dati di Facebook in Office 365
 
-Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati da pagine business di Facebook a Office 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Facebook, vedere [utilizzare i connettori di esempio per archiviare i dati di terze parti in Office 365](archive-third-party-data-with-sample-connector.md). 
-
+Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati da pagine business di Facebook a Office 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Facebook, vedere [use a sample Connector to Archive Facebook Data in Office 365 (Preview)](archive-facebook-data-with-sample-connector.md). 
 
 ## <a name="step-1-download-the-package"></a>Passaggio 1: scaricare il pacchetto
 
-Scaricare il pacchetto precompilato dalla sezione release del repository all' <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>indirizzo. Nella versione più recente, scaricare il file zip denominato **SampleConnector. zip**. Il file zip verrà caricato in Azure nel passaggio 4.
+Scaricare il pacchetto precompilato dalla sezione Release nell'archivio GitHub all'indirizzo <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>. Nella versione più recente, scaricare il file zip denominato **SampleConnector. zip**. Il file zip verrà caricato in Azure nel passaggio 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Passaggio 2: creare un'app in Azure Active Directory
 
@@ -113,7 +112,7 @@ Scaricare il pacchetto precompilato dalla sezione release del repository all' <h
 
    ![](media/FBCimage20.png)
 
-2. Inserire i dettagli (come illustrato di seguito) e quindi creare l'applicazione Web. Si noti che il nome immesso nella casella **nome app** verrà utilizzato per creare l'URL del servizio app di Azure; ad esempio fbconnector.azurewebsites.NET.
+2. Inserire i dettagli (come illustrato di seguito) e quindi creare l'applicazione Web. Si noti che il nome immesso nella casella **nome app** verrà utilizzato per creare l'URL del servizio app di Azure; ad esempio fbconnector.azurewebsites.net.
 
    ![](media/FBCimage21.png)
 
@@ -127,7 +126,7 @@ Scaricare il pacchetto precompilato dalla sezione release del repository all' <h
 
     ![](media/FBCimage22.png)
 
-4. In **Impostazioni generali**, fare clic **su** avanti accanto a **sempre attiva**. Fare clic su **Salva** nella parte superiore della pagina per salvare le impostazioni di Applicaton.
+4. In **Impostazioni generali**, fare clic **su** avanti accanto a **sempre attiva**. Fare clic su **Salva** nella parte superiore della pagina per salvare le impostazioni dell'applicazione.
 
    ![](media/FBCimage23.png)
 
@@ -210,7 +209,7 @@ Scaricare il pacchetto precompilato dalla sezione release del repository all' <h
 1. Passare a https://\<AzureAppResourceName>. azurewebsites. NET (dove AzureAppResourceName è il nome della risorsa di Azure App denominata nel passaggio 4), ad esempio, se il nome è **fbconnector**, andare a https://fbconnector.azurewebsites.net. La Home page dell'app avrà lo stesso aspetto della schermata seguente.
 
 
-  ![](media/FBCimage41.png)
+   ![](media/FBCimage41.png)
 
 2. Fare clic su **Configura** per visualizzare una pagina di accesso.
  
@@ -226,7 +225,7 @@ Scaricare il pacchetto precompilato dalla sezione release del repository all' <h
    - **ID applicazione Facebook** -ID app per l'applicazione Facebook ottenuta al passaggio 5.
    - **Segreto dell'applicazione Facebook** : il segreto dell'app per l'applicazione Facebook ottenuta al passaggio 5.
    - I webhook di **Facebook verificano** il token, ovvero il token di verifica creato nel passaggio 5.
-   - **ID applicazione AAD** -ID applicazione per l'app Azure Active Directory creata al passaggio 2
+   - **ID applicazione AAD** -ID applicazione per l'app Azure Active Directory creata al passaggio 2.
    - **Segreto dell'applicazione AAD** : il valore del segreto di APISecretKey creato nel passaggio 4.
    - **URI dell'applicazione AAD** -URI dell'applicazione AAD ottenuto nel passaggio 2; ad esempio, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
    - **Chiave di strumentazione Insights app** -lasciare vuota questa casella.
@@ -239,15 +238,17 @@ Scaricare il pacchetto precompilato dalla sezione release del repository all' <h
 
    ![](media/FBCimage44.png)
 
-2.  Fare clic su **Aggiungi connettore** e quindi su **personalizzato**.
+2.  Fare clic su **Aggiungi connettore** e quindi su **pagine di Facebook**.
 
     ![](media/FBCimage46.png)
 
-3.  Nella pagina **Aggiungi applicazione del connettore** , immettere le informazioni seguenti e quindi fare clic su **Avanti**.
+3.  Nella pagina **Aggiungi applicazione del connettore** , immettere le informazioni seguenti e quindi fare clic su **convalida connettore**.
 
     - Nella prima casella digitare un nome per il connettore, ad esempio **Facebook**.
     - Nella seconda casella digitare o incollare il valore dell'APISecretKey aggiunto nel passaggio 4.
-    - Nella terza casella, digitare l'URL del servizio app di Azure; ad esempio **https://fbconnector.azurewebsites.net**.
+    - Nella terza casella digitare o incollare l'URL del servizio app di Azure; ad esempio **https://fbconnector.azurewebsites.net**.
+ 
+    Dopo che il connettore è stato convalidato, fare clic su **Avanti**.
     
     ![](media/FBCimage47.png)
 

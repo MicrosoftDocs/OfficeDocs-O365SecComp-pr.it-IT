@@ -3,7 +3,7 @@ title: Eseguire una ricerca nel log di controllo nel centro sicurezza e conformi
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 9bf288618d91d4084580c45d96d13e345af32ea9
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970309"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158788"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
@@ -735,7 +735,7 @@ Sì. L'API di attività di gestione di Office 365 viene utilizzata per recuperar
 
 No. Questi sono gli unici due modi per ottenere i dati dal servizio di controllo di Office 365. 
 
-**È necessario abilitare singolarmente il controllo in ogni servizio di cui si desidera acquisire i registri di controllo?**
+**È necessario abilitare singolarmente il controllo in ogni servizio di cui si desidera acquisire I registri di controllo?**
 
 Nella maggior parte dei servizi di Office 365, il controllo è abilitato per impostazione predefinita dopo l'attivazione iniziale del controllo per l'organizzazione di Office 365, come descritto nella sezione [prima di iniziare](#before-you-begin) in questo articolo. Tuttavia, è necessario abilitare il controllo delle cassette postali in Exchange Online per ogni cassetta postale che si desidera controllare.   Per impostazione predefinita, viene attivato il controllo delle cassette postali per tutte le cassette postali in un'organizzazione di Office 365. Per ulteriori informazioni, vedere "il controllo delle cassette postali di Exchange verrà abilitato per impostazione predefinita" nel [Blog Microsoft sulla sicurezza, la privacy e la conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
 

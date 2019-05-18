@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241263"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151738"
 ---
 # <a name="manage-hold-notifications"></a>Gestire le notifiche di blocco
 
-Dopo aver avviato il flusso di lavoro di notifica per la conservazione legale, è possibile sfruttare Advanced eDiscovery (Preview) per monitorare lo stato delle comunicazioni. La scheda comunicazioni Mostra tutte le notifiche di blocco all'interno del caso Advanced eDiscovery (Preview). In questa sezione, è possibile visualizzare i dettagli, ad esempio il numero di depositari che sono stati assegnati o che hanno riconosciuto l'avviso.
+Dopo aver avviato il flusso di lavoro di notifica per la conservazione legale, è possibile sfruttare Advanced eDiscovery per tenere sotto controllo lo stato delle comunicazioni. La scheda comunicazioni Visualizza tutte le notifiche di blocco all'interno del caso eDiscovery avanzato. In questa sezione, è possibile visualizzare i dettagli, ad esempio il numero di depositari che sono stati assegnati o che hanno riconosciuto l'avviso.
 
 ## <a name="view-communication-details"></a>Visualizzare i dettagli della comunicazione
 
@@ -42,7 +42,7 @@ Nel riquadro a comparsa dettagli comunicazione, è possibile visualizzare in ant
 Occasionalmente, i depositari perdono il controllo dei messaggi di posta elettronica nel lavoro quotidiano. In alternativa, per un contenzioso di lunga durata, un custode può raggiungere e chiedere di inviare di nuovo un avviso. Durante la gestione del flusso di lavoro per gli avvisi relativi alla conservazione legale, potrebbe essere necessario inviare di nuovo una notifica per riportarla nella "parte superiore della cassetta postale di un utente".
 
 È possibile inviare di nuovo un avviso di conservazione al proprio custode:
-1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery (Preview)**.
+1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery**.
 2. Dopo aver selezionato un caso, passare alla scheda **comunicazioni** .
 3. Per inviare di nuovo un avviso per la conservazione legale a un custode, selezionare la comunicazione e fare clic sull'opzione di **nuovo invio** .
 4. Se un custode non ha già riconosciuto la notifica di blocco, il flusso di sollecito e di escalation verrà riavviato. Se un custode ha già riconosciuto la notifica di conservazione, il custode riceverà solo una copia dell'avviso di conservazione iniziale.
@@ -58,7 +58,7 @@ Quando il caso progredisce, potrebbe essere necessario che i depositari possano 
 
 Per aggiornare il contenuto dell'avviso di blocco iniziale:
 
-1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery (Preview)**.
+1. Passare a un caso all'interno di **sicurezza e conformità _GT_ Advanced eDiscovery**.
 2. Dopo aver selezionato un caso, passare alla scheda **comunicazioni** .
 3. Selezionare l'avviso di blocco che si desidera aggiornare e fare clic su **modifica**.
 4. Nel flusso di lavoro modifica, selezionare **Definisci contenuto portale** e aggiornare il contenuto della notifica. 
@@ -67,7 +67,7 @@ Per aggiornare il contenuto dell'avviso di blocco iniziale:
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>Aggiornare le notifiche e le impostazioni per il blocco legale
 
-Quando si aggiorna il contenuto o le impostazioni dell'avviso di emissione, rilascio, riStampa, proMemoria o esCalation, queste modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
+Quando si aggiorna il contenuto o le impostazioni dell'avviso di emissione, rilascio, ristampa, promemoria o escalation, queste modifiche verranno applicate a tutte le comunicazioni future generate dal flusso di lavoro.
 
 ## <a name="related-information"></a>Informazioni correlate 
 

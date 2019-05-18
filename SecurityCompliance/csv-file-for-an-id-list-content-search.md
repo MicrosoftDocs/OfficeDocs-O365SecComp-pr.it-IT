@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilizzare il file results. csv o unindexed Items. csv da una ricerca di contenuto esistente per creare una ricerca nell'elenco di ID che restituisca messaggi di posta elettronica specifici. Le ricerche degli elenchi di ID vengono in genere utilizzate per restituire gli elementi della cassetta postale parzialmente indicizzati.
-ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4b28032761961dcac03a15de216e29253f4ab430
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265456"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151148"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365
 
-È possibile cercare specifici messaggi di posta elettronica della cassetta postale e altri elementi della cassetta postale utilizzando un elenco di ID di Exchange. Per creare una ricerca nell'elenco di ID (denominato formalmente ricerca mirata), è necessario inviare un file CSV (comma separated value) che identifica gli elementi specifici della cassetta postale da cercare. Per questo file CSV è possibile utilizzare il file **results. csv** o il file unIndexed **Items. csv** incluso quando si esportano i risultati della ricerca di contenuto o si esporta un rapporto di ricerca contenuto e la ricerca di contenuto esistente. Successivamente, modificare uno di questi file per indicare gli elementi specifici da cercare e quindi creare un nuovo elenco di ID ricerca e inviare il file CSV. 
+È possibile cercare specifici messaggi di posta elettronica della cassetta postale e altri elementi della cassetta postale utilizzando un elenco di ID di Exchange. Per creare una ricerca nell'elenco di ID (denominato formalmente ricerca mirata), è necessario inviare un file CSV (comma separated value) che identifica gli elementi specifici della cassetta postale da cercare. Per questo file CSV è possibile utilizzare il file **results. csv** o il file unindexed **Items. csv** incluso quando si esportano i risultati della ricerca di contenuto o si esporta un rapporto di ricerca contenuto e la ricerca di contenuto esistente. Successivamente, modificare uno di questi file per indicare gli elementi specifici da cercare e quindi creare un nuovo elenco di ID ricerca e inviare il file CSV. 
   
 Ecco una breve panoramica del processo per la creazione di una ricerca nell'elenco di ID.
   
@@ -48,7 +48,7 @@ Dopo aver esportato i risultati della ricerca o il report per una ricerca di con
   
 Si noti che è possibile utilizzare un file CSV da una ricerca in cui sono inclusi i siti di SharePoint e gli account di OneDrive, ma è possibile selezionare *solo* gli elementi della cassetta postale per una ricerca nell'elenco di ID. Se si seleziona un documento in SharePoint o OneDrive, il file CSV avrà esito negativo quando si crea una ricerca nell'elenco di ID. 
   
-1. Aprire il file **results. csv** o unIndexed **Items. csv** in Excel. 
+1. Aprire il file **results. csv** o unindexed **Items. csv** in Excel. 
     
 2. Inserire una nuova colonna e denominarla **selezionata**. Non importa dove si inserisce la colonna. Per praticità, è consigliabile inserirla a sinistra della prima colonna.
     

@@ -3,7 +3,7 @@ title: Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Complian
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
-ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250172"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152178"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -80,7 +80,7 @@ Nella tabella seguente sono elencati i ruoli RBAC relativi a eDiscovery nel cent
 |Tenere <br/>  |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Anteprima <br/>  | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Verifica <br/>  | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|DeCrittografia RMS <br/>  ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Decrittografia RMS <br/>  ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Ricerca ed eliminazione <br/> | <br/> | <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
@@ -123,7 +123,7 @@ Questo ruolo consente agli utenti di visualizzare un elenco di elementi restitui
 
 Questo ruolo consente agli utenti di accedere ai dati del caso in Office 365 Advanced eDiscovery. Lo scopo principale di questo ruolo è offrire agli utenti l'accesso a Advanced eDiscovery. Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina eDiscovery nel centro conformità & sicurezza di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza & Compliance, è possibile fare clic su **passa a eDiscovery avanzato** per accedere e analizzare i dati del caso in Advanced eDiscovery. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto associata al caso o di eseguire altre attività di ricerca del contenuto o di gestione dei casi.
 
-### <a name="rms-decrypt"></a>DeCrittografia RMS
+### <a name="rms-decrypt"></a>Decrittografia RMS
 
 Questo ruolo consente agli utenti di decrittografare i messaggi di posta elettronica crittografati con RMS durante l'esportazione dei risultati di ricerca o la preparazione dei risultati di ricerca per l'analisi Per ulteriori informazioni sulla decrittografia dei risultati di ricerca durante l'esportazione, vedere [Export content search results](export-search-results.md).
 

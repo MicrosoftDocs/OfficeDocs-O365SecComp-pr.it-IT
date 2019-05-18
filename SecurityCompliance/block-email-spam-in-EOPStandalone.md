@@ -5,7 +5,7 @@ author: msfttracyp
 ms.reviewer: andypunt
 manager: laurawi
 ms.date: 2/25/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243939"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152198"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
@@ -45,7 +45,8 @@ La posta indesiderata è per lo più composta da posta inviata in blocco, come n
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloccare la posta indesiderata tramite gli elenchi elementi bloccati del filtro protezione da posta indesiderata
 
-[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/it-IT/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
+
+  [Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/it-IT/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Gli utenti della posta elettronica possono contribuire anche a garantire il blocco dei messaggi indesiderati e dei falsi negativi usando il filtro della posta indesiderata di Office 365
 
@@ -81,7 +82,7 @@ Il servizio Exchange Online Protection è progettato per applicare i mittenti at
     Poiché il livello di probabilità di posta indesiderata è 0 nel server Exchange locale, la posta non contrassegnata come posta indesiderata verrà comunque recapitata nella posta in arrivo degli utenti, ma l'elenco mittenti bloccati locale degli utenti potrà comunque inviarla nella posta indesiderata. Se si usa la quarantena della posta indesiderata in EOP, è comunque possibile che i mittenti presenti nell'elenco mittenti attendibili vengano identificati come posta indesiderata e inviati in quarantena. Tuttavia, se si usa la cartella Posta indesiderata nella cassetta postale locale, in questo modo sarà possibile il recapito nella posta in arrivo dei mittenti attendibili.
 
 > [!WARNING]
-> Se si usa una regola del flusso di posta elettronica per impostare il valore SCL su 0 (o un valore diverso da -1), allora tutte le opzioni di posta indesiderata di Outlook verranno applicate al messaggio. Questo significa che verranno applicati gli elenchi di elementi attendibili e bloccati, ma anche che i messaggi i cui indirizzi non fanno parte di tali elenchi potrebbero essere contrassegnati come posta indesiderata dal filtro protezione da posta indesiderata sul lato client. Se si desidera che Outlook elabori gli elenchi di elementi attendibili e bloccati, ma non usi il filtro protezione da posta indesiderata sul lato client, è necessario impostare l'opzione "Filtro automatico disattivato" nelle opzioni della posta indesiderata di Outlook. "Filtro automatico disattivato" è l'opzione predefinita nelle ultime versioni di Outlook, ma è necessario verificare che tale impostazione sia attiva per garantire che il filtro protezione da posta indesiderata sul lato client non venga applicato ai messaggi. Gli amministratori possono imporre la disattivazione del filtro protezione da posta indesiderata di Outlook seguendo le istruzioni in [Outlook: impostazione dei criteri per disabilitare l'interfaccia utente della posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/it-IT/kb/2180568).
+> Se si usa una regola del flusso di posta elettronica per impostare il valore SCL su 0 (o un valore diverso da -1), allora tutte le opzioni di posta indesiderata di Outlook verranno applicate al messaggio. Questo significa che verranno applicati gli elenchi di elementi attendibili e bloccati, ma anche che i messaggi i cui indirizzi non fanno parte di tali elenchi potrebbero essere contrassegnati come posta indesiderata dal filtro protezione da posta indesiderata sul lato client. Se si desidera che Outlook elabori gli elenchi di elementi attendibili e bloccati, ma non usi il filtro protezione da posta indesiderata sul lato client, è necessario impostare l'opzione "Filtro automatico disattivato" nelle opzioni della posta indesiderata di Outlook. "Filtro automatico disattivato" è l'opzione predefinita nelle ultime versioni di Outlook, ma è necessario verificare che tale impostazione sia attiva per garantire che il filtro protezione da posta indesiderata sul lato client non venga applicato ai messaggi. Gli amministratori possono imporre la disattivazione del filtro protezione da posta indesiderata di Outlook seguendo le istruzioni in [Outlook: impostazione dei criteri per disabilitare l'interfaccia utente della posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/en-us/kb/2180568).
   
 ## <a name="see-also"></a>Vedere anche
 

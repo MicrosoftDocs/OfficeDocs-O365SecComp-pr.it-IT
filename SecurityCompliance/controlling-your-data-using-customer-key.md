@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 8/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare Customer Key per Office 365 per Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Con il codice "Customer Key", è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Office 365 per utilizzarle per crittografare i dati a riposo nei datacenter di Microsoft.
-ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258354"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153718"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controllare i dati in Office 365 con Customer Key
 
@@ -72,7 +72,7 @@ Dopo aver inoltrato un'offerta per la chiave del cliente, Microsoft esamina la r
     
 - [Backup della chiave del Vault di Azure](controlling-your-data-using-customer-key.md#BackupAzureKeyVaultkeys)
     
-- [ConValidare le impostazioni di configurazione di Azure Key Vault](controlling-your-data-using-customer-key.md#Validateconfiguration)
+- [Convalidare le impostazioni di configurazione di Azure Key Vault](controlling-your-data-using-customer-key.md#Validateconfiguration)
     
 - [Ottenere l'URI per ogni chiave del Vault Key di Azure](controlling-your-data-using-customer-key.md#GetKeyURI)
     
@@ -84,13 +84,13 @@ Exchange Online e Skype for business:
     
 - [Assegnare una DEP a una cassetta postale](controlling-your-data-using-customer-key.md#assignDEPtomailbox)
     
-- [ConValidare la crittografia della cassetta postale](controlling-your-data-using-customer-key.md#validatemailboxencryption)
+- [Convalidare la crittografia della cassetta postale](controlling-your-data-using-customer-key.md#validatemailboxencryption)
     
 SharePoint Online e OneDrive for business:
   
 - [Creare un criterio di crittografia dei dati per ogni geo di SharePoint Online e OneDrive for business](controlling-your-data-using-customer-key.md#CreateDEP4SPOODfB)
     
-- [ConValidare la crittografia di siti di gruppo, siti del team e OneDrive for business](controlling-your-data-using-customer-key.md#validateencryptionSPO)
+- [Convalidare la crittografia di siti di gruppo, siti del team e OneDrive for business](controlling-your-data-using-customer-key.md#validateencryptionSPO)
     
 ## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Completare le attività in Azure Key Vault e Microsoft FastTrack per la chiave del cliente
 <a name="AzureSteps"> </a>
@@ -344,7 +344,7 @@ Ad esempio:
 Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
-### <a name="validate-azure-key-vault-configuration-settings"></a>ConValidare le impostazioni di configurazione di Azure Key Vault
+### <a name="validate-azure-key-vault-configuration-settings"></a>Convalidare le impostazioni di configurazione di Azure Key Vault
 <a name="Validateconfiguration"> </a>
 
 L'esecuzione della convalida prima di utilizzare le chiavi in una funzionalità DEP è facoltativa, ma è consigliabile. In particolare, se si utilizzano i passaggi necessari per configurare le chiavi e le volte diverse da quelle descritte in questo argomento, è consigliabile convalidare l'integrità delle risorse del Vault Key di Azure prima di configurare la chiave del cliente.
@@ -475,7 +475,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 Dove *MailboxIdParameter* specifica una cassetta postale. Per ulteriori informazioni sul cmdlet Set-Mailbox, vedere [Set-Mailbox](https://technet.microsoft.com/library/bb123981%28v=exchg.160%29.aspx).
   
-### <a name="validate-mailbox-encryption"></a>ConValidare la crittografia della cassetta postale
+### <a name="validate-mailbox-encryption"></a>Convalidare la crittografia della cassetta postale
 <a name="validatemailboxencryption"> </a>
 
 La crittografia di una cassetta postale può richiedere del tempo. Per l'assegnazione dei criteri per la prima volta, la cassetta postale deve anche completare lo spostamento da un database all'altro prima che il servizio possa crittografare la cassetta postale. È consigliabile attendere 72 ore prima di tentare di convalidare la crittografia dopo aver modificato una DEP o la prima volta che si assegna una DEP a una cassetta postale.
@@ -520,7 +520,7 @@ Per creare una funzionalità di protezione esecuzione programmi, è necessario c
 
    Quando si registra la funzionalità DEP, la crittografia inizia sui dati del geografico. Questo può richiedere un certo tempo.
     
-### <a name="validate-encryption-of-group-sites-team-sites-and-onedrive-for-business"></a>ConValidare la crittografia di siti di gruppo, siti del team e OneDrive for business
+### <a name="validate-encryption-of-group-sites-team-sites-and-onedrive-for-business"></a>Convalidare la crittografia di siti di gruppo, siti del team e OneDrive for business
 <a name="validateencryptionSPO"> </a>
 
 È possibile controllare lo stato della crittografia eseguendo il cmdlet Get-SPODataEncryptionPolicy come indicato di seguito:

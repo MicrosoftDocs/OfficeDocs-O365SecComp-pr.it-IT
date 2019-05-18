@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255094"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154348"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -279,12 +279,14 @@ Per altre informazioni su queste opzioni, vedere [Tuning rules to make them easi
 
 Per altre informazioni sulla sintassi della query, vedere:
 
-- [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Le etichette basate su query usano l’indice di ricerca per identificare il contenuto. Per altre informazioni sulle proprietà disponibili per la ricerca valide, vedere:
 
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
-- [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- 
+  [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Esempi di query:
 

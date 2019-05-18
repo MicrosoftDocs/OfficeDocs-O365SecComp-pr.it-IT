@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione in espansione automatica in Office 365, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a6f1e0e43854372b2c7b93c22c1160a7c555a95f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256840"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154748"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Abilitare l'archiviazione illimitata in Office 365-Guida per gli amministratori
 
@@ -102,7 +102,7 @@ Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazion
     ![Le proprietà ArchiveQuota e ArchiveWarningQuota vengono ignorate dopo l'abilitazione dell'archiviazione con espansione automatica](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - È inoltre possibile utilizzare PowerShell per abilitare le cassette postali di archiviazione. Ad esempio, è possibile eseguire il comando seguente in Exchange Online PowerShell per abilitare le cassette postali di archiviazione per tutti gli utenti la cui cassetta postale di archiviazione non è già abilitata.
 

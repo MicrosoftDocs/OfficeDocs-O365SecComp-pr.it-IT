@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
-ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258846"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151238"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 
@@ -43,7 +43,7 @@ Per ulteriori informazioni, vedere [Introduzione ai criteri di gestione delle in
 
 Per garantire che un criterio di informazioni venga applicato a tutti i documenti di un determinato tipo all'interno di una raccolta siti, prendere in considerazione la possibilità di creare il criterio a livello di raccolta siti e successivamente applicarlo ai tipi di contenuto. Questi vengono definiti criteri di raccolta siti. 
   
-1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home Page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
@@ -66,7 +66,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
   
  È inoltre possibile aggiungere un criterio di gestione delle informazioni a un tipo di contenuto specifico per gli elenchi. Questo ha l'effetto di applicare il criterio solo agli elementi dell'elenco che utilizzano il tipo di contenuto. 
   
-1. nella home page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home Page \> ****![della raccolta siti fare clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     

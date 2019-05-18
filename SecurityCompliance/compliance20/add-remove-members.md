@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aaec95ec4bb8e55d1ed1c7d9552ee7215ba5ec14
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: db473aa4cf6e48a52693ebec85c5dde5a28ac482
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242889"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151918"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Aggiungere o rimuovere membri da un caso
 
 È possibile aggiungere o rimuovere membri per gestire gli utenti autorizzati ad accedere al caso. Si noti che gli utenti aggiunti ai gruppi di ruoli reviewer o eDiscovery Manager possono essere aggiunti come membri del caso. Si noti che il responsabile di eDiscovery che ha creato il caso viene aggiunto automaticamente come membro.
 
-1. Dalla pagina **Advanced eDiscovery (Preview)** , passare al caso.
+1. Dalla pagina **Advanced eDiscovery** , passare al caso.
 
 2. Andare a **Impostazioni** e selezionare "accesso _AMP_ Permissions".
  

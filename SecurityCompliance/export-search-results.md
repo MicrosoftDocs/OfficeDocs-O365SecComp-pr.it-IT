@@ -3,7 +3,7 @@ title: Esportare i risultati di Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & compliance in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255506"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154548"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
 Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti altri documenti e report.
   
-Inoltre, tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati di una ricerca di contenuto verranno decrittografati quando vengono esportati (come singoli messaggi). Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione deCrypt RMS è assegnato a questo gruppo di ruoli. Vedere la sezione [ulteriori informazioni](#more-information) per informazioni dettagliate sulla decrittografia RMS quando si esportano i risultati della ricerca. 
+Inoltre, tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati di una ricerca di contenuto verranno decrittografati quando vengono esportati (come singoli messaggi). Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione Decrypt RMS è assegnato a questo gruppo di ruoli. Vedere la sezione [ulteriori informazioni](#more-information) per informazioni dettagliate sulla decrittografia RMS quando si esportano i risultati della ricerca. 
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
@@ -55,7 +55,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
 - Quando si scaricano i risultati della ricerca (descritti nel passaggio 2), è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Microsoft Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.core.windows.net** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
+- Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Microsoft Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. Verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
     
 - Se l'organizzazione utilizza un server proxy per comunicare con Internet, è necessario definire le impostazioni del server proxy nel computer utilizzato per esportare i risultati della ricerca, in modo che lo strumento di esportazione possa essere autenticato dal server proxy. A tale scopo, aprire il file *Machine. config* nel percorso corrispondente alla versione di Windows in uso. 
     
@@ -170,7 +170,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -182,7 +182,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
 
 [Esportazione di singoli messaggi o file PST](#exporting-individual-messages-or-pst-files)
   
-[DeCrittografia dei messaggi crittografati con RMS](#decrypting-rms-encrypted-messages)
+[Decrittografia dei messaggi crittografati con RMS](#decrypting-rms-encrypted-messages)
 
 [Nomi di file degli elementi esportati](#filenames-of-exported-items)  
   
@@ -241,9 +241,9 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
   - **Elementi** non indicizzati Documento di Excel che contiene informazioni su eventuali elementi parzialmente indicizzati che verrebbero inclusi nei risultati della ricerca. Se non si includono gli elementi parzialmente indicizzati durante la generazione del report dei risultati di ricerca, questo report verrà comunque scaricato, ma sarà vuoto. 
     
-  - **Errori e avvisi** Contiene errori e avvisi relativi ai file riscontrati durante l'esportazione. Per informazioni specifiche su ogni singolo errore o avviso, vedere la colonna Error deTails. 
+  - **Errori e avvisi** Contiene errori e avvisi relativi ai file riscontrati durante l'esportazione. Per informazioni specifiche su ogni singolo errore o avviso, vedere la colonna Error details. 
     
-  - **Elementi ignorati** Quando si esportano i risultati della ricerca da siti di SharePoint e OneDrive for business, l'esportazione include in genere un rapporto elementi ignorati (SkippedItems. csv). Gli elementi citati in questo report sono in genere elementi che non verranno scaricati, ad esempio una cartella o un set di documenti. L'esportazione di questo tipo di elementi è in base alla progettazione. Per gli altri elementi ignorati, il campo ' tipo di errore ' è Error deTails ' del rapporto elementi ignorati Mostra il motivo per cui l'elemento è stato ignorato e non è stato scaricato con gli altri risultati della ricerca. 
+  - **Elementi ignorati** Quando si esportano i risultati della ricerca da siti di SharePoint e OneDrive for business, l'esportazione include in genere un rapporto elementi ignorati (SkippedItems. csv). Gli elementi citati in questo report sono in genere elementi che non verranno scaricati, ad esempio una cartella o un set di documenti. L'esportazione di questo tipo di elementi è in base alla progettazione. Per gli altri elementi ignorati, il campo ' tipo di errore ' è Error details ' del rapporto elementi ignorati Mostra il motivo per cui l'elemento è stato ignorato e non è stato scaricato con gli altri risultati della ricerca. 
     
   - **Registro di traccia** Contiene informazioni dettagliate sulla registrazione relative al processo di esportazione e può essere utile per scoprire i problemi durante l'esportazione. 
     
@@ -287,7 +287,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle saranno vuote. 
   
- ### <a name="decrypting-rms-encrypted-messages"></a>DeCrittografia dei messaggi crittografati con RMS
+ ### <a name="decrypting-rms-encrypted-messages"></a>Decrittografia dei messaggi crittografati con RMS
   
 - Come spiegato in precedenza, per decrittografare i messaggi crittografati con RMS quando vengono esportati, è necessario esportare i risultati della ricerca come singoli messaggi. Se si esportano i risultati della ricerca in un file PST, i messaggi crittografati con RMS rimarranno crittografati.
     
@@ -301,7 +301,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - Non è possibile visualizzare l'anteprima di un messaggio di posta elettronica crittografato con RMS. Per visualizzare un messaggio crittografato, è necessario esportarlo.
     
-- Se è necessario impedire a un utente di decrittografare i messaggi crittografati con RMS, è necessario creare un gruppo di ruoli personalizzato (copiando il gruppo di ruoli eDiscovery Manager incorporato) e quindi rimuovere il ruolo di gestione deCrypt RMS dal gruppo di ruoli personalizzato. Aggiungere quindi la persona che non si desidera decrittografare i messaggi come membro del gruppo di ruoli personalizzato.
+- Se è necessario impedire a un utente di decrittografare i messaggi crittografati con RMS, è necessario creare un gruppo di ruoli personalizzato (copiando il gruppo di ruoli eDiscovery Manager incorporato) e quindi rimuovere il ruolo di gestione Decrypt RMS dal gruppo di ruoli personalizzato. Aggiungere quindi la persona che non si desidera decrittografare i messaggi come membro del gruppo di ruoli personalizzato.
   
  ### <a name="filenames-of-exported-items"></a>Nomi di file degli elementi esportati
   

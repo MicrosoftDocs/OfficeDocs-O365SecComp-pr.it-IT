@@ -3,7 +3,7 @@ title: Contenuto archiviato nelle cassette postali di Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: I dati prodotti dalle app basate su cloud in Office 365 sono archiviati in una cassetta postale di Exchange Online di un utente nel cloud Microsoft.
-ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 380c16e65c2358961b9ee5185c40d3eb7d85950b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266898"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157718"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenuto archiviato nelle cassette postali di Exchange Online
 
@@ -39,9 +39,9 @@ Nella tabella seguente sono elencate le app di Office 365 che archiviano i dati 
 |Skype for Business    <br/>  | Le conversazioni in Skype for business sono archiviate nella cartella Cronologia conversazioni della cassetta postale di un utente. Se la cassetta postale di un partecipante a una riunione Skype viene mantenuta per controversia legale o assegnata a un criterio di conservazione, i file allegati a una riunione vengono conservati nella cassetta postale dei partecipanti.         <br/> |
 |Sway     <br/> |  Gli Sway sono archiviati come file HTML collegato a un messaggio di posta elettronica e archiviati in una cartella nascosta nella cassetta postale dell'utente che ha creato il dominio. Quando si esporta contenuto da Sway in un file PST, i dati si trovano nella cartella **ApplicationDataRoot** in una sottocartella denominata con il GUID seguente **905fcf26-4EB7-48A0-9ff0-8dcc7194b5ba**.       <br/> |
 |Attività    <br/> |  Le attività nell'app attività (che sono le stesse attività di quelle accessibili in Outlook) vengono memorizzate nella cassetta postale di un utente.       <br/> |
-|Teams    <br/>  |Le conversazioni che fanno parte di un canale teams sono archiviate nella cassetta postale associata al team. Le conversazioni che fanno parte dell'elenco chat in teams (chiamate anche *1 X N chat*) sono archiviate nella cassetta postale degli utenti che partecipano alla chat. Inoltre, le informazioni di riepilogo per le riunioni e le chiamate in un canale di team vengono memorizzate nelle cassette postali degli utenti che hanno effettuato la chiamata alla riunione. <br/> | 
+|Teams    <br/>  |Le conversazioni che fanno parte di un canale teams sono archiviate nella cassetta postale associata al team. Le conversazioni che fanno parte dell'elenco chat in teams (chiamate anche *1 x N chat*) sono archiviate nella cassetta postale degli utenti che partecipano alla chat. Inoltre, le informazioni di riepilogo per le riunioni e le chiamate in un canale di team vengono memorizzate nelle cassette postali degli utenti che hanno effettuato la chiamata alla riunione. <br/> | 
 |To-Do  <br/> | Le attività (chiamate *da DOS*, che vengono salvate negli elenchi di cose da fare) nell'app da fare sono archiviate nella cassetta postale di un utente.        <br/> |
 ||||
 
 > [!NOTE]
-> Attualmente, se un blocco è posizionato su una cassetta postale di un custode in Advanced eDiscovery (Preview), il contenuto proveniente da moduli e Sway non verrà mantenuto dall'esenzione. 
+> Attualmente, se un'esenzione viene posizionata su una cassetta postale (utilizzando le esenzioni in eDiscovery e nei casi avanzati di eDiscovery), il contenuto proveniente da moduli e Sway non verrà mantenuto dall'esenzione. 

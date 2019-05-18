@@ -1,10 +1,10 @@
 ---
-title: Raccogliere i dati per un caso in Advanced eDiscovery (Preview)
+title: Raccogliere i dati per un caso in Advanced eDiscovery
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151888"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Raccogliere i dati per un caso in Advanced eDiscovery (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Raccogliere i dati per un caso in Advanced eDiscovery
 
-Dopo aver identificato i depositari e le origini dati di interesse per il caso, è necessario identificare il set di documenti in cui eseguire l'approfondimento. È possibile utilizzare lo strumento di ricerca in Advanced eDiscovery (Preview) per identificarli da posizioni detentive e non detentive in Office 365.
+Dopo aver identificato i depositari e le origini dati di interesse per il caso, è necessario identificare il set di documenti in cui eseguire l'approfondimento. È possibile utilizzare lo strumento di ricerca in Advanced eDiscovery per identificarli da posizioni detentive e non detentive in Office 365.
 
-Dopo aver eseguito una ricerca, sarà possibile visualizzare le statistiche sugli elementi recuperati, ad esempio le posizioni con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Dopo aver identificato il set di documenti che si desidera esaminare ulteriormente, è possibile aggiungere i risultati di ricerca a un working set per la raccolta e l'elaborazione.
+Dopo aver eseguito una ricerca, sarà possibile visualizzare le statistiche sugli elementi recuperati, ad esempio le posizioni con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Quando è stato identificato il set di documenti che si desidera esaminare ulteriormente, è possibile aggiungere i risultati della ricerca a un set di revisione da raccogliere ed elaborare.
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -46,6 +46,6 @@ Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statisti
 
 Dopo aver completato l'anteprima, il pulsante **Anteprima** sarà attivo. Fare clic su di esso per visualizzare in anteprima un sottoinsieme di campionamento dei risultati.
 
-## <a name="adding-search-results-to-a-working-set"></a>Aggiunta dei risultati di ricerca a un working set
+## <a name="adding-search-results-to-a-review-set"></a>Aggiunta dei risultati di ricerca a un set di Revisione
 
-Quando si è pronti per la raccolta e l'elaborazione di tutti i risultati di una ricerca, è possibile farlo aggiungendoli a un working set. Per ulteriori informazioni, vedere [Add Data to a working set](add-data-to-working-set.md). 
+Quando si è pronti per la raccolta e l'elaborazione di tutti i risultati di una ricerca, è possibile farlo aggiungendola a un set di revisione. Per ulteriori informazioni, vedere [Add Data to a Review set](add-data-to-review-set.md). 

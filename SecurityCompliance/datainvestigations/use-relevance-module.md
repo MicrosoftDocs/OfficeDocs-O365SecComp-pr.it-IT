@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3aa37a6778947934759eb652a9367559b9ef838b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2d7c3ae16b573af7351abda19edebde7ad7491b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257284"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150588"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utilizzare il modulo pertinenza per analizzare i dati in evidenza
 
@@ -126,9 +126,9 @@ Anche se le indagini sui dati guidano il processo, con i passaggi successivi con
 > [!NOTE]
 > Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-[Informazioni sulla valutazione in riLevanza](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](../assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](../tagging-and-assessment-in-advanced-ediscovery.md)
   
