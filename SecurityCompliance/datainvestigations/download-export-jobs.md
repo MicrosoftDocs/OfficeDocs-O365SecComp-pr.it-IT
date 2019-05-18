@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78a49e3eddd456aeb5f4b26ed944208bb516340c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6aa2c6c6a425466dbbefb5360740d9215d242477
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258804"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150868"
 ---
-# <a name="download-export-jobs"></a><span data-ttu-id="525e9-102">Scaricare processi di esportazione</span><span class="sxs-lookup"><span data-stu-id="525e9-102">Download export jobs</span></span>
+# <a name="download-export-jobs"></a><span data-ttu-id="276ef-102">Scaricare processi di esportazione</span><span class="sxs-lookup"><span data-stu-id="276ef-102">Download export jobs</span></span>
 
-<span data-ttu-id="525e9-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="525e9-103">Content coming soon.</span></span>
+<span data-ttu-id="276ef-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="276ef-103">Content coming soon.</span></span>

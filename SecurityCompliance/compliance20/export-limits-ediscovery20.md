@@ -1,10 +1,10 @@
 ---
-title: Limiti di esportazione in Advanced eDiscovery (Preview)
+title: Limiti di esportazione in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90d25153b37df68f89020558d1fce9c1b213de71
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251974"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151748"
 ---
-# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="7de06-102">Limiti di esportazione in Advanced eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="7de06-102">Export limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-limits-in-advanced-ediscovery"></a><span data-ttu-id="e00e3-102">Limiti di esportazione in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="e00e3-102">Export limits in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="7de06-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="7de06-103">Content coming soon.</span></span>
+<span data-ttu-id="e00e3-103">Il contenuto sarà disponibile a breve.</span><span class="sxs-lookup"><span data-stu-id="e00e3-103">Content coming soon.</span></span>
