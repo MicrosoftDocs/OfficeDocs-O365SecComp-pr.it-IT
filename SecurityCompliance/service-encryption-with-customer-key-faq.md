@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Oltre alla linea di base, la crittografia a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, inclusi i dati di Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Si tratta della crittografia del servizio.
-ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266944"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156648"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 
@@ -179,7 +179,7 @@ Quando un cliente si sposta su chiavi gestite dal cliente, Office 365 crea un co
   
 Office 365 segue questo processo per accedere a un oggetto BLOB contenente i dati del file dei clienti:
   
-1. DeCrittografare l'elemento tick utilizzando il codice "Customer Key".
+1. Decrittografare l'elemento tick utilizzando il codice "Customer Key".
     
 2. Per decrittografare una chiave del sito, utilizzare l'elemento di crittografia decrittografato.
     
@@ -191,7 +191,7 @@ Durante la decrittografia di un tipo di codice, Office 365 rilascia due richiest
   
 Nel caso in cui il cliente perde l'accesso alle proprie chiavi dei clienti, Office 365 crittografa anche l'oggetto Tick con una chiave di disponibilità e lo archivia insieme all'TIKs crittografato con ogni chiave del cliente. L'utente crittografato con la chiave di disponibilità viene utilizzato solo quando il cliente chiama Microsoft per integrare il percorso di ripristino quando ha perso l'accesso alle chiavi, in modo dannoso o accidentale.
   
-Per motivi di disponibilità e scalabilità, le TIKs decrittografate vengono memorizzate nella cache in una memoria limitata nel tempo. Due ore prima che la cache di un sistema di posta in scadenza venga scaduta, Office 365 tenta di decrittografare ogni tick. La deCrittografia di TIKs consente di estendere la durata della cache. Se la decrittografia di tick ha esito negativo per un periodo di tempo significativo, Office 365 genera un avviso per notificare l'ingegnerizzazione prima della scadenza della cache. Solo se il cliente chiama Microsoft, Office 365 avvierà l'operazione di ripristino, che implica la decrittografia del tick con la chiave di disponibilità memorizzata nell'archivio segreto di Microsoft e l'onboarding del tenant utilizzando di nuovo il tipo di dati decrittografato e un nuovo set di chiavi del Vault Key di Azure fornite dal cliente.
+Per motivi di disponibilità e scalabilità, le TIKs decrittografate vengono memorizzate nella cache in una memoria limitata nel tempo. Due ore prima che la cache di un sistema di posta in scadenza venga scaduta, Office 365 tenta di decrittografare ogni tick. La decrittografia di TIKs consente di estendere la durata della cache. Se la decrittografia di tick ha esito negativo per un periodo di tempo significativo, Office 365 genera un avviso per notificare l'ingegnerizzazione prima della scadenza della cache. Solo se il cliente chiama Microsoft, Office 365 avvierà l'operazione di ripristino, che implica la decrittografia del tick con la chiave di disponibilità memorizzata nell'archivio segreto di Microsoft e l'onboarding del tenant utilizzando di nuovo il tipo di dati decrittografato e un nuovo set di chiavi del Vault Key di Azure fornite dal cliente.
   
 A questo punto, la chiave del cliente è coinvolta nella catena di crittografia e decrittografia dei dati del file di SharePoint Online archiviati nell'archivio BLOB di Azure, ma non elementi o metadati dell'elenco di SharePoint Online archiviati nel database SQL. Office 365 non utilizza la chiave di disponibilità per SharePoint Online o OneDrive for business diversa da quella descritta in alto, ovvero il cliente è stato avviato. L'accesso umano ai dati dei clienti è protetto dall'archivio protetto dei clienti.
   

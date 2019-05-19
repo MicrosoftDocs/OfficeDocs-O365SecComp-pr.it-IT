@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilizzare l'intelligence spoof nel centro &amp; sicurezza e conformità nella pagina impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni. L'intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di Advanced Threat Protection e Exchange Online Protection.
-ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252264"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155938"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Altre informazioni su spoof intelligence
 
@@ -66,7 +66,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 |Risultato dell'autenticazione  <br/> |Questo valore viene **passato** se il mittente ha superato i controlli di autenticazione del mittente di Exchange Online Protection (EOP), ad **** esempio SPF o DKIM, se il mittente non ha superato i controlli di autenticazione del mittente EOP o **Unknown** se il risultato di questi controlli non è noto.  <br/> |
 |Decisione impostata da  <br/> |Indica se l'amministratore di Office 365 o il criterio di intelligence spoof ha determinato se il mittente è autorizzato a falsificare o meno l'utente.  <br/> |
 |Ultimo visto  <br/> |Ultima data in cui un messaggio è stato ricevuto da questo mittente per conto di questo utente contraffatto.  <br/> |
-|ConSentita la falsificazione?  <br/> | Consente di visualizzare se il mittente è autorizzato a inviare messaggi di posta elettronica per conto dell'utente contraffatto. Tra i possibili valori sono inclusi:  <br/> **Sì** Tutti gli indirizzi falsificati provenienti da questo mittente spoofing avranno la possibilità di falsificare la propria organizzazione.  <br/> **Nessuna** Gli indirizzi falsificati provenienti da questo mittente spoofing non sono autorizzati a falsificare la propria organizzazione. Al contrario, i messaggi provenienti da questo mittente saranno contrassegnati come posta indesiderata da Office 365.  <br/> **Alcuni utenti** Se un mittente falsifica più utenti, alcuni indirizzi falsificati provenienti da questo mittente avranno la possibilità di falsificare la propria organizzazione, il resto verrà contrassegnato come posta indesiderata. Utilizzare la scheda **Dettagli** per visualizzare gli indirizzi specifici.  <br/> |
+|Consentita la falsificazione?  <br/> | Consente di visualizzare se il mittente è autorizzato a inviare messaggi di posta elettronica per conto dell'utente contraffatto. Tra i possibili valori sono inclusi:  <br/> **Sì** Tutti gli indirizzi falsificati provenienti da questo mittente spoofing avranno la possibilità di falsificare la propria organizzazione.  <br/> **Nessuna** Gli indirizzi falsificati provenienti da questo mittente spoofing non sono autorizzati a falsificare la propria organizzazione. Al contrario, i messaggi provenienti da questo mittente saranno contrassegnati come posta indesiderata da Office 365.  <br/> **Alcuni utenti** Se un mittente falsifica più utenti, alcuni indirizzi falsificati provenienti da questo mittente avranno la possibilità di falsificare la propria organizzazione, il resto verrà contrassegnato come posta indesiderata. Utilizzare la scheda **Dettagli** per visualizzare gli indirizzi specifici.  <br/> |
 |Tipo di spoofing  <br/> |Questo valore è **Internal** se il dominio è uno dei domini di provisioning dell'organizzazione, altrimenti il valore è **External**.  <br/> |
    
  **Per gestire i mittenti che eseguono lo spoofing del dominio tramite il Centro sicurezza &amp; e conformità**
@@ -85,7 +85,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
   
 5. Per visualizzare l'elenco dei mittenti che falsificano il dominio, fare clic su **Rivedi nuovi mittenti** e selezionare la scheda **domini** . 
     
-    Se i mittenti sono già stati rivisti e si desidera modificare alcune delle scelte precedenti, è possibile scegliere **Visualizza i mittenti già recensiti** . In entrambi i casi, viene visualizzato il riquadro seguente.  
+    Se I mittenti sono già stati rivisti e si desidera modificare alcune delle scelte precedenti, è possibile scegliere **Visualizza i mittenti già recensiti** . In entrambi i casi, viene visualizzato il riquadro seguente.  
   
     ![Schermata che mostra l'accesso alla scheda mittenti falsificati](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
@@ -93,7 +93,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
   
     Per aggiungere un mittente all'elenco Consenti per un utente, selezionare **Sì** dalla colonna **consentito di spoofing** . Per aggiungere un mittente all'elenco di indirizzi bloccati per un utente, scegliere **No**.
      
-    Per impostare i criteri per i domini non proprietari, selezionare la scheda **domini esterni** . modificare qualsiasi mittente in **Sì** nella colonna **consentito di spoofing** per consentire al mittente di inviare messaggi di posta elettronica non autenticati nell'organizzazione. In alternativa, se si ritiene che Office 365 abbia commesso un errore nel consentire al mittente di inviare messaggi di posta elettronica falsificati, modificare la colonna conSentita **per** la falsificaZione in **No**.  
+    Per impostare i criteri per i domini non proprietari, selezionare la scheda **domini esterni** . modificare qualsiasi mittente in **Sì** nella colonna **consentito di spoofing** per consentire al mittente di inviare messaggi di posta elettronica non autenticati nell'organizzazione. In alternativa, se si ritiene che Office 365 abbia commesso un errore nel consentire al mittente di inviare messaggi di posta elettronica falsificati, modificare la colonna consentita **per** la falsificazione in **No**.  
   
     ![Schermata che mostra se un mittente è autorizzato a eseguire la falsificazione](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
@@ -144,7 +144,7 @@ Per gli amministratori di Office 365 più avanzati, è anche possibile eseguire 
     
 - Esaminare la configurazione della posta DomainKeys (DKIM) identificata. È necessario utilizzare DKIM in aggiunta a SPF e DMARC per impedire agli spoofer di inviare messaggi che sembrano provenire dal proprio dominio. DKIM consente di aggiungere una firma digitale nell'intestazione dei messaggi di posta elettronica. Per ulteriori informazioni, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
     
-- Esaminare la configurazione dell'autenticazione dei messaggi basata sul dominio, della creazione di report e della conformità (DMARC). L'implementazione di DMARC con SPF e DKIM fornisce un'ulteriore protezione dallo spoofing e dal phishing. DMARC consente ai sistemi di posta di ricezione di determinare cosa fare con i messaggi inviati dal dominio che non supera i controlli SPF o DKIM. Per informazioni, vedere [utilizzare DMARC per convalidaRe la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- Esaminare la configurazione dell'autenticazione dei messaggi basata sul dominio, della creazione di report e della conformità (DMARC). L'implementazione di DMARC con SPF e DKIM fornisce un'ulteriore protezione dallo spoofing e dal phishing. DMARC consente ai sistemi di posta di ricezione di determinare cosa fare con i messaggi inviati dal dominio che non supera i controlli SPF o DKIM. Per informazioni, vedere [utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
 - Utilizzare il cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) di Windows PowerShell per raccogliere dati dettagliati su mittenti contraffatti, generare elenchi di Consenti e bloccare e aiutare a determinare come generare record DNS SPF, DKIM e DMARC più completi senza che la propria la posta elettronica legittima viene interferita nei filtri di posta indesiderata esterni. Per ulteriori informazioni, vedere [modalità di funzionamento della protezione antispoofing in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
     

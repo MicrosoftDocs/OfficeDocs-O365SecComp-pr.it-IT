@@ -1,10 +1,10 @@
 ---
-title: Aggiungere tag ai documenti in un set di lavoro
+title: Contrassegnare i documenti in un insieme da rivedere
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a3b588f4b8e24783cd0d7198ea995f0fd6c8ae3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241122"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154028"
 ---
-# <a name="tag-documents-in-a-working-set"></a>Aggiungere tag ai documenti in un set di lavoro
+# <a name="tag-documents-in-a-review-set"></a>Contrassegnare i documenti in un insieme da rivedere
 
-L'organizzazione del contenuto in un working set è importante per completare diversi flussi di lavoro nel processo di eDiscovery. Ciò include:
+L'organizzazione del contenuto in un set di revisione è importante per completare diversi flussi di lavoro nel processo di eDiscovery. Ciò include:
 
 -  Eliminazione del contenuto non necessario
 
@@ -31,11 +31,11 @@ L'organizzazione del contenuto in un working set è importante per completare di
  
 -  Identificazione di contenuti che devono essere esaminati da un esperto o da un avvocato
 
-Quando esperti, avvocati o altri utenti esaminano il contenuto in un working set, le loro opinioni relative al contenuto possono essere acquisite utilizzando i tag. Ad esempio, se lo scopo è quello di eliminare contenuto non necessario, un utente può contrassegnare i documenti con un tag come "non rispondente". Dopo la revisione e il tag del contenuto, è possibile creare una ricerca di working set che escluda qualsiasi contenuto contrassegnato come "non reattivo", che elimini questo contenuto dai passaggi successivi del flusso di lavoro di eDiscovery. Il riquadro Tag può essere personalizzato per ogni caso, in modo che i tag possano supportare il flusso di lavoro di revisione previsto.
+Quando esperti, avvocati o altri utenti esaminano il contenuto in un set di revisione, le loro opinioni relative al contenuto possono essere acquisite utilizzando i tag. Ad esempio, se lo scopo è quello di eliminare contenuto non necessario, un utente può contrassegnare i documenti con un tag come "non rispondente". Dopo che il contenuto è stato revisionato e contrassegnato, è possibile creare una ricerca di set di revisione per escludere qualsiasi contenuto contrassegnato come "non reattivo", che elimina questo contenuto dai passaggi successivi del flusso di lavoro di eDiscovery. Il riquadro Tag può essere personalizzato per ogni caso, in modo che i tag possano supportare il flusso di lavoro di revisione previsto.
 
 ## <a name="tag-types"></a>Tipi di tag
 
-Advanced eDiscovery (Preview) fornisce due tipi di Tag:
+Advanced eDiscovery offre due tipi di Tag:
 
 - **Tag a scelta singola** : limita gli utenti a selezionare un singolo tag all'interno di un gruppo. Questo può essere utile per garantire agli utenti di non selezionare tag in conflitto, ad esempio "reattivi" e "non rispondenti". 
 
@@ -43,7 +43,7 @@ Advanced eDiscovery (Preview) fornisce due tipi di Tag:
 
 ## <a name="tag-structure"></a>Struttura tag
 
-Oltre ai tipi di tag, è possibile utilizzare la struttura dei tag nell'organizzazione nel pannello Tag per rendere più intuitivi i documenti di tagging. I tag vengono raggruppati in base alle sezioni. La ricerca di working set supporta la funzionalità di ricerca in base al tag e alla sezione Tag. Questo significa che è possibile creare una ricerca di working set per recuperare i documenti contrassegnati con un tag qualsiasi in una sezione.
+Oltre ai tipi di tag, è possibile utilizzare la struttura dei tag nell'organizzazione nel pannello Tag per rendere più intuitivi i documenti di tagging. I tag vengono raggruppati in base alle sezioni. Review set Search supporta la funzionalità di ricerca in base al tag e alla sezione Tag. Questo significa che è possibile creare una ricerca set di revisione per recuperare i documenti contrassegnati con un tag qualsiasi in una sezione.
 
 ![Sezioni dei tag nel pannello Tag](../media/Tagtypes.png)
 
@@ -57,7 +57,7 @@ Esistono diversi modi per applicare un tag al contenuto.
 
 ### <a name="tagging-a-single-document"></a>Tagging di un singolo documento
 
-Quando si visualizza un documento in un working set, è possibile visualizzare i tag che possono essere utilizzati da una recensione facendo clic su **Pannello di codifica**.
+Quando si visualizza un documento in un set di revisione, è possibile visualizzare i tag che possono essere utilizzati da una recensione facendo clic su **Pannello di codifica**.
 
 ![Fare clic su pannello Tag per visualizzare il pannello Tag](../media/Singledoctag.png)
 

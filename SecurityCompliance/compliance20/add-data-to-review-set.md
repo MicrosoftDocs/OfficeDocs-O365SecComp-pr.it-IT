@@ -1,10 +1,10 @@
 ---
-title: Aggiungere i risultati della ricerca a un set di Revisione
+title: Aggiungere i risultati della ricerca a un insieme da rivedere
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc32836026d1a2c449e73a28eafc2f5a631a1705
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 4de390972672509422e055cd3fd6a9f65d54a7ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527208"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155238"
 ---
-# <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un set di Revisione
+# <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
 Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non di Office 365 a un set di revisione, in modo da poter esaminare tali dati oltre ai dati raccolti da Office 365.
 

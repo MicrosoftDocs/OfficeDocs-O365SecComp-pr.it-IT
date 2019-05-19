@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
-ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
+ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867845"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157988"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -83,7 +83,7 @@ Per il "?" nell'immagine del mittente: Outlook.com richiede che il messaggio pas
 
 Per il tag Via: se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nella posta SMTP da, Outlook.com Visualizza il dominio in uno di questi due campi (preferendo la firma di DKIM).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>È possibile ignorare queste proprietà con l'indirizzo IP consentito, la regola di trasporto di Exchange consente o i mittenti attendibili?
+### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>È possibile ignorare queste proprietà con l'indirizzo IP consentito, la regola di trasporto di Exchange consente o I mittenti attendibili?
 
 Non è possibile eseguire l'override di queste proprietà.
 

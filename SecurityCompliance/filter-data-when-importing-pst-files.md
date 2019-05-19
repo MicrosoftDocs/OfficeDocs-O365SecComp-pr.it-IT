@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255716"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154598"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrare i dati durante l'importazione di file PST in Office 365
 
@@ -125,7 +125,7 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
 7. Fare clic sul pulsante Importa il processo per visualizzare informazioni più dettagliate, ad esempio lo stato di ogni file PST e le impostazioni di filtro configurate.
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - In che modo Office 365 determina gli incrementi del filtro di validità? Quando Office 365 analizza un file PST, viene visualizzato l'indicatore di data e ora di invio di ogni elemento (se un elemento ha un timestamp sia inviato che ricevuto, la più vecchia è selezionata). Successivamente, Office 365 esamina il valore dell'anno per tale timestamp e lo confronta con la data corrente per determinare l'età dell'elemento. Tali ere vengono quindi utilizzate come valori nell'elenco a discesa del filtro di **validità** . Ad esempio, se un file PST contiene messaggi provenienti da 2016, 2015 e 2014, i valori del filtro di **validità** sarebbero **1 anno**, **2 anni**e **3 anni**.
     

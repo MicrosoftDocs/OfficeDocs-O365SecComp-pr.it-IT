@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: In questo argomento vengono riportate le domande frequenti per i partner e rivenditori Microsoft che vogliono eseguire attività di amministrazione delegata in Office 365, quali la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
-ms.openlocfilehash: 41f2e8f0ed48273ff1934ca4f2306f29f92b1ff1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 15433a9ac0bb8b165dd8ee97767fca4a3e29f01a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256194"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153228"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 
@@ -43,6 +43,6 @@ R. Attualmente, questa funzionalità non è compresa in Office 365.
   
  **D. Posso visualizzare report consolidati in tutti i miei tenant secondari?**
   
-R. La creazione di rapporti conSolidati tra le società gestite non è disponibile per i report dell'interfaccia di amministrazione di Micrsoft 365 in questo momento. Tuttavia, è possibile eseguire questa operazione tramite Windows PowerShell remoto o il [servizio Web di Reporting](https://go.microsoft.com/fwlink/?LinkId=279926). 
+R. La creazione di rapporti consolidati tra le società gestite non è disponibile per i report dell'interfaccia di amministrazione di Micrsoft 365 in questo momento. Tuttavia, è possibile eseguire questa operazione tramite Windows PowerShell remoto o il [servizio Web di Reporting](https://go.microsoft.com/fwlink/?LinkId=279926). 
   
 

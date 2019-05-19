@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 offre una serie di diversi strumenti di eDiscovery che è possibile utilizzare per la ricerca e la conservazione dei contenuti trovati in posizioni diverse, ad esempio le cassette postali di Exchange, i siti di SharePoint e OneDrive for business, i gruppi di Office 365 e le conversazioni di Skype for business.
-ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256804"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153318"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
 

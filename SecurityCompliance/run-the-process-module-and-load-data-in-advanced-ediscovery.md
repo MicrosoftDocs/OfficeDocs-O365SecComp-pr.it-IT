@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Informazioni su come utilizzare il Centro sicurezza &amp; e conformità di Office 365 per accedere a Office 365 Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261406"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157018"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
 
@@ -29,7 +29,7 @@ In questa sezione viene descritta la funzionalità del modulo di elaborazione di
   
 Oltre ai dati dei file, i metadati, ad esempio il tipo di file, l'estensione, la posizione o il percorso, la data e l'ora di creazione, l'autore, il custode e l'oggetto possono essere caricati in Advanced eDiscovery e salvati per ogni caso. Alcuni metadati vengono calcolati da Advanced eDiscovery, ad esempio quando vengono caricati file nativi. 
   
-Advanced eDiscovery fornisce i valori dei metadati di sistema, ad esempio raggruppamenti quasi duplicati o punteggi di riLevanza. Gli altri metadati, ad esempio le annotazioni di file, possono essere aggiunti dall'amministratore. 
+Advanced eDiscovery fornisce i valori dei metadati di sistema, ad esempio raggruppamenti quasi duplicati o punteggi di rilevanza. Gli altri metadati, ad esempio le annotazioni di file, possono essere aggiunti dall'amministratore. 
   
 ## <a name="running-process"></a>Processo in esecuzione
 

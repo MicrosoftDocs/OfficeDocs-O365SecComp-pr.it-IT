@@ -3,7 +3,7 @@ title: Limiti per la ricerca di contenuto nel centro sicurezza & Compliance
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informazioni sui limiti effettivi per la funzionalità di ricerca contenuto nel centro sicurezza & compliance in Office 365, ad esempio il numero massimo di ricerche simultanee. '
-ms.openlocfilehash: 715c64433ad78197411aff465c7a08baf2f71eb8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252024"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155908"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limiti per la ricerca di contenuto nel centro sicurezza & Compliance
 
@@ -37,7 +37,7 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro conformità 
 |:-----|:-----|
 |Il numero massimo di cassette postali o di siti che possono essere ricercati in una singola ricerca di contenuto  <br/> |Nessun limite  <br/> |
 |Il numero massimo di ricerche di contenuto che possono essere eseguite contemporaneamente nell'organizzazione.  <br/> |Nessun limite  <br/> |
-|Il numero massimo di ricerche di contenuto che un singolo utente può avviare contemporaneamente. Si noti che è probabile che questo limite venga colpito quando l'utente tenta di avviare più ricerche utilizzando il comando **get \| -ComplianceSearch Start-ComplianceSearch** in PowerShell Center di sicurezza & Compliance.  <br/> |10  <br/> |
+|Il numero massimo di ricerche di contenuto che un singolo utente può avviare contemporaneamente. Si noti che è probabile che questo limite venga colpito quando l'utente tenta di avviare più ricerche utilizzando il comando **get \| -ComplianceSearch Start-ComplianceSearch** in PowerShell Center di sicurezza & Compliance.  <br/> |10   <br/> |
 |Il numero massimo di elementi per ogni cassetta postale utente visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca contenuto.  <br/> |100  <br/> |
 |Il numero massimo di elementi presenti in tutte le cassette postali degli utenti visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca del contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |1,000  <br/> |
 |Il numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali di 1000 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |1,000  <br/> |
@@ -54,11 +54,11 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro conformità 
 > [!NOTE]
 > <sup>1</sup> quando si effettuano ricerche nei percorsi di SharePoint e OneDrive for business, i caratteri negli URL dei siti cercati vengono conteggiati rispetto a questo limite. <br/> <sup>2</sup> per le query non basate su parole (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, `"time*"` è possibile espandersi su `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase. 
   
-## <a name="indexing-limits-for-email-messages"></a>Limiti di inDicizzazione per i messaggi di posta elettronica
+## <a name="indexing-limits-for-email-messages"></a>Limiti di indicizzazione per i messaggi di posta elettronica
 
 Nella tabella seguente vengono descritti i limiti di indicizzazione che possono comportare la restituzione di un messaggio di posta elettronica come elemento non indicizzato o un elemento parzialmente indicizzato nei risultati di una ricerca di contenuto.
   
-|**Limite di inDicizzazione**|**Note**|**Descrizione**|
+|**Limite di indicizzazione**|**Note**|**Descrizione**|
 |:-----|:-----|:-----|
 |Dimensione massima degli allegati (esclusi i file di Excel)  <br/> |150 MB  <br/> |Le dimensioni massime di un allegato di posta elettronica che analizzerà l'indicizzazione. Qualsiasi allegato che è più grande di questo limite non verrà analizzato per l'indicizzazione e il messaggio con l'allegato verrà contrassegnato come parzialmente indicizzato.  <br/> <br/>**Nota:** L'analisi è il processo in cui il servizio di indicizzazione estrae il testo dall'allegato, rimuove i caratteri non necessari come la punteggiatura e gli spazi e quindi divide il testo in parole (in un processo denominato tokenation), che vengono quindi memorizzate nell'indice.           |
 |Dimensioni massime dei file di Excel  <br/> |4 MB  <br/> |La dimensione massima di un file di Excel che si trova in un sito o collegato a un messaggio di posta elettronica che verrà analizzato per l'indicizzazione. Qualsiasi file di Excel di dimensioni superiori a questo limite non verrà analizzato e il file o l'indirizzo di posta elettronica il messaggio con l'allegato file verrà contrassegnato come non indicizzato.  <br/> |
@@ -71,7 +71,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che possono 
 |Dimensione massima del corpo nell'indice  <br/> |67 milioni caratteri  <br/> |Il numero totale di caratteri presenti nel corpo di un messaggio di posta elettronica e di tutti gli allegati. Quando un messaggio di posta elettronica viene indicizzato, tutto il testo nel corpo del messaggio e in tutti gli allegati viene concatenato in una singola stringa. Le dimensioni massime della stringa indicizzata sono 67 milioni caratteri.  <br/> |
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, la rimozione della punteggiatura e degli spazi e quindi la suddivisione in parole (denominate token) memorizzate nell'indice. Ad esempio, la frase `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Vi è un limite di 1 milione token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice venga troppo esteso con token casuali.  <br/> |
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Esistono ulteriori limiti relativi a diversi aspetti della ricerca del contenuto, ad esempio l'esportazione dei risultati di ricerca e l'indicizzazione del contenuto. Per una descrizione di questi limiti, vedere gli argomenti seguenti:
   

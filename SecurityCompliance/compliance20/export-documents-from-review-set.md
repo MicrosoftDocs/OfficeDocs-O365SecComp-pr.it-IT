@@ -1,10 +1,10 @@
 ---
-title: Esportare documenti da un set di Revisione
+title: Esportare i documenti da un insieme da rivedere
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ea9db6d95b003b5a741ae8a235fc5f06087f87d6
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527201"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155068"
 ---
-# <a name="export-documents-from-a-review-set"></a>Esportare documenti da un set di Revisione
+# <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
 
 L'esportazione di contenuto da un set di revisione può essere eseguita tramite tre diversi metodi:
 

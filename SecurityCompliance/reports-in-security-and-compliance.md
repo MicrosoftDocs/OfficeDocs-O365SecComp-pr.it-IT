@@ -3,7 +3,7 @@ title: Report nel Centro sicurezza e conformità
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: "Utilizzare il Centro sicurezza & Compliance per ottenere vari report per l'organizzazione di SharePoint Online ed Exchange Online, oltre ai report di Azure Active Directory.  "
-ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 979eb59ed0adf115b9cdda4cd99f97845e9b4b4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264898"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157230"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Report nel Centro sicurezza e conformità
 
@@ -44,7 +44,7 @@ Per visualizzare i report nel centro sicurezza e conformità di &, sono necessar
 Nella pagina **Visualizza report** , è possibile visualizzare i tipi di report seguenti: 
   
 - [Report di controllo](#auditing-reports)
-- [Rapporto di revisione di superVisione](#supervisory-review-report)
+- [Rapporto di revisione di supervisione](#supervisory-review-report)
 - [Report sulla prevenzione della perdita di dati](#data-loss-prevention-reports)
     
 ## <a name="auditing-reports"></a>Report di controllo
@@ -57,7 +57,7 @@ Nella tabella seguente vengono descritti i report nella sezione **controllo** de
 |**Report di Azure AD** <br/> |Per cercare attività di accesso inusuali o sospette nell'organizzazione di Office 365, è possibile utilizzare i report di accesso e attività in Microsoft Azure. È inoltre possibile visualizzare gli eventi nel registro di controllo di Azure AD. Per visualizzare i report in Azure, è sufficiente fare clic su **Visualizza report di Azure ad**. Per ulteriori informazioni, vedere: <br/><br/>[Utilizzare la sottoscrizione gratuita di Azure Active Directory in Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Visualizzare i report di accesso e utilizzo](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
 |**Report sui controlli di Exchange** <br/> | È possibile utilizzare la funzionalità di controllo di Office 365 per verificare le modifiche apportate alla configurazione di Exchange Online da parte degli amministratori dell'organizzazione. Vengono inoltre registrate le modifiche apportate all'organizzazione di Exchange Online da un amministratore dei Data Center Microsoft o da un amministratore delegato. Per Exchange Online, la registrazione di controllo dell'amministratore è abilitata per impostazione predefinita, quindi non è necessario eseguire alcuna operazione per attivarla. Exchange Online fornisce anche la registrazione di controllo delle cassette postali per consentire l'accesso alle cassette postali da parte di utenti diversi dal proprietario della cassetta postale. È necessario abilitare la registrazione di controllo della cassetta postale per ogni cassetta postale per la quale si desidera tenere traccia di accesso non proprietario.  <br/>  Per la registrazione di controllo dell'amministratore e della cassetta postale, è possibile eseguire report di controllo per visualizzare le voci del log di controllo. È inoltre possibile esportare i log di controllo dell’amministratore e della cassetta postale, che vengono inviati all'utente entro 24 ore in un file XML allegato al messaggio di posta elettronica. <br/><br/>Per ulteriori informazioni sull’esportazione dei registri di controllo, vedere:  <br/><br/> [Esportare i log di controllo delle cassette postali](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Visualizzare ed esportare il registro di controllo dell'amministratore del datacenter](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Ricerca delle modifiche al gruppo di ruoli o ai log di controllo dell'amministratore](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Rapporti di controllo di Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
-## <a name="supervisory-review-report"></a>Rapporto di revisione di superVisione
+## <a name="supervisory-review-report"></a>Rapporto di revisione di supervisione
 
 Con il rapporto di revisione di supervisione, è possibile visualizzare lo stato di tutti i criteri di revisione di supervisione nell'organizzazione. Per ulteriori informazioni, vedere [configurare i criteri di revisione di supervisione per l'organizzazione](configure-supervision-policies.md).
   

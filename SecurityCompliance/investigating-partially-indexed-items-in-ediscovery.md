@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) sono elementi e documenti delle cassette postali di Exchange nei siti di SharePoint e OneDrive che per qualche motivo non sono stati completamente indicizzati per la ricerca di contenuto. In questo articolo, è possibile sapere perché gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati, identificare gli errori di ricerca per gli elementi parzialmente indicizzati e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione a un messaggio di posta elettronica parzialmente indicizzato. elementi.
-ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254132"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154224"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 
@@ -100,7 +100,7 @@ Di seguito è riportato un elenco di errori di indicizzazione e una descrizione 
 | `attachmentrms` <br/> |Un allegato non è stato in grado di decodificare perché è protetto da RMS.  <br/> |
 | `attachmentsize` <br/> |Un file allegato a un messaggio di posta elettronica è troppo grande e non è stato possibile elaborarlo.  <br/> |
 | `indexingtruncated` <br/> |Quando si scrive il messaggio di posta elettronica elaborato nell'indice, una delle proprietà indicizzabili è troppo grande ed è stata troncata. Le proprietà troncate sono elencate nel campo proprietà errore.  <br/> |
-| `invalidunicode` <br/> |Un messaggio di posta elettronica contiene testo che non può essere elaborato come Unicode valido. L'inDicizzazione per questo elemento potrebbe essere incompleta.  <br/> |
+| `invalidunicode` <br/> |Un messaggio di posta elettronica contiene testo che non può essere elaborato come Unicode valido. L'indicizzazione per questo elemento potrebbe essere incompleta.  <br/> |
 | `parserencrypted` <br/> |Il contenuto dell'allegato o del messaggio di posta elettronica è crittografato e Office 365 non è in grado di decodificare il contenuto.  <br/> |
 | `parsererror` <br/> |Si è verificato un errore sconosciuto durante l'analisi. Questo in genere deriva da un errore del software o da un arresto del servizio.  <br/> |
 | `parserinputsize` <br/> |Un allegato è troppo grande per la gestione del parser e l'analisi di tale allegato non è stata eseguita o non è stata completata.  <br/> |

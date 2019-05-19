@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257634"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153578"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipi di file supportati in indagini sui dati (anteprima)
 
 Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi, descritti nella tabella seguente. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Nella tabella è inoltre indicato se è possibile visualizzare un tipo di file nei visualizzatori disponibili quando si esaminano le prove.
 
-| Tipo MIME | Classe file | Visualizzatore nativo | Visualizzatore di testo | Visualizzatore anNotazioni | Estrazione del contenitore | Estensioni |
+| Tipo MIME | Classe file | Visualizzatore nativo | Visualizzatore di testo | Visualizzatore annotazioni | Estrazione del contenitore | Estensioni |
 | :- | :- | :- | :- | :- | :- | :- |
 | applicazione/MSWord | Documento | Sì | Sì | Sì | No | . doc;. dat |
 | applicazione/PDF | Documento | Sì | Sì | Sì | No | .pdf |

@@ -1,9 +1,9 @@
 ---
-title: RiProvare una ricerca contenuto per risolvere un errore del percorso del contenuto
+title: Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,15 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilizzare il pulsante riProva per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
-ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
-ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
+description: Utilizzare il pulsante Riprova per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
+ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33472381"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157068"
 ---
-# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>RiProvare una ricerca contenuto per risolvere un errore del percorso del contenuto
+# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
 
 Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per eseguire ricerche in un numero elevato di cassette postali, è possibile che si verifichino errori di ricerca analoghi a quelli riportati di seguito:
 
@@ -44,7 +44,7 @@ Quando si esegue la ricerca di un numero elevato di cassette postali, la ricerca
 
 Il riavvio della ricerca spesso comporterà errori simili su server diversi. Invece di riavviare la ricerca, fare clic sul **** pulsante Riprova visualizzato nella parte superiore della pagina dei risultati di ricerca.
 
-![Fare clic sul pulsante riProva per risolvere gli errori relativi alla posizione del contenuto](media/retrycontentsearch3.png)
+![Fare clic sul pulsante Riprova per risolvere gli errori relativi alla posizione del contenuto](media/retrycontentsearch3.png)
 
 In questo modo, la ricerca verrà ritentata solo per le cassette postali che hanno avuto esito negativo. Quando si ritenta la ricerca, vengono mantenuti gli altri risultati restituiti correttamente.
 

@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come usare i criteri DLP per proteggere i dati personali in Office 365.
-ms.openlocfilehash: 97a8c584cd010ae10a0416e47d8184c84f1e1ab9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b4754f5b8627b398c92d36baf2d48b04e67edcf9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243211"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155598"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Applicare protezione ai dati personali in Office 365
 
@@ -142,7 +142,7 @@ Descrizione: visualizzare suggerimenti per i criteri ai dipendenti, informare i 
 <tr class="odd">
 <td align="left">Comunicare agli utenti quando il contenuto corrisponde alle impostazioni dei criteri</td>
 <td align="left"><p>Selezionare questa casella ("Mostra suggerimenti per i criteri agli utenti e invia loro una notifica tramite posta elettronica").</p>
-<p>Fare clic su "Personalizza suggerimento e messaggio di posta elettronica" e aggiornali per il proprio ambiente. Vedere le notifiche predefinite in questo articolo: <a href="https://support.office.com/en-us/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Invio di notifiche tramite posta elettronica e visualizzazione dei suggerimenti per i criteri per i criteri DLP</a>.</p></td>
+<p>Fare clic su "Personalizza suggerimento e messaggio di posta elettronica" e aggiornali per il proprio ambiente. Vedere le notifiche predefinite in questo articolo: <a href="https://support.office.com/it-IT/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Invio di notifiche tramite posta elettronica e visualizzazione dei suggerimenti per i criteri per i criteri DLP</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Rilevare quando una determinata quantità di informazioni riservata viene condivisa in una sola volta</td>
@@ -248,9 +248,11 @@ L'illustrazione traccia i livelli di autorizzazione da Controllo completo a Solo
 
 Ulteriori informazioni:
 
--   [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/it-IT/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   
+  [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/it-IT/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [Informazioni sui gruppi di SharePoint](https://support.office.com/it-IT/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   
+  [Informazioni sui gruppi di SharePoint](https://support.office.com/it-IT/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Criteri di condivisione esterna per le raccolte di SharePoint Online e OneDrive for Business
 
@@ -301,9 +303,10 @@ Nella tabella riportata di seguito vengono riassunti i controlli che è possibil
 Ulteriori informazioni:
 
 -   
-  [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+  [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/it-IT/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   
+  [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Criteri di accesso al dispositivo a livello di sito
 
@@ -352,7 +355,7 @@ I criteri di accesso ai dispositivi per SharePoint e OneDrive for Business richi
 </tbody>
 </table>
 
-Altre informazioni: [Interfaccia di amministrazione di SharePoint Online: controllare l'accesso da dispositivi non gestiti](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Altre informazioni: [Interfaccia di amministrazione di SharePoint Online: controllare l'accesso da dispositivi non gestiti](https://support.office.com/it-IT/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Protezione dell'accesso al servizio per identità e dispositivi
 

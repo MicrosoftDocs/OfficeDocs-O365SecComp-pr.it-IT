@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 29ae9d7ba8be2bf0064c163605aee9ad8fd5fd07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253885"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154198"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -26,7 +26,7 @@ In questo articolo viene illustrato come identificare le esenzioni effettuate ne
 
 Office 365 offre diversi modi in cui l'organizzazione può impedire che il contenuto delle cassette postali venga eliminato definitivamente. In questo modo l'organizzazione può conservare il contenuto per soddisfare i requisiti di conformità o per la durata di indagini legali o di altro tipo. Di seguito è indicato un elenco delle caratteristiche di conservazione ( ** denominate anche esenzioni) in Office 365:
 
-- **Esenzioni per controversIa legale** applicate alle cassette postali degli utenti in Exchange Online.
+- **Esenzioni per controversia legale** applicate alle cassette postali degli utenti in Exchange Online.
 
 - **eDiscovery Hold** -appigli associati a un caso di eDiscovery nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e nella cassetta postale corrispondente per i gruppi di Office 365 e Microsoft teams.
 
@@ -49,7 +49,7 @@ Per gestire le cassette postali in blocco, potrebbe essere necessario identifica
 
 È possibile eseguire i due cmdlet seguenti in PowerShell di Exchange Online per ottenere il GUID delle esenzioni inserite in una cassetta postale. Dopo aver ottenuto un GUID, è possibile utilizzarlo per identificare il blocco specifico nel passaggio 2. Si noti che le esenzioni per controversia legale non sono identificate da un GUID. Le esenzioni per controversia legale sono abilitate o disabilitate per una cassetta postale.
 
-- **Get-Mailbox** -utilizzare questo cmdlet per determinare se la conservazione per controversia legale è abilitata per una cassetta postale e per ottenere i GUID per eDiscovery holds, le stive sul posto e i criteri di riTenzione di Office 365 che sono specificatamente assegnati a una cassetta postale. L'output di questo cmdlet indicherà anche se una cassetta postale è stata esclusa in modo esplicito da un criterio di conservazione a livello dell'organizzazione.
+- **Get-Mailbox** -utilizzare questo cmdlet per determinare se la conservazione per controversia legale è abilitata per una cassetta postale e per ottenere i GUID per eDiscovery holds, le stive sul posto e i criteri di ritenzione di Office 365 che sono specificatamente assegnati a una cassetta postale. L'output di questo cmdlet indicherà anche se una cassetta postale è stata esclusa in modo esplicito da un criterio di conservazione a livello dell'organizzazione.
 
 - **Get-OrganizationConfig** -utilizzare questo cmdlet per ottenere i GUID per i criteri di conservazione a livello dell'organizzazione.
 
@@ -139,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Per eseguire la connessione a PowerShell per Centro sicurezza & Compliance, vedere [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Archiviazione sul posto
+### <a name="in-place-holds"></a>Blocchi sul posto
 
 Eseguire il seguente comando in PowerShell di Exchange Online per identificare il blocco sul posto applicato alla cassetta postale. Utilizzare il GUID per il blocco sul posto identificato nel passaggio 1. Il comando Visualizza il nome del blocco e un elenco delle cassette postali a cui è applicato il blocco.
 

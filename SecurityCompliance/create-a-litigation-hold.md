@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258370"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153748"
 ---
 # <a name="create-a-litigation-hold"></a>Creare un blocco per controversia legale
 
@@ -50,9 +50,9 @@ Di seguito sono riportati i passaggi per inserire una cassetta postale per contr
     
 5. In **Blocco per controversia legale: disabilitato**, fare clic su **Abilita** per attivare il blocco per controversia legale nella cassetta postale.
     
-6. Nella pagina **blocco per controversIa legale** , immettere le informazioni facoltative seguenti: 
+6. Nella pagina **blocco per controversia legale** , immettere le informazioni facoltative seguenti: 
     
-    - Durata della conservazione per **controversIa legale (giorni)** : utilizzare questa casella per creare un blocco basato sul tempo e specificare il periodo di conservazione degli elementi della cassetta postale quando la cassetta postale viene inserita nel blocco per controversia legale. La durata viene calcolata a partire dalla data di ricezione o creazione dell'elemento della cassetta postale. Quando la durata del blocco scade per un elemento specifico, l'elemento non verrà più mantenuto. Se si lascia vuota questa casella, gli elementi vengono conservati a tempo indeterminato o fino a quando non viene rimosso il blocco. Usare un numero di giorni per specificare la durata.
+    - Durata della conservazione per **controversia legale (giorni)** : utilizzare questa casella per creare un blocco basato sul tempo e specificare il periodo di conservazione degli elementi della cassetta postale quando la cassetta postale viene inserita nel blocco per controversia legale. La durata viene calcolata a partire dalla data di ricezione o creazione dell'elemento della cassetta postale. Quando la durata del blocco scade per un elemento specifico, l'elemento non verrà più mantenuto. Se si lascia vuota questa casella, gli elementi vengono conservati a tempo indeterminato o fino a quando non viene rimosso il blocco. Usare un numero di giorni per specificare la durata.
     
     - **Nota** : utilizzare questa casella per informare l'utente che la cassetta postale è in blocco per controversia legale. La nota verrà visualizzata nella pagina informazioni account nella cassetta postale dell'utente se utilizza Outlook 2010 o versione successiva. Per accedere a questa pagina, gli utenti possono fare clic su **file** in Outlook.
     

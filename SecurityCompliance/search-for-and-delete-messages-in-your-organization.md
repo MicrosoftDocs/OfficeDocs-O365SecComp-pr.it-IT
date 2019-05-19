@@ -3,7 +3,7 @@ title: Cercare ed eliminare i messaggi di posta elettronica nell'organizzazione 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilizzare la funzionalità di ricerca e spurgo nel centro sicurezza & compliance in Office 365 per cercare ed eliminare un messaggio di posta elettronica da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265348"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158478"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365-Guida per gli amministratori
 
@@ -118,7 +118,7 @@ Si noti che quando si esegue il comando precedente per eliminare i messaggi in m
   
 Per ulteriori informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Come si ottiene lo stato nell'operazione di ricerca e rimozione?**
 

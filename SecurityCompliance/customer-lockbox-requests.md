@@ -3,7 +3,7 @@ title: Richieste di Customer Lockbox di Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 3a86f3333114f3015b85d8066298f9834737f127
-ms.sourcegitcommit: 000548aa269ad775f20af5acd6aa726ac340c793
+ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33661422"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153838"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 

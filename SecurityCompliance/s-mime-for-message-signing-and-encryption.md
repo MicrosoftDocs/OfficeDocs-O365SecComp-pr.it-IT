@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Gli amministratori possono acquisire informazioni sull'utilizzo di S/MIME in Exchange Online.
-ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261384"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156998"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME per la firma e la crittografia dei messaggi in Exchange Online
 
@@ -59,7 +59,7 @@ La configurazione di S/MIME per Exchange Online con Outlook sul Web prevede i pa
 
 ## <a name="related-message-encryption-technologies"></a>Tecnologie di crittografia del messaggio correlato
 
-Poiché la sicurezza dei messaggi diventa più importante, gli amministratori devono comprendere i principi e i concetti della messaggistica sicura. Questa comprensione è particolarmente importante a causa della crescente varietà di tecnologie correlate alla protezione (tra cui S/MIME) disponibili. Per ulteriori informazioni su S/MIME e su come funziona nel contesto della posta elettronica, vedere [understandIng s/MIME](https://go.microsoft.com/fwlink/?LinkID=393948). Un'ampia gamma di tecnologie di crittografia interagiscono per garantire la protezione dei messaggi a riposo e in transito. S/MIME può funzionare contemporaneamente con le tecnologie seguenti ma non dipende da esse:
+Poiché la sicurezza dei messaggi diventa più importante, gli amministratori devono comprendere i principi e i concetti della messaggistica sicura. Questa comprensione è particolarmente importante a causa della crescente varietà di tecnologie correlate alla protezione (tra cui S/MIME) disponibili. Per ulteriori informazioni su S/MIME e su come funziona nel contesto della posta elettronica, vedere [Understanding s/MIME](https://go.microsoft.com/fwlink/?LinkID=393948). Un'ampia gamma di tecnologie di crittografia interagiscono per garantire la protezione dei messaggi a riposo e in transito. S/MIME può funzionare contemporaneamente con le tecnologie seguenti ma non dipende da esse:
 
 - **Transport Layer Security (TLS)** crittografa il tunnel o la route tra i server di posta elettronica al fine di prevenire lo snooping e le intercettazioni.
 
@@ -71,7 +71,7 @@ Poiché la sicurezza dei messaggi diventa più importante, gli amministratori de
 
 S/MIME richiede un certificato e un'infrastruttura di pubblicazione spesso utilizzata nelle situazioni interaziendali o tra azienda e consumatori. L'utente controlla le chiavi crittografiche in S/MIME e può scegliere se utilizzarle per ogni messaggio inviato. I programmi di posta elettronica come Outlook cercano la posizione di un'autorità di certificazione radice attendibile per eseguire la firma digitale e la verifica della firma. La crittografia dei messaggi di Office 365 è un servizio di crittografia basato su criteri che può essere configurato da un amministratore e non da un singolo utente, per crittografare la posta inviata a chiunque sia all'interno che all'esterno dell'organizzazione. Si tratta di un servizio online basato su Azure Rights Management (RMS) e non si basa su un'infrastruttura a chiave pubblica. La crittografia dei messaggi di Office 365 fornisce anche funzionalità aggiuntive, ad esempio la possibilità di personalizzare la posta con il marchio dell'organizzazione. Per ulteriori informazioni sulla crittografia dei messaggi di Office 365, vedere la crittografia dei messaggi di [office 365](https://go.microsoft.com/fwlink/?LinkID=392525).
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 [Outlook sul web](http://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
 

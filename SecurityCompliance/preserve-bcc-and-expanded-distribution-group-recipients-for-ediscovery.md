@@ -4,20 +4,20 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: Archiviazione sul posto, blocco per controversia legale e criteri di conservazione di Office 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery.
-ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 85e291b5fb4e12ad077c98d805ac232b17e6e647
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261684"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157408"
 ---
-# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Mantenere Ccn e i destinatari del gruppo di distribuzione espanso per eDiscovery
+# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservazione dei destinatari Ccn e del gruppo di destinazione esteso per eDiscovery
   
 Archiviazione sul posto, blocco per controversia legale e [criteri di conservazione di Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (creati nel centro sicurezza e conformità di &) consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery. Per impostazione predefinita, le informazioni sui destinatari inseriti direttamente nei campi A e Cc di un messaggio sono incluse in tutti i messaggi, ma l'organizzazione può richiedere la possibilità di cercare e riprodurre i dettagli di tutti i destinatari di un messaggio. Ciò include: 
   

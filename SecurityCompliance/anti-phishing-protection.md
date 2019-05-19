@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/11/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 offre una vasta gamma di protezione contro gli attacchi di phishing per impostazione predefinita e anche con altre offerte, come il trifosfato di adenosina anti-phishing. In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Office 365.
-ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a002002967e3e529cada587f9b0bd29fa867e06e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242584"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155668"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Protezione anti-phishing in Office 365
 
@@ -44,7 +44,7 @@ Per ulteriori informazioni sul modo in cui Office 365 è configurato per imposta
   
 [Proteggersi da schemi di phishing e altre forme di frode online](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
   
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
   
 [Le funzionalità di anti-phishing ATP in Office 365](atp-anti-phishing.md)
   

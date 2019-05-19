@@ -3,7 +3,7 @@ title: Configurare un criterio di archiviazione ed eliminazione per le cassette 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Office 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264586"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156708"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365
 
@@ -301,7 +301,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
     ```
 4. È possibile rieseguire il comando riportato nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito sia stato modificato.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Come viene calcolato il periodo di validità della conservazione? L'età di conservazione degli elementi della cassetta postale viene calcolata a partire dalla data di recapito o dalla data di creazione per gli elementi, ad esempio i messaggi Draft che non sono stati inviati ma che sono stati creati dall'utente. Quando Assistente cartelle gestite elabora gli elementi in una cassetta postale, applica una data di inizio e una data di scadenza a tutti gli elementi con tag di conservazione utilizzando l'azione di conservazione Elimina e consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una data di spostamento. 
     
@@ -313,7 +313,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
     |Casa Alpina 7 anni Elimina definitivamente  <br/> |Elimina definitivamente gli elementi nella cassetta postale principale o nella cassetta postale di archiviazione quando hanno 7 anni.  <br/> |Personalizzato (vedere [il passaggio 2: creare nuovi tag di conservazione per i criteri di eliminazione e di archiviazione](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Tag dei criteri predefiniti (soppressione); Questo tag viene applicato automaticamente all'intera cassetta postale.  <br/> |
     |Casa Alpina elementi eliminati 5 anni eliminare e consentire il ripristino  <br/> |Elimina gli elementi dalla cartella Posta eliminata di 5 anni. Gli utenti possono recuperare questi elementi per un massimo di 14 giorni dopo l'eliminazione.<sup>\*</sup> <br/> |Personalizzato (vedere [il passaggio 2: creare nuovi tag di conservazione per i criteri di eliminazione e di archiviazione](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Tag del criterio di conservazione (elementi eliminati); Questo tag viene applicato automaticamente agli elementi nella cartella Posta eliminata.  <br/> |
     |Spostamento nell'archivio degli elementi ripristinabili 14 giorni  <br/> |Sposta gli elementi che sono stati nella cartella elementi ripristinabili per 14 giorni nella cartella elementi ripristinabili nella cassetta postale di archiviazione.  <br/> |Built-in  <br/> |Tag del criterio di conservazione (elementi ripristinabili); Questo tag viene applicato automaticamente agli elementi nella cartella elementi ripristinabili.  <br/> |
-    |Posta inDesiderata  <br/> |Elimina definitivamente gli elementi presenti nella cartella posta inDesiderata per 30 giorni. Gli utenti possono recuperare questi elementi per un massimo di 14 giorni dopo l'eliminazione.<sup>\*</sup> <br/> |Built-in  <br/> |Tag del criterio di conservazione (posta inDesiderata) Questo tag viene applicato automaticamente agli elementi contenuti nella cartella posta inDesiderata.  <br/> |
+    |Posta indesiderata  <br/> |Elimina definitivamente gli elementi presenti nella cartella posta indesiderata per 30 giorni. Gli utenti possono recuperare questi elementi per un massimo di 14 giorni dopo l'eliminazione.<sup>\*</sup> <br/> |Built-in  <br/> |Tag del criterio di conservazione (posta indesiderata) Questo tag viene applicato automaticamente agli elementi contenuti nella cartella posta indesiderata.  <br/> |
     |Elimina dopo 1 mese  <br/> |Elimina definitivamente gli elementi di 30 giorni. Gli utenti possono recuperare questi elementi per un massimo di 14 giorni dopo l'eliminazione.<sup>\*</sup> <br/> |Built-in  <br/> |Personali Questo tag può essere applicato dagli utenti.  <br/> |
     |Elimina dopo 1 anno  <br/> |Elimina definitivamente gli elementi di 365 giorni. Gli utenti possono recuperare questi elementi per un massimo di 14 giorni dopo l'eliminazione.<sup>\*</sup> <br/> |Built-in  <br/> |Personali Questo tag può essere applicato dagli utenti.  <br/> |
     |Non eliminare mai  <br/> |Questo tag impedisce che gli elementi vengano eliminati da un criterio di conservazione.  <br/> |Built-in  <br/> |Personali Questo tag può essere applicato dagli utenti.  <br/> |

@@ -3,7 +3,7 @@ title: casi di eDiscovery nel centro sicurezza e conformità di &
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & Compliance per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Advanced eDiscovery.
-ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f0487a7657b1d6cc4374bfc7308092285aebc979
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257954"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155018"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casi di eDiscovery nel centro sicurezza e conformità di &
 
@@ -50,7 +50,7 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Ulteriori informazioni](#more-information)
+[Altre informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
@@ -170,7 +170,7 @@ Per creare un'esenzione per un caso di eDiscovery:
   
 4. Nella pagina **blocco** fare clic ![su Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Crea**.
     
-5. Nella pagina deNominare il **blocco** , assegnare un nome al blocco. Il nome del blocco deve essere univoco nell'organizzazione. 
+5. Nella pagina denominare il **blocco** , assegnare un nome al blocco. Il nome del blocco deve essere univoco nell'organizzazione. 
     
     ![Assegnare un nome univoco alla propria esenzione](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
@@ -515,7 +515,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
     
     Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Esistono limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243508"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157888"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Office 365 Advanced eDiscovery
 

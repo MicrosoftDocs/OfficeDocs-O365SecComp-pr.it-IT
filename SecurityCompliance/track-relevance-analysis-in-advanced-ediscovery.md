@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264414"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158328"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Monitorare l'analisi della pertinenza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validità calcolata dell'allenamento di pertinenza eseguito nella scheda Tag e indica il passaggio successivo da eseguire nel processo di formazione iterativo in riLevanza. 
+In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validità calcolata dell'allenamento di pertinenza eseguito nella scheda Tag e indica il passaggio successivo da eseguire nel processo di formazione iterativo in rilevanza. 
   
 ## <a name="tracking-relevance-training-status"></a>Verifica dello stato di formazione per pertinenza
 
@@ -46,7 +46,7 @@ In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validi
     La visualizzazione espansa Visualizza ulteriori informazioni e opzioni. Il margine di errore corrente visualizzato è il margine di errore del richiamo nello stato corrente di valutazione, in base ai file di valutazione esistenti (già contrassegnati).
     
     > [!NOTE]
-    >  La fase di valutazione può essere ignorata deselezionando la casella di controllo **valutazione** per ogni problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deSelezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
+    >  La fase di valutazione può essere ignorata deselezionando la casella di controllo **valutazione** per ogni problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
   
     Quando la valutazione non viene completata con il primo set di file di esempio, la valutazione potrebbe essere il passaggio successivo per la codifica di altri file. 
     
@@ -69,7 +69,7 @@ Il calcolo batch viene eseguito come passaggio successivo dopo che l'allenamento
   
 In caso di più di un problema, il calcolo del batch viene effettuato per ogni problema. Durante il calcolo batch, durante l'elaborazione di tutti i file viene monitorato lo stato di avanzamento. 
   
-In questo caso, il passaggio successivo consigliato è "None", che indica che a questo punto non sono necessari ulteriori corsi di riLevanza iterativa. La fase successiva è la scheda riLevanza ** \> decidere** . 
+In questo caso, il passaggio successivo consigliato è "None", che indica che a questo punto non sono necessari ulteriori corsi di rilevanza iterativa. La fase successiva è la scheda rilevanza ** \> decidere** . 
   
 Se si desidera importare nuovi file dopo il calcolo del batch, l'amministratore può aggiungere i file importati a un nuovo carico.
   
@@ -171,7 +171,7 @@ Questa visualizzazione Mostra gli elementi seguenti:
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Esecuzione e revisione della valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   

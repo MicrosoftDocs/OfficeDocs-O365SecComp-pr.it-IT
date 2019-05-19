@@ -1,9 +1,9 @@
 ---
-title: DOMANDE frequenti sull'importazione di file PST in Office 365
+title: Domande frequenti sull'importazione di file PST in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST di Organizaiton in cassette postali di Office 365. "
-ms.openlocfilehash: 69767353a574336351b01fdc42a9c6117c5c31ed
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 632b82a99f1be5d38db3fb50a4b2b4d7a6369186
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255434"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152868"
 ---
-# <a name="faq-about-importing-pst-files-to-office-365"></a>DOMANDE frequenti sull'importazione di file PST in Office 365
+# <a name="faq-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
 
 **Questo articolo è per gli amministratori. Si desidera importare i file PST nella propria cassetta postale? Vedere [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    

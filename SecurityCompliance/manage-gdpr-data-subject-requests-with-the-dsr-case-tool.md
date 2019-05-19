@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 644a604959d4063e5e7bd994bc9dfb57f8642081
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259900"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155808"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -289,7 +289,7 @@ Nelle sezioni seguenti sono disponibili ulteriori informazioni sull'utilizzo del
   
 - **Analisi** : fornisce agli utenti informazioni su come passano il proprio tempo in base ai dati del calendario e della posta nella loro cassetta postale. Tutte le informazioni di analisi sono derivate da intestazioni di posta elettronica e riunioni nella cassetta postale dell'utente. Gli utenti a cui è assegnata una licenza di analisi possono accedere a Office 365 e passare al dashboard di analisi per visualizzare le informazioni dettagliate su come passano il proprio tempo. Gli utenti possono schermare queste informazioni in risposta a una richiesta di accesso DSR. La ricerca incorporata in un caso DSR esporterà i dati utilizzati per generare informazioni di analisi. 
     
-- **Office roamIng Service** -roaming è un servizio in cui vengono archiviate le impostazioni relative a Office, ad esempio il tema di Office, il dizionario personalizzato, le impostazioni della lingua, la modalità di sviluppo e la correzione automatica. 
+- **Office roaming Service** -roaming è un servizio in cui vengono archiviate le impostazioni relative a Office, ad esempio il tema di Office, il dizionario personalizzato, le impostazioni della lingua, la modalità di sviluppo e la correzione automatica. 
     
 I dati di Analytics e del servizio di roaming di Office sono archiviati in una cassetta postale di un soggetto dei dati nelle cartelle nascoste che si trovano in un sottoalbero non-interpersonale (non IPM) delle cassette postali di Exchange Online. Questo significa che i dati vengono nascosti dalla visualizzazione dell'utente quando utilizzano Outlook o altri client di posta elettronica per accedere alla propria cassetta postale. Per ulteriori informazioni sulle cartelle nascoste, vedere [MAPI hidden folders](https://go.microsoft.com/fwlink/?linkid=872758).
   
@@ -299,8 +299,8 @@ Quando si esportano dati da Analytics e dal servizio di roaming di Office, i dat
   
 |**Applicazione**|**GUID/nome cartella**|
 |:-----|:-----|
-|MyAnalytics  <br/> |3c896ded-22c5-450F-91F6-3d1ef0848f6e  <br/> |
-|Servizio di roaming di Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
+|MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
+|Servizio di roaming di Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Per eseguire la ricerca e l'esportazione di dati di analisi e di servizio di roaming di Office:**
   

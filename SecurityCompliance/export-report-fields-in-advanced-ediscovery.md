@@ -3,7 +3,7 @@ title: Esportare i campi di report in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255464"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154472"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Esportare i campi di report in Office 365 Advanced eDiscovery
 
@@ -89,8 +89,8 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Compound_path  <br/> |Elaborazione  <br/> |Percorso del file nativo che include l'origine composta.  <br/> |Sì  <br/> |Sì  <br/> |
 |Input_path  <br/> |Elaborazione  <br/> |Percorso del file di input.  <br/> |Sì  <br/> |Sì  <br/> |
 |Input_date_modified  <br/> |Elaborazione  <br/> |Data e ora dell'Ultima modifica del file di input.  <br/> |Sì  <br/> |Sì  <br/> |
-|ND_ET_sort_excl_attach  <br/> |Analisi  <br/> |ConCatenazione del set di messaggi di posta elettronica e set ND per la revisione. ' S'è aggiunto come prefisso ai set ND è È viene aggiunto al messaggio di posta elettronica imposta.  <br/> |Sì  <br/> |Sì  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Analisi  <br/> |La conCatenazione del set di messaggi di posta elettronica e del set ND per la revisione ' d'viene aggiunta come prefisso ai set ND è È viene aggiunta ai set di messaggi di posta elettronica. Inoltre, ciascun messaggio di posta elettronica all'interno di un Email_set è seguito dagli allegati corretti.  <br/> |Sì  <br/> |Sì  <br/> |
+|ND_ET_sort_excl_attach  <br/> |Analisi  <br/> |Concatenazione del set di messaggi di posta elettronica e set ND per la revisione. ' S'è aggiunto come prefisso ai set ND è È viene aggiunto al messaggio di posta elettronica imposta.  <br/> |Sì  <br/> |Sì  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analisi  <br/> |La concatenazione del set di messaggi di posta elettronica e del set ND per la revisione ' d'viene aggiunta come prefisso ai set ND è È viene aggiunta ai set di messaggi di posta elettronica. Inoltre, ciascun messaggio di posta elettronica all'interno di un Email_set è seguito dagli allegati corretti.  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_custodians  <br/> |Generale  <br/> |Custodi dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_file_IDs  <br/> |Generale  <br/> |ID dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_paths  <br/> |Generale  <br/> |Percorsi dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |

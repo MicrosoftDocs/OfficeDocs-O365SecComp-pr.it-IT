@@ -3,7 +3,7 @@ title: Introduzione a Microsoft Service Trust Portal
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254310"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154438"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -74,7 +74,7 @@ Fornisce gli strumenti e le risorse correlati alla conformità seguenti:
     - Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
     - Regolamento generale sulla protezione dei dati (GDPR)
 
-  Le informazioni sui rapporti di controllo e un collegamento alla pagina dei **rapporti di controllo** vengono visualizzate anche nella Home page del portale del servizio di attendibilItà dei servizi. 
+  Le informazioni sui rapporti di controllo e un collegamento alla pagina dei **rapporti di controllo** vengono visualizzate anche nella Home page del portale del servizio di attendibilità dei servizi. 
   
 - **Compliance** Manager-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Office 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. Per ulteriori informazioni, vedere [utilizzare Compliance Manager per soddisfare i requisiti normativi e di protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
@@ -118,7 +118,7 @@ Funzioni amministrative disponibili solo per l'account di amministratore globale
   
  La pagina **Impostazioni** consente di assegnare l'accesso basato sui ruoli a Compliance Manager. Per ulteriori informazioni, vedere la sezione "autorizzazioni e controllo di accesso basato sui ruoli" in [use Compliance Manager per soddisfare i requisiti normativi e di protezione dei dati quando si utilizzano i servizi cloud Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Cerca
+### <a name="search"></a>Ricerca
 
 Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina Service Trust Portal per espandere la casella, immettere i termini di ricerca e premere **invio**.
 

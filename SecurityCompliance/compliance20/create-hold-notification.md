@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242799"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155158"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 
-Utilizzando le comunicazioni del custode avanzate di eDiscovery (Preview), le organizzazioni possono gestire il flusso di lavoro in base alla comunicazione con i depositari. Tramite lo strumento di comunicazione, i team legali possono inviare, raccogliere e tenere presenti sistematicamente le notifiche per la conservazione legale. Il processo di creazione flessibile consente inoltre ai team di personalizzare il flusso di lavoro di notifica di archiviazione e il contenuto nelle notifiche inviate ai depositari. 
+Utilizzando le comunicazioni del custode di eDiscovery avanzate, le organizzazioni possono gestire il flusso di lavoro attorno alla comunicazione con i depositari. Tramite lo strumento di comunicazione, i team legali possono inviare, raccogliere e tenere presenti sistematicamente le notifiche per la conservazione legale. Il processo di creazione flessibile consente inoltre ai team di personalizzare il flusso di lavoro di notifica di archiviazione e il contenuto nelle notifiche inviate ai depositari. 
 
 ![Pagina comunicazioni](../media/CommunicationPage.PNG)
 
@@ -35,7 +35,7 @@ Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche
 
 ![Pagina di comunicazione del nome](../media/NameCommunication.PNG)
 
-1. Nel centro sicurezza & Compliance, passare a **eDiscovery _GT_ Advanced eDiscovery (Preview)** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel centro sicurezza & Compliance, passare a **eDiscovery _GT_ Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
    
 2. Fare clic sulla scheda **comunicazioni** , quindi fare clic su **nuova comunicazione**.
    
@@ -49,7 +49,7 @@ Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche
 
 ## <a name="step-2-define-the-portal-content"></a>Passaggio 2: definire il contenuto del portale
 
-Successivamente, è possibile creare e aggiungere il contenuto dell'avviso di blocco. Nella pagina **Definisci contenuto portale** della creazione guidata **comunicazione** , specificare il contenuto della notifica di blocco. Questo contenuto verrà accodato automaticamente agli avvisi di emissione, riEmissione, sollecito e esCalation. Inoltre, questo contenuto verrà visualizzato nel portale di conformità del custode. 
+Successivamente, è possibile creare e aggiungere il contenuto dell'avviso di blocco. Nella pagina **Definisci contenuto portale** della creazione guidata **comunicazione** , specificare il contenuto della notifica di blocco. Questo contenuto verrà accodato automaticamente agli avvisi di emissione, riemissione, sollecito e escalation. Inoltre, questo contenuto verrà visualizzato nel portale di conformità del custode. 
 
 ![Pagina contenuto portale](../media/PortalContent.PNG)
 
@@ -68,7 +68,7 @@ Per creare il contenuto del portale:
 
 Dopo aver definito il contenuto della notifica di blocco, è possibile configurare i flussi di lavoro per l'invio e la gestione del processo di notifica. Le notifiche sono messaggi di posta elettronica inviati per la notifica e il follow-up con i depositari. Ogni custode aggiunto alla comunicazione riceverà la stessa notifica. 
 
-Per impostare e inviare una notifica di blocco, è necessario includere le notifiche di emissione, riEmissione e rilascio.
+Per impostare e inviare una notifica di blocco, è necessario includere le notifiche di emissione, riemissione e rilascio.
 
 ### <a name="issuance-notification"></a>Notifica di rilascio 
 
@@ -86,7 +86,7 @@ Per creare una notifica di rilascio:
    
 5. Fare clic su **Salva**. 
 
-### <a name="re-issuance-notification"></a>Notifica di riEmissione 
+### <a name="re-issuance-notification"></a>Notifica di riemissione 
 
 Quando il caso progredisce, potrebbe essere necessario che i depositari possano conservare dati aggiuntivi o meno rispetto a quelli precedentemente istruiti. Dopo aver aggiornato il contenuto dell'avviso di conservazione, la notifica di riemissione segnala ai depositari le modifiche apportate ai propri obblighi.
 
@@ -125,7 +125,7 @@ Per creare una notifica di rilascio:
 
 Facoltativamente, è possibile semplificare il flusso di lavoro per la creazione e la pianificazione delle notifiche di promemoria automatica e di escalation.
 
-![Pagina proMemoria/esCalation](../media/ReminderEscalations.PNG)
+![Pagina promemoria/escalation](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Promemoria
 

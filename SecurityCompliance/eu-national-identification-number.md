@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255644"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154460"
 ---
 # <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
@@ -25,7 +25,7 @@ In questo argomento viene illustrato l'aspetto di un criterio di prevenzione del
 
 ### <a name="format"></a>Formato
 
-Combinazione A 24 caratteri di lettere, cifre e caratteri speciali
+Combinazione a 24 caratteri di lettere, cifre e caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
@@ -135,7 +135,7 @@ numero nazionale
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -149,15 +149,15 @@ BNN
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
-единен граждански Номер
+единен граждански номер
   
 grazhdanski nomer
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>Croazia
 
@@ -278,7 +278,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 IK
   
@@ -433,7 +433,7 @@ identification number
   
 numero ID personale
   
-uimhir phearsanta Seirbhíse poiblí
+uimhir phearsanta seirbhíse poiblí
   
 uimh. PSP
   
@@ -501,7 +501,7 @@ numero di certificato personale
   
 codice fiscale
   
-personalcodeno #
+personalcodeno#
   
 numero ID personale
   
@@ -575,7 +575,7 @@ numero di codice personale
   
 numero di certificato personale
   
-personalcodeno #
+personalcodeno#
   
 numero ID personale
   
@@ -642,11 +642,11 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno #
+uniqueidentityno#
   
 codice personale.
   
-Asmeninis skaitmeninis kodas
+asmeninis skaitmeninis kodas
   
 unikalus identifikavimo numeris
   
@@ -654,7 +654,7 @@ piliečio paslaugos numeris
   
 unikalus identifikavimo kodas
   
-Asmens kodas.
+asmens kodas.
   
 ## <a name="luxemburg"></a>Lussemburgo
 
@@ -703,17 +703,17 @@ ID personale
   
 numero ID personale
   
-personalidno #
+personalidno#
   
 numero ID univoco
   
-personalidnumber #
+personalidnumber#
   
 chiave ID univoco
   
 codice ID personale
   
-uniqueidkey #
+uniqueidkey#
   
 codice singolo
   
@@ -727,11 +727,11 @@ ID personnelle
   
 personale di Numéro d'identification
   
-idpersonnelle #
+idpersonnelle#
   
-persönliche Identifikationsnummer
+persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>Malta
 
@@ -788,7 +788,7 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno #
+uniqueidentityno#
   
 Kodiċi numerai personali
   
@@ -849,7 +849,7 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno #
+uniqueidentityno#
   
 BSN
   
@@ -928,11 +928,11 @@ pin
   
 numero assicurativo
   
-insurancenumber #
+insurancenumber#
   
 numero di identità univoco
   
-uniqueidentityno #
+uniqueidentityno#
   
 Cod numerico personale
   
@@ -942,15 +942,15 @@ Cod Unic identificare
   
 Număr personale Unic
   
-Număr identitate
+număr identitate
   
 Număr identificare Personal
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>Slovacchia
 
@@ -1003,7 +1003,7 @@ numero di identificazione personale
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -1013,7 +1013,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -1080,7 +1080,7 @@ numero di registrazione univoco
   
 numero di identità univoco
   
-uniqueidentityno #
+uniqueidentityno#
   
 numero di cittadino Master univoco
   
@@ -1148,19 +1148,19 @@ identità personale No
   
 numero di identità univoco
   
-nationalidno #
+nationalidno#
   
 UniqueId
   
 DNI
   
-nationalid #
+nationalid#
   
 nie
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
@@ -1172,9 +1172,9 @@ número Nacional Identidad
   
 DNI número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>Svezia
 

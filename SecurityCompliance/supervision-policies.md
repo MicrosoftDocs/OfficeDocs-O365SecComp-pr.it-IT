@@ -1,9 +1,9 @@
 ---
-title: Criteri di superVisione in Office 365
+title: Criteri di supervisione in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
@@ -16,34 +16,36 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 4399ea298d467a9ab7f395a51d23b2f9f783231b
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470426"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156478"
 ---
-# <a name="supervision-policies-in-office-365"></a>Criteri di superVisione in Office 365
+# <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
-I criteri di superVisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione. 
+I criteri di supervisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione. 
 
 Questi criteri possono anche aiutare a superare molte sfide di conformità moderne, tra cui:
 
 - Monitoraggio dei tipi di canali di comunicazione crescenti
 - Volume crescente di dati dei messaggi
-- Applicazione di regolamentazione & il rischio di multe.
+- Applicazione di regolamentazione & il rischio di ammende
 
 In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Office 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
 
-Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di superVisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Per una breve panoramica dei criteri di supervisione, vedere il [video sui criteri](https://youtu.be/C3Y8WZ7o_dI) di supervisione sul [canale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
+
+Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di supervisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="scenarios-for-supervision-policies"></a>Scenari per i criteri di supervisione
 
-I criteri di superVisione possono assistere il monitoraggio delle comunicazioni nell'organizzazione in diverse aree:
+I criteri di supervisione possono assistere il monitoraggio delle comunicazioni nell'organizzazione in diverse aree:
 
 - **Criteri aziendali**
 
-    I dipendenti devono essere conformi all'uso accettabile, agli standard etici e ad altri criteri aziendali in tutte le comunicazioni relative alle aziende. I criteri di superVisione sono in grado di rilevare violazioni dei criteri e di eseguire azioni correttive che consentono di attenuare questi tipi di incidenti. Ad esempio, è possibile monitorare la propria organizzazione per individuare potenziali violazioni delle risorse umane, quali molestie o utilizzo di linguaggio inappropriato o offensivo nelle comunicazioni dei dipendenti.
+    I dipendenti devono essere conformi all'uso accettabile, agli standard etici e ad altri criteri aziendali in tutte le comunicazioni relative alle aziende. I criteri di supervisione sono in grado di rilevare violazioni dei criteri e di eseguire azioni correttive che consentono di attenuare questi tipi di incidenti. Ad esempio, è possibile monitorare la propria organizzazione per individuare potenziali violazioni delle risorse umane, quali molestie o utilizzo di linguaggio inappropriato o offensivo nelle comunicazioni dei dipendenti.
 
 - **Gestione dei rischi**
 
@@ -51,13 +53,13 @@ I criteri di superVisione possono assistere il monitoraggio delle comunicazioni 
 
 - **Conformità alle normative**
 
-    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito per le organizzazioni di disporre di procedure di supervisione per monitorare le attività dei suoi dipendenti e i tipi di imprese in cui si impegna. Un altro esempio potrebbe essere la necessità di monitorare broker-dealer nell'organizzazione per salvaguardarsi da possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di superVisione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per monitorare e segnalare le comunicazioni aziendali.
+    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito per le organizzazioni di disporre di procedure di supervisione per monitorare le attività dei suoi dipendenti e i tipi di imprese in cui si impegna. Un altro esempio potrebbe essere la necessità di monitorare broker-dealer nell'organizzazione per salvaguardarsi da possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di supervisione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per monitorare e segnalare le comunicazioni aziendali.
 
 ## <a name="components"></a>Componenti
 
-### <a name="supervision-policy"></a>Criteri di superVisione
+### <a name="supervision-policy"></a>Criteri di supervisione
 
-È possibile creare criteri di supervisione nel centro conformità. Questi criteri definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specifica chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli revisione di superVisione possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina di superVisione nel centro conformità.
+È possibile creare criteri di supervisione nel centro conformità. Questi criteri definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specifica chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli revisione di supervisione possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina di supervisione nel centro conformità.
 
 ### <a name="supervised-users"></a>Utenti controllati
 
@@ -87,6 +89,8 @@ Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi i
 
 - **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) per i dati importati nelle cassette postali di Office 365 nell'organizzazione. [Informazioni su come importare i dati di terze parti in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
+Le comunicazioni acquisite su queste piattaforme vengono conservate per sette anni per ogni criterio per impostazione predefinita, anche se gli utenti lasciano l'organizzazione e la loro cassetta postale viene eliminata.
+
 ### <a name="policy-settings"></a>Impostazioni dei criteri
 
 #### <a name="direction"></a>Direction
@@ -97,7 +101,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-#### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
+#### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
@@ -106,7 +110,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - Privacy
 - Tipo di informazioni personalizzato
 
-Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere [quali tipi di informazioni riservaTe devono essere cercate](what-the-sensitive-information-types-look-for.md).
+Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere [quali tipi di informazioni riservate devono essere cercate](what-the-sensitive-information-types-look-for.md).
 
 #### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
@@ -114,7 +118,7 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 #### <a name="offensive-language"></a>Lingua offensiva
 
-Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare i messaggi di posta elettronica inadeguati come parte dei requisiti di monitoraggio per il bullismo e l'antimolestia. Per impedire o bloccare la lingua offensiva nelle comunicazioni per la propria organizzazione, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) che utilizza un dizionario di [parole chiave personalizzate](create-a-keyword-dictionary.md) per i termini offensivi.
+Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare i messaggi di posta elettronica inadeguati come parte dei requisiti di monitoraggio per il bullismo e l'antimolestia. Per impedire o bloccare la lingua offensiva per altre comunicazioni nell'organizzazione, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) che utilizza un [dizionario di parole chiave personalizzate](create-a-keyword-dictionary.md) di termini offensivi.
 
 Il modello di lingua offensiva attualmente supporta le parole chiave in inglese e monitora il corpo dei messaggi di posta elettronica. Il modello di lingua offensivo monitora la posta elettronica per i sentimenti associati ai tipi di lingua seguenti:
 
@@ -147,33 +151,33 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
 | **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
 | **L'allegato contiene una o più delle seguenti parole**  <br><br> **L'allegato contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga affinché il criterio venga applicato all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
 | **Attachment è uno qualsiasi di questi tipi di file**  <br><br> **Attachment è nessuno di questi tipi di file** | Per controllare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file, ad esempio. exe o. pdf. Se si desidera includere o escludere più estensioni di file, immetterle su righe separate. Per applicare il criterio, è necessario che sia presente una sola estensione per gli allegati.|
-| **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è maggiore di** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 mb**, tutti i messaggi che sono 1,01 MB e superiori sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
-| **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. ad esempio, se si specifica **attachment è maggiore di** \> **2,0 mb**, tutti i messaggi con allegati 2,01 MB e oltre sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
+| **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è maggiore di** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. Ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 MB**, tutti i messaggi che sono 1,01 MB e superiori sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
+| **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. Ad esempio, se si specifica **Attachment è maggiore di** \> **2,0 MB**, tutti i messaggi con allegati 2,01 MB e oltre sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"></a> Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una o più delle seguenti parole**, con le parole chiave "Banker" e "insider trading" su righe separate. Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
   
 ##### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
-Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che siano soddisfatte per l'applicazione del criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario creare un criterio che dovrebbe essere applicato se un messaggio contiene la parola "Trade" e ha dimensioni superiori a 2 MB. Tuttavia, se il messaggio contiene anche le parole "apProvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
+Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che siano soddisfatte per l'applicazione del criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario creare un criterio che si applica se un messaggio contiene la parola "Trade" ed è superiore a 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
   
 - Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
 
 - La **dimensione del messaggio è maggiore di**, con il valore 2 MB
 
-- Il **messaggio contiene nessuna di queste parole**, con le parole chiave "approvate da Contoso Financial team".
+- Il **messaggio contiene nessuna di queste parole**, con le parole chiave "approvate dal team finanziario contoso"
 
 #### <a name="review-percentage"></a>Percentuale di Revisione
 
-Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di supervisione. Una quantità di contenuto selezionata casualmente viene selezionata dalla percentuale totale corrispondente alle condizioni scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile immettere **100%** in un criterio di supervisione.
+Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di supervisione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile immettere **100%** in un criterio di supervisione.
 
 ## <a name="monitor--manage"></a>Monitorare la gestione di &
 
-Monitorare i risultati dei criteri di supervisione e applicare un tag di risoluzione è facile e conveniente. È possibile visualizzare rapidamente lo stato degli elementi recensiti, degli utenti e dei gruppi in supervisione, nonché gli utenti e i gruppi designati come revisori.
+È facile monitorare i risultati dei criteri di supervisione e applicare un tag di risoluzione. È possibile visualizzare rapidamente lo stato degli elementi recensiti, degli utenti e dei gruppi in supervisione, nonché gli utenti e i gruppi designati come revisori.
 
-### <a name="supervision-policy-dashboard"></a>Dashboard criteri di superVisione
+### <a name="supervision-policy-dashboard"></a>Dashboard criteri di supervisione
 
-Il modo più semplice per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso consiste nell'utilizzare il dashboard dei criteri di supervisione. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, intervenire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro **** > conformità al momento dell' > **apertura**del*criterio personalizzato*.
+Utilizzare il dashboard dei criteri di supervisione per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, intervenire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro **** > conformità al momento dell' > **apertura**del*criterio personalizzato*.
 
 #### <a name="dashboard-home"></a>Home dashboard
 
@@ -182,13 +186,13 @@ La **Home** page del dashboard contiene diverse sezioni che consentono di interv
 - Esaminare rapidamente le evidenziazioni in sospeso e risolte per la settimana
 - Visualizzare un elenco degli utenti controllati e dei gruppi controllati per il criterio selezionato
 - Visualizzare un elenco di revisori e team di revisione per il criterio selezionato
-- Vedere quali piattaforme di comunicazione dispongono di contenuto sotto controllo per il criterio.
+- Vedere quali piattaforme di comunicazione dispongono di contenuto sotto controllo per il criterio
 
 #### <a name="review-tab"></a>Scheda Revisione
 
-La scheda **Revisione** è la posizione in cui i revisori possono intervenire e risolvere gli elementi identificati dal criterio selezionato. Qui è possibile:
+La scheda **Revisione** è la posizione in cui i revisori classificano e risolvono gli elementi identificati dal criterio selezionato. Qui è possibile:
 
-- Filtrare in base agli elementi in sospeso, conformi, non conformi e discutibili
+- Filtrare in base agli elementi in sospeso, conformi, non conformi e discutibili.
 - Contrassegnare un singolo elemento come conforme, non conforme o discutibile. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
 - I tag di massa più elementi sono conformi, non conformi o discutibili. È inoltre possibile registrare un commento con più elementi per chiarire l'azione di tagging eseguita.
 - Visualizzare la cronologia del tagging per un singolo elemento. Sono inclusi gli utenti che hanno risolto l'elemento, la data e l'ora dell'azione, il tag di risoluzione e tutti i commenti inclusi.
@@ -198,47 +202,21 @@ La scheda **Revisione** è la posizione in cui i revisori possono intervenire e 
 
 La scheda **elementi risolti** è la posizione in cui i revisori possono visualizzare tutti gli elementi precedentemente risolti per il criterio selezionato. Qui è possibile:
 
-- Visualizzare e ordinare rapidamente l'oggetto, il mittente e la data degli elementi risolti.
+- Visualizzare e ordinare rapidamente l'oggetto, il mittente e la data degli elementi risolti
 - Visualizzare la classificazione e la cronologia dei commenti di qualsiasi elemento selezionato
-
-### <a name="other-ways-to-review-items"></a>Altri modi per esaminare gli elementi
-
-Se i revisori preferiscono non utilizzare il dashboard di supervisione in Office 365, dispongono anche di altre opzioni per la revisione e la gestione degli elementi raccolti dai criteri di supervisione.
-
-#### <a name="outlook-on-the-web"></a>Outlook sul web
-
-Gli utenti designati come revisori in un criterio di supervisione possono utilizzare Outlook sul Web per esaminare e risolvere gli elementi di supervisione. Il componente aggiuntivo di superVisione viene installato automaticamente in Outlook sul Web per tutti i revisori specificati nel criterio. Non è necessaria alcuna configurazione aggiuntiva per le cartelle condivise dei criteri di supervisione per essere disponibili per i revisori configurati.
-
-Con Outlook sul Web, i revisori possono:
-
-- Visualizzare gli elementi filtrati in base allo stato conforme, non conforme, discutibile e risolto
-- Contrassegnare un singolo elemento come conforme, non conforme, discutibile o risolto. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
-- Visualizzare la cronologia del tagging per un singolo elemento, compresi gli utenti che hanno risolto l'elemento, la data e l'ora dell'azione, il tag di risoluzione e tutti i commenti inclusi.
-- Riclassificare gli elementi precedentemente recensiti come conformi, non conformi o discutibili. È inoltre possibile registrare un commento con elementi singoli per chiarire l'azione di riclassificazione eseguita.
-
-#### <a name="microsoft-outlook"></a>Microsoft Outlook
-
-Per esaminare le comunicazioni identificate da un criterio di supervisione, i revisori possono anche utilizzare il componente aggiuntivo di superVisione per Microsoft Outlook. Tuttavia, i revisori devono eseguire alcuni passaggi per installarlo nella versione desktop di Outlook. Per informazioni dettagliate sul componente aggiuntivo per la superVisione di Outlook, vedere [Configure](configure-supervision-policies.md)Supervision Policies.
-
-Con Outlook, i revisori possono:
-
-- Visualizzare gli elementi filtrati in base allo stato conforme, non conforme, discutibile e risolto
-- Contrassegnare un singolo elemento come conforme, non conforme, discutibile o risolto. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
-- Visualizzare la cronologia del tagging per un singolo elemento, compresi gli utenti che hanno risolto l'elemento, la data e l'ora dell'azione, il tag di risoluzione e tutti i commenti inclusi.
-- Riclassificare gli elementi precedentemente recensiti come conformi, non conformi o discutibili. È inoltre possibile registrare un commento con elementi singoli per chiarire l'azione di riclassificazione eseguita.
 
 ## <a name="reports"></a>Report
 
 Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione a livello di criteri e revisori. Per ogni criterio, è anche possibile visualizzare le statistiche in tempo reale sullo stato corrente dell'attività di revisione. È possibile utilizzare i report di supervisione per:
   
 - Verificare che i criteri funzionino come previsto.
-- Informazioni su quante comunicazioni sono identificate per la revisione.
+- Informazioni su quante comunicazioni devono essere riesaminate.
 - Informazioni su quante comunicazioni non sono conformi e quali passano la revisione. Queste informazioni consentono di decidere se ottimizzare i criteri o modificare il numero di revisori.
 
-### <a name="view-the-supervision-report"></a>Visualizzare il report di superVisione
+### <a name="view-the-supervision-report"></a>Visualizzare il report di supervisione
 
 1. Accedere al [centro conformità](https://compliance.microsoft.com) con le credenziali di un account di amministratore dell'organizzazione che disponga delle autorizzazioni per visualizzare i report di supervisione.
-2. Andare al **Dashboard** o alla supervisione di **report** \> . **** Verrà visualizzato un widget di Reporting di supervisione con un riepilogo delle attività correnti dei criteri di supervisione.
+2. Accedere al **Dashboard** dei **report** \> o **** alla supervisione per visualizzare il widget report di supervisione con un riepilogo delle attività correnti del criterio di supervisione.
 3. Selezionare il **** widget di supervisione per aprire la pagina del rapporto dettagliato.
 
 > [!NOTE]
@@ -246,20 +224,18 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
   
 ### <a name="how-to-use-the-report"></a>Come utilizzare il report
 
-Quando un criterio di supervisione identifica un messaggio di comunicazione per la revisione, la posta elettronica viene recapitata alla cartella di superVisione del revisore in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Questo rapporto elenca ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione.
-  
-Utilizzare il report per:
+Questo rapporto elenca ogni criterio e il numero di comunicazioni in ogni fase del processo di revisione. Utilizzare il report per:
   
 - Visualizzare i dati per tutti i criteri o specifici.
 - Visualizzare i dati raggruppati per tipo di tag, revisore o tipo di messaggio.
 - Esportare i dati in un file CSV in base alla data di attività, ai criteri e all'attività reviewer.
 - Filtrare i dati in base a data attività, tipo di tag, revisore e tipo di messaggio.
 
-Di seguito viene indicato un guasto dei valori che è possibile visualizzare nella colonna **tipo di tag** .
+Di seguito viene indicata una scomposizione dei valori visualizzati nella colonna **tipo di tag** .
   
 |**Tipo di tag**|**Cosa significa**|
 |:-----|:-----|
-| **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365 o nella cartella di supervisione del revisore in Outlook o Outlook sul Web.
+| **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365.
 | **Conformi** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi richiedono ancora una soluzione. |
 | **Ambigui** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Questo funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
 | **Non conforme (attivo)** | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |
@@ -269,11 +245,11 @@ Di seguito viene indicato un guasto dei valori che è possibile visualizzare nel
 | **Risolto** | Il numero totale di messaggi provenienti da origini dati di Exchange, teams e di terze parti classificate come **risolte**|
 
 > [!NOTE]
-> Prima che vengano visualizzati in questo report, è necessario eseguire il provisioning di criteri di superVisione. Inoltre, se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
+> Prima che vengano visualizzati in questo report, è necessario eseguire il provisioning di criteri di supervisione. Inoltre, se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
 
 ## <a name="audit"></a>Audit
 
-In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui un criterio di supervisione venga modificato o aggiornato. I criteri di superVisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La prova delle procedure di supervisione è dimostrata con una cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione.
+In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui vengono modificati i criteri di supervisione. I criteri di supervisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione fornisce la prova delle procedure di supervisione.
 
 Le attività dei criteri di supervisione seguenti sono controllate e rese disponibili nei registri di controllo di Office 365:
 

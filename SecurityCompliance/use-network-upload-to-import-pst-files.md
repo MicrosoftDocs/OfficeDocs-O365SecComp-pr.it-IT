@@ -3,7 +3,7 @@ title: Utilizzare il caricamento di rete per importare i file PST dell'organizza
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come utilizzare il caricamento di rete per importare in blocco più file PST nelle cassette postali degli utenti in Office 365.'
-ms.openlocfilehash: 73123d5f36a01b31cfc38e6404bd400bb722fb36
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fb64eecdbeac40aa597d17459f06525b8859fb1f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264232"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156168"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Utilizzare il caricamento di rete per importare i file PST dell'organizzazione in Office 365
 
@@ -240,7 +240,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **governaNce dei dati** e quindi fare clic su **Importa**.
+2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **governance dei dati** e quindi fare clic su **Importa**.
     
 3. Nella pagina **Importa** , fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo processo di importazione**.
     
@@ -328,7 +328,7 @@ Ecco un'illustrazione e una descrizione del processo di caricamento di rete per 
     
 6. **Avviare il processo di importazione PST** -dopo l'avvio del processo di importazione, Office 365 utilizza le informazioni contenute nel file di mapping di importazione PST per importare i file di PST dal percorso di archiviazione di Azure alle cassette postali degli utenti. Le informazioni sullo stato relative al processo di importazione (incluse le informazioni su ogni file PST importato) vengono visualizzate nella pagina **Importa** del Centro sicurezza & Compliance. Al termine del processo di importazione, lo stato del processo è impostato su **completo**.
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Perché importare i file PST in Office 365?
     
@@ -340,7 +340,7 @@ Ecco un'illustrazione e una descrizione del processo di caricamento di rete per 
     
   - Abilitazione delle [cassette postali](enable-archive-mailboxes.md) di archiviazione e dell' [archiviazione automatica](enable-unlimited-archiving.md) per consentire agli utenti un ulteriore spazio di archiviazione delle cassette postali per archiviare i dati importati. 
     
-  - Archiviazione delle cassette postali sul [blocco per controversIa legale](https://go.microsoft.com/fwlink/?linkid=856286) per mantenere i dati importati. 
+  - Archiviazione delle cassette postali sul [blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=856286) per mantenere i dati importati. 
     
   - Utilizzo [degli strumenti](search-for-content.md) di Microsoft eDiscovery per cercare i dati importati. 
     

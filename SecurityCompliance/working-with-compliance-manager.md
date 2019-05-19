@@ -1,9 +1,9 @@
 ---
-title: Collaborare con Microsoft Compliance Manager
+title: Collaborare con Microsoft Compliance Manager (anteprima)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: ec01bc8cbf1a1b59353d2f0840baa539e1331ef4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473140"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157868"
 ---
-# <a name="work-with-microsoft-compliance-manager"></a>Collaborare con Microsoft Compliance Manager
+# <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
 > [!IMPORTANT]
 > Microsoft Compliance Manager è un dashboard e uno strumento di gestione che fornisce un riepilogo della protezione dei dati e della conformità e suggerimenti per migliorare la protezione dei dati e la conformità. Le azioni dei clienti fornite in Compliance Manager sono raccomandazioni. spetta alla propria organizzazione valutare l'efficacia di tali raccomandazioni nei rispettivi ambienti normativi prima dell'implementazione. Le indicazioni rilevate in Compliance Manager non devono essere interpretate come garanzia di conformità.
@@ -378,7 +378,7 @@ Gli elementi Actions sono le attività consigliate per l'implementazione dei req
 Questa funzione consente a un'organizzazione di rimuovere eventuali dipendenze attive o inevase dall'account utente riassegnando un'azione a un nuovo utente.
 
 1. Nel dashboard **elementi azione** selezionare il **gruppo** contenente le valutazioni di cui si desidera riassegnare l'azione.
-2. Nell'elenco a discesa **valutazione** selezionare la valutazione di cui si desidera riAssegnare l'azione oppure selezionare **tutto** dall'elenco a discesa per visualizzare tutte le azioni disponibili.
+2. Nell'elenco a discesa **valutazione** selezionare la valutazione di cui si desidera riassegnare l'azione oppure selezionare **tutto** dall'elenco a discesa per visualizzare tutte le azioni disponibili.
 3. Individuare l'azione che si desidera riassegnare e, nella colonna **proprietario** , selezionare il collegamento per la **Revisione**, **implementato**o **test**.
 4. Eliminare l'utente esistente dal campo **assign user** e scegliere un utente diverso dall'elenco di utenti oppure filtrare l'elenco per selezionare un utente digitando il nome dell'utente.
 5. Nel campo note di implementazione immettere le note che si desidera trasmettere all'utente.
@@ -390,7 +390,7 @@ Un modello è l'oggetto di base in Compliance Manager (Preview) associato a un p
 
 ![Dashboard di Microsoft template di Compliance Manager](media/compliance-manager-template-dashboard.png)
  
-Il dashboard Visualizza ogni modello, insieme alla certificazione e al prodotto associati al modello, le date in cui è stato creato il modello e l'ultima modifica, il numero di controlli Customer e Managed Microsoft, il Punteggio di conformità massimo per la Modello e lo stato del modello (ad esempio, approvato, in attesa di approvazione, imPortato).
+Il dashboard Visualizza ogni modello, insieme alla certificazione e al prodotto associati al modello, le date in cui è stato creato il modello e l'ultima modifica, il numero di controlli Customer e Managed Microsoft, il Punteggio di conformità massimo per la Modello e lo stato del modello (ad esempio, approvato, in attesa di approvazione, importato).
 
 I modelli incorporati dispongono di una valutazione incorporata, ma è possibile creare valutazioni aggiuntive basate su modelli incorporati ed è possibile importare i modelli personalizzati e creare valutazioni personalizzate in base a quelle.
 

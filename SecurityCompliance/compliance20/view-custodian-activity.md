@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,35 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f4bac6ae7a51b01ff6f9b303bb5c2f4911bdb53d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241036"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153908"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
-È necessario individuare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla propria cassetta postale? Advanced eDiscovery (Preview) è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & Compliance. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery (Preview) per facilitare le indagini, accedendo facilmente e ricercando l'attività dei depositari all'interno del caso.
+È necessario individuare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla propria cassetta postale? Advanced eDiscovery è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & Compliance. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per facilitare le indagini, accedendo facilmente e ricercando l'attività dei depositari all'interno del caso.
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina autorizzazioni nell'interfaccia di amministrazione di Exchange. Per consentire a un utente di eseguire la ricerca nel registro di controllo Advanced eDiscovery (Preview) con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo ruolo gr OUP. Per ulteriori informazioni, vedere gestire i gruppi di ruoli in Exchange Online.
+È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina autorizzazioni nell'interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo avanzato di eDiscovery con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per ulteriori informazioni, vedere gestire i gruppi di ruoli in Exchange Online.
 
 > [!IMPORTANT]
 > Se si assegna un utente ai registri di controllo di sola visualizzazione o ai registri di controllo nella pagina autorizzazioni nel centro conformità di sicurezza &, non sarà possibile eseguire la ricerca nel registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò è dovuto al fatto che il cmdlet sottostante utilizzato per eseguire la ricerca nel registro di controllo è un cmdlet di Exchange Online.
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>Passaggio 1: creare una ricerca avanzata dei log di controllo di eDiscovery (Preview)
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Passaggio 1: ricerca del registro di controllo per le attività eseguite da un custode
 
-   1. Selezionare un caso esistente dal **Centro sicurezza _AMP_ Compliance _GT_ Advanced eDiscovery (Preview)**.
+1. Passare a **eDiscovery _GT_ Advanced eDiscovery** e aprire il caso.
+  
+2. Fare clic sulla scheda **depositari** .
+  
+3. Selezionare un custode dall'elenco, quindi fare clic su **Visualizza attività custode** sulla pagina a comparsa.
+
+    Viene visualizzata la pagina di ricerca attività del custode. Tenere presente che il custode selezionato nel passaggio precedente viene visualizzato nella casella di menu a discesa **custode** . È possibile selezionare diversi depositari nell'elenco a discesa, ma è possibile cercare solo le attività per un custode alla volta.
+
+    ![Pagina di ricerca attività del custode](../media/AeDCustodianActivities1.png)
    
-   2. Passare alla scheda **depositari** e selezionare un custode.
-   
-   3. Dopo aver selezionato un custode, fare clic su  ![Visualizzazione dell'attività del custode](../media/ViewCustodianActivity.PNG)  dal riquadro dettagli.
-   
-   4. Configurare i seguenti criteri di ricerca:
+4. Configurare i seguenti criteri di ricerca:
       
-      un. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca.
+   un. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività eseguite dal custode che corrispondono agli altri criteri di ricerca.
 
       ![Elenco delle attività](../media/CustodianActivityAudit.PNG)
       
@@ -103,4 +107,4 @@ Per filtrare i risultati:
 
 3. Dopo aver selezionato un'opzione di esportazione, nella parte inferiore della finestra viene visualizzato un messaggio in cui viene richiesto di aprire il file CSV, salvarlo nella cartella Downloads o salvarlo in una cartella specifica.
 
-Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca del registro di controllo, vedere [Search the audit log in the Office 365 Security _AMP_ Compliance Center](../search-the-audit-log-in-security-and-compliance.md).
+Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca del registro di controllo, vedere [Search the audit log in the Security _AMP_ Compliance Center](../search-the-audit-log-in-security-and-compliance.md).

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261524"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157348"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
@@ -45,13 +45,15 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
 
 - **Impostare i record DNS in modo che puntino a Office 365** Affinché EOP fornisca la protezione ottimale, i record DNS di Mail Exchanger (MX) per tutti i domini devono puntare esclusivamente a Office 365. Vedere [Creare i record DNS per Office 365 quando si gestiscono i record DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
     
-- **Attivare la regola della posta indesiderata in tutte le cassette postali** Per impostazione predefinita, l'operazione del filtro protezione da posta indesiderata è impostata su **Sposta messaggio nella cartella di posta indesiderata**. Se si tratta dell'azione del criterio di posta indesiderata corrente, allora in ogni cassetta postale [deve anche essere attivata la regola della posta indesiderata](https://support.office.com/it-IT/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Per verificarlo, è possibile eseguire il cmdlet Get-MailboxJunkEmailConfiguration su una o più cassette postali. Ad esempio, è possibile verificare tale condizione in tutte le cassette postali eseguendo: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- 
+  **Attivare la regola della posta indesiderata in tutte le cassette postali** Per impostazione predefinita, l'operazione del filtro protezione da posta indesiderata è impostata su **Sposta messaggio nella cartella di posta indesiderata**. Se si tratta dell'azione del criterio di posta indesiderata corrente, allora in ogni cassetta postale [deve anche essere attivata la regola della posta indesiderata](https://support.office.com/it-IT/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Per verificarlo, è possibile eseguire il cmdlet Get-MailboxJunkEmailConfiguration su una o più cassette postali. Ad esempio, è possibile verificare tale condizione in tutte le cassette postali eseguendo: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     Visualizzando il risultato, la proprietà Enable deve essere impostata su True. Se è impostata su False, è possibile eseguire Set-MailboxJunkEmailConfiguration per impostarla su True.
     
 - **Creare regole del flusso di posta nel server Exchange locale** Se si usa Exchange Online Protection, ma le cassette postali si trovano nel server Exchange locale, è necessario creare due regole del flusso di posta nel server Exchange locale. Vedere le [istruzioni relative solo a Exchange Online Protection](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
-- **Contrassegnare la posta elettronica inviata in massa come posta indesiderata** La posta elettronica inviata in massa è costituita da messaggi di posta elettronica per cui gli utenti hanno effettuato la registrazione, ma che potrebbero essere comunque indesiderati. Nell'intestazione del messaggio individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore di BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica inviata in massa come posta indesiderata. Le tolleranze e le preferenze relative alla gestione della [posta elettronica inviata in massa](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values) variano da utente a utente. È possibile creare regole o criteri diversi in base alle preferenze degli utenti. 
+- 
+  **Contrassegnare la posta elettronica inviata in massa come posta indesiderata** La posta elettronica inviata in massa è costituita da messaggi di posta elettronica per cui gli utenti hanno effettuato la registrazione, ma che potrebbero essere comunque indesiderati. Nell'intestazione del messaggio individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore di BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica inviata in massa come posta indesiderata. Le tolleranze e le preferenze relative alla gestione della [posta elettronica inviata in massa](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values) variano da utente a utente. È possibile creare regole o criteri diversi in base alle preferenze degli utenti. 
     
 - **Bloccare immediatamente un mittente** Se occorre bloccare immediatamente un mittente, è possibile applicare il blocco in base all'indirizzo di posta elettronica, al dominio o all'indirizzo IP. Vedere [Usare l'interfaccia di amministrazione di Exchange per creare una regola di flusso di posta che blocchi i messaggi inviati da un dominio](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Tenere presente che una voce nell'elenco di indirizzi consentiti di un utente finale può impedire l'applicazione di un blocco impostato dall'amministratore.
     

@@ -3,8 +3,8 @@ title: Configurare le nuove funzionalità di Office 365 Message Encryption
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2019
-ms.audience: ITPro
+ms.date: 4/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection, l'organizzazione può utilizzare le comunicazioni di posta elettronica protette con persone all'interno e all'esterno dell'organizzazione. Le nuove funzionalità OME sono compatibili con altre organizzazioni di Office 365, Outlook.com, Gmail e altri servizi di posta elettronica.
-ms.openlocfilehash: ea8756d08b1c172c433d6cd8ad1752c4c7ad64e9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260754"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156508"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Office 365 Message Encryption
 
@@ -70,7 +70,7 @@ Esistono diversi motivi, ad esempio i requisiti di conformità, che potrebbero r
 
 2. Eseguire il cmdlet Get-IRMConfiguration.
 
-     Verrà visualizzato un valore $True per il parametro AzureRMSEnabled, che indica che OME è configurato nel tenant. In caso contrario, utilizzare Set-IRMConfiguration per impostare il valore di AzureRMSEnabled su $True per abilitare OME.
+     Verrà visualizzato un valore $True per il parametro AzureRMSLicensingEnabled, che indica che OME è configurato nel tenant. In caso contrario, utilizzare Set-IRMConfiguration per impostare il valore di AzureRMSLicensingEnabled su $True per abilitare OME.
 
 3. Eseguire il cmdlet Test-IRMConfiguration utilizzando la sintassi seguente:
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/8/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority\
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informazioni su come accedere ad Azure Active Directory, incluso nella sottoscrizione a pagamento a Office 365.
-ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a816e4e3d945ba361cc027658a977765190d0df2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242600"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157838"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Utilizzare la sottoscrizione di Azure Active Directory gratuita in Office 365
 
@@ -41,6 +41,6 @@ Utilizzare una sessione di esplorazione privata (non una sessione normale) per a
     
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- È inoltre possibile accedere all'interfaccia di amministrazione di **Azure Active Directory** dall'interfaccia di amministrazione di Microsoft 365. nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **amministrazione** \> di **Azure Active Directory**.
+- È inoltre possibile accedere all'interfaccia di amministrazione di **Azure Active Directory** dall'interfaccia di amministrazione di Microsoft 365. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Azure Active Directory**.
     
 - Per informazioni sulla gestione degli utenti e dei gruppi e sull'esecuzione di altre attività di gestione delle directory, vedere [Gestione della directory di Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).

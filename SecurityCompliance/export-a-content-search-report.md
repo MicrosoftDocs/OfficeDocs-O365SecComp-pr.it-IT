@@ -3,7 +3,7 @@ title: Esportare un report di Ricerca contenuto
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & compliance in Office 365, è possibile esportare solo un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255654"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154608"
 ---
 # <a name="export-a-content-search-report"></a>Esportare un report di Ricerca contenuto
 
@@ -36,7 +36,7 @@ Quando si esporta un report, viene scaricato in una cartella con lo stesso nome 
 
 - Per esportare un rapporto di ricerca contenuto, è necessario che il ruolo di gestione della ricerca di conformità sia assegnato al centro sicurezza & Compliance. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
-- Quando si esporta un report, i dati vengono temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.core.windows.net** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dall'area di archiviazione di Azure due settimane dopo la sua creazione. 
+- Quando si esporta un report, i dati vengono temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. Verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dall'area di archiviazione di Azure due settimane dopo la sua creazione. 
     
 - Il computer utilizzato per esportare i risultati della ricerca deve soddisfare i seguenti requisiti di sistema:
     
@@ -87,7 +87,7 @@ Il primo passaggio consiste nel preparare il report per il download nel computer
     
     - Esportare solo gli elementi non indicizzati
     
-    Per ulteriori informazioni sugli elementi non indicizzati, vedere [elementi indicizzaTi parzialmente nella ricerca contenuto](partially-indexed-items-in-content-search.md).
+    Per ulteriori informazioni sugli elementi non indicizzati, vedere [elementi indicizzati parzialmente nella ricerca contenuto](partially-indexed-items-in-content-search.md).
     
 7. Scegliere di includere le statistiche di ricerca per tutte le versioni dei documenti di SharePoint. Questa opzione viene visualizzata solo se le origini di contenuto della ricerca includono i siti di SharePoint o OneDrive for business.
     

@@ -3,18 +3,18 @@ title: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e confo
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868624"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155878"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -22,17 +22,17 @@ Gli amministratori possono utilizzare il dashboard del flusso di posta elettroni
 
 Gli Insight, i report e i widget disponibili nel dashboard del flusso di posta sono i seguenti:
 
-- [Rapporto Mappa del flusso di posta](mfi-mail-flow-map-report.md)
+- [Report Mappa flusso di posta](mfi-mail-flow-map-report.md)
 
 - [Informazioni sullo stato del flusso di posta del dominio](mfi-domain-mail-flow-status-insight.md)
 
-- [Report dei client auth SMTP](mfi-smtp-auth-clients-report.md)
+- [Report sui client di autenticazione SMTP](mfi-smtp-auth-clients-report.md)
 
 - [Insight sul dominio del mittente](mfi-sender-domain-insight.md)
 
 - [Rapporto di mancato recapito](mfi-non-delivery-report.md)
 
-- [Rapporto di dominio non accettato](mfi-non-accepted-domain-report.md)
+- [Report di dominio non accettato](mfi-non-accepted-domain-report.md)
 
 - [Flusso di posta in ingresso e in uscita](mfi-outbound-and-inbound-mail-flow.md)
 

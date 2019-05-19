@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835066"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155188"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>Set up Attorney-Client Privilege Detection (Preview) in Advanced eDiscovery
 
@@ -65,7 +65,7 @@ Quando si analizza il set di revisione, verrà eseguito anche il rilevamento dei
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Passaggio 2: creare un gruppo di smart tag con il modello di rilevamento dei privilegi avvocato-client
 
-Uno dei modi principali in cui è possibile utilizzare i risultati del rilevamento dei privilegi di avvocato-client nel processo di revisione è l'utilizzo di un gruppo di smart tag. I gruppi di smart tag prevedono i risultati di un modello ML e mostrano i risultati del modello in linea accanto ai tag, in modo da poter facilmente utilizzare i risultati del modello, se necessario, e usare i tag del processo di revisione come se si trattasse di qualsiasi altro tag nel pannello di tagging.
+Uno dei modi principali in cui è possibile utilizzare i risultati del rilevamento dei privilegi di avvocato-client nel processo di revisione è l'utilizzo di un gruppo di smart tag. I gruppi di smart tag prevedono i risultati di un modello ML e mostrano i risultati del modello in linea accanto ai tag, in modo da poter facilmente utilizzare i risultati del modello, se necessario, e usare i tag del processo di revisione come se si trattasse di qualsiasi altro tag nel pannello di tagging. Per ulteriori informazioni, fare riferimento a [impostare gli smart tag per la revisione ml-assistita in Advanced eDiscovery](smart-tags.md) .
 
 - In "Gestisci tag", fare clic su "Aggiungi sezione Smart tag".
 

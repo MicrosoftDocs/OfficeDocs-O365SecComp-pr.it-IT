@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Alla tua organizzazione potrebbe essere richiesto di conservare i documenti per un periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva i documenti più del necessario, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
-ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257584"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154858"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 
@@ -36,7 +36,7 @@ I criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, 
     
 - Creare un criterio che include numerose regole di eliminazione tra cui un proprietario del sito può scegliere.
     
-È possibile creare e gestire i criteri di eliminazione dei documenti tramite il centro criteri di eliminazione del documento. In alternativa, è possibile creare il centro criteri manualmente [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scEgliendo **centro criteri di conformità** nella scheda **organizzazione** . Ogni tenant può disporre di un solo centro criteri di eliminazione dei documenti. 
+È possibile creare e gestire i criteri di eliminazione dei documenti tramite il centro criteri di eliminazione del documento. In alternativa, è possibile creare il centro criteri manualmente [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scegliendo **centro criteri di conformità** nella scheda **organizzazione** . Ogni tenant può disporre di un solo centro criteri di eliminazione dei documenti. 
   
 ![Home page del Centro criteri per l'eliminazione dei documenti](media/IP-Document-Deletion-Policy-Center-home-page.png)
   

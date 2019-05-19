@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: 540610fc3d1b53692688c729b714c839bf436e24
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 836beea966e4c944876d418fa88e8c4f6baaf770
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260874"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156638"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servizi per i non clienti che inviano la posta a Office 365
   
@@ -34,7 +34,7 @@ In questa panoramica vengono fornite informazioni sui vantaggi forniti all'organ
 |:-----|:-----|
 |Contenuto della Guida in linea  <br/> | Fornisce  <br/>  Punto di partenza per qualsiasi problema relativo alla distribuzione di comunicazioni agli utenti di EOP  <br/>  Include una semplice guida online con i criteri e i requisiti necessari  <br/>  Una panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione impiegate da Microsoft  <br/> |
 |[Supporto tecnico Microsoft](services-for-non-customers.md#AboutSupport) <br/> |Fornisce supporto per l'escalation e la self-service per i problemi di recapito.  <br/> |
-|[Portale di delist IP di protezione da posta inDesiderata di Office 365](services-for-non-customers.md#DelistPortal) <br/> |Strumento per inviare la richiesta di esclusione di indirizzi IP. Prima di inoltrare la richiesta, è responsabilità del mittente garantire che qualsiasi ulteriore messaggio di posta proveniente dall'IP in questione non sia abusivo o dannoso.  <br/> |
+|[Portale di delist IP di protezione da posta indesiderata di Office 365](services-for-non-customers.md#DelistPortal) <br/> |Strumento per inviare la richiesta di esclusione di indirizzi IP. Prima di inoltrare la richiesta, è responsabilità del mittente garantire che qualsiasi ulteriore messaggio di posta proveniente dall'IP in questione non sia abusivo o dannoso.  <br/> |
 |[Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online](services-for-non-customers.md#ReportOurJunk) <br/> |Consente di mantenere la posta indesiderata e gli altri messaggi non voluti inviati da Exchange Online e ingombrare Internet e il sistema di posta elettronica.  <br/> |
    
 ## <a name="microsoft-support"></a>Supporto tecnico Microsoft
@@ -54,7 +54,7 @@ Microsoft offre diverse opzioni di supporto per gli utenti che hanno problemi ne
     
      Per ulteriori informazioni sul supporto tecnico Microsoft per Office 365, vedere [support](https://technet.microsoft.com/library/office-365-support.aspx).
     
-## <a name="office-365-anti-spam-ip-delist-portal"></a>Portale di delist IP di protezione da posta inDesiderata di Office 365
+## <a name="office-365-anti-spam-ip-delist-portal"></a>Portale di delist IP di protezione da posta indesiderata di Office 365
 <a name="DelistPortal"> </a>
 
 Si tratta di un portale self-service che è possibile utilizzare per rimuovere se stessi dall'elenco dei mittenti bloccati di Office 365. Utilizzare questo portale se si riceve un messaggio di errore quando si tenta di inviare una posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Office 365 e non si ritiene di dover essere. Per altre informazioni, vedere [Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco di mittenti bloccati di Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).

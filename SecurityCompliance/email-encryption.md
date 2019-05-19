@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/30/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: Confrontare le opzioni di crittografia in Office 365, tra cui la crittografia dei messaggi di Office (OME), S/MIME, Information Rights Management (IRM) e informazioni su TLS (Transport Layer Security).
-ms.openlocfilehash: 18f3d5098557f65a0738254b57882689c013d677
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4a39bee76346bb46a53ab752d2fac31316c0258f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256782"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154788"
 ---
 # <a name="email-encryption-in-office-365"></a>Crittografia della posta elettronica in Office 365
 

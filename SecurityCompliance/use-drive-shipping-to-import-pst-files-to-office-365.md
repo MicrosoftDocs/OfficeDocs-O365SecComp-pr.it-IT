@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: "Per gli amministratori: informazioni su come importare in blocco i file PST dell'organizzazione nelle cassette postali di Office 365 copiando i file PST su un disco rigido e quindi inviarli a Microsoft. "
-ms.openlocfilehash: 5f04cc0a29fce7b607920253adb10aefb640c914
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4e386dc94928b674565a1d096cdb75aad9a3e22e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264788"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158038"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Utilizzare il servizio di spedizione delle unità per importare i file PST dell'organizzazione in Office 365
 
@@ -244,7 +244,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **governaNce dei dati** e quindi fare clic su **Importa**.
+2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **governance dei dati** e quindi fare clic su **Importa**.
     
 3. Nella pagina **Importa** , fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo processo di importazione**.
     
@@ -330,7 +330,7 @@ Dopo aver inviato l'unità disco rigido a Microsoft, completare la procedura seg
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro fare clic su **governaNce dei dati** e quindi fare clic su **Importa**.
+2. Nel riquadro sinistro fare clic su **governance dei dati** e quindi fare clic su **Importa**.
     
 3. Nella pagina **Importa** , fare clic sul processo per la spedizione dell'unità per la quale si desidera immettere il numero di tracciabilità. 
     
@@ -447,13 +447,13 @@ Per installare Azure Storage Explorer e connettersi all'area di archiviazione di
   
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - La distribuzione di unità è un modo efficace per importare grandi quantità di dati di messaggistica di archiviazione in Office 365 per sfruttare le funzionalità di conformità disponibili per l'organizzazione. Dopo aver importato i dati di archiviazione nelle cassette postali degli utenti, è possibile:
     
   - Abilitare le [cassette postali](enable-archive-mailboxes.md) di archiviazione e l' [archiviazione automatica](enable-unlimited-archiving.md) per consentire agli utenti un ulteriore spazio di archiviazione delle cassette postali per i dati. 
     
-  - Posizionare le cassette postali sul [blocco per controversIa legale](https://go.microsoft.com/fwlink/?linkid=856286) per conservare i dati. 
+  - Posizionare le cassette postali sul [blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=856286) per conservare i dati. 
     
   - Utilizzare [gli strumenti](search-for-content.md) di Microsoft eDiscovery per cercare i dati. 
     

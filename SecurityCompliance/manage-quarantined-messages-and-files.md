@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251987"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155698"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
 Come amministratore, è possibile visualizzare, rilasciare ed eliminare i messaggi in quarantena e segnalare i messaggi in quarantena falsi positivi in Office 365. È inoltre possibile visualizzare, scaricare ed eliminare i file in quarantena acquisiti da Advance Threat Protection (ATP) per SharePoint Online, OneDrive for business e Microsoft teams. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, messaggi in blocco, messaggi di phishing, contenenti malware o perché corrispondono a una regola del flusso di posta.
   
-Per impostazione predefinita, Office 365 invia i messaggi di phishing e i messaggi contenenti malware direttamente in quarantena. Gli altri messaggi filtrati vengono inviati alla cartella posta inDesiderata degli utenti, a meno che non sia stato impostato un criterio per inviarli alla quarantena.
+Per impostazione predefinita, Office 365 invia i messaggi di phishing e i messaggi contenenti malware direttamente in quarantena. Gli altri messaggi filtrati vengono inviati alla cartella posta indesiderata degli utenti, a meno che non sia stato impostato un criterio per inviarli alla quarantena.
   
 Per utilizzare i messaggi in quarantena inviati ad altri utenti e per lavorare con i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale (GA) in Office 365.
   
@@ -158,7 +158,7 @@ Dopo aver selezionato un messaggio o un gruppo di messaggi, sono disponibili div
   
 - Nessuna operazione. Se si sceglie di non eseguire alcuna operazione, il messaggio verrà eliminato automaticamente da Office 365 alla scadenza. Per impostazione predefinita, la posta indesiderata, la massa, il malware, il phishing e i messaggi in quarantena perché corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 30 giorni. Quando Office 365 Elimina un messaggio dalla quarantena, non è possibile riottenerlo. Se lo si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena configurando l'impostazione **Mantieni posta indesiderata per (giorni)** nei criteri di protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione del periodo di conservazione della quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in questo articolo. 
     
-- **Visualizzare l'intestazione del messaggio** Scegliere questo collegamento per visualizzare il testo dell'intestazione del messaggio. Per analizzare in modo approfondito l'intestazione, copiare il testo dell'intestazione del messaggio negli Appunti e quindi scegliere **analizzaTore intestazione messaggio Microsoft** per accedere all'analizzatore connettività remota (fare clic con il pulsante destro del mouse e scegliere **Apri in una nuova scheda** se non si desidera lasciare Office 365 per completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Analizzatore intestazioni del messaggio e scegliere **Analyze Headers**.
+- **Visualizzare l'intestazione del messaggio** Scegliere questo collegamento per visualizzare il testo dell'intestazione del messaggio. Per analizzare in modo approfondito l'intestazione, copiare il testo dell'intestazione del messaggio negli Appunti e quindi scegliere **analizzatore intestazione messaggio Microsoft** per accedere all'analizzatore connettività remota (fare clic con il pulsante destro del mouse e scegliere **Apri in una nuova scheda** se non si desidera lasciare Office 365 per completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Analizzatore intestazioni del messaggio e scegliere **Analyze Headers**.
     
 - **Messaggio di anteprima** Consente di visualizzare le versioni RAW o HTML del testo del corpo del messaggio. Nella visualizzazione HTML i collegamenti sono disattivati. 
     
@@ -180,7 +180,7 @@ Quando si rilasciano i messaggi, tenere presente quanto segue:
     
 - Quando si rilascia un messaggio a più destinatari, solo i destinatari che non sono stati precedentemente ricevuti il messaggio verranno visualizzati nell'elenco dei destinatari potenziali.
     
-- Quando si sceglie di segnalare falsi positivi, se il messaggio o i messaggi rilasciati sono stati messi in quarantena come posta indesiderata, in blocco, in caso di phishing o come contenente malware, il messaggio verrà segnalato anche al team di analisi di posta inDesiderata di Microsoft. Il team valuterà e analizzerà il messaggio e, a seconda dei risultati dell'analisi, le regole di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificate per consentire il messaggio.
+- Quando si sceglie di segnalare falsi positivi, se il messaggio o i messaggi rilasciati sono stati messi in quarantena come posta indesiderata, in blocco, in caso di phishing o come contenente malware, il messaggio verrà segnalato anche al team di analisi di posta indesiderata di Microsoft. Il team valuterà e analizzerà il messaggio e, a seconda dei risultati dell'analisi, le regole di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificate per consentire il messaggio.
     
 ## <a name="setting-the-quarantine-retention-period"></a>Impostazione del periodo di conservazione della quarantena
 <a name="BKMK_ModQuarantineTime"> </a>
@@ -197,7 +197,7 @@ Quando si rilasciano i messaggi, tenere presente quanto segue:
   
 3. Scegliere **personalizzato** per visualizzare la scheda **impostazioni personalizzate** . 
     
-4. Espandere la riga **criteri di filtro posta indesideraTa predefinita (sempre attiva)** . 
+4. Espandere la riga **criteri di filtro posta indesiderata predefinita (sempre attiva)** . 
     
 5. Scegliere **modifica criterio**. Le impostazioni per il criterio di filtro di protezione da posta indesiderata predefinito vengono visualizzate in una nuova pagina.
     

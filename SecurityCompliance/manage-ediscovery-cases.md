@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilizzare il Centro sicurezza & Compliance per creare eDiscovery stive e per accedere e gestire i casi di eDiscovery nell'organizzazione.
-ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253056"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155858"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -45,7 +45,7 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
   
 [Optional Passaggio 10: riaprire un caso chiuso](manage-ediscovery-cases.md#reopencase_1)
   
-[Ulteriori informazioni](manage-ediscovery-cases.md#moreinfo_1)
+[Altre informazioni](manage-ediscovery-cases.md#moreinfo_1)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 <a name="step1_1"> </a>
@@ -491,7 +491,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
     
     Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 <a name="moreinfo_1"> </a>
 
 - Esistono **limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.

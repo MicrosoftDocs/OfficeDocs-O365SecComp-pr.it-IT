@@ -3,7 +3,7 @@ title: Gestire Office 365 Message Encryption
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Dopo aver configurato Office 365 Message Encryption (OME), è possibile personalizzare la configurazione della distribuzione in diversi modi. Ad esempio, è possibile configurare la possibilità di abilitare i codici Pass una tantum, visualizzare il pulsante Proteggi in Outlook sul Web e altro ancora. Le attività descritte in questo articolo illustrano come fare.
-ms.openlocfilehash: 1afaaea3cd744878630598acd3f02dc7dc70e9cb
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834925"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155748"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 

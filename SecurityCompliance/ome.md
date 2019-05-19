@@ -3,21 +3,24 @@ title: Crittografia dei messaggi di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/6/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
-ms.openlocfilehash: 04a7cc23b7a9c4218a719c172544147b3daedd7a
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470406"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157588"
 ---
 # <a name="office-365-message-encryption"></a>Crittografia dei messaggi di Office 365
 
@@ -25,29 +28,6 @@ Spesso si utilizza la posta elettronica per scambiare informazioni riservate, co
 
 Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di Office 365 è compatibile con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
   
-Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Utilizzare la tabella seguente per trovare rapidamente le informazioni necessarie.
-  
-|||
-|:-----|:-----|
-|Leggere questo articolo...  <br/> |Se si è...  <br/> |
-|[Informazioni sui messaggi protetti in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |Un utente finale che desidera ottenere ulteriori informazioni sul funzionamento dei messaggi crittografati e sulle opzioni disponibili.  <br/> |
-|[Come aprire un messaggio protetto](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Un utente finale che vuole leggere un messaggio protetto che è stato inviato. In questo articolo sono incluse informazioni sulla lettura di messaggi in diverse versioni di Outlook e su account di posta elettronica diversi, compresi quelli esterni a Office 365, ad esempio Gmail e Yahoo! account.  <br/> |
-|[Inviare, visualizzare e rispondere a messaggi crittografati in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |Un utente finale che desidera inviare, visualizzare o rispondere a un messaggio crittografato da Outlook. Anche se non si è membri di un'organizzazione di Office 365, viene comunque ricevuta la notifica dei messaggi crittografati inviati all'utente in Outlook. Utilizzare questo articolo per istruzioni su come visualizzare e rispondere a messaggi crittografati inviati da Office 365.  <br/> |
-|[Inviare un messaggio con firma digitale o crittografato](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |Un utente finale che desidera inviare, visualizzare o rispondere a messaggi crittografati utilizzando Outlook per Mac. Questo articolo riguarda anche l'utilizzo di metodi di crittografia diversi da OME, ad esempio S/MIME.  <br/> |
-|[Visualizzazione dei messaggi crittografati sul dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Un utente finale che ha ricevuto un messaggio crittografato con la crittografia dei messaggi di Office 365 sul dispositivo Android, è possibile utilizzare l'app gratuito OME Viewer per visualizzare il messaggio e inviare una risposta crittografata. In questo articolo viene illustrato come.  <br/> |
-|[Visualizzare i messaggi crittografati sul tuo iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |Un utente finale che ha ricevuto un messaggio crittografato con la crittografia dei messaggi di Office 365 sul vostro iPhone o iPad, è possibile utilizzare l'app visualizzatore gratuito OME per visualizzare il messaggio e inviare una risposta crittografata. In questo articolo viene illustrato come.  <br/> |
-|Crittografia messaggi di Office 365 (OME) (questo articolo)  <br/> |Un amministratore di Office 365 o Exchange Online Protection che vuole sapere dove è possibile trovare ulteriori risorse.  <br/> |
-|[Confrontare le versioni di OME](ome-version-comparison.md)  <br/> |Un amministratore di Office 365 o Exchange Online Protection che vuole conoscere le differenze tra la crittografia dei messaggi di Office 365 legacy e le nuove funzionalità OME, nonché il modo in cui possono collaborare.  <br/> |
-|[Domande frequenti su Office 365 Message Encryption](ome-faq.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che vuole rispondere alle domande più frequenti, tra cui le licenze e un confronto tra le nuove funzionalità e OME legacy.  <br/> |
-|[Configurare le nuove funzionalità di Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che desidera informazioni su come configurare le nuove funzionalità di crittografia dei messaggi di Office 365 per l'organizzazione di Office 365.  <br/> |
-|[Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che ha già configurato la crittografia dei messaggi di Office 365 e che è possibile definire le regole del flusso di posta elettronica per crittografare automaticamente i messaggi di posta elettronica inviati dall'organizzazione.  <br/> |
-|[Gestire Office 365 Message Encryption](manage-office-365-message-encryption.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che ha già configurato la crittografia dei messaggi di Office 365 e desidera configurare le impostazioni facoltative per OME.  <br/> |
-|[Aggiungere il logo della propria organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che desidera applicare il marchio dell'azienda per personalizzare l'aspetto dei messaggi di posta elettronica di crittografia del messaggio di Office 365 dell'organizzazione e il contenuto del portale OME.  <br/> |
-|[Revoca della posta elettronica di crittografia messaggi di Office 365](revoke-ome-encrypted-mail.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che desidera revocare un messaggio di posta elettronica crittografato utilizzando la crittografia dei messaggi di Office 365.  <br/> |
-|Crittografia dei messaggi di Office 365 nella [Descrizione del servizio criteri di conformità e del messaggio](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption) <br/> |Per informazioni dettagliate sulla funzionalità di crittografia dei messaggi di Office 365, incluse le SKU supportate, è disponibile da Office 365.  <br/> |
-|[Aggiornamento alle nuove funzionalità di Office 365 Message Encryption](legacy-information-for-message-encryption.md) <br/> |Un amministratore di Office 365 o Exchange Online Protection che ha già configurato la crittografia dei messaggi di Office 365 e desidera informazioni su come ha funzionato OME prima del rilascio delle nuove funzionalità. Anche se non è possibile configurare una nuova distribuzione utilizzando OME senza le nuove funzionalità, Microsoft continua a supportare le distribuzioni esistenti. <br/> |
-||
-
 Il resto di questo articolo si applica alle nuove funzionalità OME.
   
 ## <a name="how-office-365-message-encryption-works"></a>Funzionamento della crittografia dei messaggi di Office 365
@@ -68,10 +48,18 @@ I destinatari dei messaggi crittografati che ricevono la posta crittografata o p
   
 Gli utenti finali che leggono i messaggi crittografati o protetti da diritti nei client diversi da Outlook utilizzano anche il portale OME per visualizzare le informazioni crittografate e protette con i diritti ricevuti.
 
-Inoltre, se il mittente della posta protetta è in GCC High e il destinatario è esterno a GCC High, compresi gli utenti di Office 365 commerciali, gli utenti di Outlook.com e gli utenti di altri provider di posta elettronica, ad esempio Gmail, il destinatario riceve un messaggio di posta elettronica wrapper che reindirizza a il portale OME in cui il destinatario è in grado di leggere e rispondere al messaggio. In caso contrario, se il mittente e il destinatario sono entrambi nell'ambiente GCC High, i destinatari che utilizzano i client di Outlook per leggere la posta elettronica ricevano le esperienze di lettura di prima classe per i messaggi crittografati e protetti da diritti, anche se non sono presenti nella stessa organizzazione. come mittente.
+Inoltre, se il mittente della posta protetta è in GCC High e il destinatario è esterno a GCC High, compresi gli utenti di Office 365 commerciali, gli utenti di Outlook.com e gli utenti di altri provider di posta elettronica, ad esempio Gmail, il destinatario riceve un messaggio di posta elettronica wrapper che reindirizza a il portale OME in cui il destinatario è in grado di leggere e rispondere al messaggio. In caso contrario, se il mittente e il destinatario sono entrambi nell'ambiente GCC High, i destinatari che utilizzano i client di Outlook per leggere la posta elettronica ricevano le esperienze di lettura di prima classe per i messaggi crittografati e protetti da diritti, anche se non sono presenti nella stessa organizzazione. come mittente. Per ulteriori informazioni sulle diverse esperienze in GCC High, vedere [compare versions of ome](ome-version-comparison.md).
   
 Sono stati aumentati i limiti di dimensione per i messaggi e gli allegati che è possibile crittografare tramite OME. Per ulteriori informazioni sui limiti, vedere [limiti di Exchange Online](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx).
-  
+
+## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Come funziona la crittografia avanzata dei messaggi di Office 365 in primo piano
+
+La crittografia avanzata dei messaggi di Office 365 consente di creare modelli di branding multipli, in modo da poter ottimizzare il controllo della posta dei destinatari e creare esperienze personalizzate di branding per supportare una struttura organizzativa diversificata.
+
+La crittografia avanzata dei messaggi in Office 365 consente di soddisfare gli obblighi di conformità che richiedono un controllo più flessibile sull'accesso dei destinatari esterni ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, in qualità di amministratore, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici che consentono di rilevare tipi di informazioni riservate (ad esempio, ID di integrità, finanziario o sanitario) o parole chiave per migliorare protezione tramite la scadenza dell'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati. Inoltre, come amministratore è possibile controllare ulteriormente i messaggi di posta elettronica crittografati accessibili esternamente tramite un portale Web di Office 365 revocando l'accesso a un messaggio di posta elettronica in qualsiasi momento.
+
+La revoca dei messaggi e la scadenza funzionano solo per i messaggi di posta elettronica inviati dagli utenti ai destinatari all'esterno dell'organizzazione di Office 365. Inoltre, i destinatari devono accedere al messaggio di posta elettronica tramite il portale Web. Per assicurarsi che il destinatario utilizzi il portale per la ricezione della posta elettronica, è necessario configurare un modello di personalizzazione personalizzato che applica il wrapper. Viene quindi applicato il modello di personalizzazione in una regola del flusso di posta. Per ulteriori informazioni sulla crittografia avanzata dei messaggi, vedere [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Regole di definizione per la crittografia dei messaggi di Office 365
 
 Un modo per abilitare le nuove funzionalità per la crittografia dei messaggi di Office 365 è per gli amministratori di Exchange Online e Exchange Online Protection per definire le regole del flusso di posta. Queste regole determinano in quali condizioni devono essere crittografati i messaggi di posta elettronica. Quando viene impostata un'azione di crittografia per una regola, tutti i messaggi che soddisfano le condizioni della regola vengono crittografati prima di essere inviati.
@@ -80,6 +68,10 @@ Le regole del flusso di posta sono flessibili, consentendo di combinare condizio
   
 Per ulteriori informazioni su come creare regole del flusso di posta per sfruttare le nuove funzionalità OME, vedere [definire le regole per la crittografia dei messaggi di Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
+## <a name="get-started-with-the-new-ome-capabilities"></a>Iniziare a utilizzare le nuove funzionalità OME
+
+Se si è pronti per iniziare a utilizzare le nuove funzionalità OME all'interno dell'organizzazione, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md).
+
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>Invio, risposta e visualizzazione di messaggi di posta elettronica crittografati
 
 Con la crittografia dei messaggi di Office 365, gli utenti possono inviare messaggi di posta elettronica crittografati da Outlook e Outlook sul Web. Gli amministratori possono inoltre configurare le regole del flusso di posta in Office 365 per crittografare automaticamente le e-mail in base alle parole chiave corrispondenti o ad altre condizioni.
@@ -88,10 +80,13 @@ I destinatari dei messaggi crittografati che si trovano nelle organizzazioni di 
   
 Per istruzioni dettagliate su come inviare e visualizzare i messaggi crittografati, vedere gli articoli seguenti:
   
-- [Come aprire un messaggio protetto](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)
-
-- [Inviare, visualizzare e rispondere a messaggi crittografati in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
-
-## <a name="get-started-with-the-new-ome-capabilities"></a>Iniziare a utilizzare le nuove funzionalità OME
-
-Se si è pronti per iniziare a utilizzare le nuove funzionalità OME all'interno dell'organizzazione, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md).
+|||
+|:-----|:-----|
+|Leggere questo articolo...  <br/> |Se si è...  <br/> |
+|[Informazioni sui messaggi protetti in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |Un utente finale che desidera ottenere ulteriori informazioni sul funzionamento dei messaggi crittografati e sulle opzioni disponibili.  <br/> |
+|[Come aprire un messaggio protetto](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Un utente finale che vuole leggere un messaggio protetto che è stato inviato. In questo articolo sono incluse informazioni sulla lettura di messaggi in diverse versioni di Outlook e su account di posta elettronica diversi, compresi quelli esterni a Office 365, ad esempio Gmail e Yahoo! account.  <br/> |
+|[Inviare, visualizzare e rispondere a messaggi crittografati in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |Un utente finale che desidera inviare, visualizzare o rispondere a un messaggio crittografato da Outlook. Anche se non si è membri di un'organizzazione di Office 365, viene comunque ricevuta la notifica dei messaggi crittografati inviati all'utente in Outlook. Utilizzare questo articolo per istruzioni su come visualizzare e rispondere a messaggi crittografati inviati da Office 365.  <br/> |
+|[Inviare un messaggio con firma digitale o crittografato](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |Un utente finale che desidera inviare, visualizzare o rispondere a messaggi crittografati utilizzando Outlook per Mac. Questo articolo riguarda anche l'utilizzo di metodi di crittografia diversi da OME, ad esempio S/MIME.  <br/> |
+|[Visualizzazione dei messaggi crittografati sul dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Un utente finale che ha ricevuto un messaggio crittografato con la crittografia dei messaggi di Office 365 sul dispositivo Android, è possibile utilizzare l'app gratuito OME Viewer per visualizzare il messaggio e inviare una risposta crittografata. In questo articolo viene illustrato come.  <br/> |
+|[Visualizzare i messaggi crittografati sul tuo iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |Un utente finale che ha ricevuto un messaggio crittografato con la crittografia dei messaggi di Office 365 sul vostro iPhone o iPad, è possibile utilizzare l'app visualizzatore gratuito OME per visualizzare il messaggio e inviare una risposta crittografata. In questo articolo viene illustrato come.  <br/> |
+||

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365.
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256631"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153148"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regole del flusso di posta (regole di trasporto in Exchange Online Protection
 
@@ -107,9 +107,9 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 |**Tipo di messaggio**|**È possibile applicare una regola?**|
 |:-----|:-----|
 |**Messaggi normali** Messaggi che contengono un unico corpo in formato RTF, HTML o in testo normale oppure un corpo costituito da più parti o un insieme alternativo di corpi del messaggio.  <br/> |Sì  <br/> |
-|* * Office 365 crittografia dei messaggi * * messaggi crittografati tramite la crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia dei messaggi di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=392525).  <br/> |Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni.  <br/> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Abilitazione o disabilitaZione](https://go.microsoft.com/fwlink/p/?linkid=848060)della decrittografia di trasporto.  <br/> È inoltre possibile creare una regola che consente di decrittografare automaticamente i messaggi crittografati. Per ulteriori informazioni, vedere [definire le regole per crittografare o decrittografare i messaggi di posta elettronica](https://go.microsoft.com/fwlink/p/?Linkid=402846).  <br/> |
+|* * Office 365 crittografia dei messaggi * * messaggi crittografati tramite la crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia dei messaggi di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=392525).  <br/> |Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni.  <br/> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Abilitazione o disabilitazione](https://go.microsoft.com/fwlink/p/?linkid=848060)della decrittografia di trasporto.  <br/> È inoltre possibile creare una regola che consente di decrittografare automaticamente i messaggi crittografati. Per ulteriori informazioni, vedere [definire le regole per crittografare o decrittografare i messaggi di posta elettronica](https://go.microsoft.com/fwlink/p/?Linkid=402846).  <br/> |
 |**Messaggi crittografati (S/MIME)** <br/> |Le regole possono accedere solo alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni.  <br/> Le regole con le condizioni che richiedono l'analisi del contenuto del messaggio oppure le azioni che modificano i contenuti del messaggio non possono essere elaborate.  <br/> |
-|**Messaggi protetti da RMS** Messaggi in cui è stato applicato un criterio Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).  <br/> |Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni.  <br/> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Abilitazione o disabilitaZione](https://go.microsoft.com/fwlink/p/?linkid=848060)della decrittografia di trasporto.  <br/> |
+|**Messaggi protetti da RMS** Messaggi in cui è stato applicato un criterio Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).  <br/> |Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni.  <br/> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Abilitazione o disabilitazione](https://go.microsoft.com/fwlink/p/?linkid=848060)della decrittografia di trasporto.  <br/> |
 |**Messaggi con firma in chiaro** Messaggi firmati ma non crittografati.  <br/> |Sì  <br/> |
 |**Messaggi di messaggistica unificata** Messaggi creati o elaborati dal servizio di messaggistica unificata, ad esempio messaggi di segreteria telefonica, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati utilizzando Microsoft Outlook Voice Access.  <br/> |Sì  <br/> |
 |**Messaggi anonimi** Messaggi inviati da mittenti anonimi.  <br/> |Sì  <br/> |

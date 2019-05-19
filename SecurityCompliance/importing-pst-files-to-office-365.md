@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.IngestionHelp
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'utilizzo del servizio di importazione nel centro sicurezza & Compliance per importare in blocco i dati della posta elettronica (file PST) nelle cassette postali degli utenti in Exchange Online. In questo argomento vengono illustrate le domande più frequenti e viene illustrato il funzionamento del processo di importazione PST."
-ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: ab623c531f5e322a99aef5c8c33f110fc140a6f7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403024"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154223"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -88,7 +88,7 @@ Di seguito è riportata un'illustrazione e una descrizione del processo di impor
     
   - Abilitare le [cassette postali](enable-archive-mailboxes.md) di archiviazione e l' [archiviazione illimitata](unlimited-archiving.md) per offrire agli utenti ulteriore spazio di archiviazione. 
     
-  - Posizionare le cassette postali sul [blocco per controversIa legale](https://go.microsoft.com/fwlink/?linkid=841243) per mantenere il contenuto. 
+  - Posizionare le cassette postali sul [blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=841243) per mantenere il contenuto. 
     
   - Utilizzare lo [strumento di ricerca contenuto](content-search.md) per cercare il contenuto delle cassette postali. 
     

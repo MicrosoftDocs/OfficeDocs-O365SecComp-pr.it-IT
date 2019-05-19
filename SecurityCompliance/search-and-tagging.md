@@ -3,7 +3,7 @@ title: Ricerca e tagging
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta.
-ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261370"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158538"
 ---
 # <a name="search-and-tagging"></a>Ricerca e tagging
 
@@ -55,8 +55,8 @@ Nella tabella seguente sono elencate le proprietà che è possibile cercare util
 |**titolo** <br/> | Il titolo di un documento del sito. <br/> |
 |**dominanttheme**\* <br/> | Il tema dominante di un elemento. <br/> |
 |**tema**\* <br/> | Temi associati a un elemento. <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | Il percentile di lettura di un elemento, per il problema definito da [issuenum]. <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | Il Punteggio di pertinenza di un elemento, per il problema definito da [issuenum]. <br/> |
+|**readpercentile_[issuenum]**\*\* <br/> | Il percentile di lettura di un elemento, per il problema definito da [issuenum]. <br/> |
+|**relevancescore_[issuenum]**\*\* <br/> | Il Punteggio di pertinenza di un elemento, per il problema definito da [issuenum]. <br/> |
 |**relevancetag_ [TagName]**\*\* <br/> | Se un elemento è stato contrassegnato manualmente per la pertinenza, il tag definito da [TagName]. <br/> |
 |||
 
@@ -74,7 +74,7 @@ Per ulteriori informazioni sulle proprietà disponibili per la ricerca, vedere [
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   

@@ -3,10 +3,11 @@ title: Protezione dalle minacce in Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MOE150
 - MET150
@@ -14,19 +15,19 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilizzare questo articolo come guida per configurare ora le funzionalità di protezione dalle minacce.
-ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402984"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157298"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
 
 Office 365 include una vasta gamma di funzionalità di protezione dalle minacce. Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per verificare che le funzionalità di protezione delle minacce siano configurate per l'organizzazione. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365 o si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza. 
 
 > [!IMPORTANT]
-> **Per ogni tipo di criterio sono incluse le impostazioni consigliAte iniziali, tuttavia sono disponibili molte opzioni ed è possibile modificare le impostazioni in base alle esigenze specifiche dell'organizzazione**. Consenti circa 30 minuti affinché i criteri o le modifiche vengano elaborati tramite il Data Center.
+> **Per ogni tipo di criterio sono incluse le impostazioni consigliate iniziali, tuttavia sono disponibili molte opzioni ed è possibile modificare le impostazioni in base alle esigenze specifiche dell'organizzazione**. Consenti circa 30 minuti affinché i criteri o le modifiche vengano elaborati tramite il Data Center.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +40,7 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 |Protezione anti-malware    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
 |Protezione da URL e file dannosi nei documenti di posta elettronica e di Office    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
 |Protezione anti-phishing    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
-|Protezione anti-phishing avanzata    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|Protezione anti-phishing avanzata    | [Protezione avanzata dalle minacce di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Protezione dalla posta indesiderata     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
 |Spurgo automatico zero-hour (per la posta elettronica)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
 |Registrazione di controllo (utilizzata per la creazione di report)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
@@ -65,9 +66,9 @@ La [protezione antimalware](anti-malware-protection.md) è disponibile in abbona
 2. Fare doppio clic sul criterio **predefinito** e quindi scegliere **Impostazioni**.
 
 3. Specificare le impostazioni seguenti:
-    
+
     - Nella sezione **risposta di rilevamento malware** mantenere l'impostazione predefinita **Nr**.
-   
+
     - Nella sezione **filtro tipi di allegati comuni** scegliere attivato ****.
 
 4. Fare clic su **Salva**.
@@ -146,7 +147,7 @@ La [protezione anti-phishing](anti-phishing-protection.md) è disponibile in abb
 
 3. Nella sezione **rappresentazione** fare clic su **modifica**e quindi specificare le impostazioni seguenti:
 
-    -  Nella scheda **Aggiungi utenti da proteggere** , attiva la protezione. Aggiungere quindi gli utenti, ad esempio i membri del Consiglio dell'organizzazione, il CEO, il CFO e altri leader senior. (È possibile digitare un singolo indirizzo di posta elettronica o fare clic per visualizzare un elenco).
+    - Nella scheda **Aggiungi utenti da proteggere** , attiva la protezione. Aggiungere quindi gli utenti, ad esempio i membri del Consiglio dell'organizzazione, il CEO, il CFO e altri leader senior. (È possibile digitare un singolo indirizzo di posta elettronica o fare clic per visualizzare un elenco).
 
     - Nella scheda **Aggiungi domini da proteggere** , attiva **automaticamente Includi i domini che possiedo**. Se si dispone di domini personalizzati, aggiungere anche quelli.
 
@@ -176,7 +177,7 @@ La [protezione da posta](anti-spam-protection.md) indesiderata è disponibile in
 
 2. Nella scheda **personalizzato** , attiva **impostazioni personalizzate** .
 
-3. Espandere **criteri di filtro della posta indesideraTa predefiniti**, fare clic su **modifica criteri**e quindi specificare le impostazioni seguenti:
+3. Espandere **criteri di filtro della posta indesiderata predefiniti**, fare clic su **modifica criteri**e quindi specificare le impostazioni seguenti:
 
     - Nella sezione **azioni di posta indesiderata e di massa** impostare la soglia su un valore pari a 5 o 6.
 
@@ -213,5 +214,3 @@ Dopo aver configurato le funzionalità di protezione dalle minacce, verificare l
 |Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report    |[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](view-email-security-reports.md)<br/>[Report per Office 365 ATP](view-reports-for-atp.md)<br/>[Esplora minacce](use-explorer-in-security-and-compliance.md)    |
 |Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze    |[Secure Score](microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Funzionalità di analisi e risposta alle minacce di Office 365](keep-users-safe-with-office-365-ti.md)          |
 |Controllare le nuove funzionalità e gli aggiornamenti dei servizi     |[Opzioni standard e di rilascio mirato](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro messaggi](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descrizioni dei servizi](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
-
-

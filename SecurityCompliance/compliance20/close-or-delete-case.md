@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243769"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155168"
 ---
 # <a name="close-or-delete-a-case"></a>Chiudere o eliminare un caso
 
@@ -35,7 +35,7 @@ Quando viene completata la causa legale o l'indagine supportata da un caso di eD
 
 Per chiudere un caso:
 
-1. Dalla pagina **Advanced eDiscovery (Preview)** , passare al caso.
+1. Dalla pagina **Advanced eDiscovery** , passare al caso.
 
 2. Andare a **Impostazioni** e selezionare **case Information**. 
 
@@ -43,7 +43,7 @@ Per chiudere un caso:
 
 Per eliminare un caso:
 
-1. Dalla pagina **Advanced eDiscovery (Preview)** , passare al caso.
+1. Dalla pagina **Advanced eDiscovery** , passare al caso.
 
 2. Andare a **Impostazioni** e selezionare **case Information**. 
 

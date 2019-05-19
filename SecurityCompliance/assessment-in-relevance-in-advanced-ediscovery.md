@@ -1,10 +1,10 @@
 ---
-title: Comprendere la valutazione in riLevanza in Office 365 Advanced eDiscovery
+title: Comprendere la valutazione in rilevanza in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 229df3f51c6a71ddb644fcd45a6de0e30f9775b9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250203"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155538"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendere la valutazione in riLevanza in Office 365 Advanced eDiscovery
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendere la valutazione in rilevanza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conse
 È possibile accettare le indicazioni relative alla pertinenza o regolare il margine di errore corrente in base alle proprie esigenze. Il margine di errore corrente predefinito è determinato per il richiamo pari o superiori a 75%.
   
 > [!NOTE]
-> La fase di valutazione può essere ignorata, nella ** \> ** scheda Tracking pertinenza della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deSelezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
+> La fase di valutazione può essere ignorata, nella ** \> ** scheda Tracking pertinenza della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
   
 ## <a name="see-also"></a>Vedere anche
 

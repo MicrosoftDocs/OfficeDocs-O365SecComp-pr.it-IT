@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
-ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ef8433279137a91a52f6a149844eff9c567150c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255444"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154518"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>La lotta alla posta indesiderata inviata a Office 365
 
@@ -39,7 +39,7 @@ Per contribuire a ridurre la posta indesiderata, EOP include la protezione della
   
 #### <a name="how-does-eop-work"></a>Come funziona EOP?
 
-Quando un utente esterno invia un messaggio di posta elettronica a un utente di EOP, le tecnologie di filtro di EOP valutano il contenuto del messaggio e assegnano una classificazione al messaggio in base alla probabilità che il messaggio sia posta indesiderata. Questa valutazione viene memorizzata come una proprietà del messaggio denominata livello di probabilità di posta inDesiderata (SCL) all'interno del messaggio stesso. La valutazione SCL rimane con il messaggio così come viene inviata ad altri livelli di protezione dalla posta indesiderata all'interno di EOP. 
+Quando un utente esterno invia un messaggio di posta elettronica a un utente di EOP, le tecnologie di filtro di EOP valutano il contenuto del messaggio e assegnano una classificazione al messaggio in base alla probabilità che il messaggio sia posta indesiderata. Questa valutazione viene memorizzata come una proprietà del messaggio denominata livello di probabilità di posta indesiderata (SCL) all'interno del messaggio stesso. La valutazione SCL rimane con il messaggio così come viene inviata ad altri livelli di protezione dalla posta indesiderata all'interno di EOP. 
   
 Le regole all'interno di EOP sono impostate per gestire i messaggi di posta elettronica con diverse valutazioni SCL. Se un messaggio ha una valutazione SCL superiore a una determinata soglia, viene considerato posta indesiderata. Il messaggio verrà messo in quarantena o recapitato nella cartella posta indesiderata dell'utente a seconda del modo in cui l'amministratore di sistema configura l'opzione di recapito della posta indesiderata
   
@@ -53,7 +53,7 @@ Il phishing (pronunciato "Fishing") è una forma di furto di identità e una del
   
 #### <a name="how-does-phishing-protection-work"></a>Come funziona la protezione anti-phishing?
 
-Spesso un messaggio di posta elettronica di phishing verrà inviato contenente un collegamento, una volta che si è fatto clic sul collegamento reindirizza gli utenti a un sito Web fraudolento che sembra valido (come l'istituto finanziario o il servizio online). In genere, questo sito di phishing richiede agli utenti di immettere informazioni personali come nomi utente, password e numeri di previdenza sociale. Tutte le informazioni immesse nel sito di phishing consentono all'truffatore di rubare la propria identità. Utilizzando i marchi e i loghi attendibili noti, phisher è in grado di essere legittimo. La tecnologia dei filtri antiPhishing offerti in EOP verifica la possibilità di potenziali caratteristiche di phishing nella posta elettronica. Se trovato, il messaggio di posta elettronica viene spostato nella cartella di posta inDesiderata.
+Spesso un messaggio di posta elettronica di phishing verrà inviato contenente un collegamento, una volta che si è fatto clic sul collegamento reindirizza gli utenti a un sito Web fraudolento che sembra valido (come l'istituto finanziario o il servizio online). In genere, questo sito di phishing richiede agli utenti di immettere informazioni personali come nomi utente, password e numeri di previdenza sociale. Tutte le informazioni immesse nel sito di phishing consentono all'truffatore di rubare la propria identità. Utilizzando i marchi e i loghi attendibili noti, phisher è in grado di essere legittimo. La tecnologia dei filtri antiphishing offerti in EOP verifica la possibilità di potenziali caratteristiche di phishing nella posta elettronica. Se trovato, il messaggio di posta elettronica viene spostato nella cartella di posta indesiderata.
   
 Microsoft sta concentrando gli sforzi della tecnologia anti-phishing su due fronti: innanzitutto, contribuendo a impedire ai messaggi di posta elettronica di phishing di raggiungere gli utenti e in secondo luogo, contribuendo ad eliminare la possibilità per gli utenti di essere ingannati da messaggi di posta elettronica contraffatti e siti Web. 
   

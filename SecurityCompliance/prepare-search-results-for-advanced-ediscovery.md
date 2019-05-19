@@ -3,7 +3,7 @@ title: Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto nel centro sicurezza & Compliance di Office 365 per ulteriori analisi con lo strumento eDiscovery avanzato.
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261978"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157468"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparare i risultati di ricerca per Office 365 Advanced eDiscovery
 
@@ -107,12 +107,12 @@ Al termine della preparazione, il passaggio successivo consiste nell'accedere a 
 
 Dopo aver aggiunto i risultati di una ricerca di eDiscovery a un caso, il passaggio successivo consiste nell'utilizzare gli strumenti avanzati di eDiscovery per analizzare i dati e identificare i contenuti rispondenti a un caso legale specifico. Per informazioni sull'utilizzo di Advanced eDiscovery, vedere [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati della ricerca verranno decrittografati durante la preparazione per l'analisi in Advanced eDiscovery. Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione deCrypt RMS è assegnato a questo gruppo di ruoli. Tenere presenti le considerazioni seguenti sulla decrittografia dei messaggi di posta elettronica:
+Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati della ricerca verranno decrittografati durante la preparazione per l'analisi in Advanced eDiscovery. Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione Decrypt RMS è assegnato a questo gruppo di ruoli. Tenere presenti le considerazioni seguenti sulla decrittografia dei messaggi di posta elettronica:
   
 - Attualmente, questa funzionalità di decrittografia non include il contenuto crittografato dei siti di SharePoint e OneDrive for business. Quando vengono esportati, solo i messaggi di posta elettronica crittografati con RMS verranno decrittografati.
     
 - Se un messaggio di posta elettronica crittografato con RMS ha un allegato, ad esempio un documento o un altro messaggio di posta elettronica crittografato, viene decrittografato solo il messaggio di posta elettronica di primo livello.
     
-- Se è necessario impedire a un utente di decrittografare i messaggi crittografati con RMS durante la preparazione dei risultati di ricerca per l'analisi in Advanced eDiscovery, sarà necessario creare un gruppo di ruoli personalizzato (copiando il gruppo di ruoli di eDiscovery Manager incorporato) e quindi rimuovere il server RMS DeCrittografare il ruolo di gestione dal gruppo di ruoli personalizzato. Aggiungere quindi la persona che non si desidera decrittografare i messaggi come membro del gruppo di ruoli personalizzato.
+- Se è necessario impedire a un utente di decrittografare i messaggi crittografati con RMS durante la preparazione dei risultati di ricerca per l'analisi in Advanced eDiscovery, sarà necessario creare un gruppo di ruoli personalizzato (copiando il gruppo di ruoli di eDiscovery Manager incorporato) e quindi rimuovere il server RMS Decrittografare il ruolo di gestione dal gruppo di ruoli personalizzato. Aggiungere quindi la persona che non si desidera decrittografare i messaggi come membro del gruppo di ruoli personalizzato.

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Informazioni su come utilizzare il caricamento di rete per importare i file PST crittografati con RMS nelle cassette postali degli utenti in Office 365.
-ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263694"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157998"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Utilizzare il caricamento di rete per importare i file PST crittografati con RMS su Office 365
 
@@ -225,11 +225,11 @@ Dopo aver configurato Azure RMS e aver ottenuto gli ID necessari per crittografa
     
 2. Accedere a Office 365 utilizzando le credenziali di un account amministratore nell'organizzazione di Office 365.
     
-3. Nel riquadro sinistro fare clic su **governaNce dei dati** e quindi fare clic su **Importa**.
+3. Nel riquadro sinistro fare clic su **governance dei dati** e quindi fare clic su **Importa**.
     
 4. Nella pagina **Importa**, fare clic su **Vai al servizio di importazione**.
     
-5. nella pagina **importa dati in Office 365** fare clic su **nuovo processo** ![aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
+5. Nella pagina **Importa dati in Office 365** fare clic su **nuovo processo** ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
     
 6. Nel passaggio 2 della pagina **Carica file sulla rete** fare clic su **Mostra URL SAS caricamento di rete**.
     
@@ -381,11 +381,11 @@ L'ultimo passaggio consiste nel creare il processo di importazione PST nel servi
     
 2. Accedere a Office 365 utilizzando le credenziali di un account amministratore nell'organizzazione di Office 365.
     
-3. Nel riquadro sinistro fare clic su **governaNce dei dati** e quindi fare clic su **Importa**.
+3. Nel riquadro sinistro fare clic su **governance dei dati** e quindi fare clic su **Importa**.
     
 4. Nella pagina **Importa**, fare clic su **Vai al servizio di importazione**.
     
-5. nella pagina **importa dati in Office 365** fare clic su **nuovo processo**![aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
+5. Nella pagina **Importa dati in Office 365** fare clic su **nuovo processo**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
     
 6. Nella pagina **Carica file sulla rete**, fare clic sulle caselle di controllo **Ho effettuato il caricamento dei file** e **Ho accesso al file di mapping**, quindi selezionare **Avanti**.  
     
@@ -410,7 +410,7 @@ L'ultimo passaggio consiste nel creare il processo di importazione PST nel servi
     
 13. In quest'ultimo, fare clic su **Visualizza dettagli** per visualizzare lo stato più recente del processo selezionato. 
  
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Perché importare i file PST in Office 365?
     

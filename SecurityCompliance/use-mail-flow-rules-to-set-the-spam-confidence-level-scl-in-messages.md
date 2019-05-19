@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a impostare il SCL dei messaggi in Exchange Online Protection.
-ms.openlocfilehash: e07b90ab1ab004c39ef36b2aa744ca87120c11fe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c997f321ed14cddfa430c43e6de42f36934c642b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263454"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157968"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di confidenza di posta indesiderata nei messaggi
 
@@ -54,9 +54,9 @@ ms.locfileid: "32263454"
     
   - **0-4** -quando si imposta il livello SCL su uno di questi valori, il messaggio viene passato al filtro contenuto per ulteriori elaborazioni. 
     
-  - **5, 6** : quando si imposta il livello SCL su uno di questi valori, verrà applicata l'azione specificata per la **posta** indesiderata nei criteri di filtro del contenuto applicabili. Per impostazione predefinita, l'azione consiste nell'inviare il messaggio alla cartella posta inDesiderata del destinatario. 
+  - **5, 6** : quando si imposta il livello SCL su uno di questi valori, verrà applicata l'azione specificata per la **posta** indesiderata nei criteri di filtro del contenuto applicabili. Per impostazione predefinita, l'azione consiste nell'inviare il messaggio alla cartella posta indesiderata del destinatario. 
     
-  - **7-9** -quando si imposta il livello SCL su uno di questi valori, verrà applicata l'azione specificata per la posta indesiderata con **attendibilità elevata** nei criteri di filtro del contenuto applicabili. Per impostazione predefinita, l'azione consiste nell'inviare il messaggio alla cartella posta inDesiderata del destinatario. 
+  - **7-9** -quando si imposta il livello SCL su uno di questi valori, verrà applicata l'azione specificata per la posta indesiderata con **attendibilità elevata** nei criteri di filtro del contenuto applicabili. Per impostazione predefinita, l'azione consiste nell'inviare il messaggio alla cartella posta indesiderata del destinatario. 
     
     Per ulteriori informazioni sulla configurazione dei criteri di filtro del contenuto, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata. Per ulteriori informazioni sui valori SCL del servizio, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).
     
@@ -67,6 +67,6 @@ ms.locfileid: "32263454"
   
 ## <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
-Per verificare la corretta esecuzione di questa procedura, inviare un messaggio di posta elettronica a un utente all'interno dell'organizzazione e verificare che l'azione eseguita sul messaggio sia come previsto. Se ad esempio si **imposta il livello di probabilità di posta indesiderata (SCL)** per **ignorare il filtro posta**indesiderata, il messaggio dovrà essere inviato alla cartella posta in arrivo del destinatario specificato. Tuttavia, se si **imposta il livello di probabilità di posta indesiderata (SCL)** su **9**e l'azione di **protezione da posta** indesiderata elevata per i criteri di filtro del contenuto applicabile è quella di spostare il messaggio nella cartella posta indesiderata, il messaggio deve essere inviato al valore specificato. cartella posta inDesiderata del destinatario. 
+Per verificare la corretta esecuzione di questa procedura, inviare un messaggio di posta elettronica a un utente all'interno dell'organizzazione e verificare che l'azione eseguita sul messaggio sia come previsto. Se ad esempio si **imposta il livello di probabilità di posta indesiderata (SCL)** per **ignorare il filtro posta**indesiderata, il messaggio dovrà essere inviato alla cartella posta in arrivo del destinatario specificato. Tuttavia, se si **imposta il livello di probabilità di posta indesiderata (SCL)** su **9**e l'azione di **protezione da posta** indesiderata elevata per i criteri di filtro del contenuto applicabile è quella di spostare il messaggio nella cartella posta indesiderata, il messaggio deve essere inviato al valore specificato. cartella posta indesiderata del destinatario. 
   
 

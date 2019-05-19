@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Se si invia un volume elevato di posta elettronica di dominio non registrato, si rischia che la posta elettronica venga bloccata. Leggere questo articolo per ulteriori informazioni.
-ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 207b71ab7e144af9709e7485d61c936e07271a11
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263988"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156298"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Messaggio di posta elettronica di dominio non registrato: informazioni utili
 
@@ -29,7 +29,7 @@ Office 365 consente ai tenant di inoltrare alcuni messaggi tramite Exchange Onli
 
 Il problema è quando i server locali vengono compromessi e finiscono con l'inoltro di un volume elevato di posta indesiderata fuori EOP. In quasi tutti i casi, i connettori giusti sono configurati, ma il messaggio di posta elettronica viene inviato dall'annullamento della registrazione, noto anche come Unprovisioned, Domains. Office 365 consente una quantità ragionevole di messaggi di posta elettronica provenienti da domini non registrati, ma un dominio accettato deve essere configurato nell'interfaccia di amministrazione per ogni dominio in cui si intende inviare.
 
-Una volta compromesso, ai tenant verrà impedito di inviare la posta in uscita per i domini non registrati. Gli utenti riceveranno un rapporto di mancato reCapito (NDR) che indica quanto segue:
+Una volta compromesso, ai tenant verrà impedito di inviare la posta in uscita per i domini non registrati. Gli utenti riceveranno un rapporto di mancato recapito (NDR) che indica quanto segue:
 
 - 550 servizio 5.7.750 non disponibile. Client bloccato dall'invio di domini non registrati
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/11/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica che consente di rilevare i messaggi con posta indesiderata o malware che sono già stati recapitati alle cassette postali degli utenti e quindi di eseguire il rendering del contenuto dannoso innocuo. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266908"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155958"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -42,9 +42,9 @@ L'opzione ZAP è attivata per impostazione predefinita, ma devono essere soddisf
 
 Office 365 aggiorna le firme di malware e del motore di protezione da posta indesiderata in tempo reale su base giornaliera. Tuttavia, gli utenti possono comunque ottenere messaggi dannosi recapitati alle cassette postali per una serie di motivi, incluso se il contenuto è armato dopo essere stato recapitato agli utenti. ZAP risolve questo monitoraggio continuamente gli aggiornamenti alle firme di posta indesiderata e malware di Office 365. ZAP è in grado di trovare e rimuovere i messaggi precedentemente recapitati che sono già presenti nelle cassette postali degli utenti.
 
-- Per la posta elettronica identificata come posta indesiderata, ZAP sposta i messaggi non letti nella cartella posta inDesiderata degli utenti.
+- Per la posta elettronica identificata come posta indesiderata, ZAP sposta i messaggi non letti nella cartella posta indesiderata degli utenti.
 
-- Per la posta identificata come phishing, ZAP sposta i messaggi nella cartella posta inDesiderata degli utenti, indipendentemente dal fatto che il messaggio di posta elettronica sia stato letto.
+- Per la posta identificata come phishing, ZAP sposta i messaggi nella cartella posta indesiderata degli utenti, indipendentemente dal fatto che il messaggio di posta elettronica sia stato letto.
 
 - Per il malware appena rilevato, ZAP rimuove gli allegati dai messaggi di posta elettronica, indipendentemente dal fatto che il messaggio di posta elettronica sia stato letto.
   
@@ -91,7 +91,7 @@ ZAP non sposta i messaggi in quarantena dalla posta in arrivo in questo momento.
 Le regole create dagli amministratori (regole del flusso di posta) o blocca e Consenti hanno la precedenza. Tali messaggi sono esclusi dai criteri di funzionalità in modo che il flusso di posta seguirà l'azione della regola (blocco/Consenti regola).
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, la regola di posta in arrivo)?
-ZAP continua a funzionare in questo caso, a meno che il messaggio non sia stato eliminato o sia inDesiderato.
+ZAP continua a funzionare in questo caso, a meno che il messaggio non sia stato eliminato o sia indesiderato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

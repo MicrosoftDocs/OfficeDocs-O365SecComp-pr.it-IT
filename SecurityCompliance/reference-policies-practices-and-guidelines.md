@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate per aiutare a proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
-ms.openlocfilehash: a074bb1fbe6fedb9054b98d3723511607fed7304
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78b78f58ea2d96775361fe1761221e6c6e993688
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261534"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156848"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
   
@@ -50,7 +50,7 @@ I messaggi di posta elettronica inviati a Office 365 gli utenti devono rispettar
 
 I messaggi di posta elettronica inviati a Office 365 devono essere conformi alle raccomandazioni applicabili elencate nei documenti riportati di seguito (alcuni collegamenti sono disponibili solo in inglese).
   
-- [RFC 2505: suggerimenti per la protezione da posta inDesiderata per MTA SMTP](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505: suggerimenti per la protezione da posta indesiderata per MTA SMTP](https://www.ietf.org/rfc/rfc2505.txt)
     
 - [RFC 2920: estensione del servizio SMTP per il pipelining dei comandi](https://www.ietf.org/rfc/rfc2920.txt)
     

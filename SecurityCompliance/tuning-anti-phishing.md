@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264318"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156348"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ottimizzare la protezione anti-phishing in Office 365
 
@@ -52,9 +52,9 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 ## <a name="best-practices-to-stay-protected"></a>Procedure consigliate per mantenere la protezione
 
-- Su base mensile, eseguire [office 365 Secure Score](office-365-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione di Office 365.
+- Su base mensile, eseguire il [Punteggio sicuro](microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione di Office 365.
 
-- Esaminare periodicamente il [report di intelligence di spoofing](learn-about-spoof-intelligence.md) e [abilitare la protezione anti-spoofing nei criteri anti-phishing](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) per mettere in **quarantena** i messaggi sospetti anziché reCapitarli nella cartella posta indesiderata dell'utente.
+- Esaminare periodicamente il [report di intelligence di spoofing](learn-about-spoof-intelligence.md) e [abilitare la protezione anti-spoofing nei criteri anti-phishing](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) per mettere in **quarantena** i messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 
@@ -78,4 +78,4 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - L'autenticazione a più fattori è un ottimo modo per impedire gli account compromessi. È consigliabile prendere in considerazione l'abilitazione dell'AMF per tutti gli utenti. Per un approccio graduale, iniziare abilitando l'AMF per gli utenti più sensibili (amministratori, dirigenti e così via) prima di abilitare l'AMF per tutti. Per istruzioni, vedere [configurare l'autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)a più fattori.
 
-- Le regole di inoltro ai destinatari esterni vengono spesso utilizzate dagli utenti malintenzionati per estrarre i dati. Utilizzare le informazioni sulla **revisione delle regole di inoltro delle cassette postali** in [Office 365 Secure Score](office-365-secure-score.md) per individuare e persino impedire l'inoltro delle regole ai destinatari esterni. Per ulteriori informazioni, vedere [attenuaZione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- Le regole di inoltro ai destinatari esterni vengono spesso utilizzate dagli utenti malintenzionati per estrarre i dati. Utilizzare le informazioni sulla **revisione delle regole di inoltro delle cassette postali** in [Microsoft Secure Score](microsoft-secure-score.md) per individuare e persino impedire l'inoltro delle regole ai destinatari esterni. Per ulteriori informazioni, vedere [attenuazione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

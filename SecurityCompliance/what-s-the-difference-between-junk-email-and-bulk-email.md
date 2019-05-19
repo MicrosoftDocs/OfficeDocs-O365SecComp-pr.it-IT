@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 1/7/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: I clienti a volte askwhat è la differenza tra posta elettronica indesiderata e messaggi di posta elettronica in blocco? Lo scopo di questo argomento è spiegare la differenza e fornire informazioni sulle diverse opzioni disponibili per entrambi in Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f0e80b460af2ff5b51f5380063780ee653e00b3d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266928"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155988"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Differenza tra posta elettronica indesiderata e posta elettronica in blocco
 

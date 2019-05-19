@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: "Informazioni sulle linee guida per la preparazione dei file di case di dati di Office 365 per l'analisi con Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261034"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156738"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo in Office 365 Advanced eDiscovery
 

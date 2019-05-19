@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 15463ac841e2fbbafe1fe502657a659f4a9e1883
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260364"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156408"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging e valutazione in Office 365 Advanced eDiscovery
 
@@ -115,7 +115,7 @@ La visualizzazione estesa della pista Mostra il passaggio successivo consigliato
   
 Quando la ricchezza è molto bassa, il numero di file di valutazione aggiuntivi necessari per raggiungere un numero minimo di file rilevanti per produrre statistiche utili è molto elevato. Advanced eDiscovery consiglia di passare all'allenamento. L'indicatore di avanzamento della valutazione verrà ombreggiato e non saranno disponibili statistiche. 
   
-In assenza di stabilizzazione basata statisticamente, vi saranno risultati con un livello di precisione e confidenza inferiore. Tuttavia, questi risultati possono essere utilizzati per trovare i file rilevanti quando non è necessario conoscere la percentuale di file rilevanti trovati. Analogamente, questo stato può essere utilizzato per formare problemi con una ricchezza bassa, in cui i punteggi riLevati possono accelerare l'accesso ai file rilevanti per un problema specifico.
+In assenza di stabilizzazione basata statisticamente, vi saranno risultati con un livello di precisione e confidenza inferiore. Tuttavia, questi risultati possono essere utilizzati per trovare i file rilevanti quando non è necessario conoscere la percentuale di file rilevanti trovati. Analogamente, questo stato può essere utilizzato per formare problemi con una ricchezza bassa, in cui i punteggi rilevati possono accelerare l'accesso ai file rilevanti per un problema specifico.
   
 > [!TIP]
 > Nella scheda ** \> pista pertinenza** , espansione visualizzazione dei problemi, sono disponibili le opzioni di visualizzazione seguenti: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: la codifica** può essere ignorata (per problema) facendo clic sul pulsante **modifica** al relativo a destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica**e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo**e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
@@ -124,7 +124,7 @@ In assenza di stabilizzazione basata statisticamente, vi saranno risultati con u
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Formazione di tagging e pertinenza](tagging-and-relevance-training-in-advanced-ediscovery.md)
   

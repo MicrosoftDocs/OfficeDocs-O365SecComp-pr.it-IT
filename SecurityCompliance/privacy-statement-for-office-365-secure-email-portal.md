@@ -1,10 +1,10 @@
 ---
-title: InFormativa sulla privacy per Office 365 Secure E-mail Portal
+title: Informativa sulla privacy per Office 365 Secure E-mail Portal
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: End User
+audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Ultimo aggiornamento: 2017 maggio'
-ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 869d4a7bbc809d72e048b6e1d0af24fa603b0a9d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265268"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157428"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>InFormativa sulla privacy per Office 365 Secure E-mail Portal
+# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Informativa sulla privacy per Office 365 Secure E-mail Portal
 
 Ultimo aggiornamento: 2017 maggio
   

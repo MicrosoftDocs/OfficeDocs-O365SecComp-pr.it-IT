@@ -3,7 +3,7 @@ title: Impostare i limiti di conformità per le indagini eDiscovery in Office 36
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264660"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156578"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -183,7 +183,7 @@ Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti
 
 I filtri per le autorizzazioni di ricerca consentono inoltre di controllare il percorso del contenuto per l'esportazione e il Data Center in cui è possibile eseguire ricerche nei percorsi di contenuto in un [ambiente multi-geografico di SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
-- **Esportare i risultati della ricerca** : è possibile esportare i risultati della ricerca da cassette postAli di Exchange, siti di SharePoint e account di OneDrive da un datacenter specifico. Questo significa che è possibile specificare la posizione del centro dati da cui verranno esportati i risultati della ricerca.
+- **Esportare i risultati della ricerca** : è possibile esportare i risultati della ricerca da cassette postali di Exchange, siti di SharePoint e account di OneDrive da un datacenter specifico. Questo significa che è possibile specificare la posizione del centro dati da cui verranno esportati i risultati della ricerca.
 
     Utilizzare il parametro **Region** per i cmdlet **New-ComplianceSecurityFilter** o **set-ComplianceSecurityFilter** per creare o modificare il Data Center in cui verrà instradata l'esportazione.
   

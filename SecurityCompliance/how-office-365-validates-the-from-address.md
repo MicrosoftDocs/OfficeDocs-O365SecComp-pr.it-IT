@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: Per evitare il phishing, Office 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
-ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253934"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154288"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 
@@ -62,7 +62,7 @@ Alcuni messaggi automatici non includono un indirizzo da: quando vengono inviati
 From: <>
 ```
 
-A partire dal 9 novembre 2017, Office 365 distribuirà le modifiche apportate ai propri datacenter e ai server di posta che applicano una nuova regola in cui i messaggi senza un indirizzo da: non verranno più accettati da Office 365 o Outlook.com. Al contrario, tutti i messaggi ricevuti da Office 365 devono già contenere un indirizzo valido da:. In caso contrario, il messaggio verrà inviato alla cartella posta inDesiderata o agli elementi eliminati in Outlook.com e Office 365. 
+A partire dal 9 novembre 2017, Office 365 distribuirà le modifiche apportate ai propri datacenter e ai server di posta che applicano una nuova regola in cui i messaggi senza un indirizzo da: non verranno più accettati da Office 365 o Outlook.com. Al contrario, tutti i messaggi ricevuti da Office 365 devono già contenere un indirizzo valido da:. In caso contrario, il messaggio verrà inviato alla cartella posta indesiderata o agli elementi eliminati in Outlook.com e Office 365. 
   
 ### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>Panoramica della sintassi: formato valido per l'indirizzo da: per Office 365
 <a name="SyntaxOverviewFromAddress"> </a>

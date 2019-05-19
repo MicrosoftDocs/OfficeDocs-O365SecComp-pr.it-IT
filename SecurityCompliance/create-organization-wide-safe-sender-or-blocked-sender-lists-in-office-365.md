@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibile l'elenco dei messaggi consentiti in un criterio di filtro posta indesiderata nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4731fe4a72a3c331725b82e09240e6af91bb6afd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258174"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153728"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili o bloccati per l'intera organizzazione in Office 365
   
@@ -26,7 +26,7 @@ Se si desidera essere sicuri di ricevere la posta da un mittente specifico, poic
 Una regola del flusso di posta sarebbe utile in questa situazione se è necessario filtrare criteri complessi, ad esempio controllare le intestazioni dei messaggi o i nomi degli allegati o se si desidera aggiungere azioni complesse, ad esempio l'aggiunta di una dichiarazione di non responsabilità al messaggio o l'applicazione di un periodo di tempo in cui il RUL e attivo. Tuttavia, il metodo preferito per assicurarsi che i messaggi di posta elettronica provenienti da un mittente o da un dominio specifico ignorino il filtro per la posta indesiderata è di aggiungerli al criterio di filtro Per iniziare a utilizzare questa operazione nell'interfaccia di amministrazione di Exchange, andare a **protezione** \> dalla **posta**indesiderata. Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta](configure-your-spam-filter-policies.md)indesiderata.
   
 > [!TIP]
-> Un elenco basato sul dominio in una regola del flusso di posta non è protetto come un elenco basato sull'indirizzo IP, perché i domini possono essere falsificati. Inoltre, se l'indirizzo IP di invio è presente nell'elenco degli indirizzi bloccati, sarà comunque bloccato anche se viene ignorato il filtro del dominio o dell'utente. Ciò è dovuto al fatto che una regola del flusso di posta in un dominio o un utente non sovrascrive l'elenco di indirizzi IP bloccati globale. Si consiglia di utilizzare un elenco basato sull'indirizzo IP in gran parte dei casi. Per creare un elenco basato sull'indirizzo IP, è possibile utilizzare l'elenco di indirizzi IP consentiti o bloccati del filtro connessioni. I messaggi inviati da questi indirizzi IP non vengono controllati dal filtro contenuto. Per istruzioni su come configurare il criterio di filtro delle connessioni aggiungendo indirizzi IP all'elenco o all'elenco IP conSentiti, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). 
+> Un elenco basato sul dominio in una regola del flusso di posta non è protetto come un elenco basato sull'indirizzo IP, perché i domini possono essere falsificati. Inoltre, se l'indirizzo IP di invio è presente nell'elenco degli indirizzi bloccati, sarà comunque bloccato anche se viene ignorato il filtro del dominio o dell'utente. Ciò è dovuto al fatto che una regola del flusso di posta in un dominio o un utente non sovrascrive l'elenco di indirizzi IP bloccati globale. Si consiglia di utilizzare un elenco basato sull'indirizzo IP in gran parte dei casi. Per creare un elenco basato sull'indirizzo IP, è possibile utilizzare l'elenco di indirizzi IP consentiti o bloccati del filtro connessioni. I messaggi inviati da questi indirizzi IP non vengono controllati dal filtro contenuto. Per istruzioni su come configurare il criterio di filtro delle connessioni aggiungendo indirizzi IP all'elenco o all'elenco IP consentiti, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). 
   
 Per altre attività di gestione relative alle regole del flusso di posta, vedere [Mail Flow Rules (Transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   

@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: L'organizzazione può collaborare con un partner Microsoft per configurare un connettore personalizzato per l'importazione di dati di terze parti da origini dati quali Salesforce Chatter, Yahoo Messenger o Yammer. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità di Office 365, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: dce015438c9764f66e98936df9454cba73fd8472
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33308016"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155998"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Collaborare con un partner per archiviare i dati di terze parti in Office 365
 
@@ -354,7 +354,7 @@ Nelle sezioni seguenti vengono elencati i partner Microsoft e le origini dati di
     
 - Salesforce Chatter
 
-- Skype for Business Online
+- Skype for Business online
     
 - Skype for Business, versioni 2007 R2 - 2016 (locale)
     

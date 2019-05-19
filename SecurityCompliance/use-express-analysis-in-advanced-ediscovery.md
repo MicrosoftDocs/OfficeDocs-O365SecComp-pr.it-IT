@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Informazioni su come eseguire la modalità di analisi Express di Office 365 Advanced eDiscovery
-ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04b48db445f114fd6138b099703e826c6b4ce7c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264490"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156158"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Utilizzare l'analisi rapida in Office 365 Advanced eDiscovery
 
@@ -72,7 +72,7 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
   
 1. Nella sezione **Analyze** : 
     
-  - Nelle **quasi duplicati e nei thread di posta elettronica**, immettere il valore di somigliaNza del **documento** oppure accettare l'impostazione predefinita 65%. 
+  - Nelle **quasi duplicati e nei thread di posta elettronica**, immettere il valore di somiglianza del **documento** oppure accettare l'impostazione predefinita 65%. 
     
   - Nel **numero massimo di temi** immettere o selezionare un valore per il numero di temi da creare. Il valore predefinito è 200. 
     

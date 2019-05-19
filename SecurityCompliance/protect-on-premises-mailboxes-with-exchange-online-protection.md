@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere Assegnazione di ruoli di amministratore in Office 365 gestito da 21Vianet. Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
-ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156938"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteggere le cassette postali locali con Exchange Online Protection
 
@@ -85,6 +85,6 @@ Se si dispone di cassette postali di Exchange in locale e di una o più cassette
   
 È possibile scegliere uno scenario ibrido per sfruttare la posta elettronica basata sul cloud per la maggior parte dei dipendenti. È possibile eseguire questa operazione anche ospitando alcune cassette postali in locale. ad esempio, per il reparto legale. 
   
-Una configurazione ibrida può essere complessa, ma presenta numerosi vantaggi. Per ulteriori informazioni sulla configurazione di scenari ibridi con Exchange, vedere [ConfigurIng Exchange Hybrid deployment features with Office 365 operated by 21ViaNet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
+Una configurazione ibrida può essere complessa, ma presenta numerosi vantaggi. Per ulteriori informazioni sulla configurazione di scenari ibridi con Exchange, vedere [Configuring Exchange Hybrid deployment features with Office 365 operated by 21ViaNet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
   
 

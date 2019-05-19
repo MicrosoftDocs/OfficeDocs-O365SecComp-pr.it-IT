@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/19/2018
-ms.audience: Consumer/IW
+audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: "Come utente di Office 365, è possibile gestire i messaggi in quarantena per la posta indesiderata in uno dei due modi seguenti: rispondendo alle notifiche di posta indesiderata inviate direttamente (se l'amministratore ha configurato questa funzionalità) oppure utilizzando la funzionalità di &amp; quarantena della posta indesiderata nella conformità alla sicurezza Centro."
-ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255204"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152818"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi in quarantena come utente in Office 365
 
@@ -100,7 +100,7 @@ Dopo aver selezionato un messaggio, verrà visualizzato un riepilogo delle propr
     
 È possibile ottenere ulteriori informazioni sul messaggio scegliendo una delle seguenti opzioni:
   
-- **Visualizzare l'intestazione del messaggio** Scegliere questo per visualizzare il testo dell'intestazione del messaggio. Per analizzare in modo approfondito l'intestazione, copiare il testo dell'intestazione del messaggio negli Appunti e quindi scegliere **analizzaTore intestazione messaggio Microsoft** per accedere all'analizzatore connettività remota (fare clic con il pulsante destro del mouse e scegliere Apri in una nuova scheda se non si desidera lasciare Office 365 a completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Analizzatore intestazioni del messaggio e scegliere Analyze Headers. 
+- **Visualizzare l'intestazione del messaggio** Scegliere questo per visualizzare il testo dell'intestazione del messaggio. Per analizzare in modo approfondito l'intestazione, copiare il testo dell'intestazione del messaggio negli Appunti e quindi scegliere **analizzatore intestazione messaggio Microsoft** per accedere all'analizzatore connettività remota (fare clic con il pulsante destro del mouse e scegliere Apri in una nuova scheda se non si desidera lasciare Office 365 a completare questa attività. Incollare l'intestazione del messaggio nella pagina nella sezione Analizzatore intestazioni del messaggio e scegliere Analyze Headers. 
     
 - **Messaggio di anteprima** Consente di visualizzare le versioni RAW o HTML del testo del corpo del messaggio. Nella visualizzazione HTML i collegamenti sono disattivati. 
     
@@ -112,7 +112,7 @@ Dopo aver selezionato un messaggio o un gruppo di messaggi, sono disponibili div
     
 - **Rilascia il messaggio** Rilasciare un messaggio in quarantena (o un insieme di messaggi) in modo che il messaggio venga inviato alla cassetta postale. Quando si rilascia un messaggio, si ha la possibilità di segnalare il messaggio a Microsoft per l'analisi. 
     
-    Quando si sceglie di segnalare un messaggio, chiamato anche segnalazione di un messaggio come falso positivo, il messaggio viene segnalato al team di analisi di posta inDesiderata di Microsoft. Il team valuta e analizza i messaggi falsi positivi e, a seconda dei risultati dell'analisi, è possibile modificare le regole di filtro del contenuto della posta indesiderata a livello di servizio per consentire l'attraversamento di tali messaggi.
+    Quando si sceglie di segnalare un messaggio, chiamato anche segnalazione di un messaggio come falso positivo, il messaggio viene segnalato al team di analisi di posta indesiderata di Microsoft. Il team valuta e analizza i messaggi falsi positivi e, a seconda dei risultati dell'analisi, è possibile modificare le regole di filtro del contenuto della posta indesiderata a livello di servizio per consentire l'attraversamento di tali messaggi.
     
 - **Scaricare il messaggio** Consente di scaricare il messaggio come file con estensione eml. Dopo aver scaricato un messaggio, è possibile esaminare il file con estensione EML utilizzando il client di posta elettronica prima di rilasciare il messaggio. 
     

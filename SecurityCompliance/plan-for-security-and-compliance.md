@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 3/15/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Pagina di destinazione per pianificare la sicurezza e la conformità
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265868"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157508"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Pianificare la conformità &amp; della sicurezza in Office 365
 
@@ -35,7 +35,7 @@ Orientarsi alle funzionalità di protezione delle informazioni nel poster sulla 
 
 Dopo aver configurato la sottoscrizione di Office 365, prendere nota del punteggio iniziale. Secure Score fornisce i suggerimenti di configurazione di Office 365 che è possibile eseguire per aumentare il punteggio. L'obiettivo è quello di essere a conoscenza delle opportunità che è possibile intraprendere per proteggere l'ambiente che non influisce negativamente sulla produttività degli utenti.
   
-- [Introduzione al Punteggio sicuro di Office 365](office-365-secure-score.md)
+- [Introduzione al Punteggio sicuro di Office 365](microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Passaggio 3: pianificare la protezione dell'accesso per identità e dispositivi
 

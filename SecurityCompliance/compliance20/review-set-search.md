@@ -1,10 +1,10 @@
 ---
-title: Eseguire una query sui dati in un set di Revisione
+title: Eseguire query sui dati in un insieme da rivedere
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 395cc01238f4dbc91de5dd652e10121f5e0cc926
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527195"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154008"
 ---
-# <a name="query-the-data-in-a-review-set"></a>Eseguire una query sui dati in un set di Revisione
+# <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
 Nella maggior parte dei casi, sarà utile essere in grado di approfondire gli elementi presenti in un set di revisione e organizzarli per la revisione in modo più efficiente. Le query all'interno di un set di revisione consentono di eseguire questa operazione consentendo di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri definiti dall'utente in una sola volta.
 

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Informazioni sul modulo pertinenza in Office 365 Advanced eDiscovery, tra cui un flusso di lavoro e le linee guida e i passaggi per la formazione e la revisione dei file.  '
-ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b585008dca58f95b0f3b932b2ee4b82a1ae731
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263788"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156078"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Utilizzare il modulo pertinenza in Office 365 Advanced eDiscovery
 
@@ -132,7 +132,7 @@ Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passag
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Informazioni sulla valutazione in riLevanza](assessment-in-relevance-in-advanced-ediscovery.md)
+[Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   

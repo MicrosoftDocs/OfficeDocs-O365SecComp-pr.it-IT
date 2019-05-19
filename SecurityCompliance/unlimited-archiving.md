@@ -3,7 +3,7 @@ title: Panoramica dell'archiviazione illimitata in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'espansione automatica dell'archiviazione in Office 365, che fornisce un archivio di archiviazione illimitato per le cassette postali di Exchange Online.
-ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265936"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158068"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Panoramica dell'archiviazione illimitata in Office 365
 
@@ -50,7 +50,7 @@ Ecco una breve panoramica del processo.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Cosa viene spostato nello spazio di archiviazione aggiuntivo dell'archivio?
 
-Per utilizzare in modo efficiente l'archiviazione di un archivio automatico, è possibile che le cartelle vengano spostate. Office 365 determina quali cartelle vengono spostate quando viene aggiunta un'ulteriore archiviazione all'archivio. Quando una cartella viene spostata, viene creata automaticamente una sottocartella nella cartella originale nella parte relativa all'archivio dell'elenco delle cartelle in Outlook. Questa nuova sottocartella punta agli elementi che sono stati spostati. la convenzione di denominazione utilizzata da Office 365 per assegnare un nome alla cartella è ** \<il nome\>della cartella _yyyy (creato in mmm gg, yyyy h_mm)**, dove: 
+Per utilizzare in modo efficiente l'archiviazione di un archivio automatico, è possibile che le cartelle vengano spostate. Office 365 determina quali cartelle vengono spostate quando viene aggiunta un'ulteriore archiviazione all'archivio. Quando una cartella viene spostata, viene creata automaticamente una sottocartella nella cartella originale nella parte relativa all'archivio dell'elenco delle cartelle in Outlook. Questa nuova sottocartella punta agli elementi che sono stati spostati. La convenzione di denominazione utilizzata da Office 365 per assegnare un nome alla cartella è ** \<il nome\>della cartella _yyyy (creato in mmm gg, yyyy h_mm)**, dove: 
   
 - **yyyy** è l'anno in cui sono stati ricevuti i messaggi nella cartella. 
     
@@ -72,7 +72,7 @@ Per accedere ai messaggi archiviati in un archivio con espansione automatica, è
   
 - Outlook 2016 o Outlook 2019 per Windows
     
-- Outlook sul Web 
+- Outlook sul web 
     
 - Outlook 2016 o Outlook 2019 per Mac 
     
@@ -103,6 +103,6 @@ In questa sezione viene illustrata la funzionalità tra l'archiviazione in espan
     
 - **Import Service** -è possibile utilizzare il servizio di importazione di Office 365 per importare i file PST nell'archivio automatico espanso di un utente. È possibile importare fino a 100 GB di dati da file PST nella cassetta postale di archiviazione dell'utente. 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Office 365: auto-expandIng Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Office 365: auto-Expanding Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).

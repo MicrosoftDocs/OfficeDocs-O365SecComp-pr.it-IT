@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Se il sistema di posta elettronica di un cliente è stato compromesso da malware o da un attacco di posta indesiderata e Invia la posta indesiderata in uscita tramite il servizio di filtraggio ospitato, questo può comportare l'elenco degli indirizzi IP dei server di Data Center di Office 365 che sono elencati nel blocco di terze parti elenchi.
-ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0581d4d0ac745f7520f73cd6b4465d72fa1dcf48
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253944"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152728"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool di recapito ad alto rischio per i messaggi in uscita
 
@@ -29,7 +29,7 @@ L'utilizzo di un pool di recapito ad alto rischio dedicato contribuisce a garant
   
 Messaggi in cui il dominio di invio non ha un record di indirizzo (un record), che fornisce l'indirizzo IP del dominio, e nessun record MX, che consente di indirizzare la posta ai server che devono ricevere la posta per un determinato dominio nel DNS, vengono sempre instradati attraverso il pool di recapito ad alto rischio a prescindere dalla disposizione di posta indesiderata.
   
-## <a name="understanding-delivery-status-notification-dsn-messages"></a>Informazioni sui messaggi di notifica sullo stato del reCapito (DSN)
+## <a name="understanding-delivery-status-notification-dsn-messages"></a>Informazioni sui messaggi di notifica sullo stato del recapito (DSN)
 
 Il pool di recapito ad alto rischio in uscita gestisce il recapito per tutti i messaggi "rimbalzati" o "non riusciti" (DSN).
   
@@ -49,6 +49,6 @@ Tutti questi problemi possono determinare un improvviso aumento del numero di me
 
 [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
   
-[DOMANDE frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
+[Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
   
 

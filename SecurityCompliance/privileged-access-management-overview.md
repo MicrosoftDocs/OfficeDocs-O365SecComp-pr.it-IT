@@ -3,7 +3,7 @@ title: Gestione degli accessi con privilegi in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: e03b615971b90e8443f73c3ec8c4cd3febe90450
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261836"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157328"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestione degli accessi con privilegi in Office 365
 
@@ -33,15 +33,15 @@ Per una breve panoramica sull'archivio protetto dei clienti integrato e sul flus
 
 ## <a name="layers-of-protection"></a>Livelli di protezione
 
-La gestione degli accessi con privilegi integra altre protezioni di funzionalità di accesso e di dati all'interno dell'architettura di sicurezza di Office 365. La gestione degli accessi con privilegi come parte di un approccio integrato e a livello di sicurezza fornisce un modello di sicurezza che massimizza la protezione delle informazioni riservate e le impostazioni di configurazione di Office 365. Come illustrato nel diagramma, la gestione degli accessi con privilegi si basa sulla protezione fornita con la crittografia nativa dei dati di Office 365 e sul modello di sicurezza per il controllo di accesso basato sui ruoli dei servizi di Office 365. Quando viene utilizzato con [Azure ad privilegEd Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), queste due funzionalità forniscono il controllo di accesso con accesso just-in-time a diversi ambiti.
+La gestione degli accessi con privilegi integra altre protezioni di funzionalità di accesso e di dati all'interno dell'architettura di sicurezza di Office 365. La gestione degli accessi con privilegi come parte di un approccio integrato e a livello di sicurezza fornisce un modello di sicurezza che massimizza la protezione delle informazioni riservate e le impostazioni di configurazione di Office 365. Come illustrato nel diagramma, la gestione degli accessi con privilegi si basa sulla protezione fornita con la crittografia nativa dei dati di Office 365 e sul modello di sicurezza per il controllo di accesso basato sui ruoli dei servizi di Office 365. Quando viene utilizzato con [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), queste due funzionalità forniscono il controllo di accesso con accesso just-in-time a diversi ambiti.
 
 ![Protezione a più livelli in Office 365](media/pam-layered-protection.png)
 
 La gestione degli accessi con privilegi in Office 365 è definita e portata a livello di **attività** , mentre Azure ad Privileged Identity Management applica la protezione a livello di **ruolo** con la possibilità di eseguire più attività. Azure AD Privileged Identity Management consente principalmente la gestione degli accessi per i ruoli di Active Directory e i gruppi di ruoli, mentre la gestione degli accessi con privilegi in Office 365 si applica solo a livello di attività.
 
-- **Abilitazione della gestione degli accessi con privilegi in Office 365 mentre è già in uso Azure ad privilegEd Identity Management:** L'aggiunta di gestione degli accessi con privilegi in Office 365 fornisce un altro livello granulare di funzionalità di protezione e controllo per l'accesso privilegiato ai dati di Office 365.
+- **Abilitazione della gestione degli accessi con privilegi in Office 365 mentre è già in uso Azure ad Privileged Identity Management:** L'aggiunta di gestione degli accessi con privilegi in Office 365 fornisce un altro livello granulare di funzionalità di protezione e controllo per l'accesso privilegiato ai dati di Office 365.
 
-- **Abilitazione di Azure ad privilegEd Identity Management già utilizzando la gestione degli accessi con privilegi in Office 365:**  L'aggiunta di Azure AD Privileged Identity Management alla gestione degli accessi con privilegi in Office 365 può estendere l'accesso privilegiato ai dati esterni a Office 365 che sono definiti principalmente dai ruoli o dall'identità dell'utente.  
+- **Abilitazione di Azure ad Privileged Identity Management già utilizzando la gestione degli accessi con privilegi in Office 365:**  L'aggiunta di Azure AD Privileged Identity Management alla gestione degli accessi con privilegi in Office 365 può estendere l'accesso privilegiato ai dati esterni a Office 365 che sono definiti principalmente dai ruoli o dall'identità dell'utente.  
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Architettura e flusso di processo di gestione degli accessi con privilegi
 
@@ -92,6 +92,6 @@ L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/ma
 
 Avviare [la configurazione dell'organizzazione per la gestione degli accessi con privilegi](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)

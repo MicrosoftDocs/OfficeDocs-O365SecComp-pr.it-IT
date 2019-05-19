@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265774"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155978"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -75,7 +75,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     ![Filigrana e intestazione applicate a un documento](media/Sensitivity_label_watermark_header.png)
 
 - 
-  **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Per consentire l'uso di Windows Information Protection (WIP) nelle le etichette di riservatezza, è necessario creare prima un criterio di protezione delle app nel portale di Azure. Per altre informazioni, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+  **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Per consentire l'uso di Windows Information Protection (WIP) nelle le etichette di riservatezza, è necessario creare prima un criterio di protezione delle app nel portale di Azure. Per altre informazioni, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Applicare automaticamente l'etichetta a contenuto che contiene informazioni sensibili.** È possibile selezionare i tipi di informazioni sensibili che si intende etichettare e scegliere se applicare l'etichetta automaticamente oppure chiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, il messaggio di richiesta visualizza qualsiasi testo selezionato. Per altre informazioni, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply_sensitivity_label_automatically.md).
 
@@ -185,8 +185,10 @@ Nelle applicazioni di Office nei dispositivi Android, le etichette di riservatez
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Ulteriori informazioni sulle etichette di riservatezza nelle applicazioni di Office
 
-- [Applicare etichette di riservatezza ai documenti e ai messaggi di posta elettronica in Office](https://support.office.com/it-IT/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Problemi noti quando si applicano le etichette di riservatezza per i file di Office](https://support.office.com/it-IT/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- 
+  [Applicare etichette di riservatezza ai documenti e ai messaggi di posta elettronica in Office](https://support.office.com/it-IT/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- 
+  [Problemi noti quando si applicano le etichette di riservatezza per i file di Office](https://support.office.com/it-IT/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Funzionamento delle etichette di riservatezza con etichette esistenti di Azure Information Protection
 
@@ -215,13 +217,16 @@ E se un utente tenta di salvare il contenuto cui è applicata l’etichetta in u
 
 ### <a name="important-prerequisites"></a>Prerequisiti importanti
 
-Affinché le etichette di riservatezza possano utilizzare WIP, è necessario eseguire prima i prerequisiti descritti di seguito: [Come Windows Information Protection protegge i file con un'etichetta di riservatezza](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Questo argomento illustra i prerequisiti seguenti:
+Affinché le etichette di riservatezza possano utilizzare WIP, è necessario eseguire prima i prerequisiti descritti di seguito: [Come Windows Information Protection protegge i file con un'etichetta di riservatezza](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Questo argomento illustra i prerequisiti seguenti:
 
 - Assicurarsi di eseguire Windows 10 versione 1809 o successive.
-- [Impostare Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-atp/get-started), che analizza il contenuto di un'etichetta e applica la relativa protezione WIP. ATP esegue alcune operazioni in modo indipendente da WIP, ad esempio la creazione di report relativi ad anomalie.
+- 
+  [Impostare Windows Defender Advanced Threat Protection (WDATP)](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-atp/get-started), che analizza il contenuto di un'etichetta e applica la relativa protezione WIP. ATP esegue alcune operazioni in modo indipendente da WIP, ad esempio la creazione di report relativi ad anomalie.
 - Creare un criterio di Windows Information Protection (WIP) valido per i dispositivi endpoint. È possibile farlo in una di queste posizioni:
-    - [Creare un criterio di Windows Information Protection (WIP) con MDM tramite il portale di Azure per Microsoft Intune](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Creare e distribuire un criterio di Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - 
+  [Creare un criterio di Windows Information Protection (WIP) con MDM tramite il portale di Azure per Microsoft Intune](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - 
+  [Creare e distribuire un criterio di Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/it-IT/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteggere i contenuti in app e servizi di terze parti con Microsoft Cloud App Security
 
@@ -233,8 +238,10 @@ Per altre informazioni, vedere [Applicare automaticamente etichette di classific
 
 Prima che le etichette di riservatezza possano usare CAS, è necessario eseguire i prerequisiti descritti di seguito: [Applicare automaticamente le etichette di classificazione di Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/use-case-information-protection). In questo argomento sono descritti i prerequisiti seguenti:
 
-- [Abilitare Cloud App Security e Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/azip-integration) per il tenant.
-- [Connettere l'app](https://docs.microsoft.com/it-IT/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) a Cloud App Security.
+- 
+  [Abilitare Cloud App Security e Azure Information Protection](https://docs.microsoft.com/it-IT/cloud-app-security/azip-integration) per il tenant.
+- 
+  [Connettere l'app](https://docs.microsoft.com/it-IT/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) a Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Estendere le etichette di riservatezza ad applicazioni e servizi di terze parti con SDK di Microsoft Information Protection
 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 02/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261294"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157568"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
@@ -37,25 +37,25 @@ OME combina la crittografia della posta elettronica e le funzionalità di gestio
 È possibile utilizzare le nuove funzionalità di OME nelle condizioni seguenti:
   
 - Se non è stato mai configurato OME o IRM per Exchange online in Office 365.
-    
+
 - Se sono stati configurati OME e IRM, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management da Azure Information Protection.
-    
-- Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario [migraRE ad RMS in Azure Information Protection per](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) primo. Dopo aver completato la migrazione, è possibile configurare correttamente OME. 
-    
+
+- Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario [migrare ad RMS in Azure Information Protection per](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) primo. Dopo aver completato la migrazione, è possibile configurare correttamente OME.
+
     Se si sceglie di continuare a utilizzare AD RMS locale con Exchange Online invece di eseguire la migrazione a Azure Information Protection, non sarà possibile utilizzare queste nuove funzionalità.
-    
+
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>Quali abbonamenti sono necessari per utilizzare le nuove funzionalità OME?
 
 Per utilizzare le nuove funzionalità OME, è necessario uno dei seguenti piani:
   
-- La crittografia dei messaggi di Office 365 è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 business, Office 365 a1, a3 e a5 e Office 365 Government G3 e G5. I clienti non necessitano di licenze aggiuntive per ricevere le nuove funzionalità di protezione alimentate da Azure Information Protection. 
-    
+- La crittografia dei messaggi di Office 365 è disponibile come parte di Office 365 Enterprise E3 ed E5, Microsoft Enterprise E3 ed E5, Microsoft 365 business, Office 365 a1, a3 e a5 e Office 365 Government G3 e G5. I clienti non necessitano di licenze aggiuntive per ricevere le nuove funzionalità di protezione alimentate da Azure Information Protection.
+
 - È inoltre possibile aggiungere Azure Information Protection Plan 1 ai piani seguenti per ricevere le nuove funzionalità di crittografia dei messaggi di Office 365: Exchange Online piano 1, Exchange Online piano 2, Office 365 F1, Office 365 Business Essentials, Office 365 Business Premium o Office 365 Enterprise E1.
-    
+
 - Tutti gli utenti che usufruiscono della crittografia dei messaggi di Office 365 devono essere concessi in licenza per essere coperti dalla caratteristica.
-    
-- Per l'elenco completo, vedere le [descrizioni dei servizi di Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) per la crittografia dei messaggi di Office 365. 
-    
+
+- Per l'elenco completo, vedere le [descrizioni dei servizi di Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) per la crittografia dei messaggi di Office 365.
+
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>È possibile utilizzare Exchange Online con Bring your own key (BYOK) in Azure Information Protection?
 
 Sì! Microsoft consiglia di completare la procedura di configurazione di BYOK prima di configurare OME.
@@ -90,7 +90,7 @@ Vedere [configurare le nuove funzionalità di crittografia dei messaggi di Offic
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>L'organizzazione utilizza Active Directory Rights Management, è possibile utilizzare questa funzionalità?
 
-No. Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario [migraRE ad RMS in Azure Information Protection per](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) primo. 
+No. Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario [migrare ad RMS in Azure Information Protection per](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) primo. 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>L'organizzazione dispone di una distribuzione ibrida di Exchange. È possibile utilizzare questa funzionalità?
 
@@ -141,5 +141,3 @@ Non in questo momento, ma verrà presto.
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>È possibile utilizzare la crittografia dei messaggi con funzionalità di conformità, ad esempio eDiscovery?
 
 Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dalle funzionalità di conformità di Office 365.
-  
-

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
-ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c8ee481271d77d0b131af44944b9e94a934d45ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261582"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156888"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web 
 
@@ -29,7 +29,7 @@ Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi d
 
 Per inviare un messaggio di posta indesiderata a Microsoft:
   
-1. Fare clic sul messaggio indesiderato e quindi fare clic su **posta** indesiderata sulla barra degli strumenti. Questo sposta il messaggio nella cartella posta inDesiderata e aggiunge il mittente all'elenco dei mittenti bloccati. 
+1. Fare clic sul messaggio indesiderato e quindi fare clic su **posta** indesiderata sulla barra degli strumenti. Questo sposta il messaggio nella cartella posta indesiderata e aggiunge il mittente all'elenco dei mittenti bloccati. 
     ![Indicare che un messaggio di posta elettronica è posta indesiderata da Outlook sul Web](media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
   
     > [!NOTE]
@@ -56,7 +56,7 @@ Per inviare un messaggio di truffa di phishing a Microsoft:
 
 Quando un messaggio viene identificato erroneamente come posta indesiderata da Office 365, inviare un messaggio come "non indesiderato" a Microsoft:
   
-1. Nella cartella posta inDesiderata, fare clic sul messaggio e quindi fare clic su **non** indesiderata sulla barra degli strumenti. Questo consente di spostare il messaggio nella **posta in arrivo** e di aggiungere il mittente all'elenco dei mittenti attendibili. <br/>È inoltre possibile fare clic con il pulsante destro del mouse su un messaggio nella cartella posta inDesiderata per visualizzare un menu e fare clic su **Segna come non**indesiderato. 
+1. Nella cartella posta indesiderata, fare clic sul messaggio e quindi fare clic su **non** indesiderata sulla barra degli strumenti. Questo consente di spostare il messaggio nella **posta in arrivo** e di aggiungere il mittente all'elenco dei mittenti attendibili. <br/>È inoltre possibile fare clic con il pulsante destro del mouse su un messaggio nella cartella posta indesiderata per visualizzare un menu e fare clic su **Segna come non**indesiderato. 
   
 2. Si aprirà una finestra di dialogo che chiede all'utente se desidera inviare una copia del messaggio di posta non indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata di Microsoft. 
     
@@ -64,7 +64,7 @@ Quando un messaggio viene identificato erroneamente come posta indesiderata da O
 
 [Informazioni generali sulla posta indesiderata e sul phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Componente aggiuntivo per la segnalazione della posta inDesiderata per Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

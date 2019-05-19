@@ -3,19 +3,19 @@ title: 'Workshop Chief Information Security Officer (OICOL), modulo 1: briefing 
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243997"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152158"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>OICOL workshop Module 1: briefing di Microsoft Cybersecurity
 

@@ -4,24 +4,24 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: Gli amministratori possono ottenere informazioni su come creare una raccolta di certificati virtuali che verrà utilizzata per convalidare I certificati S/MIME in Exchange Online.
-ms.openlocfilehash: 15998bce1971952286d8dd4401a92f1e9e47c25d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Gli amministratori possono ottenere informazioni su come creare una raccolta di certificati virtuali che verrà utilizzata per convalidare i certificati S/MIME in Exchange Online.
+ms.openlocfilehash: 5af332a6daf745ff6bc1334d9bb2b9d3dcb259be
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260724"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158318"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Configurare la raccolta di certificati virtuali in Exchange Online per convalidare S/MIME
 
-Come amministratore, sarà necessario configurare una raccolta di certificati virtuali in Exchange Online che verrà utilizzata per convalidare I certificati S/MIME. Questa raccolta di certificati virtuali è configurata come archivio certificati con estensione del nome di file SST. Il file SST contiene tutti i certificati radice e intermedi utilizzati durante la convalida del certificato S/MIME.
+Come amministratore, sarà necessario configurare una raccolta di certificati virtuali in Exchange Online che verrà utilizzata per convalidare i certificati S/MIME. Questa raccolta di certificati virtuali è configurata come archivio certificati con estensione del nome di file SST. Il file SST contiene tutti i certificati radice e intermedi utilizzati durante la convalida del certificato S/MIME.
 
 ## <a name="create-and-save-an-sst"></a>Creare e salvare un SST
 

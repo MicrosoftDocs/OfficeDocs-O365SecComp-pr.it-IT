@@ -3,19 +3,19 @@ title: 'Chief Information Security Officer (OICOL) workshop, modulo 4a: strategi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: e9d3d650517e590100f4e812f46e91ccb265dcaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c9d418254db4a11716b4d1e58ecd683b92fdfd18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243327"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155488"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Modulo di OICOL workshop 4a: strategia di protezione dalle minacce
 
@@ -60,7 +60,7 @@ Esplorare le principali informazioni relative alla protezione dalle minacce, all
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLL]
 
-## <a name="part-9-roadmap-for-infrastructure-as-a-service-and-on-premises-2438"></a>Parte 9: Roadmap for Infrastructure as a Service and on-preMises (24:38)
+## <a name="part-9-roadmap-for-infrastructure-as-a-service-and-on-premises-2438"></a>Parte 9: Roadmap for Infrastructure as a Service and on-premises (24:38)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLP]
 

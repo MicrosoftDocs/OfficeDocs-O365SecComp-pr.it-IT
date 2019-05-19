@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243193"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155118"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
+
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e threading della posta elettronica
 
@@ -31,7 +32,7 @@ In questa sezione, è possibile impostare parametri per il rilevamento duplicati
 
 - Soglia: se il livello di somiglianza di due documenti si trova al di sopra della soglia, verranno inseriti nello stesso set di duplicati vicino.
 
-- Nascondi i duplicati per impostazione predefinita: se questa impostazione è attivata, per impostazione predefinita verrà applicato un filtro per nascondere i documenti duplicati nel working set. Il filtro può essere rimosso manualmente nel working set, se necessario.
+- Nascondi i duplicati per impostazione predefinita: se questa impostazione è attivata, per impostazione predefinita verrà applicato un filtro per nascondere i documenti duplicati nel set di verifica. Se necessario, è possibile rimuovere manualmente il filtro nel set di verifica.
 
 - Numero minimo/massimo di parole: quasi duplicati e il threading della posta elettronica verrà eseguito solo sui documenti che hanno almeno il numero minimo di parole e il numero massimo di parole.
 Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
@@ -47,7 +48,7 @@ In questa sezione, è possibile impostare parametri per i temi.
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
 
-Quando questa impostazione è attivata, l'OCR verrà eseguito su immagini che vengono ingerite in gruppi di lavoro in modo che possano essere ricercate.
+Quando questa impostazione è attivata, l'OCR verrà eseguito su immagini che vengono ingerite nei set di revisione in modo che possano essere ricercabili.
 
 ## <a name="ignore-text"></a>Ignora testo
 

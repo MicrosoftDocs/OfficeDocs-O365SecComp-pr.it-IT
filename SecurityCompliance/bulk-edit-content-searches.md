@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilizzare l'editor ricerche in blocco nel centro sicurezza e conformità di Office 365 o Microsoft 365 per modificare rapidamente i percorsi di query e di contenuto per una o più ricerche di contenuto.
-ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243851"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152218"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifica in blocco delle ricerche di contenuto
 
@@ -94,6 +94,6 @@ Di seguito sono riportate alcune indicazioni per la modifica delle posizioni di 
     > [!TIP]
     > Per generare un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione, eseguire il comando di PowerShell nel passaggio 2 in [use content search per effettuare una ricerca nella cassetta postale e nel sito di OneDrive for business per un elenco di utenti](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). In alternativa, utilizzare lo script in [creare un elenco di tutte le posizioni di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) per generare un elenco di tutti i siti di OneDrive for business nell'organizzazione. Tenere presente che è necessario aggiungere l'URL per il dominio del sito Web di organization's (ad esempio, https://contoso-my.sharepoint.com) per i siti di OneDrive for business creati dallo script. Dopo aver ricevuto un elenco di indirizzi di posta elettronica o siti di OneDrive for business, è possibile copiarli e incollarli nella pagina **percorsi** nell'editor ricerche in blocco. 
   
-- Dopo aver fatto clic su **Salva** per salvare le modifiche apportaTe all'editor ricerche in blocco, l'indirizzo di posta elettronica per le cassette postali aggiunte a una ricerca verrà convalidato. Se l'indirizzo di posta elettronica non esiste, viene visualizzato un messaggio di errore che indica che la cassetta postale non può essere individuata. Si noti che gli URL dei siti non vengono convalidati. 
+- Dopo aver fatto clic su **Salva** per salvare le modifiche apportate all'editor ricerche in blocco, l'indirizzo di posta elettronica per le cassette postali aggiunte a una ricerca verrà convalidato. Se l'indirizzo di posta elettronica non esiste, viene visualizzato un messaggio di errore che indica che la cassetta postale non può essere individuata. Si noti che gli URL dei siti non vengono convalidati. 
   
 
