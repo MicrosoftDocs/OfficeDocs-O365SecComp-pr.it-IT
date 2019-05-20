@@ -1,3 +1,5 @@
+# [Sicurezza e conformità](index.md)
+
 # Attività iniziali
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
@@ -186,7 +188,8 @@
 ### [Usare il caricamento di rete per importare i file PST crittografati con RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Domande frequenti sull'importazione di file PST](faqimporting-pst-files-to-office-365.md)
 ### [Archiviare i dati di terze parti in Office 365](archiving-third-party-data.md)
-#### [Utilizzare i connettori di esempio per archiviare i dati di terze parti](archive-third-party-data-with-sample-connector.md)
+#### [Usare un connettore di esempio per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md)
+#### [Usare un connettore di esempio per archiviare i dati di Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
 ## Archiviare i dati
 ### [Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)
@@ -203,7 +206,8 @@
 ### [Criteri di conservazione basati su eventi](event-driven-retention.md)
 ### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
 ## [Eliminare i dati](disposition-reviews.md)
-## [Supervisionare le comunicazioni](supervision-policies.md)
+## Supervisionare le comunicazioni
+### [Criteri di supervisione](supervision-policies.md)
 ### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Gestire le cassette postali inattive](inactive-mailboxes-in-office-365.md)
 ### [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)
