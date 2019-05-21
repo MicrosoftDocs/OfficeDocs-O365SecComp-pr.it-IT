@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
+ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155978"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34166927"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -94,6 +94,8 @@ Quando si creano le etichette di riservatezza nel Centro sicurezza, queste vengo
 
 ![Possibilità di creare una sottoetichetta](media/Sensitivity_label_sublabel_options.png)
 
+Si noti che, oltre alla priorità dell'etichetta, è importante anche l'ordine dei criteri di etichetta: vedere [la sezione seguente](#sensitivity-label-priority-order-matters).
+
 ### <a name="sublabels-grouping-labels"></a>Sottoetichette (raggruppamento etichette)
 
 Con le sottoetichette è possibile raggruppare uno o più etichette sotto un'etichetta padre visualizzata dall'utente in un'app di Office. Ad esempio, sotto l'etichetta Riservato l'organizzazione può usare etichette diverse per tipi specifici di tale classificazione. In questo esempio l'etichetta padre Riservato è semplicemente un'etichetta di testo senza impostazioni di sicurezza e non può essere applicata al contenuto perché contiene sottoetichette. Gli utenti devono invece scegliere Riservato per visualizzare le sottoetichette e in seguito possono scegliere una sottoetichetta da applicare al contenuto.
@@ -136,6 +138,24 @@ Con un criterio di etichetta, è possibile:
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](media/Sensitivity_label_learn_more.png)
 
 Dopo aver creato un criterio di etichetta e aver assegnato le etichette di riservatezza a utenti e gruppi, le etichette saranno disponibili per quegli utenti nelle applicazioni di Office in un'ora o meno.
+
+### <a name="label-policy-priority-order-matters"></a>Priorità dei criteri di etichetta (l’ordine è importante)
+
+Per rendere disponibili le etichette di riservatezza agli utenti, è possibile pubblicarle in un criterio di etichetta di riservatezza, che compare in un elenco della scheda **Criteri di riservatezza** nella pagina **Criteri etichetta**. Come le etichette di riservatezza (vedere [la sezione precedente](#sensitivity-label-priority-order-matters)), l'ordine dei criteri di etichetta di riservatezza è importante perché riflette la loro priorità. Il criterio di etichetta con priorità più bassa viene visualizzato nella parte **superiore**, e i criteri di etichetta con la priorità più alta vengono visualizzati nella parte **inferiore**.
+
+Un criterio di etichetta è costituito da:
+
+- Un set di etichette.
+- Lo scopo dei criteri di etichetta, ossia gli utenti e i gruppi inclusi nel criterio.
+- Le impostazioni dei criteri di etichetta descritte sopra (etichetta predefinita, motivazione, etichette obbligatorie e collegamento alla guida).
+
+È possibile includere un utente in più criteri di etichetta, e l’utente visualizzerà tutte le etichette di riservatezza dei criteri. Tuttavia, gli utenti vedranno solo le impostazioni dei criteri del criterio di etichetta con la priorità più alta.
+
+Se un utente o un gruppo dell'organizzazione non vede un'opzione nel criterio di etichetta previsto, ad esempio un'etichetta predefinita o obbligatoria, controllare l'ordine dei criteri di etichetta di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Spostare su** o **Sposta giù**.
+
+![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](media/sensitivity-label-policy-priority.png)
+
+Tenere presente che, mentre la priorità è importante per i criteri di etichetta di riservatezza, **non** è invece importante per i criteri di etichetta di conservazione. Come descritto nei [Principi di conservazione, cosa ha la precedenza?](labels.md#the-principles-of-retention-or-what-takes-precedence), il contenuto può essere soggetto a più criteri di conservazione.
 
 ## <a name="how-to-get-started"></a>Come iniziare
 
