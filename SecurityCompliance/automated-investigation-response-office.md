@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249882"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250319"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
 
-Indagine automatizzata e risposta (AIR) (prossimamente a [Office 365 Threat Investigation and response capabilities](office-365-ti.md)) consente di eseguire indagini automatizzate e il risanamento di minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. 
+L'analisi e la risposta automatizzate (AIR) (attualmente nell'anteprima pubblica come una delle numerose [funzionalità di analisi e risposta alle minacce di Office 365](office-365-ti.md)) consentono di eseguire indagini e correzioni automatizzate su minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. 
 
 Per ulteriori informazioni su quando saranno disponibili le funzionalità AEREe, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -161,14 +161,14 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 - **Parzialmente**rimediato: l'inchiesta è terminata e sono state approvate alcune delle azioni consigliate
 - **Terminato dall'utente**: un amministratore ha terminato l'indagine
 - **Failed**: si è verificato un errore durante l'analisi che impediva di raggiungere una conclusione sulle minacce
-- **AccodaMento tramite limitazione**: l'analisi è in attesa di essere analizzata a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio)
-- **TerminaTa mediante limitazione**: l'analisi non è stata completata in tempi sufficienti a causa di limitazioni dell'elaborazione del volume e del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga.
+- **Accodamento tramite limitazione**: l'analisi è in attesa di essere analizzata a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio)
+- **Terminata mediante limitazione**: l'analisi non è stata completata in tempi sufficienti a causa di limitazioni dell'elaborazione del volume e del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga.
 
 ### <a name="investigation-graph"></a>Grafico di analisi
 
 Quando si apre una specifica indagine, viene visualizzata la pagina del grafico delle indagini. In questa pagina vengono illustrate tutte le diverse entità: messaggi di posta elettronica, utenti (e loro attività) e dispositivi che sono stati analizzati automaticamente come parte dell'avviso che è stato attivato.
 
-![Pagina del grafico dell'indagine AEREa](media/air-investigationgraphpage.png)
+![Pagina del grafico dell'indagine aerea](media/air-investigationgraphpage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dell'indagine corrente.
@@ -240,7 +240,7 @@ Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di comprom
 
 Nella scheda **computer** , è possibile visualizzare tutti i computer identificati come parte dell'indagine. 
 
-![Pagina macchina dell'analisi AEREa](media/air-investigationmachinepage.png)
+![Pagina macchina dell'analisi aerea](media/air-investigationmachinepage.png)
 
 Nell'ambito dell'inchiesta, AIR correla le minacce alla posta elettronica ai dispositivi. Ad esempio, un'analisi passa un hash di file dannosi su [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) per esaminare. Questo consente l'analisi automatizzata delle macchine rilevanti per gli utenti, per garantire che le minacce vengano affrontate sia nel cloud che negli endpoint. 
 
@@ -284,7 +284,7 @@ Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. 
 È possibile:
 - Ottenere una panoramica visiva delle azioni consigliate in PlayBook.
 - Selezionare una singola azione o più azioni.
-- ApProvare o rifiutare le azioni consigliate con i commenti.
+- Approvare o rifiutare le azioni consigliate con i commenti.
 - Esportare i risultati in un file CSV.
 - Filtrare la visualizzazione.
 
