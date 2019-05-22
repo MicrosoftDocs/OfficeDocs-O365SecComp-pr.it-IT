@@ -164,6 +164,7 @@
 ## [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
 
 # Gestione dei record
+## [Gestione record](records-management.md)
 ## Piano di archiviazione
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
 ### [Etichette di conservazione](labels.md)
