@@ -9,15 +9,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252312"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334544"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -79,6 +82,10 @@ Quando si fa clic su un'azione di miglioramento, viene visualizzato un volo. Per
 È possibile visualizzare un grafico del punteggio dell'organizzazione nel tempo nella scheda **cronologia** . Questa visualizzazione include la media globale, la media del settore e il numero di sedi simili, insieme a tutte le azioni eseguite nell'intervallo di tempo selezionato. È inoltre possibile personalizzare un intervallo di date e filtrare in base alla categoria.
 
 Il Punteggio viene calcolato una volta al giorno (circa 1:00 AM PST). Se si apportano modifiche a un'azione misurata, il punteggio verrà aggiornato automaticamente il giorno successivo. È inoltre importante tenere presente che alcuni altri portali mostrano parti del Microsoft Secure Score (come Windows Defender Security Center). Se si completa un'azione di miglioramento e il punteggio è aumentato nei portali, potrebbero essere necessarie fino a 24 ore affinché il punteggio aggiornato venga visualizzato in Microsoft 365 Security Center.  
+
+## <a name="how-controls-are-scored"></a>Modalità di valutazione dei controlli
+
+I controlli possono essere segnati in due modi. Alcuni sono segnati in modo binario: si ottiene il 100% del punteggio se si ha la caratteristica o l'impostazione configurata in base alla nostra raccomandazione. Gli altri punteggi vengono calcolati come percentuale della configurazione totale. Ad esempio, se la raccomandazione di miglioramento dichiara che otterrai 30 punti se Proteggi tutti gli utenti con AMF e hai solo 5 di 100 utenti totali protetti, ti verrebbe assegnato un punteggio parziale di circa 2 punti (5 protected/100 Total * 30 max pts = 2 PTS partial Punteggio) . 
 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
