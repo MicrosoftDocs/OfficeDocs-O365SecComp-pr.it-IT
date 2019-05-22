@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157988"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341624"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -55,26 +55,6 @@ Quando Outlook.com e Outlook sul Web non sono in grado di verificare l'identità
 
 Non tutti i messaggi che non sono in grado di eseguire l'autenticazione sono dannosi. Tuttavia, è necessario prestare particolare attenzione all'interazione con i messaggi che non eseguono l'autenticazione se non si riconosce il mittente. In alternativa, se si riconosce un mittente che in genere non ha un'?' nell'immagine del mittente, ma si inizia improvvisamente a vederlo, potrebbe essere un segno che il mittente viene falsificato.
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>L'indirizzo del mittente è diverso da quello visualizzato nell'indirizzo da
-
-Spesso, l'indirizzo di posta elettronica visualizzato in un messaggio è diverso da quello visualizzato nell'indirizzo mittente. A volte phisher tenta di ingannare l'utente a pensare che il mittente è una persona diversa da quella in cui sono realmente.
-
-Quando Outlook.com e Outlook sul web rilevano una differenza tra l'indirizzo effettivo del mittente e l'indirizzo dell'indirizzo da, visualizzano il mittente effettivo utilizzando il tag via, che verrà sottolineato.
-
-![testo alternativo del mittente non verificato](media/unverified-sender-feature1.png)
-
-In questo esempio, il dominio `suspicious.com` di invio viene autenticato, ma il mittente `unknown@contoso.com` è stato inserito nell'indirizzo from.
-
-Non tutti i messaggi con un tag via sono sospetti. Tuttavia, se non si riconosce un messaggio con un tag via, è consigliabile essere cauti nell'interagire con esso.
-
-In Outlook.com e nel nuovo Outlook sul Web, è possibile posizionare il puntatore del mouse sul nome o sull'indirizzo del mittente nell'elenco dei messaggi per visualizzare l'indirizzo di posta elettronica, senza che sia necessario aprire il messaggio.
-
-![Introduzione a OneDrive](media/get-started-with-onedrive-message.png)
-
-Come si può sapere se si sta utilizzando il nuovo Outlook sul Web? Vedere gli esempi seguenti:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quali criteri utilizza Outlook.com e Outlook sul Web per aggiungere le proprietà'?' è via '?
@@ -83,11 +63,7 @@ Per il "?" nell'immagine del mittente: Outlook.com richiede che il messaggio pas
 
 Per il tag Via: se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nella posta SMTP da, Outlook.com Visualizza il dominio in uno di questi due campi (preferendo la firma di DKIM).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>È possibile ignorare queste proprietà con l'indirizzo IP consentito, la regola di trasporto di Exchange consente o I mittenti attendibili?
-
-Non è possibile eseguire l'override di queste proprietà.
-
-### <a name="how-do-i-remove-these-properties"></a>Come si rimuovono queste proprietà?
+### <a name="how-do-i-remove-the-"></a>Come si rimuove il '?'
 
 Per il "?" nell'immagine del mittente: come mittente, è necessario autenticare il messaggio con SPF o DKIM.
 
