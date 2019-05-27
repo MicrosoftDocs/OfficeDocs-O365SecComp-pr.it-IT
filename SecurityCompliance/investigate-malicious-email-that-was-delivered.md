@@ -15,40 +15,37 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7e2cef742339e54c094cfb0c3b32fbf596896a3d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077272"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408301"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Advanced Threat Protection Plan 2)
 
-[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) consente di analizzare le attività che consentono agli utenti di eseguire operazioni per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile trovare e analizzare i messaggi di posta elettronica sospetti che sono stati recapitati agli utenti. È possibile eseguire questa operazione utilizzando [Esplora minacce](get-started-with-ti.md#threat-explorer).
-  
-> [!IMPORTANT]
-> Office 365 Threat Intelligence è ora Office 365 Advanced Threat Protection piano 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[Office 365 Advanced Threat Protection](office-365-atp.md) consente di analizzare le attività che consentono agli utenti di eseguire operazioni per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile trovare e analizzare i messaggi di posta elettronica sospetti che sono stati recapitati agli utenti. A tale scopo, è possibile utilizzare [Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md).
   
 ## <a name="before-you-begin"></a>Prima di iniziare...
 
 Verificare che vengano soddisfatti i seguenti requisiti:
   
-- L'organizzazione dispone di [office 365 Advanced Threat Protection Plan 2](office-365-ti.md) e [assegnazione di licenze agli utenti in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (piano 1 o piano 2) e le [licenze vengono assegnate agli utenti](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - La [registrazione di controllo di Office 365](turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
     
-- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [Office 365 Advanced Threat Protection](office-365-atp.md).
+- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
     
 - Si è un amministratore globale di Office 365 oppure è stato assegnato l'amministratore della sicurezza o il ruolo di ricerca ed eliminazione nel centro sicurezza &amp; e conformità. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="dealing-with-suspicious-emails"></a>Gestione di messaggi di posta elettronica sospetti
 
-Gli utenti malintenzionati possono inviare messaggi ai propri clienti per cercare di phishing le proprie credenziali e accedere ai segreti aziendali. Per evitare questo, è consigliabile utilizzare i servizi di protezione dalle minacce offerti da Office 365, tra cui Exchange Online Protection e Advanced Threat Protection. Tuttavia, è possibile che un utente malintenzionato invii messaggi di posta elettronica agli utenti che contengono un URL e solo in seguito fare in modo che l'URL punti a contenuto dannoso (malware e così via). In alternativa, si potrebbe rendersi conto che un utente dell'organizzazione è stato compromesso e che l'utente è stato compromesso, un aggressore ha utilizzato quell'account per inviare messaggi di posta elettronica ad altri utenti della propria azienda. Durante la pulizia di entrambi gli scenari, potrebbe essere necessario rimuovere i messaggi di posta elettronica dalle cassette postali degli utenti. In situazioni come queste, è possibile sfruttare Threat Explorer per individuare e rimuovere i messaggi di posta elettronica.
+Gli utenti malintenzionati possono inviare messaggi ai propri clienti per cercare di phishing le proprie credenziali e accedere ai segreti aziendali. Per evitare questo, è consigliabile utilizzare i servizi di protezione dalle minacce offerti da Office 365, tra cui [Exchange Online Protection](eop/exchange-online-protection-overview.md) e [Advanced Threat Protection](office-365-atp.md). Tuttavia, è possibile che un utente malintenzionato invii messaggi di posta elettronica agli utenti che contengono un URL e solo in seguito fare in modo che l'URL punti a contenuto dannoso (malware e così via). In alternativa, si potrebbe rendersi conto che un utente dell'organizzazione è stato compromesso e che l'utente è stato compromesso, un aggressore ha utilizzato quell'account per inviare messaggi di posta elettronica ad altri utenti della propria azienda. Durante la pulizia di entrambi gli scenari, potrebbe essere necessario rimuovere i messaggi di posta elettronica dalle cassette postali degli utenti. In situazioni come queste, è possibile sfruttare le [minacce Explorer (o rilevamenti in tempo reale)](threat-explorer.md) per individuare e rimuovere tali messaggi di posta elettronica.
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
 
 > [!TIP]
-> [Esplora minacce](get-started-with-ti.md#threat-explorer) (noto anche come esploratore), è un potente report che può servire a molteplici scopi, ad esempio la ricerca e l'eliminazione dei messaggi, l'identificazione dell'indirizzo IP di un mittente di posta elettronica dannoso o l'avvio di un incidente per ulteriori indagini. La procedura seguente si concentra sull'utilizzo di Esplora risorse per individuare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali dei destinatari. 
+> L'esploratore di minacce (noto anche come esploratore) è un rapporto potente che può servire a più scopi, ad esempio individuare ed eliminare i messaggi, identificare l'indirizzo IP di un mittente di posta elettronica dannoso o avviare un incidente per ulteriori indagini. La procedura seguente si concentra sull'utilizzo di Esplora risorse per individuare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali dei destinatari. 
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza &amp; e conformità. 
     

@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come le funzionalità di analisi e risposta alle minacce di Office 365 consentono all'organizzazione di rilevare intrusioni e minacce e di attenuare e recuperare rapidamente le minacce.
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077262"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408281"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenere gli utenti di Office 365 sicuri con Office 365 Threat Investigation and response capabilities
 
@@ -37,7 +37,7 @@ Di recente sono state aggiunte nuove funzionalità che consentono di migliorare 
   
 ## <a name="detect-intrusions-and-threats"></a>Rilevare intrusioni e minacce
 
-[Gestione risorse](use-explorer-in-security-and-compliance.md) (noto anche come Esplora minacce) consente agli amministratori della sicurezza e agli analisti di identificare e comprendere le minacce attive nell'organizzazione perché anche le impostazioni di sicurezza più complesse possono essere eluse da configurazioni utente apparentemente innocue come safe whitelist del mittente. Explorer aiuta gli amministratori globali o di sicurezza di Office 365 a determinare rapidamente se gli utenti sono stati compromessi da minacce quali malware o phishing. In questo modo vengono definite le priorità che gli utenti sono più a rischio per una minaccia e la risposta necessaria. 
+[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) (noto anche come Esplora minacce) consente agli amministratori della sicurezza e agli analisti di identificare e comprendere le minacce attive nell'organizzazione perché anche le impostazioni di sicurezza più complesse possono essere eluse da configurazioni utente apparentemente innocue come safe whitelist del mittente. Explorer aiuta gli amministratori globali o di sicurezza di Office 365 a determinare rapidamente se gli utenti sono stati compromessi da minacce quali malware o phishing. In questo modo vengono definite le priorità che gli utenti sono più a rischio per una minaccia e la risposta necessaria. 
   
 Explorer consente inoltre agli amministratori di esplorare le relazioni tra utenti e posta elettronica. Sai di una mail particolare che è stata pessima? Cercarlo per vedere cosa gli utenti hanno ricevuto la posta, quindi seguire la serie di eventi e vedere cosa hanno fatto gli utenti a sua volta.
 

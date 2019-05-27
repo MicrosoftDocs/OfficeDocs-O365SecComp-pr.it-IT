@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Office 365 Threat Investigation and Response e su come iniziare.
-ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254184"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408341"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Introduzione a Threat Investigation and Response (Office 365 Advanced Threat Protection Plan 2)
 
@@ -35,9 +35,9 @@ L'analisi delle minacce e le funzionalità di risposta consentono di approfondir
 > [!IMPORTANT]
 > Office 365 Threat Intelligence è ora Office 365 Advanced Threat Protection piano 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Familiarizzare con il dashboard di minacce, gli esploratori e gli eventi non conSentiti
+## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Familiarizzare con il dashboard di minacce, gli esploratori e gli eventi non consentiti
 
-Queste analisi delle minacce e la superficie delle funzionalità di &amp; risposta nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), [Esplora minacce](#threat-explorer), [incidenti](get-started-with-ti.md#incidents), [attacco Simulatore](attack-simulator.md)e indagini automatizzaTe _AMP_ Response.
+Queste analisi delle minacce e la superficie delle funzionalità di &amp; risposta nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), [Esplora minacce](#threat-explorer), [incidenti](get-started-with-ti.md#incidents), [attacco Simulatore](attack-simulator.md)e indagini automatizzate _AMP_ Response.
   
 ### <a name="threat-dashboard"></a>Dashboard di minacce
 
@@ -49,7 +49,7 @@ Per visualizzare e utilizzare questo dashboard, nel centro sicurezza &amp; e con
   
 ### <a name="threat-explorer"></a>Esplora minacce
 
-Utilizzare l'esploratore di minacce (denominato anche Esplora risorse) per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati dalle famiglie di minacce, dall'infrastruttura di attacco e altro ancora. Threat Explorer è il punto di partenza per il flusso di lavoro dell'analisi di qualsiasi analista di sicurezza.
+Utilizzare l'esploratore di minacce (e i rilevamenti in [tempo reale)](threat-explorer.md) per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati dalle famiglie di minacce, dall'infrastruttura di attacco e altro ancora. L'esploratore di minacce (noto anche come esploratore) è il punto di partenza per il flusso di lavoro dell'analisi di qualsiasi analista di sicurezza.
   
 ![Esplora minacce](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -84,7 +84,7 @@ Le funzionalità di Invesigation e risposta alle minacce di Office 365 sono incl
     - Se si vede **office 365 Enterprise E5**, la propria organizzazione dispone di Office 365 Advanced Threat Protection Plan 2 (che include le funzionalità di analisi e di risposta alle minacce). 
     - Se viene visualizzato un abbonamento diverso, ad esempio **office 365 Enterprise E3** o **Office 365 Enterprise E1**, è consigliabile aggiungere Office 365 Advanced Threat Protection Plan 2. A tale scopo, scegliere **+ Aggiungi sottoscrizione**.
     
-3. nell'interfaccia di amministrazione di Microsoft 365 scegliere **utenti** \> **attivi**.
+3. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **utenti** \> **attivi**.
     
 5. Assegnare le licenze di Office 365 Advanced Threat Protection Plan 2 a tutti gli utenti attivi. Solo gli utenti che dispongono di una licenza per questo verranno visualizzati nei report, ad esempio in Esplora risorse.
     
@@ -93,12 +93,12 @@ Le funzionalità di Invesigation e risposta alle minacce di Office 365 sono incl
   |**Per eseguire questa attività...** <br/> |**È necessario disporre di uno di questi ruoli** <br/> |  
   |:-----|:-----|
   |Utilizzare il dashboard di minacce (o il nuovo [dashboard di sicurezza](security-dashboard.md))<br/> Visualizzare le informazioni sulle minacce recenti o correnti  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Lettore di sicurezza (assegnato al centro &amp; sicurezza e conformità)  <br/> |
-  |Utilizzo di Esplora minacce (denominato anche Esplora risorse)  <br/> Analizzare le minacce  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Lettore di sicurezza (assegnato al centro &amp; sicurezza e conformità)  <br/> |
+  |Utilizzo di [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md) per l'analisi delle minacce  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Lettore di sicurezza (assegnato al centro &amp; sicurezza e conformità)  <br/> |
   |Visualizzare gli incidenti (noti anche come indagini) <br/> Aggiungere messaggi di posta elettronica a un evento imprevisto  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Lettore di sicurezza (assegnato al centro &amp; sicurezza e conformità)  <br/> |
   |Attivare le azioni di posta elettronica in un evento imprevisto  <br/> Individuare ed eliminare i messaggi di posta elettronica sospetti  <br/> |Amministratore globale e amministratore della sicurezza di Office 365  <br/> Uno dei ruoli precedenti e la ricerca e la cancellazione (assegnati al centro sicurezza &amp; e conformità)  <br/> |
   |Integrazione di Office 365 Advanced Threat Protection Plan 2 con Windows Defender Advanced Threat Protection  <br/> Integrazione di Office 365 Advanced Threat Protection Plan 2 con un server SIEM  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Ruolo appropriato assegnato in altre applicazioni, ad esempio Windows Defender Advanced Threat Protection Portal o un server SIEM  <br/> |
    
-Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere perMissions [in &amp; The Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere Permissions [in &amp; The Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="next-steps"></a>Passaggi successivi
 

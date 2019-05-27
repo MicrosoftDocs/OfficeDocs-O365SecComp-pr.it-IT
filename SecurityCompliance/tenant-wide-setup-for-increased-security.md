@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158258"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408251"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -53,9 +53,9 @@ Visitare questi rapporti e dashboard per ulteriori informazioni sull'integrità 
   
 |Dashboard * * * *|****Descrizione****|
 |:-----|:-----|
-|Dashboard di gestione delle minacce  <br/> |Nella sezione Gestione minacce del Centro sicurezza utilizzare questo dashboard per visualizzare le minacce che sono già state gestite e come strumento pratico per la creazione di report ai decisori aziendali su quali funzionalità di ricerca e risposta alle minacce sono già state eseguite per proteggere la propria azienda.  <br/> |
-|Esplora minacce  <br/> |Questo è anche nella sezione Gestione minacce del Centro sicurezza. Se si sta indagando o si verifica un attacco contro il tenant di Office 365, utilizzare l'esploratore di minacce per analizzare le minacce. Esplora minacce consente di visualizzare il volume degli attacchi nel tempo e di analizzare tali dati in base alle famiglie di minacce, all'infrastruttura di attacco e altro ancora. È inoltre possibile contrassegnare eventuali messaggi di posta elettronica sospetti per l'elenco eventi non consentiti.  <br/> |
-|Report: Dashboard  <br/> |Nella sezione report del Centro sicurezza, visualizzare i rapporti di controllo per le organizzazioni di SharePoint Online e di Exchange Online. È inoltre possibile accedere ai report di accesso dell'utente di Azure Active Directory (Azure AD), ai report sulle attività degli utenti e al log di controllo di Azure AD dalla pagina Visualizza report.  <br/> |
+|[Dashboard di gestione delle minacce](security-dashboard.md)  <br/> |Nella sezione **gestione minacce** del Centro sicurezza utilizzare questo dashboard per visualizzare le minacce che sono già state gestite e come strumento pratico per la creazione di report ai decisori aziendali in merito alle funzionalità di ricerca e di risposta alle minacce già esistenti. completata per garantire la propria azienda.  <br/> |
+|[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)  <br/> |Questo è anche nella sezione **gestione minacce** del Centro sicurezza. Se si sta indagando o si verifica un attacco contro il tenant di Office 365, utilizzare Esplora risorse (o rilevamenti in tempo reale) per analizzare le minacce. Explorer (e il rapporto rilevamenti in tempo reale) mostrano il volume degli attacchi nel tempo ed è possibile analizzare questi dati in base alle famiglie di minacce, all'infrastruttura di attacco e altro ancora. È inoltre possibile contrassegnare eventuali messaggi di posta elettronica sospetti per l'elenco eventi non consentiti.  <br/> |
+|Report: Dashboard  <br/> |Nella sezione **report** del Centro sicurezza, visualizzare i rapporti di controllo per le organizzazioni di SharePoint Online e di Exchange Online. È inoltre possibile accedere ai report di accesso dell'utente di Azure Active Directory (Azure AD), ai report sulle attività degli utenti e al log di controllo di Azure AD dalla pagina **Visualizza report** .  <br/> |
    
 ![Dashboard Centro protezione](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

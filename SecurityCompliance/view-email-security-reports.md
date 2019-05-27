@@ -3,8 +3,8 @@ title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel c
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione con Office 365 Enterprise. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970257"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408411"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
@@ -65,7 +65,7 @@ Utilizzare questo rapporto consente al team di conformità e sicurezza dell'orga
 
 ## <a name="threat-protection-status-report"></a>Rapporto sullo stato della protezione dalle minacce
 
-Il rapporto **sullo stato della protezione dalle minacce** è uno smart report che indica che la posta elettronica dannosa è stata rilevata e bloccata da Exchange Online Protection. Questo report Visualizza informazioni su messaggi di posta elettronica identificati come malware o su un tentativo di phishing. 
+Il rapporto **sullo stato della protezione dalle minacce** è uno smart report che indica che la posta elettronica dannosa è stata rilevata e bloccata da Exchange Online Protection. Questo rapporto è utile per la visualizzazione di messaggi di posta elettronica identificati come malware o tentativi di phishing nel tempo (fino a 90 giorni) e consente agli amministratori della sicurezza di identificare le tendenze o determinare se i criteri devono essere adattati.
 
 > [!NOTE]
 > Un rapporto sullo stato della protezione dalle minacce è disponibile per i clienti che dispongono di [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto sullo stato di protezione di minacce per i clienti ATP probabilmente conterranno dati diversi da quelli che potrebbero essere visualizzati dai clienti di EOP. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](atp-for-spo-odb-and-teams.md), una funzionalità specifica del trifosfato di adenosina. (Ulteriori[informazioni sui rapporti ATP](view-reports-for-atp.md)).
@@ -74,7 +74,9 @@ Per visualizzare questo report, nel [Centro sicurezza &amp; e conformità](https
   
 ![Rapporto sullo stato della protezione dalle minacce](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Quando si apre per la prima volta il rapporto sullo stato di protezione dalle minacce, il report Visualizza i dati per i sette giorni scorsi per impostazione predefinita. Tuttavia, è possibile fare clic su **filtri** e modificare l'intervallo di date fino a 90 giorni di dettaglio. Questo report è utile per visualizzare l'efficacia e l'impatto delle funzionalità di [Exchange Online Protection](eop/eop-features.md)dell'organizzazione e per i trend a più lungo termine. 
+Quando si apre per la prima volta il rapporto sullo stato di protezione dalle minacce, il report Visualizza i dati per i sette giorni scorsi per impostazione predefinita. Tuttavia, è possibile fare clic su **filtri** e modificare l'intervallo di date fino a 90 giorni di dettaglio. Se si utilizza un abbonamento di valutazione, potrebbe essere limitato a 30 giorni di dati.
+
+Questo report è utile per visualizzare l'efficacia e l'impatto delle funzionalità di [Exchange Online Protection](eop/eop-features.md)dell'organizzazione e per i trend a più lungo termine. 
   
 ![Filtri del rapporto sullo stato di protezione dalle minacce](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Per un esempio di prevenzione della perdita di dati, è possibile passare da una &amp; panoramica a una relazione dettagliata nel centro sicurezza e conformità.
-ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255394"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408291"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procedura: dalle informazioni dettagliate a un report dettagliato
 
@@ -38,7 +38,7 @@ Let ' s walk through the flow from the Dashboard to a Insight to a report dettag
   
 3. Se si seleziona un elemento nell'elenco, verrà aperto un riquadro in cui è possibile visualizzare ulteriori dettagli su quell'elemento. Fare clic su un elemento.<br/>![Dettagli per una panoramica selezionata](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Vengono visualizzate le azioni consigliate da prendere in considerazione, ad esempio la revisione dei criteri. [Per ulteriori informazioni, vedere Criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md).
     
-4. È inoltre presente un collegamento per visualizzare ulteriori dettagli. (Fare clic su **Vedi attività correlate in Esplora**).<br/>In questo modo viene utilizzato un tipo di rapporto denominato [Explorer](use-explorer-in-security-and-compliance.md) (denominato anche Esplora minacce), in cui è possibile applicare i filtri e forarli in dettagli specifici.<br/>![Visualizzazione Esplora risorse con maggiori dettagli su un'intuizione selezionata](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. È inoltre presente un collegamento per visualizzare ulteriori dettagli. (Fare clic su **Vedi attività correlate in Esplora**).<br/>In questo modo viene utilizzato un tipo di rapporto denominato [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md), in cui è possibile applicare i filtri e forarli in dettagli specifici.<br/>![Visualizzazione Esplora risorse con maggiori dettagli su un'intuizione selezionata](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 In questo modo, è possibile spostarsi facilmente da una panoramica dei dettagli sottostanti e prendere decisioni più informate sulla prevenzione della perdita di dati per un'organizzazione.
   

@@ -1,46 +1,44 @@
 ---
-title: Visualizzazioni di Esplora minacce
+title: Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora risorse (denominato anche Threat Explorer) come parte di Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
+ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260572"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408321"
 ---
-# <a name="threat-explorer-views"></a>Visualizzazioni di Esplora minacce
-
-[Threat Explorer](use-explorer-in-security-and-compliance.md) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle &amp; minacce nel centro sicurezza e conformità. In Esplora risorse vengono visualizzate informazioni su malware e phishing sospetti nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione. 
-
-Quando si apre Explorer per la prima volta, la visualizzazione predefinita Visualizza i rilevamenti di malware per i messaggi di posta elettronica negli ultimi 7 giorni. 
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
 ![Esplora minacce](media/ThreatExplorerFirstOpened.png)
 
-Esplora risorse può anche mostrare le funzionalità di protezione della sicurezza in Office 365, inclusi i [collegamenti sicuri](atp-safe-links.md) e gli [allegati sicuri](atp-safe-attachments.md) e può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni. 
+[Esplora minacce](use-explorer-in-security-and-compliance.md) (e il rapporto rilevamento in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle minacce &amp; nel centro sicurezza e conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione. 
 
-> [!NOTE]
-> Se si dispone di una sottoscrizione di valutazione per Office 365 Advanced Threat Protection Plan 2 o Office 365 E5, verranno visualizzati solo i rilevamenti e i dati della posta elettronica per gli ultimi 7 giorni.
-  
+- Se si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) piano 2, è necessario disporre di Esplora risorse.
+- Se si dispone di Office 365 ATP piano 1, è possibile rilevare i rilevamenti in tempo reale.
+
+Quando si apre Explorer (o il rapporto rilevamenti in tempo reale), la visualizzazione predefinita Visualizza i rilevamenti di malware per la posta elettronica negli ultimi 7 giorni. Questo rapporto può anche mostrare rilevamenti di ATP, ad esempio URL dannosi rilevati da [collegamenti sicuri](atp-safe-links.md)e file dannosi rilevati da [allegati sicuri](atp-safe-attachments.md). Questo report può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni, a meno che non si utilizzi una sottoscrizione di valutazione. Gli abbonamenti di valutazione includeranno i dati solo per i sette giorni scorsi.
+
 Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. Le descrizioni comandi consentono di determinare la visualizzazione da utilizzare.
   
 ![Menu Visualizza Esplora minacce](media/ThreatExplorerViewMenu.png)
 
-Dopo aver selezionato una visualizzazione, è possibile applicare filtri e configurare le query per eseguire un'ulteriore analisi. Nelle sezioni seguenti viene fornita una breve panoramica delle diverse visualizzazioni disponibili in Esplora risorse.  
+Dopo aver selezionato una visualizzazione, è possibile applicare filtri e configurare le query per eseguire un'ulteriore analisi. Nelle sezioni seguenti viene fornita una breve panoramica delle diverse visualizzazioni disponibili in Esplora risorse (o rilevamenti in tempo reale).  
 
 ## <a name="email--malware"></a>Malware > di posta elettronica
 
-Per visualizzare questo report, in Esplora, scegliere **Visualizza** > **messaggio di posta elettronica** > **malware**. Questa visualizzazione Mostra informazioni sui messaggi di posta elettronica che sono stati identificati come contenenti malware.  
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **messaggio di posta elettronica** > **malware**. Questa visualizzazione Mostra informazioni sui messaggi di posta elettronica che sono stati identificati come contenenti malware.  
 
 ![Visualizzare i dati relativi alla posta elettronica identificata come malware](media/ExplorerEmailMalwareMenu.png) 
 
@@ -56,7 +54,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi specifici. 
 
 ## <a name="email--phish"></a>Phishing > di posta elettronica
 
-Per visualizzare questo report, in Esplora risorse scegliere **Visualizza** > **phishing**di**posta elettronica** > . Questa visualizzazione Mostra i messaggi di posta elettronica identificati come tentativi di phishing.  
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** > **email** > **phishing**. Questa visualizzazione Mostra i messaggi di posta elettronica identificati come tentativi di phishing.  
 
 ![Visualizzare i dati relativi alla posta elettronica identificata come tentativi di phishing](media/ThreatExplorerEmailPhish.png) 
 
@@ -76,7 +74,7 @@ Quando si seleziona un elemento nell'elenco, ad esempio un URL rilevato, viene a
 
 ## <a name="email--user-reported"></a>Messaggi di posta elettronica > riportati dall'utente
 
-Per visualizzare questo report, in Esplora, scegliere **Visualizza** > la**posta elettronica** > **segnalata dall'utente**. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing. 
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **la posta elettronica** > **segnalata dall'utente**. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing. 
 
 ![Messaggi di posta elettronica segnalati dagli utenti](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -107,7 +105,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta el
 
 ## <a name="content--malware"></a>Malware > content
 
-Per visualizzare il report, in Esplora scegliere **Visualizza** > **** > **malware**contenuto. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** > **Content** > **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
 
 Consente di visualizzare le informazioni per la famiglia di malware, la tecnologia di rilevamento (come è stato rilevato il malware) e il carico di lavoro (OneDrive, SharePoint o Teams). 
 
@@ -117,11 +115,11 @@ Al di sotto del grafico, visualizzare ulteriori dettagli sui file specifici, ad 
   
 ## <a name="click-to-filter-capabilities"></a>Funzionalità di clic su filtro
 
-Con Esplora risorse, è possibile applicare un filtro in un clic. Fare clic su un elemento nella legenda e quell'elemento diventa un filtro per il report. Si supponga, ad esempio, di esaminare la visualizzazione malware in Esplora risorse:
+Con Esplora risorse (e rilevamenti in tempo reale), è possibile applicare un filtro in un clic. Fare clic su un elemento nella legenda e quell'elemento diventa un filtro per il report. Si supponga, ad esempio, di esaminare la visualizzazione malware in Esplora risorse:
   
 ![Passare a gestione \> minacce](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Facendo clic su **detonaZione ATP** in questo grafico viene visualizzato un risultato simile al seguente: 
+Facendo clic su **detonazione ATP** in questo grafico viene visualizzato un risultato simile al seguente: 
   
 ![Filtro Esplora risorse per visualizzare solo i risultati di detonazione ATP](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
@@ -137,7 +135,7 @@ La possibilità di filtrare i dati in un clic e di passare a dettagli specifici 
 
 ## <a name="queries-and-filters"></a>Query e filtri
 
-Explorer dispone di numerosi filtri potenti e funzionalità di query che consentono di eseguire il drill-down dei dettagli, ad esempio gli utenti più mirati, le famiglie di malware principali, la tecnologia di rilevamento e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
+Explorer (e il rapporto rilevamenti in tempo reale) ha diversi filtri potenti e funzionalità di query che consentono di eseguire il drill-down nei dettagli, ad esempio gli utenti più mirati, le famiglie di malware principali, la tecnologia di rilevamento e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
 
 > [!IMPORTANT]
-> Non utilizzare caratteri jolly, ad esempio un asterisco (*) o un punto interrogativo (?), nella barra delle query di Esplora risorse. Quando si esegue una ricerca nel campo Subject per i messaggi di posta elettronica, Explorer eseguirà una corrispondenza parziale e restituisce risultati simili a quelli di una ricerca con caratteri jolly.
+> Non utilizzare caratteri jolly, ad esempio un asterisco (*) o un punto interrogativo (?), nella barra delle query per Esplora risorse (o rilevamenti in tempo reale). Quando si esegue una ricerca nel campo Subject per i messaggi di posta elettronica, gli esploratori (o i rilevamenti in tempo reale) eseguono una corrispondenza parziale e restituiscono risultati simili a una ricerca con caratteri jolly.

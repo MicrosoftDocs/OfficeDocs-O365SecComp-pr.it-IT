@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: La protezione anti-phishing, con una protezione globale come parte di Office 365 Advanced Threat Protection e la protezione di base in Office 365 Exchange Online Protection, può contribuire a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing.
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077212"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408371"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP 
 
@@ -142,8 +142,8 @@ L'amministratore della sicurezza di Contoso può utilizzare valori analoghi al s
 
 Una volta attivati i criteri di anti-phishing, è possibile vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report. Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md) o [visualizzare i report sulla sicurezza della posta elettronica](view-email-security-reports.md)
+- [Visualizzare i report per Office 365 ATP](view-reports-for-atp.md) o [visualizzare i report sulla sicurezza della posta elettronica](view-email-security-reports.md)
 
-- [Utilizzo di Esplora risorse (noto anche come Esplora minacce)](use-explorer-in-security-and-compliance.md)
+- [Utilizzare Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)
 
 Rimanere in cima a nuove funzionalità che vengono a ATP. visitare la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) e conoscere le [nuove funzionalità che vengono aggiunte a ATP](office-365-atp.md#new-features-in-office-365-atp).

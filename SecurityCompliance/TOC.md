@@ -100,7 +100,7 @@
 #### [Proteggere gli utenti con l'analisi e la risposta alle minacce](keep-users-safe-with-office-365-ti.md)
 #### [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
 ### [Analisi e risposta alle minacce automatizzate](automated-investigation-response-office.md)
-### [Esplora minacce](use-explorer-in-security-and-compliance.md)
+### [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
 #### [Visualizzazioni di Esplora minacce](threat-explorer-views.md)
 ### [Indicatori delle minacce](threat-trackers.md)
 ### [Simulatore di attacchi in Office 365](attack-simulator.md)
