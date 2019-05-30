@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490492"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547991"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
@@ -179,8 +179,13 @@ Ecco la procedura per eseguire una ricerca nel log di controllo in Office 365.
     
     Lasciare vuota questa casella per restituire le voci per tutti i file e le cartelle nell'organizzazione.
     
-    > [!TIP]
-    > Se si cercano tutte le attività relative a un **sito**, aggiungere il simbolo di carattere jolly\*() dopo l'URL per restituire tutte le voci per il sito. ad esempio, **"https://contoso-my.sharepoint.com/personal/*"**.
+   **CONSIGLI**
+
+   - Se si cercano tutte le attività relative a un **sito**, aggiungere il simbolo di carattere jolly\*() dopo l'URL per restituire tutte le voci per il sito. ad esempio, **"https://contoso-my.sharepoint.com/personal/*"**.
+
+   - Se si cercano tutte le attività relative a un **file**, aggiungere il simbolo di carattere jolly\*() prima che il nome del file restituisca tutte le voci per il file. ad esempio, **"* Customer_Profitability_Sample. csv"**.
+    
+
     
 5. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
     
@@ -295,15 +300,15 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
   
 ||||
 |:-----|:-----|:-----|
-|[Attività di file e pagine](#file-and-page-activities)<br/> |[Attività cartella](#folder-activities)<br/> |[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |
-|[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività amministrative del sito](#site-administration-activities)<br/> |[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |
-|[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> 
-|[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |[Attività di amministrazione della directory](#directory-administration-activities) <br/>| 
-|[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|
-|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |[Attività di flusso Microsoft](#microsoft-flow-activities) <br/>|
-|[Attività di Microsoft PowerApps](#microsoft-powerapps)<br/>|[Attività di Microsoft Stream](#microsoft-stream-activities) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
+|[Attività di file e pagine](#file-and-page-activities)<br/> |[Attività cartella](#folder-activities)<br/> |[Attività dell'elenco di SharePoint](#sharepoint-list-activities)<br/>|
+|[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività amministrative del sito](#site-administration-activities)<br/> |
+|[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |
+|[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |
+|[Attività di amministrazione della directory](#directory-administration-activities) <br/>|[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività avanzate di eDiscovery](#advanced-ediscovery-activities)<br/> |
+|[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |
+|[Attività di Yammer](#yammer-activities) <br/> |[Attività di flusso Microsoft](#microsoft-flow-activities) <br/>|[Attività di Microsoft PowerApps](#microsoft-powerapps)<br/>|
+|[Attività di Microsoft Stream](#microsoft-stream-activities) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
 ||||
-   
   
 ### <a name="file-and-page-activities"></a>Attività di file e pagine
   
@@ -319,6 +324,7 @@ Nella tabella seguente vengono descritte le attività relative a file e pagine i
 |File eliminato  <br/> |FileDeleted  <br/> |L'utente elimina un documento da un sito.  <br/> |
 |File eliminato dal Cestino  <br/> |FileDeletedFirstStageRecycleBin  <br/> |L'utente elimina un file dal Cestino di un sito.  <br/> |
 |File eliminato dal Cestino secondario  <br/> |FileDeletedSecondStageRecycleBin  <br/> |L'utente elimina un file dal Cestino secondario di un sito.  <br/> |
+|Mancata corrispondenza di sensibilità del documento rilevata <br/>|DocumentSensitivityMismatchDetected<br/>|L'utente carica un documento classificato con un'etichetta di riservatezza che ha una priorità più alta rispetto all'etichetta di riservatezza applicata al sito a cui viene caricato il documento. Nota Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito ha una priorità più alta rispetto all'etichetta di riservatezza applicata a un documento caricato nel sito. Per ulteriori informazioni sulla priorità delle etichette di riservatezza, vedere la sezione "priorità dell'etichetta" in [Panoramica delle etichette di riservatezza](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Malware rilevato nel file  <br/> |FileMalwareDetected  <br/> |Il motore di protezione di SharePoint rileva malware in un file.  <br/> |
 |Estrazione file scartata  <br/> |FileCheckOutDiscarded  <br/> |L'utente elimina (o annulla) un file estratto. Ciò significa che eventuali modifiche apportate al file al momento dell'estrazione vengono eliminate e non vengono salvate nella versione del documento nella raccolta documenti.  <br/> |
 |File scaricato  <br/> |Filedownloaded  <br/> |L'utente scarica un documento da un sito.  <br/> |
@@ -333,6 +339,8 @@ Nella tabella seguente vengono descritte le attività relative a file e pagine i
 |File caricato  <br/> |Fileuploaded  <br/> |L'utente carica un documento in una cartella di un sito.  <br/> |
 |Pagina visualizzata  <br/> |Visualizzazione a pagina  <br/> |L'utente visualizza una pagina in un sito. Questo non include l'utilizzo di un Web browser per visualizzare i file che si trovano in una raccolta documenti.  <br/> |
 |nessuno  <br/> |PageViewedExtended  <br/> |Questa operazione è correlata all'attività "visualizzazione pagina" (visualizzata in una pagina). Un evento PageViewedExtended viene registrato quando la stessa persona Visualizza continuamente una pagina Web per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di PageViewedExtended consiste nel ridurre il numero di eventi visualizzati in visualizzazione che vengono registrati quando una pagina viene visualizzata continuamente. In questo modo, è possibile ridurre il rumore dei record a più pagine visualizzate in base alla stessa attività dell'utente e consentire di concentrarsi sull'evento iniziale (e più importante) di visualizzazione.  <br/> |
+|Visualizzazione segnalata dal client <br/>|ClientViewSignaled<br/>|Il client di un utente (ad esempio, il sito Web o l'app per dispositivi mobili) ha segnalato che la pagina indicata è stata visualizzata dall'utente. Questa attività viene spesso registrata dopo un evento PagePrefetched per una pagina. <br/><br/>**Nota**: poiché gli eventi di ClientViewSignaled sono segnalati dal client anziché dal server, è possibile che l'evento non venga registrato dal server e che pertanto non venga visualizzato nel registro di controllo. È inoltre possibile che le informazioni nel record di controllo potrebbero non essere attendibili. Tuttavia, dal momento che l'identità dell'utente viene convalidata dal token utilizzato per creare il segnale, l'identità dell'utente elencata nel record di controllo corrispondente è accurata. |
+|nessuno <br/>|PagePrefetched<br/>|Il client di un utente (ad esempio, il sito Web o l'app per dispositivi mobili) ha richiesto la pagina indicata per migliorare le prestazioni se l'utente lo Sfoglia. Questo evento viene registrato per indicare che il contenuto della pagina è stato servito al client dell'utente. Questo evento non è un'indicazione definitiva che l'utente ha effettivamente esplorato alla pagina. Quando viene eseguito il rendering del contenuto della pagina dal client (secondo la richiesta dell'utente), è necessario che venga generato un evento ClientViewSignaled. Tenere presente che non tutti i client supportano l'indicazione di una prelettura e pertanto alcune attività precompilate potrebbero essere registrate come eventi di visualizzazione.<br/>|
 ||||
   
 ### <a name="folder-activities"></a>Attività cartella
@@ -352,6 +360,35 @@ Nella tabella seguente vengono descritte le attività della cartella in SharePoi
 |Cartella ripristinata  <br/> |FolderRestored  <br/> |L'utente ripristina una cartella eliminata dal Cestino di un sito.  <br/> |
 ||||
   
+### <a name="sharepoint-list-activities"></a>Attività dell'elenco di SharePoint
+  
+Nella tabella seguente vengono descritte le attività correlate a quando gli utenti interagiscono con gli elenchi e gli elementi di elenco in SharePoint Online.
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+| Elenco creato              | ListCreated              | Un utente ha creato un nuovo elenco di SharePoint.|
+| Colonna di elenco creata       | ListColumnCreated        | Un utente ha creato una nuova colonna dell'elenco di SharePoint. Una colonna di elenco è una colonna associata a uno o più elenchi di SharePoint. |
+| Tipo di contenuto elenco creato | ListContentTypeCreated   | Un utente ha creato un nuovo tipo di contenuto dell'elenco. Un tipo di contenuto elenco è un tipo di contenuto associato a uno o più elenchi di SharePoint.|
+| Elemento di elenco creato         | ListItemCreated          | Un utente ha creato un nuovo elemento in un elenco di SharePoint esistente.|
+| Colonna del sito creata       | SiteColumnCreated        | Un utente ha creato una nuova colonna del sito di SharePoint. Una colonna del sito è una colonna non associata a un elenco. Una colonna del sito è anche una struttura di metadati che può essere utilizzata da qualsiasi elenco in un determinato sito Web.|
+| Tipo di contenuto del sito creato | ContentType del sito creato | Un utente ha creato un nuovo tipo di contenuto del sito. Un tipo di contenuto del sito è un tipo di contenuto associato al sito padre.|
+| Elenco eliminato              | ListDeleted              | Un utente ha eliminato un elenco di SharePoint.|
+| Colonna dell'elenco eliminato       | Colonna di elenco eliminata      | Un utente ha eliminato una colonna di un elenco di SharePoint.|
+| Tipo di contenuto elenco eliminato | ListContentTypeDeleted   | Un utente ha eliminato un tipo di contenuto elenco. |
+| Elemento di elenco eliminato         | Elemento dell'elenco eliminato        | Un utente ha eliminato una voce di elenco di SharePoint.|
+| Colonna del sito eliminato       | SiteColumnDeleted        | Un utente ha eliminato una colonna del sito di SharePoint. |
+| Tipo di contenuto del sito eliminato | SiteContentTypeDeleted   | Un utente ha eliminato un tipo di contenuto del sito.|
+| Elemento di elenco riciclato        | ListItemRecycled         | Un utente ha spostato una voce di elenco di SharePoint nel Cestino.|
+| Elenco ripristinato             | ListRestored             | Un utente ha ripristinato un elenco di SharePoint dal Cestino.|
+| Elemento di elenco ripristinato        | ListItemRestored         | Un utente ha ripristinato una voce di elenco di SharePoint dal Cestino.|
+| Elenco aggiornato              | ListUpdated              | Un utente ha aggiornato un elenco di SharePoint modificando una o più proprietà.|
+| Colonna elenco aggiornata       | ListColumnUpdated        | Un utente ha aggiornato una colonna di un elenco di SharePoint modificando una o più proprietà.|
+| Tipo di contenuto elenco aggiornato | ListContentTypeUpdated   | Un utente ha aggiornato un tipo di contenuto elenco modificando una o più proprietà.|
+| Elemento di elenco aggiornato         | ListItemUpdated          | Un utente ha aggiornato una voce di elenco di SharePoint modificando una o più proprietà.|  
+| Colonna del sito aggiornata       | SiteColumnUpdated        | Un utente ha aggiornato una colonna del sito di SharePoint modificando una o più proprietà.|
+| Tipo di contenuto del sito aggiornato | SiteContentTypeUpdated   | Un utente ha aggiornato un tipo di contenuto del sito modificando una o più proprietà.|
+||||
+
 ### <a name="sharing-and-access-request-activities"></a>Attività di condivisione e accesso alle richieste
   
 Nella tabella seguente vengono descritte le attività relative alla condivisione e alla richiesta di accesso degli utenti in SharePoint Online e OneDrive for business. Per gli eventi di condivisione, la colonna **Dettagli** in **results** identifica il nome dell'utente o del gruppo a cui è stato condiviso l'elemento e se quell'utente o gruppo è un membro o un ospite nell'organizzazione. Per ulteriori informazioni, vedere [use sharing audit in the Office 365 audit log](use-sharing-auditing.md).
@@ -364,10 +401,7 @@ Nella tabella seguente vengono descritte le attività relative alla condivisione
 |Richiesta di accesso accettata  <br/> |AccessRequestAccepted  <br/> |È stata accettata una richiesta di accesso a un sito, una cartella o un documento e all'utente richiedente è stato concesso l'accesso.  <br/> |
 |Invito alla condivisione accettata  <br/> |SharingInvitationAccepted  <br/> |L'utente (membro o ospite) ha accettato un invito alla condivisione ed è stato concesso l'accesso a una risorsa. Questo evento include informazioni sull'utente che è stato invitato e l'indirizzo di posta elettronica utilizzato per accettare l'invito (potrebbero essere diversi). Questa attività è spesso accompagnata da un secondo evento in cui viene descritto come all'utente è stato concesso l'accesso alla risorsa, ad esempio l'aggiunta di un utente a un gruppo che ha accesso alla risorsa.  <br/> |
 |Livello di autorizzazione aggiunto per la raccolta siti  <br/> |PermissionLevelAdded  <br/> |È stato aggiunto un livello di autorizzazione a una raccolta siti.  <br/> |
-|Aggiunta di un utente al collegamento protetto  <br/> |AddedToSecureLink  <br/> |Un utente è stato aggiunto all'elenco di entità che possono utilizzare questo collegamento di condivisione sicura.  <br/> |
 |Invito per la condivisione bloccata  <br/> |SharingInvitationBlocked  <br/> | Un invito alla condivisione inviato da un utente nell'organizzazione è bloccato a causa di un criterio di condivisione esterna che consente o nega la condivisione esterna in base al dominio dell'utente di destinazione. In questo caso, l'invito alla condivisione è stato bloccato perché:  <br/>  Il dominio dell'utente di destinazione non è incluso nell'elenco dei domini consentiti.  <br/>  Oppure  <br/>  Il dominio dell'utente di destinazione è incluso nell'elenco dei domini bloccati.  <br/>  Per ulteriori informazioni su come consentire o bloccare la condivisione esterna in base ai domini, vedere Restricted [Domains sharing in SharePoint Online e OneDrive for business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Ereditarietà a livello di autorizzazione interrotta  <br/> |PermissionLevelsInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più i livelli di autorizzazione dall'elemento padre.  <br/> |
-|Ha interrotto l'ereditarietà della condivisione  <br/> |SharingInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più le autorizzazioni di condivisione dal relativo elemento padre.  <br/> |
 |Creazione di un collegamento condiviso con la società  <br/> |CompanyLinkCreated  <br/> |L'utente ha creato un collegamento a livello di società a una risorsa. i collegamenti a livello di azienda possono essere utilizzati solo dai membri dell'organizzazione. Non possono essere utilizzati dagli ospiti.  <br/> |
 |Richiesta di accesso creata  <br/> |AccessRequestCreated  <br/> |L'utente richiede l'accesso a un sito, una cartella o un documento in cui non dispongono delle autorizzazioni per l'accesso.  <br/> |
 |Creato un collegamento anonimo  <br/> |AnonymousLinkCreated  <br/> |L'utente ha creato un collegamento anonimo a una risorsa. Tutti gli utenti che dispongono di questo collegamento possono accedere alla risorsa senza dover essere autenticati.  <br/> |
@@ -375,11 +409,8 @@ Nella tabella seguente vengono descritte le attività relative alla condivisione
 |Invito alla condivisione creato  <br/> |SharingInvitationCreated  <br/> |L'utente ha condiviso una risorsa in SharePoint Online o OneDrive for business con un utente che non si trova nella directory dell'organizzazione.  <br/> |
 |Collegamento protetto eliminato  <br/> |SecureLinkDeleted  <br/> |È stato eliminato un collegamento di condivisione sicura.  <br/> |
 |Richiesta di accesso negato  <br/> |AccessRequestDenied  <br/> |È stata negata una richiesta di accesso a un sito, una cartella o un documento.  <br/> |
-|Livello di autorizzazione modificato per la raccolta siti  <br/> |PermissionLevelModified  <br/> |Un livello di autorizzazione è stato modificato in una raccolta siti.  <br/> |
 |Rimozione di un collegamento condiviso con la società  <br/> |CompanyLinkRemoved  <br/> |L'utente ha rimosso un collegamento a livello di società a una risorsa. Il collegamento non può più essere utilizzato per accedere alla risorsa.  <br/> |
 |Rimosso un collegamento anonimo  <br/> |AnonymousLinkRemoved  <br/> |L'utente ha rimosso un collegamento anonimo a una risorsa. Il collegamento non può più essere utilizzato per accedere alla risorsa.  <br/> |
-|Livello di autorizzazione rimosso dalla raccolta siti  <br/> |PermissionLevelRemoved  <br/> |Un livello di autorizzazione è stato rimosso da una raccolta siti.  <br/> |
-|Ereditarietà della condivisione ripristinata  <br/> |SharingInheritanceReset  <br/> |È stata apportata una modifica in modo che un elemento erediti le autorizzazioni di condivisione dal relativo elemento padre.  <br/> |
 |File, cartella o sito condiviso  <br/> |SharingSet  <br/> |L'utente (membro o ospite) ha condiviso un file, una cartella o un sito in SharePoint o OneDrive for business con un utente nella directory dell'organizzazione. Il valore nella colonna **dettaglio** per questa attività identifica il nome dell'utente a cui è stata condivisa la risorsa e se l'utente è un membro o un ospite. Questa attività è spesso accompagnata da un secondo evento che descrive il modo in cui l'utente ha concesso l'accesso alla risorsa. ad esempio, se si aggiunge l'utente a un gruppo che ha accesso alla risorsa.  <br/> |
 |Richiesta di accesso aggiornata  <br/> |AccessRequestUpdated  <br/> |È stata aggiornata una richiesta di accesso a un elemento.  <br/> |
 |Aggiornamento di un collegamento anonimo  <br/> |AnonymousLinkUpdated  <br/> |L'utente ha aggiornato un collegamento anonimo a una risorsa. Il campo aggiornato è incluso nella proprietà EventData quando si esportano i risultati della ricerca.  <br/> |
@@ -406,6 +437,31 @@ Nella tabella seguente sono elencate le attività di sincronizzazione dei file i
 |File caricati nella raccolta documenti  <br/> |FileSyncUploadedFull  <br/> |L'utente stabilisce una relazione di sincronizzazione e carica correttamente i file per la prima volta dal proprio computer a una raccolta documenti.  <br/> |
 |Modifiche ai file caricati nella raccolta documenti  <br/> |FileSyncUploadedPartial  <br/> |Le modifiche apportate ai file in una raccolta documenti vengono caricate correttamente dall'utente. Questo evento indica che tutte le modifiche apportate alla versione locale di un file da una raccolta documenti vengono caricate correttamente nella raccolta documenti. Solo le modifiche vengono caricate perché tali file sono stati precedentemente caricati dall'utente (come indicato dai **file caricati nell'attività raccolta documenti** ).  <br/> |
 ||||
+
+### <a name="site-permissions-activities"></a>Attività relative alle autorizzazioni del sito
+
+Nella tabella seguente sono elencati gli eventi relativi all'assegnazione delle autorizzazioni in SharePoint e l'utilizzo dei gruppi per l'accesso ai siti.
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Aggiunta dell'amministratore della raccolta siti  <br/> |SiteCollectionAdminAdded  <br/> |L'amministratore o il proprietario della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari. Questa attività viene inoltre registrata quando un amministratore si concede l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [utilizzando il centro di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
+|Aggiunta di un utente o un gruppo a un gruppo di SharePoint  <br/> |AddedToGroup  <br/> |L'utente ha aggiunto un membro o un ospite a un gruppo di SharePoint. Potrebbe trattarsi di un'azione intenzionale o del risultato di un'altra attività, ad esempio un evento di condivisione.  <br/> |
+|Ereditarietà a livello di autorizzazione interrotta  <br/> |PermissionLevelsInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più i livelli di autorizzazione dall'elemento padre.  <br/> |
+|Ha interrotto l'ereditarietà della condivisione  <br/> |SharingInheritanceBroken  <br/> |Un elemento è stato modificato in modo che non erediti più le autorizzazioni di condivisione dal relativo elemento padre.  <br/> |
+|Gruppo creato  <br/> |GroupAdded  <br/> |L'amministratore del sito o il proprietario crea un gruppo per un sito o esegue un'attività che genera un gruppo in fase di creazione. Ad esempio, la prima volta che un utente crea un collegamento per la condivisione di un file, viene aggiunto un gruppo di sistema al sito di OneDrive for business dell'utente. Questo evento può anche essere il risultato della creazione da parte dell'utente di un collegamento con autorizzazioni di modifica in un file condiviso.  <br/> |
+|Gruppo eliminato  <br/> |GroupRemoved  <br/> |L'utente elimina un gruppo da un sito.  <br/> |
+|Impostazione delle richieste di accesso modificate  <br/> |WebRequestAccessModified  <br/> |Le impostazioni delle richieste di accesso sono state modificate in un sito.  <br/> |
+|Modifica dell'impostazione ' membri in grado di condividere '  <br/> |WebMembersCanShareModified  <br/> |I **membri possono condividere** l'impostazione è stata modificata in un sito.  <br/> |
+|Livello di autorizzazione modificato per la raccolta siti  <br/> |PermissionLevelModified  <br/> |Un livello di autorizzazione è stato modificato in una raccolta siti.  <br/> |
+|Autorizzazioni del sito modificate  <br/> |SitePermissionsModified  <br/> |L'amministratore del sito o il proprietario (o l'account di sistema) modifica il livello di autorizzazione assegnato a un gruppo in un sito. Questa attività viene inoltre registrata se tutte le autorizzazioni sono state rimosse da un gruppo.  <br/><br/> **Nota**: questa operazione è stata deprecata in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività correlate all'autorizzazione, ad esempio l' **aggiunta di amministratore della raccolta siti**, l' **utente o il gruppo aggiunto al gruppo di SharePoint**, l' **utente consentito per la creazione di gruppi**, il **gruppo creato**e l' **eliminazione gruppo.**|
+|Livello di autorizzazione rimosso dalla raccolta siti  <br/> |PermissionLevelRemoved  <br/> |Un livello di autorizzazione è stato rimosso da una raccolta siti.  <br/> |
+|Amministratore della raccolta siti rimosso  <br/> |SiteCollectionAdminRemoved <br/> |L'amministratore o il proprietario della raccolta siti consente di rimuovere una persona come amministratore della raccolta siti per un sito. Questa attività viene inoltre registrata quando un amministratore si rimuove dall'elenco degli amministratori delle raccolte siti per l'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint).  Si noti che per restituire questa attività nei risultati di ricerca del registro di controllo, è necessario cercare tutte le attività. <br/> |
+|Utenti o gruppi rimossi dal gruppo di SharePoint  <br/> |RemovedFromGroup  <br/> |L'utente ha rimosso un membro o un ospite da un gruppo di SharePoint. Potrebbe trattarsi di un'azione intenzionale o del risultato di un'altra attività, ad esempio un evento di annullamento della condivisione.  <br/> |
+|Autorizzazioni di amministratore del sito richieste  <br/> |SiteAdminChangeRequest  <br/> |Richieste degli utenti da aggiungere come amministratore della raccolta siti per una raccolta siti. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari.  <br/> |
+|Ereditarietà della condivisione ripristinata  <br/> |SharingInheritanceReset  <br/> |È stata apportata una modifica in modo che un elemento erediti le autorizzazioni di condivisione dal relativo elemento padre.  <br/> |
+|Gruppo aggiornato  <br/> |GroupUpdated  <br/> |L'amministratore del sito o il proprietario modifica le impostazioni di un gruppo per un sito. Ciò può includere la modifica del nome del gruppo, degli utenti in grado di visualizzare o modificare l'appartenenza al gruppo e del modo in cui vengono gestite le richieste di appartenenza.  <br/> |
+||||
+
   
 ### <a name="site-administration-activities"></a>Attività amministrative del sito
   
@@ -413,10 +469,9 @@ Nella tabella seguente sono elencati gli eventi che risultano dalle attività di
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Aggiunta di un agente utente di esenzione  <br/> |ExemptUserAgentSet  <br/> |Un amministratore di SharePoint o globale aggiunge un agente utente all'elenco degli agenti utente esenti nell'interfaccia di amministrazione di SharePoint.  <br/> |
-|Aggiunta dell'amministratore della raccolta siti  <br/> |SiteCollectionAdminAdded  <br/> |L'amministratore o il proprietario della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari. Questa attività viene inoltre registrata quando un amministratore si concede l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [utilizzando il centro di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
-|nessuno  <br/> |SiteCollectionAdminRemoved <br/> |L'amministratore o il proprietario della raccolta siti consente di rimuovere una persona come amministratore della raccolta siti per un sito. Questa attività viene inoltre registrata quando un amministratore si rimuove dall'elenco degli amministratori delle raccolte siti per l'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint).  Si noti che per restituire questa attività nei risultati di ricerca del registro di controllo, è necessario cercare tutte le attività. <br/> |
-|Aggiunta di un utente o un gruppo a un gruppo di SharePoint  <br/> |AddedToGroup  <br/> |L'utente ha aggiunto un membro o un ospite a un gruppo di SharePoint. Potrebbe trattarsi di un'azione intenzionale o del risultato di un'altra attività, ad esempio un evento di condivisione.  <br/> |
+|Aggiunta della posizione dei dati consentita<br/>|AllowedDataLocationAdded|Un amministratore di SharePoint o globale ha aggiunto una posizione dati consentita in un ambiente multi-geografico. <br/>|
+|Aggiunta di un agente utente di esenzione  <br/> |ExemptUserAgentSet  <br/> |Un amministratore di SharePoint o globale ha aggiunto un agente utente all'elenco degli agenti utente esenti nell'interfaccia di amministrazione di SharePoint.  <br/> |
+|Aggiunta dell'amministratore della posizione geografica<br/>|GeoAdminAdded<br/>|Un amministratore di SharePoint o globale ha aggiunto un utente come amministratore geografico di una posizione. <br/>|
 |Utente consentito per la creazione di gruppi  <br/> |AllowGroupCreationSet  <br/> |L'amministratore del sito o il proprietario aggiunge un livello di autorizzazione a un sito che consente a un utente a cui è stata assegnata l'autorizzazione di creare un gruppo per il sito.  <br/> |
 |Spostamento Geo del sito cancellato  <br/> |SiteGeoMoveCancelled  <br/> |Un amministratore di SharePoint o globale Annulla correttamente una mossa geografica del sito di SharePoint o OneDrive. La funzionalità multi-Geo consente a un'organizzazione di Office 365 di suddividere più aree geografiche di Office 365 datacenter, denominate GEOS. Per ulteriori informazioni, vedere [multi-Geo capabilities in OneDrive e SharePoint online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Modifica di un criterio di condivisione  <br/> |SharingPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato un criterio di condivisione di SharePoint utilizzando il portale di amministrazione di Office 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Tutte le modifiche apportate alle impostazioni nel criterio di condivisione nell'organizzazione verranno registrate. I criteri modificati vengono identificati nel campo **ModifiedProperties** nelle proprietà dettagliate del record di evento.  <br/> |
@@ -424,25 +479,26 @@ Nella tabella seguente sono elencati gli eventi che risultano dalle attività di
 |Agenti utente esenti modificati  <br/> |CustomizeExemptUsers  <br/> |Un amministratore di SharePoint o globale ha personalizzato l'elenco degli agenti utente esenti nell'interfaccia di amministrazione di SharePoint. È possibile specificare quali agenti utente esentare dalla ricezione di un'intera pagina Web da indicizzare. Questo significa che quando un agente utente specificato come esenzione incontra un modulo di InfoPath, il modulo verrà restituito come file XML, invece di un'intera pagina Web. In tal modo l'indicizzazione dei moduli di InfoPath è più rapida.  <br/> |
 |Criteri di accesso alla rete modificati  <br/> |NetworkAccessPolicyChanged  <br/> |Un amministratore di SharePoint o globale ha modificato il criterio di accesso basato sulla posizione (denominato anche limite di rete attendibile) nell'interfaccia di amministrazione di SharePoint o tramite PowerShell di SharePoint Online. Questo tipo di criteri controlla chi può accedere alle risorse di SharePoint e OneDrive nell'organizzazione in base agli intervalli di indirizzi IP autorizzati specificati. Per ulteriori informazioni, vedere [controllare l'accesso ai dati di SharePoint Online e OneDrive in base al percorso di rete](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
 |Spostamento geografico completato del sito  <br/> |SiteGeoMoveCompleted  <br/> |Una mossa geografica del sito pianificata da un amministratore globale dell'organizzazione è stata completata correttamente. La funzionalità multi-Geo consente a un'organizzazione di Office 365 di suddividere più aree geografiche di Office 365 datacenter, denominate GEOS. Per ulteriori informazioni, vedere [multi-Geo capabilities in OneDrive e SharePoint online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
-|Gruppo creato  <br/> |GroupAdded  <br/> |L'amministratore del sito o il proprietario crea un gruppo per un sito o esegue un'attività che genera un gruppo in fase di creazione. Ad esempio, la prima volta che un utente crea un collegamento per la condivisione di un file, viene aggiunto un gruppo di sistema al sito di OneDrive for business dell'utente. Questo evento può anche essere il risultato della creazione da parte dell'utente di un collegamento con autorizzazioni di modifica in un file condiviso.  <br/> |
 |Creato inviato alla connessione  <br/> |SendToConnectionAdded  <br/> |Un amministratore di SharePoint o globale crea una nuova connessione per l'invio nella pagina di gestione dei record nell'interfaccia di amministrazione di SharePoint. Una connessione Invia a specifica le impostazioni per un archivio di documenti o centro record. Quando si crea una connessione Invia a, un Content Organizer può inviare documenti al percorso specificato.  <br/> |
 |Raccolta siti creata  <br/> |SiteCollectionCreated  <br/> |Un amministratore di SharePoint o globale crea una nuova raccolta siti nell'organizzazione di SharePoint Online o un utente che applica il sito di OneDrive for business.  <br/> |
-|Gruppo eliminato  <br/> |GroupRemoved  <br/> |L'utente elimina un gruppo da un sito.  <br/> |
+|Sito hub orfano eliminato<br/>|HubSiteOrphanHubDeleted<br/>|Un amministratore di SharePoint o globale ha eliminato un sito hub orfano, che è un sito hub a cui non sono associati siti. È probabile che un hub isolato sia causato dall'eliminazione del sito Hub originale. <br/>|
 |Eliminato inviato alla connessione  <br/> |SendToConnectionRemoved  <br/> |Un amministratore di SharePoint o globale elimina una connessione Send to nella pagina Gestione record nell'interfaccia di amministrazione di SharePoint.  <br/> |
 |Sito eliminato  <br/> |SiteDeleted  <br/> |L'amministratore del sito Elimina un sito.  <br/> |
 |Anteprima del documento attivata  <br/> |PreviewModeEnabledSet  <br/> |L'amministratore del sito Abilita l'anteprima del documento per un sito.  <br/> |
 |Flusso di lavoro legacy abilitato  <br/> |LegacyWorkflowEnabledSet  <br/> |L'amministratore o il proprietario del sito aggiunge il tipo di contenuto di attività di flusso di lavoro di SharePoint 2013 al sito. Gli amministratori globali possono inoltre abilitare i flussi di lavoro per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.  <br/> |
 |Office abilitato su richiesta  <br/> |OfficeOnDemandSet  <br/> |L'amministratore del sito abilita Office su richiesta, che consente agli utenti di accedere alla versione più recente delle applicazioni desktop di Office. Office su richiesta è abilitato nell'interfaccia di amministrazione di SharePoint e richiede un abbonamento a Office 365 che include le applicazioni di Office complete e installate.  <br/> |
+|Origine dei risultati abilitata per le ricerche di utenti<br/>|PeopleResultsScopeSet<br/>|L'amministratore del sito crea l'origine dei risultati per le ricerche degli utenti di un sito.<br/>|
 |Feed RSS abilitati  <br/> |NewsFeedEnabledSet  <br/> |L'amministratore del sito o il proprietario attiva i feed RSS per un sito. Gli amministratori globali possono abilitare i feed RSS per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.  <br/> |
-|Impostazione delle richieste di accesso modificate  <br/> |WebRequestAccessModified  <br/> |Le impostazioni delle richieste di accesso sono state modificate in un sito.  <br/> |
-|I membri modificati possono condividere l'impostazione  <br/> |WebMembersCanShareModified  <br/> |I **membri possono condividere** l'impostazione è stata modificata in un sito.  <br/> |
-|Autorizzazioni del sito modificate  <br/> |SitePermissionsModified  <br/> |L'amministratore del sito o il proprietario (o l'account di sistema) modifica il livello di autorizzazione assegnato a un gruppo in un sito. Questa attività viene inoltre registrata se tutte le autorizzazioni sono state rimosse da un gruppo.  <br/> > [!NOTE]> questa operazione è stata deprecata in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività correlate all'autorizzazione, ad esempio l' **aggiunta di amministratore della raccolta siti**, l' **utente o il gruppo aggiunto al gruppo di SharePoint**, l' **utente consentito per la creazione di gruppi**, il **gruppo creato**e l' **eliminazione gruppo.**         |
-|Utenti o gruppi rimossi dal gruppo di SharePoint  <br/> |RemovedFromGroup  <br/> |L'utente ha rimosso un membro o un ospite da un gruppo di SharePoint. Potrebbe trattarsi di un'azione intenzionale o del risultato di un'altra attività, ad esempio un evento di annullamento della condivisione.  <br/> |
+|Sito aggiunto al sito hub<br/>|HubSiteJoined<br/>|Un proprietario del sito associa il sito a un sito hub.<br/>|
+|Sito hub registrato<br/>|HubSiteRegistered<br/>|Un amministratore di SharePoint o globale crea un sito hub. I risultati sono che il sito è stato registrato come sito hub. <br/>|
+|Posizione dei dati consentita rimossa<br/>|AllowedDataLocationDeleted<br/>|Un amministratore di SharePoint o globale ha rimosso una posizione dati consentita in un ambiente multi-geografico.<br/>|
+|Amministratore della posizione geografica rimossa<br/>|GeoAdminDeleted<br/>|Un amministratore di SharePoint o globale ha rimosso un utente come amministratore geografico di una posizione.<br/>|
 |Rinominato sito  <br/> |SiteRenamed  <br/> |L'amministratore del sito o il proprietario ridenomina un sito  <br/> |
-|Autorizzazioni di amministratore del sito richieste  <br/> |SiteAdminChangeRequest  <br/> |Richieste degli utenti da aggiungere come amministratore della raccolta siti per una raccolta siti. Gli amministratori della raccolta di siti dispongono di autorizzazioni di controllo complete per la raccolta di siti e per tutti i siti secondari.  <br/> |
 |Spostamento geografico del sito pianificato  <br/> |SiteGeoMoveScheduled  <br/> |Un amministratore di SharePoint o globale pianifica correttamente una mossa geografica del sito di SharePoint o OneDrive. La funzionalità multi-Geo consente a un'organizzazione di Office 365 di suddividere più aree geografiche di Office 365 datacenter, denominate GEOS. Per ulteriori informazioni, vedere [multi-Geo capabilities in OneDrive e SharePoint online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Impostare il sito host  <br/> |HostSiteSet  <br/> |Un amministratore di SharePoint o globale modifica il sito designato per ospitare i siti personali o OneDrive for business.  <br/> |
-|Gruppo aggiornato  <br/> |GroupUpdated  <br/> |L'amministratore del sito o il proprietario modifica le impostazioni di un gruppo per un sito. Ciò può includere la modifica del nome del gruppo, degli utenti in grado di visualizzare o modificare l'appartenenza al gruppo e del modo in cui vengono gestite le richieste di appartenenza.  <br/> |
+|Impostare la quota di archiviazione per la posizione geografica  <br/> |GeoQuotaAllocated<br/> |Un amministratore di SharePoint o globale ha configurato la quota di archiviazione per una posizione geografica in un ambiente multi-geografico.<br/> |
+|Sito non contiguo dal sito hub<br/>|HubSiteUnjoined<br/>|Un proprietario del sito annulla l'associazione del sito da un sito hub.<br/>|
+|Sito hub non registrato<br/>|HubSiteUnregistered<br/>|Un amministratore di SharePoint o globale annulla la registrazione di un sito come sito hub. Quando viene annullata la registrazione di un sito hub, non funziona più come sito hub. <br/>|
 ||||
   
 ### <a name="exchange-mailbox-activities"></a>Attività relative alle cassette postali di Exchange
@@ -455,7 +511,7 @@ Nella tabella seguente sono elencate le attività che possono essere registrate 
 |Messaggio classificato come record  <br/> |ApplyRecordLabel<br/> |Un messaggio è stato classificato come record. Questo problema si verifica quando un'etichetta di conservazione che classifica il contenuto come record viene applicata manualmente o automaticamente a un messaggio.<br/> |
 |Copia dei messaggi in un'altra cartella  <br/> |Copia  <br/> |Messaggio copiato in un'altra cartella.  <br/> |
 |Elemento della cassetta postale creato  <br/> |Creazione  <br/> |Elemento creato nella cartella Calendario, Contatti, Note o Attività nella cassetta postale; ad esempio, viene creata una nuova convocazione di riunione. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.  <br/> |
-|Nuova regola di posta in arrivo creata in Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
+|Nuova regola di posta in arrivo creata in Outlook Web App  <br/> |NewInboxRule<br/> |Un utente ha creato una nuova regola di posta in arrivo in Outlook Web App (OWA).<br/> |
 |Messaggi eliminati dalla cartella Posta eliminata  <br/> |SoftDelete  <br/> |Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Questi elementi vengono spostati nella cartella elementi ripristinabili. I messaggi vengono spostati nella cartella elementi ripristinabili anche quando un utente la seleziona e preme **MAIUSC + CANC**.  <br/> |
 |Spostamento dei messaggi in un'altra cartella  <br/> |Move  <br/> |Messaggio spostato in un'altra cartella.  <br/> |
 |Spostamento dei messaggi nella cartella Posta eliminata  <br/> |MoveToDeletedItems  <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |
@@ -587,6 +643,37 @@ Per un elenco e una descrizione dettagliata delle attività di eDiscovery regist
 > [!NOTE]
 > Sono necessari fino a 30 minuti per gli eventi che risultano dalle attività elencate in **attività di eDiscovery** nell'elenco a discesa **attività** da visualizzare nei risultati della ricerca. Al contrario, sono necessari fino a 24 ore affinché gli eventi corrispondenti dalle attività del cmdlet di eDiscovery vengano visualizzati nei risultati della ricerca. 
   
+### <a name="advanced-ediscovery-activities"></a>Attività avanzate di eDiscovery
+
+Nella tabella seguente sono elencate le attività che derivano da IT e professionisti legali che eseguono attività in Advanced eDiscovery in Microsoft 365. Per ulteriori informazioni, vedere [Overview of the Advanced eDiscovery Solution in Microsoft 365](compliance20/overview-ediscovery-20.md).
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+| Aggiunta di dati a un altro set di Revisione<br/>         | AddWorkingSetQueryToWorkingSet<br/>  |  Gli utenti hanno aggiunto documenti da un set di revisione a un diverso set di revisione.<br/>|
+| Aggiunta dei dati al set di Revisione <br/>                | AddQueryToWorkingSet<br/>            |  L'utente ha aggiunto i risultati della ricerca da una ricerca di contenuto associata a un caso avanzato di eDiscovery a un set di revisione.<br/>|
+| Aggiunta dei dati non di Office 365 ai set di Revisione<br/>  | AddNonOffice365DataToWorkingSet<br/> |  L'utente ha aggiunto dati non di Office 365 a un set di revisione.<br/>|
+| Aggiunta di documenti corretti al set di Revisione<br/> | AddRemediatedData<br/>               |  L'utente carica documenti con errori di indicizzazione che sono stati fissati a un set di revisione.<br/>|
+| Dati analizzati nel set di Revisione <br/>             | RunAlgo<br/>                         |  L'utente ha eseguito l'analisi dei documenti in un set di revisione. <br/>|
+| Documento con annotazioni nel set di Revisione <br/>        | AnnotateDocument<br/>                |  L'utente ha annotato un documento in un set di revisione. L'annotazione include il contenuto di relazioni in un documento. <br/>|
+| Set di carichi confrontati <br/>                      | LoadComparisonJob<br/>               |L'utente ha confrontato due set di carico diversi in un set di revisione. Un set di carichi è il momento in cui i dati di una ricerca di contenuto associata al caso vengono aggiunti a un set di revisione.  <br/>|
+| Convertito documenti redatti in formato PDF<br/>      | BurnJob<br/>                         |L'utente ha convertito tutti i documenti redatti in un set di revisione in file PDF.<br/>|
+| Set di revisione creato<br/>                       | CreateWorkingSet<br/>                |L'utente ha creato un set di revisione.<br/>|
+| Ricerca di set di revisione creata<br/>                | CreateWorkingSetSearch<br/>          |L'utente ha creato una query di ricerca che esegue la ricerca nei documenti in un set di revisione. <br/>|
+| Tag creato<br/>                              | CreateTag<br/>                       |L'utente ha creato un gruppo di tag in un set di revisione. Un gruppo di tag può contenere uno o più tag figlio. Questi tag vengono quindi utilizzati per contrassegnare i documenti nel set di revisione.<br/>|
+| Ricerca di set di revisione eliminata <br/>               | DeleteWorkingSetSearch<br/>          |L'utente ha eliminato una query di ricerca in un set di revisione.<br/>|
+| Tag eliminato<br/>                              | DeleteTag<br/>                       |L'utente ha eliminato un tag o un gruppo di tag in un set di revisione.<br/>|
+| Documento scaricato<br/>                      | DownloadDocument<br/>                |L'utente ha scaricato un documento da un set di revisione.<br/>|
+| Tag modificato <br/>                              | DownloadDocument<br/>                |L'utente ha modificato un tag in un set di revisione.<br/>|
+| Documenti esportati dal set di Revisione <br/>      | ExportJob<br/>                       |Documenti esportati dall'utente da un set di revisione.<br/>|
+| Impostazione del caso modificato <br/>                   | UpdateCaseSettings<br/>              | L'utente ha modificato le impostazioni per un caso. Le impostazioni del caso includono le informazioni sui casi, le autorizzazioni di accesso e le impostazioni che controllano il comportamento di ricerca e analisi.<br/>|
+| Ricerca modifica set di Revisione<br/>               | UpdateWorkingSetSearch<br/>          |  L'utente ha modificato una query di ricerca in un set di revisione.<br/>|
+| Ricerca set di revisione in anteprima <br/>             | PreviewWorkingSetSearch<br/>         |  L'utente ha visualizzato in anteprima i risultati di una query di ricerca in un set di revisione.<br/>|
+| Documenti di errore corretti <br/>              | ErrorRemediationJob<br/>             |  L'utente corregge i file che contengono errori di indicizzazione. <br/>|
+| Documento con tag<br/>                          | TagFiles<br/>                        |  Tag utente un documento in un set di revisione.<br/>|
+| Risultati di una query con tag<br/>                | TagJob<br/>                          |  Tag utente tutti i documenti che soddisfano i criteri di query di ricerca in un set di revisione.<br/>|
+| Documento visualizzato nel set di Revisione<br/>            | ViewDocument<br/>                    |  L'utente ha visualizzato un documento in un set di revisione.<br/>|
+|||
+
 ### <a name="power-bi-activities"></a>Attività di Power BI
   
 È possibile eseguire una ricerca nel registro di controllo per le attività in Power BI. Per informazioni sulle attività di Power BI, vedere la sezione "attività controllate da Power Power BI" nell' [utilizzo del controllo all'interno dell'organizzazione](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
