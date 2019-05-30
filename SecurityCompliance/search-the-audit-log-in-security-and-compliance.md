@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158788"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490492"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
 
@@ -115,7 +115,6 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
     |eDiscovery  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ Nella tabella seguente sono elencate le attività di sincronizzazione dei file i
 |File scaricati nel computer  <br/> |FileSyncDownloadedFull  <br/> |L'utente stabilisce una relazione di sincronizzazione e Scarica i file per la prima volta nel proprio computer da una raccolta documenti.  <br/> |
 |Modifiche ai file scaricati nel computer  <br/> |FileSyncDownloadedPartial  <br/> |L'utente scarica correttamente le modifiche apportate ai file da una raccolta documenti. Questa attività indica che tutte le modifiche apportate ai file nella raccolta documenti sono state scaricate nel computer dell'utente. Sono state scaricate solo le modifiche perché la raccolta documenti è stata scaricata in precedenza dall'utente (come indicato dai **file scaricati all'** attività del computer).  <br/> |
 |File caricati nella raccolta documenti  <br/> |FileSyncUploadedFull  <br/> |L'utente stabilisce una relazione di sincronizzazione e carica correttamente i file per la prima volta dal proprio computer a una raccolta documenti.  <br/> |
-|Modifiche ai file caricati nella raccolta documenti  <br/> |FileSyncUploadedPartial  <br/> |Le modifiche apportate ai file in una raccolta documenti vengono caricate correttamente dall'utente. Questo evento indica che tutte le modifiche apportate alla versione locale di un file da una raccolta documenti vengono caricate correttamente nella raccolta documenti. Solo le modifiche vengono scaricate poiché tali file sono stati precedentemente caricati dall'utente (come indicato dall'attività * * file caricati su raccolta documenti * *).  <br/> |
+|Modifiche ai file caricati nella raccolta documenti  <br/> |FileSyncUploadedPartial  <br/> |Le modifiche apportate ai file in una raccolta documenti vengono caricate correttamente dall'utente. Questo evento indica che tutte le modifiche apportate alla versione locale di un file da una raccolta documenti vengono caricate correttamente nella raccolta documenti. Solo le modifiche vengono caricate perché tali file sono stati precedentemente caricati dall'utente (come indicato dai **file caricati nell'attività raccolta documenti** ).  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>Attività amministrative del sito

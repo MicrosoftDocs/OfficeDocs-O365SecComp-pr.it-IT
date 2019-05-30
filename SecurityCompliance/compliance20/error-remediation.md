@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151788"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547941"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
@@ -40,7 +40,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Correzione degli errori](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La sessione di correzione degli errori inizierà iniziando con una fase di preparazione in cui i file che hanno subito errori vengono spostati in una posizione di Azure sicura da scaricare.
+    La sessione di correzione degli errori inizierà, iniziando con una fase di preparazione in cui i file con errore vengono copiati in una posizione sicura di Azure in modo che possano essere scaricati.
 
     ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,7 +63,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
     ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Se il comando AzCopy fornito ha esito negativo, vedere per [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
+    > Se il comando AzCopy fornito ha esito negativo, vedere [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     > [!NOTE]
@@ -73,7 +73,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Caricare file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Specificare il percorso dei file corretti nella casella di testo **percorso alla posizione dei file** , quindi fare clic su **copia in clibpboard**.
+9. Specificare il percorso dei file corretti nella casella di testo **percorso alla posizione dei file** e quindi fare clic su **copia negli Appunti**.
 
 10. Incollare il comando in un prompt dei comandi di Windows e premere **invio** per caricare i file.
 
@@ -87,12 +87,9 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 Quando vengono caricati file corretti, i metadati originali vengono mantenuti con l'eccezione dei campi seguenti: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus

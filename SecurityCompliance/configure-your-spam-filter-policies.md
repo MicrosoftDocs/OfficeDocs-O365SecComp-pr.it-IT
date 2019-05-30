@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base dei filtri per la posta indesiderata includono la selezione dell'azione da intraprendere per i messaggi identificati come posta indesiderata e la scelta se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche.
-ms.openlocfilehash: 740da796d0e2215076bfe38120f98e349099a758
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c52c82c32c32383e4fb2df173aa98518ac52b115
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151328"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490522"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
   
@@ -48,14 +48,12 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
     
 3. Solo per i criteri personalizzati, specificare un nome per il criterio. Facoltativamente, è anche possibile specificare una descrizione più dettagliata. Non è invece possibile rinominare il criterio predefinito.<br/><br/>Nota: quando si crea un criterio, tutte le impostazioni di configurazione vengono visualizzate in una singola schermata. Al contrario, quando si modifica un criterio, è necessario spostarsi tra più schermate. Le impostazioni sono le stesse in entrambi i casi, ma nella parte restante di questa procedura viene descritto come accedere a queste impostazioni quando si modifica un criterio. 
   
-4. Nella pagina relativa alle **azioni per posta indesiderata e posta inviata in blocco**, in **Posta indesiderata** e **Alta probabilità di posta indesiderata**, selezionare l'operazione da effettuare per la posta elettronica in blocco e la posta indesiderata in arrivo. Per impostazione predefinita, l'opzione **Sposta i messaggi nella cartella Posta indesiderata** è selezionata. Gli altri valori possibili sono: 
-    
-      - **Elimina messaggio:** Elimina l'intero messaggio, inclusi tutti gli allegati. 
-        
-      - **Messaggio in quarantena:** Invia il messaggio in quarantena anziché ai destinatari previsti. Se si seleziona questa opzione, nella casella **Mantieni posta indesiderata per (giorni)** specificare il numero di giorni in cui verrà messo in quarantena il messaggio di posta indesiderata. (Verrà eliminato automaticamente dopo il tempo trascorso. Il valore predefinito è 15 giorni, che corrisponde al valore massimo. Il valore minimo è 1 giorno.<br/><br/>Suggerimento: per informazioni su come gli amministratori possono gestire i messaggi di posta elettronica che risiedono nella quarantena nell'interfaccia di amministrazione di Exchange, vedere [Quarantine](quarantine.md) and [Find and release Quarantined messages As an Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > per informazioni su come configurare i messaggi di notifica di posta indesiderata da inviare agli utenti, vedere [configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md) o [configurare le notifiche di posta indesiderata in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
-  
-      - **Spostare il messaggio nella cartella posta indesiderata:** Invia il messaggio alla cartella posta indesiderata dei destinatari specificati. Questa è un'azione predefinita per entrambi i livelli di probabilità di posta indesiderata. <br/><br/>**Importante**: per i clienti di Exchange Online Protection (EOP): affinché questa azione funzioni con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange nei server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
-  
+4. Nella sezione posta indesiderata **e azioni in blocco** , in posta indesiderata, posta indesiderata **elevata**, **posta elettronica di phishing**e **** **posta elettronica in blocco**selezionare l'azione da eseguire per la posta indesiderata in arrivo I valori disponibili sono i seguenti: 
+
+      - **Spostare il messaggio nella cartella posta indesiderata:** Invia il messaggio alla cartella posta indesiderata dei destinatari specificati. Questa è l'azione predefinita per la posta indesiderata, la posta indesiderata elevata e la massa.
+
+ **Importante**: per i clienti di Exchange Online Protection (EOP): affinché questa azione funzioni con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange nei server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per informazioni dettagliate, vedere come garantire che la posta indesiderata [venga instradata alla cartella posta indesiderata di ogni utente](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+ 
       - **Aggiungere X-header:** Invia il messaggio ai destinatari specificati, ma aggiunge il testo X-header all'intestazione del messaggio per identificare il messaggio come posta indesiderata. Se si utilizza questo testo come identificatore, è possibile creare le regole di posta in arrivo o utilizzare un dispositivo downstream per intervenire sul messaggio. Il testo X-header predefinito è **Il messaggio sembra essere posta indesiderata**.<br/>È possibile personalizzare il testo X-Header utilizzando la casella di immissione di **testo Aggiungi questa x-header** . Se si Personalizza il testo X-header, tenere presente le condizioni seguenti: 
     
       - Se si specifica solo l'intestazione nell' \< *intestazione*\>del formato, in cui non sono presenti spazi all' \<interno dell' *intestazione*\>, i due punti verranno accodati al testo personalizzato, seguito dal testo predefinito.       Ad esempio, se si specifica "This-is-My-Custom-Header", il testo X-header verrà visualizzato come "This-is-My-Custom-Header: questo messaggio sembra essere posta indesiderata." 
@@ -65,46 +63,26 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
       - Non è possibile specificare il testo dell'intestazione nel formato \< *header*  \>:\<  *value*  \>. Se si esegue questa operazione, entrambi i valori prima e dopo che i due punti verranno ignorati e il testo X-header predefinito verrà visualizzato invece: "X-this-is-spam: questo messaggio sembra essere posta indesiderata." 
       
       - Tenere presente che i messaggi con questo X-header potrebbero essere ancora spostati nella cartella posta indesiderata della cassetta postale a causa della configurazione spazzatura delle cassette postali. È possibile modificare questa caratteristica disattivando questa funzionalità con Set-MailboxJunkEmailConfiguration.
-        
+
       - **Anteporre la riga dell'oggetto al testo:** Invia il messaggio ai destinatari desiderati, ma antepone la riga dell'oggetto al testo specificato nella riga dell' **oggetto prefix con** la casella di immissione di testo. Se si utilizza questo testo come identificatore, è possibile creare regole per filtrare o instradare i messaggi in base alle esigenze. 
         
-      - **Reindirizza il messaggio all'indirizzo di posta elettronica:** Invia il messaggio a un indirizzo di posta elettronica designato anziché ai destinatari previsti. Specificare l'indirizzo "redirect" nella casella **di input reindirizza a questo indirizzo di posta elettronica** . <br/><br/>Nota: per ulteriori informazioni sui livelli di probabilità di posta indesiderata, vedere [Spam Confidence levels](spam-confidence-levels.md). 
-  
-5. In **Posta elettronica inviata in blocco**, è possibile selezionare una soglia per considerare la posta elettronica inviata in blocco come posta indesiderata. Questa soglia si basa sul livello di reclamo in blocco del messaggio. È possibile scegliere un'impostazione di soglia tra 1 e 9, dove 1 indica la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio quindi esegue l'azione configurata, ad esempio, l'invio del messaggio alla cartella Posta indesiderata del destinatario. Vedere [i valori dei livelli](bulk-complaint-level-values.md) di reclamo in blocco e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md) per ulteriori informazioni. 
-    
-6. Nella pagina **Elenchi contatti bloccati**, è possibile specificare voci, come mittenti o domini, che verranno sempre contrassegnati come Posta indesiderata. Il servizio applica l'azione di probabilità di posta indesiderata configurata alla posta elettronica che corrisponde a tali voci. 
-    
-      - Aggiungere i mittenti indesiderati all'elenco dei mittenti bloccati. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **OK** per tornare alla pagina degli **elenchi di indirizzi bloccati**. 
+      - **Reindirizza il messaggio all'indirizzo di posta elettronica:** Invia il messaggio a un indirizzo di posta elettronica designato anziché ai destinatari previsti. Specificare l'indirizzo "redirect" nella casella **di input reindirizza a questo indirizzo di posta elettronica** .
+
+      - **Elimina messaggio:** Elimina l'intero messaggio, inclusi tutti gli allegati. 
         
-      - Aggiungere i domini indesiderati all'elenco dei domini bloccati. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere i domini che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **OK** per tornare alla pagina degli **elenchi di indirizzi bloccati**.<br/><br/>**Attenzione: se si bloccano domini di livello superiore, è probabile che la posta elettronica desiderata venga contrassegnata come posta indesiderata.** 
-  
-7. Nella pagina degli **elenchi di indirizzi consentiti**, è possibile specificare voci, come mittenti e domini, ai quali verranno sempre recapitati messaggi di posta elettronica nella Posta in arrivo. La posta elettronica proveniente da tali voci non viene elaborata dal filtro di protezione da posta indesiderata. 
-    
-      - Aggiungere i mittenti attendibili a Elenco mittenti consentiti. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su OK per tornare alla pagina degli **elenchi elementi consentiti**. 
-        
-      - Aggiungere i domini attendibili a Elenco di domini consentiti. Fare clic su **Aggiungi**![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere i domini che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su OK per tornare alla pagina degli **elenchi elementi consentiti**.<br/><br/>**Attenzione: se si consentono domini di livello superiore, è probabile che la posta elettronica non desiderata venga recapitata in una cartella posta in arrivo.** 
-  
-8. Nella pagina **posta indesiderata internazionale** è possibile filtrare i messaggi di posta elettronica scritti in determinate lingue o inviati da determinati paesi o aree geografiche. È possibile configurare fino a 86 lingue e 250 aree geografiche diverse. Il servizio applica l'azione configurata per la posta indesiderata con elevata attendibilità. 
-    
-9. Selezionare la casella di controllo **Filtra messaggi scritti nelle seguenti lingue** per abilitare questa funzionalità. Fare ![clic su](media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi nella finestra di dialogo di selezione fare le scelte (è supportata la selezione multipla). Ad esempio, se si sceglie di filtrare i messaggi scritti in arabo (AR) e il **messaggio** di quarantena è l'azione configurata per i messaggi di posta indesiderata con elevata sicurezza, tutti i messaggi scritti in arabo verranno messi in quarantena. Scegliere **ok** per tornare al riquadro **Posta indesiderata internazionale**. 
-    
-10. Selezionare la casella di controllo **Filtra messaggi inviati dai seguenti paesi o regioni** per abilitare questa funzionalità. Fare ![clic su](media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi nella finestra di dialogo di selezione fare le scelte (è supportata la selezione multipla). Ad esempio, se si sceglie di filtrare tutti i messaggi inviati dall'Australia (AU) e il **messaggio** di quarantena è l'azione configurata per i messaggi di posta indesiderata con elevata attendibilità, tutti i messaggi inviati dall'Australia verranno messi in quarantena. Scegliere **ok** per tornare al riquadro **Posta indesiderata internazionale**. <br/><br/>Per impostazione predefinita, se non sono selezionate opzioni di posta indesiderata interne, il servizio esegue il normale filtro di posta indesiderata sui messaggi inviati in tutte le lingue e da tutte le regioni. I messaggi vengono analizzati e se il messaggio viene rilevato come posta indesiderata o posta indesiderata ad alta probabilità, vengono applicate le azioni configurate. 
-  
-11. Nella pagina **Opzioni avanzate** , è possibile selezionare attivato ****, **disattivato**o **Verifica** per ogni opzione di filtro per la posta indesiderata avanzata. 
-    
-12. **In** I messaggi vengono filtrati attivamente in base alla regola associata a tale opzione. Inoltre, i messaggi vengono contrassegnati come posta indesiderata oppure viene aumentato il loro punteggio posta indesiderata, a seconda di quale opzione è stata attivata. 
-    
-13. **Disattiva** Non viene compiuta alcuna azione sui messaggi che soddisfano i criteri del filtro di posta indesiderata. Per impostazione predefinita, tutte le opzioni sono disattivate. 
-    
-14. **Prova** Non viene compiuta alcuna azione sui messaggi che soddisfano i criteri del filtro di posta indesiderata. Tuttavia, i messaggi possono essere contrassegnati aggiungendo un X-header prima che vengano recapitati al destinatario previsto. Questo X-header consente di sapere quale opzione ASF è stata confrontata. Specificando **Verifica** per ogni opzione avanzata, è possibile configurare le seguenti impostazioni di modalità test da applicare quando viene inserita una corrispondenza all'opzione test abilitata: 
+      - **Messaggio in quarantena:** Invia il messaggio in quarantena anziché ai destinatari previsti. Questa è l'azione predefinita per phishing. Se si seleziona questa opzione, nella casella **Mantieni posta indesiderata per (giorni)** specificare il numero di giorni in cui verrà messo in quarantena il messaggio di posta indesiderata. (Verrà eliminato automaticamente dopo il tempo trascorso. Il valore predefinito è 30 giorni, che corrisponde al valore massimo. Il valore minimo è 1 giorno.<br/><br/>Suggerimento: per informazioni su come gli amministratori possono gestire i messaggi di posta elettronica che risiedono nella quarantena nell'interfaccia di amministrazione di Exchange, vedere [Quarantine](quarantine.md) and [Find and release Quarantined messages As an Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > per informazioni su come configurare i messaggi di notifica di posta indesiderata da inviare agli utenti, vedere [configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md) o [configurare le notifiche di posta indesiderata in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+
+5. In **Posta elettronica inviata in blocco**, è possibile selezionare una soglia per considerare la posta elettronica inviata in blocco come posta indesiderata. Questa soglia si basa sul livello di reclamo in blocco (BCL) del messaggio. È possibile scegliere un'impostazione di soglia tra 1 e 9, dove 1 indica la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio quindi esegue l'azione configurata, ad esempio, l'invio del messaggio alla cartella Posta indesiderata del destinatario. Vedere [i valori dei livelli](bulk-complaint-level-values.md) di reclamo in blocco e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md) per ulteriori informazioni. 
+
+6. Nella pagina delle **proprietà di posta** indesiderata, è possibile impostare le opzioni per la modalità di test per il criterio configurando: 
     
       - **Nessuna** Non eseguire alcuna azione in modalità test sul messaggio. Questa è l'impostazione predefinita. 
         
       - **Aggiungere il testo X-header predefinito del test** Se si seleziona questa opzione, il messaggio viene inviato ai destinatari specificati, ma viene aggiunto anche un X-header speciale al messaggio per identificarlo come corrispondente a una specifica opzione di filtro per la posta indesiderata avanzata. 
         
-      - **Inviare un messaggio Ccn a questo indirizzo** Selezionando questa opzione viene inviata una copia nascosta del messaggio all'indirizzo di posta elettronica specificato nella casella di input. <br/><br/>Per ulteriori informazioni sulle opzioni di filtro della posta indesiderata avanzate, incluse le descrizioni di ogni opzione e il testo X-header associato a ognuno, vedere [Opzioni avanzate](advanced-spam-filtering-asf-options.md)per il filtro della posta indesiderata. 
-  
-15. Solo per i criteri personalizzati, fare clic sulla voce **di menu applica a** e quindi creare una regola basata sulle condizioni per specificare gli utenti, i gruppi e i domini in cui applicare il criterio. Se sono univoci, è possibile creare più condizioni. 
+      - **Inviare un messaggio Ccn a questo indirizzo** Selezionando questa opzione viene inviata una copia nascosta del messaggio all'indirizzo di posta elettronica specificato nella casella di input. <br/><br/>Per ulteriori informazioni sulle opzioni di filtro della posta indesiderata avanzate, incluse le descrizioni di ogni opzione e il testo X-header associato a ognuno, vedere [Opzioni avanzate](advanced-spam-filtering-asf-options.md)per il filtro della posta indesiderata.
+
+7. Solo per i criteri personalizzati, fare clic sulla voce **di menu applica a** e quindi creare una regola basata sulle condizioni per specificare gli utenti, i gruppi e i domini in cui applicare il criterio. Se sono univoci, è possibile creare più condizioni. 
     
       - Per selezionare gli utenti, scegliere **Il destinatario è**. Nella finestra di dialogo successiva, selezionare uno o più mittenti dalla propria società dall'elenco di selezione utenti, quindi fare clic su **Aggiungi**. Per aggiungere mittenti non presenti nell'elenco, digitare i relativi indirizzi di posta elettronica e quindi fare clic su **Controlla nomi**. In questa finestra è possibile anche utilizzare caratteri jolly per più indirizzi di posta elettronica (ad esempio: \*@ _domainname_). Dopo aver effettuato le selezioni, fare clic su **OK** per tornare alla schermata principale. 
         
@@ -112,12 +90,12 @@ Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le p
         
       - Per selezionare i domini, selezionare **il dominio del destinatario**. Nella finestra di dialogo successiva aggiungere i domini. Fare clic su **ok** per tornare alla schermata principale. <br/><br/>È possibile creare eccezioni all'interno della regola. Ad esempio, è possibile filtrare i messaggi da tutti i domini ad eccezione di un determinato dominio. Fare clic su **Aggiungi eccezione**e quindi creare le condizioni di eccezione simili alla modalità di creazione delle altre condizioni.<br/><br/>Applicare un criterio di posta indesiderata a un gruppo è supportato solo per i **gruppi di sicurezza abilitati alla posta**. 
   
-16. Fare clic su **salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri.
+8. Fare clic su **salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri.
 
 Il criterio predefinito non può essere disabilitato o eliminato e i criteri personalizzati hanno sempre la precedenza sul criterio predefinito. Per i criteri personalizzati, è possibile selezionare o deselezionare le caselle di controllo nella colonna **Enabled** per abilitarli o disabilitarli. Per impostazione predefinita, tutti i criteri sono abilitati. Per eliminare un criterio personalizzato, selezionare il criterio, fare clic ![sull'icona](media/ITPro-EAC-DeleteIcon.gif) **** Elimina icona Elimina e quindi confermare che si desidera eliminare il criterio.
 
 > [!TIP]
->  È possibile modificare la priorità (ordine di esecuzione) dei criteri personalizzati facendo clic sull' ![icona](media/ITPro-EAC-UpArrowIcon.gif) freccia su verso l'alto ![freccia su e](media/ITPro-EAC-DownArrowIcon.gif) freccia giù freccia giù. Il criterio con **priorità** **0** verrà eseguito per primo, seguito da **1**, **2**e così via. 
+> È possibile modificare la priorità (ordine di esecuzione) dei criteri personalizzati facendo clic sull' ![icona](media/ITPro-EAC-UpArrowIcon.gif) freccia su verso l'alto ![freccia su e](media/ITPro-EAC-DownArrowIcon.gif) freccia giù freccia giù. Il criterio con **priorità** **0** verrà eseguito per primo, seguito da **1**, **2**e così via. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Utilizzo di PowerShell per la configurazione dei criteri di filtro di protezione dalla posta indesiderata
 
@@ -145,19 +123,43 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Regolazione dei criteri del filtro della posta indesiderata per impedire falsi positivi e falsi negativi
 
-Se si desidera intraprendere un approccio aggressivo, è possibile attivare opzioni avanzate per il filtro della posta indesiderata. Per informazioni sulle impostazioni relative alla posta indesiderata per un'intera organizzazione, consultare [Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloccare la posta indesiderata con il filtro di posta indesiderata di Office 365 per prevenire il problema dei falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
-   
+È possibile abilitare tecniche avanzate per il filtraggio della posta indesiderata se si desidera perseguire un approccio più aggressivo al filtro posta indesiderata Per informazioni sulle impostazioni relative alla posta indesiderata per un'intera organizzazione, consultare [Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloccare la posta indesiderata con il filtro di posta indesiderata di Office 365 per prevenire il problema dei falsi negativi](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+
+## <a name="allowblock-lists"></a>Elenchi Consenti/blocca
+
+In alcuni casi, i filtri perderanno il messaggio oppure richiederanno tempo affinché i sistemi vengano aggiornati. In questo caso, i criteri di protezione da posta indesiderata dispongono di un elenco Consenti e blocca disponibile per ignorare il verdetto corrente. Questa opzione deve essere utilizzata solo con parsimonia, in quanto gli elenchi possono diventare ingestibili e temporaneamente poiché il nostro stack di filtraggio dovrebbe fare quello che dovrebbe fare.
+
+Entrambi gli elenchi Consenti e blocca sono configurati come parte di un criterio di protezione dalla posta indesiderata dei clienti:
+
+1. Nella sezione **Consenti elenchi** è possibile specificare voci, ad esempio mittenti o domini, che verranno sempre recapitati nella posta in arrivo. La posta elettronica proveniente da tali voci non viene elaborata dal filtro di protezione da posta indesiderata. 
+    
+      - Aggiungere i mittenti attendibili a Elenco mittenti consentiti. Fare ****![clic su modifica](media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera consentire. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi** consentiti. 
+        
+      - Aggiungere i domini attendibili a Elenco di domini consentiti. Fare ****![clic su modifica](media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera consentire. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi** consentiti. 
+
+> [!CAUTION]
+> Non è mai necessario elencare i domini accettati (domini proprietari) o domini comuni come Microsoft.com, office.com e così via in un elenco di indirizzi consentiti. Ciò consentirebbe facilmente agli spoofing di inviare messaggi di posta illimitati nell'organizzazione.
+
+2. Nella pagina **Elenchi contatti bloccati**, è possibile specificare voci, come mittenti o domini, che verranno sempre contrassegnati come Posta indesiderata. Il servizio applica l'azione di probabilità di posta indesiderata configurata alla posta elettronica che corrisponde a tali voci. 
+    
+      - Aggiungere i mittenti indesiderati all'elenco dei mittenti bloccati. Fare ****![clic su modifica](media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi del mittente che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati** . 
+        
+      - Aggiungere i domini indesiderati all'elenco dei domini bloccati. Fare ****![clic su modifica](media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati** .
+
+> [!TIP]
+>  Potrebbe verificarsi una situazione in cui l'organizzazione potrebbe non essere d'accordo con il verdetto fornito dal servizio. In questo caso, è possibile che si desideri mantenere permanente l'elenco Consenti o blocca. Tuttavia, se si intende inserire un dominio nell'elenco Consenti per periodi di tempo prolungati, è consigliabile informare il mittente per assicurarsi che il proprio dominio sia autenticato e impostato su DMARC Reject, se non lo è.
+
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="sectionSection6"> </a>
 
-[Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md)
-  
-[Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
+[Configurazione del dominio per DMARC](use-dmarc-to-validate-email.md)
   
 [Quarantena](quarantine.md)
   
 [Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   
 [Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+
+[Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md)
   
 

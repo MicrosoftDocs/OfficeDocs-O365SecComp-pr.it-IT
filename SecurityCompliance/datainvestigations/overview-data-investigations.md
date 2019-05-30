@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547911"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
 La fuoriuscita di dati si verifica quando un documento contenente contenuti riservati, sensibili o dannosi viene rilasciato in un ambiente non attendibile. Quando viene rilevata una fuoriuscita di dati, è importante contenere rapidamente l'ambiente, valutare la dimensione e le posizioni del versamento, esaminare le attività degli utenti e quindi eliminare i dati versati dal servizio. Utilizzando lo strumento nuovo data Investigation (Preview), è possibile eseguire la ricerca di dati sensibili, dannosi o fuori luogo tra Office 365, esaminare cosa è successo e intraprendere le azioni appropriate per correggere la fuoriuscita.  
 
 In questo articolo viene descritto come utilizzare le funzionalità del nuovo strumento di analisi dei dati (Preview) per risolvere uno scenario di fuoriuscita dei dati.
+
+## <a name="permissions"></a>Autorizzazioni
+
+Per accedere e condurre un'indagine sui dati, è necessario essere membri del gruppo di ruolo ricercatore di dati. Per ulteriori informazioni, vedere [assegnare le autorizzazioni per le indagini sui dati](permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Analisi dei dati (anteprima) flusso di lavoro 
 

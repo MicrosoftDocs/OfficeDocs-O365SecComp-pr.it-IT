@@ -3,18 +3,18 @@ title: Panoramica del nuovo centro conformità di Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul nuovo centro conformità di Microsoft 365, incluso quello che contiene, su come ottenerlo e sui passaggi successivi.
-ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547926"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Panoramica del nuovo centro conformità Microsoft 365
 
@@ -89,9 +89,14 @@ Oltre ai collegamenti nelle schede nella Home page, è disponibile un riquadro d
 
 Prima di tutto, assicurarsi di avere le [licenze e le autorizzazioni](microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriate. Accedere quindi a [https://compliance.microsoft.com](https://compliance.microsoft.com). Se il nuovo centro conformità non è ancora disponibile, lo sarà presto.
 
-### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>Non è possibile trovare alcune delle impostazioni di conformità. What do I do?
+### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>Alcune delle funzionalità di conformità non sono disponibili nel centro conformità di Microsoft 365. What do I do?
 
-È ancora in aggiunta la funzionalità al centro conformità Microsoft 365. Se non si riesce a trovare un elemento, ad esempio la ricerca del registro di controllo, provare a passare al centro sicurezza[https://protection.office.com](https://protection.office.com)& Compliance di Office 365 (). Le configurazioni vengono salvate automaticamente nel centro conformità di Office 365 Security & e nel nuovo centro conformità di Microsoft 365.
+È ancora in aggiunta la funzionalità al centro conformità Microsoft 365. Se non si riesce a trovare un elemento, ad esempio la ricerca del registro di controllo, utilizzare il centro[https://protection.office.com](https://protection.office.com)sicurezza & Compliance Office 365 (). Le configurazioni vengono salvate automaticamente nel centro conformità di Office 365 Security & e nel nuovo centro conformità di Microsoft 365.
+
+Per accedere al centro conformità di Microsoft 365, nel riquadro di spostamento a sinistra dello schermo, scegliere **altre risorse**e quindi in **Office 365 Security & Compliance Center**scegliere **Apri**.
+
+![Altre risorse](media/MoreResourcesShowAll.png)
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 
