@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 audience: Admin
-ms.date: 03/05/2019
+ms.date: 05/17/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare collegamenti sicuri per proteggere l'organizzazione da attacchi di phishing e altri.
-ms.openlocfilehash: fa70440a5192600821ac5d627baf630c3243716a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4db330dac331246b8d7ae302c93322373db64909
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077542"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590559"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
@@ -36,58 +36,12 @@ ms.locfileid: "34077542"
 > [!IMPORTANT]
 > Questo articolo è destinato ai clienti di Office 365 Enterprise. Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 ATP Safe Links (parte di [Advanced Threat Protection](office-365-atp.md)) può aiutare a proteggere l'organizzazione fornendo la verifica del tempo di clic degli indirizzi Web (URL) nei [messaggi di posta elettronica](#how-atp-safe-links-works-with-urls-in-email) e nei [documenti di Office](#how-atp-safe-links-works-with-urls-in-office-documents). La protezione è definita tramite i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) impostati dal team di sicurezza di Office 365. 
+Office 365 ATP Safe Links (parte di [Advanced Threat Protection](office-365-atp.md)) può aiutare a proteggere l'organizzazione fornendo la verifica del tempo di clic degli indirizzi Web (URL) nei [messaggi di posta elettronica](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) e nei [documenti di Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protezione è definita tramite i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) impostati dal team di sicurezza di Office 365.
   
 Una volta che i criteri dei collegamenti sicuri di ATP sono sul posto, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono [visualizzare i report per Advanced Threat Protection](view-reports-for-atp.md). Le informazioni contenute in tali relazioni consentono al team di sicurezza di eseguire ulteriori operazioni per proteggere l'organizzazione o gli incidenti di sicurezza della ricerca.
 
 Quando [si aggiungono nuove funzionalità a ATP](office-365-atp.md#new-features-in-office-365-atp), il team di sicurezza di Office 365 può aggiungere o modificare i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)dell'organizzazione. È inoltre possibile notare modifiche e miglioramenti, ad esempio le [pagine di avviso](atp-safe-links-warning-pages.md) appena rivedute e il rendering del collegamento nativo in Outlook.
          
-## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Funzionamento dei collegamenti sicuri di ATP con gli URL nella posta elettronica
-
-A livello elevato, ecco come funziona la protezione dei collegamenti sicuri di ATP per gli URL nella posta elettronica (ospitati in Office 365, non in locale):
-  
-1. Gli utenti ricevono messaggi di posta elettronica, alcuni dei quali contengono URL.
-    
-2. Tutti i messaggi di posta elettronica passano attraverso Exchange Online Protection, dove vengono applicati i filtri Internet (IP) e busta, la protezione antimalware basata sulle firme, i filtri anti-spam e antivirus. 
-    
-3. La posta elettronica arriva nelle cassette postali degli utenti.
-    
-4. Un utente accede a Office 365 e passa alla posta in arrivo.
-    
-5. L'utente apre un messaggio di posta elettronica e fa clic su un URL nel messaggio di posta elettronica.
-    
-6. La caratteristica collegamenti sicuri ATP verifica immediatamente l'URL prima di aprire il sito Web. L'URL viene identificato come bloccato, dannoso o sicuro.
-    
-    - Se l'URL è associato a un sito Web incluso in un [elenco di URL personalizzato "non riscrivere"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) per un criterio che si applica all'utente, il sito Web verrà aperto. 
-    
-    - Se l'URL è incluso nell' [elenco degli URL bloccati personalizzati](set-up-a-custom-blocked-urls-list-wtih-atp.md)dell'organizzazione, viene visualizzata una [pagina di avviso](atp-safe-links-warning-pages.md) . 
-    
-    - Se l'URL è associato a un sito Web che è stato determinato come dannoso, viene visualizzata una [pagina di avviso](atp-safe-links-warning-pages.md) . 
-    
-    - Se l'URL passa a un file scaricabile e i criteri per i [collegamenti sicuri ATP](set-up-atp-safe-links-policies.md) dell'organizzazione sono configurati per l'analisi di tali contenuti, il file scaricabile viene controllato. 
-    
-    - Se l'URL è determinato per la sicurezza, il sito Web verrà aperto.
-    
-## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Funzionamento dei collegamenti sicuri di ATP con gli URL nei documenti di Office
-
-A livello elevato, ecco come funziona la protezione dei collegamenti sicuri di ATP per gli URL nelle applicazioni di ProPlus di Office 365 (versioni correnti di Word, Excel e PowerPoint su Windows o Mac, app di Office su dispositivi iOS o Android, Visio su Windows, OneNote online e Office Online):
-  
-1. Gli utenti hanno installato Office 365 ProPlus nel computer, nello smartphone o nel tablet. (Oppure, utilizzano Office Online nel browser).
-    
-2. Un utente apre una parola, Excel, PowerPoint o Visio e accede a Office 365 Enterprise utilizzando l'account aziendale o dell'Istituto di istruzione. Il documento contiene gli URL.
-    
-3. Quando l'utente fa clic su un URL del documento, il collegamento è controllato dal servizio collegamenti sicuri di ATP.
-    
-      - Se l'URL è associato a un sito Web incluso in un [elenco di URL personalizzato "non riscrivere"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) per un criterio che si applica all'utente, l'utente viene indirizzato al sito Web. 
-    
-      - Se l'URL è associato a un sito Web incluso nell' [elenco degli URL bloccati personalizzati](set-up-a-custom-blocked-urls-list-wtih-atp.md)dell'organizzazione, l'utente viene indirizzato a una [pagina di avviso](atp-safe-links-warning-pages.md).
-    
-      - Se l'URL è associato a un sito Web che è stato determinato come dannoso, l'utente viene indirizzato a una [pagina di avviso](atp-safe-links-warning-pages.md).
-    
-      - Se l'URL passa a un file scaricabile e i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) sono configurati per l'analisi di tali download, viene controllato il file scaricabile. 
-    
-      - Se l'URL è considerato sicuro, l'utente viene reindirizzato al sito Web.
-
 ## <a name="how-to-get-atp-safe-links-protection"></a>Come ottenere la protezione di collegamenti sicuri ATP
 
 **Prima di tutto, assicurarsi che l'abbonamento includa [protezione avanzata dalle minacce](office-365-atp.md)**. ATP è incluso nelle sottoscrizioni, ad esempio [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education a5 e così via. Se nell'organizzazione è presente un abbonamento a Office 365 che non include Office 365 ATP, è possibile acquistare ATP come componente aggiuntivo. Per ulteriori informazioni, vedere le risorse seguenti: 
