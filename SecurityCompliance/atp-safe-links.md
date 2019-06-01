@@ -22,19 +22,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare collegamenti sicuri per proteggere l'organizzazione da attacchi di phishing e altri.
-ms.openlocfilehash: 4db330dac331246b8d7ae302c93322373db64909
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 1be7db8ad96a5fd0b46500288e674946e763385a
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590559"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652529"
 ---
 # <a name="office-365-atp-safe-links"></a>Collegamenti sicuri di Office 365 ATP
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Panoramica dei collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti di Office 365 Enterprise. Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Office 365 ATP Safe Links (parte di [Advanced Threat Protection](office-365-atp.md)) può aiutare a proteggere l'organizzazione fornendo la verifica del tempo di clic degli indirizzi Web (URL) nei [messaggi di posta elettronica](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) e nei [documenti di Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protezione è definita tramite i [criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) impostati dal team di sicurezza di Office 365.
   

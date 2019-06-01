@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepararsi per il Centro sicurezza e conformità di Microsoft 365
-ms.openlocfilehash: 9af224f72fc55e6981cf75c6c5596bde6645f75a
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547901"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652489"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>I nuovi Microsoft 365 Security Center e Microsoft 365 Compliance Center sono ora generalmente disponibili
 
@@ -56,28 +56,28 @@ Sarà necessario accedere al centro conformità Microsoft 365 all'indirizzo [htt
 
 Il nuovo Centro sicurezza di Microsoft 365 e il nuovo centro conformità di Microsoft 365 sono ora generalmente disponibili per i clienti Microsoft 365 alla fine di marzo 2019. 
 
-Se si dispone di un altro abbonamento, ad esempio un piano autonomo che include il Centro sicurezza & conformità di Office 365, è possibile accedere al centro sicurezza Microsoft 365 e al più presto Microsoft 365 Compliance Center. Per ulteriori informazioni, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Se si dispone di un altro abbonamento, ad esempio un piano autonomo che include il Centro sicurezza & conformità di Office 365, è possibile accedere al centro sicurezza di Microsoft 365 e al più presto a Microsoft 365 Compliance Center. Per ulteriori informazioni, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ### <a name="easy-access"></a>Facile accesso!
 
-Con una navigazione migliorata, soluzioni integrate e un'esperienza semplificata, è possibile visualizzare e accedere alle informazioni più interessate e sfruttare le potenti soluzioni di sicurezza e conformità in Microsoft 365. Mentre più funzionalità e soluzioni vengono aggiunte nei prossimi mesi, il centro[https://protection.microsoft.com](https://protection.microsoft.com)sicurezza & Compliance Office 365 è ancora disponibile.
+Con una navigazione migliorata, soluzioni integrate e un'esperienza semplificata, è possibile visualizzare e accedere alle informazioni più interessate e sfruttare le potenti soluzioni di sicurezza e conformità in Microsoft 365. Mentre più funzionalità e soluzioni vengono aggiunte nei prossimi mesi, il centro[https://protection.microsoft.com](https://protection.microsoft.com)sicurezza & conformità di Office 365 è ancora disponibile.
 
-Per accedere al centro conformità & sicurezza di Office 365, nel riquadro di spostamento a sinistra dello schermo, scegliere **altre risorse**. Quindi, in **Office 365 Security & Compliance Center**, scegliere **Apri**.
+Per accedere al centro conformità & sicurezza di Office 365, nel riquadro di spostamento a sinistra dello schermo, scegliere **altre risorse**. Quindi, sotto **Office 365 security & Compliance Center**, scegliere **Apri**.
 
 ### <a name="smooth-transition"></a>Transizione agevole!
 
-È possibile prevedere una transizione graduale ai nuovi centri. Alla fine, l'ex Microsoft 365 Security & Compliance[https://protection.microsoft.com](https://protection.microsoft.com)Center () verrà ritirato. Anche se l'esperienza dell'amministratore cambierà, ciò non influisce sulle configurazioni di conformità e sicurezza correnti. Se l'organizzazione dispone di Microsoft 365 Enterprise E3 o E5, gli amministratori della sicurezza e della conformità possono:
+È possibile prevedere una transizione graduale ai nuovi centri. Infine, l'ex centro[https://protection.microsoft.com](https://protection.microsoft.com)protezione & conformità di Microsoft 365 verrà ritirato. Anche se l'esperienza dell'amministratore cambierà, ciò non influisce sulle configurazioni di conformità e sicurezza correnti. Se l'organizzazione dispone di Microsoft 365 Enterprise E3 o E5, gli amministratori della sicurezza e della conformità possono:
 
 - Passare direttamente a [https://security.microsoft.com](https://security.microsoft.com) e [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>oppure  
 - Passare all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e passare da qui (nel riquadro di spostamento, fare clic su **Mostra tutto**, quindi scegliere **sicurezza** o **conformità**).
 
-È inoltre possibile configurare e gestire le impostazioni nel centro di conformità di Office 365 Security & ([https://protection.office.com](http://protection.office.com)) esistente. Le configurazioni verranno mantenute sia nel centro conformità di Office 365 Security & Compliance che nel nuovo Centro sicurezza Microsoft 365 e Microsoft 365 Compliance Center.  
+È inoltre possibile configurare e gestire le impostazioni nel centro[https://protection.office.com](http://protection.office.com)di sicurezza & Compliance di Office 365 esistente. Le configurazioni verranno mantenute sia nel centro sicurezza & conformità di Office 365 che nel centro protezione Microsoft 365 e Microsoft 365 Compliance Center.  
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 
 ### <a name="licenses"></a>Licenze
 
-Per ottenere il nuovo Centro sicurezza Microsoft 365 e il centro conformità Microsoft 365, è necessario che l'organizzazione disponga di una sottoscrizione a Microsoft 365 E3 o E5 oppure di un equivalente per contratti multilicenza (costituito da Office 365 Enterprise E3 o E5, Enterprise Mobility + Security E3 o E5 e Windows 10 Enterprise E3/E5). Per ulteriori informazioni su questi piani, vedere [Discover the Microsoft 365 Enterprise Solution that ' s right for you](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Per ottenere il nuovo Centro sicurezza Microsoft 365 e il centro conformità Microsoft 365, è necessario che l'organizzazione disponga di una sottoscrizione a Microsoft 365 E3 o E5 oppure di un equivalente per contratti multilicenza (costituito da Office 365 E3 o E5, Enterprise Mobility + Security E3 o E5 e Windows 10 Enterprise E3/E5). Per ulteriori informazioni su questi piani, vedere [Discover the Microsoft 365 solution that ' s right for you](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
@@ -89,13 +89,13 @@ Gli utenti devono essere assegnati all'amministratore globale, all'amministrator
 
 - Gli amministratori della sicurezza, gli operatori di sicurezza e i lettori di sicurezza possono accedere al centro sicurezza
 
- Per ulteriori informazioni su questi ruoli, vedere [Permissions in the Office 365 Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md).
+ Per ulteriori informazioni su questi ruoli, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
  
 Nella tabella seguente sono riepilogati gli utenti che possono accedere a vari portali in Azure, Office 365 e Windows:
 
 |Portale |Amministratore globale |Amministratore della sicurezza, operatore di sicurezza o lettore di sicurezza|Amministratore di conformità o amministratore dei dati di conformità |
 |---------|---------|---------|---------|
-|[Centro sicurezza e conformità di &](https://protection.office.com) |Sì |Sì  |Sì |
+|[Centro sicurezza & conformità](https://protection.office.com) |Sì |Sì  |Sì |
 |[Centro sicurezza Microsoft 365](https://security.microsoft.com) |Sì  | Sì  | No        |
 |[Centro conformità Microsoft 365](https://compliance.microsoft.com) | Sì | No | Sì |
 |[Compliance Manager](https://aka.ms/compliancemanager) |Sì | Sì |Sì  |
@@ -118,6 +118,6 @@ Nella tabella seguente sono riepilogati gli utenti che possono accedere a vari p
 
 [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Descrizione del servizio centro conformità di Office 365 Security &](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+[Descrizione del servizio Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 Per fornire commenti e suggerimenti su Microsoft 365 Security Center e Microsoft 365 Compliance Center, ad esempio idee per nuove funzionalità, visitare [i commenti e suggerimenti dei clienti per Microsoft Office 365](https://office365.uservoice.com)
