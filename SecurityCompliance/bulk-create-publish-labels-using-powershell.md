@@ -12,37 +12,37 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365, è possibile utilizzare le etichette per implementare una pianificazione di conservazione per l'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
-ms.openlocfilehash: 09d1a1d2fa6faa333f9b53a7928abdc7409073b6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: In Office 365, è possibile utilizzare le etichette di conservazione per implementare una pianificazione di conservazione per l'organizzazione. I responsabili dei record manager o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette di conservazione e i criteri per le etichette di conservazione. Innanzitutto, si crea un elenco delle etichette di conservazione e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette di conservazione e i criteri per le etichette di conservazione utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette di conservazione necessarie per la pianificazione della conservazione.
+ms.openlocfilehash: 1b6ab634ee0f168392981026367a3b8b2e98f5f8
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152108"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590549"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 
-In Office 365, è possibile usare le etichette per implementare una pianificazione di conservazione dell'organizzazione. Nel ruolo di record manager o responsabile della conformità, potrebbe essere necessario creare e pubblicare centinaia di etichette. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità &amp;; tuttavia, creare le etichette una alla volta richiede molto tempo e non è pratico.
+In Office 365, è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione dell'organizzazione. I responsabili dei record o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico.
   
 Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
   
-Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette](labels.md).
+Per ulteriori informazioni sulle etichette di conservazione, vedere [Panoramica delle etichette](labels.md).
   
 ## <a name="disclaimer"></a>Dichiarazione di non responsabilità
 
 Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
   
-## <a name="step-1-create-a-csv-file-for-creating-the-labels"></a>Passaggio 1: creare un file .csv per la creazione delle etichette
+## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>Passaggio 1: creare un file .csv per la creazione delle etichette di conservazione
 
-Innanzitutto, è necessario creare un file .csv contenente un elenco delle etichette con le relative impostazioni di conservazione. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
+Innanzitutto, è necessario creare un file .csv contenente un elenco delle etichette di conservazione con le relative impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
   
 Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
   
 Note:
   
-- Se non si fornisce un file di origine per la creazione delle etichette, lo script va avanti e chiede il file di origine per la pubblicazione delle etichette (vedere la sezione successiva), quindi lo script pubblica solo le etichette esistenti.
+- Se non si fornisce un file di origine per la creazione delle etichette di conservazione, lo script va avanti e chiede il file di origine per la pubblicazione delle etichette di conservazione (vedere la sezione successiva), quindi lo script pubblica solo le etichette di conservazione esistenti.
     
-- Se il file .csv contiene un'etichetta con lo stesso nome di un'altra già esistente, lo script la ignora creando l'etichetta. Non vengono create etichette duplicate.
+- Se il file .csv contiene un'etichetta di conservazione con lo stesso nome di un'altra già esistente, lo script ignora la creazione di quell’etichetta. Non vengono create etichette di conservazione duplicate.
     
 - Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.
     
@@ -58,17 +58,17 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 ## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>Passaggio 2: creare un file .csv per la pubblicazione delle etichette
 
-È quindi il momento di creare un file .csv contenente un elenco dei criteri delle etichette con i relativi percorsi e altre impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
+È quindi il momento di creare un file .csv contenente un elenco dei criteri delle etichette di conservazione con i relativi percorsi e altre impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
   
 Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
   
 Note:
   
-- Se non si fornisce un file di origine per la pubblicazione delle etichette, lo script crea le etichette (vedere la sezione precedente), ma non le pubblica.
+- Se non si fornisce un file di origine per la pubblicazione delle etichette di conservazione, lo script crea le etichette (vedere la sezione precedente), ma non le pubblica.
     
-- Se il file .csv contiene un criterio per le etichette con lo stesso nome di un altro già esistente, lo script lo ignora creando il criterio per l'etichetta. Non vengono creati criteri per le etichette duplicati.
+- Se il file .csv contiene un criterio per le etichette di con conservazione con lo stesso nome di un altro già esistente, lo script ignora la creazione di quel criterio. Non vengono creati criteri per le etichette di conservazione duplicati.
     
-- Lo script pubblica solo etichette che vengono applicate manualmente al contenuto. Lo script non supporta etichette applicate automaticamente al contenuto.
+- Lo script pubblica solo etichette di conservazione che vengono applicate manualmente al contenuto. Lo script non supporta etichette di conservazione applicate automaticamente al contenuto.
     
 - Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.
     
@@ -713,9 +713,9 @@ Seguire i passaggi seguenti:
   
 - [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-labels"></a>Passaggio 5: eseguire lo script di PowerShell per creare e pubblicare le etichette
+## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Passaggio 5: eseguire lo script di PowerShell per creare e pubblicare le etichette di conservazione
 
-Dopo essersi connessi a PowerShell in Centro sicurezza e conformità, eseguire lo script che consente di creare e pubblicare le etichette.
+Dopo essersi connessi a PowerShell nel Centro sicurezza e conformità, eseguire lo script che consente di creare e pubblicare le etichette di conservazione.
   
 1. Nella sessione di PowerShell nel Centro sicurezza e conformità, inserire il percorso, seguito dai caratteri .\ e il nome file dello script, quindi premere INVIO per eseguire lo script, ad esempio:
     
@@ -733,7 +733,7 @@ Dopo essersi connessi a PowerShell in Centro sicurezza e conformità, eseguire l
 
 ## <a name="step-6-view-the-log-file-with-the-results"></a>Passaggio 6: visualizzare il file di log con i risultati
 
-Quando si esegue lo script, viene generato un file di log che registra ogni azione e il relativo risultato. Il file di log include tutti i metadati relativi a quali etichette sono state create e a quali sono state pubblicate. È possibile trovare il file di log in questo percorso (tenere presente che le cifre nel nome file possono variare).
+Quando si esegue lo script, viene generato un file di log che registra ogni azione e il relativo risultato. Il file di log include tutti i metadati relativi alle etichette di conservazione create e a quelle pubblicate. È possibile trovare il file di log in questo percorso (tenere presente che le cifre nel nome file possono variare).
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
