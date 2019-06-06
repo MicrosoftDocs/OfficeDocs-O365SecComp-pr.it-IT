@@ -77,19 +77,20 @@
 #### [Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # Gestione dei record
-## [Gestione del piano di archiviazione](file-plan-manager.md)
-## [Etichette di conservazione](labels.md)
-### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Gestione record](records-management.md)
+## Piano di archiviazione
+### [Gestione del piano di archiviazione](file-plan-manager.md)
+### [Etichette di conservazione](labels.md)
 ### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Criteri di conservazione basati su eventi](event-driven-retention.md)
-### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
-## [Revisioni per l'eliminazione](disposition-reviews.md)
-## Gestione dei record di monitor
-### [Visualizzare i rapporti della governance dei dati](view-the-data-governance-reports.md)
-### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 ### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
+### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
+### [Visualizzare i report di governance dei dati](view-the-data-governance-reports.md)
+## Eventi
+### [Criteri di conservazione basati su eventi](event-driven-retention.md)
+### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
+## [Eliminazione](disposition-reviews.md)
 ## Altre informazioni sulla gestione dei record
-### [Guardare i video del team di Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
+### [Video sulla gestione dei record](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Gestire la governance dei dati
 ## [Importare dati](importing-pst-files-to-office-365.md)
@@ -223,21 +224,6 @@
 ## [Rilevare e rimediare a concessioni di consenso illecite in Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
-# Gestione dei record
-## [Gestione record](records-management.md)
-## Piano di archiviazione
-### [Gestione del piano di archiviazione](file-plan-manager.md)
-### [Etichette di conservazione](labels.md)
-### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
-### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
-### [Visualizzare i report di governance dei dati](view-the-data-governance-reports.md)
-## Eventi
-### [Criteri di conservazione basati su eventi](event-driven-retention.md)
-### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
-## [Eliminazione](disposition-reviews.md)
-## Altre informazioni sulla gestione dei record
-### [Video sulla gestione dei record](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Gestire la governance dei dati
 ## [Importare dati](importing-pst-files-to-office-365.md)
