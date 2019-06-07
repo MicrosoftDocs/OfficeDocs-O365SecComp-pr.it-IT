@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta di conservazione applicate su di esso. La conservazione basata su eventi viene generalmente utilizzata nel corso di un processo di gestione dei record.
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154628"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728623"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -103,7 +103,7 @@ Una volta scelto un tipo di evento e creata l'etichetta, il tipo di evento non p
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Passaggio 3: pubblicare o applicare automaticamente l'etichetta
 
-Come qualsiasi etichetta, è necessario pubblicare o applicare automaticamente un'etichetta basata su eventi in modo che venga applicata manualmente o automaticamente ai contenuti. È possibile effettuare questa operazione nella pagina **Etichette** o or **Criteri delle etichette**. Le etichette che classificano il contenuto come record possono essere pubblicate e applicate solo manualmente al contenuto. 
+Come per qualsiasi etichetta, è necessario pubblicare o applicare automaticamente un'etichetta basata su eventi perché venga applicata manualmente o automaticamente al contenuto. È possibile effettuare questa operazione nella pagina **Etichette** o **Criteri delle etichette**. 
   
 ![Opzioni per pubblicare o applicare automaticamente un'etichetta](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
