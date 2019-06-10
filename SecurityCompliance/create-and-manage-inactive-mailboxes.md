@@ -3,7 +3,7 @@ title: Creare e gestire le cassette postali inattive in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: È possibile creare una cassetta postale inattiva in Office 365 applicando un criterio di conservazione o un blocco di Office 365 alla cassetta postale, quindi eliminando l'account utente di Office 365 corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
-ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
+ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151228"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768951"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Creare e gestire le cassette postali inattive in Office 365
 
@@ -36,7 +36,7 @@ Office 365 rende possibile conservare il contenuto delle cassette postali elimin
     
 - La licenza associata a una cassetta postale di Exchange Online eliminata sarà disponibile dopo aver eliminato l'account utente di Office 365 corrispondente. È quindi possibile [assegnare licenze agli utenti di Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a un altro utente. 
     
-- Se non si applica un blocco per controversia legale o un criterio di conservazione di Office 365 a una cassetta postale prima della sua eliminazione, il contenuto non verrà conservato e non potrà essere trovato. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
+- Se un blocco per controversia legale o un criterio di conservazione di Office 365 (configurato per mantenere o conservare e quindi eliminare il contenuto) non viene applicato a una cassetta postale prima che venga eliminato, il contenuto della cassetta postale non verrà mantenuto o individuabile. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
     
 - For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Per ulteriori informazioni sui criteri di conservazione di Office 365, vedere [Panoramica dei criteri di conservazione in Office 365](retention-policies.md).
   
@@ -46,7 +46,7 @@ La realizzazione di una cassetta postale inattiva comporta due passaggi: 1) l'in
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Passaggio 1: applicare il blocco per controversia legale a una cassetta postale o applicare un criterio di conservazione di Office 365
 
-Applicando a una cassetta postale il blocco per controversia legale o un criterio di conservazione di Office 365, il contenuto viene mantenuto nella cassetta postale prima che venga eliminata. Con entrambi i tipi di blocchi viene conservato tutto il contenuto della cassetta postale, compresi gli elementi eliminati e le versioni originali degli elementi modificati. Gli elementi eliminati e modificati vengono conservati nella cassetta postale inattiva per un determinato periodo oppure finché non viene eliminata definitivamente la cassetta postale inattiva rimuovendo il blocco o i criteri di conservazione applicati alla cassetta postale inattiva.
+L'inserimento di una cassetta postale in un blocco per controversia legale o l'applicazione di un criterio di conservazione di Office 365 (configurato per conservare o conservare e quindi eliminare il contenuto) conserva il contenuto della cassetta postale prima che venga eliminato. Con entrambi i tipi di blocchi viene conservato tutto il contenuto della cassetta postale, compresi gli elementi eliminati e le versioni originali degli elementi modificati. Gli elementi eliminati e modificati vengono conservati nella cassetta postale inattiva per un determinato periodo oppure finché non viene eliminata definitivamente la cassetta postale inattiva rimuovendo il blocco o i criteri di conservazione applicati alla cassetta postale inattiva.
   
 Se un blocco è già attivo in una cassetta postale o se un criterio di conservazione di Office 365 è già applicato a una cassetta postale, allora sarà semplicemente necessario eliminare l'account utente di Office 365 corrispondente come descritto nel passaggio 2.
   
@@ -102,7 +102,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Ricerca ed esportazione del contenuto di una cassetta postale inattiva
 
-È possibile accedere al contenuto della cassetta postale inattiva utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+È possibile accedere al contenuto della cassetta postale inattiva utilizzando lo strumento di ricerca contenuto nel centro sicurezza & conformità. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Ricerca contenuto in Office 365](content-search.md)
     
