@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250319"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852620"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
 
@@ -37,11 +37,11 @@ Nella versione iniziale di AIR del 2019 aprile, gli avvisi generati dai criteri 
 3. Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
 4. Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
 
-***Nota**: a questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso all'interno del Centro sicurezza & compliance con notifiche tramite posta elettronica disattivata. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
+***Nota**: a questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso nel centro sicurezza & conformità con le notifiche di posta elettronica disattivate. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
 
-Per visualizzare gli avvisi, nel centro sicurezza & Compliance scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
+Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
-Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro conformità di sicurezza &, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
+Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche degli avvisi di analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
 ![Avvisi relativi al collegamento alle indagini](media/air-alerts-page-details.png) 
 
@@ -96,7 +96,7 @@ Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azio
 Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
 
 - Vengono ricercati messaggi di posta elettronica simili in altri cluster di posta elettronica.
-- Il segnale viene condiviso con altre piattaforme, ad esempio [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
 - Viene effettuato un controllo in Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
 - Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative all'attività degli utenti. 
@@ -121,7 +121,7 @@ Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che veng
 
 ## <a name="get-started"></a>Attività iniziali
 
-Per accedere alle indagini, come un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza, passare al centro sicurezza &[https://protection.office.com](https://protection.office.com)Compliance () ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
+Per accedere alle indagini, come un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza, passare al centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità () ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
 
 - Nella barra di spostamento a sinistra, **** > passare a avvisi**visualizzazione**avvisi, aprire uno degli avvisi correlati all'analisi, quindi fare clic sul collegamento **Visualizza analisi** nella parte inferiore del riquadro a comparsa di avviso. 
 
@@ -131,7 +131,7 @@ Per accedere alle indagini, come un amministratore globale di Office 365, un amm
 
     oppure
 
-- Visitare il dashboard di gestione delle minacce (nel centro sicurezza e conformità di &, accedere a **Threat Management** > **Dashboard**).
+- Visitare il dashboard di gestione delle minacce (nel centro sicurezza & conformità, accedere a **Threat Management** > **Dashboard**).
 
 ![Widget aria](media/air-widgets.png)
 
@@ -242,11 +242,12 @@ Nella scheda **computer** , è possibile visualizzare tutti i computer identific
 
 ![Pagina macchina dell'analisi aerea](media/air-investigationmachinepage.png)
 
-Nell'ambito dell'inchiesta, AIR correla le minacce alla posta elettronica ai dispositivi. Ad esempio, un'analisi passa un hash di file dannosi su [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) per esaminare. Questo consente l'analisi automatizzata delle macchine rilevanti per gli utenti, per garantire che le minacce vengano affrontate sia nel cloud che negli endpoint. 
+Nell'ambito dell'inchiesta, AIR correla le minacce alla posta elettronica ai dispositivi. Ad esempio, un'analisi passa un hash di file dannosi a [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) per esaminare. Questo consente l'analisi automatizzata delle macchine rilevanti per gli utenti, per garantire che le minacce vengano affrontate sia nel cloud che negli endpoint. 
 
 È possibile:
 - Ottenere una panoramica visiva dei computer e delle minacce correnti trovati.
-- Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini di Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) ATP correlate in Windows Defender ATP Security Center.
+- Selezionare un computer per aprire una visualizzazione che si riferisce alle [indagini ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) correlate in Microsoft Defender Security Center.
 
 ### <a name="entity-investigation"></a>Indagine su entità
 

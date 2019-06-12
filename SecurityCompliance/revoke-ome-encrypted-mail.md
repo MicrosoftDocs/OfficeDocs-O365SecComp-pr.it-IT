@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: In qualità di amministratore di Office 365, è possibile revocare alcuni messaggi di posta elettronica crittografati con la crittografia avanzata dei messaggi di Office 365.
-ms.openlocfilehash: 098ce50791152c8bbb4e4692d6fb85e4c2c7cb58
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e55129f68c7add589bd973b36f069d7cdbf631cf
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156788"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857616"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocare un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
 
@@ -27,7 +27,7 @@ La revoca del messaggio di posta elettronica viene offerta come parte della crit
 
 Questo articolo fa parte di una serie più ampia di articoli sulla [crittografia dei messaggi di Office 365](ome.md).
 
-È possibile che sia necessario revocare un messaggio di posta elettronica che è già stato inviato. Se il messaggio di posta elettronica è stato crittografato utilizzando la crittografia avanzata dei messaggi di Office 365 e si è un amministratore di Office 365, è possibile eseguire questa operazione per la posta elettronica in determinate condizioni. In questo articolo viene descritto in quali circostanze è possibile e come procedere.
+Se un messaggio è stato crittografato utilizzando la crittografia avanzata dei messaggi di Office 365 e si è un amministratore di Office 365, è possibile revocare il messaggio in determinate condizioni. In questo articolo vengono descritte le circostanze in cui la revoca è possibile e come procedere.
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Messaggi di posta elettronica crittografati che è possibile revocare
 
@@ -37,7 +37,7 @@ Se un destinatario riceve un'esperienza basata sul collegamento o un'esperienza 
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>Esperienza dei destinatari per i messaggi di posta elettronica crittografati
 
-Dopo che un messaggio di posta elettronica è stato revocato, il destinatario riceverà un errore durante il tentativo di accedere alla posta elettronica crittografata tramite il portale di crittografia dei messaggi di Office 365: "il messaggio è stato revocato dal mittente".
+Dopo che un messaggio di posta elettronica è stato revocato, il destinatario riceve un errore quando accede alla posta elettronica crittografata tramite il portale di crittografia dei messaggi di Office 365: "il messaggio è stato revocato dal mittente".
 
 ![Schermata che visualizza un messaggio di posta elettronica crittografato revocato.](media/revoked-encrypted-email.png)
 
@@ -45,7 +45,7 @@ Dopo che un messaggio di posta elettronica è stato revocato, il destinatario ri
 
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Passaggio 1. Ottenere l'ID del messaggio di posta elettronica
 
-Prima di revocare una posta crittografata, è necessario raccogliere l'ID del messaggio di posta elettronica. Il MessageId è in genere del formato seguente:
+Prima di poter revocare un messaggio crittografato, è necessario raccogliere l'ID della posta. Il MessageId è in genere del formato seguente:
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
@@ -53,13 +53,13 @@ Sono disponibili diversi modi per individuare l'ID del messaggio di posta elettr
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Per identificare l'ID del messaggio di posta elettronica che si desidera revocare tramite la traccia dei messaggi nel &amp; Centro sicurezza e conformità
 
-1. Cercare il messaggio di posta elettronica in base al mittente o al destinatario utilizzando la [nuova traccia dei messaggi in Office 365 Security _AMP_ Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Cercare il messaggio di posta elettronica in base al mittente o al destinatario utilizzando la [nuova traccia dei messaggi in Office 365 Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
 
 2. Dopo aver individuato il messaggio di posta elettronica, selezionarlo per visualizzare il riquadro **Dettagli traccia dei messaggi** . Espandere **ulteriori informazioni** per individuare l'ID del messaggio.
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Per identificare l'ID del messaggio di posta elettronica che si desidera revocare utilizzando i rapporti di crittografia dei messaggi di &amp; Office nel centro sicurezza e conformità
 
-1. Nel centro sicurezza &amp; e conformità, passare al **rapporto di crittografia dei messaggi**.
+1. Nel centro sicurezza &amp; e conformità, passare al **rapporto di crittografia dei messaggi**. Per informazioni su questo report, vedere [visualizzare i report di sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md).
 
 2. Scegliere la tabella **Visualizza dettagli** e identificare il messaggio che si desidera revocare.
 
@@ -67,13 +67,13 @@ Sono disponibili diversi modi per individuare l'ID del messaggio di posta elettr
 
 ### <a name="step-2-verify-that-the-mail-is-revocable"></a>Passaggio 2. Verificare che la posta sia revocabile
 
-Per verificare se è possibile revocare un determinato messaggio di posta elettronica, verificare se il campo stato revoca è visibile nella **** tabella Details del &amp; Centro sicurezza e conformità.
+Per verificare se è possibile revocare un messaggio, controllare se il campo stato revoca è visibile nel rapporto di crittografia, nella tabella Details del centro **** sicurezza &amp; e conformità.
 
-Per verificare se è possibile revocare o meno un messaggio di posta elettronica specifico utilizzando Windows PowerShell, eseguire la procedura seguente.
+Per verificare se è possibile revocare un messaggio di posta elettronica specifico utilizzando Windows PowerShell, eseguire la procedura seguente.
 
 1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Eseguire il cmdlet Set-OMEMessageStatus come indicato di seguito:
+2. Eseguire il cmdlet Get-OMEMessageStatus nel modo seguente:
 
      ```powershell
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
@@ -87,11 +87,13 @@ Per verificare se è possibile revocare o meno un messaggio di posta elettronica
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Passaggio 3. Revocare la posta elettronica  
+### <a name="step-3-revoke-the-mail"></a>Passaggio 3. Revocare la posta elettronica
 
-Una volta che si conosce l'ID del messaggio di posta elettronica che si desidera revocare ed è stato verificato che il messaggio è revocabile, è possibile revocare la posta elettronica.
+Una volta che si conosce l'ID del messaggio di posta elettronica che si desidera revocare ed è stato verificato che il messaggio è revocabile, è possibile revocare la posta &amp; elettronica utilizzando il Centro sicurezza e conformità di Windows PowerShell.
 
-Per revocare il messaggio di posta elettronica &amp; nel centro sicurezza e conformità, fare clic su **revoca**nella tabella details. ****
+Per revocare il messaggio utilizzando il centro &amp; sicurezza e conformità
+
+Per revocare la posta elettronica nel centro &amp; sicurezza e conformità, nel rapporto di crittografia, nella tabella Details del messaggio, scegliere **revoca messaggio**. ****
 
 È possibile revocare un messaggio di posta elettronica utilizzando Windows PowerShell utilizzando il cmdlet Set-OMEMessageRevocation.
 

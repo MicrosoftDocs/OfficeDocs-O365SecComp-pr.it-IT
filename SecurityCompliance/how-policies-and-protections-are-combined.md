@@ -1,7 +1,7 @@
 ---
 title: Come vengono combinati i criteri e le protezioni quando la posta viene contrassegnata con un contrassegno rosso
 description: Quali criteri si applicano e quali azioni eseguire, quando la posta elettronica è contrassegnata da malware, posta indesiderata, posta indesiderata elevata, phishing e bulk da EOP e/o ATP.
-keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, ATP, Windows Defender ATP, Office 365 ATP, Azure ATP
+keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152708"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852500"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quali criteri si applicano quando più metodi di protezione e analisi di rilevamento vengono eseguiti nel messaggio di posta elettronica
 

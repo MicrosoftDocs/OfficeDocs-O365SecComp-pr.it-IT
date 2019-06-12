@@ -1,5 +1,5 @@
 ---
-title: Monitorare e segnalare lo stato delle app in Microsoft 365 Security
+title: Monitoraggio e creazione di report delle app in Microsoft 365 Security Center
 description: Descrive come è possibile ottenere ulteriori informazioni sull'utilizzo delle app Cloud nell'organizzazione
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, app
 ms.prod: w10
@@ -12,21 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2641b90fd6f055352c5305d63ad98a54eb1ee483
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263334"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852660"
 ---
-# <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Monitorare e segnalare lo stato delle app in Microsoft 365 Security
-
+# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle app in Microsoft 365 Security Center
 
 Questi rapporti offrono maggiori informazioni su come vengono utilizzate le app Cloud nell'organizzazione, inclusi i tipi di app, il livello di rischio e gli avvisi.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Monitorare gli account di posta elettronica a rischio
 
-La **protezione della posta** elettronica Visualizza gli account di posta elettronica a rischio. È possibile fare clic su un account per ulteriori informazioni su Windows Defender Security Center.
+La **protezione della posta** elettronica Visualizza gli account di posta elettronica a rischio. È possibile fare clic su un account per esaminare ulteriormente il Centro sicurezza di Microsoft Defender.
 
 ![Scheda di protezione della posta elettronica](./media/security-docs/email-protection.png)
 

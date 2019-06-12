@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157848"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857636"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
 
@@ -54,4 +54,6 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     Dopo la rimozione dell'indirizzo IP dall'elenco dei mittenti bloccati, i messaggi di posta elettronica dall'indirizzo IP verranno recapitati ai destinatari che utilizzano Office 365. Pertanto, assicurarsi che la posta elettronica inviata da tale indirizzo IP non sia offensiva o dannosa; in caso contrario, l'indirizzo IP verrà bloccato di nuovo.
     
     > [!NOTE]
-    > Potrebbe essere necessario fino a un'ora prima che vengano rimosse le restrizioni.
+    > Potrebbe richiedere fino a 24 ore o i risultati possono variare notevolmente prima che vengano rimosse le restrizioni.
+    
+Informazioni su [come impedire che i messaggi di posta elettronica reali vengano contrassegnati come posta indesiderata in office 365](prevent-email-from-being-marked-as-spam.md ) e che controllino la [posta indesiderata in uscita in Office 365](outbound-spam-controls.md) per impedire la blacklist di IP.
