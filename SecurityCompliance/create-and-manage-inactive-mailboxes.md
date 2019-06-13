@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: È possibile creare una cassetta postale inattiva in Office 365 applicando un criterio di conservazione o un blocco di Office 365 alla cassetta postale, quindi eliminando l'account utente di Office 365 corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
-ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
+ms.sourcegitcommit: eed9fb363c939168e4bc49698bb34038a54433db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768951"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913077"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Creare e gestire le cassette postali inattive in Office 365
 
@@ -32,9 +32,9 @@ Office 365 rende possibile conservare il contenuto delle cassette postali elimin
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2, in modo che sia possibile applicare una conservazione per controversia legale o un criterio di ritenzione di Office 365 alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 (che fa parte di un abbonamento a Office 365 Enterprise E1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2, in modo che sia possibile applicare una conservazione per controversia legale o un criterio di ritenzione di Office 365 alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 o Exchange Online Kiosk (che fa parte rispettivamente di una sottoscrizione di Office 365 E1 e F1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale b rima è stato eliminato. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
-- La licenza associata a una cassetta postale di Exchange Online eliminata sarà disponibile dopo aver eliminato l'account utente di Office 365 corrispondente. È quindi possibile [assegnare licenze agli utenti di Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a un altro utente. 
+- Le licenze associate alla cassetta postale di Exchange Online eliminata saranno disponibili dopo aver eliminato l'account utente di Office 365 corrispondente. È quindi possibile [assegnare tali licenze a un altro utente](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
     
 - Se un blocco per controversia legale o un criterio di conservazione di Office 365 (configurato per mantenere o conservare e quindi eliminare il contenuto) non viene applicato a una cassetta postale prima che venga eliminato, il contenuto della cassetta postale non verrà mantenuto o individuabile. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
     
