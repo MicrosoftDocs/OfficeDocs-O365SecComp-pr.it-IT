@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6603b5a3efdfb6ffde0743d3b674ca69ca39eaa0
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157348"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857596"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
@@ -48,14 +48,14 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
 - 
   **Attivare la regola della posta indesiderata in tutte le cassette postali** Per impostazione predefinita, l'operazione del filtro protezione da posta indesiderata è impostata su **Sposta messaggio nella cartella di posta indesiderata**. Se si tratta dell'azione del criterio di posta indesiderata corrente, allora in ogni cassetta postale [deve anche essere attivata la regola della posta indesiderata](https://support.office.com/it-IT/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Per verificarlo, è possibile eseguire il cmdlet Get-MailboxJunkEmailConfiguration su una o più cassette postali. Ad esempio, è possibile verificare tale condizione in tutte le cassette postali eseguendo: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
-    Visualizzando il risultato, la proprietà Enable deve essere impostata su True. Se è impostata su False, è possibile eseguire Set-MailboxJunkEmailConfiguration per impostarla su True.
+    Quando si visualizza l'output, la proprietà Enable deve essere impostata su True. Se è impostata su False, è possibile eseguire Set-MailboxJunkEmailConfiguration per impostarla su True come indicato di seguito: Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true.
     
 - **Creare regole del flusso di posta nel server Exchange locale** Se si usa Exchange Online Protection, ma le cassette postali si trovano nel server Exchange locale, è necessario creare due regole del flusso di posta nel server Exchange locale. Vedere le [istruzioni relative solo a Exchange Online Protection](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
 - 
   **Contrassegnare la posta elettronica inviata in massa come posta indesiderata** La posta elettronica inviata in massa è costituita da messaggi di posta elettronica per cui gli utenti hanno effettuato la registrazione, ma che potrebbero essere comunque indesiderati. Nell'intestazione del messaggio individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore di BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica inviata in massa come posta indesiderata. Le tolleranze e le preferenze relative alla gestione della [posta elettronica inviata in massa](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values) variano da utente a utente. È possibile creare regole o criteri diversi in base alle preferenze degli utenti. 
     
-- **Bloccare immediatamente un mittente** Se occorre bloccare immediatamente un mittente, è possibile applicare il blocco in base all'indirizzo di posta elettronica, al dominio o all'indirizzo IP. Vedere [Usare l'interfaccia di amministrazione di Exchange per creare una regola di flusso di posta che blocchi i messaggi inviati da un dominio](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Tenere presente che una voce nell'elenco di indirizzi consentiti di un utente finale può impedire l'applicazione di un blocco impostato dall'amministratore.
+- **Bloccare immediatamente un mittente** Se è necessario bloccare immediatamente un mittente, è possibile usare l'indirizzo di posta elettronica, il dominio o l'indirizzo IP. Vedere [Creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md). Una voce in un elenco di elementi attendibili dell'utente finale può sostituire un blocco impostato dall'amministratore.
     
 - **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
 - **Abilitare [DKIM](use-dkim-to-validate-outbound-email.md)** per firmare tutti i messaggi in uscita e migliorare la sicurezza del dominio e del tenant.
