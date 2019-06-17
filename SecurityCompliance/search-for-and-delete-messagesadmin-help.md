@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Gli amministratori possono utilizzare il cmdlet Search-Mailbox per cercare cassette postali utente ed eliminare messaggi da una cassetta postale.
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158488"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957418"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Ricerca ed eliminazione di messaggi - Guida di Amministrazione
   
@@ -48,7 +48,7 @@ Come ulteriore salvaguardia, è possibile prima copiare i messaggi su un'altra c
     
 - Se si include una query di ricerca (usando il parametro  *SearchQuery*  ), il cmdlet **Search-Mailbox** restituirà un massimo di 10.000 elementi nei risultati della ricerca. Pertanto se si include una query di ricerca, potrebbe essere necessario eseguire il comando **Search-Mailbox** più volte per eliminare più di 10.000 elementi. 
     
-- La cassetta postale di archiviazione dell'utente verrà cercata anche eseguendo il cmdlet **Search-Mailbox**. Allo stesso modo, gli elementi nella cassetta postale di archiviazione principale verranno eliminati quando si utilizza il cmdlet **Search-Mailbox** con l'opzione  _DeleteContent_. Per prevenire questa situazione, è possibile includere l'opzione  *DoNotIncludeArchive*  . Inoltre, si consiglia di non utilizzare l'opzione _deletecontent_ per eliminare i messaggi nelle cassette postali di Exchange Online che dispongono di archiviazione in espansione automatica attivata perché potrebbe verificarsi una perdita di dati imprevista. 
+- La cassetta postale di archiviazione dell'utente verrà cercata anche eseguendo il cmdlet **Search-Mailbox**. Allo stesso modo, gli elementi nella cassetta postale di archiviazione principale verranno eliminati quando si utilizza il cmdlet **Search-Mailbox** con l'opzione  _DeleteContent_. Per prevenire questa situazione, è possibile includere l'opzione  *DoNotIncludeArchive*  .
     
 ## <a name="search-messages-and-log-the-search-results"></a>Ricerca di messaggi e registrazione dei risultati della ricerca
 

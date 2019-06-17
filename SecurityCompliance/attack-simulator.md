@@ -3,7 +3,7 @@ title: Simulatore di attacchi in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077622"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927569"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
-**Riepilogo** Se si è un amministratore globale di Office 365 e l'organizzazione dispone di [office 365 Threat Investigation and response capabilities](office-365-ti.md), è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
+**Riepilogo** Se si è un amministratore globale di Office 365 o un amministratore della sicurezza e l'organizzazione dispone di [office 365 Threat Investigation and response capabilities](office-365-ti.md), è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection and Threat Investigation and Response (in precedenza noto come Threat Intelligence) sono ora parte di Office 365 Advanced Threat Protection Plan 2, con ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection and Threat Investigation and Response (in precedenza noto come Threat Intelligence) fanno parte di Office 365 Advanced Threat Protection Plan 2, insieme a ulteriori funzionalità di protezione dalle minacce. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Gli attacchi
 
@@ -37,11 +37,8 @@ Sono attualmente disponibili tre tipi di simulazioni di attacco:
 - [Attacco spray per la password](#password-spray-attack)
 - [Attacco per la password con forza bruta](#brute-force-password-attack)
     
-Per l'avvio di un attacco, è possibile utilizzare l'autenticazione a più fattori nell'account che si sta utilizzando per eseguire attacchi simulati. Inoltre, è necessario essere un amministratore globale di Office 365.
-  
-> [!NOTE]
-> Il supporto per l'accesso condizionale è disponibile a breve. 
-  
+Affinché l'avvio di un attacco venga eseguito correttamente, verificare che l'account utilizzato per eseguire gli attacchi simulati utilizzi l'autenticazione a più fattori. Inoltre, è necessario essere un amministratore globale di Office 365 o un amministratore della sicurezza. Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    
 Per accedere a simulatore di attacco, &amp; nel centro sicurezza e conformità scegliere **Threat Management** \> **Attack Simulator**.
   
 ## <a name="before-you-begin"></a>Prima di iniziare...
@@ -50,13 +47,12 @@ Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per 
       
 - **La posta elettronica dell'organizzazione è ospitata in Exchange Online**. (Attack Simulator non è disponibile per i server di posta elettronica locali.)
     
-- **Si è un amministratore globale di Office 365**
+- **Si è un amministratore globale o un amministratore di sicurezza di Office 365**
     
-- L' ** [autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) a più fattori (AMF) è attivata, almeno per l'account amministratore globale di Office 365**. (Idealmente, l'AMF è attivata per tutti gli utenti dell'organizzazione.)
+- L' ** [autenticazione a più fattori/accesso condizionale](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) è attivata, almeno per l'account di amministratore globale di Office 365 e gli amministratori della sicurezza**. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
  
 - **L'organizzazione dispone [di Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat Management** \> **Attack Simulator**)<br/>![Threat Management-simulatore d'attacco](media/ThreatMgmt-AttackSimulator.png)
 
-    
 ## <a name="display-name-spear-phishing-attack"></a>Nome visualizzato Spear-attacco di phishing
 
 Il phishing è un termine generico per una vasta serie di attacchi classificati come un attacco stile di social engineering. Questo attacco è concentrato sul phishing Spear, un attacco più mirato che si rivolge a un gruppo specifico di persone o di un'organizzazione. In genere, un attacco personalizzato con alcuni ricognizione eseguito e utilizzando un nome visualizzato che genererà la fiducia nel destinatario, ad esempio un messaggio di posta elettronica che sembra provenire da un dirigente all'interno dell'organizzazione.
@@ -127,11 +123,17 @@ Un attacco di password con forza bruta nei confronti di un'organizzazione viene 
     
 ## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità in Attack Simulator
 
-Sono state aggiunte nuove funzionalità al simulatore di attacco. Queste funzionalità sono:
+Nuove funzionalità sono state aggiunte di recente a Attack Simulator. Queste funzionalità sono:
 
-- **Funzionalità di creazione di report avanzate**. È possibile visualizzare i dati, ad esempio il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, ovvero il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altro ancora.
+- **Funzionalità di creazione di report avanzate**. La possibilità di visualizzare dati quali il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altre visualizzazioni.
 
-- **Editor modelli di posta elettronica**. È possibile creare un modello di posta elettronica personalizzato e riutilizzabile che è possibile utilizzare per simulazioni di attacco future.
+- **Editor modelli di posta elettronica**. La possibilità di creare un modello di posta elettronica personalizzato e riutilizzabile che è possibile utilizzare per simulazioni di attacco future.
+
+- **Importazione del destinatario CSV**. La possibilità di utilizzare un file CSV per importare l'elenco dei destinatari di destinazione invece di usare lo strumento di selezione Rubrica.
+
+**Altre nuove caratteristiche stanno per essere attaccate al simulatore d'attacco**. Queste funzionalità sono:
+
+- **Simulazione di phishing del payload degli allegati**. La possibilità di utilizzare un allegato come payload per la simulazione di phishing al posto di un URL.
 
 Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cosa c'è in sviluppo, cosa è in uscita e cosa è già stato avviato.
 

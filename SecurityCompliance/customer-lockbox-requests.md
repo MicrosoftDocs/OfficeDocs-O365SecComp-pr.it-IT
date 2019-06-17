@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153838"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927579"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
@@ -78,7 +78,7 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 
 1. Accedere a [https://admin.microsoft.com](https://admin.microsoft.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
 
-2. Fare clic su **Impostazioni _GT_ sicurezza & privacy**.
+2. Fare clic su **impostazioni > privacy & sicurezza**.
 
     ![Modificare le impostazioni del servizio di archivio clienti nell'interfaccia di amministrazione](media/CustomerLockbox2.png)
 
@@ -93,7 +93,7 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 
 1. Accedere a [https://admin.microsoft.com](https://admin.microsoft.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
 
-2. Fare clic su **supporto _GT_ richieste dell'archivio clienti**.
+2. Fare clic su **supporto > richieste di archivio clienti**.
 
     ![Fare clic su supporto, quindi su richieste archivio clienti](media/CustomerLockbox5.png)
 
@@ -111,10 +111,10 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 
 ## <a name="auditing-customer-lockbox-requests"></a>Richieste di controllo dell'archivio protetto dei clienti 
 
-I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel registro di controllo di Office 365 ed è possibile accedervi utilizzando lo [strumento di ricerca del registro di controllo](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) nel centro conformità di Office 365 Security &. Le azioni relative a un cliente che accettano o negano una richiesta e le azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate) vengono registrate nel registro di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
+I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel registro di controllo di Office 365 ed è possibile accedervi utilizzando lo [strumento di ricerca del registro di controllo](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) nel centro sicurezza & conformità di Office 365. Le azioni relative a un cliente che accettano o negano una richiesta e le azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate) vengono registrate nel registro di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
 
 > [!NOTE]
-> È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security _AMP_ Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+> È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Eseguire una ricerca nel registro di controllo per attività correlate alle richieste dell'archivio protetto dei clienti
 
@@ -124,7 +124,7 @@ Ecco come creare una query di ricerca del registro di controllo per restituire i
   
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
 
-3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **Search & Investigation** > **log audit Search**.
+3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su **Cerca &** > **Ricerca log di controllo**.
 
     Viene visualizzata la pagina di **ricerca del registro di controllo** .
 
@@ -232,7 +232,7 @@ Un amministratore globale può abilitare e configurare l'archivio protetto dei c
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Se si approva la richiesta di un archivio protetto dei clienti, cosa può fare il tecnico e come è possibile sapere cosa ha fatto il tecnico Microsoft?
 
-Dopo aver approvato una richiesta di accesso protetto per i clienti, Microsoft Engineer ha concesso questi privilegi necessari per accedere al contenuto dei clienti utilizzando i cmdlet preapprovati. Le azioni intraprese dagli ingegneri Microsoft in risposta alle richieste dell'archivio protetto dei clienti vengono registrate e accessibili nel log di controllo nel centro conformità di Office 365 Security &.
+Dopo aver approvato una richiesta di accesso protetto per i clienti, Microsoft Engineer ha concesso questi privilegi necessari per accedere al contenuto dei clienti utilizzando i cmdlet preapprovati. Le azioni intraprese dagli ingegneri Microsoft in risposta alle richieste dell'archivio protetto dei clienti sono registrate e accessibili nel log di controllo nel centro sicurezza & conformità di Office 365.
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Come si fa a sapere se Microsoft segue il processo di approvazione?
 
@@ -264,7 +264,7 @@ Il feed attività del centro conformità contiene le attività di registrazione 
 
 Le richieste dell'archivio protetto dei clienti hanno una durata predefinita di 12 ore. Se non si risponde a una richiesta entro 12 ore, la richiesta scade.
 
-#### <a name="what-does-microsoft-when-a-customer-rejects-a-customer-lockbox-request"></a>Cosa fa Microsoft quando un cliente rifiuta una richiesta di un archivio protetto dei clienti?
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Cosa fa Microsoft quando un cliente rifiuta una richiesta di un archivio protetto dei clienti?
 
 Se un cliente rifiuta una richiesta di archivio clienti, non viene eseguito alcun accesso al contenuto del cliente. Se un utente dell'organizzazione continua a sperimentare un problema di servizio che richiede a Microsoft di accedere al contenuto del cliente per risolvere il problema, il problema del servizio potrebbe persistere e Microsoft ne informerà l'utente.
 
