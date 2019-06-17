@@ -100,7 +100,7 @@
 ### [Usare il caricamento di rete per importare i file PST crittografati con RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Domande frequenti sull'importazione di file PST](faqimporting-pst-files-to-office-365.md)
 ### [Archiviare i dati di terze parti in Office 365](archiving-third-party-data.md)
-#### [Usare un connettore di esempio per archiviare i dati di Facebook in Office 365 (anteprima)](archive-facebook-data-with-sample-connector.md)
+#### [Usare un connettore di esempio per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usare un connettore di esempio per archiviare i dati di Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
 ## Archiviare i dati
@@ -153,6 +153,7 @@
 ### [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
 ### [Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md)
+### [Correggere il codice errore 5.7.7xx in Exchange Online](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [Inviare malware e file non pericolosi a Microsoft per l'analisi](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ## Gestire la sicurezza - Attività successive alla configurazione ATP
 ## [Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce](latest-attack-campaigns.md)
-## [Ricerca in ATP di Microsoft 365](hunting.md)
+## [Ricerca in Microsoft 365](hunting.md)
 ## [Visualizzare e leggere i report ATP](view-reports-for-atp.md)
 ## [Significato delle pagine di avviso dei collegamenti sicuri di ATP](atp-safe-links-warning-pages.md)
 ## [Usare gli indicatori delle minacce](threat-trackers.md)
@@ -214,7 +215,7 @@
 ## [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)
 ### [Visualizzazioni di Esplora minacce](threat-explorer-views.md)
 ## Integrazione per una maggiore sicurezza
-### [Integrare Office 365 ATP con Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+### [Integrare Office 365 ATP con Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [Integrazione delle tecnologie per le informazioni di sicurezza e gestione degli eventi con Office 365 ATP](siem-integration-with-office-365-ti.md)
 ## Come funziona ATP
 ### [Funzionamento di Collegamenti sicuri ATP](how-atp-safe-links-works.md)
@@ -484,11 +485,12 @@
 ## [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Monitorare la sicurezza e la conformità
-## [Monitoraggio e creazione di report in Centro sicurezza Microsoft 365](monitoring-and-reporting.md)
-### [Monitorare e creare report sulle identità in Sicurezza Microsoft 365](monitor-and-report-identities.md)
-### [Monitorare i dati in Sicurezza Microsoft 365](monitor-data.md)
-### [Monitorare i dispositivi in Sicurezza Microsoft 365](monitor-devices.md)
-### [Monitorare le app in Sicurezza Microsoft 365](monitor-apps.md)
+## Centro sicurezza Microsoft 365
+### [Monitorare e visualizzare i report](monitoring-and-reporting.md)
+### [Monitoraggio e creazione di report relativi alle identità](monitor-and-report-identities.md)
+### [Monitoraggio e creazione di report relativi ai dati](monitor-data.md)
+### [Monitoraggio e creazione di report relativi ai dispositivi](monitor-devices.md)
+### [Monitoraggio e creazione di report relativi alle app](monitor-apps.md)
 ## [Criteri di avviso](alert-policies.md)
 
 # Flusso di posta
