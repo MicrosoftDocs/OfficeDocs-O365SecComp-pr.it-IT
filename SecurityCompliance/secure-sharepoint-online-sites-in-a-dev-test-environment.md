@@ -3,7 +3,7 @@ title: Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: 743a008a1d445d63054888499a0a805e546a1a4c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158818"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059544"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 
@@ -511,8 +511,8 @@ Configurare un criterio di prevenzione della perdita di dati che blocchi gli ute
     
 16. Fare clic su **OK**.
     
-17. Nel riquadro **Quale operazione eseguire se vengono rilevate informazioni riservate?**, fare clic su **Avanti**.
-    
+17. Nel riquadro **Abilitare il criterio o eseguire prima un test?**, fare clic su **Sì, abilitarlo immediatamente**, quindi su **Avanti**.
+
 18. Nel riquadro **Abilitare il criterio o eseguire prima un test?**, fare clic su **Sì, abilitarlo immediatamente**, quindi su **Avanti**.
     
 19. Nel riquadro **Verifica le impostazioni** fare clic su **Crea** e quindi su **Chiudi**.
