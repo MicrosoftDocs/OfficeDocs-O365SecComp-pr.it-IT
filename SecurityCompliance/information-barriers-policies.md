@@ -3,20 +3,20 @@ title: Definire i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935948"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059534"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definire i criteri per le barriere informative (anteprima)
 
@@ -48,7 +48,7 @@ In questo articolo viene descritto come pianificare, definire, implementare e ge
 |Fase    |Elementi coinvolti  |
 |---------|---------|
 |[Verificare che i prerequisiti siano soddisfatti](#prerequisites)     |-Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>-Verificare che la directory dell'organizzazione includa dati che riflettano la struttura dell'organizzazione<br/>-Abilitare la ricerca di directory con ambito per Microsoft Teams<br/>-Verificare che la registrazione di controllo sia attivata<br/>-Utilizzare PowerShell (vengono forniti esempi)<br/>-Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi)          |
-|[Parte 1: segmentare tutti gli utenti dell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
+|[Parte 1: segmentare gli utenti nell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
 |[Parte 2: definire i criteri di barriera delle informazioni](#part-2-define-information-barrier-policies)     |-Definire i criteri (non è ancora applicabile)<br/>-Scegliere tra due tipi (blocca o Consenti) |
 |[Parte 3: applicare i criteri di barriera delle informazioni](#part-3-apply-information-barrier-policies)     |-Impostare i criteri per lo stato attivo<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
 |(Se necessario) [Modificare un segmento o un criterio](#edit-a-segment-or-a-policy)     |-Modificare un segmento<br/>-Modificare o rimuovere un criterio<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
@@ -104,12 +104,12 @@ Quando si ha un elenco iniziale di gruppi e criteri, procedere all'identificazio
 
 ### <a name="identify-segments"></a>Identificare i segmenti
 
-Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organizzazione. Tutti gli utenti dell'organizzazione devono appartenere a un segmento e nessun utente deve appartenere a due o più segmenti. Ogni segmento può disporre di un solo criterio barriera informativo applicato. 
+Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organizzazione. Gli utenti che saranno inclusi nei criteri di barriera delle informazioni devono appartenere a un segmento e nessun utente deve appartenere a due o più segmenti. Ogni segmento può disporre di un solo criterio barriera informativo applicato. 
 
-Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per tutti gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative (Preview)](information-barriers-attributes.md).
+Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative (Preview)](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, tutti gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definire segmenti tramite PowerShell
 
@@ -128,7 +128,7 @@ La definizione di segmenti non ha effetto sugli utenti. imposta solo la fase per
     Dopo aver eseguito ogni cmdlet, verrà visualizzato un elenco di dettagli sul nuovo segmento. I dettagli includono il tipo di segmento, che ha creato o modificato l'ultima volta e così via. 
 
 > [!IMPORTANT]
-> Verificare **che i segmenti non si sovrappongano**. Tutti gli utenti dell'organizzazione devono appartenere a un solo segmento. Nessun utente deve appartenere a due o più segmenti. I segmenti devono essere definiti per tutti gli utenti dell'organizzazione. Vedere l' [esempio: segmenti definiti da Contoso](#contosos-defined-segments) in questo articolo.
+> Verificare **che i segmenti non si sovrappongano**. Ogni utente che sarà influenzato dalle barriere informative dovrebbe appartenere a un solo segmento. Nessun utente deve appartenere a due o più segmenti. Vedere l' [esempio: segmenti definiti da Contoso](#contosos-defined-segments) in questo articolo.
 
 Dopo aver definito i segmenti, procedere alla definizione dei criteri barriera informativi.
 
