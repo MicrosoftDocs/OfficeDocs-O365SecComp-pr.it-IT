@@ -3,7 +3,7 @@ title: Proteggere i file di SharePoint Online con le etichette di conservazione 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156898"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059554"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di conservazione e la prevenzione della perdita dei dati
 
@@ -167,7 +167,7 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
     
 Di seguito è riportata la configurazione risultante per i siti sensibili del team di SharePoint Online.
   
-![Criteri di prevenzione della perdita dei dati per un sito del team di SharePoint Online isolato usando l'etichetta di conservazione Riservato.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Criteri di prevenzione della perdita dei dati per un sito del team di SharePoint Online isolato usando l'etichetta di conservazione Riservato](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Seguire questa procedura per configurare un criterio della prevenzione della perdita dei dati che blocchi gli utenti in fase di condivisione di un documento in un sito con riservatezza elevata del team di SharePoint Online all'esterno dell'organizzazione.
   
@@ -205,7 +205,7 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
     
 16. Fare clic su **OK**.
     
-17. Nel riquadro **Quale operazione eseguire se vengono rilevate informazioni riservate?**, fare clic su **Avanti**.
+17. Nel riquadro **Quale operazione eseguire se vengono rilevate informazioni riservate?** fare clic su **Limita l'accesso o crittografa i contenuti** in **Rileva se viene condivisa una specifica quantità di informazioni sensibili nello stesso momento** e quindi fare clic su **Avanti**.
     
 18. Nel riquadro **Abilitare il criterio o eseguire prima un test?**, fare clic su **Sì, abilitarlo immediatamente**, quindi su **Avanti**.
     
@@ -213,7 +213,7 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
     
 Di seguito è riportata la configurazione risultante per i siti con riservatezza elevata del team di SharePoint Online.
   
-![Criteri di prevenzione della perdita dei dati per un sito del team di SharePoint Online isolato usando l'etichetta di conservazione Riservatezza elevata.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Criteri di prevenzione della perdita dei dati per un sito del team di SharePoint Online isolato usando l'etichetta di conservazione Riservatezza elevata](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
