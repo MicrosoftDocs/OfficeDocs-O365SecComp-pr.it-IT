@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083864"
+ms.locfileid: "35113250"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definire i criteri per le barriere informative (anteprima)
 
@@ -134,7 +134,7 @@ Dopo aver definito i segmenti, procedere alla definizione dei criteri barriera i
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Utilizzo di "Equals" e "not equals" nelle definizioni di segmento
 
-Nel primo esempio mostrato sopra, è stato definito un segmento che include la logica, il *reparto è uguale a HR*. È inoltre possibile definire segmenti utilizzando un parametro "not equals", come illustrato nell'esempio seguente:
+Nel primo esempio mostrato sopra, è stato definito un segmento in modo che "Department sia uguale a HR". Questo segmento includeva un parametro "Equals". È inoltre possibile definire segmenti utilizzando un parametro "not equals", come illustrato nell'esempio seguente:
 
 Sintassi`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
