@@ -3,7 +3,7 @@ title: Definire i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131380"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203735"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definire i criteri per le barriere informative (anteprima)
 
@@ -29,20 +29,6 @@ In questo articolo viene descritto come pianificare, definire, implementare e ge
 > [!TIP]
 > In questo articolo è incluso uno [scenario di esempio](#example-contosos-departments-segments-and-policies) e una cartella di [lavoro di Excel scaricabile](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) che consente di pianificare e definire i criteri di barriera delle informazioni.
 
-## <a name="concepts-of-information-barrier-policies"></a>Concetti relativi ai criteri di barriera delle informazioni
-
-È utile conoscere i concetti di base dei criteri di barriera delle informazioni:
-
-- **Gli attributi degli account utente** sono definiti in Azure Active Directory (o Exchange Online). Questi attributi possono includere reparto, titolo del processo, posizione, nome del team e altre informazioni sul profilo dei processi. 
-
-- I **segmenti** sono insiemi di utenti definiti nel centro sicurezza & conformità di Office 365 utilizzando un **attributo account utente**selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
-
-- I **criteri barriera di informazioni** determinano limiti di comunicazione o restrizioni. Quando si definiscono i criteri di barriera delle informazioni, è possibile scegliere tra due tipi di criteri:
-    - I criteri "blocca" impediscono a un segmento di comunicare con un altro segmento.
-    - I criteri "Consenti" consentono a un segmento di comunicare con solo alcuni segmenti.
-
-- L' **applicazione criterio** viene completata dopo la definizione di tutti i criteri di barriera delle informazioni e si è pronti per applicarli all'interno dell'organizzazione.
-
 ## <a name="the-work-flow-at-a-glance"></a>Il flusso di lavoro in un colpo d'occhio
 
 |Fase    |Elementi coinvolti  |
@@ -51,7 +37,7 @@ In questo articolo viene descritto come pianificare, definire, implementare e ge
 |[Parte 1: segmentare gli utenti nell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
 |[Parte 2: definire i criteri di barriera delle informazioni](#part-2-define-information-barrier-policies)     |-Definire i criteri (non è ancora applicabile)<br/>-Scegliere tra due tipi (blocca o Consenti) |
 |[Parte 3: applicare i criteri di barriera delle informazioni](#part-3-apply-information-barrier-policies)     |-Impostare i criteri per lo stato attivo<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
-|(Se necessario) [Modificare un segmento o un criterio](#edit-a-segment-or-a-policy)     |-Modificare un segmento<br/>-Modificare o rimuovere un criterio<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
+|(Se necessario) [Modificare un segmento o un criterio](information-barriers-edit-segments-policies.md.md)    |-Modificare un segmento<br/>-Modificare o rimuovere un criterio<br/>-Rieseguire l'applicazione del criterio<br/>-Visualizzare lo stato dei criteri         |
 |(Se necessario) [Risoluzione dei problemi](information-barriers-troubleshooting.md)|-Intervenire quando le cose non funzionano come previsto|
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -113,38 +99,44 @@ Determinare gli attributi dei dati di directory dell'organizzazione che verranno
 
 ### <a name="define-segments-using-powershell"></a>Definire segmenti tramite PowerShell
 
-La definizione di segmenti non ha effetto sugli utenti. imposta solo la fase per i criteri di barriera delle informazioni da definire e quindi applicare.
-
-Per definire un segmento di organizzazione, utilizzare il cmdlet **New-OrganizationSegment** con il parametro **UserGroupFilter** che corrisponde all' [attributo](information-barriers-attributes.md) che si desidera utilizzare.
-
-Sintassi`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-Esempio:  `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-In questo esempio, un segmento denominato *HR* è definito utilizzando *HR*, un valore nell'attributo *Department* . La parte "-EQ" del cmdlet si riferisce a "uguale a".
-
-Ripetere questa procedura per ogni segmento che si desidera definire.
-
-Dopo aver eseguito ogni cmdlet, verrà visualizzato un elenco di dettagli sul nuovo segmento. I dettagli includono il tipo di segmento, che ha creato o modificato l'ultima volta e così via. 
-
 > [!IMPORTANT]
 > Verificare **che i segmenti non si sovrappongano**. Ogni utente che sarà influenzato dalle barriere informative dovrebbe appartenere a un solo segmento. Nessun utente deve appartenere a due o più segmenti. Vedere l' [esempio: segmenti definiti da Contoso](#contosos-defined-segments) in questo articolo.
 
-Dopo aver definito i segmenti, procedere alla definizione dei criteri barriera informativi.
+La definizione di segmenti non ha effetto sugli utenti. imposta solo la fase per i criteri di barriera delle informazioni da definire e quindi applicare.
+
+1. Utilizzare il cmdlet **New-OrganizationSegment** con il parametro **UserGroupFilter** che corrisponde all' [attributo](information-barriers-attributes.md) che si desidera utilizzare.
+    
+    Sintassi`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    Esempio:  `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    In questo esempio, un segmento denominato *HR* è definito utilizzando *HR*, un valore nell'attributo *Department* . La parte **-EQ** del cmdlet si riferisce a "uguale a". (In alternativa, è possibile utilizzare **-ne** per indicare "non uguale a". Vedere [utilizzo di "Equals" e "not equals" nelle definizioni di segmento](#using-equals-and-not-equals-in-segment-definitions).
+
+    Dopo aver eseguito ogni cmdlet, verrà visualizzato un elenco di dettagli sul nuovo segmento. I dettagli includono il tipo di segmento, che ha creato o modificato l'ultima volta e così via. 
+
+2. Ripetere questa procedura per ogni segmento che si desidera definire.
+
+Dopo aver definito i segmenti, procedere alla [definizione dei criteri barriera](#part-2-define-information-barrier-policies)informativi.
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Utilizzo di "Equals" e "not equals" nelle definizioni di segmento
 
-Nel primo esempio mostrato sopra, è stato definito un segmento in modo che "Department sia uguale a HR". Questo segmento includeva un parametro "Equals". È inoltre possibile definire segmenti utilizzando un parametro "not equals", come illustrato nell'esempio seguente:
+Nell'esempio seguente viene definito un segmento in modo che "Department sia uguale a HR". 
 
-Sintassi`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**Esempio**:`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-Esempio:  `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+Si noti che la definizione del segmento include un parametro "Equals" indicato come **-EQ**. 
 
-In questo esempio, è stato definito un segmento denominato NotSales che include tutti coloro che non sono nelle vendite. La parte "-ne" del cmdlet si riferisce a "not equals".
+È inoltre possibile definire segmenti utilizzando un parametro "not equals", indicato come **-ne**, come illustrato nell'esempio seguente:
 
-È inoltre possibile definire un segmento utilizzando i parametri "Equals" e "not equals".
+**Sintassi**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-Esempio:  `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**Esempio**:`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+In questo esempio, è stato definito un segmento denominato *NotSales* che include tutti coloro che non sono nelle *vendite*. La parte **-ne** del cmdlet si riferisce a "non uguale a".
+
+Oltre alla definizione di segmenti che utilizzano "Equals" o "not equals", è possibile definire un segmento utilizzando i parametri "Equals" e "not equals".
+
+**Esempio**:`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 In questo esempio, è stato definito un segmento denominato *LocalFTE* che include persone che sono situate localmente e le cui posizioni non sono elencate come *temporanee*.
 
@@ -250,117 +242,6 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 |Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi`Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
 |Tutte le applicazioni dei criteri barriera di informazioni|Utilizzare`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
 
-## <a name="stop-a-policy-application"></a>Arrestare un'applicazione di criteri
-
-Se dopo aver avviato l'applicazione di criteri di barriera delle informazioni si desidera impedire l'applicazione di tali criteri, utilizzare la procedura seguente. Tenere presente che richiederà circa 30-35 minuti per l'avvio del processo.
-
-1. Per visualizzare lo stato dell'applicazione del criterio barriera alle informazioni più recente, utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
-
-    Sintassi`Get-InformationBarrierPoliciesApplicationStatus`
-
-    Tenere presente il GUID dell'applicazione.
-
-2. Utilizzare il cmdlet **Stop-InformationBarrierPoliciesApplication** con un parametro Identity.
-
-    Sintassi`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Esempio:  `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    In questo esempio viene interrotto l'applicazione dei criteri di barriera delle informazioni.
-
-## <a name="edit-a-segment-or-a-policy"></a>Modificare un segmento o un criterio
-
-### <a name="edit-a-segment"></a>Modifica di un segmento
-
-1. Per visualizzare tutti i segmenti esistenti, utilizzare il cmdlet **Get-OrganizationSegment** .
-    
-    Sintassi`Get-OrganizationSegment`
-
-    Verrà visualizzato un elenco di segmenti e dettagli per ognuno, ad esempio il tipo di segmento, il valore di UserGroupFilter, che ha creato o modificato l'oggetto, il GUID e così via.
-
-    > [!TIP]
-    > Stampa o salvataggio dell'elenco dei segmenti per riferimento in un secondo momento. Ad esempio, se si desidera modificare un segmento, è necessario conoscere il nome o il valore di identificazione (utilizzato con il parametro Identity).
-
-2. Per modificare un segmento, utilizzare il cmdlet **set-OrganizationSegment** con il parametro **Identity** e i dettagli rilevanti. 
-
-    Sintassi`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Esempio:  `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    In questo esempio, per il segmento che ha il GUID *c96e0837-C232-4a8a-841E-ef45787d8fcd*, il nome del reparto è stato aggiornato in "HRDept".
-
-Dopo aver completato i segmenti di modifica per l'organizzazione, è possibile procedere alla [definizione](#part-2-define-information-barrier-policies) o alla [modifica](#edit-a-policy) dei criteri di barriera delle informazioni.
-
-### <a name="edit-a-policy"></a>Modificare un criterio
-
-1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
-
-    Sintassi`Get-InformationBarrierPolicy`
-
-    Nell'elenco dei risultati, identificare il criterio che si desidera modificare. Prendere nota del GUID e del nome del criterio.
-
-2. Utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro **Identity** e specificare le modifiche che si desidera eseguire.
-
-    Ad esempio, si supponga che sia stato definito un criterio per bloccare il segmento di *ricerca* dalla comunicazione con i segmenti *Sales* and *Marketing* . Il criterio è stato definito utilizzando il cmdlet seguente:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    Si supponga di voler cambiare la comunicazione in modo che gli utenti del segmento di *ricerca* possano comunicare solo con gli utenti del segmento *HR* . Per apportare questa modifica, è possibile utilizzare questo cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    In questo esempio, "SegmentsBlocked" viene modificato in "SegmentsAllowed" e viene specificato il segmento *HR* .
-
-3. Dopo aver completato la modifica di un criterio, accertarsi di applicare le modifiche. (Vedere [Apply Information Barrier Policies](#part-3-apply-information-barrier-policies)).
-
-### <a name="remove-a-policy"></a>Rimozione di un criterio
-
-1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
-
-    Sintassi`Get-InformationBarrierPolicy`
-
-    Nell'elenco dei risultati, identificare il criterio che si desidera rimuovere. Prendere nota del GUID e del nome del criterio. Verificare che il criterio sia impostato su stato inattivo.
-
-2. Utilizzare il cmdlet **Remove-InformationBarrierPolicy** con un parametro Identity.
-
-    Sintassi`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Esempio: Supponiamo di voler rimuovere un criterio con GUID *43c37853-EA10-4b90-a23d-ab8c93772471*. A tale scopo, viene utilizzato il cmdlet seguente:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    Quando richiesto, confermare la modifica.
-
-3. Ripetere i passaggi 1-2 per ogni criterio che si desidera rimuovere.
-
-4. Una volta terminata la rimozione dei criteri, applicare le modifiche. A tale scopo, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Sintassi`Start-InformationBarrierPoliciesApplication`
-
-    Le modifiche vengono applicate dall'utente per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più).
-
-### <a name="set-a-policy-to-inactive-status"></a>Impostare un criterio su stato inattivo
-
-1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
-
-    Sintassi`Get-InformationBarrierPolicy`
-
-    Nell'elenco dei risultati, identificare il criterio che si desidera modificare (o rimuovere). Prendere nota del GUID e del nome del criterio.
-
-2. Per impostare lo stato del criterio su inattivo, utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro Identity e il parametro state impostato su inattivo.
-
-    Sintassi`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    In questo esempio, viene impostato un criterio barriera informativo che include GUID *43c37853-EA10-4b90-a23d-ab8c9377247* su uno stato inattivo.
-
-3. Per applicare le modifiche, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Sintassi`Start-InformationBarrierPoliciesApplication`
-
-    Le modifiche vengono applicate dall'utente per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più). (Come linee guida generali, è necessario circa un'ora per elaborare gli account utente di 5.000).
-
-A questo punto, uno o più criteri barriera informazioni sono impostati sullo stato inattivo. Da qui, è possibile eseguire una delle operazioni seguenti:
-- Keep it as is (un criterio impostato su stato inattivo non ha alcun effetto sugli utenti)
-- [Modificare un criterio](#edit-a-policy) 
-- [Rimozione di un criterio](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di contoso
 
@@ -414,6 +295,8 @@ Con i segmenti e i criteri definiti, contoso applica i criteri eseguendo il cmdl
 Al termine, Contoso è conforme ai requisiti legali e di settore.
 
 ## <a name="related-articles"></a>Articoli correlati
+
+[Modificare o rimuovere i criteri di barriera delle informazioni (anteprima)](information-barriers-edit-segments-policies.md.md)
 
 [Ottenere una panoramica delle barriere informative](information-barriers.md)
 
