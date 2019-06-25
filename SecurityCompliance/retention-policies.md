@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o solo a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156968"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131396"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -78,11 +78,14 @@ Quanto descritto in precedenza vale per il contenuto esistente al momento dell'a
   
 Tenere presente che, se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetto a criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina tutti i file presenti nella cartella soggetta ai criteri. Tenere presente anche che la raccolta di archiviazione viene creata solo quando è necessario creare il primo elemento nella raccolta e non quando si creano i criteri di conservazione. Per testare i criteri, è quindi necessario modificare o eliminare un documento in un sito soggetto ai criteri e quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
   
-![Diagramma del flusso di conservazione in SharePoint e OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
   
 Dopo che i criteri di conservazione vengono assegnati a un account di OneDrive o a un sito di SharePoint, il contenuto può seguire uno dei due percorsi seguenti:
   
-1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. In questa raccolta viene eseguito a intervalli regolari un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro sette giorni dalla data di fine del periodo di conservazione. 
+1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. In questa raccolta a intervalli regolari viene eseguito un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono spostati nel Cestino di secondo livello, dove verranno eliminati definitivamente dopo 93 giorni. Si noti che il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
+
+    > [!NOTE]
+    > Di recente è stato modificata la modalità con cui il contenuto viene eliminato dalla raccolta di archiviazione. Per evitare perdite accidentali di dati, non eliminiamo più definitivamente il contenuto dalla raccolta di archiviazione. Eliminiamo invece definitivamente il contenuto solo dal Cestino in modo che tutto il contenuto della raccolta di archiviazione passi al Cestino di secondo livello.
     
 2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, viene spostato nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino. 
     
@@ -102,7 +105,7 @@ Se un utente lascia l'organizzazione e la sua cassetta postale è inclusa nei cr
   
 Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a una cartella pubblica, il contenuto può seguire uno dei due percorsi seguenti:
   
-1. **Se l'elemento viene modificato o eliminato** definitivamente dall'utente (con MAIUSC+CANC o eliminandolo da Posta eliminata) durante il periodo di conservazione, viene spostato (o copiato, in caso di modifica) nella cartella Elementi ripristinabili. In questa raccolta a intervalli regolari viene eseguito un processo che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
+1. **Se l'elemento viene modificato o eliminato** definitivamente dall'utente (con MAIUSC+CANC o eliminandolo da Posta eliminata) durante il periodo di conservazione, viene spostato (o copiato, in caso di modifica) nella cartella Elementi ripristinabili. In questa raccolta a intervalli regolari viene eseguito un processo che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni.
     
 2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione, lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
     
@@ -260,7 +263,8 @@ I criteri di conservazione che si applicano a Teams possono usare la [protezione
 È possibile usare PowerShell per escludere specifici tipi di elementi di Exchange dai criteri di conservazione. Ad esempio, è possibile escludere i messaggi vocali, le conversazioni di messaggistica istantanea e altri contenuti di Skype for Business Online nelle cassette postali. Si possono anche escludere elementi del calendario, note e attività. Questa funzionalità è disponibile solo tramite PowerShell, non è disponibile nell'interfaccia utente quando si crea un criterio di conservazione.
   
 A questo scopo, usare il parametro `ExcludedItemClasses` dei cmdlet `New-RetentionComplianceRule` e `Set-RetentionComplianceRule`. Per ulteriori informazioni su PowerShell, vedere la sezione [Trovare i cmdlet di PowerShell per i criteri di conservazione](#find-the-powershell-cmdlets-for-retention-policies) più avanti.
-  
+
+
 ## <a name="locking-a-retention-policy"></a>Blocco dei criteri di conservazione
 È possibile che alcune organizzazioni debbano attenersi ai regolamenti definiti da enti normativi, come il regolamento 17a-4 della SEC (Securities and Exchange Commission), in base al quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. La funzionalità di protezione dell'archiviazione consente di bloccare i criteri in modo che nessuno, incluso l'amministratore, possa disattivarli o renderli meno restrittivi.
   
@@ -294,6 +298,24 @@ Sui criteri di conservazione è ora applicata la protezione dell'archiviazione. 
 
 ![Criteri bloccati con tutti i parametri visualizzati in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>Rilascio dei criteri di conservazione
+
+È possibile disattivare o eliminare i criteri di conservazione in qualsiasi momento. Eseguendo questa operazione, il contenuto conservato in SharePoint o OneDrive non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. È possibile attivare di nuovo i criteri di conservazione durante il periodo di tolleranza e nessun contenuto verrà eliminato per tale criterio. Il periodo di tolleranza può essere configurato utilizzando PowerShell.
+
+Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Poi eseguire il seguente script di PowerShell. È possibile impostare la proprietà `ip_tenantGracePeriodInDays` nelle impostazioni di sottoscrizione del tenant su qualsiasi valore compreso tra 0 - 100 giorni. Impostando il valore su 0, non è previsto alcun periodo di tolleranza e i criteri di conservazione vengono rilasciati immediatamente. 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di permanenza di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](https://docs.microsoft.com/it-IT/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Precedenza nei principi di conservazione
 
 È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Quali sono i criteri che hanno la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
