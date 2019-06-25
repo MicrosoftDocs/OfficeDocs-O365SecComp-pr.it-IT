@@ -27,7 +27,7 @@
 # [Proteggere le informazioni](protect-information.md)
 ## [Etichette di riservatezza](sensitivity-labels.md)
 ### [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](encryption-sensitivity-labels.md)
-### [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply_sensitivity_label_automatically.md)
+### [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)
 ### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 
 ## [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
@@ -538,6 +538,8 @@
 ### [Definire i criteri delle barriere informative (anteprima)](information-barriers-policies.md)
 ### [Attributi per i criteri delle barriere informative (anteprima)](information-barriers-attributes.md)
 ### [Risoluzione dei problemi relativi alle barriere informative (anteprima)](information-barriers-troubleshooting.md)
+### [Modificare o rimuovere i criteri delle barriere informative (anteprima)](information-barriers-edit-segments-policies.md.md)
+
 
 ## Customer Key
 ### [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md)
