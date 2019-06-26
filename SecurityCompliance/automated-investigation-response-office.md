@@ -3,7 +3,7 @@ title: Indagine automatizzata e risposta (aria) con Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852620"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233333"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
 
@@ -37,7 +37,8 @@ Nella versione iniziale di AIR del 2019 aprile, gli avvisi generati dai criteri 
 3. Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
 4. Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
 
-***Nota**: a questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso nel centro sicurezza & conformità con le notifiche di posta elettronica disattivate. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
+> [!NOTE]
+> A questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso nel centro sicurezza & conformità con le notifiche di posta elettronica disattivate. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
 
 Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
@@ -56,18 +57,14 @@ Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le mi
 
 Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi
 
-- **Fase 1 (2019 aprile)**: i PlayBook includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza. 
+- **Fase 1 (2019 aprile)**: i PlayBook includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza. La fase 1 includerà gli schemi seguenti:
+    - Messaggio phishing visualizzato dall'utente
+    - URL fare clic su modifica verdetto 
+    - Malware rilevato dopo il recapito (ZAP malware)
+    - Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
+    - Indagini manuali tramite posta elettronica (tramite Esplora minacce)
 
-- **Fase 2 (post-giugno 2019)**: miglioramenti al PlayBook, oltre agli amministratori della sicurezza avranno la possibilità di configurare i PlayBook di sicurezza per intraprendere alcune azioni automaticamente senza interazione amministrativa.
-
-La fase 1 includerà gli schemi seguenti:
-- Messaggio phishing visualizzato dall'utente
-- URL fare clic su modifica verdetto 
-- Malware rilevato dopo il recapito (ZAP malware)
-- Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
-- Indagini manuali tramite posta elettronica (tramite Esplora minacce)
-
-Sono previste diverse altre PlayBook per la fase 2.
+- **Fase 2 (seconda metà del 2019)**: diversi nuovi PlayBook e miglioramenti al PlayBook, oltre all'opzione per gli amministratori della sicurezza di configurare gli schemi di sicurezza per intraprendere alcune azioni automaticamente senza interazione amministrativa. 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>I PlayBook includono analisi e suggerimenti
 

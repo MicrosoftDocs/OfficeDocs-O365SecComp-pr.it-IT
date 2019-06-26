@@ -14,18 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4de390972672509422e055cd3fd6a9f65d54a7ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: fac8ab829107befaa1a3f8b3afe1cec8d3468f1b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155238"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233323"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
 Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non di Office 365 a un set di revisione, in modo da poter esaminare tali dati oltre ai dati raccolti da Office 365.
 
-Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di revisione si trovano nella scheda dei **set di revisione** del caso), si verificano le due operazioni seguenti:
+Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di revisione sono nella scheda dei **set di revisione** del caso), si verificano le operazioni seguenti:
+
+- La ricerca viene eseguita di nuovo. Questo significa che i risultati della ricerca copiati nel set di revisione possono essere diversi dai risultati stimati restituiti al momento dell'ultima esecuzione della ricerca.
 
 - Tutti gli elementi nei risultati della ricerca vengono copiati dall'origine dati originale nei servizi Live di Office 365 e copiati in una posizione di archiviazione sicura di Azure nel cloud Microsoft.
 
@@ -35,11 +37,11 @@ Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda
 
 ![Aggiunta di dati a un set di Revisione](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
-Si noti che è possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi**.
+È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi**.
 
 ![Selezionare un set di Revisione](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi dalle origini dati originali in Office 365 (ad esempio, da cassette postali e siti), la loro copia nel percorso di archiviazione di Azure (questo ** processo di copia è denominato anche ingestione) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di revisione per avviare il filtro dei processi, esaminare, contrassegnare ed esportare i dati nel set di revisione.
+L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi dalle origini dati originali in Office 365 (ad esempio, da cassette postali e siti), la loro copia nel percorso di archiviazione di Azure (questo ** processo di copia è denominato anche ingestione) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 
 ## <a name="add-a-sample-to-a-review-set"></a>Aggiungere un esempio a un set di Revisione
 
@@ -47,8 +49,8 @@ Se si desidera convalidare i risultati di una ricerca in modo più approfondito 
 
 Per aggiungere un esempio a un set di revisione, fare clic su una ricerca nella scheda **ricerche** e fare clic su **campionamento** nella pagina a comparsa. Nella pagina **parametri** di campionamento scegliere una delle opzioni seguenti:
 
-- **Livello di confidenza%** e **intervallo di confidenza%** -gli elementi aggiunti al set di revisione saranno determinati dai parametri statistici impostati. Se si utilizza in genere un livello di confidenza e un intervallo durante il campionamento dei risultati, specificarli nelle caselle di menu a discesa. In caso contrario, è sufficiente utilizzare le impostazioni predefinite.
+- **Livello di confidenza%** e **intervallo di confidenza%** – gli elementi aggiunti al set di revisione saranno determinati dai parametri statistici impostati. Se si utilizza in genere un livello di confidenza e un intervallo durante il campionamento dei risultati, specificarli nelle caselle di menu a discesa. In caso contrario, utilizzare le impostazioni predefinite.
 
-- **% Casuale di esempio** -gli elementi aggiunti al set di revisione si basano su una selezione casuale della percentuale specificata del numero totale di elementi restituiti dalla ricerca.
+- **Campione casuale%** – gli elementi aggiunti al set di revisione si basano su una selezione casuale della percentuale specificata del numero totale di elementi restituiti dalla ricerca.
 
-Dopo aver selezionato e configurato una delle opzioni precedenti, scegliere un set di revisione esistente per aggiungere il campione a e quindi fare clic su **Invia**. Anche in questo caso, è possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunta a revisione** .
+Dopo aver selezionato e configurato una delle opzioni precedenti, scegliere un set di revisione in cui aggiungere il campione e quindi fare clic su **Invia**. Anche in questo caso, è possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunta a revisione** .
