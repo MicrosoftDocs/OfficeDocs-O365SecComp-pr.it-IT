@@ -331,7 +331,7 @@
 #### [Correzione degli errori durante l'elaborazione dei dati](compliance20/error-remediation.md)
 
 ### [Raccogliere i dati per un caso](compliance20/collecting-data-for-ediscovery.md)
-#### [Creare una ricerca per raccogliere dati](compliance20/create-search-to-collect-data.md)
+#### [Creare una ricerca](compliance20/create-search-to-collect-data.md)
 #### [Creare query di ricerca](compliance20/building-search-queries.md)
 #### [Statistiche della ricerca](compliance20/search-statistics.md)
 #### [Aggiungere i risultati della ricerca a un insieme da rivedere](compliance20/add-data-to-review-set.md)
@@ -538,7 +538,7 @@
 ### [Definire i criteri delle barriere informative (anteprima)](information-barriers-policies.md)
 ### [Attributi per i criteri delle barriere informative (anteprima)](information-barriers-attributes.md)
 ### [Risoluzione dei problemi relativi alle barriere informative (anteprima)](information-barriers-troubleshooting.md)
-### [Modificare o rimuovere i criteri delle barriere informative (anteprima)](information-barriers-edit-segments-policies.md.md)
+### [Modificare i criteri delle barriere informative (anteprima)](information-barriers-edit-segments-policies.md.md)
 
 
 ## Customer Key
