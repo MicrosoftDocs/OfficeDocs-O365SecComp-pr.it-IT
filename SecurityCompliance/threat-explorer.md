@@ -3,7 +3,7 @@ title: Esplora minacce (e rilevamenti in tempo reale)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Esplora risorse (e sui rilevamenti in tempo reale) &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490532"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394351"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce (e rilevamenti in tempo reale)
 
-Se l'organizzazione dispone [di office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile individuare **esploratori** o rilevamenti in **tempo reale** (in precedenza rapporti in *tempo reale* , [vedere Novità](#new-features-in-real-time-detections)!). Nel centro sicurezza & Compliance, passare a **gestione minacce**, quindi scegliere **Esplora risorse** o rilevamenti in **tempo reale**. 
+Se l'organizzazione dispone [di office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile individuare **esploratori** o rilevamenti in **tempo reale** (in precedenza rapporti in *tempo reale* , [vedere Novità](#new-features-in-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** o rilevamenti in **tempo reale**. 
 
 |Con ATP piano 2, è possibile vedere:  |Con ATP piano 1, è possibile visualizzare le informazioni seguenti:  |
 |---------|---------|
@@ -42,26 +42,41 @@ Con questo rapporto, è possibile:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuove funzionalità nei rilevamenti in tempo reale
 
-Per i clienti di Office 365 ATP Plan 1, il rapporto sui rilevamenti in *tempo reale* è stato precedentemente definito *rapporti in tempo reale*. Oltre alla modifica del nome, vengono implementate diverse nuove funzionalità e miglioramenti:
+Explorer/rilevamenti in tempo reale aggiunge nuovi campi creati per fornire un'immagine più completa della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
-- Nella visualizzazione phishing, è possibile visualizzare ulteriori dettagli sugli URL rilevati tramite [collegamenti sicuri di ATP](atp-safe-links.md). I nuovi dettagli e funzionalità includono:
-  - URL nei messaggi di posta elettronica
-  - Filtro in base alle informazioni sull'URL
-  - Informazioni sugli URL visualizzati nei grafici dati
-  - Data e ora di clic dei dati relativi ai clic nei messaggi
+Come è possibile eseguire questa operazione? Lo stato di recapito è ora suddiviso in due colonne:
 
-- Ogni volta che c'è una modifica in un URL fare clic su verdetto, verrà visualizzato un avviso. URL fare clic su verdetti possono variare quando la reputazione di un URL cambia dopo la detonazione o quando un utente protetto da collegamenti sicuri ATP sostituisce un [avviso di collegamenti sicuri ATP](atp-safe-links-warning-pages.md).  
- 
-Questi miglioramenti consentono agli amministratori della sicurezza dell'organizzazione di visualizzare più dettagli rispetto a prima. Gli amministratori della sicurezza possono visualizzare le informazioni sui domini URL, gli URL mancanti, fare clic su verdetti e altro ancora, quindi regolare i criteri ATP di Office 365 in modo appropriato.
+- Azione di recapito-qual è lo stato di questo messaggio di posta elettronica?
+- Percorso di recapito-dove è stato instradato il messaggio di posta elettronica come risultato?
 
-> [!NOTE]
-> Anche se queste funzionalità sono in anteprima, i dati URL saranno disponibili per un numero limitato di giorni. 
+Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
+
+|Consegnato  |Junked  |Bloccati  |Sostituito  |
+|---------|---------|---------|---------|
+|La posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.    | La posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica in tali cartelle.       | Tutti i messaggi di posta elettronica in quarantena, che non sono riusciti o sono stati eliminati. Questo è completamente inaccessibile dall'utente.     | Qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti dai file. txt che lo stato dell'allegato è dannoso.     |
+
+Ecco cosa può essere visualizzato dall'utente e cosa non è possibile:
+
+|Accessibile per gli utenti finali  |Inaccessibile per gli utenti finali  |
+|---------|---------|
+|Consegnato     | Bloccati        |
+|Junked     | Sostituito        |
+
+Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i valori di possilbe del percorso di recapito:
+
+1. Posta in arrivo o cartella – la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
+2. On-Prem o External-la cassetta postale non esiste sul cloud ma è in locale.
+3. Cartella posta indesiderata: l'indirizzo di posta elettronica nella cartella posta indesiderata di un utente.
+4. Cartella Posta eliminata: il messaggio nella cartella elementi eliminati di un utente.
+5. Quarantine: l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
+6. Failed: la posta elettronica non è riuscita a raggiungere la cassetta postale.
+7. Eliminato: il messaggio di posta elettronica viene perso da qualche parte nel flusso.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato in posta elettronica dalla tecnologia
 
-Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite la tecnologia Office 365. A tale scopo, utilizzare la visualizzazione malware di > per la [posta elettronica](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite la tecnologia Office 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)), scegliere **gestione** > **** minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -75,9 +90,9 @@ Il rapporto viene aggiornato per visualizzare i risultati rilevati dal malware n
 
 Si supponga di voler visualizzare i tentativi di phishing tramite URL nella posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. L'identificazione degli URL che sono stati cliccati richiede la configurazione di [collegamenti sicuri ATP](atp-safe-links.md) . Assicurarsi di aver configurato i criteri per i [collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) per la protezione e la registrazione di un clic dei verdetti da ATP Safe Links. 
 
-Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione [phishing > di posta elettronica](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
+Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)), scegliere **gestione** > **** minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewEmailPhishMenu.png)<br/>
 
@@ -99,9 +114,9 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
-Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione del [messaggio di posta elettronica > visualizzato dall'utente](threat-explorer-views.md#email--user-reported) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare il [messaggio di posta elettronica > visualizzazione segnalata dall'utente](threat-explorer-views.md#email--user-reported) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)), scegliere **gestione** > **** minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
 
 2. Nel menu **Visualizza** scegliere la **posta elettronica** > **segnalata dall'utente**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
@@ -132,6 +147,7 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte altre op
 È necessario disporre di [Office 365 ATP](office-365-atp.md) per ottenere rilevamenti di Esplora risorse o in tempo reale.
 - Explorer è incluso in Office 365 ATP piano 2. 
 - Il rapporto sui rilevamenti in tempo reale è incluso in Office 365 ATP Plan 1.
+- Pianificare l'assegnazione delle licenze per tutti gli utenti che devono essere protetti da ATP. (Esplora risorse o rilevamenti in tempo reale mostrerà i dati di rilevamento per gli utenti con licenza).
 
 Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza. 
 

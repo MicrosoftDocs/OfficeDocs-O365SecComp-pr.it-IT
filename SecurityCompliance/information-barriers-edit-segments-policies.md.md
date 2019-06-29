@@ -1,9 +1,9 @@
 ---
-title: Modificare o rimuovere i criteri di barriera delle informazioni
+title: Modificare i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,29 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come modificare o rimuovere i criteri per le barriere informative.
-ms.openlocfilehash: e6bed4df2329d426f86bd4cde07bdc7d1a2792cd
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35215649"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394331"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Modificare o rimuovere i criteri di barriera delle informazioni (anteprima)
-
-## <a name="overview"></a>Panoramica
+# <a name="edit-or-remove-information-barrier-policies-preview"></a>Modificare (o rimuovere) criteri di barriera delle informazioni (anteprima)
 
 Dopo aver [definito i criteri di barriera delle informazioni](information-barriers-policies.md), potrebbe essere necessario apportare modifiche a tali criteri o ai segmenti di utenti, come parte della [risoluzione dei problemi](information-barriers-troubleshooting.md) o come manutenzione regolare. Utilizzare questo articolo come guida.
+
+## <a name="what-do-you-want-to-do"></a>Operazione desiderata
+
+|Azione  |Descrizione |
+|---------|---------|
+|[Modificare gli attributi degli account utente](#edit-user-account-attributes)     |Inserire gli attributi in Azure Active Directory che è possibile utilizzare per definire i segmenti.<br/>Modificare gli attributi degli account utente quando gli utenti non sono inclusi nei segmenti che devono essere, per modificare i segmenti in cui si trovano gli utenti o per definire segmenti che utilizzano attributi diversi.         |
+|[Modifica di un segmento](#edit-a-segment)     |Modificare i segmenti quando si desidera modificare la modalità di definizione di un segmento. <br/>Ad esempio, è possibile che i segmenti siano stati definiti in origine utilizzando il *reparto* e ora si desidera utilizzare un altro attributo, come *membro*.         |
+|[Modificare un criterio](#edit-a-policy)     |Modificare un criterio di barriera delle informazioni quando si desidera modificare la modalità di funzionamento di un criterio.<br/>Ad esempio, invece di bloccare le comunicazioni tra due segmenti, è possibile decidere se si desidera consentire la comunicazione solo tra alcuni segmenti.         |
+|[Impostare un criterio su stato inattivo](#set-a-policy-to-inactive-status)     |Impostare un criterio sullo stato inattivo quando si desidera apportare modifiche a un criterio o quando non si desidera che un criterio venga applicato.         |
+|[Rimozione di un criterio](#remove-a-policy)     |Rimuovere un criterio barriera informativo quando non è più necessario disporre di un criterio specifico.         |
+|[Arrestare un'applicazione di criteri](#stop-a-policy-application)     |Eseguire questa operazione quando si desidera interrompere il processo di applicazione dei criteri di barriera delle informazioni.<br/>Si noti che l'interruzione di un'applicazione di criteri non è immediata e non annulla i criteri già applicati agli utenti.         |
+|[Definire i criteri per le barriere informative (anteprima)](information-barriers-policies.md)     |Definire un criterio barriera informativo se non si dispone già di tali criteri e si devono limitare o limitare le comunicazioni tra gruppi specifici di utenti.         |
+|[Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)](information-barriers-troubleshooting.md)     |Fare riferimento a questo articolo quando si verificano problemi imprevisti con barriere informative.         |
 
 > [!IMPORTANT]
 > Per eseguire le attività descritte in questo articolo, è necessario essere assegnati a un ruolo appropriato, ad esempio uno dei seguenti:<br/>-Microsoft 365 Enterprise Global Administrator<br/>-Amministratore globale di Office 365<br/>-Compliance Administrator<br/>-IB Compliance Management (questo è un nuovo ruolo)<p>Per ulteriori informazioni sui prerequisiti per le barriere informative, vedere [prerequisiti (per i criteri barriera informativi)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di eseguire la [connessione a PowerShell di Office 365 Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -37,16 +48,10 @@ Gli attributi degli account utente vengono utilizzati per definire i segmenti in
 
 1. Per visualizzare i dettagli relativi a un account utente specifico, ad esempio i valori degli attributi e i segmenti assegnati, utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. 
 
-   Sintassi`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
-    
-   È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. 
-    
-   Esempio:  `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
-    
-   In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. 
-    
-   È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>` 
-    
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>   È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>`      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*.         |
+
 2. Determinare l'attributo che si desidera modificare per i profili dell'account utente. Per ulteriori informazioni, fare riferimento agli [attributi per i criteri di barriera delle informazioni (Preview)](information-barriers-attributes.md) . 
 
 3. Modificare uno o più account utente in modo da includere i valori dell'attributo selezionato nel passaggio precedente. A tale scopo, utilizzare una delle seguenti procedure:
@@ -70,11 +75,9 @@ Utilizzare questa procedura per modificare la definizione di un segmento di uten
 
 2. Per modificare un segmento, utilizzare il cmdlet **set-OrganizationSegment** con il parametro **Identity** e i dettagli rilevanti. 
 
-    Sintassi`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Esempio:  `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    In questo esempio, per il segmento che ha il GUID *c96e0837-C232-4a8a-841E-ef45787d8fcd*, il nome del reparto è stato aggiornato in "HRDept".
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`     |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p>In questo esempio, per il segmento che ha il GUID *c96e0837-C232-4a8a-841E-ef45787d8fcd*, il nome del reparto è stato aggiornato in "HRDept".         |
 
 Dopo aver completato la modifica dei segmenti per l'organizzazione, è possibile [definire](information-barriers-policies.md#part-2-define-information-barrier-policies) o [modificare](#edit-a-policy) i criteri di barriera delle informazioni.
 
@@ -106,11 +109,9 @@ Dopo aver completato la modifica dei segmenti per l'organizzazione, è possibile
 
 2. Per impostare lo stato del criterio su inattivo, utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro Identity e il parametro state impostato su inattivo.
 
-    Sintassi`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    In questo esempio, viene impostato un criterio barriera informativo che include GUID *43c37853-EA10-4b90-a23d-ab8c9377247* su uno stato inattivo.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Inactive`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p>In questo esempio, viene impostato un criterio barriera informativo che include GUID *43c37853-EA10-4b90-a23d-ab8c9377247* su uno stato inattivo.         |
 
 3. Per applicare le modifiche, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** .
 
@@ -133,11 +134,9 @@ A questo punto, uno o più criteri barriera informazioni sono impostati sullo st
 
 2. Utilizzare il cmdlet **Remove-InformationBarrierPolicy** con un parametro Identity.
 
-    Sintassi`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Esempio: Supponiamo di voler rimuovere un criterio con GUID *43c37853-EA10-4b90-a23d-ab8c93772471*. A tale scopo, viene utilizzato il cmdlet seguente:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Remove-InformationBarrierPolicy -Identity GUID`     |`Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <p>In questo esempio viene rimosso il criterio che include GUID *43c37853-EA10-4b90-a23d-ab8c93772471*.          |
 
     Quando richiesto, confermare la modifica.
 
@@ -161,11 +160,9 @@ Se dopo aver avviato l'applicazione di criteri di barriera delle informazioni si
 
 2. Utilizzare il cmdlet **Stop-InformationBarrierPoliciesApplication** con un parametro Identity.
 
-    Sintassi`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Esempio:  `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    In questo esempio viene interrotto l'applicazione dei criteri di barriera delle informazioni.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Stop-InformationBarrierPoliciesApplication -Identity GUID`     |`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p>In questo esempio viene interrotto l'applicazione dei criteri di barriera delle informazioni.         |
 
 ## <a name="related-articles"></a>Articoli correlati
 

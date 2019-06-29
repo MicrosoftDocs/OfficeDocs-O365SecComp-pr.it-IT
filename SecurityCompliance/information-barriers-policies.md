@@ -3,7 +3,7 @@ title: Definire i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
-ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
+ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279464"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394321"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definire i criteri per le barriere informative (anteprima)
 
@@ -29,11 +29,25 @@ In questo articolo viene descritto come pianificare, definire, implementare e ge
 > [!TIP]
 > In questo articolo è incluso uno [scenario di esempio](#example-contosos-departments-segments-and-policies) e una cartella di [lavoro di Excel scaricabile](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) che consente di pianificare e definire i criteri di barriera delle informazioni.
 
+## <a name="concepts-of-information-barrier-policies"></a>Concetti relativi ai criteri di barriera delle informazioni
+
+Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile utilizzare gli attributi degli account utente, i segmenti, i criteri "blocca" e/o "Consenti" e l'applicazione di criteri.
+
+- **Gli attributi degli account utente** sono definiti in Azure Active Directory (o Exchange Online). Questi attributi possono includere reparto, titolo del processo, posizione, nome del team e altre informazioni sul profilo dei processi. 
+
+- I **segmenti** sono insiemi di utenti definiti nel centro sicurezza & conformità di Office 365 utilizzando un **attributo account utente**selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
+
+- I **criteri barriera di informazioni** determinano limiti di comunicazione o restrizioni. Quando si definiscono i criteri di barriera delle informazioni, è possibile scegliere tra due tipi di criteri:
+    - I criteri "blocca" impediscono a un segmento di comunicare con un altro segmento.
+    - I criteri "Consenti" consentono a un segmento di comunicare con solo alcuni segmenti.
+
+- L' **applicazione criterio** viene completata dopo la definizione di tutti i criteri di barriera delle informazioni e si è pronti per applicarli all'interno dell'organizzazione.
+
 ## <a name="the-work-flow-at-a-glance"></a>Il flusso di lavoro in un colpo d'occhio
 
 |Fase    |Elementi coinvolti  |
 |---------|---------|
-|[Verificare che i prerequisiti siano soddisfatti](#prerequisites)     |-Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>-Verificare che la directory includa dati per segmentare gli utenti<br/>-Abilitare la ricerca di directory con ambito per Microsoft Teams<br/>-Verificare che la registrazione di controllo sia attivata<br/>-Utilizzare PowerShell (vengono forniti esempi)<br/>-Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi)          |
+|[Verificare che i prerequisiti siano soddisfatti](#prerequisites)     |-Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>-Verificare che la directory includa dati per segmentare gli utenti<br/>-Abilitare la ricerca di directory con ambito per Microsoft Teams<br/>-Verificare che la registrazione di controllo sia attivata<br/>-Verificare che non siano presenti criteri Rubrica di Exchange<br/>-Utilizzare PowerShell (vengono forniti esempi)<br/>-Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi)          |
 |[Parte 1: segmentare gli utenti nell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
 |[Parte 2: definire i criteri di barriera delle informazioni](#part-2-define-information-barrier-policies)     |-Definire i criteri (non è ancora applicabile)<br/>-Scegliere tra due tipi (blocca o Consenti) |
 |[Parte 3: applicare i criteri di barriera delle informazioni](#part-3-apply-information-barrier-policies)     |-Impostare i criteri per lo stato attivo<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
@@ -52,6 +66,8 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 - **Ricerca nell'ambito della directory**. Prima di definire il primo criterio barriera informativo dell'organizzazione, è necessario [abilitare la ricerca nell'ambito della directory in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendere almeno 24 ore dopo aver abilitato la ricerca nell'ambito della directory prima di impostare o definire i criteri di barriera delle informazioni.
 
 - **Registrazione di controllo**. Per cercare lo stato di un'applicazione di criteri, è necessario che la registrazione di controllo sia attivata. Si consiglia di eseguire questa operazione prima di iniziare a definire segmenti o criteri. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
+
+- **Nessun criterio rubrica**. Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi.
 
 - **PowerShell**. Attualmente, i criteri barriera informativi vengono definiti e gestiti nel centro conformità & sicurezza di Office 365 tramite i cmdlet di PowerShell. Anche se alcuni esempi sono disponibili in questo articolo, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo AzureRM.
     - [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -101,22 +117,21 @@ Determinare gli attributi dei dati di directory dell'organizzazione che verranno
 
 ### <a name="define-segments-using-powershell"></a>Definire segmenti tramite PowerShell
 
-> [!IMPORTANT]
-> Verificare **che i segmenti non si sovrappongano**. Ogni utente che sarà influenzato dalle barriere informative dovrebbe appartenere a un solo segmento. Nessun utente deve appartenere a due o più segmenti. Vedere l' [esempio: segmenti definiti da Contoso](#contosos-defined-segments) in questo articolo.
-
 La definizione di segmenti non ha effetto sugli utenti. imposta solo la fase per i criteri di barriera delle informazioni da definire e quindi applicare.
 
 1. Utilizzare il cmdlet **New-OrganizationSegment** con il parametro **UserGroupFilter** che corrisponde all' [attributo](information-barriers-attributes.md) che si desidera utilizzare.
-    
-    Sintassi`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-    
-    Esempio:  `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-    
-    In questo esempio, un segmento denominato *HR* è definito utilizzando *HR*, un valore nell'attributo *Department* . La parte **-EQ** del cmdlet si riferisce a "uguale a". (In alternativa, è possibile utilizzare **-ne** per indicare "non uguale a". Vedere [utilizzo di "Equals" e "not equals" nelle definizioni di segmento](#using-equals-and-not-equals-in-segment-definitions).
+
+    |Sintassi   |Esempio  |
+    |---------|---------|
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In questo esempio, un segmento denominato *HR* è definito utilizzando *HR*, un valore nell'attributo *Department* . La parte **-EQ** del cmdlet si riferisce a "uguale a". (In alternativa, è possibile utilizzare **-ne** per indicare "non uguale a". Vedere [utilizzo di "Equals" e "not equals" nelle definizioni di segmento](#using-equals-and-not-equals-in-segment-definitions).        |
 
     Dopo aver eseguito ogni cmdlet, verrà visualizzato un elenco di dettagli sul nuovo segmento. I dettagli includono il tipo di segmento, che ha creato o modificato l'ultima volta e così via. 
 
 2. Ripetere questa procedura per ogni segmento che si desidera definire.
+
+    > [!IMPORTANT]
+    > Verificare **che i segmenti non si sovrappongano**. Ogni utente che sarà influenzato dalle barriere informative dovrebbe appartenere a un solo segmento. Nessun utente deve appartenere a due o più segmenti. Vedere l' [esempio: segmenti definiti da Contoso](#contosos-defined-segments) in questo articolo.
+
 
 Dopo aver definito i segmenti, procedere alla [definizione dei criteri barriera](#part-2-define-information-barrier-policies)informativi.
 
@@ -124,23 +139,25 @@ Dopo aver definito i segmenti, procedere alla [definizione dei criteri barriera]
 
 Nell'esempio seguente viene definito un segmento in modo che "Department sia uguale a HR". 
 
-**Esempio**:`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+|Esempio  |
+|---------|
+|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Si noti che in questo esempio, la definizione del segmento include un parametro "Equals" indicato come **-EQ**. 
+  |
 
-Si noti che la definizione del segmento include un parametro "Equals" indicato come **-EQ**. 
+È inoltre possibile definire segmenti utilizzando un parametro "not equals", indicato come **-ne**, come illustrato nella tabella seguente:
 
-È inoltre possibile definire segmenti utilizzando un parametro "not equals", indicato come **-ne**, come illustrato nell'esempio seguente:
-
-**Sintassi**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
-
-**Esempio**:`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
-
-In questo esempio, è stato definito un segmento denominato *NotSales* che include tutti coloro che non sono nelle *vendite*. La parte **-ne** del cmdlet si riferisce a "non uguale a".
+|Sintassi  |Esempio  |
+|---------|---------|
+|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>In questo esempio, è stato definito un segmento denominato *NotSales* che include tutti coloro che non sono nelle *vendite*. La parte **-ne** del cmdlet si riferisce a "non uguale a".  |
 
 Oltre alla definizione di segmenti che utilizzano "Equals" o "not equals", è possibile definire un segmento utilizzando i parametri "Equals" e "not equals".
 
-**Esempio**:`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+|Esempio  |
+|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>In questo esempio, è stato definito un segmento denominato *LocalFTE* che include persone che sono situate localmente e le cui posizioni non sono elencate come *temporanee*.    |
 
-In questo esempio, è stato definito un segmento denominato *LocalFTE* che include persone che sono situate localmente e le cui posizioni non sono elencate come *temporanee*.
+> [!TIP]
+> Se possibile, utilizzare definizioni di segmenti che includono "-EQ" o "-ne". Provare a non definire definizioni di segmenti complessi. 
 
 ## <a name="part-2-define-information-barrier-policies"></a>Parte 2: definire i criteri di barriera delle informazioni
 
@@ -164,18 +181,16 @@ Ad esempio, si supponga di voler bloccare le comunicazioni tra il segmento A e i
 
 1. Per definire il primo criterio di blocco, utilizzare il cmdlet **New-InformationBarrierPolicy** con il parametro **SegmentsBlocked** . 
 
-    Sintassi`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`
-
-    Esempio:  `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive`
-
-    In questo esempio, è stato definito un criterio denominato *Sales-Research* per un segmento denominato *Sales*. Se attivo e applicato, questo criterio impedisce alle persone in *vendita* di comunicare con gli utenti di un segmento denominato *Research*.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    In questo esempio, è stato definito un criterio denominato *Sales-Research* per un segmento denominato *Sales*. Se attivo e applicato, questo criterio impedisce alle persone in *vendita* di comunicare con gli utenti di un segmento denominato *Research*.         |
 
 2. Per definire il secondo segmento di blocco, utilizzare di nuovo il cmdlet **New-InformationBarrierPolicy** con il parametro **SegmentsBlocked** , stavolta con i segmenti invertiti.
 
-    Esempio:  `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive`
+    |Esempio  |
+    |---------|
+    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    In questo esempio, è stato definito un criterio denominato *Research-Sales* per impedire che la *ricerca* comunichi con le *vendite*.     |
 
-    In questo esempio, è stato definito un criterio denominato *Research-Sales* per impedire che la *ricerca* comunichi con le *vendite*.
- 
 2. Procedere con una delle operazioni seguenti:
 
    - (Se necessario) [Definire un criterio per consentire a un segmento di comunicare solo con un altro segmento](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
@@ -185,21 +200,15 @@ Ad esempio, si supponga di voler bloccare le comunicazioni tra il segmento A e i
 
 1. Per consentire a un segmento di comunicare solo con un altro segmento, utilizzare il cmdlet **New-InformationBarrierPolicy** con il parametro **SegmentsAllowed** . 
 
-    Sintassi`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`
-
-    Esempio:  `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive`
-
-    In questo esempio, è stato definito un criterio denominato *Manufacturing-HR* per un segmento denominato *Manufacturing*. Se attivo e applicato, questo criterio consente alle persone nella *produzione* di comunicare solo con le persone in un segmento denominato *HR*. In questo caso, la *produzione* non è in grado di comunicare con gli utenti che non fanno parte di *HR*.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    In questo esempio, è stato definito un criterio denominato *Manufacturing-HR* per un segmento denominato *Manufacturing*. Se attivo e applicato, questo criterio consente alle persone nella *produzione* di comunicare solo con le persone in un segmento denominato *HR*. In questo caso, la *produzione* non è in grado di comunicare con gli utenti che non fanno parte di *HR*.         |
 
     **Se necessario, è possibile specificare più segmenti con questo cmdlet, come illustrato nell'esempio seguente.**
 
-    Sintassi`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`
-
-    **Esempio 2: definire un criterio per consentire a un segmento di comunicare con solo altri due segmenti**    
-
-    `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive`
-
-    In questo esempio, è stato definito un criterio che consente al segmento di *ricerca* di comunicare solo con le *risorse umane* e la *produzione*.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>In questo esempio, è stato definito un criterio che consente al segmento di *ricerca* di comunicare solo con le *risorse umane* e la *produzione*.        |
 
     Ripetere questo passaggio per ogni criterio che si desidera definire per consentire a segmenti specifici di comunicare con solo alcuni segmenti specifici.
 
@@ -218,11 +227,9 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
 2. Per impostare un criterio su stato attivo, utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro **Identity** e il parametro **state** impostato su **attivo**. 
 
-    Sintassi`Set-InformationBarrierPolicy -Identity GUID -State Active`
-
-    Esempio:  `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active`
-    
-    In questo esempio, viene impostato un criterio barriera informativo che include il GUID *43c37853-EA10-4b90-a23d-ab8c93772471* per lo stato attivo.
+    |Sintassi  |Esempio  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Active`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p>    In questo esempio, viene impostato un criterio barriera informativo che include il GUID *43c37853-EA10-4b90-a23d-ab8c93772471* per lo stato attivo.   |
 
     Ripetere questo passaggio come appropriato per ogni criterio.
 
@@ -244,6 +251,17 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 |Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi`Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
 |Tutte le applicazioni dei criteri barriera di informazioni|Utilizzare`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
 
+## <a name="what-if-i-need-to-remove-or-change-policies"></a>Cosa succede se è necessario rimuovere o modificare I criteri?
+
+Sono disponibili risorse che consentono di gestire i criteri di barriera delle informazioni.
+
+- Se si verifica un problema con gli ostacoli alle informazioni, vedere [Troubleshooting Information barriers (Preview)](information-barriers-troubleshooting.md).
+
+- Per arrestare l'applicazione dei criteri, vedere [arrestare un'istanza di criteri](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+
+- Per rimuovere un criterio di barriera delle informazioni, vedere [rimuovere un criterio](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+
+- Per apportare modifiche ai segmenti o ai criteri, vedere [modificare (o rimuovere) informazioni sui criteri di barriera (Preview)](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di contoso
 
@@ -298,12 +316,6 @@ Al termine, Contoso è conforme ai requisiti legali e di settore.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Modificare o rimuovere i criteri di barriera delle informazioni (anteprima)](information-barriers-edit-segments-policies.md.md)
+- [Ottenere una panoramica delle barriere informative (Preview)](information-barriers.md)
 
-[Ottenere una panoramica delle barriere informative](information-barriers.md)
-
-[Per ulteriori informazioni, vedere barriere informative in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
-
-[Attributi per i criteri di barriera delle informazioni (anteprima)](information-barriers-attributes.md)
-
-[Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)](information-barriers-troubleshooting.md)
+- [Barriere informative nell'anteprima di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

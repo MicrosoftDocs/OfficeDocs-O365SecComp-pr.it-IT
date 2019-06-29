@@ -3,42 +3,52 @@ title: Attributi per i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/28/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare questo articolo come riferimento per i vari attributi che è possibile utilizzare nei criteri di barriera delle informazioni.
-ms.openlocfilehash: e72e37950442974897de479c7c11f0053a578d1c
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668312"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394311"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>Attributi per i criteri di barriera delle informazioni (anteprima)
 
-Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. I segmenti vengono quindi utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti). 
+Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. Una volta definiti i segmenti, tali segmenti possono essere utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti). 
 
-In questo articolo viene fornito un elenco degli attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere informative, vedere le risorse seguenti:
+In questo articolo viene descritto come utilizzare gli attributi con barriere informative e viene fornito un elenco degli attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere informative, vedere le risorse seguenti:
 - [Barriere informative (anteprima)](information-barriers.md)
 - [Definire i criteri per le barriere informative in Microsoft Teams (anteprima)](information-barriers-policies.md)
+- [Modificare (o rimuovere) criteri di barriera delle informazioni (anteprima)](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Come utilizzare gli attributi nei criteri di barriere informative
 
-Gli attributi elencati in questo articolo possono essere utilizzati per definire (o modificare) segmenti di utenti. I segmenti vengono utilizzati come parametri (UserGroupFilter) nei criteri di barriera delle informazioni, come illustrato negli esempi seguenti:
+Gli attributi elencati in questo articolo possono essere utilizzati per definire o modificare segmenti di utenti. I segmenti definiti fungono da parametri (denominati valori di *UserGroupFilter* ) nei [criteri di barriera delle informazioni](information-barriers-policies.md).
 
-|Esempio  |Cmdlet  |
-|---------|---------|
-|Definire un segmento denominato segment1 con l'attributo Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-|Definire un segmento denominato Segmenta utilizzando l'attributo member (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup").     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-|Definire un segmento denominato DayTraders tramite ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader").|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+1. Determinare l'attributo che si desidera utilizzare per definire i segmenti. Vedere la sezione di [riferimento](#reference) in questo articolo.
 
-Quando si definiscono i segmenti, utilizzare lo stesso attributo per tutti i segmenti. Ad esempio, se si definiscono alcuni segmenti utilizzando *Department*, definire tutti i segmenti che utilizzano *Department*. Non definire alcuni segmenti con *Department* e altri utenti che utilizzano *member*. Verificare che i segmenti non siano sovrapposti. ogni utente deve essere assegnato a un solo segmento. 
+2. Verificare che per gli account utente siano stati inseriti i valori per gli attributi selezionati nel passaggio 1. Visualizzare i dettagli dell'account utente e, se necessario, modificare gli account utente per includere i valori degli attributi. 
 
-Per ulteriori informazioni, vedere [define Segments using PowerShell](information-barriers-policies.md#define-segments-using-powershell).
+    Per eseguire questa operazione tramite PowerShell, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+
+    Per eseguire questa operazione in Azure Active Directory, vedere [aggiungere o aggiornare le informazioni del profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+3. [Definire i segmenti tramite PowerShell](information-barriers-policies.md#define-segments-using-powershell), analogamente agli esempi seguenti:
+
+    |Esempio  |Cmdlet  |
+    |---------|---------|
+    |Definire un segmento denominato segment1 con l'attributo Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+    |Definire un segmento denominato Segmenta utilizzando l'attributo member (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup").     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |Definire un segmento denominato DayTraders tramite ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader").|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+
+    > [!TIP]
+    > Quando si definiscono i segmenti, utilizzare lo stesso attributo per tutti i segmenti. Ad esempio, se si definiscono alcuni segmenti utilizzando *Department*, definire tutti i segmenti che utilizzano *Department*. Non definire alcuni segmenti con *Department* e altri utenti che utilizzano *member*. Verificare che i segmenti non siano sovrapposti. ogni utente deve essere assegnato a un solo segmento. 
 
 ## <a name="reference"></a>Riferimenti
 
