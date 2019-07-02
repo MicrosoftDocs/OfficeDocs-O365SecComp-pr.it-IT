@@ -3,8 +3,8 @@ title: Prevenzione della perdita di dati e Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/26/2019
-ms.audience: ITPro
+ms.date: 07/01/2019
+audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,14 +13,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 712729972942d98afb5b3898ad357114ce1a6bae
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33367257"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417398"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
+
+> [!NOTE]
+> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams in Office 365 E5 e Office 365 Advanced Compliance. Per ulteriori informazioni sulla disponibilità delle funzionalità, vedere [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica di DLP per Microsoft Teams
 
@@ -28,7 +31,10 @@ Recentemente, le funzionalità di [prevenzione della perdita di dati](data-loss-
 
 - **Esempio 1: protezione delle informazioni riservate nei messaggi**. Si supponga che un utente tenti di condividere le informazioni riservate in una chat o un canale di team con gli ospiti (utenti esterni). Se è stato definito un criterio DLP per evitare questo, vengono eliminati i messaggi con informazioni riservate inviate a utenti esterni. Questo accade automaticamente, e in pochi secondi, in base al modo in cui viene configurato il criterio DLP.
 
-- **Esempio 2: protezione delle informazioni riservate nei documenti**. Si supponga che un utente tenti di condividere un documento con gli utenti in un canale o in una chat di Microsoft teams e che il documento contenga informazioni riservate. Se si dispone di un criterio DLP definito per evitare questo, il documento non verrà aperto per tali utenti. Si noti che in questo caso, il criterio DLP deve includere SharePoint e OneDrive in modo che la protezione sia sul posto.
+    > [!NOTE]
+    > DLP per Microsoft teams blocca i contenuti sensibili quando vengono condivisi con gli utenti che dispongono dell' [accesso Guest](https://docs.microsoft.com/MicrosoftTeams/guest-access) in Teams and Channels e con gli utenti che dispongono di [accesso esterno](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) nelle riunioni e nelle sessioni di chat. Se si utilizzano [Microsoft teams insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype), tenere presente che DLP per i team non blocca i messaggi nelle sessioni di interoperabilità o di chat federata.
+
+- **Esempio 2: protezione delle informazioni riservate nei documenti**. Si supponga che un utente tenti di condividere un documento con gli utenti in un canale o in una chat di Microsoft teams e che il documento contenga informazioni riservate. Se si dispone di un criterio DLP definito per evitare questo, il documento non verrà aperto per tali utenti. Si noti che in questo caso, il criterio DLP deve includere SharePoint e OneDrive in modo che la protezione sia sul posto. (Questo è un esempio di DLP per SharePoint che viene visualizzato in Microsoft Teams).
 
 ## <a name="policy-tips-help-educate-users"></a>Suggerimenti per i criteri per informare gli utenti
 
@@ -52,7 +58,7 @@ La **che cos'è?** collegamento consente di aprire un [articolo](data-loss-preve
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [](data-loss-prevention-policies.md#permissions)Permissions.
 
-1. Accedere al centro conformità di Office 365 Security & ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso.
+1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
 2. Scegliere **i** > **criteri**di prevenzione della perdita di dati. 
 
@@ -72,7 +78,7 @@ Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [](data-loss-prevention-policies.md#permissions)Permissions.
 
-1. Accedere al centro conformità di Office 365 Security & ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso.
+1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
 2. Scegliere **i** > **criteri**di prevenzione della perdita di dati. 
 
@@ -90,13 +96,13 @@ Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [](data-loss-prevention-policies.md#permissions)Permissions.
 
-1. Accedere al centro conformità di Office 365 Security & ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso.
+1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
 2. Scegliere **** > **** criteri > di prevenzione della perdita**di dati + creare un criterio**. 
 
 3. Scegliere un [modello](data-loss-prevention-policies.md#dlp-policy-templates)e quindi fare clic su **Avanti**.<br/>In questo esempio, è stato scelto il modello di dati di identificazione personale degli Stati Uniti.<br/>![Modello di privacy per i criteri DLP](media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. Nella scheda deNominare i **criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**. 
+4. Nella scheda denominare i **criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**. 
 
 5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se si è scelto di scegliere percorsi specifici, selezionare le posizioni per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
