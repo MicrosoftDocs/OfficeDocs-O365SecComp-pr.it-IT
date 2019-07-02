@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151548"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767367"
 ---
 # <a name="view-documents-in-a-review-set"></a>Visualizzare i documenti in un insieme da rivedere
 
@@ -38,14 +38,14 @@ Questo pannello può essere attivato/disattivato per visualizzare i vari metadat
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
-Il Visualizzatore nativo Visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, ad esempio, il visualizzatore utilizza Office Online per visualizzare contenuti quali commenti a documenti, formule di Excel, righe/colonne nascoste, note di PowerPoint e così via. Per ulteriori informazioni sui visualizzatori di Office Online, visitare \[il collegamento necessario\]
+Il Visualizzatore nativo Visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, il visualizzatore utilizza la versione Web delle app di Office per visualizzare il contenuto, ad esempio commenti, formule di Excel, righe/colonne nascoste e note di PowerPoint.
 
 ![Visualizzazione nativa
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Visualizzazione testo
 
-Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma sarà una visualizzazione molto performante se un utente cerca di comprendere rapidamente il contenuto. La visualizzazione testo include anche altre caratteristiche:
+Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma è molto efficace se si sta tentando di comprendere rapidamente il contenuto. La visualizzazione del testo include anche queste caratteristiche:
 
   - Il contatore linea rende più facile fare riferimento a parti specifiche di un documento
 

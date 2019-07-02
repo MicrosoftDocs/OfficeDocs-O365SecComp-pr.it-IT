@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
-ms.openlocfilehash: 6b51aefc10c0070749fcf4bc8c2d56c7ff7a3ef3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 19f227971c522f9d92aec343f1865ab7f23c13aa
+ms.sourcegitcommit: b0ea2d66bc4c7f2fc0a8abab28d2ae652b1c4b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152468"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34721373"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 
@@ -75,7 +75,7 @@ Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettro
    For example,
 
    ```powershell
-   New-OMEConfiguration -Identity <Branding template 1>
+   New-OMEConfiguration -Identity "Branding template 1"
    ```
 
 3. Definire le personalizzazioni per il modello appena definito utilizzando il cmdlet Set-OMEConfiguration come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) oppure utilizzare la seguente tabella per istruzioni.

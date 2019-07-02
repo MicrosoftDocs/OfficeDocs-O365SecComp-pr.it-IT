@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0f1cd4fdf08edcd747dc3d1bc92625dda49e50de
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077712"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
+# <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
 Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. È possibile utilizzare uno di questi modelli come è o personalizzare le regole per soddisfare i requisiti di conformità specifici dell'organizzazione.
   
@@ -44,7 +44,7 @@ In Office 365 sono disponibili più di 40 modelli pronti all'uso che consentono 
 
 Gli account di OneDrive for business facilitano la collaborazione e la condivisione dei documenti da parte di utenti dell'organizzazione. Tuttavia, una preoccupazione comune per i responsabili della conformità è che le informazioni riservate archiviate negli account di OneDrive for business possono essere condivise inavvertitamente con persone esterne all'organizzazione. Un criterio DLP potrebbe ridurre questo rischio.
   
-In questo esempio, verrà creato un criterio DLP che identifica i dati delle informazioni personali degli Stati Uniti, che include i numeri di identificazione dei contribuenti individuali, i numeri di preVidenza sociale e i numeri di passaporto degli Stati Uniti. Per iniziare, è possibile utilizzare un modello e quindi modificare il modello per soddisfare i requisiti di conformità dell'organizzazione, in particolare:
+In questo esempio, verrà creato un criterio DLP che identifica i dati delle informazioni personali degli Stati Uniti, che include i numeri di identificazione dei contribuenti individuali, i numeri di previdenza sociale e i numeri di passaporto degli Stati Uniti. Per iniziare, è possibile utilizzare un modello e quindi modificare il modello per soddisfare i requisiti di conformità dell'organizzazione, in particolare:
   
 - Aggiungere un paio di tipi di informazioni riservate, ovvero numeri di conto corrente bancario e numeri di licenza degli Stati Uniti, in modo che il criterio DLP protegga ancora di più i dati sensibili.
     
@@ -52,7 +52,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 - Si consentirà agli utenti di eseguire l'override delle azioni fornendo una motivazione aziendale o segnalando un falso positivo. In questo modo, i criteri DLP non impediscono agli utenti dell'organizzazione di svolgere il proprio lavoro, purché dispongano di un motivo aziendale valido per la condivisione delle informazioni riservate.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
+### <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
@@ -74,7 +74,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 6. Per scegliere i percorsi che si desidera proteggere dal criterio DLP, effettuare una delle seguenti operazioni:
     
-  - scegliere **tutte le posizioni in Office 365** \> **avanti**.
+  - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
     
   - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**. Per questo esempio, scegliere questo.
     

@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection include allegati sicuri, collegamenti sicuri, strumenti avanzati di anti-phishing, strumenti per la creazione di report e funzionalità di minacce di intelligence.
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408381"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652659"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti di Office 365 Enterprise e Microsoft 365 Enterprise. Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Panoramica
 
@@ -47,7 +47,7 @@ ATP è incluso in Office 365 E5. Tuttavia, il piano ATP e il piano ATP 2 sono di
 
 Office 365 ATP offre numerosi strumenti per impostare un livello di protezione appropriato per la propria organizzazione. 
 
-Il team di sicurezza dell'organizzazione deve definire i criteri per ogni strumento ATP nel centro conformità di Office 365 Security &. Passare a**criteri** di **gestione delle minacce** > per accedere alle opzioni dei criteri. Per ottenere assistenza, vedere Guida introduttiva [: configurare Office 365 Advanced Threat Protection](checklist-atp-setup.md).
+Il team di sicurezza dell'organizzazione deve definire i criteri per ogni strumento ATP nel centro sicurezza & conformità di Office 365. Passare a**criteri** di **gestione delle minacce** > per accedere alle opzioni dei criteri. Per ottenere assistenza, vedere Guida introduttiva [: configurare Office 365 Advanced Threat Protection](checklist-atp-setup.md).
 
 I criteri definiti per l'organizzazione determinano il comportamento e il livello di protezione per le minacce predefinite. Le opzioni dei criteri sono estremamente flessibili. Ad esempio, il team di sicurezza dell'organizzazione può impostare una protezione dalle minacce specifiche a livello di utente, organizzazione, destinatario e dominio. È importante esaminare i criteri regolarmente perché emergono giornalmente nuove minacce e sfide.  
 
@@ -61,7 +61,7 @@ I criteri definiti per l'organizzazione determinano il comportamento e il livell
 
 ## <a name="view-atp-reports"></a>Visualizzare i report di ATP
 
-Office 365 ATP include un [dashboard di Reporting](view-reports-for-atp.md) avanzato che consente di monitorare le prestazioni del trifosfato di adenosina. È possibile accedervi nel **dashboard report di >** nel centro sicurezza & Compliance. 
+Office 365 ATP include un [dashboard di Reporting](view-reports-for-atp.md) avanzato che consente di monitorare le prestazioni del trifosfato di adenosina. È possibile accedervi nei **report > dashboard** nel centro sicurezza & Compliance. 
 
 I report vengono aggiornati in tempo reale, fornendo le informazioni più recenti. Questi rapporti forniscono anche suggerimenti e avvisano l'utente di minacce imminenti. I report predefiniti sono i seguenti: 
 

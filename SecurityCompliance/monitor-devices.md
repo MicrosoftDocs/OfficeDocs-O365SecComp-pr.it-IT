@@ -1,5 +1,5 @@
 ---
-title: Monitorare i dispositivi in Sicurezza Microsoft 365
+title: Monitoraggio e Reporting dei dispositivi in Microsoft 365 Security Center
 description: Descrive in che modo è possibile mantenere i dispositivi sicuri, aggiornati e individuare potenziali minacce nell'organizzazione
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, dispositivi
 ms.prod: w10
@@ -12,42 +12,42 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 44fd28a0ba2ec72d999c89d183d85ccb496903ec
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402934"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852870"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Monitorare i dispositivi in Sicurezza Microsoft 365
+# <a name="device-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoraggio e Reporting dei dispositivi in Microsoft 365 Security Center
 
 Mantenere i dispositivi sicuri, aggiornati e individuare potenziali minacce nel centro sicurezza Microsoft 365.
 
 ## <a name="view-device-alerts"></a>Visualizzare gli avvisi per i dispositivi
 
-Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Windows Defender ATP (disponibile con una licenza E5). Microsoft 365 Security Center monitora efficacemente gli avvisi a un livello elevato utilizzando il flusso di lavoro preferito.
+Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui dispositivi da Microsoft Defender ATP (disponibile con una licenza E5). Microsoft 365 Security Center monitora efficacemente gli avvisi a un livello elevato utilizzando il flusso di lavoro preferito.
 
 ### <a name="monitor-high-impact-alerts"></a>Monitorare gli avvisi ad impatto elevato
 
-Ogni avviso di Windows Defender ATP ha un livello di gravità corrispondente, alto, medio, basso o informativo, che indica il potenziale impatto della rete se non è presente.  
+Ogni avviso del trifosfato di adenosina di Microsoft Defender ha un livello di gravità corrispondente, alto, medio, basso o informativo, che indica il potenziale impatto della rete se è stato lasciato incustodito.  
 
-Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo specifico sugli avvisi più gravi e potrebbe richiedere una risposta immediata. Da questa scheda, è possibile visualizzare ulteriori informazioni su Windows Defender Security Center Portal.
+Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo specifico sugli avvisi più gravi e potrebbe richiedere una risposta immediata. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
 ![Scheda di gravità avvisi dispositivo](./media/security-docs/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>Informazioni sulle origini degli avvisi
 
-Windows Defender ATP utilizza i dati provenienti da una vasta gamma di sensori di sicurezza e fonti di intelligence per generare avvisi. Ad esempio, è possibile utilizzare le informazioni di rilevamento di Windows Defender Antivirus e antimalware di terze parti, nonché la propria Intelligence di minacce personalizzata fornita tramite l'API del servizio Web.
+Microsoft Defender ATP utilizza i dati provenienti da una vasta gamma di sensori di sicurezza e fonti di intelligence per generare avvisi. Ad esempio, è possibile utilizzare le informazioni di rilevamento di Windows Defender Antivirus e antimalware di terze parti, nonché la propria Intelligence di minacce personalizzata fornita tramite l'API del servizio Web.
 
 La scheda fonti di **rilevamento avvisi dispositivo** Visualizza la distribuzione degli avvisi per origine. Questa scheda può essere utile per monitorare le attività relative a determinate origini, in particolare le origini personalizzate. È inoltre possibile utilizzare questa pagina per concentrarsi sugli avvisi provenienti da sensori che non sono configurati per bloccare automaticamente le attività o i componenti dannosi.
 
 ![Scheda fonti di rilevamento avvisi dispositivo](./media/security-docs/device-alert-detection-sources.png)
 
-Da questa scheda, è possibile visualizzare ulteriori informazioni su Windows Defender Security Center Portal.
+Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Comprendere i tipi di minacce che attivano gli avvisi
 
-Windows Defender ATP Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o un tipo di componente di minaccia. Ad esempio, l'attività di minacce rilevata potrebbe essere categorizzata in "movimento laterale" per indicare che l'attività implicava un tentativo di raggiungere altri dispositivi sulla rete ed è probabile che si sia verificato dopo che i pirati informatici hanno acquisito un punto di appoggio iniziale. Una volta rilevato, un componente di minacce potrebbe essere classificato come "malware" o più specificamente come "ransomware", "furto di credenziali" o altri tipi di software dannoso o indesiderato.
+Microsoft Defender ATP Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o un tipo di componente di minaccia. Ad esempio, l'attività di minacce rilevata potrebbe essere categorizzata in "movimento laterale" per indicare che l'attività implicava un tentativo di raggiungere altri dispositivi sulla rete ed è probabile che si sia verificato dopo che i pirati informatici hanno acquisito un punto di appoggio iniziale. Una volta rilevato, un componente di minacce potrebbe essere classificato come "malware" o più specificamente come "ransomware", "furto di credenziali" o altri tipi di software dannoso o indesiderato.
 
 La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli avvisi in queste categorie. È possibile utilizzare queste informazioni per identificare le attività relative alle minacce, ad esempio i tentativi di furto di credenziali, che possono avere un impatto più significativo rispetto ai tentativi di social engineering. È inoltre possibile utilizzare questa pagina per monitorare le minacce potenzialmente distruttive come ransomware.
 
@@ -55,18 +55,18 @@ La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli av
 
 ### <a name="monitor-active-alerts"></a>Monitorare gli avvisi attivi
 
-La scheda **stato avviso dispositivo** indica il numero di avvisi che non sono stati risolti e che potrebbero richiedere attenzione. Da questa scheda, è possibile visualizzare ulteriori informazioni su Windows Defender Security Center Portal.
+La scheda **stato avviso dispositivo** indica il numero di avvisi che non sono stati risolti e che potrebbero richiedere attenzione. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
 ![Scheda stato avviso dispositivo](./media/security-docs/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Monitorare la classificazione degli avvisi risolti
 
-Durante la risoluzione di un avviso di Windows Defender ATP, il personale di sicurezza può specificare se un avviso è stato verificato come:
+Durante la risoluzione di un avviso di Microsoft Defender ATP, il personale di sicurezza può specificare se un avviso è stato verificato come:
 
 * Un avviso vero che identifica le attività di violazione effettive o i componenti di minaccia
 * Un falso avviso che ha rilevato erroneamente attività normale
 
-La scheda di **classificazione avviso dispositivo** indica se gli avvisi risolti sono stati classificati come avvisi veri o falsi. Da questa scheda, è possibile visualizzare ulteriori informazioni su Windows Defender Security Center Portal.
+La scheda di **classificazione avviso dispositivo** indica se gli avvisi risolti sono stati classificati come avvisi veri o falsi. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
 Nota: in alcuni casi, le informazioni di classificazione non sono disponibili per determinati avvisi.
 
@@ -85,7 +85,7 @@ La scheda di **determinazione dell'avviso del dispositivo** Visualizza la determ
 * **Software** indesiderato – app e altri software che non sono considerati dannosi, ma violano in altro modo i criteri o gli standard di utilizzo accettabili
 * **Altri** – qualsiasi altra determinazione che non rientra nei tipi forniti
 
-Da questa scheda, è possibile visualizzare altre informazioni in Windows Defender Security Center.
+Da questa scheda, è possibile visualizzare altre informazioni in Microsoft Defender Security Center.
 
 ![Scheda di determinazione dell'avviso del dispositivo](./media/security-docs/device-alert-determination.png)
 
@@ -97,7 +97,7 @@ La **protezione del dispositivo** Visualizza il livello di rischio per i disposi
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Monitorare e segnalare lo stato dei dispositivi gestiti da Intune
 
-Il monitoraggio e i report seguenti contengono dati provenienti da dispositivi registrati in Intune. I dati dei dispositivi non registrati non sono inclusi. Solo gli amministratori globali possono visualizzare queste schede.
+Nei rapporti seguenti sono contenuti dati provenienti da dispositivi registrati in Intune. I dati dei dispositivi non registrati non sono inclusi. Solo gli amministratori globali possono visualizzare queste schede.
 
 I dati dei dispositivi registrati di Intune includono:
 
@@ -146,7 +146,7 @@ I **dispositivi con rilevamenti di malware** mostrano quali dispositivi presenta
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Monitorare e gestire la distribuzione e i rilevamenti delle regole ASR
 
-[Le regole di riduzione dell'attacco superficiale (ASR, Attack Surface Reduction)](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) consentono di prevenire azioni e app che vengono in genere utilizzate da malware in cerca di exploit per infettare macchine Queste regole controllano il modo in cui è possibile eseguire i file eseguibili. Ad esempio, è possibile impedire a JavaScript o VBScript di avviare un file eseguibile scaricato, bloccare le chiamate API Win32 dalle macro di Office o bloccare i processi che vengono eseguiti da unità USB.
+[Le regole di riduzione dell'attacco superficiale (ASR, Attack Surface Reduction)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) consentono di prevenire azioni e app che vengono in genere utilizzate da malware in cerca di exploit per infettare macchine Queste regole controllano il modo in cui è possibile eseguire i file eseguibili. Ad esempio, è possibile impedire a JavaScript o VBScript di avviare un file eseguibile scaricato, bloccare le chiamate API Win32 dalle macro di Office o bloccare i processi che vengono eseguiti da unità USB.
 
 ![Scheda riduzioni superficie attacco](./media/security-docs/attack-surface-reduction-rules.png)
 
@@ -164,7 +164,7 @@ Nella parte inferiore della scheda sono riportate le impostazioni per regola tra
 
 Per visualizzare informazioni dettagliate sui rilevamenti delle regole di ASR nella rete, selezionare **Visualizza** rilevamenti nella scheda **regole di riduzione della superficie di attacco** . Verrà **** aperta la scheda rilevamenti nella pagina rapporto dettagliato.
 
-![Scheda riLevamenti](./media/security-docs/detections-tab.png)
+![Scheda rilevamenti](./media/security-docs/detections-tab.png)
 
 Il grafico nella parte superiore della pagina Visualizza rilevamenti nel tempo di rilevamenti di sovrapposizione che sono stati bloccati o controllati. La tabella in basso elenca i rilevamenti più recenti. Utilizzare le informazioni seguenti nella tabella per comprendere la natura dei rilevamenti:
 
@@ -201,7 +201,7 @@ Per ottenere un elenco dei file selezionati con i percorsi completi per l'esclus
 
 Registri per la regola di ASR **Block Credential Stealing from the Windows Local Security Authority Subsystem (Lsass. exe)** acquisire l'app di origine **Lsass. exe**, un file di sistema normale, come file rilevato. Di conseguenza, l'elenco generato dei percorsi di esclusione includerà questo file. Per escludere il file che ha attivato questa regola anziché **Lsass. exe**, utilizzare il percorso dell'applicazione di origine anziché il file rilevato.
 
-Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) seguente per questa regola specifica (identificata dalla regola ID 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2): 
+Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) seguente per questa regola specifica (identificata dalla regola ID 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2):
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -213,9 +213,9 @@ Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https:
 #### <a name="check-files-for-exclusion"></a>Controllare i file per l'esclusione
 Prima di escludere un file dal riconoscimento vocale automatico, è consigliabile ispezionare il file per determinare se non è effettivamente dannoso.
 
-Per esaminare un file, utilizzare la [pagina informazioni sui file](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection) in centro sicurezza Windows Defender. La pagina fornisce informazioni sulla prevalenza così come il rapporto di rilevamento antivirus di VirusTotal. È inoltre possibile utilizzare la pagina per inviare il file per un'analisi approfondita.
+Per esaminare un file, utilizzare la [pagina informazioni sui file](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) in Microsoft Defender Security Center. La pagina fornisce informazioni sulla prevalenza così come il rapporto di rilevamento antivirus di VirusTotal. È inoltre possibile utilizzare la pagina per inviare il file per un'analisi approfondita.
 
-Per individuare un file rilevato in centro sicurezza Windows Defender, cercare tutti i rilevamenti ASR utilizzando la query di caccia avanzata seguente:
+Per individuare un file rilevato in Microsoft Defender Security Center, cercare tutti i rilevamenti ASR utilizzando la query di caccia avanzata seguente:
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -223,4 +223,4 @@ Per individuare un file rilevato in centro sicurezza Windows Defender, cercare t
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
 ```
 
-Utilizzare l'interfaccia **SHA1** o la **InitiatingProcessSHA1** nei risultati per cercare il file utilizzando la barra di ricerca universale in centro sicurezza Windows Defender.
+Utilizzare l'interfaccia **SHA1** o la **InitiatingProcessSHA1** nei risultati per cercare il file utilizzando la barra di ricerca universale in Microsoft Defender Security Center.

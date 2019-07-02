@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157588"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852860"
 ---
 # <a name="office-365-message-encryption"></a>Crittografia dei messaggi di Office 365
 
@@ -58,7 +58,7 @@ La crittografia avanzata dei messaggi di Office 365 consente di creare modelli d
 
 La crittografia avanzata dei messaggi in Office 365 consente di soddisfare gli obblighi di conformità che richiedono un controllo più flessibile sull'accesso dei destinatari esterni ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, in qualità di amministratore, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici che consentono di rilevare tipi di informazioni riservate (ad esempio, ID di integrità, finanziario o sanitario) o parole chiave per migliorare protezione tramite la scadenza dell'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati. Inoltre, come amministratore è possibile controllare ulteriormente i messaggi di posta elettronica crittografati accessibili esternamente tramite un portale Web di Office 365 revocando l'accesso a un messaggio di posta elettronica in qualsiasi momento.
 
-La revoca dei messaggi e la scadenza funzionano solo per i messaggi di posta elettronica inviati dagli utenti ai destinatari all'esterno dell'organizzazione di Office 365. Inoltre, i destinatari devono accedere al messaggio di posta elettronica tramite il portale Web. Per assicurarsi che il destinatario utilizzi il portale per la ricezione della posta elettronica, è necessario configurare un modello di personalizzazione personalizzato che applica il wrapper. Viene quindi applicato il modello di personalizzazione in una regola del flusso di posta. Per ulteriori informazioni sulla crittografia avanzata dei messaggi, vedere [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+La revoca dei messaggi e la scadenza funzionano solo per i messaggi di posta elettronica inviati dagli utenti ai destinatari all'esterno dell'organizzazione di Office 365. Inoltre, i destinatari devono accedere al messaggio di posta elettronica tramite il portale Web. Per assicurarsi che il destinatario utilizzi il portale per la ricezione della posta elettronica, è necessario configurare un modello di personalizzazione personalizzato che applica il wrapper. Viene quindi applicato il modello di personalizzazione in una regola del flusso di posta. Per ulteriori informazioni sulla crittografia avanzata dei messaggi, vedere [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Regole di definizione per la crittografia dei messaggi di Office 365
 

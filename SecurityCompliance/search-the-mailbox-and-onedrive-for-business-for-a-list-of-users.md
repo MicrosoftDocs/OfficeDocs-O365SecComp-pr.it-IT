@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilizzare la ricerca contenuto e lo script in questo articolo per eseguire ricerche nelle cassette postali e nei siti di OneDrive for business per un gruppo di utenti.
-ms.openlocfilehash: 7be1494f7a69c5865974a6c4ee0be65a6acb49d4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9ee2db0bc0fc7a4b53c58f02bcb9d16f96fc403
+ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158768"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253925"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usare Ricerca contenuto per cercare un elenco di utenti nella cassetta postale e nel sito di OneDrive for Business
 
-Il Centro sicurezza e conformità di & fornisce un certo numero di cmdlet di Windows PowerShell che consentono di automatizzare le attività relative all'utilizzo di eDiscovery. Attualmente, la creazione di una ricerca di contenuto nel centro sicurezza & Compliance per la ricerca di un gran numero di posizioni di contenuto custode richiede tempo e preparazione. Prima di creare una ricerca, è necessario raccogliere l'URL per ogni sito di OneDrive for business e quindi aggiungere ogni cassetta postale e O neDrive for Business site alla ricerca. Nelle versioni future, questo sarà più facile da fare nel centro sicurezza & Compliance. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo. Questo script richiede l'utilizzo del nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), un elenco di indirizzi di posta elettronica utente, il nome della nuova ricerca contenuto e la query di ricerca da utilizzare. Lo script ottiene l'URL di OneDrive for business per ogni utente nell'elenco e quindi crea e avvia una ricerca di contenuto che cerca nella cassetta postale e nel sito di OneDrive for business ogni utente nell'elenco, utilizzando la query di ricerca fornita. 
+Il Centro sicurezza & conformità fornisce una serie di cmdlet di Windows PowerShell che consentono di automatizzare le attività relative a eDiscovery. Attualmente, la creazione di una ricerca di contenuto nel centro sicurezza & conformità per la ricerca di un numero elevato di posizioni di contenuto del custode richiede tempo e preparazione. Prima di creare una ricerca, è necessario raccogliere l'URL per ogni sito di OneDrive for business e quindi aggiungere ogni cassetta postale e sito di OneDrive for business alla ricerca. Nelle versioni future, questo sarà più facile da fare nel centro sicurezza & Compliance. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo. Questo script richiede l'utilizzo del nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), un elenco di indirizzi di posta elettronica utente, il nome della nuova ricerca contenuto e la query di ricerca da utilizzare. Lo script ottiene l'URL di OneDrive for business per ogni utente nell'elenco e quindi crea e avvia una ricerca di contenuto che cerca nella cassetta postale e nel sito di OneDrive for business ogni utente nell'elenco, utilizzando la query di ricerca fornita. 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza e conformità di & e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3.
+- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & compliance e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3.
     
 - Assicurarsi di salvare l'elenco di utenti creato nel passaggio 2 e lo script nel passaggio 3 alla stessa cartella. Questo renderà più facile eseguire lo script.
     
@@ -57,7 +57,7 @@ Dopo aver eseguito il comando, accertarsi di aprire il file e rimuovere l'intest
 
 Quando si esegue lo script in questo passaggio, vengono richieste le informazioni seguenti. Assicurarsi di avere queste informazioni pronte prima di eseguire lo script.
   
-- **Credenziali utente** : lo script utilizzerà le credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business e connettersi al centro sicurezza & compliance con Remote PowerShell. 
+- **Credenziali utente** : lo script utilizzerà le credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business e connettersi al centro sicurezza & conformità con Remote PowerShell. 
     
 - **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com**, è necessario immetterlo `contoso` quando lo script richiede il nome del dominio di siti personali. 
     
@@ -182,4 +182,4 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
     
     - La query di ricerca (lasciare vuoto questo elemento per restituire tutti gli elementi nei percorsi di contenuto).
     
-    Lo script consente di recuperare gli URL per ogni sito di OneDrive for business e quindi di creare e avviare la ricerca. È possibile eseguire il cmdlet **Get-ComplianceSearch** in PowerShell centro conformità _AMP_ di sicurezza per visualizzare le statistiche di ricerca e i risultati oppure andare alla pagina **Ricerca contenuto** nel centro sicurezza e conformità di & per visualizzare le informazioni informazioni sulla ricerca. 
+    Lo script consente di recuperare gli URL per ogni sito di OneDrive for business e quindi di creare e avviare la ricerca. È possibile eseguire il cmdlet **Get-ComplianceSearch** in PowerShell per la sicurezza & Compliance Center per visualizzare le statistiche di ricerca e i risultati oppure andare alla pagina **Ricerca contenuto** nel centro sicurezza & conformità per visualizzare le informazioni informazioni sulla ricerca. 

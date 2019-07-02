@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b85d1ac4c8ed0527a8018129e146fee074d942
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153428"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199693"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -54,7 +54,7 @@ Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center,
   
 Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi di Office 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
   
-![Pagina disposizioni nel centro sicurezza e conformità](media/Retention_Dispositions_v2_page.png)
+![Pagina disposizioni nel centro sicurezza e conformità](media/Retention-Dispositions-v2-page.png)
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Impostazione della revisione della disposizione mediante la creazione di un'etichetta di conservazione
 
@@ -74,7 +74,7 @@ Quando un revisore riceve una notifica tramite posta elettronica che il contenut
 
 Dopo aver selezionato un'etichetta di conservazione, la pagina successiva Visualizza tutte le disposizioni in sospeso per tale etichetta.
 
-![Opzioni di disposizione](media/Retention_Disposition_options_v2.png)
+![Opzioni di disposizione](media/Retention-Disposition-options-v2.png)
 
 Il revisore può quindi: 
   
@@ -118,13 +118,13 @@ Nella pagina **disposizione in sospeso** , è possibile visualizzare le disposiz
     
 - La scheda **elementi eliminati** indica che le disposizioni sono state approvate per l'eliminazione durante una revisione della disposizione e sono ora in fase di eliminazione definitiva. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
 
-![Schede disposizione](media/Retention_Disposition_tabs.png)
+![Schede disposizione](media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrare le visualizzazioni di disposizione
 
 È possibile filtrare queste visualizzazioni in base all'etichetta di conservazione o all'intervallo di tempo. Per le disposizioni in sospeso, l'intervallo di tempo si basa sulla data di scadenza. Per gli elementi eliminati, l'intervallo di tempo è basato sulla data di eliminazione.
   
-![Opzioni del filtro di disposizione](media/Retention_filter_options.png)
+![Opzioni del filtro di disposizione](media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Esportare gli elementi di disposizione
 

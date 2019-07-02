@@ -1,10 +1,10 @@
 ---
-title: Panoramica relativa ai criteri di prevenzione della perdita di dati
+title: Panoramica della prevenzione della perdita di dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/11/2019
-ms.audience: ITPro
+ms.date: 05/03/2019
+audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -14,21 +14,24 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
-ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: Con un criterio di prevenzione della perdita di dati (DLP) &amp; nel centro sicurezza e conformità, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365.
+ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33362054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077852"
 ---
-# <a name="overview-of-data-loss-prevention-policies"></a>Panoramica relativa ai criteri di prevenzione della perdita di dati
+# <a name="overview-of-data-loss-prevention"></a>Panoramica della prevenzione della perdita di dati
 
-Per ottenere la conformità agli standard aziendali e alle normative di settore, le organizzazioni devono proteggere le informazioni riservate e impedirne la divulgazione accidentale. Le informazioni riservate che si desidera proteggere dalla divulgazione all'esterno dell'organizzazione possono essere, ad esempio, dati finanziari o informazioni di identificazione personale (PII) come numeri di carta di credito, numeri di previdenza sociale o cartelle cliniche. Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservaTe in Office 365.
+> [!NOTE]
+> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams in Office 365 E5 e Office 365 Advanced Compliance. Per ulteriori informazioni sulla disponibilità delle funzionalità, vedere [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+
+Per conformarsi agli standard aziendali e alle normative industriali, le organizzazioni devono proteggere le informazioni riservate e impedire la divulgazione involontaria. Le informazioni riservate possono includere dati finanziari o informazioni di identificazione personale (PII), ad esempio numeri di carta di credito, numeri di previdenza sociale o record di integrità. Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365.
   
 Utilizzando un criterio DLP, è possibile:
   
-- **Identificare informazioni riservate in numerosi percorsi, ad esempio Exchange Online, SharePoint Online, OneDrive for business e Microsoft teams.**
+- **Identificare le informazioni riservate in numerose posizioni, ad esempio Exchange Online, SharePoint Online e OneDrive for Business e Microsoft Teams.**
     
     Ad esempio, è possibile identificare qualsiasi documento contenente un numero di carta di credito memorizzato in qualsiasi sito di OneDrive for business oppure è possibile monitorare solo i siti di OneDrive di persone specifiche.
     
@@ -44,7 +47,7 @@ Utilizzando un criterio DLP, è possibile:
     
     È possibile fornire agli utenti informazioni sui criteri DLP e aiutarli a garantire la conformità senza interrompere il lavoro. Ad esempio, se un utente tenta di condividere un documento che include informazioni riservate, il criterio DLP invia una notifica tramite posta elettronica e mostra un suggerimento per i criteri nell'ambito della raccolta documenti che consente all'utente di ignorare il criterio per motivi aziendali. Gli stessi suggerimenti per i criteri vengono visualizzati anche in Outlook sul Web, Outlook, Excel, PowerPoint e Word.
     
-- **Visualizzare i report DLP che mostrano il contenuto che corrisponde ai criteri DLP dell'organizzazione.**
+- **Visualizzare report DLP che indicano i contenuti corrispondenti ai criteri DLP dell'organizzazione.**
     
     Per valutare il livello di conformità di un'organizzazione al criterio DLP, è possibile visualizzare il numero relativo alle corrispondenze di criteri e regole nel tempo. Se un criterio DLP consente agli utenti di ignorare un suggerimento per i criteri e di segnalare un falso positivo, è anche possibile visualizzare gli utenti segnalati.
     
@@ -60,7 +63,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
     
 - Quando e in che modo proteggere il contenuto, applicando **regole** composte da: 
     
-  - **Condizioni** in cui il contenuto deve corrispondere prima che la regola venga applicata. Ad esempio, una regola può essere configurata in modo da cercare solo il contenuto contenente i numeri di preVidenza sociale condivisi con utenti esterni all'organizzazione. 
+  - **Condizioni** in cui il contenuto deve corrispondere prima che la regola venga applicata. Ad esempio, una regola può essere configurata in modo da cercare solo il contenuto contenente i numeri di previdenza sociale condivisi con utenti esterni all'organizzazione. 
     
   - **Azioni** che si desidera vengano eseguite automaticamente quando vengono trovati contenuti che soddisfano le condizioni. Ad esempio, una regola può essere configurata per bloccare l'accesso a un documento e inviare una notifica tramite posta elettronica sia all'utente che al responsabile della conformità. 
     
@@ -68,7 +71,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 È possibile che si disponga di un criterio DLP che consente di rilevare la presenza di informazioni soggette ai moduli di conformità Health Insurance Portability and Accountability Act (HIPAA). Questo criterio DLP potrebbe contribuire alla protezione dei dati HIPAA (cosa) in tutti i siti di SharePoint Online e in tutti i siti di OneDrive for business (dove), individuando qualsiasi documento contenente queste informazioni riservate condivise con persone esterne all'organizzazione (la condizioni) e quindi il blocco dell'accesso al documento e l'invio di una notifica (le azioni). I requisiti vengono archiviati come regole individuali e raggruppati come criterio DLP per semplificare la gestione e la creazione di report.
   
-![Diagramma che mostra il criterio DLP contenente posizioni e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagramma che indica che i criteri DLP contengono percorsi e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Percorsi
 
@@ -76,7 +79,7 @@ Un criterio DLP è in grado di individuare e proteggere le informazioni riservat
   
 ![Opzioni per la posizione in cui è possibile applicare un criterio DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
-Si noti che se si sceglie di includere o escludere specifici siti di SharePoint o account di OneDrive, un criterio DLP può contenere non più di 100 tali inclusioni ed esclusioni. Anche se questo limite esiste, è importante comprendere che è possibile superare questo limite applicando un criterio a livello di organizzazione o un criterio che si applica a intere posizioni.
+Se si sceglie di includere o escludere specifici siti di SharePoint o account di OneDrive, un criterio DLP può contenere non più di 100 tali inclusioni ed esclusioni. Anche se questo limite esiste, è possibile superare questo limite applicando un criterio a livello di organizzazione o un criterio che si applica a intere posizioni.
   
 ### <a name="rules"></a>Regole
 
@@ -90,9 +93,9 @@ Ecco i componenti di una regola, ognuno illustrato di seguito.
   
 #### <a name="conditions"></a>Condizioni
 
-Le condizioni sono importanti perché determinano i tipi di informazioni che si stanno cercando e quando intraprendere un'azione. Ad esempio, è possibile scegliere di ignorare il contenuto contenente numeri di passaporto, a meno che il contenuto non contenga più di dieci numeri e sia condiviso con persone esterne all'organizzazione.
+Le condizioni sono importanti perché determinano i tipi di informazioni che si stanno cercando e quando intraprendere un'azione. Ad esempio, è possibile scegliere di ignorare il contenuto contenente numeri di passaporto, a meno che il contenuto non contenga più di 10 numeri e sia condiviso con persone esterne all'organizzazione.
   
-Le condizioni si concentrano sul **contenuto**, ad esempio sui tipi di informazioni riservate che si sta cercando e sul **contesto**, ad esempio il documento con cui è condiviso. È possibile utilizzare le condizioni per assegnare azioni diverse a livelli di rischio diversi; ad esempio, i contenuti riservati condivisi all'interno dell'organizzazione potrebbero essere caratterizzati da un rischio inferiore rispetto ai contenuti riservati condivisi con utenti esterni all'organizzazione. 
+Le condizioni si concentrano sul **contenuto**, ad esempio sui tipi di informazioni riservate che si sta cercando e sul **contesto**, ad esempio il documento con cui è condiviso. È possibile utilizzare le condizioni per assegnare azioni diverse a livelli di rischio diversi. Ad esempio, il contenuto riservato condiviso internamente potrebbe essere più basso e richiedere meno azioni rispetto ai contenuti sensibili condivisi con utenti esterni all'organizzazione. 
   
 ![Elenco che mostra le condizioni DLP disponibili](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -130,11 +133,11 @@ Quando il contenuto corrisponde a una condizione in una regola, è possibile app
   
 Con le azioni ora disponibili, è possibile:
   
-- **Limitare l'accesso al contenuto** Per il contenuto del sito, ciò significa che le autorizzazioni per il documento sono limitate per tutti, tranne l'amministratore principale della raccolta siti, il proprietario del documento e la persona che ha modificato il documento. Questi utenti possono rimuovere le informazioni riservate dal documento o intraprendere altre azioni di correzione. Quando il documento è conforme, vengono automaticamente ripristinate le autorizzazioni originali. Quando l'accesso a un documento è bloccato, il documento viene visualizzato con un'icona particolare di suggerimento per i criteri nella raccolta sul sito. 
+- **Limitare l'accesso al contenuto** Per il contenuto del sito, ciò significa che le autorizzazioni per il documento sono limitate per tutti, tranne l'amministratore principale della raccolta siti, il proprietario del documento e la persona che ha modificato il documento. Questi utenti possono rimuovere le informazioni riservate dal documento o intraprendere altre azioni di correzione. Quando il documento è conforme, le autorizzazioni originali vengono ripristinate automaticamente. Quando l'accesso a un documento è bloccato, il documento viene visualizzato con un'icona particolare di suggerimento per i criteri nella raccolta sul sito. 
     
     ![Suggerimento per i criteri con accesso al documento bloccato](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    Per il contenuto della posta elettronica, questa azione blocca il messaggio da inviare. A seconda del modo in cui la regola DLP è configurata, il mittente Visualizza un rapporto di MANCAto reCAPITO o (se la regola utilizza una notifica) un suggerimento per i criteri e/o la notifica tramite posta elettronica.
+    Per il contenuto della posta elettronica, questa azione blocca il messaggio da inviare. A seconda di come viene configurata la regola DLP, il mittente Visualizza un rapporto di mancato recapito o (se la regola utilizza una notifica) un suggerimento per i criteri e/o la notifica tramite posta elettronica.
     
     ![Avviso che i destinatari non autorizzati devono essere rimossi dal messaggio](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
@@ -168,11 +171,11 @@ Quando viene confrontata una regola, è possibile inviare un rapporto eventi imp
   
 ## <a name="grouping-and-logical-operators"></a>Raggruppamento e operatori logici
 
-Il criterio DLP è spesso un requisito semplice, ad esempio per identificare tutto il contenuto che contiene un numero di preVidenza sociale degli Stati Uniti. Tuttavia, in altri scenari, il criterio DLP potrebbe dover identificare dati definiti in modo più definito.
+Il criterio DLP è spesso un requisito semplice, ad esempio per identificare tutto il contenuto che contiene un numero di previdenza sociale degli Stati Uniti. Tuttavia, in altri scenari, il criterio DLP potrebbe dover identificare dati definiti in modo più definito.
   
 Ad esempio, per identificare il contenuto soggetto all'US Health Insurance Act (HIPAA), è necessario cercare:
   
-- Contenuto che contiene tipi specifici di informazioni riservate, ad esempio un numero di preVidenza sociale statunitense o un numero di Drug Enforcement Agency (DEA).
+- Contenuto che contiene tipi specifici di informazioni riservate, ad esempio un numero di previdenza sociale statunitense o un numero di Drug Enforcement Agency (DEA).
     
     E
     
@@ -236,7 +239,7 @@ Quando il contenuto viene valutato in base alle regole, le regole vengono elabor
     
 In questo esempio, si noti che le corrispondenze per tutte le regole vengono registrate nei registri di controllo e visualizzate nei rapporti DLP, anche se viene applicata solo la regola più restrittiva.
   
-In relazione ai suggerimenti per i criteri, tenere presente che:
+Per informazioni sui suggerimenti per i criteri, tenere presente che:
   
 - Verrà visualizzato solo il suggerimento per i criteri dalla priorità più alta e la regola restrittiva. Ad esempio, un suggerimento per i criteri di una regola che impedisce l'accesso al contenuto viene sovrapposto a un suggerimento per i criteri di una regola che invia semplicemente una notifica. Ciò impedisce che l'utente visualizzi una cascata di suggerimenti per i criteri.
     
@@ -254,7 +257,7 @@ Per risolvere questi problemi, è possibile ottimizzare le regole regolando il n
   
 ### <a name="instance-count"></a>Numero di istanze
 
-Il numero di istanze indica semplicemente il numero di occorrenze di un tipo specifico di informazioni riservate che devono essere presenti per il contenuto in modo che corrisponda alla regola. Ad esempio, il contenuto corrisponderà alla regola indicata di seguito se tra 1 e 9 unici Stati Uniti o Regno Unito sono identificati i numeri di passaporto.
+Il numero di istanze indica semplicemente il numero di occorrenze di un tipo specifico di informazioni riservate che devono essere presenti per il contenuto in modo che corrisponda alla regola. Ad esempio, il contenuto corrisponde alla regola indicata di seguito se tra 1 e 9 Unique US o UK sono identificati i numeri di passaporto.
   
 Si noti che il numero di istanze **** include solo corrispondenze univoche per tipi di informazioni riservate e parole chiave. Ad esempio, se un messaggio di posta elettronica contiene 10 occorrenze dello stesso numero di carta di credito, queste 10 occorrenze contano come una singola istanza di un numero di carta di credito. 
   
@@ -294,7 +297,7 @@ Ad esempio, il tipo di informazioni riservate denominato numero di carta di cred
   
 - Se tutte le corrispondenze sono per un singolo modello, viene restituito il livello di probabilità per il modello.
     
-- Se sono presenti corrispondenze per più di un modello (ad esempio, vi sono corrispondenze con due livelli di confidenza diversi), viene restituito un livello di confidenza superiore a quello dei singoli modelli solo. Questa è la parte più difficile. Ad esempio, per una carta di credito, se vengono confrontati entrambi i modelli di 65% e 85%, il livello di probabilità restituito per il tipo di informazioni riservate è superiore al 90% perché più prove significano maggiore sicurezza.
+- Se sono presenti corrispondenze per più di un modello (ovvero esistono corrispondenze con due livelli di confidenza diversi), viene restituito un livello di probabilità superiore a quello dei singoli modelli solo. Questa è la parte più difficile. Ad esempio, per una carta di credito, se vengono confrontati entrambi i modelli di 65% e 85%, il livello di probabilità restituito per il tipo di informazioni riservate è superiore al 90% perché più prove significano maggiore sicurezza.
     
 Pertanto, se si desidera creare due regole mutualmente esclusive per le carte di credito, una per l'accuratezza della corrispondenza del 65% e una per l'accuratezza della corrispondenza del 85%, gli intervalli per la precisione delle corrispondenze sono simili al seguente. La prima regola preleva solo le corrispondenze del modello 65%. La seconda regola preleva le corrispondenze con almeno **una** corrispondenza del 85% e **potenzialmente può avere** altre corrispondenze con confidenza inferiore. 
   
@@ -314,7 +317,7 @@ Per questi motivi, le linee guida per la creazione di regole con precisione di c
   
 - **Pubblicarlo** , in modo che gli utenti finali possano visualizzare e applicare manualmente l'etichetta al contenuto. 
     
-- **ApplicaRlo automaticamente** ai contenuti che soddisfano le condizioni scelte. 
+- **Applicarlo automaticamente** ai contenuti che soddisfano le condizioni scelte. 
     
 Per ulteriori informazioni sulle etichette, vedere [Overview of](labels.md)retention labels.
   
@@ -326,7 +329,7 @@ Dopo aver creato un'etichetta, è possibile utilizzare tale etichetta come condi
     
 - È stata pubblicata un'etichetta denominata **record di imposta**, in modo che il responsabile dei record possa applicare manualmente l'etichetta al contenuto che deve essere classificato come record. Se si utilizza questa etichetta come condizione nei criteri DLP, è possibile cercare il contenuto con questa etichetta insieme ad altri tipi di informazioni riservate, come ITINs o SNSS; applicare le azioni di protezione al **record di imposta sul**contenuto etichettato; e ottenere relazioni dettagliate sulle attività relative ai criteri DLP dei dati del log di controllo e dei rapporti DLP. 
     
-- È stata pubblicata un'etichetta denominata **Executive Leadership Team-sensitive** per le cassette postAli di Exchange e gli account di OneDrive di un gruppo di dirigenti. Se si utilizza questa etichetta come condizione nei criteri DLP, è possibile applicare sia le azioni di conservazione che quelle di protezione sullo stesso sottoinsieme di contenuto e utenti. 
+- È stata pubblicata un'etichetta denominata **Executive Leadership Team-sensitive** per le cassette postali di Exchange e gli account di OneDrive di un gruppo di dirigenti. Se si utilizza questa etichetta come condizione nei criteri DLP, è possibile applicare sia le azioni di conservazione che quelle di protezione sullo stesso sottoinsieme di contenuto e utenti. 
     
 Utilizzando le etichette come condizione nelle regole DLP, è possibile applicare in modo selettivo azioni di protezione su un insieme specifico di contenuto, percorsi o utenti.
   
@@ -334,7 +337,7 @@ Utilizzando le etichette come condizione nelle regole DLP, è possibile applicar
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Il supporto per le etichette di riservatezza è in arrivo
 
-Si noti che attualmente è possibile utilizzare solo un'etichetta di conservazione come condizione, non un' [etichetta](sensitivity-labels.md)di riservatezza. In questa condizione è attualmente in uso il supporto per l'utilizzo di un'etichetta di riservatezza.
+È attualmente possibile utilizzare solo un'etichetta di conservazione come condizione, non un' [etichetta](sensitivity-labels.md)di riservatezza. In questa condizione è attualmente in uso il supporto per l'utilizzo di un'etichetta di riservatezza.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Come questa funzionalità si riferisce ad altre caratteristiche
 
@@ -346,7 +349,7 @@ Si noti che attualmente è possibile utilizzare solo un'etichetta di conservazio
     
 ![Diagramma delle caratteristiche che possono essere applicate alle informazioni riservate](media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
   
-Si noti che un criterio DLP ha una funzionalità di rilevamento più avanzata rispetto a un'etichetta o a un criterio di conservazione applicati a informazioni riservate. Un criterio DLP può applicare azioni protettive sul contenuto che contiene informazioni riservate e, se le informazioni riservate vengono rimosse dal contenuto, le azioni di protezione vengono annullate al successivo analisi del contenuto. Tuttavia, se un criterio di conservazione o un'etichetta viene applicata al contenuto contenente informazioni riservate, si tratta di un'azione una tantum che non verrà annullata anche se le informazioni riservate sono state rimosse.
+Si noti che un criterio DLP ha una funzionalità di rilevamento più avanzata rispetto a un'etichetta o a un criterio di conservazione applicati a informazioni riservate. Un criterio DLP può applicare azioni protettive sul contenuto che contiene informazioni riservate e, se le informazioni riservate vengono rimosse dal contenuto, le azioni di protezione vengono annullate al successivo analisi del contenuto. Tuttavia, se un criterio di conservazione o un'etichetta viene applicata al contenuto che contiene informazioni riservate, si tratta di un'azione una tantum che non verrà annullata anche se le informazioni riservate vengono rimosse.
   
 Se si utilizza un'etichetta come condizione in un criterio DLP, è possibile applicare sia le azioni di conservazione che quelle di protezione sul contenuto con quell'etichetta. È possibile pensare ai contenuti che contengono un'etichetta esattamente come il contenuto che contiene informazioni riservate, sia un'etichetta che un tipo di informazioni riservate sono proprietà utilizzate per classificare il contenuto, in modo da poter applicare le azioni su tale contenuto.
   

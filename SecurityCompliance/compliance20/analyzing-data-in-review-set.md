@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155208"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703809"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizzare i dati in un set di revisione in Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Per analizzare i dati in un set di Revisione:
 
 3. Fare clic su **Gestisci Revisione set**.
 
-4. Fare clic su **analizza**.
+4. Fare clic su **Esegui analisi per il set di revisione**.
 
 È possibile controllare lo stato di avanzamento dell'analisi nella scheda **processi** del caso.
 
@@ -53,7 +53,7 @@ Per visualizzare un report di analisi per un set di Revisione:
 
 2. Fare clic su **Gestisci Revisione set**.
 
-3. Fare clic su **report**.
+3. Fare clic su **Visualizza report**.
 
 Il report ha quattro componenti dall'analisi:
 

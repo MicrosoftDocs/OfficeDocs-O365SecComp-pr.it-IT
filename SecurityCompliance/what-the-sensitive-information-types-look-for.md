@@ -3,7 +3,7 @@ title: Tipi di informazioni riservate disponibili da cercare
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 05/20/2019
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
+ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077552"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34247299"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -508,17 +508,16 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Il checksum ha esito positivo.
 
 ```
-    <!-- Australia Tax File Number -->
-<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
-    
-  <Pattern confidenceLevel="85">
+   <!-- Australia Tax File Number -->
+    <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
+        <Match idRef="Keyword_Australia_Tax_File_Number" />
         <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_Australia_Tax_File_Number" />
           <Match idRef="Keyword_number_exclusions" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -4984,7 +4983,7 @@ Stringa "ID utente", "ID utente", "UID" o "UserId" seguito dai caratteri e dalle
 - Qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
 - La stringa "password" o "pwd", dove "pwd" non è preceduta da una lettera minuscola
 - Segno di uguale (=)
-- Qualsiasi carattere non costituito da un segno di dollaro ($), un simbolo di percentuale (%), un simbolo maggiore di (>), un simbolo (@), una virgoletta ("), un punto e virgola (;), una parentesi graffa sinistra ([) o una parentesi quadra sinistra ({)
+- Qualsiasi carattere che non sia un segno di dollaro ($), un simbolo di percentuale (%), un simbolo maggiore di (>), il simbolo (@), le virgolette ("), il punto e virgola (;), parentesi graffa sinistra ([) o parentesi quadra sinistra ({)
 - Qualsiasi combinazione di 7-128 caratteri che non sono un punto e virgola (;), barra (/) o virgolette (")
 - Un punto e virgola (;) o virgolette (")
 
@@ -5030,9 +5029,9 @@ Si noti che tecnicamente questo tipo di informazioni riservate identifica queste
 - Password o pwd seguito da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*)-----------------
 - Password o pwd seguito da:
     - Segno di uguale (=)
-    - Valore minore di (<)
+    - Meno di simbolo (<)
     - Qualsiasi combinazione di 1-200 caratteri che sono lettere maiuscole o minuscole, cifre, asterisco (*), segno meno (-), sottolineatura (_) o carattere dello spazio vuoto
-    - Simbolo maggiore di (>)
+    - Valore maggiore di Symbol (>)
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 

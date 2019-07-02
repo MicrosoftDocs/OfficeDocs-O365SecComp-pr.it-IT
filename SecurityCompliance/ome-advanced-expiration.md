@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con le funzionalità di crittografia dei messaggi avanzate di Office 365 in cima a Office 365 Message Encryption (OME), è possibile estendere la sicurezza della posta elettronica impostando una data di scadenza nei messaggi di posta elettronica tramite un modello personalizzato.
-ms.openlocfilehash: 260e6032d3b7a4c9b81fca73dfbcd57fa01168cb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7c4ad1fb4a91bd62569edc5db9042dfbd2dbd9fe
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157669"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852760"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Impostare una data di scadenza per un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
 
@@ -43,7 +43,7 @@ Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si appli
 2. Eseguire il cmdlet New-OMEConfiguration.
 
      ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" ExternalMailExpiryInDays 7
+     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
      ```
 
 Dove:

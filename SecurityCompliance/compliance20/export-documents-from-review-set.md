@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7c1daccab799b3967c6b8c1d577060d062c05a70
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155068"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703789"
 ---
 # <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
 
-L'esportazione di contenuto da un set di revisione può essere eseguita tramite tre diversi metodi:
+È possibile esportare il contenuto per la presentazione o la revisione esterna da un set di revisione tramite uno dei metodi seguenti:
 
-## <a name="download"></a>Download
+- [Scaricare documenti](#download-documents-from-a-review-set)
+ 
+- [Esportare documenti](#export-documents-from-a-review-set)
+
+## <a name="download-documents-from-a-review-set"></a>Scaricare i documenti da un set di Revisione
 
 Download offre un modo semplice per scaricare contenuto da un set di recensioni in formato nativo. Sfrutta le caratteristiche di trasferimento dei dati del browser in modo che una richiesta del browser venga visualizzata una volta che il download è pronto. I file scaricati con questo metodo verranno zippati in un file contenitore e saranno file a livello di elemento. Questo significa che se si seleziona un allegato, verrà visualizzato automaticamente il messaggio di posta elettronica con l'allegato incluso. Analogamente, se si seleziona un foglio di calcolo di Excel incorporato in un documento di Word, verrà visualizzato il documento di Word con il foglio di calcolo di Excel incorporato. Gli elementi scaricati conserveranno la data dell'Ultima modifica che può essere visualizzata come proprietà di un file.
 
@@ -33,31 +37,31 @@ Per scaricare contenuto da un set di recensioni, iniziare selezionando i file ch
 
 ![Schermata di una descrizione del computer generata automaticamente](../media/eDiscoDownload.png)
 
-## <a name="export"></a>Esportazione
+## <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
 
 Export consente agli utenti di personalizzare il contenuto incluso nel pacchetto di download. Fornisce una pagina di configurazione con le seguenti impostazioni:
 
 ### <a name="metadata-file"></a>File di metadati
 
-> Questo può essere considerato come il "Load file" che contiene i metadati associati ai file esportati. Per un elenco dei campi disponibili nel file di metadati, vedere \[link\]. Questo file può in genere essere ingerito da<sup></sup> 3 strumenti di terze parti a valle.
+Questo può essere considerato come il "Load file" che contiene i metadati associati ai file esportati. Per un elenco dei campi disponibili nel file di metadati, vedere \[link\]. Questo file può in genere essere ingerito da<sup></sup> 3 strumenti di terze parti a valle.
 
 ### <a name="tag-data"></a>Dati tag
 
-> Questo contenuto verrebbe aggiunto come campi nel file di metadati. Contiene tutte le informazioni sui tag applicate nei set di revisione.
+Questo contenuto verrebbe aggiunto come campi nel file di metadati. Contiene tutte le informazioni sui tag applicate nei set di revisione.
 
 ### <a name="text-files"></a>File di testo
 
-> È possibile generare file di testo per ogni file esportato da un set di revisione. Spesso questi file sono necessari per i partner del servizio come parte dell'ingestione dei dati<sup></sup> in 3 strumenti di terze parti a valle.
+È possibile generare file di testo per ogni file esportato da un set di revisione. Spesso questi file sono necessari per i partner del servizio come parte dell'ingestione dei dati<sup></sup> in 3 strumenti di terze parti a valle.
 
 ### <a name="redacted-files"></a>File redatti
 
-> Se durante la revisione vengono generati file PDF ritirati, questi sono disponibili durante l'esportazione. Gli utenti possono decidere se esportare solo i file nativi o sostituire i nativi che dispongono di redazioni con il masterizzato nei file PDF.
+Se durante la revisione vengono generati file PDF ritirati, questi sono disponibili durante l'esportazione. Gli utenti possono decidere se esportare solo i file nativi o sostituire i nativi che dispongono di redazioni con il masterizzato nei file PDF.
 
 ### <a name="export-location"></a>Percorso di esportazione
 
-> Il contenuto esportato viene recapitato a un BLOB di Azure fornito da Microsoft o è possibile utilizzare il BLOB di un cliente se i dettagli vengono forniti all'esportazione.
+Il contenuto esportato viene recapitato a un BLOB di Azure fornito da Microsoft o è possibile utilizzare il BLOB di un cliente se i dettagli vengono forniti all'esportazione.
 
-## <a name="export-structure"></a>Struttura di esportazione
+### <a name="export-structure"></a>Struttura di esportazione
 
 Quando il contenuto viene esportato da un set di revisione, il contenuto è organizzato nella struttura seguente.
 
@@ -76,7 +80,3 @@ Quando il contenuto viene esportato da un set di revisione, il contenuto è orga
           - ProcessingError – contenuto con errori di elaborazione. Questo contenuto è a livello di elemento significato se un allegato ha subito un errore di elaborazione, il messaggio di posta elettronica che contiene l'allegato verrà incluso in questa cartella.
     
       - File\_di\_testo estratti = contiene tutti i file di testo estratti generati durante l'elaborazione.
-
-## <a name="review-set"></a>set di Revisione
-
-È possibile aggiungere contenuto a un altro set di revisione.

@@ -1,5 +1,5 @@
 ---
-title: Monitorare e segnalare i dati nella sicurezza di Microsoft 365
+title: Monitoraggio e creazione di report dei dati in Microsoft 365 Security Center
 description: Descrive in che modo è possibile monitorare l'attività degli utenti che potrebbe causare la divulgazione di dati non autorizzati.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, dati
 ms.prod: w10
@@ -12,16 +12,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 741daff150ef52ef99c3da31159c02bc9431757f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1facdff5200378fd2084ca909de2bf279b084025
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263234"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852850"
 ---
-# <a name="monitor-and-report-data-in-microsoft-365-security"></a>Monitorare e segnalare i dati nella sicurezza di Microsoft 365
+# <a name="data-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoraggio e creazione di report dei dati in Microsoft 365 Security Center
 
-La categoria **dati** consente di monitorare le attività degli utenti che possono portare alla divulgazione di dati non autorizzati. Di seguito sono riportate le relazioni esistenti sui criteri DLP di Office 365 e un report di terze parti per i criteri DLP.
+La categoria **dati** consente di monitorare le attività degli utenti che possono portare alla divulgazione di dati non autorizzati. Di seguito sono riportate le relazioni esistenti sui criteri DLP di Office 365 e un report di criteri DLP di terze parti.
 
 È possibile visualizzare:
 
@@ -30,4 +30,4 @@ La categoria **dati** consente di monitorare le attività degli utenti che posso
 * Numero di sostituzioni dei criteri DLP o falsi positivi riportati
 * Quante corrispondenze di criteri DLP sono state verificate in servizi cloud di terze parti tramite Microsoft cloud app Security
 
-![Categoria di dati di monitoraggio della pagina report di &](./media/security-docs/data.png)
+![Categoria dati della pagina report](./media/security-docs/data.png)

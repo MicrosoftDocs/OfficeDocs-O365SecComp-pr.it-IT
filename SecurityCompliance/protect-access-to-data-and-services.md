@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: pagina di destinazione per la protezione dell'accesso ai dati e ai servizi di O365
-ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156868"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852740"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
@@ -35,19 +35,19 @@ Gli account amministrativi utilizzati per amministrare l'ambiente di Office 365 
 
 Iniziare utilizzando solo gli account amministratore per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare e non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla loro funzione processi.
 
-Proteggere gli account di amministratore con l'autenticazione a più fattori e l'accesso condizionale. Per ulteriori informazioni, vedere [protecting Administrator Accounts](https://docs.microsoft.com/en-us/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
+Proteggere gli account di amministratore con l'autenticazione a più fattori e l'accesso condizionale. Per ulteriori informazioni, vedere [protecting Administrator Accounts](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
 
 Successivamente, configurare la gestione degli accessi con privilegi in Office 365. La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che possono utilizzare gli account di amministrazione privilegiati esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche.
 
 - [Panoramica della gestione degli accessi con privilegi](privileged-access-management-overview.md)
 - [Configurare la gestione degli accessi con privilegi](privileged-access-management-configuration.md)
 
-Un'altra raccomandazione principale consiste nell'utilizzare le workstation appositamente configurate per il lavoro amministrativo. Si tratta di dispositivi dedicati che vengono utilizzati solo per le attività amministrative. Vedere [protezione dell'accesso con privilegi](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Un'altra raccomandazione principale consiste nell'utilizzare le workstation appositamente configurate per il lavoro amministrativo. Si tratta di dispositivi dedicati che vengono utilizzati solo per le attività amministrative. Vedere [protezione dell'accesso con privilegi](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
-Infine, è possibile ridurre l'impatto della mancanza di accesso amministrativo accidentale creando due o più account di accesso di emergenza nel tenant. Vedere [gestire gli account di accesso per gli interventi di emergenza in Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access). 
+Infine, è possibile ridurre l'impatto della mancanza di accesso amministrativo accidentale creando due o più account di accesso di emergenza nel tenant. Vedere [gestire gli account di accesso per gli interventi di emergenza in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Passaggio 3: configurare i criteri di identità e accesso ai dispositivi consigliati
-L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)Configurations.
+L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)Configurations.
 
  Questi criteri implementano le funzionalità seguenti:
 - Autenticazione a più fattori
@@ -60,7 +60,7 @@ La conformità del dispositivo di Implemetning Intune richiede la registrazione 
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: configurare i criteri di accesso ai dispositivi di SharePoint
 
-Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con i controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/en-us/microsoft-365/enterprise/sharepoint-file-access-policies).
+Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con i controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
 
 
 

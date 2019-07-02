@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati da una pagina società di LinkedIn a Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la conformità dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017947"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079380"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurare un connettore per archiviare i dati di LinkedIn in Office 365 (anteprima)
 
@@ -27,9 +27,11 @@ Dopo che i dati della pagina della società LinkedIn sono archiviati in una cass
 
 ## <a name="before-you--begin"></a>Prima di iniziare
 
-- È necessario disporre delle credenziali di accesso (indirizzo di posta elettronica o numero di telefono e password) di un account utente di LinkedIn che è un amministratore della pagina della società LinkedIn che si desidera archiviare. Queste credenziali vengono utilizzate per accedere a LinkedIn quando si configura il connettore.
+- L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta.
 
 - All'utente che crea un connettore di pagina di LinkedIn Company deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per accedere alla pagina di **archiviazione dei dati di terze parti** nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+
+- È necessario disporre delle credenziali di accesso (indirizzo di posta elettronica o numero di telefono e password) di un account utente di LinkedIn che è un amministratore della pagina della società LinkedIn che si desidera archiviare. Queste credenziali vengono utilizzate per accedere a LinkedIn quando si configura il connettore.
 
 ## <a name="create-a-linkedin-connector"></a>Creare un connettore LinkedIn
 
@@ -50,7 +52,6 @@ Dopo che i dati della pagina della società LinkedIn sono archiviati in una cass
    Viene visualizzata una pagina della procedura guidata con un elenco di tutte le pagine società di LinkedIn associate all'account a cui è stato effettuato l'accesso. È possibile configurare un connettore solo per una pagina dell'azienda. Se nell'organizzazione sono presenti più pagine dell'azienda LinkedIn, è necessario creare un connettore per ognuno di essi.
 
    ![Viene visualizzata una pagina con un elenco delle pagine dell'azienda LinkedIn](media/LinkedInSelectCompanyPage.png)
-
 
 6. Selezionare la pagina società da cui si desidera archiviare gli elementi, quindi fare clic su **Avanti**.
 
@@ -80,4 +81,4 @@ Per visualizzare ulteriori dettagli, fare clic sul connettore nell'elenco nella 
    subject:"Contoso Company Page"
    ```
 
-- Per semplificare l'individuazione o la gestione degli elementi di LinkedIn importati in Office 365, il proprietario della cassetta postale di archiviazione (o tutti gli utenti che hanno assegnato l'autorizzazione FullAccess) può impostare una regola di posta in arrivo per spostare gli elementi da una specifica pagina della società di LinkedIn a una cartella specifica. Questa operazione è utile se la cassetta postale di archiviazione viene utilizzata per archiviare gli elementi importati da origini dati di terze parti diverse. Ad esempio, è possibile creare una regola di posta in arrivo che sposta tutti gli elementi che contengono il nome di una specifica pagina di LinkedIn società nel campo oggetto in una cartella specifica.
+- Per semplificare l'individuazione o la gestione degli elementi di LinkedIn importati in Office 365, il proprietario della cassetta postale di archiviazione (o tutti gli utenti che hanno assegnato l'autorizzazione FullAccess) può impostare una regola di posta in arrivo per spostare gli elementi da una pagina società di LinkedIn a una cartella specifica. Questa operazione è utile se la cassetta postale di archiviazione viene utilizzata per archiviare gli elementi importati da origini dati di terze parti diverse. Ad esempio, è possibile creare una regola di posta in arrivo che sposta tutti gli elementi che contengono il nome di una specifica pagina di LinkedIn società nel campo oggetto in una cartella specifica.

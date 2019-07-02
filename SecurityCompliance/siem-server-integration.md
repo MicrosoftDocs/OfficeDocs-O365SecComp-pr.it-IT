@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: "Riepilogo: leggere questo articolo per ottenere una panoramica dell'integrazione del server SIEM con Microsoft 365."
-ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852690"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014765"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SIEM con i servizi e le applicazioni di Microsoft 365
 
@@ -33,13 +33,13 @@ Un server SIEM può ricevere dati da un'ampia gamma di servizi e applicazioni di
 
 | Servizio o applicazione Microsoft 365 | Input del server SIEM | Risorse per ulteriori informazioni |
 | --- | --- | --- |
-| [Protezione avanzata dalle minacce di Office 365](office-365-atp.md) <br/>   oppure   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Registri di controllo | [Integrazione di SIEM con Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Protezione avanzata dalle minacce di Office 365](office-365-atp.md) <br/>oppure<br/>[Office 365 Threat Intelligence](office-365-ti.md) | Registri di controllo | [Integrazione di SIEM con Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integrazione del registro | [Integrazione di SIEM con Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integrazione del registro | [Integrare il server SIEM con cloud app Security](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Microsoft Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Integrazione del registro | [Tirare gli avvisi agli strumenti di SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protezione dalle minacce e rilevamento delle minacce) | Avvisi | [Esportazione dei dati di sicurezza di Azure nella configurazione di SIEM-pipeline-anteprima](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Protezione dell'identità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registri di controllo | [Integrazione dei log di controllo di Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Analisi avanzata delle minacce di Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integrazione del registro | [Informazioni di riferimento sul log di ATA SIEM](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+|[Analisi avanzata delle minacce di Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Monitor di Azure | [Blog Utilizzo di Azure monitor per l'integrazione con gli strumenti di SIEM](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
+|[Protezione dell'identità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |Integrazione del registro |[Integrare gli avvisi dell'API di sicurezza di Microsoft Graph con un SIEM](https://docs.microsoft.com/graph/security-siemintegration) |
+
 
 ## <a name="audit-logging-must-be-turned-on"></a>La registrazione di controllo deve essere attivata
 

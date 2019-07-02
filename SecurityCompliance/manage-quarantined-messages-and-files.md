@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
+ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155698"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35115927"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
@@ -29,7 +29,7 @@ Come amministratore, è possibile visualizzare, rilasciare ed eliminare i messag
   
 Per impostazione predefinita, Office 365 invia i messaggi di phishing e i messaggi contenenti malware direttamente in quarantena. Gli altri messaggi filtrati vengono inviati alla cartella posta indesiderata degli utenti, a meno che non sia stato impostato un criterio per inviarli alla quarantena.
   
-Per utilizzare i messaggi in quarantena inviati ad altri utenti e per lavorare con i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale (GA) in Office 365.
+Per utilizzare i messaggi in quarantena inviati ad altri utenti e utilizzare i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale in Office 365 o dell'amministratore della sicurezza nel centro sicurezza e conformità.
   
 > [!IMPORTANT]
 >Per impostazione predefinita, i messaggi di posta indesiderata, di massa e di phishing vengono mantenuti in quarantena per 30 giorni. I messaggi in quarantena perché corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. I messaggi di malware vengono mantenuti in quarantena per 15 giorni. È possibile personalizzare il tempo di quarantena della posta indesiderata nelle impostazioni di &amp; protezione da posta indesiderata nel centro sicurezza e conformità. Quando Office 365 Elimina un messaggio dalla quarantena, non è possibile riottenerlo. Se lo si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena nei criteri di filtro della protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione del periodo di conservazione della quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in questo articolo. 

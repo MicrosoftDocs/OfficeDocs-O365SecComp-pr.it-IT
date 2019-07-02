@@ -4,19 +4,19 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Office 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella Home page del Centro sicurezza &amp; e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate ma non sono protetti da un criterio DLP.
-ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 326efb7591ba75ada9eec6a5e61e39e2a1fc09f9
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077972"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
 

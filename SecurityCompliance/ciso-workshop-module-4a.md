@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: c9d418254db4a11716b4d1e58ecd683b92fdfd18
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 75cdd5ff4d65c7d7cbe90e8516f9027a496c4e36
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155488"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767307"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Modulo di OICOL workshop 4a: strategia di protezione dalle minacce
 
@@ -48,7 +48,7 @@ Esplorare le principali informazioni relative alla protezione dalle minacce, all
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
 
-## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Parte 6: Guida di orientamento per lo sviluppo di applicazioni piattaforma & come servizio (6:07)
+## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Parte 6: Guida di orientamento per lo sviluppo di applicazioni & piattaforma come servizio (6:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
@@ -68,9 +68,9 @@ Esplorare le principali informazioni relative alla protezione dalle minacce, all
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLS]
 
-## <a name="part-11-roadmap-for-securing-privileged-access-1229"></a>Parte 11: Guida di orientamento per la protezione dell'accesso con privilegi (12:29)
+## <a name="part-11-roadmap-for-securing-privileged-access-2226"></a>Parte 11: Guida di orientamento per la protezione dell'accesso con privilegi (22:26)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36aLB]
 
 ## <a name="part-12-roadmap-for-not-petya-and-critical-security-hygiene-1028"></a>Parte 12: Guida di orientamento per (non) Petya e igiene della sicurezza critica (10:28)
 

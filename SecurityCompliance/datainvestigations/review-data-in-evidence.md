@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150668"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767337"
 ---
 # <a name="review-the-data-in-evidence"></a>Esaminare i dati nelle prove
 
@@ -50,7 +50,7 @@ Di seguito è riportato un esempio dei metadati di file per un documento. Per ul
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
-Il Visualizzatore nativo Visualizza la visualizzazione più accurata di un documento nel formato nativo. La visualizzazione nativa è supportata per centinaia di tipi di file ed è destinata a visualizzare i documenti in una delle più vere esperienze native possibili. Per i file di Microsoft Office, il Visualizzatore nativo utilizza Office Online. In questo modo è possibile visualizzare il contenuto, ad esempio i commenti in documenti di Office, formule e righe/colonne nascoste in Excel, e la visualizzazione note in PowerPoint.
+Il Visualizzatore nativo Visualizza la visualizzazione più accurata di un documento nel formato nativo. La visualizzazione nativa è supportata per centinaia di tipi di file ed è destinata a visualizzare i documenti in una delle più vere esperienze native possibili. Per i file di Microsoft Office, il Visualizzatore nativo utilizza la versione Web delle app di Office. In questo modo è possibile visualizzare il contenuto, ad esempio i commenti in documenti di Office, formule e righe/colonne nascoste in Excel, e la visualizzazione note in PowerPoint.
 
 ![Visualizzazione nativa
 ](../media/Reviewimage3.png)

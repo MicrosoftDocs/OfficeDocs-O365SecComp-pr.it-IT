@@ -4,19 +4,19 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/6/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
 description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di protezione dalla posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs) denominate anche regole
-ms.openlocfilehash: dae5ffb7d4f2a8f8f3b675719e4f61f5c970dcaf
-ms.sourcegitcommit: e834d4168f584f2efb22479aec108497eea267f6
+ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34709124"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017688"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 

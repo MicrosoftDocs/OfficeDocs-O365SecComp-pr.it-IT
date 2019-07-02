@@ -1,5 +1,5 @@
 ---
-title: Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
+title: Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Utilizzare il Centro sicurezza & Compliance per eseguire ricerche nel log di controllo unificato per visualizzare le attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+description: "Utilizzare il Centro sicurezza & conformità per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547991"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113290"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza e conformità di &
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance
 
 ## <a name="introduction"></a>Introduzione
 
@@ -31,9 +31,6 @@ ms.locfileid: "34547991"
 - Attività degli utenti in SharePoint Online e OneDrive for business
     
 - Attività degli utenti in Exchange Online (registrazione di controllo delle cassette postali di Exchange)
-    
-    > [!IMPORTANT]
-    > La registrazione di controllo delle cassette postali deve essere attivata per ogni cassetta postale utente prima che l'attività dell'utente in Exchange Online venga registrata. Per ulteriori informazioni, vedere [abilitare il controllo delle cassette postali in Office 365](enable-mailbox-auditing.md).
   
 - Attività di amministrazione in SharePoint Online
     
@@ -66,7 +63,7 @@ ms.locfileid: "34547991"
 
 Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel registro di controllo di Office 365.
   
-- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo prima di iniziare a eseguire la ricerca nel registro di controllo di Office 365. Per attivarlo, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel centro sicurezza & Compliance. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo averla attivata, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È necessario eseguire questa operazione una sola volta. 
+- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo prima di iniziare a eseguire la ricerca nel registro di controllo di Office 365. Per attivarla, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel centro sicurezza & conformità. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo averla attivata, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È necessario eseguire questa operazione una sola volta. 
     
     > [!NOTE]
     > Per impostazione predefinita, è in corso l'attivazione del controllo. Fino a quel momento, è possibile attivarlo come descritto in precedenza. 
@@ -74,7 +71,7 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
 - È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Si noti che gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo di Office 365 con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Se si assegna un utente ai registri di controllo di sola visualizzazione o ai registri di controllo nella pagina **autorizzazioni** nel centro conformità di sicurezza &, non sarà possibile eseguire la ricerca nel registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò è dovuto al fatto che il cmdlet sottostante utilizzato per eseguire la ricerca nel registro di controllo è un cmdlet di Exchange Online. 
+    > Se si assegna a un utente il ruolo di controllo solo visualizzazione o log di controllo nella pagina **autorizzazioni** nel centro sicurezza & Compliance, non sarà possibile eseguire la ricerca nel registro di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò è dovuto al fatto che il cmdlet sottostante utilizzato per eseguire la ricerca nel registro di controllo è un cmdlet di Exchange Online. 
   
 - Quando un'attività controllata viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene memorizzato nel registro di controllo di Office 365 per l'organizzazione. Il periodo di tempo in cui un record di controllo viene mantenuto (e ricercabile nel log di controllo) dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico.
 
@@ -99,9 +96,9 @@ Assicurarsi di leggere gli elementi seguenti prima di iniziare la ricerca nel re
 
     Per ulteriori informazioni, vedere [disattivazione della ricerca del registro di controllo in Office 365](turn-audit-log-search-on-or-off.md).
     
-- Come indicato in precedenza, il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Questo significa che è possibile utilizzare questo cmdlet per eseguire una ricerca nel registro di controllo di Office 365 anziché utilizzare la pagina di **ricerca del registro di controllo** nel centro sicurezza e conformità di &. È necessario eseguire questo cmdlet in Remote PowerShell connesso all'organizzazione Exchange Online. Per ulteriori informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Come indicato in precedenza, il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Questo significa che è possibile utilizzare questo cmdlet per eseguire una ricerca nel registro di controllo di Office 365 anziché utilizzare la pagina di **ricerca del registro di controllo** nel centro sicurezza & Compliance. È necessario eseguire questo cmdlet in Remote PowerShell connesso all'organizzazione Exchange Online. Per ulteriori informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Se si desidera scaricare dati a livello di programmazione dal registro di controllo di Office 365, è consigliabile utilizzare l'API di attività di gestione di Office 365 anziché utilizzare uno script di PowerShell. L'API di attività di gestione di Office 365 è un servizio Web REST che è possibile utilizzare per sviluppare soluzioni di monitoraggio di operazioni, sicurezza e conformità per l'organizzazione. Per ulteriori informazioni, vedere Guida di [riferimento all'API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
+- Se si desidera scaricare dati a livello di programmazione dal registro di controllo di Office 365, è consigliabile utilizzare l'API di attività di gestione di Office 365 anziché utilizzare uno script di PowerShell. L'API di attività di gestione di Office 365 è un servizio Web REST che è possibile utilizzare per sviluppare soluzioni di monitoraggio di operazioni, sicurezza e conformità per l'organizzazione. Per ulteriori informazioni, vedere Guida di [riferimento all'API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
     
 - Possono essere necessari fino a 30 minuti o fino a 24 ore dopo che si è verificato un evento per la voce del registro di controllo corrispondente da visualizzare nei risultati della ricerca. Nella tabella seguente vengono illustrati i tempi necessari per i diversi servizi di Office 365.
     
@@ -149,11 +146,11 @@ Ecco la procedura per eseguire una ricerca nel log di controllo in Office 365.
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Utilizzare una sessione di esplorazione privata (non una sessione regolare) per accedere al centro sicurezza & Compliance perché in questo modo si eviterà che vengano utilizzate le credenziali a cui si è connessi. Per aprire una sessione di InPrivate Browsing in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra in incognito), premere CTRL + MAIUSC + N. 
+    > Utilizzare una sessione di esplorazione privata (non una sessione regolare) per accedere al centro sicurezza & conformità perché in questo modo si eviterà che vengano utilizzate le credenziali a cui è attualmente connesso. Per aprire una sessione di InPrivate Browsing in Internet Explorer o Microsoft Edge, è sufficiente premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra in incognito), premere CTRL + MAIUSC + N. 
   
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **Cerca**e quindi su **Ricerca log di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su **Cerca**e quindi su **Ricerca log di controllo**.
     
     Viene visualizzata la pagina di **ricerca del registro di controllo** . 
     
@@ -266,12 +263,12 @@ Per filtrare i risultati:
     
 2. Fare clic su **Esporta risultati** e selezionare una delle opzioni seguenti: 
     
-  - **Salvare i risultati caricati** Scegliere questa opzione per esportare solo le voci visualizzate in results **** on the * * Audit Log Search * * Page. Il file CSV scaricato contiene le stesse colonne (e i dati) visualizzati nella pagina (data, utente, attività, elemento e dettagli). Una colonna aggiuntiva (denominata **more**) è inclusa nel file CSV che contiene altre informazioni dalla voce del registro di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina di **ricerca del registro di controllo** , vengono esportate al massimo 5.000 voci. 
+     - **Save Loaded results** -scegliere questa opzione per esportare solo le voci visualizzate in **results** nella pagina di **ricerca del registro di controllo** . Il file CSV scaricato contiene le stesse colonne (e i dati) visualizzati nella pagina (data, utente, attività, elemento e dettagli). Una colonna aggiuntiva (denominata **more**) è inclusa nel file CSV che contiene altre informazioni dalla voce del registro di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina di **ricerca del registro di controllo** , vengono esportate al massimo 5.000 voci. 
     
-  - **Scaricare tutti i risultati** Scegliere questa opzione per esportare tutte le voci dal registro di controllo di Office 365 che soddisfano i criteri di ricerca. Per un set di risultati di ricerca di grandi dimensioni, scegliere questa opzione per scaricare tutte le voci dal registro di controllo oltre ai risultati di 5.000 che possono essere visualizzati nella pagina di **ricerca del registro di controllo** . Questa opzione consente di scaricare i dati non elaborati dal registro di controllo in un file CSV e contiene informazioni aggiuntive dalla voce del registro di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione, potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato se si sceglie l'opzione altro.
+     - **Download All Results** -scegliere questa opzione per esportare tutte le voci dal registro di controllo di Office 365 che soddisfano i criteri di ricerca. Per un set di risultati di ricerca di grandi dimensioni, scegliere questa opzione per scaricare tutte le voci dal registro di controllo oltre ai risultati di 5.000 che possono essere visualizzati nella pagina di **ricerca del registro di controllo** . Questa opzione consente di scaricare i dati non elaborati dal registro di controllo in un file CSV e contiene informazioni aggiuntive dalla voce del registro di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione, potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato se si sceglie l'opzione altro.
     
-    > [!IMPORTANT]
-    > È possibile scaricare un massimo di 50.000 voci in un file CSV da una singola ricerca del registro di controllo. Se 50.000 voci vengono scaricate nel file CSV, è probabile che siano presenti più di 50.000 eventi che soddisfano i criteri di ricerca. Per esportare più di questo limite, provare a utilizzare un intervallo di date per ridurre il numero di voci del registro di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date inferiori per esportare più di 50.000 voci. 
+       > [!IMPORTANT]
+       > È possibile scaricare un massimo di 50.000 voci in un file CSV da una singola ricerca del registro di controllo. Se 50.000 voci vengono scaricate nel file CSV, è probabile che siano presenti più di 50.000 eventi che soddisfano i criteri di ricerca. Per esportare più di questo limite, provare a utilizzare un intervallo di date per ridurre il numero di voci del registro di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date inferiori per esportare più di 50.000 voci. 
   
 3. Dopo aver selezionato un'opzione di esportazione, nella parte inferiore della finestra viene visualizzato un messaggio in cui viene richiesto di aprire il file CSV, salvarlo nella cartella Downloads o salvarlo in una cartella specifica.
 
@@ -301,13 +298,13 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 ||||
 |:-----|:-----|:-----|
 |[Attività di file e pagine](#file-and-page-activities)<br/> |[Attività cartella](#folder-activities)<br/> |[Attività dell'elenco di SharePoint](#sharepoint-list-activities)<br/>|
-|[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività amministrative del sito](#site-administration-activities)<br/> |
-|[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |[Attività di Sway](#sway-activities) <br/> |[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |
-|[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |
-|[Attività di amministrazione della directory](#directory-administration-activities) <br/>|[attività di eDiscovery](#ediscovery-activities) <br/> |[Attività avanzate di eDiscovery](#advanced-ediscovery-activities)<br/> |
-|[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Attività di Yammer](#yammer-activities) <br/> |[Attività di flusso Microsoft](#microsoft-flow-activities) <br/>|[Attività di Microsoft PowerApps](#microsoft-powerapps)<br/>|
-|[Attività di Microsoft Stream](#microsoft-stream-activities) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
+|[Attività di condivisione e accesso alle richieste](#sharing-and-access-request-activities)<br/> |[Attività di sincronizzazione](#synchronization-activities)<br/> |[Attività relative alle autorizzazioni del sito](#site-permissions-activities)<br/> |
+|[Attività amministrative del sito](#site-administration-activities)<br/> |[Attività relative alle cassette postali di Exchange](#exchange-mailbox-activities)<br/> |[Attività di Sway](#sway-activities) <br/> |
+|[Attività di amministrazione degli utenti](#user-administration-activities) <br/> |[Attività di amministrazione di gruppi di Azure AD](#azure-ad-group-administration-activities) <br/> |[Attività di amministrazione dell'applicazione](#application-administration-activities) <br/> |
+|[Attività di amministrazione del ruolo](#role-administration-activities) <br/> |[Attività di amministrazione della directory](#directory-administration-activities) <br/>|[attività di eDiscovery](#ediscovery-activities) <br/> |
+|[Attività avanzate di eDiscovery](#advanced-ediscovery-activities)<br/> |[Attività di Power BI](#power-bi-activities) <br/> |[Analisi del luogo di lavoro Microsoft](#microsoft-workplace-analytics-activities)<br/>|
+|[Attività di Microsoft Teams](#microsoft-teams-activities) <br/> |[Attività di Yammer](#yammer-activities) <br/> |[Attività di flusso Microsoft](#microsoft-flow-activities) <br/>|
+|[Attività di Microsoft PowerApps](#microsoft-powerapps)<br/>|[Attività di Microsoft Stream](#microsoft-stream-activities) <br/>|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>Attività di file e pagine
@@ -318,12 +315,16 @@ Nella tabella seguente vengono descritte le attività relative a file e pagine i
 |:-----|:-----|:-----|
 |File a cui si accede  <br/> |Fileaccessed  <br/> |L'utente o l'account del sistema accede a un file.  <br/> |
 |nessuno  <br/> |FileAccessedExtended  <br/> |Questa operazione è correlata all'attività "file di accesso" (fileaccessed). Un evento FileAccessedExtended viene registrato quando la stessa persona accede continuamente a un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileAccessedExtended consiste nel ridurre il numero di eventi fileaccessed che vengono registrati quando si accede continuamente a un file. In questo modo è possibile ridurre il rumore di più record fileaccessed per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento iniziale (e più importante) fileaccessed.  <br/> |
+|Etichetta criteri di conformità modificata<br/> |ComplianceSettingChanged<br/> |È stata applicata o rimossa un'etichetta di conservazione da un documento. Questo evento viene attivato quando un'etichetta di conservazione viene applicata manualmente o automaticamente a un messaggio.<br/> |
+|Stato del record modificato su bloccato<br/> |LockRecord<br/> |Lo stato del record di un'etichetta di conservazione che classifica un documento come record è stato bloccato. Questo significa che il documento non può essere modificato o eliminato. Solo gli utenti assegnati almeno l'autorizzazione Collaboratore per un sito possono modificare lo stato del record di un documento.<br/> |
+|Stato del record modificato su sbloccato<br/> |UnlockRecord<br/> |Lo stato del record di un'etichetta di conservazione che classifica un documento come record è stato sbloccato. Questo significa che il documento può essere modificato o eliminato. Solo gli utenti assegnati almeno l'autorizzazione Collaboratore per un sito possono modificare lo stato del record di un documento.<br/><br/> |
 |File archiviato  <br/> |Filecheckedin  <br/> |L'utente verifica un documento Estratto da una raccolta documenti.  <br/> |
 |File Estratto  <br/> |FileCheck-out  <br/> |L'utente estrae un documento che si trova in una raccolta documenti. Gli utenti possono estrarre e apportare modifiche ai documenti che sono stati condivisi con essi.  <br/> |
 |File copiato  <br/> |Filecopied  <br/> |L'utente copia un documento da un sito. Il file copiato può essere salvato in un'altra cartella nel sito.  <br/> |
 |File eliminato  <br/> |FileDeleted  <br/> |L'utente elimina un documento da un sito.  <br/> |
 |File eliminato dal Cestino  <br/> |FileDeletedFirstStageRecycleBin  <br/> |L'utente elimina un file dal Cestino di un sito.  <br/> |
 |File eliminato dal Cestino secondario  <br/> |FileDeletedSecondStageRecycleBin  <br/> |L'utente elimina un file dal Cestino secondario di un sito.  <br/> |
+|Etichetta criteri di conformità per i record eliminati<br/> |ComplianceRecordDelete<br/> |Un documento classificato come record è stato eliminato. Un documento viene considerato un record quando al documento viene applicata un'etichetta di conservazione in grado di classificare il contenuto come record. <br/> |
 |Mancata corrispondenza di sensibilità del documento rilevata <br/>|DocumentSensitivityMismatchDetected<br/>|L'utente carica un documento classificato con un'etichetta di riservatezza che ha una priorità più alta rispetto all'etichetta di riservatezza applicata al sito a cui viene caricato il documento. Nota Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito ha una priorità più alta rispetto all'etichetta di riservatezza applicata a un documento caricato nel sito. Per ulteriori informazioni sulla priorità delle etichette di riservatezza, vedere la sezione "priorità dell'etichetta" in [Panoramica delle etichette di riservatezza](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Malware rilevato nel file  <br/> |FileMalwareDetected  <br/> |Il motore di protezione di SharePoint rileva malware in un file.  <br/> |
 |Estrazione file scartata  <br/> |FileCheckOutDiscarded  <br/> |L'utente elimina (o annulla) un file estratto. Ciò significa che eventuali modifiche apportate al file al momento dell'estrazione vengono eliminate e non vengono salvate nella versione del documento nella raccolta documenti.  <br/> |
@@ -398,12 +399,12 @@ Nella tabella seguente vengono descritte le attività relative alla condivisione
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
+|Livello di autorizzazione aggiunto per la raccolta siti  <br/> |PermissionLevelAdded  <br/> |È stato aggiunto un livello di autorizzazione a una raccolta siti.  <br/> |
 |Richiesta di accesso accettata  <br/> |AccessRequestAccepted  <br/> |È stata accettata una richiesta di accesso a un sito, una cartella o un documento e all'utente richiedente è stato concesso l'accesso.  <br/> |
 |Invito alla condivisione accettata  <br/> |SharingInvitationAccepted  <br/> |L'utente (membro o ospite) ha accettato un invito alla condivisione ed è stato concesso l'accesso a una risorsa. Questo evento include informazioni sull'utente che è stato invitato e l'indirizzo di posta elettronica utilizzato per accettare l'invito (potrebbero essere diversi). Questa attività è spesso accompagnata da un secondo evento in cui viene descritto come all'utente è stato concesso l'accesso alla risorsa, ad esempio l'aggiunta di un utente a un gruppo che ha accesso alla risorsa.  <br/> |
-|Livello di autorizzazione aggiunto per la raccolta siti  <br/> |PermissionLevelAdded  <br/> |È stato aggiunto un livello di autorizzazione a una raccolta siti.  <br/> |
 |Invito per la condivisione bloccata  <br/> |SharingInvitationBlocked  <br/> | Un invito alla condivisione inviato da un utente nell'organizzazione è bloccato a causa di un criterio di condivisione esterna che consente o nega la condivisione esterna in base al dominio dell'utente di destinazione. In questo caso, l'invito alla condivisione è stato bloccato perché:  <br/>  Il dominio dell'utente di destinazione non è incluso nell'elenco dei domini consentiti.  <br/>  Oppure  <br/>  Il dominio dell'utente di destinazione è incluso nell'elenco dei domini bloccati.  <br/>  Per ulteriori informazioni su come consentire o bloccare la condivisione esterna in base ai domini, vedere Restricted [Domains sharing in SharePoint Online e OneDrive for business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Creazione di un collegamento condiviso con la società  <br/> |CompanyLinkCreated  <br/> |L'utente ha creato un collegamento a livello di società a una risorsa. i collegamenti a livello di azienda possono essere utilizzati solo dai membri dell'organizzazione. Non possono essere utilizzati dagli ospiti.  <br/> |
 |Richiesta di accesso creata  <br/> |AccessRequestCreated  <br/> |L'utente richiede l'accesso a un sito, una cartella o un documento in cui non dispongono delle autorizzazioni per l'accesso.  <br/> |
+|Creazione di un collegamento condiviso con la società  <br/> |CompanyLinkCreated  <br/> |L'utente ha creato un collegamento a livello di società a una risorsa. i collegamenti a livello di azienda possono essere utilizzati solo dai membri dell'organizzazione. Non possono essere utilizzati dagli ospiti.  <br/> |
 |Creato un collegamento anonimo  <br/> |AnonymousLinkCreated  <br/> |L'utente ha creato un collegamento anonimo a una risorsa. Tutti gli utenti che dispongono di questo collegamento possono accedere alla risorsa senza dover essere autenticati.  <br/> |
 |Collegamento protetto creato  <br/> |SecureLinkCreated  <br/> |È stato creato un collegamento di condivisione sicura per questo elemento.  <br/> |
 |Invito alla condivisione creato  <br/> |SharingInvitationCreated  <br/> |L'utente ha condiviso una risorsa in SharePoint Online o OneDrive for business con un utente che non si trova nella directory dell'organizzazione.  <br/> |
@@ -503,27 +504,32 @@ Nella tabella seguente sono elencati gli eventi che risultano dalle attività di
   
 ### <a name="exchange-mailbox-activities"></a>Attività relative alle cassette postali di Exchange
   
-Nella tabella seguente sono elencate le attività che possono essere registrate tramite la registrazione di controllo delle cassette postali. Le attività delle cassette postali eseguite dal proprietario della cassetta postale, da un utente delegato o da un amministratore vengono registrate. Per impostazione predefinita, il controllo delle cassette postali in Office 365 non è attivato. La registrazione di controllo delle cassette postali deve essere attivata per ogni cassetta postale prima che venga registrata l'attività della cassetta postale. Per ulteriori informazioni, vedere [abilitare il controllo delle cassette postali in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+Nella tabella seguente sono elencate le attività che possono essere registrate tramite la registrazione di controllo delle cassette postali. Le attività delle cassette postali eseguite dal proprietario della cassetta postale, da un utente delegato o da un amministratore vengono automaticamente registrate nel registro di controllo di Office 365 per un massimo di 90 giorni. Si noti che è possibile che un amministratore spenga la registrazione di controllo delle cassette postali per tutti gli utenti di Security. In questo caso, non vengono registrate le azioni delle cassette postali per qualsiasi utente. Per ulteriori informazioni, vedere [gestire il controllo delle cassette postali](enable-mailbox-auditing.md).
+
+ È inoltre possibile cercare le attività delle cassette postali utilizzando il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell. 
   
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Aggiunta delle autorizzazioni per le cassette postali delegate  <br/> |Add-MailboxPermission  <br/> |Un amministratore ha assegnato l'autorizzazione cassetta postale di FullAccess a un utente (noto come delegato) alla cassetta postale di un'altra persona. L'autorizzazione FullAccess consente al delegato di aprire la cassetta postale dell'altra persona e di leggere e gestire il contenuto della cassetta postale.  <br/> |
-|Messaggio classificato come record  <br/> |ApplyRecordLabel<br/> |Un messaggio è stato classificato come record. Questo problema si verifica quando un'etichetta di conservazione che classifica il contenuto come record viene applicata manualmente o automaticamente a un messaggio.<br/> |
+|Aggiunta delle autorizzazioni per le cassette postali delegate  <br/> |AddMailboxPermissions  <br/> |Un amministratore ha assegnato l'autorizzazione cassetta postale di FullAccess a un utente (noto come delegato) alla cassetta postale di un'altra persona. L'autorizzazione FullAccess consente al delegato di aprire la cassetta postale dell'altra persona e di leggere e gestire il contenuto della cassetta postale.  <br/> |
+|Aggiunta o rimozione di un utente con accesso delegato alla cartella del calendario<br/> |UpdateCalendarDelegation<br/> |Un utente è stato aggiunto o rimosso come delegato per il calendario della cassetta postale di un altro utente. La delega del calendario fornisce a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale. <br/> |
+|Aggiunta delle autorizzazioni alla cartella<br/> |AddFolderPermissions<br/> |È stata aggiunta un'autorizzazione cartella. Autorizzazioni per le cartelle controllare quali utenti dell'organizzazione possono accedere alle cartelle in una cassetta postale e i messaggi che si trovano in tali cartelle.<br/> |
 |Copia dei messaggi in un'altra cartella  <br/> |Copia  <br/> |Messaggio copiato in un'altra cartella.  <br/> |
 |Elemento della cassetta postale creato  <br/> |Creazione  <br/> |Elemento creato nella cartella Calendario, Contatti, Note o Attività nella cassetta postale; ad esempio, viene creata una nuova convocazione di riunione. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.  <br/> |
-|Nuova regola di posta in arrivo creata in Outlook Web App  <br/> |NewInboxRule<br/> |Un utente ha creato una nuova regola di posta in arrivo in Outlook Web App (OWA).<br/> |
+|Nuova regola di posta in arrivo creata in Outlook Web App  <br/> |NewInboxRule<br/> |Un proprietario della cassetta postale o un altro utente con accesso alla cassetta postale ha creato una nuova regola di posta in arrivo in Outlook Web App.<br/> |
 |Messaggi eliminati dalla cartella Posta eliminata  <br/> |SoftDelete  <br/> |Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Questi elementi vengono spostati nella cartella elementi ripristinabili. I messaggi vengono spostati nella cartella elementi ripristinabili anche quando un utente la seleziona e preme **MAIUSC + CANC**.  <br/> |
+|Messaggio contrassegnato come record  <br/> |ApplyRecordLabel<br/> |Un messaggio è stato classificato come record. Questo problema si verifica quando un'etichetta di conservazione che classifica il contenuto come record viene applicata manualmente o automaticamente a un messaggio.<br/> |
 |Spostamento dei messaggi in un'altra cartella  <br/> |Move  <br/> |Messaggio spostato in un'altra cartella.  <br/> |
 |Spostamento dei messaggi nella cartella Posta eliminata  <br/> |MoveToDeletedItems  <br/> |Messaggio eliminato e spostato nella cartella Posta eliminata.  <br/> |
 |Autorizzazione per la cartella modificata  <br/> |UpdateFolderPermissions  <br/> |È stata modificata un'autorizzazione per la cartella. Autorizzazioni per le cartelle controllare quali utenti dell'organizzazione possono accedere alle cartelle delle cassette postali e ai messaggi presenti nella cartella.  <br/> |
+|Regola di posta in arrivo modificata da Outlook Web App<br/> |SetInboxRule<br/> |Un proprietario della cassetta postale o un altro utente con accesso alla cassetta postale ha modificato una regola di posta in arrivo utilizzando Outlook Web App.<br/> |
 |Messaggi eliminati dalla cassetta postale  <br/> |HardDelete  <br/> |Un messaggio è stato eliminato dalla cartella elementi ripristinabili (eliminato definitivamente dalla cassetta postale).  <br/> |
 |Autorizzazioni di cassetta postale delegate rimosse  <br/> |Remove-MailboxPermission  <br/> |Un amministratore ha rimosso l'autorizzazione FullAccess (assegnata a un delegato) dalla cassetta postale di una persona. Dopo la rimozione dell'autorizzazione FullAccess, il delegato non è in grado di aprire la cassetta postale dell'altra persona o di accedere a qualsiasi contenuto.  <br/> |
+|Autorizzazioni rimosse dalla cartella<br/> |RemoveFolderPermissions<br/> |È stata rimossa un'autorizzazione cartella. Autorizzazioni per le cartelle controllare quali utenti dell'organizzazione possono accedere alle cartelle in una cassetta postale e i messaggi che si trovano in tali cartelle.<br/> |
 |Messaggio inviato utilizzando le autorizzazioni Invia come  <br/> |SendAs  <br/> |Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.  <br/> |
 |Messaggio inviato utilizzando le autorizzazioni Invia per conto di  <br/> |SendOnBehalf  <br/> |Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.  <br/> |
-|Accesso delegato aggiornato alla cartella del calendario  <br/> |UpdateCalendarDelegation  <br/> |Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario fornisce a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.  <br/> |
+|Regole di posta in arrivo aggiornate dal client Outlook<br/> |UpdateInboxRules<br/> |Un proprietario della cassetta postale o un altro utente con accesso alla cassetta postale ha modificato una regola di posta in arrivo nel client Outlook.<br/> |
 |Messaggio aggiornato  <br/> |Aggiornamento  <br/> |Modifiche apportate a un messaggio o alle relative proprietà.  <br/> |
 |Utente che ha eseguito l'accesso alla cassetta postale  <br/> |MailboxLogin  <br/> |Accesso effettuato dall'utente alla propria cassetta postale.  <br/> |
-|nessuno  <br/> |UpdateInboxRules  <br/> |È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.  <br/> Per restituire le voci per le attività della regola di posta in arrivo, è necessario selezionare **Mostra risultati per tutte** le attività nell'elenco **attività** . Utilizzare le caselle Intervallo di date e l'elenco **utenti** per restringere i risultati della ricerca.  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Attività di Sway
@@ -756,7 +762,7 @@ Nella tabella seguente sono elencate le attività dell'utente e dell'amministrat
    
 ### <a name="microsoft-flow-activities"></a>Attività di flusso Microsoft
 
-È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Flow. Tali attività includono la creazione, la modifica e l'eliminazione dei flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo per le attività di flusso, vedere il Blog [Microsoft Flow Audit Events now available in Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+È possibile eseguire una ricerca nel registro di controllo per le attività in Microsoft Flow. Tali attività includono la creazione, la modifica e l'eliminazione dei flussi e la modifica delle autorizzazioni di flusso. Per informazioni sul controllo per le attività di flusso, vedere il Blog [Microsoft Flow Audit Events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

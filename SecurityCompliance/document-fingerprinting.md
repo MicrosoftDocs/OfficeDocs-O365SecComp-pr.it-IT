@@ -3,20 +3,19 @@ title: Creazione impronta digitale documenti
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 56f67d1e3948ed66defa10a0815a4fdf87a13cb1
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256900"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199548"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -44,7 +43,7 @@ Il seguente esempio mostra cosa accade si crea un'impronta digitale del document
   
 **Esempio di un documento di brevetto corrispondente a un'impronta digitale del documento di un modello di brevetto**
 
-![Document_Fingerprinting_diagram. png](media/Document_Fingerprinting_diagram.png)
+![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
   
 Il modello di brevetto contiene i campi vuoti "titolo brevetto", "inventori" e "Descrizione" e descrizioni per ognuno di questi campi, ovvero il modello di parola. Quando si carica il modello di brevetto originale, si trova in uno dei tipi di file supportati e in testo normale. DLP converte questo modello di parola in un'impronta digitale del documento, che è un piccolo file XML Unicode contenente un valore hash univoco che rappresenta il testo originale e l'impronta digitale viene salvata come classificazione dei dati in Active Directory. (Come misura di sicurezza, il documento originale non è archiviato nel servizio, solo il valore hash è archiviato e il documento originale non può essere ricostruito dal valore hash). L'impronta digitale del brevetto diventa quindi un tipo di informazioni riservate che è possibile associare a un criterio DLP. Dopo aver associato l'impronta digitale a un criterio DLP, DLP rileva eventuali messaggi di posta elettronica in uscita contenenti documenti che corrispondono all'impronta digitale del brevetto e li gestisce in base ai criteri dell'organizzazione. 
 
@@ -66,7 +65,7 @@ L'impronta digitale del documento non rileva informazioni riservate nei casi seg
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utilizzo di PowerShell per creare un pacchetto di regole di classificazione basato sull'impronta digitale dei documenti
 
-Si noti che è possibile creare un'impronta digitale del documento solo tramite PowerShell nel centro &amp; sicurezza e conformità. Per la connessione, vedere [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Si noti che è possibile creare un'impronta digitale del documento solo tramite PowerShell nel centro &amp; sicurezza e conformità. Per eseguire la connessione, vedere [PowerShell to Connect to Security & Compliance Center](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP utilizza pacchetti di regole di classificazione per rilevare contenuti sensibili. Per creare un pacchetto di regole di classificazione in base a un'impronta digitale del documento, utilizzare i cmdlet **New-DlpFingerprint** e **New-DlpSensitiveInformationType** . Poiché i risultati di **New-DlpFingerprint** non sono archiviati all'esterno della regola di classificazione dei dati, vengono sempre eseguiti **New-DlpFingerprint** e **New-DlpSensitiveInformationType** o **set-DlpSensitiveInformationType** nello stesso Sessione di PowerShell. In questo esempio viene creata una nuova impronta digitale di documento in base al file C:\Documenti\Contoso Employee Template.docx. La nuova impronta digitale viene archiviata come variabile e potrà essere quindi utilizzata con il cmdlet **New-DlpSensitiveInformationType** nella stessa sessione di PowerShell. 
   

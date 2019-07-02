@@ -3,7 +3,7 @@ title: Inviare notifiche di posta elettronica e visualizzare i suggerimenti per 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
+ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
+ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077362"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34948904"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -41,9 +41,9 @@ Nel centro sicurezza &amp; e conformità di Office 365, quando si crea un criter
     
   - Per la posta elettronica in Outlook sul Web e Outlook 2013 e versioni successive, il suggerimento del criterio viene visualizzato nella parte superiore di un messaggio sopra i destinatari mentre il messaggio è in fase di composizione.
     
-  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare ****![clic su icona](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
+  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **** ![clic su icona](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
     
-  - Per i documenti di Excel 2016, PowerPoint 2016 e Word 2016 archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione Backstage (menu **file** \> ** Info**).
+  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione **** backstage \> ( **informazioni**sul menu file).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Aggiungere notifiche utente a un criterio DLP
 
@@ -80,6 +80,9 @@ Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i s
 9. Nell'editor delle regole, in **notifiche utente**, impostare lo stato su.
     
     ![Sezione notifiche utente di editor delle regole](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+
+> [!NOTE]
+> I criteri DLP si applicano a tutti i documenti che soddisfano i criteri, se tali documenti sono nuovi o esistenti. Tuttavia, una notifica tramite posta elettronica viene generata solo quando il nuovo contenuto corrisponde a un criterio DLP esistente. Il contenuto esistente è protetto, ma non genera una notifica utente tramite posta elettronica.
   
 ## <a name="options-for-configuring-email-notifications"></a>Opzioni di configurazione delle notifiche di posta elettronica
 
@@ -90,7 +93,7 @@ Per ogni regola in un criterio DLP, è possibile:
 - Personalizzare il testo incluso nella notifica tramite HTML o token. Per ulteriori informazioni, vedere la sezione riportata di seguito.
     
 > [!NOTE]
->  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. Solo i nuovi contenuti attivano una notifica di posta elettronica. Le modifiche ai contenuti esistenti attivano i suggerimenti per i criteri, non una notifica di posta elettronica. 
+>  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. Solo i nuovi contenuti attivano una notifica di posta elettronica. La modifica del contenuto esistente attiverà suggerimenti per i criteri, ma non una notifica tramite posta elettronica. 
   
 ![Opzioni di notifica tramite posta elettronica](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -162,7 +165,7 @@ Quando un documento in un sito di OneDrive for business o in un sito di SharePoi
     
 ![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Per eseguire un'azione su un documento, è possibile selezionare l' \> icona ****![](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
+Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **** ![](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
   
 Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggerimenti per i criteri sono configurati con queste opzioni, è possibile selezionare **Risolvi** e quindi **ignorare** il suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
@@ -241,15 +244,15 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano testo simile
 |Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |La posta elettronica è in conflitto con un criterio nell'organizzazione.  <br/> |
 |Blocca l'accesso e invia una notifica  <br/> |La posta elettronica è in conflitto con un criterio nell'organizzazione.  <br/> |
    
-## <a name="policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Suggerimenti per i criteri in Excel, PowerPoint e Word
 
-Quando gli utenti lavorano con contenuti riservati nelle versioni desktop di Excel 2016, PowerPoint 2016 e Word 2016, i suggerimenti per i criteri possono informarli in tempo reale che il contenuto è in conflitto con un criterio DLP. Ciò richiede che:
+Quando le persone lavorano con contenuti sensibili nelle versioni desktop di Excel, PowerPoint e Word, i suggerimenti per i criteri possono avvisarli in tempo reale che il contenuto è in conflitto con un criterio DLP. Ciò richiede che:
   
 - Il documento di Office è archiviato in un sito OneDrive for Business o SharePoint Online.
     
 - Il sito è incluso in un criterio DLP configurato per l'utilizzo di suggerimenti per i criteri.
     
-Questi programmi desktop di Office 2016 sincronizzano automaticamente i criteri DLP direttamente da Office 365 e quindi eseguono l'analisi dei documenti in modo da evitare conflitti con i criteri DLP e visualizzare i suggerimenti per i criteri in tempo reale.
+I programmi desktop di Office sincronizzano automaticamente i criteri DLP direttamente da Office 365 e quindi eseguono la scansione dei documenti per assicurarsi che non siano in conflitto con i criteri DLP e che vengano visualizzati suggerimenti per i criteri in tempo reale.
   
 A seconda della modalità di configurazione dei suggerimenti per i criteri nel criterio DLP, gli utenti possono scegliere se ignorare semplicemente il suggerimento per i criteri, ignorare il criterio con o senza una motivazione aziendale oppure segnalare un falso positivo.
   
@@ -265,7 +268,7 @@ Se i suggerimenti per i criteri nel criterio DLP sono configurati con queste opz
   
 ![Opzioni sul suggerimento per i criteri in Backstage in Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-In ognuno di questi programmi desktop di Office 2016, gli utenti possono scegliere se disattivare i suggerimenti per i criteri. Se disattivati, i suggerimenti per i criteri che sono delle semplici notifiche non vengono visualizzati nella barra dei messaggi o nella visualizzazione Backstage (nella scheda **File**). Tuttavia, i suggerimenti per i criteri di blocco o sostituzione continuano a essere visualizzati e a ricevere notifiche di posta elettronica. Inoltre, la disattivazione dei suggerimenti per i criteri non esclude il documento da eventuali criteri DLP che vi sono stati applicati. 
+In ognuno di questi programmi desktop di Office, gli utenti possono scegliere di disattivare i suggerimenti per i criteri. Se disattivati, i suggerimenti per i criteri che sono delle semplici notifiche non vengono visualizzati nella barra dei messaggi o nella visualizzazione Backstage (nella scheda **File**). Tuttavia, i suggerimenti per i criteri di blocco o sostituzione continuano a essere visualizzati e a ricevere notifiche di posta elettronica. Inoltre, la disattivazione dei suggerimenti per i criteri non esclude il documento da eventuali criteri DLP che vi sono stati applicati. 
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Testo predefinito per i suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
 
@@ -277,7 +280,7 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
 |Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Il file è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .  <br/> |
 |Blocca l'accesso e invia una notifica  <br/> |Il file è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file. Per ulteriori informazioni, passare al menu **file** .  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Testo personalizzato per i suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Testo personalizzato per i suggerimenti per i criteri in Excel, PowerPoint e Word
 
 È possibile personalizzare il testo per i suggerimenti per i criteri separatamente dalla notifica di posta elettronica. A differenza del testo personalizzato per le notifiche di posta elettronica (vedere la sezione precedente), il testo personalizzato per i suggerimenti per i criteri non accetta HTML o token. Al contrario, il testo personalizzato per i suggerimenti per i criteri è testo normale solo con un limite di 256 caratteri.
   

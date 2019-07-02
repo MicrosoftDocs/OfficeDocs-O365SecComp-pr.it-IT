@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score
-description: In questo articolo viene descritto Microsoft 365 Secure score, la modalità di calcolo dei dettagli e gli amministratori della sicurezza che possono essere utilizzati.
+description: Descrive Microsoft Secure score in Microsoft 365 Security Center, la modalità di calcolo dei dettagli e gli amministratori della sicurezza che possono aspettarsi di usarli.
 keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,14 +15,17 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
-ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
+ms.openlocfilehash: 27a9d137bde0dd23be8824d94a25364f89706563
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34334544"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852780"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
+
+>[!IMPORTANT]
+>Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Con Microsoft Secure score in Microsoft 365 Security Center, è possibile avere maggiore visibilità e controllo sulla posizione di sicurezza dell'organizzazione. Da un Dashboard centralizzato è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365.
 
@@ -40,15 +43,15 @@ Attualmente, per visualizzare il Punteggio sicuro di Microsoft, è necessario es
 * Amministratore della sicurezza
 * Lettore di sicurezza
 
-## <a name="rich-experiences--additional-security-recommendations"></a>Rich experiences & ulteriori suggerimenti per la sicurezza
+## <a name="rich-experiences--additional-security-recommendations"></a>Esperienze ricche & ulteriori suggerimenti per la sicurezza
 
-In Microsoft Secure score, sono stati aggiunti suggerimenti da Azure AD, Intune e cloud app Security, con consigli di Azure Security Center e Windows Defender ATP disponibili a breve. Sono stati aggiunti anche altri suggerimenti per la sicurezza di Office 365. Con ulteriori intuizioni e una maggiore visibilità in un insieme più ampio di prodotti e servizi Microsoft, è possibile ottenere una relazione sicura fino alla gestione dell'integrità della sicurezza dell'organizzazione. È anche possibile ottenere il punteggio utilizzando l' [API di Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+In Microsoft Secure score, sono stati aggiunti suggerimenti da Azure AD, Intune e cloud app Security, con consigli di Azure Security Center e Microsoft Defender ATP in arrivo. Sono stati aggiunti anche altri suggerimenti per la sicurezza di Office 365. Con ulteriori intuizioni e una maggiore visibilità in un insieme più ampio di prodotti e servizi Microsoft, è possibile ottenere una relazione sicura fino alla gestione dell'integrità della sicurezza dell'organizzazione. È anche possibile ottenere il punteggio utilizzando l' [API di Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
 Per aiutare le informazioni necessarie più rapidamente, i consigli di Microsoft sono organizzati in gruppi:
 
 * Identity (stato di protezione dei ruoli e degli account di Azure AD)
 * Data (stato di protezione dei documenti di Office 365)
-* Dispositivo (stato di protezione dei dispositivi; Azioni di miglioramento di Windows Defender ATP disponibili a breve)
+* Dispositivo (stato di protezione dei dispositivi; Azioni di miglioramento di Microsoft Defender ATP prossimamente
 * App (stato di protezione delle app del cloud e della posta elettronica)
 * Infrastruttura (stato di protezione delle risorse di Azure; presto disponibile)
 
@@ -75,17 +78,17 @@ Quando si fa clic su un'azione di miglioramento, viene visualizzato un volo. Per
 
 ![Home page di M365](./media/secure-score/secure-score1x450.png) ![Home page di M365](./media/secure-score/secure-score2x450.png)
 
-*Figure 2 & 3: comparsa d'azione di miglioramento*
+*Figure 2 & 3: azione di miglioramento comparsa*
 
 ## <a name="monitor-improvements-over-time"></a>Monitorare i miglioramenti nel tempo
 
 È possibile visualizzare un grafico del punteggio dell'organizzazione nel tempo nella scheda **cronologia** . Questa visualizzazione include la media globale, la media del settore e il numero di sedi simili, insieme a tutte le azioni eseguite nell'intervallo di tempo selezionato. È inoltre possibile personalizzare un intervallo di date e filtrare in base alla categoria.
 
-Il Punteggio viene calcolato una volta al giorno (circa 1:00 AM PST). Se si apportano modifiche a un'azione misurata, il punteggio verrà aggiornato automaticamente il giorno successivo. È inoltre importante tenere presente che alcuni altri portali mostrano parti del Microsoft Secure Score (come Windows Defender Security Center). Se si completa un'azione di miglioramento e il punteggio è aumentato nei portali, potrebbero essere necessarie fino a 24 ore affinché il punteggio aggiornato venga visualizzato in Microsoft 365 Security Center.  
+Il Punteggio viene calcolato una volta al giorno (circa 1:00 AM PST). Se si apportano modifiche a un'azione misurata, il punteggio verrà aggiornato automaticamente il giorno successivo. È inoltre importante tenere presente che alcuni altri portali mostrano parti del Microsoft Secure Score (come Microsoft Defender Security Center). Se si completa un'azione di miglioramento e il punteggio è aumentato nei portali, potrebbero essere necessarie fino a 24 ore affinché il punteggio aggiornato venga visualizzato in Microsoft 365 Security Center.  
 
-## <a name="how-controls-are-scored"></a>Modalità di valutazione dei controlli
+## <a name="how-improvement-actions-are-scored"></a>Come vengono segnate le azioni di miglioramento
 
-I controlli possono essere segnati in due modi. Alcuni sono segnati in modo binario: si ottiene il 100% del punteggio se si ha la caratteristica o l'impostazione configurata in base alla nostra raccomandazione. Gli altri punteggi vengono calcolati come percentuale della configurazione totale. Ad esempio, se la raccomandazione di miglioramento dichiara che otterrai 30 punti se Proteggi tutti gli utenti con AMF e hai solo 5 di 100 utenti totali protetti, ti verrebbe assegnato un punteggio parziale di circa 2 punti (5 protected/100 Total * 30 max pts = 2 PTS partial Punteggio) . 
+La maggior parte sono segnati in modo binario: si ottiene il 100% dei punti se si implementa l'azione di miglioramento, ad esempio la creazione di un nuovo criterio o l'attivazione di un'impostazione specifica. Per altre azioni di miglioramento, i punti vengono assegnati come percentuale della configurazione totale. Ad esempio, se gli Stati di azione di miglioramento si ottengono 30 punti se si proteggono tutti gli utenti con autenticazione a più fattori e si dispone solo di 5 di 100 utenti totali protetti, si riceverebbe un punteggio parziale di circa 2 punti (5 protected/100 Total * 30 max pts = 2  Punteggio parziale PTS).
 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
@@ -93,4 +96,4 @@ Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in ba
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
-In caso di problemi, fatecelo sapere inviando la [sicurezza, la privacy _AMP_ Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Si sta monitorando la community e viene fornita assistenza.
+In caso di problemi, fatecelo sapere inviando la [sicurezza, la Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Si sta monitorando la community e viene fornita assistenza.

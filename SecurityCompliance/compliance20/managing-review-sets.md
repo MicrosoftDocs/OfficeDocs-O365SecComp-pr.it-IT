@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154038"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703751"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gestire i set di revisione in Advanced eDiscovery
 
@@ -41,7 +41,7 @@ I set di revisione sono un insieme statico di documenti in cui è possibile anal
 
 ![Aggiungere un set di Revisione](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Nella pagina **Aggiungi** riquadro a comparsa del set di revisione digitare un nome per il set di revisione e quindi fare clic su **Salva**.  Il nuovo set di revisione viene visualizzato nell'elenco della scheda dei **set di revisione** .
+Nella pagina **Aggiungi** riquadro a comparsa del set di revisione digitare un nome per il set di revisione e quindi fare clic su **Salva**. Il nuovo set di revisione viene visualizzato nell'elenco della scheda dei **set di revisione** .
 
 ![Nuovo set di revisione elencato nella scheda set di Revisione](../media/AeDnewreviewset.png)
 

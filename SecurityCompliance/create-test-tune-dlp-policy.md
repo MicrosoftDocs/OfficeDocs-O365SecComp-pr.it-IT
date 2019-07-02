@@ -3,7 +3,7 @@ title: Creare, testare e ottimizzare i criteri di prevenzione della perdita dei 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 32b0b4baa058fda031a58681e107b01bf207da55
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077962"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -59,7 +59,7 @@ Un buon riferimento per mantenere i segnalibri è questo [argomento sui tipi di 
 
 Quando i rischi di perdita di dati non sono del tutto evidenti, è difficile capire esattamente dove iniziare con l'implementazione di DLP. Fortunatamente, i criteri DLP possono essere eseguiti in "modalità test", consentendo di valutare l'efficacia e l'accuratezza prima di attivarli.
 
-I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & compliance sono disponibili i criteri DLP in**criteri**di **prevenzione** > della perdita di dati. Fare clic su **Crea un criterio** per iniziare.
+I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità sono disponibili i criteri DLP in**criteri**di **prevenzione** > della perdita di dati. Fare clic su **Crea un criterio** per iniziare.
 
 Office 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare i criteri DLP. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli di criteri per visualizzare solo quelli rilevanti per l'Australia, che rientrano nelle categorie generali finanziarie, mediche e sanitarie e di privacy.
 
@@ -121,7 +121,7 @@ Se si lascia il criterio DLP in modalità di testing e si analizzano i messaggi 
 
 Quando si analizzano gli hit dei criteri, è possibile apportare alcune modifiche alla modalità con cui si comportano i criteri. Come semplice esempio, è possibile determinare che un TFN nella posta elettronica non è un problema (penso che lo sia ancora, ma andiamo con esso per il bene della dimostrazione), ma due o più istanze è un problema. Più istanze potrebbero essere uno scenario rischioso, ad esempio un dipendente che invia un messaggio di esportazione CSV dal database HR a una parte esterna, come un servizio Accounting esterno. Sicuramente qualcosa che si preferisce rilevare e bloccare.
 
-Nel centro sicurezza & Compliance è possibile modificare un criterio esistente per regolare il comportamento.
+Nel centro sicurezza & conformità è possibile modificare un criterio esistente per modificare il comportamento.
 
 ![Opzione per modificare il criterio](media/DLP-create-test-tune-edit-policy.png)
  
@@ -203,7 +203,7 @@ Quando si è soddisfatti del fatto che i criteri DLP siano in grado di rilevare 
 
 ![Opzione per abilitare i criteri](media/DLP-create-test-tune-turn-on-policy.png)
  
-Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza _AMP_ Compliance PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) per visualizzare la proprietà distributionstatus.
+Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) per visualizzare il proprietà distributionstatus.
 
 ![Running cmdlet in PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

@@ -3,7 +3,6 @@ title: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichet
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153268"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199777"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -50,7 +49,7 @@ Per iniziare, è sufficiente impostare **Crittografia** su **Attiva**, quindi ut
 2. **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. Si noti che alcuni client di posta elettronica potrebbero non applicare la scadenza e mostrare messaggi di posta elettronica che hanno superato la data di scadenza a causa dei meccanismi di memorizzazione nella cache.
 3. **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
 
-![Impostazioni di crittografia per etichette di riservatezza](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![Impostazioni di crittografia per etichette di riservatezza](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licenza d'uso di Rights Management per l'accesso offline
 
@@ -71,7 +70,7 @@ Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 g
 1. Prima di tutto, aggiungere gli utenti o i gruppi a cui verranno assegnate le autorizzazioni per il contenuto etichettato.
 2. Quindi scegliere quali autorizzazioni assegnare agli utenti per il contenuto etichettato.
 
-![Opzioni per assegnare autorizzazioni agli utenti](media/Sensitivity_Assign_permissions_settings.png)
+![Opzioni per assegnare autorizzazioni agli utenti](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>Aggiungere utenti o gruppi
 
@@ -94,13 +93,13 @@ Quando si sceglie quali autorizzazioni assegnare agli utenti o ai gruppi, è pos
 
 Per ulteriori informazioni sulle singole specifiche autorizzazioni, vedere [Diritti di utilizzo e relative descrizioni](https://docs.microsoft.com/it-IT/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](media/Sensitivity_Choose_permissions_settings.png)
+![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](media/Sensitivity-Choose-permissions-settings.png)
 
 Si noti che la stessa etichetta può concedere autorizzazioni diverse a vari utenti. Ad esempio, una singola etichetta può assegnare alcuni utenti come Revisore e un altro utente come Coautore, come mostrato di seguito.
 
 Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autorizzazioni e salvare le impostazioni. Quindi ripetere questi passaggi, aggiungendo utenti e assegnando loro le autorizzazioni, salvando le impostazioni ogni volta. È possibile farlo con la frequenza desiderata, in modo da poter definire autorizzazioni diverse per utenti diversi.
 
-![Utenti diversi con autorizzazioni diverse](media/Sensitivity_Multiple_users_permissions.png)
+![Utenti diversi con autorizzazioni diverse](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
 

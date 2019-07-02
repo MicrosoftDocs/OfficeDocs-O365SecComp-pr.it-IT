@@ -1,5 +1,5 @@
 ---
-title: Configurare gli smart tag per il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
+title: Configurare gli smart tag in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,28 +14,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 5310acad1aa1bc2e01cbabee69dd7bb38084bd9a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli smart tag consentono di applicare le funzionalità di apprendimento automatico quando si esaminano i contenuti in un caso avanzato di eDiscovery. Utilizzare i gruppi di smart tag per visualizzare i risultati dei modelli di rilevamento di apprendimento automatico, ad esempio il modello di privilegio avvocato-client.
+ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153968"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703829"
 ---
-# <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>Configurare gli smart tag per la revisione con supporto ML in Advanced eDiscovery
+# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurare gli smart tag in Advanced eDiscovery
 
-Le funzionalità di apprendimento automatico in Advanced eDiscovery devono contribuire a rendere più efficienti i processi decisionali sui documenti. Smart tag è un modo per portare le funzionalità di apprendimento automatico in cui vengono registrate le decisioni: Tag e gruppi di tag. Quando si crea un gruppo di smart tag, le decisioni del modello ML mappate al gruppo verranno mostrate in linea con i tag del gruppo in modo da visualizzare le informazioni in linea, in cui sono contestualemente più sensate.
+Le funzionalità di apprendimento automatico (ML) in Advanced eDiscovery consentono di rendere il processo decisionale più efficiente quando si esaminano i documenti dei casi in un set di revisione. Gli smart tag rappresentano un modo per portare le funzionalità ML in cui vengono registrate le decisioni: quando si contrassegnano i documenti durante la revisione. Quando si crea un gruppo di smart tag, le decisioni che sono il risultato del modello ML associato al gruppo smart tag vengono visualizzate in linea con i tag del gruppo di tag. Questo consente di visualizzare le informazioni sui risultati in linea quando si stanno esaminando documenti specifici.
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Come configurare un gruppo di smart tag
 
-1. In un set di revisione, andare a **Manage Review set** -> **gestire i tag**.
+1. In un set di Revisione fare clic su **Gestisci Revisione set** e quindi su **Gestisci Tag**.
 
-2. Fare clic sul menu a discesa accanto a **Aggiungi tag gruppo** e selezionare **Aggiungi smart tag Group**.
+2. Fare clic su **Aggiungi gruppo Tag** e quindi selezionare **Aggiungi gruppo smart tag**.
 
-3. Selezionare il modello che si desidera mappare a questo gruppo. Verrà creata una sezione Tag e N tag figlio, dove N è il numero di output possibili del modello. Ad esempio, il modello di rilevamento dei privilegi avvocato-client ha due possibili output-privilegiati e non privilegiati; Se si seleziona questo modello, verranno creati due tag figlio nel set di revisione, ognuno corrispondente a uno dei possibili output.
+3. Selezionare il modello ML che si desidera associare al gruppo di tag.
+    
+   In questo modo viene creato un gruppo di tag e *n* tag figlio, dove *n* è il numero di output possibili del modello. Ad esempio, il [modello di rilevamento dei privilegi avvocato-client](attorney-privilege-detection.md) ha due possibili output: 
 
-4. Rinominare il gruppo di tag e i tag come si può vedere in forma.
+   - **Positivo** : consente di contrassegnare i documenti che contengono contenuto privilegiato avvocato-client.
+   
+   - **Negativo** : consente di contrassegnare i documenti che non contengono contenuto privilegiato avvocato-client.
+    
+    Se si seleziona questo modello, viene creato un gruppo di tag con due tag figlio (un tag figlio con nome **positivo** e l'altro **negativo**) per il set di revisione. In questo esempio, ogni tag figlio corrisponde a uno dei possibili output del modello di rilevamento dei privilegi avvocato-client.
 
-## <a name="how-to-use-a-smart-tag-group"></a>Come usare un gruppo di smart tag
+4. Facoltativamente, è possibile rinominare il gruppo di tag e i tag figlio. Ad esempio, è possibile rinominare il tag **positivo** su **Privileged** e il tag **negative** su **not Privileged**.
 
-Quando si esamina un documento, i risultati del modello verranno esposti accanto al valore del tag appropriato. Ad esempio, se si dispone di un gruppo di smart tag per il rilevamento dei privilegi avvocato-client e si esamina un documento che il modello ha deciso è potenzialmente privilegiato, verrà visualizzato il motivo accanto al tag appropriato. È importante tenere presente che il tag non viene applicato automaticamente. per tutti gli effetti, i tag all'interno di un gruppo di smart tag agiscono esattamente come i tag normali, tranne per il fatto che espongono i risultati del modello accanto a essi, se necessario.
+## <a name="how-to-use-smart-tags"></a>Come usare gli smart tag
+
+Quando si esamina un documento, i risultati del modello vengono visualizzati accanto al tag figlio appropriato. Ad esempio, se si dispone di un gruppo di smart tag per il rilevamento dei privilegi avvocato-client e si esamina un documento potenzialmente privilegiato, la causa di tale conclusione viene visualizzata accanto al tag appropriato. È importante tenere presente che il tag non viene applicato automaticamente al documento. Il revisore prende la decisione su come contrassegnare il documento.

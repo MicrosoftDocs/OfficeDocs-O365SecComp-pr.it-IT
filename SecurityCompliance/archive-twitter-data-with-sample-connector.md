@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati di Twitter in Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 6780e3fbb53e2326994e03815403c1e5ae0d0616
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490502"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014685"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Utilizzare un connettore di esempio per archiviare i dati di Twitter in Office 365 (anteprima)
 
@@ -23,7 +23,7 @@ La funzionalità di esempio del connettore per l'archiviazione dei dati di Twitt
 
 Utilizzare un connettore di esempio nel centro sicurezza & compliance in Office 365 per importare e archiviare i dati da Twitter. Dopo aver configurato e configurato un connettore di esempio, l'utente si connette all'account Twitter dell'organizzazione (su base pianificata), converte il contenuto di un elemento in un formato di messaggio di posta elettronica e quindi importa tali elementi in una cassetta postale in Office 365.
 
-Dopo aver importato i dati di Twitter, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo, la supervisione e i criteri di conservazione di Office 365 ai dati archiviati nella cassetta postale. Ad esempio, è possibile cercare i dati di terze parti utilizzando la ricerca contenuto oppure associarli a un custode in un caso di eDiscovery avanzato. L'utilizzo di connettori di esempio per l'importazione e l'archiviazione dei dati di Twitter in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo aver importato i dati di Twitter, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo, la supervisione e i criteri di conservazione di Office 365 ai dati archiviati nella cassetta postale. Ad esempio, è possibile cercare i dati di Twitter utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati con un custode in un caso di eDiscovery avanzato. L'utilizzo di un esempio di connettori per l'importazione e l'archiviazione dei dati di Twitter in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 > [!NOTE]
 > Attualmente, solo i connettori di esempio per le [pagine business](archive-facebook-data-with-sample-connector.md) di Twitter e Facebook sono disponibili per l'anteprima. Sono disponibili più connettori di esempio.
@@ -31,7 +31,7 @@ Dopo aver importato i dati di Twitter, è possibile applicare le funzionalità d
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>Prerequisiti per la configurazione di un connettore per Twitter
 
-Prima di poter impostare e configurare un connettore di esempio nel centro sicurezza & Compliance, è necessario completare i seguenti prerequisiti per importare e archiviare i dati dall'account Twitter dell'organizzazione. 
+Prima di poter impostare e configurare un connettore di esempio nel centro sicurezza & Compliance, è necessario completare i prerequisiti seguenti per importare e archiviare i dati dall'account Twitter dell'organizzazione. 
 
 - Per l'organizzazione è necessario un account Twitter. Quando si configura il connettore, è necessario accedere a questo account.
 
@@ -42,11 +42,11 @@ Prima di poter impostare e configurare un connettore di esempio nel centro sicur
     - [Iscriversi a una sottoscrizione di Azure pay-as-you-go](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > La [sottoscrizione gratuita di Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclusa nell'abbonamento a Office 365 non supporta i connettori di esempio nel centro sicurezza e conformità di &.
+    > La [sottoscrizione gratuita di Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) inclusa nell'abbonamento a Office 365 non supporta i connettori di esempio nel centro sicurezza & conformità.
 
 - L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta.
 
-- L'utente che configura il connettore personalizzato nella conformità & sicurezza (al passaggio 7) deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+- All'utente che configura il connettore personalizzato nella sicurezza & conformità (al passaggio 7) deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Passaggio 1: scaricare il pacchetto di app del connettore precompilato da GitHub
 
@@ -54,11 +54,11 @@ Il primo passaggio consiste nel scaricare il codice sorgente per l'app del conne
 
 1. Accedere a [questo sito GitHub](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases). 
 2. Nella versione più recente, fare clic sul file **SampleConnector. zip** .
-3. Salvare il file ZIP in un percorso del computer locale. Il file zip verrà caricato in Azure nel passaggio 4.
+3. Salvare il file ZIP in un percorso del computer locale. È possibile caricare il file zip in Azure nel passaggio 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Passaggio 2: creare un'app in Azure Active Directory
 
-Il passaggio successivo consiste nel registrare una nuova app in Azure Active Directory (AAD). Questa applicazione corrisponderà alla risorsa app Web che verrà implementata nel passaggio 4 per il connettore Twitter. 
+Il passaggio successivo consiste nel registrare una nuova app in Azure Active Directory (AAD). Questa applicazione corrisponde alla risorsa Web App implementata nel passaggio 4 per il connettore Twitter. 
 
 Per istruzioni dettagliate, vedere [passaggio 2: creare un'app in Azure Active Directory](deploy-twitter-connector.md#step-2-create-an-app-in-azure-active-directory).
 
@@ -71,11 +71,11 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-3-create-an-azure-storage-account"></a>Passaggio 3: creare un account di archiviazione di Azure
 
-Il connettore Twitter distribuito per l'organizzazione caricherà gli elementi da Twitter nel percorso di archiviazione di Azure creato in questo passaggio. Dopo aver creato un connettore personalizzato nel centro sicurezza & Compliance (al passaggio 7), il servizio di importazione di Office 365 copierà i dati di Twitter dal percorso di archiviazione di Azure a una cassetta postale in Office 365. Come illustrato in precedenza nella [](#prerequisites-for-setting-up-a-connector-for-twitter) sezione Prerequisites, è necessario disporre di una sottoscrizione di Azure valida per creare un account di archiviazione di Azure.
+Il connettore Twitter distribuito per l'organizzazione carica gli elementi da Twitter nel percorso di archiviazione di Azure creato in questo passaggio. Dopo aver creato un connettore personalizzato nel centro sicurezza & Compliance (al passaggio 7), il servizio di importazione di Office 365 copierà i dati di Twitter dal percorso di archiviazione di Azure a una cassetta postale in Office 365. Come illustrato in precedenza nella [](#prerequisites-for-setting-up-a-connector-for-twitter) sezione Prerequisites, è necessario disporre di una sottoscrizione di Azure valida per creare un account di archiviazione di Azure.
 
 Per istruzioni dettagliate, vedere [passaggio 3: creare un account di archiviazione di Azure](deploy-twitter-connector.md#step-3-create-an-azure-storage-account).
 
-Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate) si salverà l'URI della stringa di connessione generato. Questa stringa verrà utilizzata quando si crea una risorsa Web App in Azure nel passaggio 4.
+Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate) è possibile salvare l'URI della stringa di connessione generato. Questa stringa viene utilizzata quando si crea una risorsa Web App in Azure nel passaggio 4.
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>Passaggio 4: creare una risorsa Web App in Azure
 
@@ -85,21 +85,21 @@ Per istruzioni dettagliate, vedere [passaggio 4: creare una nuova risorsa Web Ap
 
 Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate), vengono fornite le informazioni seguenti, che sono state copiate in un file di testo dopo aver completato i passaggi precedenti, durante la creazione della risorsa Web App.
 
-- APISecretKey – si creerà questo segreto durante il completamento di questo passaggio; verrà utilizzato nel passaggio 7.
+- APISecretKey – è possibile creare questo segreto durante il completamento di questo passaggio; viene utilizzato nel passaggio 7.
 - StorageAccountConnectionString: l'URI della stringa di connessione copiato dopo la creazione dell'account di archiviazione di Azure nel passaggio 3.
 - tenantId-l'ID tenant dell'organizzazione di Office 365 copiato dopo aver creato l'app Twitter Connector in Azure Active Directory nel passaggio 2.
 
-Inoltre, si caricherà il file SampleConnector. zip (scaricato nel passaggio 1) in questo passaggio per distribuire il codice sorgente per l'app del connettore Twitter.
+Inoltre, è possibile caricare il file SampleConnector. zip (scaricato nel passaggio 1) in questo passaggio per distribuire il codice sorgente per l'app del connettore Twitter.
 
 Dopo aver completato questo passaggio, assicurarsi di copiare l'URL del servizio app di Azure, https://twitterconnector.azurewebsites.net)ad esempio. È necessario utilizzare questa opzione per completare il passaggio 5, il passaggio 6 e il passaggio 7.
 
 ## <a name="step-5-create-developer-app-on-twitter"></a>Passaggio 5: creare un'app per sviluppatori su Twitter
 
-Il passaggio successivo consiste nel creare e configurare un'app per sviluppatori su Twitter. Il connettore personalizzato creato nel passaggio 7 utilizzerà l'app Twitter per interagire con l'API di Twitter per ottenere i dati dall'account Twitter dell'organizzazione.
+Il passaggio successivo consiste nel creare e configurare un'app per sviluppatori su Twitter. Il connettore personalizzato creato nel passaggio 7 utilizza l'app Twitter per interagire con l'API di Twitter per ottenere i dati dall'account Twitter dell'organizzazione.
 
 Per istruzioni dettagliate, vedere [passaggio 5: creare l'app Twitter](deploy-twitter-connector.md#step-5-create-the-twitter-app).
 
-Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate), le informazioni seguenti vengono salvate in un file di testo. I valori di questi verranno utilizzati per configurare l'app del connettore Twitter nel passaggio 6.
+Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate), salvare le informazioni seguenti in un file di testo. I valori di questi verranno utilizzati per configurare l'app del connettore Twitter nel passaggio 6.
 
 - Chiave API di Twitter
 - Chiave segreta API di Twitter
@@ -108,7 +108,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>Passaggio 6: configurare l'app del connettore Twitter
 
-Il passaggio successivo consiste nell'aggiungere le impostazioni di configurazione all'app del connettore Twitter che è stata caricata quando è stata creata la risorsa Azure Web App nel passaggio 4. Per eseguire questa operazione, passare alla Home page dell'app del connettore e configurarla.
+Il passaggio successivo consiste nell'aggiungere le impostazioni di configurazione all'app del connettore Twitter che è stata caricata quando è stata creata la risorsa Azure Web App nel passaggio 4. A tale scopo, passare alla Home page dell'app del connettore e configurarla.
 
 Per istruzioni dettagliate, vedere [passaggio 6: Configure the Connector Web App](deploy-twitter-connector.md#step-6-configure-the-connector-web-app).
 
@@ -124,7 +124,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Passaggio 7: configurare un connettore personalizzato nel centro sicurezza & Compliance
 
-Il passaggio finale consiste nel configurare il connettore personalizzato nel centro sicurezza & Compliance che importerà i dati dall'account Twitter dell'organizzazione a una cassetta postale specificata in Office 365. Dopo aver completato questo passaggio, il servizio di importazione di Office 365 avvierà il processo di importazione dei dati da Twitter a Office 365. 
+Il passaggio finale consiste nel configurare il connettore personalizzato nel centro sicurezza & Compliance che importa i dati dall'account Twitter dell'organizzazione a una cassetta postale specificata in Office 365. Dopo aver completato questo passaggio, il servizio di importazione di Office 365 avvierà il processo di importazione dei dati da Twitter a Office 365. 
 
 Per istruzioni dettagliate, vedere [passaggio 7: configurare un connettore personalizzato nel centro sicurezza e conformità](deploy-twitter-connector.md#step-7-set-up-a-custom-connector-in-the-security-and-compliance-center). 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156478"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694710"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -31,7 +31,7 @@ Questi criteri possono anche aiutare a superare molte sfide di conformità moder
 
 - Monitoraggio dei tipi di canali di comunicazione crescenti
 - Volume crescente di dati dei messaggi
-- Applicazione di regolamentazione & il rischio di ammende
+- Applicazione di regolamentazione & il rischio di multe
 
 In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Office 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
 
@@ -82,10 +82,15 @@ Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno
 Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi in una o più delle piattaforme di comunicazione seguenti:
 
 - **Posta elettronica di Exchange:** Le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Office 365 sono tutte idonee per la supervisione dei messaggi. I messaggi di posta elettronica e gli allegati che corrispondono alle condizioni dei criteri di supervisione sono immediatamente disponibili per il monitoraggio e i report I tipi di allegati supportati per la supervisione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+
 - **Microsoft teams:** È possibile controllare le comunicazioni chat e gli allegati associati sia nei canali di Microsoft Public che in quelli privati e nelle chat individuali. Chat teams le condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e per i report di supervisione. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
     - **Per la supervisione di teams chat:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
-    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Office 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi di Office 365, accertarsi di aggiungere anche questi nuovi canali e gruppi ai criteri di supervisione.
+    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Office 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi di Office 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di supervisione.
+
+- **Skype for business online:** È possibile controllare le comunicazioni chat e gli allegati associati in Skype for business online. Le chat di Skype for business online che corrispondono alle condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e nei report di supervisione. Le conversazioni di chat sorvegliate vengono provenienti da [precedenti conversazioni salvate in Skype for business online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilizzare la configurazione di gestione dei gruppi seguente per supervisionare le comunicazioni della chat utente in Skype for business online:
+
+    - **Per la supervisione della chat in Skype for business online:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
 
 - **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) per i dati importati nelle cassette postali di Office 365 nell'organizzazione. [Informazioni su come importare i dati di terze parti in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
@@ -134,7 +139,7 @@ Il modello di lingua offensiva attualmente supporta le parole chiave in inglese 
 | **Estremismo** | Espressioni che mirano alla religione e alle ideologie politiche. |
 | **Alterare** | Espressioni per le quali il significato o la pronuncia è identica a quella di un altro termine più offensivo. |
 | **Lingua provocatoria** | Espressioni che potenzialmente causano rabbia o violenza. |
-| **Tabù** | Espressioni che in genere non sono appropriate nelle comunicazioni educate della società. |
+| **Tabù** | Espressioni generalmente inappropriate nelle comunicazioni educate della società. |
 | **Lingua non affinata** | Espressioni che non dispongono di maniere educate e che sono potenzialmente dure e maleducate. |
 
 #### <a name="conditional-settings"></a>Impostazioni condizionali
@@ -145,8 +150,8 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 |**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
-| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio ricevuto, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso viene applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
-| **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Per applicare il criterio quando alcuni domini sono inclusi o esclusi in un messaggio inviato, immettere ogni dominio e separare più domini con una virgola. Ogni dominio immesso verrà applicato separatamente (solo uno di questi domini deve richiedere il criterio da applicare al messaggio). |
+| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica provenienti da un dominio specifico ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare due condizioni: <br> - **Viene ricevuto un messaggio da una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene ricevuto da nessuno di questi domini** condizione che escluda l'indirizzo di posta elettronica ("newsletter@contoso.com"). |
+| **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, per applicare il criterio al messaggio è necessario un solo dominio o un indirizzo di posta elettronica. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica inviati a un dominio specifico, ma si desidera escludere quelli inviati che non richiedono la revisione, è necessario configurare due condizioni: <br> -Un **messaggio viene inviato a una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene inviato a una di queste condizioni di dominio** che escluda l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
 | **Il messaggio è classificato con una qualsiasi di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of](https://docs.microsoft.com/office365/securitycompliance/labels)retention labels.|
 | **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
 | **L'allegato contiene una o più delle seguenti parole**  <br><br> **L'allegato contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga affinché il criterio venga applicato all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
@@ -159,7 +164,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 ##### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
-Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che siano soddisfatte per l'applicazione del criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario creare un criterio che si applica se un messaggio contiene la parola "Trade" ed è superiore a 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
+Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
   
 - Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
 
@@ -171,17 +176,21 @@ Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme
 
 Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di supervisione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile immettere **100%** in un criterio di supervisione.
 
-## <a name="monitor--manage"></a>Monitorare la gestione di &
+## <a name="monitor--manage"></a>Monitorare & gestire
 
-È facile monitorare i risultati dei criteri di supervisione e applicare un tag di risoluzione. È possibile visualizzare rapidamente lo stato degli elementi recensiti, degli utenti e dei gruppi in supervisione, nonché gli utenti e i gruppi designati come revisori.
+È facile monitorare i risultati dei criteri di supervisione e applicare un tag di risoluzione. È possibile visualizzare rapidamente:
+
+- Lo stato degli elementi recensiti
+- Utenti e gruppi sotto sorveglianza
+- Utenti e gruppi designati come revisori
 
 ### <a name="supervision-policy-dashboard"></a>Dashboard criteri di supervisione
 
-Utilizzare il dashboard dei criteri di supervisione per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, intervenire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro **** > conformità al momento dell' > **apertura**del*criterio personalizzato*.
+Utilizzare il dashboard dei criteri di supervisione per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, agire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro **** > conformità al momento dell' > **apertura**del*criterio personalizzato*.
 
 #### <a name="dashboard-home"></a>Home dashboard
 
-La **Home** page del dashboard contiene diverse sezioni che consentono di intervenire rapidamente sui criteri di supervisione. Qui è possibile:
+Nella **Home** page del dashboard sono disponibili diverse sezioni che consentono di agire rapidamente sui criteri di supervisione. Qui è possibile:
 
 - Esaminare rapidamente le evidenziazioni in sospeso e risolte per la settimana
 - Visualizzare un elenco degli utenti controllati e dei gruppi controllati per il criterio selezionato
@@ -195,7 +204,7 @@ La scheda **Revisione** è la posizione in cui i revisori classificano e risolvo
 - Filtrare in base agli elementi in sospeso, conformi, non conformi e discutibili.
 - Contrassegnare un singolo elemento come conforme, non conforme o discutibile. È inoltre possibile registrare un commento con l'elemento per chiarire l'azione di tagging eseguita.
 - I tag di massa più elementi sono conformi, non conformi o discutibili. È inoltre possibile registrare un commento con più elementi per chiarire l'azione di tagging eseguita.
-- Visualizzare la cronologia del tagging per un singolo elemento. Sono inclusi gli utenti che hanno risolto l'elemento, la data e l'ora dell'azione, il tag di risoluzione e tutti i commenti inclusi.
+- Visualizzare la cronologia del tagging per un singolo elemento. Include gli utenti che hanno risolto l'elemento, la data e l'ora dell'azione, il tag di risoluzione e tutti i commenti inclusi.
 - Riclassificare gli elementi precedentemente recensiti come conformi, non conformi o discutibili. È inoltre possibile registrare un commento con elementi singoli o multipli per chiarire l'azione di riclassificazione eseguita.
 
 #### <a name="resolved-items-tab"></a>Scheda elementi risolti
@@ -215,8 +224,8 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
 
 ### <a name="view-the-supervision-report"></a>Visualizzare il report di supervisione
 
-1. Accedere al [centro conformità](https://compliance.microsoft.com) con le credenziali di un account di amministratore dell'organizzazione che disponga delle autorizzazioni per visualizzare i report di supervisione.
-2. Accedere al **Dashboard** dei **report** \> o **** alla supervisione per visualizzare il widget report di supervisione con un riepilogo delle attività correnti del criterio di supervisione.
+1. Accedere al [centro conformità](https://compliance.microsoft.com) con le credenziali per un account di amministratore con le autorizzazioni per visualizzare i report di supervisione.
+2. Accedere al **Dashboard** dei **report** \> o **** alla supervisione per visualizzare il widget report di supervisione per un riepilogo delle attività correnti sui criteri di supervisione.
 3. Selezionare il **** widget di supervisione per aprire la pagina del rapporto dettagliato.
 
 > [!NOTE]
@@ -237,7 +246,7 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 |:-----|:-----|
 | **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365.
 | **Conformi** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi richiedono ancora una soluzione. |
-| **Ambigui** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Questo funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
+| **Ambigui** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
 | **Non conforme (attivo)** | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |
 | **Non conforme (risolto)** | Il numero di messaggi di posta elettronica non conformi che i revisori hanno esaminato e risolto. |
 | **Hit Policy** | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti che corrispondono a una o più condizioni definite in un criterio di supervisione |
@@ -245,7 +254,7 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 | **Risolto** | Il numero totale di messaggi provenienti da origini dati di Exchange, teams e di terze parti classificate come **risolte**|
 
 > [!NOTE]
-> Prima che vengano visualizzati in questo report, è necessario eseguire il provisioning di criteri di supervisione. Inoltre, se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
+> I criteri di supervisione devono essere sottoposto a provisioning prima che vengano visualizzati nei report. Se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
 
 ## <a name="audit"></a>Audit
 
@@ -258,7 +267,6 @@ Le attività dei criteri di supervisione seguenti sono controllate e rese dispon
 | **Creare un criterio** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
 | **Modificare un criterio** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
 | **Eliminare un criterio** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| **Visualizzazione di un criterio** | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 
@@ -272,4 +280,4 @@ Oltre alle informazioni fornite nei report e nei registri di supervisione, è an
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-Per avviare la configurazione dei criteri di supervisione per l'organizzazione, vedere [configurare i criteri](configure-supervision-policies.md)di supervisione.
+Per configurare i criteri di supervisione per l'organizzazione, vedere [configurare i criteri](configure-supervision-policies.md)di supervisione.

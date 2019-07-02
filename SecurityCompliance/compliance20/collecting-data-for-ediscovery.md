@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151888"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703839"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Raccogliere i dati per un caso in Advanced eDiscovery
 
@@ -34,6 +34,7 @@ Se si fa clic su **nuova ricerca** nella scheda **ricerche** , verrà avviata un
 Dopo la creazione di una ricerca, viene visualizzata una pagina a comparsa con dettagli. Si noti che i pulsanti **statistiche** e **Anteprima** inizialmente sono inattivati perché la ricerca non è ancora stata completata. È possibile tenere conto dello stato di avanzamento della ricerca nella scheda **ricerche** .
 
 ## <a name="view-search-results-and-statistics"></a>Visualizzare i risultati della ricerca e le statistiche
+
 Sono disponibili due componenti di una ricerca di contenuto: statistiche (stime) e anteprima. Quando ognuno di questi componenti è stato completato, verrà visualizzato lo stato mostrato nelle colonne corrispondenti nella scheda **ricerche** che variano da da **inviato** a **in corso** a **completato**.
 
 Una volta completata la stima della ricerca, fare clic sulla pagina di ricerca per visualizzare la pagina a comparsa, in cui vengono visualizzate le statistiche di alto livello sui risultati della ricerca. A questo punto, il pulsante **statistiche** sarà attivo. È possibile fare clic su di esso per visualizzare le statistiche di ricerca, ad esempio:
