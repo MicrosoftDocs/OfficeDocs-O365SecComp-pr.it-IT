@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilizzare l'editor ricerche in blocco nel centro sicurezza e conformità di Office 365 o Microsoft 365 per modificare rapidamente i percorsi di query e di contenuto per una o più ricerche di contenuto.
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152218"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435116"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifica in blocco delle ricerche di contenuto
 
@@ -92,7 +92,7 @@ Di seguito sono riportate alcune indicazioni per la modifica delle posizioni di 
 - È possibile aggiungere più percorsi di contenuto a una o più ricerche copiando più righe da un file di testo o da un file di Excel e quindi incollando tali posizioni in una sezione della pagina **percorsi** . Dopo aver aggiunto nuove posizioni, assicurarsi di selezionare la casella di controllo per ogni ricerca per la quale si desidera aggiungere il percorso. 
     
     > [!TIP]
-    > Per generare un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione, eseguire il comando di PowerShell nel passaggio 2 in [use content search per effettuare una ricerca nella cassetta postale e nel sito di OneDrive for business per un elenco di utenti](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). In alternativa, utilizzare lo script in [creare un elenco di tutte le posizioni di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) per generare un elenco di tutti i siti di OneDrive for business nell'organizzazione. Tenere presente che è necessario aggiungere l'URL per il dominio del sito Web di organization's (ad esempio, https://contoso-my.sharepoint.com) per i siti di OneDrive for business creati dallo script. Dopo aver ricevuto un elenco di indirizzi di posta elettronica o siti di OneDrive for business, è possibile copiarli e incollarli nella pagina **percorsi** nell'editor ricerche in blocco. 
+    > Per generare un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione, eseguire il comando PowerShell nel passaggio 2 del [passaggio 2: generazione di un elenco di utenti](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users). In alternativa, seguire la procedura illustrata in [ottenere un elenco di tutti gli URL di OneDrive utente nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls) per generare un elenco di tutti i siti di OneDrive for business nell'organizzazione. Tenere presente che è necessario aggiungere l'URL per il dominio del sito Web dell'organizzazione (ad esempio, https://contoso-my.sharepoint.com) per i siti di OneDrive for business creati dallo script. Dopo aver ricevuto un elenco di indirizzi di posta elettronica o siti di OneDrive for business, è possibile copiarli e incollarli nella pagina **percorsi** nell'editor ricerche in blocco. 
   
 - Dopo aver fatto clic su **Salva** per salvare le modifiche apportate all'editor ricerche in blocco, l'indirizzo di posta elettronica per le cassette postali aggiunte a una ricerca verrà convalidato. Se l'indirizzo di posta elettronica non esiste, viene visualizzato un messaggio di errore che indica che la cassetta postale non può essere individuata. Si noti che gli URL dei siti non vengono convalidati. 
   

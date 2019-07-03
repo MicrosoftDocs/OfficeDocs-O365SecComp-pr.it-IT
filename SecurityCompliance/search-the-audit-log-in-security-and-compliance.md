@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & conformità per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 656bb3a82c11308e8596c0eb71972ead5dfed620
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113290"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435226"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance
 
@@ -257,7 +257,7 @@ Per filtrare i risultati:
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Passaggio 4: esportare i risultati della ricerca in un file
 
-È possibile esportare i risultati di una ricerca nel registro di controllo in un file con valori delimitati da virgole (CSV) nel computer locale. È possibile aprire il file in Microsoft Excel e utilizzare funzionalità quali la ricerca, l'ordinamento, il filtraggio e la suddivisione di una singola colonna (che contiene celle a più valori) in più colonne.
+È possibile esportare i risultati di una ricerca nel registro di controllo in un file con valori delimitati da virgole (CSV) nel computer locale. È possibile aprire il file in Microsoft Excel e utilizzare funzionalità quali la ricerca, l'ordinamento, il filtraggio e la suddivisione di una singola colonna (che contiene più proprietà) in più colonne.
   
 1. Eseguire una ricerca nel registro di controllo e quindi rivedere i criteri di ricerca fino a quando non si hanno i risultati desiderati.
     
@@ -265,27 +265,24 @@ Per filtrare i risultati:
     
      - **Save Loaded results** -scegliere questa opzione per esportare solo le voci visualizzate in **results** nella pagina di **ricerca del registro di controllo** . Il file CSV scaricato contiene le stesse colonne (e i dati) visualizzati nella pagina (data, utente, attività, elemento e dettagli). Una colonna aggiuntiva (denominata **more**) è inclusa nel file CSV che contiene altre informazioni dalla voce del registro di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina di **ricerca del registro di controllo** , vengono esportate al massimo 5.000 voci. 
     
-     - **Download All Results** -scegliere questa opzione per esportare tutte le voci dal registro di controllo di Office 365 che soddisfano i criteri di ricerca. Per un set di risultati di ricerca di grandi dimensioni, scegliere questa opzione per scaricare tutte le voci dal registro di controllo oltre ai risultati di 5.000 che possono essere visualizzati nella pagina di **ricerca del registro di controllo** . Questa opzione consente di scaricare i dati non elaborati dal registro di controllo in un file CSV e contiene informazioni aggiuntive dalla voce del registro di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione, potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato se si sceglie l'opzione altro.
+     - **Download All Results** -scegliere questa opzione per esportare tutte le voci dal registro di controllo di Office 365 che soddisfano i criteri di ricerca. Per un set di risultati di ricerca di grandi dimensioni, scegliere questa opzione per scaricare tutte le voci dal registro di controllo, oltre ai record di controllo 5.000 che possono essere visualizzati nella pagina di **ricerca del registro di controllo** . Questa opzione consente di scaricare i dati non elaborati dal registro di controllo in un file CSV e contiene informazioni aggiuntive dalla voce del registro di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione, potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato se si sceglie l'opzione altro.
     
        > [!IMPORTANT]
        > È possibile scaricare un massimo di 50.000 voci in un file CSV da una singola ricerca del registro di controllo. Se 50.000 voci vengono scaricate nel file CSV, è probabile che siano presenti più di 50.000 eventi che soddisfano i criteri di ricerca. Per esportare più di questo limite, provare a utilizzare un intervallo di date per ridurre il numero di voci del registro di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date inferiori per esportare più di 50.000 voci. 
   
 3. Dopo aver selezionato un'opzione di esportazione, nella parte inferiore della finestra viene visualizzato un messaggio in cui viene richiesto di aprire il file CSV, salvarlo nella cartella Downloads o salvarlo in una cartella specifica.
+ 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Ulteriori informazioni sull'esportazione e sulla visualizzazione dei risultati di ricerca del registro di controllo
 
-  
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Ulteriori informazioni sull'esportazione dei risultati di ricerca del registro di controllo
-
-- L'opzione **Download All Results** consente di scaricare i dati non elaborati dal registro di controllo di Office 365 in un file CSV. Questo file contiene nomi di colonna diversi (CreationDate, UserIds, Operation, AuditData) rispetto al file scaricato se si seleziona l'opzione **Salva risultati caricati** . È anche possibile che i valori dei due file CSV diversi per la stessa attività siano diversi. Ad esempio, l'attività nella colonna **azione** nel file CSV e può avere un valore diverso da quello della versione "facile da usare" che viene visualizzata nella colonna **attività** nella pagina di **ricerca del registro di controllo** . ad esempio, MailboxLogin vs utente ha eseguito l'accesso alla cassetta postale.
-    
-- Se si scaricano tutti i risultati, il file CSV contiene una colonna denominata **AuditData**, che contiene informazioni aggiuntive su ogni evento. Come indicato in precedenza, questa colonna contiene una proprietà multivalore per più proprietà del record del registro di controllo. Ognuna delle coppie **proprietà: valore** di questa proprietà multivalore è separata da una virgola. È possibile utilizzare la query di alimentazione in Excel per dividere la colonna in più colonne in modo che ogni proprietà disponga di una colonna. In questo modo si consente di ordinare e filtrare una o più di queste proprietà. Per informazioni su come eseguire questa operazione, vedere la sezione "dividere una colonna per delimitatore" in [dividere una colonna di testo (Power query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Se si scaricano tutti i risultati della ricerca, il file CSV contiene una colonna denominata **AuditData**, che contiene informazioni aggiuntive su ogni evento. I dati contenuti in questa colonna sono costituiti da un oggetto JSON che contiene più proprietà del record del registro di controllo. Ogni coppia *proprietà: valore* nell'oggetto JSON è separata da una virgola. È possibile utilizzare lo strumento di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere la colonna **AuditData** in più colonne in modo che ogni proprietà dell'oggetto JSON disponga di una propria colonna. In questo modo si consente di ordinare e filtrare una o più di queste proprietà. Per istruzioni dettagliate sull'utilizzo dell'editor di query di alimentazione per trasformare l'oggetto JSON, vedere [esportazione, configurazione e visualizzazione dei record del registro di controllo](export-view-audit-log-records.md).
     
     Dopo aver suddiviso la colonna **AuditData** , è possibile filtrare nella colonna **operazioni** per visualizzare le proprietà dettagliate per un tipo specifico di attività. 
     
-- È presente un limite di 3.060 caratteri per i dati visualizzati nel campo **AuditData** per un record di controllo. Se il limite di 3.060 caratteri viene superato, i dati in questo campo vengono troncati. 
-    
+- L'opzione **Download All Results** consente di scaricare i dati non elaborati dal registro di controllo di Office 365 in un file CSV. Questo file contiene nomi di colonna diversi (CreationDate, UserIds, Operation, AuditData) rispetto al file scaricato se si seleziona l'opzione **Salva risultati caricati** . È anche possibile che i valori dei due file CSV diversi per la stessa attività siano diversi. Ad esempio, l'attività nella colonna **azione** nel file CSV e può avere un valore diverso da quello del nome "facile da usare" visualizzato nella colonna **attività** nella pagina **Ricerca log di controllo** . ad esempio, MailboxLogin vs utente ha eseguito l'accesso alla cassetta postale.
+
 - Quando si scaricano tutti i risultati da una query di ricerca che contiene eventi provenienti da diversi servizi di Office 365, la colonna **AuditData** nel file CSV contiene proprietà diverse a seconda del servizio in cui è stata eseguita l'azione. Ad esempio, le voci dei log di controllo di Exchange e di Azure AD includono una proprietà denominata **ResultStatus** che indica se l'azione ha avuto esito positivo o meno. Questa proprietà non è inclusa per gli eventi in SharePoint. Analogamente, gli eventi di SharePoint dispongono di una proprietà che identifica l'URL del sito per attività correlate a file e cartelle. Per attenuare questo comportamento, prendere in considerazione l'utilizzo di ricerche diverse per esportare i risultati per le attività da un singolo servizio. 
     
-    Per una descrizione delle proprietà elencate nella colonna **AuditData** nel file CSV quando si scaricano tutti i risultati e il servizio a cui si applica ognuno, vedere [proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
+    Per una descrizione di molte delle proprietà elencate nella colonna **AuditData** nel file CSV quando si scaricano tutti i risultati e il servizio a cui è applicato, vedere [proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Attività controllate
 

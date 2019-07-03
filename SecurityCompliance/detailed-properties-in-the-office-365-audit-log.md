@@ -15,21 +15,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Descrizioni di proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+description: Descrizioni delle proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253935"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435156"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
 Quando si esportano i risultati di una ricerca nel registro di controllo dal centro sicurezza & Compliance, è possibile scaricare tutti i risultati che soddisfano i criteri di ricerca. Se si esegue questa operazione selezionando **Esporta risultati** \> , **scaricare tutti i risultati** nella pagina di ricerca del registro di **controllo** . Per ulteriori informazioni, vedere [Search the audit log in the Office 365](search-the-audit-log-in-security-and-compliance.md).
   
- Quando si esporta tutti i risultati di una ricerca nel registro di controllo, i dati non elaborati del log di controllo unificato di Office 365 vengono copiati in un file CSV (comma separated value) che viene scaricato nel computer locale. Questo file contiene informazioni aggiuntive di ogni record di controllo in una colonna denominata **AuditData**. Questa colonna contiene una proprietà multivalore per più proprietà del record del registro di controllo. Ognuna delle coppie **proprietà: valore** di questa proprietà multivalore è separata da una virgola. 
+ Quando si esporta tutti i risultati di una ricerca nel registro di controllo, i dati non elaborati del log di controllo unificato di Office 365 vengono copiati in un file con valori delimitati da virgole (CSV) che viene scaricato nel computer locale. Questo file contiene informazioni aggiuntive di ogni record di controllo in una colonna denominata **AuditData**. Questa colonna contiene una proprietà multivalore per più proprietà del record del registro di controllo. Ognuna delle coppie **proprietà: valore** di questa proprietà multivalore è separata da una virgola. 
   
-Nella tabella seguente vengono descritte le proprietà incluse, in base al servizio Office 365 in cui si verifica un evento, nella colonna **AuditData** con più proprietà. Il **servizio Office 365 con questa** colonna di proprietà indica il servizio e il tipo di attività (utente o amministratore) che include la proprietà. Per informazioni più dettagliate su queste proprietà o su proprietà che potrebbero non essere elencate in questo argomento, vedere [schema API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+Nella tabella seguente vengono descritte le proprietà incluse (a seconda del servizio Office 365 in cui si verifica un evento) nella colonna **AuditData** a più proprietà. Il **servizio Office 365 con questa** colonna di proprietà indica il servizio e il tipo di attività (utente o amministratore) che include la proprietà. Per informazioni più dettagliate su queste proprietà o su proprietà che potrebbero non essere elencate in questo argomento, vedere [schema API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
 > È possibile utilizzare la query di alimentazione in Excel per dividere la colonna in più colonne in modo che ogni proprietà disponga di una colonna. In questo modo si consente di ordinare e filtrare una o più di queste proprietà. Per informazioni su come eseguire questa operazione, vedere la sezione "dividere una colonna per delimitatore" in [dividere una colonna di testo (Power query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
@@ -49,7 +49,7 @@ Nella tabella seguente vengono descritte le proprietà incluse, in base al servi
 |CreationTime|Data e ora in formato UTC (Coordinated Universal Time) quando l'utente ha eseguito l'attività.|Tutto|
 |DestinationFileExtension|L'estensione di un file copiato o spostato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
 |NomefileDestinazione|Il nome del file viene copiato o spostato. Questa proprietà viene visualizzata solo per le azioni filecopiate e filemoved.|SharePoint|
-|DestinationRelativeUrl|URL della cartella di destinazione in cui un file viene copiato o spostato. La combinazione dei valori per le proprietà **SiteUrl**, **DestinationRelativeURL**e **NomefileDestinazione** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file copiato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
+|DestinationRelativeUrl|URL della cartella di destinazione in cui un file viene copiato o spostato. La combinazione dei valori per **SiteUrl**, **DestinationRelativeURL**e la proprietà **NomefileDestinazione** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file copiato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
 |EventSource|Indica che si è verificato un evento in SharePoint. I valori possibili sono **SharePoint** e **ObjectModel**.|SharePoint|
 |ExternalAccess|Per l'attività di amministrazione di Exchange, specifica se il cmdlet è stato eseguito da un utente dell'organizzazione, dal personale del datacenter Microsoft o da un account di servizio di Datacenter o da un amministratore delegato. Il valore **false** indica che il cmdlet è stato eseguito da un utente dell'organizzazione. Il valore **true** indica che il cmdlet è stato eseguito dal personale del datacenter, da un account di servizio di Datacenter o da un amministratore delegato.  <br/> Per attività Cassetta postale di Exchange, specifica se è stato eseguito l'accesso a una cassetta postale da parte di un utente esterno all'organizzazione.|Exchange|
 |ExtendedProperties|Proprietà estese per un evento di Azure Active Directory.|Azure Active Directory|
@@ -75,9 +75,9 @@ Nella tabella seguente vengono descritte le proprietà incluse, in base al servi
 |SiteUrl|URL del sito in cui si trova il file o la cartella a cui è stato eseguito l'accesso dall'utente.|SharePoint|
 |SourceFileExtension|L'estensione di file del file a cui è stato effettuato l'accesso dall'utente. Questa proprietà è vuota se l'oggetto a cui si accede è una cartella.|SharePoint|
 |SourceFileName|Nome del file o della cartella a cui è stato effettuato l'accesso dall'utente.|SharePoint|
-|SourceRelativeUrl|URL della cartella che contiene il file a cui è stato eseguito l'accesso dall'utente. La combinazione dei valori per le proprietà **SiteUrl**, **SourceRelativeURL**e **sourceFileName** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file a cui è stato eseguito l'accesso dall'utente.|SharePoint|
+|SourceRelativeUrl|URL della cartella che contiene il file a cui è stato eseguito l'accesso dall'utente. La combinazione dei valori per **SiteUrl**, **SourceRelativeURL**e la proprietà **sourceFileName** è identica al valore della proprietà **ObjectID** , che corrisponde al nome del percorso completo del file a cui è stato eseguito l'accesso dall'utente.|SharePoint|
 |Oggetto|La riga dell'oggetto del messaggio a cui è stato effettuato l'accesso.|Exchange (attività delle cassette postali)|
-|TabType| Il tipo di Scheda aggiunta, rimossa o aggiornata in un team. I valori possibili per questa proprietà sono:  <br/><br/> **Excelpin** -scheda di Excel.  <br/> **Extension** : tutte le app di terze parti e di terzi; quali pianificazione, VSTS e maschere.  <br/> **Note** -scheda OneNote.  <br/> **Pdfpin** -scheda PDF.  <br/> **Powerbi** -una scheda Powerbi.  <br/> **Powerpointpin** -una scheda di PowerPoint.  <br/> **Sharepointfiles** -una scheda di SharePoint.  <br/> **Pagina** Web-scheda sito bloccato.  <br/> **Wiki-Tab** -una scheda wiki.  <br/> **Wordpin** -una scheda di Word.|Microsoft Teams|
+|TabType| Il tipo di Scheda aggiunta, rimossa o aggiornata in un team. I valori possibili per questa proprietà sono:  <br/><br/> **Excel pin** -una scheda di Excel.  <br/> **Extension** : tutte le app di terze parti e di terzi; come la pianificazione delle classi, VSTS e maschere.  <br/> **Note** -scheda OneNote.  <br/> **Pdfpin** -scheda PDF.  <br/> **Powerbi** -una scheda Powerbi.  <br/> **Powerpointpin** -una scheda di PowerPoint.  <br/> **Sharepointfiles** -una scheda di SharePoint.  <br/> **Pagina** Web-scheda sito bloccato.  <br/> **Wiki-Tab** -una scheda wiki.  <br/> **Wordpin** -una scheda di Word.|Microsoft Teams|
 |Destinazione|L'utente a cui è stata eseguita l'azione (identificata nella proprietà **Operation** ). Ad esempio, se un utente guest viene aggiunto a SharePoint o a un team Microsoft, tale utente verrebbe elencato in questa proprietà.|Azure Active Directory|
 |TeamGuid|ID di un team di Microsoft teams.|Microsoft Teams|
 |TeamName|Nome di un team in Microsoft teams.|Microsoft Teams|
