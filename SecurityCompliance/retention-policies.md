@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o solo a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131396"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435256"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -99,7 +99,7 @@ Un processo verifica periodicamente gli elementi nella cartella Elementi riprist
   
 Quando un utente prova a modificare determinate proprietà di un elemento della cassetta postale, ad esempio, l'oggetto, il corpo, gli allegati, i mittenti, i destinatari o la data di invio o di ricezione di un messaggio, una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questa procedura si applica anche alle modifiche successive. Al termine del periodo di conservazione, le copie presenti nella cartella Elementi ripristinabili vengono eliminate definitivamente.
   
-Se un utente lascia l'organizzazione e la sua cassetta postale è inclusa nei criteri di conservazione, la cassetta postale diventa inattiva quando viene eliminato l'account di Office 365 dell'utente. Il contenuto di una cassetta postale inattiva è comunque soggetto ai criteri di conservazione applicati alla cassetta postale prima della sua disattivazione ed è disponibile per una ricerca eDiscovery. Per ulteriori informazioni, vedere [Cassette postali inattive in Exchange Online](https://go.microsoft.com/fwlink/?linkid=846909).
+Se un utente lascia l'organizzazione e la sua cassetta postale è inclusa nei criteri di conservazione, la cassetta postale diventa inattiva quando viene eliminato l'account di Office 365 dell'utente. Il contenuto di una cassetta postale inattiva è comunque soggetto ai criteri di conservazione applicati alla cassetta postale prima della sua disattivazione ed è disponibile per una ricerca eDiscovery. Per ulteriori informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md).
   
 ![Diagramma del flusso di conservazione nelle cartelle di posta elettronica e pubblica](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
   
