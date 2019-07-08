@@ -30,7 +30,7 @@
 ### [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)
 ### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 
-## [Prevenzione della perdita dei dati](data-loss-prevention-policies.md)
+## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 ### [DLP e Microsoft Teams](dlp-microsoft-teams.md)
 ### [Guarda una panoramica completa sulla prevenzione della perdita dei dati](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Configurare Prevenzione della perdita dei dati
@@ -103,6 +103,7 @@
 #### [Usare un connettore di esempio per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usare un connettore di esempio per archiviare i dati di Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurare un connettore per archiviare i dati di LinkedIn](archive-linkedin-data.md)
+#### [Configurare un connettore per archiviare i dati di Instant Bloomberg](archive-instant-bloomberg-data.md)
 #### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
 ## Archiviare i dati
 ### [Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [Usare un connettore di esempio per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usare un connettore di esempio per archiviare i dati di Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurare un connettore per archiviare i dati di LinkedIn](archive-linkedin-data.md)
+#### [Configurare un connettore per archiviare i dati di Instant Bloomberg](archive-instant-bloomberg-data.md)
 #### [Collaborare con un partner per archiviare i dati di terze parti](work-with-partner-to-archive-third-party-data.md)
 ## Archiviare i dati
 ### [Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [Abilitare o disabilitare la ricerca dei log di controllo](turn-audit-log-search-on-or-off.md)
 ## [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md)
 ## [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md)
+## [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md)
 ## [Usare il log di controllo per risolvere i problemi degli scenari comuni](auditing-troubleshooting-scenarios.md)
 ## [Usare il controllo di condivisione nel log di controllo](use-sharing-auditing.md)
 ## [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
