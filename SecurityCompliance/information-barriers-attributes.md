@@ -3,7 +3,7 @@ title: Attributi per i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare questo articolo come riferimento per i vari attributi che è possibile utilizzare nei criteri di barriera delle informazioni.
-ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
-ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
+ms.openlocfilehash: 1e2e183da350308a57fa5d627b4867b9b3d30cee
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "35462407"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587065"
 ---
-# <a name="attributes-for-information-barrier-policies-preview"></a>Attributi per i criteri di barriera delle informazioni (anteprima)
+# <a name="attributes-for-information-barrier-policies"></a>Attributi per i criteri di barriera delle informazioni
 
 Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. Una volta definiti i segmenti, tali segmenti possono essere utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti). 
 
 In questo articolo viene descritto come utilizzare gli attributi con barriere informative e viene fornito un elenco degli attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere informative, vedere le risorse seguenti:
-- [Barriere informative (anteprima)](information-barriers.md)
-- [Definire i criteri per le barriere informative in Microsoft Teams (anteprima)](information-barriers-policies.md)
-- [Modificare (o rimuovere) criteri di barriera delle informazioni (anteprima)](information-barriers-edit-segments-policies.md.md)
+- [Barriere informative](information-barriers.md)
+- [Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
+- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Come utilizzare gli attributi nei criteri di barriere informative
 
@@ -93,11 +93,11 @@ Nella tabella seguente sono elencati gli attributi che è possibile utilizzare c
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Definire i criteri per le barriere informative in Microsoft Teams (anteprima)](information-barriers-policies.md)
+[Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
 
-[Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)](information-barriers-troubleshooting.md)
+[Risoluzione dei problemi di barriere informative](information-barriers-troubleshooting.md)
 
-[Barriere informative (anteprima)](information-barriers.md)
+[Barriere informative](information-barriers.md)
 
 
 

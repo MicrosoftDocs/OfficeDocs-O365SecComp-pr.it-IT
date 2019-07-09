@@ -3,7 +3,7 @@ title: Risoluzione dei problemi di barriere informative
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare questo articolo come guida per la risoluzione dei problemi relativi alle barriere informative.
-ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394301"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587055"
 ---
-# <a name="troubleshooting-information-barriers-preview"></a>Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)
+# <a name="troubleshooting-information-barriers"></a>Risoluzione dei problemi di barriere informative
 
-[Barriere informative (Preview)](information-barriers.md) può aiutare l'organizzazione a rimanere conforme ai requisiti legali e ai regolamenti di settore. Ad esempio, con barriere informative, è possibile limitare le comunicazioni tra gruppi specifici di utenti per evitare conflitti di interesse o altri problemi. Per ulteriori informazioni su come configurare le barriere informative, vedere [define Policies for Information barriers (Preview)](information-barriers-policies.md).
+Gli [ostacoli alle informazioni](information-barriers.md) consentono all'organizzazione di rimanere conforme ai requisiti legali e ai regolamenti di settore. Ad esempio, con barriere informative, è possibile limitare le comunicazioni tra gruppi specifici di utenti per evitare conflitti di interesse o altri problemi. Per ulteriori informazioni su come configurare le barriere informative, vedere [define Policies for Information barriers](information-barriers-policies.md).
 
 Nel caso in cui si verifichino problemi imprevisti dopo che sono state apportate barriere alle informazioni, è possibile eseguire alcuni passaggi per risolvere questi problemi. Utilizzare questo articolo come guida.
 
@@ -171,9 +171,9 @@ Assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](h
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Definire i criteri per le barriere informative in Microsoft Teams (anteprima)](information-barriers-policies.md)
+[Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
 
-[Barriere informative (anteprima)](information-barriers.md)
+[Barriere informative](information-barriers.md)
 
 
 

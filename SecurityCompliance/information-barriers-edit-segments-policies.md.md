@@ -3,7 +3,7 @@ title: Modificare i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come modificare o rimuovere i criteri per le barriere informative.
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394331"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587075"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Modificare (o rimuovere) criteri di barriera delle informazioni (anteprima)
+# <a name="edit-or-remove-information-barrier-policies"></a>Modificare (o rimuovere) i criteri di barriera delle informazioni
 
 Dopo aver [definito i criteri di barriera delle informazioni](information-barriers-policies.md), potrebbe essere necessario apportare modifiche a tali criteri o ai segmenti di utenti, come parte della [risoluzione dei problemi](information-barriers-troubleshooting.md) o come manutenzione regolare. Utilizzare questo articolo come guida.
 
@@ -32,8 +32,8 @@ Dopo aver [definito i criteri di barriera delle informazioni](information-barrie
 |[Impostare un criterio su stato inattivo](#set-a-policy-to-inactive-status)     |Impostare un criterio sullo stato inattivo quando si desidera apportare modifiche a un criterio o quando non si desidera che un criterio venga applicato.         |
 |[Rimozione di un criterio](#remove-a-policy)     |Rimuovere un criterio barriera informativo quando non è più necessario disporre di un criterio specifico.         |
 |[Arrestare un'applicazione di criteri](#stop-a-policy-application)     |Eseguire questa operazione quando si desidera interrompere il processo di applicazione dei criteri di barriera delle informazioni.<br/>Si noti che l'interruzione di un'applicazione di criteri non è immediata e non annulla i criteri già applicati agli utenti.         |
-|[Definire i criteri per le barriere informative (anteprima)](information-barriers-policies.md)     |Definire un criterio barriera informativo se non si dispone già di tali criteri e si devono limitare o limitare le comunicazioni tra gruppi specifici di utenti.         |
-|[Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)](information-barriers-troubleshooting.md)     |Fare riferimento a questo articolo quando si verificano problemi imprevisti con barriere informative.         |
+|[Definire i criteri per le barriere informative](information-barriers-policies.md)     |Definire un criterio barriera informativo se non si dispone già di tali criteri e si devono limitare o limitare le comunicazioni tra gruppi specifici di utenti.         |
+|[Risoluzione dei problemi di barriere informative](information-barriers-troubleshooting.md)     |Fare riferimento a questo articolo quando si verificano problemi imprevisti con barriere informative.         |
 
 > [!IMPORTANT]
 > Per eseguire le attività descritte in questo articolo, è necessario essere assegnati a un ruolo appropriato, ad esempio uno dei seguenti:<br/>-Microsoft 365 Enterprise Global Administrator<br/>-Amministratore globale di Office 365<br/>-Compliance Administrator<br/>-IB Compliance Management (questo è un nuovo ruolo)<p>Per ulteriori informazioni sui prerequisiti per le barriere informative, vedere [prerequisiti (per i criteri barriera informativi)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di eseguire la [connessione a PowerShell di Office 365 Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -52,7 +52,7 @@ Gli attributi degli account utente vengono utilizzati per definire i segmenti in
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>   È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>`      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*.         |
 
-2. Determinare l'attributo che si desidera modificare per i profili dell'account utente. Per ulteriori informazioni, fare riferimento agli [attributi per i criteri di barriera delle informazioni (Preview)](information-barriers-attributes.md) . 
+2. Determinare l'attributo che si desidera modificare per i profili dell'account utente. Per ulteriori informazioni, fare riferimento agli [attributi per i criteri di barriera delle informazioni](information-barriers-attributes.md) . 
 
 3. Modificare uno o più account utente in modo da includere i valori dell'attributo selezionato nel passaggio precedente. A tale scopo, utilizzare una delle seguenti procedure:
 
@@ -168,10 +168,10 @@ Se dopo aver avviato l'applicazione di criteri di barriera delle informazioni si
 
 [Ottenere una panoramica delle barriere informative](information-barriers.md)
 
-[Definire i criteri per le barriere informative (anteprima)](information-barriers-policies.md)
+[Definire i criteri per le barriere informative](information-barriers-policies.md)
 
 [Per ulteriori informazioni, vedere barriere informative in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[Attributi per i criteri di barriera delle informazioni (anteprima)](information-barriers-attributes.md)
+[Attributi per i criteri di barriera delle informazioni](information-barriers-attributes.md)
 
-[Risoluzione dei problemi relativi alle informazioni sugli ostacoli (anteprima)](information-barriers-troubleshooting.md)
+[Risoluzione dei problemi di barriere informative](information-barriers-troubleshooting.md)

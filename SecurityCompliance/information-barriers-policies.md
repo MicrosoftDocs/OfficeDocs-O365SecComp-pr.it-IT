@@ -3,7 +3,7 @@ title: Definire i criteri di barriera delle informazioni
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 527f059eb0bccb97429c649d055496c06710c2a9
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394321"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587085"
 ---
-# <a name="define-policies-for-information-barriers-preview"></a>Definire i criteri per le barriere informative (anteprima)
+# <a name="define-policies-for-information-barriers"></a>Definire i criteri per le barriere informative
 
 ## <a name="overview"></a>Panoramica
 
-Con barriere informative, è possibile definire criteri che sono stati creati per impedire a determinati segmenti di utenti di comunicare tra loro oppure consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri barriera alle informazioni consentono all'organizzazione di mantenere la conformità agli standard e ai regolamenti del settore e di evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [barriere informative (Preview)](information-barriers.md). 
+Con barriere informative, è possibile definire criteri che sono stati creati per impedire a determinati segmenti di utenti di comunicare tra loro oppure consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri barriera alle informazioni consentono all'organizzazione di mantenere la conformità agli standard e ai regolamenti del settore e di evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [barriere](information-barriers.md)informative. 
 
 In questo articolo viene descritto come pianificare, definire, implementare e gestire i criteri di barriera delle informazioni. Sono coinvolti diversi passaggi e il flusso di lavoro è suddiviso in più parti. Assicurarsi di leggere i [prerequisiti](#prerequisites) e l'intero processo prima di iniziare a definire (o modificare) i criteri di barriera delle informazioni.
 
@@ -59,7 +59,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions), verificare che siano soddisfatti i requisiti seguenti: 
      
 - **Dati della directory**. Verificare che la struttura dell'organizzazione sia riflessa nei dati della directory. Per eseguire questa operazione, verificare che gli attributi degli account utente, ad esempio appartenenza a gruppo, nome reparto e così via, siano inseriti correttamente in Azure Active Directory (o Exchange Online). Per ulteriori informazioni, vedere le risorse seguenti:
-  - [Attributi per i criteri di barriera delle informazioni (anteprima)](information-barriers-attributes.md)
+  - [Attributi per i criteri di barriera delle informazioni](information-barriers-attributes.md)
   - [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -67,7 +67,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 
 - **Registrazione di controllo**. Per cercare lo stato di un'applicazione di criteri, è necessario che la registrazione di controllo sia attivata. Si consiglia di eseguire questa operazione prima di iniziare a definire segmenti o criteri. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
 
-- **Nessun criterio rubrica**. Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi.
+- **Nessun criterio rubrica**. Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Gli ostacoli alle informazioni si basano sui criteri della Rubrica, ma i due tipi di criteri non sono interscambiabili. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi.
 
 - **PowerShell**. Attualmente, i criteri barriera informativi vengono definiti e gestiti nel centro conformità & sicurezza di Office 365 tramite i cmdlet di PowerShell. Anche se alcuni esempi sono disponibili in questo articolo, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo AzureRM.
     - [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -110,7 +110,7 @@ Quando si ha un elenco iniziale di gruppi e criteri, procedere all'identificazio
 
 Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organizzazione. Gli utenti che saranno inclusi nei criteri di barriera delle informazioni devono appartenere a un segmento e nessun utente deve appartenere a due o più segmenti. Ogni segmento può disporre di un solo criterio barriera informativo applicato. 
 
-Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative (Preview)](information-barriers-attributes.md).
+Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere](information-barriers-attributes.md)informative.
 
 > [!IMPORTANT]
 > **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -255,13 +255,13 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 
 Sono disponibili risorse che consentono di gestire i criteri di barriera delle informazioni.
 
-- Se si verifica un problema con gli ostacoli alle informazioni, vedere [Troubleshooting Information barriers (Preview)](information-barriers-troubleshooting.md).
+- Se si verifica un problema con gli ostacoli alle informazioni, vedere [Troubleshooting Information barriers](information-barriers-troubleshooting.md).
 
 - Per arrestare l'applicazione dei criteri, vedere [arrestare un'istanza di criteri](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
 
 - Per rimuovere un criterio di barriera delle informazioni, vedere [rimuovere un criterio](information-barriers-edit-segments-policies.md.md#remove-a-policy).
 
-- Per apportare modifiche ai segmenti o ai criteri, vedere [modificare (o rimuovere) informazioni sui criteri di barriera (Preview)](information-barriers-edit-segments-policies.md.md).
+- Per apportare modifiche ai segmenti o ai criteri, vedere [modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di contoso
 
@@ -316,6 +316,6 @@ Al termine, Contoso è conforme ai requisiti legali e di settore.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Ottenere una panoramica delle barriere informative (Preview)](information-barriers.md)
+- [Ottenere una panoramica delle barriere informative](information-barriers.md)
 
-- [Barriere informative nell'anteprima di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Barriere informative in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
