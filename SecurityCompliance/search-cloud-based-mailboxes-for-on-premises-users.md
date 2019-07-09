@@ -14,13 +14,13 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità di & per cercare ed esportare i dati della chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: eb53daa381b89d8ded4f2400ed7781e2306eb263
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
+ms.openlocfilehash: b08e1ea9ea9fb9fe834bb10948be532cbc4337b4
+ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158738"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35587803"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -38,7 +38,7 @@ Di seguito sono riportati i requisiti e le limitazioni per la configurazione e p
   
 ## <a name="how-it-works"></a>Funzionamento
 
-Se un utente abilitato a Microsoft teams dispone di una cassetta postale locale e il relativo account utente/identità è stato sincronizzato con il cloud, Microsoft crea una cassetta postale basata sul cloud per archiviare i dati di chat dei team di 1xN. Dopo che i dati della chat dei team vengono archiviati nella cassetta postale basata sul cloud, vengono indicizzati per la ricerca. In questo modo è possibile utilizzare la ricerca del contenuto (e le ricerche associate ai casi di eDiscovery) per cercare, visualizzare in anteprima ed esportare i dati di chat dei team per gli utenti locali. È inoltre possibile utilizzare ** \*** i cmdlet di ComplianceSearch nel centro sicurezza & Compliance Center PowerShell per cercare i dati di chat dei team per gli utenti locali. 
+Se un utente abilitato a Microsoft teams dispone di una cassetta postale locale e il relativo account utente/identità è stato sincronizzato con il cloud, Microsoft crea una cassetta postale basata sul cloud per archiviare i dati di chat dei team di 1xN. Dopo che i dati della chat dei team vengono archiviati nella cassetta postale basata sul cloud, vengono indicizzati per la ricerca. In questo modo è possibile utilizzare la ricerca del contenuto (e le ricerche associate ai casi di eDiscovery) per cercare, visualizzare in anteprima ed esportare i dati di chat dei team per gli utenti locali. È inoltre possibile utilizzare ** \*** i cmdlet di ComplianceSearch in PowerShell per la sicurezza & Compliance Center per cercare i dati di chat dei team per gli utenti locali. 
   
 Nell'immagine seguente viene illustrato il flusso di lavoro del modo in cui i dati della chat dei team per gli utenti locali sono disponibili per la ricerca, l'anteprima e l'esportazione.
   
@@ -48,7 +48,7 @@ Oltre a questa nuova funzionalità, è comunque possibile utilizzare la ricerca 
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Archiviazione di una richiesta con il supporto tecnico Microsoft per abilitare questa funzionalità
 
-È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel centro sicurezza e conformità di & per cercare i dati di chat dei team nelle cassette postali basate sul cloud per gli utenti locali. Si noti che questa funzionalità è disponibile in PowerShell centro conformità di & di sicurezza. Non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
+È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel centro sicurezza & conformità per cercare i dati di chat dei team nelle cassette postali basate sul cloud per gli utenti locali. Questa funzionalità è disponibile in PowerShell per Centro sicurezza & Compliance. Non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
   
 Includere le informazioni seguenti quando si invia la richiesta al supporto tecnico Microsoft:
   
@@ -56,9 +56,9 @@ Includere le informazioni seguenti quando si invia la richiesta al supporto tecn
     
 - Il nome del tenant e l'ID tenant dell'organizzazione di Office 365. È possibile trovare queste informazioni nel portale di Azure Active Directory (in **Manage** \> **Properties**). Vedere [trovare l'ID tenant di Office 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
     
-- Il titolo o la descrizione seguente dello scopo della richiesta di supporto: "abilitare la ricerca di contenuto dell'applicazione per gli utenti locali". Ciò consentirà di instradare la richiesta al team di ingegneri di eDiscovery di Office 365 che implementerà la richiesta. 
+- Il titolo o la descrizione seguente dello scopo della richiesta di supporto: "abilitare la ricerca di contenuto dell'applicazione per gli utenti locali". Ciò consente di instradare la richiesta al team di ingegneri di eDiscovery di Office 365 che implementerà la richiesta. 
     
-Dopo aver apportato la modifica dell'ingegneria, il supporto tecnico Microsoft invierà una data di distribuzione stimata. Si noti che il processo di distribuzione richiede solitamente 2-3 settimane dopo aver inviato la richiesta di supporto. 
+Dopo aver apportato la modifica dell'ingegneria, il supporto tecnico Microsoft invierà una data di distribuzione stimata. Il processo di distribuzione richiede solitamente 2-3 settimane dopo aver inviato la richiesta di supporto. 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Cosa succede dopo che questa funzionalità è stata abilitata?
 
@@ -74,13 +74,13 @@ Dopo la distribuzione di questa funzionalità nell'organizzazione di Office 365,
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>Ricerca di contenuti per la chat di team in cassette postali basate su cloud per utenti locali
 
-Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca contenuto nel centro sicurezza & Compliance per cercare i dati di chat dei team nelle cassette postali basate sul cloud per gli utenti locali. 
+Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca contenuto nel centro sicurezza & conformità per cercare i dati di chat dei team nelle cassette postali basate sul cloud per gli utenti locali. 
   
-1. Nel centro conformità di sicurezza di &, andare a ricerca **contenuto** **ricerca** \>
+1. Nel centro sicurezza & conformità, accedere a ricerca **** \> **contenuto** ricerca
     
 2. Nella pagina **ricerca** fare clic ![su Aggiungi nuova](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) icona di **ricerca**.
     
-    Come illustrato in precedenza, la casella **di controllo Aggiungi contenuto app di Office per gli utenti locali** viene visualizzata in **percorsi**. Tenere presente che è selezionata per impostazione predefinita.
+    Come illustrato in precedenza, la casella **di controllo Aggiungi contenuto app di Office per gli utenti locali** viene visualizzata in **percorsi**. È selezionata per impostazione predefinita.
     
 3. Se necessario, creare la query di parole chiave e aggiungere condizioni alla query di ricerca. Per cercare solo i dati delle chat del team, è possibile aggiungere la query seguente nella casella **parole chiave** : 
     
@@ -92,23 +92,23 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
     
     - **Tutte le posizioni** : selezionare questa opzione per eseguire la ricerca nelle cassette postali di tutti gli utenti dell'organizzazione. Quando la casella di controllo è selezionata, verranno cercate anche tutte le cassette postali basate sul cloud per gli utenti locali. 
     
-    - **Posizioni specifiche** : selezionare questa opzione e quindi fare clic su **modifica** \> scegliere utente, gruppi o team per cercare cassette postali specifiche. Come spiegato in precedenza, la selezione percorsi consente di cercare gli utenti locali. 
+    - **Posizioni specifiche** : selezionare questa opzione e quindi fare clic su **modifica** \> scegliere utente, gruppi o team per cercare cassette postali specifiche. Come spiegato in precedenza, lo strumento di selezione percorsi consente di cercare gli utenti locali. 
     
-5. Salvare ed eseguire la ricerca. Tutti i risultati di ricerca delle cassette postali basate sul cloud per gli utenti locali possono essere visualizzati in anteprima come tutti gli altri risultati della ricerca. Inoltre, è possibile esportare i risultati della ricerca (compresi i dati di chat dei team) in un file PST. Per ulteriori informazioni, vedere: 
+5. Salvare ed eseguire la ricerca. Tutti i risultati di ricerca delle cassette postali basate sul cloud per gli utenti locali possono essere visualizzati in anteprima come tutti gli altri risultati della ricerca. È inoltre possibile esportare i risultati della ricerca (compresi i dati della chat dei team) in un file PST. Per ulteriori informazioni, vedere: 
     
-    - [Creare una nuova ricerca](content-search.md#create-a-new-search)
+    - [Create a search](content-search.md#create-a-search)
     
-    - [Anteprima dei risultati della ricerca](content-search.md#preview-search-results)
+    - [Preview search results](content-search.md#preview-search-results)
     
     - [Esportare i risultati della Ricerca contenuto](export-search-results.md)
     
 ## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>Utilizzo di PowerShell per cercare i dati di chat dei team in cassette postali basate su cloud per gli utenti locali
 
-È possibile utilizzare i cmdlet **New-ComplianceSearch** e **set-ComplianceSearch** nel centro di sicurezza & Compliance PowerShell per eseguire ricerche nella cassetta postale basata sul cloud per gli utenti locali. Come spiegato in precedenza, non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
+È possibile utilizzare i cmdlet **New-ComplianceSearch** e **set-ComplianceSearch** in PowerShell per la sicurezza & Compliance Center per eseguire ricerche nella cassetta postale basata sul cloud per gli utenti locali. Come spiegato in precedenza, non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
   
-1. [Connettersi a PowerShell per Centro sicurezza _AMP_ Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connettersi a PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
-2. Eseguire il seguente comando di PowerShell per creare un nuovo contenuto per cercare le cassette postali basate sul cloud degli utenti locali.
+2. Eseguire il seguente comando di PowerShell per creare una ricerca di contenuto che esegua ricerche nelle cassette postali basate sul cloud degli utenti locali.
     
     ```
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
@@ -122,7 +122,7 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Dopo aver creato una nuova ricerca, accertarsi di utilizzare il cmdlet **Start-ComplianceSearch** per eseguire la ricerca. 
+   Dopo aver creato una ricerca, accertarsi di utilizzare il cmdlet **Start-ComplianceSearch** per eseguire la ricerca. 
   
 Per ulteriori informazioni sull'utilizzo di questi cmdlet, vedere:
   
@@ -147,7 +147,7 @@ Le cassette postali basate sul cloud vengono create e archiviate nello stesso da
   
  **Esistono altri requisiti diversi dall'invio di una richiesta di supporto?**
   
- Come spiegato in precedenza, le identità degli utenti con cassette postali on-Prem devono essere sincronizzate con l'organizzazione basata su cloud in modo che venga creato un account utente di posta elettronica corrispondente per ogni account utente locale in Office 365. Inoltre, l'organizzazione deve disporre di un abbonamento a Office 365 Enterprise, ad esempio un abbonamento a Office 365 Enterprise E1, E3 o E5. 
+ Come spiegato in precedenza, le identità degli utenti con cassette postali on-Prem devono essere sincronizzate con l'organizzazione basata su cloud in modo che venga creato un account utente di posta elettronica corrispondente per ogni account utente locale in Office 365. L'organizzazione deve disporre anche di un abbonamento a Office 365 Enterprise, ad esempio un abbonamento a Office 365 Enterprise E1, E3 o E5. 
   
  **Esiste il rischio di perdere i dati della chat dei team se la cassetta postale locale dell'utente viene migrata nel cloud?**
   
