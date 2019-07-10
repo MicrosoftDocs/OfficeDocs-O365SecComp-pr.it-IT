@@ -2,7 +2,7 @@
 title: Protezione anti-spoofing in Office 365
 ms.author: tracyp
 author: MSFTtracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/29/2019
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: 455ce577e4ffb3dc4d943004dd3c299e7e6f1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 066fbee27291ad8d89a7cb9d0f2abc586835b780
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155778"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598372"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -116,7 +116,7 @@ Microsoft differenzia due diversi tipi di messaggi di spoofing:
   
  **Spoofing intra-org**
   
-Conosciuto anche come spoofing self-to-self, si verifica quando il dominio nell'indirizzo Da: è lo stesso o si allinea al dominio del destinatario (quando il dominio del destinatario è uno dei [Domini accettati](https://technet.microsoft.com/it-IT/library/jj945194%28v=exchg.150%29.aspx) dalla tua organizzazione). In alternativa, quando il dominio nell'indirizzo Da: fa parte della stessa organizzazione.
+Conosciuto anche come spoofing self-to-self, si verifica quando il dominio nell'indirizzo Da: è lo stesso o si allinea al dominio del destinatario (quando il dominio del destinatario è uno dei [Domini accettati](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx) dalla tua organizzazione). In alternativa, quando il dominio nell'indirizzo Da: fa parte della stessa organizzazione.
   
 Ad esempio, il mittente e il destinatario seguenti sono presenti nello stesso dominio (contoso.com).  Sono inseriti degli spazi nell'indirizzo di posta elettronica per impedire la raccolta di spambot in questa pagina):
   
@@ -655,7 +655,7 @@ La tecnologia anti-spoofing di Microsoft è stata distribuita inizialmente alle 
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come si fa a segnalare messaggi di posta indesiderata o non a Microsoft?
 
-È possibile utilizzare il componente aggiuntivo per i [messaggi di report per Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) oppure, se non è installato, [inviare messaggi di posta indesiderata e non insieme ai tentativi di phishing a Microsoft per l'analisi](https://technet.microsoft.com/it-IT/library/jj200769%28v=exchg.150%29.aspx).
+È possibile utilizzare il componente aggiuntivo per i [messaggi di report per Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) oppure, se non è installato, [inviare messaggi di posta indesiderata e non insieme ai tentativi di phishing a Microsoft per l'analisi](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sono un amministratore di dominio che non sa chi sono tutti i mittenti.
 

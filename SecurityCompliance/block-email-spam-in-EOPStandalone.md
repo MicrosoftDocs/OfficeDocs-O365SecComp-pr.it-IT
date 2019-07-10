@@ -3,7 +3,7 @@ title: Bloccare la posta indesiderata nella versione autonoma di Exchange Online
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152198"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598492"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
@@ -35,7 +35,7 @@ Un amministratore può utilizzare diverse impostazioni del filtro protezione da 
     
 2. Cercare l'indirizzo IP dopo il tag CIP nell'intestazione X-Forefront-Antispam-Report tramite l'[analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha) o manualmente. 
     
-3. Aggiungere l'indirizzo IP all'elenco indirizzi IP bloccati seguendo la procedura in "Utilizzare EAC per modificare il criterio del filtro connessioni predefinito" in [Configurare il criterio del filtro connessioni](https://technet.microsoft.com/it-IT/library/jj200718%28v=exchg.150%29.aspx).
+3. Aggiungere l'indirizzo IP all'elenco indirizzi IP bloccati seguendo la procedura in "Utilizzare EAC per modificare il criterio del filtro connessioni predefinito" in [Configurare il criterio del filtro connessioni](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloccare i messaggi in blocco con regole di flusso di posta (regole di trasporto) o con il filtro protezione da posta indesiderata
 
@@ -45,8 +45,7 @@ La posta indesiderata è per lo più composta da posta inviata in blocco, come n
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloccare la posta indesiderata tramite gli elenchi elementi bloccati del filtro protezione da posta indesiderata
 
-
-  [Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/it-IT/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
+[Configurare i criteri del filtro protezione da posta indesiderata](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) per aggiungere l'indirizzo del mittente all'elenco di mittenti bloccati o il dominio all'elenco di domini bloccati nel filtro protezione da posta indesiderata. I messaggi di posta elettronica di un mittente o dominio in un elenco elementi bloccati del filtro protezione da posta indesiderata verranno contrassegnati come posta indesiderata. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Gli utenti della posta elettronica possono contribuire anche a garantire il blocco dei messaggi indesiderati e dei falsi negativi usando il filtro della posta indesiderata di Office 365
 
@@ -55,7 +54,7 @@ Può risultare utile per le iniziative di protezione dalla posta indesiderata di
 ![Blocco di un mittente in Outlook sul web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Per informazioni più dettagliate sugli elenchi di mittenti attendibili, vedere [Domande frequenti sugli elenchi di mittenti attendibili e mittenti bloccati](https://technet.microsoft.com/it-IT/library/dn133608%28v=exchg.150%29.aspx). 
+> Per informazioni più dettagliate sugli elenchi di mittenti attendibili, vedere [Domande frequenti sugli elenchi di mittenti attendibili e mittenti bloccati](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Solo clienti di Exchange Online Protection: Configurare la sincronizzazione della directory
 
