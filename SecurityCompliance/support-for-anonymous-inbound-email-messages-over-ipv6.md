@@ -2,8 +2,7 @@
 title: Supporto per messaggi di posta elettronica in ingresso anonimi su IPv6
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: ''
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare il supporto per i messaggi anonimi provenienti da origini IPv6 per Exchange Online Protection ed Exchange Online.
-ms.openlocfilehash: 87317188a4564fccd968b00c9a93dc1b963c142b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b6b1a0f42d879929de5059b6e197bd5fe14887dc
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158188"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600729"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
 

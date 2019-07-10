@@ -2,19 +2,19 @@
 title: Report sui client di autenticazione SMTP
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21d2446bd7441f17c2371186d098118c6403de0c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158598"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598132"
 ---
 # <a name="smtp-auth-clients-report"></a>Report sui client di autenticazione SMTP
 
@@ -22,7 +22,7 @@ Il rapporto **client auth SMTP** evidenzia l'utilizzo del protocollo di invio cl
 
 Il widget visualizzato nel dashboard del flusso di posta indica il numero di utenti o di account di servizio che hanno utilizzato il protocollo di autenticazione SMTP negli ultimi 7 giorni.
 
-![Report dei client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/smtp-auth-clients-report-selected.png)
+![Il rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/smtp-auth-clients-report-selected.png)
 
 Se si fa clic sul widget, verrà aperto un riquadro a comparsa che fornisce una visualizzazione aggregata dell'utilizzo e dei volumi TLS per l'ultima settimana.
 
@@ -50,4 +50,4 @@ Il pivot **utilizzo TLS** è importante a causa dell'imminente deprecazione di T
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

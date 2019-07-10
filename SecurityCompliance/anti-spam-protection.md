@@ -2,7 +2,7 @@
 title: Protezione dalla posta indesiderata in Office 365
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni dei criteri di protezione da posta indesiderata
-ms.openlocfilehash: 64048e2621082edae21285df8b8fd1bcbd2e7c4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c82fc343d37c44352638cef71c5b34d28e091fb1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152328"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598272"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
 

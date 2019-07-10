@@ -2,7 +2,7 @@
 title: Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408321"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600819"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -36,7 +36,7 @@ Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. L
 
 Dopo aver selezionato una visualizzazione, è possibile applicare filtri e configurare le query per eseguire un'ulteriore analisi. Nelle sezioni seguenti viene fornita una breve panoramica delle diverse visualizzazioni disponibili in Esplora risorse (o rilevamenti in tempo reale).  
 
-## <a name="email--malware"></a>Malware > di posta elettronica
+## <a name="email--malware"></a>> di malware per la posta elettronica
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **messaggio di posta elettronica** > **malware**. Questa visualizzazione Mostra informazioni sui messaggi di posta elettronica che sono stati identificati come contenenti malware.  
 
@@ -52,7 +52,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi specifici. 
 
 ![Esplora minacce con apertura a comparsa](media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
-## <a name="email--phish"></a>Phishing > di posta elettronica
+## <a name="email--phish"></a>> di posta elettronica phishing
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** > **email** > **phishing**. Questa visualizzazione Mostra i messaggi di posta elettronica identificati come tentativi di phishing.  
 
@@ -72,7 +72,7 @@ Quando si seleziona un elemento nell'elenco, ad esempio un URL rilevato, viene a
 
 ![Dettagli relativi a un URL rilevato](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>Messaggi di posta elettronica > riportati dall'utente
+## <a name="email--user-reported"></a>Messaggi di posta elettronica > segnalati dall'utente
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **la posta elettronica** > **segnalata dall'utente**. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing. 
 
@@ -90,7 +90,7 @@ Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta el
 
 Selezionare un elemento nell'elenco per visualizzare ulteriori dettagli.
 
-## <a name="email--all-email"></a>Posta elettronica > tutta la posta elettronica
+## <a name="email--all-email"></a>Posta elettronica > tutti i messaggi di posta elettronica
 
 Per visualizzare questo report, in Esplora, scegliere **Visualizza** > **posta elettronica** > **tutti i messaggi**. Questa visualizzazione Mostra una panoramica completa dell'attività di posta elettronica, inclusi i messaggi di posta elettronica identificati come dannosi a causa di phishing o malware, nonché tutti i messaggi non dannosi (posta elettronica normale, posta indesiderata e messaggi in blocco). 
 
@@ -103,7 +103,7 @@ Per applicare un filtro, scegliere **mittente**, selezionare un elemento nell'el
 
 Al di sotto del grafico, visualizzare ulteriori dettagli su messaggi di posta elettronica specifici, ad esempio la riga dell'oggetto, il destinatario, il mittente, lo stato e così via. 
 
-## <a name="content--malware"></a>Malware > content
+## <a name="content--malware"></a>Contenuto > malware
 
 Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **View** > **Content** > **malware**. Questa visualizzazione Mostra i file che sono stati identificati come dannosi da [Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for business e Microsoft teams](atp-for-spo-odb-and-teams.md).
 

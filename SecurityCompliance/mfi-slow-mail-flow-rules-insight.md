@@ -2,20 +2,20 @@
 title: Informazioni dettagliate sulle regole del flusso di posta lento
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 5/3/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Gli amministratori possono ottenere informazioni sull'Insight delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli amministratori possono ottenere informazioni sull'Insight nelle regole del flusso di posta lenta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità.
+ms.openlocfilehash: 4477b388df321ee774ec7916a695cbfc69fc8e87
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158588"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598072"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informazioni dettagliate sulle regole del flusso di posta lento
 
@@ -29,7 +29,7 @@ Inefficienti regole del flusso di posta (note anche come regole di trasporto) po
 
 L'Insight consentirà di identificare e ottimizzare le regole del flusso di posta per contribuire a ridurre i ritardi del flusso di posta.
 
-![Una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Informazioni sulle regole del flusso di posta lenta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a comparsa dove è possibile esaminare la regola. Nel riquadro a comparsa, è anche possibile fare clic su **Visualizza messaggi di esempio** per visualizzare il tipo di messaggi interessati dalla regola.
 
@@ -37,4 +37,4 @@ Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a c
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).

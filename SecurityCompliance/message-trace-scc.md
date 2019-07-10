@@ -2,27 +2,27 @@
 title: Traccia messaggio nel Centro sicurezza e conformità
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158678"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601013"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 ## <a name="overview"></a>Panoramica
 
-La traccia dei messaggi nel centro sicurezza & Compliance segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
-La traccia dei messaggi nel centro sicurezza & Compliance migliora dopo la traccia del messaggio disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
+La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
@@ -30,9 +30,9 @@ La traccia dei messaggi nel centro sicurezza & Compliance migliora dopo la tracc
 
 2. Selezionare l'icona di avvio delle app ![Icona di avvio delle app di Office 365](media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) nell'angolo in alto a sinistra e scegliere **Amministratore**.
 
-3. Nella barra di spostamento in basso a sinistra, espandere interfaccia di **Amministrazione** e selezionare **sicurezza & Compliance**.
+3. Nella barra di spostamento in basso a sinistra, espandere interfaccia di **Amministrazione** e selezionare **sicurezza & conformità**.
 
-4. Nella pagina **sicurezza _AMP_ conformità** visualizzata, espandere flusso di **posta**e selezionare **traccia messaggi**.
+4. Nella pagina **sicurezza & conformità** che viene visualizzata, espandere **flusso di posta**e selezionare **traccia messaggi**.
 
 ## <a name="message-trace-page"></a>Pagina di traccia dei messaggi
 
@@ -65,7 +65,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - Per impostazione predefinita, è possibile selezionare l'intervallo di tempo in visualizzazione **Slider** utilizzando una linea temporale. È possibile selezionare solo le impostazioni giorno o ora visualizzate. Se si tenta di selezionare un valore tra i valori interattivi, la bolla iniziale/finale verrà agganciata all'impostazione visualizzata più vicina.
 
-   ![Intervallo di tempo per il dispositivo di scorrimento in una nuova traccia dei messaggi nel centro conformità di sicurezza di &](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+   ![Intervallo di tempo del dispositivo di scorrimento in una nuova traccia dei messaggi nel centro sicurezza & conformità](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
    Tuttavia, è anche possibile passare alla visualizzazione **personalizzata** in cui è possibile specificare i valori di data e ora di **inizio** e di **fine** (incluse le ore) ed è anche possibile selezionare il **fuso orario** per l'intervallo data/ora. Si noti che l'impostazione del **fuso orario** si applica sia agli input di query sia ai risultati delle query.
 
@@ -183,7 +183,7 @@ Nell'output del rapporto riepilogativo, è possibile visualizzare i dettagli rel
 
 - Selezionare la casella di controllo della riga e fare clic su](media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **altre opzioni** ![per **visualizzare i dettagli dei messaggi**.
 
-   ![Dettagli dopo aver fatto doppio clic su una riga del rapporto riepilogativo risultati traccia messaggio nel centro sicurezza & Compliance](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Dettagli dopo aver fatto doppio clic su una riga del rapporto riepilogativo risultati traccia messaggio nel centro sicurezza & conformità](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 I dettagli della traccia dei messaggi contengono le informazioni aggiuntive seguenti che non sono presenti nel rapporto riepilogativo:
 

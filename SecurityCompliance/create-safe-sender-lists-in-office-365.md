@@ -2,7 +2,7 @@
 title: Creare elenchi di mittenti attendibili in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 4/29/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibile l'elenco dei messaggi consentiti in un criterio di filtro posta indesiderata nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199573"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599982"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
 
@@ -86,6 +86,8 @@ Quando non è possibile utilizzare ETRs per consentire a livello globale un mitt
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Utilizzo degli elenchi di criteri di protezione da posta indesiderata/dominio consentito
 
 L'opzione meno desiderabile consiste nell'autorizzare il mittente/dominio. Questa opzione dovrebbe essere evitata *se possibile* , poiché ignora completamente la protezione da posta indesiderata/spoofing/phishing e non valuta l'autenticazione del mittente. Questo metodo aumenta il rischio di ricezione di messaggi di posta elettronica da parte di attori non validi ed è consigliato solo temporaneamente e solo quando si esegue il test. La procedura dettagliata è disponibile in [configurare il](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) documento dei criteri di filtro della posta indesiderata.
+
+Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
 
 > [!CAUTION]
 > La configurazione di criteri di protezione da posta indesiderata per *consentire il dominio mittente/Consenti* genera messaggi che ignorano il filtro posta indesiderata per un messaggio proveniente da mittenti nell'elenco Consenti oppure b) eventuali mittenti provenienti da un dominio consentito. Questo metodo aumenta significativamente il rischio che gli spammer possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), che ignora tutti i filtri per la posta indesiderata, i controlli di autenticazione del mittente e invierà il messaggio direttamente nella posta in arrivo di una persona.

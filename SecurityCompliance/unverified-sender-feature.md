@@ -2,7 +2,7 @@
 title: Mittente non verificato
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
-ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
+ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34341624"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600262"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -35,7 +35,7 @@ Outlook.com e Outlook sul Web mostrano gli indicatori quando il mittente di un m
 
 Se si è un cliente di Office 365, è possibile gestire questa funzionalità tramite il Centro sicurezza & Compliance. 
 
-- Nel centro conformità di Office 365 Security &, gli amministratori tenant possono attivarla o disattivarla tramite la protezione anti-spoofing in base ai criteri anti-phishing. Inoltre, può essere gestito tramite il cmdlet ' set-AntiPhishPolicy '. Per ulteriori informazioni, vedere protezione anti-phishing in Office 365 e set-AntiPhishPolicy.
+- Nel centro sicurezza & conformità di Office 365, gli amministratori tenant possono attivarla o disattivarla tramite la protezione anti-spoofing in base ai criteri phishing. Inoltre, può essere gestito tramite il cmdlet ' set-AntiPhishPolicy '. Per ulteriori informazioni, vedere protezione anti-phishing in Office 365 e set-AntiPhishPolicy.
 
     ![Modifica dei mittenti non autenticati nell'interfaccia grafica.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

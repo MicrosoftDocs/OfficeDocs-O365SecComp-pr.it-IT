@@ -1,7 +1,7 @@
 ---
 title: Office 365 BitLocker per la crittografia
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Riepilogo: informazioni su BitLocker per la crittografia nel cloud.'
-ms.openlocfilehash: 293c7a3cef3ae2c55a0b12df139baf5302dd3b04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bbe32f642f214d27c7f9f82c39b11237556d51bf
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262938"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600943"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker e Distributed Key Manager (DKM) per la crittografia
 

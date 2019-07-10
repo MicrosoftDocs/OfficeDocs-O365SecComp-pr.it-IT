@@ -2,7 +2,7 @@
 title: Configurare i criteri di filtro della posta indesiderata
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 12/05/2018
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base dei filtri per la posta indesiderata includono la selezione dell'azione da intraprendere per i messaggi identificati come posta
-ms.openlocfilehash: be99c017a5038fbfb431edbcf2d65c877d92388c
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: a59311ae6bccb1bcb1e949eb825cafc1a740c5da
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857656"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600102"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
 Le impostazioni del filtro posta indesiderata includono la selezione dell'azione da intraprendere sui messaggi identificati come posta indesiderata. Le impostazioni dei criteri di filtro della posta indesiderata vengono applicate solo ai messaggi in ingresso e sono disponibili due tipi:

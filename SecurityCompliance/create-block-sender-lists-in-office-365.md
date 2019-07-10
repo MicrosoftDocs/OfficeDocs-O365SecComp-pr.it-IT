@@ -2,7 +2,7 @@
 title: Creare elenchi di mittenti bloccati in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di protezione dalla posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs) denominate anche regole
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017688"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599992"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
@@ -48,6 +48,8 @@ La procedura per la configurazione di questo tipo di configurazione è diversa t
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utilizzare i criteri di protezione dalla posta indesiderata e gli elenchi di blocco dei domini
 
 Quando si verifica un impatto su più utenti, l'ambito è più ampio ed è necessario utilizzare un criterio di protezione dalla posta indesiderata a livello di mittente/dominio. La procedura dettagliata è disponibile in [configurare il](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) documento dei criteri di filtro della posta indesiderata. Qualsiasi messaggio bloccato tramite questo metodo seguirà l'azione di posta indesiderata configurata nel criterio.
+
+Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utilizzare le regole di trasporto di Exchange (ETRs) per bloccare mittenti specifici
 

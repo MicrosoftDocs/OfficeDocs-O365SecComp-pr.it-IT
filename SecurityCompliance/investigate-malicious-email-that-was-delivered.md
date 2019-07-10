@@ -2,7 +2,7 @@
 title: Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Threat Investigation and Response
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414806"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605451"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,21 @@ Per visualizzare le modifiche apportate al precedente campo stato di recapito (o
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza &amp; e conformità. 
     
 2. Nel riquadro di spostamento a sinistra, scegliere **gestione** \> **** minacce.
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![Esplora minacce con i campi azione di recapito e posizione di recapito.](media/ThreatExFields.PNG)
+
+È possibile notare la nuova colonna ' Special actions ' in questo elemento grafico. Questa funzionalità ha lo scopo di informare gli amministratori sull'esito dell'elaborazione di un messaggio di posta elettronica. Le azioni speciali possono essere aggiornate alla fine della *sequenza temporale della posta elettronica*di Threat Explorer, che è una nuova funzionalità che consente di migliorare l'esperienza di ricerca per gli amministratori.
+
+La sequenza temporale della posta elettronica riduce la randomizzazione perché è necessario meno tempo per controllare posizioni diverse per cercare di comprendere gli eventi accaduti dopo l'arrivo del messaggio di posta elettronica. Quando più eventi si verificano in un messaggio di posta elettronica o vicino allo stesso tempo, gli eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito alla posta verranno acquisiti nella colonna ' azioni speciali '. La combinazione delle informazioni provenienti dalla cronologia della posta *elettronica* di quel messaggio con le *azioni speciali* intraprese nel post-recapito della posta darà agli amministratori informazioni su come funzionano i propri criteri, in cui la posta è stata definitivamente instradata e, in alcuni casi, quali sono le ultime la valutazione è stata. È possibile accedere alla colonna azioni speciali nello stesso luogo in cui si trova l'operazione di recapito e il percorso di recapito, ma per visualizzare una sequenza temporale della posta elettronica:
+
+1. Fare clic sull'oggetto del messaggio di posta elettronica.
+2. Nel riquadro visualizzato, fare clic su *sequenza temporale della posta elettronica*. (Apparirà tra le altre intestazioni del pannello come ' Riepilogo ' o ' dettagli ', eccetera).
+
+Dopo aver aperto la sequenza temporale della posta elettronica, dovrebbe essere visualizzata una tabella in cui vengono illustrati gli eventi dopo il recapito della posta o, nel caso di nessun altro evento per il messaggio di posta elettronica, si dovrebbe vedere un singolo appuntamento per il recapito originale che diventerà un risultato come *bloccato* con un verdetto come *phishing*. La scheda ha anche la possibilità di esportare l'intera sequenza temporale della posta elettronica e in questo modo verranno esportati tutti i dettagli nella scheda e nei dettagli del messaggio di posta elettronica (elementi quali Subject, sender, Recipient, Network e Message ID).
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

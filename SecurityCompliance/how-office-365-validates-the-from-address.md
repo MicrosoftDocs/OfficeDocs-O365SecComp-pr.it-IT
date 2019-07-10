@@ -2,7 +2,7 @@
 title: Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 10/11/2017
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: Per evitare il phishing, Office 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
-ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154288"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599132"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 

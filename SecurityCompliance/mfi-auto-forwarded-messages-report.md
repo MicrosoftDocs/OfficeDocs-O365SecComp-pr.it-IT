@@ -2,33 +2,33 @@
 title: Report dei messaggi inoltrati automaticamente
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta nel centro conformità di Office 365 Security &.
-ms.openlocfilehash: 81d6235e549b6eed792d069e66c69da1d40103ff
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità di Office 365.
+ms.openlocfilehash: 8260b2144d1973d7dca80b0021f13243dd75bcb9
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158658"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600859"
 ---
 # <a name="auto-forwarded-messages-report"></a>Report dei messaggi inoltrati automaticamente
 
 Il rapporto **messaggi auto-inoltrati** nel dashboard del flusso di posta elettronica Visualizza le informazioni sui messaggi che vengono automaticamente inoltrati dall'organizzazione di Office 365 ai destinatari nei domini esterni.
 
-![Insight dei messaggi auto-inoltrati nel centro conformità & sicurezza di Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![L'Insight dei messaggi auto-inoltrati nel centro sicurezza & conformità di Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
-![Il rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza e conformità di Office 365 &](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Il rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità di Office 365](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Dettagli dei messaggi inoltrati automaticamente
 
 Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che visualizza lo stato del messaggio auto-inoltrato. È possibile visualizzare i dettagli facendo clic sul collegamento del **rapporto di inoltro** .
 
-![Il riquadro a comparsa dei dettagli per il rapporto messaggi auto-inoltrati nel centro conformità & sicurezza di Office 365](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+![Il riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro conformità & sicurezza di Office 365](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>Approfondimenti
 
@@ -36,4 +36,4 @@ Vengono generate due informazioni in base ai dati del rapporto: **nuovi utenti d
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).

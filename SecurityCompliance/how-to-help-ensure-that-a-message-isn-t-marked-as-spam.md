@@ -2,8 +2,8 @@
 title: Come assicurarsi che un messaggio non venga contrassegnato come indesiderato
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 12/9/2016
+manager: dansimp
+ms.date: 12/09/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Per ottenere questo risultato, vedere la versione aggiornata dei suggerimenti e delle procedure per evitare che la posta elettronica falsa positiva sia contrassegnata come posta indesiderata con un elenco indirizzi attendibili o altre tecniche.
-ms.openlocfilehash: fc441242a9c90be8733cebf49bc5d6f5ccae1aaa
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9069c36abb347ad6469b1b066f24ec074328034f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154248"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599092"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Come assicurarsi che un messaggio non venga contrassegnato come indesiderato
 

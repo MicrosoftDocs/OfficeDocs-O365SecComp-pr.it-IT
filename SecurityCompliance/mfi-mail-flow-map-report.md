@@ -2,25 +2,25 @@
 title: Report Mappa flusso di posta
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
+ms.openlocfilehash: 04ffbdc339a084f3ae2bf9947469966f1a868d02
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158688"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601023"
 ---
 # <a name="mail-flow-map-report"></a>Report Mappa flusso di posta
 
 Questo rapporto fornisce informazioni su come scorre la posta attraverso l'organizzazione di Office 365. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi man mano che si verificano.
 
-![Il rapporto Mappa del flusso di posta nel dashboard del flusso di posta nel centro sicurezza & Compliance](media/mail-flow-map-selected.png)
+![Il rapporto Mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget mappa del flusso di posta
 
@@ -50,4 +50,4 @@ Le informazioni correlate vengono visualizzate sotto la mappa del flusso di post
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

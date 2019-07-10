@@ -2,7 +2,7 @@
 title: Controllo della posta indesiderata in uscita in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,19 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se l'organizzazione invia una gran quantità di posta in blocco contrassegnata come posta indesiderata, potrebbe essere bloccata dall'invio di messaggi di posta elettronica con Office 365. Leggere questo articolo per ulteriori informazioni sul motivo per cui questo accade e su cosa è possibile fare.
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157598"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601133"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controllo della posta indesiderata in uscita in Office 365
 
 Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché la nostra è un servizio condiviso.  Esistono molti clienti che si trovano dietro un pool di risorse condiviso, in cui se un cliente invia la posta indesiderata in uscita, può peggiorare la reputazione IP in uscita del servizio e influisce sulla corretta recapito della posta elettronica per gli altri clienti.
 
 > [!IMPORTANT]
-> La notifica per il momento in cui un mittente è limitato è ora parte della piattaforma di avviso di Security & Compliance Center (SCC). Invece di utilizzare i metodi descritti di seguito per inviare la notifica, è possibile trovare l'elenco degli utenti da segnalare nell'avviso "utenti con restrizioni dall'invio di messaggi di posta elettronica". Iniziare a utilizzare la [pagina Criteri di avviso](https://sip.protection.office.com/alertpolicies) nel centro sicurezza e conformità di & per configurare l'avviso, poiché il metodo Prior verrà rimosso in futuro. Leggere la nuova [esperienza di utenti con restrizioni](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam).
+> La notifica per il momento in cui un mittente è limitato fa parte della piattaforma di avviso di Security & Compliance Center (SCC). Invece di utilizzare i metodi descritti di seguito per inviare la notifica, è possibile trovare l'elenco degli utenti da segnalare nell'avviso "utenti con restrizioni dall'invio di messaggi di posta elettronica". Iniziare a utilizzare la [pagina Criteri di avviso](https://sip.protection.office.com/alertpolicies) nel centro sicurezza & Compliance per configurare l'avviso, poiché il metodo Prior verrà rimosso in futuro. Leggere la nuova [esperienza di utenti con restrizioni](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam).
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Operazioni che possono essere eseguite dagli amministratori per controllare la posta indesiderata in uscita
 

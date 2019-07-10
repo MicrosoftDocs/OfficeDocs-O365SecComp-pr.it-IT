@@ -2,7 +2,7 @@
 title: Introduzione ai criteri di gestione delle informazioni
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Per criterio di gestione delle informazioni si intende un set di regole per un tipo di contenuto. I criteri di gestione delle informazioni consentono alle organizzazioni di controllare e registrare, ad esempio, il periodo di conservazione del contenuto e le azioni che gli utenti possono eseguire sul contenuto. I criteri di gestione delle informazioni possono essere utili per consentire alle organizzazioni di applicare la conformità con le norme statali o legali o semplicemente i processi aziendali interni.
-ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5cf571b22b7d698daf8a70f8565b250e2388a1a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152608"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599082"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduzione ai criteri di gestione delle informazioni
 

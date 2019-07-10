@@ -2,7 +2,7 @@
 title: Analisi delle minacce e risposta alle minacce in Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: c8b0815368e80151f8ee55161b9bcbaa98065228
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 7e0ce37b33ea2c019005585fd70107145fbfc8aa
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852810"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598082"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
@@ -34,9 +34,7 @@ Le funzionalità di ricerca e risposta alle minacce in [office 365 Advanced Thre
 
 4. Indagine automatizzata e risposta per minacce critiche basate sulla posta elettronica
     
-> [!IMPORTANT]
-> **Office 365 Advanced Threat Protection and Threat Investigation and Response (precedentemente noto come office 365 Threat Intelligence) sono ora office 365 Advanced Threat Protection Plan 2**, oltre a ulteriori funzionalità di protezione dalle minacce incluse in alcuni abbonamenti, ad esempio [microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 E5, Office 365 a5 e così via. Se l'organizzazione dispone di un abbonamento che non include Office 365 ATP, è possibile acquistare ATP come componente aggiuntivo. Per ulteriori informazioni, vedere i [piani e i prezzi di office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) e la [Descrizione del servizio Advanced Threat protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
-  
+ 
 ## <a name="whats-changing"></a>Cosa cambia?
 
 In precedenza, Office 365 Threat Intelligence è stato incluso in abbonamenti, ad esempio Office 365 E5. Questo è il caso, poiché le funzionalità di ricerca e di risposta delle minacce fanno ora parte di Office 365 Advanced Threat Protection Plan 2 (e questo è incluso in Office 365 E5). 
