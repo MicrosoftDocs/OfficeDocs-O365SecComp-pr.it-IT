@@ -537,11 +537,11 @@
 ### [Novità di Compliance Manager (anteprima)](compliance-manager-release-notes.md)
 ### [Uso di Compliance Manager (anteprima)](working-with-compliance-manager.md)
 ### [Metodologia del punteggio di conformità (anteprima)](compliance-score-methodology.md)
-## [Barriere informative (anteprima)](information-barriers.md)
-### [Definire i criteri delle barriere informative (anteprima)](information-barriers-policies.md)
-### [Attributi per i criteri delle barriere informative (anteprima)](information-barriers-attributes.md)
-### [Risoluzione dei problemi relativi alle barriere informative (anteprima)](information-barriers-troubleshooting.md)
-### [Modificare i criteri delle barriere informative (anteprima)](information-barriers-edit-segments-policies.md.md)
+## [Barriere informative](information-barriers.md)
+### [Definire i criteri delle barriere informative](information-barriers-policies.md)
+### [Attributi per i criteri delle barriere informative](information-barriers-attributes.md)
+### [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)
+### [Modificare i criteri delle barriere informative](information-barriers-edit-segments-policies.md.md)
 
 
 ## Customer Key
