@@ -2,39 +2,39 @@
 title: Informazioni dettagliate sulle regole del flusso di posta lento
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 5/3/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Gli amministratori possono ottenere informazioni sull'Insight delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance.
-ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli amministratori possono ottenere informazioni sull'Insight nelle regole del flusso di posta lenta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità.
+ms.openlocfilehash: 4477b388df321ee774ec7916a695cbfc69fc8e87
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158588"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598072"
 ---
-# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="22287-103">Informazioni dettagliate sulle regole del flusso di posta lento</span><span class="sxs-lookup"><span data-stu-id="22287-103">Slow mail flow rules insight</span></span>
+# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="8f6e2-103">Informazioni dettagliate sulle regole del flusso di posta lento</span><span class="sxs-lookup"><span data-stu-id="8f6e2-103">Slow mail flow rules insight</span></span>
 
-<span data-ttu-id="22287-104">Inefficienti regole del flusso di posta (note anche come regole di trasporto) possono causare ritardi del flusso di posta per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="22287-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="22287-105">Questo Insight segnala le regole del flusso di posta che hanno un impatto sul flusso di posta dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="22287-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="22287-106">Esempi di questi tipi di regole sono:</span><span class="sxs-lookup"><span data-stu-id="22287-106">Examples of these types of rules are:</span></span>
+<span data-ttu-id="8f6e2-104">Inefficienti regole del flusso di posta (note anche come regole di trasporto) possono causare ritardi del flusso di posta per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="8f6e2-105">Questo Insight segnala le regole del flusso di posta che hanno un impatto sul flusso di posta dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="8f6e2-106">Esempi di questi tipi di regole sono:</span><span class="sxs-lookup"><span data-stu-id="8f6e2-106">Examples of these types of rules are:</span></span>
 
-- <span data-ttu-id="22287-107">Le condizioni che utilizzano **sono membri di** per gruppi di grandi dimensioni.</span><span class="sxs-lookup"><span data-stu-id="22287-107">Conditions that use **Is member of** for large groups.</span></span>
+- <span data-ttu-id="8f6e2-107">Le condizioni che utilizzano **sono membri di** per gruppi di grandi dimensioni.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-107">Conditions that use **Is member of** for large groups.</span></span>
 
-- <span data-ttu-id="22287-108">Condizioni che utilizzano la corrispondenza del modello di espressione regolare (Regex) complessa.</span><span class="sxs-lookup"><span data-stu-id="22287-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
+- <span data-ttu-id="8f6e2-108">Condizioni che utilizzano la corrispondenza del modello di espressione regolare (Regex) complessa.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
 
-- <span data-ttu-id="22287-109">Condizioni che utilizzano il controllo del contenuto negli allegati.</span><span class="sxs-lookup"><span data-stu-id="22287-109">Conditions that use content checking in attachments.</span></span>
+- <span data-ttu-id="8f6e2-109">Condizioni che utilizzano il controllo del contenuto negli allegati.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-109">Conditions that use content checking in attachments.</span></span>
 
-<span data-ttu-id="22287-110">L'Insight consentirà di identificare e ottimizzare le regole del flusso di posta per contribuire a ridurre i ritardi del flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="22287-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
+<span data-ttu-id="8f6e2-110">L'Insight consentirà di identificare e ottimizzare le regole del flusso di posta per contribuire a ridurre i ritardi del flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
 
-![Una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta nel centro sicurezza & Compliance](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Informazioni sulle regole del flusso di posta lenta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-<span data-ttu-id="22287-112">Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a comparsa dove è possibile esaminare la regola.</span><span class="sxs-lookup"><span data-stu-id="22287-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="22287-113">Nel riquadro a comparsa, è anche possibile fare clic su **Visualizza messaggi di esempio** per visualizzare il tipo di messaggi interessati dalla regola.</span><span class="sxs-lookup"><span data-stu-id="22287-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
+<span data-ttu-id="8f6e2-112">Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a comparsa dove è possibile esaminare la regola.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="8f6e2-113">Nel riquadro a comparsa, è anche possibile fare clic su **Visualizza messaggi di esempio** per visualizzare il tipo di messaggi interessati dalla regola.</span><span class="sxs-lookup"><span data-stu-id="8f6e2-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
 
 ![Riquadro a comparsa dopo aver fatto clic su Visualizza dettagli in una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a><span data-ttu-id="22287-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="22287-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f6e2-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="8f6e2-115">See also</span></span>
 
-<span data-ttu-id="22287-116">Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).</span><span class="sxs-lookup"><span data-stu-id="22287-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).</span></span>
+<span data-ttu-id="8f6e2-116">Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).</span><span class="sxs-lookup"><span data-stu-id="8f6e2-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).</span></span>

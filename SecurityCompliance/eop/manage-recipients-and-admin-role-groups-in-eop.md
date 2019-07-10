@@ -1,8 +1,8 @@
 ---
 title: Gestire destinatari e gruppi di ruoli amministratore in EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
@@ -10,24 +10,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. I seguenti argomenti e i sottoargomenti associati forniscono informazioni e procedure di configurazione per la gestione dei destinatari e l'assegnazione delle autorizzazioni dei gruppi di ruoli di amministratore.
-ms.openlocfilehash: 3abc23190a4ad8fdacf0ce8a67afd6dba2c2b197
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 3b16f35b88e6ab46022f52877e591dcf6580db77
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153098"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599572"
 ---
-# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="beb88-104">Gestire destinatari e gruppi di ruoli amministratore in Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="beb88-104">Manage recipients and admin role groups in EOP</span></span>
+# <a name="manage-recipients-and-admin-role-groups-in-eop"></a><span data-ttu-id="9ddc0-104">Gestire destinatari e gruppi di ruoli amministratore in Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="9ddc0-104">Manage recipients and admin role groups in EOP</span></span>
 
-<span data-ttu-id="beb88-p102">Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. I seguenti argomenti e i sottoargomenti associati forniscono informazioni e procedure di configurazione per la gestione dei destinatari e l'assegnazione delle autorizzazioni dei gruppi di ruoli di amministratore.</span><span class="sxs-lookup"><span data-stu-id="beb88-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
+<span data-ttu-id="9ddc0-p102">Microsoft Exchange Online Protection (EOP) offre diversi modi per gestire i destinatari della posta. I seguenti argomenti e i sottoargomenti associati forniscono informazioni e procedure di configurazione per la gestione dei destinatari e l'assegnazione delle autorizzazioni dei gruppi di ruoli di amministratore.</span><span class="sxs-lookup"><span data-stu-id="9ddc0-p102">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients. The following topics and their associated subtopics provide information and configuration procedures for managing recipients and assigning admin role group permissions.</span></span>
   
-|<span data-ttu-id="beb88-107">**Argomento**</span><span class="sxs-lookup"><span data-stu-id="beb88-107">**Topic**</span></span>|<span data-ttu-id="beb88-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="beb88-108">**Description**</span></span>|
+|<span data-ttu-id="9ddc0-107">**Argomento**</span><span class="sxs-lookup"><span data-stu-id="9ddc0-107">**Topic**</span></span>|<span data-ttu-id="9ddc0-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="9ddc0-108">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="beb88-109">Gestione di destinatari in EOP</span><span class="sxs-lookup"><span data-stu-id="beb88-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md) <br/> |<span data-ttu-id="beb88-110">Vengono descritti i tipi di destinatari in EOP (utenti e gruppi di posta), il modo in cui aggiungere, rimuovere e modificare i destinatari, dove individuare i destinatari nell'interfaccia di amministrazione di Exchange e altri aspetti relativi alla gestione dei destinatari.</span><span class="sxs-lookup"><span data-stu-id="beb88-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>  <br/> |
-|[<span data-ttu-id="beb88-111">Gestire le autorizzazioni del gruppo di ruoli di amministratore in EOP</span><span class="sxs-lookup"><span data-stu-id="beb88-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md) <br/> |<span data-ttu-id="beb88-112">Descrive dove individuare un elenco di ruoli di amministratore in EAC, come aggiungere o rimuovere gli utenti da un gruppo di ruoli di amministratore esistente e quali autorizzazioni occorrono per gestire specifiche funzionalità di EOP.</span><span class="sxs-lookup"><span data-stu-id="beb88-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>  <br/> |
+|[<span data-ttu-id="9ddc0-109">Gestione di destinatari in EOP</span><span class="sxs-lookup"><span data-stu-id="9ddc0-109">Manage recipients in EOP</span></span>](manage-recipients-in-eop.md) <br/> |<span data-ttu-id="9ddc0-110">Vengono descritti i tipi di destinatari in EOP (utenti e gruppi di posta), il modo in cui aggiungere, rimuovere e modificare i destinatari, dove individuare i destinatari nell'interfaccia di amministrazione di Exchange e altri aspetti relativi alla gestione dei destinatari.</span><span class="sxs-lookup"><span data-stu-id="9ddc0-110">Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.</span></span>  <br/> |
+|[<span data-ttu-id="9ddc0-111">Gestire le autorizzazioni del gruppo di ruoli di amministratore in EOP</span><span class="sxs-lookup"><span data-stu-id="9ddc0-111">Manage admin role group permissions in EOP</span></span>](manage-admin-role-group-permissions-in-eop.md) <br/> |<span data-ttu-id="9ddc0-112">Descrive dove individuare un elenco di ruoli di amministratore in EAC, come aggiungere o rimuovere gli utenti da un gruppo di ruoli di amministratore esistente e quali autorizzazioni occorrono per gestire specifiche funzionalità di EOP.</span><span class="sxs-lookup"><span data-stu-id="9ddc0-112">Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.</span></span>  <br/> |
    
-## <a name="for-more-information"></a><span data-ttu-id="beb88-113">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="beb88-113">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="9ddc0-113">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="9ddc0-113">For more information</span></span>
 
-[<span data-ttu-id="beb88-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="beb88-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)
+[<span data-ttu-id="9ddc0-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span><span class="sxs-lookup"><span data-stu-id="9ddc0-114">Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients</span></span>](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)
   
 
