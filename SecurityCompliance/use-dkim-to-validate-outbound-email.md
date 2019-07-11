@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
-ms.openlocfilehash: e29a6e5d92c169c29e7562d9fb563e9ddc6c5d03
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 25427060140caee242944d56b24eaab362c2f36a
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600422"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613684"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
 
@@ -234,7 +234,7 @@ La disabilitazione del criterio di firma non disattiva completamente DKIM. Dopo 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Comportamento predefinito per DKIM e Office 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Se non si abilita DKIM, Office 365 crea automaticamente una chiave pubblica DKIM da 1024 bit per il dominio personalizzato e la chiave privata associata, la quale viene archiviata nei datacenter Microsoft. Per impostazione predefinita, Office 365 utilizza una configurazione di firma predefinita per i domini che non dispongono di un criterio. Ciò significa che se l'utente non configura DKIM, Office 365 utilizza il criterio predefinito e le chiavi create per abilitare DKIM nel dominio.
+Se non si Abilita DKIM, Office 365 crea automaticamente una chiave pubblica DKIM a 1024 bit per il dominio predefinito e la chiave privata associata che viene archiviata internamente nel centro dati. Per impostazione predefinita, Office 365 utilizza una configurazione di firma predefinita per i domini che non dispongono di un criterio. Ciò significa che se l'utente non configura DKIM, Office 365 utilizza il criterio predefinito e le chiavi create per abilitare DKIM nel dominio.
   
 Inoltre, se si disabilita la firma DKIM dopo l'attivazione, Office 365 applica automaticamente (dopo un determinato periodo di tempo) il criterio predefinito di Office 365 per il dominio.
   

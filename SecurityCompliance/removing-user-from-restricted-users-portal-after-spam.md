@@ -3,7 +3,7 @@ title: Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 03/12/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se un utente invia continuamente messaggi di posta elettronica provenienti da Office 365 classificati come posta indesiderata, non invierà più messaggi.
-ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 40d63bb452392041401fd1af6d0d6d4af67e5d2b
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601153"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613654"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
 
@@ -71,6 +71,11 @@ Il criterio per questo avviso è quello predefinito e viene fornito con tutti i 
 - Attivazione/disattivazione delle notifiche tramite posta elettronica
 - Inviare messaggi di posta elettronica ai destinatari necessari
 - Limitare le notifiche ottenibili al giorno
+
+## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Verifica e rimozione di restrizioni tramite PowerShell
+I comandi di PowerShell per gli utenti con restrizioni sono:
+- `Get-BlockedSenderAddress`: Run to recupera l'elenco degli utenti con limitazioni all'invio di messaggi di posta elettronica
+- `Remove-BlockedSenderAddress`: Esegui per rimuovere gli utenti da restrizioni
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
