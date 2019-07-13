@@ -3,7 +3,7 @@ title: Panoramica della prevenzione della perdita di dati
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) &amp; nel centro sicurezza e conformità, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365.
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077852"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672925"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica della prevenzione della perdita di dati
 
 > [!NOTE]
-> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams in Office 365 E5 e Office 365 Advanced Compliance. Per ulteriori informazioni sulla disponibilità delle funzionalità, vedere [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams chat e ai messaggi di canale per gli utenti con licenza per Office 365 Advanced Compliance, che è disponibile come opzione autonoma ed è inclusa in Office 365 E5 e Microsoft 365 E5 Compliance. Per ulteriori informazioni sui requisiti di licenza, vedere [Microsoft 365 tenant-Level Licensing Services guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Per conformarsi agli standard aziendali e alle normative industriali, le organizzazioni devono proteggere le informazioni riservate e impedire la divulgazione involontaria. Le informazioni riservate possono includere dati finanziari o informazioni di identificazione personale (PII), ad esempio numeri di carta di credito, numeri di previdenza sociale o record di integrità. Con un criterio di prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365.
   
@@ -59,7 +59,7 @@ Utilizzando un criterio DLP, è possibile:
 
 In un criterio DLP sono disponibili alcuni elementi di base:
   
-- Dove proteggere il contenuto: **luoghi** quali Exchange Online, SharePoint Online e OneDrive for business, nonché chat e canali di Microsoft teams. 
+- Dove proteggere il contenuto: **luoghi** quali Exchange Online, SharePoint Online e OneDrive for business, oltre a Microsoft teams chat and Channel messages. 
     
 - Quando e in che modo proteggere il contenuto, applicando **regole** composte da: 
     
@@ -75,7 +75,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ### <a name="locations"></a>Percorsi
 
-Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online, OneDrive for business o Microsoft teams. È possibile scegliere di proteggere il contenuto in messaggi di posta elettronica di Exchange, chat e canali di Microsoft teams e tutte le raccolte di SharePoint o OneDrive oppure selezionare percorsi specifici per un criterio.
+Un criterio DLP è in grado di individuare e proteggere le informazioni riservate in Office 365, se tali informazioni sono disponibili in Exchange Online, SharePoint Online, OneDrive for business o Microsoft teams. È possibile scegliere di proteggere il contenuto in posta elettronica di Exchange, chat di Microsoft teams e messaggi di canale e tutte le raccolte di SharePoint o OneDrive oppure selezionare percorsi specifici per un criterio.
   
 ![Opzioni per la posizione in cui è possibile applicare un criterio DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ Dopo aver creato un criterio DLP nel centro sicurezza &amp; e conformità, quest
     
 - Programmi desktop di Office (Excel, PowerPoint e Word)
 
-- Canali e chat di Microsoft Teams
+- Canali di Microsoft teams e messaggi di chat
     
 Dopo che i criteri sono stati sincronizzati con i percorsi giusti, viene avviata la valutazione del contenuto e l'applicazione delle azioni.
   
@@ -481,7 +481,7 @@ La valutazione del criterio DLP in Office è progettata per non influire sulle p
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Valutazione del criterio in Microsoft Teams
  
-Quando si crea un criterio DLP che include Microsoft teams come percorso, i criteri vengono sincronizzati dal centro sicurezza &amp; e conformità di Office 365 agli account utente e ai canali e alle chat di Microsoft teams. A seconda del modo in cui vengono configurati i criteri DLP, quando un utente tenta di condividere informazioni riservate in una chat o un canale di Microsoft teams, il messaggio può essere bloccato o revocato. Inoltre, i documenti che contengono informazioni riservate e che sono condivisi con gli ospiti (utenti esterni) non verranno aperti per tali utenti. Per ulteriori informazioni, vedere [prevenzione della perdita di dati e Microsoft teams](dlp-microsoft-teams.md).
+Quando si crea un criterio DLP che include Microsoft teams come percorso, il criterio è sincronizzato dal centro sicurezza &amp; e conformità di Office 365 per gli account utente e i canali di Microsoft teams e i messaggi di chat. A seconda del modo in cui vengono configurati i criteri DLP, quando un utente tenta di condividere le informazioni riservate in un messaggio di chat o di canale di Microsoft teams, il messaggio può essere bloccato o revocato. Inoltre, i documenti che contengono informazioni riservate e che sono condivisi con gli ospiti (utenti esterni) non verranno aperti per tali utenti. Per ulteriori informazioni, vedere [prevenzione della perdita di dati e Microsoft teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Autorizzazioni
 
