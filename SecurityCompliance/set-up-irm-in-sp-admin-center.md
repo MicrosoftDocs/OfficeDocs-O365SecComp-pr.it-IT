@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Informazioni su come utilizzare IRM di SharePoint Online tramite Microsoft Azure Active Directory Rights Management Services (RMS) per proteggere gli elenchi e le raccolte documenti di SharePoint.
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156558"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756848"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ Dopo aver attivato il servizio Rights Management, accedere all'interfaccia di am
     
 3. Nel riquadro sinistro scegliere interfaccia di **Amministrazione** \> di **SharePoint**.
     
-4. Nel riquadro sinistro scegliere **Impostazioni**.
+4. Nel riquadro a sinistra, scegliere **Impostazioni**, quindi **pagina impostazioni classiche**.
     
 5. Nella sezione **Information Rights Management (IRM)** scegliere **utilizza il servizio IRM specificato nella configurazione**, quindi scegliere **Aggiorna impostazioni IRM**. Dopo aver eseguito l'aggiornamento delle impostazioni di IRM, gli utenti dell'organizzazione possono iniziare a utilizzare IRM negli elenchi di SharePoint e nelle raccolte documenti. Tuttavia, le opzioni per eseguire questa operazione possono richiedere fino a un'ora per essere visualizzate nelle impostazioni della raccolta e nelle impostazioni degli elenchi.
     
