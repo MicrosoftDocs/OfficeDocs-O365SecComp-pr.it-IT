@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547981"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772163"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -72,7 +72,8 @@ Le etichette di conservazione sono blocchi indipendenti e riutilizzabili che ven
   
 ![Diagramma di etichette, criteri per le etichette e posizioni](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione. 
+1. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione. Tenere presente che i nomi delle etichette di conservazione sono immutabili e non possono essere modificati una volta creati.
+
 
 2. Una singola etichetta di conservazione può essere inclusa in molti criteri di etichetta di conservazione.
 
