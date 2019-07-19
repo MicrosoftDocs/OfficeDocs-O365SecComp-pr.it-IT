@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62f0dc9e32e89954b2838b70757d3a7c17d79cc4
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: f88bdcfc4ac7ed31ec44a7d18bd74cc2a1842bc5
+ms.sourcegitcommit: 2560a3ecc6a5e3b8b79bbf56a157b66c7553682e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672973"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795582"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Esaminare le conversazioni in Advanced eDiscovery 
 
@@ -85,7 +85,7 @@ Per abilitare il recupero delle conversazioni:
   
 2. Selezionare un set di revisione esistente o creare un set di revisione. È possibile configurare le opzioni di recupero quando si aggiungono i risultati di ricerca a un set di revisione standard o di conversazione.
   
-3. Configurare le opzioni di recupero delle conversazioni per le origini di contenuto che si desidera espandere nella ricerca, quindi fare clic su **Aggiungi** per avviare il processo.  
+3. In **Opzioni di raccolta**configurare le opzioni di recupero delle conversazioni per le origini di contenuto che si desidera espandere nella ricerca, quindi fare clic su **Aggiungi** per avviare il processo.  
   
 4. Dopo aver completato il processo **di installazione del set di revisione** nella scheda **processi** , è possibile iniziare a rivedere le conversazioni.
 
@@ -97,9 +97,15 @@ Dopo che il contenuto è stato elaborato e aggiunto al set di revisione, è poss
 
 In un set di revisione standard, i messaggi vengono elaborati e visualizzati come singoli elementi, analogamente a come vengono archiviati in una cartella delle cassette postali. In questo flusso di lavoro, ogni messaggio viene elaborato come elemento separato. Di conseguenza, le opzioni di riepilogo e esportazione filettate non sono disponibili in un set di analisi standard. 
 
+  ![Set di revisione standard](../media/standardrs.PNG)
+
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisione delle conversazioni in un set di recensioni di conversazione
 
-In un set di revisione della conversazione, i singoli messaggi vengono configurati insieme e presentati come conversazioni. In questo modo è possibile esaminare ed esportare conversazioni contestuali. Nelle sezioni seguenti viene descritta la revisione e l'esportazione delle conversazioni in un set di recensioni di conversazione.
+In un set di revisione della conversazione, i singoli messaggi vengono configurati insieme e presentati come conversazioni. In questo modo è possibile esaminare ed esportare conversazioni contestuali. 
+
+  ![Set di revisione della conversazione](../media/ConversationRSOptions.PNG)
+
+Nelle sezioni seguenti viene descritta la revisione e l'esportazione delle conversazioni in un set di recensioni di conversazione.
 
 #### <a name="reviewing-conversations"></a>Revisione delle conversazioni
 
@@ -117,9 +123,9 @@ In un set di recensioni di conversazione è possibile utilizzare le opzioni segu
 
 - **Visualizzazione annotazioni:** Consente di markup di una visualizzazione con thread della conversazione. Tutti i messaggi della conversazione condividono lo stesso documento con annotazioni.
 
-- **Tag:** Quando si visualizzano le conversazioni in un set di revisione, è possibile visualizzare e applicare i tag facendo clic sul **Pannello di codifica**.
+- **Tagging:** Quando si visualizzano le conversazioni in un set di revisione, è possibile visualizzare e applicare i tag facendo clic su **tagging** nel pannello di codifica.
 
-- **Rieseguire la conversione della conversazione:** Quando i messaggi vengono aggiunti a un set di revisione della conversazione, viene eseguito automaticamente un processo di conversione per creare il riepilogo filettato e le visualizzazioni annotazioni. Se il processo di ricostruzione della conversazione ha esito negativo, è possibile eseguire nuovamente il processo di conversione facendo clic su **azione > creare file PDF di conversazione** nel set di revisione.
+- **Rieseguire la conversione della conversazione:** Quando i messaggi vengono aggiunti a un set di revisione della conversazione, viene eseguito automaticamente un processo di conversione per creare il riepilogo filettato e le visualizzazioni annotazioni. Se il processo di ricostruzione della conversazione ha esito negativo, è possibile rieseguire questo processo facendo clic su **azione > creare file PDF di conversazione** nel set di revisione.
 
 
 #### <a name="exporting-conversations"></a>Esportazione di conversazioni
