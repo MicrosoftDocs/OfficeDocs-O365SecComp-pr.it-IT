@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756858"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820489"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -163,6 +163,6 @@ No.
   
 Microsoft ha avviato l'archiviazione dei dati di chat dei team per gli utenti locali il 31 gennaio 2018. Pertanto, se l'identità di un utente di team locale è stata sincronizzata tra Active Directory e Azure Active Directory da questa data, i dati della chat dei team vengono archiviati in una cassetta postale basata sul cloud ed è possibile eseguire ricerche tramite ricerca contenuto. Microsoft sta lavorando anche per archiviare i dati della chat di Teams da prima del 31 gennaio 2018 nelle cassette postali basate sul cloud per gli utenti locali. Ulteriori informazioni su questo saranno disponibili a breve.
 
- * * Gli utenti locali hanno bisogno di una licenza per archiviare i dati della chat dei team in una cassetta postale basata su cloud? 
+ **Gli utenti locali devono disporre di una licenza per archiviare i dati della chat dei team in una cassetta postale basata su cloud?**
   
 Sì. Per archiviare i dati di chat dei team per un utente locale in una cassetta postale basata su cloud, all'utente deve essere assegnata una licenza Microsoft teams e una licenza di Exchange Online Plan in Office 365 (o Microsoft 365).

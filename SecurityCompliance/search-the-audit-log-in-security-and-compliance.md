@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilizzare il Centro sicurezza & conformità per eseguire una ricerca nel registro di controllo unificato per visualizzare l'attività dell'utente e dell'amministratore nell'organizzazione di Office 365. "
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756878"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820499"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance
 
@@ -329,6 +329,7 @@ Nella tabella seguente vengono descritte le attività relative a file e pagine i
 |File modificato  <br/> |Filemodified  <br/> |L'account utente o di sistema consente di modificare il contenuto o le proprietà di un documento in un sito.  <br/> |
 |nessuno  <br/> |FileModifiedExtended  <br/> |Questa operazione è correlata all'attività "file modificato" (filemodified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica continuamente un file per un periodo di tempo prolungato (fino a 3 ore). Lo scopo della registrazione degli eventi di FileModifiedExtended consiste nel ridurre il numero di eventi filemodified che vengono registrati quando un file viene continuamente modificato. In questo modo si riduce il rumore di più record filemodified per ciò che è essenzialmente la stessa attività utente e consente di concentrarsi sull'evento di filemodified iniziale (e più importante).  <br/> |
 |File spostato  <br/> |Filemoved  <br/> |L'utente sposta un documento dal percorso corrente di un sito a un nuovo percorso.  <br/> |
+|nessuno  <br/> |Filepreview  <br/> |Gli utenti visualizzano le anteprime dei file in un sito di SharePoint o OneDrive for business. Questi eventi si verificano in genere in volumi elevati basati su una singola attività, ad esempio la visualizzazione di una raccolta immagini.  <br/> |
 |Recycled tutte le versioni secondarie del file  <br/> |FileVersionsAllMinorsRecycled  <br/> |L'utente Elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
 |Recycled tutte le versioni di file  <br/> |FileVersionsAllRecycled  <br/> |L'utente Elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel cestino del sito.  <br/> |
 |Versione riciclata del file  <br/> |FileVersionRecycled  <br/> |L'utente elimina una versione dalla cronologia delle versioni di un file. La versione eliminata viene spostata nel cestino del sito.  <br/> |
