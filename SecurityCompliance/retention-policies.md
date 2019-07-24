@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o solo a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772173"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840904"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -78,7 +78,7 @@ Quanto descritto in precedenza vale per il contenuto esistente al momento dell'a
   
 Tenere presente che, se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetto a criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina tutti i file presenti nella cartella soggetta ai criteri. Tenere presente anche che la raccolta di archiviazione viene creata solo quando è necessario creare il primo elemento nella raccolta e non quando si creano i criteri di conservazione. Per testare i criteri, è quindi necessario modificare o eliminare un documento in un sito soggetto ai criteri e quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
   
-![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 Dopo che i criteri di conservazione vengono assegnati a un account di OneDrive o a un sito di SharePoint, il contenuto può seguire uno dei due percorsi seguenti:
   
