@@ -9,18 +9,18 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Con un criterio di prevenzione della perdita di dati (DLP) &amp; nel centro sicurezza e conformità, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365.
-ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
-ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
+ms.openlocfilehash: 35dbaf11685298f2db07c5c516f8d20237eaaf20
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672925"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854770"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica della prevenzione della perdita di dati
 

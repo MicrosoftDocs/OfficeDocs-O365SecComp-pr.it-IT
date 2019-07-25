@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come utilizzare il caricamento di rete per importare in blocco più file PST nelle cassette postali degli utenti in Office 365.'
-ms.openlocfilehash: fb64eecdbeac40aa597d17459f06525b8859fb1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bd15216df69e003a5aaddb2ec21ede4da5c5c312
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156168"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854820"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Utilizzare il caricamento di rete per importare i file PST dell'organizzazione in Office 365
 
@@ -48,7 +48,7 @@ Tenere presente che è necessario eseguire il passaggio 1 solo una volta per imp
   
 - È necessario essere assegnati al ruolo di esportazione delle cassette postali in Exchange Online per importare i file PST nelle cassette postali di Office 365. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Per ulteriori informazioni, vedere la sezione "aggiungere un ruolo a un gruppo di ruoli" o "creare un gruppo di ruoli" in [Manage Role](https://go.microsoft.com/fwlink/p/?LinkId=730688)groups.
     
-    Per creare processi di importazione nel centro sicurezza & Compliance, è inoltre necessario che sia vero uno dei seguenti valori:
+    Per creare processi di importazione nel centro sicurezza & conformità, è inoltre necessario che sia vero uno dei seguenti valori:
     
   - È necessario essere assegnati al ruolo destinatari di posta elettronica in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -91,10 +91,10 @@ Il primo passaggio consiste nel scaricare e installare lo strumento di AzCopy di
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su \> **importazione**di **governance dei dati** .
+2. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su \> **importazione**di **governance dei dati** .
     
     > [!NOTE]
-    > È necessario disporre delle autorizzazioni appropriate per accedere alla pagina di **importazione** nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere la sezione **prima di iniziare** . 
+    > È necessario disporre delle autorizzazioni appropriate per accedere alla pagina di **importazione** nel centro sicurezza & conformità. Per ulteriori informazioni, vedere la sezione **prima di iniziare** . 
     
 3. Nella pagina **Importa** , fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo processo di importazione**.
     
@@ -240,11 +240,11 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore nell'organizzazione di Office 365. 
     
-2. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su **governance dei dati** e quindi fare clic su **Importa**.
+2. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su **governance dei dati** e quindi su **Importa**.
     
 3. Nella pagina **Importa** , fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **nuovo processo di importazione**.
     
-    **Nota:** Per creare un nuovo processo di importazione, è necessario disporre delle autorizzazioni appropriate per accedere alla pagina di **importazione** nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere la sezione **prima di iniziare** . 
+    **Nota:** Per creare un nuovo processo di importazione, è necessario disporre delle autorizzazioni appropriate per accedere alla pagina di **importazione** nel centro sicurezza & conformità. Per ulteriori informazioni, vedere la sezione **prima di iniziare** . 
     
 4. Digitare un nome per il processo di importazione PST e quindi fare clic su **Avanti**. Utilizzare lettere minuscole, numeri, trattini e caratteri di sottolineatura. Non è possibile utilizzare lettere maiuscole o includere spazi nel nome.
     
@@ -280,7 +280,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
 
 Dopo aver creato il processo di importazione nel passaggio 5, Office 365 analizza i dati nei file PST (in modo sicuro e sicuro) identificando l'età degli elementi e i diversi tipi di messaggi inclusi nei file PST. Al termine dell'analisi e i dati sono pronti per l'importazione, si ha la possibilità di importare tutti i dati contenuti nei file PST oppure è possibile tagliare i dati importati impostando filtri che controllano quali dati vengono importati.
   
-1. Nella pagina **Importa** del Centro sicurezza & Compliance fare clic su **pronto per l'importazione in Office 365** per il processo di importazione creato nel passaggio 5. 
+1. Nella pagina **Importa** del centro sicurezza & conformità fare clic su **pronto per l'importazione in Office 365** per il processo di importazione creato nel passaggio 5. 
     
     ![Fare clic su pronto per l'importazione in Office 365 accanto al processo di importazione creato](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -314,7 +314,7 @@ Ecco un'illustrazione e una descrizione del processo di caricamento di rete per 
   
 ![Flusso di lavoro del processo di caricamento di rete per importare i file PST in Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Scaricare lo strumento di importazione PST e la chiave per la posizione di archiviazione di Azure privata** -il primo passaggio consiste nel scaricare lo strumento da riga di comando di Azure AzCopy e un tasto di accesso utilizzato per caricare i file PST in una posizione di archiviazione di Azure nel cloud Microsoft. Tali dati vengono ottenuti dalla pagina **Importa** del Centro sicurezza & Compliance. La chiave, denominata chiave SAS (Secure Access Signature), fornisce le autorizzazioni necessarie per caricare i file PST in una posizione di archiviazione privata e protetta di Azure. Questo tasto di accesso è univoco per l'organizzazione e consente di impedire l'accesso non autorizzato ai file PST dopo che sono stati caricati nel cloud Microsoft. Si noti che l'importazione di file PST in Office 365 non richiede che l'organizzazione disponga di una sottoscrizione di Azure distinta. 
+1. **Scaricare lo strumento di importazione PST e la chiave per la posizione di archiviazione di Azure privata** -il primo passaggio consiste nel scaricare lo strumento da riga di comando di Azure AzCopy e un tasto di accesso utilizzato per caricare i file PST in una posizione di archiviazione di Azure nel cloud Microsoft. Tali dati vengono ottenuti dalla pagina **Importa** nel centro sicurezza & conformità. La chiave, denominata chiave SAS (Secure Access Signature), fornisce le autorizzazioni necessarie per caricare i file PST in una posizione di archiviazione privata e protetta di Azure. Questo tasto di accesso è univoco per l'organizzazione e consente di impedire l'accesso non autorizzato ai file PST dopo che sono stati caricati nel cloud Microsoft. Si noti che l'importazione di file PST in Office 365 non richiede che l'organizzazione disponga di una sottoscrizione di Azure distinta. 
     
 2. **Caricare i file pst nel percorso di archiviazione di Azure** -il passaggio successivo consiste nell'utilizzare lo strumento AzCopy. exe (scaricato nel passaggio 1) per caricare e archiviare i file PST in una posizione di archiviazione di Azure che risiede nello stesso datacenter Microsoft regionale in cui Office 365 l'organizzazione si trova. Per caricarli, i file PST che si desidera importare in Office 365 devono trovarsi in una condivisione file o in un file server nell'organizzazione.
     
@@ -322,11 +322,11 @@ Ecco un'illustrazione e una descrizione del processo di caricamento di rete per 
     
 3. **Creare un file di mapping di importazione PST** -dopo che i file PST sono stati caricati nel percorso di archiviazione di Azure, il passaggio successivo consiste nel creare un file con valori delimitati da virgole (CSV) che specifichi le cassette postali degli utenti a cui verranno importati i file PST, si noti che un file PST può essere  importato nella cassetta postale principale o nella cassetta postale di archiviazione di un utente. Il servizio di importazione di Office 365 utilizzerà le informazioni contenute nel file CSV per importare i file PST.
     
-4. **Creare un processo di importazione PST** -il passaggio successivo consiste nel creare un processo di importazione PST nella pagina **Importa** del centro conformità & sicurezza e nel inviare il file di mapping di importazione PST creato nel passaggio precedente. Dopo aver creato il processo di importazione, Office 365 analizza i dati nei file PST e quindi consente di impostare filtri che controllano quali dati vengono effettivamente importati nelle cassette postali specificate nel file di mapping di importazione PST. 
+4. **Creare un processo di importazione PST** -il passaggio successivo consiste nel creare un processo di importazione PST nella pagina **Import** del Centro sicurezza & compliance e nel inviare il file di mapping di importazione PST creato nel passaggio precedente. Dopo aver creato il processo di importazione, Office 365 analizza i dati nei file PST e quindi consente di impostare filtri che controllano quali dati vengono effettivamente importati nelle cassette postali specificate nel file di mapping di importazione PST. 
     
 5. **Filtrare i dati pst che verranno** importati nelle cassette postali-dopo la creazione e l'avvio del processo di importazione, Office 365 analizza i dati nei file PST (in modo sicuro e sicuro) identificando l'età degli elementi e i diversi tipi di messaggi inclusi nei file PST . Al termine dell'analisi e i dati sono pronti per l'importazione, si ha la possibilità di importare tutti i dati contenuti nei file PST oppure è possibile tagliare i dati importati impostando filtri che controllano quali dati vengono importati.
     
-6. **Avviare il processo di importazione PST** -dopo l'avvio del processo di importazione, Office 365 utilizza le informazioni contenute nel file di mapping di importazione PST per importare i file di PST dal percorso di archiviazione di Azure alle cassette postali degli utenti. Le informazioni sullo stato relative al processo di importazione (incluse le informazioni su ogni file PST importato) vengono visualizzate nella pagina **Importa** del Centro sicurezza & Compliance. Al termine del processo di importazione, lo stato del processo è impostato su **completo**.
+6. **Avviare il processo di importazione PST** -dopo l'avvio del processo di importazione, Office 365 utilizza le informazioni contenute nel file di mapping di importazione PST per importare i file di PST dal percorso di archiviazione di Azure alle cassette postali degli utenti. Le informazioni sullo stato relative al processo di importazione (incluse le informazioni su ogni file PST importato) vengono visualizzate nella pagina **Importa** del centro sicurezza & conformità. Al termine del processo di importazione, lo stato del processo è impostato su **completo**.
   
 ## <a name="more-information"></a>Ulteriori informazioni
 

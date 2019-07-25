@@ -17,29 +17,29 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & compliance in un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
+ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154548"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854650"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
-Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Nei risultati di ricerca esportati, sono presenti altri documenti e report.
+Una volta eseguita correttamente una ricerca di contenuto, è possibile esportare i risultati della ricerca in un computer locale. Quando si esportano i risultati di posta elettronica, questi vengono scaricati nel computer sotto forma di file PST. Quando si esporta contenuto da siti di SharePoint e OneDrive for business, vengono esportate copie dei documenti di Office nativi. Sono inclusi altri documenti e report con i risultati della ricerca esportati.
   
-Inoltre, tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati di una ricerca di contenuto verranno decrittografati quando vengono esportati (come singoli messaggi). Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione Decrypt RMS è assegnato a questo gruppo di ruoli. Vedere la sezione [ulteriori informazioni](#more-information) per informazioni dettagliate sulla decrittografia RMS quando si esportano i risultati della ricerca. 
+Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultati di una ricerca di contenuto verranno decrittografati quando vengono esportati (come singoli messaggi). Questa funzionalità di decrittografia è abilitata per impostazione predefinita per i membri del gruppo di ruoli eDiscovery Manager. Ciò è dovuto al fatto che il ruolo di gestione Decrypt RMS è assegnato a questo gruppo di ruoli. Vedere la sezione [ulteriori informazioni](#more-information) per informazioni dettagliate sulla decrittografia RMS quando si esportano i risultati della ricerca. 
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per esportare i risultati della ricerca, è necessario essere assegnati al ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
+- Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
 - Il computer utilizzato per esportare i risultati della ricerca deve soddisfare i seguenti requisiti di sistema:
     
-  - Windows 7 a 32 o 64 bit e versioni successive
+  - versioni a 32 bit o 64 bit di Windows 7 e versioni successive
     
   - Microsoft .NET Framework 4.7
     
@@ -55,13 +55,13 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
 - Quando si scaricano i risultati della ricerca (descritti nel passaggio 2), è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Microsoft Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. Verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
+- Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft prima che vengano scaricati nel computer locale. Assicurarsi che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
     
 - Se l'organizzazione utilizza un server proxy per comunicare con Internet, è necessario definire le impostazioni del server proxy nel computer utilizzato per esportare i risultati della ricerca, in modo che lo strumento di esportazione possa essere autenticato dal server proxy. A tale scopo, aprire il file *Machine. config* nel percorso corrispondente alla versione di Windows in uso. 
     
-  - **32 bit** - `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
+  - **32 bit:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
-  - **64 bit** - `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
+  - **64 bit:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
     Aggiungere le righe seguenti al file *Machine. config* da qualche parte tra `<configuration>` i `</configuration>` tag e. Assicurarsi di sostituire `ProxyServer` e `Port` con i valori corretti per l'organizzazione; ad esempio, `proxy01.contoso.com:80` . 
     
@@ -78,13 +78,13 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Passaggio 1: Preparare i risultati della ricerca per l'esportazione
 
-Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, vengono caricati in una posizione di archiviazione di Azure nel cloud Microsoft. Si noti che il contenuto delle cassette postali e dei siti viene caricato a una velocità massima di 2 GB/ora.
+Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft. Il contenuto delle cassette postali e dei siti viene caricato a una velocità massima di 2 GB/ora.
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro del Centro sicurezza & Compliance fare clic su ricerca **contenuto** **ricerca** \> .
+3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca **** \> **contenuto**ricerca.
     
 4. Nella pagina **Ricerca contenuto** selezionare una ricerca. 
     
@@ -105,13 +105,13 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
     
 7. In **Esporta contenuto di Exchange come**scegliere una delle seguenti opzioni:
     
-    - **Un file PST per ogni cassetta postale** -esporta un file PST per ogni cassetta postale utente che contiene i risultati della ricerca. Tutti i risultati della cassetta postale di archiviazione dell'utente sono inclusi nello stesso file PST. Si noti che questa opzione riproduce la struttura della cartella delle cassette postali dalla cassetta postale di origine. 
+    - **Un file PST per ogni cassetta postale:** Esporta un file PST per ogni cassetta postale utente che contiene i risultati della ricerca. Tutti i risultati della cassetta postale di archiviazione dell'utente sono inclusi nello stesso file PST. Questa opzione riproduce la struttura delle cartelle delle cassette postali dalla cassetta postale di origine. 
     
-    - **Un file PST contenente tutti i messaggi** -esporta un singolo file PST (denominato *Exchange. pst* ) contenente i risultati della ricerca da tutte le cassette postali di origine incluse nella ricerca. Si noti che questa opzione riproduce la struttura della cartella delle cassette postali per ogni messaggio. 
+    - **Un file PST contenente tutti i messaggi:** Esporta un singolo file PST (denominato *Exchange. pst*) contenente i risultati della ricerca provenienti da tutte le cassette postali di origine incluse nella ricerca. Questa opzione riproduce la struttura delle cartelle delle cassette postali per ogni messaggio. 
     
-    - Un **file PST contenente tutti i messaggi in una singola cartella** : Esporta i risultati della ricerca in un singolo file PST in cui tutti i messaggi si trovano in una singola cartella di primo livello. Questa opzione consente ai revisori di esaminare gli elementi in ordine cronologico (gli elementi sono ordinati in base alla data di invio) senza dover esplorare la struttura delle cartelle della cassetta postale originale per ogni elemento. 
+    - **Un file PST contenente tutti i messaggi in una singola cartella:** Esporta i risultati della ricerca in un singolo file PST in cui tutti i messaggi si trovano in una singola cartella di primo livello. Questa opzione consente ai revisori di esaminare gli elementi in ordine cronologico (gli elementi sono ordinati in base alla data di invio) senza dover esplorare la struttura delle cartelle della cassetta postale originale per ogni elemento. 
     
-    - **Singoli messaggi** -Esporta i risultati della ricerca come singoli messaggi di posta elettronica, utilizzando il formato. msg. Se si seleziona questa opzione, i risultati della ricerca della posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi è identico a quello utilizzato se i risultati sono stati esportati in file PST. 
+    - **Singoli messaggi:** Esporta i risultati della ricerca come singoli messaggi di posta elettronica, utilizzando il formato. msg. Se si seleziona questa opzione, i risultati della ricerca della posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi è identico a quello utilizzato se i risultati sono stati esportati in file PST. 
     
       > [!IMPORTANT]
       > Per decrittografare i messaggi crittografati con RMS quando vengono esportati, è necessario esportare i risultati della ricerca tramite posta elettronica come singoli messaggi. I messaggi crittografati rimarranno crittografati se i risultati della ricerca vengono esportati come file PST. 
@@ -144,11 +144,11 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
     - Se gli elementi esportati saranno indicizzati o non indicizzati. Gli elementi non indicizzati sono elementi che hanno un formato riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi. Per ulteriori informazioni, vedere [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
     
-    - Se verranno scaricate o meno versioni di documenti SharePoint.
+    - Se verranno scaricate le versioni dei documenti di SharePoint.
     
     - Lo stato del processo di preparazione all’esportazione. È possibile avviare il download dei risultati della ricerca anche se la preparazione dei dati non è stata completata.
     
-2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Si utilizzerà questa chiave per scaricare i risultati della ricerca nel passaggio 5.
+2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Utilizzare questa chiave nel passaggio 5 per scaricare i risultati della ricerca.
     
     > [!NOTE]
     > Poiché chiunque può installare e avviare lo strumento di esportazione eDiscovery e quindi utilizzare questa chiave per scaricare i risultati della ricerca, è bene assicurarsi di adottare alcune precauzioni per proteggere la chiave così come si proteggono le password o altre informazioni relative alla sicurezza.  
@@ -190,7 +190,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
  ### <a name="export-limits"></a>Limiti di esportazione
   
-- L'esportazione dei risultati di ricerca dal centro sicurezza & Compliance ha i seguenti limiti:
+- L'esportazione dei risultati di ricerca dal centro sicurezza & conformità presenta i seguenti limiti:
     
   - È possibile esportare un massimo di 2 TB di dati da una singola ricerca di contenuto. Se i risultati della ricerca sono superiori a 2 TB, prendere in considerazione l'utilizzo di intervalli di date o di altri tipi di filtri per ridurre le dimensioni totali dei risultati della ricerca.
     
@@ -203,11 +203,11 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   > [!NOTE]
   > L'esportazione solo dei rapporti da una ricerca di contenuto conta anche sul numero di esportazioni in esecuzione contemporaneamente e sul numero di esportazioni che un singolo utente può eseguire.
     
-- Come indicato in precedenza, i risultati della ricerca provenienti da cassette postali e siti vengono caricati nel percorso di archiviazione di Azure (come descritto nel [passaggio 1: preparare i risultati della ricerca per l'esportazione](#step-1-prepare-search-results-for-export)) a una velocità massima di 2 GB all'ora.
+- Come indicato in precedenza, i risultati della ricerca provenienti da cassette postali e siti vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft (come descritto nel [passaggio 1: preparare i risultati della ricerca per l'esportazione](#step-1-prepare-search-results-for-export)) a una velocità massima di 2 GB all'ora.
     
-- La dimensione massima di un file PST che può essere esportato è di 10 GB per impostazione predefinita. Questo significa che se i risultati della ricerca della cassetta postale di un utente sono superiori a 10 GB, i risultati della ricerca della cassetta postale verranno esportati in due (o più) file PST separati. Inoltre, se si sceglie di esportare tutti i risultati della ricerca in un singolo file PST, il file pst verrà suddiviso in file PST aggiuntivi se la dimensione complessiva dei risultati di ricerca è superiore a 10 GB. Se si desidera modificare queste dimensioni predefinite, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Vedere [modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
+- La dimensione massima di un file PST che può essere esportato è di 10 GB per impostazione predefinita. Questo significa che se i risultati della ricerca della cassetta postale di un utente sono superiori a 10 GB, i risultati della ricerca della cassetta postale verranno esportati in due (o più) file PST separati. Se si sceglie di esportare tutti i risultati della ricerca in un singolo file PST, il file PST verrà suddiviso in file PST aggiuntivi se la dimensione complessiva dei risultati della ricerca è superiore a 10 GB. Se si desidera modificare queste dimensioni predefinite, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Vedere [modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    I risultati della ricerca di una cassetta postale specifica, inoltre, non verranno suddivisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base alla d inviata mangiato.
+    Inoltre, i risultati della ricerca di una cassetta postale specifica non verranno divisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base alla d inviata mangiato.
      
  ### <a name="export-reports"></a>Esporta rapporti
   
@@ -227,7 +227,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
         
       - Il mittente e i destinatari del messaggio.
         
-      - Se il messaggio è un messaggio duplicato se è stata abilitata l'opzione di deduplicazione quando si esportano i risultati della ricerca. I messaggi duplicati avranno un valore nella colonna **Duplica a elemento** che identifica il messaggio come duplicato. Il valore nella colonna **Duplica all'elemento** contiene l'identità dell'elemento del messaggio che è stato esportato. Per ulteriori informazioni, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md).
+      - Se il messaggio è un messaggio duplicato se è stata abilitata l'opzione di deduplicazione quando si esportano i risultati della ricerca. I messaggi duplicati dispongono di un valore nella colonna **Duplica a elemento** che identifica il messaggio come duplicato. Il valore nella colonna **Duplica all'elemento** contiene l'identità dell'elemento del messaggio che è stato esportato. Per ulteriori informazioni, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md).
         
       Per i documenti dei siti di SharePoint e OneDrive for business, il log dei risultati contiene informazioni su ogni documento, tra cui:
         
@@ -243,7 +243,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
   - **Errori e avvisi** Contiene errori e avvisi relativi ai file riscontrati durante l'esportazione. Per informazioni specifiche su ogni singolo errore o avviso, vedere la colonna Error details. 
     
-  - **Elementi ignorati** Quando si esportano i risultati della ricerca da siti di SharePoint e OneDrive for business, l'esportazione include in genere un rapporto elementi ignorati (SkippedItems. csv). Gli elementi citati in questo report sono in genere elementi che non verranno scaricati, ad esempio una cartella o un set di documenti. L'esportazione di questo tipo di elementi è in base alla progettazione. Per gli altri elementi ignorati, il campo ' tipo di errore ' è Error details ' del rapporto elementi ignorati Mostra il motivo per cui l'elemento è stato ignorato e non è stato scaricato con gli altri risultati della ricerca. 
+  - **Elementi ignorati** Quando si esportano i risultati della ricerca da siti di SharePoint e OneDrive for business, l'esportazione include in genere un rapporto elementi ignorati (SkippedItems. csv). Gli elementi citati in questo report sono in genere elementi che non verranno scaricati, ad esempio una cartella o un set di documenti. L'esportazione di questi tipi di elementi è in base alla progettazione. Per gli altri elementi ignorati, il campo ' tipo di errore ' è Error details ' del rapporto elementi ignorati Mostra il motivo per cui l'elemento è stato ignorato e non è stato scaricato con gli altri risultati della ricerca. 
     
   - **Registro di traccia** Contiene informazioni dettagliate sulla registrazione relative al processo di esportazione e può essere utile per scoprire i problemi durante l'esportazione. 
     
@@ -254,7 +254,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
 - Se si stanno esportando elementi della cassetta postale da una ricerca di contenuto che restituisce tutti gli elementi delle cassette postali nei risultati della ricerca (perché nessuna parola chiave dove è inclusa nella query di ricerca), gli elementi parzialmente indicizzati non verranno copiati nel file PST che contiene gli elementi non indicizzati. Ciò è dovuto al fatto che tutti gli elementi, compresi gli elementi parzialmente indicizzati, vengono inclusi automaticamente nei risultati di ricerca normali. Questo significa che gli elementi parzialmente indicizzati verranno inclusi in un file PST (o come singoli messaggi) che contiene gli altri elementi indicizzati.
     
-    Inoltre, se si esportano sia gli elementi indicizzati che quelli parzialmente indicizzati oppure se si esportano solo gli elementi indicizzati da una ricerca di contenuto che restituisce tutti gli elementi, verrà scaricato lo stesso numero di elementi. Questo accade anche se i risultati della ricerca stimati per la ricerca di contenuto (visualizzati nelle statistiche di ricerca nel centro sicurezza & Compliance) continueranno a includere una stima distinta per il numero di elementi parzialmente indicizzati. Si supponga, ad esempio, che la stima di una ricerca che includa tutti gli elementi (nessuna parola chiave nella query di ricerca) indichi che sono stati trovati 1.000 elementi e che sono stati trovati anche gli elementi parzialmente indicizzati 200. In questo caso, gli elementi 1.000 includono gli elementi parzialmente indicizzati poiché la ricerca restituisce tutti gli elementi. In altre parole, sono disponibili 1.000 elementi totali restituiti dalla ricerca e non 1.200 elementi (come si potrebbe immaginare). Se si esportano i risultati della ricerca e si sceglie di esportare gli elementi indicizzati e parzialmente indicizzati (o solo gli elementi indicizzati), verranno scaricati gli elementi 1.000. Di nuovo, perché gli elementi parzialmente indicizzati sono inclusi nei risultati regolari (indicizzati) quando si utilizza una query di ricerca vuota per restituire tutti gli elementi. In questo stesso esempio, se si sceglie di esportare solo gli elementi parzialmente indicizzati, verranno scaricati solo gli elementi 200 non indicizzati.
+    Se si esportano sia gli elementi indicizzati che quelli parzialmente indicizzati oppure se si esportano solo gli elementi indicizzati da una ricerca di contenuto che restituisce tutti gli elementi, verrà scaricato lo stesso numero di elementi. Questo accade anche se i risultati della ricerca stimati per la ricerca di contenuto (visualizzati nelle statistiche di ricerca nel centro sicurezza & conformità) continueranno a includere una stima distinta per il numero di elementi parzialmente indicizzati. Si supponga, ad esempio, che la stima di una ricerca che includa tutti gli elementi (nessuna parola chiave nella query di ricerca) indichi che sono stati trovati 1.000 elementi e che sono stati trovati anche gli elementi parzialmente indicizzati 200. In questo caso, gli elementi 1.000 includono gli elementi parzialmente indicizzati poiché la ricerca restituisce tutti gli elementi. In altre parole, sono disponibili 1.000 elementi totali restituiti dalla ricerca e non 1.200 elementi (come si potrebbe immaginare). Se si esportano i risultati della ricerca e si sceglie di esportare gli elementi indicizzati e parzialmente indicizzati (o di esportare solo elementi parzialmente indicizzati), verranno scaricati gli elementi 1.000. Di nuovo, perché gli elementi parzialmente indicizzati sono inclusi nei risultati regolari (indicizzati) quando si utilizza una query di ricerca vuota per restituire tutti gli elementi. In questo stesso esempio, se si sceglie di esportare solo gli elementi parzialmente indicizzati, verranno scaricati solo gli elementi 200 non indicizzati.
     
     Si noti inoltre che nell'esempio precedente (quando si esportano elementi indicizzati e parzialmente indicizzati o si esportano solo elementi indicizzati), il rapporto riepilogativo di **esportazione** incluso con i risultati di ricerca esportati elenca 1.000 elementi stimati e 1.000 scaricati gli elementi per gli stessi motivi descritti in precedenza. 
     
@@ -262,22 +262,22 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca.
     
-    ![Utilizzare l'opzione di esportazione terzo per esportare solo gli elementi non indicizzati](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Utilizzare la terza opzione di esportazione per esportare solo gli elementi non indicizzati](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
-- Quando si esportano i risultati della ricerca da siti di SharePoint o OneDrive for business, la possibilità di esportare gli elementi non indicizzati dipende anche dall'opzione di esportazione selezionata e se un sito in cui è stata eseguita la ricerca contiene un elemento indicizzato che corrisponde ai criteri di ricerca. Ad esempio, se si esegue una ricerca in siti specifici di SharePoint o OneDrive for business e non vengono trovati risultati della ricerca, non verranno esportati elementi non indicizzati da tali siti se si sceglie la seconda opzione di esportazione per esportare gli elementi indicizzati e non indicizzati. Se un elemento indicizzato di un sito corrisponde ai criteri di ricerca, tutti gli elementi non indicizzati provenienti da tale sito verranno esportati quando si esportano sia gli elementi indicizzati che quelli non indicizzati. Nella figura seguente vengono illustrate le opzioni di esportazione in base al fatto che un sito contenga o meno un elemento indicizzato che corrisponda ai criteri di ricerca.
+- Quando si esportano i risultati della ricerca da siti di SharePoint o OneDrive for business, la possibilità di esportare gli elementi non indicizzati dipende anche dall'opzione di esportazione selezionata e se un sito in cui è stata eseguita la ricerca contiene un elemento indicizzato che corrisponde ai criteri di ricerca. Ad esempio, se si esegue una ricerca in siti specifici di SharePoint o OneDrive for business e non vengono trovati risultati della ricerca, non verranno esportati elementi non indicizzati da tali siti se si sceglie la seconda opzione di esportazione per esportare gli elementi indicizzati e non indicizzati. Se un elemento indicizzato di un sito corrisponde ai criteri di ricerca, tutti gli elementi non indicizzati provenienti da tale sito verranno esportati quando si esportano sia gli elementi indicizzati che quelli non indicizzati. Nella figura seguente vengono illustrate le opzioni di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.
     
     ![Scegliere l'opzione di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    Vengono esportati solo gli elementi indicizzati che corrispondono ai criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
+    un. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
     
-    B-se non sono presenti elementi indicizzati provenienti da un sito corrispondenti ai criteri di ricerca, gli elementi parzialmente indicizzati provenienti dallo stesso sito non vengono esportati. Se nei risultati della ricerca vengono restituiti elementi indicizzati provenienti da un sito, gli elementi parzialmente indicizzati provenienti da tale sito vengono esportati. In altre parole, vengono esportati solo gli elementi parzialmente indicizzati provenienti da siti che contengono elementi che soddisfano i criteri di ricerca.
+    b. Se non sono presenti elementi indicizzati provenienti da un sito che soddisfano i criteri di ricerca, gli elementi parzialmente indicizzati provenienti dallo stesso sito non vengono esportati. Se nei risultati della ricerca vengono restituiti elementi indicizzati provenienti da un sito, gli elementi parzialmente indicizzati provenienti da tale sito vengono esportati. In altre parole, vengono esportati solo gli elementi parzialmente indicizzati provenienti da siti che contengono elementi che soddisfano i criteri di ricerca.
     
-    C-tutti gli elementi parzialmente indicizzati provenienti da tutti i siti della ricerca vengono esportati, indipendentemente dal fatto che un sito contenga elementi che soddisfano i criteri di ricerca.
+    c. Tutti gli elementi parzialmente indicizzati provenienti da tutti i siti della ricerca vengono esportati, indipendentemente dal fatto che un sito contenga elementi che soddisfano i criteri di ricerca.
     
     Se si sceglie di esportare gli elementi parzialmente indicizzati, gli elementi delle cassette postali parzialmente indicizzati vengono esportati in un file PST separato indipendentemente dall'opzione scelta in **Esporta contenuto di Exchange con nome**.
 
-- Se gli elementi parzialmente indicizzati vengono restituiti nei risultati della ricerca (perché altre proprietà di un elemento parzialmente indicizzato corrispondono ai criteri di ricerca), queste vengono esportate con i risultati di ricerca normali. Pertanto, se si sceglie di esportare sia gli elementi indicizzati sia gli elementi parzialmente indicizzati (selezionando **tutti gli elementi, compresi quelli che dispongono di un formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi** , opzione di esportazione), gli elementi parzialmente indicizzati esportati con i risultati regolari verrà elencato nel rapporto Results. csv. Non verranno elencati nel rapporto elementi non indicizzati. csv.
+- Se nei risultati della ricerca vengono restituiti elementi parzialmente indicizzati (poiché altre proprietà degli elementi parzialmente indicizzati corrispondono ai criteri di ricerca), tali voci vengono esportate con i risultati di ricerca normali. Pertanto, se si sceglie di esportare sia gli elementi indicizzati sia gli elementi parzialmente indicizzati (selezionando **tutti gli elementi, compresi quelli che dispongono di un formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi** , opzione di esportazione), gli elementi parzialmente indicizzati esportati con i risultati regolari verrà elencato nel rapporto Results. csv. Non verranno elencati nel rapporto elementi non indicizzati. csv.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Esportazione di singoli messaggi o file PST
   
@@ -285,7 +285,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - Come spiegato in precedenza, i risultati della ricerca di posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi potrebbe replicare il percorso della cartella nella cassetta postale dell'utente. Ad esempio, per una ricerca denominata "ContosoCase101" i messaggi nella posta in arrivo di un utente si troverebbero nel `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`percorso della cartella. 
     
-- Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle saranno vuote. 
+- Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle sono vuote. 
   
  ### <a name="decrypting-rms-encrypted-messages"></a>Decrittografia dei messaggi crittografati con RMS
   
@@ -313,13 +313,13 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
   - Se il nome del percorso completo è ancora troppo lungo dopo la riduzione del nome del file, l'elemento viene spostato dal percorso corrente alla cartella padre. Se il percorso è ancora troppo lungo, il processo viene ripetuto: accorciare il nome del file e, se necessario, spostarlo di nuovo nella cartella padre. Questo processo viene ripetuto fino a quando il percorso completo è inferiore al limite di 260 caratteri.
     
-  - Se esiste già un nome di percorso completo troncato, verrà aggiunto un numero di versione alla fine del nome del file. ad esempio, `statusmessage(2).msg`.
+  - Se esiste già un nome di percorso completo troncato, viene aggiunto un numero di versione alla fine del nome del file. ad esempio, `statusmessage(2).msg`.
     
     Per ovviare a questo problema, prendere in considerazione la possibilità di scaricare i risultati della ricerca in una posizione con un nome di percorso breve. ad esempio, se si desidera scaricare i risultati della `C:\Results` ricerca in una cartella denominata, è necessario aggiungere meno caratteri ai nomi di percorso degli elementi esportati anziché scaricarli in una cartella denominata `C:\Users\Admin\Desktop\Results`.
     
-- Quando si esportano i documenti del sito, è anche possibile che il nome di file originale di un documento venga modificato. Questo accade in particolare per i documenti che sono stati eliminati da un sito di SharePoint o OneDrive for business che è stato messo in attesa. Dopo l'eliminazione di un documento che si trova in un sito che è in attesa, il documento eliminato viene automaticamente spostato nella raccolta conservazione per il sito, che è stato creato quando il sito è stato messo in attesa. Quando il documento eliminato viene spostato nella raccolta di conservazione, un ID univoco e generato casualmente viene aggiunto al nome di file originale del documento. Ad esempio, se il nome del file di un `FY2017Budget.xlsx` documento è e tale documento viene successivamente eliminato e spostato nella raccolta conservazione, il nome del file del documento che viene spostato nella raccolta di conservazione viene modificato in qualcosa di `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`simile a. Se un documento nella raccolta conservazione conserva la corrispondenza con la query di una ricerca di contenuto e si esportano i risultati della ricerca, il nome del file esportato sarà modificato. in questo esempio, il nome di file del documento esportato è `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
+- Quando si esportano i documenti del sito, è anche possibile che il nome di file originale di un documento venga modificato. Questo accade in particolare per i documenti che sono stati eliminati da un sito di SharePoint o OneDrive for business che è stato messo in attesa. Dopo l'eliminazione di un documento in un sito che è in attesa, il documento eliminato viene automaticamente spostato nella raccolta conservazione per il sito (creato quando il sito è stato messo in attesa). Quando il documento eliminato viene spostato nella raccolta di conservazione, un ID univoco generato casualmente viene aggiunto al nome di file originale del documento. Ad esempio, se il nome del file di un `FY2017Budget.xlsx` documento è e tale documento viene successivamente eliminato e spostato nella raccolta conservazione, il nome del file del documento che viene spostato nella raccolta di conservazione viene modificato in qualcosa di `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`simile a. Se un documento nella raccolta conservazione contiene la query di una ricerca di contenuto e si esportano i risultati della ricerca, il nome del file esportato è stato modificato. in questo esempio, il nome di file del documento esportato è `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
     
-    Inoltre, quando un documento posizionato in un sito che è in attesa viene modificato (e il controllo delle versioni per la raccolta documenti nel sito è stato abilitato), viene creata automaticamente una copia del file nella raccolta conservazione. In questo caso, viene aggiunto un ID univoco generato casualmente al nome di file del documento copiato nella raccolta conservazione.
+    Quando viene modificato un documento in un sito che è in attesa (e il controllo delle versioni per la raccolta documenti nel sito è stato abilitato), viene creata automaticamente una copia del file nella raccolta conservazione. In questo caso, viene aggiunto un ID univoco generato casualmente al nome del documento copiato nella raccolta di archiviazione.
     
     Il motivo per cui i nomi di file dei documenti spostati o copiati nella libreria di conservazione conservano è impedire i nomi di file in conflitto. Per ulteriori informazioni sull'inserimento di un'esenzione nei siti e sulla raccolta di conservazione, vedere [Overview of sul-Place Hold in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95).
     
