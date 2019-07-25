@@ -1,12 +1,12 @@
 ---
-title: Cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365-Guida per gli amministratori
+title: Cercare ed eliminare messaggi di posta elettronica nell'organizzazione di Office 365 - Guida per l'amministratore
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -14,69 +14,69 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Utilizzare la funzionalità di ricerca e spurgo nel centro sicurezza & compliance in Office 365 per cercare ed eliminare un messaggio di posta elettronica da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
-ms.translationtype: MT
+description: Usare la funzionalità Ricerca ed eliminazione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
+ms.openlocfilehash: 318a7deeedb6bd4875a7a2ca0f5e33b764bdbac3
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158478"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854630"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365-Guida per gli amministratori
+# <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Cercare ed eliminare messaggi di posta elettronica nell'organizzazione di Office 365 - Guida per l'amministratore
 
-**Questo articolo è per gli amministratori. Si sta tentando di trovare gli elementi nella cassetta postale che si desidera eliminare? Vedere [trovare un messaggio o un elemento con ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
+**Questo articolo è rivolto agli amministratori. Se si stanno cercando elementi nella cassetta postale che si vogliono eliminare, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
-È possibile utilizzare la funzionalità Ricerca contenuto in Office 365 per cercare ed eliminare un messaggio di posta elettronica da tutte le cassette postali dell'organizzazione. Ciò consente di individuare e rimuovere posta elettronica potenzialmente dannosa o ad alto rischio, ad esempio:
+È possibile utilizzare la funzionalità Ricerca contenuto in Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere posta elettronica potenzialmente dannosa o ad alto rischio, ad esempio:
   
-- Messaggi che contengono allegati o virus pericolosi
+- Messaggi contenenti virus o allegati pericolosi
     
 - Messaggi di phishing
     
 - Messaggi contenenti dati sensibili
     
 > [!CAUTION]
-> Search and Purge è una funzionalità potente che consente a tutti gli utenti a cui vengono assegnate le autorizzazioni necessarie per eliminare i messaggi di posta elettronica dalle cassette postali dell'organizzazione. 
+> L’operazione di ricerca ed eliminazione rappresenta una funzionalità avanzata che consente a chiunque abbia le autorizzazioni necessarie di eliminare i messaggi di posta elettronica dalle cassette postali nell'organizzazione. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per creare ed eseguire una ricerca di contenuto, è necessario essere membri del gruppo di ruoli **eDiscovery Manager** o essere assegnati al ruolo di gestione della **ricerca di conformità** . Per eliminare i messaggi, è necessario essere membri del gruppo di ruoli **Gestione organizzazione** o assegnare il ruolo di gestione di **ricerca ed eliminazione** . Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [fornire agli utenti l'accesso al centro sicurezza e conformità](grant-access-to-the-security-and-compliance-center.md).
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **Gestione di eDiscovery** o disporre del ruolo di gestione della **Ricerca di conformità**. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione organizzazione** o disporre del ruolo di gestione della **Ricerca ed eliminazione**. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [Dare accesso al Centro sicurezza e conformità agli utenti](grant-access-to-the-security-and-compliance-center.md).
     
-- Per eliminare i messaggi, è necessario utilizzare la sicurezza di & Compliance Center PowerShell. Per istruzioni su come effettuare la connessione, vedere [passaggio 2](#step-2-connect-to-security--compliance-center-powershell) .
+- Per eliminare i messaggi, è necessario usare PowerShell in Centro sicurezza e conformità. Per informazioni su come connettersi, vedere il [Passaggio 2](#step-2-connect-to-security--compliance-center-powershell).
     
-- Un massimo di 10 elementi per ogni cassetta postale può essere rimosso contemporaneamente. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Questa funzionalità non ha lo scopo di pulizia delle cassette postali degli utenti. Per eliminare più di 10 elementi, è possibile utilizzare il comando **Search-Mailbox-DeleteContent** in Exchange Online PowerShell. Vedere [cercare ed eliminare i messaggi-Guida per gli amministratori](search-for-and-delete-messagesadmin-help.md).
+- È possibile rimuovere un massimo di 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Questa funzionalità non è destinata all'uso per la pulizia delle cassette postali degli utenti. Per eliminare più di 10 elementi, è possibile usare il comando **Search-Mailbox -DeleteContent** in Exchange Online PowerShell. Vedere [Cercare ed eliminare messaggi di posta elettronica - Guida per l’amministratore](search-for-and-delete-messagesadmin-help.md).
     
-- Il numero massimo di cassette postali in una ricerca di contenuto in cui è possibile eliminare gli elementi eseguendo un'azione di ricerca ed eliminazione è 50.000. Se la ricerca di contenuto creata nel [passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete)contiene più di 50.000 cassette postali di origine, l'azione Purge (creata nel passaggio 3) avrà esito negativo. Vedere la sezione [ulteriori informazioni](#more-information) per un suggerimento sull'esecuzione di un'operazione di ricerca ed eliminazione su più di 50.000 cassette postali. 
+- Il numero massimo di cassette postali in una ricerca di contenuto in cui è possibile eliminare gli elementi eseguendo un’operazione di ricerca ed eliminazione è 50.000. Se la ricerca di contenuto, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali di origine, l'azione di eliminazione, creata nel Passaggio 3, non riuscirà. Vedere la sezione [Ulteriori informazioni](#more-information) per suggerimenti sull'esecuzione di un'operazione di ricerca ed eliminazione su più di 50.000 cassette postali. 
     
-- La procedura descritta in questo articolo può essere utilizzata solo per eliminare gli elementi nelle cassette postali di Exchange Online e nelle cartelle pubbliche. Non è possibile utilizzarlo per eliminare il contenuto da siti di SharePoint o OneDrive for business.
+- La procedura descritta in questo articolo può essere usata solo per eliminare elementi nelle cassette postali e cartelle pubbliche di Exchange Online. Non è possibile usarla per eliminare il contenuto dai siti di SharePoint o OneDrive for Business.
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Passaggio 1: creare una ricerca di contenuto per trovare il messaggio da eliminare
 
-Il primo passaggio consiste nel creare ed eseguire una ricerca di contenuto per individuare il messaggio che si desidera rimuovere dalle cassette postali nell'organizzazione. È possibile creare la ricerca utilizzando il Centro sicurezza & Compliance oppure eseguendo i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch** . I messaggi che corrispondono alla query per la ricerca verranno eliminati eseguendo il comando **New-ComplianceSearchAction-Purge** nel [passaggio 3](#step-3-delete-the-message). Per informazioni sulla creazione di una ricerca di contenuto e sulla configurazione di query di ricerca, vedere i seguenti argomenti: 
+Il primo passaggio consiste nel creare ed eseguire una ricerca contenuto per trovare il messaggio da rimuovere dalle cassette postali dell'organizzazione. È possibile creare la ricerca tramite il Centro sicurezza e conformità o eseguendo i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch**. I messaggi che soddisfano la query per la ricerca verranno eliminati eseguendo il comando **New-ComplianceSearchAction -Purge** nel [Passaggio 3](#step-3-delete-the-message). Per informazioni sulla creazione di una Ricerca contenuto e sulla configurazione delle query di ricerca, vedere gli argomenti seguenti: 
   
 - [Ricerca contenuto in Office 365](content-search.md)
     
-- [Query di parole chiave per la ricerca di contenuto](keyword-queries-and-search-conditions.md)
+- [Query con parole chiave per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
     
 - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
     
 - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
     
 > [!NOTE]
-> I percorsi di contenuto che vengono ricercati nella ricerca di contenuto creata in questo passaggio non possono includere siti di SharePoint o OneDrive for business. È possibile includere solo le cassette postali e le cartelle pubbliche in una ricerca di contenuto che verrà utilizzata per i messaggi di posta elettronica. Se la ricerca contenuto include siti, quando si esegue il cmdlet **New-ComplianceSearchAction** verrà visualizzato un messaggio di errore nel passaggio 3. 
+> I percorsi di contenuto all'interno dei quali viene eseguita la Ricerca contenuto creata in questo passaggio non possono includere siti di SharePoint o OneDrive for Business. In una Ricerca contenuto che verrà usata per inviare messaggi di posta elettronica è possibile includere solo cassette postali e cartelle pubbliche. Se la Ricerca contenuto include siti, si riceverà un messaggio di errore al Passaggio 3 quando si esegue il cmdlet **New-ComplianceSearchAction**. 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>Suggerimenti per la ricerca di messaggi da rimuovere
 
 L'obiettivo della query di ricerca è limitare i risultati della ricerca solo al messaggio o ai messaggi da rimuovere. Di seguito sono riportati alcuni suggerimenti:
   
-- Se si conosce il testo o la frase esatta utilizzata nella riga dell'oggetto del messaggio, utilizzare la proprietà **Subject** nella query di ricerca. 
+- Se si conosce la frase o il testo esatto della riga dell'oggetto del messaggio, utilizzare la proprietà **Subject** nella query di ricerca. 
     
 - Se si conosce la data esatta (o l'intervallo di date) del messaggio, includere la proprietà **Received** nella query di ricerca. 
     
-- Se si conosce chi ha inviato il messaggio, includere la proprietà **From** nella query di ricerca. 
+- Se si sa chi ha inviato il messaggio, includere la proprietà **From** nella query di ricerca. 
     
-- Visualizzare in anteprima i risultati della ricerca per verificare che la ricerca abbia restituito solo il messaggio (o i messaggi) che si desidera eliminare.
+- Visualizzare in anteprima i risultati della ricerca per verificare che la ricerca di contenuto abbia restituito solo il messaggio (o i messaggi) da eliminare.
     
-- Utilizzare le statistiche delle stime di ricerca (visualizzate nel riquadro dei dettagli della ricerca nel centro conformità & di sicurezza o utilizzando il cmdlet [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) ) per ottenere un conteggio del numero totale di risultati. 
+- Per ottenere il numero totale di risultati, usare le statistiche di stima della ricerca, visualizzate nel riquadro dei dettagli della ricerca nel Centro di sicurezza e conformità oppure tramite il cmdlet [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934).  
     
 Ecco due esempi di query per trovare messaggi di posta elettronica sospetti.
   
@@ -92,56 +92,56 @@ Ecco due esempi di query per trovare messaggi di posta elettronica sospetti.
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Passaggio 2: connettersi a PowerShell per Centro sicurezza & Compliance
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Passaggio 2: Connettersi a PowerShell in Centro sicurezza e conformità
 
-Il passaggio successivo consiste nel connettersi a PowerShell per Centro sicurezza & Compliance per l'organizzazione. Per istruzioni dettagliate, vedere [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Il passaggio successivo consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Se l'account di Office 365 utilizza l'autenticazione a più fattori (AMF) o l'autenticazione federata, non è possibile utilizzare le istruzioni riportate nell'argomento precedente per la connessione al centro sicurezza & Compliance PowerShell. In alternativa, vedere le istruzioni contenute nell'argomento [Connect to Security _AMP_ Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Se l'account di Office 365 usa l'autenticazione a più fattori o l'autenticazione federata, non è possibile usare le istruzioni riportate nell'argomento precedente per la connessione a PowerShell in Centro sicurezza e conformità. Per farlo, vedere le istruzioni nell’argomento [Connettersi a PowerShell in Centro sicurezza e conformità mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
-## <a name="step-3-delete-the-message"></a>Passaggio 3: eliminare il messaggio
+## <a name="step-3-delete-the-message"></a>Passaggio 3: Eliminare il messaggio
 
-Dopo aver creato e raffinato una ricerca di contenuto per restituire il messaggio che si desidera rimuovere e che sono connessi a PowerShell per il Centro sicurezza & Compliance, il passaggio finale consiste nell'eseguire il cmdlet **New-ComplianceSearchAction** per eliminare il messaggio. È possibile eliminare il messaggio in modo soft o rigido. Un messaggio eliminato temporaneamente viene spostato nella cartella elementi ripristinabili di un utente e mantenuto fino alla scadenza del periodo di conservazione. I messaggi eliminati definitivamente vengono contrassegnati per la rimozione definitiva dalla cassetta postale e verranno rimossi in modo definitivo alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. Se il ripristino di un singolo elemento è abilitato per la cassetta postale, gli elementi eliminati in modo definitivo verranno rimossi definitivamente dopo la scadenza del periodo di conservazione degli elementi eliminati. Se una cassetta postale è in attesa, i messaggi eliminati vengono conservati fino alla scadenza della durata del blocco o fino a quando il blocco non viene rimosso dalla cassetta postale.
+Dopo aver creato e perfezionato una ricerca di contenuto affinché restituisca il messaggio da rimuovere e dopo essersi connessi a PowerShell in Centro sicurezza e conformità, il passaggio finale consiste nell'eseguire il cmdlet **New-ComplianceSearchAction** per eliminare il messaggio. È possibile eliminare il messaggio temporaneamente o definitivamente. Un messaggio eliminato temporaneamente viene spostato nella cartella Elementi ripristinabili dell’utente e viene conservato fino alla scadenza del periodo di conservazione degli elementi eliminati. I messaggi eliminati definitivamente vengono contrassegnati per la rimozione definitiva dalla cassetta postale e saranno rimossi definitivamente durante la successiva elaborazione da parte dell’Assistente cartelle gestite. Se il ripristino di un unico elemento è abilitato per la cassetta postale, gli elementi eliminati definitivamente verranno rimossi in modo permanente dopo la scadenza del periodo di conservazione. Se viene applicato un blocco a una cassetta postale, i messaggi eliminati vengono conservati finché la durata del periodo di conservazione dell'elemento non scade o finché il blocco non viene rimosso.
   
-Nell'esempio seguente, il comando eliminerà temporaneamente i risultati della ricerca restituiti da una ricerca di contenuto denominata "Rimuovi messaggio di phishing". 
+Nell'esempio seguente, il comando eliminerà temporaneamente i risultati della ricerca restituiti da una ricerca di contenuto denominata "Remove Phishing Message". 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-Per eliminare definitivamente gli elementi restituiti dalla ricerca del contenuto "Rimuovi messaggio di phishing", eseguire il comando seguente:
+Per eliminare definitivamente gli elementi restituiti dalla ricerca contenuto "Remove Phishing Message", eseguire questo comando:
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-Si noti che quando si esegue il comando precedente per eliminare i messaggi in modalità temporanea o con eliminazione definitiva, la ** ricerca specificata dal parametro searchname è la ricerca di contenuto creata nel passaggio 1. 
+Tenere presente che, quando si esegue il comando precedente per eliminare i messaggi temporaneamente o definitivamente, la ricerca specificata nel parametro *SearchName* è la ricerca contenuto creata nel Passaggio 1. 
   
-Per ulteriori informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
+Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- **Come si ottiene lo stato nell'operazione di ricerca e rimozione?**
+- **Come ottenere lo stato dell'operazione di ricerca e rimozione?**
 
-    Eseguire il cmdlet **Get-ComplianceSearchAction** per ottenere lo stato dell'operazione di eliminazione. Si noti che l'oggetto creato quando si esegue il cmdlet **New-ComplianceSearchAction** è denominato utilizzando questo formato: `<name of Content Search>_Purge`. 
+    Eseguire il comando **Get-ComplianceSearchAction** per ottenere lo stato dell'operazione di eliminazione. L'oggetto creato quando si esegue il cmdlet **New-ComplianceSearchAction** è denominato utilizzando questo formato: `<name of Content Search>_Purge`. 
     
-- **Cosa accade dopo aver eliminato un messaggio?**
+- **Cosa succede dopo l'eliminazione di un messaggio?**
 
-   Un messaggio eliminato con il `New-ComplianceSearchAction -Purge -PurgeType HardDelete` comando viene spostato nella cartella Purges e non può essere eseguito dall'utente. Dopo che il messaggio viene spostato nella cartella Purges, il messaggio viene mantenuto per la durata del periodo di conservazione degli elementi eliminati, se il ripristino di un singolo elemento è abilitato per la cassetta postale. In Office 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita al momento della creazione di una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione definitiva e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
+   Un messaggio eliminato con il comando `New-ComplianceSearchAction -Purge -PurgeType HardDelete` viene spostato nella cartella Ripuliture e non è accessibile all'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene conservato per la durata del periodo di conservazione degli elementi eliminati se il ripristino di un unico elemento è abilitato per la cassetta postale. In Office 365, il ripristino di un unico elemento è abilitato per impostazione predefinita quando viene creata una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
 
-   Se si utilizza il `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando, i messaggi vengono spostati nella cartella eliminazioni nella cartella elementi ripristinabili dell'utente. Non viene immediatamente eliminato da Office 365. L'utente può recuperare i messaggi nella cartella Elementi eliminati per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale. Dopo la scadenza di questo periodo di conservazione (o se l'utente elimina il messaggio prima della scadenza), il messaggio viene spostato nella cartella Ripuliture e non è più accessibile all'utente. Una volta nella cartella Purges, il messaggio viene conservato per la durata in base al periodo di conservazione degli elementi eliminati configurato per la cassetta postale se il ripristino di un singolo elemento è abilitato per la cassetta postale. In Office 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita al momento della creazione di una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione definitiva e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
+   Usando il comando `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, i messaggi vengono spostati nella cartella Eliminazioni nella cartella Elementi ripristinabili dell'utente. Non viene eliminato immediatamente da Office 365. L'utente può recuperare i messaggi nella cartella Elementi eliminati per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale. Dopo la scadenza di questo periodo di conservazione (o se l'utente elimina il messaggio prima della scadenza), il messaggio viene spostato nella cartella di eliminazione e non è più accessibile da parte dell'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene mantenuto per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale, se il ripristino di un unico elemento è abilitato. In Office 365, il ripristino di un unico elemento è abilitato per impostazione predefinita quando viene creata una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
     
-- **Che cosa succede se è necessario eliminare un messaggio da più di 50.000 cassette postali?**
+- **Cosa fare se è necessario eliminare un messaggio da più di 50.000 cassette postali?**
 
-    Come indicato in precedenza, è possibile eseguire un'operazione di ricerca ed eliminazione su un massimo di 50.000 cassette postali. Se è necessario eseguire un'operazione di ricerca ed eliminazione su più di 50.000 cassette postali, prendere in considerazione la possibilità di creare filtri per le autorizzazioni di ricerca temporanea che ridurrebbero il numero di cassette postali che verrebbero cercate in meno di 50.000 cassette postali. Ad esempio, se l'organizzazione contiene cassette postali in diversi reparti, Stati o paesi, è possibile creare un filtro delle autorizzazioni per la ricerca delle cassette postali in base a una di queste proprietà della cassetta postale per eseguire la ricerca in un sottoinsieme di cassette postali nell'organizzazione. Dopo aver creato il filtro delle autorizzazioni di ricerca, è necessario creare la ricerca, descritta nel passaggio 1, quindi eliminare il messaggio (descritto nel passaggio 3). È quindi possibile modificare il filtro per cercare ed eliminare i messaggi in un set di cassette postali diverso. Per ulteriori informazioni sulla creazione di filtri per le autorizzazioni di ricerca, vedere [Configure Permissions Filtering for content search](permissions-filtering-for-content-search.md).
+    Come indicato in precedenza, è possibile eseguire un'operazione di ricerca ed eliminazione su un massimo di 50.000 cassette postali. Se è necessario eseguire un'operazione di ricerca ed eliminazione su più di 50.000 cassette postali, è consigliabile creare dei filtri delle autorizzazioni di ricerca temporanei per ridurre il numero di cassette postali in cui eseguire la ricerca a meno di 50.000. Se ad esempio nell'organizzazione sono presenti cassette postali in dipartimenti, stati o paesi diversi, è possibile creare un filtro delle autorizzazioni di ricerca in base a una di queste proprietà delle cassette postali per eseguire la ricerca in un sottoinsieme di cassette postali dell'organizzazione. Dopo aver creato il filtro delle autorizzazioni di ricerca, è necessario creare la ricerca, come descritto nel Passaggio 1, e quindi eliminare il messaggio, come descritto nel Passaggio 3. È quindi possibile modificare il filtro in modo da cercare ed eliminare messaggi in un insieme di cassette postali diverso. Per altre informazioni sulla creazione di filtri delle autorizzazioni di ricerca, vedere [Configurare i filtri delle autorizzazioni per la Ricerca contenuto](permissions-filtering-for-content-search.md).
     
 - **Gli elementi non indicizzati inclusi nei risultati della ricerca verranno eliminati?**
 
-    No, il comando ' New-ComplianceSearchAction-Purge non elimina gli elementi non indicizzati. 
+    No, il comando “New-ComplianceSearchAction -Purge” non elimina gli elementi non indicizzati. 
     
-- **Cosa succede se un messaggio viene eliminato da una cassetta postale che è stata inserita in un blocco sul posto o in una conservazione per controversia legale o che è stata assegnata a un criterio di ritenzione di Office 365?**
+- **Cosa succede se un messaggio viene eliminato da una cassetta postale soggetta a blocco sul posto o a blocco per controversia legale o se viene assegnato a un criterio di conservazione di Office 365?**
 
-    Dopo che il messaggio è stato eliminato e spostato nella cartella Purges, il messaggio viene mantenuto fino alla scadenza della durata del blocco. Se la durata di conservazione è illimitata, gli elementi vengono mantenuti fino a quando non viene rimosso il blocco o modificata la durata di conservazione.
+    Dopo che il messaggio è stato eliminato e spostato nella cartella Ripuliture, il messaggio viene conservato fino alla scadenza del periodo di conservazione. Se la durata di conservazione è illimitata, gli elementi vengono mantenuti fino a quando non viene rimosso il blocco o modificata la durata di conservazione.
     
-- **Perché il flusso di lavoro di ricerca e rimozione è suddiviso tra diversi gruppi di ruoli del Centro sicurezza e conformità?**
+- **Perché il flusso di lavoro di ricerca e rimozione è diviso tra diversi gruppi di ruoli del centro sicurezza e conformità?**
 
-    Come indicato in precedenza, per effettuare le ricerche nelle cassette postali, un utente deve essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione di ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Ciò consente di controllare chi può effettuare ricerche nelle cassette postali dell'organizzazione e chi può eliminare i messaggi. 
+    Come indicato in precedenza, per eseguire ricerche nelle cassette postali, è necessario essere membri del gruppo di ruoli di responsabili di eDiscovery o disporre del ruolo di gestione di ricerca di conformità. Per eliminare i messaggi, è necessario essere membri del gruppo di ruoli di gestione dell'organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. In questo modo è possibile controllare chi può eseguire ricerche nelle cassette postali dell'organizzazione e chi può eliminare i messaggi. 
