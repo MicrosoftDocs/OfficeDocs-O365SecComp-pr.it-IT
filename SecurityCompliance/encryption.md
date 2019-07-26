@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito, utilizzando la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613644"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902478"
 ---
 # <a name="encryption-in-office-365"></a>Crittografia in Office 365
 
-La crittografia è una parte importante delle strategie di protezione dei file e di protezione delle informazioni. Leggere questo articolo per ottenere una panoramica della crittografia utilizzata per tutte le versioni di Office 365 e ottenere assistenza per le attività di crittografia, dalla configurazione della crittografia per l'organizzazione ai documenti di Office per la protezione delle password.
+La crittografia è una parte importante della strategia di protezione dei file e della protezione delle informazioni. Leggere questo articolo per ottenere una panoramica della crittografia utilizzata per tutte le versioni di Office 365 e ottenere assistenza per le attività di crittografia, dalla configurazione della crittografia per l'organizzazione ai documenti di Office per la protezione delle password.
   
 - Se si cercano informazioni su certificati e tecnologie come TLS, vedere [Technical Reference details about Encryption in Office 365](technical-reference-details-about-encryption.md).
 
@@ -61,7 +61,7 @@ Per ulteriori informazioni, vedere le risorse seguenti:
   
 - [Che cos'è Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Attivare Rights Management nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Attivare Rights Management nell'interfaccia di amministrazione](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ Per ulteriori informazioni, vedere le risorse seguenti:
 |Configurare la crittografia per l'organizzazione  <br/> |[Configurare la crittografia in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Visualizzare i dettagli relativi ai certificati, alle tecnologie e ai gruppi di crittografia TLS in Office 365  <br/> |[Informazioni tecniche sulla crittografia in Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Utilizzo dei messaggi crittografati in un dispositivo mobile  <br/> |[Visualizzazione dei messaggi crittografati sul dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Visualizzare i messaggi crittografati sul tuo iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Crittografare un documento mediante la protezione tramite password  <br/><br/>  Attualmente, la protezione tramite password non è supportata in Office Online. Utilizzare le versioni desktop di Word, Excel e PowerPoint per la protezione delle password.           |[Aggiungere o rimuovere la protezione nel documento, nella cartella di lavoro o nella presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) Scegliere una sezione **Aggiungi protezione** e quindi fare clic **su Crittografa con password** .  <br/> |
+|Crittografare un documento mediante la protezione tramite password  <br/><br/>  Attualmente, la protezione tramite password non è supportata in Office in un browser. Utilizzare le versioni desktop di Word, Excel e PowerPoint per la protezione delle password.           |[Aggiungere o rimuovere la protezione nel documento, nella cartella di lavoro o nella presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) Scegliere una sezione **Aggiungi protezione** e quindi fare clic **su Crittografa con password** .  <br/> |
 |Rimuovere la crittografia da un documento  <br/> |[Aggiungere o rimuovere la protezione nel documento, nella cartella di lavoro o nella presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) Scegliere una sezione **Rimuovi protezione** e quindi fare clic su **Rimuovi crittografia password**  <br/> |
 
 ## <a name="related-topics"></a>Argomenti correlati
