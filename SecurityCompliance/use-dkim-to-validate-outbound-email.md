@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
 ms.openlocfilehash: 98446410ff51e95be23f07bb84de3654cd84f091
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 07/29/2019
 ms.locfileid: "35854760"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
