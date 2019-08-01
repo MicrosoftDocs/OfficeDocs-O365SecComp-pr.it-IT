@@ -2,7 +2,7 @@
 title: Configurare i criteri dei collegamenti sicuri ATP di Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394341"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048078"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -97,9 +97,9 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
     
   - Nella sezione **selezionare l'azione** scegliere attivato. ****
     
-  - Selezionare **USA allegati sicuri per analizzare il contenuto scaricabile**.
+  - Selezionare **applica analisi degli URL in tempo reale per collegamenti sospetti e collegamenti che puntano a file** se si desidera abilitare la detonazione degli URL per gli URL sospetti e che puntano al file (scelta consigliata). E selezionare **Attendi il completamento dell'analisi degli URL prima di recapitare il messaggio** se si desidera che gli utenti ricevano solo messaggi dopo che gli URL sono stati completamente analizzati.
     
-  - Se questa opzione è disponibile, selezionare **applica collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione**.
+  - Selezionare **applica collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** se si desidera abilitare i collegamenti sicuri per i messaggi inviati tra gli utenti all'interno dell'organizzazione (scelta consigliata).
     
   - Selezionare non **consentire all'utente di fare clic sull'URL originale**.
     

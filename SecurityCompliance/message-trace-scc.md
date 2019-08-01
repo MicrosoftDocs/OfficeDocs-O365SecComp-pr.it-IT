@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601013"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048218"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601013"
 La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
 La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
+
+> [!NOTE]
+> Il limite per la quantità di messaggi restituiti è 50.000. Nella console, quando si esegue una query di grandi dimensioni, il conteggio dei messaggi del cmdlet Get-HistoricalSearch è superiore a 240.000.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 

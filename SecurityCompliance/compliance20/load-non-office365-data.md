@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importare i dati non di Office 365 in un set di revisione in un caso di eDiscovery avanzato.
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840858"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048108"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Caricare dati non Office 365 in un insieme da rivedere
 
@@ -40,7 +40,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 - I dati non di Office 365 devono essere un tipo di file supportato da Advanced eDiscovery. Per ulteriori informazioni, vedere [tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Tutti i file caricati in un set di revisione devono trovarsi in cartelle, in cui ogni cartella è associata a un determinato custode. I nomi di queste cartelle devono utilizzare il formato di denominazione seguente: *alias @ NomeDominio*. L' *alias @ NomeDominio* deve essere l'alias e il dominio dell'utente di Office 365. È possibile raccogliere tutte le cartelle *alias @ DomainName* in una cartella radice. La cartella radice può contenere solo le cartelle *alias @ DomainName* . I file allentati nella cartella radice non sono supportati.
+- Tutti i file caricati in un set di revisione devono trovarsi in cartelle, in cui ogni cartella è associata a un determinato custode. I nomi di queste cartelle devono utilizzare il formato di denominazione seguente: *alias @ NomeDominio*. L'alias @ NomeDominio deve essere l'alias e il dominio dell'utente di Office 365. È possibile raccogliere tutte le cartelle alias @ DomainName in una cartella radice. La cartella radice può contenere solo le cartelle alias @ domainname. I file allentati nella cartella radice non sono supportati.
 
    La struttura di cartelle per i dati non di Office 365 che si desidera caricare sarebbe simile all'esempio seguente:
 
@@ -54,7 +54,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 - Un account assegnato al gruppo di ruoli eDiscovery Manager (e aggiunto come amministratore di eDiscovery).
 
-- Strumenti di archiviazione di Microsoft Azure installati in un computer che ha accesso alla struttura di cartelle di contenuto non di Office 365. Per installare AzCopy, vedere [Introduzione a AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Assicurarsi di installare AzCopy nel percorso predefinito, che è **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**.
+- Lo strumento AzCopy v 8.1 è installato in un computer che ha accesso alla struttura di cartelle di contenuto non di Office 365. Per installare AzCopy, vedere [Transfer Data with the AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Assicurarsi di installare AzCopy nel percorso predefinito, che è **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**. È necessario utilizzare AzCopy v 8.1. Le altre versioni di AzCopy potrebbero non funzionare quando si caricano dati non di Office 365 in Advanced eDiscovery.
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in Advanced eDiscovery
@@ -81,14 +81,14 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
    un. Nella casella **percorso della posizione dei file** verificare o digitare il percorso della cartella principale in cui sono stati archiviati i dati non di Office 365 che si desidera caricare. Ad esempio, per il percorso dei file di esempio visualizzati nella **sezione prima di iniziare**, è necessario digitare **%USERPROFILE\Downloads\nonO365**. Se si specifica la posizione corretta, il comando AzCopy visualizzato nella casella sotto il percorso viene aggiornato correttamente.
 
-   b. Fare clic su **copia negli Appunti** per copiare il comando visualizzato nella casella. Avviare un prompt dei comandi di Windows, incollare il comando e premere INVIO.  I file verranno caricati nell'archiviazione BLOB di Azure sicura per il passaggio successivo.
+   b. Fare clic su **copia negli Appunti** per copiare il comando visualizzato nella casella.
 
 7. Avviare un prompt dei comandi di Windows, incollare il comando copiato nel passaggio precedente e quindi premere **invio** per avviare il comando AzCopy.  Dopo aver avviato il comando, i file non di Office 365 verranno caricati nel percorso di archiviazione di Azure preparato nel passaggio 4.
 
    ![Importazione non Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > Se il comando AzCopy fornito ha esito negativo, fare riferimento a [risoluzione dei problemi AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
+   > Come indicato in precedenza, è necessario utilizzare AzCopy v 8.1 per utilizzare correttamente il comando fornito nella pagina **Carica file** . Se il comando AzCopy fornito ha esito negativo, vedere [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
 8. Tornare al centro sicurezza & conformità e fare clic su **Avanti: elabora file** nella procedura guidata.  In questo modo viene avviata l'elaborazione, l'estrazione del testo e l'indicizzazione dei file non di Office 365 caricati nel percorso di archiviazione di Azure.  
 
