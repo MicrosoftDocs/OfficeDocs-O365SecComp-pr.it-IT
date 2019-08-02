@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598802"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054718"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
@@ -29,14 +29,14 @@ Come amministratore, è possibile visualizzare, rilasciare ed eliminare i messag
   
 Per impostazione predefinita, Office 365 invia i messaggi di phishing e i messaggi contenenti malware direttamente in quarantena. Gli altri messaggi filtrati vengono inviati alla cartella posta indesiderata degli utenti, a meno che non sia stato impostato un criterio per inviarli alla quarantena.
   
-Per utilizzare i messaggi in quarantena inviati ad altri utenti e utilizzare i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale in Office 365 o dell'amministratore della sicurezza nel centro sicurezza e conformità.
+Per utilizzare i messaggi in quarantena o i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale (GA) in Office 365 o essere membri di uno o più gruppi di ruoli Centro sicurezza & conformità. Per ulteriori informazioni, vedere Permissions [in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
   
 > [!IMPORTANT]
 >Per impostazione predefinita, i messaggi di posta indesiderata, di massa e di phishing vengono mantenuti in quarantena per 30 giorni. I messaggi in quarantena perché corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. I messaggi di malware vengono mantenuti in quarantena per 15 giorni. È possibile personalizzare il tempo di quarantena della posta indesiderata nelle impostazioni di &amp; protezione da posta indesiderata nel centro sicurezza e conformità. Quando Office 365 Elimina un messaggio dalla quarantena, non è possibile riottenerlo. Se lo si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena nei criteri di filtro della protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione del periodo di conservazione della quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in questo articolo. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Visualizzare i messaggi in quarantena dell'organizzazione
 
-1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale nell'organizzazione di Office 365, accedere a Office 365 e [passare al centro sicurezza e conformità](go-to-the-securitycompliance-center.md).
+1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale (o ruoli di sicurezza & conformità corretti) nell'organizzazione di Office 365, accedere a Office 365 e [passare al centro sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
 2. Nell'elenco a sinistra espandere **gestione minacce**, fare clic su **Revisione**e quindi scegliere quarantena ****.
     
@@ -189,7 +189,7 @@ Quando si rilasciano i messaggi, tenere presente quanto segue:
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>Per modificare il periodo di conservazione della quarantena per i criteri di filtro della posta indesiderata predefiniti nel centro sicurezza e conformità
 
-1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale nell'organizzazione di Office 365, accedere a Office 365 e [passare al centro sicurezza e conformità](go-to-the-securitycompliance-center.md).
+1. L'utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale (o ruoli di sicurezza & conformità corretti) nell'organizzazione di Office 365, accedere a Office 365 e [passare al centro sicurezza e conformità](go-to-the-securitycompliance-center.md).
     
 2. A sinistra espandere **gestione minacce**, scegliere **criteri**e quindi protezione da **posta**indesiderata. <br/>
     > [!TIP]

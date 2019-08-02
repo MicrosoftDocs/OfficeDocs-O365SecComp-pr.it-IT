@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Esplora risorse (e sui rilevamenti in tempo reale) &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605475"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054758"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce (e rilevamenti in tempo reale)
 
@@ -170,3 +170,8 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
+## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Alcune differenze tra il rilevamento di tempo reale e l'esportatore di minacce.
+
+ - Il **rapporto di rilevamento in tempo reale** viene fornito con la sottoscrizione ATP P1, mentre **Threat Explorer** è incluso in ATP P2.
+ - Il rapporto sui rilevamenti in **tempo reale** consente di visualizzare i rilevamenti in tempo reale mentre i rapporti dell'esploratore di minacce consentono di visualizzare ulteriori dettagli in un determinato attacco.
+ - I report di **Esplora minacce** offrono diversi insiemi di report che migliorano l'esperienza rispetto ai report dei rilevatori in **tempo reale** .

@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Il filtro di protezione da posta indesiderata in uscita è sempre abilitato se si utilizza il servizio per l'invio di messaggi di posta elettronica in uscita, proteggendo così l'organizzazione utilizzando il servizio e i destinatari previsti.
-ms.openlocfilehash: c3eb663d569e717597ff926896ed3daefb48186e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2bf2f8c7292bee4d1e89249bcec5c74a4b5d38c9
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600062"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054654"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurare i criteri della posta indesiderata in uscita
 
@@ -29,6 +29,9 @@ Nel video seguente viene illustrato come configurare il criterio della posta ind
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
+> [!NOTE]
+> Per ottenere i risultati migliori del filtro, il contenuto del video di cui sopra deve essere utilizzato con una corretta configurazione e la familiarità con i [controlli di posta indesiderata in uscita in Office 365](https://docs.microsoft.com/office365/securitycompliance/outbound-spam-controls).
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 <a name="sectionSection0"> </a>
 

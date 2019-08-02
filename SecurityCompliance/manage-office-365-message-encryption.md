@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Dopo aver configurato Office 365 Message Encryption (OME), è possibile personalizzare la configurazione della distribuzione in diversi modi. Ad esempio, è possibile configurare la possibilità di abilitare i codici Pass una tantum, visualizzare il pulsante Proteggi in Outlook sul Web e altro ancora. Le attività descritte in questo articolo illustrano come fare.
-ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9b59e352131121978ae6a523cc07ea40196e8038
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852530"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054698"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 
@@ -133,6 +133,9 @@ Per ulteriori informazioni e per una panoramica dell'esperienza client, vedere [
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
    ```
+> [!NOTE]
+
+> I singoli criteri cassetta postale (OWA/ActiveSync) sovrascrivono queste impostazioni (ad esempio, se-IRMEnabled è impostato su false all'interno del rispettivo criterio cassetta postale OWA oppure in un criterio cassetta postale di ActiveSync, queste configurazioni non sarebbero valide).
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Abilitare la decrittografia sul fianco del servizio degli allegati di posta elettronica per i client di posta del browser Web
 

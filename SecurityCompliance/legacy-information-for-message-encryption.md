@@ -3,7 +3,7 @@ title: Informazioni legacy per Office 365 Message Encryption
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 01/04/2018
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection. Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere crittografia dei messaggi di Office 365. Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
-ms.openlocfilehash: 89d3adfa2672e86dd6f247ad408ccc95ebaf2b7f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 421a690ee9934368f1611f352bf8c6a75da1d09c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598922"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054748"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informazioni legacy per Office 365 Message Encryption
 
@@ -30,15 +30,15 @@ Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e 
 Ecco alcuni esempi:
   
 - Un dipendente di banca invia istruzioni sulla carta di credito ai clienti
-    
+
 - Un rappresentante della compagnia assicurativa fornisce informazioni sui criteri ai clienti
-    
+
 - Un broker di mutui richiede informazioni finanziarie da un cliente per una domanda di prestito
-    
+
 - Un provider di servizi sanitari invia informazioni sull'assistenza sanitaria ai pazienti
-    
+
 - Un avvocato invia informazioni riservate a un cliente o a un altro avvocato
-    
+
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Funzionamento della crittografia dei messaggi di Office 365 senza le nuove funzionalità
 
 La crittografia dei messaggi di Office 365 è un servizio online basato su Microsoft Azure Rights Management (Azure RMS). Con Azure RMS, gli amministratori possono definire le regole del flusso di posta per determinare le condizioni per la crittografia. Ad esempio, una regola può richiedere la crittografia di tutti i messaggi indirizzati a un destinatario specifico.
@@ -74,13 +74,13 @@ I destinatari seguono le istruzioni del messaggio per aprire l'allegato e esegui
 In qualità di amministratore di Exchange Online e Exchange Online Protection, è possibile personalizzare i messaggi crittografati. Ad esempio, è possibile aggiungere il marchio e il logo della società, specificare un'introduzione e aggiungere testo di dichiarazione di non responsabilità nei messaggi crittografati e nel portale in cui i destinatari visualizzano i messaggi crittografati. Utilizzando i cmdlet Windows PowerShell, è possibile personalizzare i seguenti aspetti dell'esperienza di visualizzazione per i destinatari dei messaggi di posta elettronica crittografati:
   
 - Testo introduttivo del messaggio di posta elettronica contenente il messaggio crittografato
-    
+
 - Testo della dichiarazione di non responsabilità del messaggio di posta elettronica contenente il messaggio crittografato
-    
+
 - Testo portale che apparirà nel messaggio di visualizzazione del portale
-    
+
 - Logo che verrà visualizzato nel messaggio di posta elettronica e nel portale di visualizzazione
-    
+
 È anche possibile ripristinare l'aspetto predefinito in qualsiasi momento.
   
 Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma nell'allegato di posta elettronica:
@@ -90,9 +90,9 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
  **Per personalizzare i messaggi di posta elettronica di crittografia e il portale di crittografia con il marchio dell'organizzazione**
   
 1. Connettersi a Exchange Online tramite Remote PowerShell, come descritto in [Connect to Exchange Online using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
-    
-2. Utilizzare il cmdlet Set-OMEConfiguration come descritto di seguito: [set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) oppure utilizzare la seguente tabella per istruzioni. 
-    
+
+2. Utilizzare il cmdlet Set-OMEConfiguration come descritto di seguito: [set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) oppure utilizzare la seguente tabella per istruzioni.
+
    **Opzioni di personalizzazione della crittografia**
 
 |**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi di Windows PowerShell**|
@@ -101,13 +101,13 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
 |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel  <br/> |
-   
+
  **Per rimuovere le personalizzazioni di marca dai messaggi di posta elettronica di crittografia e il portale di crittografia**
   
 1. Connettersi a Exchange Online tramite Remote PowerShell, come descritto in [Connect to Exchange Online using Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
-    
+
 2. Utilizzare il cmdlet Set-OMEConfiguration come descritto di seguito: [set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Per rimuovere le personalizzazioni personalizzate dell'organizzazione dai valori DisclaimerText, EmailText e PortalText, impostare il valore su una stringa vuota `""`. Per tutti i valori di immagine, ad esempio logo, impostare il `"$null"`valore su.
-    
+
    **Opzioni di personalizzazione della crittografia**
 
 |**Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi di Windows PowerShell**|
@@ -116,7 +116,7 @@ Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma n
 |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
-   
+
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informazioni sul servizio per la crittografia dei messaggi di Office 365 legacy prima del rilascio delle nuove funzionalità OME
 <a name="LegacyServiceInfo"> </a>
 
@@ -131,7 +131,7 @@ La tabella seguente fornisce informazioni tecniche per il servizio di crittograf
 |Criteri di conservazione della posta elettronica di Exchange Online  <br/> |Exchange Online non archivia i messaggi crittografati.  <br/> |
 |Supporto linguistico per la crittografia dei messaggi di Office 365  <br/> | Crittografia dei messaggi di Office 365 supporta le ingue di Office 365, come segue:  <br/>  I messaggi di posta elettronica in arrivo e i file HTML allegati vengono localizzati in base alle impostazioni della lingua del mittente.  <br/>  Il portale di visualizzazione viene localizzato in base alle impostazioni del browser del destinatario.  <br/>  Il corpo (contenuto) del messaggio crittografato non è localizzato.  <br/> |
 |Informazioni sulla privacy per il Portale OME e l'app visualizzatore OME  <br/> |[Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) fornisce informazioni dettagliate sulle azioni effettuate da Microsoft con le informazioni private fornite dagli utenti.  <br/> |
-   
+
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Domande frequenti su OME legacy
 <a name="LegacyServiceInfo"> </a>
 
@@ -142,9 +142,9 @@ Hai domande sulla crittografia dei messaggi di Office 365? Di seguito sono ripor
 I destinatari esterni all'organizzazione che ricevono messaggi crittografati di Office 365 possono visualizzarli seguendo uno dei due metodi riportati:
   
 - Tramite l'accesso con un account Microsoft o un account aziendale o dell'Istituto di istruzione associato a Office 365.
-    
+
 - Utilizzando un codice pass monouso.
-    
+
  **D. I messaggi criptati di Office 365 vengono memorizzati sul cloud o sui server Microsoft?**
   
 No, i messaggi crittografati vengono mantenuti nel sistema di posta elettronica del destinatario e, quando il destinatario apre il messaggio, viene temporaneamente inviato per la visualizzazione nei server di Office 365. I messaggi non vengono archiviati.
@@ -159,7 +159,7 @@ Sì. È possibile utilizzare i cmdlet di Windows PowerShell per personalizzare i
   
  **D. I destinatari esterni hanno bisogno di sottoscrizioni?**
   
-No, i destinatari esterni non necessitano di una sottoscrizione per leggere o rispondere ai messaggi crittografati. 
+No, i destinatari esterni non necessitano di una sottoscrizione per leggere o rispondere ai messaggi crittografati.
   
  **D. in che modo la crittografia dei messaggi di Office 365 è diversa da Rights Management Services (RMS)?**
   
@@ -186,12 +186,12 @@ Il contenuto della posta elettronica in arrivo viene localizzata in base alle im
 La crittografia dei messaggi di Office 365 utilizza Rights Management Services (RMS) come infrastruttura di crittografia. Il metodo di crittografia utilizzato dipende da dove ottieni le chiavi RMS utilizzate per crittografare e decrittografare messaggi.
   
 - Se si utilizza Microsoft Azure RMS per ottenere le chiavi, viene utilizzata la modalità di crittografia 2. La Modalità di crittografia 2 è un'implementazione di crittografia AD RMS aggiornata e migliorata. Questa supporta RSA 2048 per la crittografia e firma e SHA-256 per firma.
-    
+
 - Se si utilizza Active Directory (AD) RMS per ottenere le chiavi, viene utilizzata la Modalità di crittografia 1 o la Modalità di crittografia 2. Il metodo utilizzato dipende dalla distribuzione Active directory (AD) RMS. La Modalità di crittografia 1 è l'implementazione di crittografia AD RMS originale. Questa supporta RSA 1024 per la crittografia e firma e SHA-1 per firma. Questa modalità continua ad essere supportata da tutte le versioni correnti di RMS.
-    
+
 Per ulteriori informazioni, vedere [modalità di crittografia ad RMS](http://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **D. Perché alcuni messaggi crittografati risultano provenienti da Office365@messaging.microsoft.com?**
+ **D: perché alcuni messaggi crittografati dicono di essere provenienti da** Office365@messaging.microsoft.com?
   
 Quando una risposta crittografata viene inviata dal portale di crittografia oppure tramite l'app Visualizzatore Crittografia messaggi di Office 365, l'indirizzo del messaggio di posta elettronica da inviare è impostato su Office365@messaging.microsoft.com perché il messaggio crittografato viene inviato tramite un endpoint di Microsoft. In questo modo si evita che i messaggi crittografati vengano contrassegnati come posta indesiderata. Il nome visualizzato nel messaggio di posta elettronica e l'indirizzo all'interno del portale di crittografia non vengono modificati a causa di questa etichetta. Inoltre, tale etichetta si applica solo ai messaggi inviati tramite il portale, non tramite altri client di posta elettronica.
   
@@ -205,7 +205,7 @@ Sì. È necessario aggiungere URL per Exchange Online all'elenco Consenti per l'
   
  **D. A quanti destinatari posso inviare un messaggio crittografato tramite Office 365?**
   
-Il limite per il destinatario di un messaggio crittografato è basato sul numero di caratteri nel campo **a** del messaggio. Quando combinati (dopo l'espansione della lista di distribuzione), gli indirizzi dei destinatari nel campo **A** non dovrebbero superare gli 11.980 caratteri. Poiché gli indirizzi di posta elettronica possono variare in base alla lunghezza dei caratteri, non esiste un limite standard per il destinatario di un singolo messaggio crittografato. 
+Il limite del destinatario è 500 destinatari per messaggio oppure, se combinato dopo l'espansione della lista di distribuzione, 11.980 caratteri del messaggio in campo **a** , a seconda di quale verrà prima.
   
  **D. È possibile revocare un messaggio inviato a un particolare destinatario?**
   
@@ -217,6 +217,5 @@ Non è presente un rapporto che indica se è stato visualizzato un messaggio cri
   
  **D. Come vengono utilizzate da Microsoft le informazioni fornite tramite il Portale OME e l'app visualizzatore OME?**
   
-L'informativa [sulla privacy di Office 365 Messaging Encryption Portal](protected-message-viewer-portal-privacy-statement.md) fornisce informazioni dettagliate su ciò che Microsoft fa e non fa con le informazioni private. 
-  
-
+L'informativa [sulla privacy di Office 365 Messaging Encryption Portal](protected-message-viewer-portal-privacy-statement.md) fornisce informazioni dettagliate su ciò che Microsoft fa e non fa con le informazioni private.
+ 
