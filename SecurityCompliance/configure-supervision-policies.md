@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151538"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168174"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
 
@@ -53,7 +53,7 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
     Testare i criteri di supervisione per assicurarsi che funzioni come desiderato. È importante garantire che la strategia di conformità soddisfi gli standard.
 
-- **Passaggio 6 (facoltativo)**: [configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 o Outlook sul Web (in precedenza noto come Outlook Web App) per esaminare le comunicazioni controllate](#step-6-configure-outlook-for-reviewers-optional)
+- **Passaggio 6 (facoltativo)**: [configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 per esaminare le comunicazioni sorvegliate](#step-6-configure-outlook-for-reviewers-optional)
 
     Configurare Outlook per consentire agli utenti di accedere alla funzionalità di supervisione all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
 
@@ -68,6 +68,8 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 |Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
 | Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
+Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
+
 Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere il criterio di supervisione aggiornato man mano che i nuovi dipendenti fanno parte dell'organizzazione.
 
 1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicato per il criterio di supervisione globale con le proprietà seguenti: assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
@@ -143,7 +145,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
 ### <a name="create-custom-sensitive-information-types"></a>Creare tipi di informazioni riservate personalizzate
 
-1. Creare un nuovo tipo di informazioni riservate e aggiungere il dizionario personalizzato nel centro conformità di Office 365 Security &. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
+1. Creare un nuovo tipo di informazioni riservate e aggiungere il dizionario personalizzato nel centro sicurezza & conformità di Office 365. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
 
     - Definire un nome e una descrizione per il tipo di informazioni riservate
     - Definire gli elementi di prossimità, livello di confidenza e motivo primario
@@ -189,7 +191,7 @@ I revisori che desiderano utilizzare Outlook invece del dashboard di supervision
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Passaggio 1: copiare l'indirizzo della cassetta postale di supervisione
 
-Per configurare la revisione per Outlook desktop o Outlook per il Web, è necessario l'indirizzo della cassetta postale di supervisione creata come parte del programma di installazione dei criteri di supervisione.
+Per configurare la revisione per Outlook desktop, è necessario l'indirizzo della cassetta postale di supervisione creata come parte del programma di installazione dei criteri di supervisione.
   
 > [!NOTE]
 > Se un altro utente ha creato il criterio, è necessario ottenere questo indirizzo da loro per installare il componente aggiuntivo.
