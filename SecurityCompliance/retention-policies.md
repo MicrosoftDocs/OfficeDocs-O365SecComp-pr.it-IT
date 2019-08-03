@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o solo a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o solo al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840904"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054768"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -300,21 +300,9 @@ Sui criteri di conservazione è ora applicata la protezione dell'archiviazione. 
   
 ## <a name="releasing-a-retention-policy"></a>Rilascio dei criteri di conservazione
 
-È possibile disattivare o eliminare i criteri di conservazione in qualsiasi momento. Eseguendo questa operazione, il contenuto conservato in SharePoint o OneDrive non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. È possibile attivare di nuovo i criteri di conservazione durante il periodo di tolleranza e nessun contenuto verrà eliminato per tale criterio. Il periodo di tolleranza può essere configurato utilizzando PowerShell.
+È possibile disattivare o eliminare i criteri di conservazione in qualsiasi momento. Eseguendo questa operazione, il contenuto conservato in SharePoint o OneDrive non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. È possibile attivare di nuovo i criteri di conservazione durante il periodo di tolleranza; in tal caso, nessun contenuto verrà eliminato per tale criterio. Questo periodo di tolleranza è configurabile con PowerShell. A breve sarà disponibile uno script di esempio da usare.
 
-Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
-
-Poi eseguire il seguente script di PowerShell. È possibile impostare la proprietà `ip_tenantGracePeriodInDays` nelle impostazioni di sottoscrizione del tenant su qualsiasi valore compreso tra 0 - 100 giorni. Impostando il valore su 0, non è previsto alcun periodo di tolleranza e i criteri di conservazione vengono rilasciati immediatamente. 
-
-`
-$siteSubscription = Get-SPSiteSubscription -Identity 
-$siteSubScriptionId 
-$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
-$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
-$properties.SetValue("ip_tenantGracePeriodInDays",  30)
-`
-
-Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di permanenza di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](https://docs.microsoft.com/it-IT/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di attesa di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](https://docs.microsoft.com/it-IT/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Precedenza nei principi di conservazione
 

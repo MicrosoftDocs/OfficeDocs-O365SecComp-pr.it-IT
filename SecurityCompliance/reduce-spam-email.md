@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601233"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054708"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
  **Si riceve troppa posta indesiderata in Office 365? Ecco cosa fare.**
   
-È consigliabile segnalare i messaggi falsi negativi [usando il componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) per aiutarci a migliorare i filtri. È anche possibile inoltrare il messaggio *come allegato* a junk@office365.microsoft.com o a phish@office365.microsoft.com (se si tratta di phishing).
+È consigliabile segnalare i messaggi falsi positivi [usando il componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) per aiutare a migliorare i filtri. È anche possibile inviare il messaggio usando [Esplora richieste](admin-submission.md).
 
 > [!TIP]
 > Se si ritiene che il messaggio è indesiderato e si trova nella cartella Posta indesiderata, questo non costituisce un problema. Se non si vuole visualizzarlo nella cassetta postale, è consigliabile modificare i criteri di filtro posta indesiderata per mettere in quarantena il messaggio. Per altre informazioni su come mettere in quarantena un messaggio, vedere [Mettere in quarantena i messaggi di posta elettronica in Office 365](quarantine-email-messages.md).
@@ -57,7 +57,10 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
     
 - **Bloccare immediatamente un mittente** Se è necessario bloccare immediatamente un mittente, è possibile usare l'indirizzo di posta elettronica, il dominio o l'indirizzo IP. Vedere [Creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md). Una voce in un elenco di elementi attendibili dell'utente finale può sostituire un blocco impostato dall'amministratore.
     
-- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
+- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [abilitare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md).
+
+- **Usare [Esplora richieste](admin-submission.md)** Gli amministratori possono ora inviare messaggi di posta elettronica con ID messaggio di rete o file, URL e file per l'analisi di Microsoft in Office 365. Un amministratore può anche visualizzare il feedback inviato dagli utenti e usare qualsiasi schema per modificare le impostazioni che potrebbero causare problemi.
+
 - **Abilitare [DKIM](use-dkim-to-validate-outbound-email.md)** per firmare tutti i messaggi in uscita e migliorare la sicurezza del dominio e del tenant.
  > [!TIP]
 > Dopo aver abilitato DKIM è necessario abilitare [DMARC](use-dkim-to-validate-outbound-email.md) perché questo record verrà convalidato se DKIM e SPF funzionano correttamente e, in generale, i messaggi di posta elettronica di spoofing non includono alcuna firma in quanto O365 gestisce la chiave simmetrica pubblica e privata.
@@ -66,8 +69,6 @@ Per proteggersi dalla ricezione di troppa posta indesiderata, Exchange Online Pr
 
 - **Abilitare la regola della posta indesiderata e controllare l'elenco elementi attendibili** Verificare he la regola di azione della posta indesiderata sia attiva e che il mittente o il dominio del mittente non sia configurato per ignorare l'elenco di elementi attendibili personale. Il modo migliore per accedere a queste impostazioni è da [Blocca o consenti (impostazioni di posta indesiderata)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Qui, è anche possibile bloccare l'indirizzo di posta elettronica o il dominio del mittente.
     
-- **Segnalare la posta indesiderata a Microsoft** Segnalare la posta indesiderata a Microsoft usando il [componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). È inoltre possibile inviare un messaggio all'indirizzo junk@office365.microsoft.com e allegare uno o più messaggi da segnalare.
-    
-    **Importante** Se non si inoltrano i messaggi come allegati, mancheranno le intestazioni e non potremo migliorare il filtro protezione da posta indesiderata di Office 365. 
-    
+- **Segnalare la posta indesiderata a Microsoft** Per segnalare messaggi di posta indesiderata a Microsoft, usare il [componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+       
 - **Annullare l'iscrizione alla posta elettronica inviata in massa** Se il messaggio proviene da indirizzo alla quale ci si è iscritti (newsletter, prodotti e così via) e contiene un collegamento per annullare iscrizione di una fonte attendibile, è consigliabile semplicemente annullare l'iscrizione. Office 365 generalmente non gestisce questi messaggi come posta indesiderata. È anche possibile bloccare il mittente oppure rivolgersi all'amministratore per apportare una modifica affinché tutta la posta inviata in massa venga considerata posta indesiderata.

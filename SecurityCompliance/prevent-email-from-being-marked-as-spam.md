@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come impedire falsi positivi ed evitare che messaggi di posta elettronica effettivi vengano contrassegnati come posta indesiderata in Office 365.
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157478"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054674"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365
 
  **I messaggi effettivi vengono contrassegnata come posta indesiderata in Office 365? Ecco cosa fare.**
   
-Se si riceve un falso positivo, è opportuno segnalare il messaggio a Microsoft usando il [componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). È inoltre possibile inoltrare il messaggio *come allegato* all'indirizzo junk@office365.microsoft.com.
-
-**Importante** Se non si inoltrano i messaggi come allegato, mancheranno le intestazioni e non potremo migliorare il filtro protezione da posta indesiderata di Office 365.
+Se si riceve un falso positivo, è opportuno segnalare il messaggio a Microsoft usando il [componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). È inoltre possibile inviare il messaggio usando [Esplora richieste](admin-submission.md).
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinare il motivo per cui il messaggio è stato contrassegnato come posta indesiderata
 
@@ -62,7 +60,9 @@ Per funzionare correttamente, Exchange Online Protection (EOP) chiede agli ammin
 
 - **Selezionare i record DNS di Office 365**. Per consentire a EOP di fornire protezione, i record DNS di Mail Exchanger (MX) per tutti i domini devono essere indirizzati a Office 365 e solo a Office 365. Se MX non punta a Office 365, EOP non può fornire filtri antispam per gli utenti. Se si vuole usare un altro servizio o appliance per fornire filtri antispam al proprio dominio, prendere in considerazione la possibilità di disabilitare la protezione antispam in EOP. È possibile farlo creando una regola di flusso di posta che imposta il valore SCL su -1. Se in seguito si decide di usare EOP, assicurarsi di rimuovere questa regola di flusso di posta. 
     
-- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti**: è consigliabile [attivare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md). Un amministratore può anche visualizzare i commenti e suggerimenti inviati dagli utenti e utilizzare i modelli per modificare le impostazioni che potrebbero causare problemi.
+- **Attivare il componente aggiuntivo Segnala messaggio per gli utenti** È consigliabile [abilitare il componente aggiuntivo Segnala messaggio per gli utenti](enable-the-report-message-add-in.md).
+
+- **Usare [Esplora richieste](admin-submission.md)** Gli amministratori possono ora inviare messaggi di posta elettronica con ID messaggio di rete o file, URL e file per l'analisi di Microsoft in Office 365. Un amministratore può anche visualizzare il feedback inviato dagli utenti e usare qualsiasi schema per modificare le impostazioni che potrebbero causare problemi.
 
 - 
   **Verificare che gli utenti rispettino i limiti consentiti** per l'invio e la ricezione dei messaggi di posta elettronica come illustrato [qui](https://docs.microsoft.com/it-IT/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
@@ -80,7 +80,6 @@ EOP rispetterà gli elenchi dei mittenti e dei destinatari attendibili, ma non q
 - **Disabilitare il filtro SmartScreen in Outlook** Se si usa un client desktop Outlook meno recente, è opportuno disabilitare la funzionalità di filtro SmartScreen, che è stata sospesa. Se abilitato, può causare falsi positivi. Questo non dovrebbe essere necessario se si esegue un client Outlook desktop aggiornato.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Risoluzione dei problemi: un messaggio viene recapitato nella cartella Posta indesiderata anche se è stato contrassegnato come posta legittima da EOP
-
 
 Se gli utenti hanno abilitato l'opzione "Solo elenchi indirizzi attendibili: nella cartella Posta in arrivo verranno recapitati solo i messaggi inviati dagli utenti o dai domini inclusi nell'elenco Mittenti attendibili o Destinatari attendibili", tutti i messaggi di posta elettronica per un mittente verranno recapitati nella cartella della posta indesiderata, a meno che il mittente non sia incluso nell'elenco dei mittenti attendibili del destinatario. Questo avverrà indipendentemente dal fatto che EOP contrassegni o meno un messaggio come posta legittima o dall'aver configurato o meno una regola in EOP per contrassegnare il messaggio come posta legittima.
   
