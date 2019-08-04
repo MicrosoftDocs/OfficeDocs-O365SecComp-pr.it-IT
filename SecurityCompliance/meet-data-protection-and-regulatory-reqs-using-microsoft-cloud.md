@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: c4b7188428fc494ca8b0bfc9f76b725a7b9f6538
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1c3bf4db5c2e1eabd431bc4d799c46ba8f41e97e
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158838"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786711"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
 
@@ -120,7 +120,7 @@ Nell'angolo superiore destro del riquadro del dashboard di Compliance Manager è
   
 I punti rimanenti derivano dalla valutazione del controllo del cliente e dall'implementazione e dalla verifica dei controlli gestiti dal cliente, ciascuno con un valore specifico che contribuisce al punteggio complessivo di conformità. 
   
-Ciascuna valutazione indica un punteggio di conformità basato sul rischio che consente di valutare il livello di rischio (a causa di non conformità o controllo non riuscito) associato ad ogni controllo (sia controlli gestiti da Microsoft che dai clienti) di una valutazione. Ad ogni controllo gestito dai clienti è assegnato un numero di punti possibili (il *livello di gravità*) in base a una scala da 1 a 10, in cui più è alto il fattore di rischio se il controllo non viene superato, maggiore è il numero di punti associati, più il fattore di rischio è basso, minore sarà il punteggio. 
+Ciascuna valutazione indica un punteggio di conformità basato sul rischio che consente di valutare il livello di rischio (a causa di non conformità o controllo non riuscito) associato ad ogni controllo (sia controlli gestiti da Microsoft che dai clienti) di una valutazione. Ad ogni controllo gestito dai clienti è assegnato un numero di punti possibili (il livello di gravità) in base a una scala da 1 a 10, in cui più è alto il fattore di rischio se il controllo non viene superato, maggiore è il numero di punti associati, più il fattore di rischio è basso, minore sarà il punteggio. 
   
 Ad esempio, il controllo di valutazione per User Access Management mostrato in basso è classificato con un fattore di rischio molto alto, quindi il punteggio assegnato è 10.
   
@@ -132,7 +132,7 @@ Ad esempio, il controllo di valutazione per User Access Management mostrato in b
   
 Compliance Manager assegna un livello di gravità predefinito ad ogni controllo. La classificazione del rischio viene calcolata in base ai criteri seguenti:
   
-- Se un controllo previene gli incidenti avrà un livello più alto in classifica, se rileva gli incidenti verificatisi o ne corregge l'impatto, la classificazione sarà più bassa. In termini di classificazione della gravità, a un controllo che impedisce una minaccia ed è obbligatorio viene assegnato il numero più alto di punti, mentre ai controlli che sono investigativi o correttivi (indipendentemente dal fatto che siano obbligatori o a discrezione dell'utente) viene assegnato un numero più basso di punti.
+- Se un controllo previene gli incidenti avrà un livello più alto in classifica, se rileva gli incidenti verificatisi o ne corregge l'impatto, la classificazione sarà più bassa. In termini di classificazione della gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero più alto di punti, mentre ai controlli che sono investigativi o correttivi (indipendentemente dal fatto che siano obbligatori o a discrezione dell'utente) viene assegnato un numero più basso di punti.
     
 - Se un controllo (dopo che è stato implementato) è obbligatorio e quindi non può essere bypassato dagli utenti (ad esempio, gli utenti devono reimpostare la propria password e soddisfare i requisiti di lunghezza e caratteri della password) o a discrezione dell'utente e può essere bypassato dagli utenti (ad esempio, in caso di regole aziendali che richiedono agli utenti di bloccare i propri schermi quando si allontanano dalla propria postazione).
     
@@ -277,13 +277,13 @@ In base al livello di gravità del controllo, a quest'ultimo viene assegnato il 
    
 Assegnando delle priorità ai controlli di valutazione con i valori più elevati del punteggio di conformità, l'organizzazione si concentra sugli elementi di rischio più elevato e riceve un feedback positivo proporzionalmente più elevato sotto forma di più punti aggiunti al punteggio totale di conformità per la valutazione di ciascuna valutazione di controllo completata.
   
-### <a name="summmary-of-scoring-methodology"></a>Riepilogo sulla metodologia di assegnazione del punteggio
+### <a name="summary-of-scoring-methodology"></a>Riepilogo sulla metodologia di assegnazione del punteggio
   
 Il punteggio di conformità è un componente fondamentale del modo in cui Compliance Manager aiuta le organizzazioni a comprendere e gestire il proprio livello di conformità. Il punteggio di conformità per una valutazione è un'espressione sotto forma di numero della conformità della società a un dato standard o regolamento, dove più alto è il punteggio (fino al numero massimo di punti assegnati per la valutazione) migliore è il livello di conformità dell'azienda. Comprendere la metodologia del punteggio di conformità in cui i controlli di valutazione sono assegnati a valori di gravità del rischio compresi tra 1 e 10 (da basso ad alto) e il modo in cui le valutazioni di controllo completano il punteggio di conformità totale è fondamentale per le organizzazioni che danno priorità alle loro operazioni.
 
 ## <a name="grouping-assessments"></a>Raggruppamento delle valutazioni
 
-Quando si crea una nuova valutazione, viene richiesto di creare un nuovo gruppo per assegnare la valutazione o assegnare la valutazione a un gruppo esistente. I gruppi consentono di organizzare in modo logico le valutazioni e condividere le informazioni comuni e le attività del flusso di lavoro tra le valutazioni che hanno controlli gestiti dal cliente identici o correlati.
+Quando si crea una nuova valutazione, viene chiesto di creare un gruppo a cui assegnare la valutazione oppure di assegnare la valutazione a un gruppo esistente. I gruppi consentono di organizzare le valutazioni in modo logico e condividere le informazioni e le attività del flusso di lavoro comuni tra le valutazioni che hanno controlli gestiti dal cliente uguali o correlati.
   
 Ad esempio, è possibile raggruppare le valutazioni per anno o gruppi, reparti o agenzie all'interno della propria organizzazione o raggrupparli per anno. Ecco alcuni esempi di gruppi e le valutazioni che potrebbero contenere.
   
@@ -318,15 +318,15 @@ Ad esempio, è possibile raggruppare le valutazioni per anno o gruppi, reparti o
   
 Questi sono i requisiti per il raggruppamento delle valutazioni:
   
-- I nomi dei gruppi (noti anche come *ID gruppo*) devono essere univoci all'interno dell'organizzazione. 
+- I nomi dei gruppi (noti anche come ID gruppo) devono essere univoci all'interno dell'organizzazione. 
     
 - I gruppi possono contenere valutazioni per la stessa certificazione/regolamento, ma ciascun gruppo può contenere solo una valutazione per una coppia di servizi/certificazioni cloud specifici. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e GDPR. Analogamente, un gruppo può contenere più valutazioni per lo stesso servizio cloud purché la certificazione/regolamento corrispondente sia diverso per ciascuno di essi.
     
-Una volta aggiunta una valutazione a un gruppo di valutazione, il raggruppamento non può essere modificato. È possibile rinominare il gruppo di valutazione, che modifica il nome del gruppo di valutazione per tutte le valutazioni associate a quel gruppo. È possibile creare una nuova valutazione e un nuovo gruppo di valutazione e copiare le informazioni da una valutazione esistente, che crea effettivamente un duplicato di tale valutazione in un gruppo di valutazione diverso. L'archiviazione di una valutazione interrompe la relazione tra quella valutazione e il gruppo di valutazione; eventuali ulteriori aggiornamenti ad altre valutazioni correlate non si riflettono più nella valutazione archiviata.
+Dopo l'aggiunta di una valutazione a un gruppo di valutazioni, il gruppo non può essere modificato. È possibile rinominare il gruppo di valutazioni, modificando così il nome del gruppo per tutte le valutazioni associate al gruppo. È possibile creare una valutazione e un nuovo gruppo di valutazioni, quindi copiare le informazioni da una valutazione esistente, creando così un duplicato della valutazione in un gruppo di valutazione diverso in modo facile e veloce. L'archiviazione di una valutazione interrompe la relazione tra la valutazione e il gruppo di valutazione. Qualsiasi ulteriore aggiornamento ad altre valutazioni correlate non viene più riflesso nella valutazione archiviata.
   
-Come illustrato in precedenza, uno dei vantaggi principali dell'utilizzo dei gruppi è che quando due diverse valutazioni nello stesso gruppo condividono lo stesso controllo gestito dai clienti (e quindi le azioni del cliente sarebbero uguali per ciascun controllo), il completamento dei dettagli di implementazione, le informazioni di verifica e lo stato per il controllo in una valutazione sono sincronizzati con lo stesso controllo in qualsiasi altra valutazione del gruppo. In altre parole, se le valutazioni condividono lo stesso controllo e si trovano nello stesso gruppo, è sufficiente gestire la procedura di valutazione per il controllo in un'unica valutazione. I risultati per tale controllo verranno automaticamente sincronizzati con altre valutazioni. Ad esempio, ISO 27001 e ISO 27018 hanno entrambi un controllo relativo alle politiche delle password. Se lo stato del test per il controllo è impostato su "superato" in una valutazione, il controllo verrà aggiornato (e contrassegnato come "superato") nell'altra valutazione, purché entrambe le valutazioni facciano parte dello stesso gruppo di valutazione.
+Come indicato in precedenza, un vantaggio importante dell'uso dei gruppi è che, quando due diverse valutazioni nello stesso gruppo condividono lo stesso controllo gestito dal cliente (e quindi le azioni cliente sarebbero le stesse per ogni controllo), il completamento dei dettagli dell'implementazione, delle informazioni sul test e dello stato del controllo in una valutazione viene sincronizzato con lo stesso controllo in altre valutazioni del gruppo. In altre parole, se le valutazioni condividono lo stesso controllo e si trovano nello stesso gruppo, è sufficiente gestire il processo di valutazione per il controllo in una sola verifica. I risultati del controllo verranno sincronizzati automaticamente con altre valutazioni. Ad esempio, ISO 27001 e ISO 27018 hanno entrambi un controllo relativo ai criteri per le password. Se lo stato di test per il controllo è impostato su "Superato" in una valutazione, il controllo è aggiornato (e contrassegnato come "Superato") nell'altra valutazione.
   
-Ad esempio, si pensi a questi due controlli di valutazione correlati, ognuno dei quali riguarda la crittografia dei dati sulle reti pubbliche, il controllo 6.10.1.2 in Office 365 - valutazione GDPR e il controllo SC-13 in Office 365 - valutazione NIST 800-53. Si tratta di controlli di valutazione correlati, in due diverse valutazioni, entrambi nel gruppo predefinito; inizialmente, nessuna valutazione ha completato alcuna valutazione del controllo del cliente, come indicato sul dashboard di Compliance Manager che mostra queste due valutazioni.
+Per un esempio, si prendano questi due controlli delle valutazioni correlati, ognuno associato alla crittografia dei dati su reti pubbliche, controllo 6.10.1.2 in Office 365, valutazione GDPR e controllo SC-13 in Office 365, valutazione NIST 800-53. Sono controlli correlati di valutazione, in due valutazioni diverse, entrambe nel gruppo predefinito. Inizialmente, nessuna valutazione ha completato le valutazioni di controllo dei clienti, come visualizzato nella dashboard di Gestore conformità che mostra le due valutazioni.
   
 ![Dashboard di Compliance Manager - valutazioni raggruppate - situazione precedente](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
@@ -342,7 +342,7 @@ Passando al controllo correlato nella valutazione raggruppata, vediamo che NIST 
   
 ![Valutazione di Compliance Manager - NIST 800-53 SC (13) completato](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
-Tornando al dashboard, si noti che ogni valutazione ha 1 valutazione del controllo completata e che il punteggio di conformità totale per ogni valutazione è aumentato di 8 (il valore del punteggio di conformità del controllo condiviso).
+Tornando al dashboard, si noti che ogni valutazione ha una valutazione del controllo completata e che il punteggio di conformità totale per ogni valutazione è aumentato di 8 (il valore del punteggio di conformità del controllo condiviso).
   
 ![Dashboard di Compliance Manager - sincronizzazione di avanzamento della valutazione raggruppata](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
@@ -397,23 +397,23 @@ Alcune normative richiedono che un'organizzazione debba essere in grado di elimi
 
 Cercare un account utente:
   
-1. Immettere l'indirizzo e-mail dell'utente digitando l'alias (le informazioni a sinistra del simbolo @) e scegliere il nome del dominio facendo clic sull'elenco dei suffissi di dominio sulla destra. Se si tratta di un tenant con più domini registrati, ricontrollare il suffisso del nome di dominio dell'indirizzo e-mail per verificare che sia corretto.
+1. Immettere l'indirizzo di posta elettronica dell'utente digitando l'alias, ovvero le informazioni a sinistra del simbolo @, e scegliendo il nome di dominio dall'elenco dei suffissi di dominio sulla destra. Se si tratta di un tenant con più domini registrati, è possibile controllare il suffisso del nome di dominio dell'indirizzo di posta elettronica per assicurarsi che sia corretto.
     
 2. Dopo aver immesso correttamente il nome utente, fare clic su **Cerca**. 
     
 3. Se l'account utente non viene trovato, il messaggio di errore "utente non trovato" verrà visualizzato nella pagina. Controllare le informazioni sull'indirizzo e-mail dell'utente, apportare le correzioni necessarie e fare clic su **Cerca** per riprovare. 
     
-4. Se viene rilevato l'account utente, il testo del pulsante cambierà da **Cerca** a **Cancella**, che indica che l'account utente restituito è il contesto operativo per le funzioni aggiuntive che verranno visualizzate di seguito e che l'esecuzione di tali funzioni si applicherà a questo account utente. 
+4. Se viene rilevato l'account utente, il testo del pulsante cambia da **Cerca** a **Cancella**, che indica che l'account utente restituito è il contesto operativo per le funzioni aggiuntive che verranno visualizzate di seguito e che l'esecuzione di tali funzioni si applicherà a questo account utente. 
     
 5. Per cancellare i risultati e cercare un altro utente, fare clic su **Cancella**. 
     
 ### <a name="export-a-report-of-account-data-history"></a>Esportare un report di cronologia dei dati dell'account
 
-Una volta che l'account utente è stato identificato, è possibile generare un report di dipendenze esistente collegato a questo account. Queste informazioni consentiranno di riassegnare le attività aperte o garantire l'accesso alle evidenze caricate in precedenza. 
+Dopo aver individuato l'account utente, si può generare un report delle dipendenze collegate all'account. Queste informazioni consentono di riassegnare le attività aperte o di garantire l'accesso a prove già caricate. 
   
  Per generare ed esportare un report:
   
-1. Fare clic su **Esporta** per generare e scaricare un report delle attività di controllo di Compliance Manager attualmente assegnate all'account utente restituito, nonché l'elenco dei documenti caricati da tale utente. Se non sono presenti attività assegnate o documenti caricati, un messaggio di errore indicherà "Nessun dato per questo utente". 
+1. Fare clic su **Esporta** per generare e scaricare un report delle attività di controllo di Compliance Manager attualmente assegnate all'account utente restituito e l'elenco dei documenti caricati dall'utente. Se non ci sono azioni assegnate o documenti caricati, un messaggio di errore indicherà che non ci sono dati per l'utente. 
     
 2. Il report viene scaricato sullo sfondo della finestra del browser attiva - se non si visualizza il popup di download, controllare la cronologia dei download del browser.
     
@@ -432,9 +432,9 @@ Questa funzione consente a un'organizzazione di rimuovere tutte le dipendenze at
     
 2. Selezionare **Sostituisci** per riassegnare tutte le attività di controllo dall'utente restituito all'utente appena selezionato. 
     
-3. Viene visualizzata una finestra di dialogo di conferma, che indica "Tutte le attività verranno riassegnate dall'utente corrente a quello selezionato. L'operazione non può essere annullata. Continuare?"
+3. Viene visualizzata una finestra di dialogo di conferma che indica "Tutte le attività di controllo verranno riassegnate dall'utente corrente all'utente selezionato. Questa azione non può essere annullata. Continuare?
     
-4. Per continuare a fare clic su **OK**, in caso contrario, fare clic su **Annulla**. 
+4. Per continuare, fare clic su **OK**, in caso contrario, fare clic su **Annulla**. 
     
 > [!NOTE]
 > Tutte le attività (sia attive che completate) saranno assegnate all'utente appena selezionato. Tuttavia, questa operazione non influisce sulla cronologia di caricamento del documento; tutti i documenti caricati dall'utente precedentemente assegnato mostreranno ancora la data/l'ora e il nome dell'utente precedentemente assegnato. 
@@ -493,7 +493,7 @@ Chiunque abbia un account Microsoft o un account organizzativo di Azure Active D
   
 ## <a name="viewing-action-items"></a>Visualizzazione delle attività
 
-Compliance Manager offre una comoda visualizzazione di tutte le attività di controllo assegnate, consentendo di agire rapidamente e facilmente su di esse. È possibile visualizzare tutte le attività o selezionare quelle che corrispondono a una certificazione specifica, facendo clic sulla scheda associata a tale valutazione. Ad esempio, nell'immagine sottostante, è stata selezionata la scheda GDPR, che mostra i controlli relativi alla valutazione GDPR.
+Gestore conformità fornisce una visualizzazione semplice di tutte le attività di valutazione dei controlli assegnate e consente di intervenire in modo facile e tempestivo. È possibile visualizzare tutte le attività o selezionare quelle che corrispondono a una determinata certificazione facendo clic sulla scheda associata alla valutazione desiderata. Ad esempio, nell'immagine seguente, la scheda GDPR è selezionata e mostra i controlli correlati alla valutazione GDPR.
   
 ![Compliance Manager - Le attività elencano più schede GDPR selezionate](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
@@ -513,13 +513,13 @@ Per aggiungere una valutazione a Compliance Manager:
     
 2. Nella finestra **Aggiungere valutazione**, è possibile creare un nuovo gruppo per aggiungere la valutazione oppure aggiungerla a un gruppo esistente (il gruppo predefinito è denominato "Gruppo iniziale"). A seconda dell'opzione scelta, digitare il nome di un nuovo gruppo o selezionare un gruppo esistente dall'elenco a discesa. Per ulteriori informazioni, vedere [Raggruppamento delle valutazioni](#grouping-assessments).
     
-    Se si crea un nuovo gruppo, è anche possibile copiare le informazioni da un gruppo esistente alla nuova valutazione. Ciò significa che qualsiasi informazione che è stata aggiunta ai campi Dettagli di implementazione, Piano di test e Risposta del management dei controlli gestiti dal cliente da Valutazioni nel gruppo da cui si copia, viene copiata nello stesso (o correlato) controllo gestito dai clienti nella nuova valutazione. Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni delle valutazioni in quel gruppo verranno copiate nella nuova valutazione. Per ulteriori informazioni, vedere [Copiare informazioni da valutazioni esistenti](#copying-information-from-existing-assessments).
+    Se si crea un gruppo, è anche possibile copiare informazioni da un gruppo esistente nella nuova valutazione. Ciò significa che le informazioni aggiunte ai campi Dettagli sull'implementazione e Piano di test e risposta del management dei controlli gestiti dal cliente dalle valutazioni nel gruppo da cui si copia vengono copiate negli stessi controlli (o nei controlli correlati) gestiti dal cliente nella nuova valutazione. Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni dalle valutazioni in tale gruppo verranno copiate nella nuova valutazione. Per altre informazioni, vedere [Copia di informazioni da valutazioni esistenti](#copying-information-from-existing-assessments).
     
 3. Fare clic su **Avanti** e procedere come segue:
     
-    a. Scegliere un servizio cloud di Microsoft per verificare la conformità dall'elenco a discesa **Seleziona un prodotto**. 
+    a. Nell'elenco a discesa **Seleziona un prodotto** scegliere un servizio cloud Microsoft per la verifica della conformità. 
     
-    b. Scegliere un certificato da valutare per il servizio cloud selezionato dall'elenco a discesa **Seleziona un certificato**. 
+    b. Nell'elenco **Seleziona una certificazione** scegliere una certificazione rispetto alla quale verificare il servizio cloud selezionato. 
     
 4. Fare clic su **Aggiungere al dashboard** per creare la valutazione. La valutazione verrà aggiunta al dashboard di Compliance Manager come nuova sezione alla fine dell'elenco di quelle esistenti. 
     
@@ -533,7 +533,7 @@ Per aggiungere una valutazione a Compliance Manager:
 
 ## <a name="copying-information-from-existing-assessments"></a>Copiare le informazioni da valutazioni esistenti
 
-Come precedentemente spiegato, quando si crea un nuovo gruppo di valutazione, è possibile copiare le informazioni dalle valutazioni in un gruppo esistente nella nuova valutazione del nuovo gruppo. Ciò consente di applicare la valutazione e il lavoro di verifica che è stato completato agli stessi controlli gestiti dal cliente nella nuova valutazione. Ad esempio, se si dispone di un gruppo per tutte le valutazioni relative a GDPR nella propria organizzazione, è possibile copiare informazioni comuni dal lavoro di valutazione esistente quando si aggiunge una nuova valutazione al gruppo.
+Come spiegato in precedenza, quando si crea un gruppo di valutazioni, è possibile copiare informazioni dalle valutazioni in un gruppo esistente alla nuova valutazione nel nuovo gruppo. In questo modo, le attività di valutazione e test già completate possono essere applicate agli stessi controlli gestiti dal cliente nella nuova valutazione. Se ad esempio si ha un gruppo con tutte le valutazioni correlate al GDPR all'interno dell'organizzazione, è possibile copiare le informazioni comuni dall'attività di valutazione esistente quando si aggiunge una nuova valutazione al gruppo.
   
 È possibile copiare le informazioni seguenti dal cliente a una nuova valutazione:
   
@@ -543,11 +543,11 @@ Come precedentemente spiegato, quando si crea un nuovo gruppo di valutazione, è
     
 - Dettagli dell'implementazione e informazioni del piano.
     
-Analogamente, vengono sincronizzate le informazioni provenienti dai controlli condivisi gestiti dal cliente all'interno dello stesso gruppo di valutazione. Vengono sincronizzate anche le informazioni relative ai controlli gestiti dal cliente nell'ambito della stessa valutazione.
+Analogamente vengono sincronizzate le informazioni dai controlli gestiti dal cliente condivisi all'interno dello stesso gruppo di valutazioni. Vengono sincronizzate anche le informazioni dai controlli gestiti dal cliente correlati all'interno della stessa valutazione.
 
 ## <a name="viewing-assessments"></a>Visualizzazione delle valutazioni
 
-1. Individuare la sezione di valutazione corrispondente alla valutazione da visualizzare, quindi fare clic sul nome della valutazione per aprirla e visualizzare i controlli gestiti da Microsoft e dai clienti associati alla valutazione, insieme a un elenco dei servizi cloud che rientrano nell'ambito della valutazione. Di seguito viene riportato un esempio di valutazione per Office 365 e GDPR.
+1. Individuare la sezione di valutazione corrispondente alla valutazione da visualizzare, quindi fare clic sul nome della valutazione per aprirla e visualizzare i controlli gestiti da Microsoft e dai clienti associati alla valutazione, insieme a un elenco dei servizi cloud che rientrano nell'ambito della valutazione.  Di seguito viene riportato un esempio di valutazione per Office 365 e GDPR.
     
     ![Vista di valutazione di Compliance Manager: a schermo intero con callout](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
@@ -557,15 +557,15 @@ Analogamente, vengono sincronizzate le informazioni provenienti dai controlli co
     
 3. Questa sezione mostra i singoli servizi cloud che rientrano nell'ambito della valutazione.
     
-4. Questa sezione contiene i controlli gestiti da Microsoft. I controlli correlati sono organizzati dalla famiglia di controlli. Fare clic su una famiglia di controlli per espanderla e visualizzare i singoli controlli.
+4. Questa sezione contiene i controlli gestiti da Microsoft. I controlli correlati sono organizzati per gruppo di controlli. Fare clic su un gruppo di controlli per espanderlo e visualizzare i singoli controlli.
     
-5. Questa sezione contiene i controlli gestiti dai clienti, che sono anche organizzati dalla famiglia di controlli. Fare clic su una famiglia di controlli per espanderla e visualizzare i singoli controlli.
+5. Questa sezione contiene i controlli gestiti del cliente, anch'essi organizzati per gruppo di controlli. Fare clic su un gruppo di controlli per espanderlo e visualizzare i singoli controlli.
     
-6. Visualizza il numero totale di controlli nella famiglia di controlli e quanti di questi controlli sono stati valutati. Una funzionalità chiave di Compliance Manager è il monitoraggio dei progressi della tua organizzazione sulla valutazione dei controlli gestiti dai clienti. Per ulteriori informazioni, vedere la sezione [Comprendere il punteggio di conformità](#understanding-the-compliance-score). 
+6. Visualizza il numero totale di controlli inclusi nel gruppo di controlli e quanti di questi controlli sono stati valutati. Una funzionalità chiave della Gestione della Conformità consiste nel tenere traccia dell'avanzamento della valutazione dei controlli gestiti dal cliente da parte dell'organizzazione. Per altre informazioni, vedere la sezione[Informazioni sul punteggio di conformità](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gestire il processo di valutazione
 
-Il creatore di una valutazione è inizialmente l'unico utente della valutazione. Per ciascun controllo gestito dal cliente, è possibile assegnare un'attività a una persona della propria organizzazione in modo tale che tale persona diventi un utente della valutazione che può eseguire le azioni del cliente consigliate e raccogliere e caricare le evidenze. Quando si assegna un'attività, è possibile scegliere di inviare un messaggio di posta elettronica alla persona che contenga dettagli come le azioni del cliente raccomandate e la priorità dell'attività. La notifica e-mail include un link al dashboard **Attività**, che elenca tutte le attività assegnate a tale persona. 
+L'autore di una valutazione è inizialmente l'unico utente della valutazione. Per ogni controllo gestito del cliente è possibile assegnare un'azione a una persona dell'organizzazione in modo che diventi un utente della valutazione, che può eseguire le azioni cliente consigliate e raccogliere e caricare le prova. Quando si assegna un'attività, è possibile decidere di inviare un messaggio di posta elettronica alla persona in cui sono forniti dettagli come le azioni cliente consigliate e la priorità dell'attività. La notifica tramite posta elettronica include un collegamento al dashboard **Attività**, in cui sono elencate tutte le attività assegnate a quella persona. 
   
 Di seguito viene riportato un elenco delle attività che è possibile eseguire utilizzando le funzionalità del flusso di lavoro di Compliance Manager.
   
@@ -573,13 +573,13 @@ Di seguito viene riportato un elenco delle attività che è possibile eseguire u
   
 1. **Utilizzare le opzioni filtro per trovare controlli di valutazione specifici** - Compliance Manager offre **opzioni filtro**, che forniscono all'utente criteri di selezione altamente dettagliati per la visualizzazione dei controlli di valutazione e lo aiutano a individuare con precisione aree specifiche di conformità. 
     
-    Fare clic sull'icona a forma di imbuto sul lato destro della pagina per mostrare o nascondere i controlli per le **opzioni filtro**. Questi controlli consentono di specificare i criteri di filtro e di seguito verranno visualizzati solo i controlli di valutazione che soddisfano tali criteri. ![Controlli per filtrare le valutazioni di Compliance Manager](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    Fare clic sull'icona a forma di imbuto sul lato destro della pagina per visualizzare o nascondere i controlli **Opzioni filtro**. Questi controlli consentono di specificare i criteri di filtro. Solo i controlli delle valutazioni che soddisfano i criteri specificati verranno visualizzati. ![Controlli di filtro delle valutazioni di Compliance Manager](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
-    - **Articoli**: filtra il nome dell'articolo e restituisce i controlli per la valutazione associati a quell'articolo. Ad esempio, digitando "Articolo (5)" viene restituito un elenco di selezione di articoli il cui nome include quella stringa, vale a dire l'articolo (5) (1) (a), l'articolo (5) (1) (b), l'articolo (5) (1) (c), ecc. La selezione dell'articolo (5) (1) (c) restituirà i controlli associati all'articolo (5) (1) (c). Questo campo di selezione multipla utilizza un operatore OR con più valori: ad esempio, se si seleziona l'articolo (5) (1) (a) e si aggiunge l'articolo (5) (1) (c), il filtro restituirà i controlli associati all'articolo (5)(1)(a) o all'articolo (5)(1)(c). 
+    - **Articoli**: filtra in base al nome dell'articolo e restituisce i controlli delle valutazioni associati all'articolo specificato. Ad esempio, se si digita "Articolo (5)", viene restituito un elenco di articoli il cui nome include la stringa digitata, ad esempio Articolo (5)(1)(a), Articolo (5)(1)(b), Articolo (5)(1)(c) e così via. Se si seleziona articolo (5) (1) (c) verranno restituiti i controlli associati all'articolo (5) (1) (c). Si tratta di un campo a selezione multipla che usa un operatore OR con più valori. Ad esempio, se si seleziona Articolo (5)(1)(a) e si aggiunge Articolo (5)(1)(c), il filtro restituisce i controlli associati all'Articolo (5)(1)(a) oppure all'Articolo (5)(1)(c). 
     
       ![Vista di valutazione di Compliance Manager -Filtro sul nome dell'articolo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
-    - **Controlli**: restituisce l'elenco dei controlli i cui nomi si adattano al filtro, ad esempio, digitando 7.3 restituisce un elenco di selezione di elementi come 7.3.1, 7.3.4, 7.3.5, ecc. Questo campo di selezione multipla utilizza un operatore OR con più valori: ad esempio, se si seleziona 7.3.1 e si aggiunge 7.3.4, il filtro restituirà i controlli associati a 7.3.1 o a 7.3.4 
+    - **Controlli**: restituisce l'elenco dei controlli i cui nomi si adattano al filtro, ad esempio, digitando 7.3 restituisce un elenco di selezione di elementi come 7.3.1, 7.3.4, 7.3.5, ecc. Questo campo di selezione multipla utilizza un operatore OR con più valori: ad esempio, se si seleziona 7.3.1 e si aggiunge 7.3.4, il filtro restituisce i controlli associati a 7.3.1 o a 7.3.4 
     
       ![Vista di valutazione di Compliance Manager - Selezione multipla di controlli filtro](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
   
@@ -597,17 +597,17 @@ Di seguito viene riportato un elenco delle attività che è possibile eseguire u
     
 3. **Assegnare un'azione a un utente**: è possibile assegnare un'attività a una persona per implementare i requisiti di una certificazione/regolamento o per testare, verificare e documentare i requisiti di implementazione dell'organizzazione. Quando si assegna un'attività, è possibile scegliere di inviare un messaggio di posta elettronica alla persona che contiene dettagli, tra cui le azioni cliente raccomandate e la priorità dell'attività. È inoltre possibile annullare l'assegnazione o riassegnare un'attività a un'altra persona. 
     
-4. **Gestione documenti**: i controlli gestiti dai clienti dispongono anche di una posizione per gestire i documenti correlati all'esecuzione di attività di implementazione e per l'esecuzione di attività di test e convalida. Chiunque disponga delle autorizzazioni per modificare i dati in Compliance Manager può caricare i documenti facendo clic su **Gestione documenti**. Dopo aver caricato un documento, fare clic su **Gestione documenti** per visualizzare e scaricare i file. 
+4. **Gestire documenti**I controlli gestiti dal cliente includono anche un punto in cui gestire i documenti correlati all'esecuzione delle attività di implementazione e per l'esecuzione di attività di test e convalida. Chiunque abbia le autorizzazioni per modificare i dati in Compliance Manager può caricare documenti facendo clic su **Gestisci documenti**. Dopo avere caricato un documento, è possibile fare clic su **Gestisci documenti** per visualizzare e scaricare i file. 
     
 5. **Fornire dettagli di implementazione e test**: ogni controllo gestito dal cliente ha un campo modificabile in cui gli utenti possono aggiungere dettagli di implementazione che documentano le misure adottate dalla propria organizzazione per soddisfare i requisiti della certificazione/regolamento e per convalidare e documentare il modo in cui la propria organizzazione soddisfa tali requisiti.
     
 6. **Impostare lo stato**: impostare lo stato di ogni elemento nell'ambito del processo di valutazione. I valori di stato disponibili sono **implementato**, **implementazione alternativa**, **pianificato** e **non in ambito**. 
     
-7. **Immettere la data e il risultato del test**: la persona con il ruolo di valutatore di Compliance Manager può verificare il corretto svolgimento delle verifiche, esaminare i dettagli dell'implementazione, il piano di test, i risultati dei test e qualsiasi evidenza caricata, quindi impostare la data e il risultato del test. I valori dei risultati dei test disponibili sono **superato**, **non superato - basso rischio**, **non superato - rischio medio** **** e **non superato - alto rischio**. 
+7. **Immettere i dati del test e il risultato del test**La persona con il ruolo di Esperto di Compliance Manager può verificare che siano stati eseguiti test adeguati, rivedere i dettagli di implementazione, il piano di test, i risultati del test e tutte le prove caricate, quindi impostare Data del test e Risultato del test. I valori disponibili per il risultato del test sono **Superato**, **Non superato - Rischio basso**, **Non superato - Rischio medio**, e**Non superato - Rischio alto**. 
 
 ## <a name="managing-action-items"></a>Gestione delle attività
 
-Le persone coinvolte nel processo di valutazione nella propria organizzazione possono utilizzare Compliance Manager per esaminare i controlli gestiti dai clienti da tutte le valutazioni per le quali sono utenti. Quando un utente accede a Compliance Manager e apre il dashboard **Attività**, viene visualizzato un elenco delle attività ad esso assegnate. A seconda del ruolo di Compliance Manager assegnato all'utente, vengono forniti dettagli di implementazione o test, aggiornamento dello stato o assegnazione di attività. 
+Le persone coinvolte nel processo di valutazione all'interno dell'organizzazione possono usare il Responsabile Conformità per esaminare i controlli gestiti dal cliente da tutte le valutazioni di cui sono utenti. Quando un utente accede a Responsabile Conformità e apre la dashboard **Azioni**, viene visualizzato un elenco delle attività assegnate all'utente stesso. In base al ruolo di Compliance Manager assegnatogli, l'utente può fornire dettagli relativi all'implementazione o al test, aggiornare lo stato o assegnare attività. 
   
 Poiché i controlli di certificazione sono generalmente implementati da una sola persona e testati da un'altra persona, l'attività di controllo può essere inizialmente assegnata a una persona per l'implementazione e, una volta completata, tale persona può riassegnare l'attività di controllo alla persona successiva per i test di controllo e il caricamento delle evidenze. Questa assegnazione/riassegnazione delle azioni di controllo può essere eseguita da qualsiasi utente che abbia un ruolo di Compliance Manager con autorizzazioni sufficienti e consente la gestione centralizzata delle assegnazioni di controllo o il routing decentralizzato delle attività di controllo, dalla persona che si occupa dell'implementazione a quella che si occupa del test, come appropriato.
   
@@ -635,7 +635,7 @@ Le note associate all'attività sono conservate nella sezione delle note e resta
 
 ## <a name="exporting-information-from-an-assessment"></a>Esportazione delle informazioni da una valutazione
 
-È possibile esportare una valutazione in un file Excel, che può essere esaminato dai soggetti interessati alla conformità nella propria organizzazione e fornito a revisori e regolatori. Questo report sulla valutazione rappresenta un'istantanea della valutazione stessa a partire dalla data e dall'ora di creazione del report e contiene i dettagli sia dei controlli gestiti da Microsoft sia dei controlli gestiti dal cliente per tale valutazione, incluso lo stato dell'implementazione del controllo, la data del test di controllo e i risultati del test e, inoltre, fornisce collegamenti alle evidenze caricate. Si consiglia di esportare il report sulla valutazione prima di archiviarla, poiché le valutazioni archiviate non conservano i loro collegamenti ai documenti caricati.
+È possibile esportare una valutazione in un file di Excel che può essere esaminato dagli stakeholder per la conformità all'interno dell'organizzazione e consegnato a revisori ed enti normativi. Questo report di valutazione fornisce un quadro della valutazione alla data e ora di creazione del report e contiene i dettagli sia dei controlli gestiti da Microsoft che di quelli gestiti dal cliente per la valutazione, tra cui lo stato di implementazione dei controlli, la data e i risultati dei test dei controlli e i collegamenti ai documenti di prova caricati. Si consiglia di esportare il report di valutazione prima di archiviare una valutazione perché le valutazioni archiviate non conservano i collegamenti ai documenti caricati.
   
 Per esportare un report sulla valutazione:
   
@@ -684,7 +684,7 @@ Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tr
   
 ![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
-Fare clic sul collegamento Compliance Manager per visualizzare i risultati della ricerca per i controlli di valutazione Compliance Manager. I risultati della ricerca nell'elenco mostrano la data di creazione della valutazione, il nome di raggruppamento delle valutazioni, il servizio cloud applicabile e se si tratta di controlli gestiti da Microsoft o dai clienti.
+Fare clic sul collegamento di Compliance Manager per visualizzare i risultati della ricerca per i controlli di valutazione di Compliance Manager. I risultati della ricerca nell'elenco visualizzata la data di creazione della valutazione, il nome della valutazione del raggruppamento, il servizio cloud applicabile, e se i controlli sono gestiti da Microsoft o dai clienti.
   
 ![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
@@ -700,7 +700,7 @@ Service Trust Portal consente di visualizzare il contenuto della pagina in diver
 
 ## <a name="change-log-for-customer-managed-controls"></a>Log delle modifiche per i controlli gestiti dai clienti
 
-Compliance Manager è progettato per essere aggiornato regolarmente per tenere il passo con i cambiamenti dei requisiti normativi e con i cambiamenti all'interno dei servizi cloud. Questi aggiornamenti includono le modifiche ai controlli gestiti dai clienti. Viene fornito un log delle modifiche per aiutare l'utente a comprendere l'impatto di queste modifiche, inclusi i dettagli sul contenuto aggiunto o modificato e le linee guida sull'impatto delle modifiche sulle valutazioni esistenti. In generale, sono possibili due tipi di modifiche:
+Compliance Manager è progettato per essere aggiornato regolarmente per stare al passo con le modifiche apportate ai requisiti normativi e ai servizi cloud. Tali aggiornamenti includono le modifiche ai controlli gestiti dal cliente. È disponibile un log delle modifiche che consente di comprendere l'impatto delle modifiche, inclusi i dettagli del contenuto aggiunto o modificato e indicazioni per stabilire gli effetti delle modifiche sulle valutazioni esistenti. Generalmente, esistono due tipi di modifiche:
   
 - Una modifica **principale** è una modifica significativa a un'azione del cliente, come l'aggiunta o la rimozione di un controllo o di passaggi numerati specifici oppure un cambiamento nella Guida relativa a responsabilità, elementi consigliati o evidenze. Per le modifiche principali, si consiglia di rivalutare l'implementazione e/o la valutazione del controllo interessato.
     
