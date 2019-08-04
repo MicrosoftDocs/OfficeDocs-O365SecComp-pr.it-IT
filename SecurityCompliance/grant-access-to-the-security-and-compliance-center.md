@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono essere autorizzati a utilizzare le autorizzazioni nel centro sicurezza & conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645121"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792012"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365
 
@@ -39,11 +39,11 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 - I partner di autorizzazione accesso delegato (DAP) con amministra per conto di (AOBO) le autorizzazioni non possono accedere al centro sicurezza & conformità.
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare l'interfaccia di amministrazione di Office 365 per consentire a un altro utente di accedere al centro sicurezza & conformità
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare l'interfaccia di amministrazione per concedere a un altro utente l'accesso al centro sicurezza & conformità
 
 1. [Accedere a Office 365 e passare all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?LinkId=525275).
 
-2. Nell'interfaccia di amministrazione di Office 365 aprire interfaccia di **Amministrazione** e quindi fare clic su **sicurezza & conformità**.
+2. Nell'interfaccia di amministrazione di Microsoft 365 aprire interfaccia di **Amministrazione** e quindi fare clic su **sicurezza & conformità**.
 
 3. Nel centro sicurezza & conformità, accedere a **autorizzazioni**.
 

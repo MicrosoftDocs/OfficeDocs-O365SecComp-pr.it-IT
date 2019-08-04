@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927579"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786621"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
@@ -226,7 +226,7 @@ Gli amministratori globali e tutti gli utenti a cui è stato assegnato il ruolo 
 
 Amministratori globali e chiunque sia assegnato il ruolo di amministratore del responsabile dell'approvazione del cliente può approvare le richieste di accesso protetto dei clienti I clienti controllano queste assegnazioni di ruolo nelle rispettive organizzazioni.
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Come si opta per l'archivio protetto per I clienti?
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Come si opta per l'archivio protetto dei clienti?
 
 Un amministratore globale può abilitare e configurare l'archivio protetto dei clienti nell'interfaccia di amministrazione di Microsoft 365 o Microsoft 365.
 

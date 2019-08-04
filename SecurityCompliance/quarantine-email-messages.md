@@ -2,7 +2,7 @@
 title: Messaggi di posta elettronica in quarantena in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
@@ -16,12 +16,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare una quarantena per i messaggi di posta elettronica in arrivo in Office 365 in cui i messaggi di posta elettronica in arrivo che sono stati filtrati come posta indesiderata, massa, phishing e malware possono essere conservati per la revisione successiva.
-ms.openlocfilehash: 90a8c9f36468fdc8c5d5825776e9678cd8f8e109
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 512f6caa937b2abd083350015e5a366d11502964
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156828"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601293"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Messaggi di posta elettronica in quarantena in Office 365
 

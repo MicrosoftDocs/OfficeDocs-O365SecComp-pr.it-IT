@@ -13,23 +13,23 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Comprendere la resilienza dei dati in Microsoft Office 365.
-ms.openlocfilehash: ef8f3f9599f187e26885cb8ff81559546cc49c50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90edfe1a7e2baac172fcd9b8cc36163b8130484b
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262858"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786681"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resilienza dei dati in Office 365
 
 ## <a name="introduction"></a>Introduzione
 Data la complessità del cloud computing, Microsoft è consapevole del fatto che non si tratta di un caso in cui le cose andranno male, ma piuttosto quando. È possibile progettare i servizi cloud per massimizzare l'affidabilità e ridurre al minimo gli effetti negativi sui clienti quando si verifica un errore. Ci siamo spostati oltre la strategia tradizionale di fare affidamento sull'infrastruttura fisica complessa e abbiamo creato la ridondanza direttamente nei nostri servizi cloud. Viene utilizzata una combinazione di infrastruttura fisica meno complessa e software più intelligente che genera la resilienza dei dati nei servizi e garantisce una disponibilità elevata ai clienti. 
 
-## <a name="resiliency-and-recoverability-are-built-in"></a>La resilienza e la recuperabilità sono inCorporate 
+## <a name="resiliency-and-recoverability-are-built-in"></a>La resilienza e la recuperabilità sono incorporate 
 La creazione di resilienza e ripristino inizia con l'assunto che l'infrastruttura e i processi sottostanti avranno esito negativo a un certo punto: l'hardware (infrastruttura) avrà esito negativo, gli esseri umani commetteranno errori e il software avrà bug. Anche se non è corretto dire che gli sviluppatori di software non stavano pensando a queste operazioni prima del cloud, in che modo questi problemi sono stati gestiti in una tipica implementazione IT è stato molto diverso prima del cloud: 
 - In primo luogo, le protezioni per l'hardware e l'infrastruttura sono state significative. Questo significava che i datacenter con 99,99% di affidabilità richiedevano una notevole quantità di energia e ridondanza di rete e che i server sono stati implementati con il clustering basato su hardware, alimentatori duali, interfacce di rete duali e così. 
 - In secondo luogo, il processo è stato fondamentale. I team operativi hanno mantenuto procedure rigorose, sono state apportate modifiche alle finestre e spesso sono stati significativi overhead per la gestione dei progetti. 
-- Terza, la distribuzione ha avuto luogo a ritmi glaciali. La distribuzione del codice senza possedere l'origine significava in attesa di rilasci delle patch e la versione principale rilasciava la sostituzione hardware e una significativa spesa di capitale. Inoltre, l'unico modo per correggere un problema è stato il rollback. In questo modo, la maggior parte delle organizzazioni IT distribuirà solo i rilasci importanti per evitare che il lavoro venga mantenuto aggiornato. 
+- Terza, la distribuzione ha avuto luogo a ritmi glaciali. La distribuzione del codice senza possedere l'origine significava in attesa di rilasci delle patch e la versione principale rilasciava la sostituzione hardware e una significativa spesa di capitale. Inoltre, l'unico modo per correggere un problema è stato quello di eseguire il rollback. In questo modo, la maggior parte delle organizzazioni IT distribuirà solo i rilasci importanti per evitare che il lavoro venga mantenuto aggiornato. 
 - Infine, la scala dei sistemi distribuiti, così come il livello di interconnessione, era storicamente molto più piccola di quanto non lo sia ora. 
 
 Oggi, i clienti si aspettano un'innovazione continua da Microsoft senza compromettere la qualità e questo è uno dei motivi per cui i servizi e il software di Microsoft sono stati creati con resilienza e ripristino in mente. 

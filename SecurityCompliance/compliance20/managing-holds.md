@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154898"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791992"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gestione delle esenzioni in Advanced eDiscovery
 
@@ -31,7 +31,7 @@ In alcuni casi, è possibile disporre di un insieme di depositari dei dati che s
 
 Per visualizzare il criterio di conservazione dei depositari:
 
-1. Nel **Centro sicurezza _AMP_ Compliance**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel **Centro sicurezza & conformità**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
    
 2. Passare alla scheda **depositari** per aggiungere depositari all'interno del caso. Per informazioni su come è possibile aggiungere e mettere in attesa i depositari all'interno di un caso di eDiscovery avanzato, vedere [aggiungere i depositari a un caso di eDiscovery avanzato](add-custodians-to-case.md). Se i depositari sono già stati aggiunti e li si tiene in attesa, andare al passaggio 3.
    
@@ -48,7 +48,7 @@ Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito d
 
 Per creare un'esenzione per un caso avanzato di eDiscovery:
 
-1. Nel **Centro sicurezza _AMP_ Compliance**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel **Centro sicurezza & conformità**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
   
 2. Fare clic su **Apri** accanto al caso in cui si desidera creare le esenzioni.
   
@@ -132,7 +132,7 @@ Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
 
  - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi gruppo di Office 365 o Microsoft Team di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un gruppo di Office 365 o un blocco di Microsoft Team, solo la cassetta postale di gruppo e il sito del gruppo vengono conservati in blocco; le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito come depositari o che dispongano delle origini dati. Pertanto, se si ha la necessità di disporre di un gruppo di Office 365 o di un team Microsoft per uno specifico custode, valutare la possibilità di mappare la cassetta postale del sito e del gruppo del gruppo al custode (vedere Managing Depositaries in Advanced eDiscovery). Se il gruppo di Office 365 o il team Microsoft non è attribuibile a un singolo custode, è consigliabile aggiungere l'origine a un blocco non detentivo. 
  
- - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina Home > gruppi nell'interfaccia di amministrazione di Office 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
+ - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina Home > gruppi nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

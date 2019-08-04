@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2539a2bb7a5929330410db1f611ff9b8b1a7173
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155288"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786631"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -107,7 +107,7 @@ Un controllo condiviso si riferisce a qualsiasi controllo in cui Microsoft e i c
 
 Gli utenti dell'organizzazione possono utilizzare Compliance Manager per esaminare i controlli gestiti dal cliente da tutte le valutazioni per cui sono stati assegnati. Quando un utente accede a Compliance Manager e apre il dashboard **elementi azione** , viene visualizzato un elenco di elementi azione assegnati. A seconda del ruolo di Compliance Manager assegnato all'utente, è in grado di fornire dettagli sull'implementazione o sui test, aggiornare lo stato o assegnare elementi di azione.
 
-I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi di azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per il testing e il caricamento delle prove. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
+I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi di azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per testare e caricare la prova. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
 
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -115,7 +115,7 @@ Compliance Manager utilizza un [modello di autorizzazione](https://docs.microsof
 
 Per modificare le autorizzazioni predefinite e implementare un modello di controllo di accesso completamente basato sui ruoli, è necessario aggiungere almeno un utente a ogni ruolo di Compliance Manager. Dopo l'aggiunta di un utente a un ruolo, le autorizzazioni per eseguire le azioni assegnate a tale ruolo vengono rimosse dal set predefinito di autorizzazioni disponibili per tutti gli utenti. Solo gli utenti di cui è stato effettuato il provisioning con il ruolo saranno in grado di accedere a Compliance Manager ed eseguire le azioni consentite da tale ruolo.
 
-Ad esempio, se si aggiunge un utente al ruolo per gestire le valutazioni, solo i membri di tale ruolo possono gestire le valutazioni. Se non si aggiunge un utente al ruolo che consente agli utenti di leggere i dati nelle valutazioni, tutti gli utenti dell'organizzazione possono accedere a Compliance Manager e leggere i dati in qualsiasi valutazione.
+Se si aggiunge un utente al ruolo per gestire le valutazioni, solo i membri di tale ruolo potranno gestire le valutazioni. Se non si aggiunge un utente al ruolo che consente agli utenti di leggere i dati nelle valutazioni, tutti gli utenti dell'organizzazione possono accedere a Compliance Manager e leggere i dati in qualsiasi valutazione.
   
 ## <a name="manage-evidence"></a>Gestione delle evidenze
 

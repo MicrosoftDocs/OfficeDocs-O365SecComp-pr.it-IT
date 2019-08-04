@@ -3,7 +3,7 @@ title: Mittente non verificato
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600262"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628509"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
+
+> [!NOTE] 
+> Questi aggiornamenti stanno per essere implementati e potrebbero non essere ancora disponibili per tutti gli utenti.
 
 Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
 
@@ -35,7 +38,7 @@ Outlook.com e Outlook sul Web mostrano gli indicatori quando il mittente di un m
 
 Se si è un cliente di Office 365, è possibile gestire questa funzionalità tramite il Centro sicurezza & Compliance. 
 
-- Nel centro sicurezza & conformità di Office 365, gli amministratori tenant possono attivarla o disattivarla tramite la protezione anti-spoofing in base ai criteri phishing. Inoltre, può essere gestito tramite il cmdlet ' set-AntiPhishPolicy '. Per ulteriori informazioni, vedere protezione anti-phishing in Office 365 e set-AntiPhishPolicy.
+- Nel centro sicurezza & conformità di Office 365 gli amministratori globali o di sicurezza possono attivarla o disattivarla, tramite la protezione anti-spoofing in base ai criteri phishing. Inoltre, può essere gestito tramite il cmdlet ' set-AntiPhishPolicy '. Per ulteriori informazioni, vedere [protezione anti-phishing in Office 365](anti-phishing-protection.md) e [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
     ![Modifica dei mittenti non autenticati nell'interfaccia grafica.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

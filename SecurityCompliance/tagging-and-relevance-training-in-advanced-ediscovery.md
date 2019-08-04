@@ -3,7 +3,7 @@ title: Formazione di tagging e pertinenza in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per pertinenza di Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 82380acc2ea90a600a3dd14f58c6d9bf0a06a1a6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 569fdfd6e5369459d55bb3ecfa2ebc32f0a10005
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158348"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601383"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Formazione di tagging e pertinenza in Office 365 Advanced eDiscovery
 

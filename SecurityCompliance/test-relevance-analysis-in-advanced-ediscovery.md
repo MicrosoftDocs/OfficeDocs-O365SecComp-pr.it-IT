@@ -3,7 +3,7 @@ title: Verifica dell'analisi della pertinenza in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Office 365 Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
-ms.openlocfilehash: 984a7b3f8088604aca235a1caf60bb67b5471499
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7d150b9f68cdcd3246fbd4d8f79e0972a81a4703
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158308"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601393"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Verifica dell'analisi della pertinenza in Office 365 Advanced eDiscovery
 

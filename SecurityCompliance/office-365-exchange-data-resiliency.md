@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una spiegazione dei vari aspetti della resilienza dei dati in Exchange Online e Office 365.
-ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 96611c2db166e34a47b845b5683a367dd29ec25f
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262758"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786671"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resilienza dei dati di Exchange online in Office 365
 
@@ -55,7 +55,7 @@ Le copie ritardate del database in Exchange Online sono configurate con un inter
 ## <a name="transport-resilience"></a>Resilienza del trasporto 
 Exchange Online include due caratteristiche di resilienza del trasporto principali: la ridondanza shadow e la rete sicura. La ridondanza shadow conserva una copia ridondante di un messaggio mentre è in transito. La rete sicura mantiene una copia ridondante di un messaggio dopo che il messaggio è stato recapitato correttamente. 
 
-Con la ridondanza shadow, ogni server di trasporto di Exchange Online effettua una copia di ogni messaggio che riceve prima di riconoscere la ricezione corretta al server di invio. In questo modo, tutti i messaggi nella pipeline di trasporto sono ridondanti mentre sono in transito. Se Exchange Online determina che il messaggio originale è stato perso durante il trasporto, viene recapitata una copia ridondante del messaggio. 
+Con la ridondanza shadow, ogni server di trasporto Exchange Online crea una copia di ogni messaggio che riceve prima di riconoscere la ricezione del messaggio al server di invio. In questo modo, tutti i messaggi nella pipeline di trasporto sono ridondanti mentre sono in transito. Se Exchange Online determina che il messaggio originale è stato perso durante il trasporto, viene recapitata una copia ridondante del messaggio. 
 
 Safety net è una coda di trasporto associata al servizio di trasporto su un server cassette postali. In questa coda vengono archiviate le copie dei messaggi elaborati correttamente dal server. Quando un database delle cassette postali o un errore del server richiede l'attivazione di una copia obsoleta del database delle cassette postali, i messaggi nella coda della rete sicura vengono reinoltrati automaticamente alla nuova copia attiva del database delle cassette postali. Anche la rete sicura è ridondante, eliminando così il trasporto come singolo punto di errore. Utilizza il concetto di una rete sicura primaria e una rete di sicurezza Shadow in cui se la rete sicura primaria non è disponibile per più di 12 ore, le richieste di reinvio diventano richieste di reinvio Shadow e i messaggi vengono recapitati dalla rete sicura Shadow.
 

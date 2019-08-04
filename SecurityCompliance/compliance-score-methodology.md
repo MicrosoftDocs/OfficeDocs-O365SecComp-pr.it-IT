@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155258"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786641"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodologia del Punteggio di conformità (anteprima)
 
@@ -39,15 +39,15 @@ Gli elementi azione vengono mappati ai controlli e quando un controllo viene map
   
 ### <a name="mandatory-or-discretionary-controls"></a>Controlli obbligatori o discrezionali
   
- I **controlli obbligatori** sono controlli che non possono essere ignorati intenzionalmente o accidentalmente. Un esempio di controllo obbligatorio comune è costituito da un criterio password gestito in modo centralizzato che consente di impostare i requisiti per la lunghezza, la complessità e la scadenza delle password. Gli utenti devono essere conformi a questi requisiti per accedere al sistema.
+ I **controlli obbligatori** sono azioni che non possono essere ignorate intenzionalmente o accidentalmente. Un esempio di controllo obbligatorio comune è costituito da un criterio password gestito in modo centralizzato che consente di impostare i requisiti per la lunghezza, la complessità e la scadenza delle password. Gli utenti devono essere conformi a questi requisiti per accedere al sistema.
   
  I **controlli discrezionali** fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando lo lasciano è un controllo discrezionale, perché si basa sull'utente.
   
 ### <a name="preventative-detective-or-corrective-controls"></a>Controlli preventivo, investigativo o correttivo
   
- I **controlli** preventivi sono controlli che impediscono rischi specifici. Ad esempio, la protezione delle informazioni a riposo tramite la crittografia è un controllo preventivo contro gli attacchi, le violazioni. La separazione dei compiti è un controllo preventivo per gestire i conflitti di interesse e prevenire le frodi.
+ I **controlli** preventivi sono azioni che impediscono rischi specifici. Ad esempio, la protezione delle informazioni a riposo tramite la crittografia è un controllo preventivo contro gli attacchi, le violazioni. La separazione dei compiti è un controllo preventivo per gestire i conflitti di interesse e prevenire le frodi.
   
- I **controlli detective** sono controlli che monitorano attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano il rischio o che possono essere utilizzati per rilevare intrusioni o determinare se si è verificata una violazione. Il controllo dell'accesso di sistema e l'auditing delle azioni amministrative privilegiate sono tipi di controlli di monitoraggio detective. I controlli di conformità normativi sono un tipo di controllo detective utilizzato per individuare i problemi del processo.
+ I **controlli detective** sono azioni che monitorano attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano il rischio o che possono essere utilizzati per rilevare intrusioni o determinare se si è verificata una violazione. Il controllo dell'accesso di sistema e l'auditing delle azioni amministrative privilegiate sono tipi di controlli di monitoraggio detective. I controlli di conformità normativi sono un tipo di controllo detective utilizzato per individuare i problemi del processo.
   
 I **Controlli correttivi** sono controlli che tentano di mantenere al minimo gli effetti negativi di un incidente di sicurezza, intraprendere azioni correttive per ridurre l'effetto immediato e invertire il danno, se possibile. La risposta agli incidenti sulla privacy è un controllo correttivo per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione.
   

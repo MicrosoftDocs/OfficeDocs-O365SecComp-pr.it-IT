@@ -1,5 +1,5 @@
 ---
-title: Utilizzare la ricerca contenuto per cercare i dati di terze parti che sono stati importati in Office 365
+title: Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,19 +11,19 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per cercare i tipi di dati di terze parti che possono essere importati in Office 365.
-ms.openlocfilehash: 0881456d377569fb55f0daf0d0a8a2a15bce62fc
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Office 365.
+ms.openlocfilehash: 2d531557054398be4ca963a9b09943f1bf583d10
+ms.sourcegitcommit: ab16ddf4c050a995471a058150767a0778be0b88
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35014749"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425544"
 ---
-# <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Utilizzare la ricerca contenuto per cercare i dati di terze parti che sono stati importati in Office 365
+# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati in Office 365
 
-È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & conformità per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per cercare solo elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione di Office 365 basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti in Office 365. 
+È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & conformità per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per la ricerca di elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione di Office 365 basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti in Office 365. 
   
-Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che possono essere importati in Office 365, vedere [collaborare con un partner per archiviare i dati di terze parti in office 365](work-with-partner-to-archive-third-party-data.md). 
+Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Office 365, vedere [collaborare con un partner per archiviare i dati di terze parti in office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per la ricerca di tutti i dati di terze parti
 
@@ -39,19 +39,19 @@ Quando si creano query per la ricerca e la conservazione dei dati di terze parti
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Creazione di una query per la ricerca di tipi specifici di dati di terze parti
 
-Invece di cercare tutti i tipi di dati di terze parti, è possibile creare query che consentono di cercare solo un tipo di dati di terze parti utilizzando la seguente coppia proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto:
+Anziché cercare tutti i tipi di dati di terze parti, è possibile creare query che cercano solo un tipo di dati di terze parti tramite la seguente coppia di *proprietà del messaggio: valore* nella casella parola chiave per una ricerca contenuto:
   
 ```
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Ad esempio, per cercare solo i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query seguente:
+Ad esempio, per cercare i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query seguente:
   
 ```
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il `itemclass:` valore da utilizzare per la proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è distinzione tra maiuscole e minuscole. 
+Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il `itemclass:` valore da utilizzare per la proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è sensibile al caso. 
   
 |**Tipo di dati di terze parti**|**Valore della `itemclass:` proprietà**|
 |:-----|:-----|

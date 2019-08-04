@@ -2,7 +2,7 @@
 title: Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156458"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638475"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
@@ -27,6 +27,8 @@ Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi d
   
 > [!NOTE]
 > A causa dell'elevato volume di invii ricevuti, potrebbe non essere possibile rispondere a tutte le richieste di analisi. 
+
+Gli amministratori possono inviare messaggi di posta elettronica, URL e allegati a Microsoft per la revisione. Vedere gli [invii di amministratore in Office 365 ATP](admin-submission.md).
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Inviare messaggi di posta indesiderata o tentativi di phishing che hanno superato i filtri posta indesiderata
 <a name="sectionSection0"> </a>

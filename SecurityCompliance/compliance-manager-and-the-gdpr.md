@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152096"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786651"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager e GDPR
 
-Il regolamento generale sulla protezione dei dati (GDPR) emanato dall'Unione europea può influire sulla strategia di conformità e sulle azioni di mandato necessarie per gestire le informazioni sull'utente e sui clienti utilizzate in Compliance Manager.
+Il regolamento generale sulla protezione dei dati (GDPR) emanato dall'Unione europea può influire sulla strategia di conformità e sul mandato azioni specifiche per la gestione delle informazioni relative agli utenti e ai clienti utilizzati in Compliance Manager.
 
 ## <a name="user-privacy-settings"></a>Impostazioni di privacy dell'utente
 
@@ -59,7 +59,7 @@ Per ogni account utente identificato, è possibile generare un report delle dipe
 3. Aprire il documento per visualizzare i dati del report.
 
 > [!IMPORTANT]
-> Non si tratta di un report cronologico che conserva e visualizza le modifiche dello stato alla cronologia delle assegnazioni degli elementi di azione. Il report generato è uno snapshot degli elementi azione di controllo assegnati al momento dell'esecuzione del report (data e timestamp scritti nel report). Ad esempio, eventuali riassegnazioni successive di elementi azione determinano i diversi dati del rapporto snapshot se questo rapporto viene generato di nuovo per lo stesso utente.
+> I dati del report non sono un elenco cronologico che conserva e visualizza le modifiche di stato alla cronologia delle assegnazioni degli elementi di azione. Il report generato è uno snapshot degli elementi azione di controllo assegnati al momento dell'esecuzione del report (data e timestamp scritti nel report). Ad esempio, eventuali riassegnazioni successive di elementi azione determinano i diversi dati del rapporto snapshot se il report viene generato di nuovo per lo stesso utente.
   
 ## <a name="delete-user-data-history"></a>Eliminare la cronologia dei dati dell'utente
 
