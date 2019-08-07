@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection include allegati sicuri, collegamenti sicuri, strumenti avanzati di anti-phishing, strumenti per la creazione di report e funzionalità di minacce di intelligence.
-ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.openlocfilehash: 7fe5abb65679a33b7895263137d43b0621fb04e6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854780"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168154"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -41,7 +41,7 @@ Office 365 Advanced Threat Protection (ATP) salvaguarda la propria organizzazion
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP piano 1 e piano 2
 
-ATP è incluso in Office 365 E5. Tuttavia, il piano ATP e il piano ATP 2 sono disponibili come componente aggiuntivo per alcuni abbonamenti. Per ulteriori informazioni, vedere [disponibilità delle funzionalità tra i piani ATP](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+ATP è incluso in Office 365 E5. Tuttavia, il piano ATP 1 e il piano ATP 2 sono disponibili come componente aggiuntivo per alcuni abbonamenti. Per ulteriori informazioni, vedere [disponibilità delle funzionalità tra i piani ATP](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="configure-atp-policies"></a>Configurare i criteri ATP
 

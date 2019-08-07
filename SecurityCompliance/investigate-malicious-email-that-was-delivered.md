@@ -3,7 +3,7 @@ title: Individuare ed esaminare messaggi di posta elettronica dannosi recapitati
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/19/2019
+ms.date: 08/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605451"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165672"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Individuare ed esaminare messaggi di posta elettronica dannosi recapitati (Office 365 Advanced Threat Protection Plan 2)
 
@@ -30,7 +30,7 @@ ms.locfileid: "35605451"
 
 Verificare che vengano soddisfatti i seguenti requisiti:
   
-- L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (piano 1 o piano 2) e le [licenze vengono assegnate agli utenti](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (piano 2) e le [licenze vengono assegnate agli utenti](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - La [registrazione di controllo di Office 365](turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
     
@@ -53,20 +53,20 @@ Lo stato di recapito è ora suddiviso in due colonne:
 
 Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
-1. **** Recapitato: la posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.
-2. **Junked** – la posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella posta indesiderata o eliminata.
-3. **Bloccato** : tutti i messaggi di posta elettronica in quarantena, che non sono riusciti o sono stati eliminati. Questo è completamente inaccessibile dall'utente.
-4. **Sostituito** – qualsiasi messaggio di posta elettronica in cui gli allegati dannosi sono stati sostituiti dai file. txt che affermano che l'allegato è dannoso
+- **** Recapitato: la posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.
+- **Junked** – la posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella posta indesiderata o eliminata.
+- **Bloccato** : tutti i messaggi di posta elettronica in quarantena, che non sono riusciti o sono stati eliminati. Questo è completamente inaccessibile dall'utente.
+- **Sostituito** – qualsiasi messaggio di posta elettronica in cui gli allegati dannosi sono stati sostituiti dai file. txt che affermano che l'allegato è dannoso
  
 Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i possibili valori del percorso di recapito:
 
-1. **Posta in arrivo o cartella** – la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
-2. **On-Prem o External** -la cassetta postale non esiste sul cloud ma è in locale.
-3. **Cartella** posta indesiderata: l'indirizzo di posta elettronica nella cartella posta indesiderata di un utente.
-4. **Cartella** posta eliminata: il messaggio nella cartella elementi eliminati di un utente.
-5. **Quarantine** : l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
-6. **Failed** : la posta elettronica non è riuscita a raggiungere la cassetta postale.
-7. **Eliminato** : il messaggio di posta elettronica viene perso da qualche parte nel flusso.
+- **Posta in arrivo o cartella** – la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
+- **On-Prem o External** -la cassetta postale non esiste sul cloud ma è in locale.
+- **Cartella** posta indesiderata: l'indirizzo di posta elettronica nella cartella posta indesiderata di un utente.
+- **Cartella** posta eliminata: il messaggio nella cartella elementi eliminati di un utente.
+- **Quarantine** : l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
+- **Failed** : la posta elettronica non è riuscita a raggiungere la cassetta postale.
+- **Eliminato** : il messaggio di posta elettronica viene perso da qualche parte nel flusso.
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
 
@@ -91,23 +91,20 @@ La sequenza temporale della posta elettronica riduce la randomizzazione perché 
 
 Dopo aver aperto la sequenza temporale della posta elettronica, dovrebbe essere visualizzata una tabella in cui vengono illustrati gli eventi dopo il recapito della posta o, nel caso di nessun altro evento per il messaggio di posta elettronica, si dovrebbe vedere un singolo appuntamento per il recapito originale che diventerà un risultato come *bloccato* con un verdetto come *phishing*. La scheda ha anche la possibilità di esportare l'intera sequenza temporale della posta elettronica e in questo modo verranno esportati tutti i dettagli nella scheda e nei dettagli del messaggio di posta elettronica (elementi quali Subject, sender, Recipient, Network e Message ID).
 
-
-<!--Comment>    
-3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. Scegliere **tutti i messaggi di posta elettronica**dal menu Visualizza.<br/>![Utilizzare il menu Visualizza per scegliere tra la posta elettronica e i rapporti di contenuto](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
+4. Si notino le etichette che vengono visualizzate nel report, **** ad esempio recapitate, **sconosciute**o recapitate in **posta**indesiderata.<br/>![Esplora minacce che mostra i dati per tutti i messaggi di posta](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>A seconda delle operazioni eseguite nei messaggi di posta elettronica per l'organizzazione, è possibile che vengano visualizzate altre etichette, ad esempio **bloccate** o **sostituite**.
     
-5. In the report, choose **Delivered** to view only emails that ended up in users' inboxes.<br/>![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. Nel rapporto scegliere recapitato per visualizzare solo i messaggi di posta elettronica che sono finiti nelle cassette postali degli utenti. ****<br/>![Se si fa clic su "recapitato alla posta indesiderata", vengono rimossi](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. Below the chart, review the **Email** list below the chart.<br/>![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Al di sotto del grafico, esaminare l'elenco di **posta elettronica** al di sotto del grafico.<br/>![Sotto il grafico, visualizzare un elenco di messaggi di posta elettronica che sono stati rilevati](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.<br/>![You can view additional information about an item, including details and any attachments](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. Nell'elenco, scegliere un elemento per visualizzare ulteriori dettagli sul messaggio di posta elettronica. Ad esempio, è possibile fare clic sulla riga dell'oggetto per visualizzare le informazioni sul mittente, i destinatari, gli allegati e altri messaggi di posta elettronica simili.<br/>![È possibile visualizzare ulteriori informazioni su un elemento, inclusi i dettagli e gli allegati.](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
+8. Dopo aver visualizzato le informazioni sui messaggi di posta elettronica, selezionare uno o più elementi nell'elenco per attivare **+ azioni**.
     
-9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.<br/>![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Utilizzare l'elenco **+ Actions** per applicare un'azione, ad esempio **Move to deleted** Items. Questo eliminerà i messaggi selezionati dalle cassette postali dei destinatari.<br/>![Quando si selezionano uno o più messaggi di posta elettronica, è possibile scegliere tra diverse azioni disponibili](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
--->
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Office 365 Advanced Threat Protection piano 2](office-365-ti.md)

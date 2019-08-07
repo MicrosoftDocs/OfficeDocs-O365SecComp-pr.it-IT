@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152588"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053091"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
@@ -59,7 +59,7 @@ Se si desidera creare un sito del team di SharePoint Online isolato in modo semp
 Se si desidera creare un sito del team di SharePoint Online isolato in una configurazione aziendale simulata, seguire le istruzioni in [dirsync per l'ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
   
 > [!NOTE]
-> La creazione di un sito di SharePoint Online isolato non richiede l'ambiente di sviluppo e di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Windows Server AD. Viene fornito come opzione in modo che sia possibile testare un sito di SharePoint Online isolato e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica. 
+> La creazione di un sito di SharePoint Online isolato non richiede l'ambiente di sviluppo e di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare un sito di SharePoint Online isolato e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: creare account utente e gruppi di accesso
 
@@ -233,9 +233,9 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
     
 10. Copiare l'URL della cartella documenti di ProjectX e incollarlo su una nuova riga nel blocco note o nell'editor di testo.
     
-11. Nella nuova scheda **ProjectX-Documents** del browser, fare clic su **nuovo documento di Word di >**.
+11. Nella nuova scheda **ProjectX-Documents** del browser fare clic su **nuovo > documento di Word**.
     
-12. Digitare del testo nella pagina di **Word online** , attendere che lo stato indichi **salvato**, fare clic sul pulsante indietro nel browser e quindi aggiornare la pagina. Verrà visualizzato un nuovo **documento. docx** nella cartella **documenti** .
+12. Digitare del testo nella pagina, attendere che lo stato indichi **salvato**, fare clic sul pulsante indietro nel browser e quindi aggiornare la pagina. Verrà visualizzato un nuovo **documento. docx** nella cartella **documenti** .
     
 13. Fare clic sui puntini di sospensione per il documento **Document. docx** e quindi fare clic su **Ottieni un collegamento**.
     

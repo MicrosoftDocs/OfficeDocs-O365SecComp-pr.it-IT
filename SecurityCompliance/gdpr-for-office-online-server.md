@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
-ms.openlocfilehash: 96caf2793f11772aafd80124b03fd0cb32599442
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152758"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792052"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGDP per Server Office Web Apps e Office Online Server
 
@@ -63,7 +63,7 @@ Per raccogliere tutti i log associati a UserID 1, ad esempio, il primo passaggio
 
 ## <a name="types-of-data"></a>Tipi di dati
 
-I log di Office Online contengono un'ampia varietà di tipi di dati. Di seguito sono riportati alcuni esempi di dati che potrebbero essere contenuti dai log di Servizio di registrazione unificato:
+I log di Office contengono un'ampia varietà di tipi di dati. Di seguito sono riportati alcuni esempi di dati che potrebbero essere contenuti dai log di Servizio di registrazione unificato:
 
 -   Codici di errore per problemi riscontrati durante l'utilizzano del prodotto
 

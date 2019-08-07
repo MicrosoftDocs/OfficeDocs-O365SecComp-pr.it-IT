@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5168196dcac8a2cb3809f43fabb470c0f64cd0f7
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048153"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168134"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
@@ -44,17 +44,17 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Dopo aver completato la preparazione, fare clic su **Avanti: scaricare i file** per continuare con il download.
+4. Al termine della preparazione, fare clic su **Avanti: scaricare i file** per continuare con il download.
 
     ![Scaricare file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Si tratta di un percorso del computer locale in cui verrà scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Se necessario, è possibile modificare questo percorso. In caso di modifica, è consigliabile utilizzare un percorso di file locale anziché un percorso di rete remoto per ottenere prestazioni ottimali.
+5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Si tratta di un percorso del computer locale in cui viene scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Se necessario, è possibile modificare questo percorso. In caso contrario, si consiglia di utilizzare un percorso di file locale per ottenere prestazioni ottimali. Non utilizzare un percorso di rete remoto.
 
 6. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Avviare un prompt dei comandi di Windows, incollare il comando e quindi premere **invio**.  
 
     I file vengono scaricati.
 
-    ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparare la correzione per gli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > È necessario utilizzare AzCopy v 8.1 per utilizzare correttamente il comando disponibile nella pagina **Scarica file** . È inoltre necessario utilizzare AzCopy v 8.1 per caricare i file nel passaggio 10 seguente. Per installare questa versione di AzCopy, vedere [Transfer Data with the AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Se il comando AzCopy fornito ha esito negativo, vedere [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -75,7 +75,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 11. Tornare a Advanced eDiscovery e fare clic su **Next: Process files**.
 
-12. Quando l'elaborazione è completata.  È possibile tornare al set di revisione e vedere il file di correzione.
+12. Quando l'elaborazione è completata. È possibile tornare al set di revisione e vedere il file di correzione.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
 
@@ -91,4 +91,4 @@ Quando i file corretti vengono caricati, vengono conservati i metadati originali
 - WordCount
 - WorkingsetId
 
-Per una definizione di tutti i campi dei metadati del documento in Advanced eDiscovery, vedere [Document Metadata Fields](document-metadata-fields.md).
+Per una definizione di tutti i campi dei metadati in Advanced eDiscovery, vedere [Document Metadata Fields](document-metadata-fields.md).

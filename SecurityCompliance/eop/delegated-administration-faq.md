@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: In questo argomento vengono riportate le domande frequenti per i partner e rivenditori Microsoft che vogliono eseguire attività di amministrazione delegata in Office 365, quali la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
-ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599802"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165642"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 
@@ -29,7 +29,7 @@ R. Se si è un partner o rivenditore Microsoft e si è iscritti a Microsoft Advi
     
 2. Registrati per eseguire l'amministrazione delegata di Office 365. Prima di iniziare ad amministrare l'account di un cliente, il cliente stesso deve concedere al partner l'autorizzazione di amministratore delegato. Per ricevere la sua approvazione, devi innanzitutto [inviargli un'offerta per l'amministrazione delegata](https://go.microsoft.com/fwlink/?LinkId=396829). (Puoi anche offrire l'amministrazione delegata al cliente in un momento successivo.) 
     
-3. Crea l'account di amministratore delegato eseguendo la procedura descritta nell'articolo [Aggiungere o rimuovere amministratori delegati](https://go.microsoft.com/fwlink/?LinkId=396831).
+3. Creare l'account amministratore delegato.
     
 Visita [Partner: Sviluppo dell'attività e amministrazione dell'account Office 365](https://go.microsoft.com/fwlink/?LinkId=301485) per ulteriori informazioni su come configurare l'amministrazione delegata di Office 365. 
   
