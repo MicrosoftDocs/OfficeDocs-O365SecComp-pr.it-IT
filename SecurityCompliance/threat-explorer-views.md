@@ -3,7 +3,7 @@ title: Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600819"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230390"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -72,9 +72,9 @@ Quando si seleziona un elemento nell'elenco, ad esempio un URL rilevato, viene a
 
 ![Dettagli relativi a un URL rilevato](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>Messaggi di posta elettronica > segnalati dall'utente
+## <a name="email--submissions"></a>Invii di > di posta elettronica
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **la posta elettronica** > **segnalata dall'utente**. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing. 
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** > **invii di posta elettronica** > ****. Questa visualizzazione Mostra la posta elettronica che gli utenti hanno segnalato come posta indesiderata, non indesiderata o phishing. 
 
 ![Messaggi di posta elettronica segnalati dagli utenti](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ La possibilità di filtrare i dati in un clic e di passare a dettagli specifici 
 
 ## <a name="queries-and-filters"></a>Query e filtri
 
-Explorer (e il rapporto rilevamenti in tempo reale) ha diversi filtri potenti e funzionalità di query che consentono di eseguire il drill-down nei dettagli, ad esempio gli utenti più mirati, le famiglie di malware principali, la tecnologia di rilevamento e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
+Explorer (così come il rapporto sui rilevamenti in tempo reale) ha diversi filtri potenti e funzionalità di query che consentono di approfondire i dettagli, ad esempio gli utenti più mirati, le famiglie di malware più importanti, la tecnologia di rilevamento e altro ancora. Ogni tipo di report offre una vasta gamma di modi per visualizzare ed esplorare i dati.
 
 > [!IMPORTANT]
-> Non utilizzare caratteri jolly, ad esempio un asterisco (*) o un punto interrogativo (?), nella barra delle query per Esplora risorse (o rilevamenti in tempo reale). Quando si esegue una ricerca nel campo Subject per i messaggi di posta elettronica, gli esploratori (o i rilevamenti in tempo reale) eseguono una corrispondenza parziale e restituiscono risultati simili a una ricerca con caratteri jolly.
+> Non utilizzare caratteri jolly, ad esempio un asterisco o un punto interrogativo, nella barra delle query per Esplora risorse (o rilevamenti in tempo reale). Quando si esegue una ricerca nel **campo Subject** per i messaggi di posta elettronica, gli esploratori (o i rilevamenti in tempo reale) eseguono una corrispondenza parziale e restituiscono risultati simili a una ricerca con caratteri jolly.

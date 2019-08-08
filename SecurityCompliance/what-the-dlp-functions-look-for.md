@@ -1,7 +1,7 @@
 ---
 title: Cosa individuano le funzioni DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti.
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34078002"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230320"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
 
@@ -27,7 +27,7 @@ Prevenzione della perdita di dati (DLP) include tipi di informazioni riservate, 
   
 In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti. Per ulteriori informazioni, vedere [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 Questa funzione Cerca una data nel formato comunemente utilizzato negli Stati Uniti. Sono inclusi i formati "month/day/year", "month-day-year" e "month day year". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole. 
   
@@ -55,7 +55,7 @@ Nomi dei mesi accettati:
     
   - Gen febbraio Feb Mar. apr maggio giugno luglio agosto sett. ott. nov. Dec.
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 Questa funzione consente di cercare una data nel formato comunemente usato nell'UE e nella maggior parte delle aree geografiche al di fuori degli Stati Uniti. Sono inclusi i formati "giorno/mese/anno", "giorno-mese-anno" e "giorno mese anno". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
   
@@ -119,7 +119,7 @@ Nomi dei mesi accettati:
     
   - enero feb. marzo ABR. Mayo Jun. luglio. agosto Sept/set. personalizzazione. novembre. dic.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (obsoleto)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (obsoleto)
 
 > [!NOTE]
 > Questa funzione è obsoleta perché supporta solo i nomi dei mesi portoghesi, che ora sono inclusi nella `Func_eu_date` funzione precedente. 
@@ -150,7 +150,7 @@ Nomi dei mesi accettati:
     
   - Jan FEV Mar ABR mai Jun Jul ago set out nov dic
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (obsoleto)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (obsoleto)
 
 > [!NOTE]
 > Questa funzione è obsoleta perché supporta solo i nomi dei mesi olandesi, che ora sono inclusi `Func_eu_date` nella funzione precedente. 
@@ -181,7 +181,7 @@ Nomi dei mesi accettati:
     
   - Jan Feb maart apr Mei giu lug Aug Sep set ott Okt Nov Dec
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 Questa funzione consente di cercare una data nei formati comunemente utilizzati da carte di credito e di debito, sostituendo i giorni con i mesi. Questa funzione corrisponderà alle date nel formato "month/year", "month-year", "[Month Name] Year" e "[month abbreviation] Year". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
   
@@ -213,7 +213,7 @@ Nomi dei mesi accettati:
     
   - Gen feb mar apr maggio giugno luglio Aug settembre Ott Nov Dec
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 Questa funzione cerca il nome di uno stato membro degli Stati Uniti o un'abbreviazione postale seguita da un CAP valido, esattamente come per gli indirizzi postali. Il CAP deve essere uno dei codici di avviamento postale corretti associati al nome o all'abbreviazione dello stato membro degli Stati Uniti. Il nome dello stato membro degli Stati Uniti e il CAP non possono essere separati da segni di punteggiatura o lettere.
   

@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle barriere informative
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: ITPro
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
-ms.openlocfilehash: e37c97ae8a5e3777e2a30432e8289abadae8f14c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: b23e0f4285b2bee08dd19793f8461f39328e85f5
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587045"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230400"
 ---
 # <a name="information-barriers"></a>Barriere informative
 

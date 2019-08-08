@@ -1,7 +1,7 @@
 ---
 title: Elementi inclusi nei modelli del criterio DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
-ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077152"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231060"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
 

@@ -1,7 +1,7 @@
 ---
 title: Creare un dizionario di parole chiave
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per identificare le informazioni riservate a volte è necessario cercare delle parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni riservate, questi elenchi hanno dimensioni limitate e richiedono la modifica di file XML per crearli o modificarli. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala molto più ampia, supportano fino a 100.000 termini per dizionario.
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077572"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230790"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -29,7 +29,7 @@ La prevenzione della perdita di dati (DLP) in Office 365 è in grado di identifi
 
 Le parole chiave per il dizionario possono provenire da diverse origini, in genere da un file (ad esempio, un elenco con estensione csv o txt) importato nel servizio o tramite il cmdlet di PowerShell, da un elenco che viene immesso direttamente nel cmdlet di PowerShell o da un dizionario esistente. Quando si crea un dizionario di parole chiave, seguire gli stessi passaggi di base:
   
-1. Utilizzare il **Centro sicurezza &** Compliance[https://protection.office.com](https://protection.office.com)() oppure connettersi a **PowerShell per &amp; Centro sicurezza e conformità di Office 365**.
+1. Utilizzare il **Centro sicurezza & conformità** ([https://protection.office.com](https://protection.office.com)) oppure connettersi a **PowerShell per centro &amp; sicurezza e conformità di Office 365**.
     
 2. **Definire o caricare le parole chiave dall'origine desiderata**. La procedura guidata e il cmdlet accettano entrambi un elenco delimitato da virgole di parole chiave per creare un dizionario parola chiave personalizzato, in modo che questo passaggio vari leggermente a seconda di dove provengono le parole chiave. Una volta caricate, le parole chiave vengono codificate e convertite in una matrice di byte prima di essere importate.
     
@@ -39,7 +39,7 @@ Le parole chiave per il dizionario possono provenire da diverse origini, in gene
 
 Seguire la procedura seguente per creare e importare parole chiave per un dizionario personalizzato:
 
-1. Connettersi al centro sicurezza e conformità di &[https://protection.office.com](https://protection.office.com)().
+1. Connettersi al centro sicurezza & Compliance ([https://protection.office.com](https://protection.office.com)).
 
 2. Accedere a **Classificazioni > Tipi di informazioni sensibili**.
 

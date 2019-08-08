@@ -1,7 +1,7 @@
 ---
 title: Modificare i criteri di barriera delle informazioni
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: ITPro
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come modificare o rimuovere i criteri per le barriere informative.
-ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: 20a1dd62fa80469a7a31db9b5541064ae16b4e02
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587075"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230590"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Modificare (o rimuovere) i criteri di barriera delle informazioni
 

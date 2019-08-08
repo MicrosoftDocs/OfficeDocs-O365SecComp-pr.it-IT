@@ -1,7 +1,7 @@
 ---
 title: Create a DLP policy from a template
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 0f1cd4fdf08edcd747dc3d1bc92625dda49e50de
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077712"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230890"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 

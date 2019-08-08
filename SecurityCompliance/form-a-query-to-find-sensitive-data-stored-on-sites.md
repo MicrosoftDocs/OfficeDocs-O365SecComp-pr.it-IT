@@ -1,8 +1,8 @@
 ---
 title: Creare una query per individuare dati riservati memorizzati nei siti
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
-ms.openlocfilehash: a200cbd802922a694510e82bb8d394fed6bb2a32
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599322"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230550"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per trovare i dati sensibili archiviati nei siti
 

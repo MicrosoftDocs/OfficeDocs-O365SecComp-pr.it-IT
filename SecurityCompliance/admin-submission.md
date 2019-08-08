@@ -1,9 +1,9 @@
 ---
-title: Invii di amministratore in Office 365
-ms.author: brwilcox
-author: briwilcox
+title: Invii di amministratore in Office 365, O365 invii, Office 365 spam problem, O365 false negative, Submit phishing in Office 365, inviare la posta elettronica per l'analisi, la posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per la posta indesiderata, invio posta elettronica, inviare messaggi di posta elettronica
+ms.author: tracyp
+author: MSFTTracyP
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,26 +12,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come inviare messaggi, URL e file potenzialmente dannosi a Microsoft.
-ms.openlocfilehash: 2e0bee0dd0a1ccc39d92ea9e175fc7fb10a5b6d3
-ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
+description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, spam e altre potenzialmente nocive, URL e file dal tenant di Office 365 a Microsoft per l'analisi.
+ms.openlocfilehash: 5a909e8b587e2a1265c1b2afbd5e063d46a04e2c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643907"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230950"
 ---
-# <a name="admin-submissions-in-office-365"></a>Invii di amministratore in Office 365
+# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Come inviare messaggi di posta indesiderata, phishing, URL e file sospetti a Microsoft per l'analisi di Office 365
 
-Gli amministratori possono ora inviare messaggi di posta elettronica utilizzando l'ID del messaggio di rete, gli URL e i file per l'analisi da parte di Microsoft in Office 365. La sezione aggiornamenti aggiornati include ancora i messaggi segnalati dall'utente e disponibili per tutti i clienti che utilizzano EOP.
+Gli amministratori possono inviare messaggi di posta elettronica utilizzando il file o l'ID del messaggio di rete, gli URL e i file per l'analisi da parte di Microsoft in Office 365. La sezione aggiornamenti aggiornati include ancora i messaggi segnalati dall'utente e disponibili per tutti i clienti che utilizzano EOP.
 
 Quando si invia un messaggio di posta elettronica, si ottengono informazioni su tutti i criteri che possono aver consentito la posta elettronica in arrivo nel tenant, nonché l'esame degli URL e degli allegati della posta. I criteri che possono aver consentito a un messaggio di posta elettronica includono l'elenco dei mittenti attendibili di un singolo utente e i criteri di livello tenant, ad esempio le regole di ETR. 
 
-
-## <a name="how-to-submit-content"></a>Come inviare contenuti
+## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>Come inviare contenuti a Microsoft per l'analisi di Office 365
 
 Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella parte superiore sinistra della pagina invii. Viene visualizzato un riquadro a comparsa sul lato destro della pagina con l'opzione per inviare un messaggio di posta elettronica, un URL o un file. 
 
-### <a name="email"></a>Posta elettronica
+### <a name="submit-an-email-to-microsoft"></a>Inviare un messaggio di posta elettronica a Microsoft
 ![Esempio di invio tramite posta elettronica](media/submission-flyout-email.PNG)
 1. Per inviare un messaggio di posta elettronica, selezionare **posta elettronica** e specificare l' **ID della rete** di posta elettronica o caricare il file di posta elettronica. 
 
@@ -45,7 +44,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 4. Fare clic sul pulsante **Invia** .
 
-### <a name="url"></a>URL
+### <a name="submit-a-url-to-microsoft"></a>Invio di un URL a Microsoft
 ![Esempio di invio tramite posta elettronica](media/submission-url-flyout.png)
 1. Per inviare un URL selezionare **** URL dal riquadro a comparsa. Digitare l'URL completo, incluso il protocollo (**https://**). 
 
@@ -54,7 +53,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 2. Fare clic sul pulsante **Invia** . 
 
 
-### <a name="file"></a>File
+### <a name="submit-a-file-to-microsoft"></a>Inviare un file a Microsoft
 ![Esempio di invio tramite posta elettronica](media/submission-file-flyout.PNG)
 1. Per inviare un file seleziona **file** dal riquadro a comparsa e caricare il file che si desidera analizzare. 
 

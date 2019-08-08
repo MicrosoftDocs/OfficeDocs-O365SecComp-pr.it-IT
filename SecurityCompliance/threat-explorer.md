@@ -1,9 +1,9 @@
 ---
-title: Esplora minacce (e rilevamenti in tempo reale)
+title: Esplora minacce e rilevamenti in tempo reale
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Informazioni su Esplora risorse (e sui rilevamenti in tempo reale) &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054758"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230410"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce (e rilevamenti in tempo reale)
+# <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
 Se l'organizzazione dispone [di office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile individuare **esploratori** o rilevamenti in **tempo reale** (in precedenza rapporti in *tempo reale* , [vedere Novità](#new-features-in-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** o rilevamenti in **tempo reale**. 
 
@@ -42,7 +42,7 @@ Con questo rapporto, è possibile:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuove funzionalità nei rilevamenti in tempo reale
 
-Explorer/rilevamenti in tempo reale aggiunge nuovi campi creati per fornire un'immagine più completa della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
+Explorer (e rilevamenti in tempo reale) aggiunge nuovi campi creati per fornire un'immagine più completa della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
 Come è possibile eseguire questa operazione? Lo stato di recapito è ora suddiviso in due colonne:
 
@@ -105,9 +105,9 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
     Il rapporto viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del rapporto:
 
-   1. Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati informatici includono una combinazione di URL buoni e cattivi nei messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente da fare clic su. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
+   - Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati informatici includono una combinazione di URL buoni e cattivi nei messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente da fare clic su. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
 
-   2. I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, questi sono più spesso URL sospetti o dannosi, ma possono includere URL puliti presenti nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
+   - I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, questi sono più spesso URL sospetti o dannosi, ma possono includere URL puliti presenti nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
    
    Le due tabelle degli URL mostrano gli URL principali nei messaggi di posta elettronica di phishing tramite l'azione e la posizione di recapito e visualizzano gli URL che sono stati bloccati (o sono stati visitati nonostante un avviso), in modo da poter capire quali potenziali collegamenti non validi sono stati ricevuti dagli utenti e interagito con gli utenti. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione.
    
@@ -117,11 +117,11 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 ## <a name="review-email-messages-reported-by-users"></a>Esaminare i messaggi di posta elettronica segnalati dagli utenti
 
-Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare il [messaggio di posta elettronica > visualizzazione segnalata dall'utente](threat-explorer-views.md#email--user-reported) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
 1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Nel menu **Visualizza** scegliere la **posta elettronica** > **segnalata dall'utente**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Scegliere **invii di posta elettronica** > **** dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Fare clic su **mittente**e quindi scegliere**tipo di report**di **base** > .
 
@@ -170,8 +170,7 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Alcune differenze tra il rilevamento di tempo reale e l'esportatore di minacce.
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Alcune differenze tra l'esportatore di minacce e i rilevamenti in tempo reale
 
- - Il **rapporto di rilevamento in tempo reale** viene fornito con la sottoscrizione ATP P1, mentre **Threat Explorer** è incluso in ATP P2.
- - Il rapporto sui rilevamenti in **tempo reale** consente di visualizzare i rilevamenti in tempo reale mentre i rapporti dell'esploratore di minacce consentono di visualizzare ulteriori dettagli in un determinato attacco.
- - I report di **Esplora minacce** offrono diversi insiemi di report che migliorano l'esperienza rispetto ai report dei rilevatori in **tempo reale** .
+ - Il rapporto sui rilevamenti in **tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
+ - Il rapporto sui rilevamenti in **tempo reale** consente di visualizzare i rilevamenti in tempo reale. **** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
