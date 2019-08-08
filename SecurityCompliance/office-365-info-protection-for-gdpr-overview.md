@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Panoramica di Office 365 Information Protection per RGPD. Informazioni su come individuare, classificare, protegger e monitorare i dati personali.
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152488"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165662"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 
@@ -38,7 +38,7 @@ Articolo 4 - Definizioni
 Questa soluzione vuole aiutare le organizzazioni a individuare e proteggere i dati personali in Office 365 che potrebbero essere soggetti all'RGPD. Non offre o rappresenta una conferma della conformità all'RGPD. Le organizzazioni sono tenute a verificare autonomamente la conformità all'RGPD mediante i propri esperti legali e di conformità o avvalendosi di professionisti esterni specializzati in conformità.
 
 
-[GDPR Assessment](https://assessment.microsoft.com/gdpr-compliance) è uno strumento rapido, online di autovalutazione che consente alle autorizzazioni di verificare gratuitamente il proprio livello di preparazione alla conformità con l'RGPD (<http://aka.ms/gdprassessment>).
+[GDPR Assessment](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D) è uno strumento rapido, online di autovalutazione che consente alle autorizzazioni di verificare gratuitamente il proprio livello di preparazione alla conformità con l'RGPD.
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>Verificare e gestire il rischio di conformità
 
@@ -52,7 +52,7 @@ Gestore conformità offre strumenti per tenere traccia, implementare e gestire i
 ![Usare Gestore conformità per verificare i requisiti normativi e monitorare lo stato
 ](Media/Overview-image1.png)
 
-Per ulteriori informazioni, vedere [Utilizzo di Gestore conformità nel Service Trust Portal](https://support.office.com/it-IT/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942). 
+Per ulteriori informazioni, vedere [Utilizzo di Gestore conformità nel Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager). 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Fase 2 - Usare Ricerca contenuto e le tipologie di informazioni sensibili per trovare i dati personali
  

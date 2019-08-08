@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168291"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222776"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
 
@@ -66,7 +66,7 @@ Gli utenti con questo ruolo hanno le autorizzazioni necessarie per gestire le fu
 
 Gli utenti con questo ruolo hanno le autorizzazioni necessarie per proteggere e monitorare i dati nel Centro conformità Microsoft 365, nell'interfaccia di amministrazione di Microsoft 365 e in Azure. Gli utenti possono anche gestire tutte le funzionalità all'interno dell'interfaccia di amministrazione di Exchange, in Compliance Manager, nell'interfaccia di amministrazione di Teams e Skype for Business e creare ticket di supporto per Azure e Microsoft 365.
 
-|**In questo servizio...**|**L'amministratore di conformità può...**|
+|**In questo servizio...**|**L'amministratore dati di conformità può...**|
 |:-----|:-----|
 |[**Centro conformità Microsoft 365**](https://compliance.microsoft.com/)|Proteggere e gestire i dati dell'organizzazione in tutti i servizi di Microsoft 365. <br/><br/> Gestire gli avvisi di conformità. <br/><br/> Gestire le etichette di riservatezza.|
 |[**Compliance Manager**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione.|
@@ -78,7 +78,7 @@ Gli utenti con questo ruolo hanno le autorizzazioni necessarie per proteggere e 
 
 Gli utenti con questo ruolo hanno le autorizzazioni necessarie per gestire le funzionalità relative alla sicurezza nel Centro sicurezza Microsoft 365, in Azure Active Directory Identity Protection, in Azure Information Protection e nel Centro sicurezza e conformità di Office 365.
 
-|**In questo servizio...**|**L'amministratore di conformità può...**|
+|**In questo servizio...**|**L'amministratore della sicurezza può...**|
 |:-----|:-----|
 |[**Centro sicurezza Microsoft 365**](https://security.microsoft.com/)|Monitorare i criteri correlati alla sicurezza in tutti i servizi di Microsoft 365. <br/><br/>  Gestire gli avvisi e le minacce alla sicurezza. <br/><br/> Visualizzare i report. <br/><br/> Gestire le etichette di riservatezza.|
 |**Identity Protection Center**|Eseguire le stesse operazioni del ruolo con autorizzazioni di lettura per la sicurezza, oltre a eseguire tutte le operazioni di Identity Protection Center, ad eccezione del ripristino delle password.|
@@ -95,7 +95,7 @@ Gli utenti con questo ruolo hanno le autorizzazioni necessarie per gestire le fu
 
 Gli utenti con questo ruolo possono gestire gli avvisi e hanno accesso globale di sola lettura alle funzionalità relative alla sicurezza, incluse tutte le informazioni nel Centro sicurezza Microsoft 365, in Azure Active Directory, Identity Protection e Privileged Identity Management, oltre alla possibilità di accedere in lettura ai log di controllo e ai report di accesso di Azure Active Directory, e nel Centro sicurezza e conformità di Office 365.
 
-|**In questo servizio...**|**L'amministratore di conformità può...**|
+|**In questo servizio...**|**L'operatore della sicurezza può...**|
 |:-----|:-----|
 |[**Centro sicurezza Microsoft 365**](https://security.microsoft.com/)|Eseguire le stesse operazioni del ruolo con autorizzazioni di lettura per la sicurezza. <br/><br/> Visualizzare, analizzare e rispondere agli avvisi di sicurezza.|
 |**Identity Protection Center** (presto disponibile)|Eseguire le stesse operazioni del ruolo con autorizzazioni di lettura per la sicurezza.|
@@ -110,7 +110,7 @@ Gli utenti con questo ruolo possono gestire gli avvisi e hanno accesso globale d
 
 Gli utenti con questo ruolo hanno accesso globale di sola lettura alle funzionalità relative alla sicurezza, incluse tutte le informazioni nel Centro sicurezza Microsoft 365, in Azure Active Directory, Identity Protection e Privileged Identity Management, oltre alla possibilità di accedere in lettura ai log di controllo e ai report di accesso di Azure Active Directory e nel Centro sicurezza e conformità di Office 365.
 
-|**In questo servizio...**|**L'amministratore di conformità può...**|
+|**In questo servizio...**|**Il ruolo con autorizzazioni di lettura per la sicurezza può...**|
 |:-----|:-----|
 |[**Centro sicurezza Microsoft 365**](https://security.microsoft.com/)|Visualizzare i criteri correlati alla sicurezza in tutti i servizi di Microsoft 365. <br/><br/> Visualizzare gli avvisi e le minacce alla sicurezza. <br/><br/> Visualizzare i report.|
 |**Identity Protection Center**|Leggere tutti i report sulla sicurezza e le informazioni sulle impostazioni per le funzionalità di sicurezza: protezione da posta indesiderata, crittografia, prevenzione della perdita di dati (DLP), antimalware, Advanced Threat Protection (ATP), anti-phishing e regole del flusso di posta (note anche come regole di trasporto).|
