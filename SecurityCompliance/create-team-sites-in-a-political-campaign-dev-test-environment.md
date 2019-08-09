@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sintesi: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica.'
-ms.openlocfilehash: 3e0a79a0e521ab193685511cef59bcfa3fa68896
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151158"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053113"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
 
@@ -41,7 +41,7 @@ In questa fase, vengono create le etichette per i diversi livelli di sicurezza p
     
 2. Dalla scheda **Microsoft Office Home** fare clic sul riquadro **Amministratore**.
     
-3. Dalla nuova scheda **Interfaccia di amministrazione di Office** del browser fare clic su **Interfacce di amministrazione > Sicurezza e conformità**.
+3. Dalla nuova scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Interfacce di amministrazione > Sicurezza e conformità**.
     
 4. Dalla nuova scheda **Home: Sicurezza e conformità** del browser fare clic su Classificazioni > Etichette.
     
