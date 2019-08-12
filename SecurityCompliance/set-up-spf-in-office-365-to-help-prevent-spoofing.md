@@ -1,5 +1,5 @@
 ---
-title: Configurazione di SPF in Office 365 per evitare lo spoofing
+title: Configurare SPF in Office 365 per prevenire lo spoofing
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,7 +16,7 @@ ms.collection:
 description: "Riepilogo: In questo articolo viene descritto come aggiornare un record DNS (Domain Name Service) affinché sia possibile utilizzare Sender Policy Framework (SPF) con il dominio personalizzato in Office 365. L'utilizzo di SPF consente di convalidare la posta elettronica in uscita inviata dal dominio personalizzato."
 ms.openlocfilehash: 15472900986a367e084c6126580cef85d286a94b
 ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/25/2019
 ms.locfileid: "35854790"
@@ -61,31 +61,31 @@ Raccogliere le seguenti informazioni:
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Qualsiasi sistema di posta elettronica (obbligatorio)  <br/> |Comune. Tutti i record TXT SPF devono iniziare con questo valore  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online  <br/> |Comune  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |Solo per Exchange Online  <br/> |Non comune  <br/> |IP4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include: SPF. Protection. Outlook. com  <br/> |
-|4  <br/> |Office 365 Germania, solo Microsoft Cloud Germania  <br/> |Non comune  <br/> |includere: SPF. Protection. Outlook. de  <br/> |
+|3  <br/> |Solo per Exchange Online  <br/> |Non comune  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
+|4  <br/> |Office 365 Germania, solo Microsoft Cloud Germania  <br/> |Non comune  <br/> |include:spf.protection.outlook.de  <br/> |
 |5  <br/> |Un sistema di posta elettronica di terze parti  <br/> |Non comune  <br/> |includere: \<nome dominio\>  <br/> Dove il nome di dominio è il nome di dominio del sistema di posta elettronica di terze parti.  <br/> |
 |6  <br/> |Sistema di posta locale. Ad esempio, di Exchange Online Protection insieme a un altro sistema di posta elettronica  <br/> |Non comune  <br/> | Utilizzarne uno per ogni sistema di posta elettronica aggiuntivo:  <br/>  ip4: \<  _IP address_\>  <br/>  ip6: \<  _IP address_\>  <br/>  includere: \<  _domain name_\>  <br/>  Dove il valore per \<  _IP address_\> è l'indirizzo IP del sistema di posta elettronica e \< _domain name_\> è il nome di dominio dell'altro sistema di posta elettronica che invia un messaggio per conto del dominio.  <br/> |
 |7  <br/> |Qualsiasi sistema di posta elettronica (obbligatorio)  <br/> |Comune. Tutti i record TXT SPF finiscono con questo valore  <br/> |\< _enforcement rule_\>  <br/> Può trattarsi di uno dei vari valori. Si consiglia di utilizzare **-tutti**.  <br/> |
    
-1,1 ad esempio, se si è completamente ospitati in Office 365, ovvero se non si dispone di server di posta elettronica locali, il record TXT SPF includerà le righe 1, 2 e 7 e avrà l'aspetto seguente:
+1.1  Ad esempio, se l'utente è completamente ospitato in Office 365, che significa che non sono presenti server di posta elettronica locali, il record TXT SPF includerà le righe 1, 2 e 7 e si otterrà un risultato simile al seguente:
     
   ```
    v=spf1 include:spf.protection.outlook.com -all
   ```
 
-1,2 questo è il record TXT SPF di Office 365 più comune. Questo record è compatibile con tutti gli utenti, indipendentemente dal fatto che il Data Center di Office 365 si trovi negli Stati Uniti o in Europa (inclusa la Germania) o in un'altra posizione.
+1.2  Questo è il record TXT SPF di Office 365 più comune. Questo record funziona praticamente per tutti, indipendentemente dal fatto che il datacenter di Office 365 si trovi negli Stati Uniti, in Europa (Germania inclusa) o in un'altra area geografica.
     
-1,3 Tuttavia, se si è acquistato Office 365 Germany, parte di Microsoft Cloud Germany, è consigliabile utilizzare l'istruzione include della riga 4 anziché la riga 2. Ad esempio, se l'utente è completamente ospitato in Office 365 Germania, che significa che non sono presenti server di posta elettronica locali, il record TXT SPF includerà le righe 1, 4 e 7 e si otterrà un risultato simile al seguente:
+1.3  Tuttavia, se è stato acquistato Office 365 Germania, parte di Microsoft Cloud Germania, è necessario usare l'istruzione inclusa dalla riga 4 anziché dalla riga 2. Ad esempio, se l'utente è completamente ospitato in Office 365 Germania, che significa che non sono presenti server di posta elettronica locali, il record TXT SPF includerà le righe 1, 4 e 7 e si otterrà un risultato simile al seguente:
     
   ```
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1,4 se è già stato distribuito in Office 365 e sono stati configurati i record TXT SPF per il dominio personalizzato e si esegue la migrazione a Office 365 Germany, è necessario aggiornare il record TXT SPF. A tale scopo, modificare **include: SPF. Protection. Outlook. com** per **includere: SPF. Protection. Outlook. de**.
+1.4  Se l'utente è già distribuito in Office 365, dispone di record TXT SPF configurati per il dominio personalizzato e sta eseguendo la migrazione a Office 365 Germania, è necessario aggiornare il record TXT SPF. A tale scopo, modificare **include:spf.protection.outlook.com** in **include:spf.protection.outlook.de**.
     
-2. Dopo aver formato il record TXT SPF, è necessario aggiornare il record in DNS. È possibile disporre di un solo record TXT SPF per un dominio. Se esiste un record TXT SPF, invece di aggiungere un nuovo record, è necessario aggiornare il record esistente. Passare a [creare record DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)e quindi fare clic sul collegamento per l'host DNS. 
+2. Dopo aver creato il record TXT SPF, è necessario aggiornare il record in DNS. È possibile avere un solo record TXT SPF per un dominio. Se esiste un record TXT SPF, anziché aggiungere un nuovo record, è necessario aggiornare quello esistente. Passare a [Creare record DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide) e fare clic sul collegamento relativo al proprio host DNS. 
     
-3. Testare il record TXT SPF.
+3. Verificare il record TXT SPF.
     
 ## <a name="more-information-about-spf"></a>Per ulteriori informazioni su SPF
 
