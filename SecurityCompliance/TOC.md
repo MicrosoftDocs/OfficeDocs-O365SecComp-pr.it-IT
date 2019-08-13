@@ -52,7 +52,7 @@
 ### [Video della panoramica completa sulla personalizzazione di Prevenzione della perdita dei dati](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)
 ### [Tipi di informazioni sensibili personalizzati](custom-sensitive-info-types.md)
-### [Creare un tipo di informazioni sensibili personalizzato con Exact Data Match (Anteprima)](create-custom-sensitive-info-type-edm.md).
+### [Creare tipi di informazioni riservate personalizzati con classificazione esatta basata su exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [Creare un tipo di informazione sensibile personalizzato nel Centro sicurezza e conformità](create-a-custom-sensitive-information-type.md)
 ### [Creare un tipo di informazione riservata personalizzato usando PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Creare un dizionario di parole chiave](create-a-keyword-dictionary.md)
@@ -345,7 +345,7 @@
 #### [Aggiungere dati a un altro insieme da rivedere](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Gestire i set caricati](compliance20/manage-load-sets.md)
 
-### [Esaminare i dati del caso](compliance20/reviewing-data-in-review-set.md)
+### Esaminare i dati del caso
 #### [Visualizzare i documenti in un insieme da rivedere](compliance20/view-documents-in-review-set.md)
 #### [Eseguire query sui dati in un insieme da rivedere](compliance20/review-set-search.md)
 #### [Contrassegnare i documenti in un insieme da rivedere](compliance20/tagging-documents.md)
@@ -363,7 +363,7 @@
 
 ### [Gestire processi](compliance20/managing-jobs-ediscovery20.md)
 
-### [Configurare le impostazioni del caso](compliance20/configuring-case-settings-ediscovery20.md)
+### Configurare le impostazioni del caso
 #### [Chiudere o eliminare un caso](compliance20/close-or-delete-case.md)
 #### [Aggiungere o rimuovere membri da un caso](compliance20/add-remove-members.md)
 #### [Configurare le impostazioni di ricerca e analisi](compliance20/configure-search-analytics-settings.md)

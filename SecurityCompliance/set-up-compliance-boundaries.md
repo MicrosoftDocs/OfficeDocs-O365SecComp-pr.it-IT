@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258599"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302425"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -107,7 +107,7 @@ Dopo aver creato i gruppi di ruoli per ogni agenzia, il passaggio successivo con
 Di seguito viene riportata la sintassi utilizzata per creare un filtro delle autorizzazioni di ricerca utilizzato per i limiti di conformità.
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 Di seguito è riportato una descrizione di ogni parametro nel comando:
@@ -116,19 +116,22 @@ Di seguito è riportato una descrizione di ogni parametro nel comando:
     
 -  `Users`: Specifica gli utenti o i gruppi a cui viene applicato il filtro per le azioni di ricerca del contenuto eseguite. Per i limiti di conformità, questo parametro consente di specificare i gruppi di ruoli (creati al passaggio 3) nell'agenzia per la quale si sta creando il filtro. Si tratta di un parametro multivalore in modo che sia possibile includere uno o più gruppi di ruoli, separati da virgole. 
     
--  `Filters`: Specifica i criteri di ricerca per il filtro. Per i limiti di conformità, è possibile definire i filtri seguenti: ognuno si applica a una posizione di contenuto. 
+-  `Filters`: Specifica i criteri di ricerca per il filtro. Per i limiti di conformità, è possibile definire i filtri seguenti. Ognuna si applica a una posizione di contenuto. 
     
-  -  `Mailbox`: Specifica le cassette postali che i gruppi di ruoli `Users` definiti nel parametro possono eseguire una ricerca. Per i limiti di conformità, *ComplianceAttribute* è lo stesso attributo identificato nel passaggio 1 e *AttributeValue* specifica l'Agenzia. Questo filtro consente ai membri del gruppo di ruolo di eseguire ricerche solo nelle cassette postali di una determinata agenzia. ad esempio, `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    -  `Mailbox`: Specifica le cassette postali che i gruppi di ruoli `Users` definiti nel parametro possono eseguire una ricerca. Per i limiti di conformità, *ComplianceAttribute* è lo stesso attributo identificato nel passaggio 1 e *AttributeValue* specifica l'Agenzia. Questo filtro consente ai membri del gruppo di ruolo di eseguire ricerche solo nelle cassette postali di una determinata agenzia. ad esempio, `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-  -  `Site`: Specifica gli account di OneDrive che i gruppi di ruoli definiti `Users` nel parametro possono eseguire la ricerca. Per il filtro OneDrive, utilizzare la stringa `ComplianceAttribute`actual. Questo mapping allo stesso attributo che è stato identificato nel passaggio 1 e che è sincronizzato con gli account di OneDrive a causa della richiesta di supporto inviata al passaggio 2.  *AttributeValue* specifica l'Agenzia. Questo filtro consente ai membri del gruppo di ruolo di cercare solo gli account di OneDrive in una determinata agenzia. ad esempio, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Specifica gli account di OneDrive che i gruppi di ruoli definiti `Users` nel parametro possono eseguire la ricerca. Per il filtro OneDrive, utilizzare la stringa `ComplianceAttribute`actual. Questo mapping allo stesso attributo che è stato identificato nel passaggio 1 e che è sincronizzato con gli account di OneDrive a causa della richiesta di supporto inviata al passaggio 2.  *AttributeValue* specifica l'Agenzia. Questo filtro consente ai membri del gruppo di ruolo di cercare solo gli account di OneDrive in una determinata agenzia. ad esempio, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`: Specifica i siti di SharePoint che i gruppi di ruoli definiti `Users` nel parametro possono eseguire una ricerca. *SharePointURL* specifica i siti nell'agenzia che i membri del gruppo di ruoli possono eseguire una ricerca. Per esempio`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: Specifica i siti di SharePoint che i gruppi di ruoli definiti `Users` nel parametro possono eseguire una ricerca. *SharePointURL* specifica i siti nell'agenzia che i membri del gruppo di ruoli possono eseguire una ricerca. ad esempio, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` si noti `Site` che `Site_Path` i filtri e sono connessi tramite un operatore **or** .
     
+     > [!NOTE]
+     > La sintassi per il `Filters` parametro include un *elenco di filtri*. Un elenco di filtri è un filtro che include un filtro per le cassette postali e un filtro sito separato da una virgola. Nell'esempio precedente, si noti che una virgola separa **Mailbox_ComplianceAttribute** e **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Quando il filtro viene elaborato durante l'esecuzione di una ricerca di contenuto, vengono creati due filtri per le autorizzazioni di ricerca dall'elenco filtri: un filtro per le cassette postali e un filtro sito. Un'alternativa all'utilizzo di un elenco di filtri consiste nel creare due filtri di autorizzazioni di ricerca distinti per ogni agenzia: un filtro delle autorizzazioni di ricerca per l'attributo della cassetta postale e un filtro per gli attributi del sito. In entrambi i casi, i risultati saranno gli stessi. L'utilizzo di un elenco filtri o la creazione di filtri di autorizzazioni di ricerca distinti è una questione di preferenza.
+
 -  `Action`: Specifica il tipo di azione di ricerca di conformità a cui viene applicato il filtro. Ad esempio, `-Action Search` il filtro verrebbe applicato solo quando i membri del gruppo di ruoli definiti nel `Users` parametro eseguono una ricerca di contenuto. In questo caso, il filtro non verrebbe applicato quando si esportano i risultati della ricerca. Per i limiti di conformità `-Action All` , utilizzare in modo che il filtro si applichi a tutte le azioni di ricerca. 
     
     Per un elenco delle azioni di ricerca del contenuto, vedere la sezione "New-ComplianceSecurityFilter" in [Configure Permissions Filtering for content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
-    
-Di seguito sono riportati alcuni esempi dei due filtri delle autorizzazioni di ricerca che verrebbero creati per supportare lo scenario dei limiti di conformità di contoso.
+
+Di seguito sono riportati alcuni esempi dei due filtri delle autorizzazioni di ricerca che verrebbero creati per supportare lo scenario dei limiti di conformità di contoso. In entrambi gli esempi è incluso un elenco di filtri separati da virgole, in cui la cassetta postale e i filtri del sito sono inclusi nello stesso filtro delle autorizzazioni di ricerca e sono separati da una virgola.
   
  **Fourth Coffee**
 
