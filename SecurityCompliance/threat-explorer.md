@@ -1,5 +1,5 @@
 ---
-title: Esplora minacce e rilevamenti in tempo reale
+title: Esplora minacce e rilevamenti in tempo reale, nuovi in Esplora minacce, modifiche a Threat Explorer, nuovo in Office 365, sicurezza, Cloud Security, nuovo alla sicurezza in ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230410"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407955"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -42,12 +42,16 @@ Con questo rapporto, è possibile:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuove funzionalità nei rilevamenti in tempo reale
 
-Explorer (e rilevamenti in tempo reale) aggiunge nuovi campi creati per fornire un'immagine più completa della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
+Di seguito sono descritte tre nuove funzionalità aggiunte in Esplora minacce.
+
+In primo luogo, **l'anteprima dell'intestazione di posta elettronica e il download del corpo della posta elettronica** sono nuove funzionalità disponibili in Esplora minacce. Gli amministratori saranno in grado di analizzare le intestazioni/i messaggi di posta elettronica scaricati per individuare eventuali minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). È necessario aggiungere un nuovo ruolo denominato ' Preview ' in un altro gruppo di ruoli di Office 365, ad esempio nelle operazioni sec o nell'amministratore sec, per garantire la possibilità di scaricare i messaggi di posta elettronica e le intestazioni di anteprima nella visualizzazione all-mail.
+
+Ma Explorer (e rilevamenti in tempo reale) aggiunge anche nuovi campi creati per fornire un'immagine più completa del luogo in cui i messaggi di posta elettronica atterrano. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
 Come è possibile eseguire questa operazione? Lo stato di recapito è ora suddiviso in due colonne:
 
-- Azione di recapito-qual è lo stato di questo messaggio di posta elettronica?
-- Percorso di recapito-dove è stato instradato il messaggio di posta elettronica come risultato?
+- **Azione** di recapito-qual è lo stato di questo messaggio di posta elettronica?
+- **Percorso** di recapito-dove è stato instradato il messaggio di posta elettronica come risultato?
 
 Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
@@ -62,7 +66,7 @@ Ecco cosa può essere visualizzato dall'utente e cosa non è possibile:
 |Consegnato     | Bloccati        |
 |Junked     | Sostituito        |
 
-Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i valori di possilbe del percorso di recapito:
+Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i possibili valori del percorso di recapito:
 
 1. Posta in arrivo o cartella – la posta elettronica è in posta in arrivo o in una cartella (in base alle regole di posta elettronica).
 2. On-Prem o External-la cassetta postale non esiste sul cloud ma è in locale.
@@ -72,8 +76,9 @@ Il percorso di recapito consente di visualizzare i risultati dei criteri e i ril
 6. Failed: la posta elettronica non è riuscita a raggiungere la cassetta postale.
 7. Eliminato: il messaggio di posta elettronica viene perso da qualche parte nel flusso.
 
-La cronologia della posta elettronica è un'altra funzionalità di Esplora risorse che consente di migliorare l'esperienza di ricerca per gli amministratori. La randomizzazione viene ridotta perché è necessario meno tempo per controllare posizioni diverse per cercare di comprendere l'evento. Quando più eventi si verificano in un messaggio di posta elettronica o vicino allo stesso tempo, gli eventi vengono visualizzati in una visualizzazione sequenza temporale. In effetti, alcuni eventi che si verificano dopo il recapito alla posta verranno acquisiti nella colonna ' Special Action '. La combinazione delle informazioni dalla sequenza temporale di quella posta con l'azione speciale intrapresa sul post-recapito della posta darà agli amministratori informazioni su come funzionano i propri criteri, in cui la posta è stata definitivamente instradata e, in alcuni casi, qual è stata la valutazione finale.
+La **cronologia della posta elettronica** è un'altra funzionalità di Esplora risorse che consente di migliorare l'esperienza di ricerca per gli amministratori. La randomizzazione viene ridotta perché è necessario meno tempo per controllare posizioni diverse per cercare di comprendere l'evento. Quando più eventi si verificano in un messaggio di posta elettronica o vicino allo stesso tempo, gli eventi vengono visualizzati in una visualizzazione sequenza temporale. In effetti, alcuni eventi che si verificano dopo il recapito alla posta verranno acquisiti nella colonna ' Special Action '. La combinazione delle informazioni dalla sequenza temporale di quella posta con l'azione speciale intrapresa sul post-recapito della posta darà agli amministratori informazioni su come funzionano i propri criteri, in cui la posta è stata definitivamente instradata e, in alcuni casi, qual è stata la valutazione finale.
 
+Per ulteriori informazioni sull'analisi di messaggi di posta [elettronica dannosi, vedere Find and indagate email dannose che è stato recapitato in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato in posta elettronica dalla tecnologia
 
