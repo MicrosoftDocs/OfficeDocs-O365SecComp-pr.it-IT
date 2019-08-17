@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo di Office 365 per identificare le risorse condivise con gli utenti esterni all'organizzazione. "
-ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258569"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447363"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Controllare la condivisione per identificare risorse condivise con utenti esterni
 
@@ -53,9 +53,9 @@ La condivisione è definita da quando un utente (l'utente che *agisce* ) desider
 
 - **AnonymousLinkUsed:** Come suggerisce il nome, questo evento viene registrato quando si utilizza un collegamento anonimo per accedere a una risorsa. 
 
-- **SecureLinkCreated:** Un utente ha creato un "collegamento utenti specifici" per condividere una risorsa con una persona specifica. Questo utente di destinazione potrebbe essere una persona esterna all'organizzazione.
+- **SecureLinkCreated:** Un utente ha creato un "collegamento utenti specifici" per condividere una risorsa con una persona specifica. Questo utente di destinazione potrebbe essere una persona esterna all'organizzazione. La persona a cui è condivisa la risorsa viene identificata nel record di controllo per l'evento **AddedToSecureLink** . Gli indicatori di data e ora per questi due eventi sono quasi identici.
 
-- **AddedToSecureLink:** Un utente è stato aggiunto a un collegamento di persone specifico. Questo utente di destinazione potrebbe essere una persona esterna all'organizzazione.
+- **AddedToSecureLink:** Un utente è stato aggiunto a un collegamento di persone specifico. Utilizzare il campo **TargetUserOrGroupName** in questo evento per identificare l'utente aggiunto al collegamento specifico corrispondente. Questo utente di destinazione potrebbe essere una persona esterna all'organizzazione.
 
 ## <a name="sharing-auditing-work-flow"></a>Condivisione del flusso di lavoro di controllo
   
@@ -81,7 +81,7 @@ Se un account utente per l'utente di destinazione non è presente nella director
     
    - Quando l'utente di destinazione accetta l'invito di condivisione inviato a tali utenti (facendo clic sul collegamento nell'invito), SharePoint registra un evento **SharingInvitationAccepted** e assegna le autorizzazioni utente di destinazione per l'accesso alla risorsa. Se all'utente di destinazione viene inviato un collegamento anonimo, l'evento **AnonymousLinkUsed** viene registrato dopo che l'utente di destinazione ha utilizzato il collegamento per accedere alla risorsa. Per i collegamenti sicuri, **** viene registrato un evento fileaccessed quando un utente esterno utilizza il collegamento per accedere alla risorsa.
 
-Vengono inoltre registrate informazioni aggiuntive sull'utente di destinazione, ad esempio l'identità dell'utente a cui l'invito è associato e l'utente che accetta effettivamente l'invito. In alcuni casi, questi utenti (o indirizzi di posta elettronica) possono essere diversi. 
+Vengono inoltre registrate informazioni aggiuntive sull'utente di destinazione, ad esempio l'identità dell'utente a cui l'invito è associato e l'utente che accetta l'invito. In alcuni casi, questi utenti (o indirizzi di posta elettronica) possono essere diversi. 
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Come identificare le risorse condivise con gli utenti esterni
 
@@ -109,7 +109,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo 
     
 7. Al termine dell'esecuzione della ricerca e i risultati vengono visualizzati, fare clic su **Esporta risultati** \> **scaricare tutti i risultati**.
     
-    Dopo aver selezionato l'opzione di esportazione, viene visualizzato un messaggio nella parte inferiore della finestra in cui viene richiesto di aprire o salvare il file CSV.
+    Dopo aver selezionato l'opzione di esportazione, nella parte inferiore della finestra viene visualizzato un messaggio in cui viene richiesto di aprire o salvare il file CSV.
     
 8. Fare clic su **Salva** \> con **nome** e salvare il file CSV in una cartella del computer locale. 
 
