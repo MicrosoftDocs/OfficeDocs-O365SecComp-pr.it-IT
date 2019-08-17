@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547971"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430013"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
@@ -123,7 +123,28 @@ Scaricare un modello vuoto (o creare a partire da un'esportazione del piano file
 
 ![Modello di piano file vuoto aperto in Excel](media/file-plan-blank-template.png)
 
-Compilare il modello (presto disponibile: informazioni di riferimento sulle combinazioni di valori validi per una singola etichetta di conservazione).
+Compilare il modello. Questa tabella fornisce valori validi.
+
+|**Proprietà**|**Tipo**|**Valori validi**|
+|:-----|:-----|:-----|
+|LabelName|Stringa|Se il valore contiene degli spazi, è necessario racchiuderlo tra virgolette (").|
+|Commento|Stringa|Se il valore contiene degli spazi, è necessario racchiuderlo tra virgolette ("). |
+|Note|Stringa|Personalizzato|
+|IsRecordLabel|Stringa|$true: L'etichetta è un'etichetta record.</br>$false: L'etichetta non è un'etichetta record. Questo è il valore predefinito.|
+|RetentionAction|Stringa|Elimina</br>Conserva</br>KeepAndDelete |
+|RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono:</br>Un numero intero positivo.</br>Il valore è illimitato.|
+|RetentionType|Stringa|La proprietà specifica se la durata del periodo di conservazione è stata calcolata a partire dalla data di creazione del contenuto, dalla data etichettata (contrassegnata) o dalla data dell'ultima modifica. I valori validi sono:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per le azioni di conservazione Delete e KeepAndDelete. È possibile indicare più indirizzi di posta elettronica separati da virgole.|
+|ReferenceId|Stringa|Personalizzato|
+|Departmentname|Stringa|Personalizzato|
+|Categoria|Stringa|Personalizzato|
+|Sottocategoria|Stringa|Personalizzato|
+|AuthorityType|Stringa|Personalizzato|
+|CitationName|Stringa|Personalizzato|
+|CitationUrl|Stringa|Personalizzato|
+|CitationJurisdiction|Stringa|Personalizzato|
+|Normativa|Stringa|Personalizzato|
+|EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>Nome</br>Nome distinto (DN)</br>GUID </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/it-IT/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) per visualizzare le regole di conservazione disponibili.|
 
 ![Modello del piano file compilato con le informazioni](media/file-plan-filled-out-template.png)
 
