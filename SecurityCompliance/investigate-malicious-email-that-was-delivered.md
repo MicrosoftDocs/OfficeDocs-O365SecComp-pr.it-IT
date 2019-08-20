@@ -1,5 +1,5 @@
 ---
-title: Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365, TIMailData-inline, incidenti di sicurezza, incidenti, ATP PowerShell, malware per la posta elettronica, utenti compromessi, phishing di posta elettronica, malware
+title: Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365, TIMailData-inline, incidenti di sicurezza, incidenti, ATP PowerShell, malware per la posta elettronica, utenti compromessi, phishing di posta elettronica, malware della posta elettronica, leggere intestazioni di posta, leggere intestazioni, aprire intestazioni
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407945"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444871"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365
 
@@ -40,9 +40,56 @@ Verificare che vengano soddisfatti i seguenti requisiti:
     
 ## <a name="dealing-with-suspicious-emails"></a>Gestione di messaggi di posta elettronica sospetti
 
-Gli utenti malintenzionati possono inviare messaggi ai propri clienti per cercare di phishing le proprie credenziali e accedere ai segreti aziendali. Per evitare questo, è consigliabile utilizzare i servizi di protezione dalle minacce in Office 365, tra cui [Exchange Online Protection](eop/exchange-online-protection-overview.md) e [Advanced Threat Protection](office-365-atp.md). Tuttavia, è possibile che un utente malintenzionato invii messaggi di posta elettronica agli utenti che contengono un URL e solo in seguito fare in modo che l'URL punti a contenuto dannoso (malware e così via). In alternativa, si potrebbe rendersi conto che un utente dell'organizzazione è stato compromesso e che l'utente è stato compromesso, un aggressore ha utilizzato quell'account per inviare messaggi di posta elettronica ad altri utenti della propria azienda. Durante la pulizia di entrambi gli scenari, potrebbe essere necessario rimuovere i messaggi di posta elettronica dalle cassette postali degli utenti. In situazioni come queste, è possibile sfruttare le [minacce Explorer (o rilevamenti in tempo reale)](threat-explorer.md) per individuare e rimuovere tali messaggi di posta elettronica.
+Gli utenti malintenzionati possono inviare messaggi ai propri clienti per cercare di phishing le proprie credenziali e accedere ai segreti aziendali. Per evitare questo, è consigliabile utilizzare i servizi di protezione dalle minacce in Office 365, tra cui [Exchange Online Protection](eop/exchange-online-protection-overview.md) e [Advanced Threat Protection](office-365-atp.md). Tuttavia, è possibile che un utente malintenzionato invii messaggi di posta elettronica agli utenti che contengono un URL e solo in seguito fare in modo che l'URL punti a contenuto dannoso (malware e così via). 
+
+In alternativa, si potrebbe rendersi conto che un utente dell'organizzazione è stato compromesso e che l'utente è stato compromesso, un aggressore ha utilizzato quell'account per inviare messaggi di posta elettronica ad altri utenti della propria azienda. Durante la pulizia di entrambi gli scenari, potrebbe essere necessario rimuovere i messaggi di posta elettronica dalle cassette postali degli utenti. In situazioni come queste, è possibile sfruttare le [minacce Explorer (o rilevamenti in tempo reale)](threat-explorer.md) per individuare e rimuovere tali messaggi di posta elettronica.
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>Dove si trovano i messaggi di posta elettronica reindirizzati dopo aver eseguito le operazioni
+
+In che modo i messaggi di posta elettronica problematici passano e quali strumenti aiutano gli investigatori a capire cosa gli è successo? I campi di Esplora minacce segnalano informazioni che consentono agli amministratori di decodificare gli eventi di posta elettronica problematici.
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>Visualizzare le intestazioni di posta elettronica e scaricare il corpo del messaggio di posta elettronica
+
+**L'anteprima dell'intestazione del messaggio di posta elettronica e il download del corpo della posta** elettronica sono utili funzionalità di gestione delle minacce di posta elettronica disponibili in minacce. Gli amministratori saranno in grado di analizzare e scaricare intestazioni e messaggi di posta elettronica per le minacce. L'accesso per l'utilizzo di questa funzionalità è controllato dal controllo di accesso basato sui ruoli (RBAC), per ridurre il rischio di esposizione dei contenuti della posta elettronica degli utenti.
+
+È necessario aggiungere un nuovo *ruolo*denominato ' Preview ' in un altro gruppo di ruoli di Office 365, ad esempio nelle operazioni sec o nell'amministratore sec, per garantire la possibilità di scaricare i messaggi di posta elettronica e le intestazioni di anteprima nella visualizzazione all-mail.
+
+Per visualizzare il riquadro a comparsa con le opzioni per il download e l'anteprima dell'intestazione di posta elettronica: 
+
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza &amp; e conformità. 
+    
+2. Nel riquadro di spostamento a sinistra, scegliere **gestione** \> **** minacce.
+
+3. Fare clic su un oggetto nella tabella Esplora minacce.
+
+Verrà aperto il riquadro a comparsa, in cui sono posizionati sia l'anteprima dell'intestazione che i collegamenti di download della posta elettronica.
+
+> [!IMPORTANT]
+> Utilizzare entrambe le tabelle che seguono insieme. Uno indica che il controllo RBAC è necessario, l'altro, il percorso in cui devono essere concessi i diritti.
+<p>
+
+|Attività  |RoleGroup RBAC con accesso |È necessario il ruolo ' Preview '?  |
+|---------|---------|---------|
+|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce     |  Amministratore globale di Office 365<br> Amministratore della sicurezza, <br> Lettore di sicurezza      | No   |
+|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni per i messaggi di posta elettronica e visualizzare in anteprima e scaricare messaggi di posta elettronica in quarantena    |     Amministratore globale di Office 365 <br> Amministratore della sicurezza, <br>Lettore di sicurezza    |       No  |
+|Utilizzare Esplora minacce per visualizzare intestazioni e scaricare messaggi di posta elettronica recapitati alle cassette postali     |      Amministratore globale di Office 365 <br>Amministratore della sicurezza,<br> Lettore di sicurezza, <br> Anteprima    |   Sì      |
+
+<br>
+
+|RoleGroup RBAC  |Cui vengono assegnati gli utenti  |
+|---------|---------|
+| Amministratore globale   | Interfaccia di amministrazione di Office 365        |
+| Amministratore della sicurezza      |    Centro sicurezza e conformità     |
+| Lettore di sicurezza   |    Centro sicurezza e conformità     |
+|      |    Centro sicurezza e conformità     |
+
+
+> [!CAUTION]
+> Tenere presente che ' Preview ' è un ruolo e non un RoleGroup e che tale ruolo deve essere aggiunto successivamente a un RoleGroup.
+
+![Riquadro a comparsa di Esplora minacce con collegamenti per il download e l'anteprima nella pagina.](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>Controllare l'azione e il percorso di recapito
 
 I rilevamenti in tempo reale di Esplora minacce sono stati aggiunti i campi azione di recapito e posizione di recapito nel luogo dello stato del recapito. Questo comporta un'immagine più completa della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
@@ -67,7 +114,11 @@ Il percorso di recapito consente di visualizzare i risultati dei criteri e i ril
 - **Quarantine** : l'indirizzo di posta elettronica in quarantena e non è incluso nella cassetta postale di un utente.
 - **Failed** : la posta elettronica non è riuscita a raggiungere la cassetta postale.
 - **Eliminato** : il messaggio di posta elettronica viene perso da qualche parte nel flusso.
+
+### <a name="view-the-timeline-of-your-email"></a>Visualizzare la sequenza temporale del messaggio di posta elettronica
   
+ **Timeline del messaggio di posta elettronica** un altro campo in Threat Explorer prevedrà anche la ricerca più facile per gli amministratori. Invece di passare del tempo prezioso a controllare dove potrebbe essere andato il messaggio di posta elettronica, quando, durante l'analisi di un evento, quando si verificano più eventi in un messaggio di posta elettronica o vicino allo stesso tempo, tali eventi verranno visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito alla posta verranno acquisiti nella colonna '*Special Action*'. La combinazione delle informazioni dalla sequenza temporale della posta con l'azione speciale intrapresa sul post-recapito della posta dà agli amministratori informazioni sui criteri e sulla gestione delle minacce, ad esempio la posizione in cui il messaggio è stato instradato e, in alcuni casi, la valutazione finale.
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
 
 > [!TIP]

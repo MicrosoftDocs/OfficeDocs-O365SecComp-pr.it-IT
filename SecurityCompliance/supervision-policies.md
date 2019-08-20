@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
-ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
+ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34694710"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165652"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -66,8 +66,7 @@ I criteri di supervisione possono assistere il monitoraggio delle comunicazioni 
 Prima di iniziare a usare la supervisione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dalla supervisione con un gruppo controllato o un elenco di gruppi.
 
 > [!IMPORTANT]
-> Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5.
-Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Revisori
 
@@ -76,6 +75,8 @@ Quando si crea un criterio di supervisione, è necessario determinare chi esegui
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppi per gli utenti e i revisori controllati
 
 Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno di una revisione delle comunicazioni e di gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non è supervisionato.
+
+Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
 
 ### <a name="supported-communication-types"></a>Tipi di comunicazione supportati
 
@@ -123,24 +124,24 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 #### <a name="offensive-language"></a>Lingua offensiva
 
-Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare i messaggi di posta elettronica inadeguati come parte dei requisiti di monitoraggio per il bullismo e l'antimolestia. Per impedire o bloccare la lingua offensiva per altre comunicazioni nell'organizzazione, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) che utilizza un [dizionario di parole chiave personalizzate](create-a-keyword-dictionary.md) di termini offensivi.
+Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare la lingua nei messaggi di posta elettronica suscettibili di violare i criteri di anti-molestia e bullismo. Il modello di lingua offensiva attualmente supporta le parole chiave in inglese e monitora il corpo dei messaggi di posta elettronica.
 
-Il modello di lingua offensiva attualmente supporta le parole chiave in inglese e monitora il corpo dei messaggi di posta elettronica. Il modello di lingua offensivo monitora la posta elettronica per i sentimenti associati ai tipi di lingua seguenti:
+> [!NOTE]
+> Creare un [criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md) con un [dizionario di parole chiave personalizzato](create-a-keyword-dictionary.md) dei termini bloccati se è necessario eseguire le operazioni seguenti:
+>
+> - monitorare le comunicazioni di Microsoft teams nell'organizzazione per la lingua offensiva
+> - Impedisci o blocca la lingua offensiva nelle comunicazioni nell'organizzazione
+
+Tenere presente che il modello non fornisce un elenco esaustivo di lingua offensiva. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare il modello a sua discrezione. Anche se il modello può aiutare l'organizzazione a monitorare il linguaggio offensivo, il modello non è destinato a fornire il solo mezzo di monitoraggio o di indirizzamento di tale lingua da parte dell'organizzazione. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative al monitoraggio e al blocco del linguaggio offensivo.
+
+Il modello di lingua offensivo monitora la posta elettronica per i sentimenti associati ai tipi di lingua seguenti:
 
 |**Tipo**|**Descrizione**|
 |:-----|:-----|
-| **Bestemmie** | Espressioni inappropriate e in imbarazzo per la maggior parte delle persone. |
-| **Legature** | Espressioni che attaccano le culture e le etnie. |
-| **Insulti** | Espressioni che provocano, condannano e ridicolizzano. |
-| **Riferimenti a svantaggi** | Espressioni che si rivolgono a handicap fisici o mentali. |
-| **Lingua squallida** | Espressioni che mirano agli interessi sessuali e allo stato fisico di pulizia. |
-| **Omofobia** | Espressioni che indirizzano le preferenze sessuali. |
-| **Razzismo** | Espressioni che mirano alla razza e all'etnia. |
-| **Estremismo** | Espressioni che mirano alla religione e alle ideologie politiche. |
-| **Alterare** | Espressioni per le quali il significato o la pronuncia è identica a quella di un altro termine più offensivo. |
-| **Lingua provocatoria** | Espressioni che potenzialmente causano rabbia o violenza. |
-| **Tabù** | Espressioni generalmente inappropriate nelle comunicazioni educate della società. |
-| **Lingua non affinata** | Espressioni che non dispongono di maniere educate e che sono potenzialmente dure e maleducate. |
+| **Bestemmie** | Espressioni che imbarazzano la maggior parte delle persone. |
+| **Legature** | Espressioni che esprimono pregiudizio nei confronti di gruppi specifici (ad esempio, razza, etnia, orientamento sessuale, disabilità). |
+| **Insulti** | Espressioni che provocano, condannano, ridicolizzano, o che potrebbero causare rabbia o violenza. |
+| **Espressioni mascherate** | Espressioni per le quali il significato o la pronuncia è identica a quella di un altro termine più offensivo. |
 
 #### <a name="conditional-settings"></a>Impostazioni condizionali
 
@@ -150,7 +151,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 |**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
-| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica provenienti da un dominio specifico ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare due condizioni: <br> - **Viene ricevuto un messaggio da una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene ricevuto da nessuno di questi domini** condizione che escluda l'indirizzo di posta elettronica ("newsletter@contoso.com"). |
+| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica provenienti da un dominio specifico ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare la condizione che **non sia stato ricevuto da nessuno di questi domini** la condizione che escluda la Indirizzo di posta elettronica (ad esempio "newsletter@contoso.com"). |
 | **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, per applicare il criterio al messaggio è necessario un solo dominio o un indirizzo di posta elettronica. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica inviati a un dominio specifico, ma si desidera escludere quelli inviati che non richiedono la revisione, è necessario configurare due condizioni: <br> -Un **messaggio viene inviato a una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene inviato a una di queste condizioni di dominio** che escluda l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
 | **Il messaggio è classificato con una qualsiasi di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of](https://docs.microsoft.com/office365/securitycompliance/labels)retention labels.|
 | **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
@@ -161,6 +162,8 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"></a> Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una o più delle seguenti parole**, con le parole chiave "Banker" e "insider trading" su righe separate. Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
+
+Per analizzare i messaggi di posta elettronica e gli allegati per le stesse parole chiave, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) con un dizionario di parole [chiave personalizzato](create-a-keyword-dictionary.md) per i termini che si desidera monitorare. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o** nell'allegato di posta elettronica. L'utilizzo delle impostazioni standard dei criteri condizionali (*messaggio contiene una di queste parole* e un *allegato contiene una di queste parole*) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nel allegato.
   
 ##### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
