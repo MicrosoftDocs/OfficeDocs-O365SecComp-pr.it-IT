@@ -1,5 +1,5 @@
 ---
-title: Esplora minacce e rilevamenti in tempo reale, nuovi in Esplora minacce, modifiche a Threat Explorer, nuovo in Office 365, sicurezza, Cloud Security, nuovo alla sicurezza in ATP
+title: Esplora minacce e rilevamenti in tempo reale, nuovi in Esplora minacce, modifiche a Threat Explorer, nuove a Office 365, sicurezza, sicurezza cloud, novità per la sicurezza in ATP, nuove funzionalità ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407955"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444886"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
