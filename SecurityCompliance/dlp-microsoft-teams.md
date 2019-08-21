@@ -13,17 +13,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 8ac8f4e2a4189ca83772775a96067d0b5fc3a24b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4edc05a2e0759884570239a038d0869e15240d17
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230740"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478225"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
+<!-- the note duplicates the first sentence of the overview, delete one or the other- -->
 
 > [!NOTE]
-> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams chat e ai messaggi di canale per gli utenti con licenza per Office 365 Advanced Compliance, che è disponibile come opzione autonoma ed è inclusa in Office 365 E5 e Microsoft 365 E5 Compliance. Per ulteriori informazioni sui requisiti di licenza, vedere [Microsoft 365 tenant-Level Licensing Services guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams chat and Channel messages per gli utenti con licenza per Office 365 Advanced Compliance, che è disponibile come opzione autonoma ed è inclusa in Office 365 E5 e Microsoft 365 E5 Compliance. Per ulteriori informazioni sui requisiti di licenza, vedere [Microsoft 365 tenant-Level Licensing Services guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica di DLP per Microsoft Teams
 
@@ -38,7 +39,7 @@ Recentemente, le funzionalità di [prevenzione della perdita di dati](data-loss-
 
 ## <a name="policy-tips-help-educate-users"></a>Suggerimenti per i criteri per informare gli utenti
 
-Analogamente a come funziona DLP in [Exchange, Outlook e Outlook sul Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [siti di SharePoint e OneDrive for business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)e [client desktop di Office, i](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)suggerimenti per i criteri vengono visualizzati quando un'azione è in conflitto con un criterio DLP. Di seguito è riportato un esempio di suggerimento per i criteri:
+Analogamente a come funziona DLP in [Exchange, Outlook, Outlook sul Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online, siti di OneDrive for business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)e [client desktop di Office, i](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)suggerimenti per i criteri vengono visualizzati quando un'azione è in conflitto con un criterio DLP. Di seguito è riportato un esempio di suggerimento per i criteri:
 
 ![Notifica del messaggio bloccato nei team](media/dlp-teams-blockedmessage-notification.png)
 
@@ -46,7 +47,7 @@ In questo caso, il mittente ha tentato di condividere un numero di previdenza so
 
 ![Opzioni per la risoluzione del messaggio bloccato](media/dlp-teams-blockedmessage-possibleactions.png)
 
-Nell'organizzazione, è possibile scegliere se consentire agli utenti di ignorare un criterio DLP o meno. Quando si configurano i criteri DLP, è possibile utilizzare i suggerimenti per i criteri predefiniti oppure [personalizzare i suggerimenti](#to-customize-policy-tips) per i criteri per l'organizzazione. 
+Nell'organizzazione è possibile scegliere di consentire agli utenti di eseguire l'override di un criterio DLP. Quando si configurano i criteri DLP, è possibile utilizzare i suggerimenti per i criteri predefiniti oppure [personalizzare i suggerimenti](#to-customize-policy-tips) per i criteri per l'organizzazione. 
 
 Tornando all'esempio, in cui un mittente ha condiviso un numero di previdenza sociale in un canale teams, ecco cosa ha visto il destinatario:
 
@@ -73,7 +74,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 7. Nella scheda **impostazioni dei criteri** scegliere **Salva**.
 
 Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data Center e sincronizzate con gli account utente.
- 
+ <!-- why are these syncing to user accounts? -->
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>Aggiungere Microsoft teams come percorso ai criteri DLP esistenti
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [](data-loss-prevention-policies.md#permissions)Permissions.
@@ -91,7 +92,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 6. Fare clic su **Salva**.
 
 Consentire circa un'ora affinché le modifiche vengano elaborate tramite il Data Center e sincronizzate con gli account utente.
-
+<!-- again, why user accounts? -->
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Definire un nuovo criterio DLP per Microsoft Teams
 
 Per eseguire questa attività, è necessario essere assegnati a un ruolo che disponga delle autorizzazioni per la modifica dei criteri DLP. Per ulteriori informazioni, vedere [](data-loss-prevention-policies.md#permissions)Permissions.
@@ -104,7 +105,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 4. Nella scheda denominare i **criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**. 
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se si è scelto di scegliere percorsi specifici, selezionare le posizioni per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati insieme ai **messaggi di chat e dei canali di Team**.
 <br/>

@@ -3,7 +3,7 @@ title: Mantenere gli utenti di Office 365 sicuri con Office 365 Threat Investiga
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come le funzionalità di analisi e risposta alle minacce di Office 365 consentono all'organizzazione di rilevare intrusioni e minacce e di attenuare e recuperare rapidamente le minacce.
-ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598982"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478175"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenere gli utenti di Office 365 sicuri con Office 365 Threat Investigation and response capabilities
 
@@ -28,13 +28,13 @@ ms.locfileid: "35598982"
 
 Si sa quale degli utenti di Office 365 sono sotto attacco o sono stati compromessi in modo peggiore? Si sa come attenuare e recuperare gli attacchi che mirano agli utenti? Lo sapevate che è possibile fare esattamente questo con le funzionalità di sicurezza già disponibili in Office 365? 
   
-Le funzionalità di [ricerca e risposta alle minacce di office 365](office-365-ti.md) sono incluse nell'abbonamento a Office 365 E5 (come parte di Office 365 Advanced Threat Protection Plan 2). Queste funzionalità hanno consentito a Microsoft di ridurre il tempo medio per la risoluzione degli incidenti di social engineering del 80% e la velocità effettiva del caso aumentata del 37% al mese rispetto ai 2 trimestri precedenti. 
+Le funzionalità di [ricerca e risposta alle minacce di office 365](office-365-ti.md) sono incluse nell'abbonamento a Office 365 E5 (come parte di [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2). Queste funzionalità hanno consentito a Microsoft di ridurre il tempo medio per la risoluzione degli incidenti di social engineering del 80% e la velocità effettiva del caso aumentata del 37% al mese rispetto ai 2 trimestri precedenti. 
 
 Di recente sono state aggiunte nuove funzionalità che consentono di migliorare il modo in cui è possibile rilevare e recuperare dalle minacce. Di seguito è illustrata la modalità di analisi delle minacce aggiornate e delle funzionalità di risposta che consentono di rendere ancora più efficienti.
   
 ## <a name="detect-intrusions-and-threats"></a>Rilevare intrusioni e minacce
 
-[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) (noto anche come Esplora minacce) consente agli amministratori della sicurezza e agli analisti di identificare e comprendere le minacce attive nell'organizzazione perché anche le impostazioni di sicurezza più complesse possono essere eluse da configurazioni utente apparentemente innocue come safe whitelist del mittente. Explorer aiuta gli amministratori globali o di sicurezza di Office 365 a determinare rapidamente se gli utenti sono stati compromessi da minacce quali malware o phishing. In questo modo vengono definite le priorità che gli utenti sono più a rischio per una minaccia e la risposta necessaria. 
+[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) (noto anche come Explorer) consente agli amministratori della sicurezza e agli analisti di identificare e comprendere le minacce attive nell'organizzazione perché anche le impostazioni di sicurezza più complesse possono essere eluse da configurazioni utente apparentemente innocue come il mittente sicuro whitelist. Explorer aiuta gli amministratori globali o di sicurezza di Office 365 a determinare rapidamente se gli utenti sono stati compromessi da minacce quali malware o phishing. In questo modo vengono definite le priorità che gli utenti sono più a rischio per una minaccia e la risposta necessaria. 
   
 Explorer consente inoltre agli amministratori di esplorare le relazioni tra utenti e posta elettronica. Sai di una mail particolare che è stata pessima? Cercarlo per vedere cosa gli utenti hanno ricevuto la posta, quindi seguire la serie di eventi e vedere cosa hanno fatto gli utenti a sua volta.
 
@@ -56,7 +56,6 @@ Se non si dispone già di queste funzionalità, [provare subito](https://aka.ms/
 
 Le funzionalità di ricerca e risposta alle minacce di Office 365 sono alimentate con dati del grafico Microsoft Intelligent Security. Il grafico acquisisce il segnale di minaccia più recente da oltre 1 miliardo dispositivi Windows, 450 miliardi mensili e 400 miliardi messaggi di posta elettronica mensili in Office 365. Questo segnale di minaccia senza eguali è ciò che rende la visibilità generale in un tenant del cliente cruciale per gli amministratori e gli analisti di sicurezza per avere una visione completa delle minacce che influiscono sulla loro organizzazione. 
   
-   
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Perché utilizzare le funzionalità di analisi e risposta alle minacce di Office 365?
 
 Gartner stima che in 2017 solo oltre $90B è stata spesa su Cybersecurity. SID Deshpande, Principal Research Analyst di Gartner, è citato come dire che "il passaggio del settore al rilevamento e alla risposta... Invia un messaggio chiaro che la prevenzione è futile a meno che non sia legata a una capacità di rilevamento e risposta ". L'analisi e la risposta alle minacce sono una parte fondamentale del portafoglio di servizi di ogni organizzazione e possono essere consumate come servizi autonomi o come parte di Office 365 E5.
