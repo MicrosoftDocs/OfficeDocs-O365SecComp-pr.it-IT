@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una regola. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito.
-ms.openlocfilehash: 2944202bf0f44c1a46834dce580abaf4f04aa40b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230730"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478155"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
@@ -32,31 +32,36 @@ L'esempio riportato può essere applicato ad altre tipologie di informazioni sen
 Per esportare l'XML, è necessario [connettersi al Centro sicurezza e conformità tramite una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
   
 1. In PowerShell, digitare quanto segue per visualizzare le regole dell'organizzazione sullo schermo. Se non sono state create regole proprie, verranno visualizzate solo quelle predefinite con l'etichetta "Pacchetto di regole Microsoft".
-    
-     `Get-DlpSensitiveInformationTypeRulePackage`
-    
-2. Archiviare le regole dell'organizzazione in una variabile, digitando quanto segue consentirà di recuperare facilmente le regole in un secondo momento, nel formato adatto ai comandi di PowerShell remoti.
-    
-     `$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage`
+
+```powershell
+Get-DlpSensitiveInformationTypeRulePackage
+```    
+2. Archiviare le regole dell'organizzazione in una variabile digitando quanto segue. L'archiviazione di elementi in una variabile li rende subito disponibili in un secondo momento, in un formato adatto per i comandi remoti di PowerShell.
+
+```powershell    
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+```
     
 3. Creare un file con formattazione XML con tutti i dati, digitando quanto segue (`Set-content` è la parte del cmdlet che scrive nel file XML). 
     
-     `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
-    
-    > [!IMPORTANT]
-    > Assicurarsi di utilizzare il percorso in cui è effettivamente archiviato il pacchetto di regole. `C:\custompath\` è un segnaposto. 
+```powershell
+Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+```
+
+> [!IMPORTANT]
+> Assicurarsi di utilizzare il percorso in cui è effettivamente archiviato il pacchetto di regole. `C:\custompath\` è un segnaposto. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Individuare la regola da modificare nel file XML
 
-Con i cmdlet precedenti è stata esportata l'intera *raccolta di regole*, che include le regole predefinite fornite. Successivamente sarà necessario cercare in modo specifico la regola relativa alla carta di credito da modificare. 
+Con i cmdlet precedenti è stata esportata l'intera *raccolta di regole*, che include le regole predefinite fornite. Successivamente sarà necessario cercare in modo specifico la regola relativa al numero della carta di credito da modificare. 
   
 1. Usare un editor di testo per aprire il file esportato nella sezione precedente.
     
-2. Scorrere verso il basso il tag `<Rules>`, che corrisponde all'inizio della sezione che contiene le regole DLP (poiché il file XML contiene le informazioni relative all'intera raccolta di regole, quindi per accedere alle regole è necessario scorrere le altre informazioni contenute nella parte superiore). 
+2. Scorrere verso il basso fino al tag `<Rules>`, che corrisponde all'inizio della sezione che contiene le regole di prevenzione della perdita dei dati. Il file XML contiene le informazioni per l'intera raccolta di regole, quindi è necessario andare oltre le informazioni nella parte superiore per arrivare alle regole.
     
-3. Cercare *Func_credit_card* per trovare la definizione della regola relativa al numero della carta di credito. Nel file XML, i nomi delle regole non possono contenere spazi, pertanto gli spazi in genere vengono sostituiti con caratteri di sottolineatura e i nomi delle regole vengono a volte abbreviati. Ne è un esempio la regola relativa al numero di previdenza sociale negli Stati Uniti, abbreviata come "SSN". L'XML della regola relativa al numero della carta di credito non può essere simile all'esempio di codice riportato di seguito. 
+3. Cercare *Func_credit_card* per trovare la definizione della regola relativa al numero della carta di credito. Nel codice XML, i nomi delle regole non possono contenere spazi, quindi gli spazi in genere vengono sostituiti con caratteri di sottolineatura e i nomi delle regole vengono a volte abbreviati. Ne è un esempio la regola relativa al numero di previdenza sociale negli Stati Uniti, abbreviata in "SSN". Il codice XML della regola relativa al numero della carta di credito sarà simile all'esempio di codice seguente.
     
-  ```
+  ```xml
   <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
          patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
@@ -70,7 +75,7 @@ Con i cmdlet precedenti è stata esportata l'intera *raccolta di regole*, che in
       </Entity>
   ```
 
-Una volta individuata la definizione della regola relativa al numero della carta di credito nel file XML, è possibile personalizzare l'XML della regola in base alle proprie esigenze (per un aggiornamento sulle definizioni XML, vedere il [glossario](#term-glossary) al termine dell'argomento). 
+Dopo aver individuato la definizione della regola relativa al numero della carta di credito nel codice XML, è possibile personalizzare questo codice in base alle proprie esigenze. Come promemoria delle definizioni XML, vedere il [glossario dei termini](#term-glossary) alla fine di questo argomento.
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modificare il file XML o creare una nuova tipologia di informazioni sensibili
 
@@ -78,7 +83,7 @@ Prima di tutto, è necessario creare una nuova tipologia di informazioni sensibi
   
 Tutte le definizioni della regola XML sono basate sul seguente modello generale. È necessario copiare e incollare la definizione XML relativa al numero della carta di credito nel modello, modificare alcuni valori (vedere i segnaposto ". . ." in questo esempio), quindi caricare il codice XML modificato come nuova regola da usare nei criteri.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
@@ -105,9 +110,9 @@ Tutte le definizioni della regola XML sono basate sul seguente modello generale.
 </RulePackage>
 ```
 
-A questo punto, il risultato ha un aspetto simile all'XML seguente. Poiché i pacchetti delle regole e le regole vengono identificati in base a GUID univoci, è necessario generare due GUID: uno per il pacchetto delle regole e uno per sostituire il GUID per la regola relativa al numero della carta di credito. Il GUID per l'ID entità nel codice di esempio seguente è quello della definizione della regola predefinita da sostituire con una nuova. Esistono diversi modi per generare i GUID, ma è possibile farlo facilmente in PowerShell digitando **[guid]::NewGuid()**. 
+Il risultato è un codice simile al codice XML seguente. I pacchetti di regole e le regole vengono identificati da GUID univoci, quindi è necessario generare due GUID: uno per il pacchetto di regole e uno per sostituire il GUID per la regola sul numero della carta di credito. Il GUID per l'ID entità nel codice di esempio seguente è quello della definizione della regola predefinita, che dovrà essere sostituito con un nuovo GUID. Esistono diversi modi per generare i GUID. Uno dei più semplici consiste nel digitare **[guid]::NewGuid()** in PowerShell. 
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
@@ -147,9 +152,9 @@ A questo punto, il risultato ha un aspetto simile all'XML seguente. Poiché i pa
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Rimuovere il requisito prove corroborative da una tipologia di informazioni sensibili
 
-Una volta creata una nuova tipologia di informazioni sensibili, è possibile caricarla nel &amp;Centro sicurezza e conformità. Il passaggio successivo consiste nel rendere la regola più specifica. Modificare la regola di modo che appaia come un codice di 16 cifre, che superi il checksum e non richieda altre prove (corroborative) (ad esempio parole chiave). A questo scopo, è necessario rimuovere la parte del codice XML che verifica la presenza di prove corroborative. Queste ultime sono molto utili per ridurre i falsi positivi, in genere parole chiave o la data di scadenza accanto al numero della carta di credito. Se si rimuove tale prova, è necessario anche considerare il fattore di affidabilità quando viene individuato il numero di carta di credito abbassando il valore `confidenceLevel`, 85 nell'esempio.
+Una volta creato un nuovo tipo di informazioni sensibili, è possibile caricarlo nel Centro sicurezza e conformità. Il passaggio successivo consiste nel rendere la regola più specifica. Modificare la regola in modo che cerchi solo numeri di 16 cifre che superano il checksum, ma che non richieda altre prove (corroborative), ad esempio parole chiave. A questo scopo, è necessario rimuovere la parte del codice XML che cerca le prove corroborative. Queste ultime sono molto utili per ridurre i falsi positivi. In questo caso, in genere ci sono parole chiave o la data di scadenza accanto al numero della carta di credito. Se si rimuove questa prova, è necessario anche modificare il valore che indica quanto si ritiene probabile aver trovato un numero di carta di credito, abbassando il valore di `confidenceLevel`, ovvero 85 nell'esempio.
   
-```
+```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_credit_card" />
@@ -159,9 +164,9 @@ Una volta creata una nuova tipologia di informazioni sensibili, è possibile car
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>Cercare le parole chiave specifiche per l'organizzazione
 
-È anche possibile avere prove corroborative, ma con parole chiave diverse o aggiuntive, così come è possibile cambiare il percorso in cui trovare tali prove. È possibile modificare il `patternsProximity` per espandere o ridurre la finestra delle prove corroborative a 16 cifre. Per aggiungere parole chiave, è necessario definire un elenco di parole chiave e farvi riferimento all'interno della regola. Il codice XML seguente consente di aggiungere le parole chiave "carta aziendale" e "carta Contoso" in modo che i messaggi che contengono queste frasi (nei 150 caratteri del numero della carta di credito) verranno identificati come numero della carta di credito. 
+È anche possibile avere prove corroborative, ma con parole chiave diverse o aggiuntive, così come è possibile cambiare il percorso in cui trovare tali prove. È possibile modificare il `patternsProximity` per espandere o ridurre la finestra delle prove corroborative a 16 cifre. Per aggiungere parole chiave, è necessario definire un elenco di parole chiave e farvi riferimento all'interno della regola. Il codice XML seguente consente di aggiungere le parole chiave "carta aziendale" e "carta Contoso" in modo che i messaggi che contengono queste frasi (nei 150 caratteri del numero della carta di credito) verranno identificati come numero della carta di credito.
   
-```
+```xml
 <Rules>
 <! -- Modify the patternsProximity to be "150" rather than "300." -->
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
@@ -194,16 +199,20 @@ Per caricare una regola, attenersi alla seguente procedura.
 2. [Connettersi al Centro sicurezza e conformità tramite una sessione remota di PowerShell.](https://go.microsoft.com/fwlink/?linkid=799771)
     
 3. In PowerShell digitare quanto segue.
-    
-     `New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)`.
-    
-    > [!IMPORTANT]
-    > Assicurarsi di utilizzare il percorso in cui è effettivamente archiviato il pacchetto di regole. `C:\custompath\` è un segnaposto. 
+
+```powershell    
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte).
+```
+> [!IMPORTANT]
+> Assicurarsi di utilizzare il percorso in cui è effettivamente archiviato il pacchetto di regole. `C:\custompath\` è un segnaposto. 
   
 4. Per confermare, digitare Y, quindi premere **INVIO**.
-    
-5. Verificare che la nuova regola sia stata caricata digitando `Get-DlpSensitiveInformationType`, che ora visualizza il nome della regola.
-    
+5. Verificare che la nuova regola sia stata caricata e il nome visualizzato digitando:
+
+```powershell
+Get-DlpSensitiveInformationType
+```
+
 Per iniziare a usare la nuova regola per rilevare informazioni sensibili, è necessario aggiungere una regola a un criterio DLP. Per informazioni su come aggiungere una regola a un criterio, vedere [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md).
   
 ## <a name="term-glossary"></a>Glossario
@@ -216,7 +225,7 @@ Di seguito sono riportati i termini incontrati durante la procedura.
 |Funzioni|Il file XML fa riferimento a `Func_credit_card`, una funzione nel codice compilato. Le funzioni vengono utilizzate per eseguire regex complessi e verificare la corrispondenza del checksum alle regole predefinite. Poiché è ciò che accade nel codice, alcune variabili non vengono visualizzate nel file XML.|
 |IdMatch|L'identificatore per il quale i criteri cercano corrispondenze, ad esempio un numero di carta di credito.|
 |Elenchi di parole chiave|Il file XML fa anche riferimento a `keyword_cc_verification` e `keyword_cc_name`, elenchi di parole chiave, in cui si ricercano corrispondenze per l'entità all'interno di `patternsProximity`. Questi attualmente non vengono visualizzati nell'XML.|
-|Modello|Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Ciò include parole chiave, regex e funzioni interne (che eseguono attività come la verifica checksum). Le tipologie di informazioni sensibili possono avere più modelli con affidabilità univoche. Ciò è utile quando si crea una tipologia di informazioni sensibili che restituisce affidabilità elevata se sono disponibili prove corroborative e affidabilità minore se sono disponibili prove corroborative minime o nulle.|
+|Modello|Il modello contiene l'elenco di ciò che il tipo di informazione sensibile sta cercando. Questo include parole chiave, RegEx e funzioni interne, che eseguono attività come la verifica dei checksum. I tipi di informazioni sensibili possono avere più modelli con probabilità univoche. Questo è utile quando si crea un tipo di informazioni riservate che restituisce un livello elevato di probabilità se vengono trovate prove corroborative e un livello minore se vengono trovate poche o nessuna prova corroborativa.|
 |Modello confidenceLevel|Il livello di affidabilità che il motore DLP individui una corrispondenza. Tale livello di affidabilità è associato a una corrispondenza con i modelli se vengono soddisfatti i requisiti del modello. Questa misura di affidabilità è da prendere in considerazione quando si usano regole di flusso di posta (note anche come regole di trasporto) di Exchange.|
 |patternsProximity|Quando viene individuato qualcosa di simile al modello di un numero di carta di credito, `patternsProximity` è la prossimità al numero in cui verranno ricercate prove corroborative.|
 |recommendedConfidence|Il livello di affidabilità consigliato per la regola. Si applica a entità e affinità. Per le entità, il numero non viene mai valutato rispetto al valore `confidenceLevel` dei modelli. È semplicemente un suggerimento che consente di scegliere un livello di affidabilità se si desidera applicarne uno. Per le affinità, il valore `confidenceLevel` del modello deve essere maggiore del numero `recommendedConfidence` per richiamare un'azione di regola di flusso di posta. Il valore `recommendedConfidence` è il livello di affidabilità predefinito usato nella regola di flusso di posta che richiama un'azione. Se si desidera, è anche possibile modificare manualmente la regola di flusso di posta da richiamare in base al livello di affidabilità del modello.|
@@ -228,5 +237,3 @@ Di seguito sono riportati i termini incontrati durante la procedura.
 - [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
     
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
-    
-
