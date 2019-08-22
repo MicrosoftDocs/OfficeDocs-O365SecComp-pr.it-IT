@@ -206,8 +206,6 @@
 #### [Configurare un elenco personalizzato di URL bloccati](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### Attività di configurazione di amministratore dei ruoli
 #### [Attivare ATP per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
-#### [ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)
-## Gestire la sicurezza - Attività successive alla configurazione ATP
 ## [Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce](latest-attack-campaigns.md)
 ## [Ricerca in Microsoft 365](hunting.md)
 ## [Visualizzare e leggere i report ATP](view-reports-for-atp.md)
@@ -218,17 +216,18 @@
 ## [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
 ## [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)
 ### [Visualizzazioni di Esplora minacce](threat-explorer-views.md)
+### [Identificare i messaggi sospetti in Outlook.com e Outlook sul web](unverified-sender-feature.md)
 ## Integrazione per una maggiore sicurezza
 ### [Integrare Office 365 ATP con Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [Integrazione delle tecnologie per le informazioni di sicurezza e gestione degli eventi con Office 365 ATP](siem-integration-with-office-365-ti.md)
 ## Come funziona ATP
 ### [Funzionamento di Collegamenti sicuri ATP](how-atp-safe-links-works.md)
 ### [Funzionamento di Allegati sicuri di ATP](how-atp-safe-attachments-works.md)
-#### [Dettagli su recapito dinamico e anteprima](dynamic-delivery-and-previewing.md)
-### [Funzionamento di Analisi e risposta alle minacce](get-started-with-ti.md)
-#### [Informazioni su Analisi e risposta alle minacce](office-365-ti.md)
+### [Dettagli su recapito dinamico e anteprima](dynamic-delivery-and-previewing.md)
+### [ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)
+### [Funzionamento di analisi e risposta alle minacce](office-365-ti.md)
 ### [Funzionamento di Analisi e risposta alle minacce automatizzate](automated-investigation-response-office.md)
-### [Identificare i messaggi sospetti in Outlook.com e Outlook sul web](unverified-sender-feature.md)
+
 
 # Gestione degli incidenti di sicurezza
 ## [Intervento in caso di incidente di sicurezza di Office 365](office365-security-incident-response-overview.md)
