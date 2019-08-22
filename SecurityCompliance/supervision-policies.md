@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165652"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490763"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -144,6 +144,7 @@ Il modello di lingua offensivo monitora la posta elettronica per i sentimenti as
 | **Espressioni mascherate** | Espressioni per le quali il significato o la pronuncia è identica a quella di un altro termine più offensivo. |
 
 #### <a name="conditional-settings"></a>Impostazioni condizionali
+<a name="ConditionalSettings"> </a>
 
 Le condizioni che scegli per il criterio si applicano alle comunicazioni sia dalla posta elettronica sia dalle fonti di terze parti nell'organizzazione (come da Facebook o DropBox).
 

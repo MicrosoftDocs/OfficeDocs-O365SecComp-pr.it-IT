@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: c9c2660929037430535c9b612218563c51b1f056
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168134"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490793"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
@@ -61,7 +61,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     > [!NOTE]
-    > È importante mantenere intatte la struttura di directory e i nomi di file dei file corretti.  Tutte le convenzioni di denominazione utilizzate nei file e nelle cartelle scaricati consentono di associare nuovamente i file di remdiated all'originale.
+    > È importante mantenere la struttura di directory e i nomi di file dei file corretti. I nomi di percorso dei file e delle cartelle scaricati consentono di associare i file corretti ai file originali.  Se la struttura di directory o i nomi di file vengono modificati, verrà visualizzato il seguente `Cannot apply Error Remediation to the current Workingset`messaggio di errore:.
 
 8. A questo punto, tornare a Advanced eDiscovery e fare clic su **Next: upload files**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 

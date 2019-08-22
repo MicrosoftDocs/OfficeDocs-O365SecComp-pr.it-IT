@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168174"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490783"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
 
@@ -29,7 +29,7 @@ Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipenden
 
 > [!NOTE]
 > Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5.
-Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Seguire questa procedura per configurare e usare la supervisione nell'organizzazione di Office 365:
   
@@ -99,6 +99,7 @@ Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dime
     ```
 
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
+
 - [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gestire i gruppi di protezione abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
     - Assegnare al criterio un nome e una descrizione.
     - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere.
-    - Definire le condizioni dei criteri di supervisione.
+    - Definire le [condizioni](supervision-policies.md#ConditionalSettings)dei criteri di supervisione. È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
     - Scegliere se si desidera includere tipi di informazioni riservate. È possibile selezionare i tipi di informazioni riservate predefinite e personalizzate.
     - Scegliere se si desidera abilitare il modello di lingua offensivo. In questo modo viene rilevato il linguaggio inappropriato inviato o ricevuto nel corpo dei messaggi di posta elettronica.
     - Definire la percentuale di comunicazioni da esaminare.
@@ -196,7 +197,7 @@ Per configurare la revisione per Outlook desktop, è necessario l'indirizzo dell
 > [!NOTE]
 > Se un altro utente ha creato il criterio, è necessario ottenere questo indirizzo da loro per installare il componente aggiuntivo.
 
- **Per trovare l'indirizzo della cassetta postale di supervisione**
+**Per trovare l'indirizzo della cassetta postale di supervisione**
   
 1. Accedere al [centro conformità](https://compliance.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 

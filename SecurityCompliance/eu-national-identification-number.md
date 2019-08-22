@@ -3,19 +3,19 @@ title: Numero di identificazione nazionale dell'Unione europea
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154460"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490773"
 ---
 # <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
@@ -59,7 +59,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 numero d'identità austriaco
   
@@ -123,11 +123,11 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 EGN
   
-EGN
+EGN #
   
 numero nazionale bulgaro
   
@@ -135,21 +135,21 @@ numero nazionale
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
 nationalnumber
   
-BNN
+BNN #
   
 BNN
   
 numero ID personale
   
-personalidnumber#
+personalidnumber #
   
 единен граждански номер
   
@@ -157,7 +157,7 @@ grazhdanski nomer
   
 егн
   
-егн#
+егн #
   
 ## <a name="croatia"></a>Croazia
 
@@ -197,7 +197,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 numero di carta di identità
   
@@ -266,7 +266,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 codice di identificazione personale
   
@@ -278,7 +278,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber#
+personalidnumber #
   
 IK
   
@@ -350,7 +350,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 numero di identificazione personale
   
@@ -417,7 +417,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 numero di servizio pubblico personale
   
@@ -491,7 +491,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 codice personale
   
@@ -501,7 +501,7 @@ numero di certificato personale
   
 codice fiscale
   
-personalcodeno#
+personalcodeno #
   
 numero ID personale
   
@@ -519,7 +519,7 @@ codice ID personale
   
 codice fiscale
   
-## <a name="italy"></a>Italia
+## <a name="latvia"></a>Lettonia
 
 ### <a name="format"></a>Formato
 
@@ -567,7 +567,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 codice personale
   
@@ -575,7 +575,7 @@ numero di codice personale
   
 numero di certificato personale
   
-personalcodeno#
+personalcodeno #
   
 numero ID personale
   
@@ -632,7 +632,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 codice numerico personale
   
@@ -642,7 +642,7 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno#
+uniqueidentityno #
   
 codice personale.
   
@@ -697,23 +697,23 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 ID personale
   
 numero ID personale
   
-personalidno#
+personalidno #
   
 numero ID univoco
   
-personalidnumber#
+personalidnumber #
   
 chiave ID univoco
   
 codice ID personale
   
-uniqueidkey#
+uniqueidkey #
   
 codice singolo
   
@@ -727,11 +727,11 @@ ID personnelle
   
 personale di Numéro d'identification
   
-idpersonnelle#
+idpersonnelle #
   
 persönliche identifikationsnummer
   
-eindeutigeid#
+eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
@@ -778,7 +778,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 codice numerico personale
   
@@ -788,7 +788,7 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno#
+uniqueidentityno #
   
 Kodiċi numerai personali
   
@@ -839,7 +839,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 codice numerico personale
   
@@ -849,11 +849,11 @@ numero di servizio Citizen
   
 numero di identità univoco
   
-uniqueidentityno#
+uniqueidentityno #
   
 BSN
   
-BSN
+BSN #
   
 codice Numerieke di persoonlijke
   
@@ -912,7 +912,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 codice numerico personale
   
@@ -920,19 +920,19 @@ numero di identificazione univoco
   
 CNP
   
-CNP
+CNP #
   
 pin
   
-pin
+pin #
   
 numero assicurativo
   
-insurancenumber#
+insurancenumber #
   
 numero di identità univoco
   
-uniqueidentityno#
+uniqueidentityno #
   
 Cod numerico personale
   
@@ -946,11 +946,11 @@ număr identitate
   
 Număr identificare Personal
   
-număridentitate#
+număridentitate #
   
-codnumericpersonal#
+codnumericpersonal #
   
-numărpersonalunic#
+numărpersonalunic #
   
 ## <a name="slovakia"></a>Slovacchia
 
@@ -993,7 +993,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 numero di nascita
   
@@ -1003,9 +1003,9 @@ numero di identificazione personale
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
@@ -1013,7 +1013,7 @@ numero nazionale
   
 numero ID personale
   
-personalidnumber#
+personalidnumber #
   
 rč
   
@@ -1070,7 +1070,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 codice numerico personale
   
@@ -1080,7 +1080,7 @@ numero di registrazione univoco
   
 numero di identità univoco
   
-uniqueidentityno#
+uniqueidentityno #
   
 numero di cittadino Master univoco
   
@@ -1130,7 +1130,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 DNI
   
@@ -1148,19 +1148,19 @@ identità personale No
   
 numero di identità univoco
   
-nationalidno#
+nationalidno #
   
-UniqueId
+UniqueId #
   
-DNI
+DNI #
   
-nationalid#
+nationalid #
+  
+nie #
   
 nie
   
-nie
-  
-nienúmero#
+nienúmero #
   
 nie número
   
@@ -1172,9 +1172,9 @@ número Nacional Identidad
   
 DNI número
   
-dninúmero#
+dninúmero #
   
-identidadúnico#
+identidadúnico #
   
 ## <a name="sweden"></a>Svezia
 

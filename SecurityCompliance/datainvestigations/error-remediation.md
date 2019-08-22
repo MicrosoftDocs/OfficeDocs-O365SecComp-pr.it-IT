@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 45e4fb0651cc137a67cc5322bf5e874ea31df838
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "34547951"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490803"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correzione degli errori durante l'elaborazione dei dati per un'indagine
 
-La correzione degli errori consente ai ricercatori la possibilità di correggere i problemi relativi ai dati che impediscono l'elaborazione corretta del contenuto da parte dell'analisi dei dati (Preview). Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli investigatori possono scaricare i file con tale errore, rimuovere la protezione dalla password e caricare i file corretti.
+La correzione degli errori consente ai ricercatori la possibilità di correggere i problemi relativi ai dati che impediscono l'elaborazione corretta del contenuto da parte dell'analisi dei dati (Preview). Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli investigatori possono scaricare i file con tale errore, rimuovere la protezione tramite password e caricare i file corretti.
 
 Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi di analisi dei dati (Preview).
 
@@ -32,7 +32,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 >[!NOTE]
 >Se la procedura guidata per la correzione degli errori viene chiusa in qualsiasi momento durante la routine seguente, è possibile tornare alla sessione di correzione degli errori dalla scheda **elaborazione** selezionando **correzioni di errore** nel menu a discesa **Visualizza** .
 
-1. Nella scheda **elaborazione** di un caso di analisi dei dati (anteprima) selezionare **errori** nel menu a discesa **Visualizza** .
+1. Nella scheda **elaborazione** di un'analisi dei dati, selezionare **errori** dal menu a discesa **Visualizza** .
 
 2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o al tipo di file.  Nell'esempio seguente, viene rimediato un file protetto da password.
 
@@ -40,7 +40,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Correzione degli errori](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La sessione di correzione degli errori inizierà, iniziando con una fase di preparazione in cui i file con errore vengono copiati in una posizione sicura di Azure in modo che possano essere scaricati.
+    La sessione di correzione dei problemi inizia con una fase di preparazione in cui i file con errori vengono copiati in una posizione sicura di Azure in modo da poterli scaricare.
 
     ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -48,7 +48,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Scaricare file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Per scaricare i file, specificare il **percorso di destinazione per il download**. si tratta di un percorso del computer locale in cui deve essere scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Questo può essere modificato in base alle esigenze.
+5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Si tratta di un percorso del computer locale in cui deve essere scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Questo può essere modificato in base alle esigenze.
 
     >[!NOTE]
     >È consigliabile utilizzare un percorso di file locale anziché un percorso di rete remoto per ottenere prestazioni ottimali.
@@ -62,13 +62,13 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > In caso di problemi con questo comando, vedere [Troubleshoot AzCopy in Advanced eDiscovery](../compliance20/troubleshooting-azcopy.md).
+    > [!NOTE]
+    > In caso di problemi con questo comando, vedere [Troubleshoot AzCopy in Advanced eDiscovery](../compliance20/troubleshooting-azcopy.md).
 
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     
    > [!NOTE]
-    > È importante mantenere intatte la struttura di directory e i nomi di file dei file corretti.  Tutte le convenzioni di denominazione utilizzate nei file e nelle cartelle scaricati consentono di associare nuovamente i file di remdiated all'originale.
+    > È importante mantenere la struttura di directory e i nomi di file dei file corretti. I nomi di percorso dei file e delle cartelle scaricati consentono di associare i file corretti ai file originali.  Se la struttura di directory o i nomi di file vengono modificati, verrà visualizzato il seguente `Cannot apply Error Remediation to the current Evidenceset`messaggio di errore:.
 
 8. A questo punto, tornare a indagini sui dati (anteprima) e fare clic su **Avanti: carica file**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 
@@ -86,7 +86,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 ## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
 
-Quando vengono caricati file corretti, i metadati originali vengono mantenuti con l'eccezione dei campi seguenti: 
+Quando i file corretti vengono caricati, vengono conservati i metadati originali, ad eccezione dei campi seguenti: 
 
 - ExtractedTextSize
 - HasText
