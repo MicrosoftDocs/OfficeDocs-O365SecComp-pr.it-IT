@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 1f82af2c61138fd33f849a5cb13fcee1259cafd7
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230770"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478245"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza di Office 365 Advanced Compliance, che è disponibile come opzione indipendente e incluso in Office 365 E5 e Microsoft 365 E5 Compliance. Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
@@ -314,6 +314,7 @@ Per questi motivi, le indicazioni per la creazione di regole con diverse accurat
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati
 
 È possibile creare un'etichetta e quindi:
+<!-- what kind of label? -->
   
 - **Pubblicarla** in modo che gli utenti finali possano vedere e applicare manualmente l'etichetta al contenuto. 
     
@@ -450,12 +451,14 @@ Dopo aver creato un criterio di prevenzione della perdita dei dati nel Centro si
 - Messaggi di chat e canali di Microsoft Teams
     
 In seguito alla sincronizzazione del criterio con il percorso corretto, viene avviata la valutazione del contenuto e l'applicazione delle azioni.
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Valutazione dei criteri nei siti OneDrive for Business e SharePoint Online
 
 In tutti i siti SharePoint Online e in tutti quelli di OneDrive for Business, i documenti vengono modificati costantemente: vengono creati, modificati, condivisi e così via. Questo implica che in qualsiasi momento possono entrare in conflitto o diventare conformi a un criterio di prevenzione della perdita dei dati. Ad esempio, una persona può caricare un documento che non contiene informazioni riservate nel proprio sito del team, ma in seguito un'altra persona può modificarlo e aggiungervi informazioni riservate.
   
 Per questo motivo, i criteri di prevenzione della perdita dei dati controllano frequentemente in background la presenza di corrispondenze con i criteri, in una sorta di valutazione asincrona.
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>Funzionamento
  
@@ -463,7 +466,7 @@ Mentre vengono aggiunti o modificati documenti nei siti, il motore di ricerca es
   
 ![Diagramma che illustra come i criteri di prevenzione della perdita dei dati valutano il contenuto in modo asincrono](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-Infine, i documenti possono essere in conflitto con un criterio DLP ma possono anche diventare conformi a tale criterio. Ad esempio, se una persona aggiunge numeri di carta di credito a un documento, è possibile che un criterio DLP blocchi l'accesso a tale documento automaticamente. Tuttavia, se in un secondo momento l'utente elimina le informazioni riservate, l'azione (in questo caso, di blocco) viene automaticamente annullata durante la successiva valutazione del documento rispetto al criterio.
+<!-- conflict with a DLP policy is bad wording --> Infine, i documenti possono essere in conflitto con un criterio DLP ma possono anche diventare conformi a tale criterio. Ad esempio, se una persona aggiunge numeri di carta di credito a un documento, è possibile che un criterio DLP blocchi l'accesso a tale documento automaticamente. Tuttavia, se in un secondo momento l'utente elimina le informazioni riservate, l'azione (in questo caso, di blocco) viene automaticamente annullata durante la successiva valutazione del documento rispetto al criterio.
   
 I criteri di prevenzione della perdita dei dati valutano tutti i contenuti che possono essere indicizzati. Per altre informazioni sui tipi di file sottoposti per impostazione predefinita a ricerca per indicizzazione, vedere [Estensioni dei nomi di file sottoposti a ricerca per indicizzazione e tipi di file analizzati predefiniti in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
@@ -475,12 +478,14 @@ Quando un messaggio viene composto in Outlook, l'utente può visualizzare sugger
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Valutazione dei criteri nei programmi desktop di Office
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel, PowerPoint e Word dispongono della stessa funzionalità di SharePoint Online e OneDrive for Business che consente di identificare le informazioni riservate e applicare i criteri di prevenzione della perdita dei dati. Questi programmi di Office sincronizzano i propri criteri di prevenzione della perdita dei dati direttamente dall'archivio dei criteri centrale e quindi valutano continuamente i contenuti rispetto ai criteri di prevenzione della perdita dei dati quando gli utenti lavorano con documenti aperti da un sito incluso in un criterio.
   
 La valutazione dei criteri di prevenzione della perdita dei dati in Office è progettata per non influire sulle prestazioni dei programmi o sulla produttività degli utenti. Se questi ultimi sono impegnati su un documento di grandi dimensioni oppure il computer di un utente è occupato, potrebbe essere necessario attendere qualche secondo prima che venga visualizzato un suggerimento per i criteri.
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Valutazione dei criteri in Microsoft Teams
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 Quando si creano criteri di prevenzione della perdita dei dati che includono Microsoft teams come posizione, i criteri vengono sincronizzati dal Centro sicurezza e conformità di Office 365 con gli account utente e i messaggi di chat e canali di Microsoft Teams. A seconda di come vengono configurati i criteri di prevenzione della perdita dei dati, quando qualcuno tenta di condividere informazioni riservate in un messaggio di chat o canale di Microsoft Teams, è possibile bloccare o revocare il messaggio. Inoltre, i documenti che contengono informazioni riservate condivisi con utenti guest (utenti esterni), non potranno essere aperti da tali utenti. Per ulteriori informazioni, vedere [Prevenzione della perdita dei dati e Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Autorizzazioni
