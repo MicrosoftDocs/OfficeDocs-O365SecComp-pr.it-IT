@@ -3,7 +3,7 @@ title: Analisi delle minacce e risposta alle minacce in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/20/2019
+ms.date: 08/22/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: c99712553646a6ceff22005952289b2ca3e1dbf4
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478185"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566214"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
@@ -81,7 +81,7 @@ Nell'ambito dell'offerta di Office 365 Advanced Threat Protection piano 2, gli a
 Le funzionalità di ricerca e risposta alle minacce di Office 365 sono incluse in Office 365 Advanced Threat Protection Plan 2 e Enterprise E5. 
 
 > [!TIP]
-> Se l'organizzazione dispone di un abbonamento a Office 365 che non include queste funzionalità di analisi e di risposta alle minacce, è possibile acquistarle come componente aggiuntivo insieme a Office 365 Advanced Threat Protection. Per ulteriori informazioni sulle opzioni di piano, vedere [office 365 Platform Service Description: office 365 &amp; Security Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> Se l'organizzazione dispone di un abbonamento a Office 365 che non include queste funzionalità di analisi e di risposta alle minacce, è possibile acquistare Office 365 Advanced Threat Protection Plan 2 come componente aggiuntivo. Per ulteriori informazioni sulle opzioni di piano, vedere [Descrizione del servizio office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. In qualità di amministratore globale di Office 365, [https://admin.microsoft.com](https://admin.microsoft.com) passare a e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. 
     

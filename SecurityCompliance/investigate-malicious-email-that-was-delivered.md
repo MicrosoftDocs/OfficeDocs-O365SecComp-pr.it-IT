@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444871"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566224"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365
 
@@ -88,6 +88,9 @@ Verrà aperto il riquadro a comparsa, in cui sono posizionati sia l'anteprima de
 > Tenere presente che ' Preview ' è un ruolo e non un RoleGroup e che tale ruolo deve essere aggiunto successivamente a un RoleGroup.
 
 ![Riquadro a comparsa di Esplora minacce con collegamenti per il download e l'anteprima nella pagina.](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> Questa funzionalità non viene visualizzata per i messaggi di posta elettronica che non sono mai stati trovati nella cassetta postale di un utente, che può verificarsi se un messaggio di posta elettronica è stato eliminato o se il recapito non è Nei casi in cui i messaggi di posta elettronica sono stati eliminati dalle cassette postali degli utenti, gli amministratori visualizzeranno un errore che indica che la posta non è stata trovata.
 
 ### <a name="check-the-delivery-action-and-location"></a>Controllare l'azione e il percorso di recapito
 
