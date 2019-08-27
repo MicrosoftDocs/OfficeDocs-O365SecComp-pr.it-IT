@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365 e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: 3df1ee02cc7b31a8dd316bac5ccd4455c26922c5
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048188"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493167"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -53,7 +53,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
   
     È possibile scegliere una delle seguenti opzioni:
     
-    - **Ricerca guidata: questa opzione avvia una procedura guidata che consente di creare la ricerca. Le interfacce utente per selezionare i percorsi di contenuto e creare la query di ricerca sono identiche a quelle dell’opzione **Nuova ricerca**. 
+    - **Ricerca guidata:** questa opzione avvia una procedura guidata che consente di creare la ricerca. Le interfacce utente per selezionare i percorsi di contenuto e creare la query di ricerca sono identiche a quelle dell’opzione **Nuova ricerca**. 
     
     - **Nuova ricerca**: questa opzione visualizza un'interfaccia utente aggiornata per creare una ricerca. Questa è l'opzione predefinita se si fa clic su **Nuova ricerca**.
     
@@ -80,7 +80,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
        - **Percorsi**: scegliere i percorsi di contenuti in cui eseguire la ricerca.
     
-      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione.  Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Office 365 e le cassette postali di Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i Gruppi di Office 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
+      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Office 365 e le cassette postali di Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i Gruppi di Office 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
     
       - **Percorsi specifici**: usare questa opzione per eseguire ricerche in percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per un servizio Office 365 specifico, ad esempio in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, oppure eseguire una ricerca in percorsi specifici inclusi nei servizi di Office 365 visualizzati. 
     
@@ -109,11 +109,11 @@ Per cancellare i risultati o creare un'altra ricerca, fare clic su ![Icona Aggiu
 
 Sono disponibili due impostazioni di configurazione per l'anteprima dei risultati della ricerca. Dopo aver eseguito una nuova ricerca o aperto una ricerca esistente, fare clic su ** Singoli risultati ** per visualizzare le impostazioni di anteprima seguenti: 
   
-![Impostazioni di visualizzazione dell’anteprima risultati della ricerca](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Impostazioni di visualizzazione dell'anteprima risultati della ricerca](media/83519477-1c85-4442-8886-481f186fd758.png)
   
-1. **Visualizzare l’anteprima risultati automaticamente**: questa opzione visualizza i risultati della ricerca dopo l'esecuzione di una ricerca.
+1. **Visualizzare l'anteprima risultati automaticamente**: questa opzione visualizza i risultati della ricerca dopo l'esecuzione di una ricerca.
     
-2. **Visualizzare l’anteprima risultati manualmente**: questa impostazione visualizza i segnaposto nel riquadro dei risultati della ricerca e mostra il pulsante **Anteprima risultati** su cui è necessario fare clic per visualizzare i risultati della ricerca. Questa è l'impostazione predefinita. Consente di migliorare le prestazioni della ricerca evitando di visualizzare automaticamente i risultati della ricerca quando si apre una ricerca esistente. 
+2. **Visualizzare l'anteprima risultati manualmente**: questa impostazione visualizza i segnaposto nel riquadro dei risultati della ricerca e mostra il pulsante **Anteprima risultati** su cui è necessario fare clic per visualizzare i risultati della ricerca. Questa è l'impostazione predefinita. Consente di migliorare le prestazioni della ricerca evitando di visualizzare automaticamente i risultati della ricerca quando si apre una ricerca esistente. 
     
 Sono previsti limiti per il numero di elementi che è possibile visualizzare in anteprima. Per ulteriori informazioni, vedere [Limiti per la Ricerca contenuto](limits-for-content-search.md). 
   
@@ -179,7 +179,9 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
   
 [Eseguire una ricerca in una cassetta postale inattiva](#searching-inactive-mailboxes)
   
-[Visualizzare l’anteprima risultati della ricerca](#previewing-search-results)
+[Eseguire una ricerca in cassette postali disconnesse o con licenza rimossa](#searching-disconnected-or-de-licensed-mailboxes)
+
+[Visualizzare l'anteprima risultati della ricerca](#previewing-search-results)
   
 [Elementi parzialmente indicizzati](#partially-indexed-items)
   
@@ -222,7 +224,7 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
   
 - Durante l'esecuzione di una ricerca di contenuto, Office 365 controlla automaticamente la query di ricerca per individuare caratteri non supportati e operatori booleani che potrebbero non essere scritti in maiuscolo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o la restituzione di risultati indesiderati. Per altre informazioni sui caratteri non supportati controllati, vedere [Verificare la presenza di errori nella query Ricerca contenuto](check-your-content-search-query-for-errors.md).
     
-- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l’impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
+- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
   
 ### <a name="searching-onedrive-accounts"></a>Eseguire una ricerca negli account di OneDrive
 
@@ -303,19 +305,24 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
 
     ![Utilizzare la condizione Tipo di messaggio con il valore microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
-Si noti che le condizioni sono connesse logicamente alla query con parole chiave dall’operatore **AND**. Ciò significa che un elemento deve corrispondere sia alla query con parole chiave che alle condizioni di ricerca che devono essere restituite nei risultati della ricerca. Per altre informazioni, vedere la sezione Linee guida per l’uso di condizioni” in [Query con parole chiave e condizioni di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
-
+Le condizioni sono connesse logicamente alla query con parole chiave dall'operatore **AND**. Ciò significa che un elemento deve corrispondere sia alla query con parole chiave che alle condizioni di ricerca che devono essere restituite nei risultati della ricerca. Per altre informazioni, vedere la sezione Linee guida per l’uso di condizioni” in [Query con parole chiave e condizioni di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
 ### <a name="searching-inactive-mailboxes"></a>Eseguire una ricerca in una cassetta postale inattiva
 
 È possibile eseguire ricerche nelle cassette postali inattive in una ricerca contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile passare a **Governance dei dati**\>**Conservazione** nel Centro sicurezza e conformità e quindi fare clic su **Altro**![Puntini di sospensione della barra di spostamento](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**Cassette postali inattive**.
   
 Ecco alcuni aspetti da tenere presenti quando si eseguono ricerche nelle cassette postali inattive.
-  
-- Se una ricerca di contenuto include una cassetta postale dell'utente che viene resa inattiva, quando si esegue nuovamente la ricerca, questa continuerà a venire eseguita nella cassetta postale inattiva.
+
+- Se una ricerca di contenuto esistente include una cassetta postale dell'utente che viene resa inattiva, quando si esegue nuovamente la ricerca, questa continuerà a venire eseguita nella cassetta postale inattiva.
     
 - A volte un utente potrebbe avere una cassetta postale attiva e una cassetta postale inattiva con lo stesso indirizzo SMTP. In questo caso, la ricerca verrà eseguita solo nella cassetta postale selezionata come percorso per una ricerca di contenuto. In altre parole, se si aggiunge una cassetta postale di un utente a una ricerca, non è possibile supporre che la ricerca venga eseguita sia nella cassetta postale attiva che in quella inattiva. La ricerca viene eseguita solo nella cassetta postale aggiunta esplicitamente alla ricerca.
     
+- Per creare una ricerca contenuto per eseguire ricerche in una cassetta postale inattiva, è possibile usare PowerShell nel Centro sicurezza e conformità. A tal fine, è necessario pre-accodare un punto ( . ) all'indirizzo di posta elettronica della cassetta postale inattiva. Ad esempio, il comando seguente crea una ricerca di contenuto che esegue la ricerca in una cassetta postale inattiva con l'indirizzo di posta elettronica pavelb@contoso.onmicrosoft.com:
+
+   ``` 
+   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   ```
+
 - È consigliabile evitare di avere una cassetta postale attiva e una cassetta postale inattiva con lo stesso indirizzo SMTP. Se è necessario riutilizzare l'indirizzo SMTP assegnato a una cassetta postale inattiva, è consigliabile ripristinare la cassetta postale inattiva o ripristinarne il contenuto in una cassetta postale attiva, o nell'archivio della cassetta postale attiva, quindi eliminare la cassetta postale inattiva. Per ulteriori informazioni, vedere uno degli argomenti seguenti:
     
   - [Recuperare una cassetta postale inattiva in Office 365](recover-an-inactive-mailbox.md)
@@ -324,8 +331,19 @@ Ecco alcuni aspetti da tenere presenti quando si eseguono ricerche nelle cassett
     
   - [Eliminare una cassetta postale inattiva in Office 365](delete-an-inactive-mailbox.md)
 
-  
-### <a name="previewing-search-results"></a>Visualizzare l’anteprima risultati della ricerca
+### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Eseguire una ricerca in cassette postali disconnesse o con licenza rimossa
+
+Se la licenza di Exchange Online, o l'intera licenza di Office 365, viene rimossa da un account utente di Office 365 o di Azure Active Directory, la cassetta postale dell'utente diventa una *cassetta postale disconnessa*. Ciò significa che la cassetta postale non è più associata all'account utente. Ecco cosa succede quando si eseguono ricerche nelle cassette postali disconnesse:
+
+- Se la licenza viene rimossa da una cassetta postale, la cassetta postale non è più disponibile per la ricerca. 
+
+- Se una ricerca contenuto esistente include una cassetta postale in cui è stata rimossa la licenza, non verranno restituiti risultati della ricerca dalla cassetta postale disconnessa se si esegue di nuovo la ricerca contenuto.
+
+- Se si usa il cmdlet **New-ComplianceSearch** per creare una ricerca contenuto e si specifica una cassetta postale disconnessa come percorso di contenuto di Exchange in cui eseguire la ricerca, la ricerca contenuto non restituirà risultati della ricerca dalla cassetta postale disconnessa.
+
+Se è necessario conservare i dati in una cassetta postale disconnessa in modo che sia disponibile per la ricerca, è necessario applicare un blocco alla cassetta postale prima di rimuovere la licenza. In questo modo i dati vengono mantenuti e le cassette postali disconnesse sono disponibili per la ricerca finché non viene rimosso il blocco. Per altre informazioni sui blocchi, vedere [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+### <a name="previewing-search-results"></a>Visualizzare l'anteprima risultati della ricerca
 
 È possibile visualizzare l'anteprima dei tipi di file supportati nel riquadro di anteprima. Se un tipo di file non è supportato, è necessario scaricare una copia del file nel computer locale per visualizzarlo. I tipi di file seguenti sono supportati e possono essere visualizzati in anteprima nel riquadro risultati della ricerca.
   
