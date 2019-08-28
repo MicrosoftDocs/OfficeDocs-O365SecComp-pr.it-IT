@@ -1,7 +1,7 @@
 ---
 title: Collaborare con Microsoft Compliance Manager (anteprima)
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157868"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643308"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -205,7 +205,7 @@ A colpo d'occhio, è possibile visualizzare il titolo, il proprietario, la categ
     - **Si desidera copiare i dati da un gruppo esistente? (facoltativo):** attiva o disattiva il controllo per abilitare la copia del gruppo e quindi:
         - **Selezionare un gruppo (facoltativo):** Se è abilitata la copia di gruppo, selezionare il gruppo da cui copiare
             - **Dettagli sull'implementazione (facoltativa):** Selezionare per copiare i dettagli dell'implementazione nel nuovo gruppo
-            - **Piano di test & ulteriori informazioni (facoltativo):** Selezionare per copiare il piano di testing e ulteriori informazioni dettagliate sul nuovo gruppo
+            - **Piano di Test & ulteriori informazioni (facoltativo):** Selezionare per copiare il piano di testing e ulteriori informazioni dettagliate sul nuovo gruppo
             - **Documenti (facoltativo):** Selezionare per copiare i documenti nel nuovo gruppo
 
 3. Selezionare **Salva** per creare la valutazione.
@@ -223,7 +223,7 @@ A colpo d'occhio, è possibile visualizzare il titolo, il proprietario, la categ
 Quando si crea una valutazione, si ha la possibilità di copiare le informazioni da un gruppo esistente. In questo modo è possibile applicare le informazioni immesse nella valutazione copiata agli stessi controlli nella nuova valutazione. Ad esempio, se si dispone di un gruppo per tutte le valutazioni correlate a FFIEC nell'organizzazione, è possibile copiare le informazioni seguenti dalle valutazioni esistenti:
 
 - Dettagli sull'implementazione
-- Piano di testing & ulteriori informazioni
+- Piano di test & ulteriori informazioni
 - Documenti
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copia delle informazioni da una valutazione esistente a una nuova valutazione
@@ -237,7 +237,7 @@ Quando si crea una valutazione, si ha la possibilità di copiare le informazioni
     - **Selezionare un gruppo o aggiungere un nuovo gruppo (obbligatorio):** Scegliere **aggiungere un nuovo gruppo** e specificare un nome di gruppo univoco.
     - **Si desidera copiare i dati da un gruppo esistente? (facoltativo):** alternare il controllo a attivato per abilitare la copia del gruppo e quindi:- **selezionare un gruppo (facoltativo):** se la copia del gruppo è abilitata, selezionare il gruppo da cui copiare.
             - **Dettagli sull'implementazione (facoltativa):** Selezionare per copiare i dettagli dell'implementazione nel nuovo gruppo.
-            - **Piano di test & ulteriori informazioni (facoltativo):** Selezionare per copiare il piano di testing e ulteriori informazioni dettagliate sul nuovo gruppo.
+            - **Piano di Test & ulteriori informazioni (facoltativo):** Selezionare per copiare il piano di testing e ulteriori informazioni dettagliate sul nuovo gruppo.
             - **Documenti (facoltativo):** Selezionare per copiare i documenti nel nuovo gruppo.
 
 3. Selezionare **Salva** per creare la valutazione.

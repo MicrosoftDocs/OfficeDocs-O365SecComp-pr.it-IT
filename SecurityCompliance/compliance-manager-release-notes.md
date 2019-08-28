@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione di Microsoft Compliance Manager
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 196118972079f83ba2f6a59ce1ae1514d9616599
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152068"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643238"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 

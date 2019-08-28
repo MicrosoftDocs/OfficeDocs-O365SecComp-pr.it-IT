@@ -1,9 +1,9 @@
 ---
-title: Configurare i criteri di filtro delle connessioni
+title: Configurazione dei criteri di filtro delle connessioni, elenco Consenti, elenco bloccati
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600092"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643218"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
  
 La maggior parte degli utenti ha amici e partner commerciali affidabili. Può essere frustrante se dei loro messaggi di posta elettronica dovessero andare nella cartella di posta indesiderata o bloccati completamente dal filtro di protezione da posta indesiderata. Se si desidera verificare che la posta elettronica inviata da persone attendibili non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È anche possibile creare un elenco di mittenti bloccati, cioè un elenco di indirizzi IP, solitamente da spammer noti, da cui non si desidera mai ricevere messaggi.
   
+- Quando si pensa a *[Consenti elenchi](create-safe-sender-lists-in-office-365.md)*, tenere presente che i criteri di filtro delle connessioni riguardano gli *account attendibili* consentiti dal filtro. Questa operazione viene eseguita nell'interesse di filtrare in modo più accurato i messaggi di posta elettronica meno attendibili o non attendibili mantenendo ciò che è necessario. Un elenco di criteri di filtro delle connessioni consente di filtrare i pochi indirizzi IP attendibili da un pool di account e indirizzi IP molto più grande e di garantire un accesso più facile ai messaggi di posta elettronica attendibili.
+
+- Un criterio di filtro delle connessioni che crea un elenco di indirizzi bloccati può essere considerato come la cattura di meno o gli account non attendibili nel filtro.
+
  Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come garantire che un messaggio non venga contrassegnato come posta](https://go.microsoft.com/fwlink/p/?LinkId=534224) indesiderata o [blocca la posta indesiderata con il filtro di posta indesiderata di Office 365 per evitare problemi di falsi negativi](https://go.microsoft.com/fwlink/p/?LinkId=534225). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+
+> [!TIP]
+> Potrebbe essere necessario sospendere e leggere su come creare gli elenchi [Consenti (o mittenti attendibili)](create-safe-sender-lists-in-office-365.md) e [blocca](create-block-sender-lists-in-office-365.md).
   
 Il seguente video mostra i passaggi di configurazione per i criteri del filtro di connessione:
   

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048218"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643258"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -25,7 +25,7 @@ La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di p
 La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
-> Il limite per la quantità di messaggi restituiti è 50.000. Nella console, quando si esegue una query di grandi dimensioni, il conteggio dei messaggi del cmdlet Get-HistoricalSearch è superiore a 240.000.
+>  Il numero di messaggi verrà interrotto a 50 000 e il report rifletterà solo fino a questo importo nella console. Il cmdlet Get-HistoricalSearch di PowerShell cmdlet mostrerà il numero di messaggi vero.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
@@ -320,7 +320,7 @@ I report estesi disponibili (completati) sono disponibili nella sezione **report
 
 - **custom_data**: contiene dati relativi a tipi di evento specifici. Per ulteriori informazioni, vedere le sezioni seguenti.
 
-#### <a name="customdata-values"></a>valori di custom_data
+#### <a name="custom_data-values"></a>valori di custom_data
 
 Il campo **custom_data** per un `AGENTINFO` evento viene utilizzato da una vasta gamma di agenti di Exchange Online per registrare i dettagli di elaborazione dei messaggi. Alcuni degli agenti più interessanti sono descritti nelle sezioni seguenti.
 

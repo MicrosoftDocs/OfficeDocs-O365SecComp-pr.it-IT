@@ -1,7 +1,7 @@
 ---
 title: Metodologia del Punteggio di conformità
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: 148920fac825dab9f67a79bc11907b72218e47bc
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786641"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643228"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodologia del Punteggio di conformità (anteprima)
 
