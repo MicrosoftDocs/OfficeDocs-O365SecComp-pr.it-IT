@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786651"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649961"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager e GDPR
 
@@ -40,7 +40,7 @@ Cercare un account utente:
 
 2. Se il nome utente è stato immesso correttamente, selezionare **Cerca**.
 
-3. Per gli account utente non restituiti,' utente non trovato ' viene visualizzato nella pagina. Controllare le informazioni sull'indirizzo di posta elettronica dell'utente e apportare le correzioni in base alle esigenze. Per riprovare, selezionare **Cerca**.
+3. Per gli account utente non restituiti, la pagina Visualizza l' **utente non trovato**. Controllare le informazioni sull'indirizzo di posta elettronica dell'utente e apportare le correzioni in base alle esigenze. Per riprovare, selezionare **Cerca**.
 
 4. Per gli account utente restituiti, il testo del pulsante cambia dalla **ricerca** alla **cancellazione**. Ciò indica che l'account utente restituito è il contesto operativo per le funzioni aggiuntive e che queste funzioni sono valide per questo account utente.
 

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Office 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599922"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649911"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
-A partire da gennaio 2019, Microsoft sta attivando la registrazione di controllo delle cassette postali per impostazione predefinita per tutte le organizzazioni di Microsoft 365. Ciò significa che alcune azioni eseguite dai proprietari, dai delegati e dagli amministratori delle cassette postali vengono registrate automaticamente e che i record di controllo della cassetta postale corrispondente saranno disponibili quando si effettua la ricerca nel registro di controllo della cassetta postale. Prima che il controllo delle cassette postali fosse attivato per impostazione predefinita, è necessario abilitarlo manualmente per ogni cassetta postale dell'utente nell'organizzazione.
+A partire da gennaio 2019, Microsoft sta attivando la registrazione di controllo delle cassette postali per impostazione predefinita per tutte le organizzazioni di Office 365. Ciò significa che alcune azioni eseguite dai proprietari, dai delegati e dagli amministratori delle cassette postali vengono registrate automaticamente e che i record di controllo della cassetta postale corrispondente saranno disponibili quando si effettua la ricerca nel registro di controllo della cassetta postale. Prima che il controllo delle cassette postali fosse attivato per impostazione predefinita, è necessario abilitarlo manualmente per ogni cassetta postale dell'utente nell'organizzazione.
 
 Di seguito sono illustrati alcuni vantaggi del controllo delle cassette postali per impostazione predefinita:
 
@@ -36,8 +36,8 @@ Di seguito sono illustrati alcuni vantaggi del controllo delle cassette postali 
 
 - Si dispone di un criterio di controllo delle cassette postali coerente all'interno dell'organizzazione (perché si controllano le stesse azioni per tutte le cassette postali).
 
-> [!TIP]
-> La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto.
+> [!NOTE]
+>• La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto. <br><br>• Anche quando il controllo delle cassette postali è attivato per impostazione predefinita, è possibile notare che gli eventi di controllo delle cassette postali per alcuni utenti non vengono trovati nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di gestione delle attività di Office 365. Per ulteriori informazioni, vedere la sezione [altre informazioni](#more-information) in questo argomento.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Verificare che il controllo delle cassette postali per impostazione predefinita sia attivato
 
@@ -334,7 +334,23 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Per impostazione predefinita, i record del registro di controllo della cassetta postale vengono conservati per 90 giorni prima di essere eliminati. È possibile modificare il limite di validità dei record del registro di controllo utilizzando il parametro *AuditLogAgeLimit* sul cmdlet **Set-Mailbox** in Exchange Online PowerShell. Tuttavia, l'aumento di questo valore non consente di eseguire la ricerca di eventi precedenti a 90 giorni nel log di controllo di Microsoft 365.
+- Solo gli utenti con licenze E5 o cassette postali in cui la registrazione di controllo delle cassette postali è stata abilitata manualmente da un amministratore restituirà gli eventi del registro di controllo delle cassette postali nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite 365 l'API di gestione attività
+
+  Per recuperare le voci del registro di controllo delle cassette postali per gli utenti senza licenze E5, è possibile:
+
+  - Utilizzare i cmdlet seguenti in PowerShell di Exchange Online:
+
+    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) per eseguire una ricerca nel registro di controllo della cassetta postale per utenti specifici.
+
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) per eseguire una ricerca nel log di controllo delle cassette postali per utenti specifici e per inviare i risultati tramite posta elettronica ai destinatari specificati.
+
+  - Utilizzare l'interfaccia di amministrazione di Exchange (EAC) in Exchange Online per eseguire le operazioni seguenti:
+
+    - [Esportare i log di controllo delle cassette postali](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [Eseguire un rapporto di accesso non proprietario della cassetta postale](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- Per impostazione predefinita, i record del registro di controllo della cassetta postale vengono conservati per 90 giorni prima di essere eliminati. È possibile modificare il limite di validità dei record del registro di controllo utilizzando il parametro *AuditLogAgeLimit* sul cmdlet **Set-Mailbox** in Exchange Online PowerShell. Tuttavia, l'aumento di questo valore non consente di eseguire la ricerca di eventi precedenti a 90 giorni nel log di controllo di Office 365.
 
   Se si aumenta il limite di validità, è necessario utilizzare il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell per eseguire una ricerca nel registro di controllo della cassetta postale dell'utente per i record precedenti a 90 giorni.
 
@@ -361,6 +377,6 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - Non è possibile accedere direttamente a un record del registro di controllo nella cartella elementi ripristinabili. al contrario, si utilizza il cmdlet **Search-MailboxAuditLog** o si effettua una ricerca nel registro di controllo di Microsoft 365 per individuare e visualizzare i record di controllo delle cassette postali.
+    - Non è possibile accedere direttamente a un record del registro di controllo nella cartella elementi ripristinabili. al contrario, si utilizza il cmdlet **Search-MailboxAuditLog** o si effettua una ricerca nel registro di controllo di Office 365 per individuare e visualizzare i record di controllo delle cassette postali.
 
 - Se una cassetta postale viene conservata o assegnata a un criterio di conservazione nel centro conformità, i record del registro di controllo continuano a essere conservati per la durata definita dalla proprietà *AuditLogAgeLimit* della cassetta postale (90 giorni per impostazione predefinita). Per conservare i record del registro di controllo più a lungo per le cassette postali in blocco, è necessario aumentare il valore *AuditLogAgeLimit* della cassetta postale.

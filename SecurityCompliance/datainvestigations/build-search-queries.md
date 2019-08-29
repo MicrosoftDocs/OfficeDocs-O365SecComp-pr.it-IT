@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilizzare parole chiave e condizioni per limitare l'ambito della ricerca durante la ricerca di dati quando si utilizza l'analisi dei dati in Microsoft 365.
-ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 913306ff488d9cf2ba715c26eaa49f6f8e1473aa
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151058"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649941"
 ---
 # <a name="build-search-queries"></a>Creare query di ricerca
 
@@ -29,9 +29,9 @@ Durante la creazione di query di ricerca, è possibile utilizzare parole chiave 
 
 ## <a name="keyword-searches"></a>Ricerche di parole chiave
 
-Digitare una query di **parole** chiave nella casella Keywords della query di ricerca. È possibile specificare le parole chiave, le proprietà dei messaggi di posta elettronica, ad esempio le date di invio e ricezione, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti di SharePoint e OneDrive (non nei messaggi di posta elettronica) oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella **parole chiave** , tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
+Digitare una query di **parole** chiave nella casella Keywords della query di ricerca. È possibile specificare le parole chiave, le proprietà dei messaggi di posta elettronica, ad esempio le date di invio e ricezione, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e**, **o**, **non**e **vicino**. È inoltre possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei documenti di SharePoint e OneDrive (non nei messaggi di posta elettronica) oppure cercare documenti che sono stati condivisi esternamente. Se si lascia vuota la casella **parole chiave** , tutto il contenuto che si trova nei percorsi di contenuto specificato è incluso nei risultati della ricerca.
     
-In alternativa, è possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave o una frase di parole chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico (rappresentato come *c:s*) simile alla funzionalità all'operatore **or** nella query di ricerca creata. Questo significa che gli elementi che contengono qualsiasi parola chiave in qualsiasi riga verranno inclusi nei risultati della ricerca.
+In alternativa, è possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave o una frase di parole chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico (rappresentato come *c:s*) che è simile alla funzionalità all'operatore **or** nella query di ricerca creata. Questo significa che gli elementi che contengono qualsiasi parola chiave in qualsiasi riga vengono inclusi nei risultati della ricerca.
 
 ![Utilizzare l'elenco di parole chiave per ottenere statistiche su ogni parola chiave nella query](../media/KeywordListSearch.png)
 

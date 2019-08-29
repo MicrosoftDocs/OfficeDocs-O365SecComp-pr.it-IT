@@ -3,7 +3,7 @@ title: Creare una pianificazione per un report nel centro sicurezza &amp; e conf
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare una pianificazione per un report nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077602"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658087"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Creare una pianificazione per un report nel centro sicurezza &amp; e conformità
 
@@ -33,11 +33,29 @@ Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](rep
   
 1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **** \> **Dashboard**dei report.
     
-2. Scegliere un report. In questo esempio, verrà scelto il rapporto sullo stato di protezione dalle minacce.
+2. Scegliere uno dei seguenti report: 
+
+    - Corrispondenze di criteri DLP
+    - Regola di trasporto di Exchange
+    - False positive e sostituzioni DLP
+    - Tipi di file ATP di Office 365
+    - Disposizione del messaggio ATP di Office 365
+    - Malware rilevato nel messaggio di posta elettronica
+    - Malware principale
+    - Destinatari e mittenti principali
+    - Rilevamenti spoof
+    - Rilevamenti di posta indesiderata
+    - Posta elettronica inviata e ricevuta
+    - Incidenti DLP
+    - Rapporto di crittografia
+
+    In questo esempio, si sceglie il report dei tipi di file di protezione avanzata delle minacce.
     
-3. Nell'angolo in alto a sinistra del report scegliere **+ Crea pianificazione**.
+3. Nell'angolo in alto a sinistra del report scegliere **+ Crea pianificazione**. 
     
-    ![È possibile creare una pianificazione per i report nel centro &amp; sicurezza e conformità](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Creare una pianificazione](media/atpfiletypes-createschedule.png)
+
+    (Nota: non tutti i report dispongono del pulsante **+ Crea pianificazione** ).
   
     Verrà visualizzata la finestra di dialogo **Crea pianificazione** . 
     
