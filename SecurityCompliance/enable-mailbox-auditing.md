@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Office 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
-ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
+ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36649911"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676866"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -88,7 +88,7 @@ I tipi di accesso classificano l'utente che ha eseguito le azioni sottoposte a c
 
     - EDiscovery sul posto in Exchange Online.
 
-  - È possibile accedere alla cassetta postale utilizzando l' [Editor MAPI di Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=204086).
+  - È possibile accedere alla cassetta postale utilizzando l'editor MAPI di Microsoft Exchange Server.
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>Azioni delle cassette postali per gli utenti e le cassette postali condivise
 

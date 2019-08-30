@@ -1,21 +1,21 @@
 ---
 title: Gestione autorizzazioni gruppo di ruoli di amministratore in EOP
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date: 12/9/2016
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) per rendere un utente membro di un gruppo o di gruppi di ruoli per poter assegnargli autorizzazioni per effettuare attività amministrative specifiche. È inoltre possibile rimuovere un utente da un gruppo o da gruppi di ruoli utilizzando l'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 35f248bce26d28c8ab7465ff983629eb01db407b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Gli amministratori possono imparare a assegnare o rimuovere le autorizzazioni nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online Protection.
+ms.openlocfilehash: 7bd1a6959dd03a118608dfe45faa253fd56539d4
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150158"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676726"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Gestire autorizzazioni gruppo di ruoli di amministratore in Exchange Online Protection
   
@@ -24,46 +24,42 @@ In Microsoft Exchange Online Protection (EOP), è possibile utilizzare l'interfa
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Tempo stimato per il completamento: 5-10 minuti
-    
-- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "Utenti, contatti e gruppi di ruoli" nell'argomento [Autorizzazioni di funzionalità in EOP](feature-permissions-in-eop.md). 
-    
-- Alcune autorizzazione in Office 365 eseguono il mapping delle autorizzazioni dei gruppi di ruoli di amministratore di EOP. Per ulteriori informazioni, vedere la colonna "Ruolo in Exchange Online" nella sezione "Quali servizi sono disponibili per le mie autorizzazioni di Office 365?" in [Assegnazione di ruoli di amministratore](https://go.microsoft.com/fwlink/p/?LinkId=286708).
-    
-- Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere **Keyboard shortcuts in Exchange 2013**.
-    
+
+- Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "Utenti, contatti e gruppi di ruoli" nell'argomento [Autorizzazioni di funzionalità in EOP](feature-permissions-in-eop.md).
+
+- Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+
 > [!TIP]
-> Problemi? È possibile richiedere supporto nei forum di Exchange. I forum sono disponibili sui seguenti siti: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Problemi? Chiedere assistenza nel forum di [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
   
-## <a name="what-do-you-want-to-do"></a>Operazione desiderata
+## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Aggiunta dei membri a gruppi di ruoli tramite EAC
 
-### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Aggiunta dei membri a gruppi di ruoli tramite EAC
+1. Nell'interfaccia di amministrazione di Exchange, andare a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli a cui si desidera aggiungere l'utente o gli utenti](../media/ITPro-EAC-EditIcon.gif), quindi fare clic su **modifica** ![icona modifica.
 
-1. Nell'interfaccia di amministrazione di Exchange, accedere a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli a cui si desidera aggiungere l'utente o gli utenti](../media/ITPro-EAC-EditIcon.gif), quindi fare clic su **modifica** ![icona modifica.
-    
-2. In Membri, fare clic su **Aggiungi**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif). Viene visualizzata la finestra Seleziona membri.
-    
+2. In membri fare clic su **Aggiungi** ![icona](../media/ITPro-EAC-AddIcon.gif). Viene visualizzata la finestra Seleziona membri.
+
 3. Cercare l'utente o gli utenti da aggiungere o selezionarli dall'elenco.
-    
-4. Una volta selezionati gli utenti che si desidera aggiungere, fare clic su **Aggiungi**, quindi fare clic su **OK**. La finestra Seleziona membri si chiude.
-    
-5. L'utente sarà stato aggiunto al riquadro **Membri**. Fare clic su **Salva**.
-    
-    > [!NOTE]
-    > Dopo aver aggiunto o rimosso membri dal gruppo di ruoli, è possibile che gli utenti debbano disconnettersi e, successivamente, accedere nuovamente per visualizzare la modifica nei diritti amministrativi. 
-  
-### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Rimozione di membri da un gruppo di ruoli di amministratore tramite EAC
 
-1. Nell'interfaccia di amministrazione di Exchange, accedere a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli da cui si desidera rimuovere un utente o utenti e](../media/ITPro-EAC-EditIcon.gif)quindi fare clic su **modifica** ![icona modifica.
-    
-2. In Membri, selezionare l'utente o gli utenti che si desidera rimuovere, quindi fare clic su **Rimuovi**![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif).
-    
-3. Fare clic su **Salva** per salvare la modifica al gruppo di ruoli e tornare alla pagina **Ruoli amministratore**. Per verificare di aver rimosso correttamente l'utente dal gruppo di ruoli amministratore, assicurarsi che il membro non venga più visualizzato in Membri nel riquadro dei dettagli del gruppo di ruoli selezionato. 
-    
-    > [!NOTE]
-    > Dopo aver aggiunto o rimosso membri dal gruppo di ruoli, è possibile che gli utenti debbano disconnettersi e, successivamente, accedere nuovamente per visualizzare la modifica nei diritti amministrativi. 
+4. Una volta selezionati gli utenti che si desidera aggiungere, fare clic su **Aggiungi**, quindi fare clic su **OK**. La finestra Seleziona membri si chiude.
+
+5. L'utente sarà stato aggiunto al riquadro **Membri**. Fare clic su **Salva**.
+
+   > [!NOTE]
+   > Dopo aver aggiunto o rimosso membri dal gruppo di ruoli, è possibile che gli utenti debbano disconnettersi e, successivamente, accedere nuovamente per visualizzare la modifica nei diritti amministrativi. 
+  
+## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Rimozione di membri da un gruppo di ruoli di amministratore tramite EAC
+
+1. Nell'interfaccia di amministrazione di Exchange, andare a **ruoli di amministratore** **delle autorizzazioni** \> , fare clic sul gruppo di ruoli da cui si desidera rimuovere un utente o utenti e](../media/ITPro-EAC-EditIcon.gif)quindi fare clic su **modifica** ![icona modifica.
+
+2. In membri, selezionare l'utente o gli utenti che si desidera rimuovere e fare **** ![clic su Rimuovi](../media/ITPro-EAC-RemoveIcon.gif)icona Rimuovi.
+
+3. Fare clic su **Salva** per salvare la modifica al gruppo di ruoli e tornare alla pagina **Ruoli amministratore**. Per verificare di aver rimosso correttamente l'utente dal gruppo di ruoli amministratore, assicurarsi che il membro non venga più visualizzato in Membri nel riquadro dei dettagli del gruppo di ruoli selezionato.
+
+   > [!NOTE]
+   > Dopo aver aggiunto o rimosso membri dal gruppo di ruoli, è possibile che gli utenti debbano disconnettersi e, successivamente, accedere nuovamente per visualizzare la modifica nei diritti amministrativi.
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Autorizzazioni di funzionalità in EOP](feature-permissions-in-eop.md)
-  
-

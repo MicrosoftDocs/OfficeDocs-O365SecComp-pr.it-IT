@@ -10,52 +10,52 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: af773b1ecd3006f8751e353bb5233522f0dbad42
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: da0ac33d9b14b2a5d5f581604c0d204d41704df3
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150118"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676596"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
 
-Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta. 
+Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta.
   
 > [!NOTE]
->  È possibile spostare le impostazioni in modo affidabile solo da un'organizzazione (standard) autonoma di EOP a un'altra organizzazione standard di EOP o Enterprise CAL con servizi (Premium EOP), oppure da un'organizzazione Premium EOP a un'altra. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo. >  Queste istruzioni riguardano solo le organizzazioni con filtro EOP. Esistono ulteriori considerazioni sul trasferimento da un'organizzazione di Exchange Online a un'altra. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni. 
+> È possibile spostare le impostazioni in modo affidabile solo da un'organizzazione (standard) autonoma di EOP a un'altra organizzazione standard di EOP o Enterprise CAL con servizi (Premium EOP), oppure da un'organizzazione Premium EOP a un'altra. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo. <br><br> Queste istruzioni riguardano solo le organizzazioni con filtro EOP. Esistono ulteriori considerazioni sul trasferimento da un'organizzazione di Exchange Online a un'altra. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni.
   
 Nell'esempio seguente, Contoso, Ltd. è stato unito a Contoso Suite. Nella figura seguente viene illustrato il processo di trasferimento di domini, utenti e gruppi di posta e impostazioni dall'organizzazione EOP di origine (contoso.onmicrosoft.com) all'organizzazione EOP di destinazione (contososuites.onmicrosoft.com):
   
 ![Spostare le impostazioni e i domini di Exchange Online Protection (EOP)](../media/EOP-Move-domains-and-settings.jpg)
   
 Durante il trasferimento di domini da un'organizzazione a un'altra, la difficoltà consiste nel fatto che un dominio verificato non può esistere in due organizzazioni nello stesso momento. I passaggi seguenti consentono di comprendere meglio questo concetto.
-      
+
 ## <a name="step-1-collect-data-from-the-source-organization"></a>Passaggio 1: Raccogliere i dati dall'organizzazione di origine
 
 Per ricreare l'organizzazione di origine nell'organizzazione di destinazione, assicurarsi di aver raccolto e archiviato le informazioni seguenti relative all'organizzazione di origine:
   
 - Domini
-    
+
 - Utenti di posta elettronica
-    
+
 - Gruppi
-    
+
 - Filtri contenuti anti-spam
-    
+
 - Filtri contenuti antimalware
-    
+
 - Connettori
-    
+
 - Regole del flusso di posta (note anche come regole di trasporto)
-    
-    > [!NOTE]
-    > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP. 
+
+  > [!NOTE]
+  > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP.
   
-Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare Windows PowerShell remoto. Per connettersi a EOP utilizzando Windows PowerShell remoto, vedere [Connessione a Exchange Online Protection tramite PowerShell remota](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare Windows PowerShell remoto. Per connettersi a PowerShell di Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
-Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in un file XML da importare nel tenant di destinazione. In generale, è possibile eseguire il piping dell'output del cmdlet **Get** per ogni impostazione per il cmdlet **Export-Clixml** in modo da salvare le impostazioni nel file XML, come illustrato nell'esempio di codice seguente. 
+Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in un file XML da importare nel tenant di destinazione. In generale, è possibile eseguire il piping dell'output del cmdlet **Get** per ogni impostazione per il cmdlet **Export-Clixml** in modo da salvare le impostazioni nel file XML, come illustrato nell'esempio di codice seguente.
   
-Dopo aver eseguito la connessione a Windows PowerShell remoto, creare una directory denominata Esportazione in un percorso facile in cui trovare e modificare tale directory. Esempio:
+In PowerShell di Exchange Online, creare una directory denominata Export in una posizione facile da trovare e cambiare in quella directory. Ad esempio:
   
 ```Powershell
 mkdir C:\EOP\Export
@@ -69,7 +69,6 @@ Lo script seguente può essere utilizzato per raccogliere tutti gli utenti di po
   
 ```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
-
 ```
 
 ```Powershell
@@ -150,7 +149,7 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 Aggiungere i domini all'organizzazione di destinazione utilizzando lo script seguente. Copiare e incollare il testo in un editor di testo come Blocco note, salvare lo script comeC:\EOP\Export\Add_Domains.ps1 ed eseguire il comando riportato di seguito:
   
 ```Powershell
-&amp; "C:\EOP\Export\Add_Domains.ps1"
+& "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 Questi domini non saranno verificati e non possono essere utilizzati per instradare la posta, ma dopo l'aggiunta dei domini, è possibile raccogliere le informazioni necessarie per verificare i domini ed eventualmente aggiornare i record MX per il nuovo tenant.
@@ -167,24 +166,23 @@ connect-msolservice -credential $msolcred
 $Domains = Import-Clixml ".\Domains.xml"
 Foreach ($domain in $Domains) {
     New-MsolDomain -Name $domain.Name
-} 
-
+}
 ```
 
-A questo punto, è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Microsoft 365 dell'organizzazione di destinazione, in modo da poter verificare rapidamente i domini quando arriva il momento:
+A questo punto è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Microsoft 365 dell'organizzazione di destinazione, in modo da poter verificare rapidamente i domini quando arriva il momento:
   
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 all' [https://portal.office.com](https://portal.office.com)indirizzo.
-    
+
 2. Fare clic su **Domini**.
-    
+
 3. Fare clic su ciascun collegamento di **avvio dell'installazione** per poi procedere con l'installazione guidata. 
-    
+
 4. Nella pagina relativa alla **conferma della proprietà**, per **visualizzare le istruzioni dettagliate per eseguire questa procedura con**, selezionare **Istruzioni generali**.
-    
+
 5. Registrare il record MX o il record TXT che verrà utilizzato per verificare il dominio e completare l'installazione guidata.
-    
+
 6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di record DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
-    
+
 ## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda 
 
 Durante il trasferimento dei domini da un tenant a un altro, sarà necessario eliminare i domini dall'organizzazione di origine e verificarli nell'organizzazione di destinazione. Durante questo periodo, non sarà possibile instradare la posta attraverso EOP.
@@ -236,21 +234,20 @@ write-host "Removing $Domain_count domains."
 Foreach ($Domain in $Domains) {
 write-host $Domain.Name
 Remove-MsolDomain -DomainName $Domain.Name -Force
-} 
-
+}
 ```
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Passaggio 5: Verificare i domini dell'organizzazione di destinazione
 
 1. Accedere all'interfaccia di amministrazione all'indirizzo [https://portal.office.com](https://portal.office.com).
-    
+
 2. Fare clic su **Domini**.
-    
+
 3. Fare clic su ciascun collegamento di **avvio dell'installazione** per il dominio di destinazione e procedere con l'installazione guidata. 
-    
+
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Passaggio 6: Aggiungere utenti e gruppi di posta all'organizzazione di destinazione
 
-Una procedura ottimale per EOP consiste nell'utilizzare Azure Active Directory per sincronizzare l'Active Directory locale con il tenant di destinazione. Per ulteriori informazioni su questa operazione, vedere "Utilizzare la sincronizzazione della directory per gestire gli utenti di posta" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md). È anche possibile utilizzare lo script seguente per ricreare gli utenti e i gruppi dal tenant di origine. Nota: Non è possibile spostare le password degli utenti. Le password dei nuovi utenti vengono create e salvate nel file denominato UsersAndGroups.ps1. Per ulteriori informazioni sulla reimpostazione della password, vedere [Reimpostare la password di un utente](https://office.microsoft.com/en-us/office365-suite-help/reset-a-user-s-password-HA102816058.aspx).
+Una procedura ottimale per EOP consiste nell'utilizzare Azure Active Directory per sincronizzare l'Active Directory locale con il tenant di destinazione. Per ulteriori informazioni su questa operazione, vedere "Utilizzare la sincronizzazione della directory per gestire gli utenti di posta" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md). È anche possibile utilizzare lo script seguente per ricreare gli utenti e i gruppi dal tenant di origine. Nota: Non è possibile spostare le password degli utenti. Le password dei nuovi utenti vengono create e salvate nel file denominato UsersAndGroups.ps1.
   
 Per utilizzare questo script, copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come C:\EOP\Export\Add_Users_and_Groups.ps1 ed eseguire il comando riportato di seguito:
   
@@ -275,8 +272,8 @@ function makeparam ([string]$ParamName, [string[]] $ParamValue) {
         }
         $FormattedParam = $FormattedParam.TrimEnd(",")
     }
-    Return $FormattedParam       
- } 
+    Return $FormattedParam
+ }
 #****************************************************************************
 # Variables
 #****************************************************************************
@@ -302,11 +299,11 @@ if($MailUsersCount -gt 0){
         $MailUsersCmdlet += makeparam "Alias" $MailUser.Alias
         $MailUsersCmdlet += makeparam "MicrosoftOnlineServicesID" $MailUser.MicrosoftOnlineServicesID
         $MailUsersCmdlet += makeparam "ExternalEmailAddress" $MailUser.ExternalEmailAddress
-        
+
         # Generate a new 10 character password
         $NewPassword = ""
         1..10 | ForEach { $NewPassword = $NewPassword + [char]$rand.next(40,127) }
-        
+
         $MailUsersCmdlet += " -Password (ConvertTo-SecureString -String '$NewPassword' -AsPlainText -Force)"
         Add-Content $outfile "`n$MailUsersCmdlet"
     }
@@ -327,7 +324,7 @@ if($DistributionGroupsCount -gt 0){
         $DistributionGroupsCmdlet += makeparam "Alias" $DistributionGroup.Alias
         $DistributionGroupsCmdlet += makeparam "DisplayName" $DistributionGroup.DisplayName
         $DistributionGroupsCmdlet += makeparam "ManagedBy" $DistributionGroup.ManagedBy
-        
+
         $DistributionGroupsCmdlet += makeparam "Notes" $DistributionGroup.Notes
         $DistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DistributionGroup.PrimarySmtpAddress
         $DistributionGroupsCmdlet += makeparam "Type" $DistributionGroup.Type
@@ -357,7 +354,7 @@ if($SecurityGroupsCount -gt 0){
         $SecurityGroupsCmdlet += makeparam "Alias" $SecurityGroup.Alias
         $SecurityGroupsCmdlet += makeparam "DisplayName" $SecurityGroup.DisplayName
         $SecurityGroupsCmdlet += makeparam "ManagedBy" $SecurityGroup.ManagedBy
-        
+
         $SecurityGroupsCmdlet += makeparam "Notes" $SecurityGroup.Notes
         $SecurityGroupsCmdlet += makeparam "PrimarySmtpAddress" $SecurityGroup.PrimarySmtpAddress
         $SecurityGroupsCmdlet += makeparam "Type" $SecurityGroup.Type
@@ -398,11 +395,11 @@ If((Get-PSSession).ComputerName.Contains("ps.protection")) {
             $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications 
             Add-Content $outfile "`n$DynamicDistributionGroupsCmdlet"
         }
-    
-    }else{ 
+
+    }else{
         Write-Host "No Dynamic Distribution Groups to add."
     }
-} 
+}
 #****************************************************************************
 # Add Mail Contacts
 #****************************************************************************
@@ -432,8 +429,8 @@ If((Get-PSSession).ComputerName.Contains("ps.protection")) {
             $MailContactsCmdlet += makeparam "Alias" $MailContact.Alias
             Add-Content $outfile "`n$MailContactsCmdlet"
         }
-    
-    }else{ 
+
+    }else{
         Write-Host "No Mail Contacts to add."
     }
 }
@@ -453,8 +450,8 @@ If((Get-PSSession).ComputerName.Contains("ps.protection")) {
         }
         $FormattedParam = $FormattedParam.TrimEnd(",")
     }
-    Return $FormattedParam       
- } 
+    Return $FormattedParam
+ }
 #****************************************************************************
 # Variables
 #****************************************************************************
@@ -477,11 +474,11 @@ if($MailUsersCount -gt 0){
         $MailUsersCmdlet += makeparam "Alias" $MailUser.Alias
         $MailUsersCmdlet += makeparam "MicrosoftOnlineServicesID" $MailUser.MicrosoftOnlineServicesID
         $MailUsersCmdlet += makeparam "ExternalEmailAddress" $MailUser.ExternalEmailAddress
-        
+
         # Generate a new 10 character password
         $NewPassword = ""
         1..10 | ForEach { $NewPassword = $NewPassword + [char]$rand.next(40,127) }
-        
+
         $MailUsersCmdlet += " -Password (ConvertTo-SecureString -String '$NewPassword' -AsPlainText -Force)"
         Add-Content $outfile "`n$MailUsersCmdlet"
     }
@@ -499,7 +496,7 @@ if($DistributionGroupsCount -gt 0){
         $DistributionGroupsCmdlet += makeparam "Alias" $DistributionGroup.Alias
         $DistributionGroupsCmdlet += makeparam "DisplayName" $DistributionGroup.DisplayName
         $DistributionGroupsCmdlet += makeparam "ManagedBy" $DistributionGroup.ManagedBy
-        
+
         $DistributionGroupsCmdlet += makeparam "Notes" $DistributionGroup.Notes
         $DistributionGroupsCmdlet += makeparam "PrimarySmtpAddress" $DistributionGroup.PrimarySmtpAddress
         $DistributionGroupsCmdlet += makeparam "Type" $DistributionGroup.Type
@@ -526,7 +523,7 @@ if($SecurityGroupsCount -gt 0){
         $SecurityGroupsCmdlet += makeparam "Alias" $SecurityGroup.Alias
         $SecurityGroupsCmdlet += makeparam "DisplayName" $SecurityGroup.DisplayName
         $SecurityGroupsCmdlet += makeparam "ManagedBy" $SecurityGroup.ManagedBy
-        
+
         $SecurityGroupsCmdlet += makeparam "Notes" $SecurityGroup.Notes
         $SecurityGroupsCmdlet += makeparam "PrimarySmtpAddress" $SecurityGroup.PrimarySmtpAddress
         $SecurityGroupsCmdlet += makeparam "Type" $SecurityGroup.Type
@@ -564,10 +561,10 @@ if($DynamicDistributionGroupsCount -gt 0){
         $DynamicDistributionGroupsCmdlet += makeparam "SendModerationNotifications" $DynamicDistributionGroup.SendModerationNotifications 
         Add-Content $outfile "`n$DynamicDistributionGroupsCmdlet"
     }
-    
-}else{ 
+
+}else{
     Write-Host "No Dynamic Distribution Groups to add."
-} 
+}
 #****************************************************************************
 # Add Mail Contacts
 #****************************************************************************
@@ -594,11 +591,10 @@ if($MailContactsCount -gt 0){
         $MailContactsCmdlet += makeparam "Alias" $MailContact.Alias
         Add-Content $outfile "`n$MailContactsCmdlet"
     }
-    
-}else{ 
-    Write-Host "No Mail Contacts to add."
-} 
 
+}else{
+    Write-Host "No Mail Contacts to add."
+}
 ```
 
 ## <a name="step-7-add-protection-settings-to-the-target-organization"></a>Passaggio 7: Aggiungere impostazioni di protezione all'organizzazione di destinazione
@@ -630,7 +626,7 @@ Questo script consente di importare i file XML e creare un file di script Window
         }
         $FormattedParam = $FormattedParam.TrimEnd(",")
     }
-    Return $FormattedParam       
+    Return $FormattedParam
  }
 #****************************************************************************
 # Variables
@@ -711,7 +707,7 @@ if($HostedContentFilterPolicyCount -gt 0){
         $HostedContentFilterRuleCmdlet += makeparam "Priority" $HostedContentFilterRule.Priority
         $HostedContentFilterRuleCmdlet += makeparam "RecipientDomainIs" $HostedContentFilterRule.RecipientDomainIs
         $HostedContentFilterRuleCmdlet += makeparam "SentTo" $HostedContentFilterRule.SentTo
-        $HostedContentFilterRuleCmdlet += makeparam "SentToMemberOf" $HostedContentFilterRule.SentToMemberOf        
+        $HostedContentFilterRuleCmdlet += makeparam "SentToMemberOf" $HostedContentFilterRule.SentToMemberOf
         Add-Content $outfile "`n$HostedContentFilterRuleCmdlet"
     }
  }else{
@@ -727,7 +723,8 @@ if($HostedContentFilterPolicyCount -gt 0){
     ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicys) {
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
-        $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients" $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundAdditionalRecipients 
+        $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
+        $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundAdditionalRecipients 
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundMail" $HostedOutboundSpamFilterPolicy.BccSuspiciousOutboundMail
         $HostedOutboundSpamFilterPolicyCmdlet += " -Confirm:`$False"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "NotifyOutboundSpam" $HostedOutboundSpamFilterPolicy.NotifyOutboundSpam
@@ -752,7 +749,7 @@ if($HostedContentFilterPolicyCount -gt 0){
         $HostedConnectionFilterPolicyCmdlet += makeparam "EnableSafeList" $HostedConnectionFilterPolicy.EnableSafeList
         $HostedConnectionFilterPolicyCmdlet += makeparam "IPAllowList" $HostedConnectionFilterPolicy.IPAllowList
         $HostedConnectionFilterPolicyCmdlet += makeparam "IPBlockList" $HostedConnectionFilterPolicy.IPBlockList
-        
+
         Add-Content $outfile "`n$HostedConnectionFilterPolicyCmdlet"
     }
  }else{
@@ -838,7 +835,7 @@ if($InboundConnectorCount -gt 0){
         $InboundConnectorCmdlet = "New-InboundConnector"
         $InboundConnectorCmdlet += makeparam "Name" $InboundConnector.Name
         $InboundConnectorCmdlet += makeparam "SenderDomains" $InboundConnector.SenderDomains
-        
+
         If($InboundConnector.AssociatedAcceptedDomains.Count -gt 0) {
             If($InboundConnector.AssociatedAcceptedDomains[0].Contains("/")) {
                 # This connector was created in an EOP Standard tenant
@@ -853,7 +850,7 @@ if($InboundConnectorCount -gt 0){
                 $InboundConnectorCmdlet += makeparam "AssociatedAcceptedDomains" $InboundConnector.AssociatedAcceptedDomains
             }
         }
-        
+
         $InboundConnectorCmdlet += makeparam "CloudServicesMailEnabled" $InboundConnector.CloudServicesMailEnabled 
         $InboundConnectorCmdlet += makeparam "Comment" $InboundConnector.Comment 
         $InboundConnectorCmdlet += " -Confirm:`$False"
@@ -919,12 +916,9 @@ if($HostedContentFilterPolicyCount -gt 0){
     }
  }else{
     Write-Host "No Domains to add."
- } 
- 
+ }
 ```
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Passaggio 8: Ripristinare le impostazioni DNS per interrompere l'accodamento della posta
 
-Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti vengano accodati alla posta durante la transizione, è necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per ulteriori informazioni sulla configurazione DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
-  
-
+Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti vengano accodati alla posta durante la transizione, è necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS in qualsiasi provider di hosting DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

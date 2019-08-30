@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840888"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675457"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -237,7 +237,7 @@ E se un utente tenta di salvare il contenuto cui è applicata l’etichetta in u
 Affinché le etichette di riservatezza possano utilizzare WIP, è necessario eseguire prima i prerequisiti descritti di seguito: [Come Windows Information Protection protegge i file con un'etichetta di riservatezza](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Questo argomento illustra i prerequisiti seguenti:
 
 - Assicurarsi di eseguire Windows 10 versione 1809 o successive.
-- [Configurare Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started), che analizza il contenuto di un'etichetta e applica la relativa protezione WIP. ATP esegue alcune operazioni in modo indipendente da WIP, ad esempio la segnalazione di anomalie.
+- [Configurare Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), che analizza il contenuto di un'etichetta e applica la relativa protezione WIP. ATP esegue alcune operazioni in modo indipendente da WIP, ad esempio la segnalazione di anomalie.
 - Creare un criterio di Windows Information Protection (WIP) valido per i dispositivi endpoint. È possibile farlo in una di queste posizioni:
     - [Creare un criterio di Windows Information Protection (WIP) con MDM tramite il portale di Azure per Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Creare e distribuire un criterio di Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
@@ -267,7 +267,7 @@ Per ulteriori informazioni sulla protezione di SDK di Microsoft Information Prot
 
 ## <a name="permissions"></a>Autorizzazioni
 
-I membri del team di conformità che creano un'etichetta di riservatezza necessitano delle autorizzazioni per il Centro conformità Microsoft 365, il Centro sicurezza Microsoft 365 o il Centro sicurezza e conformità di Office 365. Per impostazione predefinita, l'amministratore del tenant avrà accesso a queste interfacce di amministrazione e potrà fornire ai responsabili della conformità e ad altri utenti l'accesso, senza concedere tutte le autorizzazioni di un amministratore tenant. Per eseguire questa operazione, è consigliabile andare sulla pagina **Autorizzazioni di uno di questi interfacce di amministrazione, quindi aggiungere membri al gruppo di ruoli di **Amministratore di conformità** o Amministratore della sicurezza**.
+I membri del team di conformità che creano un'etichetta di riservatezza necessitano delle autorizzazioni per il Centro conformità Microsoft 365, il Centro sicurezza Microsoft 365 o il Centro sicurezza e conformità di Office 365. Per impostazione predefinita, l'amministratore del tenant avrà accesso a queste interfacce di amministrazione e potrà fornire ai responsabili della conformità e ad altri utenti l'accesso, senza concedere tutte le autorizzazioni di un amministratore tenant. Per eseguire questa operazione, è consigliabile andare sulla pagina **Autorizzazioni** di uno di questi interfacce di amministrazione, quindi aggiungere membri al gruppo di ruoli di **Amministratore di conformità** o **Amministratore della sicurezza**.
 
 Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](grant-access-to-the-security-and-compliance-center.md).
 

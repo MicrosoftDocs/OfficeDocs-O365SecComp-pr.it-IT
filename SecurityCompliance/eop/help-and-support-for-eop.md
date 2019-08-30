@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599662"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676766"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -48,40 +48,38 @@ Per ulteriori informazioni sull'utilità del Supporto Premier per l'ottimizzazio
 ### <a name="ask-for-help-on-the-web"></a>Richiedere assistenza sul Web
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-    
+
 2. Andare a **Supporto** \> **Richiedi l'assistenza clienti** \> **Nuova richiesta di assistenza**
-    
+
 3. Utilizzare il modulo per aggiungere informazioni relative al problema, cercare soluzioni ai problemi precedenti oppure allegare i registri o i file correlati.
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>Richiedere assistenza tramite il telefono
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-    
+
 2. Per i problemi generali dei prodotti andare nella pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto tecnico**.
-    
+
     Per le domande antecedenti all'acquisto di EOP o domande su fatturazione e sottoscrizioni, andare alla pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto per la sottoscrizione e la fatturazione**.
-    
+
 3. Utilizzare Virtual Agent di Microsoft Office 365 al fine di ricercare il numero di telefono più appropriato.
-    
+
 ## <a name="support-telephone-numbers"></a>Numeri del supporto telefonico
 
 Microsoft fornisce numeri di telefono locali o un numero verde per il supporto del prodotto in tutto il mondo. Molti di questi centri di supporto forniscono un'assistenza in lingua locale durante l'orario di lavoro o in inglese 24 ore al giorno, tutti i giorni. Se non è possibile vedere la propria località geografica elencata di seguito, utilizzare Virtual Agent per Microsoft Office 365, così come descritto sopra, per trovare il numero di telefono di supporto locale.
   
 |**Paese**|**Domande per l'acquisto e la fatturazione**|**Domande per il supporto tecnico**|
 |:-----|:-----|:-----|
-|Brasile  <br/> |Numero verde: 08007621146          Locale: 1147001999  <br/> |Stesso  <br/> |
-|Francia  <br/> |Numero verde: 0805 540 594           Locale: 01 57 32 42 97  <br/> |Stesso  <br/> |
-|Germania  <br/> |Numero verde: 0800 589 2332           Locale: 069 380 789 508  <br/> |Stesso  <br/> |
-|Giappone  <br/> |Numero verde: 0120-628860          Locale: 343326257  <br/> |Numero verde: 0120-996680          Locale: 357679793  <br/> |
-|Corea  <br/> |Numero verde: 080-495-0880          Locale: 234831937  <br/> |Stesso  <br/> |
-|Spagna  <br/> |Numero verde: 900 814 197          Locale: 912 718 160  <br/> |Stesso  <br/> |
-|Regno Unito  <br/> |Numero verde: 0800 032 6417          Locale: 0203 450 6455  <br/> |Stesso  <br/> |
-|Stati Uniti  <br/> |Numero verde: 1-877-913-2707  <br/> |Numero verde: 1-800-865-9408  <br/> |
+|Brasile|Numero verde: 08007621146 <br/> Locale: 1147001999|Stesso|
+|Francia|Numero verde: 0805 540 594 <br/> Locale: 01 57 32 42 97|Stesso|
+|Germania|Numero verde: 0800 589 2332 <br/>  Locale: 069 380 789 508|Stesso|
+|Giappone|Numero verde: 0120-628860 <br/> Locale: 343326257|Numero verde: 0120-996680 <br/> Locale: 357679793|
+|Corea|Numero verde: 080-495-0880 <br/> Locale: 234831937|Stesso|
+|Spagna|Numero verde: 900 814 197 <br/> Locale: 912 718 160|Stesso|
+|Regno Unito|Numero verde: 0800 032 6417 <br/> Locale: 0203 450 6455|Stesso|
+|Stati Uniti|Numero verde: 1-877-913-2707|Numero verde: 1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>Per ulteriori informazioni sulla documentazione di EOP
 
 [Note del copyright di terze parti](third-party-copyright-notices.md)
   
 [Accessibilità per persone con disabilità](accessibility-for-people-with-disabilities.md)
-  
-
