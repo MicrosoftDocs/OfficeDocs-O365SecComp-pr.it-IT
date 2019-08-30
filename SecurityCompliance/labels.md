@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772163"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676656"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -163,7 +163,7 @@ Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono 
   
 - Attivare una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che venga impostata una revisione obbligatoria dei documenti di SharePoint e OneDrive prima che vengano eliminati. Per altre informazioni, vedere [Panoramica delle revisioni per l'eliminazione](disposition-reviews.md).
     
-- Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica.
+- Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio, indipendentemente dall'opzione scelta.
     
 ![Impostazioni di conservazione con opzioni specifiche per le etichette](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
