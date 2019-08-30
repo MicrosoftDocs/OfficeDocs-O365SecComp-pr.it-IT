@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
-ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
+ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302425"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675447"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -233,7 +233,7 @@ Quando si esegue la ricerca e l'esportazione di contenuto in ambienti multi-Geo,
   
 - Il parametro **Region** non controlla le ricerche delle cassette postali di Exchange. Quando si esegue la ricerca delle cassette postali, vengono ricercati tutti i Data Center. Per limitare l'ambito di cui è possibile eseguire la ricerca nelle cassette postali di Exchange, utilizzare il parametro **Filters** durante la creazione o la modifica di un filtro autorizzazioni di ricerca. 
     
-- Se è necessario che un Manager di eDiscovery sia in grado di eseguire la ricerca in più aree di SharePoint, è necessario creare un account utente diverso per il responsabile di eDiscovery che può essere utilizzato nel filtro delle autorizzazioni di ricerca per specificare l'area alternativa in cui si trova la pagina di SharePoint sono presenti siti o account di OneDrive.
+- Se è necessario che un Manager di eDiscovery sia in grado di eseguire ricerche in più aree di SharePoint, è necessario creare un account utente diverso per il responsabile di eDiscovery che può essere utilizzato nel filtro delle autorizzazioni di ricerca per specificare l'area in cui si trovano i siti di SharePoint o Gli account di OneDrive sono ubicati. Per ulteriori informazioni sull'impostazione di questo articolo, vedere la sezione "ricerca di contenuto in un ambiente multi-geo di SharePoint" in [Ricerca contenuto in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Quando si esegue la ricerca di contenuto in SharePoint e OneDrive, il parametro **Region** indirizza le ricerche verso la posizione principale o via satellite in cui il responsabile di eDiscovery conterrà le indagini di eDiscovery. Se un Manager di eDiscovery cerca i siti di SharePoint e OneDrive all'esterno dell'area specificata nel filtro delle autorizzazioni di ricerca, non verranno restituiti i risultati della ricerca. 
     
