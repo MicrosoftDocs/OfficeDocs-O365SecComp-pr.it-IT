@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
-ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
+ms.openlocfilehash: ad5e6e1f5e95b97cf9601890c11129f498fe95b9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36643258"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699224"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -25,7 +25,7 @@ La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di p
 La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
->  Il numero di messaggi verrà interrotto a 50 000 e il report rifletterà solo fino a questo importo nella console. Il cmdlet Get-HistoricalSearch di PowerShell cmdlet mostrerà il numero di messaggi vero.
+> Nei risultati vengono visualizzati solo i primi 50000 messaggi. Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
@@ -190,35 +190,39 @@ Nell'output del rapporto riepilogativo, è possibile visualizzare i dettagli rel
 
 I dettagli della traccia dei messaggi contengono le informazioni aggiuntive seguenti che non sono presenti nel rapporto riepilogativo:
 
-- **Eventi messaggio**: questa sezione contiene classificazioni che consentono di categorizzare le azioni che il servizio assume sui messaggi. Alcuni degli eventi più interessanti che è possibile riscontrare sono:
+- **Eventi messaggio**: questa sezione contiene classificazioni che consentono di categorizzare le azioni che il servizio assume sui messaggi. **Alcuni degli eventi più interessanti** che è possibile riscontrare sono:
 
-   - **Receive**: il messaggio è stato ricevuto dal servizio.
+  - **Receive**: il messaggio è stato ricevuto dal servizio.
 
-   - **Send**: il messaggio è stato inviato dal servizio.
+  - **Send**: il messaggio è stato inviato dal servizio.
 
-   - **Esito negativo**: il messaggio non è stato recapitato.
+  - **Esito negativo**: il messaggio non è stato recapitato.
 
-   - **Recapita**: il messaggio è stato recapitato a una cassetta postale.
+  - **Recapita**: il messaggio è stato recapitato a una cassetta postale.
 
-   - **Expand**: il messaggio è stato inviato a un gruppo di distribuzione espanso.
+  - **Expand**: il messaggio è stato inviato a un gruppo di distribuzione espanso.
 
-   - **Trasferimento**: i destinatari sono stati spostati in un messaggio di biforcati a causa della conversione del contenuto, dei limiti del destinatario del messaggio o degli agenti.
+  - **Trasferimento**: i destinatari sono stati spostati in un messaggio di biforcati a causa della conversione del contenuto, dei limiti del destinatario del messaggio o degli agenti.
 
-   - **Posticipare**: il recapito del messaggio è stato posticipato e potrebbe essere ritentato in un secondo momento.
+  - **Posticipare**: il recapito del messaggio è stato posticipato e potrebbe essere ritentato in un secondo momento.
 
-   - **Risolto**: il messaggio è stato reindirizzato a un nuovo indirizzo del destinatario basato su una ricerca di Active Directory. In questo caso, l'indirizzo originale del destinatario verrà visualizzato in una riga separata nella traccia del messaggio insieme allo stato di consegna finale per il messaggio.
+  - **Risolto**: il messaggio è stato reindirizzato a un nuovo indirizzo del destinatario basato su una ricerca di Active Directory. In questo caso, l'indirizzo originale del destinatario verrà visualizzato in una riga separata nella traccia del messaggio insieme allo stato di consegna finale per il messaggio.
 
-   Si noti che anche un messaggio non movimentato che è stato recapitato correttamente genererà più voci di **evento** nella traccia dei messaggi.
+  Note:
+
+  - Un messaggio non movimentato che è stato recapitato correttamente genererà più voci di **evento** nella traccia dei messaggi.
+
+  - Questo elenco non è inteso come esaustivo. Per le descrizioni di altri eventi, vedere [tipi di evento nel registro di verifica messaggi](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Si noti che questo collegamento è un argomento del server Exchange (Exchange locale).
 
 - **Ulteriori informazioni**: questa sezione contiene i seguenti dettagli:
 
-   - **ID messaggio**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo argomento. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **ID messaggio**: questo valore è descritto nella sezione [ID messaggio](#message-id) descritta in precedenza in questo argomento. Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-   - **Dimensione messaggio**
+  - **Dimensione messaggio**
 
-   - **Da IP**: l'indirizzo IP del computer in cui è stato inviato il messaggio. Per i messaggi in uscita inviati da Exchange Online, il valore è vuoto.
+  - **Da IP**: l'indirizzo IP del computer in cui è stato inviato il messaggio. Per i messaggi in uscita inviati da Exchange Online, il valore è vuoto.
 
-   - **To IP**: l'indirizzo IP o gli indirizzi in cui il servizio ha tentato di recapitare il messaggio. Se il messaggio contiene più destinatari, vengono visualizzati. Per i messaggi in ingresso inviati a Exchange Online, il valore è vuoto.
+  - **To IP**: l'indirizzo IP o gli indirizzi in cui il servizio ha tentato di recapitare il messaggio. Se il messaggio contiene più destinatari, vengono visualizzati. Per i messaggi in ingresso inviati a Exchange Online, il valore è vuoto.
 
 ### <a name="enhanced-summary-reports"></a>Rapporti di riepilogo avanzati
 
@@ -230,11 +234,11 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*stato*\>dell' *Indirizzo*\>##\<di posta elettronica. Ad esempio:
 
-   - **# #Receive, Send** indica che il messaggio è stato ricevuto dal servizio e che è stato inviato alla destinazione desiderata.
+  - **# #Receive, Send** indica che il messaggio è stato ricevuto dal servizio e che è stato inviato alla destinazione desiderata.
 
-   - **# #Receive, Fail** indica che il messaggio è stato ricevuto dal servizio ma il recapito alla destinazione desiderata non è riuscito.
+  - **# #Receive, Fail** indica che il messaggio è stato ricevuto dal servizio ma il recapito alla destinazione desiderata non è riuscito.
 
-   - **# #Receive, Deliver** indica che il messaggio è stato ricevuto dal servizio e che è stato recapitato alla cassetta postale del destinatario.
+  - **# #Receive, Deliver** indica che il messaggio è stato ricevuto dal servizio e che è stato recapitato alla cassetta postale del destinatario.
 
 - **MESSAGE_SUBJECT**: i primi 256 caratteri del campo **Subject** del messaggio.
 
@@ -268,17 +272,17 @@ I report estesi disponibili (completati) sono disponibili nella sezione **report
 
 - **source_context**: informazioni aggiuntive associate al campo di **origine** . Ad esempio:
 
-   - `Protocol Filter Agent`
+  - `Protocol Filter Agent`
 
-   - `3489061114359050000`
+  - `3489061114359050000`
 
 - **origine**: componente di Exchange Online responsabile dell'evento. Ad esempio:
 
-   - `AGENT`
+  - `AGENT`
 
-   - `MAILBOXRULE`
+  - `MAILBOXRULE`
 
-   - `SMTP`
+  - `SMTP`
 
 - **event_id**: corrispondono ai valori di **evento del messaggio** illustrati nella sezione [trova i record correlati per questo messaggio](#find-related-records-for-this-message) .
 
@@ -292,27 +296,27 @@ I report estesi disponibili (completati) sono disponibili nella sezione **report
 
 - **riferimento**: questo campo contiene informazioni aggiuntive per tipi specifici di eventi. Ad esempio:
 
-   - **DSN**: contiene il collegamento al rapporto, ovvero il valore **message_id** della notifica sullo stato del recapito associato (noto anche come DSN, rapporto di mancato recapito, NDR o messaggio di rimbalzo) se un DSN viene generato dopo questo evento. Se si tratta di un messaggio DSN, questo campo contiene il valore **message_id** del messaggio originale per il quale è stato generato il DSN.
+  - **DSN**: contiene il collegamento al rapporto, ovvero il valore **message_id** della notifica sullo stato del recapito associato (noto anche come DSN, rapporto di mancato recapito, NDR o messaggio di rimbalzo) se un DSN viene generato dopo questo evento. Se si tratta di un messaggio DSN, questo campo contiene il valore **message_id** del messaggio originale per il quale è stato generato il DSN.
 
-   - **Expand**: contiene il valore **related_recipient_address** dei messaggi correlati.
+  - **Expand**: contiene il valore **related_recipient_address** dei messaggi correlati.
 
-   - **Receive**: potrebbe contenere il valore **message_id** del messaggio correlato se il messaggio è stato generato da altri processi, ad esempio le regole di posta in arrivo.
+  - **Receive**: potrebbe contenere il valore **message_id** del messaggio correlato se il messaggio è stato generato da altri processi, ad esempio le regole di posta in arrivo.
 
-   - **Send**: contiene il valore **internal_message_id** di eventuali messaggi DSN.
+  - **Send**: contiene il valore **internal_message_id** di eventuali messaggi DSN.
 
-   - **Transfer**: contiene il valore **internal_message_id** del messaggio in fase di fork (ad esempio, tramite la conversione del contenuto, i limiti del destinatario del messaggio o gli agenti).
+  - **Transfer**: contiene il valore **internal_message_id** del messaggio in fase di fork (ad esempio, tramite la conversione del contenuto, i limiti del destinatario del messaggio o gli agenti).
 
-   - **MAILBOXRULE**: contiene il valore **internal_message_id** del messaggio in ingresso che ha causato la regola di posta in arrivo per generare il messaggio in uscita.
+  - **MAILBOXRULE**: contiene il valore **internal_message_id** del messaggio in ingresso che ha causato la regola di posta in arrivo per generare il messaggio in uscita.
 
-   Per altri tipi di eventi, questo campo in genere è vuoto.
+    Per altri tipi di eventi, questo campo in genere è vuoto.
 
 - **return_path**: l'indirizzo di posta elettronica restituito specificato dal comando **mail from** che ha inviato il messaggio. Anche se questo campo non è mai vuoto, può avere il valore dell'indirizzo mittente nullo rappresentato come `<>`.
 
 - **message_info**: ulteriori informazioni sul messaggio. Ad esempio:
 
-   - Data-ora di origine del messaggio in formato UTC `DELIVER` per `SEND` gli eventi e. La data-ora di origination è l'ora in cui il messaggio è stato immesso per la prima volta nell'organizzazione di Exchange Online. La data/ora UTC è rappresentata nel formato data/ora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, Where `yyyy` = year, `mm` = month, `dd` = Day, `T` indica l'inizio del `hh` componente Time, = hour, `mm` = minute, `ss` = Second, = `fff` frazioni di secondo e `Z` significa `Zulu`, che è un altro modo per indicare l'ora UTC.
+  - Data-ora di origine del messaggio in formato UTC `DELIVER` per `SEND` gli eventi e. La data-ora di origination è l'ora in cui il messaggio è stato immesso per la prima volta nell'organizzazione di Exchange Online. La data/ora UTC è rappresentata nel formato data/ora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, Where `yyyy` = year, `mm` = month, `dd` = Day, `T` indica l'inizio del `hh` componente Time, = hour, `mm` = minute, `ss` = Second, = `fff` frazioni di secondo e `Z` significa `Zulu`, che è un altro modo per indicare l'ora UTC.
 
-   - Errori di autenticazione. Ad esempio, è possibile visualizzare il valore `11a` e il tipo di autenticazione utilizzato quando si è verificato l'errore di autenticazione.
+  - Errori di autenticazione. Ad esempio, è possibile visualizzare il valore `11a` e il tipo di autenticazione utilizzato quando si è verificato l'errore di autenticazione.
 
 - **tenant_id**: valore GUID che rappresenta l'organizzazione di Exchange Online (ad esempio, `39238e87-b5ab-4ef6-a559-af54c6b07b42`).
 
