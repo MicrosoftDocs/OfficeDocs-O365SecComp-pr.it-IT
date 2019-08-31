@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365 e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
-ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
+ms.openlocfilehash: cc6a385ec639f6df787c2de23fece8cb53a4d25e
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493167"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675467"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -184,6 +184,8 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
 [Visualizzare l'anteprima risultati della ricerca](#previewing-search-results)
   
 [Elementi parzialmente indicizzati](#partially-indexed-items)
+
+[Ricerca di contenuto in un ambiente SharePoint Multi-Geo](#searching-for-content-in-a-sharepoint-multi-geo-environment)
   
 ### <a name="content-search-limits"></a>Limiti di Ricerca contenuto
 
@@ -368,3 +370,40 @@ Sono supportati anche i seguenti tipi di contenitori di file. È possibile visua
 - Come descritto in precedenza, gli elementi parzialmente indicizzati nelle cassette postali sono inclusi nei risultati della ricerca stimati. Gli elementi parzialmente indicizzati di SharePoint e OneDrive non vengono inclusi nei risultati della ricerca stimati. 
     
 - Se un elemento parzialmente indicizzato corrisponde alla query di ricerca, perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento parzialmente indicizzato è escluso dai criteri di ricerca, non verrà incluso nel numero stimato di elementi non indicizzati. Per altre informazioni, vedere [Elementi parzialmente indicizzati in Ricerca contenuto in Office 365](partially-indexed-items-in-content-search.md).
+
+### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Ricerca di contenuto in un ambiente SharePoint Multi-Geo
+
+Se un manager di eDiscovery deve cercare contenuto in aree diverse in SharePoint e OneDrive in un [ambiente SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840), è necessario eseguire le operazioni seguenti:
+   
+1. Creare un account utente distinto per ogni posizione geografica satellite i cui il manager di eDiscovery deve eseguire la ricerca. Per cercare contenuto in siti in tale posizione geografica, il manager di eDiscovery deve accedere all'account creato per la posizione e quindi eseguire una ricerca di contenuto.
+
+2. Creare un filtro delle autorizzazioni di ricerca per ogni posizione geografica satellite (e l'account utente corrispondente) in cui il manager di eDiscovery deve eseguire la ricerca. Ognuno di questi filtri delle autorizzazioni di ricerca limita l'ambito della ricerca di contenuto a una specifica posizione geografica quando il manager di eDiscovery è connesso all'account utente associato a quella posizione.
+ 
+> [!TIP]
+> Quando si usa lo strumento di ricerca in [Advanced eDiscovery](compliance20/overview-ediscovery-20.md), non è necessario usare questa strategia. Il motivo è che quando si esegue una ricerca in siti di SharePoint e account di OneDrive in Advanced eDiscovery, la ricerca viene eseguita in tutti i data center. È necessario usare questa strategia basata sugli account utente specifici dell'area geografica e sui filtri delle autorizzazioni di ricerca solo quando si usa lo strumento Ricerca contenuto e si eseguono ricerche associate a [casi di eDiscovery](ediscovery-cases.md). 
+
+
+Si supponga, ad esempio, che un manager di eDiscovery debba cercare contenuto di SharePoint e OneDrive in posizioni satellite di Chicago, Londra e Tokyo. Il primo passaggio consiste nel creare tre account utente, uno per ogni posizione. Il passaggio successivo consiste nel creare tre filtri delle autorizzazioni di ricerca, uno per ogni posizione e account utente corrispondente. Ecco alcuni esempi dei tre filtri delle autorizzazioni di ricerca per questo scenario. In ognuno di questi esempi il parametro **Area** specifica la posizione del datacenter di SharePoint per quell'area geografica e il parametro **Utenti** specifica l'account utente corrispondente. 
+
+**Nord America**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Chicago" -Users ediscovery-chicago@contoso.com -Region NAM -Action ALL
+```
+
+**Europa**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-London" -Users ediscovery-london@contoso.com -Region GBR -Action ALL
+```
+
+**Asia Pacifico**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Toyko" -Users ediscovery-tokyo@contoso.com -Region JPN -Action ALL
+```
+
+Tenere presente quanto segue quando si usano i filtri delle autorizzazioni di ricerca per cercare contenuto in ambienti Multi-Geo:
+
+- Il parametro **Area** indirizza le ricerche alla posizione satellite specificata. Se un manager di eDiscovery esegue la ricerca solo in siti di SharePoint e OneDrive esterni all'area geografica specificata nel filtro delle autorizzazioni di ricerca, non viene restituito alcun risultato della ricerca. 
+
+- Il parametro **Area** non controlla le ricerche nelle cassette postali di Exchange. Quando eseguono ricerche nelle cassette postali, la ricerca viene estesa a tutti i datacenter. 
+    
+Per altre informazioni sull'uso dei filtri delle autorizzazioni di ricerca in un ambiente Multi-Geo, vedere la sezione "Ricerca ed esportazione di contenuto in ambienti Multi-Geo" in [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
