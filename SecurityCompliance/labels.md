@@ -283,14 +283,12 @@ Per altre informazioni su queste opzioni, vedere [Tuning rules to make them easi
 
 Per altre informazioni sulla sintassi della query, vedere:
 
-- 
-  [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Le etichette basate su query usano l’indice di ricerca per identificare il contenuto. Per altre informazioni sulle proprietà disponibili per la ricerca valide, vedere:
 
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
-- 
-  [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/it-IT/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Esempi di query:
 

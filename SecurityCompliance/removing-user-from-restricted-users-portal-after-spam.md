@@ -81,12 +81,10 @@ I comandi di PowerShell per utenti con restrizioni sono:
 
 [Rispondere a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md)
 
-
-  [Informazioni sull'avviso relativo agli utenti ai quali è stato impedito di inviare posta elettronica](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)
+[Informazioni sull'avviso relativo agli utenti ai quali è stato impedito di inviare posta elettronica](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)
 
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 
-
-  [Criteri di avviso nel Centro sicurezza e conformità](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)
+[Criteri di avviso nel Centro sicurezza e conformità](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)

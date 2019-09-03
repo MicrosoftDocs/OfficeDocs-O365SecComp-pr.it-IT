@@ -248,11 +248,9 @@ L'illustrazione traccia i livelli di autorizzazione da Controllo completo a Solo
 
 Ulteriori informazioni:
 
--   
-  [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/it-IT/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/it-IT/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   
-  [Informazioni sui gruppi di SharePoint](https://support.office.com/it-IT/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Informazioni sui gruppi di SharePoint](https://support.office.com/it-IT/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Criteri di condivisione esterna per le raccolte di SharePoint Online e OneDrive for Business
 
@@ -302,11 +300,9 @@ Nella tabella riportata di seguito vengono riassunti i controlli che è possibil
 
 Ulteriori informazioni:
 
--   
-  [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/it-IT/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/it-IT/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   
-  [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Criteri di accesso al dispositivo a livello di sito
 

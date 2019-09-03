@@ -43,8 +43,7 @@ Nell'intestazione cercare le intestazioni e i valori seguenti.
     
 - **SFV:SKB**: indica che il messaggio è stato contrassegnato come posta indesiderata perché è stata trovata una corrispondenza con un elenco Blocca nei criteri di filtro posta indesiderata. 
     
-- 
-  **SFV:BULK**: indica che il valore Livello di reclamo in blocco (BCL, Bulk Complaint Level) nell'intestazione x-Microsoft-Antispam è oltre la soglia impostata per il filtro dei contenuti. La posta elettronica in blocco è composta da messaggi di posta elettronica a cui gli utenti potrebbero essersi iscritti, ma che considerano comunque non desiderabili. Nell'intestazione del messaggio, individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica in blocco come posta indesiderata. Utenti diversi hanno diverse tolleranze e preferenze su come gestire la [posta elettronica in blocco](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values). È possibile creare regole o criteri diversi in base alle diverse preferenze degli utenti.
+- **SFV:BULK**: indica che il valore Livello di reclamo in blocco (BCL, Bulk Complaint Level) nell'intestazione x-Microsoft-Antispam è oltre la soglia impostata per il filtro dei contenuti. La posta elettronica in blocco è composta da messaggi di posta elettronica a cui gli utenti potrebbero essersi iscritti, ma che considerano comunque non desiderabili. Nell'intestazione del messaggio, individuare la proprietà BCL (Bulk Confidence Level) nell'intestazione X-Microsoft-Antispam. Se il valore BCL è inferiore alla soglia impostata nel filtro protezione da posta indesiderata, è consigliabile modificare la soglia invece di contrassegnare questi tipi di posta elettronica in blocco come posta indesiderata. Utenti diversi hanno diverse tolleranze e preferenze su come gestire la [posta elettronica in blocco](https://docs.microsoft.com/it-IT/office365/SecurityCompliance/bulk-complaint-level-values). È possibile creare regole o criteri diversi in base alle diverse preferenze degli utenti.
     
 - **CAT:SPOOF** o **CAT:PHISH**: indica che il messaggio sembra essere falsificato, il che significa che la fonte del messaggio non può essere convalidata e potrebbe essere sospetta. Se è valido, il mittente dovrà assicurarsi di avere la corretta configurazione SPF e DKIM. Controllare l'intestazione Risultati di autenticazione per ulteriori informazioni. Sebbene possa essere difficile far sì che tutti i mittenti utilizzino i metodi di autenticazione email appropriati, ignorare questi controlli può essere estremamente pericoloso ed è la principale causa di compromissioni. 
     
@@ -64,8 +63,7 @@ Per funzionare correttamente, Exchange Online Protection (EOP) chiede agli ammin
 
 - **Usare [Esplora richieste](admin-submission.md)** Gli amministratori possono ora inviare messaggi di posta elettronica con ID messaggio di rete o file, URL e file per l'analisi di Microsoft in Office 365. Un amministratore può anche visualizzare il feedback inviato dagli utenti e usare qualsiasi schema per modificare le impostazioni che potrebbero causare problemi.
 
-- 
-  **Verificare che gli utenti rispettino i limiti consentiti** per l'invio e la ricezione dei messaggi di posta elettronica come illustrato [qui](https://docs.microsoft.com/it-IT/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+- **Verificare che gli utenti rispettino i limiti consentiti** per l'invio e la ricezione dei messaggi di posta elettronica come illustrato [qui](https://docs.microsoft.com/it-IT/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
  - **Ricontrollare i livelli di blocco** come specificato [qui](bulk-complaint-level-values.md)
     
@@ -83,7 +81,7 @@ EOP rispetterà gli elenchi dei mittenti e dei destinatari attendibili, ma non q
 
 Se gli utenti hanno abilitato l'opzione "Solo elenchi indirizzi attendibili: nella cartella Posta in arrivo verranno recapitati solo i messaggi inviati dagli utenti o dai domini inclusi nell'elenco Mittenti attendibili o Destinatari attendibili", tutti i messaggi di posta elettronica per un mittente verranno recapitati nella cartella della posta indesiderata, a meno che il mittente non sia incluso nell'elenco dei mittenti attendibili del destinatario. Questo avverrà indipendentemente dal fatto che EOP contrassegni o meno un messaggio come posta legittima o dall'aver configurato o meno una regola in EOP per contrassegnare il messaggio come posta legittima.
   
-È possibile disabilitare l'opzione Solo elenchi indirizzi attendibili per gli utenti di Outlook seguendo le istruzioni in [Outlook: impostazioni dei criteri per disabilitare l'interfaccia utente per la posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/en-us/kb/2180568).
+È possibile disabilitare l'opzione Solo elenchi indirizzi attendibili per gli utenti di Outlook seguendo le istruzioni in [Outlook: impostazioni dei criteri per disabilitare l'interfaccia utente per la posta indesiderata e il meccanismo di filtro](https://support.microsoft.com/it-IT/kb/2180568).
   
 Se il messaggio viene visualizzato in Outlook sul web, un suggerimento di sicurezza di colore giallo indicherà che il messaggio si trova nella cartella Posta indesiderata perché il mittente non è incluso nell'elenco dei mittenti attendibili del destinatario.
   

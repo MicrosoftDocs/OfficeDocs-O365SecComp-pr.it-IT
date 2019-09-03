@@ -25,8 +25,7 @@ ms.locfileid: "36478195"
 
 ## <a name="overview"></a>Panoramica
 
-
-  [Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/it-IT/office365/securitycompliance/custom-sensitive-info-types)  vengono usati per impedire la condivisione accidentale o inappropriata di informazioni sensibili. Gli amministratori possono usare il  [Centro sicurezza e conformità](https://docs.microsoft.com/it-IT/office365/securitycompliance/create-a-custom-sensitive-information-type) o [PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  per definire un tipo di informazioni sensibili personalizzato in base a modelli, evidenza (parole chiave come  *dipendente*,  *badge*,  *ID* e così via), vicinanza tra caratteri (quant'è vicina l'evidenza ai caratteri in un determinato modello) e livelli di probabilità. Questi tipi di informazioni sensibili personalizzati soddisfano le esigenze aziendali di molte organizzazioni.
+[Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/it-IT/office365/securitycompliance/custom-sensitive-info-types)  vengono usati per impedire la condivisione accidentale o inappropriata di informazioni sensibili. Gli amministratori possono usare il  [Centro sicurezza e conformità](https://docs.microsoft.com/it-IT/office365/securitycompliance/create-a-custom-sensitive-information-type) o [PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  per definire un tipo di informazioni sensibili personalizzato in base a modelli, evidenza (parole chiave come  *dipendente*,  *badge*,  *ID* e così via), vicinanza tra caratteri (quant'è vicina l'evidenza ai caratteri in un determinato modello) e livelli di probabilità. Questi tipi di informazioni sensibili personalizzati soddisfano le esigenze aziendali di molte organizzazioni.
 
 Ma cosa succede se si vuole un tipo di informazioni sensibili personalizzato che usi valori di dati esatti, anziché modelli generici basati solo sulla corrispondenza? Con la classificazione basata su Exact Data Match (EDM) è possibile creare un tipo di informazioni sensibili personalizzato che sia progettato per:
 
@@ -187,8 +186,7 @@ Verrà richiesto di confermare, come illustrato di seguito:
 
 Quando si configura il pacchetto di regole, assicurarsi di fare riferimento correttamente al file .csv e al file edm.xml. È possibile copiare, modificare e usare l'esempio. In questo XML di esempio è necessario personalizzare i campi seguenti per creare un tipo di informazioni sensibili di EDM:
 
-- 
-  **RulePack id & ExactMatch id**: usare  [New-GUID](https://docs.microsoft.com/it-IT/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  per generare un GUID.
+- **RulePack id & ExactMatch id**: usare  [New-GUID](https://docs.microsoft.com/it-IT/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  per generare un GUID.
 
 - **Datastore**: questo campo specifica l'archivio dati di ricerca EDM da usare. È possibile specificare il nome di un'origine dati di uno schema EDM configurato.
 
@@ -482,19 +480,15 @@ I tipi di informazioni sensibili EDM per gli scenari seguenti sono in fase di sv
 
 ## <a name="related-articles"></a>Articoli correlati
 
+[Tipi di informazioni sensibili integrati e cosa individuano](https://docs.microsoft.com/it-IT/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [Tipi di informazioni sensibili integrati e cosa individuano](https://docs.microsoft.com/it-IT/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/it-IT/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/it-IT/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [Panoramica sui criteri di DLP](https://docs.microsoft.com/it-IT/office365/securitycompliance/data-loss-prevention-policies)
+[Panoramica sui criteri di DLP](https://docs.microsoft.com/it-IT/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/it-IT/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/it-IT/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 I feedback su GitHub sono abilitati, ma è possibile aggiungere domande solo nel sito pubblico.

@@ -98,10 +98,8 @@ Per accedere alle funzionalità di ATP nel Centro sicurezza e conformità, è ne
 |Ruolo o gruppo di ruoli  |Risorse per approfondire  |
 |---------|---------|
 |Amministratore globale di Office 365 |[Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Amministratore della sicurezza |
-  [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/it-IT/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestione organizzazione di Exchange Online |
-  [Autorizzazioni in Exchange Online](https://docs.microsoft.com/it-IT/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Amministratore della sicurezza |[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/it-IT/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Gestione organizzazione di Exchange Online |[Autorizzazioni in Exchange Online](https://docs.microsoft.com/it-IT/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Per ulteriori informazioni, vedere:
 
@@ -125,5 +123,4 @@ Nuove caratteristiche vengono continuamente aggiunte a Office 365 ATP. Per altre
 
 - La [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) offre un elenco delle nuove funzionalità in fase di sviluppo e implementazione.
 
-- 
-  [Descrizione del servizio Office 365 Advanced Threat Protection](https://docs.microsoft.com/it-IT/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) descrive le funzionalità e la disponibilità dei piani ATP.
+- [Descrizione del servizio Office 365 Advanced Threat Protection](https://docs.microsoft.com/it-IT/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) descrive le funzionalità e la disponibilità dei piani ATP.
