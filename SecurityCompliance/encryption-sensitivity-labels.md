@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: a30f5d6168ea8118ef6b30ff26a429857affaa4a
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199777"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717671"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -35,7 +35,12 @@ Quando un documento o un messaggio di posta elettronica è crittografato, l'acce
 - Il contenuto rimane crittografato indipendentemente da dove risiede il file, all'interno o all'esterno dell'organizzazione, anche nel caso in cui il file venisse rinominato.
 - Il contenuto resta crittografato sia se il file è archiviato (ad esempio, in un account OneDrive) sia se è in transito (ad esempio, un messaggio di posta elettronica inviato).
 
-Le impostazioni di crittografia sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365.
+Infine, quando si crea un'etichetta di riservatezza, gli amministratori possono scegliere di:
+
+- **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta.
+- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro.
+
+Le impostazioni di crittografia sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365. Nel riquadro di spostamento sinistro scegliere **Classificazione** > **Etichetta di riservatezza** > **Crea un'etichetta**.
 
 ## <a name="how-encryption-works"></a>Modalità di funzionamento della crittografia
 
@@ -43,13 +48,26 @@ La crittografia utilizza Azure Rights Management (Azure RMS). Azure RMS usa i cr
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Come attivare la crittografia per un'etichetta di riservatezza
 
-Per iniziare, è sufficiente impostare **Crittografia** su **Attiva**, quindi utilizzare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
+Per iniziare, è sufficiente impostare **Crittografia** su **Attiva** e quindi scegliere se:
+
+- **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta. Per ulteriori informazioni, vedere la sezione successiva [Assegnare le autorizzazioni adesso](#assign-permissions-now).
+- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro. Per ulteriori informazioni, vedere la sezione successiva [Consentire agli utenti di assegnare le autorizzazioni](#let-users-assign-permissions).
+
+Ad esempio, se si ha un'etichetta di riservatezza denominata **Riservatezza elevata** da applicare al contenuto più riservato, è consigliabile decidere ora chi ottiene quali autorizzazioni per il contenuto.
+
+In alternativa, se si ha un'etichetta di riservatezza denominata **Contratti commerciali** e il flusso di lavoro dell'organizzazione richiede che le persone collaborino a questo contenuto con persone diverse e specifiche per ogni caso, è consigliabile consentire agli utenti di decidere chi ottiene le autorizzazioni quando assegnano l'etichetta. Questa flessibilità consente di migliorare la produttività degli utenti e ridurre le richieste rivolte agli amministratori per l’aggiornamento o la creazione di nuove etichette di riservatezza per situazioni specifiche.
+
+![Opzione per aggiungere autorizzazioni definite dall'utente o dall'amministratore](media/sensitivity-label-user-or-admin-defined-permissions.png)
+
+## <a name="assign-permissions-now"></a>Assegnare le autorizzazioni adesso
+
+Utilizzare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
 
 1. **Applicare la crittografia sia ai messaggi di posta elettronica che ai documenti oppure solo alla posta elettronica.** Se si sceglie solo la posta elettronica, i messaggi con l'etichetta saranno crittografati in Outlook, ma i documenti con l'etichetta non saranno crittografati nelle altre app, come Word o PowerPoint. 
 2. **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. Si noti che alcuni client di posta elettronica potrebbero non applicare la scadenza e mostrare messaggi di posta elettronica che hanno superato la data di scadenza a causa dei meccanismi di memorizzazione nella cache.
 3. **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
 
-![Impostazioni di crittografia per etichette di riservatezza](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
+![Impostazioni per le autorizzazioni definite dall'amministratore](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licenza d'uso di Rights Management per l'accesso offline
 
@@ -61,7 +79,7 @@ Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo
 
 Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](https://docs.microsoft.com/it-IT/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
-## <a name="assign-permissions-to-specific-users-or-groups"></a>Assegnare autorizzazioni a utenti o gruppi specifici
+### <a name="assign-permissions-to-specific-users-or-groups"></a>Assegnare autorizzazioni a utenti o gruppi specifici
 
 È possibile concedere autorizzazioni a utenti specifici in modo che solo essi possano interagire con il contenuto etichettato.
 
@@ -72,7 +90,7 @@ Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 g
 
 ![Opzioni per assegnare autorizzazioni agli utenti](media/Sensitivity-Assign-permissions-settings.png)
 
-### <a name="add-users-or-groups"></a>Aggiungere utenti o gruppi
+#### <a name="add-users-or-groups"></a>Aggiungere utenti o gruppi
 
 Quando si assegnano le autorizzazioni, è possibile scegliere:
 
@@ -84,7 +102,7 @@ Quando si scelgono tutti i membri del tenant o si sfoglia la directory, gli uten
 
 È consigliabile utilizzare i gruppi anziché gli utenti, così da mantenere la configurazione più semplice.
 
-### <a name="choose-permissions"></a>Scegliere le autorizzazioni
+#### <a name="choose-permissions"></a>Scegliere le autorizzazioni
 
 Quando si sceglie quali autorizzazioni assegnare agli utenti o ai gruppi, è possibile selezionare:
 
@@ -101,7 +119,7 @@ Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autor
 
 ![Utenti diversi con autorizzazioni diverse](media/Sensitivity-Multiple-users-permissions.png)
 
-### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
+#### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
 
 La crittografia per un'etichetta di riservatezza usa Azure RMS. Quando un utente applica un'etichetta di riservatezza per proteggere un documento o un messaggio di posta elettronica utilizzando Azure RMS, l'utente diventa l'emittente di Rights Management per quel contenuto.
 
@@ -112,6 +130,48 @@ All'emittente di Rights Management sono sempre concesse le autorizzazioni di con
 - L'emittente di Rights Management può aprire un documento anche se è stato revocato.
 
 Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietario di Rights Management](https://docs.microsoft.com/it-IT/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="let-users-assign-permissions"></a>Consentire agli utenti di assegnare le autorizzazioni
+
+È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
+
+- In Outlook, un utente può applicare restrizioni equivalenti all'opzione **Non inoltrare**. Questa opzione è supportata in modo nativo in Outlook per Windows e non richiede di installare il client di etichettatura unificato di Azure Information Protection.
+- In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare il livello di autorizzazione per utenti, gruppi o organizzazioni specifici. Poiché questa opzione non è supportata in modo nativo in Outlook per Windows, gli utenti devono installare il client di etichettatura unificato di Azure Information Protection.
+
+Queste opzioni determinano le app in cui verrà visualizzata l'etichetta di riservatezza:
+
+- Se nell'etichetta di riservatezza è abilitata solo l'opzione Outlook, l'etichetta sarà visualizzata solo dagli utenti di Outlook.
+- Se nell'etichetta di riservatezza è abilitata solo l'opzione Word, PowerPoint ed Excel, l'etichetta sarà visualizzata solo dagli utenti di queste app.
+- Se l'etichetta di riservatezza ha entrambe le opzioni abilitate, l'etichetta sarà visualizzata dagli utenti di tutte le app disponibili: Outlook, Word, PowerPoint ed Excel.
+
+Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazioni può essere applicata al contenuto solo manualmente dagli utenti. Non può essere applicata automaticamente o usata come etichetta consigliata.
+
+> [!NOTE]
+> Consentire agli utenti di assegnare autorizzazioni richiede un abbonamento ad Azure Information Protection. Per usare questa funzionalità in Word, PowerPoint ed Excel, è necessario scaricare e installare il [client di etichettatura unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Stiamo lavorando al supporto nativo di questa funzionalità nelle app di Office, in modo che il client di Azure Information Protection non sia necessario. Inoltre, il client viene eseguito solo in Windows, quindi questa caratteristica non è ancora supportata in Mac, iOS, Android o Office per il Web.
+
+![Impostazioni di crittografia per le autorizzazioni definite dall'utente](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+
+### <a name="outlook-restrictions"></a>Restrizioni di Outlook
+
+In Outlook, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un messaggio, le restrizioni sono le stesse dell'opzione Non inoltrare. Gli utenti vedranno il nome e la descrizione dell'etichetta nella parte superiore del messaggio, il che indica che il contenuto è protetto. Diversamente da Word, PowerPoint ed Excel (vedere la [sezione successiva](#word-powerpoint-and-excel-permissions)), agli utenti non viene chiesto di selezionare autorizzazioni specifiche.
+
+![Etichetta di riservatezza applicata a un messaggio in Outlook](media/sensitivity-label-outlook-protection-applied.png)
+
+Se l'opzione Non inoltrare viene applicata a un messaggio di posta elettronica, il messaggio viene crittografato e i destinatari devono essere autenticati. Quindi i destinatari non potranno inoltrarlo, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
+
+I documenti di Office non protetti allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. I diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l’allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve proteggere il file prima di allegarlo al messaggio di posta elettronica.
+
+### <a name="word-powerpoint-and-excel-permissions"></a>Autorizzazioni per Word, PowerPoint ed Excel
+
+In Word, PowerPoint ed Excel, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un documento, viene chiesto di proteggere il contenuto, come illustrato di seguito.
+
+L'utente può:
+
+- Selezionare un livello di autorizzazione, ad esempio Visualizzatore, che assegna l'autorizzazione Solo visualizzazione, o Coautore, che assegna le autorizzazioni di visualizzazione, modifica, copia e stampa.
+- Selezionare utenti, gruppi o organizzazioni. Questo può includere persone sia interne che esterne alle organizzazioni.
+- Impostare una data di scadenza, dopodiché gli utenti selezionati non potranno accedere al contenuto. Per altre informazioni, vedere la sezione precedente [Licenza d’uso di Rights Management per l'accesso offline](#rights-management-use-license-for-offline-access).
+
+![Opzioni per l’utente per la protezione con autorizzazioni personalizzate](media/sensitivity-aip-custom-permissions-dialog.png)
 
 ## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Cosa accade alla crittografia esistente in seguito all'applicazione di un'etichetta
 
