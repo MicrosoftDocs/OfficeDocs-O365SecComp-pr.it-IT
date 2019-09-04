@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230340"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717636"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -101,7 +101,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
     
   - Selezionare **applica collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** se si desidera abilitare i collegamenti sicuri per i messaggi inviati tra gli utenti all'interno dell'organizzazione (scelta consigliata).
     
-  - Selezionare non **consentire all'utente di fare clic sull'URL originale**.
+  - Selezionare non **consentire all'utente di fare clic sull'URL originale** se non si desidera che i singoli utenti sostituiscano un' *analisi in corso* o le pagine di notifica bloccate dall' *URL* .
     
   - (Facoltativo) Nella sezione non **riscrivere gli URL seguenti** specificare uno o più URL considerati attendibili per l'organizzazione. (Vedere [configurare un elenco di URL "non riscrivere" personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
     

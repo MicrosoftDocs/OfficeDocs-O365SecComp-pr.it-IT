@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: "Sintesi: In questo articolo viene descritto come Office 365 utilizza il record TXT Sender Policy Framework (SPF) in DNS per verificare che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato. Si applica alla posta in uscita inviata da Office 365. I messaggi inviati da Office 365 a un destinatario all'interno di Office 365 passano sempre SPF."
-ms.openlocfilehash: f872159280968227e88f8014117db28b88097075
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 41055f5eb2f3fe3e4e54f7b863b3739ec51c198a
+ms.sourcegitcommit: 8be0297950840e33dc693d139b69ee142edbed81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599222"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "36714015"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing
 
@@ -107,7 +107,7 @@ Oltre agli indirizzi IP, è possibile configurare il record TXT SPF anche in mod
 IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
 ```
 
-Quando il server di ricezione visualizza questo record in DNS, esegue anche una ricerca DNS sul record TXT SPF per contoso.net e quindi per contoso.org. Se rileva un'ulteriore istruzione "#include" all'interno dei record per contoso.net o contoso.org, seguirà anche questi. Per evitare attacchi Denial of Service, il numero massimo di ricerche DNS per un singolo messaggio di posta elettronica è 10. Ogni istruzione #include rappresenta una ricerca DNS aggiuntiva. Se un messaggio supera il limite di 10, il messaggio non supera il controllo SPF. Una volta che un messaggio raggiunge tale limite, a seconda di come è configurato il server di ricezione, il mittente potrebbe ricevere un messaggio che indica che il messaggio ha generato un "numero eccessivo di ricerche" o che il "numero massimo di hop per il messaggio è stato superato". Per suggerimenti su come evitarlo, vedere [Risoluzione dei problemi: procedure consigliate per SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Quando il server ricevente Visualizza questo record in DNS, esegue anche una ricerca DNS nel record TXT SPF per contoso.net e quindi per contoso.org. Se viene trovata un'istruzione include aggiuntiva all'interno dei record per contoso.net o contoso.org, verranno seguiti anche quelli. Per evitare attacchi Denial of Service, il numero massimo di ricerche DNS per un singolo messaggio di posta elettronica è 10. Ogni istruzione #include rappresenta una ricerca DNS aggiuntiva. Se un messaggio supera il limite di 10, il messaggio non supera il controllo SPF. Una volta che un messaggio raggiunge questo limite, a seconda del modo in cui il server di ricezione è configurato, il mittente potrebbe ottenere un messaggio che indica che il messaggio ha generato "troppe ricerche" o che il numero massimo di hop per il messaggio è stato superato (operazione che può verificarsi quando il le ricerche interessano il ciclo e superano il timeout DNS. Per suggerimenti su come evitarlo, vedere [Risoluzione dei problemi: procedure consigliate per SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
   
 ## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>Requisiti per il record TXT SPF e Office 365
 <a name="SPFReqsinO365"> </a>
