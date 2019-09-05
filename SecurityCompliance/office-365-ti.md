@@ -3,7 +3,7 @@ title: Analisi delle minacce e risposta alle minacce in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/22/2019
+ms.date: 08/23/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,34 +15,30 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566214"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761652"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
 Le funzionalità di ricerca e risposta alle minacce in [office 365 Advanced Threat Protection](office-365-atp.md) aiutano gli analisti e gli amministratori della sicurezza a proteggere gli utenti di Office 365 dell'organizzazione per:
   
-- Semplificare l'identificazione, il monitoraggio e la comprensione degli attacchi
+- Semplificare l'identificazione, il monitoraggio e la comprensione di attacchi cibernetici
     
 - Assistenza per l'indirizzamento rapido delle minacce in Exchange Online, SharePoint Online, OneDrive for business e Microsoft Teams
     
-- Fornire informazioni e approfondimenti utili per prevenire gli attacchi alla propria organizzazione
+- Fornire informazioni e conoscenze per aiutare le operazioni di sicurezza a impedire la attacchi cibernetici alla propria organizzazione
 
 - Utilizzo di [indagini e risposte automatiche](automated-investigation-response-office.md) per minacce critiche basate sulla posta elettronica
     
-Leggere questo articolo per ulteriori informazioni sull'indagine e la risposta alle minacce e su come iniziare.
-  
-## <a name="threat-investigation-and-response-in-office-365"></a>Indagine e risposta alle minacce in Office 365
+Le funzionalità di ricerca e di risposta alle minacce consentono di approfondire i rischi e le azioni di risposta correlate disponibili nel &amp; Centro sicurezza e conformità di Office 365. Queste informazioni possono aiutare il team di sicurezza dell'organizzazione a proteggere gli utenti di Office 365 da attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati provenienti da più origini, ad esempio attività utente, autenticazione, posta elettronica, PC compromessi e incidenti di sicurezza. I decision maker aziendali e gli amministratori globali di Office 365, gli amministratori della sicurezza e gli analisti di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce per gli utenti di Office 365 e proteggere la proprietà intellettuale.
 
-L'analisi delle minacce e le funzionalità di risposta consentono di approfondire le minacce e le azioni di risposta correlate disponibili nel centro &amp; sicurezza e conformità di Office 365. Queste informazioni possono aiutare il team di sicurezza dell'organizzazione a proteggere gli utenti di Office 365 da attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati provenienti da più origini, ad esempio attività utente, autenticazione, posta elettronica, PC compromessi e incidenti di sicurezza. I decision maker aziendali e gli amministratori globali di Office 365, gli amministratori della sicurezza e gli analisti di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce per gli utenti di Office 365 e proteggere la loro proprietà intellettuale.
+## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizzare con gli strumenti di ricerca e di risposta alle minacce
 
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Familiarizzare con il dashboard di minacce, gli esploratori e gli eventi non consentiti
-
-La superficie delle funzionalità di ricerca e risposta alle &amp; minacce nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), [Explorer](#threat-explorer), [incidenti](#incidents), simulatore di [attacco](attack-simulator.md)e [Risposta & di analisi automatizzata](automated-investigation-response-office.md).
+La superficie delle funzionalità di ricerca e risposta alle &amp; minacce nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), [Explorer](#threat-explorer), [incidenti](#incidents), [simulatore di attacco](#attack-simulator)e [Risposta & di analisi automatizzata](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Dashboard di minacce
 
@@ -51,6 +47,8 @@ Utilizzare il dashboard di minacce (indicato anche come [dashboard di sicurezza]
 ![Dashboard di minacce](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 Per visualizzare e utilizzare questo dashboard, nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Dashboard**.
+
+Per ulteriori informazioni su 
   
 ### <a name="threat-explorer"></a>Esplora minacce
 
@@ -69,8 +67,16 @@ Utilizzare l'elenco degli eventi non consentiti (anche questo è denominato inda
 Per visualizzare l'elenco degli eventi imprevisti correnti per l'organizzazione, nel centro &amp; conformità sicurezza accedere a operazioni di \> **Verifica** \> degli **incidenti**di **gestione delle minacce** .
   
 ![Nel centro sicurezza &amp; e conformità scegliere Threat Management \> Review](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+
+### <a name="attack-simulator"></a>Simulatore di attacco
+
+Utilizzare simulatore di attacco per configurare ed eseguire attacchi cibernetici realistici nell'organizzazione e identificare le persone vulnerabili prima che un cyberattack reale influisca sulla propria azienda. Per ulteriori informazioni, vedere [Attack Simulator in Office 365](attack-simulator.md).
+
+### <a name="automated-investigation-and-response"></a>Analisi e risposta alle minacce automatizzate
+
+Utilizzare le funzionalità di analisi e risposta automatizzate per risparmiare tempo e risorse per la correlazione di contenuto, dispositivi e persone a rischio di minacce all'interno dell'organizzazione. I processi AIR possono iniziare ogni volta che vengono attivati determinati avvisi o quando vengono avviati dal team delle operazioni di sicurezza. Per ulteriori informazioni, vedere [Automatic Investigation and Response (Air) with Office 365](automated-investigation-response-office.md). 
   
-## <a name="learn-more-about-malware-and-threats"></a>Altre informazioni su malware e minacce
+## <a name="threat-intelligence-widgets"></a>Widget di intelligence per le minacce
 
 Nell'ambito dell'offerta di Office 365 Advanced Threat Protection piano 2, gli analisti di sicurezza possono esaminare i dettagli relativi a una minaccia nota. Ciò è utile per determinare se sono disponibili ulteriori misure preventive/passaggi che possono essere adottati per garantire la sicurezza degli utenti.
   
@@ -103,7 +109,7 @@ Le funzionalità di ricerca e risposta alle minacce di Office 365 sono incluse i
   |Attivare le azioni di posta elettronica in un evento imprevisto  <br/> Individuare ed eliminare i messaggi di posta elettronica sospetti  <br/> |Amministratore globale e amministratore della sicurezza di Office 365  <br/> Uno dei ruoli precedenti e la ricerca e la cancellazione (assegnati al centro sicurezza &amp; e conformità)  <br/> |
   |Integrazione di Office 365 Advanced Threat Protection Plan 2 con Microsoft Defender ATP  <br/> Integrazione di Office 365 Advanced Threat Protection Plan 2 con un server SIEM  <br/> |Amministratore globale di Office 365  <br/> Amministratore della sicurezza (assegnato nel centro &amp; sicurezza e conformità)  <br/> Ruolo appropriato assegnato in altre applicazioni, ad esempio Microsoft Defender Security Center o un server SIEM  <br/> |
    
-Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere Permissions [in &amp; The Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in &amp; The Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="next-steps"></a>Passaggi successivi
 

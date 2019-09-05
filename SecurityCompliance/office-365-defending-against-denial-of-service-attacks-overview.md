@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una panoramica degli attacchi DoS (Denial of Service).
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622476"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761662"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Difendersi dagli attacchi Denial of Service in Office 365
 
@@ -34,13 +34,13 @@ Microsoft offre un'infrastruttura affidabile per più di 200 servizi cloud ospit
 - Skype
 - Xbox Live
 
-In quanto organizzazione globale con una presenza Internet significativa e numerose proprietà di Internet importanti che forniscono servizi cloud, Microsoft è un obiettivo di grandi dimensioni comune per gli hacker e gli altri utenti dannosi. Il livello di comunicazione di rete tra client e Microsoft Cloud è uno dei principali obiettivi degli attacchi dannosi. In effetti, Microsoft è continuamente e persistente sotto una qualche forma di attacco cibernetico basato sulla rete. In linea con questo, Microsoft utilizza principi di sicurezza per la difesa in profondità per proteggere i servizi e le reti cloud. Senza sistemi di attenuazione affidabili e persistenti che difendono tali attacchi, i servizi cloud di Microsoft sarebbero non in linea e non sono disponibili per i clienti.
+In quanto organizzazione globale con una presenza Internet significativa e numerose proprietà di Internet importanti che forniscono servizi cloud, Microsoft è un obiettivo di grandi dimensioni comune per gli hacker e gli altri utenti dannosi. Il livello di comunicazione di rete tra client e Microsoft Cloud è uno dei principali obiettivi degli attacchi dannosi. In effetti, Microsoft è continuamente e persistente sotto una qualche forma di cyberattack basato sulla rete. In linea con questo, Microsoft utilizza principi di sicurezza per la difesa in profondità per proteggere i servizi e le reti cloud. Senza sistemi di attenuazione affidabili e persistenti che difendono tali attacchi, i servizi cloud di Microsoft sarebbero non in linea e non sono disponibili per i clienti.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Definizione e sintomi degli attacchi Denial of Service
 
 Un modo per attaccare i servizi di rete consiste nel creare numerose richieste contro gli host del servizio per sopraffare la rete e i server per negare il servizio agli utenti legittimi. Questo è definito come un attacco Denial of Service (DoS). Quando l'attacco viene eseguito da più attori, endpoint e/o vettori, viene indicato come un attacco di tipo Denial-of-Service (DDoS) distribuito. Anche se i mezzi, i motivi e gli obiettivi variano, gli attacchi DoS e DDoS in genere compongono gli sforzi per impedire che un sito o un servizio Internet funzioni correttamente o a tutti, temporaneamente o a tempo indeterminato.
 
-Il [team degli Stati Uniti](https://www.us-cert.gov/) per la preparazione alle emergenze del computer (US-CERT) definisce i sintomi degli attacchi DOS per includere:
+Il [team degli Stati Uniti per la preparazione alle emergenze del computer](https://www.us-cert.gov/) (US-CERT) definisce i sintomi degli attacchi DOS per includere:
 
 - Prestazioni di rete insolitamente lente (quando si aprono file o si accede a siti Internet)
 - Indisponibilità di un sito Web

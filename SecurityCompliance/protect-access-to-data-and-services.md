@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: pagina di destinazione per la protezione dell'accesso ai dati e ai servizi di O365
-ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852740"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761612"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
-La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la difesa contro gli attacchi cibernetici e la protezione contro la perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e persino alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
+La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la difesa da attacchi cibernetici e per la protezione dalla perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e persino alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
   
 ## <a name="step-1-review-recommendations"></a>Passaggio 1: esaminare i suggerimenti
 
@@ -31,7 +31,7 @@ Funzionalità consigliate per proteggere le identità e i dispositivi che accedo
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Passaggio 2: proteggere gli account di amministratore e l'accesso
-Gli account amministrativi utilizzati per amministrare l'ambiente di Office 365 includono privilegi elevati. Questi sono obiettivi validi per gli hacker e i criminali informatici. 
+Gli account amministrativi utilizzati per amministrare l'ambiente di Office 365 includono privilegi elevati. Questi sono obiettivi validi per hacker e cyberattackers. 
 
 Iniziare utilizzando solo gli account amministratore per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare e non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla loro funzione processi.
 
@@ -47,7 +47,7 @@ Un'altra raccomandazione principale consiste nell'utilizzare le workstation appo
 Infine, è possibile ridurre l'impatto della mancanza di accesso amministrativo accidentale creando due o più account di accesso di emergenza nel tenant. Vedere [gestire gli account di accesso per gli interventi di emergenza in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Passaggio 3: configurare i criteri di identità e accesso ai dispositivi consigliati
-L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)Configurations.
+L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access Configurations](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations).
 
  Questi criteri implementano le funzionalità seguenti:
 - Autenticazione a più fattori
@@ -56,7 +56,7 @@ L'autenticazione a più fattori e i criteri di accesso condizionale sono strumen
 - Conformità del dispositivo Intune
 - Azure AD Identity Protection
 
-La conformità del dispositivo di Implemetning Intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di assicurarsi che siano integre e conformi prima di consentire loro di accedere alle risorse nell'ambiente in uso. Vedere [registrazione dei dispositivi per la gestione in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+L'implementazione della conformità del dispositivo Intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di assicurarsi che siano integre e conformi prima di consentire loro di accedere alle risorse nell'ambiente in uso. Vedere [registrazione dei dispositivi per la gestione in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: configurare i criteri di accesso ai dispositivi di SharePoint
 

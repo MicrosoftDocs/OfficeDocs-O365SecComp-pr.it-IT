@@ -13,20 +13,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Questa soluzione indica gli elementi più comuni che possono essere assomigliati a Office 365 e come rispondere a tali attacchi.
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Questa soluzione indica quali sono gli attacchi di Cybersecurity più comuni che possono essere presenti in Office 365 e come rispondervi
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157678"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761672"
 ---
 # <a name="office-365-security-incident-response"></a>Intervento in caso di incidente di sicurezza di Office 365
 
- **Riepilogo:** Questa soluzione indica quali sono gli indicatori per gli attacchi di sicurezza informatici più comuni in Office 365, come confermare positivamente un determinato attacco e come rispondervi.
+ **Riepilogo:** Questa soluzione spiega quali sono gli indicatori per gli attacchi Cybersecurity più comuni in Office 365, come confermare positivamente qualsiasi attacco e come rispondervi.
   
 ## <a name="overview"></a>Panoramica
-Non tutti gli attacchi cibernetici possono essere vanificati. Gli aggressori sono costantemente alla ricerca di nuove debolezze della strategia difensiva o che sfruttano quelle vecchie. La possibilità di riconoscere un attacco consente di rispondere in modo più rapido, riducendo la durata dell'incidente di sicurezza.
+Non tutti i attacchi cibernetici possono essere vanificati. Gli aggressori sono costantemente alla ricerca di nuove debolezze della strategia difensiva o che sfruttano quelle vecchie. La possibilità di riconoscere un attacco consente di rispondere in modo più rapido, riducendo la durata dell'incidente di sicurezza.
 
 Questa serie di articoli consente di comprendere il tipo di attacco potrebbe essere simile a quello di Office 365 e di fornire i passaggi che è possibile eseguire per rispondere. Sono i punti di ingresso rapido per comprendere:
  

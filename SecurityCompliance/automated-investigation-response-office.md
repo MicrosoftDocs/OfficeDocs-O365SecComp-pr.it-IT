@@ -1,9 +1,9 @@
 ---
-title: Indagine automatizzata e risposta (aria) con Office 365
+title: Indagine automatizzata e risposta (AIR) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/25/2019
+ms.date: 09/04/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,39 +13,56 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 3e74fd7a12727880164797f076d254416325713a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598522"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761702"
 ---
-# <a name="automated-investigation-and-response-air-with-office-365"></a>Indagine automatizzata e risposta (aria) con Office 365
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
-L'analisi e la risposta automatizzate (AIR) (attualmente nell'anteprima pubblica come una delle numerose [funzionalità di analisi e risposta alle minacce di Office 365](office-365-ti.md)) consentono di eseguire indagini e correzioni automatizzate su minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. 
+Le funzionalità di analisi e risposta automatizzate (incluse in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
 
-Per ulteriori informazioni su quando saranno disponibili le funzionalità AEREe, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+> [!NOTE]
+> Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
+
+A livello elevato, il flusso di aria funziona in questo modo:
+
+|Fase  |Elementi coinvolti  |
+|---------|---------|
+|1     |Un [avviso](#alerts) che viene attivato e un playbook di [sicurezza](#security-playbooks) inizia.         |
+|2     |In base al particolare avviso e alla sicurezza PlayBook, l' [analisi automatizzata inizia immediatamente](#example-a-user-reported-phish-message-launches-an-investigation-playbook). In alternativa, un analista di sicurezza può [avviare manualmente un'indagine automatizzata](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), da un valore in un report, ad esempio [Esplora](threat-explorer.md).         |
+|3     |Durante l'esecuzione di un'indagine automatizzata, il relativo ambito può aumentare man mano che vengono attivati i nuovi avvisi correlati.         |
+|4     |Durante e dopo un'analisi automatizzata, [i dettagli e i risultati](#investigation-graph) sono disponibili per la visualizzazione. I risultati includono [azioni consigliate](#recommended-actions) che è possibile intraprendere per rispondere e correggere eventuali minacce individuate. Inoltre, è disponibile un [Registro PlayBook](#playbook-log) che tiene traccia di tutte le attività investigative.<br/>Se l'organizzazione utilizza una soluzione per la creazione di report personalizzati o una soluzione di terze parti, è possibile [utilizzare l'API di attività di gestione di Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) per visualizzare le informazioni relative a indagini e minacce automatizzate.         |
+|5     |Il team delle operazioni di sicurezza esamina i risultati e le raccomandazioni e approva le azioni di correzione. In Office 365, le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione.         |
+
+Nelle sezioni seguenti vengono fornite ulteriori informazioni su AIR, inclusi i dettagli sugli avvisi, gli schemi di sicurezza e i dettagli dell'indagine. Inoltre, in questo articolo sono inclusi due esempi del funzionamento di AIR Works. Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
 
 ## <a name="alerts"></a>Avvisi
 
 Gli [avvisi](alert-policies.md#viewing-alerts) rappresentano trigger per i flussi di lavoro del team di operazioni di sicurezza per la risposta agli incidenti. Definire la priorità del set di avvisi appropriato per l'analisi, assicurandosi che non vi siano minacce non indirizzate. Quando le indagini sugli avvisi vengono eseguite manualmente, i team delle operazioni di sicurezza devono cercare e correlare le entità (ad esempio, il contenuto, i dispositivi e gli utenti) a rischio di minacce. Tali attività e flussi di lavoro richiedono molto tempo e coinvolgono più strumenti e sistemi. Con AIR, l'analisi e la risposta vengono automatizzate in avvisi chiave per la sicurezza e la gestione delle minacce che attivano automaticamente gli schemi di risposta alla sicurezza. 
 
-Nella versione iniziale di AIR del 2019 aprile, gli avvisi generati dai criteri di avviso dei singoli eventi vengono analizzati automaticamente. 
+Nella versione iniziale di AIR (a partire da aprile 2019), gli avvisi generati dai seguenti criteri di avviso per singoli eventi vengono analizzati automaticamente. 
 
-1. È stato rilevato un clic URL potenzialmente dannoso
-2. Messaggi di posta elettronica segnalati dall'utente come phishing *
-3. Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
-4. Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
+- È stato rilevato un clic URL potenzialmente dannoso
+
+- Messaggi di posta elettronica segnalati dall'utente come phishing *
+
+- Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
+
+- Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
 
 > [!NOTE]
 > A questi avvisi è stata assegnata una gravità "informativa" nei rispettivi criteri di avviso nel centro sicurezza & conformità con le notifiche di posta elettronica disattivate. Questi possono essere attivati tramite la configurazione dei criteri di avviso.
 
 Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
-Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche degli avvisi di analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
+Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
 ![Avvisi relativi al collegamento alle indagini](media/air-alerts-page-details.png) 
-
 
 ## <a name="security-playbooks"></a>Schemi di sicurezza
 
@@ -55,88 +72,26 @@ Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le mi
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Gli schemi di sicurezza vengono implementati in fasi
 
-Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi
+Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi. Durante la fase 1 (l'anteprima ha iniziato a girare nel mese di aprile 2019), sono stati rilasciati diversi PlayBook che includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza:
+- Messaggio phishing visualizzato dall'utente
+- URL fare clic su modifica verdetto 
+- Malware rilevato dopo il recapito (ZAP malware)
+- Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
 
-- **Fase 1 (2019 aprile)**: i PlayBook includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza. La fase 1 includerà gli schemi seguenti:
-    - Messaggio phishing visualizzato dall'utente
-    - URL fare clic su modifica verdetto 
-    - Malware rilevato dopo il recapito (ZAP malware)
-    - Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
-    - Indagini manuali tramite posta elettronica (tramite Esplora minacce)
+La fase 1 include anche indagini manuali tramite posta elettronica (tramite [Esplora minacce](threat-explorer.md)).
 
-- **Fase 2 (seconda metà del 2019)**: diversi nuovi PlayBook e miglioramenti al PlayBook, oltre all'opzione per gli amministratori della sicurezza di configurare gli schemi di sicurezza per intraprendere alcune azioni automaticamente senza interazione amministrativa. 
+La fase 2 è in corso. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>I PlayBook includono analisi e suggerimenti
 
-Ogni PlayBook include: 
+In AIR, ogni PlayBook di sicurezza include: 
 - un'indagine radice, 
 - passaggi necessari per identificare e correlare altre potenziali minacce e 
 - azioni di correzione delle minacce consigliate.
 
 Ogni passaggio di alto livello include numerosi passaggi secondari eseguiti per fornire una risposta profonda, dettagliata ed esaustiva alle minacce.
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Esempio: un messaggio di phishing riferito dall'utente avvia un playbook di analisi
-
-Quando un utente dell'organizzazione invia un messaggio di posta elettronica e lo segnala a Microsoft utilizzando il [componente aggiuntivo per i messaggi di report per Outlook o Outlook Web Access](enable-the-report-message-add-in.md), il report viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione segnalata dall'utente. Questo messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
-
-Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Queste funzionalità sono:
-- Determinazione del tipo di minaccia che potrebbe essere;
-- Chi lo ha inviato;
-- In cui è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
-- Se sono state recapitate o bloccate altre istanze del messaggio di posta elettronica;
-- Una valutazione dei nostri analisti;
-- Se il messaggio di posta elettronica è associato a qualsiasi campagna Nota;
-- e altro ancora.
-
-Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azioni consigliate da intraprendere sul messaggio di posta elettronica originale e le entità ad esso associate.
-  
-Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
-
-- Vengono ricercati messaggi di posta elettronica simili in altri cluster di posta elettronica.
-- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
-- Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
-- Viene effettuato un controllo in Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
-- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative all'attività degli utenti. 
-
-Durante la fase di caccia, i rischi e le minacce sono assegnati a vari passaggi di caccia. 
-
-La correzione è la fase finale del PlayBook. Durante questa fase, vengono eseguite le operazioni di correzione, in base alle fasi di ricerca e caccia. 
-
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce
-
-Oltre alle indagini automatiche attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatica da una visualizzazione in [Esplora minacce](use-explorer-in-security-and-compliance.md).
-
-Si supponga, ad esempio, di visualizzare i dati in Esplora informazioni sui messaggi segnalati dall'utente. È possibile selezionare un elemento nell'elenco dei risultati e quindi fare clic su **indaga**.
-
-![Messaggi segnalati dall'utente in Esplora con il pulsante indaga](media/Explorer-UserReported-Investigate.png)
-
-Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi di posta elettronica rilevati come contenenti malware e che sono stati rilevati diversi messaggi di posta elettronica come contenenti malware. È possibile selezionare la scheda **posta elettronica** , selezionare uno o più messaggi di posta elettronica e quindi scegliere **indaga**dal menu **azioni** . 
-
-![Avvio di un'indagine per malware in Esplora risorse](media/Explorer-Malware-Email-ActionsInvestigate.png)
-
-Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
-
-## <a name="get-started"></a>Attività iniziali
-
-Per accedere alle indagini, come un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza, passare al centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità () ed eseguire l'accesso. Eseguire una delle operazioni seguenti:
-
-- Nella barra di spostamento a sinistra, **** > passare a avvisi**visualizzazione**avvisi, aprire uno degli avvisi correlati all'analisi, quindi fare clic sul collegamento **Visualizza analisi** nella parte inferiore del riquadro a comparsa di avviso. 
-
-    oppure
-
-- Nella barra di spostamento a sinistra, andare a > **indagini**sulla **gestione delle minacce**.
-
-    oppure
-
-- Visitare il dashboard di gestione delle minacce (nel centro sicurezza & conformità, accedere a **Threat Management** > **Dashboard**).
-
-![Widget aria](media/air-widgets.png)
-
-I widget aria verranno visualizzati nella parte superiore del dashboard di [sicurezza](security-dashboard.md). Selezionare un widget per iniziare.
-
-È inoltre possibile accedere a un'indagine direttamente dagli avvisi correlati.
-
-### <a name="automated-investigations"></a>Indagini automatizzate
+## <a name="automated-investigations"></a>Indagini automatizzate
 
 Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organizzazione e gli stati correnti.
 
@@ -145,17 +100,17 @@ Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organi
 È possibile:
 - Passare direttamente a un'indagine (selezionare un **ID di ricerca**).
 - Applicare filtri. Scegliere tra il **tipo di analisi**, l'intervallo di **tempo**, **lo stato**o una combinazione di questi.
-- Esportare i dati in un file CSV.
+- Esportare i dati in un file. csv.
 
-Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambierà per indicare se sono state trovate minacce e indicare se le azioni sono state approvate. 
+Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate. 
 - **Inizio**: l'analisi viene accodata per iniziare a breve
-- **Running**: l'inchiesta è iniziata e sta conducendo la propria analisi
+- **Running**: l'inchiesta è iniziata e sta conducendo la sua analisi
 - **Non sono state trovate minacce**: l'inchiesta ha completato l'analisi e non sono state trovate minacce
 - **Terminato dal sistema**: l'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni
 - **Azione in sospeso**: l'inchiesta ha rilevato minacce con azioni consigliate
 - **Minacce trovate**: l'inchiesta ha rilevato minacce, ma le minacce non sono disponibili in Air
-- **Correzione**: la investgation è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate)
-- **Parzialmente**rimediato: l'inchiesta è terminata e sono state approvate alcune delle azioni consigliate
+- **Corretti**: l'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate)
+- **Parzialmente rimediato**: l'inchiesta è terminata e sono state approvate alcune delle azioni consigliate
 - **Terminato dall'utente**: un amministratore ha terminato l'indagine
 - **Failed**: si è verificato un errore durante l'analisi che impediva di raggiungere una conclusione sulle minacce
 - **Accodamento tramite limitazione**: l'analisi è in attesa di essere analizzata a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio)
@@ -194,19 +149,19 @@ Dato il volume totale di messaggi di posta elettronica che gli utenti di un'orga
 
 può richiedere molte ore. AIR ora automatizza questo processo, salvando il tempo e lo sforzo del team di sicurezza dell'organizzazione. 
 
-Durante il passaggio di analisi della posta elettronica sono stati identificati due tipi di cluster di posta elettronica, ovvero i cluster di somiglianza e gli indicatori. 
-- I cluster di somiglianza sono messaggi di posta elettronica che contengono attributi di contenuto e mittente simili. Tali cluster vengono valutati per i contenuti dannosi in base ai risultati di rilevamento originali. I cluster di posta elettronica che contengono un numero sufficiente di rilevamenti dannosi saranno considerati dannosi.
-- I cluster di indicatori sono messaggi di posta elettronica che contengono la stessa entità indicatore (hash di file o URL) del messaggio di posta elettronica originale. Quando l'entità file/URL originale viene identificata come dannosa, l'aria applicherà l'indicatore verdetto all'intero gruppo di messaggi di posta elettronica che contiene tale entità. Come un file identificato come malware significherà che il cluster di messaggi di posta elettronica che contiene il file verrà considerato come messaggio di posta elettronica antimalware.
+Durante il passaggio di analisi della posta elettronica possono essere identificati due tipi di cluster di posta elettronica: cluster di somiglianza e cluster di indicatori. 
+- I cluster di somiglianza sono messaggi di posta elettronica che contengono attributi di contenuto e mittente simili. Tali cluster vengono valutati per i contenuti dannosi in base ai risultati di rilevamento originali. I cluster di posta elettronica che contengono un numero sufficiente di rilevamenti dannosi sono considerati dannosi.
+- I cluster di indicatori sono messaggi di posta elettronica che contengono la stessa entità indicatore (hash di file o URL) del messaggio di posta elettronica originale. Quando l'entità file/URL originale viene identificata come dannosa, AIR applica l'indicatore verdetto all'intero gruppo di messaggi di posta elettronica che contiene tale entità. Come un file identificato come malware significa che il cluster di messaggi di posta elettronica che contiene il file viene considerato come messaggio di posta elettronica antimalware.
 
 L'obiettivo del clustering consiste nel reperire altri messaggi di posta elettronica correlati inviati dallo stesso mittente come parte di un attacco o di una campagna.
 
-La scheda **posta elettronica** mostrerà anche gli elementi di posta elettronica relativi all'indagine, ad esempio i dettagli di posta elettronica segnalati dall'utente, il messaggio di posta elettronica originale riportato, i messaggi di posta elettronica con zapping a causa di malware/phishing e così via.
+La scheda **posta elettronica** Visualizza anche gli elementi di posta elettronica relativi all'indagine, ad esempio i dettagli di posta elettronica segnalati dall'utente, il messaggio di posta elettronica originale riportato, i messaggi di posta elettronica zapped a causa di malware/phishing e così via.
 
-Il numero di messaggi di posta elettronica identificati nella scheda posta elettronica rappresenta attualmente la somma totale di tutti gli SMS visualizzati nella scheda **posta elettronica** . Poiché i messaggi di posta elettronica saranno presenti in più cluster, il conteggio totale effettivo dei messaggi di posta elettronica identificati (ed è influenzato dalle azioni correttive) sarà il numero di messaggi di posta elettronica univoci presenti in tutti i cluster e la posta elettronica dei destinatari originali. messaggi. 
+Il numero di messaggi di posta elettronica identificati nella scheda posta elettronica rappresenta attualmente la somma totale di tutti gli SMS visualizzati nella scheda **posta elettronica** . Poiché i messaggi di posta elettronica sono presenti in più cluster, il conteggio totale effettivo dei messaggi di posta elettronica identificati (ed è influenzato dalle azioni correttive) è il numero di messaggi di posta elettronica univoci presenti in tutti i cluster e nei messaggi di posta elettronica dei destinatari originali. 
 
-Entrambi i messaggi di posta elettronica di Explorer e conteggio aria sono per ogni destinatario, in quanto i verdetti di sicurezza, le azioni e i percorsi di recapito variano in base al destinatario. Pertanto, un messaggio di posta elettronica originale inviato a tre utenti conterà come un totale di tre messaggi di posta elettronica anziché un solo messaggio di posta elettronica. Nota potrebbero verificarsi casi in cui un messaggio di posta elettronica viene contato due o più volte, poiché il messaggio di posta elettronica può avere più azioni su di esso e potrebbe essere più copie del messaggio di posta elettronica una volta che tutte le azioni si verificano. Ad esempio, un messaggio di posta elettronica antimalware rilevato al momento del parto può comportare sia un messaggio di posta elettronica bloccato (in quarantena) che un messaggio di posta elettronica sostituito (file di minacce sostituito da un file di avviso, quindi recapitato alla cassetta postale Poiché vi sono letteralmente due copie del messaggio di posta elettronica nel sistema, queste possono essere entrambe conteggiate nei conteggi dei cluster. 
+Entrambi i messaggi di posta elettronica di Explorer e conteggio aria sono per ogni destinatario, in quanto i verdetti di sicurezza, le azioni e i percorsi di recapito variano in base al destinatario. Pertanto, un messaggio di posta elettronica originale inviato a tre utenti conta come un totale di tre messaggi di posta elettronica anziché un messaggio di posta elettronica. Nota potrebbero verificarsi casi in cui un messaggio di posta elettronica viene contato due o più volte, poiché il messaggio di posta elettronica può avere più azioni su di esso e potrebbe essere più copie del messaggio di posta elettronica una volta che tutte le azioni si verificano. Ad esempio, un messaggio di posta elettronica antimalware rilevato al momento del parto può comportare sia un messaggio di posta elettronica bloccato (in quarantena) che un messaggio di posta elettronica sostituito (file di minacce sostituito da un file di avviso, quindi recapitato alla cassetta postale Poiché vi sono letteralmente due copie del messaggio di posta elettronica nel sistema, queste possono essere entrambe conteggiate nei conteggi dei cluster. 
 
-I conteggi dei messaggi di posta elettronica vengono calcolati al momento dell'indagine e alcuni conteggi vengono ricalcolati quando si apre l'indagine comparsa (in base a una query sottostante). Il numero di messaggi di posta elettronica visualizzati per i cluster di posta elettronica nella scheda posta elettronica e il valore della quantità di posta elettronica visualizzato nel riquadro a comparsa del cluster vengono calcolati al momento dell'indagine. Il numero di posta elettronica visualizzato nella parte inferiore della scheda posta elettronica del riquadro a comparsa del cluster e il numero di messaggi di posta elettronica visualizzati in Esplora riflettono i messaggi di posta elettronica ricevuti dopo l'analisi iniziale dell'indagine. In questo modo un cluster di posta elettronica che mostra una quantità originale di 10 messaggi di posta elettronica mostrerà una lista di posta elettronica pari a 15 quando 5 messaggi di posta elettronica arrivano tra la fase di analisi dell'inchiesta e quando l'amministratore esamina l'indagine. La visualizzazione di entrambi i conteggi in visualizzazioni diverse viene eseguita per indicare l'impatto della posta elettronica al momento dell'indagine e l'impatto corrente fino al momento in cui viene eseguita la correzione.
+I conteggi dei messaggi di posta elettronica vengono calcolati al momento dell'indagine e alcuni conteggi vengono ricalcolati quando si apre l'indagine comparsa (in base a una query sottostante). Il numero di messaggi di posta elettronica visualizzati per i cluster di posta elettronica nella scheda posta elettronica e il valore della quantità di posta elettronica visualizzato nel riquadro a comparsa del cluster vengono calcolati al momento dell'indagine. Il numero di posta elettronica visualizzato nella parte inferiore della scheda posta elettronica del riquadro a comparsa del cluster e il numero di messaggi di posta elettronica visualizzati in Esplora risorse riflettono i messaggi di posta elettronica ricevuti dopo l'analisi iniziale dell'indagine. In questo modo un cluster di posta elettronica che mostra una quantità originale di 10 messaggi di posta elettronica mostrerà una lista di posta elettronica pari a 15 quando 5 messaggi di posta elettronica arrivano tra la fase di analisi dell'inchiesta e quando l'amministratore esamina l'indagine. La visualizzazione di entrambi i conteggi in visualizzazioni diverse viene eseguita per indicare l'impatto della posta elettronica al momento dell'indagine e l'impatto corrente fino al momento in cui viene eseguita la correzione.
 
 Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi di posta elettronica è stato ritenuto phishing. Un altro gruppo di messaggi simili con lo stesso IP e l'oggetto è stato trovato e considerato dannoso, in quanto alcuni di essi sono stati identificati come phishing durante il rilevamento iniziale. 
 
@@ -223,7 +178,7 @@ Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi 
 
 ### <a name="user-investigation"></a>Analisi degli utenti
 
-Nella scheda **utenti** è possibile visualizzare tutti gli utenti identificati come parte dell'indagine. Gli utenti verranno visualizzati nell'inchiesta quando è presente un evento o un'indicazione del fatto che l'utente può essere influenzato o compromesso.
+Nella scheda **utenti** è possibile visualizzare tutti gli utenti identificati come parte dell'indagine. Gli account utente vengono visualizzati nell'inchiesta quando si verifica un evento o un'indicazione del fatto che tali account utente potrebbero essere intaccati o compromessi.
 
 Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di compromesso e anomalie basate su una nuova regola di posta in arrivo che è stata creata. Ulteriori dettagli (prova) dell'indagine sono disponibili tramite visualizzazioni dettagliate all'interno di questa scheda. gli indicatori di compromesso e anomalie possono includere anche rilevamenti di anomalie dalla [sicurezza delle app cloud di Microsoft](https://docs.microsoft.com/cloud-app-security).
 
@@ -275,7 +230,7 @@ Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook c
 
 Nella scheda **azioni** , è possibile visualizzare tutte le azioni di PlayBook consigliate per la correzione dopo il completamento dell'indagine. 
 
-Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** , verrà avviata la correzione. (Sono necessarie autorizzazioni appropriate: il ruolo ' Search and Purge ' è necessario per eseguire azioni da Explorer e AIR). Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle. Nota: non è necessario approvare ogni azione. Se non si è d'accordo con l'azione consigliata o l'organizzazione non sceglie alcuni tipi di azioni, è possibile scegliere di **rifiutare** le azioni o semplicemente ignorarle e non eseguire alcuna azione. L'approvazione e/o il rifiuto di tutte le azioni consentiranno di chiudere completamente l'indagine, lasciando che alcune azioni incomplete provochino lo stato di indagine che cambia in uno stato parzialmente rimediato.
+Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** è possibile iniziare la correzione. (Sono necessarie autorizzazioni appropriate: il ruolo ' Search and Purge ' è necessario per eseguire azioni da Explorer e AIR). Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle. Nota: non è necessario approvare ogni azione. Se non si è d'accordo con l'azione consigliata o l'organizzazione non sceglie alcuni tipi di azioni, è possibile scegliere di **rifiutare** le azioni o semplicemente ignorarle e non eseguire alcuna azione. Approvazione e/o rifiuto di tutte le azioni lasciare che l'inchiesta sia completamente chiusa, lasciando inalterate alcune azioni allo stato di indagine che cambia in uno stato parzialmente rimediato.
 
 ![Pagina azione indagini AEREe](media/air-investigationactionspage.png)
 
@@ -286,13 +241,64 @@ Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. 
 - Esportare i risultati in un file CSV.
 - Filtrare la visualizzazione.
 
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Esempio: un messaggio di phishing riferito dall'utente avvia un playbook di analisi
+
+Quando un utente dell'organizzazione invia un messaggio di posta elettronica e lo segnala a Microsoft utilizzando il [componente aggiuntivo per i messaggi di report per Outlook o Outlook Web Access](enable-the-report-message-add-in.md), il report viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione segnalata dall'utente. Questo messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
+
+Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Queste funzionalità sono:
+- Determinazione del tipo di minaccia che potrebbe essere;
+- Chi lo ha inviato;
+- In cui è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
+- Se sono state recapitate o bloccate altre istanze del messaggio di posta elettronica;
+- Una valutazione dei nostri analisti;
+- Se il messaggio di posta elettronica è associato a qualsiasi campagna Nota;
+- e altro ancora.
+
+Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azioni consigliate da intraprendere sul messaggio di posta elettronica originale e le entità ad esso associate.
+  
+Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
+
+- Vengono ricercati messaggi di posta elettronica simili in altri cluster di posta elettronica.
+- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+- Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
+- Viene effettuato un controllo in Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
+- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative all'attività degli utenti. 
+
+Durante la fase di caccia, i rischi e le minacce sono assegnati a vari passaggi di caccia. 
+
+La correzione è la fase finale del PlayBook. Durante questa fase, vengono eseguite le operazioni di correzione, in base alle fasi di ricerca e caccia. 
+
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce
+
+Oltre alle indagini automatiche attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatica da una visualizzazione in [Esplora minacce](use-explorer-in-security-and-compliance.md).
+
+Si supponga, ad esempio, di visualizzare i dati in Esplora informazioni sui messaggi segnalati dall'utente. È possibile selezionare un elemento nell'elenco dei risultati e quindi fare clic su **indaga**.
+
+![Messaggi segnalati dall'utente in Esplora con il pulsante indaga](media/Explorer-UserReported-Investigate.png)
+
+Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi di posta elettronica rilevati come contenenti malware e che sono stati rilevati diversi messaggi di posta elettronica come contenenti malware. È possibile selezionare la scheda **posta elettronica** , selezionare uno o più messaggi di posta elettronica e quindi scegliere **indaga**dal menu **azioni** . 
+
+![Avvio di un'indagine per malware in Esplora risorse](media/Explorer-Malware-Email-ActionsInvestigate.png)
+
+Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
+
 ## <a name="how-to-get-air"></a>Come ottenere aria
 
-Attualmente, le funzionalità di Office 365 AIR sono in anteprima. Quando si è in genere disponibili, le funzionalità di Office 365 AIR verranno incluse nei seguenti abbonamenti:
+Gli abbonamenti di Office 365 AIR sono inclusi nelle sottoscrizioni seguenti:
 
 - Microsoft 365 Enterprise E5
 - Office 365 Enterprise E5
 - Microsoft Threat Protection
 - Office 365 Advanced Threat Protection piano 2
 
-Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+Se non si dispone di una o più di queste sottoscrizioni, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
+
+Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la [disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+[Iniziare a usare AIR in Office 365](office-365-air.md)
+
+[Informazioni su AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
+
+[Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)

@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Pagina di destinazione per pianificare la sicurezza e la conformità
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80e6215f1f4f5c04202f15e05622dfddae65d59b
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157508"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761622"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Pianificare la conformità &amp; della sicurezza in Office 365
 
@@ -39,7 +39,7 @@ Dopo aver configurato la sottoscrizione di Office 365, prendere nota del puntegg
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Passaggio 3: pianificare la protezione dell'accesso per identità e dispositivi
 
-La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la difesa contro gli attacchi cibernetici e la protezione contro la perdita di dati.
+La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la difesa da attacchi cibernetici e per la protezione dalla perdita di dati.
   
 - [Proteggere l'accesso a dati e servizi in Office 365](protect-access-to-data-and-services.md)
     
