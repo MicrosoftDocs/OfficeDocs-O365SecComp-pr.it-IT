@@ -213,6 +213,7 @@
 ## [Usare gli indicatori delle minacce](threat-trackers.md)
 ## [Usare il simulatore di attacchi in Office 365](attack-simulator.md)
 ## [Proteggere gli utenti con l'analisi e la risposta alle minacce](keep-users-safe-with-office-365-ti.md)
+## [Analizzare e rispondere automaticamente alle minacce in Office 365](office-365-air.md)
 ## [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
 ## [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md)
 ### [Visualizzazioni di Esplora minacce](threat-explorer-views.md)
