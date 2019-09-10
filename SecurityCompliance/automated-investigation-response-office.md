@@ -1,9 +1,9 @@
 ---
-title: Indagine automatizzata e risposta (AIR) in Office 365
+title: Risposta agli incidenti automatici (AIR) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: Informazioni sulle funzionalità di risposta agli incidenti automatici in Office 365 Advanced Threat Protection.
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761702"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822486"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Risposta agli incidenti automatici (AIR) in Office 365
 
-Le funzionalità di analisi e risposta automatizzate (incluse in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
+Le funzionalità di risposta agli incidenti automatici (incluse in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Leggere questo articolo per ottenere una panoramica di AIR e del modo in cui può essere utile per i team delle operazioni di sicurezza e dell'organizzazione attenuare le minacce in modo più efficace ed efficiente. Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
@@ -102,19 +102,22 @@ Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organi
 - Applicare filtri. Scegliere tra il **tipo di analisi**, l'intervallo di **tempo**, **lo stato**o una combinazione di questi.
 - Esportare i dati in un file. csv.
 
-Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate. 
-- **Inizio**: l'analisi viene accodata per iniziare a breve
-- **Running**: l'inchiesta è iniziata e sta conducendo la sua analisi
-- **Non sono state trovate minacce**: l'inchiesta ha completato l'analisi e non sono state trovate minacce
-- **Terminato dal sistema**: l'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni
-- **Azione in sospeso**: l'inchiesta ha rilevato minacce con azioni consigliate
-- **Minacce trovate**: l'inchiesta ha rilevato minacce, ma le minacce non sono disponibili in Air
-- **Corretti**: l'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate)
-- **Parzialmente rimediato**: l'inchiesta è terminata e sono state approvate alcune delle azioni consigliate
-- **Terminato dall'utente**: un amministratore ha terminato l'indagine
-- **Failed**: si è verificato un errore durante l'analisi che impediva di raggiungere una conclusione sulle minacce
-- **Accodamento tramite limitazione**: l'analisi è in attesa di essere analizzata a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio)
-- **Terminata mediante limitazione**: l'analisi non è stata completata in tempi sufficienti a causa di limitazioni dell'elaborazione del volume e del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga.
+Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se sono state approvate le azioni, come descritto nella tabella seguente:
+
+|Stato | Descrizione  |
+|----|----| 
+|**In avvio**|L'analisi viene accodata per iniziare a breve |
+|**In esecuzione** |L'inchiesta è iniziata e sta conducendo la sua analisi |
+|**Non sono state trovate minacce** |L'indagine ha completato l'analisi e non sono state trovate minacce |
+|**Terminato dal sistema** |L'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni |
+|**Azione in sospeso** |L'inchiesta ha rilevato minacce con azioni consigliate |
+|**Minacce trovate** |L'inchiesta ha rilevato minacce, ma le minacce non dispongono di azioni disponibili in AIR |
+|**Corretti** |L'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate) |
+|**Parzialmente rimediato** |L'inchiesta è terminata e sono state approvate alcune delle azioni consigliate |
+|**Terminato dall'utente** |Un amministratore ha terminato l'indagine |
+|**Operazione non riuscita**|Si è verificato un errore durante l'indagine che impediva di raggiungere una conclusione sulle minacce |
+|**Accodamento tramite limitazione**|L'indagine è in attesa di analisi a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio) |
+|**Terminata mediante limitazione**|L'inchiesta non è stata completata in tempi sufficienti a causa di limitazioni del volume e dell'elaborazione del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga. |
 
 ### <a name="investigation-graph"></a>Grafico di analisi
 
@@ -270,7 +273,7 @@ La correzione è la fase finale del PlayBook. Durante questa fase, vengono esegu
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce
 
-Oltre alle indagini automatiche attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatica da una visualizzazione in [Esplora minacce](use-explorer-in-security-and-compliance.md).
+Oltre alle indagini automatizzate attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatizzata da una visualizzazione in [Esplora minacce](use-explorer-in-security-and-compliance.md).
 
 Si supponga, ad esempio, di visualizzare i dati in Esplora informazioni sui messaggi segnalati dall'utente. È possibile selezionare un elemento nell'elenco dei risultati e quindi fare clic su **indaga**.
 
@@ -280,7 +283,7 @@ Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi d
 
 ![Avvio di un'indagine per malware in Esplora risorse](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
+Analogamente ai PlayBook attivati da un avviso, le indagini automatizzate che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
 
 ## <a name="how-to-get-air"></a>Come ottenere aria
 
