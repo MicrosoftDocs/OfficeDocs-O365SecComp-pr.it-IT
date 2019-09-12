@@ -1,7 +1,7 @@
 ---
 title: Mantenere la propria organizzazione sicura con le funzionalità di analisi e risposta alle minacce di Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come le funzionalità di analisi e risposta alle minacce di Office 365 consentono all'organizzazione di rilevare intrusioni e minacce e di attenuare e recuperare rapidamente le minacce.
-ms.openlocfilehash: 217203c0bfa29352bc7e1b2b3976f11966034fb0
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 22d2b7e0aa1495c0eca0cc7db8eea58b59a73654
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761692"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852818"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenere la propria organizzazione sicura con le funzionalità di analisi e risposta alle minacce di Office 365
 

@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: b404fdf5abaf0031313b211c2ef2d415045de4d1
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444886"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852798"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
-Se l'organizzazione dispone [di office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile individuare **esploratori** o rilevamenti in **tempo reale** (in precedenza rapporti in *tempo reale* , [vedere Novità](#new-features-in-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** o rilevamenti in **tempo reale**. 
+Se l'organizzazione dispone [di office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre delle [autorizzazioni necessarie](#required-licenses-and-permissions), è possibile individuare **esploratori** o **rilevamenti in tempo reale** (in precedenza *rapporti in tempo reale* , [vedere Novità](#new-features-in-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** o **rilevamenti in tempo reale**. 
 
 |Con ATP piano 2, è possibile vedere:  |Con ATP piano 1, è possibile visualizzare le informazioni seguenti:  |
 |---------|---------|
@@ -50,8 +50,8 @@ Ma Explorer (e rilevamenti in tempo reale) aggiunge anche nuovi campi creati per
 
 Come è possibile eseguire questa operazione? Lo stato di recapito è ora suddiviso in due colonne:
 
-- **Azione** di recapito-qual è lo stato di questo messaggio di posta elettronica?
-- **Percorso** di recapito-dove è stato instradato il messaggio di posta elettronica come risultato?
+- **Azione di recapito** -qual è lo stato di questo messaggio di posta elettronica?
+- **Percorso di recapito** -dove è stato instradato il messaggio di posta elettronica come risultato?
 
 Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
@@ -84,7 +84,7 @@ Per ulteriori informazioni sull'analisi di messaggi di posta [elettronica dannos
 
 Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite la tecnologia Office 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
 2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -100,11 +100,11 @@ Si supponga di voler visualizzare i tentativi di phishing tramite URL nella post
 
 Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
 2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewEmailPhishMenu.png)<br/>
 
-3. Fare clic su **sender**e quindi scegliere **urls** > ****.
+3. Fare clic su **sender**e quindi scegliere **urls** > **.**
 
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)<br/>![URL e fare clic su verdetti](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
@@ -124,7 +124,7 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel[https://protection.office.com](https://protection.office.com)Centro sicurezza & conformità (**** ), scegliere **gestione** > minacce (o rilevamenti in **tempo reale**). In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
 2. Scegliere **invii di posta elettronica** > **** dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
@@ -137,9 +137,9 @@ Il rapporto viene aggiornato per visualizzare i dati relativi ai messaggi di pos
 ## <a name="start-automated-investigation-and-response"></a>Avviare l'analisi e la risposta automatizzata
 
 > [!NOTE]
-> Le funzionalità di ricerca e risposta automatizzate sono disponibili in **office 365 ATP piano 2** e **Office 365 E5**.
+> Le funzionalità di risposta agli incidenti automatici sono disponibili in **office 365 ATP piano 2** e **Office 365 E5**.
 
-(Nuovo!) L' [analisi e la risposta automatizzate](automated-investigation-response-office.md) sono in grado di salvare il team delle operazioni di sicurezza molto tempo e sforzi per analizzare e mitigare gli attacchi cibernetici. Oltre a configurare gli avvisi che possono attivare un PlayBook per la sicurezza, è possibile avviare un processo di analisi e risposta automatizzato da una visualizzazione di Esplora risorse. 
+(Nuovo!) La [risposta agli incidenti automatici](automated-investigation-response-office.md) può salvare il team delle operazioni di sicurezza molto tempo e fatica nell'analisi e nell'attenuazione di attacchi cibernetici. Oltre a configurare gli avvisi che possono attivare un PlayBook per la sicurezza, è possibile avviare un processo di analisi e risposta automatizzato da una visualizzazione di Esplora risorse. 
 
 Per ulteriori informazioni, vedere [esempio: un amministratore della sicurezza attiva un'analisi da Esplora risorse](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -177,5 +177,5 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
   
 ## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Alcune differenze tra l'esportatore di minacce e i rilevamenti in tempo reale
 
- - Il rapporto sui rilevamenti in **tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
- - Il rapporto sui rilevamenti in **tempo reale** consente di visualizzare i rilevamenti in tempo reale. **** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
+ - Il rapporto sui **rilevamenti in tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
+ - Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
