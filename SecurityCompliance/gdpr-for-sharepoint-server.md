@@ -35,9 +35,7 @@ L'approccio consigliato per i contenuti generati dall'utente inclusi nei siti e 
 
 L'approccio consigliato per le condivisioni file e per i siti e le raccolte di SharePoint include i seguenti passaggi:
 
-1.  
-  **
-  [Installare e configurare lo scanner di Azure Information Protection.](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installare e configurare lo scanner di Azure Information Protection.](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Scegliere i tipi di dati sensibili da usare.
 
