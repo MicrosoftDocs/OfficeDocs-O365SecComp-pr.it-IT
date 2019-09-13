@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838166"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877315"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
 ## <a name="introduction"></a>Introduzione
 
-Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile utilizzare il &amp; Centro sicurezza e conformità di Office 365 per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione Office 365. Perché un log di controllo unificato? Perché è possibile cercare i tipi seguenti di attività di utenti e amministratori in Office 365:
+Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, si può usare il Centro sicurezza e conformità di Office 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione di Office 365. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di attività di utenti e amministratori in Office 365:
 
 - Attività utente in SharePoint Online e OneDrive for Business
 
@@ -76,7 +76,10 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
 
   - **Office 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
 
-  - **Office 365 E5:** anche i record di controllo vengono conservati per 90 giorni. Il mantenimento dei record di controllo per un anno potrebbe essere disponibile per gli utenti E5 e gli utenti con una licenza E3 e una licenza per il componente aggiuntivo Office 365 Advanced Compliance.
+    > [!NOTE]
+    > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
+
+  - **Office 365 E5:** i record di controllo vengono conservati per 90 giorni. Il mantenimento dei record di controllo per un anno potrebbe essere disponibile per gli utenti E5 e gli utenti con una licenza E3 e una licenza per il componente aggiuntivo Office 365 Advanced Compliance.
 
     > [!NOTE]
     > Il programma di anteprima privata per il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o per gli utenti delle organizzazioni E3 con licenza per i componenti aggiuntivi per la conformità avanzata) è chiuso alle nuove iscrizioni. Questo articolo verrà aggiornato quando il periodo di conservazione di un anno sarà disponibile in anteprima pubblica o rilasciato per la disponibilità generale.
