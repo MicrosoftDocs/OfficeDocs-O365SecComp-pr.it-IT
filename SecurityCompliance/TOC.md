@@ -1,6 +1,7 @@
 # [Sicurezza e conformità](index.md)
 
-# Attività iniziali
+# Introduzione
+## [Novità del Centro conformità](whats-new.md)
 ## [Roadmap della sicurezza per Office 365](security-roadmap.md)
 ## [Configurare il tenant di Office 365 per una maggiore sicurezza](tenant-wide-setup-for-increased-security.md)
 ## [Novo Centro sicurezza Microsoft 365 e Centro conformità Microsoft 365](microsoft-security-and-compliance.md)
