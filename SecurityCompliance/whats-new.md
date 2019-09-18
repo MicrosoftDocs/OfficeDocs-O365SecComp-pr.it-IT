@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
-ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
-ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
+ms.openlocfilehash: c5abb71c21e6c65d46768d584101f6902c0422c2
+ms.sourcegitcommit: 30fc793d3e77e223dee6c96a94e50cda2de34bb6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980432"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37011718"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -31,6 +31,8 @@ Aggiungiamo continuamente nuove funzionalità al [centro conformità di Microsof
 > Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
 ## <a name="august-2019"></a>2019 agosto
+
+Si sta chiedendo perché è tranquillo sul fronte del rilascio di questo mese? Siamo responsabili della creazione di nuove soluzioni di conformità innovative che verranno svelate a [Microsoft Ignite](https://www.microsoft.com/ignite) nel novembre. Restate sintonizzati!
 
 ### <a name="data-investigations"></a>Indagini sui dati
 
